@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcached', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,15 +76,15 @@ servername:port:weight
 Se ativar a configuração *Ativar servidores em cluster*, apenas poderá estar listado um servidor. Normalmente é o nome da máquina local, como por exemplo 127.0.0.1 ou localhost.';
 $string['sessionhandlerconflict'] = 'Aviso: uma instância de memcache ({$a}) foi configurada para usar o mesmo servidor de memcache que as sessões. Apagar o conteúdo de todas as caches fará com que também sejam apagadas as sessões.';
 $string['setservers'] = 'Definir servidores';
-$string['setservers_help'] = 'Esta é a lista de servidores que serão atualizados quando os dados são modificados na cache. Geralmente o nome completo de cada servidor na pool.
+$string['setservers_help'] = 'Lista de servidores que serão atualizados quando os dados são modificados na cache. Geralmente o nome completo de cada servidor na pool.
 
-Deve incluir o servidor listado acima em Servers, ainda que por um hostname diferente.
+Tem de incluir o servidor listado acima em Servers, ainda que com um hostname diferente.
 
 Os servidores devem ser definidos um por linha e consistir num endereço de servidor e, opcionalmente, uma porta.
 
-Se nenhuma porta for definida, então será usada a porta predefinida (11211).
+Se não for definida a porta, será usada a porta predefinida (11211).
 
-Por exemplo: <pre> server.url.com ipaddress: port </pre>';
+Por exemplo: <pre>server.url.com ipaddress:port</pre>';
 $string['testservers'] = 'Servidores de teste';
 $string['testservers_desc'] = 'Uma ou mais strings de ligação para servidores memchache para serem testadas. Se um servidor de teste tiver sido especificado, o desempenho de memcache pode ser testado usando a página de desempenho de cache no bloco de administração.
 Por exemplo: 127.0.0.1:11211';

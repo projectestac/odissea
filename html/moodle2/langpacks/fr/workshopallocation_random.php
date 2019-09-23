@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopallocation_random', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = 'Ajouter les auto-évaluations';
 $string['allocationaddeddetail'] = 'Nouvelle évaluation à effectuer : <strong>{$a->reviewername}</strong> est évaluateur de <strong>{$a->authorname}</strong>';
-$string['allocationdeallocategraded'] = 'Impossible de supprimer l\'attribution de l\'évaluation déjà notée. Évaluateur : <strong>{$a->reviewername}</strong>, auteur du travail : <strong>{$a->authorname}</strong>';
+$string['allocationdeallocategraded'] = 'Impossible de supprimer l\'attribution de l\'évaluation déjà effectuée. Évaluateur : <strong>{$a->reviewername}</strong>, auteur du travail : <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Évaluation réutilisée : <strong>{$a->reviewername}</strong> demeure l\'évaluateur de <strong>{$a->authorname}</strong>';
 $string['allocationsettings'] = 'Réglages des attributions aléatoires';
 $string['assessmentdeleteddetail'] = 'Attribution d\'évaluation supprimée : <strong>{$a->reviewername}</strong> n\'est plus évaluateur de <strong>{$a->authorname}</strong>';

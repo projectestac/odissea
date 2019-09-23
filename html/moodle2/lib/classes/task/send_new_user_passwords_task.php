@@ -48,6 +48,22 @@ class send_new_user_passwords_task extends scheduled_task {
         if ($DB->count_records('user_preferences', array('name' => 'create_password', 'value' => '1'))) {
             mtrace('Creating passwords for new users...');
             $usernamefields = get_all_user_name_fields(true, 'u');
+
+            // XTEC ************ MODIFICAT - Fix empty field check in Oracle
+            // 2019.07.25 @aginard
+            $newusers = $DB->get_recordset_sql("SELECT u.id as id, u.email, u.auth, u.deleted,
+                                                    u.suspended, u.emailstop, u.mnethostid, u.mailformat,
+                                                    $usernamefields, u.username, u.lang,
+                                                    p.id as prefid
+                                            FROM {user} u
+                                            JOIN {user_preferences} p ON u.id=p.userid
+                                            WHERE p.name='create_password' AND p.value='1' AND
+                                                    trim(u.email) is not null AND u.suspended = 0 AND
+                                                    u.auth != 'nologin' AND u.deleted = 0");
+
+
+            //************ ORIGINAL
+            /*
             $newusers = $DB->get_recordset_sql("SELECT u.id as id, u.email, u.auth, u.deleted,
                                                      u.suspended, u.emailstop, u.mnethostid, u.mailformat,
                                                      $usernamefields, u.username, u.lang,
@@ -57,6 +73,8 @@ class send_new_user_passwords_task extends scheduled_task {
                                                WHERE p.name='create_password' AND p.value='1' AND
                                                      u.email !='' AND u.suspended = 0 AND
                                                      u.auth != 'nologin' AND u.deleted = 0");
+            */
+            //************ FI
 
             // Note: we can not send emails to suspended accounts.
             foreach ($newusers as $newuser) {

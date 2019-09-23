@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'journal', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accessdenied'] = 'Απαγορεύεται η πρόσβαση';
+$string['alwaysopen'] = 'Πάντα ανοιχτό';
+$string['blankentry'] = 'Κενή καταχώρηση';
+$string['daysavailable'] = 'Ημέρες διαθέσιμο';
+$string['deadline'] = 'Ημέρες ανοιχτό';
+$string['editingended'] = 'Η περίοδος επεξεργασίας τελείωσε';
+$string['editingends'] = 'Η περίοδος επεξεργασίας τελειώνει';
+$string['entries'] = 'Καταχωρήσεις';
+$string['entry'] = 'Καταχώρηση';
 $string['modulename'] = 'Ημερολόγιο';
 $string['modulenameplural'] = 'Ημερολόγια';
+$string['needsregrade'] = 'Η καταχώρηση άλλαξε από την τελευταία αποθήκευση ανατροφοδότησης.';
+$string['nodeadline'] = 'Πάντα ανοικτό';
+$string['noentriesmanagers'] = 'Δεν υπάρχουν διδάσκοντες';
+$string['noentry'] = 'Καμία καταχώρηση';
 $string['notopenuntil'] = 'Το Ημερολόγιο θα παραμείνει κλειστό μέχρι';
 $string['startoredit'] = 'Έναρξη ή επεξεργασία της καταχώρησής μου';

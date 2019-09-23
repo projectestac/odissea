@@ -82,7 +82,7 @@ class tool_uploadcourse_step2_form extends tool_uploadcourse_base_form {
         $mform->addElement('header', 'defaultheader', get_string('defaultvalues', 'tool_uploadcourse'));
         $mform->setExpanded('defaultheader', true);
 
-        $displaylist = coursecat::make_categories_list('moodle/course:create');
+        $displaylist = core_course_category::make_categories_list('moodle/course:create');
         $mform->addElement('select', 'defaults[category]', get_string('coursecategory'), $displaylist);
         $mform->addHelpButton('defaults[category]', 'coursecategory');
 
@@ -93,11 +93,11 @@ class tool_uploadcourse_step2_form extends tool_uploadcourse_base_form {
         $mform->addHelpButton('defaults[visible]', 'coursevisibility');
         $mform->setDefault('defaults[visible]', $courseconfig->visible);
 
-        $mform->addElement('date_selector', 'defaults[startdate]', get_string('startdate'));
+        $mform->addElement('date_time_selector', 'defaults[startdate]', get_string('startdate'));
         $mform->addHelpButton('defaults[startdate]', 'startdate');
         $mform->setDefault('defaults[startdate]', time() + 3600 * 24);
 
-        $mform->addElement('date_selector', 'defaults[enddate]', get_string('enddate'), array('optional' => true));
+        $mform->addElement('date_time_selector', 'defaults[enddate]', get_string('enddate'), array('optional' => true));
         $mform->addHelpButton('defaults[enddate]', 'enddate');
 
         $courseformats = get_sorted_course_formats(true);

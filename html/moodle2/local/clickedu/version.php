@@ -14,6 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Version file
+ *
+ * @author      Adrià Monguillot <amonguillot@clickedu.net>
+ * @author      Daniel Ureña Zafra <durenadev@gmail.com>
+ * @copyright   2019 CLICKART TALLER DE COMUNICACIÓ, S.L.
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
 $plugin->component = 'local_clickedu';
-$plugin->version = 20170920000; // Té un dígit de més per error, el mantenim per compatibilitat.
-$plugin->requires = 2017051500; // Moodle 3.3
+$plugin->version = 20190724000; // Té un dígit de més per error, el mantenim per compatibilitat.
+$plugin->requires = 2018120300; // Moodle 3.6

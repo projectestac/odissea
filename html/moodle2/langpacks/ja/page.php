@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'page', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,5 +65,7 @@ $string['printheading'] = 'ページ名を表示する';
 $string['printheadingexplain'] = 'コンテンツの上にページ名を表示しますか?';
 $string['printintro'] = 'ページ説明を表示する';
 $string['printintroexplain'] = 'コンテンツの上にページ説明を表示しますか?';
-$string['privacy:metadata'] = 'mod_pageプラグインはどのような個人データも保存しません。';
+$string['printlastmodified'] = '最終更新日を表示する';
+$string['printlastmodifiedexplain'] = 'コンテンツの下に最終更新日を表示しますか?';
+$string['privacy:metadata'] = 'ページリソースプラグインはどのような個人データも保存しません。';
 $string['search:activity'] = 'ページ';

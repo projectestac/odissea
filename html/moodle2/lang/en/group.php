@@ -57,6 +57,8 @@ $string['deleteselectedgroup'] = 'Delete selected group';
 $string['editgroupingsettings'] = 'Edit grouping settings';
 $string['editgroupsettings'] = 'Edit group settings';
 $string['editusersgroupsa'] = 'Edit groups for "{$a}"';
+$string['enablemessaging'] = 'Group messaging';
+$string['enablemessaging_help'] = 'If enabled, group members can send messages to the others in their group via the messaging drawer.';
 $string['enrolmentkey'] = 'Enrolment key';
 $string['enrolmentkey_help'] = 'An enrolment key enables access to the course to be restricted to only those who know the key. If a group enrolment key is specified, then not only will entering that key let the user into the course, but it will also automatically make them a member of this group.
 
@@ -138,7 +140,7 @@ $string['importgroups_help'] = 'Groups may be imported via text file. The format
 * Each record is a series of data separated by commas
 * The first record contains a list of fieldnames defining the format of the rest of the file
 * Required fieldname is groupname
-* Optional fieldnames are description, enrolmentkey, picture, hidepicture';
+* Optional fieldnames are groupidnumber, description, enrolmentkey, groupingname';
 $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Include only active enrolments';
 $string['includeonlyactiveenrol_help'] = 'If enabled, suspended users will not be included in groups.';
@@ -173,6 +175,7 @@ $string['overview'] = 'Overview';
 $string['potentialmembers'] = 'Potential members: {$a}';
 $string['potentialmembs'] = 'Potential members';
 $string['printerfriendly'] = 'Printer-friendly display';
+$string['privacy:metadata:core_message'] = 'The group conversations';
 $string['privacy:metadata:groups'] = 'A record of group membership.';
 $string['privacy:metadata:groups:groupid'] = 'The ID of the group.';
 $string['privacy:metadata:groups:timeadded'] = 'The timestamp indicating when the user was added to the group.';

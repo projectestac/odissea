@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_outline', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,8 @@ $string['neverseen'] = 'Ποτέ δεν εμφανίστηκαν';
 $string['nocapability'] = 'Δεν είναι δυνατή η πρόσβαση στην συνοπτική αναφορά χρήστη';
 $string['nologreaderenabled'] = 'Δεν είναι ενεργοποιημένος κανένας αναγνώστης καταγραφών';
 $string['numviews'] = '{$a->numviews} προβολές από {$a->distinctusers} χρήστες';
-$string['outline:view'] = 'Προβολή αναφοράς δραστηριότητας μαθήματος';
+$string['outline:view'] = 'Εμφάνιση αναφοράς δραστηριότητας μαθήματος';
+$string['outline:viewuserreport'] = 'Εμφάνιση αναφοράς δραστηριότητας χρήστη';
 $string['page-report-outline-index'] = 'Συνοπτική αναφορά μαθήματος';
 $string['page-report-outline-user'] = 'Συνοπτική αναφορά μαθήματος χρήστη';
 $string['page-report-outline-x'] = 'Οποιαδήποτε συνοπτική αναφορά';

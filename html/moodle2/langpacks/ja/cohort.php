@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cohort', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,7 @@ $string['eventcohortmemberremoved'] = 'コーホートからユーザが削除�
 $string['eventcohortupdated'] = 'コーホートが更新されました。';
 $string['external'] = '外部コーホート';
 $string['idnumber'] = 'コーホートID';
+$string['invalidtheme'] = 'コーホートテーマが存在しません。';
 $string['memberscount'] = 'コーホート数';
 $string['name'] = '名称';
 $string['namecolumnmissing'] = 'CSVファイルのフォーマットに問題があります。正しいカラム名が含まれていることを確認してください。ユーザをコーホートに追加するにはサイト管理の「ユーザをアップロードする」に移動してください。';

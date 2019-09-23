@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_badges', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   block_badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['badges:addinstance'] = 'Lägg till ett nytt block för Mina senaste
 märken';
 $string['badges:myaddinstance'] = 'Lägg till ett nytt block för Mina senaste
-märken till Mitt hem';
+märken på Mitt Moodle';
 $string['nothingtodisplay'] = 'Du har inga märken att visa';
 $string['numbadgestodisplay'] = 'Antal senaste märken att visa';
 $string['pluginname'] = 'Mina senaste märken';

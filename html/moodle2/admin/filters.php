@@ -28,10 +28,6 @@ require_once($CFG->libdir . '/adminlib.php');
 $action = optional_param('action', '', PARAM_ALPHA);
 $filterpath = optional_param('filterpath', '', PARAM_PLUGIN);
 
-require_login();
-$systemcontext = context_system::instance();
-require_capability('moodle/site:config', $systemcontext);
-
 admin_externalpage_setup('managefilters');
 
 // Clean up bogus filter states first.
@@ -252,7 +248,7 @@ function get_table_row(\core\plugininfo\filter $plugininfo, $state, $isfirstrow,
     //************ FI
     // Uninstall.
     $row[] = html_writer::link(filters_action_url($filter, 'delete'), get_string('uninstallplugin', 'core_admin'));
-	//XTEC ************ AFEGIT - To let access only to xtecadmin user
+    //XTEC ************ AFEGIT - To let access only to xtecadmin user
     //2013.11.12  @sarjona
     } else {
         $row[] = '';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_statistics', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,7 +56,7 @@ $string['effective_weight'] = 'Ponderación efectiva';
 $string['errordeleting'] = 'Produciuse un erro ao borrar {$a} rexistros antigos.';
 $string['errormedian'] = 'Produciuse un erro ao obter a media';
 $string['errorpowerquestions'] = 'Produciuse un erro ao obter os datos para calcular a varianza para a cualificación de preguntas';
-$string['errorpowers'] = 'Produciuse un erro ao opbter os datos para calcular a varianza para a cualificación de probas';
+$string['errorpowers'] = 'Produciuse un erro ao obter os datos para calcular a varianza para a cualificación de probas';
 $string['errorrandom'] = 'Produciuse un erro ao obter os datos do sub elemento';
 $string['errorratio'] = 'Taxa de erro (para {$a})';
 $string['errorstatisticsquestions'] = 'Produciuse un erro ao obter os datos para calcular estatísticas para a cualificación de preguntas';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'geogebra', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   geogebra
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,23 +69,57 @@ $string['geogebrafile_help'] = 'Het .ggb bestand';
 $string['geogebra:grade'] = 'GeoGebra beoordelen';
 $string['geogebra:submit'] = 'GeoGebra insturen';
 $string['geogebraurl'] = 'URL';
+$string['geogebraurl_help'] = 'Met deze instelling ingeschakeld kan er een URL voor het GeoGebra bestand worden ingevoerd, in plaats van een bestand te kiezen via de bestandenkiezer.';
 $string['geogebra:view'] = 'GeoGebra bekijken';
 $string['grade'] = 'Cijfer';
 $string['gradeit'] = 'Cijfer';
 $string['grademethod'] = 'Beoordelingsmethode';
 $string['height'] = 'Hoogte';
 $string['highestattempt'] = 'Hoogste cijfer';
+$string['httpnotallowed'] = 'Op het moment is het niet toegestaan externe bestanden te gebruiken';
 $string['interfaceoptionsgrp'] = 'Gebruikersinterface';
+$string['invalidgeogebrafile'] = 'Ongeldige GeoGebra opgegeven. Deze moet de bestandsextensie ".ggb" hebben.';
+$string['invalidurl'] = 'Ongeldige URL opgegeven. Deze moet beginnen met http(s) en moet een geldig ".ggb" bestand bevatten.';
 $string['language'] = 'Taal';
 $string['lastattempt'] = 'Laatste poging';
+$string['lastattemptremaining'] = 'Dit is je laatste poging voor deze activiteit';
+$string['lastmodifiedgrade'] = 'Laatst gewijzigd (cijfer)';
+$string['lastmodifiedsubmission'] = 'Laatst gewijzigd (inzending)';
+$string['lowestattempt'] = 'Laagste poging';
+$string['manualgrade'] = 'Is een handmatig cijfer?';
+$string['maxattempts'] = 'Maximum aantal pogingen';
+$string['modulename'] = 'GeoGebra';
+$string['modulename_help'] = '<p><a href="http://www.geogebra.org" target="_blank">GeoGebra</a> is een gratis, multi-platform, dynamische wiskunde-software voor alle onderwijsniveaus, waarin geometrie, algebra, tabellen, grafen, statistiek en rekenen zijn samengevoegd in een gemakkelijk te gebruiken applicatie.
+</p>
+<p>Hiervoor heeft het <a href="http://www.gencat.cat/ensenyament/" target="_blank">Catalaanse ministerie van Onderwijs</a> in samenwerking met de <a href="http://acgeogebra.cat/" target="_blank">Catalaanse Associatie voor GeoGebra</a> (ACG) en het GeoGebra ontwikkelteam deze module geïmplementeerd waarmee GeoGebra activiteiten in Moodle kunnen worden toegevoegd. De belangrijkste kenmerken zijn:
+<ul>
+<li>Eenvoudig GeoGebra activiteiten toevoegen in een Moodle cursus.</li>
+<li>Faciliteert opvolgen van leerlingen door score, datum, duur en constructie van iedere poging van gebruikers bij te houden.</li>
+<li>Leerlingen kunnen de toestand van de activiteiten opslaan om er later mee verder te gaan.</li>
+</ul>
+</p>';
 $string['modulenameplural'] = 'GeoGebra';
+$string['msg_noattempts'] = 'Je hebt deze activiteit een maximaal aantal keren gedaan';
+$string['msg_nosessions'] = 'Deze GeoGebra activiteit heeft nog geen sessie';
 $string['name'] = 'Naam';
 $string['noattempts'] = '-';
+$string['nograding'] = 'Geen cijfer';
+$string['nomoreattempts'] = 'Er zijn geen resterende pogingen voor deze activiteit';
 $string['notopenyet'] = 'Helaas is deze activiteit niet beschikbaar tot {$a}';
 $string['pluginadministration'] = 'Beheer GeoGebra';
 $string['pluginname'] = 'GeoGebra';
 $string['preview_geogebra'] = 'GeoGebra activiteit voorvertonen';
 $string['previewtab'] = 'Voorvertoning';
+$string['privacy'] = 'Privacy voor resultaten';
+$string['privacy:metadata:geogebra_attempts'] = 'Informatie over de resultaten in pogingen van de gebruiker voor een bepaalde GeoGebra activiteit';
+$string['privacy:metadata:geogebra_attempts:datestudent'] = 'De datum/tijd wanneer de leerling de poging beëindigde';
+$string['privacy:metadata:geogebra_attempts:dateteacher'] = 'De datum/tijd wanneer de leraar de poging beëindigde';
+$string['privacy:metadata:geogebra_attempts:finished'] = 'De datum/tijd wanneer de gebruiker de poging beëindigde';
+$string['privacy:metadata:geogebra_attempts:geogebra'] = 'Het ID van de gekozen activiteit';
+$string['privacy:metadata:geogebra_attempts:gradecomment'] = 'De opmerking bij het cijfer voor de poging van de GeoGebra activiteit.';
+$string['privacy:metadata:geogebra_attempts:userid'] = 'Het ID van de gebruiker die deze GeoGebra activiteit beantwoordt';
+$string['privacy:metadata:geogebra_attempts:vars'] = 'Het ID van de optie die de gebruiker heeft geselecteerd.';
+$string['redirecttocourse'] = 'De activiteit is bewaard. Teruggaan naar de cursusvoorpagina';
 $string['report'] = 'Rapport van';
 $string['results'] = 'Resultaten';
 $string['resultstab'] = 'Resultaten';

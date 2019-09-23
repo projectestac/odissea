@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = 'Everywhere';
 $string['inputstandardtags'] = 'Enter comma-separated list of new tags';
 $string['itemstaggedwith'] = '{$a->tagarea} tagged with "{$a->tag}"';
 $string['lesstags'] = 'less...';
-$string['manageofficialtags'] = 'Manage official tags';
 $string['managestandardtags'] = 'Manage standard tags';
 $string['managetagcolls'] = 'Manage tag collections';
 $string['managetags'] = 'Manage tags';
@@ -94,9 +93,6 @@ $string['nextpage'] = 'More';
 $string['noresultsfor'] = 'No results for "{$a}"';
 $string['notagsfound'] = 'No tags matching "{$a}" found';
 $string['nothingtoupdate'] = 'Nothing to update';
-$string['officialtag'] = 'Official';
-$string['otags'] = 'Official tags';
-$string['othertags'] = 'Other tags';
 $string['owner'] = 'Owner';
 $string['page-tag-index'] = 'Single tag page';
 $string['page-tag-manage'] = 'Manage tags page';
@@ -138,7 +134,6 @@ $string['selectmaintag'] = 'Select the tag that will be used after combining';
 $string['selectmultipletags'] = 'Please select more than one tag';
 $string['selecttag'] = 'Select tag {$a}';
 $string['settypedefault'] = 'Remove from standard tags';
-$string['settypeofficial'] = 'Make official';
 $string['settypestandard'] = 'Make standard';
 $string['showingfirsttags'] = 'Showing {$a} most popular tags';
 $string['showstandard'] = 'Standard tags usage';
@@ -161,10 +156,8 @@ $string['tagcollection'] = 'Tag collection';
 $string['tagcollection_help'] = 'Tag collections are sets of tags for different areas. For example, a collection of standard tags can be used to tag courses, with user interests and blog post tags kept in a separate collection. When a user clicks on a tag, the tag page displays only items with that tag in the same collection. Tags can be automatically added to a collection according to the area tagged or can be added manually as standard tags.';
 $string['tagcollections'] = 'Tag collections';
 $string['tagdescription'] = 'Tag description';
-$string['taggedwith'] = 'tagged with "{$a}"';
 $string['tags'] = 'Tags';
 $string['tagsaredisabled'] = 'Tags are disabled';
-$string['tagtype'] = 'Tag type';
 $string['thingstaggedwith'] = '"{$a->name}" is used {$a->count} times';
 $string['thingtaggedwith'] = '"{$a->name}" is used once';
 $string['timemodified'] = 'Modified';

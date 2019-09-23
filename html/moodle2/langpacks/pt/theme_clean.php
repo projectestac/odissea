@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'theme_clean', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,21 +32,20 @@ $string['choosereadme'] = '<div class="clearfix">
     </div>
     <div class="well">
         <h3>Sobre</h3>
-        <p>Clean é um tema modificado de bootstrap para o Moodle que herda estilos e renderers do seu tema
-            ascendente.</p>
+        <p>Clean é um tema bootstrap modificado  para o Moodle que herda estilos e renderers do seu tema ascendente.</p>
         <h3>Origem</h3>
         <p>Este tema é baseado no tema Bootstrap, que foi criado para o Moodle 2.5, com a ajuda de:<br>
             Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans.</p>
         <h3>Créditos do tema</h3>
-        <p>Autores: Bas Marcas, David Scotson, Mary Evans<br> Contacto: bas@sonsbeekmedia.nl<br>
+        <p>Autores: Bas Marcas, David Scotson, Mary Evans<br>
+Contacto: bas@sonsbeekmedia.nl<br>
             Website: <a href="http://www.basbrands.nl">www.basbrands.nl</a>
         </p>
         <h3>Reportar um erro:</h3>
         <p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p>
         <h3>Mais informações</h3>
-        <p><a href="clean/README.txt">Como copiar e personalizar este tema.</a></p>
-    </div>
-</div>';
+        <p><a href="clean/README.txt">Como copiar e personalizar este tema</a>.</p>
+    </div></div>';
 $string['configtitle'] = 'Tema Clean';
 $string['customcss'] = 'Personalizar CSS';
 $string['customcssdesc'] = 'As regras de CSS que adicionar nesta caixa de CSS personalizado serão assumidas em todas as páginas para facilitar a personalização deste tema.';

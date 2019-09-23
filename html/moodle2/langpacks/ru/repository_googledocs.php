@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_googledocs', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_googledocs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['pluginname'] = 'Google Drive';
 $string['presentationformat'] = 'Формат импорта презентации по умолчанию';
 $string['privacy:metadata:repository_googledocs'] = 'Плагин хранилища Google Drive не хранит никаких личных данных, но передает данные пользователя из Moodle в удаленную систему.';
 $string['privacy:metadata:repository_googledocs:email'] = 'Электронная почта пользователя репозитория Google Drive.';
-$string['privacy:metadata:repository_googledocs:searchtext'] = 'Текстовый запрос поиска пользователя репозитория Google Drive.';
+$string['privacy:metadata:repository_googledocs:searchtext'] = 'Поисковый текстовый запрос пользователя репозитория Google Drive.';
 $string['searchfor'] = 'Поиск {$a}';
 $string['secret'] = 'Ключ';
 $string['servicenotenabled'] = 'Доступ не настроен. Убедитесь, что служба «Drive API» включена.';

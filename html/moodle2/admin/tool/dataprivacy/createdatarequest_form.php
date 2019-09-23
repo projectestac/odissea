@@ -28,9 +28,7 @@ use tool_dataprivacy\local\helper;
 defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->libdir.'/formslib.php');
-\MoodleQuickForm::registerElementType('request_user_autocomplete',
-    $CFG->dirroot . '/admin/tool/dataprivacy/classes/form/request_user_autocomplete.php',
-    '\\tool_dataprivacy\\form\\request_user_autocomplete');
+
 /**
  * The contact form to the site's Data Protection Officer
  *
@@ -56,8 +54,20 @@ class tool_dataprivacy_data_request_form extends moodleform {
         if ($this->manage) {
             $options = [
                 'ajax' => 'tool_dataprivacy/form-user-selector',
+                'valuehtmlcallback' => function($value) {
+                    global $OUTPUT;
+
+                    $allusernames = get_all_user_name_fields(true);
+                    $fields = 'id, email, ' . $allusernames;
+                    $user = \core_user::get_user($value, $fields);
+                    $useroptiondata = [
+                        'fullname' => fullname($user),
+                        'email' => $user->email
+                    ];
+                    return $OUTPUT->render_from_template('tool_dataprivacy/form-user-selector-suggestion', $useroptiondata);
+                }
             ];
-            $mform->addElement('request_user_autocomplete', 'userid', get_string('requestfor', 'tool_dataprivacy'), [], $options);
+            $mform->addElement('autocomplete', 'userid', get_string('requestfor', 'tool_dataprivacy'), [], $options);
             $mform->addRule('userid', null, 'required', null, 'client');
 
         } else {

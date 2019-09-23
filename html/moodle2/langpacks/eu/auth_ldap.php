@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_ldap', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['auth_ldap_create_context_key'] = 'Erabiltzaile berrientzako testuinguru
 $string['auth_ldap_create_error'] = 'Errorea erabiltzailea LDAPn sortzean.';
 $string['auth_ldap_creators'] = 'Ikastaro berriak sortzeko baimena duten partaideen taldeak. Taldeak \';\' zeinuaren bidez bana daiteke. Normalki era honetan egingo genuke: \'cn=teachers,ou=staff,o=myorg\'';
 $string['auth_ldap_creators_key'] = 'Sortzaileak';
-$string['auth_ldapdescription'] = 'Metodo honek kanpo LDAP zerbitzari baten aurkako autentifikazioa eskaintzen du. Emandako erabiltzaile izen eta pasahitza baliozkoak badira, Moodle-k erabiltzaile-sarrera berri bat sortuko du bere datu-basean. Modulu honek erabiltzaile atributuak LDAP zerbitzaritik irakurri ditzake eta informazio horrekin Moodle-ko profileko eremuak bete. Hurrengo saio-hasieretan soilik izen eta pasahitza egiaztatuko dira.';
+$string['auth_ldapdescription'] = 'Metodo honek kanpo LDAP zerbitzari baten aurkako autentifikazioa eskaintzen du. Emandako erabiltzaile izen eta pasahitza baliozkoak badira, Moodle-k erabiltzaile-sarrera berri bat sortuko du bere datu-basean. Plugin honek erabiltzaile atributuak LDAP zerbitzaritik irakurri ditzake eta informazio horrekin Moodle-ko profileko eremuak bete. Hurrengo saio-hasieretan soilik izen eta pasahitza egiaztatuko dira.';
 $string['auth_ldap_expiration_desc'] = 'Aukeratu \'{$a->no}\' pasahitza iraungi ote den indargabetzeko, edo \'{$a->ldapserver}\' pasahitzaren iraungitze-denbora zuzenean LDAPetik irakurtzeko.';
 $string['auth_ldap_expiration_key'] = 'Iraungi';
 $string['auth_ldap_expiration_warning_desc'] = 'Pasahitzaren iraungi aurretik iraungitze-oharra erakusteko egun-kopurua.';
@@ -50,15 +50,15 @@ $string['auth_ldap_expiration_warning_key'] = 'Iraungitze-abisua';
 $string['auth_ldap_expireattr_desc'] = 'Aukerakoa: Pasahitzaren iraungitzea metatzen duen LDAP atributua baliogabetzen du.';
 $string['auth_ldap_expireattr_key'] = 'Iraungitze-atributua';
 $string['auth_ldapextrafields'] = '<p>Eremu hauek aukerazkoak dira. Moodle erabiltzaile eremu batzuk hemen zehaztutako <b>LDAP eremu</b>etako informazioz betetzea aukeratu dezakezu.</p><p>Hutsik uzten badituzu, ez da ezer transferituko LDAP-tik eta Moodlek lehenetsitako balioak erabiliko dira ordez.</p><p>Edozein kasutan, erabiltzaileak eremu guzti hauek editatzeko gaitasuna izango du behin saioa hasita.</p>';
-$string['auth_ldap_graceattr_desc'] = 'Aukerazkoa: Graziazko sarreren atributua indargabetzen du';
+$string['auth_ldap_graceattr_desc'] = 'Aukerazkoa: Graziazko sarreren atributua baliogabetzen du';
 $string['auth_ldap_gracelogin_key'] = 'Graziazko sarreren atributua';
-$string['auth_ldap_gracelogins_desc'] = 'Gaitu LDAP graziazko sarreren euskarria. Pasahitza iraungitakoan, erabiltzailea graziazko sarreren kontua zerora iritsi arte sar daiteke. Aukera hau aktibatuz gero graziazko sarreren mezua erakutsiko da, pasahitza iraungitu bada.';
+$string['auth_ldap_gracelogins_desc'] = 'Gaitu LDAP graziazko sarreren euskarria. Pasahitza iraungitzean, erabiltzailea graziazko sarreren kontua zerora iritsi arte sar daiteke. Aukera hau aktibatuz gero graziazko sarreren mezua erakutsiko da, pasahitza iraungi bada.';
 $string['auth_ldap_gracelogins_key'] = 'Graziazko sarrerak';
 $string['auth_ldap_groupecreators'] = 'Taldeak sortzeko baimena duten kideak dauden talde edo testuinguru-zerrenda. Taldeak \',\'-z banatu. Adibidez, honelako zerbait: \'cn=irakasleak,ou=administrazioa,o=nireerakundea\'';
 $string['auth_ldap_groupecreators_key'] = 'Talde sortzaileak';
 $string['auth_ldap_host_url'] = 'LDAP ostatua URL bidez zehaztu, adibidez \'ldap://ldap.zerbitzaria.com/\' edo \'ldaps://ldap.zerbitzaria.com/\'. Banandu zerbitzariak \';\' erabiliz hutsegiteen aurkako babesa gehitzeko.';
 $string['auth_ldap_host_url_key'] = 'Ostalariaren URLa';
-$string['auth_ldap_ldap_encoding'] = 'Zehaztu LDAP zerbitzariak erabilitako kodifikazioa. Ziurrenik utf-8, MS AD v2-k berez erabiltzen du plataformako kodifikazioa. Adibidez: cp1252, cp1250, e.a.';
+$string['auth_ldap_ldap_encoding'] = 'LDAP zerbitzariak erabilitako kodifikazioa, seguruenik utf-8. LDAP v2 aukeratzen bada, Active Directory-k bertan konfiguratutako kodifikazioa erabiliko du, hala nola cp1252 edo cp1250.';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP kodifikazioa';
 $string['auth_ldap_login_settings'] = 'Sarrera-ezarpenak';
 $string['auth_ldap_memberattribute'] = 'Aukerazkoa: Erabiltzailearen izenerako atributua baliogabetzen du, erabiltzaileak talde bateko kide direnean. Normalean \'partaide\'';
@@ -99,7 +99,7 @@ $string['auth_ldap_usertypeundefined2'] = 'config.user_type ez dago definituta e
 $string['auth_ldap_version'] = 'Zure zerbitzariak erabiltzen duen LDAP protokoloaren bertsioa.';
 $string['auth_ldap_version_key'] = 'Bertsioa';
 $string['auth_ntlmsso'] = 'NTLM SSO';
-$string['auth_ntlmsso_enabled'] = 'Bai ezarri Single Sign On NTLM domeinuan saiatzeko. <strong>Oharra:</strong> bestelako ezarpen behar du web zerbitzarian funtzionatzeko, begiratu <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
+$string['auth_ntlmsso_enabled'] = 'Bai aukeratu NTLM domeinuan Single Sign On egiten saiatzeko. Kontuan izan ezarpen honek funtzionatzeko bestelako ezarpenak behar dituela web zerbitzarian. Xehetasun gehiagorako ikusi dokumentazioa: <a href="https://docs.moodle.org/en/NTLM_authentication">https://docs.moodle.org/en/NTLM_authentication</a>.';
 $string['auth_ntlmsso_enabled_key'] = 'Gaitu';
 $string['auth_ntlmsso_ie_fastpath'] = 'Markatu NTLM SSO sarbide azkarra gaitzeko (hainbat pausu aurreratzen ditu erabiltzailearen nabigatzailea MS Internet Explorer bada).';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Saiatu NTLM nabigatzaile guztiekin';
@@ -122,7 +122,7 @@ $string['didntfindexpiretime'] = 'password_expire()-k ez du iraungitze-data aurk
 $string['didntgetusersfromldap'] = 'Ez da erabiltzailerik lortu LDAPetik. -- errorea? -- irteten';
 $string['gotcountrecordsfromldap'] = 'Lortu {$a} erregistroa(k) LDAP-etik';
 $string['ldapnotconfigured'] = 'LDAP hostalaria une honetan ez dago konfiguratuta';
-$string['morethanoneuser'] = 'Arraroa da! LDAPen erabiltzaile bat baino gehiago aurkitu dira. Lehena bakarrik erabiliko da.';
+$string['morethanoneuser'] = 'LDAPen erabiltzaile bat baino gehiago aurkitu dira. Lehena bakarrik erabiliko da.';
 $string['needbcmath'] = 'BCMath luzapena behar duzu Active Directory-ren pasahitzen iraungitzea erabiltzeko.';
 $string['needmbstring'] = 'mbstring luzapena behar duzu Active Directory-n pasahitzak aldatzeko.';
 $string['nodnforusername'] = 'Errorea user_update_password()-en. Ez dago DN-rik hurrengorako: {$a->username}';
@@ -136,7 +136,7 @@ $string['ntlmsso_attempting'] = 'Single Sign On saiatzen NTLM bidez...';
 $string['ntlmsso_failed'] = 'Saio-hasiera automatikoak huts egin du, saiatu sarbide-orri arrunta...';
 $string['ntlmsso_isdisabled'] = 'NTLM SSO desgaituta dago.';
 $string['ntlmsso_unknowntype'] = 'ntlmsso mota ezezaguna!';
-$string['pagedresultsnotsupp'] = 'LDAPeko orrikako emaitzak ez dira onartzen (zure PHP bertsioak onartzen ez dituelako, Moodle LDAP protokoloaren 2 bertsioa erabiltzeko konfiguratu duzulako edo Moodle-k ezin duelako LDAP zerbitzariarekin kontaktatu orrikako emaitzak onartzen dituen egiaztatzeko.';
+$string['pagedresultsnotsupp'] = 'LDAPeko orrikako emaitzak ez dira onartzen (zure PHP bertsioak onartzen ez dituelako, Moodle LDAP protokoloaren 2 bertsioa erabiltzeko konfiguratu duzulako edo Moodle-k ezin duelako LDAP zerbitzariarekin kontaktatu orrikako emaitzak onartzen dituen egiaztatzeko).';
 $string['pagesize'] = 'Ziurtatu ezazu balio hau zure LDAP zerbitzariren emaitza-sortaren gehienezko tamaina (query bakar batek bueltatu dezakeen gehienezko erregistro kopurua) baino txikiagoa dela';
 $string['pagesize_key'] = 'Orriaren tamaina';
 $string['pluginname'] = 'LDAP zerbitzaria';
@@ -151,7 +151,7 @@ $string['synctask'] = 'LDAP erabiltzaileen sinkronizazio-lana';
 $string['systemrolemapping'] = 'Sistemako rolen parekatzea';
 $string['updatepasserror'] = 'Errorea user_update_password()-en. Errore-kodea: {$a->errno}; Errorearen mezua: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Errorea user_update_password()-en pasahitzaren iraungitze-data irakurtzean. Errore-kodea: {$a->errno}; Errorearen mezua: {$a->errstring}';
-$string['updatepasserrorexpiregrace'] = 'Errorea user_update_password()-en pasahitzaren iraungitze-data edota graziazko sarrerak (gracelogins) aldatzean. Errore-kodea: {$a->errno}; Errorearen mezua: {$a->errstring}';
+$string['updatepasserrorexpiregrace'] = 'Errorea user_update_password()-en pasahitzaren iraungitze-data edota graziazko sarrerak aldatzean. Errore-kodea: {$a->errno}; Errorearen mezua: {$a->errstring}';
 $string['updateremfail'] = 'Errorea LDAP erregistroa eguneratzean. Errore-kodea: {$a->errno}; Errorearen mezua: {$a->errstring}<br/>({$a->key}) giltza - Moodle-ko balio zaharra: \'{$a->ouvalue}\' balio berria: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Errorea gertatu da LDAP eguneratzean {$a->key} eremu anbiguoarekin; Moodle-ko balio zaharra: \'{$a->ouvalue}\' balio berria: \'{$a->nuvalue}\'';
 $string['updateremfailfield'] = 'LDAP existitzen ez den eremuarekin eguneratzeak huts egin du (\'{$a->ldapkey}\'). Gakoa ({$a->key}) - Moodle-ko balio zaharra: \'{$a->ouvalue}\' balio berria: \'{$a->nuvalue}\'';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -100,7 +100,7 @@ $string['cannotfindinfo'] = 'Ezin da ondokoarentzako informaziorik aurkitu: "{$a
 $string['cannotfindlang'] = 'Ezin da "{$a}" hizkuntza-paketea aurkitu!';
 $string['cannotfindteacher'] = 'Ezin da irakaslea aurkitu';
 $string['cannotfinduser'] = 'Ezin da "{$a}" erabiltzaile-izena aurkitu';
-$string['cannotgeoplugin'] = 'Ezin da geoPlugin-en  zerbitzarira konektatu (http://www.geoplugin.com). Mesedez, egiaztatu proxy-ren ezarpenak, edo hobeto, instala ezazu MaxMind GeoLite City-ren datu-fitxategia.';
+$string['cannotgeoplugin'] = 'Ezin da geoPlugin-en  zerbitzarira konektatu (https://www.geoplugin.com). Mesedez, egiaztatu proxy-aren ezarpenak edo instalatu ezazu MaxMind GeoLite City-ren datu-fitxategia.';
 $string['cannotgetblock'] = 'Ezin da blokerik berreskuratu datu-basetik';
 $string['cannotgetcats'] = 'Ezin da lortu kategoria-erregistrorik';
 $string['cannotgetdata'] = 'Ezin da daturik lortu';
@@ -112,7 +112,7 @@ $string['cannotimportgrade'] = 'Errorea kalifikazioak inportatzean';
 $string['cannotinsertgrade'] = 'Ezin da kalifikazio-elementurik txertatu ikastaroaren ID-rik gabe!';
 $string['cannotinsertrate'] = 'Ezin da beste kalifikazio bat txertatu ({$a->id} = {$a->rating})';
 $string['cannotinsertrecord'] = 'Ezin da {$a} ID-a duen erregistro berria txertatu';
-$string['cannotmailconfirm'] = 'Errorea pasahitza aldatzeko egiaztapenerako e-posta bidaltzean';
+$string['cannotmailconfirm'] = 'Errorea pasahitza aldatzeko baieztatzeko mezua bidaltzean';
 $string['cannotmanualctrack'] = 'Jarduerak ez du eskuz osatutzat emateko jarraipenik';
 $string['cannotmapfield'] = 'Parekatze kolisioa aurkitu da - bi eremuk kalifikazio-elementu berarekin parekatuta daude {$a}';
 $string['cannotmarktopic'] = 'Ezin da gai hau markatu ikastaro honetan';
@@ -351,14 +351,14 @@ $string['invalidpasswordpolicy'] = 'Pasahitzen politika baliogabea';
 $string['invalidpaymentmethod'] = 'Ordainketa-metodo baliogabea: {$a}';
 $string['invalidqueryparam'] = 'ERROREA: kontsultaren parametro kopuru ezegokia. {$a->expected} espero ziren eta {$a->actual} eskuratu dira.';
 $string['invalidratingarea'] = 'Kalifikazioen eremua ez da baliagarria';
-$string['invalidrecord'] = 'Ezin da datuen erregistroa aurkitu datu-basearen  {$a} taulan.';
+$string['invalidrecord'] = 'Ezin da datuen erregistroa aurkitu datu-basearen {$a} taulan.';
 $string['invalidrecordunknown'] = 'Ezin da datuen erregistroa aurkitu datu-basean.';
 $string['invalidrequest'] = 'Eskari baliogabea';
 $string['invalidrole'] = 'Rol baliogabea';
 $string['invalidroleid'] = 'Rolaren ID baliogabea';
 $string['invalidscaleid'] = 'Eskalaren IDa ez da egokia';
 $string['invalidsection'] = 'Ikastaro moduluaren erregistroak atal baliogabea dauka';
-$string['invalidsesskey'] = 'Ziuraski zure saioa iraungi da. Mesedez, sar zaitez berriz.';
+$string['invalidsesskey'] = 'Badirudi zure saioa iraungi dela. Mesedez, sar zaitez berriz.';
 $string['invalidshortname'] = 'Ikastaroaren izen laburra ez da egokia';
 $string['invalidsourcefield'] = 'Zirriborro-fitxategiaren jatorrizko eremua ez da baliozkoa';
 $string['invalidstatedetected'] = 'Zerbait gaizki joan da: {$a}. Honek ez luke normalean gertatu behar.';
@@ -385,10 +385,9 @@ $string['logfilenotavailable'] = 'Agerraldiak ez daude eskuragarri';
 $string['loginasnoenrol'] = 'Ezin duzu matrikulatu edo desmatrikulatu "Aukeratu beste rol bat" erabiltzen ari zarenean';
 $string['loginasonecourse'] = 'Ezin zara ikastaro honetan sartu.<br />"Aukeratu beste rol bat" saioa bukatu behar duzu beste edozein ikastarotan sartzeko';
 $string['maxareabytes'] = 'Fitxategia eremu honetan geratzen den espazioa baino handiagoa da.';
-$string['maxbytes'] = 'Fitxategiaren tamaina gehienez onartutakoa baino handiago da';
 $string['maxbytesfile'] = '{$a->file} fitxategia handiegia da. Igo dezakezun gehinezko tamaina  {$a->size} da.';
 $string['messagingdisable'] = 'Mezularitza desgaituta dago gune honetan';
-$string['mimetexisnotexist'] = 'Zure sistema ez dago mimeTeX exekutatzeko konfiguratuta. <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a> helbidetik zure PHP_OS plataformarako exekutagarri egokia jaitsi beharko duzu, edo C iturburu-kodeaeskuratu <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a> helbidetik, konpilatu eta exekutagarria zure moodle/filter/tex karpetan utzi.';
+$string['mimetexisnotexist'] = 'Zure sistema ez dago mimeTeX exekutatzeko konfiguratuta. <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip</a> helbidetik C iturburua eskuratu behar duzu, berau konpilatu eta exekutagarria zure guneko /filter/tex/ karpetan jarri beharko zenuke.';
 $string['mimetexnotexecutable'] = 'mimetex pertsonalizatua ez da exekutagarria!';
 $string['missingfield'] = '"{$a}" eremua falta da';
 $string['missingkeyinsql'] = 'ERROREA: kontsultan "{$a}" parametroa falta da';
@@ -474,7 +473,7 @@ $string['prefixcannotbeempty'] = '<p>Errorea: datu-basearen taularen aurrizkia e
 $string['prefixtoolong'] = '<p>Errorea: data-baseko taulen aurrizkia luzeegia da ({$a->dbfamily})</p>
 <p>Guneko kudeatzaileak arazoa konpondu behar du. {$a->dbfamily} datu-baseetan tauletako aurrizkien gehienezko luzera {$a->maxlength} karakterekoa da.</p>';
 $string['privatefilesupload'] = 'Erabiltzailaren gune pribatura fitxategiak zuzenean igotzea ez da dagoeneko onartzen. Fitxategiak zirriborro-gunera igo eta ondoren core_user::add_user_private_files erremintarekin mugitu itzazu';
-$string['processingstops'] = 'Prozesamendua hemen bukatu da. Gainontzeko erregistroak ez dira kontuan hartu.';
+$string['processingstops'] = 'Prozesamendua hemen geratu da. Gainontzeko erregistroak ez dira kontuan hartu.';
 $string['protected_cc_not_supported'] = 'Babestutako cartridge-ak ez dira onartzen.';
 $string['querystringcannotbeempty'] = 'Kontsultaren katea ezin da hutsik egon.';
 $string['redirecterrordetected'] = 'Onartzen ez den berbideraketa atzeman da, script-aren egikaritzea amaitu da';

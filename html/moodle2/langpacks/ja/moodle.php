@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'moodle', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -200,7 +200,7 @@ $string['backuplogdetailed'] = '詳細実行ログ';
 $string['backuploglaststatus'] = '最新実行ログ';
 $string['backupmissinguserinfoperms'] = '注意: このバックアップにはユーザデータが含まれていません。また、このタイプのバックアップに互換性がないため、これらのモジュールはバックアップに含まれません。';
 $string['backupnext'] = '次のバックアップ';
-$string['backupnonisowarning'] = '警告: このバックアップは非ユニコードバージョンのMoodle (1.6以前) によって作成されたものです。このバックアップに非ISO-8859-1テキストが含まれている場合、ユニコードバージョンのMoodleにリストアすることのより文字化けが発生する可能性があります。このバックアップを正常にするための詳細情報は<a href="http://docs.moodle.org/ja/バックアップFAQ">バックアップFAQ</a>をご覧ください。';
+$string['backupnonisowarning'] = '警告: このバックアップは非ユニコードバージョンのMoodle (1.6以前) によって作成されたものです。このバックアップに非ISO-8859-1テキストが含まれている場合、ユニコードバージョンのMoodleにリストアすることのより文字化けが発生する可能性があります。このバックアップを正常にするための詳細情報は<a href="https://docs.moodle.org/ja/バックアップFAQ">バックアップFAQ</a>をご覧ください。';
 $string['backupnotyetrun'] = '自動バックアップ保留';
 $string['backuporiginalname'] = 'バックアップ名';
 $string['backuproleassignments'] = 'これらのロールに対するロール割り当てをバックアップする';
@@ -230,7 +230,7 @@ $string['cachecontrols'] = 'キャッシュコントロール';
 $string['cancel'] = 'キャンセル';
 $string['cancelled'] = 'キャンセルされました。';
 $string['categories'] = 'コースカテゴリ';
-$string['categoriesandcoures'] = 'コースカテゴリおよびコース';
+$string['categoriesandcourses'] = 'コースカテゴリおよびコース';
 $string['category'] = 'カテゴリ';
 $string['categoryadded'] = 'カテゴリ「 {$a} 」 が追加されました。';
 $string['categorybulkaction'] = '選択されたカテゴリのバルク処理';
@@ -291,7 +291,7 @@ $string['confirmcheckfull'] = '本当に {$a} を承認してもよろしいで�
 $string['confirmcoursemove'] = '本当にこのコース ({$a->course}) をカテゴリ ({$a->category}) に移動してもよろしいですか?';
 $string['confirmdeletesection'] = '本当に「 {$a} 」および含まれる活動すべてを完全に削除してもよろしいですか?';
 $string['confirmed'] = 'あなたの登録が完了しました。';
-$string['confirmednot'] = 'あなたの登録はまだ完了していません！';
+$string['confirmednot'] = 'あなたの登録はまだ確認されていません。あなたのメールボックスで確認メールを確認してください。';
 $string['considereddigitalminor'] = 'あなたはこのサイトでアカウントを作成するには若すぎます。';
 $string['content'] = 'コンテンツ';
 $string['continue'] = '続ける';
@@ -300,8 +300,11 @@ $string['convertingwikitomarkdown'] = 'WikiをMarkdownに変換';
 $string['cookiesenabled'] = 'ブラウザのクッキー設定を有効にしてください。';
 $string['cookiesenabled_help'] = 'このサイトでは2種類のクッキーが使用されます:
 
-重要なクッキーはセッションクッキーで通常MoodleSessionと呼ばれます。継続的にログインして各ページに移動できるようにするため、あなたのブラウザのクッキー有効にしてください。 ログアウトまたはブラウザを閉じた場合、(あなたのブラウザおよびサーバの) クッキーは破棄されます。
-もう1つのクッキーは純粋に便宜的な理由で使用され、通常 <b>MOODLEID と呼ばれます。このクッキーはあなたのユーザ名をブラウザに憶えさせるために使用されます。これはあなたがサイトへ戻ったときに、ログインページにユーザ名が初めから入力されていることを意味します。このクッキーを拒否しても大丈夫です - しかし、ログイン時にあなたのユーザ名を毎回入力する必要があります。';
+重要なクッキーはセッションクッキーで通常MoodleSessionと呼ばれます。継続的にログインしてサイトを閲覧できるようにするため、あなたのブラウザでこのクッキー有効にしてください。 ログアウトまたはブラウザを閉じた場合、(あなたのブラウザおよびサーバの) クッキーは破棄されます。
+
+もう1つのクッキーは純粋に便宜的な理由で使用され、通常MOODLEIDのように呼ばれます。このクッキーはあなたのユーザ名をブラウザに憶えさせるために使用されます。これはあなたがサイトへ戻ったときにログインページにユーザ名が初めから入力されていることを意味します。このクッキーを拒否しても安全です - あなたはログイン時にユーザ名を毎回入力する必要があります。';
+$string['cookiesenabledonlysession'] = 'ブラウザのクッキー設定を有効にしてください。';
+$string['cookiesenabledonlysession_help'] = 'このサイトでは通常MoodleSessionと呼ばれるセッションクッキーを使用します。継続的にログインしてサイトを閲覧できるようにするため、あなたのブラウザでこのクッキー有効にしてください。 ログアウトまたはブラウザを閉じた場合、(あなたのブラウザおよびサーバの) クッキーは破棄されます。';
 $string['cookiesnotenabled'] = '残念ですが、あなたのブラウザではクッキーの設定が有効にされていません。';
 $string['copy'] = 'コピー';
 $string['copyasnoun'] = 'コピー';
@@ -375,10 +378,10 @@ $string['coursenotaccessible'] = 'このコースはパブリックアクセス�
 $string['coursenotyetfinished'] = 'コースはまだ終了していません。';
 $string['coursenotyetstarted'] = 'コースはまだ開始されていません。';
 $string['courseoverview'] = 'コース概要';
-$string['courseoverviewfiles'] = 'コース概要ファイル';
-$string['courseoverviewfilesext'] = 'コース概要ファイル拡張子';
-$string['courseoverviewfiles_help'] = 'イメージのようなコース概要ファイルはコース概要と共に表示されます。';
-$string['courseoverviewfileslimit'] = 'コース概要ファイル制限';
+$string['courseoverviewfiles'] = 'コースイメージ';
+$string['courseoverviewfilesext'] = 'コースイメージファイル拡張子';
+$string['courseoverviewfiles_help'] = 'コースイメージはダッシュボードのコース概要に表示されます。追加で許可されるファイルタイプおよび2つ以上のファイルはサイト管理者により有効にすることができます。その場合、これらのファイルはコースページ一覧のコース概要の隣に表示されます。';
+$string['courseoverviewfileslimit'] = 'コースイメージファイル制限';
 $string['courseoverviewgraph'] = 'コース概要グラフ';
 $string['coursepreferences'] = 'コースプリファレンス';
 $string['courseprofiles'] = 'コースプロファイル';
@@ -403,6 +406,12 @@ $string['courserequestsupport'] = '管理者がこのリクエストを判断す
 $string['courserequestwarning'] = 'このコースをリクエストしたユーザは自動的に「 {$a} 」ロールが割り当てられた上で登録されます。';
 $string['courserestore'] = 'コースリストア';
 $string['courses'] = 'コース';
+$string['coursesearch'] = 'コースを検索する';
+$string['coursesearch_help'] = 'あなたは同時に複数の言葉で探せます。また、あなたの検索を次のように絞り込めます:
+
+* 単語 : この単語がテキストの中に含まれるものを探します。
+* +単語 : 厳密に単語に合致するもののみを検索します。
+* -単語 : この単語を含まないものを検索をします。';
 $string['coursesectionsummaries'] = 'コースセクション概要';
 $string['coursesectiontitle'] = 'コース: {$a->course} - {$a->sectionname}: {$a->sectiontitle}';
 $string['coursesettings'] = 'コースデフォルト設定';
@@ -563,6 +572,7 @@ $string['downloadtext'] = 'テキストフォーマットでダウンロード�
 $string['doyouagree'] = 'これらの要件を読んで理解できましたか?';
 $string['droptoupload'] = 'アップロードするファイルをここにドロップする';
 $string['duplicate'] = '複製';
+$string['duplicatedmodule'] = '{$a} (コピー)';
 $string['edhelpaspellpath'] = 'エディタでスペルチェックを利用するには<strong>aspell 0.50</strong>またはそれ以上をサーバにインストールしてください。また、aspellバイナリの正しいパスを指定する必要があります。Unix/Linux システムでは通常このパスは<strong>/usr/bin/aspell</strong>となりますが、他のパスになる場合もあります。';
 $string['edhelpbgcolor'] = '編集領域の背景色を設定します。<br />正しい値の例: #FFFFFFまたはwhite';
 $string['edhelpcleanword'] = 'ここではWord特有のフォーマットをフィルタするかどうか設定します。';
@@ -625,10 +635,13 @@ $string['emailconfirmation'] = '{$a->firstname} さん
 ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
 
 分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。';
+$string['emailconfirmationresend'] = '確認メールを再送する';
 $string['emailconfirmationsubject'] = '{$a}: アカウントの確定';
 $string['emailconfirmsent'] = '<p>あなたの <b>{$a}</b> のメールアドレス宛にメールが送信されました。</p>
 <p>メールには登録を確認するための簡単な説明が記載されています。</p>
 <p>分からない場合、サイト管理者にご連絡ください。</p>';
+$string['emailconfirmsentfailure'] = '確認メールの送信に失敗しました。';
+$string['emailconfirmsentsuccess'] = '確認メールが正常に送信されました。';
 $string['emaildigest'] = 'メール要約タイプ';
 $string['emaildigestcomplete'] = 'すべて (投稿すべてを含む日次メール)';
 $string['emaildigest_help'] = 'これはフォーラムにデフォルトとして使用される日次要約設定です。
@@ -644,8 +657,9 @@ $string['emaildisable'] = 'このメールアドレスは無効です';
 $string['emaildisableclick'] = 'このメールアドレス宛にすべてのメールが送信されないようにする';
 $string['emaildisplay'] = 'メールアドレス公開';
 $string['emaildisplaycourse'] = '同じコースのメンバーにだけ私のメールアドレスを公開します';
+$string['emaildisplay_help'] = '権限のあるユーザ (教師およびマネージャ等) は常にあなたのメールアドレスを閲覧することができます。';
 $string['emaildisplayhidden'] = 'メールアドレス非表示';
-$string['emaildisplayno'] = 'すべてのユーザから私のメールアドレスを隠します';
+$string['emaildisplayno'] = '権限のないユーザから私のメールアドレスを隠します';
 $string['emaildisplayyes'] = 'すべてのユーザに私のメールアドレスを公開します';
 $string['emailenable'] = 'このメールアドレスは有効です';
 $string['emailenableclick'] = 'このメールアドレスにメールすべてが再度送信されるようにする';
@@ -659,9 +673,9 @@ $string['emailnotfound'] = 'データベース内にメールアドレスが見�
 $string['emailonlyallowed'] = 'このメールアドレスは許可されている次のドメインに入っていません ({$a})';
 $string['emailpasswordchangeinfo'] = '{$a->firstname} さん
 
-誰か (恐らくあなた) が「 {$a->sitename} 」 のアカウント「 {$a->username} 」で新しいパスワードを請求しました。
+誰か (恐らくあなた) が「 {$a->sitename} 」 のあなたのアカウント「 {$a->username} 」の新しいパスワードをリクエストしました。
 
-あなたのパスワードを変更するには下記のウェブアドレスにアクセスしてください:
+あなたのパスワードを変更するには以下のウェブアドレスにアクセスしてください:
 
 {$a->link}
 
@@ -670,20 +684,20 @@ $string['emailpasswordchangeinfo'] = '{$a->firstname} さん
 分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。';
 $string['emailpasswordchangeinfodisabled'] = 'こんにちは {$a->firstname} さん
 
-誰か (恐らくあなた) が、「 {$a->sitename} 」 のアカウントで新しいパスワードを請求しました。
+誰か (恐らくあなた) が「 {$a->sitename} 」のあなたのアカウントの新しいパスワードをリクエストしました。
 
 残念ですが、このサイトであなたのアカウントは無効にされています。パスワードをリセットすることができません。サイト管理者 {$a->admin} にご連絡ください。';
 $string['emailpasswordchangeinfofail'] = 'こんにちは {$a->firstname} さん
 
-誰か (恐らくあなた) が、「 {$a->sitename} 」 のアカウントで新しいパスワードを請求しました。
+誰か (恐らくあなた) が「 {$a->sitename} 」のあなたのアカウントの新しいパスワードをリクエストしました。
 
 残念ですが、このサイトではパスワードをリセットすることができません。サイト管理者 {$a->admin} にご連絡ください。';
 $string['emailpasswordchangeinfosubject'] = '{$a}: パスワード変更情報';
 $string['emailpasswordconfirmation'] = '{$a->firstname} さん
 
-誰か (恐らくあなた) が「 {$a->sitename} 」 のアカウントで新しいパスワードを請求しました。
+誰か (恐らくあなた) が「 {$a->sitename} 」 のあなたのアカウントの新しいパスワードをリクエストしました。
 
-新しいパスワード請求を確認して、新たなパスワードをメールであなた宛に送信するために下記のページをご覧ください:
+新しいパスワード請求を確認して、新たなパスワードをメールであなた宛に送信するために以下のページをご覧ください:
 
 {$a->link}
 
@@ -806,14 +820,15 @@ $string['explanationdigitalminor'] = 'この情報はあなたの年齢がデジ
 $string['extendenrol'] = '登録期間を延長する (個別)';
 $string['extendperiod'] = '延長期間';
 $string['failedloginattempts'] = 'あなたの最終ログインより {$a->attempts} 回のログイン失敗がありました。';
+$string['favourites'] = '星付き';
 $string['feedback'] = 'フィードバック';
 $string['file'] = 'ファイル';
 $string['fileexists'] = 'ファイル名「 {$a} 」のファイルがすでに存在します。';
 $string['filemissing'] = '{$a} が見つかりません。';
+$string['filereaderror'] = 'ファイル「 {$a} 」を読み込むことができません。これが本当にフォルダではなくファイルであることを確認してください。';
 $string['files'] = 'ファイル';
 $string['filesanduploads'] = 'ファイルおよびアップロード';
 $string['filesfolders'] = 'ファイル/フォルダ';
-$string['filetoolarge'] = '- アップロードするには大きすぎます。';
 $string['fileuploadwithcontent'] = 'ファイルアップロードにコンテンツパラメータを含むことはできません。';
 $string['filloutallfields'] = 'このフォームのフィールドすべてに入力してください。';
 $string['filter'] = 'フィルタ';
@@ -884,26 +899,25 @@ $string['general'] = '一般';
 $string['geolocation'] = '緯度 - 経度';
 $string['gettheselogs'] = 'これらのログを取得する';
 $string['go'] = 'Go';
-$string['gpl'] = 'Copyright (C) 1999 onwards Martin Dougiamas (http://moodle.com)
+$string['gpl'] = 'Copyright (C) 1999 onwards Martin Dougiamas (https://moodle.com)
 
 このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財団によって発行された GNU 一般公衆利用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件の下で再頒布または改変することができます。
 
 このプログラムは有用であることを願って頒布されますが、*全くの無保証*です。商業可能性の保証や特定の目的への適合性は言外に示されたものも含め全く存在しません。
 
-詳しくはMoodleライセンス情報をご覧ください：
-http://docs.moodle.org/ja/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9';
-$string['gpl3'] = 'Copyright (C) 1999 onwards Martin Dougiamas (http://moodle.com)
+詳しくはMoodleライセンス情報をご覧ください： https://docs.moodle.org/dev/License';
+$string['gpl3'] = 'Copyright (C) 1999 onwards Martin Dougiamas (https://moodle.com)
 
 このプログラムはフリーソフトウェアです。あなたはこれをフリーソフトウェア財団によって発行された GNU 一般公衆利用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件の下で再頒布または改変することができます。
 
 このプログラムは有用であることを願って頒布されますが*全くの無保証*です。商業可能性の保証や特定の目的への適合性は言外に示されたものも含め全く存在しません。
 
 詳しくはMoodleライセンス情報をご覧ください：
-http://docs.moodle.org/ja/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9';
+https://docs.moodle.org/ja/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9';
 $string['gpllicense'] = 'GPLライセンス';
 $string['grade'] = '評点';
 $string['grades'] = '評定';
-$string['gravatarenabled'] = 'このサイトでは<a href="http://www.gravatar.com/">Gravatar</a>が有効にされています。あなたがプロファイル画像をアップロードしていない場合、MoodleはGravatarよりプロファイル画像の取得を試みます。';
+$string['gravatarenabled'] = 'このサイトでは<a href="https://www.gravatar.com/">Gravatar</a>が有効にされています。あなたがプロファイル画像をアップロードしていない場合、MoodleはGravatarよりプロファイル画像の取得を試みます。';
 $string['group'] = 'グループ';
 $string['groupadd'] = '新しいグループを追加する';
 $string['groupaddusers'] = '選択した人をグループに追加する';
@@ -1114,7 +1128,7 @@ $string['maincoursepage'] = 'メインコースページ';
 $string['makeafolder'] = 'フォルダを作成する';
 $string['makeavailable'] = '利用可にする';
 $string['makeeditable'] = '「 {$a} 」をサーバ上 (例 apache) で編集可能にした場合、あなたはこのファイルを直接このページで編集することができます。';
-$string['makethismyhome'] = 'このページを私のデフォルトホームページにする';
+$string['makethismyhome'] = 'これを私のデフォルトホームページにする';
 $string['makeunavailable'] = '利用不可にする';
 $string['manageblocks'] = 'ブロック';
 $string['managecategorythis'] = 'このカテゴリを管理する';
@@ -1130,7 +1144,6 @@ $string['markedthistopic'] = 'このトピックは最新トピックとして�
 $string['markthistopic'] = 'このトピックを最新トピックとして強調表示します。';
 $string['matchingsearchandrole'] = '「 {$a->search} 」および「 {$a->role} 」に合致';
 $string['maxareabytesreached'] = 'ファイル (または複数ファイルの合計サイズ) がこのエリアの空き容量を超えています。';
-$string['maxbytesforfile'] = 'ファイル「 {$a} 」が最大許容サイズを超えています。';
 $string['maxfilesize'] = '新しいファイルの最大サイズ: {$a}';
 $string['maxfilesreached'] = 'あなたはこのアイテムに最大 {$a} 個のファイルを添付することができます。';
 $string['maximumchars'] = '{$a} の最大文字数';
@@ -1145,13 +1158,13 @@ $string['maxnumcoursesincombo'] = '<a href="{$a->link}">{$a->numberofcourses} �
 $string['maxsectionslimit'] = 'このコース ({$a}) に許可された最大セクション数を超過したため、新しいセクションを作成することができません。';
 $string['maxsize'] = '最大サイズ: {$a}';
 $string['maxsizeandareasize'] = '新しいファイルの最大サイズ: {$a->size} - 全体の制限: {$a->areasize}';
-$string['maxsizeandattachments'] = '新しいファイルの最大サイズ: {$a->size} / 最大添付: {$a->attachments}';
-$string['maxsizeandattachmentsandareasize'] = '新しいファイルの最大サイズ: {$a->size} - 最大添付数: {$a->attachments} - 全体の制限: {$a->areasize}';
+$string['maxsizeandattachments'] = '最大ファイルサイズ: {$a->size} / 最大ファイル数: {$a->attachments}';
+$string['maxsizeandattachmentsandareasize'] = '最大ファイルサイズ: {$a->size} / 最大ファイル数: {$a->attachments} / 最大合計サイズ: {$a->areasize}';
 $string['memberincourse'] = 'コースに属するユーザ';
 $string['messagebody'] = 'メッセージ本文';
 $string['messagedselectedcountusersfailed'] = '問題が発生したため、{$a} 件のメッセージが送信されませんでした。';
 $string['messagedselecteduserfailed'] = 'メッセージはユーザ {$a->fullname} に送信されませんでした。';
-$string['messagedselectedusers'] = '選択されたユーザにメッセージが送信され、受信者リストがリセットされました。';
+$string['messagedselectedusers'] = '選択されたユーザにメッセージが送信されました。同時に受信者リストがリセットされました。';
 $string['messagedselectedusersfailed'] = '選択されたユーザへのメッセージ送信中に問題が発生しました。数名のユーザにはメールが送信されました。';
 $string['messageprovider:availableupdate'] = '利用可能な更新に関する通知';
 $string['messageprovider:backup'] = 'バックアップ通知';
@@ -1167,6 +1180,7 @@ $string['messageprovider:errors_help'] = '管理者が知る必要のある重�
 $string['messageprovider:insights'] = '予測モデルから生成された洞察';
 $string['messageprovider:instantmessage'] = 'ユーザ間のパーソナルメッセージ';
 $string['messageprovider:instantmessage_help'] = 'このセクションではこのサイトのほかのユーザからあなた宛に直接メッセージ送信された場合の動作を設定します。';
+$string['messageprovider:messagecontactrequests'] = 'メッセージコンタクトリクエスト通知';
 $string['messageprovider:notices'] = '小さな問題に関する警告';
 $string['messageprovider:notices_help'] = 'これらは管理者にとって興味深い内容の通知です。';
 $string['messageselect'] = 'このユーザをメッセージ受信者として選択する';
@@ -1200,8 +1214,6 @@ $string['missingsummary'] = '概要が入力されていません。';
 $string['missingteacher'] = '何か選択してください。';
 $string['missingurl'] = 'リンク切れ';
 $string['missingusername'] = 'ユーザ名が入力されていません。';
-$string['modchooserdisable'] = '活動チューザ OFF';
-$string['modchooserenable'] = '活動チューザ ON';
 $string['moddoesnotsupporttype'] = 'モジュール「 {$a->modname} 」はアップロードタイプ「 {$a->type} 」をサポートしていません。';
 $string['modhide'] = '非表示';
 $string['modified'] = '更新日時';
@@ -1242,7 +1254,9 @@ $string['movecategorysuccess'] = 'カテゴリ「 {$a->moved} 」をカテゴリ
 $string['movecategoryto'] = 'カテゴリを移動する:';
 $string['movecategorytotopsuccess'] = 'カテゴリ「 {$a->moved} 」を正常にトップレベルに移動しました。';
 $string['movecontent'] = '移動対象: {$a}';
+$string['movecontentafter'] = '「 {$a} 」の後';
 $string['movecontentstoanothercategory'] = 'コンテンツを別のカテゴリに移動する';
+$string['movecontenttothetop'] = 'リストのトップ';
 $string['movecoursemodule'] = 'リソースを移動する';
 $string['movecoursesection'] = 'セクションを移動する';
 $string['movecourseto'] = 'コースの移動:';
@@ -1259,7 +1273,7 @@ $string['movetoanotherfolder'] = '別のフォルダへ移動する';
 $string['moveup'] = '上へ';
 $string['msnid'] = 'MSN ID';
 $string['mustchangepassword'] = '新しいパスワードには現在のパスワードと異なるものを指定してください。';
-$string['mustconfirm'] = 'あなたのログイン情報を確認してください。';
+$string['mustconfirm'] = 'あなたのアカウントを確認してください。';
 $string['mycourses'] = 'マイコース';
 $string['myfiles'] = 'マイプライベートファイル';
 $string['myfilesmanage'] = 'マイプライベートファイルを管理する';
@@ -1433,6 +1447,10 @@ $string['outline'] = 'アウトライン';
 $string['outlinereport'] = 'アウトラインレポート';
 $string['page'] = 'ページ';
 $string['pagea'] = 'ページ {$a}';
+$string['pagedcontentnavigation'] = 'ページネーションナビゲーション';
+$string['pagedcontentnavigationactiveitem'] = '現在のページ、ページ {$a}';
+$string['pagedcontentnavigationitem'] = 'ページ {$a} に移動する';
+$string['pagedcontentpagingbaritemsperpage'] = '1ページあたり {$a} アイテムを表示する';
 $string['pageheaderconfigablock'] = '{$a->fullname} 内のブロック設定';
 $string['pagepath'] = 'ページパス';
 $string['pageshouldredirect'] = 'このページは自動的にリダイレクトされます。何も起こらない場合、下の「続ける」リンクをクリックしてください。';
@@ -1469,6 +1487,7 @@ $string['payments'] = '支払い';
 $string['paymentsorry'] = 'お支払いありがとうございます! 残念ですが、あなたの支払いおよびコース 「 {$a->fullname} 」 に入るための登録作業は完了していません。再度、支払いおよび登録作業を実施してください。引き続きエラーが表示される場合、{$a->teacher} またはサイト管理者にご連絡ください。';
 $string['paymentthanks'] = 'お支払いありがとうございます! あなたは次のコースに登録されました:<br /> 「 {$a} 」';
 $string['pendingrequests'] = '保留中のリクエスト';
+$string['percents'] = '{$a}%';
 $string['periodending'] = '期間終了 ({$a})';
 $string['perpage'] = '1ページあたり';
 $string['perpagea'] = '1ページあたり: {$a}';
@@ -1583,9 +1602,9 @@ $string['registrationinfo'] = '<p>このページではあなたのMoodleサイ�
 <p>登録する場合、あなたのサイト名、国、URLがMoodleサイトの公開リストに登録されます。</p>
 <p>すべての新しい登録は公開リストに登録される前に手作業で確認されますが、一旦登録されるといつでも登録内容 (および公開リストの内容) をこのフォームで再登録することができます。</p>';
 $string['registrationinfotitle'] = '登録情報';
-$string['registrationno'] = 'いいえ、Moodle HQからメールは送信しないでください';
+$string['registrationno'] = 'いいえ、どのようなメールも送信しないでください';
 $string['registrationsend'] = 'moodle.orgに登録情報を送信する';
-$string['registrationyes'] = 'はい、私に重要事項を通知してください (例 セキュリティ問題またはリリース)';
+$string['registrationyes'] = 'はい、私に新しいMoodleリリース、セキュリティ通知およびその他重要ニュースを通知してください';
 $string['reject'] = '拒否';
 $string['rejectdots'] = '拒否 ...';
 $string['reload'] = 'リロード';
@@ -1604,8 +1623,10 @@ $string['requestcourse'] = 'コースをリクエストする';
 $string['requestedby'] = 'リクエスト:';
 $string['requestedcourses'] = 'リクエストされたコース';
 $string['requestreason'] = 'コースリクエストの理由';
+$string['requests'] = 'リクエスト';
 $string['required'] = '必須';
 $string['requirespayment'] = 'このコースにアクセスするには支払いが必要です。';
+$string['resendemail'] = 'メールを再送する';
 $string['reset'] = 'リセット';
 $string['resetcomponent'] = 'コンポーネント';
 $string['resetcourse'] = 'コースをリセットする';
@@ -1693,12 +1714,6 @@ $string['searchagain'] = '再検索';
 $string['searchbyemail'] = 'メールアドレスで検索する';
 $string['searchbyusername'] = 'ユーザ名で検索する';
 $string['searchcourses'] = 'コースを検索する';
-$string['searchhelp'] = '<p>あなたは同時に複数の言葉で探すことができます。:</p>
-<ul>
-<li>単語 : テキストの中に含まれる単語を探します。</li>
-<li>+単語 : 合致する単語を検索します。</li>
-<li>-単語 : この単語を含まない検索をします。</li>
-</ul>';
 $string['search_help'] = 'テキスト中に存在する1つまたはそれ以上の言葉を検索する基本的な検索では空白で区切られた言葉を入力してください。半角2文字より大きな言葉が検索に使用されます。
 
 高度な検索では検索ボックス内に文字を入力せずに検索ボタンをクリックしてください。高度な検索フォームが表示されます。';
@@ -1760,6 +1775,7 @@ $string['separateandconnectedinfo'] = '分離認識および関連認識の理�
 </ul>';
 $string['servererror'] = 'サーバとの通信中にエラーが発生しました。';
 $string['serverlocaltime'] = 'サーバのローカルタイム';
+$string['sessionforceclean'] = 'このセッションではユーザ作成スクリプトはセキュリティ上の理由から無効にされています。';
 $string['setcategorytheme'] = 'カテゴリテーマの設定';
 $string['setpassword'] = 'パスワードを設定する';
 $string['setpasswordinstructions'] = 'あなたの新しいパスワードを以下に入力した後、保存してください。';
@@ -1865,7 +1881,7 @@ $string['statsreport10'] = 'ユーザ活動';
 $string['statsreport11'] = '最も活発なコース';
 $string['statsreport12'] = '最も活発なコース (加重)';
 $string['statsreport13'] = '最も参加者の多いコース (登録)';
-$string['statsreport14'] = '最も参加者の多いコース (閲覧/投稿)';
+$string['statsreport14'] = '最も参加者の多いコース (投稿/閲覧)';
 $string['statsreport2'] = '閲覧 (すべてのロール)';
 $string['statsreport3'] = '投稿 (すべてのロール)';
 $string['statsreport4'] = 'すべての活動 (すべてのロール)';
@@ -2044,7 +2060,6 @@ $string['uploadthisfile'] = 'このファイルをアップロードする';
 $string['url'] = 'URL';
 $string['used'] = '使用';
 $string['usedinnplaces'] = '{$a} 箇所で使用';
-$string['usemessageform'] = 'または下記フォームを使用して、選択した学生にメッセージを送信してください。';
 $string['user'] = 'ユーザ';
 $string['useraccount'] = 'ユーザアカウント';
 $string['useractivity'] = '活動';

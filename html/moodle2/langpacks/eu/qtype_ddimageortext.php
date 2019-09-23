@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['answer'] = 'Erantzuna';
 $string['bgimage'] = 'Atzeko planoaren irudia';
 $string['blank'] = 'hutsik';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
+$string['deletedchoice'] = '[Ezabatutako aukera]';
 $string['draggableimage'] = 'Eramateko irudia';
 $string['draggableitem'] = 'Eramateko elementua';
 $string['draggableitemheader'] = 'Eramateko elementua {$a}';
@@ -40,7 +41,7 @@ $string['draggableword'] = 'Eramateko testua';
 $string['dropbackground'] = 'Atzeko planoaren irudia, bertara markatzaileak eramateko';
 $string['dropzone'] = 'Eramateko tokia {$a}';
 $string['dropzoneheader'] = 'Eramateko tokiak';
-$string['formerror_disallowedtags'] = 'Sentitzen dugu, HTML etiketak ez daude baimenduta eramateko testuan.';
+$string['formerror_disallowedtags'] = '"{$a}" etiketak baino ez daude baimenduta eramateko testuan.';
 $string['formerror_multipledraginstance'] = '{$a} irudia aukera zuzen gisa aukeratu duzu erortze-puntu baten baino gehiagotan, baina ez dago markatuta mugarik gabe arrastatu daiteken elementu gisa.';
 $string['formerror_multipledraginstance2'] = 'Irudi hau aukera zuzen gisa aukeratu duzu erortze-puntu baten baino gehiagotan, baina ez dago markatuta mugarik gabe arrastatu daiteken elementu gisa.';
 $string['formerror_noallowedtags'] = 'HTML etiketak ez dira onartzen testu honetan arrastatu daitekeen irudi baten testu alternatiboa delako.';

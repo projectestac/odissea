@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'local_mobile', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,9 +30,10 @@ $string['allowpermissionsdescription'] = 'Edite o papel "Utilizador autenticado"
 $string['cannotcreatetoken'] = 'A funcionalidade gerar token automaticamente não está disponível para os administradores do site (estes têm de gerar o token manualmente no site)';
 $string['checkpluginconfiguration'] = 'Verifique as configurações do módulo';
 $string['clickheretolaunchtheapp'] = 'Clique aqui se a aplicação não abrir automaticamente';
-$string['enableadditionalservice'] = 'Ativar o serviço de funcionalidades adicionais do Moodle Mobile';
+$string['enableadditionalservice'] = 'Ativar o serviço de funcionalidades adicionais da Aplicação móvel Moodle';
 $string['enableadditionalservicedescription'] = 'Este serviço deve estar ativado.';
-$string['local_mobiledescription'] = 'Módulo que prolonga as funcionalidades do serviço Mobile';
+$string['local_mobiledescription'] = 'Módulo que prolonga as funcionalidades da Aplicação móvel Moodle';
 $string['local_mobilesettings'] = 'Configurações';
-$string['pluginname'] = 'Funcionalidades adicionais do Moodle Mobile';
-$string['pluginnotenabledorconfigured'] = 'O módulo local Moodle Mobile deve estar ativo e configurado para poder executar a aplicação';
+$string['pluginname'] = 'Funcionalidades adicionais da Aplicação móvel Moodle';
+$string['pluginnotenabledorconfigured'] = 'O módulo local Funcionalidades adicionais da Aplicação móvel Moodle deve estar ativo e configurado para poder executar a aplicação';
+$string['privacy:metadata'] = 'O módulo Funcionalidades adicionais da Aplicação móvel Moodle não armazena quaisquer dados pessoais.';

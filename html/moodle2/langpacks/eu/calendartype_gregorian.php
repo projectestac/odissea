@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendartype_gregorian', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendartype_gregorian', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   calendartype_gregorian
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['name'] = 'Gregorioanoa';
 $string['pluginname'] = 'Egutegi gregorioanoa';
-$string['privacy:metadata'] = 'Egutegi gregoriano formatu-pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Gregorianoa egutegi-formatu pluginak ez du datu pertsonalik biltzen.';

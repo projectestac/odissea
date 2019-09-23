@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'completion', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,7 +57,7 @@ $string['completed'] = 'Terminé';
 $string['completedunlocked'] = 'Options d\'achèvement déverrouillées';
 $string['completedunlockedtext'] = 'Lors de l\'enregistrement, l\'état d\'achèvement des activités de tous les participants sera supprimé. Si ce n\'est pas ce que vous voulez, n\'enregistrez pas.';
 $string['completedwarning'] = 'Options d\'achèvement verrouillées';
-$string['completedwarningtext'] = 'Cette activité a déjà été marquée comme terminée pour {$a}  participant(s). La modification des options d\'achèvement supprimera cet état terminé et risque de causer des confusions. C\'est pourquoi les options ont été verrouillées et ne devraient pas être déverrouillées à moins que cela ne soit absolument nécessaire.';
+$string['completedwarningtext'] = 'Cette activité a déjà été marquée comme terminée pour {$a} participant(s). La modification des options d\'achèvement supprimera cet état terminé et risque de causer des confusions. C\'est pourquoi les options ont été verrouillées et ne devraient pas être déverrouillées à moins que cela ne soit absolument nécessaire.';
 $string['completion'] = 'Suivi d\'achèvement';
 $string['completionactivitydefault'] = 'Utiliser le réglage par défaut de l\'activité';
 $string['completion-alt-auto-enabled'] = 'Le système marquera cet élément comme terminé selon les conditions : {$a}';
@@ -100,7 +100,7 @@ $string['completionnotenabledforcourse'] = 'L\'achèvement n\'est pas activé po
 $string['completionnotenabledforsite'] = 'L\'achèvement n\'est pas activé pour ce site';
 $string['completion-n-override'] = 'Non terminé (défini par {$a})';
 $string['completionondate'] = 'Date';
-$string['completionondatevalue'] = 'L\'utilisateur doit rester inscrit jusqu\'au';
+$string['completionondatevalue'] = 'Date à laquelle le cours sera marqué comme terminé';
 $string['completion-pass'] = 'Terminé (note pour passer atteinte)';
 $string['completionsettingslocked'] = 'Réglages d\'achèvement verrouillés';
 $string['completion-title-manual-n'] = 'Marquer comme terminé : {$a}';
@@ -149,7 +149,7 @@ $string['err_noactivities'] = 'Le suivi de l\'achèvement n\'est activé dans au
 $string['err_nocourses'] = 'Le suivi de l\'achèvement n\'est activé dans aucun cours. Vous pouvez activer le suivi d\'achèvement de cours dans les réglages de chaque cours.';
 $string['err_nograde'] = 'Une note minimale pour terminer le cours avec succès n\'a pas été spécifiée. Pour activer ce type de critère, veuillez créer une note minimale pour ce cours.';
 $string['err_noroles'] = 'Il n\'y a pas de rôle avec la capacité moodle/course:markcomplete dans ce cours.';
-$string['err_nousers'] = 'Aucun des participants de ce cours ou de ce groupe n\'a de rôle pour lequel le suivi de l\'achèvement des activités est activé. Par défaut, le suivi de l\'achèvement des activités est activé pour le rôle d\'étudiant uniquement et vous obtiendrez cette erreur s\'il n\'y a pas d\'étudiant. L\'administrateur peut modifier ceci au besoin.';
+$string['err_nousers'] = 'Aucun des participants de ce cours ou de ce groupe n\'a de rôle pour lequel le suivi de l\'achèvement des activités est activé. Les informations d\'achèvement ne sont affichées que pour les utilisateurs disposant de la capacité « Être affiché dans les rapports d\'achèvement ». Or cette capacité n\'est autorisée que pour le rôle d\'étudiant ; ce message est donc affiché s\'il n\'y a pas  d\'étudiant.';
 $string['err_settingslocked'] = 'Un ou plusieurs étudiants ont déjà rempli un critère, c\'est pourquoi les réglages ont été verrouillés. Le déverrouillage des critères d\'achèvement supprimera les données existantes de l\'état d\'achèvement des utilisateurs et causera des confusions.';
 $string['err_system'] = 'Une erreur interne est survenue dans le système de suivi de l\'achèvement des activités. L\'administrateur peut activer l\'affichage des informations de débogage pour obtenir plus de détails sur cette erreur.';
 $string['eventcoursecompleted'] = 'Cours terminé';

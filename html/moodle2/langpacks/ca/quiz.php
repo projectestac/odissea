@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -81,6 +81,7 @@ $string['answers'] = 'Respostes';
 $string['answersingleno'] = 'Es permeten múltiples respostes';
 $string['answersingleyes'] = 'Només una resposta';
 $string['answertoolong'] = 'La resposta és massa llarga després de la línia {$a} (màxim 255 caràcters)';
+$string['anytags'] = 'Totes les etiquetes';
 $string['aon'] = 'Format AON';
 $string['areyousureremoveselected'] = 'Segur que voleu eliminar totes les preguntes seleccionades?';
 $string['asshownoneditscreen'] = 'Tal com apareix a la pantalla d\'edició';
@@ -338,6 +339,7 @@ $string['eventreportviewed'] = 'S\'ha visualitzat l\'informe del qüestionari';
 $string['everynquestions'] = 'Cada {$a} preguntes';
 $string['everyquestion'] = 'Cada pregunta';
 $string['everythingon'] = 'Tot activat';
+$string['existingcategory'] = 'Categoria existent';
 $string['exportcategory'] = 'exporta la categoria';
 $string['exporterror'] = 'S\'ha produït un error durant el procés d\'exportació';
 $string['exportingquestions'] = 'S\'estan exportant les preguntes a un fitxer';
@@ -505,6 +507,7 @@ $string['navmethod_seq'] = 'Seqüencial';
 $string['navnojswarning'] = 'Compte: aquests enllaços no desaran les respostes. Utilitzeu el botó Següent al peu de la pàgina.';
 $string['neverallononepage'] = 'Mai, totes les preguntes en una pàgina';
 $string['newattemptfail'] = 'Error: no s\'ha pogut iniciar un nou intent del qüestionari';
+$string['newcategory'] = 'Categoria nova';
 $string['newpage'] = 'Pàgina nova';
 $string['newpageevery'] = 'Afegeix una pàgina nova automàticament';
 $string['newpage_help'] = 'En qüestionaris molt llargs té sentit limitar el nombre de preguntes per pàgina i partir el qüestionari en diverses pàgines. Quan afegiu preguntes al qüestionari els salts de pàgina s\'introduiran automàticament d\'acord amb els paràmetres que hàgeu triat aquí. Tanmateix, després podreu canviar de lloc aquests salts de pàgina a mà en la pàgina d\'edició.';
@@ -542,7 +545,7 @@ $string['notavailabletostudents'] = 'Nota: aquest qüestionari no està disponib
 $string['notenoughrandomquestions'] = 'No hi ha prou preguntes a la categoria {$a->category} per crear la pregunta {$a->name} ({$a->id}).';
 $string['notenoughsubquestions'] = 'No heu definit prou subpreguntes!<br />
 Voleu tornar enrere i arreglar aquesta pregunta?';
-$string['notimedependentitems'] = 'A hores d\'ara, els elements depenents del temps no funcionen amb el mòdul de qüestionaris. De manera provisional, podeu definir un límit de temps per a tot el qüestionari. Voleu triar un altre ítem diferent o, malgrat tot, preferiu utilitzar aquest?';
+$string['notimedependentitems'] = 'A hores d\'ara, els elements depenents del temps no funcionen amb el mòdul de qüestionaris. De manera provisional, podeu definir un límit de temps per a tot el qüestionari. Voleu triar un altre element diferent o, malgrat tot, preferiu utilitzar aquest?';
 $string['notyetgraded'] = 'Encara no s\'ha avaluat';
 $string['notyetviewed'] = 'Encara no s\'ha visualitzat';
 $string['notyourattempt'] = 'No és el vostre intent!';
@@ -568,7 +571,7 @@ Per distribuir les preguntes en un nombre de pàgines feu clic al botó "Repagin
 $string['orderingquiz'] = 'Ordre i paginació';
 $string['orderingquizx'] = 'Ordre i paginació: {$a}';
 $string['outcomesadvanced'] = 'Les competències són paràmetres avançats';
-$string['outof'] = '{$a->grade} d\'un màxim de {$a->maxgrade}';
+$string['outof'] = '{$a->grade} sobre {$a->maxgrade}';
 $string['outofpercent'] = '{$a->grade} sobre {$a->maxgrade} ({$a->percent}%)';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
 $string['overallfeedback'] = 'Retroacció global';
@@ -647,6 +650,7 @@ $string['questionposition'] = 'Nova posició d\'ordenació de la pregunta {$a}';
 $string['questions'] = 'Preguntes';
 $string['questionsinclhidden'] = 'Preguntes (incloses les ocultes)';
 $string['questionsinthisquiz'] = 'Preguntes d\'aquest qüestionari';
+$string['questionsmatchingfilter'] = 'Preguntes que coincideixen amb aquest filtre: {$a}';
 $string['questionsperpage'] = 'Preguntes per pàgina';
 $string['questionsperpageselected'] = 'El nombre de preguntes per pàgina s\'ha fixat. Pewr tant, els controls de distribució per pàgines s\'han desactivat. Podeu canviar-ho a {$a}.';
 $string['questionsperpagex'] = 'Preguntes per pàgina: {$a}';
@@ -699,6 +703,7 @@ $string['randomfromcategory'] = 'Pregunta aleatòria de la categoria:';
 $string['randomfromexistingcategory'] = 'Pregunta aleatòria d\'una categoria existent';
 $string['randomnosubcat'] = 'Preguntes només d\'aquesta categoria, no de les seves subcategories.';
 $string['randomnumber'] = 'Nombre de preguntes aleatòries';
+$string['randomquestiontags'] = 'Etiquetes';
 $string['randomquestionusinganewcategory'] = 'Pregunta aleatòria fent servir una categoria nova.';
 $string['randomwithsubcat'] = 'Pregunta d\'aquesta categoria i de les seves subcategories.';
 $string['readytosend'] = 'Esteu a punt d\'enviar el qüestionari complet perquè sigui qualificat. Esteu segur que voleu continuar?';
@@ -825,11 +830,11 @@ $string['sectionheadingedit'] = 'Edita la capçalera «{$a}»';
 $string['sectionheadingremove'] = 'Suprimeix la capçalera «{$a}»';
 $string['seequestions'] = '(Veure preguntes)';
 $string['select'] = 'Selecciona';
-$string['selectall'] = 'Selecciona tot';
+$string['selectall'] = 'Selecciona-ho tot';
 $string['selectcategory'] = 'Selecciona una categoria';
 $string['selectedattempts'] = 'Intents seleccionats';
-$string['selectmultipleitems'] = 'Seleccioneu diversos elements';
-$string['selectnone'] = 'Desselecciona tot';
+$string['selectmultipleitems'] = 'Selecciona diversos elements';
+$string['selectnone'] = 'Desselecciona-ho tot';
 $string['selectquestiontype'] = '-- Selecciona un tipus de pregunta --';
 $string['serveradded'] = 'S\'ha afegit el servidor';
 $string['serveridentifier'] = 'Identificador';

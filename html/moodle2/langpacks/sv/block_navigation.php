@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_navigation', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['everything'] = 'Allt';
 $string['expansionlimit'] = 'Generera navigation för det följande';
 $string['linkcategoriesdesc'] = 'Visa kategorier som länkar';
 $string['navigation:addinstance'] = 'Lägg till nytt navigationsblock';
-$string['navigation:myaddinstance'] = 'Lägg till nytt navigationsblock för Mitt hem';
+$string['navigation:myaddinstance'] = 'Lägg till nytt navigationsblock på Mitt Moodle';
 $string['pluginname'] = 'Navigation';
 $string['trimlength'] = 'Antal tecken att trimma till';
 $string['trimmode'] = 'Läge för trimning';

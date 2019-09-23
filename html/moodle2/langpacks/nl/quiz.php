@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,6 +83,7 @@ $string['answers'] = 'Juiste antwoorden';
 $string['answersingleno'] = 'Meer antwoorden toegestaan';
 $string['answersingleyes'] = 'Slechts één antwoord';
 $string['answertoolong'] = 'Antwoord is te lang na lijn {$a} (maximum 255 tekens)';
+$string['anytags'] = 'Alle tags';
 $string['aon'] = 'AON-opmaak';
 $string['areyousureremoveselected'] = 'Ben je zeker dat je alle geselecteerde vragen wil verwijderen?';
 $string['asshownoneditscreen'] = 'Zoals getoond op het bewerkscherm';
@@ -100,18 +101,24 @@ $string['attemptincomplete'] = 'De poging (door {$a}) is nog niet voltooid.';
 $string['attemptlast'] = 'Laatste poging';
 $string['attemptnumber'] = 'Poging';
 $string['attemptquiznow'] = 'Start de test nu';
+$string['attemptreviewtitle'] = '{$a}: beoordeel poging';
+$string['attemptreviewtitlepaged'] = '{$a->name}: beoordeel poging (page{$a->currentpage} van {$ a-> totalpages})';
 $string['attempts'] = 'Pogingen';
 $string['attemptsallowed'] = 'Toegestane pogingen';
 $string['attemptsdeleted'] = 'Testpogingen verwijderd';
 $string['attemptselection'] = 'Kies welke pogingen per gebruiker je wil analyseren';
 $string['attemptsexist'] = 'Je kan niet langer vragen toevoegen of verwijderen';
+$string['attempts_help'] = 'Het totale aantal toegestane pogingen (niet het aantal extra pogingen).';
 $string['attemptsnum'] = 'Pogingen: {$a}';
 $string['attemptsnumthisgroup'] = 'Pogingen: {$a->total} ({$a->group} van deze groep)';
 $string['attemptsnumyourgroups'] = 'Pogingen: {$a->total} ({$a->group} van jouw groepen)';
 $string['attemptsonly'] = 'Toon enkel leerlingen met testpogingen';
 $string['attemptstate'] = 'Status';
 $string['attemptstillinprogress'] = 'Poging nog bezig';
+$string['attemptsummarytitle'] = '{$a}: beoordeel samenvatting';
 $string['attemptsunlimited'] = 'Onbeperkt aantal pogingen';
+$string['attempttitle'] = '{$a}';
+$string['attempttitlepaged'] = '{$a->name} (pagina {$a->currentpage} van {$a->totalpages})';
 $string['autosaveperiod'] = 'Tijd tussen automatisch bewaren';
 $string['autosaveperiod_desc'] = 'De antwoorden van de leerlingen kunnen automatisch bewaard worden tijdens de test. De antwoorden worden bewaard wanneer er iets wijzigt en dan na deze tijd. Het hoe korter de tijd tussen het bewaren van de antwoorden, hoe hoger de belasting op de server, maar hoe kleiner de kans dat leerlingen hun werk verliezen. Als je deze tijd veel korter wil maken, doe dat dan in stapjes en observeer je serverbelasting. Als de server te hoog belast is, zet de waarde dan langer. Als je de waarde op 0 zet, dan wordt er niet automatisch bewaard.';
 $string['back'] = 'Terug naar controleer vraag';
@@ -137,6 +144,8 @@ $string['cannotinsertrandomquestion'] = 'Kon geen nieuwe willekeurige vraag toev
 $string['cannotloadquestion'] = 'Kon vraagopties niet laden';
 $string['cannotloadtypeinfo'] = 'Kon vraagtypespecifieke informatie niet laden';
 $string['cannotopen'] = 'Kan exportbestand niet openen ({$a})';
+$string['cannotremoveallsectionslots'] = 'Je hebt alle vragen onder de kop \'{$a}\' geselecteerd. Het is niet toegestaan om alle vragen onder een sectie kop te verwijderen.';
+$string['cannotremoveslots'] = 'Kan vragen niet verwijderen';
 $string['cannotrestore'] = 'Kon vraagsessies niet terugzetten';
 $string['cannotreviewopen'] = 'Je kunt deze poging niet nakijken - ze is nog open';
 $string['cannotsavelayout'] = 'Kon opmaak niet bewaren';
@@ -343,6 +352,7 @@ $string['eventreportviewed'] = 'Testrapport bekeken';
 $string['everynquestions'] = 'Elke {$a} vragen';
 $string['everyquestion'] = 'Elke vraag';
 $string['everythingon'] = 'Alles op';
+$string['existingcategory'] = 'Bestaande categorie';
 $string['exportcategory'] = 'export categorie';
 $string['exporterror'] = 'Er is een fout opgetreden tijdens het verwerken van de export';
 $string['exportingquestions'] = 'Vragen zijn geëxporteerd naar een bestand';
@@ -466,6 +476,7 @@ $string['invalidcategory'] = 'Categorie ID is ongeldig';
 $string['invalidoverrideid'] = 'Ongeldig overschrijvingsID';
 $string['invalidquestionid'] = 'Ongeldige vraag ID';
 $string['invalidquizid'] = 'Ongeldige test ID';
+$string['invalidrandomslot'] = 'Ongeldige slot id willekeurige vraag';
 $string['invalidsource'] = 'Deze bron is niet geldig';
 $string['invalidsourcetype'] = 'Ongeldig brontype';
 $string['invalidstateid'] = 'Ongeldige status ID';
@@ -531,6 +542,7 @@ $string['navmethod_seq'] = 'Sequentieel';
 $string['navnojswarning'] = 'Waarschuwing: deze links zullen je antwoorden niet bewaren. Gebruik de \'volgende\'-knop onderaan de pagina.';
 $string['neverallononepage'] = 'Nooit, alle vragen op één pagina';
 $string['newattemptfail'] = 'Fout: kon geen nieuwe poging voor de test starten';
+$string['newcategory'] = 'Nieuwe categorie';
 $string['newpage'] = 'Nieuwe pagina';
 $string['newpageevery'] = 'Start automatisch een nieuwe pagina';
 $string['newpage_help'] = '<p>Voor langere testen is het een goed idee om deze te verdelen over verschillende pagina\'s door het aantal vragen per pagina te beperken. Wanneer je vragen aan de test toevoegt, worden de paginascheidingen automatisch ingevoegd, afhankelijk van de instelling die je hier gemaakt hebt. Je kunt de paginascheidingen later ook met de hand verplaatsen op de pagina voor het bewerken van de test.
@@ -696,8 +708,10 @@ $string['questionnotloaded'] = 'Vraag {$a} is niet geladen vanuit de databank';
 $string['questionorder'] = 'Vraagvolgorde';
 $string['questionposition'] = 'Nieuwe positie in volgorde voor vraag {$a}';
 $string['questions'] = 'Vragen';
+$string['questionsetpreview'] = 'Voorvertoning vragenset';
 $string['questionsinclhidden'] = 'Vragen (verborgen inbegrepen)';
 $string['questionsinthisquiz'] = 'Vragen in deze test';
+$string['questionsmatchingfilter'] = 'Vragen die overeenkomen met dit filter: {$a}';
 $string['questionsperpage'] = 'Maximaal aantal vragen per pagina';
 $string['questionsperpageselected'] = 'Het aantal vragen per pagina is vooraf vastgesteld. Daarom zijn de pagineringsmogelijkheden uitgeschakeld. Je kunt dit wijzigen in {$a}';
 $string['questionsperpagex'] = 'Aantal vragen per pagina: {$a}';
@@ -746,10 +760,18 @@ $string['quiz:viewreports'] = 'Testresultaten bekijken';
 $string['quizwillopen'] = 'Deze test opent op {$a}';
 $string['random'] = 'Willekeurige vraag';
 $string['randomcreate'] = 'Maak willekeurige vragen';
+$string['randomediting'] = 'Een willekeurige vraag bewerken';
 $string['randomfromcategory'] = 'Willekeure vraag uit categorie:';
 $string['randomfromexistingcategory'] = 'Willekeurig vraag van een bestaande categorie';
+$string['randomfromunavailabletag'] = '{$a} (niet beschikbaar)';
 $string['randomnosubcat'] = 'Enkel vragen uit deze categorie, niet uit de subcategorieën';
 $string['randomnumber'] = 'Aantal willekeurige vragen';
+$string['randomquestion'] = 'Willekeurige vraag';
+$string['randomquestion_help'] = 'Een willekeurige vraag is een manier om willekeurig gekozen vragen uit een gespecificeerde categorie of via een gespecificeerde tag in een activiteit in te voegen.';
+$string['randomquestiontags'] = 'Tags';
+$string['randomquestiontags_help'] = 'Je kunt de selectiecriteria verder beperken door hier vraagtags te specificeren.
+
+De "willekeurige" vragen zullen worden geselecteerd uit de vragen die al deze tags hebben.';
 $string['randomquestionusinganewcategory'] = 'Willekeurige vraag van een nieuwe categorie';
 $string['randomwithsubcat'] = 'Vragen uit deze categorie en uit de subcategorieën ervan.';
 $string['readytosend'] = 'Je staat op het punt om de test in te sturen zodat hij beoordeeld kan worden. Weet je zeker dat je door wilt gaan?';
@@ -993,6 +1015,7 @@ $string['unfinished'] = 'open';
 $string['ungraded'] = 'Nog geen cijfer';
 $string['unit'] = 'Eenheid';
 $string['unknowntype'] = 'Vraagtype op lijn {$a} niet ondersteund. De vraag zal genegeerd worden';
+$string['updatequizslotswithrandomxofy'] = 'Testslots met data van "willekeurige" vragen ({$a->done}/{$a->total})';
 $string['updatesettings'] = 'Instellingen test bijwerken';
 $string['updatingatttemptgrades'] = 'Cijfers updaten';
 $string['updatingfinalgrades'] = 'Totaalcijfers updaten';

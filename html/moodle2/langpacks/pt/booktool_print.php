@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_print', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'booktool_print', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   booktool_print
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventbookprinted'] = 'Livro imprimido';
 $string['eventchapterprinted'] = 'Capítulo imprimido';
-$string['pluginname'] = 'Imprimir Livro';
-$string['printbook'] = 'Imprimir Livro';
+$string['pluginname'] = 'Imprimir livro';
+$string['printbook'] = 'Imprimir livro';
 $string['printchapter'] = 'Imprimir este capítulo';
 $string['printdate'] = 'Data';
 $string['printedby'] = 'Impresso por';
-$string['print:print'] = 'Imprimir Livro';
-$string['privacy:metadata'] = 'O módulo Imprimir Livro não armazena dados pessoais.';
+$string['print:print'] = 'Imprimir livro';
+$string['privacy:metadata'] = 'O módulo Imprimir livro não armazena dados pessoais.';

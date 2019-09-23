@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradingform_rubric', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,6 +60,11 @@ $string['name'] = 'Nome';
 $string['needregrademessage'] = 'A definição da grelha alterou depois deste aluno ter sido avaliado. O aluno não pode ver a avaliação até ser conferida e atualizada a nota.';
 $string['pluginname'] = 'Grelha qualitativa';
 $string['previewrubric'] = 'Pré-visualizar grelha';
+$string['privacy:metadata:criterionid'] = 'Um identificador para um critério específico que está a ser avaliado.';
+$string['privacy:metadata:fillingssummary'] = 'Armazena informações sobre a nota do utilizador.';
+$string['privacy:metadata:instanceid'] = 'Um identificador relacionado com uma nota de uma atividade.';
+$string['privacy:metadata:levelid'] = 'O nível obtido.';
+$string['privacy:metadata:remark'] = 'Comentários relacionados com o critério avaliado.';
 $string['regrademessage1'] = 'Está prestes a guardar alterações a uma grelha que já foi utilizada para avaliação. Indique se existem notas que devem ser revistas. Se alterou isto, então a avaliação com grelha qualitativa estará oculta para o aluno até o item ser reavaliado.';
 $string['regrademessage5'] = 'Está prestes a guardar significantes alterações a uma grelha que já foi usada para avaliação. A pauta não será alterada, mas a grelha estará oculta para os alunos até as notas serem recalculadas.';
 $string['regradeoption0'] = 'Não marcar para reavaliação';

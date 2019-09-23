@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_outline', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['nocapability'] = 'Can not access user outline report';
 $string['nologreaderenabled'] = 'No log reader enabled';
 $string['numviews'] = '{$a->numviews} views by {$a->distinctusers} users';
 $string['outline:view'] = 'View activity report';
+$string['outline:viewuserreport'] = 'View user activity report';
 $string['page-report-outline-index'] = 'Course outline report';
 $string['page-report-outline-user'] = 'User course outline report';
 $string['page-report-outline-x'] = 'Any outline report';

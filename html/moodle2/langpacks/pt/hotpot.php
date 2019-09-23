@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hotpot', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   hotpot
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -288,7 +288,7 @@ $string['feedbackmoodleforum'] = 'Fórum Moodle';
 $string['feedbackmoodlemessaging'] = 'Mensagens Moodle';
 $string['feedbacknone'] = 'Sem comentários';
 $string['feedbacksendmessage'] = 'Enviar mensagem ao professor';
-$string['feedbackwebpage'] = 'Página web';
+$string['feedbackwebpage'] = 'Página Web';
 $string['firstattempt'] = 'Primeira tentativa';
 $string['forceplugins'] = 'Forçar módulos de conteúdo multimédia';
 $string['forceplugins_help'] = 'Se ativar esta opção, os media-players compatíveis com o Moodle reproduzem ficheiros AVI, MPEG, MPG, mp3 mov e wmv. Caso contrário, o Moodle não irá alterar as configurações dos media players no teste.';
@@ -498,7 +498,7 @@ $string['storedetails'] = 'Guardar os detalhes de XML das tentativas do teste Ho
 $string['studentfeedback'] = 'Comentário(s) do(s) aluno(s)';
 $string['studentfeedback_help'] = 'Se ativar esta opção, será exibida uma hiperligação para uma janela pop-up de feedback sempre que o aluno clica no botão "Verificar". A janela de feedback permite aos alunos enviar comentários para o professor através de 4 formas:
 
-* Página web (é necessário inserir o URL da página, como por exemplo http://myserver.com/feedbackform.html)
+* Página Web (é necessário inserir o URL da página, como por exemplo http://myserver.com/feedbackform.html)
 * Formulário para comentário(s) (é necessário inserir o URL do script, como por exemplo  http://myserver.com/cgi-bin/formmail.pl)
 * Fórum Moodle - É exibido o fórum da disciplina
 * Mensagens Moodle - É exibida a janela de mensagens instantâneas. Se a disciplina tiver vários professores, o aluno tem de selecionar um professor antes de aparecer a janela de mensagem .';
@@ -537,19 +537,19 @@ $string['timeopen'] = 'Disponível a partir de';
 $string['timeopenclose'] = 'Datas de abertura e fecho';
 $string['timeopenclose_help'] = 'Pode especificar o intervalo de datas nas quais o teste está aberto para a realização de tentativas. Antes da data de abertura, e após a data de fecho, o teste estará indisponível.';
 $string['title'] = 'Título';
-$string['title_help'] = 'Esta configuração especifica o título a ser exibido na página web.
+$string['title_help'] = 'Esta configuração especifica o título a ser exibido na página Web.
 
 ** Nome da atividade HotPot **
-: O nome desta atividade HotPot será exibido como o título da página web.
+: O nome desta atividade HotPot será exibido como o título da página Web.
 
 **Obter do ficheiro de origem**
-: O título, se houver, definido no ficheiro de fonte será usado como o título da página web.
+: O título, se houver, definido no ficheiro de fonte será usado como o título da página Web.
 
 **Usar nome do ficheiro de origem**
-: O nome do ficheiro fonte, excluindo os nomes de pastas, será usado como o título da página web.
+: O nome do ficheiro fonte, excluindo os nomes de pastas, será usado como o título da página Web.
 
 **Usar caminho do ficheiro de origem**
-: O caminho do ficheiro de origem, incluindo os nomes de pastas, será usado como o título da página web.';
+: O caminho do ficheiro de origem, incluindo os nomes de pastas, será usado como o título da página Web.';
 $string['toolsindex'] = 'Índice das ferramentas HotPot';
 $string['unitname_help'] = 'texto de ajuda para o nome';
 $string['unrecognizedsourcefile'] = 'O módulo HotPot não consegue detetar o tipo de ficheiro de origem: {$a}';

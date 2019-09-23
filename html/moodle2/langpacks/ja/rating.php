@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'rating', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,5 +61,5 @@ $string['ratinginvalid'] = '評価が無効です。';
 $string['ratings'] = '評価';
 $string['ratingtime'] = 'アイテムの評価をこの日付範囲内に限定する';
 $string['rolewarning'] = '評価可能なパーミッション設定済みロール';
-$string['rolewarning_help'] = '評価を送信するためにはユーザは「moodle/rating:rate」ケイパビリティおよび活動個別のケイパビリティが必要です。次のロールが割り当てられたユーザはアイテムを評価することができます。このロールのリストは管理ブロック内のパーミッションリンク経由で修正することができます。';
+$string['rolewarning_help'] = '評価を送信するためにはユーザは「moodle/rating:rate」ケイパビリティおよび活動個別のケイパビリティが必要です。次のロールが割り当てられたユーザはアイテムを評価することができます。このロールのリストはテーマによりアクションメニューまたは管理ブロック内のパーミッションリンク経由で修正できます。';
 $string['scaleselectionrequired'] = '評点総計タイプを選択する場合、あなたは尺度または最大評点のどちらかを選択する必要があります。';

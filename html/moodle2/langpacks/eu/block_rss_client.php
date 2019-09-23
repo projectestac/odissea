@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_rss_client', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,13 +41,13 @@ $string['couldnotfindloadrssfeed'] = 'Ezin izan da aurkitu edo kargatu RSS jario
 $string['customtitlelabel'] = 'Izenburu pertsonalizatua (jarioak ematen duen izenburua erakusteko hutsik utzi):';
 $string['deletefeedconfirm'] = 'Ziur al zaude jario hau ezabatu nahi duzula?';
 $string['disabledrssfeeds'] = 'RSS jarioak desgaituta daude';
-$string['displaydescriptionlabel'] = 'Esteka bakoitzaren deskribapena erakutsi?';
+$string['displaydescriptionlabel'] = 'Erakutsi esteka bakoitzaren deskribapena?';
 $string['editafeed'] = 'Editatu jarioa';
 $string['editfeeds'] = 'Editatu, harpidetu edo baja eman RSS/Atom albiste-jariotik';
 $string['editnewsfeeds'] = 'Editatu albiste-jarioak';
 $string['editrssblock'] = 'Editatu RSS goialdeko blokea';
 $string['enableautodiscovery'] = 'Gaitu jarioak modu automatikoan aurkitzea?';
-$string['enableautodiscovery_help'] = 'Gaituz gero, web-orrietako jarioak automatikoki bilatuko dira. Adibidez, http://docs.moodle.org idazten bada, http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss bilatuko da.';
+$string['enableautodiscovery_help'] = 'Gaituz gero, web-orrietako jarioak automatikoki bilatuko dira. Adibidez, https://docs.moodle.org idazten bada, https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss bilatuko da.';
 $string['failedfeed'] = 'Ezin izan da jarioa deskargatu - {$a}-ren ostean beste saiakera bat egingo da';
 $string['failedfeeds'] = 'Ezin izan da RSS jarioren bat deskargatu';
 $string['feed'] = 'Jarioa';
@@ -68,20 +68,21 @@ $string['pluginname'] = 'Urrutiko RSS jarioak';
 $string['privacy:metadata:block_rss_client:description'] = 'RSS jarioaren deskribapena.';
 $string['privacy:metadata:block_rss_client:preferredtitle'] = 'RSS jarioaren izenburu pertsonalizatua.';
 $string['privacy:metadata:block_rss_client:shared'] = 'RSS jarioa ikastaro guztietan eskuragarri dagoen edo ez.';
-$string['privacy:metadata:block_rss_client:skiptime'] = 'Huts egindako RSS jarioa eskuratzen berriz saiatu aurretik cron-ak itxaron beharreko denbora, segunduetan.';
+$string['privacy:metadata:block_rss_client:skiptime'] = 'Huts egindako RSS jarioa eskuratzen berriz saiatu aurretik cron-ak itxaron beharreko denbora (segundoetan).';
 $string['privacy:metadata:block_rss_client:skipuntil'] = 'Huts egindako RSS jarioa irekitzeko cron-ak erabiliko duen gehienezko denbora.';
 $string['privacy:metadata:block_rss_client:tableexplanation'] = 'Hemen RSS blokearen informazioa gordetzen da.';
 $string['privacy:metadata:block_rss_client:title'] = 'RSS jarioaren izenburua';
 $string['privacy:metadata:block_rss_client:url'] = 'RSS jarioaren URLa';
 $string['privacy:metadata:block_rss_client:userid'] = 'RSS jarioa gehitu zuen erabiltzailearen IDa.';
+$string['refreshfeedstask'] = 'Freskatu RSS jarioak zeregina';
 $string['remotenewsfeed'] = 'Urrutiko albiste-jarioa';
 $string['rss_client:addinstance'] = 'Gehitu urrutiko RSS albiste-jarioa bloke berria';
 $string['rss_client:createprivatefeeds'] = 'Sortu RSS jario pribatuak';
 $string['rss_client:createsharedfeeds'] = 'Sortu partekatutako RSS jarioak';
 $string['rss_client:manageanyfeeds'] = 'Kudeatu edozein RSS jario';
 $string['rss_client:manageownfeeds'] = 'Kudeatu norberaren RSS jarioak';
-$string['rss_client:myaddinstance'] = 'Gehitu urrutiko albiste-jarioa bloke berria aginte-panelean';
-$string['seeallfeeds'] = 'Jario guztiak ikusi';
+$string['rss_client:myaddinstance'] = 'Gehitu urrutiko RSS albiste-jarioa bloke berria aginte-panelean';
+$string['seeallfeeds'] = 'Ikusi jario guztiak';
 $string['sharedfeed'] = 'Partekatutako jarioa';
 $string['shownumentrieslabel'] = 'Blokeko erakuts daitekeen gehienezko sarrera-kopurua.';
 $string['submitters'] = 'Nork defini ditzake RSS albiste-jarioak? Definitutako jarioak zure gunearen orri guztietatik eskuratu ahal izango dira.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'my', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,8 +34,8 @@ $string['delpage'] = 'Eliminar a páxina';
 $string['managepages'] = 'Xestionar as páxinas';
 $string['mymoodle'] = 'Vista xeral dos meus cursos';
 $string['nocourses'] = 'Non hai información sobre o curso para mostrar.';
-$string['noguest'] = 'A páxina \'Vista xeral do curso\' non está dispoñible para convidados';
-$string['pinblocks'] = 'Configurar bloques de agarre do meu Moodle';
+$string['noguest'] = 'A páxina «Vista xeral do curso» non está dispoñible para convidados';
+$string['pinblocks'] = 'Configurar bloques fixados do meu Moodle';
 $string['pinblocksexplan'] = 'Calquera configuración dos bloques que estableza aquí será visible (e non editable) para calquera usuario do Moodle na súa páxina de vista xeral \'O meu Moodle\'.';
 $string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'A preferencia da páxina inicial do usuario configurada para a páxina do taboleiro.';
 $string['reseterror'] = 'Produciuse un erro ao restaurar a súa páxina';

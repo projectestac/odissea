@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,7 +64,6 @@ $string['auth_dbtype_key'] = '데이터베이스';
 $string['auth_dbupdatinguser'] = '사용자 {$a->name} id {$a->id} 업데이트';
 $string['auth_dbuser'] = '데이타베이스의 읽기 권한을 가진 사용자명';
 $string['auth_dbuser_key'] = 'DB 사용자';
-$string['auth_dbusernotexist'] = '존재하지 않는 사용자 {$a} 는 업데이트할 수 없음';
 $string['auth_dbuserstoadd'] = '{$a} 에 사용자 목록 추가';
 $string['auth_dbuserstoremove'] = '{$a} 에서 사용자 목록 제거';
 $string['pluginname'] = '외부 데이타베이스 사용';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'course', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   course
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aria:courseimage'] = 'Cursusafbeelding';
+$string['aria:coursename'] = 'Cursusnaam';
+$string['aria:courseshortname'] = 'Cursus korte naam';
+$string['aria:favourite'] = 'Cursus heeft ster';
+$string['favourite'] = 'Favoriete cursus';
 $string['privacy:completionpath'] = 'Cursusvoltooiing';
+$string['privacy:favouritespath'] = 'Informatie over cursus met ster';
 $string['privacy:metadata:completionsummary'] = 'De cursus bevat voltooiingsinformatie over de gebruiker.';
+$string['privacy:metadata:favouritessummary'] = 'De cursus bevat informatie die verband houdt met het plaatsen van een ster door de gebruiker.';
 $string['privacy:perpage'] = 'Het aantal te tonen cursussen per pagina.';

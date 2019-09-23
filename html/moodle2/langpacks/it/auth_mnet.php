@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_mnet', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -92,7 +92,7 @@ $string['privacy:metadata:mnet_session'] = 'I dettagli di ogni sessione degli ut
 $string['privacy:metadata:mnet_session:expires'] = 'Orario di scadenza della sessione.';
 $string['privacy:metadata:mnet_session:mnethostid'] = 'ID MNet del sistema remoto.';
 $string['privacy:metadata:mnet_session:token'] = 'Identificativo univoco della sessione';
-$string['privacy:metadata:mnet_session:useragent'] = 'Stringa che indica lo user agent con il quale si sta effettuando l\'accesso alla pagina.';
+$string['privacy:metadata:mnet_session:useragent'] = 'Stringa che indica lo user agent con il quale si sta effettuando l\'accesso al sistema remoto';
 $string['privacy:metadata:mnet_session:userid'] = 'ID dell\'utente che si sposta su sistema remoto.';
 $string['privacy:metadata:mnet_session:username'] = 'Username dell\'utente che si sposta su sistema remoto.';
 $string['rpc_negotiation_timeout'] = 'Timeout negoziazione RPC';

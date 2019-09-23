@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_googledocs', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_googledocs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['both'] = 'Εσωτερικά και εξωτερικά';
 $string['cachedef_folder'] = 'Αναγνωριστικά αρχείων Google για φακέλους στο λογαριασμό συστήματος';
 $string['clientid'] = 'Αναγνωριστικό πελάτη';
-$string['configplugin'] = 'Ρύθμιση πρόσθετου Google Docs';
+$string['configplugin'] = 'Ρύθμιση πρόσθετου Google Drive';
 $string['defaultreturntype'] = 'Προεπιλεγμένος τύπος επιστροφής';
 $string['docsformat'] = 'Προεπιλεγμένος μορφότυπος εισαγωγής εγγράφου';
 $string['drawingformat'] = 'Προεπιλεγμένος μορφότυπος εισαγωγής σχεδίου';
@@ -40,7 +40,10 @@ $string['internal'] = 'Εσωτερικά (αρχεία αποθηκευμένα
 $string['issuer'] = 'Υπηρεσία OAuth 2';
 $string['issuer_help'] = 'Επιλέξτε την υπηρεσία OAuth 2 που έχει ρυθμιστεί ώστε να μιλά στο API του Google Drive. Εάν η υπηρεσία δεν υπάρχει ακόμα, θα πρέπει να δημιουργηθεί.';
 $string['oauth2serviceslink'] = '<a href="{$a}" title="Σύνδεσμος ρυθμίσεων υπηρεσιών OAuth 2">Ρύθμιση υπηρεσιών OAuth 2</a>';
-$string['oauthinfo'] = '<p>Για να χρησιμοποιήσετε αυτό το πρόσθετο, πρέπει να καταχωρήσετε τον ιστότοπό σας στο Google, όπως περιγράφεται στην τεκμηρίωση για την <a href="{$a->docsurl} ">εγκατάσταση του Google OAuth 2.0 </a>.</p><p>Ως μέρος της διαδικασίας καταχώρησης, θα πρέπει να δώσετε την ακόλουθη διεύθυνση URL ως \'Authorized Redirect URIs\' (εξουσιοδοτημένες ανακατευθύνσεις URI):</p><p>{$a->callbackurl}</p> <p>Μόλις καταχωρηθείτε, σας παρέχεται ένα αναγνωριστικό πελάτη και ένα μυστικό που μπορεί να χρησιμοποιηθεί για τη διαμόρφωση όλων των πρόσθετων Google Drive και Picasa.</p><p>Παρακαλούμε σημειώστε επίσης ότι θα πρέπει ακόμα να ενεργοποιήσετε στην υπηρεσία \'Drive API\'.</p>';
+$string['oauthinfo'] = '<p>Για να χρησιμοποιήσετε αυτό το πρόσθετο, πρέπει να καταχωρήσετε τον ιστότοπό σας στο Google, όπως περιγράφεται στην τεκμηρίωση για την <a href="{$a->docsurl}">εγκατάσταση του Google OAuth 2.0 </a>.</p>
+<p>Ως μέρος της διαδικασίας καταχώρησης, θα πρέπει να δώσετε την ακόλουθη διεύθυνση URL ως «Authorized Redirect URIs» (εξουσιοδοτημένες ανακατευθύνσεις URI):</p><p>{$a->callbackurl}</p>
+<p>Μόλις καταχωρηθείτε, σας παρέχεται ένα αναγνωριστικό πελάτη και ένα μυστικό που μπορεί να χρησιμοποιηθεί για τη διαμόρφωση όλων των πρόσθετων Google Drive και Picasa.</p>
+<p>Παρακαλούμε σημειώστε επίσης ότι θα πρέπει ακόμα να ενεργοποιήσετε στην υπηρεσία «Drive API».</p>';
 $string['owner'] = 'Ιδιοκτησία: {$a}';
 $string['pluginname'] = 'Google Drive';
 $string['presentationformat'] = 'Προεπιλεγμένος μορφότυπος εισαγωγής παρουσίασης';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_tags', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_blog_tags', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   block_blog_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['blog_tags:addinstance'] = '新しいブログタグブロックを追加する';
+$string['configtitle'] = 'ブログタグブロックのタイトル';
 $string['pluginname'] = 'ブログタグ';
 $string['privacy:metadata'] = 'ブログタグブロックは他の場所で保存されたデータのみ表示します。';

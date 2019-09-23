@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'competency', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'Die Kompetenzbewertung wurde manue
 $string['evidence_manualoverrideinplan'] = 'Die Kompetenzbewertung wurde manuell im Lernplan \'{$a}\' vorgenommen.';
 $string['invalidevidencedesc'] = 'Ungültige Belegbeschreibung';
 $string['invalidgrade'] = 'Ungültige Bewertung';
-$string['invalidpersistent'] = 'Ungültiger Verlauf';
 $string['invalidpersistenterror'] = 'Fehler: {$a}';
 $string['invalidplan'] = 'Ungültiger Lernplan';
 $string['invalidtaxonomy'] = 'Ungültige Taxonomie: {$a}';

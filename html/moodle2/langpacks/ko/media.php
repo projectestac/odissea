@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'media', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['legacyheading'] = '기존 미디어 플레이어';
 $string['mediaformats'] = '사용가능한 플레이어';
-$string['mediasettings'] = '미디어 엠베딩';

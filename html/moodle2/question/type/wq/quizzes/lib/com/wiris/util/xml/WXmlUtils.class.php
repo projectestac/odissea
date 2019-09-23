@@ -452,7 +452,24 @@ class com_wiris_util_xml_WXmlUtils {
 	static function copyChildren($from, $to) {
 		$children = $from->iterator();
 		while($children->hasNext()) {
-			$to->addChild(com_wiris_util_xml_WXmlUtils::importXml($children->next(), $to));
+			$child = $children->next();
+			$to->addChild(com_wiris_util_xml_WXmlUtils::importXml($child, $to));
+			unset($child);
+		}
+	}
+	static function copyElements($from, $to) {
+		$it = $from->iterator();
+		while($it->hasNext()) {
+			$child = $it->next();
+			if($child->nodeType == Xml::$Element) {
+				$to->addChild(com_wiris_util_xml_WXmlUtils::importXml($child, $to));
+			}
+			unset($child);
+		}
+	}
+	static function removeChildren($element) {
+		while($element->firstChild() !== null) {
+			$element->removeChild($element->firstChild());
 		}
 	}
 	static function getChildPosition($parent, $node) {
@@ -514,7 +531,11 @@ class com_wiris_util_xml_WXmlUtils {
 					if($elem->nodeType == Xml::$PCData) {
 						$n = Xml::createPCData($elem->getNodeValue());
 					} else {
-						throw new HException("Unsupported node type: " . Std::string($elem->nodeType));
+						if($elem->nodeType == Xml::$Comment) {
+							$n = Xml::createComment($elem->getNodeValue());
+						} else {
+							throw new HException("Unsupported node type: " . Std::string($elem->nodeType));
+						}
 					}
 				}
 			}
@@ -651,7 +672,7 @@ class com_wiris_util_xml_WXmlUtils {
 						if($cdata->match($aux)) {
 							$res->add($aux);
 						} else {
-							haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 794, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
+							haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 815, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
 							$res->add($aux);
 						}
 					}

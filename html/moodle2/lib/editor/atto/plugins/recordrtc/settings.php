@@ -31,13 +31,13 @@ $ADMIN->add('editoratto', new admin_category('atto_recordrtc', new lang_string('
 if ($ADMIN->fulltree) {
     // Types allowed.
     $options = array(
-        'both' => new lang_string('both', 'atto_recordrtc'),
+        'both' => new lang_string('audioandvideo', 'atto_recordrtc'),
         'audio' => new lang_string('onlyaudio', 'atto_recordrtc'),
         'video' => new lang_string('onlyvideo', 'atto_recordrtc')
     );
     $name = get_string('allowedtypes', 'atto_recordrtc');
     $desc = get_string('allowedtypes_desc', 'atto_recordrtc');
-    $default = '';
+    $default = 'both';
     $setting = new admin_setting_configselect('atto_recordrtc/allowedtypes', $name, $desc, $default, $options);
     $settings->add($setting);
 

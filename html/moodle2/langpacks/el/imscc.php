@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscc', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'imscc', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   imscc
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,11 +30,11 @@ $string['cc2moodle_invalid_schema'] = 'Το σχήμα δεν είναι έγκ�
 $string['cc2moodle_manifest_dont_load'] = 'Δεν είναι δυνατή η φόρτωση του δηλωτικού XML.';
 $string['cc2moodle_req_auth'] = 'ΣΦΑΛΜΑ: Το πακέτο μάθησης Common Cartridge απαιτεί εξουσιοδότηση.';
 $string['cc2moodle_valid_schema'] = 'Το σχήμα είναι έγκυρο!';
-$string['cc_import_req_dom'] = 'ΣΦΑΛΜΑ: Η εισαγωγή πακέτου μάθησης Common Cartridge  απαιτεί επέκταση DOM.';
-$string['cc_import_req_libxml'] = 'ΣΦΑΛΜΑ: Η εισαγωγή πακέτου μάθησης Common Cartridge  απαιτεί επέκταση LIBXML.';
-$string['cc_import_req_libxmlminversion'] = 'ΣΦΑΛΜΑ: Η εισαγωγή πακέτου μάθησης Common Cartridge  απαιτεί LIBXML έκδοσης 2.6.30 ή νεότερης.';
-$string['cc_import_req_php5'] = 'Σφάλμα: Η εισαγωγή πακέτου μάθησης Common Cartridge απαιτεί PHP 5 ή ανώτερη.';
-$string['cc_import_req_xsl'] = 'Σφάλμα: Η εισαγωγή πακέτου μάθησης Common Cartridge απαιτεί XSL.';
+$string['cc_import_req_dom'] = 'ΣΦΑΛΜΑ: Η εισαγωγή Κοινής Κασέτας μάθησης (Common Cartridge) απαιτεί την επέκταση DOM.';
+$string['cc_import_req_libxml'] = 'ΣΦΑΛΜΑ: Η εισαγωγή Κοινής Κασέτας μάθησης (Common Cartridge) απαιτεί την επέκταση LIBXML.';
+$string['cc_import_req_libxmlminversion'] = 'ΣΦΑΛΜΑ: Η εισαγωγή Κοινής Κασέτας μάθησης (Common Cartridge) απαιτεί LIBXML έκδοσης 2.6.30 ή νεότερης.';
+$string['cc_import_req_php5'] = 'Σφάλμα: Η εισαγωγή Κοινής Κασέτας μάθησης (Common Cartridge) απαιτεί PHP 5 ή ανώτερη.';
+$string['cc_import_req_xsl'] = 'Σφάλμα: Η εισαγωγή Κοινής Κασέτας μάθησης (Common Cartridge) απαιτεί XSL.';
 $string['checkingforimscc'] = 'Έλεγχος για IMS-CC...';
 $string['enable_cc_import'] = 'Ενεργοποίηση εισαγωγής CC';
-$string['enable_cc_import_description'] = 'Αυτή η ρύθμιση επιτρέπει την εισαγωγή πακέτων μάθησης Common Cartridge (IMS-CC) χρησιμοποιώντας την τυπική λειτουργικότητα επαναφοράς. Σημειώστε ότι απαιτείται να είναι εγκατεστημένες στον εξυπηρετητή οι επεκτάσεις PHP5, DOM, XSL και LIBXML (2.6.30 ή νεώτερες).';
+$string['enable_cc_import_description'] = 'Αυτή η ρύθμιση επιτρέπει την εισαγωγή πακέτων Κοινής Κασέτας μάθησης  (IMS-CC, Common Cartridge της IMS) χρησιμοποιώντας την τυπική λειτουργικότητα επαναφοράς. Σημειώστε ότι απαιτείται να είναι εγκατεστημένες στον εξυπηρετητή οι επεκτάσεις PHP5, DOM, XSL και LIBXML (2.6.30 ή νεώτερες).';

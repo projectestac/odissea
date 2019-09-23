@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_badges', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   block_badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['badges:addinstance'] = 'Adicionar um novo bloco Minhas Medalhas Recentes';
-$string['badges:myaddinstance'] = 'Adicionar um novo bloco Minhas Medalhas Recentes ao Painel do utilizador';
-$string['nothingtodisplay'] = 'Não tem Medalhas para mostrar';
-$string['numbadgestodisplay'] = 'Número de Medalhas recentes a mostrar';
+$string['badges:addinstance'] = 'Adicionar um novo bloco Medalhas recentes';
+$string['badges:myaddinstance'] = 'Adicionar um novo bloco Medalhas recentes ao Painel do utilizador';
+$string['nothingtodisplay'] = 'Não tem medalhas para mostrar';
+$string['numbadgestodisplay'] = 'Número de medalhas recentes a mostrar';
 $string['pluginname'] = 'Minhas Medalhas recentes';
 $string['privacy:metadata'] = 'O bloco Medalhas mostra apenas mostra armazenados noutros locais.';

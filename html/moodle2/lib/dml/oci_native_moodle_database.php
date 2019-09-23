@@ -225,10 +225,14 @@ class oci_native_moodle_database extends moodle_database {
         // Connection stabilised and configured, going to instantiate the temptables controller
         $this->temptables = new oci_native_moodle_temptables($this, $this->unique_session_id);
 
-        //XTEC ************ AFEGIT - Fix for correct sorting
+        //XTEC ************ AFEGIT - Fix for correct sorting. It may reduce performance!
         //2014.11.04 @pferre22
-        //$sql = "ALTER session SET NLS_COMP = LINGUISTIC SET NLS_SORT = BINARY_AI";
-        //$this->execute($sql);
+        /*
+        $sql = "ALTER session SET NLS_COMP = LINGUISTIC";
+        $this->execute($sql);
+        $sql = "ALTER session SET NLS_SORT = BINARY_AI";
+        $this->execute($sql);
+        */
         //************ FI
         return true;
     }
@@ -363,7 +367,9 @@ class oci_native_moodle_database extends moodle_database {
             $error = $error ? '" Error description:( '.$this->get_last_error() .')' : "";
             throw new dml_exception('dbdriverproblem','Can not parse sql query: "'.$sql. $error); //TODO: maybe add better info
             // ORIGINAL
-            //throw new dml_connection_exception('Can not parse sql query'); //TODO: maybe add better info
+            /*
+            throw new dml_connection_exception('Can not parse sql query'); //TODO: maybe add better info
+            */
             // FI XTEC
         }
         return $stmt;
@@ -463,11 +469,11 @@ class oci_native_moodle_database extends moodle_database {
         //************ ORIGINAL
         /*
         $sql = "SELECT i.INDEX_NAME, i.UNIQUENESS, c.COLUMN_POSITION, c.COLUMN_NAME, ac.CONSTRAINT_TYPE
-                FROM ALL_INDEXES i
-                JOIN ALL_IND_COLUMNS c ON c.INDEX_NAME=i.INDEX_NAME
-                LEFT JOIN ALL_CONSTRAINTS ac ON (ac.TABLE_NAME=i.TABLE_NAME AND ac.CONSTRAINT_NAME=i.INDEX_NAME AND ac.CONSTRAINT_TYPE='P')
-                WHERE i.TABLE_NAME = '$tablename'
-                ORDER BY i.INDEX_NAME, c.COLUMN_POSITION";
+                  FROM ALL_INDEXES i
+                  JOIN ALL_IND_COLUMNS c ON c.INDEX_NAME=i.INDEX_NAME
+             LEFT JOIN ALL_CONSTRAINTS ac ON (ac.TABLE_NAME=i.TABLE_NAME AND ac.CONSTRAINT_NAME=i.INDEX_NAME AND ac.CONSTRAINT_TYPE='P')
+                 WHERE i.TABLE_NAME = '$tablename'
+              ORDER BY i.INDEX_NAME, c.COLUMN_POSITION";
         */
         //************ FI
 
@@ -1741,7 +1747,7 @@ class oci_native_moodle_database extends moodle_database {
         $count = count($args);
         if ($count == 1) {
             $arg = reset($args);
-            return self::clob2varchar_hack(array_shift($args));
+            return $arg;
         }
         if ($count == 2) {
             $args[] = "' '";

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_overview', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,7 @@ $string['privacy:metadata:sortorder'] = 'Σειρά ταξινόμησης';
 $string['removefavourite'] = 'Κατάργηση αγαπημένου';
 $string['reorderfullname'] = 'Πλήρες όνομα μαθήματος';
 $string['reorderid'] = 'Αναγνωριστικό μαθήματος';
+$string['reorderiddesc'] = 'Περιγραφή αναγνωριστικού μαθήματος';
 $string['reordernone'] = 'Ρύθμιση μεταφοράς και απόθεσης';
 $string['reordershortname'] = 'Σύντομο όνομα μαθήματος';
 $string['setmaxcourses'] = 'Μέγιστος αριθμός μαθημάτων';
@@ -85,7 +86,7 @@ $string['title'] = 'Καρτέλες επισκόπησης μαθημάτων';
 $string['unfavourite'] = 'Κατάργηση αγαπημένου';
 $string['userchoosezero'] = '(χρήση προεπιλογής)';
 $string['usersetmaxcourses'] = 'Αριθμός μαθημάτων που θα εμφανίζονται:';
-$string['view_edit_profile'] = '(Προβολή και επεξεργασία του προφίλ σας.)';
+$string['view_edit_profile'] = '(Εμφάνιση και επεξεργασία του προφίλ σας.)';
 $string['welcome'] = 'Καλώς ήρθατε {$a}';
 $string['youhavemessages'] = 'Έχετε {$a} αδιάβαστα';
 $string['youhavenomessages'] = 'Δεν έχετε αδιάβαστα';

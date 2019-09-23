@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'resource', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,7 +76,7 @@ En fil kan användas
 * Att tillhandahålla mallar för  program (t.ex. Photoshop. PSD) så att eleverna kan redigera och skicka in dem för bedömning';
 $string['modulenameplural'] = 'Filer';
 $string['notmigrated'] = 'Den här "legacy"-typen av resurs ({$a}) har tyvärr ännu inte migrerats. ';
-$string['optionsheader'] = 'Alternativ';
+$string['optionsheader'] = 'Visa alternativ';
 $string['pluginadministration'] = 'Administration av modul för filer';
 $string['pluginname'] = 'Resurs';
 $string['popupheight'] = 'Höjd på popup-fönster (i pixlar)';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_multianswer', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,20 +30,22 @@ $string['confirmsave'] = 'Επιβεβαίωση και κατόπιν αποθ�
 $string['correctanswer'] = 'Σωστή απάντηση';
 $string['correctanswerandfeedback'] = 'Σωστή απάντηση και ανατροφοδότηση';
 $string['decodeverifyquestiontext'] = 'Αποκωδικοποίηση και επιβεβαίωση του κειμένου της ερώτησης';
+$string['invalidmultianswerquestion'] = 'Μη έγκυρη ερώτηση ενσωματωμένων απαντήσεων (Cloze) ({$a}).';
 $string['layout'] = 'Διάταξη';
-$string['layouthorizontal'] = 'Οριζόντια σειρά από κουμπιά τύπου radio';
+$string['layouthorizontal'] = 'Οριζόντια σειρά από κουμπιά μοναδικής επιλογής';
 $string['layoutmultiple_horizontal'] = 'Οριζόντια σειρά από πλαίσια ελέγχου';
 $string['layoutmultiple_vertical'] = 'Κάθετη στήλη από πλαίσια ελέγχου';
-$string['layoutselectinline'] = 'Αναπτυσσόμενο μενού εμβόλιμα στο κείμενο';
+$string['layoutselectinline'] = 'Πτυσσόμενο μενού στην ίδια γραμμή με το κείμενο';
 $string['layoutundefined'] = 'Μη ορισμένη διάταξη';
-$string['layoutvertical'] = 'Κάθετη στήλη από κουμπιά επιλογής';
+$string['layoutvertical'] = 'Κάθετη στήλη από κουμπιά μοναδικής επιλογής';
 $string['nooptionsforsubquestion'] = 'Αδυναμία λήψης επιλογών για το τμήμα # {$a->sub} (question->id={$a->id}) της ερώτησης';
-$string['noquestions'] = 'Η ερώτηση τύπου Cloze (με πολλές απαντήσεις) "<strong>{$a}</strong>" δεν περιέχει καμία ερώτηση';
+$string['noquestions'] = 'Η ερώτηση τύπου ενσωματωμένων απαντήσεων (Cloze πολλαπλής απάντησης) «<strong>{$a}</strong>» δεν περιέχει καμία ερώτηση';
 $string['pleaseananswerallparts'] = 'Απαντήστε σε όλα τα τμήματα της ερώτησης.';
 $string['pluginname'] = 'Ενσωματωμένες απαντήσεις (Cloze)';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης με Ενσωματωμένες απαντήσεις (Cloze)';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης με Ενσωματωμένες απαντήσεις (Cloze)';
 $string['pluginname_help'] = 'Οι ερωτήσεις Ενσωματωμένων απαντήσεων (Cloze) αποτελούνται από ένα απόσπασμα κειμένου με ερωτήσεις, όπως π.χ. πολλαπλής επιλογής ή σύντομης απάντησης, ενσωματωμένες μέσα σε αυτό.';
+$string['pluginname_link'] = 'ερώτηση/τύπος/πολλαπλήςαπάντησης';
 $string['pluginnamesummary'] = 'Οι ερωτήσεις αυτού του τύπου είναι πολύ ευέλικτες, αλλά μπορούν να δημιουργηθούν μόνο με την εισαγωγή κειμένου το οποίο περιέχει ειδικούς κωδικούς που δημιουργούν ενσωματωμένες ερωτήσεις πολλαπλής επιλογής, σύντομης απάντησης και αριθμητικές.';
 $string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις τύπου ενσωματωμένων απαντήσεων (Cloze)» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['qtypenotrecognized'] = 'τύπος ερώτησης {$a} μη αναγνωρίσιμος';
@@ -53,9 +55,9 @@ $string['questioninquiz'] = '<ul> <li>προσθέστε ή διαγράψτε �
 $string['questionnotfound'] = 'Αδυναμία εύρεσης της ερώτησης του τμήματος ερώτησης #{$a}';
 $string['questionsadded'] = 'Η ερώτηση προστέθηκε';
 $string['questionsaveasedited'] = 'Η ερώτηση θα αποθηκευτεί όπως συντάχθηκε';
-$string['questionsless'] = '{$a} ερωτήσεις (-η) λιγότερες από ό,τι στην ερώτηση πολλαπλών απαντήσεων που είναι αποθηκευμένη στη βάση δεδομένων';
+$string['questionsless'] = '{$a} ερωτήσεις/-η λιγότερες/-η από ό,τι στην ερώτηση πολλαπλών απαντήσεων που είναι αποθηκευμένη στη βάση δεδομένων';
 $string['questionsmissing'] = 'Το κείμενο ερώτησης πρέπει να περιλαμβάνει τουλάχιστον μία ενσωματωμένη απάντηση.';
-$string['questionsmore'] = '{$a} ερωτήσεις (-η) περισσότερες από ό,τι στην ερώτηση πολλαπλών απαντήσεων που είναι αποθηκευμένη στη βάση δεδομένων';
+$string['questionsmore'] = '{$a} ερωτήσεις/-η περισσότερες/-η από ό,τι στην ερώτηση πολλαπλών απαντήσεων που είναι αποθηκευμένη στη βάση δεδομένων';
 $string['questiontypechanged'] = 'Ο τύπος ερώτησης άλλαξε';
 $string['questiontypechangedcomment'] = 'Τουλάχιστον ένας τύπος ερωτήματος έχει αλλάξει.<br />Προσθέσατε, διαγράψατε ή μετακινήσατε μια ερώτηση;<br />Κοιτάξτε μπροστά.';
 $string['questionusedinquiz'] = 'Αυτή η ερώτηση χρησιμοποιείται σε {$a->nb_of_quiz} κουίζ. Συνολικές προσπάθειες: {$a->nb_of_attempts}';

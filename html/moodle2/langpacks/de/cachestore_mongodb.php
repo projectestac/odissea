@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_mongodb', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   cachestore_mongodb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['database'] = 'Datenbank';
 $string['database_help'] = 'Name der Datenbank, die verwandt wird';
 $string['extendedmode'] = 'Erweiterte Schlüssel verwenden';
-$string['extendedmode_help'] = 'Wenn diese Option aktiviert wird, wird durch das Plugin mit voller Schlüssellänge gearbeitet. Damit ist eine einfache Suche und Analyse in der Mongo-DB möglich: Es wird aber bei der Verarbeitung nicht verwendet. Wenn die Option aktiviert wird, hat dies einen Performanceverlust zur Folge. Deshalb sollte diese Option nur in Testumgebungen aktiviert werden oder wenn dies zur Fehleranalyse unbedingt erforderlich ist.';
+$string['extendedmode_help'] = 'Wenn diese Option aktiviert wird, wird durch das Plugin mit voller Schlüssellänge gearbeitet. Damit ist eine einfache Suche und Analyse in der Mongo-DB möglich: Es wird aber bei der Verarbeitung intern derzeit nicht verwendet. Wenn die Option aktiviert wird, hat dies einen Performanceverlust zur Folge. Deshalb sollte diese Option nur in Testumgebungen aktiviert werden oder wenn dies zur Fehleranalyse unbedingt erforderlich ist.';
 $string['password'] = 'Kennwort';
 $string['password_help'] = 'Nutzerpasswort für diese Verbindung.';
 $string['pleaseupgrademongo'] = 'Sie verwenden eine ältere Version der PHP Mongo-Erweiterung (< 1.3). Die Unterstzung für diese Versionen wird in Kürze deaktiviert. Bereiten Sie ein Update vor.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_latlong', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'datafield_latlong', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   datafield_latlong
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'حقل خطّ العرض/خط الطول';
+$string['pluginname'] = 'خط الطول و العرض';
+$string['privacy:metadata'] = 'لا يخزن Latitude/longitude field  أي بيانات شخصية ، بل يستخدم جداول معرفة في mod_data.';

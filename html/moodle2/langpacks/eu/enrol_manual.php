@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_manual', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['assignrole'] = 'Esleitu rola';
 $string['assignroles'] = 'Esleitu rolak';
 $string['browsecohorts'] = 'Arakatu kohorteak';
 $string['browseusers'] = 'Arakatu erabiltzaileak';
-$string['confirmbulkdeleteenrolment'] = 'Ziur al zaude erabiltzaile hauen matrikula ezabatu nahi duzula?';
+$string['confirmbulkdeleteenrolment'] = 'Ziur zaude erabiltzaile-matrikula hauek ezabatu nahi dituzula?';
 $string['defaultperiod'] = 'Matrikulazioaren iraupena';
 $string['defaultperiod_desc'] = 'Matrikulazioaren lehenetsitako iraupena. Zero ezarriz gero, matrikulazioa modu lehenetsian mugarik gabekoa izango da.';
 $string['defaultperiod_help'] = 'Matrikulazioaren lehenetsitako iraupena, erabiltzailea matrikulatu deneko unetik hasita. Desgaituz gero, matrikulazioa modu lehenetsian mugarik gabekoa izango da.';
@@ -51,7 +51,7 @@ Mezu hau \'{$a->course}\' ikastaroan zure matrikula {$a->timeend} datan amaituko
 
 Laguntzarik behar baduzu, jarri harremanetan {$a->enroller}-(r)ekin.';
 $string['expirymessageenrolledsubject'] = 'Matrikulazio-amaieraren jakinarazpena';
-$string['expirymessageenrollerbody'] = '\'{$a->course}\' ikastaroko matrikulazioa hurrengo {$a->threshold} iraungituko da hurrengo erabiltzaileentzat:
+$string['expirymessageenrollerbody'] = '\'{$a->course}\' ikastaroko matrikulazioa hurrengo {$a->threshold} iraungiko da hurrengo erabiltzaileentzat:
 
 {$a->users}
 
@@ -71,11 +71,13 @@ $string['privacy:metadata'] = 'Eskuzko matrikulazio-pluginak ez du datu pertsona
 $string['selectcohorts'] = 'Aukeratu kohorteak';
 $string['selection'] = 'Aukeraketa';
 $string['selectusers'] = 'Aukeratu erabiltzaileak';
+$string['sendexpirynotificationstask'] = 'Eskuzko matrikulazioen iraungitze-jakinarazpenen bidalketa zeregina';
 $string['status'] = 'Gaitu eskuzko matrikulazioa';
 $string['status_desc'] = 'Baimendu ikastarorako sarbidea barruan matrikulatutako erabiltzaileei. Hau gaituta mantendu beharko litzateke kasu gehienetan.';
 $string['statusdisabled'] = 'Desgaituta';
 $string['statusenabled'] = 'Gaituta';
 $string['status_help'] = 'Ezarpen honek erabiltzaileak eskuz matrikulatu ahalko diren zehazten du, baimenak dituen erabiltzaile batek ikastaroaren kudeaketa-ezarpenetan duen esteka baten bitartez.';
+$string['syncenrolmentstask'] = 'Eskuzko matrikulazioen sinkronizazio-zeregina';
 $string['unenrol'] = 'Desmatrikulatu erabiltzailea';
 $string['unenrolselectedusers'] = 'Desmatrikulatu aukeratutako erabiltzaileak';
 $string['unenrolselfconfirm'] = 'Ziur al zaude "{$a}" ikastarotik desmatrikulatu nahi duzula?';

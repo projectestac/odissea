@@ -63,6 +63,7 @@ class qformat_xml extends qformat_default {
     /**
      * Translate human readable format name
      * into internal Moodle code number
+     * Note the reverse function is called get_format.
      * @param string name format name from xml file
      * @return int Moodle format code
      */
@@ -235,9 +236,11 @@ class qformat_xml extends qformat_default {
             $qo->questiontext .= ' <img src="@@PLUGINFILE@@/' . $filename . '" />';
         }
 
+        $qo->idnumber = $this->getpath($question, ['#', 'idnumber', 0, '#'], null);
+
         // Restore files in generalfeedback.
         $generalfeedback = $this->import_text_with_files($question,
-                array('#', 'generalfeedback', 0), $qo->generalfeedback, $this->get_format($qo->questiontextformat));
+                array('#', 'generalfeedback', 0), '', $this->get_format($qo->questiontextformat));
         $qo->generalfeedback = $generalfeedback['text'];
         $qo->generalfeedbackformat = $generalfeedback['format'];
         if (!empty($generalfeedback['itemid'])) {
@@ -383,12 +386,20 @@ class qformat_xml extends qformat_default {
     public function import_question_tags($qo, $questionxml) {
         global $CFG;
 
-        if (core_tag_tag::is_enabled('core_question', 'question')
-                && array_key_exists('tags', $questionxml['#'])
-                && !empty($questionxml['#']['tags'][0]['#']['tag'])) {
-            $qo->tags = array();
-            foreach ($questionxml['#']['tags'][0]['#']['tag'] as $tagdata) {
-                $qo->tags[] = $this->getpath($tagdata, array('#', 'text', 0, '#'), '', true);
+        if (core_tag_tag::is_enabled('core_question', 'question')) {
+
+            $qo->tags = [];
+            if (!empty($questionxml['#']['tags'][0]['#']['tag'])) {
+                foreach ($questionxml['#']['tags'][0]['#']['tag'] as $tagdata) {
+                    $qo->tags[] = $this->getpath($tagdata, array('#', 'text', 0, '#'), '', true);
+                }
+            }
+
+            $qo->coursetags = [];
+            if (!empty($questionxml['#']['coursetags'][0]['#']['tag'])) {
+                foreach ($questionxml['#']['coursetags'][0]['#']['tag'] as $tagdata) {
+                    $qo->coursetags[] = $this->getpath($tagdata, array('#', 'text', 0, '#'), '', true);
+                }
             }
         }
     }
@@ -464,6 +475,11 @@ class qformat_xml extends qformat_default {
         $questiontext = $this->import_text_with_files($question,
                 array('#', 'questiontext', 0));
         $qo = qtype_multianswer_extract_question($questiontext);
+        $errors = qtype_multianswer_validate_question($qo);
+        if ($errors) {
+            $this->error(get_string('invalidmultianswerquestion', 'qtype_multianswer', implode(' ', $errors)));
+            return null;
+        }
 
         // Header parts particular to multianswer.
         $qo->qtype = 'multianswer';
@@ -472,8 +488,12 @@ class qformat_xml extends qformat_default {
         if (isset($this->course)) {
             $qo->course = $this->course;
         }
-
-        $qo->name = $this->clean_question_name($this->import_text($question['#']['name'][0]['#']['text']));
+        if (isset($question['#']['name'])) {
+            $qo->name = $this->clean_question_name($this->import_text($question['#']['name'][0]['#']['text']));
+        } else {
+            $qo->name = $this->create_default_question_name($qo->questiontext['text'],
+                    get_string('questionname', 'question'));
+        }
         $qo->questiontextformat = $questiontext['format'];
         $qo->questiontext = $qo->questiontext['text'];
         if (!empty($questiontext['itemid'])) {
@@ -503,7 +523,7 @@ class qformat_xml extends qformat_default {
 
         // Restore files in generalfeedback.
         $generalfeedback = $this->import_text_with_files($question,
-                array('#', 'generalfeedback', 0), $qo->generalfeedback, $this->get_format($qo->questiontextformat));
+                array('#', 'generalfeedback', 0), '', $this->get_format($qo->questiontextformat));
         $qo->generalfeedback = $generalfeedback['text'];
         $qo->generalfeedbackformat = $generalfeedback['format'];
         if (!empty($generalfeedback['itemid'])) {
@@ -901,12 +921,20 @@ class qformat_xml extends qformat_default {
      * import category. The format is:
      * <question type="category">
      *     <category>tom/dick/harry</category>
+     *     <info format="moodle_auto_format"><text>Category description</text></info>
      * </question>
      */
     protected function import_category($question) {
         $qo = new stdClass();
         $qo->qtype = 'category';
         $qo->category = $this->import_text($question['#']['category'][0]['#']['text']);
+        $qo->info = '';
+        $qo->infoformat = FORMAT_MOODLE;
+        if (array_key_exists('info', $question['#'])) {
+            $qo->info = $this->import_text($question['#']['info'][0]['#']['text']);
+            // The import should have the format in human readable form, so translate to machine readable format.
+            $qo->infoformat = $this->trans_format($question['#']['info'][0]['@']['format']);
+        }
         return $qo;
     }
 
@@ -918,7 +946,7 @@ class qformat_xml extends qformat_default {
      * @param stdClass $context
      * @return array (of objects) question objects.
      */
-    protected function readquestions($lines) {
+    public function readquestions($lines) {
         // We just need it as one big string.
         $lines = implode('', $lines);
 
@@ -1168,10 +1196,15 @@ class qformat_xml extends qformat_default {
         // Categories are a special case.
         if ($question->qtype == 'category') {
             $categorypath = $this->writetext($question->category);
+            $categoryinfo = $this->writetext($question->info);
+            $infoformat = $this->format($question->infoformat);
             $expout .= "  <question type=\"category\">\n";
             $expout .= "    <category>\n";
-            $expout .= "        {$categorypath}\n";
+            $expout .= "      {$categorypath}";
             $expout .= "    </category>\n";
+            $expout .= "    <info {$infoformat}>\n";
+            $expout .= "      {$categoryinfo}";
+            $expout .= "    </info>\n";
             $expout .= "  </question>\n";
             return $expout;
         }
@@ -1195,6 +1228,7 @@ class qformat_xml extends qformat_default {
         }
         $expout .= "    <penalty>{$question->penalty}</penalty>\n";
         $expout .= "    <hidden>{$question->hidden}</hidden>\n";
+        $expout .= "    <idnumber>{$question->idnumber}</idnumber>\n";
 
         // The rest of the output depends on question type.
         switch($question->qtype) {
@@ -1467,13 +1501,30 @@ class qformat_xml extends qformat_default {
         $expout .= $this->write_hints($question);
 
         // Write the question tags.
-        $tags = core_tag_tag::get_item_tags_array('core_question', 'question', $question->id);
-        if (!empty($tags)) {
-            $expout .= "    <tags>\n";
-            foreach ($tags as $tag) {
-                $expout .= "      <tag>" . $this->writetext($tag, 0, true) . "</tag>\n";
+        if (core_tag_tag::is_enabled('core_question', 'question')) {
+            $tagobjects = core_tag_tag::get_item_tags('core_question', 'question', $question->id);
+
+            if (!empty($tagobjects)) {
+                $context = context::instance_by_id($contextid);
+                $sortedtagobjects = question_sort_tags($tagobjects, $context, [$this->course]);
+
+                if (!empty($sortedtagobjects->coursetags)) {
+                    // Set them on the form to be rendered as existing tags.
+                    $expout .= "    <coursetags>\n";
+                    foreach ($sortedtagobjects->coursetags as $coursetag) {
+                        $expout .= "      <tag>" . $this->writetext($coursetag, 0, true) . "</tag>\n";
+                    }
+                    $expout .= "    </coursetags>\n";
+                }
+
+                if (!empty($sortedtagobjects->tags)) {
+                    $expout .= "    <tags>\n";
+                    foreach ($sortedtagobjects->tags as $tag) {
+                        $expout .= "      <tag>" . $this->writetext($tag, 0, true) . "</tag>\n";
+                    }
+                    $expout .= "    </tags>\n";
+                }
             }
-            $expout .= "    </tags>\n";
         }
 
         // Close the question tag.

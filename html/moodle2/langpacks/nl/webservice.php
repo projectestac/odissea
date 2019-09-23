@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'webservice', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -92,11 +92,11 @@ $string['errornotemptydefaultparamarray'] = 'De webservice beschrijvingsparamete
 $string['erroroptionalparamarray'] = 'De webservice beschrijvingsparameter met als naam \'{$a}\' is een enkele of meervoudige structuur. Dit kan niet ingesteld worden als VALUE_OPTIONAL. Controleer de webservice beschrijving.';
 $string['eventwebservicefunctioncalled'] = 'Webservice-functie aangeroepen';
 $string['eventwebserviceloginfailed'] = 'Webservice login mislukt';
-$string['eventwebserviceservicecreated'] = 'Webservice service gemaakt';
-$string['eventwebserviceservicedeleted'] = 'Web service verwijderd';
-$string['eventwebserviceserviceupdated'] = 'Webservice service aangepast';
-$string['eventwebserviceserviceuseradded'] = 'Webservice service gebruiker toegevoegd';
-$string['eventwebserviceserviceuserremoved'] = 'Webservice service gebruiker verwijderd';
+$string['eventwebserviceservicecreated'] = 'Webservice gemaakt';
+$string['eventwebserviceservicedeleted'] = 'Webservice verwijderd';
+$string['eventwebserviceserviceupdated'] = 'Webservice aangepast';
+$string['eventwebserviceserviceuseradded'] = 'Webservice gebruiker toegevoegd';
+$string['eventwebserviceserviceuserremoved'] = 'Webservice gebruiker verwijderd';
 $string['eventwebservicetokencreated'] = 'Webservice token gemaakt';
 $string['eventwebservicetokensent'] = 'Webservice token verstuurd';
 $string['execute'] = 'Voer uit';
@@ -113,7 +113,7 @@ $string['functions'] = 'Functies';
 $string['generalstructure'] = 'Algemene structuur';
 $string['information'] = 'Informatie';
 $string['installexistingserviceshortnameerror'] = 'Een webservice met de korte naam "{$a}" bestaat al. Kan geen andere webservice installeren/updaten met deze korte naam.';
-$string['installserviceshortnameerror'] = 'Codefout: de korte naam van de service {$a} zou enkel cijfers, letters, underscore of liggend streepje mogen bevatten.';
+$string['installserviceshortnameerror'] = 'Codefout: de korte naam van de service {$a} mag enkel cijfers, letters, underscore of liggend streepje bevatten.';
 $string['invalidextparam'] = 'Ongeldige externe api parameter: {$a}';
 $string['invalidextresponse'] = 'Ongeldig extern api antwoord: {$a}';
 $string['invalidiptoken'] = 'Ongeldig token - jouw IP wordt niet ondersteund';
@@ -193,8 +193,8 @@ $string['selectspecificuserdescription'] = 'Voeg de webservices gebruikers toe a
 $string['service'] = 'Service';
 $string['servicehelpexplanation'] = 'Een service is een functieset. Een service kan toegankelijk zijn voor alle gebruiker of slechts voor enkele bepaalde gebruikers.';
 $string['servicename'] = 'Servicenaam';
-$string['servicenotavailable'] = 'Webservices is niet beschikbaar (het bestaat niet of is uitgeschakeld)';
-$string['servicerequireslogin'] = 'Webservice is niet beschikbaar (de sessie is afgemeld of is verlopen)';
+$string['servicenotavailable'] = 'Webservice is niet beschikbaar (het bestaat niet of is uitgeschakeld).';
+$string['servicerequireslogin'] = 'Webservice is niet beschikbaar (de sessie is afgemeld of verlopen).';
 $string['servicesbuiltin'] = 'Ingebouwde service';
 $string['servicescustom'] = 'Aangepaste services';
 $string['serviceusers'] = 'Geauthoriseerde gebruikers';

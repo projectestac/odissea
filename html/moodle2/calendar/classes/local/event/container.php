@@ -126,7 +126,7 @@ class container {
 
                     if (!empty($dbrow->categoryid)) {
                         // This is a category event. Check that the category is visible to this user.
-                        $category = \coursecat::get($dbrow->categoryid, IGNORE_MISSING, true, $requestinguserid);
+                        $category = \core_course_category::get($dbrow->categoryid, IGNORE_MISSING, true, $requestinguserid);
 
                         if (empty($category) || !$category->is_uservisible($requestinguserid)) {
                             return true;
@@ -158,13 +158,18 @@ class container {
                     // 2) Only process modules for courses a user has the capability to view OR they are enrolled in.
                     // 3) Only process modules for courses that are visible OR if the course is not visible, the user
                     //    has the capability to view hidden courses.
+                    if (!$cm->uservisible) {
+                        return true;
+                    }
+
                     $coursecontext = \context_course::instance($dbrow->courseid);
-                    $canseecourse = has_capability('moodle/course:view', $coursecontext, $requestinguserid) ||
-                            is_enrolled($coursecontext, $requestinguserid);
-                    $canseecourse = $canseecourse &&
-                        ($cm->get_course()->visible ||
-                                has_capability('moodle/course:viewhiddencourses', $coursecontext, $requestinguserid));
-                    if (!$cm->uservisible || !$canseecourse) {
+                    if (!$cm->get_course()->visible &&
+                            !has_capability('moodle/course:viewhiddencourses', $coursecontext, $requestinguserid)) {
+                        return true;
+                    }
+
+                    if (!has_capability('moodle/course:view', $coursecontext, $requestinguserid) &&
+                            !is_enrolled($coursecontext, $requestinguserid)) {
                         return true;
                     }
 

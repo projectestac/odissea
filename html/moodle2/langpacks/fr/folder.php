@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'folder', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,7 +60,7 @@ $string['page-mod-folder-view'] = 'Page principale du module dossier';
 $string['page-mod-folder-x'] = 'Toute page du module dossier';
 $string['pluginadministration'] = 'Gestion des dossiers';
 $string['pluginname'] = 'Dossier';
-$string['privacy:metadata'] = 'Le plugin mod_folder n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de ressource Dossier n\'enregistre aucune donnée personnelle.';
 $string['search:activity'] = 'Dossier';
 $string['showdownloadfolder'] = 'Afficher le bouton de téléchargement de dossier';
 $string['showdownloadfolder_help'] = 'Si ce réglage est activé, un bouton sera affiché permettant de télécharger une archive ZIP contenant tous les fichiers d\'un dossier.';

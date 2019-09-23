@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'group', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,8 @@ $string['deleteselectedgroup'] = 'Elimina il gruppo selezionato';
 $string['editgroupingsettings'] = 'Modifica impostazioni raggruppamento';
 $string['editgroupsettings'] = 'Modifica impostazioni gruppo';
 $string['editusersgroupsa'] = 'Modifica i gruppi di "{$a}"';
+$string['enablemessaging'] = 'Messaggistica di gruppo';
+$string['enablemessaging_help'] = 'I membri dei gruppi potranno inviare messaggi ad altri membri dello stesso gruppo';
 $string['enrolmentkey'] = 'Chiave di iscrizione';
 $string['enrolmentkeyalreadyinuse'] = 'Questa chiave di iscrizione è già stata usata per un altro gruppo.';
 $string['enrolmentkey_help'] = 'Una chiave d\'iscrizione consente l\'accesso al gruppo alle sole persone che ne sono in possesso. Specificando una chiave di iscrizione al gruppo, questa non solo consentirà l\'accesso al corso, ma aggiungerà la persona tra i membri del gruppo.
@@ -173,6 +175,7 @@ $string['overview'] = 'Riepilogo';
 $string['potentialmembers'] = 'Membri potenziali: {$a}';
 $string['potentialmembs'] = 'Membri possibili';
 $string['printerfriendly'] = 'Versione stampabile';
+$string['privacy:metadata:core_message'] = 'Conversazioni di gruppo.';
 $string['privacy:metadata:groups'] = 'Record dei membri del gruppo.';
 $string['privacy:metadata:groups:groupid'] = 'ID del gruppo.';
 $string['privacy:metadata:groups:timeadded'] = 'Data e ora di inserimento dell\'utente nel gruppo.';

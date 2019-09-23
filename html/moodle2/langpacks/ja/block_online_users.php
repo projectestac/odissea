@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_online_users', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'ユーザがオンライン状態ではないと判断するための休眠時間 (分) です。';
+$string['nouser'] = 'オンラインユーザなし';
+$string['numuser'] = '{$a} オンラインユーザ';
+$string['numusers'] = '{$a} オンラインユーザ';
+$string['online_status:hide'] = '他のユーザから私のオンラインステータスを隠す';
+$string['online_status:show'] = '他のユーザに私のオンラインステータスを表示する';
 $string['online_users:addinstance'] = '新しいオンラインユーザブロックを追加する';
 $string['online_users:myaddinstance'] = '新しいオンラインユーザブロックをダッシュボードに追加する';
 $string['online_users:viewlist'] = 'オンラインユーザリストを表示する';
 $string['periodnminutes'] = '直近 {$a} 分';
 $string['pluginname'] = 'オンラインユーザ';
-$string['privacy:metadata'] = 'オンラインユーザブロックは他の場所で保存されたデータのみ表示します。';
+$string['privacy:metadata:preference:uservisibility'] = 'オンラインステータスはオンラインユーザブロックで他のユーザに表示されます。';
 $string['timetosee'] = '休眠状態 (分) の後、除外する';

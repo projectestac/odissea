@@ -76,8 +76,11 @@ class block_navigation_renderer extends plugin_renderer_base {
         foreach ($items as $item) {
             //XTEC ************ AFEGIT - To delete some settings
             //2014.05.22 @pferrer
-            static $delete_items = array('myprofile' => '');
-            if(isset($delete_items[$item->key]) || ($item->key == 'home' && !$item->has_children())){
+            //2019.07.11 @aginard
+            static $delete_items = [
+                'myhome' => '', // Removes the dashboard link in navigation block
+            ];
+            if (isset($delete_items[$item->key]) || ($item->key == 'home' && !$item->has_children())) {
                 continue;
             }
             //********* FI

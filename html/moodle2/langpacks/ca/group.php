@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'group', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,6 +58,8 @@ $string['deletegroupsconfirm'] = 'Segur que voleu suprimir els grups següents?'
 $string['deleteselectedgroup'] = 'Suprimeix grup seleccionat';
 $string['editgroupingsettings'] = 'Edita paràmetres d\'agrupament';
 $string['editgroupsettings'] = 'Edita paràmetres del grup';
+$string['enablemessaging'] = 'Missatgeria de grup';
+$string['enablemessaging_help'] = 'Si s\'habilita, els membres d\'un grup poden enviar missatges als altres membres del seu grup mitjançant el menú de missatges.';
 $string['enrolmentkey'] = 'Clau d\'inscripció';
 $string['enrolmentkeyalreadyinuse'] = 'Aquesta clau de matrícula ja l\'utilitza un altre grup.';
 $string['enrolmentkey_help'] = 'Una clau d\'inscripció obre l\'accés al curs, que queda restringit a les persones que la saben. Si s\'especifica una clau d\'inscripció, l\'usuari no només podrà inscriure\'s al curs, si la coneix, sinó que també esdevindrà automàticament membre del grup.

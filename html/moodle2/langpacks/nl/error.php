@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -266,6 +266,7 @@ $string['filternotactive'] = 'Filter {$a} is momenteel niet actief';
 $string['filternotenabled'] = 'Filter niet ingeschakeld!';
 $string['filternotinstalled'] = 'Filter {$a} is momenteel niet geïnstalleerd';
 $string['forumblockingtoomanyposts'] = 'Je hebt het maximale aantal berichten voor dit forum bereikt.';
+$string['functionalityremoved'] = 'U probeert toegang te krijgen tot de functionaliteit die is verwijderd.';
 $string['generalexceptionmessage'] = 'Uitzondering - {$a}';
 $string['gradecantregrade'] = 'Er is een fout gebeurd tijdens het berekenen van de cijfers: {$a}';
 $string['gradepubdisable'] = 'Het publiceren van cijfers is uitgeschakeld';
@@ -385,10 +386,9 @@ $string['logfilenotavailable'] = 'Logs niet beschikbaar';
 $string['loginasnoenrol'] = 'Je kunt aanmelden en afmelden bij een cursus niet gebruiken wanneer je met een "Login als"-sessie een cursus bekijkt.';
 $string['loginasonecourse'] = 'Je kunt deze cursus niet openen.<br />Je moet je "Login als"-sessie beëindigen voor je een andere cursus opent.';
 $string['maxareabytes'] = 'Het bestand is groter dan de beschikbare plaats.';
-$string['maxbytes'] = 'Het bestand is groter dan de maximaal toegestane grootte.';
 $string['maxbytesfile'] = 'Het bestand {$a->file} is te groot. De maximale grootte die je kunt uploaden is {$a->size}.';
 $string['messagingdisable'] = 'Berichten zijn uitgeschakeld op deze site';
-$string['mimetexisnotexist'] = 'Je systeem is niet geconfigureerd om mimeTeX te gebruiken. Je moet het noodzakelijke uitvoerbaar bestand downloaden voor jouw PHP_OS platform van <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, of de C bronbestanden verkrijgen van  <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, ze compileren en het uitvoerbaar bestand in je moodle/filter/tex/ map zetten.';
+$string['mimetexisnotexist'] = 'Je systeem is niet geconfigureerd om mimeTeX te gebruiken. Je moet de C bronbestanden verkrijgen van  <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, ze compileren en het uitvoerbaar bestand in je moodle/filter/tex/ map zetten.';
 $string['mimetexnotexecutable'] = 'Aangepast mimetex bestand is niet uitvoerbaar!';
 $string['missingfield'] = 'Veld "{$a}" ontbreekt';
 $string['missingkeyinsql'] = 'FOUT: ontbrekende param "{$a}" in query';
@@ -519,7 +519,7 @@ $string['statsnodata'] = 'Er zijn geen gegevens beschikbaar voor die combinatie 
 $string['storedfilecannotcreatefile'] = 'Kan geen lokaal bestandspoolbestand aanmaken, controleer of de rechten in dataroot juist staan en of er genoeg schijfruimte op de server is.';
 $string['storedfilecannotcreatefiledirs'] = 'Kon geen locale bestandspoolmappen maken. Controleer de rechten in dataroot.';
 $string['storedfilecannotread'] = 'Kan bestand niet lezen. Ofwel bestaat het bestand niet ofwel zijn er rechtenproblemen';
-$string['storedfilecannotreadfile'] = 'Kan bestand  \'{$a}\' niet lezen. Ofwel bestaat het bestand niet of er is een rechteprobleem.';
+$string['storedfilecannotreadfile'] = 'Kan bestand  \'{$a}\' niet lezen. Ofwel bestaat het bestand niet of er is een rechtenprobleem.';
 $string['storedfilenotcreated'] = 'Kon bestand"{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}" niet maken';
 $string['storedfileproblem'] = 'Onbekende uitzondering opgetreden in verband met lokale bestanden ({$a})';
 $string['tagdisabled'] = 'Tags zijn uitgeschakeld!';

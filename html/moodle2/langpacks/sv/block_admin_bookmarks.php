@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_bookmarks', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_admin_bookmarks', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   block_admin_bookmarks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['admin_bookmarks:addinstance'] = 'Lägg till ett nytt block för admins bokmärken';
-$string['admin_bookmarks:myaddinstance'] = 'Lägg till ett nytt block för admins bokmärken till Mitt hem';
+$string['admin_bookmarks:myaddinstance'] = 'Lägg till ett nytt block för admins bokmärken på Mitt Moodle';
 $string['pluginname'] = 'Administratörens bokmärken';

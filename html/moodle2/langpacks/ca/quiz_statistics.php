@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_statistics', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,7 +57,7 @@ $string['errordeleting'] = 'S\'ha produït un error mentre s\'esborraven {$a} re
 $string['errormedian'] = 'S\'ha produït un error en recuperar la mediana';
 $string['errorpowerquestions'] = 'S\'ha produït un error en recuperar les dades per a calcular la variància de les qualificacions de la pregunta';
 $string['errorpowers'] = 'Error en recuperar dades per calcular la variança de les qualificacions del qüestionari';
-$string['errorrandom'] = 'Error agafant dades del subítem';
+$string['errorrandom'] = 'Error agafant dades del subelement';
 $string['errorratio'] = 'Raó d\'error (per {$a})';
 $string['errorstatisticsquestions'] = 'Error en recuperar dades per calcular estadístiques de les puntuacions de les preguntes';
 $string['facility'] = 'Índex de facilitat';

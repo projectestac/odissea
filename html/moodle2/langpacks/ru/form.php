@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addfields'] = 'Добавить {$a} поля(ей) в форму';
+$string['addfields'] = 'Добавить {$a} поля в форму';
 $string['advancedelement'] = 'Дополнительный элемент';
 $string['close'] = 'Закрыть';
 $string['custom'] = 'Пользовательское';
@@ -43,6 +43,7 @@ $string['err_nopunctuation'] = 'Это поле не должно содержа
 $string['err_numeric'] = 'Вы должны ввести число.';
 $string['err_rangelength'] = 'Это поле должно содержать от {$a->format[0]} до {$a->format[1]} символов.';
 $string['err_required'] = 'Вы должны ввести значение.';
+$string['err_wrappingwhitespace'] = 'Значение не должно начинаться или заканчиваться пробелом.';
 $string['err_wrongfileextension'] = 'Некоторые файлы ({$a->wrongfiles}) не могут быть загружены на сервер. Разрешены только файлы следующих типов: {$a->whitelist}.';
 $string['filesofthesetypes'] = 'Поддерживаемые типы файлов:';
 $string['filetypesany'] = 'Все типы файлов';
@@ -73,7 +74,6 @@ $string['passwordunmaskrevealhint'] = 'Показать';
 $string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Последний выбранный режим просмотра для элемента выбора файлов.';
 $string['privacy:preference:filemanager_recentviewmode'] = 'Предпочитаемый Вами способ отображения файлов в выборе файлов — {$a}';
 $string['requiredelement'] = 'Обязательное поле';
-$string['revealpassword'] = 'Показать';
 $string['security'] = 'Защита';
 $string['selectallornone'] = 'Выбрать всё / Снять выбор';
 $string['selected'] = 'Выбрано';

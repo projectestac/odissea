@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_xmldb', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -167,6 +167,7 @@ $string['nowrongintsfound'] = 'Geen foute integers gevonden - er is verder geen 
 $string['nowrongoraclesemanticsfound'] = 'Geen Oracle-kolommen met BYTE semantics gevonden. Je databank is in orde.';
 $string['numberincorrectdecimals'] = 'Fout aantal decimalen voor numeriek veld';
 $string['numberincorrectlength'] = 'Foute lengte voor numeriek veld';
+$string['numberincorrectwholepart'] = 'Te groot geheel getal in het getal-veld';
 $string['pendingchanges'] = 'Opmerking: je hebt wijzigingen aan dit bestand aangebracht. Ze kunnen elk moment opgeslagen worden.';
 $string['pendingchangescannotbesaved'] = 'Er zijn wijzigingen in dit bestand, maar ze kunnen niet bewaard worden! Controleer dat de webserver schrijfrechten heeft, zowel op de map als op het bestand install.xml ';
 $string['pendingchangescannotbesavedreload'] = 'Er zijn wijzigingen in dit bestand, maar ze kunnen niet bewaard worden! Controleer dat de webserver schrijfrechten heeft, zowel op de map als op het bestand install.xml. Herlaad dan deze pagina en je zou de wijzigingen moeten kunnen bewaren.';
@@ -216,5 +217,6 @@ $string['wrongreservedwords'] = 'Gebruikte gereserveerde woorden<br />(merk op d
 $string['yesmissingindexesfound'] = '<p>Er zijn ontbrekende indexen gevonden in je databank. Hier vind je de details en de nodige SQL-statements om uit te voeren in je favoriete SQL interface om de indexen aan te maken.</p><p>Nadat je dit gedaan hebt, is het ten zeerste aangeraden deze functie nogmaals te laten lopen om te controleren of er niet meer ontbrekende indexen gevonden kunnen worden.</p>';
 $string['yeswrongdefaultsfound'] = '<p>Er zijn inconsistenties gevonden in je databank. Hier zijn de juiste standaardwaarden en de nodige SQL-expressies om uit te voeren in je favoriete SQL-interface om ze allemaal te herstellen (vergeet niet je databank te back-uppen voor je dddat doet).</p><p>
 Daarna is het ten zeerste aangeraden om dit script nogmaals te laten lopen om te zoeken naar meer inconsistenties.<p>';
-$string['yeswrongintsfound'] = '<p>Er zijn foute integers gevonden in je databank. Hier vind je de details en de nodige SQL-statements om uit te voeren in je favoriete SQL interface ze te herstellen.</p><p>Nadat je dit gedaan hebt, is het ten zeerste aangeraden deze functie nogmaals te laten lopen om te controleren of er niet meer foute integers gevonden kunnen worden.<p>';
-$string['yeswrongoraclesemanticsfound'] = '<p>Er zijn Oracle kolommen die BYTE semantics gebruiken gevonden in je databank. Hier zijn de details en de nodige SQL om uit te voeren met je favoriete SQL interface om ze allemaal te herstellen. </p><p>Nadat je dit gedaan hebt, kun je dit best nog eens uitvoeren om te controleren of er niet meer foute semantics gevonden kunnen worden.<p>';
+$string['yeswrongintsfound'] = '<p>Er zijn foute integers gevonden in je databank. Hier vind je de details en de nodige SQL-statements om uit te voeren in je favoriete SQL interface ze te herstellen. Denk er aan om eerst je databank te backuppen!</p><p>Nadat je dit gedaan hebt, is het ten zeerste aangeraden deze functie nogmaals te laten lopen om te controleren of er niet meer foute integers gevonden kunnen worden.<p>';
+$string['yeswrongoraclesemanticsfound'] = '<p>Er zijn Oracle kolommen die BYTE semantics gebruiken gevonden in je databank. Hier zijn de details en de nodige SQL om uit te voeren met je favoriete SQL interface om ze allemaal te herstellen. Maak eerst een backup van je data! </p>
+<p>Nadat je dit gedaan hebt, kun je dit best nog eens uitvoeren om te controleren of er niet meer foute semantics gevonden kunnen worden.</p>';

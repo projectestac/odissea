@@ -1786,17 +1786,6 @@ class qtype_calculated extends question_type {
         return $text;
     }
 
-    public function find_math_equations($text) {
-        // Returns the possible dataset names found in the text as an array.
-        // The array has the dataset name for both key and value.
-        $equations = array();
-        while (preg_match('~\{=([^[:space:]}]*)}~', $text, $regs)) {
-            $equations[] = $regs[1];
-            $text = str_replace($regs[0], '', $text);
-        }
-        return $equations;
-    }
-
     public function get_virtual_qtype() {
         return question_bank::get_qtype('numerical');
     }

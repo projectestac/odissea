@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'group', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,9 +59,11 @@ $string['deleteselectedgroup'] = 'Supprimer le groupe sélectionné';
 $string['editgroupingsettings'] = 'Modifier les réglages du groupement';
 $string['editgroupsettings'] = 'Modifier les réglages du groupe';
 $string['editusersgroupsa'] = 'Modifier les groupes de {$a}';
+$string['enablemessaging'] = 'Messagerie de groupe';
+$string['enablemessaging_help'] = 'Si ce réglage est activé, les membres du groupe peuvent envoyer des messages personnels aux autres membres de leur groupe.';
 $string['enrolmentkey'] = 'Clef d\'inscription';
 $string['enrolmentkeyalreadyinuse'] = 'Cette clef d\'inscription est déjà utilisée pour un autre groupe.';
-$string['enrolmentkey_help'] = 'Une clef d\'inscription permet de donner accès à un cours aux seuls utilisateurs la détenant. Si  une clef d\'inscription de groupe est spécifiée, non seulement cette clef permettra l\'accès au cours, mais elle inscrira simultanément l\'utilisateur utilisant cette clef comme membre de ce groupe.
+$string['enrolmentkey_help'] = 'Une clef d\'inscription permet de donner accès à un cours aux seuls utilisateurs la détenant. Si une clef d\'inscription de groupe est spécifiée, non seulement cette clef permettra l\'accès au cours, mais elle inscrira simultanément l\'utilisateur utilisant cette clef comme membre de ce groupe.
 
 Remarque : le réglage pour les clefs d\'inscription de groupe doit être également activé dans les réglages d\'auto-inscription, et une clef d\'inscription doit en outre être spécifiée pour le cours.';
 $string['erroraddremoveuser'] = 'Erreur lors de l\'ajout ou du retrait de l\'utilisateur {$a} du groupe';
@@ -140,7 +142,7 @@ $string['importgroups_help'] = 'Les groupes peuvent être importés depuis un fi
 * chaque enregistrement est une série de données séparées par des virgules ;
 * le premier enregistrement contient la liste des noms des champs définissant le format du reste du fichier ;
 * le seul champ requis est groupname ;
-* les champs optionnels sont description, enrolmentkey, picture, hidepicture ;
+* les champs optionnels sont groupidnumber, description, enrolmentkey, groupingname ;
 * les noms des champs ne doivent pas être traduits.';
 $string['includeonlyactiveenrol'] = 'N\'inclure que les inscription actives';
 $string['includeonlyactiveenrol_help'] = 'Si ce réglage est activé, les utilisateurs suspendus ne seront pas inclus dans les groupes.';
@@ -154,7 +156,7 @@ $string['namingscheme_help'] = 'Le caractère arobase (@) peut être utilisé po
 Le caractère dièse (#) peut être utilisé pour créer des groupes contenant des nombres. Par exemple, « Groupe # » générera des groupes nommés « Groupe 1 », « Groupe 2 », « Groupe 3 », etc.';
 $string['newgrouping'] = 'Nouveau groupement';
 $string['newpicture'] = 'Nouvelle image';
-$string['newpicture_help'] = 'Sélectionnez une image en format JPG ou PNG.  L\'image sera redimensionnée en un carré de 100x100 pixels.';
+$string['newpicture_help'] = 'Sélectionnez une image en format JPG ou PNG. L\'image sera redimensionnée en un carré de 100x100 pixels.';
 $string['noallocation'] = 'Pas d\'attribution';
 $string['nogroup'] = 'Aucun groupe';
 $string['nogrouping'] = 'Pas de groupement';
@@ -174,6 +176,7 @@ $string['overview'] = 'Vue d\'ensemble';
 $string['potentialmembers'] = 'Membres potentiels : {$a}';
 $string['potentialmembs'] = 'Membres potentiels';
 $string['printerfriendly'] = 'Affichage pour impression';
+$string['privacy:metadata:core_message'] = 'Les conversations de groupe';
 $string['privacy:metadata:groups'] = 'Un enregistrement des affiliations à des groupes.';
 $string['privacy:metadata:groups:groupid'] = 'L\'identifiant du groupe.';
 $string['privacy:metadata:groups:timeadded'] = 'L\'horodatage de l\'ajout de l\'utilisateur au groupe.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_flatfile', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['flatfile:manage'] = 'Gestire manualmente le iscrizioni degli utenti';
 $string['flatfilesync'] = 'Sincronizzazione iscrizioni da file CSV';
 $string['flatfile:unenrol'] = 'Disiscrivere manualmente gli utenti dal corso';
 $string['location'] = 'Percorso del file';
-$string['location_desc'] = 'Il percorso completo del file delle iscrizioni. Il file verrà eliminato automaticamente al termine dell\'elaborazione';
+$string['location_desc'] = 'Il percorso del file delle iscrizioni. Il file verrà eliminato automaticamente al termine dell\'elaborazione';
 $string['mapping'] = 'Mappatura ruoli';
 $string['messageprovider:flatfile_enrolment'] = 'Messaggi di iscrizione File di testo';
 $string['notifyadmin'] = 'Avverti l\'amministratore';

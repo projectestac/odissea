@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tags', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['anycollection'] = 'Κάθε';
 $string['anytype'] = 'Όλα';
-$string['configtitle'] = 'Τίτλος';
-$string['defaultdisplay'] = 'Προβολή ετικετών';
+$string['configtitle'] = 'Τίτλος μπλοκ ετικετών';
+$string['defaultdisplay'] = 'Εμφάνιση ετικετών';
 $string['disabledtags'] = 'Οι ετικέτες είναι απενεργοποιημένες';
 $string['pluginname'] = 'Ετικέτες';
 $string['privacy:metadata'] = 'Το μπλοκ Ετικέτες εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';

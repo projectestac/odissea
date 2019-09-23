@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'question', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -181,6 +181,7 @@ $string['filesareacourse'] = '课程文件区';
 $string['filesareasite'] = '网站文件区';
 $string['filestomove'] = '移动/复制文件到 {$a}？';
 $string['fillincorrect'] = '填入正确答案';
+$string['filterbytags'] = '按标签筛选······';
 $string['firsttry'] = '首次尝试';
 $string['flagged'] = '已标记';
 $string['flagthisquestion'] = '标记此题';
@@ -279,6 +280,7 @@ $string['noprobs'] = '在题目数据库中未发现问题。';
 $string['noquestions'] = '未找到可导出的题。请确认您要导出的类别包含题目。';
 $string['noquestionsinfile'] = '导入文件中没有试题';
 $string['noresponse'] = '[未回答]';
+$string['notagfiltersapplied'] = '没有应用标签筛选';
 $string['notanswered'] = '未回答';
 $string['notchanged'] = '最后一次尝试后未改变';
 $string['notenoughanswers'] = '此种类型的题目要有至少 {$a} 个答案';
@@ -398,6 +400,7 @@ $string['technicalinfostate'] = '题目状态：{$a}';
 $string['technicalinfovariant'] = '问题变式:{$a}';
 $string['tofilecategory'] = '把类别写入文件';
 $string['tofilecontext'] = '把场景写入文件';
+$string['topfor'] = '首选 {$a}';
 $string['uninstallbehaviour'] = '卸载此题目行为。';
 $string['uninstallqtype'] = '卸载此题目类型。';
 $string['unknown'] = '未知';

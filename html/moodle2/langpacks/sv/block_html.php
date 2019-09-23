@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_html', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,6 @@ $string['configclasses'] = 'Ytterligare CSS-klasser';
 $string['configcontent'] = 'Inneh&aring;ll';
 $string['configtitle'] = 'Titel på block';
 $string['html:addinstance'] = 'Lägg till ett ny HTML block';
-$string['html:myaddinstance'] = 'Lägg till ett nytt HTML block till Mitt Moodle';
-$string['leaveblanktohide'] = 'L&aring;t detta vara tomt f&ouml;r att d&ouml;lja titeln';
+$string['html:myaddinstance'] = 'Lägg till ett nytt HTML block på Mitt Moodle';
 $string['newhtmlblock'] = '(nytt HTML-block)';
 $string['pluginname'] = 'HTML';

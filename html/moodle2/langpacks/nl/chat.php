@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'chat', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,7 +45,7 @@ $string['chattime'] = 'Volgende chattijd';
 $string['chat:view'] = 'Bekijk chat-activiteit';
 $string['compact'] = 'Compact';
 $string['composemessage'] = 'Maak een bericht';
-$string['configmethod'] = 'De ajax chatmethode geeft een ajaxgebaseerde chatinterface die regelmatig de server contacteert voor updates. De gewone chatmethode laat de clients regelmatig contact opnemen met de server voor updates. Deze methode vraagt geen configuratie en werkt op alle servers, maar kan een zware belasting op de server veroorzaken wanneer er veel chatters tegelijk online zijn. Om een serverdaemon te kunnen gebruiken heb je  shell-toegang tot Unix nodig, maar je krijgt er een snelle, schaalbare chatomgeving mee.';
+$string['configmethod'] = 'De AJAX chatmethode geeft een AJAX gebaseerde chatinterface die regelmatig de server contacteert voor updates. De gewone chatmethode laat de clients regelmatig contact maken met de server voor updates. Deze methode vraagt geen configuratie en werkt op alle servers, maar kan een zware belasting op de server veroorzaken wanneer er veel chatters tegelijk online zijn. Om een serverdaemon te kunnen gebruiken heb je shell-toegang tot Unix nodig, maar je krijgt er een snelle, schaalbare chatomgeving mee.';
 $string['confignormalupdatemode'] = 'Chatrooms worden normaal gezien heel eficient geupdatet met de <em>Keep-Alive</em> functie van het HTTP 1.1 protocol, maar het geeft een grote belasting voor de server. Een meer geavanceerde methode is gebruik te maken van <em>Stream</em> om de updates tot bij de gebruikers te krijgen. Het gebruik van <em>Stream</em> geeft betere resultaten (gelijkwaardig met de chatd methode), maar het is mogelijk dat je server dat niet ondersteunt.';
 $string['configoldping'] = 'Na hoeveel tijd zonder activiteit wil je een gebruiker als weg uit de chat beschouwen (in seconden)? Dit is slechts een maximale limiet. Verbroken verbindingen worden gewoonlijk heel vlug gedetecteerd. Kleinere waarden zullen je server zwaarder belasten. Als je de normale methode gebruikt, zet deze instelling dan <strong>nooit</strong> lager dan 2* chat_refresh_room';
 $string['configrefreshroom'] = 'Hoe vaak moet de chatroom ververst worden? (in seconden). Als je deze waarde laag instelt kan de chatroom sneller lijken te werken, maar het kan ook, als veel mensen aan het chatten zijn, een hogere belasting op de webserver veroorzaken. Als je <em>Stream updates</em> gebruikt, dan kun je een hoger verversingsfrequentie instellen - probeer met 2.';

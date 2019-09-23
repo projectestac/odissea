@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability_profile', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   availability_profile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['op_isequalto'] = '等于';
 $string['op_isnotempty'] = '非空白';
 $string['op_startswith'] = '以...开始';
 $string['pluginname'] = '通过个人资料限制';
+$string['privacy:metadata'] = '配置限制插件不储存任何私人数据。';
 $string['requires_contains'] = '你的 <strong>{$a->field}</strong> 包含 <strong>{$a->value}</strong>';
 $string['requires_doesnotcontain'] = '你的 <strong>{$a->field}</strong> 不包含 <strong>{$a->value}</strong>';
 $string['requires_endswith'] = '你的 <strong>{$a->field}</strong> 结束于 <strong>{$a->value}</strong>';

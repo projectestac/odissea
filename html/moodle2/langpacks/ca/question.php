@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'question', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -282,6 +282,7 @@ $string['noprobs'] = 'No s\'han trobat problemes en la vostra base de dades de p
 $string['noquestions'] = 'No s\'han trobat preguntes que puguin ser exportades. Assegureu-vos que seleccioneu una categoria d\'exportació que contingui preguntes.';
 $string['noquestionsinfile'] = 'No hi ha preguntes en el fitxer';
 $string['noresponse'] = '[Sense resposta]';
+$string['notagfiltersapplied'] = 'No hi ha cap filtre d\'etiqueta aplicat';
 $string['notanswered'] = 'No s\'ha respost';
 $string['notchanged'] = 'No ha canviat des de l\'últim intent';
 $string['notenoughanswers'] = 'Aquest tipus de pregunta necessita almenys {$a} resposta/respostes';

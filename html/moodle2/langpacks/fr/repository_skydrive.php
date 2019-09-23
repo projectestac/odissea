@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_skydrive', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_skydrive', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_skydrive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,4 +36,4 @@ $string['oauthinfo'] = '<p>Pour utiliser ce plugin, vous devez enregistrer votre
 $string['pluginname'] = 'Microsoft OneDrive (obsolète)';
 $string['privacy:metadata'] = 'Le plugin de dépôt Microsoft OneDrive (obsolète) n\'enregistre aucune donnée personnelle, mais transmet des données des utilisateurs de Moodle vers le système distant.';
 $string['secret'] = 'Secret';
-$string['skydrive:view'] = 'Consulter OneDrive (obsolète)';
+$string['skydrive:view'] = 'Consulter un dépôt OneDrive (obsolète)';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['auth_updateremote_ldap'] = '<p><b>注意:</b> 外部LDAPデータを更
 $string['auth_user_create'] = 'ユーザ作成を有効にする';
 $string['auth_user_creation'] = '新しい (匿名) ユーザは外部認証元のユーザアカウントを作成することができます。また、メールによりアカウント登録が確認されます。このオプションを有効にした場合、ユーザ作成に関して、モジュール特有のオプションを同時に設定する必要があります。';
 $string['auth_usernameexists'] = 'このユーザ名はすでに登録されています。新しいユーザ名を選んでください。';
+$string['auth_usernotexist'] = '登録されていないユーザを更新できません: {$a}';
 $string['auto_add_remote_users'] = 'リモートユーザを自動的に追加する';
 $string['cannotmapfield'] = '省略名「 {$a->shortname} 」が長過ぎるためフィールド「 {$a->fieldname} 」をマップできません。マッピングするにはプロファイルフィールド省略名を {$a->charlimit} 文字以下にしてください。<a href="{$a->link}">プロファイルフィールドを編集する</a>';
 $string['changepassword'] = 'パスワードURLの変更';

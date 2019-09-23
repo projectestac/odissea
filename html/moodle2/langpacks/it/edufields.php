@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'edufields', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'edufields', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   edufields
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -342,7 +342,7 @@ $string['field1090103'] = 'Studi politici';
 $string['field10903'] = 'Studi della società umana';
 $string['field1090301'] = 'Sociologia';
 $string['field1090303'] = 'Antropologia';
-$string['field1090305'] = 'Storia';
+$string['field1090305'] = 'Storico';
 $string['field1090307'] = 'Archeologia';
 $string['field1090309'] = 'Geografia umana';
 $string['field1090311'] = 'Studi indigeni';

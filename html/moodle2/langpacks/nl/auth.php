@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,6 +72,7 @@ $string['auth_updateremote_ldap'] = '<p><b>Merk op:</b>Voor het updaten van exte
 $string['auth_user_create'] = 'Zet het aanmaken van gebruikers aan';
 $string['auth_user_creation'] = 'Nieuwe (anonieme) gebruikers kunnen gebruikersaccounts aanmaken op de externe authenticatiebron en bevestigen via e-mail. Als je dit aanzet, vergeet dan niet ook de module specifieke opties voor het aanmaken van gebruikers te configureren.';
 $string['auth_usernameexists'] = 'De gekozen gebruikersnaam bestaat al. Kies alsjeblieft een andere gebruikersnaam.';
+$string['auth_usernotexist'] = 'Gebruiker {$a} bestaat niet: kan niet updaten.';
 $string['auto_add_remote_users'] = 'Voeg externe gebruikers automatisch toe';
 $string['cannotmapfield'] = 'Het veld  "{$a->fieldname}" kan niet gekoppeld worden omdat de korte naam ervan "{$a->shortname}" te lang is. Om het koppelen mogelijk te maken kun je de korte naam verkleinen tot  {$a->charlimit} tekens. <a href="{$a->link}">Bewerk velden van gebruikersprofiel</a>';
 $string['changepassword'] = 'URL voor het wijzigen van het wachtwoord';

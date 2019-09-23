@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lesson', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['actionaftercorrectanswer_help'] = 'After answering a question correctly
 * Show an unanswered page - Pages are shown in a random order, with pages containing unanswered questions shown again';
 $string['actions'] = 'Actions';
 $string['activitylink'] = 'Link to next activity';
-$string['activitylink_help'] = 'To provide a link at the end of the lesson to another activity in the course, select the activity from the dropdown list.';
+$string['activitylink_help'] = 'To provide a link at the end of the lesson to another activity in the course, select the activity from the drop-down menu.';
 $string['activitylinkname'] = 'Go to {$a}';
 $string['activityoverview'] = 'You have lessons that are due';
 $string['addabranchtable'] = 'Add a content page';
@@ -121,14 +121,13 @@ $string['completiontimespent'] = 'Student must do this activity at least for';
 $string['completiontimespentdesc'] = 'Student must do this activity for at least {$a}';
 $string['completiontimespentgroup'] = 'Require time spent';
 $string['conditionsfordependency'] = 'Condition(s) for the dependency';
-$string['configactionaftercorrectanswer'] = 'The default action to take after a correct answer';
 $string['configintro'] = 'The values set here define the default values that are used in the settings form when creating a new lesson activity. Settings specified as advanced are only shown when the \'Show more...\' link is clicked.';
 $string['configmaxanswers'] = 'Default maximum number of answers per page';
 $string['configmediaclose'] = 'Displays a close button as part of the popup generated for a linked media file';
 $string['configmediaheight'] = 'Sets the height of the popup displayed for a linked media file';
 $string['configmediawidth'] = 'Sets the width of the popup displayed for a linked media file';
 $string['configpassword_desc'] = 'Whether a password is required in order to access the lesson.';
-$string['configslideshowbgcolor'] = 'Background colour to for the slideshow if it is enabled';
+$string['configslideshowbgcolor'] = 'Background colour for the slideshow if it is enabled';
 $string['configslideshowheight'] = 'Sets the height of the slideshow if it is enabled';
 $string['configslideshowwidth'] = 'Sets the width of the slideshow if it is enabled';
 $string['configtimelimit_desc'] = 'If a time limit is set, a warning is displayed at the beginning of the lesson and there is a countdown timer. If set to zero, then there is no time limit.';
@@ -209,6 +208,7 @@ $string['eolstudentoutoftimenoanswers'] = 'You did not answer any questions.  Yo
 $string['essay'] = 'Essay';
 $string['essayemailmessage2'] = '<p>Essay prompt: {$a->question}</p><p>Your response: <em>{$a->response}</em></p><p>Grader\'s comments: <em>{$a->comment}</em></p><p>You have received {$a->earned} out of {$a->outof} for this essay question.</p><p>Your grade for the {$a->lesson} lesson has been changed to {$a->newgrade}&#37;.</p>';
 $string['essayemailsubject'] = 'Grade available for lesson question';
+$string['essaynotgradedyet'] = 'This essay has not been graded yet';
 $string['essayresponses'] = 'Essay responses';
 $string['essays'] = 'Essays';
 $string['essayscore'] = 'Essay score';
@@ -249,7 +249,7 @@ $string['gradeis'] = 'Grade is {$a}';
 $string['gradeoptions'] = 'Grade options';
 $string['groupoverrides'] = 'Group overrides';
 $string['groupoverridesdeleted'] = 'Group overrides deleted';
-$string['groupsnone'] = 'There are no groups in this course';
+$string['groupsnone'] = 'No groups you can access.';
 $string['handlingofretakes'] = 'Handling of re-takes';
 $string['handlingofretakes_help'] = 'If re-takes are allowed, this setting specifies whether the grade for the lesson is the mean or maximum of all attempts.';
 $string['havenotgradedyet'] = 'Have not graded yet.';
@@ -396,6 +396,7 @@ $string['ongoingcustom'] = 'You have earned {$a->score} point(s) out of {$a->cur
 $string['ongoing_help'] = 'If enabled, each page will display the student\'s current points earned out of the total possible thus far.';
 $string['ongoingnormal'] = 'You have answered {$a->correct} correctly out of {$a->viewed} attempts.';
 $string['onpostperpage'] = 'Only one posting per grade';
+$string['openafterclose'] = 'You have specified an open date after the close date';
 $string['options'] = 'Options';
 $string['or'] = 'OR';
 $string['ordered'] = 'Ordered';
@@ -538,8 +539,8 @@ $string['studentoutoftimeforreview'] = 'Attention: You ran out of time for revie
 $string['studentresponse'] = '{$a}\'s response';
 $string['submit'] = 'Submit';
 $string['submitname'] = 'Submit name';
-$string['teacherjumpwarning'] = 'An {$a->cluster} jump or an {$a->unseen} jump is being used in this lesson.  The next page jump will be used instead.  Login as a student to test these jumps.';
-$string['teacherongoingwarning'] = 'Ongoing score is only displayed for student.  Login as a student to test ongoing score';
+$string['teacherjumpwarning'] = 'A {$a->cluster} jump or an {$a->unseen} jump is being used in this lesson.  The next page jump will be used instead. Log in as a student to test these jumps.';
+$string['teacherongoingwarning'] = 'The ongoing score is only displayed for the student. Log in as a student to test the ongoing score.';
 $string['teachertimerwarning'] = 'Timer only works for students.  Test the timer by logging in as a student.';
 $string['thatsthecorrectanswer'] = 'That\'s the correct answer';
 $string['thatsthewronganswer'] = 'That\'s the wrong answer';
@@ -570,6 +571,7 @@ $string['usepassword_help'] = 'If enabled, a password is required in order to ac
 $string['useroverrides'] = 'User overrides';
 $string['useroverridesdeleted'] = 'User overrides deleted';
 $string['usersnone'] = 'No students have access to this lesson';
+$string['viewessayanswers'] = 'View essay answers';
 $string['viewgrades'] = 'View grades';
 $string['viewreports'] = 'View {$a->attempts} completed {$a->student} attempts';
 $string['viewreports2'] = 'View {$a} completed attempts';

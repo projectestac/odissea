@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_mnet', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,11 +88,11 @@ $string['privacy:metadata:mnet_log:remoteid'] = 'リモートシステムでア�
 $string['privacy:metadata:mnet_log:time'] = 'アクション発生日時です。';
 $string['privacy:metadata:mnet_log:url'] = 'アクションが発生したリモートシステムのURLです。';
 $string['privacy:metadata:mnet_log:userid'] = 'リモートシステムでアクションを実行したユーザのローカルIDです。';
-$string['privacy:metadata:mnet_session'] = 'リモートシステムのそれぞれのMNetユーザセッションの詳細は一時的に保存されます。';
+$string['privacy:metadata:mnet_session'] = 'リモートシステムのそれぞれのMNetユーザセッションの詳細です。データは一時的に保存されます。';
 $string['privacy:metadata:mnet_session:expires'] = 'セッションの有効期限です。';
 $string['privacy:metadata:mnet_session:mnethostid'] = 'リモートシステムMNet IDです。';
 $string['privacy:metadata:mnet_session:token'] = 'ユニークセッションIDです。';
-$string['privacy:metadata:mnet_session:useragent'] = 'ページにアクセスしているユーザエジェントを示すストリングです。';
+$string['privacy:metadata:mnet_session:useragent'] = 'リモートシステムへのアクセスに使用されるユーザエージェントです。';
 $string['privacy:metadata:mnet_session:userid'] = 'リモートシステムにジャンプするユーザのIDです。';
 $string['privacy:metadata:mnet_session:username'] = 'リモートシステムにジャンプするユーザのユーザ名です。';
 $string['rpc_negotiation_timeout'] = 'RPCネゴシエーションタイムアウト';

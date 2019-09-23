@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_overview', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,7 +58,7 @@ $string['none'] = 'Aucune';
 $string['numtodisplay'] = 'Nombre de cours à afficher :';
 $string['onlyparentname'] = 'Catégories parentes seulement';
 $string['otherexpanded'] = 'Liste des autres cours dépliée';
-$string['pluginname'] = 'Vue d\'ensemble des cours (obsolète)';
+$string['pluginname'] = 'Vue d\'ensemble des cours';
 $string['preservestates'] = 'Préserver les états replié/déplié';
 $string['prevpage'] = 'Page précédente';
 $string['privacy:metadata:courseorder'] = 'Liste ordonnée des cours affichés';
@@ -69,6 +69,7 @@ $string['privacy:metadata:sortorder'] = 'Ordre de tri';
 $string['removefavourite'] = 'Retirer des favoris';
 $string['reorderfullname'] = 'Nom complet du cours';
 $string['reorderid'] = 'Identifiant du cours';
+$string['reorderiddesc'] = 'ID du cours par ordre décroissant';
 $string['reordernone'] = 'Ordre du glisser-déposer';
 $string['reordershortname'] = 'Nom abrégé du cours';
 $string['setmaxcourses'] = 'Nombre maximal de cours';

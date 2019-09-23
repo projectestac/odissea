@@ -11,6 +11,11 @@ notifications:
 
 language: php
 
+dist: xenial
+
+services:
+    - mysql
+
 php:
     # We only run the highest and lowest supported versions to reduce the load on travis-ci.org.
     - 7.2
@@ -18,10 +23,6 @@ php:
 
 addons:
   postgresql: "9.6"
-  packages:
-    - mysql-server-5.6
-    - mysql-client-core-5.6
-    - mysql-client-5.6
 
 # Redis tests are currently failing on php 7.2 due to https://bugs.php.net/bug.php?id=75628
 # services:
@@ -76,10 +77,10 @@ install:
         then
             sudo mkdir /mnt/ramdisk
             sudo mount -t tmpfs -o size=1024m tmpfs /mnt/ramdisk
-            sudo stop mysql
+            sudo service mysql stop
             sudo mv /var/lib/mysql /mnt/ramdisk
             sudo ln -s /mnt/ramdisk/mysql /var/lib/mysql
-            sudo start mysql
+            sudo service mysql restart
         fi
     - >
         if [ "$DB" = 'pgsql' ];
@@ -207,7 +208,7 @@ before_script:
         # We need the official upstream for comparison
         git remote add upstream https://github.com/moodle/moodle.git;
 
-        git fetch upstream MOODLE_34_STABLE;
+        git fetch upstream MOODLE_36_STABLE;
         export GIT_PREVIOUS_COMMIT="`git merge-base FETCH_HEAD $TRAVIS_COMMIT`";
         export GIT_COMMIT="$TRAVIS_COMMIT";
         export UPSTREAM_FETCH_HEAD=`git rev-parse FETCH_HEAD`

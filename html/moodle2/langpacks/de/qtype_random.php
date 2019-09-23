@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_random', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,19 @@ $string['pluginnameediting'] = 'Zufallsfrage bearbeiten';
 $string['pluginname_help'] = 'Eine Zufallsfrage ist kein Fragetyp als solcher, sondern sie ist ein Weg zur Einbeziehung einer zufällig gewählten Frage aus einer bestimmten Kategorie in einem Test.';
 $string['privacy:metadata'] = 'Der Zufalls Fragentyp speichert keine personenbezogenen Daten';
 $string['randomqname'] = 'Zufall ({$a})';
+$string['randomqnamefromtop'] = 'Fehlerhafte Zufallsfrage! Löschen Sie diese Frage.';
+$string['randomqnamefromtoptags'] = 'Fehlerhafte Zufallsfrage! Diese Frage sollten Sie löschen.';
+$string['randomqnametags'] = 'Zufällig ({$a->category}, Tags: {$a->tags})';
 $string['randomqplusname'] = 'Zufall ({$a} und Unterkategorien)';
+$string['randomqplusnamecourse'] = 'Zufällig (alle Kategorien in diesem Kurs)';
+$string['randomqplusnamecoursecat'] = 'Zufällig (alle Kategorien im Kursbereich {$a})';
+$string['randomqplusnamecoursecattags'] = 'Zufällig (jede Kategorie innerhalb der Kurskategorie {$a->category}, Tags: {$a->tags})';
+$string['randomqplusnamecoursetags'] = 'Zufällig (jede Kategorie im Kurs, Tags: {$a->tags})';
+$string['randomqplusnamemodule'] = 'Zufällig (Alle Kategorien für diesen Test)';
+$string['randomqplusnamemoduletags'] = 'Zufällig (jede Kategorie im Test, Tags: {$a->tags})';
+$string['randomqplusnamesystem'] = 'Zufällig (Alle Kategorie auf der Website)';
+$string['randomqplusnamesystemtags'] = 'Zufällig (jede Kategorie der Website, Tags: {$a->tags})';
+$string['randomqplusnametags'] = 'Zufällig ({$a->category} und Unterkategorien, Tags: {$a->tags})';
 $string['selectedby'] = '{$a->questionname} ausgewählt von {$a->randomname}';
 $string['selectmanualquestions'] = 'Zufallsfragen können auf manuell bewerteten Fragen basieren';
+$string['taskunusedrandomscleanup'] = 'Nicht verwendete Zufallsfragen entfernen';

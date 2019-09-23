@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_stats', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_stats', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   report_stats
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,4 +32,5 @@ $string['page-report-stats-index'] = 'Отчет «Статистика» для
 $string['page-report-stats-user'] = 'Отчет «Статистика» для участника курса';
 $string['page-report-stats-x'] = 'Любой отчет «Статистика»';
 $string['pluginname'] = 'Статистика';
+$string['privacy:metadata:statssummary'] = 'Записывает основную статистику о взаимодействии пользователей в курсах.';
 $string['stats:view'] = 'Просматривать отчет «Статистика»';

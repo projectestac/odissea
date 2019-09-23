@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_monitor', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,13 +66,13 @@ $string['managesubscriptions'] = 'Surveillance d\'événements';
 $string['managesubscriptionslink'] = 'Vous pouvez vous abonner à des règles sur la page {$a}.';
 $string['messageprovider:notification'] = 'Notifications d\'abonnement à des règles';
 $string['messagetemplate'] = 'Message de notification';
-$string['messagetemplate_help'] = 'Un message est envoyé aux abonnés lorsque le seuil de notification est atteint. Ce message peut inclure les paramètres fictifs suivants :
-<br /><br />
-* {link} - lien vers l\'emplacement de l\'événement<br />
-* {modulelink} - lien vers la zone surveillée<br />
-* {rulename} - nom de la règle <br />
-* {description} - description de la règle <br />
-* {eventname} - nom de l\'événement';
+$string['messagetemplate_help'] = 'Un message est envoyé aux abonnés lorsque le seuil de notification est atteint. Ce message peut inclure un ou plusieurs des paramètres fictifs suivants :
+
+* Lien vers l\'emplacement de l\'événement {link}
+* Lien vers la zone surveillée {modulelink}
+* Nom de la règle {rulename}
+* Description {description}
+* Nom de l\'événement {eventname}';
 $string['moduleinstance'] = 'Instance';
 $string['monitordisabled'] = 'La surveillance d\'événements est actuellement désactivée.';
 $string['monitorenabled'] = 'La surveillance d\'événements est actuellement activée.';
@@ -120,7 +120,7 @@ $string['subareyousure'] = 'Voulez-vous vraiment résilier l\'abonnement à la r
 $string['subcreatesuccess'] = 'Abonnement créé';
 $string['subdeletesuccess'] = 'Abonnement résilié';
 $string['subhelp'] = 'Infos détaillées de l\'abonnement';
-$string['subhelp_help'] = 'Cet abonnement surveille si l\'événement « {$a->eventname} »  dans « {$a->moduleinstance} » est déclenché {$a->frequency} fois durant un intervalle de {$a->minutes} minute(s).';
+$string['subhelp_help'] = 'Cet abonnement surveille si l\'événement « {$a->eventname} » dans « {$a->moduleinstance} » est déclenché {$a->frequency} fois durant un intervalle de {$a->minutes} minute(s).';
 $string['subscribeto'] = 'S\'inscrire à la règle « {$a} »';
 $string['taskchecksubscriptions'] = 'Activer/désactiver l\'abonnement aux règles non valides';
 $string['taskcleanevents'] = 'Nettoyage des événements de la surveillance d\'événements';

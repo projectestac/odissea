@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'moodle', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -223,7 +223,7 @@ $string['cachecontrols'] = '캐시 제어';
 $string['cancel'] = '취소';
 $string['cancelled'] = '취소됨';
 $string['categories'] = '강좌 범주';
-$string['categoriesandcoures'] = '강좌 범주와 강좌';
+$string['categoriesandcourses'] = '강좌 범주와 강좌';
 $string['category'] = '범주';
 $string['categoryadded'] = '범주 \'{$a}\' 가 추가됨';
 $string['categorybulkaction'] = '선택한 범주에 대한 대량 작업';
@@ -295,6 +295,7 @@ $string['cookiesenabled_help'] = '<p>이 사이트에서는 두 개의 쿠키를
 <p>가장 중요한 것은 <b>무들세션</b>이라 부르는 세션 쿠키입니다. 브라우저에서 이 쿠키를 허용해야만 무들에 로그인하고 이곳 저곳을 돌아다니며 활동을 계속할 수 있습니다. 여러분이 브라우저를 닫거나 로그아웃을 하면 이 쿠키는 (브라우저와 서버에서) 삭제됩니다.</p>
 
 <p>또 하나의 쿠키는 순전히 편의를 위한 것인데, 보통은 <b>MOODLEID</b>로 불립니다. 이는 브라우저 내에서 여러분의 사용자명을 기억하는데 사용됩니다. 즉 여러분이 다른 곳을 탐색하다가 무들의 로그인 페이지로 돌아왔을 때 사용자명 입력부분에 이미 사용자명이 쓰여져 있는 것을 알 수 있습니다. 하지만 이 쿠키는 거부하는 편이 안전한데, 이 때는 매번 로그인 할 때 마다 사용자명을 써 넣어야 합니다.</p>';
+$string['cookiesenabledonlysession'] = '브라우저의 쿠키 기능이 작동되야 합니다.';
 $string['cookiesnotenabled'] = '현재, 브라우저의 쿠키가 작동하지 않습니다.';
 $string['copy'] = '복사';
 $string['copyasnoun'] = '복사';
@@ -388,6 +389,10 @@ $string['courserequestsupport'] = '관리자가 검토할 때 도움이 될 정�
 $string['courserequestwarning'] = '이 강좌를 신청하는 사용자는 자동으로 {$a} 역할로 등록됩니다.';
 $string['courserestore'] = '강좌 복원';
 $string['courses'] = '강좌';
+$string['coursesearch_help'] = '여러 개의 단어로 검색할 수 있습니다.<br />
+word : 텍스트안에 이 단어와 관련된 어떤 것이라도 검색<br />
++word : 정확히 일치하는 것만 검색<br />
+-word : 이 단어를 포함하지 않는 것만 보여주기';
 $string['coursesectionsummaries'] = '강좌의 영역 개요';
 $string['coursesectiontitle'] = '강좌: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
 $string['coursesettings'] = '표준강좌 설정';
@@ -775,7 +780,6 @@ $string['filemissing'] = '{$a} 이 빠짐.';
 $string['files'] = '파일';
 $string['filesanduploads'] = '파일 및 업로드';
 $string['filesfolders'] = '파일/폴더';
-$string['filetoolarge'] = '올리기엔 너무 큼';
 $string['fileuploadwithcontent'] = '파일 업로드시 콘텐츠 매개변수는 포함할 수 없음';
 $string['filloutallfields'] = '이 서식의 모든 항목을 채워주세요.';
 $string['filter'] = '필터';
@@ -1048,7 +1052,6 @@ $string['markedthistopic'] = '이 주제는 현재의 주제로서 강조됩니�
 $string['markthistopic'] = '이 주제를 현재의 주제로 강조하기';
 $string['matchingsearchandrole'] = '\'{$a->search}\' {$a->role} 찾은 내용';
 $string['maxareabytesreached'] = '파일 크기(또는 여러 파일의 전체 크기)가 이 영역의 여유 공간보다 큽니다.';
-$string['maxbytesforfile'] = '파일 {$a}가 허용되는 최대 크기보다 큽니다.';
 $string['maxfilesize'] = '새 파일 최대크기: {$a}';
 $string['maxfilesreached'] = '최대 {$a} 개의 파일을 첨부 가능';
 $string['maximumchars'] = '{$a} 문자의 최대치';
@@ -1114,8 +1117,6 @@ $string['missingsummary'] = '빠짐: 요약';
 $string['missingteacher'] = '누군가를 선택해야 함';
 $string['missingurl'] = '빠짐: 웹주소(URL)';
 $string['missingusername'] = '빠짐: 사용자 아이디';
-$string['modchooserdisable'] = '활동 선택 끔';
-$string['modchooserenable'] = '활동 선택 켬';
 $string['moddoesnotsupporttype'] = '{$a->modname} 모듈은 {a->type} 유형의 업로드를 지원하지 않음';
 $string['modhide'] = '감추기';
 $string['modified'] = '수정됨';
@@ -1349,6 +1350,7 @@ $string['payments'] = '지불';
 $string['paymentsorry'] = '납입해 주셔서 감사합니다! 하지만 안타깝게도 아직 수납과정이 완료되지 않았으며 강좌에 "{$a->fullname}" 로 완전히 등록되지 않았습니다. 몇 초 후에 계속 강좌 진입을 시도해 보시길 바랍니다. 만일 지속적으로 문제가 있다면 사이트 관리자나 {$a->teacher} 에게 연락하시기 바랍니다.';
 $string['paymentthanks'] = '납입해 주셔서 감사합니다!<br />강좌 {$a} 에 정상적으로 등록되었습니다.';
 $string['pendingrequests'] = '승인대기 강좌';
+$string['percents'] = '{$a} %';
 $string['periodending'] = '기간 종료 ({$a})';
 $string['perpage'] = '페이지당';
 $string['perpagea'] = '페이지당 : {$a}';
@@ -1533,10 +1535,6 @@ $string['searchagain'] = '다시 찾기';
 $string['searchbyemail'] = '이메일주소로 찾기';
 $string['searchbyusername'] = '사용자 아이디로 찾기';
 $string['searchcourses'] = '강좌 찾기';
-$string['searchhelp'] = '여러 개의 단어로 검색할 수 있습니다.<br />
-word : 텍스트안에 이 단어와 관련된 어떤 것이라도 검색<br />
-+word : 정확히 일치하는 것만 검색<br />
--word : 이 단어를 포함하지 않는 것만 보여주기';
 $string['search_help'] = '문서의 어느 곳에서든지 하나 이상의 단어를 검색하고자 할 때에는 이들 단어를 쉼표로 분리해서 입력하면 된다. 모든 단어는 한 음절 이상이면 된다.
 좀 더 자세하게 검색하고자 할 때에는 검색란에 아무 것도 쓰지 않은 채, 상세검색을 누르면 자세한 검색 양식이 나타난다.';
 $string['searchoptions'] = '검색 조건';
@@ -1836,7 +1834,6 @@ $string['uploadthisfile'] = '이 파일 업로드하기';
 $string['url'] = 'URL';
 $string['used'] = '사용됨';
 $string['usedinnplaces'] = '{$a} 가 사용된 장소';
-$string['usemessageform'] = '아니면 선택된 학생들에게 이 형식을 이용하여 메세지를 보냅니다.';
 $string['user'] = '사용자';
 $string['useractivity'] = '활동';
 $string['userconfirmed'] = '{$a} 이 확인 되었습니다.';

@@ -230,6 +230,58 @@ function xmldb_qtype_ordering_upgrade($oldversion) {
         }
         upgrade_plugin_savepoint(true, $newversion, 'qtype', 'ordering');
     }
+
+    $newversion = 2019071191;
+    if ($oldversion < $newversion) {
+
+        // Add field "numberingstyle" to table "qtype_ordering_options".
+        // This field was briefly called "answernumbering".
+        $table = new xmldb_table('qtype_ordering_options');
+        $field = new xmldb_field('answernumbering', XMLDB_TYPE_CHAR, '10', null, XMLDB_NOTNULL, null, 'none', 'showgrading');
+        $newname = 'numberingstyle';
+
+        $oldexists = $dbman->field_exists($table, $field);
+        $newexists = $dbman->field_exists($table, $newname);
+        if ($oldexists) {
+            if ($newexists) {
+                $dbman->drop_field($table, $field);
+            } else {
+                $dbman->rename_field($table, $field, $newname);
+                $newexists = true;
+            }
+            $oldexists = false;
+        }
+        $field->setName($newname);
+        if ($newexists) {
+            $dbman->change_field_type($table, $field);
+        } else {
+            $dbman->add_field($table, $field);
+        }
+        upgrade_plugin_savepoint(true, $newversion, 'qtype', 'ordering');
+    }
+
+    $newversion = '2019073193';
+    if ($oldversion < $newversion) {
+        $table = 'qtype_ordering_options';
+        $field = 'numberingstyle';
+        $select = "$field = ? OR $field = ?";
+        $params = array('III', 'ABC');
+        if ($options = $DB->get_records_select($table, $select, $params, $field, "id,$field")) {
+            foreach ($options as $option) {
+                switch ($option->numberingstyle) {
+                    case 'ABC':
+                        $DB->set_field($table, $field, 'ABCD', array('id' => $option->id));
+                        break;
+                    case 'III':
+                        $DB->set_field($table, $field, 'IIII', array('id' => $option->id));
+                        break;
+                    // Ignore "abc", "iii", and anything else.
+                }
+            }
+        }
+        upgrade_plugin_savepoint(true, $newversion, 'qtype', 'ordering');
+    }
+
     return true;
 }
 

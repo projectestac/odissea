@@ -190,7 +190,7 @@ class provider implements
      *
      * @param int $userid The user ID
      */
-    protected static function delete_data($userid) {
+    protected static function delete_data(int $userid) {
         global $DB;
 
         foreach (static::get_records($userid) as $record) {
@@ -204,10 +204,10 @@ class provider implements
      * @param  int $userid The user ID
      * @return array An array of records.
      */
-    protected static function get_records($userid) {
+    protected static function get_records(int $userid) : array {
         global $DB;
-        $sql = "SELECT mad.id, mad.enable, ud.appid, ud.name, ud.model, ud.platform, ud.version, ud.timecreated,
-                       ud.timemodified, ud.pushid
+        $sql = "SELECT mad.id, mad.enable, ud.appid, ud.name, ud.model, ud.platform, ud.version, ud.timecreated, ud.timemodified,
+                        ud.pushid
                 FROM {message_airnotifier_devices} mad
                 JOIN {user_devices} ud ON mad.userdeviceid = ud.id
                 WHERE ud.userid = :userid";

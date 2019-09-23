@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_ldap', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -112,14 +112,14 @@ $string['pluginname_desc'] = '<p>Je kunt een LDAP-server gebruiken om je cursusa
 <p>Deze plugin kan zo ingesteld worden dat nieuwe cursussen aangemaakt worden als nieuwe groepen in LDAP verschijnen.</p>';
 $string['pluginnotenabled'] = 'Plugin niet ingeschakeld!';
 $string['privacy:metadata'] = 'De LDAP aanmeldingsplugin bewaart geen persoonlijke gegevens.';
-$string['role_mapping'] = '<p>Voor elke rol die je wil toewijzen vanuit LDAP, moet je de lijst van contexten specifiëren waar de groepen binnen de cursussen met de rol zich bevinden. Scheid de verschillende contexten af met \';\'.</p><p>Specifieer ook het attribuut dat je LDAP server gebruikt om de groepsleden te bewaren. Gewoonlijk \'member\' of \'memberUid\'</p>';
+$string['role_mapping'] = '<p>Voor elke rol die je wil toewijzen, moet je alle LDAP-contexten specificeren waar de groepen die cursussen representeren zich bevinden. Scheid de verschillende contexten met een komma-punt (;).</p><p>Specificeer ook het attribuut dat je LDAP server gebruikt om de groepsleden te bewaren. Gewoonlijk is dit \'member\' of \'memberUid\'</p>';
 $string['role_mapping_attribute'] = 'LDAP member attribuut voor {$a}';
 $string['role_mapping_context'] = 'LDAP contexten voor {$a}';
 $string['role_mapping_key'] = 'Koppel rollen uit LDAP';
 $string['roles'] = 'Rolmapping';
 $string['server_settings'] = 'LDAP-serverinstellingen';
 $string['synccourserole'] = '==Synchroniseren van cursus \'{$a->idnumber}\' voor rol \'{$a->role_shortname}\'';
-$string['syncenrolmentstask'] = 'Synchroniseer aanmeldingentaak';
+$string['syncenrolmentstask'] = 'Synchroniseer LDAP aanmeldingentaak';
 $string['template'] = 'Optioneel: automatisch gecreëerde cursussen kunnen instellingen kopieren vanaf een voorbeeldcursus.';
 $string['template_key'] = 'Sjabloon';
 $string['unassignrole'] = 'Rol {$a->role_shortname} wordt weggenomen van gebruiker {$a->user_name} uit cursus {$a->course_shortname} (id {$a->course_id}';

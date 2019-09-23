@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio_mahara', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['enableleap2a'] = 'Leap2a Portfolio-ondersteuning inschakelen (Mahara 1.
 $string['err_invalidhost'] = 'Ongeldige MNet host';
 $string['err_invalidhost_help'] = 'Deze plugin is fout geconfigureerd en verwijst naar een ongeldige (of verwijderde) MNET host. Deze plugin werkt met Moodle Networking servers met SSO IDP gepubliceerd, SSO_SP en portfolio ingeschreven <b>en</b> gepubliceerd.';
 $string['err_networkingoff'] = 'MNet is uitgeschakeld.';
-$string['err_networkingoff_help'] = 'MNet is uitgeschakeld. Schakel het in voor je deze plugin probeert te configureren. Alle exemplaren van deze plugin zijn op niet zichtbaar gezet tot dit is opgelost - je zult ze manueel terug zichtbaar moeten zetten. Ze kunnen niet gebruikt worden tot dit gebeurd is.';
+$string['err_networkingoff_help'] = 'MNet authenticatie is momenteel uitgeschakeld. Gelieve dit in te schakelen alvorens deze plugin te configureren. Instanties van deze plugin blijven verborgen totdat MNet is ingeschakeld. Daarna dienen deze handmatig op weer op zichtbaar ingesteld te worden.';
 $string['err_nomnetauth'] = 'De MNet authentictieplugin is uitgeschakeld';
 $string['err_nomnetauth_help'] = 'De MNet authenticatieplugin is uitgeschakeld, maar is vereist voor deze service';
 $string['err_nomnethosts'] = 'Steunt op MNet';

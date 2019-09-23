@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradingform_rubric', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,7 +87,7 @@ $string['scoreinputforlevel'] = 'Input punti per il livello {$a}';
 $string['scorepostfix'] = '{$a} punti';
 $string['showdescriptionstudent'] = 'Visualizza la descrizione del rubric a coloro che riceveranno la valutazione';
 $string['showdescriptionteacher'] = 'Visualizza la descrizione del rubric durante la valutazione';
-$string['showremarksstudent'] = 'Visualizza i commenti a coloro che riceveranno la valutazione';
+$string['showremarksstudent'] = 'I commenti sono visualizzati da coloro che riceveranno la valutazione';
 $string['showscorestudent'] = 'Visualizza il punteggio per ciascun livello a coloro che saranno valutati';
 $string['showscoreteacher'] = 'Visualizza il punteggio per ciascun livello durante la valutazione';
 $string['sortlevelsasc'] = 'Ordinamento dei livelli:';

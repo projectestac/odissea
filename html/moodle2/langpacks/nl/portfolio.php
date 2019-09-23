@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -174,20 +174,20 @@ $string['pluginismisconfigured'] = 'De portfolio plugin is fout geconfigureerd, 
 $string['portfolio'] = 'Portfolio';
 $string['portfolios'] = 'Portfolio\'s';
 $string['privacy:metadata'] = 'Het subsysteem voor het portfolio gedraagt zich als een kanaal dat aanvragen van diverse plugins doorgeeft aan de verschillende portfolio-plugins.';
-$string['privacy:metadata:instance'] = 'Identificatie van de portfolio.';
-$string['privacy:metadata:instancesummary'] = 'Dit bewaart portfolio-instanties en voorkeuren voor de portfolio\'s die de gebruiker gebruikt.';
-$string['privacy:metadata:name'] = 'Naam van de voorkeur.';
+$string['privacy:metadata:instance'] = 'Identificatie van de portfolio';
+$string['privacy:metadata:instancesummary'] = 'Bewaart portfolio-instanties en voorkeuren.';
+$string['privacy:metadata:name'] = 'Naam van de voorkeur';
 $string['privacy:metadata:portfolio_log'] = 'Log van de portfolio-transfers (gebruikt om later te controleren op dubbels)';
 $string['privacy:metadata:portfolio_log:caller_class'] = 'Naam van de klasse die gebruikt werd om de transfer te maken';
 $string['privacy:metadata:portfolio_log:caller_component'] = 'Componentnaam verantwoordelijk voor de export';
 $string['privacy:metadata:portfolio_log:time'] = 'Tijdstip van transfer (in het geval van een transfer met wachtrij is dit het tijdstip waarop de transfer gebeurde, niet wanneer de gebruiker die startte)';
-$string['privacy:metadata:portfolio_log:userid'] = 'De gebruiker die de inhoud exporteerde';
-$string['privacy:metadata:portfolio_tempdata'] = 'Bewaart tijdelijke gegevens voor portfolio exports en wordt door cron opgeschoond na een dag';
+$string['privacy:metadata:portfolio_log:userid'] = 'ID van de gebruiker die de inhoud exporteerde';
+$string['privacy:metadata:portfolio_tempdata'] = 'Bewaart tijdelijke gegevens voor portfolio exports.';
 $string['privacy:metadata:portfolio_tempdata:data'] = 'Exportgegevens';
 $string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Tijdstip waarop deze record zal vervallen';
 $string['privacy:metadata:portfolio_tempdata:instance'] = 'Gebruikte portfolioinstantie';
 $string['privacy:metadata:portfolio_tempdata:userid'] = 'Gebruiker die de export doet';
-$string['privacy:metadata:userid'] = 'De gebruikersidentificatie';
+$string['privacy:metadata:userid'] = 'Gebruikers ID';
 $string['privacy:metadata:value'] = 'Waarde voor de voorkeur';
 $string['privacy:path'] = 'Portfolioinstantie';
 $string['queuesummary'] = 'Transfers in wachtrij';

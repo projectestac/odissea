@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_glossary', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filter_glossary', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   filter_glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'Glosategirako esteka automatikoa';
-$string['glossarycategory'] = '{$a->glosategia}: Kategoria {$a->kategoria}';
-$string['glossaryconcept'] = '{$a->glosategia}: {$a->terminoa}';
-$string['privacy:metadata'] = 'Glosategirako esteka automatikoa pluginak ez du datu pertsonalik biltzen.';
+$string['filtername'] = 'Glosariorako esteka automatikoa';
+$string['glossarycategory'] = '{$a->glossary}: Kategoria {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
+$string['privacy:metadata'] = 'Glosariorako esteka automatikoa pluginak ez du datu pertsonalik biltzen.';

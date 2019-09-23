@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_manual', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['defaultstart'] = 'Standaard aanmeldingsstart';
 $string['deleteselectedusers'] = 'Verwijder gebruikersaanmeldingen';
 $string['editselectedusers'] = 'Bewerk geselecteerde gebruikersaanmelding';
 $string['enrolledincourserole'] = 'Aangemeld in "{$a->course}" als "{$a->role}"';
-$string['enrolusers'] = 'Gebruikers aanmelden';
+$string['enrolusers'] = 'Gebruikers manueel aanmelden';
 $string['enroluserscohorts'] = 'Geselecteerde gebruikers en site-groepen aanmelden';
 $string['expiredaction'] = 'Actie bij verlopen van de aanmelding';
 $string['expiredaction_help'] = 'Selecteer een uit te voeren actie wanneer de aanmelding van een gebruiker vervalt. Merk op dat sommige gebruikersgegevens en instellingen gewist zullen worden tijdens het afmelden van de cursus.';
@@ -58,7 +58,7 @@ $string['expirymessageenrollerbody'] = 'De aanmelding in cursus  \'{$a->course}\
 Ga naar  {$a->extendurl} om hun aanmelding te verlengen.';
 $string['expirymessageenrollersubject'] = 'Melding voor het vervallen van de aanmelding';
 $string['manual:config'] = 'Maneel aanmelden van gebruikers configureren';
-$string['manual:enrol'] = 'Gebruikers aanmelden';
+$string['manual:enrol'] = 'Gebruikers manueel aanmelden';
 $string['manual:manage'] = 'Beheer gebruikersaanmeldingen';
 $string['manualpluginnotinstalled'] = 'De "Manueel"-plugin is niet geïnstalleerd';
 $string['manual:unenrol'] = 'Gebruikers van de cursus afmelden';
@@ -71,11 +71,13 @@ $string['privacy:metadata'] = 'De manuele aanmeldingsplugin bewaart geen persoon
 $string['selectcohorts'] = 'Selecteer site-groepen';
 $string['selection'] = 'Selectie';
 $string['selectusers'] = 'Selecteer gebruikers';
+$string['sendexpirynotificationstask'] = 'Taak voor het versturen van meldingen over vervallen manuele aanmeldingen';
 $string['status'] = 'Manuele aanmeldingen inschakelen';
 $string['status_desc'] = 'Toegang tot de cursus toestaan voor intern aangemelde gebruikers. Dit moet meestal ingeschakeld blijven.';
 $string['statusdisabled'] = 'Uitgeschakeld';
 $string['statusenabled'] = 'Ingeschakeld';
 $string['status_help'] = 'Deze instelling bepaalt of gebruikers manueel aangemeld kunnen worden via een link in de cursus instellingen door een gebruiker met voldoende rechten, zoals een leraar.';
+$string['syncenrolmentstask'] = 'Synchronisatietaak voor manuele aanmeldingen';
 $string['unenrol'] = 'Gebruiker afmelden';
 $string['unenrolselectedusers'] = 'Geselecteerde gebruikers afmelden';
 $string['unenrolselfconfirm'] = 'Wil je echt jezelf afmelden van cursus "{$a}"?';

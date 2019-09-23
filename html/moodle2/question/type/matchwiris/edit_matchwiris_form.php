@@ -28,7 +28,7 @@ class qtype_matchwiris_edit_form extends qtype_wq_edit_form {
         parent::definition_inner($mform);
 
         $wirismatch = $mform->createElement('text', 'wirismatch', get_string('matchwiris_algorithm', 'qtype_matchwiris'),
-                array('class' => 'wirisauthoringfield wirisstudio wirismultichoice wirisvariables wirisauxiliarcas'));
+                array('class' => 'wirisauthoringfield wirisstudio wirismultichoice wirisvariables wirisauxiliarcas wirisauxiliartextinput'));
 
         $wirishdr = $mform->createElement('header', 'wirishdr', get_string('matchwiris_wiris_variables', 'qtype_matchwiris'));
 

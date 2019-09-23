@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'admin', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -269,7 +269,6 @@ $string['configmaxusersperpage'] = '강좌, 모둠, 수업집단, 웹서비스�
 $string['configmessaging'] = '사이트 사용자 간에 내부 메세지 시스템을 이용할 수 있게 할까요?';
 $string['configmessagingallowemailoverride'] = '사용자가 자신의 프로필의 이메일 주소가 아닌 다른 이메일 주소로 이메일  메시지 통지를 받을 수 있도록 허용.';
 $string['configmessagingdeletereadnotificationsdelay'] = '읽은 통지는 공간을 절약하기 위해 삭제될 수 있습니다. 통지를 읽은 후 얼마나 지나야 삭제될 수 있습니까?';
-$string['configmessaginghidereadnotifications'] = '메세지 이력을 볼 때 포럼 게시글과 같은 읽은 이벤트 통지 감추기';
 $string['configminpassworddigits'] = '비밀번호에 최소 여기에 제시된 수만큼의 숫자가 들어 있어야 합니다.';
 $string['configminpasswordlength'] = '비밀번호의 길이는 여기에 제시된 글자수 이상이어야 합니다.';
 $string['configminpasswordlower'] = '비밀번호에 최소 여기에 제시된 수만큼의 소문자가 들어 있어야 합니다.';
@@ -670,7 +669,6 @@ $string['mediapluginyoutube'] = '유튜브 연결 활성화';
 $string['messaging'] = '내부 메시지 발송 가능';
 $string['messagingallowemailoverride'] = '통지 이메일 덮어쓰기';
 $string['messagingdeletereadnotificationsdelay'] = '읽은 통지 삭제';
-$string['messaginghidereadnotifications'] = '읽은 통지 감추기';
 $string['minpassworddigits'] = '숫자';
 $string['minpasswordlength'] = '암호의 최소 길이';
 $string['minpasswordlower'] = '소문자';
@@ -682,7 +680,6 @@ $string['mnetrestore_extusers_admin'] = '<strong>주의:</strong> 본 백업 파
 $string['mnetrestore_extusers_mismatch'] = '<strong>참고:</strong> 이 백업파일은 현재와는 다른 무들 설정을 기반으로 작성되었고 복구에 실패할 지도 모르는 무들네트웍의 원격 사용자 계정 정보가 들어 있습니다. 만일 이것이 현재의 무들 설정을 기반으로 작성되었다고 확신하거나, 필요한 무들네트웍 설정이 완벽하다고 믿는다면, 복구를 시도할 수도 있을 것입니다.';
 $string['mnetrestore_extusers_noadmin'] = '<strong>주의:</strong> 본 백업 파일은 다른 곳의 무들에서 작성되었으며, 원격 무들네트웍 사용자 계정이 포함되어 있습니다. 당신은 이러한 유형의 복원 처리를 할 권한이 없습니다. 사이트 관려자에게 문의하거나, 사용자 정보 (모듈, 파일 등)을 제외하고 강좌를 복원하십시오.';
 $string['mnetrestore_extusers_switchuserauth'] = '원격( {$a->mnethosturl} )무들네트웍의 사용자 {$a->username} 를 본 사이트의 인증된 사용자 {$a->auth} 로 전환';
-$string['mobile'] = '모바일';
 $string['modchooserdefault'] = '활동 선택기 기본';
 $string['modeditdefaults'] = '활동 설정의 기본 값';
 $string['modsettings'] = '활동 관리';

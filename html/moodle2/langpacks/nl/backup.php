@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -232,8 +232,8 @@ $string['previousstage'] = 'Vorige';
 $string['privacy:metadata:backup_controllers'] = 'De lijst van backup-operaties';
 $string['privacy:metadata:backup_controllers:itemid'] = 'De ID van de cursus';
 $string['privacy:metadata:backup_controllers:operation'] = 'De operatie die uitgevoerd werd, bijvoorbeeld terugzetten.';
-$string['privacy:metadata:backup_controllers:timecreated'] = 'De datum waarop de actie gemaakt werd.';
-$string['privacy:metadata:backup_controllers:timemodified'] = 'De datum waarop de actie werd gewijzigd.';
+$string['privacy:metadata:backup_controllers:timecreated'] = 'De datum waarop de actie gemaakt werd';
+$string['privacy:metadata:backup_controllers:timemodified'] = 'De datum waarop de actie werd gewijzigd';
 $string['privacy:metadata:backup_controllers:type'] = 'Het type van het item waaraan gewerkt werd, bijvoorbeeld activiteit';
 $string['privacy:metadata:backup:detailsofarchive'] = 'Dit archief kan gebruikersgegevens bevatten die gerelateerd zijn aan een cursus, zoals cijfers, gebruikersaanmeldingen en activiteitsgegevens.';
 $string['privacy:metadata:backup:externalpurpose'] = 'Het doel van dit archief is om informatie te bewaren die gerelateerd is aan een cursus en die later kan teruggezet worden.';
@@ -241,6 +241,7 @@ $string['qcategory2coursefallback'] = 'De vragencategorie "{$a->name}" die oorsp
 $string['qcategorycannotberestored'] = 'De vragencategorie "{$a->name}" kan tijdens het terugzetten niet gemaakt worden';
 $string['question2coursefallback'] = 'De vragencategorie "{$a->name}" die oorspronkelijk op systeem/cursus categorie context in het back-up bestand zat, zal in de cursus context gemaakt worden bij het terugzetten;';
 $string['questionegorycannotberestored'] = 'De vragen "{$a->name}" kunnen niet gemaakt worden tijdens het terugzetten.';
+$string['recyclebin_desc'] = 'Deze instellingen worden ook toegepast op de prullenbak';
 $string['replacerestoredefaults'] = 'Herstel standaardinstellingen wanneer er teruggezet wordt in een andere cursus waarbij inhoud verwijderd wordt';
 $string['restoreactivity'] = 'Activiteit terugzetten';
 $string['restorecourse'] = 'Cursus terugzetten';
@@ -330,6 +331,6 @@ $string['timetaken'] = 'Gebruikte tijd';
 $string['title'] = 'Titel';
 $string['totalcategorysearchresults'] = 'Totaal aantal categorieën: {$a}';
 $string['totalcoursesearchresults'] = 'Totaal aantal cursussen: {$a}';
-$string['undefinedrolemapping'] = 'Rolkoppeling ongedefinieerd voor: \'{$a}\' archetype';
+$string['undefinedrolemapping'] = 'Rolkoppeling ongedefinieerd voor: \'{$a}\' archetype.';
 $string['unnamedsection'] = 'Sectie zonder naam';
 $string['userinfo'] = 'Gebruikersinfo';

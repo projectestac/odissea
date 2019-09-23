@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cohort', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,7 @@ $string['eventcohortmemberremoved'] = 'Usuario eliminado de una cohorte';
 $string['eventcohortupdated'] = 'Cohorte actualizada';
 $string['external'] = 'Cohorte externa';
 $string['idnumber'] = 'ID de la cohorte';
+$string['invalidtheme'] = 'El tema de la cohorte no existe';
 $string['memberscount'] = 'Tamaño de la cohorte';
 $string['name'] = 'Nombre';
 $string['namecolumnmissing'] = 'Existe algún problema con el formato del fichero CSV. Por favor comprueba que incluye el nombre de las columnas. Para añadirle usuarios a una cohorte, vaya a \'Subir usuarios\' en la Administración del sitio.';

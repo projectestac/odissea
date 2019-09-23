@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,7 +107,7 @@ $string['courseid'] = 'Ursprungligt ID';
 $string['coursesettings'] = 'Inställningar för kurs';
 $string['coursetitle'] = 'Titel';
 $string['currentstage1'] = 'Inledande inställningar';
-$string['currentstage16'] = 'Komplett';
+$string['currentstage16'] = 'Genomförd';
 $string['currentstage2'] = 'Inställningar för schema';
 $string['currentstage4'] = 'Bekräftelse och förnyad kontroll';
 $string['currentstage8'] = 'Utför säkerhetskopiering';
@@ -152,7 +152,7 @@ $string['importbackupstage4action'] = 'Utför import';
 $string['importbackupstage8action'] = 'Fortsätt';
 $string['importcurrentstage0'] = 'Val av kurser';
 $string['importcurrentstage1'] = 'Inledande inställningar';
-$string['importcurrentstage16'] = 'Komplett';
+$string['importcurrentstage16'] = 'Genomförd';
 $string['importcurrentstage2'] = 'Inställningar för schema';
 $string['importcurrentstage4'] = 'Bekräftelse och förnyad kontroll';
 $string['importcurrentstage8'] = 'Utför import';
@@ -160,7 +160,7 @@ $string['importfile'] = 'Importera en säkerhetskopierad fil';
 $string['importgeneralmaxresults'] = 'Maximum antal av kurser som visas vid import';
 $string['importgeneralmaxresults_desc'] = 'Detta styr antalet kurser som visas under det första steget i importprocessen';
 $string['importgeneralsettings'] = 'Generella standardinställningar för Import';
-$string['importsuccess'] = 'Importen är komplett. Klicka för att återvända till kursen.';
+$string['importsuccess'] = 'Importen är genomförd. Klicka för att återvända till kursen.';
 $string['includeactivities'] = 'Ta med:';
 $string['includeditems'] = 'Medtagna komponenter:';
 $string['includefilereferences'] = 'Filreferenser till externt innehåll';
@@ -209,7 +209,7 @@ $string['restorestage32'] = 'Process';
 $string['restorestage32action'] = 'Fortsätt';
 $string['restorestage4'] = 'Inställningar';
 $string['restorestage4action'] = 'Nästa';
-$string['restorestage64'] = 'Komplett';
+$string['restorestage64'] = 'Genomförd';
 $string['restorestage64action'] = 'Fortsätt';
 $string['restorestage8'] = 'Schema';
 $string['restorestage8action'] = 'Nästa';

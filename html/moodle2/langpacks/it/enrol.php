@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -131,8 +131,8 @@ $string['privacy:metadata:user_enrolments:status'] = 'Stato dell\'iscrizione al 
 $string['privacy:metadata:user_enrolments:tableexplanation'] = 'Il plugin di iscrizione memorizza gli utenti iscritti al corso';
 $string['privacy:metadata:user_enrolments:timecreated'] = 'Orario di creazione dell\'iscrizione dell\'utente.';
 $string['privacy:metadata:user_enrolments:timeend'] = 'Orario di fine dell\'iscrizione dell\'utente.';
-$string['privacy:metadata:user_enrolments:timemodified'] = 'Data e ora di modifica dell\'iscrizione dell\'utente.';
-$string['privacy:metadata:user_enrolments:timestart'] = 'Data e ora d\'inizio dell\'iscrizione dell\'utente.';
+$string['privacy:metadata:user_enrolments:timemodified'] = 'Data e ora di modifica dell\'iscrizione dell\'utente';
+$string['privacy:metadata:user_enrolments:timestart'] = 'Data e ora d\'inizio dell\'iscrizione dell\'utente';
 $string['privacy:metadata:user_enrolments:userid'] = 'ID dell\'utente';
 $string['proceedtocourse'] = 'Vai al contenuto del corso';
 $string['recovergrades'] = 'Recupera, ove possibile, i voti precedenti dell\'utente';

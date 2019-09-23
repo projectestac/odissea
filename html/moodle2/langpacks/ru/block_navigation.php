@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_navigation', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['courseactivities'] = 'категорий, курсов, разделов и элементов курсов';
+$string['courseactivities'] = 'Категории, курсы и элементы курсов';
 $string['courses'] = 'категорий и курсов';
 $string['coursestructures'] = 'категорий, курсов и разделов курсов';
 $string['enabledockdesc'] = 'Разрешить пользователям перемещать этот блок в док';

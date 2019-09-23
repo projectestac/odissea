@@ -309,7 +309,7 @@ class provider implements
      * @param callable $export The function to export the dataset, receives the last value from $splitkey and the dataset.
      * @return void
      */
-    protected static function recordset_loop_and_export(\moodle_recordset $recordset, $splitkey, $initial,
+    protected static function recordset_loop_and_export(moodle_recordset $recordset, $splitkey, $initial,
             callable $reducer, callable $export) {
 
         $data = $initial;

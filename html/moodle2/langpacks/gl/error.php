@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['agedigitalconsentmapinvalidcountry'] = '«{$a}» non é un valor válid
 $string['agedigitalconsentmapinvaliddefault'] = 'Falta o valor predeterminado (*).';
 $string['agelocationverificationdisabled'] = 'A verificación da localización e da idade está desactivada';
 $string['alreadyloggedin'] = 'Xa está nunha sesión como {$a}, cómpre que saia antes de iniciar sesión como un usuario diferente.';
-$string['authnotexisting'] = 'O complemento de autorización non existe';
+$string['authnotexisting'] = 'O engadido de autorización non existe';
 $string['backupcontainexternal'] = 'Esta copia de seguranza contén servidores de redes externas a Moodle que non están configurados localmente';
 $string['backuptablefail'] = 'As táboas da copia de seguranza NON se poden estabelecer correctamente!';
 $string['blockcannotconfig'] = 'Este bloque non admite configuración global';
@@ -114,7 +114,7 @@ $string['cannotinsertrate'] = 'Non foi posíbel inserir unha nova puntuación ({
 $string['cannotinsertrecord'] = 'Non foi posíbel inserir un novo ID de rexistro {$a}';
 $string['cannotmailconfirm'] = 'Produciuse un erro ao enviar o correo de confirmación de cambio de contrasinal';
 $string['cannotmanualctrack'] = 'A actividade non fornece un seguimento manual completo';
-$string['cannotmapfield'] = 'Detectouse unha colisión de asignación - dous mapas de campos para o mesmo elemento de cualificación {$a}';
+$string['cannotmapfield'] = 'Detectouse unha colisión de asignación - dúas asignacións de campos para o mesmo elemento de cualificación {$a}';
 $string['cannotmarktopic'] = 'Non foi posíbel marcar ese tema para este curso';
 $string['cannotmigratedatacomments'] = 'Non é posíbel migrar os comentarios do módulo de datos';
 $string['cannotmodulename'] = 'Non é posíbel obter o nome do módulo na navegación actual';
@@ -385,7 +385,6 @@ $string['logfilenotavailable'] = 'Rexistros non dispoñíbeis';
 $string['loginasnoenrol'] = 'Non pode empregar subscribir ou dar de baixa cando está en curso unha sesión "Entrar como"';
 $string['loginasonecourse'] = 'Non pode entrar neste curso.<br /> Debe terminar a sesión "Entrar como" antes de entrar a calquera outro curso.';
 $string['maxareabytes'] = 'O ficheiro é maior que o espazo restante nesta área.';
-$string['maxbytes'] = 'O ficheiro é maior que o tamaño máximo permitido.';
 $string['maxbytesfile'] = 'O ficheiro {$a->file} é grande de máis. O tamaño máximo que pode enviar é {$a->size}.';
 $string['messagingdisable'] = 'A mensaxería está desactivada neste sitio';
 $string['mimetexisnotexist'] = 'O seu sistema non está configurado para executar mimeTeX. Necesita descargar o executábel axeitado para a súa plataforma PHP_OS de <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, ou obter o código fonte en C de <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, compilalo e poñer o executábel dentro do directorio moodle/filter/tex/.';

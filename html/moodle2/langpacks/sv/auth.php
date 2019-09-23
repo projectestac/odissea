@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,7 @@ $string['auth_updateremote_ldap'] = '<p><b>OBS!</b> Om Du uppdaterar externa LDA
 $string['auth_user_create'] = 'Aktivera';
 $string['auth_user_creation'] = 'Nya (anonyma) användare kan utnyttja en extern källa för autenticering och skapa användarkonton som bekräftas med e-post. Om Du aktiverar detta får Du inte glömma att också konfigurera de modulspecifika valmöjligheterna som användare ska kunna skapa.';
 $string['auth_usernameexists'] = 'Det valda användarnamnet finns redan. Du måste välja ett annat.';
+$string['auth_usernotexist'] = 'Det går inte att uppdatera en icke-existerande användare: {$a}';
 $string['auto_add_remote_users'] = 'Lägg till fjärranvändare automatiskt';
 $string['changepassword'] = 'URL   till sida för att ändra lösenord';
 $string['changepasswordhelp'] = 'Här kan Du specificera en plats där Dina användare kan återställa eller ändra sina användarnamn/lösenord om de har glömt det. Detta kommer att visas för användarna som en knapp på sidan för inloggning och på deras användarsidor. Om Du lämnar detta tomt kommer inte knappen att visas.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradingform_rubric', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,8 +67,8 @@ $string['privacy:metadata:levelid'] = 'ルーブリックで獲得するレベ�
 $string['privacy:metadata:remark'] = '評価されるルーブリッククライテリアに関する所見です。';
 $string['regrademessage1'] = 'あなたはすでに評定に使用されているルーブリックを変更しようとしています。既存の評定をレビューする必要がある場合、指定してください。あなたがこの設定を有効にした場合、再評定されるまでルーブリックは学生から隠されます。';
 $string['regrademessage5'] = 'あなたはすでに評定に使用されているルーブリックに関する重大な変更を保存しようとしています。評定表の評点は変更されませんが、評定項目が再評定されるまでルーブリックは学生から隠されます。';
-$string['regradeoption0'] = '再評定をマークしない';
-$string['regradeoption1'] = '再評定をマークする';
+$string['regradeoption0'] = '再評定対象としてマークしない';
+$string['regradeoption1'] = '再評定対象としてマークする';
 $string['restoredfromdraft'] = '注意: このユーザの前回の受験に関する評点が適切に保存されなかったため、下書きの評点がリストアされました。あなたがこれらの変更をキャンセルしたい場合、下の「キャンセル」ボタンを使用してください。';
 $string['rubric'] = 'ルーブリック';
 $string['rubricmapping'] = '評定マッピングルールの評点';

@@ -35,8 +35,8 @@ Feature: Manage policies
     And "Save as draft" "button" should not exist
     And I press "Save"
     Then the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version | Agreements |
-      | Policy1 Site policy, All users | Draft         | v1      | N/A        |
+      | Name                                        | Policy status | Version | Agreements |
+      | Policy1 Site policy, All users, Compulsory  | Draft         | v1      | N/A        |
     And I log out
 
   Scenario: Create new policy and save as active
@@ -51,8 +51,8 @@ Feature: Manage policies
       | Active      | 1              |
     And I press "Save"
     Then the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version | Agreements  |
-      | Policy1 Site policy, All users | Active        | v1      | 0 of 4 (0%) |
+      | Name                                        | Policy status | Version | Agreements  |
+      | Policy1 Site policy, All users, Compulsory  | Active        | v1      | 0 of 4 (0%) |
     And I log out
 
   Scenario: Edit active policy and save as minor change
@@ -73,8 +73,8 @@ Feature: Manage policies
     And I set the field "Minor change" to "1"
     And I press "Save"
     Then the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy1 Site policy, All users | Active        | v1 amended | 1 of 4 (25%) |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy1 Site policy, All users, Compulsory  | Active        | v1 amended | 1 of 4 (25%) |
     And I log out
 
   Scenario: Edit active policy and save as draft
@@ -90,9 +90,9 @@ Feature: Manage policies
     And I set the field "Version" to "v2"
     And I press "Save as draft"
     Then the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy1 Site policy, All users | Active        | v1         | 1 of 4 (25%) |
-      | Policy1 Site policy, All users | Draft         | v2         | N/A          |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy1 Site policy, All users, Compulsory  | Active        | v1         | 1 of 4 (25%) |
+      | Policy1 Site policy, All users, Compulsory  | Draft         | v2         | N/A          |
     And I log out
 
   Scenario: Edit active policy and save as new active version
@@ -109,16 +109,16 @@ Feature: Manage policies
     And I set the field "Version" to "v2"
     And I press "Save"
     Then the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy2 Site policy, All users | Active        | v2         | 0 of 4 (0%) |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy2 Site policy, All users, Compulsory  | Active        | v2         | 0 of 4 (0%) |
     And I should not see "Policy1"
     And I should not see "v1"
     And I click on "View previous versions" "link" in the "Policy2" "table_row"
     And I should see "Policy2 previous versions"
     And I should not see "v2"
     Then the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy1 Site policy, All users | Inactive      | v1         | 1 of 4 (25%) |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy1 Site policy, All users, Compulsory  | Inactive      | v1         | 1 of 4 (25%) |
     And I log out
 
   Scenario: Edit draft policy and save as draft
@@ -136,8 +136,8 @@ Feature: Manage policies
     And "Save as draft" "button" should not exist
     And I press "Save"
     Then the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy1 Site policy, All users | Draft         | v2         | N/A          |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy1 Site policy, All users, Compulsory  | Draft         | v2         | N/A          |
     And I should not see "v1"
     And "View previous versions" "link" should not exist
     And I log out
@@ -153,8 +153,8 @@ Feature: Manage policies
     And I set the field "Active" to "1"
     And I press "Save"
     Then the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy1 Site policy, All users | Active        | v2         | 0 of 4 (0%)  |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy1 Site policy, All users, Compulsory  | Active        | v2         | 0 of 4 (0%)  |
     And I should not see "v1"
     And "View previous versions" "link" should not exist
     And I log out
@@ -169,8 +169,8 @@ Feature: Manage policies
     Then I should see "All users will be required to agree to this new policy version to be able to use the site."
     And I press "Continue"
     And the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy1 Site policy, All users | Active        | v1         | 0 of 4 (0%)  |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy1 Site policy, All users, Compulsory  | Active        | v1         | 0 of 4 (0%)  |
     And "View previous versions" "link" should not exist
     And I log out
 
@@ -187,8 +187,8 @@ Feature: Manage policies
     Then I should see "You are about to inactivate policy"
     And I press "Continue"
     And the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy1 Site policy, All users | Inactive      | v1         | 1 of 4 (25%) |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy1 Site policy, All users, Compulsory  | Inactive      | v1         | 1 of 4 (25%) |
     And I click on "Create a new draft" "link" in the "Policy1" "table_row"
     And I set the field "Version" to "v2"
     And I set the field "Name" to "Policy2"
@@ -200,15 +200,15 @@ Feature: Manage policies
     And "Save as draft" "button" should not exist
     And I press "Save"
     And the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy2 Site policy, All users | Draft         | v2         | N/A          |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy2 Site policy, All users, Compulsory  | Draft         | v2         | N/A          |
     And I should not see "v1"
     And I should not see "Policy1"
     And I click on "View previous versions" "link" in the "Policy2" "table_row"
     And I should see "Policy2 previous versions"
     And the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy1 Site policy, All users | Inactive      | v1         | 1 of 4 (25%) |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy1 Site policy, All users, Compulsory  | Inactive      | v1         | 1 of 4 (25%) |
     And I should not see "v2"
     And I log out
 
@@ -229,15 +229,15 @@ Feature: Manage policies
     And I set the field "Active" to "1"
     And I press "Save"
     And the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy2 Site policy, All users | Active        | v2         | 0 of 4 (0%)  |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy2 Site policy, All users, Compulsory  | Active        | v2         | 0 of 4 (0%)  |
     And I should not see "v1"
     And I should not see "Policy1"
     And I click on "View previous versions" "link" in the "Policy2" "table_row"
     And I should see "Policy2 previous versions"
     And the following should exist in the "tool-policy-managedocs-wrapper" table:
-      | Name                           | Policy status | Version    | Agreements   |
-      | Policy1 Site policy, All users | Inactive      | v1         | 1 of 4 (25%) |
+      | Name                                        | Policy status | Version    | Agreements   |
+      | Policy1 Site policy, All users, Compulsory  | Inactive      | v1         | 1 of 4 (25%) |
     And I should not see "v2"
     And I log out
 

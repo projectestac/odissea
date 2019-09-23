@@ -1124,8 +1124,9 @@ class mod_forum_privacy_provider_testcase extends \core_privacy\tests\provider_t
         }
 
         // All tags should have been deleted.
-        foreach (array_keys($postsinforum) as $postid) {
-            $this->assertCount(0, \core_tag_tag::get_item_tags('mod_forum', 'forum_posts', $postid));
+        $posttags = \core_tag_tag::get_items_tags('mod_forum', 'forum_posts', array_keys($postsinforum));
+        foreach ($posttags as $tags) {
+            $this->assertEmpty($tags);
         }
 
         // Check the other forum too. It should remain intact.
@@ -1170,8 +1171,9 @@ class mod_forum_privacy_provider_testcase extends \core_privacy\tests\provider_t
         }
 
         // All tags should remain.
-        foreach (array_keys($postsinforum) as $postid) {
-            $this->assertNotEmpty(\core_tag_tag::get_item_tags('mod_forum', 'forum_posts', $postid));
+        $posttags = \core_tag_tag::get_items_tags('mod_forum', 'forum_posts', array_keys($postsinforum));
+        foreach ($posttags as $tags) {
+            $this->assertNotEmpty($tags);
         }
     }
 
@@ -1381,10 +1383,13 @@ class mod_forum_privacy_provider_testcase extends \core_privacy\tests\provider_t
         // 5 users * 2 forums * 1 file in each forum
         // Original total: 10
         // One post with file removed.
-        $this->assertCount(0, $DB->get_records_select('files', "itemid {$postinsql}", $postinparams));
+        $componentsql = "component = 'mod_forum' AND ";
+        $this->assertCount(0, $DB->get_records_select('files',
+            "{$componentsql} itemid {$postinsql}", $postinparams));
 
         // Files for the other posts should remain.
-        $this->assertCount(18, $DB->get_records_select('files', "filename <> '.' AND itemid {$otherpostinsql}", $otherpostinparams));
+        $this->assertCount(18, $DB->get_records_select('files',
+            "{$componentsql} filename <> '.' AND itemid {$otherpostinsql}", $otherpostinparams));
     }
 
     /**
@@ -1589,11 +1594,14 @@ class mod_forum_privacy_provider_testcase extends \core_privacy\tests\provider_t
         // 5 users * 2 forums * 1 file in each forum
         // Original total: 10
         // One post with file removed.
-        $this->assertCount(0, $DB->get_records_select('files', "itemid {$postinsql}", $postinparams));
+        $componentsql = "component = 'mod_forum' AND ";
+        $this->assertCount(0, $DB->get_records_select('files',
+            "{$componentsql} itemid {$postinsql}", $postinparams));
 
         // Files for the other posts should remain.
         $this->assertCount(18,
-                $DB->get_records_select('files', "filename <> '.' AND itemid {$otherpostinsql}", $otherpostinparams));
+                $DB->get_records_select('files',
+                    "{$componentsql} filename <> '.' AND itemid {$otherpostinsql}", $otherpostinparams));
     }
 
     /**

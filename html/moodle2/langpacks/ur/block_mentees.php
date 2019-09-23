@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'ur', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_mentees', language 'ur', branch 'MOODLE_36_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configtitle'] = 'بلاک کا عنوان';
-$string['leaveblanktohide'] = 'عنوان چھپانے کیلیے خالی چھوڑ دیں';
 $string['newmenteesblock'] = 'نیا مینٹیس کا بلاک';
 $string['pluginname'] = 'مینٹیس';

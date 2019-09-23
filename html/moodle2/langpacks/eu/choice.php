@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choice', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['choiceclose'] = 'Noiz arte baimendu erantzunak';
 $string['choicecloseson'] = 'Kontsultaren itxiera: {$a}';
 $string['choice:deleteresponses'] = 'Aldatu eta ezabatu erantzunak';
 $string['choice:downloadresponses'] = 'Jaitsi erantzunak';
-$string['choicefull'] = 'Kontsulta hau beteta dago eta ez dago erantzun posible gehiagorik';
+$string['choicefull'] = 'Hautatu duzun aukeretakoren bat beteta dago jada. Zure erantzuna ez da gorde. Mesedez aukeratu ezazu berriz ere.';
 $string['choicename'] = 'Kontsultaren izena';
 $string['choiceopen'] = 'Baimendu erantzunak data honetatik aurrera:';
 $string['choiceoptions'] = 'Kontsultaren aukerak';
@@ -66,7 +66,7 @@ $string['eventanswersubmitted'] = 'Kontsulta egin da';
 $string['eventanswerupdated'] = 'Kontsulta eguneratu da';
 $string['eventreportdownloaded'] = 'Kontsultaren txostena jaitsi da';
 $string['eventreportviewed'] = 'Kontsultaren txostena ikusi da';
-$string['expired'] = 'Sentitzen dugu, jarduera hau {$a}(e)an itxi zen eta dagoeneko ez dago eskuragarri.';
+$string['expired'] = 'Jarduera hau {$a}(e)n itxi zen.';
 $string['full'] = '(Beteta)';
 $string['havetologin'] = 'Saioa hasi behar duzu erantzuna bidali ahal izateko.';
 $string['includeinactive'] = 'Sartu kontua etenda duten edo aktibo ez dauden erabiltzaileen erantzunak';
@@ -76,11 +76,11 @@ $string['indicator:socialbreadth'] = 'Gaitasun soziala kontsultetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Kontsulta motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['limit'] = 'Muga';
 $string['limitanswers'] = 'Onar daitezkeen erantzunen kopurua mugatu';
-$string['limitanswers_help'] = 'Kontsultaren aukera posible bakoitza zenbat partaidek aukeratu ahal duen mugatzen du ezarpen honek.
+$string['limitanswers_help'] = 'Aukera honek aukera posible bakoitza zenbat partaidek aukeratu ahal duen mugatzea ahalbidetzen dizu. Muga iristerakoan inork gehiagok ezingo du aukera hori hautatu.
 
-Gaitutakoan, muga jartzeko aukera ematen digu. Mugara iritsita, ezin du beste inork aukera hori egin. Muga zero (0) bada, inork ezin du aukera hori egin.
+Kontuan izan jarduera talde-moduan erabiltzen baduzu muga talde bakoitzarentzat izango dela. Esaterako, muga 5 bada talde bakoitzeko 5 kidek hautatu ahalko dute. 3 talde badaude, hoenk esan nahi du 5 x 3 = 15 partaidek hautatu halako dute aukera hori.
 
-Desaktibatuta badago, edozein aukera egin dezakete nahi beste partaidek.';
+Muga desgaituta badago, aukera bakoitza edozein partaide kopuruk hautatu ahalko dute.';
 $string['limitno'] = 'Muga {no}';
 $string['modulename'] = 'Kontsulta';
 $string['modulename_help'] = 'Kontsulta jarduerak irakasleari galdera bat egitea eta erantzuteko zenbait aukera eskaintzea ahalbidetzen dio.
@@ -100,7 +100,7 @@ $string['noguestchoose'] = 'Sentitzen dugu, bisitariek ezin diete inkestei erant
 $string['noresultsviewable'] = 'Emaitzak ezin dira orain ikusi';
 $string['notanswered'] = 'Oraindik erantzun gabe';
 $string['notenrolledchoose'] = 'Sentitzen dugu, baina matrikulatutako erabiltzaileek baino ezin diote kontsultari erantzun.';
-$string['notopenyet'] = 'Sentitzen dugu, baina jarduera hau ez dago erabiltzeko moduan {$a} arte.';
+$string['notopenyet'] = 'Jarduera hau ez dago erabiltzeko moduan {$a} arte.';
 $string['numberofuser'] = 'Erantzun-kopurua';
 $string['numberofuserinpercentage'] = 'Erantzunen portzentajea';
 $string['openafterclose'] = 'Ezarri duzun hasiera-data itxiera-data baino beranduagokoa da.';
@@ -113,8 +113,8 @@ $string['pluginname'] = 'Kontsulta';
 $string['previewonly'] = 'Hau jarduera honetan eskuragarri dauden aukeren aurrebista besterik ez da. Ezingo duzu zure erantzuna bidali {$a}-(e)ra arte.';
 $string['privacy'] = 'Emaitzen pribatutasuna';
 $string['privacy:metadata:choice_answers'] = 'Emandako kontsulta-jardueran erabiltzaileak aukeratutako erantzunen inguruko informazioa';
-$string['privacy:metadata:choice_answers:choiceid'] = 'Erabiltzailea erantzuten ari den kontsulta-jardueraren IDa';
-$string['privacy:metadata:choice_answers:optionid'] = 'Erabiltzaileak aukeratutako aukeraren IDa';
+$string['privacy:metadata:choice_answers:choiceid'] = 'Kontsulta-jardueraren IDa';
+$string['privacy:metadata:choice_answers:optionid'] = 'Erabiltzaileak aukeratutako aukeraren IDa.';
 $string['privacy:metadata:choice_answers:timemodified'] = 'Erabiltzaileak kontsulta aldatu zueneko unea';
 $string['privacy:metadata:choice_answers:userid'] = 'Kontsulta-jarduera hau erantzuten ari den erabiltzailearen IDa';
 $string['publish'] = 'Emaitzak argitaratu';
@@ -122,6 +122,11 @@ $string['publishafteranswer'] = 'Erakutsi emaitzak ikasleari erantzun ondoren';
 $string['publishafterclose'] = 'Erakutsi emaitzak ikasleari bakarrik kontsulta itxi ondoren.';
 $string['publishalways'] = 'Beti erakutsi emaitzak ikasleari';
 $string['publishanonymous'] = 'Emaitzak anonimoki argitaratu. Ez erakutsi ikasleen izenak.';
+$string['publishinfoanonafter'] = 'Zuk erantzun ondoren erantzun anonimoak publikatuko dira.';
+$string['publishinfoanonclose'] = 'Jarduera itxi ondoren erantzun anonimoak publikatuko dira.';
+$string['publishinfofullafter'] = 'Zuk erantzun ondoren, emaitza osoak publikatuko dira, guztion erantzunak erakutsiz.';
+$string['publishinfofullclose'] = 'Jarduera itxi ondoren, emaitza osoak publikatuko dira, guztion erantzunak erakutsiz.';
+$string['publishinfonever'] = 'Zuk erantzun ondoren Jarduera honetako emaitzak ez dira publikatuko.';
 $string['publishnames'] = 'Emaitza osoak argitaratu, izenak eta egindako aukerak erakutsiz.';
 $string['publishnot'] = 'Ez argitaratu emaitzak ikasleei';
 $string['removemychoice'] = 'Ezabatu nire aukera';
@@ -135,7 +140,7 @@ $string['search:activity'] = 'Kontsulta - jardueraren informazioa';
 $string['showpreview'] = 'Erakutsi aurrebista';
 $string['showpreview_help'] = 'Baimendu ikasleek aukeren aurrebista ikustea bidalketak egiteko epea zabalik egon aurretik.';
 $string['showunanswered'] = 'Erakutsi erantzun gabekoen zutabea';
-$string['skipresultgraph'] = 'Ez egin kasu emaitzen grafikoari';
+$string['skipresultgraph'] = 'Utzi alde batera emaitzen grafikoa';
 $string['spaceleft'] = 'espazio erabilgarria';
 $string['spacesleft'] = 'espazio erabilgarriak';
 $string['taken'] = 'Hartuta';

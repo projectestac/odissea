@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['allowresets'] = 'Permettre les réinitialisations';
 $string['allowresets_help'] = 'Ce réglage détermine si le champ réinitialiser est accepté ou non.';
 $string['cachedef_helper'] = 'Cache de l\'assistant';
 $string['cannotdeletecoursenotexist'] = 'Impossible de supprimer un cours qui n\'existe pas';
+$string['cannotforcelang'] = 'Pas d\'autorisation pour imposer la langue dans ce cours.';
 $string['cannotgenerateshortnameupdatemode'] = 'Impossible de générer un nom abrégé lorsque la modification est autorisée';
 $string['cannotreadbackupfile'] = 'Impossible de lire le fichier de sauvegarde';
 $string['cannotrenamecoursenotexist'] = 'Impossible de renommer un cours qui n\'existe pas';
@@ -107,7 +108,7 @@ $string['reset_help'] = 'Détermine s\'il faut réinitialiser le cours après sa
 $string['restoreafterimport'] = 'Restaurer après importation';
 $string['result'] = 'Résultat';
 $string['rowpreviewnum'] = 'Rangées à prévisualiser';
-$string['rowpreviewnum_help'] = 'Le nombre de rangées du fichier CSV à prévisualiser sur la page suivante. Cette option a pour but de limiter la taille de la page.';
+$string['rowpreviewnum_help'] = 'Le nombre de rangées du fichier CSV à prévisualiser sur la page suivante. Cette option a pour but de limiter la taille de la page suivante.';
 $string['shortnametemplate'] = 'Modèle pour génération des noms abrégés';
 $string['shortnametemplate_help'] = 'Le nom abrégé du cours est affiché dans la navigation. Vous pouvez indiquer ici un modèle pour ces noms abrégés avec des variables (%f = nom complet, %i = identifiant) ou saisir une valeur initiale qui sera incrémentée.';
 $string['templatefile'] = 'Fichier de sauvegarde de cours modèle';

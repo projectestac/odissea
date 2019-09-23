@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_menu', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'profilefield_menu', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   profilefield_menu
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Dropdown-Menü';
-$string['privacy:metadata:profilefield_menu:data'] = 'Nutzerdaten im Drop-down-Feld';
-$string['privacy:metadata:profilefield_menu:dataformat'] = 'Format der gespeicherten Nutzerdaten im Drop-down-Feld';
+$string['privacy:metadata:profilefield_menu:data'] = 'Nutzerdaten im Dropdown-Feld';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'Format der gespeicherten Nutzerdaten im Dropdown-Feld';
 $string['privacy:metadata:profilefield_menu:fieldid'] = 'ID des Profilfelds';
 $string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Zusätzliche Nutzerinformationen werden hier gespeichert';
-$string['privacy:metadata:profilefield_menu:userid'] = 'ID des Nutzers dessen Daten im Dropdown-Menü-Plugin gespeichert werden';
+$string['privacy:metadata:profilefield_menu:userid'] = 'ID der Person, deren Daten im Dropdown-Menü-Plugin gespeichert werden';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,7 +88,7 @@ $string['choosefilefromuserbackup'] = 'Área privada de cópias de segurança do
 $string['choosefilefromuserbackup_help'] = 'Os ficheiros de cópia de segurança com a opção "Tornar informação dos utilizadores anónima" ativada são guardados neste local.';
 $string['configgeneralactivities'] = 'Se ativar esta opção, as atividades serão incluídas nas cópias de segurança.';
 $string['configgeneralanonymize'] = 'Se ativar esta opção, toda a informação dos utilizadores será tornada anónima.';
-$string['configgeneralbadges'] = 'Se ativar esta opção, as medalhas serão  incluídas na cópia de segurança.';
+$string['configgeneralbadges'] = 'Se ativar esta opção, as medalhas serão incluídas na cópia de segurança.';
 $string['configgeneralblocks'] = 'Se ativar esta opção, os blocos serão incluídos nas cópias de segurança.';
 $string['configgeneralcalendarevents'] = 'Define como predefinição a inclusão dos eventos de calendário na cópia de segurança.';
 $string['configgeneralcomments'] = 'Se ativar esta opção, os comentários serão incluídos nas cópias de segurança.';
@@ -97,7 +97,7 @@ $string['configgeneralfilters'] = 'Se ativar esta opção, os filtros serão inc
 $string['configgeneralgroups'] = 'Se ativar esta opção, os grupos e agrupamentos serão incluídos nas cópia de segurança.';
 $string['configgeneralhistories'] = 'Se ativar esta opção, o histórico dos utilizadores será incluído nas cópias de segurança.';
 $string['configgenerallogs'] = 'Se ativar esta opção, os registos de atividade (logs) serão incluídos nas cópias de segurança.';
-$string['configgeneralquestionbank'] = 'Se ativar esta opção, a base de dados de perguntas será incluída nas cópias de segurança por predefinição. ATENÇÃO: desativar esta configuração irá desativar a cópia de segurança das atividades que usam a base de dados de perguntas, como por exemplo o Teste.';
+$string['configgeneralquestionbank'] = 'Se ativar esta opção, a base de dados de perguntas será incluída nas cópias de segurança por predefinição. <strong>Atenção</strong>: Desativar esta configuração irá desativar a cópia de segurança das atividades que usam a base de dados de perguntas, como por exemplo o Teste.';
 $string['configgeneralroleassignments'] = 'Se ativar esta opção, as atribuições de papéis serão incluídas nas cópias de segurança.';
 $string['configgeneralusers'] = 'Se ativar esta opção, a informação dos utilizadores será incluída nas cópias de segurança.';
 $string['configgeneraluserscompletion'] = 'Se ativar esta opção, a informação sobre a conclusão da disciplina pelos utilizadores será incluída nas cópias de segurança.';
@@ -240,6 +240,7 @@ $string['qcategory2coursefallback'] = 'A categoria de perguntas "{$a->name}", or
 $string['qcategorycannotberestored'] = 'A categoria de perguntas "{$a->name}" não pode ser criada através do restauro';
 $string['question2coursefallback'] = 'A categoria de perguntas "{$a->name}", originalmente no contexto da categoria sistema/disciplina no ficheiro da cópia de segurança, vai ser criado no contexto da disciplina aquando do restauro';
 $string['questionegorycannotberestored'] = 'As perguntas "{$a->name}" não podem ser criadas por restauro';
+$string['recyclebin_desc'] = 'Esstas configurações também serão aplicadas à reciclagem';
 $string['replacerestoredefaults'] = 'Repor predefinições quando restaurar noutra disciplina apagando o conteúdo';
 $string['restoreactivity'] = 'Restaurar atividade';
 $string['restorecourse'] = 'Restaurar disciplina';
@@ -290,7 +291,7 @@ $string['rootsettingenrolments_always'] = 'Sim, sempre';
 $string['rootsettingenrolments_never'] = 'Não, restaurar os utilizadores como inscrições manuais';
 $string['rootsettingenrolments_withusers'] = 'Sim, mas apenas se os utilizadores estão incluídos';
 $string['rootsettingfilters'] = 'Incluir filtros';
-$string['rootsettinggradehistories'] = 'Incluir histórico de notas';
+$string['rootsettinggradehistories'] = 'Incluir histórico das notas';
 $string['rootsettinggroups'] = 'Incluir grupos e agrupamentos';
 $string['rootsettingimscc1'] = 'Converter para IMS Common Cartridge 1.0';
 $string['rootsettingimscc11'] = 'Converter para Common Cartridge 1.1';

@@ -187,6 +187,7 @@ class com_wiris_quizzes_service_ServiceRouter {
 		$mimes->set("quizzes", "application/xml");
 		$mimes->set("grammar", "text/plain");
 		$mimes->set("wirislauncher", "application/json");
+		$mimes->set("mathml2accessible", "text/plain");
 		return $mimes;
 	}
 	public function getRouter() {
@@ -196,6 +197,7 @@ class com_wiris_quizzes_service_ServiceRouter {
 		$router->set("quizzes", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL) . "/rest");
 		$router->set("grammar", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL) . "/grammar");
 		$router->set("wirislauncher", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$WIRISLAUNCHER_URL));
+		$router->set("mathml2accessible", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$EDITOR_URL) . "/mathml2accessible");
 		return $router;
 	}
 	static $router = null;

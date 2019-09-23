@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_essay', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Tipus de fitxers acceptats:';
+$string['acceptedfiletypes_help'] = 'Els tipus de fitxers acceptats es poden restringir introduint una llista d\'extensions de fitxers. Si el camp es deixa buit, tots els tipus de fitxer estaran permesos.';
 $string['allowattachments'] = 'Permet adjuncions';
 $string['attachmentsoptional'] = 'Les adjuncions són opcionals';
 $string['attachmentsrequired'] = 'Adjuncions requerides';

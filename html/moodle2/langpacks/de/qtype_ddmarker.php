@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,11 +41,21 @@ $string['dropbackground'] = 'Hintergrundbild, auf das die Markierungen gezogen w
 $string['dropzone'] = 'Dropzone {$a}';
 $string['dropzoneheader'] = 'Dropzonen';
 $string['dropzones'] = 'Dropzonen';
-$string['dropzones_help'] = 'Die Ablegebereiche werden definiert, indem Sie Koordinaten eingeben. Die Vorschau wird ständig aktualisiert während Sie tippen, so dass Sie die Ablegebereiche gegebenenfalls auch durch systematisches Ausprobieren definieren können.
+$string['dropzones_help'] = 'Drop-Zonen können durch Koordinaten definiert oder in die obige Vorschau gezogen werden.
 
-* Kreis: mittelpunkt_x, mittelpunkt_y; radius<br>Beispiel: <code>80, 100; 50</code>
-* Polygon: x1, y1; x2, y2; ...; xn, yn<br>Beispiel: <code>20, 60; 100, 60; 20, 100</code>
-* Rechteck: links, oben; breite, höhe<br>Beispiel: <code>20, 60; 80, 40</code>';
+Wenn Sie zunächst eine Form auswählen (Kreis, Rechteck oder Polygon), wird oben links in der Vorschau eine neue Drop-Zone-Form hinzugefügt. Es kann nützlich sein, den Bereich Markierungen zu minimieren, damit Sie die Vorschau sehen können, während Sie die Drop-Zonen bearbeiten.
+
+Das Bearbeiten einer Form beginnt mit einem Klick auf die Form in der Vorschau, um die Bearbeitungsziehpunkte anzuzeigen. Sie können die Form verschieben oder die Abmessungen der Form mit den Stützpunkten anpassen.
+
+Nur für Polygone: wenn Sie die Taste Crtl (bzw. Cmd auf einem Mac) gedrückt halten, während Sie auf einen Stützpunkt klicken, wird dem Polygon ein neuer Stützpunkt hinzugefügt. Halten Sie ein Polygon so einfach wie möglich, ohne dass sich Linien kreuzen.
+
+Die drei Formen verwenden die Koordinaten auf folgende Weise:
+
+* Kreis: centre_x, centre_y; Radius<br />z.B.: <code>80, 100; 50 </code>
+* Rechteck: top_left_x, top_left_y; Breite, Höhe <br />z.B.: <code>20, 60; 80, 40 </code>
+* Polygon: x1, y1; x2, y2; ... xn, yn <br />z.B.: <code>20, 60; 100, 60; 20, 100</code>
+
+Wenn Sie einen Markierungstext wählen, wird dieser Text der Form in der Vorschau hinzugefügt.';
 $string['followingarewrong'] = 'Die folgenden Markierungen wurden in den falschen Bereich gesetzt: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Die folgenden Markierungen wurden falsch gesetzt: {$a}. Hervorgehobene Markierungen werden nun an den richtigen Platzierungen gezeigt. <br />Klicken Sie auf die Markierung, um den erlaubten Bereich zu sehen.';
 $string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für die "Drag-and-drop"-Fläche wählen.';

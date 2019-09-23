@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_multianswer', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,13 +30,14 @@ $string['confirmsave'] = 'Bevestig en bewaar dan {$a}';
 $string['correctanswer'] = 'Juist antwoord';
 $string['correctanswerandfeedback'] = 'Juist antwoord en feedback';
 $string['decodeverifyquestiontext'] = 'Decodeer en verifieer de tekst van de vraag';
+$string['invalidmultianswerquestion'] = 'Ongeldige ingebedde antwoorden (Cloze) vraag ({$a}).';
 $string['layout'] = 'Opmaak';
 $string['layouthorizontal'] = 'Horizontale rij keuzerondjes';
 $string['layoutmultiple_horizontal'] = 'Horizontale rij met selectievakjes';
 $string['layoutmultiple_vertical'] = 'Verticale kolom met selectievakjes';
 $string['layoutselectinline'] = 'Rolmenu in lijn met de tekst';
 $string['layoutundefined'] = 'Ongedefiniëerde opmaak';
-$string['layoutvertical'] = 'Vertikale kolom keuzerondjes';
+$string['layoutvertical'] = 'Verticale kolom keuzerondjes';
 $string['nooptionsforsubquestion'] = 'Kan opties voor vraagdeel {$a->sub} (question->id={$a->id}) niet vinden';
 $string['noquestions'] = 'De gatentekst-vraag "<strong>{$a}</strong>" bevat geen vraag';
 $string['pleaseananswerallparts'] = 'Beantwoord alle delen van de vraag.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_calculated', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -110,12 +110,12 @@ $string['oneanswertrueansweroutsidelimits'] = 'Gutxienez erantzun zuzen bat dago
 $string['param'] = 'Parametroa {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Edozein erantzun erdi zuzenetarako';
 $string['pluginname'] = 'Kalkulatutakoa';
-$string['pluginnameadding'] = 'Kalkulatutako galdera gehitzen';
-$string['pluginnameediting'] = 'Kalkulatutako galdera editatzen';
-$string['pluginname_help'] = 'Kalkulatutako galderek zenbakizko galderak komodinak giltzen artean erabilita sortzea ahalbidetzen dute, gero balioekin ordezkatuak izaten direlarik galdetegia egitean. Adibidez, "Zein da {I} luzera eta {w} zabalera duen laukiaren azalera?" galderaren erantzun zuzena "{I}*{w}" formula izango da (non * karaktereak biderkaketa esan nahi duen)';
-$string['pluginnamesummary'] = 'Kalkulatutako galderak zenbakizkoak bezalakoak dira baina erabilitako zenbakiak ausaz aukeratzen dira galdetegia egitean sortutako multzo batetik.';
+$string['pluginnameadding'] = 'Galdera kalkulatua gehitzen';
+$string['pluginnameediting'] = 'Galdera kalkulatua editatzen';
+$string['pluginname_help'] = 'Galdera kalkulatuek zenbakizko galderak komodinak giltzen artean erabilita sortzea ahalbidetzen dute, gero balioekin ordezkatuak izaten direlarik galdetegia egitean. Adibidez, "Zein da {I} luzera eta {w} zabalera duen laukiaren azalera?" galderaren erantzun zuzena "{I}*{w}" formula izango da (non * karaktereak biderkaketa esan nahi duen)';
+$string['pluginnamesummary'] = 'Galdera kalkulatuak zenbakizkoak bezalakoak dira baina erabilitako zenbakiak ausaz aukeratzen dira galdetegia egitean sortutako multzo batetik.';
 $string['possiblehdr'] = 'Galderaren testuan baino ez dauden  komodin posibleak';
-$string['privacy:metadata'] = 'Kalkulatutakoa galdera-mota pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Galdera kalkulatua galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['questiondatasets'] = 'Galderaren datu-multzoa';
 $string['questiondatasets_help'] = 'Galdera bakoitzean erabiliko diren komodinetarako datu-multzoa';
 $string['questionstoredname'] = 'Gordetako galderaren izena';
@@ -123,16 +123,16 @@ $string['replacewithrandom'] = 'Ordezkatu ausazko balio batekin';
 $string['reuseifpossible'] = 'berrerabili lehengo balioa eskuragarri badago';
 $string['setno'] = 'Multzoa {$a}';
 $string['setwildcardvalues'] = 'Komodin(ar)en balioen ezarpena(k)';
-$string['sharedwildcard'] = 'Partekatutako komodina<strong>{$a}</strong>';
+$string['sharedwildcard'] = 'Partekatutako komodina {<strong>{$a}</strong>}';
 $string['sharedwildcardname'] = 'Partekatutako komodina';
 $string['sharedwildcards'] = 'Partekatutako komodinak';
 $string['showitems'] = 'Erakutsi';
 $string['significantfigures'] = '{$a}-(r)ekin';
-$string['significantfiguresformat'] = 'Zenbaki esanguratsuak';
-$string['synchronize'] = 'Sinkronizatu galdetegiko beste galderekin elkarbanatutako datu-multzoetako datuak';
+$string['significantfiguresformat'] = 'zifra esanguratsuak';
+$string['synchronize'] = 'Sinkronizatu elkarbanatutako datu-multzoetako datuak galdetegiko beste galderekin';
 $string['synchronizeno'] = 'Ez sinkronizatu';
 $string['synchronizeyes'] = 'Sinkronizatu';
-$string['synchronizeyesdisplay'] = 'Sinkronizatu eta erakutsi galderen izenen aurrizki gisa elkarbanatutako datu-multzoetako izenak';
+$string['synchronizeyesdisplay'] = 'Sinkronizatu elkarbanatutako datu-multzoetako izenak eta erakutsi galderen izenen aurrizki gisa';
 $string['tolerance'] = 'Tolerantzia ±';
 $string['tolerancetype'] = 'Mota';
 $string['trueanswerinsidelimits'] = 'Erantzun zuzena : {$a->correct}. Benetako balioaren mugen barruan: {$a->true}';

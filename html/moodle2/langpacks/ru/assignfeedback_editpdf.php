@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,8 @@ $string['commentindex'] = 'Индекс комментариев';
 $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Невозможно сохранить страницу {$a}';
 $string['currentstamp'] = 'Штамп';
+$string['default'] = 'Включено по умолчанию';
+$string['default_help'] = 'При включенном параметре способ отзыва будет включен по умолчанию для всех новых заданий.';
 $string['deleteannotation'] = 'Удалить аннотацию';
 $string['deletecomment'] = 'Удалить комментарий';
 $string['deletefeedback'] = 'Удалить PDF-файл с отзывом';
@@ -65,12 +67,13 @@ $string['jsrequired'] = 'Для аннотирования PDF требуетс�
 $string['launcheditor'] = 'Запуск редактора PDF...';
 $string['line'] = 'Линия';
 $string['loadingeditor'] = 'Загрузка редактора PDF';
-$string['navigatenext'] = 'Следующая страница';
-$string['navigateprevious'] = 'Предыдущая страница';
+$string['navigatenext'] = 'Следующая страница (Alt/Shift-Alt/Ctrl-Option + {$a})';
+$string['navigateprevious'] = 'Предыдущая страница (Alt/Shift-Alt/Ctrl-Option + {$a})';
 $string['output'] = 'Выход:';
 $string['oval'] = 'Овал';
 $string['pagenumber'] = 'Страница  {$a}';
 $string['pagexofy'] = 'Страница {$a->page} из {$a->total}';
+$string['partialwarning'] = 'Некоторые из представленных файлов могут быть доступны только путем прямого скачивания.';
 $string['pathtogspathdesc'] = 'Обратите внимание, что для работы плагина «Аннотирование PDF» требуется указать путь в файлам Ghostscript на странице {$a}.';
 $string['pen'] = 'Ручка';
 $string['pluginname'] = 'Аннотирование PDF';

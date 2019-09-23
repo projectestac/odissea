@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_essay', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = '許可されるファイルタイプ';
+$string['acceptedfiletypes_help'] = '許可されるファイルタイプは一連のファイル拡張子を入力して制限することができます。フィールドが空白の場合、すべてのファイルタイプが許可されます。';
 $string['allowattachments'] = '添付を許可する';
 $string['attachmentsoptional'] = '添付は任意です';
 $string['attachmentsrequired'] = '添付必須';
@@ -40,6 +42,7 @@ $string['mustattach'] = '「インラインテキストなし」が選択され�
 $string['mustrequire'] = '「インラインテキストなし」が選択された場合、または解答が任意の場合、あなたは少なくとも1つの添付を要求する必要があります。';
 $string['mustrequirefewer'] = 'あなたが許可している以上の添付を要求することはできません。';
 $string['nlines'] = '{$a} 行';
+$string['nonexistentfiletypes'] = '次のファイルタイプは認識されませんでした: {$a}';
 $string['pluginname'] = '作文問題';
 $string['pluginnameadding'] = '作文問題の追加';
 $string['pluginnameediting'] = '作文問題の編集';

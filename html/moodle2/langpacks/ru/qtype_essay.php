@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_essay', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes_help'] = 'Принимаемые типы файлов могут быть ограничены путем ввода списка их расширений. При пустом поле разрешены все типы файлов.';
 $string['allowattachments'] = 'Разрешить вложения';
 $string['attachmentsoptional'] = 'Вложения не обязательны';
 $string['attachmentsrequired'] = 'Вложения обязательны';

@@ -421,6 +421,13 @@ class grade_item extends grade_object {
             }
         }
 
+        // Delete all the historical files.
+        // We only support feedback files for modules atm.
+        if ($this->is_external_item()) {
+            $fs = new file_storage();
+            $fs->delete_area_files($this->get_context()->id, GRADE_FILE_COMPONENT, GRADE_HISTORY_FEEDBACK_FILEAREA);
+        }
+
         return true;
     }
 
@@ -1864,9 +1871,19 @@ class grade_item extends grade_object {
      * @param int $dategraded A timestamp of when the student's work was graded
      * @param int $datesubmitted A timestamp of when the student's work was submitted
      * @param grade_grade $grade A grade object, useful for bulk upgrades
+     * @param array $feedbackfiles An array identifying the location of files we want to copy to the gradebook feedback area.
+     *        Example -
+     *        [
+     *            'contextid' => 1,
+     *            'component' => 'mod_xyz',
+     *            'filearea' => 'mod_xyz_feedback',
+     *            'itemid' => 2
+     *        ];
      * @return bool success
      */
-    public function update_raw_grade($userid, $rawgrade=false, $source=NULL, $feedback=false, $feedbackformat=FORMAT_MOODLE, $usermodified=null, $dategraded=null, $datesubmitted=null, $grade=null) {
+    public function update_raw_grade($userid, $rawgrade = false, $source = null, $feedback = false,
+            $feedbackformat = FORMAT_MOODLE, $usermodified = null, $dategraded = null, $datesubmitted=null,
+            $grade = null, array $feedbackfiles = []) {
         global $USER;
 
         $result = true;
@@ -1929,6 +1946,7 @@ class grade_item extends grade_object {
         if ($feedback !== false and !$grade->is_overridden()) {
             $grade->feedback       = $feedback;
             $grade->feedbackformat = $feedbackformat;
+            $grade->feedbackfiles  = $feedbackfiles;
         }
 
         // update final grade if possible
@@ -2468,5 +2486,34 @@ class grade_item extends grade_object {
         if (!empty($CFG->enableavailability) && class_exists('\availability_grade\callbacks')) {
             \availability_grade\callbacks::grade_item_changed($this->courseid);
         }
+    }
+
+    /**
+     * Helper function to get the accurate context for this grade column.
+     *
+     * @return context
+     */
+    public function get_context() {
+        if ($this->itemtype == 'mod') {
+            $modinfo = get_fast_modinfo($this->courseid);
+            // Sometimes the course module cache is out of date and needs to be rebuilt.
+            if (!isset($modinfo->instances[$this->itemmodule][$this->iteminstance])) {
+                rebuild_course_cache($this->courseid, true);
+                $modinfo = get_fast_modinfo($this->courseid);
+            }
+            // Even with a rebuilt cache the module does not exist. This means the
+            // database is in an invalid state - we will log an error and return
+            // the course context but the calling code should be updated.
+            if (!isset($modinfo->instances[$this->itemmodule][$this->iteminstance])) {
+                mtrace(get_string('moduleinstancedoesnotexist', 'error'));
+                $context = \context_course::instance($this->courseid);
+            } else {
+                $cm = $modinfo->instances[$this->itemmodule][$this->iteminstance];
+                $context = \context_module::instance($cm->id);
+            }
+        } else {
+            $context = \context_course::instance($this->courseid);
+        }
+        return $context;
     }
 }

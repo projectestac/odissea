@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_gapselect', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,8 +29,8 @@ $string['addmorechoiceblanks'] = 'さらに {no} 個の空白の選択肢を追�
 $string['answer'] = '答え';
 $string['choices'] = '選択肢';
 $string['choicex'] = '選択肢 {no}';
-$string['combinedcontrolnamegapselect'] = 'ドロップダウンボックス';
-$string['combinedcontrolnamegapselectplural'] = 'ドロップダウンボックス';
+$string['combinedcontrolnamegapselect'] = 'ドロップダウンメニュー';
+$string['combinedcontrolnamegapselectplural'] = 'ドロップダウンメニュー';
 $string['correctansweris'] = '正解: {$a}';
 $string['errorblankchoice'] = '選択肢を確認してください: 選択肢 {$a} は空白です。';
 $string['errormissingchoice'] = '問題テキストを確認してください: {$a} は選択肢に見つかりませんでした! プレースホルダでの使用には存在する選択肢番号のみ許可されます。';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_random', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,12 @@ $string['pluginnameediting'] = 'Редактирование случайног�
 $string['pluginname_help'] = 'Случайный вопрос — это не вопрос как таковой, это способ добавления случайного вопроса из указанной категории в элемент курса.';
 $string['privacy:metadata'] = 'Плагин «Тип вопроса Случайный» не хранит никаких персональных данных';
 $string['randomqname'] = 'Случайный ({$a})';
+$string['randomqnametags'] = 'Случайный ({$a->category}, теги: {$a->tags})';
 $string['randomqplusname'] = 'Случайный ({$a} и подкатегории)';
+$string['randomqplusnamecoursecattags'] = 'Случайный (Любая категория внутри категории курса{$a->category}, теги: {$a->tags})';
+$string['randomqplusnamecoursetags'] = 'Случайный (Любая категория в этом курсе, теги: {$a->tags})';
+$string['randomqplusnamemoduletags'] = 'Случайный (Любая категория этого теста, теги: {$a->tags})';
+$string['randomqplusnamesystemtags'] = 'Случайный (Любая категория уровня системы (сайта), теги: {$a->tags})';
+$string['randomqplusnametags'] = 'Случайный ({$a->category} и подкатегории, теги: {$a->tags})';
 $string['selectedby'] = '{$a->questionname} выбран из {$a->randomname}';
 $string['selectmanualquestions'] = 'Для случайных вопросов могут использоваться вручную оцениваемые вопросы';

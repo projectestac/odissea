@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_completion_progress', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   block_completion_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['config_icons'] = 'Afficher les icônes dans la barre';
 $string['config_longbars'] = 'Mode de présentation des longues barres';
 $string['config_orderby'] = 'Mode de tri des éléments';
 $string['config_orderby_course_order'] = 'Ordre d\'apparition dans le cours';
-$string['config_orderby_due_time'] = 'Date spécifée dans "{$a}"';
+$string['config_orderby_due_time'] = 'Date spécifiée dans « {$a} »';
 $string['config_percentage'] = 'Montrer le pourcentage de progression aux étudiants';
 $string['config_scroll'] = 'Barre de défilement';
 $string['config_selectactivities'] = 'Sélectionner les activités';
@@ -62,18 +62,18 @@ $string['how_activitiesincluded_works_help'] = '<p>Par défaut, toutes les activ
 $string['how_group_works'] = 'Comment fonctionne la restriction de visibilité à un groupe';
 $string['how_group_works_help'] = '<p>Si vous sélectionnez un groupe, seuls les membres de celui-ci pourront voir le bloc de progression.</p>';
 $string['how_longbars_works'] = 'Affichage des longues barres';
-$string['how_longbars_works_help'] = '<p>Lorsque la barre dépasse une taille définie, elle peut être affichée selon les trois modes suivants&nbsp;:</p><ul><li>En comprimant les éléments pour ne conserver qu\'une seule barre horizontale</li><li>En ajoutant une barre de défilement pour accéder aux éléments qui dépassent le nombre défini</li><li>En distribuant les éléments sur plusieurs lignes</li></ul><p>Attention, si vous choisissez le mode multiligne, l\'indicateur "MAINTENANT" ne sera pas affiché.</p>';
+$string['how_longbars_works_help'] = '<p>Lorsque la barre dépasse une taille définie, elle peut être affichée selon les trois modes suivants :</p><ul><li>En comprimant les éléments pour ne conserver qu\'une seule barre horizontale</li><li>En ajoutant une barre de défilement pour accéder aux éléments qui dépassent le nombre défini</li><li>En distribuant les éléments sur plusieurs lignes</li></ul><p>Attention, si vous choisissez le mode multiligne, l\'indicateur « MAINTENANT » ne sera pas affiché.</p>';
 $string['how_ordering_works'] = 'Comment fonctionne le tri';
-$string['how_ordering_works_help'] = '<p>Il y a deux manières d\'ordonner les activités/ressources dans la barre de progression.</p><ul><li><em>Date spécifée dans "Achèvement attendu le"</em> (default)<br />Les dates d\'achèvement prévues sont utilisées pour ordonner les activités dans la barre. Les activités/ressources pour lesquelles aucune date n\'a été spécifiée sont présentées selon leur ordre d\'apparition dans le cours et l\'indicateur "MAINTENANT" est affiché.</li><li><em>Ordre dans le cours</em><br />Les activités/ressources sont présentées selon leur ordre d\'apparition dans le cours. Les dates d\'achèvement sont alors ignorées et l\'indicateur "MAINTENANT" ne peut pas être utilisé.</li></ul>';
+$string['how_ordering_works_help'] = '<p>Il y a deux manières d\'ordonner les activités/ressources dans la barre de progression.</p><ul><li><em>Date spécifée dans « Achèvement attendu le »</em> (default)<br />Les dates d\'achèvement prévues sont utilisées pour ordonner les activités dans la barre. Les activités/ressources pour lesquelles aucune date n\'a été spécifiée sont présentées selon leur ordre d\'apparition dans le cours et l\'indicateur « MAINTENANT » est affiché.</li><li><em>Ordre dans le cours</em><br />Les activités/ressources sont présentées selon leur ordre d\'apparition dans le cours. Les dates d\'achèvement sont alors ignorées et l\'indicateur « MAINTENANT » ne peut pas être utilisé.</li></ul>';
 $string['how_selectactivities_works'] = 'Comment fonctionne la sélection d\'activités';
-$string['how_selectactivities_works_help'] = '<p>Pour sélectionner manuellement les activités à inclure, le paramètre "Activités à prendre en compte" doit être réglé sur "Sélection manuelle" .</p><p>Seules les activités ayant des conditions d\'achèvement peuvent être incluses.</p><p>Maintenez la touche CTRL enfoncée pour sélectionner plusieurs activités.</p>';
+$string['how_selectactivities_works_help'] = '<p>Pour sélectionner manuellement les activités à inclure, le paramètre « Activités à prendre en compte » doit être réglé sur « Sélection manuelle » .</p><p>Seules les activités ayant des conditions d\'achèvement peuvent être incluses.</p><p>Maintenez la touche CTRL enfoncée pour sélectionner plusieurs activités.</p>';
 $string['lastonline'] = 'Dernière visite';
 $string['mouse_over_prompt'] = 'Passer la souris sur l\'élément ou cliquer sur la barre pour obtenir des informations.';
 $string['no_activities_config_message'] = 'Aucune activité/ressource n\'a de conditions d\'achèvement ou aucune activité n\'a été sélectionnée. Commencez par définir des conditions d\'achèvement sur des activités avant de configurer ce bloc.';
 $string['no_activities_message'] = 'Aucune activité ou ressource n\'est surveillée. Configurez le bloc pour mettre en place le suivi dans la barre de progression.';
 $string['no_blocks'] = 'Aucun bloc de progression n\'est défini dans vos cours.';
 $string['no_courses'] = 'Vous n\'êtes inscrit à aucun cours. Seules les barres de progression des cours dans lesquels vous êtes inscrit seront affichées.';
-$string['not_all_expected_set'] = 'Certaines activités n\'ont pas de date "{$a}" définie.';
+$string['not_all_expected_set'] = 'Certaines activités n\'ont pas de date « {$a} » définie.';
 $string['notCompleted_colour'] = '#C71C22';
 $string['notCompleted_colour_descr'] = 'Code couleur utilisé pour les activités non terminées';
 $string['notCompleted_colour_title'] = 'Couleur des activités non terminées';
@@ -97,5 +97,5 @@ $string['why_set_the_title_help'] = '<p>Il peut y avoir plusieurs instances du b
 $string['why_show_precentage'] = 'Pourquoi montrer un pourcentage de progression aux étudiants ?';
 $string['why_show_precentage_help'] = '<p>Il est possible de montrer le pourcentage global de progrès aux étudiants.</p><p>Ce pourcentage représente le nombre d\'activités réalisées divisé par le nombre total d\'activités surveillées.</p><p>Le pourcentage de progression apparaît lorsque le pointeur de la souris survole un élément de la barre.</p>';
 $string['why_use_icons'] = 'Pourquoi utiliser des icônes ?';
-$string['why_use_icons_help'] = '<p>Vous pouvez ajouter les icônes "vu" et "croix" sur la barre de progression afin d\'améliorer la lisibilité pour les daltoniens.</p><p>Cela permet de rendre le bloc plus clair si vous pensez que la signification des couleurs n\'est pas intuitive, pour des raisons culturelles ou personnelles.</p>';
+$string['why_use_icons_help'] = '<p>Vous pouvez ajouter les icônes « vu » et « croix » sur la barre de progression afin d\'améliorer la lisibilité pour les daltoniens.</p><p>Cela permet de rendre le bloc plus clair si vous pensez que la signification des couleurs n\'est pas intuitive, pour des raisons culturelles ou personnelles.</p>';
 $string['wrapafter'] = 'Nombre d\'activités par ligne en mode multiligne';

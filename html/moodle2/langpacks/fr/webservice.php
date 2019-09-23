@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'webservice', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,7 +108,7 @@ $string['functions'] = 'Fonctions';
 $string['generalstructure'] = 'Structure générale';
 $string['information'] = 'Information';
 $string['installexistingserviceshortnameerror'] = 'Un service web avec le nom abrégé « {$a} » existe déjà. Il n\'est pas possible d\'installer ou de mettre à jour un service web avec ce nom abrégé.';
-$string['installserviceshortnameerror'] = 'Erreur de codage : le nom abrégé du service web « {$a} » ne doit comporter que des chiffres, des lettres et les caractères _ (souligné) et - (tiret).';
+$string['installserviceshortnameerror'] = 'Erreur de codage : le nom abrégé du service web « {$a} » ne doit comporter que des caractères alphanumériques (chiffres et lettres) et les caractères _ (souligné), - (tiret) ou point (.).';
 $string['invalidextparam'] = 'Paramètre API externe non valide : {$a}';
 $string['invalidextresponse'] = 'Réponse API externe non valide : {$a}';
 $string['invalidiptoken'] = 'Jeton non valide. Votre IP n\'est pas supportée.';
@@ -144,7 +144,7 @@ $string['postrestparam'] = 'Code PHP pour REST (requête POST)';
 $string['potusers'] = 'Aucun utilisateur autorisé';
 $string['potusersmatching'] = 'Aucun utilisateur autorisé correspondant';
 $string['print'] = 'Tout imprimer';
-$string['privacy:metadata:serviceusers'] = 'Une liste des utilisateurs pouvant utiliser certains services externes';
+$string['privacy:metadata:serviceusers'] = 'Une liste des utilisateurs pouvant utiliser un certain service externe';
 $string['privacy:metadata:serviceusers:iprestriction'] = 'Adresses IP restreinte pour l\'utilisation du service';
 $string['privacy:metadata:serviceusers:timecreated'] = 'La date et l\'heure de création de l\'enregistrement';
 $string['privacy:metadata:serviceusers:userid'] = 'L\'identifiant de l\'utilisateur';
@@ -169,7 +169,7 @@ $string['requiredcapability'] = 'Capacité requise';
 $string['requiredcapability_help'] = 'Si cette option est activée, seuls les utilisateurs ayant la capacité requise peuvent accéder au service.';
 $string['requiredcaps'] = 'Capacités requises';
 $string['resettokenconfirm'] = 'Voulez-vous vraiment réinitialiser la clef de ce service web pour <strong>{$a->user}</strong> sur le service <strong>{$a->service}</strong> ?';
-$string['resettokenconfirmsimple'] = 'Voulez-vous vraiment réinitialiser cette clef ? Tous les liens enregistrés contenant de l\'ancienne clef ne fonctionneront plus.';
+$string['resettokenconfirmsimple'] = 'Voulez-vous vraiment réinitialiser cette clef ? Tous les liens enregistrés contenant l\'ancienne clef ne fonctionneront plus.';
 $string['response'] = 'Réponse';
 $string['restcode'] = 'REST';
 $string['restexception'] = 'REST';
@@ -188,8 +188,8 @@ $string['selectspecificuserdescription'] = 'Ajouter l\'utilisateur web services 
 $string['service'] = 'Service';
 $string['servicehelpexplanation'] = 'Un service est un ensemble de fonction. Il peut être utilisé par tous les utilisateurs ou alors seulement par des utilisateurs spécifiés.';
 $string['servicename'] = 'Nom du service';
-$string['servicenotavailable'] = 'Le service web n\'est pas disponible (il n\'existe pas ou n\'est pas activé)';
-$string['servicerequireslogin'] = 'Le service web n\'est pas disponible (il n\'existe pas ou n\'est pas activé).';
+$string['servicenotavailable'] = 'Le service web n\'est pas disponible (il n\'existe pas ou n\'est pas activé).';
+$string['servicerequireslogin'] = 'Le service web n\'est pas disponible (la session a été terminée ou est échue).';
 $string['servicesbuiltin'] = 'Services prédéfinis';
 $string['servicescustom'] = 'Services personnalisés';
 $string['serviceusers'] = 'Utilisateurs autorisés';
@@ -216,7 +216,7 @@ $string['unknownoptionkey'] = 'Clef d\'option inconnue ({$a})';
 $string['unnamedstringparam'] = 'Un paramètre chaîne de caractère n\'a pas de nom.';
 $string['updateusersettings'] = 'Modifier';
 $string['uploadfiles'] = 'Autoriser le dépôt de fichiers';
-$string['uploadfiles_help'] = 'Si ce réglage est activé, les utilisateurs peuvent déposer des fichiers dans leur zone de fichiers privée ou dans un zone de fichiers brouillons en donnant leur clef de sécurité. Les quotas d\'espace disque seront respectés.';
+$string['uploadfiles_help'] = 'Si ce réglage est activé, les utilisateurs peuvent déposer des fichiers dans leur zone de fichiers personnels ou dans une zone de fichiers brouillons en donnant leur clef de sécurité. Les quotas d\'espace disque seront respectés.';
 $string['userasclients'] = 'Utilisateurs en tant que clients avec jetons';
 $string['userasclientsdescription'] = 'Les étapes suivantes vous aident à configurer le service web Moodle pour des utilisateurs clients. Ils vous aident aussi à configurer la méthode d\'authentification par jeton (clefs de sécurité) recommandée. Dans ce cas, l\'utilisateur obtiendra sa clef de sécurité (jeton) dans sa page des préférences.';
 $string['usermissingcaps'] = 'Capacités manquantes : {$a}';
@@ -236,7 +236,7 @@ $string['webservicetokens'] = 'Jetons de services web';
 $string['wrongusernamepassword'] = 'Nom d\'utilisateur ou mot de passe incorrect';
 $string['wsaccessuserdeleted'] = 'Accès au service web refusé en raison de la suppression du compte : {$a}';
 $string['wsaccessuserexpired'] = 'Accès au service web refusé en raison de l\'échéance du mot de passe : {$a}';
-$string['wsaccessusernologin'] = 'Accès au service web refusé en raison d\'un interdiction de connexion : {$a}';
+$string['wsaccessusernologin'] = 'Accès au service web refusé en raison d\'une interdiction de connexion : {$a}';
 $string['wsaccessusersuspended'] = 'Accès au service web refusé en raison de la suspension du compte : {$a}';
 $string['wsaccessuserunconfirmed'] = 'Accès au service web refusé en raison de la non confirmation du compte : {$a}';
 $string['wsclientdoc'] = 'Documentation client du service web Moodle';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'page', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,5 +65,7 @@ $string['printheading'] = 'Toon paginanaam';
 $string['printheadingexplain'] = 'Paginanaam boven inhoud tonen?';
 $string['printintro'] = 'Toon paginabeschrijving';
 $string['printintroexplain'] = 'Toon paginabeschrijving boven inhoud?';
-$string['privacy:metadata'] = 'De mod_page-plugin bewaart geen persoonlijke gegevens.';
+$string['printlastmodified'] = 'Toon tijdstip laatste wijziging';
+$string['printlastmodifiedexplain'] = 'Toon tijdstip laatste wijziging onder inhoud?';
+$string['privacy:metadata'] = 'De pagina-bron plugin bewaart geen persoonlijke gegevens.';
 $string['search:activity'] = 'Pagina';

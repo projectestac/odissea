@@ -60,6 +60,7 @@ echo $OUTPUT->doctype() ?>
             <?php echo $OUTPUT->main_content(); ?>
         </section>
     </div>
+    <?php echo $OUTPUT->standard_after_main_region_html(); ?>
 </div>
 <footer id="page-footer">
     <div id="page-footer-top">

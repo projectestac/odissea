@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hub', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -172,7 +172,7 @@ $string['registeredmoodleorg'] = 'Moodle ({$a})';
 $string['registeredon'] = 'Le serveur sur lequel votre site est enregistré';
 $string['registeredsites'] = 'Sites enregistrés';
 $string['registereduserdevices'] = 'Nombre d\'utilisateurs avec appareil mobile enregistré ({$a})';
-$string['registermoochtips'] = 'Ennregistrez votre site afin afin de recevoir les alertes de sécurité et pour accéder à Moodle.net, notre plateforme d\'échange de cours.';
+$string['registermoochtips'] = 'L\'enregistrement vous permet de recevoir les alertes de sécurité, d\'activer les notifications push pour l\'app mobile à partir de votre site et de contribuer aux statistiques Moodle de la communauté mondiale.';
 $string['registersite'] = 'Enregistrer sur {$a}';
 $string['registerwith'] = 'S\'enregistrer sur un serveur d\'échanges';
 $string['registrationconfirmed'] = 'Enregistrement du site confirmé';
@@ -206,10 +206,10 @@ $string['shareonhub'] = 'Déposer ce cours sur un serveur d\'échanges';
 $string['sharepublication_help'] = 'Une sauvegarde de ce cours sera disponible sur Moodle.net, qui permettra à d\'autres personnes de le restaurer et de l\'utiliser sur leur propre plateforme.';
 $string['siteadmin'] = 'Administrateur';
 $string['siteadmin_help'] = 'Le nom complet de l\'administrateur du site.';
-$string['sitecommnews'] = 'Informations sur les nouveautés et fonctionnalités de Moodle';
-$string['sitecommnews_help'] = 'Vous avez la possibilité de vous inscrire à notre liste de distribution à faible trafic, comprenant une info-lettre sur les manifestations de la communauté Moodle.';
-$string['sitecommnewsno'] = 'Non, je ne veux pas recevoir de message de la part de Moodle HQ';
-$string['sitecommnewsyes'] = 'Oui, veuillez m\'envoyer les info-lettres régulières de Moodle';
+$string['sitecommnews'] = 'Newsletter Moodle';
+$string['sitecommnews_help'] = 'Vous avez l\'opportunité de vous abonner à notre newsletter Moodle. Vous pouvez vous désabonner quand vous voulez.';
+$string['sitecommnewsno'] = 'Non, je ne veux recevoir aucun message';
+$string['sitecommnewsyes'] = 'Oui, je souhaite recevoir la newsletter Moodle';
 $string['sitecountry'] = 'Pays';
 $string['sitecountry_help'] = 'Le pays où est située votre organisation ou votre institution.';
 $string['sitecreated'] = 'Site créé';
@@ -226,15 +226,15 @@ $string['sitename_help'] = 'Le nom du site tel qu\'il sera affiché dans la list
 $string['sitephone'] = 'Téléphone';
 $string['sitephone_help'] = 'Votre numéro de téléphone ne sera visible que de l\'administrateur du serveur d\'échanges.';
 $string['siteprivacy'] = 'Liste des sites';
-$string['siteprivacy_help'] = 'Vous pouvez décider de faire apparaître votre plateforme dans la  liste des sites enregistré, avec ou sans lien vers votre site.';
+$string['siteprivacy_help'] = 'Vous pouvez décider de faire apparaître votre plateforme dans la liste des sites enregistré, avec ou sans lien vers votre site.';
 $string['siteprivacylinked'] = 'Afficher mon site avec le lien';
 $string['siteprivacynotpublished'] = 'Ne pas afficher mon site';
 $string['siteprivacypublished'] = 'N\'afficher que le nom de mon site';
 $string['siteregconfcomment'] = 'Afin d\'éviter du SPAM sur {$a}, votre site requiert une dernière validation.';
 $string['siteregistrationcontact'] = 'Afficher un formulaire de contact';
 $string['siteregistrationcontact_help'] = 'Si vous l\'autorisez, d\'autres personnes de la communauté Moodle (identifiés par un compte) pourront vous contacter au moyen d\'un formulaire sur le site de la communauté Moodle. Elles ne pourront cependant jamais voire votre adresse de courriel.';
-$string['siteregistrationemail'] = 'Notifications d\'importantes questions techniques et de sécurité.';
-$string['siteregistrationemail_help'] = 'Vous avez la possibilité de vous inscrire à notre liste de distribution à faible trafic de nouveautés importantes (problèmes de sécurité ou nouvelles versions).';
+$string['siteregistrationemail'] = 'Notifications des nouvelles versions de Moodle, des alertes de sécurité et autres informations importantes';
+$string['siteregistrationemail_help'] = 'Vous avez l\'opportunité de vous abonner à notre liste de distribution à faible trafic des nouvelles versions de Moodle, des alertes de sécurité et autres informations importantes. Vous pouvez vous désabonner quand vous voulez.';
 $string['siteregistrationupdated'] = 'Enregistrement du site mis à jour';
 $string['siterelease'] = 'Version de Moodle';
 $string['siterelease_help'] = 'Le numéro de la version de Moodle de ce site.';

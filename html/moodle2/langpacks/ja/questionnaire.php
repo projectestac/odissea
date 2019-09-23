@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'questionnaire', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,10 @@ $string['activityoverview'] = 'あなたには期限のあるアンケートが�
 $string['additionalinfo'] = '補足情報';
 $string['additionalinfo_help'] = 'このアンケートの最初のページの冒頭に表示されるテキストです。（たとえば，内容説明や背景・経緯などのように）';
 $string['addnewquestion'] = '質問 {$a} を追加する';
+$string['addnewsection'] = '新しいセクションの追加';
+$string['addquestion'] = 'アンケート項目の追加';
 $string['addquestions'] = 'アンケート項目の追加';
+$string['addquestiontosection'] = 'セクションにアンケート項目を追加';
 $string['addselqtype'] = '選択した質問タイプの追加';
 $string['alignment'] = 'ボタンの配置';
 $string['alignment_help'] = 'ボタンの配置: 縦 (初期値) or 横';
@@ -38,9 +41,11 @@ $string['all'] = 'すべて';
 $string['alreadyfilled'] = 'あなたはすでにこのアンケート {$a} に回答済みです。';
 $string['andaveragevalues'] = 'と平均値';
 $string['anonymous'] = '匿名';
+$string['answer'] = '回答';
 $string['answergiven'] = 'この回答がされている';
 $string['answernotgiven'] = 'この回答がされていない';
 $string['answerquestions'] = 'アンケートに答える...';
+$string['answers'] = '回答';
 $string['attempted'] = 'このアンケートは回答済みです。';
 $string['attemptstillinprogress'] = '次に保存しています:';
 $string['autonumbering'] = '自動番号設定';
@@ -80,6 +85,7 @@ $string['closedate'] = '終了日';
 $string['closedate_help'] = 'あなたはここにアンケートの回答期限となる日付を指定することができます。チェックボックスをオンにして，希望する日時を選択します。ユーザーは、その日付を過ぎるとアンケートに記入することができません。これが選択されていない場合、アンケートに回答期限はなく，終了することはありません。';
 $string['closeson'] = 'アンケートは {$a} に終了しました。';
 $string['completionsubmit'] = '学生はこれを完了するためには，このアンケートを提出しなければなりません';
+$string['condition'] = '条件';
 $string['confalts'] = '- もしくは - <br />確認ページ';
 $string['configusergraph'] = '「性格検査」用にグラフを表示する';
 $string['configusergraphlong'] = '「性格検査」のグラフを表示するライブラリ<a href="http://www.rgraph.net/">Rgraph</a>を使用する。';
@@ -108,6 +114,7 @@ $string['deletedallresp'] = 'アンケートの回答が削除されました';
 $string['deletedisabled'] = 'この項目は削除できません';
 $string['deletedresp'] = '消去された回答';
 $string['deleteresp'] = 'この回答を消去する';
+$string['deletesection'] = 'このセクションを削除';
 $string['deletingresp'] = '回答を消去してます...';
 $string['dependencies'] = '依存関係';
 $string['dependquestion'] = '上位の質問項目';
@@ -199,6 +206,7 @@ $string['horizontal'] = '横置き';
 $string['id'] = 'ID';
 $string['includechoicecodes'] = '選択コードを含む';
 $string['includechoicetext'] = '選択テキストを含む';
+$string['includeincomplete'] = '未完了の回答を含む';
 $string['incorrectcourseid'] = 'コースIDが不正です';
 $string['incorrectmodule'] = 'コースモジュールIDが不正でした';
 $string['incorrectquestionnaire'] = 'アンケートが不正です';
@@ -258,6 +266,10 @@ $string['notavail'] = 'この質問はまだ利用できません。後でお試
 $string['noteligible'] = 'あなたはこのアンケートに回答できません。';
 $string['notemplatesurveys'] = 'テンプレート型のアンケートはありません。';
 $string['notenoughscaleitems'] = 'あなたは2つの尺度の最小値を入力する必要があります！';
+$string['notificationfull'] = '全ての送信';
+$string['notifications'] = '送信を通知';
+$string['notifications_help'] = '回答が送信された際に"mod/questionnaire:submissionnotification"ケイパビリティを持つロールに通知します';
+$string['notificationsimple'] = '通知のみ';
 $string['notopen'] = 'このアンケートは、{$a} まで開始されません。';
 $string['notrequired'] = '回答の必要はありません';
 $string['notset'] = 'と設定されていない';

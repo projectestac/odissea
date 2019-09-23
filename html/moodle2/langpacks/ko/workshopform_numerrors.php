@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredimensions'] = '추가 {$a} 개 주장을 위한 공백 ';
 $string['configgrade0'] = '주장에 대한 부정적 평가를 기술하는 기본 단어';
 $string['configgrade1'] = '주장에 대한 긍정적 평가를 기술하는 기본 단어';
-$string['dimensioncomment'] = '덧글';
 $string['dimensiondescription'] = '설명';
 $string['dimensiongrade'] = '성적';
 $string['dimensionnumber'] = '주장 {$a} ';
@@ -40,5 +39,4 @@ $string['grade1default'] = '예';
 $string['grademapping'] = '성적 매핑 테이블';
 $string['maperror'] = '가중치 적용한 오류의 수는 다음보다 작거나 같습니다.';
 $string['mapgrade'] = '제출 성적';
-$string['percents'] = '{$a} %';
 $string['pluginname'] = '오류의 갯수';

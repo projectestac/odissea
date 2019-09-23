@@ -102,7 +102,6 @@ class core_tag_external_testcase extends externallib_advanced_testcase {
         // User with editing and manage cap can also change the tag name,
         // make it standard and reset flag.
         assign_capability('moodle/tag:manage', CAP_ALLOW, $roleid, $context->id);
-        $context->mark_dirty();
         $this->assertTrue(has_capability('moodle/tag:manage', $context));
         $result = core_tag_external::update_tags(array($updatetag));
         $result = external_api::clean_returnvalue(core_tag_external::update_tags_returns(), $result);
@@ -164,7 +163,7 @@ class core_tag_external_testcase extends externallib_advanced_testcase {
             core_external::update_inplace_editable('core_tag', 'tagname', $tag->id, 'new tag name');
             $this->fail('Exception expected');
         } catch (moodle_exception $e) {
-            $this->assertEquals('Sorry, but you do not currently have permissions to do that (Manage all tags)',
+            $this->assertEquals('Sorry, but you do not currently have permissions to do that (Manage all tags).',
                     $e->getMessage());
         }
 

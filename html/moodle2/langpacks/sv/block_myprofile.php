@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_myprofile', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,6 @@ $string['display_phone1'] = 'Visa tfn nr 1';
 $string['display_phone2'] = 'Visa tfn nr 2';
 $string['display_picture'] = 'Visa bild';
 $string['display_skype'] = 'Visa Skype';
-$string['display_un'] = 'Visa namn';
 $string['display_yahoo'] = 'Visa Yahoo';
 $string['myprofile:addinstance'] = 'Lägg till blocket Personer som är inloggade just nu';
 $string['myprofile:myaddinstance'] = 'Lägg till blocket Personer som är inloggade just nu på Mitt Moodle';

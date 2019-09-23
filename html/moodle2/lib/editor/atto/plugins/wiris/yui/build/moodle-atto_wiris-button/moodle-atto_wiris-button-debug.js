@@ -42,7 +42,7 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
             return;
         }
 
-        Y.Get.js(M.cfg.wwwroot + '/lib/editor/atto/plugins/wiris/core/core.js?v=' + config.version, function(err) {
+        Y.Get.js(M.cfg.wwwroot + '/lib/editor/atto/plugins/wiris/core.js?v=' + config.version, function(err) {
             if (err) {
                 Y.log('Could not load core.js');
             } else {
@@ -258,7 +258,7 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
             var value = WirisPlugin.Parser.endParse(html);
             value = _convertSafeMathML(value);
             host.textarea.set('value', value);
-        }
+        };
 
         /**
          * Converts all the occurrences of a safeMathml
@@ -303,7 +303,7 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
 
             output += content.substring(end, content.length);
             return output;
-        }
+        };
     },
 
     /**
@@ -354,5 +354,6 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
         WirisPlugin.currentInstance.openNewFormulaEditor();
     }
 });
+
 
 }, '@VERSION@', {"requires": ["moodle-editor_atto-plugin", "get"]});

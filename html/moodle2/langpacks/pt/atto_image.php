@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_image', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,10 +36,10 @@ $string['constrain'] = 'Redimensionamento automático';
 $string['createimage'] = 'Inserir imagem';
 $string['customstyle'] = 'Estilo personalizado';
 $string['enteralt'] = 'Descreva esta imagem caso alguém não consiga vê-la';
-$string['enterurl'] = 'Digitar URL';
+$string['enterurl'] = 'Digite ou cole o URL';
 $string['height'] = 'Altura';
 $string['imageproperties'] = 'Propriedades da imagem';
-$string['pluginname'] = 'Imagem';
+$string['pluginname'] = 'Inserir ou editar imagem';
 $string['presentation'] = 'Descrição não necessária';
 $string['presentationoraltrequired'] = 'As imagens devem ter uma descrição, exceto se estiver marcada a opção \'Descrição não necessária\'.';
 $string['preview'] = 'Pré-visualização';

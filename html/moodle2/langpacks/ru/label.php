@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'label', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,4 +51,5 @@ $string['modulename_help'] = 'Пояснение позволяет на стр�
 $string['modulenameplural'] = 'Пояснения';
 $string['pluginadministration'] = 'Управление Пояснением';
 $string['pluginname'] = 'Пояснение';
+$string['privacy:metadata'] = 'Плагин «Ресурс Пояснение» не хранит никаких персональных данных.';
 $string['search:activity'] = 'Пояснение';

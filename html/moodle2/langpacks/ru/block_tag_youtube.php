@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tag_youtube', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tag_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,10 +29,10 @@ $string['anycategory'] = 'Все категории';
 $string['apierror'] = 'Ключ API пользователя Youtube не установлен. Обратитесь к своему администратору.';
 $string['apikey'] = 'Ключ API';
 $string['apikeyinfo'] = 'Получить <a href="https://developers.google.com/youtube/v3/getting-started">ключ Google API</a> для вашего сайта Moodle.';
-$string['autosvehicles'] = 'Автомобили и трпнспорт';
+$string['autosvehicles'] = 'Автомобили и транспорт';
 $string['category'] = 'Категория';
 $string['comedy'] = 'Комедия';
-$string['configtitle'] = 'Название';
+$string['configtitle'] = 'Название блока Youtube';
 $string['education'] = 'Образование';
 $string['entertainment'] = 'Развлечения';
 $string['filmsanimation'] = 'Фильмы и анимация';

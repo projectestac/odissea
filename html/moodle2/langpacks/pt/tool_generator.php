@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_generator', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,7 +56,7 @@ $string['error_noforuminstances'] = 'A disciplina selecionada não contém inst�
 $string['error_noforumreplies'] = 'A disciplina selecionada não contém respostas do fórum';
 $string['error_nonexistingcourse'] = 'A disciplina especificada não existe';
 $string['error_nopageinstances'] = 'A disciplina selecionada não contém instâncias do módulo Página';
-$string['error_notdebugging'] = 'Não disponível no servidor porque a depuração não está definido para o Programador';
+$string['error_notdebugging'] = 'Não está disponível neste servidor porque a depuração (mensagens de erro) não está definido para o Programador.';
 $string['error_nouserspassword'] = 'Tem de definir $CFG->tool_generator_users_password em \'config.php\' para gerar o plano de teste';
 $string['fullname'] = 'Testar disciplina: {$a->size}';
 $string['maketestcourse'] = 'Criar disciplina de Teste';
@@ -92,21 +92,21 @@ $string['smallfiles'] = 'Ficheiros pequenos';
 $string['targetcourse'] = 'Disciplina alvo de teste';
 $string['testplanexplanation'] = 'Esta ferramenta cria um ficheiro JMeter de plano de teste juntamente com o ficheiro de credenciais do utilizador.
 
-Este plano de teste é concebido para funcionar em conjunto com {$a}, o que facilita a execução do plano de teste num ambiente Moodle em específico, reúne informação sobre os procedimentos e compara os resultados. Por isso, é necessário descarregar e usar o script \'test_runner.sh\' ou acompanhar a instalação e instruções de uso.
+Este plano de teste é projetado para funcionar em conjunto com {$a}, o que facilita a execução do plano de teste num ambiente Moodle específico, reúne informação sobre os procedimentos e compara os resultados. Por isso, é necessário descarregar e usar o script \'test_runner.sh\' ou seguir as instruções de instalação e de uso.
 
 É necessário definir uma senha para os utilizadores da disciplina em \'config.php\' (p. ex. $CFG->tool_generator_users_password = \'moodle\';). Não existe nenhum valor predefinido para esta senha para impedir utilizações não intencionais da ferramenta. É necessário usar a opção de atualização de senhas no caso de os utilizadores da sua disciplina terem outra senha ou caso as senhas tenham sido geradas pelo \'tool_generator\' sem definir um valor $CFG->tool_generator_users_password.
 
-Isto faz parte do \'tool_generator\' e por isso funciona corretamente com as disciplinas geradas pelo gerador de sites e disciplinas. Também pode ser utilizado com qualquer disciplina que contenha, pelo menos:
+Faz parte de \'tool_generator\' e por isso funciona corretamente com as disciplinas criadas pelo gerador de sites e disciplinas. Também pode ser utilizado com qualquer disciplina que contenha, pelo menos:
 
-*Suficientes utilizadores inscritos (depende do tamanho do plano de teste que selecionou) com a senha redefinida para \'moodle\';
+* Número suficiente de utilizadores inscritos (depende do tamanho do plano de teste que selecionou) com a senha redefinida para \'moodle\';
 
-*Uma instância do módulo Página;
+* Uma instância do módulo Página;
 
-*Uma instância do módulo Fórum com, pelo menos, um tópico e uma resposta.
+* Uma instância do módulo Fórum com, pelo menos, um tópico e uma resposta.
 
-Deve considerar a capacidade dos seus servidores durante a execução de grandes planos de teste, pois a quantidade de carga gerada pelo JMeter pode ser especialmente grande. O período de ramp-up foi ajustado de acordo com o número de segmentos (utilizadores) para reduzir este tipo de problemas, mas a carga é ainda é muito grande.
+Deve considerar a capacidade dos seus servidores durante a execução de grandes planos de teste, uma vez que a quantidade de carga gerada pelo JMeter pode ser especialmente grande. O período de ramp-up foi ajustado de acordo com o número de segmentos (utilizadores) para reduzir este tipo de problemas, mas a carga ainda é muito grande.
 
-** Não execute o plano de teste num servidor de produção**. Esta funcionalidade apenas cria ficheiros para o JMeter, o que por si só não causa nenhum perigo, mas **NUNCA** deverá executar este plano de teste num servidor de desenvolvimento.';
+**Não execute o plano de teste num servidor de produção**. Esta funcionalidade apenas cria ficheiros para o JMeter, o que por si só não causa nenhum perigo, mas **NUNCA** deverá executar este plano de teste num servidor de produção.';
 $string['testplansize_0'] = 'XS ({$a->users} utilizadores, {$a->loops})';
 $string['testplansize_1'] = 'S ({$a->users} utilizadores, {$a->loops} loops e {$a->rampup} período de ramp-up)';
 $string['testplansize_2'] = 'M ({$a->users} utilizadores, {$a->loops} loops e {$a->rampup} período de ramp-up)';

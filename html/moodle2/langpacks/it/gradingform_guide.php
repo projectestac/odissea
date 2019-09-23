@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradingform_guide', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcomment'] = 'Aggiungi commento di uso frequente';
 $string['addcriterion'] = 'Aggiungi criterio';
-$string['alwaysshowdefinition'] = 'Visualizza a definizione della valutazione guidata agli studenti';
+$string['alwaysshowdefinition'] = 'La definizione della valutazione guidata è visualizzata dagli studenti';
 $string['backtoediting'] = 'Torna alla modifica';
 $string['clicktocopy'] = 'Click per copiare questo testo nel commento dei criteri';
 $string['clicktoedit'] = 'Click per modificare';
@@ -85,7 +85,7 @@ $string['privacy:metadata:score'] = 'Punteggio del criterio di valutazione.';
 $string['regrademessage1'] = 'Stai per salvare modifiche di una valutazione guidata che è già stata usata per valutare. Devi specificare se le valutazioni già date devono essere contrassegnate come valutazioni da rivedere. Le valutazioni da rivedere non saranno più visualizzabili dagli studenti finché le loro valutazioni non saranno state aggiornate.';
 $string['regrademessage5'] = 'Stai per salvare significative  modifiche di una valutazione guidata che è già stata usata per valutare. la valutazione presente nel registro valutatore non sarà modificata, ma le valutazioni non saranno più visualizzabili dagli studenti finché le loro valutazioni non saranno aggiornate.';
 $string['regradeoption0'] = 'Non contrassegnare da rivedere';
-$string['regradeoption1'] = 'Contrassegna a rivedere';
+$string['regradeoption1'] = 'Contrassegna da rivedere';
 $string['restoredfromdraft'] = 'NOTA: il salvataggio dell\'ultimo tentativo di valutare questo partecipante non è andato a buon fine, sono stati ripristinate le valutazioni in bozza. Se desideri annullare queste modifiche utilizza il pulsante \'Annulla\'.';
 $string['save'] = 'Salva';
 $string['saveguide'] = 'Salva la valutazione guidata e rendila disponibile';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'course', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   course
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aria:courseimage'] = 'Imagem da disciplina';
+$string['aria:coursename'] = 'Nome da disciplina';
+$string['aria:courseshortname'] = 'Nome curto da disciplina';
+$string['aria:favourite'] = 'Disciplina está marcada com estrela';
+$string['favourite'] = 'Disciplina com estrela';
 $string['privacy:completionpath'] = 'Conclusão da disciplina';
+$string['privacy:favouritespath'] = 'Informação da disciplina com estrela';
 $string['privacy:metadata:completionsummary'] = 'A disciplina contém informações do utilizador sobe a conclusão.';
+$string['privacy:metadata:favouritessummary'] = 'A disciplina contém informações relacionadas com a disciplina que está a ser marcada com uma estrela pelo utilizador.';
 $string['privacy:perpage'] = 'Número de disciplinas a mostrar por página.';

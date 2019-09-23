@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_html', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,10 +30,9 @@ $string['configallowadditionalcssclasses'] = '追加CSSクラスを設定でき�
 $string['configclasses'] = '追加CSSクラス';
 $string['configclasses_help'] = 'この設定の目的はHTMLブロックの相互識別補助によるテーマ作成支援にあります。ここで入力されたCSSクラス (スペース区切り) はブロックのデフォルトクラスに付加されます。';
 $string['configcontent'] = 'コンテンツ';
-$string['configtitle'] = 'ブロックタイトル';
+$string['configtitle'] = 'HTMLブロックタイトル';
 $string['html:addinstance'] = '新しいHTMLブロックを追加する';
 $string['html:myaddinstance'] = '新しいHTMLブロックをダッシュボードに追加する';
-$string['leaveblanktohide'] = '空白の場合、タイトルを隠す';
 $string['newhtmlblock'] = '(新しいHTMLブロック)';
 $string['pluginname'] = 'HTML';
 $string['privacy:metadata:block'] = 'HTMLブロックはブロックサブシステム内のデータすべてを保存します。';

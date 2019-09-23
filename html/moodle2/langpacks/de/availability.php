@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,5 +67,5 @@ $string['restrictbygroup'] = 'Voraussetzung für Gruppe/Gruppierung hinzufügen'
 $string['setheading'] = '{$a->number} Liste von {$a->count} Voraussetzung(en)';
 $string['shown_all'] = 'Grau angezeigt, wenn die Bedingungen nicht erfüllt sind';
 $string['shown_individual'] = 'Grau angezeigt, wenn diese Bedingung nicht erfüllt ist';
-$string['show_verb'] = 'Zum Anzeigen klicken';
+$string['show_verb'] = 'Zum ausgegrauten Anzeigen klicken';
 $string['unknowncondition'] = 'Unbekannte Bedingung (gelöschtes Plugin)';

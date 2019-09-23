@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['addplugin'] = 'Voeg een plugin voor opslagruimte toe';
 $string['allowexternallinks'] = 'Externe links toestaan';
 $string['areacategoryintro'] = 'Categorie introductie';
 $string['areacourseintro'] = 'Cursus introductie';
-$string['areacourseoverviewfiles'] = 'Cursus samenvattingsbestanden';
+$string['areacourseoverviewfiles'] = 'Cursusafbeelding';
 $string['areamainfile'] = 'Hoofdbestand';
 $string['arearoot'] = 'Systeem';
 $string['areauserbackup'] = 'Gebruikersback-up';
@@ -51,7 +51,7 @@ $string['back'] = 'Terug';
 $string['backtodraftfiles'] = 'Terug naar beheer kladbestanden';
 $string['cachecleared'] = 'Cache-bestanden zijn verwijderd';
 $string['cacheexpire'] = 'Cache verloopt';
-$string['cannotaccessparentwin'] = 'Als het vorige venster via HTTPS geopend is, krijgen we er geen toegang toe via het window.opener object, dus we kunnen de opslagruimte voor jou niet automatisch verversen. We hebben je sessie al, dus ga terug naar de bestandskiezer en selecteer de opslagruimte opnieuw. Het zou dan moeten werken.';
+$string['cannotaccessparentwin'] = 'Wanneer je https gebruikt, dan kan de opslagruimte niet automatisch ververst worden. Je moet dan terug naar de bestandenkiezer en de opslagruimte opnieuw selecteren.';
 $string['cannotdelete'] = 'Kan dit bestand niet verwijderen';
 $string['cannotdownload'] = 'Kan dit bestand niet downloaden';
 $string['cannotdownloaddir'] = 'Kan deze map niet downloaden';
@@ -113,7 +113,7 @@ $string['entername'] = 'Geef een mapnaam';
 $string['enternewname'] = 'Geef de nieuwe bestandsnaam';
 $string['error'] = 'Onbekende fout!';
 $string['errordoublereference'] = 'Kan bestand niet overschrijven met een snelkoppeling/alias omdat er al een snelkoppeling naar dit bestand bestaat.';
-$string['errornotyourfile'] = 'Je kan geen bestand kiezen dat niet is toegevoegd door jou';
+$string['errornotyourfile'] = 'Je kunt enkel bestanden kiezen die jij hebt toegevoegd.';
 $string['errorpostmaxsize'] = 'Het bestand dat je probeerde te uploaden is groter dan deze server kan verwerken.';
 $string['erroruniquename'] = 'De naam van de opslagruimte moet uniek zijn';
 $string['errorwhilecommunicatingwith'] = 'Fout bij het communiceren met de opslagruimte \'{$a}\'.';

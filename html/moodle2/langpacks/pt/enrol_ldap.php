@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_ldap', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -106,14 +106,14 @@ $string['pluginname'] = 'Inscrições LDAP';
 $string['pluginname_desc'] = '<p>Este módulo de inscrição permite utilizar um servidor LDAP para gerir as inscrições. É necessário que a árvore LDAP possua grupos que representem as disciplinas e que cada um desses grupos/disciplinas tenham elementos que correspondam aos alunos.</p><p>É necessário que as disciplinas estejam definidas como grupos no LDAP, em que cada grupo tem um campo (<strong>member</strong> ou <strong>memberUid</strong>) que identifica univocamente cada utilizador.</p><p>Para poder usar inscrições LDAP os seus utilizadores têm que ter um <strong>idnumber</strong> válido. Os grupos LDAP têm que ter esse <strong>idnumber</strong> com campo de membro para que os utilizadores sejam inscritos na disciplina. Normalmente não surgem problemas se estiver a ser usada autenticação LDAP.</p><p>As inscrições de um utilizador serão atualizadas quando este inicia uma sessão. É possível correr um script que atualize todas as inscrições em simultâneo: <strong>enrol/ldap/cli/sync.php</strong>.</p><p>Este módulo também pode ser configurado para criar novas disciplinas sempre que forem criados novos grupos no LDAP.</p>';
 $string['pluginnotenabled'] = 'O módulo não está ativo!';
 $string['privacy:metadata'] = 'O módulo Inscrições LDAP	não armazena dados pessoais.';
-$string['role_mapping'] = '<p>Para cada papel que quiser mapear do LDAP terá que indicar a lista de contextos onde as disciplinas de cada papel estão localizadas. Separa cada contexto com ";".</p><p>É também necessário especificar o atributo que o servidor LDAP usa para guardar a informação de pertença a um grupo.Normalmente "member" ou "memberUid"</p>';
+$string['role_mapping'] = '<p>Para cada papel, é necessário especificar todos os contextos LDAP onde estão localizados os grupos que representam as disciplinas. Separe os diferentes contextos com um ponto-e-vírgula (;).</p><p>Também é necessário especificar o atributo que o servidor LDAP usa para guatrdar os membros de um grupo. Normalmente é \'member\' ou  "memberUid".</p>';
 $string['role_mapping_attribute'] = 'Atributo do membro LDAP para {$a}';
 $string['role_mapping_context'] = 'Contextos LDAP para {$a}';
 $string['role_mapping_key'] = 'Mapeamento de papéis do LDAP';
 $string['roles'] = 'Mapeamento de papéis';
 $string['server_settings'] = 'Configurações do servidor LDAP';
 $string['synccourserole'] = 'A sincronizar a disciplina "{$a->idnumber}" para o papel "{$a->role_shortname}"';
-$string['syncenrolmentstask'] = 'Sincronizar a tarefa inscrições';
+$string['syncenrolmentstask'] = 'Tarefa de sincronização de inscrições LDAP';
 $string['template'] = 'Opcional: as configurações das disciplinas criadas automaticamente podem ser copiadas a partir de uma disciplina que já existe no Moodle.';
 $string['template_key'] = 'Modelo';
 $string['unassignrole'] = 'A retirar o papel "{$a->role_shortname}" ao utilizador "{$a->user_username}" na disciplina "{$a->course_shortname}" (identificador da disciplina {$a->course_id})';

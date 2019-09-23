@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'user', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['privacy:draftfilespath'] = 'Dateien im Entwurfsstatus';
 $string['privacy:lastaccesspath'] = 'Letzter Kurszugriff';
 $string['privacy:metadata:address'] = 'Adresse des Nutzers';
 $string['privacy:metadata:aim'] = 'AIM-ID des Nutzers';
-$string['privacy:metadata:alternatename'] = 'Alternativer Name des Nutzers';
+$string['privacy:metadata:alternatename'] = 'Pseudonym der Person';
 $string['privacy:metadata:appid'] = 'App-ID, normalerweise etwas wie com.moodle.moodlemobile';
 $string['privacy:metadata:auth'] = 'Authentifizierungsplugin, das für diesen Datensatz genutzt wurde';
 $string['privacy:metadata:autosubscribe'] = 'Voreinstellung, ob der Nutzer automatisch das Forum abonnieren soll, wenn er dort einen Eintrag verfasst.';
@@ -48,7 +48,7 @@ $string['privacy:metadata:deleted'] = 'Kennzeichen, ob der Nutzer gelöscht wurd
 $string['privacy:metadata:department'] = 'Abteilung des Nutzers';
 $string['privacy:metadata:description'] = 'Details zum Nutzer';
 $string['privacy:metadata:devicename'] = 'Endgerätebezeichnung';
-$string['privacy:metadata:devicetablesummary'] = 'Die Tabelle speichert Informationen zum Endgerät des Nutzers, um Push-Nachrichten zu senden';
+$string['privacy:metadata:devicetablesummary'] = 'Die Tabelle speichert Informationen zum mobilen Endgerät, um Push-Mitteilungen zu senden';
 $string['privacy:metadata:email'] = 'E-Mail-Adresse als Kontakt';
 $string['privacy:metadata:emailstop'] = 'Voreinstellung, um den Versand von E-Mails an den Nutzer zu stoppen';
 $string['privacy:metadata:fieldid'] = 'ID für individuelles Nutzerprofilfeld';

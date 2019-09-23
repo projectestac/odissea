@@ -38,6 +38,9 @@ class com_wiris_quizzes_impl_EmbeddedAnswersEditorImpl implements com_wiris_quiz
 	public function showGradingFunction($visible) {
 		com_wiris_quizzes_impl_QuizzesUIBuilderImpl::throwNotImplementedInServerTechnology();
 	}
+	public function showAuxiliarTextInput($visible) {
+		com_wiris_quizzes_impl_QuizzesUIBuilderImpl::throwNotImplementedInServerTechnology();
+	}
 	public function showAuxiliarCasReplaceEditor($visible) {
 		com_wiris_quizzes_impl_QuizzesUIBuilderImpl::throwNotImplementedInServerTechnology();
 	}

@@ -782,7 +782,7 @@ class mod_scorm_external extends external_api {
                             'maxattempt' => new external_value(PARAM_INT, 'Maximum number of attemtps', VALUE_OPTIONAL),
                             'forcecompleted' => new external_value(PARAM_BOOL, 'Status current attempt is forced to "completed"',
                                                                     VALUE_OPTIONAL),
-                            'forcenewattempt' => new external_value(PARAM_BOOL, 'Hides the "Start new attempt" checkbox',
+                            'forcenewattempt' => new external_value(PARAM_INT, 'Controls re-entry behaviour',
                                                                     VALUE_OPTIONAL),
                             'lastattemptlock' => new external_value(PARAM_BOOL, 'Prevents to launch new attempts once finished',
                                                                     VALUE_OPTIONAL),
@@ -859,7 +859,9 @@ class mod_scorm_external extends external_api {
      * @throws moodle_exception
      */
     public static function launch_sco($scormid, $scoid = 0) {
-        global $DB;
+        global $DB, $CFG;
+
+        require_once($CFG->libdir . '/completionlib.php');
 
         $params = self::validate_parameters(self::launch_sco_parameters(),
                                             array(
@@ -881,6 +883,10 @@ class mod_scorm_external extends external_api {
         if (!empty($params['scoid']) and !($sco = scorm_get_sco($params['scoid'], SCO_ONLY))) {
             throw new moodle_exception('cannotfindsco', 'scorm');
         }
+
+        // Mark module viewed.
+        $completion = new completion_info($course);
+        $completion->set_module_viewed($cm);
 
         list($sco, $scolaunchurl) = scorm_get_sco_and_launch_url($scorm, $params['scoid'], $context);
         // Trigger the SCO launched event.

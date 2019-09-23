@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_behat', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aim'] = 'Esta ferramenta de administração ajuda os Programadores e criadores de testes a criar os ficheiros .feature que descrevem as funcionalidades do Moodle e corrê-los automaticamente.
+$string['aim'] = 'Esta ferramenta de administração ajuda os programadores e criadores de testes a criar ficheiros \'.feature\' que descrevem as funcionalidades do Moodle e executá-los automaticamente.
 Os procedimentos disponíveis para utilização em ficheiros \'.feature\' encontram-se listados abaixo.';
 $string['allavailablesteps'] = 'Todas definições disponíveis da etapa';
 $string['errorbehatcommand'] = 'Erro ao executar o comando Behat CLI. Tente executar manualmente "{$a} --help" a partir da CLI para saber mais sobre o problema.';
@@ -37,9 +37,9 @@ $string['fieldvalueargument'] = 'Argumentos do valor do campo';
 $string['fieldvalueargument_help'] = 'Este argumento deve ser completo por um valor de campo. Existem muitos tipos de campos, incluindo campos simples como as caixas de seleção ou áreas de texto, ou mais complexos como os selecionadores de datas. Consulte a documentação de desenvolvimento \'<a href="http://docs.moodle.org/dev/Acceptance_testing" target="_blank">Teste de aceitação</a>\' para detalhes sobre os valores de campo esperados.';
 $string['giveninfo'] = 'Dado: Processos para configurar o ambiente';
 $string['infoheading'] = 'Informação';
-$string['installinfo'] = 'Leia {$a} para obter informação sobre instalação e execução de testes';
-$string['newstepsinfo'] = 'Leia {$a} para obter informações sobre como adicionar novas definições de etapa';
-$string['newtestsinfo'] = 'Leia {$a} para obter informações sobre como executar novos testes';
+$string['installinfo'] = 'Aceda a {$a} para obter informação sobre instalação e execução de testes';
+$string['newstepsinfo'] = 'Aceda a {$a} para obter informações sobre como adicionar novas definições de etapa';
+$string['newtestsinfo'] = 'Aceda a {$a} para obter informações sobre como executar novos testes';
 $string['nostepsdefinitions'] = 'Não existem definições da etapa que correspondam a este filtro';
 $string['pluginname'] = 'Teste de aceitação';
 $string['privacy:metadata'] = 'O módulo Teste de aceitação não armazena dados pessoais.';

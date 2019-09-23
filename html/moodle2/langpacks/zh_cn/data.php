@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -236,18 +236,6 @@ $string['movezipfailed'] = '移动压缩文件失败';
 $string['multientry'] = '重复的条目';
 $string['multimenu'] = '菜单(多选)';
 $string['multipletags'] = '发现多个标签! 模板还没有保存';
-$string['namecheckbox'] = '选择框字段';
-$string['namedate'] = '日期字段';
-$string['namefile'] = '文件字段';
-$string['namelatlong'] = '纬度／经度字段';
-$string['namemenu'] = '菜单字段';
-$string['namemultimenu'] = '多选菜单字段';
-$string['namenumber'] = '数字字段';
-$string['namepicture'] = '图片字段';
-$string['nameradiobutton'] = '单选按钮字段';
-$string['nametext'] = '文本字段';
-$string['nametextarea'] = '文本域字段';
-$string['nameurl'] = '网页地址字段';
 $string['newentry'] = '新条目';
 $string['newfield'] = '创建一个新字段';
 $string['newfield_help'] = '<p align="center"><strong>字段</strong></p>

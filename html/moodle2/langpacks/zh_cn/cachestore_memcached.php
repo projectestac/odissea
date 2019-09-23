@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcached', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

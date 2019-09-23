@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -291,18 +291,6 @@ $string['movezipfailed'] = 'No se puede mover el zip';
 $string['multientry'] = 'Entrada repetida';
 $string['multimenu'] = 'Menú (selección múltiple)';
 $string['multipletags'] = 'Se han encontrado múltiples marcas. Plantilla no guardada';
-$string['namecheckbox'] = 'Campo de selección';
-$string['namedate'] = 'Campo de fecha';
-$string['namefile'] = 'Campo de archivo';
-$string['namelatlong'] = 'Campo de latitud/longitud';
-$string['namemenu'] = 'Campo de menú';
-$string['namemultimenu'] = 'Campo de menú de selección múltiple';
-$string['namenumber'] = 'Campo numérico';
-$string['namepicture'] = 'Campo de imagen';
-$string['nameradiobutton'] = 'Campo de botón de radio';
-$string['nametext'] = 'Campo de texto';
-$string['nametextarea'] = 'Campo de área de texto';
-$string['nameurl'] = 'Campo de URL';
 $string['newentry'] = 'Nueva entrada';
 $string['newfield'] = 'Crear un nuevo campo';
 $string['newfield_help'] = 'Un campo permite la entrada de datos.

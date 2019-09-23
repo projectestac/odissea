@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'folder', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,7 +59,7 @@ $string['page-mod-folder-view'] = 'フォルダモジュールメインページ
 $string['page-mod-folder-x'] = 'すべてのフォルダモジュールページ';
 $string['pluginadministration'] = 'フォルダ管理';
 $string['pluginname'] = 'フォルダ';
-$string['privacy:metadata'] = 'mod_folderプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'フォルダリソースプラグインはどのような個人データも保存しません。';
 $string['search:activity'] = 'フォルダ';
 $string['showdownloadfolder'] = 'ダウンロードフォルダボタンを表示する';
 $string['showdownloadfolder_help'] = 'この設定を有効にした場合、フォルダのコンテンツをZIPファイルとしてダウンロードできるボタンが表示されます。';

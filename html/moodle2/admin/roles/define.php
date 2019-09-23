@@ -54,7 +54,6 @@ if ($return === 'manage') {
 
 // Check access permissions.
 $systemcontext = context_system::instance();
-require_login();
 require_capability('moodle/role:manage', $systemcontext);
 admin_externalpage_setup('defineroles', '', array('action' => $action, 'roleid' => $roleid), new moodle_url('/admin/roles/define.php'));
 
@@ -103,7 +102,8 @@ if ($action === 'add' and $resettype !== 'none') {
             'contextlevels' => 1,
             'allowassign'   => 1,
             'allowoverride' => 1,
-            'allowswitch'   => 1);
+            'allowswitch'   => 1,
+            'allowview'   => 1);
         if ($showadvanced) {
             $definitiontable = new core_role_define_role_table_advanced($systemcontext, 0);
         } else {
@@ -150,7 +150,8 @@ if ($action === 'add' and $resettype !== 'none') {
             'contextlevels' => $data->contextlevels,
             'allowassign'   => $data->allowassign,
             'allowoverride' => $data->allowoverride,
-            'allowswitch'   => $data->allowswitch);
+            'allowswitch'   => $data->allowswitch,
+            'allowview'     => $data->allowview);
         if ($showadvanced) {
             $definitiontable = new core_role_define_role_table_advanced($systemcontext, $roleid);
         } else {

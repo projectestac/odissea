@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpmigrate', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_lpmigrate', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_lpmigrate
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,11 +42,11 @@ $string['errors'] = 'Errori';
 $string['errorwhilemigratingcoursecompetencywithexception'] = 'Si è verificato un errore durante la migrazione della competenza del corso: {$a}';
 $string['errorwhilemigratingmodulecompetencywithexception'] = 'Si è verificato un errore durante la migrazione della dell\'attività o della risorsa: {$a}';
 $string['excludethese'] = 'Corsi da escludere';
-$string['explanation'] = 'Il tool può essere utilizzato per aggiornare un quadro di competenze. Il tool cercherà le competenze del quadro da aggiornare che sono collegate ai corsi ed alle attività e aggiornerà le competenze per utilizzare il nuovo quadro.
+$string['explanation'] = 'Lo strumento può essere utilizzato per aggiornare un quadro di competenze. Lo strumento cercherà le competenze del quadro da aggiornare che sono collegate ai corsi ed alle attività e aggiornerà le competenze per utilizzare il nuovo quadro.
 
 Si raccomanda di non modificare le competenze del vecchio quadro manualmente poiché verrebbero modificate competenze già raggiunte dagli utenti che hanno completato i loro piani formativi.
 
-Si suggerisce di importare il nuovo quadro di competenze, nascondere il vecchio e successivamente utilizzare il tool per migrare i corsi al nuovo quadro.';
+Si suggerisce di importare il nuovo quadro di competenze, nascondere il vecchio e successivamente utilizzare lo strumento per migrare i corsi al nuovo quadro.';
 $string['findingcoursecompetencies'] = 'Individuazione delle competenze del corso';
 $string['findingmodulecompetencies'] = 'Individuazione delle competenze delle attività e delle risorse';
 $string['frameworks'] = 'Quadri';

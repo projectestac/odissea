@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_textarea', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor_textarea', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   editor_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Platte tekst zone';
-$string['privacy:metadata'] = 'De editor_textarea bewaart geen persoonlijke gegevens.';
+$string['privacy:metadata'] = 'De platte tekst bewerken-plugin bewaart geen persoonlijke gegevens.';

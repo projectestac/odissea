@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_flickr_public', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_flickr_public
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,6 @@ $string['privacy:metadata:repository_flickr_public:user_id'] = 'Die Flickr-Publi
 $string['remember'] = 'Eingeloggt bleiben';
 $string['secret'] = 'Code';
 $string['sharealike'] = 'Ja, solange wie andere unter gleichen Bedingungen weitergeben';
-$string['tag'] = 'Schlagwort';
+$string['tag'] = 'Tag';
 $string['username'] = 'Anmeldename für Flickr (E-Mail-Adresse)';
 $string['watermark'] = 'Wasserzeichen zu den Fotos hinzufügen';

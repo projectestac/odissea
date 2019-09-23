@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_flickr', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tag_flickr', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tag_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,20 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'Titel';
+$string['configtitle'] = 'Titel für Flickr-Block';
 $string['date-posted-asc'] = 'Sendedatum aufsteigend';
 $string['date-posted-desc'] = 'Sendedatum absteigend';
 $string['date-taken-asc'] = 'Aufnahmedatum aufsteigend';
 $string['date-taken-desc'] = 'Aufnahmedatum absteigend';
 $string['defaulttile'] = 'Flickr';
-$string['getfromphotoset'] = 'Fotos aus der Serie mit der ID';
-$string['includerelatedtags'] = 'Verwandte Schlagwörter in die Abfrage einbeziehen';
-$string['interestingness-asc'] = 'Interessantheit aufsteigend';
-$string['interestingness-desc'] = 'Interessantheit absteigend';
+$string['getfromphotoset'] = 'Fotos aus Serie mit ID';
+$string['includerelatedtags'] = 'Verwandte Tags in die Abfrage einbeziehen';
+$string['interestingness-asc'] = 'Interesse aufsteigend';
+$string['interestingness-desc'] = 'Interesse absteigend';
 $string['numberofphotos'] = 'Anzahl von Fotos';
 $string['pluginname'] = 'Flickr';
-$string['privacy:metadata:block_tag_flickr'] = 'Das Flickr-Block-Plugin speichert keine persönlichen Daten. Es über trägt aber Daten an das externe System.';
-$string['privacy:metadata:block_tag_flickr:tags'] = 'Die Schlagwortliste wird im CSV-Format an Flickr zur Bildersuche gesendet.';
+$string['privacy:metadata:block_tag_flickr'] = 'Der Flickr-Block speichert keine personenbezogenen Daten. Er überträgt aber Daten an das externe System.';
+$string['privacy:metadata:block_tag_flickr:tags'] = 'Die Tags werden zur Bildersuche an Flickr gesendet.';
 $string['relevance'] = 'Bedeutung';
 $string['sortby'] = 'Sortierung nach';
 $string['tag_flickr:addinstance'] = 'Neuen Flickr-Block hinzufügen';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_performance', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   report_performance
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['check_cachejs_comment_enable'] = 'Si ce réglage est désactivé, les p
 $string['check_cachejs_details'] = 'La mise en cache et la compression du Javascript améliore substantiellement le temps de chargement des pages. Elles sont fortement recommandées pour des sites en production.';
 $string['check_debugmsg_comment_developer'] = 'Si le réglage est placé sur autre chose que Développeur, la performance sera légèrement meilleure.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Si le réglage est placé sur Développeur, la performance sera légèrement moins bonne.';
-$string['check_debugmsg_details'] = 'Il ne sert généralement à rien de régler le niveau à Développeur, à moins que vous ne soyez un développeur. Dans ce cas, c\'est alors chaudement recommandé.<p>Une fois le message d\'erreur obtenu, copié et collé quelque part, il est fortement recommandé de remettre le débogage sur Aucun. Les messages de débogage peuvent donner des indices à un éventuel pirate sur la configuration de votre site et peuvent en outre affecter négativement la performance.</p>';
+$string['check_debugmsg_details'] = 'Il ne sert généralement à rien de régler le niveau à Développeur, à moins qu\'un développeur ne le demande.<p>Une fois le message d\'erreur obtenu, copié et collé quelque part, il est <b>fortement recommandé</b> de remettre le niveau de débogage sur Aucun. Les messages de débogage pourrait donner des indices à un éventuel pirate sur la configuration de votre site et peuvent en outre affecter négativement la performance.</p>';
 $string['check_enablestats_comment_disable'] = 'La performance peut être affectée par le traitement des statistiques. Si les statistiques sont activées, leurs réglages doivent être choisis avec soin.';
 $string['check_enablestats_comment_enable'] = 'La performance peut être affectée par le traitement des statistiques. Les réglages de statistique doivent être choisis avec soin.';
 $string['check_enablestats_details'] = 'L\'activation de ce réglage aura pour effet le traitement des journaux et la récolte de statistiques. Suivant la quantité de trafic sur votre site, ceci peut prendre du temps.<p>Durant cette opération, des ressources serveur supplémentaires seront utilisées, qui pourraient dégrader la performance.</p>';

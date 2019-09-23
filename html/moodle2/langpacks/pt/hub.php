@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hub', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['advertised'] = 'Disponíveis para inscrição';
 $string['advertiseon'] = 'Partilhar esta disciplina em {$a}';
 $string['advertiseonhub'] = 'Partilhar esta disciplina para atrair participantes';
 $string['advertiseonmoodleorg'] = 'Divulgar esta disciplina em moodle.org';
-$string['advertisepublication_help'] = 'Esta disciplina será listada no Moodle.net como uma disciplina em que as pessoas podem inscrever-se e participar. O autoregisto baseado em e-mail deve ser ativado no site e é necessário ativar a auto-inscrição nesta disciplina.';
+$string['advertisepublication_help'] = 'Esta disciplina será listada no Moodle.net como uma disciplina em que as pessoas podem inscrever-se e participar. O autoregisto baseado em e-mail deve ser ativado no site e é necessário ativar a autoinscrição nesta disciplina.';
 $string['all'] = 'Todo(a)s';
 $string['allowglobalsearch'] = 'Publicar este hub e permitir a pesquisa global de todas as disciplinas';
 $string['allowpublicsearch'] = 'Publicar este hub para que as pessoas se possam registar';
@@ -40,7 +40,7 @@ $string['audienceadmins'] = 'Administradores do Moodle';
 $string['audienceeducators'] = 'Educadores';
 $string['audience_help'] = 'Defina o público-alvo pretendido para a disciplina';
 $string['audiencestudents'] = 'Alunos';
-$string['badgesnumber'] = 'Número de Medalhas ({$a})';
+$string['badgesnumber'] = 'Número de medalhas ({$a})';
 $string['badurlformat'] = 'Formato de URL inválido';
 $string['cannotsearchcommunity'] = 'Não possui as permissões necessárias para ver esta página';
 $string['community'] = 'Comunidade';
@@ -115,7 +115,7 @@ $string['hub'] = 'Hub';
 $string['imageurl'] = 'URL da imagem';
 $string['imageurl_help'] = 'Esta imagem será exibido no hub. Esta imagem deve estar disponível a partir do hub a qualquer momento. A imagem deve ter um tamanho máximo de {$a->width} X {$a->height}';
 $string['information'] = 'Informação';
-$string['issuedbadgesnumber'] = 'Número de Medalhas emitidas ({$a})';
+$string['issuedbadgesnumber'] = 'Número de medalhas emitidas ({$a})';
 $string['language'] = 'Idioma';
 $string['language_help'] = 'O idioma principal desta disciplina';
 $string['lasttimechecked'] = 'Última verificação';
@@ -207,10 +207,10 @@ $string['shareonhub'] = 'Enviar esta disciplina para um hub';
 $string['sharepublication_help'] = 'Uma cópia desta disciplina estará disponível em Moodle.net para que as pessoas possam restaurar e usar nos seu próprios sites.';
 $string['siteadmin'] = 'Administrador';
 $string['siteadmin_help'] = 'Nome completo do administrador do site.';
-$string['sitecommnews'] = 'Atualizações sobre novidades e recursos do Moodle';
-$string['sitecommnews_help'] = 'Tem a opção de se inscrever na nossa lista de e-mails de baixo volume, que inclui um boletim informativo sobre acontecimentos na comunidade Moodle.';
-$string['sitecommnewsno'] = 'Não pretendo receber notificações por e-mail de Moodle HQ';
-$string['sitecommnewsyes'] = 'Sim, inclua-me nas newsletters regulares das atualizações do Moodle';
+$string['sitecommnews'] = 'Novidades do Moodle';
+$string['sitecommnews_help'] = 'Tem a opção de inscrever-se na newsletter do Moodle. Pode cancelar sua inscrição a qualquer momento.';
+$string['sitecommnewsno'] = 'Não pretendo receber notificações por e-mail';
+$string['sitecommnewsyes'] = 'Sim, pretendo receber as newsletters do Moodle';
 $string['sitecountry'] = 'País';
 $string['sitecountry_help'] = 'O país onde se situa a sua organização ou instituição.';
 $string['sitecreated'] = 'O site foi criado';
@@ -234,8 +234,8 @@ $string['siteprivacypublished'] = 'Apenas o nome do site';
 $string['siteregconfcomment'] = 'Para evitar spam em {$a} o seu site precisa de uma confirmação final';
 $string['siteregistrationcontact'] = 'Mostrar formulário de contacto';
 $string['siteregistrationcontact_help'] = 'Se ativar esta opção, outras pessoas na nossa comunidade Moodle (quem precisa de uma conta de autenticação) podem contatá-lo através de um formulário no nosso site da comunidade Moodle. No entanto, eles nunca poderão ver o seu endereço de e-mail.';
-$string['siteregistrationemail'] = 'Notificações sobre importantes questões técnicas e de segurança';
-$string['siteregistrationemail_help'] = 'Tem a opção de se inscrever na nossa lista de e-mails de baixo volume para notícias importantes (sobre problemas de segurança ou lançamento de novas versões).';
+$string['siteregistrationemail'] = 'Notificações de novos lançamentos do Moodle, alertas de segurança e outras notícias importantes';
+$string['siteregistrationemail_help'] = 'Tem a opção de inscrever-se na nossa lista de e-mails de baixo volume das notificações de novos lançamentos do Moodle, alertas de segurança e outras notícias importantes. Pode cancelar sua inscrição a qualquer momento.';
 $string['siteregistrationupdated'] = 'O registo do site foi atualizado';
 $string['siterelease'] = 'Versão do Moodle';
 $string['siterelease_help'] = 'Versão do Moodle';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mnet', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,7 @@ $string['description'] = '説明';
 $string['duplicate_usernames'] = 'ユーザテーブルのカラム「mnethostid」および「username」の作成に失敗しました。<br />これは<a href="{$a}" target="_blank">ユーザテーブルのユーザ名が重複している</a>場合に発生します。<br />それでも、あなたのアップグレードは正常に完了しました。上記リンクをクリックすることにより、新しいウィンドウにこの問題の解決に関するインストラクションが表示されます。アップグレード終了後、問題を解決することができます。<br />';
 $string['enabled_for_all'] = '(このサービスはすべてのホストで有効にされています。)';
 $string['enterausername'] = 'ユーザ名またはカンマで区切ったユーザ名のリストを入力してください。';
-$string['error7020'] = '通常、このエラーはリモートサイトが正しくないwwwrootレコードを作成した場合に発生します。例えばhttp://www.yoursite.comの代わりにhttp://yoursite.comを使用した場合です。あなたのwwwroot (config.phpで設定) をリモートサイトの管理者に伝えて、あなたのサイトに関するレコードの変更を依頼してください。';
+$string['error7020'] = '通常、このエラーはリモートサイトが正しくないwwwrootレコードを作成した場合に発生します。例えばhttps://www.yoursite.comの代わりにhttps://yoursite.comを使用した場合です。あなたのwwwroot (config.phpで設定) をリモートサイトの管理者に伝えて、あなたのサイトに関するレコードの変更を依頼してください。';
 $string['error7022'] = 'あなたがリモートサイトに送信したメッセージは適切に暗号化されましたが署名されていません。これは非常に稀なケースです。このエラーが発生した場合、バグを記録 (問題になっているMoodleのバージョンに関する可能な限り詳細な情報等) することをお勧めします。';
 $string['error7023'] = 'リモートサイトがあなたのサイトに関するレコードのすべてのキーを使用して、あなたのメッセージの複合化を試みました。複合化は失敗しました。リモートサイトのキーを手動で再作成することにより、この問題を修正することができます。この問題はあなたがリモートサイトと数ヶ月間コミュニケーションを取っていない場合以外、発生することはありません。';
 $string['error7024'] = 'あなたは暗号化されていないメッセージをリモートサイトに送信しましたが、リモートサイトはあなたのサイトからの暗号化されていないコミュニケーションを受け入れません。これは非常に稀なケースです。このエラーが発生した場合、バグを記録 (問題になっているMoodleのバージョンに関する可能な限り詳細な情報等) することをお勧めします。';

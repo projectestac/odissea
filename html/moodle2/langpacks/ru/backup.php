@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -239,7 +239,8 @@ $string['privacy:metadata:backup:externalpurpose'] = 'Цель этого арх
 $string['qcategory2coursefallback'] = 'Категория вопросов «{$a->name}», находящаяся в файле резервной копии в контексте системы или категории курсов, при восстановлении будет создана в контексте курса.';
 $string['qcategorycannotberestored'] = 'Категория вопросов «{$a->name}» не может быть создана при восстановлении';
 $string['question2coursefallback'] = 'Категория вопросов «{$a->name}», находящаяся в файле резервной копии в контексте системы или категории курсов, при восстановлении будет создана в контексте курса.';
-$string['questionegorycannotberestored'] = 'Вопросы «{$a->name}» не могут быть создана при восстановлении';
+$string['questionegorycannotberestored'] = 'Вопросы «{$a->name}» не могут быть созданы при восстановлении';
+$string['recyclebin_desc'] = 'Обратите внимание, что эти настройки также будут использоваться для корзины.';
 $string['replacerestoredefaults'] = 'Настройки по умолчанию при восстановлении в другой курс с предварительным удалением его содержимого';
 $string['restoreactivity'] = 'Восстановить элементы курса';
 $string['restorecourse'] = 'Восстановить курс';

@@ -69,68 +69,16 @@ class core_course_renderer extends plugin_renderer_base {
     }
 
     /**
-     * Adds the item in course settings navigation to toggle modchooser
-     *
-     * Theme can overwrite as an empty function to exclude it (for example if theme does not
-     * use modchooser at all)
-     *
      * @deprecated since 3.2
      */
     protected function add_modchoosertoggle() {
-        debugging('core_course_renderer::add_modchoosertoggle() is deprecated.', DEBUG_DEVELOPER);
-
-        global $CFG;
-
-        // Only needs to be done once per page.
-        if (!$this->page->requires->should_create_one_time_item_now('core_course_modchoosertoggle')) {
-            return;
-        }
-
-        if ($this->page->state > moodle_page::STATE_PRINTING_HEADER ||
-                $this->page->course->id == SITEID ||
-                !$this->page->user_is_editing() ||
-                !($context = context_course::instance($this->page->course->id)) ||
-                !has_capability('moodle/course:manageactivities', $context) ||
-                !course_ajax_enabled($this->page->course) ||
-                !($coursenode = $this->page->settingsnav->find('courseadmin', navigation_node::TYPE_COURSE)) ||
-                !($turneditingnode = $coursenode->get('turneditingonoff'))) {
-            // Too late, or we are on site page, or we could not find the
-            // adjacent nodes in course settings menu, or we are not allowed to edit.
-            return;
-        }
-
-        if ($this->page->url->compare(new moodle_url('/course/view.php'), URL_MATCH_BASE)) {
-            // We are on the course page, retain the current page params e.g. section.
-            $modchoosertoggleurl = clone($this->page->url);
-        } else {
-            // Edit on the main course page.
-            $modchoosertoggleurl = new moodle_url('/course/view.php', array('id' => $this->page->course->id,
-                'return' => $this->page->url->out_as_local_url(false)));
-        }
-        $modchoosertoggleurl->param('sesskey', sesskey());
-        if ($usemodchooser = get_user_preferences('usemodchooser', $CFG->modchooserdefault)) {
-            $modchoosertogglestring = get_string('modchooserdisable', 'moodle');
-            $modchoosertoggleurl->param('modchooser', 'off');
-        } else {
-            $modchoosertogglestring = get_string('modchooserenable', 'moodle');
-            $modchoosertoggleurl->param('modchooser', 'on');
-        }
-        $modchoosertoggle = navigation_node::create($modchoosertogglestring, $modchoosertoggleurl, navigation_node::TYPE_SETTING, null, 'modchoosertoggle');
-
-        // Insert the modchoosertoggle after the settings node 'turneditingonoff' (navigation_node only has function to insert before, so we insert before and then swap).
-        $coursenode->add_node($modchoosertoggle, 'turneditingonoff');
-        $turneditingnode->remove();
-        $coursenode->add_node($turneditingnode, 'modchoosertoggle');
-
-        $modchoosertoggle->add_class('modchoosertoggle');
-        $modchoosertoggle->add_class('visibleifjs');
-        user_preference_allow_ajax_update('usemodchooser', PARAM_BOOL);
+        throw new coding_exception('core_course_renderer::add_modchoosertoggle() can not be used anymore.');
     }
 
     /**
      * Renders course info box.
      *
-     * @param stdClass|course_in_list $course
+     * @param stdClass $course
      * @return string
      */
     public function course_info_box(stdClass $course) {
@@ -440,6 +388,9 @@ class core_course_renderer extends plugin_renderer_base {
         $output .= html_writer::empty_tag('input', array('type' => 'submit',
             'value' => get_string('go')));
         $output .= html_writer::end_tag('fieldset');
+        if ($format != 'navbar') {
+            $output .= $this->output->help_icon("coursesearch", "core");
+        }
         $output .= html_writer::end_tag('form');
 
         return $output;
@@ -511,7 +462,7 @@ class core_course_renderer extends plugin_renderer_base {
             }
         }
         if ($completionicon) {
-            $formattedname = $mod->get_formatted_name();
+            $formattedname = html_entity_decode($mod->get_formatted_name(), ENT_QUOTES, 'UTF-8');
             if ($completiondata->overrideby) {
                 $args = new stdClass();
                 $args->modname = $formattedname;
@@ -522,7 +473,7 @@ class core_course_renderer extends plugin_renderer_base {
                 $imgalt = get_string('completion-alt-' . $completionicon, 'completion', $formattedname);
             }
 
-            if ($this->page->user_is_editing()) {
+            if ($this->page->user_is_editing() || !has_capability('moodle/course:togglecompletion', $mod->context)) {
                 // When editing, the icon is just an image.
                 $completionpixicon = new pix_icon('i/completion-'.$completionicon, $imgalt, '',
                         array('title' => $imgalt, 'class' => 'iconsmall'));
@@ -552,12 +503,12 @@ class core_course_renderer extends plugin_renderer_base {
                 $output .= html_writer::empty_tag('input', array(
                     'type' => 'hidden', 'name' => 'sesskey', 'value' => sesskey()));
                 $output .= html_writer::empty_tag('input', array(
-                    'type' => 'hidden', 'name' => 'modulename', 'value' => $mod->name));
+                    'type' => 'hidden', 'name' => 'modulename', 'value' => $formattedname));
                 $output .= html_writer::empty_tag('input', array(
                     'type' => 'hidden', 'name' => 'completionstate', 'value' => $newstate));
                 $output .= html_writer::tag('button',
                     $this->output->pix_icon('i/completion-' . $completionicon, $imgalt),
-                        array('class' => 'btn btn-link', 'title' => $imgalt));
+                        array('class' => 'btn btn-link', 'aria-live' => 'assertive'));
                 $output .= html_writer::end_tag('div');
                 $output .= html_writer::end_tag('form');
             } else {
@@ -702,7 +653,7 @@ class core_course_renderer extends plugin_renderer_base {
 
         // Display link itself.
         $activitylink = html_writer::empty_tag('img', array('src' => $mod->get_icon_url(),
-                'class' => 'iconlarge activityicon', 'alt' => ' ', 'role' => 'presentation')) .
+                'class' => 'iconlarge activityicon', 'alt' => '', 'role' => 'presentation', 'aria-hidden' => 'true')) .
                 html_writer::tag('span', $instancename . $altname, array('class' => 'instancename'));
         if ($mod->uservisible) {
             $output .= html_writer::link($url, $activitylink, array('class' => $linkclasses, 'onclick' => $onclick));
@@ -763,7 +714,7 @@ class core_course_renderer extends plugin_renderer_base {
             $txt = preg_split( "(\,|\s)", $text )[0];
         }
         $data = ['text' => $text, 'title' => $txt, 'classes' => $additionalclasses];
-        //************ ORIGINAL
+        //************ ORIGINAL 
         /*
         $data = ['text' => $text, 'classes' => $additionalclasses];
         $additionalclasses = array_filter(explode(' ', $additionalclasses));
@@ -926,12 +877,16 @@ class core_course_renderer extends plugin_renderer_base {
 
         // Display the link to the module (or do nothing if module has no url)
         $cmname = $this->course_section_cm_name($mod, $displayoptions);
+
         if (!empty($cmname)) {
             // Start the div for the activity title, excluding the edit icons.
             $output .= html_writer::start_tag('div', array('class' => 'activityinstance'));
             $output .= $cmname;
-            // XTEC ************ AFEGIT - Move availability label next to activity title - 2019.02.27  @svallde2.
+            // XTEC ************ AFEGIT - Move availability label next to activity title
+            // 2019.02.27 @svallde2
             $output .= $this->course_section_cm_availability($mod, $displayoptions);
+            //************ FI
+
 
             // Module can put text after the link (e.g. forum unread)
             $output .= $mod->afterlink;
@@ -966,7 +921,12 @@ class core_course_renderer extends plugin_renderer_base {
         }
 
         // Show availability info (if module is not available).
-        //TODO:retirar $output .= $this->course_section_cm_availability($mod, $displayoptions);
+        // XTEC ************ ELIMINAT
+        // 2019.02.27 @svallde2
+        /*
+        $output .= $this->course_section_cm_availability($mod, $displayoptions);
+        */
+        //************ FI
 
         // If there is content AND a link, then display the content here
         // (AFTER any icons). Otherwise it was displayed before
@@ -1097,7 +1057,7 @@ class core_course_renderer extends plugin_renderer_base {
      * bigger than count($courses), a paging bar is displayed above and under the
      * courses list.
      *
-     * @param array $courses array of course records (or instances of course_in_list) to show on this page
+     * @param array $courses array of course records (or instances of core_course_list_element) to show on this page
      * @param bool $showcategoryname whether to add category name to the course description
      * @param string $additionalclasses additional CSS classes to add to the div.courses
      * @param moodle_url $paginationurl url to view more or url to form links to the other pages in paging bar
@@ -1142,13 +1102,12 @@ class core_course_renderer extends plugin_renderer_base {
      * please use {@link core_course_renderer::course_info_box()}
      *
      * @param coursecat_helper $chelper various display options
-     * @param course_in_list|stdClass $course
+     * @param core_course_list_element|stdClass $course
      * @param string $additionalclasses additional classes to add to the main <div> tag (usually
      *    depend on the course position in list - first/last/even/odd)
      * @return string
      */
     protected function coursecat_coursebox(coursecat_helper $chelper, $course, $additionalclasses = '') {
-        global $CFG;
         if (!isset($this->strings->summary)) {
             $this->strings->summary = get_string('summary');
         }
@@ -1156,8 +1115,7 @@ class core_course_renderer extends plugin_renderer_base {
             return '';
         }
         if ($course instanceof stdClass) {
-            require_once($CFG->libdir. '/coursecatlib.php');
-            $course = new course_in_list($course);
+            $course = new core_course_list_element($course);
         }
         $content = '';
         $classes = trim('coursebox clearfix '. $additionalclasses);
@@ -1220,7 +1178,7 @@ class core_course_renderer extends plugin_renderer_base {
      * This method is called from coursecat_coursebox() and may be re-used in AJAX
      *
      * @param coursecat_helper $chelper various display options
-     * @param stdClass|course_in_list $course
+     * @param stdClass|core_course_list_element $course
      * @return string
      */
     protected function coursecat_coursebox_content(coursecat_helper $chelper, $course) {
@@ -1229,8 +1187,7 @@ class core_course_renderer extends plugin_renderer_base {
             return '';
         }
         if ($course instanceof stdClass) {
-            require_once($CFG->libdir. '/coursecatlib.php');
-            $course = new course_in_list($course);
+            $course = new core_course_list_element($course);
         }
         $content = '';
 
@@ -1264,13 +1221,16 @@ class core_course_renderer extends plugin_renderer_base {
         }
         $content .= $contentimages. $contentfiles;
 
-        // display course contacts. See course_in_list::get_course_contacts()
+        // Display course contacts. See core_course_list_element::get_course_contacts().
         if ($course->has_course_contacts()) {
             $content .= html_writer::start_tag('ul', array('class' => 'teachers'));
-            foreach ($course->get_course_contacts() as $userid => $coursecontact) {
-                $name = $coursecontact['rolename'].': '.
+            foreach ($course->get_course_contacts() as $coursecontact) {
+                $rolenames = array_map(function ($role) {
+                    return $role->displayname;
+                }, $coursecontact['roles']);
+                $name = implode(", ", $rolenames).': '.
                         html_writer::link(new moodle_url('/user/view.php',
-                                array('id' => $userid, 'course' => SITEID)),
+                                array('id' => $coursecontact['user']->id, 'course' => SITEID)),
                             $coursecontact['username']);
                 $content .= html_writer::tag('li', $name);
             }
@@ -1279,8 +1239,7 @@ class core_course_renderer extends plugin_renderer_base {
 
         // display course category if necessary (for example in search results)
         if ($chelper->get_show_courses() == self::COURSECAT_SHOW_COURSES_EXPANDED_WITH_CAT) {
-            require_once($CFG->libdir. '/coursecatlib.php');
-            if ($cat = coursecat::get($course->category, IGNORE_MISSING)) {
+            if ($cat = core_course_category::get($course->category, IGNORE_MISSING)) {
                 $content .= html_writer::start_tag('div', array('class' => 'coursecat'));
                 $content .= get_string('category').': '.
                         html_writer::link(new moodle_url('/course/index.php', array('categoryid' => $cat->id)),
@@ -1390,7 +1349,7 @@ class core_course_renderer extends plugin_renderer_base {
      * Renders the list of subcategories in a category
      *
      * @param coursecat_helper $chelper various display options
-     * @param coursecat $coursecat
+     * @param core_course_category $coursecat
      * @param int $depth depth of the category in the current tree
      * @return string
      */
@@ -1402,7 +1361,8 @@ class core_course_renderer extends plugin_renderer_base {
         }
         $totalcount = $coursecat->get_children_count();
         if (!$totalcount) {
-            // Note that we call coursecat::get_children_count() AFTER coursecat::get_children() to avoid extra DB requests.
+            // Note that we call core_course_category::get_children_count() AFTER core_course_category::get_children()
+            // to avoid extra DB requests.
             // Categories count is cached during children categories retrieval.
             return '';
         }
@@ -1477,7 +1437,7 @@ class core_course_renderer extends plugin_renderer_base {
      * This method is re-used by AJAX to expand content of not loaded category
      *
      * @param coursecat_helper $chelper various display options
-     * @param coursecat $coursecat
+     * @param core_course_category $coursecat
      * @param int $depth depth of the category in the current tree
      * @return string
      */
@@ -1524,7 +1484,7 @@ class core_course_renderer extends plugin_renderer_base {
      * use {@link core_course_renderer::course_category()}
      *
      * @param coursecat_helper $chelper various display options
-     * @param coursecat $coursecat
+     * @param core_course_category $coursecat
      * @param int $depth depth of this category in the current tree
      * @return string
      */
@@ -1593,7 +1553,7 @@ class core_course_renderer extends plugin_renderer_base {
      * Returns HTML to display a tree of subcategories and courses in the given category
      *
      * @param coursecat_helper $chelper various display options
-     * @param coursecat $coursecat top category (this category's name and description will NOT be added to the tree)
+     * @param core_course_category $coursecat top category (this category's name and description will NOT be added to the tree)
      * @return string
      */
     protected function coursecat_tree(coursecat_helper $chelper, $coursecat) {
@@ -1641,12 +1601,11 @@ class core_course_renderer extends plugin_renderer_base {
      *
      * Invoked from /course/index.php
      *
-     * @param int|stdClass|coursecat $category
+     * @param int|stdClass|core_course_category $category
      */
     public function course_category($category) {
         global $CFG;
-        require_once($CFG->libdir. '/coursecatlib.php');
-        $coursecat = coursecat::get(is_object($category) ? $category->id : $category);
+        $coursecat = core_course_category::get(is_object($category) ? $category->id : $category);
         $site = get_site();
         $output = '';
 
@@ -1657,9 +1616,9 @@ class core_course_renderer extends plugin_renderer_base {
             $this->page->set_button($managebutton);
         }
         if (!$coursecat->id) {
-            if (coursecat::count_all() == 1) {
+            if (core_course_category::count_all() == 1) {
                 // There exists only one category in the system, do not display link to it
-                $coursecat = coursecat::get_default();
+                $coursecat = core_course_category::get_default();
                 $strfulllistofcourses = get_string('fulllistofcourses');
                 $this->page->set_title("$site->shortname: $strfulllistofcourses");
             } else {
@@ -1668,16 +1627,16 @@ class core_course_renderer extends plugin_renderer_base {
             }
         } else {
             $title = $site->shortname;
-            if (coursecat::count_all() > 1) {
+            if (core_course_category::count_all() > 1) {
                 $title .= ": ". $coursecat->get_formatted_name();
             }
             $this->page->set_title($title);
 
             // Print the category selector
-            if (coursecat::count_all() > 1) {
+            if (core_course_category::count_all() > 1) {
                 $output .= html_writer::start_tag('div', array('class' => 'categorypicker'));
                 $select = new single_select(new moodle_url('/course/index.php'), 'categoryid',
-                        coursecat::make_categories_list(), $coursecat->id, null, 'switchcategory');
+                        core_course_category::make_categories_list(), $coursecat->id, null, 'switchcategory');
                 $select->set_label(get_string('categories').':');
                 $output .= $this->render($select);
                 $output .= html_writer::end_tag('div'); // .categorypicker
@@ -1745,7 +1704,7 @@ class core_course_renderer extends plugin_renderer_base {
             $output .= $this->single_button($url, get_string('addnewcourse'), 'get');
         }
         ob_start();
-        if (coursecat::count_all() == 1) {
+        if (core_course_category::count_all() == 1) {
             print_course_request_buttons(context_system::instance());
         } else {
             print_course_request_buttons($context);
@@ -1768,7 +1727,6 @@ class core_course_renderer extends plugin_renderer_base {
      */
     public function coursecat_ajax() {
         global $DB, $CFG;
-        require_once($CFG->libdir. '/coursecatlib.php');
 
         $type = required_param('type', PARAM_INT);
 
@@ -1778,7 +1736,7 @@ class core_course_renderer extends plugin_renderer_base {
             $showcourses = required_param('showcourses', PARAM_INT);
             $depth = required_param('depth', PARAM_INT);
 
-            $category = coursecat::get($categoryid);
+            $category = core_course_category::get($categoryid);
 
             $chelper = new coursecat_helper();
             $baseurl = new moodle_url('/course/index.php', array('categoryid' => $categoryid));
@@ -1820,7 +1778,6 @@ class core_course_renderer extends plugin_renderer_base {
         $content = '';
         if (!empty($searchcriteria)) {
             // print search results
-            require_once($CFG->libdir. '/coursecatlib.php');
 
             $displayoptions = array('sort' => array('displayname' => 1));
             // take the current page and number of results per page from query
@@ -1846,8 +1803,8 @@ class core_course_renderer extends plugin_renderer_base {
                     set_search_criteria($searchcriteria)->
                     set_attributes(array('class' => $class));
 
-            $courses = coursecat::search_courses($searchcriteria, $chelper->get_courses_display_options());
-            $totalcount = coursecat::search_courses_count($searchcriteria);
+            $courses = core_course_category::search_courses($searchcriteria, $chelper->get_courses_display_options());
+            $totalcount = core_course_category::search_courses_count($searchcriteria);
             $courseslist = $this->coursecat_courses($chelper, $courses, $totalcount);
 
             if (!$totalcount) {
@@ -1871,7 +1828,6 @@ class core_course_renderer extends plugin_renderer_base {
             // just print search form
             $content .= $this->box_start('generalbox mdl-align');
             $content .= $this->course_search_form();
-            $content .= html_writer::tag('div', get_string("searchhelp"), array('class' => 'searchhelp'));
             $content .= $this->box_end();
         }
         return $content;
@@ -1892,11 +1848,10 @@ class core_course_renderer extends plugin_renderer_base {
      */
     public function tagged_courses($tagid, $exclusivemode = true, $ctx = 0, $rec = true, $displayoptions = null) {
         global $CFG;
-        require_once($CFG->libdir . '/coursecatlib.php');
         if (empty($displayoptions)) {
             $displayoptions = array();
         }
-        $showcategories = coursecat::count_all() > 1;
+        $showcategories = core_course_category::count_all() > 1;
         $displayoptions += array('limit' => $CFG->coursesperpage, 'offset' => 0);
         $chelper = new coursecat_helper();
         $searchcriteria = array('tagid' => $tagid, 'ctx' => $ctx, 'rec' => $rec);
@@ -1906,8 +1861,8 @@ class core_course_renderer extends plugin_renderer_base {
                 set_courses_display_options($displayoptions)->
                 set_attributes(array('class' => 'course-search-result course-search-result-tagid'));
                 // (we set the same css class as in search results by tagid)
-        if ($totalcount = coursecat::search_courses_count($searchcriteria)) {
-            $courses = coursecat::search_courses($searchcriteria, $chelper->get_courses_display_options());
+        if ($totalcount = core_course_category::search_courses_count($searchcriteria)) {
+            $courses = core_course_category::search_courses($searchcriteria, $chelper->get_courses_display_options());
             if ($exclusivemode) {
                 return $this->coursecat_courses($chelper, $courses, $totalcount);
             } else {
@@ -1918,7 +1873,7 @@ class core_course_renderer extends plugin_renderer_base {
                     $imgwithlink = html_writer::link($url, $img);
                     $coursename = html_writer::link($url, $course->get_formatted_name());
                     $details = '';
-                    if ($showcategories && ($cat = coursecat::get($course->category, IGNORE_MISSING))) {
+                    if ($showcategories && ($cat = core_course_category::get($course->category, IGNORE_MISSING))) {
                         $details = get_string('category').': '.
                                 html_writer::link(new moodle_url('/course/index.php', array('categoryid' => $cat->id)),
                                         $cat->get_formatted_name(), array('class' => $cat->visible ? '' : 'dimmed'));
@@ -2007,13 +1962,7 @@ class core_course_renderer extends plugin_renderer_base {
         }
 
         $output = '';
-        if (!empty($CFG->navsortmycoursessort)) {
-            // sort courses the same as in navigation menu
-            $sortorder = 'visible DESC,'. $CFG->navsortmycoursessort.' ASC';
-        } else {
-            $sortorder = 'visible DESC,sortorder ASC';
-        }
-        $courses  = enrol_get_my_courses('summary, summaryformat', $sortorder);
+        $courses  = enrol_get_my_courses('summary, summaryformat');
         $rhosts   = array();
         $rcourses = array();
         if (!empty($CFG->mnet_dispatcher_mode) && $CFG->mnet_dispatcher_mode==='strict') {
@@ -2071,7 +2020,6 @@ class core_course_renderer extends plugin_renderer_base {
      */
     public function frontpage_available_courses() {
         global $CFG;
-        require_once($CFG->libdir. '/coursecatlib.php');
 
         $chelper = new coursecat_helper();
         $chelper->set_show_courses(self::COURSECAT_SHOW_COURSES_EXPANDED)->
@@ -2082,8 +2030,8 @@ class core_course_renderer extends plugin_renderer_base {
                     'viewmoretext' => new lang_string('fulllistofcourses')));
 
         $chelper->set_attributes(array('class' => 'frontpage-course-list-all'));
-        $courses = coursecat::get(0)->get_courses($chelper->get_courses_display_options());
-        $totalcount = coursecat::get(0)->get_courses_count($chelper->get_courses_display_options());
+        $courses = core_course_category::get(0)->get_courses($chelper->get_courses_display_options());
+        $totalcount = core_course_category::get(0)->get_courses_count($chelper->get_courses_display_options());
         if (!$totalcount && !$this->page->user_is_editing() && has_capability('moodle/course:create', context_system::instance())) {
             // Print link to create a new course, for the 1st available category.
             return $this->add_new_course_button();
@@ -2113,7 +2061,6 @@ class core_course_renderer extends plugin_renderer_base {
      */
     public function frontpage_combo_list() {
         global $CFG;
-        require_once($CFG->libdir. '/coursecatlib.php');
         $chelper = new coursecat_helper();
         $chelper->set_subcat_depth($CFG->maxcategorydepth)->
             set_categories_display_options(array(
@@ -2127,7 +2074,7 @@ class core_course_renderer extends plugin_renderer_base {
                         array('browse' => 'courses', 'page' => 1))
             ))->
             set_attributes(array('class' => 'frontpage-category-combo'));
-        return $this->coursecat_tree($chelper, coursecat::get(0));
+        return $this->coursecat_tree($chelper, core_course_category::get(0));
     }
 
     /**
@@ -2137,7 +2084,6 @@ class core_course_renderer extends plugin_renderer_base {
      */
     public function frontpage_categories_list() {
         global $CFG;
-        require_once($CFG->libdir. '/coursecatlib.php');
         $chelper = new coursecat_helper();
         $chelper->set_subcat_depth($CFG->maxcategorydepth)->
                 set_show_courses(self::COURSECAT_SHOW_COURSES_COUNT)->
@@ -2147,7 +2093,7 @@ class core_course_renderer extends plugin_renderer_base {
                             array('browse' => 'categories', 'page' => 1))
                 ))->
                 set_attributes(array('class' => 'frontpage-category-names'));
-        return $this->coursecat_tree($chelper, coursecat::get(0));
+        return $this->coursecat_tree($chelper, core_course_category::get(0));
     }
 
     /**
@@ -2164,128 +2110,6 @@ class core_course_renderer extends plugin_renderer_base {
     }
 
     /**
-     * Display the selector to advertise or publish a course
-     * @param int $courseid
-     */
-    public function publicationselector($courseid) {
-        $text = '';
-
-        $advertiseurl = new moodle_url("/course/publish/metadata.php",
-            array('sesskey' => sesskey(), 'id' => $courseid, 'advertise' => true));
-        $advertisebutton = new single_button($advertiseurl, get_string('advertise', 'hub'));
-        $text .= $this->output->render($advertisebutton);
-        $text .= html_writer::tag('div', get_string('advertisepublication_help', 'hub'),
-            array('class' => 'publishhelp'));
-
-        $text .= html_writer::empty_tag('br');  // TODO Delete.
-
-        $uploadurl = new moodle_url("/course/publish/metadata.php",
-            array('sesskey' => sesskey(), 'id' => $courseid, 'share' => true));
-        $uploadbutton = new single_button($uploadurl, get_string('share', 'hub'));
-        $text .= $this->output->render($uploadbutton);
-        $text .= html_writer::tag('div', get_string('sharepublication_help', 'hub'),
-            array('class' => 'publishhelp'));
-
-        return $text;
-    }
-
-    /**
-     * Display the listing of hub where a course is registered on
-     * @param int $courseid
-     * @param array $publications
-     */
-    public function registeredonhublisting($courseid, $publications) {
-        global $CFG;
-        $table = new html_table();
-        $table->head = array(get_string('type', 'hub'),
-            get_string('date'), get_string('status', 'hub'), get_string('operation', 'hub'));
-        $table->size = array('20%', '30%', '%20', '%25');
-
-        $brtag = html_writer::empty_tag('br');
-
-        foreach ($publications as $publication) {
-
-            $params = array('id' => $publication->courseid, 'publicationid' => $publication->id);
-            $cancelurl = new moodle_url("/course/publish/index.php", $params);
-            $cancelbutton = new single_button($cancelurl, get_string('removefromhub', 'hub'));
-            $cancelbutton->class = 'centeredbutton';
-            $cancelbuttonhtml = $this->output->render($cancelbutton);
-
-            if ($publication->enrollable) {
-                $params = array('sesskey' => sesskey(), 'id' => $publication->courseid, 'publicationid' => $publication->id);
-                $updateurl = new moodle_url("/course/publish/metadata.php", $params);
-                $updatebutton = new single_button($updateurl, get_string('update', 'hub'));
-                $updatebutton->class = 'centeredbutton';
-                $updatebuttonhtml = $this->output->render($updatebutton);
-
-                $operations = $updatebuttonhtml . $brtag . $cancelbuttonhtml;
-            } else {
-                $operations = $cancelbuttonhtml;
-            }
-
-            // If the publication check time if bigger than May 2010, it has been checked.
-            if ($publication->timechecked > 1273127954) {
-                if ($publication->status == 0) {
-                    $status = get_string('statusunpublished', 'hub');
-                } else {
-                    $status = get_string('statuspublished', 'hub');
-                    if (!empty($publication->link)) {
-                        $status = html_writer::link($publication->link, $status);
-                    }
-                }
-
-                $status .= $brtag . html_writer::tag('a', get_string('updatestatus', 'hub'),
-                        array('href' => $CFG->wwwroot . '/course/publish/index.php?id='
-                            . $courseid . "&updatestatusid=" . $publication->id
-                            . "&sesskey=" . sesskey())) .
-                    $brtag . get_string('lasttimechecked', 'hub') . ": "
-                    . format_time(time() - $publication->timechecked);
-            } else {
-                $status = get_string('neverchecked', 'hub') . $brtag
-                    . html_writer::tag('a', get_string('updatestatus', 'hub'),
-                        array('href' => $CFG->wwwroot . '/course/publish/index.php?id='
-                            . $courseid . "&updatestatusid=" . $publication->id
-                            . "&sesskey=" . sesskey()));
-            }
-            // Add button cells.
-            $cells = array($publication->enrollable ?
-                get_string('advertised', 'hub') : get_string('shared', 'hub'),
-                userdate($publication->timepublished,
-                    get_string('strftimedatetimeshort')), $status, $operations);
-            $row = new html_table_row($cells);
-            $table->data[] = $row;
-        }
-
-        $contenthtml = html_writer::table($table);
-
-        return $contenthtml;
-    }
-
-    /**
-     * Display unpublishing confirmation page
-     * @param stdClass $publication
-     *      $publication->courseshortname
-     *      $publication->courseid
-     *      $publication->hubname
-     *      $publication->huburl
-     *      $publication->id
-     */
-    public function confirmunpublishing($publication) {
-        $optionsyes = array('sesskey' => sesskey(), 'id' => $publication->courseid,
-            'hubcourseid' => $publication->hubcourseid,
-            'cancel' => true, 'publicationid' => $publication->id, 'confirm' => true);
-        $optionsno = array('sesskey' => sesskey(), 'id' => $publication->courseid);
-        $publication->hubname = html_writer::tag('a', 'Moodle.net',
-            array('href' => HUB_MOODLEORGHUBURL));
-        $formcontinue = new single_button(new moodle_url("/course/publish/index.php",
-            $optionsyes), get_string('unpublish', 'hub'), 'post');
-        $formcancel = new single_button(new moodle_url("/course/publish/index.php",
-            $optionsno), get_string('cancel'), 'get');
-        return $this->output->confirm(get_string('unpublishconfirmation', 'hub', $publication),
-            $formcontinue, $formcancel);
-    }
-
-    /**
      * Display waiting information about backup size during uploading backup process
      * @param object $backupfile the backup stored_file
      * @return $html string
@@ -2295,23 +2119,6 @@ class core_course_renderer extends plugin_renderer_base {
         $sizeinfo->total = number_format($backupfile->get_filesize() / 1000000, 2);
         $html = html_writer::tag('div', get_string('sendingsize', 'hub', $sizeinfo),
             array('class' => 'courseuploadtextinfo'));
-        return $html;
-    }
-
-    /**
-     * Display upload successfull message and a button to the publish index page
-     * @param int $id the course id
-     * @return $html string
-     */
-    public function sentbackupinfo($id) {
-        $html = html_writer::tag('div', get_string('sent', 'hub'),
-            array('class' => 'courseuploadtextinfo'));
-        $publishindexurl = new moodle_url('/course/publish/index.php',
-            array('sesskey' => sesskey(), 'id' => $id,
-                'published' => true));
-        $continue = $this->output->render(
-            new single_button($publishindexurl, get_string('continue')));
-        $html .= html_writer::tag('div', $continue, array('class' => 'sharecoursecontinue'));
         return $html;
     }
 
@@ -2336,12 +2143,220 @@ class core_course_renderer extends plugin_renderer_base {
 
         return $hubdescription;
     }
+
+    /**
+     * Output frontpage summary text and frontpage modules (stored as section 1 in site course)
+     *
+     * This may be disabled in settings
+     *
+     * @return string
+     */
+    public function frontpage_section1() {
+        global $SITE, $USER;
+
+        $output = '';
+        $editing = $this->page->user_is_editing();
+
+        if ($editing) {
+            // Make sure section with number 1 exists.
+            course_create_sections_if_missing($SITE, 1);
+        }
+
+        $modinfo = get_fast_modinfo($SITE);
+        $section = $modinfo->get_section_info(1);
+        if (($section && (!empty($modinfo->sections[1]) or !empty($section->summary))) or $editing) {
+            $output .= $this->box_start('generalbox sitetopic');
+
+            // If currently moving a file then show the current clipboard.
+            if (ismoving($SITE->id)) {
+                $stractivityclipboard = strip_tags(get_string('activityclipboard', '', $USER->activitycopyname));
+                $output .= '<p><font size="2">';
+                $cancelcopyurl = new moodle_url('/course/mod.php', ['cancelcopy' => 'true', 'sesskey' => sesskey()]);
+                $output .= "$stractivityclipboard&nbsp;&nbsp;(" . html_writer::link($cancelcopyurl, get_string('cancel')) .')';
+                $output .= '</font></p>';
+            }
+
+            $context = context_course::instance(SITEID);
+
+            // If the section name is set we show it.
+            if (trim($section->name) !== '') {
+                $output .= $this->heading(
+                    format_string($section->name, true, array('context' => $context)),
+                    2,
+                    'sectionname'
+                );
+            }
+
+            $summarytext = file_rewrite_pluginfile_urls($section->summary,
+                'pluginfile.php',
+                $context->id,
+                'course',
+                'section',
+                $section->id);
+            $summaryformatoptions = new stdClass();
+            $summaryformatoptions->noclean = true;
+            $summaryformatoptions->overflowdiv = true;
+
+            $output .= format_text($summarytext, $section->summaryformat, $summaryformatoptions);
+
+            if ($editing && has_capability('moodle/course:update', $context)) {
+                $streditsummary = get_string('editsummary');
+                $editsectionurl = new moodle_url('/course/editsection.php', ['id' => $section->id]);
+                $output .= html_writer::link($editsectionurl, $this->pix_icon('t/edit', $streditsummary)) .
+                    "<br /><br />";
+            }
+
+            $output .= $this->course_section_cm_list($SITE, $section);
+
+            $output .= $this->course_section_add_cm_control($SITE, $section->section);
+            $output .= $this->box_end();
+        }
+
+        return $output;
+    }
+
+    /**
+     * Output news for the frontpage (extract from site-wide news forum)
+     *
+     * @param stdClass $newsforum record from db table 'forum' that represents the site news forum
+     * @return string
+     */
+    protected function frontpage_news($newsforum) {
+        global $CFG, $SITE, $SESSION, $USER;
+        require_once($CFG->dirroot .'/mod/forum/lib.php');
+
+        $output = '';
+
+        if (isloggedin()) {
+            $SESSION->fromdiscussion = $CFG->wwwroot;
+            $subtext = '';
+            if (\mod_forum\subscriptions::is_subscribed($USER->id, $newsforum)) {
+                if (!\mod_forum\subscriptions::is_forcesubscribed($newsforum)) {
+                    $subtext = get_string('unsubscribe', 'forum');
+                }
+            } else {
+                $subtext = get_string('subscribe', 'forum');
+            }
+            $suburl = new moodle_url('/mod/forum/subscribe.php', array('id' => $newsforum->id, 'sesskey' => sesskey()));
+            $output .= html_writer::tag('div', html_writer::link($suburl, $subtext), array('class' => 'subscribelink'));
+        }
+
+        ob_start();
+        forum_print_latest_discussions($SITE, $newsforum, $SITE->newsitems, 'plain', 'p.modified DESC');
+        $output .= ob_get_contents();
+        ob_end_clean();
+
+        return $output;
+    }
+
+    /**
+     * Renders part of frontpage with a skip link (i.e. "My courses", "Site news", etc.)
+     *
+     * @param string $skipdivid
+     * @param string $contentsdivid
+     * @param string $header Header of the part
+     * @param string $contents Contents of the part
+     * @return string
+     */
+    protected function frontpage_part($skipdivid, $contentsdivid, $header, $contents) {
+        $output = html_writer::link('#' . $skipdivid,
+            get_string('skipa', 'access', core_text::strtolower(strip_tags($header))),
+            array('class' => 'skip-block skip'));
+
+        // Wrap frontpage part in div container.
+        $output .= html_writer::start_tag('div', array('id' => $contentsdivid));
+        $output .= $this->heading($header);
+
+        $output .= $contents;
+
+        // End frontpage part div container.
+        $output .= html_writer::end_tag('div');
+
+        $output .= html_writer::tag('span', '', array('class' => 'skip-block-to', 'id' => $skipdivid));
+        return $output;
+    }
+
+    /**
+     * Outputs contents for frontpage as configured in $CFG->frontpage or $CFG->frontpageloggedin
+     *
+     * @return string
+     */
+    public function frontpage() {
+        global $CFG, $SITE;
+
+        $output = '';
+
+        if (isloggedin() and !isguestuser() and isset($CFG->frontpageloggedin)) {
+            $frontpagelayout = $CFG->frontpageloggedin;
+        } else {
+            $frontpagelayout = $CFG->frontpage;
+        }
+
+        $frontpageoptions = explode(',', $frontpagelayout);
+        foreach ($frontpageoptions as $v) {
+            switch ($v) {
+                // Display the main part of the front page.
+                case FRONTPAGENEWS:
+                    if ($SITE->newsitems) {
+                        // Print forums only when needed.
+                        require_once($CFG->dirroot .'/mod/forum/lib.php');
+                        if (($newsforum = forum_get_course_forum($SITE->id, 'news')) &&
+                                ($forumcontents = $this->frontpage_news($newsforum))) {
+                            $newsforumcm = get_fast_modinfo($SITE)->instances['forum'][$newsforum->id];
+                            $output .= $this->frontpage_part('skipsitenews', 'site-news-forum',
+                                $newsforumcm->get_formatted_name(), $forumcontents);
+                        }
+                    }
+                    break;
+
+                case FRONTPAGEENROLLEDCOURSELIST:
+                    $mycourseshtml = $this->frontpage_my_courses();
+                    if (!empty($mycourseshtml)) {
+                        $output .= $this->frontpage_part('skipmycourses', 'frontpage-course-list',
+                            get_string('mycourses'), $mycourseshtml);
+                        break;
+                    } else {
+                        // Temp fix/fallback in order to display available courses when enrolled courses should be shown,
+                        // but user is not enrolled in any course.
+                        if (array_search(FRONTPAGEALLCOURSELIST, $frontpageoptions)) {
+                            break;
+                        }
+                    }
+                    // No "break" here. If there are no enrolled courses - continue to 'Available courses'.
+
+                case FRONTPAGEALLCOURSELIST:
+                    $availablecourseshtml = $this->frontpage_available_courses();
+                    if (!empty($availablecourseshtml)) {
+                        $output .= $this->frontpage_part('skipavailablecourses', 'frontpage-available-course-list',
+                            get_string('availablecourses'), $availablecourseshtml);
+                    }
+                    break;
+
+                case FRONTPAGECATEGORYNAMES:
+                    $output .= $this->frontpage_part('skipcategories', 'frontpage-category-names',
+                        get_string('categories'), $this->frontpage_categories_list());
+                    break;
+
+                case FRONTPAGECATEGORYCOMBO:
+                    $output .= $this->frontpage_part('skipcourses', 'frontpage-category-combo',
+                        get_string('courses'), $this->frontpage_combo_list());
+                    break;
+
+                case FRONTPAGECOURSESEARCH:
+                    $output .= $this->box($this->course_search_form('', 'short'), 'mdl-align');
+                    break;
+
+            }
+            $output .= '<br />';
+        }
+        return $output;
+    }
 }
 
 /**
  * Class storing display options and functions to help display course category and/or courses lists
  *
- * This is a wrapper for coursecat objects that also stores display options
+ * This is a wrapper for core_course_category objects that also stores display options
  * and functions to retrieve sorted and paginated lists of categories/courses.
  *
  * If theme overrides methods in core_course_renderers that access this class
@@ -2373,7 +2388,8 @@ class coursecat_helper {
      */
     public function set_show_courses($showcourses) {
         $this->showcourses = $showcourses;
-        // Automatically set the options to preload summary and coursecontacts for coursecat::get_courses() and coursecat::search_courses()
+        // Automatically set the options to preload summary and coursecontacts for core_course_category::get_courses()
+        // and core_course_category::search_courses().
         $this->coursesdisplayoptions['summary'] = $showcourses >= core_course_renderer::COURSECAT_SHOW_COURSES_AUTO;
         $this->coursesdisplayoptions['coursecontacts'] = $showcourses >= core_course_renderer::COURSECAT_SHOW_COURSES_EXPANDED;
         return $this;
@@ -2415,9 +2431,9 @@ class coursecat_helper {
     /**
      * Sets options to display list of courses
      *
-     * Options are later submitted as argument to coursecat::get_courses() and/or coursecat::search_courses()
+     * Options are later submitted as argument to core_course_category::get_courses() and/or core_course_category::search_courses()
      *
-     * Options that coursecat::get_courses() accept:
+     * Options that core_course_category::get_courses() accept:
      *    - recursive - return courses from subcategories as well. Use with care,
      *      this may be a huge list!
      *    - summary - preloads fields 'summary' and 'summaryformat'
@@ -2476,8 +2492,8 @@ class coursecat_helper {
     /**
      * Returns all options to display the courses
      *
-     * This array is usually passed to {@link coursecat::get_courses()} or
-     * {@link coursecat::search_courses()}
+     * This array is usually passed to {@link core_course_category::get_courses()} or
+     * {@link core_course_category::search_courses()}
      *
      * @return array
      */
@@ -2488,7 +2504,7 @@ class coursecat_helper {
     /**
      * Sets options to display list of subcategories
      *
-     * Options 'sort', 'offset' and 'limit' are passed to coursecat::get_children().
+     * Options 'sort', 'offset' and 'limit' are passed to core_course_category::get_children().
      * Any other options may be used by renderer functions
      *
      * @param array $options
@@ -2517,7 +2533,7 @@ class coursecat_helper {
     /**
      * Returns all options to display list of subcategories
      *
-     * This array is usually passed to {@link coursecat::get_children()}
+     * This array is usually passed to {@link core_course_category::get_children()}
      *
      * @return array
      */
@@ -2568,7 +2584,7 @@ class coursecat_helper {
     /**
      * Returns formatted and filtered description of the given category
      *
-     * @param coursecat $coursecat category
+     * @param core_course_category $coursecat category
      * @param stdClass|array $options format options, by default [noclean,overflowdiv],
      *     if context is not specified it will be added automatically
      * @return string|null
@@ -2599,7 +2615,7 @@ class coursecat_helper {
     /**
      * Returns given course's summary with proper embedded files urls and formatted
      *
-     * @param course_in_list $course
+     * @param core_course_list_element $course
      * @param array|stdClass $options additional formatting options
      * @return string
      */
@@ -2632,7 +2648,7 @@ class coursecat_helper {
     /**
      * Returns course name as it is configured to appear in courses lists formatted to course context
      *
-     * @param course_in_list $course
+     * @param core_course_list_element $course
      * @param array|stdClass $options additional formatting options
      * @return string
      */

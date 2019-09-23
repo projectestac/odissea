@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_navigation', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['courseactivities'] = 'Categorias, disciplinas e Atividades da disciplina';
+$string['courseactivities'] = 'Categorias, disciplinas e atividades da disciplina';
 $string['courses'] = 'Categorias e disciplinas';
 $string['coursestructures'] = 'Categorias, disciplinas e estruturas da disciplina';
 $string['enabledockdesc'] = 'Permitir ao utilizador mover o bloco para a consola';

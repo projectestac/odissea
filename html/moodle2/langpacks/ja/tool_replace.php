@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_replace', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,15 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cannotfit'] = '置換はオリジナルより長く、短縮できないため、続けることはできません。';
-$string['disclaimer'] = '私はこの処理のリスクを理解しています';
+$string['cannotfit'] = '置換がオリジナルより長く短縮できないため、継続できません。';
+$string['disclaimer'] = '私はこの処理のリスクを理解しています。';
 $string['doit'] = 'はい、実行してください!';
-$string['excludedtables'] = 'テキスト置換の一環として、いくつかのテーブルは更新されません。これには設定、ログ、イベントおよびセッションテーブルを含みます。';
+$string['excludedtables'] = 'テキスト置換ではいくつかのテーブルが更新されません。これには設定、ログ、イベントおよびセッションテーブルを含みます。';
 $string['invalidcharacter'] = '検索または置換テキスト内に無効な文字が見つかりました。';
 $string['notifyfinished'] = '... 完了';
 $string['notifyrebuilding'] = 'コースキャッシュ再構築 ...';
 $string['notimplemented'] = '申し訳ございません、この機能はあなたのデータベースドライバに実装されていません。';
-$string['notsupported'] = 'このスクリプトは実験用です。変更を元に戻すことができないため、スクリプトを実行する前に完全なバックアップを作成してください!';
+$string['notsupported'] = 'このスクリプトは実験用と考えてください。変更を元に戻すことができないため、スクリプトを実行する前に完全なバックアップを作成してください!';
 $string['pageheader'] = 'データベース全体のテキスト検索および置換';
 $string['pluginname'] = 'DB検索および置換';
 $string['privacy:metadata'] = 'DB検索および置換プラグインはどのような個人データも保存しません。';

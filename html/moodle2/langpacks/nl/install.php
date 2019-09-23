@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -134,7 +134,6 @@ Hierdoor kan Moodle zelf zijn geheugenlimiet instellen.
 <li>Op sommige PHP-servers kun je een .htaccess-bestand maken in de Moodle-map met volgende lijn: <p><blockquote>php_value memory_limit 40M</blockquote></p>
 <p>Opgelet: op sommige servers zal dit verhinderen dat <b>alle</b> PHP-bestanden uitgevoerd worden. (je zult foutmeldingen zien wanneer je naar php-pagina\'s kijkt) Je zult dan het .htaccess-bestand moeten verwijderen.</li>
 </ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'PHP is niet juist geconfigureerd met de MSSQL-extentie en kan niet communiceren met SQL*Server. Controleer je php.ini-bestand of hercompileer PHP';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP is niet goed geconfigureerd met de MySQLi-extentie om met MySQL te communiceren. Controleer je php.ini bestand of hercompileer PHP.';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>De databank is waar de meeste Moodle-instellingen en gegevens bewaard worden. Die moet hier geconfigureerd worden. </p>
@@ -142,8 +141,6 @@ $string['nativemariadbhelp'] = '<p>De databank is waar de meeste Moodle-instelli
 <p>De databanknaam mag enkel bestaan uit alfanumerieke tekens, dollar ($) en underscore (_).
 <p>Als de databank nog niet bestaat, maar de opgegeven gebruiker heeft de juiste rechten, dan zal Moodle proberen een nieuwe databank te maken met je juiste rechten en instellingen.</p>
 <p>Deze driver is niet compatibel met de verouderde MyISAM engine.</p>';
-$string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
-$string['nativemssqlhelp'] = 'Nu moet je de databank waar de meeste gegevens van Moodle bewaard worden gaan configureren. Deze databank moet al gemaakt zijn en je moet een gebruikersnaam en wachtwoord hebben om er toegang toe te krijgen. Een tabelprefix is verplicht.';
 $string['nativemysqli'] = 'Improved MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p>De databank is waar de meeste Moodle-instellingen en gegevens bewaard worden. Die moet geconfigureerd worden. </p>
 <p>De databanknaam, gebruikersnaam en wachtwoord zijn vereiste velden. het tabelprefix is optioneel.</p>

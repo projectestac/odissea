@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopallocation_random', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = 'Add self-assessments';
 $string['allocationaddeddetail'] = 'New assessment to be done: <strong>{$a->reviewername}</strong> is reviewer of <strong>{$a->authorname}</strong>';
-$string['allocationdeallocategraded'] = 'Unable to deallocate already graded assessment: reviewer <strong>{$a->reviewername}</strong>, submission author: <strong>{$a->authorname}</strong>';
+$string['allocationdeallocategraded'] = 'Unable to deallocate already graded assessment: reviewer <strong>{$a->reviewername}</strong>, submission author <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Reused assessment: <strong>{$a->reviewername}</strong> kept as reviewer of <strong>{$a->authorname}</strong>';
 $string['allocationsettings'] = 'Allocation settings';
 $string['assessmentdeleteddetail'] = 'Assessment deallocated: <strong>{$a->reviewername}</strong> is no longer reviewer of <strong>{$a->authorname}</strong>';

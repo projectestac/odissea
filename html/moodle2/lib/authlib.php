@@ -111,6 +111,13 @@ class auth_plugin_base {
     var $customfields = null;
 
     /**
+     * The tag we want to prepend to any error log messages.
+     *
+     * @var string
+     */
+    protected $errorlogtag = '';
+
+    /**
      * This is the primary method that is used by the authenticate_user_login()
      * function in moodlelib.php.
      *
@@ -619,6 +626,92 @@ class auth_plugin_base {
     }
 
     /**
+     * Update a local user record from an external source.
+     * This is a lighter version of the one in moodlelib -- won't do
+     * expensive ops such as enrolment.
+     *
+     * @param string $username username
+     * @param array $updatekeys fields to update, false updates all fields.
+     * @param bool $triggerevent set false if user_updated event should not be triggered.
+     *             This will not affect user_password_updated event triggering.
+     * @param bool $suspenduser Should the user be suspended?
+     * @return stdClass|bool updated user record or false if there is no new info to update.
+     */
+    protected function update_user_record($username, $updatekeys = false, $triggerevent = false, $suspenduser = false) {
+        global $CFG, $DB;
+
+        require_once($CFG->dirroot.'/user/profile/lib.php');
+
+        // Just in case check text case.
+        $username = trim(core_text::strtolower($username));
+
+        // Get the current user record.
+        $user = $DB->get_record('user', array('username' => $username, 'mnethostid' => $CFG->mnet_localhost_id));
+        if (empty($user)) { // Trouble.
+            error_log($this->errorlogtag . get_string('auth_usernotexist', 'auth', $username));
+            print_error('auth_usernotexist', 'auth', '', $username);
+            die;
+        }
+
+        // Protect the userid from being overwritten.
+        $userid = $user->id;
+
+        $needsupdate = false;
+
+        if ($newinfo = $this->get_userinfo($username)) {
+            $newinfo = truncate_userinfo($newinfo);
+
+            if (empty($updatekeys)) { // All keys? this does not support removing values.
+                $updatekeys = array_keys($newinfo);
+            }
+
+            if (!empty($updatekeys)) {
+                $newuser = new stdClass();
+                $newuser->id = $userid;
+                // The cast to int is a workaround for MDL-53959.
+                $newuser->suspended = (int) $suspenduser;
+                // Load all custom fields.
+                $profilefields = (array) profile_user_record($user->id, false);
+                $newprofilefields = [];
+
+                foreach ($updatekeys as $key) {
+                    if (isset($newinfo[$key])) {
+                        $value = $newinfo[$key];
+                    } else {
+                        $value = '';
+                    }
+
+                    if (!empty($this->config->{'field_updatelocal_' . $key})) {
+                        if (preg_match('/^profile_field_(.*)$/', $key, $match)) {
+                            // Custom field.
+                            $field = $match[1];
+                            $currentvalue = isset($profilefields[$field]) ? $profilefields[$field] : null;
+                            $newprofilefields[$field] = $value;
+                        } else {
+                            // Standard field.
+                            $currentvalue = isset($user->$key) ? $user->$key : null;
+                            $newuser->$key = $value;
+                        }
+
+                        // Only update if it's changed.
+                        if ($currentvalue !== $value) {
+                            $needsupdate = true;
+                        }
+                    }
+                }
+            }
+
+            if ($needsupdate) {
+                user_update_user($newuser, false, $triggerevent);
+                profile_save_custom_fields($newuser->id, $newprofilefields);
+                return $DB->get_record('user', array('id' => $userid, 'deleted' => 0));
+            }
+        }
+
+        return false;
+    }
+
+    /**
      * Return the list of enabled identity providers.
      *
      * Each identity provider data contains the keys url, name and iconurl (or
@@ -886,15 +979,24 @@ function signup_validate_data($data, $files) {
     if (! validate_email($data['email'])) {
         $errors['email'] = get_string('invalidemail');
 
-    } else if ($DB->record_exists('user', array('email' => $data['email']))) {
-        $errors['email'] = get_string('emailexists') . ' ' .
-                get_string('emailexistssignuphint', 'moodle',
-                        html_writer::link(new moodle_url('/login/forgot_password.php'), get_string('emailexistshintlink')));
+    } else if (empty($CFG->allowaccountssameemail)) {
+        // Make a case-insensitive query for the given email address.
+        $select = $DB->sql_equal('email', ':email', false) . ' AND mnethostid = :mnethostid';
+        $params = array(
+            'email' => $data['email'],
+            'mnethostid' => $CFG->mnet_localhost_id,
+        );
+        // If there are other user(s) that already have the same email, show an error.
+        if ($DB->record_exists_select('user', $select, $params)) {
+            $forgotpasswordurl = new moodle_url('/login/forgot_password.php');
+            $forgotpasswordlink = html_writer::link($forgotpasswordurl, get_string('emailexistshintlink'));
+            $errors['email'] = get_string('emailexists') . ' ' . get_string('emailexistssignuphint', 'moodle', $forgotpasswordlink);
+        }
     }
     if (empty($data['email2'])) {
         $errors['email2'] = get_string('missingemail');
 
-    } else if ($data['email2'] != $data['email']) {
+    } else if (core_text::strtolower($data['email2']) != core_text::strtolower($data['email'])) {
         $errors['email2'] = get_string('invalidemail');
     }
     if (!isset($errors['email'])) {

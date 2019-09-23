@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choice', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,7 +66,7 @@ $string['eventanswersubmitted'] = '投票が作成されました。';
 $string['eventanswerupdated'] = '投票が更新されました。';
 $string['eventreportdownloaded'] = '投票レポートがダウンロードされました。';
 $string['eventreportviewed'] = '投票レポートが閲覧されました。';
-$string['expired'] = '申し訳ございません、この活動は {$a} に終了しているため、これ以上利用することはできません。';
+$string['expired'] = 'この活動は {$a} に終了しました。';
 $string['full'] = '(上限到達)';
 $string['havetologin'] = 'あなたは投票する前にログインする必要があります。';
 $string['includeinactive'] = '利用停止ユーザからの回答を含む';
@@ -76,9 +76,11 @@ $string['indicator:socialbreadth'] = '投票社会的';
 $string['indicator:socialbreadth_help'] = 'この指標は投票活動で学生が到達した社会的広がりに基づきます。';
 $string['limit'] = '投票制限数';
 $string['limitanswers'] = '投票可能数を制限する';
-$string['limitanswers_help'] = 'このオプションではあなたは参加者がそれぞれの投票選択肢を選択できる数を制限することができます。制限数に達した場合、その選択肢を選択できないようになります。
+$string['limitanswers_help'] = 'このオプションではあなたは参加者がそれぞれの選択オプションを選択できる数を制限できます。制限数に達した場合、そのオプションを選択できないようになります。
 
-制限が無効にされた場合、それぞれの選択肢に関して参加者何名でも投票することができます。';
+あなたがグループモードで活動を使用する場合、制限はグループごとになることに留意してください。例えば、制限に5に設定された場合、それぞれのグループの5名のメンバーがオプションを選択できます。グループが3つある場合、これは5 x 3 = 15名の参加者がオプションを選択できることになります。
+
+制限が無効にされた場合、すべての参加者がそれぞれのオプションを選択できます。';
 $string['limitno'] = '制限 {no}';
 $string['modulename'] = '投票';
 $string['modulename_help'] = '投票活動モジュールにおいて教師は単一の質問をたずねることおよび複数の一連の回答を提供することができます。
@@ -98,7 +100,7 @@ $string['noguestchoose'] = '申し訳ございません、ゲストは投票す�
 $string['noresultsviewable'] = '現在、投票結果は閲覧できません。';
 $string['notanswered'] = '未投票';
 $string['notenrolledchoose'] = '申し訳ございません、登録済みユーザのみ投票を利用することができます。';
-$string['notopenyet'] = '申し訳ございません、この活動は {$a} まで利用することができません。';
+$string['notopenyet'] = 'この活動は {$a} まで利用できません。';
 $string['numberofuser'] = '投票者数';
 $string['numberofuserinpercentage'] = '投票者数 (%)';
 $string['openafterclose'] = 'あなたは終了日の後に開始日を指定しました。';
@@ -120,6 +122,11 @@ $string['publishafteranswer'] = '投票した後、学生に投票結果を表�
 $string['publishafterclose'] = 'この投票全体が終了した場合のみ学生に投票結果を表示する';
 $string['publishalways'] = '常に学生に投票結果を表示する';
 $string['publishanonymous'] = '投票結果を匿名で公開する、学生の氏名を表示しない';
+$string['publishinfoanonafter'] = 'あなたが答えた後、匿名の結果が公開されます。';
+$string['publishinfoanonclose'] = '活動終了後、匿名の結果が公開されます。';
+$string['publishinfofullafter'] = 'あなたが答えた後、すべての人の選択を表示する完全な結果が公開されます。';
+$string['publishinfofullclose'] = '活動終了後、すべての人の選択を表示する完全な結果が公開されます。';
+$string['publishinfonever'] = 'あなたが答えた後、この活動の結果は公開されません。';
 $string['publishnames'] = '投票結果すべてを公開する、学生の氏名および投票内容を表示する';
 $string['publishnot'] = '学生に投票結果を公開しない';
 $string['removemychoice'] = '私の投票を削除する';

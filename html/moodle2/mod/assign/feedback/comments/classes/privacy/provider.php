@@ -59,6 +59,8 @@ class provider implements
             'commenttext' => 'privacy:metadata:commentpurpose'
         ];
         $collection->add_database_table('assignfeedback_comments', $data, 'privacy:metadata:tablesummary');
+        $collection->link_subsystem('core_files', 'privacy:metadata:filepurpose');
+
         return $collection;
     }
 
@@ -102,13 +104,29 @@ class provider implements
         // Get that comment information and jam it into that exporter.
         $assign = $exportdata->get_assign();
         $plugin = $assign->get_plugin_by_type('assignfeedback', 'comments');
-        $comments = $plugin->get_feedback_comments($exportdata->get_pluginobject()->id);
+        $gradeid = $exportdata->get_pluginobject()->id;
+        $comments = $plugin->get_feedback_comments($gradeid);
         if ($comments && !empty($comments->commenttext)) {
-            $data = (object)['commenttext' => format_text($comments->commenttext, $comments->commentformat,
-                    ['context' => $exportdata->get_context()])];
-            writer::with_context($exportdata->get_context())
-                    ->export_data(array_merge($exportdata->get_subcontext(),
-                            [get_string('privacy:commentpath', 'assignfeedback_comments')]), $data);
+            $currentpath = array_merge(
+                $exportdata->get_subcontext(),
+                [get_string('privacy:commentpath', 'assignfeedback_comments')]
+            );
+
+            $comments->commenttext = writer::with_context($assign->get_context())->rewrite_pluginfile_urls(
+                $currentpath,
+                ASSIGNFEEDBACK_COMMENTS_COMPONENT,
+                ASSIGNFEEDBACK_COMMENTS_FILEAREA,
+                $gradeid,
+                $comments->commenttext
+            );
+            $data = (object)
+            [
+                'commenttext' => format_text($comments->commenttext, $comments->commentformat,
+                    ['context' => $exportdata->get_context()])
+            ];
+            writer::with_context($exportdata->get_context())->export_data($currentpath, $data);
+            writer::with_context($exportdata->get_context())->export_area_files($currentpath,
+                ASSIGNFEEDBACK_COMMENTS_COMPONENT, ASSIGNFEEDBACK_COMMENTS_FILEAREA, $gradeid);
         }
     }
 
@@ -119,6 +137,10 @@ class provider implements
      */
     public static function delete_feedback_for_context(assign_plugin_request_data $requestdata) {
         $assign = $requestdata->get_assign();
+        $fs = get_file_storage();
+        $fs->delete_area_files($requestdata->get_context()->id, ASSIGNFEEDBACK_COMMENTS_COMPONENT,
+            ASSIGNFEEDBACK_COMMENTS_FILEAREA);
+
         $plugin = $assign->get_plugin_by_type('assignfeedback', 'comments');
         $plugin->delete_instance();
     }
@@ -130,6 +152,11 @@ class provider implements
      */
     public static function delete_feedback_for_grade(assign_plugin_request_data $requestdata) {
         global $DB;
+
+        $fs = new \file_storage();
+        $fs->delete_area_files($requestdata->get_context()->id, ASSIGNFEEDBACK_COMMENTS_COMPONENT,
+            ASSIGNFEEDBACK_COMMENTS_FILEAREA, $requestdata->get_pluginobject()->id);
+
         $DB->delete_records('assignfeedback_comments', ['assignment' => $requestdata->get_assignid(),
                 'grade' => $requestdata->get_pluginobject()->id]);
     }
@@ -148,7 +175,18 @@ class provider implements
         if (empty($deletedata->get_gradeids())) {
             return;
         }
+
         list($sql, $params) = $DB->get_in_or_equal($deletedata->get_gradeids(), SQL_PARAMS_NAMED);
+
+        $fs = new \file_storage();
+        $fs->delete_area_files_select(
+                $deletedata->get_context()->id,
+                ASSIGNFEEDBACK_COMMENTS_COMPONENT,
+                ASSIGNFEEDBACK_COMMENTS_FILEAREA,
+                $sql,
+                $params
+            );
+
         $params['assignment'] = $deletedata->get_assignid();
         $DB->delete_records_select('assignfeedback_comments', "assignment = :assignment AND grade $sql", $params);
     }

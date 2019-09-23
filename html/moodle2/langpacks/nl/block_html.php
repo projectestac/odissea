@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_html', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,10 +30,9 @@ $string['configallowadditionalcssclasses'] = 'Voegt een configuratie-optie toe a
 $string['configclasses'] = 'Bijkomende CSS classes';
 $string['configclasses_help'] = 'Het doel van deze configuratie is om te helpen bij aanpassen van een thema om HTML-blokken van elkaar te onderscheiden. Als je hier een CSS-klasse invoert (spatie gescheiden) dan zal die toegevoegd worden aan de standaard classes van het blok.';
 $string['configcontent'] = 'Inhoud';
-$string['configtitle'] = 'Bloktitel';
+$string['configtitle'] = 'HTML bloktitel';
 $string['html:addinstance'] = 'Voeg een nieuw HTML-blok toe';
 $string['html:myaddinstance'] = 'Voeg een nieuw HTML-blok toe aan Mijn startpagina';
-$string['leaveblanktohide'] = 'laat leeg om de titel te verbergen';
 $string['newhtmlblock'] = '(nieuw HTML-blok)';
 $string['pluginname'] = 'HTML';
 $string['privacy:metadata:block'] = 'Het HTML-blok slaat alle gegevens op in het blok-subsysteem.';

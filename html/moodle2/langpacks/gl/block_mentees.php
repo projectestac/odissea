@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_mentees', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtitle'] = 'Título do bloque';
 $string['configtitleblankhides'] = 'Título do bloque (sen título se está en branco)';
-$string['leaveblanktohide'] = 'déixeo en branco para agochar o título';
 $string['mentees:addinstance'] = 'Engadir un novo bloque de mentorizados';
 $string['mentees:myaddinstance'] = 'Engadir un novo bloque de mentorizados ao meu cartafol persoal';
 $string['newmenteesblock'] = '(novo bloque Mentorizados)';

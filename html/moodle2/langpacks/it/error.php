@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -320,7 +320,7 @@ $string['invalidcourseid'] = 'Stai tentando di usare un ID di corso non valido';
 $string['invalidcourselevel'] = 'Livello di contesto errato';
 $string['invalidcoursemodule'] = 'ID modulo del corso non valido';
 $string['invalidcoursenameshort'] = 'Titolo abbreviato del corso non valido';
-$string['invaliddata'] = 'Data di invio non valida';
+$string['invaliddata'] = 'I dati inseriti non sono validi';
 $string['invaliddatarootpermissions'] = 'Sono state rilevati permessi non validi durante la creazione di una cartella. Per maggiori informazioni attivare la modalità debugging.';
 $string['invaliddevicetype'] = 'Tipo di dispositivo non valido';
 $string['invalidelementid'] = 'Id elemento errata!';
@@ -367,6 +367,7 @@ $string['invaliduserdata'] = 'Dati utenti non validi: {$a}';
 $string['invaliduserfield'] = 'Campo utente non valido: : {$a}';
 $string['invaliduserid'] = 'Id utente non valido';
 $string['invalidusername'] = 'Lo username fornito contiene caratteri non validi';
+$string['invalidusernameblank'] = 'Lo username non può essere vuoto';
 $string['invalidxmlfile'] = '"{$a}" non è file XML valido';
 $string['iplookupfailed'] = 'Non è possibile trovare le informazioni geografiche sull\'indirzzo IP {$a}';
 $string['iplookupprivate'] = 'Non è possibile effettuare il lookup di indirizzi IP privati';
@@ -383,7 +384,6 @@ $string['logfilenotavailable'] = 'I log non sono disponibili';
 $string['loginasnoenrol'] = 'Non si può usare "iscrivi" o "disiscrivi" se si è in una sessione "Login come".';
 $string['loginasonecourse'] = 'Non puoi entrare in questo corso.<br/>Devi prima terminare la sessione "Login come" prima di entrare in altri corsi.';
 $string['maxareabytes'] = 'La dimensione del file eccede lo spazio rimasto disponibile in quest\'area.';
-$string['maxbytes'] = 'Il file eccede la dimensione massima consentita.';
 $string['maxbytesfile'] = 'Il file {$a->file} è troppo grande. La dimensione massima che è possibile caricare è pari a {$a->size}.';
 $string['messagingdisable'] = 'La messaggistica è disabilitata';
 $string['mimetexisnotexist'] = 'Il tuo sistema non è configurato per eseguire mimeTEX. Devi scaricare l\'eseguibile adatto al tuo sistema operativo e versione PHP da <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, oppure ottenere il codice sorgente C da <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, compilarlo e caricare l\'eseguibile risultante nella cartella moodle/filter/tex/.';
@@ -433,7 +433,7 @@ $string['nologinas'] = 'Non sei autorizzato ad autenticarti come quell\'utente';
 $string['nonmeaningfulcontent'] = 'Contenuto senza significato';
 $string['noparticipants'] = 'In questo corso non sono stati trovati partecipanti';
 $string['noparticipatorycms'] = 'Spiacente, ma il report di partecipazione dei moduli del corso non è attivato.';
-$string['nopermissions'] = 'Spiacente, ma attualmente non avete il permesso per fare questo ({$a})';
+$string['nopermissions'] = 'Non sei autorizzato a svolgere questa azione ({$a})';
 $string['nopermissiontocomment'] = 'Non puoi aggiungere commenti';
 $string['nopermissiontodelentry'] = 'Non puoi eliminare gli inserimenti di altre persone!';
 $string['nopermissiontoeditcomment'] = 'Non puoi eliminare i commenti di altre persone!';
@@ -444,7 +444,7 @@ $string['nopermissiontomanagegroup'] = 'Non avete i privilegi necessari per gest
 $string['nopermissiontorate'] = 'La valutazione degli elementi non è consentita!';
 $string['nopermissiontoshow'] = 'Non sei autorizzato a visualizzare questo!';
 $string['nopermissiontounlock'] = 'Non sei autorizzato a sbloccare!';
-$string['nopermissiontoupdatecalendar'] = 'Spiacente, non hai il privilegio per aggiornare gli eventi nel calendario';
+$string['nopermissiontoupdatecalendar'] = 'Non sei autorizzato ad aggiornare gli eventi nel calendario';
 $string['nopermissiontoviewgrades'] = 'Non sei autorizzato a visualizzare i voti.';
 $string['nopermissiontoviewletergrade'] = 'Mancano i privilegi per visualizzare la graduatoria letterale';
 $string['nopermissiontoviewpage'] = 'Non sei autorizzato a visualizzare questa pagina';

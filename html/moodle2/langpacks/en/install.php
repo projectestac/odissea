@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -170,7 +170,6 @@ $string['memorylimithelp'] = '<p>The PHP memory limit for your server is current
     <p>However, on some servers this will prevent <b>all</b> PHP pages from working
     (you will see errors when you look at pages) so you\'ll have to remove the .htaccess file.</p></li>
 </ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'PHP has not been properly configured with the MSSQL extension so that it can communicate with SQL*Server.  Please check your php.ini file or recompile PHP.';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP has not been properly configured with the MySQLi extension for it to communicate with MySQL. Please check your php.ini file or recompile PHP.';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>The database is where most of the Moodle settings and data are stored and must be configured here.</p>
@@ -178,9 +177,6 @@ $string['nativemariadbhelp'] = '<p>The database is where most of the Moodle sett
 <p>The database name may contain only alphanumeric characters, dollar ($) and underscore (_).</p>
 <p>If the database currently does not exist, and the user you specify has permission, Moodle will attempt to create a new database with the correct permissions and settings.</p>
 <p>This driver is not compatible with legacy MyISAM engine.</p>';
-$string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
-$string['nativemssqlhelp'] = 'Now you need to configure the database where most Moodle data will be stored.
-This database must already have been created and a username and password created to access it. Table prefix is mandatory.';
 $string['nativemysqli'] = 'Improved MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p>The database is where most of the Moodle settings and data are stored and must be configured here.</p>
 <p>The database name, username, and password are required fields; table prefix is optional.</p>
@@ -247,10 +243,7 @@ $string['welcomep20'] = 'You are seeing this page because you have successfully 
 $string['welcomep30'] = 'This release of the <strong>{$a->installername}</strong> includes the applications
     to create an environment in which <strong>Moodle</strong> will operate, namely:';
 $string['welcomep40'] = 'The package also includes <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.';
-$string['welcomep50'] = 'The use of all the applications in this package is governed by their respective
-    licences. The complete <strong>{$a->installername}</strong> package is
-    <a href="http://www.opensource.org/docs/definition_plain.html">open source</a> and is distributed
-    under the <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a> license.';
+$string['welcomep50'] = 'The use of all the applications in this package is governed by their respective licences. The complete <strong>{$a->installername}</strong> package is <a href="https://www.opensource.org/docs/definition_plain.html">open source</a> and is distributed under the <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a> license.';
 $string['welcomep60'] = 'The following pages will lead you through some easy to follow steps to
     configure and set up <strong>Moodle</strong> on your computer. You may accept the default
     settings or, optionally, amend them to suit your own needs.';

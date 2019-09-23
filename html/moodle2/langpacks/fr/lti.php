@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lti', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -146,9 +146,9 @@ $string['errortooltypenotfound'] = 'Type d\'outil LTI non trouvé.';
 $string['existing_window'] = 'Fenêtre existante';
 $string['extensions'] = 'Services d\'extension LTI';
 $string['external_tool_type'] = 'Outil préconfiguré';
-$string['external_tool_type_help'] = '* **Automatique, basée sur l\'URL de l\'outil** - La configuration la plus adéquate est sélectionnée automatiquement. Lorsque l\'URL de l\'outil n\'est reconnu, les détails de la configuration devront être saisis manuellement.
+$string['external_tool_type_help'] = '* **Automatique, basée sur l\'URL de l\'outil** - La configuration la plus adéquate est sélectionnée automatiquement. Lorsque l\'URL de l\'outil n\'est pas reconnue, les détails de la configuration devront être saisis manuellement.
 * **Un type d\'outil préconfiguré** - La configuration de l\'outil indiqué sera utilisée pour communiquer avec le fournisseur externe de l\'outil. Si l\'URL de l\'outil semble ne pas appartenir au fournisseur de l\'outil, un avertissement sera affiché. Il n\'est pas toujours nécessaire de saisir une URL d\'outil.
-* **Configuration personnalisée** - Une clef client et un secret partagé devront peut-être être saisis manuellement. Ses données peuvent être obtenus auprès du fournisseur de l\'outil. Les outils ne requièrent pas tous une clef client et un secret partagé. Dans ce cas les champs peuvent être laissés vides.
+* **Configuration personnalisée** - Une clef client et un secret partagé devront peut-être être saisis manuellement. Ces données peuvent être obtenus auprès du fournisseur de l\'outil. Les outils ne requièrent pas tous une clef client et un secret partagé. Dans ce cas les champs peuvent être laissés vides.
 
 ### Modification d\'un outil préconfiguré
 
@@ -206,7 +206,7 @@ Si vous avez choisi un type d\'outil spécifique, il ne sera peut-être pas néc
 $string['leaveblank'] = 'Laisser vide si vous n\'en avez pas besoin';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Ajouter des configurations d\'outils externes propres à un cours';
-$string['lti:addinstance'] = 'Ajouter des activités d\'outils externes';
+$string['lti:addinstance'] = 'Ajouter un outil externe';
 $string['lti:admin'] = 'Devenir un administrateur lorsque l\'outil est lancé';
 $string['lti_administration'] = 'Modifier outil préconfiguré';
 $string['lti_errormsg'] = 'L\'outil a retourné le message d\'erreur suivant : « {$a} »';
@@ -444,6 +444,8 @@ $string['tooltypenotdeleted'] = 'Impossible de supprimer l\'outil préconfiguré
 $string['tooltypes'] = 'Outils';
 $string['tooltypeupdated'] = 'Outil préconfiguré modifié';
 $string['toolurl'] = 'URL de l\'outil';
+$string['toolurl_contentitemselectionrequest'] = 'URL de sélection de contenu';
+$string['toolurl_contentitemselectionrequest_help'] = 'L\'URL de sélection de contenu sera utilisée pour ouvrir la page de sélection de contenu du fournisseur de l\'outil. Si elle est laissée vide, l\'URL de l\'outil sera utilisée';
 $string['toolurl_help'] = 'L\'URL de l\'outil est utilisée pour apparier la bonne configuration d\'outil avec les différentes URL d\'outil. Il n\'est pas nécessaire de préfixer l\'URL avec http ou https.
 
 De plus, l\'URL de base est utilisée comme URL d\'outil si cette dernière n\'est pas spécifiée dans l\'instance de l\'outil externe.

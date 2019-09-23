@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_completion_progress', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   block_completion_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['how_activitiesincluded_works_help'] = '<p>Standaard worden alle activit
 $string['how_group_works'] = 'Hoe zichtbare groep werkt';
 $string['how_group_works_help'] = '<p>Selecteer een groep om de zichtbaarheid van dit blok tot die groep te beperken.</p>';
 $string['how_longbars_works'] = 'Hoe lange balken worden getoond';
+$string['how_longbars_works_help'] = '<p>Wanneer balken een bepaalde lengte overschrijden, hoe ze op één van de volgende manieren kunnen worden weergegeven.</p><ul><li>Samengeperst in één horizontale balk</li><li>Zijdelings scrollen om overlopende balksegmenten te tonen</li><li>Teruglopen om alle balksegmenten te tonen op meerdere lijnen</li></ul><p>Niet vergeten dat de NU-indicator niet wordt weergegeven wanneer de balk terugloopt over meerdere lijnen.</p>';
 $string['how_ordering_works'] = 'Hoe sorteren werkt';
 $string['how_selectactivities_works'] = 'Hoe activiteiten opnemen werkt';
 $string['lastonline'] = 'Laatste in cursus';

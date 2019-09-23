@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,9 +30,9 @@ $string['assignmentdisabled'] = 'L\'activité obsolète « Devoir 2.2 » est d
 $string['assignment:exportownsubmission'] = 'Exporter ses propres devoirs remis';
 $string['assignment:exportsubmission'] = 'Exporter des devoirs remis';
 $string['assignment:grade'] = 'Évaluer un devoir';
-$string['assignmentneedsupgrade'] = 'L\'activité obsolète « Devoir 2.2 » a été désactivée. Veuillez demander à l\'administrateur de votre site de lancer l\'outil de mise à jour des devoirs pour tous les devoirs obsolètes de ce site.';
+$string['assignmentneedsupgrade'] = 'L\'activité obsolète « Devoir 2.2 » a été supprimée.';
 $string['assignment:submit'] = 'Envoyer le devoir';
-$string['assignment:view'] = 'Accéder à un devoir';
+$string['assignment:view'] = 'Consulter un devoir';
 $string['messageprovider:assignment_updates'] = 'Notifications devoir (2.2)';
 $string['modulename'] = 'Devoir 2.2 (désactivé)';
 $string['modulename_help'] = 'Le module obsolète de gestion des devoirs a été retiré de Moodle.';
@@ -61,4 +61,3 @@ $string['privacy:metadata:assignment_submissions:timemodified'] = 'La date et l\
 $string['privacy:metadata:assignment_submissions:userid'] = 'L\'identifiant de l\'utilisateur remettant le devoir.';
 $string['privacy:submissionpath'] = 'Travail remis';
 $string['upgradenotification'] = 'Cette activité est basée sur un ancien module de devoir.';
-$string['viewassignmentupgradetool'] = 'Afficher l\'outil de mise à jour des devoirs';

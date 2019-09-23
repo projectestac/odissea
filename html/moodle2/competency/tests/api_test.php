@@ -2501,6 +2501,10 @@ class core_competency_api_testcase extends advanced_testcase {
         $this->resetAfterTest(true);
         $dg = $this->getDataGenerator();
 
+        // Create and assign a current user.
+        $currentuser = $dg->create_user();
+        $this->setUser($currentuser);
+
         // Create a course.
         $course = $dg->create_course();
         $record = array('courseid' => $course->id, 'pushratingstouserplans' => false);
@@ -2753,6 +2757,16 @@ class core_competency_api_testcase extends advanced_testcase {
         $result = api::list_course_module_competencies_in_course_module($cm->id);
         $this->assertEquals($result[0]->get('competencyid'), $c->get('id'));
         $this->assertEquals($result[1]->get('competencyid'), $c2->get('id'));
+
+        // Now get the course competency and coursemodule competency together.
+        $result = api::list_course_module_competencies($cm->id);
+        // Now we should have an array and each element of the array should have a competency and
+        // a coursemodulecompetency.
+        foreach ($result as $instance) {
+            $cmc = $instance['coursemodulecompetency'];
+            $c = $instance['competency'];
+            $this->assertEquals($cmc->get('competencyid'), $c->get('id'));
+        }
     }
 
     /**

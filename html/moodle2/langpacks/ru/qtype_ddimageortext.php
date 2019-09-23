@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['answer'] = 'Ответ';
 $string['bgimage'] = 'Фоновое изображения';
 $string['blank'] = 'пусто';
 $string['correctansweris'] = 'Правильный ответ: {$a}';
+$string['deletedchoice'] = '[Удаленный вариант]';
 $string['draggableimage'] = 'Перетаскиваемое изображение';
 $string['draggableitem'] = 'Перетаскиваемый элемент';
 $string['draggableitemheader'] = 'Перетаскиваемый элемент {$a}';
@@ -40,7 +41,7 @@ $string['draggableword'] = 'Перетаскиваемый текст';
 $string['dropbackground'] = 'Фоновое изображение, на которое перетаскиваются объекты';
 $string['dropzone'] = 'Зона {$a}';
 $string['dropzoneheader'] = 'Зоны';
-$string['formerror_disallowedtags'] = 'Вы использовали здесь HTML-теги, которые не допустимы в перетаскиваемом тексте.';
+$string['formerror_disallowedtags'] = 'В этом перетаскиваемом тексте допускаются только теги «{$a}».';
 $string['formerror_multipledraginstance'] = 'Вы более одного раза выбрали это изображение {$a} в качестве правильного ответа для зоны, но оно не отмечено как «Использовать неоднократно».';
 $string['formerror_multipledraginstance2'] = 'Вы выбрали это изображение более одного раза в качестве правильного ответа для зоны, но оно не отмечено как «Использовать неоднократно».';
 $string['formerror_noallowedtags'] = 'HTML-теги нельзя использовать в тексте, который является альтернативным текстом для перетаскиваемого изображения';

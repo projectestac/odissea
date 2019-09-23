@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'media', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,14 +31,11 @@ $string['defaultheightdesc'] = 'Media player height if a height is not specified
 $string['defaultwidth'] = 'Default width';
 $string['defaultwidthdesc'] = 'Media player width if a width is not specified and the actual media file width cannot be determined by the player.';
 $string['extensions'] = 'Extensions: {$a}';
-$string['legacyheading'] = 'Legacy media players';
-$string['legacyheading_desc'] = 'These players are not frequently used on the Web and require browser plugins that are less widely installed.';
 $string['managemediaplayers'] = 'Manage media players';
 $string['mediaformats'] = 'Available players';
 $string['mediaformats_desc'] = 'When players are enabled, media files can be embedded using the multimedia plugins filter (if enabled) or using a file or URL resource. When not enabled, these formats are not embedded and users can download or follow links to these resources.
 
 Where two players support the same format, enabling both increases compatibility across different devices such as mobile phones. It is possible to increase compatibility further by providing multiple files in different formats for a single audio or video clip.';
-$string['mediasettings'] = 'Media embedding';
 $string['privacy:metadata'] = 'Media embedding does not store any personal data.';
 $string['supports'] = 'Supports';
 $string['videoextensions'] = 'Video: {$a}';

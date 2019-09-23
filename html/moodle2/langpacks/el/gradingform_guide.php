@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradingform_guide', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['criterionremark'] = 'Παρατήρηση κριτηρίου «{$a}»';
 $string['definemarkingguide'] = 'Ορισμός οδηγού βαθμολόγησης';
 $string['description'] = 'Περιγραφή';
 $string['descriptionmarkers'] = 'Περιγραφή για τους βαθμολογητές';
-$string['descriptionstudents'] = 'Περιγραφή για τους μαθητές';
+$string['descriptionstudents'] = 'Περιγραφή για τους  μαθητές';
 $string['err_maxscoreisnegative'] = 'Το μέγιστο σκορ είναι μη έγκυρο. Αρνητικές τιμές δεν επιτρέπονται.';
 $string['err_maxscorenotnumeric'] = 'Το κριτήριο μέγιστου σκορ πρέπει να είναι αριθμητικό';
 $string['err_nocomment'] = 'Το σχόλιο δεν μπορεί να είναι κενό';
@@ -63,7 +63,7 @@ $string['err_scoreisnegative'] = 'Το σκορ που δόθηκε ((στο κ�
 $string['err_shortnametoolong'] = 'Το όνομα κριτηρίου πρέπει να είναι μικρότερο από 256 χαρακτήρες';
 $string['gradingof'] = 'Βαθμολόγηση {$a}';
 $string['guide'] = 'Οδηγός βαθμολόγησης';
-$string['guidemappingexplained'] = 'ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Ο οδηγός βαθμολόγησής σας έχει ένα μέγιστο βαθμό <b> {$a->maxscore} πόντων </ b> αλλά ο μέγιστος βαθμός που έχει οριστεί στη δραστηριότητά σας είναι {$a->modulegrade}. Το μέγιστο σκορ που ορίζεται στον οδηγό βαθμολόγησής σας, θα προσαρμοστεί (αναλογικά) στο μέγιστο βαθμό (που ορίζεται) στο άρθρωμα δραστηριότητας. <br /> Τα ενδιάμεσα σκορ θα μετατραπούν (αναλογικά) και θα στρογγυλοποιηθούν στον πλησιέστερο διαθέσιμο βαθμό.';
+$string['guidemappingexplained'] = 'ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Ο οδηγός βαθμολόγησής σας έχει ένα μέγιστο βαθμό <b>{$a->maxscore} πόντων</b> αλλά ο μέγιστος βαθμός που έχει οριστεί στη δραστηριότητά σας είναι {$a->modulegrade}. Το μέγιστο σκορ που ορίζεται στον οδηγό βαθμολόγησής σας, θα προσαρμοστεί (αναλογικά) στο μέγιστο βαθμό (που ορίζεται) στο άρθρωμα δραστηριότητας.<br />Τα ενδιάμεσα σκορ θα μετατραπούν (αναλογικά) και θα στρογγυλοποιηθούν στον πλησιέστερο διαθέσιμο βαθμό.';
 $string['guidenotcompleted'] = 'Παρακαλούμε, δώστε μια έγκυρη βαθμολογία για κάθε κριτήριο';
 $string['guideoptions'] = 'Ρυθμίσεις οδηγού βαθμολόγησης';
 $string['guidestatus'] = 'Τρέχουσα κατάσταση οδηγού βαθμολόγησης';
@@ -75,7 +75,7 @@ $string['name'] = 'Όνομα';
 $string['needregrademessage'] = 'Ο ορισμός του οδηγού βαθμολόγησης άλλαξε μετά την βαθμολόγηση αυτού του μαθητή. Ο μαθητής δεν μπορεί να δει αυτόν τον οδηγό βαθμολόγησης μέχρι να ελέγξετε τον οδηγό βαθμολόγησης και να ενημερώσετε τον βαθμό.';
 $string['pluginname'] = 'Οδηγός βαθμολόγησης';
 $string['previewmarkingguide'] = 'Προεπισκόπηση οδηγού βαθμολόγησης';
-$string['privacy:metadata:criterionid'] = 'Ένα αναγνωριστικό για ένα κριτήριο για προηγμένη βαθμολόγηση.';
+$string['privacy:metadata:criterionid'] = 'Ένα αναγνωριστικό για ένα κριτήριο για προχωρημένη βαθμολόγηση.';
 $string['privacy:metadata:fillingssummary'] = 'Αποθηκεύει πληροφορίες σχετικά με τη βαθμολογία και την ανατροφοδότηση ενός χρήστη για τον οδηγό βαθμολόγησης.';
 $string['privacy:metadata:instanceid'] = 'Ένα αναγνωριστικό σε έναν βαθμό που χρησιμοποιείται από μια δραστηριότητα.';
 $string['privacy:metadata:preference:showmarkerdesc'] = 'Εάν θα εμφανίζονται περιγραφές κριτηρίων βαθμολογητή';

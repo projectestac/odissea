@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -173,13 +173,20 @@ $string['pluginismisconfigured'] = 'Il portfolio plugin non è configurato corre
 $string['portfolio'] = 'Portfolio';
 $string['portfolios'] = 'Portfolio';
 $string['privacy:metadata'] = 'Il sottosistema di portfolio funge da canale, passando le richieste dai plugin ai vari plugin portfolio.';
+$string['privacy:metadata:instance'] = 'Identificatore del portfolio,';
+$string['privacy:metadata:instancesummary'] = 'Dati sulle istanze e preferenze del portfolio.';
+$string['privacy:metadata:name'] = 'Nome della preferenza.';
 $string['privacy:metadata:portfolio_log'] = 'Log dei trasferimenti dal portfolio (utilizzato per un successivo controllo della presenza di duplicati)';
 $string['privacy:metadata:portfolio_log:caller_class'] = 'Nome della classe utilizzata per creare il trasferimento.';
 $string['privacy:metadata:portfolio_log:caller_component'] = 'Nome de componente responsabile dell\'esportazione.';
+$string['privacy:metadata:portfolio_log:time'] = 'Data e ora del trasferimento (nel caso di un trasferimento in coda, si tratta dell\'orario in cui è stato eseguito il trasferimento effettivo, non quando l\'utente l\'ha avviato)';
+$string['privacy:metadata:portfolio_log:userid'] = 'ID dell\'utente che ha esportato del contenuto.';
+$string['privacy:metadata:portfolio_tempdata'] = 'Dati temporanei per le esportazioni nel portfolio.';
 $string['privacy:metadata:portfolio_tempdata:data'] = 'Dati da esportare.';
 $string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Scadenza del record.';
 $string['privacy:metadata:portfolio_tempdata:instance'] = 'Istanza del plugin portfolio utilizzato.';
 $string['privacy:metadata:portfolio_tempdata:userid'] = 'Utente che effettua l\'esportazione.';
+$string['privacy:metadata:userid'] = 'ID utente.';
 $string['privacy:metadata:value'] = 'Valore della preferenza.';
 $string['queuesummary'] = 'Trasferimenti in coda';
 $string['returntowhereyouwere'] = 'Ritorna dove hai iniziato l\'esportazione';

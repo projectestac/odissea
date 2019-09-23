@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_paypal', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,4 +62,5 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal:userid'] = 'ID пользо�
 $string['sendpaymentbutton'] = 'Оплатить через PayPal';
 $string['status'] = 'Разрешить запись из PayPal';
 $string['status_desc'] = 'Позволить пользователям использовать PayPal для зачисления в курс  по умолчанию.';
+$string['transactions'] = 'Транзакции PayPal';
 $string['unenrolselfconfirm'] = 'Вы действительно хотите исключить себя из курса «{$a}»?';

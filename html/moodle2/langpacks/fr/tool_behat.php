@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_behat', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['errordataroot'] = '$CFG->behat_dataroot n\'est pas définie ou n\'est p
 $string['errorsetconfig'] = 'Les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot doivent être définies dans config.php.';
 $string['erroruniqueconfig'] = 'Les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot doivent être définies avec des valeurs différentes de $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot et $CFG->phpunit_prefix.';
 $string['fieldvalueargument'] = 'Paramètres de la valeur du champ';
-$string['fieldvalueargument_help'] = 'Acceptance_testingCe paramètre doit être renseigné avec une valeur de champ. Il en existe de nombreux types, simples, par exemple cases à cocher, boîtes de sélection et zones de texte, ou plus complexes comme des sélecteurs de date. Veuillez consulter <a href="http://docs.moodle.org/dev/Acceptance_testing" target="_blank">Field values</a> (en anglais) pour des informations sur les valeurs attendues en fonction du type de champ fourni.';
+$string['fieldvalueargument_help'] = 'Acceptance_testingCe paramètre doit être renseigné avec une valeur de champ. Il en existe de nombreux types, simples, par exemple cases à cocher, boîtes de sélection et zones de texte, ou plus complexes comme des sélecteurs de date. Veuillez consulter <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Field values</a> (en anglais) pour des informations sur les valeurs attendues en fonction du type de champ fourni.';
 $string['giveninfo'] = 'Donné. Processus pour mettre en place l\'environnement';
 $string['infoheading'] = 'Info';
 $string['installinfo'] = 'Lire {$a} pour des informations sur l\'installation et l\'exécution des tests.';

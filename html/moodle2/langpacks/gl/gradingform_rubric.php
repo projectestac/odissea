@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradingform_rubric', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['err_totalscore'] = 'O número máximo de puntos posíbeis cando se cual
 $string['gradingof'] = 'Cualificando {$a}';
 $string['level'] = 'Nivel {$a->definition}, {$a->score} puntos.';
 $string['leveldefinition'] = 'Definición do nivel {$a}';
-$string['leveldelete'] = 'Eliminar nivel';
+$string['leveldelete'] = 'Eliminar o nivel {$a}';
 $string['levelempty'] = 'Prema para editar o nivel';
 $string['levelsgroup'] = 'Grupo de niveles';
 $string['lockzeropoints'] = 'Calcular a cualificación baseándose na rúbrica que teña unha puntuación mínima de 0';
@@ -67,10 +67,11 @@ $string['regradeoption1'] = 'Corrixir para volver cualificar';
 $string['restoredfromdraft'] = 'NOTA: O último intento para cualificar a esta persoa non foi gardado correctamente mais as cualificacións das versións preliminares foron restauradas. Se quere cancelar os cambios empregue o botón «Cancelar» de embaixo.';
 $string['rubric'] = 'Rúbrica';
 $string['rubricmapping'] = 'Puntuación das regras de asignación de cualificación';
-$string['rubricmappingexplained'] = 'A puntuación mínima posíbel para esta rúbrica é  <b>{$a->minscore} puntos</b> e converteranse na cualificación mínima dispoñíbel neste módulo (que é cero a non ser que se empregue a escala.
-    A puntuación máxima <b>{$a->maxscore} puntos</b> converterase na cualificación máxima.<br />
-    As puntuacións intermedias converteranse respectivamente e redondearanse a cualificación máis próxima dispoñíbel.<br />
-    De empregarse unha escala no canto dunha cualificación, a puntuación converterase á escala dos elementos como se fosen números enteiros consecutivos.';
+$string['rubricmappingexplained'] = 'A puntuación mínima posíbel para esta rúbrica é  <b>{$a->minscore} puntos</b> e converteranse na cualificación mínima dispoñíbel neste módulo (que é cero a non ser que se empregue a escala). A puntuación máxima <b>{$a->maxscore} puntos</b> converterase na cualificación máxima. As puntuacións intermedias serán convertidas respectivamente.
+
+Se se usa unha escala para a cualificación, a puntuación redondearase e converterase aos elementos de escala coma se fosen números enteiros consecutivos.
+
+Este cálculo de cualificación pode modificarse editando o formulario e premendo na caixa «Calcular a cualificación baseándose na rúbrica que teña unha puntuación mínima de 0».';
 $string['rubricnotcompleted'] = 'Escolla algo para cada criterio';
 $string['rubricoptions'] = 'Opcións da rúbrica';
 $string['rubricstatus'] = 'Estado actual da rúbrica';

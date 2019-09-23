@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_essay', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Onartutako fitxategi-motak';
+$string['acceptedfiletypes_help'] = 'Baimendutako fitxategi motak murriztu daitezke fitxategi-luzapenen zerrenda bat sartuta. Eremua hutsik badago, fitxategi-mota guztiak onartuko dira.';
 $string['allowattachments'] = 'Baimendu eranskinak';
 $string['attachmentsoptional'] = 'Eranskinak aukerakoak dira';
 $string['attachmentsrequired'] = 'Eranskinak beharrezkoak dira';
@@ -40,6 +42,7 @@ $string['mustattach'] = '"Lerro-arteko testurik ez" aukeratzean, edo erantzunak 
 $string['mustrequire'] = '"Lerro-arteko testurik ez" aukeratzean, edo erantzunak aukerazkoak direnean, gutxienez eranskin bat eskatu behar duzu.';
 $string['mustrequirefewer'] = 'Ezin duzu eskatu baimentzen duzun eranskin kopurua baino gehiago.';
 $string['nlines'] = '{$a} lerro';
+$string['nonexistentfiletypes'] = 'Hurrengo fitxategi-motak ez dira onartu: {$a}';
 $string['pluginname'] = 'Entsegua';
 $string['pluginnameadding'] = 'Entsegu motako galdera gehitzen';
 $string['pluginnameediting'] = 'Entsegu motako galdera editatzen';

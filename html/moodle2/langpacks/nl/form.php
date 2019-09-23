@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['err_nopunctuation'] = 'Je mag hier geen leestekens gebruiken';
 $string['err_numeric'] = 'Je moet hier een getal ingeven';
 $string['err_rangelength'] = 'Je moet hier tussen de {$a->format[0]} en {$a->format[1]} karakters ingeven.';
 $string['err_required'] = 'Je moet hier een waarde opgeven.';
+$string['err_wrappingwhitespace'] = 'De waarde mag niet beginnen of eindigen met witruimte.';
 $string['err_wrongfileextension'] = 'Sommige bestanden {$a->wrongfiles} kunnen niet geüpload worden. Enkel bestanden met volgende bestandstypes zijn toegestaan: {$a->whitelist}';
 $string['filesofthesetypes'] = 'Geaccepteerde bestandstypes:';
 $string['filetypesany'] = 'Alle bestandstypes';
@@ -73,7 +74,6 @@ $string['passwordunmaskrevealhint'] = 'Toon';
 $string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Recent geselecteerde weergavemodus van het bestandskeizerelement.';
 $string['privacy:preference:filemanager_recentviewmode'] = 'De gewenste manier om bestanden weer te geven in de bestandskiezer is: {$a}';
 $string['requiredelement'] = 'Vereist veld';
-$string['revealpassword'] = 'Toon';
 $string['security'] = 'Beveiliging';
 $string['selectallornone'] = 'Kies alle/geen';
 $string['selected'] = 'Geselecteerd';

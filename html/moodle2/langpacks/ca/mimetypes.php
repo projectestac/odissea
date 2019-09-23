@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mimetypes', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   mimetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,11 +37,11 @@ $string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'Plantilla 
 $string['application/vnd.oasis.opendocument.text'] = 'Document de text d\'OpenDocument';
 $string['application/vnd.oasis.opendocument.text-template'] = 'Plantilla de text d\'OpenDocument';
 $string['application/vnd.oasis.opendocument.text-web'] = 'Plantilla de pàgina web d\'OpenDocument';
-$string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Presentació PowerPoint';
-$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Presentació de diapositives PowerPoint';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Full de càlcul Excel';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Plantilla Excel';
-$string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Document MS Word';
+$string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Presentació PowerPoint 2007';
+$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Presentació de diapositives PowerPoint 2007';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Full de càlcul Excel 2007';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Plantilla Excel 2007';
+$string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Document Word 2007';
 $string['application/xhtml_xml'] = 'Document XHTML';
 $string['application/x-iwork-keynote-sffkey'] = 'Presentació de Keynote iWork';
 $string['application/x-iwork-numbers-sffnumbers'] = 'Full de càlcul de Numbers iWork';

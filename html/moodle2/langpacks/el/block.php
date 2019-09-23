@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,7 +67,7 @@ $string['region'] = 'Περιοχή';
 $string['restrictpagetypes'] = 'Τύποι εμφάνισης σελίδων';
 $string['showblock'] = 'Εμφάνιση μπλοκ {$a}';
 $string['showoncontextandsubs'] = 'Εμφάνιση στο «{$a}» και σε οποιεσδήποτε σελίδες μέσα σε αυτό';
-$string['showoncontextonly'] = 'Εμφάνιση στο  \'{$a}\' μόνο';
+$string['showoncontextonly'] = 'Εμφάνιση στο  «{$a}» μόνο';
 $string['showonentiresite'] = 'Εμφάνιση σε όλο τον ιστότοπο';
 $string['showonfrontpageandsubs'] = 'Εμφάνιση στην αρχική σελίδα και σε οποιαδήποτε σελίδα προστεθεί στην αρχική σελίδα';
 $string['showonfrontpageonly'] = 'Εμφάνιση στην αρχική σελίδα μόνο';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploaduser', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['nochanges'] = 'Aldaketarik ez';
 $string['pluginname'] = 'Igo erabiltzailea';
 $string['privacy:metadata'] = 'Igo erabiltzailea pluginak ez du datu pertsonalik biltzen.';
 $string['renameerrors'] = 'Erroreak berrizendatu';
-$string['requiredtemplate'] = 'Beharrezkoa. Hemen txantiloi-sintaxia erabil dezakezu (%l = abizena, %f = izena, %u = erabiltzaile-izena). Begiratu laguntzari zehaztasun gehiagorako eta adibideak ikusteko.';
+$string['requiredtemplate'] = 'Beharrezkoa. Hemen txantiloi-sintaxia erabil dezakezu (%l = abizena, %f = izena, %u = erabiltzaile-izena). Ikusi laguntza zehaztasun gehiagorako eta adibideak ikusteko.';
 $string['rowpreviewnum'] = 'Aurreikusi errenkadak';
 $string['unassignedsysrole'] = 'Sistemako {$a} rola kendu zaio';
 $string['uploadpicture_baduserfield'] = 'Zehaztutako erabiltzaile-ezaugarriak ez du balio. Mesedez, saiatu berriz.';
@@ -73,7 +73,7 @@ $string['useraccountupdated'] = 'Erabiltzailea eguneratu da';
 $string['useraccountuptodate'] = 'Eguneratutako erabiltzailea';
 $string['userdeleted'] = 'Erabiltzailea ezabatu da';
 $string['userrenamed'] = 'Erabiltzailearen izena aldatu da';
-$string['userscreated'] = 'Erabiltzaileak sortu dira';
+$string['userscreated'] = 'Sortutako erabiltzaileak';
 $string['usersdeleted'] = 'Erabiltzaileak ezabatu dira';
 $string['usersrenamed'] = 'Erabiltzaileen izenak aldatu dira';
 $string['usersskipped'] = 'Albo batera utzitako erabiltzaileak';
@@ -90,7 +90,7 @@ $string['uulegacy3role'] = '(Jatorrizko edizio-baimenik gabeko Irakaslea) N=3 mo
 $string['uunoemailduplicates'] = 'Saihestu e-posta helbideak bikoiztea';
 $string['uuoptype'] = 'Igotze-mota';
 $string['uuoptype_addinc'] = 'Gehitu guztia, eta gehitu kontagailua erabiltzaile-izenari beharrezko balitz.';
-$string['uuoptype_addnew'] = 'Gehitu berriak soilik, lehendik dauden erabiltzaileak albo batera utzita';
+$string['uuoptype_addnew'] = 'Gehitu berriak soilik, albo batera utzi lehendik dauden erabiltzaileak';
 $string['uuoptype_addupdate'] = 'Gehitu berriak eta eguneratu lehendik dauden erabiltzaileak';
 $string['uuoptype_update'] = 'Eguneratu soilik lehendik dauden erabiltzaileak';
 $string['uupasswordcron'] = 'cron bidez sortutakoa';

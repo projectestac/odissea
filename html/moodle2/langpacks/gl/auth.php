@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['auth_updateremote_ldap'] = '<p><b>Nota:</b> a actualización de datos L
 $string['auth_user_create'] = 'Activar a creación de usuarios';
 $string['auth_user_creation'] = 'Os novos usuarios (anónimos) poden crear contas de usuario sobre a orixe externa de autenticación e confirmar mediante correo. Se activa isto, lémbrese de configurar as opcións do módulo específico para a creación de usuario.';
 $string['auth_usernameexists'] = 'O nome de usuario seleccionado xa existe. Escolla outro.';
+$string['auth_usernotexist'] = 'Non é posíbel actualizar un usuario que non existe: {$a}';
 $string['auto_add_remote_users'] = 'Engadir automaticamente usuarios remotos';
 $string['cannotmapfield'] = 'O campo «{$a->fieldname}» non pode ser asignado porque o seu nome curto «{$a->shortname}» é longo de máis. Para permitir que sexa asignado, é necesario que reduza o nome curto a {$a->charlimit} caracteres. <a href="{$a->link}">Editar campos de perfil de usuario</a>';
 $string['changepassword'] = 'URL para cambiar o contrasinal';

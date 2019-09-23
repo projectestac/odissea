@@ -53,6 +53,7 @@ class moodlelockprovider {
         $lockfactory = new \core\lock\db_record_lock_factory('qtype_wq_persistenvariables');
         $lock = $lockfactory->get_lock($resource, $timeout);
         if ($lock === false) {
+            $lock->release();
             throw new moodle_exception('couldnotaquirelock', 'qtype_wq', '','Could not acquire lock');
         }
 

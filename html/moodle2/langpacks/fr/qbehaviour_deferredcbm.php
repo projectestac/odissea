@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   qbehaviour_deferredcbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['basemark'] = 'Évaluation de base {$a}';
 $string['breakdownbycertainty'] = 'Ventilé par certitude';
 $string['cbmbonus'] = 'Bonus degré de certitude';
 $string['cbmgradeexplanation'] = 'Dans l\'évaluation avec indication de certitude, la note ci-dessus est affichée relativement au maximum pour toutes les réponses correctes, avec C = 1.';
-$string['cbmgrades'] = 'Notes avec degré de certitude';
+$string['cbmgrades'] = 'Notes avec indication de certitude';
 $string['cbmgrades_help'] = 'Dans l\'évaluation avec indication de certitude, on obtient une note de 100 % lorsque l\'on a répondu correctement à toutes les questions avec C = 1 (certitude faible). Les notes peuvent atteindre jusqu\'à 300 % si l\'on a répondu à correctement à chaque question avec C = 3 (certitude élevée). Les idées fausses (réponses fausses avec taux de certitude élevé) font descendre la note beaucoup plus que les réponses fausses avec une indication de certitude faible. Ceci peut avoir pour conséquence des notes négatives.
 
 **Précision** est le pourcentage de réponses correctes sans tenir compte de l\'indication de certitude, mais pondéré en fonction du maximum de chaque question. La capacité de distinguer entre réponses plus ou moins fiables donne une meilleure note que le choix du même degré de certitude pour chaque réponse.

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,13 +44,13 @@ $string['label_multi'] = 'Beharrezko baldintzak';
 $string['label_sign'] = 'Baldintza-mota';
 $string['list_and'] = 'Hauek guztiak:';
 $string['list_and_hidden'] = 'Hauek guztiak (bestela ezkutuan):';
-$string['listheader_multi_after'] = 'hurrengo hauetatik';
+$string['listheader_multi_after'] = 'nahitaez';
 $string['listheader_multi_and'] = 'guztiak';
-$string['listheader_multi_before'] = 'parekatu';
+$string['listheader_multi_before'] = 'hauetako';
 $string['listheader_multi_or'] = 'edozein';
 $string['listheader_sign_before'] = 'Ikaslea';
 $string['listheader_sign_neg'] = 'ez du bete behar';
-$string['listheader_sign_pos'] = 'bete behar du';
+$string['listheader_sign_pos'] = 'bete behar d(it)u';
 $string['listheader_single'] = 'hurrengoak';
 $string['list_or'] = 'Hauetako edozein:';
 $string['list_or_hidden'] = 'Hauetako edozein (bestela ezkutuan):';

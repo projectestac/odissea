@@ -37,6 +37,8 @@ class com_wiris_quizzes_api_QuizzesConstants {
 	static $PROPERTY_VALUE_SHOW_CAS_REPLACE = "replace";
 	static $PROPERTY_CAS_INITIAL_SESSION = "casSession";
 	static $PROPERTY_CAS_SESSION = "casSession";
+	static $PROPERTY_SHOW_AUXILIAR_TEXT_INPUT = "auxiliarTextInput";
+	static $PROPERTY_AUXILIAR_TEXT = "auxiliarText";
 	static $PARAMETER_USER_ID = "user_id";
 	function __toString() { return 'com.wiris.quizzes.api.QuizzesConstants'; }
 }

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'search', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['advancedsearch'] = 'Bilaketa aurreratua';
 $string['all'] = 'Guztiak';
 $string['allareas'] = 'Eremu guztiak';
 $string['allcourses'] = 'Ikastaro guztiak';
+$string['allusers'] = 'Erabiltzaile guztiak';
 $string['author'] = 'Egilea';
 $string['authorname'] = 'Egilearen izena';
 $string['back'] = 'Atzera';
@@ -38,11 +39,16 @@ $string['checkdbadvice'] = 'Egiaztatu datu-basea arazorik dagoen ikusteko';
 $string['checkdir'] = 'Egiaztatu karpeta';
 $string['checkdiradvice'] = 'Ziurtatu datu-direktorioa badela eta bertan idaz daitekeela';
 $string['commenton'] = 'Iruzkina noiz:';
+$string['confirm_delete'] = 'Ziur zaude {$a}-(e)rako indizea ezabatu nahi duzula? Bilaketa eremua indexatu bitartean, bilaketetan erabiltzaileek ez dute eremu honetako emaitzarik lortuko.';
+$string['confirm_deleteall'] = 'Ziur zaude indizatutako eduki guztiak orain ezabatu nahi dituzula? Gunea berriz indizatu bitartean, erabiltzaileek bilaketetan ez dute emaitzik lortuko.';
+$string['confirm_indexall'] = 'Ziur zaude indexatutako edukiak orain eguneratu nahi dituzula? Eduki kopuru handia indexatzea beharrezkoa bada, honek denbora luzea beharko du. Lanean dauden zerbitzarien kasuan, indexatzea \'Bilaketa globalerako indexatzea\' programatutako zereginaren esku utzi beharko litzateke.';
+$string['confirm_reindexall'] = 'Ziur zaude guneko eduki guztiak orain berriz indexatu nahi dituzula? Zure guneak eduki kopuru handia badauka, honek denbora luzea beharko du, eta osatu bitartean erabiltzaileek ez dituzte bilaketen emaitza guztiak eskuratuko.';
 $string['createanindex'] = 'sortu indizea';
 $string['createdon'] = 'Sortua noiz:';
 $string['database'] = 'Datu-basea';
 $string['databasestate'] = 'Datu-basearen egoera indexatzen';
 $string['datadirectory'] = 'Datu-direktorioa';
+$string['deleteindex'] = 'Ezabatu {$a} indizea';
 $string['deletionsinindex'] = 'Ezabaketak indizean';
 $string['docmodifiedon'] = 'Azken aldaketa: {$a}';
 $string['doctype'] = 'Dokumentu-mota';
@@ -61,11 +67,15 @@ $string['enteryoursearchquery'] = 'Idatzi zure bilaketa';
 $string['errorareanotavailable'] = '{$a} bilaketa-eremua ez dago oraindik eskuragarri.';
 $string['error_indexing'] = 'Errorea gertatu da indexatzean';
 $string['errors'] = 'Erroreak';
+$string['everywhere'] = 'Sarbidea duzun leku guztietan';
 $string['filesinindexdirectory'] = 'Fitxategiak aurkibide-direktorioan';
 $string['filterheader'] = 'Iragazkia';
 $string['fromtime'] = 'Data honen ostean eguneratuta:';
 $string['globalsearch'] = 'Bilaketa orokorra';
 $string['globalsearchdisabled'] = 'Bilaketa orokorra ez dago gaituta';
+$string['gradualreindex'] = 'Pixkanaka berriz indexatzea {$a}';
+$string['gradualreindex_confirm'] = 'Ziur zaude {$a} berriz indexatzea nahi duzula? Honek behar bada denbora nahiko beharko du, nahiz eta berriz indexatu bitartean oraingo datuak eskuragarri egongo diren.';
+$string['gradualreindex_queued'] = 'Berriz indexatzearen eskaera egin da {$a->name}-(e)rako ({$a->count} testuinguru). Indexatze hau "Bilaketa globalerako indexatzea" programatutako zereginak egingo du.';
 $string['incourse'] = '{$a} ikastaroan';
 $string['index'] = 'Indizea';
 $string['indexwhendisabledfullnotice'] = 'Indexatzea ez dago baimenduta bilaketa desgaituta badago. Bilaketa gaitzeko, ikusi mesedez <a href="{$a->url}">searchindexwhendisabled</a> ezarpena.';
@@ -81,11 +91,21 @@ $string['normalsearch'] = 'Bilaketa normala';
 $string['notitle'] = 'Izenbururik ez';
 $string['openedon'] = 'irekia noiz:';
 $string['optimize'] = 'Optimizatu';
+$string['order'] = 'Emaitzen ordena';
+$string['order_location'] = 'Lehenetsi emaitzak {$a}-(r) arabera';
+$string['order_relevance'] = 'Emaitza esanguratsuenak lehenengo';
+$string['priority'] = 'Lehentasuna';
+$string['priority_normal'] = 'Arrunta';
+$string['priority_reindexing'] = 'Berriz indexatzea';
 $string['privacy:metadata'] = 'Bilaketa-sistemak ez du datu pertsonalik biltzen.';
+$string['progress'] = 'Aurrerapena';
 $string['queryerror'] = 'Bilaketa-motoreak ezin izan du zure bilaketa aztertu: {$a}';
+$string['queueheading'] = 'Indexatze gehigarrien ilara ({$a} elementu)';
 $string['resultsreturnedfor'] = 'lortutako emaitzak honetarako:';
 $string['runindexer'] = 'Abiarazi indexatzailea (erreala)';
 $string['runindexertest'] = 'Abiarazi indexatzailaren proba';
+$string['schemanotupdated'] = 'Bilaketa-eskema iraungitua dago.';
+$string['schemaversionunknown'] = 'Bilaketa-motoreak ez du uneko bertsioaren eskema ezagutzen.';
 $string['score'] = 'Puntuazioa';
 $string['search'] = 'Bilatu';
 $string['searcharea'] = 'Bilaketa-eremua';
@@ -94,8 +114,10 @@ $string['search:message_received'] = 'Mezuak - jasotakoak';
 $string['search:message_sent'] = 'Mezuak - bidalitakoak';
 $string['search:mycourse'] = 'Nire ikastaroak';
 $string['searchnotpermitted'] = 'Ez duzu bilaketa egiteko baimenik';
+$string['search:section'] = 'Ikastaro-atalak';
 $string['searchsetupdescription'] = 'Hurrengo pausoek lagunduko dizute Moodle-n bilaketa orokorra martxan jartzen.';
 $string['search:user'] = 'Erabiltzaileak';
+$string['searchwithin'] = 'Bilatu honen barruan';
 $string['seconds'] = 'segundu';
 $string['solutions'] = 'Konponketak';
 $string['statistics'] = 'Estatistikak';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_textarea', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor_textarea', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   editor_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Área de texto simple';
+$string['privacy:metadata'] = 'O engadido de Área de texto simple non almacena ningún dato persoal.';

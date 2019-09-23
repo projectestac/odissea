@@ -219,7 +219,6 @@ $databases = array('mysqli' => moodle_database::get_driver_instance('mysqli', 'n
                    'pgsql'  => moodle_database::get_driver_instance('pgsql',  'native'),
                    'oci'    => moodle_database::get_driver_instance('oci',    'native'),
                    'sqlsrv' => moodle_database::get_driver_instance('sqlsrv', 'native'), // MS SQL*Server PHP driver
-                   'mssql'  => moodle_database::get_driver_instance('mssql',  'native'), // FreeTDS driver
                   );
 foreach ($databases as $type=>$database) {
     if ($database->driver_installed() !== true) {
@@ -443,6 +442,7 @@ if ($interactive) {
     }
 }
 $CFG->tempdir       = $CFG->dataroot.'/temp';
+$CFG->backuptempdir = $CFG->tempdir.'/backup';
 $CFG->cachedir      = $CFG->dataroot.'/cache';
 $CFG->localcachedir = $CFG->dataroot.'/localcache';
 
@@ -710,7 +710,7 @@ if ($interactive) {
     cli_separator();
     cli_heading(get_string('cliadminemail', 'install'));
     $prompt = get_string('clitypevaluedefault', 'admin', $options['adminemail']);
-    $options['adminemail'] = cli_input($prompt);
+    $options['adminemail'] = cli_input($prompt, $options['adminemail']);
 }
 
 // Validate that the address provided was an e-mail address.

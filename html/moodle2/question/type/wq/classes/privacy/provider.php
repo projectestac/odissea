@@ -39,7 +39,7 @@ class provider implements
     \core_privacy\local\request\plugin\provider {
 
     // This trait must be included to provide the relevant polyfill for the metadata provider.
-    // All required methods must start with an underscore
+    // All required methods must start with an underscore.
     use \core_privacy\local\legacy_polyfill;
 
 

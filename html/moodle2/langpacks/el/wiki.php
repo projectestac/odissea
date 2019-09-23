@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'wiki', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['adminmenu'] = 'Μενού διαχείρισης';
 $string['attachmentattach'] = 'Προσθήκη ως συνημμένο';
 $string['attachmentimage'] = 'Προσθήκη ως εικόνα';
 $string['attachmentlink'] = 'Προσθήκη ως σύνδεσμος';
-$string['attachments'] = 'Συνημμένα!';
+$string['attachments'] = 'Συνημμένα';
 $string['backcomments'] = 'Επιστροφή στα σχόλια';
 $string['backhistory'] = 'Επιστροφή στο ιστορικό';
 $string['backoldversion'] = 'Επιστροφή στην παλαιότερη έκδοση';
@@ -78,7 +78,7 @@ $string['editcomment'] = 'Επεξεργασία σχολίου';
 $string['editfiles'] = 'Επεξεργασία αρχείων wiki';
 $string['editing'] = 'Επεξεργασία σελίδας wiki...';
 $string['editingcomment'] = 'Επεξεργασία σχολίου';
-$string['editingpage'] = 'Επεξεργασία αυτής της σελίδας \'{$a}\'.';
+$string['editingpage'] = 'Επεξεργασία αυτής της σελίδας «{$a}».';
 $string['editsection'] = 'επεξεργασία';
 $string['eventdiffviewed'] = 'Οι διαφορές (diff) μεταξύ Wiki προβλήθηκαν';
 $string['eventhistoryviewed'] = 'Το ιστορικό του Wiki προβλήθηκε';
@@ -91,7 +91,7 @@ $string['eventpageversiondeleted'] = 'Η έκδοση σελίδας wiki δια
 $string['eventpageviewed'] = 'Η σελίδα wiki προβλήθηκε';
 $string['eventversionrestored'] = 'Η έκδοση Wiki επαναφέρθηκε';
 $string['eventversionviewed'] = 'Η έκδοση σελίδας wiki προβλήθηκε';
-$string['filenotuploadederror'] = 'Το αρχείο \'{$a}\' δεν μπόρεσε να ανεβεί σωστά.';
+$string['filenotuploadederror'] = 'Το αρχείο «{$a}» δεν μπόρεσε να ανεβεί σωστά.';
 $string['files'] = 'Αρχεία';
 $string['filtername'] = 'Αυτόματη σύνδεση σελίδων wiki';
 $string['firstpagetitle'] = 'Όνομα πρώτης σελίδας';
@@ -101,6 +101,7 @@ $string['forceformat_help'] = 'Αν ο μορφότυπος είναι υποχ�
 $string['format'] = 'Μορφότυπος';
 $string['formatcreole'] = 'Μορφότυπος Creole';
 $string['formatcreole_help'] = 'Η Creole (μιγάς, με μικτή καταγωγή) είναι μια κοινή γλώσσα σήμανσης wiki με μια γραμμή εργαλείων επεξεργασίας για την εισαγωγή κατάλληλης σήμανσης. Για να δημιουργήσετε μια νέα σελίδα, πληκτρολογήστε το νέο όνομα σελίδας ανάμεσα σε διπλές αγκύλες, για παράδειγμα [[Σελίδα 2]].';
+$string['formatcreole_link'] = 'άρθρωμα/wiki/creole';
 $string['format_help'] = '* HTML - Ο επεξεργαστής HTML είναι διαθέσιμος
 * Creole - Μια κοινή γλώσσα σήμανσης wiki για την οποία είναι διαθέσιμη μια μικρή γραμμή εργαλείων επεξεργασίας
 * Nwiki - Γλώσσα σήμανσης που μοιάζει με Mediawiki που χρησιμοποιείται στο συνεισφερόμενο άρθρωμα Nwiki';
@@ -108,6 +109,7 @@ $string['formathtml'] = 'Μορφότυπος HTML';
 $string['formathtml_help'] = 'Ο επεξεργαστής HTML μπορεί να χρησιμοποιηθεί για μορφοποίηση περιεχομένου. Για να δημιουργήσετε μια νέα σελίδα, πληκτρολογήστε το νέο όνομα σελίδας ανάμεσα σε διπλές αγκύλες, για παράδειγμα [[Σελίδα 2]].';
 $string['formatnwiki'] = 'Μορφότυπος NWiki';
 $string['formatnwiki_help'] = 'Η Nwiki είναι η γλώσσα σήμανσης παρόμοια με το Mediawiki που χρησιμοποιείται στο συνεισφερόμενο άρθρωμα Nwiki. Για να δημιουργήσετε μια νέα σελίδα, πληκτρολογήστε το νέο όνομα σελίδας ανάμεσα σε διπλές αγκύλες, για παράδειγμα [[Σελίδα 2]].';
+$string['formatnwiki_link'] = 'άρθρωμα/wiki/nwiki';
 $string['history'] = 'Ιστορικό';
 $string['history_help'] = 'Το ιστορικό περιέχει λίστες με συνδέσμους προς προηγούμενες εκδόσεις της σελίδας.';
 $string['html'] = 'HTML';
@@ -125,7 +127,7 @@ $string['insertimage'] = 'Εισαγωγή μιας εικόνας...';
 $string['insertimage_help'] = 'Αυτή η πτυσσόμενη λίστα θα εισαγάγει μια εικόνα στον επεξεργαστή wiki. Αν χρειάζεται να προσθέσετε περισσότερες εικόνες στο wiki, χρησιμοποιήστε την καρτέλα «Αρχεία».';
 $string['invalidlock'] = 'Αυτή η σελίδα είναι ήδη κλειδωμένη από άλλο χρήστη.';
 $string['invalidparameters'] = 'Έχουν δοθεί μη έγκυρες παράμετροι.';
-$string['invalidsection'] = 'Άκυρη ενότητα';
+$string['invalidsection'] = 'Άκυρο τμήμα.';
 $string['invalidsesskey'] = 'Η σύνοδός σας πιθανότατα έχει λήξει. Παρακαλούμε, σημειώστε την τροποποίησή σας και, στη συνέχεια, συνδεθείτε ξανά.';
 $string['javascriptdisabledlocks'] = 'Η Javascript είναι απενεργοποιημένη στον περιηγητή σας και τα κλειδώματα δεν λειτουργούν. Οι αλλαγές που κάνετε μπορεί να μην αποθηκευτούν σωστά.';
 $string['links'] = 'Συνδέσεις';
@@ -147,6 +149,7 @@ $string['modulename_help'] = 'Το άρθρωμα δραστηριότητας w
 * Για τους μαθητές για να συγγράψουν συνεργατικά ένα ηλεκτρονικό βιβλίο, δημιουργώντας περιεχόμενο σε ένα θέμα που καθορίζεται από τον διδάσκοντά τους,
 * Για συνεργατική δημιουργία ιστοριών ή ποίησης, όπου κάθε συμμετέχων γράφει μια γραμμή ή στίχο,
 * Ως προσωπικό περιοδικό για εξετάσεις ή αναθεώρηση (χρησιμοποιώντας ένα μεμονωμένο wiki).';
+$string['modulename_link'] = 'άρθρωμα/wiki/εμφάνιση';
 $string['modulenameplural'] = 'Wiki (ουίκι) (πληθ.)';
 $string['navigation'] = 'Πλοήγηση';
 $string['navigationfrom'] = 'Αυτή η σελίδα προέρχεται από';
@@ -234,7 +237,7 @@ $string['ratingmode'] = 'Λειτουργία αξιολόγησης';
 $string['removeallwikitags'] = 'Κατάργηση όλων των ετικετών wiki';
 $string['removepages'] = 'Κατάργηση σελίδων';
 $string['reparsetimeout'] = 'Αναδιάρθρωση προεπιλεγμένου χρονικού ορίου';
-$string['repeatedsection'] = 'Σφάλμα wiki: Το όνομα του τμήματος δεν μπορεί να επαναληφθεί \'{$a}\'.';
+$string['repeatedsection'] = 'Σφάλμα wiki: Το όνομα του τμήματος δεν μπορεί να επαναληφθεί «{$a}».';
 $string['restore'] = 'Επαναφέρω';
 $string['restoreconfirm'] = 'Είστε βέβαιοι ότι θέλετε να επαναφέρετε την έκδοση #{$a};';
 $string['restoreerror'] = 'Η έκδοση #{$a} δεν ήταν δυνατό να επαναφερθεί';

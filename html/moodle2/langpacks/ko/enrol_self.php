@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_self', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['enrolstartdate_help'] = '활성화되면 사용자들은 이 날 이후
 $string['expiredaction'] = '등록 만료 조치';
 $string['expirymessageenrolledsubject'] = '스스로 등록 만료 통지';
 $string['expirymessageenrollersubject'] = '스스로 등록 만료 통지';
+$string['expirynotifyall'] = '등록수행자 및 등록된 사용자';
+$string['expirynotifyenroller'] = '등록수행자';
 $string['groupkey'] = '모둠 등록키 사용';
 $string['groupkey_desc'] = '기본으로 모둠 등록키를 사용';
 $string['groupkey_help'] = '키를 아는 사람들에게만 강좌에 대한 접속을 제한할 수 있으며, 모둠 등록키를 사용하면 사용자들이 등록할때 자동으로 모둠에 추가됩니다.

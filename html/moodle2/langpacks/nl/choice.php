@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choice', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,7 +66,7 @@ $string['eventanswersubmitted'] = 'Keuze gemaakt';
 $string['eventanswerupdated'] = 'Keuze aangepast';
 $string['eventreportdownloaded'] = 'Keuzerapport gedownload';
 $string['eventreportviewed'] = 'Keuzerapport bekeken';
-$string['expired'] = 'Sorry, deze activiteit is afgesloten op {$a} en is niet meer beschikbaar';
+$string['expired'] = 'Deze activiteit is afgesloten op {$a}.';
 $string['full'] = '(volledig)';
 $string['havetologin'] = 'Je moet aangemeld zijn voor je je keuze kunt insturen';
 $string['includeinactive'] = 'Antwoorden opnemen van niet actieve/geschorste gebruikers';
@@ -122,6 +122,11 @@ $string['publishafteranswer'] = 'Toon de resultaten aan de leerling nadat die ge
 $string['publishafterclose'] = 'Toon de resultaten aan de leerling nadat de keuze gesloten is';
 $string['publishalways'] = 'Toon altijd de resultaten aan de leerlingen';
 $string['publishanonymous'] = 'Publiceer anonieme resultaten, laat de namen van de leerlingen niet zien';
+$string['publishinfoanonafter'] = 'Anonieme resultaten worden gepubliceerd nadat je antwoordt.';
+$string['publishinfoanonclose'] = 'Anonieme resultaten worden gepubliceerd nadat de activiteit is gesloten.';
+$string['publishinfofullafter'] = 'Volledige resultaten, met ieders keuzes, worden gepubliceerd nadat je hebt geantwoord.';
+$string['publishinfofullclose'] = 'De volledige resultaten, die de keuzes van iedereen tonen, worden gepubliceerd nadat de activiteit is afgesloten.';
+$string['publishinfonever'] = 'De resultaten van deze activiteit zullen niet getoond worden nadat je geantwoord hebt.';
 $string['publishnames'] = 'Publiceer volledige resultaten, laat namen en de bijbehorende keuzes zien';
 $string['publishnot'] = 'Publiceer geen resultaten voor de leerlingen';
 $string['removemychoice'] = 'Verwijder mijn keuze';

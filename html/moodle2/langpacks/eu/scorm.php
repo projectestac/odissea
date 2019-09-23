@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,7 +82,7 @@ $string['cannotfindsco'] = 'Ezin da SCO aurkitu';
 $string['chooseapacket'] = 'Aukeratu edo eguneratu SCORM paketea';
 $string['closebeforeopen'] = 'Ezarri duzun itxiera-data hasiera-data baino lehenagokoa da.';
 $string['collapsetocwinsize'] = 'Tolestu TOC leihoaren tamaina ondokoa baino txikiagoa denean';
-$string['collapsetocwinsizedesc'] = 'Ezarpen honek leihoaren tamaina minimo batetik behera TOC-a automatikoki kolapsatzeko aukera ematen du.';
+$string['collapsetocwinsizedesc'] = 'Ezarpen honek leihoaren tamaina minimo batetik behera TOC-a automatikoki tolesteko aukera ematen du.';
 $string['compatibilitysettings'] = 'Bateragarritasunerako ezarpenak';
 $string['completed'] = 'Osatua';
 $string['completionscorerequired'] = 'Gutxieneko puntuazioa beharrezkoa da';
@@ -151,17 +151,20 @@ $string['finishscormlinkname'] = 'egin klik hemen ikastaroko hasiera-orrira itzu
 $string['firstaccess'] = 'Lehenengo sarrera';
 $string['firstattempt'] = 'Lehenengo saiakera';
 $string['floating'] = 'Mugikorra';
+$string['forceattemptalways'] = 'Beti';
+$string['forceattemptoncomplete'] = 'Aurreko saiakera osatu denean, gaindituta edo gainditu gabe';
 $string['forcecompleted'] = 'Behartu osatzera';
 $string['forcecompleteddesc'] = '\'Behartu osatzera\' ezarpenaren lehenetsitako balioa';
 $string['forcecompleted_help'] = 'Gaituz gero, oraingo saiakeraren egoera "osatua" egoerara behartuko da (bakarrik aplikatu daiteke SCORM 1.2 paketeetan).';
 $string['forcejavascript'] = 'Behartu erabiltzaileak JavaScript gaitzera';
 $string['forcejavascript_desc'] = 'Gaituz gero (gomendatuta), SCORM paketera sartzea saihesten da JavaScript ez badago onartuta/gaituta erabiltzailearen nabigatzailean. Ez bada gaitzen, erabiltzaileak SCORM-a ikusi ahal izango du, baina API komunikazioak huts egingo du eta ez da gordeko kalifikazioei buruzko informaziorik.';
 $string['forcejavascriptmessage'] = 'JavaScript beharrezkoa da objektu hau ikusteko, mesedez, gaitu JavaScript zure nabigatzailean eta berriz saiatu.';
-$string['forcenewattempt'] = 'Behartu saiakera berria';
-$string['forcenewattemptdesc'] = 'Ezarpen honek "Saiakera berria hasi" laukitxoa ezkutatu eta berrikuspen modua saihesten du. SCORM-ek ikasle bati ahalbidetzen dio edozein unetan saiakera batera itzultzera eta saiakera beri bat hastea ez da posiblea izango aurreko saiakera "Osatua", "Gaindituta" edo "Gainditu gabea" egoera izan arte. SCORM paketeak ez badu hau egiten, ikaslea beti bueltatuko da saiakera berdinera.';
-$string['forcenewattempt_help'] = 'Ezarpen honek "Saiakera berria hasi" laukitxoa ezkutatu eta berrikuspen modua saihesten du.
+$string['forcenewattempts'] = 'Behartu saiakera berria';
+$string['forcenewattempts_help'] = '3 aukera dago:
 
-SCORM-ek ikasle bati ahalbidetzen dio edozein unetan saiakera batera itzultzera eta saiakera beri bat hastea ez da posiblea izango aurreko saiakera "Osatua", "Gaindituta" edo "Gainditu gabea" egoera izan arte. SCORM paketeak ez badu hau egiten, ikaslea beti bueltatuko da saiakera berdinera.';
+* Ez - Aurreko saiakera osatu bada, gainditu edo gainditu gabe, ikasleari aurrebista-moduan sartu edo saiakera berri bat hasteko aukera emango zaio.
+* Aurreko saiakera osatu denean, gaindituta edo gainditu gabe - Hemen SCORM paketearen egoera \'osatuta\', \'gaindituta\' edo \'gainditu gabea\' izan beharko da.
+* Beti - Saiakera berri bakoitzean SCORM jarduerak saiakera berri bat sortuko du eta ikaslea ez da aurreko saiakeran heldu zeneko puntura bueltatuko.';
 $string['found'] = 'Manifestua aurkitu da';
 $string['frameheight'] = 'Marko edo leihoaren altuera.';
 $string['framewidth'] = 'Marko edo leihoaren zabalera.';
@@ -193,7 +196,7 @@ $string['hidebrowsedesc'] = 'Aurrebista-moduak baimentzen die ikasleei jarduera 
 $string['hidebrowse_help'] = 'Aurrebista-moduak baimentzen die ikasleei jarduera arakatzea saiakera egin aurretik. Aurrebista-modua desgaitua badago, Aurreikusi botoia ezkutatuko da.';
 $string['hideexit'] = 'Ezkutatu irteera-esteka';
 $string['hidereview'] = 'Ezkutatu berrikusketa-esteka';
-$string['hidetoc'] = 'Ikastaroaren egitura erakutsi erreproduzitzailean';
+$string['hidetoc'] = 'Erakutsi ikastaroaren egitura erreproduzitzailean';
 $string['hidetocdesc'] = 'Ezarpen honek zehazten du nola erakutsiko den eduki-taula SCORM erreproduzitzailean.';
 $string['hidetoc_help'] = 'Nola erakutsiko den eduki-taula SCORM erreproduzitzailean.';
 $string['highestattempt'] = 'Saiakera altuena';
@@ -275,6 +278,7 @@ $string['notattempted'] = 'Saiatu gabea';
 $string['not_corr_type'] = '{$a->tag} etiketari ez dagokio mota hau';
 $string['notopenyet'] = 'Sentitzen dugu, jarduera hau ez dago eskuragarri {$a} arte';
 $string['objectives'] = 'Helburuak';
+$string['openafterclose'] = 'Ezarri duzun hasiera-data itxiera-data baino beranduagokoa da.';
 $string['optallstudents'] = 'erabiltzaile guztiak';
 $string['optattemptsonly'] = 'saiakerak egin dituzten erabiltzaileak baino ez';
 $string['options'] = 'Aukerak (nabigatzaile batzuek ez dute onartzen)';
@@ -337,8 +341,6 @@ $string['reviewmode'] = 'Berrikusketa-modua';
 $string['rightanswer'] = 'Erantzun zuzena';
 $string['scoes'] = 'Ikasteko objektuak';
 $string['score'] = 'Puntuazioa';
-$string['scorm12standard'] = 'Gaitu SCORM 1.2 estandarraren modua';
-$string['scorm12standarddesc'] = 'Ezarpen hau desgaituta Moodle-k SCORM 1.2 espezifikazioak baimentzen duena baino datu gehiago gordetzeko aukera ematen du. Desgaitu aukera hau zure SCORM paketeak erabiltzaileak testu luzeak sartzeko aukera ematen badu edota suspend_data eremuan datu kopuru handiak sartzen saiatzen bada.';
 $string['scorm:addinstance'] = 'Gehitu SCORM pakete berria';
 $string['scormclose'] = 'Noiz arte eskuragarri';
 $string['scormcourse'] = 'Ikasteko ikastaroa';
@@ -349,7 +351,9 @@ $string['scormloggingon'] = 'API sarbidea zabalik dago';
 $string['scormopen'] = 'Noiztik eskuragarri';
 $string['scormresponsedeleted'] = 'Erabiltzailearen saiakerak ezabatuta';
 $string['scorm:savetrack'] = 'Gorde pistak';
-$string['scorm:skipview'] = 'Berrikusketari jaramonik ez egin';
+$string['scorm:skipview'] = 'Saltatu berrikusketa';
+$string['scormstandard'] = 'SCORM estandarraren modua';
+$string['scormstandarddesc'] = 'Desgaituta dagoenean, Moodle-k SCORM 1.2 paketeei espezifikazioak baimendutakoa baino datu gehiago gordetzea baimenduko die, eta Moodle-ko izen osoaren formatua erabiltzen du erabiltzaileen izenak SCORM paketera pasatzerakoan.';
 $string['scormtype'] = 'Mota';
 $string['scormtype_help'] = 'Ezarpen honek paketea ikastaroan gehitzeko modua zehazten du. 4 aukera ezberdin daude:
 
@@ -390,7 +394,7 @@ $string['too_many_children'] = 'Etiketa honek ({$a->tag}) seme-alaba gehiegi dau
 $string['totaltime'] = 'Ordua';
 $string['trackcorrectcount'] = 'Zenbaketa zuzena';
 $string['trackcorrectcount_help'] = 'Galderarentzako emaitz egokien kopurua';
-$string['trackid'] = 'Id';
+$string['trackid'] = 'IDa';
 $string['trackid_help'] = 'Hau da zure SCORM paketeak galdera honentzat ezarritako identifikatzailea, SCORM espezifikazioak ez du galderen testu osoa ematea uzten.';
 $string['trackingloose'] = 'KONTUZ: Pakete honen miaketa-datuak galdu egingo dira!';
 $string['tracklatency'] = 'Itxarote-denbora';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_month', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_calendar_month', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   block_calendar_month
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_month:addinstance'] = 'Lägg till ett nytt block för kalender';
-$string['calendar_month:myaddinstance'] = 'Lägg till ett nytt block för kalender till Mitt hem';
+$string['calendar_month:myaddinstance'] = 'Lägg till ett nytt block för kalender på Mitt Moodle';
 $string['pluginname'] = 'Kalender';
 $string['privacy:metadata'] = 'Kalender-blocket visar enbart befintlig kalenderdata.';

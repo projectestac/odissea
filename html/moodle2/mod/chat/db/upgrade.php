@@ -29,9 +29,6 @@ function xmldb_chat_upgrade($oldversion) {
 
     $dbman = $DB->get_manager();
 
-    // Moodle v3.1.0 release upgrade line.
-    // Put any upgrade step following this.
-
     // Automatically generated Moodle v3.2.0 release upgrade line.
     // Put any upgrade step following this.
 
@@ -67,6 +64,12 @@ function xmldb_chat_upgrade($oldversion) {
         // Savepoint reached.
         upgrade_mod_savepoint(true, 2017111301, 'chat');
     }
+
+    // Automatically generated Moodle v3.5.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v3.6.0 release upgrade line.
+    // Put any upgrade step following this.
 
     return true;
 }

@@ -50,7 +50,7 @@ Feature: Mapping courses in a feedback
     And I add a "Multiple choice" question to the feedback with:
       | Question               | this is a simple multiple choice    |
       | Label                  | multichoicesimple                   |
-      | Multiple choice type   | Multiple choice - single answer allowed (dropdownlist) |
+      | Multiple choice type   | Multiple choice - single answer allowed (drop-down menu) |
       | Multiple choice values | option d\noption e\noption f                           |
     And I log out
     And I log in as "teacher"
@@ -74,7 +74,7 @@ Feature: Mapping courses in a feedback
     And I log in as "user1"
     And I am on site homepage
     And I follow "Course feedback"
-    And I follow "Answer the questions..."
+    And I follow "Answer the questions"
     And I should see "Acceptance test site" in the ".feedback_form" "css_element"
     And I set the following fields to these values:
       | option a                         | 1        |
@@ -83,7 +83,7 @@ Feature: Mapping courses in a feedback
     And I press "Continue"
     And I am on "Course 1" course homepage
     And I click on "Course feedback" "link" in the "Feedback" "block"
-    And I follow "Answer the questions..."
+    And I follow "Answer the questions"
     And I should not see "Acceptance test site" in the ".feedback_form" "css_element"
     And I should see "C1" in the ".feedback_form" "css_element"
     And I set the following fields to these values:
@@ -92,12 +92,12 @@ Feature: Mapping courses in a feedback
     And I press "Submit your answers"
     And I press "Continue"
     And I click on "Course feedback" "link" in the "Feedback" "block"
-    And I should not see "Answer the questions..."
+    And I should not see "Answer the questions"
     And I log out
     And I log in as "user2"
     And I am on "Course 1" course homepage
     And I click on "Course feedback" "link" in the "Feedback" "block"
-    And I follow "Answer the questions..."
+    And I follow "Answer the questions"
     And I should not see "Acceptance test site" in the ".feedback_form" "css_element"
     And I should see "C1" in the ".feedback_form" "css_element"
     And I set the following fields to these values:
@@ -138,10 +138,6 @@ Feature: Mapping courses in a feedback
     And I follow "Map feedback to courses"
     And I set the field "Courses" to "Course 2"
     And I set the field "Courses" to "Course 3"
-    # Weird solution to make the editable field to lose the focus
-    # but with the focus, "save changes" uses to fail because of
-    # the suggestions hiding the button.
-    And I press key "27" in the field "Courses"
     And I press "Save changes"
     And I should see "Course mapping has been changed"
     And I log out
@@ -150,7 +146,7 @@ Feature: Mapping courses in a feedback
     And I am on site homepage
     And I follow "Course feedback"
     And I should see "You can only access this feedback from a course"
-    And I should not see "Answer the questions..."
+    And I should not see "Answer the questions"
 
     And I am on "Course 1" course homepage
     And "Feedback" "block" should not exist
@@ -158,7 +154,7 @@ Feature: Mapping courses in a feedback
 
     And I am on "Course 2" course homepage
     And I click on "Course feedback" "link" in the "Feedback" "block"
-    And I follow "Answer the questions..."
+    And I follow "Answer the questions"
     And I should not see "Acceptance test site" in the ".feedback_form" "css_element"
     And I should see "C2" in the ".feedback_form" "css_element"
     And I set the following fields to these values:
@@ -167,12 +163,12 @@ Feature: Mapping courses in a feedback
     And I press "Submit your answers"
     And I press "Continue"
     And I click on "Course feedback" "link" in the "Feedback" "block"
-    And I should not see "Answer the questions..."
+    And I should not see "Answer the questions"
     And I log out
     And I log in as "user2"
     And I am on "Course 2" course homepage
     And I click on "Course feedback" "link" in the "Feedback" "block"
-    And I follow "Answer the questions..."
+    And I follow "Answer the questions"
     And I should not see "Acceptance test site" in the ".feedback_form" "css_element"
     And I should see "C2" in the ".feedback_form" "css_element"
     And I set the following fields to these values:
@@ -184,7 +180,7 @@ Feature: Mapping courses in a feedback
     And I log in as "user3"
     And I am on "Course 3" course homepage
     And I click on "Course feedback" "link" in the "Feedback" "block"
-    And I follow "Answer the questions..."
+    And I follow "Answer the questions"
     And I should not see "Acceptance test site" in the ".feedback_form" "css_element"
     And I should see "C3" in the ".feedback_form" "css_element"
     And I set the following fields to these values:

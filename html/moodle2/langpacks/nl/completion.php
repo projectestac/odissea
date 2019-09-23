@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'completion', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,7 +101,7 @@ $string['completionnotenabledforcourse'] = 'Voltooien is niet ingeschakeld voor 
 $string['completionnotenabledforsite'] = 'Voltooien is niet ingeschakeld voor deze site';
 $string['completion-n-override'] = 'Niet voltooid (ingesteld door {$a})';
 $string['completionondate'] = 'Datum';
-$string['completionondatevalue'] = 'Gebruiker moet aangemeld blijven tot';
+$string['completionondatevalue'] = 'Datum wanneer de cursus als voltooid gemarkeerd zal worden';
 $string['completion-pass'] = 'Voltooid (voldoende cijfer behaald)';
 $string['completionsettingslocked'] = 'Instellingen voor voltooien geblokkeerd';
 $string['completion-title-manual-n'] = 'Markeer als voltooid: {$a}';
@@ -185,8 +185,8 @@ $string['overallaggregation_any'] = 'De cursus is voltooid wanneer aan EEN van d
 $string['pending'] = 'Bezig';
 $string['periodpostenrolment'] = 'Periode na aanmelding';
 $string['privacy:metadata:completionstate'] = 'Als de activiteit voltooid is';
-$string['privacy:metadata:course'] = 'Een cursusidentificatie.';
-$string['privacy:metadata:coursecompletedsummary'] = 'Bewaart informatie over leerlingen die bepaalde criteria in de cursus behaald hebben.';
+$string['privacy:metadata:course'] = 'Een cursusidentificatie';
+$string['privacy:metadata:coursecompletedsummary'] = 'Bewaart informatie over leerlingen die bepaalde criteria in de cursus voltooid hebben';
 $string['privacy:metadata:coursemoduleid'] = 'De activiteitsID';
 $string['privacy:metadata:coursemodulesummary'] = 'Bewaart het voltooiingstijdstip voor een gebruiker';
 $string['privacy:metadata:coursesummary'] = 'Bewaart cursus voltooiingsgegevens van een gebruiker.';

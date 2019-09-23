@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -138,7 +138,7 @@ $string['currentstage16'] = 'إكتمل';
 $string['currentstage2'] = 'إعدادات المخطط';
 $string['currentstage4'] = 'التأكيد والاستعراض';
 $string['currentstage8'] = 'إجراء نسخ احتياطي';
-$string['enterasearch'] = 'ادخل بحثا';
+$string['enterasearch'] = 'ادخل للبحث';
 $string['error_block_for_module_not_found'] = 'تم العثور على كتلة يتيمة للمساق. هذه الكتلة لن تضمّن في النسخة الاحتياطية.';
 $string['errorcopyingbackupfile'] = 'فشل لنسخ ملف النسخ الاحتياطي إلى مجلد مؤقت قبل استعادة.';
 $string['error_course_module_not_found'] = 'تم العثور على كتلة يتيمة (id: {$a->bid}) لنموذج المساق (id: {$a->mid}). هذه الكتلة لن تضمّن في النسخة الاحتياطية.';
@@ -234,7 +234,7 @@ $string['replacerestoredefaults'] = 'استعادة الإعدادات الاف�
 $string['restoreactivity'] = 'إسترجاع النشاط';
 $string['restorecourse'] = 'إسترجاع المقرر';
 $string['restorecoursesettings'] = 'إعدادات المقرر';
-$string['restoreexecutionsuccess'] = 'تم إسترجاع المساق بنجاح، إضغط على زر إكمال في الأسفل لمشاهدة المقرر الذي قمت بإستراجاعة';
+$string['restoreexecutionsuccess'] = 'تم إسترجاع المقرر بنجاح، إضغط على زر إكمال في الأسفل لمشاهدة المقرر الذي قمت بإستراجاعة';
 $string['restorefileweremissing'] = 'تعذرت استعادة بعض الملفات لأنها كانت مفقودة في النسخة الاحتياطية.';
 $string['restorenewcoursefullname'] = 'اسم المقرر الجديد';
 $string['restorenewcourseshortname'] = 'مختصر اسم المقرر الجديد';

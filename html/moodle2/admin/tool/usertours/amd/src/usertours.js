@@ -67,13 +67,16 @@ function(ajax, BootstrapTour, $, templates, str, log, notification) {
                     }
                 ])[0],
                 templates.render('tool_usertours/tourstep', {})
-            ).then(function(response, template) {
+            )
+            .then(function(response, template) {
                 return usertours.startBootstrapTour(tourId, template[0], response.tourconfig);
-            }).always(function() {
+            })
+            .always(function() {
                 M.util.js_complete('admin_usertour_fetchTour' + tourId);
 
                 return;
-            }).fail(notification.exception);
+            })
+            .fail(notification.exception);
         },
 
         /**
@@ -98,15 +101,17 @@ function(ajax, BootstrapTour, $, templates, str, log, notification) {
                 ele = $('body');
             }
             templates.render('tool_usertours/resettour', {})
-                .done(function(html, js) {
-                    templates.appendNodeContents(ele, html, js);
+            .then(function(html, js) {
+                templates.appendNodeContents(ele, html, js);
 
-                    return;
-                }).always(function() {
-                    M.util.js_complete('admin_usertour_addResetLink');
+                return;
+            })
+            .always(function() {
+                M.util.js_complete('admin_usertour_addResetLink');
 
-                    return;
-                }).fail();
+                return;
+            })
+            .fail();
         },
 
         /**

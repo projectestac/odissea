@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_self', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,8 @@ $string['cohortonly_help'] = 'Självregistrering kan begränsas till medlemmar a
 $string['customwelcomemessage'] = 'Välkomstmeddelande';
 $string['defaultrole'] = 'Förinställd roll för användare';
 $string['defaultrole_desc'] = 'Bestäm vilken roll användare som anger kursnyckeln ska få i kursen.';
+$string['deleteselectedusers'] = 'Ta bort registreringar för valda deltagare';
+$string['editselectedusers'] = 'Editera valda användarregistreringar';
 $string['enrolenddate'] = 'Slutdatum';
 $string['enrolenddate_help'] = 'Om aktiverat, kan användare inte koppla sig till kurssidan med kursnyckeln efter det angivna datumet.';
 $string['enrolenddaterror'] = 'Datum för registrering kan inte vara senare än startdatumet.';
@@ -46,6 +48,8 @@ $string['expirymessageenrolledbody'] = 'Hej {$a->user},
 din registrering i kursen \'{$a->course}\' upphör den {$a->timeend}. Efter det kommer du inte att kunna logga in till kursen längre.
 
 Om du behöver hjälp eller har frågor är du välkommen att kontakta {$a->enroller}.';
+$string['expirynotifyall'] = 'Registrerare och registrerad användare';
+$string['expirynotifyenroller'] = 'Registrerare endast';
 $string['groupkey'] = 'Använd grupp-kursnycklar.';
 $string['groupkey_desc'] = 'Använd grupp-kursnycklar som förinställning.';
 $string['keyholder'] = 'Du bör ha fått denna kursnyckel från';

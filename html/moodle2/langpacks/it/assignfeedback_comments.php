@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,9 @@ $string['default_help'] = 'Questo metodo di commento sarà abilitato di default 
 $string['enabled'] = 'Commenti';
 $string['enabled_help'] = 'Il valutatore potrà abbinare commenti alle consegne.';
 $string['pluginname'] = 'Commenti';
+$string['privacy:commentpath'] = 'Commenti ai feedback';
 $string['privacy:metadata:assignmentid'] = 'Identificativo del compito';
 $string['privacy:metadata:commentpurpose'] = 'Testo del commento.';
+$string['privacy:metadata:filepurpose'] = 'File di commento inviati dal docente allo studente,';
 $string['privacy:metadata:gradepurpose'] = 'Identificativo della valutazione associato al commento.';
 $string['privacy:metadata:tablesummary'] = 'Memorizza i commenti lasciati dai valutatori, sulla consegna, come feedback per lo studente.';

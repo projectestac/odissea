@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hub', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -173,7 +173,7 @@ $string['registeredmoodleorg'] = 'Moodle ({$a})';
 $string['registeredon'] = 'Where your site is registered';
 $string['registeredsites'] = 'Registered sites';
 $string['registereduserdevices'] = 'Number of users with registered mobile devices ({$a})';
-$string['registermoochtips'] = 'Register your site with Moodle to get security alerts and access to Moodle.net, our course sharing platform.';
+$string['registermoochtips'] = 'By registering, you will receive security alerts, can activate mobile app push notifications from your site, and are contributing to our Moodle statistics of the worldwide community.';
 $string['registersite'] = 'Register with {$a}';
 $string['registerwith'] = 'Register with a hub';
 $string['registrationconfirmed'] = 'Site registration confirmed';
@@ -207,10 +207,10 @@ $string['shareonhub'] = 'Upload this course to a hub';
 $string['sharepublication_help'] = 'A backup of this course will be available on Moodle.net for people to restore and use on their own site.';
 $string['siteadmin'] = 'Administrator';
 $string['siteadmin_help'] = 'The full name of the site administrator.';
-$string['sitecommnews'] = 'Updates about Moodle news and features';
-$string['sitecommnews_help'] = 'You have the option of subscribing to our low volume email list including a newsletter about happenings in the Moodle community.';
-$string['sitecommnewsno'] = 'No, I do not want to receive any email from Moodle HQ';
-$string['sitecommnewsyes'] = 'Yes please, include me in Moodle’s regular e-newsletter updates';
+$string['sitecommnews'] = 'Moodle newsletter';
+$string['sitecommnews_help'] = 'You have the option of subscribing to our Moodle newsletter. You may unsubscribe at any time.';
+$string['sitecommnewsno'] = 'No, I do not wish to receive any emails';
+$string['sitecommnewsyes'] = 'Yes, I would like to receive the Moodle newsletter';
 $string['sitecountry'] = 'Country';
 $string['sitecountry_help'] = 'The country your organisation or institution is located in.';
 $string['sitecreated'] = 'Site created';
@@ -234,8 +234,8 @@ $string['siteprivacypublished'] = 'Only display my site name';
 $string['siteregconfcomment'] = 'Your site needs a final confirmation on {$a} (in order to avoid spam on {$a})';
 $string['siteregistrationcontact'] = 'Display contact form';
 $string['siteregistrationcontact_help'] = 'If you allow it, other people in our Moodle community (who need a login account) can contact you via a form on our Moodle community site. However, they will never be able to see your email address.';
-$string['siteregistrationemail'] = 'Notifications about important security and technical issues.';
-$string['siteregistrationemail_help'] = 'You have the option of subscribing to our low volume email list for important news (on security issues or new releases).';
+$string['siteregistrationemail'] = 'Notifications of new Moodle releases, security alerts and other important news';
+$string['siteregistrationemail_help'] = 'You have the option of subscribing to our low-volume mailing list for notifications of new Moodle releases, security alerts and other important news. You may unsubscribe at any time.';
 $string['siteregistrationupdated'] = 'Site registration updated';
 $string['siterelease'] = 'Moodle release';
 $string['siterelease_help'] = 'Moodle release number of this site.';

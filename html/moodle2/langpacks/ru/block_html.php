@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_html', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,10 +30,9 @@ $string['configallowadditionalcssclasses'] = 'Добавочный параме�
 $string['configclasses'] = 'Дополнительные классы CSS';
 $string['configclasses_help'] = 'Назначение этой конфигурации - поддержка тем оформления, помогающая различать HTML-блоки друг от друга. Любые введенные здесь классы CSS (разделенные пробелами) будут добавлены к классам блоков по умолчанию.';
 $string['configcontent'] = 'Содержимое';
-$string['configtitle'] = 'Название блока';
+$string['configtitle'] = 'Название HTML-блока';
 $string['html:addinstance'] = 'Добавлять новый блок «HTML»';
 $string['html:myaddinstance'] = 'Добавлять новый блок «HTML» на страницу «Личный кабинет»';
-$string['leaveblanktohide'] = 'Чтобы убрать заголовок у блока, оставьте поле пустым';
 $string['newhtmlblock'] = '(новый блок HTML)';
 $string['pluginname'] = 'HTML';
 $string['privacy:metadata:block'] = 'Блок «HTML» хранит все свои данные в подсистеме блоков.';

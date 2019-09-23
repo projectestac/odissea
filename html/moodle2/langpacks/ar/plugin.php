@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'plugin', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -155,7 +155,7 @@ $string['type_mnetservice'] = 'خدمة MNet';
 $string['type_mnetservice_plural'] = 'خدمات MNet';
 $string['type_mod'] = 'وحدة نشاط';
 $string['type_mod_plural'] = 'وحدات النشاط';
-$string['type_plagiarism'] = 'منع الانتحال';
+$string['type_plagiarism'] = 'مكون إضافي لمنع الانتحال';
 $string['type_plagiarism_plural'] = 'مكونات إضافية لمنع الانتحال';
 $string['type_portfolio'] = 'محفظة';
 $string['type_portfolio_plural'] = 'محافظ';
@@ -168,7 +168,7 @@ $string['type_qformat_plural'] = 'تنسيقات إستيراد/تصدير ال�
 $string['type_qtype'] = 'نوع السؤال';
 $string['type_qtype_plural'] = 'أنواع الأسئلة';
 $string['type_report'] = 'تقرير الموقع';
-$string['type_report_plural'] = 'تقارير الموقع';
+$string['type_report_plural'] = 'تقارير';
 $string['type_repository'] = 'مخزن';
 $string['type_repository_plural'] = 'مستودعات';
 $string['type_search'] = 'محرك بحث';

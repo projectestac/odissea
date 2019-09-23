@@ -48,6 +48,9 @@ class pgsql_native_moodle_database extends moodle_database {
     /** @var int Number of cursors used (for constructing a unique ID) */
     protected $cursorcount = 0;
 
+    /** @var int Default number of rows to fetch at a time when using recordsets with cursors */
+    const DEFAULT_FETCH_BUFFER_SIZE = 100000;
+
     /**
      * Detects if all needed PHP stuff installed.
      * Note: can be used before connect()
@@ -182,6 +185,17 @@ class pgsql_native_moodle_database extends moodle_database {
         if ($status === false or $status === PGSQL_CONNECTION_BAD) {
             $this->pgsql = null;
             throw new dml_connection_exception($dberr);
+        }
+
+        if (!empty($this->dboptions['dbpersist'])) {
+            // There are rare situations (such as PHP out of memory errors) when open cursors may
+            // not be closed at the end of a connection. When using persistent connections, the
+            // cursors remain open and 'get in the way' of future connections. To avoid this
+            // problem, close all cursors here.
+            $result = pg_query($this->pgsql, 'CLOSE ALL');
+            if ($result) {
+                pg_free_result($result);
+            }
         }
 
         if (!empty($this->dboptions['dbhandlesoptions'])) {
@@ -779,7 +793,7 @@ class pgsql_native_moodle_database extends moodle_database {
         if (array_key_exists('fetchbuffersize', $this->dboptions)) {
             return (int)$this->dboptions['fetchbuffersize'];
         } else {
-            return 0; // Disabled by default.
+            return self::DEFAULT_FETCH_BUFFER_SIZE;
         }
     }
 
@@ -1493,5 +1507,14 @@ class pgsql_native_moodle_database extends moodle_database {
      */
     private function trim_quotes($str) {
         return trim(trim($str), "'\"");
+    }
+
+    /**
+     * Postgresql supports full-text search indexes.
+     *
+     * @return bool
+     */
+    public function is_fulltext_search_supported() {
+        return true;
     }
 }

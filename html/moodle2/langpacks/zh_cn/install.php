@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -135,15 +135,11 @@ $string['memorylimithelp'] = '<p>您服务器的PHP内存限制是{$a}。</p>
 <blockquote>php_value memory_limit 40M</blockquote>
 <p>然而，在一些服务器上这会让<b>所有</b>PHP页面无法正常工作(在访问页面时会有错误)，因此您可能不得不删除.htaccess文件。</p></li>
 </ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'PHP的MSSQL 扩展并未安装正确，因此无法与SQL*Server通信。请检查您的php.ini文件或重新编译PHP。';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP的MySQLi扩展并未安装正确，因此无法与MySQL通信。请检查您的php.ini文件或重新编译PHP。对PHP4，MySQLi扩展不可用。';
 $string['nativemariadbhelp'] = '<p>这里必须指定数据库来保存Moodle的配置和数据。</p>
 <p>数据库名、数据库用户名和密码是必须字段，表前缀可选</p>
 <p>如果指定的数据库不存在且指定的数据库用户有足够权限，Moodle会自动创建一个数据库</p>
 <p>驱动程序和MyISAM存储引擎不兼容</p>';
-$string['nativemssql'] = 'SQL*服务器 FreeTDS (native/mssql)';
-$string['nativemssqlhelp'] = '现在，您需要配置数据库，Moodle的大部分数据都将保存于此。
-这个数据库必须已经创建，并且有用户名和密码可以访问它。必须设置表前缀。';
 $string['nativemysqli'] = '改进的MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '现在，您需要配置数据库，Moodle的大部分数据都将保存于此。
 用户名和密码必须已经存在。如果该用户有相应权限，数据库会被自动创建。表前缀可选。';

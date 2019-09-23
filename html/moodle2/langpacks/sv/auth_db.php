@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,7 +64,6 @@ $string['auth_dbtype_key'] = 'Databas';
 $string['auth_dbupdatinguser'] = 'Uppdaterar användare {$a->name} id {$a->id}';
 $string['auth_dbuser'] = 'Användarnamn med läsbehörighet till databasen';
 $string['auth_dbuser_key'] = 'DB-användare';
-$string['auth_dbusernotexist'] = 'Det går inte att uppdatera en icke-existerande användare: {$a}';
 $string['auth_dbuserstoadd'] = 'Inmatningar från användare som ska läggas till: {$a}';
 $string['auth_dbuserstoremove'] = 'Inmatningar från användare som ska tas bort:: {$a}';
 $string['pluginname'] = 'Extern databas';

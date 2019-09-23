@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['err_nopunctuation'] = 'Vous ne devez saisir aucune ponctuation dans ce 
 $string['err_numeric'] = 'Vous devez spécifier un nombre dans ce champ.';
 $string['err_rangelength'] = 'Vous devez taper entre {$a->format[0]} et {$a->format[1]} caractères dans ce champ.';
 $string['err_required'] = 'Vous devez remplir ce champ.';
+$string['err_wrappingwhitespace'] = 'La valeur ne doit pas commencer ou se terminer par une espace.';
 $string['err_wrongfileextension'] = 'Certains fichiers ({$a->wrongfiles}) ne peuvent pas être déposés. Seuls les types de fichiers {$a->whitelist} sont autorisés.';
 $string['filesofthesetypes'] = 'Types de fichier acceptés :';
 $string['filetypesany'] = 'Tous les types de fichier';
@@ -73,7 +74,6 @@ $string['passwordunmaskrevealhint'] = 'Révéler';
 $string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Mode d\'affichage récemment affiché des éléments du sélecteur de fichiers';
 $string['privacy:preference:filemanager_recentviewmode'] = 'Votre façon préférée d\'afficher les fichiers dans le sélecteur de fichier est : {$a}';
 $string['requiredelement'] = 'Champ requis';
-$string['revealpassword'] = 'Révéler';
 $string['security'] = 'Sécurité';
 $string['selectallornone'] = 'Tout/ne rien sélectionner';
 $string['selected'] = 'Sélectionné';

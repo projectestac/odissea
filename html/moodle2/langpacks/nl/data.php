@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['checkbox'] = 'Keuzevakjes';
 $string['chooseexportfields'] = 'Kies de velden die je wil exporteren';
 $string['chooseexportformat'] = 'Kies het formaat waarnaar je wil exporteren';
 $string['chooseorupload'] = 'Kies bestand';
+$string['closebeforeopen'] = 'Je hebt een einddatum opgegeven voor de startdatum';
 $string['columns'] = 'Kolommen';
 $string['comment'] = 'Commentaar';
 $string['commentdeleted'] = 'Commentaar verwijderd';
@@ -194,10 +195,8 @@ $string['fieldheightlistview'] = 'Hoogte in lijstscherm';
 $string['fieldheightsingleview'] = 'Hoogte in scherm per lijn';
 $string['fieldids'] = 'Veld identiteit';
 $string['fieldmappings'] = 'Veldverwijzingen';
-$string['fieldmappings_help'] = '<p align="center"><strong>Veldverwijzingen</strong></p>
-<p>Met dit menu kun je data behouden van een bestaande databank. Om de data van een veld te bewaren, moet je deze verwijzen naar een nieuw veld, waar de data dan zal terecht komen. Elk veld kan ook leeg gelaten worden als je er geen gegevens wil naar toe kopiëren. De gegevens uit een oud veld dat niet naar een nieuw veld verwezen wordt, zullen verloren gaan.</p>
-<p>Je kunt alleen velden van hetzelfde type naar elkaar laten verwijzen, dus elk dropdownmenu zal andere velden bevatten. Je moet er ook voor opletten om een oud veld niet naar meer dan één nieuwe velden te laten verwijzen.
-</p>';
+$string['fieldmappings_help'] = 'Met dit menu kun je data behouden van een bestaande databank. Om de data van een veld te bewaren, moet je deze verwijzen naar een nieuw veld, waar de data dan zal terecht komen. Elk veld kan ook leeg gelaten worden als je er geen gegevens wil naar toe kopiëren. De gegevens uit een oud veld dat niet naar een nieuw veld verwezen wordt, zullen verloren gaan.
+Je kunt alleen velden van hetzelfde type naar elkaar laten verwijzen, dus elk dropdownmenu zal andere velden bevatten. Je moet er ook voor opletten om een oud veld niet naar meer dan één nieuwe velden te laten verwijzen.';
 $string['fieldname'] = 'Veldnaam';
 $string['fieldnotmatched'] = 'Volgende velden in je bestand zijn niet bekend in de databank: {$a}';
 $string['fieldoptions'] = 'Opties (Eén per lijn)';
@@ -219,10 +218,10 @@ $string['fromfile_help'] = '<p align=\'center\'><strong>Sjabloonsets importeren 
 <p>Gebruik dit om sjabloonsets die je op je computer bewaard hebt met de exportfunctie te uploaden .</p>';
 $string['generateerror'] = 'Niet alle bestanden gegenereerd!';
 $string['header'] = 'Koptekst';
-$string['headeraddtemplate'] = 'Definieer de interface voor het bewerken van items';
+$string['headeraddtemplate'] = 'Definieert de interface voor het toevoegen of bewerken van items';
 $string['headerasearchtemplate'] = 'Definieert de interface voor geavanceerd zoeken';
 $string['headercsstemplate'] = 'Definieer locale CSS-stijlen voor de andere sjablonen';
-$string['headerjstemplate'] = 'Definieert eigen Javascript voor de andere sjablonen';
+$string['headerjstemplate'] = 'Definieert eigen Javascript voor het manipuleren hoe elementen getoond worden, in de lijst, enkel of voeg sjablonen toe';
 $string['headerlisttemplate'] = 'Definieer de interface voor het bladeren door meerdere items';
 $string['headerrsstemplate'] = 'Definieer hoe items verschijnen in RSS-feeds';
 $string['headersingletemplate'] = 'Definieer de interface voor het bladeren per item';
@@ -289,24 +288,11 @@ $string['movezipfailed'] = 'Kan Zip niet verplaatsen';
 $string['multientry'] = 'Herhaald invoeren';
 $string['multimenu'] = 'Menu (meerdere selecties)';
 $string['multipletags'] = 'Meerdere tags gevonden! Sjabloon niet bewaard';
-$string['namecheckbox'] = 'Veld met Selectievakje';
-$string['namedate'] = 'Datumveld';
-$string['namefile'] = 'Veld voor bestand';
-$string['namelatlong'] = 'Breedtegraad/lengtegraad-veld';
-$string['namemenu'] = 'Veld voor menu';
-$string['namemultimenu'] = 'Veld voor Meerkeuzemenu';
-$string['namenumber'] = 'Veld voor getallen';
-$string['namepicture'] = 'Veld voor afbeelding';
-$string['nameradiobutton'] = 'Veld voor keuzeknop';
-$string['nametext'] = 'Veld voor tekst';
-$string['nametextarea'] = 'Veld voor tekstgebied';
-$string['nameurl'] = 'Veld voor URL';
 $string['newentry'] = 'Nieuw item';
 $string['newfield'] = 'Maak een nieuw veld';
-$string['newfield_help'] = '<p align="center"><strong>Velden</strong></p>
+$string['newfield_help'] = 'Een veld maakt het invoeren van gegevens mogelijk. Elk item in een databank-activiteit kan meerdere velden bevatten en die velden kunnen verschillende types zijn, zoals bijvoorbeeld een datumveld waarmee deelnemers een dag, maand en jaar uit een rolmenu kunnen kiezen, een afbeeldingsveld waarin deelnemers een afbeeldingsbestand kunnen uploaden, of een selectieveld waarmee gebruikers één of meerdere opties kunnen kiezen.
 
-<p>Op dit scherm kun je de velden die je gaat gebruiken in je databank, selecteren.</p>.
-<p>In elk veld kun je verschillende types data zetten, met verschillende invoer interfaces.</p>';
+Elk veld moet een unieke veldnaam hebben. De beschrijving is optioneel.';
 $string['noaccess'] = 'Je hebt geen toegang tot deze pagina';
 $string['nodefinedfields'] = 'Nieuw sjabloon heeft geen gedefiniëerde velden';
 $string['nofieldcontent'] = 'Veldinhoud niet gevonden';
@@ -324,6 +310,7 @@ $string['numberrssarticles'] = 'Items in de RSS-feed';
 $string['numnotapproved'] = 'Wachtend';
 $string['numrecords'] = '{$a} records';
 $string['ods'] = '<acronym title="OpenDocument SRekenblad">ODS</acronym> (OpenOffice)';
+$string['openafterclose'] = 'Je hebt een startdatum opgegeven na de einddatum';
 $string['optionaldescription'] = 'Korte beschrijving (optioneel)';
 $string['optionalfilename'] = 'Bestandsnaam (optioneel)';
 $string['other'] = 'Andere';
@@ -347,7 +334,7 @@ $string['privacy:metadata:data_content:content1'] = 'Bijkomende inhoud 1';
 $string['privacy:metadata:data_content:content2'] = 'Bijkomende inhoud 2';
 $string['privacy:metadata:data_content:content3'] = 'Bijkomende inhoud 3';
 $string['privacy:metadata:data_content:content4'] = 'Bijkomende inhoud 4';
-$string['privacy:metadata:data_content:fieldid'] = 'VelddefinitieID';
+$string['privacy:metadata:data_content:fieldid'] = 'Velddefinitie-ID';
 $string['privacy:metadata:datafieldnpluginsummary'] = 'Velden voor de databank activiteitsmodule';
 $string['privacy:metadata:data_records'] = 'Representeert gegevens in de databank activiteitsmodule';
 $string['privacy:metadata:data_records:approved'] = 'Goedkeuringsstatus';

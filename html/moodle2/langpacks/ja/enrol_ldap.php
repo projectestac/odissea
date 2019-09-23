@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_ldap', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -112,14 +112,14 @@ $string['pluginname_desc'] = '<p>あなたのユーザ登録をコントロー�
 <p>このプラグインでは新しいグループがLDAP内に作成された場合、自動的に新しいコースを作成することも可能です。</p>';
 $string['pluginnotenabled'] = 'プラグインが有効にされていません!';
 $string['privacy:metadata'] = 'LDAP登録プラグインはどのような個人データも保存しません。';
-$string['role_mapping'] = '<p>LDAPからそれぞれのロールを割り当てる場合、あなたはコースグループに割り当てられているロールのコンテクスト一覧を指定する必要があります。異なるコンテクストは「;」で分離してください。</p><p>また、あなたのLDAPサーバがグループメンバーを保持するために使用している属性も指定する必要があります。通常、「member」または「memberUid」です。</p>';
+$string['role_mapping'] = '<p>それぞれのロールにおいて、あなたはコースが置かれている場所を表すグループのLDAPコンテクストすべてを指定する必要があります。異なるコンテクストはセミコロン (;) で分離してください。</p><p>また、あなたのLDAPサーバがグループメンバーを保持するため使用する属性も指定する必要があります。通常、「member」または「memberUid」です。</p>';
 $string['role_mapping_attribute'] = '{$a} のLDAPメンバー属性';
 $string['role_mapping_context'] = '{$a} のLDAPコンテクスト';
 $string['role_mapping_key'] = 'LDAPからロールをマップする';
 $string['roles'] = 'ロールマッピング';
 $string['server_settings'] = 'LDAPサーバ設定';
 $string['synccourserole'] = '== コース「 {$a->idnumber} 」をロール「 {$a->role_shortname} 」に同期';
-$string['syncenrolmentstask'] = '登録タスクを同期する';
+$string['syncenrolmentstask'] = 'LDAP登録タスクを同期する';
 $string['template'] = '任意: 自動的に作成されるコースではテンプレートコースから設定をコピーすることができます。';
 $string['template_key'] = 'テンプレート';
 $string['unassignrole'] = 'コース 「{$a->course_shortname} (id {$a->course_id}) 」のユーザ「 {$a->user_username} 」からロール「 {$a->role_shortname} 」を割り当て解除';

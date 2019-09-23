@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradereport_grader', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   gradereport_grader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,17 +30,17 @@ $string['ajaxclicktoclose'] = 'Ezabatzeko egin klik laukitxo honetan';
 $string['ajaxerror'] = 'Errorea';
 $string['ajaxfailedupdate'] = 'Ezin da [1] [2]-rako eguneratu';
 $string['ajaxfieldchanged'] = 'Orain editatzen ari zaren eremua aldatu da. Nahi al duzu eguneratutako balioa erabili?';
-$string['eventgradereportviewed'] = 'Kalifikazioaren txostena ikusi da';
-$string['grader:manage'] = 'Kudeatu kalifikatzailearen txostena';
-$string['grader:view'] = 'Ikusi kalifikatzailearen txostena';
+$string['eventgradereportviewed'] = 'Kalifikatzaile-txostena ikusi da';
+$string['grader:manage'] = 'Kudeatu kalifikatzaile-txostena';
+$string['grader:view'] = 'Ikusi kalifikatzaile-txostena';
 $string['overriddengrade'] = 'Baliogabetutako kalifikazioa';
-$string['pluginname'] = 'Kalifikatzailea';
-$string['preferences'] = 'Kalifikatzailearen hobespenak';
+$string['pluginname'] = 'Kalifikatzaile-txostena';
+$string['preferences'] = 'Kalifikatzaile-txostenaren hobespenak';
 $string['privacy:metadata:preference:grade_report_aggregationposition'] = 'Kalifikazio-liburuaren txostenetan kategoria eta ikastaroko guztirako zutabeak hasieran edo bukaeran agertuko diren.';
 $string['privacy:metadata:preference:grade_report_averagesdecimalpoints'] = 'Bataz bestekoen zutabe bakoitzean erakutsiko diren hamartarren kopurua edo kategoria edo kalifikazio-elementu bakoitzean zehaztutakoa erabiliko den (zaharkituta).';
 $string['privacy:metadata:preference:grade_report_averagesdisplaytype'] = 'Batez bestekoa (media) kalifikazio errealetan, ehunekotan edo letretan erakutsiko den ala kategoria edo kalifikazio-elementua erakusteko era erabiliko den (heredatua).';
-$string['privacy:metadata:preference:grade_report_enableajax'] = 'Kalifikatzailearen txostenari AJAX funtzionalitate geruza bat gehituko zaion edo ez, ohiko eragiketak arinduz.';
-$string['privacy:metadata:preference:grade_report_grader_collapsed_categories'] = 'Kalifikazio-liburuan laburtuta erakutsi beharreko kategoriak';
+$string['privacy:metadata:preference:grade_report_enableajax'] = 'Kalifikatzaile-txostenari AJAX funtzionalitate geruza bat gehituko zaion edo ez, ohiko eragiketak erraztu eta arinduz.';
+$string['privacy:metadata:preference:grade_report_grader_collapsed_categories'] = 'Kalifikazio-liburuan tolestuta erakutsi beharreko kategoriak';
 $string['privacy:metadata:preference:grade_report_meanselection'] = 'Kalifikaziorik gabeko gelaxkak kategoria edo kalifikazio-elementu bakoitzaren batez bestekoa kalkulatzeko erabiliko diren ala ez';
 $string['privacy:metadata:preference:grade_report_quickgrading'] = 'Kalifikazio bakoitzerako testua sartzeko kutxa bat erakustea edo ez, kalifikazio anitz aldi berean editatzea ahalbidetuz.';
 $string['privacy:metadata:preference:grade_report_rangesdecimalpoints'] = 'Kalifikazio-tarte bakoitzarentzako erakutsi beharreko hamartarren kopurua edo kategoria ala kategoria edo kalifikazio-elementua erakusteko hamartarren kopurua ezarpena erabiliko den (zaharkitua).';
@@ -56,8 +56,8 @@ $string['privacy:metadata:preference:grade_report_showonlyactiveenrol'] = 'Kalif
 $string['privacy:metadata:preference:grade_report_showquickfeedback'] = 'Kalifikazio bakoitzarekin batera feedbackaren testurako puntutxoak dituen laukia agertuko den edo ez, kalifikazio anitzen feedbackak batera editatzea ahalbidetuz.';
 $string['privacy:metadata:preference:grade_report_showranges'] = 'Kategoria eta elementu bakoitzerako kalifikazio-mailak erakusten dituen beste lerro bat erakustea edo ez';
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Izenaren ondoren erabiltzailearen profilaren irudia erakutsi ala ez';
-$string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Orri bakoitzean erakutsi beharreko ikasle-kopurua kalifikatzailearen txostenean';
-$string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Laburtutako erakusten diren kalifikazio-liburuko kategoriak dituzu "{$a->name}" ikastaroan';
+$string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Kalifikatzaile-txosteneko orri bakoitzean erakutsi beharreko ikasle-kopurua';
+$string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Tolestuta erakusten diren kalifikazio-liburuko kategoriak dituzu "{$a->name}" ikastaroan';
 $string['summarygrader'] = 'Lehen zutabean ikasleen izenak izango dituen taula bat, eta aktibitate kalifikagarriak gainean ikastaro eta kategorietan multzokatuta dituena.';
 $string['useractivityfeedback'] = '{$a} feedback';
 $string['useractivitygrade'] = '{$a} kalifikazio';

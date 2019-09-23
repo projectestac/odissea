@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'course', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   course
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aria:courseimage'] = 'Εικόνα μαθήματος';
+$string['aria:coursename'] = 'Όνομα μαθήματος';
+$string['aria:courseshortname'] = 'Σύντομο όνομα μαθήματος';
+$string['aria:favourite'] = 'Το μάθημα έχει αστερίσκο';
+$string['favourite'] = 'Μάθημα με αστερίσκο';
 $string['privacy:completionpath'] = 'Ολοκλήρωση μαθήματος';
+$string['privacy:favouritespath'] = 'Πληροφορίες αστερίσκου μαθήματος';
 $string['privacy:metadata:completionsummary'] = 'Το μάθημα περιέχει πληροφορίες ολοκλήρωσης για τον χρήστη.';
+$string['privacy:metadata:favouritessummary'] = 'Το μάθημα περιέχει πληροφορίες σχετικά με την επισήμανση του μαθήματος με αστερίσκο από τον χρήστη.';
 $string['privacy:perpage'] = 'Ο αριθμός των μαθημάτων που θα εμφανίζονται ανά σελίδα.';

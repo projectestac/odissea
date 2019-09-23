@@ -1,7 +1,7 @@
 This files describes API changes in /auth/shibboleth/*,
 information provided here is intended especially for developers.
 
-=== 3.4.5 ===
+=== 3.5.2 ===
 
 * Moved the public function unserializesession in auth/shibboleth/logout.php to auth/shibboleth/classes/helper.php and
   made it private. This function should not have been used outside of this file.

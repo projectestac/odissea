@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -186,9 +186,6 @@ $string['edit'] = '编辑';
 $string['editedby'] = '由 {$a->name} 修改 - 原提交时间 {$a->date}';
 $string['editedpostupdated'] = '{$a}的帖子已更新';
 $string['editing'] = '正在编辑';
-$string['emaildigest_0'] = '每个帖子你都会收到一封邮件';
-$string['emaildigest_1'] = '每天都会收到一封包含完整帖子内容的邮件';
-$string['emaildigest_2'] = '每天都会收到一封只包含帖子主题的邮件';
 $string['emaildigestcompleteshort'] = '完整帖子';
 $string['emaildigestdefault'] = '默认 {$a}';
 $string['emaildigestoffshort'] = '没有摘要';
@@ -199,8 +196,6 @@ $string['emaildigesttype_help'] = '你从讨论区收到的通知，可分成四
 *没有摘要 -- 每个新帖子，你都会收到一封邮件；
 *摘要/内容 -- 每个新帖子，你都会收到一封包含帖子全文的邮件；
 *摘要/主题 -- 每个新帖子，你都会收到一封含摘要和主题的邮件。';
-$string['emaildigestupdated'] = '这是发送帖子摘要的选项，已经把 \'{$a->forum}\'更改为 \'{$a->maildigesttitle}\' 。 {$a->maildigestdescription}';
-$string['emaildigestupdated_default'] = '\'{$a->forum}\'讨论区将使用你在资料中的\'{$a->maildigesttitle}\'默认设置。{$a->maildigestdescription}';
 $string['emptymessage'] = '您的帖子有些问题。可能这是个空帖子，或者附件太大了。您的更改<strong>没有</strong>被保存。';
 $string['erroremptymessage'] = '帖子正文不能为空';
 $string['erroremptysubject'] = '帖子标题不能为空。';
@@ -438,9 +433,6 @@ $string['postbymailsuccess'] = '恭喜，你的讨论区帖子其主题为 "{$a-
 $string['postbymailsuccess_html'] = '恭喜，你的<a href="{$a->discussionurl}">讨论区帖子</a> 主题为 "{$a->subject}" 已经成功提交。';
 $string['postbyuser'] = '{$a->post} 由 {$a->user} 所发';
 $string['postincontext'] = '在上下文中看此帖';
-$string['postmailinfo'] = '这是一份来自网站 {$a} 的帖子。
-
-点击此链接回复：';
 $string['postmailinfolink'] = '这是提交到{$a->coursename} 课程讨论区的帖子副本。
 
 若要回复，请点击这一链接 ：{$a->replylink}';

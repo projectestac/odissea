@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'folder', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['bynameondate'] = '{$a->name}-(e)k - {$a->date}';
 $string['contentheader'] = 'Edukia';
 $string['display'] = 'Erakutsi karpetaren edukiak';
 $string['display_help'] = 'Karpetako edukiak ikastaroaren orrian erakustea aukeratzen baduzu ez da agertuko aparteko orri baterako esteka eta izenburua ere ez da erakutsiko.
-Deskribapena "Deskribapena ikastaroaren orriaren pantailan" aukeratzen bada bakarrik agertuko da.
+Deskribapena "Erakutsi deskribapena ikastaroaren orriaren pantailan" aukeratzen bada bakarrik agertuko da.<br />
 Kontuan izan, bestalde, kasu honetan ezin dela erabiltzaileen ekintzarik erregistratu.';
 $string['displayinline'] = 'Erakutsi ikastaroaren orrian';
 $string['displaypage'] = 'Aparteko orri batean';
@@ -61,9 +61,9 @@ $string['page-mod-folder-view'] = 'Karpetaren orri nagusia';
 $string['page-mod-folder-x'] = 'Karpetaren edozein orri';
 $string['pluginadministration'] = 'Karpetaren kudeaketa';
 $string['pluginname'] = 'Karpeta';
-$string['privacy:metadata'] = 'mod_folder pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Karpeta baliabide-pluginak ez du datu pertsonalik biltzen.';
 $string['search:activity'] = 'Karpeta';
 $string['showdownloadfolder'] = 'Erakutsi karpeta jaitsi botoia';
 $string['showdownloadfolder_help'] = '\'Bai\' aukeratuz gero, botoi bat erakutsiko da karpetaren edukiak zip fitxategi moduan jaisteko aukera emateko.';
 $string['showexpanded'] = 'Erakutsi azpikarpetak zabalduta';
-$string['showexpanded_help'] = '\'Bai\' ezarrita azpikarpetak zabalduta modu lehenetsian erakutsiko dira. Bestela, azpikarpetak kolapsatuta erakutsiko dira.';
+$string['showexpanded_help'] = '\'Bai\' ezarrita azpikarpetak zabalduta modu lehenetsian erakutsiko dira. Bestela, azpikarpetak tolestuta erakutsiko dira.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['descriptionssourcelabel'] = 'URL piste description';
 $string['displayoptions'] = 'Options d\'affichage';
 $string['entername'] = 'Saisir le nom';
 $string['entersource'] = 'URL source';
+$string['entertitle'] = 'Saisir le titre';
 $string['enterurl'] = 'Saisir l\'URL';
 $string['height'] = 'Hauteur';
 $string['kind'] = 'Type';
@@ -66,7 +67,7 @@ $string['metadata'] = 'Métadonnées';
 $string['metadata_help'] = 'Pistes de métadonnées, pour utilisation à partir d\'un script ; ne peut être utilisée que si le lecteur supporte les métadonnées.';
 $string['metadatasourcelabel'] = 'URL piste métadonnées';
 $string['mute'] = 'Silencieux';
-$string['pluginname'] = 'Média';
+$string['pluginname'] = 'Insérer ou modifier un fichier audio/vidéo';
 $string['poster'] = 'URL vignette';
 $string['privacy:metadata'] = 'Le plugin atto_media n\'enregistre aucune donnée personnelle.';
 $string['remove'] = 'Supprimer';
@@ -77,7 +78,7 @@ $string['subtitles_help'] = 'Les sous-titres permettent de fournir une transcrip
 $string['subtitlessourcelabel'] = 'URL piste sous-titres';
 $string['track'] = 'URL piste';
 $string['tracks'] = 'Sous-titres et légendes';
-$string['tracks_help'] = 'Des sous-titres, légendes, titres et descriptions peuvent être ajoutées au moyen d\'un fichier au format WebVTT (Web Video Text Tracks). Les étiquettes des listes seront affichées dans le menu déroulant. Pour chaque type de piste, la piste par défaut sera présélectionnée au lancement de la vidéo.';
+$string['tracks_help'] = 'Des sous-titres, légendes, chapitres et descriptions peuvent être ajoutés au moyen d\'un fichier au format WebVTT (Web Video Text Tracks). Les noms des pistes seront affichés dans le menu déroulant. Pour chaque type de piste, la piste par défaut sera présélectionnée au lancement de la vidéo.';
 $string['video'] = 'Vidéo';
 $string['videoheight'] = 'Hauteur de la vidéo';
 $string['videosourcelabel'] = 'URL source vidéo';

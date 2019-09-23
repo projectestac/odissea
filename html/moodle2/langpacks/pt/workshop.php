@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -210,6 +210,7 @@ $string['noexamplesformready'] = 'Deve configurar a grelha de avaliação antes 
 $string['nogradeyet'] = 'Ainda não tem nota';
 $string['nosubmissionfound'] = 'Não foi encontrado nenhum trabalho submetidos por este utilizador';
 $string['nosubmissions'] = 'Ainda não foram submetidos trabalhos neste workshop';
+$string['nosubmissiontype'] = 'Pelo menos um tipo de submissão tem de estar disponível';
 $string['notassessed'] = 'Ainda não foi avaliado';
 $string['nothingfound'] = 'Nada a exibir';
 $string['nothingtoreview'] = 'Nada para avaliar';
@@ -337,6 +338,12 @@ $string['submissionstart'] = 'Iniciar submissões em';
 $string['submissionstartdatetime'] = 'Submissões permitidas a partir de  {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} abre para submissões';
 $string['submissiontitle'] = 'Titulo';
+$string['submissiontypedisabled'] = 'Este tipo de submissão está desativado para este workshop.';
+$string['submissiontypefileavailable'] = 'Ficheiro do anexo<span class="accesshide"> disponível</span>';
+$string['submissiontypefilerequired'] = '<span class="accesshide">Ficheiro anexo </span>Obrigatório';
+$string['submissiontypes'] = 'Tipos de submissão';
+$string['submissiontypetextavailable'] = 'Texto online<span class="accesshide"> disponível</span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide">Texto online </span>Obrigatório';
 $string['submittednotsubmitted'] = 'Submetido ({$a->submitted}) / não submetido ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Método para atribuir trabalho para avaliação';
 $string['subplugintype_workshopallocation_plural'] = 'Métodos para atribuir trabalho para avaliação';
@@ -412,7 +419,6 @@ $string['workshop:viewauthornames'] = 'Ver nomes dos autores';
 $string['workshop:viewauthorpublished'] = 'Ver autores dos trabalhos submetidos';
 $string['workshop:viewpublishedsubmissions'] = 'Ver trabalhos publicados';
 $string['workshop:viewreviewernames'] = 'Ver nomes dos avaliadores';
-$string['yourassessment'] = 'A sua avaliação';
 $string['yourassessmentfor'] = 'Avaliação para {$a}';
 $string['yourgrades'] = 'As suas notas';
 $string['yoursubmission'] = 'O seu trabalho';

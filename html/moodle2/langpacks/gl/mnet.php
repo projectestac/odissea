@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mnet', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aboutyourhost'] = 'Acerca do seu servidor';
+$string['aboutyourhost'] = 'Sobre o seu servidor';
 $string['accesslevel'] = 'Nivel de acceso';
 $string['addhost'] = 'Engadir servidor';
 $string['addnewhost'] = 'Engadir un novo servidor';
@@ -37,7 +37,7 @@ $string['applicationtype'] = 'Tipo do aplicativo';
 $string['authfail_nosessionexists'] = 'Erro na autorización: A sesión mnet non existe.';
 $string['authfail_sessiontimedout'] = 'Erro na autorización: A sesión mnet acabou.';
 $string['authfail_usermismatch'] = 'Erro na autorización: O usuario non coincide.';
-$string['authmnetdisabled'] = 'O <em>plugin de autenticación</em> da rede de Moodle está <strong>desactivado</strong>.';
+$string['authmnetdisabled'] = 'O <em>engadido de autenticación</em> da rede de Moodle está <strong>desactivado</strong>.';
 $string['badcert'] = 'Este certificado non é válido.';
 $string['certdetails'] = 'Detalles do certificado';
 $string['configmnet'] = 'MNet permite a comunicación deste servidor con outros servidores ou servizos.';
@@ -145,8 +145,8 @@ $string['networksettings'] = 'Configuración da rede';
 $string['never'] = 'Nunca';
 $string['noaclentries'] = 'Non hai entradas na lista de control de acceso SSO';
 $string['noaddressforhost'] = 'Desculpe, mais non foi posíbel resolver o nome da máquina ({$a})!';
-$string['nocurl'] = 'A biblioteca PHP Curl non está instalada';
-$string['nolocaluser'] = 'Non existe ningún rexistro local para usuario remoto.';
+$string['nocurl'] = 'A biblioteca PHP cURL non está instalada';
+$string['nolocaluser'] = 'Non existe ningún rexistro local para usuario remoto, e non é posíbel crealo xa esta máquina no crea usuarios automaticamente. Contacte co seu administrador.';
 $string['nomodifyacl'] = 'Non ten permiso para modificar a lista de control de acceso MNET.';
 $string['nonmatchingcert'] = 'O asunto do certificado <br /><em>{$a}[0]</em><br />non coincide co servidor de que procede:<br /><em>{$a}[1]</em>.';
 $string['nopubkey'] = 'Houbo un problema durante o proceso de recuperación da chave pública.<br />Talvez o servidor non acepte a rede de Moodle ou a chave non sexa válida.';
@@ -169,14 +169,14 @@ $string['notpermittedtoland'] = 'Non ten permiso para comezar unha sesión remot
 $string['off'] = 'Desactivado';
 $string['on'] = 'Activado';
 $string['options'] = 'Opcións';
-$string['peerprofilefielddesc'] = 'Aquí pode substituírse a configuración global dos campos do perfil que enviar e importar cando se crean usuarios novos';
+$string['peerprofilefielddesc'] = 'Aquí poden anularse os axustes globais dos campos do perfil que enviar e importar cando se crean usuarios novos';
 $string['permittedtransports'] = 'Transportes permitidos';
 $string['phperror'] = 'Un erro interno de PHP impediu efectuar o seu pedido.';
 $string['position'] = 'Posición';
 $string['postrequired'] = 'A función eliminada require un pedido POST.';
 $string['privacy:metadata'] = 'O engadido MNet non almacena ningún dato persoal.';
 $string['profileexportfields'] = 'Campos para enviar';
-$string['profilefielddesc'] = 'Aquí pode configurar a lista de campos del perfil que se envían e reciben de MNet cando se crean ou actualizan as contas de usuario. Tamén pode cambialo para cada elemento MNet individual. Teña en conta que os seguintes campos envíanse sempre e non son opcionais: {$a}';
+$string['profilefielddesc'] = 'Aquí pode configurar a lista de campos del perfil que se envían e reciben de MNet cando se crean ou actualizan as contas de usuario. Tamén pode anulalo para cada elemento MNet individual. Teña en conta que os seguintes campos envíanse sempre e non son opcionais: {$a}';
 $string['profilefields'] = 'Campos de perfil';
 $string['profileimportfields'] = 'Campos que importar';
 $string['promiscuous'] = 'Promiscuo';
@@ -190,7 +190,7 @@ $string['recordnoexists'] = 'Ese rexistro non existe.';
 $string['reenableserver'] = 'Non - Seleccione esta opción para volver activar este servidor.';
 $string['registerallhosts'] = 'Rexistrar todos os servidores (<em>modo Hub</em>)';
 $string['registerallhostsexplain'] = 'Os usuarios poden optar por rexistrar todos os servidores que tenten conectarse automaticamente con eles.
-Isto significa que na lista de servidores aparecerá o rexistro de calquera sitio Moodle que se conecte con eles e solicite a súa chave pública.<br />Abaixo proporciónase a posibilidade de configurar servizos para \'Todos os servidores\'. Os servizos aí activados pódense fornecer a calquera servidor Moodle escollido indiscriminadamente.';
+Isto significa que na lista de servidores aparecerá o rexistro de calquera sitio MNet que se conecte con eles e solicite a súa chave pública.<br />Abaixo proporciónase a posibilidade de configurar servizos para \'Todos os servidores\'. Os servizos aí activados pódense fornecer a calquera servidor Moodle escollido indiscriminadamente.';
 $string['registerhostsoff'] = 'Actualmente a función de rexistrar todos os servidores está <b>desactivada</b>';
 $string['registerhostson'] = 'Actualmente a función de rexistrar todos os servidores está <b>activada</b>';
 $string['remotecourses'] = 'Cursos remotos';
@@ -227,18 +227,18 @@ $string['sslverification_help'] = 'Esta opción permítelle configurar o nivel d
 * Verificar só o servidor: valida o dominio do certificado SSL
 * Verificar o servidor e o par (recomendado): valida o dominio e o emisor do certificado SSL.';
 $string['ssoaccesscontrol'] = 'Control de acceso SSO';
-$string['ssoacldescr'] = 'Use esta páxina para garantir/denegar o acceso a determinados usuarios de servidores remotos de rede Moodle. Isto é funcional cando se ofrecen servizos SSO a usuarios remotos. Para controlar a capacidade dos seus usuarios <em>locais</em> para se moveren a outros servidores de rede Moodle, use o sistema de papeis para lles garantir a capacidade <em>mnetcanroam</em>.';
-$string['ssoaclneeds'] = 'Para que esta opción funcione, a rede de Moodle ten que estar activa, así como o seu plugin de autenticación, cos usuarios engadidos automaticamente tamén activos.';
+$string['ssoacldescr'] = 'Use esta páxina para garantir/denegar o acceso a determinados usuarios de servidores remotos de rede Moodle. Isto é funcional cando se ofrecen servizos SSO a usuarios remotos. Para controlar a capacidade dos seus usuarios <em>locais</em> para se moveren a outros servidores de rede Moodle, use o sistema de papeis para lles garantir a funcionalidade <em>mnetcanroam</em>.';
+$string['ssoaclneeds'] = 'Para que esta opción funcione, a rede de Moodle ten que estar activa, así como o seu engadido de autenticación, cos usuarios engadidos automaticamente tamén activos.';
 $string['strict'] = 'Estrito';
 $string['subscribe'] = 'Subscribirse';
 $string['system'] = 'Sistema';
-$string['testclient'] = 'Cliente de proeba MNet';
+$string['testclient'] = 'Cliente de proba MNet';
 $string['testtrustedhosts'] = 'Probe un enderezo';
 $string['testtrustedhostsexplain'] = 'Introduza un enderezo IP para ver se é un servidor de confianza.';
 $string['theypublish'] = 'Eles publican';
 $string['theysubscribe'] = 'Eles subscriben';
 $string['transport_help'] = 'Estas opcións son recíprocas, o que quere dicir que só pode forzar un servidor remoto a utilizar unha certificación SSL asinada se o seu servidor tamén ten unha.';
-$string['trustedhosts'] = 'servidores XML-RPC';
+$string['trustedhosts'] = 'Servidores XML-RPC';
 $string['trustedhostsexplain'] = '<p>O mecanismo dos servidores de confianza permite que determinadas máquinas executen chamadas vía XML-RPC a calquera parte da API do Moodle. Isto está dispoñible para que os scripts controlen o comportamento de Moodle. Activalo pode ser unha opción perigosa. Se ten dúbidas, déixeo desactivado.</p>
 <p>Isto <strong>non</strong> é necesario para a rede de Moodle.</p>
 <p>Para activalo, introduza unha lista de enderezos IP ou redes, unha en cada liña.

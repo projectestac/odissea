@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ur', branch 'MOODLE_34_STABLE'
+ * Strings for component 'moodle', language 'ur', branch 'MOODLE_36_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['abouttobeinstalled'] = 'تنصیب ہونے لگی ہے';
+$string['action'] = 'عمل';
+$string['actionchoice'] = 'آپ اس فائل کے ساتھ کیا کرنا چاہتے ہیں';
+$string['actions'] = 'اعمال';
+$string['actionsmenu'] = 'اعمال مینو';
 $string['active'] = 'سرگرم';
 $string['activeusers'] = 'سرگرم استعمال کنندگان';
 $string['activities'] = 'سرگرمیاں';
+$string['activities_help'] = 'سرگرمیاں، جیسے فورمز، سوالات اور وکیس، انٹرایکٹو مواد کی  کورس میں شمولیت فعال کریں.';
 $string['activity'] = 'سرگرمی';
 $string['activityiscurrentlyhidden'] = 'معزرت، یہ سرگرمی ابھی چھپی ہوئی ہے';
 $string['activitymodule'] = 'سرگرمی کی ماڈیول';
@@ -74,6 +79,7 @@ $string['blocksediton'] = 'بلاک میں ردو بدل مجاز کرو';
 $string['changepassword'] = 'پاسورڈ تبدیل کریں';
 $string['city'] = 'شہر /علاقہ';
 $string['cookiesenabled'] = 'آپ کے براؤزر میں کوکیز فعال کیا ہونا چاہئے';
+$string['cookiesenabledonlysession'] = 'آپ کے براؤزر میں کوکیز فعال کیا ہونا چاہئے';
 $string['country'] = 'ملک';
 $string['course'] = 'کورس';
 $string['courseadministration'] = 'کورس انتظامیہ';

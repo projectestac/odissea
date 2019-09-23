@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredimensions'] = '{$a} weitere Aussagenpaare hinzufügen';
 $string['configgrade0'] = 'Standardwert bei Ablehnung einer Beurteilung.';
 $string['configgrade1'] = 'Standardwert bei Zustimmung einer Beurteilung.';
-$string['dimensioncomment'] = 'Kommentar';
 $string['dimensioncommentfor'] = 'Kommentar für {$a}';
 $string['dimensiondescription'] = 'Beschreibung';
 $string['dimensiongrade'] = 'max. Punkte';
@@ -41,7 +40,6 @@ $string['grade1default'] = 'Ja';
 $string['grademapping'] = 'Tabelle maximale Punkte';
 $string['maperror'] = 'Gewichtete Anzahl der Ablehnungen ist gleich oder kleiner als ';
 $string['mapgrade'] = 'max. Punkte für Einreichung';
-$string['percents'] = '{$a} %';
 $string['pluginname'] = 'Aussagen zustimmen oder ablehnen';
 $string['privacy:export:metadata:map'] = 'Wenn die gewichtete Anzahl der Fehler den Wert {$a->nonegative} erreicht ist die Note {$a->grade}  Prozent';
 $string['privacy:metadata'] = 'Das Plugin für Anzahl der Fehler speichert keine persönlichen Daten. Die aktuellen Daten, wie das Formular ausgefüllt wurde, werden in der Aktivität \'gegenseitige Beurteilung\' gespeichert und an die exportierten Aufgaben angehängt.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'theme_more', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   theme_more
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['linkcolor'] = 'Cor da ligazón';
 $string['linkcolor_desc'] = 'A cor das ligazóns';
 $string['logo'] = 'Logotipo';
 $string['logodesc'] = 'O logotipo só se amosa na cabeceira da páxina de portada e da páxina de acceso ao sitio.<br /> Se a altura do seu logotipo for maior de 75 píxeles, engada «div.logo {height: 100px;}» na caixa de texto de CSS personalizado inferior, arranxándoa axeitadamente se a altura for diferente de 100 píxeles. Se non se engade un logotipo aquí, empregarase o logotipo indicado en Aparencia > Logotipos.';
-$string['pluginname'] = 'Máis';
+$string['pluginname'] = 'More';
 $string['privacy:metadata'] = 'O tema More non almacena ningún dato persoal sobre ningún usuario.';
 $string['region-side-post'] = 'Dereita';
 $string['region-side-pre'] = 'Esquerda';

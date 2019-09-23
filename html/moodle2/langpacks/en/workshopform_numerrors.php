@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredimensions'] = 'Blanks for {$a} more assertions';
 $string['configgrade0'] = 'The default word describing the negative assessment of an assertion.';
 $string['configgrade1'] = 'The default word describing the positive assessment of an assertion.';
-$string['dimensioncomment'] = 'Comment';
 $string['dimensioncommentfor'] = 'Comment for {$a}';
 $string['dimensiondescription'] = 'Description';
 $string['dimensiongrade'] = 'Grade';
@@ -41,7 +40,6 @@ $string['grade1default'] = 'Yes';
 $string['grademapping'] = 'Grade mapping table';
 $string['maperror'] = 'Weighted number of errors is less than or equals';
 $string['mapgrade'] = 'Grade for submission';
-$string['percents'] = '{$a}%';
 $string['pluginname'] = 'Number of errors';
 $string['privacy:export:metadata:map'] = 'If the weighted number of errors reaches {$a->nonegative} then the grade is {$a->grade} percents.';
 $string['privacy:metadata'] = 'The Number of errors plugin only stores the details of the assessment form. Actual personal data of how the form has been filled are stored by the Workshop module itself and are attached to exported assessments.';

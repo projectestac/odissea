@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_online_users', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Número de minutos para detectar que un usuario está en línea';
+$string['nouser'] = 'No hay usuarios online';
+$string['numuser'] = '{$a} usuario online';
+$string['numusers'] = '{$a} usuarios online';
+$string['online_status:hide'] = 'Ocultar mi estado en línea a otros usuarios';
+$string['online_status:show'] = 'Mostrar mi estado en línea a otros usuarios';
 $string['online_users:addinstance'] = 'Añadir un nuevo bloque de usuarios en línea';
 $string['online_users:myaddinstance'] = 'Añadir un nuevo bloque de usuarios conectados al Área personal';
 $string['online_users:viewlist'] = 'Ver lista de usuarios en línea';
 $string['periodnminutes'] = 'últimos {$a} minutos';
 $string['pluginname'] = 'Usuarios en línea';
+$string['privacy:metadata:preference:uservisibility'] = 'Estado en-línea visible para otros usuarios en el bloque Usuarios en línea.';
 $string['timetosee'] = 'Eliminar tras inactividad (minutos)';

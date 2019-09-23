@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_self', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['canntenrollate'] = '你已经不能选课，因为选课已于{$a}结�
 $string['cohortnonmemberinfo'] = '只有群\'{$a}\'的成员可以自主选课';
 $string['cohortonly'] = '只有群成员';
 $string['cohortonly_help'] = '自助选课仅限于指定群中的成员。注意，修改这个设置不会影响已经存在的选课。';
+$string['confirmbulkdeleteenrolment'] = '是否确认删除这些用户的选课？';
 $string['customwelcomemessage'] = '自定义欢迎信息';
 $string['customwelcomemessage_help'] = '自定义的欢迎信息可以加入纯文本，或是用Moodle自动格式，包含HTML标签及多语言标签。
 
@@ -42,6 +43,7 @@ $string['customwelcomemessage_help'] = '自定义的欢迎信息可以加入纯�
 * 用户的完整姓名{$a->fullname}';
 $string['defaultrole'] = '缺省分配的角色';
 $string['defaultrole_desc'] = '选择用户自助选课后被分配的角色';
+$string['editselectedusers'] = '编辑选中用户的选课';
 $string['enrolenddate'] = '结束时间';
 $string['enrolenddate_help'] = '如果启用，用户只能在此日期前自行加入此课程。';
 $string['enrolenddaterror'] = '选课的结束时间不能早于开始时间';
@@ -65,6 +67,8 @@ $string['expirymessageenrollerbody'] = '在\'{$a->course}\' 课程的自助选�
 
 要延长他们的选课，请到{$a->extendurl}';
 $string['expirymessageenrollersubject'] = '自助选课过期通知';
+$string['expirynotifyall'] = '教师和已选课的用户';
+$string['expirynotifyenroller'] = '仅教师';
 $string['groupkey'] = '使用分组选课密码';
 $string['groupkey_desc'] = '缺省使用分组选课密码。';
 $string['groupkey_help'] = '除了只限知道密码的用户访问课程以外，还可以让用户在选课时输入分组密码，这样他就能被自动加入到小组中。
@@ -110,6 +114,7 @@ $string['status_help'] = '此设置决定用户是否能自助选课（如果他
 $string['unenrol'] = '撤销选课';
 $string['unenrolselfconfirm'] = '您确定要撤销您自己对“{$a}”课程的选课吗？';
 $string['unenroluser'] = '您确定要撤销用户“{$a->user}”对“{$a->course}”课程的选课吗？';
+$string['unenrolusers'] = '取消选课';
 $string['usepasswordpolicy'] = '使用密码策略';
 $string['usepasswordpolicy_desc'] = '对选课密码使用标准的密码策略。';
 $string['welcometocourse'] = '欢迎加入{$a}课程';

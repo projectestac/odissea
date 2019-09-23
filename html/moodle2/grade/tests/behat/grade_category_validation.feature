@@ -19,7 +19,7 @@ Feature: Editing a grade item
     And I log in as "admin"
     And the "multilang" filter is "on"
     And the "multilang" filter applies to "content and headings"
-    And I navigate to "Scales" node in "Site administration > Grades"
+    And I navigate to "Grades > Scales" in site administration
     And I press "Add a new scale"
     And I set the following fields to these values:
       | Name  | <span lang="en" class="multilang">EN</span><span lang="fr" class="multilang">FR</span> ABCDEF |

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'imscp', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   imscp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,9 @@ $string['keepoldexplain'] = 'Cantos paquetes se deberían de arquivar?';
 $string['modulename'] = 'Contido de paquete IMS';
 $string['modulename_help'] = 'Un paquete de contido IMS é unha colección de ficheiros que están empaquetados consonte a un estándar acordado de modo que poidan ser reutilizados en diferentes sistemas. O módulo de paquete de contido IMS activa tales paquetes de contido para que se suban como un ficheiro zip a un curso como un recurso.
 
-O contido adoita presentarse en varias páxinas, con navegación entre elas. Hai varios tipos de opcións para a presentación do contido nunha xanela de navegación cun menú de navegación ou botóns, etc.';
+O contido adoita presentarse en varias páxinas, con navegación entre elas. Hai varios tipos de opcións para a presentación do contido nunha xanela de navegación cun menú de navegación ou botóns, etc.
+
+Pódese usar un paquete de contido IMS para presentar contido multimedia e animacións.';
 $string['modulename_link'] = 'mod/imscp/view';
 $string['modulenameplural'] = 'Paquetes de contido IMS';
 $string['navigation'] = 'Navegación';

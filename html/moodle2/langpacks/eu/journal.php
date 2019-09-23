@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'journal', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,52 +30,59 @@ $string['alwaysopen'] = 'Beti zabalik';
 $string['blankentry'] = 'Sarrera hutsik';
 $string['daysavailable'] = 'Zenbat egunetan eskuragarri';
 $string['deadline'] = 'Zenbat egunetan zabalik';
-$string['editingended'] = 'Editazeko epea amaitu da';
-$string['editingends'] = 'Editazeko epea amaituko da';
+$string['editingended'] = 'Editatzeko epea amaitu da';
+$string['editingends'] = 'Editatzeko epea amaituko da';
 $string['entries'] = 'Sarrerak';
 $string['entry'] = 'Sarrera';
 $string['evententriesviewed'] = 'Egunkari-sarrerak ikusi dira';
 $string['evententrycreated'] = 'Egunkari-sarrera sortu da';
 $string['evententryupdated'] = 'Egunkari-sarrera eguneratu da';
-$string['eventfeedbackupdated'] = 'Egunkariaren feedbacka eguneratu da';
+$string['eventfeedbackupdated'] = 'Egunkari-feedbacka eguneratu da';
 $string['eventjournalcreated'] = 'Egunkaria sortu da';
 $string['eventjournaldeleted'] = 'Egunkaria ezabatu da';
 $string['eventjournalviewed'] = 'Egunkaria ikusi da';
-$string['feedbackupdated'] = 'feedbacka eguneratu da {$a} sarreratan';
+$string['feedbackupdated'] = 'Feedbacka eguneratu da {$a} sarreratan';
 $string['gradeingradebook'] = 'Oraingo kalifikazioa kalifikazio-liburuan';
 $string['journal:addentries'] = 'Gehitu egunkari-sarrerak';
 $string['journal:addinstance'] = 'Gehitu egunkari-instantziak';
-$string['journalmail'] = '{$a->teacher}-(e)k feedbacka eman dizu \'{$a->journal}\' egunkariko zure sarrera bati buruz
+$string['journalmail'] = '{$a->teacher}-(e)k  \'{$a->journal}\' egunkariko zure sarrera bati buruzko feedbacka eman dizu.
 
- Egunkariaren sarreraren ondoan ikus dezakezu: {$a->url}';
-$string['journalmailhtml'] = '{$a->teacher}-(e)k feedbacka eman dizu zure sarrera bati buruz ondoko egunkarian: for \'<i>{$a->journal}</i>\'<br /><br />
+ Egunkariaren sarreraren ondoan ikus dezakezu:
 
+   {$a->url}';
+$string['journalmailhtml'] = '{$a->teacher}-(e)k zure sarrera bati buruzko feedbacka eman dizu \'<i>{$a->journal}</i>\' egunkarian.<br /><br />
 Zure <a href="{$a->url}">egunkari-sarreran</a> ikus dezakezu.';
 $string['journal:manageentries'] = 'Kudeatu egunkari-sarrerak';
 $string['journalname'] = 'Egunkariaren izena';
 $string['journalquestion'] = 'Egunkariaren galdera';
 $string['mailsubject'] = 'Egunkariaren feedbacka';
 $string['modulename'] = 'Egunkaria';
-$string['modulename_help'] = 'Egunkariari esker irakasleak ikasleengandik gai jakin bati buruzko feedbacka lor dezake.';
+$string['modulename_help'] = 'Egunkariak irakasleak ikasleengandik gai jakin bati buruzko feedbacka lortzea ahalbidetzen du';
 $string['modulenameplural'] = 'Egunkariak';
 $string['needsregrade'] = 'Sarrera aldatu da feedbacka gorde zen azken alditik.';
 $string['newjournalentries'] = 'Egunkari-sarrera berriak';
 $string['nodeadline'] = 'Betik zabalik';
 $string['noentriesmanagers'] = 'Ez dago irakaslerik';
 $string['noentry'] = 'Sarrerarik ez';
-$string['noratinggiven'] = 'Ez da kalifkaziorik eman';
+$string['noratinggiven'] = 'Ez da kalifikaziorik eman';
 $string['notopenuntil'] = 'Egunkaria ez da zabalduko ondoko datara arte:';
 $string['notstarted'] = 'Oraindik ez duzu egunkari hau hasi';
 $string['overallrating'] = 'Kalifikazio orokorrak';
 $string['pluginadministration'] = 'Egunkariaren kudeaketa';
 $string['pluginname'] = 'Egunkaria';
+$string['privacy:metadata:journal_entries'] = 'Egunkariko sarreraren erregistro bat';
+$string['privacy:metadata:journal_entries:entrycomment'] = 'Erabiltzaileak egunkarian jasotako iruzkina';
+$string['privacy:metadata:journal_entries:modified'] = 'Egunkariko sarreren hasierako denbora';
+$string['privacy:metadata:journal_entries:rating'] = 'Erabiltzaileak egunkarian jasotako sailkapena';
+$string['privacy:metadata:journal_entries:text'] = 'Erabiltzaileak idatzitako testua';
+$string['privacy:metadata:journal_entries:userid'] = 'Erabiltzailearen IDa';
 $string['rate'] = 'Kalifikazioa';
 $string['removeentries'] = 'Ezabatu sarrera guztiak';
 $string['removemessages'] = 'Ezabatu egunkari-sarrera guztiak';
 $string['saveallfeedback'] = 'Gorde nire feedback guztiak';
 $string['search:activity'] = 'Egunkaria - jarduera-informazioa';
 $string['search:entry'] = 'Egunkaria - sarrerak';
-$string['showoverview'] = 'Erakutsi egunkarien ikuspegi orokorra Nire Moodle-n';
+$string['showoverview'] = 'Erakutsi egunkarien ikuspegi orokorra aginte-panelean';
 $string['showrecentactivity'] = 'Erakutsi duela gutxiko aktibitatea';
 $string['startoredit'] = 'Hasi edo editatu nire egunkari-sarrera';
 $string['viewallentries'] = 'Ikusi {$a} egunkari-sarrera';

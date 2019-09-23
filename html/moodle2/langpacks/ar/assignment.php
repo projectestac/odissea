@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,4 +47,3 @@ $string['page-mod-assignment-x'] = 'أي صفحة لوحدة المهمة';
 $string['pluginadministration'] = 'إدارة المهمات';
 $string['pluginname'] = 'وظائف (2.2)';
 $string['upgradenotification'] = 'يستند هذا النشاط على إصدار قديم لوحدة التكليف';
-$string['viewassignmentupgradetool'] = 'عرض أداة ترقية التكليف/المهمة';

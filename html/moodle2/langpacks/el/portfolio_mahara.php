@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio_mahara', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['enableleap2a'] = 'Ενεργοποίηση υποστήριξης χα�
 $string['err_invalidhost'] = 'Μη έγκυρος Η/Υ στο MNet';
 $string['err_invalidhost_help'] = 'Αυτό το πρόσθετο είναι ρυθμισμένο λανθασμένα να δείχνει σε έναν μη έγκυρο (ή διαγραμμένο) κόμβο του MNet. Το πρόσθετο αυτό βασίζεται σε ομότιμους ιστοτόπους Moodle Networking, με SSO IDP που έχουν δημοσιευτεί, με SSO_SP που έχουν εγγραφεί και με χαρτοφυλάκιο που έχει εγγραφεί <b> και </ b> δημοσιευτεί.';
 $string['err_networkingoff'] = 'Το MNet είναι εκτός λειτουργίας';
-$string['err_networkingoff_help'] = 'Το MNet είναι πλήρως εκτός λειτουργίας. Ενεργοποιήστε το πριν προσπαθήσετε να ρυθμίσετε αυτό το πρόσθετο. Όλα τα στιγμιότυπα αυτού του πρόσθετου ορίστηκαν σε μη ορατά μέχρι να λυθεί αυτό το θέμα - θα πρέπει να τα ορίσετε ξανά χειροκίνητα σε ορατά. Δεν μπορούν να χρησιμοποιηθούν μέχρι να συμβεί αυτό.';
+$string['err_networkingoff_help'] = 'Η αυθεντικοποίηση MNet είναι προσωρινά απενεργοποιημένη. Παρακαλούμε, ενεργοποιήστε την πριν προσπαθήσετε να ρυθμίσετε αυτό το πρόσθετο. Οποιαδήποτε στιγμιότυπα αυτού του πρόσθετου είναι σε απόκρυψη μέχρι να ενεργοποιηθεί το MNet. Θα πρέπει τότε να γίνουν πάλι ορατά χειροκίνητα.';
 $string['err_nomnetauth'] = 'Το πρόσθετο αυθεντικοποίησης MNet είναι απενεργοποιημένο';
 $string['err_nomnetauth_help'] = 'Το πρόσθετο αυθεντικοποίησης MNet είναι απενεργοποιημένο, αλλά είναι απαραίτητο για αυτή την υπηρεσία';
 $string['err_nomnethosts'] = 'Βασίζεται στο MNet';

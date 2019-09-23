@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_messageinbound', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,7 +49,7 @@ $string['invalidrecipientfinal'] = 'Non è stato possibile autenticare il messag
 $string['invalid_recipient_handler'] = 'Se viene ricevuto un messaggio valido senza poter autenticare il mittente, il messaggio viene conservato nel server di mail e l\'utente contattato tramite l\'indirizzo email presente nel suo profilo. L\'utente avrà la possibilità di di rispondere confermando l\'autenticità del proprio messaggio.  Le risposte sono elaborate da questo gestore.
 
 Non è possibile disabilitare  la verifica del mittente di questo gestore poiché l\'utente potrebbe rispondere da un indirizzo email diverso in base alla configurazione del client di posta utilizzato.';
-$string['invalid_recipient_handler_name'] = 'Gestore destinatario non valido';
+$string['invalid_recipient_handler_name'] = 'Il gestore del mittente non è valido';
 $string['mailbox'] = 'Nome casella email';
 $string['mailboxconfiguration'] = 'Configurazione casella email';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';

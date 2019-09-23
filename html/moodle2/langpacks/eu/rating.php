@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'rating', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'Puntuazioak ez du balio';
 $string['ratings'] = 'Puntuazioak';
 $string['ratingtime'] = 'Mugatu puntuazioak tarte honetako elementuetara';
 $string['rolewarning'] = 'Puntuatzeko baimena duten rolak';
-$string['rolewarning_help'] = 'Kalifikazioak bidaltzeko, beharrezkoa da \'moodle/rating:rate\' gaitasuna, bai eta moduluari buruzko edozein gaitasun espezifiko ere. Ondoko rolak dituzten erabiltzaileek kalifikazioak emateko modua izan behar dute. Rol-zerrenda alda daiteke kudeaketa blokean dagoen gaitasunetarako estekaren bidez.';
+$string['rolewarning_help'] = 'Kalifikazioak bidaltzeko, beharrezkoa da \'moodle/rating:rate\' gaitasuna, bai eta moduluari buruzko edozein gaitasun espezifiko ere. Ondoko rolak dituzten erabiltzaileek kalifikazioak emateko modua izan behar dute. Rol-zerrenda alda daiteke ekintza-menu edo kudeaketa blokean (itxuraren arabera) dagoen gaitasunetarako estekaren bidez.';
 $string['scaleselectionrequired'] = 'Puntuazioen agregazio-motak aukeratzean eskala edo gehienezko puntuazioak ere aukeratu behar dituzu.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assign', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,8 +34,9 @@ $string['addnewattempt_help'] = 'ここではあなたの作業のために空�
 $string['addnewgroupoverride'] = 'グループオーバーライドを追加する';
 $string['addnewuseroverride'] = 'ユーザオーバーライドを追加する';
 $string['addsubmission'] = '課題を追加する';
+$string['addsubmission_help'] = 'あなたはまだ提出していいません。';
 $string['allocatedmarker'] = '割り当て採点者';
-$string['allocatedmarker_help'] = 'この提出に割り当てられた採点者';
+$string['allocatedmarker_help'] = 'この提出に割り当てられた採点者です。';
 $string['allowsubmissions'] = 'この課題にユーザが継続して提出できるようにします。';
 $string['allowsubmissionsanddescriptionfromdatesummary'] = '課題詳細および提出フォームは <strong>{$a}</strong> から利用できます。';
 $string['allowsubmissionsfromdate'] = '開始日時';
@@ -82,11 +83,10 @@ $string['attempthistory'] = '前回の提出';
 $string['attemptnumber'] = '提出回数';
 $string['attemptreopenmethod'] = '提出再オープン';
 $string['attemptreopenmethod_help'] = '学生の提出をどのように再オープンするか決定します。利用可能なオプションは以下のとおりです:
-<ul>
-<li>なし - 学生の提出を再オープンすることはできません。</li>
-<li>手動 - 学生の提出は教師により再オープンすることができます。</li>
-<li>合格するまで自動 - この課題に設定された評定表内 (評定表セットアップセクション) の合格点に到達するまで学生の提出は自動的に再オープンされます。</li>
-</ul>';
+
+* なし - 提出を再オープンすることはできません。
+* 手動 - 提出は教師により再オープンすることができます。
+* 合格するまで自動 - この課題に設定された評定表内の合格点に到達するまで学生の提出は自動的に再オープンされます。';
 $string['attemptreopenmethod_manual'] = '手動';
 $string['attemptreopenmethod_none'] = 'なし';
 $string['attemptreopenmethod_untilpass'] = '合格するまで自動';
@@ -113,7 +113,6 @@ $string['blindmarking_help'] = 'ブラインド評定は評定者に学生の個
 $string['calendardue'] = '{$a} の提出期限が到来しています。';
 $string['calendargradingdue'] = '{$a} の評定期限が到来しています。';
 $string['changefilters'] = 'フィルタを変更する';
-$string['changegradewarning'] = 'この課題は評定済みであり、評点を変更することにより既存の提出が自動的に再計算されることはありません。評点を変更したい場合、あなたは既存のすべての提出を再評定する必要があります。';
 $string['changeuser'] = 'ユーザを変更する';
 $string['choosegradingaction'] = '評定操作';
 $string['choosemarker'] = '選択 ...';
@@ -133,6 +132,7 @@ $string['couldnotconvertsubmission'] = 'ユーザ {$a} の提出課題をコン�
 $string['couldnotcreatecoursemodule'] = 'コースモジュールを作成できませんでした。';
 $string['couldnotcreatenewassignmentinstance'] = '新しい課題インスタンスを作成できませんでした。';
 $string['couldnotfindassignmenttoupgrade'] = 'アップグレードするための古い課題インスタンスを見つけることができませんでした。';
+$string['currentassigngrade'] = '課題の現在の評定';
 $string['currentattempt'] = 'これは {$a} 回目の提出です。';
 $string['currentattemptof'] = 'これは {$a->attemptnumber} 回目の提出です ( {$a->maxattempts} 回の提出が許可されています)。';
 $string['currentgrade'] = '評定表内の現在の評定';
@@ -154,7 +154,7 @@ $string['downloadasfolders_help'] = '提出課題をフォルダに入れてダ�
 $string['downloadselectedsubmissions'] = '選択した提出をダウンロードする';
 $string['duedate'] = '終了日時';
 $string['duedatecolon'] = '終了日時: {$a}';
-$string['duedate_help'] = 'これは課題の提出期限です。提出遅延が許可された場合、この日時以後に提出された課題は提出遅延としてマークされます。特定日時以降の提出を避けるには課題遮断日時を設定してください。';
+$string['duedate_help'] = 'これは課題の提出期限です。この日時以降の提出はまだ許可されますが、この日時以後に提出された課題は提出遅延としてマークされます。特定日時以降の提出を避けるには課題遮断日時を設定してください。';
 $string['duedateno'] = '提出期限なし';
 $string['duedatereached'] = 'この課題の提出期限を過ぎました。';
 $string['duedatevalidation'] = '終了日を開始日時の前に設定することはできません。';
@@ -166,7 +166,7 @@ $string['editingstatus'] = '編集ステータス';
 $string['editonline'] = 'オンラインで編集する';
 $string['editoverride'] = 'オーバーライドを編集する';
 $string['editsubmission'] = '提出を編集する';
-$string['editsubmission_help'] = 'あなたの提出に変更を加えます。';
+$string['editsubmission_help'] = 'あなたはまだ提出に変更を加えることができます。';
 $string['editsubmissionother'] = '{$a} の提出を編集する';
 $string['enabled'] = '有効';
 $string['errornosubmissions'] = 'ダウンロード可能な提出はありません。';
@@ -237,6 +237,7 @@ $string['gradecanbechanged'] = '評点変更可';
 $string['gradechangessaveddetail'] = '評定およびフィードバックの変更が保存されました。';
 $string['graded'] = '評定済み';
 $string['gradedby'] = '評定者';
+$string['gradedfollowupsubmit'] = '評定済み - フォローアップ提出受信済み';
 $string['gradedon'] = '評定日時';
 $string['gradelocked'] = 'この評点はロックされているか評定表内で上書きされています。';
 $string['gradeoutof'] = '{$a} 点中の評点';
@@ -267,7 +268,7 @@ $string['grantextension'] = '延長を許可する';
 $string['grantextensionforusers'] = '{$a} 名の学生に対して延長を許可する';
 $string['groupoverrides'] = 'グループオーバーライド';
 $string['groupoverridesdeleted'] = 'グループオーバーライドが削除されました。';
-$string['groupsnone'] = 'このコースにグループはありません。';
+$string['groupsnone'] = 'あなたがアクセスできるグループはありません。';
 $string['groupsubmissionsettings'] = 'グループ提出設定';
 $string['hiddenuser'] = '参加者';
 $string['hideshow'] = '非表示/表示';
@@ -305,7 +306,7 @@ $string['markingworkflowstate_help'] = '使用可能なワークフローステ�
 * 採点中 - 採点者は開始しましたが、まだ完了していません。
 * 採点完了 - 採点者は完了していますが、チェックおよび訂正が必要です。
 * レビュー中 - 採点は教師によるクオリティチェック中です。
-* リリース準備完了 - 担当教師は採点に満足していますが、学生に対して評点にアクセスさせる前に待機しています。
+* リリース準備完了 - 担当教師は採点に満足した場合でも、学生が評点にアクセスできるようにする前に待機できます。
 * リリース - 学生は評点およびフィードバックにアクセスすることができます。';
 $string['markingworkflowstateinmarking'] = '採点中';
 $string['markingworkflowstateinreview'] = 'レビュー中';
@@ -317,7 +318,7 @@ $string['maxattempts'] = '最大提出回数';
 $string['maxattempts_help'] = '学生が試みることのできる最大提出回数です。この提出回数に達した場合、提出を再度開くことができないようになります。';
 $string['maxgrade'] = '最大評点';
 $string['maxperpage'] = '1ページあたりの最大課題数';
-$string['maxperpage_help'] = '評定者が課題評定ページに表示できる最大課題数です。非常に多くの受講登録があるコースのタイムアウトを防ぐことに有用です。';
+$string['maxperpage_help'] = '評定者が課題評定ページに表示できる最大課題数です。この設定は非常に多くの受講登録のいるコースのタイムアウトを防ぐことに有用です。';
 $string['messageprovider:assign_notification'] = '課題通知';
 $string['modulename'] = '課題';
 $string['modulename_help'] = '課題活動モジュールにおいて、教師はタスクの伝達、作業の収集、評点およびフィードバックを提供することができます。

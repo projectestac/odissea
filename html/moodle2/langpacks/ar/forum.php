@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -233,7 +233,6 @@ $string['postadded'] = 'تم إضافة مقالك بنجاح.<br />عليك {$a
 $string['postaddedsuccess'] = 'تمت إضافة موضوعك بنجاح.';
 $string['postaddedtimeleft'] = 'لديك {$a} للتحرير إن كنت تريد عمل أي تعديلات.';
 $string['postincontext'] = 'شاهد هذا المقال في السياق';
-$string['postmailinfo'] = 'هذه نسخة من رسالة أرسلت لموقع {$a} .لإضافة ردك عن طريق هذا الموقع، اضغط هذه الرابطة:';
 $string['postmailnow'] = 'سيتم إرسال هذه المشاركة حالا لجميع المشتركون في المنتدى';
 $string['postrating1'] = 'تظهر مهارته منفردا';
 $string['postrating2'] = 'الاتصال والانفصال سواء';

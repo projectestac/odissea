@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,5 +37,6 @@ $string['pluginname'] = 'Отзыв в виде комментария';
 $string['privacy:commentpath'] = 'Отзыв в виде комментария';
 $string['privacy:metadata:assignmentid'] = 'ID задания';
 $string['privacy:metadata:commentpurpose'] = 'Текст комментария.';
+$string['privacy:metadata:filepurpose'] = 'Файлы отзыва от учителя для студента.';
 $string['privacy:metadata:gradepurpose'] = 'ID оценки, связанной с этим комментарием.';
 $string['privacy:metadata:tablesummary'] = 'Хранит комментарии, сделанные оценщиками в виде отзыва для студента на отправленное задание.';

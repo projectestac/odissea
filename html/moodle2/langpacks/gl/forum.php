@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['cannotdeletepost'] = 'Non pode eliminar este comentario!';
 $string['cannoteditposts'] = 'Non pode editar os comentarios doutras persoas!';
 $string['cannotfinddiscussion'] = 'Non poderá atopar a discusión neste foro';
 $string['cannotfindfirstpost'] = 'Non poderá atopar o primeiro comentario neste foro';
-$string['cannotfindorcreateforum'] = 'Non poderá atopar nin crear un foro principal de novas para este sitio';
+$string['cannotfindorcreateforum'] = 'Non poderá atopar nin crear un foro principal de anuncios para este sitio';
 $string['cannotfindparentpost'] = 'Non poderá atopar o comentario pai superior de {$a}';
 $string['cannotmovefromsingleforum'] = 'Non pode mover a discusión dun foro cunha única discusión simple';
 $string['cannotmovenotvisible'] = 'Foro non visíbel';
@@ -111,11 +111,11 @@ $string['configrsstypedefault'] = 'Se as fontes RSS están activadas, estabelece
 $string['configshortpost'] = 'Calquera comentario menor (en caracteres sen incluír HTML) considérase curto (vexa a seguir).';
 $string['configsubscriptiontype'] = 'Axuste predeterminado para o modo de subscrición.';
 $string['configtrackingtype'] = 'Axuste predeterminado para o seguimento da lectura';
-$string['configtrackreadposts'] = 'Estabelecer como \'si\' de querer facer un seguimento sobre o lido/pendente de cada usuario.';
-$string['configusermarksread'] = 'No caso de \'si\', o usuario debe de marcar manualmente un comentario como lido. No caso de \'non\', cando se visualice o comentario, marcarase como lido.';
-$string['confirmsubscribe'] = 'Confirma que quere subscribirse ao foro \'{$a}\'?';
+$string['configtrackreadposts'] = 'Estabelecer como «si» de querer facer un seguimento sobre o lido/pendente de cada usuario.';
+$string['configusermarksread'] = 'No caso de «si», o usuario debe de marcar manualmente un comentario como lido. No caso de \'non\', cando se visualice o comentario, marcarase como lido.';
+$string['confirmsubscribe'] = 'Confirma que quere subscribirse ao foro «{$a}»?';
 $string['confirmsubscribediscussion'] = 'Confirma que quere subscribirse á discusión «{$a->discussion}» no foro «{$a->discussion}»?';
-$string['confirmunsubscribe'] = 'Confirma que quere cancelar a subscrición ao foro \'{$a}\'?';
+$string['confirmunsubscribe'] = 'Confirma que quere cancelar a subscrición ao foro «{$a}»?';
 $string['confirmunsubscribediscussion'] = 'Confirma que quere cancelar a subscrición á discusión «{$a->discussion}» no foro «{$a->discussion}»?';
 $string['couldnotadd'] = 'Poida que non se engada o seu comentario debido a erro descoñecido';
 $string['couldnotdeletereplies'] = 'Non se pode eliminar porque xa hai xente que respondeu nel';
@@ -142,7 +142,7 @@ $string['discussion'] = 'Discusión';
 $string['discussionlocked'] = 'Esta discusión bloqueouse polo que xa non pode responder nela.';
 $string['discussionlockingdisabled'] = 'Non bloquear as discusións';
 $string['discussionlockingheader'] = 'Bloqueo de discusión';
-$string['discussionmoved'] = 'Esta discusión moveuse a \'{$a}\'.';
+$string['discussionmoved'] = 'Esta discusión moveuse a «{$a}».';
 $string['discussionmovedpost'] = 'Esta discusión moveuse <a href="{$a->discusshref}">aquí</a> no foro <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Nome da discusión';
 $string['discussionnownotsubscribed'] = '{$a->name}  NON será notificado de novos comentarios en «{$a->discussion}» de «{$a->forum}»';
@@ -173,9 +173,6 @@ $string['edit'] = 'Editar';
 $string['editedby'] = 'Editado por {$a->name} - envío orixinal {$a->date}';
 $string['editedpostupdated'] = 'actualizáronse os comentarios de {$a}';
 $string['editing'] = 'Edición';
-$string['emaildigest_0'] = 'Recibirá un correo por cada publicación no foro.';
-$string['emaildigest_1'] = 'Recibirá un correo resumo diario, cos contidos completos de cada comentario do foro.';
-$string['emaildigest_2'] = 'Recibirá un correo resumo diario, cos asuntos de cada comentario do foro.';
 $string['emaildigestcompleteshort'] = 'Comentarios completos';
 $string['emaildigestdefault'] = 'Predeterminado {$a}';
 $string['emaildigestoffshort'] = 'Sen resumo';
@@ -187,8 +184,6 @@ $string['emaildigesttype_help'] = 'O tipo de notificación que recibirá para ca
 * Sen resumo - Recibirá un correo por cada comentario no foro.
 * Resumo - Comentarios completos - Recibirá un correo resumo diario co contido completo de cada comentario do foro;
 * Resumo - Só os asuntos - Recibirá un correo resumo diario contendo só os asuntos de cada comentario do foro.';
-$string['emaildigestupdated'] = 'A opción de correo resumo foi cambiada a «{$a->maildigesttitle}» para o foro «{$a->forum}». {$a->maildigestdescription}';
-$string['emaildigestupdated_default'] = 'A súa configuración predeterminada de «{$a->maildigesttitle}» foi empregada para o foro «{$a->forum}». {$a->maildigestdescription}.';
 $string['emptymessage'] = 'Algo vai mal no seu comentario. Se cadra deixouno en branco, ou o anexo era demasiado grande. Os seus cambios NON se gardaron.';
 $string['erroremptymessage'] = 'A mensaxe do comentario non debe quedar baleira.';
 $string['erroremptysubject'] = 'O asunto do comentario non debe quedar baleiro.';
@@ -226,13 +221,13 @@ $string['forcesubscribed'] = 'Este foro obriga a todos a estaren subscritos';
 $string['forcesubscribed_help'] = 'Este foro foi configurado para que non poida cancelar a subscrición ás discusións.';
 $string['forum'] = 'Foro';
 $string['forum:addinstance'] = 'Engadir un novo foro';
-$string['forum:addnews'] = 'Engadir novas';
+$string['forum:addnews'] = 'Engadir anuncios';
 $string['forum:addquestion'] = 'Engadir pregunta';
 $string['forum:allowforcesubscribe'] = 'Permitir subscrición forzosa';
 $string['forumauthorhidden'] = 'Autor (agochado)';
 $string['forumblockingalmosttoomanyposts'] = 'Está chegando ao limiar de comentarios. Comentou {$a->numposts} veces en {$a->blockperiod} e o límite é de {$a->blockafter} comentarios.';
 $string['forumbodydeleted'] = 'O contido desta publicación do foro eliminouse e xa non pode acceder a el.';
-$string['forumbodyhidden'] = 'Non pode ver esta mensaxe, probablemente porque aínda non enviou mensaxes sobre o tema.';
+$string['forumbodyhidden'] = 'Non pode ver esta mensaxe, probabelmente porque aínda non enviou mensaxes sobre o tema, porque aínda non transcorreu o tempo máximo para editar a discusión, a discusión non comezou ou xa caducou.';
 $string['forum:canoverridediscussionlock'] = 'Responder a discusións bloqueadas';
 $string['forum:canposttomygroups'] = 'Pode publicar en todos os grupos aos que teña acceso';
 $string['forum:createattachment'] = 'Crear anexos';
@@ -250,7 +245,7 @@ $string['forum:pindiscussions'] = 'Fixar discusións';
 $string['forumposts'] = 'Comentarios do foro';
 $string['forum:postwithoutthrottling'] = 'Eximir do limiar de comentarios';
 $string['forum:rate'] = 'Ponderar comentarios';
-$string['forum:replynews'] = 'Responder as novas';
+$string['forum:replynews'] = 'Responder aos anuncios';
 $string['forum:replypost'] = 'Responder os comentarios';
 $string['forums'] = 'Foros';
 $string['forum:splitdiscussions'] = 'Dividir discusións';
@@ -260,18 +255,13 @@ $string['forumsubjecthidden'] = 'Asunto (agochado)';
 $string['forumtracked'] = 'Seguimento de comentarios non lidos';
 $string['forumtrackednot'] = 'Os comentarios non lidos non están sendo seguidos';
 $string['forumtype'] = 'Tipo de foro';
-$string['forumtype_help'] = '<P ALIGN=CENTER><B>Tipos de Foros</B></P>
+$string['forumtype_help'] = 'Hai 5 tipos de foros:
 
-<P>Hai varios tipos diferentes de foros, entre eles:<P><B>Un debate sinxelo.</B>
-É simplemente un intercambio de ideas sobre un só tema, todo nunha páxina. Útil para debates curtos e moi concretos.<P><B>O foro Normal, para uso
-xeral.</B>  É un foro aberto no que calquera pode comezar un novo tema de debate
-cando queira. Este é o foro máis axeitado
-para uso xeral.<P><B>Cada persoa inicia un debate.</B> Cada persoa pode formular un
-novo tema
-de debate (e todos/as poden responder). Esta modalidade é útil cando vostede
-quere
-que cada alumno comece, por exemplo, unha discusión sobre as súas reflexións sobre
-o tema da semana, e que todos os demais lle respondan.';
+* Discusión única sinxela - Un único tema de discusión que todos poden responder (non se pode utilizar con grupos separados)
+* Cada persoa formula un tema de discusión - Cada alumno pode comentar un novo tema de debate, e todos poden responder.
+* Foro de preguntas e respostas - Os alumnos primeiro deben escribir os seus puntos de vista antes de ver os comentarios dos demais.
+* Foro estándar amosado en formato ao estilo dun blog - É un foro aberto no que calquera pode comezar un novo tema de debate en calquera momento e no que os temas de discusión amósanse nunha páxina con ligazóns «Discute este tema».
+* Foro estándar para uso xeneral - É un foro aberto no que calquera pode comezar un novo tema de debate en calquera momento.';
 $string['forum:viewallratings'] = 'Ver todas as puntuacións en bruto dadas por individuos';
 $string['forum:viewanyrating'] = 'Ver as puntuacións totais que reciba calquera';
 $string['forum:viewdiscussion'] = 'Ver discusións';
@@ -310,13 +300,13 @@ $string['managesubscriptionsoff'] = 'Remata a xestión de subscricións';
 $string['managesubscriptionson'] = 'Xestionar subscricións';
 $string['manydiscussions'] = 'Discusións por páxina';
 $string['markalldread'] = 'Marcar todos os comentarios desta discusión como lidos.';
-$string['markallread'] = 'Marcar todos os correos neste foro como lidos.';
+$string['markallread'] = 'Marcar todos os comentario neste foro como lidos.';
 $string['markasreadonnotification'] = 'Ao enviar as notificacións de comentarios do foro';
 $string['markasreadonnotification_help'] = 'Cando se lle notifique un comentario no foro, pode escoller se isto marca o comentario como lido para o seguimento do foro.';
 $string['markasreadonnotificationno'] = 'Non marcar o comentario como lido';
 $string['markasreadonnotificationyes'] = 'Marcar o comentario como lido';
 $string['markread'] = 'Marcar como lido';
-$string['markreadbutton'] = 'Marcar<br />lido';
+$string['markreadbutton'] = 'Marcar<br />lidos';
 $string['markunread'] = 'Marcar como non lido';
 $string['markunreadbutton'] = 'Marcar<br />non lido';
 $string['maxattachments'] = 'Número máximo de anexos:';
@@ -356,7 +346,7 @@ Os foros teñen moitos usos, como
 * Para discusión de só profesores (utilizando un foro agochado)
 * Un centro de axuda onde titores e alumnos poden dar consello
 * Un área de apoio directo personalizada para comunicacións privadas entre profesores e alumnos (utilizando un foro con grupos separados e cun alumno por grupo)
-* Para actividades de extensión, por exemplo «xogos mentais» para ponderación de estudantes e suxestión de solucións';
+* Para actividades de extensión, por exemplo «xogos mentais» para ponderación de alumnos e suxestión de solucións';
 $string['modulename_link'] = 'mod/forum/view';
 $string['modulenameplural'] = 'Foros';
 $string['more'] = 'máis';
@@ -366,8 +356,8 @@ $string['mustprovidediscussionorpost'] = 'Debe fornecer ben un id de discusión 
 $string['myprofileotherdis'] = 'Discusións do foro';
 $string['myprofileowndis'] = 'As miñas discusións no foro';
 $string['myprofileownpost'] = 'os meus comentarios no foro';
-$string['namenews'] = 'Foro de novas';
-$string['namenews_help'] = 'O foro de novas é un foro especial para anuncios que se crea automaticamente ao tempo que un curso. Un curso pode ter soamente un foro de novas. Soamente os profesores e os administradores poden comentar no foro de novas. O bloque "Últimas novas" presentará as discusións recentes desde o foro de novas.';
+$string['namenews'] = 'Anuncios';
+$string['namenews_help'] = 'O foro de anuncios é un foro especial para anuncios que se crea automaticamente ao tempo que un curso. Un curso pode ter soamente un foro de anuncios. Soamente os profesores e os administradores poden comentar no foro de anuncios. O bloque "Últimos anuncios" presentará as discusións recentes desde o foro de anuncios.';
 $string['namesocial'] = 'Foro social';
 $string['nameteacher'] = 'Foro de profesor';
 $string['newforumposts'] = 'Novos comentarios do foro';
@@ -379,8 +369,8 @@ $string['nodiscussionsstartedbyyou'] = 'Vostede aínda non comezou ningunha disc
 $string['noguestpost'] = 'Desculpe, aos convidados non se lles permite comentar.';
 $string['noguestsubscribe'] = 'Desculpe, aos convidados non se lles permite subscribirse.';
 $string['noguesttracking'] = 'Desculpe, aos convidados non se lles permiten opcións de seguimento.';
-$string['nomorepostscontaining'] = 'Non se atoparon máis comentarios con \'{$a}';
-$string['nonews'] = 'Ningunha nova foi aínda comentada';
+$string['nomorepostscontaining'] = 'Non se atoparon máis comentarios con «{$a}»';
+$string['nonews'] = 'Ningún anuncio foi aínda comentado.';
 $string['noonecansubscribenow'] = 'As subscricións agora xa non están permitidas';
 $string['nopermissiontosubscribe'] = 'Non ten permiso para ver subscritores de foro';
 $string['nopermissiontoview'] = 'Non ten permisos para ver este comentario';
@@ -400,10 +390,10 @@ $string['notsubscribed'] = 'Subscribirse';
 $string['noviewdiscussionspermission'] = 'Non ten permiso para ver discusións neste foro';
 $string['nowallsubscribed'] = 'Todos os foros en {$a} están subscritos.';
 $string['nowallunsubscribed'] = 'Todos os foros en {$a} non están subscritos.';
-$string['nownotsubscribed'] = '{$a->name}  NON será notificado de novos comentarios en \'{$a->forum}';
-$string['nownottracking'] = '{$a->name} xa non está seguindo \'{$a->forum}\'.';
-$string['nowsubscribed'] = '{$a->name} será notificado de novos comentarios en \'{$a->forum}';
-$string['nowtracking'] = '{$a->name} está agora seguindo \'{$a->forum}\'.';
+$string['nownotsubscribed'] = '{$a->name}  NON será notificado de novos comentarios en «{$a->forum}»';
+$string['nownottracking'] = '{$a->name} xa non está seguindo «{$a->forum}».';
+$string['nowsubscribed'] = '{$a->name} será notificado de novos comentarios en «{$a->forum}»';
+$string['nowtracking'] = '{$a->name} está agora seguindo «{$a->forum}».';
 $string['numposts'] = '{$a} comentarios';
 $string['olderdiscussions'] = 'Discusións antigas';
 $string['oldertopics'] = 'Temas máis antigos';
@@ -425,9 +415,6 @@ $string['postbymailsuccess'] = 'Parabéns, o seu comentario no foro co asunto «
 $string['postbymailsuccess_html'] = 'Parabéns, o seu <a href="{$a->discussionurl}"> comentario no foro</a> co asunto «{$ a-> subject}» publicouse satisfactoriamente.';
 $string['postbyuser'] = '{$a->post} por {$a->user}';
 $string['postincontext'] = 'Ver este comentario en contexto';
-$string['postmailinfo'] = 'Isto é unha copia dunha mensaxe comentada no sitio web {$a}.
-
-Para responder, faga clic nesta ligazón:';
 $string['postmailinfolink'] = 'Esta é unha copia dunha mensaxe publicada en {$a->coursename}.
 
 Para responder prema nesta ligazón: {{$a->replylink}';
@@ -597,13 +584,11 @@ $string['trackingoff'] = 'Apagado';
 $string['trackingon'] = 'Acendido';
 $string['trackingoptional'] = 'Opcional';
 $string['trackingtype'] = 'Ler o seguimento deste foro?';
-$string['trackingtype_help'] = 'Se habilitado, os participantes poden seguir as mensaxes lidas e as non lidas no foro e nas discusións.
+$string['trackingtype_help'] = 'O seguimento de lectura permite aos participantes comprobar con facilidade os comentarios que aínda non viron destacando as publicacións novas.
 
-Hai tres opcións:
+Se se estabelece como opcional, os participantes poden optar por activar ou desactivar o seguimento a través dunha ligazón no bloque de administración. (Os usuarios tamén deben permitir o seguimento do foro nas súas preferencias do foro).
 
-* Opcional - Os participantes poden escoller entre facer seguimento ou non
-* Acendido - O seguimento está sempre acendido
-* Apagado - O seguimento está sempre apagado';
+Se está activado «Permitir o forzado do seguimento de lectura» na administración do sitio, entón hai outra opción dispoñíbel: forzado. Isto significa que o seguimento sempre está activado, independentemente das preferencias do foro dos usuarios.';
 $string['trackreadposts_header'] = 'Seguimento do foro';
 $string['unread'] = 'Non lidos';
 $string['unreadposts'] = 'Comentarios non lidos';

@@ -27,6 +27,7 @@ if (!defined('MOODLE_INTERNAL')) {
 }
 
 require_once($CFG->dirroot.'/lib/formslib.php');
+require_once($CFG->dirroot.'/user/lib.php');
 
 /**
  * Class user_editadvanced_form.
@@ -96,7 +97,8 @@ class user_editadvanced_form extends moodleform {
             }
         }
 
-        $mform->addElement('text', 'username', get_string('username'), 'size="20"');
+        $purpose = user_edit_map_field_purpose($userid, 'username');
+        $mform->addElement('text', 'username', get_string('username'), 'size="20"' . $purpose);
         $mform->addHelpButton('username', 'username', 'auth');
         $mform->setType('username', PARAM_RAW);
 
@@ -116,7 +118,9 @@ class user_editadvanced_form extends moodleform {
         if (!empty($CFG->passwordpolicy)) {
             $mform->addElement('static', 'passwordpolicyinfo', '', print_password_policy());
         }
-        $mform->addElement('passwordunmask', 'newpassword', get_string('newpassword'), 'size="20"');
+
+        $purpose = user_edit_map_field_purpose($userid, 'password');
+        $mform->addElement('passwordunmask', 'newpassword', get_string('newpassword'), 'size="20"' . $purpose);
         $mform->addHelpButton('newpassword', 'newpassword');
         $mform->setType('newpassword', core_user::get_property_type('password'));
         $mform->disabledIf('newpassword', 'createpassword', 'checked');
@@ -154,7 +158,7 @@ class user_editadvanced_form extends moodleform {
             $btnstring = get_string('updatemyprofile');
         }
 
-        $this->add_action_buttons(false, $btnstring);
+        $this->add_action_buttons(true, $btnstring);
 
         $this->set_data($user);
     }
@@ -301,9 +305,18 @@ class user_editadvanced_form extends moodleform {
         if (!$user or (isset($usernew->email) && $user->email !== $usernew->email)) {
             if (!validate_email($usernew->email)) {
                 $err['email'] = get_string('invalidemail');
-            } else if (empty($CFG->allowaccountssameemail)
-                    and $DB->record_exists('user', array('email' => $usernew->email, 'mnethostid' => $CFG->mnet_localhost_id))) {
-                $err['email'] = get_string('emailexists');
+            } else if (empty($CFG->allowaccountssameemail)) {
+                // Make a case-insensitive query for the given email address.
+                $select = $DB->sql_equal('email', ':email', false) . ' AND mnethostid = :mnethostid AND id <> :userid';
+                $params = array(
+                    'email' => $usernew->email,
+                    'mnethostid' => $CFG->mnet_localhost_id,
+                    'userid' => $usernew->id
+                );
+                // If there are other user(s) that already have the same email, show an error.
+                if ($DB->record_exists_select('user', $select, $params)) {
+                    $err['email'] = get_string('emailexists');
+                }
             }
         }
 

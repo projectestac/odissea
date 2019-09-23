@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'page', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,4 +63,7 @@ $string['printheading'] = 'Mostrar el nombre de la página';
 $string['printheadingexplain'] = 'Mostrar el nombre de la página por encima del contenido?';
 $string['printintro'] = 'Mostrar la descripción de la página';
 $string['printintroexplain'] = '¿Mostrar la descripción de la página encima del contenido?';
+$string['printlastmodified'] = 'Mostrar última fecha de modificación';
+$string['printlastmodifiedexplain'] = '¿Mostrar última fecha de modificación debajo del contenido?';
+$string['privacy:metadata'] = 'El plugin de recurso de página no guarda datos personales.';
 $string['search:activity'] = 'Página';

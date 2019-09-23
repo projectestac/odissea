@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_offline', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_offline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['feedbackupdate'] = '"{$a->field}" eremuan "{$a->text}" balioa ezarri da
 $string['gradelockedingradebook'] = '{$a}-ren kalifikazioa blokeatu da kalifikazio-liburuan';
 $string['graderecentlymodified'] = '{$a}-ren kalifikazioa Moodle-en aldatu da kalifikazio kalkulu-orria sortu ondoren';
 $string['gradesfile'] = 'Kalifikazio kalkulu-orria (csv formatua)';
-$string['gradesfile_help'] = 'Kalifikazio eguneratuak dituen kalkulu-orria. Fitxategia hau izan behar du zeregin honetatik jaitsitako csv fitxategia, eta zutabe bat izan behar du ikaslearen kalifikazioa jasotzeko eta beste bat ikaslearen identifikadorea jasotzeko. Fitxategiaren kodifikazioa &quot;UTF-8&quot; izan behar du.';
+$string['gradesfile_help'] = 'Kalifikazio eguneratuak dituen kalkulu-orria. Fitxategia hau zeregin honetatik jaitsitako eta UTF-8 kodifikazioa duen CSV fitxategia izan behar du, eta ikaslearen identifikatzailearentzako eta kalifikaziorako zutabe bana izan behar du.';
 $string['gradeupdate'] = 'Eman {$a->grade} kalifikazioa {$a->student} ikasleari';
 $string['ignoremodified'] = 'Baimendu kalifikazioen eguneraketa kasu hau ematen denean: Moodle-en dagoen kalifikazioa kalkulu-orria sortu ondoren eman da.';
 $string['ignoremodified_help'] = 'Kalifikazio kalkulu-orria Moodle-etik jaisten denean, kalifikazio bakoitzaren azken eguneraketa data jasotzen da. Horietako kalifikazioren bat eguneratzen bada Moodle-en orria jaitsi ondoren, lehentasuna emango zaio azken kalifikazio honi inportazioa egiteko unean. Aukera hau gaitzen bada, Moodle-ek desgaituko du babes neurri hau, eta kalifikatzaile bat baino gehiago badago, posible izango da batak besteari kalifikazioak zanpatzea.';
@@ -46,7 +46,7 @@ $string['offlinegradingworksheet'] = 'Kalifikazioak';
 $string['pluginname'] = 'Lineaz kanpoko kalkulu-orria';
 $string['privacy:nullproviderreason'] = 'Plugin honek ez du erabiltzailearen informazioa biltzeko datu-baserik. Soilik mod_assign-eko APIak erabiltzen ditu kalifikazio-interfazea erakusten laguntzeko.';
 $string['processgrades'] = 'Kalifikazioak inportatu';
-$string['skiprecord'] = 'Erregistroa alde batera utzi';
+$string['skiprecord'] = 'Utzi alde batera erregistroa';
 $string['updatedgrades'] = '{$a} kalifikazioak eta feedbackak eguneratu dira';
 $string['updaterecord'] = 'Eguneratu erregistroa';
 $string['uploadgrades'] = 'Kalifikazio kalkulu-orria igo';

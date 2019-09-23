@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_comments', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_comments', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Blanks for {$a} more aspects';
-$string['dimensioncomment'] = 'Comment';
 $string['dimensioncommentfor'] = 'Comment for {$a}';
 $string['dimensiondescription'] = 'Description';
 $string['dimensionnumber'] = 'Aspect {$a}';

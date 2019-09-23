@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_overview', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,7 @@ $string['privacy:metadata:sortorder'] = 'Definir ordem';
 $string['removefavourite'] = 'Desmarcar favorito';
 $string['reorderfullname'] = 'Nome completo da disciplina';
 $string['reorderid'] = 'ID da disciplina';
+$string['reorderiddesc'] = 'ID disciplina descendente';
 $string['reordernone'] = 'Arrastar e largar';
 $string['reordershortname'] = 'Nome curto da disciplina';
 $string['setmaxcourses'] = 'Definir o máximo de disciplinas';

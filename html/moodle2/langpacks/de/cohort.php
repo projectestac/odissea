@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cohort', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,7 @@ $string['eventcohortmemberremoved'] = 'Nutzer/in aus globaler Gruppe entfernt';
 $string['eventcohortupdated'] = 'Globale Gruppe aktualisiert';
 $string['external'] = 'Externe globale Gruppe';
 $string['idnumber'] = 'Globale Gruppen-ID';
+$string['invalidtheme'] = 'Das Design für die globale Gruppe gibt es nicht.';
 $string['memberscount'] = 'Größe';
 $string['name'] = 'Name';
 $string['namecolumnmissing'] = 'Das Format der CSV-Datei ist nicht richtig. Prüfen Sie, ob die Feldnamen in der ersten Zeile enthalten sind.

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_myprofile', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,6 @@ $string['display_phone1'] = 'Показать номер телефона';
 $string['display_phone2'] = 'Показать номер мобильного телефона';
 $string['display_picture'] = 'Показывать изображение';
 $string['display_skype'] = 'Показывать Skype';
-$string['display_un'] = 'Показывать имя';
 $string['display_yahoo'] = 'Показывать Yahoo';
 $string['myprofile:addinstance'] = 'Добавлять новый блок «Текущий пользователь»';
 $string['myprofile:myaddinstance'] = 'Добавлять новый блок «Текущий пользователь» на страницу «Личный кабинет»';

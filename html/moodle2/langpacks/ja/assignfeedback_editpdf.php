@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,8 @@ $string['commentindex'] = 'コメントインデックス';
 $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'ページ {$a} を保存できませんでした。';
 $string['currentstamp'] = 'スタンプ';
+$string['default'] = 'デフォルトで有効にする';
+$string['default_help'] = 'この設定を有効にした場合、すべての新しい課題に関して、このフィードバック方法がデフォルトで有効にされます。';
 $string['deleteannotation'] = 'アノテーションを削除する';
 $string['deletecomment'] = 'コメントを削除する';
 $string['deletefeedback'] = 'フィードバックPDFを削除する';
@@ -50,7 +52,7 @@ $string['drag'] = 'ドラッグ';
 $string['editpdf'] = 'PDFに注釈をつける';
 $string['editpdf_help'] = 'ブラウザ内で直接学生の提出に注釈を付けて、ダウンロード可能な編集済みPDFを作成します。';
 $string['enabled'] = 'PDFに注釈をつける';
-$string['enabled_help'] = 'この設定を有効にした場合、教師は作成時に注釈付きのPDFを作成することができます。これにより、教師はコメント、スケッチおよびスタンプを直接学生の課題のトップに追加することができます。注釈はブラウザ内で作成します。また、別途ソフトウェアを必要としません。';
+$string['enabled_help'] = 'この設定を有効にした場合、教師は課題提出の評定時に注釈付きのPDFを作成することができます。これにより、教師はコメント、スケッチおよびスタンプを直接学生の課題のトップに追加することができます。注釈はブラウザ内で作成します。また、別途ソフトウェアを必要としません。';
 $string['errorgenerateimage'] = 'Ghostscriptイメージ生成中にエラーが発生しました。デバッグ情報: {$a}';
 $string['errorpdfpage'] = 'このページの生成中にエラーが発生しました。';
 $string['expcolcomments'] = 'すべてのコメントを展開/折りたたむ';
@@ -65,12 +67,13 @@ $string['jsrequired'] = 'PDFに注釈を付けるにはJavaScriptを必要とし
 $string['launcheditor'] = 'PDFエディタを起動する ...';
 $string['line'] = '行';
 $string['loadingeditor'] = 'PDFエディタ読み込み中';
-$string['navigatenext'] = '次のページ';
-$string['navigateprevious'] = '前のページ';
+$string['navigatenext'] = '次のページ (Alt/Shift-Alt/Ctrl-Option + {$a})';
+$string['navigateprevious'] = '前のページ (Alt/Shift-Alt/Ctrl-Option + {$a})';
 $string['output'] = 'アウトプット:';
 $string['oval'] = '楕円';
 $string['pagenumber'] = 'ページ {$a}';
 $string['pagexofy'] = 'ページ {$a->page} / {$a->total}';
+$string['partialwarning'] = 'この提出のいくつかのファイルは直接ダウンロードのみでアクセスすることができます。';
 $string['pathtogspathdesc'] = 'PDFに注釈を付けるには「 {$a} 」にGhostscriptのパスを設定する必要があることに留意してください。';
 $string['pen'] = 'ペン';
 $string['pluginname'] = 'PDF注釈';

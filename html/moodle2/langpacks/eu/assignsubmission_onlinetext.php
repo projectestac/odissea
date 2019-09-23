@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['onlinetext'] = 'On-line testua';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Baimendu on-line testuen bidalketa';
 $string['pluginname'] = 'Baimendu on-line testuen bidalketa';
-$string['privacy:metadata:assignmentid'] = 'Zereginaren identifikatzailea';
+$string['privacy:metadata:assignmentid'] = 'Zereginaren IDa';
 $string['privacy:metadata:filepurpose'] = 'Bidalketaren testuan txertatutako fitxategiak';
 $string['privacy:metadata:submissionpurpose'] = 'Erabiltzaileren bidalketekin esteka duen bidalketaren IDa';
 $string['privacy:metadata:tablepurpose'] = 'Saiakera bakoitzeko bidalketaren testua gordetzen da.';

@@ -503,7 +503,9 @@ abstract class repository implements cacheable_object {
     //2012.11.20 @sarjona
     const GETFILE_TIMEOUT = 150;
     //************ ORIGINAL
-    //const GETFILE_TIMEOUT = 30;
+    /*
+    const GETFILE_TIMEOUT = 30;
+    */
     //************ FI
 
     /**

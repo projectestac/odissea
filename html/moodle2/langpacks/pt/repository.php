@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['addplugin'] = 'Adicionar um módulo de repositório';
 $string['allowexternallinks'] = 'Permitir hiperligações externas';
 $string['areacategoryintro'] = 'Introdução da categoria';
 $string['areacourseintro'] = 'Introdução da disciplina';
-$string['areacourseoverviewfiles'] = 'Ficheiros de resumo da disciplina';
+$string['areacourseoverviewfiles'] = 'Imagem da disciplina';
 $string['areamainfile'] = 'Ficheiro principal';
 $string['arearoot'] = 'Sistema';
 $string['areauserbackup'] = 'Cópia de segurança do utilizador';
@@ -51,7 +51,7 @@ $string['back'] = 'Voltar';
 $string['backtodraftfiles'] = 'Voltar para gestor de rascunhos';
 $string['cachecleared'] = 'Os ficheiros em cache foram apagados';
 $string['cacheexpire'] = 'Expiração da cache';
-$string['cannotaccessparentwin'] = 'Se a página ascendente usar HTTPS, então não é possível aceder ao objeto window.opener, o que faz com que não seja possível atualizar o repositório automaticamente. Contudo, a sessão de utilizador está registada, pelo que se voltar ao explorador de ficheiros e selecionar o módulo novamente, a funcionalidade já deverá estar funcional.';
+$string['cannotaccessparentwin'] = 'Ao usar HTTPS, o repositório não é atualizado automaticamente. Em vez disso, é necessário voltar ao seletor de ficheiros e selecionar novamente o repositório.';
 $string['cannotdelete'] = 'Não é possível apagar este ficheiro';
 $string['cannotdownload'] = 'Não é possível descarregar este ficheiro';
 $string['cannotdownloaddir'] = 'Não é possível descarregar esta pasta';
@@ -113,7 +113,7 @@ $string['entername'] = 'Insira o nome da pasta';
 $string['enternewname'] = 'Insira o nome do novo ficheiro';
 $string['error'] = 'Ocorreu um erro desconhecido!';
 $string['errordoublereference'] = 'Não é possível substituir o ficheiro por um atalho/alias porque já existem atalhos para este ficheiro.';
-$string['errornotyourfile'] = 'Não pode selecionar um ficheiro que não foi criado por si';
+$string['errornotyourfile'] = 'Só pode escolher ficheiros que tenha adicionado.';
 $string['errorpostmaxsize'] = 'O ficheiro que tentou carregar é muito grande para que o servidor o possa processar.';
 $string['erroruniquename'] = 'O nome da instância de repositório deve ser único';
 $string['errorwhilecommunicatingwith'] = 'Ocorreu um erro durante a comunicação com o repositório \'{$a}\'.';
@@ -127,7 +127,7 @@ $string['fileexistsdialogheader'] = 'Ficheiro existente';
 $string['filename'] = 'Nome do ficheiro';
 $string['filenotnull'] = 'Tem que escolher um ficheiro para enviar';
 $string['filepicker'] = 'Selecionar ficheiro';
-$string['filesaved'] = 'O ficheiro foi gravado';
+$string['filesaved'] = 'O ficheiro foi guardado';
 $string['filesizenull'] = 'O tamanho do ficheiro não pode ser determinado';
 $string['folderexists'] = 'Nome da pasta já está a ser usado. Por favor, selecione um nome diferente.';
 $string['foldernotfound'] = 'Pasta não encontrada';
@@ -146,7 +146,7 @@ $string['instancesforusers'] = '{$a} instância(s) privadas no contexto de utili
 $string['invalidfiletype'] = 'O tipo de ficheiro "{$a}" não é permitido.';
 $string['invalidjson'] = 'String JSON inválida';
 $string['invalidparams'] = 'Parâmetros inválidos';
-$string['invalidplugin'] = 'Repositório de módulo {$a} inválido';
+$string['invalidplugin'] = 'Módulo do repositório {$a} inválido';
 $string['invalidrepositoryid'] = 'Identificador de repositório inválido';
 $string['isactive'] = 'Ativo?';
 $string['keyword'] = 'Senha';
@@ -190,7 +190,7 @@ $string['original'] = 'Original';
 $string['overwrite'] = 'Substituir';
 $string['overwriteall'] = 'Substituir todos';
 $string['path'] = 'Caminho';
-$string['plugin'] = 'Módulos de repositório';
+$string['plugin'] = 'Módulos de Repositório';
 $string['pluginerror'] = 'Erros no módulo de repositório.';
 $string['pluginname'] = 'Nome do módulo de repositório';
 $string['pluginnamehelp'] = 'Se deixar este campo vazio, será utilizado o nome predefinido.';
@@ -198,7 +198,7 @@ $string['popup'] = 'Clique no botão "Autenticar" para iniciar sessão';
 $string['popupblockeddownload'] = 'A janela para descarregar está bloqueada. Desbloqueie as janelas de pop-up no navegador e tente novamente.';
 $string['preview'] = 'Pré-visualização';
 $string['privacy:metadata:repository'] = 'A componente repositório armazena tipos de repositórios no subsistema principal.';
-$string['privacy:metadata:repository_instances'] = 'A componente do módulo repositório armazena dados de instâncias do repositório do utilizador no subsistema principal.';
+$string['privacy:metadata:repository_instances'] = 'A componente do módulo Repositório armazena dados do utilizador nas instâncias do repositório no subsistema principal.';
 $string['privacy:metadata:repository_instances:name'] = 'O nome customizado da instância de repositório';
 $string['privacy:metadata:repository_instances:password'] = 'A senha opcional configurada para a instância de repositório.';
 $string['privacy:metadata:repository_instances:timecreated'] = 'A data/hora de criação da instância de repositório.';
@@ -222,7 +222,7 @@ $string['repositoryerror'] = 'O repositório remoto deu o erro: {$a}';
 $string['repositoryicon'] = 'Ícone do repositório';
 $string['save'] = 'Guardar';
 $string['saveas'] = 'Guardar como';
-$string['saved'] = 'Gravado(a)';
+$string['saved'] = 'Guardado';
 $string['saving'] = 'A guardar';
 $string['search'] = 'Pesquisar';
 $string['searching'] = 'Pesquisar em';

@@ -31,7 +31,6 @@ if ($hassiteconfig) {
         return;
     }
     //************ FI
-    $category = new admin_category('messageinbound', new lang_string('incomingmailconfiguration', 'tool_messageinbound'));
     // Create a settings page for all of the mail server settings.
     $settings = new admin_settingpage('messageinbound_mailsettings',
             new lang_string('incomingmailconfiguration', 'tool_messageinbound'));

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_memberships', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'ltiservice_memberships', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   ltiservice_memberships
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allow'] = 'Use this service to retrieve members\' information as per privacy settings';
+$string['ltiservice_memberships'] = 'IMS LTI Membership:';
+$string['ltiservice_memberships_help'] = 'Allow the tool to retrieve member\'s info from the course using the IMS LTI Membership Service. The privacy settings will apply.';
+$string['notallow'] = 'Do not use this service';
 $string['pluginname'] = 'Memberships LTI Service';
 $string['privacy:metadata:email'] = 'The email of the user using the LTI consumer.';
 $string['privacy:metadata:externalpurpose'] = 'This information is sent to an external LTI provider.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_progress', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_progress', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   report_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,4 +30,4 @@ $string['page-report-progress-user'] = 'Αναφορά ολοκλήρωσης δ
 $string['page-report-progress-x'] = 'Οποιαδήποτε αναφορά ολοκλήρωσης δραστηριότητας';
 $string['pluginname'] = 'Ολοκλήρωση δραστηριότητας';
 $string['privacy:metadata'] = 'Η αναφορά ολοκλήρωσης δραστηριότητας εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';
-$string['progress:view'] = 'Προβολή αναφοράς ολοκλήρωσης δραστηριοτήτων';
+$string['progress:view'] = 'Εμφάνιση αναφοράς ολοκλήρωσης δραστηριοτήτων';

@@ -73,6 +73,8 @@ class provider implements
             'timemodified' => 'privacy:metadata:files:timemodified',
         ], 'privacy:metadata:files');
 
+        $collection->add_subsystem_link('core_userkey', [], 'privacy:metadata:core_userkey');
+
         return $collection;
     }
 

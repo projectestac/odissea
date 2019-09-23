@@ -61,8 +61,12 @@ $string['lookforupdates'] = 'Cerca actualitzacions de l\'H5P';
 $string['updatelibraries'] = 'Actualitza totes les biblioteques';
 $string['removetmpfiles'] = 'Elimina els fitxers temporals antics de l\'H5P';
 $string['removeoldlogentries'] = 'Elimina les entrades de registre antigues de l\'H5P';
+$string['removeoldmobileauthentries'] = 'Remove old H5P mobile auth entries';
 
 // Admin settings.
+$string['displayoptiondownloadnever'] = 'Never';
+$string['displayoptiondownloadalways'] = 'Always';
+$string['displayoptiondownloadpermission'] = 'Only if user has permissions to export H5P';
 $string['displayoptionnevershow'] = 'No ho mostris mai';
 $string['displayoptionalwaysshow'] = 'Mostra-ho sempre';
 $string['displayoptionpermissions'] = 'Mostra-ho només si l\'usuari té permís per exportar continguts H5P';
@@ -70,7 +74,7 @@ $string['displayoptionauthoron'] = 'Controlat per l\'autor, activat per defecte'
 $string['displayoptionauthoroff'] = 'Controlat per l\'autor, desactivat per defecte';
 $string['displayoptions'] = 'Opcions de visualització';
 $string['enableframe'] = 'Mostra el marc i la barra d\'accions';
-$string['enabledownload'] = 'Botó de baixades';
+$string['enabledownload'] = 'Allow download';
 $string['enableembed'] = 'Botó d\'incrustació';
 $string['enablecopyright'] = 'Botó de Copyright';
 $string['enableabout'] = 'Botó "Quant a l\'H5P"';
@@ -158,6 +162,9 @@ $string['upgradenothingtodo'] = "No hi ha cap instància de contingut interactiu
 $string['upgradebuttonlabel'] = 'Actualitza';
 $string['upgradeinvalidtoken'] = 'Error: El testimoni de seguretat no és vàlid!';
 $string['upgradelibrarymissing'] = 'Error: No es pot trobar la biblioteca!';
+$string['upgradeerrormissinglibrary'] = 'Missing required library %lib.';
+$string['upgradeerrortoohighversion'] = 'Parameters contain %used while only %supported or earlier are supported.';
+$string['upgradeerrornotsupported'] = 'Parameters contain %used which is not supported.';
 
 // Results / report page.
 $string['user'] = 'Usuari';
@@ -217,6 +224,7 @@ $string['hvp:getcachedassets'] = 'Aconseguir actius H5P desats a la memòria cau
 $string['hvp:installrecommendedh5plibraries'] = 'Instal·lar les biblioteques H5P recomanades';
 
 // Capabilities error messages.
+$string['nopermissiontogettranslations'] = 'You do not have permissions to retrieve translations';
 $string['nopermissiontoupgrade'] = 'Mo teniu permís per actualitzar biblioteques.';
 $string['nopermissiontorestrict'] = 'No teniu permís per restringir biblioteques.';
 $string['nopermissiontosavecontentuserdata'] = 'No teniu permís per desar les dades d\'usuari dels continguts interactius.';
@@ -340,3 +348,26 @@ $string['licenseversion'] = 'Versió de la llicència';
 
 // Embed.
 $string['embedloginfailed'] = 'You do not have access to this content. Try logging in.';
+
+// Reuse.
+$string['reuse'] = 'Reuse';
+$string['reuseContent'] = 'Reuse Content';
+$string['reuseDescription'] = 'Reuse this content.';
+$string['contentCopied'] = 'Content is copied to the clipboard';
+
+// Offline
+$string['connectionLost'] = 'Connection lost. Results will be stored and sent when you regain connection.';
+$string['connectionReestablished'] = 'Connection reestablished.';
+$string['resubmitScores'] = 'Attempting to submit stored results.';
+$string['offlineDialogHeader'] = 'Your connection to the server was lost';
+$string['offlineDialogBody'] = 'We were unable to send information about your completion of this task. Please check your internet connection.';
+$string['offlineDialogRetryMessage'] = 'Retrying in :num....';
+$string['offlineDialogRetryButtonLabel'] = 'Retry now';
+$string['offlineSuccessfulSubmit'] = 'Successfully submitted results.';
+
+// Error messages.
+$string['fileExceedsMaxSize'] = 'One of the files inside the package exceeds the maximum file size allowed. (%file %used > %max)';
+$string['unpackedFilesExceedsMaxSize'] = 'The total size of the unpacked files exceeds the maximum size allowed. (%used > %max)';
+$string['couldNotReadFileFromZip'] = 'Unable to read file from the package: %fileName';
+$string['couldNotParseJSONFromZip'] = 'Unable to parse JSON from the package: %fileName';
+$string['couldNotParsePostData'] = 'Could not parse post data.';

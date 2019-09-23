@@ -45,14 +45,6 @@ function page_supports($feature) {
 }
 
 /**
- * Returns all other caps used in module
- * @return array
- */
-function page_get_extra_capabilities() {
-    return array('moodle/site:accessallgroups');
-}
-
-/**
  * This function is used by the reset_course_userdata function in moodlelib.
  * @param $data the data submitted from the reset course.
  * @return array status array
@@ -113,6 +105,7 @@ function page_add_instance($data, $mform = null) {
     }
     $displayoptions['printheading'] = $data->printheading;
     $displayoptions['printintro']   = $data->printintro;
+    $displayoptions['printlastmodified'] = $data->printlastmodified;
     $data->displayoptions = serialize($displayoptions);
 
     if ($mform) {
@@ -162,6 +155,7 @@ function page_update_instance($data, $mform) {
     }
     $displayoptions['printheading'] = $data->printheading;
     $displayoptions['printintro']   = $data->printintro;
+    $displayoptions['printlastmodified'] = $data->printlastmodified;
     $data->displayoptions = serialize($displayoptions);
 
     $data->content       = $data->page['text'];
@@ -495,6 +489,7 @@ function page_dndupload_handle($uploadinfo) {
     $data->popupwidth = $config->popupwidth;
     $data->printheading = $config->printheading;
     $data->printintro = $config->printintro;
+    $data->printlastmodified = $config->printlastmodified;
 
     return page_add_instance($data, null);
 }
@@ -552,12 +547,18 @@ function page_check_updates_since(cm_info $cm, $from, $filter = array()) {
  * @return \core_calendar\local\event\entities\action_interface|null
  */
 function mod_page_core_calendar_provide_event_action(calendar_event $event,
-                                                      \core_calendar\action_factory $factory) {
-    $cm = get_fast_modinfo($event->courseid)->instances['page'][$event->instance];
+                                                      \core_calendar\action_factory $factory, $userid = 0) {
+    global $USER;
+
+    if (empty($userid)) {
+        $userid = $USER->id;
+    }
+
+    $cm = get_fast_modinfo($event->courseid, $userid)->instances['page'][$event->instance];
 
     $completion = new \completion_info($cm->get_course());
 
-    $completiondata = $completion->get_data($cm, false);
+    $completiondata = $completion->get_data($cm, false, $userid);
 
     if ($completiondata->completionstate != COMPLETION_INCOMPLETE) {
         return null;

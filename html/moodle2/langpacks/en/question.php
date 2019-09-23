@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'question', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['cannotdeletecate'] = 'You can\'t delete that category it is the default
 $string['cannotdeleteneededbehaviour'] = 'Cannot delete the question behaviour \'{$a}\'. There are other behaviours installed that rely on it.';
 $string['cannotdeleteqtypeinuse'] = 'You cannot delete the question type \'{$a}\'. There are questions of this type in the question bank.';
 $string['cannotdeleteqtypeneeded'] = 'You cannot delete the question type \'{$a}\'. There are other question types installed that rely on it.';
+$string['cannotdeletetopcat'] = 'Top categories can not be deleted.';
+$string['cannotedittopcat'] = 'Top categories can not be edited.';
 $string['cannotenable'] = 'Question type {$a} cannot be created directly.';
 $string['cannotenablebehaviour'] = 'Question behaviour {$a} cannot be used directly. It is for internal use only.';
 $string['cannotfindcate'] = 'Could not find category record';
@@ -162,7 +164,7 @@ $string['errorduringregrade'] = 'Could not regrade question {$a->qid}, going to 
 $string['errorfilecannotbecopied'] = 'Error: cannot copy file {$a}.';
 $string['errorfilecannotbemoved'] = 'Error: cannot move file {$a}.';
 $string['errorfileschanged'] = 'Error: files linked to from questions have changed since form was displayed.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Question ({$a}) appears more than once with different weights in different positions of the test. This is not currently supported by the statistics report and may make the statistics for this question unreliable.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'The question ({$a}) appears more than once with different weights in different positions of the test. This is not currently supported by the statistics report and may make the statistics for this question unreliable.';
 $string['errormanualgradeoutofrange'] = 'The grade {$a->grade} is not between 0 and {$a->maxgrade} for question {$a->name}. The score and comment have not been saved.';
 $string['errormovingquestions'] = 'Error while moving questions with ids {$a}.';
 $string['errorpostprocess'] = 'Error occurred during post-processing!';
@@ -181,6 +183,7 @@ Certain import formats, such as GIFT and Moodle XML, permit category and context
 $string['exporterror'] = 'Errors occur during exporting!';
 $string['exportfilename'] = 'questions';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
+$string['exportonequestion'] = 'Download this question in Moodle XML format';
 $string['exportquestions'] = 'Export questions to file';
 $string['exportquestions_help'] = 'This function enables the export of a complete category (and any subcategories) of questions to file. Please note that, depending on the file format selected, some question data and certain question types may not be exported.';
 $string['exportquestions_link'] = 'question/export';
@@ -192,6 +195,7 @@ $string['filesareacourse'] = 'the course files area';
 $string['filesareasite'] = 'the site files area';
 $string['filestomove'] = 'Move / copy files to {$a}?';
 $string['fillincorrect'] = 'Fill in correct responses';
+$string['filterbytags'] = 'Filter by tags...';
 $string['firsttry'] = 'First try';
 $string['flagged'] = 'Flagged';
 $string['flagthisquestion'] = 'Flag this question';
@@ -213,6 +217,8 @@ Alternatively, you may wish for students to submit each question as they go alon
 
 Those are probably the two most commonly used modes of behaviour.';
 $string['howquestionsbehave_link'] = 'question/behaviour';
+$string['idnumber'] = 'ID number';
+$string['idnumber_help'] = 'If used, the ID number must be unique within each question category. It provides another way of identifying a question which is sometimes useful, but can usually be left blank.';
 $string['ignorebroken'] = 'Ignore broken links';
 $string['import'] = 'Import';
 $string['importcategory'] = 'Import category';
@@ -291,6 +297,7 @@ $string['noprobs'] = 'No problems found in your question database.';
 $string['noquestions'] = 'No questions were found that could be exported. Make sure that you have selected a category to export that contains questions.';
 $string['noquestionsinfile'] = 'There are no questions in the import file';
 $string['noresponse'] = '[No response]';
+$string['notagfiltersapplied'] = 'No tag filters applied';
 $string['notanswered'] = 'Not answered';
 $string['notchanged'] = 'Not changed since last attempt';
 $string['notenoughanswers'] = 'This type of question requires at least {$a} answers';
@@ -328,7 +335,9 @@ The penalty factor should be a number between 0 and 1. A penalty factor of 1 mea
 $string['penaltyforeachincorrecttry'] = 'Penalty for each incorrect try';
 $string['penaltyforeachincorrecttry_help'] = 'When questions are run using the \'Interactive with multiple tries\' or \'Adaptive mode\' behaviour, so that the student will have several tries to get the question right, then this option controls how much they are penalised for each incorrect try.
 
-The penalty is a proportion of the total question grade, so if the question is worth three marks, and the penalty is 0.3333333, then the student will score 3 if they get the question right first time, 2 if they get it right second try, and 1 of they get it right on the third try.';
+The penalty is a proportion of the total question grade, so if the question is worth three marks, and the penalty is 0.3333333, then the student will score 3 if they get the question right first time, 2 if they get it right second try, and 1 of they get it right on the third try.
+
+For some multi-part questions this scoring logic is applied separately to each part of the question. The details depend on the question type and can be complicated, but the principle is to give students credit for the knowledge they have demonstrated as fairly as possible.';
 $string['permissionedit'] = 'Edit this question';
 $string['permissionmove'] = 'Move this question';
 $string['permissionsaveasnew'] = 'Save this as a new question';
@@ -363,12 +372,13 @@ $string['questionaffected'] = '<a href="{$a->qurl}">Question "{$a->name}" ({$a->
 $string['questionbank'] = 'Question bank';
 $string['questionbehaviouradminsetting'] = 'Question behaviour settings';
 $string['questionbehavioursdisabled'] = 'Question behaviours to disable';
-$string['questionbehavioursdisabledexplained'] = 'Enter a comma separated list of behaviours you do not want to appear in dropdown menu';
+$string['questionbehavioursdisabledexplained'] = 'Enter a comma-separated list of behaviours you do not want to appear in the drop-down menu.';
 $string['questionbehavioursorder'] = 'Question behaviours order';
-$string['questionbehavioursorderexplained'] = 'Enter a comma separated list of behaviours in the order you want them to appear in dropdown menu';
+$string['questionbehavioursorderexplained'] = 'Enter a comma-separated list of behaviours in the order you want them to appear in the drop-down menu.';
 $string['questioncategory'] = 'Question category';
 $string['questioncatsfor'] = 'Question categories for \'{$a}\'';
 $string['questiondoesnotexist'] = 'This question does not exist';
+$string['questionformtagheader'] = '{$a} tags';
 $string['questionidmismatch'] = 'Question ids mismatch';
 $string['questionname'] = 'Question name';
 $string['questionnamecopy'] = '{$a} (copy)';
@@ -377,10 +387,11 @@ $string['questionpreviewdefaults'] = 'Question preview defaults';
 $string['questionpreviewdefaults_desc'] = 'These defaults are used when a user first previews a question in the question bank. Once a user has previewed a question, their personal preferences are stored as user preferences.';
 $string['questions'] = 'Questions';
 $string['questionsaveerror'] = 'Errors occur during saving question - ({$a})';
-$string['questionsinuse'] = '(* Questions marked by an asterisk are already in use in some quizzes. These question will not be deleted from these quizzes but only from the category list.)';
+$string['questionsinuse'] = '(* Questions marked by an asterisk are already in use in some quizzes. These questions will not be deleted from these quizzes but only from the category list.)';
 $string['questionsmovedto'] = 'Questions still in use moved to "{$a}" in the parent course category.';
 $string['questionsrescuedfrom'] = 'Questions saved from context {$a}.';
 $string['questionsrescuedfrominfo'] = 'These questions (some of which may be hidden) were saved when context {$a} was deleted because they are still used by some quizzes or other activities.';
+$string['questiontags'] = 'Question tags';
 $string['questiontext'] = 'Question text';
 $string['questiontype'] = 'Question type';
 $string['questionuse'] = 'Use question in this activity';
@@ -390,9 +401,10 @@ $string['requiresgrading'] = 'Requires grading';
 $string['responsehistory'] = 'Response history';
 $string['restart'] = 'Start again';
 $string['restartwiththeseoptions'] = 'Start again with these options';
+$string['restoremultipletopcats'] = 'The backup file contains more than one top-level question categories for context {$a}.';
 $string['reviewresponse'] = 'Review response';
 $string['rightanswer'] = 'Right answer';
-$string['rightanswer_help'] = 'an automatically generated summary of the correct response. This can be limited, so you may wish to consider explaining the correct solution in the general feedback for the question, and turning this option off.';
+$string['rightanswer_help'] = 'An automatically generated summary of the correct response. This can be limited, so you may wish to consider explaining the correct solution in the general feedback for the question, and turning this option off.';
 $string['save'] = 'Save';
 $string['savechangesandcontinueediting'] = 'Save changes and continue editing';
 $string['saved'] = 'Saved: {$a}';
@@ -435,6 +447,7 @@ $string['technicalinfostate'] = 'Question state: {$a}';
 $string['technicalinfovariant'] = 'Question variant: {$a}';
 $string['tofilecategory'] = 'Write category to file';
 $string['tofilecontext'] = 'Write context to file';
+$string['topfor'] = 'Top for {$a}';
 $string['uninstallbehaviour'] = 'Uninstall this question behaviour.';
 $string['uninstallqtype'] = 'Uninstall this question type.';
 $string['unknown'] = 'Unknown';

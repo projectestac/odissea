@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'imscp', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   imscp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,7 @@ $string['keepold'] = 'Αρχείο πακέτων';
 $string['keepoldexplain'] = 'Πόσα πακέτα θα πρέπει να αρχειοθετηθούν;';
 $string['modulename'] = 'Πακέτο περιοχομένου IMS';
 $string['modulename_help'] = 'Ένα πακέτο περιεχομένου IMS είναι μια συλλογή αρχείων που συσκευάζονται σύμφωνα με ένα συμφωνημένο πρότυπο, ώστε να μπορούν να επαναχρησιμοποιηθούν σε διαφορετικά συστήματα. Το άρθρωμα πακέτου περιεχομένου IMS επιτρέπει σε ένα τέτοιο πακέτο περιεχομένου να ανεβαίνει ως ένα συμπιεσμένο αρχείο zip και να προστίθεται σε ένα μάθημα ως πόρος. Το περιεχόμενο εμφανίζεται συνήθως σε αρκετές σελίδες, με πλοήγηση ανάμεσα στις σελίδες. Υπάρχουν διάφορες επιλογές για την προβολή περιεχομένου σε ένα αναδυόμενο παράθυρο με ένα μενού πλοήγησης ή κουμπιά κ.λπ.. Ένα πακέτο περιεχομένου IMS μπορεί να χρησιμοποιηθεί για την παρουσίαση περιεχομένου πολυμέσων και κινούμενων εικόνων.';
+$string['modulename_link'] = 'άρθρωμα/IMSπακπεριεχ/εμφάνιση';
 $string['modulenameplural'] = 'Πακέτο περιοχομένου IMS';
 $string['navigation'] = 'Πλοήγηση';
 $string['packagefile'] = 'Αρχείο πακέτου';

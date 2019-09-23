@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_completion_progress', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_completion_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,7 @@ $string['completion_progress:showbar'] = 'Erakutsi barra Osaketaren Aurrerapena 
 $string['config_activitiesincluded'] = 'Jarduerak barne';
 $string['config_activitycompletion'] = 'Osaketa zehaztuta duten jarduera guztiak';
 $string['config_default_title'] = 'Osaketaren aurrerapena';
-$string['config_group'] = 'Ikusgai soilik talde honentzat';
+$string['config_group'] = 'Ikusgai soilik talde edo taldekatze honentzat';
 $string['config_header_monitored'] = 'Jarraiturik';
 $string['config_icons'] = 'Erabili ikonoak barran';
 $string['config_longbars'] = 'Nola erakutsi barra luzeak';
@@ -60,7 +60,7 @@ $string['futureNotCompleted_colour_title'] = 'Etorkizuneko osatu gabekoen kolore
 $string['how_activitiesincluded_works'] = 'Nola funtzionatzen du jarduerak sartzeak';
 $string['how_activitiesincluded_works_help'] = '<p>Berez jarraipena zehaztuta duten jarduera guztiak barrak gehitzen dira.</p><p>Eskuz ere sartu beharreko jarduerak aukeratu ditzakezu.</p>';
 $string['how_group_works'] = 'Nola funtzionatzen du taldeen ikusgarritasunak';
-$string['how_group_works_help'] = '<p>Talde bat aukeratuz gero blokea talde horretako kideei bakarrik erakutsiko zaie.</p>';
+$string['how_group_works_help'] = '<p>Talde edo taldekatze bat aukeratuz gero blokea talde edo taldekatze horretako kideei bakarrik erakutsiko zaie.</p>';
 $string['how_longbars_works'] = 'Barrak nola erakutsiko dira';
 $string['how_longbars_works_help'] = '<p>Barrak zehaztutako luzera gainditzen duenean, elementuak modu ezberdinetan antolatu daitezke.</p>
 <ul>

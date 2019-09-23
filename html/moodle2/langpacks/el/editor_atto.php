@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor_atto', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,8 +35,8 @@ $string['editor_control_keycode'] = 'Ctrl + {$a}';
 $string['errorcannotparseline'] = 'Η γραμμή «{$a}» δεν έχει το σωστό μορφότυπο.';
 $string['errorgroupisusedtwice'] = 'Η ομάδα «{$a}» ορίζεται δύο φορές· τα ονόματα ομάδων πρέπει να είναι μοναδικά.';
 $string['errornopluginsorgroupsfound'] = 'Δεν βρέθηκαν πρόσθετα ή ομάδες συμμετεχόντων· παρακαλούμε προσθέστε μερικά πρόσθετα και ομάδες συμμετεχόντων.';
-$string['errorpluginisusedtwice'] = 'Το πρόσθετο \'{$a}\' χρησιμοποιείται δύο φορές· τα πρόσθετα μπορούν να οριστούν μόνο μία φορά.';
-$string['errorpluginnotfound'] = 'Το πρόσθετο \'{$a}\' δεν μπορεί να χρησιμοποιηθεί· δεν φαίνεται να έχει εγκατασταθεί.';
+$string['errorpluginisusedtwice'] = 'Το πρόσθετο «{$a}» χρησιμοποιείται δύο φορές· τα πρόσθετα μπορούν να οριστούν μόνο μία φορά.';
+$string['errorpluginnotfound'] = 'Το πρόσθετο «{$a}» δεν μπορεί να χρησιμοποιηθεί· δεν φαίνεται να έχει εγκατασταθεί.';
 $string['errortextrecovery'] = 'Δυστυχώς δεν ήταν δυνατή η επαναφορά της έκδοσης προσχεδίου.';
 $string['infostatus'] = 'Πληροφορίες';
 $string['pluginname'] = 'Επεξεργαστής HTML Atto';
@@ -49,7 +49,7 @@ $string['recover'] = 'Ανάκτηση';
 $string['settings'] = 'Ρυθμίσεις της γραμμής εργαλείων Atto';
 $string['subplugintype_atto'] = 'Πρόσθετο Atto';
 $string['subplugintype_atto_plural'] = 'Πρόσθετα Atto';
-$string['taskautosavecleanup'] = 'Διαγραφή από τη βάση δεδομένων των αυτόματα αποθηκευμένων προσχεδίων που έχουν λήξει.';
+$string['taskautosavecleanup'] = 'Διαγραφή των αυτόματα αποθηκευμένων προσχεδίων που έχουν λήξει';
 $string['textrecovered'] = 'Μια έκδοση προσχεδίου αυτού του κειμένου επαναφέρθηκε αυτόματα.';
 $string['toolbarconfig'] = 'Ρυθμίσεις γραμμής εργαλείων';
 $string['toolbarconfig_desc'] = 'Η λίστα των πρόσθετων και η σειρά που εμφανίζονται μπορούν να ρυθμιστούν εδώ. Η ρύθμιση αποτελείται από ομάδες (μία ανά γραμμή) ακολουθούμενη από την διατεταγμένη λίστα των πρόσθετων ((με τη σειρά που θέλουμε)) για αυτήν την ομάδα. Η ομάδα διαχωρίζεται από τις προσθήκες με ένα σήμα ισότητας και τα πρόσθετα χωρίζονται με κόμματα. Τα ονόματα ομάδων πρέπει να είναι μοναδικά και πρέπει να εκφράζουν τα κοινά χαρακτηριστικά των κουμπιών. Τα ονόματα των κουμπιών και των ομάδων δεν πρέπει να επαναλαμβάνονται και μπορεί να περιέχουν μόνο αλφαριθμητικούς χαρακτήρες.';

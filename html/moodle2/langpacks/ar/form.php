@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,7 +57,6 @@ $string['optional'] = 'إختياري';
 $string['othersettings'] = 'إعدادات أخرى';
 $string['passwordunmaskrevealhint'] = 'أضهر';
 $string['requiredelement'] = 'حقل مطلوب';
-$string['revealpassword'] = 'أضهر';
 $string['security'] = 'أمان';
 $string['selectallornone'] = 'اختر الكل / لا شئ';
 $string['selected'] = 'تم الاختيار';

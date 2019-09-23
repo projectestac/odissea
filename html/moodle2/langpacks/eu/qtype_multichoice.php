@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_multichoice', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['pleaseselectatleastoneanswer'] = 'Mesedez, aukeratu erantzun bat gutxie
 $string['pluginname'] = 'Aukera anitzak';
 $string['pluginnameadding'] = 'Aukera anitzeko galdera gehitzen';
 $string['pluginnameediting'] = 'Aukera anitzeko galdera editatzen';
-$string['pluginname_help'] = 'Galdera honi erantzuteko (irudi bat izan dezakeena) ikasleak erantzun posible batzuen artean aukeratu behar du. Aukera anitzeko bi galdera-mota daude: erantzun zuzen bakarrekoa edo zuzen bat baino gehiago duena.';
+$string['pluginname_help'] = 'Galdera honi erantzuteko (irudi bat izan dezakeena) ikasleak erantzun posible batzuen artean aukeratu behar du. Aukera anitzeko galderak erantzun zuzen bakarrekoak edo erantzun zuzen bat baino gehiagokoak izan daitezke.';
 $string['pluginnamesummary'] = 'Aurrez definitutako zerrendatik erantzun bat edo gehiago aukeratzea ahalbidetzen du.';
 $string['privacy:metadata'] = 'Aukera anitzak galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['selectmulti'] = 'Aukeratu bat edo gehiago:';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'local_mobile', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['enableadditionalservice'] = 'Ενεργοποίηση της υπηρεσίας πρόσθετων χαρακτηριστικών του Moodle για κινητά';
+$string['local_mobilesettings'] = 'Ρυθμίσεις';
 $string['pluginname'] = 'Πρόσθετα χαρακτηριστικά του Moodle για κινητά';

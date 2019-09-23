@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_random', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,11 @@ $string['pluginnameediting'] = 'Modifica domanda casuale';
 $string['pluginname_help'] = 'Una domanda casuale, pur non essendo un vero e proprio tipo di domanda, consente di inserire in una attività una domanda scelta casualmente da una determinata categoria di domande.';
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Casuale\' non memorizza dati personali.';
 $string['randomqname'] = 'Casuale ({$a})';
+$string['randomqnametags'] = '({$a->category} casuale, tag: {$a->tags})';
 $string['randomqplusname'] = 'Casuale ({$a} e sotto categorie)';
+$string['randomqplusnamecourse'] = 'Casuale (qualsiasi categoria presente nel corso)';
+$string['randomqplusnamecoursecat'] = 'Casuale (qualsiasi categoria presente nella categoria {$a})';
+$string['randomqplusnamemodule'] = 'Casuale (qualsiasi categoria presente nel quiz)';
+$string['randomqplusnamesystem'] = 'Casuale (qualsiasi categoria a livello di sistema)';
 $string['selectedby'] = '{$a->questionname} scelte da {$a->randomname}';
 $string['selectmanualquestions'] = 'Le domande casuali possono usare domande con valutazione manuale';

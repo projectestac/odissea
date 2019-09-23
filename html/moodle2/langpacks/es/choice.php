@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choice', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,7 +53,7 @@ $string['choicesaved'] = 'Su elección ha sido guardada';
 $string['choicetext'] = 'Pregunta a responder';
 $string['choice:view'] = 'Ver actividad de consulta';
 $string['chooseaction'] = 'Elija una acción ...';
-$string['chooseoption'] = 'Elige: {$a}';
+$string['chooseoption'] = 'Cambiar a: {$a}';
 $string['closebeforeopen'] = 'Has especificado una fecha de cierre previa a la de la fecha de apertura.';
 $string['completionsubmit'] = 'Mostrar como completada cuando el usuario selecciona una opción';
 $string['description'] = 'Descripción';
@@ -120,6 +120,11 @@ $string['publishafteranswer'] = 'Mostrar los resultados al estudiante después d
 $string['publishafterclose'] = 'Mostrar los resultados a los estudiantes sólo después de cerrar la consulta';
 $string['publishalways'] = 'Mostrar siempre los resultados a los estudiantes';
 $string['publishanonymous'] = 'Publicar resultados anónimamente, sin mostrar los nombres de los alumnos';
+$string['publishinfoanonafter'] = 'Podrá ver los resultados de forma anónima una vez responda.';
+$string['publishinfoanonclose'] = 'Podrá ver los resultados de forma anónima una vez finalice la actividad.';
+$string['publishinfofullafter'] = 'Podrá ver los resultados completos una vez responda.';
+$string['publishinfofullclose'] = 'Podrá ver los resultados completos una vez finalice la actividad.';
+$string['publishinfonever'] = 'Los resultados de esta actividad no se publicarán después de su respuesta.';
 $string['publishnames'] = 'Publicar resultados con los nombres de los alumnos';
 $string['publishnot'] = 'No publicar los resultados';
 $string['removemychoice'] = 'Eliminar mi elección';

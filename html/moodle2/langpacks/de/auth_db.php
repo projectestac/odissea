@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['auth_dbextrafields'] = '<p>Diese Felder sind optional. Sie können Nutz
 <p>Wenn ein Feld nicht gesperrt ist, dürfen die Nutzer/innen das Feld nach der Anmeldung selber ausfüllen, den Inhalt ändern oder auch löschen.</p>';
 $string['auth_dbfieldpass'] = 'Name des Feldes, das das Kennwort enthält';
 $string['auth_dbfieldpass_key'] = 'Kennwortfeld';
-$string['auth_dbfielduser'] = 'Name des Feldes, das den Nutzernamen enthält';
+$string['auth_dbfielduser'] = 'Name des Feldes, das den Nutzernamen enthält. Dieses Feld muss den Datentyp varchar haben.';
 $string['auth_dbfielduser_key'] = 'Nutzernamenfeld';
 $string['auth_dbhost'] = 'Server mit der Datenbank. Verwenden Sie einen DNS-Systemeintrag, wenn ODBC verwendet wird. Benutzen Sie einen PDO DNS Eintrag, wenn PDO verwendet wird.';
 $string['auth_dbhost_key'] = 'Host';
@@ -77,7 +77,6 @@ $string['auth_dbupdateusers_description'] = 'Neue Nutzer/innen hinzufügen, exis
 $string['auth_dbupdatinguser'] = 'Aktualisierte Nutzer/in {$a->name} ID {$a->id}';
 $string['auth_dbuser'] = 'Nutzername mit Schreibzugriff auf die Datenbank';
 $string['auth_dbuser_key'] = 'Datenbanknutzer';
-$string['auth_dbusernotexist'] = 'Nicht existierender Nutzer {$a} kann nicht aktualisiert werden';
 $string['auth_dbuserstoadd'] = 'Nutzereinträge zum Hinzufügen: {$a}';
 $string['auth_dbuserstoremove'] = 'Nutzereinträge zum Entfernen: {$a}';
 $string['pluginname'] = 'Externe Datenbank';

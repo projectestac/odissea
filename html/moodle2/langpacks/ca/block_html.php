@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_html', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,5 @@ $string['configcontent'] = 'Contingut';
 $string['configtitle'] = 'Títol del bloc';
 $string['html:addinstance'] = 'Afegir un bloc HTML nou';
 $string['html:myaddinstance'] = 'Afegeix un bloc HTML nou a la pàgina del Tauler';
-$string['leaveblanktohide'] = 'deixa en blanc per amagar el títol ';
 $string['newhtmlblock'] = '(nou bloc HTML)';
 $string['pluginname'] = 'HTML';

@@ -28,7 +28,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->libdir . '/eventslib.php');
 require_once($CFG->dirroot . '/calendar/lib.php');
 
 
@@ -183,7 +182,9 @@ function quiz_delete_instance($id) {
              WHERE slot.quizid = ? AND q.qtype = ?";
     $questionids = $DB->get_fieldset_sql($sql, array($quiz->id, 'random'));
 
-    // We need to do this before we try and delete randoms, otherwise they would still be 'in use'.
+    // We need to do the following deletes before we try and delete randoms, otherwise they would still be 'in use'.
+    $quizslots = $DB->get_fieldset_select('quiz_slots', 'id', 'quizid = ?', array($quiz->id));
+    $DB->delete_records_list('quiz_slot_tags', 'slotid', $quizslots);
     $DB->delete_records('quiz_slots', array('quizid' => $quiz->id));
     $DB->delete_records('quiz_sections', array('quizid' => $quiz->id));
 
@@ -202,6 +203,7 @@ function quiz_delete_instance($id) {
     }
 
     quiz_grade_item_delete($quiz);
+    // We must delete the module record after we delete the grade item.
     $DB->delete_records('quiz', array('id' => $quiz->id));
 
     return true;
@@ -1152,6 +1154,14 @@ function quiz_process_options($quiz) {
     $quiz->reviewoverallfeedback = quiz_review_option_form_to_db($quiz, 'overallfeedback');
     $quiz->reviewattempt |= mod_quiz_display_options::DURING;
     $quiz->reviewoverallfeedback &= ~mod_quiz_display_options::DURING;
+
+    // Ensure that disabled checkboxes in completion settings are set to 0.
+    if (empty($quiz->completionusegrade)) {
+        $quiz->completionpass = 0;
+    }
+    if (empty($quiz->completionpass)) {
+        $quiz->completionattemptsexhausted = 0;
+    }
 }
 
 /**
@@ -1798,9 +1808,7 @@ function quiz_supports($feature) {
 function quiz_get_extra_capabilities() {
     global $CFG;
     require_once($CFG->libdir . '/questionlib.php');
-    $caps = question_get_all_capabilities();
-    $caps[] = 'moodle/site:accessallgroups';
-    return $caps;
+    return question_get_all_capabilities();
 }
 
 /**
@@ -2161,31 +2169,51 @@ function mod_quiz_get_fontawesome_icon_map() {
  *
  * @param calendar_event $event
  * @param \core_calendar\action_factory $factory
+ * @param int $userid User id to use for all capability checks, etc. Set to 0 for current user (default).
  * @return \core_calendar\local\event\entities\action_interface|null
  */
 function mod_quiz_core_calendar_provide_event_action(calendar_event $event,
-                                                     \core_calendar\action_factory $factory) {
+                                                     \core_calendar\action_factory $factory,
+                                                     int $userid = 0) {
     global $CFG, $USER;
 
     require_once($CFG->dirroot . '/mod/quiz/locallib.php');
 
-    $cm = get_fast_modinfo($event->courseid)->instances['quiz'][$event->instance];
-    $quizobj = quiz::create($cm->instance, $USER->id);
+    if (empty($userid)) {
+        $userid = $USER->id;
+    }
+
+    $cm = get_fast_modinfo($event->courseid, $userid)->instances['quiz'][$event->instance];
+    $quizobj = quiz::create($cm->instance, $userid);
     $quiz = $quizobj->get_quiz();
 
     // Check they have capabilities allowing them to view the quiz.
-    if (!has_any_capability(array('mod/quiz:reviewmyattempts', 'mod/quiz:attempt'), $quizobj->get_context())) {
+    if (!has_any_capability(['mod/quiz:reviewmyattempts', 'mod/quiz:attempt'], $quizobj->get_context(), $userid)) {
         return null;
     }
 
-    quiz_update_effective_access($quiz, $USER->id);
+    $completion = new \completion_info($cm->get_course());
+
+    $completiondata = $completion->get_data($cm, false, $userid);
+
+    if ($completiondata->completionstate != COMPLETION_INCOMPLETE) {
+        return null;
+    }
+
+    quiz_update_effective_access($quiz, $userid);
 
     // Check if quiz is closed, if so don't display it.
     if (!empty($quiz->timeclose) && $quiz->timeclose <= time()) {
         return null;
     }
 
-    $attempts = quiz_get_user_attempts($quizobj->get_quizid(), $USER->id);
+    if (!$quizobj->is_participant($userid)) {
+        // If the user is not a participant then they have
+        // no action to take. This will filter out the events for teachers.
+        return null;
+    }
+
+    $attempts = quiz_get_user_attempts($quizobj->get_quizid(), $userid);
     if (!empty($attempts)) {
         // The student's last attempt is finished.
         return null;
@@ -2265,16 +2293,14 @@ function mod_quiz_get_completion_active_rule_descriptions($cm) {
     foreach ($cm->customdata['customcompletionrules'] as $key => $val) {
         switch ($key) {
             case 'completionattemptsexhausted':
-                if (empty($val)) {
-                    continue;
+                if (!empty($val)) {
+                    $descriptions[] = get_string('completionattemptsexhausteddesc', 'quiz');
                 }
-                $descriptions[] = get_string('completionattemptsexhausteddesc', 'quiz');
                 break;
             case 'completionpass':
-                if (empty($val)) {
-                    continue;
+                if (!empty($val)) {
+                    $descriptions[] = get_string('completionpassdesc', 'quiz', format_time($val));
                 }
-                $descriptions[] = get_string('completionpassdesc', 'quiz', format_time($val));
                 break;
             default:
                 break;
@@ -2423,4 +2449,88 @@ function mod_quiz_core_calendar_event_timestart_updated(\calendar_event $event, 
         $event = \core\event\course_module_updated::create_from_cm($coursemodule, $context);
         $event->trigger();
     }
+}
+
+/**
+ * Generates the question bank in a fragment output. This allows
+ * the question bank to be displayed in a modal.
+ *
+ * The only expected argument provided in the $args array is
+ * 'querystring'. The value should be the list of parameters
+ * URL encoded and used to build the question bank page.
+ *
+ * The individual list of parameters expected can be found in
+ * question_build_edit_resources.
+ *
+ * @param array $args The fragment arguments.
+ * @return string The rendered mform fragment.
+ */
+function mod_quiz_output_fragment_quiz_question_bank($args) {
+    global $CFG, $DB, $PAGE;
+    require_once($CFG->dirroot . '/mod/quiz/locallib.php');
+    require_once($CFG->dirroot . '/question/editlib.php');
+
+    $querystring = preg_replace('/^\?/', '', $args['querystring']);
+    $params = [];
+    parse_str($querystring, $params);
+
+    // Build the required resources. The $params are all cleaned as
+    // part of this process.
+    list($thispageurl, $contexts, $cmid, $cm, $quiz, $pagevars) =
+            question_build_edit_resources('editq', '/mod/quiz/edit.php', $params);
+
+    // Get the course object and related bits.
+    $course = $DB->get_record('course', array('id' => $quiz->course), '*', MUST_EXIST);
+    require_capability('mod/quiz:manage', $contexts->lowest());
+
+    // Create quiz question bank view.
+    $questionbank = new mod_quiz\question\bank\custom_view($contexts, $thispageurl, $course, $cm, $quiz);
+    $questionbank->set_quiz_has_attempts(quiz_has_attempts($quiz->id));
+
+    // Output.
+    $renderer = $PAGE->get_renderer('mod_quiz', 'edit');
+    return $renderer->question_bank_contents($questionbank, $pagevars);
+}
+
+/**
+ * Generates the add random question in a fragment output. This allows the
+ * form to be rendered in javascript, for example inside a modal.
+ *
+ * The required arguments as keys in the $args array are:
+ *      cat {string} The category and category context ids comma separated.
+ *      addonpage {int} The page id to add this question to.
+ *      returnurl {string} URL to return to after form submission.
+ *      cmid {int} The course module id the questions are being added to.
+ *
+ * @param array $args The fragment arguments.
+ * @return string The rendered mform fragment.
+ */
+function mod_quiz_output_fragment_add_random_question_form($args) {
+    global $CFG;
+    require_once($CFG->dirroot . '/mod/quiz/addrandomform.php');
+
+    $contexts = new \question_edit_contexts($args['context']);
+    $formoptions = [
+        'contexts' => $contexts,
+        'cat' => $args['cat']
+    ];
+    $formdata = [
+        'category' => $args['cat'],
+        'addonpage' => $args['addonpage'],
+        'returnurl' => $args['returnurl'],
+        'cmid' => $args['cmid']
+    ];
+
+    $form = new quiz_add_random_form(
+        new \moodle_url('/mod/quiz/addrandom.php'),
+        $formoptions,
+        'post',
+        '',
+        null,
+        true,
+        $formdata
+    );
+    $form->set_data($formdata);
+
+    return $form->render();
 }

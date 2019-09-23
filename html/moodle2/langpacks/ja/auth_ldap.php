@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_ldap', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,13 +52,13 @@ $string['auth_ldap_expireattr_key'] = '有効期限切れ属性';
 $string['auth_ldapextrafields'] = 'これらのフィールドは任意です。<b>LDAPフィールド</b>より事前に入力されたMoodleユーザフィールドを選択することもできます。<p>空白の場合、LDAPよりデータは転送されず、代わりにMoodleのデフォルト値が使用されます。</p><p>どちらの場合でも、ユーザはログイン後、すべてのフィールドを編集することができます。</p>';
 $string['auth_ldap_graceattr_desc'] = '任意: 猶予ログイン属性をオーバーライドします。';
 $string['auth_ldap_gracelogin_key'] = '猶予ログイン属性';
-$string['auth_ldap_gracelogins_desc'] = 'LDAPの猶予ログインサポートを有効にします。パスワードの有効期限が切れた後、猶予ログインカウントがゼロになるまでログインすることができます。この設定を「Yes」にすることで、パスワードの有効期限が切れた場合、猶予ログインメッセージが表示されます。';
+$string['auth_ldap_gracelogins_desc'] = 'LDAPの猶予ログインサポートを有効にします。パスワードの有効期限が切れた後、猶予ログインカウントがゼロになるまでログインすることができます。この設定を有効にした場合、パスワードの有効期限が切れた時に猶予ログインメッセージが表示されます。';
 $string['auth_ldap_gracelogins_key'] = '猶予ログイン';
 $string['auth_ldap_groupecreators'] = 'メンバーがグループの作成を許可されているグループまたはコンテクストの一覧です。複数のグループは「;」で区切ってください。通常、「cn=teachers,ou=staff,o=myorg」のように指定します。';
 $string['auth_ldap_groupecreators_key'] = 'グループ作成者';
 $string['auth_ldap_host_url'] = 'LDAPホストのURLを「ldap://ldap.myorg.com/」または「ldaps://ldap.myorg.com/」のように明示してください。複数サーバのフェイルオーバーをサポートするには「;」で区切ってください。';
 $string['auth_ldap_host_url_key'] = 'ホストURL';
-$string['auth_ldap_ldap_encoding'] = 'LDAPサーバで使用するエンコーディングを指定してください。ほとんどの場合、UTF-8ですが、MS AD v2ユーザデフォルトプラットフォームのエンコーディングではcp1252、cp1250等のようになります。';
+$string['auth_ldap_ldap_encoding'] = 'LDAPサーバで使用するエンコーディングです。ほとんどの場合、UTF-8ですが、MS AD v2ユーザデフォルトプラットフォームのエンコーディングではcp1252、cp1250等のようになります。';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAPエンコーディング';
 $string['auth_ldap_login_settings'] = 'ログイン設定';
 $string['auth_ldap_memberattribute'] = '任意: ユーザがグループに属している場合、ユーザメンバーをオーバライドします。通常、「member」です。';
@@ -99,7 +99,7 @@ $string['auth_ldap_usertypeundefined2'] = 'config.user_typeが定義されてい
 $string['auth_ldap_version'] = 'あなたのサーバが使用しているLDAPプロトコルのバージョンです。';
 $string['auth_ldap_version_key'] = 'バージョン';
 $string['auth_ntlmsso'] = 'NTLM SSO';
-$string['auth_ntlmsso_enabled'] = '「Yes」にした場合、NTLMドメインでシングルサインオンを試みます。<strong>注意:</strong> 動作させるにはウェブサーバに対して追加のセットアップが必要です。詳細は<a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>をご覧ください。';
+$string['auth_ntlmsso_enabled'] = '「Yes」にした場合、NTLMドメインでシングルサインオンを試みます。<strong>注意:</strong> 動作させるにはウェブサーバに対して追加のセットアップが必要です。詳細は<a href="https://docs.moodle.org/en/NTLM_authentication">https://docs.moodle.org/en/NTLM_authentication</a>をご覧ください。';
 $string['auth_ntlmsso_enabled_key'] = '有効';
 $string['auth_ntlmsso_ie_fastpath'] = 'この設定を有効にした場合、NTLM SSO高速経路 (fast path) が有効にされます (クライアントブラウザがMS Internet Explorerの場合、特定のステップをバイパスします)。';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'すべてのブラウザでNTLMを試みます';
@@ -122,7 +122,7 @@ $string['didntfindexpiretime'] = 'password_expire()が有効期限を見つけ�
 $string['didntgetusersfromldap'] = 'LDAPサーバからユーザを取得できませんでした。';
 $string['gotcountrecordsfromldap'] = 'LDAPから {$a} レコードを取得しました。';
 $string['ldapnotconfigured'] = '現在、LDAPホストURLが設定されていません。';
-$string['morethanoneuser'] = '変です! LDAPに2名以上のユーザレコードが見つかりました。最初のユーザレコードのみ使用します。';
+$string['morethanoneuser'] = 'LDAPに2名以上のユーザレコードが見つかりました。最初のユーザレコードのみ使用します。';
 $string['needbcmath'] = '有効期限切れパスワードを使用してActive Directoryに問い合わせる場合、あなたはBCMath拡張モジュールが必要です。';
 $string['needmbstring'] = 'Active Directoryのパスワードを変更するにはmbstring拡張モジュールが必要です。';
 $string['nodnforusername'] = 'user_update_password()にエラーが発生しました。{$a->username} のDNがありません。';

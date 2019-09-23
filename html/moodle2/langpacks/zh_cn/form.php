@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['err_nopunctuation'] = '您必须键入一个非标点的字符。';
 $string['err_numeric'] = '您必须键入一个数字。';
 $string['err_rangelength'] = '您必须键入 {$a->format[0]} 和 {$a->format[1]} 之间的字符。';
 $string['err_required'] = '您必须提供一个有效的值。';
+$string['err_wrappingwhitespace'] = '值不能以空格开始或结束。';
 $string['err_wrongfileextension'] = '有些文件 ({$a->wrongfiles})无法上传。只有文件类型{$a->whitelist}才被允许。';
 $string['filesofthesetypes'] = '可接受的文件类型：';
 $string['filetypesany'] = '全部文件类型';
@@ -73,7 +74,6 @@ $string['passwordunmaskrevealhint'] = '显示密码';
 $string['privacy:metadata:preference:filemanager_recentviewmode'] = '文件选择器元素最近的显示模式。';
 $string['privacy:preference:filemanager_recentviewmode'] = '您偏好的文件选择器显示文件的方式是: {$a}';
 $string['requiredelement'] = '此处不能为空。';
-$string['revealpassword'] = '显示密码';
 $string['security'] = '安全设置';
 $string['selectallornone'] = '选择所有/无';
 $string['selected'] = '已选择';

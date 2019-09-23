@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_online_users', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Nombre de minutes déterminant la période d\'inactivité après laquelle un utilisateur n\'est plus considéré comme étant en ligne.';
+$string['nouser'] = 'Aucun utilisateur en ligne';
+$string['numuser'] = '{$a} utilisateur en ligne';
+$string['numusers'] = '{$a} utilisateurs en ligne';
+$string['online_status:hide'] = 'Cacher mon statut en ligne des autres utilisateurs';
+$string['online_status:show'] = 'Afficher mon statut en ligne aux autres utilisateurs';
 $string['online_users:addinstance'] = 'Ajouter un bloc utilisateurs en ligne';
 $string['online_users:myaddinstance'] = 'Ajouter un bloc utilisateurs connecté au tableau de bord';
 $string['online_users:viewlist'] = 'Accéder à la liste des utilisateurs connectés';
 $string['periodnminutes'] = '{$a} dernières minutes';
 $string['pluginname'] = 'Utilisateurs en ligne';
-$string['privacy:metadata'] = 'Le bloc Utilisateurs connectés affiche seulement des données enregistrées à d\'autres endroits.';
+$string['privacy:metadata:preference:uservisibility'] = 'Statut en ligne visible des autres utilisateurs sans le bloc Utilisateurs en ligne.';
 $string['timetosee'] = 'Retirer les inactifs après (minutes)';

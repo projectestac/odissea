@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'user', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['privacy:metadata:category'] = 'Το αναγνωριστικό κατη
 $string['privacy:metadata:city'] = 'Η πόλη του χρήστη.';
 $string['privacy:metadata:confirmed'] = 'Εάν αυτός είναι ένας ενεργός χρήστης ή όχι.';
 $string['privacy:metadata:country'] = 'Η χώρα στην οποία μένει ο χρήστης.';
-$string['privacy:metadata:courseid'] = 'Ένα αναγνωριστικό για ένα μάθημα.';
+$string['privacy:metadata:courseid'] = 'Αναγνωριστικό μαθήματος';
 $string['privacy:metadata:currentlogin'] = 'Το τρέχον όνομα χρήστη για αυτόν τον χρήστη.';
 $string['privacy:metadata:data'] = 'Δεδομένα που σχετίζονται με το προσαρμοσμένο πεδίο χρήστη από τον χρήστη';
 $string['privacy:metadata:deleted'] = 'Μια επισήμανση που δείχνει αν ο χρήστης έχει διαγραφεί ή όχι.';

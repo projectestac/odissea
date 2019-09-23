@@ -29,7 +29,8 @@ class qtype_essaywiris_edit_form extends qtype_wq_edit_form {
         parent::definition_inner($mform);
 
         $wirisessay = $mform->createElement('text', 'wirisessay', get_string('essaywiris_algorithm', 'qtype_essaywiris'),
-                array('class' => 'wirisauthoringfield wirisstudio wirisessay wirisvariables wirisauxiliarcas'));
+                array('class' => 'wirisauthoringfield wirisstudio wirisessay wirisvariables wirisauxiliarcas' .
+                ' wirisauxiliartextinput'));
 
         $wirishdr = $mform->createElement('header', 'wirishdr', get_string('essaywiris_wiris_variables', 'qtype_essaywiris'));
 

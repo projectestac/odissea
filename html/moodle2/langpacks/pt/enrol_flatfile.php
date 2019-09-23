@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_flatfile', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,5 +71,5 @@ $string['privacy:metadata:enrol_flatfile:courseid'] = 'O ID da disciplina relaci
 $string['privacy:metadata:enrol_flatfile:roleid'] = 'O ID do papel a ser atribuído ou não atribuído';
 $string['privacy:metadata:enrol_flatfile:timeend'] = 'A data/hora em que a alteração da inscrição acaba.';
 $string['privacy:metadata:enrol_flatfile:timemodified'] = 'A data/hora de modificação desta alteração de inscrição.';
-$string['privacy:metadata:enrol_flatfile:timestart'] = 'A data/hora a que inicia a inscrição';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'A data e hora a que inicia a inscrição';
 $string['privacy:metadata:enrol_flatfile:userid'] = 'O ID do utilizador relacionado com a atribuição de papel';

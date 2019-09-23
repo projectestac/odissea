@@ -60,8 +60,12 @@ $string['noh5ps'] = 'Bu kurs içn etkileşimsel içerik yok.';
 $string['lookforupdates'] = 'H5P güncellemelerine bak';
 $string['removetmpfiles'] = 'Eski H5P geçici dosyalarını kaldır';
 $string['removeoldlogentries'] = 'Eski H5P kütük girdilerini kaldır';
+$string['removeoldmobileauthentries'] = 'Remove old H5P mobile auth entries';
 
 // Admin settings.
+$string['displayoptiondownloadnever'] = 'Never';
+$string['displayoptiondownloadalways'] = 'Always';
+$string['displayoptiondownloadpermission'] = 'Only if user has permissions to export H5P';
 $string['displayoptionnevershow'] = 'Never show';
 $string['displayoptionalwaysshow'] = 'Always show';
 $string['displayoptionpermissions'] = 'Show only if user has permissions to export H5P';
@@ -70,7 +74,7 @@ $string['displayoptionauthoron'] = 'Controlled by author, default is on';
 $string['displayoptionauthoroff'] = 'Controlled by author, default is off';
 $string['displayoptions'] = 'Seçenekleri Göster';
 $string['enableframe'] = 'Eylem çubuğunu ve çerçevesini göster';
-$string['enabledownload'] = 'İndirme tuşu';
+$string['enabledownload'] = 'Allow download';
 $string['enableembed'] = 'Katma tuşu';
 $string['enablecopyright'] = 'Telif hakkı tuşu';
 $string['enableabout'] = 'H5P bilgisi tuşu';
@@ -137,6 +141,9 @@ $string['upgradenothingtodo'] = "Yükseltilecek içerik oluşumu yok.";
 $string['upgradebuttonlabel'] = 'Yükselt';
 $string['upgradeinvalidtoken'] = 'Hata: Güvenlik bilgisi geçersiz!';
 $string['upgradelibrarymissing'] = 'Hata: Kitaplığınız yok!';
+$string['upgradeerrormissinglibrary'] = 'Missing required library %lib.';
+$string['upgradeerrortoohighversion'] = 'Parameters contain %used while only %supported or earlier are supported.';
+$string['upgradeerrornotsupported'] = 'Parameters contain %used which is not supported.';
 
 // Results / report page.
 $string['user'] = 'Kullanıcı';
@@ -196,6 +203,7 @@ $string['hvp:getcachedassets'] = 'Ön belleğe alınmış H5P içerik değerleri
 $string['hvp:installrecommendedh5plibraries'] = 'Install recommended H5P libraries';
 
 // Capabilities error messages.
+$string['nopermissiontogettranslations'] = 'You do not have permissions to retrieve translations';
 $string['nopermissiontoupgrade'] = 'Kitaplıkları yükseltme yetkiniz yok.';
 $string['nopermissiontorestrict'] = 'Kitaplıkları kısıtlama yetkiniz yok.';
 $string['nopermissiontosavecontentuserdata'] = 'İçerik kullanıcısı verilerini kaydetme yetkiniz yok.';
@@ -301,3 +309,26 @@ $string['licenseversion'] = 'License Version';
 
 // Embed.
 $string['embedloginfailed'] = 'You do not have access to this content. Try logging in.';
+
+// Reuse.
+$string['reuse'] = 'Reuse';
+$string['reuseContent'] = 'Reuse Content';
+$string['reuseDescription'] = 'Reuse this content.';
+$string['contentCopied'] = 'Content is copied to the clipboard';
+
+// Offline
+$string['connectionLost'] = 'Connection lost. Results will be stored and sent when you regain connection.';
+$string['connectionReestablished'] = 'Connection reestablished.';
+$string['resubmitScores'] = 'Attempting to submit stored results.';
+$string['offlineDialogHeader'] = 'Your connection to the server was lost';
+$string['offlineDialogBody'] = 'We were unable to send information about your completion of this task. Please check your internet connection.';
+$string['offlineDialogRetryMessage'] = 'Retrying in :num....';
+$string['offlineDialogRetryButtonLabel'] = 'Retry now';
+$string['offlineSuccessfulSubmit'] = 'Successfully submitted results.';
+
+// Error messages.
+$string['fileExceedsMaxSize'] = 'One of the files inside the package exceeds the maximum file size allowed. (%file %used > %max)';
+$string['unpackedFilesExceedsMaxSize'] = 'The total size of the unpacked files exceeds the maximum size allowed. (%used > %max)';
+$string['couldNotReadFileFromZip'] = 'Unable to read file from the package: %fileName';
+$string['couldNotParseJSONFromZip'] = 'Unable to parse JSON from the package: %fileName';
+$string['couldNotParsePostData'] = 'Could not parse post data.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability_completion', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   availability_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['label_completion'] = 'Vereiste voltooiingsstatus';
 $string['missing'] = '(Ontbrekende activiteit)';
 $string['option_complete'] = 'moet als voltooid gemarkeerd worden';
 $string['option_fail'] = 'moet voltooid zijn en een onvoldoende behaald';
-$string['option_incomplete'] = 'moet niet als voltooid gemarkeerd worden';
+$string['option_incomplete'] = 'mag niet als voltooid gemarkeerd worden';
 $string['option_pass'] = 'moet voltooid zijn en een voldoende behaald';
 $string['pluginname'] = 'Beperkt door het voltooien van activiteiten';
 $string['privacy:metadata'] = 'De beperkingen door activiteitsvoltooiings-plugin bewaart geen persoonlijke gegevens.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = 'どこでも';
 $string['inputstandardtags'] = '新しいタグのカンマ区切りの一覧を入力してください。';
 $string['itemstaggedwith'] = '「 {$a->tag} 」がタグ付けされた {$a->tagarea}';
 $string['lesstags'] = '減らす ...';
-$string['manageofficialtags'] = 'オフィシャルタグを管理する';
 $string['managestandardtags'] = '標準タグを管理する';
 $string['managetagcolls'] = 'タグコレクションを管理する';
 $string['managetags'] = 'タグを管理する';
@@ -94,9 +93,6 @@ $string['nextpage'] = 'さらに';
 $string['noresultsfor'] = '「 {$a} 」の検索結果なし';
 $string['notagsfound'] = '「 {$a} 」に合致するタグは見つかりませんでした。';
 $string['nothingtoupdate'] = '更新するものはありません。';
-$string['officialtag'] = 'オフィシャル';
-$string['otags'] = 'オフィシャルタグ';
-$string['othertags'] = '他のタグ';
 $string['owner'] = 'オーナー';
 $string['page-tag-index'] = '単一タグページ';
 $string['page-tag-manage'] = 'タグページを管理する';
@@ -138,7 +134,6 @@ $string['selectmaintag'] = '結合後に使用するタグを選択してくだ�
 $string['selectmultipletags'] = '2つ以上のタグを選択してください。';
 $string['selecttag'] = 'タグ {$a} を選択する';
 $string['settypedefault'] = '標準タタグから削除する';
-$string['settypeofficial'] = 'オフィシャルにする';
 $string['settypestandard'] = '標準タグにする';
 $string['showingfirsttags'] = '{$a} 件の最も人気のあるタグを表示中';
 $string['showstandard'] = '標準タグ使用';
@@ -161,10 +156,8 @@ $string['tagcollection'] = 'タグコレクション';
 $string['tagcollection_help'] = 'タグコレクションは異なるエリアのための一連のタグです。例えば標準タグのコレクションはユーザの興味のあることおよびブログ投稿タグを別のコレクションに分けた上で、コース内でタグ付けする場合に使用することができます。ユーザがタグをクリックした場合、そのタグと同じタグ内のタグのみ表示されます。タグはタグ付けされたエリアに基づきコレクションに自動追加することができます。また、標準タグに手動追加することもできます。';
 $string['tagcollections'] = 'タグコレクション';
 $string['tagdescription'] = 'タグ説明';
-$string['taggedwith'] = '- タグ「 {$a} 」';
 $string['tags'] = 'タグ';
 $string['tagsaredisabled'] = 'タグが無効にされています。';
-$string['tagtype'] = 'タグタイプ';
 $string['thingstaggedwith'] = '「 {$a->name} 」は {$a->count} 回使用されています。';
 $string['thingtaggedwith'] = '「 {$a->name} 」は 1 回使用されています。';
 $string['timemodified'] = '修正日時';

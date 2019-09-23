@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'role', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['allowoverride'] = 'Autorizzati a modificare ruoli';
 $string['allowroletoassign'] = 'Consenti agli utenti con il ruolo {$a->fromrole} di assegnare il ruolo {$a->targetrole}';
 $string['allowroletooverride'] = 'Consenti agli utenti con il ruolo {$a->fromrole} di modificare il ruolo {$a->targetrole}';
 $string['allowroletoswitch'] = 'Consenti agli utenti con il ruolo {$a->fromrole} di cambiare il ruolo in {$a->targetrole}';
+$string['allowroletoview'] = 'Consenti agli utenti con il ruolo {$a->fromrole} di visualizzare utenti con il ruolo {$a->targetrole}';
 $string['allowswitch'] = 'Autorizzati a cambiare ruolo';
 $string['allsiteusers'] = 'Tutti gli utenti del sito';
 $string['analytics:listinsights'] = 'Elenco considerazioni';
@@ -188,6 +189,7 @@ $string['course:reset'] = 'Eseguire reset del corso';
 $string['course:reviewotherusers'] = 'Rivedere altri utenti';
 $string['course:sectionvisibility'] = 'Gestire visibilità delle sezioni';
 $string['course:setcurrentsection'] = 'Impostare sezione attiva';
+$string['course:setforcedlanguage'] = 'Forzare lingua del corso';
 $string['course:tag'] = 'Modificare tag del corso';
 $string['course:update'] = 'Modificare impostazioni del corso';
 $string['course:useremail'] = 'Abilitare/disabilitare indirizzi email';
@@ -351,6 +353,8 @@ $string['question:flag'] = 'Contrassegnare domande durante il tentativo';
 $string['question:managecategory'] = 'Gestire categorie di domande';
 $string['question:moveall'] = 'Spostare qualsiasi domanda';
 $string['question:movemine'] = 'Spostare solo le proprie domande';
+$string['question:tagall'] = 'Assegnare tag alle domande';
+$string['question:tagmine'] = 'Assegnare tag alle proprie domande';
 $string['question:useall'] = 'Utilizzare qualsiasi domanda';
 $string['question:usemine'] = 'Utilizzare solo le proprie domande';
 $string['question:viewall'] = 'Visualizzare tutte le domande';
@@ -421,6 +425,7 @@ $string['site:import'] = 'Importare altri corsi in un corso';
 $string['site:maintenanceaccess'] = 'Accedere al sito in modalità manutenzione';
 $string['site:manageallmessaging'] = 'Aggiungere, rimuovere, bloccare e sbloccare contatti per qualsiasi utente';
 $string['site:manageblocks'] = 'Gestire blocchi nelle pagine';
+$string['site:managecontextlocks'] = 'Gestione congelamento contesti';
 $string['site:mnetloginfromremote'] = 'Effettuare login da un Moodle remoto';
 $string['site:mnetlogintoremote'] = 'Roaming verso un\'applicazione remota tramite MNet';
 $string['site:readallmessages'] = 'Leggere qualsiasi messaggio sul sito';

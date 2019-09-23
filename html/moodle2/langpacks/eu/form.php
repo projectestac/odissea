@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['err_nopunctuation'] = 'Hemen ezin duzu inongo puntuazio-markarik idatzi
 $string['err_numeric'] = 'Hemen zenbaki bat idatzi behar duzu.';
 $string['err_rangelength'] = 'Hemen {$a->format[0]} eta {$a->format[1]}-ren arteko karaktere-kopurua idatzi behar duzu';
 $string['err_required'] = 'Hemen balio bat eman behar duzu';
+$string['err_wrappingwhitespace'] = 'Balioak ezin du zuriune batekin hasi edo bukatu.';
 $string['err_wrongfileextension'] = 'Fitxategi batzuk ({$a->wrongfiles}) ezin dira igo. Soilik {$a->whitelist} fitxategi-luzapenak onartzen dira.';
 $string['filesofthesetypes'] = 'Onartutako fitxategi-motak:';
 $string['filetypesany'] = 'Fitxategi-mota guztiak';
@@ -57,7 +58,7 @@ $string['minute'] = 'Minutua';
 $string['miscellaneoussettings'] = 'Beste hainbat ezarpen';
 $string['modstandardels'] = 'Moduluaren ezarpen bateratuak';
 $string['month'] = 'Hilabetea';
-$string['mustbeoverriden'] = '{$a} klaseko Abstract form_definition() metodoak baimenduta egon behar du; mesedez, konpondu kodea.';
+$string['mustbeoverriden'] = '{$a} klaseko form_definition() metodo abstraktoak baimenduta egon behar du; mesedez, konpondu kodea.';
 $string['newvaluefor'] = 'Balio berria {$a}-(r)entzat';
 $string['nomethodforaddinghelpbutton'] = '{$a->name} (class {$a->classname}) formularioaren elementuari laguntza botoia gehitzeko metodorik ez dago';
 $string['nonexistentformelements'] = '{$a} formularioaren elementua ez dago eta ezin zaio laguntza-botoirik gehitu';
@@ -73,7 +74,6 @@ $string['passwordunmaskrevealhint'] = 'Azaldu';
 $string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Orain dela gutxi aukeratutako fitxategi-hautatzaile elementuaren erakuste-modua.';
 $string['privacy:preference:filemanager_recentviewmode'] = 'Fitxategi-hautatzailean fitxategiak erakusteko zure hobetsitako modua hau da: {$a}';
 $string['requiredelement'] = 'Beharrezko eremua';
-$string['revealpassword'] = 'Azaldu';
 $string['security'] = 'Segurtasuna';
 $string['selectallornone'] = 'Aukeratu Guztiak/Bat ere ez';
 $string['selected'] = 'Aukeratuta';

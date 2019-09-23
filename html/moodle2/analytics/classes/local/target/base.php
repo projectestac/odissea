@@ -115,8 +115,10 @@ abstract class base extends \core_analytics\calculable {
         global $PAGE;
 
         $predictionid = $prediction->get_prediction_data()->id;
+        $contextid = $prediction->get_prediction_data()->contextid;
+        $modelid = $prediction->get_prediction_data()->modelid;
 
-        $PAGE->requires->js_call_amd('report_insights/actions', 'init', array($predictionid));
+        $PAGE->requires->js_call_amd('report_insights/actions', 'init', array($predictionid, $contextid, $modelid));
 
         $actions = array();
 
@@ -196,7 +198,7 @@ abstract class base extends \core_analytics\calculable {
                 $message->component = 'moodle';
                 $message->name = 'insights';
 
-                $message->userfrom = get_admin();
+                $message->userfrom = \core_user::get_noreply_user();
                 $message->userto = $user;
 
                 $insighturl = new \moodle_url('/report/insights/insights.php?modelid=' . $modelid . '&contextid=' . $context->id);

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_rss_client', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,13 +74,14 @@ $string['privacy:metadata:block_rss_client:tableexplanation'] = 'Die RSS-Blockin
 $string['privacy:metadata:block_rss_client:title'] = 'Titel des RSS-Feeds';
 $string['privacy:metadata:block_rss_client:url'] = 'URL des RSS-Feeds';
 $string['privacy:metadata:block_rss_client:userid'] = 'Nutzer-ID, mit der das RSS-Feed hinzugefügt wurde';
+$string['refreshfeedstask'] = 'Task zum Erneuern der RSS Feeds';
 $string['remotenewsfeed'] = 'RSS Feed';
 $string['rss_client:addinstance'] = 'Neuen Block \'RSS Feeds\' hinzufügen';
 $string['rss_client:createprivatefeeds'] = 'Persönliche RSS Feeds erstellen';
 $string['rss_client:createsharedfeeds'] = 'Gemeinsame RSS Feeds erstellen';
 $string['rss_client:manageanyfeeds'] = 'Alle RSS Feeds verwalten';
 $string['rss_client:manageownfeeds'] = 'Persönliche RSS Feeds verwalten';
-$string['rss_client:myaddinstance'] = 'Block \'RSS Feeds\' zum Dashboard hinzufügen';
+$string['rss_client:myaddinstance'] = 'Neuen Block \'RSS Feeds\' zum Dashboard hinzufügen';
 $string['seeallfeeds'] = 'Alle RSS Feeds anzeigen';
 $string['sharedfeed'] = 'Gemeinsamer RSS Feed';
 $string['shownumentrieslabel'] = 'Maximale Anzahl der angezeigten Einträge pro Block';

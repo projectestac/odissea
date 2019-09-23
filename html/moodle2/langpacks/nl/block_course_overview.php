@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_overview', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,7 +58,7 @@ $string['none'] = 'Geen';
 $string['numtodisplay'] = 'Aantal te tonen cursussen:';
 $string['onlyparentname'] = 'Enkel bovenliggende categorie';
 $string['otherexpanded'] = 'Andere uitgeklapte cursussen';
-$string['pluginname'] = 'Cursusoverzicht (verouderd)';
+$string['pluginname'] = 'Cursusoverzicht met tabbladen';
 $string['preservestates'] = 'Bewaar uitklapstatus';
 $string['prevpage'] = 'Vorige pagina';
 $string['privacy:metadata:courseorder'] = 'Geordende lijst van getoonde cursussen';
@@ -69,6 +69,7 @@ $string['privacy:metadata:sortorder'] = 'Sorteervolgorde';
 $string['removefavourite'] = 'Favoriet verwijderen';
 $string['reorderfullname'] = 'Volledige naam van cursus';
 $string['reorderid'] = 'Cursus id';
+$string['reorderiddesc'] = 'Cursus-ID aflopend';
 $string['reordernone'] = 'Volgorde slepen en neerzetten';
 $string['reordershortname'] = 'Korte naam van cursus';
 $string['setmaxcourses'] = 'Stel maximale cursussen in';
@@ -81,7 +82,7 @@ $string['shortnamesufixsingular'] = '(en {$a} andere)';
 $string['showcategories'] = 'Te tonen categorieën';
 $string['showcategoriesdesc'] = 'Moeten onder elke cursus de cursuscategorieën getoond worden?';
 $string['sortorder'] = 'Sorteervolgorde';
-$string['title'] = 'Cursusoverzicht';
+$string['title'] = 'Cursusoverzicht met tabbladen';
 $string['unfavourite'] = 'Favoriet verwijderen';
 $string['userchoosezero'] = '(gebruik standaard)';
 $string['usersetmaxcourses'] = 'Aantal te tonen cursussen:';

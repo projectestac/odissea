@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_ldap', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['contexts'] = 'Контексты LDAP';
 $string['couldnotfinduser'] = 'Не удалось найти пользователя «{$a}», пропущено';
 $string['course_fullname'] = 'Дополнительно: атрибут LDAP для получения полного названия курса';
 $string['course_fullname_key'] = 'Полное название';
-$string['course_fullname_updateonsync'] = 'Полное имя курса, обновляемого при выполнении скрипта синхронизации.';
+$string['course_fullname_updateonsync'] = 'Обновить полное имя курса во время синхронизации';
 $string['course_fullname_updateonsync_key'] = 'Полное имя обновляемого курса';
 $string['course_idnumber'] = 'Атрибут LDAP для получения ID курса. Обычно «CN» или «UID».';
 $string['course_idnumber_key'] = 'ID курса';
@@ -60,11 +60,11 @@ $string['course_search_sub_key'] = 'Поиск в подконтекстах';
 $string['course_settings'] = 'Настройки зачисления на курс';
 $string['course_shortname'] = 'Дополнительно: атрибут LDAP для получения краткого названия курса';
 $string['course_shortname_key'] = 'Краткое название';
-$string['course_shortname_updateonsync'] = 'Краткое имя курса, обновляемого при выполнении скрипта синхронизации.';
+$string['course_shortname_updateonsync'] = 'Обновить краткое имя курса во время синхронизации';
 $string['course_shortname_updateonsync_key'] = 'Краткое имя обновляемого курса';
 $string['course_summary'] = 'Дополнительно: атрибут LDAP для получения описания курса';
 $string['course_summary_key'] = 'Описание';
-$string['course_summary_updateonsync'] = 'Краткое описание курса, обновляемого при выполнении скрипта синхронизации.';
+$string['course_summary_updateonsync'] = 'Обновить краткое описание курса во время синхронизации';
 $string['course_summary_updateonsync_key'] = 'Краткое описание обновляемого курса';
 $string['courseupdated'] = 'Курс с ID-номером «{$a->idnumber}» успешно обновлен.';
 $string['courseupdateskipped'] = 'Курс с ID-номером «{$a->idnumber}» не требует обновления. Пропущен…';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_emoticon', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filter_emoticon', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   filter_emoticon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Εμφάνιση εικονιδίων διάθεσης ως εικόνες';
 $string['privacy:metadata'] = 'Το πρόσθετο «Εμφάνιση εικονιδίων διάθεσης ως εικόνες» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
-$string['settingformats'] = 'Εφαρμογή σε μορφές';
-$string['settingformats_desc'] = 'Το φίλτρο θα εφαρμοστεί μόνο αν το αρχικό κείμενο είχε εισαχθεί σε μία από τις επιλεγμένες μορφές.';
+$string['settingformats'] = 'Εφαρμογή σε μορφότυπους';
+$string['settingformats_desc'] = 'Το φίλτρο θα εφαρμοστεί μόνο αν το αρχικό κείμενο είχε εισαχθεί σε έναν από τους επιλεγμένους μορφότυπους.';

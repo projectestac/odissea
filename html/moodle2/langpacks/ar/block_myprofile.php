@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_myprofile', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,6 @@ $string['display_phone1'] = 'عرض رقم الهاتف 1';
 $string['display_phone2'] = 'عرض رقم الهاتف 2';
 $string['display_picture'] = 'عرض الصورة';
 $string['display_skype'] = 'عرض Skype';
-$string['display_un'] = 'عرض  الاسم';
 $string['display_yahoo'] = 'عرض  Yahoo';
 $string['myprofile_settings'] = 'إعدادات السيرة الذاتية';
 $string['pluginname'] = ' السيرة الذاتية';

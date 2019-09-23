@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_behat', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['errordataroot'] = '$CFG->behat_datarootが設定されていないか�
 $string['errorsetconfig'] = 'config.php内で「$CFG->behat_dataroot」「$CFG->behat_prefix」および「$CFG->behat_wwwroot」を設定する必要があります。';
 $string['erroruniqueconfig'] = '「$CFG->behat_dataroot」「$CFG->behat_prefix」および「$CFG->behat_wwwroot」の値は「$CFG->dataroot」「$CFG->prefix」「$CFG->wwwroot」「$CFG->phpunit_dataroot」および「$CFG->phpunit_prefix」の値と異なる必要があります。';
 $string['fieldvalueargument'] = 'フィールド値変数';
-$string['fieldvalueargument_help'] = 'この変数にはフィールド値を設定してください。シンプルなチェックボックス、テキストエリア、セレクトまたは複雑な日付選択を含む数多くのフィールドタイプがあります。期待されるフィールド値の詳細に関して<a href="http://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a>をご覧ください。';
+$string['fieldvalueargument_help'] = 'この変数にはフィールド値を設定してください。シンプルなチェックボックス、テキストエリア、セレクトまたは複雑な日付選択を含む数多くのフィールドタイプがあります。期待されるフィールド値の詳細に関して<a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a>をご覧ください。';
 $string['giveninfo'] = 'Given - 環境セットアップ作業';
 $string['infoheading'] = '情報';
 $string['installinfo'] = 'インストールおよびテスト実行情報に関して {$a} をご覧ください。';

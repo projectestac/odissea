@@ -845,7 +845,7 @@ class core_files_renderer extends plugin_renderer_base {
      *
      * @return string
      */
-    private function fp_js_template_uploadform() {
+    protected function fp_js_template_uploadform() {
         //XTEC ************ AFEGIT - If disk quota is exceeded, don't allow upload files
         //2012.08.24 @sarjona
         global $CFG;

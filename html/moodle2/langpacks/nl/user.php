@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'user', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -105,7 +105,7 @@ $string['privacy:metadata:suspended'] = 'Een markering om te tonen of de gebruik
 $string['privacy:metadata:theme'] = 'Een gebruikersvoorkeur voor het te tonen thema.';
 $string['privacy:metadata:timeaccess'] = 'Het toegangstijdstip tot deze cursus.';
 $string['privacy:metadata:timecreated'] = 'Het tijdstip waarop';
-$string['privacy:metadata:timemodified'] = 'Het tijdstip waarop deze record gewijzigd is.';
+$string['privacy:metadata:timemodified'] = 'Het tijdstip waarop deze record gewijzigd is';
 $string['privacy:metadata:timerequested'] = 'Het tijdstip waarop de gebruiker het eerst vroeg om dit wachtwoord opnieuw in te stellen';
 $string['privacy:metadata:timererequested'] = 'Het tijdstip waarop de gebruiker opnieuw vroeg om dit wachtwoord opnieuw in te stellen.';
 $string['privacy:metadata:timezone'] = 'De tijdzone van de gebruiker';

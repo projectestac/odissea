@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,6 +90,7 @@ $string['completed'] = 'Finalizado';
 $string['completionscorerequired'] = 'Requiere puntuación mínima';
 $string['completionscorerequired_help'] = 'Al habilitar este parámetro se requerirá que el usuario tenga al menos la puntuación mínima registrada para que se marque la actividad SCORM como finalizada, así como cualquier otro requerimiento de Finalización de Actividad.';
 $string['completionstatusallscos'] = 'Requiere que todos los scos devuelvan el estado de finalización';
+$string['completionstatusallscos_help'] = 'Algunos paquetes SCORM contienen múltiples componentes o "scos": cuando está habilitado, todos los "scos" dentro del paquete deben devolver el "estado de la lección" correspondiente para que esta actividad se marque como completada.';
 $string['completionstatus_completed'] = 'Finalizado';
 $string['completionstatus_passed'] = 'Pasado';
 $string['completionstatusrequired'] = 'Se requiere estado';
@@ -156,9 +157,12 @@ $string['forcecompleted_help'] = 'Si se activa, el estado del intento actual se 
 $string['forcejavascript'] = 'Obligar a los usuarios a tener JavaScript habilitado';
 $string['forcejavascript_desc'] = 'Si está activado (recomendado) impide el acceso a los objetos SCORM cuando JavaScript no está soportado/activado en el navegador del usuario. Si está desactivado, el usuario puede ver el SCORM, pero la comunicación API fallará y no se almacenará la información de la calificación.';
 $string['forcejavascriptmessage'] = 'Se requiere JavaScript para visualizar este objeto, por favor, active JavaScript en su navegador y vuelva a intentarlo.';
-$string['forcenewattempt'] = 'Forzar nuevo intento';
-$string['forcenewattemptdesc'] = 'Esta preferencia fija el valor por defecto para mostrar el ajuste de forzar nuevo intento';
-$string['forcenewattempt_help'] = 'Si se activa, cada vez que un paquete SCORM se visite se contará como un nuevo intento.';
+$string['forcenewattempts'] = 'Forzar nuevo intento';
+$string['forcenewattempts_help'] = 'Hay 3 opciones:
+
+* No: si un intento anterior se completa, pasa o falla, se le proporcionará al estudiante la opción de ingresar en modo de revisión o comenzar un nuevo intento.
+* Cuando el intento anterior se completó, pasó o falló: se basa en el paquete SCORM que establece el estado de \'completado\', \'aprobado\' o \'fallido\'.
+* Siempre: cada reingreso a la actividad SCORM generará un nuevo intento y el alumno no regresará al mismo punto al que llegó en su intento anterior.';
 $string['found'] = 'Encontrado manifiesto';
 $string['frameheight'] = 'Esta preferencia determina la altura por defecto del marco o ventana SCO';
 $string['framewidth'] = 'Esta preferencia ajusta la anchura por defecto del marco o ventana SCO';
@@ -320,6 +324,8 @@ $string['position_error'] = 'La marca {$a->tag} no puede ser un hijo de la marca
 $string['preferencespage'] = 'Preferencias exclusivas para esta página';
 $string['preferencesuser'] = 'Preferencias para esta exportación';
 $string['prev'] = 'Anterior';
+$string['privacy:metadata:aicc:data'] = 'Datos personales pasados a través del subsistema AICC / SCORM.';
+$string['privacy:metadata:userid'] = 'El ID del usuario que accedió a la actividad SCORM.';
 $string['protectpackagedownloads'] = 'Descarga de paquete protegido';
 $string['protectpackagedownloads_desc'] = 'Si está habilitado, los paquetes SCORM pueden ser descargados solo si el usuario tiene asignada capacidad en course:manageactivities. Si está deshabilitado, los paquetes SCORM pueden ser siempre descargados (por movil u otros medios)';
 $string['raw'] = 'Puntuación bruta';
@@ -337,7 +343,6 @@ $string['reviewmode'] = 'Modo Revisión';
 $string['rightanswer'] = 'Respuesta correcta';
 $string['scoes'] = 'Objetos de aprendizaje';
 $string['score'] = 'Puntuación';
-$string['scorm12standard'] = 'Habilitado SCORM 1.2 modo estandar';
 $string['scorm:addinstance'] = 'Añadir un nuevo paquete SCORM';
 $string['scormclose'] = 'Disponible hasta';
 $string['scormcourse'] = 'Curso de Aprendizaje';
@@ -349,6 +354,8 @@ $string['scormopen'] = 'Disponible desde';
 $string['scormresponsedeleted'] = 'Eliminar los intentos del usuario';
 $string['scorm:savetrack'] = 'Guardar pistas';
 $string['scorm:skipview'] = 'Pasar por alto revisión';
+$string['scormstandard'] = 'Modo estándar SCORM';
+$string['scormstandarddesc'] = 'Cuando está deshabilitado, Moodle permite que los paquetes SCORM 1.2 almacenen más de lo que permite la especificación, y utiliza la configuración de formato de nombre completo de Moodle cuando pasa el nombre de los usuarios al paquete SCORM.';
 $string['scormtype'] = 'Tipo';
 $string['scormtype_help'] = 'Este ajuste determina cómo se incluye el paquete en el curso. Hay 4 opciones:
 

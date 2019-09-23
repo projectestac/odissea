@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cohort', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,7 @@ $string['eventcohortmemberremoved'] = 'Пользователь удален и�
 $string['eventcohortupdated'] = 'Глобальная группа обновлена';
 $string['external'] = 'Внешняя группа';
 $string['idnumber'] = 'Идентификатор глобальной группы';
+$string['invalidtheme'] = 'Тема глобальной группы не существует';
 $string['memberscount'] = 'Размер группы';
 $string['name'] = 'Название';
 $string['namecolumnmissing'] = 'Что-то не так с форматом файла CSV. Пожалуйста, убедитесь, что он содержит правильные имена столбцов. Чтобы добавить пользователей в группу, перейдите в раздел «Загрузка пользователей» в администрировании сайта.';

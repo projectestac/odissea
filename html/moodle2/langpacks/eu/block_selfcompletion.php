@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_selfcompletion', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_selfcompletion', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_selfcompletion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['alreadyselfcompleted'] = 'Dagoeneko ikastaro hau osatutzat markatu duzu';
 $string['completecourse'] = 'Osatu ikastaroa';
 $string['pluginname'] = 'Auto-osaketa';
-$string['privacy:metadata'] = 'Auto-osaketa blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
+$string['privacy:metadata'] = 'Auto-osaketa blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['selfcompletion:addinstance'] = 'Gehitu auto-osaketa bloke berria';
 $string['selfcompletionnotenabled'] = 'Ez da auto-osaketarako irizpiderik ezarri ikastaro honetarako';

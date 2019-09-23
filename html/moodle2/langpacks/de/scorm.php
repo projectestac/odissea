@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['activitypleasewait'] = 'Aktivität wird geladen. Bitte warten ....';
 $string['adminsettings'] = 'Admin-Einstellungen';
 $string['advanced'] = 'Einstellungen';
 $string['aicchacpkeepsessiondata'] = 'AICC HACP Sessiondaten';
-$string['aicchacpkeepsessiondata_desc'] = 'Speicherdauer in Tagen für externe AICC HACP Sessiondaten (ein hoher Wert speichert viele Daten in der Datenbnaktabelle, kann jedoch zum debuggen hilfreich sein.';
+$string['aicchacpkeepsessiondata_desc'] = 'Speicherdauer in Tagen für externe AICC HACP Sessiondaten (ein hoher Wert speichert viele Daten in der Datenbanktabelle, kann jedoch zum debuggen hilfreich sein.';
 $string['aicchacptimeout'] = 'AICC HACP Timeout';
 $string['aicchacptimeout_desc'] = 'Länge in Minuten, die eine externe AICC HACP Session offen bleiben darf';
 $string['aiccuserid'] = 'Nutzer-ID für AICC verwenden';
@@ -151,17 +151,19 @@ $string['finishscormlinkname'] = 'Zurück zur Kursseite';
 $string['firstaccess'] = 'Erster Zugang';
 $string['firstattempt'] = 'Erster Versuch';
 $string['floating'] = 'Umfliessen';
+$string['forceattemptalways'] = 'Immer';
+$string['forceattemptoncomplete'] = 'Wann vorherige Versuche abgeschlossen, bestätigt oder gescheitert sind';
 $string['forcecompleted'] = 'Abschluss einfordern';
 $string['forcecompleteddesc'] = 'Diese Einstellung setzt den Standardwert für die Einstellung \'Abschluss einfordern\'';
 $string['forcecompleted_help'] = 'Mit dieser Einstellung \'Abschluss einfordern\' wird sicher gestellt, dass ein Versuch als \'abgeschlossen\' registriert wird. Dies funktioniert nur mit SCORM 1.2.';
 $string['forcejavascript'] = 'Aktivierung von JavaScript einfordern';
 $string['forcejavascript_desc'] = 'Lernpakete erfordern JavaScript zur Kommunikation zwischen dem Lernpaket und Moodle, z.B. um Bewertungen zu übergeben. Mit dieser Funktion wird der Zugriff auf ein Lernpaket lesend möglich, wenn JavaScript im Browser nicht verfügbar ist. Es werden jedoch keine Bewertungen abgespeichert. Es wird empfohlen, diese Funktion zu aktivieren.';
 $string['forcejavascriptmessage'] = 'Um dieses Objekt anzuzeigen ist JavaScript notwendig. Bitte aktivieren Sie JavaScript für Ihren Browser und versuchen Sie es nochmal.';
-$string['forcenewattempt'] = 'Neuen Versuch einfordern';
-$string['forcenewattemptdesc'] = 'Diese Option blendet das Kontrollfeld \'Neuen Versuch starten\' aus und verhindert den Überprüfungsmodus. SCORM ermöglicht, im gleichen Versuch an einen beliebigen Punkt zurückzuspringen. Ein neuer Versuch ist nur möglich, wenn der vorherige Versuch als "abgeschlossen", "bestanden" oder "nicht bestanden" gesetzt ist.';
-$string['forcenewattempt_help'] = 'Diese Option blendet das Kontrollfeld \'Neuen Versuch starten\' aus und verhindert den Überprüfungsmodus.
+$string['forcenewattempts'] = 'Neuen Versuch einfordern';
+$string['forcenewattempts_help'] = 'Es gibt drei Optionen:
 
-SCORM ermöglicht, im gleichen Versuch an einen beliebigen Punkt zurückzuspringen. Ein neuer Versuch ist nur möglich, wenn der vorherige Versuch als "abgeschlossen", "bestanden" oder "nicht bestanden" gesetzt ist.';
+* Nein - Wenn ein vorheriger Versuch abgeschlossen, bestanden oder gescheitert ist, erhält der Nutzer die Option den Rückblick-Modus zu beginnen oder einen neuen Versuch zu starten.
+* Wenn vorherige Versuche, abgeschlossen, bestanden oder gescheitert sind. Dies hängt von den Einstellungen des SCORM Pakets ab, was passiert wenn der Versuch \'abgeschlossen\', \'bestanden\' oder \'gescheitert\' ist.';
 $string['found'] = 'Manifest gefunden';
 $string['frameheight'] = 'Die Einstellung definiert die Höhe der Darstellung.';
 $string['framewidth'] = 'Die Einstellung definiert die Breite der Darstellung.';
@@ -268,6 +270,7 @@ $string['notattempted'] = 'Nicht versucht';
 $string['not_corr_type'] = 'Falsche Schreibweise im Tag {$a->tag}';
 $string['notopenyet'] = 'Entschuldigung, diese Aktivität ist nicht verfügbar bis {$a}';
 $string['objectives'] = 'Ziele';
+$string['openafterclose'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
 $string['optallstudents'] = 'alle Nutzer/innen';
 $string['optattemptsonly'] = 'Nutzer/innen mit Versuchen';
 $string['options'] = 'Einstellungen (von einigen Browsern nicht unterstützt)';
@@ -330,9 +333,6 @@ $string['reviewmode'] = 'Rückblick-Modus';
 $string['rightanswer'] = 'Richtige Antwort';
 $string['scoes'] = 'Lernobjekte';
 $string['score'] = 'Bewertung';
-$string['scorm12standard'] = 'SCORM 1.2  aktivieren';
-$string['scorm12standarddesc'] = 'Wenn diese Option deaktiviert ist, kann Moodle mehr Daten speichern als in den Festlegungen für SCORM 1.2 vorsehen.
-Wenn Ihr Lernpaket erlaubt, dass Teilnehmer/innen große Mengen an Text eingeben können, oder wenn Ihr Lernpaket versucht, große Mengen von Daten im Feld suspend_data zu speichern, deaktivieren Sie diese Option.';
 $string['scorm:addinstance'] = 'Neues Lernpaket hinzufügen';
 $string['scormclose'] = 'Verfügbar bis';
 $string['scormcourse'] = 'Lernpaket-Kurs';
@@ -344,6 +344,8 @@ $string['scormopen'] = 'Verfügbar ab';
 $string['scormresponsedeleted'] = 'Versuche der Nutzer/innen löschen';
 $string['scorm:savetrack'] = 'Trackingdaten speichern';
 $string['scorm:skipview'] = 'Übersicht überspringen';
+$string['scormstandard'] = 'Standardmodus von SCORM';
+$string['scormstandarddesc'] = 'Wenn deaktiviert, ermöglicht Moodle dem SCORM 1.2 Paket mehr zu speichern als die Spezifikation vorsieht und verwendet den vollständigen Namen des Modle-Nutzers im SCORM Paket';
 $string['scormtype'] = 'Typ';
 $string['scormtype_help'] = 'Diese Einstellung legt fest, wie das Lernpaket in den Kurs eingebunden wird. Es gibt 4 Optionen:
 

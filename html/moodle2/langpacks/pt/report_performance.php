@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_performance', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   report_performance
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['check_cachejs_comment_enable'] = 'Se desativar esta opção, o carregam
 $string['check_cachejs_details'] = 'A caching e compressão de JavaScript melhora muito o desempenho do carregamento da página. É altamente recomendável para sites de produção.';
 $string['check_debugmsg_comment_developer'] = 'Se for definido para outro que não Programador, o desempenho pode ser melhorado ligeiramente.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Se for definido para PROGRAMADOR, o desempenho pode ser ligeiramente afetado.';
-$string['check_debugmsg_details'] = 'Raramente existem vantagens em ativar o nível de \'PROGRAMADOR\', a menos que seja um programador. Depois de ter verificado a mensagem de erro é ALTAMENTE RECOMENDADO alterar novamente as mensagens de erro para \'Nada\'. As mensagens de erro podem dar pistas da configuração do seu site a um pirata informático e podem afetar o desempenho.';
+$string['check_debugmsg_details'] = 'Raramente existem vantagens em ativar o nível de \'PROGRAMADOR\', a menos que seja solicitado por um programador.<p>Após ter obtido a mensagem de erro, copie e guarde a mensagem noutro local, é ALTAMENTE RECOMENDADO alterar o nível de PROGRAMADOR para \'Nada\'. As mensagens de erro podem dar pistas da configuração do seu site a um pirata informático e podem afetar o desempenho.';
 $string['check_enablestats_comment_disable'] = 'O desempenho pode ser afetado pelo processamento das estatísticas. Se ativar esta opção, as configurações das estatísticas devem ser definidas cuidadosamente.';
 $string['check_enablestats_comment_enable'] = 'O desempenho pode ser afetado pelo processamento das estatísticas. As configurações das estatísticas devem ser definidas cuidadosamente.';
 $string['check_enablestats_details'] = 'Ativar esta opção irá processar os registos de atividade em cronjob e reunir algumas estatísticas. Dependendo da quantidade de tráfego do seu site, isto pode levar algum tempo. <p> Durante este processo, serão consumidos mais recursos do servidor, o que pode afetar o desempenho. </p>';
@@ -49,6 +49,6 @@ $string['issue'] = 'Problema';
 $string['morehelp'] = 'mais ajuda';
 $string['performancereportdesc'] = 'Este relatório exibe uma listagem de problemas que podem afetar o desempenho do site {$a}';
 $string['performance:view'] = 'Ver relatório de desempenho';
-$string['pluginname'] = 'Visão geral do desempenho';
-$string['privacy:metadata'] = 'O módulo Visão geral do desempenho não armazena dados pessoais.';
+$string['pluginname'] = 'Visão global do desempenho';
+$string['privacy:metadata'] = 'O módulo Visão global do desempenho não armazena dados pessoais.';
 $string['value'] = 'Valor';

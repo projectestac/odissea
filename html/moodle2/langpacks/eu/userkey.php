@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'userkey', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   userkey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,28 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['createnewkey'] = 'Sortu erabiltzaile-giltza berria';
-$string['createuserkey'] = 'Sortu erabiltzaile-giltza';
-$string['deletekeyconfirm'] = 'Benetan ezabatu nahi al duzu erabiltzaile-giltza hau?';
-$string['edituserkey'] = 'Editatu erabiltzaile-giltza';
-$string['keyiprestriction'] = 'Giltzaren IP muga';
-$string['keyiprestriction_help'] = '<p>Idatzi informazio honetara sartzeko baimena izango duen/duten IP helbide zehatza edo IP helbide-multzoa. Ez idatzi ezer IP mugarik ez ezartzeko (ez da gomendatzen).</p>';
-$string['keymanager'] = 'Giltza-kudeatzailea';
-$string['keyvaliduntil'] = 'Giltza noiz arte erabilgarri:';
-$string['keyvaliduntil_help'] = '<p>Ezarri data eta hortik aurrera gakoak ez du balioko (aparteko segurtasunerako gomendatua).</p>';
+$string['createnewkey'] = 'Sortu erabiltzaile-gako berria';
+$string['createuserkey'] = 'Sortu erabiltzaile-gakoa';
+$string['deletekeyconfirm'] = 'Benetan ezabatu nahi al duzu erabiltzaile-gako hau?';
+$string['edituserkey'] = 'Editatu erabiltzaile-gakoa';
+$string['keyiprestriction'] = 'Gakoetarako IP helbideen murrizketa';
+$string['keyiprestriction_help'] = 'Sartu datu hauetara sarbidea izango duen/duten IP helbide zehatza edo IP helbide-tartea. Hutsik utzi ezazu IP mugarik ezarri nahi ez baduzu (ez da gomendagarria).';
+$string['keymanager'] = 'Gako-kudeatzailea';
+$string['keyvaliduntil'] = 'Gako noiz arte erabilgarri:';
+$string['keyvaliduntil_help'] = 'Aukeratu aukerazko data bat hortik aurrera gakoak baliozkoa izan ez dadin (segurtasun gehigarria izateko gomendatua).';
 $string['keyvalue'] = 'Gakoaren balioa';
-$string['newuserkey'] = 'Erabiltzaile berriaren giltza';
+$string['newuserkey'] = 'Erabiltzaile-gako berria';
 $string['privacy:metadata:user_private_key'] = 'Erabiltzailearentzako gako pribatuak.';
 $string['privacy:metadata:user_private_key:instance'] = 'Script-aren instantzia.';
 $string['privacy:metadata:user_private_key:iprestriction'] = 'Gako hau erabili dezaketen IP helbideen tartea.';
 $string['privacy:metadata:user_private_key:script'] = 'Erabiltzaile-gakoaren arduraduna izango den script-a.';
 $string['privacy:metadata:user_private_key:timecreated'] = 'Gako sortu zeneko unea.';
 $string['privacy:metadata:user_private_key:userid'] = 'Gakoarekin lotutako erabiltzailea.';
-$string['privacy:metadata:user_private_key:validuntil'] = 'Gako pribatua noiz arte izango den baliozkoa.';
+$string['privacy:metadata:user_private_key:validuntil'] = 'Gako pribatua noiz arte izango den baliozkoa';
 $string['privacy:metadata:user_private_key:value'] = 'Gakoaren balioa.';
-$string['userkey'] = 'Erabiltzaile-giltza';
-$string['userkey_help'] = '<p>Kalifikazioak argitaratzea kalifikazioak URL bidez esportatzeko bide bat da Moodle-n sartu behar izan gabe. Ausaz sortzen da karaktere-multzo bat da erabiltzaile-gakoa eta URL helbideari eransten zaio segurtasuna mantentzeko.</p>
-
-<p>Kalifikazioak argitaratzeko, aukeratu "Sortu erabiltzaile-gako berria". Formularioa bidalita, sortzen da erabiltzaile-gako berria. Bestela, aurretik sortutako gakoa bat aukera daiteke.
-</p>';
-$string['userkeys'] = 'Erabiltzaile-giltzak';
+$string['userkey'] = 'Erabiltzaile-gakoa';
+$string['userkey_help'] = 'Aukeratu esportatze-plugin honen bidez publikatutako datuetara sarbidea emango duen gordetako gakoa, Moodle-ra sartu behar izan gabe. Aukeratu "Sortu erabiltzaile-gako berria" formulario hau bidaltzean gako berri bat sortzeko.';
+$string['userkeys'] = 'Erabiltzaile-gakoak';

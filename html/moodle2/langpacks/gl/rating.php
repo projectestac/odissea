@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'rating', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,12 +43,12 @@ $string['aggregatetype_help'] = 'O tipo de agregación define como se combinan a
 Se está seleccionado «Sen puntuacións», entón a actividade non aparece no libro de cualificacións.';
 $string['allowratings'] = 'Permitir que os elementos sexan puntuados?';
 $string['allratingsforitem'] = 'Todas as puntuacións entregadas';
-$string['capabilitychecknotavailable'] = 'A comprobación de permisos non está dispoñíbel ata que se garde a actividade';
+$string['capabilitychecknotavailable'] = 'A comprobación da funcionalidade non está dispoñíbel ata que se garde a actividade';
 $string['couldnotdeleteratings'] = 'Desculpe, non pode eliminarse xa que alguén xa o puntuou';
 $string['norate'] = 'Non está permitida a puntuación de elementos!';
 $string['noratings'] = 'Non se entregaron puntuacións';
 $string['noviewanyrate'] = 'Só pode ver os resultados dos elementos que fixo vostede';
-$string['noviewrate'] = 'Non ten permiso para ver as puntuacións dos elementos';
+$string['noviewrate'] = 'Non ten a funcionalidade para ver as puntuacións dos elementos';
 $string['privacy:metadata:rating'] = 'A puntuación introducida polo usuario almacénase xunto cunha asignación do elemento que foi puntuado.';
 $string['privacy:metadata:rating:rating'] = 'A puntuación numérica que introduciu o usuario.';
 $string['privacy:metadata:rating:timecreated'] = 'O momento que se realizou a puntuación por primeira vez';
@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'A puntuación é incorrecta';
 $string['ratings'] = 'Puntuacións';
 $string['ratingtime'] = 'Limitar as puntuacións aos elementos con datas neste intervalo:';
 $string['rolewarning'] = 'Roles con permiso para puntuar';
-$string['rolewarning_help'] = 'Para entregar puntuacións dos usuarios requírese a capacidade moodle/rating:rate e calquera módulo específico sobre capacidades. Os usuarios cos seguintes roles asignados deberían quen de puntuar ítems. A lista de roles pode engadirse por medio da ligazón de permisos no bloque de administración.';
+$string['rolewarning_help'] = 'Para entregar puntuacións dos usuarios requírese a funcionalidade moodle/rating:rate e calquera módulo específico sobre capacidades. Os usuarios cos seguintes roles asignados deberían quen de puntuar ítems. A lista de roles pode engadirse por medio da ligazón de permisos no bloque de administración.';
 $string['scaleselectionrequired'] = 'Ao seleccionar un tipo de agregación de puntuacións Vostede debe  seleccionar tamén o uso dunha escala ou estabelecer unha puntuación máxima.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lti', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -152,8 +152,8 @@ $string['existing_window'] = 'Janela existente';
 $string['extensions'] = 'Extensão de serviços da LTI';
 $string['external_tool_type'] = 'Ferramenta pré-configurada';
 $string['external_tool_type_help'] = '* **Automático, com base no URL da ferramenta** - A melhor configuração da ferramenta é selecionada automaticamente. Se o URL da ferramenta não for reconhecido, os detalhes da configuração da ferramenta talvez necessitem de ser introduzidos manualmente.
-* **Uma ferramenta pré-configurada específica** - A configuração da ferramenta para a ferramenta especificada será utilizada na comunicação com o fornecedor de ferramentas externo. Se o URL da ferramenta não parecer pertencer ao fornecedor da ferramenta, irá surgir um aviso. Em alguns casos, não é necessário inserir um URL da ferramenta.
-* **Configuração personalizada** - A chave do consumidor e a senha partilhada talvez necessitem de ser introduzidas manualmente. A chave do consumidor e a senha partilhada podem ser obtidas a partir do fornecedor da ferramenta. No entanto, nem todas as ferramentas necessitam de uma chave do consumidor e de uma senha partilhada, nesse caso os campos podem ser deixados em branco.
+* **Uma ferramenta específica pré-configurada** - A configuração da ferramenta especificada será utilizada na comunicação com o fornecedor de ferramentas externas. Se o URL da ferramenta não parecer pertencer ao fornecedor da ferramenta, surgirá um aviso. Em alguns casos, não é necessário inserir o URL da ferramenta.
+* **Configuração personalizada** - A chave do consumidor e a senha partilhada talvez necessitem de ser introduzidas manualmente. A chave do consumidor e a senha partilhada podem ser obtidas a partir do fornecedor da ferramenta. No entanto, nem todas as ferramentas necessitam de uma chave do consumidor e de uma senha partilhada, e esse caso os campos podem ser deixados em branco.
 
 ### Edição da ferramenta pré-configurada
 
@@ -216,7 +216,7 @@ Se tiver selecionado uma ferramenta pré-configurada, pode não precisar de inse
 $string['leaveblank'] = 'Deixe em branco se não necessitar';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Adicionar configurações específicas da Ferramenta LTI';
-$string['lti:addinstance'] = 'Adicionar nova atividade Ferramenta LTI';
+$string['lti:addinstance'] = 'Adicionar nova Ferramenta externa';
 $string['lti:admin'] = 'Tornar-se um administrador quando a ferramenta for iniciada';
 $string['lti_administration'] = 'Editar ferramenta pré-configurada';
 $string['lti_errormsg'] = 'A ferramenta deu a seguinte mensagem de erro: "{$a}"';
@@ -236,18 +236,14 @@ $string['lti_tool_request_existing'] = 'A ferramenta de configuração para o do
 $string['ltiunknownserviceapicall'] = 'Serviço desconhecido de LTI no pedido a API.';
 $string['lti:view'] = 'Arrancar atividades Ferramenta LTI';
 $string['main_admin'] = 'Ajuda geral';
-$string['main_admin_help'] = 'As ferramentas externas permitem que os utilizadores do Moodle acedam a recursos de aprendizagem alojados externamente. Através de um protocolo especial
-de arranque, a ferramenta externa terá acesso a algumas informações gerais sobre o utilizador que iniciou a ferramenta. Por exemplo,
+$string['main_admin_help'] = 'As ferramentas externas permitem que os utilizadores do Moodle acedam a recursos de aprendizagem alojados externamente. Através de um protocolo de arranque especial, a ferramenta externa terá acesso a algumas informações gerais sobre o utilizador que iniciou a ferramenta. Por exemplo,
 o nome da instituição, ID da disciplina, ID do utilizador e outras informações, tais como o nome do utilizador ou o endereço de e-mail.
 
 As ferramentas listadas nesta página estão separadas em três categorias:
 
-* **Ativa** - Estes fornecedores de ferramentas foram aprovados e configurados por um administrador. Podem ser utilizados a partir de qualquer
-         disciplina neste Moodle. Se for inserida uma chave do consumidor e uma senha partilhada, é estabelecida uma confiança
-         entre a instância do Moodle e a ferramenta externa, proporcionando um canal de comunicação seguro.
-* **Pendente** - Estes fornecedores de ferramentas chegam através de um pacote importado e não foram configurados por nenhum administrador.
-        Os professores podem usar estas ferramentas se possuírem uma chave do consumidor e uma senha partilhada, ou se não for necessário nenhuma.
-* **Rejeitada** - Estes fornecedores de ferramentas são marcados como aqueles que um administrador não tem a intenção de colocar à disposição de todo o Moodle. Os professores podem usar estas ferramentas se possuírem uma chave do consumidor e uma senha partilhada ou se não for necessário nenhuma.';
+* **Ativa** - Estes fornecedores de ferramentas foram aprovados e configurados por um administrador. Podem ser utilizados a partir de qualquer          disciplina neste Moodle. Se for inserida uma chave do consumidor e uma senha partilhada, é estabelecida uma relação de confiança entre a instância do Moodle e a ferramenta externa, proporcionando um canal de comunicação seguro.
+* **Pendente** - Estes fornecedores de ferramentas chegaram através de um pacote importado e não foram configurados por nenhum administrador. Os professores podem usar estas ferramentas se possuírem uma chave do consumidor e uma senha partilhada, ou se não for necessário nenhuma.
+* **Rejeitada** - Estes fornecedores de ferramentas são marcados por um administrador como aqueles que não há intenção de colocar à disposição de todo o Moodle. Os professores podem usar estas ferramentas se possuírem uma chave do consumidor e uma senha partilhada ou se não for necessário nenhuma.';
 $string['manage_external_tools'] = 'Gerir ferramentas';
 $string['manage_tool_proxies'] = 'Gerir registos de ferramentas externas';
 $string['manage_tools'] = 'Gerir ferramentas pré-configuradas';
@@ -427,9 +423,9 @@ $string['share_roster_help'] = 'Define se a ferramenta pode aceder à lista de u
 Note que esta configuração pode ser alterada na configuração da ferramenta.';
 $string['show_in_course_activity_chooser'] = 'Mostrar no seletor de atividade e também como uma ferramenta pré-configurada';
 $string['show_in_course_lti1'] = 'O uso da configuração de ferramentas';
-$string['show_in_course_lti1_help'] = 'Esta ferramenta pode ser mostrada ao professor quando seleciona uma atividade a adicionar a uma disciplina. Também pode ser mostrada no menu pendente de ferramenta pré-configurada quando adicionar uma ferramenta externa a uma disciplina. Em alternativa, a configuração da ferramenta é usada apenas se o URL correto da ferramenta é inserido quando adicionar uma ferramenta externa a uma disciplina.';
+$string['show_in_course_lti1_help'] = 'Esta ferramenta pode ser mostrada ao professor quando seleciona uma atividade para adicionar a uma disciplina. Também pode ser mostrada no menu pendente de ferramenta pré-configurada quando adicionar uma ferramenta externa a uma disciplina. Em alternativa, a configuração da ferramenta é usada apenas se o URL correto da ferramenta é inserido quando adicionar uma ferramenta externa a uma disciplina.';
 $string['show_in_course_lti2'] = 'O uso da configuração de ferramentas';
-$string['show_in_course_lti2_help'] = 'Esta ferramenta pode ser mostrada ao professor quando seleciona uma atividade ou recurso a adicionar a uma disciplina ou no menu pendente de ferramenta pré-configurada ao adicionar uma ferramenta externa a uma disciplina.';
+$string['show_in_course_lti2_help'] = 'Esta ferramenta pode ser mostrada ao professor quando seleciona uma atividade ou recurso para adicionar a uma disciplina ou na lista pendente da ferramenta pré-configurada ao adicionar uma ferramenta externa a uma disciplina.';
 $string['show_in_course_no'] = 'Não mostrar, usar apenas quando um URL de ferramenta correspondente é inserido';
 $string['show_in_course_preconfigured'] = 'Mostrar como ferramenta pré-configurada quando adicionar uma ferramenta externa';
 $string['size'] = 'Parâmetros de tamanho';
@@ -471,6 +467,8 @@ $string['tooltypenotdeleted'] = 'Não foi possível apagar a ferramenta pré-con
 $string['tooltypes'] = 'Ferramentas';
 $string['tooltypeupdated'] = 'Ferramenta pré-configurada atualizada';
 $string['toolurl'] = 'URL da ferramenta';
+$string['toolurl_contentitemselectionrequest'] = 'URL da seleção de conteúdo';
+$string['toolurl_contentitemselectionrequest_help'] = 'O URL de seleção de conteúdo será usado para iniciar a página de seleção de conteúdo do fornecedor da ferramenta. Se estiver vazio, será usado o URL da ferramenta';
 $string['toolurl_help'] = 'O URL da Ferramenta é usado para combinar os URLs da Ferramenta LTI com a sua configuração correta. O prefixo http(s) no URL é opcional.
 
 Além disso, o URL de base é usado como o URL da ferramenta se um URL de arranque não for especificado na ferramenta externa.
@@ -498,8 +496,7 @@ Se duas configurações diferentes forem do mesmo domínio, será usada a corres
 Também pode inserir um URL de cartridge, caso tenha um, e os detalhes para a ferramenta serão automaticamente preenchidos.';
 $string['toolurlplaceholder'] = 'URL da Ferramenta...';
 $string['typename'] = 'Nome da ferramenta';
-$string['typename_help'] = 'O nome da ferramenta é usada para identificar o fornecedor da ferramenta dentro do Moodle. O nome introduzido será visível
-aos professores ao adicionar ferramentas externas dentro nas suas disciplinas.';
+$string['typename_help'] = 'O nome da ferramenta é usado para identificar o fornecedor da ferramenta dentro do Moodle. O nome introduzido será visível para os professores ao adicionar ferramentas externas nas suas disciplinas.';
 $string['types'] = 'Tipos';
 $string['unabletocreatetooltype'] = 'Não foi possível criar a ferramenta';
 $string['unabletofindtooltype'] = 'Não foi possível encontrar a ferramenta para {$a->id}';

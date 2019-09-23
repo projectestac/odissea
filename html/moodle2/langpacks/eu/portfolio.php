@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -170,20 +170,20 @@ $string['pluginismisconfigured'] = 'Portfolioaren instantzia gaizki konfiguratut
 $string['portfolio'] = 'Portfolioa';
 $string['portfolios'] = 'Portfolioak';
 $string['privacy:metadata'] = 'Portfolioaren azpisistemak kanal gisa funtzionatzen du, pluginetako eskaerak portfolio-pluginetara bideratuz.';
-$string['privacy:metadata:instance'] = 'Portfolioaren identifikatzailea.';
-$string['privacy:metadata:instancesummary'] = 'Hemen erabiltzaileak erabiltzen dituen portfolioen instantzia eta hobespenak gordetzen dira.';
-$string['privacy:metadata:name'] = 'Hobespenaren izena.';
+$string['privacy:metadata:instance'] = 'Portfolioaren identifikatzailea';
+$string['privacy:metadata:instancesummary'] = 'Portfolio-instantzien eta hobespenen informazioa gordetzen ditu.';
+$string['privacy:metadata:name'] = 'Hobespenaren izena';
 $string['privacy:metadata:portfolio_log'] = 'Portfolio-transferentzien erregistroa (beranduagoko bikoiztutakoen egiaztatzeetarako erabilia)';
 $string['privacy:metadata:portfolio_log:caller_class'] = 'Transferentzia sortzeko erabilitako klasearen izena';
 $string['privacy:metadata:portfolio_log:caller_component'] = 'Esportatzeaz arduratzen den osagaiaren izena';
-$string['privacy:metadata:portfolio_log:time'] = 'Transferentziaren unea (ilaratutako transferentzien kasuan hau transferentzia exekutatu zeneko unea da, eta ez erabiltzaileak programatu zuenekoa)';
-$string['privacy:metadata:portfolio_log:userid'] = 'Edukia esportatu zuen erabiltzailea';
-$string['privacy:metadata:portfolio_tempdata'] = 'Portfolio-esportazioen datuak behin behinean gordetzen ditu, cron-ak egun bat igarotzean garbitzen duena';
+$string['privacy:metadata:portfolio_log:time'] = 'Transferentziaren unea (ilaratutako transferentzien kasuan hau transferentzia exekutatu zeneko unea da, eta ez erabiltzaileak hasi zuenekoa)';
+$string['privacy:metadata:portfolio_log:userid'] = 'Edukia esportatu zuen erabiltzailearen IDa';
+$string['privacy:metadata:portfolio_tempdata'] = 'Portfolio-esportazioen datuak behin behinean gordetzen ditu';
 $string['privacy:metadata:portfolio_tempdata:data'] = 'Esportatu datuak';
-$string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Erregistro hau iraungituko den unea';
+$string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Erregistro hau iraungiko den unea';
 $string['privacy:metadata:portfolio_tempdata:instance'] = 'Erabiltzen ari den portfolio-plugin instantzia';
 $string['privacy:metadata:portfolio_tempdata:userid'] = 'Esportazioa egin zuen erabiltzailea';
-$string['privacy:metadata:userid'] = 'Erabiltzailearen identifikatzailea.';
+$string['privacy:metadata:userid'] = 'Erabiltzailearen IDa';
 $string['privacy:metadata:value'] = 'Hobespenaren balioa.';
 $string['privacy:path'] = 'Portfolio-instantziak';
 $string['queuesummary'] = 'Une honetan ilaran dauden transferentziak';
@@ -196,7 +196,7 @@ $string['showhide'] = 'Erakutsi / ezkutatu';
 $string['singleinstancenomultiallowed'] = 'Portfolio-plugin bakarra dago eskuragarri, ez ditu saio beraren aldi bereko esportatze anitzak onartzen, eta gehigarri hori erabiliz saio honetan dagoeneko aktibo dagoen esportatze bat dago!';
 $string['somepluginsdisabled'] = 'Portfolio-plugin batzuk desgaitu dira konfigurazio okerra dutelako edo beste zerbaiten menpe daudelako:';
 $string['sure'] = 'Ziur al zaude \'{$a}\' ezabatu egin nahi duzula? Ezin izango duzu desegin.';
-$string['thirdpartyexception'] = 'Bitarteko batek salbuespena igorri du portfolio-esportatzea egin bitartean ({$a}). Harrapatu eta berriz bidali da baina hau konpondu beharko litzateke';
+$string['thirdpartyexception'] = 'Hirugarren batek salbuespena igorri du portfolio-esportatzea egin bitartean ({$a}). Harrapatu eta berriz bidali da baina hau konpondu beharko litzateke';
 $string['transfertime'] = 'Transferentzia-denbora';
 $string['unknownplugin'] = 'Ezezaguna (litekeena da kudeatzaileak ezabatu izana).';
 $string['wait'] = 'Itxaron';

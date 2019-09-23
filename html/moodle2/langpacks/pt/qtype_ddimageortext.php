@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['answer'] = 'Pergunta';
 $string['bgimage'] = 'Imagem de fundo';
 $string['blank'] = 'Em branco';
 $string['correctansweris'] = 'A resposta correta é: {$a}';
+$string['deletedchoice'] = '[Opção apagada]';
 $string['draggableimage'] = 'Imagem arrastável';
 $string['draggableitem'] = 'Item arrastável';
 $string['draggableitemheader'] = 'Item arrastável {$a}';
@@ -40,7 +41,7 @@ $string['draggableword'] = 'Texto arrastável';
 $string['dropbackground'] = 'Imagem de fundo para arrastar os marcadores';
 $string['dropzone'] = 'Área para largar {$a}';
 $string['dropzoneheader'] = 'Áreas para largar';
-$string['formerror_disallowedtags'] = 'Lamentamos, mas não é permitido utilizar tags HTML em texto arrastável.';
+$string['formerror_disallowedtags'] = 'Apenas as palavras-chave "{$a}" são permitidas neste texto arrastável.';
 $string['formerror_multipledraginstance'] = 'Selecionou esta imagem {$a} mais do que uma vez como sendo correspondente a uma área para largar, no entanto, não marcou a imagem como um item arrastável ilimitado.';
 $string['formerror_multipledraginstance2'] = 'Selecionou esta imagem mais do que uma vez como sendo correspondente a uma área para largar, no entanto, não marcou a imagem como um item arrastável ilimitado.';
 $string['formerror_noallowedtags'] = 'As tags HTML não são permitidas neste texto, pois trata-se de um texto alternativo para uma imagem arrastável.';

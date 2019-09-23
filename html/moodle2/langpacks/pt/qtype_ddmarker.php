@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,11 +41,20 @@ $string['dropbackground'] = 'Imagem de fundo para onde arrastar os marcadores';
 $string['dropzone'] = 'Área para largar {$a}';
 $string['dropzoneheader'] = 'Áreas para largar';
 $string['dropzones'] = 'Áreas para largar';
-$string['dropzones_help'] = 'As áreas para largar são definidas através da indicação de coordenadas. À medida que for escrevendo, a pré-visualização é automaticamente atualizada, para que desta forma consiga corrigir as coordenadas por tentativa e erro
+$string['dropzones_help'] = 'As áreas para largar podem ser definidas por coordenadas ou arrastadas para a posição correta na pré-visualização acima apresentada.
 
-* Círculo: centro_X, centro_Y; raio<br>por exemplo: <code>80, 100; 50</code>
-* Polígono: x1, y1; x2, y2; ...; xn, yn<br>por exemplo: <code>20, 60; 100, 60; 20, 100</code>
-* Rectângulo: topo_esquerda_x, topo_esquerda_y; largura, altura<br>por exemplo: <code>20, 60; 80, 40</code>';
+Ao selecionar uma forma (círculo, retângulo ou polígono) adicionará uma nova forma da área para largar à parte superior esquerda da pré-visualização. Pode ser útil minimizar a secção Marcadores para que possa ver a pré-visualização enquanto edita as áreas para largar.
+
+A edição de uma forma começa com um clique na forma na pré-visualização para mostrar as alças de edição. Pode mover a forma usando a alça central ou ajustar as dimensões da forma com as alças do vértice.
+
+Nos polígonos, e apenas para estes, ao manter pressionado o botão CTRL (botão de comando em Mac) enquanto clica numa alça de vértice adicionará um novo vértice ao polígono. Por favor, mantenha a forma do polígono tão simples quanto possível, sem cruzar linhas.
+
+Para informação, as três formas usam as coordenadas da seguinte maneira:<br />
+* Círculo: centre_x, centre_y; raio <br />por exemplo: <code>80,100;50</code><br />
+* Retângulo: top_left_x, top_left_y; largura, altura<br />por exemplo: <code>20,60;80 40</code><br />
+* Polígono: x1, y1; x2, y2; ...; xn, yn<br />por exemplo: <code>20,60;100,60;20,100</code>
+
+Selecionar um texto de marcador adicionará esse texto à forma na pré-visualização.';
 $string['followingarewrong'] = 'Os seguintes marcadores foram arrastados para uma área errada: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Os seguintes marcadores foram arrastados incorretamente: {$a}.<br />Os marcadores destacados foram colocados nas áreas de destino corretas.<br /> Clique no marcador para visualizar a área correta em destaque.';
 $string['formerror_nobgimage'] = 'É necessário selecionar uma imagem para utilizar como fundo, para a área de arrastar e largar.';

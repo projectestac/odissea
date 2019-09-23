@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_messageinbound', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['invalid_recipient_handler'] = 'Wenn eine Mitteilung empfangen wird, der
 Diese Funktion verarbeitet solche Antworten.
 
 Es ist nicht möglich, die Absender-Prüfung abzuschalten, da es möglich ist, dass der Nutzer mit einer falschen E-Mail-Absenderadresse antwortet, weil sein Mail-Client falsch eingerichtet ist.';
-$string['invalid_recipient_handler_name'] = 'Ungültige Empfängerverarbeitung';
+$string['invalid_recipient_handler_name'] = 'Ungültige Senderverarbeitung';
 $string['mailbox'] = 'Name des E-Mail-Kontos';
 $string['mailboxconfiguration'] = 'Einstellungen des E-Mail-Kontos';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';
@@ -112,9 +112,9 @@ $string['sslv3'] = 'SSLv2 (Force SSL Version 3)';
 $string['taskcleanup'] = 'Nicht geprüfte E-Mail-Eingänge entfernen';
 $string['taskpickup'] = 'Eingehende E-Mail-Abholung';
 $string['tls'] = 'TLS (TLS; started via protocol-level negotiation over unencrypted channel; RECOMMENDED way of initiating secure connection)';
-$string['tlsv1'] = 'TLSv1 (TLS direct version 1.x connection to server)';
+$string['tlsv1'] = 'TLSv1 (direkte Verbindung zur TLS-Server-Version 1.x)';
 $string['validateaddress'] = 'E-Mail-Adresse des Absenders überprüfen';
-$string['validateaddress_help'] = 'Wenn eine Benachrichtigung von einem Nutzer empfangen wird, versucht Moodle die Nachricht anhand der E-Mail-Adresse im Profil diesem Nutzer zuzuordnen.
+$string['validateaddress_help'] = 'Wenn eine Mitteilung von einem Nutzer empfangen wird, versucht Moodle die Nachricht anhand der E-Mail-Adresse im Profil diesem Nutzer zuzuordnen.
 
 Wenn der Absender nicht passend ist, erhält der Nutzer eine Nachricht, um zu prüfen, ob die Nachricht tatsächlich von ihm versandt wurde.
 

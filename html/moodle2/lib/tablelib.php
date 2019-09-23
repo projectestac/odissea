@@ -35,6 +35,7 @@ define('TABLE_VAR_IFIRST', 4);
 define('TABLE_VAR_ILAST',  5);
 define('TABLE_VAR_PAGE',   6);
 define('TABLE_VAR_RESET',  7);
+define('TABLE_VAR_DIR',    8);
 /**#@-*/
 
 /**#@+
@@ -145,7 +146,8 @@ class flexible_table {
             TABLE_VAR_IFIRST => 'tifirst',
             TABLE_VAR_ILAST  => 'tilast',
             TABLE_VAR_PAGE   => 'page',
-            TABLE_VAR_RESET  => 'treset'
+            TABLE_VAR_RESET  => 'treset',
+            TABLE_VAR_DIR    => 'tdir',
         );
     }
 
@@ -500,14 +502,16 @@ class flexible_table {
                 (isset($this->columns[$sortcol]) || in_array($sortcol, get_all_user_name_fields())
                 && isset($this->columns['fullname']))) {
 
+            $sortdir = optional_param($this->request[TABLE_VAR_DIR], $this->sort_default_order, PARAM_INT);
+
             if (array_key_exists($sortcol, $this->prefs['sortby'])) {
                 // This key already exists somewhere. Change its sortorder and bring it to the top.
-                $sortorder = $this->prefs['sortby'][$sortcol] == SORT_ASC ? SORT_DESC : SORT_ASC;
+                $sortorder = $this->prefs['sortby'][$sortcol] = $sortdir;
                 unset($this->prefs['sortby'][$sortcol]);
                 $this->prefs['sortby'] = array_merge(array($sortcol => $sortorder), $this->prefs['sortby']);
             } else {
                 // Key doesn't exist, so just add it to the beginning of the array, ascending order
-                $this->prefs['sortby'] = array_merge(array($sortcol => SORT_ASC), $this->prefs['sortby']);
+                $this->prefs['sortby'] = array_merge(array($sortcol => $sortdir), $this->prefs['sortby']);
             }
 
             // Finally, make sure that no more than $this->maxsortkeys are present into the array
@@ -913,12 +917,8 @@ class flexible_table {
     /**
      * This function is not part of the public api.
      * @return string initial of first name we are currently filtering by
-     *
-     * @deprecated since Moodle 3.3
      */
     function get_initial_first() {
-        debugging('Method get_initial_first() is no longer used and has been deprecated, ' .
-            'to print initials bar call print_initials_bar()', DEBUG_DEVELOPER);
         if (!$this->use_initials) {
             return NULL;
         }
@@ -929,12 +929,8 @@ class flexible_table {
     /**
      * This function is not part of the public api.
      * @return string initial of last name we are currently filtering by
-     *
-     * @deprecated since Moodle 3.3
      */
     function get_initial_last() {
-        debugging('Method get_initial_last() is no longer used and has been deprecated, ' .
-            'to print initials bar call print_initials_bar()', DEBUG_DEVELOPER);
         if (!$this->use_initials) {
             return NULL;
         }
@@ -982,21 +978,17 @@ class flexible_table {
     function print_initials_bar() {
         global $OUTPUT;
 
-        if ((!empty($this->prefs['i_last']) || !empty($this->prefs['i_first']) ||$this->use_initials)
-            && isset($this->columns['fullname'])) {
+        $ifirst = $this->get_initial_first();
+        $ilast = $this->get_initial_last();
+        if (is_null($ifirst)) {
+            $ifirst = '';
+        }
+        if (is_null($ilast)) {
+            $ilast = '';
+        }
 
-            if (!empty($this->prefs['i_first'])) {
-                $ifirst = $this->prefs['i_first'];
-            } else {
-                $ifirst = '';
-            }
-
-            if (!empty($this->prefs['i_last'])) {
-                $ilast = $this->prefs['i_last'];
-            } else {
-                $ilast = '';
-            }
-
+        if ((!empty($ifirst) || !empty($ilast) ||$this->use_initials)
+                && isset($this->columns['fullname'])) {
             $prefixfirst = $this->request[TABLE_VAR_IFIRST];
             $prefixlast = $this->request[TABLE_VAR_ILAST];
             echo $OUTPUT->initials_bar($ifirst, 'firstinitial', get_string('firstname'), $prefixfirst, $this->baseurl);
@@ -1349,8 +1341,19 @@ class flexible_table {
      * @return string HTML fragment.
      */
     protected function sort_link($text, $column, $isprimary, $order) {
-        return html_writer::link($this->baseurl->out(false,
-                array($this->request[TABLE_VAR_SORT] => $column)),
+        // If we are already sorting by this column, switch direction.
+        if (array_key_exists($column, $this->prefs['sortby'])) {
+            $sortorder = $this->prefs['sortby'][$column] == SORT_ASC ? SORT_DESC : SORT_ASC;
+        } else {
+            $sortorder = $order;
+        }
+
+        $params = [
+            $this->request[TABLE_VAR_SORT] => $column,
+            $this->request[TABLE_VAR_DIR] => $sortorder,
+        ];
+
+        return html_writer::link($this->baseurl->out(false, $params),
                 $text . get_accesshide(get_string('sortby') . ' ' .
                 $text . ' ' . $this->sort_order_name($isprimary, $order))) . ' ' .
                 $this->sort_icon($isprimary, $order);

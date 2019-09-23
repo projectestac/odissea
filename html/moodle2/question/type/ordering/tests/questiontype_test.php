@@ -31,7 +31,6 @@ require_once($CFG->dirroot . '/question/type/ordering/questiontype.php');
 require_once($CFG->dirroot . '/question/type/edit_question_form.php');
 require_once($CFG->dirroot . '/question/type/ordering/edit_ordering_form.php');
 
-
 /**
  * Unit tests for the ordering question type class.
  *
@@ -65,7 +64,7 @@ class qtype_ordering_test extends advanced_testcase {
         $questiondata = test_question_maker::get_question_data('ordering');
         $formdata = test_question_maker::get_question_form_data('ordering');
 
-        /* @var core_question_generator $generator */
+        /** @var core_question_generator $generator */
         $generator = $this->getDataGenerator()->get_plugin_generator('core_question');
         $cat = $generator->create_question_category([]);
 
@@ -160,4 +159,37 @@ class qtype_ordering_test extends advanced_testcase {
         );
         $this->assertEquals($expectedresponseclasses, $possibleresponses, '', 0.0000005);
     }
+
+    public function test_get_numberingstyle() {
+        $questiondata = test_question_maker::get_question_data('ordering');
+        $expected = qtype_ordering_question::NUMBERING_STYLE_DEFAULT;
+        $actual = $this->qtype->get_numberingstyle($questiondata);
+        $this->assertEquals($expected, $actual);
+
+        $questiondata->options->numberingstyle = 'abc';
+        $expected = 'abc';
+        $actual = $this->qtype->get_numberingstyle($questiondata);
+        $this->assertEquals($expected, $actual);
+
+        $questiondata->options->numberingstyle = 'ABCD';
+        $expected = 'ABCD';
+        $actual = $this->qtype->get_numberingstyle($questiondata);
+        $this->assertEquals($expected, $actual);
+
+        $questiondata->options->numberingstyle = '123';
+        $expected = '123';
+        $actual = $this->qtype->get_numberingstyle($questiondata);
+        $this->assertEquals($expected, $actual);
+
+        $questiondata->options->numberingstyle = 'iii';
+        $expected = 'iii';
+        $actual = $this->qtype->get_numberingstyle($questiondata);
+        $this->assertEquals($expected, $actual);
+
+        $questiondata->options->numberingstyle = 'III';
+        $expected = 'III';
+        $actual = $this->qtype->get_numberingstyle($questiondata);
+        $this->assertEquals($expected, $actual);
+    }
+
 }

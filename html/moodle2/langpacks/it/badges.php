@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'badges', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,18 +28,27 @@ defined('MOODLE_INTERNAL') || die();
 $string['actions'] = 'Azioni';
 $string['activate'] = 'Abilita accesso';
 $string['activatesuccess'] = 'L\'accesso al badge è stato attivato correttamente';
+$string['addalignment'] = 'Aggiungi competenza';
+$string['addbadge'] = 'Aggiungi badge';
 $string['addbadgecriteria'] = 'Aggiungi criterio';
+$string['addbadge_help'] = 'Seleziona i badge da aggiungere come criterio. Tenere premuto il pulsante CTRL per selezionare più badge.';
+$string['addcohort'] = 'Aggiungi gruppo globale';
+$string['addcohort_help'] = 'Seleziona i gruppi globali che consentono di conseguire questo badge. Tieni premuto il tasto CTRL per selezionare più gruppi globali.';
 $string['addcourse'] = 'Aggiungi corsi';
 $string['addcourse_help'] = 'Seleziona i corsi che consentono di conseguire questo badge. Tieni premuto il tasto CTRL per selezionare più corsi.';
 $string['addcriteria'] = 'Aggiungi criterio';
 $string['addcriteriatext'] = 'Per aggiungere criteri, selezionare una della opzioni presenti nel menu a discesa.';
+$string['addrelated'] = 'Aggiungi badge correlato';
 $string['addtobackpack'] = 'Aggiungi al backpack';
 $string['adminonly'] = 'Solo gli amministratori del sito sono autorizzati ad accedere a questa pagina';
 $string['after'] = 'dopo la data di rilascio';
 $string['aggregationmethod'] = 'Metodo di aggregazione';
+$string['alignment'] = 'Competenza';
 $string['all'] = 'Tutti';
 $string['allmethod'] = 'Tutte le condizioni selezionate devono essere soddisfatte';
 $string['allmethodactivity'] = 'Completamento di tutte le attività selezionate';
+$string['allmethodbadges'] = 'Conseguimento di tutti i badge selezionati';
+$string['allmethodcohort'] = 'Appartenenza a tutti gruppi globali selezionati';
 $string['allmethodcourseset'] = 'Completamento di tutti i corsi selezionati';
 $string['allmethodmanual'] = 'Rilascio da parte di tutti i ruoli selezionati';
 $string['allmethodprofile'] = 'Compilazione di tutti i campi del profilo utente selezionati';
@@ -52,6 +61,8 @@ Nota: si raccomanda di disabilitare l\'opzione qualora il sito non sia raggiungi
 $string['any'] = 'Almeno uno';
 $string['anymethod'] = 'Almeno una delle seguenti condizioni deve essere soddisfatta';
 $string['anymethodactivity'] = 'Completamento di almeno una delle attività selezionate';
+$string['anymethodbadges'] = 'Conseguimento di almeno uno dei badge selezionati';
+$string['anymethodcohort'] = 'Appartenenza ad almeno uno dei gruppi globali selezionati';
 $string['anymethodcourseset'] = 'Completamento di almeno uno dei corsi selezionati';
 $string['anymethodmanual'] = 'Rilascio da parte di almeno uno dei ruoli selezioanti';
 $string['anymethodprofile'] = 'Compilazione di almeno uno dei campi del profilo utente selezionati';
@@ -60,7 +71,7 @@ $string['archiveconfirm'] = 'Elimina e mantieni i badge rilasciati';
 $string['archivehelp'] = '<p>Con questa opzione il badge sarà contrassegnato come "ritirato" e non comparirà più nell\'elenco dei badge. Gli utenti non potranno più conseguire il badge ma coloro i quali lo hanno già conseguito potranno comunque visualizzarlo nella pagina del proprio profilo e caricarlo su backpack esterni.</p>
 <p>Se desideri che gli utenti mantengano l\'accesso al badge, è necessario scegliere questa opzione.</p>';
 $string['attachment'] = 'Allega badge al messaggio';
-$string['attachment_help'] = 'Consente di allegare il file del badge nel messaggio indirizzato al destinatario. Prerequisito è l\'abilitazione degli allegati alle email in Amministrazione del sito > Plugin > Instradamento messaggi > Email.';
+$string['attachment_help'] = 'Consente di allegare il file del badge al messaggio indirizzato al destinatario. Prerequisito è l\'abilitazione degli allegati alle email in Amministrazione del sito > Plugin > Instradamento messaggi > Email.';
 $string['award'] = 'Rilascia badge';
 $string['awardedtoyou'] = 'Conseguiti da me';
 $string['awardoncron'] = 'L\'accesso al badge è stato abilitato correttamente. Poiché moltissimi utenti potrebbero conseguirlo istantaneamente, per evitare cadute di performance l\'operazione potrà impiegare diverso di tempo';
@@ -82,7 +93,7 @@ Se nel tuo sito di produzione vuoi rilasciare badge, allora devi risolvere il pr
 L\'unico URL necessario per la verifica è [your-site-url]/badges/assertion.php. Per la sola verifica dei badge è sufficiente l\'accesso a quell\'URL.';
 $string['backpackbadges'] = 'Hai  {$a->totalbadges} badge visualizzati provenienti da {$a->totalcollections} raccolte. <a href="mybackpack.php">Modifica impostazioni backpack</a>.';
 $string['backpackcannotsendverification'] = 'Non è stato possibile inviare l\'email di verifica';
-$string['backpackconnection'] = 'Connessione backpack';
+$string['backpackconnection'] = 'Collegamento backpack';
 $string['backpackconnectioncancelattempt'] = 'Collegati utilizzando un indirizzo email diverso';
 $string['backpackconnectionconnect'] = 'Collegati al backpack';
 $string['backpackconnection_help'] = 'E\' possibile impostare una connessione con backpack provider esterni. La connessione ad un backpack consente di visualizzare badge conseguiti su altri siti e di inviare al backpack i badge conseguiti in questo sito.
@@ -92,7 +103,7 @@ $string['backpackconnectionresendemail'] = 'Invia nuovamente l\'email di verific
 $string['backpackconnectionunexpectedresult'] = 'Si è verificato un problema durante il collegamento al backpack. Per favore riprova.<br><br>Se il problema dovesse persistere contatta il tuo amministratore di sistema.';
 $string['backpackdetails'] = 'Impostazioni backpack';
 $string['backpackemail'] = 'Indirizzo email';
-$string['backpackemail_help'] = 'Indirizzo email associato con il tuo backpack. Se la connessione backpack è attiva, i badge ricevuti saranno associati a questo indirizzo.';
+$string['backpackemail_help'] = 'Indirizzo email associato con il tuo backpack. Se il collegamento al backpack è attivo, i badge ricevuti saranno associati a questo indirizzo.';
 $string['backpackemailverificationpending'] = 'Verifica in attesa';
 $string['backpackemailverifyemailbody'] = 'Ciao,
 
@@ -106,12 +117,12 @@ Nella maggioranza dei programmi di posta elettronica il link di solito appare co
 
 Se hai bisogno di aiuto, contatta l\'amministratore del sito:
 {$a->admin}';
-$string['backpackemailverifyemailsubject'] = '{$a}: email di verifica per OpenBadges Backpack';
+$string['backpackemailverifyemailsubject'] = '{$a}: email di verifica del backpack';
 $string['backpackemailverifypending'] = 'Un\'email di verifica è stata inviata a <strong>{$a}</strong>. Fai click sul link di verifica nell\'email per attivare il collegamento al tuo Backpack.';
 $string['backpackemailverifysuccess'] = 'Grazie per aver verificato il tuo indirizzo email. Ora sei collegato con il tuo backpack.';
 $string['backpackemailverifytokenmismatch'] = 'Il token nel link su cui hai cliccato non corrisponde al token memorizzato. Verifica di aver cliccato il link nella email più recente che hai ricevuto.';
 $string['backpackimport'] = 'Impostazioni importazione badge';
-$string['backpackimport_help'] = 'Dopo aver stabilito la connessione backpack, i badge provenienti dal backpack compariranno nella sezione Badge e nel tuo profilo.
+$string['backpackimport_help'] = 'Dopo aver stabilito il collegamento, i badge provenienti dal backpack compariranno nella sezione Badge e nel tuo profilo.
 
 E\' anche possibile selezionare le raccolte di badge nel tuo backpack per visualizzarle nel tuo profilo.';
 $string['badgedetails'] = 'Dettagli badge';
@@ -139,53 +150,65 @@ $string['badgestatus_3'] = 'Disponibile agli utenti';
 $string['badgestatus_4'] = 'Archiviato';
 $string['badgestoearn'] = 'Numero di badge disponibili: {$a}';
 $string['badgesview'] = 'Badge del corso';
-$string['badgeurl'] = 'Link ai badge rilasciati';
+$string['badgeurl'] = 'Link al badge rilasciato';
+$string['balignment'] = 'Competenze ({$a})';
 $string['bawards'] = 'Rilasci ({$a})';
 $string['bcriteria'] = 'Criteri';
 $string['bdetails'] = 'Modifica';
+$string['bendorsement'] = 'Garanzia di terzi';
 $string['bmessage'] = 'Messaggio';
 $string['boverview'] = 'Panoramica';
+$string['brelated'] = 'Badge correlato: ({$a})';
 $string['bydate'] = 'Da completare entro';
+$string['claim'] = 'Verifica';
+$string['claimcomment'] = 'Commento della garanzia di terzi';
+$string['claimid'] = 'URL di verifica';
 $string['clearsettings'] = 'Elimina impostazioni';
 $string['completioninfo'] = 'Il badge è stato rilasciato a valle del completamento di:';
 $string['completionnotenabled'] = 'In questo corso il completamento non è abilitato e pertanto non è possibile utilizzare il completamento del corso come criterio di conseguimento del badge. E\' possibile abilitare il completamento nelle impostazioni del corso.';
 $string['configenablebadges'] = 'Consente di creare badge e rilasciarli agli utenti del sito';
 $string['configuremessage'] = 'Messaggio badge';
-$string['connect'] = 'Connetti';
-$string['connected'] = 'Connesso';
-$string['connecting'] = 'Connessione in corso...';
+$string['connect'] = 'Collega';
+$string['connected'] = 'Collegato';
+$string['connecting'] = 'Collegamento in corso...';
 $string['contact'] = 'Contatto';
 $string['contact_help'] = 'Indirizzo email associato con chi rilascia il badge';
 $string['copyof'] = 'Copia di {$a}';
 $string['coursebadges'] = 'Badge';
 $string['coursebadgesdisabled'] = 'I badge del corso non sono abilitati.';
 $string['coursecompletion'] = 'Gli utenti devono completare il corso';
-$string['create'] = 'Nuovo badge';
+$string['create'] = 'Aggiungi badge';
 $string['createbutton'] = 'Crea badge';
 $string['creatorbody'] = '<p>{$a->user} ha soddisfatto i criteri necessari ed ha conseguito il badge. Per vedere il badge rilasciato:  {$a->link} </p>';
 $string['creatorsubject'] = '\'{$a}\' è stato conseguito!';
 $string['criteria_0'] = 'Criteri di rilascio badge';
 $string['criteria_1'] = 'Completamento attività';
-$string['criteria_1_help'] = 'Abilita il rilascio del badge al comportamento di un insieme di attività del corso';
+$string['criteria_1_help'] = 'Il badge sarà rilasciato al completamento di un insieme di attività del corso';
 $string['criteria_2'] = 'Rilascio manuale in base al ruolo';
-$string['criteria_2_help'] = 'Abilita utenti con uno specifico ruolo a livello di sito o di corso a rilasciare manualmente badge';
+$string['criteria_2_help'] = 'Il badge sarà rilasciato manuamente da utenti che posseggono uno specifico ruolo a livello di sito o di corso.';
 $string['criteria_3'] = 'Partecipazione relazionale';
 $string['criteria_3_help'] = 'Relazionale';
 $string['criteria_4'] = 'Completamento corso';
-$string['criteria_4_help'] = 'Abilita il rilascio del badge al completamento del corso. Questo requisito può avere parametri addizionali come ad esempio il punteggio minimo richiesto o la data di completamento corso.';
+$string['criteria_4_help'] = 'Il badge sarà rilasciato al completamento del corso. Questo requisito può avere parametri addizionali come ad esempio il punteggio minimo richiesto o la data di completamento corso.';
 $string['criteria_5'] = 'Completamento di un gruppo di corsi';
 $string['criteria_5_help'] = 'Il badge sarà rilasciato a coloro che completeranno un gruppo di corsi. Per ogni corso è possibile impostare parametri come il punteggio minimo o la data di completamento.';
 $string['criteria_6'] = 'Compilazione profilo utente';
-$string['criteria_6_help'] = 'Il badge sarà rilasciato a coloro che compileranno determinati campi del profilo utente. E\' possibile selezionare sia campi standard sia campi personalizzati';
+$string['criteria_6_help'] = 'Il badge sarà rilasciato a coloro che compileranno determinati campi del profilo utente. E\' possibile selezionare sia campi standard sia campi personalizzati.';
+$string['criteria_7'] = 'Badge rilasciati';
+$string['criteria_7_help'] = 'Il badge sarà rilasciato sulla base di altri badge conseguiti dall\'utente';
+$string['criteria_8'] = 'Appartenenza a gruppi globali';
+$string['criteria_8_help'] = 'Il badge sarà rilasciato sulla base dell\'appartenenza a gruppi globali';
 $string['criteriacreated'] = 'I criteri per il badge sono stati creati correttamente';
 $string['criteriadeleted'] = 'I criteri per il badge sono stati eliminati correttamente';
 $string['criteria_descr'] = 'Gli utenti conseguono il badge al soddisfacimento dei requisti elencati:';
 $string['criteria_descr_0'] = 'Gli utenti conseguono il badge se i requisiti elencati (<strong>{$a}</strong>) sono soddisfatti';
-$string['criteria_descr_1'] = 'Le seguenti attività devono essere completate (<strong>{$a}</strong>)';
+$string['criteria_descr_1'] = 'Le seguenti attività devono essere completate (<strong>{$a}</strong>):';
 $string['criteria_descr_2'] = 'Il badge viene conseguito se i ruoli elencati (<strong>{$a}</strong>) lo rilasciano:';
 $string['criteria_descr_4'] = 'Gli utenti devono completare il corso';
 $string['criteria_descr_5'] = 'I seguenti corsi devono essere completati (<strong>{$a}</strong>):';
 $string['criteria_descr_6'] = 'I seguenti campi del profilo utente devono essere compilati (<strong>{$a}</strong>):';
+$string['criteria_descr_7'] = 'Devono essere conseguiti <strong>{$a}</strong> dei seguenti badge';
+$string['criteria_descr_8'] = 'Deve appartenere ai gruppi globali sottostanti secondo il criterio seguente: <strong>{$a}</strong>';
 $string['criteria_descr_bydate'] = 'entro il <em>{$a}</em>';
 $string['criteria_descr_grade'] = 'con un punteggio minimo di <em>{$a}</em>';
 $string['criteria_descr_short0'] = 'Criteri da soddisfare (<strong>{$a}</strong>):';
@@ -194,16 +217,22 @@ $string['criteria_descr_short2'] = 'Rilascio da parte di ruoli (<strong>{$a}</st
 $string['criteria_descr_short4'] = 'Completare il corso&nbsp;';
 $string['criteria_descr_short5'] = 'Completamento corsi (<strong>{$a}</strong>):';
 $string['criteria_descr_short6'] = 'Compilazione campi profilo (<strong>{$a}</strong>):';
+$string['criteria_descr_short7'] = 'Completare <strong>{$a}</strong> di:';
+$string['criteria_descr_short8'] = 'Appartenenza ai gruppi globali sottostanti secondo il criterio seguente: <strong>{$a}</strong>';
 $string['criteria_descr_single_1'] = 'La seguente attività deve essere completata:';
 $string['criteria_descr_single_2'] = 'Il badge viene conseguito se il ruolo seguente lo rilascia:';
 $string['criteria_descr_single_4'] = 'Gli utenti devono completare il corso';
 $string['criteria_descr_single_5'] = 'Corso da completare:';
 $string['criteria_descr_single_6'] = 'Attività da completare:';
+$string['criteria_descr_single_7'] = 'Deve essere conseguito il seguente badge:';
+$string['criteria_descr_single_8'] = 'E\' necessaria l\'appartenenza al seguente gruppo globale:';
 $string['criteria_descr_single_short1'] = 'Completare:';
 $string['criteria_descr_single_short2'] = 'Rilasciato da:';
 $string['criteria_descr_single_short4'] = 'Completare il corso';
 $string['criteria_descr_single_short5'] = 'Completare:';
 $string['criteria_descr_single_short6'] = 'Completare:';
+$string['criteria_descr_single_short7'] = 'Completare:';
+$string['criteria_descr_single_short8'] = 'Appartenenza a:';
 $string['criteriasummary'] = 'Sintesi dei criteri';
 $string['criteriaupdated'] = 'I criteri per il badge sono stati aggiornati correttamente';
 $string['criterror'] = 'Problematiche sui parametri';
@@ -226,15 +255,16 @@ $string['deletehelp'] = '<p>Eliminare totalmente il badge comporta l\'eliminazio
 <p>Nota: gli utenti che hanno conseguito il badge e che lo hanno anche caricato su un backpack esterno, visualizzeranno il badge nel backapck ma non potranno accedere alle pagina dei criteri e di verifica collegate a questo sito.</p>';
 $string['delparamconfirm'] = 'Sei sicuro di eliminare questo parametro?';
 $string['description'] = 'Descrizione';
-$string['disconnect'] = 'Disconnetti';
+$string['disconnect'] = 'Scollega';
 $string['donotaward'] = 'Il badge non è attivo e gli utenti non possono conseguirlo. Se desideri che gli utenti conseguano il badge, devi cambiare lo stato ad attivo.';
 $string['editsettings'] = 'Modifica impostazioni';
 $string['enablebadges'] = 'Abilita badge';
+$string['endorsement'] = 'Garanzia di terzi';
 $string['error:backpackdatainvalid'] = 'I dati restituiti dal backpack non sono validi';
 $string['error:backpackemailnotfound'] = 'L\'email \'{$a}\' non è associata ad un backpack. E\' necessario <a href="http://backpack.openbadges.org">creare un backpack</a> per l\'account o autenticarsi con un altro indirizzo email.';
 $string['error:backpackloginfailed'] = 'Il collegamento con il backpack esterno non è stato possibile per il seguente motivo: {$a}';
 $string['error:backpacknotavailable'] = 'Il tuo sito non è accessibile da Internet, i badge rilasciati non potranno essere verificati da servizi backpack esterni';
-$string['error:backpackproblem'] = 'Si sono verificati problemi di connessione con il service provider del backpack. Per favore riprova.';
+$string['error:backpackproblem'] = 'Si sono verificati problemi di collegamento con il service provider del backpack. Per favore riprova.';
 $string['error:badgeawardnotfound'] = 'Non è possibile verificare il badge. E\' possibile che il badge sia stato revocato.';
 $string['error:badgenotfound'] = 'Il badge non è stato trovato';
 $string['error:badjson'] = 'Il tentativo di collegamento ha restituito dati non validi.';
@@ -247,16 +277,21 @@ $string['error:connectionunknownreason'] = 'Il collegamento non è riuscito ma n
 $string['error:duplicatename'] = 'Nel sistema esiste già un badge con lo stesso nome';
 $string['error:externalbadgedoesntexist'] = 'Badge non trovato';
 $string['error:guestuseraccess'] = 'Stai utilizzando un accesso ospite. Per visualizzare i badge devi autenticarti con il tuo account.';
-$string['error:invalidbadgeurl'] = 'Formato non valido per l\'URL di chi rilascia il badge';
+$string['error:invalidbadgeurl'] = 'Formato non valido per l\'URL di chi rilascia il badge. Deve avere un prefisso http:// o https://.';
 $string['error:invalidcriteriatype'] = 'Tipo di criterio non valido.';
 $string['error:invalidexpiredate'] = 'La scadenza deve essere una data futura';
 $string['error:invalidexpireperiod'] = 'La scadenza non può essere negativa o uguale a zero.';
+$string['error:invalidparambadge'] = 'Il badge non esiste.';
+$string['error:invalidparamcohort'] = 'Il gruppo globale non esiste.';
 $string['error:noactivities'] = 'In questo corso non ci sono attività con il completamento abilitato.';
 $string['error:noassertion'] = 'Persona non ha restituito nessuna asserzione. Forse hai chiuso la finestra di login troppo presto.';
+$string['error:nobadges'] = 'Non sono presenti badge di sito o di corso da aggiungere come criterio di rilascio di altri badge.';
+$string['error:nocohorts'] = 'Non sono presenti gruppi globali.';
 $string['error:nocourses'] = 'Il completamento del corso non è abilitato in nessun corso di questo sito. E\' possibile abilitare il completamento nelle impostazioni del corso.';
 $string['error:nogroups'] = '<p>Nel tuo backpack non ci sono raccolte disponibili.</p><p>Sono visualizzate solamente le raccolte pubbliche, <a href="http://backpack.openbadges.org">visita il tuo backpack</a> per creare raccolte pubbliche.</p>';
 $string['error:nopermissiontoview'] = 'Non sei autorizzato a visualizzare i destinatari del badge';
 $string['error:nosuchbadge'] = 'Il badge id {$a} non esiste';
+$string['error:nosuchcohort'] = 'Attenzione: il gruppo globale non è più disponibile';
 $string['error:nosuchcourse'] = 'Attenzione: il corso non è più disponible';
 $string['error:nosuchfield'] = 'Attenzione: il campo del profilo utente non è più disponibile';
 $string['error:nosuchmod'] = 'Attenzione: l\'attività non è più disponibile';
@@ -265,6 +300,7 @@ $string['error:nosuchuser'] = 'Nel backack provider non sono presenti utenti con
 $string['error:notifycoursedate'] = 'Attenzione: i badge i cui criteri dipendono dal completamento del corso e delle attività non saranno rilasciati fino alla data di inizio del corso.';
 $string['error:parameter'] = 'Attenzione: devi scegliere almeno un parametro per consentire il corretto rilasci del badge';
 $string['error:personaneedsjs'] = 'Per il collegamento è richiesto Javascript. Se possibile, abilita Javascritpt e ricarica la pagina.';
+$string['error:relatedbadgedoesntexist'] = 'Non sono presenti badge pubblici che abbiano identificativo.';
 $string['error:requesterror'] = 'La richiesta di collegamento non è riuscita (codice errore {$a}).';
 $string['error:requesttimeout'] = 'La richiesta di collegamento è andata in time out prima del completamento.';
 $string['error:save'] = 'Non è possibile salvare il badge.';
@@ -300,12 +336,28 @@ $string['externalbadgesp'] = 'Badge conseguiti in altri siti:';
 $string['externalconnectto'] = 'Per visualizzare badge esterni, devi <a href="{$a}">connetterti ad un backpack</a>.';
 $string['fixed'] = 'Data fissa';
 $string['hiddenbadge'] = 'Sfortunatamente il titolare del badge non ha reso disponibile questa informazione.';
+$string['imageauthoremail'] = 'Email dell\'autore dell\'immagine';
+$string['imageauthoremail_help'] = 'E\' possibile impostare l\'email dell\'autore dell\'immagine del badge.';
+$string['imageauthorname'] = 'Nome dell\'autore dell\'immagine';
+$string['imageauthorname_help'] = 'E\' possibile impostare il nome dell\'autore dell\'immagine del badge.';
+$string['imageauthorurl'] = 'URL dell\'autore dell\'immagine';
+$string['imageauthorurl_help'] = 'E\' possibile impostare l\'URL dell\'autore dell\'immagine del badge.';
+$string['imagecaption'] = 'Didascalia dell\'immagine';
+$string['imagecaption_help'] = 'E\' possibile impostare una didascalia che sarà visualizzata nella pagina del badge.';
+$string['invalidurl'] = 'URL non valida';
 $string['issuancedetails'] = 'Scadenza badge';
 $string['issuedbadge'] = 'Informazioni sul badge rilasciato';
 $string['issuerdetails'] = 'Dettagli di chi rilascia il badge';
+$string['issueremail'] = 'Email';
+$string['issueremail_help'] = 'Indirizzo email dell\'organizzazione garante.';
 $string['issuername'] = 'Nome di chi rilascia il badge';
+$string['issuername_endorsement'] = 'Nome del garante';
+$string['issuername_endorsement_help'] = 'Il nome del garante.';
 $string['issuername_help'] = 'Nome dell\'agenzia o dell\'autorità che rilascia il badge';
 $string['issuerurl'] = 'URL di di chi rilascia il basge';
+$string['issuerurl_help'] = 'Sito web dell\'organizzazione garante. L\'URL deve avere il prefisso http:// o https://.';
+$string['language'] = 'Lingua';
+$string['language_help'] = 'Lingua utilizzata nella pagina del badge';
 $string['localbadges'] = 'Badge conseguiti su {$a}';
 $string['localbadgesh'] = 'Badge conseguiti su questo sito';
 $string['localbadgesh_help'] = 'L\'elenco dei badge conseguiti su questo sito dopo aver  completato corsi, attività dei corsi e aver soddisfatto altri requisiti.
@@ -329,7 +381,7 @@ $string['month'] = 'Mesi';
 $string['mybackpack'] = 'Impostazioni mio backpack';
 $string['mybadges'] = 'Badge';
 $string['never'] = 'Mai';
-$string['newbadge'] = 'Nuovo badge';
+$string['newbadge'] = 'Creazione badge';
 $string['newimage'] = 'Nuova immagine';
 $string['noawards'] = 'Questo badge non è stato rilasciato.';
 $string['nobackpack'] = 'Non ci sono servizi backpack collegati a questo account.<br/>';
@@ -337,26 +389,30 @@ $string['nobackpackbadges'] = 'Nella raccolta selezionata non ci sono badge. <a 
 $string['nobackpackcollections'] = 'Non son state selezionate raccolte di badge. <a href="mybackpack.php">Aggiungi raccolte</a>.';
 $string['nobadges'] = 'Non sono presenti badge.';
 $string['nocriteria'] = 'I criteri per questo badge non sono stati impostati';
+$string['noendorsement'] = 'I badge non ha garanzie.';
 $string['noexpiry'] = 'Questo badge non ha data di scadenza';
 $string['noparamstoadd'] = 'Non ci sono altri parametri disponibili da aggiungere ai criteri di rilascio del badge';
+$string['norelated'] = 'Il badge non ha badge correlati';
 $string['notacceptedrole'] = 'Il tuo ruolo non è presente tra i ruoli che possono rilasciare manualmente il badge.<br/>
 Per visualizzare l\'elenco degli utenti che hanno conseguito questo badge, visita {$a}.';
-$string['notconnected'] = 'Non connesso';
+$string['notconnected'] = 'Non collegato';
+$string['noteendorsement'] = 'Una garanzia di terze parti  può accrescere il valore del badge. Ad esempio,una scuola può farsi garante di un badge rilasciato da un docente, oppure un di una organizzazione nazionale può farsi garante dei badge rilasciati da una organizzazione locale.';
+$string['noterelated'] = 'I badge con delle analogie possono essere indicati come correlati. Ad esempio, badge che hanno gli stessi criteri ma che sono visualizzati i lingue diverse. I badge correlati vengono visualizzati nella pagina dei badge.';
 $string['nothingtoadd'] = 'Non sono disponibili criteri da aggiungere';
 $string['notification'] = 'Informa il creatore del badge';
 $string['notification_help'] = 'Consente di impostare le notifiche dei badge rilasciati da inviare al creatore del badge.
 
 Sono disponibili le seguenti opzioni:
 
-* **MAI** - Non saranno inviate notifcihe
+* **MAI** - Non saranno inviate notifiche.
 
- * **SEMPRE** - Invia una notifica tutte le volte che un badge viene conseguito
+ * **SEMPRE** - Invia una notifica tutte le volte che un badge viene conseguito.
 
- * **GIORNALMENTE** - Invia una notifica una sola volta al giorno
+ * **GIORNALMENTE** - Invia una notifica una sola volta al giorno.
 
- * **SETTIMANALMENTE** - Invia una notifica una sola volta alla settimana
+ * **SETTIMANALMENTE** - Invia una notifica una sola volta alla settimana.
 
- * **MENSILMENTE** - Invia una notifica una sola volta al mese';
+ * **MENSILMENTE** - Invia una notifica una sola volta al mese.';
 $string['notifydaily'] = 'Giornalmente';
 $string['notifyevery'] = 'Sempre';
 $string['notifymonthly'] = 'Mensilmente';
@@ -402,8 +458,11 @@ $string['recipientdetails'] = 'Dettagli destinatario';
 $string['recipientidentificationproblem'] = 'Non è possibile trovare un destinatario del badge tra gli utenti esistenti.';
 $string['recipients'] = 'Destinatari badge';
 $string['recipientvalidationproblem'] = 'L\'utente attuale non può essere verificato come destinatario del badge';
+$string['relatedbages'] = 'Badge correlati';
 $string['relative'] = 'Data relativa';
-$string['requiredcourse'] = 'E\' necessario aggiungere almeno un corso al requisito.';
+$string['requiredbadge'] = 'E\' necessario aggiungere almeno un badge al criterio.';
+$string['requiredcohort'] = 'E\' necessario aggiungere almeno un gruppo globale al criterio.';
+$string['requiredcourse'] = 'E\' necessario aggiungere almeno un corso al criterio.';
 $string['reviewbadge'] = 'Modifica accesso al badge';
 $string['reviewconfirm'] = '<p>Il badge diverrà visibile agli utenti i quali potranno cominciare a conseguirlo.</p>
 
@@ -417,7 +476,7 @@ $string['save'] = 'Salva';
 $string['searchname'] = 'Cerca per nome';
 $string['selectaward'] = 'Scegliere il ruolo da utilizzare per rilasciare il badge';
 $string['selectgroup_end'] = 'Sono visualizzate solamente le raccolte pubbliche, <a href="http://backpack.openbadges.org">visita il tuo backpack</a> per creare ulteriori raccolte pubbliche.';
-$string['selectgroup_start'] = 'Seleziona nel tuo backpack le raccolte da visualizzare in questo sito:';
+$string['selectgroup_start'] = 'Seleziona dal tuo backpack le raccolte da visualizzare in questo sito:';
 $string['selecting'] = 'Con i badge selezionati...';
 $string['setup'] = 'Imposta connesione';
 $string['signinwithyouremail'] = 'Autenticati con la tua email';
@@ -443,6 +502,13 @@ $string['statusmessage_2'] = 'Il badge non è disponibile agli utenti e i criter
 $string['statusmessage_3'] = 'Il badge è disponibile agli utenti e i criteri per conseguirlo sono bloccati.';
 $string['statusmessage_4'] = 'Questo badge al momento è archiviato';
 $string['subject'] = 'Oggetto del messaggio';
+$string['targetcode'] = 'Codice';
+$string['targetdescription'] = 'Descrizione';
+$string['targetframework'] = 'Quadro';
+$string['targetframework_help'] = 'Il nome del quadro di competenze';
+$string['targetname'] = 'Nome della competenza';
+$string['targeturl'] = 'URL';
+$string['type'] = 'Tipo';
 $string['variablesubstitution'] = 'Sostituzione delle variabili nel messaggio';
 $string['variablesubstitution_help'] = 'In un messaggio badge è possibile inserire variabili nell\'oggetto o nel corpo del messaggio affinché vengano sostituite da valori reali all\'atto dell\'invio del messaggio. Le variabili devono essere inserite esattamente come riportate sotto.
 
@@ -451,6 +517,8 @@ $string['variablesubstitution_help'] = 'In un messaggio badge è possibile inser
 %username% : sarà sostituita dal nome di chi ha conseguito il badge
 
 %badgelink% : sarà sostituita dall\'URL pubblico contenente le informazioni del badge rilasciato.';
+$string['version'] = 'Versione';
+$string['version_help'] = 'Il campo versione è utile per tenere traccia dall\'evoluzione del badge. Se inserita, la versione sarà visualizzata nella pagina del badge.';
 $string['viewbadge'] = 'Visualizza badge rilasciati';
 $string['visible'] = 'Visibile';
 $string['warnexpired'] = '(Questo badge è scaduto!)';

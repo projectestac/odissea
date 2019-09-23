@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assign', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['addnewattempt_help'] = 'Això crearà una tramesa en blanc per a trebal
 $string['addnewgroupoverride'] = 'Afegeix una excepció de grup';
 $string['addnewuseroverride'] = 'Afegeix una excepció d\'usuari';
 $string['addsubmission'] = 'Afegeix la tramesa';
+$string['addsubmission_help'] = 'Encara no heu fet una tramesa';
 $string['allocatedmarker'] = 'Avaluador assignat';
 $string['allocatedmarker_help'] = 'Avaluador assignat a aquesta tramesa';
 $string['allowsubmissions'] = 'Permet a l\'usuari continuar realitzant trameses per a aquesta tasca.';
@@ -112,7 +113,6 @@ $string['blindmarking_help'] = 'La qualificació a cegues oculta la identitat de
 $string['calendardue'] = '{$a} pendent de lliurament';
 $string['calendargradingdue'] = '{$a} s\'ha de qualificar';
 $string['changefilters'] = 'Canvia els filtres';
-$string['changegradewarning'] = 'Aquesta tasca té trameses qualificades i si canvieu la puntuació NO es recalcularan automàticament les qualificacions existents. Si voleu canviar la puntuació, haureu de requalificar totes les trameses existents.';
 $string['changeuser'] = 'Canvia l\'usuari';
 $string['choosegradingaction'] = 'Acció de qualificar';
 $string['choosemarker'] = 'Tria...';
@@ -163,7 +163,7 @@ $string['editingpreviousfeedbackwarning'] = 'Esteu editant la retroacció d\'un 
 $string['editingstatus'] = 'S\'està editant l\'estat';
 $string['editonline'] = 'Edita en línia';
 $string['editsubmission'] = 'Edita la tramesa';
-$string['editsubmission_help'] = 'Feu canvis a la vostra tramesa';
+$string['editsubmission_help'] = 'Encara podeu fer canvis a la vostra tramesa';
 $string['editsubmissionother'] = 'Edita la tramesa per a: {$a}';
 $string['enabled'] = 'Habilitat';
 $string['errornosubmissions'] = 'No hi ha tasques per baixar';
@@ -226,6 +226,7 @@ $string['gradecanbechanged'] = 'Es pot canviar la qualificació';
 $string['gradechangessaveddetail'] = 'S\'han desat els canvis a la qualificació i a la retroacció.';
 $string['graded'] = 'Qualificada';
 $string['gradedby'] = 'Qualificat per';
+$string['gradedfollowupsubmit'] = 'Qualificada: s\'ha rebut una tramesa posterior';
 $string['gradedon'] = 'Qualificat el';
 $string['gradelocked'] = 'Aquesta qualificació està bloquejada o rectificada al llibre de qualificacions.';
 $string['gradeoutof'] = 'Qualificació sobre {$a}';

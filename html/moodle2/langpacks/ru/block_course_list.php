@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_list', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adminview'] = 'Вид для администратора';
 $string['allcourses'] = 'Администратору доступны все курсы';
-$string['configadminview'] = 'Настроить доступ администратора';
+$string['configadminview'] = 'Отображать ли все курсы в блоке «Курсы» или только те, в которых зарегистрирован администратор.';
 $string['confighideallcourseslink'] = 'Скрыть ссылку «Все курсы» в нижней части блока. (Администраторы смогут видеть ссылку, несмотря на значение этого параметра.)';
 $string['course_list:addinstance'] = 'Добавлять новый блок «Курсы»';
 $string['course_list:myaddinstance'] = 'Добавлять новый блок «Курсы» на страницу «Личный кабинет»';

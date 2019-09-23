@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tags', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['anycollection'] = 'Qualquer';
 $string['anytype'] = 'Todas';
-$string['configtitle'] = 'Título do bloco';
+$string['configtitle'] = 'Título do bloco de Palavras-chave';
 $string['defaultdisplay'] = 'Mostrar palavras-chave';
 $string['disabledtags'] = 'As palavras-chave estão desativadas';
 $string['pluginname'] = 'Palavras-chave';

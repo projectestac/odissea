@@ -210,7 +210,7 @@ foreach ($sortedbehaviours as $behaviour => $behaviourname) {
     //************ ORIGINAL
     /*
     if ($needed[$behaviour]) {
-     */
+    */
     //************ FI
         $row[] = '';
     } else {

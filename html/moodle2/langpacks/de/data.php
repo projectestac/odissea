@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['checkbox'] = 'Mehrfachauswahl';
 $string['chooseexportfields'] = 'Felder für Export auswählen:';
 $string['chooseexportformat'] = 'Exportformat auswählen:';
 $string['chooseorupload'] = 'Datei wählen';
+$string['closebeforeopen'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
 $string['columns'] = 'Spalten';
 $string['comment'] = 'Kommentar';
 $string['commentdeleted'] = 'Kommentar gelöscht';
@@ -203,7 +204,7 @@ $string['headersingletemplate'] = 'Definiert Darstellung für die Einzelansicht'
 $string['importentries'] = 'Einträge importieren';
 $string['importsuccess'] = 'Die Vorlagensatz wurde erfolgreich übernommen.';
 $string['includeapproval'] = 'Bestätigungsstatus einfügen';
-$string['includetags'] = 'Schlagwörter einbinden';
+$string['includetags'] = 'Tags einbeziehen';
 $string['includetime'] = 'Zeitpunkt hinzugefügt/geändert einfügen';
 $string['includeuserdetails'] = 'Nutzerdetails einfügen';
 $string['indicator:cognitivedepth'] = 'Datenbank kognitiv';
@@ -247,7 +248,7 @@ $string['missingfield'] = 'Programmierfehler: Sie müssen Feld und Daten angeben
 $string['modulename'] = 'Datenbank';
 $string['modulename_help'] = 'Sammeln Sie mit Ihren Teilnehmer/innen Informationen in einer Datenbank. Legen Sie eine Struktur für die Felder der Datenbank fest und definieren Sie, was später in der Übersicht (Listenansicht) oder einer Detailansicht angezeigt werden soll.
 
-Wählen Sie flexibel zwischen verschiedenen Feldtypen wie Checkbox, Radiobutton, Dropdownmenü, Texteinträgen, Link, Bild und hochgeladenen Dateien.
+Wählen Sie flexibel zwischen verschiedenen Feldtypen wie Checkbox, Radiobutton, Dropdownmenü, Texteintrag, Link, Bild und hochgeladenen Dateien.
 
 Sie können die Datenbank so einstellen, dass Einträge zuerst geprüft werden müssen. Außerdem können Sie Kommentare zu den Einträgen zulassen.';
 $string['modulenameplural'] = 'Datenbanken';
@@ -257,18 +258,6 @@ $string['movezipfailed'] = 'Kann ZIP nicht bewegen';
 $string['multientry'] = 'Wiederholter Eintrag';
 $string['multimenu'] = 'Menü (Mehrfachauswahl)';
 $string['multipletags'] = 'Elemente mehrfach gefunden! Keine Vorlage gespeichert.';
-$string['namecheckbox'] = 'Ankreuzfeld';
-$string['namedate'] = 'Datumsfeld';
-$string['namefile'] = 'Dateifeld';
-$string['namelatlong'] = 'Latitude/Longitude Feld';
-$string['namemenu'] = 'Menüfeld';
-$string['namemultimenu'] = 'Menüfeld mit Mehrfachauswahl';
-$string['namenumber'] = 'Zahlenfeld';
-$string['namepicture'] = 'Bildfeld';
-$string['nameradiobutton'] = 'Radioknopffeld';
-$string['nametext'] = 'Textfeld';
-$string['nametextarea'] = 'Textbereichsfeld';
-$string['nameurl'] = 'URL-Feld';
 $string['newentry'] = 'Neuer Eintrag';
 $string['newfield'] = 'Neues Feld erstellen';
 $string['newfield_help'] = 'Auf dieser Seite können Sie die Felder anlegen, die Teil der Datenbank sein sollen. Für jedes Feld können unterschiedliche Datentypen festgelegt werden, zu denen jeweils unterschiedliche Formulare für datenspezifische Angaben gehören.
@@ -291,6 +280,7 @@ $string['numberrssarticles'] = 'RSS Beiträge';
 $string['numnotapproved'] = 'Wartend';
 $string['numrecords'] = '{$a} Datensätze';
 $string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['openafterclose'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
 $string['optionaldescription'] = 'Beschreibung (optional)';
 $string['optionalfilename'] = 'Dateiname (optional)';
 $string['other'] = 'Andere';
@@ -319,8 +309,8 @@ $string['privacy:metadata:datafieldnpluginsummary'] = 'Felder der Datenbankaktiv
 $string['privacy:metadata:data_records'] = 'Steht für Einträge in der Datenbank';
 $string['privacy:metadata:data_records:approved'] = 'Bestätigungsstatus';
 $string['privacy:metadata:data_records:groupid'] = 'Gruppe';
-$string['privacy:metadata:data_records:timecreated'] = 'Zeitpunkt an dem Eintrag erstellt wurde';
-$string['privacy:metadata:data_records:timemodified'] = 'Zeitpunkt zu dem Eintrag verändert wurde';
+$string['privacy:metadata:data_records:timecreated'] = 'Zeitpunkt, an dem Eintrag erstellt wurde';
+$string['privacy:metadata:data_records:timemodified'] = 'Zeitpunkt, zu dem Eintrag verändert wurde';
 $string['privacy:metadata:data_records:userid'] = 'Nutzer, der den Eintrag erstellt hat';
 $string['privacy:metadata:filepurpose'] = 'Datei, die Datenbankeintrag zugeordnet wurde';
 $string['privacy:metadata:ratingpurpose'] = 'Bewertung für Datenbankeintrag';
@@ -373,7 +363,7 @@ $string['subplugintype_datafield_plural'] = 'Datenbank-Feldtypen';
 $string['subplugintype_datapreset'] = 'Vorlagensatz';
 $string['subplugintype_datapreset_plural'] = 'Vorlagensätze';
 $string['tagarea_data_records'] = 'Datensätze';
-$string['tags'] = 'Schlagwörter';
+$string['tags'] = 'Tags';
 $string['tagsdeleted'] = 'Datenbank-Tags wurden entfernt';
 $string['teachersandstudents'] = '{$a->teachers} und {$a->students}';
 $string['templates'] = 'Vorlagen';

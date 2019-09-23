@@ -127,7 +127,6 @@ WSDL;
  * @return SoapFault or void if everything was fine
  */
 function LogoutNotification($spsessionid) {
-    // Delete session of user using $spsessionid.
     $sessionclass = \core\session\manager::get_handler_class();
     switch ($sessionclass) {
         case '\core\session\file':

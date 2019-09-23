@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_security', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ Kontuan izan neurri honek ez duela zerbitzariaren segurtasuna modu nabarmenean h
 $string['check_configrw_name'] = 'config.php idatz daiteke';
 $string['check_configrw_ok'] = 'PHP script-ek ezin dute config.php fitxategia aldatu.';
 $string['check_configrw_warning'] = 'PHP script-ek config.php fitxategia alda dezakete.';
-$string['check_cookiesecure_details'] = '<p>HTTPS komunikazioak gaitzen badituzu cookie seguruak ere gaitzea gomendatzen da. HTTPtik HTTPSra berbideraketa iraunkorra ere gehitu beharko zenuke, eta ahal dela HSTS goiburuak bidaltzea.</p>';
+$string['check_cookiesecure_details'] = '<p>HTTPS komunikazioak gaituta badaude cookie seguruak ere gaitzea gomendatzen da. HTTPtik HTTPSra berbideraketa iraunkorra ere gehitu beharko zenuke, eta ahal dela HSTS goiburuak bidaltzea.</p>';
 $string['check_cookiesecure_error'] = 'Mesedez, gaitu cookie seguruak';
 $string['check_cookiesecure_name'] = 'Cookie seguruak';
 $string['check_cookiesecure_ok'] = 'Cookie seguruak gaituta.';
@@ -145,4 +145,4 @@ $string['statusinfo'] = 'Informazioa';
 $string['statusok'] = 'ONDO';
 $string['statusserious'] = 'Larria';
 $string['statuswarning'] = 'Kontuz';
-$string['timewarning'] = 'Datuen prozesamenduak luze iraun dezake, mesedez, izan pazientzia...';
+$string['timewarning'] = 'Datuen prozesamenduak luze iraun dezake, mesedez, pazientzia izan ezazu...';

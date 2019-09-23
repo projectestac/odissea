@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'question', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -174,6 +174,7 @@ $string['filesareacourse'] = 'área de archivos del curso';
 $string['filesareasite'] = 'área de archivos del sitio';
 $string['filestomove'] = '¿Mover / copiar archivos a {$a}?';
 $string['fillincorrect'] = 'Rellenar con las respuestas correctas';
+$string['filterbytags'] = 'Filtrar por etiquetas...';
 $string['firsttry'] = 'Primer intento';
 $string['flagged'] = 'Marcadas';
 $string['flagthisquestion'] = 'Marcar esta pregunta';
@@ -306,6 +307,7 @@ $string['noprobs'] = 'No se han encontrado problemas en su base de datos de preg
 $string['noquestions'] = 'No se encontraron preguntas que pudiesen ser exportadas. Asegúrese de que ha seleccionado una categoría para exportar que contenga preguntas.';
 $string['noquestionsinfile'] = 'No hay preguntas en el archivo de importación';
 $string['noresponse'] = '[Sin respuesta]';
+$string['notagfiltersapplied'] = 'No se está aplicando ningún filtro por etiquetas';
 $string['notanswered'] = 'Sin contestar';
 $string['notchanged'] = 'Sin cambios desde el último intento';
 $string['notenoughanswers'] = 'Este tipo de pregunta requiere al menos {$a} respuestas';

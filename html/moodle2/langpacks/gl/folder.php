@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'folder', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['page-mod-folder-view'] = 'Páxina principal do módulo cartafol';
 $string['page-mod-folder-x'] = 'Calquera páxina do módulo de cartafol';
 $string['pluginadministration'] = 'Administración do cartafol';
 $string['pluginname'] = 'Cartafol';
+$string['privacy:metadata'] = 'O engadido de recurso cartafol non almacena ningún dato persoal.';
 $string['search:activity'] = 'Cartafol';
 $string['showdownloadfolder'] = 'Amosar o botón para a descarga do cartafol';
 $string['showdownloadfolder_help'] = 'Se o estabelece a «si», amosarase un botón para permitir descargar o contido do cartafol como un arquivo ZIP.';

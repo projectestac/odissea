@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cache', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,7 @@ $string['cachedef_coursecontacts'] = 'Liste von Kurskontakten';
 $string['cachedef_coursemodinfo'] = 'Angesammelte Informationen über Module und Kursabschnitte';
 $string['cachedef_databasemeta'] = 'Metainformationen zur Datenbank';
 $string['cachedef_eventinvalidation'] = 'Termin löschen';
-$string['cachedef_externalbadges'] = 'Externe Auszeichnungen einzelner Nutzer/innen';
+$string['cachedef_externalbadges'] = 'Externe Badges einer bestimmten Person';
 $string['cachedef_fontawesomeiconmapping'] = 'Zuordnen von Icons für Schriftart Awesome';
 $string['cachedef_grade_categories'] = 'Abfragen der Bewertungskategorie';
 $string['cachedef_groupdata'] = 'Information für Kursgruppe';
@@ -56,7 +56,7 @@ $string['cachedef_htmlpurifier'] = 'HTML Purifier - Inhalt entfernt';
 $string['cachedef_langmenu'] = 'Liste verfügbarer Sprachen';
 $string['cachedef_locking'] = 'Sperrung';
 $string['cachedef_message_processors_enabled'] = 'Aktivierungsstatus der Mitteilungsabläufe';
-$string['cachedef_message_time_last_message_between_users'] = 'Zeit für die neueste Nachricht zwischen den Nutzer/innen erstellt';
+$string['cachedef_message_time_last_message_between_users'] = 'Zeitpunkt der letzten Mitteilung zwischen den Nutzer/innen';
 $string['cachedef_navigation_expandcourse'] = 'Navigation erweiterbare Kurse';
 $string['cachedef_observers'] = 'Event-Beobachtung';
 $string['cachedef_plugin_functions'] = 'Callbacks für verfügbare Plugins';
@@ -68,8 +68,8 @@ $string['cachedef_repositories'] = 'Daten der Repositories';
 $string['cachedef_roledefs'] = 'Rollendefinitionen';
 $string['cachedef_string'] = 'Sprachstring-Cache';
 $string['cachedef_suspended_userids'] = 'Liste der gesperrten Nutzer/innen pro Kurs';
-$string['cachedef_tagindexbuilder'] = 'Suchergebnisse für verschlagwortete Elemente';
-$string['cachedef_tags'] = 'Schlagwortgruppen und Bereiche';
+$string['cachedef_tagindexbuilder'] = 'Gesuchte Objekte mit Tags';
+$string['cachedef_tags'] = 'Tag-Collections und Bereiche';
 $string['cachedef_temp_tables'] = 'Cache für temporäre Tabellen';
 $string['cachedef_user_group_groupings'] = 'Gruppierungen und Gruppen von Nutzer/in';
 $string['cachedef_userselections'] = 'Daten, die verwendet werden, um eine Nutzerauswahl an mehreren Stellen zu verwenden';
@@ -120,7 +120,7 @@ $string['locking_help'] = 'Locking ist ein Vorgang, der das Überschreiben von z
 $string['lockname'] = 'Name';
 $string['locknamedesc'] = 'Der Name muss eindeutig sein und darf nur die Zeichen a-zA-Z_ enthalten.';
 $string['locknamenotunique'] = 'Der gewählte Name wird bereits verwendet. Bitte wählen Sie einen eindeutigen Namen.';
-$string['locksummary'] = 'Zusammenstellung der Speicher-Sperr-Instanzen';
+$string['locksummary'] = 'Zusammenstellung der Cache-Sperrinstanzen';
 $string['locktype'] = 'Typ';
 $string['lockuses'] = 'Nutzung';
 $string['mappingdefault'] = '(standard)';

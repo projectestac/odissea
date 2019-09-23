@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['auth_dbextencodinghelp'] = 'Encoding used in external database';
 $string['auth_dbextrafields'] = 'These fields are optional.  You can choose to pre-fill some Moodle user fields with information from the <b>external database fields</b> that you specify here. <p>If you leave these blank, then defaults will be used.</p><p>In either case, the user will be able to edit all of these fields after they log in.</p>';
 $string['auth_dbfieldpass'] = 'Name of the field containing passwords';
 $string['auth_dbfieldpass_key'] = 'Password field';
-$string['auth_dbfielduser'] = 'Name of the field containing usernames';
+$string['auth_dbfielduser'] = 'Name of the field containing usernames. This field must be a varchar data type.';
 $string['auth_dbfielduser_key'] = 'Username field';
 $string['auth_dbhost'] = 'The computer hosting the database server. Use a system DSN entry if using ODBC. Use a PDO DSN entry if using PDO.';
 $string['auth_dbhost_key'] = 'Host';
@@ -75,7 +75,6 @@ $string['auth_dbupdateusers_description'] = 'As well as inserting new users, upd
 $string['auth_dbupdatinguser'] = 'Updating user {$a->name} id {$a->id}';
 $string['auth_dbuser'] = 'Username with read access to the database';
 $string['auth_dbuser_key'] = 'DB user';
-$string['auth_dbusernotexist'] = 'Cannot update non-existent user: {$a}';
 $string['auth_dbuserstoadd'] = 'User entries to add: {$a}';
 $string['auth_dbuserstoremove'] = 'User entries to remove: {$a}';
 $string['pluginname'] = 'External database';

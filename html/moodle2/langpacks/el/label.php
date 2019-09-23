@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'label', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,13 +39,14 @@ $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Ταμπέλ
 $string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Ταμπέλας.';
 $string['label:addinstance'] = 'Προσθήκη νέας ταμπέλας';
 $string['labeltext'] = 'Κείμενο ταμπέλας';
-$string['label:view'] = 'Προβολή ταμπέλας';
+$string['label:view'] = 'Εμφάνιση ταμπέλας';
 $string['modulename'] = 'Ταμπέλα';
 $string['modulename_help'] = 'Το άρθρωμα ταμπέλα επιτρέπει την εισαγωγή κειμένου και πολυμέσων στην σελίδα του μαθήματος μεταξύ συνδέσμων προς άλλους πόρους και δραστηριότητες. Οι ταμπέλες είναι πολύ ευπροσάρμοστες και μπορεί να βοηθήσουν στη βελτίωση της εμφάνισης ενός μαθήματος αν χρησιμοποιηθούν προσεκτικά. Οι ταμπέλες μπορούν να χρησιμοποιηθούν:
 
 * Για να διαχωρίσουν ένα μακρύ κατάλογο δραστηριοτήτων με μια υπο-επικεφαλίδα ή μια εικόνα.
 * Για να εμφανίσουν ένα ενσωματωμένο αρχείο ήχου ή βίντεο απευθείας στην σελίδα του μαθήματος.
 * Για να προσθέσουν μια σύντομη περιγραφή σε ένα τμήμα μαθήματος.';
+$string['modulename_link'] = 'άρθρωμα/ταμπέλα/εμφάνιση';
 $string['modulenameplural'] = 'Ταμπέλες';
 $string['pluginadministration'] = 'Διαχείριση ταμπελών';
 $string['pluginname'] = 'Ταμπέλα';

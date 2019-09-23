@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_eventlist', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   report_eventlist
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,26 +37,26 @@ $string['delete'] = 'eliminar';
 $string['details'] = 'Detalles';
 $string['dname'] = 'Nome';
 $string['edulevel'] = 'Nivel educativo';
-$string['errorinvaliddirectory'] = 'Non existe o directorio da actividade ou é incorrecto.';
-$string['errorinvalidevent'] = 'A actividade fornecida non é unha actividade correcta.';
-$string['eventcode'] = 'Código da actividade';
-$string['eventexplanation'] = 'Explicación da actividade';
-$string['eventname'] = 'Nome da actividade:';
+$string['errorinvaliddirectory'] = 'Non existe o directorio do evento ou é incorrecto.';
+$string['errorinvalidevent'] = 'A actividade fornecida non é un evento correcto.';
+$string['eventcode'] = 'Código do evento';
+$string['eventexplanation'] = 'Explicación do evento';
+$string['eventname'] = 'Nome do evento:';
 $string['filter'] = 'Filtro';
 $string['legacyevent'] = 'Evento antigo';
 $string['name'] = 'Nome';
 $string['objecttable'] = 'Táboa de obxecto';
 $string['other'] = 'Outro';
-$string['othereventparameters'] = 'Outros parámetros da actividade';
+$string['othereventparameters'] = 'Outros parámetros do evento';
 $string['otherinformation'] = 'Outra información:';
-$string['parentevent'] = 'Actividade principal';
+$string['parentevent'] = 'Evento principal';
 $string['participating'] = 'Participando';
-$string['pluginname'] = 'Lista de actividades';
+$string['pluginname'] = 'Lista de eventos';
 $string['privacy:metadata'] = 'O engadido de lista de eventos non almacena ningún dato persoal.';
 $string['read'] = 'ler';
-$string['relatedobservers'] = 'Engadidos que observan esta actividade';
+$string['relatedobservers'] = 'Engadidos que observan este evento';
 $string['since'] = 'Desde';
 $string['teaching'] = 'Ensinando';
-$string['typedeclaration'] = 'Outros parámetros da actividade';
+$string['typedeclaration'] = 'Outros parámetros do evento';
 $string['update'] = 'actualizar';
 $string['yes'] = 'si';

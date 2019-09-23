@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'media', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,14 +31,11 @@ $string['defaultheightdesc'] = 'Alçària del reproductor multimèdia si no se n
 $string['defaultwidth'] = 'Amplària per defecte';
 $string['defaultwidthdesc'] = 'Amplària del reproductor multimèdia si no se n\'ha especificat cap i el reproductor no pot determinar l\'amplària real del fitxer.';
 $string['extensions'] = 'Extensions: {$a}';
-$string['legacyheading'] = 'Llegat de reproductors multimèdia';
-$string['legacyheading_desc'] = 'Els següents formats no es recomanen per a ús general, se solen utilitzar en instal·lacions intranet amb gestió de clients centralitzada.';
 $string['managemediaplayers'] = 'Gestiona els reproductors multimèdia';
 $string['mediaformats'] = 'Reproductors disponibles';
 $string['mediaformats_desc'] = 'Quan els reproductors estan habilitats, els fitxers multimèdia es poden incrustar mitjançant el filtre dels connectors multimèdia (si està activat) o utilitzant un recurs de Fitxer o URL. Quan no està activat, aquests formats no s\'incrusten i els usuaris poden descarregar-se\'ls o seguir els enllaços a aquests recursos.
 
 Quan dos reproductors admeten el mateix format, habilitar ambdós augmenta la compatibilitat amb diferents dispositius, com ara telèfons mòbils. És possible augmentar la compatibilitat més encara proporcionant diversos fitxers en diferents formats per a un únic àudio o videoclip.';
-$string['mediasettings'] = 'Incrustació de fitxers multimèdia';
 $string['privacy:metadata'] = 'La incrustació de multimèdia no emmagatzema cap dada personal.';
 $string['supports'] = 'Compatibilitat';
 $string['videoextensions'] = 'Vídeo: {$a}';

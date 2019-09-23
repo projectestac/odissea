@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradereport_history', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   gradereport_history
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,9 +32,9 @@ $string['datetime'] = 'Data e hora';
 $string['dateto'] = 'Até';
 $string['deleteditemid'] = 'Eliminar o item com o ID {$a}';
 $string['errajaxsearch'] = 'Erro ao procurar utilizadores';
-$string['eventgradereportviewed'] = 'Relatório de histórico de notas visualizado';
+$string['eventgradereportviewed'] = 'Relatório de histórico das notas visualizado';
 $string['excluded'] = 'Excluir dos cálculos';
-$string['exportfilename'] = 'Histórico de notas';
+$string['exportfilename'] = 'Histórico das notas';
 $string['feedbacktext'] = 'Texto de feedback';
 $string['finishselectingusers'] = 'Terminar seleção de utilizadores';
 $string['foundnusers'] = '{$a} utilizadores encontrados';
@@ -44,11 +44,11 @@ $string['gradeold'] = 'Nota original';
 $string['grader'] = 'Avaliador';
 $string['historyperpage'] = 'Registos do histórico por página';
 $string['historyperpage_help'] = 'Esta configuração determina o número de entradas exibidas por página no relatório do histórico.';
-$string['history:view'] = 'Visualizar o histórico de notas';
+$string['history:view'] = 'Visualizar o histórico das notas';
 $string['loadmoreusers'] = 'Carregar mais utilizadores...';
-$string['pluginname'] = 'Histórico de notas';
-$string['preferences'] = 'Preferências do histórico de notas';
-$string['privacy:metadata'] = 'O Relatório de histórico de notas mostra apenas dados armazenados noutros locais';
+$string['pluginname'] = 'Histórico das notas';
+$string['preferences'] = 'Preferências do histórico das notas';
+$string['privacy:metadata'] = 'O Relatório de histórico das notas mostra apenas dados armazenados noutros locais';
 $string['revisedonly'] = 'Apenas notas revistas';
 $string['revisedonly_help'] = 'Mostrar apenas as notas que foram revistas. Isto significa que serão listadas apenas as notas que foram alteradas.';
 $string['selectedusers'] = 'Utilizadores selecionados';

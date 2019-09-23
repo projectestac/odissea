@@ -36,6 +36,7 @@
  *  - $CFG->dataroot - Path to moodle data files directory on server's filesystem.
  *  - $CFG->dirroot  - Path to moodle's library folder on server's filesystem.
  *  - $CFG->libdir   - Path to moodle's library folder on server's filesystem.
+ *  - $CFG->backuptempdir  - Path to moodle's backup temp file directory on server's filesystem.
  *  - $CFG->tempdir  - Path to moodle's temp file directory on server's filesystem.
  *  - $CFG->cachedir - Path to moodle's cache directory on server's filesystem (shared by cluster nodes).
  *  - $CFG->localcachedir - Path to moodle's local cache directory (not shared by cluster nodes).
@@ -190,6 +191,11 @@ $CFG->libdir = $CFG->dirroot .'/lib';
 // Allow overriding of tempdir but be backwards compatible
 if (!isset($CFG->tempdir)) {
     $CFG->tempdir = "$CFG->dataroot/temp";
+}
+
+// Allow overriding of backuptempdir but be backwards compatible
+if (!isset($CFG->backuptempdir)) {
+    $CFG->backuptempdir = "$CFG->tempdir/backup";
 }
 
 // Allow overriding of cachedir but be backwards compatible
@@ -600,7 +606,6 @@ require_once($CFG->libdir .'/moodlelib.php');       // Other general-purpose fun
 require_once($CFG->libdir .'/enrollib.php');        // Enrolment related functions
 require_once($CFG->libdir .'/pagelib.php');         // Library that defines the moodle_page class, used for $PAGE
 require_once($CFG->libdir .'/blocklib.php');        // Library for controlling blocks
-require_once($CFG->libdir .'/eventslib.php');       // Events functions
 require_once($CFG->libdir .'/grouplib.php');        // Groups functions
 require_once($CFG->libdir .'/sessionlib.php');      // All session and cookie related stuff
 require_once($CFG->libdir .'/editorlib.php');       // All text editor related functions and classes
@@ -650,12 +655,18 @@ try{
 }
 
 // CODI ORIGINAL
-// setup_DB();
+/*
+setup_DB();
+*/
 // FI PATCH
 
 if (PHPUNIT_TEST and !PHPUNIT_UTIL) {
-    // make sure tests do not run in parallel
-    test_lock::acquire('phpunit');
+    // Make sure tests do not run in parallel.
+    $suffix = '';
+    if (phpunit_util::is_in_isolated_process()) {
+        $suffix = '.isolated';
+    }
+    test_lock::acquire('phpunit', $suffix);
     $dbhash = null;
     try {
         if ($dbhash = $DB->get_field('config', 'value', array('name'=>'phpunittest'))) {
@@ -956,53 +967,8 @@ if (!empty($CFG->debugvalidators) and !empty($CFG->guestloginbutton)) {
 // LogFormat to get the current logged in username in moodle.
 // Alternatvely for other web servers a header X-MOODLEUSER can be set which
 // can be using in the logfile and stripped out if needed.
-if ($USER && isset($USER->username)) {
-    $logmethod = '';
-    $logvalue = 0;
-    if (!empty($CFG->apacheloguser) && function_exists('apache_note')) {
-        $logmethod = 'apache';
-        $logvalue = $CFG->apacheloguser;
-    }
-    if (!empty($CFG->headerloguser)) {
-        $logmethod = 'header';
-        $logvalue = $CFG->headerloguser;
-    }
-    if (!empty($logmethod)) {
-        $loguserid = $USER->id;
-        $logusername = clean_filename($USER->username);
-        $logname = '';
-        if (isset($USER->firstname)) {
-            // We can assume both will be set
-            // - even if to empty.
-            $logname = clean_filename($USER->firstname . " " . $USER->lastname);
-        }
-        if (\core\session\manager::is_loggedinas()) {
-            $realuser = \core\session\manager::get_realuser();
-            $logusername = clean_filename($realuser->username." as ".$logusername);
-            $logname = clean_filename($realuser->firstname." ".$realuser->lastname ." as ".$logname);
-            $loguserid = clean_filename($realuser->id." as ".$loguserid);
-        }
-        switch ($logvalue) {
-            case 3:
-                $logname = $logusername;
-                break;
-            case 2:
-                $logname = $logname;
-                break;
-            case 1:
-            default:
-                $logname = $loguserid;
-                break;
-        }
-        if ($logmethod == 'apache') {
-            apache_note('MOODLEUSER', $logname);
-        }
+set_access_log_user();
 
-        if ($logmethod == 'header') {
-            header("X-MOODLEUSER: $logname");
-        }
-    }
-}
 
 // Ensure the urlrewriteclass is setup correctly (to avoid crippling site).
 if (isset($CFG->urlrewriteclass)) {

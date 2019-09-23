@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'completion', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,7 +101,7 @@ $string['completionnotenabledforcourse'] = 'Osaketa ez dago gaituta ikastaro hon
 $string['completionnotenabledforsite'] = 'Osaketa ez dago gaituta gune honetarako';
 $string['completion-n-override'] = 'Osatu gabea ({$a}-(e)k zehaztua)';
 $string['completionondate'] = 'Data';
-$string['completionondatevalue'] = 'Erabiltzaileak matrikulaturik jarraitu behar du data honetan:';
+$string['completionondatevalue'] = 'Ikastaroa osatutzat markatuko deneko data';
 $string['completion-pass'] = 'Osatuta (gutxieneko kalifikazioa lortu dute)';
 $string['completionsettingslocked'] = 'Osaketa-ezarpenak blokeatuta';
 $string['completion-title-manual-n'] = 'Markatu osatutzat: {$a}';
@@ -185,7 +185,7 @@ $string['overallaggregation_any'] = 'Ikastaroa osatuta egongo da HAINBAT baldint
 $string['pending'] = 'Egin gabe';
 $string['periodpostenrolment'] = 'Matrikulatu ondorengo aldia';
 $string['privacy:metadata:completionstate'] = 'Jarduera osatu den edo ez.';
-$string['privacy:metadata:course'] = 'Ikastaroaren identifikatzailea.';
+$string['privacy:metadata:course'] = 'Ikastaroaren identifikatzailea';
 $string['privacy:metadata:coursecompletedsummary'] = 'Ikastaro bateko osatze-irizpideak osatu dituzten ikasleen inguruko informazioa gordetzen du';
 $string['privacy:metadata:coursemoduleid'] = 'Jardueraren IDa';
 $string['privacy:metadata:coursemodulesummary'] = 'Erabiltzaile baten jardueren osatze-datuak gordetzen ditu';
@@ -215,7 +215,7 @@ $string['roleaggregation_all'] = 'Aukeratutako rol GUZTIEK markatu beharko dute 
 $string['roleaggregation_any'] = 'Aukeratutako EDOZEIN rolek markatu beharko du baldintza betetzean';
 $string['roleidnotfound'] = '{$a} ID duen rola ez da aurkitu';
 $string['saved'] = 'Gordeta';
-$string['seedetails'] = 'Xehetasunak ikusi';
+$string['seedetails'] = 'Ikusi xehetasunak';
 $string['select'] = 'Aukeratu';
 $string['self'] = 'Automatikoa';
 $string['selfcompletion'] = 'Auto-osaketa';

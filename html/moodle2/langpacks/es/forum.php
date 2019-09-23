@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,12 +85,15 @@ $string['cleanreadtime'] = 'Hora para marcar mensajes antiguos como leídos';
 $string['clicktosubscribe'] = 'Usted no está suscrito a esta discusión. Haga clic aquí para suscribirse.';
 $string['clicktounsubscribe'] = 'Usted está suscrito a este debate. Haga clic para cancelar la suscripción.';
 $string['completiondiscussions'] = 'El usuario debe crear debates::';
+$string['completiondiscussionsdesc'] = 'El estudiante debe crear al menos {$a} discusión(es)';
 $string['completiondiscussionsgroup'] = 'Requerir debates';
 $string['completiondiscussionshelp'] = 'se requieren debates para completar';
 $string['completionposts'] = 'El usuario debe enviar debates o réplicas:';
+$string['completionpostsdesc'] = 'El estudiante debe publicar al menos {$a} discusión(es) o respuesta(s)';
 $string['completionpostsgroup'] = 'Requerir mensajes';
 $string['completionpostshelp'] = 'se requieren debates o réplicas para completar';
 $string['completionreplies'] = 'El usuario debe enviar réplicas:';
+$string['completionrepliesdesc'] = 'El estudiante debe publicar al menos {$a} respuesta(s)';
 $string['completionrepliesgroup'] = 'Requerir réplicas';
 $string['completionreplieshelp'] = 'se requieren réplicas para completar';
 $string['configcleanreadtime'] = 'Hora del día para limpiar mensajes antiguos de la tabla de lectura.';
@@ -138,16 +141,17 @@ $string['disallowsubscription_help'] = 'Este foro ha sido configurado de tal for
 $string['discussion'] = 'Tema';
 $string['discussionlocked'] = 'Este tema ha sido bloqueado así que no podrás responder en el.';
 $string['discussionlockingdisabled'] = 'No bloquear discusiones';
-$string['discussionlockingheader'] = 'Bloqueando discusión';
+$string['discussionlockingheader'] = 'Bloqueo de discusión';
 $string['discussionmoved'] = 'Este tema se ha movido a \'{$a}\'.';
 $string['discussionmovedpost'] = 'Esta discusión ha sido trasladada a <a href="{$a->discusshref}">aquí</a> en el foro <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Denominación';
 $string['discussionnownotsubscribed'] = '{$a->name} NO recibirá notificaciones de las nuevas publicaciones en \'{$a->discussion}\' de \'{$a->forum}\'';
-$string['discussionnowsubscribed'] = '{$a->name}  recibirá notificación de nuevas aportaciones en \'{$a->discussion}\' de\'{$a->forum}\'';
+$string['discussionnowsubscribed'] = '{$a->name}  recibirá notificación de nuevas aportaciones en \'{$a->discussion}\' de \'{$a->forum}\'';
 $string['discussionpin'] = 'Fijar';
 $string['discussionpinned'] = 'Fijado';
 $string['discussionpinned_help'] = 'Los debates fijados aparecerán en la parte superior del foro.';
 $string['discussions'] = 'Debates';
+$string['discussionsplit'] = 'La discusión ha sido separada';
 $string['discussionsstartedby'] = 'Debate comenzado por {$a}';
 $string['discussionsstartedbyrecent'] = 'Debate recientemente comenzado por {$a}';
 $string['discussionsstartedbyuserincourse'] = 'Discusiones iniciadas por {$a->fullname} en {$a->coursename}';
@@ -170,9 +174,6 @@ $string['edit'] = 'Editar';
 $string['editedby'] = 'Editado por {$a->name} - envío original {$a->date}';
 $string['editedpostupdated'] = '{$a} mensajes actualizados';
 $string['editing'] = 'Editando';
-$string['emaildigest_0'] = 'Recibirás un e-mail por cada mensaje del foro.';
-$string['emaildigest_1'] = 'Recibirá un resumen de correo diario con el contenido completo de cada mensaje del foro';
-$string['emaildigest_2'] = 'Recibirá un resumen de correo diario con el asunto de cada mensaje del foro';
 $string['emaildigestcompleteshort'] = 'Mensajes completos';
 $string['emaildigestdefault'] = 'Por defecto ({$a})';
 $string['emaildigestoffshort'] = 'Sin resumen';
@@ -184,8 +185,6 @@ $string['emaildigesttype_help'] = 'Tipo de notificación que recibirá de cada f
 * Sin resumen - Recibirá un correo por cada mensaje del foro;
 * Resumen - mensajes completos- Recibirá un resumen de correo diario con el contenido completo de cada mensaje del foro;
 * Resumen - sólo asunto- Recibirá un resumen de correo diario sólo con el asunto de cada mensaje del foro.';
-$string['emaildigestupdated'] = 'El tipo de resumen de correo ha sido cambiado a  \'{$a->maildigesttitle}\' para el foro \'{$a->forum}\'. {$a->maildigestdescription}';
-$string['emaildigestupdated_default'] = 'Sus ajustes de perfil por defecto para \'{$a->maildigesttitle}\' han sido usados para el foro \'{$a->forum}\'. {$a->maildigestdescription}.';
 $string['emptymessage'] = 'Algo va mal con su mensaje. Tal vez lo haya enviado en blanco o el archivo adjunto, si lo hay, es demasiado grande. Sus cambios NO se han guardado.';
 $string['erroremptymessage'] = 'El mensaje no puede estar vacío';
 $string['erroremptysubject'] = 'El asunto del mensaje no puede estar vacío.';
@@ -228,6 +227,7 @@ $string['forum:addquestion'] = 'Añadir pregunta';
 $string['forum:allowforcesubscribe'] = 'Permitir la suscripción forzosa.';
 $string['forumauthorhidden'] = 'Autor (oculto)';
 $string['forumblockingalmosttoomanyposts'] = 'Usted se está aproximando al límite permitido de mensajes. Ha enviado {$a->numposts} mensajes en el último {$a->blockperiod} y el límite está en {$a->blockafter} mensajes.';
+$string['forumbodydeleted'] = 'El contenido de esta publicación en el foro ha sido borrado y ya no puede accederse a él.';
 $string['forumbodyhidden'] = 'Usted no puede ver este mensaje, probablemente debido a que aún no ha enviado mensajes a esta discusión, a que el margen de tiempo de edición no ha pasado todavía, a que el debate todavía no ha comentado o a que el debate ya ha expirado.';
 $string['forum:canoverridediscussionlock'] = 'Contestar a discusiones bloqueadas';
 $string['forum:canposttomygroups'] = 'Puede publicar en todos los grupos en los que tiene acceso';
@@ -251,6 +251,7 @@ $string['forum:replypost'] = 'Replicar a mensajes';
 $string['forums'] = 'Foros';
 $string['forum:splitdiscussions'] = 'Dividir debates';
 $string['forum:startdiscussion'] = 'Comenzar nuevos debates';
+$string['forumsubjectdeleted'] = 'Esta publicación en el foro ha sido borrada';
 $string['forumsubjecthidden'] = 'Tema (oculto)';
 $string['forumtracked'] = 'Se están rastreando los mensajes no leídos';
 $string['forumtrackednot'] = 'Los mensajes no leídos no se están rastreando';
@@ -301,6 +302,7 @@ $string['manydiscussions'] = 'Debates por página';
 $string['markalldread'] = 'Marcar como leídos todos los mensajes de este debate.';
 $string['markallread'] = 'Marcar como leídos todos los mensajes de este foro.';
 $string['markasreadonnotification'] = 'Cuando se envía la notificación de un mensaje del foro';
+$string['markasreadonnotification_help'] = 'Cuando es notificado de una publicación en el foro,  puede elegir si debería de marcar la publicación como leída para el propósito de rastreo del foro.';
 $string['markasreadonnotificationno'] = 'No marcar el hilo como leído';
 $string['markasreadonnotificationyes'] = 'Marcar el hilo como leído';
 $string['markread'] = 'Marcar como leído';
@@ -389,7 +391,7 @@ $string['nowallsubscribed'] = 'Todos los foros en {$a} están suscritos.';
 $string['nowallunsubscribed'] = 'Todos los foros en {$a} están dados de baja.';
 $string['nownotsubscribed'] = '{$a->name} no recibirá notificaciones de nuevas aportaciones al foro \'{$a->forum}\'';
 $string['nownottracking'] = '{$a->name} ya no está rastreando \'{$a->forum}\'.';
-$string['nowsubscribed'] = '{$a->name} recibirá notificación de nuevas aportaciones en {$a->forum}\' por correo.';
+$string['nowsubscribed'] = '{$a->name} recibirá notificación de nuevas aportaciones en \'{$a->forum}\'';
 $string['nowtracking'] = '{$a->name} está rastreando \'{$a->forum}\' en este momento.';
 $string['numposts'] = '{$a} mensajes';
 $string['olderdiscussions'] = 'Mensajes anteriores';
@@ -412,9 +414,6 @@ $string['postbymailsuccess'] = 'Felicidades, su publicación en el foro con el a
 $string['postbymailsuccess_html'] = 'Felicidades, su <a href="{$a->discussionurl}">publicación en el foro</a> con el asunto "{$a->subject}" ha sido publicada con éxito.';
 $string['postbyuser'] = '{$a->post} por {$a->user}';
 $string['postincontext'] = 'Ver el mensaje en su contexto';
-$string['postmailinfo'] = 'Esta es una copia del mensaje publicado en el sitio web {$a}.
-
-Para responder a este mensaje haga clic en este enlace:';
 $string['postmailinfolink'] = 'Esta es una copia de un mensaje enviado a {$a->coursename}.
 
 Para responder haga clic en el link: {$a->replylink}';
@@ -432,6 +431,28 @@ $string['posttomygroups_help'] = 'Publica una copia de este mensaje en todos los
 $string['postupdated'] = 'Su mensaje se ha actualizado';
 $string['potentialsubscribers'] = 'Suscriptores potenciales';
 $string['prevdiscussiona'] = 'Debate anterior: {$a}';
+$string['privacy:digesttypepreference'] = 'Ha elegido recibir el siguiente tipo de resumen del foro: "{$a->type}".';
+$string['privacy:discussionsubscriptionpreference'] = 'Ha elegido la siguiente preferencia de suscripción a discusión para este foro: "{$a->preference}"';
+$string['privacy:metadata:forum_digests'] = 'Información acerca de las preferencias del resumen para cada foro.';
+$string['privacy:metadata:forum_digests:maildigest'] = 'La preferencia del resumen.';
+$string['privacy:metadata:forum_digests:userid'] = 'La Id del usuario con la preferencia del resumen.';
+$string['privacy:metadata:forum_discussions:name'] = 'El nombre de esta discusión, como fue elegido por el autor.';
+$string['privacy:metadata:forum_posts'] = 'Información acerca de las preferencias del resumen para cada foro.';
+$string['privacy:metadata:forum_posts:parent'] = 'La discusión paterna a la cual se respondió.';
+$string['privacy:metadata:forum_read'] = 'Información acerca de cuales publicaciones han sido leídas por el usuario.';
+$string['privacy:metadata:forum_read:lastread'] = 'La hora más reciente cuando la publicación fue leída.';
+$string['privacy:metadata:forum_track_prefs'] = 'Información acerca de para cuales foros el usuario ha elegido monitorear las lecturas.';
+$string['privacy:metadata:forum_track_prefs:forumid'] = 'El foro que tiene seguimiento de lectura habilitado.';
+$string['privacy:metadata:forum_track_prefs:userid'] = 'La ID del usuario con el que se relaciona la preferencia de monitoreo del foro.';
+$string['privacy:metadata:preference:autosubscribe'] = 'Si es que se suscribe o no a discusiones al contestar a publicaciones adentro de elllas.';
+$string['privacy:metadata:preference:maildigest'] = 'La preferencia de resumen de Email para todo el sitio';
+$string['privacy:metadata:preference:markasreadonnotification'] = 'Si es que se marca o no publicaciones de foro como leídas al recibirlas como mensajes.';
+$string['privacy:metadata:preference:trackforums'] = 'Si es que se habilita o no seguimiento de lectura.';
+$string['privacy:postwasread'] = 'Esta publicación fue leída inicialmente en {$a->firstread} y leída más recientemente en {$a->lastread}';
+$string['privacy:readtrackingdisabled'] = 'Ha elegido no monitorear la publicaciones ha leído dentro de este foro.';
+$string['privacy:request:delete:discussion:name'] = 'Eliminar a solicitud del autor';
+$string['privacy:request:delete:post:message'] = 'El contenido de esta publicación ha sido eliminado a solicitud de su autor.';
+$string['privacy:request:delete:post:subject'] = 'Eliminar a solicitud del autor';
 $string['processingdigest'] = 'Procesando el resumen por correo para el usuario {$a}';
 $string['processingpost'] = 'Procesando {$a}';
 $string['prune'] = 'Dividir';
@@ -476,7 +497,7 @@ $string['searchdatefrom'] = 'Los mensajes deben ser posteriores a la fecha';
 $string['searchdateto'] = 'Los mensajes deben ser anteriores a la fecha';
 $string['searchforumintro'] = 'Por favor, introduzca las condiciones de la búsqueda en uno o en varios de los siguientes campos:';
 $string['searchforums'] = 'Buscar en los foros';
-$string['searchfullwords'] = 'Estas palabras deben aparecer exactamente igual';
+$string['searchfullwords'] = 'Estas palabras deberían aparecer como palabras completas';
 $string['searchnotwords'] = 'Estas palabras NO deben aparecer en el mensaje';
 $string['searcholderposts'] = 'Buscar mensajes antiguos...';
 $string['searchphrase'] = 'Esta frase exacta debe aparecer en el mensaje';
@@ -524,6 +545,7 @@ Hay 4 modos de suscripción:
 Nota: Cualquier cambio en el modo de suscripción sólo afectará a los usuarios que se registren en el curso en el futuro y no a los usuarios existentes.';
 $string['subscriptionoptional'] = 'Suscripción opcional';
 $string['subscriptions'] = 'Suscripciones';
+$string['tagsdeleted'] = 'Marcas del foro que han sido eliminadas';
 $string['thisforumisthrottled'] = 'Este foro tiene un número limitado de mensajes para enviar en un cierto período de tiempo. El ajuste normalmente se hace en {$a->blockafter} mensaje(s) en {$a->blockperiod}';
 $string['timedhidden'] = 'Estado por período: Oculto para los estudiantes';
 $string['timedposts'] = 'Mensajes con asignación de tiempo';

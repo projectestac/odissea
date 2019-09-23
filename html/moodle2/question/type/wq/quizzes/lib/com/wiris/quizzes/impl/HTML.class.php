@@ -45,6 +45,9 @@ class com_wiris_quizzes_impl_HTML {
 			}
 		}
 	}
+	public function openPWithClass($className) {
+		$this->open("p", new _hx_array(array(new _hx_array(array("class", $className)))));
+	}
 	public function openP() {
 		$this->open("p", null);
 	}

@@ -603,6 +603,7 @@ M.util.init_block_hider = function(Y, config) {
                         //************ FI
                         hide.on('keypress', this.updateStateKey, this, true);
                         hide.on('click', this.updateState, this, true);
+
                         //XTEC ************ MODIFICAT - Change image in blocks to use HTML entity instead
                         //2012.07.31 @aginard (code developed by @abachill)
                         show = Y.Node.create('<span>&#9660;</span>')

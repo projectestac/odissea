@@ -49,15 +49,6 @@
 defined('MOODLE_INTERNAL') || die;
 
 /**
- * Returns all other caps used in module.
- *
- * @return array
- */
-function lti_get_extra_capabilities() {
-    return array('moodle/site:accessallgroups');
-}
-
-/**
  * List of features supported in URL module
  * @param string $feature FEATURE_xx constant for requested feature
  * @return mixed True if module supports feature, false if not, null if doesn't know
@@ -209,6 +200,7 @@ function lti_delete_instance($id) {
     $cm = get_coursemodule_from_instance('lti', $id);
     \core_completion\api::update_completion_date_event($cm->id, 'lti', $id, null);
 
+    // We must delete the module record after we delete the grade item.
     return $DB->delete_records("lti", array("id" => $basiclti->id));
 }
 
@@ -231,28 +223,6 @@ function lti_get_shortcuts($defaultitem) {
 
     // Add items defined in ltisource plugins.
     foreach (core_component::get_plugin_list('ltisource') as $pluginname => $dir) {
-        if ($moretypes = component_callback("ltisource_$pluginname", 'get_types')) {
-            // Callback 'get_types()' in 'ltisource' plugins is deprecated in 3.1 and will be removed in 3.5, TODO MDL-53697.
-            debugging('Deprecated callback get_types() is found in ltisource_' . $pluginname .
-                ', use get_shortcuts() instead', DEBUG_DEVELOPER);
-            $grouptitle = get_string('modulenameplural', 'mod_lti');
-            foreach ($moretypes as $subtype) {
-                // Instead of adding subitems combine the name of the group with the name of the subtype.
-                $subtype->title = get_string('activitytypetitle', '',
-                    (object)['activity' => $grouptitle, 'type' => $subtype->typestr]);
-                // Re-implement the logic of get_module_metadata() in Moodle 3.0 and below for converting
-                // subtypes into items in activity chooser.
-                $subtype->type = str_replace('&amp;', '&', $subtype->type);
-                $subtype->name = preg_replace('/.*type=/', '', $subtype->type);
-                $subtype->link = new moodle_url($defaultitem->link, array('type' => $subtype->name));
-                if (empty($subtype->help) && !empty($subtype->name) &&
-                        get_string_manager()->string_exists('help' . $subtype->name, $pluginname)) {
-                    $subtype->help = get_string('help' . $subtype->name, $pluginname);
-                }
-                unset($subtype->typestr);
-                $types[] = $subtype;
-            }
-        }
         // LTISOURCE plugins can also implement callback get_shortcuts() to add items to the activity chooser.
         // The return values are the same as of the 'mod' callbacks except that $defaultitem is only passed for reference and
         // should not be added to the return value.
@@ -661,15 +631,28 @@ function mod_lti_get_fontawesome_icon_map() {
  *
  * @param calendar_event $event
  * @param \core_calendar\action_factory $factory
+ * @param int $userid User id to use for all capability checks, etc. Set to 0 for current user (default).
  * @return \core_calendar\local\event\entities\action_interface|null
  */
 function mod_lti_core_calendar_provide_event_action(calendar_event $event,
-                                                      \core_calendar\action_factory $factory) {
-    $cm = get_fast_modinfo($event->courseid)->instances['lti'][$event->instance];
+                                                      \core_calendar\action_factory $factory,
+                                                      int $userid = 0) {
+    global $USER;
+
+    if (empty($userid)) {
+        $userid = $USER->id;
+    }
+
+    $cm = get_fast_modinfo($event->courseid, $userid)->instances['lti'][$event->instance];
+
+    if (!$cm->uservisible) {
+        // The module is not visible to the user for any reason.
+        return null;
+    }
 
     $completion = new \completion_info($cm->get_course());
 
-    $completiondata = $completion->get_data($cm, false);
+    $completiondata = $completion->get_data($cm, false, $userid);
 
     if ($completiondata->completionstate != COMPLETION_INCOMPLETE) {
         return null;

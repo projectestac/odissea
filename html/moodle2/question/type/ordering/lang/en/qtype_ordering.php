@@ -79,6 +79,16 @@ $string['noresponsedetails'] = 'Sorry, no details of the response to this questi
 $string['noscore'] = 'No score';
 $string['notenoughanswers'] = 'Ordering questions must have more than {$a} answers.';
 
+$string['numberingstyle'] = 'Number the choices?';
+$string['numberingstylenone'] = 'No numbering';
+$string['numberingstyle123'] = '1., 2., 3., ...';
+$string['numberingstyleabc'] = 'a., b., c., ...';
+$string['numberingstyleABCD'] = 'A., B., C., ...';
+$string['numberingstyleiii'] = 'i., ii., iii., ...';
+$string['numberingstyleIIII'] = 'I., II., III., ...';
+$string['numberingstyle_desc'] = 'The default numbering style.';
+$string['numberingstyle_help'] = 'Choose the numbering style for draggable items in this question.';
+
 $string['positionx'] = 'Position {$a}';
 $string['pluginname'] = 'Ordering';
 $string['pluginname_help'] = 'Several items are displayed in a jumbled order. The items can be dragged into a meaningful order.';

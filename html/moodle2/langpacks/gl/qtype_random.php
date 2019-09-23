@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_random', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,13 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configselectmanualquestions'] = 'Pode o tipo de pregunta aleatoria seleccionar manualmente unha pregunta cando fai a súa elección aleatoria dunha pregunta a partir dunha categoría?';
+$string['configselectmanualquestions'] = 'Pode o tipo de pregunta ao chou seleccionar manualmente unha pregunta cando fai a súa elección ao chou dunha pregunta a partir dunha categoría?';
 $string['includingsubcategories'] = 'Incluír subcategorías';
-$string['pluginname'] = 'Aleatoria';
-$string['pluginnameediting'] = 'Edición dunha pregunta aleatoria';
+$string['pluginname'] = 'Ao chou';
+$string['pluginnameediting'] = 'Edición dunha pregunta ao chou';
 $string['pluginname_help'] = 'Unha pregunta aleatoria non é un tipo de pregunta senón unha maneira de introducir unha pregunta aleatoriamente escollida a partir dunha categoría especificada dentro dunha actividade.';
 $string['privacy:metadata'] = 'O engadido de pregunta ao chou non almacena ningún dato persoal.';
-$string['randomqname'] = 'Aleatoria ({$a})';
-$string['randomqplusname'] = 'Aleatoria ({$a} e subcategorías)';
+$string['randomqname'] = 'Ao chou ({$a})';
+$string['randomqnamefromtop'] = 'Pregunta aleatoria defectuosa! Elimine esta pregunta.';
+$string['randomqnamefromtoptags'] = 'Pregunta aleatoria defectuosa! Elimine esta pregunta.';
+$string['randomqnametags'] = 'Ao chou ({$a->category}, etiquetas: {$a->tags})';
+$string['randomqplusname'] = 'Ao chou ({$a} e subcategorías)';
+$string['randomqplusnamecourse'] = 'Ao chou (calquera categoría neste curso)';
+$string['randomqplusnamecoursecat'] = 'Ao chou (Calquera categoría dentro da categoría de curso {$a})';
+$string['randomqplusnamecoursecattags'] = 'Ao chou (Calquera categoría dentro da categoría de curso {$a->category}, etiquetas: {$a->tags})';
+$string['randomqplusnamecoursetags'] = 'Ao chou (calquera categoría neste curso, etiquetas: {$a->tags})';
+$string['randomqplusnamemodule'] = 'Ao chou (calquera categoría nesta proba)';
+$string['randomqplusnamemoduletags'] = 'Ao chou (calquera categoría nesta proba, etiquetas: {$a->tags})';
+$string['randomqplusnamesystem'] = 'Ao chou (Calquera categoría de nivel do sistema)';
+$string['randomqplusnamesystemtags'] = 'Ao chou (Calquera categoría de nivel do sistema, etiquetas: {$a->tags})';
+$string['randomqplusnametags'] = 'Ao chou ({$a->category} e subcategorías, etiquetas: {$a->tags})';
 $string['selectedby'] = '{$a->questionname} seleccionada por {$a->randomname}';
-$string['selectmanualquestions'] = 'As preguntas aleatorias poden ser preguntas cualificadas manualmente';
+$string['selectmanualquestions'] = 'As preguntas ao chou poden ser preguntas cualificadas manualmente';

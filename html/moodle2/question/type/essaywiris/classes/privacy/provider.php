@@ -22,7 +22,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace qtype_esssay\privacy;
+namespace qtype_essaywiris\privacy;
 
 defined('MOODLE_INTERNAL') || die();
 

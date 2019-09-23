@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,5 +67,5 @@ $string['restrictbygroup'] = 'Προσθέστε περιορισμό πρόσβ
 $string['setheading'] = '{$a->number} Σετ από {$a->count} περιορισμό(ούς)';
 $string['shown_all'] = 'Εμφανίζεται σκιασμένο εάν ο χρήστης δεν ικανοποιεί τις συνθήκες';
 $string['shown_individual'] = 'Εμφανίζεται σκιασμένο εάν ο χρήστης δεν ικανοποιεί αυτή την συνθήκη';
-$string['show_verb'] = 'Πατήστε για εμφάνιση';
+$string['show_verb'] = 'Πατήστε για εμφάνιση σκιασμένων';
 $string['unknowncondition'] = 'Άγνωστη συνθήκη (το πρόσθετο συνθήκης έχει διαγραφεί)';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,11 +40,14 @@ $string['commentindex'] = 'Índice de comentarios';
 $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'No se pudo guardar la página {$a}';
 $string['currentstamp'] = 'Sello';
+$string['default'] = 'Habilitado por defecto';
+$string['default_help'] = 'Si se activa la opcion, este método de retroalimentación estará habilitado por omisión para todas las tareas nuevas.';
 $string['deleteannotation'] = 'Eliminar anotación';
 $string['deletecomment'] = 'Eliminar comentario';
 $string['deletefeedback'] = 'Borrar retroalimentación del PDF';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'Descargar retroalimentación PDF';
+$string['draftchangessaved'] = 'Borrador de anotaciones guardado';
 $string['drag'] = 'Arrastrar';
 $string['editpdf'] = 'Anotación PDF';
 $string['editpdf_help'] = 'Editar el PDF enviado por el alumno escribiendo anotaciones, dibujos o sellos directamente desde el navegador obteniendo como resultado otro PDF modificado descargable.';
@@ -52,6 +55,7 @@ $string['enabled'] = 'Anotación PDF';
 $string['enabled_help'] = 'Si está activado, el profesor podrá crear archivos PDF con anotaciones cuando realice las correcciones. El profesor podrá añadir comentarios, dibujos y sellos directamente sobre el trabajo de los estudiantes. La anotación se realiza en el navegador y no se requiere ningún software adicional.';
 $string['errorgenerateimage'] = 'Error generando imagen con ghostscript, información del error: {$a}';
 $string['errorpdfpage'] = 'Se ha producido un error generando esta página.';
+$string['expcolcomments'] = 'Expandir/colapsar todos los comentarios';
 $string['filter'] = 'Filtrar comentarios...';
 $string['generatefeedback'] = 'Generar retroalimentación PDF';
 $string['generatingpdf'] = 'Generando archivo PDF...';
@@ -69,10 +73,13 @@ $string['output'] = 'Salida:';
 $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Página {$a}';
 $string['pagexofy'] = 'Página {$a->page} de {$a->total}';
+$string['partialwarning'] = 'Algunos archivos en este envío sólo pueden ser accedidos en forma directa.';
 $string['pathtogspathdesc'] = 'Por favor tenga en cuenta que la anotación de PDF requiere que la ruta de ghostscript sea especificada en {$a}.';
 $string['pen'] = 'Pluma';
 $string['pluginname'] = 'Anotación PDF';
 $string['preparesubmissionsforannotation'] = 'Preparar los envíos para la anotación';
+$string['privacy:metadata:colourpurpose'] = 'Color del comentario o anotación';
+$string['privacy:metadata:conversionpurpose'] = 'Los archivos son convertidos a PDFs para permitir las anotaciones.';
 $string['privacy:metadata:userid'] = 'Identificador del usuario';
 $string['rectangle'] = 'Rectángulo';
 $string['red'] = 'Rojo';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcached', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,12 +76,12 @@ servername:port:weight
 Wenn unten *Cluster-Server aktivieren* ausgewählt ist, darf nur ein Server angegeben sein. Normalerweise ist das ein Name, der sich auf die lokale Maschine bezieht, z.B. 127.0.0.1 oder localhost.';
 $string['sessionhandlerconflict'] = 'Warnung: Eine Memcached Instanz ({$a}) ist so konfiguriert, dass sie den gleichen Memcached Server wie Sessons verwendet. Das Löschen aller Caches wird gleichzeitig auch alle Sessions löschen.';
 $string['setservers'] = 'Server auswählen';
-$string['setservers_help'] = 'Dies ist die Liste der Server, die aktualisiert werden wenn Daten im Cache verändert werden.  Aufgeführt wird der vollständige Name für jeden Server im Pool.
-Es **müssen** die Server, die unter *Server* oben enthalten sein, auch wenn es einen anderen Hostnamen gibt.
+$string['setservers_help'] = 'In der Liste sind die zu aktualisierenden Server aufgeführt, wenn Daten im Cache verändert werden, u.z. mit vollständigem Namen für jeden Server im Pool.
+Es **muss** den Server enthalten, der unter *Server* oben gelistet, möglicherweise mit einem anderen Hostnamen.
 In jeder Zeile wird ein Server mit Serveradresse und optional einem Port eingetragen.
-Wenn kein Port eingetragen wird, wird Port 11211 verwendet.
+Wenn kein Port eingetragen wird, wird standardmäßig Port 11211 verwendet.
 
-Zum Beispiel:
+Beispiel:
 <pre>
 server.url.com
 ipaddress:port

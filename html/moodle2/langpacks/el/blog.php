@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['autotags'] = 'Προσθέστε αυτές τις ετικέτες';
 $string['autotags_help'] = 'Εισάγετε μία ή περισσότερες τοπικές ετικέτες (χωρισμένες με κόμμα) που επιθυμείτε να προσθέσετε αυτόματα σε κάθε καταχώρηση ιστολογίου που αντιγράφεται από το εξωτερικό ιστολόγιο στο τοπικό σας ιστολόγιο.';
 $string['backupblogshelp'] = 'Αν ενεργοποιηθεί, τα ιστολόγια θα συμπεριλαμβάνονται στα αυτόματα αντίγραφα ασφαλείας του ΙΣΤΟΤΟΠΟΥ';
 $string['blockexternalstitle'] = 'Εξωτερικά ιστολόγια';
-$string['blocktitle'] = 'Τίτλος του μπλοκ Ετικέτες ιστολογίων';
 $string['blog'] = 'Ιστολόγιο';
 $string['blogaboutthis'] = 'Ιστολόγιο για τον τύπο {$a->type}';
 $string['blogaboutthiscourse'] = 'Προσθέστε μια καταχώρηση για αυτό το μάθημα';
@@ -117,7 +116,7 @@ $string['invalidgroupid'] = 'Μη έγκυρο αναγνωριστικό ομά
 $string['invalidurl'] = 'Αυτή η διεύθυνση URL δεν είναι προσβάσιμη';
 $string['linktooriginalentry'] = 'Σύνδεσμος με την αρχική ανάρτηση (ιστολογίου)';
 $string['maxexternalblogsperuser'] = 'Μέγιστος αριθμός εξωτερικών ιστολογίων ανά χρήστη';
-$string['myprofileuserblogs'] = 'Προβολή όλων των αναρτήσεων (ιστολογίου)';
+$string['myprofileuserblogs'] = 'Εμφάνιση όλων των αναρτήσεων (ιστολογίου)';
 $string['name'] = 'Όνομα';
 $string['name_help'] = 'Εισάγετε ένα περιγραφικό όνομα για το εξωτερικό σας ιστολόγιο. (Αν δεν εισάγετε όνομα, θα χρησιμοποιηθεί ο τίτλος του εξωτερικού σας ιστολογίου).';
 $string['noentriesyet'] = 'Δεν υπάρχουν ορατές καταχωρήσεις ακόμα';
@@ -178,7 +177,7 @@ $string['relatedblogentries'] = 'Σχετικές αναρτήσεις ιστο�
 $string['retrievedfrom'] = 'Ανακτήθηκε από';
 $string['rssfeed'] = 'Τροφοδοσία RSS Ιστολογίου';
 $string['searchterm'] = 'Αναζήτηση: {$a}';
-$string['settingsupdatederror'] = 'Προέκυψε σφάλμα κατά την ενημέρωση της ρύθμισης προτίμησης ιστολογίου';
+$string['settingsupdatederror'] = 'Παρουσιάστηκε κάποιο σφάλμα. Η ρύθμιση προτίμησης ιστολογίου δεν μπόρεσε να ενημερωθεί.';
 $string['siteblogdisable'] = 'Το ιστολόγιο ιστοτόπου είναι απενεργοποιημένο';
 $string['siteblogheading'] = 'Ιστολόγιο ιστοτόπου';
 $string['siteblogs'] = 'Όλοι οι χρήστες του ιστοτόπου μπορούν να δουν όλα τα ιστολόγια';
@@ -199,19 +198,19 @@ $string['userblogentries'] = 'Αναρτήσεις ιστολογίου από {
 $string['valid'] = 'Έγκυρος';
 $string['viewallblogentries'] = 'Όλες οι αναρτήσεις σχετικά με αυτό (το ιστολόγιο) {$a}';
 $string['viewallmodentries'] = 'Δείτε όλες τις καταχωρήσεις σχετικά με αυτό (το άρθρωμα) {$a->type}';
-$string['viewallmyentries'] = 'Προβολή όλων των καταχωρήσεων μου';
+$string['viewallmyentries'] = 'Εμφάνιση όλων των καταχωρήσεων μου';
 $string['viewblogentries'] = 'Ενδείξεις σχετικά με αυτό (το ιστολόγιο) {$a->type}';
 $string['viewblogsfor'] = 'Δείτε όλες τις καταχωρήσεις για...';
 $string['viewcourseblogs'] = 'Δείτε όλες τις καταχωρήσεις για αυτό το μάθημα';
-$string['viewentriesbyuseraboutcourse'] = 'Προβολή καταχωρήσεων σχετικά με αυτό το μάθημα από {$a}';
+$string['viewentriesbyuseraboutcourse'] = 'Εμφάνιση καταχωρήσεων σχετικά με αυτό το μάθημα από {$a}';
 $string['viewgroupblogs'] = 'Δείτε τις καταχωρήσεις για την ομάδα...';
 $string['viewgroupentries'] = 'Καταχωρήσεις ομάδας';
 $string['viewmodblogs'] = 'Δείτε τις καταχωρήσεις για το άρθρωμα...';
 $string['viewmodentries'] = 'Καταχωρήσεις αρθρώματος';
-$string['viewmyentries'] = 'Οι εγγραφές μου';
+$string['viewmyentries'] = 'Οι καταχωρήσεις μου';
 $string['viewmyentriesaboutcourse'] = 'Δείτε τις καταχωρήσεις μου για αυτό το μάθημα';
 $string['viewmyentriesaboutmodule'] = 'Δείτε τις καταχωρήσεις μου για αυτό (το άρθρωμα) {$a}';
-$string['viewsiteentries'] = 'Προβολή όλων των καταχωρήσεων';
+$string['viewsiteentries'] = 'Εμφάνιση όλων των καταχωρήσεων';
 $string['viewuserentries'] = 'Δείτε όλες τις καταχωρήσεις του/της {$a}';
 $string['worldblogs'] = 'Ο κόσμος μπορεί να δει καταχωρήσεις που έχουν οριστεί ως προσβάσιμες από τον κόσμο';
 $string['wrongexternalid'] = 'Λανθασμένο αναγνωριστικό εξωτερικού ιστολογίου';

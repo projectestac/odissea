@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_memberships', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'ltiservice_memberships', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   ltiservice_memberships
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allow'] = 'Χρησιμοποιήστε αυτήν την υπηρεσία για να ανακτήσετε τις πληροφορίες των μελών σύμφωνα με τις ρυθμίσεις απορρήτου';
+$string['ltiservice_memberships'] = 'IMS LTI εγγεγραμμένοι:';
+$string['ltiservice_memberships_help'] = 'Αφήστε το εργαλείο να ανακτήσει τις πληροφορίες του μέλους από το μάθημα χρησιμοποιώντας την υπηρεσία μελών IMS LTI Membership. Θα ισχύουν οι ρυθμίσεις απορρήτου.';
+$string['notallow'] = 'Μην χρησιμοποιείτε αυτήν την υπηρεσία';
 $string['pluginname'] = 'Υπηρεσία LTI εγγεγραμμένων';
 $string['privacy:metadata:email'] = 'Η διεύθυνση ηλεκτρονικού ταχυδρομείου του χρήστη που χρησιμοποιεί τον καταναλωτή LTI.';
 $string['privacy:metadata:externalpurpose'] = 'Αυτές οι πληροφορίες αποστέλλονται σε έναν εξωτερικό πάροχο LTI.';

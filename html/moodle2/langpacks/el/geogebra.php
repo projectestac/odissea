@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'geogebra', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   geogebra
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,30 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attempts'] = 'Προσπάθειες';
+$string['comment'] = 'Σχόλιο';
+$string['contentheader'] = 'Περιεχόμενο';
+$string['description'] = 'Περιγραφή';
+$string['duedate'] = 'Οφειλόμενη ημερομηνία';
+$string['duration'] = 'Διάρκεια';
+$string['filetype'] = 'Τύπος';
+$string['geogebraurl'] = 'Διεύθυνση URL';
+$string['grade'] = 'Βαθμός';
+$string['gradeit'] = 'Βαθμός';
+$string['height'] = 'Ύψος';
+$string['language'] = 'Γλώσσα';
+$string['name'] = 'Όνομα';
+$string['noattempts'] = '-';
 $string['notopenyet'] = 'Συγγνώμη, αυτή η δραστηριότητα δεν είναι διαθέσιμη μέχρι {$a}';
+$string['pluginname'] = 'GeoGebra';
+$string['previewtab'] = 'Προεπισκόπηση';
+$string['results'] = 'Αποτελέσματα';
+$string['resultstab'] = 'Αποτελέσματα';
+$string['save'] = 'Αποθήκευση';
+$string['savechanges'] = 'Αποθήκευση αλλαγών';
+$string['settings'] = 'Ρυθμίσεις';
+$string['total'] = 'Σύνολο';
+$string['view'] = 'Προβολή';
+$string['viewattempt'] = 'Προβολή';
+$string['viewtab'] = 'Προβολή';
+$string['width'] = 'Πλάτος';

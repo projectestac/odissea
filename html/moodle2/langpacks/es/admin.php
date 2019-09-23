@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'admin', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,16 +42,17 @@ $string['adminseesall'] = 'Los administradores ven todo';
 $string['adminseesallevents'] = 'Los administradores ven todos los eventos';
 $string['adminseesownevents'] = 'Los administradores son como los demás usuarios';
 $string['advancedfeatures'] = 'Características avanzadas';
-$string['agedigitalconsentverification'] = 'Edad digital de verificación de consentimiento';
+$string['agedigitalconsentverification'] = 'Verificación de la edad de consentimiento digital.';
 $string['agedigitalconsentverification_desc'] = 'Habilita la verificación de la edad digital de consentimiento antes de mostrar la página de alta para auto-registrar usuarios. Esto protege a su sitio de menores de edad que se podrían apuntar sin el consentimiento de sus padres o tutores. Los detalles del <a target="_blank" href="{$a}">Contacto para soporte</a> son proporcionados a menores de edad para más asistencia.';
-$string['ageofdigitalconsentmap'] = 'Edad digital para consentimiento';
-$string['ageofdigitalconsentmap_desc'] = 'La edad digital de consentimiento por defecto, y la edad en cualquier país en donde difiere del valor por defecto, pueden ser especificadas aquí. Ingrese cada edad en una nueva línea con el formato: código_del_país, edad (separados por una coma). La edad por defecto está indicada por * en lugar del código_del_país. Los códigos de los países están especificados en ISO 3166-2.';
+$string['ageofdigitalconsentmap'] = 'Edad de consentimiento digital.';
+$string['ageofdigitalconsentmap_desc'] = 'Si hay diferencia entre la edad de consentimiento digital y la edad por defecto en cualquier país, debe ser especificado aquí. Para ello, debe introducir cada edad en una nueva línea con el siguiente formato: código del país, edad (separada por una coma). La edad por defecto se indica con * en lugar del código del país. Los códigos de los países están especificados en la ISO 3166-2.';
 $string['allcountrycodes'] = 'Todos los códigos de país';
 $string['allowattachments'] = 'Permitir archivos adjuntos';
 $string['allowbeforeblock'] = 'La lista autorizada será procesada primero';
 $string['allowbeforeblockdesc'] = 'Por defecto, se procesará en primer lugar la lista de IPs bloqueadas; si la opción se activa, la lista de IPs permitidas se procesará antes que la lista bloqueada.';
 $string['allowblockstodock'] = 'Permitir que los bloques utilicen la barra lateral \'dock\'';
 $string['allowcategorythemes'] = 'Permitir temas por categoría';
+$string['allowcohortthemes'] = 'Permitir temas en cohortes';
 $string['allowcoursethemes'] = 'Permitir estilos en el curso';
 $string['allowedemaildomains'] = 'Dominios de correo electrónico permitidos.';
 $string['allowediplist'] = 'Lista de IP permitidas';
@@ -141,7 +142,10 @@ $string['clitypevaluedefault'] = 'valor del tipo, pulse Enter para utilizar el v
 $string['cliunknowoption'] = 'Opciones no reconocidas:
 {$a}
 Por favor, utilice la opción Ayuda.';
-$string['cliupgradefinished'] = 'Actualización a través de línea de comandos finalizada con éxito.';
+$string['cliupgradedefault'] = 'Nueva configuración: {$a}';
+$string['cliupgradedefaultheading'] = 'Configurando los nuevos valores por defecto';
+$string['cliupgradedefaultverbose'] = 'Nueva configuración: {$a->name}, Valor por defecto: {$a->defaultsetting}';
+$string['cliupgradefinished'] = 'Actualización a través de línea de comandos desde {$a->oldversion} a {$a->newversion} finalizada con éxito.';
 $string['cliupgradenoneed'] = 'No se necesita actualizar la versión instalada {$a}. ¡Gracias!';
 $string['cliyesnoprompt'] = 'escriba s (para sí) o n (para no)';
 $string['commentsperpage'] = 'Comentarios por página';
@@ -157,10 +161,11 @@ $string['configallowassign'] = 'Puede permitir a las personas que tienen los rol
 $string['configallowattachments'] = 'Al habilitar esta opción permitirá que se pueden enviar archivos adjuntos con los mensajes de correo electrónico generados por diversas funcionalidades dentro del sitio, como blogs, foros, o insignias';
 $string['configallowblockstodock'] = 'Si se activa y está soportado por el tema seleccionado, los usuarios pueden optar por mover los bloques a una barra lateral \'dock\' especial';
 $string['configallowcategorythemes'] = 'Si activa esta opción, los temas pueden ajustarse al nivel de la categoría. Esto afectará a todas las categorías y cursos de nivel inferior (\'hijos\') a menos que tengan especificado su propio tema. ATENCIÓN: Habilitar esta opción puede afectar al rendimiento.';
+$string['configallowcohortthemes'] = 'Si activa esto, se podrán asignar temas a nivel de cohorte. Esto afecta a todos los usuarios con solo una cohorte o con varias cohortes que usen el mismo tema.';
 $string['configallowcoursethemes'] = 'Si activa esta opción, se permitirá a los cursos ajustar sus propios temas. Los temas de los cursos pasan por alto cualesquiera otras opciones de tema (sitio, usuario o sesión)';
 $string['configallowedemaildomains'] = 'Liste los dominios de correo electrónico que se permiten divulgar en la sección "De" del correo electrónico saliente. El valor predeterminado "Vacío" utilizará la dirección No-reply para todos los mensajes de correo salientes. Se permite el uso de comodines, por ejemplo *.example.com permitirá que los correos electrónicos sean enviados desde cualquier subdominio de example.com, pero no del propio dominio ejemplo.com. Este último requerirá una entrada independiente en el listado.';
-$string['configallowemailaddresses'] = 'Para restringir las nuevas direcciones de correo electrónico a dominios particulares, introdúzcalas aquí separadas por espacios. El resto de los dominios serán rechazados. Para permitir subdominios agregue el dominio precedido por un \'.\'. Para permitir un dominio raíz junto con sus subdominios agregue el dominio dos veces, una vez precedido con un \'.\' y una vez más sin el punto, por ejemplo: .ourcollege.edu.au ourcollege.edu.au.';
-$string['configallowguestmymoodle'] = 'Si se habilitan los invitados, éstos podrán acceder al Área Personal, de lo contrario, los invitados serán redirigidos a la página principal del sitio.';
+$string['configallowemailaddresses'] = 'Si desea restringir todas las direcciones nuevas de correo a ciertos dominios, lístelos aquí separados por espacios. El resto de los dominios será rechazado. Para permitir subdominios agregue el dominio precedido por \'.\',  por ejemplo, <strong>.ourcollege.edu.au .gov.au</strong>';
+$string['configallowguestmymoodle'] = 'Si se habilita los invitados podrán acceder al Área Personal, de lo contrario los invitados serán redirigidos a la página principal del sitio.';
 $string['configallowobjectembed'] = 'Como medida de seguridad por defecto, los usuarios normales no podrán incrustar en el código HTML objetos multimedia (e.g., Flash) dentro del texto utilizando las marcas explícitas EMBED y OBJECT (si bien podrá hacerse con seguridad utilizando el filtro mediaplugins). Active la opción si desea permitir dichas marcas.';
 $string['configallowoverride'] = 'Puede permitir a las personas que tengan los roles de la izquierda anular algunos de los roles de la columna';
 $string['configallowoverride2'] = 'Seleccione qué rol(es) puede(n) ser invalidado(s) por cada rol de la columna izquierda.<br />Tenga en cuenta que estos ajustes sólo se aplican a los usuarios que tienen la capacidad \'moodle/role:override\' o \'moodle/role:safeoverride\'.';
@@ -170,6 +175,7 @@ $string['configallowuserblockhiding'] = '¿Desea que los usuarios puedan mostrar
 $string['configallowusermailcharset'] = 'Si habilita esta opción, todos los usuarios del sitio podrán especificar su propio juego de caracteres para escribir emails.';
 $string['configallowuserswitchrolestheycantassign'] = 'Por defecto es necesario tener el permiso moodle/role:assign para cambiar roles. Habilitando este ajuste se elimina este requisito de manera que que los roles disponibles en el menú desplegable "Cambiar rol a" estén determinados únicamente por los ajustes de la tabla "Permitir asignación de roles". Se recomienda que los ajustes de la tabla "Permitir asignación de roles" no den  permisos a los usuarios para cambiarse a un rol con más capacidades que las de su rol actual.';
 $string['configallowuserthemes'] = 'Si se activa esta opción, los usuarios podrán elegir sus propios temas. Los temas de los usuarios anulan los temas del sitio (pero no los temas del curso)';
+$string['configallowview'] = 'Seleccionar qué roles podrá ver un usuario, podrá filtrar por, etc. basado en los roles que ya tienen.';
 $string['configallusersaresitestudents'] = 'En lo que concierne a las actividades de la página principal del sitio, ¿deberían todos los usuarios ser considerados como estudiantes? Si la respuesta es "Sí", cualquier usuario con cuenta confirmada podrá participar como estudiante en tales actividades. Si la respuesta es "No", sólo los usuarios que ya participan en al menos un curso podrán tomar parte en las actividades de la página principal. Sólo los administradores y profesores especialmente asignados pueden actuar como profesores en las actividades de la página principal.';
 $string['configauthenticationplugins'] = 'Por favor, seleccione los \'plugins\' de identificación que desea utilizar y dispóngalos en orden de fallo.';
 $string['configautolang'] = 'Detectar idioma por defecto desde el ajuste del navegador. Si está deshabilitado, se utiliza el idioma por defecto del sitio.';
@@ -180,8 +186,10 @@ $string['configcalendarexportsalt'] = 'Esta cadena de caracteres aleatorios se u
 $string['configcookiehttponly'] = 'Habilita la nueva característica de PHP 5.2.0: se instruye a los navegadores para que envíen una \'cookie\' sólo a petición de http reales. Las \'cookies\' no deberían ser accesibles desde lenguajes de script. No todos los navegadores pueden ejecutar esta opción, y podría no ser compatible con el código actual. Ayuda a prevenir algunos tipos de ataques XSS.';
 $string['configcookiesecure'] = 'Si el servidor únicamente acepta conexiones https, se recomienda habilitar el envío de \'cookies\' seguras. Si la opción está activada, asegúrese por favor de que el servidor web no acepta http:// ni ha fijado una redirección permanente a direcciones https:// Cuando una dirección <em>wwwroot</em> no comienza con https:// este ajuste se desactiva automáticamente.';
 $string['configcountry'] = 'Si selecciona un país, dicho país quedará como valor por defecto para nuevos usuarios o cuentas. Para forzar a los usuarios a elegir un país, deje la opción sin seleccionar.';
+$string['configcoursegraceperiodafter'] = 'Clasificar cursos pasados como en progreso por este número de días después de la fecha de fin del curso.';
+$string['configcoursegraceperiodbefore'] = 'Clasificar cursos futuros como en progreso por este número de días antes de la fecha de inicio del curso.';
 $string['configcourseoverviewfilesext'] = 'Lista separada por comas de las extensiones de archivos permitidas en la vista general del curso.';
-$string['configcourseoverviewfileslimit'] = 'Número máximo de archivos que pueden adjuntarse al sumario de un curso.';
+$string['configcourseoverviewfileslimit'] = 'El número de archivos que pueden ser mostrados junto al resumen del curso en la página de lista de cursos. El primer archivo añadido es usado como la imagen del curso en la vista general del curso en los Tableros de los usuarios; los archivos adicionales son mostrados solamente en la página de la lista de cursos.';
 $string['configcourserequestnotify'] = 'Escriba el nombre de usuario a quien se enviará una notificación cuando se solicite un nuevo curso';
 $string['configcourserequestnotify2'] = 'Usuarios a quienes se notificará cuando un campo es requerido. En esta lista figuran únicamente los usuarios que pueden aprobar las solicitudes de curso.';
 $string['configcoursesperpage'] = 'Introduzca el número de cursos a mostrar por página en un listado de cursos.';
@@ -190,17 +198,18 @@ $string['configcronclionly'] = 'Ejecutar el programador de tareas cron desde un 
 $string['configcronremotepassword'] = 'Esto significa que el script cron.php no puede ejecutarse desde un navegador web sin suministrar la contraseña usando la siguiente formato para la URL:<pre>http://site.example.com/admin/cron.php?password=opensesame
 </pre>Si se deja vacío, no se necesita contraseña.';
 $string['configcurlcache'] = 'Tiempo de vigencia (en segundos) de la caché cURL.';
-$string['configcustommenuitems'] = 'Puede configurar un menú personalizado aquí para que se muestre por temas. Cada línea consta de texto de menú, URL de enlace (opcional), título de información sobre herramientas (opcional) y un código de idioma o lista de códigos separados por comas (opcional, para mostrar la línea a los usuarios del idioma especificado únicamente), separados por barras verticales. Las líneas que comienzan con un guión aparecerán como elementos del menú previo de nivel superior, y los divisores se pueden usar agregando una línea de uno o más caracteres cuando se desee. Por ejemplo:
+$string['configcustommenuitems'] = 'Puede diseñar un menú personalizado que se mostrará en las plantillas. Cada línea consta de un texto del menú, un enlace URL (opcional), una descripción del título (opcional), y un código de idioma o una serie de códigos separados por comas (opcional, para mostrar la línea del menú solamente a los usuarios del idioma indicado), separados por la línea horizontal | (AltGr + 1). Puede especificar una estructura de submenús haciendo uso de guiones, y los separadores pueden ser usados añadiendo una línea con uno o más símbolos # cuando se desee. Por ejemplo:
 <pre>
-Comunidad Moodle | https://moodle.org
--Moodle soporte gratuito|https://moodle.org/support
--Documentos de Moodle|http://docs.moodle.org|Documentación de Moodle
--Documentos de Moodle en alemán|http://docs.moodle.org/de|Documentación en alemán|de
-- ###
+Comunidad Moodle|https://moodle.org
+-Soporte gratuito de Moodle |https://moodle.org/support
+-###
 -Desarrollo de Moodle|https://moodle.org/development
+--Documentación de Moodle|http://docs.moodle.org|Documentación de Moodle
+--Documentación Alemán de Moodle|http://docs.moodle.org/de|Documentación en Alemán|de
+#####
 Moodle.com|http://moodle.com/
-</ pre>';
-$string['configcustomusermenuitems'] = 'Puede configurar los contenidos del menú de usuario (con la excepción del enlace de cierre de sesión, que se agrega automáticamente). Cada línea está separada por barras verticales y consta de 1) una cadena en forma de "nombrecadenadeidioma, nombrecomponente" o como texto sin formato, 2) una dirección URL, y 3) un icono, como un icono pix (en la carpeta pix/t, o con el prefijo ../ al comienzo del nombre si el icono está en otra carpeta) o bien como una URL. Los divisores se pueden usar para agregar una línea de uno o más caracteres numerales (#) donde se desee.';
+</pre>';
+$string['configcustomusermenuitems'] = 'Puede configurar los contenidos del menú del usuario (con excepción del enlace para cerrar sesión, que se añade automáticamente). Cada línea está separada por caracteres de | y consiste de 1) una cadena de texto en el formato "nombredecadenadeidioma, nombredelcomponente" o como texto simple, 2) una URL, y 3) un icono que puede ser un icono de pix (dentro de la carpeta pix con la estructura  [nombredesubcarpeta]/[nombredelicono], por ejemplo, i/publish), o como una URL. Pueden usarse divisores añadiendo una línea de uno o más caracteres # donde se quiera.';
 $string['configdbsessions'] = 'Si elige esta opción, se usará la base de datos para almacenar información sobre las sesiones actuales. Tenga en cuenta que la modificación de este ajuste desconectará a todos los usuarios (incluído usted). Si está utilizando MySQL por favor confirme que la opción \'max_allowed_packet\' en my.cnf (o my.ini) es de por lo menos 4M. Otros drivers de sesión pueden ser configurados directamente en config.php, lea el fichero config-dist.php para más información. Esta opción desaparece si usted especifica un driver de sesión en el fichero config.php.';
 $string['configdebug'] = 'Si activa esta opción, se incrementará el error_reporting de PHP, de modo que recibirá más advertencias. Sólo resulta útil para los desarrolladores.';
 $string['configdebugdisplay'] = 'Si activa esta opción, el informe de errores irá a la página HTML. Es práctico pero rompe XHTML, JS, \'cookies\' y cabeceras HTTP en general. Si deshabilita esta opción, se enviarán las salidas a los registros del servidor, permitiendo una mejor depuración. El parámetro de configuración de PHP <b>error_log</b>controla a qué registro va el error.';
@@ -211,7 +220,7 @@ $string['configdefaulthomepage'] = 'Determina cuál será la página principal p
 $string['configdefaultrequestcategory'] = 'Los cursos solicitados por los usuarios serán ubicados automáticamente en esta categoría.';
 $string['configdefaultrequestedcategory'] = 'Categoría por defecto en la que incluir los cursos solicitados, en el caso de que sean aprobados.';
 $string['configdefaultuserroleid'] = 'A todos los usuarios identificados se les asignarán los permisos del rol que usted especifique aquí, en el nivel del sitio, ADEMÁS de cualesquiera otros roles que puedan tener. El rol por defecto es el de Usuario identificado. Advierta que esto no entrará en conflicto con otros roles que tengan a menos que prohiba permisos. Simplemente asegura que todos los usuarios tengan permisos que no son asignables a nivel de curso (e.g., enviar entradas al blog, gestionar su propio calendario, etc.).';
-$string['configdeleteincompleteusers'] = 'Después de este período se eliminarán todas las cuentas no ajustadas completamente.';
+$string['configdeleteincompleteusers'] = 'Después de este período, se eliminarán todas las cuentas que no tengan cumplimentados el nombre, apellido o el email.';
 $string['configdeleteunconfirmed'] = 'Si está usando una identificación basada en email, éste es el período dentro del cual se aceptará una respuesta enviada por los usuarios. Pasado ese período, se eliminarán todas las cuentas no confirmadas.';
 $string['configdenyemailaddresses'] = 'Para denegar direcciones de email de dominios particulares, escriba aquí una lista de ellos. El resto de los dominios serán aceptados. Para denegar subdominios escriba el dominio precedido por un punto \'.\' Por ejemplo, <strong>hotmail.com (para dominios) .yahoo.es (para los subdominios)</strong>';
 $string['configdisableuserimages'] = 'Desactiva la posibilidad de que los usuarios cambien las imágenes de sus perfiles.';
@@ -255,7 +264,7 @@ $string['configfrontpagecourselimit'] = 'Número máximo de cursos';
 $string['configfrontpagecourselimithelp'] = 'Número máximo de cursos que se mostrará en la página principal del sitio en los listados de cursos.';
 $string['configfrontpageloggedin'] = 'Los elementos seleccionados se mostrarán en la portada del sitio cuando un usuario se identifica.';
 $string['configfullnamedisplay'] = 'Esta opción define cómo se verán los nombres cuando se muestren completos. Para la mayoría de los sitios que usen un solo idioma el ajuste más eficiente es el valor por defecto ("Nombre + Apellido"), pero puede elegir ocultar los apellidos, o dejar que sea el paquete de idioma actual quien decida (algunos idiomas usan reglas diferentes).';
-$string['configgeoipfile'] = 'Ubicación del archivo binario GeoIP City. Este archivo no forma parte de la distribución de Moodle y debe obtenerse de forma independiente en <a href="http://www.maxmind.com/">MaxMind</a>. Puede adquirir una versión comercial u optar por la versión gratuita.<br />Simplemente descargue <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz" >http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz</a> y extráigalo en el directorio "{$a}" de su servidor.';
+$string['configgeoipfile'] = 'Ubicación del archivo binario GeoIP City. Este archivo no forma parte de la distribución de Moodle y debe obtenerse de forma independiente en <a href="http://www.maxmind.com/">MaxMind</a>. Puede adquirir una versión comercial u optar por la versión gratuita.<br />Simplemente descargue <a href="http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a> y extráigalo en el directorio "{$a}" de su servidor.';
 $string['configgetremoteaddrconf'] = 'Si su servidor está detrás de un proxy reverso, puede usar esta opción para especificar en qué cabeceras HTTP se puede confiar que contengan la dirección IP remota. Las cabeceras se leen por orden, usando la primera que esté disponible.';
 $string['configgradebookroles'] = 'Esta opción le permite controlar quién aparece en el libro de calificaciones. Los usuarios necesitan tener al menos uno de estos roles en un curso para poder aparecer en el libro de calificaciones de ese curso.';
 $string['configgradeexport'] = 'Elija qué formatos de exportación del libro de calificaciones constituyen su método principal para exportar calificaciones. Los conectores elegidos ajustarán y usarán un campo ("últimos exportados") para cada calificación. Por ejemplo, esto podría dar como resultado que los registros exportados se identificaran como "nuevos" o "actualizados". Si no está seguro de cómo hacer esto, no marque nada.';
@@ -283,8 +292,9 @@ $string['configmaxevents'] = 'Eventos de previsión';
 $string['configmaxusersperpage'] = 'Número máximo de usuarios que se mostrará en el selector de usuarios dentro de cursos, grupos, cohortes, servicios web, etc.';
 $string['configmessaging'] = '¿Debe habilitarse el sistema de mensajería entre los usuarios del sitio?';
 $string['configmessagingallowemailoverride'] = 'Permitir a los usuarios recibir notificaciones de mensajes de correo enviados a una dirección de correo electrónico distinta de la dirección de correo electrónico en su perfil';
+$string['configmessagingallusers'] = 'Si se habilita, los usuarios pueden ver la lista de todos los usuarios en el sitio cuando seleccionen a alguien para enviarle un mensaje, y sus preferencias de mensajería incluyen la opción para aceptar mensajes de cualquiera en el sitio. Si está deshabilitado, los usuarios solamente pueden ver la lista de usuarios en sus cursos, y ellos solo tienen dos opciones en preferencias de mensajería - solamente aceptar mensajes de sus contactos, o de sus contactos y cualquiera en sus cursos.';
+$string['configmessagingdeleteallnotificationsdelay'] = 'Las notificaciones leídas y sin leer pueden ser eliminadas para ahorrar espacio. ¿Cuanto tiempo después de que es creada una notificación puede ser eliminada?';
 $string['configmessagingdeletereadnotificationsdelay'] = 'Las notificaciones ya leídas pueden borrarse para ahorrar espacio. ¿Al cabo de cúanto tiempo después de ser leída puede borrarse?';
-$string['configmessaginghidereadnotifications'] = 'Ocultar las notificaciones ya leídas, como las aportaciones a los foros, cuando esté viendo el historial de mensajes';
 $string['configminpassworddigits'] = 'Las contraseñas deben tener al menos estos dígitos.';
 $string['configminpasswordlength'] = 'Las contraseñas deben tener al menos este número de caracteres.';
 $string['configminpasswordlower'] = 'Las contraseñas deben tener al menos este número de minúsculas.';
@@ -307,6 +317,7 @@ $string['configoverride'] = 'Definido en config.php';
 $string['configpasswordpolicy'] = 'Si se activa esta opción, Moodle contrastará las contraseñas del usuario con especificaciones de validez de contraseñas. Use los ajustes de más abajo para fijar tales especificaciones (serán pasadas por alto si selecciona \'No\').';
 $string['configpasswordresettime'] = 'Especifica de cuánto tiempo se dispone para validar una solicitud de restablecimiento de contraseña antes de que caduque. En general 30 minutos es un buen valor.';
 $string['configpathtodu'] = 'Ruta a du (probablemente algo parecido a /usr/bin/du). Si escribe esto, las páginas que muestran el contenido del directorio se ejecutarán mucho más rápidamente cuando los directorios contengan muchos archivos.';
+$string['configpathtophp'] = 'Ruta al CLI de PHP. Probablemente algo similar a /usr/bin/php. Si introduce esto, los scripts de cron podrán ser ejecutados desde el interfaz web de administración.';
 $string['configperfdebug'] = 'Si activa esta opción, aparecerá la información sobre el rendimiento en el pie de página del tema estándar.';
 $string['configprofileroles'] = 'Lista de roles que son visibles en los perfiles de usuario y en la página de participación.';
 $string['configprofilesforenrolledusersonly'] = 'Para prevenir el abuso de los creadores de spam, se ocultan las descripciones del perfil de los usuarios que aún no están matriculados en ningún curso. Los usuarios nuevos deben matricularse en al menos un curso antes de que puedan agregar la descripción del perfil.';
@@ -382,13 +393,23 @@ $string['configvisiblecourses'] = 'Mostrar normalmente los cursos de categorías
 $string['configwarning'] = 'Sea cuidadoso al modificar estos resultados (valores extraños pueden ocasionar problemas).';
 $string['configyuicomboloading'] = 'Esta opción permite la optimización de carga de archivos de bibliotecas YUI. Esta opción debe estar habilitada en los centros de producción por razones de rendimiento.';
 $string['confirmation'] = 'Confirmación';
+$string['confirmcontextlock'] = '{$a->contextname} actualmente está descongelado. Congelarlo lo hará de solo lectura e impedirá a los usuarios hacer cambios. ¿Está seguro de querer continuar?';
+$string['confirmcontextunlock'] = '{$a->contextname} actualmente está congelado. Descongelarlo permitirá a los usuarios realizar cambios. ¿Está seguro de querer continuar?';
 $string['confirmdeletecomments'] = 'Está a punto de eliminar comentarios, ¿está seguro?';
 $string['confirmed'] = 'Confirmado';
+$string['contextlockappliestoadmin'] = 'Congelar el contexto afecta a administradores';
+$string['contextlockappliestoadmin_desc'] = 'Si se habilita, los administradores permanecen con acceso a cambiar a cualquier contexto que esté congelado.';
+$string['contextlocking'] = 'Congelamiento de contexto';
+$string['contextlocking_desc'] = 'Esta configuración le permite configurar acceso de solo lectura para  categorías, cursos, actividades o bloques seleccionados.';
 $string['cookiehttponly'] = 'Sólo \'cookies\' http';
 $string['cookiesecure'] = 'Sólo \'cookies\' seguras';
 $string['country'] = 'País por defecto';
 $string['coursecontact'] = 'Gestores de curso';
 $string['coursecontact_desc'] = 'Esta opción le permite controlar quién aparece en la descripción del curso. Los usuarios deben tener al menos uno de estos roles en un curso a fin de poder mostrarlos en la descripción de ese curso.';
+$string['coursecontactduplicates'] = 'Mostrar todos los roles de contacto del curso';
+$string['coursecontactduplicates_desc'] = 'Si se habilita, los usuarios con más de uno de los roles de contacto del curso serán mostrados en la descripción del curso con cada uno de sus roles. De lo contrario, se mostrarán con solamente un rol (el que esté  listado más arriba en \'Definir roles\' en la Administración del sitio).';
+$string['coursegraceperiodafter'] = 'Período de gracia para cursos pasados';
+$string['coursegraceperiodbefore'] = 'Periodo de gracia para cursos futuros';
 $string['courselistshortnames'] = 'Mostrar nombres extendidos del curso';
 $string['courselistshortnames_desc'] = 'Si está activado, en las listas de cursos se mostrarán los nombres cortos además de los nombres largos. Si es necesario, los nombres largos de los cursos pueden personalizarse editando la cadena "courseextendednamedisplay" utilizando la función de personalización de idioma.';
 $string['coursemgmt'] = 'Administrar cursos y categorías';
@@ -559,6 +580,8 @@ $string['filters'] = 'Filtros';
 $string['filtersettings'] = 'Gestionar filtros';
 $string['filtersettingsgeneral'] = 'Ajustes generales de filtro';
 $string['filteruploadedfiles'] = 'Filtrar archivos subidos';
+$string['forceclean'] = 'Limpieza de contenido en todos lados';
+$string['forceclean_desc'] = 'El contenido añadido al sitio normalmente es limpiado antes de ser mostrado, para quitarle todo lo que podría ser un riesgo de seguridad. Sin embargo, el contenido no es limpiado en ciertos lugares, como las descripciones de actividad, recursos o Bloques HTML, para permitir que sean añadidos scripts, medios, marcos en línea, etc. Si esta configuración es habilitada, TODO el contenido será limpiado. Esto podría provocar que parte del contenido existente ya no se muestre correctamente.';
 $string['forcelogin'] = 'Forzar a los usuarios a identificarse';
 $string['forceloginforprofileimage'] = 'Forzar a los usuarios a identificarse para ver los avatares de los usuario';
 $string['forceloginforprofileimage_help'] = 'Si está habilitado, los usuarios deben identificarse con el fin de ver las imágenes de perfil de usuario y la imagen de usuario por defecto se utilizará en todos los correos electrónicos de notificación.';
@@ -646,7 +669,7 @@ Se recomienda instalar una copia local de la base de datos GeoLite City, desde M
 La ubicación de la dirección IP se muestra en un mapa simple, o usando Google Maps. Para activar los mapas interactivos necesita tener una cuenta Google y aplicar la clave API de Google Maps.';
 $string['iplookupmaxmindnote'] = 'Este producto incluye datos de GeoLite2 creado por MaxMind, disponible en <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>.';
 $string['ishttpswarning'] = 'Se ha detectado que su sitio no se comunica a través de HTTPS. Se recomienda migrar su sitio a HTTPS para incrementar la seguridad y mejorar la integración con otros sistemas.';
-$string['keeptagnamecase'] = 'Mantener \'casing\' de nombre de marca';
+$string['keeptagnamecase'] = 'Mantener minús/MAYÚS de nombre de marca';
 $string['lang'] = 'Idioma por defecto';
 $string['langcache'] = 'Guardar en caché el menú de idioma';
 $string['langcache_desc'] = 'Cachear el menú de idiomas. Si se habilita, la lista de idiomas disponibles se cachea. La caché se refresca automáticamente cuando se instala o elimina un paquete de idioma por medio de la herramienta de gestión de paquetes de idiomas incorporada. Si instala un paquete de idioma manualmente, deberá usar la característica "Purgar todas las cachés" para refrescar la lista cacheada.';
@@ -712,6 +735,10 @@ $string['maintenancemodeisscheduled'] = 'Este sitio entrará en modo mantenimien
 $string['maintenancemodeisscheduledlong'] = 'Este sitio será puesto en modo mantenimiento en {$a->hour} horas {$a->min} minutos {$a->sec} segundos';
 $string['maintfileopenerror'] = '¡Error al abrir los archivos de mantenimiento!';
 $string['maintinprogress'] = 'Mantenimiento en curso...';
+$string['managecontextlock'] = 'Congelar este contexto';
+$string['managecontextlocklocked'] = '{$a->contextname} y todos los contextos inferiores están ahora congelados.';
+$string['managecontextlockunlocked'] = '{$a->contextname} y todos los contextos inferiores están ahora descongelados.';
+$string['managecontextunlock'] = 'Descongelar este contexto';
 $string['manageformats'] = 'Gestionar formatos de curso';
 $string['manageformatsgotosettings'] = 'El formato por defecto puede cambiarse en {$a}';
 $string['managelang'] = 'Administrar';
@@ -749,8 +776,9 @@ $string['mediapluginwmv'] = 'Habilitar filtro .wmv';
 $string['mediapluginyoutube'] = 'Habilitar el filtro de enlaces de YouTube';
 $string['messaging'] = 'Habilitar sistema de mensajería';
 $string['messagingallowemailoverride'] = 'Anulación de correo de notificación';
+$string['messagingallusers'] = 'Permitir mensajería para todo el sitio';
+$string['messagingdeleteallnotificationsdelay'] = 'Eliminar todas las notificaciones';
 $string['messagingdeletereadnotificationsdelay'] = 'Eliminar las notificaciones ya leídas';
-$string['messaginghidereadnotifications'] = 'Ocultar las notificaciones ya leídas';
 $string['minpassworddigits'] = 'Dígitos';
 $string['minpasswordlength'] = 'Longitud de la contraseña';
 $string['minpasswordlower'] = 'Minúsculas';
@@ -758,17 +786,29 @@ $string['minpasswordnonalphanum'] = 'Caracteres no alfanuméricos';
 $string['minpasswordupper'] = 'Mayúsculas';
 $string['misc'] = 'Varios';
 $string['mnetrestore_extusers'] = 'Esta copia de seguridad contiene cuentas de usuario de red Moodle remotas las cuales serán recuperadas como parte del proceso.';
-$string['mnetrestore_extusers_admin'] = '<strong> Nota: </ strong> Este archivo de copia de seguridad parece venir de otro de instalación de Moodle y contiene cuentas de usuario de Moodle Network. El proceso de restauración intentará hacer coincidir los host de Moodle Network con todos los usuarios creados. Los que no coincidan se conectarán automáticamente mediante identificación interna (en lugar de la de Mnet). El informe de restauración le informará al respecto.';
+$string['mnetrestore_extusers_admin'] = '<strong> Nota: </strong> Este archivo de copia de seguridad parece venir de otro de instalación de Moodle y contiene cuentas de usuario de Moodle Network. El proceso de restauración intentará hacer coincidir los host de Moodle Network con todos los usuarios creados. Los que no coincidan se conectarán automáticamente mediante identificación interna (en lugar de la de Mnet). El informe de restauración le informará al respecto.';
 $string['mnetrestore_extusers_mismatch'] = '<strong>Nota:</strong> Esta copia de seguridad aparentemente se origina de una instalación diferente de Moodle y contiene cuentas de red Moodle remotas que se puede fallar en recuperar. Esta operación no es admitida. Si usted está seguro que fue creada en esta instalación de Moodle, o puede asegurarse de que todos los hosts de red Moodle necesarios están configurados, podría intentar la restauración.';
 $string['mnetrestore_extusers_noadmin'] = '<strong> Nota: </ strong> Este archivo de copia de seguridad parece venir de otra instalación de Moodle y contiene cuentas de usuario de  Moodle Network. No tiene permiso para ejecutar este tipo de restauración. Póngase en contacto con el administrador del sitio o bien,  restaure este curso sin ningún tipo de información de usuario (módulos, archivos ...)';
 $string['mnetrestore_extusers_switchuserauth'] = 'El usuario remoto de Moodle Network {$a->username} (proveniente de {$a->mnethosturl}) ha cambiado a usuario identificado {$a->auth} local.';
-$string['mobile'] = 'Móvil';
 $string['mobilenotconfiguredwarning'] = 'Moodle para móviles no está habilitado.';
 $string['modchooserdefault'] = 'Selector de actividades por defecto';
 $string['modeditdefaults'] = 'Valores predeterminados para la configuración de la actividad';
 $string['modsettings'] = 'Gestionar actividades';
 $string['modulesecurity'] = 'Seguridad del módulo';
+$string['moodleapp'] = 'App de Moodle';
+$string['moodleapp_help'] = '<p>Si tiene una cuenta en un sitio Moodle, puede acceder a todos sus cursos en sus dispositivos móviles con nuestra App móvil gratuita para Moodle.</p>
+<a href="https://moodle.com/mobile-app">Obtenga la App Moodle</a>';
+$string['moodlebrandedapp'] = 'App Moodle de marca';
+$string['moodlebrandedapp_help'] = '<p>La App Moodle de marca tiene toda la funcionalidad de nuestra App móvil gratuita para Moodle combinada con las características de su marca personalizada propia.</p>
+<a href="https://moodle.com/branded-app">Acerca de la App Moodle de marca</a>';
+$string['moodlebrandedappreference'] = 'Alternativamente, obtenga una  <a href="https://moodle.com/branded-app/">Branded Moodle app (App Moodle de marca)</a> con su propio estilo personalizable.';
 $string['moodleorghubname'] = 'Moodle.net';
+$string['moodlepartners'] = 'Moodle Partners (Socios Moodle)';
+$string['moodlepartners_help'] = '<p>Los Moodle Partners (Socios Moodle) son proveedores de servicio que están certificados por Moodle HQ para proporcionar servicios de alta calidad para el entorno de aprendizaje en línea de su organización.</p>
+<a href="https://moodle.com/about-partners/">Acerca de nuestros Socios</a><br />
+<a href="https://moodle.com/partners">Encuentra un Socio</a>';
+$string['moodleservices'] = 'Servicios de Moodle';
+$string['moodleservices_help'] = 'Asegúrese de obtener lo mejor de su entorno de aprendizaje Moodle al usar estos servicios:';
 $string['multilangforceold'] = 'Forzar sintaxis vieja multi-idioma: <span> sin la class="multilang" and <lang>';
 $string['mustenablestats'] = 'Las estadísticas aún no se han habilitado en este sitio.';
 $string['mycoursesperpage'] = 'Número de cursos';
@@ -845,11 +885,14 @@ $string['pathtogs_help'] = 'En la mayoría de instalaciones de Linux, puede deja
 $string['pathtopgdump'] = 'Ruta a pg_dump';
 $string['pathtopgdumpdesc'] = 'Sólo es necesario entrar si usted tiene má de un pg_dump en su sistema (por ejemplo, si tiene instalada más de una versión de postgresql)';
 $string['pathtopgdumpinvalid'] = 'Ruta no válida a pg_dump: o bien es errónea, o bien no es ejecutable';
+$string['pathtophp'] = 'Ruta al CLI de PHP';
 $string['pathtopsql'] = 'Ruta a psql';
 $string['pathtopsqldesc'] = 'Esto sólo es necesario si tiene más de un psql en su sistema (por ejemplo, si tiene instalada más de una versión de postgresql)';
 $string['pathtopsqlinvalid'] = 'Ruta a psql no válida: o bien es errónea, o bien no es ejecutable';
 $string['pathtopython'] = 'Ruta a Python';
 $string['pathtopythondesc'] = 'Ruta a los archivos binarios de ejecución de Python (se permite Python 2 y Python 3).';
+$string['pathtosassc'] = 'Ruta hacia SassC';
+$string['pathtosassc_help'] = 'Al especificar la localización del binario de SassC cambiará al compilador de SASS de la implementación PHP de Moodle a SassC. Vea https://github.com/sass/sassc para más información.';
 $string['pcreunicodewarning'] = 'Se recomienda encarecidamente usar la extensión PCRE PHP que sea compatible con caracteres Unicode.';
 $string['perfdebug'] = 'Información de rendimiento';
 $string['performance'] = 'Rendimiento';
@@ -869,7 +912,7 @@ $string['pluginsoverviewsee'] = 'Vea la página <a href="{$a->url}"> Vista gener
 $string['policysettings'] = 'Configuraciones de Política';
 $string['privacyandpolicies'] = 'Privacidad y Políticas';
 $string['privacy:metadata'] = 'El plugin de Administración no almacena ningún tipo de dato personal.';
-$string['privacysettings'] = 'Opciones de privacidad';
+$string['privacysettings'] = 'Configuraciones de Privacidad';
 $string['profilecategory'] = 'Categoría';
 $string['profilecategoryname'] = 'Nombre de la categoría (debe ser único)';
 $string['profilecategorynamenotunique'] = 'Este nombre de categoría ya está en uso';
@@ -922,16 +965,16 @@ $string['profilevisibleall'] = 'Todos pueden verlo';
 $string['profilevisible_help'] = '<p>Se puede asignar a cada campo personalizado uno de tres ajustes de visibilidad: invisible, a todo el mundo y usuario. El ajuste \'invisible\' normalmente es decidido por un administrador que quiere mantener la privacidad de los datos de los usuarios. El ajuste \'usuario\' es seleccionado normalmente para un campo que contiene información delicada, en tanto que la opción \'todo el mundo\' puede usarse para cualquier tipo de información.</p>';
 $string['profilevisiblenone'] = 'No visible';
 $string['profilevisibleprivate'] = 'Visible por el usuario';
-$string['profiling'] = 'Perfilado';
+$string['profiling'] = 'Perfilado (análisis del rendimiento)';
 $string['profilingallowall'] = 'Perfilado continuo';
 $string['profilingallowall_help'] = 'Si habilita este ajuste entonces, en cualquier momento, puede usar el parámetros PROFILEALL en cualquier parte (PGC) para habilitar el perfilado de todos los scripts ejecutados durante la duración de la sesión Moodle. De igual manera, puede usar el parámetro PROFILEALLSTOP para detenerlo.';
 $string['profilingallowme'] = 'Perfilado selectivo';
 $string['profilingallowme_help'] = 'Si habilita este ajuste entonces, de forma selectiva, puede usar el parámetro PROFILEME en cualquier parte (PGC) y se habilitará el perfilado para ese script. De igual manera, puede usar el parámetro DONTPROFILEME para evitar que tenga lugar el perfilado.';
 $string['profilingautofrec'] = 'Perfilado automático';
 $string['profilingautofrec_help'] = 'Al configurar este ajuste, algunas peticiones (de forma aleatoria, basada en la frecuencia especificada - 1 de cada N) será escogida y perfilada automáticamente, almacenando los resultados para un análisis posterior. Note que esta forma de perfilado respeta los ajustes de inclusion/exclusión. Ponga el valor a 0 para deshabilitar el perfilado automático.';
-$string['profilingenabled'] = 'Habilitar perfiles';
+$string['profilingenabled'] = 'Habilitar perfilado (análisis del rendimiento)';
 $string['profilingenabled_help'] = 'Si habilita este ajuste el perfilado estará disponible en este sitio y podrá definir su comportamiento configurando las siguientes opciones.';
-$string['profilingexcluded'] = 'Excluir perfiles';
+$string['profilingexcluded'] = 'Excluir perfilado (análisis del rendimiento)';
 $string['profilingexcluded_help'] = 'Lista de URLs (absolutas quitando la parte de wwwroot, llamables, separadas por comas) que se excluirán del perfilado, de entre las definidas en el ajuste \'Perfilar estas\'.';
 $string['profilingimportprefix'] = 'Prefijo de la importación de perfiles';
 $string['profilingimportprefix_desc'] = 'Para una detección más fácil, todas las importaciones de perfiles se prefijan con el valor que aquí se especifica,';
@@ -949,6 +992,16 @@ $string['proxyuser'] = 'Nombre de usuario del proxy';
 $string['purgecaches'] = 'Purgar todas las cachés';
 $string['purgecachesconfirm'] = 'Moodle puede guardar en caché los temas, javascript, cadenas de idioma, texto filtrado, RSS feeds y muchos otros datos. La depuración de estos datos en el servidor forzará a los navegadores de los clientes a actualizar la información y usted se asegurará de que los usuarios están viendo la información con los cambios más recientes. No se corre ningún riesgo por hacerlo, aunque su sitio podría parecer algo más lento en un principio hasta que el servidor y los clientes vuelven a actualizar la información guardándose nuevamente los datos en la caché.';
 $string['purgecachesfinished'] = 'Todas las cachés han sido purgadas';
+$string['purgecachesnoneselected'] = 'Seleccione una o más cachés para purgar';
+$string['purgecachespage'] = 'Purgas cachés';
+$string['purgefiltercache'] = 'Filtros de texto';
+$string['purgejscache'] = 'JavaScript';
+$string['purgelangcache'] = 'Cadenas de idioma';
+$string['purgemuc'] = 'Todas las cachés MUC';
+$string['purgeothercaches'] = 'Todos los ficheros y diversas cachés';
+$string['purgeselectedcaches'] = 'Purgar cachés seleccionadas';
+$string['purgeselectedcachesfinished'] = 'Las cachés seleccionadas han sido purgadas.';
+$string['purgethemecache'] = 'Temas';
 $string['query'] = 'Consulta';
 $string['question'] = 'Pregunta';
 $string['questionbehaviours'] = 'Comportamientos de las preguntas';
@@ -1009,7 +1062,7 @@ $string['save'] = 'Guardar';
 $string['savechanges'] = 'Guardar cambios';
 $string['scssinvalid'] = 'El código SCSS no es válido, falla en: {$a}';
 $string['search'] = 'Buscar';
-$string['searchallavailablecourses'] = 'Cursos que se pueden buscar';
+$string['searchallavailablecourses'] = 'Cursos en los que se puede buscar';
 $string['searchallavailablecourses_desc'] = 'En algunas situaciones el motor de búsqueda puede no funcionar correctamente si se busca en un gran número de cursos. Realice la búsqueda sólo en los cursos matriculados para restringir la búsqueda.';
 $string['searchallavailablecourses_off'] = 'Buscar solo entre los cursos matriculados';
 $string['searchallavailablecourses_on'] = 'Buscar entre todos los cursos a los que el usuario tiene acceso';
@@ -1021,16 +1074,16 @@ $string['searchdeleteindex'] = 'Borrar todos los contenidos indexados';
 $string['searchengine'] = 'Motor de búsqueda';
 $string['searchindexactions'] = 'Acciones del índice';
 $string['searchindexdeleted'] = 'Índice borrado';
-$string['searchindextime'] = 'Tiempo límite de indexación';
+$string['searchindextime'] = 'Límite de tiempo de indexación';
 $string['searchindextime_desc'] = 'Al indexar grandes cantidades de contenido, la tarea programada se detendrá después de que se alcance este límite de tiempo. Continuará la siguiente vez que se ejecute la tarea.';
 $string['searchindexupdated'] = 'Los contenidos del motor de búsqueda han sido actualizados';
 $string['searchindexwhendisabled'] = 'Indexar cuando esté deshabilitado';
-$string['searchindexwhendisabled_desc'] = 'Permite que la tarea programada construya el índice de búsqueda aun y cuando esté deshabilitada la búsqueda. Esto es útil si quiere construir el índice antes de que a los estudiantes les aparezca la opción para buscar.';
+$string['searchindexwhendisabled_desc'] = 'Permite que la tarea programada construya el índice de búsqueda aun y cuando esté deshabilitada la búsqueda. Esto es útil si quiere construir el índice antes de que a los estudiantes les aparezca la opción de búsqueda.';
 $string['searchinsettings'] = 'Ajustes de búsqueda';
 $string['searchlastrun'] = 'Última ejecución (time, # docs, # records, # ignores)';
 $string['searchnotavailable'] = 'La búsqueda no está disponible';
 $string['searchoptions'] = 'Opciones de búsqueda';
-$string['searchpartial'] = '(aún no está indexado completamente)';
+$string['searchpartial'] = '(aun no indexado completamente)';
 $string['searchreindexed'] = 'Todos los contenidos del sitio han sido indexados de nuevo.';
 $string['searchreindexindex'] = 'Indexar de nuevo todos los contenidos del sitio';
 $string['searchresults'] = 'Resultados de la búsqueda';

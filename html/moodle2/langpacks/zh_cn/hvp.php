@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hvp', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   hvp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,6 +88,7 @@ $string['displayoptions'] = '显示选项';
 $string['download'] = '下载';
 $string['downloadfailed'] = '下载请求的库失败。';
 $string['downloadtitle'] = '下载这个内容作为H5P文件。';
+$string['editor'] = '编辑器';
 $string['embed'] = '嵌入';
 $string['embedloginfailed'] = '您无法访问此内容。尝试登录。';
 $string['embedtitle'] = '查看此内容的嵌入代码。';
@@ -103,3 +104,19 @@ $string['enablehublabel'] = '使用 H5P Hub';
 $string['enablejavascript'] = '请启用 JavaScript。';
 $string['enablesavecontentstate'] = '保存内容状态';
 $string['enablesavecontentstate_help'] = '自动保存每个用户的交互式内容的当前状态。这意味着用户可以从他离开的地方继续操作。';
+$string['failedtodownloadh5p'] = '所需的H5P文件下载失败。';
+$string['filenotfoundonserver'] = '在服务器上未找到文件。请查看上传文件设置。';
+$string['filenotimage'] = '该文件不是图片。';
+$string['filetypenotallowed'] = '不是许可的文件类型。';
+$string['finished'] = '完成';
+$string['fullscreen'] = '全屏';
+$string['gpl'] = '通用公共许可 V3';
+$string['h5pfile'] = 'H5P文件';
+$string['hide'] = '隐藏';
+$string['hideadvanced'] = '隐藏高级的';
+$string['hubcommunicationdisabled'] = '由于一个或多个H5P要求失败，H5P集线器通信已被禁用。';
+$string['hubisdisabled'] = '集线器已禁用。 您可以在H5P设置中重新启用它。';
+$string['invalidlibrary'] = '无效的库';
+$string['invalidlibrarydata'] = '提供的数据无效';
+$string['invalidlibrarydataboolean'] = '提供的数据无效';
+$string['invalidvideoformat'] = '视频文件格式无效。 使用mp4或webm。';

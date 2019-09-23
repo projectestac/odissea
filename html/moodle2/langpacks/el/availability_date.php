@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability_date', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   availability_date
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['description'] = 'Αποτρέψτε την πρόσβαση μέχρι 
 $string['direction_before'] = 'Ημερομηνία';
 $string['direction_from'] = 'από';
 $string['direction_label'] = 'Κατεύθυνση';
-$string['direction_until'] = 'εώς';
+$string['direction_until'] = 'έως';
 $string['full_from'] = 'Είναι μετά από <strong>{$a}</strong>';
 $string['full_from_date'] = 'Είναι στις ή μετά από <strong>{$a}</strong>';
 $string['full_until'] = 'Η ημερομηνία είναι πριν από <strong>{$a}</strong>';

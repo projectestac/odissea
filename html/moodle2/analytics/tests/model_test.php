@@ -168,8 +168,32 @@ class analytics_model_testcase extends advanced_testcase {
         $this->assertEmpty($DB->count_records('analytics_predict_samples'));
         $this->assertEmpty($DB->count_records('analytics_used_files'));
 
+        // Check that the model is marked as not trained after clearing (as it is not a static one).
+        $this->assertEquals(0, $DB->get_field('analytics_models', 'trained', array('id' => $this->modelobj->id)));
+
         set_config('enabled_stores', '', 'tool_log');
         get_log_manager(true);
+    }
+
+    /**
+     * Test behaviour of {\core_analytics\model::clear()} for static models.
+     */
+    public function test_clear_static() {
+        global $DB;
+        $this->resetAfterTest();
+
+        $statictarget = new test_static_target_shortname();
+        $indicators['test_indicator_max'] = \core_analytics\manager::get_indicator('test_indicator_max');
+        $model = \core_analytics\model::create($statictarget, $indicators, '\core\analytics\time_splitting\quarters');
+        $modelobj = $model->get_model_obj();
+
+        // Static models are always considered trained.
+        $this->assertEquals(1, $DB->get_field('analytics_models', 'trained', array('id' => $modelobj->id)));
+
+        $model->clear();
+
+        // Check that the model is still marked as trained even after clearing.
+        $this->assertEquals(1, $DB->get_field('analytics_models', 'trained', array('id' => $modelobj->id)));
     }
 
     public function test_model_manager() {
@@ -315,6 +339,59 @@ class analytics_model_testcase extends advanced_testcase {
         $analyser->get_analysable_data(true);
         $params = array('modelid' => 1, 'action' => 'training');
         $this->assertLessThanOrEqual(2, $DB->count_records('analytics_used_analysables', $params));
+    }
+
+    /**
+     * Tests model::get_samples()
+     *
+     * @return null
+     */
+    public function test_get_samples() {
+        $this->resetAfterTest();
+
+        if (!PHPUNIT_LONGTEST) {
+            $this->markTestSkipped('PHPUNIT_LONGTEST is not defined');
+        }
+
+        // 10000 should be enough to make oracle and mssql fail, if we want pgsql to fail we need around 70000
+        // users, that is a few minutes just to create the users.
+        $nusers = 10000;
+
+        $userids = [];
+        for ($i = 0; $i < $nusers; $i++) {
+            $user = $this->getDataGenerator()->create_user();
+            $userids[] = $user->id;
+        }
+
+        $target = \core_analytics\manager::get_target('test_target_site_users');
+        $indicator = \core_analytics\manager::get_indicator('test_indicator_max');
+        $model = \core_analytics\model::create($target, ['test_indicator_max' => $indicator],
+            '\core\analytics\time_splitting\single_range');
+
+        list($sampleids, $samplesdata) = $model->get_samples($userids);
+        $this->assertCount($nusers, $sampleids);
+        $this->assertCount($nusers, $samplesdata);
+
+        $subset = array_slice($userids, 0, 100);
+        list($sampleids, $samplesdata) = $model->get_samples($subset);
+        $this->assertCount(100, $sampleids);
+        $this->assertCount(100, $samplesdata);
+
+        $subset = array_slice($userids, 0, 2);
+        list($sampleids, $samplesdata) = $model->get_samples($subset);
+        $this->assertCount(2, $sampleids);
+        $this->assertCount(2, $samplesdata);
+
+        $subset = array_slice($userids, 0, 1);
+        list($sampleids, $samplesdata) = $model->get_samples($subset);
+        $this->assertCount(1, $sampleids);
+        $this->assertCount(1, $samplesdata);
+
+        // Unexisting, so nothing returned, but still 2 arrays.
+        list($sampleids, $samplesdata) = $model->get_samples([1231231231231231]);
+        $this->assertEmpty($sampleids);
+        $this->assertEmpty($samplesdata);
+
     }
 
     /**

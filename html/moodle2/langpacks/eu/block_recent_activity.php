@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_recent_activity', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_recent_activity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,11 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cleanuptask'] = 'Duela gutxiko aktibitatea blokearen garbiketa zeregina';
 $string['pluginname'] = 'Duela gutxiko aktibitatea';
 $string['privacy:metadata'] = 'Duela gutxiko aktibitatea blokeak Moodle-ko beste leku batzuetan gordetako datuen cachea gordetzen du.';
 $string['privacy:metadata:block_recent_activity'] = 'Irakasleen jardueraren behin-behineko biltegia. Bi egun igarotzean ezabatzen da.';
 $string['privacy:metadata:block_recent_activity:action'] = 'Ekintza: sortuta, eguneratuta edo ezabatuta';
-$string['privacy:metadata:block_recent_activity:cmid'] = 'Ikastaro-moduluaren IDa';
+$string['privacy:metadata:block_recent_activity:cmid'] = 'Ikastaro-jardueraren IDa';
 $string['privacy:metadata:block_recent_activity:courseid'] = 'Ikastaroaren IDa';
 $string['privacy:metadata:block_recent_activity:modname'] = 'Modulu-motaren izena (ezabatze-ekintzarako)';
 $string['privacy:metadata:block_recent_activity:timecreated'] = 'Ekintza burutu zeneko unea';

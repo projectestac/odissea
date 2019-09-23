@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradeimport_direct', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   gradeimport_direct
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['direct:view'] = 'Inportatu kalifikazioa CSVtik';
+$string['direct:view'] = 'Inportatu kalifikazioa kalkulu-orritik';
 $string['pluginname'] = 'Itsatsi kalkulu-orritik';
 $string['privacy:metadata'] = 'Kalifikazioak kopiatutako kalkulu-orritik inportatzeko pluginak ez du datu pertsonalik biltzen.';
 $string['userdata'] = 'Datuak formulario honetara kopiatzeko laguntza';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'role', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,9 @@ $string['allowoverride'] = 'Permitir anular roles';
 $string['allowroletoassign'] = 'Permitirlle aos usuarios co rol {$a->fromrole} asignar o rol {$a->targetrole}';
 $string['allowroletooverride'] = 'Permitirlle aos usuarios co rol {$a->fromrole} anular o rol {$a->targetrole}';
 $string['allowroletoswitch'] = 'Permitirlle aos usuarios co rol {$a->fromrole} cambiar ao rol {$a->targetrole}';
+$string['allowroletoview'] = 'Permitirlle aos usuarios co rol {$a->fromrole} ver o rol {$a->targetrole}';
 $string['allowswitch'] = 'Permitir cambios de rol';
+$string['allowview'] = 'Permitirlle ver a rol';
 $string['allsiteusers'] = 'Todos os usuarios do sitio';
 $string['analytics:listinsights'] = 'Listar ideas';
 $string['analytics:managemodels'] = 'Xestionar modelos';
@@ -67,7 +69,7 @@ $string['backup:anonymise'] = 'Facer anónimos os datos de usuario na copia de s
 $string['backup:backupactivity'] = 'Copia de seguranza das actividades';
 $string['backup:backupcourse'] = 'Copia de seguranza dos cursos';
 $string['backup:backupsection'] = 'Copia de seguranza das seccións';
-$string['backup:backuptargethub'] = 'Copia de seguranza do centro';
+$string['backup:backuptargethub'] = 'Copia de seguranza para publicar en Moodle.net';
 $string['backup:backuptargetimport'] = 'Copia de seguranza para importar';
 $string['backup:configure'] = 'Configurar as opcións da copia de seguranza';
 $string['backup:downloadfile'] = 'Descargar ficheiros das áreas de copia de seguranza';
@@ -188,6 +190,7 @@ $string['course:reset'] = 'Restabelecer o curso';
 $string['course:reviewotherusers'] = 'Revisar outros usuarios';
 $string['course:sectionvisibility'] = 'Controlar a visibilidade da sección';
 $string['course:setcurrentsection'] = 'Axustar sección actual';
+$string['course:setforcedlanguage'] = 'Forzar o idioma do curso';
 $string['course:tag'] = 'Cambiar as etiquetas do curso';
 $string['course:update'] = 'Actualizar a configuración do curso';
 $string['course:useremail'] = 'Activar/desactivar enderezos de correo';
@@ -229,6 +232,7 @@ $string['errorroleshortnametoolong'] = 'O nome curto non debe exceder os 100 car
 $string['eventroleallowassignupdated'] = 'Permitir a asignación de rol';
 $string['eventroleallowoverrideupdated'] = 'Permitir a anulación de rol';
 $string['eventroleallowswitchupdated'] = 'Permitir cambio de rol';
+$string['eventroleallowviewupdated'] = 'Permitir vista de rol';
 $string['eventroleassigned'] = 'Asignación de rol';
 $string['eventrolecapabilitiesupdated'] = 'Capacidade actualizada de rol';
 $string['eventroledeleted'] = 'Rol eliminado';
@@ -301,6 +305,7 @@ $string['notabletooverrideroleshere'] = 'Non ten permisos para anular aquí os p
 $string['notes:manage'] = 'Xestionar notas';
 $string['notes:view'] = 'Ver notas';
 $string['notset'] = 'Non estabelecido';
+$string['novisibleroles'] = 'Non hai roles';
 $string['overrideanotherrole'] = 'Anular outro rol';
 $string['overridecontext'] = 'Anular contexto';
 $string['overridepermissions'] = 'Anular permisos';
@@ -354,6 +359,8 @@ $string['question:flag'] = 'Marcar preguntas mentres se intentan';
 $string['question:managecategory'] = 'Editar categorías de preguntas';
 $string['question:moveall'] = 'Mover todas as preguntas';
 $string['question:movemine'] = 'Mover as súas propias preguntas';
+$string['question:tagall'] = 'Etiquetar todas as preguntas';
+$string['question:tagmine'] = 'Etiquetar as súas propias preguntas';
 $string['question:useall'] = 'Usar todas as preguntas';
 $string['question:usemine'] = 'Usar as súas propias preguntas';
 $string['question:viewall'] = 'Ver todas as preguntas';

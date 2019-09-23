@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_messageinbound', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['invalid_recipient_handler'] = 'Si un message valide est reçu, mais que
 Ce gestionnaire traite ces réponses.
 
 Il n\'est pas possible de désactiver la vérification de l\'expéditeur de ce gestionnaire, car un utilisateur pourrait alors répondre à partir d\'une adresse incorrecte, si la configuration de son client de courriel est incorrecte.';
-$string['invalid_recipient_handler_name'] = 'Expéditeur non valide';
+$string['invalid_recipient_handler_name'] = 'Gestionnaire d\'expédition non valide';
 $string['mailbox'] = 'Nom de la boîte à lettres';
 $string['mailboxconfiguration'] = 'Configuration de la boîte à lettres';
 $string['mailboxdescription'] = '[boîte]+adresse@[domaine]';
@@ -61,7 +61,7 @@ $string['messageinbound'] = 'Messages de courriel entrant';
 $string['messageinboundenabled'] = 'Activer le traitement des messages de courriel entrant';
 $string['messageinboundenabled_desc'] = 'Le traitement des messages de courriel entrant doit être activé afin que des messages puissent être envoyés avec l\'information adéquate.';
 $string['messageinboundgeneralconfiguration'] = 'Configuration générale';
-$string['messageinboundgeneralconfiguration_desc'] = 'Le traitement des messages de courriel entrant permet à votre Moodle de recevoir et traiter des courriels. Cela offre par exemple la possibilité de participer aux discussions des forums par courriel ou d\'ajouter des fichiers à sa zone de fichiers privée.';
+$string['messageinboundgeneralconfiguration_desc'] = 'Le traitement des messages de courriel entrant permet à votre Moodle de recevoir et traiter des courriels. Cela offre par exemple la possibilité de participer aux discussions des forums par courriel ou d\'ajouter des fichiers à sa zone de fichiers personnels.';
 $string['messageinboundhost'] = 'Serveur de courriels entrant';
 $string['messageinboundhostpass'] = 'Mot de passe';
 $string['messageinboundhostpass_desc'] = 'Mot de passe fourni par votre fournisseur de service afin de vous connecter à votre compte de courriel.';
@@ -76,7 +76,7 @@ $string['messageprocessingerror'] = 'Vous avez récemment envoyé un courriel «
 Les détails de l\'erreur sont indiqués ci-dessous.
 
 {$a->error}';
-$string['messageprocessingerrorhtml'] = '<p>Vous avez récemment envoyé un courriel  « {$a->subject} », qui n\'a malheureusement pas pu être traité.</p>
+$string['messageprocessingerrorhtml'] = '<p>Vous avez récemment envoyé un courriel « {$a->subject} », qui n\'a malheureusement pas pu être traité.</p>
 <p>Les détails de l\'erreur sont indiqués ci-dessous.</p>
 <p>{$a->error}</p>';
 $string['messageprocessingfailed'] = 'Le courriel « {$a->subject} » n\'a pas pu être traité. Voici le message d\'erreur qui a été renvoyé : « {$a->message} ».';

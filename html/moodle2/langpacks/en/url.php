@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'url', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,7 +72,7 @@ $string['popupwidth'] = 'Pop-up width (in pixels)';
 $string['popupwidthexplain'] = 'Specifies default width of popup windows.';
 $string['printintro'] = 'Display URL description';
 $string['printintroexplain'] = 'Display URL description below content? Some display types may not display description even if enabled.';
-$string['privacy:metadata'] = 'The mod_url plugin does not store any personal data.';
+$string['privacy:metadata'] = 'The URL resource plugin does not store any personal data.';
 $string['rolesinparams'] = 'Include role names in parameters';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'Server URL';

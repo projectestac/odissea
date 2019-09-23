@@ -5,10 +5,12 @@
 // want white default colour.
 $bg-inverse-link-color: #fff !default;
 
-#region-main > .card {
+#region-main {
     overflow-x: auto;
     overflow-y: visible;
-    min-height: 45rem;
+    border: $card-border-width solid $card-border-color;
+    padding: $card-spacer-x;
+    background-color: $body-bg;
 }
 
 .context-header-settings-menu,
@@ -146,6 +148,13 @@ a.autolink.glossary:hover {
     cursor: pointer;
 }
 
+.pagelayout-mydashboard #region-main {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    margin-top: -1px;
+}
+
 .collapsibleregioncaption img {
     vertical-align: middle;
 }
@@ -236,23 +245,11 @@ img.resize {
     text-decoration: none;
 }
 
-.dropdown-toggle {
-    // Bootstrap turns off focus outlines for menu buttons. This turns them back on the same as links.
-    &:focus {
-        @include tab-focus();
-    }
-}
-
 .action-menu {
     white-space: nowrap;
 }
 
-.action-menu .userpicture {
-    margin-left: 1rem;
-}
-
-.block img.resize,
-.breadcrumb img.resize {
+.block img.resize {
     height: 0.9em;
     width: 0.8em;
 }
@@ -298,17 +295,18 @@ form.popupform div {
     overflow: auto;
 }
 
+// Minimum height required for a menu in a table inside a scrollable div.
+// Position required for table sizing inside a flex container.
 .no-overflow > .generaltable {
+    position: relative;
     margin-bottom: 0;
+    min-height: 10em;
 }
 // Accessibility features
 
 // Accessibility: text 'seen' by screen readers but not visual users.
 .accesshide {
-    position: absolute;
-    left: -10000px;
-    font-weight: normal;
-    font-size: 1em;
+    @include sr-only();
 }
 
 span.hide,
@@ -1099,81 +1097,6 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
     text-align: center;
 }
 
-.initialbar {
-
-    overflow: auto;
-
-    .initialbarlabel {
-        display: inline-block;
-        width: 6em;
-        float: left;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    .initialbarall {
-        float: left;
-        width: 4em;
-        margin-bottom: 2px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    .initialbargroups {
-        float: left;
-    }
-
-    .initialbargroup {
-        float: left;
-        display: inline-block;
-        white-space: nowrap;
-        margin: 0;
-        padding: 0;
-
-        li {
-            float: left;
-            list-style: none;
-        }
-    }
-
-    .letter {
-        display: inline-block;
-        height: 1.5em;
-        min-width: 1.5em;
-        text-align: center;
-
-        color: $pagination-color;
-        border-width: $pagination-border-width;
-        border-color: $pagination-border-color;
-        border-style: solid;
-        background-color: $pagination-bg;
-    }
-    .letter:hover {
-        color: $pagination-hover-color;
-        border-color: $pagination-hover-border;
-        background-color: $pagination-hover-bg;
-    }
-
-    .letter.active {
-        color: $pagination-active-color;
-        border-color: $pagination-active-border;
-        background-color: $pagination-active-bg;
-    }
-
-}
-
-@media (max-width: 400px) {
-    .initialbar {
-        .letter {
-            /* This is chosen so that 23 letter at 320px just fits */
-            font-size: 11.5px;
-        }
-    }
-}
-
-
 /* Moodle Dialogue Settings (moodle-core-dialogue)  */
 .moodle-dialogue-base .moodle-dialogue-lightbox {
     background-color: $gray;
@@ -1248,6 +1171,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 
 .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd h1 {
     @extend .modal-title;
+    font-size: 1.5rem;
 }
 
 .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd .yui3-widget-buttons {
@@ -1267,7 +1191,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 }
 
 .moodle-dialogue-base .moodle-dialogue .moodle-dialogue-bd {
-    @extend .modal-body;
+    padding: 0.5rem;
 }
 
 .moodle-dialogue-base .moodle-dialogue-fullscreen .moodle-dialogue-content {
@@ -1326,10 +1250,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 }
 
 .moodle-dialogue-confirm .confirmation-message {
-    margin: 0.5em 1em;
-}
-.moodle-dialogue-confirm .confirmation-buttons {
-    text-align: right;
+    margin: 0.5rem 0;
 }
 
 .moodle-dialogue-confirm .confirmation-dialogue input {
@@ -1430,7 +1351,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 /* Fixed for safari browser on iPhone4S with ios7@mixin */
 
 @media (max-height: 639px) {
-    .ios.safari .choosercontainer #chooseform .submitbuttons {
+    .ios .choosercontainer #chooseform .submitbuttons {
         padding: 45px 0;
     }
 }
@@ -1832,18 +1753,6 @@ img#persona_signin {
     border-width: 0;
 }
 
-.breadcrumb-nav {
-    float: left;
-}
-
-.breadcrumb-button .singlebutton div {
-    margin-right: 0;
-}
-
-.breadcrumb-nav .breadcrumb {
-    margin: 0;
-}
-
 /** Page header */
 #page-header {
     .logo {
@@ -1854,16 +1763,9 @@ img#persona_signin {
     }
 }
 
-/** Header. */
-header {
-    .logo img {
-        max-height: 35px;
-    }
-    .collapse.in,
-    .collapsing {
-        display: block;
-        clear: both;
-    }
+/** Navbar logo. */
+nav.navbar .logo img {
+    max-height: 35px;
 }
 
 /** Header-bar styles **/
@@ -2156,6 +2058,9 @@ $footer-link-color: $bg-inverse-link-color !default;
     width: 100%;
     color: $body-color;
 }
+.dropdown-item:active a {
+    color: $dropdown-link-active-color;
+}
 
 .competency-tree {
     ul {
@@ -2177,6 +2082,7 @@ $footer-link-color: $bg-inverse-link-color !default;
 
 [data-drag-type="move"] {
     cursor: move;
+    touch-action: none;
 }
 
 .clickable {
@@ -2198,9 +2104,161 @@ $footer-link-color: $bg-inverse-link-color !default;
         transform: translate(-50%, -50%);
 
         .icon {
-            height: 40px;
-            width: 40px;
-
+            height: 30px;
+            width: 30px;
+            font-size: 30px;
         }
     }
+}
+
+.open.atto_menu > .dropdown-menu {
+    display: block;
+}
+div.editor_atto_toolbar button .icon {
+    color: $gray-700;
+}
+.w-auto {
+    width: auto;
+}
+
+.bg-pulse-grey {
+    animation: bg-pulse-grey 2s infinite linear;
+}
+
+@keyframes bg-pulse-grey {
+    0% {
+        background-color: $gray-100;
+    }
+    50% {
+        background-color: darken($gray-100, 5%);
+    }
+    100% {
+        background-color: $gray-100;
+    }
+}
+
+@each $size, $length in $spacers {
+    .line-height-#{$size} {
+        line-height: $length !important; /* stylelint-disable-line declaration-no-important */
+    }
+}
+
+.dir-rtl {
+    .dir-rtl-hide {
+        display: none;
+    }
+}
+
+.dir-ltr {
+    .dir-ltr-hide {
+        display: none;
+    }
+}
+
+$switch-height: ($input-height-inner * .8) !default;
+$switch-height-half: ($switch-height / 2) !default;
+$switch-border-radius: $switch-height !default;
+$switch-bg: $custom-control-indicator-bg !default;
+$switch-checked-bg: map-get($theme-colors, 'primary') !default;
+$switch-disabled-bg: $custom-control-indicator-disabled-bg !default;
+$switch-disabled-color: $custom-control-label-disabled-color !default;
+$switch-thumb-bg: $white !default;
+$switch-thumb-border-radius: 50% !default;
+$switch-thumb-padding: 2px !default;
+$switch-thumb-padding-double: ($switch-thumb-padding * 2) !default;
+$switch-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba(map-get($theme-colors, 'primary'), .25);
+$switch-transition: .2s all !default;
+
+.switch {
+    position: relative;
+
+    input {
+        float: left;
+        width: 1px;
+        transform: translateX(1px);
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+
+        + label {
+            position: relative;
+            min-height: $switch-height;
+            min-width: $switch-height * 2;
+            line-height: $switch-height;
+            border-radius: $switch-border-radius;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+            vertical-align: middle;
+            padding-left: (($switch-height * 2) + .5rem);
+        }
+
+        + label::before,
+        + label::after {
+            content: '';
+            position: absolute;
+            top: calc(50% - #{$switch-height-half});
+            left: 0;
+            width: ($switch-height * 2);
+            height: $switch-height;
+            bottom: 0;
+            display: block;
+        }
+
+        + label::before {
+            right: 0;
+            background-color: $switch-bg;
+            border-radius: $switch-border-radius;
+            transition: $switch-transition;
+        }
+
+        + label::after {
+            margin-top: $switch-thumb-padding;
+            left: $switch-thumb-padding;
+            width: calc(#{$switch-height} - #{$switch-thumb-padding-double});
+            height: calc(#{$switch-height} - #{$switch-thumb-padding-double});
+            border-radius: $switch-thumb-border-radius;
+            background-color: $switch-thumb-bg;
+            transition: $switch-transition;
+        }
+
+        &:checked + label::before {
+            background-color: $switch-checked-bg;
+        }
+
+        &:checked + label::after {
+            margin-left: $switch-height;
+        }
+
+        &:focus + label::before {
+            outline: none;
+            box-shadow: $switch-focus-box-shadow;
+        }
+
+        &:disabled + label {
+            color: $switch-disabled-color;
+            cursor: not-allowed;
+        }
+
+        &:disabled + label::before {
+            background-color: $switch-disabled-bg;
+        }
+    }
+}
+
+.paged-content-page-container {
+    min-height: 3.125rem;
+}
+
+.text-decoration-none {
+    text-decoration: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.position-right {
+    right: 0 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.z-index-1 {
+    z-index: 1 !important; /* stylelint-disable-line declaration-no-important */
 }

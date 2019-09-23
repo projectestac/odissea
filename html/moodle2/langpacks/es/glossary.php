@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,7 +115,9 @@ $string['defaultsortkey'] = 'Clave de clasificación por defecto';
 $string['defaultsortorder'] = 'Orden de clasificación por defecto';
 $string['definition'] = 'Definición';
 $string['definitions'] = 'Definiciones';
+$string['deletecategory'] = 'Eliminar categoría';
 $string['deleteentry'] = 'Borrar entrada';
+$string['deleteentrya'] = 'Eliminar entrada: {$a}';
 $string['deletenotenrolled'] = 'Eliminar entradas de usuarios no matriculados';
 $string['deletingcomment'] = 'Borrando comentario';
 $string['deletingnoneemptycategory'] = 'Eliminar una categoría no eliminará las entradas. Si desea eliminar las entradas tendrá que hacerlo manualmente.';

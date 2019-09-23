@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -336,53 +336,53 @@ namnet p&aring; f&ouml;rfattaren i varje artikel.</li>
 $string['searchindefinition'] = 'Sök i begrepp OCH definitioner?';
 $string['secondaryglossary'] = 'sekundär ord- och begreppslista';
 $string['showall'] = 'Visa länken \'ALLA\'';
-$string['showall_help'] = '<p>Du kan standardisera de s&auml;tt man kan anv&auml;nda
-f&ouml;r att s&ouml;ka sig igenom en ord- och begreppslista.
-Att s&ouml;ka p&aring; kategorier och datum g&aring;r alltid.
+$string['showall_help'] = '<p>Du kan ställa in de sätt man kan använda
+för att söka sig igenom en ord- och begreppslista.
+Att söka på kategorier och datum går alltid.
 Du kan dock ange ytterligare tre alternativ:</p>
 <p><b>VISA SPECIAL</b>
 <br />
-Aktivera eller avaktivera s&ouml;kning med hj&auml;lp av
+Aktivera eller avaktivera sökning med hjälp av
 specialtecken som @, #, etc.</p>
 <p><b>VISA ALFABETET</b>
 <br />
-Aktivera eller avaktivera s&ouml;kning med hj&auml;lp av bokst&auml;ver.</p>
+Aktivera eller avaktivera sökning med hjälp av bokstäver.</p>
 <p><b>VISA ALLA</b>
 <br />
-Aktivera eller avaktivera s&ouml;kning med hj&auml;lp av att
-visa alla bidrag p&aring; en g&aring;ng.</p>';
+Aktivera eller avaktivera sökning med hjälp av att
+visa alla bidrag på en gång.</p>';
 $string['showalphabet'] = 'Visa alfabetet';
-$string['showalphabet_help'] = '<p>Du kan standardisera de s&auml;tt man kan anv&auml;nda
-f&ouml;r att s&ouml;ka sig igenom en ord- och begreppslista.
-Att s&ouml;ka p&aring; kategorier och datum g&aring;r alltid.
+$string['showalphabet_help'] = '<p>Du kan ställa in de sätt man kan använda
+för att söka sig igenom en ord- och begreppslista.
+Att söka på kategorier och datum går alltid.
 Du kan dock ange ytterligare tre alternativ:</p>
 <p><b>VISA SPECIAL</b>
 <br />
-Aktivera eller avaktivera s&ouml;kning med hj&auml;lp av
+Aktivera eller avaktivera sökning med hjälp av
 specialtecken som @, #, etc.</p>
 <p><b>VISA ALFABETET</b>
 <br />
-Aktivera eller avaktivera s&ouml;kning med hj&auml;lp av bokst&auml;ver.</p>
+Aktivera eller avaktivera sökning med hjälp av bokstäver.</p>
 <p><b>VISA ALLA</b>
 <br />
-Aktivera eller avaktivera s&ouml;kning med hj&auml;lp av att
-visa alla bidrag p&aring; en g&aring;ng.</p>';
+Aktivera eller avaktivera sökning med hjälp av att
+visa alla bidrag på en gång.</p>';
 $string['showspecial'] = 'Visa länken \'Special\'';
-$string['showspecial_help'] = '<p>Du kan standardisera de s&auml;tt man kan anv&auml;nda
-f&ouml;r att s&ouml;ka sig igenom en ord- och begreppslista.
-Att s&ouml;ka p&aring; kategorier och datum g&aring;r alltid.
+$string['showspecial_help'] = '<p>Du kan ställa in de sätt man kan använda
+för att söka sig igenom en ord- och begreppslista.
+Att söka på kategorier och datum går alltid.
 Du kan dock ange ytterligare tre alternativ:</p>
 <p><b>VISA SPECIAL</b>
 <br />
-Aktivera eller avaktivera s&ouml;kning med hj&auml;lp av
+Aktivera eller avaktivera sökning med hjälp av
 specialtecken som @, #, etc.</p>
 <p><b>VISA ALFABETET</b>
 <br />
-Aktivera eller avaktivera s&ouml;kning med hj&auml;lp av bokst&auml;ver.</p>
+Aktivera eller avaktivera sökning med hjälp av bokstäver.</p>
 <p><b>VISA ALLA</b>
 <br />
-Aktivera eller avaktivera s&ouml;kning med hj&auml;lp av att
-visa alla bidrag p&aring; en g&aring;ng.</p>';
+Aktivera eller avaktivera sökning med hjälp av att
+visa alla bidrag på en gång.</p>';
 $string['sortby'] = 'Sortera efter';
 $string['sortbycreation'] = 'Enligt datum för tillkomst';
 $string['sortbylastupdate'] = 'Enligt senaste uppdateringen';

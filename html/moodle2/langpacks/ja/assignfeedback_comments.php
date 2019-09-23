@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,5 +37,6 @@ $string['pluginname'] = 'フィードバックコメント';
 $string['privacy:commentpath'] = 'フィードバックコメントです。';
 $string['privacy:metadata:assignmentid'] = '課題IDです。';
 $string['privacy:metadata:commentpurpose'] = 'コメントテキストです。';
+$string['privacy:metadata:filepurpose'] = '学生のための教師からのフィードバックファイルです。';
 $string['privacy:metadata:gradepurpose'] = 'コメントに関連する評定IDです。';
 $string['privacy:metadata:tablesummary'] = '学生の提出に対する評定者のフィードバックとして作成されたコメントが保存されます。';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_mnet', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_mnet_auto_add_remote_users'] = 'Se escolher "SIM", será criado automaticamente um registo de utilizador local sempre que um utilizador remoto entrar pela primeira vez.';
-$string['auth_mnetdescription'] = 'Os utilizadores são autenticados de acordo com a rede de confiança estabelecida na sua configuração da Rede Moodle.';
+$string['auth_mnetdescription'] = 'Os utilizadores são autenticados de acordo com a Rede de confiança estabelecida na sua configuração da Rede Moodle.';
 $string['auth_mnet_roamin'] = 'Os utilizadores registados nos servidores desta lista terão acesso a este site';
 $string['auth_mnet_roamout'] = 'Os utilizadores deste site poderão aceder remotamente aos seguintes servidores';
 $string['auth_mnet_rpc_negotiation_timeout'] = 'O tempo em segundos para autenticação sobre o transporte XMLRPC.';
 $string['auto_add_remote_users'] = 'Adicionar automaticamente utilizadores remotos';
 $string['pluginname'] = 'Rede Moodle';
 $string['privacy:metadata:external:mahara'] = 'Este módulo consegue enviar dados externamente para uma ligação da aplicação Mahara.';
-$string['privacy:metadata:external:moodle'] = 'Este módulo  consegue enviar dados externamente para uma ligacão da aplicação Moodle.';
+$string['privacy:metadata:external:moodle'] = 'Este módulo consegue enviar dados externamente para uma ligação da Aplicação móvel Moodle.';
 $string['privacy:metadata:mnet_external:address'] = 'A morada do utilizador.';
 $string['privacy:metadata:mnet_external:aim'] = 'O identificador AIM do utilizador.';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Um nome alternativo para o utilizador.';
@@ -56,9 +56,9 @@ $string['privacy:metadata:mnet_external:imagealt'] = 'Um texto alternativo à im
 $string['privacy:metadata:mnet_external:institution'] = 'A instituição de que este utilizador é membro';
 $string['privacy:metadata:mnet_external:lang'] = 'A preferência de utilizador para linguagem exibida.';
 $string['privacy:metadata:mnet_external:lastaccess'] = 'A data/hora em que o utilizador acedeu pela última vez.';
-$string['privacy:metadata:mnet_external:lastlogin'] = 'A ultima autenticação deste utilizador.';
-$string['privacy:metadata:mnet_external:lastname'] = 'O sobrenome do utilizador.';
-$string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Os detalhes fonéticos do sobrenome do utilizador.';
+$string['privacy:metadata:mnet_external:lastlogin'] = 'A última autenticação deste utilizador.';
+$string['privacy:metadata:mnet_external:lastname'] = 'O apelido do utilizador.';
+$string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Os detalhes fonéticos do apelido do utilizador.';
 $string['privacy:metadata:mnet_external:maildigest'] = 'A configuração para o envio de e-mails automáticos para este utilizador.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'A preferência para o utilizador sobre a exibição do seu e-mail para outros utilizadores.';
 $string['privacy:metadata:mnet_external:middlename'] = 'O nome do meio do utilizador';
@@ -88,11 +88,11 @@ $string['privacy:metadata:mnet_log:remoteid'] = 'O ID remoto do utilizador que l
 $string['privacy:metadata:mnet_log:time'] = 'Data em que a ação ocorreu';
 $string['privacy:metadata:mnet_log:url'] = 'URL do sistema remoto em que a ação ocorreu.';
 $string['privacy:metadata:mnet_log:userid'] = 'ID local do utilizador que levou a cabo a ação.';
-$string['privacy:metadata:mnet_session'] = 'Os detalhes de sessão de cada utilizador mNet num sistema remoto são armazenados temporariamente';
+$string['privacy:metadata:mnet_session'] = 'Detalhes de sessão de cada utilizador MNet num sistema remoto. Os dados são armazenados temporariamente';
 $string['privacy:metadata:mnet_session:expires'] = 'O tempo quando a sessão expira.';
 $string['privacy:metadata:mnet_session:mnethostid'] = 'ID Mnet do sistema remoto.';
 $string['privacy:metadata:mnet_session:token'] = 'Identificador de sessão única';
-$string['privacy:metadata:mnet_session:useragent'] = 'String indicativa do agente do utilizador pelo qual a página é acedida.';
+$string['privacy:metadata:mnet_session:useragent'] = 'Agente do utilizador para aceder ao sistema remoto.';
 $string['privacy:metadata:mnet_session:userid'] = 'O ID do utilizador a mudar para o sistema remoto.';
 $string['privacy:metadata:mnet_session:username'] = 'O nome de utilizador do utilizador a mudar para o sistema remoto.';
 $string['rpc_negotiation_timeout'] = 'Tempo limite para ligação RPC';

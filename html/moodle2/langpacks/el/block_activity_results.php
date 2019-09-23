@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_activity_results', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['config_decimalplaces'] = 'Δεκαδικές θέσεις προς εμ
 $string['config_format_absolute'] = 'Απόλυτοι αριθμοί';
 $string['config_format_fraction'] = 'Κλάσματα';
 $string['config_format_percentage'] = 'Ποσοστά';
-$string['config_grade_format'] = 'Προβολή βαθμών ως';
+$string['config_grade_format'] = 'Εμφάνιση βαθμών ως';
 $string['config_name_format'] = 'Ιδιωτικότητα αποτελεσμάτων';
 $string['config_names_anon'] = 'Ανώνυμα αποτελέσματα';
 $string['config_names_full'] = 'Εμφάνιση πλήρων ονομάτων';
@@ -47,7 +47,7 @@ $string['configuredtoshownothing'] = 'Αυτή τη στιγμή, οι ρυθμ�
 $string['config_use_groups'] = 'Εμφάνιση ομάδων αντί για μαθητές (μόνο αν η δραστηριότητα υποστηρίζει ομάδες);';
 $string['defaultdecimalplaces'] = 'Δεκαδικές θέσεις';
 $string['defaultdecimalplaces_desc'] = 'Αριθμός δεκαδικών θέσεων για εμφάνιση από προεπιλογή';
-$string['defaultgradedisplay'] = 'Προβολή βαθμών ως';
+$string['defaultgradedisplay'] = 'Εμφάνιση βαθμών ως';
 $string['defaultgradedisplay_desc'] = 'Πώς πρέπει να εμφανίζονται οι βαθμοί από προεπιλογή;';
 $string['defaulthighestgrades'] = 'Προεπιλογή υψηλότερων βαθμών που θα εμφανίζονται';
 $string['defaulthighestgrades_desc'] = 'Πόσοι από τους υψηλότερους βαθμούς να εμφανίζονται από προεπιλογή;';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lti', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -209,7 +209,7 @@ Aurrez konfiguratutako tresna aukeratu baduzu, ez duzu tresnaren URLa sartu beha
 $string['leaveblank'] = 'Hutsik utzi behar ez badituzu';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Gehitu ikastaroaren araberako tresna ezarpenak';
-$string['lti:addinstance'] = 'Gehitu kanpoko beste tresna baten jarduerak';
+$string['lti:addinstance'] = 'Gehitu kanpoko beste tresna bat';
 $string['lti:admin'] = 'Tresna abiaraztean izan zaitez kudeatzailea';
 $string['lti_administration'] = 'Editatu aurretik konfiguratutako tresna';
 $string['lti_errormsg'] = 'Tresnak ondoko errore-mezua itzuli du: "{$a}"';
@@ -229,14 +229,14 @@ $string['lti_tool_request_existing'] = 'Tresnaren domeinurako tresna-ezarpena da
 $string['ltiunknownserviceapicall'] = 'LTI zerbitzu ezezagun baten API deia';
 $string['lti:view'] = 'Abiarazi kanpoko tresnaren jarduerak';
 $string['main_admin'] = 'Laguntza orokorra';
-$string['main_admin_help'] = 'Kanpoko tresnek ahalbidetzen dute Moodle-erabiltzaileek urruneko ikasketa-baliabideekin etenik gabe eragitea. Abio-protokolo berezi batez, urruneko tresnak abiatzen duen erabiltzailearen informazio orokorrera sarbidea izango du. Adibidez, erakundearen izena, ikastaroaren IDa, eta erabiltzaile-izen edo e-postaren helbidea bezalako informazioa.
+$string['main_admin_help'] = 'Kanpoko tresnek Moodle-erabiltzaileek urruneko ikasketa-baliabideekin eragitea ahalbidetzen dute. Abio-protokolo berezi batez, urruneko tresnak abiatzen duen erabiltzailearen informazio orokorrera sarbidea du. Adibidez, erakundearen izena, ikastaroaren IDa, eta erabiltzaile-izen edo e-postaren helbidea bezalako informazioa.
 
 Orri honetan zerrendatutako tresnak hiru kategoriatan banatzen dira:
 
-* **Aktibo** - Tresna-hornitzaile hauek kudeatzaile batek onartu eta ezarri ditu. Moodle instantzia honetako ikastaroetan erabil daiteke. Kontsumitzaile-gakoa eta partekatutako sekretua sartuz gero, Moodle-ren instantzia eta urruneko tresnaren arteko konfiantzazko harremana ezartzen da, komunikazio-kanala segurua erabiliz.
+* **Aktibo** - Tresna-hornitzaile hauek kudeatzaile batek onartu eta ezarri ditu. Gune honetako edozein ikastarotan erabil daiteke. Kontsumitzaile-gakoa eta partekatutako sekretua sartuz gero, gune honen eta urruneko tresnaren arteko konfiantzazko harremana ezartzen da, komunikazio-kanal segurua erabiliz.
 * **Zain** - Tresna-hornitzaile hauek pakete-inportazioaz ezartzen dira, baina ez ditu kudeatzaile batek konfiguratu behar.
 Irakasleek hornitzaile hauen tresnak erabil ditzake kontsumitzaile-gakoa eta partekatutako sekretua baldin badauzka, edo holakorik eskatzen ez bada.
-* **Ezeztatu** - Kudeatzaileak tresna-hornitzaile hauek markatu ditu, Moodle-ren instantzia osoan erabili ahal izateko asmorik ez baitauka. Irakasleek hornitzaile hauen tresnak erabil ditzake kontsumitzaile-gakoa eta partekatutako sekretua baldin badauzka, edo holakorik eskatzen ez bada.';
+* **Ezeztatu** - Kudeatzaileak tresna-hornitzaile hauek markatu ditu, gune osoan erabili ahal izateko asmorik ez baitauka. Irakasleek hornitzaile hauen tresnak erabil ditzake kontsumitzaile-gakoa eta partekatutako sekretua baldin badauzka, edo holakorik eskatzen ez bada.';
 $string['manage_external_tools'] = 'Kudeatu tresnak';
 $string['manage_tool_proxies'] = 'Kudeatu kanpoko tresnen erregistroak';
 $string['manage_tools'] = 'Kudeatu aurretik konfiguratutako tresnak';
@@ -373,7 +373,7 @@ $string['return_to_course'] = 'Egin klik <a href="{$a->link}" target="_top">heme
 $string['saveallfeedback'] = 'Gorde nire feedback guztiak';
 $string['search:activity'] = 'Kanpoko tresna - jardueraren informazioa';
 $string['secure_icon_url'] = 'Ikono seguruaren URLa';
-$string['secure_icon_url_help'] = 'URL ikonoaren antzekoa, baina erabiltzailea Moodle-ra SSLren bidez sartzen denean erabilia. Eremu honen helburu nagusia nabigatzaileak arrisku-abisua ez erakustea da orrira SSLren bidez sartuz gero, baina segurua ez den irudia eskaturik.';
+$string['secure_icon_url_help'] = 'URL ikonoaren antzekoa, baina Moodle-ra modu seguruan SSLren bidez sartzen denean erabilia. Eremu hau nabigatzaileak irudi ez-seguruaren arrisku-abisua ez erakusteko erabiltzen da.';
 $string['secure_launch_url'] = 'Tresna seguruaren URLa';
 $string['secure_launch_url_help'] = 'URL tresnaren antzekoa, baina URL tresnaren ordez erabilia segurtasun-maila altua eskatzen denean. Moodle-k URL tresna segurua erabiliko du URL tresnaren odez, Moodle-ra SSLren bidez sartzen denean erabilia, edo konfigurazio-tresna ezarri bada beti SSLren bidez abiarazteko.
 
@@ -452,6 +452,8 @@ $string['tooltypenotdeleted'] = 'Ezin izan da aurrez ezarritako tresna ezabatu';
 $string['tooltypes'] = 'Tresnak';
 $string['tooltypeupdated'] = 'Aurrez ezarritako tresna eguneratu da';
 $string['toolurl'] = 'Tresnaren URLa';
+$string['toolurl_contentitemselectionrequest'] = 'Edukia aukeratzeko URLa';
+$string['toolurl_contentitemselectionrequest_help'] = 'Edukia aukeratzeko URLa erreminta-hornitzailetik edukia aukeratzeko orria irekitzeko erabiliko da. Hutsik badago, Erremintaren URLa erabiliko da';
 $string['toolurl_help'] = 'Tresnaren URLa erabiltzen da tresnaren konfigurazio zuzenarekin lotzeko. URLen aurretik http(s) jartzea hautazkoa da.
 
 Horrez gain, oinarrizko URLa tresnaren URL gisa erbiltzen da, kanpoko tresnaren instantzian URLrik zehaztu ezean.
@@ -479,8 +481,7 @@ Domeinu berean bi tresna-konfigurazio ezberdin badaude, hoberen egokitzen dena e
 Baldin badaukazu, URL kartxuoa sar dezakezu eta xehetasunak automatikoki beteko dira.';
 $string['toolurlplaceholder'] = 'Tresnaren URLa...';
 $string['typename'] = 'Tresnaren izena';
-$string['typename_help'] = 'Tresnaren izena tresna-hornitzailea Moodle-ren barruan identifikatzeko erabiltzen da.
-Izena irakasleek ikusi ahal izango dute, ikastaroen barruan kanpoko tresnak gehitzean.';
+$string['typename_help'] = 'Tresnaren izena Moodle-ren barruan tresna-hornitzailea identifikatzeko erabiltzen da. Izena irakasleek ikusi ahal izango dute, ikastaroen barruan kanpoko tresnak gehitzean.';
 $string['types'] = 'Motak';
 $string['unabletocreatetooltype'] = 'Ezin da tresna sortu';
 $string['unabletofindtooltype'] = '{$a->id}(e)rako tresna ezin izan da aurkitu';

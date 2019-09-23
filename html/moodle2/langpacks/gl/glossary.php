@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -154,6 +154,7 @@ $string['entrydeleted'] = 'Entrada eliminada';
 $string['entryexported'] = 'Entrada exportada correctamente';
 $string['entryishidden'] = '(esta entrada está actualmente agochada)';
 $string['entryleveldefaultsettings'] = 'Configuración predeterminada de nivel de entrada';
+$string['entrylink'] = 'Ligazón para entrar: {$a}';
 $string['entrysaved'] = 'Gardouse esta entrada';
 $string['entryupdated'] = 'Actualizouse esta entrada';
 $string['entryusedynalink'] = 'Esta entrada debería ser ligada automaticamente';
@@ -291,18 +292,18 @@ $string['resetglossaries'] = 'Eliminar as entradas desde';
 $string['resetglossariesall'] = 'Eliminar as entradas de todos os glosrios';
 $string['rssarticles'] = 'Número de artigos recentes en RSS';
 $string['rssarticles_help'] = 'Esta configuración especifica o número de conceptos do glosario para incluír na fonte RSS. Entre 5 e 20 é xeralmente aceptábel.';
-$string['rsssubscriberss'] = 'Presentar a fonte RSS de \'{$a}\' conceptos';
+$string['rsssubscriberss'] = 'Presentar a fonte RSS de «{$a}» conceptos';
 $string['rsstype'] = 'Fonte RSS desta actividade';
 $string['rsstype_help'] = 'Para activar a fonte RSS desta actividade, seleccione tanto conceptos con autor ou conceptos sen autor para ser incluídos na fonte.';
 $string['search:activity'] = 'Glosario - información de actividade';
 $string['search:entry'] = 'Glosario - entradas';
 $string['searchindefinition'] = 'Buscar o texto completo';
 $string['secondaryglossary'] = 'Glosario secundario';
-$string['showall'] = 'Amosar a ligazón \'TODO';
+$string['showall'] = 'Amosar a ligazón «TODO»';
 $string['showall_help'] = 'Se activado, os participantes poden ver todas as entradas á vez.';
 $string['showalphabet'] = 'Mostrar alfabeto';
 $string['showalphabet_help'] = 'Se activado, os participantes poder ver o glosario por letras do alfabeto.';
-$string['showspecial'] = 'Amosar a ligazón \'Especial';
+$string['showspecial'] = 'Amosar a ligazón «Especial»';
 $string['showspecial_help'] = 'Se activado, os participantes poden ver o glosario por caracteres especiais, tales como @ e #.';
 $string['sortby'] = 'Ordenar por';
 $string['sortbycreation'] = 'Por data de creación';

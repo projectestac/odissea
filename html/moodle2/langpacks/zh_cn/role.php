@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'role', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,9 @@ $string['allowoverride'] = '允许修改角色';
 $string['allowroletoassign'] = '允许属于角色{$a->fromrole}的用户分配{$a->targetrole}角色';
 $string['allowroletooverride'] = '允许属于角色{$a->fromrole}的用户修改{$a->targetrole}角色';
 $string['allowroletoswitch'] = '允许属于角色{$a->fromrole}的用户切换到角色{$a->targetrole}';
+$string['allowroletoview'] = '允许 {$a->fromrole}角色的用户查看角色{$a->targetrole}';
 $string['allowswitch'] = '允许角色切换';
+$string['allowview'] = '允许角色查看';
 $string['allsiteusers'] = '所有用户';
 $string['analytics:listinsights'] = '列出洞察力';
 $string['analytics:managemodels'] = '管理模型';
@@ -187,6 +189,7 @@ $string['course:reset'] = '重置课程';
 $string['course:reviewotherusers'] = '评论其他用户';
 $string['course:sectionvisibility'] = '控制小节可见性';
 $string['course:setcurrentsection'] = '设置当前小节';
+$string['course:setforcedlanguage'] = '强制课程语言';
 $string['course:tag'] = '更改课程标签';
 $string['course:update'] = '更新课程设置';
 $string['course:useremail'] = '启用/禁用Email地址';
@@ -228,6 +231,7 @@ $string['errorroleshortnametoolong'] = '短名称不能超过100字符';
 $string['eventroleallowassignupdated'] = '允许角色指派';
 $string['eventroleallowoverrideupdated'] = '允许角色覆盖';
 $string['eventroleallowswitchupdated'] = '允许角色切换';
+$string['eventroleallowviewupdated'] = '允许角色查看';
 $string['eventroleassigned'] = '指派角色';
 $string['eventrolecapabilitiesupdated'] = '更新角色权限';
 $string['eventroledeleted'] = '删除角色';
@@ -300,6 +304,7 @@ $string['notabletooverrideroleshere'] = '您不能在这里覆盖任何角色的
 $string['notes:manage'] = '管理备注';
 $string['notes:view'] = '查看备注';
 $string['notset'] = '未设置';
+$string['novisibleroles'] = '无角色';
 $string['overrideanotherrole'] = '修改另一个角色';
 $string['overridecontext'] = '修改场景';
 $string['overridepermissions'] = '修改权限';

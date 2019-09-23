@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradereport_history', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   gradereport_history
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['gradeold'] = 'Αρχικός βαθμός';
 $string['grader'] = 'Βαθμολογητής';
 $string['historyperpage'] = 'Καταχωρήσεις ιστορικού ανά σελίδα';
 $string['historyperpage_help'] = 'Η ρύθμιση καθορίζει τον αριθμό των';
-$string['history:view'] = 'Προβολή ιστορικού βαθμολογίας';
+$string['history:view'] = 'Εμφάνιση ιστορικού βαθμολογίας';
 $string['loadmoreusers'] = 'Φόρτωση περισσότερων χρηστών...';
 $string['pluginname'] = 'Ιστορικό βαθμών';
 $string['preferences'] = 'Προτιμήσεις ιστορικού βαθμού';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'grades', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -213,7 +213,13 @@ $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Fout bij het updaten v
 $string['errorupdatinggradecategoryaggregation'] = 'Fout bij het aanpassen van het aggregatietype van cijfercategorie ID {$a->id}';
 $string['errorupdatinggradeitemaggregationcoef'] = 'Fout bij het updaten van de aggregatiecoëfficiënt (weging of bonus) van beoordelingsitem ID {$a->id}';
 $string['eventgradedeleted'] = 'Cijfer verwijderd';
+$string['eventgradelettercreated'] = 'Beoordelingsletter gemaakt';
+$string['eventgradeletterdeleted'] = 'Beoordelingsletter verwijderd';
+$string['eventgradeletterupdated'] = 'Beoordelingsletter aangepast';
 $string['eventgradeviewed'] = 'Cijfers werden bekeken in de cijferlijst';
+$string['eventscalecreated'] = 'Schaal gemaakt';
+$string['eventscaledeleted'] = 'Schaal verwijderd';
+$string['eventscaleupdated'] = 'Schaal aangepast';
 $string['eventusergraded'] = 'Gebruikerscijfer';
 $string['excluded'] = 'Uitgesloten';
 $string['excluded_help'] = '<p>Als -uitgesloten- is ingesloten, dan zal dit cijfer niet gebruikt worden in aggregaties door bovenliggende beoordelingsitems of categorieën.</p>';
@@ -221,6 +227,7 @@ $string['expand'] = 'Categorie uitbreiden';
 $string['export'] = 'Exporteer';
 $string['exportalloutcomes'] = 'Exporteer alle competenties';
 $string['exportfeedback'] = 'Feedback opnemen in export';
+$string['exportfeedback_desc'] = 'Dit kan overschreven worden tijdens het exporteren.';
 $string['exportformatoptions'] = 'Opties exportformaat';
 $string['exportonlyactive'] = 'Geschorste gebruikers uitsluiten';
 $string['exportonlyactive_help'] = 'Enkel leerlingen in de export zetten van wie de aanmelding actief en niet geschorst is';
@@ -234,8 +241,10 @@ $string['extracreditwarning'] = 'Opmerking: als je alle items van een categorie 
 $string['feedback'] = 'Feedback';
 $string['feedbackadd'] = 'Voeg feedback toe';
 $string['feedbackedit'] = 'Bewerk feedback';
+$string['feedbackfiles'] = 'Feedbackbestanden';
 $string['feedbackforgradeitems'] = 'Feedback voor {$a}';
 $string['feedback_help'] = '<p>Notities die de leraar kan maken om bij de beoordelingen te voegen. Dit kan uitgebreide, gepersonaliseerde feedback zijn of een eenvoudige code die verwijst naar een intern systeem of feedback.</p>';
+$string['feedbackhistoryfiles'] = 'Feedback geschiedenis bestanden';
 $string['feedbacks'] = 'Feedback';
 $string['feedbacksaved'] = 'Feedback bewaard';
 $string['feedbackview'] = 'Bekijk feedback';
@@ -337,7 +346,7 @@ $string['gradepointmax_validateerror'] = 'Deze instelling moet een geheel getal 
 $string['gradepreferences'] = 'Beoordelingsvoorkeuren';
 $string['gradepreferenceshelp'] = 'Help bij voorkeursinstellingen';
 $string['gradepublishing'] = 'Publiceren inschakelen';
-$string['gradepublishing_help'] = 'Publiceren in import en export inschakelen: Geëxporteerde cijfers kunnen opgevraagd worden via een URL zonder te moeten inloggen. Cijfers kunnen door zo een URL te bezoeken ook geïmporteerd worden (wat betekent dat een Moodle site cijfers kan importeren die gepubliceerd worden door een andere site).';
+$string['gradepublishing_help'] = 'Cijfers publiceren is een manier van importeren en exporteren van cijfers via een URL zonder aangemeld te zijn in Moodle. Indien ingeschakeld krijgen beheerders en gebruikers met het recht om cijfers te publiceren (standaard enkel gebruikers met de manager rol) cijfer exportinstellingen in het puntenboek van elke cursus.';
 $string['gradepublishinglink'] = 'Download: {$a}';
 $string['gradereport'] = 'Beoordelingsrapport';
 $string['graderreport'] = 'Rapportage';
@@ -503,7 +512,7 @@ Bijvoorbeeld, als deze optie op \'ja\' gezet is, dan zal het wijzigen van het ma
 $string['modgradedonotmodify'] = 'Wijzig bestaande cijfers niet';
 $string['modgradeerrorbadpoint'] = 'Ongeldige cijferwaarde. Dit moet een natuurlijk getal zijn tussen 1 en {$a}';
 $string['modgradeerrorbadscale'] = 'Ongeldige schaal geselecteerd. Kies een schaal uit onderstaande selectie.';
-$string['modgrade_help'] = 'Selecteer het type sortering dat wordt gebruikt voor deze activiteit. Als &quot;schaal&quot; wordt gekozen, kun je vervolgens kiezen voor de schaal van de &quot;schaal&quot;-dropdown. Bij gebruik van &quot;punt&quot;-indeling, kun je vervolgens het maximale cijfer beschikbaar voor deze activiteit.';
+$string['modgrade_help'] = 'Selecteer het type beoordeling dat wordt gebruikt voor deze activiteit. Als "schaal" wordt gekozen, kun je vervolgens de schaal kiezen uit een rolmenu. Als je punt-beoordeling kiest, dan kun je het maximale cijfer invoeren dat bij deze activiteit behaald kan worden.';
 $string['modgrademaxgrade'] = 'Maximum cijfer';
 $string['modgraderescalegrades'] = 'Herschaal bestaande cijfers';
 $string['modgraderescalegrades_help'] = 'Wanneer je de maximumcijfers van een item in het puntenboek wijzigt, moet je specificeren of dit al dan niet bestaande percentages moet wijzigen.
@@ -618,6 +627,7 @@ $string['prefrows'] = 'Speciale rijen';
 $string['prefshow'] = 'Toon/verberg schakelaars';
 $string['previewrows'] = 'Voorbeeld rijen';
 $string['privacy:metadata:categorieshistory'] = 'Een record van eerdere versies van cijfer categorieën';
+$string['privacy:metadata:filepurpose'] = 'Feedback-bestanden die zijn opgeslagen in het puntenboek voor een gebruiker.';
 $string['privacy:metadata:grade_import_newitem'] = 'Tijdelijke tabel voor het opslaan van nieuwe cijfer_item-namen uit cijfer-import';
 $string['privacy:metadata:grade_import_newitem:importcode'] = 'Een unieke code voor de identificatie van een lading imports';
 $string['privacy:metadata:grade_import_newitem:importer'] = 'De gebruiker die de gegevens importeert';
@@ -635,12 +645,12 @@ $string['privacy:metadata:grades:aggregationweight'] = 'De weging in de aggregat
 $string['privacy:metadata:grades:feedback'] = 'De feedback';
 $string['privacy:metadata:grades:finalgrade'] = 'Het cijfer';
 $string['privacy:metadata:gradeshistory'] = 'Een record met de vorige cijfers';
-$string['privacy:metadata:grades:information'] = 'Wat bijkomende informatie';
+$string['privacy:metadata:grades:information'] = 'Bijkomende informatie over het cijfer';
 $string['privacy:metadata:grades:timemodified'] = 'Tijdstip waarop het cijfer laatst werd gewijzigd';
 $string['privacy:metadata:grades:userid'] = 'De ID van de eigenaar van het cijfer';
 $string['privacy:metadata:grades:usermodified'] = 'De ID van wie de record het laatst gewijzigd heeft';
 $string['privacy:metadata:history:loggeduser'] = 'De ID van de gebruiker die aangemeld was wanneer de versie gemaakt werd';
-$string['privacy:metadata:history:timemodified'] = 'Tijdstip waarop de versie gemaakt werd';
+$string['privacy:metadata:history:timemodified'] = 'Tijdstip waarop de cijferversie gemaakt werd';
 $string['privacy:metadata:itemshistory'] = 'Een record met vorige versies van cijfers';
 $string['privacy:metadata:outcomes'] = 'Een record met competenties';
 $string['privacy:metadata:outcomeshistory'] = 'Een record met vorige versies van competenties';
@@ -832,6 +842,7 @@ $string['userid'] = 'GebruikersID';
 $string['useridnumberwarning'] = 'Gebruikers zonder ID-nummer worden niet geëxporteerd vermits ze niet geïmporteerd kunnen worden.';
 $string['usermappingerror'] = 'Fout in het koppelen van gebruikers: kon geen gebruiker vinden met {$a->field} gelijk aan "{$a->value}".';
 $string['usermappingerrorcurrentgroup'] = 'Gebruiker is geen lid van huidige groep.';
+$string['usermappingerrormultipleusersfound'] = 'Fout bij het koppelen van gebruikers. Meerdere gebruikers gevonden met  {$a->field} of "{$a->value}". Gebruik een uniek veld om te koppelen.';
 $string['usermappingerrorusernotfound'] = 'Probleem met koppelen van van gebruiker. Kon gebruiker niet vinden.';
 $string['userpreferences'] = 'Gebruikersvoorkeuren';
 $string['useweighted'] = 'Gebruik weging';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['descriptionssourcelabel'] = 'URL voor het beschrijvingsspoor';
 $string['displayoptions'] = 'Toon-opties';
 $string['entername'] = 'Geef naam';
 $string['entersource'] = 'Bron-URL';
+$string['entertitle'] = 'Voer titel in';
 $string['enterurl'] = 'Geef URL';
 $string['height'] = 'Hoogte';
 $string['kind'] = 'Type';
@@ -66,7 +67,7 @@ $string['metadata'] = 'Metadata';
 $string['metadata_help'] = 'Sporen voor metadata, om te gebruiken via een script, mogen enkel gebruikt worden als de speler metadata ondersteunt.';
 $string['metadatasourcelabel'] = 'URL voor metadataspoor';
 $string['mute'] = 'Gedempt';
-$string['pluginname'] = 'Media';
+$string['pluginname'] = 'Audio- of videobestand invoegen of bewerken';
 $string['poster'] = 'URL voor miniatuurafbeelding';
 $string['privacy:metadata'] = 'De plugin atto_media slaat geen persoonlijke gegevens op.';
 $string['remove'] = 'Verwijder';

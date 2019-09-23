@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignsubmission_file', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,5 +49,5 @@ $string['nonexistentfiletypes'] = 'Οι ακόλουθοι τύποι αρχεί
 $string['numfilesforlog'] = 'Ο αριθμός των αρχείων: {$a} αρχεία.';
 $string['pluginname'] = 'Υποβολές αρχείων';
 $string['privacy:metadata:filepurpose'] = 'Τα αρχεία που φορτώθηκαν για αυτή την υποβολή εργασίας.';
-$string['siteuploadlimit'] = 'Όριο ταχύτητας upload του ιστοτόπου';
+$string['siteuploadlimit'] = 'Όριο ταχύτητας του ιστοτόπου για ανέβασμα';
 $string['submissionfilearea'] = 'Ανεβασμένα αρχεία υποβολής';

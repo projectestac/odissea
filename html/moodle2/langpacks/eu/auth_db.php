@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['auth_dbextencodinghelp'] = 'Erabiltzailearen kodifikazioa kanpoko datu-
 $string['auth_dbextrafields'] = '<p>Eremu hauek aukerazkoak dira. Moodle erabiltzaileen eremu batzuk hemen zehaztutako <b>kanpoko datu-base eremuetatik</b> aurrez betetzea erabaki dezakezu.</p><p>Hutsik uzten badituzu, lehenetsitako balioak erabiliko dira.</p><p>Edozein kasutan, erabiltzaileek eremu guztiak editatzeko aukera izango dute behin saioa hasita.</p>';
 $string['auth_dbfieldpass'] = 'Pasahitzak dituen eremuaren izena';
 $string['auth_dbfieldpass_key'] = 'Pasahitzaren eremua';
-$string['auth_dbfielduser'] = 'Erabiltzaile-izenak dituen eremuaren izena';
+$string['auth_dbfielduser'] = 'Erabiltzaile-izenak dituen eremuaren izena. Eremu honek varchar data moduko izan behar du.';
 $string['auth_dbfielduser_key'] = 'Erabiltzaile-izenaren eremua';
 $string['auth_dbhost'] = 'Datu-base zerbitzaria dagoen ordenagailua. ODBC erabiliz gero, erabil ezazu sistemako DSN sarrera bat. PDO erabiliz gero, erabil ezazu PDO DSN sarrera bat.';
 $string['auth_dbhost_key'] = 'Ostalaria';
@@ -68,14 +68,13 @@ $string['auth_dbsyncuserstask'] = 'Sinkronizatu erabiltzaileak zeregina';
 $string['auth_dbtable'] = 'Taularen izena datu-basean';
 $string['auth_dbtableempty'] = 'Kanpoko taula hutsik dago.';
 $string['auth_dbtable_key'] = 'Taula';
-$string['auth_dbtype'] = 'Datu-base mota (Ikus <a href="http://phplens.com/adodb/supported.databases.html">ADOdb documentation</a> xehetasun gahiagorako)';
+$string['auth_dbtype'] = 'Datu-base mota (ikusi dokumentazioa <a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - Database Abstraction Layer for PHP</a> zehaztasun gehiagorako).';
 $string['auth_dbtype_key'] = 'Datu-basea';
 $string['auth_dbupdateusers'] = 'Eguneratu erabiltzaileak';
 $string['auth_dbupdateusers_description'] = 'Erabiltzaile berriak sortzeaz gain, lehendik daudenak eguneratu.';
 $string['auth_dbupdatinguser'] = '{$a->name} id {$a->id} erabiltzailea eguneratzen';
 $string['auth_dbuser'] = 'Datu-basean irakurtzeko baimena duen erabiltzaile-izena';
 $string['auth_dbuser_key'] = 'Datu-basearen erabiltzailea';
-$string['auth_dbusernotexist'] = 'Ezin da existitzen ez den erabiltzailea eguneratu: {$a}';
 $string['auth_dbuserstoadd'] = 'Gehituko diren erabiltzailearen sarrerak: {$a}';
 $string['auth_dbuserstoremove'] = 'Ezabatuko diren erabiltzailearen sarrerak: {$a}';
 $string['pluginname'] = 'Kanpoko datu-basea';

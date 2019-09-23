@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['assignmentdisabled'] = 'The legacy "Assignment 2.2" activity is disable
 $string['assignment:exportownsubmission'] = 'Export own submission';
 $string['assignment:exportsubmission'] = 'Export submission';
 $string['assignment:grade'] = 'Grade assignment';
-$string['assignmentneedsupgrade'] = 'The legacy "Assignment 2.2" activity has been disabled. Please request that your site administrator runs the assignment upgrade tool for all legacy assignments in this site.';
+$string['assignmentneedsupgrade'] = 'The legacy "Assignment 2.2" activity has been removed.';
 $string['assignment:submit'] = 'Submit assignment';
 $string['assignment:view'] = 'View assignment';
 $string['messageprovider:assignment_updates'] = 'Assignment (2.2) notifications';
@@ -61,4 +61,3 @@ $string['privacy:metadata:assignment_submissions:timemodified'] = 'The modificat
 $string['privacy:metadata:assignment_submissions:userid'] = 'The user ID submitting the assignment submission.';
 $string['privacy:submissionpath'] = 'submission';
 $string['upgradenotification'] = 'This activity is based on an older assignment module.';
-$string['viewassignmentupgradetool'] = 'View the assignment upgrade tool';

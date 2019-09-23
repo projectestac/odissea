@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'label', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['indicator:socialbreadth'] = 'Étiquette : aspect social';
 $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Étiquette.';
 $string['label:addinstance'] = 'Ajouter une étiquette';
 $string['labeltext'] = 'Contenu de l\'étiquette';
-$string['label:view'] = 'Consulter une étiquette';
+$string['label:view'] = 'Consulter des étiquettes';
 $string['modulename'] = 'Étiquette';
 $string['modulename_help'] = 'Le module étiquette permet d\'insérer du texte ou des contenus multimédias dans la page du cours, entre les liens vers d\'autres ressources ou activités. Les étiquettes sont très polyvalentes et permettent d\'améliorer considérablement l\'aspect d\'un cours, lorsqu\'elles sont utilisées de façon adéquate.
 
@@ -51,5 +51,5 @@ Les étiquettes peuvent être utilisées pour :
 $string['modulenameplural'] = 'Étiquettes';
 $string['pluginadministration'] = 'Administration étiquette';
 $string['pluginname'] = 'Étiquette';
-$string['privacy:metadata'] = 'Le plugin mod_label n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de ressource Étiquette n\'enregistre aucune donnée personnelle.';
 $string['search:activity'] = 'Étiquette';

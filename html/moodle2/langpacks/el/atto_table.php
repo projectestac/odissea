@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_table', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_table
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,8 +39,8 @@ $string['borders'] = 'Περιγράμματα';
 $string['bordersize'] = 'Μέγεθος περιγράμματος';
 $string['borderstyles'] = 'Στυλ περιγράμματος';
 $string['both'] = 'Στήλες & Σειρές';
-$string['caption'] = 'Επεξήγηση';
-$string['captionposition'] = 'Θέση επεξήγησης';
+$string['caption'] = 'Λεζάντα';
+$string['captionposition'] = 'Θέση λεζάντας';
 $string['columns'] = 'Στήλες';
 $string['createtable'] = 'Δημιουργία πίνακα';
 $string['dashed'] = 'Διακεκομμένο';
@@ -53,7 +53,7 @@ $string['movecolumnleft'] = 'Μετακίνηση στήλης αριστερά'
 $string['movecolumnright'] = 'Μετακίνηση στήλης δεξιά';
 $string['moverowdown'] = 'Μετακίνηση σειράς κάτω';
 $string['moverowup'] = 'Μετακίνηση σειράς πάνω';
-$string['noborder'] = 'Χωρίς όρια';
+$string['noborder'] = 'Χωρίς περίγραμμα';
 $string['none'] = 'Κανένα';
 $string['numberofcolumns'] = 'Αριθμός στηλών';
 $string['numberofrows'] = 'Αριθμός σειρών';

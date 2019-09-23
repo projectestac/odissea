@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -371,7 +371,6 @@ $string['workshop:viewauthornames'] = 'Просматривать имена а�
 $string['workshop:viewauthorpublished'] = 'Просматривать авторов опубликованных работ';
 $string['workshop:viewpublishedsubmissions'] = 'Просматривать опубликованные работы';
 $string['workshop:viewreviewernames'] = 'Просматривать имена рецензентов';
-$string['yourassessment'] = 'Ваша оценка';
 $string['yourassessmentfor'] = 'Ваша оценка для {$a}';
 $string['yourgrades'] = 'Ваши оценки';
 $string['yoursubmission'] = 'Ваша работа';

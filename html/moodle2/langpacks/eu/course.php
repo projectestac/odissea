@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'course', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   course
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aria:courseimage'] = 'Ikastaroaren irudia';
+$string['aria:coursename'] = 'Ikastaroaren izena';
+$string['aria:courseshortname'] = 'Ikastaroaren izen laburra';
+$string['aria:favourite'] = 'Ikastaroa nabarmenduta dago';
+$string['favourite'] = 'Nabarmendutako ikastaroa';
 $string['privacy:completionpath'] = 'Ikastaro-osaketa';
-$string['privacy:metadata:completionsummary'] = 'Ikastaroak erabiltzaileari buruzko informazio osagarria dauka.';
+$string['privacy:favouritespath'] = 'Nabarmendutako ikastaroaren informazioa';
+$string['privacy:metadata:completionsummary'] = 'Ikastaroak erabiltzailearen osatze-informazioa gordetzen du.';
+$string['privacy:metadata:favouritessummary'] = 'Ikastaroak informazioa dauka erabiltzaileak izarrak egozten ari zaion ikastaroari buruz.';
 $string['privacy:perpage'] = 'Orriko erakusteko ikastaro-kopurua';

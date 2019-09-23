@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_equation', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_equation', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_equation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['librarygroup1'] = 'Operators';
 $string['librarygroup1_desc'] = 'TeX commands listed on the operators tab.';
 $string['librarygroup2'] = 'Arrows';
 $string['librarygroup2_desc'] = 'TeX commands listed on the arrows tab.';
-$string['librarygroup3'] = 'Greek Symbols';
+$string['librarygroup3'] = 'Greek symbols';
 $string['librarygroup3_desc'] = 'TeX commands listed on the Greek symbols tab.';
 $string['librarygroup4'] = 'Advanced';
 $string['librarygroup4_desc'] = 'TeX commands listed on the advanced tab.';

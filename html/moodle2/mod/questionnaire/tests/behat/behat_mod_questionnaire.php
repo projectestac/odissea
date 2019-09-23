@@ -19,7 +19,7 @@
  *
  * @package    mod_questionnaire
  * @category   test
- * @copyright  2016 Mike Churchward - The POET Group
+ * @copyright  2016 Mike Churchward - Poet Open Source
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -38,7 +38,7 @@ use Behat\Behat\Context\Step\Given as Given,
  *
  * @package    mod_questionnaire
  * @category   test
- * @copyright  2016 Mike Churchward - The POET Group
+ * @copyright  2016 Mike Churchward - Poet Open Source
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class behat_mod_questionnaire extends behat_base {
@@ -73,10 +73,7 @@ class behat_mod_questionnaire extends behat_base {
         // multiline data.
         $rows = $fielddata->getRows();
         $hashrows = $fielddata->getRowsHash();
-        $options = array();
         if (isset($hashrows['Possible answers'])) {
-            $options = explode(',', $hashrows['Possible answers']);
-            $rownum = -1;
             // Find the row that contained multiline data and add line breaks. Rows are two item arrays where the
             // first is an identifier and the second is the value.
             foreach ($rows as $key => $row) {
@@ -145,7 +142,7 @@ class behat_mod_questionnaire extends behat_base {
      */
     private function add_question_data($sid) {
         $questiondata = array(
-            array("id", "survey_id", "name", "type_id", "result_id", "length", "precise", "position", "content", "required",
+            array("id", "surveyid", "name", "type_id", "result_id", "length", "precise", "position", "content", "required",
                   "deleted", "dependquestion", "dependchoice"),
             array("1", $sid, "own car", "1", null, "0", "0", "1", "<p>Do you own a car?</p>", "y", "n", "0", "0"),
             array("2", $sid, "optional", "2", null, "20", "25", "3", "<p>What is the colour of your car?</p>", "y", "n", "121",
@@ -209,28 +206,16 @@ class behat_mod_questionnaire extends behat_base {
         global $DB;
 
         $responses = array(
-            array("id", "survey_id", "submitted", "complete", "grade", "userid"),
-            array("1", $sid, "1419011935", "y", "0", "2"),
-            array("2", $sid, "1449064371", "y", "0", "2"),
-            array("3", $sid, "1449258520", "y", "0", "2"),
-            array("4", $sid, "1452020444", "y", "0", "2"),
-            array("5", $sid, "1452804783", "y", "0", "2"),
-            array("6", $sid, "1452806547", "y", "0", "2"),
-            array("7", $sid, "1465415731", "n", "0", "2")
+            array("id", "questionnaireid", "submitted", "complete", "grade", "userid"),
+            array("1", $qid, "1419011935", "y", "0", "2"),
+            array("2", $qid, "1449064371", "y", "0", "2"),
+            array("3", $qid, "1449258520", "y", "0", "2"),
+            array("4", $qid, "1452020444", "y", "0", "2"),
+            array("5", $qid, "1452804783", "y", "0", "2"),
+            array("6", $qid, "1452806547", "y", "0", "2"),
+            array("7", $qid, "1465415731", "n", "0", "2")
         );
-
         $this->add_data($responses, 'questionnaire_response', 'responsemap');
-
-        $attempts = array(
-            array("id", "qid", "userid", "rid", "timemodified"),
-            array("", $qid, "2", "1", "1419011935"),
-            array("", $qid, "2", "2", "1449064371"),
-            array("", $qid, "2", "3", "1449258520"),
-            array("", $qid, "2", "4", "1452020444"),
-            array("", $qid, "2", "5", "1452804783"),
-            array("", $qid, "2", "6", "1452806547")
-        );
-        $this->add_data($attempts, 'questionnaire_attempts', '', array('responsemap' => 'rid'));
 
         $responsebool = array(
             array("id", "response_id", "question_id", "choice_id"),

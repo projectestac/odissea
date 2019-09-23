@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_tags', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_blog_tags', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   block_blog_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['blog_tags:addinstance'] = 'Afegeix un bloc d\'etiquetes del blog nou';
+$string['configtitle'] = 'Títol del bloc d\'etiquetes dels blogs';
 $string['pluginname'] = 'Etiquetes del blog';

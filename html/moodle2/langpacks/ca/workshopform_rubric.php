@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_rubric', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,5 +36,5 @@ $string['layoutlist'] = 'Llista';
 $string['levelgroup'] = 'Definició i gradació de nivells';
 $string['levels'] = 'Nivells';
 $string['mustbeunique'] = 'Les qualificacions d\'un nivell han de ser úniques dins d\'un criteri';
-$string['mustchooseone'] = 'Heu d\'escollir un d\'aquests ítems';
+$string['mustchooseone'] = 'Heu d\'escollir un d\'aquests elements';
 $string['pluginname'] = 'Rúbrica';

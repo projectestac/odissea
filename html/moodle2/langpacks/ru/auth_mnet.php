@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_mnet', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['privacy:metadata:mnet_external:firstaccess'] = 'Время первог
 $string['privacy:metadata:mnet_external:firstname'] = 'Имя пользователя.';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'Фонетические подробности об имени пользователя.';
 $string['privacy:metadata:mnet_external:icq'] = 'Номер ICQ пользователя.';
-$string['privacy:metadata:mnet_external:id'] = 'Идентификатор пользователя.';
+$string['privacy:metadata:mnet_external:id'] = 'ID пользователя.';
 $string['privacy:metadata:mnet_external:idnumber'] = 'Идентификационный номер, выданный организацией.';
 $string['privacy:metadata:mnet_external:imagealt'] = 'Альтернативный текст для изображения пользователя.';
 $string['privacy:metadata:mnet_external:institution'] = 'Организация, членом которой является этот пользователь.';
@@ -61,8 +61,8 @@ $string['privacy:metadata:mnet_external:lastname'] = 'Фамилия польз�
 $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Фонетические подробности о фамилии пользователя.';
 $string['privacy:metadata:mnet_external:maildigest'] = 'Настройка для дайджеста рассылки для этого пользователя.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'Настройка, показывающая отображать или нет адрес электронной почты пользователя другим пользователям.';
-$string['privacy:metadata:mnet_external:middlename'] = 'Отчество или второе имя пользователя.';
-$string['privacy:metadata:mnet_external:msn'] = 'Идентификатор MSN для пользователя.';
+$string['privacy:metadata:mnet_external:middlename'] = 'Отчество пользователя.';
+$string['privacy:metadata:mnet_external:msn'] = 'Идентификатор MSN пользователя.';
 $string['privacy:metadata:mnet_external:phone1'] = 'Телефонный номер пользователя.';
 $string['privacy:metadata:mnet_external:phone2'] = 'Дополнительный телефонный номер пользователя.';
 $string['privacy:metadata:mnet_external:picture'] = 'Информация об изображении, связанном с этим пользователем.';
@@ -83,7 +83,7 @@ $string['privacy:metadata:mnet_log:coursename'] = 'Полное название
 $string['privacy:metadata:mnet_log:hostid'] = 'MNet ID удаленной системы.';
 $string['privacy:metadata:mnet_log:info'] = 'Дополнительная информация о действии.';
 $string['privacy:metadata:mnet_log:ip'] = 'IP-адрес, использованный во время выполнения действия.';
-$string['privacy:metadata:mnet_log:module'] = 'Модуль удаленной системы, где возникло событие действия.';
+$string['privacy:metadata:mnet_log:module'] = 'Модуль удаленной системы, где произошло действие.';
 $string['privacy:metadata:mnet_log:remoteid'] = 'Удаленный ID пользователя, который выполнил действие в удаленной системе.';
 $string['privacy:metadata:mnet_log:time'] = 'Время, когда произошло действие.';
 $string['privacy:metadata:mnet_log:url'] = 'URL удаленной системы, в которой произошло действие.';
@@ -92,7 +92,7 @@ $string['privacy:metadata:mnet_session'] = 'Подробности каждой 
 $string['privacy:metadata:mnet_session:expires'] = 'Время окончания срока сессии.';
 $string['privacy:metadata:mnet_session:mnethostid'] = 'MNet ID удаленной системы.';
 $string['privacy:metadata:mnet_session:token'] = 'Уникальный идентификатор сессии.';
-$string['privacy:metadata:mnet_session:useragent'] = 'Строка, идентифицирующая пользовательского агента, обращающегося к странице.';
+$string['privacy:metadata:mnet_session:useragent'] = 'Пользовательский агент, используемый для доступа к удаленной системе';
 $string['privacy:metadata:mnet_session:userid'] = 'ID пользователя, переходящего в удаленную систему.';
 $string['privacy:metadata:mnet_session:username'] = 'Логин пользователя, переходящего в удаленную систему.';
 $string['rpc_negotiation_timeout'] = 'Тайм-аут передачи по протоколу RPC';

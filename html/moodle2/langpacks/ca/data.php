@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -274,18 +274,6 @@ $string['movezipfailed'] = 'No es pot moure el fitxer comprimit';
 $string['multientry'] = 'Entrada repetida';
 $string['multimenu'] = 'Menú (selecció múltiple)';
 $string['multipletags'] = 'S\'han trobat múltiples etiquetes. No s\'ha desat la plantilla.';
-$string['namecheckbox'] = 'Casella de selecció';
-$string['namedate'] = 'Data';
-$string['namefile'] = 'Camp de fitxer';
-$string['namelatlong'] = 'Camp de latitud/longitud';
-$string['namemenu'] = 'Camp de menú';
-$string['namemultimenu'] = 'Camp de menú de selecció múltiple';
-$string['namenumber'] = 'Nombre';
-$string['namepicture'] = 'Camp d\'imatge';
-$string['nameradiobutton'] = 'Botó d\'opció';
-$string['nametext'] = 'Camp de text';
-$string['nametextarea'] = 'Camp d\'àrea de text';
-$string['nameurl'] = 'Camp URL';
 $string['newentry'] = 'Nova entrada';
 $string['newfield'] = 'Crea un nou camp';
 $string['newfield_help'] = '<p align="center"><strong>Camps</strong></p>
@@ -373,6 +361,7 @@ $string['subplugintype_datafield'] = 'Tipus de camp de la base de dades';
 $string['subplugintype_datafield_plural'] = 'Els tipus de camp de la base de dades';
 $string['subplugintype_datapreset'] = 'Predefinit';
 $string['subplugintype_datapreset_plural'] = 'Predefinits';
+$string['tagarea_data_records'] = 'Entrades';
 $string['tags'] = 'Etiquetes';
 $string['teachersandstudents'] = '{$a->teachers} i {$a->students}';
 $string['templates'] = 'Plantilles';

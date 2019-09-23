@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'user', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,7 @@ $string['privacy:metadata:my_pages'] = 'Pagine dell\'utente - dashboard e profil
 $string['privacy:metadata:my_pages:name'] = 'Titolo della pagina.';
 $string['privacy:metadata:my_pages:private'] = 'Scelta di rendere la pagina privata (dashboard) o pubblica (profilo).';
 $string['privacy:metadata:password'] = 'Password dell\'utente per accedere al sistema.';
-$string['privacy:metadata:passwordresettablesummary'] = 'Tabella di tracciamento dei token di conferma reimpostazione password.';
+$string['privacy:metadata:passwordresettablesummary'] = 'Tabella di tracciamento token di conferma reset password';
 $string['privacy:metadata:passwordtablesummary'] = 'Log a rotazione degli hash delle password usate in precedenza dall\'utente.';
 $string['privacy:metadata:phone'] = 'Numero di telefono dell\'utente.';
 $string['privacy:metadata:picture'] = 'Dettagli dell\'immagine associata all\'utente.';
@@ -117,3 +117,8 @@ $string['privacy:metadata:usertablesummary'] = 'Questa tabella memorizza i dati 
 $string['privacy:metadata:uuid'] = 'UUID del dispositivo.';
 $string['privacy:metadata:version'] = 'Versione del dispositivo (6.1.2, 4.2.2, ecc)';
 $string['privacy:metadata:yahoo'] = 'Identificativo Yahoo dell\'utente.';
+$string['privacy:passwordhistorypath'] = 'Storico password';
+$string['privacy:passwordresetpath'] = 'Reimpostazioni password';
+$string['privacy:privatefilespath'] = 'File privati';
+$string['privacy:profileimagespath'] = 'Immagini del profilo';
+$string['privacy:sessionpath'] = 'Dati della sessione';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_jabber', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'message_jabber', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   message_jabber
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['jabberserver'] = 'Jabber-en zerbitzaria';
 $string['jabberusername'] = 'Jabber-en erabiltzaile-izena';
 $string['notconfigured'] = 'Jabber zerbitzaria ez da konfiguratu. Mezuak ezin dira bidali';
 $string['pluginname'] = 'Jabber';
-$string['privacy:metadata:contexturl'] = 'Ekitaldia ikusteko URLa';
+$string['privacy:metadata:contexturl'] = 'Ekitaldia ikusteko URLa.';
 $string['privacy:metadata:externalpurpose'] = 'Informazio hau kanpoko Jabber zerbitzari batera bidaltzen da jasotzaileari jakinarazpen gisa helarazteko.';
 $string['privacy:metadata:smallmessage'] = 'Mezuaren atala.';
 $string['privacy:metadata:userfrom'] = 'Jakinarazpen-mezua bidaltzen duen erabiltzailea.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_questioninstances', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_questioninstances', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   report_questioninstances
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['privacy:metadata'] = 'Το πρόσθετο «Στιγμιότυπα ε
 $string['questioninstances:view'] = 'Εμφάνιση αναφοράς στιγμιοτύπων ερώτησης';
 $string['reportforallqtypes'] = 'Αναφορά για όλους του τύπους ερώτησης';
 $string['reportformissingqtypes'] = 'Αναφορά για ερωτήσεις άγνωστων τύπων';
-$string['reportforqtype'] = 'Αναφορά για ερώτηση τύπου \'{$a}\'.';
+$string['reportforqtype'] = 'Αναφορά για ερώτηση τύπου «{$a}».';
 $string['reportsettings'] = 'Ρυθμίσεις αναφοράς';
 $string['totalquestions'] = 'Σύνολο';
 $string['visiblequestions'] = 'Ορατή';

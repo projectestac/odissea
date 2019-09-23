@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['err_nopunctuation'] = 'Sie dürfen hier keine Satzseichen verwenden.';
 $string['err_numeric'] = 'Sie müssen hier eine Zahl eingeben.';
 $string['err_rangelength'] = 'Sie müssen hier zwischen {$a->format[0]} und {$a->format[1]} Buchstaben eingeben.';
 $string['err_required'] = 'Sie müssen hier einen Wert eingeben.';
+$string['err_wrappingwhitespace'] = 'Der Wert darf nicht mit einem Leerzeichen anfangen oder enden.';
 $string['err_wrongfileextension'] = 'Die Dateien ({$a->wrongfiles}) konnten nicht hochgeladen werden. Es sind nur die Dateitypen {$a->whitelist} zugelassen.';
 $string['filesofthesetypes'] = 'Akzeptierte Dateitypen:';
 $string['filetypesany'] = 'Alle Dateitypen';
@@ -73,7 +74,6 @@ $string['passwordunmaskrevealhint'] = 'Klartext';
 $string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Kürzlich vewendeter Darstellungsmodus im Dateiauswahlelement';
 $string['privacy:preference:filemanager_recentviewmode'] = 'Der von Ihnen bevorzugte Wert zur Darstellung der Dateiliste ist: {$a}';
 $string['requiredelement'] = 'Pflichtfeld';
-$string['revealpassword'] = 'Klartext';
 $string['security'] = 'Sicherheit';
 $string['selectallornone'] = 'Alle/keine auswählen';
 $string['selected'] = 'Ausgewählt';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_responses', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_responses', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_responses
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,13 @@ $string['include'] = 'ضمِّن الـ';
 $string['mustselectcols'] = 'يجب عليك تضمين شيء.';
 $string['pagesize'] = 'قياس الصفحة';
 $string['pluginname'] = 'الإجابات';
+$string['privacy:preference:qtext'] = 'سواء لإظهار أعمدة نصّ السؤال.';
+$string['privacy:preference:resp'] = 'سواء لإظهار أعمدة استجابة الطلاب.';
+$string['privacy:preference:right'] = 'سواء لإظهار أعمدة الاستجابة الصحيحة.';
+$string['privacy:preference:which_tries'] = 'الذي يحاول إظهار الردود من.';
+$string['privacy:preference:which_tries:all'] = 'جميع المحاولات على السؤال أثناء المحاولة من قبل المستخدم.';
+$string['privacy:preference:which_tries:first'] = 'أول محاولة على سؤال أثناء المحاولة من قبل المستخدم.';
+$string['privacy:preference:which_tries:last'] = 'المحاولة الأخيرة على السؤال أثناء المحاولة من قبل المستخدم.';
 $string['questiontext'] = 'نص السؤال';
 $string['reportresponses'] = 'الإجابات';
 $string['response'] = 'الإجابة';
@@ -42,5 +49,8 @@ $string['responsestitle'] = 'اجابات مفصلة';
 $string['responsex'] = 'الإجابة {$a}';
 $string['rightanswer'] = 'الإجابة الصحيحة';
 $string['rightanswerx'] = 'الإجابة الصحيحة  {$a}';
+$string['showattempts'] = 'فقط اعرض/ حمّل  المحاولات';
 $string['showthe'] = 'اعرض الـ';
 $string['summaryofquestiontext'] = 'ملخص السؤال';
+$string['summaryofresponse'] = 'ملخص الاستجابة الفعلية';
+$string['summaryofrightanswer'] = 'ملخص الإجابة الصحيحة';

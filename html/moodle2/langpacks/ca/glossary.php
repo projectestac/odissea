@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -361,6 +361,7 @@ $string['sortchronogically'] = 'Ordena cronològicament';
 $string['special'] = 'Especial';
 $string['standardview'] = 'Navega alfabèticament';
 $string['studentcanpost'] = 'Els estudiants poden afegir entrades';
+$string['tagarea_glossary_entries'] = 'Entrades del glossari';
 $string['totalentries'] = 'Total d\'entrades';
 $string['usedynalink'] = 'Enllaça automàticament les entrades del glossari';
 $string['usedynalink_help'] = '<p>Activar aquesta característica permet que es creïn enllaços automàtics a les entrades del glossari sempre que apareguin les paraules o frases del concepte en qualsevol part del mateix curs: en els missatges dels fòrums, en recursos interns, en els resums de les setmanes o temes, etc.</p>

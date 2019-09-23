@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aggregategrades'] = 'Cijfers opnieuw berekenen';
+$string['aggregategrades'] = 'Cijfers herrekenen';
 $string['aggregation'] = 'Cijferaggregatie';
 $string['allocate'] = 'Inzendingen toewijzen';
 $string['allocatedetails'] = 'verwacht: {$a->expected}<br />ingestuurd: {$a->submitted}<br />toe te wijzen: {$a->allocate}';
@@ -41,27 +41,27 @@ $string['allsubmissions'] = 'Alle inzendingen ({$a})';
 $string['alreadygraded'] = 'Al beoordeeld';
 $string['areaconclusion'] = 'Conclusietekst';
 $string['areainstructauthors'] = 'Instructies voor insturen';
-$string['areainstructreviewers'] = 'Instructies voor beoordeling';
+$string['areainstructreviewers'] = 'Instructies voor evaluatie';
 $string['areaoverallfeedbackattachment'] = 'Algemene feedback bijlagen';
 $string['areaoverallfeedbackcontent'] = 'Algemene feedback teksten';
 $string['areasubmissionattachment'] = 'Bijlagen van de inzending';
 $string['areasubmissioncontent'] = 'Teksten van de inzending';
-$string['assess'] = 'Beoordeel';
-$string['assessedexample'] = 'Ingestuurd beoordelingsvoorbeeld';
-$string['assessedsubmission'] = 'Beoordeelde inzending';
-$string['assessingexample'] = 'Beoordeel voorbeeldinzending';
-$string['assessingsubmission'] = 'Beoordeel inzending';
-$string['assessment'] = 'Beoordeling';
+$string['assess'] = 'Evalueer';
+$string['assessedexample'] = 'Ingestuurd evaluatievoorbeeld';
+$string['assessedsubmission'] = 'Geëvalueerde inzending';
+$string['assessingexample'] = 'Evalueer voorbeeldinzending';
+$string['assessingsubmission'] = 'Evalueer inzending';
+$string['assessment'] = 'Evaluatie';
 $string['assessmentby'] = 'door <a href="{$a->url}">{$a->name}</a>';
-$string['assessmentbyfullname'] = 'Beoordeling door {$a}';
-$string['assessmentbyyourself'] = 'Jouw beoordeling';
-$string['assessmentdeleted'] = 'Beoordeling niet meer toegewezen';
-$string['assessmentend'] = 'Deadline voor beoordeling';
-$string['assessmentendbeforestart'] = 'De deadline voor beoordeling kan niet voor de openingsdatum van de evaluatie vallen';
-$string['assessmentenddatetime'] = 'Deadline voor beoordeling: {$a->daydatetime} ({$a->distanceday})';
+$string['assessmentbyfullname'] = 'Evaluatie door {$a}';
+$string['assessmentbyyourself'] = 'Jouw evaluatie';
+$string['assessmentdeleted'] = 'Evaluatie niet meer toegewezen';
+$string['assessmentend'] = 'Deadline voor evaluatie';
+$string['assessmentendbeforestart'] = 'De deadline voor evaluatie kan niet voor de openingsdatum van de evaluatie vallen';
+$string['assessmentenddatetime'] = 'Beoordelingsdeadline: {$a->daydatetime} ({$a->distanceday})';
 $string['assessmentendevent'] = '{$a} deadline voor beoordeling';
-$string['assessmentform'] = 'Beoordelingsformulier';
-$string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Evaluatie</a> van <a href="{$a->submissionurl}">{$a->submissiontitle}</a>';
+$string['assessmentform'] = 'Evaluatievorm';
+$string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Beoordeling</a> van <a href="{$a->submissionurl}">{$a->submissiontitle}</a>';
 $string['assessmentreference'] = 'Referentiebeoordeling';
 $string['assessmentreferenceconflict'] = 'Het is niet mogelijk om een voorbeeldtaak te beoordelen waarvoor je een referentiebeoordeling hebt voorzien.';
 $string['assessmentreferenceneeded'] = 'Je moet deze voorbeeldinzending beoordelen om een referentiebeoordeling te maken. Klik op de "Ga verder"-knop om de inzending te beoordelen. ';
@@ -70,9 +70,9 @@ $string['assessmentsettings'] = 'Beoordelingsinstellingen';
 $string['assessmentstart'] = 'Open voor beoordeling vanaf';
 $string['assessmentstartdatetime'] = 'Open voor beoordeling van {$a->daydatetime} ({$a->distanceday})';
 $string['assessmentstartevent'] = '{$a} gaat open voor beoordeling';
-$string['assessmentweight'] = 'Weging beoordeling';
+$string['assessmentweight'] = 'Weging evaluatie';
 $string['assignedassessments'] = 'Toegewezen inzendingen om te beoordelen';
-$string['assignedassessmentsnone'] = 'Je hebt geen inzending toegewezen om te beoordelen';
+$string['assignedassessmentsnone'] = 'Je hebt geen inzending toegewezen om te evalueren';
 $string['backtoeditform'] = 'Terug naar bewerkscherm';
 $string['byfullname'] = 'door <a href="{$a->url}">{$a->name}</a>';
 $string['byfullnamewithoutlink'] = 'bij {$a}';
@@ -116,7 +116,7 @@ $string['evaluategradeswait'] = 'Wacht tot de beoordelingen geëvalueerd zijn en
 $string['evaluation'] = 'Evaluatie van de beoordeling';
 $string['evaluationmethod'] = 'Methode voor de evaluatie van de beoordeling';
 $string['evaluationmethod_help'] = 'De beoordelingsevaluatiemethode bepaalt hoe het cijfer voor de beoordeling wordt berekend. Je kunt laten herberekenen met verschillende instellingen tenzij je tevreden bent met het resultaat.';
-$string['evaluationsettings'] = 'Instellingen voor het cijfer van de beoordeling';
+$string['evaluationsettings'] = 'Instellingen voor het cijfer van de evaluatie';
 $string['eventassessableuploaded'] = 'Er is een taak geüpload.';
 $string['eventassessmentevaluated'] = 'Beoordeling geëvalueerd';
 $string['eventassessmentevaluationsreset'] = 'Beoordelingsevaluaties gereset';
@@ -168,10 +168,10 @@ $string['gradeitemassessment'] = '{$a->workshopname} (Beoordeling)';
 $string['gradeitemsubmission'] = '{$a->workshopname} (taak)';
 $string['gradeover'] = 'Cijfer voor taak overschrijven';
 $string['gradereceivedfrom'] = '&lt;';
-$string['gradesreport'] = 'Workshop cijferrapport';
+$string['gradesreport'] = 'Workshop cijfer rapport';
 $string['gradetopassgrading'] = 'Beoordelingscijfer om te slagen';
 $string['gradetopasssubmission'] = 'Instuurcijfer om te slagen';
-$string['gradinggrade'] = 'Cijfer voor beoordeling';
+$string['gradinggrade'] = 'Cijfer voor evaluatie';
 $string['gradinggradecalculated'] = 'Berekend cijfer voor beoordeling';
 $string['gradinggrade_help'] = 'Deze instelling bepaalt het maximumcijfer dat kan behaald worden voor de beoordeling van een taak.';
 $string['gradinggradeof'] = 'Cijfer voor beoordeling (van {$a})';
@@ -209,6 +209,7 @@ $string['noexamplesformready'] = 'Je moet het beoordelingsformulier maken voor j
 $string['nogradeyet'] = 'Nog geen cijfer';
 $string['nosubmissionfound'] = 'Nog geen inzending gevonden voor deze gebruiker';
 $string['nosubmissions'] = 'Nog geen inzendingen in deze workshop';
+$string['nosubmissiontype'] = 'Ten minste één inzendtype moet beschikbaar zijn';
 $string['notassessed'] = 'Nog niet beoordeeld';
 $string['nothingfound'] = 'Niets om te tonen';
 $string['nothingtoreview'] = 'Niets om te beoordelen';
@@ -337,6 +338,12 @@ $string['submissionstart'] = 'Inzenden kan vanaf';
 $string['submissionstartdatetime'] = 'Taak afgeven open vanaf {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} gaat open voor insturen';
 $string['submissiontitle'] = 'Titel';
+$string['submissiontypedisabled'] = 'Dit type inzending is uitgeschakeld voor deze workshop.';
+$string['submissiontypefileavailable'] = 'Bestandsbijlage <span class="accesshide"> beschikbaar </span>';
+$string['submissiontypefilerequired'] = '<span class="accesshide"> Bestandsbijlage </span> vereist';
+$string['submissiontypes'] = 'Inzendtypes';
+$string['submissiontypetextavailable'] = 'Online tekst <span class="accesshide"> beschikbaar </span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide"> Online tekst </span> vereist';
 $string['submittednotsubmitted'] = 'Ingestuurd ({$a->submitted}) / niet ingestuurd ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Toewijzingsmethode voor taken';
 $string['subplugintype_workshopallocation_plural'] = 'Toewijzingsmethodes';
@@ -412,7 +419,6 @@ $string['workshop:viewauthornames'] = 'Bekijk de namen';
 $string['workshop:viewauthorpublished'] = 'Bekijk de namen van de gepubliceerde taken';
 $string['workshop:viewpublishedsubmissions'] = 'Bekijk gepubliceerde taken';
 $string['workshop:viewreviewernames'] = 'Bekijk de namen van de beoordelaars';
-$string['yourassessment'] = 'Jouw beoordeling';
 $string['yourassessmentfor'] = 'Jouw beoordeling voor {$a}';
 $string['yourgrades'] = 'Jouw cijfers';
 $string['yoursubmission'] = 'Jouw taak';

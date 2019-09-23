@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['auth_dbextencodinghelp'] = 'Encodage des caractères utilisé dans la b
 $string['auth_dbextrafields'] = '<p>Ces zones sont facultatives. Il vous est possible de remplir certains champs de Moodle avec des données provenant des <strong>champs de la base de données externe</strong>.</p><p>Si vous laissez ces zones vides, les valeurs par défaut seront utilisées.</p><p>Dans tous les cas, l\'utilisateur a la possibilité de modifier tous ces champs, une fois connecté.</p>';
 $string['auth_dbfieldpass'] = 'Nom du champ contenant les mots de passe';
 $string['auth_dbfieldpass_key'] = 'Champ mot de passe';
-$string['auth_dbfielduser'] = 'Nom du champ contenant les noms d\'utilisateurs';
+$string['auth_dbfielduser'] = 'Nom du champ contenant les noms d\'utilisateurs. Le type de ce champ doit être varchar.';
 $string['auth_dbfielduser_key'] = 'Champ nom d\'utilisateur';
 $string['auth_dbhost'] = 'Ordinateur hébergeant le serveur de base de données. Si vous utilisez ODBC, indiquez un entrée système DSN. Si vous utilisez PDO, indiquez une entrée PDO DSN.';
 $string['auth_dbhost_key'] = 'Serveur';
@@ -75,7 +75,6 @@ $string['auth_dbupdateusers_description'] = 'Insérer les nouveaux utilisateurs 
 $string['auth_dbupdatinguser'] = 'Modification de l\'utilisateur {$a->name} id {$a->id}';
 $string['auth_dbuser'] = 'Compte avec accès en lecture à la base de données';
 $string['auth_dbuser_key'] = 'Utilisateur de la base de données';
-$string['auth_dbusernotexist'] = 'Impossible de modifier l\'utilisateur {$a}, qui n\'existe pas';
 $string['auth_dbuserstoadd'] = 'Enregistrements utilisateurs à ajouter : {$a}';
 $string['auth_dbuserstoremove'] = 'Enregistrements utilisateurs à supprimer : {$a}';
 $string['pluginname'] = 'Base de données externe';

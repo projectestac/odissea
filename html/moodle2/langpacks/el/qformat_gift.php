@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qformat_gift', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   qformat_gift
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['giftqtypenotset'] = 'Ο τύπος ερώτησης δεν έχει ο�
 $string['giftrightbraceerror'] = 'Δεν ήταν δυνατή η εύρεση }';
 $string['importminerror'] = 'Υπάρχει ένα σφάλμα στην ερώτηση. Δεν υπάρχουν αρκετές απαντήσεις για αυτόν τον τύπο ερώτησης';
 $string['nohandler'] = 'Δεν υπάρχει χειριστής για ερωτήσεις τύπου {$a}';
-$string['pluginname'] = 'Μορφότυπος ερωτήσεων GIFT';
-$string['pluginname_help'] = 'Ο μορφότυπος GIFT επιτρέπει την εισαγωγή ή εξαγωγή μέσω αρχείου κειμένου, ερωτήσεων πολλαπλών επιλογών, σωστού/λάθους, σύντομης απάντησης, αντιστοίχισης, λέξης που λείπει, έκθεσης και αριθμητικών ερωτήσεων.';
-$string['privacy:metadata'] = 'Το πρόσθετο «Μορφότυπος ερωτήσεων GIFT» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['pluginname'] = 'Μορφότυπος GIFT';
+$string['pluginname_help'] = 'Ο μορφότυπος GIFT (General Import Format Template) επιτρέπει την εισαγωγή ή εξαγωγή μέσω αρχείου κειμένου, ερωτήσεων πολλαπλών επιλογών, σωστού/λάθους, σύντομης απάντησης, αντιστοίχισης, λέξης που λείπει, έκθεσης και αριθμητικών ερωτήσεων.';
+$string['pluginname_link'] = 'qformat/GIFT';
+$string['privacy:metadata'] = 'Το πρόσθετο «Μορφότυπος GIFT» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

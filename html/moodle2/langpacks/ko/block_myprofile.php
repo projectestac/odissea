@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_myprofile', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,6 @@ $string['display_phone1'] = '전화번호 1 공개';
 $string['display_phone2'] = '전화번호 2 공개';
 $string['display_picture'] = '사진 공개';
 $string['display_skype'] = 'Skype 아이디 공개';
-$string['display_un'] = '이름 공개';
 $string['display_yahoo'] = 'Yahoo 아이디 공개';
 $string['myprofile:addinstance'] = '로그인 사용자 블록 추가';
 $string['myprofile:myaddinstance'] = '내 공부방에 로그인 사용자 블록 추가';

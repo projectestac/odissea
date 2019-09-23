@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'wiki', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -228,10 +228,10 @@ $string['privacy:metadata:wiki_pages:cachedcontent'] = 'Conteúdo em cache em fo
 $string['privacy:metadata:wiki_pages:pageviews'] = 'Número de vezes que a página foi vista';
 $string['privacy:metadata:wiki_pages:readonly'] = 'Se a página é apenas de leitura';
 $string['privacy:metadata:wiki_pages:timecreated'] = 'Hora em que a página foi criada pela primeira vez';
-$string['privacy:metadata:wiki_pages:timemodified'] = 'Hora em que a página foi modificada pela última vez';
-$string['privacy:metadata:wiki_pages:timerendered'] = 'Hora em que a página foi processada pela última vez';
+$string['privacy:metadata:wiki_pages:timemodified'] = 'Data/Hora da última modificação da página';
+$string['privacy:metadata:wiki_pages:timerendered'] = 'Data/Hora em que a página foi processada pela última vez';
 $string['privacy:metadata:wiki_pages:title'] = 'Nome da página';
-$string['privacy:metadata:wiki_pages:userid'] = 'último utilizador a editar a página';
+$string['privacy:metadata:wiki_pages:userid'] = 'Último utilizador que editou a página';
 $string['privacy:metadata:wiki_subwikis'] = 'Informação sobre subwikis (em caso de modo grupo ou individual)';
 $string['privacy:metadata:wiki_subwikis:groupid'] = 'Grupo a que pertence a subwiki';
 $string['privacy:metadata:wiki_subwikis:userid'] = 'Utilizador a que pertence a subwiki (em caso de wikis individuais)';

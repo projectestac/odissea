@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'url', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['popupwidth'] = 'Breedte pop-upvenster (in pixels)';
 $string['popupwidthexplain'] = 'Bepaalt de standaardbreedte van pop-upvensters';
 $string['printintro'] = 'Toon URL-beschrijving';
 $string['printintroexplain'] = 'Toon URL-beschrijving onder de inhoud? Sommige schermtypes zullen dit niet kunnen tonen, zelfs niet als dit ingeschakeld is.';
+$string['privacy:metadata'] = 'De URL bron-plugin bewaart geen persoonlijke gegevens.';
 $string['rolesinparams'] = 'Rolnamen mee opnemen in parameters';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'Server URL';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cache', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,7 +56,7 @@ $string['cachedef_htmlpurifier'] = 'HTML Purifier - eduki garbitua';
 $string['cachedef_langmenu'] = 'Eskura dauden hizkuntzen zerrenda';
 $string['cachedef_locking'] = 'Blokeatzen';
 $string['cachedef_message_processors_enabled'] = 'Gaitutako mezu-prozesatzaileen egoera';
-$string['cachedef_message_time_last_message_between_users'] = 'Orain dela gutxiko erabiltzaileen arteko mezuen sorrera data';
+$string['cachedef_message_time_last_message_between_users'] = 'Orain dela gutxiko erabiltzaileen arteko mezuen sorrera-unea';
 $string['cachedef_navigation_expandcourse'] = 'Nabigazio hedagarriko ikastaroak';
 $string['cachedef_observers'] = 'Ekitaldi behatzaileak';
 $string['cachedef_plugin_functions'] = 'Pluginen callback eskuragarriak';

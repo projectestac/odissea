@@ -23,7 +23,6 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
-require_once($CFG->libdir . '/coursecatlib.php');
 require_once($CFG->dirroot . '/cache/lib.php');
 require_once($CFG->dirroot . '/backup/util/includes/backup_includes.php');
 require_once($CFG->dirroot . '/backup/util/includes/restore_includes.php');
@@ -227,7 +226,7 @@ class tool_uploadcourse_helper {
         }
 
         // If we don't use the cache, or if we do and not set, or the directory doesn't exist any more.
-        if (!$usecache || (($backupid = $cache->get($cachekey)) === false || !is_dir("$CFG->tempdir/backup/$backupid"))) {
+        if (!$usecache || (($backupid = $cache->get($cachekey)) === false || !is_dir(get_backup_temp_directory($backupid)))) {
 
             // Use null instead of false because it would consider that the cache key has not been set.
             $backupid = null;
@@ -236,7 +235,7 @@ class tool_uploadcourse_helper {
                 // Extracting the backup file.
                 $packer = get_file_packer('application/vnd.moodle.backup');
                 $backupid = restore_controller::get_tempdir_name(SITEID, $USER->id);
-                $path = "$CFG->tempdir/backup/$backupid/";
+                $path = make_backup_temp_directory($backupid, false);
                 $result = $packer->extract_to_pathname($backupfile, $path);
                 if (!$result) {
                     $errors['invalidbackupfile'] = new lang_string('invalidbackupfile', 'tool_uploadcourse');
@@ -285,6 +284,25 @@ class tool_uploadcourse_helper {
             $cache->set('roles', $roles);
         }
         return $roles;
+    }
+
+    /**
+     * Helper to detect how many sections a course with a given shortname has.
+     *
+     * @param string $shortname shortname of a course to count sections from.
+     * @return integer count of sections.
+     */
+    public static function get_coursesection_count($shortname) {
+        global $DB;
+        if (!empty($shortname) || is_numeric($shortname)) {
+            // Creating restore from an existing course.
+            $course = $DB->get_record('course', array('shortname' => $shortname));
+        }
+        if (!empty($course)) {
+            $courseformat = course_get_format($course);
+            return $courseformat->get_last_section_number();
+        }
+        return 0;
     }
 
     /**
@@ -379,7 +397,7 @@ class tool_uploadcourse_helper {
         $catid = null;
 
         if (!empty($data['category'])) {
-            $category = coursecat::get((int) $data['category'], IGNORE_MISSING);
+            $category = core_course_category::get((int) $data['category'], IGNORE_MISSING);
             if (!empty($category) && !empty($category->id)) {
                 $catid = $category->id;
             } else {

@@ -105,35 +105,16 @@ abstract class user_selector_base {
             $this->accesscontext = context_system::instance();
         }
 
-        // Populate the list of additional user identifiers to display.
+        // Check if some legacy code tries to override $CFG->showuseridentity.
         if (isset($options['extrafields'])) {
-            $this->extrafields = $options['extrafields'];
-        } else if (!empty($CFG->showuseridentity) &&
-                has_capability('moodle/site:viewuseridentity', $this->accesscontext)) {
-            $this->extrafields = explode(',', $CFG->showuseridentity);
-        } else {
-            $this->extrafields = array();
+            debugging('The user_selector classes do not support custom list of extra identity fields any more. '.
+                'Instead, the user identity fields defined by the site administrator will be used to respect '.
+                'the configured privacy setting.', DEBUG_DEVELOPER);
+            unset($options['extrafields']);
         }
 
-        // Filter out hidden identifiers if the user can't see them.
-        $hiddenfields = array_filter(explode(',', $CFG->hiddenuserfields));
-        $hiddenidentifiers = array_intersect($this->extrafields, $hiddenfields);
-
-        if ($hiddenidentifiers) {
-            if ($this->accesscontext->get_course_context(false)) {
-                // We are somewhere inside a course.
-                $canviewhiddenuserfields = has_capability('moodle/course:viewhiddenuserfields', $this->accesscontext);
-
-            } else {
-                // We are not inside a course.
-                $canviewhiddenuserfields = has_capability('moodle/user:viewhiddendetails', $this->accesscontext);
-            }
-
-            if (!$canviewhiddenuserfields) {
-                // Remove hidden identifiers from the list.
-                $this->extrafields = array_diff($this->extrafields, $hiddenidentifiers);
-            }
-        }
+        // Populate the list of additional user identifiers to display.
+        $this->extrafields = get_extra_user_fields($this->accesscontext);
 
         if (isset($options['exclude']) && is_array($options['exclude'])) {
             $this->exclude = $options['exclude'];
@@ -909,7 +890,15 @@ class group_non_members_selector extends groups_user_selector_base {
         list($searchcondition, $searchparams) = $this->search_sql($search, 'u');
 
         // Build the SQL.
-        list($enrolsql, $enrolparams) = get_enrolled_sql($context);
+        $enrolledjoin = get_enrolled_join($context, 'u.id');
+
+        $wheres = [];
+        $wheres[] = $enrolledjoin->wheres;
+        $wheres[] = 'u.deleted = 0';
+        $wheres[] = 'gm.id IS NULL';
+        $wheres = implode(' AND ', $wheres);
+        $wheres .= ' AND ' . $searchcondition;
+
         $fields = "SELECT r.id AS roleid, u.id AS userid,
                           " . $this->required_fields_sql('u') . ",
                           (SELECT count(igm.groupid)
@@ -917,18 +906,16 @@ class group_non_members_selector extends groups_user_selector_base {
                              JOIN {groups} ig ON igm.groupid = ig.id
                             WHERE igm.userid = u.id AND ig.courseid = :courseid) AS numgroups";
         $sql = "   FROM {user} u
-                   JOIN ($enrolsql) e ON e.id = u.id
+                   $enrolledjoin->joins
               LEFT JOIN {role_assignments} ra ON (ra.userid = u.id AND ra.contextid $relatedctxsql AND ra.roleid $roleids)
               LEFT JOIN {role} r ON r.id = ra.roleid
               LEFT JOIN {groups_members} gm ON (gm.userid = u.id AND gm.groupid = :groupid)
-                  WHERE u.deleted = 0
-                        AND gm.id IS NULL
-                        AND $searchcondition";
+                  WHERE $wheres";
 
         list($sort, $sortparams) = users_order_by_sql('u', $search, $this->accesscontext);
         $orderby = ' ORDER BY ' . $sort;
 
-        $params = array_merge($searchparams, $roleparams, $enrolparams, $relatedctxparams);
+        $params = array_merge($searchparams, $roleparams, $relatedctxparams, $enrolledjoin->params);
         $params['courseid'] = $this->courseid;
         $params['groupid']  = $this->groupid;
 

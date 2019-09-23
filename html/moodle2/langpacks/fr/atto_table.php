@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_table', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_table
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['addrowafter'] = 'Ajouter une rangée après';
 $string['all'] = 'Autour de chaque cellule';
 $string['allowbackgroundcolour'] = 'Permettre une couleur de fond';
 $string['allowborder'] = 'Permettre la personnalisation des bordures';
-$string['allowborder_desc'] = 'Si ce réglage est activé, les bordures des tables et des cellules peuvent être personnalisées.';
+$string['allowborder_desc'] = 'Si ce réglage est activé, les bordures des tableaux et des cellules peuvent être personnalisées.';
 $string['allowwidth'] = 'Permettre de définir la largeur';
 $string['appearance'] = 'Apparence';
 $string['backgroundcolour'] = 'Couleur de fond';
@@ -42,12 +42,12 @@ $string['both'] = 'Les deux';
 $string['caption'] = 'Légende';
 $string['captionposition'] = 'Position de la légende';
 $string['columns'] = 'Colonnes';
-$string['createtable'] = 'Créer une table';
+$string['createtable'] = 'Créer un tableau';
 $string['dashed'] = 'Traitillé';
 $string['deletecolumn'] = 'Supprimer colonne';
 $string['deleterow'] = 'Supprimer rangée';
 $string['dotted'] = 'Pointillé';
-$string['edittable'] = 'Modifier table';
+$string['edittable'] = 'Modifier tableau';
 $string['headers'] = 'Définir les entêtes';
 $string['movecolumnleft'] = 'Déplacer la colonne vers la gauche';
 $string['movecolumnright'] = 'Déplacer la colonne vers la droite';
@@ -57,13 +57,13 @@ $string['noborder'] = 'Aucune bordure';
 $string['none'] = 'Aucune';
 $string['numberofcolumns'] = 'Nombre de colonnes';
 $string['numberofrows'] = 'Nombre de rangées';
-$string['outer'] = 'Autour de la table';
-$string['pluginname'] = 'Table';
+$string['outer'] = 'Autour du tableau';
+$string['pluginname'] = 'Tableau';
 $string['privacy:metadata'] = 'Le plugin atto_table n\'enregistre aucune donnée personnelle.';
 $string['rows'] = 'Rangées';
-$string['settings'] = 'Réglage des tables';
+$string['settings'] = 'Réglage des tableaux';
 $string['solid'] = 'Continu';
 $string['themedefault'] = 'Réglages par défaut du thème';
 $string['transparent'] = 'Transparent';
-$string['updatetable'] = 'Modifier table';
-$string['width'] = 'Largeur de table (en %)';
+$string['updatetable'] = 'Modifier tableau';
+$string['width'] = 'Largeur de tableau (en %)';

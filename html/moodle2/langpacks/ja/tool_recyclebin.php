@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_recyclebin', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_recyclebin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['alertdeleted'] = '「 {$a->name} 」が削除されました。';
 $string['alertemptied'] = 'ごみ箱が空にされました。';
 $string['alertrestored'] = '「 {$a->name} 」がリストアされました。';
 $string['autohide'] = '自動非表示';
-$string['autohide_desc'] = 'ごみ箱が空の場合、自動的にごみ箱へのリンクを隠します。';
+$string['autohide_desc'] = 'ごみ箱が空の場合、自動的にごみ箱リンクを隠します。';
 $string['categorybinenable'] = 'カテゴリごみ箱を有効にする';
 $string['categorybinexpiry'] = 'コース保存期間';
 $string['categorybinexpiry_desc'] = 'どのくらいの期間、ごみ箱に削除済みコースを保持しますか?';

@@ -29,6 +29,7 @@ global $CFG;
 
 class mod_forum_mail_testcase extends advanced_testcase {
 
+
     protected $helper;
 
     public function setUp() {
@@ -285,7 +286,9 @@ class mod_forum_mail_testcase extends advanced_testcase {
 
         // Reset the message sink for other tests.
         $this->helper->messagesink = $this->redirectMessages();
+        // Notification has been marked as read, so now first event should be a 'notification_viewed' one.
         $event = reset($events);
+
         $this->assertEquals($course->id, $event->other['courseid']);
     }
 
@@ -1041,7 +1044,7 @@ class mod_forum_mail_testcase extends advanced_testcase {
             '<div class="attachments">( *\n *)?<a href',
             '<div class="subject">\n.*HTML text and image', '>Moodle Forum',
             '<p>Welcome to Moodle, '
-                .'<img src="https://www.example.com/moodle/pluginfile.php/\d+/mod_forum/post/\d+/'
+            .'<img src="https://www.example.com/moodle/tokenpluginfile.php/[^/]*/\d+/mod_forum/post/\d+/'
                 .'Screen%20Shot%202016-03-22%20at%205\.54\.36%20AM%20%281%29\.png"'
                 .' alt="" width="200" height="393" class="img-responsive" />!</p>',
             '>Love Moodle', '>1\d1');

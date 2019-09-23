@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_meta', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Adicionar ao grupo';
 $string['coursesort'] = 'Ordenar a lista de disciplinas';
-$string['coursesort_help'] = 'Esta opção determina se a lista de disciplinas em que pode sincronizar as inscrições estão ordenadas por ordem predefinida (ou seja, a ordem definida em Administração do Site > Disciplinas > Gerir disciplinas e categorias) ou por ordem alfabética de configuração da disciplina.';
+$string['coursesort_help'] = 'Esta opção determina se a lista de disciplinas em que pode sincronizar as inscrições estão ordenadas por ordem predefinida (ou seja, a ordem definida em Administração do Site / Disciplinas / Gerir disciplinas e categorias) ou por ordem alfabética de configuração da disciplina.';
 $string['creategroup'] = 'Criar um novo grupo';
 $string['defaultgroupnametext'] = '{$a->increment} disciplina {$a->name}';
+$string['enrolmetasynctask'] = 'Tarefa de sincronização de inscrições com disciplina';
 $string['linkedcourse'] = 'Sincronizar inscrições com';
 $string['meta:config'] = 'Configurar instâncias de Sincronização com Disciplina';
 $string['meta:selectaslinked'] = 'Selecionar disciplina a sincronizar inscrições';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,9 @@ $string['default_help'] = 'إذا تم تفعيل هذا الخيار فإن ط�
 $string['enabled'] = 'تعليقات الإفادة';
 $string['enabled_help'] = 'إذا تم تفعيل هذا الخيار فإن المُصحح يستطيع ترك تعليقات الإفادة لكل مهمة مرسلة';
 $string['pluginname'] = 'تعليقات الإفادة';
+$string['privacy:commentpath'] = 'تعليقات ردود الفعل';
+$string['privacy:metadata:assignmentid'] = 'معرّف الواجب';
+$string['privacy:metadata:commentpurpose'] = 'نص التعليق.';
+$string['privacy:metadata:filepurpose'] = 'ملفات الملاحظات من المعلم للطالب.';
+$string['privacy:metadata:gradepurpose'] = 'معرّف الدرجة المرتبط بالتعليق.';
+$string['privacy:metadata:tablesummary'] = 'هذا يخزن التعليقات التي أدلى بها طلاب الصف كملاحظات للطالب على تقديمه.';

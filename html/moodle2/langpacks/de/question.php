@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'question', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['cannotdeletecate'] = 'Kategorie konnte nicht gelöscht werden, weil sie
 $string['cannotdeleteneededbehaviour'] = 'Frageverhalten {$a} kann nicht gelöscht werden. es wird von anderen Verhalten benötigt.';
 $string['cannotdeleteqtypeinuse'] = 'Sie dürfen den Fragetyp \'{$a}\' nicht löschen. In der Fragedatenbank gibt es Fragen dieses Typs.';
 $string['cannotdeleteqtypeneeded'] = 'Sie dürfen den Fragetyp \'{$a}\' nicht löschen. Andere installierte Fragetypen sind davon abgeleitet.';
+$string['cannotdeletetopcat'] = 'Hauptkategorien können nicht gelöscht werden.';
+$string['cannotedittopcat'] = 'Hauptkategorien können nicht bearbeitet werden.';
 $string['cannotenable'] = 'Fragetyp \'{$a}\' kann nicht direkt erstellt werden.';
 $string['cannotenablebehaviour'] = 'Frageverhalten {$a} kann nicht unmittelbar genutzt werden. Es sit nur für den internen Gebrauch.';
 $string['cannotfindcate'] = 'Kategoriedaten konnten nicht gefunden werden';
@@ -174,6 +176,7 @@ $string['exportcategory_help'] = '<h2>Export von Test-Kategorien</h2>
 $string['exporterror'] = 'Fehler beim Export aufgetreten!';
 $string['exportfilename'] = 'quiz';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
+$string['exportonequestion'] = 'Diese Frage im Moodle-XML-Format herunterladen';
 $string['exportquestions'] = 'Fragen in Datei exportieren';
 $string['exportquestions_help'] = '<h2>Export von Fragen aus einer
 Kategorie</h2>
@@ -192,6 +195,7 @@ $string['filesareacourse'] = 'Dateibereich im Kurs';
 $string['filesareasite'] = 'Dateien der Website';
 $string['filestomove'] = 'Dateien nach {$a} kopieren / verschieben?';
 $string['fillincorrect'] = 'Richtige Lösung';
+$string['filterbytags'] = 'Nach Tags filtern ...';
 $string['firsttry'] = 'Erster Versuch';
 $string['flagged'] = 'markiert';
 $string['flagthisquestion'] = 'Diese Frage markieren';
@@ -213,6 +217,8 @@ Häufig müssen Teilnehmer/innen erst den gesamten Test bearbeiten, bevor die Be
 Alternativ könnte nach der Beantwortung jeder einzelnen Frage eine sofortige  Rückmeldung gegeben werden. Bei falscher Beantwortung der Frage könnten sie eine neue Antwort abgeben. Bei der dann richtigen Antwort könnte ein Punktabzug vom Höchstwert erfolgen (Mehrfachbeantwortung (mit Abzügen)).
 
 Dies sind die am häufigsten genutzten Frageverhalten.';
+$string['idnumber'] = 'ID-Nummer';
+$string['idnumber_help'] = 'Wenn verwendet, muss die ID-Nummer in jeder Fragenkategorie eindeutig sein. Dies ist ein alternativer Weg, um Fragen zu identifizieren. Manchmal ist dies sinnvoll, aber normalerweise kann das Feld leer bleiben.';
 $string['ignorebroken'] = 'Ungültige Links ignorieren';
 $string['import'] = 'Import';
 $string['importcategory'] = 'Importkategorien';
@@ -329,6 +335,7 @@ $string['noprobs'] = 'Es wurden keine Probleme in Ihrer Fragen-Datenbank gefunde
 $string['noquestions'] = 'Es wurden keine Fragen gefunden, die exportiert werden könnten. Stellen Sie sicher, dass Sie eine Kategorie ausgewählt haben, die auch Fragen enthält.';
 $string['noquestionsinfile'] = 'In der Importdatei sind keine Fragen enthalten.';
 $string['noresponse'] = '[Keine Antwort]';
+$string['notagfiltersapplied'] = 'Keine Filter für Tags angewendet';
 $string['notanswered'] = 'Nicht beantwortet';
 $string['notchanged'] = 'Seit dem letzten Versuch nicht geändert';
 $string['notenoughanswers'] = 'Dieser Fragetyp erfordert mindestens {$a} Antworten.';
@@ -372,9 +379,9 @@ $string['partiallycorrect'] = 'Teilweise richtig';
 $string['partiallycorrectfeedback'] = 'Für jede teilweise richtige Antwort';
 $string['partiallycorrectfeedbackdefault'] = 'Die Antwort ist teilweise richtig.';
 $string['penaltyfactor'] = 'Abzugsfaktor';
-$string['penaltyfactor_help'] = '<h2>Höhe des Punktabzugs</h2>
+$string['penaltyfactor_help'] = 'Diese Option legt fest, welcher Anteil der erreichbaren Punktzahl für jede falsche Antwort abgezogen wird. Diese Funktion kommt nur dann zur Anwendung, wenn der Modus Mehrfachbeantwortung eingestellt ist.
 
-<p>Legen Sie fest, welcher Anteil an der erreichbaren Punktzahl für jede falsche Antwort abgezogen wird. Diese Funktion ist nur dann bedeutsam, wenn der adaptive Modus eingeschaltet ist. Der Wert sollte zwischen 0 und 1 liegen. Der Wert "1" bedeutet: Nur bei einer richtigen Antwort im ersten Versuch gibt es Punkte. Der Wert "=" bedeutet: Bei jedem Versuch - auch dem wiederholten - kann die volle Punktzahl erreicht werden. Der Wert "0,1" bedeutet: Beim zweiten Versuch werden für die richtige Antwort nur 90 % der maximal erreichbaren Punktzahl des ersten Versuchs gewertet.</p>';
+Der Wert sollte zwischen 0 und 1 liegen. Der Wert "1" bedeutet: Nur bei einer richtigen Antwort im ersten Versuch gibt es Punkte. Der Wert "0" bedeutet: Bei jedem Versuch – auch dem wiederholten – kann die volle Punktzahl erreicht werden. Der Wert "0,1" bedeutet: Beim zweiten Versuch werden für die richtige Antwort nur 90 % der maximal erreichbaren Punktzahl des ersten Versuchs gewertet.';
 $string['penaltyforeachincorrecttry'] = 'Abzug für jeden falschen Versuch';
 $string['penaltyforeachincorrecttry_help'] = 'Sofern der Test im Modus \'Mehrfachbeantwortung (mit Hinweisen)\' oder im Modus \'Mehrfachbeantwortung (mit Abzügen)\' durchgeführt wird, bei dem die Teilnehmer/innen mehrere Versuche zur richtigen Beantwortung haben, kontrolliert diese Option die Höhe des Abzugs für jeden falschen Versuch.
 
@@ -419,6 +426,7 @@ $string['questionbehavioursorderexplained'] = 'Geben Sie eine Liste mit den Frag
 $string['questioncategory'] = 'Fragenkategorie';
 $string['questioncatsfor'] = 'Fragenkategorien für \'{$a}\'';
 $string['questiondoesnotexist'] = 'Diese Frage gibt es nicht';
+$string['questionformtagheader'] = '{$a} Tags';
 $string['questionidmismatch'] = 'Frage-IDs können nicht zugeordnet werden';
 $string['questionname'] = 'Fragetitel';
 $string['questionnamecopy'] = '{$a} (Kopie)';
@@ -431,6 +439,7 @@ $string['questionsinuse'] = '(*Fragen, die mit einem Sternchen versehen sind, we
 $string['questionsmovedto'] = 'In Gebrauch befindliche Fragen wurden nach "{$a}" in der Kategorie verschoben.';
 $string['questionsrescuedfrom'] = 'Fragen aus Kontext {$a} gespeichert.';
 $string['questionsrescuedfrominfo'] = 'Diese Fragen (einige mögen verborgen sein) wurden gespeichert als der Kontext {$a} gelöscht wurde, da sie in Tests oder anderen Aktivitäten in Gebrauch sind.';
+$string['questiontags'] = 'Fragen-Tags';
 $string['questiontext'] = 'Fragetext';
 $string['questiontype'] = 'Fragetyp';
 $string['questionuse'] = 'Frage in dieser Aktivität benutzen';
@@ -440,6 +449,7 @@ $string['requiresgrading'] = 'Bewertung notwendig';
 $string['responsehistory'] = 'Antworten-Rückblick';
 $string['restart'] = 'Nochmal beginnen';
 $string['restartwiththeseoptions'] = 'Nochmal mit diesen Optionen beginnen';
+$string['restoremultipletopcats'] = 'Die Sicherungsdatei enthält mehr als eine Hauptkategorie für Fragen im Kontext {$a}.';
 $string['reviewresponse'] = 'Antworten einsehen';
 $string['rightanswer'] = 'Richtige Antwort';
 $string['rightanswer_help'] = 'Automatisch erzeugte Zusammenfassung der richtigen Antworten.
@@ -478,7 +488,7 @@ $string['submitted'] = 'Absenden: {$a}';
 $string['tagarea_question'] = 'Fragen';
 $string['technicalinfo'] = 'Technische Information';
 $string['technicalinfo_help'] = 'Diese technische Information wendet sich ausschließlich an Entwickler von neuen Fragetypen. Sie kann auch für die Diagnose von Problemen mit Fragen verwendet werden.';
-$string['technicalinfomaxfraction'] = 'Größter Teilwert: {$a}';
+$string['technicalinfomaxfraction'] = 'Größter Anteil: {$a}';
 $string['technicalinfominfraction'] = 'Kleinster Teilwert: {$a}';
 $string['technicalinfoquestionsummary'] = 'Fragetext: {$a}';
 $string['technicalinforesponsesummary'] = 'Antwortzusammenfassung: {$a}';
@@ -487,6 +497,7 @@ $string['technicalinfostate'] = 'Fragestatus: {$a}';
 $string['technicalinfovariant'] = 'Fragevariante: {$a}';
 $string['tofilecategory'] = 'Kategorie in eine Datei schreiben';
 $string['tofilecontext'] = 'Kontext in eine Datei schreiben';
+$string['topfor'] = 'Oberste für {$a}';
 $string['uninstallbehaviour'] = 'Frageverhalten deinstallieren';
 $string['uninstallqtype'] = 'Diesen Fragetyp deinstallieren';
 $string['unknown'] = 'Unbekannt';

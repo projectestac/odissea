@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,5 +37,6 @@ $string['pluginname'] = 'Feedback';
 $string['privacy:commentpath'] = 'Feedback opmerkingen';
 $string['privacy:metadata:assignmentid'] = 'Opdracht-ID';
 $string['privacy:metadata:commentpurpose'] = 'De opmerkingstekst.';
+$string['privacy:metadata:filepurpose'] = 'Feedbackbestanden van de leraar voor de leerling.';
 $string['privacy:metadata:gradepurpose'] = 'Het cijferID dat met de opmerking geassocieerd is.';
 $string['privacy:metadata:tablesummary'] = 'Dit bewaart opmerkingen die door de beoordelaars gemaakt zijn als feedback op hun inzending.';

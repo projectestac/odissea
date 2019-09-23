@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tag_youtube', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tag_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,21 +32,21 @@ $string['apikeyinfo'] = 'Holen Sie sich einen <a href="https://developers.google
 $string['autosvehicles'] = 'Autos & Fahrzeuge';
 $string['category'] = 'Kategorie';
 $string['comedy'] = 'Comedy';
-$string['configtitle'] = 'Titel';
+$string['configtitle'] = 'Titel für YouTube-Block';
 $string['education'] = 'Schule & Bildung';
 $string['entertainment'] = 'Unterhaltung';
 $string['filmsanimation'] = 'Film & Animation';
 $string['gadgetsgames'] = 'Spaß & Spiel';
 $string['howtodiy'] = 'Anleitung & Selbermachen';
-$string['includeonlyvideosfromplaylist'] = 'Nur Videos aus der Playlist mit der ID';
+$string['includeonlyvideosfromplaylist'] = 'Nur Videos aus Playlist mit ID';
 $string['music'] = 'Musik';
 $string['newspolitics'] = 'Nachrichten & Politik';
 $string['numberofvideos'] = 'Anzahl der Videos';
 $string['peopleblogs'] = 'Personen & Blogs';
 $string['petsanimals'] = '(Haus-)Tiere';
 $string['pluginname'] = 'YouTube';
-$string['privacy:metadata'] = 'Der Block \'YouTube\' zeigt ausschließlich Daten an, die woanders gespeichert sind.';
-$string['requesterror'] = 'Daten konnten nicht vom Server abgerufen werden. Wenden Sie sich an den Administrator, wenn das Problem weiter auftritt.';
+$string['privacy:metadata'] = 'Der YouTube-Block zeigt ausschließlich Daten an, die woanders gespeichert sind.';
+$string['requesterror'] = 'Daten konnten nicht vom Server abgerufen werden. Informieren Sie den Administrator, wenn das Problem weiter auftritt.';
 $string['scienceandtech'] = 'Wissenschaft & Technik';
 $string['sports'] = 'Sport';
 $string['tag_youtube:addinstance'] = 'Neuen YouTube-Block hinzufügen';

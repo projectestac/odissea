@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_censor', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filter_censor', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   filter_censor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badwords'] = 'shit,fucked,fucker,fuck,dickhead,dick,cockhead,cock,cunt,asshole,arsehole,prick,bitch,jism,whore,slut,wanker,wank,bastard,dildo,masturbate,orgasm,penis,nigger,pussy,vagina';
 $string['filtername'] = 'Цензура';
+$string['privacy:metadata'] = 'Плагин цензуры Word не хранит никаких личных данных.';

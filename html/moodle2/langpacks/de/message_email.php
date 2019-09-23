@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'message_email', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   message_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['email'] = 'E-Mail-Mitteilungen senden an';
+$string['email'] = 'E-Mail-Systemnachrichten senden an';
 $string['emailonlyfromnoreplyaddress'] = 'E-Mails immer mit der Nicht-Antworten-Adresse senden?';
 $string['ifemailleftempty'] = 'Leer lassen, um E-Mails an die Adresse {$a} senden zu lassen.';
 $string['pluginname'] = 'E-Mail';
@@ -33,9 +33,9 @@ $string['privacy:metadata:attachment'] = 'Eine Datei im Dateisystem';
 $string['privacy:metadata:attachname'] = 'Name der angehängten Datei (Erweiterung verweist auf MIME).';
 $string['privacy:metadata:externalpurpose'] = 'Diese Information wird an einen externen SMTP-Server gesendet und letztlich als E-Mail an den Empfänger versendet.';
 $string['privacy:metadata:fullmessage'] = 'Vollständige Mitteilung im gegebenen Format';
-$string['privacy:metadata:fullmessagehtml'] = 'Die gesamte Nachricht.';
+$string['privacy:metadata:fullmessagehtml'] = 'Vollständige Mitteilung';
 $string['privacy:metadata:recipient'] = 'Empfänger der Mitteilung.';
 $string['privacy:metadata:replyto'] = 'E-Mail-Adresse zum Antworten.';
 $string['privacy:metadata:replytoname'] = 'Name für Antwort an Empfänger';
-$string['privacy:metadata:subject'] = 'Die Betreffzeile der Nachricht.';
-$string['privacy:metadata:userfrom'] = 'Der Nutzer, der die Nachricht sendet.';
+$string['privacy:metadata:subject'] = 'Betreffzeile der Mitteilung';
+$string['privacy:metadata:userfrom'] = 'Nutzer, der die Mitteilung sendet.';

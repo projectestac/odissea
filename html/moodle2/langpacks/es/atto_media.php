@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['add'] = 'Añadir';
 $string['addsubtitlestrack'] = 'Añadir pista de subtítulo';
 $string['addtrack'] = 'Añadir pista';
-$string['advancedsettings'] = 'Opciones avanzadas';
+$string['advancedsettings'] = 'Ajustes avanzados';
 $string['autoplay'] = 'Reproducir automáticamente';
 $string['browserepositories'] = 'Examinar repositorios...';
 $string['chapters'] = 'Capítulos';

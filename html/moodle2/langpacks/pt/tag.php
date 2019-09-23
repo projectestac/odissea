@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = 'Em qualquer local';
 $string['inputstandardtags'] = 'Insira a lista de novas palavras-chave separadas por vírgulas';
 $string['itemstaggedwith'] = '{$a->tagarea} com a palavra-chave "{$a->tag}"';
 $string['lesstags'] = 'menos...';
-$string['manageofficialtags'] = 'Gerir palavras-chave oficiais';
 $string['managestandardtags'] = 'Gerir palavras-chave oficiais';
 $string['managetagcolls'] = 'Gerir coleção de palavras-chave';
 $string['managetags'] = 'Gerir palavras-chave';
@@ -94,9 +93,6 @@ $string['nextpage'] = 'Mais';
 $string['noresultsfor'] = 'Não foram devolvidos resultados para "{$a}"';
 $string['notagsfound'] = 'Não foi encontrada a palavra-chave "{$a}"';
 $string['nothingtoupdate'] = 'Nenhuma atualização disponível';
-$string['officialtag'] = 'Oficial';
-$string['otags'] = 'Palavras-chave oficiais';
-$string['othertags'] = 'Outras palavras-chave';
 $string['owner'] = 'Proprietário';
 $string['page-tag-index'] = 'Página de palavras-chave simples';
 $string['page-tag-manage'] = 'Gerir página de palavras-chave';
@@ -138,7 +134,6 @@ $string['selectmaintag'] = 'Selecione a palavra-chave que será utilizada depois
 $string['selectmultipletags'] = 'Seleccione mais do que uma palavra-chave';
 $string['selecttag'] = 'Selecionar a palavra-chave {$a}';
 $string['settypedefault'] = 'Remover das palavras-chave';
-$string['settypeofficial'] = 'Tornar oficial';
 $string['settypestandard'] = 'Tornar palavra-chave oficial';
 $string['showingfirsttags'] = 'A mostrar as {$a} palavras-chave mais populares';
 $string['showstandard'] = 'Utilização das palavras-chave oficiais';
@@ -161,10 +156,8 @@ $string['tagcollection'] = 'Coleção de palavras-chave';
 $string['tagcollection_help'] = 'Coleções de palavras-chave são conjuntos de palavras-chave para áreas diferentes. Por exemplo, pode dispor de uma coleção de palavras-chave oficiais usada para disciplinas sendo as palavras-chave para blogues e interesses do utilizador mantidas numa coleção separada. Quando um utilizador clica numa palavra-chave, a página da palavra-chave mostra apenas itens com essa palavra-chave na mesma coleção. As palavras-chave podem ser adicionadas automaticamente a uma coleção consoante a área em que são aplicadas ou podem ser adicionadas manualmente como palavras chave oficiais.';
 $string['tagcollections'] = 'Coleções de palavras-chave';
 $string['tagdescription'] = 'Descrição da palavra-chave';
-$string['taggedwith'] = 'Com a palavra-chave "{$a}"';
 $string['tags'] = 'Palavras-chave';
 $string['tagsaredisabled'] = 'As palavras-chave estão desativadas';
-$string['tagtype'] = 'Tipo de palavra-chave';
 $string['thingstaggedwith'] = '<b>{$a->count}</b> coisas sinalizadas com "{$a->name}"';
 $string['thingtaggedwith'] = '"{$a->name}" é usado uma vez';
 $string['timemodified'] = 'Alterada';

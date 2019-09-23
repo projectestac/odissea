@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_category', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_category
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['category:config'] = 'Configurar as instancias de categorías de matriculación';
 $string['category:synchronised'] = 'Tarefas de rol sincronizadas coa matriculación do curso';
+$string['enrolcategorysynctask'] = 'Tarefa de sincronización de categoría';
 $string['pluginname'] = 'Categoría matrículas';
 $string['pluginname_desc'] = 'O engadido de categoría de matrícula é unha solución herdada para matriculacións no nivel de categoría do curso vía tarefas de rol. Recoméndase usar no seu lugar a sincronización de círculos.';
 $string['privacy:metadata'] = 'O engadido de categoría de matrícula non almacena ningún dato persoal.';

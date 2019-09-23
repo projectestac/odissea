@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Добавить категорию';
 $string['addcomment'] = 'Добавить комментарий';
 $string['addentry'] = 'Добавить новую запись';
 $string['addingcomment'] = 'Добавить комментарий';
@@ -127,6 +128,7 @@ $string['defaultsortkey'] = 'По умолчанию сортировать';
 $string['defaultsortorder'] = 'Сортировка по умолчанию';
 $string['definition'] = 'Определение';
 $string['definitions'] = 'Определения';
+$string['deletecategory'] = 'Удалить категорию';
 $string['deleteentry'] = 'Удалить запись';
 $string['deleteentrya'] = 'Удалить запись: {$a}';
 $string['deletenotenrolled'] = 'Удаление записей незарегистрированных пользователей';
@@ -177,6 +179,7 @@ $string['editalways_help'] = '<h2>Разрешить всегда редакти
 <li><b>Нет:</b> Записи доступны для редактирования в определенное время.</li>
 </ul>';
 $string['editcategories'] = 'Редактировать категории';
+$string['editcategory'] = 'Изменить категорию';
 $string['editentry'] = 'Редактировать запись';
 $string['editentrya'] = 'Изменить запись: {$a}';
 $string['editingcomment'] = 'Редактирование комментария';
@@ -190,6 +193,7 @@ $string['entrydeleted'] = 'Запись удалена';
 $string['entryexported'] = 'Запись успешно экспортирована';
 $string['entryishidden'] = '(эта запись сейчас спрятана)';
 $string['entryleveldefaultsettings'] = 'Настройки уровня записи по умолчанию';
+$string['entrylink'] = 'Ссылка на запись: {$a}';
 $string['entrysaved'] = 'Запись сохранена';
 $string['entryupdated'] = 'Запись обновлена';
 $string['entryusedynalink'] = 'Эта запись должна автоматически связываться';
@@ -330,7 +334,17 @@ $string['popupformat'] = 'Формат всплывающего окна';
 $string['print'] = 'Печать';
 $string['printerfriendly'] = 'Версия для печати';
 $string['printviewnotallowed'] = 'Версия для печати не предусмотрена';
+$string['privacy'] = 'Конфиденциальность результатов';
+$string['privacy:metadata:core_comments'] = 'Комментарии к определениям глоссария хранятся в системе core_comment';
+$string['privacy:metadata:core_files'] = 'Файлы, связанные с определениями глоссария, хранятся в системе core_files.';
+$string['privacy:metadata:core_rating'] = 'Оценки, добавленные к записям глоссария, хранятся в системе core_rating.';
+$string['privacy:metadata:core_tag'] = 'Теги, добавленные к определениям глоссария, хранятся в системе core_tag.';
+$string['privacy:metadata:glossary_entries'] = 'Информация о записях пользователя для данного глоссария';
+$string['privacy:metadata:glossary_entries:attachment'] = 'Вложение к записи, добавленное пользователем';
+$string['privacy:metadata:glossary_entries:concept'] = 'Концепция записи, которую добавил пользователь';
+$string['privacy:metadata:glossary_entries:definition'] = 'Определение записи, добавленное пользователем';
 $string['privacy:metadata:glossary_entries:glossaryid'] = 'ID Глоссария';
+$string['privacy:metadata:glossary_entries:timemodified'] = 'Отметка времени, указывающая, когда запись глоссария была изменена пользователем';
 $string['privacy:metadata:glossary_entries:userid'] = 'ID пользователя, который добавил запись в этот глоссарий';
 $string['question'] = 'Вопрос';
 $string['rejectedentries'] = 'Отклоненные записи';

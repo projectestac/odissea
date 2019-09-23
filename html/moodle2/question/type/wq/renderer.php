@@ -27,6 +27,14 @@ class qtype_wq_renderer extends qtype_renderer {
 
     public function formulation_and_controls(question_attempt $qa, question_display_options $options) {
         $result = $this->base->formulation_and_controls($qa, $options);
+
+        // Auxiliar text.
+        $showauxiliartextinput = $qa->get_question()->wirisquestion->question->getProperty(
+            com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_AUXILIAR_TEXT_INPUT); // @codingStandardsIgnoreLine
+        if ($showauxiliartextinput) {
+            $result .= $this->auxiliar_text($qa, $options);
+        }
+
         $this->add_javascript();
         $result .= html_writer::start_tag('div', array('class' => 'ablock'));
         $result .= $this->lang();
@@ -86,6 +94,39 @@ class qtype_wq_renderer extends qtype_renderer {
     protected function auxiliar_cas() {
         return html_writer::empty_tag('input', array('class' => 'wirisauxiliarcasapplet', 'type' => 'hidden'));
     }
+
+    protected function auxiliar_text(question_attempt $qa, question_display_options $options) {
+        global $CFG;
+        require_once($CFG->dirroot . '/repository/lib.php');
+
+        $result = '';
+        $result .= html_writer::empty_tag('hr');
+        $result .= get_string('auxiliar_text', 'qtype_wq');
+
+        // Answer field.
+        $step = $qa->get_last_step_with_qt_var('auxiliar_text');
+        $question = $qa->get_question();
+        $responseoutput = $this->page->get_renderer('qtype_essay', 'format_editor');
+
+        if (!$step->has_qt_var('auxiliar_text') && empty($options->readonly)) {
+            // Auxiliar text has never been filled.
+            $step = new question_attempt_step();
+        }
+
+        if (empty($options->readonly)) {
+            $auxiliartext = $responseoutput->response_area_input('auxiliar_text', $qa,
+                    $step, $question->auxiliartextfieldlines, $options->context);
+
+        } else {
+            $auxiliartext = $responseoutput->response_area_read_only('auxiliar_text', $qa,
+                    $step, $question->auxiliartextfieldlines, $options->context);
+        }
+
+        $result .= html_writer::tag('div', $auxiliartext);
+
+        return $result;
+    }
+
     protected function lang() {
         return html_writer::empty_tag('input', array('class' => 'wirislang', 'type' => 'hidden', 'value' => current_language()));
     }

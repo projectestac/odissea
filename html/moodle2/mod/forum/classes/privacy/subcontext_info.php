@@ -31,7 +31,7 @@ use \core_privacy\metadata\item_collection;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Subcontext subcontext_info trait.
+ * Subcontext helper trait.
  *
  * @copyright  2018 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

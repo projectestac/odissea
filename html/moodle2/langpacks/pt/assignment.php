@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['assignmentdisabled'] = 'A atividade de retrocompatibilidade "Trabalho 2
 $string['assignment:exportownsubmission'] = 'Exportar o próprio trabalho';
 $string['assignment:exportsubmission'] = 'Exportar trabalho';
 $string['assignment:grade'] = 'Avaliar trabalho';
-$string['assignmentneedsupgrade'] = 'A atividade de retrocompatibilidade "Trabalho 2.2" foi desativada. Por favor, solicite que o administrador do seu site execute a ferramenta de atualização do Trabalho para todos os trabalhos de retrocompatibilidade  neste site.';
+$string['assignmentneedsupgrade'] = 'A atividade de retrocompatibilidade "Trabalho 2.2" foi removida.';
 $string['assignment:submit'] = 'Enviar trabalho';
 $string['assignment:view'] = 'Ver trabalho';
 $string['messageprovider:assignment_updates'] = 'Notificações de trabalhos (2.2)';
@@ -61,4 +61,3 @@ $string['privacy:metadata:assignment_submissions:timemodified'] = 'A data/hora d
 $string['privacy:metadata:assignment_submissions:userid'] = 'O ID do utilizador a submeter trabalho';
 $string['privacy:submissionpath'] = 'submissão';
 $string['upgradenotification'] = 'Esta atividade está baseada no antigo módulo de trabalhos';
-$string['viewassignmentupgradetool'] = 'Ver a ferramenta de atualização de trabalhos';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_multianswer', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['confirmsave'] = 'Confirmer, puis enregistrer {$a}';
 $string['correctanswer'] = 'Réponse correcte';
 $string['correctanswerandfeedback'] = 'Réponse correcte et feedback';
 $string['decodeverifyquestiontext'] = 'Décoder et vérifier le texte de la question';
+$string['invalidmultianswerquestion'] = 'Question à réponses intégrées (Cloze) ({$a}).';
 $string['layout'] = 'Disposition';
 $string['layouthorizontal'] = 'Rangée horizontale de boutons radio';
 $string['layoutmultiple_horizontal'] = 'Rangée horizontale de cases à cocher';

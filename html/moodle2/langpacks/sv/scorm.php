@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,9 +115,7 @@ $string['forcecompleted_help'] = 'Om aktiverat kommer statusen för aktuellt fö
 $string['forcejavascript'] = 'Tvinga användarna att aktivera JavaScript';
 $string['forcejavascript_desc'] = 'Om aktiverat (rekomenderat) förhindrar detta åtkomst till SCORM objekt när JavaScript inte stöds eller är aktiverat i en användares webbläsare. Om detta är avaktiverat kan användaren kanske se SCORM paketet men API kommunikationen kommer misslyckas och ingen betygsinformation kommer sparas.';
 $string['forcejavascriptmessage'] = 'JavaScript krävs för att se detta objekt, aktivera JavaScript i din webbläsare och försök igen.';
-$string['forcenewattempt'] = 'Framtvinga ett nytt försök';
-$string['forcenewattemptdesc'] = 'Det här alternativet anger vad som ska gälla angående framtvingande av nytt försök.';
-$string['forcenewattempt_help'] = 'Om aktiverat, kommer varje gång ett SCORM paket nås att räknas som ett nytt försök.';
+$string['forcenewattempts'] = 'Framtvinga ett nytt försök';
 $string['found'] = 'Manifestet hittades';
 $string['frameheight'] = 'Det här alternativet ställer in höjden på ramen på en SCO';
 $string['framewidth'] = 'Den här inställningen avgör standardbredden på en SCO-ram';

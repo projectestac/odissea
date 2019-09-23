@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cohort', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['allcohorts'] = 'Όλα τα σύνολα χρηστών';
 $string['anycohort'] = 'Οποιαδήποτε';
 $string['assign'] = 'Ανάθεση';
 $string['assigncohorts'] = 'Ανάθεση μελών σε σύνολο χρηστών';
-$string['assignto'] = 'Μέλη συνόλου χρηστών \'{$a}\'.';
+$string['assignto'] = 'Μέλη συνόλου χρηστών «{$a}».';
 $string['backtocohorts'] = 'Επιστροφή στα σύνολα χρηστών';
 $string['bulkadd'] = 'Προσθήκη σε σύνολο χρηστών';
 $string['bulknocohort'] = 'Δεν βρέθηκαν διαθέσιμα σύνολα χρηστών';
@@ -47,7 +47,7 @@ $string['currentusers'] = 'Τρέχοντες χρήστες';
 $string['currentusersmatching'] = 'Τρέχοντες χρήστες που ταιριάζουν';
 $string['defaultcontext'] = 'Προεπιλεγμένο πλαίσιο';
 $string['delcohort'] = 'Διαγραφή ενός συνόλου χρηστών';
-$string['delconfirm'] = 'Είστε βέβαιοι οτι θέλετε να διαγράψετε αυτό το σύνολο χρηστών \'{$a}\';';
+$string['delconfirm'] = 'Είστε βέβαιοι οτι θέλετε να διαγράψετε αυτό το σύνολο χρηστών «{$a}»;';
 $string['description'] = 'Περιγραφή';
 $string['displayedrows'] = 'Εμφάνιση {$a->displayed} γραμμών από {$a->total}.';
 $string['duplicateidnumber'] = 'Υπάρχει ήδη σύνολο χρηστών με τον ίδιο αναγνωριστικό αριθμό';
@@ -61,6 +61,7 @@ $string['eventcohortmemberremoved'] = 'Ο χρήστης αφαιρέθηκε α
 $string['eventcohortupdated'] = 'Αυτό το σύνολο χρηστών ενημερώθηκε';
 $string['external'] = 'Εξωτερικό σύνολο χρηστών';
 $string['idnumber'] = 'ID';
+$string['invalidtheme'] = 'Δεν υπάρχει τέτοιο θέμα συνόλου χρηστών';
 $string['memberscount'] = 'Μέλη';
 $string['name'] = 'Όνομα';
 $string['namecolumnmissing'] = 'Υπάρχει κάποιο πρόβλημα με τη μορφή του αρχείου CSV. Παρακαλούμε ελέγξτε ότι περιλαμβάνονται τα ονόματα των στηλών. Για να προσθέσετε χρήστες σε ένα σύνολο χρηστών, μεταβείτε στην επιλογή «Εισαγωγή χρηστών» στη Διαχείριση ιστοτόπου.';
@@ -90,7 +91,7 @@ $string['uploadcohorts_help'] = 'Τα σύνολα χρηστών μπορούν
 * Απαραίτητο όνομα πεδίου είναι το name.
 * Προαιρετικά ονόματα πεδίων είναι idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path.';
 $string['uploadedcohorts'] = 'Ανέβηκαν {$a} σύνολα χρηστών';
-$string['useradded'] = 'Ο χρήστης προστέθηκε στο σύνολο χρηστών "{$a}"';
+$string['useradded'] = 'Ο χρήστης προστέθηκε στο σύνολο χρηστών «{$a}»';
 $string['visible'] = 'Ορατό';
-$string['visible_help'] = 'Κάθε σύνολο χρηστών μπορεί να είναι ορατό από χρήστες που έχουν τη δυνατότητα \'moodle/cohort:view\' στο πλαίσιο αυτού του συνόλου χρηστών.<br />
+$string['visible_help'] = 'Κάθε σύνολο χρηστών μπορεί να είναι ορατό από χρήστες που έχουν τη δυνατότητα «moodle/cohort:view» στο πλαίσιο αυτού του συνόλου χρηστών.<br />
 Τα ορατά σύνολα χρηστών μπορούν επίσης να είναι ορατά σε χρήστες σε υποκείμενα μαθήματα.';

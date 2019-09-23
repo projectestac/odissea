@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_messageinbound', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -112,7 +112,7 @@ $string['sslv3'] = 'SSLv2 (Verplicht SSL Versie 3)';
 $string['taskcleanup'] = 'Opruimen van  niet geverifiëerde inkomende e-mail';
 $string['taskpickup'] = 'Inkomende e-mail ophalen';
 $string['tls'] = 'TLS (TLS; gesstart via onderhandeling op protocol-niveau over een ongeëncrypteerd kanaal; AANBEVOLEN manier om een veilige verbinding op te starten)';
-$string['tlsv1'] = 'TLSv1 (TLS direct versie 1.x om te connecteren met de server)';
+$string['tlsv1'] = 'TLSv1 (rechtstreekse connectie met TLS-server versie 1.x)';
 $string['validateaddress'] = 'Valideer e-mailadres van de afzender';
 $string['validateaddress_help'] = 'Wanneer er een bericht van een gebruiker ontvangen wordt, dan probeert Moodle om het bericht te valideren door het e-mailadres van de afzender te vergelijken met het adres in het gebruikersprofiel.
 

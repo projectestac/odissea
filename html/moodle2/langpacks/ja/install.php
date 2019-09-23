@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -137,7 +137,6 @@ $string['memorylimithelp'] = '<p>現在、サーバのPHPメモリ制限が {$a}
 <blockquote><div>php_value memory_limit 40M</div></blockquote>
 <p>しかし、この設定が<b>すべての</b>PHPページの動作を妨げる場合もあります。ページ閲覧中にエラーが表示される場合、.htaccessファイルを削除してください。</p></li>
 </ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'PHPのMSSQL拡張モジュールが適切に設定されていないため、SQL*Serverと通信できません。あなたのphp.iniファイルをチェックするか、PHPを再コンパイルしてください。';
 $string['mysqliextensionisnotpresentinphp'] = 'PHPのMySQLi拡張モジュールが適切に設定されていないため、MySQLと通信できません。あなたのphp.iniファイルをチェックするか、PHPを再コンパイルしてください。';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>データベースにはほとんどのMoodle設定およびデータが保存され、ここで設定する必要があります。</p>
@@ -145,8 +144,6 @@ $string['nativemariadbhelp'] = '<p>データベースにはほとんどのMoodle
 <p>データベース名には半角英数字、ドル記号 ($) およびアンダースコア (_) のみ含むことができます。</p>
 <p>データベースが存在せず、あなたが指定したユーザにパーミッションがある場合、Moodleは正しいパーミッションおよび設定の新しいデータベースの作成を試みます。</p>
 <p>このドライバに関してレガシーMyISAMエンジンに対する互換性はありません。</p>';
-$string['nativemssql'] = 'SQL*Server FreeTDS (ネイティブ/mssql)';
-$string['nativemssqlhelp'] = 'あなたはほとんどのMoodleデータが保存されるデータベースを設定する必要があります。このデータベースはすでに作成され、アクセスするためのユーザ名およびパスワードが作成されている必要があります。テーブル接頭辞は必須です。';
 $string['nativemysqli'] = 'Improved MySQL (ネイティブ/mysqli)';
 $string['nativemysqlihelp'] = '<p>データベースにはほとんどのMoodle設定およびデータが保存され、ここで設定する必要があります。</p>
 <p>データベース名、ユーザ名およびパスワードは必須入力フィールドです。また、テーブル接頭辞は任意です。</p>
@@ -209,7 +206,7 @@ $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'インストールが正常に完了して、あなたのコンピュータで <strong>{$a->packname} {$a->packversion}</strong> パッケージが起動されたため、このページが表示されています。おめでとうございます!';
 $string['welcomep30'] = 'このリリース <strong>{$a->installername}</strong> には<strong>Moodle</strong>で環境を作成するアプリケーションが含まれています。すなわち:';
 $string['welcomep40'] = 'パッケージには <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong> も含まれています。';
-$string['welcomep50'] = 'このパッケージ内のすべてのアプリケーションの使用は個別のライセンスによって規定されています。全体の<strong>{$a->installername}</strong>パッケージは<a href="http://www.opensource.org/docs/definition_plain.html">オープンソース</a>であり、<a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>ライセンスの下で配布されています。';
+$string['welcomep50'] = 'このパッケージ内のすべてのアプリケーションの使用は個別のライセンスによって規定されています。全体の<strong>{$a->installername}</strong>パッケージは<a href="https://www.opensource.org/docs/definition_plain.html">オープンソース</a>であり、<a href="https://www.gnu.org/copyleft/gpl.html">GPL</a>ライセンスの下で配布されています。';
 $string['welcomep60'] = '次からのページはあなたのコンピュータに<strong>Moodle</strong>を簡単に設定およびセットアップする手順にしたがって進みます。あなたはデフォルトの設定を使用することも、必要に応じて任意で設定を変更することもできます。';
 $string['welcomep70'] = '<strong>Moodle</strong>のセットアップを続けるには「次へ」ボタンをクリックしてください。';
 $string['wwwroot'] = 'ウェブアドレス';

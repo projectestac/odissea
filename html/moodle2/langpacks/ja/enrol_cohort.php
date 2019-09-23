@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_cohort', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['cohort:config'] = 'コーホートインスタンスを設定する';
 $string['cohort:unenrol'] = '利用停止ユーザを登録解除する';
 $string['creategroup'] = '新しいグループを作成する';
 $string['defaultgroupnametext'] = '{$a->name} コーホート {$a->increment}';
+$string['enrolcohortsynctask'] = 'コーホート登録同期タスク';
 $string['instanceexists'] = '選択されたロールにコーホートはすでに同期されています。';
 $string['pluginname'] = 'コーホート同期';
 $string['pluginname_desc'] = 'コーホート登録プラグインではコーホートメンバーとコース参加者を同期します。';

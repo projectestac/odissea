@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,8 @@ $string['commentindex'] = 'Index of comments';
 $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Could not save page {$a}';
 $string['currentstamp'] = 'Stamp';
+$string['default'] = 'Enabled by default';
+$string['default_help'] = 'If set, this feedback method will be enabled by default for all new assignments.';
 $string['deleteannotation'] = 'Delete annotation';
 $string['deletecomment'] = 'Delete comment';
 $string['deletefeedback'] = 'Delete feedback PDF';
@@ -48,9 +50,9 @@ $string['downloadfeedback'] = 'Download feedback PDF';
 $string['draftchangessaved'] = 'Draft annotations saved';
 $string['drag'] = 'Drag';
 $string['editpdf'] = 'Annotate PDF';
-$string['editpdf_help'] = 'Annotate students submissions directly in the browser and produce an edited downloadable PDF.';
+$string['editpdf_help'] = 'Annotate student submissions directly in the browser and produce an edited downloadable PDF.';
 $string['enabled'] = 'Annotate PDF';
-$string['enabled_help'] = 'If enabled, the teacher will be able to create annotated PDF files when marking the assignments. This allows the teacher to add comments, drawing and stamps directly on top of the students work. The annotating is done in the browser and no extra software is required.';
+$string['enabled_help'] = 'If enabled, the teacher will be able to create annotated PDF files when marking assignment submissions. This allows the teacher to add comments, drawing and stamps directly on top of the student\'s work. The annotating is done in the browser and no extra software is required.';
 $string['errorgenerateimage'] = 'Error generating image with ghostscript, debugging info: {$a}';
 $string['errorpdfpage'] = 'There was an error while generating this page.';
 $string['expcolcomments'] = 'Expand/collapse all comments';
@@ -65,12 +67,13 @@ $string['jsrequired'] = 'JavaScript is required to annotate a PDF. Please enable
 $string['launcheditor'] = 'Launch PDF editor...';
 $string['line'] = 'Line';
 $string['loadingeditor'] = 'Loading PDF editor';
-$string['navigatenext'] = 'Next page';
-$string['navigateprevious'] = 'Previous page';
+$string['navigatenext'] = 'Next page (Alt/Shift-Alt/Ctrl-Option + {$a})';
+$string['navigateprevious'] = 'Previous page (Alt/Shift-Alt/Ctrl-Option + {$a})';
 $string['output'] = 'Output:';
 $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Page {$a}';
 $string['pagexofy'] = 'Page {$a->page} of {$a->total}';
+$string['partialwarning'] = 'Some of the files in this submission can only be accessed by direct download.';
 $string['pathtogspathdesc'] = 'Please note that annotate PDF requires the path to ghostscript to be set in {$a}.';
 $string['pen'] = 'Pen';
 $string['pluginname'] = 'Annotate PDF';

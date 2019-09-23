@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,7 +58,6 @@ $string['flagasinappropriate'] = 'Señalar como inapropiado';
 $string['flagged'] = 'Etiqueta señalada';
 $string['helprelatedtags'] = 'Marcas relacionadas separadas por comas';
 $string['id'] = 'id';
-$string['manageofficialtags'] = 'Administrar marcas estándar';
 $string['managestandardtags'] = 'Administrar marcas estándar';
 $string['managetagcolls'] = 'Administrar colecciones de marcas';
 $string['managetags'] = 'Gestionar marcas';
@@ -69,9 +68,6 @@ $string['newnamefor'] = 'Nuevo nombre para etiqueta {$a}';
 $string['nextpage'] = 'Más';
 $string['noresultsfor'] = 'No hay resultados para "{$a}"';
 $string['nothingtoupdate'] = 'No hay actualizaciones';
-$string['officialtag'] = 'Marca oficial';
-$string['otags'] = 'Marcas oficiales';
-$string['othertags'] = 'Otras marcas (escriba las marcas separadas por comas)';
 $string['owner'] = 'Propietario';
 $string['page-tag-index'] = 'Página de marca única';
 $string['page-tag-manage'] = 'Gestionar marcas';
@@ -89,6 +85,7 @@ $string['rssdesc'] = 'Este canal RSS ha sido generado automáticamente por Moodl
 $string['rsstitle'] = 'Canal RSS de las etiquetas del curso para usuario: {$a}';
 $string['search'] = 'Buscar';
 $string['searchable'] = 'Buscable';
+$string['searchable_help'] = 'Si se habilita, las marcas en esta colección de búsqueda pueden ser buscadas en la página de "Buscar marcas". Si no se selecciona, las marcas todavía pueden encontrarse mediante otras páginas de búsqueda.';
 $string['searchresultsfor'] = 'Resultados de búsqueda de "{$a}"';
 $string['searchtags'] = 'Buscar marcas';
 $string['seeallblogs'] = 'Ver todas las entradas de blog marcadas con "{$a}"...';
@@ -96,8 +93,8 @@ $string['select'] = 'Seleccionar';
 $string['selectcoll'] = 'Seleccionar colección de marcas';
 $string['selecttag'] = 'Seleccionar etiqueta {$a}';
 $string['settypedefault'] = 'Eliminar de las marcas estándar';
-$string['settypeofficial'] = 'Convertir en estándar';
 $string['settypestandard'] = 'Convertir en estándar';
+$string['showingfirsttags'] = 'Mostrando las {$a} marcas más populares';
 $string['showstandard'] = 'Uso de las marcas estándar';
 $string['standardforce'] = 'Forzar';
 $string['standardhide'] = 'No sugerir';
@@ -115,10 +112,8 @@ $string['tagarea_user'] = 'Intereses del usuario';
 $string['tagcollection'] = 'Colección de marcas';
 $string['tagcollections'] = 'Colecciones de marcas';
 $string['tagdescription'] = 'Descripción de la marca';
-$string['taggedwith'] = 'marcada con "{$a}"';
 $string['tags'] = 'Marcas';
 $string['tagsaredisabled'] = 'Las marcas están deshabilitadas';
-$string['tagtype'] = 'Tipo de marca';
 $string['thingstaggedwith'] = '"{$a->name}" es usada {$a->count} veces';
 $string['thingtaggedwith'] = '"{$a->name}" se usa una vez';
 $string['timemodified'] = 'Modificado';

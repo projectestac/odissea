@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_ldap', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,7 +59,7 @@ $string['auth_ldap_groupecreators'] = 'Lijst van groepen of contexten waarvan de
 $string['auth_ldap_groupecreators_key'] = 'Wie groepen mag aanmaken';
 $string['auth_ldap_host_url'] = 'Geef de LDAP-host in de vorm van een URL zoals bijvoorbeeld: \'ldap://ldap.myorg.com/\' of \'ldaps://ldap.myorg.com/\'. Scheidt meerdere servers met \',\' om fouttolerantie mogelijk te maken.';
 $string['auth_ldap_host_url_key'] = 'Host URL';
-$string['auth_ldap_ldap_encoding'] = 'Specifier de encoding van de LDAP-server. Waarschijnlijk utf-8, MS AD v2 gebruikt default platform encoding zoals cp1252, cp 1250, enz.';
+$string['auth_ldap_ldap_encoding'] = 'De encodering van de LDAP-server. Waarschijnlijk utf-8, MS AD v2 gebruikt default platform encoding zoals cp1252, cp 1250, enz.';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP-encoding';
 $string['auth_ldap_login_settings'] = 'login instellingen';
 $string['auth_ldap_memberattribute'] = 'Geef gebruiker lid attribuut, voor als gebruikers tot een groep behoren. Meestal \'member\'';

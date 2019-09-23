@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio_mahara', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['enableleap2a'] = 'Activer le support du format portfolio Leap2A (néces
 $string['err_invalidhost'] = 'Serveur MNet non valide';
 $string['err_invalidhost_help'] = 'Ce plugin pointe vers un hôte MNet non valide (ou supprimé). Il nécessite l\'utilisation de pairs Réseau Moodle avec SSO (fournisseur d\'identité) publiée et abonnement SSO au portfolio (fournisseur de service).';
 $string['err_networkingoff'] = 'MNet est désactivé';
-$string['err_networkingoff_help'] = 'MNet est totalement désactivé. Veuillez l\'activer avant de configurer ce plugin. En attendant, toutes les instances de ce plugin ont été cachées. Vous devrez les rendre visibles manuellement ultérieurement. Elles ne peuvent être utilisées actuellement.';
+$string['err_networkingoff_help'] = 'MNet est actuellement désactivé. Veuillez l\'activer avant de configurer ce plugin. En attendant, toutes les instances de ce plugin ont été cachées, jusqu\'à l\'activation de MNet. Vous devez les activer manuellement.';
 $string['err_nomnetauth'] = 'Le plugin d\'authentification MNet est désactivé';
 $string['err_nomnetauth_help'] = 'Le plugin d\'authentification MNet est désactivé, alors que ce service en a besoin.';
 $string['err_nomnethosts'] = 'Nécessite le MNet';

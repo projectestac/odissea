@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['agedigitalconsentmapinvalidcomma'] = '"{$a}" tem mais ou menos que um s
 $string['agedigitalconsentmapinvalidcountry'] = '"{$a}" não é um valor válido para o país.';
 $string['agedigitalconsentmapinvaliddefault'] = 'O valor predefinido (*) está em falta.';
 $string['agelocationverificationdisabled'] = 'Verificação de idade e localização desativada';
-$string['alreadyloggedin'] = 'Está autenticado como {$a}, precisa de sair antes de se autenticar como um utilizador diferente.';
+$string['alreadyloggedin'] = 'Está autenticado como {$a}. Precisa de sair antes de se autenticar como um utilizador diferente.';
 $string['authnotexisting'] = 'O módulo de autorização não existe';
 $string['backupcontainexternal'] = 'Esta cópia de segurança contém servidores de rede externos Moodle que não estão configurados localmente';
 $string['backuptablefail'] = 'As tabelas da cópia de segurança NÃO foram configuradas com sucesso!';
@@ -150,7 +150,7 @@ $string['cannotsetparentforcatoritem'] = 'Não é possível configurar o ascende
 $string['cannotsetpassword'] = 'Não foi possível definir a senha do utilizador';
 $string['cannotsetprefgrade'] = 'Não foi possível definir as preferências da agregação para {$a}, nesta categoria da pauta.';
 $string['cannotsettheme'] = 'Não foi possível definir o tema!';
-$string['cannotsetupblock'] = 'As tabelas dos blocos não foram configuradas com sucesso!';
+$string['cannotsetupblock'] = 'As tabelas dos blocos NÃO foram configuradas com sucesso!';
 $string['cannotsetupcapformod'] = 'Não foi possível configurar as permissões para {$a}';
 $string['cannotsetupcapforplugin'] = 'Não foi possível configurar as permissões para {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Não é possível mostrar/ocultar as disciplinas da categoria {$a}';
@@ -200,8 +200,8 @@ $string['csvinvalidcols'] = '<b>Ficheiro CSV inválido:</b> A primeira linha dev
 $string['csvinvalidcolsnum'] = 'Ficheiro CSV inválido - cada linha deve ter 49 ou 70 campos';
 $string['csvloaderror'] = 'Ocorreu um erro ao carregar o ficheiro CSV: {$a}';
 $string['csvweirdcolumns'] = 'Formato de ficheiro CSV inválido; o número de colunas não é constante!';
-$string['dbconnectionfailed'] = '<p>Erro: Falhou a conexão à Base de Dados</p>
-<p>É possível que a base de dados esteja sobrecarregada ou a não funcionar corretamente.</p>
+$string['dbconnectionfailed'] = '<p>Erro: Falhou a ligação à Base de dados</p>
+<p>É possível que a base de dados esteja sobrecarregada ou não está a funcionar corretamente.</p>
 <p>O administrador do site também deve verificar se os dados da base de dados foram corretamente especificados no ficheiro config.php</p>';
 $string['dbdriverproblem'] = '<p>Erro: foi detetado um erro no driver da base de dados</p>
 <p>O administrador do site deve verificar a seguinte configuração </p><p>{$a}</p>';
@@ -264,6 +264,7 @@ $string['filternotactive'] = 'O filtro {$a} não está ativo!';
 $string['filternotenabled'] = 'O filtro não foi ativado!';
 $string['filternotinstalled'] = 'O filtro {$a} não foi instalado';
 $string['forumblockingtoomanyposts'] = 'Ultrapassou o limite de envio de mensagens estabelecido para este fórum.';
+$string['functionalityremoved'] = 'Está a tentar aceder a uma funcionalidade que foi removida.';
 $string['generalexceptionmessage'] = 'Exceção - {$a}';
 $string['gradecantregrade'] = 'Ocorreu um erro durante o cálculo da nota: {$a}';
 $string['gradepubdisable'] = 'A publicação de notas está desativada';
@@ -349,8 +350,8 @@ $string['invalidpasswordpolicy'] = 'A política de senha é inválida';
 $string['invalidpaymentmethod'] = 'O método de pagamento é inválido: {$a}';
 $string['invalidqueryparam'] = 'ERRO: Número incorreto de parâmetros de consulta. Esperado {$a->expected}, obteve {$a->actual}.';
 $string['invalidratingarea'] = 'Area de avaliações inválida';
-$string['invalidrecord'] = 'Não é possível encontrar os dados de registo na tabela da base de dados {$a}.';
-$string['invalidrecordunknown'] = 'Não é possível encontrar os dados de registo na base de dados';
+$string['invalidrecord'] = 'Não é possível encontrar os dados do registo na tabela da base de dados {$a}.';
+$string['invalidrecordunknown'] = 'Não é possível encontrar os dados do registo na base de dados';
 $string['invalidrequest'] = 'Pedido inválido';
 $string['invalidrole'] = 'Papel inválido';
 $string['invalidroleid'] = 'ID do papel inválido';
@@ -383,7 +384,6 @@ $string['logfilenotavailable'] = 'Os registos de atividade não estão disponív
 $string['loginasnoenrol'] = 'Não pode realizar nem anular inscrições quando se está numa sessão "Entrar como".';
 $string['loginasonecourse'] = 'Não pode entrar nesta disciplina.<br /> Tem de terminar a sessão "Entrar como" antes de entrar em qualquer outra disciplina.';
 $string['maxareabytes'] = 'Este ficheiro é maior do que o espaço restante nesta área.';
-$string['maxbytes'] = 'Este ficheiro é maior que o tamanho máximo permitido.';
 $string['maxbytesfile'] = 'O ficheiro {$a->file} é muito grande. Apenas pode carregar ficheiros com um tamanho máximo de {$a->size}.';
 $string['messagingdisable'] = 'A troca de mensagens está desativada neste site';
 $string['mimetexisnotexist'] = 'O seu sistema não está configurado para executar mimeTeX. É necessário  obter o código fonte de <a href="http://www.forkosh.com/mimetex.zip">http://www.forkosh.com/mimetex.zip</a>, compilá-lo e colocar o executável na pasta moodle/filter/tex/';
@@ -433,7 +433,7 @@ $string['nologinas'] = 'Não tem permissões para se autenticar como esse utiliz
 $string['nonmeaningfulcontent'] = 'Conteúdo não significativo';
 $string['noparticipants'] = 'Não foram encontrados participantes para esta disciplina';
 $string['noparticipatorycms'] = 'Não tem módulos de participação, para onde possa enviar relatórios, em nenhuma disciplina.';
-$string['nopermissions'] = 'Atualmente, não tem permissões para realizar a operação \'<b>{$a}</b>\'';
+$string['nopermissions'] = 'Atualmente, não tem permissões para realizar a operação ({$a})';
 $string['nopermissiontocomment'] = 'Não pode adicionar comentários';
 $string['nopermissiontodelentry'] = 'Não pode apagar mensagens de outras pessoas!';
 $string['nopermissiontoeditcomment'] = 'Não pode editar mensagens de outras pessoas!';
@@ -444,7 +444,7 @@ $string['nopermissiontomanagegroup'] = 'Não possui as permissões necessárias 
 $string['nopermissiontorate'] = 'Não é permitido avaliar itens!';
 $string['nopermissiontoshow'] = 'Não tem permissão para ver isto!';
 $string['nopermissiontounlock'] = 'Não tem permissão para desbloquear!';
-$string['nopermissiontoupdatecalendar'] = 'Não tem permissão para atualizar o calendário de eventos';
+$string['nopermissiontoupdatecalendar'] = 'Não tem permissão para atualizar o evento no calendário';
 $string['nopermissiontoviewgrades'] = 'Não pode consultar notas.';
 $string['nopermissiontoviewletergrade'] = 'Falta permissão para ver as notas alfabéticas';
 $string['nopermissiontoviewpage'] = 'Não tem permissão para ver esta página';
@@ -498,7 +498,7 @@ $string['sectionnotexist'] = 'Esta secção não existe';
 $string['sendmessage'] = 'Enviar mensagem';
 $string['serverconnection'] = 'Ocorreu um erro ao conectar com o servidor';
 $string['servicedonotexist'] = 'Esse serviço não existe';
-$string['sessioncookiesdisable'] = 'Uso incorreto da require_key_login() - os cookies da sessão devem estar desativos!';
+$string['sessioncookiesdisable'] = 'Uso incorreto de \'require_key_login()\' - os cookies da sessão devem estar desativos!';
 $string['sessiondiskfull'] = 'A partição da sessão está completa. Não é possível autenticar-se neste momento. Por favor, avise o administrador do site.';
 $string['sessionerroruser'] = 'A sua sessão expirou. Autentique-se novamente.';
 $string['sessionerroruser2'] = 'Foi detetado um erro no servidor que afeta a sua sessão atual. Por favor, volte a autenticar-se ou reinicie o seu navegador.';

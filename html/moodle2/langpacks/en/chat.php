@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'chat', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = 'You have upcoming chat sessions';
-$string['ajax'] = 'Version using Ajax';
+$string['ajax'] = 'Version using AJAX';
 $string['autoscroll'] = 'Auto scroll';
 $string['beep'] = 'Beep';
 $string['bubble'] = 'Bubble';
@@ -45,7 +45,7 @@ $string['chattime'] = 'Next chat time';
 $string['chat:view'] = 'View chat activity';
 $string['compact'] = 'Compact';
 $string['composemessage'] = 'Compose a message';
-$string['configmethod'] = 'The ajax chat method provide an ajax based chat interface, it contacts server regularly for update. The normal chat method involves the clients regularly contacting the server for updates. It requires no configuration and works everywhere, but it can create a large load on the server with many chatters.  Using a server daemon requires shell access to Unix, but it results in a fast scalable chat environment.';
+$string['configmethod'] = 'The AJAX chat method provide an AJAX-based chat interface which contacts the server regularly for updates. The normal chat method involves clients regularly contacting the server for updates. It requires no configuration and works everywhere, but can create a large load on the server if many users are chatting.  Using a server daemon requires shell access to Unix, but it results in a fast scalable chat environment.';
 $string['confignormalupdatemode'] = 'Chatroom updates are normally served efficiently using the <em>Keep-Alive</em> feature of HTTP 1.1, but this is still quite heavy on the server. A more advanced method is to use the <em>Stream</em> strategy to feed updates to the users. Using <em>Stream</em> scales much better (similar to the chatd method) but may not be supported by your server.';
 $string['configoldping'] = 'What is the maximum time that may pass before we detect that a user has disconnected (in seconds)? This is just an upper limit, as usually disconnects are detected very quickly. Lower values will be more demanding on your server. If you are using the normal method, <strong>never</strong> set this lower than 2 * chat_refresh_room.';
 $string['configrefreshroom'] = 'How often should the chat room itself be refreshed? (in seconds).  Setting this low will make the chat room seem quicker, but it may place a higher load on your web server when many people are chatting. If you are using <em>Stream</em> updates, you can select higher refresh frequencies -- try with 2.';
@@ -66,8 +66,8 @@ $string['errornousers'] = 'Could not find any users!';
 $string['eventmessagesent'] = 'Message sent';
 $string['eventsessionsviewed'] = 'Sessions viewed';
 $string['explaingeneralconfig'] = 'These settings are <strong>always</strong> used';
-$string['explainmethoddaemon'] = 'These settings matter <strong>only</strong> if you have selected "Chat server daemon" for chat_method';
-$string['explainmethodnormal'] = 'These settings matter <strong>only</strong> if you have selected "Normal method" for chat_method';
+$string['explainmethoddaemon'] = 'These settings only have an effect if \'Chat server daemon\' is selected as chat method.';
+$string['explainmethodnormal'] = 'These settings only have an effect if Normal is selected as chat method.';
 $string['generalconfig'] = 'General configuration';
 $string['idle'] = 'Idle';
 $string['indicator:cognitivedepth'] = 'Chat cognitive';
@@ -86,9 +86,9 @@ $string['messageexit'] = '{$a} has left this chat';
 $string['messages'] = 'Messages';
 $string['messageyoubeep'] = 'You beeped {$a}';
 $string['method'] = 'Chat method';
-$string['methodajax'] = 'Ajax method';
+$string['methodajax'] = 'AJAX';
 $string['methoddaemon'] = 'Chat server daemon';
-$string['methodnormal'] = 'Normal method';
+$string['methodnormal'] = 'Normal';
 $string['modulename'] = 'Chat';
 $string['modulename_help'] = 'The chat activity module enables participants to have text-based, real-time synchronous discussions.
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,8 @@ $string['comment'] = '코멘트';
 $string['commentcolour'] = '코멘트 색';
 $string['commentcontextmenu'] = '코멘트 문맥 메뉴';
 $string['currentstamp'] = '스탬프';
+$string['default'] = '기본으로 활성화됨';
+$string['default_help'] = '설정되면 모든 새로운 과제에 대해 기본으로 피드백 방법이 활성화 될 것입니다.';
 $string['deleteannotation'] = '주석 삭제';
 $string['deletecomment'] = '코멘트 삭제';
 $string['deletefeedback'] = '피드백 pdf 삭제';

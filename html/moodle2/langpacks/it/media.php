@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'media', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,14 +31,11 @@ $string['defaultheightdesc'] = 'L\'altezza di default del riproduttore multimedi
 $string['defaultwidth'] = 'Larghezza di default';
 $string['defaultwidthdesc'] = 'La larghezza di default del riproduttore multimediale nel caso in cui non sia possibile individuare un valore diverso.';
 $string['extensions'] = 'Estension: {$a}';
-$string['legacyheading'] = 'Riproduttori multimediali obsoleti';
-$string['legacyheading_desc'] = 'L\'uso dei formati che seguono è sconsigliato, di norma sono utilizzati in installazioni intranet con client gestiti centralmente.';
 $string['managemediaplayers'] = 'Gestione riproduttori multimediali';
 $string['mediaformats'] = 'Riproduttori disponibili';
 $string['mediaformats_desc'] = 'Abilitando i riproduttori tramite le impostazioni seguenti, sarà possibile incorporare file multimediali tramite il filtro Plugin multimediali (se abilitato) oppure tramite risorse di tipo File o URL usando l\'opzione \'Incorpora\'. Se un riproduttore non è abilitato, non sarà possibile incorporare quel tipo di media e gli utenti dovranno scaricare il file o seguire il link.
 
 Se due riproduttori supportano lo stesso formato, abilitarli entrambi aumenta la compatibilità tra dispositivi diversi, come ad esempio i telefoni cellulari. E\' anche possibile aumentare ulteriormente la compatibilità fornendo più versioni in formati diversi dello stesso clip audio o video.';
-$string['mediasettings'] = 'Media incorporati';
 $string['privacy:metadata'] = 'L\'incorporazione di file non memorizza dati personali.';
 $string['supports'] = 'Supporta';
 $string['videoextensions'] = 'Video: {$a}';

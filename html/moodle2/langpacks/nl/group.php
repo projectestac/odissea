@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'group', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,8 @@ $string['deleteselectedgroup'] = 'Verwijder geselecteerde groep';
 $string['editgroupingsettings'] = 'Bewerk instellingen groepering';
 $string['editgroupsettings'] = 'Bewerk instellingen groep';
 $string['editusersgroupsa'] = 'Bewerk groepen voor "{$a}"';
+$string['enablemessaging'] = 'Berichten naar groep';
+$string['enablemessaging_help'] = 'Indien ingeschakeld kunnen groepsleden berichten sturen naar andere leden in hun groep via het berichtenpaneel.';
 $string['enrolmentkey'] = 'Cursussleutel';
 $string['enrolmentkeyalreadyinuse'] = 'Deze aanmeldingssleutel is al in gebruik voor een andere groep.';
 $string['enrolmentkey_help'] = 'Een aanmeldsleutel beperkt de toegang tot de cursus tot leerlingen die de sleutel kennen. Als een groepsaanmeldingssleutel is opgegeven, dan zal het ingeven van de sleutel de leerling niet alleen toegang geven tot de cursus, maar hem ook automatisch lid maken van deze groep.
@@ -141,7 +143,7 @@ $string['importgroups_help'] = 'Groepen kunnen geïimporteerd worden via een tek
 * Elke  record is een rij kommagescheiden gegevens
 * De eerste record bevat een lijst met veldnamen die de opmaak bepalen van de rest van het bestand
 * De vereiste veldnaam is groupname
-* Optionele velnamen zijn description, enrolmentkey, picture, hidepicture';
+* Optionele velnamen zijn groupidnumber, description, enrolmentkey, groupingname';
 $string['includeonlyactiveenrol'] = 'Enkel actieve aanmeldingen meenemen';
 $string['includeonlyactiveenrol_help'] = 'Indien ingeschakeld zullen geschorste gebruikers niet mee opgenomen worden in groepen.';
 $string['javascriptrequired'] = 'Voor deze pagina moet Javascript ingeschakeld zijn';
@@ -174,6 +176,7 @@ $string['overview'] = 'Overzicht';
 $string['potentialmembers'] = 'Mogelijke groepsleden: {$a}';
 $string['potentialmembs'] = 'Mogelijke leden';
 $string['printerfriendly'] = 'Printervriendelijke overzichtspagina groeperingen';
+$string['privacy:metadata:core_message'] = 'De groepsconversaties';
 $string['privacy:metadata:groups'] = 'Een record van groepslidmaatschap.';
 $string['privacy:metadata:groups:groupid'] = 'De ID van de groep.';
 $string['privacy:metadata:groups:timeadded'] = 'Het tijdstempel dat aangeeft wanneer de gebruiker aan de groep is toegevoegd.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['answer'] = 'Réponse';
 $string['bgimage'] = 'Image de fond';
 $string['blank'] = 'vide';
 $string['correctansweris'] = 'La réponse correcte est : {$a}';
+$string['deletedchoice'] = '[Choix supprimé]';
 $string['draggableimage'] = 'Image à glisser-déposer';
 $string['draggableitem'] = 'Élément à glisser-déposer';
 $string['draggableitemheader'] = 'Élément à glisser-déposer {$a}';
@@ -40,7 +41,7 @@ $string['draggableword'] = 'Texte à glisser-déposer';
 $string['dropbackground'] = 'Image de fond sur laquelle glisser-déposer des éléments';
 $string['dropzone'] = 'Zone de glisser-déposer {$a}';
 $string['dropzoneheader'] = 'Zones de glisser-déposer';
-$string['formerror_disallowedtags'] = 'Les balises HTML ne sont pas permises dans un texte à glisser-déposer.';
+$string['formerror_disallowedtags'] = 'Seules les balises {$a} sont permises dans ce texte à glisser-déposer.';
 $string['formerror_multipledraginstance'] = 'Vous avez sélectionné l\'image {$a} plus d\'une fois comme choix correct pour une zone de glisser-déposer, mais elle n\'est pas signalée comme un élément réutilisable pour glisser-déposer';
 $string['formerror_multipledraginstance2'] = 'Vous avez sélectionné cette image plus d\'une fois comme choix correct pour une zone de glisser-déposer, mais elle n\'est pas signalée comme un élément réutilisable pour glisser-déposer';
 $string['formerror_noallowedtags'] = 'Les balises HTML ne sont pas permises dans ce texte alternatif de l\'image à glisser-déposer.';

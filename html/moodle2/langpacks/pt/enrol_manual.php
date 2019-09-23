@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_manual', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['assignrole'] = 'Atribuir papel';
 $string['assignroles'] = 'Atribuir papeis';
 $string['browsecohorts'] = 'Ver a lista de Grupos globais';
 $string['browseusers'] = 'Ver lista de utilizadores';
-$string['confirmbulkdeleteenrolment'] = 'Tem a certeza de que pretende remover a inscrição desses utilizadores?';
+$string['confirmbulkdeleteenrolment'] = 'Tem a certeza de que pretende apagar a inscrição destes utilizadores?';
 $string['defaultperiod'] = 'Duração predefinida da inscrição';
 $string['defaultperiod_desc'] = 'Duração predefinida da inscrição.  Se for definida para zero, a validade da inscrição será ilimitada por predefinição.';
 $string['defaultperiod_help'] = 'Tempo predefinido durante o qual as inscrições são válidas a partir do momento em que o aluno é inscrito.';
@@ -66,16 +66,18 @@ $string['manual:unenrolself'] = 'Remover a sua inscrição desta disciplina';
 $string['messageprovider:expiry_notification'] = 'Notificações de expiração de inscrições manuais';
 $string['now'] = 'Agora';
 $string['pluginname'] = 'Inscrições manuais';
-$string['pluginname_desc'] = 'O módulo de inscrições manuais permite que os utilizadores sejam inscritos através de uma hiperligação no bloco de configurações > Administração da disciplina, por um utilizador com as permissões necessárias (ex: professor). Normalmente este módulo deve estar ativo, uma vez que alguns módulos de inscrição, como o de auto-inscrição, dependem deste módulo.';
+$string['pluginname_desc'] = 'O módulo de inscrições manuais permite que os utilizadores sejam inscritos através de uma hiperligação no bloco de configurações > Administração da disciplina, por um utilizador com as permissões necessárias (ex: professor). Normalmente este módulo deve estar ativo, uma vez que alguns módulos de inscrição, como o de autoinscrição, dependem deste módulo.';
 $string['privacy:metadata'] = 'O módulo Inscrições manuais não armazena dados pessoais.';
 $string['selectcohorts'] = 'Selecionar grupos globais';
-$string['selection'] = 'Seleção';
+$string['selection'] = 'Selecão';
 $string['selectusers'] = 'Selecionar utilizadores';
+$string['sendexpirynotificationstask'] = 'Tarefa de envio de notificações de expiração de inscrições manuais';
 $string['status'] = 'Ativar inscrições manuais';
 $string['status_desc'] = 'Permitir que os utilizadores inscritos internamente possam aceder à disciplina. Isto deve ser permitido na maior parte das situações.';
 $string['statusdisabled'] = 'Desativado';
 $string['statusenabled'] = 'Ativo(a)';
 $string['status_help'] = 'Este parâmetro define se os utilizadores podem ser inscritos manualmente, através de uma hiperligação no bloco de administração da disciplina e por um utilizador com as permissões necessárias (ex: professor).';
+$string['syncenrolmentstask'] = 'Tarefa de sincronização de inscrições manuais';
 $string['unenrol'] = 'Cancelar inscrição do utilizador';
 $string['unenrolselectedusers'] = 'Cancelar inscrição dos utilizadores selecionados';
 $string['unenrolselfconfirm'] = 'Tem a certeza de que pretende remover a sua inscrição da disciplina "{$a}"?';

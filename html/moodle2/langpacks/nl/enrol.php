@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -126,13 +126,13 @@ $string['periodstart'] = 'van {$a}';
 $string['periodstartend'] = 'van {$a->start} tot {$a->end}';
 $string['privacy:metadata:user_enrolments'] = 'Aanmeldingen';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'Een aanmeldingsplugininstantie';
-$string['privacy:metadata:user_enrolments:modifierid'] = 'De ID van de gebruiker die laatst de gebruikersaanmelding heeft gewijzigd.';
-$string['privacy:metadata:user_enrolments:status'] = 'De status van de aanmelding van een gebruiker in een cursus.';
-$string['privacy:metadata:user_enrolments:tableexplanation'] = 'Dit is maar het aanmeldingsbeheer aangemelde gebruikers bewaart.';
-$string['privacy:metadata:user_enrolments:timecreated'] = 'Het tijdstip waarop de aanmelding van de gebruiker is aangemaakt.';
-$string['privacy:metadata:user_enrolments:timeend'] = 'Het tijdstip waarop de aanmelding van de gebruiker eindigt.';
-$string['privacy:metadata:user_enrolments:timemodified'] = 'Het tijdstip waarop de aanmelding van de gebruiker gewijzigd is.';
-$string['privacy:metadata:user_enrolments:timestart'] = 'Het tijdstip waarop de aanmelding van de gebruiker start.';
+$string['privacy:metadata:user_enrolments:modifierid'] = 'De ID van de gebruiker die laatst de gebruikersaanmelding heeft gewijzigd';
+$string['privacy:metadata:user_enrolments:status'] = 'De status van de aanmelding van een gebruiker in een cursus';
+$string['privacy:metadata:user_enrolments:tableexplanation'] = 'De core aanmeldingsplugin bewaart aangemelde gebruikers.';
+$string['privacy:metadata:user_enrolments:timecreated'] = 'Het tijdstip waarop de aanmelding van de gebruiker is aangemaakt';
+$string['privacy:metadata:user_enrolments:timeend'] = 'Het tijdstip waarop de aanmelding van de gebruiker eindigt';
+$string['privacy:metadata:user_enrolments:timemodified'] = 'Het tijdstip waarop de aanmelding van de gebruiker gewijzigd is';
+$string['privacy:metadata:user_enrolments:timestart'] = 'Het tijdstip waarop de aanmelding van de gebruiker start';
 $string['privacy:metadata:user_enrolments:userid'] = 'De ID van de gebruiker';
 $string['proceedtocourse'] = 'Ga verder naar cursusinhoud';
 $string['recovergrades'] = 'Herstel de oude cijfers van de gebruiker indien mogelijk';

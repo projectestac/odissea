@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_paypal', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,7 +75,7 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'Ordainke
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = 'Ordainketaren jasotzailearen PayPal kontuaren IDa (hau da, saleroslea).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:tax'] = 'Ordainketa egitean kobratutako zerga kopurua.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:timeupdated'] = 'Moodle-ri PayPal-eko ordainketa buruz jakinarazi zaion unea.';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:txn_id'] = 'Saleroslean jatorrizko transakzioaren eroslearen ordainketaren zenbaki identifikatzailea, kasua erregistratu duena hain zuzen ere.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:txn_id'] = 'Saleroslean jatorrizko transakzioaren eroslearen ordainketaren zenbaki identifikatzailea, kasua erregistratu duena hain zuzen ere';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:userid'] = 'Ikastaro-matrikulazioa erosi zuen erabiltzailearen IDa.';
 $string['privacy:metadata:enrol_paypal:paypal_com'] = 'PayPal matrikulazio-pluginak erabiltzaile-datuak Moodle-tik PayPal-eko webgunera bidaltzen ditu.';
 $string['privacy:metadata:enrol_paypal:paypal_com:address'] = 'Ikastaroa erosten ari den erabiltzailearen helbidea.';
@@ -86,6 +86,7 @@ $string['privacy:metadata:enrol_paypal:paypal_com:email'] = 'Ikastaroa erosten a
 $string['privacy:metadata:enrol_paypal:paypal_com:first_name'] = 'Ikastaroa erosten ari den erabiltzailearen izena.';
 $string['privacy:metadata:enrol_paypal:paypal_com:last_name'] = 'Ikastaroa erosten ari den erabiltzailearen abizena.';
 $string['privacy:metadata:enrol_paypal:paypal_com:os0'] = 'Ikastaroa erosten ari den erabiltzailearen izen osoa.';
+$string['processexpirationstask'] = 'PayPal matrikulazioen iraungitze-jakinarazpenen bidalketa zeregina';
 $string['sendpaymentbutton'] = 'Bidali ordainketa Paypal bidez';
 $string['status'] = 'Baimendu PayPal bidezko matrikulazioa';
 $string['status_desc'] = 'Baimendu erabiltzaileak PayPal erabiltzen ikastaro batean matrikulatzeko lehenetsitako balio gisa.';

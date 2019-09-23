@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendar', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,6 +119,7 @@ $string['eventsimported'] = 'Eventi importati: {$a}';
 $string['eventskey'] = 'Filtro eventi';
 $string['eventsource'] = 'Fonte dell\'evento';
 $string['eventspersonal'] = 'I miei eventi';
+$string['eventsrelatedtocategories'] = 'Eventi delle categorie';
 $string['eventsrelatedtocourses'] = 'Eventi relativi al corso';
 $string['eventsrelatedtogroups'] = 'Eventi di gruppo';
 $string['eventstarttime'] = 'Ora d\'inizio';
@@ -144,7 +145,6 @@ $string['export'] = 'Esportazione';
 $string['exportbutton'] = 'Esportazione';
 $string['exportcalendar'] = 'Esporta calendario';
 $string['exporthelp'] = 'Come sottoscrivere il calendario da altre applicazioni (Google/Outlook/Altre)';
-$string['for'] = 'di';
 $string['forcecalendartype'] = 'Forza calendario';
 $string['fri'] = 'Ven';
 $string['friday'] = 'Venerdì';
@@ -265,6 +265,7 @@ $string['tt_showuser'] = 'Eventi utente nascosti (clicca per visualizzare)';
 $string['tue'] = 'Mar';
 $string['tuesday'] = 'Martedì';
 $string['typecategory'] = 'Evento di categoria';
+$string['typeclose'] = 'Chiudi evento';
 $string['typecourse'] = 'Evento di corso';
 $string['typegroup'] = 'Evento di gruppo';
 $string['typeopen'] = 'Apri evento';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_flickr', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio_flickr', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['apikey'] = 'Κλειδί API';
 $string['contenttype'] = 'Τύποι περιεχομένου';
 $string['err_noapikey'] = 'Δεν υπάρχει κλειδί API';
 $string['err_noapikey_help'] = 'Δεν έχει ρυθμιστεί κανένα κλειδί API για αυτό το πρόσθετο. Μπορείτε να πάρετε ένα από αυτά από τη σελίδα υπηρεσιών Flickr.';
-$string['hidefrompublicsearches'] = 'Απόκρυψη αυτών των εικόνων από δημόσιες αναζητήσεις?';
+$string['hidefrompublicsearches'] = 'Απόκρυψη αυτών των εικόνων από δημόσιες αναζητήσεις;';
 $string['isfamily'] = 'Ορατό στην οικογένεια';
 $string['isfriend'] = 'Ορατό σε φίλους';
 $string['ispublic'] = 'Δημόσιο (όλοι μπορούν τα το δουν)';

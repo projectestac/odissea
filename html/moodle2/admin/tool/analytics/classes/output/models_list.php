@@ -141,7 +141,7 @@ class models_list implements \renderable, \templatable {
                         if ($contextid == SYSCONTEXTID) {
                             $contextname = get_string('allpredictions', 'tool_analytics');
                         } else {
-                            $contextname = shorten_text($context->get_context_name(true, true), 90);
+                            $contextname = shorten_text($context->get_context_name(false, true), 40);
                         }
                         $predictioncontexts[$contextid] = $contextname;
                     }
@@ -247,7 +247,7 @@ class models_list implements \renderable, \templatable {
             }
 
             // Clear model.
-            if (!empty($predictioncontexts)) {
+            if (!empty($predictioncontexts) || $model->is_trained()) {
                 $actionid = 'clear-' . $model->get_id();
                 $PAGE->requires->js_call_amd('tool_analytics/model', 'confirmAction', [$actionid, 'clear']);
                 $urlparams['action'] = 'clear';

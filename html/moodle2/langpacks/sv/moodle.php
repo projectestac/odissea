@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'moodle', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -199,7 +199,7 @@ $string['backupnonisowarning'] = 'Varning: Den här säkerhetskopian kommer frå
 $string['backupnotyetrun'] = 'Avvaktar automatisk backup';
 $string['backuporiginalname'] = 'Namn på säkerhetskopian';
 $string['backuproleassignments'] = 'Säkerhetskopiera rolltilldelningarna för dessa roller';
-$string['backupsavetohelp'] = 'Hela sökvägen till katalogen där du vill spara de säkerhetskopierade filerna <br /> Om du vill spara dem i standardkatalogen så behöver du inte fylla i något här.';
+$string['backupsavetohelp'] = 'Hela sökvägen till katalogen där Du vill spara de säkerhetskopierade filerna <br /> Om Du vill spara dem i standardkatalogen så behöver Du inte fylla i något här.';
 $string['backupsitefileshelp'] = 'Om detta är aktiverat så kommer de filer på webbplatsen som används i kurser att  tas med vid automatisk säkerhetskopiering.';
 $string['backuptakealook'] = 'Var snäll och kontrollera Din loggar för säkerhetskopiering i: {$a}';
 $string['backupuserfileshelp'] = 'Välj om Du vill ta med användarfiler (avatarer eller bilder ur profilen) i den automatiska säkerhetskopieringen.';
@@ -225,7 +225,7 @@ $string['cachecontrols'] = 'Kontroller av cache';
 $string['cancel'] = 'Avbryt';
 $string['cancelled'] = 'Avbruten';
 $string['categories'] = 'Kurskategorier';
-$string['categoriesandcoures'] = 'Kurskategorier och kurser';
+$string['categoriesandcourses'] = 'Kurskategorier och kurser';
 $string['category'] = 'Kategori';
 $string['categoryadded'] = 'Kategorin \'{$a}\' lades till';
 $string['categorybulkaction'] = 'Bulk åtgärdsval för valda kategorier';
@@ -310,6 +310,7 @@ Detta inneb&auml;r att n&auml;r Du bes&ouml;ker l&auml;romilj&ouml;n n&auml;sta 
 <p>Du kan om Du vill avaktivera denna funktion. Det inneb&auml;r is&aring;fall bara
 att Du m&aring;ste skriva in Ditt anv&auml;ndarnamn
 varje g&aring;ng Du loggar in.</p>';
+$string['cookiesenabledonlysession'] = 'Du måste aktivera \'Cookies\' i inställningarna till din webbläsare.';
 $string['cookiesnotenabled'] = 'Cookies är f.n. tyvärr inte aktiverade i inställningarna till Din webbläsare.';
 $string['copy'] = 'Kopiera';
 $string['copyasnoun'] = 'kopiera';
@@ -411,6 +412,7 @@ $string['courserequestsuccess'] = 'Din kursansökan har sparats. Du kommer få e
 $string['courserequestsupport'] = 'Kompletterande information för att underlätta för administratören att utvärdera denna förfrågan.';
 $string['courserestore'] = 'Återställ kurs';
 $string['courses'] = 'Kurser';
+$string['coursesearch_help'] = 'Du kan söka på flera ord samtidigt.<br /><br />ord: sök varje matchande ord inom texten<br />+ord: sök endast ord som matchar exakt<br />-ord: ta inte med resultat som innehåller detta ord.';
 $string['coursesectionsummaries'] = 'Sammanfattningar för sektioner i kurser';
 $string['coursesectiontitle'] = 'Kurs: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
 $string['coursesettings'] = 'Förvalda standardinställningar för kurs';
@@ -507,7 +509,7 @@ $string['deletecategorycheck2'] = 'Om du tar bort denna kategori måste du välj
 $string['deletecategoryempty'] = 'Den här kategorin är tom.';
 $string['deletecheck'] = 'Ta bort {$a} ?';
 $string['deletecheckfiles'] = 'Är Du säker på att Du vill ta bort de här filerna?';
-$string['deletecheckfull'] = 'Är Du säker på att du vill ta bort hela {$a} inkl. kurstillhörigheter, aktivitet och annan användardata?';
+$string['deletecheckfull'] = 'Är Du säker på att Du vill ta bort hela {$a} ?';
 $string['deletechecktype'] = 'Är du säker på att du vill ta bort denna {$a->type}?';
 $string['deletechecktypename'] = 'Är du säker på att du vill ta bort {$a->type} "{$a->name}"?';
 $string['deletecheckwarning'] = 'Du håller på att ta bort dessa filer.';
@@ -565,6 +567,7 @@ $string['downloadtext'] = 'Ladda ner i textformat';
 $string['doyouagree'] = 'Har Du läst dessa villkor och förstått dem?';
 $string['droptoupload'] = 'Släpp filer här för att ladda upp';
 $string['duplicate'] = 'Kopiera';
+$string['duplicatedmodule'] = '{$a} (kopia)';
 $string['edhelpaspellpath'] = 'För att använda stavningskontroll inom redigeraren så MÅSTE <strong>aspell 0.50</strong> eller senare vara installerad på Din server, och Du måste ange rätt sökväg för att få tillgång till aspell binary. På Unix/Linux-system, så är den här sökvägen normalt sett <strong>/usr/bin/aspell</strong>, men det kan vara någonting annat.';
 $string['edhelpbgcolor'] = 'Definiera bakgrundsfärgen för det område som Du vill redigera.<br />Giltiga värden är t.ex. #ffffff eller "white".';
 $string['edhelpcleanword'] = 'Den här inställningen aktiverar eller avaktiverar formatfiltrering som är specifik för Word.';
@@ -613,36 +616,17 @@ $string['emailagain'] = 'E-post (igen)';
 $string['emailalreadysent'] = 'Ett meddelande om lösenordsåterställning har redan skickats. Vänligen kontrollera din epost.';
 $string['emailcharset'] = 'Teckenuppsättning för e-post';
 $string['emailconfirm'] = 'Bekräfta Ditt konto';
-$string['emailconfirmation'] = 'Hej {$a->firstname}!
+$string['emailconfirmation'] = 'Hej {$a->firstname},
 
-Någon (antagligen Du) har använt Din e-postadress
-för att beställa ett nytt konto hos:
-\'{$a->sitename}\'.
+Någon (antagligen du) har använt din e-postadress för att beställa ett nytt konto hos: \'{$a->sitename}\'.
 
-Om Du vill bekräfta detta nya konto, så är Du
-varmt välkommen att besöka följande webbadress:
+För att bekräfta kontot, besök följande webbadress:
 
 {$a->link}
 
-I de flesta e-postprogram kommer denna adress att
-visas som en blå länk som Du bara behöver klicka
-på. Om det inte fungerar, kan Du klippa ut adressen
-här och klistra in den i adressrutan på Din
-webbläsare.
+I de flesta e-postprogram behöver du bara klicka på länken. Om det inte fungerar, kan du klippa ut adressen här och klistra in den i adressrutan på din webbläsare.
 
-Klicka sedan på Gå eller tryck på radmatningen (Enter).
-
-OBS! Genom att Du bekräftar kontot så samtycker
-Du till databehandling enligt Personuppgiftslagen.
-Om Du är osäker på vad det innebär så kan Du hitta
-mer information här: \'http://www.datainspektionen.se/lagar-och-regler/personuppgiftslagen/
-\'
-
-Om Du behöver hjälp så kan Du kontakta
-vår administratören för vår webbplats,
-{$a->admin}
-
-Med vänliga hälsningar från \'{$a->sitename}\'';
+Om du behöver hjälp kan du gärna kontakta administratören för vår webbplats, {$a->admin}';
 $string['emailconfirmationsubject'] = '{$a}: bekräftelse av konto';
 $string['emailconfirmsent'] = '<p>Vi har skickat ett e-postbrev som Du bör ha fått<br /> till Din adress på <b>{$a}</b></p>
 <p>Det innehåller enkla instruktioner som hjälper Dig<br />att fullfölja Din registrering.</p>
@@ -674,43 +658,45 @@ $string['emailnotallowed'] = 'E-postadresser i de här domänerna är inte till�
 $string['emailnotfound'] = 'Det gick inte att hitta e-postadressen i databasen.';
 $string['emailonlyallowed'] = 'Det här e-postmeddelandet är inte ett av dem som är tillåtna ({$a}).';
 $string['emailpasswordchangeinfo'] = 'Hej {$a->firstname},
-Någon (troligen du) har bett om ett nytt lösenord för ditt konto hos
+Någon (troligen Du) har efterfrågat ett nytt lösenord för Ditt konto hos
 \'{$a->sitename}\'.
 
-För att byta lösenordet gå till följande adress:
+För att byta lösenordet, vara snäll och gå till följande adress:
 
 {$a->link}
 
 I de flesta e-postprogram kommer den att visas som
-en blå länk som du bara behöver klicka på.
+en blå länk som Du bara behöver klicka på.
 
-Om det inte fungerar, kan du kopiera in adressen i adressfönstret på din webbläsare, klicka sedan på Gå eller tryck på
+Om det inte fungerar, kan Du klippa ut adressen och klistra in den i adressfönstret på Din
+webbläsare, klicka sedan på Gå eller tryck på
 radmatningen (Enter).
 
-Om du behöver hjälp så är du välkommen att
+Om Du behöver hjälp så är Du välkommen att
 kontakta den som är ansvarig för webbplatsen,
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Hej {$a->firstname},
-Någon (troligen du) har bett om ett nytt lösenord för ditt konto hos:
+Någon (troligen Du) har efterfrågat
+ett nytt lösenord för Ditt konto hos:
 
 \'{$a->sitename}\'.
 
-Tyvärr har ditt konto på den här webbplatsen avaktiverats och det
+Tyvärr har Ditt konto på den här webbplatsen avaktiverats och det
 går inte att återställa det.
 
-Var god kontakta administratören
+Var snäll och kontakta administratören
 för webbplatsen:
 {$a->admin}';
 $string['emailpasswordchangeinfofail'] = 'Hej {$a->firstname},
-Någon (troligen du) har bett om
-ett nytt lösenord för ditt konto hos:
+Någon (troligen Du) har efterfrågat
+ett nytt lösenord för Ditt konto hos:
 
 \'{$a->sitename}\'.
 
 Det går tyvärr inte att återställa
 lösenord på den här webbplatsen.
 
-Var god kontakta administratören
+Var snäll och kontakta administratören
 för webbplatsen:
 {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: information om byte av lösenord';
@@ -858,7 +844,6 @@ $string['filemissing'] = '{$a} saknas';
 $string['files'] = 'Filer';
 $string['filesanduploads'] = 'Filer och uppladdningar';
 $string['filesfolders'] = 'Filer/mappar';
-$string['filetoolarge'] = 'det är för stort för att ladda upp';
 $string['fileuploadwithcontent'] = 'Filuppladdningar bör inte inkludera innehållsparametrar';
 $string['filloutallfields'] = 'Var vänlig fyll i alla fält i detta formulär.';
 $string['filter'] = 'Filter';
@@ -1212,7 +1197,6 @@ $string['markedthistopic'] = 'Det här ämnet är markerat som det just nu aktue
 $string['markthistopic'] = 'Markera detta ämne som aktuellt  ämne.';
 $string['matchingsearchandrole'] = 'Matchande \'{$a->search} "och {$a->role}';
 $string['maxareabytesreached'] = 'Filen (eller den totala storleken av flera filer) är större än det kvarstående utrymmet i den här arean.';
-$string['maxbytesforfile'] = 'Filen {$a} är större än den maximalt tillåtna storleken.';
 $string['maxfilesize'] = 'Maximal storlek för nya filer: {$a}';
 $string['maxfilesreached'] = 'Det är tillåtet att bifoga högst {$a} fil (er) till det här objektet';
 $string['maximumchars'] = 'Maximum av {$a} tecken';
@@ -1285,8 +1269,6 @@ $string['missingsummary'] = 'Sammanfattning saknas';
 $string['missingteacher'] = 'Du måste välja något';
 $string['missingurl'] = 'URL saknas';
 $string['missingusername'] = 'Användarnamn saknas';
-$string['modchooserdisable'] = 'Aktivitetsväljare av';
-$string['modchooserenable'] = 'Aktivitetsväljare på';
 $string['moddoesnotsupporttype'] = 'Aktiviteten {$a->modname} stöder inte uppladdning av filer av typen {$a->type}';
 $string['modhide'] = 'Dölj';
 $string['modified'] = 'Modifierad';
@@ -1347,7 +1329,7 @@ $string['mustconfirm'] = 'Du måste bekräfta Din inloggning.';
 $string['mycourses'] = 'Mina kurser';
 $string['myfiles'] = 'Mina privata filer';
 $string['myfilesmanage'] = 'Hantera mina privata filer';
-$string['myhome'] = 'Mitt hem';
+$string['myhome'] = 'Mitt Moodle';
 $string['mymoodledashboard'] = 'Min Moodle panel';
 $string['myprofile'] = 'Min profil';
 $string['name'] = 'Namn';
@@ -1441,28 +1423,26 @@ kurs. Detta i en nyhetsbox nere p&aring; h&ouml;ger sida.</p>
 s&aring; kommer inte ens nyhetsboxen att synas.</p>';
 $string['newuser'] = 'Ny användare';
 $string['newusernewpasswordsubj'] = 'Nytt användarkonto';
-$string['newusernewpasswordtext'] = 'Hej {$a->firstname},
+$string['newusernewpasswordtext'] = 'Hej {$a->firstname}!
 
-Ett nytt konto har skapats för Dig vid
-\'{$a->sitename}\' och Du har fått ett
-tillfälligt lösenord.
+Ett nytt konto har skapats för dig i \'{$a->sitename}\'
+och du har fått ett tillfälligt lösenord.
 
-Den data för login som gäller för Dig är nu:
+Dina inloggningsuppgifter är nu:
 
-användarnamn: {$a->username}
-lösenord: {$a->newpassword}
+   användarnamn: {$a->username}
+   lösenord: {$a->newpassword}
+      (du måste ändra ditt lösenord när du loggar in för första gången)
 
-Du måste ändra Ditt lösenord när Du
-loggar in för första gången.
+För att börja använda \'{$a->sitename}\', logga in via följande länk:
+   {$a->link}
 
-I de flesta e-postprogram kommer det att visas som
-en blå länk som Du bara behöver klicka på.
+I de flesta e-postprogram visas adressen ovan som en länk
+som du bara behöver klicka på. Om det inte fungerar kan du
+klippa ut adressen och klistra in den i adressraden på
+din webbläsare.
 
-Om det inte fungerar, kan Du klippa ut adressen här
-och klistra in den i adressfönstret på Din webbläsare,
-klicka sedan på Gå eller tryck på radmatningen (Enter).
-
-Med vänlig hälsning från: \'{$a->sitename}\' administratören,
+Med vänlig hälsning från \'{$a->sitename}\'.
 {$a->signoff}';
 $string['newusers'] = 'Nya användare';
 $string['newwindow'] = 'Nytt fönster';
@@ -1622,7 +1602,7 @@ $string['plugincheck'] = 'Kontroll av plugins';
 $string['plugindeletefiles'] = 'Alla data som är associerade med plugin \'{$a->name}\' har tagits bort från databasen. För att förhindra att plugin-et  installeras på nytt, bör du ta bort nu den här katalogen från servern: {$a->directory}';
 $string['pluginsetup'] = 'Installerar tabeller för plugins';
 $string['policyaccept'] = 'Jag förstår och accepterar';
-$string['policyagree'] = 'Du måste acceptera denna policy för få fortsätta att använda denna webbplats. Accepterar du denna policy?';
+$string['policyagree'] = 'Du måste acceptera denna policy för få fortsätta att använda denna webbplats. Accepterar Du denna policy?';
 $string['policyagreement'] = 'Avtal angående webbplatsens policy.';
 $string['policyagreementclick'] = 'Klicka här för att läsa avtalet angående webbplatsens policy.';
 $string['popup'] = 'popup';
@@ -1813,7 +1793,6 @@ $string['searchagain'] = 'Sök igen';
 $string['searchbyemail'] = 'Sök enligt e-postadress';
 $string['searchbyusername'] = 'Sök enligt användarnamn';
 $string['searchcourses'] = 'Sök kurser';
-$string['searchhelp'] = 'Du kan söka på flera ord samtidigt.<br /><br />ord: sök varje matchande ord inom texten<br />+ord: sök endast ord som matchar exakt<br />-ord: ta inte med resultat som innehåller detta ord.';
 $string['search_help'] = 'För grundläggande sökning av ett eller flera ord var som helst i texten, skriv dem åtskilda av mellanslag. Alla ord längre än två tecken används.
 
 För avancerad sökning, tryck på sök-knappen utan att skriva något i sökrutan för att komma åt den avancerade sökfunktionen.';
@@ -2138,7 +2117,7 @@ $string['unzippingbackup'] = 'Packar upp säkerhetskopia...';
 $string['up'] = 'Upp';
 $string['update'] = 'Uppdatera';
 $string['updated'] = 'Uppdaterat {$a}';
-$string['updatemymoodleoff'] = 'Sluta anpassa den här sidan';
+$string['updatemymoodleoff'] = 'Sluta att anpassa den här sidan';
 $string['updatemymoodleon'] = 'Anpassa den här sidan';
 $string['updatemyprofile'] = 'Uppdatera profil';
 $string['updatesevery'] = 'Uppdatering varje {$a} sekund';
@@ -2172,7 +2151,6 @@ $string['uploadthisfile'] = 'Ladda upp denna fil';
 $string['url'] = 'URL';
 $string['used'] = 'Använd';
 $string['usedinnplaces'] = 'Använd på {$a} ställen';
-$string['usemessageform'] = 'eller använd formuläret här nedan för att skicka ett meddelande till de valda studenterna/eleverna/deltagarna/lärande';
 $string['user'] = 'Användare';
 $string['useraccount'] = 'Användarkonto';
 $string['useractivity'] = 'Aktivitet';

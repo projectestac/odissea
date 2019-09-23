@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_flickr_public', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_flickr_public
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['by-nc-nd'] = 'Άδεια με Αναφορά Δημιουργού-Μη 
 $string['by-nc-sa'] = 'Άδεια με Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Παρόμοια Διανομή';
 $string['by-nd'] = 'Άδεια με Αναφορά Δημιουργού-Όχι Παράγωγα Έργα';
 $string['by-sa'] = 'Άδεια με Αναφορά Δημιουργού-Παρόμοια Διανομή';
-$string['callbackurl'] = 'Τοποθεσία Callback';
+$string['callbackurl'] = 'Διεύθυνση URL επανάκλησης (Callback)';
 $string['commercialuse'] = 'Θέλω να χρησιμοποιήσω τις εικόνες εμπορικά';
 $string['configplugin'] = 'Δημόσιες ρυθμίσεις Flickr';
 $string['creativecommonscommercial'] = 'Μόνο (με άδεια) Creative Commons εμπορική (Αναφορά Δημιουργού)';
@@ -55,7 +55,7 @@ $string['privacy:metadata:repository_flickr_public:email_address'] = 'Η διε�
 $string['privacy:metadata:repository_flickr_public:text'] = 'Το κείμενο αναζήτησης χρήστη του δημόσιου αποθετηρίου Flickr.';
 $string['privacy:metadata:repository_flickr_public:user_id'] = 'Το αναγνωριστικό χρήστη του δημόσιου αποθετηρίου Flickr.';
 $string['remember'] = 'Να με θυμάσαι';
-$string['secret'] = 'Συνθηματικό (Secret)';
+$string['secret'] = 'Μυστικό';
 $string['sharealike'] = 'Ναι, εφόσον όλοι χρησιμοποιούν παρόμοια διανομή';
 $string['tag'] = 'Ετικέτα';
 $string['username'] = 'Δι/νση Ηλεκτρονικού Ταχυδρομείου του λογαριασμού στο Flickr';

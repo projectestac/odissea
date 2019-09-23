@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Add category';
 $string['addcomment'] = 'Add comment';
 $string['addentry'] = 'Add a new entry';
 $string['addingcomment'] = 'Add a comment';
@@ -107,6 +108,7 @@ $string['defaultsortkey'] = 'Default sort key';
 $string['defaultsortorder'] = 'Default sort order';
 $string['definition'] = 'Definition';
 $string['definitions'] = 'Definitions';
+$string['deletecategory'] = 'Delete category';
 $string['deleteentry'] = 'Delete entry';
 $string['deleteentrya'] = 'Delete entry: {$a}';
 $string['deletenotenrolled'] = 'Delete entries by users not enrolled';
@@ -141,6 +143,7 @@ $string['duplicateentry'] = 'Duplicate entry';
 $string['editalways'] = 'Always allow editing';
 $string['editalways_help'] = 'This setting specifies whether entries are always editable or whether students can only edit their entries during a configured editing time (usually 30 minutes).';
 $string['editcategories'] = 'Edit categories';
+$string['editcategory'] = 'Edit category';
 $string['editentry'] = 'Edit entry';
 $string['editentrya'] = 'Edit entry: {$a}';
 $string['editingcomment'] = 'Editing comment';
@@ -154,6 +157,7 @@ $string['entrydeleted'] = 'Entry deleted';
 $string['entryexported'] = 'Entry successfully exported';
 $string['entryishidden'] = '(this entry is currently hidden)';
 $string['entryleveldefaultsettings'] = 'Entry level default settings';
+$string['entrylink'] = 'Entry link: {$a}';
 $string['entrysaved'] = 'This entry has been saved';
 $string['entryupdated'] = 'This entry has been updated';
 $string['entryusedynalink'] = 'This entry should be automatically linked';

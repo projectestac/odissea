@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -150,7 +150,7 @@ $string['errorfilenamerequired'] = 'Veuillez saisir un nom de fichier valide pou
 $string['errorfilenametoolong'] = 'Le nom du fichier ne doit pas dépasser 255 caractères.';
 $string['errorinvalidformat'] = 'Format de sauvegarde inconnu';
 $string['errorinvalidformatinfo'] = 'Le fichier sélectionné n\'est pas un fichier de sauvegarde Moodle valide et ne peut pas être restauré.';
-$string['errorminbackup20version'] = 'Restauration impossible. Ce fichier de sauvegarde a été créé avec une version de développement du moteur de sauvegardes de Moodle ({$a->backup}). La version minimale requise pour la restaurer est {$a->min}.';
+$string['errorminbackup20version'] = 'Restauration impossible. Ce fichier de sauvegarde a été créé avec une version de développement du moteur de sauvegarde de Moodle ({$a->backup}). La version minimale requise pour la restaurer est {$a->min}.';
 $string['errorrestorefrontpagebackup'] = 'Les sauvegardes de la page d\'accueil ne peuvent être restaurées que sur la page d\'accueil';
 $string['executionsuccess'] = 'Le fichier de sauvegarde a été enregistré correctement.';
 $string['filealiasesrestorefailures'] = 'Échec de la restauration des alias';
@@ -242,6 +242,7 @@ $string['qcategory2coursefallback'] = 'La catégorie de questions « {$a->name}
 $string['qcategorycannotberestored'] = 'La catégorie de questions « {$a->name} » ne peut pas être créée durant la restauration';
 $string['question2coursefallback'] = 'La catégorie de questions « {$a->name} », située dans le contexte de catégorie system/course dans le fichier de sauvegarde, sera créée dans le contexte du cours durant la restauration';
 $string['questionegorycannotberestored'] = 'La catégorie de questions « {$a->name} » ne peut pas être créée durant la restauration';
+$string['recyclebin_desc'] = 'Ces réglages seront aussi utilisés pour la corbeille.';
 $string['replacerestoredefaults'] = 'Restaurer les réglages par défaut lors de la restauration vers un autre cours en supprimant son contenu';
 $string['restoreactivity'] = 'Restaurer l\'activité';
 $string['restorecourse'] = 'Restaurer le cours';

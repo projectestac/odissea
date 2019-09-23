@@ -7,6 +7,7 @@ class com_wiris_util_xml_MathMLUtils {
 	static $contentTags;
 	static $presentationTagsString = "mrow@mn@mi@mo@mfrac@mfenced@mroot@maction@mphantom@msqrt@mstyle@msub@msup@msubsup@munder@mover@munderover@menclose@mspace@mtext@ms";
 	static $presentationTags;
+	static $strokesAnnotationEncondings;
 	static function isPresentationMathML($mathml) {
 		if(com_wiris_util_xml_MathMLUtils::$presentationTags === null) {
 			com_wiris_util_xml_MathMLUtils::$presentationTags = _hx_explode("@", com_wiris_util_xml_MathMLUtils::$presentationTagsString);
@@ -63,8 +64,8 @@ class com_wiris_util_xml_MathMLUtils {
 			if($end === -1) {
 				throw new HException("Error parsing semantics tag in MathML.");
 			}
-			$a = _hx_index_of($mathml, "<annotation encoding=\"application/json\">", $start);
-			if($a !== -1 && $a < $end) {
+			$a = com_wiris_util_xml_MathMLUtils::strokesAnnotationStart($mathml, $start, $end);
+			if($a !== -1) {
 				$b = _hx_index_of($mathml, "</annotation>", $a);
 				if($b === -1 || $b >= $end) {
 					throw new HException("Error parsing annotation tag in MathML.");
@@ -83,5 +84,20 @@ class com_wiris_util_xml_MathMLUtils {
 		}
 		return $mathml;
 	}
+	static function strokesAnnotationStart($mathml, $start, $end) {
+		{
+			$_g1 = 0; $_g = com_wiris_util_xml_MathMLUtils::$strokesAnnotationEncondings->length;
+			while($_g1 < $_g) {
+				$i = $_g1++;
+				$a = _hx_index_of($mathml, "<annotation encoding=\"" . com_wiris_util_xml_MathMLUtils::$strokesAnnotationEncondings[$i] . "\">", $start);
+				if($a !== -1 && $a < $end) {
+					return $a;
+				}
+				unset($i,$a);
+			}
+		}
+		return -1;
+	}
 	function __toString() { return 'com.wiris.util.xml.MathMLUtils'; }
 }
+com_wiris_util_xml_MathMLUtils::$strokesAnnotationEncondings = new _hx_array(array(com_wiris_util_net_MimeTypes::$JSON, com_wiris_util_net_MimeTypes::$HAND_STROKES));

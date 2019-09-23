@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradereport_singleview', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['excludeall'] = 'Excluir todas as notas';
 $string['excludefor'] = 'Excluir para {$a}';
 $string['excludenone'] = 'Não excluir nenhuma nota';
 $string['feedbackfor'] = 'Feedback para {$a}';
-$string['filtergrades'] = 'Mostrar notas para {$a}.';
+$string['filtergrades'] = 'Mostrar notas de {$a}';
 $string['gradefor'] = 'Nota para {$a}';
 $string['gradeitem'] = 'Avaliar item: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Este item de avaliação não pode ser ajustado.';

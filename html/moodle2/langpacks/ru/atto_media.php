@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['descriptionssourcelabel'] = 'URL описания трека';
 $string['displayoptions'] = 'Показать варианты';
 $string['entername'] = 'Введите название';
 $string['entersource'] = 'URL источника';
+$string['entertitle'] = 'Введите название';
 $string['enterurl'] = 'Введите URL';
 $string['height'] = 'Высота';
 $string['kind'] = 'Тип';
@@ -66,7 +67,7 @@ $string['metadata'] = 'Метаданные';
 $string['metadata_help'] = 'Метаданные треков, применяемые со скриптами, могут использоваться только в том случае, если плеер поддерживает метаданные.';
 $string['metadatasourcelabel'] = 'URL метаданных трека';
 $string['mute'] = 'Отключен звук';
-$string['pluginname'] = 'Медиа';
+$string['pluginname'] = 'Вставить или отредактировать файл аудио/видео';
 $string['poster'] = 'URL-адрес афиши';
 $string['privacy:metadata'] = 'Плагин atto_media не хранит никаких персональных данных.';
 $string['remove'] = 'Удалить';

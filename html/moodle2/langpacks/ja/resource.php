@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'resource', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,15 +70,15 @@ $string['legacyfilesactive'] = 'アクティブ';
 $string['legacyfilesdone'] = '終了';
 $string['modifieddate'] = '修正 {$a}';
 $string['modulename'] = 'ファイル';
-$string['modulename_help'] = 'ファイルモジュールにおいて教師はコースリソースとしてファイルを提供することができます。可能な場合、ファイルはコースインターフェース内に表示されます。そうでない場合、学生にファイルのダウンロードが促されます。例えばHTMLページにイメージまたはフラッシュオブジェクトを埋め込むことができるようにファイルモジュールではファイルの組み込みがサポートされます。
+$string['modulename_help'] = 'ファイルモジュールにおいて教師はコースリソースとしてファイルを提供することができます。可能な場合、ファイルはコースインターフェース内に表示されます。そうでない場合、学生にファイルのダウンロードが促されます。例えばHTMLページにイメージを埋め込むことができるようにファイルモジュールではファイルの組み込みがサポートされます。
 
 ファイルを開くために学生は自分のコンピュータに適切なソフトウェアをインストールする必要があります。
 
-ファイルモジュールは下記のように使用することができます:
+ファイルは以下のように使用できます:
 
 * クラスで実施するプレゼンテーションの共有のため
 * コースリソースとしてミニウェブサイトを含むため
-* 特定のソフトウェアプログラムの下書きファイル (例 Photoshop .psd) を提供して学生が編集および評価のために提出できるようにするため';
+* ソフトウェアプログラムの下書きファイルを提供して学生が編集および評価のために提出できるようにするため';
 $string['modulenameplural'] = 'ファイル';
 $string['notmigrated'] = '申し訳ございません、このレガシーリソースタイプ ({$a}) はまだ移行されていません。';
 $string['optionsheader'] = '表示オプション';
@@ -93,7 +93,7 @@ $string['popupwidth'] = 'ポップアップ幅 (ピクセル)';
 $string['popupwidthexplain'] = 'ポップアップウィンドウのデフォルト幅を指定してください。';
 $string['printintro'] = 'ページ説明を表示する';
 $string['printintroexplain'] = 'コンテンツの下にページ説明を表示しますか? 有効にしてもいくつかの表示タイプでは説明を表示することができません。';
-$string['privacy:metadata'] = 'mod_resourceプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ファイルリソースプラグインはどのような個人データも保存しません。';
 $string['resource:addinstance'] = '新しいリソースを追加する';
 $string['resourcecontent'] = 'ファイルおよびサブフォルダ';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

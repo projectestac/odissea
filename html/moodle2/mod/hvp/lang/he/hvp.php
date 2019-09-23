@@ -56,8 +56,12 @@ $string['noh5ps'] = 'לא קיים תוכן H5P אינטראקטיבי בקור�
 $string['lookforupdates'] = 'Look for H5P updates';
 $string['removetmpfiles'] = 'Remove old H5P temporary files';
 $string['removeoldlogentries'] = 'Remove old H5P log entries';
+$string['removeoldmobileauthentries'] = 'Remove old H5P mobile auth entries';
 
 // Admin settings.
+$string['displayoptiondownloadnever'] = 'Never';
+$string['displayoptiondownloadalways'] = 'Always';
+$string['displayoptiondownloadpermission'] = 'Only if user has permissions to export H5P';
 $string['displayoptionnevershow'] = 'Never show';
 $string['displayoptionalwaysshow'] = 'Always show';
 $string['displayoptionpermissions'] = 'Show only if user has permissions to export H5P';
@@ -66,7 +70,7 @@ $string['displayoptionauthoron'] = 'Controlled by author, default is on';
 $string['displayoptionauthoroff'] = 'Controlled by author, default is off';
 $string['displayoptions'] = 'Display Options';
 $string['enableframe'] = 'Display action bar and frame';
-$string['enabledownload'] = 'Download button';
+$string['enabledownload'] = 'Allow download';
 $string['enableembed'] = 'Embed button';
 $string['enablecopyright'] = 'Copyright button';
 $string['enableabout'] = 'About H5P button';
@@ -133,6 +137,9 @@ $string['upgradenothingtodo'] = "There's no content instances to upgrade.";
 $string['upgradebuttonlabel'] = 'Upgrade';
 $string['upgradeinvalidtoken'] = 'Error: Invalid security token!';
 $string['upgradelibrarymissing'] = 'Error: Your library is missing!';
+$string['upgradeerrormissinglibrary'] = 'Missing required library %lib.';
+$string['upgradeerrortoohighversion'] = 'Parameters contain %used while only %supported or earlier are supported.';
+$string['upgradeerrornotsupported'] = 'Parameters contain %used which is not supported.';
 
 // Results / report page.
 $string['user'] = 'משתמש';
@@ -194,6 +201,7 @@ $string['hvp:getcachedassets'] = 'אחזור משאבי מטמון של רכיב
 $string['hvp:installrecommendedh5plibraries'] = 'Install new safe H5P content types recommended by H5P.org';
 
 // Capabilities error messages.
+$string['nopermissiontogettranslations'] = 'You do not have permissions to retrieve translations';
 $string['nopermissiontoupgrade'] = 'You do not have permission to upgrade libraries.';
 $string['nopermissiontorestrict'] = 'You do not have permission to restrict libraries.';
 $string['nopermissiontosavecontentuserdata'] = 'You do not have permission to save content user data.';
@@ -299,3 +307,26 @@ $string['licenseversion'] = 'License Version';
 
 // Embed.
 $string['embedloginfailed'] = 'You do not have access to this content. Try logging in.';
+
+// Reuse.
+$string['reuse'] = 'Reuse';
+$string['reuseContent'] = 'Reuse Content';
+$string['reuseDescription'] = 'Reuse this content.';
+$string['contentCopied'] = 'Content is copied to the clipboard';
+
+// Offline
+$string['connectionLost'] = 'Connection lost. Results will be stored and sent when you regain connection.';
+$string['connectionReestablished'] = 'Connection reestablished.';
+$string['resubmitScores'] = 'Attempting to submit stored results.';
+$string['offlineDialogHeader'] = 'Your connection to the server was lost';
+$string['offlineDialogBody'] = 'We were unable to send information about your completion of this task. Please check your internet connection.';
+$string['offlineDialogRetryMessage'] = 'Retrying in :num....';
+$string['offlineDialogRetryButtonLabel'] = 'Retry now';
+$string['offlineSuccessfulSubmit'] = 'Successfully submitted results.';
+
+// Error messages.
+$string['fileExceedsMaxSize'] = 'One of the files inside the package exceeds the maximum file size allowed. (%file %used > %max)';
+$string['unpackedFilesExceedsMaxSize'] = 'The total size of the unpacked files exceeds the maximum size allowed. (%used > %max)';
+$string['couldNotReadFileFromZip'] = 'Unable to read file from the package: %fileName';
+$string['couldNotParseJSONFromZip'] = 'Unable to parse JSON from the package: %fileName';
+$string['couldNotParsePostData'] = 'Could not parse post data.';

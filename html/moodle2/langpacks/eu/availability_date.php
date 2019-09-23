@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability_date', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   availability_date
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['ajaxerror'] = 'Errorea zerbitzariarekin denborak bihurtzeko konektatzean';
-$string['description'] = 'Saihestu sarbidea data eta ordu zehatz batetik aurrera (edo batera arte).';
+$string['description'] = 'Ukatu sarbidea data eta ordu zehatz batetik aurrera (edo batera arte).';
 $string['direction_before'] = 'Data';
 $string['direction_from'] = 'noiztik';
 $string['direction_label'] = 'Norabidea';

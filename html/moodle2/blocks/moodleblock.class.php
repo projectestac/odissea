@@ -232,7 +232,7 @@ class block_base {
                 $bc->footer = $this->content->footer;
             }
         } else {
-            $bc->add_class('invisible');
+            $bc->add_class('invisibleblock');
         }
 
         if (!$this->hide_header()) {
@@ -268,6 +268,39 @@ class block_base {
         }
 
         $bc->annotation = ''; // TODO MDL-19398 need to work out what to say here.
+
+        return $bc;
+    }
+
+
+    /**
+     * Return an object containing all the block content to be returned by external functions.
+     *
+     * If your block is returning formatted content or provide files for download, you should override this method to use the
+     * external_format_text, external_format_string functions for formatting or external_util::get_area_files for files.
+     *
+     * @param  core_renderer $output the rendered used for output
+     * @return stdClass      object containing the block title, central content, footer and linked files (if any).
+     * @since  Moodle 3.6
+     */
+    public function get_content_for_external($output) {
+        $bc = new stdClass;
+        $bc->title = null;
+        $bc->content = null;
+        $bc->contentformat = FORMAT_HTML;
+        $bc->footer = null;
+        $bc->files = [];
+
+        if ($this->instance->visible) {
+            $bc->content = $this->formatted_contents($output);
+            if (!empty($this->content->footer)) {
+                $bc->footer = $this->content->footer;
+            }
+        }
+
+        if (!$this->hide_header()) {
+            $bc->title = $this->title;
+        }
 
         return $bc;
     }
@@ -396,13 +429,13 @@ class block_base {
     function html_attributes() {
         $attributes = array(
             'id' => 'inst' . $this->instance->id,
-            'class' => 'block_' . $this->name(). '  block',
+            'class' => 'block_' . $this->name() . ' block',
             'role' => $this->get_aria_role()
         );
         if ($this->hide_header()) {
             $attributes['class'] .= ' no-header';
         }
-        if ($this->instance_can_be_docked() && get_user_preferences('docked_block_instance_'.$this->instance->id, 0)) {
+        if ($this->instance_can_be_docked() && get_user_preferences('docked_block_instance_' . $this->instance->id, 0)) {
             $attributes['class'] .= ' dock_on_load';
         }
         return $attributes;

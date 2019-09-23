@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,14 +34,14 @@ $string['assignmentneedsupgrade'] = 'A antiga actividade «Tarefa 2.2» foi desa
 $string['assignment:submit'] = 'Entregar tarefa';
 $string['assignment:view'] = 'Ver tarefa';
 $string['messageprovider:assignment_updates'] = 'Notificación de tarefas (2.2)';
-$string['modulename'] = 'Tarefa (2.2)';
-$string['modulename_help'] = 'O módulo de tarefas permite que o profesor asigne unha tarefa, que pode ser cualificada, xa sexa para traballar en liña ou desconectado.';
-$string['modulenameplural'] = 'Tarefas (2.2)';
+$string['modulename'] = 'Tarefa 2.2 (desactivado)';
+$string['modulename_help'] = 'Módulo de actividade herdado que se eliminou de Moodle.';
+$string['modulenameplural'] = 'Tarefas 2.2 (desactivado)';
 $string['page-mod-assignment-submissions'] = 'Páxina de entregas do módulo de tarefas';
 $string['page-mod-assignment-view'] = 'Páxina principal do módulo de tarefas';
 $string['page-mod-assignment-x'] = 'Calquera páxina do módulo de tarefas';
-$string['pluginadministration'] = 'Administración de tarefas';
-$string['pluginname'] = 'Tarefa (2.2)';
+$string['pluginadministration'] = 'Administración de tarefas 2.2 (desactivado)';
+$string['pluginname'] = 'Tarefa 2.2 (desactivada)';
 $string['privacy:markedsubmissionspath'] = 'entregascorrixidas';
 $string['privacy:metadata:assignmentfilter'] = 'Preferencia de filtro de entrega de tarefas.';
 $string['privacy:metadata:assignmentmailinfo'] = 'Preferencia de información de correo para as entregas de tarefas.';
@@ -61,4 +61,3 @@ $string['privacy:metadata:assignment_submissions:timemodified'] = 'A data/hora d
 $string['privacy:metadata:assignment_submissions:userid'] = 'O ID do usuario que envía a entrega da tarefa.';
 $string['privacy:submissionpath'] = 'entrega';
 $string['upgradenotification'] = 'Esta actividade basease nun módulo de tarefas antigo.';
-$string['viewassignmentupgradetool'] = 'Ver a utilidade de anovación de tarefas';

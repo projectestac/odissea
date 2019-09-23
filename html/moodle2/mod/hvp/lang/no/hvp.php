@@ -68,8 +68,12 @@ $string['updatesavailablemsgpt4'] = 'Du kjører en versjon fra: {$a}';
 $string['lookforupdates'] = 'Se etter H5P-oppdateringer';
 $string['removetmpfiles'] = 'Fjern gamle midlertidige filer';
 $string['removeoldlogentries'] = 'Fjern gamle H5P-loggmeldinger';
+$string['removeoldmobileauthentries'] = 'Remove old H5P mobile auth entries';
 
 // Admin settings.
+$string['displayoptiondownloadnever'] = 'Never';
+$string['displayoptiondownloadalways'] = 'Always';
+$string['displayoptiondownloadpermission'] = 'Only if user has permissions to export H5P';
 $string['displayoptionnevershow'] = 'Vis aldri';
 $string['displayoptionalwaysshow'] = 'Vis alltid';
 $string['displayoptionpermissions'] = 'Vis kun for brukere som har tilgang til å eksportere H5Per';
@@ -78,7 +82,7 @@ $string['displayoptionauthoron'] = 'Settes av forfatter, standard på';
 $string['displayoptionauthoroff'] = 'Settes av forfatter, standard av';
 $string['displayoptions'] = 'Visningsinnstillinger';
 $string['enableframe'] = 'Vis handlingslinjen og rammen';
-$string['enabledownload'] = 'Nedlastings-knapp';
+$string['enabledownload'] = 'Allow download';
 $string['enableembed'] = 'Inkluder-knapp';
 $string['enablecopyright'] = 'Opphavsretts-knapp';
 $string['enableabout'] = 'Om H5P-knapp';
@@ -147,6 +151,9 @@ $string['upgradenothingtodo'] = 'Det finnes ikke noe innhold å oppgradere';
 $string['upgradebuttonlabel'] = 'Oppgrader';
 $string['upgradeinvalidtoken'] = 'Feil: Ugyldig sikkerhetsnøkkel!';
 $string['upgradelibrarymissing'] = 'Feil: Et bibliotek mangler!';
+$string['upgradeerrormissinglibrary'] = 'Missing required library %lib.';
+$string['upgradeerrortoohighversion'] = 'Parameters contain %used while only %supported or earlier are supported.';
+$string['upgradeerrornotsupported'] = 'Parameters contain %used which is not supported.';
 
 // Results / report page.
 $string['user'] = 'Bruker';
@@ -206,6 +213,7 @@ $string['hvp:getcachedassets'] = 'Påkrevd for å se H5P-aktiviteter';
 $string['hvp:installrecommendedh5plibraries'] = 'Installer nye trygge H5P-innholdstyper anbefelt av H5P.org';
 
 // Capabilities error messages.
+$string['nopermissiontogettranslations'] = 'You do not have permissions to retrieve translations';
 $string['nopermissiontoupgrade'] = 'Du har ikke tillatelse til å oppgradere bibliotek.';
 $string['nopermissiontorestrict'] = 'Du har ikke tillatelse til å begrense tilgang til bibliotek.';
 $string['nopermissiontosavecontentuserdata'] = 'Du har ikke tillatelse til å lagre brukerdata.';
@@ -312,3 +320,26 @@ $string['licenseversion'] = 'License Version';
 
 // Embed.
 $string['embedloginfailed'] = 'You do not have access to this content. Try logging in.';
+
+// Reuse.
+$string['reuse'] = 'Reuse';
+$string['reuseContent'] = 'Reuse Content';
+$string['reuseDescription'] = 'Reuse this content.';
+$string['contentCopied'] = 'Content is copied to the clipboard';
+
+// Offline
+$string['connectionLost'] = 'Connection lost. Results will be stored and sent when you regain connection.';
+$string['connectionReestablished'] = 'Connection reestablished.';
+$string['resubmitScores'] = 'Attempting to submit stored results.';
+$string['offlineDialogHeader'] = 'Your connection to the server was lost';
+$string['offlineDialogBody'] = 'We were unable to send information about your completion of this task. Please check your internet connection.';
+$string['offlineDialogRetryMessage'] = 'Retrying in :num....';
+$string['offlineDialogRetryButtonLabel'] = 'Retry now';
+$string['offlineSuccessfulSubmit'] = 'Successfully submitted results.';
+
+// Error messages.
+$string['fileExceedsMaxSize'] = 'One of the files inside the package exceeds the maximum file size allowed. (%file %used > %max)';
+$string['unpackedFilesExceedsMaxSize'] = 'The total size of the unpacked files exceeds the maximum size allowed. (%used > %max)';
+$string['couldNotReadFileFromZip'] = 'Unable to read file from the package: %fileName';
+$string['couldNotParseJSONFromZip'] = 'Unable to parse JSON from the package: %fileName';
+$string['couldNotParsePostData'] = 'Could not parse post data.';

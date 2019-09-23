@@ -221,6 +221,25 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 	public function setStudentAnswer($index, $answer) {
 		$this->userData->setUserAnswer($index, $answer);
 	}
+	public function setAuxiliarText($text) {
+		if($text !== null && strlen(trim($text)) > 0) {
+			$this->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_AUXILIAR_TEXT, $text);
+		} else {
+			if($this->localData !== null) {
+				$i = null;
+				{
+					$_g1 = 0; $_g = $this->localData->length;
+					while($_g1 < $_g) {
+						$i1 = $_g1++;
+						if(_hx_array_get($this->localData, $i1)->name === com_wiris_quizzes_impl_LocalData::$KEY_AUXILIAR_TEXT) {
+							$this->localData->remove($this->localData[$i1]);
+						}
+						unset($i1);
+					}
+				}
+			}
+		}
+	}
 	public function setCasSession($session) {
 		if($session !== null && strlen(trim($session)) > 0) {
 			$this->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION, $session);
@@ -307,6 +326,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			}
 		}
 		$this->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION, $qi->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION));
+		$this->setLocalData(com_wiris_quizzes_impl_LocalData::$KEY_AUXILIAR_TEXT, $qi->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_AUXILIAR_TEXT));
 	}
 	public function updateFromStudentQuestionInstance($qi) {
 		$ii = $qi;

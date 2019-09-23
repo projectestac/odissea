@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['autotags'] = 'Voeg deze tags toe';
 $string['autotags_help'] = 'Geef één of meer lokale tags in (gescheiden door komma\'s) die je automatisch wil toevoegen aan elk blogitem dat van de externe blog naar je lokale blog gekopieëerd wordt.';
 $string['backupblogshelp'] = 'Als dit ingeschakeld is, dan zullen blogs in de automatische site-back-ups opgenomen worden';
 $string['blockexternalstitle'] = 'Externe blogs';
-$string['blocktitle'] = 'Bloktitel voor blogtags';
 $string['blog'] = 'Blog';
 $string['blogaboutthis'] = 'Blog over deze {$a->type}';
 $string['blogaboutthiscourse'] = 'Voeg een item toe over deze cursus';
@@ -147,14 +146,14 @@ $string['privacy:metadata:external:timemodified'] = 'Datum wanneer de associatie
 $string['privacy:metadata:external:url'] = 'De URL van de feed';
 $string['privacy:metadata:external:userid'] = 'De ID van de gebruikers die het externe blogbericht toegevoegd heeft.';
 $string['privacy:metadata:post'] = 'De informatie, gerelateerd aan blogberichten';
-$string['privacy:metadata:post:content'] = 'De inhoud van het externe blogbericht.';
-$string['privacy:metadata:post:created'] = 'Datum waarop het blogbericht was gemaakt.';
-$string['privacy:metadata:post:lastmodified'] = 'Datum waarop het blogbericht laatst was gewijzigd.';
+$string['privacy:metadata:post:content'] = 'De inhoud van het externe blogbericht';
+$string['privacy:metadata:post:created'] = 'Datum waarop het blogbericht was gemaakt';
+$string['privacy:metadata:post:lastmodified'] = 'Datum waarop het blogbericht laatst was gewijzigd';
 $string['privacy:metadata:post:publishstate'] = 'Of het blogbericht zichtbaar is voor anderen of niet';
-$string['privacy:metadata:post:subject'] = 'Titel van het blogbericht.';
-$string['privacy:metadata:post:summary'] = 'Blogbericht.';
+$string['privacy:metadata:post:subject'] = 'Titel van het blogbericht';
+$string['privacy:metadata:post:summary'] = 'Tekst blogbericht';
 $string['privacy:metadata:post:uniquehash'] = 'Een unieke identificatie voor een extern blogbericht, typisch een URL';
-$string['privacy:metadata:post:userid'] = 'De ID van de gebruikers die het blogbericht toegevoegd heeft.';
+$string['privacy:metadata:post:userid'] = 'De ID van de gebruikers die het blogbericht toegevoegd heeft';
 $string['privacy:metadata:post:usermodified'] = 'De gebruiker die het blogbericht het laatst bewerkt heeft';
 $string['privacy:path:blogassociations'] = 'Geassocieerde blogberichten';
 $string['privacy:unknown'] = 'Onbekend';

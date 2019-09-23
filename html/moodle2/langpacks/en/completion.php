@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'completion', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,7 +101,7 @@ $string['completionnotenabledforcourse'] = 'Completion is not enabled for this c
 $string['completionnotenabledforsite'] = 'Completion is not enabled for this site';
 $string['completion-n-override'] = 'Not completed (set by {$a})';
 $string['completionondate'] = 'Date';
-$string['completionondatevalue'] = 'User must remain enrolled until';
+$string['completionondatevalue'] = 'Date when course will be marked as complete';
 $string['completion-pass'] = 'Completed (achieved pass grade)';
 $string['completionsettingslocked'] = 'Completion settings locked';
 $string['completion-title-manual-n'] = 'Mark as complete: {$a}';
@@ -150,7 +150,7 @@ $string['err_noactivities'] = 'Completion information is not enabled for any act
 $string['err_nocourses'] = 'Course completion is not enabled for any other courses, so none can be displayed. You can enable course completion in the course settings.';
 $string['err_nograde'] = 'A course pass grade has not been set for this course. To enable this criteria type you must create a pass grade for this course.';
 $string['err_noroles'] = 'There are no roles with the capability moodle/course:markcomplete in this course.';
-$string['err_nousers'] = 'There are no students on this course or group for whom completion information is displayed. (By default, completion information is displayed only for students, so if there are no students, you will see this error. Administrators can alter this option via the admin screens.)';
+$string['err_nousers'] = 'There are no students in this course or group for whom completion information is displayed. (Completion information is displayed only for users with the capability \'Be shown on completion reports\'. The capability is allowed for the default role of student only, so if there are no students, you will see this message.)';
 $string['err_settingslocked'] = 'One or more students have already completed a criterion so the settings have been locked. Unlocking the completion criteria settings will delete any existing user data and may cause confusion.';
 $string['err_system'] = 'An internal error occurred in the completion system. (System administrators can enable debugging information to see more detail.)';
 $string['eventcoursecompleted'] = 'Course completed';

@@ -38,6 +38,9 @@ class com_wiris_quizzes_wrap_EmbeddedAnswersEditorWrap implements com_wiris_quiz
 	public function showGradingFunction($visible) {
 		throw new HException("Not implemented");
 	}
+	public function showAuxiliarTextInput($visible) {
+		throw new HException("Not implemented");
+	}
 	public function showAuxiliarCasReplaceEditor($visible) {
 		throw new HException("Not implemented");
 	}

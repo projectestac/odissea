@@ -418,7 +418,7 @@ function hvp_upgrade_2018090300() {
         );
     }
 
-    // Add new libraries fields
+    // Add new libraries fields.
     $table = new xmldb_table('hvp_libraries');
     if (!$dbman->field_exists($table, 'add_to')) {
         $dbman->add_field($table,
@@ -429,6 +429,54 @@ function hvp_upgrade_2018090300() {
     if (!$dbman->field_exists($table, 'metadata_settings')) {
         $dbman->add_field($table,
             new xmldb_field('metadata_settings', XMLDB_TYPE_TEXT, null, null, null, null, null)
+        );
+    }
+}
+
+
+/**
+ * Adds authentication table
+ *
+ * @throws ddl_exception
+ */
+function hvp_upgrade_2019022600() {
+    global $DB;
+    $dbman = $DB->get_manager();
+
+    // Add auth table.
+    $table = new xmldb_table('hvp_auth');
+
+    // Add fields.
+    $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+    $table->add_field('user_id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+    $table->add_field('created_at', XMLDB_TYPE_INTEGER, '11', null, XMLDB_NOTNULL, null, null);
+    $table->add_field('secret', XMLDB_TYPE_CHAR, '64', null, XMLDB_NOTNULL, null, null);
+
+    // Add keys and index.
+    $table->add_key('primary', XMLDB_KEY_PRIMARY, ['id']);
+    $table->add_index('user_id', XMLDB_INDEX_UNIQUE, ['user_id']);
+
+    // Create table if it does not exist.
+    if (!$dbman->table_exists($table)) {
+        $dbman->create_table($table);
+    }
+}
+
+/**
+ * Add default language to content
+ *
+ * @throws ddl_exception
+ * @throws ddl_table_missing_exception
+ */
+function hvp_upgrade_2019030700() {
+    global $DB;
+    $dbman = $DB->get_manager();
+
+    $table = new xmldb_table('hvp');
+
+    if (!$dbman->field_exists($table, 'default_language')) {
+        $dbman->add_field($table,
+            new xmldb_field('default_language', XMLDB_TYPE_CHAR, '32', null, null, null, null)
         );
     }
 }
@@ -451,7 +499,9 @@ function xmldb_hvp_upgrade($oldversion) {
         2017040500,
         2017050900,
         2017060900,
-        2018090300
+        2018090300,
+        2019022600,
+        2019030700
     ];
 
     foreach ($upgrades as $version) {

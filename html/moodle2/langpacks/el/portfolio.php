@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -124,7 +124,7 @@ $string['leap2a_invalidentryfield'] = 'Προσπαθήσατε να ορίσε�
 $string['leap2a_invalidentryid'] = 'Προσπαθήσατε να αποκτήσετε πρόσβαση σε μια καταχώρηση με αναγνωριστικό που δεν υπήρχε ({$a})';
 $string['leap2a_missingfield'] = 'Το απαιτούμενο πεδίο εισαγωγής Leap2A {$a} λείπει';
 $string['leap2a_nonexistantlink'] = 'Μια καταχώρηση Leap2A  ({$a->from}) προσπάθησε να συνδεθεί με μια μη υπάρχουσα καταχώρηση ({$a->to}) με rel {$a->rel}';
-$string['leap2a_overwritingselection'] = 'Αντικατάσταση του αρχικού τύπου μιας εγγραφής ({$a}) στην επιλογή στο make_selection';
+$string['leap2a_overwritingselection'] = 'Αντικατάσταση του αρχικού τύπου μιας καταχώρησης ({$a}) στην επιλογή στο make_selection';
 $string['leap2a_selflink'] = 'Μια καταχώρηση Leap2A ({$a->id}) προσπάθησε να συνδεθεί στον εαυτό της με  rel (σχέση;) {$a->rel}';
 $string['logs'] = 'Καταγραφές μεταφοράς';
 $string['logsummary'] = 'Προηγούμενες επιτυχημένες μεταφορές';
@@ -162,20 +162,20 @@ $string['pluginismisconfigured'] = 'Το πρόσθετο χαρτοφυλακί
 $string['portfolio'] = 'Χαρτοφυλάκιο';
 $string['portfolios'] = 'Χαρτοφυλάκια';
 $string['privacy:metadata'] = 'Το υποσύστημα χαρτοφυλακίου λειτουργεί ως κανάλι, μεταδίδοντας αιτήματα από (άλλα) πρόσθετα στα διάφορα πρόσθετα χαρτοφυλακίων.';
-$string['privacy:metadata:instance'] = 'Αναγνωριστικό για το χαρτοφυλάκιο.';
-$string['privacy:metadata:instancesummary'] = 'Εδώ αποθηκεύονται για τα χαρτοφυλάκια τόσο τα στιγμιότυπα όσο και οι προτιμήσεις για τα χαρτοφυλάκια που χρησιμοποιεί ο χρήστης.';
-$string['privacy:metadata:name'] = 'Όνομα της προτίμησης.';
+$string['privacy:metadata:instance'] = 'Αναγνωριστικό χαρτοφυλακίου';
+$string['privacy:metadata:instancesummary'] = 'Αποθήκευση δεδομένων για στιγμιότυπα και προτιμήσεις χαρτοφυλακίων.';
+$string['privacy:metadata:name'] = 'Όνομα της προτίμησης';
 $string['privacy:metadata:portfolio_log'] = 'Μητρώο μεταφορών χαρτοφυλακίου (χρησιμοποιείται για να ελέγξει αργότερα για διπλότυπα)';
 $string['privacy:metadata:portfolio_log:caller_class'] = 'Όνομα της κλάσης που χρησιμοποιήθηκε για τη δημιουργία της μεταφοράς';
 $string['privacy:metadata:portfolio_log:caller_component'] = 'Όνομα στοιχείου λογισμικού υπεύθυνο για την εξαγωγή';
 $string['privacy:metadata:portfolio_log:time'] = 'Χρόνος μεταφοράς (στην περίπτωση ουράς αναμονής, αυτός είναι ο πραγματικός χρόνος που ξεκίνησε η εκτέλεση της μεταφοράς, όχι που την ξεκίνησε ο χρήστης)';
-$string['privacy:metadata:portfolio_log:userid'] = 'Χρήστης που εξήγαγε περιεχόμενο';
-$string['privacy:metadata:portfolio_tempdata'] = 'Αποθηκεύει προσωρινά δεδομένα για εξαγωγές χαρτοφυλακίων. Καθαρίζεται μέσω της (εντολής χρονοπρογραμματισμού) cron μετά από μία ημέρα';
+$string['privacy:metadata:portfolio_log:userid'] = 'Αναγνωριστικό χρήστη που εξήγαγε περιεχόμενο';
+$string['privacy:metadata:portfolio_tempdata'] = 'Αποθηκεύει προσωρινά δεδομένα για εξαγωγές χαρτοφυλακίων.';
 $string['privacy:metadata:portfolio_tempdata:data'] = 'Δεδομένα εξαγωγής';
 $string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Ο χρόνος λήξης αυτής της εγγραφής';
 $string['privacy:metadata:portfolio_tempdata:instance'] = 'Το στιγμιότυπο πρόσθετου χαρτοφυλακίου που χρησιμοποιείται';
 $string['privacy:metadata:portfolio_tempdata:userid'] = 'Ο χρήστης που εκτελεί την εξαγωγή';
-$string['privacy:metadata:userid'] = 'Το αναγνωριστικό χρήστη.';
+$string['privacy:metadata:userid'] = 'Αναγνωριστικό χρήστη';
 $string['privacy:metadata:value'] = 'Τιμή για την προτίμηση';
 $string['privacy:path'] = 'Στιγμιότυπα χαρτοφυλακίου';
 $string['queuesummary'] = 'Μεταφορές αυτή τη στιγμή στην ουρά';
@@ -187,10 +187,10 @@ $string['selectplugin'] = 'Επιλογή προορισμού';
 $string['showhide'] = 'Εμφάνιση / απόκρυψη';
 $string['singleinstancenomultiallowed'] = 'Μόνο ένα στιγμιότυπο πρόσθετου χαρτοφυλακίου είναι διαθέσιμο, δεν υποστηρίζει πολλαπλές εξαγωγές ανά σύνοδο και υπάρχει ήδη μια ενεργή εξαγωγή στην σύνοδο (τρέχουσα περίοδο λειτουργίας) που χρησιμοποιεί αυτό το πρόσθετο!';
 $string['somepluginsdisabled'] = 'Κάποια πρόσθετα χαρτοφυλακίου έχουν απενεργοποιηθεί εξ ολοκλήρου διότι είτε είναι κακοδιαμορφωμένα είτε βασίζονται σε κάτι άλλο το οποίο είναι:';
-$string['sure'] = 'Είστε σίγουροι ότι θέλετε να διαγραφεί το \'{$a}\'; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.';
+$string['sure'] = 'Είστε σίγουροι ότι θέλετε να διαγραφεί το «{$a}»; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.';
 $string['thirdpartyexception'] = 'Συνέβη μια εξαίρεση ενός τρίτου κατασκευαστή κατά την εξαγωγή του χαρτοφυλακίου ({$a}). Η εξαίρεση πιάστηκε και επαναδιαβιβάστηκε αλλά αυτό το σφάλμα θα έπρεπε να διορθωθεί';
 $string['transfertime'] = 'Χρόνος μεταφοράς';
 $string['unknownplugin'] = 'Άγνωστο (μπορεί έκτοτε να έχει αφαιρεθεί από έναν διαχειριστή)';
 $string['wait'] = 'Αναμονή';
 $string['wanttowait_high'] = 'Δεν συνίσταται να περιμένετε την ολοκλήρωση αυτής της μεταφοράς, αλλά μπορείτε εάν είστε σίγουροι για αυτό που κάνετε';
-$string['wanttowait_moderate'] = 'Θέλετε να περιμένετε για αυτή τη μεταφορά? Μπορεί να χρειαστεί μερικά λεπτά';
+$string['wanttowait_moderate'] = 'Θέλετε να περιμένετε για αυτή τη μεταφορά; Μπορεί να χρειαστεί μερικά λεπτά';

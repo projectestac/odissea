@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'folder', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,7 +60,7 @@ $string['page-mod-folder-view'] = 'Pagina principale modulo cartella';
 $string['page-mod-folder-x'] = 'Qualsiasi pagina con modulo cartella';
 $string['pluginadministration'] = 'Gestione cartella';
 $string['pluginname'] = 'Cartella';
-$string['privacy:metadata'] = 'Il plugin mod_folder non memorizza dati personali.';
+$string['privacy:metadata'] = 'Il plugin "risorsa Cartella" non memorizza dati personali.';
 $string['search:activity'] = 'Cartella - Informazioni sull\'attività';
 $string['showdownloadfolder'] = 'Visualizza pulsante Scarica cartella';
 $string['showdownloadfolder_help'] = 'Visualizza un pulsante che consente lo scaricamento in formato zip dei file presenti in una cartella.';

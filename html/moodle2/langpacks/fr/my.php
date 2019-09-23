@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'my', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,7 @@ $string['nocourses'] = 'Aucune information de cours à afficher.';
 $string['noguest'] = 'La page « Tableau de bord » n\'est pas disponible pour les visiteurs anonymes';
 $string['pinblocks'] = 'Configurer les blocs fixes de Ma page';
 $string['pinblocksexplan'] = 'Les réglages des blocs que vous configurez ici seront valables sur la page Ma page de chaque utilisateur, et non modifiables.';
-$string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'La préférence de page d\'accueil configurée pour le tableau de bord.';
+$string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'La préférence de page d\'accueil de l\'utilisateur.';
 $string['reseterror'] = 'Une erreur est survenue lors de la réinitialisation de votre page';
 $string['reseteveryonesdashboard'] = 'Réinitialiser le tableau de bord de tous les utilisateurs';
 $string['reseteveryonesprofile'] = 'Réinitialiser le profil de tous les utilisateurs';

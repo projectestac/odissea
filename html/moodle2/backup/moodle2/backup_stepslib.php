@@ -794,11 +794,24 @@ class backup_badges_structure_step extends backup_structure_step {
         $badge = new backup_nested_element('badge', array('id'), array('name', 'description',
                 'timecreated', 'timemodified', 'usercreated', 'usermodified', 'issuername',
                 'issuerurl', 'issuercontact', 'expiredate', 'expireperiod', 'type', 'courseid',
-                'message', 'messagesubject', 'attachment', 'notification', 'status', 'nextcron'));
+                'message', 'messagesubject', 'attachment', 'notification', 'status', 'nextcron',
+                'version', 'language', 'imageauthorname', 'imageauthoremail', 'imageauthorurl',
+                'imagecaption'));
 
         $criteria = new backup_nested_element('criteria');
         $criterion = new backup_nested_element('criterion', array('id'), array('badgeid',
                 'criteriatype', 'method', 'description', 'descriptionformat'));
+
+        $endorsement = new backup_nested_element('endorsement', array('id'), array('badgeid',
+                'issuername', 'issuerurl', 'issueremail', 'claimid', 'claimcomment', 'dateissued'));
+
+        $alignments = new backup_nested_element('alignments');
+        $alignment = new backup_nested_element('alignment', array('id'), array('badgeid',
+                'targetname', 'targeturl', 'targetdescription', 'targetframework', 'targetcode'));
+
+        $relatedbadges = new backup_nested_element('relatedbadges');
+        $relatedbadge = new backup_nested_element('relatedbadge', array('id'), array('badgeid',
+                'relatedbadgeid'));
 
         $parameters = new backup_nested_element('parameters');
         $parameter = new backup_nested_element('parameter', array('id'), array('critid',
@@ -815,6 +828,11 @@ class backup_badges_structure_step extends backup_structure_step {
         $criteria->add_child($criterion);
         $criterion->add_child($parameters);
         $parameters->add_child($parameter);
+        $badge->add_child($endorsement);
+        $badge->add_child($alignments);
+        $alignments->add_child($alignment);
+        $badge->add_child($relatedbadges);
+        $relatedbadges->add_child($relatedbadge);
         $badge->add_child($manual_awards);
         $manual_awards->add_child($manual_award);
 
@@ -822,6 +840,10 @@ class backup_badges_structure_step extends backup_structure_step {
 
         $badge->set_source_table('badge', array('courseid' => backup::VAR_COURSEID));
         $criterion->set_source_table('badge_criteria', array('badgeid' => backup::VAR_PARENTID));
+        $endorsement->set_source_table('badge_endorsement', array('badgeid' => backup::VAR_PARENTID));
+
+        $alignment->set_source_table('badge_competencies', array('badgeid' => backup::VAR_PARENTID));
+        $relatedbadge->set_source_table('badge_related', array('badgeid' => backup::VAR_PARENTID));
 
         $parametersql = 'SELECT cp.*, c.criteriatype
                              FROM {badge_criteria_param} cp JOIN {badge_criteria} c
@@ -838,6 +860,10 @@ class backup_badges_structure_step extends backup_structure_step {
         $badge->annotate_ids('user', 'usermodified');
         $criterion->annotate_ids('badge', 'badgeid');
         $parameter->annotate_ids('criterion', 'critid');
+        $endorsement->annotate_ids('badge', 'badgeid');
+        $alignment->annotate_ids('badge', 'badgeid');
+        $relatedbadge->annotate_ids('badge', 'badgeid');
+        $relatedbadge->annotate_ids('badge', 'relatedbadgeid');
         $badge->annotate_files('badges', 'badgeimage', 'id');
         $manual_award->annotate_ids('badge', 'badgeid');
         $manual_award->annotate_ids('user', 'recipientid');
@@ -865,7 +891,7 @@ class backup_calendarevents_structure_step extends backup_structure_step {
                 'name', 'description', 'format', 'courseid', 'groupid', 'userid',
                 'repeatid', 'modulename', 'instance', 'type', 'eventtype', 'timestart',
                 'timeduration', 'timesort', 'visible', 'uuid', 'sequence', 'timemodified',
-                'priority'));
+                'priority', 'location'));
 
         // Build the tree
         $events->add_child($event);
@@ -2211,7 +2237,7 @@ class backup_questions_structure_step extends backup_structure_step {
         $qcategory = new backup_nested_element('question_category', array('id'), array(
             'name', 'contextid', 'contextlevel', 'contextinstanceid',
             'info', 'infoformat', 'stamp', 'parent',
-            'sortorder'));
+            'sortorder', 'idnumber'));
 
         $questions = new backup_nested_element('questions');
 
@@ -2219,7 +2245,7 @@ class backup_questions_structure_step extends backup_structure_step {
             'parent', 'name', 'questiontext', 'questiontextformat',
             'generalfeedback', 'generalfeedbackformat', 'defaultmark', 'penalty',
             'qtype', 'length', 'stamp', 'version',
-            'hidden', 'timecreated', 'timemodified', 'createdby', 'modifiedby'));
+            'hidden', 'timecreated', 'timemodified', 'createdby', 'modifiedby', 'idnumber'));
 
         // attach qtype plugin structure to $question element, only one allowed
         $this->add_plugin_structure('qtype', $question, false);
@@ -2234,7 +2260,7 @@ class backup_questions_structure_step extends backup_structure_step {
 
         $tags = new backup_nested_element('tags');
 
-        $tag = new backup_nested_element('tag', array('id'), array('name', 'rawname'));
+        $tag = new backup_nested_element('tag', array('id', 'contextid'), array('name', 'rawname'));
 
         // Build the tree
 
@@ -2266,11 +2292,15 @@ class backup_questions_structure_step extends backup_structure_step {
                 ORDER BY id',
                 array('questionid' => backup::VAR_PARENTID));
 
-        $tag->set_source_sql("SELECT t.id, t.name, t.rawname
+        $tag->set_source_sql("SELECT t.id, ti.contextid, t.name, t.rawname
                               FROM {tag} t
                               JOIN {tag_instance} ti ON ti.tagid = t.id
                               WHERE ti.itemid = ?
-                              AND ti.itemtype = 'question'", array(backup::VAR_PARENTID));
+                              AND ti.itemtype = 'question'
+                              AND ti.component = 'core_question'",
+            [
+                backup::VAR_PARENTID
+            ]);
 
         // don't need to annotate ids nor files
         // (already done by {@link backup_annotate_all_question_files}
@@ -2418,6 +2448,9 @@ class backup_activity_grades_structure_step extends backup_structure_step {
     }
 
     protected function define_structure() {
+        global $CFG;
+
+        require_once($CFG->libdir . '/grade/constants.php');
 
         // To know if we are including userinfo
         $userinfo = $this->get_setting_value('userinfo');
@@ -2474,6 +2507,7 @@ class backup_activity_grades_structure_step extends backup_structure_step {
         // This only happens if we are including user info
         if ($userinfo) {
             $grade->set_source_table('grade_grades', array('itemid' => backup::VAR_PARENTID));
+            $grade->annotate_files(GRADE_FILE_COMPONENT, GRADE_FEEDBACK_FILEAREA, 'id');
         }
 
         $letter->set_source_table('grade_letters', array('contextid' => backup::VAR_CONTEXTID));
@@ -2510,6 +2544,9 @@ class backup_activity_grade_history_structure_step extends backup_structure_step
     }
 
     protected function define_structure() {
+        global $CFG;
+
+        require_once($CFG->libdir . '/grade/constants.php');
 
         // Settings to use.
         $userinfo = $this->get_setting_value('userinfo');
@@ -2537,6 +2574,7 @@ class backup_activity_grade_history_structure_step extends backup_structure_step
                                      JOIN {backup_ids_temp} bi ON ggh.itemid = bi.itemid
                                     WHERE bi.backupid = ?
                                       AND bi.itemname = 'grade_item'", array(backup::VAR_BACKUPID));
+            $grade->annotate_files(GRADE_FILE_COMPONENT, GRADE_HISTORY_FEEDBACK_FILEAREA, 'id');
         }
 
         // Annotations.

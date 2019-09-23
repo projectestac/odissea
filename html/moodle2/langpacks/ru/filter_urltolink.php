@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_urltolink', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filter_urltolink', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   filter_urltolink
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['embedimages'] = 'Вставлять изображения';
 $string['embedimages_desc'] = 'Заменить URL-адреса изображений на изображения в подобранных текстовых форматах.';
 $string['filtername'] = 'Преобразование URL в гиперссылки и изображения';
+$string['privacy:metadata'] = 'Плагин «Преобразование URL-адресов в ссылки и изображения» не хранит никаких личных данных.';
 $string['settingformats'] = 'Применять к форматам';
 $string['settingformats_desc'] = 'Фильтр будет использоваться, только если текст был вставлен в одном из выбранных форматов.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['allowresets'] = 'Να επιτρέπονται επαναφορές';
 $string['allowresets_help'] = 'Εάν το πεδίο επαναφοράς είναι αποδεκτό ή όχι.';
 $string['cachedef_helper'] = 'Κρυφή αποθήκευση βοηθού';
 $string['cannotdeletecoursenotexist'] = 'Δεν είναι δυνατή η διαγραφή ενός μαθήματος που δεν υπάρχει';
+$string['cannotforcelang'] = 'Δεν υπάρχει το δικαίωμα επιβολής γλώσσας για αυτό το μάθημα';
 $string['cannotgenerateshortnameupdatemode'] = 'Δεν είναι δυνατή η δημιουργία σύντομου ονόματος όταν επιτρέπονται ενημερώσεις';
 $string['cannotreadbackupfile'] = 'Αδυναμία ανάγνωσης του αρχείου αντιγράφου ασφαλείας';
 $string['cannotrenamecoursenotexist'] = 'Αδυναμία μετονομασίας μαθήματος που δεν υπάρχει';
@@ -69,7 +70,7 @@ $string['coursetemplatename'] = 'Επαναφορά από αυτό το μάθ�
 $string['coursetemplatename_help'] = 'Εισαγάγετε ένα υπάρχον σύντομο όνομα μαθήματος προς χρήση ως πρότυπο για τη δημιουργία όλων των μαθημάτων.';
 $string['coursetorestorefromdoesnotexist'] = 'Το μάθημα προς επαναφορά δεν υπάρχει';
 $string['courseupdated'] = 'Το μάθημα ενημερώθηκε';
-$string['createall'] = 'Δημιουργία όλων. Χρήση μετρητή σύντομου ονόματος αν χρειαστεί';
+$string['createall'] = 'Δημιουργία όλων. Χρήση (αύξησης) αριθμού σύντομου ονόματος αν χρειαστεί.';
 $string['createnew'] = 'Δημιουργία μόνο για νέα μαθήματα. Παράλειψη για τα υπάρχοντα.';
 $string['createorupdate'] = 'Δημιουργία νέων μαθημάτων ή ενημέρωση για τα υπάρχοντα';
 $string['csvdelimiter'] = 'Διαχωριστικό CSV';
@@ -107,7 +108,7 @@ $string['reset_help'] = 'Εάν θα γίνεται επαναφορά του μ
 $string['restoreafterimport'] = 'Επαναφορά μετά την εισαγωγή';
 $string['result'] = 'Αποτέλεσμα';
 $string['rowpreviewnum'] = 'Προεπισκόπηση γραμμών';
-$string['rowpreviewnum_help'] = 'Αριθμός σειρών από το αρχείο CSV που θα προβληθούν στην προεπισκόπηση στην επόμενη σελίδα. Αυτή η επιλογή υπάρχει προκειμένου να περιοριστεί το μέγεθος της επόμενης σελίδας.';
+$string['rowpreviewnum_help'] = 'Αριθμός σειρών από το αρχείο CSV που θα προβληθούν στην προεπισκόπηση στην ακόλουθη σελίδα. Αυτή η επιλογή υπάρχει για τον περιορισμό του μεγέθους της ακόλουθης σελίδας.';
 $string['shortnametemplate'] = 'Πρότυπο για τη δημιουργία σύντομου ονόματος';
 $string['shortnametemplate_help'] = 'Το σύντομο όνομα του μαθήματος εμφανίζεται στην πλοήγηση. Μπορείτε να χρησιμοποιήσετε τη σύνταξη προτύπου εδώ (%f = πλήρες όνομα,%i = αναγνωριστικός αριθμός) ή να εισάγετε μια αρχική τιμή που αυξάνεται.';
 $string['templatefile'] = 'Επαναφορά από αυτό το αρχείο μετά το ανέβασμα';

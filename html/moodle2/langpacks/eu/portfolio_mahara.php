@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio_mahara', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['enableleap2a'] = 'Gaitu Leap2A portfoliorako laguntza (Mahara 1.3 edo a
 $string['err_invalidhost'] = 'MNet ostalari baliogabea';
 $string['err_invalidhost_help'] = 'Plugin hau baliogabea den (edo ezabatu den) MNet ostalari batera zuzenduta dago. Gehigarri honek SSO IDPa publikatu duten, harpidetutako SSO_SPak, eta harpidetutako <b>eta</b> publikatutako portfolioak dituzten MNet-eko kideen beharra du.';
 $string['err_networkingoff'] = 'MNet itzalita dago';
-$string['err_networkingoff_help'] = 'MNet erabat desgaituta dago. Mesedez gaitu ezazu plugin hau konfiguratzen saiatu baino lehen. Gehigarri honen edozein instantzia ezkutuan geratuko da arazo hau konpondu bitartean - gero eskuz jarri beharko dituzu ikusgai. Hau gertatu arte ezingo dira erabili.';
+$string['err_networkingoff_help'] = 'MNet une honetan desgaituta dago. Mesedez gaitu ezazu plugin hau konfiguratzen saiatu baino lehen. Gehigarri honen edozein instantzia ezkutuan geratuko da MNet gaitzen ez den bitartean. Ondoren eskuz jarri beharko dituzu ikusgai.';
 $string['err_nomnetauth'] = 'Moodle Sarea motako  autentifikaziorako plugina desgaituta dago';
 $string['err_nomnetauth_help'] = 'Moodle Sarea motako  autentifikaziorako plugina desgaituta dago, baina beharrezkoa da zerbitzu honetarako';
 $string['err_nomnethosts'] = 'MNet-en beharra du';

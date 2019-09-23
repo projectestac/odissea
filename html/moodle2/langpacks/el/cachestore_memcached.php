@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcached', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,7 +71,7 @@ $string['setservers'] = 'Εξυπηρετητές που έχουν τεθεί/�
 $string['setservers_help'] = 'Αυτή είναι η λίστα των εξυπηρετητών που θα ενημερωθούν όταν τα δεδομένα τροποποιηθούν στην κρυφή μνήμη. Γενικά, το πλήρες όνομα κάθε εξυπηρετητή στην λίστα.
 **Πρέπει** να περιλαμβάνει τον εξυπηρετητή που περιλαμβάνεται στην λίστα *Εξυπηρετητές* παραπάνω, ακόμα και αν έχει διαφορετικό όνομα Η/Υ (hostname).
 Οι εξυπηρετητές θα πρέπει να ορίζονται ένας ανά γραμμή και να αποτελούνται από μια διεύθυνση εξυπηρετητή και προαιρετικά μια θύρα.
-Εάν δεν υπάρχει θύρα, τότε χρησιμοποιείται η προεπιλεγμένη θύρα (11211).
+Εάν δεν δοθεί θύρα, τότε χρησιμοποιείται η προεπιλεγμένη θύρα (11211).
 
 Για παράδειγμα:
 <pre>

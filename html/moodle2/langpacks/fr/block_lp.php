@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_lp', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_lp', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   block_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'Compétences à valider';
-$string['lp:addinstance'] = 'Ajout d\'un bloc plans de formation';
-$string['lp:myaddinstance'] = 'Ajout d\'un bloc plans de formation au tableau de bord';
+$string['lp:addinstance'] = 'Ajouter un bloc plans de formation';
+$string['lp:myaddinstance'] = 'Ajouter un bloc plans de formation au tableau de bord';
 $string['lp:view'] = 'Affichage du bloc plans de formation';
 $string['myplans'] = 'Mes plans';
 $string['noactiveplans'] = 'Aucun plan actif pour l\'instant.';

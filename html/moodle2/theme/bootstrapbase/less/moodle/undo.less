@@ -30,6 +30,11 @@ li.activity.label,
     font-size: 12px;
 }
 
+// Reset the outline on a focussed modal for accessibility.
+.modal:focus {
+    outline: rgb(94, 158, 215) auto 5px;
+}
+
 /* block.invisible vs .invisible
  * block.hidden vs .invisible
  *
@@ -119,10 +124,13 @@ img.hide {
 // Bootstrap adds a background sprite to anything with classname starting "icon-".
 // we only want to load it if we use them in content.
 .icon-bar,
+.icon-no-margin,
 img.icon-post,
 img.icon-info,
 img.icon-warn,
-img.icon-pre {
+img.icon-pre,
+[class^="icon-size-"],
+[class*=" icon-size-"] {
     background-image: none;
 }
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,4 +61,3 @@ $string['privacy:metadata:assignment_submissions:timemodified'] = '作业提交�
 $string['privacy:metadata:assignment_submissions:userid'] = '提交作业的学员学号。';
 $string['privacy:submissionpath'] = '提报';
 $string['upgradenotification'] = '此活动使用的是旧作业模块。';
-$string['viewassignmentupgradetool'] = '查看作业升级工具';

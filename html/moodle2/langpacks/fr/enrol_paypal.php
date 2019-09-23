@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_paypal', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -86,8 +86,9 @@ $string['privacy:metadata:enrol_paypal:paypal_com:email'] = 'L\'adresse de courr
 $string['privacy:metadata:enrol_paypal:paypal_com:first_name'] = 'Le prénom de l\'utilisateur qui achète le cours.';
 $string['privacy:metadata:enrol_paypal:paypal_com:last_name'] = 'Le nom de l\'utilisateur qui achète le cours.';
 $string['privacy:metadata:enrol_paypal:paypal_com:os0'] = 'Le nom complet de l\'utilisateur qui achète le cours.';
+$string['processexpirationstask'] = 'Envoi des notifications d\'échéance d\'inscription PayPal';
 $string['sendpaymentbutton'] = 'Envoyer un paiement avec PayPal';
 $string['status'] = 'Permettre les inscriptions PayPal';
 $string['status_desc'] = 'Permettre par défaut aux utilisateurs d\'utiliser PayPal pour s\'inscrire à un cours';
 $string['transactions'] = 'Transactions PayPal';
-$string['unenrolselfconfirm'] = 'Voulez-vous vraiment vous désinscrire du cours « {$a} »?';
+$string['unenrolselfconfirm'] = 'Voulez-vous vraiment vous désinscrire du cours « {$a} » ?';

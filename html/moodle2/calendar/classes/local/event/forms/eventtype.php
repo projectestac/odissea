@@ -90,7 +90,7 @@ trait eventtype {
 
         if (!empty($eventtypes['category'])) {
             $categoryoptions = [];
-            foreach (\coursecat::make_categories_list('moodle/category:manage') as $id => $category) {
+            foreach (\core_course_category::make_categories_list('moodle/category:manage') as $id => $category) {
                 $categoryoptions[$id] = $category;
             }
 
@@ -98,7 +98,7 @@ trait eventtype {
             $mform->hideIf('categoryid', 'eventtype', 'noteq', 'category');
         }
 
-        $showall = $CFG->calendar_adminseesall && !has_capability('moodle/calendar:manageentries', \context_system::instance());
+        $showall = is_siteadmin() && !empty($CFG->calendar_adminseesall);
         if (!empty($eventtypes['course'])) {
             $mform->addElement('course', 'courseid', get_string('course'), ['limittoenrolled' => !$showall]);
             $mform->hideIf('courseid', 'eventtype', 'noteq', 'course');

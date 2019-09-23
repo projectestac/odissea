@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'wiki', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -211,6 +211,22 @@ $string['pluginname'] = 'Вики';
 $string['prettyprint'] = 'Версия для печати';
 $string['previewwarning'] = 'Это только предварительный просмотр. Изменения пока не сохранены.';
 $string['print'] = 'Печать';
+$string['privacy:metadata:core_tag'] = 'Теги, связанные со страницами вики';
+$string['privacy:metadata:wiki_locks'] = 'Временное хранилище для блокировки редактирования вики';
+$string['privacy:metadata:wiki_locks:lockedat'] = 'Дата когда заблокирована';
+$string['privacy:metadata:wiki_locks:sectionname'] = 'Название раздела заблокированной страницы';
+$string['privacy:metadata:wiki_locks:userid'] = 'Пользователь, который заблокировал страницу';
+$string['privacy:metadata:wiki_pages:timecreated'] = 'Время когда страница была впервые создана';
+$string['privacy:metadata:wiki_pages:timemodified'] = 'Время последнего изменения страницы';
+$string['privacy:metadata:wiki_pages:title'] = 'Название страницы';
+$string['privacy:metadata:wiki_pages:userid'] = 'Последний пользователь, который редактировал страницу';
+$string['privacy:metadata:wiki_subwikis:userid'] = 'Пользователь, который владеет подвики (для отдельных вики)';
+$string['privacy:metadata:wiki_versions'] = 'Информация об истории страниц вики';
+$string['privacy:metadata:wiki_versions:content'] = 'Редакция содержимого';
+$string['privacy:metadata:wiki_versions:contentformat'] = 'Редакция формата содержимого';
+$string['privacy:metadata:wiki_versions:timecreated'] = 'Время создания редакции';
+$string['privacy:metadata:wiki_versions:userid'] = 'Пользователь, создавший редакцию';
+$string['privacy:metadata:wiki_versions:version'] = 'Номер версии';
 $string['rated'] = 'Вы оценили эту страницу на {$a}';
 $string['rating'] = 'Рейтинг';
 $string['ratingmode'] = 'Метод рейтингования';

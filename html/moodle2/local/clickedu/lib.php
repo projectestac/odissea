@@ -14,6 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * API library file
+ *
+ * @author      Adrià Monguillot <amonguillot@clickedu.net>
+ * @author      Daniel Ureña Zafra <durenadev@gmail.com>
+ * @copyright   2019 CLICKART TALLER DE COMUNICACIÓ, S.L.
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
 function local_clickedu_extend_settings_navigation($settingsnav, $context) {
     global $CFG, $PAGE;
 

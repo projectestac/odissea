@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = 'Partout';
 $string['inputstandardtags'] = 'Saisir une liste de nouveaux tags, séparés par des virgules';
 $string['itemstaggedwith'] = '{$a->tagarea} signalées avec  « {$a->tag} »';
 $string['lesstags'] = 'moins...';
-$string['manageofficialtags'] = 'Gérer les tags officiels';
 $string['managestandardtags'] = 'Gérer les tags standards';
 $string['managetagcolls'] = 'Gérer les collections de tags';
 $string['managetags'] = 'Gérer les tags';
@@ -94,9 +93,6 @@ $string['nextpage'] = 'Plus';
 $string['noresultsfor'] = 'Aucun résultat pour « {$a} »';
 $string['notagsfound'] = 'Aucun tags avec « {$a} » trouvé';
 $string['nothingtoupdate'] = 'Rien à modifier';
-$string['officialtag'] = 'Officiel';
-$string['otags'] = 'Tags officiels';
-$string['othertags'] = 'Autres tags';
 $string['owner'] = 'Possesseur';
 $string['page-tag-index'] = 'Page d\'un tag';
 $string['page-tag-manage'] = 'Page de gestion des tags';
@@ -138,7 +134,6 @@ $string['selectmaintag'] = 'Choisir le tag à utiliser après la combinaison';
 $string['selectmultipletags'] = 'Veuillez sélectionner au moins deux tags';
 $string['selecttag'] = 'Sélectionner le tag {$a}';
 $string['settypedefault'] = 'Retirer des tags standards';
-$string['settypeofficial'] = 'Ajouter aux tags officiels';
 $string['settypestandard'] = 'Définir comme standard';
 $string['showingfirsttags'] = 'Affichage des {$a} tags les plus utilisés';
 $string['showstandard'] = 'Utilisation des tags standards';
@@ -161,10 +156,8 @@ $string['tagcollection'] = 'Collection de tag';
 $string['tagcollection_help'] = 'Les collections de tags sont des ensembles de tags de diverses zones. Par exemple, une collection de tags standards peut être utilisée pour taguer des cours, tout en utilisant une autre collection de tags pour les articles de blogs ou les centres d\'intérêts des participants. Lorsqu\'un utilisateur clique sur un tag, la page des tags n\'affiche que les tags de la même collection. Les tags peuvent s\'ajouter automatiquement à une collection en fonction de la zone taguée ou ils peuvent être ajouter manuellement comme tags standards.';
 $string['tagcollections'] = 'Collections de tag';
 $string['tagdescription'] = 'Description tag';
-$string['taggedwith'] = 'avec tag « {$a} »';
 $string['tags'] = 'Tags';
 $string['tagsaredisabled'] = 'Les tags sont désactivés';
-$string['tagtype'] = 'Type de tag';
 $string['thingstaggedwith'] = '{$a->count} éléments sont marqués avec « {$a->name} »';
 $string['thingtaggedwith'] = 'Un élément est marqué avec « {$a->name} »';
 $string['timemodified'] = 'Modifié';

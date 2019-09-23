@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,6 +72,7 @@ $string['auth_updateremote_ldap'] = '<p><b>注意:</b> 更新外部LDAP数据需
 $string['auth_user_create'] = '激活用户创建功能';
 $string['auth_user_creation'] = '新的(匿名的)用户可以在外部身份认证源中创建帐号，并通过 Email 确认。如果您启用了这个功能，请记住也要配置与用户创建有关的模块特定选项。';
 $string['auth_usernameexists'] = '选中的用户名已经存在。请选择一个新的。';
+$string['auth_usernotexist'] = '不能更新不存在的用户 {$a}';
 $string['auto_add_remote_users'] = '自动添加远程用户';
 $string['cannotmapfield'] = '无法映射字段 "{$a->fieldname}"，因为其短名称"{$a->shortname}" 过长。为了能使其被映射，您需要将短名称缩短为{$a->charlimit}字符以内。 <a href="{$a->link}">编辑用户档案字段</a>';
 $string['changepassword'] = '更改密码 URL';

@@ -1,44 +1,230 @@
 This files describes API changes in core libraries and APIs,
 information provided here is intended especially for developers.
 
-=== 3.4.6 ===
+=== 3.6.4 ===
+
+* Behat timeout constants behat_base::TIMEOUT, EXTENDED_TIMEOUT, and REDUCED_TIMEOUT will be
+  deprecated in 3.7. Please instead use the functions behat_base::get_timeout(), get_extended_timeout(),
+  and get_reduced_timeout(). These allow for timeouts to be increased by a setting in config.php.
+* New optional parameter $throwexception for \get_complete_user_data(). If true, an exception will be thrown when there's no
+  matching record found or when there are multiple records found for the given field value. If false, it will simply return false.
+  Defaults to false when not set.
+
+=== 3.6.3 ===
 
 * The \core_rating provider's get_sql_join function now accepts an optional $innerjoin parameter.
   It is recommended that privacy providers using this function call rewrite any long query into a number of separate
   calls to add_from_sql for improved performance, and that the new argument is used.
   This will allow queries to remain backwards-compatible with older versions of Moodle but will have significantly better performance in version supporting the innerjoin parameter.
 
-=== 3.4.5 ===
+=== 3.6.2 ===
 
+* The method core_user::is_real_user() now returns false for userid = 0 parameter
+* Icons are displayed for screen readers unless they have empty alt text (aria-hidden). Do not provide an icon with alt text immediately beside an element with exactly the same text.
+
+=== 3.6 ===
+
+* A new token-based version of pluginfile.php has been added which can be used for out-of-session file serving by
+  setting the `$includetoken` parameter to true on the `moodle_url::make_pluginfile_url()`, and
+  `moodle_url::make_file_url()` functions.
+* The following picture functions have been updated to support use of the new token-based file serving:
+    - print_group_picture
+    - get_group_picture_url
+* The `user_picture` class has a new public `$includetoken` property which can be set to make use of the new token-based
+  file serving.
 * Custom AJAX handlers for the form autocomplete fields can now optionally return string in their processResults()
-  callback. If a string is returned, it is displayed instead of the list if suggested items. This can be used, for
+  callback. If a string is returned, it is displayed instead of the list of suggested items. This can be used, for
   example, to inform the user that there are too many items matching the current search criteria.
+* The form element 'htmleditor' has been deprecated. Please use the 'editor' element instead.
+* The print_textarea() function has been deprecated. Please use $OUTPUT->print_textarea() instead.
+* The following functions have been finally deprecated and can not be used any more:
+    - external_function_info()
+    - core_renderer::update_module_button()
+    - events_trigger()
+    - events_cron()
+    - events_dispatch()
+    - events_is_registered()
+    - events_load_def()
+    - events_pending_count()
+    - events_process_queued_handler()
+    - events_queue_handler()
+    - events_trigger_legacy()
+    - events_update_definition()
+    - get_file_url()
+    - course_get_cm_rename_action()
+    - course_scale_used()
+    - site_scale_used()
+    - clam_message_admins()
+    - get_clam_error_code()
+    - get_records_csv()
+    - put_records_csv()
+    - print_log()
+    - print_mnet_log()
+    - print_log_csv()
+    - print_log_xls()
+    - print_log_ods()
+    - build_logs_array()
+    - get_logs_usercourse()
+    - get_logs_userday()
+    - get_logs()
+    - prevent_form_autofill_password()
+    - prefixed_tablenode_transformations()
+    - core_media_renderer
+    - core_media
+* Following api's have been removed in behat_config_manager, please use behat_config_util instead.
+    - get_features_with_tags()
+    - get_components_steps_definitions()
+    - get_config_file_contents()
+    - merge_behat_config()
+    - get_behat_profile()
+    - profile_guided_allocate()
+    - merge_config()
+    - clean_path()
+    - get_behat_tests_path()
+* Following behat steps have been removed from core:
+    - I set the field "<field_string>" to multiline
+    - I follow "<link_string>"" in the open menu
+* The following behat steps have been deprecated, please do not use these step definitions any more:
+    - behat_navigation.php: i_navigate_to_node_in()
+    - theme/boost/tests/behat/behat_theme_boost_behat_navigation.php: i_navigate_to_node_in()
+  Use one of the following steps instead:
+    - I navigate to "PATH > ITEM" in current page administration
+    - I navigate to "PATH > ITEM" in site administration
+    - I navigate to course participants
+    - I navigate to "TAB1 > TAB2" in the course gradebook
+  If some items are not available without Navigation block at all, one can use combination of:
+    - I add the "Navigation" block if not present
+    - I click on "LINK" "link" in the "Navigation" "block"
+* The core\session\util class has been removed. This contained one function only used by the memcached class which has
+  been moved there instead (connection_string_to_memcache_servers).
+* Removed the lib/password_compat/lib/password.php file.
+* The eventslib.php file has been deleted and its functions have been moved to deprecatedlib.php. The affected functions are:
+  - events_get_cached()
+  - events_uninstall()
+  - events_cleanup()
+  - events_dequeue()
+  - events_get_handlers()
 * coursecat::get() now has optional $user parameter.
 * coursecat::is_uservisible() now has optional $user parameter.
+* Removed the lib/form/submitlink.php element which was deprecated in 3.2.
+* The user_selector classes do not support custom list of extra identity fields any more. They obey the configured user
+  policy and respect the privacy setting made by site administrators. The list of user identifiers should never be
+  hard-coded. Instead, the setting $CFG->showuseridentity should be always respected, which has always been the default
+  behaviour (MDL-59847).
+* The function message_send() in messagelib.php will now only take the object \core\message\message as a parameter.
+* The method message_sent::create_from_ids() parameter courseid is now required. A debugging
+  message was previously displayed, and the SITEID was used, when not provided.
+* The method \core\message\manager::send_message() now only takes the object \core\message\message as the first parameter.
+* Following functions have been deprecated, please use get_roles_used_in_context.
+    - get_roles_on_exact_context()
+    - get_roles_with_assignment_on_context()
+* New functions to support the merging of user draft areas from the interface; see MDL-45170 for details:
+  - file_copy_file_to_file_area()
+  - file_merge_draft_areas()
+  - file_replace_file_area_in_text()
+  - extract_draft_file_urls_from_text()
+* Class coursecat is now alias to autoloaded class core_course_category, course_in_list is an alias to
+  core_course_list_element, class coursecat_sortable_records is deprecated without replacement.
+* \core_user_external::create_users() and \core_user_external::update_users() can now accept more user profile fields so user
+  creation/update via web service can now be very similar to the edit profile page's functionality. The new fields that have been
+  added are:
+  - maildisplay
+  - interests
+  - url
+  - icq
+  - skype
+  - aim
+  - yahoo
+  - msn
+  - institution
+  - department
+  - phone1
+  - phone2
+  - address
+* New function mark_user_dirty() must be called after changing data that gets cached in user sessions. Examples:
+  - Assigning roles to users.
+  - Unassigning roles from users.
+  - Enrolling users into courses.
+  - Unenrolling users from courses.
+* New optional parameter $context for the groups_get_members_join() function and ability to filter users that are not members of
+any group. Besides, groups_get_members_ids_sql, get_enrolled_sql and get_enrolled_users now accepts -1 (USERSWITHOUTGROUP) for
+the groupid field.
+* Added $CFG->conversionattemptlimit setting to config.php allowing a maximum number of retries before giving up conversion
+  of a given document by the assignfeedback_editpdf\task\convert_submissions task. Default value: 3.
+* The following events have been deprecated and should not be used any more:
+  - message_contact_blocked
+  - message_contact_unblocked
+  The reason for this is because you can now block/unblock users without them necessarily being a contact. These events
+  have been replaced with message_user_blocked and message_user_unblocked respectively.
+* The event message_deleted has been changed, it no longer records the value of the 'useridto' due to
+  the introduction of group messaging. Please, if you have any observers or are triggering this event
+  in your code you will have to make some changes!
+* The gradebook now supports the ability to accept files as feedback. This can be achieved by adding
+  'feedbackfiles' to the $grades parameter passed to grade_update().
+    For example -
+        $grades['feedbackfiles'] = [
+            'contextid' => 1,
+            'component' => 'mod_xyz',
+            'filearea' => 'mod_xyz_feedback',
+            'itemid' => 2
+        ];
+  These files will be then copied to the gradebook file area.
+* Allow users to choose who can message them for privacy reasons, with a 'growing circle of contactability':
+  - Added $CFG->messagingallusers, for enabling messaging to all site users. Default value: 0.
+    When $CFG->messagingallusers = false users can choose being contacted by only contacts or contacts and users sharing a course with them.
+    In that case, the default user preference is MESSAGE_PRIVACY_COURSEMEMBER (users sharing a course).
+    When $CFG->messagingallusers = true users have a new option for the privacy messaging preferences: "Anyone on the site". In that case,
+    the default user preference is MESSAGE_PRIVACY_SITE (all site users).
+  - Added $CFG->keepmessagingallusersenabled setting to config.php to force enabling $CFG->messagingallusers during the upgrading process.
+    Default value: 0.
+    When $CFG->keepmessagingallusersenabled is set to true, $CFG->messagingallusers will be also set to true to enable messaging site users.
+    However, when it is empty, $CFG->messagingallusers will be disabled during the upgrading process, so the users will only be able to
+    message contacts and users sharing a course with them.
+* There has been interface and functional changes to admin_apply_default_settings() (/lib/adminlib.php).  The function now takes two
+  additional optional parameters, $admindefaultsettings and $settingsoutput.  It also has a return value $settingsoutput.
+  The function now does not need to be called twice to ensure all default settings are set.  Instead the function calls itself recursively
+  until all settings have been set. The additional parameters are used recursively and shouldn't be need to be explicitly passed in when calling
+  the function from other parts of Moodle.
+  The return value: $settingsoutput is an array of setting names and the values that were set by the function.
+* Webservices no longer update the lastaccess time for a user in a course. Call core_course_view_course() manually if needed.
+* A new field has been added to the context table. Please ensure that any contxt preloading uses get_preload_record_columns_sql or get_preload_record_columns to fetch the list of columns.
 
-=== 3.4.3 ===
+=== 3.5 ===
 
 * There is a new privacy API that every subsystem and plugin has to implement so that the site can become GDPR
   compliant. Plugins use this API to report what information they store or process regarding users, and provide ability
   to export and delete personal data. See https://docs.moodle.org/dev/Privacy_API for guidelines on how to implement the
   privacy API in your plugin.
-* The following have been removed from the list of core subsystems:
-   - core_register
-   - core_publish
-  Following this change, \core_register_renderer and \core_publish_renderer have been removed and their methods have been
-  moved to \core_admin_renderer and \core_course_renderer respectively.
 * The cron runner now sets up a fresh PAGE and OUTPUT between each task.
-
-=== 3.4.2 ===
-
+* The core_renderer methods notify_problem(), notify_success(), notify_message() and notify_redirect() that were
+  deprecated in Moodle 3.1 have been removed. Use \core\notification::add(), or \core\output\notification as required.
+* The maximum supported precision (the total number of digits) for XMLDB_TYPE_NUMBER ("number") fields raised from 20 to
+  38 digits. Additionally, the whole number part (precision minus scale) must not be longer than the maximum length of
+  integer fields (20 digits). Note that PHP floats commonly support precision of roughly 15 digits only (MDL-32113).
+* Event triggering and event handlers:
+    - The following events, deprecated since moodle 2.6, have been finally removed: groups_members_removed,
+      groups_groupings_groups_removed, groups_groups_deleted, groups_groupings_deleted.
+* The following functions have been finally deprecated and can not be used any more:
+  - notify()
+* XMLDB now validates the PATH attribute on every install.xml file. Both the XMLDB editor and installation will fail
+  when a problem is detected with it. Please ensure your plugins contain correct directory relative paths.
+* Add recaptchalib_v2.php for support of reCAPTCHA v2.
 * Plugins can define class 'PLUGINNAME\privacy\local\sitepolicy\handler' if they implement an alternative mechanisms for
   site policies managements and agreements. Administrators can define which component is to be used for handling site
   policies and agreements. See https://docs.moodle.org/dev/Site_policy_handler
 * Scripts can define a constant NO_SITEPOLICY_CHECK and set it to true before requiring the main config.php file. It
   will make the require_login() skipping the test for the user's policyagreed status. This is useful for plugins that
   act as a site policy handler.
+* There is a new is_fulltext_search_supported() DML function. The default implementation returns false. This function
+  is used by 'Simple search' global search engine to determine if the database full-text search capabilities can be used.
+* The following have been removed from the list of core subsystems:
+   - core_register
+   - core_publish
+  Following this change, \core_register_renderer and \core_publish_renderer have been removed and their methods have been
+  moved to \core_admin_renderer and \core_course_renderer respectively.
 
 === 3.4 ===
+
 * oauth2_client::request method has an extra parameter to specify the accept header for the response (MDL-60733)
 * The following functions, previously used (exclusively) by upgrade steps are not available
   anymore because of the upgrade cleanup performed for this version. See MDL-57432 for more info:
@@ -95,6 +281,10 @@ information provided here is intended especially for developers.
 * $CFG->loginhttps is now deprecated, do not use it.
 * $PAGE->https_required and $PAGE->verify_https_required() are now deprecated. They are no longer used and will throw a coding_exception.
 * $CFG->httpswwwroot is now deprecated and will always result in the same value as wwwroot.
+* Added function core_role_set_view_allowed() to check if a user should be able to see a given role.
+  This should be checked whenever displaying a list of roles to a user, however, core_role_set_assign_allowed may need to override it
+  in some cases.
+* Deprecated allow_override, allow_assign and allow_switch and replaced with core_role_set_*_allowed to avoid function names conflicting.
 
 === 3.3.1 ===
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'ur', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_html', language 'ur', branch 'MOODLE_36_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configcontent'] = 'مواد';
 $string['configtitle'] = 'بلاک کا عنوان';
-$string['leaveblanktohide'] = 'عنوان چھپانے کیلیے خالی چھوڑ دہ';
 $string['newhtmlblock'] = '(نیا ایچ ٹی ایم ایل بلاک)';
 $string['pluginname'] = 'ایچ ٹی ایم ایل';

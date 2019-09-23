@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mathjaxloader', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filter_mathjaxloader', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   filter_mathjaxloader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,11 @@ $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'Διεύθυνση URL MathJax';
 $string['httpsurl_help'] = 'Πλήρης διεύθυνση URL της βιβλιοθήκης MathJax.';
 $string['localinstall'] = 'Τοπική εγκατάσταση MathJax';
-$string['localinstall_help'] = 'Οι προεπιλεγμένες ρυθμίσεις του MathJax χρησιμοποιούν την έκδοση CDN του MathJax, αλλά το MathJax μπορεί να εγκατασταθεί τοπικά εάν απαιτείται. Αυτό μπορεί να είναι χρήσιμο για οικονομία σε εύρος ζώνης ή λόγω τοπικών περιορισμών διακομιστή μεσολάβησης. Για να χρησιμοποιήσετε μια τοπική εγκατάσταση του MathJax, κατεβάστε πρώτα την πλήρη βιβλιοθήκη MathJax από το http://www.mathjax.org/. Κατόπιν, εγκαταστήστε το σε έναν εξυπηρετητή ιστού. Τέλος, ενημερώστε τις ρυθμίσεις φίλτρου MathJax httpurl και/ή httpsurl για να δείχνουν την τοπική διεύθυνση URL του MathJax.js.';
+$string['localinstall_help'] = 'Οι προεπιλεγμένες ρυθμίσεις του MathJax χρησιμοποιούν την έκδοση CDN του MathJax, αλλά το MathJax μπορεί να εγκατασταθεί τοπικά εάν απαιτείται.
+
+Αυτό μπορεί να είναι χρήσιμο για οικονομία σε εύρος ζώνης ή λόγω τοπικών περιορισμών διακομιστή μεσολάβησης.
+
+Για να χρησιμοποιήσετε μια τοπική εγκατάσταση του MathJax, κατεβάστε πρώτα την πλήρη βιβλιοθήκη MathJax από το https://www.mathjax.org/. Κατόπιν, εγκαταστήστε τη σε έναν εξυπηρετητή ιστού. Τέλος, ενημερώστε τις ρυθμίσεις φίλτρου MathJax httpurl και/ή httpsurl για να δείχνουν την τοπική διεύθυνση URL του MathJax.js.';
 $string['mathjaxsettings'] = 'Ρυθμίσεις του MathJax';
 $string['mathjaxsettings_desc'] = 'Οι προεπιλεγμένες ρυθμίσεις του MathJax θα πρέπει να είναι κατάλληλες για τους περισσότερους χρήστες, αλλά το MathJax είναι ιδιαίτερα διαμορφώσιμο και μπορεί να προστεθεί εδώ οποιαδήποτε από τις τυπικές επιλογές ρυθμίσεων του MathJax.';
 $string['privacy:metadata'] = 'Το πρόσθετο «MathJax» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

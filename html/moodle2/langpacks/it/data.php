@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['checkbox'] = 'Casella spunta';
 $string['chooseexportfields'] = 'Scegli i campi da esportare:';
 $string['chooseexportformat'] = 'Scegli il formato di esportazione:';
 $string['chooseorupload'] = 'Scegli un file';
+$string['closebeforeopen'] = 'La data di aperture è antecedente alla data di chiusura';
 $string['columns'] = 'colonne';
 $string['comment'] = 'Commento';
 $string['commentdeleted'] = 'Il commento è stato eliminato';
@@ -245,13 +246,13 @@ $string['menuchoose'] = 'Scegli...';
 $string['missingdata'] = 'La id dei dati o l\'oggetto devono essere forniti alla classe dei campi';
 $string['missingfield'] = 'Errore di programamzione: è necessario specificare il campo e/o i dati quando si definisce un classe di campi.';
 $string['modulename'] = 'Database';
-$string['modulename_help'] = 'Il modulo attività database consente ai partecipanti di creare, gestire e ricercare insiemi di record. Il formato e la struttura dei record è impostato liberamente dal docente e può includere caselle di spunta, pulsanti radio, menu a discesa, immagini, file, URL, numeri, testi, eccetera.
+$string['modulename_help'] = 'Il modulo attività Database consente ai partecipanti di creare, gestire e ricercare insiemi di record. Il formato e la struttura dei record è impostato liberamente dal docente e può includere caselle di spunta, pulsanti radio, menu a discesa, immagini, file, URL, numeri, testi, eccetera.
 
 L\'impaginazione delle informazioni per le viste singola, ad elenco e modifica, possono essere impostate attraverso modelli. Le attività Database possono essere condivise tra corsi diversi tramite le preimpostazioni ed è anche possibile esportare ed importare record.
 
 Nel caso in cui il filtro "Collegamento automatico ai campi del database" sia attivo, verrà creato un link tutte le volte che il contenuto di un campo comparirà nei testi del corso.
 
-Un docente può consentire i commenti e la valutazione dei record, anche da parte degli stessi studenti (valutazione tra pari). Le valutazioni possono essere aggregate e la valutazione finale sarà memorizzata nel registro del valutatore.
+Un docente può consentire i commenti e la valutazione dei record, anche da parte degli stessi studenti (valutazione tra pari). Le valutazioni possono essere aggregate e la valutazione finale sarà memorizzata nel registro valutatore.
 
 E\' possibile usare l\'attività Database per:
 
@@ -264,18 +265,6 @@ $string['movezipfailed'] = 'Impossibile spostare il .zip';
 $string['multientry'] = 'Elemento ripetuto';
 $string['multimenu'] = 'Menu (Selezione multipla)';
 $string['multipletags'] = 'Sono state trovate Tag duplicate. Il Modello di visualizzazione non è stato salvato';
-$string['namecheckbox'] = 'Casella Spunta';
-$string['namedate'] = 'Campo Data';
-$string['namefile'] = 'Campo file';
-$string['namelatlong'] = 'Campo Latitudine/Longitudine';
-$string['namemenu'] = 'Campo menu';
-$string['namemultimenu'] = 'Campo Menu a scelta multipla';
-$string['namenumber'] = 'Campo Numerico';
-$string['namepicture'] = 'Campo immagine';
-$string['nameradiobutton'] = 'Campo Pulsante Radio';
-$string['nametext'] = 'Campo testo';
-$string['nametextarea'] = 'Campo area di testo';
-$string['nameurl'] = 'Campo Indirizzo Web (URL)';
 $string['newentry'] = 'Nuovo record';
 $string['newfield'] = 'Aggiungi un campo';
 $string['newfield_help'] = 'Questa schermata consente l\'inserimento di campi che formeranno la struttura del Database.
@@ -298,6 +287,7 @@ $string['numberrssarticles'] = 'Numero di record da visualizzare nel feed RSS';
 $string['numnotapproved'] = 'In attesa di approvazione';
 $string['numrecords'] = '{$a} record';
 $string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['openafterclose'] = 'La data di chiusura è successiva alla data di apertura';
 $string['optionaldescription'] = 'Descrizione abbreviata (opzionale)';
 $string['optionalfilename'] = 'Nome del file (opzionale)';
 $string['other'] = 'Altro';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_task', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['asap'] = 'ASAP';
 $string['backtoscheduledtasks'] = 'Voltar para as tarefas agendadas';
 $string['blocking'] = 'Bloqueio';
+$string['cannotfindthepathtothecli'] = 'Não é possível encontrar o executável CLI do PHP para que a execução da tarefa seja anulada. Defina a configuração \'Caminho para o CLI do PHP\' em Administração do Site / Servidor / Caminhos do sistema.';
+$string['clearfaildelay_confirm'] = 'Tem a certeza de que pretende limpar o atraso de falha para a tarefa \'{$a}\'? Depois de limpar o atraso, a tarefa será executada de acordo com a sua programação normal.';
 $string['component'] = 'Componente';
 $string['corecomponent'] = 'Core';
 $string['default'] = 'Predefinições';
@@ -35,7 +37,7 @@ $string['disabled'] = 'Desativada';
 $string['disabled_help'] = 'As tarefas agendadas mas desativadas não são executadas a partir do cron, no entanto, estas podem continuar a ser executadas manualmente através da ferramenta CLI.';
 $string['edittaskschedule'] = 'Editar agendamento de tarefa: {$a}';
 $string['enablerunnow'] = 'Permitir \'Executar agora\' para tarefas agendadas';
-$string['enablerunnow_desc'] = 'Permite que os administradores executem imediatamente uma tarefa agendada, em vez de esperar que ela seja executada conforme o programado. A tarefa é executada no servidor web, por isso alguns sites podem querer desativar este recurso para evitar potenciais problemas de desempenho.';
+$string['enablerunnow_desc'] = 'Permite que os administradores executem imediatamente uma tarefa agendada, em vez de esperar que ela seja executada conforme o programado. Este recurso requer que o \'Caminho para o CLI do PHP\' (pathtophp) seja definido nos caminhos do sistema. A tarefa é executada no servidor web, por isso pode querer desativar este recurso para evitar potenciais problemas de desempenho.';
 $string['faildelay'] = 'Falha da tarefa em atraso';
 $string['lastruntime'] = 'Última execução';
 $string['nextruntime'] = 'Próxima execução';
@@ -46,16 +48,42 @@ $string['resettasktodefaults'] = 'Restaurar agendamento de tarefa para as config
 $string['resettasktodefaults_help'] = 'Se ativar esta opção, irá descartar quaisquer alterações locais e reverter o agendamento desta tarefa para as configurações predefinidas.';
 $string['runnow'] = 'Executar agora';
 $string['runnow_confirm'] = 'Tem a certeza de que pretende executar agora a tarefa \'{$a}\'? A tarefa será executada no servidor Web e pode levar algum tempo até estar concluída.';
+$string['runpattern'] = 'Executar ascendente';
 $string['scheduledtaskchangesdisabled'] = 'As alterações à lista de tarefas agendadas foram impedidas na configuração do Moodle';
 $string['scheduledtasks'] = 'Tarefas agendadas';
 $string['taskdisabled'] = 'Tarefa desativada';
 $string['taskscheduleday'] = 'Dia';
-$string['taskscheduleday_help'] = 'Campo “Dia do mês” para agendamento de tarefa. O campo usa o mesmo formato que o unix cron. Alguns exemplos:<br/><ul><li><strong>*</strong> Todos os dias</li><li><strong>*/2</strong> Todos os 2ºs dias</li><li><strong>1</strong> O primeiro dia de todos os meses</li><li><strong>1,15</strong> O 1º e 15º dias de todos os meses</li></ul>';
+$string['taskscheduleday_help'] = 'Campo “Dia do mês” para agendamento de tarefa. O campo usa o mesmo formato que o cron unix cron. Alguns exemplos:
+
+* <strong>*</strong> Todos os dias
+* <strong>*/2</strong> Todos os 2ºs dias
+* <strong>1</strong> O primeiro dia de todos os meses
+* <strong>1,15</strong> O 1º e 15º dia de todos os meses';
 $string['taskscheduledayofweek'] = 'Dia da semana';
-$string['taskscheduledayofweek_help'] = 'Campo “Dia da semana” para agendamento de tarefa. O campo usa o mesmo formato que o unix cron. Alguns exemplos:<br/><ul><li><strong>*</strong> Todos os dias </li><li><strong>0</strong> Todos os domingos</li><li><strong>6</strong> Todos os sábados</li><li><strong>1,5</strong> Todas as segundas e sextas-feiras</li></ul>';
+$string['taskscheduledayofweek_help'] = 'Campo “Dia da semana” para agendamento de tarefa. O campo usa o mesmo formato que o cron unix. Alguns exemplos:
+
+* <strong>*</strong> Todos os dias
+* <strong>0</strong> Todos os domingos
+* <strong>6</strong> Todos os sábados
+* <strong>1,5</strong> Todas as segundas e sextas-feiras';
 $string['taskschedulehour'] = 'Hora';
-$string['taskschedulehour_help'] = 'Campo “Hora” para agendamento de tarefa. O campo usa o mesmo formato que o unix cron. Alguns exemplos: <br/><ul><li><strong>*</strong> A todas as horas</li><li><strong>*/2</strong> A cada 2 horas</li><li><strong>2-10</strong> A todas as horas das 2:00 às 10:00 (inclusive)</li><li><strong>2,6,9</strong> Às 2:00, 6:00 e 9:00</li></ul>';
+$string['taskschedulehour_help'] = 'Campo “Hora” para agendamento de tarefa. O campo usa o mesmo formato que o cron unix. Alguns exemplos:
+
+* <strong>*</strong> A todas as horas
+* <strong>*/2</strong> A cada 2 horas
+* <strong>2-10</strong> A todas as horas das 2:00 às 10:00 (inclusive)
+* <strong>2,6,9</strong> Às 2:00, 6:00 e 9:00<';
 $string['taskscheduleminute'] = 'Minuto';
-$string['taskscheduleminute_help'] = 'Campo “Minuto” para agendamento de tarefa. O campo usa o mesmo formato que o unix cron. Alguns exemplos: <br/><ul><li><strong>*</strong> A todos os minutos</li><li><strong>*/5</strong> A cada 5 minutos</li><li><strong>2-10</strong> A todos os minutos entre os 2 e os 10 minutos após a hora (inclusive)</li><li><strong>2,6,9</strong> Aos 2, 6 e 9 minutos após a hora</li></ul>';
+$string['taskscheduleminute_help'] = 'Campo “Minuto” para agendamento de tarefa. O campo usa o mesmo formato que o cron unix. Alguns exemplos:
+
+* <strong>*</strong> Todos os minutos
+* <strong>*/5</strong> A cada 5 minutos
+* <strong>2-10</strong> Todos os minutos entre os 2 e os 10 minutos após a hora (inclusive)
+* <strong>2,6,9</strong> Aos 2, 6 e 9 minutos após a hora';
 $string['taskschedulemonth'] = 'Mês';
-$string['taskschedulemonth_help'] = 'Campo “Mês” para agendamento de tarefa. O campo usa o mesmo formato que o unix cron. Alguns exemplos:<br/><ul><li><strong>*</strong> Todos os meses</li><li><strong>*/2</strong> Todos os segundos meses</li><li><strong>1</strong> Todos os meses de janeiro</li><li><strong>1,5</strong> Todos os meses de janeiro e maio</li></ul>';
+$string['taskschedulemonth_help'] = 'Campo “Mês” para agendamento de tarefa. O campo usa o mesmo formato que o cron unix. Alguns exemplos:
+
+* <strong>*</strong> Todos os meses
+* <strong>*/2</strong> Todos os segundos meses
+* <strong>1</strong> Todos os meses de janeiro
+* <strong>1,5</strong> Todos os meses de janeiro e maio';

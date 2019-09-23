@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hub', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['advertised'] = 'Anunciado';
 $string['advertiseon'] = 'Anunciar este curso en {$a}';
 $string['advertiseonhub'] = 'Anunciar este curso nun centro';
 $string['advertiseonmoodleorg'] = 'Anunciar este curso en moodle.org';
-$string['advertisepublication_help'] = 'Ao anunciar este curso nun servidor dun centro da comunidade permítelle á xente atopar este curso e vir aquí a matricularse.';
+$string['advertisepublication_help'] = 'Este curso estará listado en Moodle.net como un curso no que as persoas poderán matricularse e participar. O autorexistro baseado en correo electrónico debe estar activado no sitio e necesitará activar a automatriculación neste curso.';
 $string['all'] = 'Todos';
 $string['allowglobalsearch'] = 'Publicar este centro e permitir a busca global de todos os cursos';
 $string['allowpublicsearch'] = 'Publicar este centro de modo que a xente poida inscribirse nel';
@@ -40,7 +40,7 @@ $string['audienceadmins'] = 'Administradores de Moodle';
 $string['audienceeducators'] = 'Educadores';
 $string['audience_help'] = 'Seleccionar a audiencia a que se dirixe este curso.';
 $string['audiencestudents'] = 'Alumnos';
-$string['badgesnumber'] = 'Número de distincións ({$a})';
+$string['badgesnumber'] = 'Número de insignias ({$a})';
 $string['badurlformat'] = 'Formato de URL incorrecto';
 $string['cannotsearchcommunity'] = 'Desculpe, non ten os permisos adecuados para ver esta páxina';
 $string['community'] = 'Comunidade';
@@ -114,7 +114,7 @@ $string['hub'] = 'Centro';
 $string['imageurl'] = 'URL da imaxe';
 $string['imageurl_help'] = 'Esta imaxe presentarase en pantalla do centro. Debe estar dispoñíbel desde o centro en calquera momento. A imaxe debería ter un tamaño máximo de {$a->width} X {$a->height}';
 $string['information'] = 'Información';
-$string['issuedbadgesnumber'] = 'Número de distincións recibidas ({$a})';
+$string['issuedbadgesnumber'] = 'Número de insignias recibidas ({$a})';
 $string['language'] = 'Idioma';
 $string['language_help'] = 'O idioma principal deste curso.';
 $string['lasttimechecked'] = 'Ultima vez que se comprobou';
@@ -136,7 +136,7 @@ $string['nocheckstatusfromunreghub'] = 'O sitio non está rexistrado no centro d
 $string['nohubselected'] = 'Non hai ningún centro seleccionado';
 $string['none'] = 'Ningún';
 $string['nosearch'] = 'Non publicar nin o centro nin os cursos';
-$string['notregisteredonhub'] = 'O administrador necesita rexistrar este sitio e que conteña un centro cando menos antes de que vostede poida publicar un curso. Contacte co administrador do seu sitio.';
+$string['notregisteredonhub'] = 'O seu administrador ten que rexistrar este sitio con Moodle.net antes de poder compartir un curso.';
 $string['notregisteredonmoodleorg'] = 'O administrador necesita rexistrar este sitio en moodle.org.';
 $string['operation'] = 'Accións';
 $string['orenterprivatehub'] = 'Alternativamente, escriba un URL de centro privado:';
@@ -176,7 +176,7 @@ $string['registermoochtips'] = 'Para rexistrarse en Moodle.net, o seu sitio debe
 $string['registersite'] = 'Rexistrarse en {$a}';
 $string['registerwith'] = 'Rexistrarse nun centro';
 $string['registrationconfirmed'] = 'Confirmouse o rexistro no sitio';
-$string['registrationconfirmedon'] = 'Vostede está agora rexistrado no centro {$a}. Agora pode publicar cursos neste centro, utilizando a ligazón «Publicar» nos menús de administración do curso.';
+$string['registrationconfirmedon'] = 'Grazas por rexistrar o seu sitio. A información rexistrada manterase actualizada coa tarefa programada «Rexistro do sitio».';
 $string['registrationinfo'] = 'Información de rexistro';
 $string['registrationupdated'] = 'Actualizouse o rexistro.';
 $string['registrationupdatedfailed'] = 'Fallou a actualización do rexistro.';
@@ -225,7 +225,7 @@ $string['sitename'] = 'Nome';
 $string['sitename_help'] = 'O nome do sitio amosarase na listaxe do sitio se o centro o permite.';
 $string['sitephone'] = 'Teléfono';
 $string['sitephone_help'] = 'O seu número de teléfono so o verá o administrador do centro.';
-$string['siteprivacy'] = 'Intimidade';
+$string['siteprivacy'] = 'Listaxe de sitios';
 $string['siteprivacy_help'] = 'Pode optar por ter o seu sitio listado publicamente na lista de sitios rexistrados, con ou sen unha ligazón ao seu sitio.';
 $string['siteprivacylinked'] = 'Publicar o nome do sitio cunha ligazón';
 $string['siteprivacynotpublished'] = 'Non publique este sitio, por favor';
@@ -236,8 +236,8 @@ $string['siteregistrationcontact_help'] = 'Se o permite, outras persoas serán q
 $string['siteregistrationemail'] = 'Notificación por correo';
 $string['siteregistrationemail_help'] = 'De activar isto, o administrador do centro pode enviarlle mensaxes para informalo de novas importantes como incidencias de seguranza.';
 $string['siteregistrationupdated'] = 'Actualizouse o rexistro do sitio';
-$string['siterelease'] = 'Edición de Moodle';
-$string['siterelease_help'] = 'Número de edición de Moodle deste sitio.';
+$string['siterelease'] = 'Versión publicada de Moodle';
+$string['siterelease_help'] = 'Número da versión publicada de Moodle neste sitio.';
 $string['sitereleasenum'] = 'Versión publicada de Moodle ({$a})';
 $string['siteupdatedcron'] = 'Actualizouse o rexistro do sitio en «{$a}»';
 $string['siteupdatesend'] = 'Rematou a actualización do rexistro nos centros.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_grading', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,7 +71,7 @@ $string['nothingfound'] = 'Nada para presentar';
 $string['options'] = 'Opcións';
 $string['orderattempts'] = 'Ordenar intentos';
 $string['pluginname'] = 'Cualificación manual';
-$string['privacy:metadata'] = 'O complemento de cualificación manual de proba non almacena ningún dato persoal. Proporciona unha interface para que os usuarios almacenen datos sen almacenar datos.';
+$string['privacy:metadata'] = 'O engadido de cualificación manual de proba non almacena ningún dato persoal. Proporciona unha interface para que os usuarios almacenen datos sen almacenar datos.';
 $string['qno'] = 'Q núm.';
 $string['questionname'] = 'Nome da pregunta';
 $string['questionsperpage'] = 'Preguntas por páxina';

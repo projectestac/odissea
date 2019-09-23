@@ -23,7 +23,7 @@
  * Updates the contents of the survey with the provided data. If no data is provided,
  * it checks for posted data.
  *
- * @param int $survey_id The id of the survey to update.
+ * @param int $surveyid The id of the survey to update.
  * @param string $old_tab The function that was being executed.
  * @param object $sdata The data to update the survey with.
  *
@@ -40,7 +40,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->libdir.'/eventslib.php');
 require_once($CFG->dirroot.'/calendar/lib.php');
 // Constants.
 
@@ -87,115 +86,6 @@ $autonumbering = array (0 => get_string('autonumberno', 'questionnaire'),
         1 => get_string('autonumberquestions', 'questionnaire'),
         2 => get_string('autonumberpages', 'questionnaire'),
         3 => get_string('autonumberpagesandquestions', 'questionnaire'));
-
-function questionnaire_check_date ($thisdate, $insert=false) {
-    $dateformat = get_string('strfdate', 'questionnaire');
-    if (preg_match('/(%[mdyY])(.+)(%[mdyY])(.+)(%[mdyY])/', $dateformat, $matches)) {
-        $datepieces = explode($matches[2], $thisdate);
-        foreach ($datepieces as $datepiece) {
-            if (!is_numeric($datepiece)) {
-                return 'wrongdateformat';
-            }
-        }
-        $pattern = "/[^dmy]/i";
-        $dateorder = strtolower(preg_replace($pattern, '', $dateformat));
-        $countpieces = count($datepieces);
-        if ($countpieces == 1) { // Assume only year entered.
-            switch ($dateorder) {
-                case 'dmy': // Most countries.
-                case 'mdy': // USA.
-                    $datepieces[2] = $datepieces[0]; // year
-                    $datepieces[0] = '1'; // Assumed 1st month of year.
-                    $datepieces[1] = '1'; // Assumed 1st day of month.
-                    break;
-                case 'ymd': // ISO 8601 standard
-                    $datepieces[1] = '1'; // Assumed 1st month of year.
-                    $datepieces[2] = '1'; // Assumed 1st day of month.
-                    break;
-            }
-        }
-        if ($countpieces == 2) { // Assume only month and year entered.
-            switch ($dateorder) {
-                case 'dmy': // Most countries.
-                    $datepieces[2] = $datepieces[1]; // Year.
-                    $datepieces[1] = $datepieces[0]; // Month.
-                    $datepieces[0] = '1'; // Assumed 1st day of month.
-                    break;
-                case 'mdy': // USA
-                    $datepieces[2] = $datepieces[1]; // Year.
-                    $datepieces[0] = $datepieces[0]; // Month.
-                    $datepieces[1] = '1'; // Assumed 1st day of month.
-                    break;
-                case 'ymd': // ISO 8601 standard
-                    $datepieces[2] = '1'; // Assumed 1st day of month.
-                    break;
-            }
-        }
-        if (count($datepieces) > 1) {
-            if ($matches[1] == '%m') {
-                $month = $datepieces[0];
-            }
-            if ($matches[1] == '%d') {
-                $day = $datepieces[0];
-            }
-            if ($matches[1] == '%y') {
-                $year = strftime('%C').$datepieces[0];
-            }
-            if ($matches[1] == '%Y') {
-                $year = $datepieces[0];
-            }
-
-            if ($matches[3] == '%m') {
-                $month = $datepieces[1];
-            }
-            if ($matches[3] == '%d') {
-                $day = $datepieces[1];
-            }
-            if ($matches[3] == '%y') {
-                $year = strftime('%C').$datepieces[1];
-            }
-            if ($matches[3] == '%Y') {
-                $year = $datepieces[1];
-            }
-
-            if ($matches[5] == '%m') {
-                $month = $datepieces[2];
-            }
-            if ($matches[5] == '%d') {
-                $day = $datepieces[2];
-            }
-            if ($matches[5] == '%y') {
-                $year = strftime('%C').$datepieces[2];
-            }
-            if ($matches[5] == '%Y') {
-                $year = $datepieces[2];
-            }
-
-            $month = min(12, $month);
-            $month = max(1, $month);
-            if ($month == 2) {
-                $day = min(29, $day);
-            } else if ($month == 4 || $month == 6 || $month == 9 || $month == 11) {
-                $day = min(30, $day);
-            } else {
-                $day = min(31, $day);
-            }
-            $day = max(1, $day);
-            if (!$thisdate = gmmktime(0, 0, 0, $month, $day, $year)) {
-                return 'wrongdaterange';
-            } else {
-                if ($insert) {
-                    $thisdate = trim(userdate ($thisdate, '%Y-%m-%d', '1', false));
-                } else {
-                    $thisdate = trim(userdate ($thisdate, $dateformat, '1', false));
-                }
-            }
-            return $thisdate;
-        }
-    } else {
-        return ('wrongdateformat');
-    }
-}
 
 function questionnaire_choice_values($content) {
 
@@ -269,7 +159,7 @@ function questionnaire_get_js_module() {
 /**
  * Get all the questionnaire responses for a user
  */
-function questionnaire_get_user_responses($surveyid, $userid, $complete=true) {
+function questionnaire_get_user_responses($questionnaireid, $userid, $complete=true) {
     global $DB;
     $andcomplete = '';
     if ($complete) {
@@ -277,10 +167,10 @@ function questionnaire_get_user_responses($surveyid, $userid, $complete=true) {
     }
     return $DB->get_records_sql ("SELECT *
         FROM {questionnaire_response}
-        WHERE survey_id = ?
+        WHERE questionnaireid = ?
         AND userid = ?
         ".$andcomplete."
-        ORDER BY submitted ASC ", array($surveyid, $userid));
+        ORDER BY submitted ASC ", array($questionnaireid, $userid));
 }
 
 /**
@@ -356,50 +246,39 @@ function questionnaire_cleanup() {
     return true;
 }
 
-function questionnaire_record_submission(&$questionnaire, $userid, $rid=0) {
-    global $DB;
-
-    $attempt['qid'] = $questionnaire->id;
-    $attempt['userid'] = $userid;
-    $attempt['rid'] = $rid;
-    $attempt['timemodified'] = time();
-    return $DB->insert_record("questionnaire_attempts", (object)$attempt, false);
-}
-
 function questionnaire_delete_survey($sid, $questionnaireid) {
     global $DB;
     $status = true;
     // Delete all survey attempts and responses.
-    if ($responses = $DB->get_records('questionnaire_response', array('survey_id' => $sid), 'id')) {
+    if ($responses = $DB->get_records('questionnaire_response', ['questionnaireid' => $questionnaireid], 'id')) {
         foreach ($responses as $response) {
             $status = $status && questionnaire_delete_response($response);
         }
     }
 
     // There really shouldn't be any more, but just to make sure...
-    $DB->delete_records('questionnaire_response', array('survey_id' => $sid));
-    $DB->delete_records('questionnaire_attempts', array('qid' => $questionnaireid));
+    $DB->delete_records('questionnaire_response', ['questionnaireid' => $questionnaireid]);
 
     // Delete all question data for the survey.
-    if ($questions = $DB->get_records('questionnaire_question', array('survey_id' => $sid), 'id')) {
+    if ($questions = $DB->get_records('questionnaire_question', ['surveyid' => $sid], 'id')) {
         foreach ($questions as $question) {
-            $DB->delete_records('questionnaire_quest_choice', array('question_id' => $question->id));
+            $DB->delete_records('questionnaire_quest_choice', ['question_id' => $question->id]);
             questionnaire_delete_dependencies($question->id);
         }
-        $status = $status && $DB->delete_records('questionnaire_question', array('survey_id' => $sid));
+        $status = $status && $DB->delete_records('questionnaire_question', ['surveyid' => $sid]);
         // Just to make sure.
         $status = $status && $DB->delete_records('questionnaire_dependency', ['surveyid' => $sid]);
     }
 
     // Delete all feedback sections and feedback messages for the survey.
-    if ($fbsections = $DB->get_records('questionnaire_fb_sections', array('survey_id' => $sid), 'id')) {
+    if ($fbsections = $DB->get_records('questionnaire_fb_sections', ['surveyid' => $sid], 'id')) {
         foreach ($fbsections as $fbsection) {
-            $DB->delete_records('questionnaire_feedback', array('section_id' => $fbsection->id));
+            $DB->delete_records('questionnaire_feedback', ['sectionid' => $fbsection->id]);
         }
-        $status = $status && $DB->delete_records('questionnaire_fb_sections', array('survey_id' => $sid));
+        $status = $status && $DB->delete_records('questionnaire_fb_sections', ['surveyid' => $sid]);
     }
 
-    $status = $status && $DB->delete_records('questionnaire_survey', array('id' => $sid));
+    $status = $status && $DB->delete_records('questionnaire_survey', ['id' => $sid]);
 
     return $status;
 }
@@ -424,7 +303,6 @@ function questionnaire_delete_response($response, $questionnaire='') {
     $DB->delete_records('questionnaire_response_text', array('response_id' => $rid));
 
     $status = $status && $DB->delete_records('questionnaire_response', array('id' => $rid));
-    $status = $status && $DB->delete_records('questionnaire_attempts', array('rid' => $rid));
 
     if ($status && $cm) {
         // Update completion state if necessary.
@@ -666,9 +544,9 @@ function questionnaire_get_incomplete_users($cm, $sid,
     $allusers = array_keys($allusers);
 
     // Nnow get all completed questionnaires.
-    $params = array('survey_id' => $sid, 'complete' => 'y');
+    $params = array('questionnaireid' => $cm->instance, 'complete' => 'y');
     $sql = "SELECT userid FROM {questionnaire_response} " .
-           "WHERE survey_id = :survey_id AND complete = :complete " .
+           "WHERE questionnaireid = :questionnaireid AND complete = :complete " .
            "GROUP BY userid ";
 
     if (!$completedusers = $DB->get_records_sql($sql, $params)) {
@@ -814,7 +692,7 @@ function questionnaire_check_page_breaks($questionnaire) {
     $newpbids = array();
     $delpb = 0;
     $sid = $questionnaire->survey->id;
-    $questions = $DB->get_records('questionnaire_question', array('survey_id' => $sid, 'deleted' => 'n'), 'id');
+    $questions = $DB->get_records('questionnaire_question', ['surveyid' => $sid, 'deleted' => 'n'], 'id');
     $positions = array();
     foreach ($questions as $key => $qu) {
         $positions[$qu->position]['question_id'] = $key;
@@ -822,7 +700,7 @@ function questionnaire_check_page_breaks($questionnaire) {
         $positions[$qu->position]['qname'] = $qu->name;
         $positions[$qu->position]['qpos'] = $qu->position;
 
-        $dependencies = $DB->get_records('questionnaire_dependency', array('questionid' => $key , 'surveyid' => $sid),
+        $dependencies = $DB->get_records('questionnaire_dependency', ['questionid' => $key , 'surveyid' => $sid],
                 'id ASC', 'id, dependquestionid, dependchoiceid, dependlogic');
         $positions[$qu->position]['dependencies'] = $dependencies;
     }
@@ -846,13 +724,13 @@ function questionnaire_check_page_breaks($questionnaire) {
                 $delpb ++;
                 $msg .= get_string("checkbreaksremoved", "questionnaire", $delpb).'<br />';
                 // Need to reload questions.
-                $questions = $DB->get_records('questionnaire_question', array('survey_id' => $sid, 'deleted' => 'n'), 'id');
-                $DB->set_field('questionnaire_question', 'deleted', 'y', array('id' => $qid, 'survey_id' => $sid));
-                $select = 'survey_id = '.$sid.' AND deleted = \'n\' AND position > '.
+                $questions = $DB->get_records('questionnaire_question', ['surveyid' => $sid, 'deleted' => 'n'], 'id');
+                $DB->set_field('questionnaire_question', 'deleted', 'y', ['id' => $qid, 'surveyid' => $sid]);
+                $select = 'surveyid = '.$sid.' AND deleted = \'n\' AND position > '.
                                 $questions[$qid]->position;
                 if ($records = $DB->get_records_select('questionnaire_question', $select, null, 'position ASC')) {
                     foreach ($records as $record) {
-                        $DB->set_field('questionnaire_question', 'position', $record->position - 1, array('id' => $record->id));
+                        $DB->set_field('questionnaire_question', 'position', $record->position - 1, ['id' => $record->id]);
                     }
                 }
             }
@@ -883,14 +761,14 @@ function questionnaire_check_page_breaks($questionnaire) {
                 if (($prevtypeid != QUESPAGEBREAK && $diffdependencies != 0)
                         || (!isset($qu['dependencies']) && isset($prevdependencies))) {
                     $sql = 'SELECT MAX(position) as maxpos FROM {questionnaire_question} ' .
-                        'WHERE survey_id = ' . $questionnaire->survey->id . ' AND deleted = \'n\'';
+                        'WHERE surveyid = ' . $questionnaire->survey->id . ' AND deleted = \'n\'';
                     if ($record = $DB->get_record_sql($sql)) {
                         $pos = $record->maxpos + 1;
                     } else {
                         $pos = 1;
                     }
                     $question = new stdClass();
-                    $question->survey_id = $questionnaire->survey->id;
+                    $question->surveyid = $questionnaire->survey->id;
                     $question->type_id = QUESPAGEBREAK;
                     $question->position = $pos;
                     $question->content = 'break';

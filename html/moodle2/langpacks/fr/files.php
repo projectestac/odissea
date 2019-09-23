@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'files', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   files
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:metadata:core_userkey'] = 'Un jeton privé est généré et enregistré. Ce jeton peut être utilisé pour accéder aux fichiers de Moodle sans nécessiter de connexion via mot de passe.';
 $string['privacy:metadata:files'] = 'Un enregistrement des fichiers déposés ou partagés par des utilisateurs';
 $string['privacy:metadata:files:author'] = 'L\'auteur du contenu du fichier';
 $string['privacy:metadata:files:contenthash'] = 'Un hachage du contenu du fichier';

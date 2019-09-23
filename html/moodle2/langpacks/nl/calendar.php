@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendar', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,8 +119,10 @@ $string['eventsimported'] = 'Geïmporteerde gebeurtenissen: {$a}';
 $string['eventskey'] = 'Sleutel';
 $string['eventsource'] = 'Bron van gebeurtenis';
 $string['eventspersonal'] = 'Mijn persoonlijke gebeurtenissen';
+$string['eventsrelatedtocategories'] = 'Evenementen met betrekking tot categorieën';
 $string['eventsrelatedtocourses'] = 'Activiteiten uit cursussen';
 $string['eventsrelatedtogroups'] = 'Groepsgerelateerde gebeurtenissen';
+$string['eventsskipped'] = 'Evenementen overgeslagen: {$a}';
 $string['eventstarttime'] = 'Startuur';
 $string['eventstoexport'] = 'Te exporteren gebeurtenissen';
 $string['eventsubscriptioncreated'] = 'Ingeschreven op kalender';
@@ -144,7 +146,6 @@ $string['export'] = 'Exporteer';
 $string['exportbutton'] = 'Exporteer';
 $string['exportcalendar'] = 'Exporteer kalender';
 $string['exporthelp'] = 'Hoe kan ik inschrijven op deze kalender vanuit een kalenderapplicatie (Google/Outlook/Andere)?';
-$string['for'] = 'voor';
 $string['forcecalendartype'] = 'Verplicht kalender';
 $string['fri'] = 'Vr';
 $string['friday'] = 'Vrijdag';

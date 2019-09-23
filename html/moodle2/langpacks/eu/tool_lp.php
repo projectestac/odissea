@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_lp', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -222,7 +222,7 @@ $string['taxonomy_add_indicator'] = 'Gehitu adierazlea';
 $string['taxonomy_add_level'] = 'Gehitu maila';
 $string['taxonomy_add_outcome'] = 'Gehitu ikaste-emaitza';
 $string['taxonomy_add_practice'] = 'Gehitu praktika';
-$string['taxonomy_add_proficiency'] = 'Gehitu trebetasuna';
+$string['taxonomy_add_proficiency'] = 'Gehitu trebezia';
 $string['taxonomy_add_skill'] = 'Gehitu trebetasuna';
 $string['taxonomy_add_value'] = 'Gehitu balioa';
 $string['taxonomy_edit_behaviour'] = 'Editatu jokaera';
@@ -233,7 +233,7 @@ $string['taxonomy_edit_indicator'] = 'Editatu adierazlea';
 $string['taxonomy_edit_level'] = 'Editatu maila';
 $string['taxonomy_edit_outcome'] = 'Editatu ikaste-emaitza';
 $string['taxonomy_edit_practice'] = 'Editatu praktika';
-$string['taxonomy_edit_proficiency'] = 'Editatu trebetasuna';
+$string['taxonomy_edit_proficiency'] = 'Editatu trebezia';
 $string['taxonomy_edit_skill'] = 'Editatu trebetasuna';
 $string['taxonomy_edit_value'] = 'Editatu balioa';
 $string['taxonomy_parent_behaviour'] = 'Goragoko jokaera';
@@ -244,7 +244,7 @@ $string['taxonomy_parent_indicator'] = 'Goragoko adierazlea';
 $string['taxonomy_parent_level'] = 'Goragoko maila';
 $string['taxonomy_parent_outcome'] = 'Goragoko ikaste-emaitza';
 $string['taxonomy_parent_practice'] = 'Goragoko praktika';
-$string['taxonomy_parent_proficiency'] = 'Goragoko trebetasuna';
+$string['taxonomy_parent_proficiency'] = 'Goragoko trebezia';
 $string['taxonomy_parent_skill'] = 'Goragoko trebetasuna';
 $string['taxonomy_parent_value'] = 'Goragoko balioa';
 $string['taxonomy_selected_behaviour'] = 'Aukeratutako jokaera';
@@ -255,7 +255,7 @@ $string['taxonomy_selected_indicator'] = 'Aukeratutako adierazlea';
 $string['taxonomy_selected_level'] = 'Aukeratutako maila';
 $string['taxonomy_selected_outcome'] = 'Aukeratutako ikaste-emaitza';
 $string['taxonomy_selected_practice'] = 'Aukeratutako praktika';
-$string['taxonomy_selected_proficiency'] = 'Aukeratuko trebetasuna';
+$string['taxonomy_selected_proficiency'] = 'Aukeratuko trebezia';
 $string['taxonomy_selected_skill'] = 'Aukeratutako trebetasuna';
 $string['taxonomy_selected_value'] = 'Aukeratutako balioa';
 $string['template'] = 'Ikasketa-planerako txantiloia';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopallocation_random', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = '自己評価を追加する';
 $string['allocationaddeddetail'] = '新しく実施される評価: <strong>{$a->reviewername}</strong> は <strong>{$a->authorname}</strong> の評価者です。';
-$string['allocationdeallocategraded'] = 'すでに評価された提出を割り当てることはできません: 評価者 <strong>{$a->reviewername}</strong> / 提出作者: <strong>{$a->authorname}</strong>';
+$string['allocationdeallocategraded'] = 'すでに評価された提出を割り当てることはできません: 評価者 <strong>{$a->reviewername}</strong> / 提出作者 <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = '評価の再利用: <strong>{$a->reviewername}</strong> は<strong>{$a->authorname}</strong> の評価者として保持されます。';
 $string['allocationsettings'] = '割り当て設定';
 $string['assessmentdeleteddetail'] = '提出が再割り当てされました: <strong>{$a->reviewername}</strong> は <strong>{$a->authorname}</strong> の評価者ではなくなりました。';

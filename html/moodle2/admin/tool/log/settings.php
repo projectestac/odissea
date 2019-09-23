@@ -25,6 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 if ($hassiteconfig) {
+
     $privacysettings = $ADMIN->locate('privacysettings');
     //XTEC ************ AFEGIT - To let access only to xtecadmin user - 2015.05.19 @pferre22 18.06.31 @svallde2
     if (!get_protected_agora()) {

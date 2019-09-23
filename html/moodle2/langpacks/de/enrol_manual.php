@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_manual', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,11 +77,13 @@ $string['privacy:metadata'] = 'Das Manuelle-Einschreibungplugin speichert keine 
 $string['selectcohorts'] = 'Globale Gruppen auswählen';
 $string['selection'] = 'Auswahl';
 $string['selectusers'] = 'Nutzer/innen auswählen';
+$string['sendexpirynotificationstask'] = 'Systemnachricht bei Ablauf der manuellen Einschreibung';
 $string['status'] = 'Manuelle Einschreibung';
 $string['status_desc'] = 'Kurszugriff für intern eingeschriebene Nutzer/innen erlauben. Dieses Plugin sollte in den meisten Fällen aktiviert bleiben.';
 $string['statusdisabled'] = 'Deaktiviert';
 $string['statusenabled'] = 'Aktiviert';
 $string['status_help'] = 'Diese Option legt fest, ob Nutzer/innen manuell eingeschrieben werden können. In der Regel führen Trainer/innen (oder jemand mit passenden Rechten) die manuelle Einschreibung in einen Kurs durch.';
+$string['syncenrolmentstask'] = 'Manuelle Einschreibung synchronisieren';
 $string['unenrol'] = 'Nutzer/in abmelden';
 $string['unenrolselectedusers'] = 'Ausgewählte Nutzer/innen abmelden';
 $string['unenrolselfconfirm'] = 'Möchten Sie sich wirklich selbst aus dem Kurs \'{$a}\' abmelden?';

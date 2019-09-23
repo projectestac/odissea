@@ -93,3 +93,5 @@ $string['quizzeswirisurl_help'] = 'URL where to load the Wiris CAS applet.';
 $string['privacy:metadata:qtype_wq'] = 'Information about user\'s correct answer for a given Wiris Quizzes question type';
 $string['privacy:metadata:qtype_wq:question'] = 'Wiris Quizzes question type id';
 $string['privacy:metadata:qtype_wq:xml'] = 'Wiris Quizzes Question XML';
+
+$string['auxiliar_text'] = 'Write an optional reasoning for your answer:';

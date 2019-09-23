@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['cliinstallfinished'] = 'A instalação foi concluída com sucesso.';
 $string['cliinstallheader'] = 'Programa para instalação do Moodle <b>{$a}</b> através da linha de comandos';
 $string['climustagreelicense'] = 'No modo não interativo terá que aceitar a licença proposta indicando a opção <b>--agree-license</b>';
 $string['cliskipdatabase'] = 'A ignorar a instalação da base de dados.';
-$string['clitablesexist'] = 'A instalação através da linha de comandos não pode continuar porque a base de dados já contém as tabelas a criar.';
+$string['clitablesexist'] = 'A instalação através da linha de comandos (CLI) não pode continuar porque a base de dados já contém as tabelas a criar.';
 $string['compatibilitysettings'] = 'A verificar a configuração do PHP...';
 $string['compatibilitysettingshead'] = 'A verificar a configuração do PHP...';
 $string['compatibilitysettingssub'] = 'O servidor deve passar todos os testes com sucesso para que o Moodle possa funcionar corretamente';
@@ -74,7 +74,13 @@ $string['dbpass'] = 'Senha';
 $string['dbport'] = 'Porta';
 $string['dbprefix'] = 'Prefixo das tabelas';
 $string['dbtype'] = 'Tipo';
-$string['directorysettings'] = '<p>Confirme as localizações para esta instalação do Moodle.</p><p><b>Endereço Web:</b>Indique o endereço web completo de acesso ao Moodle. Caso o site possa ser acedido através de vários URLs, selecione o mais frequentemente utilizado pelos alunos. Não inclua a barra "/" no fim do URL.</p><p><b>pasta do Moodle:</b>Indique o caminho completo para a pasta desta instalação. Assegure-se de que as maiúsculas e minúsculas estão corretas.</p><p><b>pasta de dados:</b>Local onde são guardados os ficheiros enviados para o Moodle. O utilizador do Moodle no servidor web (normalmente <b>nobody</b> ou <b>apache</b>) deve ter permissão de <b>leitura</b> e <b>escrita</b> nessa pasta, mas esta não deve estar diretamente acessível através da Internet.</p>';
+$string['directorysettings'] = '<p>Confirme as localizações para esta instalação do Moodle.</p>
+<p><b>Endereço Web:</b>
+Indique o endereço web completo de acesso ao Moodle. Caso o site possa ser acedido através de vários URLs, selecione o mais frequentemente utilizado pelos alunos. Não inclua a barra "/" no fim do URL.</p>
+<p><b>Pasta do Moodle:</b>
+Indique o caminho completo para a pasta desta instalação. Assegure-se de que as maiúsculas e minúsculas estão corretas.</p>
+<p><b>Pasta de dados:</b>
+Pasta onde são guardados os ficheiros enviados para o Moodle. O utilizador do Moodle no servidor web (normalmente <b>nobody</b> ou <b>apache</b>) deve ter permissão de <b>leitura</b> e <b>escrita</b> nessa pasta, mas esta não deve estar diretamente acessível através da Internet. Se não existir, será tentada a criação da pasta.</p>';
 $string['directorysettingshead'] = 'Confirme as localizações para esta instalação do Moodle';
 $string['directorysettingssub'] = '<p>Confirme as localizações para esta instalação do Moodle.</p><p><b>Endereço Web:</b>Indique o endereço web completo de acesso ao Moodle. Caso o site possa ser acedido através de vários URLs, selecione o mais frequentemente utilizado pelos alunos. Não inclua a barra "/" no fim do URL.</p><p><b>pasta do Moodle:</b>Indique o caminho completo para a pasta desta instalação. Assegure-se de que as maiúsculas e minúsculas estão corretas.</p><p><b>pasta de dados:</b>Local onde são guardados os ficheiros enviados para o Moodle. O utilizador do Moodle no servidor web (normalmente <b>nobody</b> ou <b>apache</b>) deve ter permissão de <b>leitura</b> e <b>escrita</b> nessa pasta, mas esta não deve estar diretamente acessível através da Internet.</p>';
 $string['dirroot'] = 'Pasta do Moodle';
@@ -101,8 +107,7 @@ $string['langdownloaderror'] = 'Não foi possível descarregar o idioma <b>{$a}<
 $string['langdownloadok'] = 'O idioma <b>{$a}</b> foi instalado com sucesso. O processo de instalação continuará neste idioma.';
 $string['memorylimit'] = 'Limite de memória';
 $string['memorylimiterror'] = 'O limite de memória definido na configuração do PHP é muito baixo... poderá originar problemas mais tarde.';
-$string['memorylimithelp'] = '<p>O limite de memória para o PHP definido atualmente no servidor é <b>{$a}</b>.</p><p>Um número elevado de módulos em utilização ou de utilizadores registados pode fazer com que o Moodle apresente problemas de falta de memória.</p><p>É recomendado que o PHP seja configurado com um limite de memória de pelo menos 40MB. Esta configuração pode ser definida de diversas formas:</p><ol><li>Compilação do PHP com o parâmetro <b>--enable-memory-limit</b>. Esta definição permitirá ao próprio Moodle definir o valor a utilizar.</li><li>Alteração do parâmetro <b>memory_limit</b> no ficheiro de configuração do PHP para um valor igual ou superior a 40MB.</li><li>Criação de um ficheiro <b>.htaccess</b> na raiz da pasta do Moodle com a linha <b>php_value memory_limit 40M</b><p>ATENÇÃO: Em alguns servidores esta configuração impedirá o funcionamento de <b>todas</b> as páginas PHP. Nestes casos, não poderá ser utilizado o ficheiro <b>.htaccess</b>.</p></li></ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'O PHP não foi corretamente configurado com a extensão MSSQL (de forma a permitir a comunicação com o servidor SQL*Server). Verifique o ficheiro de configuração ou recompile o PHP.';
+$string['memorylimithelp'] = '<p>O limite de memória para o PHP definido atualmente no servidor é <b>{$a}</b>.</p><p>Um número elevado de módulos em utilização ou de utilizadores registados pode fazer com que o Moodle apresente problemas de falta de memória.</p><p>É recomendado que o PHP seja configurado com um limite de memória de pelo menos 40MB. Esta configuração pode ser definida de diversas formas:</p><ol><li>Compilação do PHP com o parâmetro <b>--enable-memory-limit</b>. Esta definição permitirá ao próprio Moodle definir o valor a utilizar.</li><li>Alteração do parâmetro <b>memory_limit</b> no ficheiro de configuração do PHP para um valor igual ou superior a 40MB.</li><li>Criação de um ficheiro <b>.htaccess</b> na raiz da pasta do Moodle com a linha <b>php_value memory_limit 40M</b><p><strong>Atenção</strong>: Em alguns servidores esta configuração impedirá o funcionamento de <b>todas</b> as páginas PHP. Nestes casos, não poderá ser utilizado o ficheiro <b>.htaccess</b>.</p></li></ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'O PHP não foi corretamente configurado com a extensão MySQLi para que possa comunicar com MySQL. Verifique o ficheiro php.ini ou recompile o PHP.';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>A base de dados é onde a maioria das configurações e dados do Moodle são armazenados e deverá ser configurada aqui.</p>
@@ -110,8 +115,6 @@ $string['nativemariadbhelp'] = '<p>A base de dados é onde a maioria das configu
 <p>O nome da base de dados apenas pode conter caracteres alfanuméricos, o símbolo do dólar ($) e underscore (_).</p>
 <p>Se a base de dados não existir atualmente, e se o utilizador que especificar tiver permissões para tal, o Moodle tentará criar uma nova base de dados com as permissões e configurações corretas.</p>
 <p>Esta driver não é compatível com o legacy MyISAM engine.</p>';
-$string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
-$string['nativemssqlhelp'] = 'Deverá agora configurar a base de dados onde será guardada a maior parte da informação do Moodle. Esta base de dados deverá ter sido criada previamente, assim como uma conta de acesso à mesma. A definição de um prefixo para os nomes das tabelas é obrigatório.';
 $string['nativemysqli'] = '	
 Improved MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p> A base de dados é onde a maioria das configurações e dados do Moodle são armazenados e devem ser configurados aqui.</p>
@@ -140,7 +143,7 @@ $string['pathssubdataroot'] = '<p>Uma diretoria em que o Moodle irá armazenar t
 <p>Não deve ser diretamente acessível através da web.</p>
 <p> Se a diretoria não existir atualmente, o processo de instalação tentará criá-la.</p>';
 $string['pathssubdirroot'] = 'Caminho completo para a diretoria que contém o código Moodle.';
-$string['pathssubwwwroot'] = 'Endereço web completo de acesso ao Moodle. Não é possível aceder ao Moodle usando mais do que um endereço. Se o site tiver mais do que um endereço público, devem ser configurados redirecionamentos permanentes em todos eles, à exceção deste. Se o site pode ser acedido a partir da Internet e de Intranet, então use o endereço público aqui. Se o endereço atual não está correto, altere o endereço indicado na barra de endereço do seu navegador e reinicie a instalação.';
+$string['pathssubwwwroot'] = 'Endereço web completo de acesso ao Moodle. Não é possível aceder ao Moodle usando mais do que um endereço. Se o site tiver mais do que um endereço público, devem ser configurados redirecionamentos permanentes em todos eles, à exceção deste. Se o site pode ser acedido a partir da Internet e de Intranet, use o endereço público aqui. Se o endereço atual não está correto, altere o endereço indicado na barra de endereço do seu navegador e reinicie a instalação.';
 $string['pathsunsecuredataroot'] = 'A localização da pasta de dados não é segura';
 $string['pathswrongadmindir'] = 'A pasta <b>admin</b> não existe';
 $string['pgsqlextensionisnotpresentinphp'] = 'O PHP não foi corretamente configurado com a extensão PGSQL (de forma a permitir a comunicação com servidor PostgreSQL). Verifique o ficheiro de configuração ou recompile o PHP.';
@@ -161,8 +164,8 @@ $string['upgradingqtypeplugin'] = 'A atualizar o módulo <b>question/type</b>';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'A apresentação desta página confirma a correta instalação e ativação do pacote <strong>{$a->packname} {$a->packversion}</strong> no servidor.';
 $string['welcomep30'] = 'Esta versão do pacote <strong>{$a->installername}</strong> inclui as aplicações necessárias para o correto funcionamento do  <strong>Moodle</strong>, nomeadamente:';
-$string['welcomep40'] = 'Este pacote inclui <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.';
-$string['welcomep50'] = 'A utilização de todas as aplicações incluídas neste pacote é limitada pelas respetivas licenças. O pacote completo <strong>{$a->installername}</strong> é <ahref="http://www.opensource.org/docs/definition_plain.html">código aberto</a> e distribuído nos termos da licença <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
+$string['welcomep40'] = 'Este pacote inclui o lançamento <strong>{$a->moodlerelease} do Moodle ({$a->moodleversion})</strong>.';
+$string['welcomep50'] = 'A utilização de todas as aplicações incluídas neste pacote é limitada pelas respetivas licenças. O pacote completo <strong>{$a->installername}</strong> é <ahref="http://www.opensource.org/docs/definition_plain.html">código aberto</a> e é distribuído nos termos da licença <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
 $string['welcomep60'] = 'As páginas seguintes irão levá-lo através de alguns passos simples para
      configurar e definir o <strong>Moodle</strong> no seu computador. Você pode aceitar as configurações predefinidas ou, opcionalmente, alterá-las para atender às suas próprias necessidades.';
 $string['welcomep70'] = 'Clique no botão "Seguinte" para continuar a configuração do <strong>Moodle</strong>.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_outline', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['nocapability'] = 'Não é possível aceder ao relatório do utilizador'
 $string['nologreaderenabled'] = 'Nenhum leitor de registos ativado';
 $string['numviews'] = '{$a->numviews} visualizações por {$a->distinctusers} utilizadores';
 $string['outline:view'] = 'Ver relatório de atividades';
+$string['outline:viewuserreport'] = 'Visualizar relatório de atividade do utilizador';
 $string['page-report-outline-index'] = 'Relatório geral da disciplina';
 $string['page-report-outline-user'] = 'Relatório geral da disciplina do utilizador';
 $string['page-report-outline-x'] = 'Qualquer relatório geral';

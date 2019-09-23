@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_paypal', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['businessemail'] = 'Correo de empresa PayPal';
 $string['businessemail_desc'] = 'O enderezo de correo da súa conta de empresa PayPal';
 $string['cost'] = 'Custo de matrícula';
 $string['costerror'] = 'O custo da matriculación non é numérico';
-$string['costorkey'] = 'Escolla un dos seguintes métodos de inscrición.';
+$string['costorkey'] = 'Escolla un dos seguintes métodos de matriculación.';
 $string['currency'] = 'Moeda';
 $string['defaultrole'] = 'Asignación de rol predeterminado';
 $string['defaultrole_desc'] = 'Seleccionar o rol que se lle debería asignar aos usuarios durante as matriculacións PayPal';
@@ -87,8 +87,9 @@ $string['privacy:metadata:enrol_paypal:paypal_com:email'] = 'Enderezo de correo 
 $string['privacy:metadata:enrol_paypal:paypal_com:first_name'] = 'Nome do usuario que está a mercar o curso.';
 $string['privacy:metadata:enrol_paypal:paypal_com:last_name'] = 'Apelido(s) do usuario que está a mercar o curso.';
 $string['privacy:metadata:enrol_paypal:paypal_com:os0'] = 'Nome completo do comprador.';
+$string['processexpirationstask'] = 'Tarefas de enviar notificacións de expiración da matriculación con PayPal';
 $string['sendpaymentbutton'] = 'Enviar pagamento a través de PayPal';
-$string['status'] = 'Permitir matriculacións vía PayPal';
+$string['status'] = 'Permitir matriculacións con PayPal';
 $string['status_desc'] = 'Permitirlle aos usuarios usar PayPal para matricularse no curso de modo predeterminado.';
 $string['transactions'] = 'Transaccións de PayPal';
 $string['unenrolselfconfirm'] = 'Confirma que quere desmatricularse por si mesmo do curso «{$a}»';

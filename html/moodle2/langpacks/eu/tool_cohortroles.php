@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_cohortroles', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_cohortroles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,13 +39,13 @@ $string['nocohortroleassignmentssaved'] = 'Ez da kohorteko rol-esleipenik gorde.
 $string['onecohortroleassignmentsaved'] = 'kohorteko rol-esleipen bat gorde da.';
 $string['pluginname'] = 'Kohorteen rolen kudeaketa';
 $string['privacy:metadata:tool_cohortroles'] = 'Kohorteen rolen kudeaketa pluginak erabiltzaileen kohorte-rolen loturak gordetzen ditu.';
-$string['privacy:metadata:tool_cohortroles:cohortid'] = 'Kohortearen IDa.';
-$string['privacy:metadata:tool_cohortroles:id'] = 'Lotutako kohorte-rolaren IDa.';
-$string['privacy:metadata:tool_cohortroles:roleid'] = 'Rolaren IDa.';
-$string['privacy:metadata:tool_cohortroles:timecreated'] = 'Kohorte-rolaren lotura sortu zeneko unea.';
-$string['privacy:metadata:tool_cohortroles:timemodified'] = 'Kohorte-rolaren lotura aldatu zeneko unea.';
-$string['privacy:metadata:tool_cohortroles:userid'] = 'Erabiltzailearen IDa.';
-$string['privacy:metadata:tool_cohortroles:usermodified'] = 'Kohorte-rolaren lotura azkenengoz aldatu zuen erabiltzailearen IDa.';
+$string['privacy:metadata:tool_cohortroles:cohortid'] = 'Kohortearen IDa';
+$string['privacy:metadata:tool_cohortroles:id'] = 'Lotutako kohorte-rolaren IDa';
+$string['privacy:metadata:tool_cohortroles:roleid'] = 'Rolaren IDa';
+$string['privacy:metadata:tool_cohortroles:timecreated'] = 'Kohorte-rolaren lotura sortu zeneko unea';
+$string['privacy:metadata:tool_cohortroles:timemodified'] = 'Kohorte-rolaren lotura aldatu zeneko unea';
+$string['privacy:metadata:tool_cohortroles:userid'] = 'Erabiltzailearen IDa';
+$string['privacy:metadata:tool_cohortroles:usermodified'] = 'Kohorte-rolaren lotura azkenengoz aldatu zuen erabiltzailearen IDa';
 $string['removecohortroleassignment'] = 'Ezabatu kohorteko rol-esleipena';
 $string['removecohortroleassignmentconfirm'] = 'Ziur zaude kohorteko rol-esleipen hau ezabatu nahi duzula? Erabiltzaile honi rol hau kenduko zaio beste erabiltzaile-testuinguru guztietan.';
 $string['selectcohorts'] = 'Aukeratu kohorteak';

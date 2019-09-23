@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_ldap', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,15 +50,15 @@ $string['auth_ldap_expiration_warning_key'] = 'Avertissement d\'échéance';
 $string['auth_ldap_expireattr_desc'] = 'Facultatif : court-circuite l\'attribut LDAP contenant la durée d\'échéance du mot de passe.';
 $string['auth_ldap_expireattr_key'] = 'Attribut d\'échéance';
 $string['auth_ldapextrafields'] = '<p>Ces zones sont facultatives. Il vous est possible de remplir certains champs de Moodle avec des données provenant des <strong>attributs de l\'annuaire LDAP</strong>.</p><p>Si vous laissez ces zones vides, aucune donnée ne sera récupérée de l\'annuaire LDAP et les valeurs par défaut de Moodle seront utilisées.</p><p>Dans tous les cas, l\'utilisateur a la possibilité de modifier tous ces champs, une fois connecté.</p>';
-$string['auth_ldap_graceattr_desc'] = 'Facultatif : ne pas tenir compte de l\'attribut gracelogin';
+$string['auth_ldap_graceattr_desc'] = 'Facultatif : ne pas tenir compte de l\'attribut de tolérance de connexion';
 $string['auth_ldap_gracelogin_key'] = 'Attribut tolérance de connexion';
-$string['auth_ldap_gracelogins_desc'] = 'Activer le support du gracelogin LDAP. Une fois le mot de passe échu, l\'utilisateur peut se connecter jusqu\'à ce que le paramètre gracelogin ait une valeur de 0. L\'activation de ce réglage affiche un message explicite lorsque le mot de passe est échu.';
+$string['auth_ldap_gracelogins_desc'] = 'Activer le support de tolérance de connexion de LDAP. Une fois le mot de passe échu, l\'utilisateur peut se connecter jusqu\'à ce que le paramètre de tolérance de connexion ait une valeur de 0. L\'activation de ce réglage affiche un message explicite lorsque le mot de passe est échu.';
 $string['auth_ldap_gracelogins_key'] = 'Tolérance des connexions';
 $string['auth_ldap_groupecreators'] = 'Liste des groupes ou contextes dont les membres sont autorisés à créer des groupes. Les groupes (en général, de la forme « cn=teachers,ou=staff,o=myorg ») sont séparés par des points-virgules (;)';
 $string['auth_ldap_groupecreators_key'] = 'Gestionnaires de groupes';
 $string['auth_ldap_host_url'] = 'Indiquer le serveur LDAP sous forme d\'URL comme « ldap://ldap.organisation.fr/ » ou « ldaps://ldap.organisation.fr/ ». Si vous utilisez plusieurs serveurs LDAP redondants, séparez leurs adresses avec des points-virgules (;).';
 $string['auth_ldap_host_url_key'] = 'URL du serveur';
-$string['auth_ldap_ldap_encoding'] = 'Indiquer l\'encodage utilisé par le serveur LDAP. Très probablement utf-8. Microsoft AD v2 utilise l\'encodage par défaut de la plateforme, par exemple cp1252, cp1250, etc.';
+$string['auth_ldap_ldap_encoding'] = 'L\'encodage utilisé par le serveur LDAP, très probablement utf-8. Si LDAP v2 est sélectionnée, Active Directory utilise l\'encodage qu\'il a configuré, par exemple cp1252, cp1250.';
 $string['auth_ldap_ldap_encoding_key'] = 'Encodage LDAP';
 $string['auth_ldap_login_settings'] = 'Configuration de la connexion';
 $string['auth_ldap_memberattribute'] = 'Indiquer l\'attribut d\'appartenance à un groupe. D\'habitude cet attribut est « member ».';
@@ -99,7 +99,7 @@ $string['auth_ldap_usertypeundefined2'] = 'Le type config.user_type n\'est pas d
 $string['auth_ldap_version'] = 'La version du protocole LDAP que votre serveur utilise.';
 $string['auth_ldap_version_key'] = 'Version';
 $string['auth_ntlmsso'] = 'SSO NTLM';
-$string['auth_ntlmsso_enabled'] = 'Sélectionner Oui pour authentifier les utilisateurs via un domaine NTLM. <strong>Remarque :</strong> pour fonctionner, cette méthode d\'authentification requiert d\'autres réglages sur votre serveur. Voir <a href="http://docs.moodle.org/fr/Authentification_NTLM">http://docs.moodle.org/fr/Authentification_NTLM</a>';
+$string['auth_ntlmsso_enabled'] = 'Sélectionner Oui pour authentifier les utilisateurs via un domaine NTLM. Remarque : pour fonctionner, cette méthode d\'authentification requiert d\'autres réglages sur votre serveur. Voir <a href="https://docs.moodle.org/fr/Authentification_NTLM">https://docs.moodle.org/fr/Authentification_NTLM</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Activer';
 $string['auth_ntlmsso_ie_fastpath'] = 'Activer le chemin rapide NTLM SSO (saute certaines étapes si le navigateur client est Internet Explorer).';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Tenter NTLM avec tous les navigateurs';
@@ -108,13 +108,13 @@ $string['auth_ntlmsso_ie_fastpath_yesattempt'] = 'Oui, tenter NTLM avec d\'autre
 $string['auth_ntlmsso_ie_fastpath_yesform'] = 'Oui, tous les autres navigateurs utilisent le mode de connexion standard.';
 $string['auth_ntlmsso_maybeinvalidformat'] = 'Impossible d\'extraire le nom d\'utilisateur à partir de l\'entête REMOTE_USER. Le format est-il configuré correctement ?';
 $string['auth_ntlmsso_missing_username'] = 'Vous devez au moins indiquer %username% dans le format du nom d\'utilisateur distant';
-$string['auth_ntlmsso_remoteuserformat'] = 'Si vous avez choisi « NTLM » comme « Type d\'authentification », vous pouvez spécifier ici le format du nom d\'utilisateur distant. Si vous ne renseignez pas ce champ, le format par défaut DOMAIN\\username sera utilisé. Vous pouvez utiliser le paramètre fictif optionnel <b>%domain%</b> pour indiquer où doit apparaître le nom du domaine et le paramètre fictif obligatoire  <b>%username%</b> pour indiquer où le nom d\'utilisateur doit apparaître.<br /><br />Les formats les plus utilisés sont <tt>%domain%\\%username%</tt> (défaut sous MS Windows), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> ou simplement <tt>%username%</tt> (si le domaine n\'est pas présent).';
+$string['auth_ntlmsso_remoteuserformat'] = 'Si vous avez choisi « NTLM » comme « Type d\'authentification », vous pouvez spécifier ici le format du nom d\'utilisateur distant. Si vous ne renseignez pas ce champ, le format par défaut DOMAIN\\username sera utilisé. Vous pouvez utiliser le paramètre fictif optionnel <b>%domain%</b> pour indiquer où doit apparaître le nom du domaine et le paramètre fictif obligatoire <b>%username%</b> pour indiquer où le nom d\'utilisateur doit apparaître.<br /><br />Les formats les plus utilisés sont <tt>%domain%\\%username%</tt> (défaut sous MS Windows), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> ou simplement <tt>%username%</tt> (si le domaine n\'est pas présent).';
 $string['auth_ntlmsso_remoteuserformat_key'] = 'Format du nom d\'utilisateur distant';
 $string['auth_ntlmsso_subnet'] = 'L\'activation de ce paramètre ne permettra le SSO que pour des clients de ce sous-réseau. Format : xxx.xxx.xxx.xxx/masque. Séparer plusieurs réseaux par une virgule.';
 $string['auth_ntlmsso_subnet_key'] = 'Sous-réseau';
 $string['auth_ntlmsso_type'] = 'La méthode d\'authentification configurée dans le serveur web pour authentifier les utilisateurs. En cas de doute, choisir NTLM.';
 $string['auth_ntlmsso_type_key'] = 'Type d\'authentification';
-$string['cannotmaprole'] = 'Le rôle « {$a->rolename} »  ne peut pas être mis en correspondance, car son nom abrégé « {$a->shortname} » est trop long ou comporte des traits d\'union. Pour lui permettre d\'être mis en correspondance, son nom doit être raccourci à {$a->charlimit} caractères et tous les tirets supprimés. <a href="{$a->link}">Modifier le rôle ici</a>';
+$string['cannotmaprole'] = 'Le rôle « {$a->rolename} » ne peut pas être mis en correspondance, car son nom abrégé « {$a->shortname} » est trop long ou comporte des traits d\'union. Pour lui permettre d\'être mis en correspondance, son nom doit être raccourci à {$a->charlimit} caractères et tous les tirets supprimés. <a href="{$a->link}">Modifier le rôle ici</a>';
 $string['connectingldap'] = 'Connection au serveur LDAP...';
 $string['connectingldapsuccess'] = 'La connexion au serveur LDAP a réussi';
 $string['creatingtemptable'] = 'Création de la table temporaire {$a}';
@@ -122,7 +122,7 @@ $string['didntfindexpiretime'] = 'La fonction password_expire() n\'a pas trouvé
 $string['didntgetusersfromldap'] = 'Aucun utilisateur obtenu depuis LDAP';
 $string['gotcountrecordsfromldap'] = '{$a} enregistrements obtenus de LDAP';
 $string['ldapnotconfigured'] = 'L\'hôte LDAP n\'est pas configuré';
-$string['morethanoneuser'] = 'Bizarre autant qu\'étrange ! Plus d\'un enregistrement utilisateur trouvé dans LDAP. Seul le premier sera utilisé.';
+$string['morethanoneuser'] = 'Plus d\'un enregistrement utilisateur trouvé dans LDAP. Seul le premier sera utilisé.';
 $string['needbcmath'] = 'L\'extension BCMath est nécessaire pour pouvoir vérifier l\'échéance des mots de passe avec Active Directory.';
 $string['needmbstring'] = 'L\'extension mbstring est nécessaire pour pouvoir changer les mots de passe de Active Directory';
 $string['nodnforusername'] = 'Erreur dans user_update_password(). Pas de DN pour {$a->username}';
@@ -151,7 +151,7 @@ $string['synctask'] = 'Synchronisation des utilisateurs LDAP';
 $string['systemrolemapping'] = 'Correspondance des rôles système';
 $string['updatepasserror'] = 'Erreur dans user_update_password(). Code d\'erreur : {$a->errno} ; Texte d\'erreur : {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Erreur dans user_update_password() lors de la lecture de la durée d\'échéance de mot de passe. Code d\'erreur : {$a->errno} ; Texte d\'erreur : {$a->errstring}';
-$string['updatepasserrorexpiregrace'] = 'Erreur dans user_update_password() lors de la modification de expirationtime et/ou gracelogins. Code d\'erreur : {$a->errno} ; Texte d\'erreur : {$a->errstring}';
+$string['updatepasserrorexpiregrace'] = 'Erreur dans user_update_password() lors de la modification de l\'échéance et/ou des tolérances de connexion. Code d\'erreur : {$a->errno} ; Texte de l\'erreur : {$a->errstring}';
 $string['updateremfail'] = 'Erreur de modification de l\'enregistrement LDAP. Code d\'erreur : {$a->errno} ; Texte d\'erreur : {$a->errstring}<br/>Clef ({$a->key}) - ancienne valeur moodle : « {$a->ouvalue} » ; nouvelle valeur : « {$a->nuvalue} »';
 $string['updateremfailamb'] = 'Échec de la mise à jour de LDAP sur le champ ambigu {$a->key} ; ancienne valeur moodle : « {$a->ouvalue} » ; nouvelle valeur : « {$a->nuvalue} »';
 $string['updateremfailfield'] = 'Échec de modification LDAP avec un champ non existant (« {$a->ldapkey} »). Clef ({$a->key}) - ancienne valeur Moodle : « {$a->ouvalue} », nouvelle valeur : « {$a->nuvalue} »';

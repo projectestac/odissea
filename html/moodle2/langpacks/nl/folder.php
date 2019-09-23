@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'folder', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,7 +59,7 @@ $string['page-mod-folder-view'] = 'Hoofdpagina mappenmodule';
 $string['page-mod-folder-x'] = 'Elke mappenmodule pagina';
 $string['pluginadministration'] = 'Mappenbeheer';
 $string['pluginname'] = 'Map';
-$string['privacy:metadata'] = 'De mod_folderplugin bewaart geen persoonlijke gegevens.';
+$string['privacy:metadata'] = 'De map resource-plugin slaat geen persoonlijke gegevens op';
 $string['search:activity'] = 'Map';
 $string['showdownloadfolder'] = 'Toon downloadknop voor map';
 $string['showdownloadfolder_help'] = 'Indien op \'ja\' gezet zal er een knop getoond worden waarmee de inhoud van een map als zip-bestand gedownload kan worden.';

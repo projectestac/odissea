@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mathslib', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mathslib', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   mathslib
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['cannotredefinebuiltinfunction'] = 'Impossible de redéfinir la fonction
 $string['divisionbyzero'] = 'Division par zéro';
 $string['expectingaclosingbracket'] = 'Parenthèse fermante attendue';
 $string['illegalcharactergeneral'] = 'Caractère illégal « {$a} »';
-$string['illegalcharacterunderscore'] = 'Caractère illégal  « _ »';
+$string['illegalcharacterunderscore'] = 'Caractère illégal « _ »';
 $string['implicitmultiplicationnotallowed'] = 'Opérateur attendu. La multiplication implicite n\'est pas autorisée.';
 $string['internalerror'] = 'Erreur interne';
 $string['operatorlacksoperand'] = 'L\'opérateur « {$a} » n\'a pas d\'opérand';

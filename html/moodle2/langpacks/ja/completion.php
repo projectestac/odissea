@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'completion', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -97,7 +97,7 @@ $string['completionnotenabledforcourse'] = 'このコースでは完了は有効
 $string['completionnotenabledforsite'] = 'このサイトでは完了は有効にされていません。';
 $string['completion-n-override'] = '未完了 ({$a} による設定)';
 $string['completionondate'] = '日付';
-$string['completionondatevalue'] = 'ユーザは次の日付まで登録を保持する必要があります';
+$string['completionondatevalue'] = 'コースが完了マークされる日付';
 $string['completion-pass'] = '完了 (合格点到達)';
 $string['completionsettingslocked'] = '完了設定ロック中';
 $string['completion-title-manual-n'] = '完了マークする: {$a}';
@@ -146,7 +146,7 @@ $string['err_noactivities'] = 'すべての活動で完了情報が有効にさ�
 $string['err_nocourses'] = '他のどのコースでもコース完了が有効にされていないため、何も表示することはできません。あなたはコース設定内でコース完了を有効にすることができます。';
 $string['err_nograde'] = 'このコースにはコース合格点が設定されていません。このクライテリアタイプを設定するにはあなたはコースに合格点を設定する必要があります。';
 $string['err_noroles'] = 'このコースにはケイパビリティ「moodle/course:markcomplete」が割り当てられたロールがありません。';
-$string['err_nousers'] = 'このコースまたはグループには完了情報を表示するユーザはいません (デフォルトでは完了情報は学生にのみ表示されます。学生が登録されていない場合、このエラーが表示されます。管理者はこのオプションを管理画面で変更することができます)。';
+$string['err_nousers'] = 'このコースまたはグループには完了情報を表示する学生はいません (完了情報はケイパビリティ「完了レポートに表示する」のあるユーザにのみ表示されます。このケイパビリティは学生のデフォルトロールにのみ許可されます。そのため、学生がいない場合、あなたにはこのメッセージが表示されます)。';
 $string['err_settingslocked'] = '1名またはそれ以上の学生がすでにクライテリアを完了しているため、設定がロックされています。完了クライテリア設定ロックを解除するには既存のユーザデータを削除する必要があります。ユーザデータ削除により混乱が生じる恐れがあります。';
 $string['err_system'] = '完了システムで内部エラーが発生しました (詳細情報を表示するため、システム管理者はデバッグ情報の表示を有効にできます)。';
 $string['eventcoursecompleted'] = 'コースが完了しました。';
@@ -207,8 +207,8 @@ $string['requiredcriteria'] = '必須クライテリア';
 $string['resetactivities'] = 'すべてのチェックした活動およびリソースをクリアする';
 $string['restoringcompletiondata'] = '完了データの書き出し';
 $string['roleaggregation'] = 'コンディション要求';
-$string['roleaggregation_all'] = 'コンディションに合致した場合、選択したロールすべてをマークできる';
-$string['roleaggregation_any'] = 'コンディションに合致した場合、選択したロールのどれかをマークできる';
+$string['roleaggregation_all'] = 'コンディションに合致した場合、選択したロールすべてがマークする';
+$string['roleaggregation_any'] = 'コンディションに合致した場合、選択したロールのどれかがマークする';
 $string['roleidnotfound'] = 'ロールID「 {$a} 」が見つかりませんでした。';
 $string['saved'] = '保存完了';
 $string['seedetails'] = '詳細を表示する';

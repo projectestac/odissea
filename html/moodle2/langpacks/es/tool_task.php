@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_task', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,19 @@ $string['runnow'] = 'Ejecutar ahora';
 $string['scheduledtasks'] = 'Tareas programadas';
 $string['taskdisabled'] = 'Tareas deshabilitadas';
 $string['taskscheduleday'] = 'Día';
+$string['taskscheduleday_help'] = 'Campo del día de la semana para la programación de tareas. El campo usa el mismo formato que el cron de Unix. Algunos ejemplos:
+
+* <strong>*</strong> Cada día
+* <strong>*/2</strong> Un día sí y otro no
+* <strong>1</strong> El primer día de cada mes
+* <strong>1,15</strong> El primer día y el día 15 de cada mes';
 $string['taskscheduledayofweek'] = 'Día de la semana';
+$string['taskscheduledayofweek_help'] = 'Campo del día de la semana para la programación de tareas. El campo usa el mismo formato que el cron de Unix. Algunos ejemplos:
+
+* <strong>*</strong> Cada día
+* <strong>0</strong> Cada domingo
+* <strong>6</strong> Cada sábado
+* <strong>1,5</strong> Cada lunes y viernes';
 $string['taskschedulehour'] = 'Hora';
 $string['taskscheduleminute'] = 'Minuto';
 $string['taskschedulemonth'] = 'Mes';

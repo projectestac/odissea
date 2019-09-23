@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filters', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['actfilterhdr'] = 'Ενεργά φίλτρα';
 $string['addfilter'] = 'Προσθήκη φίλτρου';
 $string['anycategory'] = 'οποιαδήποτε κατηγορία';
 $string['anycourse'] = 'οποιοδήποτε μάθημα';
+$string['anycourses'] = 'Εγγεγραμμένος/-η σε οποιοδήποτε μάθημα';
 $string['anyfield'] = 'οποιοδήποτε πεδίο';
 $string['anyrole'] = 'οποιοσδήποτε ρόλος';
 $string['anyvalue'] = 'οποιαδήποτε τιμή';
@@ -49,7 +50,7 @@ $string['defaultx'] = 'Προεπιλογή ({$a})';
 $string['disabled'] = 'Απενεργοποιημένο';
 $string['doesnotcontain'] = 'δεν περιέχει';
 $string['endswith'] = 'τελειώνει με';
-$string['filterallwarning'] = 'Η εφαρμογή φίλτρων σε τίτλους και σε περιεχόμενα ταυτόχρονα μπορεί να αυξήσει σημαντικά το φορτίο στον εξυπηρετητή σας. Παρακαλούμε χρησιμοποιήστε τη ρύθμιση «Εφαρμογή σε» με φειδώ. Η κύρια χρήση είναι με το φίλτρο multilang.';
+$string['filterallwarning'] = 'Η εφαρμογή φίλτρων σε τίτλους και σε περιεχόμενα ταυτόχρονα μπορεί να αυξήσει σημαντικά το φορτίο στον εξυπηρετητή σας. Παρακαλούμε χρησιμοποιήστε τη ρύθμιση «Εφαρμογή σε» με φειδώ. Η κύρια χρήση είναι με το πολυγλωσσικό φίλτρο.';
 $string['filtersettings'] = 'Ρυθμίσεις φίλτρου';
 $string['filtersettingsforin'] = 'Ρυθμίσεις φίλτρου {$a->filter} στο (πλαίσιο) {$a->context}';
 $string['filtersettings_help'] = 'Αυτή η σελίδα σας επιτρέπει να μετατρέψετε τα φίλτρα σε ενεργά ή ανενεργά σε ένα συγκεκριμένο τμήμα του ιστοτόπου. Μερικά φίλτρα μπορούν επίσης να σας επιτρέπουν να ορίσετε τοπικές ρυθμίσεις. Σε αυτήν περίπτωση αυτή θα υπάρχει ένας σύνδεσμος ρυθμίσεων δίπλα στο όνομα τους.';

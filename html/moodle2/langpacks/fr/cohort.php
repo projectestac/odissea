@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cohort', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,7 @@ $string['eventcohortmemberremoved'] = 'Utilisateur retiré d\'une cohorte';
 $string['eventcohortupdated'] = 'Cohorte modifiée';
 $string['external'] = 'Cohorte externe';
 $string['idnumber'] = 'Identifiant cohorte';
+$string['invalidtheme'] = 'Le thème de cohorte n\'existe pas';
 $string['memberscount'] = 'Effectif de la cohorte';
 $string['name'] = 'Nom';
 $string['namecolumnmissing'] = 'Il y a un problème dans le format du fichier CSV. Veuillez vérifier qu\'il comporte les noms corrects des colonnes. Pour ajouter de nouveaux utilisateurs à une cohorte, aller vers « Déposer des utilisateurs » dans l\'administration du site.';
@@ -75,7 +76,7 @@ $string['privacy:metadata:cohort_members'] = 'Informations sur la cohorte de l\'
 $string['privacy:metadata:cohort_members:cohortid'] = 'L\'identifiant de la cohorte';
 $string['privacy:metadata:cohort_members:timeadded'] = 'L\'horodatage de l\'ajout de l\'utilisateur à la cohorte';
 $string['privacy:metadata:cohort_members:userid'] = 'L\'identifiant de l\'utilisateur associé à la cohorte';
-$string['removeuserwarning'] = 'En retirant des utilisateurs de cohortes, la désinscription de ces utilisateurs de plusieurs cours pourrait survenir. Il pourrait s\'ensuivre la suppression de réglages utilisateur, de notes, d\'affiliation à des groupes et tout autre information utilisateur dans les cours affectés.';
+$string['removeuserwarning'] = 'En retirant des utilisateurs de cohortes, la désinscription de ces utilisateurs de plusieurs cours pourrait survenir. Il pourrait s\'ensuivre la suppression de réglages utilisateur, de notes, d\'affiliation à des groupes et toute autre information utilisateur dans les cours affectés.';
 $string['search'] = 'Rechercher';
 $string['searchcohort'] = 'Rechercher une cohorte';
 $string['selectfromcohort'] = 'Sélectionner des membres de la cohorte';

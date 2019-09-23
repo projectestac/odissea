@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,7 +75,7 @@ $string['badimsmanifestlocation'] = 'S\'ha trobat un fitxer imsmanifest.xml, per
 $string['badmanifest'] = 'El manifest té errors: vg. el registre d\'errors';
 $string['browse'] = 'Explora';
 $string['browsed'] = 'Explorat';
-$string['browsemode'] = 'Mode exploració';
+$string['browsemode'] = 'Mode d\'exploració';
 $string['browserepository'] = 'Explora el repositori';
 $string['calculatedweight'] = 'Pes calculat';
 $string['cannotaccess'] = 'No podeu cridar aquest script en aquest moment.';
@@ -151,9 +151,7 @@ $string['forcecompleted_help'] = 'Si s\'habilita, l\'estat de l\'intent actual e
 $string['forcejavascript'] = 'Forçar als usuaris a habilitar JavaScript';
 $string['forcejavascript_desc'] = 'Si està activat (recomanat), impedeix l\'accés als objectes SCORM quan JavaScript no és compatible amb el navegador de l\'usuari o no hi està activat. Si està desactivat, l\'usuari pot veure l\'SCORM, però la comunicació API fallarà i no es desarà la qualificació.';
 $string['forcejavascriptmessage'] = 'Es requereix JavaScript per veure aquest objecte; activeu JavaScript al vostre navegador i torneu a provar-ho.';
-$string['forcenewattempt'] = 'Forçar nou intent';
-$string['forcenewattemptdesc'] = 'Si s\'habilita, cada vegada que s\'entri a un paquet SCORM comptabilitzarà com un intent nou.';
-$string['forcenewattempt_help'] = 'Si està activat, cada vegada que s\'accedeixi a un paquet SCORM comptarà com a nou intent.';
+$string['forcenewattempts'] = 'Forçar nou intent';
 $string['found'] = 'S\'ha trobat el manifest';
 $string['frameheight'] = 'Alçada per defecte del marc o finestra';
 $string['framewidth'] = 'Amplada per defecte del marc o finestra';
@@ -309,10 +307,6 @@ $string['reviewmode'] = 'Mode de revisió';
 $string['rightanswer'] = 'Resposta correcta';
 $string['scoes'] = 'Objectes d\'aprenentatge';
 $string['score'] = 'Puntuació';
-$string['scorm12standard'] = 'Habilita el mode estàndard SCORM 1.2';
-$string['scorm12standarddesc'] = 'Si s\'inhabilita aquest paràmetre, permeteu que Moodle emmagatzemi més dades de les que permeten les especificacions SCORM 1.2.
-
-Si el vostre paquet SCORM permet que els usuaris introdueixin grans quantitats de text o si el vostre paquet intenta emmagatzemar grans quantitats de dades al camp «Dades de suspensió», inhabiliteu-lo.';
 $string['scorm:addinstance'] = 'Afegeix un paquet SCORM nou';
 $string['scormclose'] = 'Disponible fins';
 $string['scormcourse'] = 'Curs d\'aprenentatge';
@@ -334,8 +328,8 @@ $string['scormtype_help'] = 'Aquest paràmetre determina com s\'insereix el paqu
 $string['scorm:viewreport'] = 'Veure informes';
 $string['scorm:viewscores'] = 'Veure puntuacions';
 $string['scrollbars'] = 'Permet el desplaçament de la finestra';
-$string['selectall'] = 'Seleccionar tot';
-$string['selectnone'] = 'Deseleccionar tot';
+$string['selectall'] = 'Selecciona-ho tot';
+$string['selectnone'] = 'Desselecciona-ho tot';
 $string['show'] = 'Mostrar';
 $string['sided'] = 'A un costat';
 $string['skipview'] = 'L\'estudiant omet la pàgina d\'estructura';
@@ -355,7 +349,7 @@ $string['syntax'] = 'S\'ha produït un error de sintaxi';
 $string['tag_error'] = 'Etiqueta desconeguda ({$a->tag}) amb aquest contingut: {$a->value}';
 $string['time'] = 'Temps';
 $string['title'] = 'Títol';
-$string['toc'] = 'TOC (Taula de Continguts)';
+$string['toc'] = 'Taula de continguts';
 $string['toolbar'] = 'Mostra la barra d\'eines';
 $string['too_many_attributes'] = 'L\'etiqueta {$a->tag} té massa atributs';
 $string['too_many_children'] = 'L\'etiqueta {$a->tag} té massa fills';

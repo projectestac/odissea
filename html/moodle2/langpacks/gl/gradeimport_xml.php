@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradeimport_xml', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,4 +41,4 @@ $string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'Ficheiro XML';
 $string['privacy:metadata'] = 'O engadido de importar cualificacións dende XML non almacena ningún dato persoal.';
 $string['xml:publish'] = 'Publicar as cualificacións importadas desde XML';
-$string['xml:view'] = 'Importar cualificacións desde XML';
+$string['xml:view'] = 'Importar cualificacións dende XML';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_configurable_reports', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   block_configurable_reports
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,7 +67,7 @@ $string['comp_conditions_help'] = '<p>Ici, vous pouvez définir les conditions (
 
 <p>Aide supplémentaire : <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Documentation du module d\'extension</a></p>';
 $string['comp_customsql'] = 'Rapport SQL personnalisé';
-$string['comp_customsql_help'] = '<p>Ajouter une requête SQL active. N\'utilisez pas le préfixe de la base de données moodle $CFG->prefix; à la place utilisez "prefix_" sans les guillemets.</p>
+$string['comp_customsql_help'] = '<p>Ajouter une requête SQL active. N\'utilisez pas le préfixe de la base de données moodle $CFG->prefix; à la place utilisez « prefix_ » sans les guillemets.</p>
 <p>Exemple : SELECT * FROM prefix_course</p>
 
 <p>Vous trouverez beaucoup de rapports SQL sous : <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Rapports ad-hoc contribués</a></p>
@@ -358,7 +358,7 @@ $string['repository_help'] = 'Vous pouvez importer des exemples de rapports à p
 
 Merci de noter qu\'il y a une limite quotidienne des appels vers le référentiel.
 
-Si la connexion au référentiel ne fonctionne pas , vous pouvez télécharger manuellement ici <a href="https://github.com/jleyva/moodle - configurable_reports_repository" target="_blank"> https://github.com/jleyva/ moodle- configurable_reports_repository </a> un rapport, puis l\'importer en utilisant l\'option «Importer le rapport" affichée ci-dessous';
+Si la connexion au référentiel ne fonctionne pas , vous pouvez télécharger manuellement ici <a href="https://github.com/jleyva/moodle - configurable_reports_repository" target="_blank"> https://github.com/jleyva/ moodle- configurable_reports_repository </a> un rapport, puis l\'importer en utilisant l\'option « Importer le rapport » affichée ci-dessous';
 $string['role'] = 'Rôle';
 $string['roleincourse'] = 'Utilisateurs avec les rôles sélectionnés dans le rapport de cours courant';
 $string['roleusersn'] = 'Nombre d\'utilisateurs avec le rôle...';
@@ -369,7 +369,7 @@ $string['sessionlimittime'] = 'Limite entre les clics (en minutes)';
 $string['sessionlimittime_help'] = 'La limite entre les clics détermine si 2 clics font partie de la même session ou non';
 $string['setcourseid'] = 'Définir l\'ID du cours';
 $string['sharedsqlrepository'] = 'Dépôt SQL partagé';
-$string['sharedsqlrepositoryinfo'] = 'Nom du compte GitHub + "/" + nom du dépôt';
+$string['sharedsqlrepositoryinfo'] = 'Nom du compte GitHub + « / » + nom du dépôt';
 $string['sqlsecurity'] = 'Sécurité SQL';
 $string['sqlsecurityinfo'] = 'Désactiver pour exécuter des requêtes SQL permettant d\'insérer des données';
 $string['sqlsyntaxhighlight'] = 'Mettre en évidence la syntaxe SQL';

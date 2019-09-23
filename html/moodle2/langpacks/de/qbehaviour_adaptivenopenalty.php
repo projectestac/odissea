@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_adaptivenopenalty', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qbehaviour_adaptivenopenalty', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   qbehaviour_adaptivenopenalty
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mehrfachbeantwortung (ohne Abzüge)';
-$string['privacy:metadata'] = 'Der Adaptive Modus (ohne Abzüge) des Frageverhalten-Plugins speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Der Plugin \'Frageverhalten Mehrfachbeantwortung (ohne Abzüge)\' speichert keine personenbezogenen Daten.';

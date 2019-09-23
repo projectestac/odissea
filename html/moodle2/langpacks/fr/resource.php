@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'resource', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,7 +70,7 @@ $string['legacyfilesactive'] = 'Activée';
 $string['legacyfilesdone'] = 'Terminée';
 $string['modifieddate'] = 'Modifié {$a}';
 $string['modulename'] = 'Fichier';
-$string['modulename_help'] = 'Le module fichier permet à l\'enseignant de fournir un fichier comme ressource d\'apprentissage dans un cours. Lorsque c\'est possible, le fichier est affiché dans la page du cours ; sinon, les participants auront le choix de le télécharger. Le fichier peut comporter des fichiers dépendants, par exemple un fichier HTML pourra contenir des images ou des objets Flash.
+$string['modulename_help'] = 'Le module fichier permet à l\'enseignant de fournir un fichier comme ressource d\'apprentissage dans un cours. Lorsque c\'est possible, le fichier est affiché dans la page du cours ; sinon, les participants auront le choix de le télécharger. Le fichier peut comporter des fichiers dépendants, par exemple un fichier HTML pourra contenir des images.
 
 Les participants doivent bien entendu disposer sur leur ordinateur du logiciel adéquat pour lire le fichier.
 
@@ -78,7 +78,7 @@ Un fichier peut être utilisé pour
 
 * partager un diaporama avec une classe
 * inclure un mini site web comme ressource de cours
-* fournir des fichiers partiellement terminés que les participants doivent modifier et remettre terminés comme devoir';
+* fournir des fichiers partiellement terminés que les participants doivent modifier avec un logiciel et remettre terminés comme devoir';
 $string['modulenameplural'] = 'Fichiers';
 $string['notmigrated'] = 'Cet ancien type de ressource ({$a}) n\'a pas été copié.';
 $string['optionsheader'] = 'Afficher les options';
@@ -93,7 +93,7 @@ $string['popupwidth'] = 'Largeur de la fenêtre (en pixels)';
 $string['popupwidthexplain'] = 'Indique la largeur par défaut des fenêtres surgissantes.';
 $string['printintro'] = 'Afficher la description de la ressource';
 $string['printintroexplain'] = 'Indique s\'il faut afficher la description de la ressource au-dessus du contenu. Certains types d\'affichage n\'afficheront toutefois pas cette description, même lorsque l\'option est activée.';
-$string['privacy:metadata'] = 'Le plugin mod_resource n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de ressource Fichier n\'enregistre aucune donnée personnelle.';
 $string['resource:addinstance'] = 'Ajouter une ressource';
 $string['resourcecontent'] = 'Fichiers et sous-dossiers';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

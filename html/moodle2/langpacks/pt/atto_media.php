@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,8 @@ $string['descriptionssourcelabel'] = 'URL da faixa de descrição';
 $string['displayoptions'] = 'Opções de visualização';
 $string['entername'] = 'Digitar nome';
 $string['entersource'] = 'URL da fonte';
-$string['enterurl'] = 'Digitar URL';
+$string['entertitle'] = 'Adicione um título';
+$string['enterurl'] = 'Digite ou cole o URL';
 $string['height'] = 'Altura';
 $string['kind'] = 'Tipo';
 $string['label'] = 'Título';
@@ -66,7 +67,7 @@ $string['metadata'] = 'Metadados';
 $string['metadata_help'] = 'As faixas de metadados, para uso a partir de um script, apenas podem ser usadas se o leitor suportar metadados.';
 $string['metadatasourcelabel'] = 'URL da faixa de metadados';
 $string['mute'] = 'Sem som';
-$string['pluginname'] = 'Media';
+$string['pluginname'] = 'Inserir ou editar um ficheiro de áudio/vídeo';
 $string['poster'] = 'URL da miniatura';
 $string['privacy:metadata'] = 'O módulo atto_media não armazena nenhum dado pessoal.';
 $string['remove'] = 'Remover';
@@ -77,7 +78,7 @@ $string['subtitles_help'] = 'As legendas podem ser utilizadas para transcrever o
 $string['subtitlessourcelabel'] = 'URL da faixa de legendas';
 $string['track'] = 'URL da faixa';
 $string['tracks'] = 'Legendas e balões';
-$string['tracks_help'] = 'Legendas, balões, capítulos e descrições podem ser adicionadas através do formato de ficheiro WebVTT (Web Video Text Tracks). Os títulos das faixas serão mostrados na lista pendente. Para cada tipo de faixa, qualquer faixa definida como predefinição será pré-selecionada no início de cada vídeo.';
+$string['tracks_help'] = 'Legendas, balões, capítulos e descrições podem ser adicionadas através do formato de ficheiro WebVTT (Web Video Text Tracks). Os títulos das faixas serão mostrados numa lista pendente. Para cada tipo de faixa, qualquer faixa definida como predefinição será pré-selecionada no início de cada vídeo.';
 $string['video'] = 'Vídeo';
 $string['videoheight'] = 'Altura do vídeo';
 $string['videosourcelabel'] = 'URL da fonte de vídeo';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -150,17 +150,20 @@ $string['finishscormlinkname'] = 'ここをクリックしてコースページ�
 $string['firstaccess'] = '最初のアクセス';
 $string['firstattempt'] = '最初の受験';
 $string['floating'] = 'フローティング';
+$string['forceattemptalways'] = '常に';
+$string['forceattemptoncomplete'] = '前の受験が完了、合格または不合格の場合';
 $string['forcecompleted'] = '完了を強制する';
 $string['forcecompleteddesc'] = 'このプリファレンスでは完了の強制に関するデフォルト値を設定します。';
 $string['forcecompleted_help'] = 'この設定を有効にした場合、現在の受験ステータスが強制的に「完了」とされます (SCORM 1.2パッケージのみで動作します)。';
 $string['forcejavascript'] = 'ユーザにJavaScriptの有効化を強制する';
 $string['forcejavascript_desc'] = 'この設定を有効にした場合 (推奨)、ユーザのブラウザでJavaScriptをサポートしていない場合にSCORMオブジェクトへのアクセスを防ぎます。無効にした場合、ユーザはSCORMを閲覧することはできますがAPI通信が失敗するため評定情報が保存されることはありません。';
 $string['forcejavascriptmessage'] = 'このオブジェクトを閲覧するにはJavaScriptが必要です。あなたのブラウザのJavaScriptを有効にして再度お試しください。';
-$string['forcenewattempt'] = '新しい受験を強制する';
-$string['forcenewattemptdesc'] = 'この設定では「新しい受験を開始する」チェックボックスを隠してレビューモードを禁止します。SCORMは学生がいつでも同じ受験に戻ることを許可しますが前回の受験に「完了」「合格」または「不合格」 が設定されていない場合、新しく受験することはできません。SCORMパッケージがこのように動作しない場合、学生は常に同じ受験に入ることになります。';
-$string['forcenewattempt_help'] = 'この設定では「新しい受験を開始する」チェックボックスを隠してレビューモードを禁止します。
+$string['forcenewattempts'] = '新しい受験を強制する';
+$string['forcenewattempts_help'] = '3つのオプションがあります:
 
-SCORMは学生がいつでも同じ受験に戻ることを許可しますが前回の受験に「完了」「合格」または「不合格」 が設定されていない場合、新しく受験することはできません。SCORMパッケージがこのように動作しない場合、学生は常に同じ受験に入ることになります。';
+* No - 前の受験が完了、合格、失敗した場合、ユーザにはレビューモードまたは新しい受験を開始するオプションが提供されます。
+* 前の受験が完了、合格または不合格の場合 - これはSCORMパッケージ設定「完了」「合格」「不合格」ステータスに依存します。
+* 常に - SCORM活動への再エントリ毎に新しい受験が生成されます。学生は前の受験で到達した同じポイントに戻ることはありません。';
 $string['found'] = 'マニフェストが見つかりました。';
 $string['frameheight'] = 'ステージフレームまたはウィンドウの高さです。';
 $string['framewidth'] = 'ステージフレームまたはウィンドウの幅です。';
@@ -273,6 +276,7 @@ $string['notattempted'] = '未受験';
 $string['not_corr_type'] = 'タグ {$a->tag} のタイプが合致しません。';
 $string['notopenyet'] = '申し訳ございません、この活動は {$a} まで利用することができません。';
 $string['objectives'] = '学習目標';
+$string['openafterclose'] = 'あなたは終了日の後に開始日を指定しました。';
 $string['optallstudents'] = 'すべてのユーザ';
 $string['optattemptsonly'] = '受験済みユーザのみ';
 $string['options'] = 'オプション (ブラウザにより動作しない場合もあります)';
@@ -335,8 +339,6 @@ $string['reviewmode'] = 'レビューモード';
 $string['rightanswer'] = '正解';
 $string['scoes'] = '学習オブジェクト';
 $string['score'] = '評点';
-$string['scorm12standard'] = 'SCORM 1.2標準モードを有効にする';
-$string['scorm12standarddesc'] = 'この設定を無効にすることによりMoodleはSCORM 1.2仕様で許可されている以上のデータを保存できるようになります。あなたのSCORMパッケージがユーザに大量のテキスト入力を許可している場合、または大量のデータをsuspend_dataフィールドに保存する場合、この設定を無効にしてください。';
 $string['scorm:addinstance'] = '新しいSCORMパッケージを追加する';
 $string['scormclose'] = '終了日時';
 $string['scormcourse'] = '学習コース';
@@ -348,6 +350,8 @@ $string['scormopen'] = '開始日時';
 $string['scormresponsedeleted'] = 'ユーザ受験が削除されました。';
 $string['scorm:savetrack'] = 'トラックを保存する';
 $string['scorm:skipview'] = '概要をスキップする';
+$string['scormstandard'] = 'SCORM標準モード';
+$string['scormstandarddesc'] = 'この設定を無効にした場合、 Moodleは仕様で許可される以上にSCORM 1.2パッケージが保存することを許可します。ユーザ名をSCORMパッケージに渡す場合、Moodleフルネームフォーマット設定を使用します。';
 $string['scormtype'] = 'タイプ';
 $string['scormtype_help'] = 'ここではパッケージがどのようにコースに含まれるか設定します。以下4つのオプションがあります:
 

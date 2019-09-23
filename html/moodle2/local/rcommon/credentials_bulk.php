@@ -95,7 +95,7 @@ if ($frm = data_submitted()){
 	}
 }
 
-$already_asigned_users     = $DB->get_records_sql("SELECT c.euserid as id, u.firstname, u.lastname, u.email FROM {user} u RIGHT JOIN {rcommon_user_credentials} c ON u.id = c.euserid WHERE c.id IN ({$ids}) AND euserid <> 0");
+$already_asigned_users = $DB->get_records_sql("SELECT c.euserid as id, u.firstname, u.lastname, u.email FROM {user} u RIGHT JOIN {rcommon_user_credentials} c ON u.id = c.euserid WHERE c.id IN ({$ids}) AND euserid <> 0");
 $already_asigned_users_cnt = $already_asigned_users? count($already_asigned_users): 0;
 //echo '<hr>alredy_asigned_users: ' . serialize($already_asigned_users) . '<hr>';
 
@@ -106,7 +106,7 @@ $search_where = !empty($searchtext)?" AND (firstname LIKE '%{$searchtext}%' OR l
 if (empty($courseid)){
 	// MARSUPIAL ************* MODIFICAT -> Add extra control for just show the users confirmed and non deleted in the assigment books credentials process
 	// 2012.09.05 @mmartinez
-		$users_to_show    = $DB->get_records_sql("SELECT u.id, u.firstname, u.lastname, u.email FROM {user} u WHERE u.id NOT IN (SELECT DISTINCT euserid FROM {rcommon_user_credentials} WHERE isbn = '{$book->isbn}') AND deleted = 0 AND confirmed = 1{$search_where} ORDER BY lastname");
+		$users_to_show = $DB->get_records_sql("SELECT u.id, u.firstname, u.lastname, u.email FROM {user} u WHERE u.id NOT IN (SELECT DISTINCT euserid FROM {rcommon_user_credentials} WHERE isbn = '{$book->isbn}') AND deleted = 0 AND confirmed = 1{$search_where} ORDER BY lastname");
 	// ************ ORIGINAL
 		//$users_to_show    = $DB->get_records_sql("SELECT u.id, u.firstname, u.lastname, u.email FROM {$CFG->prefix}user u WHERE u.id NOT IN (SELECT DISTINCT euserid FROM {$CFG->prefix}rcommon_user_credentials WHERE isbn = '{$book->isbn}'){$search_where} ORDER BY lastname");
 	// ************ FI

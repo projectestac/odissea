@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'moodle', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -159,10 +159,10 @@ $string['areyousuretorestorethis'] = 'Jarraitu nahi al duzu?';
 $string['areyousuretorestorethisinfo'] = 'Geroago izango duzu aukera kopia hau ikastaro batean gaineratzeko edo ikastaro berri bat sortzeko';
 $string['asc'] = 'Behetik gora';
 $string['assessment'] = 'Ebaluazioa';
-$string['assignadmins'] = 'Kudeatzaileak aukeratu';
-$string['assigncreators'] = 'Sortzaileak aukeratu';
+$string['assignadmins'] = 'Esleitu kudeatzaileak';
+$string['assigncreators'] = 'Esleitu sortzaileak';
 $string['assignedrolecount'] = '{$a->role}: {$a->count}';
-$string['assignsiteroles'] = 'Ezarri gunerako rolak';
+$string['assignsiteroles'] = 'Esleitu gune mailako rolak';
 $string['authenticateduser'] = 'Autentifikatutako erabiltzailea';
 $string['authenticateduserdescription'] = 'Autentifikatutako erabiltzaile guztiak';
 $string['authentication'] = 'Autentifikazioa';
@@ -200,7 +200,7 @@ $string['backuplogdetailed'] = 'Segurtasun-kopiaren erregistro zehatza';
 $string['backuploglaststatus'] = 'Azken segurtasun-kopiaren erregistroa';
 $string['backupmissinguserinfoperms'] = 'Oharra: segurtasun-kopia honek erabiltzaile ez diren datuak ditu. Ariketa eta Tailerra jarduerak ez dira sartuko segurtasun-kopiak, modulu horiek ez baitira segurtasun-kopia mota honekin bateragarriak.';
 $string['backupnext'] = 'Hurrengo segurtasun-kopia';
-$string['backupnonisowarning'] = 'Kontuz: kopia hau Moodle bertsio ez Unicode (1.6aren aurretikoa) batetik dator. Kopiak ISO-8859-1 ez den edozein testu badu KALTETUA izan daiteke Moodle-ren Unicode bertsio honetara berreskuratzean. Begiratu <a href="http://docs.moodle.org/eu/FAQ_segurtasun-kopia_eta_berreskuratu">Segurtasun-kopia FAQ</a> segurtasun-kopia hau modu egokian egiteko informazio gehiago lortzeko.';
+$string['backupnonisowarning'] = 'Kontuz: kopia hau Moodle bertsio ez Unicode (1.6aren aurretikoa) batetik dator. Kopiak ISO-8859-1 ez den edozein testu badu KALTETUA izan daiteke Moodle-ren Unicode bertsio honetara berreskuratzean. Ikusi <a href="https://docs.moodle.org/eu/FAQ_segurtasun-kopia_eta_berreskuratu">Segurtasun-kopia FAQ</a> segurtasun-kopia hau modu egokian egiteko informazio gehiago lortzeko.';
 $string['backupnotyetrun'] = 'Segurtasun-kopia automatizatua egiteke';
 $string['backuporiginalname'] = 'Segurtasun-kopiaren izena';
 $string['backuproleassignments'] = 'Rol hauetarako rol-esleipenen segurtasun-kopia';
@@ -230,7 +230,7 @@ $string['cachecontrols'] = 'Cache-kontrolak';
 $string['cancel'] = 'Utzi';
 $string['cancelled'] = 'Bertan behera utzi da';
 $string['categories'] = 'Ikastaro-kategoriak';
-$string['categoriesandcoures'] = 'Ikastaro-kategoriak eta ikastaroak';
+$string['categoriesandcourses'] = 'Ikastaro-kategoriak eta ikastaroak';
 $string['category'] = 'Kategoria';
 $string['categoryadded'] = '\'{$a}\' kategoria gehitu da';
 $string['categorybulkaction'] = 'Eragiketa masiboak aukeratutako kategorietarako';
@@ -291,8 +291,8 @@ $string['confirmcheckfull'] = 'Erabat ziur al zaude {$a} baieztatu nahi duzula?'
 $string['confirmcoursemove'] = 'Ziur al zaude  ({$a->course}) ikastaroa  ({$a->category}) kategoriara mugitu nahi duzula?';
 $string['confirmdeletesection'] = 'Ziur al zaude "{$a}" osorik ezabatu nahi duzula, baita dituen jarduera guztiak ere?';
 $string['confirmed'] = 'Zure matrikulazioa berretsi da';
-$string['confirmednot'] = 'Zure matrikulazioa oraindik baieztatu gabe';
-$string['considereddigitalminor'] = 'Digitalki adin txikikoa zarela ulertzen da.';
+$string['confirmednot'] = 'Zure matrikulazioa oraindik baieztatu gabe dago. Mesedez bilatu ezazu baieztatze-mezu bat zure sarrera-ontzian.';
+$string['considereddigitalminor'] = 'Gazteegia zara gune honetan kontua sortzeko.';
 $string['content'] = 'Edukia';
 $string['continue'] = 'Jarraitu';
 $string['continuetocourse'] = 'Egin klik hemen ikastaroan sartzeko';
@@ -300,9 +300,11 @@ $string['convertingwikitomarkdown'] = 'Wikia Markdown-era bihurtzen';
 $string['cookiesenabled'] = 'Cookie-ak gaituta izan behar dituzu zure nabigatzailean';
 $string['cookiesenabled_help'] = 'Gune honek bi cookie erabiltzen ditu:
 
-Funtsezko cookie-a saioarena da, normalean MoodleSession izena duena. Zure nabigatzaileari cookie hau onartzea baimendu behar duzu orritik orrira zure saioa mantendu dadin. Plataformatik irtetean edo nabigatzailea ixtean cookie-a deuseztatu egingo da (nabigatzailean eta zerbitzarian).
+Funtsezko cookie-a saioarena da, normalean MoodleSession izena duena. Zure nabigatzailean cookie hau onartu behar duzu gunean nabigatzean jarraitasuna eman eta zure saioa mantendu dadin. Plataformatik irtetean edo nabigatzailea ixtean cookie-a deuseztatzen da (zure nabigatzailean eta zerbitzarian).
 
-Beste cookie-a zure erraztasunerako da, normalean MOODLEID izena edo antzekoa duena. Nabigatzailean duzun erabiltzaile-izena baino ez du gogoratzen. Berriz gunean sartzen zarenean zure izena automatikoki sortuko du erabiltzaile-izena eremuan (userid). Ez dago arazorik cookie hau baztertzean - hori eginez gero sartzen zaren bakoitzean zure erabiltzaile-izena sartu besterik ez duzu egin beharko.';
+Beste cookie-a zure erraztasunerako da, normalean MOODLEID edo antzeko izena duena. Nabigatzailean duzun erabiltzaile-izena baino ez du gogoratzen. Honek esan nahi du berriz gunean sartzen zarenean zure erabiltzaile-izena automatikoki beteko dela sarbide-orriko eremu horretan. Ez dago arazorik cookie hau baztertzean - hori eginez gero sartzen zaren bakoitzean zure erabiltzaile-izena sartu besterik ez duzu egin beharko.';
+$string['cookiesenabledonlysession'] = 'Cookie-ak gaituta izan behar dituzu zure nabigatzailean';
+$string['cookiesenabledonlysession_help'] = 'Gune honek saioaren kudeaketarako cookie bat erabiltzen du. Zure nabigatzailean cookie hau baimendu behar duzu nabigazioari jarraikortasuna eman eta gunearen barruan mantentzeko. Gunetik atera edo nabigatzailea ixten duzunean cookie hau ezabatzen da (zure nabigatzailean eta zerbitzarian).';
 $string['cookiesnotenabled'] = 'Zoritxarrez, cookie-ak ez daude gaituta zure nabigatzailean';
 $string['copy'] = 'kopiatu';
 $string['copyasnoun'] = 'kopiatu';
@@ -349,8 +351,8 @@ $string['courseenddateenabled_desc'] = 'Ezarpen honek ikastaroaren amaiera-data 
 $string['courseextendednamedisplay'] = '{$a->shortname} {$a->fullname}';
 $string['coursefiles'] = 'Heredatutako ikastaroko fitxategiak';
 $string['coursefilesedit'] = 'Editatu heredatutako ikastaroko fitxategiak';
-$string['coursefileswarning'] = 'Ez daude onartuta ikastaro-fitxategiak';
-$string['coursefileswarning_help'] = 'Moodle 2.0-tik aurrera ikastaro-fitxategiak ez daude onartuta; mesedez, erabili kanpoko biltegiak bere ordez';
+$string['coursefileswarning'] = 'Ikastaro-fitxategiak dagoeneko ez dira onartzen';
+$string['coursefileswarning_help'] = 'Moodle 2.0-tik aurrera ikastaro-fitxategiak ez dira onartzen; mesedez, horren ordez kanpoko biltegiak erabili itzazu.';
 $string['courseformatdata'] = 'Ikastaro-formatuaren datuak';
 $string['courseformatoptions'] = 'Formatu aukerak {$a}-(r)entzat';
 $string['courseformats'] = 'Ikastaro-formatuak';
@@ -376,10 +378,10 @@ $string['coursenotaccessible'] = 'Ikastaro honetan matrikulatutakoak bakarrik sa
 $string['coursenotyetfinished'] = 'Ikastaroa ez da oraindik bukatu';
 $string['coursenotyetstarted'] = 'Ikastaroa ez da oraindik hasi';
 $string['courseoverview'] = 'Ikastaroaren ikuspegi orokorra';
-$string['courseoverviewfiles'] = 'Ikastaroaren laburpeneko fitxategiak';
-$string['courseoverviewfilesext'] = 'Ikastaroaren laburpeneko fitxategien luzapenak';
-$string['courseoverviewfiles_help'] = 'Ikastaroko laburpenaren fitxategiak, irudiak esaterako, ikastaroen zerrendan erakusten dira laburpenarekin batera.';
-$string['courseoverviewfileslimit'] = 'Ikastaroaren laburpeneko fitxategien muga';
+$string['courseoverviewfiles'] = 'Ikastaroko irudia';
+$string['courseoverviewfilesext'] = 'Ikastaroko irudi-fitxategien luzapenak';
+$string['courseoverviewfiles_help'] = 'Ikastaroko irudia Aginte-paneleko ikastaroaren aurrebistan erakusten dira. Guneko kudeatzaile batek onartutako fitxategi-mota gehigarriak eta fitxategi anitzak gaitu ditzake. Hala eginez gero, fitxategi horiek ikastaroaren laburpenaren ondoan erakutsiko dira ikastaroen zerrenda-orrian.';
+$string['courseoverviewfileslimit'] = 'Ikastaroaren irudi-fitxategien muga';
 $string['courseoverviewgraph'] = 'Ikastaroaren grafiko globala';
 $string['coursepreferences'] = 'Ikastaro-hobespenak';
 $string['courseprofiles'] = 'Ikastaro-profilak';
@@ -404,6 +406,8 @@ $string['courserequestsupport'] = 'Informazio lagungarria kudeatzaileak eskari h
 $string['courserequestwarning'] = 'Ikastaro honetan sartzeko eskatu duen erabiltzailea automatikoki matrikulatuko da eta {$a} rola esleituko zaio.';
 $string['courserestore'] = 'Ikastaroa berreskuratu';
 $string['courses'] = 'Ikastaroak';
+$string['coursesearch'] = 'Bilatu ikastaroak';
+$string['coursesearch_help'] = '<p>Hitz asko batera bila ditzakezu. Hitz bat baino gehiago idaztekotan, bilatzaileak hitz horiek edonon dauzkaten emaitzak bilatuko ditu.</p><p>Hitz batzuk (+) ikurrak bananduta idatziz gero, hitz horiek guztiak orden berean duten emaitza guztiak erakutsiko dira.</p><p>(-) ikurra hitzaren aurretik jarriz gero, hitz hori duten emaitzak ez dira erakutsiko.</p>';
 $string['coursesectionsummaries'] = 'Ikastaro-atalen laburpenak';
 $string['coursesectiontitle'] = 'Ikastaroa: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
 $string['coursesettings'] = 'Ikastaroaren ezarpen lehenetsiak';
@@ -530,14 +534,14 @@ $string['deselectall'] = 'Ez aukeratu bat ere';
 $string['detailedless'] = 'Orokorrago';
 $string['detailedmore'] = 'Zehatzago';
 $string['digitalminor'] = 'Digitalki adin txikikoa';
-$string['digitalminor_desc'] = 'Gune honetan kontu bat sortzeko, mesedez, eska iezaiozu zeure guraso/tutore bati hurrengo pertsonarekin harremanetan jartzeko.';
+$string['digitalminor_desc'] = 'Eska iezaiozu zure guraso/tutore bati hurrengo pertsonarekin harremanetan jartzeko:';
 $string['directory'] = 'Direktorioa';
 $string['disable'] = 'Desgaitu';
 $string['disabledcomments'] = 'Iruzkinak desgaituta daude';
 $string['displayingfirst'] = 'Lehenengo {$a->count} {$a->things} erakutsita bakarrik';
 $string['displayingrecords'] = '{$a} elementu erakusten';
 $string['displayingusers'] = 'Ikasleak erakusten {$a->start}, lehena; {$a->end}, azkena';
-$string['displayonpage'] = 'Orrian erakutsi';
+$string['displayonpage'] = 'Erakutsi orrian';
 $string['dndcourse'] = 'Ikastaro hau hartu eta eraman dezakezu ordena aldarazteko edo beste kategoria batera mugitzeko.';
 $string['dndenabled_inbox'] = 'Fitxategiak gehitzeko, hartu eta eraman ahal dituzu.';
 $string['dndnotsupported'] = 'Hartu eta eraman bidezko igoera ez da onartzen';
@@ -564,6 +568,7 @@ $string['downloadtext'] = 'Testu-formatuan jaitsi';
 $string['doyouagree'] = 'Baldintza hauek irakurri eta ulertu dituzu?';
 $string['droptoupload'] = 'Fitxategiak igotzeko hona ekarri';
 $string['duplicate'] = 'Bikoiztu';
+$string['duplicatedmodule'] = '{$a} (kopia)';
 $string['edhelpaspellpath'] = 'Editorearen barruan ortografia-zuzentzailea erabiltzeko, <strong>aspell 0.50</strong> edo bertsio zaharragoa instalatuta izan behar duzu, eta aspell bikoitzaren bide egokia adierazi behar duzu. Unix/Linux sistemetan bide hori <strong>/usr/bin/aspell</strong> izaten da, baina beste edozein izan liteke.';
 $string['edhelpbgcolor'] = 'Edizio-eremuaren hondo-kolorea definitu.<br />Balio onargarriak #FFFFFF o \'white\' dira, adibidez';
 $string['edhelpcleanword'] = 'Egokipen honek Wordeko formatu-iragazkia aktibatu edo desaktibatzen du.';
@@ -631,10 +636,13 @@ goiko aldean dagoen helbide-barran itsatsi.
 
 Laguntza behar izanez gero, mesedez jarri harremanetan guneko kudeatzailearekin.
 {$a->admin}';
+$string['emailconfirmationresend'] = 'Berriz bidali baieztatze-mezua';
 $string['emailconfirmationsubject'] = '{$a}: kontuaren baieztatzea';
 $string['emailconfirmsent'] = '<p>E-posta mezu bat bidali dugu zure hurrengo helbide honetara: <b>{$a}</b></p>
    <p>Izena ematen amaitzeko argibide erraz batzuk ditu.</p>
    <p>Arazorik baduzu, jarri harremanetan kudeatzailearekin.</p>';
+$string['emailconfirmsentfailure'] = 'Baieztatze-mezua bidaltzeak huts egin du';
+$string['emailconfirmsentsuccess'] = 'Baieztatze-mezua ondo bidali da';
 $string['emaildigest'] = 'Mezuak e-postaz banatzeko moduak';
 $string['emaildigestcomplete'] = 'Osoa (egunero e-posta mezu guztiekin)';
 $string['emaildigest_help'] = 'Hau da guneko foroetako azken mezuen banaketarentzako ezarpen lehenetsia.
@@ -650,8 +658,9 @@ $string['emaildisable'] = 'E-posta helbidea desgaituta dago';
 $string['emaildisableclick'] = 'Egin klik hemen helbide honetara inongo e-postarik ez bidaltzeko';
 $string['emaildisplay'] = 'E-posta erakutsi';
 $string['emaildisplaycourse'] = 'Nire e-posta helbidea nire ikastaro-kideei soilik erakutsi';
+$string['emaildisplay_help'] = 'Pribilegioak dituzten erabiltzaileek (adibidez, irakasle edo kudeatzaileek) zure e-posta helbidea beti ikusi ahal izango dute.';
 $string['emaildisplayhidden'] = 'E-posta ezkutuan';
-$string['emaildisplayno'] = 'Nire e-posta helbidea mundu guztiari ezkutatu';
+$string['emaildisplayno'] = 'Ezkutatu nire e-posta helbidea pribilegiorik gabeko erabiltzaileei';
 $string['emaildisplayyes'] = 'Edonori nire e-posta helbidea ikusten utzi';
 $string['emailenable'] = 'Erabili e-posta helbide hau';
 $string['emailenableclick'] = 'Egin klik hemen helbide honetara e-postak bidali ahal izateko';
@@ -826,14 +835,15 @@ $string['explanationdigitalminor'] = 'Informazio hau beharrezkoa da zure adina o
 $string['extendenrol'] = 'Matrikulazioa luzatu (banakakoa)';
 $string['extendperiod'] = 'Luzapen-epea';
 $string['failedloginattempts'] = '{$a->attempts} azken sarreratik sarrera okerren kopurua';
+$string['favourites'] = 'Nabarmenduta';
 $string['feedback'] = 'Feedbacka';
 $string['file'] = 'Fitxategia';
 $string['fileexists'] = 'Dagoeneko badago {$a} izena duen fitxategi bat';
 $string['filemissing'] = '{$a} falta da';
+$string['filereaderror'] = 'Ezin izan da \'{$a}\' fitxategia irakurri. Mesedez egiaztatu fitxategi bat dela eta ez dela karpeta bat.';
 $string['files'] = 'Fitxategiak';
 $string['filesanduploads'] = 'Fitxategiak eta igoerak';
 $string['filesfolders'] = 'Fitxategiak/karpetak';
-$string['filetoolarge'] = 'handiegia da igotzeko';
 $string['fileuploadwithcontent'] = 'Fitxategi-igoerek ez lukete izan beharko eduki-parametroa';
 $string['filloutallfields'] = 'Mesedez, bete formulario honetako eremu guztiak';
 $string['filter'] = 'Iragazi';
@@ -860,7 +870,7 @@ $string['forcepasswordchangecheckfull'] = 'Ziur al zaude pasahitza aldatzea beha
 $string['forcepasswordchange_help'] = 'Laukitxoa markatuz gero, erabiltzaileari pasahitza aldatzeko proposatuko zaio sartzen den hurrengoan.';
 $string['forcepasswordchangenot'] = '{$a} ezin da behartu pasahitza aldatzera';
 $string['forcepasswordchangenotice'] = 'Jarraitzeko zure pasahitza aldatu behar duzu.';
-$string['forcetheme'] = 'Itxura behartu';
+$string['forcetheme'] = 'Behartu itxura';
 $string['forgotaccount'] = 'Pasahitza galdu duzu?';
 $string['forgotten'] = 'Zure erabiltzaile-izena edo pasahitza ahaztu dituzu?';
 $string['forgottenduplicate'] = 'E-posta helbide bera dute hainbat kontuk. Mesedez, erabili erabiltzaile-izena horren ordez.';
@@ -904,28 +914,25 @@ $string['general'] = 'Orokorra';
 $string['geolocation'] = 'latitudea - longitudea';
 $string['gettheselogs'] = 'Eskuratu erregistro hauek';
 $string['go'] = 'Joan';
-$string['gpl'] = 'Copyright (C) 1999tik aurrera  Martin Dougiamas  (http://moodle.com)
+$string['gpl'] = 'Copyright (C) 1999tik aurrera Martin Dougiamas (https://moodle.com)
 
-Programa hau doako softwarea da. Berriz banatu
-edo eta alda dezakezu, beti ere GNU General Public License lizentziaren arabera, The Free Software Foundation-en argitalpenaren arabera; baita 2. bertsioaren edo ondorengo baten arabera ere.
+Programa hau doako softwarea da. Berriz banatu edo eta alda dezakezu, beti ere GNU General Public License lizentziaren arabera, The Free Software Foundation-en argitalpenaren arabera; baita 2. bertsioaren edo ondorengo baten arabera ere.
 
-Aplikazioa erabilgarria izango zaizulakoan banatzen da,
-baina INOLAKO BERMERIK GABE; ezta MERKATAL-BANAKETA
+Aplikazioa erabilgarria izango zaizulakoan banatzen da, baina INOLAKO BERMERIK GABE; ezta MERKATAL-BANAKETA
 edo ASMO PARTIKULAR BATEN EGOKITZAPENAren bermerik ere.
 
-Informazio zehatzagoa izateko Moodle Lizentziaren informazio orria ikusi:
-http://docs.moodle.org/dev/License';
-$string['gpl3'] = 'Copyright (C) 1999 onwards Martin Dougiamas (http://moodle.com)
+Ikusi Moodle Lizentziaren informazio orria xehetasunetarako: https://docs.moodle.org/eu/Lizentzia';
+$string['gpl3'] = 'Copyright (C) 1999tik aurrera Martin Dougiamas (https://moodle.com)
 
 Programa hau software librea da: banatu edota aldatu egin dezakezu Free Software Foundation-ek GNU Lizentzia Publiko Orokorra argitaratutako baldintzetan, edo Lizentziaren 3. bertsioaren, edo (zeuk aukeratu) beste edozein bertsioarenean.
 
 Programa hau erabilgarri izateko helburuarekin banatzen da, baina INONGO BERMERIK GABE; baita KOMERTZIALIZATU edo BESTE EDOZEIN HELBURU baterako BERMERIK GABE ere.
 
-Begiratu Moodle Lizentziaren informazio-orria zehaztasun gehiagorako: http://docs.moodle.org/eu/Lizentzia';
+Ikusi Moodle Lizentziaren informazio-orria zehaztasun gehiagorako: https://docs.moodle.org/eu/Lizentzia';
 $string['gpllicense'] = 'GPL Lizentzia';
 $string['grade'] = 'Kalifikazioa';
 $string['grades'] = 'Kalifikazioak';
-$string['gravatarenabled'] = '<a href="http://www.gravatar.com/">Gravatarra</a> gaitu da gune honetan. Profilerako irudia igotzen ez baduzu, Moodle saiatuko da irudi bat kargatzen zure Gravatar-etik.';
+$string['gravatarenabled'] = '<a href="https://www.gravatar.com/">Gravatarra</a> gaitu da gune honetan. Profilerako irudia igotzen ez baduzu, Moodle saiatuko da irudi bat kargatzen zure Gravatar-etik.';
 $string['group'] = 'Taldea';
 $string['groupadd'] = 'Gehitu talde berria';
 $string['groupaddusers'] = 'Gehitu aukeratutakoa(k) taldera';
@@ -936,10 +943,10 @@ $string['groupinfoedit'] = 'Editatu taldearen ezaugarriak';
 $string['groupinfomembers'] = 'Aukeratutako partaideei buruzko informazioa';
 $string['groupinfopeople'] = 'Aukeratutako pertsonei buruzko informazioa';
 $string['groupmembers'] = 'Tadekideak';
-$string['groupmemberssee'] = 'Taldekideak erakutsi';
+$string['groupmemberssee'] = 'Ikusi taldekideak';
 $string['groupmembersselected'] = 'Aukeratutako taldeko kideak';
 $string['groupmode'] = 'Taldeak egin ala ez';
-$string['groupmodeforce'] = 'Talde-modua behartu';
+$string['groupmodeforce'] = 'Behartu talde-modua';
 $string['groupmy'] = 'Nire taldea';
 $string['groupnonmembers'] = 'Taldean ez daudenak';
 $string['groupnotamember'] = 'Sentitzen dugu,  baina ez zara talde horretako kide';
@@ -965,8 +972,8 @@ $string['hiddenassign'] = 'Ezkutatu esleipena';
 $string['hiddenfromstudents'] = 'Ezkutuan ikasleentzat';
 $string['hiddenoncoursepage'] = 'Eskuragarri baina ikastaro-orrian erakutsi gabe';
 $string['hiddensections'] = 'Ezkutuko atalak';
-$string['hiddensectionscollapsed'] = 'Ezkutuko atalak laburtuta erakutsi';
-$string['hiddensections_help'] = 'Ezarpen honek ikasleei ikastaroaren ezkutuko atalak ikasleei modu kolapsatuan (astekako ikastaro batean oporrak adierazteko, adibidez) edo guztiz ezkutatuko zaizkien zehazten du.';
+$string['hiddensectionscollapsed'] = 'Ezkutuko atalak tolestuta erakutsi';
+$string['hiddensections_help'] = 'Ezarpen honek ikasleei ikastaroaren ezkutuko atalak ikasleei tolestuta (astekako ikastaro batean oporrak adierazteko, adibidez) edo guztiz ezkutatuko zaizkien zehazten du.';
 $string['hiddensectionsinvisible'] = 'Ezkutuko atalak guztiz ezkutatu';
 $string['hiddenwithbrackets'] = '(ezkutuan)';
 $string['hide'] = 'Ezkutatu';
@@ -1153,7 +1160,6 @@ $string['markedthistopic'] = 'Gai hau oraingo gisa dago nabarmendua';
 $string['markthistopic'] = 'Gai hau oraingoa gisa nabarmendu';
 $string['matchingsearchandrole'] = '\'{$a->search}\' kointzidentziak eta  {$a->role}';
 $string['maxareabytesreached'] = 'Fitxategiaren tamaina (edo fitxategi guztien tamainen batura) atal honetan eskuragarri dagoena baino handiagoa da.';
-$string['maxbytesforfile'] = '{$a} fitxategia baimendutako gehienezko tamaina baino handiagoa da.';
 $string['maxfilesize'] = 'Gehienezko tamaina fitxategi berrietarako: {$a}';
 $string['maxfilesreached'] = '{$a} fitxategi erantsi ahal diozu elementu honi gehienez';
 $string['maximumchars'] = '{$a} karaktere gehienez';
@@ -1190,6 +1196,7 @@ $string['messageprovider:errors_help'] = 'Hauek errore garrantzitsuak dira eta k
 $string['messageprovider:insights'] = 'Predikzio-ereduek sortutako pertzepzioa';
 $string['messageprovider:instantmessage'] = 'Erabiltzaileen arteko mezu pertsonalak';
 $string['messageprovider:instantmessage_help'] = 'Atal honek zehazten du zer gertatuko den guneko beste erabiltzaile batzuk zuri zuzenean bidalitako mezuekin.';
+$string['messageprovider:messagecontactrequests'] = 'Kontaktuak jakinarazpena behar du';
 $string['messageprovider:notices'] = 'Errore arinei buruzko oharrak';
 $string['messageprovider:notices_help'] = 'Kudeatzaile batek ikusi nahiko lituzkeen oharrak dira hauek.';
 $string['messageselect'] = 'Aukeratu erabiltzaile hau mezuaren jasotzaile gisa';
@@ -1223,8 +1230,6 @@ $string['missingsummary'] = 'Laburpena falta da';
 $string['missingteacher'] = 'Zerbait aukeratu behar duzu';
 $string['missingurl'] = 'URLa falta da';
 $string['missingusername'] = 'Erabiltzailearen izena falta da';
-$string['modchooserdisable'] = 'Desaktibatu jarduera-hautatzailea';
-$string['modchooserenable'] = 'Aktibatu jarduera-hautatzailea';
 $string['moddoesnotsupporttype'] = '{$a->modname} moduluak ez ditu onartzen {$a->type} motako igoerak';
 $string['modhide'] = 'Ezkutatu';
 $string['modified'] = 'Aldatuta';
@@ -1266,7 +1271,9 @@ $string['movecategoryto'] = 'Mugitu kategoria hona:';
 $string['movecategorytotopsuccess'] = '\'{$a->moved}\' kategoria ondo mugitu da
 goragoko mailara';
 $string['movecontent'] = 'Mugitu {$a}';
+$string['movecontentafter'] = '"{$a}"-ren ondoren';
 $string['movecontentstoanothercategory'] = 'Mugitu edukiak beste kategoria batera';
+$string['movecontenttothetop'] = 'Joan zerrendako lehen postura';
 $string['movecoursemodule'] = 'Mugitu baliabidea';
 $string['movecoursesection'] = 'Mugitu atala';
 $string['movecourseto'] = 'Mugitu ikastaroa hona:';
@@ -1283,7 +1290,7 @@ $string['movetoanotherfolder'] = 'Mugitu beste karpeta batera';
 $string['moveup'] = 'Mugitu gora';
 $string['msnid'] = 'ID MSN';
 $string['mustchangepassword'] = 'Pasahitz berriak eta zaharrak ezberdin izan behar dute.';
-$string['mustconfirm'] = 'Zure datuak berretsi behar dituzu';
+$string['mustconfirm'] = 'Zure kontua baieztatu behar dituzu';
 $string['mycourses'] = 'Nire ikastaroak';
 $string['myfiles'] = 'Nire fitxategi pribatuak';
 $string['myfilesmanage'] = 'Kudeatu nire fitxategi pribatuak';
@@ -1374,7 +1381,7 @@ $string['nocourseendtime'] = 'Ikastaroak ez du amaiera-datarik';
 $string['nocourses'] = 'Ez dago ikastarorik';
 $string['nocoursesections'] = 'Ikastaroak ez du atalik';
 $string['nocoursesfound'] = '\'{$a}\' hitza duen ikastarorik ez dago';
-$string['nocoursestarttime'] = 'Ikastaroak ez du hasiera-datarik';
+$string['nocoursestarttime'] = 'Ikastaroak ez du hasiera-datarik.';
 $string['nocoursestudents'] = 'Ikaslerik ez';
 $string['nocoursesyet'] = 'Ez dago ikastarorik kategoria honetan';
 $string['nodstpresets'] = 'Kudeatzaileak Daylight Savings Time aukera ez du indarrean jarri';
@@ -1453,7 +1460,7 @@ $string['numweeks'] = '{$a} aste';
 $string['numwords'] = '{$a} hitz';
 $string['numyear'] = '{$a} urte';
 $string['numyears'] = '{$a} urte';
-$string['ok'] = 'ONDO';
+$string['ok'] = 'Ados';
 $string['oldpassword'] = 'Oraingo pasahitza';
 $string['olduserdirectory'] = 'Erabiltzaileen direktorio ZAHARRA da hau eta dagoeneko ez da beharrezkoa. Lasai ezaba dezakezu. Dituen fitxategiak erabiltzaile direktorio BERRIAn kopiatu dira.';
 $string['optional'] = 'aukerakoa';
@@ -1466,6 +1473,10 @@ $string['outline'] = 'Laburpena';
 $string['outlinereport'] = 'Laburpen-txostena';
 $string['page'] = 'Orria';
 $string['pagea'] = '{$a} orria';
+$string['pagedcontentnavigation'] = 'Orrien bidezko nabigazioa';
+$string['pagedcontentnavigationactiveitem'] = 'Oraingo orria, {$a} orria';
+$string['pagedcontentnavigationitem'] = 'Joan {$a} orrira';
+$string['pagedcontentpagingbaritemsperpage'] = 'Erakutsi {$a} elementu orriko';
 $string['pageheaderconfigablock'] = 'Blokea hemen konfiguratzen: {$a->fullname}';
 $string['pagepath'] = 'Orriaren bidea';
 $string['pageshouldredirect'] = 'Orri hau automatikoki birbideratu da. Ezer ateratzen ez bada, mesedez, erabili beheko esteka aurrera egiteko.';
@@ -1481,7 +1492,7 @@ $string['password'] = 'Pasahitza';
 $string['passwordchanged'] = 'Pasahitza aldatu da';
 $string['passwordconfirmchange'] = 'Baieztatu pasahitzaren aldaketa';
 $string['passwordextlink'] = 'Esteka honek galdutako pasahitza errekuperatzeko balio du eta Moodle-tik ateratzen behartzen zaitu.';
-$string['passwordforgotten'] = 'Pasahitz ahaztua';
+$string['passwordforgotten'] = 'Ahaztutako pasahitza';
 $string['passwordforgotteninstructions'] = 'Zure datuak lehenik erabiltzaileen datu-basean bilatu behar dira. Zure erabiltzaile-izena <strong>edo</strong> e-posta helbidea dagokion lekuan idatzi, mesedez. Biak idaztea ez da beharrezkoa.';
 $string['passwordforgotteninstructions2'] = 'Zure pasahitza berritzeko, bidali zure erabiltzaile-izena edo zure e-posta helbidea. Datu-basean aurkitzen bazaitugu, e-posta bidaliko dizugu  zure e-posta helbidera, berriz sartzeko argibideekin.';
 $string['passwordnohelp'] = 'Ezin izan da galdu duzun pasahitza aurkitu. Moodle-ren kudeatzailearekin harremanetan jarri, mesedez.';
@@ -1502,6 +1513,7 @@ $string['payments'] = 'Ordainketak';
 $string['paymentsorry'] = 'Mila esker ordainketarengatik! Zoritxarrez zure ordainketa ez da guztiz prozesatu, eta "{$a->fullname}" ikastaroan ez zaude matrikulaturik. Segundu batzuk barru berriz sartu, mesedez. Arazoekin jarraitzen baduzu {$a->teacher} irakaslearekin edo gunearen kudeatzailearekin harremanetan jarri';
 $string['paymentthanks'] = 'Mila esker ordainketarengatik! Ikastaro honetan matrikulatuta zaude:<br />"{$a}"';
 $string['pendingrequests'] = 'Onartu gabeko eskariak';
+$string['percents'] = '% {$a}';
 $string['periodending'] = 'Epe-amaiera ({$a})';
 $string['perpage'] = 'Orriko';
 $string['perpagea'] = 'Orriko: {$a}';
@@ -1556,7 +1568,7 @@ $string['privacy:metadata:events_queue'] = 'Ilaran prozesatzeko zai dauden erabi
 $string['privacy:metadata:events_queue:eventdata'] = 'Ekitaldian gordetako datuak.';
 $string['privacy:metadata:events_queue:stackdump'] = 'Ekitaldi honen egoerakin lotutako edozein arrasto.';
 $string['privacy:metadata:events_queue:timecreated'] = 'Ekitaldi hau sortu zeneko unea.';
-$string['privacy:metadata:events_queue:userid'] = 'Ekitaldi hau sortu zuen erabiltzailearen IDa.';
+$string['privacy:metadata:events_queue:userid'] = 'Ekitaldi hau sortu zuen erabiltzailearen IDa';
 $string['privacy:metadata:log'] = 'Igarotako ekitaldien bilduma';
 $string['privacy:metadata:log:action'] = 'Ekintzaren deskribapena';
 $string['privacy:metadata:log:cmid'] = 'Ikastaro-moduluaren IDa';
@@ -1640,22 +1652,24 @@ $string['requestcourse'] = 'Eskatu ikastaro bat';
 $string['requestedby'] = 'Honek eskatua:';
 $string['requestedcourses'] = 'Eskatutako ikastaroak';
 $string['requestreason'] = 'Ikastaroa eskatzeko arrazoia';
+$string['requests'] = 'Eskariak';
 $string['required'] = 'Beharrezkoa';
 $string['requirespayment'] = 'Ikastaro hau ordainpekoa da';
+$string['resendemail'] = 'Berriz bidali mezua';
 $string['reset'] = 'Berrabiarazi';
 $string['resetcomponent'] = 'Osagaia';
 $string['resetcourse'] = 'Berrabiarazi ikastaroa';
 $string['resetinfo'] = 'Orri honek aukera ematen dizu ikastaroa erabiltzaile-datuz husteko, jarduerak eta beste zehaztasun batzuk mantenduta. Mesedez, egin kontu beheragoko itemak aukeratuta eta orri hau bidalita behin betiko ezabatuko dituzula ikastaro honetatik aukeratutako erabiltzaileen datuak.';
 $string['resetnotimplemented'] = 'Berrabiaraztea ez dago inplementatuta';
-$string['resetrecordexpired'] = 'Pasahitza berrezartzeko erabili duzun esteka {$a} minutu baino zaharragoa da eta iraungituta dago. Mesedez pasahitz berria bat lortzeko eskari berria hasi.';
+$string['resetrecordexpired'] = 'Pasahitza berrezartzeko erabili duzun esteka {$a} minutu baino zaharragoa da eta iraungita dago. Mesedez pasahitz berria bat lortzeko eskari berria hasi.';
 $string['resetstartdate'] = 'Aldatu hasiera-data';
 $string['resetstatus'] = 'Egoera';
 $string['resettable'] = 'Berrabiarazi taularen hobespenak';
 $string['resettask'] = 'Ataza';
 $string['resettodefaults'] = 'Berrezarri lehenetsitako balioak';
 $string['resortcourses'] = 'Ordenatu ikastaroak';
-$string['resortsubcategoriesby'] = 'Azpikategoriak {$a}-(r)en arabera gorantz ordenatu';
-$string['resortsubcategoriesbyreverse'] = 'Azpikategoriak {$a}-(r)en arabera beherantz ordenatu';
+$string['resortsubcategoriesby'] = 'Ordenatu azpikategoriak {$a}-(r)en arabera gorantz';
+$string['resortsubcategoriesbyreverse'] = 'Ordenatu azpikategoriak {$a}-(r)en arabera beherantz';
 $string['resource'] = 'Baliabidea';
 $string['resourcedisplayauto'] = 'Automatikoa';
 $string['resourcedisplaydownload'] = 'Jaistera behartu';
@@ -1735,7 +1749,6 @@ $string['searchagain'] = 'Berriz bilatu';
 $string['searchbyemail'] = 'Bilatu e-posta helbidearen arabera';
 $string['searchbyusername'] = 'Bilatu erabiltzaile-izenaren arabera';
 $string['searchcourses'] = 'Bilatu Ikastaroak';
-$string['searchhelp'] = '<p>Hitz asko batera bila ditzakezu. Hitz bat baino gehiago idaztekotan, bilatzaileak hitz horiek edonon dauzkaten emaitzak bilatuko ditu.</p><p>Hitz batzuk (+) ikurrak bananduta idatziz gero, hitz horiek guztiak orden berean duten emaitza guztiak erakutsiko dira.</p><p>(-) ikurra hitzaren aurretik jarriz gero, hitz hori duten emaitzak ez dira erakutsiko.</p>';
 $string['search_help'] = 'Testuko edozein tokitan hitz bat edo biko oinarrizko bilaketetarako, idatzi horiek tarte bat utzita. Bi karaktere baino gehiagoko hitz guztiak erabiltzen dira.
 
 Bilaketa aurreraturako, egin klik bilatu botoian bilaketarako kutxatxoan ezer idatzi gabe eta bilaketa aurreraturako formulariora joango zara.';
@@ -1792,6 +1805,7 @@ $string['separateandconnected'] = 'Jakintza-bide banatuak eta elkar lotuak';
 $string['separateandconnectedinfo'] = 'Eskala hau banandutako eta konektatutako ezagutzen teorian oinarritzen da. Teoria honek ikusi eta entzuten ditugun gauzak ebaluatu eta ikasteko bi modu deskribatzen ditu.<ul><li><strong>Ikasle bereiziak</strong> ahal bezain objektibo mantentzen dira sentimenduak eta emozioak kontuan hartu gabe. Beste batzuekin eztabaidak izatean euren ideiak defendatzea gustatzen zaie, logika erabiliz aurkariaren logikan hutsuneak bilatzeko.</li><li><strong>Konektatutako ikasleek</strong> beste jendearekiko sentsibilitate handiagoa dute. Enpatia gaitasun handiagoa dute eta entzun eta galderak egiteko joera dute "bestearen ikuspuntutik gauzak ulertzeko" gai direla sentitu arte. Besteengan topatzen duten jakinduria lortzeko esperientziak trukatzen saiatuz ikasten dute.</li></ul>';
 $string['servererror'] = 'Errorea gertatu da zerbitzariarekin komunikatzean';
 $string['serverlocaltime'] = 'Zerbitzariaren ordu lokala';
+$string['sessionforceclean'] = 'Segurtasuna dela-eta, saio honetan erabiltzaileek sortutako script-ak desgaitu dira.';
 $string['setcategorytheme'] = 'Ezarri kategoriaren itxura';
 $string['setpassword'] = 'Ezarri pasahitza';
 $string['setpasswordinstructions'] = 'Mesedez sartu behean zure pasahitz berria, eta ondoren aldaketak gorde.';
@@ -1817,7 +1831,7 @@ $string['showcommentsnonjs'] = 'Erakutsi iruzkinak';
 $string['showdescription'] = 'Erakutsi deskribapena ikastaroaren orrian';
 $string['showdescription_help'] = 'Gaituz gero goiko sarrera / deskribapena ikastaroaren hasiera-orrian agertuko da jarduera / baliabiderako estekaren azpian.';
 $string['showgrades'] = 'Erakutsi kalifikazioak ikasleei';
-$string['showgrades_help'] = 'Ikastaroko hainbat jardueratan ezar daitezke kalifikazioak. Ezarpen honek zehazten du ikasleak nola ikus dezakeen ikastaroko bere kalifikazio guztien zerrenda ikastaroko kudeaketa blokeko kalifikazioak estekaren bidez.';
+$string['showgrades_help'] = 'Ikastaroko hainbat jardueratan ezar daitezke kalifikazioak. Ezarpen honek zehazten du ikasleak nola ikus dezakeen ikastaroko bere kalifikazio guztien zerrenda ikastaroko nabigazio-kutxa edo blokeko kalifikazioak estekaren bidez.';
 $string['showingacourses'] = 'Ikastaro guztiak ({$a} ) erakusten ari dira';
 $string['showingxofycourses'] = 'Ikastaroak erakusten {$a->start}-(e)tik {$a->end}-8e)ra. Denera {$a->total} ikastaro';
 $string['showlistofcourses'] = 'Erakutsi ikastaro-zerrenda';
@@ -1860,14 +1874,14 @@ $string['sizeb'] = 'byte';
 $string['sizegb'] = 'GB';
 $string['sizekb'] = 'KB';
 $string['sizemb'] = 'MB';
-$string['skipped'] = 'Alde batera utzia';
-$string['skiptocategorylisting'] = 'Kategoria zerrendara jauzi egin';
-$string['skiptocoursedetails'] = 'Ikastaroaren informazio zehatzera jauzi egin';
-$string['skiptocourselisting'] = 'Ikastaroen zerrendara jauzi egin';
+$string['skipped'] = 'Alde batera utzi da';
+$string['skiptocategorylisting'] = 'Salto egin kategoria zerrendara';
+$string['skiptocoursedetails'] = 'Salto egin ikastaroaren informazio zehatzera';
+$string['skiptocourselisting'] = 'Salto egin ikastaroen zerrendara';
 $string['skypeid'] = 'Skype-ren IDa';
 $string['socialheadline'] = 'Foro irekia - azken gaiak';
 $string['someallowguest'] = 'Ikastaro batzuetan bisitariak sar daitezke';
-$string['someerrorswerefound'] = 'Daturen bat falta da edo ez da egokia. Xehetasun gehiago:';
+$string['someerrorswerefound'] = 'Daturen bat falta da edo ez da egokia. Zehaztasun gehiagora ikusi behean.';
 $string['sort'] = 'Ordenatu';
 $string['sortby'] = 'Ordenatze-irizpidea';
 $string['sortbyx'] = 'Ordenatu {$a}-ren arabera behetik gora';
@@ -1934,7 +1948,7 @@ $string['subcategories'] = 'Azpikategoriak';
 $string['subcategory'] = 'Azpikategoria';
 $string['subcategoryof'] = '{$a}-(r)en azpikategoria';
 $string['submit'] = 'Bidali';
-$string['success'] = 'Ondo!';
+$string['success'] = 'Ondo';
 $string['successduration'] = 'Ondo ({$a} segundu)';
 $string['summary'] = 'Laburpena';
 $string['summary_help'] = 'Irakasgaia testu motz batean laburtzearen asmoa da ikasleak prestatzea irakasgai (edo aste) horretan egingo diren jardueretarako.';
@@ -1988,13 +2002,13 @@ $string['timesplitting:decilesaccum'] = 'Hamarrenak metatu';
 $string['timesplitting:decilesaccum_help'] = 'Denboraren zatiketa-metodo honek ikastaroa hamarrenetan zatitzen du (berdinak diren 10 zati), iragarpen bakoitza aurreko hamarrenetako datuetan oinarritutakoak dagoelarik.';
 $string['timesplitting:deciles_help'] = 'Denboraren zatiketa-metodo honek ikastaroa hamarrenetan zatitzen du (berdinak diren 10 zati), iragarpen bakoitza soilik aurreko duela gutxiko hamarrenetako datuetan oinarritutakoak dagoelarik.';
 $string['timesplitting:nosplitting'] = 'Zatiketa-metodorik ez';
-$string['timesplitting:nosplitting_help'] = 'Eredu honetarako ez da zatiketa-metodorik zehaztu.';
+$string['timesplitting:nosplitting_help'] = 'Eredu honetarako ez da denboraren zatiketa-metodorik zehaztu.';
 $string['timesplitting:quarters'] = 'Laurdenak';
 $string['timesplitting:quartersaccum'] = 'Laurdenak metatu';
 $string['timesplitting:quartersaccum_help'] = 'Denboraren zatiketa-metodo honek ikastaroa laurdenetan zatitzen du (berdinak diren 4 zati), iragarpen bakoitza aurreko laurdenetako datuetan oinarritutakoak dagoelarik.';
 $string['timesplitting:quarters_help'] = 'Denboraren zatiketa-metodo honek ikastaroa laurdenetan zatitzen du (berdinak diren 4 zati), iragarpen bakoitza soilik aurreko laurdeneko datuetan oinarritutakoak dagoelarik.';
 $string['timesplitting:singlerange'] = 'Tarte bakarra';
-$string['timesplitting:singlerange_help'] = 'Zatiketa-metodo honek ikastaro osoa tarte bakar gisa hartzen du';
+$string['timesplitting:singlerange_help'] = 'Denboraren zatiketa-metodo honek ikastaro osoa tarte bakar gisa hartzen du';
 $string['timesplitting:weekly'] = 'Asteka';
 $string['timesplitting:weeklyaccum'] = 'Asteka metatu';
 $string['timesplitting:weeklyaccum_help'] = 'Denboraren zatiketa-metodo honek ikastaroa asteka zatitzen du (7 egun), iragarpen bakoitza aurreko asteetako datuetan oinarritutakoak dagoelarik.';
@@ -2002,7 +2016,7 @@ $string['timesplitting:weekly_help'] = 'Denboraren zatiketa-metodo honek ikastar
 $string['timezone'] = 'Ordu eremua';
 $string['to'] = 'Noiz arte';
 $string['tocontent'] = '"{$a}" elementura';
-$string['tocreatenewaccount'] = 'Jauzi kontu berria sortzeko';
+$string['tocreatenewaccount'] = 'Salto egin kontu berria sortzera';
 $string['today'] = 'Gaur';
 $string['todaylogs'] = 'Gaurko agerraldiak';
 $string['toeveryone'] = 'guztiei';
@@ -2076,7 +2090,6 @@ $string['uploadthisfile'] = 'Fitxategi hau igo';
 $string['url'] = 'URLa';
 $string['used'] = 'Erabilia';
 $string['usedinnplaces'] = '{$a} lekuetan erabilia';
-$string['usemessageform'] = 'edo behealdeko formularioa erabili aukeratutako ikasleei mezua bidaltzeko';
 $string['user'] = 'Erabiltzailea';
 $string['useraccount'] = 'Erabiltzailearen kontua';
 $string['useractivity'] = 'Jarduera';
@@ -2154,8 +2167,7 @@ $string['withdisablednote'] = '{$a} (desgaituta)';
 $string['withoutuserdata'] = 'erabiltzaileen daturik gabe';
 $string['withselectedusers'] = 'Aukeratutako erabiltzaileekin...';
 $string['withselectedusers_help'] = '* Bidali mezua - Partaide bati edo gehiagori mezua bidaltzeko
-* Gehitu oharra - Aukeratutako partaideari oharra gehitzeko
-* Gehitu ohar bera - Ohar bera partaide bati baino gehiagori gehitzeko';
+* Gehitu oharra - Aukeratutako partaideari oharra gehitzeko';
 $string['withuserdata'] = 'Erabiltzaileen datuekin';
 $string['wordforstudent'] = 'Ikaslea izendatzeko hitza';
 $string['wordforstudenteg'] = 'Adibidez Ikaslea, Partaidea...';

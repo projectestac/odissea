@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_xmldb', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['check_indexes'] = '不明なDBインデックスを探す';
 $string['checkoraclesemantics'] = 'セマンティクスをチェックする';
 $string['check_oracle_semantics'] = '正しくない長さのセマンティクスを探す';
 $string['completelogbelow'] = '(検索結果に関する下記の完全なログをご覧ください。)';
-$string['confirmcheckbigints'] = 'この機能はあなたのMoodleサーバで<a href="http://tracker.moodle.org/browse/MDL-11038">潜在的に不正なインテジャフィールド</a>を調査しDB内のインテジャを適切に定義するためのSQL文を自動的に生成します (実行ではありません!)。
+$string['confirmcheckbigints'] = 'この機能はあなたのMoodleサーバで<a href="https://tracker.moodle.org/browse/MDL-11038">潜在的に不正なインテジャフィールド</a>を調査しDB内のインテジャを適切に定義するためのSQL文を自動的に生成します (実行ではありません!)。
 
 SQL文の生成後、あなたはSQL文をコピーして自分の好きなSQLインターフェースで安全に実行することができます (実行前にあなたのデータを忘れずにバックアップしてください)。
 
@@ -69,7 +69,7 @@ SQL文の生成後、あなたはSQL文をコピーして自分の好きなSQL�
 不明なインデックス調査を実行する前にあなたのMoodleリリースを最新のもの (+バージョン)  にバージョンアップすることを強くお勧めします。
 
 この機能はDBに対していかなる処理も実行しません (読むだけです)。ですからいつでも安全に実行することが可能です。';
-$string['confirmcheckoraclesemantics'] = 'この機能はあなたのMoodleサーバで<a href="http://tracker.moodle.org/browse/MDL-29322">BYTEセマンティクスを使用しているOracle varchar2カラム</a>を調査し代わりにCHARセマンティクスを使用するよう (cross-db互換性およびコンテンツ最大長に有利) カラムすべてを変換するためのSQL文を自動的に生成します (実行ではありません!)。
+$string['confirmcheckoraclesemantics'] = 'この機能はあなたのMoodleサーバで<a href="https://tracker.moodle.org/browse/MDL-29322">BYTEセマンティクスを使用しているOracle varchar2カラム</a>を調査し代わりにCHARセマンティクスを使用するよう (cross-db互換性およびコンテンツ最大長に有利) カラムすべてを変換するためのSQL文を自動的に生成します (実行ではありません!)。
 
 SQL文の生成後、あなたはSQL文をコピーして自分の好きなSQLインターフェースで安全に実行することができます (実行前にあなたのデータを忘れずにバックアップしてください)。
 
@@ -142,7 +142,7 @@ $string['integerincorrectlength'] = 'integerフィールドの長さが正しく
 $string['key'] = 'キー';
 $string['keynameempty'] = 'キー名を空白にすることはできません。';
 $string['keys'] = 'キー';
-$string['listreservedwords'] = '予約語一覧<br />(<a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a> を更新するため使用されます。)';
+$string['listreservedwords'] = '予約語一覧<br />(<a href="https://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a> を更新するため使用されます。)';
 $string['load'] = 'ロード';
 $string['main_view'] = 'メインビュー';
 $string['masterprimaryuniqueordernomatch'] = 'あなたの外部キーのフィールドは参照テーブルのユニークキーと同じ順番で記述する必要があります。';
@@ -168,6 +168,7 @@ $string['nowrongintsfound'] = '間違ったインテジャは見つかりませ�
 $string['nowrongoraclesemanticsfound'] = 'BYTEセマンティクスを使用しているOracleカラムは見つかりませんでした。あなたのDBに関して、さらなる処置は不要です。';
 $string['numberincorrectdecimals'] = 'numberフィールドの小数点以下桁数が正しくありません。';
 $string['numberincorrectlength'] = 'numberフィールドの長さが正しくありません。';
+$string['numberincorrectwholepart'] = 'ナンバーフィールドの整数部分が大き過ぎます。';
 $string['pendingchanges'] = 'メモ: あなたはこのファイルを変更しました。ファイルはいつでも保存することができます。';
 $string['pendingchangescannotbesaved'] = 'このファイルに変更が加えられましたが、保存できませんでした! ディレクトリおよび「install.xml」にウェブサーバからの書込み権があるかどうか確認してください。';
 $string['pendingchangescannotbesavedreload'] = 'このファイルに変更が加えられましたが、保存できませんでした! ディレクトリおよび「install.xml」にウェブサーバからの書込み権があるかどうか確認してください。確認後、このページをリロードすることで、あなたは変更を保存することができます。';
@@ -218,7 +219,7 @@ $string['yesmissingindexesfound'] = '<p>あなたのDBに不明なインデッ�
 <p>SQL文の実行後、これ以上不明なインデックスが見つかるかどうかこのユーティリティの再実行を強くお勧めします。</p>';
 $string['yeswrongdefaultsfound'] = '<p>あなたのDBに矛盾したデフォルト値が見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでインデックス作成を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
 <p>SQL文の実行後、これ以上矛盾したデフォルト値が見つかるかどうかこのユーティリティの再実行を強くお勧めします。</p>';
-$string['yeswrongintsfound'] = '<p>あなたのDBに不正なインテジャが見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでインテジャ作成を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
-<p>SQL文の実行後、これ以上不正なインテジャが見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';
-$string['yeswrongoraclesemanticsfound'] = '<p>あなたのOracleカラムに不正なBYTEセマンティクスが見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでOracleカラムの作成を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
+$string['yeswrongintsfound'] = '<p>あなたのDBに不正なインテジャが見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでインテジャの修正を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
+<p>修正後、さらに不正なインテジャが見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';
+$string['yeswrongoraclesemanticsfound'] = '<p>あなたのOracleカラムに不正なBYTEセマンティクスが見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでOracleカラムすべての変換を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
 <p>SQL文の実行後、これ以上不正なOracleカラムが見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';

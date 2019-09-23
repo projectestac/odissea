@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_bookmarks', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_admin_bookmarks', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_admin_bookmarks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['admin_bookmarks:addinstance'] = 'Gehitu kudeatzailearen markak bloke berria';
 $string['admin_bookmarks:myaddinstance'] = 'Gehitu kudeatzailearen markak bloke berria aginte-panelean';
 $string['pluginname'] = 'Kudeatzailearen markak';
-$string['privacy:metadata'] = 'Kudeatzailearen markak blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
+$string['privacy:metadata'] = 'Kudeatzailearen markak blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';

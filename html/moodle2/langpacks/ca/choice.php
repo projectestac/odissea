@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choice', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,7 +66,7 @@ $string['eventanswersubmitted'] = 'S\'ha realitzat una elecció';
 $string['eventanswerupdated'] = 'S\'ha actualitzat l\'elecció';
 $string['eventreportdownloaded'] = 'S\'ha baixat l\'informe d\'eleccions';
 $string['eventreportviewed'] = 'S\'ha visualitzat l\'informe d\'elecció';
-$string['expired'] = 'Aquesta activitat es va tancar el dia {$a} i ja no està disponible.';
+$string['expired'] = 'Aquesta activitat es va tancar el dia {$a}.';
 $string['full'] = '(Complet)';
 $string['havetologin'] = 'Abans de trametre una resposta heu d\'entrar amb el vostre nom d\'usuari i contrasenya.';
 $string['includeinactive'] = 'Inclou respostes dels usuaris inactius/suspesos';
@@ -96,7 +96,7 @@ $string['noguestchoose'] = 'Els usuaris visitants no poden respondre una consult
 $string['noresultsviewable'] = 'A hores d\'ara no es poden veure els resultats';
 $string['notanswered'] = 'No contestada encara';
 $string['notenrolledchoose'] = 'Només els usuaris inscrits poden respondre consultes.';
-$string['notopenyet'] = 'Aquesta activitat no estarà disponible fins al dia {$a}';
+$string['notopenyet'] = 'Aquesta activitat no estarà disponible fins el dia {$a}.';
 $string['numberofuser'] = 'Nombre de respostes';
 $string['numberofuserinpercentage'] = 'Percentatge de respostes (%)';
 $string['openafterclose'] = 'Heu especificat una data d\'obertura posterior a la data de tancament';
@@ -113,6 +113,11 @@ $string['publishafteranswer'] = 'Mostra els resultats als estudiants després qu
 $string['publishafterclose'] = 'Mostra els resultats als estudiants només després que s\'hagi tancat la consulta';
 $string['publishalways'] = 'Mostra sempre els resultats als estudiants';
 $string['publishanonymous'] = 'Publica els resultats anònimament, sense mostrar els noms dels estudiants';
+$string['publishinfoanonafter'] = 'Els resultats es publicaran de manera anònima després que contesteu.';
+$string['publishinfoanonclose'] = 'Els resultats es publicaran de manera anònima després que es tanqui l\'activitat.';
+$string['publishinfofullafter'] = 'Els resultats complets, que mostraran l\'elecció de cadascú, es publicaran després que contesteu.';
+$string['publishinfofullclose'] = 'Els resultats complets, que mostraran l\'elecció de cadascú, es publicaran després que es tanqui l\'activitat.';
+$string['publishinfonever'] = 'Els resultats d\'aquesta activitat no es publicaran després que contesteu.';
 $string['publishnames'] = 'Publica els resultats complets, amb els noms dels estudiants i les seves respostes';
 $string['publishnot'] = 'No publiquis els resultats';
 $string['removemychoice'] = 'Suprimeix la meva resposta';

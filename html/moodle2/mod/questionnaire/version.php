@@ -19,16 +19,15 @@
  *
  * @package mod_questionnaire
  * @author  Mike Churchward
- * @author  Joseph Rézeau
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version  = 2017111108;  // The current module version (Date: YYYYMMDDXX)
-$plugin->requires = 2017042800; // Moodle version.
+$plugin->version  = 2018110101;  // The current module version (Date: YYYYMMDDXX)
+$plugin->requires = 2018120300; // Moodle version.
 
 $plugin->component = 'mod_questionnaire';
 
-$plugin->release  = '3.4.4 (Build - 2018121000)';
+$plugin->release  = '3.6.1 (Build - 2019052400)';
 $plugin->maturity  = MATURITY_STABLE;

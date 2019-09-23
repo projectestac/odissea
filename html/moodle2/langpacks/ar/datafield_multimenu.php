@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_multimenu', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'datafield_multimenu', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   datafield_multimenu
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'حقل القائمة متعددة الخيارات';
+$string['pluginname'] = 'قوائم متعددة';
+$string['privacy:metadata'] = 'لا يخزن Multiple-selection menu  أي بيانات شخصية ، فهو يستخدم الجداول المحددة في mod_data.';

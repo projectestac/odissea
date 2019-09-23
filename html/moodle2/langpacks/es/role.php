@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'role', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -118,6 +118,7 @@ $string['comment:post'] = 'Enviar comentarios';
 $string['comment:view'] = 'Leer comentarios';
 $string['community:add'] = 'Usar el bloque comunidad para buscar hubs y encontrar cursos';
 $string['community:download'] = 'Descargar un curso del bloque comunidad';
+$string['competency:evidencedelete'] = 'Eliminar evidencia';
 $string['competency:templatemanage'] = 'Gestionar plantillas de plan de aprendizaje';
 $string['competency:templateview'] = 'Ver plantillas de plan de aprendizaje';
 $string['confirmaddadmin'] = '¿Realmente desea agregar al usuario <strong>{$a}</strong> como nuevo administrador del sitio?';
@@ -266,7 +267,7 @@ $string['noroleassignments'] = 'Este usuario no tiene ninguna tarea de rol en ni
 $string['noroles'] = 'No hay roles';
 $string['notabletoassignroleshere'] = 'Usted no puede asignar ningún rol aquí';
 $string['notabletooverrideroleshere'] = 'No tiene privilegios para anular los permisos de ningún rol aquí';
-$string['notes:manage'] = 'Gestionar calificaciones';
+$string['notes:manage'] = 'Gestionar notas';
 $string['notes:view'] = 'Ver notas';
 $string['notset'] = 'No ajustado';
 $string['overrideanotherrole'] = 'Anular otro rol';

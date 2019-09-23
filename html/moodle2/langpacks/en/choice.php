@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choice', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,7 +66,7 @@ $string['eventanswersubmitted'] = 'Choice made';
 $string['eventanswerupdated'] = 'Choice updated';
 $string['eventreportdownloaded'] = 'Choice report downloaded';
 $string['eventreportviewed'] = 'Choice report viewed';
-$string['expired'] = 'Sorry, this activity closed on {$a} and is no longer available';
+$string['expired'] = 'This activity closed on {$a}.';
 $string['full'] = '(Full)';
 $string['havetologin'] = 'You have to log in before you can submit your choice';
 $string['includeinactive'] = 'Include responses from inactive/suspended users';
@@ -77,6 +77,8 @@ $string['indicator:socialbreadth_help'] = 'This indicator is based on the social
 $string['limit'] = 'Limit';
 $string['limitanswers'] = 'Limit the number of responses allowed';
 $string['limitanswers_help'] = 'This option allows you to limit the number of participants that can select each choice option. When the limit is reached then no-one else can select that option.
+
+Please note that if you use this activity in group mode, then the limit is per group. For example, if the limit is set to 5, then 5 members of each group can select the option. If there are 3 groups, this would mean that up to 5 x 3 = 15 participants could select the option.
 
 If limits are disabled then any number of participants can select each of the options.';
 $string['limitno'] = 'Limit {no}';
@@ -99,7 +101,7 @@ $string['noguestchoose'] = 'Sorry, guests are not allowed to make choices.';
 $string['noresultsviewable'] = 'The results are not currently viewable.';
 $string['notanswered'] = 'Not answered yet';
 $string['notenrolledchoose'] = 'Sorry, only enrolled users are allowed to make choices.';
-$string['notopenyet'] = 'Sorry, this activity is not available until {$a}';
+$string['notopenyet'] = 'This activity is not available until {$a}.';
 $string['numberofuser'] = 'Number of responses';
 $string['numberofuserinpercentage'] = 'Percentage of responses';
 $string['openafterclose'] = 'You have specified an open date after the close date';
@@ -121,6 +123,11 @@ $string['publishafteranswer'] = 'Show results to students after they answer';
 $string['publishafterclose'] = 'Show results to students only after the choice is closed';
 $string['publishalways'] = 'Always show results to students';
 $string['publishanonymous'] = 'Publish anonymous results, do not show student names';
+$string['publishinfoanonafter'] = 'Anonymous results will be published after you answer.';
+$string['publishinfoanonclose'] = 'Anonymous results will be published after the activity is closed.';
+$string['publishinfofullafter'] = 'Full results, showing everyone\'s choices, will be published after you answer.';
+$string['publishinfofullclose'] = 'Full results, showing everyone\'s choices, will be published after the activity is closed.';
+$string['publishinfonever'] = 'The results of this activity will not be published after you answer.';
 $string['publishnames'] = 'Publish full results, showing names and their choices';
 $string['publishnot'] = 'Do not publish results to students';
 $string['removemychoice'] = 'Remove my choice';

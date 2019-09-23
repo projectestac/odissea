@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['err_nopunctuation'] = 'You must enter no punctuation characters here.';
 $string['err_numeric'] = 'You must enter a number here.';
 $string['err_rangelength'] = 'You must enter between {$a->format[0]} and {$a->format[1]} characters here.';
 $string['err_required'] = 'You must supply a value here.';
+$string['err_wrappingwhitespace'] = 'The value must not start or end with whitespace.';
 $string['err_wrongfileextension'] = 'Some files ({$a->wrongfiles}) cannot be uploaded. Only file types {$a->whitelist} are allowed.';
 $string['filesofthesetypes'] = 'Accepted file types:';
 $string['filetypesany'] = 'All file types';
@@ -73,7 +74,6 @@ $string['passwordunmaskrevealhint'] = 'Reveal';
 $string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Recently selected view mode of the file picker element.';
 $string['privacy:preference:filemanager_recentviewmode'] = 'Your preferred way of displaying files in the file picker is: {$a}';
 $string['requiredelement'] = 'Required field';
-$string['revealpassword'] = 'Reveal';
 $string['security'] = 'Security';
 $string['selectallornone'] = 'Select all/none';
 $string['selected'] = 'Selected';

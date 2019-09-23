@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_match', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_match
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,10 +37,11 @@ $string['nomatchinganswerforq'] = 'Πρέπει να ορίσετε μια απ�
 $string['notenoughqsandas'] = 'Πρέπει να δώσετε τουλάχιστον {$a->q} ερωτήσεις και {$a->a} απαντήσεις.';
 $string['notenoughquestions'] = 'Πρέπει να δώσετε τουλάχιστον {$a} ζευγάρια ερωτήσεων και απαντήσεων.';
 $string['pleaseananswerallparts'] = 'Απαντήστε σε όλα τα τμήματα της ερώτησης.';
-$string['pluginname'] = 'Αντιστοίχηση';
-$string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης τύπου Αντιστοίχησης';
-$string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης τύπου Αντιστοίχησης';
+$string['pluginname'] = 'Αντιστοίχιση';
+$string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης τύπου Αντιστοίχισης';
+$string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης τύπου Αντιστοίχισης';
 $string['pluginname_help'] = 'Οι ερωτήσεις αντιστοίχισης  απαιτούν από τον αποκρινόμενο να αντιστοιχίσει σωστά μια λίστα ονομάτων ή δηλώσεων (ερωτήσεων) με μια άλλη λίστα ονομάτων ή δηλώσεων (απαντήσεων).';
+$string['pluginname_link'] = 'ερώτηση/τύπος/αντιστοίχιση';
 $string['pluginnamesummary'] = 'Η απάντηση σε κάθε μια ερώτηση από ένα σύνολο υπο-ερωτημάτων πρέπει να επιλεχθεί από μια λίστα πιθανών απαντήσεων.';
 $string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις τύπου αντιστοίχισης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['shuffle'] = 'Ανακάτεμα';

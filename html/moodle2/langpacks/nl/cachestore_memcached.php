@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcached', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,7 +76,6 @@ In indien * Geclusterede servers inschakelen* is ingeschakeld onderaan, dan moet
 $string['sessionhandlerconflict'] = 'Waarschuwing: een memcache instantie ({$a}) is geconfigureerd om dezelfde memcached server te gebruiken voor sessies. Het leegmaken van alle caches zal er voor zorgen dat ook sessies worden verwijderd.';
 $string['setservers'] = 'Set servers';
 $string['setservers_help'] = 'Dt is de lijst van servers die aangepast zal worden wanneer gegevens in de cache gewijzigd worden. Meestal de fully qualified domain name voor elke server in de pool.
-
 De server in de lijst *Servers* hier boven **moet** in de lijst staan, zelfs al is het met een andere hostnaam.
 Servers moeten één per lijn gedefinieerd worden en moeten bestaan uit een servernaam en optioneel een poort.
 Als er geen poort opgegeven wordt, dan wordt de standaardpoort (11211) gebruikt.

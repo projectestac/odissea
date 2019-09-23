@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,7 @@ $string['bynameondate'] = 'por {$a->name} - {$a->date}';
 $string['cannotadd'] = 'Não foi possível adicionar o tópico a este fórum';
 $string['cannotadddiscussion'] = 'Criar novos tópicos neste fórum requer adesão a grupo.';
 $string['cannotadddiscussionall'] = 'Não tem permissão para criar um novo tópico disponível para todos os participantes';
+$string['cannotadddiscussiongroup'] = 'Não pode criar um tópico de discussão porque não é membro de qualquer grupo.';
 $string['cannotaddsubscriber'] = 'Não foi possível subscrever o utilizador com o ID {$a} a este fórum.';
 $string['cannotaddteacherforumto'] = 'Não foi possível criar o fórum de professores convertido na secção 0 da disciplina.';
 $string['cannotcreatediscussion'] = 'Não foi possível criar o novo tópico de discussão';
@@ -96,7 +97,7 @@ $string['completionrepliesdesc'] = 'O aluno deve responder a pelo menos {$a}';
 $string['completionrepliesgroup'] = 'Nº de respostas';
 $string['completionreplieshelp'] = 'número de respostas requerido para concluir a atividade';
 $string['configcleanreadtime'] = 'Hora do dia em que as mensagens antigas serão apagadas da tabela de \'não lidas\'.';
-$string['configdigestmailtime'] = 'Aos utilizadores que optarem por receber resumos do fórum por e-mail será enviado um resumo por dia. Esta configuração define a hora do dia em que o e-mail será enviado (a mensagem será enviada quando correr o cron após esta hora definida).';
+$string['configdigestmailtime'] = 'Será enviado um resumo por dia aos utilizadores que optarem por receber resumos do fórum por e-mail. Esta configuração define a hora do envio do e-mail (a mensagem será enviada quando for executado o cron após a hora definida).';
 $string['configdisplaymode'] = 'Modo predefinido de apresentação dos tópicos.';
 $string['configenablerssfeeds'] = 'Esta opção permite a criação de listas RSS a partir de qualquer fórum. É ainda necessário configurar cada fórum para que sejam geradas as listas correspondentes.';
 $string['configenabletimedposts'] = 'Defina como \'Sim\' caso pretenda ativar a configuração de \'Período de visualização\' ao publicar um novo tópico de discussão.';
@@ -105,7 +106,7 @@ $string['configmanydiscussions'] = 'Número máximo de tópicos exibidos por pá
 $string['configmaxattachments'] = 'Número máximo predefinido para o número de anexos permitidos por mensagem.';
 $string['configmaxbytes'] = 'Tamanho máximo predefinido para todos os anexos de uma mensagem do fórum (sujeito a outros limites impostos na configuração da disciplina e do servidor)';
 $string['configoldpostdays'] = 'Número de dias para uma mensagem ser considerada como lida.';
-$string['configreplytouser'] = 'Quando um tópico de fórum é enviado por e-mail, deverá conter o endereço de e-mail do autor para que os destinatários possam responder diretamente em vez de usarem o fórum? Se selecionar \'Sim\', os utilizadores poderão, a partir do seu perfil, optar por manter o seu endereço de e-mail provado.';
+$string['configreplytouser'] = 'Quando um tópico de fórum é enviado por e-mail, deverá conter o endereço de e-mail do autor para que os destinatários possam responder diretamente em vez de usarem o fórum? Se selecionar \'Sim\', os utilizadores poderão, a partir do seu perfil, optar por manter o seu endereço de e-mail privado.';
 $string['configrssarticlesdefault'] = 'Se as listas RSS estiverem ativas, esta configuração define o número de artigos (tanto discussões como mensagens).';
 $string['configrsstypedefault'] = 'Se as listas RSS estiverem ativas, esta configuração define o tipo de atividade predefinida.';
 $string['configshortpost'] = 'Qualquer mensagem abaixo deste tamanho (número de caracteres, sem incluir HTML) será considerada curta.';
@@ -151,6 +152,7 @@ $string['discussionpin'] = 'Destacar';
 $string['discussionpinned'] = 'Destacado';
 $string['discussionpinned_help'] = 'As discussões em destaque irão aparecer no topo do fórum.';
 $string['discussions'] = 'Tópicos';
+$string['discussionsplit'] = 'A discussão foi dividida';
 $string['discussionsstartedby'] = 'Tópicos iniciados por {$a}';
 $string['discussionsstartedbyrecent'] = 'Tópicos iniciados recentemente por {$a}';
 $string['discussionsstartedbyuserincourse'] = 'Discussões iniciadas por {$a->fullname} em {$a->coursename}';
@@ -173,9 +175,6 @@ $string['edit'] = 'Editar';
 $string['editedby'] = 'Editado por {$a->name} em {$a->date}';
 $string['editedpostupdated'] = '{$a} mensagens foram atualizada(s)';
 $string['editing'] = 'A editar';
-$string['emaildigest_0'] = 'Receberá um e-mail por tópico de fórum.';
-$string['emaildigest_1'] = 'Receberá um e-mail por dia com o sumário dos conteúdos completos de cada tópico do fórum.';
-$string['emaildigest_2'] = 'Receberá um e-mail por dia com o sumário dos assuntos de cada tópico do fórum.';
 $string['emaildigestcompleteshort'] = 'Completo';
 $string['emaildigestdefault'] = 'Predefinido ({$a})';
 $string['emaildigestoffshort'] = 'Sem sumário';
@@ -190,8 +189,6 @@ $string['emaildigesttype_help'] = 'Tipos de sumários que vai receber diariament
 *Completo: irá receber um e-mail diário com o conteúdo completo de cada mensagem publicada no fórum;
 
 *Assuntos - irá receber um e-mail diário com os assuntos de cada mensagem publicada no fórum.';
-$string['emaildigestupdated'] = 'A opção de e-mail com sumários de fóruns foi alterada para \'{$a->maildigesttitle}\' para o fórum \'{$a->forum}\'. {$a->maildigestdescription}';
-$string['emaildigestupdated_default'] = 'A sua configuração predefinida de perfil para \'{$a->maildigesttitle}\' foi usada para o fórum \'{$a->forum}\'. {$a->maildigestdescription}.';
 $string['emptymessage'] = 'Foi encontrado um erro na sua mensagem. Ou estava em branco ou continha um anexo demasiado grande. As suas alterações não foram gravadas.';
 $string['erroremptymessage'] = 'O texto da mensagem não pode estar em branco';
 $string['erroremptysubject'] = 'A assunto da mensagem não pode estar em branco';
@@ -237,7 +234,7 @@ $string['forumblockingalmosttoomanyposts'] = 'Esta a aproximar-se do número lim
 $string['forumbodydeleted'] = 'O conteúdo deste tópico do fórum foi removido e não pode voltar a ser acedido.';
 $string['forumbodyhidden'] = 'Não pode visualizar esta mensagem, provavelmente porque ainda não submeteu uma mensagem no tópico de discussão, o tempo máximo de edição ainda não terminou, a discussão ainda não iniciou ou já terminou.';
 $string['forum:canoverridediscussionlock'] = 'Responder a tópicos de discussão bloqueados';
-$string['forum:canposttomygroups'] = 'Pode publicar para todos os grupos a que tem acesso';
+$string['forum:canposttomygroups'] = 'Publicar para todos os grupos a que tem acesso';
 $string['forum:createattachment'] = 'Criar anexos';
 $string['forum:deleteanypost'] = 'Apagar qualquer mensagem (em qualquer altura)';
 $string['forum:deleteownpost'] = 'Apagar as suas próprias mensagens (dentro do prazo)';
@@ -396,8 +393,8 @@ $string['notpartofdiscussion'] = 'Esta mensagem não faz parte de um tópico de 
 $string['notrackforum'] = 'Não assinalar mensagens não lidas';
 $string['notsubscribed'] = 'Subscrever';
 $string['noviewdiscussionspermission'] = 'Não tem as permissões necessárias para ver os tópicos deste fórum.';
-$string['nowallsubscribed'] = 'Efetuada a subscrição em todos os fóruns de {$a}.';
-$string['nowallunsubscribed'] = 'Cancelada a subscrição em todos os fóruns de {$a}.';
+$string['nowallsubscribed'] = 'Foi efetuada a subscrição em todos os fóruns de {$a}.';
+$string['nowallunsubscribed'] = 'Foi cancelada a subscrição em todos os fóruns de {$a}.';
 $string['nownotsubscribed'] = '{$a->name} NÃO receberá cópias do fórum \'{$a->forum}\' por e-mail.';
 $string['nownottracking'] = 'Já não serão assinaladas as mensagens não lidas por {$a->name} em \'{$a->forum}\'.';
 $string['nowsubscribed'] = '{$a->name} receberá cópias do fórum \'{$a->forum}\' por e-mail.';
@@ -416,16 +413,13 @@ $string['parentofthispost'] = 'Ascendente desta mensagem';
 $string['permalink'] = 'Hiperligação direta';
 $string['pluginadministration'] = 'Administração do Fórum';
 $string['pluginname'] = 'Fórum';
-$string['postadded'] = '<p>A sua mensagem foi inserida com sucesso.</p><p>Tem {$a} para a editar se desejar fazer alterações.</p>';
+$string['postadded'] = '<p>A sua mensagem foi submetida com sucesso.</p><p>Tem {$a} para a editar, caso pretenda fazer alterações.</p>';
 $string['postaddedsuccess'] = 'A sua mensagem foi submetida com sucesso.';
 $string['postaddedtimeleft'] = 'Tem {$a} para editar se desejar fazer alterações.';
 $string['postbymailsuccess'] = 'O seu tópico de fórum com o assunto "{$a->subject}" foi adicionado com sucesso. Pode visualizá-lo em {$a->discussionurl}.';
 $string['postbymailsuccess_html'] = 'O seu tópico de fórum <a href="{$a->discussionurl}">forum post</a> com o assunto "{$a->subject}" foi publicado com sucesso.';
 $string['postbyuser'] = '{$a->post} por {$a->user}';
 $string['postincontext'] = 'Ver mensagem no seu contexto';
-$string['postmailinfo'] = 'Esta é uma cópia de uma mensagem enviada para {$a}.
-
-Para submeter uma resposta, clique em:';
 $string['postmailinfolink'] = 'Esta é uma cópia de uma mensagem publicada na disciplina {$a->coursename}.
 
 Para responder à mensagem clique na seguinte hiperligação: {$a->replylink}';
@@ -489,11 +483,11 @@ $string['privacy:metadata:forum_track_prefs'] = 'Informação sobre que fóruns 
 $string['privacy:metadata:forum_track_prefs:forumid'] = 'O fórum que tem a sinalização de mensagens ativa.';
 $string['privacy:metadata:forum_track_prefs:userid'] = 'O ID do utilizador com que se relacionam as preferências de sinalização de mensagens.';
 $string['privacy:metadata:preference:autosubscribe'] = 'Se subscreve a discussão quando responde a tópicos da discussão.';
-$string['privacy:metadata:preference:maildigest'] = 'A preferência global de Sumário de fóruns';
+$string['privacy:metadata:preference:maildigest'] = 'A preferência global dos sumários de fóruns';
 $string['privacy:metadata:preference:markasreadonnotification'] = 'Se deve marcar os tópicos dos fóruns como lidos quando os recebe como mensagens.';
 $string['privacy:metadata:preference:trackforums'] = 'Se ativa a sinalização de mensagens nos fóruns.';
 $string['privacy:postwasread'] = 'Este tópico foi lido primeiro em  {$a->firstread} e mais recentemente em {$a->lastread}';
-$string['privacy:readtrackingdisabled'] = 'Escolheu não assinalar os tópicos que leu neste fórum';
+$string['privacy:readtrackingdisabled'] = 'Escolheu não assinalar os tópicos que já leu neste fórum';
 $string['privacy:request:delete:discussion:name'] = 'Apagado a pedido do autor';
 $string['privacy:request:delete:post:message'] = 'O conteúdo deste tópico foi apagado a pedido do autor.';
 $string['privacy:request:delete:post:subject'] = 'Apagado a pedido do autor';
@@ -523,7 +517,7 @@ $string['resetforumsall'] = 'Apagar todas as mensagens';
 $string['resetsubscriptions'] = 'Cancelar todas as subscrições ao fórum';
 $string['resettrackprefs'] = 'Apagar todas as preferências de assinalar mensagens não lidas dos fóruns';
 $string['rssarticles'] = 'Número de artigos recentes na lista RSS';
-$string['rssarticles_help'] = 'Esta opção permite-lhe selecionar o número de artigos a incluir na lista RSS.O número mais adequado deverá ser entre 5 a 20.';
+$string['rssarticles_help'] = 'Esta opção permite-lhe selecionar o número de artigos a incluir na lista RSS. O número mais adequado deverá ser entre 5 a 20.';
 $string['rsssubscriberssdiscussions'] = 'Lista RSS de tópicos de discussão';
 $string['rsssubscriberssposts'] = 'Lista RSS de tópicos de mensagens';
 $string['rsstype'] = 'Lista RSS para esta atividade';

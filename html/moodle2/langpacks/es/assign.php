@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assign', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['addnewattempt_help'] = 'Se creará una nueva entrega en blanco para pod
 $string['addnewgroupoverride'] = 'Añadir excepción de grupo';
 $string['addnewuseroverride'] = 'Añadir excepción de usuario';
 $string['addsubmission'] = 'Agregar entrega';
+$string['addsubmission_help'] = 'Todavía no has realizado una entrega';
 $string['allocatedmarker'] = 'Evaluador asignado';
 $string['allocatedmarker_help'] = 'Evaluador asignado a esta entrega';
 $string['allowsubmissions'] = 'Permitir al usurio continuar haciendo entregas a esta tarea';
@@ -111,7 +112,6 @@ $string['blindmarking_help'] = 'La ocultación de identidad al calificar oculta 
 $string['calendardue'] = '{$a} fecha de entrega';
 $string['calendargradingdue'] = '{$a} pendiente de revisión';
 $string['changefilters'] = 'Cambiar filtros';
-$string['changegradewarning'] = 'Esta tarea tiene envíos calificados y si se cambia la calificación no se recalcularán automáticamente las calificaciones de los envíos existentes. Debe volver a calificar todos los envíos previos, si quiere cambiar la calificación';
 $string['changeuser'] = 'Cambiar usuario';
 $string['choosegradingaction'] = 'Acción sobre las calificaciones';
 $string['choosemarker'] = 'Seleccione...';
@@ -436,7 +436,7 @@ $string['submissioncopiedtext'] = 'Se ha realizado una copia de sus envíos prev
 Puede ver el estado de sus tareas enviadas en:
 
 {$a->url}';
-$string['submissiondrafts'] = 'Requiera aceptación del usuario pulsando sobre el botón';
+$string['submissiondrafts'] = 'Requiere que los alumnos pulsen el botón de envío';
 $string['submissiondrafts_help'] = 'Si está habilitado, los estudiantes tendrán que pulsar un botón de Entrega para declarar que es su entrega definitiva. Esto permite que los estudiantes puedan tener una versión borrador de su entrega en el sistema. Si esta opción es cambiada de "No" a "Si" después de que los estudiantes hayan realizado algunas entregas, estas se considerarán como definitivas.';
 $string['submissioneditable'] = 'El estudiante puede editar esta entrega';
 $string['submissionempty'] = 'No se ha presentado nada.';

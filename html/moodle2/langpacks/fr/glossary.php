@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Ajouter une catégorie';
 $string['addcomment'] = 'Ajouter un commentaire';
 $string['addentry'] = 'Ajouter un nouvel article';
 $string['addingcomment'] = 'Ajout d\'un commentaire';
@@ -105,6 +106,7 @@ $string['defaultsortkey'] = 'Clef de tri par défaut';
 $string['defaultsortorder'] = 'Ordre de tri par défaut';
 $string['definition'] = 'Définition';
 $string['definitions'] = 'Définitions';
+$string['deletecategory'] = 'Supprimer la catégorie';
 $string['deleteentry'] = 'Supprimer l\'article';
 $string['deleteentrya'] = 'Supprimer l\'article : {$a}';
 $string['deletenotenrolled'] = 'Supprimer les articles des utilisateurs non inscrits';
@@ -126,7 +128,7 @@ $string['displayformatfullwithoutauthor'] = 'Complet sans auteur';
 $string['displayformat_help'] = 'Il existe 7 formats d\'affichages :
 
 * Simple, style dictionnaire : ressemble à un dictionnaire avec des articles séparés. Les auteurs ne sont pas affichés. Les annexes sont proposées sous forme de liens.
-* Continu sans auteur : les articles sont affichés les unes après les autres, sans autre séparateur que l\'icône d\'édition.
+* Continu sans auteur : les articles sont affichés les uns après les autres, sans autre séparateur que l\'icône d\'édition.
 * Complet avec auteur : un affichage ressemblant à celui des forums, avec les informations sur l\'auteur. Les annexes sont proposées sous forme de liens.
 * Complet sans auteur : un affichage ressemblant à celui des forums, sans les informations sur l\'auteur. Les annexes sont proposées sous forme de liens.
 * Encyclopédie : identique au format « Complet avec auteur », mais les images en annexe sont affichées en ligne.
@@ -139,6 +141,7 @@ $string['duplicateentry'] = 'Doublon';
 $string['editalways'] = 'Toujours autoriser la modification';
 $string['editalways_help'] = 'Ce réglage détermine si les articles sont toujours modifiables ou si les étudiants ne peuvent modifier leurs articles que durant une période définie (habituellement de 30 minutes).';
 $string['editcategories'] = 'Modifier les catégories';
+$string['editcategory'] = 'Modifier la catégorie';
 $string['editentry'] = 'Modifier l\'article';
 $string['editentrya'] = 'Modifier l\'article : {$a}';
 $string['editingcomment'] = 'Modification commentaire';
@@ -152,6 +155,7 @@ $string['entrydeleted'] = 'Article supprimé';
 $string['entryexported'] = 'Article exporté avec succès';
 $string['entryishidden'] = '(Cet article est actuellement masqué)';
 $string['entryleveldefaultsettings'] = 'Réglages par défaut des articles';
+$string['entrylink'] = 'Lien vers l\'article : {$a}';
 $string['entrysaved'] = 'Cet article a été enregistré';
 $string['entryupdated'] = 'Cet article a été mis à jour';
 $string['entryusedynalink'] = 'Article lié automatiquement';
@@ -202,7 +206,7 @@ $string['glossary:manageentries'] = 'Gérer les articles';
 $string['glossary:rate'] = 'Évaluer les articles';
 $string['glossarytype'] = 'Type de glossaire';
 $string['glossarytype_help'] = 'Un glossaire principal est un glossaire dans lequel les articles d\'un glossaire secondaire peuvent être importés. Il ne peut y avoir qu\'un seul glossaire principal par cours. Si la fonctionnalité d\'importation d\'articles de glossaire n\'est pas requise, tous ses glossaires du cours peuvent être des glossaires secondaires.';
-$string['glossary:view'] = 'Voir les glossaires';
+$string['glossary:view'] = 'Consulter les glossaires';
 $string['glossary:viewallratings'] = 'Voir toutes les évaluations brutes données par des participants';
 $string['glossary:viewanyrating'] = 'Voir toutes les évaluations globales';
 $string['glossary:viewrating'] = 'Voir sa propre évaluation globale reçue';

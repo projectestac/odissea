@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_meta', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['coursesort'] = 'Ordenatu ikastaro-zerrenda';
 $string['coursesort_help'] = 'Honek zehazten du esteka daitekeen ikastaro-zerrenda ikastaroen ordenaren arabera ordenatzen diren (Gunearen Kudeaketa > Ikastaroak > Kudeatu ikastaroak eta kategoriak atalean zehaztutako ordena) edo alfabetikoki ordenatzen diren ikastaroen ezarpenen arabera.';
 $string['creategroup'] = 'Sortu beste talde bat';
 $string['defaultgroupnametext'] = '{$a->name} ikastaroa {$a->increment}';
+$string['enrolmetasynctask'] = 'Ikastaroen meta-esteka matrikulazioen sinkronizazio zeregina';
 $string['linkedcourse'] = 'Ikastaroaren esteka';
 $string['meta:config'] = 'Konfiguratu meta-matrikulaziorako instantziak';
 $string['meta:selectaslinked'] = 'Aukeratu ikastaroa meta-estekatu gisa';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assign', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['addnewattempt_help'] = 'Dit zal een nieuwe lege inzending voor je maken
 $string['addnewgroupoverride'] = 'Groep overschrijven toevoegen';
 $string['addnewuseroverride'] = 'Gebruiker overschrijven toevoegen';
 $string['addsubmission'] = 'Inzending toevoegen';
+$string['addsubmission_help'] = 'Je hebt nog geen inzending ingediend';
 $string['allocatedmarker'] = 'Toegewezen beoordelaar';
 $string['allocatedmarker_help'] = 'Beoordelaar toegewezen aan deze inzending';
 $string['allowsubmissions'] = 'Sta de gebruiker toe om inzendingen te blijven maken voor deze opdracht.';
@@ -108,7 +109,6 @@ $string['blindmarking_help'] = 'Blind beoordelen verbergt de identiteit van leer
 $string['calendardue'] = '{$a} moet worden ingeleverd';
 $string['calendargradingdue'] = '{$a} moet worden beoordeeld';
 $string['changefilters'] = 'Wijzig filters';
-$string['changegradewarning'] = 'Deze opdracht heeft beoordeelde inzendingen en het wijzigen van het cijfer zal de bestaande cijfers niet herberekenen. Je moet alle bestaande inzendingen herbeoordelen als je het cijfer wil wijzigen.';
 $string['changeuser'] = 'Wijzig gebruiker';
 $string['choosegradingaction'] = 'Beoordelingsactie';
 $string['choosemarker'] = 'Kies...';
@@ -128,14 +128,15 @@ $string['couldnotconvertsubmission'] = 'Kon inzending van de opdracht niet conve
 $string['couldnotcreatecoursemodule'] = 'Kon cursusmodule niet aanmaken.';
 $string['couldnotcreatenewassignmentinstance'] = 'Kon geen nieuwe opdrachtinstantie maken.';
 $string['couldnotfindassignmenttoupgrade'] = 'Kon geen oude opdracht-instantie vinden om te upgraden.';
+$string['currentassigngrade'] = 'Huidige cijfer in opdracht';
 $string['currentattempt'] = 'Deze poging {$a}';
 $string['currentattemptof'] = 'Dit is poging {$a->attemptnumber} ({$a->maxattempts} pogingen zijn toegestaan).';
 $string['currentgrade'] = 'Huidig cijfer in de cijferlijst';
 $string['cutoffdate'] = 'Afsluitdatum';
 $string['cutoffdatecolon'] = 'Einde termijn: {$a}';
-$string['cutoffdatefromdatevalidation'] = 'Afsluitdatum moet na de startdatum zijn.';
+$string['cutoffdatefromdatevalidation'] = 'Afsluitdatum kan niet voor startdatum zijn.';
 $string['cutoffdate_help'] = 'Indien ingesteld zal een opdracht geen inzendingen meer ontvangen na deze datum zonder extra tijd';
-$string['cutoffdatevalidation'] = 'Afsluitdatum moet na de einddatum zijn.';
+$string['cutoffdatevalidation'] = 'Afsluitdatum kan niet voor einddatum zijn.';
 $string['defaultlayout'] = 'Standaard layout herstellen';
 $string['defaultsettings'] = 'Standaard opdrachtinstellingen';
 $string['defaultsettings_help'] = 'Deze instellingen definiëren de standaardinstellingen voor alle nieuwe opdrachten.';
@@ -152,7 +153,7 @@ $string['duedatecolon'] = 'Klaar tegen: {$a}';
 $string['duedate_help'] = 'Dit is wanneer de opdracht moet afgegeven worden. Indien opdrachten te laat mogen afgegeven worden, dan zullen alle opdrachten die na deze datum ingestuurd zijn als laat gemarkeerd worden. Om te verhinderen dat opdrachten na een bepaalde datum insgestuurd worden, kun je een afsluitdatum instellen.';
 $string['duedateno'] = 'Geen uiterste inleverdatum';
 $string['duedatereached'] = 'De datum waarop deze opdracht moest afgegeven worden is nu voorbij.';
-$string['duedatevalidation'] = 'De datum waarop de opdrachten moeten afgegeven worden moet na de datum vallen vanaf wanneer opdrachten kunnen afgegeven worden.';
+$string['duedatevalidation'] = 'Einddatum kan niet voor startdatum zijn.';
 $string['duplicateoverride'] = 'Kopieer overschrijving';
 $string['editaction'] = 'Acties...';
 $string['editattemptfeedback'] = 'Bewerk cijfer een feedback van poging nummer {$a}';
@@ -161,7 +162,7 @@ $string['editingstatus'] = 'Status bewerken';
 $string['editonline'] = 'Bewerk online';
 $string['editoverride'] = 'Bewerk overschrijving';
 $string['editsubmission'] = 'Bewerk inzending';
-$string['editsubmission_help'] = 'Wijzig je inzending';
+$string['editsubmission_help'] = 'Je kunt je inzending nog steeds wijzigen';
 $string['editsubmissionother'] = 'Bewerk inzending voor {$a}';
 $string['enabled'] = 'Ingeschakeld';
 $string['errornosubmissions'] = 'Er zijn geen inzendingen om te downloaden';
@@ -230,6 +231,7 @@ $string['gradecanbechanged'] = 'Het cijfer kan gewijzigd worden';
 $string['gradechangessaveddetail'] = 'De wijzigingen aan het cijfer en feedback werden bewaard';
 $string['graded'] = 'Beoordeeld';
 $string['gradedby'] = 'Beoordeeld door';
+$string['gradedfollowupsubmit'] = 'Beoordeeld - opvolgingsinzending ontvangen';
 $string['gradedon'] = 'Beoordeeld op';
 $string['gradelocked'] = 'Dit cijfer is geblokkeerd of overschreven in de cijferlijst.';
 $string['gradeoutof'] = 'Cijfer op {$a}';
@@ -290,7 +292,7 @@ $string['markerfilternomarker'] = 'Geen beoordelaar';
 $string['markingallocation'] = 'Gebruik toewijzing beoordelaars';
 $string['markingallocation_help'] = 'Indien dit ingeschakeld is samen met de beoordelingsworkflow, dan kun je beoordelaars toewijzen aan individuele leerlingen.';
 $string['markingworkflow'] = 'Gebruik beoordelings-workflow';
-$string['markingworkflow_help'] = 'Indien ingeschakeld zullen beoordelingen door een workflow gaan, vooraleer ze aan leerlingen vrijgegeven worden. Dit maakt meerdere beoordelingssessies toe zodat de cijfers tegelijk aan alle leerlingen gegeven kunnen worden.';
+$string['markingworkflow_help'] = 'Indien ingeschakeld zullen beoordelingen door een workflow gaan, vooraleer ze aan leerlingen vrijgegeven worden. Dit laat meerdere beoordelingssessies toe zodat de cijfers tegelijk aan alle leerlingen gegeven kunnen worden.';
 $string['markingworkflowstate'] = 'Status van de beoordelings-workflow';
 $string['markingworkflowstate_help'] = 'De lijst van workflow statussen waaruit je kunt kiezen hangt af van je rechten in deze opdracht. Dit kan bijvoorbeeld zijn:
 
@@ -378,7 +380,7 @@ $string['preventsubmissions'] = 'Verhinder de gebruiker om meer in te sturen voo
 $string['preventsubmissionsshort'] = 'Verhinder het wijzigen van ingestuurde opdrachten';
 $string['previous'] = 'Vorige';
 $string['privacy:attemptpath'] = 'poging {$a}';
-$string['privacy:blindmarkingidentifier'] = 'De identificatie, gebruikt voor blind beoordelen.';
+$string['privacy:blindmarkingidentifier'] = 'De identificatie, gebruikt voor blind beoordelen';
 $string['privacy:gradepath'] = 'cijfer';
 $string['privacy:metadata:assigndownloadasfolders'] = 'Een gebruikersvoorkeur waarmee ingesteld wordt of meerdere inzendingen in mappen moeten gedownload worden';
 $string['privacy:metadata:assignfeedbackpluginsummary'] = 'Feedback voor de opdracht.';
@@ -463,7 +465,7 @@ $string['submissioncopiedtext'] = 'Je hebt een kopie gemaakt van je vorige pogin
 Je kunt de status van je inzending zien:
 
 {$a->url}';
-$string['submissiondrafts'] = 'Verwacht van leerlingen dat ze op de "Instuur"-knop klikken';
+$string['submissiondrafts'] = 'Leerlingen moeten op de "Instuur"-knop klikken';
 $string['submissiondrafts_help'] = 'Indien ingeschakeld, zullen leerlingen op een instuurknop moeten klikken om hun opdracht als voltooid te verklaren. Dit maakt het mogelijk dat leerlingen een kladwerk van de opdracht op het systeem bewaren. Indien deze instelling van "Nee" naar "Ja" gewijzigd wordt, nadat leerlingen al iets ingestuurd hebben, dan zullen die ingestuurde opdrachten als voltooid beschouwd worden.';
 $string['submissioneditable'] = 'Leerling kan zijn ingestuurde opdracht bewerken';
 $string['submissionempty'] = 'Er is niets ingestuurd';

@@ -1,10 +1,10 @@
-Plugin local Clickedu (Moodle 3.3 i 3.4)
+Plugin local Clickedu (Moodle 3.6)
 ==================================
 
 Este plugin integra Moodle con la plataforma Clickedu.
 
-- CreaciÃ³n de usaurios
-- SincronizaciÃ³n de cursos
-- SincronizaciÃ³n de contenidos
+- Creación de usaurios
+- Sincronización de cursos
+- Sincronización de contenidos
 - Web service de calificaciones
 - Single Sign-On desde Clickedu

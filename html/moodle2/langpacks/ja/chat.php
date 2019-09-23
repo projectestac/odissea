@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'chat', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = 'あなたにはまもなく始まるチャットセッションがあります。';
-$string['ajax'] = 'Ajaxバージョン';
+$string['ajax'] = 'AJAXバージョン';
 $string['autoscroll'] = 'オートスクロール';
 $string['beep'] = 'ビープ';
 $string['bubble'] = 'バブル';
@@ -45,7 +45,7 @@ $string['chattime'] = '次回のチャット時間';
 $string['chat:view'] = 'チャット活動を表示する';
 $string['compact'] = 'コンパクト';
 $string['composemessage'] = 'メッセージを作成する';
-$string['configmethod'] = 'Ajaxチャットメソッドではサーバが定期的に更新するAjaxベースのチャットインターフェースを提供します。ノーマルチャットメソッドではクライアントが定期的にサーバにアクセスして内容を更新します。このメソッドは設定を必要とせず、どこでも動作します。しかし、チャット参加者が多くなった場合、サーバに大きな負荷がかかります。Chatサーバデーモンを使用する場合、Unixのシェルアクセスが必要です。また、Chatサーバデーモンにより軽快なチャット環境を提供することができます。';
+$string['configmethod'] = 'AJAXチャットメソッドでは更新のため定期的にサーバにアクセスするためAJAXベースのチャットインターフェースを提供します。ノーマルチャットメソッドではクライアントが定期的にサーバにアクセスして内容を更新します。このメソッドは設定を必要とせず、どこでも動作しまが、チャット参加者が多くなった場合、サーバに大きな負荷がかかります。Chatサーバデーモンを使用する場合、Unixのシェルアクセスが必要ですが、結果として速い拡張可能なチャット環境となります。';
 $string['confignormalupdatemode'] = 'チャットルームは通常HTTP 1.1の<em>Keep-Alive</em>機能を使用して効果的に更新されます。 しかし、この方法はサーバに対して非常に負荷がかかります。さらに進歩した方法はチャットルームの更新に<em>Stream</em>を使用するものです。<em>Stream</em>を使用する方法 (chatdメソッドに似ています) は<em>Keep-Alive</em>機能の使用より優れていますが、あなたのサーバではサポートされていない場合があります。';
 $string['configoldping'] = 'ユーザの応答がなくなってから、どのくらいの時間 (秒数) で退室したとみなしますか? これは単に上限であり通常の退室は非常に速く検出されます。小さな値を設定する場合、さらにサーバに対して負荷がかかります。ノーマルメソッドを使用している場合、2* chat_refresh_roomより小さな値を<strong>設定しないでください</strong>。';
 $string['configrefreshroom'] = 'どのくらいのタイミング (秒数) でチャットルームをリフレッシュしますか? この値を小さくすればチャットルームはレスポンスが良いように見えますが、多くの人がチャットをする場合、サーバにかかる負荷が高くなります。あなたが<em>Stream</em>更新を使用している場合、高いリフレッシュ頻度を設定することができます -- 2を試してみてください。';
@@ -66,8 +66,8 @@ $string['errornousers'] = 'ユーザが見つかりませんでした!';
 $string['eventmessagesent'] = 'メッセージが送信されました。';
 $string['eventsessionsviewed'] = 'セッションが閲覧されました。';
 $string['explaingeneralconfig'] = 'これらの設定は<strong>常に</strong>使用されます。';
-$string['explainmethoddaemon'] = 'これらの設定はchat_methodに「Chatサーバデーモン」を選択した場合<strong>のみ</strong>影響します。';
-$string['explainmethodnormal'] = 'これらの設定はchat_methodに「ノーマルメソッド」を選択した場合<strong>のみ</strong>影響します。';
+$string['explainmethoddaemon'] = 'これらの設定はチャットメソッドとして「Chatサーバデーモン」が選択された場合のみ影響します。';
+$string['explainmethodnormal'] = 'これらの設定はチャットメソッドとして「ノーマル」が選択された場合のみ影響します。';
 $string['generalconfig'] = '一般設定';
 $string['idle'] = 'アイドル';
 $string['indicator:cognitivedepth'] = 'チャット認知的';
@@ -86,9 +86,9 @@ $string['messageexit'] = 'このチャットから {$a} が退室しました。
 $string['messages'] = 'メッセージ';
 $string['messageyoubeep'] = 'あなたは {$a} にビープしました。';
 $string['method'] = 'Chatメソッド';
-$string['methodajax'] = 'Ajaxメソッド';
+$string['methodajax'] = 'AJAX';
 $string['methoddaemon'] = 'Chatサーバデーモン';
-$string['methodnormal'] = 'ノーマルメソッド';
+$string['methodnormal'] = 'ノーマル';
 $string['modulename'] = 'チャット';
 $string['modulename_help'] = 'チャット活動において参加者はテキストベースのリアルタイム同時ディスカッションを実施することができます。
 

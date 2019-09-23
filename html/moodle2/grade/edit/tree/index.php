@@ -22,6 +22,8 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+define('NO_OUTPUT_BUFFERING', true); // The progress bar may be used here.
+
 require_once '../../../config.php';
 require_once $CFG->dirroot.'/grade/lib.php';
 require_once $CFG->dirroot.'/grade/report/lib.php'; // for preferences
@@ -274,13 +276,13 @@ echo $OUTPUT->container_start('buttons mdl-align');
 if ($moving) {
     echo $OUTPUT->single_button(new moodle_url('index.php', array('id'=>$course->id)), get_string('cancel'), 'get');
 } else {
-    echo $OUTPUT->single_button(new moodle_url('category.php', array('courseid'=>$course->id)), get_string('addcategory', 'grades'), 'get');
-    echo $OUTPUT->single_button(new moodle_url('item.php', array('courseid'=>$course->id)), get_string('additem', 'grades'), 'get');
-
+    echo $OUTPUT->single_button(new moodle_url('item.php', array('courseid' => $course->id)), get_string('additem',
+        'grades'), 'get');
     if (!empty($CFG->enableoutcomes)) {
         echo $OUTPUT->single_button(new moodle_url('outcomeitem.php', array('courseid'=>$course->id)), get_string('addoutcomeitem', 'grades'), 'get');
     }
-
+    echo $OUTPUT->single_button(new moodle_url('category.php', array('courseid' => $course->id)), get_string('addcategory',
+        'grades'), 'get');
     //echo $OUTPUT->(new moodle_url('index.php', array('id'=>$course->id, 'action'=>'autosort')), get_string('autosort', 'grades'), 'get');
 }
 

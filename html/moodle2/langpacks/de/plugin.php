@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'plugin', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -81,8 +81,8 @@ $string['packagesvalidatingfailed'] = 'Installation wegen einer fehlerhaften Üb
 $string['packagesvalidatingok'] = 'Die Überprüfung ist abgeschlossen. Die Installation kann fortgesetzt werden.';
 $string['plugincheckall'] = 'Alle Plugins';
 $string['plugincheckattention'] = 'Plugins, die Aufmerksamkeit fordern';
-$string['pluginchecknone'] = 'Es gibt keine Mitteilung zu den Plugins.';
-$string['pluginchecknotice'] = 'Einige Plugins fordern Ihre Aufmerksamkeit. Markiert sind neue Plugins, aktualisierbare Plugins und fehlende Plugins. Die aktualisierbaren und fehlenden Versionen sollten Sie laden, bevor Sie die Aktualisierung von Moodle fortsetzen.';
+$string['pluginchecknone'] = 'Keine Mitteilung zu den Plugins';
+$string['pluginchecknotice'] = 'Es könnte sein, dass einige Plugins Ihre Aufmerksamkeit fordern. Markiert sind neue Plugins, aktualisierbare Plugins und fehlende Plugins. Die aktualisierbaren und fehlenden Versionen sollten Sie laden, bevor Sie die Aktualisierung von Moodle fortsetzen.';
 $string['plugindisable'] = 'Deaktivieren';
 $string['plugindisabled'] = 'Deaktiviert';
 $string['pluginenable'] = 'Aktivieren';

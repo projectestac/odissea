@@ -164,15 +164,6 @@ function label_reset_userdata($data) {
 }
 
 /**
- * Returns all other caps used in module
- *
- * @return array
- */
-function label_get_extra_capabilities() {
-    return array('moodle/site:accessallgroups');
-}
-
-/**
  * @uses FEATURE_IDNUMBER
  * @uses FEATURE_GROUPS
  * @uses FEATURE_GROUPINGS
@@ -185,7 +176,7 @@ function label_get_extra_capabilities() {
  */
 function label_supports($feature) {
     switch($feature) {
-        case FEATURE_IDNUMBER:                return false;
+        case FEATURE_IDNUMBER:                return true;
         case FEATURE_GROUPS:                  return false;
         case FEATURE_GROUPINGS:               return false;
         case FEATURE_MOD_INTRO:               return true;

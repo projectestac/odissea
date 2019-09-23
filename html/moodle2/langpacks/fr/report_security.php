@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_security', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['check_configrw_details'] = '<p>Il est recommandé de modifier les droit
 $string['check_configrw_name'] = 'Fichier config.php accessible en écriture';
 $string['check_configrw_ok'] = 'Le fichier config.php ne peut pas être modifié par les scripts PHP.';
 $string['check_configrw_warning'] = 'Les scripts PHP pourraient modifier le fichier config.php.';
-$string['check_cookiesecure_details'] = '<p>Si vous activez la communication https, il vous est recommandé d\'activer également les cookies sécurisés. Veuillez également ajouter une redirection permanente de http vers https. Idéalement, fournissez également des entêtes HSTS.</p>';
+$string['check_cookiesecure_details'] = '<p>Si la communication https est activée, il est recommandé d\'activer également les cookies sécurisés. Veuillez aussi ajouter une redirection permanente de http vers https et fournissez des entêtes HSTS.</p>';
 $string['check_cookiesecure_error'] = 'Veuillez activer les cookies sécurisés';
 $string['check_cookiesecure_name'] = 'Cookies sécurisés';
 $string['check_cookiesecure_ok'] = 'Cookies sécurisés activés.';

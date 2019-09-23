@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'admin', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -142,6 +142,7 @@ $string['clitypevaluedefault'] = 'valor de tipus, premeu la tecla de retorn (<em
 $string['cliunknowoption'] = 'Opcions no reconegudes:
  {$a}
 L\'opció --help us orientarà.';
+$string['cliupgradedefault'] = 'Nou paràmetre: {$a}';
 $string['cliupgradefinished'] = 'L\'actualització per línia d\'ordres s\'ha completat de forma satisfactòria.';
 $string['cliupgradenoneed'] = 'No es necessita actualitzar per a la versió instal·lada {$a}.';
 $string['cliyesnoprompt'] = 'Escriu y (significa Sí) o n (significa No)';
@@ -161,7 +162,7 @@ $string['configallowblockstodock'] = 'Permet que els usuaris puguin minimitzar e
 $string['configallowcategorythemes'] = 'Si habiliteu aquesta opció, es podran definir temes diferents per a cada categoria de cursos. El tema definit per a una categoria s\'aplicarà a tots els cursos i a totes les subcategories dins d\'aquesta categoria, tret que es defineixin temes específics per a un curs o una subcategoria. AVÍS: pot afectar el rendiment del servidor.';
 $string['configallowcoursethemes'] = 'Si habiliteu aquesta opció, cada curs podrà definir el seu tema. Els temes dels cursos tenen prioritat sobre qualsevol altre tema seleccionat: tema del lloc, de l\'usuari o de la sessió.';
 $string['configallowedemaildomains'] = 'Enumera els dominis de correu electrònic que es permeten al camp «De:» del correu sortint. Si ho deixeu buit (opció per defecte), tot el correu sortint apareixerà com a provinent de l\'adreça de No-resposta. S\'admet l\'ús de comodins; p. ex., «*.exemple.com» permetrà que els correus de qualsevol subdomini d\'«exemple.com» apareguin amb la seva adreça real al camp del remitent. Això exclou el domini «exemple.com» mateix, el qual requereix una entrada a part.';
-$string['configallowemailaddresses'] = 'Si voleu limitar les noves adreces de correu a certs dominis, especifiqueu-los aquí separats per espais. Tots els altres dominis seran rebutjats. Per a permetre subdominis, afegiu el domini precedit pel punt \'.\'. Per permetre alhora el domini principal i els seus subdominis cal afegir el domini dues vegades, una amb el \'.\' precedint i una altra sense. Per exemple <strong>.moodle.org moodle.org</strong>';
+$string['configallowemailaddresses'] = 'Si voleu limitar les noves adreces de correu a certs dominis, especifiqueu-los aquí separats per espais. Tots els altres dominis seran rebutjats. Per a permetre subdominis, afegiu el domini precedit pel punt \'.\'. P. ex. <strong>xtec.cat edu.gva.es .uji.es .upc.es</strong>';
 $string['configallowguestmymoodle'] = 'Si s\'habilita, els visitants podran accedir al Tauler. Si no, es redirigiran a la pàgina principal.';
 $string['configallowobjectembed'] = 'Com a mesura de seguretat per defecte, no es permet que els usuaris normals incrustin multimèdia (p. ex. Flash) dins dels textos usant explícitament etiquetes EMBED i OBJECT en l\'HTML (encara que poden fer-ho sense problemes de seguretat per mitjà del filtre multimèdia). Si voleu permetre aquestes etiquetes habiliteu aquesta opció.';
 $string['configallowoverride'] = 'Permet que la gent amb rols a l\'esquerra invalidi alguns rols en la columna de rols';
@@ -181,7 +182,7 @@ $string['configbloglevel'] = 'Aquest paràmetre us permet limitar l\'àmbit de v
 $string['configcalendarcustomexport'] = 'Habilita l\'exportació d\'intervals personalitzats de dates del calendari.';
 $string['configcalendarexportsalt'] = 'Aquest text aleatori és utilitzat per provar la seguretat d\'un testimoni d\'autenticació utilitzat en l\'exportació de calendaris. Fixeu-vos que tots els testimonis actuals seran invalidats si canvieu la funció sal criptogràfica (text generat).';
 $string['configcookiehttponly'] = 'Habilita una característica nova del PHP 5.2.0. Es demana als navegadors que només enviïn la galeta amb sol·licituds HTTP reals: els llenguatges script no haurien de tenir accés a les galetes. Tanmateix això no funciona en tots els navegadors i pot no ser compatible amb el codi actual. Ajuda a impedir alguns tipus d\'atacs XSS.';
-$string['configcookiesecure'] = 'Si el servidor només accepta connexions HTTPS, es recomana habilitar l\'enviament de galetes segures. En cas que habiliteu aquest paràmetre, assegureu-vos que el servidor web no accepta http:// o configureu una redirecció permanent a adreces https:// i, idealment, que enviï capçaleres HSTS. Si l\'adreça <em>wwwroot</em> no comença per https:// aquest paràmetre es desactiva automàticament.';
+$string['configcookiesecure'] = 'Si el servidor només accepta connexions HTTPS, es recomana habilitar l\'enviament de galetes segures. En cas que habiliteu aquest paràmetre, assegureu-vos que el servidor web no accepta http:// o configureu una redirecció permanent a adreces https://. Si l\'adreça <em>wwwroot</em> no comença per https:// aquest paràmetre es desactiva automàticament.';
 $string['configcountry'] = 'Si definiu un país aquí, llavors aquest país quedarà seleccionat per defecte en els nous comptes d\'usuari. Si voleu que els usuaris triïn obligatòriament un país, no n\'especifiqueu cap aquí.';
 $string['configcourseoverviewfilesext'] = 'Una llista separada per comes d\'extensions de fitxers permeses per als resums de cursos.';
 $string['configcourseoverviewfileslimit'] = 'El nombre màxim de fitxers que poden adjuntar-se al resum del curs.';
@@ -194,21 +195,23 @@ $string['configcronremotepassword'] = 'La seqüència cron.php no es podrà exec
 http://www.exemple.com/admin/cron.php?password=sesamobret
 </pre>Si deixeu la contrasenya en blanc no caldrà utilitzar-ne cap.';
 $string['configcurlcache'] = 'Temps de vida per al cau de cURL, en segons.';
-$string['configcustommenuitems'] = 'Podeu preparar un menú personalitzat que es mostrarà per temes. Cada línia consisteix en un text de menú, un enllaç URL (opcional), un títol emergent (opcional) i un codi de llengua o llista de codis separada per comes (opcional, per tal de mostrar-ho només als usuaris d\'aquell idioma), tot això separat per barres verticals. Les línies que comencen amb un guió mostraran elements d\'opció del menú definit prèviament, i també es pot afegir una línia divisòria amb un o més caràcters #. Per exemple:
+$string['configcustommenuitems'] = 'Podeu preparar un menú personalitzat que es mostrarà per temes. Cada línia consisteix en un text de menú, un enllaç URL (opcional), un consell (opcional) i un codi de llengua o llista de codis separada per comes (opcional, per tal de mostrar-ho només als usuaris d\'aquell idioma), tot això separat per barres verticals. Podeu marcar l\'estructura amb guions, i podeu afegir una línia divisòria afegint una línia amb un o més caràcters #. Per exemple:
 <pre>
 Comunitat Moodle|http://moodle.org
 -Suport gratuït del Moodle|http://moodle.org/support
--Documentació del Moodle|http://docs.moodle.org|Moodle Docs
--Documentació de Moodle en català|http://docs.moodle.org/ca|Documentació en català|ca
 -###
 -Desenvolupament del Moodle|http://moodle.org/development
+--Seguiment del Moodle|https://tracker.moodle.org
+--Documentació del Moodle|http://docs.moodle.org|Moodle Docs
+--Documentació en Català del Moodle|http://docs.moodle.org/ca|Documentació|ca
+-Novetats del Moodle|http://moodle.org/news
+#####
 Moodle.com|http://moodle.com/
 </pre>';
 $string['configcustomusermenuitems'] = 'Podeu configurar els continguts del menú d\'usuari (tret de l\'enllaç de fi de sessió, que s\'hi afegeix de manera automàtica). Cada línia se separa amb un caràcter de barra vertical | i consisteix en:
-1) una cadena amb la forma «nom de la cadena d\'idioma, nom del component» o com a text net,
-2) un URL  i
-3) una icona, ja sigui indicant el nom de l\'arxiu (que estaria la carpeta pix/t  o a la ruta que s\'indiqui si el nom de la icona comença per ../) o indicant la seva URL.
-Es poden emprar separadors afegint-hi una línia d\'un o més caràcters de coixinet # allà on vulguem.';
+1) una cadena amb la forma «nom de la cadena d\'idioma, nom del component» o com a text net;
+2) un URL, i
+3) una icona, ja sigui una imatge o un URL. Es poden emprar separadors afegint-hi una línia d\'un o més caràcters de coixinet # allà on vulguem.';
 $string['configdbsessions'] = 'Si habiliteu aquest paràmetre, la base de dades emmagatzemarà la informació de les sessions dels usuaris. Teniu en compte que, si canvieu ara aquest paràmetre, tancareu les sessions de tots els usuaris (la vostra inclosa). Si utilitzeu MySQL, assegureu-vos que el paràmetre «max_allowed_packet» de my.cnf (o my.ini) és, com a mínim, 4M. Altres controladors de sessió es poden configurar directament a config.php; vegeu config-dist.php per a més informació. Aquesta opció desapareix si especifiqueu un controlador de sessió a config.php file.';
 $string['configdebug'] = 'Si activeu aquest paràmetre s\'incrementarà l\'error_reporting del PHP, de manera que es visualitzaran més avisos. Útil només per a desenvolupadors.';
 $string['configdebugdisplay'] = 'Si activeu aquest paràmetre els informes d\'errors s\'inclouran a la pàgina HTML. Això pot ser pràctic, però espatlla l\'XHTML, el Javascript, les galetes i les capçaleres HTTP. Si està desactivat, la sortida s\'enviarà als registres del servidor per facilitar la depuració. El paràmetre del PHP error_log controla a quin registre s\'envia.';
@@ -220,7 +223,7 @@ $string['configdefaultrequestcategory'] = 'Els cursos sol·licitats per usuaris 
 $string['configdefaultrequestedcategory'] = 'Categoria per defecte on es posen els cursos sol·licitats, si s\'aprova la sol·licitud.';
 $string['configdefaultuserroleid'] = 'A tots els usuaris que hagin iniciat sessió se\'ls assignaran les capacitats del rol que especifiqueu aquí, al nivell del lloc, A MÉS A MÉS de qualsevol altre rol que se\'ls hagi assignat. El valor per defecte és el rol d\'usuari autenticat. Fixeu-vos que aquest rol per defecte no entrarà en conflicte amb cap altre rol que tinguin; assegura que tots els usuaris tenen unes capacitats no assignables en el nivell de curs (p. ex.: publicar entrades al seu blog, gestionar el seu calendari propi, etc.).';
 $string['configdeleteincompleteusers'] = 'Després d\'aquest període, se suprimiran els comptes vells que romanguin incomplets.';
-$string['configdeleteunconfirmed'] = 'Per alguns mètodes d\'autenticació, com l\'autoregistre per correu electrònic, els usuaris han de confirmar el nou compte dins untermini. Després d\'aquest període, els comptes no confirmats es suprimiran.';
+$string['configdeleteunconfirmed'] = 'Si esteu utilitzant l\'autenticació per correu electrònic, aquest és el període dins del qual s\'acceptarà la resposta dels usuaris. Després d\'aquest període, els comptes no confirmats se suprimeixen.';
 $string['configdenyemailaddresses'] = 'Per refusar les adreces de correu de certs dominis, especifiqueu-les aquí precedides d\'un punt \'.\' . Tots els altres dominis seran acceptats. P. ex. <strong>.hotmail.com .yahoo.com .live.com</strong>';
 $string['configdisableuserimages'] = 'Inhabilita la possibilitat que els usuaris canviïn les seves imatges al perfil.';
 $string['configdisplayloginfailures'] = 'Aquest paràmetre permet que usuaris seleccionats visualitzin informació sobre els intents d\'inici de sessió erronis.';
@@ -241,7 +244,7 @@ $string['configenabledevicedetection'] = 'Habilita la detecció de mòbils, tel�
 $string['configenablemobilewebservice'] = 'Habilita els serveis mòbils per a l\'aplicació oficial de Moodle o per a d\'altres que ho demanin. Per a més informació, llegiu {$a}';
 $string['configenablerssfeeds'] = 'Si s\'habilita, es generen canals de continguts RSS per a diverses funcionalitats a tot el lloc, com ara blogs, fòrums, activitats de base de dades i glossaris. Teniu en compte que també cal habilitar els canals de continguts RSS per als mòduls d\'activitat concrets.';
 $string['configenablerssfeedsdisabled'] = 'No està disponible perquè l\'RSS està inhabilitat per a tot el lloc. Per habilitar-lo, aneu a la pantalla de variables en Administració > Configuració.';
-$string['configenablerssfeedsdisabled2'] = 'Els canals RSS estan inhabilitats a tot el lloc. Poden ser habilitats des de les Característiques avançades de l\'Administració del lloc.';
+$string['configenablerssfeedsdisabled2'] = 'Els canals RSS estan inhabilitats al nivell del servidor. Heu d\'habilitar-los abans en Servidor/RSS.';
 $string['configenablesafebrowserintegration'] = 'Això afegeix l\'opció «Requereix navegador segur» al camp «Seguretat del navegador» que hi ha al formulari de preguntes. Vegeu http://www.safeexambrowser.org/ per a més informació.';
 $string['configenablestats'] = 'Si trieu «sí», la tasca de cron de Moodle processarà els registres i recollirà algunes estadístiques. Això pot durar una estona, segons el tràfic del lloc. Si habiliteu aquesta opció, podreu veure algunes gràfiques i estadístiques interessants referents a cada curs i al lloc complet.';
 $string['configenabletrusttext'] = 'Per defecte, Moodle sempre netejarà a fons el text provinent dels usuaris a fi d\'eliminar tota mena de codi que suposi un risc de seguretat. El sistema de Contingut de Confiança és una manera de concedir, només a usuaris en els quals confieu, la capacitat d\'incloure sense interferències característiques avançades als seus continguts. Per habilitar aquest sistema, en primer lloc heu d\'habilitar aquest paràmetre i després atorgar el permís Contingut de Confiança a un rol específic de Moodle. Els textos creats o penjats per usuaris que tinguin aquest rol es marcaran com a fiables i no es netejaran abans de ser visualitzats.';
@@ -292,8 +295,8 @@ $string['configmaxevents'] = 'Quants esdeveniments';
 $string['configmaxusersperpage'] = 'Nombre màxim d\'usuaris que es mostren en el selector d\'usuaris en cursos, grups, cohorts, serveis web, etc.';
 $string['configmessaging'] = 'Cal habilitar el sistema de missatgeria entre usuaris del lloc?';
 $string['configmessagingallowemailoverride'] = 'Permet als usuaris tenir missatges de notificació de correu electrònic enviats a una adreça de correu diferent de l\'adreça del seu perfil.';
+$string['configmessagingdeleteallnotificationsdelay'] = 'Les notificacions llegides i no llegides poden ser eliminades per alliberar espai. Quant de temps ha de portar creada una notificació per poder ser eliminada?';
 $string['configmessagingdeletereadnotificationsdelay'] = 'Els missatges llegits es poden esborrar per estalviar espai. Quant de temps ha d\'haver passat des que un missatge es llegeix per poder-lo esborrar?';
-$string['configmessaginghidereadnotifications'] = 'Amaga les notificacions llegides d\'esdeveniments com ara missatges de fòrums quan es veu l\'historial de missatges.';
 $string['configminpassworddigits'] = 'Les contrasenyes han de tenir almenys aquests dígits.';
 $string['configminpasswordlength'] = 'Les contrasenyes han de tenir almenys aquest nombre de caràcters.';
 $string['configminpasswordlower'] = 'Les contrasenyes han de tenir almenys aquest nombre de minúscules.';
@@ -402,10 +405,12 @@ $string['cookiesecure'] = 'Només galetes segures';
 $string['country'] = 'País per defecte';
 $string['coursecontact'] = 'Administradors de curs';
 $string['coursecontact_desc'] = 'Aquest paràmetre us permet controlar qui apareix a la descripció dels cursos. Els usuaris que tinguin almenys un d\'aquests rols en un curs, apareixeran en la descripció d\'aquest curs.';
+$string['coursegraceperiodafter'] = 'Període de gràcia per cursos passats.';
+$string['coursegraceperiodbefore'] = 'Període de gràcia per cursos futurs.';
 $string['courselistshortnames'] = 'Mostra els noms expandits de cursos';
 $string['courselistshortnames_desc'] = 'Si està activat, a la llista de cursos es mostrarà el nom curt dels cursos, a més del nom complet. Si cal, els noms expandits de cursos poden ser personalitzats mitjançant l\'edició de la cadena de llengua «courseextendednamedisplay», utilitzant la funció de personalització d\'idioma.';
 $string['coursemgmt'] = 'Gestiona cursos i categories';
-$string['courseoverview'] = 'Resum del curs';
+$string['courseoverview'] = 'Resum dels cursos';
 $string['courserequestnotify'] = 'Notificació de sol·licitud de curs';
 $string['courserequestnotifyemail'] = 'L\'usuari {$a->user} ha sol·licitat un nou curs: {$a->link}';
 $string['courserequests'] = 'Sol·licitud de cursos';
@@ -719,6 +724,8 @@ $string['maintenancemodeisscheduled'] = 'Aquest lloc entrarà en mode mantenimen
 $string['maintenancemodeisscheduledlong'] = 'Aquest lloc es canviarà al mode de manteniment en {$a->hour} hores, {$a->min} minuts, i {$a->sec} segons';
 $string['maintfileopenerror'] = 'S\'ha produït un error en obrir els fitxers de manteniment';
 $string['maintinprogress'] = 'El manteniment està en curs...';
+$string['managecontextlock'] = 'Congela aquest context';
+$string['managecontextunlock'] = 'Descongela aquest context';
 $string['manageformats'] = 'Gestiona els formats de curs';
 $string['manageformatsgotosettings'] = 'El format per defecte pot canviar-se en {$a}';
 $string['managelang'] = 'Gestió';
@@ -757,8 +764,8 @@ $string['mediapluginwmv'] = 'Habilita el filtre .wmv';
 $string['mediapluginyoutube'] = 'Habilita filtres per enllaçar YouTube';
 $string['messaging'] = 'Habilita el sistema de missatgeria';
 $string['messagingallowemailoverride'] = 'Notificació per correu electrònic sobreescrita';
+$string['messagingdeleteallnotificationsdelay'] = 'Elimina totes les notificacions';
 $string['messagingdeletereadnotificationsdelay'] = 'Suprimeix les notificacions llegides';
-$string['messaginghidereadnotifications'] = 'Amaga les notificacions llegides';
 $string['minpassworddigits'] = 'Dígits';
 $string['minpasswordlength'] = 'Longitud de la contrasenya';
 $string['minpasswordlower'] = 'Minúscules';
@@ -770,12 +777,12 @@ $string['mnetrestore_extusers_admin'] = '<strong>Avís:</strong> Aquesta còpia 
 $string['mnetrestore_extusers_mismatch'] = '<strong>Nota:</strong> aparentment aquesta còpia de seguretat s\'ha originat en una altra instal·lació de Moodle i conté comptes d\'usuari remots de Moodle en Xarxa que potser no es podran restaurar. Aquest tipus d\'operació no està implementada. Si esteu segur que la còpia es va crear en aquesta instal·lació de Moodle, o us podeu assegurar que estan configurats tots els amfitrions necessaris de Moodle en Xarxa, potser, tot i això, voldreu intentar la restauració.';
 $string['mnetrestore_extusers_noadmin'] = '<strong>Avís:</strong> Aquesta còpia de seguretat sembla provenir d\'una instal·lació diferent de Moodle i conté comptes d\'usuaris d\'un Moodle remot. No esteu habilitat per executar aquest tipus de restauració. Contacteu amb l\'administrador del lloc o, de manera alternativa, restaureu aquest curs sense informació d\'usuaris (mòduls, fitxers...)';
 $string['mnetrestore_extusers_switchuserauth'] = 'Usuaris remots de Moodle {$a->username} (que vénen de {$a->mnethosturl} ) canviats a usuaris locals {$a->auth} autenticats.';
-$string['mobile'] = 'Mòbil';
-$string['mobilenotconfiguredwarning'] = 'Moodle Mobile no està habilitat.';
+$string['mobilenotconfiguredwarning'] = 'L\'aplicació Moodle no està habilitada.';
 $string['modchooserdefault'] = 'Selector d\'activitat per defecte';
 $string['modeditdefaults'] = 'Paràmetres per defecte per a la configuració d\'activitats.';
 $string['modsettings'] = 'Gestió d\'activitats';
 $string['modulesecurity'] = 'Seguretat dels mòduls';
+$string['moodleapp'] = 'Aplicació Moodle';
 $string['moodleorghubname'] = 'Moodle.net';
 $string['multilangforceold'] = 'Imposa la sintaxi antiga de continguts multilingües: <span> sense class="multilang" i <lang>';
 $string['mustenablestats'] = 'Les estadístiques encara no han estat habilitades en aquest lloc.';
@@ -958,6 +965,10 @@ $string['proxyuser'] = 'Nom d\'usuari del servidor intermediari (<em>proxy</em>)
 $string['purgecaches'] = 'Buida totes les memòries cau';
 $string['purgecachesconfirm'] = 'Moodle pot desar a la memòria cau temes, JavaScript, cadenes d\'idioma, text filtrat, canals RSS i moltes altres porcions de dades calculades. Si esborreu aquests elements de la memòria cau, us assegureu que els navegadors estan recollint les versions més actualitzades produïdes pel codi actual. Esborrar la memòria cau no suposa cap perill, però el vostre lloc pot resultar més lent durant un temps, fins que les noves dades s\'hagin computat i s\'hagin desat a la memòria cau.';
 $string['purgecachesfinished'] = 'S\'han buidat totes les memòries cau';
+$string['purgecachesnoneselected'] = 'Selecciona una o més memòries cau per purgar';
+$string['purgecachespage'] = 'Purga les memòries cau';
+$string['purgefiltercache'] = 'Filtres de text';
+$string['purgethemecache'] = 'Temes';
 $string['query'] = 'Consulta';
 $string['question'] = 'Pregunta';
 $string['questionbehaviours'] = 'Comportament de les preguntes';
@@ -1003,7 +1014,7 @@ $string['riskspamshort'] = 'Risc de brossa';
 $string['riskxss'] = 'Els usuaris podrien afegir textos i fitxers que permetessin cross-site scripting (XSS)';
 $string['riskxssshort'] = 'Risc XSS';
 $string['roleswithexceptions'] = '{$a->roles}, amb {$a->exceptions}';
-$string['rssglobaldisabled'] = 'Deshabilitat al nivell del lloc';
+$string['rssglobaldisabled'] = 'Inhabilitat al nivell del servidor';
 $string['save'] = 'Desa';
 $string['savechanges'] = 'Desa els canvis';
 $string['scssinvalid'] = 'El codi SCSS no és vàlid, falla amb: {$a}';
@@ -1059,13 +1070,12 @@ $string['sitemaintenanceon'] = 'El vostre lloc està en mode de manteniment (nom
 $string['sitemaintenanceoncli'] = 'El vostre lloc està en mode de manteniment CLI, i no es permet cap accés web.';
 $string['sitemaintenancewarning'] = 'El vostre lloc actualment es troba en mode de manteniment (només hi poden iniciar sessió els administradors). Per tornar al mode d\'operació normal, <a href="maintenance.php">desactiveu el mode manteniment</a>.';
 $string['sitemaintenancewarning2'] = 'El vostre lloc actualment es troba en mode de manteniment (només hi poden iniciar sessió els administradors). Per tornar al mode d\'operació normal, <a href="{$a}">inhabiliteu el mode de manteniment</a>.';
-$string['sitepolicies'] = 'Paràmetres de seguretat del lloc';
+$string['sitepolicies'] = 'Normatives del lloc';
 $string['sitepolicy'] = 'URL de la normativa del lloc';
 $string['sitepolicyguest'] = 'URL de la política del lloc per a convidats';
 $string['sitepolicyguest_help'] = 'L’URL de la política del lloc que tots els usuaris convidats han de veure i han d’acceptar abans d’accedir al lloc. Teniu en compte que aquest paràmetre només tindrà efecte si el gestor de la política del lloc està configurat per defecte (core).';
 $string['sitepolicyhandler'] = 'Gestió de les polítiques del lloc';
 $string['sitepolicyhandlercore'] = 'Per defecte (nucli)';
-$string['sitepolicyhandler_desc'] = 'Aquí es determinen les polítiques i la gestió del consentiment dels usuaris. El gestor per defecte (nucli) estableix una adreça per les polítiques del lloc i una altra per les polítiques del lloc amb els convidats. Es poden configurar gestors alternatius mitjançant connectors que ofereixin un control més avançat de les polítiques del lloc';
 $string['sitepolicy_help'] = 'L’URL de la política del lloc que tots els usuaris convidats han de veure i han d’acceptar abans d’accedir al lloc. Teniu en compte que aquest paràmetre només tindrà efecte si el gestor de la política del lloc està configurat per defecte (core).';
 $string['sitesectionhelp'] = 'Si activeu aquesta opció, es mostrarà una secció de tema a la primera plana del lloc.';
 $string['slasharguments'] = 'Utilitza arguments en barra';

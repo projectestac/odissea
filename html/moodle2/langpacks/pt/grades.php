@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'grades', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ Esta opção determina se as notas vazias não são incluídas nos cálculos ou 
 $string['aggregateoutcomes'] = 'Incluir resultados da aprendizagem na fórmula de cálculo';
 $string['aggregateoutcomes_help'] = 'Se ativar esta opção, os resultados da aprendizagem são incluídos no cálculo. Isto pode originar resultados imprevisíveis no total da categoria.';
 $string['aggregatesonly'] = 'Mudar para notas das categorias apenas';
-$string['aggregatesubcatsupgradedgrades'] = 'Nota: a configuração de agregação "Agregar incluindo subcategorias" foi removida na sequência de uma atualização do site. Uma vez que esta configuração estava a ser usada nesta disciplina, é recomendável que verifique esta alteração na pauta.';
+$string['aggregatesubcatsupgradedgrades'] = 'Nota: A configuração de agregação "Agregar incluindo subcategorias" foi removida na sequência de uma atualização do site. Uma vez que esta configuração estava a ser usada nesta disciplina, é recomendável que verifique esta alteração na pauta.';
 $string['aggregatesum'] = 'Natural';
 $string['aggregateweightedmean'] = 'Média ponderada';
 $string['aggregateweightedmean2'] = 'Média ponderada simples';
@@ -98,7 +98,7 @@ $string['availableidnumbers'] = 'Números de ID disponíveis';
 $string['average'] = 'Média';
 $string['averagesdecimalpoints'] = 'Casas decimais nas médias das colunas';
 $string['averagesdecimalpoints_help'] = 'Esta opção determina o número de casas decimais a mostrar nas médias das notas ou se são herdadas as casas decimais da categoria ou item de avaliação.';
-$string['averagesdisplaytype'] = 'Formato da média da coluna';
+$string['averagesdisplaytype'] = 'Formato da coluna da média';
 $string['averagesdisplaytype_help'] = 'Esta opção determina se a média é exibida como nota real, percentagem ou nota alfabética, ou se é herdado o formato da categoria ou item de avaliação.';
 $string['backupwithoutgradebook'] = 'A cópia de segurança não contém as configurações da pauta.';
 $string['badgrade'] = 'A nota fornecida é inválida';
@@ -112,7 +112,7 @@ $string['calculationadd'] = 'Adicionar cálculo';
 $string['calculationedit'] = 'Editar cálculo';
 $string['calculation_help'] = 'O cálculo da nota é a fórmula usada para determinar as notas. A fórmula deve começar com um sinal de igualdade (=) e usar operadores comuns matemáticos como max, min e sum. Pode ainda, se desejar, incluir outros itens de avaliação inserindo os respectivos ID\'s entre parêntesis retos.';
 $string['calculation_link'] = 'nota/cálculo';
-$string['calculationsaved'] = 'Cálculo gravado';
+$string['calculationsaved'] = 'Cálculo guardado';
 $string['calculationview'] = 'Ver cálculo';
 $string['cannotaccessgroup'] = 'Lamentamos mas não pode aceder às avaliações do grupo selecionado.';
 $string['categories'] = 'Categorias';
@@ -155,7 +155,7 @@ $string['decimalpoints_help'] = 'Esta opção determina o número de casas decim
 $string['default'] = 'Predefinido';
 $string['defaultprev'] = 'Predefinido ({$a})';
 $string['deletecategory'] = 'Apagar categoria';
-$string['disablegradehistory'] = 'Desativar histórico de notas';
+$string['disablegradehistory'] = 'Desativar histórico das notas';
 $string['disablegradehistory_help'] = 'Desativar registo do histórico de alterações nas tabelas relacionadas com a pauta. Esta ação pode tornar o servidor mais rápido e economizar espaço na base de dados.';
 $string['displaylettergrade'] = 'Mostrar avaliações com notas alfabéticas';
 $string['displaypercent'] = 'Mostrar percentagens';
@@ -168,7 +168,7 @@ $string['droplowestvalues'] = 'Ignorar os {$a} valores mais baixos';
 $string['droplow_help'] = 'Esta opção permite que um determinado número de notas mais baixas sejam excluídas do cálculo.';
 $string['dropped'] = 'Ignorada(s)';
 $string['dropxlowest'] = 'Ignorar as X mais baixa(s)';
-$string['dropxlowestwarning'] = 'Nota: se utilizar a opção Ignorar as X mais baixa(s), a avaliação será calculada assumindo que todos os itens de uma categoria têm o mesmo valor pontual. Se os valores forem diferentes, os resultados serão imprevisíveis';
+$string['dropxlowestwarning'] = 'Nota: Se utilizar a opção \'Ignorar as X mais baixas\', a avaliação será calculada assumindo que todos os itens de uma categoria têm o mesmo valor pontual. Se os valores forem diferentes, os resultados serão imprevisíveis';
 $string['duplicatescale'] = 'Duplicar escala';
 $string['edit'] = 'Editar';
 $string['editcalculation'] = 'Editar cálculo';
@@ -202,7 +202,13 @@ $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Ocorreu um erro ao atu
 $string['errorupdatinggradecategoryaggregation'] = 'Ocorreu um erro ao atualizar o tipo de cálculo na categoria com o ID {$a->id}';
 $string['errorupdatinggradeitemaggregationcoef'] = 'Ocorreu um erro ao atualizar o peso do item de avaliação com o ID {$a->id}';
 $string['eventgradedeleted'] = 'Nota eliminada';
+$string['eventgradelettercreated'] = 'Nota alfabética criada';
+$string['eventgradeletterdeleted'] = 'Nota alfabética apagada';
+$string['eventgradeletterupdated'] = 'Nota alfabética alterada';
 $string['eventgradeviewed'] = 'As notas foram visualizadas na pauta';
+$string['eventscalecreated'] = 'Escala criada';
+$string['eventscaledeleted'] = 'Escala apagada';
+$string['eventscaleupdated'] = 'Escala atualizada';
 $string['eventusergraded'] = 'Utilizador avaliado';
 $string['excluded'] = 'Excluir nota';
 $string['excluded_help'] = 'Se selecionar esta opção, a nota não será incluída em nenhum cálculo.';
@@ -210,6 +216,7 @@ $string['expand'] = 'Expandir categoria';
 $string['export'] = 'Exportar';
 $string['exportalloutcomes'] = 'Exportar todos os resultados da aprendizagem';
 $string['exportfeedback'] = 'Incluir comentários na exportação';
+$string['exportfeedback_desc'] = 'Esta configuração pode ser alterada durante a exportação.';
 $string['exportformatoptions'] = 'Opções de formato de exportação';
 $string['exportonlyactive'] = 'Excluir utilizadores suspensos';
 $string['exportonlyactive_help'] = 'Incluir na exportação apenas alunos cuja inscrição está ativa e que não tenha sido suspensa';
@@ -223,10 +230,12 @@ $string['extracreditwarning'] = 'Nota: Atribuir crédito extra a todos os itens 
 $string['feedback'] = 'Feedback';
 $string['feedbackadd'] = 'Adicionar feedback';
 $string['feedbackedit'] = 'Editar feedback';
+$string['feedbackfiles'] = 'Ficheiros de feedback';
 $string['feedbackforgradeitems'] = 'Comentário para {$a}';
 $string['feedback_help'] = 'Esta caixa permite adicionar qualquer comentário sobre a nota';
+$string['feedbackhistoryfiles'] = 'Ficheiros de histórico de feedback';
 $string['feedbacks'] = 'Comentários';
-$string['feedbacksaved'] = 'Feedback gravado';
+$string['feedbacksaved'] = 'Feedback guardado';
 $string['feedbackview'] = 'Ver feedback';
 $string['finalgrade'] = 'Nota final';
 $string['finalgrade_help'] = 'Se a caixa de seleção Ajustada for ativada, pode inserir ou alterar ou alterar a nota.';
@@ -252,7 +261,7 @@ $string['gradebookcalculationswarning'] = 'Nota: Foram encontrados alguns erros 
 
 A nova versão é {$a->currentversion}; neste momento está a utilizar a versão {$a->gradebookversion} da pauta. Pode ver uma lista das alterações em <a href="{$a->url}">Gradebook calculation changes</a>.';
 $string['gradebookhiddenerror'] = 'De momento, o relatório está configurado para ocultar toda a informação dos alunos.';
-$string['gradebookhistories'] = 'Histórico de notas';
+$string['gradebookhistories'] = 'Histórico das notas';
 $string['gradebooksetup'] = 'Configurar a Pauta';
 $string['gradeboundary'] = 'Limite inferior do intervalo';
 $string['gradeboundary_help'] = 'Esta opção determina a percentagem mínima da nota sobre a qual é atribuída uma nota alfabética.';
@@ -283,7 +292,7 @@ $string['gradeexportuserprofilefields_desc'] = 'Incluir estes campos de perfil d
 $string['gradeforstudent'] = '{$a->student}<br />{$a->item}{$a->feedback}';
 $string['gradegrademinmax'] = 'Notas mínima e máxima iniciais';
 $string['gradehelp'] = 'Ajuda sobre Notas';
-$string['gradehistorylifetime'] = 'Manter histórico de notas durante';
+$string['gradehistorylifetime'] = 'Manter histórico das notas durante';
 $string['gradehistorylifetime_help'] = 'Isto especifica o período de tempo que pretende manter o histórico das alterações nas tabelas relacionadas com a pauta. Recomenda-se que mantenha o maior tempo possível. Se tiver problemas de desempenho ou espaço limitado na base de dados, tente selecionar um valor inferior.';
 $string['gradeimport'] = 'Importar notas';
 $string['gradeimportfailed'] = 'Falha durante a importação das notas. Detalhes:';
@@ -326,7 +335,7 @@ $string['gradepointmax_validateerror'] = 'Esta configuração deve ser um númer
 $string['gradepreferences'] = 'Preferências de notas';
 $string['gradepreferenceshelp'] = 'Ajuda sobre preferências de notas';
 $string['gradepublishing'] = 'Ativar publicação';
-$string['gradepublishing_help'] = 'Ativa a publicação nas importações e exportações: As notas exportadas podem ser acedidas através de um URL, sem a necessidade de autenticação no Moodle. As notas podem ser importadas acedendo a esse URL (o que implica que um Moodle pode importar notas publicadas por outro site). Por predefinição, apenas os administradores poderão usar essa funcionalidade, por favor eduque os seus utilizadores antes de adicionar as competências necessárias em outros papéis (existe o perigo de partilha de bookmarks e aceleradores de descarregamento, restrições IP, etc).';
+$string['gradepublishing_help'] = 'A publicação das notas é uma maneira de importar e exportar notas através de um URL, sem a necessidade de autenticação no Moodle. Se ativar esta opção, os administradores e utilizadores com permissão para publicar notas (por predefinição, apenas os utilizadores com o papel de gestor) conseguem aceder/alterar as configurações de publicação das notas exportadas da pauta de cada disciplina.';
 $string['gradepublishinglink'] = 'Descarregar: {$a}';
 $string['gradereport'] = 'Pauta';
 $string['graderreport'] = 'Pauta do avaliador';
@@ -388,10 +397,10 @@ $string['importcsv_help'] = 'As notas podem ser importadas através de um Fichei
 
 * Cada linha do ficheiro contém apenas um registo
 * Cada registo é um conjunto de dados separados por vírgulas ou outro tipo de separador
-* O primeiro registo contém uma lista com os nomes do campo, definindo assim o restante formato do ficheiro
+* O primeiro registo contém uma lista com os nomes dos campos, definindo assim o restante formato do ficheiro
 * É necessário existir um campo com os dados de identificação dos utilizadores - pode ser o nome de utilizador, o número de identificação (ID) ou o endereço de e-mail
 
-Se previamente exportar algumas notas, poderá obter um exemplo de um ficheiro com o formato correto. O ficheiro em questão poderá ser editado posteriormente e gravado como ficheiro CSV.';
+Se previamente exportar algumas notas, poderá obter um exemplo de um ficheiro com o formato correto. O ficheiro em questão poderá ser editado posteriormente e guardado como ficheiro CSV.';
 $string['importcustom'] = 'Importar como resultados da aprendizagem personalizados (apenas nesta disciplina)';
 $string['importerror'] = 'Ocorreu um erro, o script não foi chamado com os parâmetros corretos.';
 $string['importfailed'] = 'A importação falhou. Nenhum dado foi importado.';
@@ -413,7 +422,7 @@ $string['importstandard'] = 'Importar como resultados de aprendizagem padrão';
 $string['importsuccess'] = 'As notas foram importadas com sucesso';
 $string['importxml'] = 'Importar XML';
 $string['includescalesinaggregation'] = 'Incluir escalas nos cálculos';
-$string['includescalesinaggregation_help'] = 'Determina se as escalas são incluídas, como números, nos cálculos das notas em todas as pautas de todas as disciplinas. ATENÇÃO: se alterar esta opção todas as notas serão recalculadas.';
+$string['includescalesinaggregation_help'] = 'Determina se as escalas são incluídas, como números, nos cálculos das notas em todas as pautas de todas as disciplinas. <strong>Atenção</strong>: Se alterar esta opção todas as notas serão recalculadas.';
 $string['incorrectcourseid'] = 'O ID da disciplina estava incorreto';
 $string['incorrectcustomscale'] = '(Escala personalizada incorrecta, por favor, altere)';
 $string['incorrectminmax'] = 'O mínimo tem de ser inferior ao máximo';
@@ -471,7 +480,7 @@ $string['minmaxtouse_desc'] = 'Esta configuração determina se deve utilizar a 
 $string['minmaxtouse_help'] = 'Esta configuração determina se deve utilizar a nota mínima e máxima quando a nota foi atribuída, ou o mínimo e o máximo especificado nas configurações para o item de avaliação no momento em que a nota é mostrada na pauta.';
 $string['minmaxupgradedgrades'] = 'Nota: Algumas notas foram alteradas de modo a resolver uma incoerência na pauta, causada por uma alteração das notas mínimas e máximas utilizadas para o cálculo da nota exibida. É recomendável que as alterações sejam revistas e aceites.';
 $string['minmaxupgradefixbutton'] = 'Resolver incoerências';
-$string['minmaxupgradewarning'] = 'Nota: Foi detectada uma incoerência em algumas avaliações devido a uma alteração das notas mínimas e máximas, utilizadas no cálculo da nota exibida na pauta. É recomendável que carregue no botão abaixo para resolver a incoerência, embora tal vá resultar na alteração de algumas notas.';
+$string['minmaxupgradewarning'] = 'Nota: Foi detetada uma incoerência em algumas avaliações devido a uma alteração das notas mínimas e máximas, utilizadas no cálculo da nota exibida na pauta. É recomendável que clique no botão abaixo para resolver a incoerência, embora tal vá resultar na alteração de algumas notas.';
 $string['missingitemtypeoreid'] = 'O índice do array (itemtype ou eid) do segundo argumento da função grade_edit_tree_column_select::get_item_cell($item, $params) está em falta';
 $string['missingscale'] = 'É preciso selecionar uma escala';
 $string['mode'] = 'Moda';
@@ -492,7 +501,7 @@ Por exemplo, se esta configuração for definida como \'Sim\', ao mudar a nota m
 $string['modgradedonotmodify'] = 'Não modificar as notas existentes';
 $string['modgradeerrorbadpoint'] = 'Valor da nota inválido. Deverá indicar um número inteiro entre 1 e {$a}';
 $string['modgradeerrorbadscale'] = 'Escala selecionada inválida. Por favor, certifique-se de que seleciona uma escala a partir da seleção abaixo.';
-$string['modgrade_help'] = 'Selecione o tipo de nota a utilizar nesta atividade. Se selecionar a opção \'Escala\', poderá selecionar o tipo de escala a usar a partir da lista pendente. Se selecionar a opção \'Nota\', poderá seguidamente definir a nota máxima disponível para esta atividade.';
+$string['modgrade_help'] = 'Selecione o tipo de nota a utilizar nesta atividade. Se escolher a opção \'Escala\', poderá selecionar o tipo de escala a usar a partir da lista pendente. Se selecionar a opção \'Nota\', poderá seguidamente definir a nota máxima disponível para esta atividade.';
 $string['modgrademaxgrade'] = 'Nota máxima';
 $string['modgraderescalegrades'] = 'Reajustar notas existentes';
 $string['modgraderescalegrades_help'] = 'Ao alterar as notas máximas de um item da pauta, deve indicar se pretende que esta ação altere, ou não, a percentagem das notas já existentes.
@@ -580,7 +589,7 @@ $string['overridden_help'] = 'Se ativar esta opção, a nota já não pode ser a
 
 Quando uma nota é ajustada na pauta, esta caixa de seleção será ativada automaticamente. No entanto, pode ser desativada para que a nota volte a depender da atividade.';
 $string['overriddennotice'] = 'A sua nota final nesta atividade foi alterada manualmente na pauta.';
-$string['overridecat'] = 'Permitir que as notas da categoria sejam ajustadas manualmente';
+$string['overridecat'] = 'Permitir ajuste manual das notas da categoria';
 $string['overridecat_help'] = 'Se desativar esta configuração vai impossibilitar os utilizadores de ajustar as notas das categorias.';
 $string['overridesitedefaultgradedisplaytype'] = 'Ajustar valores predefinidos do site';
 $string['overridesitedefaultgradedisplaytype_help'] = 'Se selecionar esta opção, as notas alfabéticas e limites de intervalos para a disciplina podem ser configuradas, ao invés de serem usadas as configurações predefinidas do site.';
@@ -609,6 +618,7 @@ $string['prefrows'] = 'Linhas especiais';
 $string['prefshow'] = 'Opções mostrar/ocultar';
 $string['previewrows'] = 'Pré-visualizar linhas';
 $string['privacy:metadata:categorieshistory'] = 'O registo de versões anteriores de categorias de pauta';
+$string['privacy:metadata:filepurpose'] = 'Ficheiros de feedback armazenados na pauta para um utilizador.';
 $string['privacy:metadata:grade_import_newitem'] = 'Tabela temporária para armazenar novos nomes de grade_item da importação de avaliação';
 $string['privacy:metadata:grade_import_newitem:importcode'] = 'Um código de operação exclusivo para identificar uma operação de importações';
 $string['privacy:metadata:grade_import_newitem:importer'] = 'O utilizador a importar os dados';
@@ -626,7 +636,7 @@ $string['privacy:metadata:grades:aggregationweight'] = 'O peso na agregação';
 $string['privacy:metadata:grades:feedback'] = 'O feedback';
 $string['privacy:metadata:grades:finalgrade'] = 'A avaliação';
 $string['privacy:metadata:gradeshistory'] = 'O registo de avaliações anteriores';
-$string['privacy:metadata:grades:information'] = 'Alguma informação adicional';
+$string['privacy:metadata:grades:information'] = 'Informação adicional acerca da nota';
 $string['privacy:metadata:grades:timemodified'] = 'A data/hora em que a avaliação foi modificada pela última vez';
 $string['privacy:metadata:grades:userid'] = 'O ID de utilizador desta avaliação';
 $string['privacy:metadata:grades:usermodified'] = 'O ID do utilizador que modificou o registo pela última vez';
@@ -646,7 +656,7 @@ $string['privacy:request:historyactiondelete'] = 'Apagar';
 $string['privacy:request:historyactioninsert'] = 'Inserir';
 $string['privacy:request:historyactionupdate'] = 'Atualizar';
 $string['privacy:request:unknowndeletedgradeitem'] = 'Desconhecido (O item de avaliação foi apagado)';
-$string['profilereport'] = 'Relatório de perfil de utilizador';
+$string['profilereport'] = 'Relatório no perfil de utilizador';
 $string['profilereport_help'] = 'Relatório de avaliação exibido na página de perfil do utilizador.';
 $string['publishing'] = 'Publicar';
 $string['publishingoptions'] = 'Opções da publicação de notas';
@@ -685,7 +695,7 @@ $string['resetweights'] = 'Redefinir pesos de {$a->itemname}';
 $string['resetweightsshort'] = 'Redefinir pesos';
 $string['respectingcurrentdata'] = 'deixando a opção atual sem alterações';
 $string['rowpreviewnum'] = 'Número de linhas a pré-visualizar';
-$string['rowpreviewnum_help'] = 'Os dados a importar devem ser pré-visualizados e confirmados antes da importação. Esta configuração determina o número de linhas a ser exibida na pré-visualização.';
+$string['rowpreviewnum_help'] = 'Os dados a importar podem ser pré-visualizados e confirmados antes da importação. Esta configuração determina o número de linhas a ser mostrado na pré-visualização.';
 $string['savechanges'] = 'Guardar alterações';
 $string['savepreferences'] = 'Guardar preferências';
 $string['scaleconfirmdelete'] = 'Tem a certeza que pretende apagar a escala "{$a}"?';
@@ -731,12 +741,12 @@ $string['showgrade'] = 'Mostrar notas';
 $string['showgrade_help'] = 'Mostrar a coluna das notas.';
 $string['showgroups'] = 'Mostrar grupos';
 $string['showhiddenitems'] = 'Mostrar itens ocultos';
-$string['showhiddenitems_help'] = 'Esta opção define se os itens ocultos são totalmente omitidos da pauta ou se apenas os seus nomes são exibidos aos alunos.
+$string['showhiddenitems_help'] = 'Esta opção define se os itens ocultos são totalmente omitidos na pauta ou se apenas os seus nomes são exibidos aos alunos.
 
 * Mostrar nomes dos itens ocultos - Os nomes dos itens ocultos são exibidos aos alunos mas as notas mantêm-se ocultas;
-* Apenas ocultar até - Os itens da pauta definidos como ocultos até uma determinada data ficarão totalmente ocultos até à data definida. Após esta data, estes itens serão exibidos na sua totalidade;
-* Não exibir itens ocultos - Todos os itens ocultos são omitidos da pauta.';
-$string['showhiddenuntilonly'] = 'Apenas Ocultar até';
+* Apenas itens ocultos até - Os itens da pauta definidos como "Ocultar até" uma determinada data ficarão totalmente ocultos até à data definida. Após esta data, estes itens serão exibidos na sua totalidade;
+* Totalmente ocultos - Todos os itens ocultos são omitidos na pauta.';
+$string['showhiddenuntilonly'] = 'Apenas itens ocultos até';
 $string['showingaggregatesonly'] = 'Mostrar as notas das categorias apenas';
 $string['showingfullmode'] = 'Vista completa';
 $string['showinggradesonly'] = 'Mostrar apenas as notas';
@@ -752,10 +762,10 @@ $string['showonlyactiveenrol'] = 'Mostrar apenas as inscrições ativas';
 $string['showonlyactiveenrol_help'] = 'Esta definição determina se apenas os utilizadores inscritos e ativos serão visíveis no relatório da pauta. Se ativar esta opção, os utilizadores suspensos não serão mostrados na pauta.';
 $string['showpercentage'] = 'Mostrar percentagem';
 $string['showpercentage_help'] = 'Mostrar o valor da percentagem de cada item de avaliação.';
-$string['showquickfeedback'] = 'Mostrar feedback rápido';
-$string['showquickfeedback_help'] = 'Se ativar esta opção, quando o modo de edição das notas está ativo, surge uma caixa de comentários para cada nota, permitindo editar vários comentários ao mesmo tempo. As alterações serão guardadas e assinaladas após clicar no botão de Atualização.
+$string['showquickfeedback'] = 'Mostrar comentário rápido';
+$string['showquickfeedback_help'] = 'Se ativar esta opção, quando o modo de edição das notas está ativo, surge uma caixa de comentários para cada nota, permitindo editar vários comentários ao mesmo tempo. As alterações serão guardadas e assinaladas após clicar no botão de Guardar.
 
-Repare que quando um comentário é editado diretamente na pauta não pode ser alterado pela atividade à qual a nota está associada.';
+Tenha em atenção que quando um comentário é editado diretamente na pauta não pode ser alterado pela atividade à qual a nota está associada.';
 $string['showrange'] = 'Mostrar intervalos';
 $string['showrange_help'] = 'Mostrar a coluna dos intervalos.';
 $string['showranges'] = 'Mostrar intervalos';
@@ -785,7 +795,7 @@ $string['studentsperpagereduced'] = 'Reduzir o número máximo de alunos por pá
 $string['subcategory'] = 'Categoria normal';
 $string['submissions'] = 'Submissões';
 $string['submittedon'] = 'Submetido: {$a}';
-$string['sumofgradesupgradedgrades'] = 'Nota: o método de agregação "Soma das notas" foi alterado para "Natural" na sequência de uma atualização do site. Uma vez que esta configuração estava a ser usada nesta disciplina, é recomendável que verifique esta alteração na pauta.';
+$string['sumofgradesupgradedgrades'] = 'Nota: O método de agregação "Soma das notas" foi alterado para "Natural" na sequência de uma atualização do site. Uma vez que esta configuração estava a ser usada nesta disciplina, é recomendável que verifique esta alteração na pauta.';
 $string['switchtofullview'] = 'Mudar para vista completa';
 $string['switchtosimpleview'] = 'Mudar para vista simples';
 $string['tabs'] = 'Separadores';
@@ -827,6 +837,7 @@ $string['userid'] = 'ID do utilizador';
 $string['useridnumberwarning'] = 'Os utilizadores sem um número de ID são excluídos da exportação, pois não podem ser importados';
 $string['usermappingerror'] = 'Erro de mapeamento de utilizador. Não foi possível encontrar o utilizador com {$a->field} de "{$a->value}".';
 $string['usermappingerrorcurrentgroup'] = 'O utilizador não é um membro do grupo atual.';
+$string['usermappingerrormultipleusersfound'] = 'Erro no mapeamento de utilizadores: Vários utilizadores encontrados com {$a->campo} igual a "{$a->value}". Por favor, use um campo de mapeamento mais exclusivo.';
 $string['usermappingerrorusernotfound'] = 'Erro de mapeamento de utilizador. Não foi possível encontrar o utilizador.';
 $string['userpreferences'] = 'Preferências do utilizador';
 $string['useweighted'] = 'Usar ponderações';

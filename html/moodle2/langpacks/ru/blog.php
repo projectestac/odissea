@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['autotags'] = 'Добавить эти теги';
 $string['autotags_help'] = 'Введите один или несколько локальных тегов (через запятую), которые Вы хотите автоматически добавлять в своем локальном блоге к каждой записи, скопированной из внешнего блога.';
 $string['backupblogshelp'] = 'Если включено - блоги будут включены в автоматическое резервирование сайта';
 $string['blockexternalstitle'] = 'Внешние блоги';
-$string['blocktitle'] = 'Название блока тегов блога';
 $string['blog'] = 'Блог';
 $string['blogaboutthis'] = 'Блог об этом модуле типа «{$a->type}»';
 $string['blogaboutthiscourse'] = 'Добавить запись об этом курсе';
@@ -147,7 +146,7 @@ $string['privacy:metadata:external:timemodified'] = 'Дата, когда свя
 $string['privacy:metadata:external:url'] = 'URL ленты';
 $string['privacy:metadata:external:userid'] = 'ID пользователя, который добавил запись во внешний блог.';
 $string['privacy:metadata:post'] = 'Информация, связанная с записями блога';
-$string['privacy:metadata:post:content'] = 'Содержимое внешней записи блога.';
+$string['privacy:metadata:post:content'] = 'Содержимое записи внешнего блога.';
 $string['privacy:metadata:post:created'] = 'Дата, когда запись была создана.';
 $string['privacy:metadata:post:lastmodified'] = 'Дата, когда запись была последний раз изменена.';
 $string['privacy:metadata:post:publishstate'] = 'Видима запись другим людям или нет';

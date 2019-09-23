@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hvp', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   hvp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,6 +66,8 @@ $string['close'] = 'Close';
 $string['confirmdialogbody'] = 'Please confirm that you wish to proceed. This action is not reversible.';
 $string['confirmdialogheader'] = 'Confirm action';
 $string['confirmlabel'] = 'Confirm';
+$string['connectionLost'] = 'Connection lost. Results will be stored and sent when you regain connection.';
+$string['connectionReestablished'] = 'Connection reestablished.';
 $string['contentchanged'] = 'This content has changed since you last used it.';
 $string['contentCopied'] = 'Content is copied to the clipboard';
 $string['contentstatefrequency'] = 'Save content state frequency';
@@ -77,6 +79,9 @@ $string['copyrightinfo'] = 'Copyright information';
 $string['copyrightstring'] = 'Copyright';
 $string['copyrighttitle'] = 'View copyright information for this content.';
 $string['couldnotcopy'] = 'Could not copy file.';
+$string['couldNotParseJSONFromZip'] = 'Unable to parse JSON from the package: %fileName';
+$string['couldNotParsePostData'] = 'Could not parse post data.';
+$string['couldNotReadFileFromZip'] = 'Unable to read file from the package: %fileName';
 $string['couldnotsave'] = 'Could not save file.';
 $string['create'] = 'Create';
 $string['creativecommons'] = 'Creative Commons';
@@ -126,6 +131,7 @@ $string['enablejavascript'] = 'Please enable JavaScript.';
 $string['enablesavecontentstate'] = 'Save content state';
 $string['enablesavecontentstate_help'] = 'Automatically save the current state of interactive content for each user. This means that the user may pick up where he left off.';
 $string['failedtodownloadh5p'] = 'Failed to download the requested H5P.';
+$string['fileExceedsMaxSize'] = 'One of the files inside the package exceeds the maximum file size allowed. (%file %used > %max)';
 $string['filenotfoundonserver'] = 'File not found on server. Check file upload settings.';
 $string['filenotimage'] = 'File is not an image.';
 $string['filetypenotallowed'] = 'File type isn\'t allowed.';
@@ -267,6 +273,11 @@ $string['noversionattributionnd'] = 'Attribution-NoDerivs';
 $string['noversionattributionsa'] = 'Attribution-ShareAlike';
 $string['nowriteaccess'] = 'A problem with the server write access was detected. Please make sure that your server can write to your data folder.';
 $string['noziparchive'] = 'Your PHP version does not support ZipArchive.';
+$string['offlineDialogBody'] = 'We were unable to send information about your completion of this task. Please check your internet connection.';
+$string['offlineDialogHeader'] = 'Your connection to the server was lost';
+$string['offlineDialogRetryButtonLabel'] = 'Retry now';
+$string['offlineDialogRetryMessage'] = 'Retrying in :num....';
+$string['offlineSuccessfulSubmit'] = 'Successfully submitted results.';
 $string['oldphpversion'] = 'Your PHP version is outdated. H5P requires version 5.2 to function properly. Version 5.6 or later is recommended.';
 $string['olduploadoldcontent'] = 'You\'re trying to upload content of an older version of H5P. Please upgrade the content on the server it originated from and try to upload again or turn on the H5P Hub to have this server upgrade it for your automaticall.';
 $string['onlyupdate'] = 'Only update existing libraries';
@@ -324,6 +335,7 @@ $string['reportingscorelabel'] = 'Score:';
 $string['reportnotsupported'] = 'Not supported';
 $string['reportsubmitgradelabel'] = 'Submit grade';
 $string['resizescript'] = 'Include this script on your website if you want dynamic sizing of the embedded content:';
+$string['resubmitScores'] = 'Attempting to submit stored results.';
 $string['reuse'] = 'Reuse';
 $string['reuseContent'] = 'Reuse Content';
 $string['reuseDescription'] = 'Reuse this content.';
@@ -352,6 +364,7 @@ $string['title'] = 'Title';
 $string['unabletocreatedir'] = 'Unable to create directory.';
 $string['unabletogetfieldtype'] = 'Unable to get field type.';
 $string['undisclosed'] = 'Undisclosed';
+$string['unpackedFilesExceedsMaxSize'] = 'The total size of the unpacked files exceeds the maximum size allowed. (%used > %max)';
 $string['updatedlibraries'] = 'Updated {$a->%old} H5P libraries.';
 $string['updatedlibrary'] = 'Updated {$a->%old} H5P library.';
 $string['updatelibraries'] = 'Update All Libraries';

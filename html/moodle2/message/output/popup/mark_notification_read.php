@@ -32,21 +32,17 @@ if (isguestuser()) {
 
 $notificationid = required_param('notificationid', PARAM_INT);
 $redirecturl = optional_param('redirecturl', '', PARAM_URL);
-
-$notification = $DB->get_record('message', array('id' => $notificationid, 'notification' => 1));
+$notification = $DB->get_record('notifications', array('id' => $notificationid));
 
 // If the redirect URL after filtering is empty, or it was never passed, then redirect to the notification page.
 if (empty($redirecturl)) {
     $redirecturl = new moodle_url('/message/output/popup/notifications.php', ['notificationid' => $notificationid]);
 }
 
-// If found, is unread, so mark read if belongs to this user.
-if ($notification) {
-    if ($USER->id == $notification->useridto) {
-        message_mark_message_read($notification, time());
-    } else {
-        $redirecturl = $CFG->wwwroot;
-    }
+// Check notification belongs to this user.
+if ($USER->id != $notification->useridto) {
+    redirect($CFG->wwwroot);
 }
 
+\core_message\api::mark_notification_as_read($notification);
 redirect(new moodle_url($redirecturl));

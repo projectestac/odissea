@@ -712,11 +712,57 @@ function xmldb_questionnaire_upgrade($oldversion=0) {
         upgrade_mod_savepoint(true, 2017111103, 'questionnaire');
     }
 
-    // Rename the mdl_questionnaire_response_rank.rank field as it is reserved in MySQL as of 8.0.2.
-    if ($oldversion < 2017111106) {
+    // Get rid of questionnaire_attempts table and migrate necessary data to the questionnaire_response table.
+    if ($oldversion < 2018050102) {
+        $table = new xmldb_table('questionnaire_response');
+        $field1 = new xmldb_field('questionnaireid', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0', 'id');
+        $field2 = new xmldb_field('survey_id');
+
+        // Create the new questionnaireid field, if it doesn't already exist (it shouldn't).
+        if (!$dbman->field_exists($table, $field1)) {
+            $dbman->add_field($table, $field1);
+        }
+
+        // Get all of the attempts records, and add the questionnaire id to the corresponding response record.
+        $rs = $DB->get_recordset('questionnaire_attempts');
+        foreach ($rs as $attempt) {
+            $DB->set_field('questionnaire_response', 'questionnaireid', $attempt->qid, ['id' => $attempt->rid]);
+        }
+        $rs->close();
+
+        // Get all of the response records with a '0' questionnaireid, and extract the questionnaireid from the survey_id field.
+        $rs = $DB->get_recordset('questionnaire_response', ['questionnaireid' => 0]);
+        foreach ($rs as $response) {
+            if ($questionnaire = $DB->get_record('questionnaire', ['sid' => $response->survey_id], 'id,sid', IGNORE_MULTIPLE)) {
+                $DB->set_field('questionnaire_response', 'questionnaireid', $questionnaire->id, ['id' => $response->id]);
+            }
+        }
+        $rs->close();
+
+        // Remove the survey_id field from the response table. It is now redundant.
+        if ($dbman->field_exists($table, $field2)) {
+            $dbman->drop_field($table, $field2);
+        }
+
+        // Add an index for the new questionnaireid field.
+        $index = new xmldb_index('questionnaireidx');
+        $index->set_attributes(XMLDB_INDEX_NOTUNIQUE, ['questionnaireid']);
+        $dbman->add_index($table, $index);
+
+        // Now drop the unnecessary attempts table.
+        $table = new xmldb_table('questionnaire_attempts');
+        $dbman->drop_table($table);
+
+        // Questionnaire savepoint reached.
+        upgrade_mod_savepoint(true, 2018050102, 'questionnaire');
+    }
+
+    // Rename the mdl_questionnaire_response_rank.rank field as it is reserved in MySQL as of 8.0.2. This step may have already
+    // been executed in 3.4 with version 2017111105, so check first.
+    if ($oldversion < 2018050104) {
         // Change the name from username to userid.
         // Due to MDL-63310, the 'rename_field' function cannot be used for MySQL. Create special code for this. This can be
-        // replaced when MDL-63310 is fixed and released.
+        // replaces when MDL-63310 is fixed and released.
         if ($DB->get_dbfamily() !== 'mysql') {
             $table = new xmldb_table('questionnaire_response_rank');
             $field = new xmldb_field('rank', XMLDB_TYPE_INTEGER, '11', null, XMLDB_NOTNULL, null, null, null, '0', 'choice_id');
@@ -734,7 +780,32 @@ function xmldb_questionnaire_upgrade($oldversion=0) {
         }
 
         // Questionnaire savepoint reached.
-        upgrade_mod_savepoint(true, 2017111106, 'questionnaire');
+        upgrade_mod_savepoint(true, 2018050104, 'questionnaire');
+    }
+
+    // Now 'feedbacksections' field is used differently.
+    if ($oldversion < 2018050105) {
+        // Get all of the survey records where feedbacksection is greater than 2 and set them to 2.
+        $DB->set_field_select('questionnaire_survey', 'feedbacksections', 2, 'feedbacksections > 2');
+        // Questionnaire savepoint reached.
+        upgrade_mod_savepoint(true, 2018050105, 'questionnaire');
+    }
+
+    // Rename all of the survey_id fields to surveyid, and the section_id fields to sectionid to meet Moodle coding rules.
+    if ($oldversion < 2018050106) {
+        $table1 = new xmldb_table('questionnaire_fb_sections');
+        $field1 = new xmldb_field('survey_id', XMLDB_TYPE_INTEGER, '18');
+        $table2 = new xmldb_table('questionnaire_feedback');
+        $field2 = new xmldb_field('section_id', XMLDB_TYPE_INTEGER, '18');
+        $table3 = new xmldb_table('questionnaire_question');
+        $field3 = new xmldb_field('survey_id', XMLDB_TYPE_INTEGER, '10');
+
+        $dbman->rename_field($table1, $field1, 'surveyid');
+        $dbman->rename_field($table2, $field2, 'sectionid');
+        $dbman->rename_field($table3, $field3, 'surveyid');
+
+        // Questionnaire savepoint reached.
+        upgrade_mod_savepoint(true, 2018050106, 'questionnaire');
     }
 
     return $result;

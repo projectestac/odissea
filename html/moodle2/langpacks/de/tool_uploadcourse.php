@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,10 +33,11 @@ $string['allowresets'] = 'Zurücksetzen erlauben';
 $string['allowresets_help'] = 'Soll das Zurücksetzen-Feld akzeptiert werden oder nicht';
 $string['cachedef_helper'] = 'Hilfscache';
 $string['cannotdeletecoursenotexist'] = 'Nicht vorhandener Kurs kann nicht gelöscht werden.';
+$string['cannotforcelang'] = 'Keine Berechtigung zur Festlegung der Kurssprache';
 $string['cannotgenerateshortnameupdatemode'] = 'Eine Kurzbezeichnung konnte nicht erstellt werden als Updates zugelassen waren.';
 $string['cannotreadbackupfile'] = 'Sicherungsdatei kann nicht gelesen werden.';
 $string['cannotrenamecoursenotexist'] = 'Nicht vorhandener Kurs kann nicht umbenannt werden.';
-$string['cannotrenameidnumberconflict'] = 'Der Kurs konnte nicht umbenannt werden. Es gibt ID-Nummern -Konflikte mit bestehendem Kurs.';
+$string['cannotrenameidnumberconflict'] = 'Der Kurs konnte nicht umbenannt werden. Es gibt ID-Nummern-Konflikte mit einem bestehendem Kurs.';
 $string['cannotrenameshortnamealreadyinuse'] = 'Der Kurs konnte nicht umbenannt werden. Der Kurzname wird bereits genutzt.';
 $string['cannotupdatefrontpage'] = 'Es ist nicht zugelassen, die Startseite zu ändern.';
 $string['canonlyrenameinupdatemode'] = 'Der Kurs kann nur aktualisiert werden wenn Updates zugelassen sind.';

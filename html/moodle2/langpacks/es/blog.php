@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['autotags'] = 'Añadir estas marcas';
 $string['autotags_help'] = 'Ecriba una o más marcas locales (separadas por comas) que quiera añadir automáticamente a cada entrada de blog copiadas de un blog externo a su blog local.';
 $string['backupblogshelp'] = 'Si se habilita esta opción, los blogs se incluirán en las copias automatizadas del SITIO';
 $string['blockexternalstitle'] = 'Blogs externos';
-$string['blocktitle'] = 'Título de bloque de marcas del blog';
 $string['blog'] = 'Blog';
 $string['blogaboutthis'] = 'Blog de este {$a->type}';
 $string['blogaboutthiscourse'] = 'Añadir una entrada en el blog de curso';

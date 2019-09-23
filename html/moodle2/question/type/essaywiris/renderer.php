@@ -26,6 +26,14 @@ class qtype_essaywiris_renderer extends qtype_wq_renderer  {
 
     public function formulation_and_controls(question_attempt $qa, question_display_options $options) {
         $result = $this->base->formulation_and_controls($qa, $options);
+
+        // Auxiliar text.
+        $showauxiliartextinput = $qa->get_question()->wirisquestion->question->getProperty(
+            com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_AUXILIAR_TEXT_INPUT); // @codingStandardsIgnoreLine
+        if ($showauxiliartextinput) {
+            $result .= $this->auxiliar_text($qa, $options);
+        }
+
         // Add hidden Wiris Quizzes fields.
         $result .= $this->lang();
         $result .= $this->question($qa);

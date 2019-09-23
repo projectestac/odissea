@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -301,6 +301,5 @@ $string['workshop:viewauthornames'] = '제출자 보기';
 $string['workshop:viewauthorpublished'] = '공개된 제출물들의 저자 보기';
 $string['workshop:viewpublishedsubmissions'] = '공개된 제출물 보기';
 $string['workshop:viewreviewernames'] = '검토자 보기';
-$string['yourassessment'] = '당신의 평가';
 $string['yourgrades'] = '성적';
 $string['yoursubmission'] = '내 제출물';

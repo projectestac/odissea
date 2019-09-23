@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = 'Overal';
 $string['inputstandardtags'] = 'Geef een kommagescheiden lijst met nieuwe tags';
 $string['itemstaggedwith'] = '{$a->tagarea} getagged met "{$a->tag}"';
 $string['lesstags'] = 'minder...';
-$string['manageofficialtags'] = 'Beheer officiële tags';
 $string['managestandardtags'] = 'Beheer standaard tags';
 $string['managetagcolls'] = 'Beheer tag-collectie';
 $string['managetags'] = 'Beheer tags';
@@ -94,9 +93,6 @@ $string['nextpage'] = 'Meer';
 $string['noresultsfor'] = 'Geen resultaten voor "{$a}"';
 $string['notagsfound'] = 'Geen tags die overeenkomen met "{$a}" gevonden';
 $string['nothingtoupdate'] = 'Niets aan te passen';
-$string['officialtag'] = 'Officiëel';
-$string['otags'] = 'Officiële tags';
-$string['othertags'] = 'Andere tags';
 $string['owner'] = 'Eigenaar';
 $string['page-tag-index'] = 'Eén tag-pagina';
 $string['page-tag-manage'] = 'Beheer tag-pagina';
@@ -138,7 +134,6 @@ $string['selectmaintag'] = 'Selecteer de tag die gebruikt zal worden na het comb
 $string['selectmultipletags'] = 'Selecteer meer dan één tag';
 $string['selecttag'] = 'Selecteer tag {$a}';
 $string['settypedefault'] = 'Verwijder van standaard-tags';
-$string['settypeofficial'] = 'Maak officiëel';
 $string['settypestandard'] = 'Maak standaard';
 $string['showingfirsttags'] = 'Toon {$a} populairste tags';
 $string['showstandard'] = 'Standaard tag-gebruik';
@@ -161,10 +156,8 @@ $string['tagcollection'] = 'Tag-collectie';
 $string['tagcollection_help'] = 'Tag-collecties zijn sets met tags voor verschillende zones. Zo kan bijvoorbeeld een collectie met standaard tags gebruikt worden om cursussen te taggen, met interesses van de gebruikers en tags voor blogberichten in een aparte collectie. Wanneer een gebruiker klikt op een tag, dan zal de pagina enkel items tonen met die tag in dezelfde collectie. Tags kunnen automatisch aan een collectie toegevoegd worden die overeen komen met de getagde zone of kunnen manueel als standaard-tags toegevoegd worden.';
 $string['tagcollections'] = 'Tag-collectie';
 $string['tagdescription'] = 'Tag beschrijving';
-$string['taggedwith'] = 'getagged met "{$a}"';
 $string['tags'] = 'Tags';
 $string['tagsaredisabled'] = 'Tags zijn uitgeschakeld';
-$string['tagtype'] = 'Tag-type';
 $string['thingstaggedwith'] = ' "{$a->name}" is {$a->count}  keer gebruikt';
 $string['thingtaggedwith'] = '"{$a}"->name is één keer gebruikt';
 $string['timemodified'] = 'Gewijzigd';

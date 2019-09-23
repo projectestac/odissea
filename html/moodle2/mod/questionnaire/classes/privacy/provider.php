@@ -27,14 +27,21 @@ namespace mod_questionnaire\privacy;
 
 defined('MOODLE_INTERNAL') || die();
 
+use \core_privacy\local\metadata\collection;
+use \core_privacy\local\request\contextlist;
+use \core_privacy\local\request\userlist;
+use \core_privacy\local\request\approved_contextlist;
+use \core_privacy\local\request\approved_userlist;
+
 class provider implements
     // This plugin has data.
     \core_privacy\local\metadata\provider,
 
+    // This plugin is capable of determining which users have data within it.
+    \core_privacy\local\request\core_userlist_provider,
+
     // This plugin currently implements the original plugin_provider interface.
     \core_privacy\local\request\plugin\provider {
-
-    use \core_privacy\local\legacy_polyfill;
 
     /**
      * Returns meta data about this system.
@@ -42,19 +49,12 @@ class provider implements
      * @param   collection $items The collection to add metadata to.
      * @return  collection  The array of metadata
      */
-    public static function _get_metadata(\core_privacy\local\metadata\collection $collection) {
+    public static function get_metadata(collection $collection): collection {
 
         // Add all of the relevant tables and fields to the collection.
-        $collection->add_database_table('questionnaire_attempts', [
-            'userid' => 'privacy:metadata:questionnaire_attempts:userid',
-            'rid' => 'privacy:metadata:questionnaire_attempts:rid',
-            'qid' => 'privacy:metadata:questionnaire_attempts:qid',
-            'timemodified' => 'privacy:metadata:questionnaire_attempts:timemodified',
-        ], 'privacy:metadata:questionnaire_attempts');
-
         $collection->add_database_table('questionnaire_response', [
             'userid' => 'privacy:metadata:questionnaire_response:userid',
-            'survey_id' => 'privacy:metadata:questionnaire_response:survey_id',
+            'questionnaireid' => 'privacy:metadata:questionnaire_response:questionnaireid',
             'complete' => 'privacy:metadata:questionnaire_response:complete',
             'grade' => 'privacy:metadata:questionnaire_response:grade',
             'submitted' => 'privacy:metadata:questionnaire_response:submitted',
@@ -113,17 +113,17 @@ class provider implements
      * @param   int $userid The user to search.
      * @return  contextlist   $contextlist  The list of contexts used in this plugin.
      */
-    public static function _get_contexts_for_userid($userid) {
-        $contextlist = new \core_privacy\local\request\contextlist();
+    public static function get_contexts_for_userid(int $userid): contextlist {
+        $contextlist = new contextlist();
 
         $sql = "SELECT c.id
-                 FROM {context} c
-           INNER JOIN {course_modules} cm ON cm.id = c.instanceid AND c.contextlevel = :contextlevel
-           INNER JOIN {modules} m ON m.id = cm.module AND m.name = :modname
-           INNER JOIN {questionnaire} q ON q.id = cm.instance
-           INNER JOIN {questionnaire_response} qr ON qr.survey_id = q.sid
-                WHERE qr.userid = :attemptuserid
-        ";
+             FROM {context} c
+       INNER JOIN {course_modules} cm ON cm.id = c.instanceid AND c.contextlevel = :contextlevel
+       INNER JOIN {modules} m ON m.id = cm.module AND m.name = :modname
+       INNER JOIN {questionnaire} q ON q.id = cm.instance
+       INNER JOIN {questionnaire_response} qr ON qr.questionnaireid = q.id
+            WHERE qr.userid = :attemptuserid
+       ";
 
         $params = [
             'modname' => 'questionnaire',
@@ -137,13 +137,38 @@ class provider implements
     }
 
     /**
+     * Get the list of users who have data within a context.
+     *
+     * @param \core_privacy\local\request\userlist $userlist The userlist containing the list of users who have data in this
+     * context/plugin combination.
+     */
+    public static function get_users_in_context(userlist $userlist) {
+
+        $context = $userlist->get_context();
+        if (!$context instanceof \context_module) {
+            return;
+        }
+
+        $params = ['modulename' => 'questionnaire', 'instanceid' => $context->instanceid];
+
+        // Questionnaire respondents.
+        $sql = "SELECT qr.userid
+              FROM {course_modules} cm
+              JOIN {modules} m ON m.id = cm.module AND m.name = :modulename
+              JOIN {questionnaire} q ON q.id = cm.instance
+              JOIN {questionnaire_response} qr ON qr.questionnaireid = q.id
+             WHERE cm.id = :instanceid";
+        $userlist->add_from_sql('userid', $sql, $params);
+    }
+
+    /**
      * Export all user data for the specified user, in the specified contexts, using the supplied exporter instance.
      *
-     * @param   approved_contextlist    $contextlist    The approved contexts to export information for.
+     * @param   approved_contextlist $contextlist The approved contexts to export information for.
      */
-    public static function export_user_data(\core_privacy\local\request\approved_contextlist $contextlist) {
+    public static function export_user_data(approved_contextlist $contextlist) {
         global $DB, $CFG;
-        require_once($CFG->dirroot.'/mod/questionnaire/questionnaire.class.php');
+        require_once($CFG->dirroot . '/mod/questionnaire/questionnaire.class.php');
 
         if (empty($contextlist->count())) {
             return;
@@ -154,17 +179,16 @@ class provider implements
         list($contextsql, $contextparams) = $DB->get_in_or_equal($contextlist->get_contextids(), SQL_PARAMS_NAMED);
 
         $sql = "SELECT cm.id AS cmid,
-                       q.id AS qid, q.course AS qcourse,
-                       qr.id AS responseid, qr.submitted AS lastsaved, qr.complete AS complete
-                  FROM {context} c
-            INNER JOIN {course_modules} cm ON cm.id = c.instanceid AND c.contextlevel = :contextlevel
-            INNER JOIN {modules} m ON m.id = cm.module AND m.name = :modname
-            INNER JOIN {questionnaire} q ON q.id = cm.instance
-            INNER JOIN {questionnaire_response} qr ON qr.survey_id = q.sid
-            LEFT JOIN {questionnaire_attempts} qa ON qa.rid = qr.id
-                 WHERE c.id {$contextsql}
-                       AND qr.userid = :userid
-              ORDER BY cm.id, qr.id ASC";
+                   q.id AS qid, q.course AS qcourse,
+                   qr.id AS responseid, qr.submitted AS lastsaved, qr.complete AS complete
+              FROM {context} c
+        INNER JOIN {course_modules} cm ON cm.id = c.instanceid AND c.contextlevel = :contextlevel
+        INNER JOIN {modules} m ON m.id = cm.module AND m.name = :modname
+        INNER JOIN {questionnaire} q ON q.id = cm.instance
+        INNER JOIN {questionnaire_response} qr ON qr.questionnaireid = q.id
+             WHERE c.id {$contextsql}
+                   AND qr.userid = :userid
+          ORDER BY cm.id, qr.id ASC";
 
         $params = ['modname' => 'questionnaire', 'contextlevel' => CONTEXT_MODULE, 'userid' => $user->id] + $contextparams;
 
@@ -228,19 +252,19 @@ class provider implements
             return;
         }
 
-        if ($responses = $DB->get_recordset('questionnaire_response', ['survey_id' => $questionnaire->sid])) {
+        if ($responses = $DB->get_recordset('questionnaire_response', ['questionnaireid' => $questionnaire->id])) {
             self::delete_responses($responses);
         }
         $responses->close();
-        $DB->delete_records('questionnaire_response', ['survey_id' => $questionnaire->sid]);
+        $DB->delete_records('questionnaire_response', ['questionnaireid' => $questionnaire->id]);
     }
 
     /**
      * Delete all user data for the specified user, in the specified contexts.
      *
-     * @param   approved_contextlist    $contextlist    The approved contexts and user information to delete information for.
+     * @param   approved_contextlist $contextlist The approved contexts and user information to delete information for.
      */
-    public static function delete_data_for_user(\core_privacy\local\request\approved_contextlist $contextlist) {
+    public static function delete_data_for_user(approved_contextlist $contextlist) {
         global $DB;
 
         if (empty($contextlist->count())) {
@@ -261,20 +285,47 @@ class provider implements
             }
 
             if ($responses = $DB->get_recordset('questionnaire_response',
-                ['survey_id' => $questionnaire->sid, 'userid' => $userid])) {
+                ['questionnaireid' => $questionnaire->id, 'userid' => $userid])) {
                 self::delete_responses($responses);
             }
             $responses->close();
-            $DB->delete_records('questionnaire_response', ['survey_id' => $questionnaire->sid, 'userid' => $userid]);
+            $DB->delete_records('questionnaire_response', ['questionnaireid' => $questionnaire->id, 'userid' => $userid]);
         }
+    }
+
+    /**
+     * Delete multiple users within a single context.
+     *
+     * @param \core_privacy\local\request\approved_userlist $userlist The approved context and user information to delete
+     * information for.
+     */
+    public static function delete_data_for_users(approved_userlist $userlist) {
+        global $DB;
+
+        $context = $userlist->get_context();
+        if (!$cm = get_coursemodule_from_id('questionnaire', $context->instanceid)) {
+            return;
+        }
+        if (!($questionnaire = $DB->get_record('questionnaire', ['id' => $cm->instance]))) {
+            return;
+        }
+
+        list($userinsql, $userinparams) = $DB->get_in_or_equal($userlist->get_userids(), SQL_PARAMS_NAMED);
+        $params = array_merge(['questionnaireid' => $questionnaire->id], $userinparams);
+        $select = 'questionnaireid = :questionnaireid AND userid ' . $userinsql;
+        if ($responses = $DB->get_recordset_select('questionnaire_response', $select, $params)) {
+            self::delete_responses($responses);
+        }
+        $responses->close();
+        $DB->delete_records_select('questionnaire_response', $select, $params);
     }
 
     /**
      * Helper function to delete all the response records for a recordset array of responses.
      *
-     * @param   recordset    $responses    The list of response records to delete for.
+     * @param   recordset $responses The list of response records to delete for.
      */
-    private static function delete_responses($responses) {
+    private static function delete_responses(\moodle_recordset $responses) {
         global $DB;
 
         foreach ($responses as $response) {
@@ -285,7 +336,6 @@ class provider implements
             $DB->delete_records('questionnaire_response_rank', ['response_id' => $response->id]);
             $DB->delete_records('questionnaire_resp_single', ['response_id' => $response->id]);
             $DB->delete_records('questionnaire_response_text', ['response_id' => $response->id]);
-            $DB->delete_records('questionnaire_attempts', ['rid' => $response->id]);
         }
     }
 }

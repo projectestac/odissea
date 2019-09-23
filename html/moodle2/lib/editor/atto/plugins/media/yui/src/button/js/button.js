@@ -49,6 +49,7 @@ var COMPONENTNAME = 'atto_media',
         TRACK_SOURCE: 'atto_media_track_source',
         DISPLAY_OPTIONS: 'atto_media_display_options',
         NAME_INPUT: 'atto_media_name_entry',
+        TITLE_INPUT: 'atto_media_title_entry',
         URL_INPUT: 'atto_media_url_entry',
         POSTER_SIZE: 'atto_media_poster_size',
         LINK_SIZE: 'atto_media_link_size',
@@ -80,6 +81,7 @@ var COMPONENTNAME = 'atto_media',
         TRACK_SOURCE: '.' + CSS.TRACK_SOURCE,
         DISPLAY_OPTIONS: '.' + CSS.DISPLAY_OPTIONS,
         NAME_INPUT: '.' + CSS.NAME_INPUT,
+        TITLE_INPUT: '.' + CSS.TITLE_INPUT,
         URL_INPUT: '.' + CSS.URL_INPUT,
         POSTER_SIZE: '.' + CSS.POSTER_SIZE,
         LINK_SIZE: '.' + CSS.LINK_SIZE,
@@ -114,7 +116,7 @@ var COMPONENTNAME = 'atto_media',
     TEMPLATES = {
         ROOT: '' +
             '<form class="mform atto_form atto_media" id="{{elementid}}_atto_media_form">' +
-                '<ul class="root nav nav-tabs" role="tablist">' +
+                '<ul class="root nav nav-tabs m-b-1" role="tablist">' +
                     '<li data-medium-type="{{CSS.LINK}}" class="nav-item">' +
                         '<a class="nav-link active" href="#{{elementid}}_{{CSS.LINK}}" role="tab" data-toggle="tab">' +
                             '{{get_string "link" component}}' +
@@ -144,17 +146,15 @@ var COMPONENTNAME = 'atto_media',
                 '</div>' +
                 '<div class="mdl-align">' +
                     '<br/>' +
-                    '<button class="submit" type="submit">{{get_string "createmedia" component}}</button>' +
+                    '<button class="btn btn-default submit" type="submit">{{get_string "createmedia" component}}</button>' +
                 '</div>' +
             '</form>',
         TAB_PANES: {
             LINK: '' +
                 '{{renderPartial "form_components.source" context=this id=CSS.LINK_SOURCE}}' +
-                '<label>' +
-                    'Enter name' +
-                    '<input class="fullwidth {{CSS.NAME_INPUT}}" type="text" id="{{elementid}}_link_nameentry"' +
-                        'size="32" required="true"/>' +
-                '</label>',
+                '<label for="{{elementid}}_link_nameentry">{{get_string "entername" component}}</label>' +
+                '<input class="form-control fullwidth {{CSS.NAME_INPUT}}" type="text" id="{{elementid}}_link_nameentry"' +
+                        'size="32" required="true"/>',
             VIDEO: '' +
                 '{{renderPartial "form_components.source" context=this id=CSS.MEDIA_SOURCE entersourcelabel="videosourcelabel"' +
                     ' addcomponentlabel="addsource" multisource="true" addsourcehelp=helpStrings.addsource}}' +
@@ -162,14 +162,14 @@ var COMPONENTNAME = 'atto_media',
                     '<input name="mform_isexpanded_{{elementid}}_video-display-options" type="hidden">' +
                     '<legend class="ftoggler">{{get_string "displayoptions" component}}</legend>' +
                     '<div class="fcontainer">' +
-                        '{{> form_components.display_options}}' +
+                        '{{renderPartial "form_components.display_options" context=this id=CSS.VIDEO mediatype_video=true}}' +
                     '</div>' +
                 '</fieldset>' +
                 '<fieldset class="collapsible collapsed" id="{{elementid}}_video-advanced-settings">' +
                     '<input name="mform_isexpanded_{{elementid}}_video-advanced-settings" type="hidden">' +
                     '<legend class="ftoggler">{{get_string "advancedsettings" component}}</legend>' +
                     '<div class="fcontainer">' +
-                        '{{> form_components.advanced_settings}}' +
+                        '{{renderPartial "form_components.advanced_settings" context=this id=CSS.VIDEO}}' +
                     '</div>' +
                 '</fieldset>' +
                 '<fieldset class="collapsible collapsed" id="{{elementid}}_video-tracks">' +
@@ -182,11 +182,18 @@ var COMPONENTNAME = 'atto_media',
             AUDIO: '' +
                 '{{renderPartial "form_components.source" context=this id=CSS.MEDIA_SOURCE entersourcelabel="audiosourcelabel"' +
                     ' addcomponentlabel="addsource" multisource="true" addsourcehelp=helpStrings.addsource}}' +
+                '<fieldset class="collapsible collapsed" id="{{elementid}}_audio-display-options">' +
+                    '<input name="mform_isexpanded_{{elementid}}_audio-display-options" type="hidden">' +
+                    '<legend class="ftoggler">{{get_string "displayoptions" component}}</legend>' +
+                    '<div class="fcontainer">' +
+                        '{{renderPartial "form_components.display_options" context=this id=CSS.AUDIO}}' +
+                    '</div>' +
+                '</fieldset>' +
                 '<fieldset class="collapsible collapsed" id="{{elementid}}_audio-advanced-settings">' +
                     '<input name="mform_isexpanded_{{elementid}}_audio-advanced-settings" type="hidden">' +
                     '<legend class="ftoggler">{{get_string "advancedsettings" component}}</legend>' +
                     '<div class="fcontainer">' +
-                        '{{> form_components.advanced_settings}}' +
+                        '{{renderPartial "form_components.advanced_settings" context=this id=CSS.AUDIO}}' +
                     '</div>' +
                 '</fieldset>' +
                 '<fieldset class="collapsible collapsed" id="{{elementid}}_audio-tracks">' +
@@ -200,13 +207,19 @@ var COMPONENTNAME = 'atto_media',
         FORM_COMPONENTS: {
             SOURCE: '' +
                 '<div class="{{CSS.SOURCE}} {{id}}">' +
-                    '<label>' +
+                    '<div class="m-b-1">' +
+                        '<label for="url-input">' +
                         '{{#entersourcelabel}}{{get_string ../entersourcelabel ../component}}{{/entersourcelabel}}' +
-                        '{{^entersourcelabel}}{{get_string "entersource" ../component}}{{/entersourcelabel}}</a>' +
-                        '<br/>' +
-                        '<input class="{{CSS.URL_INPUT}}" type="url" size="32"/>' +
-                    '</label>' +
-                    '<button class="openmediabrowser" type="button">{{get_string "browserepositories" component}}</button>' +
+                        '{{^entersourcelabel}}{{get_string "entersource" ../component}}{{/entersourcelabel}}' +
+                        '</label>' +
+                        '<div class="input-group input-append w-100">' +
+                            '<input id="url-input" class="form-control {{CSS.URL_INPUT}}" type="url" size="32"/>' +
+                            '<span class="input-group-append">' +
+                                '<button class="btn btn-default openmediabrowser" type="button">' +
+                                '{{get_string "browserepositories" component}}</button>' +
+                            '</span>' +
+                        '</div>' +
+                    '</div>' +
                     '{{#multisource}}' +
                         '{{renderPartial "form_components.add_component" context=../this label=../addcomponentlabel ' +
                             ' help=../addsourcehelp}}' +
@@ -229,44 +242,60 @@ var COMPONENTNAME = 'atto_media',
                 '</div>',
             DISPLAY_OPTIONS: '' +
                 '<div class="{{CSS.DISPLAY_OPTIONS}}">' +
-                    '<label>' +
-                        '{{get_string "size" component}}' +
-                        '<div class={{CSS.POSTER_SIZE}}>' +
-                            '<label>' +
-                                '<span class="accesshide">{{get_string "videowidth" component}}</span>' +
-                                '<input type="text" class="{{CSS.WIDTH_INPUT}} input-mini" size="4"/>' +
-                            '</label>' +
+                    '<div class="m-b-1">' +
+                        '<label for="{{id}}_media-title-entry">{{get_string "entertitle" component}}</label>' +
+                        '<input class="form-control fullwidth {{CSS.TITLE_INPUT}}" type="text" id="{{id}}_media-title-entry"' +
+                            'size="32"/>' +
+                    '</div>' +
+                    '<div class="clearfix"></div>' +
+                    '{{#mediatype_video}}' +
+                    '<div class="m-b-1">' +
+                        '<label>{{get_string "size" component}}</label>' +
+                        '<div class="form-inline {{CSS.POSTER_SIZE}}">' +
+                            '<label class="accesshide">{{get_string "videowidth" component}}</label>' +
+                            '<input type="text" class="form-control m-r-1 {{CSS.WIDTH_INPUT}} input-mini" size="4"/>' +
                             ' x ' +
-                            '<label>' +
-                                '<span class="accesshide">{{get_string "videoheight" component}}</span>' +
-                                '<input type="text" class="{{CSS.HEIGHT_INPUT}} input-mini" size="4"/>' +
-                            '</label>' +
+                            '<label class="accesshide">{{get_string "videoheight" component}}</label>' +
+                            '<input type="text" class="form-control m-l-1 {{CSS.HEIGHT_INPUT}} input-mini" size="4"/>' +
                         '</div>' +
-                    '</label>' +
+                    '</div>' +
                     '<div class="clearfix"></div>' +
                     '{{renderPartial "form_components.source" context=this id=CSS.POSTER_SOURCE entersourcelabel="poster"}}' +
+                    '{{/mediatype_video}}' +
                 '<div>',
             ADVANCED_SETTINGS: '' +
                 '<div class="{{CSS.ADVANCED_SETTINGS}}">' +
-                    '<label>' +
-                        '<input type="checkbox" checked="true" class="{{CSS.MEDIA_CONTROLS_TOGGLE}}"/>' +
+                    '<div class="form-check">' +
+                        '<input type="checkbox" checked="true" class="form-check-input {{CSS.MEDIA_CONTROLS_TOGGLE}}"' +
+                        'id="{{id}}_media-controls-toggle"/>' +
+                        '<label class="form-check-label" for="{{id}}_media-controls-toggle">' +
                         '{{get_string "controls" component}}' +
-                    '</label>' +
-                    '<label>' +
-                        '<input type="checkbox" class="{{CSS.MEDIA_AUTOPLAY_TOGGLE}}"/>' +
+                        '</label>' +
+                    '</div>' +
+                    '<div class="form-check">' +
+                        '<input type="checkbox" class="form-check-input {{CSS.MEDIA_AUTOPLAY_TOGGLE}}"' +
+                        'id="{{id}}_media-autoplay-toggle"/>' +
+                        '<label class="form-check-label" for="{{id}}_media-autoplay-toggle">' +
                         '{{get_string "autoplay" component}}' +
-                    '</label>' +
-                    '<label>' +
-                        '<input type="checkbox" class="{{CSS.MEDIA_MUTE_TOGGLE}}"/>' +
+                        '</label>' +
+                    '</div>' +
+                    '<div class="form-check">' +
+                        '<input type="checkbox" class="form-check-input {{CSS.MEDIA_MUTE_TOGGLE}}" ' +
+                            'id="{{id}}_media-mute-toggle"/>' +
+                        '<label class="form-check-label" for="{{id}}_media-mute-toggle">' +
                         '{{get_string "mute" component}}' +
-                    '</label>' +
-                    '<label>' +
-                        '<input type="checkbox" class="{{CSS.MEDIA_LOOP_TOGGLE}}"/>' +
+                        '</label>' +
+                    '</div>' +
+                    '<div class="form-check">' +
+                        '<input type="checkbox" class="form-check-input {{CSS.MEDIA_LOOP_TOGGLE}}" ' +
+                            'id="{{id}}_media-loop-toggle"/>' +
+                        '<label class="form-check-label" for="{{id}}_media-loop-toggle">' +
                         '{{get_string "loop" component}}' +
-                    '</label>' +
+                        '</label>' +
+                    '</div>' +
                 '</div>',
             TRACK_TABS: '' +
-                '<ul class="nav nav-tabs">' +
+                '<ul class="nav nav-tabs mb-3">' +
                     '<li data-track-kind="{{CSS.TRACK_SUBTITLES}}" class="nav-item">' +
                         '<a class="nav-link active" href="#{{elementid}}_{{id}}_{{CSS.TRACK_SUBTITLES}}"' +
                             ' role="tab" data-toggle="tab">' +
@@ -328,11 +357,11 @@ var COMPONENTNAME = 'atto_media',
                     '</div>' +
                 '</div>',
             TRACK: '' +
-                '<div class="{{CSS.TRACK}}">' +
+                '<div class="m-b-1 {{CSS.TRACK}}">' +
                     '{{renderPartial "form_components.source" context=this id=CSS.TRACK_SOURCE entersourcelabel=sourcelabel}}' +
-                    '<label class="langlabel">' +
-                        '<span>{{get_string "srclang" component}}</span>' +
-                        '<select class="{{CSS.TRACK_LANG_INPUT}}">' +
+                    '<div class="form-group">' +
+                        '<label class="w-100" for="lang-input">{{get_string "srclang" component}}</label>' +
+                        '<select id="lang-input" class="custom-select {{CSS.TRACK_LANG_INPUT}}">' +
                             '<optgroup label="{{get_string "languagesinstalled" component}}">' +
                                 '{{#langsinstalled}}' +
                                     '<option value="{{code}}" {{#default}}selected="selected"{{/default}}>{{lang}}</option>' +
@@ -342,15 +371,15 @@ var COMPONENTNAME = 'atto_media',
                                 '{{#langsavailable}}<option value="{{code}}">{{lang}}</option>{{/langsavailable}}' +
                             '</optgroup>' +
                         '</select>' +
-                    '</label>' +
-                    '<label class="labellabel">' +
-                        '<span>{{get_string "label" component}}</span>' +
-                        '<input class="{{CSS.TRACK_LABEL_INPUT}}" type="text"/>' +
-                    '</label>' +
-                    '<label class="defaultlabel">' +
-                        '<input type="checkbox" class="{{CSS.TRACK_DEFAULT_SELECT}}"/>' +
-                        '{{get_string "default" component}}' +
-                    '</label>' +
+                    '</div>' +
+                    '<div class="form-group">' +
+                        '<label class="w-100" for="track-input">{{get_string "label" component}}</label>' +
+                        '<input id="track-input" class="form-control {{CSS.TRACK_LABEL_INPUT}}" type="text"/>' +
+                    '</div>' +
+                    '<div class="form-check">' +
+                        '<input type="checkbox" class="form-check-input {{CSS.TRACK_DEFAULT_SELECT}}"/>' +
+                        '<label class="form-check-label">{{get_string "default" component}}</label>' +
+                    '</div>' +
                     '{{renderPartial "form_components.add_component" context=this label=addcomponentlabel}}' +
                 '</div>'
         },
@@ -364,6 +393,7 @@ var COMPONENTNAME = 'atto_media',
                     '{{#loop}}loop="true" {{/loop}}' +
                     '{{#muted}}muted="true" {{/muted}}' +
                     '{{#autoplay}}autoplay="true" {{/autoplay}}' +
+                    '{{#title}}title="{{../title}}" {{/title}}' +
                 '>' +
                     '{{#sources}}<source src="{{source}}">{{/sources}}' +
                     '{{#tracks}}' +
@@ -378,6 +408,7 @@ var COMPONENTNAME = 'atto_media',
                     '{{#loop}}loop="true" {{/loop}}' +
                     '{{#muted}}muted="true" {{/muted}}' +
                     '{{#autoplay}}autoplay="true" {{/autoplay}}' +
+                    '{{#title}}title="{{../title}}" {{/title}}' +
                 '>' +
                     '{{#sources}}<source src="{{source}}">{{/sources}}' +
                     '{{#tracks}}' +
@@ -643,17 +674,23 @@ Y.namespace('M.atto_media').Button = Y.Base.create('button', Y.M.editor_atto.Edi
         }, this);
 
         // Populate values.
-        tabPane.one(SELECTORS.POSTER_SOURCE + ' ' + SELECTORS.URL_INPUT).setAttribute('value', properties.poster);
-        tabPane.one(SELECTORS.WIDTH_INPUT).set('value', properties.width);
-        tabPane.one(SELECTORS.HEIGHT_INPUT).set('value', properties.height);
+        tabPane.one(SELECTORS.TITLE_INPUT).set('value', properties.title);
         tabPane.one(SELECTORS.MEDIA_CONTROLS_TOGGLE).set('checked', properties.controls);
         tabPane.one(SELECTORS.MEDIA_AUTOPLAY_TOGGLE).set('checked', properties.autoplay);
         tabPane.one(SELECTORS.MEDIA_MUTE_TOGGLE).set('checked', properties.muted);
         tabPane.one(SELECTORS.MEDIA_LOOP_TOGGLE).set('checked', properties.loop);
 
-        // Switch to the correct tab.
+        // Determine medium type.
         var mediumType = this._getMediumTypeFromTabPane(tabPane);
 
+        if (mediumType === 'video') {
+            // Populate values unique for video.
+            tabPane.one(SELECTORS.POSTER_SOURCE + ' ' + SELECTORS.URL_INPUT).setAttribute('value', properties.poster);
+            tabPane.one(SELECTORS.WIDTH_INPUT).set('value', properties.width);
+            tabPane.one(SELECTORS.HEIGHT_INPUT).set('value', properties.height);
+        }
+
+        // Switch to the correct tab.
         // Remove active class from all tabs + tab panes.
         tabPane.siblings('.active').removeClass('active');
         content.all('.root.nav-tabs .nav-item a').removeClass('active');
@@ -699,6 +736,7 @@ Y.namespace('M.atto_media').Button = Y.Base.create('button', Y.M.editor_atto.Edi
             type: medium.test('video') ? MEDIA_TYPES.VIDEO : MEDIA_TYPES.AUDIO,
             sources: medium.all('source').get('src'),
             poster: medium.getAttribute('poster'),
+            title: medium.getAttribute('title'),
             width: medium.getAttribute('width'),
             height: medium.getAttribute('height'),
             autoplay: boolAttr(medium, 'autoplay'),
@@ -943,7 +981,8 @@ Y.namespace('M.atto_media').Button = Y.Base.create('button', Y.M.editor_atto.Edi
             showControls: tab.one(SELECTORS.MEDIA_CONTROLS_TOGGLE).get('checked'),
             autoplay: tab.one(SELECTORS.MEDIA_AUTOPLAY_TOGGLE).get('checked'),
             muted: tab.one(SELECTORS.MEDIA_MUTE_TOGGLE).get('checked'),
-            loop: tab.one(SELECTORS.MEDIA_LOOP_TOGGLE).get('checked')
+            loop: tab.one(SELECTORS.MEDIA_LOOP_TOGGLE).get('checked'),
+            title: tab.one(SELECTORS.TITLE_INPUT).get('value') || false
         };
     }
 }, {

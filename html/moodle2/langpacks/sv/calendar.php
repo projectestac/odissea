@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendar', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -123,7 +123,6 @@ $string['export'] = 'Exportera';
 $string['exportbutton'] = 'Exportera';
 $string['exportcalendar'] = 'Exportera kalender';
 $string['exporthelp'] = 'Hur kan jag prenumerera på denna kalender från en kalenderapplikation (Google/Outlook/annat)?';
-$string['for'] = 'för';
 $string['forcecalendartype'] = 'Obligatorisk kalender';
 $string['fri'] = 'Fre';
 $string['friday'] = 'Fredag';

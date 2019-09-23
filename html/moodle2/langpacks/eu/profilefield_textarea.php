@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_textarea', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'profilefield_textarea', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   profilefield_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Testu-eremua';
-$string['privacy:metadata:profile_field_textarea:data'] = 'Gordetako erabiltzaile-informazioa.';
-$string['privacy:metadata:profile_field_textarea:dataformat'] = 'Gordetako erabiltzaile-informazioaren formatua.';
-$string['privacy:metadata:profile_field_textarea:fieldid'] = 'Profil-eremuaren IDa.';
-$string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Hemen erabiltzaile-informazio gehigarria gordetzen da.';
-$string['privacy:metadata:profile_field_textarea:userid'] = 'Testu-eremua pluginak gordetzen duen datuen erabiltzailearen IDa.';
+$string['privacy:metadata:profile_field_textarea:data'] = 'Testu-eremua erabiltzaile-profileko eremuko erabiltzaile-datuak';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = 'Testu-eremua erabiltzaile-profileko eremuko erabiltzaile-datuen formatua';
+$string['privacy:metadata:profile_field_textarea:fieldid'] = 'Profil-eremuaren IDa';
+$string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Erabiltzaile-profileko informazio gehigarria';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'Testu-eremua erabiltzaile-profileko eremuak gordetzen duen datuen erabiltzailearen IDa';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -122,12 +122,12 @@ $string['configrestorelogs'] = 'Gaituz gero agerraldiak modu lehenetsian berresk
 $string['configrestoreroleassignments'] = 'Gaituz gero matrikulazioak modu lehenetsian berreskuratuko dira, segurtasun-kopian egonez gero.';
 $string['configrestoreusers'] = 'Erabiltzaileak berreskuratzeko lehenetsitako balioa zehazten du, segurtasun-kopian egonez gero.';
 $string['configrestoreuserscompletion'] = 'Gaituz gero erabiltzaileen osatze-informazioa modu lehenetsian berreskuratuko da, segurtasun-kopian egonez gero.';
-$string['confirmcancel'] = 'Utzi segurtasun-kopia';
+$string['confirmcancel'] = 'Bertan behera utzi segurtasun-kopia';
 $string['confirmcancelimport'] = 'Utzi bertan behera inportazioa';
-$string['confirmcancelno'] = 'Jarraitu';
+$string['confirmcancelno'] = 'Ez utzi bertan behera';
 $string['confirmcancelquestion'] = 'Ziur al zaude utzi egin nahi duzula? Sartu duzun informazio guztia galdu egingo da.';
 $string['confirmcancelrestore'] = 'Utzi bertan behera berreskuratzea';
-$string['confirmcancelyes'] = 'Utzi';
+$string['confirmcancelyes'] = 'Bertan behera utzi segurtasun-kopia';
 $string['confirmnewcoursecontinue'] = 'Ikastaro berriaren abisua';
 $string['confirmnewcoursecontinuequestion'] = 'Behin-behinean (ezkutuan) dauden ikastaroak sortuko dira berreskuratze-prozesuan. Berreskuratzea bertan behera uzteko egin klik Utzi botoian. Ez itxi nabigatzailea berreskuratze-prozesuak iraun bitartean.';
 $string['coursecategory'] = 'Ikastaroa berreskuratzeko kategoria';
@@ -228,18 +228,19 @@ $string['overwrite'] = 'Gainidatzi';
 $string['preparingdata'] = 'Datuak prestatzen';
 $string['preparingui'] = 'Orria erakusteko prestatzen';
 $string['previousstage'] = 'Aurrekoa';
-$string['privacy:metadata:backup_controllers'] = 'Segurtasun-kopien eragiketa-zerrenda';
+$string['privacy:metadata:backup_controllers'] = 'Segurtasun-kopietarako eragiketen zerrenda';
 $string['privacy:metadata:backup_controllers:itemid'] = 'Ikastaroaren IDa';
-$string['privacy:metadata:backup_controllers:operation'] = 'Bete den eragiketa, adibidez berreskurapena.';
-$string['privacy:metadata:backup_controllers:timecreated'] = 'Ekintza sortu zeneko data';
-$string['privacy:metadata:backup_controllers:timemodified'] = 'Ekintza aldatu zeneko data';
-$string['privacy:metadata:backup_controllers:type'] = 'Eragiketa dagokion itema, adibidez jarduera.';
-$string['privacy:metadata:backup:detailsofarchive'] = 'Fitxategiak ikastaro bati dagozkion hainbat erabiltzaile-datur eduki dezake, hala nola, erabiltzaileen matrikula eta agerraldiak.';
-$string['privacy:metadata:backup:externalpurpose'] = 'Fitxategi honen helburua ikastaro bati dagokion eta etorkizunean berreskura daitezkeen informazioa gordetzea da.';
+$string['privacy:metadata:backup_controllers:operation'] = 'Egindako ekintza, adibidez berreskuratu.';
+$string['privacy:metadata:backup_controllers:timecreated'] = 'Ekintza sortu zeneko unea';
+$string['privacy:metadata:backup_controllers:timemodified'] = 'Ekintza aldatu zeneko unea';
+$string['privacy:metadata:backup_controllers:type'] = 'Maneiatutako elementu-mota, adibidez jarduera.';
+$string['privacy:metadata:backup:detailsofarchive'] = 'Artxibo honek erabiltzaileekin lotutako datuak izan ditzake, hala nola kalifikazioak, erabiltzaile-matrikulazioak eta jardueretako datuak.';
+$string['privacy:metadata:backup:externalpurpose'] = 'Artxibo honen helburua ikastaro batekin lotutako informazioa gordetzea da, etorkizunean berreskuratu ahal dena.';
 $string['qcategory2coursefallback'] = '"{$a->name}" izeneko galdera-kategoriak, jatorrian sistema/ikastaro-kategoria testuinguruan segurtasun-kopian, berreskuratzean ikastaro testuinguruan sortuko da.';
 $string['qcategorycannotberestored'] = '"{$a->name}"  galdera-kategoria ezin da sortu berreskuratuta';
 $string['question2coursefallback'] = '"{$a->name}" izeneko galdera-kategoriak, jatorrian sistema/ikastaro-kategoria testuinguruan segurtasun-kopian, berreskuratzean ikastaro testuinguruan sortuko da.';
 $string['questionegorycannotberestored'] = '"{$a->name}" galderak ezin dira sortu berreskuratuta';
+$string['recyclebin_desc'] = 'Kontuan izan ezarpen hauek zakarrontzian ere aplikatuko direla.';
 $string['replacerestoredefaults'] = 'Lehenetsitako berreskuratze-balioak segurtasun-kopia ikastaro bateko edukiak ezabatu eta ondoren berreskuratzean';
 $string['restoreactivity'] = 'Berreskuratu jarduera';
 $string['restorecourse'] = 'Berreskuratu ikastaroa';
@@ -316,11 +317,11 @@ $string['setting_overwrite_course_shortname'] = 'Gainidatzi ikastaroaren izen la
 $string['setting_overwrite_course_startdate'] = 'Gainidatzi ikastaroaren hasiera-data';
 $string['showtypes'] = 'Erakutsi aukera-motak';
 $string['sitecourseformatwarning'] = 'Hau hasiera-orriko segurtasun-kopia bat da, kontuan izan soilik hasiera-orrian berreskura daitekeela.';
-$string['skiphidden'] = 'Alde batera utzi ezkutuan dauden ikastaroak';
+$string['skiphidden'] = 'Utzi alde batera ezkutuan dauden ikastaroak';
 $string['skiphiddenhelp'] = 'Aukeratu ezkutuan dauden ikastaroak alde batera uztea edo ez';
-$string['skipmodifdays'] = 'Alde batera utzi ondokoaren ondoren aldatu ez diren ikastaroak';
+$string['skipmodifdays'] = 'Utzi alde batera ondoko dataren ondoren aldatu ez diren ikastaroak';
 $string['skipmodifdayshelp'] = 'Aukeratu azken egun-kopuru horretan aldatu ez diren ikastaroak alde batera uztea edo ez';
-$string['skipmodifprev'] = 'Alde batera utzi aurreko segurtasun-kopiatik aldatu ez diren ikastaroak';
+$string['skipmodifprev'] = 'Utzi alde batera aurreko segurtasun-kopiatik aldatu ez diren ikastaroak';
 $string['skipmodifprevhelp'] = 'Aukeratu aurreko programatutako segurtasun-kopiatik aldatu ez diren ikastaroak alde batera uztea edo ez. honek erregistroa gaituta egotea behar du.';
 $string['storagecourseandexternal'] = 'Ikastaroko segurtasun-kopien fitxategi-eremua eta direktorio espezifikoa';
 $string['storagecourseonly'] = 'Ikastaroko segurtasun-kopien fitxategi-eremua';

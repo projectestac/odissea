@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_myprofile', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,23 +26,22 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'Erakutsi eduki-eremuaren ezarpenak';
-$string['display_address'] = 'Helbidea erakutsi';
-$string['display_aim'] = 'AIM erakutsi';
-$string['display_city'] = 'Hiria erakutsi';
-$string['display_country'] = 'Herrialdea erakutsi';
-$string['display_currentlogin'] = 'Oraingo saio-hasiera erakutsi';
-$string['display_email'] = 'e-posta erakutsi';
-$string['display_firstaccess'] = 'Lehen saio-hasiera erakutsi';
-$string['display_icq'] = 'ICQ erakutsi';
-$string['display_institution'] = 'Erakundea erakutsi';
-$string['display_lastaccess'] = 'Azken saio-hasiera erakutsi';
-$string['display_lastip'] = 'Azken IPa erakutsi';
-$string['display_msn'] = 'MSN erakutsi';
+$string['display_address'] = 'Erakutsi helbidea';
+$string['display_aim'] = 'Erakutsi AIM';
+$string['display_city'] = 'Erakutsi hiria';
+$string['display_country'] = 'Erakutsi herrialdea';
+$string['display_currentlogin'] = 'Erakutsi oraingo saio-hasiera';
+$string['display_email'] = 'Erakutsi e-posta';
+$string['display_firstaccess'] = 'Erakutsi lehen saio-hasiera';
+$string['display_icq'] = 'Erakutsi ICQ';
+$string['display_institution'] = 'Erakutsi erakundea';
+$string['display_lastaccess'] = 'Erakutsi azken saio-hasiera';
+$string['display_lastip'] = 'Erakutsi azken IPa';
+$string['display_msn'] = 'Erakutsi MSN';
 $string['display_phone1'] = 'Erakutsi telefonoa';
 $string['display_phone2'] = 'Erakutsi telefono mugikorra';
-$string['display_picture'] = 'Irudia erakutsi';
-$string['display_skype'] = 'Skype erakutsi';
-$string['display_un'] = 'Izena erakutsi';
+$string['display_picture'] = 'Erakutsi irudia';
+$string['display_skype'] = 'Erakutsi Skype';
 $string['display_yahoo'] = 'Yahoo erakutsi';
 $string['myprofile:addinstance'] = 'Gehitu saioa hasitako erabiltzailea bloke berria';
 $string['myprofile:myaddinstance'] = 'Gehitu saioa hasitako erabiltzailea bloke berria aginte-panelean';

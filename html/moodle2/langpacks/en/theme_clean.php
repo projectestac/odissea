@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'theme_clean', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['choosereadme'] = '<div class="clearfix">
 <div class="well">
 <h2>Clean</h2>
-<p><img class=img-polaroid src="clean/pix/screenshot.jpg" /></p>
+<p><img class="img-polaroid "src="clean/pix/screenshot.jpg" /></p>
 </div>
 <div class="well">
 <h3>About</h3>

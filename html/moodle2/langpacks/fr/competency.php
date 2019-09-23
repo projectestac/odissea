@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'competency', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'L\'évaluation de la compétence a
 $string['evidence_manualoverrideinplan'] = 'L\'évaluation de la compétence a été donnée manuellement dans le plan « {$a} ».';
 $string['invalidevidencedesc'] = 'Description de preuve non valide';
 $string['invalidgrade'] = 'Évaluation non valide';
-$string['invalidpersistent'] = 'Donnée persistante non valide';
 $string['invalidpersistenterror'] = 'Erreur : {$a}';
 $string['invalidplan'] = 'Plan de formation non valide';
 $string['invalidtaxonomy'] = 'Taxonomie non valide : {$a}';
@@ -178,7 +177,7 @@ $string['taxonomy_practice'] = 'Entraînement';
 $string['taxonomy_proficiency'] = 'Aptitude';
 $string['taxonomy_skill'] = 'Habileté';
 $string['taxonomy_value'] = 'Valeur';
-$string['usercommentedonacompetency'] = '{$a->fullname} a commenté la compétence « {$a->competency} »:
+$string['usercommentedonacompetency'] = '{$a->fullname} a commenté la compétence « {$a->competency} » :
 
 {$a->comment}
 

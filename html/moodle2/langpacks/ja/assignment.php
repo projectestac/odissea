@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['assignmentdisabled'] = 'レガシー「課題2.2」活動は無効に�
 $string['assignment:exportownsubmission'] = '自分の提出課題をエクスポートする';
 $string['assignment:exportsubmission'] = '提出課題をエクスポートする';
 $string['assignment:grade'] = '課題を評定する';
-$string['assignmentneedsupgrade'] = 'レガシー「課題2.2」活動は無効にされました。このサイト内のレガシー課題すべてに対して課題アップグレードツールを実行するようあなたのサイト管理者にご依頼ください。';
+$string['assignmentneedsupgrade'] = 'レガシー「課題2.2」活動は削除されました。';
 $string['assignment:submit'] = '課題を提出する';
 $string['assignment:view'] = '課題を表示する';
 $string['messageprovider:assignment_updates'] = '課題 (2.2) 通知';
@@ -61,4 +61,3 @@ $string['privacy:metadata:assignment_submissions:timemodified'] = '課題提出�
 $string['privacy:metadata:assignment_submissions:userid'] = '課題提出を送信したユーザのIDです。';
 $string['privacy:submissionpath'] = '提出です。';
 $string['upgradenotification'] = 'この活動は古い課題モジュールに基づきます。';
-$string['viewassignmentupgradetool'] = '課題アップグレードツールを表示する';

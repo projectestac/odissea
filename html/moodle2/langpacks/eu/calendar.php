@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendar', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,6 +119,7 @@ $string['eventsimported'] = 'Ekitaldiak inportatu dira: {$a}';
 $string['eventskey'] = 'Ekitaldi-motak';
 $string['eventsource'] = 'Ekitaldiaren jatorria';
 $string['eventspersonal'] = 'Nire ekitaldi pertsonalak';
+$string['eventsrelatedtocategories'] = 'Kategoriekin lotutako ekitaldiak';
 $string['eventsrelatedtocourses'] = 'Ikastaroei dagozkien ekitaldiak';
 $string['eventsrelatedtogroups'] = 'Taldeei dagozkien ekitaldiak';
 $string['eventstarttime'] = 'Hasiera-ordua';
@@ -144,7 +145,6 @@ $string['export'] = 'Esportatu';
 $string['exportbutton'] = 'Esportatu';
 $string['exportcalendar'] = 'Esportatu egutegia';
 $string['exporthelp'] = 'Nola harpidetu naiteke egutegi honetara egutegien programa batetik (Google/Outlook/Beste bat)?';
-$string['for'] = 'Norentzat';
 $string['forcecalendartype'] = 'Behartu egutegia';
 $string['fri'] = 'Or';
 $string['friday'] = 'Ostirala';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_performance', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   report_performance
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['check_cachejs_comment_enable'] = 'Indien uigeschakeld zou de pagina tra
 $string['check_cachejs_details'] = 'Javascript caching en compressie verbeteren de performantie voor het laden van een pagina. Aangeraden wordt om dit in te schakelen op productieservers.';
 $string['check_debugmsg_comment_developer'] = 'De performantie kan lichtjes beter zijn indien anders ingesteld dan DEVELOPER';
 $string['check_debugmsg_comment_nodeveloper'] = 'De performantie kan lichtjes achteruit gaan indien ingesteld op DEVELOPER';
-$string['check_debugmsg_details'] = 'Er is zelden nood aan het DEVELOPER-niveau, tenzij je ontwikkelaar bent. In dat geval is het sterk aangeraden. <p>Als je de foutmelding gevonden hebt en ergens gekopieerd en geplakt, dan kun je best je debugniveau terug op NONE zetten. Debugberichten kunnen hackers op een spoor zetten over de installatie van je site en kan performantie beïnvloeden.</p>';
+$string['check_debugmsg_details'] = 'Er is zelden nood aan het DEVELOPER-niveau, tenzij dit gevraagd wordt door een ontwikkelaar. <p>Als je de foutmelding gevonden hebt en ergens gekopieerd en geplakt, dan kun je best je debug-niveau terug op NONE zetten. Debug-berichten kunnen hackers informatie geven over de installatie van je site en kan performantie beïnvloeden.</p>';
 $string['check_enablestats_comment_disable'] = 'Performantie kan beïnvloed worden door het berekenen van statistieken. Indien indgeschakeld moeten statistiekinstellingen met voorzichtigheid gekozen worden.';
 $string['check_enablestats_comment_enable'] = 'De performantie kan verminderen door het verwerken van de statistieken. Kies duur en tijdstip van statistieken daarom met zorg.';
 $string['check_enablestats_details'] = 'Het inschakelen van dit proces zal de logbestanden verwerken en hieruit statistieken genereren. Afhankelijk van de hoeveelheid verkeer op je site kan dit lang duren. <p>Tijdens dit proces kan de serverperformantie verminderen.</p>';

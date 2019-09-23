@@ -36,11 +36,7 @@ $string['auth_ldap_contexts_key'] = 'Contexts';
 $string['auth_ldap_create_context'] = 'If you enable user creation with email confirmation, specify the context where users are created. This context should be different from other users to prevent security issues. You don\'t need to add this context to ldap_context-variable, Moodle will search for users from this context automatically.<br /><b>Note!</b> You have to modify the method user_create() in file auth/ldap/auth.php to make user creation work';
 $string['auth_ldap_create_context_key'] = 'Context for new users';
 $string['auth_ldap_create_error'] = 'Error creating user in LDAP.';
-$string['auth_ldapdescription'] = 'This method provides authentication against an external LDAP server.
-                                  If the given username and password are valid, Moodle creates a new user
-                                  entry in its database. This module can read user attributes from LDAP and prefill
-                                  wanted fields in Moodle.  For following logins only the username and
-                                  password are checked.';
+$string['auth_ldapdescription'] = 'This method provides authentication against an external LDAP server. If the given username and password are valid, Moodle creates a new user entry in its database. This plugin can read user attributes from LDAP and prefill wanted fields in Moodle. For following logins only the username and password are checked.';
 $string['auth_ldap_expiration_desc'] = 'Select \'{$a->no}\' to disable expired password checking or \'{$a->ldapserver}\' to read the password expiry time directly from the LDAP server.';
 $string['auth_ldap_expiration_key'] = 'Expiry';
 $string['auth_ldap_expiration_warning_desc'] = 'Number of days before password expiry warning is issued.';
@@ -48,16 +44,16 @@ $string['auth_ldap_expiration_warning_key'] = 'Expiry warning';
 $string['auth_ldap_expireattr_desc'] = 'Optional: Overrides the LDAP attribute that stores password expiry time.';
 $string['auth_ldap_expireattr_key'] = 'Expiry attribute';
 $string['auth_ldapextrafields'] = 'These fields are optional.  You can choose to pre-fill some Moodle user fields with information from the <b>LDAP fields</b> that you specify here. <p>If you leave these fields blank, then nothing will be transferred from LDAP and Moodle defaults will be used instead.</p><p>In either case, the user will be able to edit all of these fields after they log in.</p>';
-$string['auth_ldap_graceattr_desc'] = 'Optional: Overrides  gracelogin attribute';
+$string['auth_ldap_graceattr_desc'] = 'Optional: Overrides grace login attribute';
 $string['auth_ldap_gracelogin_key'] = 'Grace login attribute';
-$string['auth_ldap_gracelogins_desc'] = 'Enable LDAP gracelogin support. After password has expired user can login until gracelogin count is 0. Enabling this setting displays grace login message if password is expired.';
+$string['auth_ldap_gracelogins_desc'] = 'Enable LDAP grace login support. After password has expired, user can log in until grace login count is 0. Enabling this setting displays grace login message if password has expired.';
 $string['auth_ldap_gracelogins_key'] = 'Grace logins';
 $string['auth_ldap_groupecreators'] = 'List of groups or contexts whose members are allowed to create groups. Separate multiple groups with \';\'. Usually something like \'cn=teachers,ou=staff,o=myorg\'';
 $string['auth_ldap_groupecreators_key'] = 'Group creators';
 $string['auth_ldap_host_url'] = 'Specify LDAP host in URL-form like \'ldap://ldap.myorg.com/\' or \'ldaps://ldap.myorg.com/\'. Separate multiple servers with \';\' to get failover support.';
 $string['auth_ldap_host_url_key'] = 'Host URL';
 $string['auth_ldap_changepasswordurl_key'] = 'Password-change URL';
-$string['auth_ldap_ldap_encoding'] = 'Specify encoding used by LDAP server. Most probably utf-8, MS AD v2 uses default platform encoding such as cp1252, cp1250, etc.';
+$string['auth_ldap_ldap_encoding'] = 'Encoding used by the LDAP server, most likely utf-8. If LDAP v2 is selected, Active Directory uses its configured encoding, such as cp1252 or cp1250.';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP encoding';
 $string['auth_ldap_login_settings'] = 'Login settings';
 $string['auth_ldap_memberattribute'] = 'Optional: Overrides user member attribute, when users belongs to a group. Usually \'member\'';
@@ -98,7 +94,7 @@ $string['auth_ldap_usertypeundefined2'] = 'config.user_type not defined or funct
 $string['auth_ldap_version'] = 'The version of the LDAP protocol your server is using.';
 $string['auth_ldap_version_key'] = 'Version';
 $string['auth_ntlmsso'] = 'NTLM SSO';
-$string['auth_ntlmsso_enabled'] = 'Set to yes to attempt Single Sign On with the NTLM domain. <strong>Note:</strong> this requires additional setup on the webserver to work, see <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
+$string['auth_ntlmsso_enabled'] = 'Set to yes to attempt Single Sign On with the NTLM domain. Note that this requires additional setup on the server to work. For further details, see the documentation <a href="https://docs.moodle.org/en/NTLM_authentication">NTLM authentication</a>.';
 $string['auth_ntlmsso_enabled_key'] = 'Enable';
 $string['auth_ntlmsso_ie_fastpath'] = 'Set to enable the NTLM SSO fast path (bypasses certain steps if the client\'s browser is MS Internet Explorer).';
 $string['auth_ntlmsso_ie_fastpath_key'] = 'MS IE fast path?';
@@ -121,7 +117,7 @@ $string['didntfindexpiretime'] = 'password_expire() didn\'t find expiration time
 $string['didntgetusersfromldap'] = "Did not get any users from LDAP -- error? -- exiting\n";
 $string['gotcountrecordsfromldap'] = "Got {\$a} records from LDAP\n";
 $string['ldapnotconfigured'] = 'The LDAP host url is currently not configured';
-$string['morethanoneuser'] = 'Strange! More than one user record found in ldap. Only using the first one.';
+$string['morethanoneuser'] = 'More than one user record found in LDAP. Using only the first one.';
 $string['needbcmath'] = 'You need the BCMath extension to use expired password checking with Active Directory.';
 $string['needmbstring'] = 'You need the mbstring extension to change passwords in Active Directory';
 $string['nodnforusername'] = 'Error in user_update_password(). No DN for: {$a->username}';
@@ -152,7 +148,7 @@ $string['updateremfailamb'] = 'Failed to update LDAP with ambiguous field {$a->k
 $string['updateremfailfield'] = 'Failed to update LDAP with non-existent field (\'{$a->ldapkey}\'). Key ({$a->key}) - old Moodle value: \'{$a->ouvalue}\' new value: \'{$a->nuvalue}\'';
 $string['updatepasserror'] = 'Error in user_update_password(). Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Error in user_update_password() when reading password expiry time. Error code: {$a->errno}; Error string: {$a->errstring}';
-$string['updatepasserrorexpiregrace'] = 'Error in user_update_password() when modifying expirationtime and/or gracelogins. Error code: {$a->errno}; Error string: {$a->errstring}';
+$string['updatepasserrorexpiregrace'] = 'Error in user_update_password() when modifying expiry time and/or grace logins. Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updateusernotfound'] = 'Could not find user while updating externally. Details follow: search base: \'{$a->userdn}\'; search filter: \'(objectClass=*)\'; search attributes: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() does not support selected usertype: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() does not support selected usertype: {$a}';
@@ -167,4 +163,3 @@ $string['useracctctrlerror'] = 'Error getting userAccountControl for {$a}';
 $string['auth_ldap_creators'] = 'List of groups or contexts whose members are allowed to create new courses. Separate multiple groups with \';\'. Usually something like \'cn=teachers,ou=staff,o=myorg\'';
 $string['auth_ldap_creators_key'] = 'Creators';
 $string['privacy:metadata'] = 'The LDAP server authentication plugin does not store any personal data.';
-

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tags', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['anycollection'] = 'Любая';
 $string['anytype'] = 'Все';
-$string['configtitle'] = 'Название блока';
+$string['configtitle'] = 'Название блока «Теги»';
 $string['defaultdisplay'] = 'Отобразить теги';
 $string['disabledtags'] = 'Теги отключены';
 $string['pluginname'] = 'Теги';

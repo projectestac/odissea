@@ -143,10 +143,8 @@ class core_analytics_prediction_testcase extends advanced_testcase {
             $this->markTestSkipped('Skipping ' . $predictionsprocessorclass . ' as the predictor is not ready.');
         }
 
-        set_config('predictionsprocessor', $predictionsprocessorclass, 'analytics');
-
         $model = $this->add_perfect_model();
-        $model->enable($timesplittingid);
+        $model->update(true, false, $timesplittingid, get_class($predictionsprocessor));
 
         // No samples trained yet.
         $this->assertEquals(0, $DB->count_records('analytics_train_samples', array('modelid' => $model->get_id())));
@@ -423,8 +421,7 @@ class core_analytics_prediction_testcase extends advanced_testcase {
             $this->markTestSkipped('Skipping ' . $predictionsprocessorclass . ' as the predictor is not ready.');
         }
 
-        set_config('predictionsprocessor', $predictionsprocessorclass, 'analytics');
-
+        $model->update(false, false, false, get_class($predictionsprocessor));
         $results = $model->evaluate();
 
         // We check that the returned status includes at least $expectedcode code.
@@ -455,7 +452,7 @@ class core_analytics_prediction_testcase extends advanced_testcase {
         $indicator = $this->getMockBuilder('test_indicator_max')->setMethods(['calculate_sample'])->getMock();
         $indicator->expects($this->never())->method('calculate_sample');
 
-        $existingcalcs = array(111 => 1, 222 => 0.5);
+        $existingcalcs = array(111 => 1, 222 => -1);
         $sampleids = array(111 => 111, 222 => 222);
         list($values, $unused) = $indicator->calculate($sampleids, $sampleorigin, $starttime, $endtime, $existingcalcs);
     }

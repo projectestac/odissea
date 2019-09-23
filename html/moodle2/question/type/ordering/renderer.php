@@ -93,12 +93,15 @@ class qtype_ordering_renderer extends qtype_with_combined_feedback_renderer {
             // this represents the initial position of the items.
             $md5keys = array();
 
-            // Set layout class.
-            $layoutclass = $question->get_ordering_layoutclass();
-            $activeclass = '';
+            // Set CSS classes for sortable list and sortable items.
+            $sortablelist = 'sortablelist';
             if ($qa->get_state()->is_active()) {
-                $activeclass = ' orderingactive';
+                $sortablelist .= ' orderingactive';
             }
+            if ($sortableitem = $question->get_ordering_layoutclass()) {
+                $sortableitem .= ' ';
+            }
+            $sortableitem .= 'numbering' . $question->options->numberingstyle;
 
             // Generate ordering items.
             foreach ($currentresponse as $position => $answerid) {
@@ -114,7 +117,7 @@ class qtype_ordering_renderer extends qtype_with_combined_feedback_renderer {
                     $printeditems = true;
                     $result .= html_writer::start_tag('div', array('class' => 'ablock', 'id' => $ablockid));
                     $result .= html_writer::start_tag('div', array('class' => 'answer ordering'));
-                    $result .= html_writer::start_tag('ul',  array('class' => 'sortablelist' . $activeclass, 'id' => $sortableid));
+                    $result .= html_writer::start_tag('ul',  array('class' => $sortablelist, 'id' => $sortableid));
                 }
 
                 // Set the CSS class and correctness img for this response.
@@ -136,7 +139,7 @@ class qtype_ordering_renderer extends qtype_with_combined_feedback_renderer {
                         $img = '';
                         break;
                 }
-                $class = trim("$class $layoutclass");
+                $class = trim("$class $sortableitem");
 
                 // Format the answer text.
                 $answer = $question->answers[$answerid];
@@ -218,8 +221,8 @@ class qtype_ordering_renderer extends qtype_with_combined_feedback_renderer {
                     $totalscore = 0;
                     $totalmaxscore = 0;
 
-                    $layoutclass = $question->get_ordering_layoutclass();
-                    $params = array('class' => $layoutclass);
+                    $sortableitem = $question->get_ordering_layoutclass();
+                    $params = array('class' => $sortableitem);
 
                     $scoredetails .= html_writer::tag('p', get_string('scoredetails', $plugin));
                     $scoredetails .= html_writer::start_tag('ol', array('class' => 'scoredetails'));
@@ -296,7 +299,7 @@ class qtype_ordering_renderer extends qtype_with_combined_feedback_renderer {
             }
         }
         if ($showcorrect) {
-            $layoutclass = $question->get_ordering_layoutclass();
+            $sortableitem = $question->get_ordering_layoutclass();
             $output .= html_writer::tag('p', get_string('correctorder', 'qtype_ordering'));
             $output .= html_writer::start_tag('ol', array('class' => 'correctorder'));
             $correctresponse = $question->correctresponse;
@@ -304,7 +307,7 @@ class qtype_ordering_renderer extends qtype_with_combined_feedback_renderer {
                 $answer = $question->answers[$answerid];
                 $answertext = $question->format_text($answer->answer, $answer->answerformat,
                                                      $qa, 'question', 'answer', $answerid);
-                $output .= html_writer::tag('li', $answertext, array('class' => $layoutclass));
+                $output .= html_writer::tag('li', $answertext, array('class' => $sortableitem));
             }
             $output .= html_writer::end_tag('ol');
         }

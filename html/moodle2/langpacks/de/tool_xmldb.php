@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_xmldb', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -156,6 +156,7 @@ $string['nowrongintsfound'] = 'Es wurden keine ungültigen Zahlenwerte (integer)
 $string['nowrongoraclesemanticsfound'] = 'Es wurden keine Orcale Tabellen mit BYTE semantics gefunden. die Datenbank benötigt keine weitere Bearbeitung.';
 $string['numberincorrectdecimals'] = 'Falsche Anzahl von Stellen (number)';
 $string['numberincorrectlength'] = 'Falsche Feldlänge (number)';
+$string['numberincorrectwholepart'] = 'Zu großer ganzzahliger Teil für Zahlenfeld';
 $string['pendingchanges'] = 'Hinweis: Sie haben Veränderungen in dieser Datei vorgenommen. Sie können jederzeit gespeichert werden.';
 $string['pendingchangescannotbesaved'] = 'Die Änderungen in dieser Datei können nicht gespeichert werden! Bitte prüfen Sie, dass das Verzeichnis und die darin enthaltene Datei "install.xml" eine Schreibberechtigung für den Webserver besitzen.';
 $string['pendingchangescannotbesavedreload'] = 'Die Änderungen in dieser Datei können nicht gespeichert werden! Bitte prüfen Sie, dass das Verzeichnis und die darin enthaltene Datei "install.xml" eine Schreibbereichtigung für den Webserver besitzen. Wenn Sie danach diese Seite neu laden, sollten Sie diese Änderungen speichern können.';

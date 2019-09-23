@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Adicionar categoria';
 $string['addcomment'] = 'Adicionar comentário';
 $string['addentry'] = 'Adicionar novo termo';
 $string['addingcomment'] = 'Adicionar um comentário';
@@ -107,6 +108,7 @@ $string['defaultsortkey'] = 'Chave de ordenação predefinida';
 $string['defaultsortorder'] = 'Tipo de ordenação predefinida';
 $string['definition'] = 'Descrição';
 $string['definitions'] = 'Descrições';
+$string['deletecategory'] = 'Apagar categoria';
 $string['deleteentry'] = 'Apagar termo';
 $string['deleteentrya'] = 'Apagar entrada: {$a}';
 $string['deletenotenrolled'] = 'Apagar todos os termos inseridos por utilizadores não inscritos';
@@ -141,6 +143,7 @@ $string['duplicateentry'] = 'Termo repetido';
 $string['editalways'] = 'Permitir editar sempre';
 $string['editalways_help'] = 'Esta configuração especifica se os termos podem ser editados a qualquer momento ou se o aluno só pode editar os termos que inseriu durante um período definido (geralmente 30 minutos).';
 $string['editcategories'] = 'Editar categorias';
+$string['editcategory'] = 'Editar categoria';
 $string['editentry'] = 'Editar termo';
 $string['editentrya'] = 'Editar entrada: {$a}';
 $string['editingcomment'] = 'A editar comentário';
@@ -154,7 +157,8 @@ $string['entrydeleted'] = 'Termo apagado';
 $string['entryexported'] = 'Termo exportado com sucesso';
 $string['entryishidden'] = '(este termo está atualmente oculto)';
 $string['entryleveldefaultsettings'] = 'Configurações predefinidas para termos do glossário';
-$string['entrysaved'] = 'Este termo foi gravado';
+$string['entrylink'] = 'Hiperligação da entrada: {$a}';
+$string['entrysaved'] = 'Este termo foi guardado';
 $string['entryupdated'] = 'Este termo foi atualizado';
 $string['entryusedynalink'] = 'Criar automaticamente hiperligações para este termo';
 $string['entryusedynalink_help'] = 'Se ativar esta opção e as hiperligações automáticas do glossário estiverem ativadas pelo administrador, sempre que o termo surgir  em qualquer conteúdo da disciplina, o mesmo terá uma hiperligação para a respetiva definição no glossário.';

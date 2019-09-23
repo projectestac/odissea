@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'files', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   files
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:metadata:core_userkey'] = 'プライベートトークンを生成および保存しました。このトークンを使うことによりあなたはログインせずにMoodleファイルにアクセスすることができます。';
 $string['privacy:metadata:files'] = 'ユーザによってアップロードまたは共有されたファイルのレコードです。';
 $string['privacy:metadata:files:author'] = 'ファイルコンテンツの作成者です。';
 $string['privacy:metadata:files:contenthash'] = 'ファイルコンテンツのハッシュです。';

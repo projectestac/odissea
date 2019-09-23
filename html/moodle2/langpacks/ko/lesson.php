@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lesson', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -100,7 +100,6 @@ $string['completed'] = '이수';
 $string['completederror'] = '학습 완료';
 $string['completethefollowingconditions'] = '계속하기 위해서는 <b>{$a}</b> 학습에서 다음 내용을 먼저 완료해야만 합니다.';
 $string['conditionsfordependency'] = '선수 학습';
-$string['configactionaftercorrectanswer'] = '정답일 때의 기본 활동';
 $string['configmaxanswers'] = '페이지 당 기본 최대 답 수';
 $string['configmediaclose'] = '미디어 파일에 의해 생성된 팝업창의 종료버튼 표시';
 $string['configmediaheight'] = '미디어 파일에 의해 생성된 팝업창의 높이 조정';

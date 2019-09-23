@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hvp', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   hvp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['additionalinfo'] = 'Aanvullende informatie';
 $string['additionallicenseinfo'] = 'Aanvullende informatie over de licentie';
 $string['addlibraries'] = 'Bibliotheken toevoegen';
 $string['ajaxfailed'] = 'Gegevens laden mislukt.';
+$string['anunexpectedsave'] = 'Er is iets onverwachts gebeurd. Hierdoor was het niet mogelijk om de content te bewaren.';
 $string['attribution'] = 'Naamsvermelding 4.0';
 $string['attributionnc'] = 'Naamsvermelding-NietCommercieel 4.0';
 $string['attributionncnd'] = 'Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 4.0';
@@ -65,6 +66,7 @@ $string['confirmdialogbody'] = 'Bevestig dat je wilt doorgaan. Deze actie kan ni
 $string['confirmdialogheader'] = 'Handeling bevestigen';
 $string['confirmlabel'] = 'Bevestigen';
 $string['contentchanged'] = 'Deze inhoud is gewijzigd sinds de laatste keer dat je hem hebt gebruikt.';
+$string['contentCopied'] = 'Content is gekopieerd van knipblad';
 $string['contentstatefrequency'] = 'Frequentie van opslaan van de inhoud';
 $string['contentstatefrequency_help'] = 'In seconden, hoe vaak je wilt dat de gebruiker zijn werk automatisch opslaat. Verhoog deze waarde als er problemen zijn met Ajax-verzoeken.';
 $string['contenttype'] = 'Inhoudstype';
@@ -96,6 +98,9 @@ $string['disablehubdescription'] = 'Het wordt sterk aangeraden deze optie ingesc
 $string['displayoptionalwaysshow'] = 'Altijd tonen';
 $string['displayoptionauthoroff'] = 'Gecontroleerd door auteur, standaard uitgeschakeld';
 $string['displayoptionauthoron'] = 'Gecontroleerd door auteur, standaard ingeschakeld';
+$string['displayoptiondownloadalways'] = 'Altijd';
+$string['displayoptiondownloadnever'] = 'Nooit';
+$string['displayoptiondownloadpermission'] = 'Alleen tonen wanneer gebruiker toestemming heeft om H5P te exporteren';
 $string['displayoptionnevershow'] = 'Nooit tonen';
 $string['displayoptionpermissions'] = 'Alleen tonen wanneer de gebruiker permissie heeft H5P te exporteren';
 $string['displayoptionpermissionsembed'] = 'Toon alleen wanneer de gebruiker permissie heeft H5P in te bedden';
@@ -112,7 +117,7 @@ $string['enableabout'] = 'Over H5P knop';
 $string['enablecopyright'] = 'Copyright knop';
 $string['enabledlrscontenttypes'] = 'LRS afhankelijke inhoudstypes inschakelen';
 $string['enabledlrscontenttypes_help'] = 'Dit maakt het mogelijk inhoudstypes te gebruiken die voor correcte werking afhankelijk zijn van een Learning Record Store, zoals het inhoudstype Vragenlijst.';
-$string['enabledownload'] = 'Download-knop';
+$string['enabledownload'] = 'Sta downloaden toe';
 $string['enableembed'] = 'Inbedden-knop';
 $string['enableframe'] = 'Toon activiteitenbalk en frame';
 $string['enablehublabel'] = 'Gebruik H5P-hub.';
@@ -240,6 +245,7 @@ $string['noh5ps'] = 'Er is geen interactieve inhoud beschikbaar voor deze cursus
 $string['nojson'] = 'Het hoofdbestand h5p.json is niet geldig';
 $string['noparameters'] = 'Geen parameters';
 $string['noparse'] = 'Kan het hoofdbestand h5p.json niet parsen.';
+$string['nopermissiontogettranslations'] = 'Je hebt geen toestemming om vertalingen te ontvangen.';
 $string['nopermissiontorestrict'] = 'Je hebt geen toestemming om bibliotheken te beperken.';
 $string['nopermissiontosavecontentuserdata'] = 'Je hebt geen toestemming om gebruikersdata van inhoud op te slaan.';
 $string['nopermissiontosaveresult'] = 'Je hebt geen toestemming om resultaten voor deze cinhoud op te slaan.';
@@ -313,6 +319,9 @@ $string['reportingscorelabel'] = 'Score:';
 $string['reportnotsupported'] = 'Niet ondersteund';
 $string['reportsubmitgradelabel'] = 'Cijfer indienen';
 $string['resizescript'] = 'Neem dit script op je website op als je wilt dat de weergave van de inhoud zich aanpast aan de schermgrootte;';
+$string['reuse'] = 'Hergebruik';
+$string['reuseContent'] = 'Hergebruik content';
+$string['reuseDescription'] = 'Hergebruik deze content.';
 $string['reveal'] = 'Tonen';
 $string['reviseserversetupandretry'] = 'Wanneer je je serverinstellingen hebt aangepast, kun je de communicatie met de H5P-hub opnieuw inschakelen via H5P Instellingen.';
 $string['score'] = 'Score';

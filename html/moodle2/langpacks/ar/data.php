@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -176,18 +176,6 @@ $string['movezipfailed'] = 'لا يمكن نقل الملف المضغوظ';
 $string['multientry'] = 'المدخل المكرر';
 $string['multimenu'] = 'قائمة (عدة خيارات)';
 $string['multipletags'] = 'تم العثور على علامات متعددة! لم يتم حفظ القالب';
-$string['namecheckbox'] = 'حقل صندوق اختيار';
-$string['namedate'] = 'حقل التاريخ';
-$string['namefile'] = 'حقل الملف';
-$string['namelatlong'] = 'حقل خطّ العرض/خط الطول';
-$string['namemenu'] = 'حقل قائمة الأوامر';
-$string['namemultimenu'] = 'حقل القائمة متعددة الخيارات';
-$string['namenumber'] = 'حقل الرقم';
-$string['namepicture'] = 'حقل الصورة';
-$string['nameradiobutton'] = 'حقل أزرار اختيار دائري';
-$string['nametext'] = 'حقل النص';
-$string['nametextarea'] = 'حقل منطقة النص';
-$string['nameurl'] = 'حقل عنوان أنترنت';
 $string['newentry'] = 'مدخل جديد';
 $string['newfield'] = 'أنشئ حقل جديد';
 $string['noaccess'] = 'ليس لديك صلاحية الوصول لهذه الصفحة';

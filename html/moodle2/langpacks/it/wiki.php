@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'wiki', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -228,10 +228,10 @@ $string['privacy:metadata:wiki_pages:timecreated'] = 'Data e ora di creazione de
 $string['privacy:metadata:wiki_pages:timemodified'] = 'Data e ora di modifica della pagina.';
 $string['privacy:metadata:wiki_pages:title'] = 'Titolo della pagina';
 $string['privacy:metadata:wiki_pages:userid'] = 'Ultimo utente che ha modificato la pagina.';
-$string['privacy:metadata:wiki_subwikis'] = 'Informazioni sui subwiki (in caso di modalità di gruppo o individuale)';
+$string['privacy:metadata:wiki_subwikis'] = 'Informazioni sul subwiki (in caso di modalità collaborativa o individuale).';
 $string['privacy:metadata:wiki_subwikis:groupid'] = 'Gruppo a cui appartiene un subwiki.';
 $string['privacy:metadata:wiki_subwikis:userid'] = 'Utente a cui appartiene un subwiki (per Wiki individuali).';
-$string['privacy:metadata:wiki_versions'] = 'Informazioni sulla storia delle pagine Wiki.';
+$string['privacy:metadata:wiki_versions'] = 'Informazioni sullo storico delle pagine Wiki.';
 $string['privacy:metadata:wiki_versions:content'] = 'Revisione dei contenuti.';
 $string['privacy:metadata:wiki_versions:contentformat'] = 'Formato revisione dei contenuti.';
 $string['privacy:metadata:wiki_versions:timecreated'] = 'Data e ora di creazione della revisione.';

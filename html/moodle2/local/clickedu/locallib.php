@@ -14,6 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Global library file
+ *
+ * @author      Adrià Monguillot <amonguillot@clickedu.net>
+ * @author      Daniel Ureña Zafra <durenadev@gmail.com>
+ * @copyright   2019 CLICKART TALLER DE COMUNICACIÓ, S.L.
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
 require_once("$CFG->dirroot/course/lib.php");
 require_once("$CFG->dirroot/course/modlib.php");
 require_once("$CFG->dirroot/mod/resource/locallib.php");
@@ -729,9 +740,9 @@ function clickedu_sync_courses(array $courses, progress_bar $progress) {
     $teacherroleid = get_config('local_clickedu', 'teacherrole');
     $studentroleid = get_config('local_clickedu', 'studentrole');
     $categoryid = get_config('local_clickedu', 'coursecat');
-    $category = coursecat::get($categoryid, IGNORE_MISSING, true);
+    $category = core_course_category::get($categoryid, IGNORE_MISSING, true);
     if (!$category or !$category->id) {
-        $category = coursecat::get_default();
+        $category = core_course_category::get_default();
         set_config('coursecat', $category->id, 'local_clickedu');
     }
 
@@ -834,7 +845,7 @@ function clickedu_webservice_call($path, array $params) {
 }
 
 function clickedu_webservice_params(array $params, $parentkey='') {
-    $query = '';
+    $query = array();
     foreach ($params as $key => $value) {
         if ($parentkey) {
             $fullkey = $parentkey . '[' . urlencode($key) . ']';

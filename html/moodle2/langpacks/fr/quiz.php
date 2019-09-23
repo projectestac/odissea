@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,6 +82,7 @@ $string['answers'] = 'Réponses';
 $string['answersingleno'] = 'Plusieurs choix possibles';
 $string['answersingleyes'] = 'Une seule réponse';
 $string['answertoolong'] = 'Réponse trop longue après la ligne {$a} (255 caractères max.)';
+$string['anytags'] = 'Tous les tags';
 $string['aon'] = 'Format AON';
 $string['areyousureremoveselected'] = 'Voulez-vous vraiment retirer les questions sélectionnées ?';
 $string['asshownoneditscreen'] = 'Tel qu\'affiché sur la page de modification';
@@ -99,18 +100,24 @@ $string['attemptincomplete'] = 'Cette tentative (de {$a}) n\'est pas encore term
 $string['attemptlast'] = 'Dernière tentative';
 $string['attemptnumber'] = 'Tentative';
 $string['attemptquiznow'] = 'Faire le test';
+$string['attemptreviewtitle'] = '{$a} : relecture de tentative';
+$string['attemptreviewtitlepaged'] = '{$a->name} : relecture de tentative (page {$a->currentpage} sur {$a->totalpages})';
 $string['attempts'] = 'Tentatives';
 $string['attemptsallowed'] = 'Nombre de tentatives autorisées';
 $string['attemptsdeleted'] = 'Tentatives de tests supprimées';
 $string['attemptselection'] = 'Choisir les tentatives à analyser par participant :';
 $string['attemptsexist'] = 'Vous ne pouvez plus ajouter ou retirer des questions.';
+$string['attempts_help'] = 'Le nombre totale de tentatives autorisées (pas le nombre de tentatives supplémentaires).';
 $string['attemptsnum'] = 'Tentatives : {$a}';
 $string['attemptsnumthisgroup'] = 'Tentatives : {$a->total} ({$a->group} de ce groupe)';
 $string['attemptsnumyourgroups'] = 'Tentatives : {$a->total} ({$a->group} de vos groupes)';
 $string['attemptsonly'] = 'N\'afficher que les étudiants ayant déjà effectué le test';
 $string['attemptstate'] = 'État';
 $string['attemptstillinprogress'] = 'Tentative encore en cours';
+$string['attemptsummarytitle'] = '{$a} : résumé de tentative';
 $string['attemptsunlimited'] = 'Nombre illimité de tentatives';
+$string['attempttitle'] = '{$a}';
+$string['attempttitlepaged'] = '{$a->name} (page {$a->currentpage} sur {$a->totalpages})';
 $string['autosaveperiod'] = 'Délai d\'enregistrement automatique';
 $string['autosaveperiod_desc'] = 'Durant les tests, les réponses des participants peuvent être enregistrées automatiquement. Les réponses sont enregistrées dès que l\'une d\'entre elles est modifiée ou après la durée indiquée ici. Un délai plus court augmente la charge sur le serveur, mais réduit en revanche les risques de perte du travail des participants. Si vous voulez réduire considérablement ce délai, essayez de le diminuer graduellement en observant la charge du serveur. Si elle devient trop grande, allongez le délai. En fixant le délai à 0, l\'enregistrement automatique est désactivé.';
 $string['back'] = 'Retour à la question précédente';
@@ -131,12 +138,14 @@ $string['calculatedquestion'] = 'Question calculée non supportée (ligne {$a}).
 $string['cannotcreatepath'] = 'Le fichier ne peut pas être créé ({$a})';
 $string['cannoteditafterattempts'] = 'Vous ne pouvez pas ajouter ou retirer des questions, car ce test a déjà été effectué ({$a}).';
 $string['cannotfindprevattempt'] = 'Impossible de trouver une tentative précédente.';
-$string['cannotfindquestionregard'] = 'Impossible d\'obtenir les questions à réévaluer !';
+$string['cannotfindquestionregard'] = 'Impossible d\'obtenir les questions à ré-évaluer !';
 $string['cannotinsert'] = 'Impossible d\'insérer la question';
 $string['cannotinsertrandomquestion'] = 'Impossible d\'insérer une nouvelle question aléatoire !';
 $string['cannotloadquestion'] = 'Impossible de charger les options de question';
 $string['cannotloadtypeinfo'] = 'Impossible de lire les informations du type de question de cette question';
 $string['cannotopen'] = 'Impossible d\'ouvrir le fichier d\'exportation ({$a})';
+$string['cannotremoveallsectionslots'] = 'Vous avez sélectionné toutes les questions sous l\'entête de section « {$a} ». Il n\'est pas permis de supprimer toutes les questions dans sous un entête de section.';
+$string['cannotremoveslots'] = 'Impossible de supprimer des questions';
 $string['cannotrestore'] = 'Impossible de restaurer les sessions de question';
 $string['cannotreviewopen'] = 'Vous ne pouvez pas relire cette tentative, qui est encore ouverte.';
 $string['cannotsavelayout'] = 'Impossible d\'enregistrer la disposition';
@@ -149,12 +158,12 @@ $string['cannotstartmissingquestion'] = 'Impossible de démarrer ce test. Le tes
 $string['cannotstartnoquestions'] = 'Impossible de commencer une tentative. Ce test n\'a pas encore été configuré et ne comporte aucune question.';
 $string['cannotwrite'] = 'Impossible d\'écrire dans le fichier d\'exportation ({$a})';
 $string['canredoquestions'] = 'Autoriser à répondre à nouveau aux questions au cours d\'une tentative';
-$string['canredoquestions_desc'] = 'Si cette option est activée, après que les élèves ont répondu à une question, ils voient un bouton « Répondre à nouveau à la question ». Cette fonction permet de répondre différemment à la même question, sans avoir à envoyer la tentative de l\'ensemble du test et d\'en commencer une autre. Elle est avant tout utile pour les tests de formation ou d\'entraînement.
+$string['canredoquestions_desc'] = 'Si ce réglage est activé, quand les élèves ont répondu à une question, ils voient un bouton « Répondre à nouveau à la question ». Cette fonction permet de répondre différemment à la même question, sans avoir à envoyer la tentative de l\'ensemble du test et d\'en commencer une autre. Elle est utile pour les tests de formation ou d\'entraînement.
 
-Ce réglage n\'affecte que les questions et les comportements offrant aux étudiants la possibilité de terminer la question avant que la tentative ne soit envoyée (par exemple, les comportements « Feedback immédiat » et « Interactif avec essais multiples »). Il ne s\'applique donc pas aux questions de composition.';
-$string['canredoquestions_help'] = 'Si cette option est activée, après que les élèves ont répondu à une question, ils voient un bouton « Répondre à nouveau à la question ». Cette fonction permet de répondre différemment à la même question, sans avoir à envoyer la tentative de l\'ensemble du test et d\'en commencer une autre. Elle est avant tout utile pour les tests de formation ou d\'entraînement.
+Ce réglage n\'affecte que les questions et les comportements offrant aux étudiants la possibilité de terminer la question avant que la tentative ne soit envoyée (par exemple, les comportements « Feedback immédiat » et « Interactif avec essais multiples »).';
+$string['canredoquestions_help'] = 'Si cette option est activée, après que les élèves ont répondu à une question, ils voient un bouton « Répondre à nouveau à la question ». Cette fonction permet de répondre différemment à la même question, sans avoir à envoyer la tentative de l\'ensemble du test et d\'en commencer une autre. Elle est utile pour les tests de formation ou d\'entraînement.
 
-Ce réglage n\'affecte que les questions et les comportements offrant aux étudiants la possibilité de terminer la question avant que la tentative ne soit envoyée (par exemple, les comportements « Feedback immédiat » et « Interactif avec essais multiples »). Il ne s\'applique donc pas aux questions de composition.';
+Ce réglage n\'affecte que les questions et les comportements offrant aux étudiants la possibilité de terminer la question avant que la tentative ne soit envoyée (par exemple, les comportements « Feedback immédiat » et « Interactif avec essais multiples »).';
 $string['canredoquestionsyes'] = 'Les étudiants peuvent répondre à nouveau à toute question terminée';
 $string['caseno'] = 'La casse des caractères indiffère';
 $string['casesensitive'] = 'Casse des caractères';
@@ -341,6 +350,7 @@ $string['eventreportviewed'] = 'Rapport de test consulté';
 $string['everynquestions'] = 'Toutes les {$a} questions';
 $string['everyquestion'] = 'Chaque question';
 $string['everythingon'] = 'Tout activer';
+$string['existingcategory'] = 'Catégorie existante';
 $string['exportcategory'] = 'Exporter catégorie';
 $string['exporterror'] = 'Une erreur est survenue durant l\'exportation';
 $string['exportingquestions'] = 'Les questions sont exportées vers un fichier';
@@ -388,7 +398,7 @@ $string['gradehighest'] = 'Note la plus haute';
 $string['grademethod'] = 'Méthode d\'évaluation';
 $string['grademethod_help'] = 'Lorsqu\'il est permis à l\'étudiant d\'effectuer plusieurs tentatives, les possibilités suivantes sont disponibles pour calculer sa note finale pour le test.
 
-* Note la plus élevée –  la meilleure des notes de toutes les tentatives
+* Note la plus élevée – la meilleure des notes de toutes les tentatives
 * Note moyenne – la moyenne arithmétique de toutes les tentatives
 * Première note – la note obtenue à la première tentative (les autres tentatives sont ignorées)
 * Dernière note – la note obtenue à la dernière tentative (les autres tentatives sont ignorées)';
@@ -403,7 +413,7 @@ $string['gradingdetailszeropenalty'] = 'Vous n\'avez pas été pénalisé par ce
 $string['gradingmethod'] = 'Méthode d\'évaluation : {$a}';
 $string['groupoverrides'] = 'Dérogations de groupe';
 $string['groupoverridesdeleted'] = 'Dérogations de groupe supprimées';
-$string['groupsnone'] = 'Il n\'y a pas de groupe dans ce cours';
+$string['groupsnone'] = 'Il n\'y a pas de groupe auquel vous pouvez accéder.';
 $string['guestsno'] = 'Désolé, les visiteurs anonymes n\'ont pas accès aux tests';
 $string['hidebreaks'] = 'Cacher les sauts de page';
 $string['hidereordertool'] = 'Cacher l\'outil de réarrangement';
@@ -442,6 +452,7 @@ $string['invalidcategory'] = 'L\'identifiant de catégorie n\'est pas valide';
 $string['invalidoverrideid'] = 'Identifiant de dérogation non valide';
 $string['invalidquestionid'] = 'Identifiant de question non valide';
 $string['invalidquizid'] = 'Identifiant de test non valide';
+$string['invalidrandomslot'] = 'Id d\'insertion de question aléatoire non valide.';
 $string['invalidsource'] = 'La source n\'est pas acceptée comme valable.';
 $string['invalidsourcetype'] = 'Type de la source non valable.';
 $string['invalidstateid'] = 'Identifiant d\'état non valide';
@@ -507,6 +518,7 @@ $string['navmethod_seq'] = 'Séquentielle';
 $string['navnojswarning'] = 'Attention ! Ces liens n\'enregistrent pas vos réponses. Utilisez le bouton suivant au bas de la page.';
 $string['neverallononepage'] = 'Jamais, toutes les questions sur une page';
 $string['newattemptfail'] = 'Erreur ! Impossible de commencer une tentative de ce test';
+$string['newcategory'] = 'Nouvelle catégorie';
 $string['newpage'] = 'Nouvelle page';
 $string['newpageevery'] = 'Commencer automatiquement une nouvelle page';
 $string['newpage_help'] = 'Pour les tests longs, il peut être utile de répartir le test sur plusieurs pages, en définissant un nombre de questions par page. Lorsque vous ajouterez des questions au test, les boutons de changement de page seront automatiquement introduits, selon le paramètre indiqué ici. Par ailleurs, vous pourrez également déplacer manuellement ce changement de page, en modifiant la page.';
@@ -582,7 +594,7 @@ $string['overduehandlingautoabandon'] = 'La tentative doit être envoyée avant 
 $string['overduehandlingautosubmit'] = 'La tentative en cours est envoyée automatiquement';
 $string['overduehandling_desc'] = 'Ce qui doit arriver par défaut si un participant n\'envoie pas son test dans le temps imparti.';
 $string['overduehandlinggraceperiod'] = 'Un laps de temps supplémentaire est donné pour envoyer le test. Il n\'est pas permis de répondre aux questions durant cette période';
-$string['overduehandling_help'] = 'Ce réglage détermine ce qui se passe si le participant n\'envoie pas son test avant l\'échéance du délai. Si le participant est actif à cet instant, la tentative sera envoyée automatiquement. S\'il n\'est pas connecté, ce réglage indique ce qui se passe à ce moment.';
+$string['overduehandling_help'] = 'Ce réglage détermine ce qui se passe si l\'étudiant n\'envoie pas son test avant l\'échéance du délai. Si l\'étudiant est actif à cet instant, la tentative sera envoyée automatiquement. S\'il n\'est pas connecté, ce réglage détermine ce qui se passe à ce moment.';
 $string['overduemustbesubmittedby'] = 'Cette tentative est maintenant en retard et aurait déjà dû être envoyée. Si vous désirez que ce test soit évalué, vous devez l\'envoyer jusqu\'à {$a}. Si vous ne le faites pas, vous n\'obtiendrez pas de note pour cette tentative.';
 $string['override'] = 'Dérogation';
 $string['overridedeletegroupsure'] = 'Voulez-vous vraiment supprimer la dérogation pour le groupe {$a} ?';
@@ -657,7 +669,7 @@ $string['questionbank'] = 'de la banque de questions';
 $string['questionbankmanagement'] = 'Gestion banque de questions';
 $string['questionbehaviour'] = 'Comportement des questions';
 $string['questioncats'] = 'Catégories de questions';
-$string['questiondeleted'] = 'Cette question a été supprimée. Veuillez contacter votre enseignant';
+$string['questiondeleted'] = 'Cette question a été supprimée. Veuillez contacter votre enseignant.';
 $string['questiondependencyadd'] = 'Il n\'y a pas de restriction sur le moment où cette question peut être tentée. Cliquez pour modifier';
 $string['questiondependencyfree'] = 'Il n\'y a pas de restriction sur cette question.';
 $string['questiondependencyremove'] = 'La question {$a->thisq} ne peut pas être tentée avant que la question précédente {$a->previousq} ait reçu une réponse. Cliquez pour modifier';
@@ -671,8 +683,10 @@ $string['questionnotloaded'] = 'La question {$a} n\'a pas été chargée depuis 
 $string['questionorder'] = 'Ordre des questions';
 $string['questionposition'] = 'Nouveau rang dans la suite des questions pour la question {$a}';
 $string['questions'] = 'Questions';
+$string['questionsetpreview'] = 'Prévisualisation du jeu de questions';
 $string['questionsinclhidden'] = 'Questions (y compris masquées)';
 $string['questionsinthisquiz'] = 'Questions dans ce test';
+$string['questionsmatchingfilter'] = 'Questions correspondant à ce filtre : {$a}';
 $string['questionsperpage'] = 'Questions par page';
 $string['questionsperpageselected'] = 'Le nombre de questions par page a été spécifié, de sorte que la pagination est fixe. C\'est pourquoi les outils de pagination sont désactivés. Vous pouvez changer ceci dans {$a}';
 $string['questionsperpagex'] = 'Questions par page : {$a}';
@@ -694,7 +708,7 @@ $string['quiz:emailwarnoverdue'] = 'Obtenir un message d\'avertissement lorsqu\'
 $string['quizeventcloses'] = '{$a} se termine';
 $string['quizeventopens'] = '{$a} s\'ouvre';
 $string['quiz:grade'] = 'Évaluer manuellement les tests';
-$string['quiz:ignoretimelimits'] = 'Ignorer les limites de temps des tests';
+$string['quiz:ignoretimelimits'] = 'Ignorer la limite de temps du test';
 $string['quizisclosed'] = 'Ce test est fermé';
 $string['quizisclosedwillopen'] = 'Test fermé (ouverture {$a})';
 $string['quizisopen'] = 'Ce test est ouvert';
@@ -712,7 +726,7 @@ $string['quizopenwillclose'] = 'Ce test est ouvert et sera fermée le {$a} à';
 $string['quizordernotrandom'] = 'L\'ordre du test n\'est pas mélangé';
 $string['quizorderrandom'] = '* L\'ordre du test est mélangé';
 $string['quiz:preview'] = 'Prévisualiser les tests';
-$string['quiz:regrade'] = 'Renoter les tentatives des tests';
+$string['quiz:regrade'] = 'Ré-évaluer les tentatives des tests';
 $string['quiz:reviewmyattempts'] = 'Relire ses propres tentatives';
 $string['quizsettings'] = 'Réglages du test';
 $string['quiztimer'] = 'Minuterie';
@@ -721,10 +735,18 @@ $string['quiz:viewreports'] = 'Consulter les rapports des tests';
 $string['quizwillopen'] = 'Ce test sera ouvert le {$a}';
 $string['random'] = 'Question aléatoire';
 $string['randomcreate'] = 'Créer des questions aléatoires';
+$string['randomediting'] = 'Modification d\'une question aléatoire';
 $string['randomfromcategory'] = 'Question aléatoire tirée des catégories :';
 $string['randomfromexistingcategory'] = 'Question aléatoire d\'une catégorie existante';
+$string['randomfromunavailabletag'] = '{$a} (non disponible)';
 $string['randomnosubcat'] = 'Questions aléatoires tirée de cette catégorie (sans les sous-catégories).';
 $string['randomnumber'] = 'Nombre de questions aléatoires';
+$string['randomquestion'] = 'Question aléatoire';
+$string['randomquestion_help'] = 'Une question aléatoire permet d\'insérer une question tirée au hasard dans une catégorie spécifique ou spécifiée par un tag dans une activité.';
+$string['randomquestiontags'] = 'Tags';
+$string['randomquestiontags_help'] = 'Il est possible de restreindre les critères de sélection en indiquant ici des tags de questions.
+
+Les questions aléatoires seront sélectionnées parmi les questions qui tous ces tags.';
 $string['randomquestionusinganewcategory'] = 'Question aléatoire d\'une nouvelle catégorie';
 $string['randomwithsubcat'] = 'Questions aléatoires tirées de cette catégorie et des sous-catégories';
 $string['readytosend'] = 'Vous êtes sur le point d\'envoyer votre test à l\'évaluation. Voulez-vous vraiment continuer ?';
@@ -734,7 +756,7 @@ $string['recurse'] = 'Afficher aussi les questions des sous-catégories';
 $string['redoesofthisquestion'] = 'Autres questions déjà répondues ici : {$a}';
 $string['redoquestion'] = 'Tenter une autre question semblable';
 $string['regrade'] = 'Recalculer les notes de toutes les tentatives';
-$string['regradecomplete'] = 'Toutes les notes ont été recalculées';
+$string['regradecomplete'] = 'Toutes les tentatives ont été ré-évaluées';
 $string['regradecount'] = '{$a->changed} sur {$a->attempt} notes ont été changées';
 $string['regradedisplayexplanation'] = 'Les tentatives modifiées durant le nouveau calcul des notes sont affichées comme hyperliens dans la fenêtre de relecture des questions';
 $string['regradenotallowed'] = 'Vous n\'avez pas les droits d\'accès requis pour ré-évaluer ce test';
@@ -873,14 +895,14 @@ $string['showreport'] = 'Afficher le rapport';
 $string['showsmallimage'] = 'Petite image';
 $string['showteacherattempts'] = 'Afficher les tentatives des enseignants';
 $string['showuserpicture'] = 'Afficher l\'avatar du participant';
-$string['showuserpicture_help'] = 'Si ce réglage est activé, le nom et l\'avatar de l\'étudiant s\'affichent durant le test et lors de la relecture. Cela permet aux surveillants d\'examen de vérifier plus facilement qu\'un étudiant est bien connecté dans son propre compte.';
+$string['showuserpicture_help'] = 'Si ce réglage est activé, le nom et l\'avatar de l\'étudiant s\'affichent durant le test et lors de la relecture. Cela permet aux surveillants de vérifier plus facilement qu\'un étudiant est bien connecté à son propre compte.';
 $string['shuffle'] = 'Mélanger';
 $string['shuffleanswers'] = 'Mélanger les réponses';
 $string['shuffledrandomly'] = 'Mélangées aléatoirement';
 $string['shufflequestions'] = 'Mélanger';
 $string['shufflequestions_help'] = 'Si ce réglage est activé, à chaque tentative du test, l\'ordre des questions dans cette section sera mélangé dans un ordre aléatoire différent.
 
-Ceci permet de rendre plus difficile le partage des réponses entre étudiants, mais rend également plus difficile les discussions entre les étudiants et vous sur une question déterminée.';
+Ceci permet de rendre plus difficile le partage des réponses entre étudiants, mais rend également plus difficile les discussions entre les étudiants et l\'enseignant sur une question déterminée.';
 $string['shufflewithin'] = 'Mélanger les éléments des questions';
 $string['shufflewithin_help'] = 'Si cette option est activée, les propositions de réponses aux questions seront mélangées aléatoirement à chaque nouvelle tentative du test, à condition que l\'option correspondant ait également été activée dans les paramètres de la question. Le réglage ne s\'applique qu\'aux questions qui comportent des propositions de réponses, telles que les questions à choix multiple ou les questions d\'appariement.';
 $string['singleanswer'] = 'Veuillez choisir une réponse.';
@@ -941,6 +963,7 @@ $string['unfinished'] = 'ouvert';
 $string['ungraded'] = 'Pas notée';
 $string['unit'] = 'Unité';
 $string['unknowntype'] = 'Type de question non supporté à la ligne {$a}. La question sera ignorée';
+$string['updatequizslotswithrandomxofy'] = 'Modification de l\'insertion des données de questions aléatoires du test ({$a->done}/{$a->total})';
 $string['updatesettings'] = 'Modifier les réglages du test';
 $string['updatingatttemptgrades'] = 'Mise à jour des notes.';
 $string['updatingfinalgrades'] = 'Mise à jour des notes finales.';

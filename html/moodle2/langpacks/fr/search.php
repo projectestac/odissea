@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'search', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['advancedsearch'] = 'Recherche avancée';
 $string['all'] = 'Tout';
 $string['allareas'] = 'Toutes les zones';
 $string['allcourses'] = 'Tous les cours';
+$string['allusers'] = 'Tous les utilisateurs';
 $string['author'] = 'Auteur';
 $string['authorname'] = 'Nom d\'auteur';
 $string['back'] = 'Retour';
@@ -38,11 +39,16 @@ $string['checkdbadvice'] = 'Contrôle si votre base de données comporte des pro
 $string['checkdir'] = 'Vérifier le dossier';
 $string['checkdiradvice'] = 'Vérifie que le dossier de données existe et qu\'il peut être modifié.';
 $string['commenton'] = 'Commenté le';
+$string['confirm_delete'] = 'Voulez-vous vraiment supprimer l\'index pour {$a} ? Tant que la zone de recherche n\'est pas indexée, les utilisateurs n\'obtiendront pas de résultat de recherche dans cette zone.';
+$string['confirm_deleteall'] = 'Voulez-vous vraiment supprimer tous les index maintenant ? Tant que le site n\'est pas indexé à nouveau, les utilisateurs n\'obtiendront aucun résultat de recherche.';
+$string['confirm_indexall'] = 'Voulez-vous vraiment mettre à jour les index maintenant ? Si une grande quantité de contenus nécessite une indexation, ceci peut prendre un temps considérable. Pour les serveurs en production,  il est plus judicieux de laisser faire l\'indexation au moyen de la tâche programmée « Indexation pour recherche globale ».';
+$string['confirm_reindexall'] = 'Voulez-vous vraiment reconstruire l\'index de tous les contenus du site maintenant ? Si votre site contient une grande quantité de contenus, ceci peut prendre un temps considérable, et les utilisateurs n\'obtiendront pas des résultats complets avant la fin de l\'indexation.';
 $string['createanindex'] = 'créer un index';
 $string['createdon'] = 'Créé le';
 $string['database'] = 'Base de données';
 $string['databasestate'] = 'État d\'indexation de la base de données';
 $string['datadirectory'] = 'Dossier de données';
+$string['deleteindex'] = 'Supprimer l\'index {$a}';
 $string['deletionsinindex'] = 'Suppressions dans l\'index';
 $string['docmodifiedon'] = 'Dernière modification le {$a}';
 $string['doctype'] = 'Doctype';
@@ -61,11 +67,15 @@ $string['enteryoursearchquery'] = 'Taper votre requête';
 $string['errorareanotavailable'] = 'La zone de recherche {$a} n\'est pas disponible';
 $string['error_indexing'] = 'Une erreur est survenue lors de l\'indexation';
 $string['errors'] = 'Erreurs';
+$string['everywhere'] = 'Partout où vous avez accès';
 $string['filesinindexdirectory'] = 'Fichier dans le répertoire d\'index';
 $string['filterheader'] = 'Filtre';
 $string['fromtime'] = 'Modifié après';
 $string['globalsearch'] = 'Recherche globale';
 $string['globalsearchdisabled'] = 'La recherche globale n\'est pas activée.';
+$string['gradualreindex'] = 'Ré-indexer {$a} progressivement';
+$string['gradualreindex_confirm'] = 'Voulez-vous vraiment ré-indexer {$a} ? Cette opération prendra un certain temps, durant lequel les données existantes resteront cependant disponibles.';
+$string['gradualreindex_queued'] = 'Une ré-indexation a été demandée pour {$a->name} ({$a->count} contextes). L\'indexation sera effectuée par la tâche programmée « Indexation de recherche globale ».';
 $string['incourse'] = 'dans le cours {$a}';
 $string['index'] = 'Index';
 $string['indexwhendisabledfullnotice'] = 'L\'indexation n\'est actuellement pas autorisée lorsque la recherche est désactivée. Pour l\'activer, veuillez consulter le réglage <a href="{$a->url}">searchindexwhendisabled</a>';
@@ -81,11 +91,21 @@ $string['normalsearch'] = 'Recherche normale';
 $string['notitle'] = 'Sans titre';
 $string['openedon'] = 'ouvert le';
 $string['optimize'] = 'Optimiser';
+$string['order'] = 'Ordre des résultats';
+$string['order_location'] = 'Prioriser les résultats en lien avec {$a}';
+$string['order_relevance'] = 'Résultats les plus pertinents en premier';
+$string['priority'] = 'Priorité';
+$string['priority_normal'] = 'Normale';
+$string['priority_reindexing'] = 'Ré-indexation en cours';
 $string['privacy:metadata'] = 'Le sous-système de recherche n\'enregistre aucune donnée personnelle.';
+$string['progress'] = 'Progression';
 $string['queryerror'] = 'La demande fournie n\'a pas pu être analysée par le moteur de recherche : {$a}';
+$string['queueheading'] = 'File d\'indexations additionnelles ({$a} éléments)';
 $string['resultsreturnedfor'] = 'résultats trouvés pour';
 $string['runindexer'] = 'Lancer l\'indexation (réelle)';
 $string['runindexertest'] = 'Lancer un test d\'indexation';
+$string['schemanotupdated'] = 'Le schéma de recherche n\'est plus à jour.';
+$string['schemaversionunknown'] = 'Le moteur de recherche n\'a pas d\'information sur la version du schéma actuel.';
 $string['score'] = 'Score';
 $string['search'] = 'Recherche';
 $string['searcharea'] = 'Zone de recherche';
@@ -94,8 +114,10 @@ $string['search:message_received'] = 'Messages – reçus';
 $string['search:message_sent'] = 'Messages – envoyés';
 $string['search:mycourse'] = 'Mes cours';
 $string['searchnotpermitted'] = 'Vous n\'êtes pas autorisé à effectuer une recherche';
+$string['search:section'] = 'Sections de cours';
 $string['searchsetupdescription'] = 'Les étapes suivantes vous aideront à configurer la recherche globale de Moodle.';
 $string['search:user'] = 'Utilisateurs';
+$string['searchwithin'] = 'Rechercher';
 $string['seconds'] = 'secondes';
 $string['solutions'] = 'Solutions';
 $string['statistics'] = 'Statistiques';

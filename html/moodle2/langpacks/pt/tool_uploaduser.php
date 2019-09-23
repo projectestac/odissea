@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploaduser', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,7 @@ $string['uploadpicture_overwrite'] = 'Substituir as imagens existentes dos utili
 $string['uploadpictures'] = 'Carregar imagens de utilizadores';
 $string['uploadpictures_help'] = 'As imagens dos utilizadores podem ser carregadas como um ficheiro zip ou um ficheiro de imagem.Os ficheiros de imagem devem ser nomeados com extensão, por exemplo, user1234.jpg para um utilizador com o nome de utilizador user1234.';
 $string['uploadpicture_userfield'] = 'Informação do utilizador que identifica a imagem:';
-$string['uploadpicture_usernotfound'] = 'Utilizador com \'{$a->userfield}\' valor de \'{$a->uservalue}\' não existe. A saltar.';
+$string['uploadpicture_usernotfound'] = 'Não existe o utilizador com o valor \'{$a->uservalue}\' no campo \'{$a->userfield}\'. A saltar.';
 $string['uploadpicture_userskipped'] = 'Passar utilizador {$a} (já tem imagem).';
 $string['uploadpicture_userupdated'] = 'Imagem atualizada para o utilizador {$a}.';
 $string['uploadusers'] = 'Carregar utilizadores';
@@ -85,7 +85,7 @@ $string['uucsvline'] = 'Linha CSV';
 $string['uulegacy1role'] = '(Aluno original) tipoN=1';
 $string['uulegacy2role'] = '(Professor original) tipoN=2';
 $string['uulegacy3role'] = '(Professor-não-editor original) tipoN=3';
-$string['uunoemailduplicates'] = 'Impedir e-mail duplicados';
+$string['uunoemailduplicates'] = 'Impedir e-mails duplicados';
 $string['uuoptype'] = 'Tipo de carregamento';
 $string['uuoptype_addinc'] = 'Adicionar todos, inserir número à frente do nome de utilizador';
 $string['uuoptype_addnew'] = 'Adicionar apenas novos, ignorar existentes';

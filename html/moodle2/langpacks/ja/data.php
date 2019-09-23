@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['checkbox'] = 'チェックボックス';
 $string['chooseexportfields'] = 'あなたがエクスポートしたいフィールドを選択してください:';
 $string['chooseexportformat'] = 'あなたがエクスポートしたいフォーマットを選択してください:';
 $string['chooseorupload'] = 'ファイルを選択する';
+$string['closebeforeopen'] = 'あなたは開始日の前に終了日を指定しました。';
 $string['columns'] = 'カラム';
 $string['comment'] = 'コメント';
 $string['commentdeleted'] = 'コメントが削除されました。';
@@ -173,7 +174,7 @@ $string['fieldids'] = 'フィールドID';
 $string['fieldmappings'] = 'フィールドマッピング';
 $string['fieldmappings_help'] = 'このメニューでは既存のデータベースのデータを保持することができます。フィールドのデータを保持するにはそのフィールドをデータが表示されることになる新しいフィールドにマップする必要があります。どのフィールドでも空白のまましてデータをコピーしないこともできます。新しいフィールドにマップされない古いフィールドおよび関連するすべてのデータは削除されます。
 
-あなたは同じタイプのフィールドのみマップできます。そのため、それぞれのドロップダウンには他のフィールドも表示される場合があります。古いフィールドを2個以上の新しいフィールドにマップしないよう気をつけてください。';
+あなたは同じタイプのフィールドのみマップできます。そのため、それぞれのドロップダウンメニューには他のフィールドも表示される場合があります。古いフィールドを2個以上の新しいフィールドにマップしないよう気をつけてください。';
 $string['fieldname'] = 'フィールド名';
 $string['fieldnotmatched'] = 'あなたのファイル内の次のフィールドは不明なフィールドです: {$a}';
 $string['fieldoptions'] = 'オプション (1行あたり1つ)';
@@ -194,10 +195,10 @@ $string['fromfile'] = 'ZIPファイルからインポートする';
 $string['fromfile_help'] = 'ZIPファイルからインポートする機能ではあなたはテンプレートおよびフィールドのプリセットのZIPを閲覧およびアップロードすることができます。';
 $string['generateerror'] = 'すべてのファイルは生成されませんでした!';
 $string['header'] = 'ヘッダ';
-$string['headeraddtemplate'] = 'エントリ編集用のインターフェース定義';
+$string['headeraddtemplate'] = 'エントリ追加および編集用のインターフェース定義';
 $string['headerasearchtemplate'] = '高度な検索のインターフェース定義';
 $string['headercsstemplate'] = '他のテンプレート用のローカルCSSスタイル定義';
-$string['headerjstemplate'] = '他のテンプレート用のカスタムJavaScript定義';
+$string['headerjstemplate'] = '一覧、個別またはテンプレート追加での要素の表示を操作するカスタムJavaScript定義';
 $string['headerlisttemplate'] = '一覧表示用のインターフェース定義';
 $string['headerrsstemplate'] = 'RSSフィードエントリのアピアランス定義';
 $string['headersingletemplate'] = '個別表示用の閲覧インターフェース定義';
@@ -264,18 +265,6 @@ $string['movezipfailed'] = 'ZIPファイルを移動できません。';
 $string['multientry'] = '繰り返しエントリ';
 $string['multimenu'] = 'メニュー (複数選択)';
 $string['multipletags'] = '重複タグが見つかりました! テンプレートは保存されませんでした。';
-$string['namecheckbox'] = 'チェックボックスフィールド';
-$string['namedate'] = '日付フィールド';
-$string['namefile'] = 'ファイルフィールド';
-$string['namelatlong'] = '緯度/経度フィールド';
-$string['namemenu'] = 'メニューフィールド';
-$string['namemultimenu'] = '多肢選択メニューフィールド';
-$string['namenumber'] = '数値フィールド';
-$string['namepicture'] = '画像フィールド';
-$string['nameradiobutton'] = 'ラジオボタンフィールド';
-$string['nametext'] = 'テキストフィールド';
-$string['nametextarea'] = 'テキストエリアフィールド';
-$string['nameurl'] = 'URLフィールド';
 $string['newentry'] = '新しいエントリ';
 $string['newfield'] = '新しいフィールドを作成する';
 $string['newfield_help'] = 'フィールドにはデータを入力することができます。データベース活動内のそれぞれのエントリには参加者が年月日をドロップダウンメニューから選択できる日付フィールド、イメージをアップロードできる画像フィールド、1つまたはそれ以上のオプションを選択できるチェックボックスフィールドのように複数タイプのフィールドを配置できます。
@@ -298,6 +287,7 @@ $string['numberrssarticles'] = 'RSSフィードエントリ';
 $string['numnotapproved'] = '保留';
 $string['numrecords'] = '{$a} エントリ';
 $string['ods'] = '<acronym title="OpenDocumentスプレッドシート">ODS</acronym> (OpenOffice)';
+$string['openafterclose'] = 'あなたは終了日の後に開始日を指定しました。';
 $string['optionaldescription'] = '短い説明 (任意)';
 $string['optionalfilename'] = 'ファイル名 (任意)';
 $string['other'] = 'その他';

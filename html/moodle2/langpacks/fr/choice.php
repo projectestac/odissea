@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choice', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,7 +66,7 @@ $string['eventanswersubmitted'] = 'Choix effectué';
 $string['eventanswerupdated'] = 'Choix modifié';
 $string['eventreportdownloaded'] = 'Rapport de sondage téléchargé';
 $string['eventreportviewed'] = 'Rapport de sondage consulté';
-$string['expired'] = 'Désolé, cette activité s\'est terminée le {$a} et n\'est plus disponible';
+$string['expired'] = 'Cette activité s\'est terminée le {$a}.';
 $string['full'] = '(complet)';
 $string['havetologin'] = 'Vous devez vous connecter pour pouvoir répondre à ce sondage';
 $string['includeinactive'] = 'Inclure les réponses des utilisateurs inactifs/désactivés';
@@ -78,7 +78,9 @@ $string['limit'] = 'Limite';
 $string['limitanswers'] = 'Limiter le nombre de réponses permises';
 $string['limitanswers_help'] = 'Ce réglage vous permet de limiter le nombre de personnes pouvant sélectionner une option d\'un sondage. Lorsque cette limite est atteinte, personne d\'autre ne pourra plus choisir cette option.
 
-Si les limites ne sont pas activées, un nombre quelconque de participants pourra choisir chacune des options.';
+Si vous utilisez cette activité avec des groupes, la limite est entendue par groupe. Par exemple, si la limite est 5, alors 5 membres de chaque groupe peut choisir l\'option. S\'il y a 3 groupes, cela signifie qu\'il peut y avoir jusqu\'à 5 x 3 = 15 participants qui choisissent l\'option.
+
+Si les limites sont désactivées, un nombre quelconque de participants pourra choisir chacune des options.';
 $string['limitno'] = 'Limite {no}';
 $string['modulename'] = 'Sondage';
 $string['modulename_help'] = 'Le module d\'activité sondage permet à un enseignant de poser une question et de proposer un choix de réponses possibles.
@@ -98,7 +100,7 @@ $string['noguestchoose'] = 'Désolé, les visiteurs anonymes ne peuvent pas part
 $string['noresultsviewable'] = 'Les résultats ne sont actuellement pas visibles.';
 $string['notanswered'] = 'Pas encore répondu';
 $string['notenrolledchoose'] = 'Seuls les utilisateurs inscrits peuvent participer à un sondage.';
-$string['notopenyet'] = 'Désolé, cette activité ne sera disponible que le {$a}';
+$string['notopenyet'] = 'Cette activité n\'est pas disponible avant le {$a}.';
 $string['numberofuser'] = 'Nombre de réponses';
 $string['numberofuserinpercentage'] = 'Pourcentage de réponses';
 $string['openafterclose'] = 'Vous avez indiqué une date d\'ouverture postérieure à la date de fermeture.';
@@ -120,6 +122,11 @@ $string['publishafteranswer'] = 'Afficher les résultats aux étudiants après l
 $string['publishafterclose'] = 'N\'afficher les résultats aux étudiants qu\'une fois le sondage fermé';
 $string['publishalways'] = 'Toujours afficher les résultats aux étudiants';
 $string['publishanonymous'] = 'Publier les résultats anonymement, sans afficher le nom des étudiants';
+$string['publishinfoanonafter'] = 'Les résultats seront publiés de façon anonyme après votre réponse.';
+$string['publishinfoanonclose'] = 'Les résultats seront publiés de façon anonyme lorsque l\'activité sera terminée.';
+$string['publishinfofullafter'] = 'Les résultats complets, montrant les choix de chaque participant, seront publiés après votre réponse.';
+$string['publishinfofullclose'] = 'Les résultats complets, montrant les choix de chaque participant, seront publiés lorsque l\'activité sera terminée.';
+$string['publishinfonever'] = 'Les résultats de cette activité ne seront pas publiés après votre réponse.';
 $string['publishnames'] = 'Publier les résultats complets, avec le nom des étudiants et leur choix';
 $string['publishnot'] = 'Ne pas publier les résultats pour les étudiants';
 $string['removemychoice'] = 'Retirer mon vote';

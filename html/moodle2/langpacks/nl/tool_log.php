@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_log', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_log', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'Beschikbare opslag voor logs';
 $string['configlogplugins'] = 'Schakel alle vereiste plugins in en schik ze in de juiste volgorde.';
-$string['exportlog'] = 'Logs mee opnemen tijdens export.';
+$string['exportlog'] = 'Logs mee opnemen tijdens export';
 $string['exportlogdetail'] = 'Logs die verband houden met de gebruiker mee opnemen in de export.';
 $string['logging'] = 'Logging';
 $string['managelogging'] = 'Beheer opslag voor log';

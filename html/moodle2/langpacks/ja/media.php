@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'media', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,14 +31,11 @@ $string['defaultheightdesc'] = '高さが指定されずプレイヤが実際の
 $string['defaultwidth'] = 'デフォルトの幅';
 $string['defaultwidthdesc'] = '幅が指定されずプレイヤが実際のビデオの幅を取得できない場合のメディアプレイヤの幅です。';
 $string['extensions'] = '拡張子: {$a}';
-$string['legacyheading'] = 'レガシーメディアプレイヤ';
-$string['legacyheading_desc'] = 'これらのプレイヤはウェブ上で頻繁には使用されていません。また、ブラウザには広くインストールされているわけではないプラグインを必要とします。';
 $string['managemediaplayers'] = 'メディアプレイヤを管理する';
 $string['mediaformats'] = '利用可能なプレイヤ';
 $string['mediaformats_desc'] = 'プレイヤが有効にされた場合、マルチメディアプラグインフィルタ (有効にされた場合)、ファイルまたは埋め込みオプションを設定したURLリソースによって、メディアファイルを埋め込むことができます。有効にされていない場合、これらのフォーマットは埋め込まれません。同時にユーザは手動でダウンロードまたはこれらのリソースのリンクをたどることができます。
 
 2つのプレイヤが同じフォーマットをサポートする場合、両方を有効にすることにより、モバイルフォン等、異なるデバイスでの互換性が増します。単一のオーディオまたはビデオクリップに対して異なるフォーマットのファイルを複数提供することにより、互換性を増すことができます。';
-$string['mediasettings'] = 'メディア埋め込み';
 $string['privacy:metadata'] = 'メディア埋め込みはどのような個人データも保存しません。';
 $string['supports'] = 'サポート';
 $string['videoextensions'] = 'ビデオ {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_community', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,7 +49,7 @@ $string['coursedesc'] = 'Beschreibung';
 $string['courselang'] = 'Sprache';
 $string['coursename'] = 'Name';
 $string['courses'] = 'Kurse';
-$string['coverage'] = 'Schlagwörter: {$a}';
+$string['coverage'] = 'Tags: {$a}';
 $string['donotrestore'] = 'Nein';
 $string['dorestore'] = 'Ja';
 $string['download'] = 'Download';

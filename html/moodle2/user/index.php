@@ -196,7 +196,7 @@ if (!empty($groupid)) {
     }
 }
 
-if ($groupid && ($course->groupmode != SEPARATEGROUPS || $canaccessallgroups)) {
+if ($groupid > 0 && ($course->groupmode != SEPARATEGROUPS || $canaccessallgroups)) {
     $grouprenderer = $PAGE->get_renderer('core_group');
     $groupdetailpage = new \core_group\output\group_details($groupid);
     echo $grouprenderer->group_details($groupdetailpage);
@@ -292,9 +292,27 @@ if ($bulkoperations) {
         'value' => get_string('deselectall')));
     echo html_writer::end_tag('div');
     $displaylist = array();
-    $displaylist['#messageselect'] = get_string('messageselectadd');
+    if (!empty($CFG->messaging)) {
+        $displaylist['#messageselect'] = get_string('messageselectadd');
+    }
     if (!empty($CFG->enablenotes) && has_capability('moodle/notes:manage', $context) && $context->id != $frontpagectx->id) {
         $displaylist['#addgroupnote'] = get_string('addnewnote', 'notes');
+    }
+
+    $params = ['operation' => 'download_participants'];
+
+    $downloadoptions = [];
+    $formats = core_plugin_manager::instance()->get_plugins_of_type('dataformat');
+    foreach ($formats as $format) {
+        if ($format->is_enabled()) {
+            $params = ['operation' => 'download_participants', 'dataformat' => $format->name];
+            $url = new moodle_url('bulkchange.php', $params);
+            $downloadoptions[$url->out(false)] = get_string('dataformat', $format->component);
+        }
+    }
+
+    if (!empty($downloadoptions)) {
+        $displaylist[] = [get_string('downloadas', 'table') => $downloadoptions];
     }
 
     if ($context->id != $frontpagectx->id) {
@@ -350,9 +368,8 @@ echo '</div>';
 
 if ($newcourse == 1) {
     $str = get_string('proceedtocourse', 'enrol');
-    // Floated left so it goes under the enrol users button on mobile.
     // The margin is to make it line up with the enrol users button when they are both on the same line.
-    $classes = 'm-y-1 pull-xs-left';
+    $classes = 'my-1';
     $url = course_get_url($course);
     echo $OUTPUT->single_button($url, $str, 'GET', array('class' => $classes));
 }

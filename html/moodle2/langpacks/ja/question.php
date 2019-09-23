@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'question', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['cannotdeletecate'] = 'このコンテクストのデフォルトカテ�
 $string['cannotdeleteneededbehaviour'] = '問題動作「 {$a} 」を削除することはできません。インストール済みの他の動作が依存しています。';
 $string['cannotdeleteqtypeinuse'] = 'あなたは問題タイプ「 {$a} 」を削除することはできません。このタイプの問題が問題バンクに登録されています。';
 $string['cannotdeleteqtypeneeded'] = 'あなたは問題タイプ「 {$a} 」を削除することはできません。インストール済みの他の問題タイプが依存しています。';
+$string['cannotdeletetopcat'] = 'トップカテゴリを削除することはできません。';
+$string['cannotedittopcat'] = 'トップカテゴリを編集することはできません。';
 $string['cannotenable'] = '問題タイプ {$a} は直接作成できません。';
 $string['cannotenablebehaviour'] = '問題動作 {$a} は直接使用することはできません。内部でのみ使用することができます。';
 $string['cannotfindcate'] = 'カテゴリレコードが見つかりませんでした。';
@@ -172,6 +174,7 @@ GIFTおよびMoodle XMLのような特定のインポートフォーマットで
 $string['exporterror'] = 'エクスポート中にエラーが発生しました!';
 $string['exportfilename'] = 'questions';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
+$string['exportonequestion'] = 'この問題をMoodle XMLフォーマットでダウンロードする';
 $string['exportquestions'] = '問題をファイルにエクスポートする';
 $string['exportquestions_help'] = 'この機能では1つのカテゴリ (およびすべてのサブカテゴリ) の問題すべてをテキストファイルにエクスポートすることができます。選択されたファイルフォーマットにより、いくつかの問題および特定の問題タイプはエクスポートされないことに留意してください。';
 $string['feedback'] = 'フィードバック';
@@ -182,6 +185,7 @@ $string['filesareacourse'] = 'コースファイルエリア';
 $string['filesareasite'] = 'サイトファイルエリア';
 $string['filestomove'] = '{$a} にファイルを移動/コピーしますか?';
 $string['fillincorrect'] = '正解を表示する';
+$string['filterbytags'] = 'タグでフィルタする ...';
 $string['firsttry'] = '最初の受験';
 $string['flagged'] = 'フラグ付け済み';
 $string['flagthisquestion'] = 'この問題にフラグを付ける';
@@ -202,6 +206,8 @@ $string['howquestionsbehave_help'] = '学生は小テスト内の問題に対し
 代わりにあなたが学生に即時フィードバックを与えて、すぐに正解できない場合に評点の低い次の受験に挑戦させたいとします。これには「複数受験インタラクティブ」モードを使用します。
 
 恐らく、これらは最も一般的に使用される動作モードです。';
+$string['idnumber'] = 'IDナンバー';
+$string['idnumber_help'] = '使用する場合、IDナンバーはそれぞれのコースカテゴリ内でユニークにする必要があります。これは問題を識別するための別の便利な方法を提供しますが、通常は空白にすることができます。';
 $string['ignorebroken'] = 'リンク切れを無視する';
 $string['import'] = 'インポート';
 $string['importcategory'] = 'インポートカテゴリ';
@@ -232,7 +238,7 @@ $string['invalidcontextinhasanyquestions'] = '無効なコンテクストが「q
 $string['invalidgrade'] = '評点 ({$a}) が評定オプションと合致しません - 問題をスキップしました。';
 $string['invalidpenalty'] = '無効なペナルティ';
 $string['invalidwizardpage'] = 'ウィザードページが正しくないか、指定されていません!';
-$string['lastmodifiedby'] = '最終更新 by';
+$string['lastmodifiedby'] = '最終更新';
 $string['lasttry'] = '最後の受験';
 $string['linkedfiledoesntexist'] = 'リンクファイル {$a} がありません。';
 $string['makechildof'] = '「 {$a} 」の子にする';
@@ -279,6 +285,7 @@ $string['noprobs'] = 'あなたの問題データベースに問題は見つか�
 $string['noquestions'] = 'エクスポートできる問題が見つかりませんでした。あなたがエクスポートする問題が含まれるカテゴリを選択したか確認してください。';
 $string['noquestionsinfile'] = 'インポートファイルには問題がありません。';
 $string['noresponse'] = '[解答なし]';
+$string['notagfiltersapplied'] = '適用されたタグフィルタはありません。';
 $string['notanswered'] = '未解答';
 $string['notchanged'] = '前回の受験より変更なし';
 $string['notenoughanswers'] = 'このタイプの問題には少なくとも {$a} 件の答えが必要です。';
@@ -315,7 +322,9 @@ $string['penaltyfactor_help'] = 'ここではそれぞれの間違った解答�
 $string['penaltyforeachincorrecttry'] = 'それぞれの不正解に対するペナルティ';
 $string['penaltyforeachincorrecttry_help'] = '学生が問題を正解できるまで複数回受験できるようあなたが「複数受験インタラクティブ」または「アダプティブモード」動作を使用して問題を実行する場合、このオプションではそれぞれの不正解の受験に何点のペナルティが課せられるかコントロールします。
 
-ペナルティは問題評点合計の割合です。そのため、問題の正解が3点、ペナルティが0.3333333の場合、学生が最初に正解することで3点を取得します。2回目の受験で正解した場合、学生は2点を取得します。そして、3回目の受験で正解した場合、学生は1点を取得します。';
+ペナルティは問題評点合計の割合です。そのため、問題の正解が3点、ペナルティが0.3333333の場合、学生が最初に正解することで3点を取得します。2回目の受験で正解した場合、学生は2点を取得します。そして、3回目の受験で正解した場合、学生は1点を取得します。
+
+問題が複数に分かれている場合、この採点方法はそれぞれの問題に適用されます。詳細は問題タイプにより複雑になる場合がありますが、基本原則は可能な限り適正に知識を披露した学生を評価することにあります。';
 $string['permissionedit'] = 'この問題を編集する';
 $string['permissionmove'] = 'この問題を移動する';
 $string['permissionsaveasnew'] = 'この問題を新しい問題として保存する';
@@ -356,6 +365,7 @@ $string['questionbehavioursorderexplained'] = 'あなたがドロップダウン
 $string['questioncategory'] = '問題カテゴリ';
 $string['questioncatsfor'] = '「 {$a} 」の問題カテゴリ';
 $string['questiondoesnotexist'] = 'この問題は存在しません。';
+$string['questionformtagheader'] = '{$a} タグ';
 $string['questionidmismatch'] = '問題IDが一致しません。';
 $string['questionname'] = '問題名';
 $string['questionnamecopy'] = '{$a} (コピー)';
@@ -368,6 +378,7 @@ $string['questionsinuse'] = '(* アスタリスクでマークされている問
 $string['questionsmovedto'] = '使用中の問題が親コースカテゴリの「 {$a} 」に移動されました。';
 $string['questionsrescuedfrom'] = '問題がコンテクスト {$a} より保存されました。';
 $string['questionsrescuedfrominfo'] = 'いくつかの小テストまたは他の活動で使用されているため、これらの問題 (いくつかは非表示) はコンテクスト {$a} 削除時に保存されました。';
+$string['questiontags'] = '問題タグ';
 $string['questiontext'] = '問題テキスト';
 $string['questiontype'] = '問題タイプ';
 $string['questionuse'] = 'この活動で問題を使用する';
@@ -377,6 +388,7 @@ $string['requiresgrading'] = '要評定';
 $string['responsehistory'] = '解答履歴';
 $string['restart'] = '再開する';
 $string['restartwiththeseoptions'] = 'これらのオプションで再開する';
+$string['restoremultipletopcats'] = 'バックアップファイルにはコンテクスト {$a} のトップレベルの問題カテゴリが1つ以上含まれています。';
 $string['reviewresponse'] = '解答をレビューする';
 $string['rightanswer'] = '正解';
 $string['rightanswer_help'] = '自動的に生成される正解の概要です。これは制限できるため、あなたは問題の全体的なフィードバックの中で正解を説明して、このオプションを無効にしても良いでしょう。';
@@ -422,6 +434,7 @@ $string['technicalinfostate'] = '問題状態: {$a}';
 $string['technicalinfovariant'] = '問題変形: {$a}';
 $string['tofilecategory'] = 'ファイルにカテゴリを書き出す';
 $string['tofilecontext'] = 'ファイルにコンテクストを書き出す';
+$string['topfor'] = '{$a} のトップ';
 $string['uninstallbehaviour'] = 'この問題動作をアンインストールします。';
 $string['uninstallqtype'] = 'この問題タイプをアンインストールします。';
 $string['unknown'] = '不明';

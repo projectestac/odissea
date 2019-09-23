@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_mentees', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtitle'] = '블록 제목';
 $string['configtitleblankhides'] = '블록 제목(없으면 빈칸)';
-$string['leaveblanktohide'] = '제목을 감추려면 공백으로 놓아둠';
 $string['mentees:addinstance'] = '멘티 블록 추가';
 $string['mentees:myaddinstance'] = '내 공부방에 멘티 블록 추가';
 $string['newmenteesblock'] = '(새 피상담자 블록)';

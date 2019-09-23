@@ -30,7 +30,7 @@ class qtype_multichoicewiris_edit_form extends qtype_wq_edit_form {
 
         $wirismultialgstring = get_string('multichoicewiris_algorithm', 'qtype_multichoicewiris');
         $wirismulti = $mform->createElement('text', 'wirismulti', $wirismultialgstring,
-                array('class' => 'wirisauthoringfield wirisstudio wirismultichoice wirisvariables wirisauxiliarcas'));
+                array('class' => 'wirisauthoringfield wirisstudio wirismultichoice wirisvariables wirisauxiliarcas wirisauxiliartextinput'));
 
         $wirismultivarstring = get_string('multichoicewiris_wiris_variables', 'qtype_multichoicewiris');
         $wirishdr = $mform->createElement('header', 'wirishdr', $wirismultivarstring);

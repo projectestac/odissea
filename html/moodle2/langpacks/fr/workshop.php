@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -209,6 +209,7 @@ $string['noexamplesformready'] = 'Vous devez préparer le formulaire d\'évaluat
 $string['nogradeyet'] = 'Pas encore de note';
 $string['nosubmissionfound'] = 'Aucun travail remis par cet utilisateur';
 $string['nosubmissions'] = 'Aucun travail remis dans cet atelier';
+$string['nosubmissiontype'] = 'Au moins un type de remise doit être disponible';
 $string['notassessed'] = 'Pas encore évalué';
 $string['nothingfound'] = 'Rien à afficher';
 $string['nothingtoreview'] = 'Rien à évaluer';
@@ -336,6 +337,12 @@ $string['submissionstart'] = 'Début de la remise des travaux';
 $string['submissionstartdatetime'] = 'Ouvert pour la remise des travaux dès le {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} ouverture des remises';
 $string['submissiontitle'] = 'Titre';
+$string['submissiontypedisabled'] = 'Ce type de remise est désactivé dans cet atelier.';
+$string['submissiontypefileavailable'] = 'Fichier joint <span class="accesshide">disponible</span>';
+$string['submissiontypefilerequired'] = '<span class="accesshide">Fichier joint</span> Requis';
+$string['submissiontypes'] = 'Types de remise';
+$string['submissiontypetextavailable'] = 'Texte en ligne <span class="accesshide">disponible</span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide">Texte en ligne</span> Requis';
 $string['submittednotsubmitted'] = 'Remis ({$a->submitted}) / non remis ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Méthode d\'attribution des travaux';
 $string['subplugintype_workshopallocation_plural'] = 'Méthodes d\'attribution des travaux';
@@ -411,7 +418,6 @@ $string['workshop:viewauthornames'] = 'Voir les noms des auteurs';
 $string['workshop:viewauthorpublished'] = 'Voir les auteurs des travaux publiés';
 $string['workshop:viewpublishedsubmissions'] = 'Voir les travaux remis publiés';
 $string['workshop:viewreviewernames'] = 'Voir les noms des évaluateurs';
-$string['yourassessment'] = 'Votre évaluation';
 $string['yourassessmentfor'] = 'Votre évaluation pour {$a}';
 $string['yourgrades'] = 'Vos notes';
 $string['yoursubmission'] = 'Votre travail remis';

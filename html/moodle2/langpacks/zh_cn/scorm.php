@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,9 +132,7 @@ $string['forcecompleted_help'] = '如果打开，当前访问的状态会强制�
 $string['forcejavascript'] = '强制用户打开JavaScript';
 $string['forcejavascript_desc'] = '如果设置为打开（推荐），在用户浏览器不支持或者关闭JavaScript时，拒绝对SCORM内容的访问。如果设置为标上，用户仍可以查看SCORM的内容，但是API不能通讯，SCORM课件成绩等信息不能保存到系统中。';
 $string['forcejavascriptmessage'] = '需要Javascript支持，请您打开浏览器中的JavaScript设置，然后再试一次。';
-$string['forcenewattempt'] = '强制为新尝试';
-$string['forcenewattemptdesc'] = '该参数设置强制为新尝试的默认值';
-$string['forcenewattempt_help'] = '如果打开，每次访问SCORM包都被记作一次新的浏览。';
+$string['forcenewattempts'] = '强制为新尝试';
 $string['found'] = '找到 Manifest 文件';
 $string['frameheight'] = '活动的默认窗口高度';
 $string['framewidth'] = '活动的默认窗口宽度';
@@ -263,7 +261,6 @@ $string['review'] = '复习';
 $string['reviewmode'] = '复习模式';
 $string['scoes'] = '正在学习的对象';
 $string['score'] = '成绩';
-$string['scorm12standard'] = '启用 SCORM 1.2 标准模式';
 $string['scorm:addinstance'] = '添加一个新的 SCORM 包';
 $string['scormclose'] = '直到';
 $string['scormcourse'] = '正在学习的课程';

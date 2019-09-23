@@ -455,30 +455,42 @@ function file_prepare_draft_area(&$draftitemid, $contextid, $component, $fileare
  * Passing a new option reverse = true in the $options var will make the function to convert actual URLs in $text to encoded URLs
  * in the @@PLUGINFILE@@ form.
  *
- * @category files
- * @global stdClass $CFG
- * @param string $text The content that may contain ULRs in need of rewriting.
- * @param string $file The script that should be used to serve these files. pluginfile.php, draftfile.php, etc.
- * @param int $contextid This parameter and the next two identify the file area to use.
- * @param string $component
- * @param string $filearea helps identify the file area.
- * @param int $itemid helps identify the file area.
- * @param array $options text and file options ('forcehttps'=>false), use reverse = true to reverse the behaviour of the function.
- * @return string the processed text.
+ * @param   string  $text The content that may contain ULRs in need of rewriting.
+ * @param   string  $file The script that should be used to serve these files. pluginfile.php, draftfile.php, etc.
+ * @param   int     $contextid This parameter and the next two identify the file area to use.
+ * @param   string  $component
+ * @param   string  $filearea helps identify the file area.
+ * @param   int     $itemid helps identify the file area.
+ * @param   array   $options
+ *          bool    $options.forcehttps Force the user of https
+ *          bool    $options.reverse Reverse the behaviour of the function
+ *          bool    $options.includetoken Use a token for authentication
+ *          string  The processed text.
  */
 function file_rewrite_pluginfile_urls($text, $file, $contextid, $component, $filearea, $itemid, array $options=null) {
-    global $CFG;
+    global $CFG, $USER;
 
     $options = (array)$options;
     if (!isset($options['forcehttps'])) {
         $options['forcehttps'] = false;
     }
 
-    if (!$CFG->slasharguments) {
-        $file = $file . '?file=';
+    $baseurl = "{$CFG->wwwroot}/{$file}";
+    if (!empty($options['includetoken'])) {
+        $token = get_user_key('core_files', $USER->id);
+        $finalfile = basename($file);
+        $tokenfile = "token{$finalfile}";
+        $file = substr($file, 0, strlen($file) - strlen($finalfile)) . $tokenfile;
+        $baseurl = "{$CFG->wwwroot}/{$file}";
+
+        if (!$CFG->slasharguments) {
+            $baseurl .= "?token={$token}&file=";
+        } else {
+            $baseurl .= "/{$token}";
+        }
     }
 
-    $baseurl = "$CFG->wwwroot/$file/$contextid/$component/$filearea/";
+    $baseurl .= "/{$contextid}/{$component}/{$filearea}/";
 
     if ($itemid !== null) {
         $baseurl .= "$itemid/";
@@ -871,6 +883,131 @@ function file_remove_editor_orphaned_files($editor) {
 }
 
 /**
+ * Finds all draft areas used in a textarea and copies the files into the primary textarea. If a user copies and pastes
+ * content from another draft area it's possible for a single textarea to reference multiple draft areas.
+ *
+ * @category files
+ * @param int $draftitemid the id of the primary draft area.
+ * @param int $usercontextid the user's context id.
+ * @param string $text some html content that needs to have files copied to the correct draft area.
+ * @param bool $forcehttps force https urls.
+ *
+ * @return string $text html content modified with new draft links
+ */
+function file_merge_draft_areas($draftitemid, $usercontextid, $text, $forcehttps = false) {
+    if (is_null($text)) {
+        return null;
+    }
+
+    $urls = extract_draft_file_urls_from_text($text, $forcehttps, $usercontextid, 'user', 'draft');
+
+    // No draft areas to rewrite.
+    if (empty($urls)) {
+        return $text;
+    }
+
+    foreach ($urls as $url) {
+        // Do not process the "home" draft area.
+        if ($url['itemid'] == $draftitemid) {
+            continue;
+        }
+
+        // Decode the filename.
+        $filename = urldecode($url['filename']);
+
+        // Copy the file.
+        file_copy_file_to_file_area($url, $filename, $draftitemid);
+
+        // Rewrite draft area.
+        $text = file_replace_file_area_in_text($url, $draftitemid, $text, $forcehttps);
+    }
+    return $text;
+}
+
+/**
+ * Rewrites a file area in arbitrary text.
+ *
+ * @param array $file General information about the file.
+ * @param int $newid The new file area itemid.
+ * @param string $text The text to rewrite.
+ * @param bool $forcehttps force https urls.
+ * @return string The rewritten text.
+ */
+function file_replace_file_area_in_text($file, $newid, $text, $forcehttps = false) {
+    global $CFG;
+
+    $wwwroot = $CFG->wwwroot;
+    if ($forcehttps) {
+        $wwwroot = str_replace('http://', 'https://', $wwwroot);
+    }
+
+    $search = [
+        $wwwroot,
+        $file['urlbase'],
+        $file['contextid'],
+        $file['component'],
+        $file['filearea'],
+        $file['itemid'],
+        $file['filename']
+    ];
+    $replace = [
+        $wwwroot,
+        $file['urlbase'],
+        $file['contextid'],
+        $file['component'],
+        $file['filearea'],
+        $newid,
+        $file['filename']
+    ];
+
+    $text = str_ireplace( implode('/', $search), implode('/', $replace), $text);
+    return $text;
+}
+
+/**
+ * Copies a file from one file area to another.
+ *
+ * @param array $file Information about the file to be copied.
+ * @param string $filename The filename.
+ * @param int $itemid The new file area.
+ */
+function file_copy_file_to_file_area($file, $filename, $itemid) {
+    $fs = get_file_storage();
+
+    // Load the current file in the old draft area.
+    $fileinfo = array(
+        'component' => $file['component'],
+        'filearea' => $file['filearea'],
+        'itemid' => $file['itemid'],
+        'contextid' => $file['contextid'],
+        'filepath' => '/',
+        'filename' => $filename
+    );
+    $oldfile = $fs->get_file($fileinfo['contextid'], $fileinfo['component'], $fileinfo['filearea'],
+        $fileinfo['itemid'], $fileinfo['filepath'], $fileinfo['filename']);
+    $newfileinfo = array(
+        'component' => $file['component'],
+        'filearea' => $file['filearea'],
+        'itemid' => $itemid,
+        'contextid' => $file['contextid'],
+        'filepath' => '/',
+        'filename' => $filename
+    );
+
+    $newcontextid = $newfileinfo['contextid'];
+    $newcomponent = $newfileinfo['component'];
+    $newfilearea = $newfileinfo['filearea'];
+    $newitemid = $newfileinfo['itemid'];
+    $newfilepath = $newfileinfo['filepath'];
+    $newfilename = $newfileinfo['filename'];
+
+    // Check if the file exists.
+    if (!$fs->file_exists($newcontextid, $newcomponent, $newfilearea, $newitemid, $newfilepath, $newfilename)) {
+        $fs->create_file_from_storedfile($newfileinfo, $oldfile);
+    }
+}
+
+/**
  * Saves files from a draft file area to a real one (merging the list of files).
  * Can rewrite URLs in some content at the same time if desired.
  *
@@ -914,6 +1051,10 @@ function file_save_draft_area_files($draftitemid, $contextid, $component, $filea
         // are not passed to file_save_draft_area_files()
         $allowreferences = false;
     }
+
+    // Check if the user has copy-pasted from other draft areas. Those files will be located in different draft
+    // areas and need to be copied into the current draft area.
+    $text = file_merge_draft_areas($draftitemid, $usercontext->id, $text, $forcehttps);
 
     // Check if the draft area has exceeded the authorised limit. This should never happen as validation
     // should have taken place before, unless the user is doing something nauthly. If so, let's just not save
@@ -3386,7 +3527,7 @@ class curl {
         if ((defined('PHPUNIT_TEST') && PHPUNIT_TEST)) {
             array_push(self::$mockresponses, $response);
         } else {
-            throw new coding_excpetion('mock_response function is only available for unit tests.');
+            throw new coding_exception('mock_response function is only available for unit tests.');
         }
     }
 
@@ -4057,6 +4198,9 @@ function file_pluginfile($relativepath, $forcedownload, $preview = null, $offlin
 
     // ========================================================================================================================
     } else if ($component === 'grade') {
+
+        require_once($CFG->libdir . '/grade/constants.php');
+
         if (($filearea === 'outcome' or $filearea === 'scale') and $context->contextlevel == CONTEXT_SYSTEM) {
             // Global gradebook files
             if ($CFG->forcelogin) {
@@ -4072,15 +4216,35 @@ function file_pluginfile($relativepath, $forcedownload, $preview = null, $offlin
             \core\session\manager::write_close(); // Unlock session during file serving.
             send_stored_file($file, 60*60, 0, $forcedownload, $sendfileoptions);
 
-        } else if ($filearea === 'feedback' and $context->contextlevel == CONTEXT_COURSE) {
-            //TODO: nobody implemented this yet in grade edit form!!
-            send_file_not_found();
-
-            if ($CFG->forcelogin || $course->id != SITEID) {
-                require_login($course);
+        } else if ($filearea == GRADE_FEEDBACK_FILEAREA || $filearea == GRADE_HISTORY_FEEDBACK_FILEAREA) {
+            if ($context->contextlevel != CONTEXT_MODULE) {
+                send_file_not_found();
             }
 
-            $fullpath = "/$context->id/$component/$filearea/".implode('/', $args);
+            require_login($course, false);
+
+            $gradeid = (int) array_shift($args);
+            $filename = array_pop($args);
+            if ($filearea == GRADE_HISTORY_FEEDBACK_FILEAREA) {
+                $grade = $DB->get_record('grade_grades_history', ['id' => $gradeid]);
+            } else {
+                $grade = $DB->get_record('grade_grades', ['id' => $gradeid]);
+            }
+
+            if (!$grade) {
+                send_file_not_found();
+            }
+
+            $iscurrentuser = $USER->id == $grade->userid;
+
+            if (!$iscurrentuser) {
+                $coursecontext = context_course::instance($course->id);
+                if (!has_capability('moodle/grade:viewall', $coursecontext)) {
+                    send_file_not_found();
+                }
+            }
+
+            $fullpath = "/$context->id/$component/$filearea/$gradeid/$filename";
 
             if (!$file = $fs->get_file_by_hash(sha1($fullpath)) or $file->is_directory()) {
                 send_file_not_found();

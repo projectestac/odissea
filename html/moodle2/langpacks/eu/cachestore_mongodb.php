@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_mongodb', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   cachestore_mongodb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['replicaset'] = 'Erreplika-multzoa';
 $string['replicaset_help'] = 'Konektatu beharreko erreplika-multozaren izena. Balio hau emanez gero nagusia zehazteko hazietako ismaster datu-baseko komandoa erabiliko da, eta beraz kontrolatzaileak zerrendatu gabeko zerbitzari batera konektatuta amaitu lezake.';
 $string['server'] = 'Zerbitzaria';
 $string['server_help'] = 'Ezarpen hau erabili nahi duzun zerbitzariko konexiorako karaktere-katea da. Zerbitzari anitz zehaztu daiteke komaz banatutako zerrenda bat erabilita.';
-$string['testserver'] = 'Proba-zerbitzaria';
+$string['testserver'] = 'Probetarako zerbitzaria';
 $string['testserver_desc'] = 'Probetarako zerbitzari batekin konexioa probatzeko karaktere-katea. Probetarako zerbitzari bat zehaztu bada MondoDB-en errendimendua kudeaketa blokeko Cache atalaren Probatu errendimendua orria erabiliz proba daiteke.
 Adibidez: mongodb://127.0.0.1:27017';
 $string['username'] = 'Erabiltzaile-izena';

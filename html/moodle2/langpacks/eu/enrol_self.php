@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_self', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['canntenrollate'] = 'Ezin duzu matrikularik egin, matrikula {$a} datan i
 $string['cohortnonmemberinfo'] = 'Soilik \'{$a}\' kohorteko kideak matrikula daitezke.';
 $string['cohortonly'] = 'Kohorteko partaideak bakarrik';
 $string['cohortonly_help'] = 'Matrikulazio automatikoa kohorte bateko kideentzat bakarrik egon daiteke eskura. Kontuan izan ezarpen hau aldatzeak ez duela eraginik existitzen diren matrikulazioetan.';
+$string['confirmbulkdeleteenrolment'] = 'Ziur zaude erabiltzaile-matrikula hauek ezabatu nahi dituzula?';
 $string['customwelcomemessage'] = 'Pertsonalizatu ongi etorria emateko mezua';
 $string['customwelcomemessage_help'] = 'Ongi-etorri mezu pertsonalizatua gehi daiteke testu-soilean edo Moodle-ko formatu automatikoan, HTML etiketak eta etiketa eleanitzak barne.
 
@@ -42,6 +43,8 @@ Mezuan hurrengo gakoak sar daitezke:
 * Erabiltzailearen izen osoa {$a->fullname}';
 $string['defaultrole'] = 'Lehenetsitako rol-esleipena';
 $string['defaultrole_desc'] = 'Aukeratu matrikulazio automatikoa egitean erabiltzaileari esleituko zaion rola.';
+$string['deleteselectedusers'] = 'Ezabatu aukeratutako erabiltzaile-matrikulak';
+$string['editselectedusers'] = 'Editatu aukeratutako erabiltzaile-matrikulak';
 $string['enrolenddate'] = 'Amaiera-data';
 $string['enrolenddate_help'] = 'Gaituz gero, erabiltzaileak data honetara arte bakarrik matrikula daitezke.';
 $string['enrolenddaterror'] = 'Matrikulaziorako amaiera-data ezin da hasierakoa baina lehenagokoa izan';
@@ -59,12 +62,14 @@ Mezu hau \'{$a->course}\' ikastaroan zure matrikula {$a->timeend} datan amaituko
 
 Laguntzarik behar baduzu, jarri harremanetan {$a->enroller}-(r)ekin.';
 $string['expirymessageenrolledsubject'] = 'Matrikulazio automatikoaren amaieraren jakinarazpena';
-$string['expirymessageenrollerbody'] = '\'{$a->course}\' ikastaroko matrikulazioa hurrengo {$a->threshold} iraungituko da hurrengo erabiltzaileentzat:
+$string['expirymessageenrollerbody'] = '\'{$a->course}\' ikastaroko matrikulazioa hurrengo {$a->threshold} iraungiko da hurrengo erabiltzaileentzat:
 
 {$a->users}
 
 Beren matrikulazioa luzatzeko, sartu hemen {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Matrikulazio automatikoaren amaieraren jakinarazpena';
+$string['expirynotifyall'] = 'Matrikulatzailea eta matrikulatutako erabiltzailea';
+$string['expirynotifyenroller'] = 'Matrikulatzailea baino ez';
 $string['groupkey'] = 'Erabili taldea matrikulatzeko giltzak';
 $string['groupkey_desc'] = 'Erabili taldea matrikulatzeko giltza modu lehenetsian.';
 $string['groupkey_help'] = 'Matrikulazio-giltza dakitenentzako sarbidea mugatzeaz gain, taldea matrikulatzeko giltzak erabilita erabiltzaileak automatikoki taldeetara gehitu daitezke ikastaroan matrikulatzen direnean.
@@ -103,14 +108,17 @@ $string['self:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
 $string['self:unenrolself'] = 'Desmatrikulatu norbera ikastararotik';
 $string['sendcoursewelcomemessage'] = 'Bidali ikastarorako harrera-mezua';
 $string['sendcoursewelcomemessage_help'] = 'Erabiltzaileek beren burua ikastaro batean matrikulatzen dutenean ongi etorri mezua jasoko dute e-postaz. Ikastaroko kontaktuak bidaltzen badu (modu lehenetsian irakasleak) eta erabiltzaile batek baino gehiagok badute rol hori, e-posta rol hori daukan lehen erabiltzailearen izenean bidaliko da.';
+$string['sendexpirynotificationstask'] = 'Matrikulazio automatikoen iraungitze-jakinarazpenen bidalketa zeregina';
 $string['showhint'] = 'Erakutsi argibidea';
 $string['showhint_desc'] = 'Erakutsi bisitarien sarbide-giltzaren lehenbiziko letra';
 $string['status'] = 'Baimendu existitzen diren matrikulazioak';
 $string['status_desc'] = 'Gaitu matrikulazio automatikoa ikastaro berrietan';
 $string['status_help'] = '\'Baimendu matrikula berriak\' aukerarekin batera gaituz gero, soilik aurretik auto-matrikulatutako erabiltzaileek izango dute ikastarorako sarbidea. Desgaituz gero matrikulazio automatikoki gehigarria desgaituko da, existitzen diren matrikulazioak etengo direlako eta erabiltzaile berriek ezingo dutelako bere burua matrikulatu.';
+$string['syncenrolmentstask'] = 'Matrikulazio automatikoen sinkronizazio zeregina';
 $string['unenrol'] = 'Desmatrikulatu erabiltzailea';
 $string['unenrolselfconfirm'] = 'Ziur al zaude "{$a}" ikastarotik desmatrikulatu nahi duzula?';
 $string['unenroluser'] = 'Ziur al zaude  "{$a->user}" desmatrikulatu nahi duzula "{$a}" ikastarotik?';
+$string['unenrolusers'] = 'Desmatrikulatu erabiltzaileak';
 $string['usepasswordpolicy'] = 'Erabili pasahitzen politika';
 $string['usepasswordpolicy_desc'] = 'Aplikatu pasahitz-politika estandarra matrikulazio-giltzei.';
 $string['welcometocourse'] = 'Ongi etorri {$a} gunera';

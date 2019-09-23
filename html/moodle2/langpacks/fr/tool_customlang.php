@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_customlang', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_customlang
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['headingstandard'] = 'Texte standard';
 $string['headingstringid'] = 'Chaîne';
 $string['markinguptodate'] = 'Marquer la modification comme « à jour »';
 $string['markinguptodate_help'] = 'La traduction locale effectuée peut être rendue obsolète si la chaîne du paquetage en anglais ou celle du paquetage de langue officiel a été modifiée depuis votre modification locale. Veuillez examiner la traduction personnalisée. Si vous la considérez comme à jour, cochez la case. Dans le cas contraire, modifiez-la.';
-$string['markuptodate'] = 'Marquer comme  « à jour »';
+$string['markuptodate'] = 'Marquer comme « à jour »';
 $string['modifiedno'] = 'Il n\'y a pas de chaîne modifiée à enregistrer';
 $string['modifiednum'] = '{$a} chaînes ont été modifiées. Voulez-vous enregistrer ces modifications dans votre paquetage de langue local ?';
 $string['nostringsfound'] = 'Aucune chaîne trouvée. Veuillez modifier les réglages du filtre';

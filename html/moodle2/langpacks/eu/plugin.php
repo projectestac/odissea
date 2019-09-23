@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'plugin', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,7 +103,7 @@ $string['status_new'] = 'Instalatu egingo da';
 $string['status_nodb'] = 'Ez dago datu-baserik';
 $string['status_upgrade'] = 'Eguneratu egingo da';
 $string['status_uptodate'] = 'Instalatuta';
-$string['supportedconversions'] = 'Onartutako dokumentu-bihurtzeak';
+$string['supportedconversions'] = 'Onartutako dokumentu-bihurketak';
 $string['supportedmoodleversions'] = 'Onartutako Moodle bertsioak';
 $string['systemname'] = 'Identifikatzailea';
 $string['type_antivirus'] = 'Antiburus-plugina';

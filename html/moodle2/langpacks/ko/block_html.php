@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_html', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,5 @@ $string['configcontent'] = '내용';
 $string['configtitle'] = '블록 제목';
 $string['html:addinstance'] = '새 HTML 블록 추가';
 $string['html:myaddinstance'] = '내 공부방에 HTML 블록 추가';
-$string['leaveblanktohide'] = '제목을 숨기기 위해서는 빈칸으로 남기세요';
 $string['newhtmlblock'] = '(새로운 HTML 블록)';
 $string['pluginname'] = 'HTML';

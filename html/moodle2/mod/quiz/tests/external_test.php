@@ -1207,11 +1207,29 @@ class mod_quiz_external_testcase extends externallib_advanced_testcase {
         $result = external_api::clean_returnvalue(mod_quiz_external::process_attempt_returns(), $result);
         $this->assertEquals(quiz_attempt::OVERDUE, $result['state']);
 
+        // Force grace period for time limit.
+        $quiz->timeclose = 0;
+        $quiz->timelimit = 1;
+        $quiz->graceperiod = 60;
+        $quiz->overduehandling = 'graceperiod';
+        $DB->update_record('quiz', $quiz);
+
+        $timenow = time();
+        $quba = question_engine::make_questions_usage_by_activity('mod_quiz', $quizobj->get_context());
+        $quba->set_preferred_behaviour($quizobj->get_quiz()->preferredbehaviour);
+        $attempt = quiz_create_attempt($quizobj, 3, 2, $timenow - 10, false, $this->student->id);
+        quiz_start_new_attempt($quizobj, $quba, $attempt, 2, $timenow - 10);
+        quiz_attempt_save_started($quizobj, $quba, $attempt);
+
+        $result = mod_quiz_external::process_attempt($attempt->id, array());
+        $result = external_api::clean_returnvalue(mod_quiz_external::process_attempt_returns(), $result);
+        $this->assertEquals(quiz_attempt::OVERDUE, $result['state']);
+
         // New attempt.
         $timenow = time();
         $quba = question_engine::make_questions_usage_by_activity('mod_quiz', $quizobj->get_context());
         $quba->set_preferred_behaviour($quizobj->get_quiz()->preferredbehaviour);
-        $attempt = quiz_create_attempt($quizobj, 3, 2, $timenow, false, $this->student->id);
+        $attempt = quiz_create_attempt($quizobj, 4, 3, $timenow, false, $this->student->id);
         quiz_start_new_attempt($quizobj, $quba, $attempt, 3, $timenow);
         quiz_attempt_save_started($quizobj, $quba, $attempt);
 
@@ -1587,6 +1605,8 @@ class mod_quiz_external_testcase extends externallib_advanced_testcase {
     public function test_get_attempt_access_information() {
         global $DB;
 
+        $this->setAdminUser();
+
         // Create a new quiz with attempts.
         $quizgenerator = $this->getDataGenerator()->get_plugin_generator('mod_quiz');
         $data = array('course' => $this->course->id,
@@ -1607,8 +1627,7 @@ class mod_quiz_external_testcase extends externallib_advanced_testcase {
         $question = $questiongenerator->create_question('truefalse', null, array('category' => $cat->id));
         $question = $questiongenerator->create_question('essay', null, array('category' => $cat->id));
 
-        $question = $questiongenerator->create_question('random', null, array('category' => $cat->id));
-        quiz_add_quiz_question($question->id, $quiz);
+        quiz_add_random_questions($quiz, 0, $cat->id, 1, false);
 
         $quizobj = quiz::create($quiz->id, $this->student->id);
 
@@ -1670,7 +1689,7 @@ class mod_quiz_external_testcase extends externallib_advanced_testcase {
      * Test get_quiz_required_qtypes
      */
     public function test_get_quiz_required_qtypes() {
-        global $DB;
+        $this->setAdminUser();
 
         // Create a new quiz.
         $quizgenerator = $this->getDataGenerator()->get_plugin_generator('mod_quiz');
@@ -1691,8 +1710,7 @@ class mod_quiz_external_testcase extends externallib_advanced_testcase {
         $question = $questiongenerator->create_question('truefalse', null, array('category' => $cat->id));
         $question = $questiongenerator->create_question('essay', null, array('category' => $cat->id));
 
-        $question = $questiongenerator->create_question('random', null, array('category' => $cat->id));
-        quiz_add_quiz_question($question->id, $quiz);
+        quiz_add_random_questions($quiz, 0, $cat->id, 1, false);
 
         $this->setUser($this->student);
 

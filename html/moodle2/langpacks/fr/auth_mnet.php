@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_mnet', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,11 +88,11 @@ $string['privacy:metadata:mnet_log:remoteid'] = 'L\'identifiant sur le serveur d
 $string['privacy:metadata:mnet_log:time'] = 'La date et l\'heure à laquelle l\'action a été effectuée.';
 $string['privacy:metadata:mnet_log:url'] = 'L\'URL du système distant où l\'action a été effectuée.';
 $string['privacy:metadata:mnet_log:userid'] = 'L\'identifiant local de l\'utilisateur qui a effectué l\'action sur le système distant.';
-$string['privacy:metadata:mnet_session'] = 'Les informations de chaque session utilisateur MNet sur un système distant sont enregistrées de manière temporaire.';
+$string['privacy:metadata:mnet_session'] = 'Les informations de chaque session utilisateur MNet sur un système distant. Les données sont enregistrées de manière temporaire.';
 $string['privacy:metadata:mnet_session:expires'] = 'La date et l\'heure de l\'échéance de la session.';
 $string['privacy:metadata:mnet_session:mnethostid'] = 'L\'identifiant MNet du système distant.';
 $string['privacy:metadata:mnet_session:token'] = 'Identifiant unique de session';
-$string['privacy:metadata:mnet_session:useragent'] = 'Chaîne de caractères indiquant l\'agent utilisateur qui accède à la page.';
+$string['privacy:metadata:mnet_session:useragent'] = 'L\'agent utilisateur employé pour accéder au système distant';
 $string['privacy:metadata:mnet_session:userid'] = 'L\'identifiant de l\'utilisateur qui part sur le système distant.';
 $string['privacy:metadata:mnet_session:username'] = 'Le nom de l\'utilisateur qui part sur le système distant.';
 $string['rpc_negotiation_timeout'] = 'Délai d\'échéance de négociation RPC';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'debug', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   debug
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['codingerror'] = 'E\' stato rilevato un errore di programmazione, deve e
 $string['configmoodle'] = 'Moodle non è ancora stato configurato. E\' necessario editare il file config.php';
 $string['erroroccur'] = 'Si è verificato un errore durante lo svolgimento di questo processo';
 $string['invalidarraysize'] = 'La dimensione degli array è errata nei parametri di {$a}';
-$string['invalideventdata'] = 'E\' stato inviato un eventdata non corretto: {$a}';
+$string['invalideventdata'] = 'Sono stati inviati dati non corretti di un evento: {$a}';
 $string['invalidparameter'] = 'E\' stato rilevato un parametro non valido';
 $string['invalidresponse'] = 'E\' stato individuato un valore non valido nella risposta';
 $string['missingconfigversion'] = 'La tabella di configurazione non contiene la versione, non è possibile continuare.';

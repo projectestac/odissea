@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['autotags'] = 'إضافة هذه الوسوم';
 $string['autotags_help'] = 'أدخل واحد أو أكثر من الوسوم المحلية (مفصول بينها بفواصل) والتي تريد إضافتها تلقائيًا لجميع تدويناتك المنسوخة من المدونة الخارجية إلى مدونتك المحلية.';
 $string['backupblogshelp'] = 'عند التفعيل سيتم تضمين المدونات في نسخ الموقع الاحتياطية التلقائية';
 $string['blockexternalstitle'] = 'مدونات خارجية';
-$string['blocktitle'] = 'علامات عنوان كتلة بلوق';
 $string['blog'] = 'بلوق';
 $string['blogaboutthis'] = 'مدون عن هذا الـ {$a->type}';
 $string['blogaboutthiscourse'] = 'اكتب تدوينة حول هذا المقرر';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,5 +37,6 @@ $string['pluginname'] = '评语反馈';
 $string['privacy:commentpath'] = '反馈意见';
 $string['privacy:metadata:assignmentid'] = '作业ID';
 $string['privacy:metadata:commentpurpose'] = '注释文本。';
+$string['privacy:metadata:filepurpose'] = '老师为学生提供的反馈文件。';
 $string['privacy:metadata:gradepurpose'] = '与注释关联的成绩ID。';
 $string['privacy:metadata:tablesummary'] = '这里将评分人的评论作为对学生的提交作业的反馈。';

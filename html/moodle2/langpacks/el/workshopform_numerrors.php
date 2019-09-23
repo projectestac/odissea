@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredimensions'] = 'Κενά για {$a} ακόμη ισχυρισμούς';
 $string['configgrade0'] = 'Η πρεοεπιλεγμένη λέξη που περιγράφει την αρνητική αξιολόγηση μιας δήλωσης.';
 $string['configgrade1'] = 'Η προεπιλεγμένη λέξη που περιγράφει την θετική αξιολόγηση μιας δήλωσης.';
-$string['dimensioncomment'] = 'Σχόλιο';
 $string['dimensioncommentfor'] = 'Σχόλιο για {$a}';
 $string['dimensiondescription'] = 'Περιγραφή';
 $string['dimensiongrade'] = 'Βαθμός';
@@ -41,7 +40,6 @@ $string['grade1default'] = 'Ναι';
 $string['grademapping'] = 'Πίνακας αντιστοίχισης βαθμών';
 $string['maperror'] = 'Ο σταθμισμένος αριθμός λαθών είναι μικρότερος από ή ίσος με';
 $string['mapgrade'] = 'Βαθμός για την υποβολή';
-$string['percents'] = '{$a}%';
 $string['pluginname'] = 'Αριθμός λαθών';
 $string['privacy:export:metadata:map'] = 'Αν ο σταθμισμένος αριθμός λαθών φτάσει {$a->nonegative} τότε ο βαθμός είναι {$a->grade} επί τοις εκατό.';
 $string['privacy:metadata'] = 'Το πρόσθετο Αριθμός σφαλμάτων αποθηκεύει μόνο τα στοιχεία της φόρμας αξιολόγησης. Τα πραγματικά προσωπικά δεδομένα για το πως έχει συμπληρωθεί η φόρμα αποθηκεύονται από το ίδιο το άρθρωμα του Εργαστηρίου και επισυνάπτονται στις εξαγόμενες εκτιμήσεις.';

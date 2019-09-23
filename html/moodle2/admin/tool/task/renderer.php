@@ -62,6 +62,7 @@ class tool_task_renderer extends plugin_renderer_base {
         $asap = get_string('asap', 'tool_task');
         $disabledstr = get_string('taskdisabled', 'tool_task');
         $plugindisabledstr = get_string('plugindisabled', 'tool_task');
+        $runnabletasks = tool_task\run_from_cli::is_runnable();
         foreach ($tasks as $task) {
             $customised = $task->is_customised() ? $no : $yes;
             if (empty($CFG->preventscheduledtaskchanges)) {
@@ -105,11 +106,19 @@ class tool_task_renderer extends plugin_renderer_base {
             }
 
             $runnow = '';
-            if (!$disabled && get_config('tool_task', 'enablerunnow')) {
+            if ( ! $disabled && get_config('tool_task', 'enablerunnow') && $runnabletasks ) {
                 $runnow = html_writer::div(html_writer::link(
                         new moodle_url('/admin/tool/task/schedule_task.php',
                             array('task' => get_class($task))),
                         get_string('runnow', 'tool_task')), 'task-runnow');
+            }
+
+            $clearfail = '';
+            if ($task->get_fail_delay()) {
+                $clearfail = html_writer::div(html_writer::link(
+                        new moodle_url('/admin/tool/task/clear_fail_delay.php',
+                                array('task' => get_class($task), 'sesskey' => sesskey())),
+                        get_string('clear')), 'task-clearfaildelay');
             }
 
             $row = new html_table_row(array(
@@ -123,7 +132,7 @@ class tool_task_renderer extends plugin_renderer_base {
                         new html_table_cell($task->get_day()),
                         new html_table_cell($task->get_day_of_week()),
                         new html_table_cell($task->get_month()),
-                        new html_table_cell($task->get_fail_delay()),
+                        new html_table_cell($task->get_fail_delay() . $clearfail),
                         new html_table_cell($customised)));
 
             // Cron-style values must always be LTR.

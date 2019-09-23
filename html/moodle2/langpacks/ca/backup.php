@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -202,7 +202,7 @@ $string['importgeneralsettings'] = 'Paràmetres genèrics per defecte de la impo
 $string['importsettings'] = 'Configuració d\'importació general';
 $string['importsuccess'] = 'S\'ha completat la importació. Cliqueu a continua per tornar al curs.';
 $string['includeactivities'] = 'Inclou:';
-$string['includeditems'] = 'Ítems inclosos:';
+$string['includeditems'] = 'Elements inclosos:';
 $string['includefilereferences'] = 'Referències de fitxer a continguts externs';
 $string['includesection'] = 'Secció {$a}';
 $string['includeuserinfo'] = 'Dades d\'usuari';

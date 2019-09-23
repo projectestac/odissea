@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_numerical', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_numerical
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,8 @@ $string['numericalmultiplier'] = 'Multiplicador';
 $string['numericalmultiplier_help'] = 'O multiplicador é o factor polo que se multiplicará a resposta numérica correcta.
 
 A primeira unidade (Unidade 1) ten un multiplicador predeterminado de 1. Daquela, se a resposta numérica correcta é 5500 e estabelece W como unidade en Unidade 1 que ten 1 como multiplicador predeterminado, a resposta correcta é 5500 W.
+
+Se engade a unidade kW cun multiplicador de 0.001, engadirá unha resposta correcta de 5.5 kW. Isto significa que as respostas 5500W ou 5.5kW corrixiríanse como correctas.
 
 Vexa que o erro aceptado tamén se multiplica, de modo que un erro permitido de 100W podería converterse nun erro de 0.1kW.';
 $string['oneunitshown'] = 'A Unidade 1 preséntase automaticamente ao lado da caixa de resposta.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -147,12 +147,9 @@ a, digamos, 40M. Si no lo tiene, pida a su administrador que lo haga por usted.<
 <p>Sin embargo, en algunos servidores esto hace que <b>todas</b> las páginas PHP dejen de funcionar
 (podrá ver los errores cuando mire las páginas) de modo que tendrá que eliminar el archivo .htaccess.</p></li>
 </ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'PHP no se ha configurado adecuadamente con la extensión MSSQL de modo que pueda comunicarse con el SQL*Server. Por favor, compruebe el archivo php.ini o vuelva a compilar PHP.';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP no ha sido configurado adecuadamente con la extensión MySQLi de forma que se pueda comunicar con MySQL. Por favor, compruebe su archivo php.ini o recompile PHP.';
 $string['nativemariadb'] = 'MariaDB (nativo/mariadb)';
 $string['nativemariadbhelp'] = 'Ahora necesita configurar la base de datos donde se almacenarán la mayoría de los datos de Moodle. La base de datos se puede crear si el usuario de la base de datos tiene los permisos necesarios, el nombre de usuario y la contraseña deben existir. El prefijo de la tabla es opcional. Este controlador no es compatible con el antiguo motor MyISAM.';
-$string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
-$string['nativemssqlhelp'] = 'Ahora tiene que configurar la base de datos donde se almacenarán la mayoría de los datos de Moodle. Esta base de datos debe estar creada previamente, al igual que un nombre de usuario y su contraseña, para poder acceder a ella. El prefijo de la tabla es obligatorio.';
 $string['nativemysqli'] = 'MySQL mejorado (native/mysqli)';
 $string['nativemysqlihelp'] = 'Ahora tiene que configurar la base de datos donde se almacenarán la mayoría de los datos de Moodle.
 La base de datos solo podrá crearse si el usuario de la base de datos tiene los permisos necesarios. El nombre de usuario y la contraseña ya deben existir. El prefijo de la tabla es opcional.';

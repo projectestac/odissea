@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['autotags'] = 'Gehitu etiketa hauek';
 $string['autotags_help'] = 'Idatzi etiketa lokal bat edo gehiago (komaz banatuta) kanpoko blogetik zure blog lokalera kopiatutako blog-sarrera bakoitzari automatikoki gehitzea nahi baduzu.';
 $string['backupblogshelp'] = 'Gaituz gero, blogak ere GUNEAren segurtasun-kopia automatizatuetan sartuko dira';
 $string['blockexternalstitle'] = 'Kanpoko blogak';
-$string['blocktitle'] = 'Blog-etiketen bloke izenburua';
 $string['blog'] = 'Bloga';
 $string['blogaboutthis'] = '{$a->type}-(r)i buruzko bloga';
 $string['blogaboutthiscourse'] = 'Gehitu sarrera bat ikastaro honi buruz';
@@ -136,25 +135,25 @@ $string['permalink'] = 'Esteka iraunkorra';
 $string['personalblogs'] = 'Erabiltzaileek beren blogak baino ezin dituzte ikusi';
 $string['preferences'] = 'Blogaren hobespenak';
 $string['privacy:metadata:core_comments'] = 'Blog-sarrerekin lotutako iruzkinak';
-$string['privacy:metadata:core_files'] = '';
+$string['privacy:metadata:core_files'] = 'Blog-sarreretan txertatutako fitxategiak';
 $string['privacy:metadata:core_tag'] = 'Blog-sarrerekin lotutako etiketak';
 $string['privacy:metadata:external'] = 'Kanpoko RSS jarioaren esteka';
 $string['privacy:metadata:external:description'] = 'Jarioaren deskribapena';
 $string['privacy:metadata:external:filtertags'] = 'Sarrerak iragazteko etiketen zerrenda';
 $string['privacy:metadata:external:name'] = 'Jarioaren izena';
-$string['privacy:metadata:external:timefetched'] = 'Jarioa azkenengoz eskuratu zeneko data.';
-$string['privacy:metadata:external:timemodified'] = 'Lotura azkenengoz aldatu zeneko data';
+$string['privacy:metadata:external:timefetched'] = 'Jarioa azkenengoz eskuratu zeneko unea';
+$string['privacy:metadata:external:timemodified'] = 'Lotura azkenengoz aldatu zeneko unea';
 $string['privacy:metadata:external:url'] = 'Jarioaren URLa';
-$string['privacy:metadata:external:userid'] = 'Erabiltzailearen IDa';
+$string['privacy:metadata:external:userid'] = 'Kanpoko blog-sarrera gehitu zuen erabiltzailearen IDa';
 $string['privacy:metadata:post'] = 'Blog-sarrerekin lotutako informazioa';
-$string['privacy:metadata:post:content'] = 'Kanpoko sarreraren edukia';
-$string['privacy:metadata:post:created'] = 'Sarrera sortu zeneko data';
-$string['privacy:metadata:post:lastmodified'] = 'Sarrera azkenengoz aldatu zeneko data';
+$string['privacy:metadata:post:content'] = 'Kanpoko blog-sarreraren edukia';
+$string['privacy:metadata:post:created'] = 'Blog-sarrera sortu zeneko data';
+$string['privacy:metadata:post:lastmodified'] = 'Blog-sarrera azkenengoz aldatu zeneko data';
 $string['privacy:metadata:post:publishstate'] = 'Sarrera besteentzat ikusgai dagoen edo ez';
 $string['privacy:metadata:post:subject'] = 'Blog-sarreraren izenburua.';
-$string['privacy:metadata:post:summary'] = 'Blog-sarrera.';
-$string['privacy:metadata:post:uniquehash'] = 'Kanpoko-sarrera bateko identifikatzaile-bakarra, normalean URL bat.';
-$string['privacy:metadata:post:userid'] = 'Erabiltzailearen IDa';
+$string['privacy:metadata:post:summary'] = 'Blog-sarreraren testua';
+$string['privacy:metadata:post:uniquehash'] = 'Kanpoko-sarrera bateko identifikatzaile-bakarra, normalean URL bat';
+$string['privacy:metadata:post:userid'] = 'Blog-sarrera gehitu zuen erabiltzailearen IDa';
 $string['privacy:metadata:post:usermodified'] = 'Sarrera azkenengoz aldatu zuen erabiltzailea';
 $string['privacy:path:blogassociations'] = 'Lotutako blog-sarrerak';
 $string['privacy:unknown'] = 'Ezezaguna';
@@ -185,10 +184,10 @@ $string['siteblogs'] = 'Erabiltzaile guztiek blog-sarrera guztiak ikusi ahal dit
 $string['tagdatelastused'] = 'Etiketa hau erabili zen azken eguna';
 $string['tagparam'] = 'Etiketa: {$a}';
 $string['tags'] = 'Etiketak';
-$string['tagsort'] = 'Zeren arabera ordenatu etiketak';
+$string['tagsort'] = 'Etiketak ordenatzeko irizpidea:';
 $string['tagtext'] = 'Etiketaren testua';
 $string['timefetched'] = 'Azken sinkronizazioaren unea';
-$string['timewithin'] = 'Egun hauetan erabilitako etiketak erakutsi';
+$string['timewithin'] = 'Erakutsi egun hauetan erabilitako etiketak';
 $string['updateentrywithid'] = 'Sarrera eguneratzen';
 $string['url'] = 'RSS jarioaren URLa';
 $string['url_help'] = 'Idatzi zure kanpoko blog-aren RSS jarioaren URLa.';

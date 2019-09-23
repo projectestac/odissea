@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_category', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_category
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['category:config'] = 'Kursbereichseinschreibung konfigurieren';
 $string['category:synchronised'] = 'Rollen werden für Kurseinschreibungen synchronisiert';
+$string['enrolcategorysynctask'] = 'Synchronisierungsaufgabe der Kursbereichseinschreibung';
 $string['pluginname'] = 'Kursbereichseinschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Kursbereichseinschreibung\' synchronisiert Rollenzuweisungen auf alle Kurse eines Kursbereichs, u.z. wenn für die jeweilige Rolle enrol/category:synchronised erlaubt ist.';
 $string['privacy:metadata'] = 'Die Einschreibemethode \'Kursbereichseinschreibung\' speichert keine personenbezogenen Daten.';

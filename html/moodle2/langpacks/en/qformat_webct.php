@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_webct', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qformat_webct', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   qformat_webct
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errorsdetected'] = '{$a} error(s) detected';
-$string['missinganswer'] = 'Too few :ANSWER, :Lx, :Rx statements for question line {$a}. You must define at last 2 possible answers';
+$string['missinganswer'] = 'Too few :ANSWER, :Lx, :Rx statements for question line {$a}. You must define at least 2 possible answers.';
 $string['missingquestion'] = 'Missing question label after line {$a}';
 $string['pluginname'] = 'WebCT format';
 $string['pluginname_help'] = 'WebCT format enables multiple-choice and short answer questions saved in WebCT\'s text-based format to be imported.';

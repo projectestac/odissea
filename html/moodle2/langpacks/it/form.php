@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['err_nopunctuation'] = 'Non devi inserire segni di punteggiatura.';
 $string['err_numeric'] = 'Devi inserire un numero.';
 $string['err_rangelength'] = 'Devi inserire tra {$a->format[0]} e {$a->format[1]} caratteri.';
 $string['err_required'] = 'Devi inserire un valore.';
+$string['err_wrappingwhitespace'] = 'Il valore non può iniziar con uno spazio vuoto.';
 $string['err_wrongfileextension'] = 'Non è stato possibile caricare alcuni file ({$a->wrongfiles}). Possono essere caricati solamente file {$a->whitelist}.';
 $string['filesofthesetypes'] = 'Tipi di file accettati:';
 $string['filetypesany'] = 'Tutti i tipi di file';
@@ -72,7 +73,6 @@ $string['passwordunmaskinstructions'] = 'Premere invio per salvare i cambiamenti
 $string['passwordunmaskrevealhint'] = 'Visualizza';
 $string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Modalità di visualizzazione del file picker selezionata più recentemente.';
 $string['requiredelement'] = 'Compilazione obbligatoria';
-$string['revealpassword'] = 'Visualizza';
 $string['security'] = 'Sicurezza';
 $string['selectallornone'] = 'Seleziona tutti/nessuno';
 $string['selected'] = 'Selezionati';

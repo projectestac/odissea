@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,9 +30,9 @@ $string['assignmentdisabled'] = 'Η παλαιού τύπου δραστηριό
 $string['assignment:exportownsubmission'] = 'Εξαγωγή της δικής σας υποβολής';
 $string['assignment:exportsubmission'] = 'Εξαγωγή υποβολής';
 $string['assignment:grade'] = 'Βαθμός εργασίας';
-$string['assignmentneedsupgrade'] = 'Η παλαιού τύπου δραστηριοτήτα «Εργασία 2.2» έχει απενεργοποιηθεί. Παρακαλούμε ζητήστε από τον διαχειριστή του ιστοτόπου να εκτελέσει το εργαλείο αναβάθμισης αναθέσεων  για όλες τις αναθέσεις παλαιού τύπου σε αυτόν τον ιστότοπο.';
+$string['assignmentneedsupgrade'] = 'Η δραστηριότητα παλαιότερης έκδοσης «Εργασία 2.2» έχει διαγραφεί.';
 $string['assignment:submit'] = 'Υποβολή εργασίας';
-$string['assignment:view'] = 'Προβολή εργασίας';
+$string['assignment:view'] = 'Εμφάνιση εργασίας';
 $string['messageprovider:assignment_updates'] = 'Ειδοποιήσεις ανάθεσης (έκδοσης 2.2 & μετά)';
 $string['modulename'] = 'Εργασία 2.2 (Απενεργοποιημένη)';
 $string['modulename_help'] = 'Άρθρωμα δραστηριότητας παλαιού τύπου που έχει αφαιρεθεί από το Moodle.';
@@ -61,4 +61,3 @@ $string['privacy:metadata:assignment_submissions:timemodified'] = 'Η ημερο
 $string['privacy:metadata:assignment_submissions:userid'] = 'Το αναγνωριστικό χρήστη που υποβάλλει την εργασία.';
 $string['privacy:submissionpath'] = 'υποβολή';
 $string['upgradenotification'] = 'Αυτή η δραστηριότητα βασίζεται σε ένα παλαιότερο άρθρωμα ανάθεσης.';
-$string['viewassignmentupgradetool'] = 'Προβολή του εργαλείου αναβάθμισης ανάθεσης εργασίας';

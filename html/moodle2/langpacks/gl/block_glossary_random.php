@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_glossary_random', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   block_glossary_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,9 +39,9 @@ $string['nextone'] = 'Seguinte entrada';
 $string['noentriesyet'] = 'Aínda non hai entradas no glosario escollido.';
 $string['notyetconfigured'] = 'Configure este bloque empregando a icona de edición.';
 $string['notyetglossary'] = 'Necesita escoller polo menos un glosario.';
-$string['pluginname'] = 'Entrada á toa do glosario';
+$string['pluginname'] = 'Entrada ao chou do glosario';
 $string['privacy:metadata'] = 'O bloque de entrada ao chou do glosario só amosa os datos almacenados noutros lugares';
-$string['random'] = 'Entrada á toa';
+$string['random'] = 'Entrada ao chou';
 $string['refresh'] = 'Días antes de escoller unha nova entrada';
 $string['select_glossary'] = 'Coller entradas deste glosario';
 $string['showconcept'] = 'Amosar o concepto (cabeceira) para cada entrada';

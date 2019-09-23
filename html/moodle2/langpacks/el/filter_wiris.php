@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_wiris', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filter_wiris', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   filter_wiris
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['connectionsettings_text'] = '';
+$string['disabled'] = 'Απενεργοποιημένο';
+$string['editormodalwindowfullscreen_help'] = '';
+$string['editormodalwindow_help'] = '';
+$string['editorsettings_text'] = '';
+$string['enabled'] = 'Ενεργοποιημένο';
+$string['error'] = 'ΣΦΑΛΜΑ';
+$string['imageformat_help'] = '';
+$string['imageservicehost_help'] = '';
+$string['imageservicepath_help'] = '';
+$string['imageserviceport_help'] = '';
+$string['imageserviceprotocol_help'] = '';
+$string['imagesettings_text'] = '';
 $string['noteditorspluginsinstalled'] = 'Δεν έχει εγκατασταθεί κανένα πρόσθετο κειμενογράφου';
+$string['ok'] = 'OK';
 $string['onlytextareaeditorinstalled'] = 'Υπάρχει μόνο ένα πρόσθετο κειμενογράφου για περιοχές κειμένου';
+$string['or'] = 'ή';
+$string['pluginperformance_help'] = '';
+$string['securitysettings_text'] = '';
+$string['version'] = 'Έκδοση';
+$string['windowsettings_text'] = '';

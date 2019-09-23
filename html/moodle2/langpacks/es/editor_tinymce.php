@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor_tinymce', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -535,7 +535,7 @@ $string['media_dlg:liveconnect'] = 'SWLiveConnect';
 $string['media_dlg:loop'] = 'Repetitivo';
 $string['media_dlg:maintainaspect'] = 'Mantener aspecto';
 $string['media_dlg:menu'] = 'Mostrar Menú';
-$string['media_dlg:mute'] = 'Silencio';
+$string['media_dlg:mute'] = 'Silenciar';
 $string['media_dlg:name'] = 'Nombre';
 $string['media_dlg:nojava'] = 'No java';
 $string['media_dlg:numloop'] = 'Núm. repeticiones';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_essay', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Geaccepteerde bestandstypes';
+$string['acceptedfiletypes_help'] = 'Geaccepteerde bestandstypes kunnen worden beperkt door een lijst met bestandsextensies in te voeren. Wanneer dit veld leeg wordt gelaten, zijn alle bestandstypes toegestaan.';
 $string['allowattachments'] = 'Bijlagen toestaan';
 $string['attachmentsoptional'] = 'Bijlagen zijn optioneel';
 $string['attachmentsrequired'] = 'Bijlagen vereist';
@@ -40,6 +42,7 @@ $string['mustattach'] = 'Wanneer "geen inline tekst" is geselecteerd of antwoord
 $string['mustrequire'] = 'Wanneer "geen inline tekst" is geselecteerd of antwoorden zijn optioneel, dan moet je minstens één bijlage eisen.';
 $string['mustrequirefewer'] = 'Je kunt niet meer bijlagen eisen dan je toestaat.';
 $string['nlines'] = '{$a} lijnen';
+$string['nonexistentfiletypes'] = 'De volgende bestandstypes werden niet herkend: {$a}';
 $string['pluginname'] = 'Open vraag';
 $string['pluginnameadding'] = 'Open vraag toevoegen';
 $string['pluginnameediting'] = 'Open vraag bewerken';

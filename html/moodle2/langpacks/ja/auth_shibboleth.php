@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_shibboleth', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,15 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_shib_auth_logo'] = '認証方法ロゴ';
+$string['auth_shib_auth_logo_description'] = 'あなたのユーザになじみのあるShibboleth認証方法のロゴを提供してください。これはあなたのShibboleth認証連携のロゴにすることができます。例) 「SWITCHaaiログイン」または「InCommonログイン」または類似のもの。';
 $string['auth_shib_auth_method'] = '認証方法名';
 $string['auth_shib_auth_method_description'] = 'あなたのユーザになじみのあるShibboleth認証方法の名称を提供してください。あなたのシボレスフェデレーションの名称を使用することもできます 例) <tt>SWITCHaai Login</tt>または<tt>InCommon Login</tt>または同様の名称。';
-$string['auth_shibbolethdescription'] = 'この方法を使用することにより、<a href="http://shibboleth.internet2.edu/">Shibboleth</a>を使用してユーザが作成および認証されます。<br />あなたが使用しているMoodleにShibbolethを設定するには<a href="../auth/shibboleth/README.txt">README</a>をご覧ください。';
+$string['auth_shibbolethdescription'] = 'この方法を使用することにより、<a href="https://shibboleth.internet2.edu/">Shibboleth</a>を使用してユーザが作成および認証されます。<br />あなたが使用しているMoodleにShibbolethを設定するには<a href="../auth/shibboleth/README.txt">README</a>をご覧ください。';
 $string['auth_shibboleth_errormsg'] = 'あなたがメンバーになっている組織を選択してください!';
 $string['auth_shibboleth_login'] = 'Shibbolethログイン';
 $string['auth_shibboleth_login_long'] = 'Shibboleth経由でMoodleにログインする';
 $string['auth_shibboleth_manual_login'] = '手動ログイン';
 $string['auth_shibboleth_select_member'] = '私は ...';
-$string['auth_shibboleth_select_organization'] = 'Shibboleth経由の認証のため、あなたの組織をドロップダウンリストから選択してください。';
+$string['auth_shibboleth_select_organization'] = 'Shibboleth経由の認証のため、あなたの組織をドロップダウンメニューから選択してください。';
 $string['auth_shib_changepasswordurl'] = 'パスワード変更URL';
 $string['auth_shib_contact_administrator'] = 'あなたが組織との関係がなく、このサーバのコースにアクセスする必要がある場合、<a href="mailto:{$a}">Moodle管理者</a>にご連絡ください。';
 $string['auth_shib_convert_data'] = 'データ修正API';

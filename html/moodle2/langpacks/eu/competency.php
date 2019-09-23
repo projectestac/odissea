@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'competency', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['coursemodulecompetencyoutcome_evidence'] = 'Erantsi ebidentzia';
 $string['coursemodulecompetencyoutcome_none'] = 'Ez egin ezer';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Bidali berrikusteko';
 $string['deletecompetencyratings'] = 'Ezabatu konpetentzien puntuazioa';
-$string['duplicateditemname'] = '{$a} (kopiatu)';
+$string['duplicateditemname'] = '{$a} (kopia)';
 $string['enablecompetencies'] = 'Gaitu konpetentziak';
 $string['enablecompetencies_desc'] = 'Konpetentziek erabiltzaileak ikasketa-planen arabera ebaluatuak izatea ahalbidetzen dute.';
 $string['errorcannotchangeapastduedate'] = 'Entregatze-data pasatu da; ezin da aldaketarik egin.';
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'Konpetentzien puntuazioa eskuz eza
 $string['evidence_manualoverrideinplan'] = 'Konpetentzien puntuazioa eskuz ezarri da \'{$a}\' ikasketa-planean.';
 $string['invalidevidencedesc'] = 'Ebidentziaren deskribapen baliogabea';
 $string['invalidgrade'] = 'Puntuazio baliogabea';
-$string['invalidpersistent'] = 'Iraunkortasun baliogabea';
 $string['invalidpersistenterror'] = 'Errorea: {$a}';
 $string['invalidplan'] = 'Ikasketa-plana baliogabea';
 $string['invalidtaxonomy'] = 'Taxonomia baliogabea: {$a}';
@@ -150,8 +149,8 @@ $string['privacy:metadata:plan:name'] = 'Ikasketa-planaren izena';
 $string['privacy:metadata:plan:reviewerid'] = 'Ikasketa-planaren berrikuslearen IDa';
 $string['privacy:metadata:plan:status'] = 'Ikasketa-planaren egoera';
 $string['privacy:metadata:plan:userid'] = 'Ikasketa-planaren jabea den erabiltzailearen IDa';
-$string['privacy:metadata:timecreated'] = 'Erregistroa sortu zeneko data';
-$string['privacy:metadata:timemodified'] = 'Erregistroa editatu ºzeneko data';
+$string['privacy:metadata:timecreated'] = 'Erregistroa sortu zeneko unea';
+$string['privacy:metadata:timemodified'] = 'Erregistroa editatu zeneko unea';
 $string['privacy:metadata:usercomp:grade'] = 'Konpetentziari emandako kalifikazioa';
 $string['privacy:metadata:usercomp:proficiency'] = 'Trebezia lortu den edo ez';
 $string['privacy:metadata:usercomp:reviewerid'] = 'Berrikuslearen IDa';
@@ -177,7 +176,7 @@ $string['taxonomy_outcome'] = 'Ikaste-emaitza';
 $string['taxonomy_practice'] = 'Praktika';
 $string['taxonomy_proficiency'] = 'Trebezia';
 $string['taxonomy_skill'] = 'Trebetasuna';
-$string['taxonomy_value'] = 'Balorea';
+$string['taxonomy_value'] = 'Balioa';
 $string['usercommentedonacompetency'] = '{$a->fullname}-(e)k iruzkina egin du "{$a->competency}" konpetentzian:
 
 {$a->comment}

@@ -1240,8 +1240,11 @@ class mod_quiz_external extends external_api {
         );
         $params = self::validate_parameters(self::process_attempt_parameters(), $params);
 
-        // Do not check access manager rules.
-        list($attemptobj, $messages) = self::validate_attempt($params, false);
+        // Do not check access manager rules and evaluate fail if overdue.
+        $attemptobj = quiz_attempt::create($params['attemptid']);
+        $failifoverdue = !($attemptobj->get_quizobj()->get_quiz()->overduehandling == 'graceperiod');
+
+        list($attemptobj, $messages) = self::validate_attempt($params, false, $failifoverdue);
 
         // Create the $_POST object required by the question engine.
         $_POST = array();
@@ -1296,7 +1299,8 @@ class mod_quiz_external extends external_api {
             if (!$attemptobj->is_finished()) {
                 throw new moodle_quiz_exception($attemptobj->get_quizobj(), 'attemptclosed');
             } else if (!$displayoptions->attempt) {
-                throw new moodle_exception($attemptobj->cannot_review_message());
+                throw new moodle_quiz_exception($attemptobj->get_quizobj(), 'noreview', null, '',
+                    $attemptobj->cannot_review_message());
             }
         } else if (!$attemptobj->is_review_allowed()) {
             throw new moodle_quiz_exception($attemptobj->get_quizobj(), 'noreviewattempt');

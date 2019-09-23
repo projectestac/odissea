@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'questionnaire', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -468,6 +468,7 @@ $string['theme'] = 'Tema';
 $string['thismonth'] = 'aquest mes';
 $string['thisresponse'] = 'Aquesta resposta';
 $string['thisweek'] = 'aquesta setmana';
+$string['thousands'] = 'No escriviu el punt de miler.';
 $string['title'] = 'Títol';
 $string['title_help'] = 'Títol de l\'enquesta, que apareixerà a la part superior de cada pàgina. Per defecte, aquest títol és el nom de l\'enquesta, però podeu editar-lo i deixar-lo com vulgueu.';
 $string['today'] = 'avui';

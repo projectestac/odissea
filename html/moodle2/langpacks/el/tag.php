@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = 'Παντού';
 $string['inputstandardtags'] = 'Πληκτρολογήστε λίστα με νέες ετικέτες, χωρισμένες με κόμματα';
 $string['itemstaggedwith'] = 'Στην περιοχή «{$a->tagarea}» τοποθετήθηκε ετικέτα «{$a->tag}»';
 $string['lesstags'] = 'λιγότερα...';
-$string['manageofficialtags'] = 'Διαχείριση επίσημων ετικετών';
 $string['managestandardtags'] = 'Διαχείριση τυπικών ετικετών';
 $string['managetagcolls'] = 'Διαχείριση συλλογών ετικετών';
 $string['managetags'] = 'Διαχείριση ετικετών';
@@ -94,9 +93,6 @@ $string['nextpage'] = 'Περισσότερα';
 $string['noresultsfor'] = 'Δεν βρέθηκε το «{$a}»';
 $string['notagsfound'] = 'Δεν βρέθηκαν ετικέτες που να ταιριάζουν με το «{$a}»';
 $string['nothingtoupdate'] = 'Τίποτα προς ενημέρωση';
-$string['officialtag'] = 'Επίσημη';
-$string['otags'] = 'Επίσημες ετικέτες';
-$string['othertags'] = 'Άλλες ετικέτες';
 $string['owner'] = 'Ιδιοκτήτης';
 $string['page-tag-index'] = 'Μονή σελίδα ετικέτας';
 $string['page-tag-manage'] = 'Διαχείριση σελίδας ετικέτας';
@@ -129,16 +125,15 @@ $string['rsstitle'] = 'Τροφοδοσία RSS ετικετών μαθήματ�
 $string['search'] = 'Αναζήτηση';
 $string['searchable'] = 'Αναζητήσιμες';
 $string['searchable_help'] = 'Αν επιλεγεί, οι ετικέτες αυτής της συλλογής αναζήτησης μπορούν να βρεθούν μέσω της σελίδας «Αναζήτηση ετικετών». Εάν δεν επιλεγεί, οι ετικέτες μπορούν ακόμα να βρεθούν μέσω άλλων σελίδων αναζήτησης.';
-$string['searchresultsfor'] = 'Αποτελέσματα σχετικά με "{$a}"';
+$string['searchresultsfor'] = 'Αποτελέσματα σχετικά με «{$a}»';
 $string['searchtags'] = 'Αναζήτηση ετικετών';
-$string['seeallblogs'] = 'Δείτε όλες τις αναρτήσεις ιστολογίου με την ετικέτα "{$a}"';
-$string['select'] = 'Επιλέξτε';
+$string['seeallblogs'] = 'Δείτε όλες τις αναρτήσεις ιστολογίου με την ετικέτα «{$a}»';
+$string['select'] = 'Επιλογή';
 $string['selectcoll'] = 'Επιλογή συλλογής ετικετών';
 $string['selectmaintag'] = 'Επιλέξτε την ετικέτα που θα χρησιμοποιηθεί μετά το συνδυασμό';
 $string['selectmultipletags'] = 'Παρακαλούμε, επιλέξτε περισσότερες από μία ετικέτες';
 $string['selecttag'] = 'Επιλέξτε την ετικέτα «{$a}»';
 $string['settypedefault'] = 'Αφαίρεση από τυπικές ετικέτες';
-$string['settypeofficial'] = 'Ορισμός επίσημης';
 $string['settypestandard'] = 'Ορίστε ως τυπικό';
 $string['showingfirsttags'] = 'Προβάλλονται οι {$a} περισσότερο δημοφιλείς ετικέτες';
 $string['showstandard'] = 'Χρήση τυπικών ετικετών';
@@ -161,10 +156,8 @@ $string['tagcollection'] = 'Συλλογή ετικετών';
 $string['tagcollection_help'] = 'Οι συλλογές ετικετών είναι σύνολα ετικετών για διαφορετικές περιοχές. Για παράδειγμα, μια συλλογή από τυπικές ετικέτες μπορεί να χρησιμοποιηθεί για την επισήμανση μαθημάτων, με τα ενδιαφέροντα των χρηστών και τις ετικέτες αναρτήσεων ιστολογίων να διατηρούνται σε μια ξεχωριστή συλλογή. Όταν ένας χρήστης κάνει κλικ σε μια ετικέτα, η σελίδα ετικέτας εμφανίζει μόνο στοιχεία με αυτήν την ετικέτα στην ίδια συλλογή. Οι ετικέτες μπορούν να προστεθούν αυτόματα σε μια συλλογή σύμφωνα με την περιοχή ή μπορούν να προστεθούν χειρονακτικά ως τυπικές ετικέτες.';
 $string['tagcollections'] = 'Συλλογές ετικετών';
 $string['tagdescription'] = 'Περιγραφή ετικέτας';
-$string['taggedwith'] = 'σχετικό με "{$a}"';
 $string['tags'] = 'Ετικέτες';
 $string['tagsaredisabled'] = 'Οι ετικέτες είναι απενεργοποιημένες';
-$string['tagtype'] = 'Τύπος ετικέτας';
 $string['thingstaggedwith'] = 'Το «{$a->name}» χρησιμοποιείται {$a->count} φορές';
 $string['thingtaggedwith'] = 'Το «{$a->name}» χρησιμοποιείται μία φορά';
 $string['timemodified'] = 'Τροποποιήθηκε';

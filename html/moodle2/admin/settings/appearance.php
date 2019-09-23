@@ -16,21 +16,26 @@ if ($hassiteconfig or has_any_capability($capabilities, $systemcontext)) { // sp
     //2015.05.19 @pferre22
     if (get_protected_agora()) {
     //************ FI
-    $temp->add(new admin_setting_configtext('themelist', new lang_string('themelist', 'admin'), new lang_string('configthemelist','admin'), '', PARAM_NOTAGS));
+    $setting = new admin_setting_configtext('themelist', new lang_string('themelist', 'admin'),
+        new lang_string('configthemelist', 'admin'), '', PARAM_NOTAGS);
+    $setting->set_force_ltr(true);
+    $temp->add($setting);
     $setting = new admin_setting_configcheckbox('themedesignermode', new lang_string('themedesignermode', 'admin'), new lang_string('configthemedesignermode', 'admin'), 0);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
     $temp->add(new admin_setting_configcheckbox('allowuserthemes', new lang_string('allowuserthemes', 'admin'), new lang_string('configallowuserthemes', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('allowcoursethemes', new lang_string('allowcoursethemes', 'admin'), new lang_string('configallowcoursethemes', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('allowcategorythemes',  new lang_string('allowcategorythemes', 'admin'), new lang_string('configallowcategorythemes', 'admin'), 0));
-        $temp->add(new admin_setting_configcheckbox('allowthemechangeonurl',  new lang_string('allowthemechangeonurl', 'admin'), new lang_string('configallowthemechangeonurl', 'admin'), 0));
-        //XTEC ************ AFEGIT - To let access only to xtecadmin user
+    $temp->add(new admin_setting_configcheckbox('allowcohortthemes',  new lang_string('allowcohortthemes', 'admin'), new lang_string('configallowcohortthemes', 'admin'), 0));
+    $temp->add(new admin_setting_configcheckbox('allowthemechangeonurl',  new lang_string('allowthemechangeonurl', 'admin'), new lang_string('configallowthemechangeonurl', 'admin'), 0));
+    //XTEC ************ AFEGIT - To let access only to xtecadmin user
     //2015.05.19 @pferre22
     }
     //************ FI
     $temp->add(new admin_setting_configcheckbox('allowuserblockhiding', new lang_string('allowuserblockhiding', 'admin'), new lang_string('configallowuserblockhiding', 'admin'), 1));
     $temp->add(new admin_setting_configcheckbox('allowblockstodock', new lang_string('allowblockstodock', 'admin'), new lang_string('configallowblockstodock', 'admin'), 1));
-    $temp->add(new admin_setting_configtextarea('custommenuitems', new lang_string('custommenuitems', 'admin'), new lang_string('configcustommenuitems', 'admin'), '', PARAM_TEXT, '50', '10'));
+    $temp->add(new admin_setting_configtextarea('custommenuitems', new lang_string('custommenuitems', 'admin'),
+        new lang_string('configcustommenuitems', 'admin'), '', PARAM_RAW, '50', '10'));
     //XTEC ************ AFEGIT - To let access only to xtecadmin user
     //2015.05.19 @pferre22
     if (get_protected_agora()) {
@@ -39,9 +44,9 @@ if ($hassiteconfig or has_any_capability($capabilities, $systemcontext)) { // sp
         'customusermenuitems',
         new lang_string('customusermenuitems', 'admin'),
         new lang_string('configcustomusermenuitems', 'admin'),
-        'grades,grades|/grade/report/mygrades.php|grades
-messages,message|/message/index.php|message
-preferences,moodle|/user/preferences.php|preferences',
+        'grades,grades|/grade/report/mygrades.php|t/grades
+messages,message|/message/index.php|t/message
+preferences,moodle|/user/preferences.php|t/preferences',
         PARAM_RAW,
         '50',
         '10'
@@ -245,6 +250,9 @@ preferences,moodle|/user/preferences.php|preferences',
     // coursecontact is the person responsible for course - usually manages enrolments, receives notification, etc.
     $temp = new admin_settingpage('coursecontact', new lang_string('courses'));
     $temp->add(new admin_setting_special_coursecontact());
+    $temp->add(new admin_setting_configcheckbox('coursecontactduplicates',
+            new lang_string('coursecontactduplicates', 'admin'),
+            new lang_string('coursecontactduplicates_desc', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('courselistshortnames',
             new lang_string('courselistshortnames', 'admin'),
             new lang_string('courselistshortnames_desc', 'admin'), 0));
@@ -254,6 +262,10 @@ preferences,moodle|/user/preferences.php|preferences',
             new lang_string('configcourseoverviewfileslimit', 'admin'), 1, PARAM_INT));
     $temp->add(new admin_setting_configtext('courseoverviewfilesext', new lang_string('courseoverviewfilesext'),
             new lang_string('configcourseoverviewfilesext', 'admin'), '.jpg,.gif,.png'));
+    $temp->add(new admin_setting_configtext('coursegraceperiodbefore', new lang_string('coursegraceperiodbefore', 'admin'),
+        new lang_string('configcoursegraceperiodbefore', 'admin'), 0, PARAM_INT));
+    $temp->add(new admin_setting_configtext('coursegraceperiodafter', new lang_string('coursegraceperiodafter', 'admin'),
+        new lang_string('configcoursegraceperiodafter', 'admin'), 0, PARAM_INT));
     $ADMIN->add('appearance', $temp);
 
     $temp = new admin_settingpage('ajax', new lang_string('ajaxuse'));
@@ -287,4 +299,3 @@ preferences,moodle|/user/preferences.php|preferences',
     //************ FI
 
 } // end of speedup
-

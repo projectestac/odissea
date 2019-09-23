@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_performance', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   report_performance
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['check_cachejs_comment_enable'] = 'この設定を無効にした場合�
 $string['check_cachejs_details'] = 'JavaScriptキャッシングおよび圧縮はページ読み込みのパフォーマンスを大幅に改善します。実運用サイトでの使用を強くお勧めします。';
 $string['check_debugmsg_comment_developer'] = 'DEVELOPER以外を設定した場合、パフォーマンスは少しだけ改善されます。';
 $string['check_debugmsg_comment_nodeveloper'] = '「DEVELOPER」に設定した場合、パフォーマンスは少しだけ影響を受けます。';
-$string['check_debugmsg_details'] = 'あなたが開発者である以外、開発者レベルに移行することにはほとんど利点がありません。開発者の場合は強くお勧めします。<p>あなたがエラーメッセージを取得できた場合、他の場所にコピー＆ペーストしてください。そして、デバッグメッセージを「NONE」に戻すことを強くお勧めします。あなたのサイト設定に関してデバッグメッセージは不正侵入者にヒントを与えることになります。また、パフォーマンスにも影響を及ぼします。</p>';
+$string['check_debugmsg_details'] = '開発者からリクエストされない限り開発者レベルに移行することにはほとんど利点がありません。開発者の場合は強くお勧めします。<p>あなたがエラーメッセージを取得した場合、他の場所にコピー＆ペーストしてください。デバッグメッセージをNONEに戻すことを強くお勧めします。あなたのサイト設定に関してデバッグメッセージは不正侵入者にヒントを与えることになります。また、パフォーマンスにも影響を及ぼします。</p>';
 $string['check_enablestats_comment_disable'] = '統計処理によりパフォーマンスが影響を受ける可能性があります。この設定を有効にした場合、慎重に統計設定してください。';
 $string['check_enablestats_comment_enable'] = '統計処理によりパフォーマンスが影響を受ける可能性があります。慎重に統計設定してください。';
 $string['check_enablestats_details'] = 'このオプションを有効にした場合、ログをcronジョブで処理して統計情報を収集します。あなたのサイトのトラフィックに応じて時間を要します。<p>この処理中、さらにサーバリソースを消費してパフォーマンスに影響を与える場合があります。</p>';

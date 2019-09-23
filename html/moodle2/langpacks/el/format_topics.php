@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'format_topics', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   format_topics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['currentsection'] = 'Αυτό το θέμα';
 $string['deletesection'] = 'Διαγραφή θέματος';
 $string['editsection'] = 'Τροποποίηση θέματος';
 $string['editsectionname'] = 'Τροποποίηση ονομασίας θέματος';
-$string['hidefromothers'] = 'Απόκρυψη θέματος από τους υπολοίπους';
+$string['hidefromothers'] = 'Απόκρυψη θέματος (από τους υπόλοιπους)';
 $string['newsectionname'] = 'Νέο όνομα για το θέμα {$a}';
 $string['page-course-view-topics'] = 'Κάθε κύρια σελίδα του μαθήματος σε μορφή θεμάτων';
 $string['page-course-view-topics-x'] = 'Κάθε σελίδα μαθήματος σε μορφότυπο θεμάτων';
@@ -38,4 +38,4 @@ $string['pluginname'] = 'Θεματικός μορφότυπος μαθήματ�
 $string['privacy:metadata'] = 'Το πρόσθετο «Θεματικός μορφότυπος μαθήματος» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['section0name'] = 'Γενικά';
 $string['sectionname'] = 'Θέμα';
-$string['showfromothers'] = 'Εμφάνιση θεμάτων από άλλους';
+$string['showfromothers'] = 'Εμφάνιση θέματος';

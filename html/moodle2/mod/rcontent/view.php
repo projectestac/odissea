@@ -39,8 +39,7 @@ if (!empty($rcontent->frame) || $rcontent->popup == 1) {
     require_login($course);
     $strexit = get_string('exitactivity', 'rcontent');
     $exitlink = '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$rcontent->course.'" target="_parent" title="'.$strexit.'">'.$strexit.'</a> ';
-    $updatebutton = $course->id == SITEID ? "" : update_module_button($cm->id, $course->id, get_string('modulename', 'rcontent'));
-    $PAGE->set_button($exitlink.$updatebutton);
+    $PAGE->set_button($exitlink);
 }
 
 

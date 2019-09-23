@@ -54,13 +54,6 @@ var PLUGINNAME = 'atto_recordrtc',
     '<div class="{{PLUGINNAME}} container-fluid">' +
       '<div class="{{bs_row}} hide">' +
         '<div class="{{bs_col}}12">' +
-          '<div id="alert-warning" class="alert {{bs_al_warn}}">' +
-            '<strong>{{browseralert_title}}</strong> {{browseralert}}' +
-          '</div>' +
-        '</div>' +
-      '</div>' +
-      '<div class="{{bs_row}} hide">' +
-        '<div class="{{bs_col}}12">' +
           '<div id="alert-danger" class="alert {{bs_al_dang}}">' +
             '<strong>{{insecurealert_title}}</strong> {{insecurealert}}' +
           '</div>' +
@@ -104,12 +97,19 @@ Y.namespace('M.atto_recordrtc').Button = Y.Base.create('button', Y.M.editor_atto
     initializer: function() {
         if (this.get('host').canShowFilepicker('media')) {
             // Add audio and/or video buttons depending on the settings.
-            var allowedtypes = this.get('allowedtypes');
+            var allowedtypes = this.get('allowedtypes'),
+                buttonadded = false;
             if (allowedtypes === 'both' || allowedtypes === 'audio') {
                 this._addButton('audio', this._audio);
+                buttonadded = true;
             }
             if (allowedtypes === 'both' || allowedtypes === 'video') {
                 this._addButton('video', this._video);
+                buttonadded = true;
+            }
+            if (!buttonadded) {
+                // Plugin not available here.
+                return;
             }
 
             // Initialize the dialogue box.
@@ -145,12 +145,9 @@ Y.namespace('M.atto_recordrtc').Button = Y.Base.create('button', Y.M.editor_atto
                 this.centered();
             });
 
-            // Require Bowser and adapter.js libraries.
-            window.require(['atto_recordrtc/adapter'], function(adapter) {
+            // Require adapter.js library.
+            window.require(['core/adapter'], function(adapter) {
                 window.adapter = adapter;
-            });
-            window.require(['atto_recordrtc/bowser'], function(bowser) {
-                window.bowser = bowser;
             });
         }
     },
@@ -219,24 +216,18 @@ Y.namespace('M.atto_recordrtc').Button = Y.Base.create('button', Y.M.editor_atto
      */
     _createContent: function(type) {
         var isAudio = (type === 'audio'),
-            bsRow = this.get('oldermoodle') ? 'row-fluid' : 'row',
-            bsCol = this.get('oldermoodle') ? 'span' : 'col-xs-',
-            bsAlWarn = this.get('oldermoodle') ? '' : 'alert-warning',
-            bsAlDang = this.get('oldermoodle') ? 'alert-error' : 'alert-danger',
-            bsSsBtn = this.get('oldermoodle') ? 'btn btn-large btn-danger btn-block'
-                                              : 'btn btn-lg btn-outline-danger btn-block';
+            bsRow = 'row',
+            bsCol = 'col-xs-',
+            bsAlDang = 'alert-danger',
+            bsSsBtn = 'btn btn-lg btn-outline-danger btn-block';
 
         var bodyContent = Y.Handlebars.compile(TEMPLATE)({
             PLUGINNAME: PLUGINNAME,
             isAudio: isAudio,
             bs_row: bsRow,
             bs_col: bsCol,
-            bs_al_warn: bsAlWarn,
             bs_al_dang: bsAlDang,
             bs_ss_btn: bsSsBtn,
-            bs_ul_btn: 'btn btn-primary btn-block',
-            browseralert_title: M.util.get_string('browseralert_title', 'atto_recordrtc'),
-            browseralert: M.util.get_string('browseralert', 'atto_recordrtc'),
             insecurealert_title: M.util.get_string('insecurealert_title', 'atto_recordrtc'),
             insecurealert: M.util.get_string('insecurealert', 'atto_recordrtc'),
             startrecording: M.util.get_string('startrecording', 'atto_recordrtc'),
@@ -355,17 +346,7 @@ Y.namespace('M.atto_recordrtc').Button = Y.Base.create('button', Y.M.editor_atto
         },
 
         /**
-         * True if Moodle is version < 3.2.
-         *
-         * @attribute oldermoodle
-         * @type Boolean
-         */
-        oldermoodle: {
-            value: null
-        },
-
-        /**
-         * Maximum upload size set on server, in MB.
+         * Maximum upload size set on server, in bytes.
          *
          * @attribute maxrecsize
          * @type String

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,9 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['absent'] = '결석';
 $string['addmoredimensions'] = '추가 {$a} 개 관점을 위한 공백 ';
 $string['correct'] = '맞음';
-$string['dimensioncomment'] = '덧글';
 $string['dimensiondescription'] = '설명';
-$string['dimensiongrade'] = '성적';
 $string['dimensionmaxgrade'] = '가능한 최고 성적 / 사용 척도';
 $string['dimensionnumber'] = '관점 {$a}';
 $string['dimensionweight'] = '가중치';

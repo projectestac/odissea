@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'webservice', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,10 +88,10 @@ $string['erroroptionalparamarray'] = 'O parâmetro de descrição do web service
 $string['eventwebservicefunctioncalled'] = 'Chamada a função do web service';
 $string['eventwebserviceloginfailed'] = 'A autenticação no web service falhou';
 $string['eventwebserviceservicecreated'] = 'Web service criado';
-$string['eventwebserviceservicedeleted'] = 'Serviço de Web eliminado';
+$string['eventwebserviceservicedeleted'] = 'Web service apagado';
 $string['eventwebserviceserviceupdated'] = 'Web service atualizado';
-$string['eventwebserviceserviceuseradded'] = 'Utilizador do web service atualizado';
-$string['eventwebserviceserviceuserremoved'] = 'Utilizador do web service removido';
+$string['eventwebserviceserviceuseradded'] = 'Adicionado utilizador do web service';
+$string['eventwebserviceserviceuserremoved'] = 'Apagado utilizador do web service';
 $string['eventwebservicetokencreated'] = 'Foi criado token do web service';
 $string['eventwebservicetokensent'] = 'Foi enviado token do web service';
 $string['execute'] = 'Executar';
@@ -108,7 +108,7 @@ $string['functions'] = 'Funções';
 $string['generalstructure'] = 'Estrutura geral';
 $string['information'] = 'Informação';
 $string['installexistingserviceshortnameerror'] = 'Já existe um web service com o nome curto "{$a}". Não é possível instalar/atualizar um web service diferente com este nome curto.';
-$string['installserviceshortnameerror'] = 'Erro de codificação: o serviço com o nome curto "{$a}" deve conter apenas números, letras  e _-.';
+$string['installserviceshortnameerror'] = 'Erro de codificação: nome curto do serviço "{$a}" apenas pode conter caracteres alfanuméricos (letras e números), underscore (_), hífen (-) ou ponto (.)';
 $string['invalidextparam'] = 'Parâmetro inválido da API externa: {$a}';
 $string['invalidextresponse'] = 'Resposta inválida da API externa: {$a}';
 $string['invalidiptoken'] = 'Token inválido - o seu IP não está autorizado';
@@ -144,11 +144,11 @@ $string['postrestparam'] = 'Código PHP para REST (pedido POST)';
 $string['potusers'] = 'Utilizadores não autorizados';
 $string['potusersmatching'] = 'Utilizadores não autorizados com as seguintes caraterísticas';
 $string['print'] = 'Imprimir todo(a)s';
-$string['privacy:metadata:serviceusers'] = 'A lista de utilizador que pode usar determinados serviços externos';
+$string['privacy:metadata:serviceusers'] = 'A lista dos utilizadores que pode usar determinados serviços externos';
 $string['privacy:metadata:serviceusers:iprestriction'] = 'IP restrito para usar o serviço';
-$string['privacy:metadata:serviceusers:timecreated'] = 'A data de quando o registo foi criado';
+$string['privacy:metadata:serviceusers:timecreated'] = 'A data em que o registo foi criado';
 $string['privacy:metadata:serviceusers:userid'] = 'O ID de utilizador';
-$string['privacy:metadata:serviceusers:validuntil'] = 'A data em que a autorização termina';
+$string['privacy:metadata:serviceusers:validuntil'] = 'A data até quando a autorização é válida';
 $string['privacy:metadata:tokens'] = 'Um registo de tokens a interagir com o Moodle através de web services ou aplicações móveis.';
 $string['privacy:metadata:tokens:creatorid'] = 'O ID do utilizador que criou o token';
 $string['privacy:metadata:tokens:iprestriction'] = 'IP restrito para este token';
@@ -189,7 +189,7 @@ $string['service'] = 'Serviço';
 $string['servicehelpexplanation'] = 'Um serviço é um conjunto de funções. Um serviço pode ser acedido por todos os utilizadores ou por apenas um conjunto limitado de utilizadores.';
 $string['servicename'] = 'Nome do serviço';
 $string['servicenotavailable'] = 'O web service não está disponível (não existe ou pode estar desativado)';
-$string['servicerequireslogin'] = 'O serviço da Web não está disponível (a sessão terminou ou expirou)';
+$string['servicerequireslogin'] = 'O web service não está disponível (terminou a sessão ou expirou)';
 $string['servicesbuiltin'] = 'Serviços base';
 $string['servicescustom'] = 'Serviços personalizados';
 $string['serviceusers'] = 'Utilizadores autorizados';
@@ -202,7 +202,7 @@ $string['step'] = 'Passo';
 $string['supplyinfo'] = 'Mais detalhes';
 $string['testauserwithtestclientdescription'] = 'Simule o acesso externo ao serviço usando o cliente de teste dos web services. Antes disso, autentique-se como um utilizador que tenha a permissão "moodle/webservice:createtoken" e obtenha a chave de segurança (token) através das configurações na secção "O meu perfil". Este token será usado pelo cliente de teste. No cliente de teste, selecione e ative, com o token de autenticação, um dos protocolos ativos. <strong>AVISO: Os testes devem ser criteriosamente escolhidos porque as funções invocadas no teste serão EFECTIVAMENTE realizadas por este utilizador no sistema.</strong>';
 $string['testclient'] = 'Cliente de teste dos web services';
-$string['testclientdescription'] = '* O cliente de teste dos web services <strong>executa efetivamente</strong> as funções. Não devem ser efetuados testes em funções que não se saiba o que fazem. <br/>* Nem todas as funções dos web services estão disponíveis no cliente de teste. <br/>* Para confirmar que um utilizador não pode aceder a algumas funções, poderá testar algumas funções para as quais não tem permissões.<br/>* Para obter mensagens de erro mais detalhadas, altere o nível de depuração para <strong>{$a->mode}</strong> em {$a->atag}.';
+$string['testclientdescription'] = '* O cliente de teste dos web services <strong>executa efetivamente</strong> as funções. Não devem ser efetuados testes em funções que não saiba o que fazem. <br/>* Nem todas as funções dos web services estão disponíveis para o cliente de teste.<br/>* Para confirmar que um utilizador não pode aceder a algumas funções, teste algumas funções para as quais o utilizador não tem permissão.<br/>* Para obter mensagens de erro mais detalhadas, altere o nível de depuração para \'<strong>{$a->mode}</strong>\' em {$a->atag}.';
 $string['testwithtestclient'] = 'Testar o serviço';
 $string['testwithtestclientdescription'] = 'Simule o acesso externo ao serviço usando o cliente de teste dos web services. Antes de o fazer, autentique-se como um utilizador que tenha a permissão "moodle/webservice:createtoken" e obtenha a chave de segurança (token) através das configurações na secção "O meu perfil". O token obtido será usado pelo cliente de teste. No cliente de teste, selecione e ative, com o token de autenticação, um dos protocolos ativos. <strong>AVISO: os testes devem ser criteriosamente escolhidos porque as funções invocadas no teste serão EFETIVAMENTE realizadas por este utilizador no sistema.</strong>';
 $string['token'] = 'Token';

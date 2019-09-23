@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lesson', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['actionaftercorrectanswer_help'] = 'Na een juist antwoord op een vraag z
 * Toon een onbeantwoorde pagina - Toont een willekeurige pagina die nog niet eerder werd beantwoord, hoewel misschien eerder getoond';
 $string['actions'] = 'Acties';
 $string['activitylink'] = 'Link naar volgende activiteit';
-$string['activitylink_help'] = '<p>In dit rolmenu zitten alle activiteiten van deze cursus. Als er één van geselecteerd wordt, dan zal er aan het eind van de les een link verschijnen naar die activiteit.</p>';
+$string['activitylink_help'] = 'Om een link te plaatsen op het einde van de les naar een andere activiteit in de cursus kun je de activiteit selecteren uit het rolmenu.';
 $string['activitylinkname'] = 'Ga naar {$a}';
 $string['activityoverview'] = 'Je hebt lessen te voltooien';
 $string['addabranchtable'] = 'Voeg een pagina toe';
@@ -121,7 +121,6 @@ $string['completiontimespent'] = 'Leerling moet deze activiteit doen gedurende m
 $string['completiontimespentdesc'] = 'Leerling moet deze activiteit minstens {$a} doen';
 $string['completiontimespentgroup'] = 'Vereiste gespendeerde tijd';
 $string['conditionsfordependency'] = 'Voorwaarde(n) voor deeltaak';
-$string['configactionaftercorrectanswer'] = 'De standaardactie na een juist antwoord';
 $string['configintro'] = 'De waardes die hier geplaatst worden bepalen de standaard waardes die gebruikt worden in het instellingsformulier voor een nieuwe les activiteit. De instellingen die bij \'Geavanceerd\' staan worden enkel getoond wanneer op de \'Toon meer...\'-link geklikt wordt.';
 $string['configmaxanswers'] = 'Standaard maximaal aantal antwoorden per pagina';
 $string['configmediaclose'] = 'Toont een sluit-knop als deel van de pop-up waarin het gelinkte mediabestand getoond wordt';
@@ -210,6 +209,7 @@ $string['eolstudentoutoftimenoanswers'] = 'Je hebt geen enkele vraag beantwoord.
 $string['essay'] = 'Open vraag';
 $string['essayemailmessage2'] = '<p>Open vraag prompt: {$a->question}</p><p>Jouw antwoord:<em>{$a->response}</em></p><p>Commentaar van de beoordeler:<em>{$a->comment}</em></p><p>Je hebt {$a->earned} op {$a->outof} gekregen voor deze open vraag.</p><p>Je cijfer voor deze les is gewijzigd naar {$a->newgrade}%.</p>';
 $string['essayemailsubject'] = 'Cijfer beschikbaar voor vraag uit les';
+$string['essaynotgradedyet'] = 'Deze open vraag is nog niet beoordeeld';
 $string['essayresponses'] = 'Antwoord op open vraag';
 $string['essays'] = 'Open vragen';
 $string['essayscore'] = 'Cijfer voor de open vragen';
@@ -537,6 +537,7 @@ $string['ongoingcustom'] = 'Dit is een les op {$a->score} punten. Je hebt nu al 
 $string['ongoing_help'] = 'Indien ingeschakeld, zal elke pagina het huidig aantal verdiende punten uit het mogelijk totaal tonen.';
 $string['ongoingnormal'] = 'Je hebt {$a->correct} vragen van de {$a->viewed} juist beantwoord.';
 $string['onpostperpage'] = 'Slechts één bericht per cijfer';
+$string['openafterclose'] = 'Je hebt een startdatum opgegeven na de einddatum';
 $string['options'] = 'Opties';
 $string['or'] = 'OF';
 $string['ordered'] = 'Gesorteerd';
@@ -595,7 +596,7 @@ $string['privacy:metadata:branch:flag'] = 'Of de pagina willekeurig berekend was
 $string['privacy:metadata:branch:nextpageid'] = 'De volgende paginaID';
 $string['privacy:metadata:branch:pageid'] = 'De paginaID';
 $string['privacy:metadata:branch:retry'] = 'Het pogingsnummer';
-$string['privacy:metadata:branch:timeseen'] = 'Tijdstip waarop de poging bekeken was';
+$string['privacy:metadata:branch:timeseen'] = 'Tijdstip waarop de pagina bekeken werd';
 $string['privacy:metadata:branch:userid'] = 'GebruikersID';
 $string['privacy:metadata:grades'] = 'Gegevens over de cijfers voor elke les';
 $string['privacy:metadata:grades:completed'] = 'De datum waarop het cijfer gegeven is';
@@ -613,7 +614,7 @@ $string['privacy:metadata:overrides:userid'] = 'De gebruikersID';
 $string['privacy:metadata:timer'] = 'Gegevens over de poging van een les';
 $string['privacy:metadata:timer:completed'] = 'Of de poging volledig is';
 $string['privacy:metadata:timer:lessontime'] = 'Het laatste moment waarop we activiteit gezien hebben';
-$string['privacy:metadata:timer:starttime'] = 'De datum waarop de activiteit startte';
+$string['privacy:metadata:timer:starttime'] = 'De datum waarop de poging startte';
 $string['privacy:metadata:timer:timemodifiedoffline'] = 'Het laatste moment waarop we activiteit gezien hebben van de mobiele app';
 $string['privacy:metadata:timer:userid'] = 'De gebruikersID';
 $string['privacy:metadata:userpref:lessonview'] = 'De gekozen displaymodus wanneer lessen bewerkt worden';
@@ -719,6 +720,7 @@ $string['usepassword_help'] = '<p>Hiermee zullen leerlingen die het wachtwoord n
 $string['useroverrides'] = 'Gebruikersoverschrijvingen';
 $string['useroverridesdeleted'] = 'Gebruikersoverschrijvingen verwijderd';
 $string['usersnone'] = 'Geen enkele leerling heeft toegang tot deze les';
+$string['viewessayanswers'] = 'Bekijk antwoorden op open vragen';
 $string['viewgrades'] = 'Bekijk de cijfers';
 $string['viewreports'] = 'Bekijk {$a->attempts} voltooide pogingen van {$a->student}';
 $string['viewreports2'] = 'Bekijk {$a} volledige pogingen';

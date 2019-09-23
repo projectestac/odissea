@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choicegroup', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,11 +54,11 @@ $string['choicegroupopen'] = 'Ouvert';
 $string['choicegroupoptions'] = 'Options des choix';
 $string['choicegroupoptions_help'] = 'Vous pouvez spécifier ici les groupes parmi lesquels les participants peuvent choisir.
 
-La liste à gauche affiche tous les groupes et groupements disponibles. Pour ajouter un ou plusieurs groupes, sélectionnez ceux-ci dans la liste et cliquez sur "Ajouter". Pour ajouter tous les groupes d\'un groupement, sélectionnez le groupement et cliquez sur "Ajouter".
+La liste à gauche affiche tous les groupes et groupements disponibles. Pour ajouter un ou plusieurs groupes, sélectionnez ceux-ci dans la liste et cliquez sur « Ajouter ». Pour ajouter tous les groupes d\'un groupement, sélectionnez le groupement et cliquez sur « Ajouter ».
 
 Les groupes sélectionnés apparaissent sur la liste à droite.
 
-Pour supprimer des groupes de la sélection, sélectionnez-les dans la liste à droite et cliquez sur "Supprimer".';
+Pour supprimer des groupes de la sélection, sélectionnez-les dans la liste à droite et cliquez sur « Supprimer ».';
 $string['choicegroup:readresponses'] = 'Lire les réponses';
 $string['choicegroupsaved'] = 'Votre choix a été enregistré';
 $string['choicetext'] = 'Texte';

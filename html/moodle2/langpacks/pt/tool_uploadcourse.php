@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['allowresets'] = 'Permitir reiniciar';
 $string['allowresets_help'] = 'Se o campo reiniciar é aceite ou não';
 $string['cachedef_helper'] = 'Ajudante de caching';
 $string['cannotdeletecoursenotexist'] = 'Não é possível eliminar uma disciplina que não existe';
+$string['cannotforcelang'] = 'Não tem permissão para forçar o idioma para esta disciplina';
 $string['cannotgenerateshortnameupdatemode'] = 'Não é possível gerar um nome curto quando as atualizações são permitidas';
 $string['cannotreadbackupfile'] = 'Não é possível ler o ficheiro da cópia de segurança';
 $string['cannotrenamecoursenotexist'] = 'Não é possível renomear uma disciplina que não existe';
@@ -107,7 +108,7 @@ $string['reset_help'] = 'Define se a disciplina é reiniciada depois de criada/a
 $string['restoreafterimport'] = 'Restaurar depois de importar';
 $string['result'] = 'Resultado';
 $string['rowpreviewnum'] = 'Pré-visualizar linhas';
-$string['rowpreviewnum_help'] = 'Número de linhas do ficheiro CSV que será visualizado na página seguinte. Esta opção existe para limitar o tamanho da página seguinte.';
+$string['rowpreviewnum_help'] = 'Número de linhas do ficheiro CSV que serão visualizadas na página seguinte. Esta opção existe para limitar o tamanho da página seguinte.';
 $string['shortnametemplate'] = 'Modelo para gerar um nome curto';
 $string['shortnametemplate_help'] = 'O nome curto da disciplina é exibido na navegação. Pode usar a sintaxe modelo aqui (%f = fullname, %i = idnumber), ou introduzir um valor inicial que é incrementado.';
 $string['templatefile'] = 'Restaurar a partir deste ficheiro depois do carregamento';

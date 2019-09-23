@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'media', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,13 +29,10 @@ $string['audioextensions'] = 'Audio: {$a}';
 $string['defaultheight'] = 'Alto por defecto';
 $string['defaultwidth'] = 'Ancho por defecto';
 $string['extensions'] = 'Extensiones: {$a}';
-$string['legacyheading'] = 'Reproductores multimedia antiguos';
-$string['legacyheading_desc'] = 'Estos reproductores no se utilizan chabitualmente en la Web y requieren extensiones del navegador que no están habitualmente instaladas.';
 $string['managemediaplayers'] = 'Gestionar reproductores de medios';
 $string['mediaformats'] = 'Reproductores disponibles';
 $string['mediaformats_desc'] = 'Cuando se habilitan reproductores en estas configuraciones, los archivos pueden incrustarse empleando el filtro multimedia (si está habilitado) o mediante un recurso de Archivo o URL con la opción de incrustar. Cuando no están habilitados, estos formatos no son incrustables y los usuarios pueden descargarlos manualmente o seguir las ligas hacia estos recursos.
 
 Cuando dos reproductores soportan el mismo formato, el habilitar ambos aumenta la compatibilidad entre diferentes dispositivos como teléfonos móviles. Es posible aumentar aún más la compatibilidad al proporcionar archivos múltiples en diferentes formatos para cada clip de audio  o video.';
-$string['mediasettings'] = 'Incrustación de multimedia';
 $string['supports'] = 'Soporta';
 $string['videoextensions'] = 'Video: {$a}';

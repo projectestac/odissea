@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_youtube', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_youtube', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,5 +37,5 @@ $string['sortby'] = 'Ταξινόμηση κατά';
 $string['sortpublished'] = 'Ημερομηνία Δημοσίευσης';
 $string['sortrating'] = 'Αξιολόγηση';
 $string['sortrelevance'] = 'Συνάφεια';
-$string['sortviewcount'] = 'Προβολή Πλήθους';
+$string['sortviewcount'] = 'Εμφάνιση Πλήθους';
 $string['youtube:view'] = 'Χρήση του YouTube στον επιλογέα αρχείων';

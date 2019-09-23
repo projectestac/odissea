@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'course', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   course
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aria:courseimage'] = 'コースイメージ';
+$string['aria:coursename'] = 'コース名';
+$string['aria:courseshortname'] = 'コース省略名';
+$string['aria:favourite'] = 'コース星付き';
+$string['favourite'] = '星付きコース';
 $string['privacy:completionpath'] = 'コース完了です。';
+$string['privacy:favouritespath'] = 'コース星付き情報';
 $string['privacy:metadata:completionsummary'] = 'コースはユーザに関する完了情報を含みます。';
+$string['privacy:metadata:favouritessummary'] = 'コースにはユーザにより星が付けられたことに関する情報を含み観ます。';
 $string['privacy:perpage'] = '1ページあたりに表示するコース数です。';

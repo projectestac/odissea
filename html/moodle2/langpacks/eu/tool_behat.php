@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_behat', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['errordataroot'] = '$CFG->behat_dataroot ez dago zehaztuta edo baliogabe
 $string['errorsetconfig'] = 'config.php fitxategian $CFG->behat_dataroot, $CFG->behat_prefix eta $CFG->behat_wwwroot zehaztu behar dira.';
 $string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix eta $CFG->behat_wwwroot balioek $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot eta $CFG->phpunit_prefix balioekiko ezberdinak izan behar dute.';
 $string['fieldvalueargument'] = 'Eremu-balioetako argumentuak';
-$string['fieldvalueargument_help'] = 'Argumentu hau eremu-balio batekin osatu behar da, eremu-mota asko dago, sinpleak laukitxoak, aukera-zerrendak edo testu-eremuak bezalakoak, edo konplexuak datu-hautatzaileak bezalakoak. <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Eremu-balioak</a> egiazta ditzakezu zehazten duzun eremu-motaren arabera espero diren eremu-balioak ikusteko.';
+$string['fieldvalueargument_help'] = 'Argumentu hau eremu-balio batekin osatu behar da. Eremu-mota asko dago, batzuk sinpleak (laukitxoak, aukera-zerrendak edo testu-eremuak bezalakoak) eta konplexuak besteak (datu-hautatzaileak bezalakoak). Ikusi garatzaileentzako dokumentazioa <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a> espero diren eremu-balioen zehaztasun gehiagora ikusteko.';
 $string['giveninfo'] = 'Emandakoa. Ingurunea konfiguratzeko prozesuak.';
 $string['infoheading'] = 'Informazioa';
 $string['installinfo'] = 'Irakurri {$a} instalazio eta proben exekuzioaren informazioa izateko';
@@ -49,7 +49,7 @@ $string['stepsdefinitionstype'] = 'Mota';
 $string['theninfo'] = 'Orduan. Emaitzak espero zirenak direla bermatzeko kontrolak';
 $string['unknownexceptioninfo'] = 'Arazo bat egon da Selenium edo zure nabigatzailearekin. Mesedez, ziurtatu Selenium-eko azken bertsioa erabiltzen ari zarela. Errorea:';
 $string['viewsteps'] = 'Iragazkia';
-$string['wheninfo'] = 'Noiz. Ekitaldi bat abiarazten duten ekintzak';
+$string['wheninfo'] = 'Noiz. Ekitaldi bat abiarazten duen ekintza';
 $string['wrongbehatsetup'] = 'Arazoren bat dago behat-eko konfigurazioarekin eta urratsen definizioak ezin izan dira zerrendatu: <b>{$a->errormsg}</b><br/><br/>Mesedez egiaztatu:<ul>
 <li>$CFG->behat_dataroot, $CFG->behat_prefix eta $CFG->behat_wwwroot parametroak config.php fitxategian $CFG->dataroot, $CFG->prefix eta $CFG->wwwroot parametroen balio ezberdinekin definituta daudela.</li>
 <li>"{$a->behatinit}" zure Moodle-ko jatorrizko karpetatik exekutatu duzula.</li>

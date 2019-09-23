@@ -1,13 +1,7 @@
-// Set image location.
 $breadcrumb-divider: "▶" !default;
 $breadcrumb-divider-rtl: "◀" !default;
-
-// Import font awesome.
-@import "fontawesome/moodle-path";
-@import "fontawesome/font-awesome";
-
-// Import the bootstrap variables.
-@import "bootstrap/bootstrap";
+// Making BS4 Stable compatible with BS4 Alpha for moodle core sass
+@import "moodle/bs4alphacompat";
 
 // Specific overrides to make Bootstrap RTL.
 @import "moodle/bootstrap-rtl";
@@ -22,6 +16,7 @@ $breadcrumb-divider-rtl: "◀" !default;
 @import "moodle/calendar";
 @import "moodle/course";
 @import "moodle/drawer";
+@import "moodle/dashboard";
 @import "moodle/filemanager";
 @import "moodle/message";
 @import "moodle/question";
@@ -43,7 +38,6 @@ $breadcrumb-divider-rtl: "◀" !default;
 @import "moodle/sticky-footer";
 @import "moodle/popover-region";
 @import "moodle/tool_usertours";
-@import "moodle/responsive-tabs";
 @import "moodle/bs2-compat";
 @import "moodle/print";
 @import "moodle/modal";

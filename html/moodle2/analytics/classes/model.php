@@ -111,6 +111,11 @@ class model {
     protected $target = null;
 
     /**
+     * @var \core_analytics\predictor
+     */
+    protected $predictionsprocessor = null;
+
+    /**
      * @var \core_analytics\local\indicator\base[]
      */
     protected $indicators = null;
@@ -336,7 +341,8 @@ class model {
      * @param string $timesplittingid The time splitting method id (its fully qualified class name)
      * @return \core_analytics\model
      */
-    public static function create(\core_analytics\local\target\base $target, array $indicators, $timesplittingid = false) {
+    public static function create(\core_analytics\local\target\base $target, array $indicators,
+                                  $timesplittingid = false, $processor = false) {
         global $USER, $DB;
 
         \core_analytics\manager::check_can_manage_models();
@@ -352,6 +358,14 @@ class model {
         $modelobj->timecreated = $now;
         $modelobj->timemodified = $now;
         $modelobj->usermodified = $USER->id;
+
+        if ($processor &&
+                !self::is_valid($processor, '\core_analytics\classifier') &&
+                !self::is_valid($processor, '\core_analytics\regressor')) {
+            throw new \coding_exception('The provided predictions processor \\' . $processor . '\processor is not valid');
+        } else {
+            $modelobj->predictionsprocessor = $processor;
+        }
 
         $id = $DB->insert_record('analytics_models', $modelobj);
 
@@ -411,9 +425,10 @@ class model {
      * @param int|bool $enabled
      * @param \core_analytics\local\indicator\base[]|false $indicators False to respect current indicators
      * @param string|false $timesplittingid False to respect current time splitting method
+     * @param string|false $predictionsprocessor False to respect current predictors processor value
      * @return void
      */
-    public function update($enabled, $indicators = false, $timesplittingid = '') {
+    public function update($enabled, $indicators = false, $timesplittingid = '', $predictionsprocessor = false) {
         global $USER, $DB;
 
         \core_analytics\manager::check_can_manage_models();
@@ -433,8 +448,14 @@ class model {
             $timesplittingid = $this->model->timesplitting;
         }
 
+        if ($predictionsprocessor === false) {
+            // Respect current value.
+            $predictionsprocessor = $this->model->predictionsprocessor;
+        }
+
         if ($this->model->timesplitting !== $timesplittingid ||
-                $this->model->indicators !== $indicatorsstr) {
+                $this->model->indicators !== $indicatorsstr ||
+                $this->model->predictionsprocessor !== $predictionsprocessor) {
 
             // Delete generated predictions before changing the model version.
             $this->clear();
@@ -458,6 +479,7 @@ class model {
         $this->model->enabled = intval($enabled);
         $this->model->indicators = $indicatorsstr;
         $this->model->timesplitting = $timesplittingid;
+        $this->model->predictionsprocessor = $predictionsprocessor;
         $this->model->timemodified = $now;
         $this->model->usermodified = $USER->id;
 
@@ -477,8 +499,14 @@ class model {
         $this->clear();
 
         // Method self::clear is already clearing the current model version.
-        $predictor = \core_analytics\manager::get_predictions_processor();
-        $predictor->delete_output_dir($this->get_output_dir(array(), true));
+        $predictor = $this->get_predictions_processor(false);
+        if ($predictor->is_ready() !== true) {
+            $predictorname = \core_analytics\manager::get_predictions_processor_name($predictor);
+            debugging('Prediction processor ' . $predictorname . ' is not ready to be used. Model ' .
+                $this->model->id . ' could not be deleted.');
+        } else {
+            $predictor->delete_output_dir($this->get_output_dir(array(), true));
+        }
 
         $DB->delete_records('analytics_models', array('id' => $this->model->id));
         $DB->delete_records('analytics_models_log', array('modelid' => $this->model->id));
@@ -516,7 +544,7 @@ class model {
         $this->heavy_duty_mode();
 
         // Before get_labelled_data call so we get an early exception if it is not ready.
-        $predictor = \core_analytics\manager::get_predictions_processor();
+        $predictor = $this->get_predictions_processor();
 
         $datasets = $this->get_analyser()->get_labelled_data();
 
@@ -608,7 +636,7 @@ class model {
         $outputdir = $this->get_output_dir(array('execution'));
 
         // Before get_labelled_data call so we get an early exception if it is not ready.
-        $predictor = \core_analytics\manager::get_predictions_processor();
+        $predictor = $this->get_predictions_processor();
 
         $datasets = $this->get_analyser()->get_labelled_data();
 
@@ -677,7 +705,7 @@ class model {
 
         // Before get_unlabelled_data call so we get an early exception if it is not ready.
         if (!$this->is_static()) {
-            $predictor = \core_analytics\manager::get_predictions_processor();
+            $predictor = $this->get_predictions_processor();
         }
 
         $samplesdata = $this->get_analyser()->get_unlabelled_data();
@@ -739,6 +767,16 @@ class model {
     }
 
     /**
+     * Returns the model predictions processor.
+     *
+     * @param bool $checkisready
+     * @return \core_analytics\predictor
+     */
+    public function get_predictions_processor($checkisready = true) {
+        return manager::get_predictions_processor($this->model->predictionsprocessor, $checkisready);
+    }
+
+    /**
      * Formats the predictor results.
      *
      * @param array $predictorresult
@@ -757,7 +795,7 @@ class model {
                         // skip it and do nothing with it.
                         debugging($this->model->id . ' model predictions processor could not process the sample with id ' .
                             $sampleinfo[0], DEBUG_DEVELOPER);
-                        continue;
+                        continue 2;
                     case 2:
                         // Prediction processors that do not return a prediction score will have the maximum prediction
                         // score.
@@ -885,7 +923,7 @@ class model {
         }
 
         // Get all samples data.
-        list($sampleids, $samplesdata) = $this->get_analyser()->get_samples($sampleids);
+        list($sampleids, $samplesdata) = $this->get_samples($sampleids);
 
         // Calculate the targets.
         $predictions = array();
@@ -1195,7 +1233,7 @@ class model {
             return $prediction->sampleid;
         }, $predictions);
 
-        list($unused, $samplesdata) = $this->get_analyser()->get_samples($sampleids);
+        list($unused, $samplesdata) = $this->get_samples($sampleids);
 
         $current = 0;
 
@@ -1237,7 +1275,7 @@ class model {
      */
     public function prediction_sample_data($predictionobj) {
 
-        list($unused, $samplesdata) = $this->get_analyser()->get_samples(array($predictionobj->sampleid));
+        list($unused, $samplesdata) = $this->get_samples(array($predictionobj->sampleid));
 
         if (empty($samplesdata[$predictionobj->sampleid])) {
             throw new \moodle_exception('errorsamplenotavailable', 'analytics');
@@ -1457,8 +1495,14 @@ class model {
         \core_analytics\manager::check_can_manage_models();
 
         // Delete current model version stored stuff.
-        $predictor = \core_analytics\manager::get_predictions_processor();
-        $predictor->clear_model($this->get_unique_id(), $this->get_output_dir());
+        $predictor = $this->get_predictions_processor(false);
+        if ($predictor->is_ready() !== true) {
+            $predictorname = \core_analytics\manager::get_predictions_processor_name($predictor);
+            debugging('Prediction processor ' . $predictorname . ' is not ready to be used. Model ' .
+                $this->model->id . ' could not be cleared.');
+        } else {
+            $predictor->clear_model($this->get_unique_id(), $this->get_output_dir());
+        }
 
         $predictionids = $DB->get_fieldset_select('analytics_predictions', 'id', 'modelid = :modelid',
             array('modelid' => $this->get_id()));
@@ -1480,10 +1524,71 @@ class model {
         // 1 db read per context.
         $this->purge_insights_cache();
 
-        $this->model->trained = 0;
+        if (!$this->is_static()) {
+            $this->model->trained = 0;
+        }
+
         $this->model->timemodified = time();
         $this->model->usermodified = $USER->id;
         $DB->update_record('analytics_models', $this->model);
+    }
+
+    /**
+     * Wrapper around analyser's get_samples to skip DB's max-number-of-params exception.
+     *
+     * @param  array  $sampleids
+     * @return array
+     */
+    public function get_samples(array $sampleids): array {
+
+        if (empty($sampleids)) {
+            throw new \coding_exception('No sample ids provided');
+        }
+
+        $chunksize = count($sampleids);
+
+        // We start with just 1 chunk, if it is too large for the db we split the list of sampleids in 2 and we
+        // try again. We repeat this process until the chunk is small enough for the db engine to process. The
+        // >= has been added in case there are other \dml_read_exceptions unrelated to the max number of params.
+        while (empty($done) && $chunksize >= 1) {
+
+            $chunks = array_chunk($sampleids, $chunksize);
+            $allsampleids = [];
+            $allsamplesdata = [];
+
+            foreach ($chunks as $index => $chunk) {
+
+                try {
+                    list($chunksampleids, $chunksamplesdata) = $this->get_analyser()->get_samples($chunk);
+                } catch (\dml_read_exception $e) {
+
+                    // Reduce the chunksize, we use floor() so the $chunksize is always less than the previous $chunksize value.
+                    $chunksize = floor($chunksize / 2);
+                    break;
+                }
+
+                // We can sum as these two arrays are indexed by sampleid and there are no collisions.
+                $allsampleids = $allsampleids + $chunksampleids;
+                $allsamplesdata = $allsamplesdata + $chunksamplesdata;
+
+                if ($index === count($chunks) - 1) {
+                    // We successfully processed all the samples in all chunks, we are done.
+                    $done = true;
+                }
+            }
+        }
+
+        if (empty($done)) {
+            if (!empty($e)) {
+                // Throw the last exception we caught, the \dml_read_exception we have been catching is unrelated to the max number
+                // of param's exception.
+                throw new \dml_read_exception($e);
+            } else {
+                throw new \coding_exception('We should never reach this point, there is a bug in ' .
+                    'core_analytics\\model::get_samples\'s code');
+            }
+        }
+        return [$allsampleids, $allsamplesdata];
     }
 
     /**

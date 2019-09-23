@@ -643,7 +643,7 @@ class core_text {
      *
      * @param string $value Input string
      * @return string Cleaned string value
-     * @since Moodle 3.4.3
+     * @since Moodle 3.5
      */
     public static function remove_unicode_non_characters($value) {
         // Set up list of all Unicode non-characters for fast replacing.

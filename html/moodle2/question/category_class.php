@@ -63,6 +63,19 @@ class question_category_list extends moodle_list {
     public function get_records() {
         $this->records = get_categories_for_contexts($this->context->id, $this->sortby);
     }
+
+    /**
+     * Returns the highest category id that the $item can have as its parent.
+     * Note: question categories cannot go higher than the TOP category.
+     *
+     * @param list_item $item The item which its top level parent is going to be returned.
+     * @return int
+     */
+    public function get_top_level_parent_id($item) {
+        // Put the item at the highest level it can go.
+        $topcategory = question_get_top_category($item->item->contextid, true);
+        return $topcategory->id;
+    }
 }
 
 
@@ -102,18 +115,16 @@ class question_category_list_item extends list_item {
         // Each section adds html to be displayed as part of this list item.
         $questionbankurl = new moodle_url('/question/edit.php', $this->parentlist->pageurl->params());
         $questionbankurl->param('cat', $category->id . ',' . $category->contextid);
-        $catediturl = new moodle_url($this->parentlist->pageurl, array('edit' => $this->id));
         $item = '';
-        $item .= html_writer::tag('b', html_writer::link($catediturl,
-                format_string($category->name, true, array('context' => $this->parentlist->context)),
-                array('title' => $str->edit))) . ' ';
-        $item .= html_writer::link($questionbankurl, '(' . $category->questioncount . ')',
-                array('title' => $editqestions)) . ' ';
+        $text = format_string($category->name, true, ['context' => $this->parentlist->context])
+                . ' (' . $category->questioncount . ')';
+        $item .= html_writer::tag('b', html_writer::link($questionbankurl, $text,
+                        ['title' => $editqestions]) . ' ');
         $item .= format_text($category->info, $category->infoformat,
                 array('context' => $this->parentlist->context, 'noclean' => true));
 
-        // don't allow delete if this is the last category in this context.
-        if (!question_is_only_toplevel_category_in_context($category->id)) {
+        // Don't allow delete if this is the top category, or the last editable category in this context.
+        if ($category->parent && !question_is_only_child_of_top_category_in_context($category->id)) {
             $deleteurl = new moodle_url($this->parentlist->pageurl, array('delete' => $this->id, 'sesskey' => sesskey()));
             $item .= html_writer::link($deleteurl,
                     $OUTPUT->pix_icon('t/delete', $str->delete),
@@ -295,17 +306,19 @@ class question_category_object {
 
     public function edit_single_category($categoryid) {
     /// Interface for adding a new category
-        global $COURSE, $DB;
+        global $DB;
         /// Interface for editing existing categories
-        if ($category = $DB->get_record("question_categories", array("id" => $categoryid))) {
-
+        $category = $DB->get_record("question_categories", array("id" => $categoryid));
+        if (empty($category)) {
+            print_error('invalidcategory', '', '', $categoryid);
+        } else if ($category->parent == 0) {
+            print_error('cannotedittopcat', 'question', '', $categoryid);
+        } else {
             $category->parent = "{$category->parent},{$category->contextid}";
             $category->submitbutton = get_string('savechanges');
             $category->categoryheader = $this->str->edit;
             $this->catform->set_data($category);
             $this->catform->display();
-        } else {
-            print_error('invalidcategory', '', '', $categoryid);
         }
     }
 
@@ -389,7 +402,8 @@ class question_category_object {
     /**
      * Creates a new category with given params
      */
-    public function add_category($newparent, $newcategory, $newinfo, $return = false, $newinfoformat = FORMAT_HTML) {
+    public function add_category($newparent, $newcategory, $newinfo, $return = false, $newinfoformat = FORMAT_HTML,
+            $idnumber = null) {
         global $DB;
         if (empty($newcategory)) {
             print_error('categorynamecantbeblank', 'question');
@@ -404,6 +418,16 @@ class question_category_object {
             }
         }
 
+        if ((string) $idnumber === '') {
+            $idnumber = null;
+        } else if (!empty($contextid)) {
+            // While this check already exists in the form validation, this is a backstop preventing unnecessary errors.
+            if ($DB->record_exists('question_categories',
+                    ['idnumber' => $idnumber, 'contextid' => $contextid])) {
+                $idnumber = null;
+            }
+        }
+
         $cat = new stdClass();
         $cat->parent = $parentid;
         $cat->contextid = $contextid;
@@ -412,6 +436,9 @@ class question_category_object {
         $cat->infoformat = $newinfoformat;
         $cat->sortorder = 999;
         $cat->stamp = make_unique_id_code();
+        if ($idnumber) {
+            $cat->idnumber = $idnumber;
+        }
         $categoryid = $DB->insert_record("question_categories", $cat);
 
         // Log the creation of this category.
@@ -432,7 +459,8 @@ class question_category_object {
     /**
      * Updates an existing category with given params
      */
-    public function update_category($updateid, $newparent, $newname, $newinfo, $newinfoformat = FORMAT_HTML) {
+    public function update_category($updateid, $newparent, $newname, $newinfo, $newinfoformat = FORMAT_HTML,
+            $idnumber = null) {
         global $CFG, $DB;
         if (empty($newname)) {
             print_error('categorynamecantbeblank', 'question');
@@ -440,7 +468,7 @@ class question_category_object {
 
         // Get the record we are updating.
         $oldcat = $DB->get_record('question_categories', array('id' => $updateid));
-        $lastcategoryinthiscontext = question_is_only_toplevel_category_in_context($updateid);
+        $lastcategoryinthiscontext = question_is_only_child_of_top_category_in_context($updateid);
 
         if (!empty($newparent) && !$lastcategoryinthiscontext) {
             list($parentid, $tocontextid) = explode(',', $newparent);
@@ -465,6 +493,16 @@ class question_category_object {
             }
         }
 
+        if ((string) $idnumber === '') {
+            $idnumber = null;
+        } else if (!empty($tocontextid)) {
+            // While this check already exists in the form validation, this is a backstop preventing unnecessary errors.
+            if ($DB->record_exists('question_categories',
+                    ['idnumber' => $idnumber, 'contextid' => $tocontextid])) {
+                $idnumber = null;
+            }
+        }
+
         // Update the category record.
         $cat = new stdClass();
         $cat->id = $updateid;
@@ -473,6 +511,9 @@ class question_category_object {
         $cat->infoformat = $newinfoformat;
         $cat->parent = $parentid;
         $cat->contextid = $tocontextid;
+        if ($idnumber) {
+            $cat->idnumber = $idnumber;
+        }
         if ($newstamprequired) {
             $cat->stamp = make_unique_id_code();
         }

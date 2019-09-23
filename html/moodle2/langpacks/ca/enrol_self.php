@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_self', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,6 +65,8 @@ $string['expirymessageenrollerbody'] = 'L\'autoinscripció al curs \'{$a->course
 
 Per estendre la inscripció, aneu a  {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notificació de venciment d\'autoinscripció.';
+$string['expirynotifyall'] = 'A l\'usuari inscrit i a qui fa les inscripcions';
+$string['expirynotifyenroller'] = 'Només a l\'usuari que fa les inscripcions';
 $string['groupkey'] = 'Utilitza les claus d\'inscripció del grup';
 $string['groupkey_desc'] = 'Utilitza les claus d\'inscripció de grup per defecte.';
 $string['groupkey_help'] = 'A més a més de restringir l\'accés  al curs a únicament a qui coneix la clau, l\'ús d\'una clau d\'inscripció de grup possibilita que els usuaris s\'afegixin a grups concrets de forma automàtica quan s\'inscriuen al curs.

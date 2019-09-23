@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'カテゴリを追加する';
 $string['addcomment'] = 'コメントを追加する';
 $string['addentry'] = '新しいエントリを追加する';
 $string['addingcomment'] = 'コメントを追加する';
@@ -107,6 +108,7 @@ $string['defaultsortkey'] = 'デフォルトの並べ替えキー';
 $string['defaultsortorder'] = 'デフォルトの並べ替え順';
 $string['definition'] = '定義';
 $string['definitions'] = '定義';
+$string['deletecategory'] = 'カテゴリを削除する';
 $string['deleteentry'] = 'エントリを削除する';
 $string['deleteentrya'] = 'エントリを削除する: {$a}';
 $string['deletenotenrolled'] = '登録されていないユーザのエントリを削除する';
@@ -141,6 +143,7 @@ $string['duplicateentry'] = '重複エントリ';
 $string['editalways'] = '常に編集を許可する';
 $string['editalways_help'] = 'ここでは学生が常にエントリを編集できるか、または設定された時間内 (通常30分) 編集できるか指定することができます。';
 $string['editcategories'] = 'カテゴリを編集する';
+$string['editcategory'] = 'カテゴリを編集する';
 $string['editentry'] = 'エントリを編集する';
 $string['editentrya'] = 'エントリを編集する: {$a}';
 $string['editingcomment'] = 'コメントの編集';
@@ -154,6 +157,7 @@ $string['entrydeleted'] = 'エントリが削除されました。';
 $string['entryexported'] = 'エントリが正常にエクスポートされました。';
 $string['entryishidden'] = '( このエントリは現在非表示にされています)';
 $string['entryleveldefaultsettings'] = 'エントリレベルのデフォルト設定';
+$string['entrylink'] = 'エントリリンク: {$a}';
 $string['entrysaved'] = 'このエントリが保存されました。';
 $string['entryupdated'] = 'このエントリが更新されました。';
 $string['entryusedynalink'] = 'このエントリを自動的にリンクさせる';

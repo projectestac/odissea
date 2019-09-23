@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcached', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,7 @@ nomeserver:porta:peso
 Se viene utilizzata l\'impostazione *Abilita server in cluster*, allora nell\'elenco dovrà essere presente un solo server, in genere il nome o l\'IP della macchina locale come ad esempio 127.0.0.1 oppure localhost.';
 $string['sessionhandlerconflict'] = 'Attenzione: l\'istanza memcached ({$a}) è stata configurata per usare lo stesso server memcached usato per le sessioni. Lo svuotamento delle cache provocherà anche l\'eliminazione delle sessioni.';
 $string['setservers'] = 'Set server';
-$string['setservers_help'] = 'L\'elenco dei server da aggiornare quando i dati della cache vengono modificati. In genere il nome qualificato di ciascun server appartenentre al pool di load balancing.
+$string['setservers_help'] = 'L\'elenco dei server da aggiornare quando i dati della cache vengono modificati. In genere il nome qualificato di ciascun server appartenente al pool.
 E\' **obbligatorio** inserire anche il server indicato sopra nella impostazione **Server**, anche usando un nome host diverso.
 Ogni riga deve contenere un solo server con, opzionalmente, la porta.
 Se la porta non viene indicata sarà usata la porta di default  (11211).

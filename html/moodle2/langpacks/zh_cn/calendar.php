@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendar', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -144,7 +144,6 @@ $string['export'] = '导出';
 $string['exportbutton'] = '导出';
 $string['exportcalendar'] = '导出日历';
 $string['exporthelp'] = '我如何从Google/Outlook/其他的日历应用程序中订阅该日历呢？';
-$string['for'] = '时段';
 $string['forcecalendartype'] = '强制日历';
 $string['fri'] = '周五';
 $string['friday'] = '星期五';

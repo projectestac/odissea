@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_statistics', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,6 +103,7 @@ $string['quizname'] = 'Nome quiz';
 $string['quizoverallstatistics'] = 'Statistiche complessive quiz';
 $string['quizstructureanalysis'] = 'Analisi struttura quiz';
 $string['random_guess_score'] = 'Indice delle risposte date a caso';
+$string['rangebetween'] = '{$a->min} − {$a->max}';
 $string['recalculatenow'] = 'Ricalcola ora';
 $string['reportsettings'] = 'Impostazioni di calcolo delle statistiche';
 $string['response'] = 'Risposta data';
@@ -118,4 +119,5 @@ $string['statisticsreportgraph'] = 'Statistiche sulla posizione delle domande';
 $string['statistics:view'] = 'Visualizzare report statistici';
 $string['statsfor'] = 'Statistiche quiz (per {$a})';
 $string['variant'] = 'Variante';
+$string['viewanalysis'] = 'Visualizza dettagli';
 $string['whichtries'] = 'Analizza le risposte per';

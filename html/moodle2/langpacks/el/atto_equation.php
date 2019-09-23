@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_equation', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_equation', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_equation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['librarygroup1'] = 'Τελεστές';
 $string['librarygroup1_desc'] = 'TeX εντολές που αναφέρονται στην καρτέλα τελεστών.';
 $string['librarygroup2'] = 'Βέλη';
 $string['librarygroup2_desc'] = 'TeX εντολές που αναφέρονται στην καρτέλα με τα βέλη.';
-$string['librarygroup3'] = 'Ελληνικά  σύμβολα';
+$string['librarygroup3'] = 'Ελληνικά σύμβολα';
 $string['librarygroup3_desc'] = 'TeX εντολές που αναφέρονται στην καρτέλα με τα ελληνικά σύμβολα.';
 $string['librarygroup4'] = 'Για προχωρημένους';
 $string['librarygroup4_desc'] = 'TeX εντολές που αναφέρονται στην καρτέλα για προχωρημένους.';

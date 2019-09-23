@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_meta', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['coursesort'] = 'Trier la liste des cours';
 $string['coursesort_help'] = 'Ce réglage détermine si la liste des cours est triée suivant l\'ordre de tri par défaut (défini dans la Gestion des cours et catégories de l\'administration) ou alphabétiquement.';
 $string['creategroup'] = 'Créer un groupe';
 $string['defaultgroupnametext'] = 'Cours {$a->name} {$a->increment}';
+$string['enrolmetasynctask'] = 'Synchronisation des méta-inscriptions';
 $string['linkedcourse'] = 'Lier le cours';
 $string['meta:config'] = 'Configurer les instances de méta-inscription';
 $string['meta:selectaslinked'] = 'Sélectionner le cours comme méta-cours';

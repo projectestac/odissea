@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'edufields', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'edufields', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   edufields
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,7 +70,7 @@ $string['field1020103'] = 'Programação';
 $string['field1020105'] = 'Teoria da Informática';
 $string['field1020107'] = 'Compiler Construção';
 $string['field1020109'] = 'Algoritmos';
-$string['field1020111'] = 'Estruturas de Dados';
+$string['field1020111'] = 'Estruturas de dados';
 $string['field1020113'] = 'Redes e Comunicações';
 $string['field1020115'] = 'Gráfica Informática';
 $string['field1020117'] = 'Sistemas Operativos';
@@ -78,7 +78,7 @@ $string['field1020119'] = 'Inteligência Artificial';
 $string['field1020199'] = 'Ciência Informática (Outros)';
 $string['field10203'] = 'Sistemas de informação';
 $string['field1020301'] = 'Modelagem Conceptual';
-$string['field1020303'] = 'Gestão de Base de Dados';
+$string['field1020303'] = 'Gestão de Base de dados';
 $string['field1020305'] = 'Desenho e análise de sistemas';
 $string['field1020307'] = 'Sistemas de apoio à decisão';
 $string['field1020399'] = 'Sistemas de informação (Outros)';

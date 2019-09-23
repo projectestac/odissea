@@ -43,23 +43,24 @@ Y.extend(ANNOTATIONSTAMP, M.assignfeedback_editpdf.annotation, {
      */
     draw: function() {
         var drawable = new M.assignfeedback_editpdf.drawable(this.editor),
-            drawingregion = this.editor.get_dialogue_element(SELECTOR.DRAWINGREGION),
+            drawingcanvas = this.editor.get_dialogue_element(SELECTOR.DRAWINGCANVAS),
             node,
             position;
 
         position = this.editor.get_window_coordinates(new M.assignfeedback_editpdf.point(this.x, this.y));
         node = Y.Node.create('<div/>');
+        node.addClass('annotation');
+        node.addClass('stamp');
         node.setStyles({
             'position': 'absolute',
             'display': 'inline-block',
             'backgroundImage': 'url(' + this.editor.get_stamp_image_url(this.path) + ')',
             'width': (this.endx - this.x),
             'height': (this.endy - this.y),
-            'backgroundSize': '100% 100%',
-            'zIndex': 50
+            'backgroundSize': '100% 100%'
         });
 
-        drawingregion.append(node);
+        drawingcanvas.append(node);
         node.setX(position.x);
         node.setY(position.y);
         drawable.store_position(node, position.x, position.y);
@@ -96,14 +97,15 @@ Y.extend(ANNOTATIONSTAMP, M.assignfeedback_editpdf.annotation, {
         position = this.editor.get_window_coordinates(new M.assignfeedback_editpdf.point(bounds.x, bounds.y));
 
         node = Y.Node.create('<div/>');
+        node.addClass('annotation');
+        node.addClass('stamp');
         node.setStyles({
             'position': 'absolute',
             'display': 'inline-block',
             'backgroundImage': 'url(' + this.editor.get_stamp_image_url(edit.stamp) + ')',
             'width': bounds.width,
             'height': bounds.height,
-            'backgroundSize': '100% 100%',
-            'zIndex': 50
+            'backgroundSize': '100% 100%'
         });
 
         drawingregion.append(node);

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lesson', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,7 +119,6 @@ $string['completiontimespent'] = 'Lo studente deve stare nell\'attività per alm
 $string['completiontimespentdesc'] = 'Lo studente deve rimanere nella lezione per almeno {$a}';
 $string['completiontimespentgroup'] = 'Tempo minimo';
 $string['conditionsfordependency'] = 'Condizione(i) di dipendenza';
-$string['configactionaftercorrectanswer'] = 'L\'azione da eseguire per default dopo una risposta corretta';
 $string['configintro'] = 'I valori impostati in questa pagina determinano i valori di default che saranno utilizzati quando si crea un\'attiivtà lezione. Le impostazioni indicate cone avanzate saranno visualizzate quand si fa click su "Visualizza più elementi\'.';
 $string['configmaxanswers'] = 'Default per il numero max. di risposte per pagina';
 $string['configmediaclose'] = 'Visualizza il pulsante chudi nella finestra finestra popup contenente un collegamento a file multimediale';
@@ -248,7 +247,7 @@ $string['gradeis'] = 'Il voto è {$a}';
 $string['gradeoptions'] = 'Opzioni per la valutazione';
 $string['groupoverrides'] = 'Personalizzazioni di gruppo';
 $string['groupoverridesdeleted'] = 'Eliminata personalizzazione di gruppo';
-$string['groupsnone'] = 'In questo corso non ci sono gruppi';
+$string['groupsnone'] = 'Non ci sono gruppi dove puoi accedere.';
 $string['handlingofretakes'] = 'Valutazione delle ripetizioni';
 $string['handlingofretakes_help'] = 'Se è consentito ripetere la lezione, è possibile impostare il calcolo della valutazione: voto medio dei tentativi o voto migliore.';
 $string['havenotgradedyet'] = 'Non sono state ancora valutate.';
@@ -397,6 +396,7 @@ $string['ongoingcustom'] = 'Finora hai ottenuto {$a->score} punti su {$a->curren
 $string['ongoing_help'] = 'Su ciascuna pagina sarà visualizzato il punteggio ottenuto dallo studente rispetto al punteggio totale.';
 $string['ongoingnormal'] = 'Hai risposto correttamente a {$a->correct} domande su {$a->viewed} tentativi.';
 $string['onpostperpage'] = 'Solo un inserimento per ciascun voto';
+$string['openafterclose'] = 'Hai specificato una data di apertura successiva alla data di chiusura';
 $string['options'] = 'Opzioni';
 $string['or'] = 'OR';
 $string['ordered'] = 'Ordinato';
@@ -538,7 +538,7 @@ $string['studentoutoftimeforreview'] = 'Attenzione: se fuori il tempo massimo pe
 $string['studentresponse'] = 'Risposta di {$a}';
 $string['submit'] = 'Invia';
 $string['submitname'] = 'Inserisci il nome';
-$string['teacherjumpwarning'] = 'In questa lezione stai utilizzando un salto a {$a->cluster} o un salto a {$a->unseen}.  Sarà invece utilizzato il salto alla Pagina seguente. Per verificare i salti devi collegarti con il ruolo di studente.';
+$string['teacherjumpwarning'] = 'Stai utilizzando un salto a {$a->cluster} o un salto a {$a->unseen}.  Sarà invece utilizzato il salto alla Pagina seguente. Per verificare i salti devi collegarti con il ruolo di studente.';
 $string['teacherongoingwarning'] = 'Durante lo svolgimento della lezione il punteggio ottenuto viene visualizzato solo agli studenti. Esegui il Login come studente per verificare tale punteggio';
 $string['teachertimerwarning'] = 'Il timer funziona solamente per gli studenti. Prova il timer facendo il login come studente.';
 $string['thatsthecorrectanswer'] = 'Risposta corretta';

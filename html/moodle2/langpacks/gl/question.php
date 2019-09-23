@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'question', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['cannotdeletecate'] = 'Non pode eliminar esa categoría porque é a cate
 $string['cannotdeleteneededbehaviour'] = 'Non pode eliminar o comportamento da pregunta «{$a}». Hai outros comportamentos instalados que dependen del.';
 $string['cannotdeleteqtypeinuse'] = 'Non pode eliminar o tipo de pregunta «{$a}». Hai preguntas deste tipo no banco de preguntas.';
 $string['cannotdeleteqtypeneeded'] = 'Non pode eliminar o tipo de pregunta «{$a}». Hai outros tipos de preguntas instalados que dependen del.';
+$string['cannotdeletetopcat'] = 'Non se poden eliminar as principais categorías.';
+$string['cannotedittopcat'] = 'Non se poden editar as principais categorías.';
 $string['cannotenable'] = 'Non se pode crear directamente o tipo de pregunta {$a}.';
 $string['cannotenablebehaviour'] = 'Non se pode usar directamente o tipo de comportamento {$a}. Soamente para uso interno.';
 $string['cannotfindcate'] = 'Non se puido atopar o rexistro da categoría';
@@ -194,6 +196,7 @@ $string['filesareacourse'] = 'a área de ficheiros do curso';
 $string['filesareasite'] = 'a área de ficheiros do sitio';
 $string['filestomove'] = 'Mover / copiar ficheiros a {$a}?';
 $string['fillincorrect'] = 'Cubrir nas respostas correctas';
+$string['filterbytags'] = 'Filtrar por etiquetas...';
 $string['firsttry'] = 'Primeiro intento';
 $string['flagged'] = 'Marcado';
 $string['flagthisquestion'] = 'Marcar esta pregunta';
@@ -293,6 +296,7 @@ $string['noprobs'] = 'Non se atoparon problemas na súa base de datos de pregunt
 $string['noquestions'] = 'Non se atoparon preguntas que poidan exportarse. Asegúrese de ter seleccionada unha categoría que exportar que conteña as preguntas.';
 $string['noquestionsinfile'] = 'Non hai preguntas no ficheiro de importación';
 $string['noresponse'] = '[Sen resposta]';
+$string['notagfiltersapplied'] = 'Non se aplicaron filtros de etiquetas';
 $string['notanswered'] = 'Non respondida';
 $string['notchanged'] = 'Sen cambios desde o último intento';
 $string['notenoughanswers'] = 'Este tipo de pregunta require cando menos {$a} respostas';
@@ -315,7 +319,7 @@ $string['page-question-import'] = 'Páxina de importación da pregunta';
 $string['page-question-x'] = 'Calquera páxina da pregunta';
 $string['parent'] = 'Pai';
 $string['parentcategory'] = 'Categoría principal';
-$string['parentcategory_help'] = 'A categoría de pai é aquela na que se colocará a categoría nova. "Superior" significa que esta categoría non é contida por ningunha outra categoría. Os contextos de categoría amósanse en letra grosa. Debe de haber cando menos unha categoría en cada contexto.';
+$string['parentcategory_help'] = 'A categoría de pai é aquela na que se colocará a categoría nova. «Superior» significa que esta categoría non é contida por ningunha outra categoría. Os contextos de categoría amósanse en letra grosa. Debe de haber cando menos unha categoría en cada contexto.';
 $string['parentcategory_link'] = 'pregunta/categoría';
 $string['parenthesisinproperclose'] = 'Paréntese anterior ** non se pechou apropiadamente en {$a}**';
 $string['parenthesisinproperstart'] = 'Paréntese anterior ** non se abriu apropiadamente en {$a}**';
@@ -371,6 +375,7 @@ $string['questionbehavioursorderexplained'] = 'Introduza unha lista separada por
 $string['questioncategory'] = 'Categoría de pregunta';
 $string['questioncatsfor'] = 'Categorías de pregunta para «{$a}»';
 $string['questiondoesnotexist'] = 'Esta pregunta non existe';
+$string['questionformtagheader'] = '{$a} etiquetas';
 $string['questionidmismatch'] = 'Os id da pregunta non coinciden';
 $string['questionname'] = 'Nome da pregunta';
 $string['questionnamecopy'] = '{$a} (copia)';
@@ -383,6 +388,7 @@ $string['questionsinuse'] = '(* As preguntas marcadas cun asterisco xa se usan n
 $string['questionsmovedto'] = 'As preguntas que aínda se usan que se moveron a «{$a}» na categoría pai do curso.';
 $string['questionsrescuedfrom'] = 'As preguntas gardadas desde o contexto {$a}.';
 $string['questionsrescuedfrominfo'] = 'Estas preguntas (algunha das cales poden estar agochadas) gardáronse cando se eliminou o contexto {$a} porque aínda se usan nalgunhas probas ou outras actividades.';
+$string['questiontags'] = 'Etiquetas de preguntas';
 $string['questiontext'] = 'Texto da pregunta';
 $string['questiontype'] = 'Tipo de pregunta';
 $string['questionuse'] = 'Use a pregunta nesta actividade';
@@ -392,6 +398,7 @@ $string['requiresgrading'] = 'Require cualificación';
 $string['responsehistory'] = 'Historial de contestación';
 $string['restart'] = 'Comezar outra vez';
 $string['restartwiththeseoptions'] = 'Comezar outra vez con estas opcións';
+$string['restoremultipletopcats'] = 'O ficheiro de copia de seguridade contén máis dunha categoría de preguntas de nivel superior para o contexto {$a}.';
 $string['reviewresponse'] = 'Revisar a contestación';
 $string['rightanswer'] = 'Resposta correcta';
 $string['rightanswer_help'] = 'un resumo coa contestación correcta xerado automaticamente. Isto pode ser insuficiente, así que quizais queira dar unha explicación da solución correcta no comentario xeral da pregunta, e apagar esta opción.';
@@ -437,6 +444,7 @@ $string['technicalinfostate'] = 'Estado da pregunta: {$a}';
 $string['technicalinfovariant'] = 'Variante da pregunta: {$a}';
 $string['tofilecategory'] = 'Escribir a categoría no ficheiro';
 $string['tofilecontext'] = 'Escribir o contexto no ficheiro';
+$string['topfor'] = 'Superior para {$a}';
 $string['uninstallbehaviour'] = 'Desinstalar este comportamento de pregunta.';
 $string['uninstallqtype'] = 'Desinstalar este tipo de pregunta.';
 $string['unknown'] = 'Descoñecido';

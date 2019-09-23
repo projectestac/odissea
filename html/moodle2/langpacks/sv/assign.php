@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assign', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,7 +103,6 @@ $string['batchsetallocatedmarker'] = 'Definiera tilldelning av bedömare för {$
 $string['batchsetmarkingworkflowstateforusers'] = 'Definiera arbetsflöde för {$a} selected user(s).';
 $string['blindmarking'] = 'Anonym rättning';
 $string['blindmarking_help'] = 'Anonym rättning döljer identiteten på de elever som rättas. Inställningen Anonym rättning kommer att vara låst så snart en inlämning eller en rättning gjorts i relation till denna inlämningsuppgift.';
-$string['changegradewarning'] = 'Denna inlämningsuppgift har betygssatta inlämningar och ändring av betyg kommer inte automatiskt att beräkna om betyg för befintliga inlämningar. Du måste betygssätta alla inlämningar på nytt om du vill ändra betyg.';
 $string['changeuser'] = 'Gå till en annan användare';
 $string['choosegradingaction'] = 'Betygssättningsåtgärd';
 $string['choosemarker'] = 'Välj ...';

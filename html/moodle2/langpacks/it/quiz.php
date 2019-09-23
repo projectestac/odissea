@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,6 +82,7 @@ $string['answers'] = 'Risposte';
 $string['answersingleno'] = 'Risposta fornita';
 $string['answersingleyes'] = 'Una sola risposta';
 $string['answertoolong'] = 'Risposta troppo lunga dopo la linea {$a} (255 caratteri max)';
+$string['anytags'] = 'Qualsiasi tag';
 $string['aon'] = 'Formato AON';
 $string['areyousureremoveselected'] = 'Confermi la rimozione delle domande selezionate?';
 $string['asshownoneditscreen'] = 'Come visualizzato sulla pagina di modifica';
@@ -101,6 +102,7 @@ $string['attemptsallowed'] = 'Tentativi permessi';
 $string['attemptsdeleted'] = 'Tentativi eliminati';
 $string['attemptselection'] = 'Scegli quali tentativi analizzare:';
 $string['attemptsexist'] = 'Non puoi più aggiungere o eliminare domande.';
+$string['attempts_help'] = 'Il numero massimo consentito di tentativi (non è il numero di tentativi aggiuntivi).';
 $string['attemptsnum'] = 'Tentativi: {$a}';
 $string['attemptsnumthisgroup'] = 'Tentativi: {$a->total} ({$a->group} da questo gruppo)';
 $string['attemptsnumyourgroups'] = 'Tentativi: {$a->total} ({$a->group} dai tuoi gruppi)';
@@ -339,6 +341,7 @@ $string['eventreportviewed'] = 'Visualizzato report quiz';
 $string['everynquestions'] = 'Ogni {$a} domande';
 $string['everyquestion'] = 'Ogni domanda';
 $string['everythingon'] = 'Tutto su';
+$string['existingcategory'] = 'Categoria esistente';
 $string['exportcategory'] = 'esporta categoria';
 $string['exporterror'] = 'Si è verificato  un errore durante il processo di esportazione';
 $string['exportingquestions'] = 'Le domande sono in esportazione';
@@ -392,7 +395,7 @@ $string['grademethod_help'] = 'Quando sono consentiti più tentativi di risposta
 $string['gradesdeleted'] = 'Valutazioni quiz cancellate';
 $string['gradesofar'] = '<b>{$a->method}: {$a->mygrade} / {$a->quizgrade}</b>.';
 $string['gradetopassmustbeset'] = 'La sufficienza non può essere zero poiché il completamento del quiz è impostato per richiedere la sufficienza. Per favore imposta un valore diverso da zero.';
-$string['gradetopassnotset'] = 'Il quiz non ha una sufficienza impostata e quindi non è possibile utilizzare questa opzione. E\' possibile utilizzare "Lo studente deve ricevere una valutazione".';
+$string['gradetopassnotset'] = 'Il quiz non ha una sufficienza impostata. E\' possibile impostarla nella sezione "Valutazione" delle impostazioni del quiz.';
 $string['gradingdetails'] = 'Punteggi di questo invio: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Tenendo conto delle penalità  precedenti, questo dà  <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Questo invio ha ricevuto una penalità  di {$a}.';
@@ -488,7 +491,7 @@ E\' possibile usare il quiz per:
 * brevi test su dispense di studio o alla termine di un argomento
 * pratica di esami usando domande provenienti da esami di anni precedenti
 * dare un feedback sulla performance
-* auto valutazione';
+* autovalutazione';
 $string['modulenameplural'] = 'Quiz';
 $string['moveselectedonpage'] = 'Sposta le domande selezionate a pagina: {$a}';
 $string['multichoice'] = 'Risposta multipla';
@@ -683,7 +686,7 @@ $string['quizavailable'] = 'Il quiz è disponibile fino a: {$a}';
 $string['quizclose'] = 'Chiusura';
 $string['quizclosed'] = 'Il quiz è stato chiuso il {$a}';
 $string['quizcloses'] = 'Chiusura';
-$string['quizcloseson'] = 'Questo quiz chiuderà {$a}';
+$string['quizcloseson'] = 'Il quiz chiuderà il {$a}';
 $string['quiz:deleteattempts'] = 'Eliminare tentativi dei quiz';
 $string['quiz:emailconfirmsubmission'] = 'Ricevere conferma via email all\'invio';
 $string['quiz:emailnotifysubmission'] = 'Ricevere notifica via email all\'invio di tentativi';
@@ -691,7 +694,7 @@ $string['quiz:emailwarnoverdue'] = 'Ricevere una notifica quando è scaduto il t
 $string['quizeventcloses'] = '{$a} chiude';
 $string['quizeventopens'] = '{$a} apre';
 $string['quiz:grade'] = 'Valutare i quiz manualmente';
-$string['quiz:ignoretimelimits'] = 'Ignorare tempo massimo sui quiz';
+$string['quiz:ignoretimelimits'] = 'Ignorare tempo massimo del quiz';
 $string['quizisclosed'] = 'Questo quiz è chiuso';
 $string['quizisclosedwillopen'] = 'Il quiz è chiuso (apre il {$a})';
 $string['quizisopen'] = 'Questo quiz è aperto';
@@ -718,10 +721,15 @@ $string['quiz:viewreports'] = 'Visualizzare report sui quiz';
 $string['quizwillopen'] = 'Questo quiz sarà aperto il {$a}';
 $string['random'] = 'Domanda casuale';
 $string['randomcreate'] = 'Crea Domande casuali';
+$string['randomediting'] = 'Modifica domanda casuale';
 $string['randomfromcategory'] = 'Domande casuali dalla categoria:';
 $string['randomfromexistingcategory'] = 'Domanda random da una categoria esistente';
+$string['randomfromunavailabletag'] = '{$a} (non disponibile)';
 $string['randomnosubcat'] = 'Domande presenti in questa categoria, escluse le sotto categorie.';
 $string['randomnumber'] = 'Numero di domande casuali';
+$string['randomquestion'] = 'Domanda casuale';
+$string['randomquestion_help'] = 'Le domande casuali consentono di inserire domande scelte casualmente da una categoria o in base a tag presenti in una attività.';
+$string['randomquestiontags'] = 'Tag';
 $string['randomquestionusinganewcategory'] = 'Domanda random da una nuova categoria';
 $string['randomwithsubcat'] = 'Domande presenti in questa categoria, incluse le sotto categorie.';
 $string['readytosend'] = 'Stai per inviare l\'intero quiz per la valutazione. Sei sicuro di voler continuare?';

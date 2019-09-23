@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'wiki', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -235,7 +235,7 @@ $string['privacy:metadata:wiki_versions:version'] = 'Versionsnummer';
 $string['rated'] = 'Ihre Bewertung der Seite: {$a}';
 $string['rating'] = 'Bewertung';
 $string['ratingmode'] = 'Bewertungsmodus';
-$string['removeallwikitags'] = 'Alle Wiki-Schlagwörter löschen';
+$string['removeallwikitags'] = 'Alle Wiki-Tags löschen';
 $string['removepages'] = 'Seiten löschen';
 $string['reparsetimeout'] = 'Standard-Timeout setzen';
 $string['repeatedsection'] = 'Wikifehler: Name \'{$a}\' kann nicht doppelt verwendet werden';
@@ -258,7 +258,7 @@ $string['searchwikis'] = 'Wiki durchsuchen';
 $string['special'] = 'Spezial';
 $string['tableofcontents'] = 'Inhaltsübersicht';
 $string['tagarea_wiki_pages'] = 'Wikiseiten';
-$string['tagsdeleted'] = 'Wiki-Schlagwörter wurden gelöscht';
+$string['tagsdeleted'] = 'Wiki-Tags wurden gelöscht';
 $string['teacherrating'] = 'Trainerwertung';
 $string['timesrating'] = 'Diese Seite wurde {$a->c}-mal bewertet, u.z. mit einem Mittelwert {$a->s}';
 $string['updatedpages'] = 'Aktualisierte Seiten';

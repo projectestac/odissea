@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'webservice', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,7 +108,7 @@ $string['functions'] = '関数';
 $string['generalstructure'] = '全体構造';
 $string['information'] = '情報';
 $string['installexistingserviceshortnameerror'] = '省略名「 {$a} 」のウェブサービスはすでに存在します。この省略名を使った異なるウェブサービスをインストール/アップグレードすることはできません。';
-$string['installserviceshortnameerror'] = 'コーディングエラー: サービス省略名「 {$a} 」には数字、文字および「_-.. 」のみ含むことができます。';
+$string['installserviceshortnameerror'] = 'コーディングエラー: サービス省略名「 {$a} 」には半角英数字 (文字および数字)、アンダースコア (_)、ハイフン (-) またはフルストップ (.) のみ含むことができます。';
 $string['invalidextparam'] = '無効な外部APIパラメータ: {$a}';
 $string['invalidextresponse'] = '無効な外部APIレスポンス: {$a}';
 $string['invalidiptoken'] = '無効なトークン - あなたのIPはサポートされていません。';
@@ -144,7 +144,7 @@ $string['postrestparam'] = ' RESTのPHPコード (POSTリクエスト)';
 $string['potusers'] = '未認証ユーザ';
 $string['potusersmatching'] = '合致する未認証ユーザ';
 $string['print'] = 'すべてをプリントする';
-$string['privacy:metadata:serviceusers'] = '特定の外部サービスを利用することのできるユーザの一覧です。';
+$string['privacy:metadata:serviceusers'] = '特定の外部サービスを利用できるユーザの一覧です。';
 $string['privacy:metadata:serviceusers:iprestriction'] = 'サービスの使用を制限するIPです。';
 $string['privacy:metadata:serviceusers:timecreated'] = 'レコードが作成された日時です。';
 $string['privacy:metadata:serviceusers:userid'] = 'ユーザのIDです。';

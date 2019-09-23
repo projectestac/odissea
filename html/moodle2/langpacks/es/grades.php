@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'grades', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -207,7 +207,7 @@ $string['editverbose'] = 'Editar {$a->category} {$a->itemmodule} {$a->itemname}'
 $string['enableajax'] = 'Habilitar AJAX';
 $string['enableajax_help'] = 'Agrega una capa de funcionalidad AJAX al informe del calificador, simplificando y agilizando las operaciones comunes. Depende de que Javascript esté activado en el navegador del usuario.';
 $string['enableoutcomes'] = 'Habilitar resultados';
-$string['enableoutcomes_help'] = 'Apoyo para los Resultados (también conocidos como \'competencias\', \'objetivos\', \'estándars\' o \'criterios\'). Significa que calificamos usando una o más escalas que están conectadas a las declaraciones de resultados. La activación de los resultados posibilita esta forma especial de calificación en todo el sitio.';
+$string['enableoutcomes_help'] = 'Si se habilita, los ítems de calificación pueden ser calificados usando una o más escalas ligadas a declaraciones de resultados.';
 $string['encoding'] = 'Codificación';
 $string['errorcalculationbroken'] = 'Probablemente una referencia circular o una fórmula de cálculo errónea';
 $string['errorcalculationnoequal'] = 'La fórmula debe comenzar por el signo \'igual\' (=1+2)';
@@ -588,10 +588,9 @@ $string['outcomestandard'] = 'Resultado disponible';
 $string['outcomestandard_help'] = '<p>Un resultado estándar esta disponible globalmente en el sitio, para todos los cursos.</p>';
 $string['overallaverage'] = 'Promedio general';
 $string['overridden'] = 'Anuladas';
-$string['overridden_help'] = '<p>Cuando este activa, la bandera de anuladas previene intentos futuros de ajustar
-   automáticamente el valor de la calificación. Esta bandera es generalmente fijada
-   de forma interna por el libro de calificaciones, pero puede ser conmutada manualmente
-   a encendida o apagada usando este elemento en el formulario.</p>';
+$string['overridden_help'] = 'Si se activa, la calificación no podrá ser cambiada dentro de la actividad relacionada.
+
+Cuando se edita una calificación dentro del informe del calificador, la casilla de anulación se activa automáticamente. Sin embargo, se puede desactivar para permitir que la calificación se pueda cambiar por medio de la actividad relacionada.';
 $string['overriddennotice'] = 'La calificación final de esta actividad ha sido ajustada manualmente.';
 $string['overridecat'] = 'Permitir que la categoría de calificaciones sea anulada manualmente';
 $string['overridecat_help'] = 'Deshabilitar esta opción hace que sea imposible para los usuarios modificar la categoría de calificaciones.';
@@ -624,17 +623,16 @@ $string['prefletters'] = 'Letras de calificación y límites';
 $string['prefrows'] = 'Filas especiales';
 $string['prefshow'] = 'Mostrar/ocultar conmutadores';
 $string['previewrows'] = 'Previsualizar filas';
+$string['privacy:request:historyactiondelete'] = 'Eliminar';
 $string['profilereport'] = 'Informe de perfil de usuario';
 $string['profilereport_help'] = 'Informe de calificaciones usado en la página del perfil del usuario.';
 $string['publishing'] = 'Publicando';
 $string['publishingoptions'] = 'Opciones de publicación de calificaciones';
 $string['quickfeedback'] = 'Retroalimentación rápida';
 $string['quickgrading'] = 'Calificación rápida';
-$string['quickgrading_help'] = '<p>La calificación rápida agrega un elemento de entrada de texto en cada celda
-   de calificación en el informe del calificador, permitiéndole editar varias
-   calificaciones al mismo tiempo. Usted puede luego hacer clic en el botón de
-   <b>Actualizar</b> para realizar todos estos cambios de una vez, en lugar de
-    uno a la vez.</p>';
+$string['quickgrading_help'] = 'Si se habilita, cuando se activa la edición, aparece una caja para introducir texto para cada calificación, lo que permite editar varias calificaciones al mismo tiempo. Los cambios son guardados y resaltados cuando se hace clic en el botón para actualizar.
+
+Observe que cuando edita una calificación dentro del informe del calificador, se activa un indicador de sobreescritura que indica que esta calificación ya no podrá ser cambiada desde la actividad misma.';
 $string['range'] = 'Rango';
 $string['rangedecimals'] = 'Rango de puntos decimales';
 $string['rangedecimals_help'] = 'El número de puntos decimales a mostrar para rango';
@@ -736,7 +734,9 @@ $string['showonlyactiveenrol_help'] = 'Este ajuste determina si sólo los usuari
 $string['showpercentage'] = 'Mostrar porcentaje';
 $string['showpercentage_help'] = '¿Mostrar el porcentaje de cada ítem de calificación.?';
 $string['showquickfeedback'] = 'Mostrar retroalimentación rápida';
-$string['showquickfeedback_help'] = 'La Retroalimentación Rápida agrega un ítem de texto a cada celda de calificación en el informe del calificador, permitiéndole editar los comentarios de muchas calificaciones a la vez. Puede entonces hacer clic en el botón Actualizar para ejecutar todos estos cambios de una vez en lugar de hacerlo uno a uno.';
+$string['showquickfeedback_help'] = 'Si se habilita, cuando se activa la edición, aparece una caja con bordes punteados para introducir texto para cada calificación, lo que permite introducir comentarios para varias calificaciones al mismo tiempo. Los cambios son guardados y resaltados cuando se hace clic en el botón para actualizar.
+
+Observe que cuando edita un comentario de retroalimentación dentro del informe del calificador, se activa un indicador de sobreescritura que indica que ese comentario ya no podrá ser cambiado desde la actividad misma.';
 $string['showrange'] = 'Mostrar rangos';
 $string['showrange_help'] = '¿Mostrar la columna de rangos?';
 $string['showranges'] = 'Mostrar rangos';

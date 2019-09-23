@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_completion_progress', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   block_completion_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['completion_progress:overview'] = 'Δείτε την επισκόπηση μαθημάτων της Προόδου Ολοκλήρωσης για όλους τους μαθητές';
 $string['coursenametoshow'] = 'Όνομα μαθήματος που θα εμφανίζεται στο Ταμπλό';
 $string['fullname'] = 'Πλήρες όνομα μαθήματος';
+$string['now_indicator'] = 'ΤΩΡΑ';
+$string['overview'] = 'Επισκόπηση μαθητών';
+$string['pluginname'] = 'Πρόοδος ολοκλήρωσης';
+$string['progress'] = 'Πρόοδος';
+$string['progressbar'] = 'Πρόοδος ολοκλήρωσης';
+$string['shortname'] = 'Σύντομο όνομα μαθήματος';
+$string['showallinfo'] = 'Εμφάνιση όλων των πληροφοριών';
+$string['showinactive'] = 'Εμφάνιση ανενεργών μαθητών στην επισκόπηση';
+$string['submitted'] = 'Υποβλήθηκε';
+$string['submittednotcomplete_colour'] = '#FFCC00';
+$string['time_expected'] = 'Αναμενόμενο';

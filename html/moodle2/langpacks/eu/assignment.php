@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['assignmentdisabled'] = 'Heredatutako "Zeregina 2.2" jarduera desgaituta
 $string['assignment:exportownsubmission'] = 'Esportatu norberaren bidalketa';
 $string['assignment:exportsubmission'] = 'Esportatu bidalketa';
 $string['assignment:grade'] = 'Zeregina kalifikatu';
-$string['assignmentneedsupgrade'] = 'Zaharkitutako "Zeregina 2.2" jarduera desgaitu egin da. Mesedez eskatu zure guneko kudeatzaileari zereginak eguneratzeko tresna exekutatzeko gune honetako  zaharkitutako zeregin guztiak eguneratzeko.';
+$string['assignmentneedsupgrade'] = 'Zaharkitutako "Zeregina 2.2" jarduera ezabatua izan da.';
 $string['assignment:submit'] = 'Bidali zeregina';
 $string['assignment:view'] = 'Ikusi zeregina';
 $string['messageprovider:assignment_updates'] = 'Zereginen jakinarazpenak (2.2)';
@@ -61,4 +61,3 @@ $string['privacy:metadata:assignment_submissions:timemodified'] = 'Zeregin-bidal
 $string['privacy:metadata:assignment_submissions:userid'] = 'Zeregin-bidalketa egin duen erabiltzailearen IDa.';
 $string['privacy:submissionpath'] = 'bidalketa';
 $string['upgradenotification'] = 'Jarduera hau zeregin modulu zaharrarekin eginda dago.';
-$string['viewassignmentupgradetool'] = 'Ikusi zeregina eguneratzeko tresna';

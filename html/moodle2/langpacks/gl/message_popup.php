@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_popup', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'message_popup', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   message_popup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Notificación emerxente';
+$string['pluginname'] = 'Web';
 $string['privacy:metadata'] = 'O engadido de mensaxería web non almacena ningún dato persoal.';

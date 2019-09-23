@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,7 +76,7 @@ $string['cannotreply'] = 'Du kan inte svara på det här inlägget.';
 $string['cannotsplit'] = 'Diskussioner från det här forumet går inte att dela upp.';
 $string['cannotsubscribe'] = 'Du måste tyvärr vara en gruppmedlem för att prenumerera.';
 $string['cannottrack'] = 'Det gick inte att avaktivera spårning av detta forum. ';
-$string['cannotunsubscribe'] = 'Det gick inte att ta bort Din prenumeration på detta forum. ';
+$string['cannotunsubscribe'] = 'Det gick inte att ta bort din prenumeration på detta forum.';
 $string['cannotupdatepost'] = 'Du kan inte uppdatera det här inlägget.';
 $string['cannotviewpostyet'] = 'Du kan inte läsa de andras frågor i det här diskussionsämnet ännu eftersom du inte har gjort något eget inlägg.';
 $string['cannotviewusersposts'] = 'Det finns inga inlägg gjorda av denna användare som du kan visa.';
@@ -112,7 +112,7 @@ $string['configtrackreadposts'] = 'Ställ in detta till \'Ja\' om Du vill spåra
 $string['configusermarksread'] = 'Om \'Ja\' så måste användare manuellt markera ett inlägg som läst. Om \'Nej\' så markeras inlägget som läst när det visas.';
 $string['confirmsubscribe'] = 'Vill Du verkligen prenumerera på forumet \'{$a}\'?';
 $string['confirmsubscribediscussion'] = 'Vill du verkligen prenumerera på diskussionen \'{$a->discussion}\' i forumet \'{$a->forum}\' ?';
-$string['confirmunsubscribe'] = 'Vill Du verkligen avbryta prenumerationen på forumet \'{$a}\'?';
+$string['confirmunsubscribe'] = 'Vill du verkligen avbryta prenumerationen på forumet \'{$a}\'?';
 $string['confirmunsubscribediscussion'] = 'Vill du verkligen avbeställa din prenumeration på \'{$a->diskussion}\' i forum \'{$a->forum}\'?';
 $string['couldnotadd'] = 'Det gick inte att lägga till Ditt inlägg på grund av okänt fel.';
 $string['couldnotdeletereplies'] = 'Tyvärr, det kan inte tas bort eftersom folk redan har svarat på det.';
@@ -177,9 +177,6 @@ $string['edit'] = 'Redigera';
 $string['editedby'] = 'Redigerad av  {$a->name} - {$a->date}';
 $string['editedpostupdated'] = '{$a}\'s inlägg uppdaterades';
 $string['editing'] = 'Redigering';
-$string['emaildigest_0'] = 'Du kommer att få en e- post per forumsinlägg';
-$string['emaildigest_1'] = 'Du kommer att få ett sammanställt e- post per dag som innehåller hela innehållet i varje forumsinlägg.';
-$string['emaildigest_2'] = 'Du kommer att få ett sammanställt e- post per dag som innehåller ämnet i varje forumsinlägg.';
 $string['emaildigestcompleteshort'] = 'Hela inlägg';
 $string['emaildigestdefault'] = 'Standard ({$a})';
 $string['emaildigestoffshort'] = 'Ingen sammanställning';
@@ -411,8 +408,6 @@ $string['postbymailsuccess'] = 'Ditt inlägg med ämnet "{$a->subject}" har publ
 $string['postbymailsuccess_html'] = 'Ditt <a href="{$a->discussionurl}">inlägg</a> med ämnet "{$a->subject}" har publicerats.';
 $string['postbyuser'] = '{$a->post} av {$a->user}';
 $string['postincontext'] = 'Se detta inlägg i sitt sammanhang';
-$string['postmailinfo'] = 'Detta är en kopia på ett meddelande inlagt på {$a} webbplats.
-För att lägga till Ditt svar via webbplatsen, klicka på denna länk:';
 $string['postmailinfolink'] = 'Detta är en kopia av ett meddelande i   {$a->coursename}.
 
 Klicka på länken för att svara: {$a->replylink}';

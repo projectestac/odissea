@@ -48,9 +48,23 @@ form {
     display: none;
 }
 
-.mform .fitem .fitemtitle div {
-    display: inline;
+// MDL-63512 Override to handle issues in clean where the video styling is off.
+.mform .fitem .fitemtitle {
+    & > div:not(.mediaplugin) div {
+        display: inline;
+    }
+
+    // MDL-64450 Override for videos so they don't appear off the screen.
+    .mediaplugin > div {
+        margin: 0;
+    }
 }
+
+// Reduce the mediaplugin width when using inside forms.
+.que.match .mediaplugin {
+    width: 50vw;
+}
+
 #adminsettings .error,
 .loginpanel .error,
 .mform .error {
@@ -162,7 +176,9 @@ form {
 #page-mod-forum-search .c1 {
     .form-horizontal .controls
 }
-
+.form-inline label:not(.sr-only):not(.accesshide) + select {
+    margin-left: 0.5rem;
+}
 
 .formsettingheading {
     .form-horizontal .help-block
@@ -518,9 +534,8 @@ select.form-autocomplete-original-select {
 
 .form-autocomplete-downarrow {
     color: @textColor;
-    position: relative;
-    top: -0.3em;
-    left: -1.5em;
+    top: 0.2rem;
+    right: 0.5rem;
     cursor: pointer;
 }
 

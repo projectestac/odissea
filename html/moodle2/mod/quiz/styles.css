@@ -614,6 +614,12 @@ table.quizreviewsummary td.cell {
     border-bottom: lightgrey solid 0.2em;
 }
 
+#page-mod-quiz-report tr.quiz_statistics-summaryrow td.cell {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-top: none;
+}
+
 /** Mod quiz edit **/
 #page-mod-quiz-edit .statusbar {
     margin: 0.6em 0.4em;
@@ -952,7 +958,7 @@ table.quizreviewsummary td.cell {
     background: #e4e4e4;
 }
 
-#categoryquestions > tbody > tr:nth-of-type(even).highlight {
+#categoryquestions > tbody > tr.highlight {
     background-color: #afa;
 }
 
@@ -1184,11 +1190,9 @@ table#categoryquestions {
     display: none;
 }
 
-#page-mod-quiz-edit.select-multiple .mod-quiz-edit-content .section-heading,
+#page-mod-quiz-edit.select-multiple .mod-quiz-edit-content .section-heading a,
 #page-mod-quiz-edit.select-multiple .mod-quiz-edit-content .section-heading form,
-#page-mod-quiz-edit.select-multiple .mod-quiz-edit-content .section-heading .instancesectioncontainer,
-#page-mod-quiz-edit.select-multiple .mod-quiz-edit-content .section-heading .instanceshufflequestions,
-#page-mod-quiz-edit.select-multiple .mod-quiz-edit-content .section-heading .instancesectioncontainer h3 {
+#page-mod-quiz-edit.select-multiple .mod-quiz-edit-content .section-heading .instanceshufflequestions {
     display: none;
 }
 

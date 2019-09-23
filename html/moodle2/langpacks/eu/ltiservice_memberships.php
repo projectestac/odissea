@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_memberships', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'ltiservice_memberships', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   ltiservice_memberships
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allow'] = 'Erabili zerbitzu hau erabiltzaileen informazioa pribatutasun ezarpenen arabera eskuratzeko';
+$string['ltiservice_memberships'] = 'IMS LTIko partaidetza:';
+$string['ltiservice_memberships_help'] = 'Baimendu erremintari ikastaroko erabiltzaileen informazioa eskuratzea IMS LTI Partaidetza Zerbitzua erabilita. Pribatutasun ezarpenak aplikatuko dira.';
+$string['notallow'] = 'Ez erabili zerbitzu hau';
 $string['pluginname'] = 'LTI zerbitzuko partaideak';
 $string['privacy:metadata:email'] = 'LTI kontsumitzailea erabiltzen duen erabiltzailearen e-posta helbidea.';
 $string['privacy:metadata:externalpurpose'] = 'Informazio hau bidaltzen da kanpoko LTI hornitzaile bati.';
@@ -32,5 +36,5 @@ $string['privacy:metadata:firstname'] = 'LTI kontsumitzailea erabiltzen duen era
 $string['privacy:metadata:fullname'] = 'LTI kontsumitzailea erabiltzen duen erabiltzailearen izen osoa.';
 $string['privacy:metadata:lastname'] = 'LTI kontsumitzailea erabiltzen duen erabiltzailearen abizena.';
 $string['privacy:metadata:userid'] = 'LTI kontsumitzailea erabiltzen duen erabiltzailearen IDa.';
-$string['privacy:metadata:useridnumber'] = 'LTI kontsumitzailea erabiltzen duen erabiltzailearen ID zenbakia.';
+$string['privacy:metadata:useridnumber'] = 'LTI kontsumitzailea erabiltzen duen erabiltzailearen ID zenbakia';
 $string['servicename'] = 'Partaideak';

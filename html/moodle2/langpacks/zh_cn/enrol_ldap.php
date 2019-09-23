@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_ldap', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,6 +107,7 @@ $string['role_mapping_key'] = '从LDAP映射角色';
 $string['roles'] = '角色映射';
 $string['server_settings'] = 'LDAP服务器设置';
 $string['synccourserole'] = '== 正在同步课程“{$a->idnumber}”中的“{$a->role_shortname}”角色';
+$string['syncenrolmentstask'] = '同步LDAP招生任务';
 $string['template'] = '可选：自动创建的课程可以从一个模板课程复制各种设置';
 $string['template_key'] = '模板';
 $string['unassignrole'] = '取消用户“{$a->user_username}”在课程“{$a->course_shortname}”（id {$a->course_id}）的“{$a->role_shortname}”角色';

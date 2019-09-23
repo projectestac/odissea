@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'chat', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = 'Laster txat-saioak dituzu';
-$string['ajax'] = 'Ajax erabiltzen duen bertsioa';
+$string['ajax'] = 'AJAX erabiltzen duen bertsioa';
 $string['autoscroll'] = 'Korritze automatikoa';
 $string['beep'] = 'Abisua';
 $string['bubble'] = 'Burbuila';
@@ -45,11 +45,11 @@ $string['chattime'] = 'Hurrengo txat-saioaren ordua';
 $string['chat:view'] = 'Ikusi txateko aktibitatea';
 $string['compact'] = 'Trinkoa';
 $string['composemessage'] = 'Idatzi mezua';
-$string['configmethod'] = 'AJAX bidezko txat-metodoak AJAX bidezko txat-interfazea ematen du, aldiro konektatzen da zerbitzariarekin eguneraketak egiteko. Txataren ohiko metodoan erabiltzaileek aldiro konektatzen dute zerbitzariarekin eguneraketak egiteko. Ez du konfiguraziorik behar eta edonon funtzionatzen du baina zerbitzaria gainkarga dezake gelan erabiltzaile asko aldi berean ari badira. Zerbitzariko \'daemon\'a erabiltzeak Unixerako shell sarbidea eskatzen du, baina txat-giro arinago eta lorgarriagoa ematen du.';
+$string['configmethod'] = 'AJAX bidezko txat-metodoak AJAX bidezko txat-interfazea ematen du, zerbitzariarekin eguneraketak egiteko aldiro konektatzen dena. Txataren ohiko metodoa erabilita erabiltzaileek aldiro konektatzen dute zerbitzariarekin eguneraketak egiteko. Ez du konfiguraziorik behar eta edonon funtzionatzen du, baina zerbitzaria gainkarga dezake erabiltzaile asko aldi berean txateatzen ari badira. Zerbitzariko \'daemon\'a erabiltzeak Unixerako shell sarbidea eskatzen du, baina txat-giro arinago eta lorgarriagoa ematen du.';
 $string['confignormalupdatemode'] = 'HTTP 1.1ren <em>Keep-Alive</em> ezaugarria erabilita zerbitzatzen dira normalean txat-gelaren eguneraketak baina zerbitzariarentzat nahikoa gogorra da lan hau. Erabiltzaileei eguneraketak bidaltzeko metodo aurreratuagoa da <em>Stream</em> estrategia erabiltzea. <em>Stream</em> erabilita eskalamendu hobea lortzen da (chatd metodoaren antzekoa da) baina agian zure zerbitzariak ez du onartuko aukera hau.';
-$string['configoldping'] = 'Jarduerarik gabe zenbat denbora (segundutan) igarota pentsatu behar da erabiltzaileak utzi egin duela?';
-$string['configrefreshroom'] = 'Zenbat segunduro freskatu behar da txataren orria? Balio baxuak elkarrizketa arinagoa ahalbidetuko du, baina zerbitzariarentzat karga handia izan daiteke gelan lagun asko dagoenean. <em>Stream</em> eguneratzeak erabiltzen ari bazara freskatze-maiztasun handiagoak jarri ditzakezu -- 2 jartzen saiatu zaitez.';
-$string['configrefreshuserlist'] = 'Zenbat segunduro eguneratu behar da txatean dauden erabiltzaileen zerrenda?';
+$string['configoldping'] = 'Jarduerarik gabe zenbat denbora (segundoetan) igarota pentsatu behar da erabiltzaileak utzi egin duela?';
+$string['configrefreshroom'] = 'Zenbat segundoero freskatu behar da txataren orria? Balio baxuak elkarrizketa arinagoa ahalbidetuko du, baina zerbitzariarentzat karga handia izan daiteke gelan lagun asko dagoenean. <em>Stream</em> eguneratzeak erabiltzen ari bazara freskatze-maiztasun handiagoak jarri ditzakezu -- 2 jartzen saiatu zaitez.';
+$string['configrefreshuserlist'] = 'Zenbat segundoero eguneratu behar da txatean dauden erabiltzaileen zerrenda?';
 $string['configserverhost'] = 'Zerbitzariaren \'daemon\'a (egikaritza prozesu independentea) dagoen ordenagailuaren \'Hostame\'a (etxekoaren izena)';
 $string['configserverip'] = '\'hostame\'aren (etxekoaren izena) baliokidea den IP zenbakizko helbidea';
 $string['configservermax'] = 'Gehinenezko erabiltzaile kopurua';
@@ -66,8 +66,8 @@ $string['errornousers'] = 'Ezin topatu erabiltzailerik!';
 $string['eventmessagesent'] = 'Mezua bidali da';
 $string['eventsessionsviewed'] = 'Saioak ikusi dira';
 $string['explaingeneralconfig'] = 'Ezarpen hauek <strong>beti</strong> daude indarrean';
-$string['explainmethoddaemon'] = 'Egokitzapen hauek chat_method -en "Daemon txat zerbitzaria" aukeratu baduzu <strong>bakarrik</strong> daude indarrean';
-$string['explainmethodnormal'] = 'Egokitzapen hauek chat_method -en "Metodo arrunta" aukeratu baduzu <strong>bakarrik</strong> daude indarrean';
+$string['explainmethoddaemon'] = 'Egokitzapen hauek soilik dute eragina \'Daemon txat zerbitzaria\' txat-metodoa aukeratu baduzu.';
+$string['explainmethodnormal'] = 'Egokitzapen hauek soilik dute eragina txat-metodo \'Arrunta\' aukeratu baduzu.';
 $string['generalconfig'] = 'Ezarpen orokorrak';
 $string['idle'] = 'Abian jarri gabe';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa txatetan';
@@ -86,9 +86,9 @@ $string['messageexit'] = '{$a} irten egin da gelatik';
 $string['messages'] = 'Mezuak';
 $string['messageyoubeep'] = 'Zure soinua: {$a}';
 $string['method'] = 'Txat metodoa';
-$string['methodajax'] = 'Ajax metodoa';
+$string['methodajax'] = 'AJAX';
 $string['methoddaemon'] = 'Txat zerbitzariaren \'daemon\'a';
-$string['methodnormal'] = 'Metodo arrunta';
+$string['methodnormal'] = 'Arrunta';
 $string['modulename'] = 'Txat-gela';
 $string['modulename_help'] = 'Txat moduluak parte hartzaileak testu bidez denbora errealean eztabaida sinkronoak egitea ahalbidetzen du.
 
@@ -132,7 +132,7 @@ $string['privacy:metadata:chat_users:version'] = 'Erabiltzailea txatera sartu ze
 $string['privacy:metadata:messages'] = 'Txat-saioan zehar mezuak grabatu eta bidali dira.';
 $string['privacy:metadata:messages:issystem'] = 'Ea mezua sistemak sortu ote duen.';
 $string['privacy:metadata:messages:message'] = 'Mezua';
-$string['privacy:metadata:messages:timestamp'] = 'Mezua bidali deneko denbora.';
+$string['privacy:metadata:messages:timestamp'] = 'Mezua bidali zeneko unea.';
 $string['privacy:metadata:messages:userid'] = 'Mezua idatzi duen egilearen erabiltzaile IDa';
 $string['refreshroom'] = 'Freskatu gela';
 $string['refreshuserlist'] = 'Freskatu erabiltzaileen zerrenda';

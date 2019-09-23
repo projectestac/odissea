@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_self', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ Los siguientes marcadores pueden incluirse en el mensaje:
 * Nombre completo del usuario {$a->fullname}';
 $string['defaultrole'] = 'Asignación de rol por defecto';
 $string['defaultrole_desc'] = 'Seleccione el rol que debe asignarse a los usuarios con auto-matriculación';
+$string['deleteselectedusers'] = 'Eliminar las matrículas de usuario seleccionadas';
+$string['editselectedusers'] = 'Editar las matrículas de usuario seleccionadas';
 $string['enrolenddate'] = 'Fecha límite';
 $string['enrolenddate_help'] = 'Si está habilitado, los usuarios pueden matricularse a si mismos solo hasta esta fecha ';
 $string['enrolenddaterror'] = 'La fecha final de matriculación no puede ser anterior a la fecha inicial';
@@ -65,6 +67,8 @@ $string['expirymessageenrollerbody'] = 'La auto-matriculación en el curso \'{$a
 
 Para extender su inscripción, vaya a {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notificación de expiración del periodo de auto-matrícula';
+$string['expirynotifyall'] = 'Persona que matricula y usuario matriculado';
+$string['expirynotifyenroller'] = 'Persona que matricula solamente';
 $string['groupkey'] = 'Clave de matriculación del grupo de usuarios';
 $string['groupkey_desc'] = 'Por defecto, utilice claves de matriculación de grupo.';
 $string['groupkey_help'] = 'Además de restringir el acceso al curso a sólo aquellos que conocen la clave, el uso de una clave de acceso de grupo significa que los usuarios se agregan automáticamente al grupo cuando se inscriben en el curso.

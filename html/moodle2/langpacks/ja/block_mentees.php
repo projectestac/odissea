@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_mentees', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'ブロックタイトル';
-$string['configtitleblankhides'] = 'ブロックタイトル (空白の場合、タイトルなし)';
-$string['leaveblanktohide'] = '空白の場合、タイトルを隠す';
+$string['configtitle'] = 'メンティブロックタイトル';
+$string['configtitleblankhides'] = 'メンティブロックタイトル (空白の場合、タイトルなし)';
 $string['mentees:addinstance'] = '新しいメンティブロックを追加する';
 $string['mentees:myaddinstance'] = '新しいメンティブロックをダッシュボードに追加する';
 $string['newmenteesblock'] = '(新しいメンティブロック)';

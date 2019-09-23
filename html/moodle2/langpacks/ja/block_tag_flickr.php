@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_flickr', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tag_flickr', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tag_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'タイトル';
+$string['configtitle'] = 'Flickrブロックタイトル';
 $string['date-posted-asc'] = '投稿日の昇順';
 $string['date-posted-desc'] = '投稿日の降順';
 $string['date-taken-asc'] = '撮影日の昇順';

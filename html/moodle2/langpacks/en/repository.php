@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['addplugin'] = 'Add a repository plugin';
 $string['allowexternallinks'] = 'Allow external links';
 $string['areacategoryintro'] = 'Category introduction';
 $string['areacourseintro'] = 'Course introduction';
-$string['areacourseoverviewfiles'] = 'Course summary files';
+$string['areacourseoverviewfiles'] = 'Course image';
 $string['areamainfile'] = 'Main file';
 $string['arearoot'] = 'System';
 $string['areauserbackup'] = 'User backup';
@@ -51,7 +51,7 @@ $string['back'] = 'Back';
 $string['backtodraftfiles'] = 'Back to draft files manager';
 $string['cachecleared'] = 'Cached files are removed';
 $string['cacheexpire'] = 'Cache expire';
-$string['cannotaccessparentwin'] = 'If parent window is on HTTPS, then we are not allowed to access window.opener object, so we cannot refresh the repository for you automatically, but we already got your session, just go back to file picker and select the repository again, it should work now.';
+$string['cannotaccessparentwin'] = 'When using HTTPS, the repository is not refreshed automatically. Instead, you need to return to the file picker and select the repository again.';
 $string['cannotdelete'] = 'Cannot delete this file.';
 $string['cannotdownload'] = 'Cannot download this file';
 $string['cannotdownloaddir'] = 'Cannot download this folder';
@@ -65,8 +65,8 @@ $string['configallowexternallinks'] = 'This option enables all users to choose w
 $string['configcacheexpire'] = 'The amount of time that file listings are cached locally (in seconds) when browsing external repositories.';
 $string['configgetfiletimeout'] = 'Timeout in seconds for downloading an external file into Moodle.';
 $string['configsaved'] = 'Configuration saved!';
-$string['configsyncfiletimeout'] = 'Timeout in seconds for syncronising the external file size.';
-$string['configsyncimagetimeout'] = 'Timeout in seconds for downloading an image file from external repository during syncronisation.';
+$string['configsyncfiletimeout'] = 'Timeout in seconds for synchronising the external file size.';
+$string['configsyncimagetimeout'] = 'Timeout in seconds for downloading an image file from external repository during synchronisation.';
 $string['confirmdelete'] = 'Are you sure you want to delete the repository {$a}? If you choose "Continue and download", file references to external contents will be downloaded to Moodle. This could take a long time to process.';
 $string['confirmdeletefile'] = 'Are you sure you want to delete this file?';
 $string['confirmdeletefilewithhref'] = 'Are you sure you want to delete this file? There are {$a} alias/shortcut files that use this file as their source. If you proceed then those aliases will be converted to true copies.';
@@ -113,7 +113,7 @@ $string['entername'] = 'Please enter folder name';
 $string['enternewname'] = 'Please enter the new file name';
 $string['error'] = 'An unknown error occurred!';
 $string['errordoublereference'] = 'Unable to overwrite file with a shortcut/alias because shortcuts to this file already exist.';
-$string['errornotyourfile'] = 'You cannot pick file which is not added by your';
+$string['errornotyourfile'] = 'You can only pick files which you added.';
 $string['errorpostmaxsize'] = 'The file you tried to upload is too large for the server to process.';
 $string['erroruniquename'] = 'Repository instance name should be unique';
 $string['errorwhilecommunicatingwith'] = 'Error while communicating with the repository \'{$a}\'.';
@@ -146,7 +146,7 @@ $string['instancesforusers'] = '{$a} User private instance(s)';
 $string['invalidfiletype'] = '{$a} filetype cannot be accepted.';
 $string['invalidjson'] = 'Invalid JSON string';
 $string['invalidparams'] = 'Invalid parameters';
-$string['invalidplugin'] = 'Invalid repository {$a} plug-in';
+$string['invalidplugin'] = 'Invalid repository {$a} plugin';
 $string['invalidrepositoryid'] = 'Invalid repository ID';
 $string['isactive'] = 'Active?';
 $string['keyword'] = 'Keyword';
@@ -190,7 +190,7 @@ $string['original'] = 'Original';
 $string['overwrite'] = 'Overwrite';
 $string['overwriteall'] = 'Overwrite all';
 $string['path'] = 'Path';
-$string['plugin'] = 'Repository plug-ins';
+$string['plugin'] = 'Repository plugins';
 $string['pluginerror'] = 'Errors in repository plugin.';
 $string['pluginname'] = 'Repository plugin name';
 $string['pluginnamehelp'] = 'If you leave this empty the default name will be used.';
@@ -198,7 +198,7 @@ $string['popup'] = 'Click "Login" button to log in';
 $string['popupblockeddownload'] = 'The downloading window is blocked, please allow the popup window, and try again.';
 $string['preview'] = 'Preview';
 $string['privacy:metadata:repository'] = 'The Repository component stores the repository types within the core subsystem.';
-$string['privacy:metadata:repository_instances'] = 'The Repository plug-ins component stores user repository instances data within the core subsystem.';
+$string['privacy:metadata:repository_instances'] = 'The Repository plugins component stores user repository instances data within the core subsystem.';
 $string['privacy:metadata:repository_instances:name'] = 'The custom name of the repository instance.';
 $string['privacy:metadata:repository_instances:password'] = 'The optional password configured for the repository instance.';
 $string['privacy:metadata:repository_instances:timecreated'] = 'The date/time of creation for the repository instance.';

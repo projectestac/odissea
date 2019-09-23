@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_private_files', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_private_files', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   block_private_files
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Archivos privados';
+$string['privacy:metadata'] = 'El Bloque de Archivos privados solamente proporciona una vista de, y un enlace hacia, los archivos privados del usuario.';
 $string['privatefiles'] = 'Archivos privados';
 $string['private_files:addinstance'] = 'Añadir un nuevo bloque de archivos privados';
 $string['private_files:myaddinstance'] = 'Añadir un nuevo bloque de archivos privados del usuario al Área personal';

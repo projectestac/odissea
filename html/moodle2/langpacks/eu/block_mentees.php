@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_mentees', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,11 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'Blokearen izenburua';
-$string['configtitleblankhides'] = 'Blokearen izenburua (zuriz uzteko ez idatzi izenbururik)';
-$string['leaveblanktohide'] = 'Utzi zuri izenburua ezkutatzeko';
+$string['configtitle'] = 'Mentees blokearen izenburua';
+$string['configtitleblankhides'] = 'Mentees blokearen izenburua (hutsik utziz gero izenbururik ez)';
 $string['mentees:addinstance'] = 'Gehitu mentees bloke berria';
 $string['mentees:myaddinstance'] = 'Gehitu mentees bloke berria aginte-panelean';
 $string['newmenteesblock'] = '(Mentees bloke berria)';
 $string['pluginname'] = 'Mentees';
-$string['privacy:metadata'] = 'Mentees blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
+$string['privacy:metadata'] = 'Mentees blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';

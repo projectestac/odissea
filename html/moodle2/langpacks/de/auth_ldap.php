@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_ldap', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,15 +55,15 @@ $string['auth_ldap_expiration_warning_key'] = 'Ablaufwarnung';
 $string['auth_ldap_expireattr_desc'] = 'Optional: Überschreibt die LDAP-Attribute, die das Ablaufdatum für Kennwörter enthalten.';
 $string['auth_ldap_expireattr_key'] = 'Ablaufmerkmal';
 $string['auth_ldapextrafields'] = 'Die folgenden Felder sind optional. Im Nutzerprofil können automatisch einige Moodle-Felder mit ausgewählten Nutzerdaten aus <b>LDAP-Feldern</b> vorbelegt werden. <p>Wenn Sie die nachfolgenden Einträge leer lassen, wird nichts von LDAP übertragen und die Moodle-Voreinstellungen werden verwendet. In diesem Fall muss das Nutzerprofil beim ersten Login selbst fertig ausgefüllt werden.</p> <p>Zusätzlich wird eingestellt, welche Felder im Nutzerprofil bearbeitbar sein sollen.</p>';
-$string['auth_ldap_graceattr_desc'] = 'Optional: Merkmal für GraceLogin ändern';
+$string['auth_ldap_graceattr_desc'] = 'Optional: GraceLogin-Attribut überschreiben';
 $string['auth_ldap_gracelogin_key'] = 'Merkmal für GraceLogin';
-$string['auth_ldap_gracelogins_desc'] = 'LDAP-GraceLogin aktivieren. Wenn das Gültigkeitsende von Kennwörtern erreicht ist, können sich die Nutzer/innen noch solange weiter einloggen, bis der GraceLogin-Zähler den Wert 0 hat. Nach dem Aktivieren der Einstellung wird eine GraceLogin-Mitteilung angezeigt, sobald die Gültigkeitsende erreicht ist.';
+$string['auth_ldap_gracelogins_desc'] = 'LDAP-GraceLogin aktivieren. Wenn das Gültigkeitsende von Kennwörtern erreicht ist, können sich die Nutzer/innen weiter einloggen, bis der GraceLogin-Zähler den Wert 0 hat. Mit dem Aktivieren wird eine GraceLogin-Mitteilung angezeigt, sobald das Gültigkeitsende erreicht ist.';
 $string['auth_ldap_gracelogins_key'] = 'GraceLogins';
 $string['auth_ldap_groupecreators'] = 'Liste von Gruppen oder Kontexten, deren Mitglieder berechtigt sind Gruppen zu erstellen. Mehrere Gruppen werden durch ein \';\' (Semikolon) getrennt, z.B. \'cn=teachers,ou=staff,o=myorg\'.';
 $string['auth_ldap_groupecreators_key'] = 'Gruppenersteller';
 $string['auth_ldap_host_url'] = 'Geben Sie einen LDAP-Server in URL-Form an, z.B. \'ldap://ldap.meinserver.de/\' oder \'ldaps://ldap. meinserver.de/\'. Mehrere LDAP-Server trennen Sie bitte mit \';\' (Semikolon), z.B. als LDAP-Failover.';
 $string['auth_ldap_host_url_key'] = 'Host URL';
-$string['auth_ldap_ldap_encoding'] = 'Die Codierung des LDAP-Servers sollte standardmäßig utf-8 sein, aber das Microsoft ActiveDirectory v2 verwendet andere Codierungen, z.B. cp1252 oder cp1250.';
+$string['auth_ldap_ldap_encoding'] = 'Codierung des LDAP-Servers, meistens utf-8. Wenn LDAP v2 ausgewählt ist, verwendet das Microsoft ActiveDirectory seine Codierungen, z.B. cp1252 oder cp1250.';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP-Codierung';
 $string['auth_ldap_login_settings'] = 'Login-Einstellungen';
 $string['auth_ldap_memberattribute'] = 'Optional: Mitgliedsmerkmal ändern, mit dem Nutzer/innen zu einer Gruppe gehören. Normalerweise \'member\'';
@@ -127,7 +127,7 @@ $string['didntfindexpiretime'] = 'Für die Funktion password_expire() wurde kein
 $string['didntgetusersfromldap'] = 'Kein Nutzerkonto über LDAP einlesbar! Fehler?';
 $string['gotcountrecordsfromldap'] = '{$a} Datensätze von LDAP eingelesen';
 $string['ldapnotconfigured'] = 'Die URL zum LDAP-Server ist aktuell nicht konfiguriert.';
-$string['morethanoneuser'] = 'Mehr als ein Nutzerkonto in LDAP gefunden! Es wird nur das erste Nutzerkonto verwendet.';
+$string['morethanoneuser'] = 'Mehr als ein Nutzerkonto in LDAP gefunden! Es wird nur das erste dieser Nutzerkontos verwendet.';
 $string['needbcmath'] = 'Sie benötigen die PHP-Extension BCMath, um das Prüfen abgelaufener Kennwörter mit Active Directory nutzen zu können.';
 $string['needmbstring'] = 'Sie benötigen die PHP-Extension mbstring, um Kennwörter im Active Directory ändern zu können';
 $string['nodnforusername'] = 'Fehler in der Funktion user_update_password(). Kein DN für: {$a->username}';
@@ -157,8 +157,7 @@ $string['systemrolemapping'] = 'Zuordnung von Systemrollen';
 $string['updatepasserror'] = 'Fehler in der Funktion user_update_password().
 <br />Fehler-Code: {$a->errno}; Fehlertext: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Fehler in der Funktion user_update_password() beim Lesen des Ablaufdatums für das Kennwort. Fehler-Code: {$a->errno}. Fehlertext: {$a->errstring}';
-$string['updatepasserrorexpiregrace'] = 'Fehler in der Funktion user_update_password() beim Ändern der Gültigkeitsdauer bzw. des GraceLogins.
-<br />Fehler-Code: {$a->errno}; Fehlertext: {$a->errstring}';
+$string['updatepasserrorexpiregrace'] = 'Fehler in der Funktion user_update_password() beim Ändern der Gültigkeitsdauer bzw. des GraceLogins. Fehler-Code: {$a->errno}; Fehlertext: {$a->errstring}';
 $string['updateremfail'] = 'Fehler beim Aktualisieren des LDAP-Datensatzes {$a->key}.
 <br />Fehler-Code: {$a->errno}; Fehlertext: {$a->errstring}
 <br/>Alter Moodle-Wert: \'{$a->ouvalue}\' - neuer Wert: \'{$a->nuvalue}\'';

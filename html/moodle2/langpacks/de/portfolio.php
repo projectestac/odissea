@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -186,19 +186,19 @@ $string['portfolio'] = 'Portfolio';
 $string['portfolios'] = 'Portfolios';
 $string['privacy:metadata'] = 'Das Portfolio-Subsystem arbeitet als Kanal, der Anfragen in verschiedene Portfolio-Plugins weiterleitet.';
 $string['privacy:metadata:instance'] = 'Identifier des Portfolios';
-$string['privacy:metadata:instancesummary'] = 'Speichert Voreinstellungen für beide Instanzen, die der Nutzer verwendet';
+$string['privacy:metadata:instancesummary'] = 'Speichert Instanzen und Voreinstellungen für Portfolios';
 $string['privacy:metadata:name'] = 'Name der Voreinstellung';
 $string['privacy:metadata:portfolio_log'] = 'Log von Portfoliotransfers (wird zur späteren Prüfung von Duplikaten genutzt)';
 $string['privacy:metadata:portfolio_log:caller_class'] = 'Name der Klasse, die zum Transfer genutzt wird';
 $string['privacy:metadata:portfolio_log:caller_component'] = 'Komponentenname, der für Export verantwortlich ist';
 $string['privacy:metadata:portfolio_log:time'] = 'Zeitpunkt des Transfers (im Falle einer Warteschlange ist dies der Zeitpunkt zu dem der Transfer läuft, nicht wenn der Nutzer ihn startet)';
-$string['privacy:metadata:portfolio_log:userid'] = 'Nutzer, der Content exportierte';
-$string['privacy:metadata:portfolio_tempdata'] = 'Speichert temporäre Daten für Portfolioexporte, durch Cron nach einem Tag bereinigt';
+$string['privacy:metadata:portfolio_log:userid'] = 'ID des Nutzers, der Content exportierte';
+$string['privacy:metadata:portfolio_tempdata'] = 'Speichert temporäre Daten für Portfolioexporte';
 $string['privacy:metadata:portfolio_tempdata:data'] = 'Datenexport';
 $string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Zeitpunkt zu dem Datensatz abläuft';
 $string['privacy:metadata:portfolio_tempdata:instance'] = 'Verwendete Portolioplugininstanz';
 $string['privacy:metadata:portfolio_tempdata:userid'] = 'Nutzer, der Export ausführt';
-$string['privacy:metadata:userid'] = 'Identifier des Nutzers';
+$string['privacy:metadata:userid'] = 'ID des Nutzers';
 $string['privacy:metadata:value'] = 'Wert der Voreinstellung';
 $string['privacy:path'] = 'Portfolioinstanzen';
 $string['queuesummary'] = 'Aktuell wartende Transfers';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hotpot', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   hotpot
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,7 +64,7 @@ $string['bodystylesfont'] = 'Famille et taille de la police';
 $string['bodystylesmargin'] = 'Marge droite et gauche';
 $string['cacherecords'] = 'Enregistrements en cache de HotPotatoes';
 $string['canrestarthotpot'] = 'Vos résultats jusqu\'ici seront sauvegardés et vous pourrez refaire « {$a » plus tard';
-$string['canresumehotpot'] = 'Vos résultats seront sauvegardés jusqu\'ici et vous pourrez reprendre « {$a} » plus tard.';
+$string['canresumehotpot'] = 'Vos résultats seront sauvegardés jusqu\'ici et vous pourrez reprendre « {$a} » plus tard.';
 $string['checks'] = 'Vérifications';
 $string['checksomeboxes'] = 'Veuillez vérifier les champs';
 $string['clearcache'] = 'Nettoyer le cache HotPotatoes';
@@ -160,7 +160,7 @@ $string['entryoptions_help'] = 'Ces cases à cocher activent ou désactivent l\'
 : Si coché, le nom de l\'unité sera utilisé comme titre de la page initiale.
 
 ** Notation **
-: Si coché, les informations d\'évaluation de l\'activité  HotPotatoes seront affichées sur la page initiale.
+: Si coché, les informations d\'évaluation de l\'activité HotPotatoes seront affichées sur la page initiale.
 
 ** Dates **
 : Si coché, les dates d\'ouverture et de fermeture de l\'activité HotPotatoes seront affichées sur la page initiale.
@@ -411,7 +411,7 @@ $string['outputformat_hp_6_jcloze_html'] = 'JCloze HP6 html: Standard';
 $string['outputformat_hp_6_jcloze_html_findit_a'] = 'Html à partir d\'une source HP6 : Rottmeier FindIt (a)';
 $string['outputformat_hp_6_jcloze_html_findit_b'] = 'Html à partir d\'une source HP6 : Rottmeier FindIt (b)';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze à partir d\'une source HP6 xml: ANCT-Scan';
-$string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze à partir d\'une source  HP6 xml: Rottmeier DropDown';
+$string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze à partir d\'une source HP6 xml: Rottmeier DropDown';
 $string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze à partir d\'une source HP6 xml: Rottmeier FindIt (a)';
 $string['outputformat_hp_6_jcloze_xml_findit_b'] = 'JCloze à partir d\'une source HP6 xml: Rottmeier FindIt (b)';
 $string['outputformat_hp_6_jcloze_xml_jgloss'] = 'JCloze à partir d\'une source HP6 xml: Rottmeier JGloss';
@@ -451,6 +451,10 @@ $string['percent'] = 'Pourcentage';
 $string['pluginadministration'] = 'Administration Hot Potatoes';
 $string['pluginname'] = 'Module Hot Potatoes';
 $string['pressoktocontinue'] = 'Cliquer sur OK pour continuer, ou Annuler pour rester sur la page actuelle.';
+$string['privacy'] = 'Confidentialité des résultats';
+$string['privacy:metadata:hotpot_attempts'] = 'Informations sur les tentatives de l\'utilisateur lors d\'activités HotPot';
+$string['privacy:metadata:hotpot_attempts:timemodified'] = 'Le timemodified indiquant quand les tentatives de HotPot ont été modifiées par l\'utilisateur';
+$string['privacy:metadata:hotpot_attempts:timestart'] = 'Heure de début indiquant le moment où l\'utilisateur a lancé les tentatives';
 $string['questionshort'] = 'Q-{$a}';
 $string['quizname_help'] = 'texte d\'aide pour le nom du test';
 $string['quizzes'] = 'Tests';
@@ -593,7 +597,7 @@ La hauteur désirée pour le lecteur. Si non indiquée, la valeur sera la même 
 **Options** (facultatif)
 : Une liste d\'options passées au lecteur, séparées par des virgules. Chaque option peut être un simple interrupteur on/off ou un nom d\'option avec sa valeur correspondante.
 : **nom=valeur**
-: **nom="valeur avec des espaces"**';
+: **nom=« valeur avec des espaces »**';
 $string['viewreports'] = 'Voir le rapport pour {$a} utilisateur(s)';
 $string['views'] = 'Vues';
 $string['weighting'] = 'Pondération';

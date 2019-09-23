@@ -126,6 +126,9 @@ if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
     $temp->add(new admin_setting_configcheckbox('strictformsrequired', new lang_string('strictformsrequired', 'admin'), new lang_string('configstrictformsrequired', 'admin'), 0));
     $ADMIN->add('security', $temp);
 
+
+
+
     //XTEC ************ AFEGIT - To let access only to xtecadmin user
     //2012.06.20  @sarjona
     if (get_protected_agora() ) {

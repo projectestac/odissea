@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['answer'] = 'Resposta';
 $string['bgimage'] = 'Imaxe de fondo';
 $string['blank'] = 'en branco';
 $string['correctansweris'] = 'A resposta correcta é: {$a}';
+$string['deletedchoice'] = '[opción eliminada]';
 $string['draggableimage'] = 'Imaxe arrastrábel';
 $string['draggableitem'] = 'Elemento arrastrábel';
 $string['draggableitemheader'] = 'Elemento arrastrábel {$a}';

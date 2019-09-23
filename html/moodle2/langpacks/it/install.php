@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -106,7 +106,7 @@ $string['environmenthead'] = 'Verifica dell\'ambiente...';
 $string['environmentsub'] = 'Stiamo verificando che i vari componenti del sistema soddisfino i requisiti necessari.';
 $string['environmentsub2'] = 'Ciascuna release di Moodle prevede come requisito minimo una data versione del PHP ed una serie di estensioni. Prima di una installazione o di un aggiornamento viene eseguita la verifica dei requisiti minimi. Se non sai come installare nuove versioni del PHP o le sue estensioni, contatta l\'amministratore del tuo server.';
 $string['errorsinenvironment'] = 'Sono stati riscontarti problemi nel tuo ambiente';
-$string['fail'] = 'Test non superato';
+$string['fail'] = 'Errore';
 $string['fileuploads'] = 'Caricamento file';
 $string['fileuploadserror'] = 'Deve essere impostato a on';
 $string['fileuploadshelp'] = '<p>Sul server il caricamento dei file sembra essere disabilitato.</p>
@@ -134,7 +134,6 @@ Questo consentirà a Moodle di impostare in autonomia il limite di memoria.</li>
 <li>Su alcuni server con il PHP è possibile creare un file .htaccess nella cartella di Moodle contenente questa linea:
 <blockquote>php_value memory_limit 40M</blockquote>
 <p>Tuttavia, su alcuni server la direttiva potrebbe impedire a <b>tutte</b> le pagine PHP di funzionare (appariranno degli errori durante la visualizzazione delle pagine), in tal caso dovrai rimuovere il file .htaccess.</li></ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'Il PHP non è stato configurato correttamente con l\'estensione MSSQL e non può comunicare con SQL*Server. Controlla il file php.ini o ricompila il PHP.';
 $string['mysqliextensionisnotpresentinphp'] = 'Il PHP non è stato configurato correttamente con l\'estensione MySQLi e non può comunicare con MySQL. Controlla il file php.ini o ricompila il PHP.';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati e delle impostazioni.</p>
@@ -142,8 +141,6 @@ $string['nativemariadbhelp'] = '<p>Devi ora configurare il database dove Moodle 
 <p>Il nome del database può contenere solamente caratteri alfanumerici, il simbolo del dollaro ($) e il trattino basso (_).</p>
 <p>Se il database non esiste e se l\'utente fornito ha i permessi necessari, Moodle tenterà di creare il proprio database con le necessarie impostazioni.</p>
 <p>Questo driver non è compatibile con il vecchio motore MyISAM.</p>';
-$string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
-$string['nativemssqlhelp'] = 'Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati. Il database con l\'utente e la password d\'accesso devono già essere stati creati. Il prefisso delle tabelle è obbligatorio.';
 $string['nativemysqli'] = 'Improved MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p>Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati e delle impostazioni.</p>
 <p>Il nome del database, il nome utente e la password sono campi obbligatori, il prefisso delle tabelle è facoltativo.</p>

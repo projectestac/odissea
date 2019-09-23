@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['assignmentdisabled'] = 'De verouderde "Opdracht 2.2" is uitgeschakeld.'
 $string['assignment:exportownsubmission'] = 'Exporteer je opdracht';
 $string['assignment:exportsubmission'] = 'Exporteer inzending';
 $string['assignment:grade'] = 'Beoordeel opdracht';
-$string['assignmentneedsupgrade'] = 'De verouderde "Opdracht 2.2" is uitgeschakeld. Vraag of je beheerder de opdracht upgradetool wil laten lopen om alle verouderde opdrachten op deze site te upgraden.';
+$string['assignmentneedsupgrade'] = 'De verouderde "Opdracht 2.2" is verwijderd.';
 $string['assignment:submit'] = 'Stuur opdracht in';
 $string['assignment:view'] = 'Bekijk opdracht';
 $string['messageprovider:assignment_updates'] = 'Opdracht (2.2) meldingen';
@@ -61,4 +61,3 @@ $string['privacy:metadata:assignment_submissions:timemodified'] = 'De wijzigings
 $string['privacy:metadata:assignment_submissions:userid'] = 'De gebruikerID van wie de opdracht instuurde.';
 $string['privacy:submissionpath'] = 'ingestuurde opdracht';
 $string['upgradenotification'] = 'Deze opdracht is gebaseerd op een oudere opdrachtmodule';
-$string['viewassignmentupgradetool'] = 'Bekijk de opdracht upgrade tool';

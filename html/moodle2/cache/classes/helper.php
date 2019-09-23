@@ -629,7 +629,9 @@ class cache_helper {
         //XTEC ************ ELIMINAT - To have MUC configured
         // Never update siteidentifier
         // 2014.08.12 @pferre22
-        // $siteidentifier = $config->update_site_identifier($siteidentifier);
+        /*
+        $siteidentifier = $config->update_site_identifier($siteidentifier);
+        */
         //************ FI
         $factory->updating_finished();
         cache_factory::reset();

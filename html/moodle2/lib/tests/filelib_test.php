@@ -1053,6 +1053,79 @@ EOF;
     }
 
     /**
+     * Test file_rewrite_pluginfile_urls with includetoken.
+     */
+    public function test_file_rewrite_pluginfile_urls_includetoken() {
+        global $USER, $CFG;
+
+        $CFG->slasharguments = true;
+
+        $this->resetAfterTest();
+
+        $syscontext = context_system::instance();
+        $originaltext = 'Fake test with an image <img src="@@PLUGINFILE@@/image.png">';
+        $options = ['includetoken' => true];
+
+        // Rewrite the content. This will generate a new token.
+        $finaltext = file_rewrite_pluginfile_urls(
+                $originaltext, 'pluginfile.php', $syscontext->id, 'user', 'private', 0, $options);
+
+        $token = get_user_key('core_files', $USER->id);
+        $expectedurl = new \moodle_url("/tokenpluginfile.php/{$token}/{$syscontext->id}/user/private/0/image.png");
+        $expectedtext = "Fake test with an image <img src=\"{$expectedurl}\">";
+        $this->assertEquals($expectedtext, $finaltext);
+
+        // Do it again - the second time will use an existing token.
+        $finaltext = file_rewrite_pluginfile_urls(
+                $originaltext, 'pluginfile.php', $syscontext->id, 'user', 'private', 0, $options);
+        $this->assertEquals($expectedtext, $finaltext);
+
+        // Now undo.
+        $options['reverse'] = true;
+        $finaltext = file_rewrite_pluginfile_urls($finaltext, 'pluginfile.php', $syscontext->id, 'user', 'private', 0, $options);
+
+        // Compare the final text is the same that the original.
+        $this->assertEquals($originaltext, $finaltext);
+    }
+
+    /**
+     * Test file_rewrite_pluginfile_urls with includetoken with slasharguments disabled..
+     */
+    public function test_file_rewrite_pluginfile_urls_includetoken_no_slashargs() {
+        global $USER, $CFG;
+
+        $CFG->slasharguments = false;
+
+        $this->resetAfterTest();
+
+        $syscontext = context_system::instance();
+        $originaltext = 'Fake test with an image <img src="@@PLUGINFILE@@/image.png">';
+        $options = ['includetoken' => true];
+
+        // Rewrite the content. This will generate a new token.
+        $finaltext = file_rewrite_pluginfile_urls(
+                $originaltext, 'pluginfile.php', $syscontext->id, 'user', 'private', 0, $options);
+
+        $token = get_user_key('core_files', $USER->id);
+        $expectedurl = new \moodle_url("/tokenpluginfile.php");
+        $expectedurl .= "?token={$token}&file=/{$syscontext->id}/user/private/0/image.png";
+        $expectedtext = "Fake test with an image <img src=\"{$expectedurl}\">";
+        $this->assertEquals($expectedtext, $finaltext);
+
+        // Do it again - the second time will use an existing token.
+        $finaltext = file_rewrite_pluginfile_urls(
+                $originaltext, 'pluginfile.php', $syscontext->id, 'user', 'private', 0, $options);
+        $this->assertEquals($expectedtext, $finaltext);
+
+        // Now undo.
+        $options['reverse'] = true;
+        $finaltext = file_rewrite_pluginfile_urls($finaltext, 'pluginfile.php', $syscontext->id, 'user', 'private', 0, $options);
+
+        // Compare the final text is the same that the original.
+        $this->assertEquals($originaltext, $finaltext);
+    }
+
+    /**
      * Helpter function to create draft files
      *
      * @param  array  $filedata data for the file record (to not use defaults)
@@ -1472,6 +1545,43 @@ EOF;
         $this->assertEquals($thirdrecord['filename'], $allfiles[2]->filename);
         $this->assertEquals($fourthrecord['filename'], $allfiles[3]->filename);
         $this->assertEquals($fifthrecord['filename'], $allfiles[4]->filename);
+    }
+
+    public function test_file_copy_file_to_file_area() {
+        // Create two files in different draft areas but owned by the same user.
+        global $USER;
+        $this->resetAfterTest(true);
+        $this->setAdminUser();
+
+        $filerecord = ['filename'  => 'file1.png', 'itemid' => file_get_unused_draft_itemid()];
+        $file1 = self::create_draft_file($filerecord);
+        $filerecord = ['filename'  => 'file2.png', 'itemid' => file_get_unused_draft_itemid()];
+        $file2 = self::create_draft_file($filerecord);
+
+        // Confirm one file in each draft area.
+        $fs = get_file_storage();
+        $usercontext = context_user::instance($USER->id);
+        $draftfiles = $fs->get_area_files($usercontext->id, 'user', 'draft', $file1->get_itemid(), 'itemid', 0);
+        $this->assertCount(1, $draftfiles);
+        $draftfiles = $fs->get_area_files($usercontext->id, 'user', 'draft', $file2->get_itemid(), 'itemid', 0);
+        $this->assertCount(1, $draftfiles);
+
+        // Create file record.
+        $filerecord = [
+            'component' => $file2->get_component(),
+            'filearea' => $file2->get_filearea(),
+            'itemid' => $file2->get_itemid(),
+            'contextid' => $file2->get_contextid(),
+            'filepath' => '/',
+            'filename' => $file2->get_filename()
+        ];
+
+        // Copy file2 into file1's draft area.
+        file_copy_file_to_file_area($filerecord, $file2->get_filename(), $file1->get_itemid());
+        $draftfiles = $fs->get_area_files($usercontext->id, 'user', 'draft', $file1->get_itemid(), 'itemid', 0);
+        $this->assertCount(2, $draftfiles);
+        $draftfiles = $fs->get_area_files($usercontext->id, 'user', 'draft', $file2->get_itemid(), 'itemid', 0);
+        $this->assertCount(1, $draftfiles);
     }
 }
 

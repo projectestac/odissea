@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,8 @@ $string['commentindex'] = 'Index van opmerkingen';
 $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Kon pagina {$a} niet bewaren';
 $string['currentstamp'] = 'Stempel';
+$string['default'] = 'Standaard ingeschakeld';
+$string['default_help'] = 'Indien ingesteld zal deze feedbackmethode als standaardmethode gebruikt worden voor alle nieuwe opdrachten';
 $string['deleteannotation'] = 'Verwijder annotatie';
 $string['deletecomment'] = 'Verwijder opmerking';
 $string['deletefeedback'] = 'Verwijder feedback PDF';
@@ -65,12 +67,13 @@ $string['jsrequired'] = 'Het annoteren van PDF-documenten vereist javascript. Sc
 $string['launcheditor'] = 'Start PDF-editor...';
 $string['line'] = 'Lijn';
 $string['loadingeditor'] = 'PDF-editor aan het laden';
-$string['navigatenext'] = 'Volgende pagina';
-$string['navigateprevious'] = 'Vorige pagina';
+$string['navigatenext'] = 'Volgende pagina (Alt/Shift-Alt/Ctrl-Option + {$a})';
+$string['navigateprevious'] = 'Vorige pagina (Alt/Shift-Alt/Ctrl-Option + {$a})';
 $string['output'] = 'Output:';
 $string['oval'] = 'Ovaal';
 $string['pagenumber'] = 'pagina {$a}';
 $string['pagexofy'] = 'Pagina {$a->page} van {$a->total}';
+$string['partialwarning'] = 'Sommige bestanden in deze inzending zijn alleen toegankelijk door directe download.';
 $string['pathtogspathdesc'] = 'Opgelet: om PDF te kunnen annoteren moet het pad naar ghostscript ingesteld zijn in {$a}.';
 $string['pen'] = 'Pen';
 $string['pluginname'] = 'Annoteer PDF';

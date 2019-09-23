@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'role', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,9 @@ $string['allowoverride'] = 'Allow role overrides';
 $string['allowroletoassign'] = 'Allow users with role {$a->fromrole} to assign the role {$a->targetrole}';
 $string['allowroletooverride'] = 'Allow users with role {$a->fromrole} to override the role {$a->targetrole}';
 $string['allowroletoswitch'] = 'Allow users with role {$a->fromrole} to switch roles to the role {$a->targetrole}';
+$string['allowroletoview'] = 'Allow users with role {$a->fromrole} to view the role {$a->targetrole}';
 $string['allowswitch'] = 'Allow role switches';
+$string['allowview'] = 'Allow role to view';
 $string['allsiteusers'] = 'All site users';
 $string['analytics:listinsights'] = 'List insights';
 $string['analytics:managemodels'] = 'Manage models';
@@ -167,6 +169,7 @@ $string['course:changeidnumber'] = 'Change course ID number';
 $string['course:changeshortname'] = 'Change course short name';
 $string['course:changesummary'] = 'Change course summary';
 $string['course:create'] = 'Create courses';
+$string['course:creategroupconversations'] = 'Create group conversations';
 $string['course:delete'] = 'Delete courses';
 $string['course:enrolconfig'] = 'Configure enrol instances in courses';
 $string['course:enrolreview'] = 'Review course enrolments';
@@ -188,7 +191,9 @@ $string['course:reset'] = 'Reset course';
 $string['course:reviewotherusers'] = 'Review other users';
 $string['course:sectionvisibility'] = 'Control section visibility';
 $string['course:setcurrentsection'] = 'Set current section';
+$string['course:setforcedlanguage'] = 'Force course language';
 $string['course:tag'] = 'Change course tags';
+$string['course:togglecompletion'] = 'Manually mark activities as complete';
 $string['course:update'] = 'Update course settings';
 $string['course:useremail'] = 'Enable/disable email address';
 $string['course:view'] = 'View courses without participation';
@@ -229,6 +234,7 @@ $string['errorroleshortnametoolong'] = 'The short name must not exceed 100 chara
 $string['eventroleallowassignupdated'] = 'Allow role assignment';
 $string['eventroleallowoverrideupdated'] = 'Allow role override';
 $string['eventroleallowswitchupdated'] = 'Allow role switch';
+$string['eventroleallowviewupdated'] = 'Allow role view';
 $string['eventroleassigned'] = 'Role assigned';
 $string['eventrolecapabilitiesupdated'] = 'Role capabilities updated';
 $string['eventroledeleted'] = 'Role deleted';
@@ -301,6 +307,7 @@ $string['notabletooverrideroleshere'] = 'You are not able to override the permis
 $string['notes:manage'] = 'Manage notes';
 $string['notes:view'] = 'View notes';
 $string['notset'] = 'Not set';
+$string['novisibleroles'] = 'No roles';
 $string['overrideanotherrole'] = 'Override another role';
 $string['overridecontext'] = 'Override context';
 $string['overridepermissions'] = 'Override permissions';
@@ -354,6 +361,8 @@ $string['question:flag'] = 'Flag questions while attempting them';
 $string['question:managecategory'] = 'Edit question categories';
 $string['question:moveall'] = 'Move all questions';
 $string['question:movemine'] = 'Move your own questions';
+$string['question:tagall'] = 'Tag all questions';
+$string['question:tagmine'] = 'Tag your own questions';
 $string['question:useall'] = 'Use all questions';
 $string['question:usemine'] = 'Use your own questions';
 $string['question:viewall'] = 'View all questions';
@@ -425,6 +434,8 @@ $string['site:import'] = 'Import other courses into a course';
 $string['site:maintenanceaccess'] = 'Access site while in maintenance mode';
 $string['site:manageallmessaging'] = 'Add, remove, block and unblock contacts for any user';
 $string['site:manageblocks'] = 'Manage blocks on a page';
+$string['site:managecontextlocks'] = 'Manage freezing of contexts';
+$string['site:messageanyuser'] = 'Bypass user privacy preferences for messaging any user';
 $string['site:mnetloginfromremote'] = 'Login from a remote application via MNet';
 $string['site:mnetlogintoremote'] = 'Roam to a remote application via MNet';
 $string['site:readallmessages'] = 'Read all messages on site';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'folder', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,7 @@ $string['page-mod-folder-view'] = 'Mapp-modul huvudsidan';
 $string['page-mod-folder-x'] = 'Valfri mapp modulsida';
 $string['pluginadministration'] = 'Administration av mapp';
 $string['pluginname'] = 'Mapp';
+$string['privacy:metadata'] = 'Resursen Mapp lagrar inga personuppgifter.';
 $string['search:activity'] = 'Mapp';
 $string['showdownloadfolder'] = '';
 $string['showdownloadfolder_help'] = '"Ladda ned mapp" tillåter användaren att ladda ned allt innehåll i mappen som en zip-fil.';

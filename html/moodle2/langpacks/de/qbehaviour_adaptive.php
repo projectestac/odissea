@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_adaptive', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qbehaviour_adaptive', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   qbehaviour_adaptive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,4 +37,4 @@ $string['gradingdetailswithpenalty'] = 'Bewertung für diese Einreichung: {$a->r
 $string['gradingdetailswithtotalpenalty'] = 'Bewertung für diese Einreichung: {$a->raw}/{$a->max}. Diese Einreichung berücksichtigt einen Abzug von {$a->penalty}. Gesamtabzug bisher: {$a->totalpenalty}.';
 $string['notcomplete'] = 'Unvollständig';
 $string['pluginname'] = 'Mehrfachbeantwortung (mit Abzügen)';
-$string['privacy:metadata'] = 'Der Adaptive Modus des Frageverhalten-Plugins speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Der Plugin \'Frageverhalten Mehrfachbeantwortung (mit Abzügen)\' speichert keine personenbezogenen Daten.';

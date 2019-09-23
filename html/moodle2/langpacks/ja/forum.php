@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,7 @@ $string['bynameondate'] = '{$a->date} - {$a->name} の投稿';
 $string['cannotadd'] = 'このフォーラムにディスカッションを追加できませんでした。';
 $string['cannotadddiscussion'] = 'このフォーラムにディスカッションを追加するにはグループのメンバーである必要があります。';
 $string['cannotadddiscussionall'] = 'あなたにはすべての参加者のための新しいディスカッショントピックを追加するパーミッションがありません。';
+$string['cannotadddiscussiongroup'] = 'あなたはどのグループにも属していないため、ディスカッションを作成することはできません。';
 $string['cannotaddsubscriber'] = 'このフォーラムにID {$a} の購読者を追加できませんでした!';
 $string['cannotaddteacherforumto'] = 'コースのセクションゼロに対してコンバートされた教師フォーラムインスタンスを追加できませんでした。';
 $string['cannotcreatediscussion'] = '新しいディスカッションを作成できませんでした。';
@@ -151,6 +152,7 @@ $string['discussionpin'] = 'ピン留め';
 $string['discussionpinned'] = 'ピン留め';
 $string['discussionpinned_help'] = 'ピン留めディスカッションはフォーラムの最上部に表示されます。';
 $string['discussions'] = 'ディスカッション';
+$string['discussionsplit'] = 'ディスカッションが分割されました。';
 $string['discussionsstartedby'] = '{$a} によって開始されたディスカッション';
 $string['discussionsstartedbyrecent'] = '{$a} によって最近開始されたディスカッション';
 $string['discussionsstartedbyuserincourse'] = '{$a->fullname} によって {$a->coursename} で開始されたディスカッション';
@@ -173,9 +175,6 @@ $string['edit'] = '編集';
 $string['editedby'] = '{$a->name} により編集 - 最初の投稿日時 {$a->date}';
 $string['editedpostupdated'] = '{$a} の投稿が更新されました。';
 $string['editing'] = '編集';
-$string['emaildigest_0'] = 'あなたはフォーラム投稿ごとに1通のメールを受信します。';
-$string['emaildigest_1'] = 'あなたはそれぞれのフォーラム投稿に関する完全なコンテンツを含むメールダイジェストを1日1通受信します。';
-$string['emaildigest_2'] = 'あなたはそれぞれのフォーラム投稿に関する件名を含むメールダイジェストを1日1通受信します。';
 $string['emaildigestcompleteshort'] = '完全な投稿';
 $string['emaildigestdefault'] = 'デフォルト ({$a})';
 $string['emaildigestoffshort'] = 'ダイジェストなし';
@@ -187,10 +186,6 @@ $string['emaildigesttype_help'] = 'あなたがそれぞれの投稿に関して
 * ダイジェストなし - あなたはフォーラム投稿ごとに1通のメールを受信します。
 * ダイジェスト - 完全な投稿 - あなたはそれぞれのフォーラム投稿に関する完全なコンテンツを含むメールダイジェストを1日1通受信します。
 * ダイジェスト - 件名のみ - あなたはそれぞれのフォーラム投稿に関する件名を含むメールダイジェストを1日1通受信します。';
-$string['emaildigestupdated'] = 'フォーラム「 {$a->forum} 」に関するメールダイジェストオプションが「 {$a->maildigesttitle} 」に変更されました。
-{$a->maildigestdescription}';
-$string['emaildigestupdated_default'] = 'あなたの「 {$a->maildigesttitle} 」のデフォルトプロファイル設定はフォーラム「 {$a->forum} 」に使用されました。
-{$a->maildigestdescription}';
 $string['emptymessage'] = 'あなたの投稿に問題があります。おそらく投稿が空白のままか、添付ファイルのサイズが大きすぎます。あなたの変更は保存されませんでした。';
 $string['erroremptymessage'] = '投稿メッセージを空にすることはできません。';
 $string['erroremptysubject'] = '投稿件名を空にすることはできません。';
@@ -236,7 +231,7 @@ $string['forumblockingalmosttoomanyposts'] = 'あなたは投稿数の上限に�
 $string['forumbodydeleted'] = 'このフォーラム投稿のコンテンツは削除されたため現在アクセスすることはできません。';
 $string['forumbodyhidden'] = 'あなたはこの投稿を閲覧できません。恐らく、あなたがまだディスカッションに投稿していない、最大編集時間を経過していない、ディスカッションが開始されていない、またはディスカッションの有効期限が切れています。';
 $string['forum:canoverridediscussionlock'] = 'ロックされたディスカッションに返信する';
-$string['forum:canposttomygroups'] = 'あなたがアクセスできるグループすべてに投稿できる';
+$string['forum:canposttomygroups'] = 'あなたがアクセスできるグループすべてに投稿する';
 $string['forum:createattachment'] = '添付を作成する';
 $string['forum:deleteanypost'] = 'どの投稿でも削除する (いつでも)';
 $string['forum:deleteownpost'] = '自分の投稿を削除する (期限内)';
@@ -394,8 +389,8 @@ $string['notpartofdiscussion'] = 'この投稿はディスカッションの一�
 $string['notrackforum'] = '投稿を未読管理しない';
 $string['notsubscribed'] = '購読する';
 $string['noviewdiscussionspermission'] = 'あなたにはこのフォーラムを閲覧するパーミッションがありません。';
-$string['nowallsubscribed'] = '{$a} のすべてのフォーラムの購読を登録しました。';
-$string['nowallunsubscribed'] = '{$a} のすべてのフォーラムの購読を解除しました。';
+$string['nowallsubscribed'] = 'あなたは {$a} のフォーラムすべてを購読しています。';
+$string['nowallunsubscribed'] = 'あなたは {$a} のフォーラムすべての購読を解除しました。';
 $string['nownotsubscribed'] = '{$a->name} には「 {$a->forum} 」の新しい投稿は通知されません。';
 $string['nownottracking'] = '{$a->name} は 「 {$a->forum} 」を未読管理していません。';
 $string['nowsubscribed'] = '{$a->name} には「 {$a->forum} 」の新しい投稿が通知されます。';
@@ -422,9 +417,6 @@ $string['postbymailsuccess'] = 'おめでとうございます、あなたの件
 $string['postbymailsuccess_html'] = 'おめでとうございます、あなたの件名「 $a->subject 」の<a href="{$a->discussionurl}">フォーラム投稿</a>が正常に投稿されました。';
 $string['postbyuser'] = '{$a->post} by {$a->user}';
 $string['postincontext'] = 'この投稿をコンテクスト内に表示する';
-$string['postmailinfo'] = 'これはウェブサイト {$a} に投稿されたメッセージのコピーです。
-
-返信するにはこのリンクをクリックしてください:';
 $string['postmailinfolink'] = 'これは {$a->coursename} に投稿されたメッセージのコピーです。
 
 返信するにはこのリンクをクリックしてください: {$a->replylink}';
@@ -594,11 +586,11 @@ $string['trackingoff'] = 'Off';
 $string['trackingon'] = '強制';
 $string['trackingoptional'] = '任意';
 $string['trackingtype'] = '未読管理';
-$string['trackingtype_help'] = '未読管理により新しい投稿がハイライトされることで参加者はまだ閲覧していない投稿を簡単に確認することができます。
+$string['trackingtype_help'] = '未読管理により新しい投稿がハイライトされることで参加者はまだ閲覧していない投稿を簡単に確認できます。
 
-「任意」に設定された場合、参加者は管理ブロック内のリンクにより未読管理を有効または無効にすることができます (ユーザは自分のフォーラムプリファレンスでフォーラム未読管理を有効にする必要があります)。
+「任意」に設定された場合、参加者はテーマによりアクションメニューまたは管理ブロック内のリンクで未読管理を有効または無効にできます (ユーザは自分のフォーラムプリファレンスでフォーラム未読管理を有効にする必要があります)。
 
-サイト管理者が「未読管理の強制を許可する」を有効にした場合、さらなるオプション「強制」を使用することができます。これはユーザのフォーラムプリファレンスに限らず常に未読管理が有効にされることを意味します。';
+サイト管理者が「未読管理の強制を許可する」を有効にした場合、さらなるオプション「強制」を使用できます。これはユーザのフォーラムプリファレンスに限らず常に未読管理が有効にされることを意味します。';
 $string['trackreadposts_header'] = '未読管理';
 $string['unread'] = '未読';
 $string['unreadposts'] = '未読の投稿';

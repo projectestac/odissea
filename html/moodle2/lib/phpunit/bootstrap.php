@@ -80,8 +80,6 @@ if ($phpunitversion === '@package_version@') {
 }
 unset($phpunitversion);
 
-define('NO_OUTPUT_BUFFERING', true);
-
 // only load CFG from config.php, stop ASAP in lib/setup.php
 define('ABORT_AFTER_CONFIG', true);
 require(__DIR__ . '/../../config.php');
@@ -181,7 +179,7 @@ $CFG->dboptions = isset($CFG->phpunit_dboptions) ? $CFG->phpunit_dboptions : $CF
 $allowed = array('wwwroot', 'dataroot', 'dirroot', 'admin', 'directorypermissions', 'filepermissions',
                  'dbtype', 'dblibrary', 'dbhost', 'dbname', 'dbuser', 'dbpass', 'prefix', 'dboptions',
                  'proxyhost', 'proxyport', 'proxytype', 'proxyuser', 'proxypassword', 'proxybypass', // keep proxy settings from config.php
-                 'altcacheconfigpath', 'pathtogs', 'pathtodu', 'aspellpath', 'pathtodot',
+                 'altcacheconfigpath', 'pathtogs', 'pathtophp', 'pathtodu', 'aspellpath', 'pathtodot',
                  'pathtounoconv', 'alternative_file_system_class', 'pathtopython'
                 );
 $productioncfg = (array)$CFG;

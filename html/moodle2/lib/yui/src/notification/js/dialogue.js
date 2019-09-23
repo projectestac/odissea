@@ -15,7 +15,8 @@ var DIALOGUE_NAME = 'Moodle dialogue',
     MENUBAR_SELECTOR = '[role=menubar]',
     DOT = '.',
     HAS_ZINDEX = 'moodle-has-zindex',
-    CAN_RECEIVE_FOCUS_SELECTOR = 'input:not([type="hidden"]), a[href], button, textarea, select, [tabindex]';
+    CAN_RECEIVE_FOCUS_SELECTOR = 'input:not([type="hidden"]), a[href], button, textarea, select, [tabindex]',
+    FORM_SELECTOR = 'form';
 
 /**
  * A re-usable dialogue box with Moodle classes applied.
@@ -36,7 +37,7 @@ DIALOGUE = function(config) {
     config.notificationBase =
         Y.Node.create('<div class="' + CSS.BASE + '">')
               .append(Y.Node.create('<div id="' + id + '" role="dialog" ' +
-                                    'aria-labelledby="' + id + '-header-text" class="' + CSS.WRAP + '"></div>')
+                                    'aria-labelledby="' + id + '-header-text" class="' + CSS.WRAP + '"  aria-live="polite"></div>')
               .append(Y.Node.create('<div id="' + id + '-header-text" class="' + CSS.HEADER + ' yui3-widget-hd"></div>'))
               .append(Y.Node.create('<div class="' + CSS.BODY + ' yui3-widget-bd"></div>'))
               .append(Y.Node.create('<div class="' + CSS.FOOTER + ' yui3-widget-ft"></div>')));
@@ -51,7 +52,8 @@ Y.extend(DIALOGUE, Y.Panel, {
     // Orientation change event listener.
     _orientationevent: null,
     _calculatedzindex: false,
-
+    // Current maskNode id
+    _currentMaskNodeId: null,
     /**
      * The original position of the dialogue before it was reposition to
      * avoid browser jumping.
@@ -71,6 +73,20 @@ Y.extend(DIALOGUE, Y.Panel, {
      * @type Array
      */
     _hiddenSiblings: null,
+
+    /**
+     * Hide the modal only if it doesn't contain a form.
+     *
+     * @method hideIfNotForm
+     */
+    hideIfNotForm: function() {
+        var bb = this.get('boundingBox'),
+            formElement = bb.one(FORM_SELECTOR);
+
+        if (formElement === null) {
+            this.hide();
+        }
+    },
 
     /**
      * Initialise the dialogue.
@@ -125,6 +141,13 @@ Y.extend(DIALOGUE, Y.Panel, {
 
             if (!this.get('center')) {
                 this._originalPosition = bb.getXY();
+            }
+
+            // Check if maskNode already init click event.
+            var maskNode = this.get('maskNode');
+            if (this._currentMaskNodeId !== maskNode.get('_yuid')) {
+                this._currentMaskNodeId = maskNode.get('_yuid');
+                maskNode.on('click', this.hideIfNotForm, this);
             }
 
             if (bb.getStyle('position') !== 'fixed') {

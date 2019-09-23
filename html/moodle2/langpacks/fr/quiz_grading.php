@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_grading', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['automaticallygraded'] = 'Évalué automatiquement';
 $string['backtothelistofquestions'] = 'Retour à la liste des questions';
 $string['bydate'] = 'Par date';
 $string['bystudentfirstname'] = 'Par prénom d\'étudiant';
-$string['bystudentidnumber'] = 'Par identifiant des participants';
+$string['bystudentidnumber'] = 'Par identifiant d\'étudiant';
 $string['bystudentlastname'] = 'Par nom d\'étudiant';
 $string['cannotgradethisattempt'] = 'Impossible d\'évaluer cette tentative.';
 $string['cannotloadquestioninfo'] = 'Impossible de charger les information pour ce type de question';
@@ -60,7 +60,7 @@ $string['gradingquestionx'] = 'Évaluation de la question {$a->number} : {$a->qu
 $string['gradingreport'] = 'Rapport d\'évaluation manuelle';
 $string['gradingungraded'] = '{$a} tentatives non évaluées';
 $string['gradinguser'] = 'Tentatives de {$a}';
-$string['grading:viewidnumber'] = 'Voir l\'identifiant des participants durant l\'évaluation';
+$string['grading:viewidnumber'] = 'Voir l\'identifiant de l\'étudiant durant l\'évaluation';
 $string['grading:viewstudentnames'] = 'Voir le nom des participants durant l\'évaluation';
 $string['hideautomaticallygraded'] = 'Cacher les questions qui ont été évaluées automatiquement';
 $string['inprogress'] = 'En cours';

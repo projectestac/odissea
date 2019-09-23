@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_security', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,10 +30,10 @@ Note-se que esta medida não melhora significativamente a segurança do servidor
 $string['check_configrw_name'] = 'Permissões de escrita do ficheiro <strong>config.php</strong>';
 $string['check_configrw_ok'] = 'O ficheiro <strong>config.php</strong> não pode ser alterado por scripts PHP.';
 $string['check_configrw_warning'] = 'O ficheiro <strong>config.php</strong> pode ser alterado por scripts PHP.';
-$string['check_cookiesecure_details'] = '<p>Se a comunicação HTTPS for ativada a utilização de cookies seguros deve também ser ativada. Além disso, deve também ser configurado o redirecionamento permanente de HTTP para HTTPS. Será benéfico enviar apenas cabeçalhos HSTS.</p>';
-$string['check_cookiesecure_error'] = 'A utilização de cookies seguras não está ativa.';
-$string['check_cookiesecure_name'] = 'Cookies seguras';
-$string['check_cookiesecure_ok'] = 'A utilização de cookies seguras está ativa.';
+$string['check_cookiesecure_details'] = '<p>Se a comunicação HTTPS estiver ativa, é recomendável ativar o envio de cookies seguros. Deve ter o redirecionamento permanente de http para https e, de preferência, utilizar também cabeçalhos HSTS.</p>';
+$string['check_cookiesecure_error'] = 'A utilização de cookies seguros não está ativa.';
+$string['check_cookiesecure_name'] = 'Cookies seguros';
+$string['check_cookiesecure_ok'] = 'A utilização de cookies seguros está ativa.';
 $string['check_defaultuserrole_details'] = '<p>As permissões do papel predefinido são atribuídas a todos os utilizadores autenticados. Por isso, assegure-se que não são atribuídas permissões com riscos a este papel.</p>
 <p>O único papel retrocompatível (usado em versões anteriores do Moodle) que pode ser usado com o papel de utilizador predefinido é <strong>Utilizador autenticado</strong>. A permissão para ver disciplinas não deve ser concedida.</p>';
 $string['check_defaultuserrole_error'] = 'O papel "{$a}", a atribuir automaticamente a todos os utilizadores autenticados, não está configurado corretamente!';

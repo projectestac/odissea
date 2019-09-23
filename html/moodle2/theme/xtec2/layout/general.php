@@ -127,7 +127,7 @@ echo $OUTPUT->doctype() ?>
                 <?php if($haslogin) { ?>
                     <ul class="nav pull-right" id="user-collapse">
                         <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                        <li><?php echo $OUTPUT->messages_menu(); ?></li>
+                        <li><?php echo $OUTPUT->navbar_plugin_output(); ?></li>
                         <li class="navbar-text"><?php echo $OUTPUT->user_menu(); ?></li>
                     </ul>
                 <?php } ?>
@@ -192,7 +192,7 @@ echo $OUTPUT->doctype() ?>
         </div>
         <?php echo $OUTPUT->blocks('side-post', 'span'.$spanpost); ?>
     </div>
-
+    <?php echo $OUTPUT->standard_after_main_region_html(); ?>
 </div>
 
 <footer id="page-footer">

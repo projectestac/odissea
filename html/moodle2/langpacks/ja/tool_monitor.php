@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_monitor', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,11 +38,11 @@ $string['defaultmessagetemplate'] = 'ルール名: {rulename}<br />説明: {desc
 $string['deleterule'] = 'ルールを削除する';
 $string['deletesubscription'] = '購読を削除する';
 $string['description'] = '説明:';
-$string['disablefieldswarning'] = 'このルールはすでに購読されているため、いくつかのフィールドを編集することができません。';
+$string['disablefieldswarning'] = 'このルールはすでに購読されているため、いくつかのフィールドは編集することができません。';
 $string['duplicaterule'] = 'ルールを複製する';
 $string['editrule'] = 'ルールを編集する';
 $string['enablehelp'] = 'イベントモニタリングを有効/無効にする';
-$string['enablehelp_help'] = 'あなたがルールを作成および購読するためにはイベントモニタリングを有効にする必要があります。イベントモニタリングを有効にすることによりあなたのサイトのパフォーマンスに影響することに留意してください。';
+$string['enablehelp_help'] = 'あなたがルールを作成および購読するためにはイベントモニタリングを有効にする必要があります。イベントモニタリングを有効にすることにより、あなたのサイトのパフォーマンスに影響することに留意してください。';
 $string['errorincorrectevent'] = '選択されたプラグインに関連するイベントを選択してください。';
 $string['event'] = 'イベント';
 $string['eventnotfound'] = 'イベントが見つかりませんでした。';
@@ -54,7 +54,7 @@ $string['eventsubcriteriamet'] = '購読がクライテリアに合致しまし�
 $string['eventsubdeleted'] = '購読が削除されました。';
 $string['freqdesc'] = '{$a->freq} 回 / {$a->mins} 分';
 $string['frequency'] = '通知頻度';
-$string['frequency_help'] = '送信される通知メッセージの指定期間内のイベント数です。';
+$string['frequency_help'] = '送信される通知メッセージの指定期間内イベント数です。';
 $string['inminutes'] = '分';
 $string['invalidmodule'] = '無効なモジュール';
 $string['manage'] = '管理';
@@ -65,11 +65,11 @@ $string['managesubscriptionslink'] = 'あなたは {$a} ページでルールを
 $string['messageprovider:notification'] = 'ルール購読通知';
 $string['messagetemplate'] = '通知メッセージ';
 $string['messagetemplate_help'] = '通知閾値に達した場合、購読者に通知メッセージが送信されます。以下のプレースホルダのどれかまたはすべてを含むことができます:
-<br /><br />
-* イベントロケーションへのリンク {link}<br />
-* モニタエリアへのリンク {modulelink}<br />
-* ルール名 {rulename}<br />
-* 説明 {description}<br />
+
+* イベントロケーションのリンク {link}
+* モニタエリアへのリンク {modulelink}
+* ルール名 {rulename}
+* 説明 {description}
 * イベント {eventname}';
 $string['moduleinstance'] = 'インスタンス';
 $string['monitordisabled'] = '現在、イベントモニタリングは無効にされています。';
@@ -77,7 +77,7 @@ $string['monitorenabled'] = '現在、イベントモニタリングは有効に
 $string['monitor:managerules'] = 'イベントモニタルールを管理する';
 $string['monitor:managetool'] = 'イベントモニタリングを有効/無効にする';
 $string['monitor:subscribe'] = 'イベントモニタルールを購読する';
-$string['norules'] = '購読できるモニタリングルールはありません。';
+$string['norules'] = 'イベントモニタリングルールはありません。';
 $string['pluginname'] = 'イベントモニタ';
 $string['privacy:createdrules'] = '私が作成したイベントモニタ';
 $string['privacy:metadata:description'] = 'ルール説明';
@@ -85,7 +85,7 @@ $string['privacy:metadata:eventname'] = '省略していないイベント名';
 $string['privacy:metadata:frequency'] = '通知頻度';
 $string['privacy:metadata:historysummary'] = '送信されたメッセージ通知の履歴を保存します。';
 $string['privacy:metadata:inactivedate'] = '休止中の購読が完全に削除されるまでの期間 (日) です。';
-$string['privacy:metadata:lastnotificationsent'] = 'このサブシステムから最後に通知が送信された日時です。';
+$string['privacy:metadata:lastnotificationsent'] = 'この購読から最後に通知が送信された日時です。';
 $string['privacy:metadata:messagesummary'] = '通知はメッセージシステムに送信されます。';
 $string['privacy:metadata:name'] = 'ルール名';
 $string['privacy:metadata:plugin'] = 'プラグインのフランケンスタイル名';
@@ -98,7 +98,7 @@ $string['privacy:metadata:timemodifiedrule'] = 'このルールの最終更新�
 $string['privacy:metadata:timesent'] = 'メッセージの送信日時です。';
 $string['privacy:metadata:timewindow'] = '時間枠 (秒)';
 $string['privacy:metadata:userid'] = 'ルールを作成したユーザのIDです。';
-$string['privacy:metadata:useridhistory'] = 'この通知が送信されたユーザのIDです。';
+$string['privacy:metadata:useridhistory'] = 'この通知の送信先のユーザのIDです。';
 $string['privacy:metadata:useridsub'] = '購読者のIDです。';
 $string['privacy:subscriptions'] = '私のイベントモニタ購読';
 $string['processevents'] = 'イベント処理';

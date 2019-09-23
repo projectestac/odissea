@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'label', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,5 +52,5 @@ $string['modulename_link'] = 'mod/label/view';
 $string['modulenameplural'] = 'Labels';
 $string['pluginadministration'] = 'Label administration';
 $string['pluginname'] = 'Label';
-$string['privacy:metadata'] = 'The mod_label plugin does not store any personal data.';
+$string['privacy:metadata'] = 'The Label resource plugin does not store any personal data.';
 $string['search:activity'] = 'Label';

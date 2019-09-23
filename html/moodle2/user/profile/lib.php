@@ -22,17 +22,23 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-define ('PROFILE_VISIBLE_ALL',     '2');
-// Visible to anyone who can view the user.
-// Editable by the profile owner if they have the moodle/user:editownprofile capability
-// or any user with the moodle/user:update capability.
-define ('PROFILE_VISIBLE_PRIVATE', '1');
-// Visible to the profile owner or anyone with the moodle/user:viewalldetails capability.
-// Editable by the profile owner if they have the moodle/user:editownprofile capability
-// or any user with moodle/user:viewalldetails and moodle/user:update capabilities.
-define ('PROFILE_VISIBLE_NONE',    '0');
-// Only visible to users with the moodle/user:viewalldetails capability.
-// Only editable by users with the moodle/user:viewalldetails and moodle/user:update capabilities.
+/**
+ * Visible to anyone who can view the user.
+ * Editable by the profile owner if they have the moodle/user:editownprofile capability
+ * or any user with the moodle/user:update capability.
+ */
+define('PROFILE_VISIBLE_ALL', '2');
+/**
+ * Visible to the profile owner or anyone with the moodle/user:viewalldetails capability.
+ * Editable by the profile owner if they have the moodle/user:editownprofile capability
+ * or any user with moodle/user:viewalldetails and moodle/user:update capabilities.
+ */
+define('PROFILE_VISIBLE_PRIVATE', '1');
+/**
+ * Only visible to users with the moodle/user:viewalldetails capability.
+ * Only editable by users with the moodle/user:viewalldetails and moodle/user:update capabilities.
+ */
+define('PROFILE_VISIBLE_NONE', '0');
 
 /**
  * Base class for the customisable profile fields.
@@ -179,6 +185,10 @@ class profile_field_base {
         $data = new stdClass();
 
         $usernew->{$this->inputname} = $this->edit_save_data_preprocess($usernew->{$this->inputname}, $data);
+        if (!isset($usernew->{$this->inputname})) {
+            // Field cannot be set to null, set the default value.
+            $usernew->{$this->inputname} = $this->field->defaultdata;
+        }
 
         $data->userid  = $usernew->id;
         $data->fieldid = $this->field->id;
@@ -610,7 +620,7 @@ function profile_definition($mform, $userid = 0) {
         $fieldstodisplay = [];
 
         foreach ($fields as $formfield) {
-            if ($formfield->is_visible()) {
+            if ($formfield->is_editable()) {
                 $fieldstodisplay[] = $formfield;
             }
         }
@@ -806,14 +816,36 @@ function profile_get_custom_fields($onlyinuserobject = false) {
 /**
  * Load custom profile fields into user object
  *
- * Please note originally in 1.9 we were using the custom field names directly,
- * but it was causing unexpected collisions when adding new fields to user table,
- * so instead we now use 'profile_' prefix.
- *
  * @param stdClass $user user object
  */
 function profile_load_custom_fields($user) {
     $user->profile = (array)profile_user_record($user->id);
+}
+
+/**
+ * Save custom profile fields for a user.
+ *
+ * @param int $userid The user id
+ * @param array $profilefields The fields to save
+ */
+function profile_save_custom_fields($userid, $profilefields) {
+    global $DB;
+
+    if ($fields = $DB->get_records('user_info_field')) {
+        foreach ($fields as $field) {
+            if (isset($profilefields[$field->shortname])) {
+                $conditions = array('fieldid' => $field->id, 'userid' => $userid);
+                $id = $DB->get_field('user_info_data', 'id', $conditions);
+                $data = $profilefields[$field->shortname];
+                if ($id) {
+                    $DB->set_field('user_info_data', 'data', $data, array('id' => $id));
+                } else {
+                    $record = array('fieldid' => $field->id, 'userid' => $userid, 'data' => $data);
+                    $DB->insert_record('user_info_data', $record);
+                }
+            }
+        }
+    }
 }
 
 /**

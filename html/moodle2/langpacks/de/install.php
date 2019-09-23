@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -128,7 +128,6 @@ $string['memorylimithelp'] = '<p>Die PHP-Einstellung memory_limit Ihres Servers 
 <li>Auf einigen PHP-Servern können Sie eine .htaccess-Datei im Moodle-Verzeichnis einrichten. Tragen Sie darin die folgende Zeile ein: <p><blockquote><div>php_value memory_limit 40M</div></blockquote></p>
 <p>Achtung: auf einigen Servern hindert diese Einstellung <b>alle</b> PHP-Seiten und Sie erhalten Fehlermeldungen. Entfernen Sie dann den Eintrag in der .htaccess-Datei wieder.</p></li>
 </ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'PHP ist nicht richtig konfiguriert, um über die PHP-Extension MSSQL mit dem SQL*Server zu kommunizieren. Bitte prüfen Sie die Datei php.ini oder kompilieren Sie PHP neu.';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP ist nicht richtig konfiguriert, um über die PHP-Extension MySQLi mit der MySQL-Datenbank zu kommunizieren. Prüfen Sie die Datei php.ini oder kompilieren Sie PHP neu.';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>Die Datenbank, in der Moodle seine Einstellungen und Daten speichert, muss konfiguriert werden.</p>
@@ -136,8 +135,6 @@ $string['nativemariadbhelp'] = '<p>Die Datenbank, in der Moodle seine Einstellun
 <p>Der Datenbankname darf nur alphanumerische Zeichen, Dollar ($) und den Unterstrich (_) enthalten.</p>
 <p>Wenn die Datenbank noch nicht existert und der angegebene Nutzer über die entsprechenden Rechte verfügt, wird Moodle versuchen, die Datenbank mit den richtigen Rechten und Einstellungen selber anzulegen</p>
 <p> Dieser Treiber ist nicht kompatibel mit der älteren MyISAM-Engine.</p>';
-$string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
-$string['nativemssqlhelp'] = 'Sie müssen die Datenbank für die Speicherung der Moodle-Daten konfigurieren. Die Datenbank muss bereits angelegt sein. Ein Nutzername und das zugehörige Kennwort  für den Datenbank-Zugriff müssen bereits existieren. Das Tabellen-Prefix ist verbindlich.';
 $string['nativemysqli'] = 'Verbessertes MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p>Die Datenbank, in der Moodle seine Einstellungen und Daten speichert, muss konfiguriert werden.</p>
 <p>Datenbankname, Nutzername und Kennwort sind Pflichtfelder. Tabellenpräfix ist optional.</p>

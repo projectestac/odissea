@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['auth_updateremote_ldap'] = '<p><b>Oharra:</b> LDAP kanpoko datuen egune
 $string['auth_user_create'] = 'Gaitu erabiltzaileen sorrera';
 $string['auth_user_creation'] = 'Erabiltzaile anonimo berriek erabiltzaile-kontuak autentifikazioko kanpo kodearen gainean sor ditzakete eta e-mailez baieztatu. Hau indarrean jartzen baduzu, erabiltzaileen sorrerarako moduluaren aukerak ere ezarri behar dituzula gogoratu.';
 $string['auth_usernameexists'] = 'Aukeratutako erabiltzailearen izena honez gero badago. Beste bat aukeratu, mesedez.';
+$string['auth_usernotexist'] = 'Ezin da existitzen ez den erabiltzailea eguneratu: {$a}';
 $string['auto_add_remote_users'] = 'Gehitu automatikoki urrutiko erabiltzaileak';
 $string['cannotmapfield'] = '"{$a->fieldname}" eremua ezin da lotu bere izen laburra "{$a->shortname}" luzeegia delako. Lotura egitea baimentzeko, izen laburra  {$a->charlimit} karaktereko luzerara murriztu beharko duzu. <a href="{$a->link}">Editatu erabiltzaile profilaren eremuak</a>';
 $string['changepassword'] = 'Pasahitza aldatzeko URLa';
@@ -105,11 +106,11 @@ $string['errorpasswordupdate'] = 'Errorea pasahitza eguneratzean, pasahitza ez d
 $string['eventuserloggedin'] = 'Erabiltzailea hemen sartu da:';
 $string['eventuserloggedinas'] = 'Erabiltzailea beste erabiltzaile bat bezala sartu da';
 $string['eventuserloginfailed'] = 'Erabiltzailearen saio-hasierak huts egin du';
-$string['forcechangepassword'] = 'Pasahitz aldaketa behartu';
-$string['forcechangepasswordfirst_help'] = 'Erabiltzaileak Moodle-n sartzen diren lehenengoan pasahitza aldatzera behartu.';
-$string['forcechangepassword_help'] = 'Erabiltzaileak Moodle-n sartzen diren hurrengoan pasahitza aldatzera behartu.';
+$string['forcechangepassword'] = 'Behartu pasahitz aldaketa';
+$string['forcechangepasswordfirst_help'] = 'Behartu pasahitza aldatzera erabiltzaileak Moodle-n sartzen diren lehenengo aldian.';
+$string['forcechangepassword_help'] = 'Behartu pasahitza aldatzera erabiltzaileak Moodle-n sartzen diren hurrengo aldian.';
 $string['forgottenpassword'] = 'Hemen URL bat idatziz gero, gune honetan galdu diren pasahitzak berreskuratzeko orri gisa erabiliko da. Aukera hau pentsatuta dago pasahitzak Moodle-tik kanpo kudeatzen diren guneetarako. Hutsik utz ezazu pasahitza berreskuratzeko lehenetsitako orria erabiltzeko.';
-$string['forgottenpasswordurl'] = 'Ahaztutako pasahitzetarako URLa';
+$string['forgottenpasswordurl'] = 'Ahaztutako pasahitzaren URLa';
 $string['getanaudiocaptcha'] = 'Eskuratu CAPTCHA audio bat';
 $string['getanimagecaptcha'] = 'Eskuratu CAPTCHA irudi bat';
 $string['getanothercaptcha'] = 'Eskuratu beste CAPTCHA bat';
@@ -145,7 +146,7 @@ $string['privacy:metadata:userpref:createpassword'] = 'Erabiltzailearentzako pas
 $string['privacy:metadata:userpref:forcepasswordchange'] = 'Erabiltzaileak saioa hastean bere pasahitza aldatu behar duen edo ez adierazten du';
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Erabiltzaileak saio-hastean egindako huts kopurua';
 $string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Erabiltzaileak azken saio-haste arrakastatsuaren ondoren huts egindako saio-hasiera saiakera kopurua';
-$string['privacy:metadata:userpref:loginfailedlast'] = 'Huts egindako azken saio-hasiera saikeraren unea';
+$string['privacy:metadata:userpref:loginfailedlast'] = 'Huts egindako azken saio-hasiera saiakera gorde zeneko unea';
 $string['privacy:metadata:userpref:loginlockout'] = 'Huts egindako saio-hasiera saiakeren ondorioz erabiltzaile-kontua blokeatuta dagoen edo ez, eta erabiltzaile-kontua blokeatu zeneko data';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Erabiltzaile-kontu bat blokeatu ezin daitekela adierazten du';
 $string['privacy:metadata:userpref:loginlockoutsecret'] = 'Blokeatuta dagoenean, erabiltzaileak bere kontua desblokeatzeko erabili beharreko sekretua';

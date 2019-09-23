@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_date', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'datafield_date', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   datafield_date
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'حقل التاريخ';
+$string['pluginname'] = 'التاريخ';
+$string['privacy:metadata'] = 'لا يخزن Date field  أي بيانات شخصية ، فهو يستخدم الجداول المعرفة في mod_data.';

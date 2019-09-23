@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_interactions', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scormreport_interactions', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   scormreport_interactions
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['pluginname'] = 'تقرير التفاعلات';
+$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = 'ما إذا كان سيتم عرض ملخص الأسئلة في تقرير تفاعلات سكورم';
+$string['privacy:metadata:preference:scorm_report_interactions_resp'] = 'ما إذا كان سيتم عرض ملخص الردود في تقرير تفاعلات سكورم';
+$string['privacy:metadata:preference:scorm_report_interactions_result'] = 'ما إذا كان سيتم عرض ملخص النتائج في تقرير تفاعلات سكورم';
+$string['privacy:metadata:preference:scorm_report_interactions_right'] = 'ما إذا كان سيتم عرض ملخص الإجابات الصحيحة في تقرير تفاعلات سكورم';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'عدد المستخدمين المراد عرضها في تقارير سكورم';
 $string['questionx'] = 'سؤال {$a}';
+$string['responsex'] = 'الاستجابة {$a}';
+$string['resultx'] = 'النتيجة {$a}';
+$string['rightanswerx'] = 'الجواب الصحيح  {$a}';
+$string['summaryofquestiontext'] = 'ملخص السؤال';
+$string['summaryofresponse'] = 'ملخص الاستجابات';
+$string['summaryofresult'] = 'ملخص النتيجة';
+$string['summaryofrightanswer'] = 'ملخص الإجابات الصحيحة';

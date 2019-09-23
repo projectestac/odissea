@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_quiz_results', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Galdetegiaren emaitzak (desgaituta)';
-$string['privacy:metadata'] = 'Galdetegien emaitzak blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
+$string['privacy:metadata'] = 'Galdetegien emaitzak blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['quiz_results:addinstance'] = 'Gehitu galdetegiaren emaitzak bloke berria';

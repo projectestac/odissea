@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['confirmsave'] = '{$a} を確認して保存する';
 $string['correctanswer'] = '正解';
 $string['correctanswerandfeedback'] = '正解およびフィードバック';
 $string['decodeverifyquestiontext'] = '問題テキストをデコードおよび確認する';
+$string['invalidmultianswerquestion'] = '無効な穴埋め問題 (Cloze) です ({$a})。';
 $string['layout'] = 'レイアウト';
 $string['layouthorizontal'] = 'ラジオボタンの横の列';
 $string['layoutmultiple_horizontal'] = 'チェックボックスの横の列';

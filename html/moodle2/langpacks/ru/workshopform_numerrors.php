@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredimensions'] = 'Добавить еще утверждений - {$a}';
 $string['configgrade0'] = 'Текст по умолчанию, описывающий негативную оценку за утверждение.';
 $string['configgrade1'] = 'Текст по умолчанию, описывающий позитивную оценку за утверждение.';
-$string['dimensioncomment'] = 'Комментарий';
 $string['dimensioncommentfor'] = 'Комментарий к {$a}';
 $string['dimensiondescription'] = 'Описание';
 $string['dimensiongrade'] = 'Оценка';
@@ -41,6 +40,5 @@ $string['grade1default'] = 'Да';
 $string['grademapping'] = 'Таблица сопоставления оценок';
 $string['maperror'] = 'Взвешенное количество ошибок меньше или равно';
 $string['mapgrade'] = 'Оценка работы';
-$string['percents'] = '{$a} %';
 $string['pluginname'] = 'Количество ошибок';
 $string['privacy:metadata'] = 'Плагин Количество ошибок хранит только данные формы оценивания. Фактические личные данные о том, как форма была заполнена, хранятся в самом модуле Семинар и прикрепляются к экспортированным оценкам.';

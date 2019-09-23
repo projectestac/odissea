@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_xmldb', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -158,7 +158,7 @@ $string['newtable'] = 'Nova tabela';
 $string['newtablefrommysql'] = 'Nova tabela do MySQL';
 $string['new_table_from_mysql'] = 'Nova tabela do MySQL';
 $string['nofieldsspecified'] = 'Não foram especificados campos';
-$string['nomasterprimaryuniquefound'] = 'A(s) coluna(s) que a chave externa referencia devem estar incluídas numa chave primária ou única na tabela referenciada. Note que, a couluna estar num índice único não é suficiente.';
+$string['nomasterprimaryuniquefound'] = 'A(s) coluna(s) que a chave externa referencia devem estar incluídas numa chave primária ou única na tabela referenciada. Tenha em atenção que, a coluna estar num índice único não é suficiente.';
 $string['nomissingindexesfound'] = 'Não foram encontrados índices em falta, a sua BD não necessita de ações subsequentes.';
 $string['noreffieldsspecified'] = 'Não existem campos de referência especificados';
 $string['noreftablespecified'] = 'Tabela de referência especificada não encontrada';
@@ -168,6 +168,7 @@ $string['nowrongintsfound'] = 'Não foram encontrados inteiros errados, a sua BD
 $string['nowrongoraclesemanticsfound'] = 'Não foram encontradas colunas Oracle usando semânticas BYTE, a sua BD não necessita de ações subsequentes.';
 $string['numberincorrectdecimals'] = 'Número incorreto de decimais para campo numérico';
 $string['numberincorrectlength'] = 'Tamanho incorreto para campo numérico';
+$string['numberincorrectwholepart'] = 'Parte de número inteiro muito grande para o campo de número';
 $string['pendingchanges'] = 'Nota: Fez alterações a este ficheiro. Estas podem ser gravadas a qualquer momento.';
 $string['pendingchangescannotbesaved'] = 'Há alterações a este ficheiro mas não podem ser gravadas! Verifique que tanto a diretoria como o ficheiro "install.xml" têm permissões de escrita para o servidor web.';
 $string['pendingchangescannotbesavedreload'] = 'Existem alterações a este ficheiro mas não podem ser guardadas! Verifique que tanto a diretoria como o ficheiro "install.xml" têm permissões de escrita para o servidor web. Em seguida, atualize/recarregue esta página e deverá estar em condições de poder guardar as alterações.';
@@ -218,5 +219,6 @@ $string['yesmissingindexesfound'] = '<p>Foram encontrados índices em falta na s
 <p>Depois de executar os comandos é altamente recomendado que execute esta funcionalidade novamente para verificar que não existem mais índices em falta.</p>';
 $string['yeswrongdefaultsfound'] = '<p>Foram encontradas predefinições erradas na sua BD. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL favorita para os criar todos (não se esqueça de fazer primeiro uma cópia de segurança dos seus dados).</p>
 <p>Depois de executar os comandos é altamente recomendado que execute esta funcionalidade novamente para verificar que não existem mais índices em falta.</p>';
-$string['yeswrongintsfound'] = 'Foram encontrados números inteiros errados na sua BD. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL favorita para os criar todos (não se esqueça de fazer uma cópia de segurança da sua informação antes de o fazer).<br /><br />Depois de executar os comandos é altamente recomendado que execute esta funcionalidade novamente para verificar que não existem mais números inteiros errados.';
-$string['yeswrongoraclesemanticsfound'] = 'Foram encontradas colunas Oracle usando semânticas BYTE na sua BD. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL favorita para os criar todos (não se esqueça de fazer uma cópia de segurança da sua informação antes de o fazer).<br /><br />Depois de executar os comandos é altamente recomendado que execute esta funcionalidade novamente para verificar que não existem mais semânticas erradas.';
+$string['yeswrongintsfound'] = '<p>Foram encontrados números inteiros errados na sua BD. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL favorita para os corrigir. Não se esqueça de fazer uma cópia de segurança da sua informação antes de o fazer.</p>
+<p>Depois de os corrigir, é altamente recomendado que execute esta funcionalidade novamente para verificar que não existem mais números inteiros errados.';
+$string['yeswrongoraclesemanticsfound'] = 'Foram encontradas colunas Oracle usando semânticas BYTE na sua BD. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL escolhida para os criar todos (não se esqueça de fazer uma cópia de segurança da sua informação antes de os executar).<p/>Depois de executar os comandos é altamente recomendado que execute esta funcionalidade novamente para verificar que não existem mais semânticas erradas.';

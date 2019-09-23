@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_file', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,9 +36,9 @@ $string['default_help'] = 'Questo metodo di commento sarà abilitato di default 
 $string['enabled'] = 'File di commento';
 $string['enabled_help'] = 'Consente al docente di caricare file con i propri commenti durante la valutazione dei compiti. Tali file possono essere i compiti degli studenti valutati, documenti, o file audio con il commento parlato.';
 $string['feedbackfileadded'] = 'Nuovo file di commento "{$a->filename}" per lo studente "{$a->student}"';
-$string['feedbackfileupdated'] = 'Modificato file di commento "{$a->filename}" per lo stidente "{$a->student}"';
+$string['feedbackfileupdated'] = 'Modificato file di commento "{$a->filename}" per lo studente "{$a->student}"';
 $string['feedbackzip'] = 'File zip contenente di feedback';
-$string['feedbackzip_help'] = 'Un file zip contenente un elenco di file di commento per gli studenti. I file di commento saranno distribuiti tra i partecipanti in base alla loro id, da inserire nella seconda parte di ciascun nome di file subito dopo il nome completo dell\'utente. Questa convenzione viene usata all\'atto dello scaricamento delle consegne, in questo modo è possibile aggiungere commenti su alcuni file, comprimere il tutto in zip, e ricaricare i file. I file senza modifiche saranno ignorati.';
+$string['feedbackzip_help'] = 'Un file zip contenente un elenco di file di commento per gli studenti. I file di commento saranno distribuiti tra i partecipanti in base alla loro id, da inserire nella seconda parte di ciascun nome di file subito dopo il nome e cognome dell\'utente. Questa convenzione viene usata all\'atto dello scaricamento delle consegne, in questo modo è possibile aggiungere commenti su alcuni file, comprimere il tutto in zip, e ricaricare i file. I file senza modifiche saranno ignorati.';
 $string['file'] = 'File di commento';
 $string['filesadded'] = 'File di commento inseriti: {$a}';
 $string['filesupdated'] = 'File di commento aggiornati: {$a}';
@@ -49,7 +49,7 @@ $string['maximumsize'] = 'Dimensione massima file';
 $string['moreusers'] = '{$a} successivi...';
 $string['nochanges'] = 'Nessuna modifica';
 $string['pluginname'] = 'File di commento';
-$string['privacy:metadata:filepurpose'] = 'File di feedback inviati dal docente allo studente,';
+$string['privacy:metadata:filepurpose'] = 'File di feedback inviati dal docente allo studente.';
 $string['privacy:path'] = 'File di feedback';
 $string['selectedusers'] = 'Utenti selezionati';
 $string['uploadfiles'] = 'Invia file di commento';

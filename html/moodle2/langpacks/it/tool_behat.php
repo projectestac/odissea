@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_behat', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['pluginname'] = 'Test di accettazione';
 $string['privacy:metadata'] = 'Il plugin \'Test di accettazione\' non memorizza dati personali.';
 $string['stepsdefinitionscomponent'] = 'Area';
 $string['stepsdefinitionscontains'] = 'Contiene';
-$string['stepsdefinitionsfilters'] = 'Definizione step';
+$string['stepsdefinitionsfilters'] = 'Definizioni di step';
 $string['stepsdefinitionstype'] = 'Tipo';
 $string['theninfo'] = 'Poi. Verifiche per assicurarsi che i risultati ottenuti siano quelli attesi.';
 $string['unknownexceptioninfo'] = 'Si è verificato un errore in Selenium o nel browser. Per favore accertati di usare la versione più recente di Selenium: Errore:';

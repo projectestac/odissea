@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lti', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -121,8 +121,8 @@ $string['editdescription'] = 'Tragen Sie eine Beschreibung des Tools ein.';
 $string['edittype'] = 'Vorkonfiguriertes Tool bearbeiten';
 $string['embed'] = 'Eingebettet';
 $string['embed_no_blocks'] = 'Eingebettet ohne Blöcke';
-$string['enableemailnotification'] = 'E-Mail-Mitteilungen senden';
-$string['enableemailnotification_help'] = 'Nach der Aktivierung erhalten Teilnehmende E-Mail-Benachrichtungen wenn ihre Leistungen bewertet wurden.';
+$string['enableemailnotification'] = 'E-Mail-Systemnachrichten senden';
+$string['enableemailnotification_help'] = 'Nach der Aktivierung erhalten Teilnehmer/innen E-Mail-Systemnachrichten, wenn ihre Leistungen bewertet wurden.';
 $string['enterkeyandsecret'] = 'Geben Sie Ihre Zugangskennung und den Schlüssel (secret) ein.';
 $string['enterkeyandsecret_help'] = 'Fall Sie einen Consumer-Key und/oder ein Shared Secret erhalten haben, geben sie diese bitte hier ein.';
 $string['errorbadurl'] = 'Die URL ist keine gültige URL für ein Tool oder ein Cartridge.';
@@ -193,7 +193,7 @@ Wenn Sie ein vorkonfigurierten Tool ausgewählt haben, brauchen sie keine Tool-U
 $string['leaveblank'] = 'Lassen Sie dies leer, wenn Sie die Angaben nicht brauchen.';
 $string['lti'] = 'Externes Tool';
 $string['lti:addcoursetool'] = 'Kursspezifisch LTI Aktivitäten konfigurieren';
-$string['lti:addinstance'] = 'Aktivität \'Externes Tool\' hinzufügen';
+$string['lti:addinstance'] = 'Neue Aktivität \'Externes Tool\' hinzufügen';
 $string['lti:admin'] = 'Tool als Administrator ausführen';
 $string['lti_administration'] = 'Vorkonfiguriertes Tool bearbeiten';
 $string['lti_errormsg'] = 'Das Tool gab folgende Fehlermeldung zurück: \'{$a}\'';
@@ -415,6 +415,8 @@ $string['tooltypenotdeleted'] = 'Das vorkonfigurierte Tool kann nicht gelöscht 
 $string['tooltypes'] = 'Tools';
 $string['tooltypeupdated'] = 'Vorkonfiguriertes Tool aktualisiert';
 $string['toolurl'] = 'Tool URL';
+$string['toolurl_contentitemselectionrequest'] = 'Inhalts-URL';
+$string['toolurl_contentitemselectionrequest_help'] = 'Die Inhalts URL wird verwendet, um die Inhalts-Auswahlsseite des Tool-Anbieters aufzurufen. Wenn der Eintrag leer ist, wird die Tool-URL genutzt.';
 $string['toolurl_help'] = 'Die Basis-URL des Tools wird verwendet um die Start URLs mit der korrekten Konfiguration zu verknüpfen. Die Verwendung von http(s) am Beginn ist optional.
 
 Die Basis-URL wird auch verwendet wenn das Tool keine separate Start-URL zur Verfügung stellt.

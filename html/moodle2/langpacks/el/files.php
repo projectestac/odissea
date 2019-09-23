@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'files', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   files
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:metadata:core_userkey'] = 'Δημιουργείται και αποθηκεύεται ένα ιδιωτικό κουπόνι. Αυτό το κουπόνι μπορεί να χρησιμοποιηθεί για την πρόσβαση σε αρχεία Moodle χωρίς να χρειάζεται να συνδεθείτε.';
 $string['privacy:metadata:files'] = 'Ιστορικό των αρχείων που ανέβηκαν ή μοιράστηκαν από χρήστες';
 $string['privacy:metadata:files:author'] = 'Ο συγγραφέας του περιεχομένου του αρχείου';
 $string['privacy:metadata:files:contenthash'] = 'Μια σύνοψη κατατεμαχισμού (για επιβεβαίωση ακεραιότητας) του περιεχομένου του αρχείου';

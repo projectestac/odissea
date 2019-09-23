@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,8 @@ $string['commentindex'] = 'Index der Kommentare';
 $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Seite konnte nicht gespeichert werden {$a}';
 $string['currentstamp'] = 'Stempel';
+$string['default'] = 'Standardmäßig aktiviert';
+$string['default_help'] = 'Die gewählte Feedback-Methode wird für alle neuen Aufgaben voreingestellt.';
 $string['deleteannotation'] = 'Anmerkung löschen';
 $string['deletecomment'] = 'Kommentar löschen';
 $string['deletefeedback'] = 'Feedback.pdf löschen';
@@ -65,12 +67,13 @@ $string['jsrequired'] = 'Das Kommentieren der PDF Dateien erfordert Javascript. 
 $string['launcheditor'] = 'PDF-Editor laden...';
 $string['line'] = 'Linie';
 $string['loadingeditor'] = 'PDF-Editor wird geladen';
-$string['navigatenext'] = 'Nächste Seite';
-$string['navigateprevious'] = 'Vorherige Seite';
+$string['navigatenext'] = 'Nächste Seite (Alt/Shift-Alt/Ctrl-Option + {$a})';
+$string['navigateprevious'] = 'Vorherige Seite (Alt/Shift-Alt/Ctrl-Option + {$a})';
 $string['output'] = 'Ausgabe:';
 $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Seite {$a}';
 $string['pagexofy'] = 'Seite {$a->page} von {$a->total}';
+$string['partialwarning'] = 'Eine eingereichet Dateien stehen nur zum direkten Download zur Verfügung.';
 $string['pathtogspathdesc'] = 'Beachten Sie, dass für ein beschreibbares PDF der Pfad zu Ghostscript in {$a} eingetragen sein muss.';
 $string['pen'] = 'Stift';
 $string['pluginname'] = 'Anmerkungen im PDF';

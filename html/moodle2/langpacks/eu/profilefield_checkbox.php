@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_checkbox', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'profilefield_checkbox', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   profilefield_checkbox
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Kontrol-laukitxoa';
-$string['privacy:metadata:profilefield_checkbox:data'] = 'Gordetako erabiltzaile-datuak.';
-$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Gordetako erabiltzaile-datuen formatua.';
-$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'Profil-eremuaren IDa.';
-$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Hemen erabiltzaile-informazio gehigarria gordetzen da.';
-$string['privacy:metadata:profilefield_checkbox:userid'] = 'Kontrol-laukia pluginak gordetzen dituen datuen jabea den erabiltzailearen IDa.';
+$string['privacy:metadata:profilefield_checkbox:data'] = 'Erabiltzaile-profilaren eremuko laukitxoaren erabiltzaile-datuak';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Erabiltzaile-profilaren eremuko laukitxoaren erabiltzaile-datuen formatua';
+$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'Profil-eremuaren IDa';
+$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Erabiltzaile-profileko informazio gehigarria';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'Erabiltzaile-profilaren eremuko laukitxoaren pluginak gordetzen dituen datuen erabiltzailearen IDa';

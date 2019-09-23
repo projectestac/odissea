@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_overview', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,10 +40,10 @@ $string['expandall'] = 'Zabaldu ikastaro-zerrenda guztiak';
 $string['favourites'] = 'Gogokoak';
 $string['fullpath'] = 'Kategoria eta azpikategoria guztika';
 $string['help'] = 'Laguntza';
-$string['help_help'] = '\'Pertsonalizatu orri hau\', ondoren hartu-eta-eramana ikastaroen ordena aldatzeko. Klik egin jardueren ikonoan ikuspegi orokorra ikusteko.';
+$string['help_help'] = '\'Pertsonalizatu orri hau\', ondoren hartu-eta-eramana ikastaroen ordena aldatzeko. Egin klik jardueren ikonoan ikuspegi orokorra ikusteko.';
 $string['keepfavourites'] = 'Mantendu gogokoak ikastaroen zerrendan';
 $string['keepfavouritesdesc'] = 'Erakutsi ikastaroak ikastaroen fitxa nagusian gogokoen fitxan badaude ere';
-$string['makefavourite'] = 'Egin gogokotzat';
+$string['makefavourite'] = 'Markatu gogokotzat';
 $string['message'] = 'mezua';
 $string['messages'] = 'mezuak';
 $string['morecoursestext'] = 'Zerrendatu Ikastaro Gehiago';
@@ -65,10 +65,11 @@ $string['privacy:metadata:courseorder'] = 'Erakutsitako ikastaroen zerrenda orde
 $string['privacy:metadata:coursesortorder'] = 'Ikastaroen sailkatze-ordena (bertsio zaharra)';
 $string['privacy:metadata:favourites'] = 'Ikastaro gogokoen zerrenda ordenatua';
 $string['privacy:metadata:numberofcourses'] = 'Erakutsitako ikastaro kopurua';
-$string['privacy:metadata:sortorder'] = 'Ordena-mota';
+$string['privacy:metadata:sortorder'] = 'Sailkatze-ordena';
 $string['removefavourite'] = 'Ezabatu gogokoa';
 $string['reorderfullname'] = 'Ikastaroaren izen osoa';
 $string['reorderid'] = 'Ikastaroaren IDa';
+$string['reorderiddesc'] = 'Ikastaroaren IDaren deskribapena';
 $string['reordernone'] = 'Hartu-eta-eramana ordenatzea';
 $string['reordershortname'] = 'Ikastaroaren izen laburrra';
 $string['setmaxcourses'] = 'Ezarri gehienezko ikastaro-kopurua';
@@ -80,7 +81,7 @@ $string['shortnamesufixprural'] = '(eta beste {$a})';
 $string['shortnamesufixsingular'] = '(eta beste {$a})';
 $string['showcategories'] = 'Erakusteko kategoriak';
 $string['showcategoriesdesc'] = 'Ikastaro bakoitzaren azpian  ikastaro-kategoria guztiak erakutsiko dira?';
-$string['sortorder'] = 'Ordena-mota';
+$string['sortorder'] = 'Sailkatze-ordena';
 $string['title'] = 'Ikuspegi orokorra';
 $string['unfavourite'] = 'Ezabatu gogokoa';
 $string['userchoosezero'] = '(erabili lehenespena)';

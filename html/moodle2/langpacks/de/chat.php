@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'chat', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = 'Es gibt einen angekündigten Chat.';
-$string['ajax'] = 'Chat mit Ajax';
+$string['ajax'] = 'Version mit Ajax';
 $string['autoscroll'] = 'Automatisch scrollen';
 $string['beep'] = 'Beep';
 $string['bubble'] = 'Bubble';
@@ -63,9 +63,9 @@ $string['deletesession'] = 'Diese Sitzung löschen';
 $string['deletesessionsure'] = 'Möchten Sie diese Sitzung wirklich löschen?';
 $string['donotusechattime'] = 'Keinen Termin anzeigen';
 $string['enterchat'] = 'Chat betreten';
-$string['entermessage'] = 'Schreiben Sie Ihre Nachricht.';
+$string['entermessage'] = 'Schreiben Sie Ihre Mitteilung';
 $string['errornousers'] = 'Niemanden gefunden!';
-$string['eventmessagesent'] = 'Nachricht gesendet';
+$string['eventmessagesent'] = 'Mitteilung  gesendet';
 $string['eventsessionsviewed'] = 'Sitzungen angezeigt';
 $string['explaingeneralconfig'] = 'Diese Einstellungen werden <strong>immer</strong> benutzt';
 $string['explainmethoddaemon'] = 'Diese Einstellungen sind <strong>nur erforderlich</strong>, wenn Sie die Methode \'Chat-Server-Daemon\' gewählt haben';
@@ -88,9 +88,9 @@ $string['messageexit'] = '{$a} hat den Chat verlassen';
 $string['messages'] = 'Mitteilungen';
 $string['messageyoubeep'] = 'Sie haben {$a} angepiepst';
 $string['method'] = 'Chat-Methode';
-$string['methodajax'] = 'Ajax-Chat';
+$string['methodajax'] = 'Ajax';
 $string['methoddaemon'] = 'Chat-Server-Daemon';
-$string['methodnormal'] = 'Standard-Chat';
+$string['methodnormal'] = 'Standard';
 $string['modulename'] = 'Chat';
 $string['modulename_help'] = 'Im Chat diskutieren kleine Gruppen bis zu sechs Personen aktuelle Lerninhalte und Aufgaben.
 

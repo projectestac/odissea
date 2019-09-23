@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'webservice', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,11 +83,11 @@ $string['errorcatcontextnotvalid'] = 'Δεν μπορείτε να εκτελέ�
 $string['errorcodes'] = 'Μήνυμα σφάλματος';
 $string['errorcoursecontextnotvalid'] = 'Δεν μπορείτε να εκτελέσετε λειτουργίες στο πλαίσιο του μαθήματος με αναγνωριστικό: {$a->courseid}. Το συναφές μήνυμα σφάλματος ήταν: {$a->message}';
 $string['errorinvalidparam'] = 'Η παράμετρος «{a$}» είναι μη έγκυρη.';
-$string['errornotemptydefaultparamarray'] = 'Η παράμετρος περιγραφής της υπηρεσίας ιστού με όνομα \'{$a}\' είναι μια απλή ή πολλαπλή δομή. Η προεπιλογή μπορεί να είναι μόνο κενός πίνακας. Ελέγξτε την περιγραφή υπηρεσίας ιστού.';
-$string['erroroptionalparamarray'] = 'Η παράμετρος περιγραφής της υπηρεσίας ιστού με όνομα \'{$a}\' είναι μια απλή ή πολλαπλή δομή. Δεν μπορεί να οριστεί ως VALUE_OPTIONAL. Ελέγξτε την περιγραφή υπηρεσίας ιστού.';
+$string['errornotemptydefaultparamarray'] = 'Η παράμετρος περιγραφής της υπηρεσίας ιστού με όνομα «{$a}» είναι μια απλή ή πολλαπλή δομή. Η προεπιλογή μπορεί να είναι μόνο κενός πίνακας. Ελέγξτε την περιγραφή υπηρεσίας ιστού.';
+$string['erroroptionalparamarray'] = 'Η παράμετρος περιγραφής της υπηρεσίας ιστού με όνομα «{$a}» είναι μια απλή ή πολλαπλή δομή. Δεν μπορεί να οριστεί ως VALUE_OPTIONAL. Ελέγξτε την περιγραφή υπηρεσίας ιστού.';
 $string['eventwebservicefunctioncalled'] = 'Κλήθηκε λειτουργία υπηρεσίας ιστού';
 $string['eventwebserviceloginfailed'] = 'Η σύνδεση με την υπηρεσία ιστού απέτυχε';
-$string['eventwebserviceservicecreated'] = 'Η υπηρεσία «υπηρεσία ιστού» δημιουργήθηκε';
+$string['eventwebserviceservicecreated'] = 'Η υπηρεσία ιστού δημιουργήθηκε';
 $string['eventwebserviceservicedeleted'] = 'Η υπηρεσία ιστού  διαγράφηκε';
 $string['eventwebserviceserviceupdated'] = 'Η υπηρεσία ιστού  ενημερώθηκε';
 $string['eventwebserviceserviceuseradded'] = 'Ο χρήστης της υπηρεσίας ιστού  προστέθηκε';
@@ -108,13 +108,13 @@ $string['functions'] = 'Λειτουργίες';
 $string['generalstructure'] = 'Γενική δομή';
 $string['information'] = 'Πληροφορίες';
 $string['installexistingserviceshortnameerror'] = 'Μια υπηρεσία ιστού με το σύντομο όνομα «{$a}» υπάρχει ήδη. Δεν είναι δυνατή η εγκατάσταση/ενημέρωση μιας διαφορετικής υπηρεσίας ιστού με αυτό το σύντομο όνομα.';
-$string['installserviceshortnameerror'] = 'Σφάλμα κωδικοποίησης: Το σύντομο όνομα υπηρεσίας «{$a}» θα πρέπει να περιέχει αριθμούς, γράμματα και \'_\', \'.\', \'-\' μόνο.';
+$string['installserviceshortnameerror'] = 'Σφάλμα κωδικοποίησης: Το σύντομο όνομα υπηρεσίας «{$a}» μπορεί να περιέχει μόνο αλφαριθμητικούς χαρακτήρες (γράμματα και αριθμούς), κάτω παύλα (_), παύλα (-) ή τελεία (.).';
 $string['invalidextparam'] = 'Μη έγκυρη παράμετρος εξωτερικής API: {$a}';
 $string['invalidextresponse'] = 'Μη έγκυρη απάντηση εξωτερικής API: {$a}';
 $string['invalidiptoken'] = 'Μη έγκυρο κουπόνι - η διεύθυνση IP σας δεν υποστηρίζεται';
 $string['invalidtimedtoken'] = 'Μη έγκυρο κουπόνι - το κουπόνι έληξε';
 $string['invalidtoken'] = 'Μη έγκυρο κουπόνι - το κουπόνι δεν βρέθηκε';
-$string['iprestriction'] = 'Περιορισμοί IP';
+$string['iprestriction'] = 'Περιορισμοί διεύθυνσης IP';
 $string['iprestriction_help'] = 'Ο χρήστης θα πρέπει να καλέσει την υπηρεσία ιστού από τις αναφερόμενες σε λίστα διευθύνσεις IP (διαχωρισμένες με κόμματα).';
 $string['key'] = 'Κλειδί';
 $string['keyshelp'] = 'Τα κλειδιά χρησιμοποιούνται για πρόσβαση στον λογαριασμό σας Moodle από εξωτερικές εφαρμογές.';
@@ -144,11 +144,11 @@ $string['postrestparam'] = 'Κώδικας PHP για REST (αίτημα POST)';
 $string['potusers'] = 'Μη εξουσιοδοτημένοι χρήστες';
 $string['potusersmatching'] = 'Μη εξουσιοδοτημένοι χρήστες που ταιριάζουν';
 $string['print'] = 'Εκτύπωση όλων';
-$string['privacy:metadata:serviceusers'] = 'Λίστα χρηστών που μπορούν να χρησιμοποιήσουν ορισμένες εξωτερικές υπηρεσίες';
+$string['privacy:metadata:serviceusers'] = 'Λίστα χρηστών που μπορούν να χρησιμοποιήσουν μια συγκεκριμένη εξωτερική υπηρεσία';
 $string['privacy:metadata:serviceusers:iprestriction'] = 'Μόνο αυτή η διεύθυνση IP θα χρησιμοποιεί την υπηρεσία';
-$string['privacy:metadata:serviceusers:timecreated'] = 'Η ημερομηνία κατά την οποία δημιουργήθηκε το αρχείο';
+$string['privacy:metadata:serviceusers:timecreated'] = 'Η ημερομηνία δημιουργίας του αρχείου';
 $string['privacy:metadata:serviceusers:userid'] = 'Το αναγνωριστικό του χρήστη';
-$string['privacy:metadata:serviceusers:validuntil'] = 'Η ημερομηνία λήξης της εξουσιοδότησης';
+$string['privacy:metadata:serviceusers:validuntil'] = 'Η ημερομηνία μέχρι την οποία η εξουσιοδότηση είναι έγκυρη';
 $string['privacy:metadata:tokens'] = 'Ένα ιστορικό των κουπονιών για αλληλεπίδραση με το Moodle μέσω υπηρεσιών ιστού ή εφαρμογών για κινητά.';
 $string['privacy:metadata:tokens:creatorid'] = 'Το αναγνωριστικό του χρήστη που δημιούργησε το κουπόνι';
 $string['privacy:metadata:tokens:iprestriction'] = 'Το IP αυτό περιορίζεται να χρησιμοποιεί μόνο αυτό το κουπόνι';
@@ -188,8 +188,8 @@ $string['selectspecificuserdescription'] = 'Προσθέστε τον χρήστ
 $string['service'] = 'Υπηρεσία';
 $string['servicehelpexplanation'] = 'Μια υπηρεσία είναι ένα σύνολο λειτουργιών. Μια υπηρεσία μπορεί να προσπελαστεί από όλους τους χρήστες ή μόνο από ορισμένους χρήστες.';
 $string['servicename'] = 'Όνομα υπηρεσίας';
-$string['servicenotavailable'] = 'Η υπηρεσία ιστού δεν είναι διαθέσιμη (δεν υπάρχει ή μπορεί να είναι απενεργοποιημένη)';
-$string['servicerequireslogin'] = 'Η υπηρεσία ιστού δεν είναι διαθέσιμη (η σύνοδος αποσυνδέθηκε ή έχει λήξει)';
+$string['servicenotavailable'] = 'Η υπηρεσία ιστού δεν είναι διαθέσιμη. (Δεν υπάρχει ή μπορεί να είναι απενεργοποιημένη.)';
+$string['servicerequireslogin'] = 'Η υπηρεσία ιστού δεν είναι διαθέσιμη. (Η σύνοδος αποσυνδέθηκε ή έχει λήξει.)';
 $string['servicesbuiltin'] = 'Ενσωματωμένες υπηρεσίες';
 $string['servicescustom'] = 'Προσαρμοσμένες υπηρεσίες';
 $string['serviceusers'] = 'Εξουσιοδοτημένοι χρήστες';

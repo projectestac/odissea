@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_xmldb', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -151,7 +151,7 @@ $string['reservedwords'] = 'Palabras reservadas';
 $string['revert'] = 'Revertir';
 $string['revert_changes'] = 'Revertir cambios';
 $string['save'] = 'Guardar';
-$string['searchresults'] = 'Buscar resultados';
+$string['searchresults'] = 'Resultados de la búsqueda';
 $string['selectaction'] = 'Seleccionar acción:';
 $string['selectdb'] = 'Seleccionar base de datos:';
 $string['selectfieldkeyindex'] = 'Seleccionar Campo/Clave/Índice:';

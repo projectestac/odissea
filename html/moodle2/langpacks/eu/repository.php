@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['addplugin'] = 'Gehitu biltegi-plugin bat';
 $string['allowexternallinks'] = 'Baimendu kanpoko estekak';
 $string['areacategoryintro'] = 'Kategoriaren sarrera';
 $string['areacourseintro'] = 'Ikastaroaren sarrera';
-$string['areacourseoverviewfiles'] = 'Ikastaroaren laburpeneko fitxategiak';
+$string['areacourseoverviewfiles'] = 'Ikastaroaren irudia';
 $string['areamainfile'] = 'Fitxategi nagusia';
 $string['arearoot'] = 'Sistema';
 $string['areauserbackup'] = 'Erabiltzailearen segurtasun-kopia';
@@ -47,11 +47,11 @@ $string['attachedfiles'] = 'Erantsitako fitxategiak';
 $string['attachment'] = 'Eranskina';
 $string['author'] = 'Egilea';
 $string['automatedbackup'] = 'Segurtasun-kopia automatizatua';
-$string['back'] = '« Atzera';
-$string['backtodraftfiles'] = '« Itzuli zirriborro-fitxategien kudeatzailera';
+$string['back'] = 'Atzera';
+$string['backtodraftfiles'] = 'Itzuli zirriborro-fitxategien kudeatzailera';
 $string['cachecleared'] = 'Cacheatutako fitxategiak ezabatuak izan dira';
 $string['cacheexpire'] = 'Cache-a iraungi';
-$string['cannotaccessparentwin'] = 'Leiho nagusia HTTPS bidezkoa bada ez dugu window.opener objektura sarbiderik, eta beraz ezin dugu biltegia automatikoki freskatu baina dagoeneko zure saioa jaso dugu, atzera jo ezazu fitxategi-hautatzailera eta aukeratu biltegia berriz ere, oraingoan funtzionatu beharko luke.';
+$string['cannotaccessparentwin'] = 'HTTPS erabiltzean, biltegia ez da automatikoki eguneratzen. Horren ordez, fitxategi-hautatzailera itzuli eta biltegia berriz aukeratu beharko duzu.';
 $string['cannotdelete'] = 'Ezin da fitxategi hau ezabatu.';
 $string['cannotdownload'] = 'Ezin da fitxategi hau jaitsi';
 $string['cannotdownloaddir'] = 'Ezin da karpeta hau jaitsi';
@@ -62,11 +62,11 @@ $string['cleancache'] = 'Garbitu nire cache-ko fitxategiak';
 $string['close'] = 'Itxi';
 $string['commonrepositorysettings'] = 'Biltegiaren ezarpen komunak';
 $string['configallowexternallinks'] = 'Aukera honek erabiltzaile guztiei kanpoko multimedia Moodle-ra kopiatu nahi duen edo ez erabakitzeko aukera ematen die. Aukera desgaituta badago multimedia fitxategiak beti Moodle-ra kopiatzen dira (datu-osotasuna eta segurtasun aldetik hau da normalean aukerarik onena). Aukera gaituz gero erabiltzaileak multimedia fitxategiak gehitzen dituen bakoitzean aukeratu ahal izango du.';
-$string['configcacheexpire'] = 'Fitxategi-zerrendak lokalki cacheatuta mantenduko diren denbora (segundutan) kanpo-biltegietan nabigatzean.';
-$string['configgetfiletimeout'] = 'Kanpoko fitxategi bat Moodle-ra jaistean erabili beharreko gehienezko denbora segundutan.';
+$string['configcacheexpire'] = 'Fitxategi-zerrendak lokalki cacheatuta mantenduko diren denbora (segundoetan) kanpo-biltegietan nabigatzean.';
+$string['configgetfiletimeout'] = 'Kanpoko fitxategi bat Moodle-ra jaistean erabili beharreko gehienezko denbora (segundoetan).';
 $string['configsaved'] = 'Ezarpenak gordeta!';
-$string['configsyncfiletimeout'] = 'Kanpoko fitxategi baten tamaina sinkronizatzeko gehienezko denbora segundutan.';
-$string['configsyncimagetimeout'] = 'Kanpoko fitxategi baten irudia kanpo-biltegitik jaisteko gehienezko denbora segundutan sinkronizazioa egiten denean.';
+$string['configsyncfiletimeout'] = 'Kanpoko fitxategi baten tamaina sinkronizatzeko gehienezko denbora (segundoetan).';
+$string['configsyncimagetimeout'] = 'Kanpoko fitxategi baten irudia kanpo-biltegitik jaisteko gehienezko denbora (segundoetan)sinkronizazioa egiten denean.';
 $string['confirmdelete'] = 'Ziur al zaude {$a} biltegia ezabatu nahi duzula? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodle-ra jaitsiko dira, baina hori egiteko denbora luzea eraman dezake.';
 $string['confirmdeletefile'] = 'Ziur al zaude fitxategi hau ezabatu nahi duzula?';
 $string['confirmdeletefilewithhref'] = 'Ziur zaude fitxategi hau ezabatu nahi duzula? {$a} ezizen/esteka daude fitxategi hau jatorritzat dutenak. Jarraituz gero esteka horiek benetako kopiak bihurtuko dira.';
@@ -113,7 +113,7 @@ $string['entername'] = 'Mesedez, idatzi karpetaren izena';
 $string['enternewname'] = 'Mesedez, idatzi fitxategi berriaren izena';
 $string['error'] = 'Errore ezezagun bat gertatu da!';
 $string['errordoublereference'] = 'Ezin izan da gainidatzi fitxategia esteka/ezizen batekin dagoeneko fitxategi horretarako estekak daudelako.';
-$string['errornotyourfile'] = 'Ezin da aukeratu zeuk gehitu ez duzun fitxategi bat';
+$string['errornotyourfile'] = 'Soilik zuk gehitu dituzun fitxategiak aukeratu ditzakezu.';
 $string['errorpostmaxsize'] = 'Igotzen saiatu zaren fitxategia handiegia da eta zerbitzariak ez du prozesatu.';
 $string['erroruniquename'] = 'Biltegiaren instantziaren izena bakarra izan behar da';
 $string['errorwhilecommunicatingwith'] = 'Errorea gertatu da \'{$a}\' biltegiarekin komunikatzean.';

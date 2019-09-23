@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['descriptionssourcelabel'] = 'Deskribapenaren pistaren URLa';
 $string['displayoptions'] = 'Erakutsi aukerak';
 $string['entername'] = 'Idatzi izena';
 $string['entersource'] = 'Iturburuaren URLa';
+$string['entertitle'] = 'Idatzi izenburua';
 $string['enterurl'] = 'Idatzi URLa';
 $string['height'] = 'Altuera';
 $string['kind'] = 'Mota';
@@ -66,7 +67,7 @@ $string['metadata'] = 'Metadatuak';
 $string['metadata_help'] = 'Metadatuen pistak, script baten bidez erabiltzeko, erreproduzitzaileak metadatuak onartzen baditu soilik erabili daitezke.';
 $string['metadatasourcelabel'] = 'Metadatuen pistaren URLa';
 $string['mute'] = 'Mutututa';
-$string['pluginname'] = 'Media';
+$string['pluginname'] = 'Txertatu edo editatu audio/bideo-fitxategia';
 $string['poster'] = 'Irudi txikiaren URLa';
 $string['privacy:metadata'] = 'atto_media pluginak ez du datu pertsonalik biltzen.';
 $string['remove'] = 'Ezabatu';

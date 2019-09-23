@@ -32,6 +32,8 @@ class com_wiris_quizzes_impl_LocalData extends com_wiris_util_xml_SerializableIm
 	static $KEY_SHOW_CAS;
 	static $KEY_CAS_INITIAL_SESSION;
 	static $KEY_CAS_SESSION;
+	static $KEY_SHOW_AUXILIAR_TEXT_INPUT;
+	static $KEY_AUXILIAR_TEXT;
 	static $KEY_OPENANSWER_COMPOUND_ANSWER_GRADE;
 	static $KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION;
 	static $KEY_OPENANSWER_HANDWRITING_CONSTRAINTS = "handwritingConstraints";
@@ -55,6 +57,8 @@ com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD = com_wiris_quizze
 com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_CAS;
 com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_CAS_INITIAL_SESSION;
 com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_CAS_SESSION;
+com_wiris_quizzes_impl_LocalData::$KEY_SHOW_AUXILIAR_TEXT_INPUT = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_AUXILIAR_TEXT_INPUT;
+com_wiris_quizzes_impl_LocalData::$KEY_AUXILIAR_TEXT = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_AUXILIAR_TEXT;
 com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_COMPOUND_ANSWER_GRADE;
 com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_COMPOUND_ANSWER_GRADE_DISTRIBUTION;
 com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_COMPOUND_ANSWER_TRUE;
@@ -67,4 +71,4 @@ com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_ADD = com_wiris_quizzes_api_Qu
 com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_REPLACE_INPUT = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_SHOW_CAS_REPLACE;
 com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_AND = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_COMPOUND_ANSWER_GRADE_AND;
 com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTE = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_COMPOUND_ANSWER_GRADE_DISTRIBUTE;
-com_wiris_quizzes_impl_LocalData::$keys = new _hx_array(array(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD, com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS, com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION, com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION));
+com_wiris_quizzes_impl_LocalData::$keys = new _hx_array(array(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD, com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS, com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION, com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION, com_wiris_quizzes_impl_LocalData::$KEY_SHOW_AUXILIAR_TEXT_INPUT, com_wiris_quizzes_impl_LocalData::$KEY_AUXILIAR_TEXT, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION));

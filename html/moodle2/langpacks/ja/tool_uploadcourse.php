@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,13 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowdeletes'] = '削除を許可する';
-$string['allowdeletes_help'] = '「delete 」フィールドを受け入れるかどうか決定します。';
+$string['allowdeletes_help'] = '「delete」フィールドを受け入れるかどうか決定します。';
 $string['allowrenames'] = 'リネームを許可する';
 $string['allowrenames_help'] = '「rename」フィールドを受け入れるかどうか決定します。';
 $string['allowresets'] = 'リセットを許可する';
 $string['allowresets_help'] = '「reset」フィールドを受け入れるかどうか決定します。';
 $string['cachedef_helper'] = 'ヘルパキャッシング';
-$string['cannotdeletecoursenotexist'] = '存在しないコースを削除できません。';
+$string['cannotdeletecoursenotexist'] = '存在しないコースは削除できません。';
+$string['cannotforcelang'] = 'このコースの言語を強制するパーミッションがありません。';
 $string['cannotgenerateshortnameupdatemode'] = '更新が許可されている場合、省略名を生成することはできません。';
 $string['cannotreadbackupfile'] = 'バックアップファイルを読めません。';
 $string['cannotrenamecoursenotexist'] = '存在しないコースをリネームできません。';
@@ -107,7 +108,7 @@ $string['reset_help'] = '作成/アップロード後、コースをリセット
 $string['restoreafterimport'] = 'インポート後にリストアする';
 $string['result'] = '結果';
 $string['rowpreviewnum'] = 'プレビュー行';
-$string['rowpreviewnum_help'] = '次のページでプレビューされるCSVファイルの行数です。このオプションは次のページのページサイズを制限するためにあります。';
+$string['rowpreviewnum_help'] = '次のページでプレビューされるCSVファイルの行数です。このオプションは次のページのサイズを制限するためにあります。';
 $string['shortnametemplate'] = '省略名を生成するテンプレート';
 $string['shortnametemplate_help'] = 'コース省略名はナビゲーションに表示されます。あなたはここでテンプレート構文 (%f = フルネーム、%i = IDナンバー) または増分するための初期値を入力することができます。';
 $string['templatefile'] = 'アップロード後、このファイルからリストアする';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,4 +44,3 @@ $string['pluginadministration'] = 'Administración de Tarea 2.2 (Desactivada)';
 $string['pluginname'] = 'Tarea 2.2 (Desactivada)';
 $string['privacy:markedsubmissionspath'] = 'markedsubmissions';
 $string['upgradenotification'] = 'Esta actividad se basa en un módulo de tareas antiguo';
-$string['viewassignmentupgradetool'] = 'Ver la utilidad de actualización de tareas';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor_tinymce', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -536,7 +536,7 @@ $string['media_dlg:liveconnect'] = 'SWLiveConnect';
 $string['media_dlg:loop'] = 'Repetição automática';
 $string['media_dlg:maintainaspect'] = 'Manter aspeto';
 $string['media_dlg:menu'] = 'Mostrar menu';
-$string['media_dlg:mute'] = 'Mudo';
+$string['media_dlg:mute'] = 'Silencioso';
 $string['media_dlg:name'] = 'Nome';
 $string['media_dlg:nojava'] = 'Sem Java';
 $string['media_dlg:numloop'] = 'Número de repetições';
@@ -600,7 +600,7 @@ $string['paste:selectall_desc'] = 'Selecionar tudo';
 $string['pluginname'] = 'Editor HTML TinyMCE';
 $string['preview:preview_desc'] = 'Pré-visualização';
 $string['print:print_desc'] = 'Imprimir';
-$string['privacy:metadata'] = 'O módulo Editor TinyMCE não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo de editor HTML TinyMCE não armazena quaisquer dados pessoais.';
 $string['save:cancel_desc'] = 'Cancelar todas as alterações';
 $string['save:save_desc'] = 'Guardar';
 $string['searchreplace:delta_height'] = '';
@@ -828,7 +828,7 @@ $string['template_dlg:months_short'] = 'Jan,Fev,Mar,Abr,Mai,Jun,Jul,Ago,Set,Out,
 $string['template_dlg:preview'] = 'Pré-visualização';
 $string['template_dlg:select'] = 'Selecionar modelo';
 $string['template_dlg:title'] = 'Modelos';
-$string['template_dlg:warning'] = 'Atenção: Atualizar um modelo com outro pode causar a perda de dados.';
+$string['template_dlg:warning'] = '<b>Atenção</b>: Atualizar um modelo com outro pode causar a perda de dados.';
 $string['visualblocks:desc'] = 'Mostrar/ocultar bloco elementos';
 $string['visualchars:desc'] = 'Mostrar/ocultar caracteres de controle';
 $string['wordcount:words'] = 'Palavras:';

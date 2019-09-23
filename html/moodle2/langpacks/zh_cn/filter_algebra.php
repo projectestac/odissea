@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_algebra', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filter_algebra', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   filter_algebra
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_section_links', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_section_links
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['numsections1_help'] = 'Ikastaroko atal-kopurua kantitate honetara irist
 $string['numsections2'] = 'Ordezko atal-kopurua';
 $string['numsections2_help'] = 'Ikastaroko atal-kopurua kantitate honetara iristen denean, ordezkoan zenbat gehitu balioa erabiliko da.';
 $string['pluginname'] = 'Ataletarako estekak';
-$string['privacy:metadata'] = 'Ataletarako esteka blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
+$string['privacy:metadata'] = 'Ataletarako esteka blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['section_links:addinstance'] = 'Gehitu ataletarako estekak bloke berria';
 $string['topics'] = 'Gaiak';
 $string['weeks'] = 'Asteak';

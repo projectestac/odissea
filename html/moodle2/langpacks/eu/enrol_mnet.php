@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_mnet', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['instancename_help'] = 'MNet matrikulazio-metodoaren instantzia honen iz
 $string['mnet:config'] = 'Konfiguratu MNet matrikulazio-instantziak';
 $string['mnet_enrol_description'] = 'Publika ezazu zerbitzu hau {$a}-ko kudeatzaileei zuk zure zerbitzarian sortu dituzun ikastaroetan matrikulatzen uzteko. <br/><ul><li><em>Dependentzia</em>: Era berean, SSO zerbitzuan (Zerbitzu-hornitzailea) <strong>harpidetu</strong> beharko duzu hemen: {$a}. </li><li><em>Dependentzia</em>: Era berean, SSO zerbitzuan (Nortasun-hornitzailea) <strong>harpidetu</strong> beharko duzu hemen: {$a}.</li></ul><br/> Harpidetu zerbitzu honetan zure ikasleak {$a}-ko ikastaroetan matrikulatu ahal izateko.<br/><ul><li><em>Dependentzia</em>: Era berean, SSO zerbitzuan (Zerbitzu-hornitzailea) <strong>harpidetu</strong> beharko duzu hemen: {$a}. </li><li><em>Dependentzia</em>: Era berean, SSO zerbitzua (Zerbitzu-hornitzailea) <strong>publikatu</strong> beharko duzu hemen: {$a}.</li></ul><br />';
 $string['mnet_enrol_name'] = 'Urrutiko matrikulazio-zerbitzua';
-$string['pluginname'] = 'Moodle sareko urrutiko matrikulazioak';
+$string['pluginname'] = 'MNet urrutiko matrikulazioak';
 $string['pluginname_desc'] = 'Baimendu urrutiko MNet ostalaria beren erabiltzaileak gure ikastaroetan matrikulatzeko.';
 $string['privacy:metadata'] = 'MNet urrutiko matrikulazioak pluginak ez du datu pertsonalik biltzen.';
 $string['remotesubscriber'] = 'Urrutiko ostalaria';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'debug', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   debug
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['cannotbenull'] = '{$a} não pode ser nulo(a)';
 $string['cannotdowngrade'] = 'Não pode descarregar a versão do módulo {$a->plugin} de {$a->oldversion} para {$a->newversion}.';
 $string['cannotfindadmin'] = 'Não foi encontrado nenhum administrador!';
 $string['cannotinitpage'] = 'Não é possível iniciar totalmente a página: {$a->name} id inválido {$a->id}';
-$string['cannotsetuptable'] = '{$a} tabelas não foram configuradas com sucesso!';
+$string['cannotsetuptable'] = '{$a} tabelas NÃO foram configuradas com sucesso!';
 $string['codingerror'] = 'Foi detetado o seguinte erro de programação que deve ser corrigido por um programador: {$a}';
 $string['configmoodle'] = 'O Moodle ainda não foi configurado. Tem de editar o config.php primeiro.';
 $string['erroroccur'] = 'Ocorreu um erro durante este processo';

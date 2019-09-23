@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'survey', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -244,7 +244,7 @@ $string['privacy:metadata:answers:answer1'] = 'Campo per memorizzare la risposta
 $string['privacy:metadata:answers:answer2'] = 'Campo aggiuntivo per memorizzare la risposta a una domanda.';
 $string['privacy:metadata:answers:question'] = 'Domanda.';
 $string['privacy:metadata:answers:time'] = 'Ora di pubblicazione della risposta.';
-$string['privacy:metadata:answers:userid'] = 'ID dell\'utente che ha inviato la risposta.';
+$string['privacy:metadata:answers:userid'] = 'ID dell\'utente che ha inviato una risposta.';
 $string['question'] = 'Domanda';
 $string['questions'] = 'Domande';
 $string['questionsnotanswered'] = 'Alcune delle domande a scelta multipla non hanno avuto risposta.';

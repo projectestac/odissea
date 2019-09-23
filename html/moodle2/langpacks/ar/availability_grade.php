@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability_grade', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   availability_grade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['requires_min'] = 'حققت الدرجة المطلوبة في <strong>{$a}</strong>';
+$string['requires_min'] = 'حقتت الدرجة المطلوب في <strong>{$a}</strong>';
 $string['requires_range'] = 'تحصل على درجة معينة في <strong> {$ a} </ strong>';

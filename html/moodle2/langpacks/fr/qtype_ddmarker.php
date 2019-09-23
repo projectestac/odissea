@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,11 +41,20 @@ $string['dropbackground'] = 'Image de fond pouvant être recouverte de marqueurs
 $string['dropzone'] = 'Zone de dépôt {$a}';
 $string['dropzoneheader'] = 'Zone de dépôt';
 $string['dropzones'] = 'Zones de dépôt';
-$string['dropzones_help'] = 'Les zones de dépôt sont définies en saisissant leurs coordonnées. En les saisissant, l\'aperçu ci-dessus, se met immédiatement à jour, ce qui vous permet de placer et d\'ajuster les zones pas à pas.
+$string['dropzones_help'] = 'Les zones de dépôt peuvent être définies en saisissant leurs coordonnées ou en indiquant leur position dans l\'aperçu ci-dessus.
 
-* Cercle : centre_x, centre_y; rayon<br />par exemple : <code>80, 100; 50</code>
-* Polygone : x1, y1; x2, y2; ...; xn, yn<br />par exemple : <code>20, 60; 100, 60; 20, 100</code>
-* Rectangle : x1, y1 (coordonnées coin gauche haut) ; largeur, hauteur<br/>par exemple : <code>20, 60; 80, 40</code>';
+Choisir une forme (cercle, rectangle ou polygone) ajoutera une nouvelle zone en haut à gauche de l\'aperçu. Il peut être judicieux de minimiser la section des marqueurs pour voir l\'aperçu lors de l\'édition des zones.
+
+L\'édition d\'une zone commence par un clic sur la forme, dans l\'aperçu, afin d\'afficher les poignées d\'édition. On peut déplacer la forme à l\'aide de la poignée centrale ou ajuster la taille de la forme avec les poignées des sommets.
+
+Pour les polygones, on peut ajouter un nouveau sommet en maintenant la touche ctrl (cmd sur Mac) tout en cliquant sur un sommet. Il est conseillé de garder des formes aussi simples que possible pour les polygones, sans croisement d\'arêtes.
+
+Pour information, les trois types de formes utilisent les coordonnées ainsi :
+* Cercle : centre_x, centre_y; rayon<br />par exemple : <code>80,100;50</code>
+* Rectangle : x1, y1 (coordonnées coin gauche haut) ; largeur, hauteur<br/>par exemple : <code>20,60;80,40</code>
+* Polygone : x1, y1; x2, y2; ...; xn, yn<br />par exemple : <code>20,60;100,60;20, 100</code>
+
+Sélectionner un marqueur de texte ajoutera ce texte à la zone dans l\'aperçu.';
 $string['followingarewrong'] = 'Les marqueurs suivants ont été placés dans la mauvaise zone : {$a}.';
 $string['followingarewrongandhighlighted'] = 'Les marqueurs suivants étaient placés de manière incorrecte : {$a}. Les marqueurs en surbrillance sont à présent à leur place.<br /> Cliquez sur le marqueur pour mettre la zone autorisée en surbrillance.';
 $string['formerror_nobgimage'] = 'Vous devez sélectionner une image à utiliser comme fond pour cette aire de glisser-déposer.';

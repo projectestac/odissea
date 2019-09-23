@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'question', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -183,6 +183,7 @@ $string['filesareacourse'] = 'area file del corso';
 $string['filesareasite'] = 'area file del sito';
 $string['filestomove'] = 'Sposta / copia i file a {$a}?';
 $string['fillincorrect'] = 'Inserisci le risposte esatte';
+$string['filterbytags'] = 'Filtra per tag...';
 $string['firsttry'] = 'Primo tentativo';
 $string['flagged'] = 'Contrassegnata';
 $string['flagthisquestion'] = 'Contrassegna questa domanda';
@@ -203,6 +204,7 @@ $string['howquestionsbehave_help'] = 'Gli studenti possono interagire con le dom
 In alternativa puoi consentire agli studenti di dare una risposta a ciascuna domanda e ricevere un feedback immediato: se la risposta non è giusta possono provare ancora. Questa è la modalità \'Interattiva con tentativi multipli\'.
 
 Le due modalità sono probabilmente quelle  più comunemente utilizzate.';
+$string['idnumber'] = 'Codice identificativo';
 $string['ignorebroken'] = 'Ignora link interrotti';
 $string['import'] = 'Importa';
 $string['importcategory'] = 'Importa categoria';
@@ -309,7 +311,7 @@ $string['needtochoosecat'] = 'Devi scegliere una categoria dove spostare questa 
 $string['nocate'] = 'La categoria {$a} non esiste!';
 $string['nopermissionadd'] = 'Non sei autorizzato ad aggiungere domande qui.';
 $string['nopermissionmove'] = 'Non sei autorizzato a spostare domande da qui. Puoi salvare la domanda in questa categoria oppure salvarla come nuova domanda.';
-$string['noprobs'] = 'Non trovato alcun problema nel tuo database delle domande.';
+$string['noprobs'] = 'Non è stato trovato nessun problema nel database delle domande.';
 $string['noquestions'] = 'Non sono state trovate domande da esportare. Accertati di aver selezionato per l\'esportazione una categoria che contenga domande.';
 $string['noquestionsinfile'] = 'Nel file da importare non ci sono domande';
 $string['noresponse'] = '[Nessuna risposta]';
@@ -389,6 +391,7 @@ $string['questionbehavioursorderexplained'] = 'Inserisci un elenco di comportame
 $string['questioncategory'] = 'Categoria di domande';
 $string['questioncatsfor'] = 'Categorie di domande per \'{$a}\'';
 $string['questiondoesnotexist'] = 'Questa domanda non esiste';
+$string['questionformtagheader'] = '{$a} tag';
 $string['questionidmismatch'] = 'Mancata corrispondenza delle id delle domande';
 $string['questionname'] = 'Nome della domanda';
 $string['questionnamecopy'] = '{$a} (copia)';
@@ -401,6 +404,7 @@ $string['questionsinuse'] = '(* Le domande contrassegnate da un asterisco sono q
 $string['questionsmovedto'] = 'Domande ancora in uso spostate a "{$a}" nella categoria superiore di corso.';
 $string['questionsrescuedfrom'] = 'Domande salvate dal contesto {$a}.';
 $string['questionsrescuedfrominfo'] = 'Queste domande (alcune delle quali possono essere nascoste) sono state salvate quando il contesto {$a} è stato eliminato, in quanto sono ancora utilizzate da qualche quiz o da altre attività.';
+$string['questiontags'] = 'Tag della domanda';
 $string['questiontext'] = 'Testo della domanda';
 $string['questiontype'] = 'Tipo di domanda';
 $string['questionuse'] = 'Usa domanda in questa attività';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,10 +67,11 @@ $string['auth_updatelocalfield'] = 'Atualizar campo local ({$a})';
 $string['auth_updateremote'] = 'Atualizar campo externo';
 $string['auth_updateremote_expl'] = '<p><b>Atualização externa:</b> Se ativo, a autorização externa será atualizada quando o registo do utilizador for atualizado. Os campos deverão estar desbloquados para que sejam permitidas edições.</p>';
 $string['auth_updateremotefield'] = 'Atualizar campo externo ({$a})';
-$string['auth_updateremote_ldap'] = '<p><b>Nota:</b> Para atualizar dados externos do LDAP é necessário que defina o \'binddn\' e o \'bindpw\' para um \'utilizador bind\' com permissões de edição para todos os registos de utilizador. Atualmente não são preservados os atributos \'multi-valued\' e irá remover valores extra aquando da atualização.</p>';
+$string['auth_updateremote_ldap'] = '<p><b>Nota</b>: Para atualizar dados externos do LDAP é necessário que defina o \'binddn\' e o \'bindpw\' para um \'utilizador bind\' com permissões de edição para todos os registos de utilizador. Atualmente não são preservados os atributos \'multi-valued\' e irá remover valores extra aquando da atualização.</p>';
 $string['auth_user_create'] = 'Permitir a criação de utilizadores';
 $string['auth_user_creation'] = 'Novos utilizadores (anónimos) podem criar contas na origem de autenticação externa e confirmá-las por e-mail. Se ativar esta opção, lembre-se de configurar as opções no módulo específico para criação de utilizadores.';
 $string['auth_usernameexists'] = 'O nome escolhido já existe. Escolha outro.';
+$string['auth_usernotexist'] = 'Não é possível atualizar o utilizador \'{$a}\' porque não existe na base de dados';
 $string['auto_add_remote_users'] = 'Adicionar automaticamente utilizadores remotos';
 $string['cannotmapfield'] = 'O campo "{$a->fieldname}" não pode ser mapeado porque o nome curto "{$a->shortname}" é muito longo. Para ser possível o mapeamento, encurte o campo de perfil \'Nome curto\' para {$a->charlimit} caracteres. <a href="{$a->link}">Editar campos de perfil do utilizador</a>';
 $string['changepassword'] = 'Endereço para alteração de senha';

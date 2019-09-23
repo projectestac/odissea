@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filters', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['actfilterhdr'] = 'Active filters';
 $string['addfilter'] = 'Add filter';
 $string['anycategory'] = 'any category';
 $string['anycourse'] = 'any course';
+$string['anycourses'] = 'Enrolled in any course';
 $string['anyfield'] = 'any field';
 $string['anyrole'] = 'any role';
 $string['anyvalue'] = 'any value';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,11 @@ $string['dropbackground'] = 'Imaxe de fondo cara onde arrastrar os marcadores';
 $string['dropzone'] = 'Zona de solta {$a}';
 $string['dropzoneheader'] = 'Zonas de solta';
 $string['dropzones'] = 'Zonas de solta';
+$string['dropzones_help'] = 'As zonas de solta están definidas por coordenadas de escritura. A medida que escribes, a vista previa anterior actualízase de xeito inmediato, así pode posicionar as cousas por proba e erro.
+
+* Círculo: centro_x, centro_y; raio<br>por exemplo: <code>80, 100; 50</code>
+* Polígono: x1, y1; x2, y2; ...; xn, yn<br>por exemplo: <code>20, 60; 100, 60; 20, 100</code>
+* Rectángulo: superior_esquerdo_x, superior_esquerdo_y; largo, alto<br>por exemplo: <code>20, 60; 80, 40</code>';
 $string['followingarewrong'] = 'Engadíronse os seguintes marcadores na área incorrecta: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Os seguintes marcadores foron colocados incorrectamente: {$a}. Os marcadores destacados amósanse agora coas colocacións correctas.<br /> Prema no marcador para resaltar a área permitida.';
 $string['formerror_nobgimage'] = 'Debe seleccionar unha imaxe para usar como fondo para a área de arrastrar e soltar.';

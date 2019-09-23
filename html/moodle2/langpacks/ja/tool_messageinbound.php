@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_messageinbound', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['invalid_recipient_handler'] = '有効なメッセージが受信され�
 このハンドラはこれらの返信を処理します。
 
 メールクライアントが正しく設定されていない場合、ユーザは正しくないメールアドレスから返信できるためこのハンドラの送信者確認を無効にすることはできません。';
-$string['invalid_recipient_handler_name'] = '無効な受信者ハンドラ';
+$string['invalid_recipient_handler_name'] = '無効な送信者ハンドラです。';
 $string['mailbox'] = 'メールボックス名';
 $string['mailboxconfiguration'] = 'メールボックス設定';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';
@@ -109,14 +109,14 @@ $string['replysubjectprefix'] = 'Re:';
 $string['requirevalidation'] = '送信者アドレスを確認する';
 $string['ssl'] = 'SSL (SSLバージョン自動判別)';
 $string['sslv2'] = 'SSLv2 (SSLバージョン2強制)';
-$string['sslv3'] = 'SSLv2 (SSLバージョン3強制)';
+$string['sslv3'] = 'SSLv3 (SSLバージョン3強制)';
 $string['taskcleanup'] = '未承認受信メールの削除';
 $string['taskpickup'] = '受信メールピックアップ';
 $string['tls'] = 'TLS (TLSは暗号化なしチャネルのプロトコルレベルのネゴシエーションから開始しました。セキュアコネクションを開始するための推奨方法です)';
-$string['tlsv1'] = 'TLSv1 (TLSダイレクトバージョン 1.xサーバ接続)';
+$string['tlsv1'] = 'TLSv1 (TLSサーババージョン1.xへのダイレクト接続)';
 $string['validateaddress'] = '送信者メールアドレスを確認する';
 $string['validateaddress_help'] = 'ユーザからメッセージを受信した場合、Moodleはユーザプロファイルのメールアドレスと送信者のメールアドレスを比較してメッセージの正当性の確認を試みます。
 
-送信者が合致しない場合、本当にメールを送信したのか確認するため、ユーザには通知が送信されます。
+送信者が合致しない場合、本当にメールを送信したのか確認するため、ユーザに通知が送信されます。
 
 この設定が無効にされた場合、送信者のメールアドレスがチェックされることはありません。';

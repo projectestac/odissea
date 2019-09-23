@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'resource', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['clicktodownload'] = 'Prema na ligazón {$a} para descargar o ficheiro.';
 $string['clicktoopen2'] = 'Prema na ligazón {$a} para ver o ficheiro.';
 $string['configdisplayoptions'] = 'Seleccione todas as opcións que deben estar dispoñíbeis, a configuración existente non se modifica. Manteña premida a tecla CTRL para seleccionar varios campos.';
-$string['configframesize'] = 'Cando se presenta unha páxina web ou un ficheiro cargado dentro dun marco, este valor é o tamaño en píxeles do marco superior (o que conten a navegación).';
+$string['configframesize'] = 'Cando se presenta unha páxina web ou un ficheiro cargado dentro dun marco, este valor é o tamaño en píxeles do marco superior (o que contén a navegación).';
 $string['configparametersettings'] = 'Isto estabelece o valor predeterminado do panel de Configuración de parámetros no formulario cando se engaden novos recursos. Tras esta primeira vez, convertese nunha preferencia do usuario individual.';
 $string['configpopup'] = 'Cando se engade un recurso que pode amosarse nunha xanela emerxente, debe activarse como predeterminada esta opción?';
 $string['configpopupdirectories'] = 'As xanelas emerxentes, deben amosar de xeito predeterminado as ligazóns do directorio?';
@@ -95,6 +95,7 @@ $string['popupwidth'] = 'Largura da xanela emerxente (en píxeles)';
 $string['popupwidthexplain'] = 'Especifica a largura predeterminada das xanelas emerxentes.';
 $string['printintro'] = 'Presentar a descrición do recurso';
 $string['printintroexplain'] = 'Presentar a descrición do recurso baixo o contido? É posíbel que algúns tipos de pantalla non presenten a descrición incluso aínda que estea activado.';
+$string['privacy:metadata'] = 'O engadido de recurso ficheiro non almacena ningún dato persoal.';
 $string['resource:addinstance'] = 'Engadir un novo recurso';
 $string['resourcecontent'] = 'Ficheiros e subcartafoles';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

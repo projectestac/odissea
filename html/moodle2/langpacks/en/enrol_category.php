@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_category', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_category
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['category:config'] = 'Configure category enrol instances';
 $string['category:synchronised'] = 'Role assignments synchronised to course enrolment';
+$string['enrolcategorysynctask'] = 'Category enrolment sync task';
 $string['pluginname'] = 'Category enrolments';
 $string['pluginname_desc'] = 'The category enrolments plugin synchronises any role assignments in the category context for roles with the capability enrol/category:synchronised allowed.';
 $string['privacy:metadata'] = 'The Category enrolments plugin does not store any personal data.';

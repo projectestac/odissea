@@ -61,7 +61,7 @@ function hvp_get_core_settings($context) {
     $settings = array(
         'baseUrl' => $basepath,
         'url' => "{$basepath}pluginfile.php/{$context->instanceid}/mod_hvp",
-        'libraryUrl' => "{$basepath}pluginfile.php/{$systemcontext->id}/mod_hvp/libraries",
+        'urlLibraries' => "{$basepath}pluginfile.php/{$systemcontext->id}/mod_hvp/libraries", // NOTE: Separate context from content URL !
         'postUserStatistics' => true,
         'ajax' => $ajaxpaths,
         'saveFreq' => $savefreq,
@@ -74,7 +74,11 @@ function hvp_get_core_settings($context) {
         'hubIsEnabled' => get_config('mod_hvp', 'hub_is_enabled') ? true : false,
         'reportingIsEnabled' => true,
         'crossorigin' => isset($CFG->mod_hvp_crossorigin) ? $CFG->mod_hvp_crossorigin : null,
+        'crossoriginRegex' => isset($CFG->mod_hvp_crossoriginRegex) ? $CFG->mod_hvp_crossoriginRegex : null,
+        'crossoriginCacheBuster' => isset($CFG->mod_hvp_crossoriginCacheBuster) ? $CFG->mod_hvp_crossoriginCacheBuster : null,
         'libraryConfig' => $core->h5pF->getLibraryConfig(),
+        'pluginCacheBuster' => hvp_get_cache_buster(),
+        'libraryUrl' => $basepath . 'mod/hvp/library/js'
     );
 
     return $settings;
@@ -123,8 +127,12 @@ function hvp_get_core_assets($context) {
  * Add required assets for displaying the editor.
  *
  * @param int $id Content being edited. null for creating new content
+ * @param string $mformid Id of Moodle form
+ *
+ * @throws coding_exception
+ * @throws moodle_exception
  */
-function hvp_add_editor_assets($id = null) {
+function hvp_add_editor_assets($id = null, $mformid = null) {
     global $PAGE, $CFG, $COURSE;
 
     // First we need to determine the context for permission handling.
@@ -195,7 +203,9 @@ function hvp_add_editor_assets($id = null) {
       'metadataSemantics' => $contentvalidator->getMetadataSemantics(),
       'assets' => $assets,
       // @codingStandardsIgnoreLine
-      'apiVersion' => H5PCore::$coreApi
+      'apiVersion' => H5PCore::$coreApi,
+      'language' => $language,
+      'formId' => $mformid,
     );
 
     if ($id !== null) {
@@ -316,8 +326,9 @@ function hvp_content_upgrade_progress($libraryid) {
         $params = json_decode($params);
         foreach ($params as $id => $param) {
             $upgraded = json_decode($param);
+            $metadata = isset($upgraded->metadata) ? $upgraded->metadata : array();
 
-            $fields = array_merge(\H5PMetadata::toDBArray($upgraded->metadata, false, false), array(
+            $fields = array_merge(\H5PMetadata::toDBArray($metadata, false, false), array(
                 'id' => $id,
                 'main_library_id' => $tolibrary->id,
                 'json_content' => json_encode($upgraded->params),
@@ -335,16 +346,32 @@ function hvp_content_upgrade_progress($libraryid) {
         }
     }
 
+    // Determine if any content has been skipped during the process.
+    $skipped = filter_input(INPUT_POST, 'skipped');
+    if ($skipped !== null) {
+        $out->skipped = json_decode($skipped);
+        // Clean up input, only numbers.
+        foreach ($out->skipped as $i => $id) {
+            $out->skipped[$i] = intval($id);
+        }
+        $skipped = implode(',', $out->skipped);
+    } else {
+        $out->skipped = array();
+    }
+
     // Get number of contents for this library.
-    $out->left = $interface->getNumContent($libraryid);
+    $out->left = $interface->getNumContent($libraryid, $skipped);
 
     if ($out->left) {
+        $skipquery = empty($skipped) ? '' : " AND id NOT IN ($skipped)";
+
         // Find the 40 first contents using this library version and add to params.
         $results = $DB->get_records_sql(
             "SELECT id, json_content as params, name as title, authors, source, year_from, year_to,
-                    license, license_version, changes, license_extras, author_comments
+                    license, license_version, changes, license_extras, author_comments, default_language
                FROM {hvp}
               WHERE main_library_id = ?
+                    {$skipquery}
            ORDER BY name ASC", array($libraryid), 0 , 40
         );
 

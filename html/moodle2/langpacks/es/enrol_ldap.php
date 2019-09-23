@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_ldap', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,13 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = 'Asignando rol \'{$a->role_shortname}\' al usuario \'{$a->user_username}\' en el curso {$a->course_shortname}\' (id {$a->course_id})';
 $string['assignrolefailed'] = 'Fallo al asignarr el rol \'{$a->role_shortname}\' al usuario \'{$a->user_username}\' en el curso {$a->course_shortname}\' (id {$a->course_id})';
-$string['autocreate'] = '<p>Los cursos pueden crearse automáticamente si existen matriculaciones en un curso que aún no existe en Moodle.</p><p>Si va a utilizar la creación automática de curso, se recomienda que quite las siguientes capacidades:
-moodle/course:changeidnumber,
-moodle/course:changeshortname,
-moodle/course:changefullname.
-moodle/course: changesummary,
-de los roles pertinentes para evitar modificaciones en los cuatro campos especificados a continuación:
-Número ID - Nombre corto - Nombre completo - Resumen</p>';
+$string['autocreate'] = '<p>Los cursos pueden crearse automáticamente si existen matriculaciones en un curso que aún no existe en Moodle.</p><p>Si Usted está empleando la creación automática de cursos, se recomienda que elimine las siguientes capacidades: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname and moodle/course:changesummary,
+de los roles relevantes para impedir modificaciones a los cuatro campos del curso especificados arriba (ID number, shortname, fullname and summary).</p>';
 $string['autocreate_key'] = 'Creación automática';
 $string['autocreation_settings'] = 'Ajustes para la creación automática de cursos';
 $string['autoupdate_settings'] = 'Parámetros de actualización de curso automático';
@@ -127,6 +122,7 @@ $string['role_mapping_key'] = 'Mapear roles desde LDAP';
 $string['roles'] = 'Mapeo de roles';
 $string['server_settings'] = 'Configuración del Servidor LDAP';
 $string['synccourserole'] = '== Sincronizando curso \'{$a->idnumber}\' para el rol \'{$a->role_shortname}\'';
+$string['syncenrolmentstask'] = 'Sincronizar la tarea de matriculaciones LDAP';
 $string['template'] = 'Opcional: los cursos auto-creados pueden copiar sus ajustes a partir de un curso-plantilla.';
 $string['template_key'] = 'Plantilla';
 $string['unassignrole'] = 'Quitando la asignación al rol  \'{$a->role_shortname}\' al usuario \'{$a->user_username}\' en el curso \'{$a->course_shortname}\' (id {$a->course_id})';

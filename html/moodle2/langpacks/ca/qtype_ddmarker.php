@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,8 +33,8 @@ $string['clearwrongparts'] = 'Mou els marcadors col·locats de forma incorrecta 
 $string['coords'] = 'Coordenades';
 $string['correctansweris'] = 'La resposta correcta és: {$a}';
 $string['draggableimage'] = 'Imatge arrossegable';
-$string['draggableitem'] = 'Ítem arrossegable';
-$string['draggableitemheader'] = 'Ítem arrossegable {$a}';
+$string['draggableitem'] = 'Element arrossegable';
+$string['draggableitemheader'] = 'Element arrossegable {$a}';
 $string['draggableitemtype'] = 'Text';
 $string['draggableword'] = 'Text arrossegable';
 $string['dropbackground'] = 'Imatge de fons per arrossegar-hi marcadors';
@@ -85,7 +85,7 @@ $string['shape_rectangle'] = 'Rectangle';
 $string['shape_rectangle_coords'] = 'x,y;w,h (on «x,y» són les coordenades del cantó superior esquerra del rectangle i «w» i «h» són l\'amplada i l\'alçada del rectangle)';
 $string['shape_rectangle_lowercase'] = 'rectangle';
 $string['showmisplaced'] = 'Destaca les zones de destí que no tenen el marcador correcte.';
-$string['shuffleimages'] = 'Barreja els ítems que s\'hauran d\'arrossegar cada vegada que es faci un intent nou.';
+$string['shuffleimages'] = 'Barreja els elements que s\'hauran d\'arrossegar cada vegada que es faci un intent nou.';
 $string['stateincorrectlyplaced'] = 'Manté els marcadors que s\'han col·locat de forma incorrecta';
 $string['summariseplace'] = '{$a->no}. {$a->text}';
 $string['summariseplaceno'] = 'Zona de destí {$a}';

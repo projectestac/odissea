@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_offline', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_offline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['confirmimport'] = 'Επιβεβαίωση εισαγωγής βαθμών';
 $string['default'] = 'Ενεργοποιημένο από προεπιλογή';
-$string['default_help'] = 'Εάν οριστεί, η ταξινόμηση εκτός σύνδεσης με φύλλα εργασίας θα ενεργοποιηθεί από προεπιλογή για όλες τις νέες αναθέσεις εργασιών.';
+$string['default_help'] = 'Εάν οριστεί, η βαθμολόγηση εκτός σύνδεσης με φύλλα εργασίας θα ενεργοποιηθεί από προεπιλογή για όλες τις νέες αναθέσεις εργασιών.';
 $string['downloadgrades'] = 'Λήψη φύλλου εργασίας βαθμολόγησης';
 $string['enabled'] = 'Φύλλο εργασίας βαθμολόγησης χωρίς σύνδεση';
 $string['enabled_help'] = 'Εάν ενεργοποιηθεί, ο διδάσκων θα μπορεί να κάνει λήψη και φόρτωση ενός φύλλου εργασίας με βαθμολογίες μαθητών κατά την βαθμολόγηση των εργασιών.';
@@ -44,7 +44,7 @@ $string['invalidgradeimport'] = 'Το Moodle δεν μπόρεσε να ανοί
 $string['nochanges'] = 'Δεν βρέθηκαν τροποποιημένοι βαθμοί στο ανεβασμένο φύλλο εργασίας';
 $string['offlinegradingworksheet'] = 'Βαθμοί';
 $string['pluginname'] = 'Φύλλο εργασίας βαθμολόγησης εκτός σύνδεσης';
-$string['privacy:nullproviderreason'] = 'Αυτό το πρόσθετο δεν διαθέτει βάση δεδομένων για την αποθήκευση πληροφοριών χρήστη. Χρησιμοποιεί μόνο τα API στο mod_assign για να βοηθήσει στην εμφάνιση της διασύνδεσης ταξινόμησης.';
+$string['privacy:nullproviderreason'] = 'Αυτό το πρόσθετο δεν διαθέτει βάση δεδομένων για την αποθήκευση πληροφοριών χρήστη. Χρησιμοποιεί μόνο τα API στο mod_assign για να βοηθήσει στην εμφάνιση της διασύνδεσης βαθμολόγησης.';
 $string['processgrades'] = 'Εισαγωγή βαθμών';
 $string['skiprecord'] = 'Παράλειψη εγγραφής';
 $string['updatedgrades'] = 'Ενημερώθηκαν {$a} βαθμοί και ανατροφοδοτήσεις';

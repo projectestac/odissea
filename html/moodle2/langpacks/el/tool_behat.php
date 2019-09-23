@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_behat', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['errordataroot'] = '$CFG->behat_dataroot δεν ορίστηκε ή έχ
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix και $CFG->behat_wwwroot πρέπει να οριστούν στο config.php.';
 $string['erroruniqueconfig'] = 'Οι τιμές $CFG->behat_dataroot, $CFG->behat_prefix και $CFG->behat_wwwroot πρέπει να είναι διαφορετικές από τις τιμές $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot και $CFG->phpunit_prefix.';
 $string['fieldvalueargument'] = 'Παράμετροι τιμής πεδίου';
-$string['fieldvalueargument_help'] = 'Αυτό το όρισμα πρέπει να συμπληρωθεί με μια τιμή πεδίου. Υπάρχουν πολλοί τύποι πεδίων, που συμπεριλαμβάνουν απλούς όπως πλαίσια ελέγχου, επιλογές ή περιοχές κειμένου και πολύπλοκους, όπως επιλογείς ημερομηνίας. Μπορείτε να δείτε την τεκμηρίωση ανάπτυξης λογισμικού για τις <a href="http://docs.moodle.org/dev/Acceptance_testing" target="_blank">Δοκιμές αποδοχής</a> για λεπτομέρειες σχετικά με τις αναμενόμενες τιμές πεδίου.';
+$string['fieldvalueargument_help'] = 'Αυτό το όρισμα πρέπει να συμπληρωθεί με μια τιμή πεδίου. Υπάρχουν πολλοί τύποι πεδίων, που συμπεριλαμβάνουν απλούς όπως πλαίσια ελέγχου, επιλογές ή περιοχές κειμένου και πολύπλοκους, όπως επιλογείς ημερομηνίας. Μπορείτε να δείτε την τεκμηρίωση ανάπτυξης λογισμικού για τις <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Δοκιμές αποδοχής</a> για λεπτομέρειες σχετικά με τις αναμενόμενες τιμές πεδίου.';
 $string['giveninfo'] = 'Δεδομένο. Διεργασίες για τη ρύθμιση του περιβάλλοντος';
 $string['infoheading'] = 'Πληροφορίες';
 $string['installinfo'] = 'Διαβάστε {$a} για πληροφορίες εγκατάστασης και εκτέλεσης δοκιμών';

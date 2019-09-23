@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_calculatedsimple
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['atleastonewildcard'] = 'Πρέπει να υπάρχει τουλάχιστον ένας χαρακτήρας μπαλαντέρ <strong>{x..}</strong> στους μαθηματικούς τύπους των σωστών απαντήσεων';
-$string['converttocalculated'] = 'Αποθήκευση ως νέα κανονική υπολογιστική ερώτηση';
+$string['converttocalculated'] = 'Αποθήκευση ως μια νέα κανονική ερώτηση υπολογισμού';
 $string['findwildcards'] = 'Βρείτε τους χαρακτήρες μπαλαντέρ {x..} στους μαθηματικούς τύπους των σωστών απαντήσεων';
 $string['generatenewitemsset'] = 'Δημιουργία';
 $string['newsetwildcardvalues'] = 'νέο σύνολο(α) τιμών μπαλαντέρ';
@@ -34,6 +34,7 @@ $string['pluginname'] = 'Απλή ερώτηση υπολογιστικού τύ
 $string['pluginnameadding'] = 'Προσθήκη μιας απλής ερώτησης υπολογιστικού τύπου';
 $string['pluginnameediting'] = 'Επεξεργασία μιας απλής ερώτησης υπολογιστικού τύπου';
 $string['pluginname_help'] = 'Οι απλές ερωτήσεις υπολογιστικού τύπου επιτρέπουν τη δημιουργία μεμονωμένων αριθμητικών ερωτήσεων με τη χρήση μπαλαντέρ που αντικαθίστανται με ξεχωριστές τιμές κατά τη λήψη του κουίζ. Οι απλές ερωτήσεις υπολογιστικού τύπου προσφέρουν τα πιο χρησιμοποιούμενα χαρακτηριστικά της ερώτησης υπολογιστικού τύπου με μια απλούστερη διεπαφή δημιουργίας.';
+$string['pluginname_link'] = 'ερώτηση/τύπος/υπολογισμούαπλή';
 $string['pluginnamesummary'] = 'Μια απλούστερη εκδοχή των ερωττήσεων υπολογιστικού τύπου που είναι σαν αριθμητικές ερωτήσεις, αλλά με τους αριθμούς που χρησιμοποιούνται να επιλέγονται τυχαία από ένα σύνολο όταν λαμβάνεται το κουίζ.';
 $string['privacy:metadata'] = 'Το πρόσθετο «Απλή ερώτηση υπολογιστικού τύπου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['setno'] = 'Σύνολο {$a}';

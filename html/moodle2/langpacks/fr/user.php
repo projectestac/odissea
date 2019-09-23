@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'user', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -125,6 +125,6 @@ $string['privacy:metadata:version'] = 'La version de l\'appareil, 6.1.2, 4.2.2, 
 $string['privacy:metadata:yahoo'] = 'L\'identifiant Yahoo de l\'utilisateur';
 $string['privacy:passwordhistorypath'] = 'Historique de mots de passe';
 $string['privacy:passwordresetpath'] = 'Réinitialisation de mots de passe';
-$string['privacy:privatefilespath'] = 'Fichiers privés';
+$string['privacy:privatefilespath'] = 'Fichiers personnels';
 $string['privacy:profileimagespath'] = 'Avatars (images des profils)';
 $string['privacy:sessionpath'] = 'Données de session';

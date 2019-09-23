@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'table', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'table', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   table
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadcsv'] = 'ملف نصي من القيم المفصول بينها بفاصلة';
-$string['downloadexcel'] = 'جدول مايكروسوفت إكسل';
-$string['downloadods'] = 'جدول مستند مفتوح (ODS)';
-$string['downloadtsv'] = 'ملف نصي من القيم المفصول بينها بمسافة فاصلة (tab)';
-$string['downloadxhtml'] = 'مستند XHTML غير مرقم الصفحات';
+$string['downloadas'] = 'تحميل بيانات الجدول كـ  {$a->formatsmenu} {$a->downloadbutton}';

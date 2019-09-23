@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,4 +45,3 @@ $string['page-mod-assignment-x'] = '모든 과제 모듈 페이지';
 $string['pluginadministration'] = '과제 관리';
 $string['pluginname'] = '과제 (2.2)';
 $string['upgradenotification'] = '이 활동은 이전 과제 모듈에 기반합니다.';
-$string['viewassignmentupgradetool'] = '과제 업그레이드 도구 보기';

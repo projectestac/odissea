@@ -15,32 +15,10 @@
     overflow-y: scroll;
 }
 
-dd a.contactdpo {
-    /* Reverting dd's left margin */
-    margin-left: -10px;
-}
-
-.card dd a.contactdpo {
-    /* Reverting dd's left margin */
-    margin-left: inherit;
-}
-
-#page-admin-tool-dataprivacy-datarequests [data-region="data-requests-table"] .no-overflow {
-    overflow: inherit;
-}
-
-#page-admin-tool-dataprivacy-datarequests [data-region="data-requests-table"] .moodle-actionmenu {
+[data-region="data-requests-table"] .moodle-actionmenu {
     min-width: 150px;
 }
 
 .context-level-view {
     margin: 1em;
-}
-
-[data-region="purposes"] .col-name-description {
-    width: 25%;
-}
-
-[data-region="categories"] .col-description {
-    width: 50%;
 }

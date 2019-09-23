@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor_atto', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,7 +49,7 @@ $string['recover'] = 'Recover';
 $string['settings'] = 'Atto toolbar settings';
 $string['subplugintype_atto'] = 'Atto plugin';
 $string['subplugintype_atto_plural'] = 'Atto plugins';
-$string['taskautosavecleanup'] = 'Delete expired autosave drafts from the database.';
+$string['taskautosavecleanup'] = 'Delete expired autosave drafts';
 $string['textrecovered'] = 'A draft version of this text was automatically restored.';
 $string['toolbarconfig'] = 'Toolbar config';
 $string['toolbarconfig_desc'] = 'The list of plugins and the order they are displayed can be configured here. The configuration consists of groups (one per line) followed by the ordered list of plugins for that group. The group is separated from the plugins with an equals sign and the plugins are separated with commas. The group names must be unique and should indicate what the buttons have in common. Button and group names should not be repeated and may only contain alphanumeric characters.';

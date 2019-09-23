@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['descriptionssourcelabel'] = 'Description track URL';
 $string['displayoptions'] = 'Display options';
 $string['entername'] = 'Enter name';
 $string['entersource'] = 'Source URL';
+$string['entertitle'] = 'Enter title';
 $string['enterurl'] = 'Enter URL';
 $string['height'] = 'Height';
 $string['kind'] = 'Type';
@@ -66,7 +67,7 @@ $string['metadata'] = 'Metadata';
 $string['metadata_help'] = 'Metadata tracks, for use from a script, may be used only if the player supports metadata.';
 $string['metadatasourcelabel'] = 'Metadata track URL';
 $string['mute'] = 'Muted';
-$string['pluginname'] = 'Media';
+$string['pluginname'] = 'Insert or edit an audio/video file';
 $string['poster'] = 'Thumbnail URL';
 $string['privacy:metadata'] = 'The atto_media plugin does not store any personal data.';
 $string['remove'] = 'Remove';
@@ -77,7 +78,7 @@ $string['subtitles_help'] = 'Subtitles may be used to provide a transcription or
 $string['subtitlessourcelabel'] = 'Subtitle track URL';
 $string['track'] = 'Track URL';
 $string['tracks'] = 'Subtitles and captions';
-$string['tracks_help'] = 'Subtitles, captions, chapters and descriptions can be added via a WebVTT (Web Video Text Tracks) format file. Track labels will be shown in the selection dropdown menu. For each type of track, any track set as default will be pre-selected at the start of the video.';
+$string['tracks_help'] = 'Subtitles, captions, chapters and descriptions can be added via a WebVTT (Web Video Text Tracks) format file. Track labels will be shown in the selection drop-down menu. For each type of track, any track set as default will be pre-selected at the start of the video.';
 $string['video'] = 'Video';
 $string['videoheight'] = 'Video height';
 $string['videosourcelabel'] = 'Video source URL';

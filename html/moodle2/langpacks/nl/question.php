@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'question', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['cannotdeletecate'] = 'Je kunt die categorie niet verwijderen. Het is de
 $string['cannotdeleteneededbehaviour'] = 'Kan vraaggedrag \'{$a}\' niet verwijderen. Er zijn andere instellingen die er op steunen.';
 $string['cannotdeleteqtypeinuse'] = 'Je kunt vraagtype \'{$a}\' niet verwijderen. Er zijn vragen van dit type in de vragenpool.';
 $string['cannotdeleteqtypeneeded'] = 'Je kunt vraagtype \'{$a}\' niet verwijderen. Er zijn andere vraagtypes geïnstalleerd die dit type nodig hebben.';
+$string['cannotdeletetopcat'] = 'Topcategorieën kunnen niet verwijderd worden.';
+$string['cannotedittopcat'] = 'Topcategorieën kunnen niet bewerkt worden.';
 $string['cannotenable'] = 'Vraagtype {$a} kan niet rechtstreeks gemaakt worden.';
 $string['cannotenablebehaviour'] = 'Vraaggedrag {$a} kan niet rechtstreeks gebruikt worden. Het is enkel bedoeld voor intern gebruik.';
 $string['cannotfindcate'] = 'Kon categorierecord niet vinden';
@@ -153,7 +155,7 @@ $string['errorduringregrade'] = 'Kon vraag {$a->qid} niet herwaarderen, ga naar 
 $string['errorfilecannotbecopied'] = 'Fout: kan bestand {$a} niet kopieëren.';
 $string['errorfilecannotbemoved'] = 'Fout: kan bestand {$a} niet verplaatsen.';
 $string['errorfileschanged'] = 'Fout: bestanden gelinkt aan vragen zijn gewijzigd sinds het tonen van dit formulier.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Vraag ({$a}) wordt meer dan eens gebruikt met verschillende wegingen. Dit wordt nog niet ondersteund door het statistis rapport en maakt de statistieken voor deze vraag onbetrouwbaar.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'Vraag ({$a}) wordt meer dan eens gebruikt met verschillende wegingen op verschillende plaatsen in de test. Dit wordt nog niet ondersteund door het statistisch rapport en maakt de statistieken voor deze vraag onbetrouwbaar.';
 $string['errormanualgradeoutofrange'] = 'Het cijfer {$a->grade} is niet tussen 0 en  {$a->maxgrade} voor vraag {$a->name}. De score en commentaar zijn niet bewaard.';
 $string['errormovingquestions'] = 'Fout tijdens het verplaatsen van vragen met ID {$a}';
 $string['errorpostprocess'] = 'Fout opgetreden tijdens naverwerking';
@@ -172,6 +174,7 @@ Bij sommige importformaten, zoals GIFT en Moodle XML, kun je categorie en contex
 $string['exporterror'] = 'Fouten opgetreden tijdens exporteren!';
 $string['exportfilename'] = 'quiz';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
+$string['exportonequestion'] = 'Download deze vraag in Moodle XML-formaat';
 $string['exportquestions'] = 'Exporteer vragen naar bestand';
 $string['exportquestions_help'] = 'Met deze functie kun je een volledige categorie met vragen (en subcategorieën)  exporteren naar een bestand. Merk op dat, afhankelijk van het gekozen bestandsformaat, sommige gegevens van je vragen en sommige vraagtypes niet geëxporteerd kunnen worden.';
 $string['feedback'] = 'Feedback';
@@ -182,6 +185,7 @@ $string['filesareacourse'] = 'de plaats voor cursusbestanden';
 $string['filesareasite'] = 'de plaats voor sitebestanden';
 $string['filestomove'] = 'Verplaats / kopieëer bestanden naar {$a}?';
 $string['fillincorrect'] = 'Vul de juiste antwoorden in';
+$string['filterbytags'] = 'Filter op tags...';
 $string['firsttry'] = 'Eerste poging';
 $string['flagged'] = 'Gemarkeerd';
 $string['flagthisquestion'] = 'Markeer deze vraag';
@@ -199,6 +203,8 @@ $string['hinttext'] = 'Hint tekst';
 $string['howquestionsbehave'] = 'Hoe vragen zich gedragen';
 $string['howquestionsbehave_help'] = 'Leerlingen kunnen op verschillende manieren interageren met de vragen. Bijvoorbeeld kun je wensen dat de leerlingen elke vraag beantwoorden en dan de test insturen voor er ook maar iets beoordeeld wordt of feedback gegeven wordt. Dat is dan de  "Uitgestelde feedback" modus.
 Je zou ook kunnen willen dat leerlingen bij elke vraag die ze insturen onmiddellijk feedback krijgen, en als ze het niet juist hebben, een tweede kans krijgen voor minder punten. Dat is dan de "Interactief met meerdere pogingen"-modus.';
+$string['idnumber'] = 'ID nummer';
+$string['idnumber_help'] = 'Indien gebruikt, moet het ID-nummer uniek zijn binnen elke vraagcategorie. Het biedt een andere manier om een vraag te identificeren die soms nuttig is, maar meestal leeg kan blijven.';
 $string['ignorebroken'] = 'Negeer gebroken links';
 $string['import'] = 'Importeer';
 $string['importcategory'] = 'Importeer categorie';
@@ -276,6 +282,7 @@ $string['noprobs'] = 'Er zijn geen problemen gevonden in je vragendatabank.';
 $string['noquestions'] = 'Er zijn geen vragen gevonden die geëxporteerd kunnen worden. Zorg ervoor dat en een categorie geselecteerd die vragen bevat om te exporteren.';
 $string['noquestionsinfile'] = 'Er zijn geen vragen in het importbestand';
 $string['noresponse'] = '[Geen antwoord]';
+$string['notagfiltersapplied'] = 'Er zijn nog geen tag filters toegepast';
 $string['notanswered'] = 'Niet beantwoord';
 $string['notchanged'] = 'Niet gewijzigd sinds de laatste poging';
 $string['notenoughanswers'] = 'Dit vraagtype vereist minstens {$a} antwoorden';
@@ -310,7 +317,9 @@ $string['penaltyfactor_help'] = '<p>Je kunt instellen welk deel van de behaalde 
 $string['penaltyforeachincorrecttry'] = 'Strafpunt voor elke foute poging';
 $string['penaltyforeachincorrecttry_help'] = 'Wanneer je vragen laat lopen met het vraaggedrag \'Interactief met meerdere pogingen\' of met \'Adaptieve modus\', zodat de leerling meerdere pogingen heeft om het antwoord juist te hebben, dan controleert deze optie hoe veel strafpunten ze krijgen voor elke foute poging.
 
-Het aantal strafpunten is een deel van het totaal aantal punten voor de vraag, dus als de vraag drie punten waard is en het aantal strafpunten is 0,3333333, dan zal de leerling een 3 krijgen als die het antwoord van de eerste keer juist heeft, een 3 als die het bij de tweede poging juist heeft en een 1 bij de derde poging.';
+Het aantal strafpunten is een deel van het totaal aantal punten voor de vraag, dus als de vraag drie punten waard is en het aantal strafpunten is 0,3333333, dan zal de leerling een 3 krijgen als die het antwoord van de eerste keer juist heeft, een 3 als die het bij de tweede poging juist heeft en een 1 bij de derde poging.
+
+Voor sommige vragen uit meerdere delen kan deze beoordelingslogica toegepast worden op elk deel van de vraag. De details hangen af van het vraagtype en kunnen ingewikkeld zijn, maar het principe is om de leerling een cijfer te geven voor de getoonde kennis en dit zo eerlijk mogelijk.';
 $string['permissionedit'] = 'Bewerk deze vraag';
 $string['permissionmove'] = 'Verplaats deze vraag';
 $string['permissionsaveasnew'] = 'Bewaar dit als een nieuwe vraag';
@@ -347,10 +356,11 @@ $string['questionbehaviouradminsetting'] = 'Vraaggedraginstellingen';
 $string['questionbehavioursdisabled'] = 'Uit te schakelen vraaggedrag';
 $string['questionbehavioursdisabledexplained'] = 'Geef een komma gescheiden lijst van vraaggedrag dat je niet in het rolmenu wil zien verschijnen';
 $string['questionbehavioursorder'] = 'Vraaggedrag volgorde';
-$string['questionbehavioursorderexplained'] = 'Geef een komma gescheiden lijst van vraaggedrag in de volgorde dat je het wil zien verschijnen';
+$string['questionbehavioursorderexplained'] = 'Geef een komma gescheiden lijst van vraaggedrag in de volgorde dat je het wil zien verschijnen in het rolmenu.';
 $string['questioncategory'] = 'Vraagcategorie';
 $string['questioncatsfor'] = 'Vragencategorieën voor \'{$a}\'';
 $string['questiondoesnotexist'] = 'Deze vraag bestaat niet.';
+$string['questionformtagheader'] = '{$a} tags';
 $string['questionidmismatch'] = 'Vraag ID\'s komen niet overeen';
 $string['questionname'] = 'Vraagnaam';
 $string['questionnamecopy'] = '{$a} (kopie)';
@@ -359,10 +369,11 @@ $string['questionpreviewdefaults'] = 'Standaardinstellingen vraagvoorbeeld';
 $string['questionpreviewdefaults_desc'] = 'Deze standaardwaarden worden gebruikt wanneer een gebruiker vragen bekijkt in de vragenpool. Wanneer een gebruiker een vraag bekeken heeft, worden deze instellingen bewaard als persoonlijke gebruikersvoorkeuren.';
 $string['questions'] = 'Vragen';
 $string['questionsaveerror'] = 'Fouten opgetreden tijdens het bewaren van de vraag - ({$a})';
-$string['questionsinuse'] = '(* Vragen, gemerkt met een sterretje, zijn al in gebruik in sommige testen. Deze vragen zullen niet uit de testen gewist worden, enkel uit de categorielijst.)';
+$string['questionsinuse'] = '(* Vragen, gemerkt met een asterisk zijn al in gebruik in sommige testen. Deze vragen zullen niet uit de testen gewist worden, enkel uit de categorielijst.)';
 $string['questionsmovedto'] = 'De nog gebruikte vragen zijn verplaatst naar "{$a}" in de bovenliggende cursuscategorie.';
 $string['questionsrescuedfrom'] = 'Vragen bewaard vanuit context {$a}.';
 $string['questionsrescuedfrominfo'] = 'Deze vragen (waarvan sommigen verborgen kunnen zijn) werden bewaard wanneer context {$a} is verwijderd omdat ze nog gebruikt worden door sommige testen of andere activiteiten.';
+$string['questiontags'] = 'Vraagtags';
 $string['questiontext'] = 'Vraag tekst';
 $string['questiontype'] = 'Vraagtype';
 $string['questionuse'] = 'Gebruik vraag in deze activiteit';
@@ -372,6 +383,7 @@ $string['requiresgrading'] = 'Beoordelen vereist';
 $string['responsehistory'] = 'Antwoordgeschiedenis';
 $string['restart'] = 'Start opnieuw';
 $string['restartwiththeseoptions'] = 'Start opnieuw met deze opties';
+$string['restoremultipletopcats'] = 'Het backupbestand bevat meer dan één vraagcategorie van het hoogste niveau voor context {$a}.';
 $string['reviewresponse'] = 'Bekijk antwoord';
 $string['rightanswer'] = 'Juist antwoord';
 $string['rightanswer_help'] = 'Een automatisch gegenereerde samenvatting van het juiste antwoord. Dit kan beperkt zijn. Overweeg om het juiste antwoord in de algemene feedback foor de vraag mee te geven en deze optie uit te schakelen.';
@@ -417,6 +429,7 @@ $string['technicalinfostate'] = 'Vraagstatus: {$a}';
 $string['technicalinfovariant'] = 'Vraagvariant: {$a}';
 $string['tofilecategory'] = 'Bewaar categorie in bestand';
 $string['tofilecontext'] = 'Bewaar context in bestand';
+$string['topfor'] = 'Hoogste voor {$a}';
 $string['uninstallbehaviour'] = 'Verwijder dit vraaggedrag.';
 $string['uninstallqtype'] = 'Verwijder dit vraagtype';
 $string['unknown'] = 'Onbekend';

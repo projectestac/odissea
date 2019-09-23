@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_paypal', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['defaultrole'] = 'Προεπιλεγμένη ανάθεση ρόλου';
 $string['defaultrole_desc'] = 'Επιλέξτε τον ρόλο, ο οποίος θα ανατεθεί στους χρήστες κατά τη διάρκεια των PayPal εγγραφών';
 $string['enrolenddate'] = 'Ημερομηνία λήξης';
 $string['enrolenddate_help'] = 'Εάν ενεργοποιηθεί, οι χρήστες μπορούν να εγγραφούν μόνο μέχρι αυτή την ημερομηνία.';
-$string['enrolenddaterror'] = 'Η ημερομηνία λήξης της εγγραφής δεν μπορεί να είναι νωρίτερα από την ημερομηνία έναρξης';
+$string['enrolenddaterror'] = 'Η ημερομηνία λήξης εγγραφών δεν μπορεί να είναι νωρίτερα από την ημερομηνία έναρξης';
 $string['enrolperiod'] = 'Διάρκεια εγγραφής';
 $string['enrolperiod_desc'] = 'Προεπιλεγμένη διάρκεια ισχύος της εγγραφής. Αν ορισθεί σε μηδέν, η διάρκεια εγγραφής θα είναι απεριόριστη από προεπιλογή.';
 $string['enrolperiod_help'] = 'Διάρκεια ισχύος της εγγραφής, ξεκινώντας από τη στιγμή εγγραφής του χρήστη. Αν απενεργοποιηθεί, η διάρκεια εγγραφής θα είναι απεριόριστη.';
@@ -86,8 +86,9 @@ $string['privacy:metadata:enrol_paypal:paypal_com:email'] = 'Διεύθυνση 
 $string['privacy:metadata:enrol_paypal:paypal_com:first_name'] = 'Όνομα του χρήστη που αγοράζει το μάθημα.';
 $string['privacy:metadata:enrol_paypal:paypal_com:last_name'] = 'Το επώνυμο του χρήστη που αγοράζει το μάθημα.';
 $string['privacy:metadata:enrol_paypal:paypal_com:os0'] = 'Πλήρες όνομα του αγοραστή.';
+$string['processexpirationstask'] = 'Εργασία αποστολής ειδοποιήσεων λήξης εγγραφής στο PayPal';
 $string['sendpaymentbutton'] = 'Αποστολή πληρωμής με Paypal';
 $string['status'] = 'Επιτρέπονται εγγραφές PayPal';
 $string['status_desc'] = 'Επιτρέπεται στους χρήστες να χρησιμοποιούν PayPal για να εγγραφούν στο μάθημα από προεπιλογή.';
 $string['transactions'] = 'Συναλλαγές PayPal';
-$string['unenrolselfconfirm'] = 'Είστε βεβαιοι ότι θέλετε να ακυρώσετε την εγγραφή σας στο μάθημα "{$a}";';
+$string['unenrolselfconfirm'] = 'Είστε βεβαιοι ότι θέλετε να ακυρώσετε την εγγραφή σας στο μάθημα «{$a}»;';

@@ -1794,6 +1794,9 @@ class com_wiris_quizzes_impl_HTMLTools {
 			return true;
 		}
 		$start = _hx_index_of($session, "<session", null);
+		if($start === -1) {
+			return false;
+		}
 		$end = _hx_index_of($session, ">", $start);
 		$start = _hx_index_of($session, "version", $start);
 		if($start > $end) {

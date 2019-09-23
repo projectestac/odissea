@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,11 +41,21 @@ $string['dropbackground'] = 'Achtergrondafbeelding waarop woorden gesleept moete
 $string['dropzone'] = 'Neerzetzone  {$a}';
 $string['dropzoneheader'] = 'Neerzetzones';
 $string['dropzones'] = 'Neerzetzones';
-$string['dropzones_help'] = 'De neerzetzones worden gedefinieerd door coördinaten te typen. Terwijl je typt wordt bovenstaand voorbeeld onmiddellijk aangepast, zodat je dingen kunt positioneren door te proberen en aan te passen.
+$string['dropzones_help'] = 'De neerzetzones worden gedefinieerd door coördinaten te typen of door ze in positie te slepen in bovenstaand voorbeeld.
+
+Het selecteren van een vorm (cirkel, rechthoek of polygoon) zal een nieuwe neerzetzone maken in de linkerbovenhoek van het voorbeeld. Het is misschien nuttig om de markeersectie te minimaliseren, zodat je het voorbeeld kan zien terwijl je de neerzetzones bewerkt.
+
+Het bewerken van de vorm begint met een klik op de vorm in het voorbeeld om te bewerkhendels te tonen. Je kunt de vorm dan verplaatsen met de middelste hendel of de afmetingen bewerken met de hendels op de knooppunten.
+
+Voor polygonen zal de control-toets (command op een Mac) terwijl je op een knooppunthendel klikt een nieuw knooppunt toevoegen aan de polygoon. Hou de vorm van een polygoon zo eenvoudig mogelijk zonder lijnen te laten kruisen.
+
+Ter informatie: de drie vormen gebruiken coördinaten op volgende manieren:
 
 * Cirkel: middelpunt_x, middelpunt_y; straal<br>bijvoorbeeld: <code>80, 100; 50</code>
+* Rechthoek: x linkerbovenhoek, y linkerbovenhoek ; breedte, hoogte<br>bijvoorbeeld: <code>20, 60; 80, 40</code>
 * Polygoon: x1, y1; x2, y2; ...; xn, yn<br>bijvoorbeeld: <code>20, 60; 100, 60; 20, 100</code>
-* Rechthoek: x linkerbovenhoek, y linkerbovenhoek ; breedte, hoogte<br>bijvoorbeeld: <code>20, 60; 80, 40</code>';
+
+Het selecteren van een markeertekst zal die tekst toevoegen aan de vorm in het voorbeeld.';
 $string['followingarewrong'] = 'Volgende woorden staan in de foute zone: {$a}';
 $string['followingarewrongandhighlighted'] = 'Volgende woorden zijn fout geplaatst:  {$a}. De oplichtende woorden worden nu getoond met de juiste parameters.<br /> Klik op het woord om de toegestane zone aan te geven.';
 $string['formerror_nobgimage'] = 'Je moet een afbeelding selecteren om als achtergrond te gebruiken in de zone voor slepen en neerzetten.';

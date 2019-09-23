@@ -10,9 +10,7 @@
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-.fa, .block_settings .block_tree [aria-expanded="true"]:before,
-.block_navigation .block_tree [aria-expanded="true"]:before, .block_settings .block_tree [aria-expanded="false"]:before,
-.block_navigation .block_tree [aria-expanded="false"]:before {
+.fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -69,14 +67,10 @@
 .fa-pull-right {
   float: right; }
 
-.fa.fa-pull-left, .block_settings .block_tree .fa-pull-left[aria-expanded="true"]:before,
-.block_navigation .block_tree .fa-pull-left[aria-expanded="true"]:before, .block_settings .block_tree .fa-pull-left[aria-expanded="false"]:before,
-.block_navigation .block_tree .fa-pull-left[aria-expanded="false"]:before {
+.fa.fa-pull-left {
   margin-right: .3em; }
 
-.fa.fa-pull-right, .block_settings .block_tree .fa-pull-right[aria-expanded="true"]:before,
-.block_navigation .block_tree .fa-pull-right[aria-expanded="true"]:before, .block_settings .block_tree .fa-pull-right[aria-expanded="false"]:before,
-.block_navigation .block_tree .fa-pull-right[aria-expanded="false"]:before {
+.fa.fa-pull-right {
   margin-left: .3em; }
 
 /* Deprecated as of 4.4.0 */
@@ -86,14 +80,10 @@
 .pull-left {
   float: left; }
 
-.fa.pull-left, .block_settings .block_tree .pull-left[aria-expanded="true"]:before,
-.block_navigation .block_tree .pull-left[aria-expanded="true"]:before, .block_settings .block_tree .pull-left[aria-expanded="false"]:before,
-.block_navigation .block_tree .pull-left[aria-expanded="false"]:before {
+.fa.pull-left {
   margin-right: .3em; }
 
-.fa.pull-right, .block_settings .block_tree .pull-right[aria-expanded="true"]:before,
-.block_navigation .block_tree .pull-right[aria-expanded="true"]:before, .block_settings .block_tree .pull-right[aria-expanded="false"]:before,
-.block_navigation .block_tree .pull-right[aria-expanded="false"]:before {
+.fa.pull-right {
   margin-left: .3em; }
 
 .fa-spin {
@@ -2357,7 +2347,7 @@
   --gray: #868e96;
   --gray-dark: #373a3c;
   --primary: #1177d1;
-  --secondary: #e9ecef;
+  --secondary: #ced4da;
   --success: #5cb85c;
   --info: #5bc0de;
   --warning: #f0ad4e;
@@ -2691,7 +2681,8 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 small,
-.small {
+.small,
+#page-admin-search .adminpagepath li {
   font-size: 80%;
   font-weight: 400; }
 
@@ -3450,10 +3441,10 @@ table#listdirectories td {
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #f9fafb; }
+  background-color: #f1f3f5; }
 
 .table-hover .table-secondary:hover, table.grading-report .table-secondary:hover, .forumheaderlist .table-secondary:hover, .generaltable .table-secondary:hover, table.flexible .table-secondary:hover, .category_subcategories .table-secondary:hover, table#modules .table-secondary:hover, table#permissions .table-secondary:hover {
-  background-color: #eaedf1; }
+  background-color: #e2e6ea; }
   .table-hover .table-secondary:hover > td, table.grading-report .table-secondary:hover > td, .forumheaderlist .table-secondary:hover > td, .generaltable .table-secondary:hover > td, table.flexible .table-secondary:hover > td, .category_subcategories .table-secondary:hover > td, table#modules .table-secondary:hover > td, table#permissions .table-secondary:hover > td,
   .table-hover .table-secondary:hover > th,
   table.grading-report .table-secondary:hover > th,
@@ -3463,7 +3454,7 @@ table#listdirectories td {
   .category_subcategories .table-secondary:hover > th,
   table#modules .table-secondary:hover > th,
   table#permissions .table-secondary:hover > th {
-    background-color: #eaedf1; }
+    background-color: #e2e6ea; }
 
 .table-success,
 .table-success > th,
@@ -3797,10 +3788,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .form-group, .form-buttons,
 .path-admin .buttons,
-#fitem_id_submitbutton,
 .fp-content-center form + div,
-div.backup-section + form,
-#fgroup_id_buttonar {
+div.backup-section + form {
   margin-bottom: 1rem; }
 
 .form-text {
@@ -4011,10 +4000,8 @@ div.backup-section + form,
       margin-bottom: 0; }
     .form-inline .form-group, .form-inline .form-buttons,
     .form-inline .path-admin .buttons, .path-admin .form-inline .buttons,
-    .form-inline #fitem_id_submitbutton,
     .form-inline .fp-content-center form + div, .fp-content-center .form-inline form + div,
-    .form-inline div.backup-section + form,
-    .form-inline #fgroup_id_buttonar {
+    .form-inline div.backup-section + form {
       display: flex;
       flex: 0 0 auto;
       flex-flow: row wrap;
@@ -4103,28 +4090,28 @@ fieldset:disabled #rubric-rubric.gradingform_rubric a.addcriterion,
 
 .btn-secondary, .btn-default {
   color: #212529;
-  background-color: #e9ecef;
-  border-color: #e9ecef; }
+  background-color: #ced4da;
+  border-color: #ced4da; }
   .btn-secondary:hover, .btn-default:hover {
     color: #212529;
-    background-color: #d3d9df;
-    border-color: #cbd3da; }
+    background-color: #b8c1ca;
+    border-color: #b1bbc4; }
   .btn-secondary:focus, .btn-default:focus, .btn-secondary.focus, .focus.btn-default {
-    box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5); }
   .btn-secondary.disabled, .fp-viewbar.disabled a, .disabled.btn-default, .btn-secondary:disabled, .btn-default:disabled {
     color: #212529;
-    background-color: #e9ecef;
-    border-color: #e9ecef; }
+    background-color: #ced4da;
+    border-color: #ced4da; }
   .btn-secondary:not(:disabled):not(.disabled):active, .btn-default:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .fp-viewbar:not(.disabled) a.checked:not(:disabled):not(.disabled), .btn-default:not(:disabled):not(.disabled).active,
   .show > .btn-secondary.dropdown-toggle,
   .show > .dropdown-toggle.btn-default {
     color: #212529;
-    background-color: #cbd3da;
-    border-color: #c4ccd4; }
+    background-color: #b1bbc4;
+    border-color: #aab4bf; }
     .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-default:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .fp-viewbar:not(.disabled) a.checked:not(:disabled):not(.disabled):focus, .btn-default:not(:disabled):not(.disabled).active:focus,
     .show > .btn-secondary.dropdown-toggle:focus,
     .show > .dropdown-toggle.btn-default:focus {
-      box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5); }
 
 .btn-success {
   color: #fff;
@@ -4288,27 +4275,27 @@ fieldset:disabled #rubric-rubric.gradingform_rubric a.addcriterion,
       box-shadow: 0 0 0 0.2rem rgba(17, 119, 209, 0.5); }
 
 .btn-outline-secondary {
-  color: #e9ecef;
+  color: #ced4da;
   background-color: transparent;
   background-image: none;
-  border-color: #e9ecef; }
+  border-color: #ced4da; }
   .btn-outline-secondary:hover {
     color: #212529;
-    background-color: #e9ecef;
-    border-color: #e9ecef; }
+    background-color: #ced4da;
+    border-color: #ced4da; }
   .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5); }
   .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-    color: #e9ecef;
+    color: #ced4da;
     background-color: transparent; }
   .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-secondary.dropdown-toggle {
     color: #212529;
-    background-color: #e9ecef;
-    border-color: #e9ecef; }
+    background-color: #ced4da;
+    border-color: #ced4da; }
     .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-secondary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5); }
 
 .btn-outline-success {
   color: #5cb85c;
@@ -5575,25 +5562,25 @@ tbody.collapse.show {
   display: flex;
   flex-direction: column; }
   .card-deck .card, .card-deck #page-enrol-users #filterform, #page-enrol-users .card-deck #filterform, .card-deck .que .history, .que .card-deck .history, .card-deck .userprofile .profile_tree section, .userprofile .profile_tree .card-deck section, .card-deck .groupinfobox, .card-deck .well {
-    margin-bottom: 15px; }
+    margin-bottom: 0.25rem; }
   @media (min-width: 576px) {
     .card-deck {
       flex-flow: row wrap;
-      margin-right: -15px;
-      margin-left: -15px; }
+      margin-right: -0.25rem;
+      margin-left: -0.25rem; }
       .card-deck .card, .card-deck #page-enrol-users #filterform, #page-enrol-users .card-deck #filterform, .card-deck .que .history, .que .card-deck .history, .card-deck .userprofile .profile_tree section, .userprofile .profile_tree .card-deck section, .card-deck .groupinfobox, .card-deck .well {
         display: flex;
         flex: 1 0 0%;
         flex-direction: column;
-        margin-right: 15px;
+        margin-right: 0.25rem;
         margin-bottom: 0;
-        margin-left: 15px; } }
+        margin-left: 0.25rem; } }
 
 .card-group {
   display: flex;
   flex-direction: column; }
   .card-group > .card, #page-enrol-users .card-group > #filterform, .que .card-group > .history, .userprofile .profile_tree .card-group > section, .card-group > .groupinfobox, .card-group > .well {
-    margin-bottom: 15px; }
+    margin-bottom: 0.25rem; }
   @media (min-width: 576px) {
     .card-group {
       flex-flow: row wrap; }
@@ -5721,11 +5708,11 @@ tbody.collapse.show {
 
 .badge-secondary {
   color: #212529;
-  background-color: #e9ecef; }
+  background-color: #ced4da; }
   .badge-secondary[href]:hover, .badge-secondary[href]:focus {
     color: #212529;
     text-decoration: none;
-    background-color: #cbd3da; }
+    background-color: #b1bbc4; }
 
 .badge-success {
   color: #fff;
@@ -5791,7 +5778,7 @@ tbody.collapse.show {
 #page-admin-index .adminwarning,
 #page-admin-index .adminerror, .que .formulation,
 .que .outcome,
-.que .comment {
+.que .comment, .assignfeedback_editpdf_widget .label {
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
@@ -5822,13 +5809,13 @@ tbody.collapse.show {
     color: #05233e; }
 
 .alert-secondary {
-  color: #797b7c;
-  background-color: #fbfbfc;
-  border-color: #f9fafb; }
+  color: #6b6e71;
+  background-color: #f5f6f8;
+  border-color: #f1f3f5; }
   .alert-secondary hr {
-    border-top-color: #eaedf1; }
+    border-top-color: #e2e6ea; }
   .alert-secondary .alert-link {
-    color: #606162; }
+    color: #525557; }
 
 .alert-success,
 .que .comment {
@@ -5840,13 +5827,13 @@ tbody.collapse.show {
   .alert-success .alert-link, .que .comment .alert-link {
     color: #1f3e1f; }
 
-.alert-info, #page-admin-index .releasenoteslink, #adminsettings .form-overridden, .que .formulation {
+.alert-info, #page-admin-index .releasenoteslink, #adminsettings .form-overridden, .que .formulation, .assignfeedback_editpdf_widget .label {
   color: #2f6473;
   background-color: #def2f8;
   border-color: #d1edf6; }
-  .alert-info hr, #page-admin-index .releasenoteslink hr, #adminsettings .form-overridden hr, .que .formulation hr {
+  .alert-info hr, #page-admin-index .releasenoteslink hr, #adminsettings .form-overridden hr, .que .formulation hr, .assignfeedback_editpdf_widget .label hr {
     border-top-color: #bce5f2; }
-  .alert-info .alert-link, #page-admin-index .releasenoteslink .alert-link, #adminsettings .form-overridden .alert-link, .que .formulation .alert-link {
+  .alert-info .alert-link, #page-admin-index .releasenoteslink .alert-link, #adminsettings .form-overridden .alert-link, .que .formulation .alert-link, .assignfeedback_editpdf_widget .label .alert-link {
     color: #20454f; }
 
 .alert-warning,
@@ -5986,15 +5973,15 @@ tbody.collapse.show {
     border-color: #093e6d; }
 
 .list-group-item-secondary {
-  color: #797b7c;
-  background-color: #f9fafb; }
+  color: #6b6e71;
+  background-color: #f1f3f5; }
   .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-    color: #797b7c;
-    background-color: #eaedf1; }
+    color: #6b6e71;
+    background-color: #e2e6ea; }
   .list-group-item-secondary.list-group-item-action.active {
     color: #fff;
-    background-color: #797b7c;
-    border-color: #797b7c; }
+    background-color: #6b6e71;
+    border-color: #6b6e71; }
 
 .list-group-item-success {
   color: #306030;
@@ -6323,7 +6310,7 @@ button.close, .moodle-dialogue-base button.closebutton {
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(0, 0, 0, 0.25); }
-
+  
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
@@ -6343,7 +6330,7 @@ button.close, .moodle-dialogue-base button.closebutton {
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(0, 0, 0, 0.25); }
-
+  
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
@@ -6360,7 +6347,7 @@ button.close, .moodle-dialogue-base button.closebutton {
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(0, 0, 0, 0.25); }
-
+  
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
@@ -6389,7 +6376,7 @@ button.close, .moodle-dialogue-base button.closebutton {
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(0, 0, 0, 0.25); }
-
+  
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
@@ -6555,12 +6542,12 @@ button.bg-primary:focus {
   background-color: #0d5ca2 !important; }
 
 .bg-secondary {
-  background-color: #e9ecef !important; }
+  background-color: #ced4da !important; }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #cbd3da !important; }
+  background-color: #b1bbc4 !important; }
 
 .bg-success {
   background-color: #5cb85c !important; }
@@ -6651,7 +6638,7 @@ button.bg-dark:focus {
   border-color: #1177d1 !important; }
 
 .border-secondary {
-  border-color: #e9ecef !important; }
+  border-color: #ced4da !important; }
 
 .border-success {
   border-color: #5cb85c !important; }
@@ -7261,6 +7248,11 @@ button.bg-dark:focus {
   bottom: 0;
   left: 0;
   z-index: 1030; }
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020; }
 
 .sr-only {
   position: absolute;
@@ -8378,10 +8370,10 @@ a.text-primary:hover, a.text-primary:focus {
   color: #0d5ca2 !important; }
 
 .text-secondary {
-  color: #e9ecef !important; }
+  color: #ced4da !important; }
 
 a.text-secondary:hover, a.text-secondary:focus {
-  color: #cbd3da !important; }
+  color: #b1bbc4 !important; }
 
 .text-success, .green,
 .notifysuccess, .connected {
@@ -8426,10 +8418,10 @@ a.text-danger:hover, a.notconnected:hover, .que a.validationerror:hover, a.text-
 a.text-light:hover, a.text-light:focus {
   color: #dae0e5 !important; }
 
-.text-dark {
+.text-dark, #categoryquestions .highlight {
   color: #373a3c !important; }
 
-a.text-dark:hover, a.text-dark:focus {
+a.text-dark:hover, #categoryquestions a.highlight:hover, a.text-dark:focus, #categoryquestions a.highlight:focus {
   color: #1f2021 !important; }
 
 .text-muted, a.dimmed,
@@ -8448,7 +8440,7 @@ a.dimmed_text:visited,
 .usersuspended a:visited,
 .dimmed_category,
 .dimmed_category a, .tag_feed .media .muted a, #page-admin-qtypes .disabled,
-#page-admin-qbehaviours .disabled, #page-admin-plugins #plugins-control-panel .pluginname .componentname, #page-admin-plugins #plugins-control-panel .version .versionnumber, #page-admin-plugins #plugins-control-panel .notes .requiredby, #plugins-check-page .page-description, #plugins-check-page #plugins-check .requires-ok, #plugins-check-page #plugins-check .displayname .plugindir, #plugins-check-page #plugins-check-available-dependencies .displayname .component, .block .minicalendar td.weekend, .section .activity .stealth, .course-content .section-summary .section-summary-activities .activity-count, .course-content ul li.section.hidden .sectionname > span,
+#page-admin-qbehaviours .disabled, #page-admin-plugins #plugins-control-panel .pluginname .componentname, #page-admin-plugins #plugins-control-panel .version .versionnumber, #page-admin-plugins #plugins-control-panel .notes .requiredby, #plugins-check-page .page-description, #plugins-check-page #plugins-check .requires-ok, #plugins-check-page #plugins-check .displayname .plugindir, #plugins-check-page #plugins-check-available-dependencies .displayname .component, #page-admin-search .adminpagepath li, .block .minicalendar td.weekend, .section .activity .stealth, .course-content .section-summary .section-summary-activities .activity-count, .course-content ul li.section.hidden .sectionname > span,
 .course-content ul li.section.hidden .content > div.summary,
 .course-content ul li.section.hidden .activity .activityinstance, #course-category-listings .listitem[data-visible="0"], #course-category-listings .listitem[data-visible="0"] > div > a, #course-category-listings .listing-pagination-totals.dimmed, .fitem.disabled .fp-btn-choose, .form-defaultinfo,
 .form-label .form-shortname, .formsettingheading .form-horizontal, .no-felement.fstatic, .path-backup .backup_progress .backup_stage {
@@ -8509,7 +8501,7 @@ a.dimmed_text:visited,
   .table, table.collection, table.flexible,
   .generaltable {
     border-collapse: collapse !important; }
-
+    
     .table td,
     table.collection td,
     table.flexible td,
@@ -8523,7 +8515,7 @@ a.dimmed_text:visited,
 /* stylelint-disable function-url-scheme-blacklist */
 /* stylelint-enable function-url-scheme-blacklist */
 .tag, .statusok, .statuswarning, .statusserious,
-.statuscritical, .que .correctness, .assignfeedback_editpdf_widget .label, .label, .badge {
+.statuscritical, .que .correctness, .label, .badge {
   display: inline-block;
   padding: 0.25rem 0.4em;
   font-size: 75%;
@@ -8569,9 +8561,9 @@ a.dimmed_text:visited,
   #page-admin-report-backups-index .backup-notyetrun[href]:focus {
     background-color: #449d44; }
 
-.tag-info, #page-admin-index .adminwarning.availableupdatesinfo .moodleupdateinfo.maturity200 .info.release, .assignfeedback_editpdf_widget .label {
+.tag-info, #page-admin-index .adminwarning.availableupdatesinfo .moodleupdateinfo.maturity200 .info.release {
   background-color: #5bc0de; }
-  .tag-info[href]:hover, #page-admin-index .adminwarning.availableupdatesinfo .moodleupdateinfo.maturity200 .info.release[href]:hover, .assignfeedback_editpdf_widget .label[href]:hover, .tag-info[href]:focus, #page-admin-index .adminwarning.availableupdatesinfo .moodleupdateinfo.maturity200 .info.release[href]:focus, .assignfeedback_editpdf_widget .label[href]:focus {
+  .tag-info[href]:hover, #page-admin-index .adminwarning.availableupdatesinfo .moodleupdateinfo.maturity200 .info.release[href]:hover, .tag-info[href]:focus, #page-admin-index .adminwarning.availableupdatesinfo .moodleupdateinfo.maturity200 .info.release[href]:focus {
     background-color: #31b0d5; }
 
 .tag-warning, .statuswarning, #page-admin-report-backups-index .backup-warning, #page-admin-index .updateplugin .updatepluginconfirmexternal, #page-admin-index .adminwarning.availableupdatesinfo .moodleupdateinfo.maturity100 .info.release,
@@ -8790,10 +8782,12 @@ input[disabled] {
 }
 */
 /* core.less */
-#region-main > .card, #page-enrol-users #region-main > #filterform, .que #region-main > .history, .userprofile .profile_tree #region-main > section, #region-main > .groupinfobox, #region-main > .well {
+#region-main {
   overflow-x: auto;
   overflow-y: visible;
-  min-height: 45rem; }
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1.25rem;
+  background-color: #fff; }
 
 .context-header-settings-menu,
 .region-main-settings-menu {
@@ -8881,6 +8875,12 @@ a.autolink.glossary:hover {
 
 .pagelayout-mydashboard.jsenabled .collapsibleregioncaption {
   cursor: pointer; }
+
+.pagelayout-mydashboard #region-main {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  margin-top: -1px; }
 
 .collapsibleregioncaption img {
   vertical-align: middle; }
@@ -8999,6 +8999,7 @@ form.popupform div {
   overflow: auto; }
 
 .no-overflow > .generaltable {
+  position: relative;
   margin-bottom: 0;
   min-height: 10em; }
 
@@ -9847,7 +9848,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 
 /* Fixed for safari browser on iPhone4S with ios7@mixin */
 @media (max-height: 639px) {
-  .ios.safari .choosercontainer #chooseform .submitbuttons {
+  .ios .choosercontainer #chooseform .submitbuttons {
     padding: 45px 0; } }
 
 .choosercontainer #chooseform .submitbuttons input {
@@ -10374,6 +10375,9 @@ ul {
   width: 100%;
   color: #373a3c; }
 
+.dropdown-item:active a {
+  color: #fff; }
+
 .competency-tree ul {
   padding-left: 1.5rem; }
 
@@ -10386,7 +10390,8 @@ ul {
   top: 0; }
 
 [data-drag-type="move"] {
-  cursor: move; }
+  cursor: move;
+  touch-action: none; }
 
 .clickable {
   cursor: pointer; }
@@ -10416,6 +10421,119 @@ div.editor_atto_toolbar button .icon {
 
 .w-auto {
   width: auto; }
+
+.bg-pulse-grey {
+  animation: bg-pulse-grey 2s infinite linear; }
+
+@keyframes bg-pulse-grey {
+  0% {
+    background-color: #f8f9fa; }
+  50% {
+    background-color: #e9ecef; }
+  100% {
+    background-color: #f8f9fa; } }
+
+.line-height-0 {
+  line-height: 0 !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.line-height-1 {
+  line-height: 0.25rem !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.line-height-2 {
+  line-height: 0.5rem !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.line-height-3 {
+  line-height: 1rem !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.line-height-4 {
+  line-height: 1.5rem !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.line-height-5 {
+  line-height: 3rem !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.dir-rtl .dir-rtl-hide {
+  display: none; }
+
+.dir-ltr .dir-ltr-hide {
+  display: none; }
+
+.switch {
+  position: relative; }
+  .switch input {
+    float: left;
+    width: 1px;
+    transform: translateX(1px);
+    padding: 0;
+    margin: 0;
+    opacity: 0; }
+    .switch input + label {
+      position: relative;
+      min-height: 1.725rem;
+      min-width: 3.45rem;
+      line-height: 1.725rem;
+      border-radius: 1.725rem;
+      display: inline-block;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+      vertical-align: middle;
+      padding-left: 3.95rem; }
+    .switch input + label::before,
+    .switch input + label::after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 0.8625rem);
+      left: 0;
+      width: 3.45rem;
+      height: 1.725rem;
+      bottom: 0;
+      display: block; }
+    .switch input + label::before {
+      right: 0;
+      background-color: #dee2e6;
+      border-radius: 1.725rem;
+      transition: 0.2s all; }
+    .switch input + label::after {
+      margin-top: 2px;
+      left: 2px;
+      width: calc(1.725rem - 4px);
+      height: calc(1.725rem - 4px);
+      border-radius: 50%;
+      background-color: #fff;
+      transition: 0.2s all; }
+    .switch input:checked + label::before {
+      background-color: #1177d1; }
+    .switch input:checked + label::after {
+      margin-left: 1.725rem; }
+    .switch input:focus + label::before {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem rgba(17, 119, 209, 0.25); }
+    .switch input:disabled + label {
+      color: #868e96;
+      cursor: not-allowed; }
+    .switch input:disabled + label::before {
+      background-color: #e9ecef; }
+
+.paged-content-page-container {
+  min-height: 3.125rem; }
+
+.text-decoration-none {
+  text-decoration: none !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.position-right {
+  right: 0 !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.z-index-1 {
+  z-index: 1 !important;
+  /* stylelint-disable-line declaration-no-important */ }
 
 .icon {
   font-size: 16px;
@@ -10453,9 +10571,63 @@ div.editor_atto_toolbar button .icon {
 .icon-no-spacing a > .icon {
   margin: 0; }
 
+.icon-no-margin .icon {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .icon-large > .icon {
   width: 32px;
   height: 32px; }
+
+.icon-size-0 .icon {
+  height: 0 !important;
+  /* stylelint-disable-line declaration-no-important */
+  width: 0 !important;
+  /* stylelint-disable-line declaration-no-important */
+  font-size: 0 !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.icon-size-1 .icon {
+  height: 4px !important;
+  /* stylelint-disable-line declaration-no-important */
+  width: 4px !important;
+  /* stylelint-disable-line declaration-no-important */
+  font-size: 4px !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.icon-size-2 .icon {
+  height: 8px !important;
+  /* stylelint-disable-line declaration-no-important */
+  width: 8px !important;
+  /* stylelint-disable-line declaration-no-important */
+  font-size: 8px !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.icon-size-3 .icon {
+  height: 16px !important;
+  /* stylelint-disable-line declaration-no-important */
+  width: 16px !important;
+  /* stylelint-disable-line declaration-no-important */
+  font-size: 16px !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.icon-size-4 .icon {
+  height: 24px !important;
+  /* stylelint-disable-line declaration-no-important */
+  width: 24px !important;
+  /* stylelint-disable-line declaration-no-important */
+  font-size: 24px !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.icon-size-5 .icon {
+  height: 48px !important;
+  /* stylelint-disable-line declaration-no-important */
+  width: 48px !important;
+  /* stylelint-disable-line declaration-no-important */
+  font-size: 48px !important;
+  /* stylelint-disable-line declaration-no-important */ }
 
 .helplink .icon {
   margin-left: 0.5rem; }
@@ -10967,6 +11139,25 @@ div.editor_atto_toolbar button .icon {
 .modal.modal-in-page {
   z-index: 0; }
 
+#page-admin-search .adminpagetitle {
+  margin-bottom: 0;
+  border-bottom: none; }
+
+#page-admin-search .adminpagepath {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0; }
+  #page-admin-search .adminpagepath li + li:before {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    content: "/"; }
+
+@media (min-width: 576px) {
+  #page-admin-search .container {
+    overflow-wrap: break-word; } }
+
 .blockmovetarget .accesshide {
   position: relative;
   left: initial; }
@@ -10989,7 +11180,7 @@ div.editor_atto_toolbar button .icon {
   color: #373a3c; }
 
 [data-region="blocks-column"] {
-  width: 250px;
+  width: 360px;
   float: right; }
 
 /* We put an absolutely positioned div in a relatively positioned div so it takes up no space */
@@ -11013,314 +11204,148 @@ div.editor_atto_toolbar button .icon {
   border-bottom-left-radius: 0.5rem;
   float: right; }
 
-#region-main {
-  float: left;
-  width: 100%; }
-
 #region-main-settings-menu.has-blocks,
 #region-main.has-blocks {
   display: inline-block;
-  width: calc(100% - 265px); }
+  width: calc(100% - 375px); }
   @media (max-width: 1199.98px) {
     #region-main-settings-menu.has-blocks,
     #region-main.has-blocks {
-      width: 100%; } }
+      width: 100%;
+      /* MDL-63102 - Remove extra space at bottom.
+        If modifying make sure block-region is horizontally stacked when in full screen */
+      display: block; } }
 
 @media (max-width: 1199.98px) {
   [data-region="blocks-column"] {
     width: 100%; } }
 
-.progress-chart-container {
-  height: 70px;
-  width: 70px; }
-  .progress-chart-container .progress-doughnut {
-    position: relative;
-    height: 70px;
-    width: 70px;
-    background-clip: padding-box;
-    border: 15px solid #dee2e6;
-    border-radius: 50%;
-    box-sizing: border-box; }
-    .progress-chart-container .progress-doughnut .progress-text {
-      position: absolute;
-      top: 50%;
-      /*rtl:ignore*/
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #dee2e6; }
-      .progress-chart-container .progress-doughnut .progress-text.has-percent {
-        color: #ff7518; }
-    .progress-chart-container .progress-doughnut .progress-indicator {
-      position: absolute;
-      top: -15px;
-      left: -15px;
-      height: 70px;
-      width: 70px; }
-      .progress-chart-container .progress-doughnut .progress-indicator svg {
-        position: relative;
-        height: 100%;
-        width: 100%; }
-        .progress-chart-container .progress-doughnut .progress-indicator svg .circle {
-          stroke-width: 15px;
-          stroke: #ff7518;
-          fill: none;
-          stroke-dasharray: 173;
-          stroke-dashoffset: 173;
-          transform: rotate(-90deg);
-          transform-origin: center center; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-1 {
-            stroke-dashoffset: 171.27; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-2 {
-            stroke-dashoffset: 169.54; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-3 {
-            stroke-dashoffset: 167.81; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-4 {
-            stroke-dashoffset: 166.08; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-5 {
-            stroke-dashoffset: 164.35; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-6 {
-            stroke-dashoffset: 162.62; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-7 {
-            stroke-dashoffset: 160.89; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-8 {
-            stroke-dashoffset: 159.16; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-9 {
-            stroke-dashoffset: 157.43; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-10 {
-            stroke-dashoffset: 155.7; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-11 {
-            stroke-dashoffset: 153.97; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-12 {
-            stroke-dashoffset: 152.24; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-13 {
-            stroke-dashoffset: 150.51; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-14 {
-            stroke-dashoffset: 148.78; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-15 {
-            stroke-dashoffset: 147.05; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-16 {
-            stroke-dashoffset: 145.32; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-17 {
-            stroke-dashoffset: 143.59; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-18 {
-            stroke-dashoffset: 141.86; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-19 {
-            stroke-dashoffset: 140.13; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-20 {
-            stroke-dashoffset: 138.4; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-21 {
-            stroke-dashoffset: 136.67; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-22 {
-            stroke-dashoffset: 134.94; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-23 {
-            stroke-dashoffset: 133.21; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-24 {
-            stroke-dashoffset: 131.48; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-25 {
-            stroke-dashoffset: 129.75; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-26 {
-            stroke-dashoffset: 128.02; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-27 {
-            stroke-dashoffset: 126.29; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-28 {
-            stroke-dashoffset: 124.56; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-29 {
-            stroke-dashoffset: 122.83; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-30 {
-            stroke-dashoffset: 121.1; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-31 {
-            stroke-dashoffset: 119.37; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-32 {
-            stroke-dashoffset: 117.64; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-33 {
-            stroke-dashoffset: 115.91; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-34 {
-            stroke-dashoffset: 114.18; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-35 {
-            stroke-dashoffset: 112.45; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-36 {
-            stroke-dashoffset: 110.72; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-37 {
-            stroke-dashoffset: 108.99; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-38 {
-            stroke-dashoffset: 107.26; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-39 {
-            stroke-dashoffset: 105.53; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-40 {
-            stroke-dashoffset: 103.8; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-41 {
-            stroke-dashoffset: 102.07; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-42 {
-            stroke-dashoffset: 100.34; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-43 {
-            stroke-dashoffset: 98.61; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-44 {
-            stroke-dashoffset: 96.88; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-45 {
-            stroke-dashoffset: 95.15; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-46 {
-            stroke-dashoffset: 93.42; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-47 {
-            stroke-dashoffset: 91.69; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-48 {
-            stroke-dashoffset: 89.96; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-49 {
-            stroke-dashoffset: 88.23; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-50 {
-            stroke-dashoffset: 86.5; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-51 {
-            stroke-dashoffset: 84.77; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-52 {
-            stroke-dashoffset: 83.04; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-53 {
-            stroke-dashoffset: 81.31; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-54 {
-            stroke-dashoffset: 79.58; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-55 {
-            stroke-dashoffset: 77.85; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-56 {
-            stroke-dashoffset: 76.12; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-57 {
-            stroke-dashoffset: 74.39; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-58 {
-            stroke-dashoffset: 72.66; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-59 {
-            stroke-dashoffset: 70.93; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-60 {
-            stroke-dashoffset: 69.2; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-61 {
-            stroke-dashoffset: 67.47; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-62 {
-            stroke-dashoffset: 65.74; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-63 {
-            stroke-dashoffset: 64.01; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-64 {
-            stroke-dashoffset: 62.28; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-65 {
-            stroke-dashoffset: 60.55; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-66 {
-            stroke-dashoffset: 58.82; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-67 {
-            stroke-dashoffset: 57.09; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-68 {
-            stroke-dashoffset: 55.36; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-69 {
-            stroke-dashoffset: 53.63; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-70 {
-            stroke-dashoffset: 51.9; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-71 {
-            stroke-dashoffset: 50.17; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-72 {
-            stroke-dashoffset: 48.44; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-73 {
-            stroke-dashoffset: 46.71; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-74 {
-            stroke-dashoffset: 44.98; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-75 {
-            stroke-dashoffset: 43.25; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-76 {
-            stroke-dashoffset: 41.52; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-77 {
-            stroke-dashoffset: 39.79; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-78 {
-            stroke-dashoffset: 38.06; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-79 {
-            stroke-dashoffset: 36.33; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-80 {
-            stroke-dashoffset: 34.6; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-81 {
-            stroke-dashoffset: 32.87; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-82 {
-            stroke-dashoffset: 31.14; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-83 {
-            stroke-dashoffset: 29.41; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-84 {
-            stroke-dashoffset: 27.68; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-85 {
-            stroke-dashoffset: 25.95; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-86 {
-            stroke-dashoffset: 24.22; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-87 {
-            stroke-dashoffset: 22.49; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-88 {
-            stroke-dashoffset: 20.76; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-89 {
-            stroke-dashoffset: 19.03; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-90 {
-            stroke-dashoffset: 17.3; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-91 {
-            stroke-dashoffset: 15.57; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-92 {
-            stroke-dashoffset: 13.84; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-93 {
-            stroke-dashoffset: 12.11; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-94 {
-            stroke-dashoffset: 10.38; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-95 {
-            stroke-dashoffset: 8.65; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-96 {
-            stroke-dashoffset: 6.92; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-97 {
-            stroke-dashoffset: 5.19; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-98 {
-            stroke-dashoffset: 3.46; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-99 {
-            stroke-dashoffset: 1.73; }
-          .progress-chart-container .progress-doughnut .progress-indicator svg .circle.percent-100 {
-            stroke-dashoffset: 0; }
-  .progress-chart-container .no-progress {
-    height: 70px;
-    width: 70px;
-    background-color: #dee2e6;
-    border-radius: 50%;
-    position: relative; }
-    .progress-chart-container .no-progress .icon {
-      position: absolute;
-      top: 50%;
-      /*rtl:ignore*/
-      left: 50%;
-      margin: 0;
-      transform: translate(-63%, -50%);
-      color: #fff;
-      height: 45px;
-      width: 45px;
-      font-size: 45px; }
+.block .empty-placeholder-image-lg {
+  height: 5rem; }
 
-.block_myoverview .event-list-item .event-icon {
-  vertical-align: middle; }
-  .block_myoverview .event-list-item .event-icon::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle; }
+.block .block-cards .course-info-container {
+  padding: 0.8rem; }
 
-.block_myoverview .event-list-item .event-name-container {
-  vertical-align: middle;
-  max-width: calc(100% - 50px); }
-  .block_myoverview .event-list-item .event-name-container .event-name {
-    display: block; }
+.block .block-cards .progress {
+  height: 0.5rem; }
 
-.block_myoverview .content-centred {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto; }
+.block .block-cards .course-summaryitem {
+  border: 1px solid #dee2e6;
+  background-color: #fff; }
 
-.block_myoverview .empty-placeholder-image-sm {
-  height: 50px; }
+.block .block-cards .icon {
+  margin-right: 0; }
 
-.block_myoverview .empty-placeholder-image-lg {
-  height: 125px; }
+.block .block-cards .card .coursemenubtn, .block .block-cards #page-enrol-users #filterform .coursemenubtn, #page-enrol-users .block .block-cards #filterform .coursemenubtn, .block .block-cards .que .history .coursemenubtn, .que .block .block-cards .history .coursemenubtn, .block .block-cards .userprofile .profile_tree section .coursemenubtn, .userprofile .profile_tree .block .block-cards section .coursemenubtn, .block .block-cards .groupinfobox .coursemenubtn, .block .block-cards .well .coursemenubtn {
+  margin-top: -0.5rem; }
 
-.card-deck .card, .card-deck #page-enrol-users #filterform, #page-enrol-users .card-deck #filterform, .card-deck .que .history, .que .card-deck .history, .card-deck .userprofile .profile_tree section, .userprofile .profile_tree .card-deck section, .card-deck .groupinfobox, .card-deck .well {
+.block .block-cards a.coursename,
+.block .block-cards .btn-link {
+  color: inherit; }
+
+.block .block-cards .multiline {
+  white-space: normal; }
+
+.block .block-cards .btn.btn-link.btn-icon, .block .block-cards #page-grade-grading-manage .actions .btn-link.btn-icon.action, #page-grade-grading-manage .actions .block .block-cards .btn-link.btn-icon.action, .block .block-cards #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .block .block-cards input.btn-link.btn-icon, .block .block-cards #rubric-rubric.gradingform_rubric .btn-link.btn-icon.addcriterion, #rubric-rubric.gradingform_rubric .block .block-cards .btn-link.btn-icon.addcriterion {
+  height: 36px;
+  width: 36px;
+  padding: 0;
+  border-radius: 50%; }
+  .block .block-cards .btn.btn-link.btn-icon:hover, .block .block-cards #page-grade-grading-manage .actions .btn-link.btn-icon.action:hover, #page-grade-grading-manage .actions .block .block-cards .btn-link.btn-icon.action:hover, .block .block-cards #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:hover, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .block .block-cards input.btn-link.btn-icon:hover, .block .block-cards #rubric-rubric.gradingform_rubric .btn-link.btn-icon.addcriterion:hover, #rubric-rubric.gradingform_rubric .block .block-cards .btn-link.btn-icon.addcriterion:hover, .block .block-cards .btn.btn-link.btn-icon:focus, .block .block-cards #page-grade-grading-manage .actions .btn-link.btn-icon.action:focus, #page-grade-grading-manage .actions .block .block-cards .btn-link.btn-icon.action:focus, .block .block-cards #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:focus, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .block .block-cards input.btn-link.btn-icon:focus, .block .block-cards #rubric-rubric.gradingform_rubric .btn-link.btn-icon.addcriterion:focus, #rubric-rubric.gradingform_rubric .block .block-cards .btn-link.btn-icon.addcriterion:focus {
+    background-color: #e9ecef; }
+
+.dashboard-card-deck.one-row {
+  flex-flow: nowrap;
+  overflow-x: scroll; }
+
+.summaryimage {
+  height: 5rem;
+  width: 5rem;
+  background-position: center;
+  background-size: cover; }
+
+.dashboard-card-deck .dashboard-card {
+  margin-bottom: 0.5rem;
+  flex-basis: auto;
+  width: 100%;
   flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: calc(50% - 30px); }
-
-.card-deck .myoverviewimg {
-  height: 150px; }
-  .card-deck .myoverviewimg.courseimage {
+  flex-shrink: 0; }
+  .dashboard-card-deck .dashboard-card .dashboard-card-img {
+    height: 7rem;
     background-position: center;
     background-size: cover; }
+  .dashboard-card-deck .dashboard-card .dashboard-card-footer {
+    padding: 0.8rem; }
+
+@media (min-width: 576px) {
+  .dashboard-card-deck .dashboard-card {
+    width: calc(50% - 0.5rem); } }
+
+@media (min-width: 840px) {
+  .dashboard-card-deck .dashboard-card {
+    width: calc(33.33% - 0.5rem); } }
+
+@media (min-width: 1100px) {
+  .dashboard-card-deck .dashboard-card {
+    width: calc(25% - 0.5rem); } }
+
+@media (min-width: 1360px) {
+  .dashboard-card-deck .dashboard-card {
+    width: calc(20% - 0.5rem); } }
+
+@media (min-width: 1200px) {
+  #region-main.has-blocks .dashboard-card-deck .dashboard-card {
+    width: calc(33.33% - 0.5rem); } }
+
+@media (min-width: 1470px) {
+  #region-main.has-blocks .dashboard-card-deck .dashboard-card {
+    width: calc(25% - 0.5rem); } }
+
+@media (min-width: 768px) {
+  body.drawer-open-left .dashboard-card-deck .dashboard-card {
+    width: calc(100% - 0.5rem); } }
+
+@media (min-width: 861px) {
+  body.drawer-open-left .dashboard-card-deck .dashboard-card {
+    width: calc(50% - 0.5rem); } }
+
+@media (min-width: 1122px) {
+  body.drawer-open-left .dashboard-card-deck .dashboard-card {
+    width: calc(33.33% - 0.5rem); } }
+
+@media (min-width: 1381px) {
+  body.drawer-open-left .dashboard-card-deck .dashboard-card {
+    width: calc(25% - 0.5rem); } }
+
+@media (min-width: 1200px) {
+  body.drawer-open-left #region-main.has-blocks .dashboard-card-deck .dashboard-card {
+    width: calc(100% - 0.5rem); } }
+
+@media (min-width: 1236px) {
+  body.drawer-open-left #region-main.has-blocks .dashboard-card-deck .dashboard-card {
+    width: calc(50% - 0.5rem); } }
+
+@media (min-width: 1497px) {
+  body.drawer-open-left #region-main.has-blocks .dashboard-card-deck .dashboard-card {
+    width: calc(33.33% - 0.5rem); } }
+
+@media (min-width: 1200px) {
+  #block-region-side-pre .dashboard-card-deck {
+    margin-left: 0;
+    margin-right: 0; }
+    #block-region-side-pre .dashboard-card-deck .dashboard-card {
+      width: calc(100% - 0.5rem) !important; } }
+
+.block_recentlyaccesseditems img.icon {
+  height: auto;
+  width: auto;
+  margin-right: 6px; }
+
+.block_myoverview .content {
+  min-height: 19.35rem; }
+
+.block_myoverview .paged-content-page-container {
+  min-height: 13rem; }
 
 .block_settings .block_tree [aria-expanded="true"],
 .block_settings .block_tree [aria-expanded="true"].emptybranch,
@@ -11334,14 +11359,26 @@ div.editor_atto_toolbar button .icon {
 .block_navigation .block_tree [aria-expanded="true"]:before {
   content: "";
   margin-right: 0;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   width: 16px; }
 
 .block_settings .block_tree [aria-expanded="false"]:before,
 .block_navigation .block_tree [aria-expanded="false"]:before {
   content: "";
-  font-size: 16px;
   margin-right: 0;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
   width: 16px; }
 
 .dir-rtl .block_settings .block_tree [aria-expanded="false"]:before,
@@ -11354,6 +11391,9 @@ div.editor_atto_toolbar button .icon {
   .block_navigation .block_tree p.hasicon .icon,
   .block_settings .block_tree p.hasicon .icon {
     margin-right: 2px; }
+
+.block.invisibleblock .card-title {
+  color: #868e96; }
 
 .navbar {
   max-height: 50px; }
@@ -11498,6 +11538,9 @@ div.editor_atto_toolbar button .icon {
       float: right; }
   .path-calendar .maincalendar .event .card-header img {
     vertical-align: baseline; }
+  .path-calendar .maincalendar .event .location {
+    word-break: break-all;
+    overflow-wrap: break-word; }
 
 #page-calendar-export .indent {
   padding-left: 20px; }
@@ -11599,8 +11642,13 @@ table.calendartable caption {
 .day-popover-content:empty + .day-popover-alternate {
   display: block; }
 
-.summary-modal-container .description-content > p {
-  margin: 0; }
+.summary-modal-container .description-content {
+  overflow-wrap: break-word; }
+  .summary-modal-container .description-content > p {
+    margin: 0; }
+
+.summary-modal-container .location-content {
+  overflow-wrap: break-word; }
 
 /* course.less */
 /* COURSE CONTENT */
@@ -12083,7 +12131,8 @@ span.editinstructions {
   padding: 0;
   margin: 0; }
 
-.coursebox .moreinfo {
+.coursebox .moreinfo,
+.coursebox .enrolmenticons {
   padding: 3px 0;
   float: right; }
 
@@ -12396,7 +12445,9 @@ span.editinstructions {
   #course-category-listings .select-a-category .que .outcome,
   .que #course-category-listings .select-a-category .outcome,
   #course-category-listings .select-a-category .que .comment,
-  .que #course-category-listings .select-a-category .comment {
+  .que #course-category-listings .select-a-category .comment,
+  #course-category-listings .select-a-category .assignfeedback_editpdf_widget .label,
+  .assignfeedback_editpdf_widget #course-category-listings .select-a-category .label {
     margin: 1em; }
 
 #course-category-listings #course-listing .listitem .drag-handle {
@@ -12481,6 +12532,13 @@ span.editinstructions {
   height: 32px;
   font-size: 32px; }
 
+.activity-navigation .row {
+  align-items: center; }
+
+.activity-navigation #prev-activity-link,
+.activity-navigation #next-activity-link {
+  white-space: pre-wrap; }
+
 /* Anchor link offset fix. This makes hash links scroll 60px down to account for the fixed header. */
 :target::before {
   content: " ";
@@ -12488,7 +12546,9 @@ span.editinstructions {
   height: 60px;
   /* fixed header height*/
   margin-top: -60px;
-  /* negative fixed header height */ }
+  /* negative fixed header height */
+  width: 1px;
+  pointer-events: none; }
 
 .pagelayout-embedded :target {
   padding-top: initial;
@@ -12496,9 +12556,6 @@ span.editinstructions {
 
 #nav-drawer.closed {
   left: -305px; }
-
-#page {
-  margin-top: 50px; }
 
 /* Use a variable for the drawer background colors. */
 [data-region="drawer"] {
@@ -12517,7 +12574,15 @@ span.editinstructions {
 
 #nav-drawer {
   right: auto;
-  left: 0; }
+  left: 0;
+  /* Override the z-indexes defined in bootstrap/_list-group.scss that
+       lead to side effects on the user tours positioning. */ }
+  #nav-drawer .list-group-item-action.active,
+  #nav-drawer .list-group-item.active {
+    z-index: inherit; }
+  #nav-drawer .list-group-item-action.active + .list-group-item,
+  #nav-drawer .list-group-item.active + .list-group-item {
+    border-top: none; }
 
 #page {
   margin-top: 50px; }
@@ -12537,6 +12602,9 @@ body.drawer-ease {
 @media (min-width: 768px) {
   body.drawer-open-right {
     margin-right: 285px; } }
+
+#page-my-index {
+  background-color: #f8f9fa; }
 
 .fp-content-center {
   height: 100%;
@@ -14058,6 +14126,148 @@ a.ygtvspacer:hover {
       visibility: visible;
       transition: right 0.25s; } }
 
+.message-drawer {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  height: calc(100% - 50px);
+  width: 320px;
+  z-index: 1020;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out; }
+  .message-drawer.hidden {
+    display: block;
+    right: -320px; }
+  .message-drawer .header-container {
+    flex-shrink: 0; }
+  .message-drawer .body-container {
+    flex: 1;
+    overflow: hidden; }
+    .message-drawer .body-container > * {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0; }
+  .message-drawer .footer-container {
+    flex-shrink: 0;
+    overflow-x: hidden; }
+    .message-drawer .footer-container textarea {
+      direction: ltr; }
+  .message-drawer .matchtext {
+    background-color: #b5d9f9;
+    color: #373a3c;
+    height: 1.5rem; }
+  .message-drawer .contact-status {
+    position: absolute;
+    left: 39px;
+    top: 39px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; }
+    .message-drawer .contact-status.online {
+      border: 1px solid #fff;
+      background-color: #5cb85c; }
+  .message-drawer .message p {
+    margin: 0; }
+  .message-drawer .clickable {
+    cursor: pointer; }
+    .message-drawer .clickable:hover {
+      box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.05), 3px 3px 5px -2px rgba(0, 0, 0, 0.1), 1px 1px 5px 0 rgba(0, 0, 0, 0.03); }
+  .message-drawer a,
+  .message-drawer .btn-link {
+    color: inherit; }
+  .message-drawer .btn-link:hover, .message-drawer .btn-link:focus {
+    background-color: rgba(0, 0, 0, 0.035);
+    text-decoration: none; }
+  .message-drawer .icon {
+    margin-right: 0; }
+  .message-drawer .overview-section-toggle .collapsed-icon-container {
+    display: none; }
+  .message-drawer .overview-section-toggle .expanded-icon-container {
+    display: inline-block; }
+  .message-drawer .overview-section-toggle.collapsed .collapsed-icon-container {
+    display: inline-block; }
+  .message-drawer .overview-section-toggle.collapsed .expanded-icon-container {
+    display: none; }
+  .message-drawer .btn.btn-link.btn-icon, .message-drawer #page-grade-grading-manage .actions .btn-link.btn-icon.action, #page-grade-grading-manage .actions .message-drawer .btn-link.btn-icon.action, .message-drawer #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-drawer input.btn-link.btn-icon, .message-drawer #rubric-rubric.gradingform_rubric .btn-link.btn-icon.addcriterion, #rubric-rubric.gradingform_rubric .message-drawer .btn-link.btn-icon.addcriterion {
+    height: 16px;
+    width: 16px;
+    padding: 0;
+    border-radius: 50%;
+    flex-shrink: 0; }
+    .message-drawer .btn.btn-link.btn-icon:hover, .message-drawer #page-grade-grading-manage .actions .btn-link.btn-icon.action:hover, #page-grade-grading-manage .actions .message-drawer .btn-link.btn-icon.action:hover, .message-drawer #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:hover, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-drawer input.btn-link.btn-icon:hover, .message-drawer #rubric-rubric.gradingform_rubric .btn-link.btn-icon.addcriterion:hover, #rubric-rubric.gradingform_rubric .message-drawer .btn-link.btn-icon.addcriterion:hover, .message-drawer .btn.btn-link.btn-icon:focus, .message-drawer #page-grade-grading-manage .actions .btn-link.btn-icon.action:focus, #page-grade-grading-manage .actions .message-drawer .btn-link.btn-icon.action:focus, .message-drawer #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:focus, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-drawer input.btn-link.btn-icon:focus, .message-drawer #rubric-rubric.gradingform_rubric .btn-link.btn-icon.addcriterion:focus, #rubric-rubric.gradingform_rubric .message-drawer .btn-link.btn-icon.addcriterion:focus {
+      background-color: #e9ecef; }
+    .message-drawer .btn.btn-link.btn-icon.icon-size-0, .message-drawer #page-grade-grading-manage .actions .btn-link.btn-icon.icon-size-0.action, #page-grade-grading-manage .actions .message-drawer .btn-link.btn-icon.icon-size-0.action, .message-drawer #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon.icon-size-0, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-drawer input.btn-link.btn-icon.icon-size-0, .message-drawer #rubric-rubric.gradingform_rubric .btn-link.btn-icon.icon-size-0.addcriterion, #rubric-rubric.gradingform_rubric .message-drawer .btn-link.btn-icon.icon-size-0.addcriterion {
+      height: 20px !important;
+      /* stylelint-disable-line declaration-no-important */
+      width: 20px !important;
+      /* stylelint-disable-line declaration-no-important */ }
+    .message-drawer .btn.btn-link.btn-icon.icon-size-1, .message-drawer #page-grade-grading-manage .actions .btn-link.btn-icon.icon-size-1.action, #page-grade-grading-manage .actions .message-drawer .btn-link.btn-icon.icon-size-1.action, .message-drawer #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon.icon-size-1, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-drawer input.btn-link.btn-icon.icon-size-1, .message-drawer #rubric-rubric.gradingform_rubric .btn-link.btn-icon.icon-size-1.addcriterion, #rubric-rubric.gradingform_rubric .message-drawer .btn-link.btn-icon.icon-size-1.addcriterion {
+      height: 24px !important;
+      /* stylelint-disable-line declaration-no-important */
+      width: 24px !important;
+      /* stylelint-disable-line declaration-no-important */ }
+    .message-drawer .btn.btn-link.btn-icon.icon-size-2, .message-drawer #page-grade-grading-manage .actions .btn-link.btn-icon.icon-size-2.action, #page-grade-grading-manage .actions .message-drawer .btn-link.btn-icon.icon-size-2.action, .message-drawer #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon.icon-size-2, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-drawer input.btn-link.btn-icon.icon-size-2, .message-drawer #rubric-rubric.gradingform_rubric .btn-link.btn-icon.icon-size-2.addcriterion, #rubric-rubric.gradingform_rubric .message-drawer .btn-link.btn-icon.icon-size-2.addcriterion {
+      height: 28px !important;
+      /* stylelint-disable-line declaration-no-important */
+      width: 28px !important;
+      /* stylelint-disable-line declaration-no-important */ }
+    .message-drawer .btn.btn-link.btn-icon.icon-size-3, .message-drawer #page-grade-grading-manage .actions .btn-link.btn-icon.icon-size-3.action, #page-grade-grading-manage .actions .message-drawer .btn-link.btn-icon.icon-size-3.action, .message-drawer #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon.icon-size-3, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-drawer input.btn-link.btn-icon.icon-size-3, .message-drawer #rubric-rubric.gradingform_rubric .btn-link.btn-icon.icon-size-3.addcriterion, #rubric-rubric.gradingform_rubric .message-drawer .btn-link.btn-icon.icon-size-3.addcriterion {
+      height: 36px !important;
+      /* stylelint-disable-line declaration-no-important */
+      width: 36px !important;
+      /* stylelint-disable-line declaration-no-important */ }
+    .message-drawer .btn.btn-link.btn-icon.icon-size-4, .message-drawer #page-grade-grading-manage .actions .btn-link.btn-icon.icon-size-4.action, #page-grade-grading-manage .actions .message-drawer .btn-link.btn-icon.icon-size-4.action, .message-drawer #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon.icon-size-4, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-drawer input.btn-link.btn-icon.icon-size-4, .message-drawer #rubric-rubric.gradingform_rubric .btn-link.btn-icon.icon-size-4.addcriterion, #rubric-rubric.gradingform_rubric .message-drawer .btn-link.btn-icon.icon-size-4.addcriterion {
+      height: 44px !important;
+      /* stylelint-disable-line declaration-no-important */
+      width: 44px !important;
+      /* stylelint-disable-line declaration-no-important */ }
+    .message-drawer .btn.btn-link.btn-icon.icon-size-5, .message-drawer #page-grade-grading-manage .actions .btn-link.btn-icon.icon-size-5.action, #page-grade-grading-manage .actions .message-drawer .btn-link.btn-icon.icon-size-5.action, .message-drawer #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon.icon-size-5, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-drawer input.btn-link.btn-icon.icon-size-5, .message-drawer #rubric-rubric.gradingform_rubric .btn-link.btn-icon.icon-size-5.addcriterion, #rubric-rubric.gradingform_rubric .message-drawer .btn-link.btn-icon.icon-size-5.addcriterion {
+      height: 68px !important;
+      /* stylelint-disable-line declaration-no-important */
+      width: 68px !important;
+      /* stylelint-disable-line declaration-no-important */ }
+  .message-drawer .view-overview-body .section {
+    display: block; }
+    .message-drawer .view-overview-body .section.expanded {
+      display: flex; }
+  .message-drawer .view-conversation .content-message-container img {
+    max-width: 100%; }
+  .message-drawer .list-group .list-group-item {
+    border-left: 0;
+    border-right: 0; }
+    .message-drawer .list-group .list-group-item:first-child {
+      border-top: 0; }
+    .message-drawer .list-group .list-group-item:last-child {
+      border-bottom: 0; }
+  .message-drawer .last-message {
+    min-height: 1.5rem; }
+  .message-drawer .section .collapsing {
+    overflow: hidden; }
+  .message-drawer .message .tail {
+    content: '';
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 0.5rem solid transparent;
+    position: relative; }
+  .message-drawer .message.send .tail {
+    right: 0;
+    margin-right: -0.5rem;
+    border-bottom-color: #ced4da; }
+  .message-drawer .message.received .tail {
+    left: 0;
+    margin-left: -0.5rem;
+    border-bottom-color: #fff; }
+  .message-drawer .lazy-load-list {
+    overflow-y: auto; }
+
+.dir-rtl .message-drawer {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08); }
+
 @media (max-width: 480px) {
   .messaging-area-container .messaging-area .messages-area.editing .messages-header {
     height: 80px; }
@@ -14236,7 +14446,7 @@ body.path-question-type {
     font: inherit;
     position: static;
     padding-right: .3em; }
-  body.path-question-type .form-group .sr-only, body.path-question-type .form-buttons .sr-only, body.path-question-type .path-admin .buttons .sr-only, .path-admin body.path-question-type .buttons .sr-only, body.path-question-type #fitem_id_submitbutton .sr-only, body.path-question-type .fp-content-center form + div .sr-only, .fp-content-center body.path-question-type form + div .sr-only, body.path-question-type div.backup-section + form .sr-only, body.path-question-type #fgroup_id_buttonar .sr-only {
+  body.path-question-type .form-group .sr-only, body.path-question-type .form-buttons .sr-only, body.path-question-type .path-admin .buttons .sr-only, .path-admin body.path-question-type .buttons .sr-only, body.path-question-type .fp-content-center form + div .sr-only, .fp-content-center body.path-question-type form + div .sr-only, body.path-question-type div.backup-section + form .sr-only {
     position: static;
     width: auto;
     height: auto;
@@ -14851,10 +15061,8 @@ body.path-question-type .mform fieldset.hidden {
 
 .mform .form-inline .form-group, .mform .form-inline .form-buttons,
 .mform .form-inline .path-admin .buttons, .path-admin .mform .form-inline .buttons,
-.mform .form-inline #fitem_id_submitbutton,
 .mform .form-inline .fp-content-center form + div, .fp-content-center .mform .form-inline form + div,
-.mform .form-inline div.backup-section + form,
-.mform .form-inline #fgroup_id_buttonar {
+.mform .form-inline div.backup-section + form {
   margin: 0.1rem 0.25rem 0.1rem 0; }
 
 .mform .form-inline br + label {
@@ -14874,10 +15082,8 @@ body.path-question-type .mform fieldset.hidden {
 
 .mform > .form-group, .mform > .form-buttons,
 .path-admin .mform > .buttons,
-.mform > #fitem_id_submitbutton,
 .fp-content-center .mform > form + div,
-.mform > div.backup-section + form,
-.mform > #fgroup_id_buttonar {
+.mform > div.backup-section + form {
   margin-left: 1.5rem; }
 
 .editor_atto_content.form-control {
@@ -14926,10 +15132,8 @@ input#id_externalurl {
 
 .form-buttons,
 .path-admin .buttons,
-#fitem_id_submitbutton,
 .fp-content-center form + div,
-div.backup-section + form,
-#fgroup_id_buttonar {
+div.backup-section + form {
   padding-left: 0; }
 
 .form-item .form-setting .defaultsnext > input {
@@ -14958,6 +15162,9 @@ div.backup-section + form,
 .mform .fitem .felement input[name="phone2"] {
   text-align: left;
   direction: ltr; }
+
+.que.match .mediaplugin {
+  width: 50vw; }
 
 /* rtl:ignore */
 #page-admin-grade-edit-scale-edit .error input#id_name {
@@ -15084,10 +15291,14 @@ fieldset.coursesearchbox label {
 
 .form-autocomplete-downarrow {
   color: #373a3c;
-  position: relative;
-  top: 0.2em;
-  left: -1.5em;
+  top: 0.2rem;
+  right: 0.5rem;
   cursor: pointer; }
+  .form-autocomplete-downarrow .loading-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff; }
 
 .form-autocomplete-selection:focus {
   outline: none; }
@@ -15139,10 +15350,8 @@ textarea[data-auto-rows] {
 
 [data-fieldtype="modgrade"] .form-group, [data-fieldtype="modgrade"] .form-buttons,
 [data-fieldtype="modgrade"] .path-admin .buttons, .path-admin [data-fieldtype="modgrade"] .buttons,
-[data-fieldtype="modgrade"] #fitem_id_submitbutton,
 [data-fieldtype="modgrade"] .fp-content-center form + div, .fp-content-center [data-fieldtype="modgrade"] form + div,
-[data-fieldtype="modgrade"] div.backup-section + form,
-[data-fieldtype="modgrade"] #fgroup_id_buttonar {
+[data-fieldtype="modgrade"] div.backup-section + form {
   padding-bottom: 0.375rem; }
 
 [data-fieldtype="modgrade"] {
@@ -15417,6 +15626,9 @@ div#dock {
     margin-left: 0;
     margin-top: 1rem; }
 
+#page-mod-lesson-view .fitem .felement .custom-select {
+  align-self: flex-start; }
+
 .path-mod-lesson .generaltable td {
   vertical-align: middle; }
   .path-mod-lesson .generaltable td label {
@@ -15512,10 +15724,8 @@ div#dock {
 
 #page-mod-quiz-mod #id_reviewoptionshdr .form-group, #page-mod-quiz-mod #id_reviewoptionshdr .form-buttons,
 #page-mod-quiz-mod #id_reviewoptionshdr .path-admin .buttons, .path-admin #page-mod-quiz-mod #id_reviewoptionshdr .buttons,
-#page-mod-quiz-mod #id_reviewoptionshdr #fitem_id_submitbutton,
 #page-mod-quiz-mod #id_reviewoptionshdr .fp-content-center form + div, .fp-content-center #page-mod-quiz-mod #id_reviewoptionshdr form + div,
-#page-mod-quiz-mod #id_reviewoptionshdr div.backup-section + form,
-#page-mod-quiz-mod #id_reviewoptionshdr #fgroup_id_buttonar {
+#page-mod-quiz-mod #id_reviewoptionshdr div.backup-section + form {
   float: left;
   width: 20rem;
   display: inline-block;
@@ -15618,9 +15828,6 @@ div#dock {
 .path-mod-assign [data-region="grade-actions-panel"] [data-region="grade-actions"] .collapse-buttons {
   top: auto; }
 
-.path-mod-assign .no-overflow {
-  overflow: initial; }
-
 .path-mod-assign #page-content [data-region="grade-panel"] .mform:not(.unresponsive) .fcontainer .fitem.popout .felement {
   height: calc(100% - 4rem); }
 
@@ -15637,10 +15844,6 @@ div#dock {
 .path-mod-assign [data-region="grade-panel"] fieldset,
 .path-mod-assign [data-region="grade-panel"] .fitem.row {
   margin: 0; }
-
-.path-mod-assign [data-region="grade-panel"] .fitem > .col-md-3 > .pull-xs-right {
-  float: none !important;
-  /* stylelint-disable-line declaration-no-important */ }
 
 .path-mod-assign [data-region="grade-panel"] .mform .fitem.has-popout .felement {
   width: 100%; }
@@ -15838,41 +16041,33 @@ div#dock {
     background-color: #fff; }
   .path-backup .mform .root_setting .form-group, .path-backup .mform .root_setting .form-buttons,
   .path-backup .mform .root_setting .path-admin .buttons, .path-admin .path-backup .mform .root_setting .buttons,
-  .path-backup .mform .root_setting #fitem_id_submitbutton,
   .path-backup .mform .root_setting .fp-content-center form + div, .fp-content-center .path-backup .mform .root_setting form + div,
   .path-backup .mform .root_setting div.backup-section + form,
-  .path-backup .mform .root_setting #fgroup_id_buttonar,
   .path-backup .mform .grouped_settings .form-group,
   .path-backup .mform .grouped_settings .form-buttons,
   .path-backup .mform .grouped_settings .path-admin .buttons,
   .path-admin .path-backup .mform .grouped_settings .buttons,
-  .path-backup .mform .grouped_settings #fitem_id_submitbutton,
   .path-backup .mform .grouped_settings .fp-content-center form + div,
   .fp-content-center .path-backup .mform .grouped_settings form + div,
-  .path-backup .mform .grouped_settings div.backup-section + form,
-  .path-backup .mform .grouped_settings #fgroup_id_buttonar {
+  .path-backup .mform .grouped_settings div.backup-section + form {
     /* These checkboxes with no label on the left. */ }
-    .path-backup .mform .root_setting .form-group .col-md-3.checkbox, .path-backup .mform .root_setting .form-buttons .col-md-3.checkbox, .path-backup .mform .root_setting .path-admin .buttons .col-md-3.checkbox, .path-admin .path-backup .mform .root_setting .buttons .col-md-3.checkbox, .path-backup .mform .root_setting #fitem_id_submitbutton .col-md-3.checkbox, .path-backup .mform .root_setting .fp-content-center form + div .col-md-3.checkbox, .fp-content-center .path-backup .mform .root_setting form + div .col-md-3.checkbox, .path-backup .mform .root_setting div.backup-section + form .col-md-3.checkbox, .path-backup .mform .root_setting #fgroup_id_buttonar .col-md-3.checkbox,
+    .path-backup .mform .root_setting .form-group .col-md-3.checkbox, .path-backup .mform .root_setting .form-buttons .col-md-3.checkbox, .path-backup .mform .root_setting .path-admin .buttons .col-md-3.checkbox, .path-admin .path-backup .mform .root_setting .buttons .col-md-3.checkbox, .path-backup .mform .root_setting .fp-content-center form + div .col-md-3.checkbox, .fp-content-center .path-backup .mform .root_setting form + div .col-md-3.checkbox, .path-backup .mform .root_setting div.backup-section + form .col-md-3.checkbox,
     .path-backup .mform .grouped_settings .form-group .col-md-3.checkbox,
     .path-backup .mform .grouped_settings .form-buttons .col-md-3.checkbox,
     .path-backup .mform .grouped_settings .path-admin .buttons .col-md-3.checkbox,
     .path-admin .path-backup .mform .grouped_settings .buttons .col-md-3.checkbox,
-    .path-backup .mform .grouped_settings #fitem_id_submitbutton .col-md-3.checkbox,
     .path-backup .mform .grouped_settings .fp-content-center form + div .col-md-3.checkbox,
     .fp-content-center .path-backup .mform .grouped_settings form + div .col-md-3.checkbox,
-    .path-backup .mform .grouped_settings div.backup-section + form .col-md-3.checkbox,
-    .path-backup .mform .grouped_settings #fgroup_id_buttonar .col-md-3.checkbox {
+    .path-backup .mform .grouped_settings div.backup-section + form .col-md-3.checkbox {
       width: 0%; }
-    .path-backup .mform .root_setting .form-group .col-md-9.checkbox, .path-backup .mform .root_setting .form-buttons .col-md-9.checkbox, .path-backup .mform .root_setting .path-admin .buttons .col-md-9.checkbox, .path-admin .path-backup .mform .root_setting .buttons .col-md-9.checkbox, .path-backup .mform .root_setting #fitem_id_submitbutton .col-md-9.checkbox, .path-backup .mform .root_setting .fp-content-center form + div .col-md-9.checkbox, .fp-content-center .path-backup .mform .root_setting form + div .col-md-9.checkbox, .path-backup .mform .root_setting div.backup-section + form .col-md-9.checkbox, .path-backup .mform .root_setting #fgroup_id_buttonar .col-md-9.checkbox,
+    .path-backup .mform .root_setting .form-group .col-md-9.checkbox, .path-backup .mform .root_setting .form-buttons .col-md-9.checkbox, .path-backup .mform .root_setting .path-admin .buttons .col-md-9.checkbox, .path-admin .path-backup .mform .root_setting .buttons .col-md-9.checkbox, .path-backup .mform .root_setting .fp-content-center form + div .col-md-9.checkbox, .fp-content-center .path-backup .mform .root_setting form + div .col-md-9.checkbox, .path-backup .mform .root_setting div.backup-section + form .col-md-9.checkbox,
     .path-backup .mform .grouped_settings .form-group .col-md-9.checkbox,
     .path-backup .mform .grouped_settings .form-buttons .col-md-9.checkbox,
     .path-backup .mform .grouped_settings .path-admin .buttons .col-md-9.checkbox,
     .path-admin .path-backup .mform .grouped_settings .buttons .col-md-9.checkbox,
-    .path-backup .mform .grouped_settings #fitem_id_submitbutton .col-md-9.checkbox,
     .path-backup .mform .grouped_settings .fp-content-center form + div .col-md-9.checkbox,
     .fp-content-center .path-backup .mform .grouped_settings form + div .col-md-9.checkbox,
-    .path-backup .mform .grouped_settings div.backup-section + form .col-md-9.checkbox,
-    .path-backup .mform .grouped_settings #fgroup_id_buttonar .col-md-9.checkbox {
+    .path-backup .mform .grouped_settings div.backup-section + form .col-md-9.checkbox {
       width: 100%;
       left: 0; }
 
@@ -16023,11 +16218,16 @@ p.arrow_button {
   left: 40vw; }
 
 .path-grade-report-grader #region-main {
+  overflow-x: visible;
   min-width: 100%;
-  width: auto; }
+  width: auto;
+  display: inline-flex;
+  flex-direction: column; }
   .path-grade-report-grader #region-main > .card, .path-grade-report-grader #page-enrol-users #region-main > #filterform, #page-enrol-users .path-grade-report-grader #region-main > #filterform, .path-grade-report-grader .que #region-main > .history, .que .path-grade-report-grader #region-main > .history, .path-grade-report-grader .userprofile .profile_tree #region-main > section, .userprofile .profile_tree .path-grade-report-grader #region-main > section, .path-grade-report-grader #region-main > .groupinfobox, .path-grade-report-grader #region-main > .well {
     width: auto;
     overflow-x: initial; }
+  .path-grade-report-grader #region-main div[role="main"] {
+    flex: 1 1 auto; }
 
 .path-grade-report-grader [data-region="blocks-column"] {
   width: 100%;
@@ -16226,19 +16426,19 @@ p.arrow_button {
 /**
  * Grader report.
  */
-.path-grade-report .gradeparent tr .cell {
+.path-grade-report-grader .gradeparent tr .cell {
   background-color: #fff; }
 
-.path-grade-report .gradeparent table,
-.path-grade-report .gradeparent .cell {
+.path-grade-report-grader .gradeparent table,
+.path-grade-report-grader .gradeparent .cell {
   border-color: #dee2e6; }
 
-.path-grade-report .gradeparent tr:nth-of-type(even) .cell,
-.path-grade-report .gradeparent .floater .cell,
-.path-grade-report .gradeparent .avg {
+.path-grade-report-grader .gradeparent tr:nth-of-type(even) .cell,
+.path-grade-report-grader .gradeparent .floater .cell,
+.path-grade-report-grader .gradeparent .avg {
   background-color: #f8f9fa; }
 
-.path-grade-report .gradeparent table .clickable {
+.path-grade-report-grader .gradeparent table .clickable {
   cursor: pointer; }
 
 /**
@@ -16478,18 +16678,17 @@ body {
   height: 100%; }
 
 #page-wrapper {
-  min-height: 100%;
-  padding-bottom: 1rem;
-  margin-bottom: -130px; }
-
-#page-wrapper::after {
-  content: "";
-  display: block;
-  min-height: 130px; }
-
-#page-footer {
-  min-height: 130px;
-  text-align: left; }
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  #page-wrapper #page {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column; }
+    #page-wrapper #page #page-content {
+      flex: 1 0 auto; }
+  #page-wrapper #page-footer {
+    flex-shrink: 0; }
 
 .popover-region {
   float: right;
@@ -16992,3 +17191,35 @@ body {
 
 .userpicture {
   border-radius: 50%; }
+
+.btn-outline-secondary {
+  color: #868e96;
+  background-color: transparent;
+  background-image: none;
+  border-color: #868e96;
+  border-color: #dee2e6; }
+  .btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #868e96;
+    border-color: #868e96; }
+  .btn-outline-secondary:focus, .btn-outline-secondary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5); }
+  .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
+    color: #868e96;
+    background-color: transparent; }
+  .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #868e96;
+    border-color: #868e96; }
+    .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-secondary.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5); }
+
+.bg-gray {
+  background-color: #e9ecef !important; }
+
+a.bg-gray:hover, a.bg-gray:focus,
+button.bg-gray:hover,
+button.bg-gray:focus {
+  background-color: #cbd3da !important; }

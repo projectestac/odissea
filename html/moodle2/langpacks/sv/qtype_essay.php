@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_essay', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Accepterade filtyper';
+$string['acceptedfiletypes_help'] = 'Du kan begränsa vilja filtyper som kan lämnas in genom att skriva in respektive filtillägg (t.ex. ".doc"). Om detta fält lämnas tomt kommer alla filtyper att accepteras.';
 $string['allowattachments'] = 'Tillåt bilagor';
 $string['formateditor'] = 'HTML editor';
 $string['formateditorfilepicker'] = 'HTML editor med filväljare';

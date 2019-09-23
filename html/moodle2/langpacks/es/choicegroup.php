@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choicegroup', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,8 @@ $string['chooseaction'] = 'Elija una acción...';
 $string['choosegroup'] = 'Elija un grupo';
 $string['collapse_all_groupings'] = 'Colapsar todas las agrupaciones';
 $string['completionsubmit'] = 'Mostrar como completo cuando un usuario realiza su elección.';
+$string['createdate'] = 'Fecha de creación del grupo';
+$string['defaultsettings'] = 'Configuraciones por defecto';
 $string['del'] = 'Quitar';
 $string['del_group'] = 'Quitar grupo';
 $string['del_groups'] = 'Quitar grupos';
@@ -87,8 +89,9 @@ $string['groupmembers'] = 'Miembros del grupo';
 $string['groupsheader'] = 'Grupos';
 $string['havetologin'] = 'Es necesario iniciar sesión para poder elegir una opción.';
 $string['hidedescription'] = 'Ocultar descripciones';
+$string['hidegroupmembers'] = 'Ocultar miembros del grupo';
 $string['limit'] = 'Límite';
-$string['limitanswers'] = 'Limitar el número de respuestas permitidas.';
+$string['limitanswers'] = 'Limitar el número de participantes permitidos.';
 $string['limitanswers_help'] = 'Mediante esta opción se puede limitar el número de miembros que pueden formar parte de cada grupo. Cuando se alcanza el límite establecido, nadie más puede optar por formar parte del grupo correspondiente.
 
 Si se elige la opción "deshabilitar" el número de miembros posibles para todos los grupos es ilimitado.';
@@ -104,7 +107,9 @@ $string['modulenameplural'] = 'Selección de grupos.';
 $string['moveselectedusersto'] = 'Mover los usuarios seleccionados a ...';
 $string['multipleenrollmentspossible'] = 'Permitir la inclusión en múltiples grupos';
 $string['mustchooseone'] = 'Debe elegir una respuesta antes de guardar. No se ha realizado esta acción.';
+$string['name'] = 'Nombre';
 $string['neverresultsviewable'] = 'La composición de los grupos no es visible.';
+$string['nogroupincourse'] = 'Sin grupos definidos en el curo.';
 $string['noguestchoose'] = 'Disculpe, los invitados no están autorizados para hacer elecciones.';
 $string['noresultsviewable'] = 'La composición de los grupos no es visible por el momento.';
 $string['notanswered'] = 'Aún no hay respuesta.';
@@ -114,10 +119,17 @@ $string['notyetresultsviewable'] = 'La composición de los grupos será visible 
 $string['numberofuser'] = 'El número de usuarios';
 $string['option'] = 'Grupo';
 $string['page-mod-choice-x'] = 'Cualquier página del módulo Elección de grupo';
+$string['pleaseselectonegroup'] = 'Por favor seleccione al menos un grupo del cual elegir.';
 $string['pleasesetgroups'] = 'Por favor, genere al menos dos grupos en este curso.';
+$string['pleasesetonegroupor'] = 'Por favor, cree al menos un grupo dentro de este curso.<br /><br />
+<ul>
+<li><a href="{$a->linkgroups}">gestionar grupos de curso</a></li>
+<li><a href="{$a->linkcourse}">regresar al curso</a></li>
+</ul>';
 $string['pluginadministration'] = 'Administración de la elección';
 $string['pluginname'] = 'Selección de grupo.';
 $string['privacy'] = 'Privacidad de los resultados';
+$string['privacy:metadata'] = 'El plugin Choice Group (Elección de Grupo) no almacena ningún dato personal. Todos los datos son almacenados por el componente del núcleo de Moodle (core_group).';
 $string['publish'] = 'Publicar resultados';
 $string['publishafteranswer'] = 'Mostrar los resultados a los estudiantes después de su respuesta.';
 $string['publishafterclose'] = 'Mostrar los resultados a los estudiantes después de que la actividad de elección se ha cerrado.';
@@ -134,12 +146,17 @@ $string['savemychoicegroup'] = 'Guardar mi elección';
 $string['selected_groups'] = 'Grupos seleccionados';
 $string['set_limit_for_group'] = 'Límite para';
 $string['showdescription'] = 'Mostrar descripciones';
+$string['showgroupmembers'] = 'Mostrar Miembros del Grupo';
 $string['showunanswered'] = 'Mostrar una columna con los alumnos que no han respondido';
 $string['skipresultgraph'] = 'Pasar por alto gráfico de resultados';
-$string['spaceleft'] = 'Espacio disponible';
-$string['spacesleft'] = 'Espacios disponibles';
+$string['sortgroupsby'] = 'Ordenar grupos por';
+$string['spaceleft'] = 'espacio disponible';
+$string['spacesleft'] = 'espacios disponibles';
+$string['systemdefault_date'] = 'Valor por Defecto del sistema (actualmente fecha de creación del Grupo)';
+$string['systemdefault_name'] = 'Valor por Defecto del Sistema (actualmente Nombre)';
 $string['taken'] = 'Tomado';
-$string['timerestrict'] = 'Restringir las respuestas en este periodo de tiempo.';
+$string['the_value_you_entered_is_not_a_number'] = 'El valor que introdujo no es un número.';
+$string['timerestrict'] = 'Restringir las respuestas en este periodo de tiempo';
 $string['viewallresponses'] = 'Ver {$a} respuestas';
 $string['withselected'] = 'Con la selección';
 $string['yourselection'] = 'Su elección';

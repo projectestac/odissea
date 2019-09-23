@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradingform_guide', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['criterionremark'] = 'Remarque du critère {$a}';
 $string['definemarkingguide'] = 'Guide d\'évaluation';
 $string['description'] = 'Description';
 $string['descriptionmarkers'] = 'Description pour évaluateurs';
-$string['descriptionstudents'] = 'Description pour participants';
+$string['descriptionstudents'] = 'Description pour étudiants';
 $string['err_maxscoreisnegative'] = 'Le score maximum n\'est pas valide : les valeurs négatives ne sont pas permises';
 $string['err_maxscorenotnumeric'] = 'Le score maximal pour le critère doit être numérique';
 $string['err_nocomment'] = 'Le commentaire ne peut pas être vide';

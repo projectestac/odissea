@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,6 +72,7 @@ $string['auth_updateremote_ldap'] = '<p><b>Nota:</b> Aggiornando i dati esterni 
 $string['auth_user_create'] = 'Creazione utenti';
 $string['auth_user_creation'] = 'I nuovi utenti (anonimi) possono iscriversi alla sorgente di autenticazione esterna e confermare tramite email. Se abiliti questo, ricorda anche di configurare le opzioni specifiche del modulo per la creazione degli utenti';
 $string['auth_usernameexists'] = 'Il nome utente scelto è già  utilizzato. Sceglierne uno nuovo.';
+$string['auth_usernotexist'] = 'Non può essere modificato l\'utente non esistente: {$a}';
 $string['auto_add_remote_users'] = 'Aggiungi automaticamente gli utenti remoti';
 $string['cannotmapfield'] = 'Non è possibile mappare Il campo "{$a->fieldname}" poiché è troppo lungo il suo nome abbreviato "{$a->shortname}". Per poterlo mappare, è necessario ridurre la lunghezza a {$a->charlimit} caratteri. <a href="{$a->link}">Modifica i campi del profilo utente.</a>';
 $string['changepassword'] = 'Cambia URL delle password';

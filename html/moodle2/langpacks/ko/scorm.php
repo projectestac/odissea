@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -133,9 +133,7 @@ $string['forcecompleted_help'] = '<p>강제 종료는 스콤 1.2팩에서만 문
 유용하게 활용될 수 있다.</p>';
 $string['forcejavascript'] = '자바스크립트 사용자 강제 사용 ';
 $string['forcejavascriptmessage'] = '이 객체를 보기 위해 자바스크립트가 필요합니다. 브라우저에서 자바스크립트를 활성화하고 다시 시도해 보십시요.';
-$string['forcenewattempt'] = '강제로 새 시도 시작';
-$string['forcenewattemptdesc'] = '새 시도를 강요할 것인가에 대한 기본 설정';
-$string['forcenewattempt_help'] = '<p>이는 스콤 패키지를 방문할 때마다 강제적으로 새 시도로 만든다. </p>';
+$string['forcenewattempts'] = '강제로 새 시도 시작';
 $string['found'] = '매니페스트 발견됨';
 $string['frameheight'] = '이 항목은 스콤 틀의 기본 높이를 설정한다.';
 $string['framewidth'] = '이 항목은 스콤 틀의 기본 폭을 설정한다.';
@@ -265,7 +263,6 @@ $string['reviewmode'] = '재검토 모드';
 $string['rightanswer'] = '정답';
 $string['scoes'] = '학습 객체';
 $string['score'] = '점수';
-$string['scorm12standard'] = 'SCORM 1.2 표준모드 활성화';
 $string['scorm:addinstance'] = '새 SCORM 패키지 추가';
 $string['scormclose'] = '사용가능 기한';
 $string['scormcourse'] = '학습 강좌';

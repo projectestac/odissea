@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'group', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,8 @@ $string['deleteselectedgroup'] = 'Ezabatu aukeratutako taldea';
 $string['editgroupingsettings'] = 'Editatu taldekatze-ezarpenak';
 $string['editgroupsettings'] = 'Editatu talde-ezarpenak';
 $string['editusersgroupsa'] = 'Editatu taldeak "{$a}"-(r)entzat';
+$string['enablemessaging'] = 'Taldeko mezuak';
+$string['enablemessaging_help'] = 'Gaituz gero, taldekideek mezuen nabigazio-kutxatik mezuak elkarri bidal diezazkiekete.';
 $string['enrolmentkey'] = 'Matrikulazio-giltza';
 $string['enrolmentkeyalreadyinuse'] = 'Matrikulazio-giltza hau beste talde baterako erabiltzen ari da jada.';
 $string['enrolmentkey_help'] = 'Matrikulazio-giltzek talde baterako sarbidea pasahitza ezagutzen dutenei mugatzeko aukera ematen dute. Matrikulazio-giltza bat zehaztuz gero, giltza sartuz gero erabiltzailea ikastaroan sartzeaz gain, talde horretako kide ere bihurtuko du.
@@ -124,7 +126,7 @@ $string['groupnotamember'] = 'Sentitzen dugu, ez zara talde honetako kide';
 $string['groups'] = 'Taldeak';
 $string['groupscount'] = '({$a}) taldeak';
 $string['groupsettingsheader'] = 'Taldeak';
-$string['groupsgroupings'] = 'Taldeak &amp; taldekatzea';
+$string['groupsgroupings'] = 'Taldeak eta taldekatzeak';
 $string['groupsinselectedgrouping'] = 'Aukeratutako taldekatzean dauden taldeak:';
 $string['groupsnone'] = 'Talderik ez';
 $string['groupsonly'] = 'Taldeak baino ez';
@@ -160,7 +162,7 @@ $string['nogrouping'] = 'Taldekatzerik ez';
 $string['nogroups'] = 'Ikastaro honetan ez dago talderik ezarrita';
 $string['nogroupsassigned'] = 'Ez dago esleitutako talderik';
 $string['nopermissionforcreation'] = 'Ezin da "{$a}" taldea sortu: ez duzu horretarako baimenik.';
-$string['nosmallgroups'] = 'Debakatu azken talde txikia';
+$string['nosmallgroups'] = 'Saihestu azken talde txikia';
 $string['notingroup'] = 'Taldeetan dauden erabiltzaileak ez hartu kontuan';
 $string['notingrouping'] = '[Taldekatzetik kanpo]';
 $string['notingrouplist'] = '[Talderik gabe]';
@@ -173,6 +175,7 @@ $string['overview'] = 'Ikuspegi orokorra';
 $string['potentialmembers'] = 'Balizko kideak: {$a}';
 $string['potentialmembs'] = 'Balizko kideak';
 $string['printerfriendly'] = 'Taldekatzea inprimatzeko formatuan erakutsi';
+$string['privacy:metadata:core_message'] = 'Taldeko elkarrizketak';
 $string['privacy:metadata:groups'] = 'Talde-partaidetzen erregistroa.';
 $string['privacy:metadata:groups:groupid'] = 'Taldearen IDa.';
 $string['privacy:metadata:groups:timeadded'] = 'Erabiltzailea taldera gehitu zeneko unea.';

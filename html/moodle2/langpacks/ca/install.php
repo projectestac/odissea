@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -136,13 +136,10 @@ $string['memorylimithelp'] = '<p>El límit de memòria del PHP del vostre servid
 <p><blockquote>php_value memory_limit 40M</blockquote></p>
 <p>Tanmateix, en alguns servidors això farà que no funcioni <b>cap</b> pàgina PHP (es visualitzaran errors); en aquest cas, hauríeu de suprimir el fitxer .htaccess.</p></li>
 </ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'El PHP no s\'ha configurat correctament amb l\'extensió MSSQL de manera que pugui comunicar-se amb SQL*Server. Reviseu el fitxer php.ini o recompileu PHP.';
 $string['mysqliextensionisnotpresentinphp'] = 'El PHP no ha estat configurat adequadament amb l\'extensió MySQLi de manera que pugui comunicar-se amb MySQL. Reviseu el fitxer php.ini o recompileu el PHP.';
 $string['nativemariadb'] = 'MariaDB (native/MariaDB)';
 $string['nativemariadbhelp'] = '<p>La base de dades és on s\'emmagatzemen la majoria dels paràmetres i de les dades de Moodle, i s\'ha de configurar aquí.</p> <p>El nom de la base de dades, el nom d\'usuari i la contrasenya són camps obligatoris; el prefix de les taules és opcional.</p> <p>El nom de la base de dades pot contenir únicament caràcters alfanumèrics, el símbol del dòlar ($) i el caràcter de subratllat (_).</p> <p>Si actualment la base de dades no existeix, i l\'usuari que heu especificat té permís, Moodle intentarà crear una base de dades nova amb els permisos i els paràmetres correctes.</p>
 <p>Aquest controlador no és compatible amb el motor MyISAM heretat.</p>';
-$string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
-$string['nativemssqlhelp'] = 'Heu de configurar la base de dades on s\'emmagatzemarà la majoria de dades de Moodle. La base de dades i un nom d\'usuari i contrasenya amb accés s\'han de crear abans. El prefix de les taules és obligatori.';
 $string['nativemysqli'] = 'Improved MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p>La base de dades és on s\'emmagatzemen la majoria dels paràmetres i de les dades de Moodle, i s\'ha de configurar aquí.</p>
 <p>El nom de la base de dades, el nom d\'usuari i la contrasenya són camps obligatoris; el prefix de les taules és opcional.</p>

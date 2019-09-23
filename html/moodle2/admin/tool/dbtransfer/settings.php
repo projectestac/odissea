@@ -25,10 +25,12 @@
 defined('MOODLE_INTERNAL') || die;
 
 //XTEC ************ MODIFICAT - To let access only to xtecadmin user
-//2012.05.23  @sarjona
-if ( $hassiteconfig && get_protected_agora() ) { 
+//2012.05.23 @sarjona
+if ($hassiteconfig && get_protected_agora()) { 
 //************ ORIGINAL
-//if ($hassiteconfig) {
+/*
+if ($hassiteconfig) {
+*/
 //************ FI
     $ADMIN->add('experimental', new admin_externalpage('tooldbtransfer', get_string('dbtransfer', 'tool_dbtransfer'),
         $CFG->wwwroot.'/'.$CFG->admin.'/tool/dbtransfer/index.php', 'moodle/site:config', false));

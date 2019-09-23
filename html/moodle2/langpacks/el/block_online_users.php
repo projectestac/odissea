@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_online_users', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Πόσα λεπτά απαιτούνται ώστε η αδράνεια ενός χρήστη να θεωρείται αποσύνδεση;';
+$string['nouser'] = 'Κανένας χρήστης σε σύνδεση';
+$string['numuser'] = '{$a} χρήστης σε σύνδεση';
+$string['numusers'] = '{$a} χρήστες σε σύνδεση';
+$string['online_status:hide'] = 'Απόκρυψη της κατάστασης σύνδεσής μου από άλλους χρήστες';
+$string['online_status:show'] = 'Εμφάνιση της κατάστασης σύνδεσής μου στους άλλους χρήστες';
 $string['online_users:addinstance'] = 'Προσθήκη νέου μπλοκ συνδεδεμένοι χρήστες';
 $string['online_users:myaddinstance'] = 'Προσθήκη νέου μπλοκ συνδεδεμένοι χρήστες στο Ταμπλό';
 $string['online_users:viewlist'] = 'Δείτε τη λίστα όλων των συνδεδεμένων χρηστών';
 $string['periodnminutes'] = 'τα τελευταία {$a} λεπτά';
 $string['pluginname'] = 'Συνδεδεμένοι χρήστες';
-$string['privacy:metadata'] = 'Το μπλοκ «Χρήστες σε σύνδεση» εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';
+$string['privacy:metadata:preference:uservisibility'] = 'Κατάσταση σύνδεσης ορατή σε άλλους χρήστες στο μπλοκ Συνδεδεμένοι χρήστες.';
 $string['timetosee'] = 'Αφαίρεση μετά από αδράνεια (λεπτά)';

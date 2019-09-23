@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mnetservice_enrol', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   mnetservice_enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,10 +39,10 @@ $string['otherenrolledusers'] = 'Matrikulatutako beste erabiltzaile batzuk';
 $string['pluginname'] = 'Urrutiko matrikulazio-zerbitzua';
 $string['privacy:metadata:mnetservice_enrol_enrolments'] = 'Urruneko matrikulazio-zerbitzua';
 $string['privacy:metadata:mnetservice_enrol_enrolments:enroltime'] = 'Matrikulazioa aldatu zeneko unea';
-$string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = 'Gure ikaslea euren ikastaroan matrikulatzeko erabilitako urruneko zerbitzariko matrikulazio-pluginaren izena.';
-$string['privacy:metadata:mnetservice_enrol_enrolments:hostid'] = 'Urruneko MNet ostalariaren IDa.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = 'Erabiltzailea euren ikastaroan matrikulatzeko erabilitako urruneko zerbitzariko matrikulazio-mota';
+$string['privacy:metadata:mnetservice_enrol_enrolments:hostid'] = 'Urruneko MNet ostalariaren IDa';
 $string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'Urruneko zerbitzariko ikastaroaren IDa.';
 $string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'Urruneko zerbitzariko rolaren izena.';
-$string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'Taula honek erabiltzaile lokalek urruneko ostalarietako ikastaroetan dituzten matrikulazioen informazioa gordetzen du.';
-$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'Erabiltzaile lokalak zerbitzari honetan duen IDa.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'Urruneko matrikulazio-zerbitzuak erabiltzaile lokalek urruneko ostalarietako ikastaroetan dituzten matrikulazioen informazioa gordetzen du.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'Erabiltzaile lokalak zerbitzari honetan duen IDa';
 $string['refetch'] = 'Berriz eskuratu urruneko ostalariko eguneratze-egoera';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cache', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,7 +65,7 @@ $string['cachedef_questiondata'] = 'Definicions de qüestions';
 $string['cachedef_repositories'] = 'Dades d\'instàncies dels repositoris';
 $string['cachedef_string'] = 'Memòria cau de cadenes d\'idioma';
 $string['cachedef_suspended_userids'] = 'Llista d\'usuaris amb la inscripció suspesa per curs';
-$string['cachedef_tagindexbuilder'] = 'Resultats de la cerca pels ítems etiquetats';
+$string['cachedef_tagindexbuilder'] = 'Resultats de la cerca pels elements etiquetats';
 $string['cachedef_tags'] = 'Col·leccions i zones d\'etiquetes';
 $string['cachedef_temp_tables'] = 'Memòria cau de taules temporals';
 $string['cachedef_user_group_groupings'] = 'Agrupaments i grups d\'usuaris per curs';

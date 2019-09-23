@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = 'En todas partes';
 $string['inputstandardtags'] = 'Escribir a lista de novas etiquetas separada por comas';
 $string['itemstaggedwith'] = '{$a->tagarea} etiquetas con «{$a->tag}»';
 $string['lesstags'] = 'menos...';
-$string['manageofficialtags'] = 'Xestionar etiquetas oficiais';
 $string['managestandardtags'] = 'Xestionar as etiquetas estándar';
 $string['managetagcolls'] = 'Xestionar as coleccións de etiquetas';
 $string['managetags'] = 'Xestionar etiquetas';
@@ -94,9 +93,6 @@ $string['nextpage'] = 'Máis';
 $string['noresultsfor'] = 'Ningún resultado para «{$a}»';
 $string['notagsfound'] = 'Non se atoparon etiquetas que coincidan con «{$a}»';
 $string['nothingtoupdate'] = 'Nada para actualizar';
-$string['officialtag'] = 'Etiqueta oficial';
-$string['otags'] = 'Etiquetas oficiais';
-$string['othertags'] = 'Outras etiquetas (escriba as etiquetas separadas por comas)';
 $string['owner'] = 'Propietario';
 $string['page-tag-index'] = 'Páxina de sinalador único';
 $string['page-tag-manage'] = 'Páxina para administrar sinaladores';
@@ -138,7 +134,6 @@ $string['selectmaintag'] = 'Seleccionar a etiqueta que será usada após combina
 $string['selectmultipletags'] = 'Seleccione máis dunha etiqueta';
 $string['selecttag'] = 'Seleccionar a etiqueta {$a}';
 $string['settypedefault'] = 'Retirar de entre as etiquetas estándar';
-$string['settypeofficial'] = 'Facela oficial';
 $string['settypestandard'] = 'Facela estándar';
 $string['showingfirsttags'] = 'Amosando as etiquetas {$a} máis populares';
 $string['showstandard'] = 'Uso de etiquetas estándar';
@@ -161,10 +156,8 @@ $string['tagcollection'] = 'Colección de etiquetas';
 $string['tagcollection_help'] = 'As colecciones de etiquetas son conxuntos de etiquetas para diferentes áreas. Por exemplo, unha colección de etiquetas estándar pode usarse para etiquetar cursos coas etiquetas dos intereses do usuario e as etiquetas de publicacións en foros mantidas nunha colección separada. Cando un usuario preme sobre unha etiqueta, a páxina de marcas amosa so  elementos coa  mesma etiqueta dentro da mesma colección. As etiquetas poden engadirse automaticamente a unha colección conforme á área etiquetada, ou poden engadirse manualmente como etiquetas estándar.';
 $string['tagcollections'] = 'Coleccións de etiquetas';
 $string['tagdescription'] = 'Descrición da etiqueta';
-$string['taggedwith'] = 'etiquetado con «{$a}»';
 $string['tags'] = 'Etiquetas';
 $string['tagsaredisabled'] = 'As etiquetas están desactivadas';
-$string['tagtype'] = 'Tipo de etiqueta';
 $string['thingstaggedwith'] = '«{$a->name}» empregouse {$a->count} veces';
 $string['thingtaggedwith'] = '«{$a->name}« empregouse unha vez';
 $string['timemodified'] = 'Modificado';

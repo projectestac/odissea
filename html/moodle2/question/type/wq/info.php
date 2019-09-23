@@ -115,7 +115,8 @@ $output = '';
 $output .= html_writer::start_tag('tr', array('class' => 'wrs_filter wrs_plugin'));
 
 require_once($CFG->dirroot . '/filter/wiris/version.php');
-$plugininfo = get_string('info_test2_info', 'qtype_wq') . '<a href="../../../filter/wiris/info.php" target="_blank">' . get_string('info_test2_infopage', 'qtype_wq') . '</a>';
+$plugininfo = get_string('info_test2_info', 'qtype_wq') . '<a href="../../../filter/wiris/info.php" target="_blank">' .
+    get_string('info_test2_infopage', 'qtype_wq') . '</a>';
 if (isset($plugin->release)) {
     $version = $plugin->release;
     if ($version >= '3.17.20') {
@@ -513,9 +514,11 @@ try {
         }
     }
     $p->unlockVariable('wiris_maxconnections');
-    echo wrs_createTableRow($testname, sprintf(get_string('info_test12_rt1', 'qtype_wq'), $count, $configmaxconnections, $maxconnections), '', true);
+    echo wrs_createTableRow($testname, sprintf(get_string('info_test12_rt1', 'qtype_wq'),
+        $count, $configmaxconnections, $maxconnections), '', true);
 } catch (Exception $e) {
-    echo wrs_createTableRow($testname, sprintf(get_string('info_test12_rt2', 'qtype_wq'), $e->getMessage(), $e->getTraceAsString()), '', false);
+    echo wrs_createTableRow($testname, sprintf(get_string('info_test12_rt2', 'qtype_wq'),
+        $e->getMessage(), $e->getTraceAsString()), '', false);
 }
 $wrap->stop();
 
@@ -529,7 +532,8 @@ echo $output;
 $output = '';
 $output .= html_writer::start_tag('p', array('class' => 'wrs_filter wrs_plugin'));
 $output .= html_writer::end_tag('br');
-$output .= html_writer::start_tag('span', array('class' => 'wrs_filter wrs_plugin', 'style' => 'font-size:14px; font-weight:normal;'));
+$output .= html_writer::start_tag('span', array('class' => 'wrs_filter wrs_plugin',
+    'style' => 'font-size:14px; font-weight:normal;'));
 $output .= get_string('info_information', 'qtype_wq');
 $output .= " (<a href=\"mailto:support@wiris.com\">support@wiris.com</a>)";
 $output .= html_writer::end_tag('span');

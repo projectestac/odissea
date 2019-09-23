@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mnet', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,7 @@ $string['description'] = 'Description';
 $string['duplicate_usernames'] = 'Il a été impossible de créer un index pour les colonnes « mnethostid » et « username » de votre table d\'utilisateurs.<br />Un tel problème peut survenir lorsque des <a href="{$a}" target="_blank">noms d\'utilisateur sont présents à double dans votre table d\'utilisateurs</a>.<br />La mise à jour devrait malgré tout se terminer correctement. Cliquer sur le lien ci-dessus pour obtenir des instructions vous permettant de corriger ce problème (dans une nouvelle fenêtre). Vous pourrez ainsi vous en occuper après la fin de la mise à jour.<br />';
 $string['enabled_for_all'] = '(Ce service a été activé pour tous les serveurs).';
 $string['enterausername'] = 'Veuillez saisir un ou plusieurs noms d\'utilisateurs, séparés par des virgules.';
-$string['error7020'] = 'Cette erreur survient si le site distant a créé pour vous un enregistrement avec un paramètre wwwroot incorrect, par exemple, http://monsite.com au lieu de http://www.monsite.com. Veuillez contacter l\'administrateur du site distant avec votre wwwroot correct (tel qu\'indiqué dans le fichier config.php) et lui demander de modifier l\'enregistrement de votre serveur.';
+$string['error7020'] = 'Cette erreur survient si le site distant a créé pour vous un enregistrement avec un paramètre wwwroot incorrect, par exemple, https://monsite.com au lieu de https://www.monsite.com. Veuillez contacter l\'administrateur du site distant avec votre wwwroot (tel qu\'indiqué dans le fichier config.php) et lui demander de modifier l\'enregistrement de votre serveur.';
 $string['error7022'] = 'Le message que vous avez envoyé au site distant a été chiffré correctement, mais n\'a pas été signé. Ceci est très inhabituel et vous devriez annoncer un bogue si cela arrive (en fournissant autant d\'informations que possible sur les versions des applications utilisées, etc.).';
 $string['error7023'] = 'Le site distant a tenté de déchiffrer votre message avec toutes les clefs qu\'il possède pour votre. Toutes les tentatives ont échoué. Il devrait être possible de corriger ce problème en synchronisant manuellement les clefs avec le site distant. Cette erreur est très improbable, sauf si vous n\'avez pas communiqué avec le site distant depuis plusieurs mois.';
 $string['error7024'] = 'Vous avez envoyé au site distant un message non chiffré, mais le site distant n\'accepte pas de communications non chiffrées depuis votre site. Ceci est très inhabituel. Si ceci arrive, veuillez annoncer un bogue (en fournissant autant d\'information que possible sur les versions des applications utilisées, etc.';
@@ -184,7 +184,7 @@ $string['publickey'] = 'Clef publique';
 $string['publickey_help'] = 'La clef publique est obtenue automatiquement du serveur distant.';
 $string['publickeyrequired'] = 'Vous devez fournir une clef publique.';
 $string['publish'] = 'Publier';
-$string['reallydeleteserver'] = 'Voulez-vous vraiment supprimer le serveur';
+$string['reallydeleteserver'] = 'Voulez-vous vraiment supprimer le serveur ?';
 $string['receivedwarnings'] = 'Les avertissements suivants ont été notifiés';
 $string['recordnoexists'] = 'L\'enregistrement n\'existe pas.';
 $string['reenableserver'] = 'Non. Sélectionner cette option pour réactiver ce serveur.';

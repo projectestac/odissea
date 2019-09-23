@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'group', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,9 @@ $string['editgroupsettings'] = 'Editar a configuración de grupo';
 $string['editusersgroupsa'] = 'Editar grupos para «{$a}»';
 $string['enrolmentkey'] = 'Chave de matriculación';
 $string['enrolmentkeyalreadyinuse'] = 'Esta chave de matriculación xa foi empregada para outro grupo';
-$string['enrolmentkey_help'] = 'Unha chave de matriculación permite que o acceso ao curso estea limitado só a aquelas persoas que coñecen a chave. De especificarse unha chave de matriculación de grupo, entón dita chave non só permitirá aos usuarios acceder ao curso, senón que faraos membros do grupo.';
+$string['enrolmentkey_help'] = 'Unha chave de matriculación permite que o acceso ao curso estea limitado só a aquelas persoas que coñecen a chave. De especificarse unha chave de matriculación de grupo, entón dita chave non só permitirá aos usuarios acceder ao curso, senón que faraos membros do grupo.
+
+Nota: As chaves de matriculación de grupo deben estar activadas na configuración de automatriculación e debe especificarse tamén unha chave para o curso.';
 $string['erroraddremoveuser'] = 'Produciuse un erro ao engadir/retirar ao usuario {$a} do grupo';
 $string['erroreditgroup'] = 'Produciuse un erro a crear ou actualizar o grupo {$a}';
 $string['erroreditgrouping'] = 'Produciuse un erro a crear ou actualizar o agrupamento {$a}';

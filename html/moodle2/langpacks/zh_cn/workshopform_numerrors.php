@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredimensions'] = '再增加 {$a} 个空白断言';
 $string['configgrade0'] = '对断言进行负面评价的缺省文字。';
 $string['configgrade1'] = '对断言进行正面评价的缺省文字。';
-$string['dimensioncomment'] = '评语';
 $string['dimensiondescription'] = '描述';
 $string['dimensiongrade'] = '分数';
 $string['dimensionnumber'] = '断言 {$a}';
@@ -40,5 +39,4 @@ $string['grade1default'] = '是';
 $string['grademapping'] = '成绩映射表';
 $string['maperror'] = '加权的错误个数小于或相等';
 $string['mapgrade'] = '作业成绩';
-$string['percents'] = '{$a}%';
 $string['pluginname'] = '错误数';

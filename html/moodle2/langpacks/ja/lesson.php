@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lesson', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -121,7 +121,6 @@ $string['completiontimespent'] = '学生は少なくとも次の時間この活�
 $string['completiontimespentdesc'] = '学生は少なくとも {$a} 回この活動を実施する必要があります。';
 $string['completiontimespentgroup'] = '必要滞在時間';
 $string['conditionsfordependency'] = '依存条件';
-$string['configactionaftercorrectanswer'] = '正解後のデフォルトのアクションです。';
 $string['configintro'] = 'ここでは新しいレッスンの作成時に設定フォーム内で使用されるデフォルト値を定義します。「高度」が指定された設定は「さらに表示する ...」リンクがクリックされた場合のみ表示されます。';
 $string['configmaxanswers'] = 'ページごとの答えの最大数のデフォルトです。';
 $string['configmediaclose'] = 'リンクメディアファイルに生成されるポップアップの一部に「ウィンドウを閉じる」ボタンを表示します。';
@@ -213,6 +212,7 @@ $string['essayemailmessage2'] = '<p>作文問題: {$a->question}</p>
 <p>この作文問題の評点は {$a->earned} /{$a->outof} です。</p>
 <p>あなたのレッスン {$a->lesson} の評点は {$a->newgrade}% に変更されました。</p>';
 $string['essayemailsubject'] = 'レッスン問題に関して利用可能な評点';
+$string['essaynotgradedyet'] = 'この作文問題はまだ評定されていません。';
 $string['essayresponses'] = '作文問題の解答';
 $string['essays'] = '作文問題';
 $string['essayscore'] = '作文問題の評点';
@@ -253,7 +253,7 @@ $string['gradeis'] = '評点は {$a} です';
 $string['gradeoptions'] = '評定オプション';
 $string['groupoverrides'] = 'グループオーバーライド';
 $string['groupoverridesdeleted'] = 'グループオーバーライドが削除されました。';
-$string['groupsnone'] = 'このコース内にグループはありません。';
+$string['groupsnone'] = 'あなたがアクセスできるグループはありません。';
 $string['handlingofretakes'] = '再受験の評定方法';
 $string['handlingofretakes_help'] = '再受験が許可された場合、この設定ではレッスンの評定がすべての受験の平均または最高を指定します。';
 $string['havenotgradedyet'] = '未評定';
@@ -399,6 +399,7 @@ $string['ongoingcustom'] = '現在、あなたの評点は {$a->currenthigh} 点
 $string['ongoing_help'] = 'この設定を有効にした場合、現時点で考えられる学生の合計評点がそれぞれのページに表示されます。';
 $string['ongoingnormal'] = 'あなたは {$a->viewed} 問中 {$a->correct} 問を正しく答えました。';
 $string['onpostperpage'] = '1評点あたり1回のみ登録してください。';
+$string['openafterclose'] = 'あなたは終了日の後に開始日を指定しました。';
 $string['options'] = 'オプション';
 $string['or'] = 'または';
 $string['ordered'] = '整理済み';
@@ -573,6 +574,7 @@ $string['usepassword_help'] = 'この設定を有効にした場合、レッス�
 $string['useroverrides'] = 'ユーザオーバーライド';
 $string['useroverridesdeleted'] = 'ユーザオーバーライドが削除されました。';
 $string['usersnone'] = 'このレッスンにアクセスできる学生はいません。';
+$string['viewessayanswers'] = '作文問題の答えを表示する';
 $string['viewgrades'] = '評点を表示する';
 $string['viewreports'] = '{$a->student} の {$a->attempts} 件の受験を表示する';
 $string['viewreports2'] = '{$a} 件の受験を表示する';

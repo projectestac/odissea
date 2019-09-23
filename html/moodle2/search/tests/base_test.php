@@ -106,6 +106,7 @@ class search_base_testcase extends advanced_testcase {
 
         // Construct the search document.
         $rec = new \stdClass();
+        $rec->contextid = 1;
         $area = new core_mocksearch\search\mock_search_area();
         $record = $this->generator->create_record($rec);
         $document = $area->get_document($record);
@@ -128,5 +129,32 @@ class search_base_testcase extends advanced_testcase {
 
         $this->assertEquals(1, count($files));
         $this->assertEquals($content, $file->get_content());
+    }
+
+    /**
+     * Tests the base version (stub) of get_contexts_to_reindex.
+     */
+    public function test_get_contexts_to_reindex() {
+        $area = new core_mocksearch\search\mock_search_area();
+        $this->assertEquals([\context_system::instance()],
+                iterator_to_array($area->get_contexts_to_reindex(), false));
+    }
+
+    /**
+     * Test default document icon.
+     */
+    public function test_get_default_doc_icon() {
+        $basearea = $this->getMockBuilder('\core_search\base')
+            ->disableOriginalConstructor()
+            ->getMockForAbstractClass();
+
+        $document = $this->getMockBuilder('\core_search\document')
+            ->disableOriginalConstructor()
+            ->getMock();
+
+        $result = $basearea->get_doc_icon($document);
+
+        $this->assertEquals('i/empty', $result->get_name());
+        $this->assertEquals('moodle', $result->get_component());
     }
 }

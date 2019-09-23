@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['answer'] = '解答';
 $string['bgimage'] = '背景イメージ';
 $string['blank'] = '空白';
 $string['correctansweris'] = '正解: {$a}';
+$string['deletedchoice'] = '[削除済み選択肢]';
 $string['draggableimage'] = 'ドラッグ可能イメージ';
 $string['draggableitem'] = 'ドラッグ可能アイテム';
 $string['draggableitemheader'] = 'ドラッグ可能アイテム {$a}';
@@ -40,7 +41,7 @@ $string['draggableword'] = 'ドラッグ可能テキスト';
 $string['dropbackground'] = 'マーカーをドラッグするための背景イメージ';
 $string['dropzone'] = 'ドロップゾーン {$a}';
 $string['dropzoneheader'] = 'ドロップゾーン';
-$string['formerror_disallowedtags'] = '申し訳ございません、ドラッグ可能テキストではHTMLタグが許可されていません。';
+$string['formerror_disallowedtags'] = 'このドラッグ可能テキストでは {$a} タグのみ許可されます。';
 $string['formerror_multipledraginstance'] = 'あなたはドロップゾーンの正解の選択肢としてこのイメージ {$a} を1回選択しましたが無制限のドラッグアイテムとしてマークされていません。';
 $string['formerror_multipledraginstance2'] = 'あなたはドロップゾーンの正解の選択肢としてこのイメージを1回以上選択しましたが、無制限のドラッグアイテムとしてマークされていません。';
 $string['formerror_noallowedtags'] = 'このテキストにはドラッグ可能イメージの代替テキストとしてHTMLタグは許可されていません。';

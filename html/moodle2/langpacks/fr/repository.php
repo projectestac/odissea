@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['addplugin'] = 'Ajouter un plugin de dépôt';
 $string['allowexternallinks'] = 'Permettre les liens externes';
 $string['areacategoryintro'] = 'Descriptif de catégorie';
 $string['areacourseintro'] = 'Descriptif du cours';
-$string['areacourseoverviewfiles'] = 'Fichiers de résumé de cours';
+$string['areacourseoverviewfiles'] = 'Image de cours';
 $string['areamainfile'] = 'Fichier principal';
 $string['arearoot'] = 'Système';
 $string['areauserbackup'] = 'Sauvegarde utilisateur';
@@ -51,7 +51,7 @@ $string['back'] = 'Retour';
 $string['backtodraftfiles'] = 'Retour à la gestion des brouillons';
 $string['cachecleared'] = 'Les fichiers en cache ont été supprimés';
 $string['cacheexpire'] = 'Échéance du cache';
-$string['cannotaccessparentwin'] = 'Si la fenêtre parente est en HTTPS, l\'accès à l\'objet window.opener n\'est pas autorisé, et il n\'est donc pas possible d\'actualiser le dépôt automatiquement. Veuillez retourner au sélecteur de fichier, sélectionnez de nouveau le dépôt et tout fonctionnera alors.';
+$string['cannotaccessparentwin'] = 'Lorsque HTTPS est utilisé, le dépôt n\'est pas actualisé automatiquement. Il est nécessaire de retourner au sélecteur de fichiers et de sélectionner de nouveau le dépôt.';
 $string['cannotdelete'] = 'Impossible de supprimer ce fichier';
 $string['cannotdownload'] = 'Impossible de télécharger ce fichier';
 $string['cannotdownloaddir'] = 'Impossible de télécharger ce dossier';
@@ -113,7 +113,7 @@ $string['entername'] = 'Veuillez saisir le nom du dossier';
 $string['enternewname'] = 'Veuillez saisir le nouveau nom du fichier';
 $string['error'] = 'Une erreur inconnue est survenue !';
 $string['errordoublereference'] = 'Impossible d\'écraser un fichier par un alias/raccourci, car des alias/raccourcis existent déjà pour ce fichier.';
-$string['errornotyourfile'] = 'Vous ne pouvez pas sélectionner un fichier qui n\'a pas été ajouté par vous';
+$string['errornotyourfile'] = 'Vous ne pouvez pas sélectionner que les fichiers que vous avez ajoutés.';
 $string['errorpostmaxsize'] = 'Le fichier que vous essayez de déposer est trop gros pour être traité par le serveur.';
 $string['erroruniquename'] = 'Le nom de l\'instance de dépôt doit être unique';
 $string['errorwhilecommunicatingwith'] = 'Erreur de communication avec le dépôt « {$a} ».';
@@ -206,7 +206,7 @@ $string['privacy:metadata:repository_instances:timemodified'] = 'La date et l\'h
 $string['privacy:metadata:repository_instances:typeid'] = 'L\'identifiant de l\'instance de dépôt.';
 $string['privacy:metadata:repository_instances:userid'] = 'L\'identifiant de l\'utilisateur qui possède l\'instance de dépôt.';
 $string['privacy:metadata:repository_instances:username'] = 'Le nom d\'utilisateur optionnel configuré pour cette instance de dépôt.';
-$string['privatefilesof'] = 'Fichiers privés {$a}';
+$string['privatefilesof'] = 'Fichiers personnels {$a}';
 $string['readonlyinstance'] = 'Vous ne pouvez pas modifier ni supprimer une instance en lecture seule';
 $string['referencesexist'] = 'Ce fichier est utilisé comme source par {$a} alias.';
 $string['referenceslist'] = 'Alias';

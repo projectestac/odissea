@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'folder', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,7 +64,7 @@ $string['page-mod-folder-view'] = 'Página principal do recurso pasta';
 $string['page-mod-folder-x'] = 'Qualquer pasta';
 $string['pluginadministration'] = 'Administração da Pasta';
 $string['pluginname'] = 'Pasta';
-$string['privacy:metadata'] = 'O módulo mod_folder não armazena qualquer dado pessoal.';
+$string['privacy:metadata'] = 'O módulo do recurso Pasta não armazena quaisquer dados pessoais.';
 $string['search:activity'] = 'Pasta';
 $string['showdownloadfolder'] = 'Mostrar o botão para descarregar pasta';
 $string['showdownloadfolder_help'] = 'Se definir como \'Sim\', será mostrado um botão que permite que o conteúdo da pasta possa ser descarregado como um ficheiro ZIP.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_safebrowser', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quizaccess_safebrowser', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   quizaccess_safebrowser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'قاعدة مُتصفِّح الامتحان الآمن للوصول للاختبار';
+$string['privacy:metadata'] = 'المكون الإضافي Safe Exam Browser quiz access rule لا يخزن أيّ بيانات شخصية.';
 $string['requiresafeexambrowser'] = 'يتطلب استخدام مُتصفِّح الامتحان الآمن';
 $string['safebrowsererror'] = 'تم إعداد هذا الاختبار بحيث يمكن الوصول إليه فقط عبر استخدام مُتصفِّح الامتحان الآمن. لا يمكنك  البدء بالمحاولة من خلال هذا المُتصفِّح.';
 $string['safebrowsernotice'] = 'تم إعداد هذا الاختبار بحيث يمكن الطلاب الوصول إليه فقط عبر استخدام مُتصفِّح الامتحان الآمن.';

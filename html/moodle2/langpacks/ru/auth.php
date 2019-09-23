@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['auth_updateremote_ldap'] = '<p><b>Примечание:</b> Для об
 $string['auth_user_create'] = 'Разрешить создание пользователей';
 $string['auth_user_creation'] = 'Новые (анонимные) пользователи могут создавать учетные записи во внешнем источнике аутентификации и подтверждать их по электронной почте. Если Вы включаете этот параметр, не забудьте также настроить параметры конкретного модуля, необходимые для создания пользователей.';
 $string['auth_usernameexists'] = 'Выбранный логин уже существует. Выберите другой.';
+$string['auth_usernotexist'] = 'Невозможно обновить несуществующего пользователя: {$a}';
 $string['auto_add_remote_users'] = 'Автоматически добавлять внешних пользователей';
 $string['cannotmapfield'] = 'Поле «{$a->fieldname}» нельзя сопоставить, так как его короткое имя «{$a->shortname}» является слишком длинным. Чтобы разрешить его сопоставление, Вам нужно уменьшить короткое имя до {$a->charlimit} символов. <a href="{$a->link}">Редактировать поля профиля пользователя</a>';
 $string['changepassword'] = 'Адрес страницы смены пароля';
@@ -145,7 +146,7 @@ $string['privacy:metadata:userpref:forcepasswordchange'] = 'Показывает
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Количество допускаемых ошибок при входе пользователя в систему';
 $string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Количество допускаемых ошибок при входе пользователя в систему с момента последнего успешного входа';
 $string['privacy:metadata:userpref:loginfailedlast'] = 'Дата, когда была зарегистрирована последняя неудачная попытка входа в систему';
-$string['privacy:metadata:userpref:loginlockout'] = 'Показывает, была ли учетная запись пользователя заблокирована из-за неправильных попыток входа и дату, когда эта блокировка была произведена';
+$string['privacy:metadata:userpref:loginlockout'] = 'Показывает, была ли учетная запись пользователя заблокирована из-за неправильных попыток входа и дату блокировки';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Показывает, что учетная запись пользователя никогда не будет заблокировна';
 $string['privacy:metadata:userpref:loginlockoutsecret'] = 'Секретные данные, которые пользователь должен использовать для разблокировки своей учетной записи, если она была заблокирована';
 $string['recaptcha'] = 'reCAPTCHA';

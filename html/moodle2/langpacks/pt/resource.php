@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'resource', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['clicktodownload'] = 'Clique na hiperligação {$a} para descarregar o ficheiro.';
 $string['clicktoopen2'] = 'Clique na hiperligação {$a} para ver o ficheiro.';
 $string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Prima a tecla CTRL para selecionar múltiplas opções.';
-$string['configframesize'] = 'Quando uma página web ou um ficheiro são visualizados numa frame, este valor corresponde à altura (em pixeis) da frame superior (que contém a navegação).';
+$string['configframesize'] = 'Quando uma página Web ou um ficheiro são visualizados numa frame, este valor corresponde à altura (em pixeis) da frame superior (que contém a navegação).';
 $string['configparametersettings'] = 'Esta opção define o valor predefinido que é introduzido no painel de configuração de parâmetros quando adiciona um novo recurso. Depois da primeira vez, este valor é substituído pelas preferências individuais do utilizador.';
 $string['configpopup'] = 'Quando se adiciona um recurso que pode ser apresentado numa nova janela, deve ser essa a opção predefinida?';
 $string['configpopupdirectories'] = 'Devem as janelas de pop-up apresentar hiperligações para as pastas por predefinição?';
@@ -100,7 +100,7 @@ $string['popupwidth'] = 'Largura da janela de pop-up (em pixeis)';
 $string['popupwidthexplain'] = 'Largura predefinida da janela de pop-up';
 $string['printintro'] = 'Mostrar descrição do recurso';
 $string['printintroexplain'] = 'Mostrar a descrição do recurso abaixo do conteúdo? Alguns modos de exibição não apresentam o nome do recurso, mesmo com esta configuração ativa.';
-$string['privacy:metadata'] = 'O módulo mod_resource não armazena qualquer dado pessoal.';
+$string['privacy:metadata'] = 'O módulo do recurso Ficheiro não armazena quaisquer dados pessoais.';
 $string['resource:addinstance'] = 'Adicionar um novo recurso';
 $string['resourcecontent'] = 'Ficheiros e subpastas';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

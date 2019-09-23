@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mnetservice_enrol', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   mnetservice_enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,11 +38,11 @@ $string['noroamingusers'] = 'Gebruikers hebben de moglijkheid \'{$a}\' nodig in 
 $string['otherenrolledusers'] = 'Andere aangemelde gebruikers';
 $string['pluginname'] = 'Externe aanmeldingsservice';
 $string['privacy:metadata:mnetservice_enrol_enrolments'] = 'Externe aanmeldingsservice';
-$string['privacy:metadata:mnetservice_enrol_enrolments:enroltime'] = 'Het tijdstip waarop de aanmelding werd gewijzigd.';
-$string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = 'De naam en de aanmeldingsplugin van de externe server die gebruikt werd om onze leerling in zijn cursus aan te melden.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltime'] = 'Het tijdstip waarop de aanmelding werd gewijzigd';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = 'Het aanmeldingstype op de externe server die gebruikt werd om de gebruiker in zijn cursus aan te melden';
 $string['privacy:metadata:mnetservice_enrol_enrolments:hostid'] = 'De ID van de externe MNet host';
-$string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'ID van de cursus op de externe server.';
-$string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'De naam van de rol op de externe server.';
-$string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'Deze tabel bewaart informatie over aanmeldingen van onze lokale gebruikers in cursussen op de externe hosts.';
-$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'De ID van onze lokale gebruiker op deze server';
+$string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'ID van de cursus op de externe server';
+$string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'De naam van de rol op de externe server';
+$string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'De externe aanmeldingsservice bewaart informatie over aanmeldingen van lokale gebruikers in cursussen op de externe hosts.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'De ID van de lokale gebruiker op deze server';
 $string['refetch'] = 'Haal de up-to-date-status ven de externe hosts opnieuw op';

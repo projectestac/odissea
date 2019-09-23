@@ -9,6 +9,7 @@ interface com_wiris_quizzes_api_QuestionInstance extends com_wiris_quizzes_api_S
 	function getStudentAnswersLength();
 	function getStudentAnswer($index);
 	function setStudentAnswer($index, $answer);
+	function setAuxiliarText($text);
 	function setCasSession($session);
 	function setRandomSeed($seed);
 	function getStudentQuestionInstance();

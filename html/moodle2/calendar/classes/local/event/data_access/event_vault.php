@@ -33,8 +33,6 @@ use core_calendar\local\event\factories\action_factory_interface;
 use core_calendar\local\event\factories\event_factory_interface;
 use core_calendar\local\event\strategies\raw_event_retrieval_strategy_interface;
 
-require_once($CFG->libdir . '/coursecatlib.php');
-
 /**
  * Event vault class.
  *
@@ -102,9 +100,6 @@ class event_vault implements event_vault_interface {
         $ignorehidden = true,
         callable $filter = null
     ) {
-        if ($limitnum < 1 || $limitnum > 200) {
-            throw new limit_invalid_parameter_exception("Limit must be between 1 and 200 (inclusive)");
-        }
 
         $fromquery = function($field, $timefrom, $lastseenmethod, $afterevent, $withduration) {
             if (!$timefrom) {
@@ -188,7 +183,11 @@ class event_vault implements event_vault_interface {
                 }
             }
 
-            $offset += $limitnum;
+            if (!$limitnum) {
+                break;
+            } else {
+                $offset += $limitnum;
+            }
         }
 
         return $events;
@@ -199,11 +198,12 @@ class event_vault implements event_vault_interface {
         $timesortfrom = null,
         $timesortto = null,
         event_interface $afterevent = null,
-        $limitnum = 20
+        $limitnum = 20,
+        $limittononsuspendedevents = false
     ) {
         $courseids = array_map(function($course) {
             return $course->id;
-        }, enrol_get_all_users_courses($user->id));
+        }, enrol_get_all_users_courses($user->id, $limittononsuspendedevents));
 
         $groupids = array_reduce($courseids, function($carry, $courseid) use ($user) {
             $groupings = groups_get_user_groups($courseid, $user->id);

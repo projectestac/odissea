@@ -56,7 +56,7 @@ abstract class advanced_testcase extends base_testcase {
 
         $this->setBackupGlobals(false);
         $this->setBackupStaticAttributes(false);
-        $this->setRunTestInSeparateProcess(false);
+        $this->setPreserveGlobalState(false);
     }
 
     /**
@@ -131,6 +131,9 @@ abstract class advanced_testcase extends base_testcase {
             }
             self::resetAllData(true);
         }
+
+        // Reset context cache.
+        context_helper::reset_caches();
 
         // make sure test did not forget to close transaction
         if ($DB->is_transaction_started()) {
@@ -486,19 +489,6 @@ abstract class advanced_testcase extends base_testcase {
     public function redirectEvents() {
         return phpunit_util::start_event_redirection();
     }
-
-    /**
-     * Cleanup after all tests are executed.
-     *
-     * Note: do not forget to call this if overridden...
-     *
-     * @static
-     * @return void
-     */
-    public static function tearDownAfterClass() {
-        self::resetAllData();
-    }
-
 
     /**
      * Reset all database tables, restore global state and clear caches and optionally purge dataroot dir.

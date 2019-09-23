@@ -49,6 +49,7 @@ $string['allowbeforeblock'] = 'Allowed list will be processed first';
 $string['allowbeforeblockdesc'] = 'By default, entries in the blocked IPs list are matched first. If this option is enabled, entries in the allowed IPs list are processed before the blocked list.';
 $string['allowblockstodock'] = 'Allow blocks to use the dock';
 $string['allowcategorythemes'] = 'Allow category themes';
+$string['allowcohortthemes'] = 'Allow cohort themes';
 $string['allowcoursethemes'] = 'Allow course themes';
 $string['allowediplist'] = 'Allowed IP list';
 $string['allowedemaildomains'] = 'Allowed email domains';
@@ -112,8 +113,8 @@ $string['calendar_weekend'] = 'Weekend days';
 $string['cannotdeletemodfilter'] = 'You cannot uninstall the \'{$a->filter}\' because it is part of the \'{$a->module}\' module.';
 $string['cannotuninstall'] = '{$a} can not be uninstalled.';
 $string['categoryemail'] = 'Email';
-$string['cfgwwwrootslashwarning'] = 'You have defined $CFG->wwwroot incorrectly in your config.php file. You have included a \'/\' character at the end. Please remove it, or you will experience strange bugs like <a href=\'http://tracker.moodle.org/browse/MDL-11061\'>MDL-11061</a>.';
-$string['cfgwwwrootwarning'] = 'You have defined $CFG->wwwroot incorrectly in your config.php file. It does not match the URL you are using to access this page. Please correct it, or you will experience strange bugs like <a href=\'http://tracker.moodle.org/browse/MDL-11061\'>MDL-11061</a>.';
+$string['cfgwwwrootslashwarning'] = '$CFG->wwwroot is defined incorrectly in the config.php file. It includes a \'/\' character at the end which must be removed.';
+$string['cfgwwwrootwarning'] = '$CFG->wwwroot is defined incorrectly in the config.php file. It should match the URL you are using to access this page.';
 $string['cleanup'] = 'Cleanup';
 $string['clianswerno'] = 'n';
 $string['cliansweryes'] = 'y';
@@ -127,7 +128,10 @@ $string['clitypevaluedefault'] = 'type value, press Enter to use default value (
 $string['cliunknowoption'] = 'Unrecognised options:
   {$a}
 Please use --help option.';
-$string['cliupgradefinished'] = 'Command line upgrade completed successfully.';
+$string['cliupgradedefault'] = 'New setting: {$a}';
+$string['cliupgradedefaultheading'] = 'Setting new default values';
+$string['cliupgradedefaultverbose'] = 'New setting: {$a->name}, Default value: {$a->defaultsetting}';
+$string['cliupgradefinished'] = 'Command line upgrade from {$a->oldversion} to {$a->newversion} completed successfully.';
 $string['cliupgradenoneed'] = 'No upgrade needed for the installed version {$a}. Thanks for coming anyway!';
 $string['cliyesnoprompt'] = 'type y (means yes) or n (means no)';
 $string['commentsperpage'] = 'Comments displayed per page';
@@ -139,11 +143,12 @@ $string['computedfromlogs'] = 'Computed from logs since {$a}.';
 $string['condifmodeditdefaults'] = 'Default values are used in the settings form when creating a new activity or resource.';
 $string['confeditorhidebuttons'] = 'Select the buttons that should be hidden in the HTML editor.';
 $string['configallowattachments'] = 'If enabled, emails sent from the site can have attachments, such as badges.';
-$string['configenableactivitychooser'] = 'The activity chooser is a dialog box with a short description of each activity and resource. If disabled, separate resource and activity dropdown menus are provided instead.';
+$string['configenableactivitychooser'] = 'The activity chooser is a dialog box with a short description of each activity and resource. If disabled, separate resource and activity drop-down menus are provided instead.';
 $string['configallcountrycodes'] = 'This is the list of countries that may be selected in various places, for example in a user\'s profile. If blank (the default) the list in countries.php in the standard English language pack is used. That is the list from ISO 3166-1. Otherwise, you can specify a comma-separated list of codes, for example \'GB,FR,ES\'. If you add new, non-standard codes here, you will need to add them to countries.php in \'en\' and your language pack.';
 $string['configallowassign'] = 'You can allow people who have the roles on the left side to assign some of the column roles to other people';
 $string['configallowblockstodock'] = 'If enabled and supported by the selected theme users can choose to move blocks to a special dock.';
 $string['configallowcategorythemes'] = 'If you enable this, then themes can be set at the category level. This will affect all child categories and courses unless they have specifically set their own theme. WARNING: Enabling category themes may affect performance.';
+$string['configallowcohortthemes'] = 'If you enable this, then themes can be set at the cohort level. This will affect all users with only one cohort or more than one but with the same theme.';
 $string['configallowcoursethemes'] = 'If you enable this, then courses will be allowed to set their own themes.  Course themes override all other theme choices (site, user, or session themes)';
 $string['configallowedemaildomains'] = 'List email domains that are allowed to be disclosed in the "From" section of outgoing email. The default of "Empty" will use the No-reply address for all outgoing email. The use of wildcards is allowed e.g. *.example.com will allow emails sent from any subdomain of example.com, but not example.com itself. This will require separate entry.';
 $string['configallowemailaddresses'] = 'To restrict new email addresses to particular domains, list them here separated by spaces. All other domains will be rejected. To allow subdomains, add the domain with a preceding \'.\'. To allow a root domain together with its subdomains, add the domain twice - once with a preceding \'.\' and once without e.g. .ourcollege.edu.au ourcollege.edu.au.';
@@ -158,6 +163,7 @@ $string['configallowusermailcharset'] = 'If enabled, users can choose an email c
 $string['configallowuserswitchrolestheycantassign'] = 'By default, moodle/role:assign is required for users to switch roles. Enabling this setting removes this requirement, and results in the roles available in the "Switch role to" dropdown menu being determined by settings in the "Allow role assignments" table only.
 It is recommended that the settings in the "Allow role assignments" table do not allow users to switch to a role with more capabilities than their existing role.';
 $string['configallowuserthemes'] = 'If you enable this, then users will be allowed to set their own themes.  User themes override site themes (but not course themes)';
+$string['configallowview'] = 'Select which roles a user will see, be able to filter by etc. based on which roles they already have.';
 $string['configallusersaresitestudents'] = 'For activities on the front page of the site, should ALL users be considered as students?  If you answer "Yes", then any confirmed user account will be allowed to participate as a student in those activities.  If you answer "No", then only users who are already a participant in at least one course will be able to take part in those front page activities. Only admins and specially assigned teachers can act as teachers for these front page activities.';
 $string['configauthenticationplugins'] = 'Please choose the authentication plugins you wish to use and arrange them in order of failthrough.';
 $string['configautolang'] = 'Detect default language from browser setting, if disabled site default is used.';
@@ -168,39 +174,39 @@ $string['configcalendarexportsalt'] = 'This random text is used for improving of
 $string['configcookiehttponly'] = 'Enables new PHP 5.2.0 feature - browsers are instructed to send cookie with real http requests only, cookies should not be accessible by scripting languages. This is not supported in all browsers and it may not be fully compatible with current code. It helps to prevent some types of XSS attacks.';
 $string['configcookiesecure'] = 'If server is accepting only https connections it is recommended to enable sending of secure cookies. If enabled please make sure that web server is not accepting http:// or set up permanent redirection to https:// address and ideally send HSTS headers. When <em>wwwroot</em> address does not start with https:// this setting is ignored.';
 $string['configcountry'] = 'If you set a country here, then this country will be selected by default on new user accounts.  To force users to choose a country, just leave this unset.';
-$string['configcourseoverviewfilesext'] = 'A comma-separated list of allowed course summary files extensions.';
-$string['configcourseoverviewfileslimit'] = 'The maximum number of files that can be attached to a course summary.';
+$string['configcoursegraceperiodafter'] = 'Classify past courses as in progress for these many days after the course end date.';
+$string['configcoursegraceperiodbefore'] = 'Classify future courses as in progress for these many days prior to the course start date.';
+$string['configcourseoverviewfilesext'] = 'A comma-separated list of allowed course image file extensions.';
+$string['configcourseoverviewfileslimit'] = 'The maximum number of files that can be displayed next to the course summary on the list of courses page. The first image file added is used as the course image in the course overview on users\' Dashboards; any additional files are displayed on the list of courses page only.';
 $string['configcourserequestnotify'] = 'Type username of user to be notified when new course requested.';
 $string['configcourserequestnotify2'] = 'Users who will be notified when a course is requested. Only users who can approve course requests are listed here.';
 $string['configcoursesperpage'] = 'Enter the number of courses to be displayed per page in a course listing.';
 $string['configcourseswithsummarieslimit'] = 'The maximum number of courses to display in a course listing including summaries before falling back to a simpler listing.';
 $string['configcronclionly'] = 'Running the cron from a web browser can expose privileged information to anonymous users. Thus it is recommended to only run the cron from the command line or set a cron password for remote access.';
-$string['configcronremotepassword'] = 'This means that the cron.php script cannot be run from a web browser without supplying the password using the following form of URL:<pre>
-    http://site.example.com/admin/cron.php?password=opensesame
-</pre>If this is left empty, no password is required.';
+$string['configcronremotepassword'] = 'This means that the cron.php script cannot be run from a web browser without supplying the password using the following form of URL:<pre> https://site.example.com/admin/cron.php?password=opensesame </pre>If this is left empty, no password is required.';
 $string['configcurlcache'] = 'Time-to-live for cURL cache, in seconds.';
 $string['configcustommenuitems'] = 'You can configure a custom menu here to be shown by themes. Each line consists of some menu text, a link URL (optional), a tooltip title (optional) and a language code or comma-separated list of codes (optional, for displaying the line to users of the specified language only), separated by pipe characters. Lines starting with a hyphen will appear as menu items in the previous top level menu, and dividers can be used by adding a line of one or more # characters where desired. For example:
 <pre>
 Moodle community|https://moodle.org
 -Moodle free support|https://moodle.org/support
--Moodle Docs|http://docs.moodle.org|Moodle Docs
--German Moodle Docs|http://docs.moodle.org/de|Documentation in German|de
+-Moodle Docs|https://docs.moodle.org|Moodle Docs
+-German Moodle Docs|https://docs.moodle.org/de|Documentation in German|de
 -###
 -Moodle development|https://moodle.org/development
-Moodle.com|http://moodle.com/
+Moodle.com|https://moodle.com/
 </pre>';
-$string['configcustomusermenuitems'] = 'You can configure the contents of the user menu (with the exception of the log out link, which is automatically added). Each line is separated by pipe characters and consists of 1) a string in "langstringname, componentname" form or as plain text, 2) a URL, and 3) an icon either as a pix icon (in the folder pix/t, or prefix the icon name with ../ if icon is in another pix folder) or as a URL. Dividers can be used by adding a line of one or more # characters where desired.';
+$string['configcustomusermenuitems'] = 'You can configure the contents of the user menu (with the exception of the log out link, which is automatically added). Each line is separated by pipe characters and consists of 1) a string in "langstringname, componentname" form or as plain text, 2) a URL, and 3) an icon either as a pix icon (in the folder pix with the structure [subfoldername]/[iconname], e.g. i/publish) or as a URL. Dividers can be used by adding a line of one or more # characters where desired.';
 $string['configdbsessions'] = 'If enabled, this setting will use the database to store information about current sessions. Note that changing this setting now will log out all current users (including you). If you are using MySQL please make sure that \'max_allowed_packet\' in my.cnf (or my.ini) is at least 4M. Other session drivers can be configured directly in config.php, see config-dist.php for more information. This option disappears if you specify session driver in config.php file.';
 $string['configdebug'] = 'If you turn this on, then PHP\'s error_reporting will be increased so that more warnings are printed.  This is only useful for developers.';
 $string['configdebugdisplay'] = 'Set to on, the error reporting will go to the HTML page. This is practical, but breaks XHTML, JS, cookies and HTTP headers in general. Set to off, it will send the output to your server logs, allowing better debugging. The PHP setting error_log controls which log this goes to.';
 $string['configdebugpageinfo'] = 'Enable if you want page information printed in page footer.';
-$string['configdebugsmtp'] = 'Enable verbose debug information during sending of email messages to SMTP server.';
+$string['configdebugsmtp'] = 'Enable verbose debug information during sending of email messages to SMTP server. For this setting to take effect, the \'Debug messages\' setting must be set to \'Developer\'.';
 $string['configdebugvalidators'] = 'Enable if you want to have links to external validator servers in page footer. You may need to create new user with username <em>w3cvalidator</em>, and enable guest access. These changes may allow unauthorized access to server, do not enable on production sites!';
-$string['configdefaulthomepage'] = 'This determines the home page for logged in users';
+$string['configdefaulthomepage'] = 'This determines the first link in the navigation for logged-in users.';
 $string['configdefaultrequestcategory'] = 'Courses requested by users will be automatically placed in this category.';
 $string['configdefaultrequestedcategory'] = 'Default category to put courses that were requested into, if they\'re approved.';
 $string['configdefaultuserroleid'] = 'All logged in users will be given the capabilities of the role you specify here, at the site level, in ADDITION to any other roles they may have been given.  The default is the Authenticated user role.  Note that this will not conflict with other roles they have unless you prohibit capabilities, it just ensures that all users have capabilities that are not assignable at the course level (eg post blog entries, manage own calendar, etc).';
-$string['configdeleteincompleteusers'] = 'After this period, old not fully setup accounts are deleted.';
+$string['configdeleteincompleteusers'] = 'After this period, any account without the first name, last name or email field filled in is deleted.';
 $string['configdeleteunconfirmed'] = 'For certain authentication methods, such as email-based self-registration, users must confirm their account within a certain time. After this period, any old unconfirmed accounts are deleted.';
 $string['configdenyemailaddresses'] = 'To deny email addresses from particular domains list them here in the same way.  All other domains will be accepted. To deny subdomains add the domain with a preceding \'.\'. eg <strong>hotmail.com yahoo.co.uk .live.com</strong>';
 $string['configenableblogs'] = 'This switch provides all site users with their own blog.';
@@ -222,7 +228,7 @@ $string['configenablemobilewebservice'] = 'Enable mobile service for the officia
 $string['configenablerssfeeds'] = 'If enabled, RSS feeds are generated by various features across the site, such as blogs, forums, database activities and glossaries. Note that RSS feeds also need to be enabled for the particular activity modules.';
 $string['configenablerssfeedsdisabled'] = 'It is not available because RSS feeds are disabled in all the Site. To enable them, go to the Variables settings under Admin Configuration.';
 $string['configenablerssfeedsdisabled2'] = 'RSS feeds are currently disabled at site level. They may be enabled in Advanced features in the Site administration.';
-$string['configenablesafebrowserintegration'] = 'This adds the choice \'Require Safe Exam Browser\' to the \'Browser security\' field on the quiz settings form. See http://www.safeexambrowser.org/ for more information.';
+$string['configenablesafebrowserintegration'] = 'This adds the choice \'Require Safe Exam Browser\' to the \'Browser security\' field on the quiz settings form. See https://www.safeexambrowser.org/ for more information.';
 $string['configenablestats'] = 'If you choose \'yes\' here, Moodle\'s cronjob will process the logs and gather some statistics.  Depending on the amount of traffic on your site, this can take awhile. If you enable this, you will be able to see some interesting graphs and statistics about each of your courses, or on a sitewide basis.';
 $string['configenabletrusttext'] = 'By default Moodle will always thoroughly clean text that comes from users to remove any possible bad scripts, media etc that could be a security risk.  The Trusted Content system is a way of giving particular users that you trust the ability to include these advanced features in their content without interference.  To enable this system, you need to first enable this setting, and then grant the Trusted Content permission to a specific Moodle role.  Texts created or uploaded by such users will be marked as trusted and will not be cleaned before display.';
 $string['configenablewebservices'] = 'Web services enable other systems to log in to this Moodle and perform operations.  For extra security this feature should be disabled unless you are really using it.';
@@ -245,7 +251,7 @@ $string['configfrontpageloggedin'] = 'The items selected above will be displayed
 $string['configfullnamedisplay'] = 'This defines how names are shown when they are displayed in full. The default value, "language", leaves it to the string "fullnamedisplay" in the current language pack to decide. Some languages have different name display conventions.
 
 For most mono-lingual sites the most efficient setting is "firstname lastname", but you may choose to hide surnames altogether. Placeholders that can be used are: firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, and alternatename.';
-$string['configgeoipfile'] = 'Location of GeoLite2 City binary data file. This file is not part of Moodle distribution and must be obtained separately from <a href="http://www.maxmind.com/">MaxMind</a>. You can either buy a commercial version or use the free version. Simply download <a href="http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a> and extract it into "{$a}" directory on your server.';
+$string['configgeoipfile'] = 'Location of GeoLite2 City binary data file. This file is not part of Moodle distribution and must be obtained separately from <a href="https://www.maxmind.com/">MaxMind</a>. You can either buy a commercial version or use the free version. Simply download <a href="https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a> and extract it into "{$a}" directory on your server.';
 $string['configgetremoteaddrconf'] = 'If your server is behind a reverse proxy, you can use this setting to specify which HTTP headers can be trusted to contain the remote IP address. The headers are read in order, using the first one that is available.';
 $string['configgradebookroles'] = 'This setting allows you to control who appears on the gradebook.  Users need to have at least one of these roles in a course to be shown in the gradebook for that course.';
 $string['configgradeexport'] = 'Choose which gradebook export formats are your primary methods for exporting grades.  Chosen plugins will then set and use a "last exported" field for every grade.  For example, this might result in exported records being identified as being "new" or "updated".  If you are not sure about this then leave everything unchecked.';
@@ -269,10 +275,11 @@ $string['configmaxbytes'] = 'This specifies a maximum size for files uploaded to
 $string['configmaxconsecutiveidentchars'] = 'Passwords must not have more than this number of consecutive identical characters. Use 0 to disable this check.';
 $string['configmaxeditingtime'] = 'This specifies the amount of time people have to re-edit forum postings, glossary comments etc.  Usually 30 minutes is a good value.';
 $string['configmaxevents'] = 'Events to Lookahead';
-$string['configmessaging'] = 'Should the messaging system between site users be enabled?';
+$string['configmessaging'] = 'If enabled, users can send messages to other users on the site.';
 $string['configmessagingallowemailoverride'] = 'Allow users to have email message notifications sent to an email address other than the email address in their profile';
-$string['configmessaginghidereadnotifications'] = 'Hide read notifications of events like forum posts when viewing messaging history';
 $string['configmessagingdeletereadnotificationsdelay'] = 'Read notifications can be deleted to save space. How long after a notification is read can it be deleted?';
+$string['configmessagingdeleteallnotificationsdelay'] = 'Read and unread notifications can be deleted to save space. How long after a notification is created can it be deleted?';
+$string['configmessagingallusers'] = 'If enabled, users can view the list of all users on the site when selecting someone to message, and their message preferences include the option to accept messages from anyone on the site. If disabled, users can only view the list of users in their courses, and they have just two options in message preferences - to accept messages from their contacts only, or their contacts and anyone in their courses.';
 $string['configminpassworddigits'] = 'Passwords must have at least these many digits.';
 $string['configminpasswordlength'] = 'Passwords must be at least these many characters long.';
 $string['configminpasswordlower'] = 'Passwords must have at least these many lower case letters.';
@@ -291,13 +298,14 @@ $string['confignotifyloginthreshold'] = 'If notifications about failed logins ar
 $string['confignotloggedinroleid'] = 'Users who are not logged in to the site will be treated as if they have this role granted to them at the site context.  Guest is almost always what you want here, but you might want to create roles that are less or more restrictive.  Things like creating posts still require the user to log in properly.';
 $string['configopentogoogle'] = 'If you enable this setting, then Google will be allowed to enter your site as a Guest.  In addition, people coming in to your site via a Google search will automatically be logged in as a Guest.  Note that this only provides transparent access to courses that already allow guest access.';
 $string['configoverride'] = 'Defined in config.php';
-$string['configpasswordpolicy'] = 'Turning this on will make Moodle check user passwords against a valid password policy. Use the settings below to specify your policy (they will be ignored if you set this to \'No\').';
+$string['configpasswordpolicy'] = 'If enabled, user passwords will be checked against the password policy as specified in the settings below. Enabling the password policy will not affect existing users until they decide to, or are required to, change their password.';
 $string['configpasswordresettime'] = 'This specifies the amount of time people have to validate a password reset request before it expires. Usually 30 minutes is a good value.';
 $string['configpathtodu'] = 'Path to du. Probably something like /usr/bin/du. If you enter this, pages that display directory contents will run much faster for directories with a lot of files.';
+$string['configpathtophp'] = 'Path to PHP CLI. Probably something like /usr/bin/php. If you enter this, cron scripts can be executed from admin web interface.';
 $string['configperfdebug'] = 'If you turn this on, performance info will be printed in the footer of the standard theme';
 $string['configprofileroles'] = 'List of roles that are visible on user profiles and participation page.';
 $string['configprofilesforenrolledusersonly'] = 'To prevent misuse by spammers, profile descriptions of users who are not yet enrolled in any course are hidden. New users must enrol in at least one course before they can add a profile description.';
-$string['configprotectusernames'] = 'By default forget_password.php does not display any hints that would allow guessing of usernames or email addresses.';
+$string['configprotectusernames'] = 'If enabled, the forgotten password form will not display any hints allowing account usernames or email addresses to be guessed.';
 $string['configproxybypass'] = 'Comma separated list of (partial) hostnames or IPs that should bypass proxy (e.g., 192.168., .mydomain.com)';
 $string['configproxyhost'] = 'If this <b>server</b> needs to use a proxy computer (eg a firewall) to access the Internet, then provide the proxy hostname here.  Otherwise leave it blank.';
 $string['configproxypassword'] = 'Password needed to access internet through proxy if required, empty if none (PHP cURL extension required).';
@@ -370,13 +378,23 @@ $string['configvisiblecourses'] = 'Display courses in hidden categories normally
 $string['configwarning'] = 'Be careful modifying these settings - strange values could cause problems.';
 $string['configyuicomboloading'] = 'This options enables combined file loading optimisation for YUI libraries. This setting should be enabled on production sites for performance reasons.';
 $string['confirmation'] = 'Confirmation';
+$string['confirmcontextlock'] = '{$a->contextname} is currently unfrozen. Freezing it will make it read-only and prevent users from making changes. Are you sure you wish to continue?';
+$string['confirmcontextunlock'] = '{$a->contextname} is currently frozen. Unfreezing it will allow users to make changes. Are you sure you wish to continue?';
 $string['confirmdeletecomments'] = 'You are about to delete comments, are you sure?';
 $string['confirmed'] = 'Confirmed';
+$string['contextlocking'] = 'Context freezing';
+$string['contextlocking_desc'] = 'This setting enables read-only access to be set for selected categories, courses, activities or blocks.';
+$string['contextlockappliestoadmin'] = 'Context freezing applies to administrators';
+$string['contextlockappliestoadmin_desc'] = 'If disabled, administrators remain with write access to any frozen contexts.';
 $string['cookiehttponly'] = 'Only http cookies';
 $string['cookiesecure'] = 'Secure cookies only';
 $string['country'] = 'Default country';
 $string['coursecontact'] = 'Course contacts';
 $string['coursecontact_desc'] = 'This setting allows you to control who appears on the course description. Users need to have at least one of these roles in a course to be shown on the course description for that course.';
+$string['coursecontactduplicates'] = 'Display all course contact roles';
+$string['coursecontactduplicates_desc'] = 'If enabled, users with more than one of the selected course contact roles will be displayed in the course description with each of their roles. Otherwise, they will be displayed with only one role (whichever is listed highest in \'Define roles\' in the Site administration).';
+$string['coursegraceperiodafter'] = 'Grace period for past courses';
+$string['coursegraceperiodbefore'] = 'Grace period for future courses';
 $string['courselistshortnames'] = 'Display extended course names';
 $string['courselistshortnames_desc'] = 'If enabled, course short names will be displayed in addition to full names in course lists. If required, extended course names may be customised by editing the \'courseextendednamedisplay\' language string using the language customisation feature.';
 $string['coursemgmt'] = 'Manage courses and categories';
@@ -434,7 +452,7 @@ $string['debugvalidators'] = 'Show validator links';
 $string['defaultcity'] = 'Default city';
 $string['defaultcity_help'] = 'A city entered here will be the default city when creating new user accounts.';
 $string['defaultformatnotset'] = 'Error determining default course format. Please check site settings.';
-$string['defaulthomepage'] = 'Default home page for users';
+$string['defaulthomepage'] = 'Home page for users';
 $string['defaultrequestcategory'] = 'Default category for course requests';
 $string['defaultsettinginfo'] = 'Default: {$a}';
 $string['defaultuserroleid'] = 'Default role for all users';
@@ -497,7 +515,7 @@ $string['enablecourserequests'] = 'Enable course requests';
 $string['enabled'] = 'Enabled';
 $string['enabledevicedetection'] = 'Enable device detection';
 $string['enableglobalsearch'] = 'Enable global search';
-$string['enableglobalsearch_desc'] = 'If enabled, data will be indexed and syncronised by a scheduled task.';
+$string['enableglobalsearch_desc'] = 'If enabled, data will be indexed and synchronised by a scheduled task.';
 $string['enablegravatar'] = 'Enable Gravatar';
 $string['enablegravatar_help'] = 'When enabled Moodle will attempt to fetch a user profile picture from Gravatar if the user has not uploaded an image.';
 $string['enablemobilewebservice'] = 'Enable web services for mobile devices';
@@ -550,6 +568,8 @@ $string['filters'] = 'Filters';
 $string['filtersettings'] = 'Manage filters';
 $string['filtersettingsgeneral'] = 'General filter settings';
 $string['filteruploadedfiles'] = 'Filter uploaded files';
+$string['forceclean'] = 'Content cleaning everywhere';
+$string['forceclean_desc'] = 'Content added to the site is normally cleaned before being displayed, to remove anything which might be a security threat. However, content is not cleaned in certain places such as activity descriptions, page resources or HTML blocks to allow scripts, media, inline frames etc. to be added. If this setting is enabled, ALL content will be cleaned. This may result in existing content no longer displaying correctly.';
 $string['forcelogin'] = 'Force users to log in';
 $string['forceloginforprofileimage'] = 'Force users to log in to view user pictures';
 $string['forceloginforprofileimage_help'] = 'If enabled, users must log in in order to view user profile pictures and the default user picture will be used in all notification emails.';
@@ -575,7 +595,7 @@ $string['getremoteaddrconf'] = 'Logged IP address source';
 $string['globalsearch'] = 'Global search';
 $string['globalsearchmanage'] = 'Manage global search';
 $string['groupenrolmentkeypolicy'] = 'Group enrolment key policy';
-$string['groupenrolmentkeypolicy_desc'] = 'Turning this on will make Moodle check group enrolment keys against a valid password policy.';
+$string['groupenrolmentkeypolicy_desc'] = 'If enabled, group enrolment keys will be checked against the password policy as specified in the settings above.';
 $string['googlemapkey3'] = 'Google Maps API V3 key';
 $string['googlemapkey3_help'] = 'You need to enter a special key to use Google Maps for IP address lookup visualization. You can obtain the key free of charge at <a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key" target="_blank">https://developers.google.com/maps/documentation/javascript/tutorial#api_key</a>';
 $string['gotofirst'] = 'Go to first missing string';
@@ -627,13 +647,13 @@ $string['invalidsection'] = 'Invalid section.';
 $string['invaliduserchangeme'] = 'Username "changeme" is reserved -- you cannot create an account with it.';
 $string['ipblocked'] = 'This site is not available currently.';
 $string['ipblocker'] = 'IP blocker';
-$string['ipblockersyntax'] = 'Put every entry on one line. Valid entries are either full IP address (such as <b>192.168.10.1</b>) which matches a single host; or partial address (such as <b>192.168</b>) which matches any address starting with those numbers; or CIDR notation (such as <b>231.54.211.0/20</b>); or a range of IP addresses (such as <b>231.3.56.10-20</b>) where the range applies to the last part of the address. Text domain names (like \'example.com\') are not supported. Blank lines are ignored.';
+$string['ipblockersyntax'] = 'Put every entry on one line. Valid entries are either full IP address (such as <b>192.168.10.1</b>) which matches a single host; or partial address (such as <b>192.168</b>) which matches any address starting with those numbers; or CIDR notation (such as <b>231.54.211.0/20</b>); or a range of IP addresses (such as <b>231.3.56.10-20</b>) where the range applies to the last part of the address. Text domain names (like \'example.com\') are not supported. Blank lines, and text following a "#" character are ignored.';
 $string['iplookup'] = 'IP address lookup';
-$string['iplookupgeoplugin'] = '<a href="http://www.geoplugin.com">geoPlugin</a> service is currently being used to look up geographical information. For more accurate results we recommend installing a local copy of the MaxMind GeoLite database.';
+$string['iplookupgeoplugin'] = 'The <a href="https://www.geoplugin.com">geoPlugin</a> service is currently being used to look up geographical information. For more accurate results we recommend installing a local copy of the MaxMind GeoLite database.';
 $string['iplookupinfo'] = 'By default Moodle uses the free online NetGeo (The Internet Geographic Database) server to lookup location of IP addresses, unfortunately this database is not maintained anymore and may return <em>wildly incorrect</em> data.
 It is recommended to install local copy of free GeoLite2 City database from MaxMind.<br />
 IP address location is displayed on simple map or using Google Maps. Please note that you need to have a Google account and apply for free Google Maps API key to enable interactive maps.';
-$string['iplookupmaxmindnote'] = 'This product includes GeoLite2 data created by MaxMind, available from <a href="http://www.maxmind.com">http://www.maxmind.com</a>.';
+$string['iplookupmaxmindnote'] = 'This product includes GeoLite2 data created by MaxMind, available from <a href="https://www.maxmind.com">https://www.maxmind.com</a>.';
 $string['ishttpswarning'] = 'It has been detected that your site is not secured using HTTPS. It is strongly recommended to migrate your site to HTTPS for increased security and improved integration with other systems.';
 $string['keeptagnamecase'] = 'Keep tag name casing';
 $string['lang'] = 'Default language';
@@ -703,6 +723,10 @@ $string['maintenancemodeisscheduled'] = 'This site will be switched to maintenan
 $string['maintenancemodeisscheduledlong'] = 'This site will be switched to maintenance mode in {$a->hour} hours {$a->min} mins {$a->sec} secs';
 $string['maintfileopenerror'] = 'Error opening maintenance files!';
 $string['maintinprogress'] = 'Maintenance is in progress...';
+$string['managecontextlock'] = 'Freeze this context';
+$string['managecontextlocklocked'] = '{$a->contextname} and any lower contexts are now frozen.';
+$string['managecontextlockunlocked'] = '{$a->contextname} and any lower contexts are now unfrozen.';
+$string['managecontextunlock'] = 'Unfreeze this context';
 $string['manageformats'] = 'Manage course formats';
 $string['manageformatsgotosettings'] = 'Default format can be changed in {$a}';
 $string['managelang'] = 'Manage';
@@ -742,8 +766,9 @@ $string['mediapluginwmv'] = 'Enable .wmv filter';
 $string['mediapluginyoutube'] = 'Enable YouTube links filter';
 $string['messaging'] = 'Enable messaging system';
 $string['messagingallowemailoverride'] = 'Notification email override';
-$string['messaginghidereadnotifications'] = 'Hide read notifications';
+$string['messagingallusers'] = 'Allow site-wide messaging';
 $string['messagingdeletereadnotificationsdelay'] = 'Delete read notifications';
+$string['messagingdeleteallnotificationsdelay'] = 'Delete all notifications';
 $string['minpassworddigits'] = 'Digits';
 $string['minpasswordlength'] = 'Password length';
 $string['minpasswordlower'] = 'Lowercase letters';
@@ -755,7 +780,7 @@ $string['mnetrestore_extusers_admin'] = '<strong>Note:</strong> This backup file
 $string['mnetrestore_extusers_mismatch'] = '<strong>Note:</strong> This backup file apparently originates from a different Moodle installation and contains remote Moodle Network user accounts that may fail to restore. This operation is unsupported. If you are certain that it was created on this Moodle installation, or you can ensure that all the needed Moodle Network Hosts are configured, you may want to still try the restore.';
 $string['mnetrestore_extusers_noadmin'] = '<strong>Note:</strong> This backup file seems to come from a different Moodle installation and contains remote Moodle Network user accounts. You are not allowed to execute this type of restore. Contact the administrator of the site or, alternatively, restore this course without any user information (modules, files...)';
 $string['mnetrestore_extusers_switchuserauth'] = 'Remote Moodle Network user {$a->username} (coming from {$a->mnethosturl}) switched to local {$a->auth} authenticated user.';
-$string['mobilenotconfiguredwarning'] = 'Moodle Mobile is not enabled.';
+$string['mobilenotconfiguredwarning'] = 'The Moodle app is not enabled.';
 $string['modchooserdefault'] = 'Activity chooser default';
 $string['modeditdefaults'] = 'Default values for activity settings';
 $string['modsettings'] = 'Manage activities';
@@ -796,6 +821,19 @@ $string['nonexistentbookmark'] = 'The bookmark you requested does not exist.';
 $string['nosupportedlogstore'] = 'No supported logstore found';
 $string['maxtimelimit'] = 'Maximum time limit';
 $string['maxtimelimit_desc'] = 'To restrict the maximum PHP execution time that Moodle will allow without any output being displayed, enter a value in seconds here. 0 means that Moodle default restrictions are used. If you have a front-end server with its own time limit, set this value lower to receive PHP errors in logs. Does not apply to CLI scripts.';
+$string['moodleapp'] = 'Moodle app';
+$string['moodleapp_help'] = '<p>If you have an account on a Moodle site, you can access all your courses on your mobile devices with our free mobile app for Moodle.</p>
+<a href="https://moodle.com/mobile-app">Get the Moodle app</a>';
+$string['moodlebrandedapp'] = 'Branded Moodle app';
+$string['moodlebrandedapp_help'] = '<p>The Branded Moodle app has all the functionality of our free mobile app for Moodle combined with your own custom branding.</p>
+<a href="https://moodle.com/branded-app">About the Branded Moodle app</a>';
+$string['moodlebrandedappreference'] = 'Alternatively, get a <a href="https://moodle.com/branded-app/">Branded Moodle app</a> with your own custom branding.';
+$string['moodlepartners'] = 'Moodle Partners';
+$string['moodlepartners_help'] = '<p>Moodle Partners are services providers that are certified by Moodle HQ to provide high quality Moodle services for your organisation\'s online learning environment.</p>
+<a href="https://moodle.com/about-partners/">About our Partners</a><br />
+<a href="https://moodle.com/partners">Find a Partner</a>';
+$string['moodleservices'] = 'Moodle services';
+$string['moodleservices_help'] = 'Make sure you get the best from your Moodle learning environment by using these Moodle services:';
 $string['noreplyaddress'] = 'No-reply address';
 $string['noreplydomain'] = 'No-reply and domain';
 $string['noreplydomaindetail'] = 'Settings for No-reply and configured domains';
@@ -832,6 +870,7 @@ $string['passwordreuselimit'] = 'Password rotation limit';
 $string['passwordreuselimit_desc'] = 'Number of times a user must change their password before they are allowed to reuse a password. Hashes of previously used passwords are stored in local database table. This feature might not be compatible with some external authentication plugins.';
 $string['pathtodot'] = 'Path to dot';
 $string['pathtodot_help'] = 'Path to dot. On Linux it is something like /usr/bin/dot. On Windows it is something like C:\Program Files (x86)\Graphviz2.38\bin\dot.exe. On Mac it is something like /opt/local/bin/dot. To be able to generate graphics from DOT files, you must have installed the dot executable and point to it here.';
+$string['pathtophp'] = 'Path to PHP CLI';
 $string['pathtodu'] = 'Path to du';
 $string['pathtogs'] = 'Path to ghostscript';
 $string['pathtogs_help'] = 'On most Linux installs, this can be left as \'/usr/bin/gs\'. On Windows it will be something like \'c:\\gs\\bin\\gswin32c.exe\' (make sure there are no spaces in the path - if necessary copy the files \'gswin32c.exe\' and \'gsdll32.dll\' to a new folder without a space in the path)';
@@ -843,6 +882,8 @@ $string['pathtopsqldesc'] = 'This is only necessary to enter if you have more th
 $string['pathtopsqlinvalid'] = 'Invalid path to psql - either wrong path or not executable';
 $string['pathtopython'] = 'Path to Python';
 $string['pathtopythondesc'] = 'Path to your executable Python binary (both Python 2 and Python 3 are acceptable).';
+$string['pathtosassc'] = 'Path to SassC';
+$string['pathtosassc_help'] = 'Specifying the location of the SassC binary will switch the SASS compiler from Moodle\'s PHP implementation to SassC. See https://github.com/sass/sassc for more information.';
 $string['pcreunicodewarning'] = 'It is strongly recommended to use PCRE PHP extension that is compatible with Unicode characters.';
 $string['perfdebug'] = 'Performance info';
 $string['performance'] = 'Performance';
@@ -887,7 +928,7 @@ $string['profilefield'] = 'Profile field';
 $string['profilefieldcolumns'] = 'Columns';
 $string['profilefieldispassword'] = 'Is this a password field?';
 $string['profilefieldlink'] = 'Link';
-$string['profilefieldlink_help'] = 'To transform the text into a link, enter a URL containing $$, where $$ will be replaced with the text. For example, to transform a Twitter ID to a link, enter http://twitter.com/$$.';
+$string['profilefieldlink_help'] = 'To transform the text into a link, enter a URL containing $$, where $$ will be replaced with the text. For example, to transform a Twitter ID to a link, enter https://twitter.com/$$.';
 $string['profilefieldlinktarget'] = 'Link target';
 $string['profilefieldmaxlength'] = 'Maximum length';
 $string['profilefieldrows'] = 'Rows';
@@ -952,27 +993,40 @@ $string['quizattemptsupgradedmessage'] = 'In Moodle 2.1 there was a major upgrad
 $string['recaptchaprivatekey'] = 'ReCAPTCHA secret key';
 $string['recaptchapublickey'] = 'ReCAPTCHA site key';
 $string['register'] = 'Register your site';
-$string['registermoodlenet'] = '<p>We\'d love to stay in touch and provide you with important things for your Moodle site!</p><p>By registering:</p><ul><li>You\'ll be one of the first to find out about important notifications such as security alerts and new Moodle releases.</li><li>You can access and activate mobile push notifications from your Moodle site through our free <a href="https://download.moodle.org/mobile/">Moodle Mobile app</a>.</li><li>You are contributing to our <a href="https://moodle.net/stats/">Moodle statistics</a> of the worldwide community, which help us improve Moodle and our community sites.</li><li>If you wish, your site can be included in the <a href="https://moodle.net/sites/">list of registered Moodle sites</a> in your country.</li></ul>';
+$string['registermoodlenet'] = '<p>We\'d love to stay in touch and provide you with important things for your Moodle site!</p><p>By registering:</p><ul><li>You can subscribe to receive notifications of new Moodle releases, security alerts and other important news.</li><li>You can access and activate mobile push notifications from your Moodle site through our free <a href="https://download.moodle.org/mobile/">Moodle app</a>.</li><li>You are contributing to our <a href="https://moodle.net/stats/">Moodle statistics</a> of the worldwide community, which help us improve Moodle and our community sites.</li><li>If you wish, your site can be included in the <a href="https://moodle.net/sites/">list of registered Moodle sites</a> in your country.</li></ul>';
 $string['registermoodleorg'] = 'When you register your site';
 $string['registermoodleorgli1'] = 'You are added to a low-volume mailing list for important notifications such as security alerts and new releases of Moodle.';
 $string['registermoodleorgli2'] = 'Statistics about your site will be added to the {$a} of the worldwide Moodle community.';
 $string['registerwithmoodleorg'] = 'Register your site';
 $string['registration'] = 'Registration';
-$string['registration_help'] = 'It is recommended that you register your site in order to receive security alerts and access to Moodle.net, our course sharing platform.';
+$string['registration_help'] = 'By registering:
+
+* You will receive security alerts
+* You can activate mobile app push notifications from your site
+* You are contributing to our Moodle statistics of the worldwide community';
 $string['registrationwarning'] = 'Your site is not yet registered.';
 $string['registrationwarningcontactadmin'] = 'Your site is not yet registered. Please notify your administrator.';
 $string['releasenoteslink'] = 'For information about this version of Moodle, please see the online <a target="_blank" href="{$a}">Release Notes</a>';
 $string['rememberusername'] = 'Remember username';
 $string['rememberusername_desc'] = 'Enable if you want to store permanent cookies with usernames during user login. Permanent cookies may be considered a privacy issue if used without consent.';
 $string['reportsmanage'] = 'Manage reports';
-$string['requiredentrieschanged'] = '<strong>IMPORTANT - PLEASE READ<br/>(This warning message will only be displayed during this upgrade)</strong><br/>Due to a bug fix, the behaviour of database activities using the \'Required entries\' and \'Required entries before viewing settings\' settings will change. A more detailed explanation of the changes can be read on <a href="http://moodle.org/mod/forum/discuss.php?d=110928" target="_blank">the database module forum</a>. The expected behavior of these settings can also be read on <a href="http://docs.moodle.org/en/Adding/editing_a_database#Required_entries" target="_blank">Moodle Docs</a>.
-<br/><br/>This change affects the following databases in your system: (Please save this list now, and after the upgrade, check that these activities still work the way that the teacher intends.)<br/><strong>{$a->text}</strong><br/>';
+$string['requiredentrieschanged'] = 'Note: After upgrading, the setting \'Required entries before viewing\' is now enforced in the following database activities:<br/>{$a->text}<br/>';
 $string['requiremodintro'] = 'Require activity description';
 $string['requiremodintro_desc'] = 'If enabled, users will be forced to enter a description for each activity.';
 $string['requires'] = 'Requires';
 $string['purgecaches'] = 'Purge all caches';
 $string['purgecachesconfirm'] = 'Moodle can cache themes, javascript, language strings, filtered text, rss feeds and many other pieces of calculated data.  Purging these caches will delete that data from the server and force browsers to refetch data, so that you can be sure you are seeing the most up-to-date values produced by the current code.  There is no danger in purging caches, but your site may appear slower for a while until the server and clients calculate new information and cache it.';
 $string['purgecachesfinished'] = 'All caches were purged.';
+$string['purgecachesnoneselected'] = 'Select one or more caches to purge';
+$string['purgecachespage'] = 'Purge caches';
+$string['purgefiltercache'] = 'Text filters';
+$string['purgejscache'] = 'JavaScript';
+$string['purgelangcache'] = 'Language strings';
+$string['purgemuc'] = 'All MUC caches';
+$string['purgeothercaches'] = 'All file and miscellaneous caches';
+$string['purgeselectedcaches'] = 'Purge selected caches';
+$string['purgeselectedcachesfinished'] = 'The selected caches were purged.';
+$string['purgethemecache'] = 'Themes';
 $string['requestcategoryselection'] = 'Enable category selection';
 $string['restorecourse'] = 'Restore course';
 $string['restorernewroleid'] = 'Restorers\' role in courses';
@@ -1059,7 +1113,7 @@ $string['sitepolicies'] = 'Site security settings';
 $string['sitepolicy'] = 'Site policy URL';
 $string['sitepolicy_help'] = 'The URL of the site policy that all registered users must see and agree to before accessing the site. Note that this setting will only have an effect if the site policy handler is set to default (core).';
 $string['sitepolicyhandler'] = 'Site policy handler';
-$string['sitepolicyhandler_desc'] = 'This determines how policies and user consents are managed. The default (core) handler enables a site policy URL and a site policy URL for guests to be specified. Alternative handlers may be provided by additional plugins and offer more advanced control of site policies.';
+$string['sitepolicyhandler_desc'] = 'This determines how policies and user consents are managed. The default (core) handler enables a site policy URL and a site policy URL for guests to be specified. The policies handler enables site, privacy and other policies to be set. It also enables user consents to be viewed and, if necessary, consent on behalf of minors to be given.';
 $string['sitepolicyhandlercore'] = 'Default (core)';
 $string['sitepolicyhandlerplugin'] = '{$a->name} ({$a->component})';
 $string['sitepolicyguest'] = 'Site policy URL for guests';
@@ -1177,6 +1231,7 @@ $string['unbookmarkthispage'] = 'Unbookmark this page';
 $string['unicoderequired'] = 'It is required that you store all your data in Unicode format (UTF-8). New installations must be performed into databases that have their default character set as Unicode.  If you are upgrading, you should perform the UTF-8 migration process (see the Admin page).';
 $string['uninstallplugin'] = 'Uninstall';
 $string['unlockaccount'] = 'Unlock account';
+$string['unoconvwarning'] = 'The version of unoconv you have installed is not supported.';
 $string['unsettheme'] = 'Unset theme';
 $string['unsupported'] = 'Unsupported';
 $string['unsupporteddbfileformat'] = 'Your database uses Antelope as the file format. Full UTF-8 support in MySQL and MariaDB requires the Barracuda file format. Please switch to the Barracuda file format. See the documentation <a href="https://docs.moodle.org/en/admin/environment/custom check/mysql full unicode support">MySQL full unicode support</a> for details.';
@@ -1203,7 +1258,7 @@ $string['updateavailableinstallallhead'] = 'Installing available updates';
 $string['updateavailablenot'] = 'Your Moodle code is up-to-date!';
 $string['updateavailablerecommendation'] = 'It is strongly recommended that you update your site to the latest version to obtain all recent security and bug fixes.';
 $string['updatenotifications'] = 'Update notifications';
-$string['updatenotificationfooter'] = 'Your Moodle site {$a->siteurl} is configured to automatically check for available updates. You are receiving this message as the administrator of the site. You can disable automatic checks for available updates in the Site administration section of the Administration block. You can customise the delivery of this message via your preferences page.';
+$string['updatenotificationfooter'] = 'Your Moodle site {$a->siteurl} is configured to automatically check for available updates. You are receiving this message as the administrator of the site. You can disable automatic checks for available updates in Site administration / Server / Update notifications or customise the delivery of this message via your preferences page.';
 $string['updatenotificationsubject'] = 'Moodle updates are available ({$a->siteurl})';
 $string['updateautocheck'] = 'Automatically check for available updates';
 $string['updateautocheck_desc'] = 'If enabled, your site will automatically check for available updates for both Moodle code and all additional plugins. If there is a new update available, a notification will be sent to site admins.';
@@ -1288,14 +1343,12 @@ $string['cachesession'] = 'Session cache';
 $string['cachesessionhelp'] = 'User specific cache that expires when the user\'s session ends. Designed to alleviate session bloat/strain.';
 $string['cacheapplication'] = 'Application cache';
 $string['cacheapplicationhelp'] = 'Cached items are shared among all users and expire by a determined time to live (ttl).';
-// Deprecated since Moodle 3.2.
-$string['mobile'] = 'Mobile';
+
 // Deprecated since Moodle 3.3.
 $string['loginpasswordautocomplete'] = 'Prevent password autocompletion on login form';
 $string['loginpasswordautocomplete_help'] = 'If enabled, users are not allowed to save their account password in their browser.';
-$string['unoconvwarning'] = 'The version of unoconv you have installed is not supported.';
 // Deprecated since Moodle 3.4
-$string['moodleorghubname'] = 'Moodle.net';
+$string['moodleorghubname'] = 'Moodle';
 $string['hubs'] = 'Hubs';
 $string['configloginhttps'] = 'Turning this on will make Moodle use a secure https connection just for the login page (providing a secure login), and then afterwards revert back to the normal http URL for general speed.  CAUTION: this setting REQUIRES https to be specifically enabled on the web server - if it is not then YOU COULD LOCK YOURSELF OUT OF YOUR SITE.';
 $string['loginhttps'] = 'Use HTTPS for logins';

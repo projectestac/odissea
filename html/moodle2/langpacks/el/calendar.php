@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendar', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,8 +44,8 @@ $string['colcalendar'] = 'Ημερολόγιο';
 $string['collastupdated'] = 'Τελευταία ενημέρωση';
 $string['colpoll'] = 'Ενημέρωση';
 $string['commontasks'] = 'Διεργασίες';
-$string['confirmeventdelete'] = 'Θέλετε σίγουρα να διαγράψετε αυτό το γεγονός "{$a}";';
-$string['confirmeventseriesdelete'] = 'Το γεγονός "{$a->name}" είναι μέρος μιας σειράς γεγονότων. Θέλετε να διαγράψετε μόνο αυτό το γεγονός ή και τα {$a->count} γεγονότα της σειράς;';
+$string['confirmeventdelete'] = 'Θέλετε σίγουρα να διαγράψετε αυτό το γεγονός «{$a}»;';
+$string['confirmeventseriesdelete'] = 'Το γεγονός «{$a->name}» είναι μέρος μιας σειράς γεγονότων. Θέλετε να διαγράψετε μόνο αυτό το γεγονός ή και τα {$a->count} γεγονότα της σειράς;';
 $string['course'] = 'Μάθημα';
 $string['courseevent'] = 'Γεγονός μαθήματος';
 $string['courseevents'] = 'Γεγονότα μαθήματος';
@@ -103,7 +103,7 @@ $string['eventdate'] = 'Ημερομηνία';
 $string['eventdescription'] = 'Περιγραφή';
 $string['eventduration'] = 'Διάρκεια';
 $string['eventendtime'] = 'Ώρα λήξης';
-$string['eventendtimewrapped'] = '{$a} (Χρόνος τέλους)';
+$string['eventendtimewrapped'] = '{$a} (Ώρα λήξης)';
 $string['eventinstanttime'] = 'Ώρα';
 $string['eventkind'] = 'Τύπος του γεγονότος';
 $string['eventname'] = 'Τίτλος γεγονότος';
@@ -119,8 +119,10 @@ $string['eventsimported'] = 'Γεγονότα που εισήχθησαν: {$a}'
 $string['eventskey'] = 'Υπόμνημα γεγονότων';
 $string['eventsource'] = 'Προέλευση αψτγεγονότος';
 $string['eventspersonal'] = 'Τα προσωπικά μου γεγονότα';
+$string['eventsrelatedtocategories'] = 'Γεγονότα σχετικά με κατηγορίες';
 $string['eventsrelatedtocourses'] = 'Γεγονότα σχετικά με μαθήματα';
 $string['eventsrelatedtogroups'] = 'Γεγονότα σχετικά με ομάδες';
+$string['eventsskipped'] = 'Γεγονότα που παραλείφθηκαν: {$a}';
 $string['eventstarttime'] = 'Ώρα έναρξης';
 $string['eventstoexport'] = 'Γεγονότα για εξαγωγή';
 $string['eventsubscriptioncreated'] = 'Η συνδρομή στο ημερολόγιο δημιουργήθηκε';
@@ -137,14 +139,13 @@ $string['eventtypegroup'] = 'γεγ. ομάδας';
 $string['eventtypemodule'] = 'γεγ. αρθρώματος';
 $string['eventtypesite'] = 'γεγ. ιστοτόπου';
 $string['eventtypeuser'] = 'γεγ. χρήστη';
-$string['eventview'] = 'Λεπτομέρειες  γεγονότος';
+$string['eventview'] = 'Λεπτομέρειες γεγονότος';
 $string['expired'] = 'Έληξε';
 $string['explain_site_timeformat'] = 'Μπορείτε να επιλέξετε να προβάλλονται οι ώρες σε 12ωρη ή 24ωρη μορφή. Αν επιλέξετε «προεπιλογή», τότε η μορφή θα επιλεγεί αυτόματα με βάση τη γλώσσα που ορίσατε ως προεπιλεγμένη. Κάθε χρήστης μπορεί πάντως να παρακάμψει/αλλάξει τη ρύθμιση αυτή για τον εαυτό του.';
 $string['export'] = 'Εξαγωγή';
 $string['exportbutton'] = 'Εξαγωγή';
 $string['exportcalendar'] = 'Εξαγωγή ημερολογίου';
 $string['exporthelp'] = 'Πώς γίνεται η εγγραφή σε αυτό το ημερολόγιο από μια εφαρμογή ημερολογίου (Google/Outlook/Άλλη);';
-$string['for'] = 'για';
 $string['forcecalendartype'] = 'Υποχρεωτικό ημερολόγιο';
 $string['fri'] = 'Παρ';
 $string['friday'] = 'Παρασκευή';
@@ -206,7 +207,7 @@ $string['pref_persistflt_help'] = 'Εάν ενεργοποιηθεί, τότε �
 $string['pref_startwday'] = 'Πρώτη μέρα εβδομάδας';
 $string['pref_startwday_help'] = 'Οι εβδομάδες στο ημερολόγιο θα εμφανίζονται ως αρχής γενομένης από την ημέρα που θα επιλέξετε εδώ.';
 $string['pref_timeformat'] = 'Μορφή εμφάνισης ώρας';
-$string['pref_timeformat_help'] = 'Μπορείτε να επιλέξετε να δείτε την ώρα σε 12 ή 24 ωρη μορφή. Αν επιλέξετε "προεπιλογή", τότε η μορφή θα επιλεγεί αυτόματα ανάλογα με τη γλώσσα που χρησιμοποιείτε στον ιστότοπο.';
+$string['pref_timeformat_help'] = 'Μπορείτε να επιλέξετε να δείτε την ώρα σε 12ωρη ή 24ωρη μορφή. Αν επιλέξετε «προεπιλογή», τότε η μορφή θα επιλεγεί αυτόματα ανάλογα με τη γλώσσα που χρησιμοποιείτε στον ιστότοπο.';
 $string['privacy:metadata:calendar:event'] = 'Το στοιχείο λογισμικού ημερολογίου μπορεί να αποθηκεύσει λεπτομέρειες γεγονότος ημερολογίου χρήστη στο βασικό υποσύστημα (πυρήνα).';
 $string['privacy:metadata:calendar:event:description'] = 'Περιγραφή του γεγονότος ημερολογίου.';
 $string['privacy:metadata:calendar:event:eventtype'] = 'Ο τύπος γεγονότος του γεγονότος ημερολογίου.';

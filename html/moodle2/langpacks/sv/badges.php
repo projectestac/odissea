@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'badges', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actions'] = 'Åtgärder';
 $string['activate'] = 'Aktivera tillgång';
 $string['activatesuccess'] = 'Aktivering av tillgång till märken lyckades.';
+$string['addbadge'] = 'Lägg till märken';
 $string['addbadgecriteria'] = 'Lägg till kriterier för märke';
 $string['addcourse'] = 'Lägg till kurser';
 $string['addcourse_help'] = 'Välj alla kurser som ska läggas till kraven för det här märket. Håll ned CTRL-tangenten för att välja fler än en kurs.';
@@ -160,6 +161,7 @@ $string['criteria_5'] = 'Slutförande av en uppsättning kurser';
 $string['criteria_5_help'] = 'Låter ett märke tilldelas en användare som slutfört en uppsättning kurser. Varje kurs kan ha ytterligare parametrar som t.ex. lägst tillåtna betyg och datum för slutförande av kurs.';
 $string['criteria_6'] = 'Ifyllnad av profil';
 $string['criteria_6_help'] = 'Låter ett märke tilldelas en användare för att de fyllt i vissa fält i deras profil. Du kan välja bland de profilfält, standard och anpassade, som är tillgängliga för användarna.';
+$string['criteria_7'] = 'Tilldelade märken';
 $string['criteria_descr'] = 'Studerande tilldelas det här märket när de uppnått följande krav:';
 $string['criteria_descr_0'] = 'Studerande tilldelas det här märket när de uppnått <strong>{$a}</strong> av de listade kraven.';
 $string['criteria_descr_1'] = '<strong>{$a}</strong> av de följande aktiviteterna är slutförda:';
@@ -167,6 +169,7 @@ $string['criteria_descr_2'] = 'Det här märket behöver tilldelas av användare
 $string['criteria_descr_4'] = 'Studerande måste slutföra kursen';
 $string['criteria_descr_5'] = '<strong>{$a}</strong> av de följande kurserna måste slutföras:';
 $string['criteria_descr_6'] = '<strong>{$a}</strong> av de följande användarprofilfälten måste fyllas i:';
+$string['criteria_descr_7'] = '';
 $string['criteria_descr_bydate'] = 'senast <em>{$a}</em>';
 $string['criteria_descr_grade'] = 'med lägst betyget <em>{$a}</em>';
 $string['criteria_descr_short0'] = 'Slutför <strong>{$a}</strong> av:';
@@ -185,6 +188,7 @@ $string['criteria_descr_single_short2'] = 'Tilldelad av:';
 $string['criteria_descr_single_short4'] = 'Slutför kursen';
 $string['criteria_descr_single_short5'] = 'Slutfört:';
 $string['criteria_descr_single_short6'] = 'Slutfört:';
+$string['criteria_descr_single_short7'] = 'Färdigt:';
 $string['criteriasummary'] = 'Sammanfattning av kriterier';
 $string['criterror'] = 'Aktuella problem med parametrar';
 $string['criterror_help'] = 'Den här fältgruppen visar alla parametrar som ursprungligen lades till kraven för det här märket men som inte längre är tillgängliga. Det rekommenderas att du avmarkerar sådana parametrar för att säkerställa att studerande kan ta det här märket i framtiden.';

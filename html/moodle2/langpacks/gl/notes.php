@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'notes', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,7 +69,7 @@ $string['privacy:metadata:core_notes:lastmodified'] = 'A data/hora da última mo
 $string['privacy:metadata:core_notes:publishstate'] = 'O estado de publicación da nota.';
 $string['privacy:metadata:core_notes:userid'] = 'O ID do usuario asociado coa nota';
 $string['publishstate'] = 'Contexto';
-$string['publishstate_help'] = 'O contexto dunha nota determina quen pode ver a nota.
+$string['publishstate_help'] = 'O contexto dunha nota determina quen pode ver a nota no uso cotián. Os usuarios deben ser conscientes de que todas as notas, incluídas as de uso persoal, poden divulgarse de acordo coas leis das súas xurisdicións.
 
 * Persoal - a nota será visíbel só por vostede
 * Curso - a nota será visíbel polos profesores neste curso

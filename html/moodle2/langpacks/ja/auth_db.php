@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['auth_dbextencodinghelp'] = '外部データベースで使用される�
 $string['auth_dbextrafields'] = 'これらのフィールドは任意項目です。あなたはここで指定した<b>外部データベースフィールド</b>から事前に入力されたMoodleユーザフィールドを選択することもできます。<p>空白の場合、デフォルト値が使用されます。</p><p>どちらの場合でも、ユーザはログイン後、これらすべてのフィールドを編集することができます。</p>';
 $string['auth_dbfieldpass'] = 'パスワードを含んだフィールド名';
 $string['auth_dbfieldpass_key'] = 'パスワードフィールド';
-$string['auth_dbfielduser'] = 'ユーザ名を含んだフィールド名';
+$string['auth_dbfielduser'] = 'ユーザ名を含んだフィールド名です。このフィールドはVarCharデータタイプにする必要があります。';
 $string['auth_dbfielduser_key'] = 'ユーザ名フィールド';
 $string['auth_dbhost'] = 'データベースサーバが稼動しているコンピュータです。ODBCを使用している場合、システムDSNエントリを使用してください。PDOを使用している場合、PDO DSNエントリを使用してください。';
 $string['auth_dbhost_key'] = 'ホスト';
@@ -76,7 +76,6 @@ $string['auth_dbupdateusers_description'] = '新しいユーザを追加およ�
 $string['auth_dbupdatinguser'] = '更新ユーザ {$a->name} id {$a->id}';
 $string['auth_dbuser'] = 'データベースへのリードアクセス用ユーザ名';
 $string['auth_dbuser_key'] = 'DBユーザ';
-$string['auth_dbusernotexist'] = '登録されていないユーザを更新できません: {$a}';
 $string['auth_dbuserstoadd'] = '追加するユーザエントリ: {$a}';
 $string['auth_dbuserstoremove'] = '削除するユーザエントリ: {$a}';
 $string['pluginname'] = '外部データベース';

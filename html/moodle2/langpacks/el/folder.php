@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'folder', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,7 @@ $string['modulename_help'] = 'Το άρθρωμα φακέλου επιτρέπ�
 
 * Για μια σειρά από αρχεία πάνω σε ένα θέμα, για παράδειγμα ένα σετ από περασμένα θέματα εξετάσεων σε μορφότυπο pdf ή μια συλλογή από αρχεία εικόνων για χρήση σε έργα ομάδων μαθητών.
 * Για να παρέχει ένα κοινόχρηστο χώρο ανεβάσματος αρχείων από διδάσκοντες, πάνω στην σελίδα του μαθήματος (κρατώντας το φάκελο κρυφό ώστε να μπορούν να τον δουν μόνο διδάσκοντες).';
+$string['modulename_link'] = 'άρθρωμα/φάκελος/εμφάνιση';
 $string['modulenameplural'] = 'Φάκελοι';
 $string['newfoldercontent'] = 'Νέο περιεχόμενο φακέλου';
 $string['noautocompletioninline'] = 'Δεν είναι δυνατή η επιλογή της αυτόματης ολοκλήρωσης κατά την προβολή της δραστηριότητας μαζί με την επιλογή «Ένθετη προβολή»';

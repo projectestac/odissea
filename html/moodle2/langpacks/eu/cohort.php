@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cohort', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,9 +61,10 @@ $string['eventcohortmemberremoved'] = 'Erabiltzailea kohortetik ezabatu da';
 $string['eventcohortupdated'] = 'Kohortea eguneratu da';
 $string['external'] = 'Kanpoko kohortea';
 $string['idnumber'] = 'Kohortearen IDa';
+$string['invalidtheme'] = 'Kohortearen itxura ez da existitzen';
 $string['memberscount'] = 'Kohortearen tamaina';
 $string['name'] = 'Izena';
-$string['namecolumnmissing'] = 'Arazoren bat dago CSV fitxategiaren formatuan. Mesedez, egiazta ezazu zutabeen izenak badirela';
+$string['namecolumnmissing'] = 'Arazoren bat dago CSV fitxategiaren formatuan. Mesedez, egiazta ezazu zutabeen izenak egokiak direla.  Erabiltzaileak kohorteetara gehitzeko, joan Gunearen Kudeaketako \'Igo erabiltzaileak\' atalera.';
 $string['namefieldempty'] = 'Eremuaren izena ezin da hutsik egon';
 $string['newidnumberfor'] = 'ID zenbaki berria {$a} kohortearentzat';
 $string['newnamefor'] = 'Izen berria {$a} kohortearentzat';

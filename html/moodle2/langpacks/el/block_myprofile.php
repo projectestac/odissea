@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_myprofile', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,6 @@ $string['display_phone1'] = 'Εμφάνιση τηλεφώνου';
 $string['display_phone2'] = 'Εμφάνισε κινητό τηλέφωνο';
 $string['display_picture'] = 'Εμφάνιση εικόνας';
 $string['display_skype'] = 'Εμφάνιση Skype';
-$string['display_un'] = 'Εμφάνιση ονόματος';
 $string['display_yahoo'] = 'Εμφάνιση Yahoo';
 $string['myprofile:addinstance'] = 'Προσθήκη ενός νέου μπλοκ συνδεδεμένος χρήστης';
 $string['myprofile:myaddinstance'] = 'Προσθήκη νέου μπλοκ συνδεδεμένος χρήστης στο Ταμπλό';

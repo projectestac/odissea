@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hvp', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   hvp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -314,7 +314,7 @@ $string['validationfailed'] = 'El paquet H5P sol·licitat no és vàlid';
 $string['viewreportlabel'] = 'Informe';
 $string['welcomecommunity'] = 'Esperem que gaudiu amb l\'H5P i us convidem a participar activament en la nostra comunitat mitjançant els <a {$a->forums}>fòrums</a> i la <a {$a->gitter}>sala de conversa H5P a Gitter</a>.';
 $string['welcomecontactus'] = 'Si ens voleu fer algun comentari no dubteu a <a {$a}>contactar amb nosaltres</a>. Ens prenem molt seriosament la retroacció amb els usuaris, que ens ajuda a fer que l\'H5P sigui cada dia millor!';
-$string['welcomegettingstarted'] = 'Per iniciar-vos en l\'ús de l\'H5P al Moodle feu un cop d\'ull al nostre <a {$a->moodle_tutorial}>tutorial</a> i proveu els <a {$a->example_content}>exemples de continguts interactius</a> a H5P.org, que us serviran per inspirar-vos.';
+$string['welcomegettingstarted'] = 'Per iniciar-vos en l\'ús de l\'H5P a Moodle feu un cop d\'ull al nostre <a {$a->moodle_tutorial}>tutorial</a> i proveu els <a {$a->example_content}>exemples de continguts interactius</a> a H5P.org, que us serviran per inspirar-vos.';
 $string['welcomeheader'] = 'Us donem la benvinguda al món de l\'H5P!';
 $string['wrongversion'] = 'La versió de la biblioteca H5P {$a->%machineName} utilitzada en aquest contingut interactiu no és vàlida. L\'objecte conté {$a->%contentLibrary}, però hauria de ser {$a->%semanticsLibrary}.';
 $string['year'] = 'Any';

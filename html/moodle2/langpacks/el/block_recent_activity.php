@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_recent_activity', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   block_recent_activity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cleanuptask'] = 'Εργασία εκκαθάρισης για το μπλοκ πρόσφατης δραστηριότητας';
 $string['pluginname'] = 'Πρόσφατη δραστηριότητα';
 $string['privacy:metadata'] = 'Το μπλοκ Τελευταία δραστηριότητα περιέχει μια κρυφή μνήμη δεδομένων που αποθηκεύονται σε άλλο σημείο του Moodle.';
 $string['privacy:metadata:block_recent_activity'] = 'Προσωρινές καταγραφές της πρόσφατης δραστηριότητας εκπαιδευτικών. Αφαιρέθηκαν μετά από δύο ημέρες';

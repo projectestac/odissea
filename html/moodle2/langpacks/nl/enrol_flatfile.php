@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_flatfile', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,10 +64,10 @@ Het zou er kunnen uitzien zoals dit:
    add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
 $string['privacy:metadata:enrol_flatfile'] = 'De platte tekst aanmeldingsplugin kan persoonlijke gegevens van gebruikers bewaren die verband houden met hun toekomstige aanmeldingen in de enrol_flatfile-tabel.';
-$string['privacy:metadata:enrol_flatfile:action'] = 'De aanmeldingsactie wordt verwacht op de gegeven datum.';
+$string['privacy:metadata:enrol_flatfile:action'] = 'De aanmeldingsactie wordt verwacht op de gegeven datum';
 $string['privacy:metadata:enrol_flatfile:courseid'] = 'De cursusID waarmee de aanmelding verband houdt';
 $string['privacy:metadata:enrol_flatfile:roleid'] = 'De ID van de rol die toegewezen of verwijderd wordt.';
-$string['privacy:metadata:enrol_flatfile:timeend'] = 'Het tijdstip waarop de aanmeldingswijziging eindigt.';
-$string['privacy:metadata:enrol_flatfile:timemodified'] = 'Het wijzigingstijdstip van deze aanmeldingswijziging.';
-$string['privacy:metadata:enrol_flatfile:timestart'] = 'Het tijdstip waarop de aanmeldingswijziging begint.';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'Het tijdstip waarop de aanmeldingswijziging eindigt';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'Het tijdstip waarop deze aanmelding gewijzigd is';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'Het tijdstip waarop de aanmelding begint';
 $string['privacy:metadata:enrol_flatfile:userid'] = 'De ID van de gebruiker waarop de roltoewijzing betrekking heeft';

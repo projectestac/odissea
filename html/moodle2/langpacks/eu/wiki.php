@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'wiki', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,7 +132,7 @@ $string['insertimage_help'] = 'Zerrenda zabalgarri honek irudia txertatuko du wi
 $string['invalidlock'] = 'Orri hau dagoeneko beste erabiltzaile batek blokeatu du';
 $string['invalidparameters'] = 'Parametro baliogabeak eman dira.';
 $string['invalidsection'] = 'Atal ezegokia.';
-$string['invalidsesskey'] = 'Badirudi zure saioa iraungitu dela. Mesedez apuntatu ezazu editatzen ari zinen hori eta berriz hasi saioa.';
+$string['invalidsesskey'] = 'Badirudi zure saioa iraungi dela. Mesedez apuntatu ezazu editatzen ari zinen hori eta berriz hasi saioa.';
 $string['javascriptdisabledlocks'] = 'Javascript desgaituta dago zure nabigatzailean, sarrailek ez dute funtzionatzen. Moldaketak ez dira zuzen gordeko.';
 $string['links'] = 'Estekak';
 $string['listall'] = 'Zerrendatu guztiak';

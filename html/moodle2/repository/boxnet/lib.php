@@ -71,7 +71,9 @@ class repository_boxnet extends repository {
         $httpswwwroot = str_replace('http:', 'https:', $CFG->wwwroot);
         $returnurl = new moodle_url($httpswwwroot.'/repository/repository_callback.php');
         //CODI ORIGINAL
-        //$returnurl = new moodle_url('/repository/repository_callback.php');
+        /*
+        $returnurl = new moodle_url('/repository/repository_callback.php');
+        */
         //************ FI
         $returnurl->param('callback', 'yes');
         $returnurl->param('repo_id', $this->id);

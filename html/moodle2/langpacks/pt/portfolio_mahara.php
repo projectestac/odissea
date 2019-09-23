@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio_mahara', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['enableleap2a'] = 'Ativar suporte para portefólio Leap2A (requer Mahara
 $string['err_invalidhost'] = 'O servidor da Rede Moodle indicado é inválido';
 $string['err_invalidhost_help'] = 'Esta módulo está incorretamente configurado pois está a apontar para um servidor da Rede Moodle inválido ou que não existe. O funcionamento deste módulo baseia-se nos pares da Rede Moodle com  SSO IDP publicados, SSO_SP subscritos e portefólios subscritos <b>e</b> published.';
 $string['err_networkingoff'] = 'A Rede Moodle está desativada';
-$string['err_networkingoff_help'] = 'O MNet está completamente desativo. Ative-o antes de tentar configurar este módulo. Todas as instâncias deste módulo foram programadas para não ficarem visíveis até que isso seja corrigido - precisará de configurá-los para visíveis novamente de forma manual. Não poderá usá-las até realizar essa ação.';
+$string['err_networkingoff_help'] = 'O MNet está de momento desativo. Ative-o antes de tentar configurar este módulo. Todas as instâncias deste módulo estarão ocultas até que o MNet seja ativado. As instâncias deverão ser definidas manualmente para ficarem visível novamente.';
 $string['err_nomnetauth'] = 'O módulo de autenticação Rede Moodle está desativado';
 $string['err_nomnetauth_help'] = 'Este serviço apenas pode funcionar se o módulo de autenticação Rede Moodle estiver ativo';
 $string['err_nomnethosts'] = 'Depende da Rede Moodle';

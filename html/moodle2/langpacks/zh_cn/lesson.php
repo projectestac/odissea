@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lesson', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,7 +119,6 @@ $string['completiontimespent'] = '学生必须至少做这个活动';
 $string['completiontimespentdesc'] = '学生必须至少做这个活动 {$a}';
 $string['completiontimespentgroup'] = '需要耗时';
 $string['conditionsfordependency'] = '依赖的前提';
-$string['configactionaftercorrectanswer'] = '回答正确后的缺省动作';
 $string['configintro'] = '这里设置的值定义了在创建新程序教学活动时设置表单中使用的默认值。指定为高级的设置只显示在“显示更多……”点击的链接。';
 $string['configmaxanswers'] = '缺省每页最多选项数';
 $string['configmediaclose'] = '在打开媒体文件的弹出窗口中显示关闭按钮';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_recent_activity', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   block_recent_activity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cleanuptask'] = 'Tarefa de limpeza do bloco Atividade recente';
 $string['pluginname'] = 'Atividade recente';
 $string['privacy:metadata'] = 'O bloco atividade recente contém dados de cache armazenados noutro local no Moodle.';
 $string['privacy:metadata:block_recent_activity'] = 'Registo temporário da atividade recente do professor. Removido depois de dois dias.';

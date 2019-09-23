@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendar', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,6 +119,7 @@ $string['eventsimported'] = 'Termine importiert: {$a}';
 $string['eventskey'] = 'Termine';
 $string['eventsource'] = 'Terminquelle';
 $string['eventspersonal'] = 'Meine persönlichen Termine';
+$string['eventsrelatedtocategories'] = 'Termine bezogen auf Kursbereiche';
 $string['eventsrelatedtocourses'] = 'Kursbezogene Termine';
 $string['eventsrelatedtogroups'] = 'Gruppenbezogene Termine';
 $string['eventstarttime'] = 'Anfangszeit';
@@ -144,7 +145,6 @@ $string['export'] = 'Export';
 $string['exportbutton'] = 'Export';
 $string['exportcalendar'] = 'Kalender exportieren';
 $string['exporthelp'] = 'Wie abonniere ich diesen Kalender in einer Kalenderanwendung (Google/Outlook/Sonstige)?';
-$string['for'] = 'für';
 $string['forcecalendartype'] = 'Kalender vorgeben';
 $string['fri'] = 'Fr';
 $string['friday'] = 'Freitag';

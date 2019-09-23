@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_profiling', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_profiling
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,12 +33,12 @@ $string['cputime'] = 'Χρόνος επεξεργαστή (CPU)';
 $string['differencesbetween2runsof'] = 'Διαφορές μεταξύ δύο εκτελέσεων {$a}';
 $string['executiontime'] = 'Χρόνος εκτέλεσης';
 $string['export'] = 'Εξαγωγή';
-$string['exportproblem'] = 'Κάποιο πρόβλημα παρουσιάστηκε κατά την εξαγωγή του profile run "{$a->runid}" που αντιστοιχεί στο αίτημα "{$a->listurl}".';
+$string['exportproblem'] = 'Κάποιο πρόβλημα παρουσιάστηκε κατά την εξαγωγή του profile run «{$a->runid}» που αντιστοιχεί στο αίτημα «{$a->listurl}».';
 $string['exportthis'] = 'Εξαγωγή αυτής της εκτέλεσης δημιουργίας προφίλ';
 $string['import'] = 'Εισαγωγή';
-$string['importok'] = 'Η εισαγωγή του αρχείου "{$a}" έγινε με επιτυχία.';
+$string['importok'] = 'Η εισαγωγή του αρχείου «{$a}» έγινε με επιτυχία.';
 $string['importprefix'] = 'Πρόθεμα εισαγωγής';
-$string['importproblem'] = 'Κάποιο πρόβλημα παρουσιάστηκε κατά την εισαγωγή του αρχείου "{$a}".';
+$string['importproblem'] = 'Κάποιο πρόβλημα παρουσιάστηκε κατά την εισαγωγή του αρχείου «{$a}».';
 $string['lastrunof'] = 'Περίληψη τελευταίας εκτέλεσης {$a}';
 $string['markreferencerun'] = 'Σημείωση ως «Εκτέλεση αναφοράς»/σχολιασμός';
 $string['memory'] = 'Μνήμη που χρησιμοποιήθηκε';

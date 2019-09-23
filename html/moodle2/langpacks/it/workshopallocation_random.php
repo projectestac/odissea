@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopallocation_random', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addselfassessment'] = 'Aggiungi auto valutazione';
+$string['addselfassessment'] = 'Aggiungi autovalutazione';
 $string['allocationaddeddetail'] = 'Nuova valutazione da svolgere: <strong>{$a->reviewername}</strong> è revisore di <strong>{$a->authorname}</strong>';
 $string['allocationdeallocategraded'] = 'Non è possibile rimuovere la distribuzione di valutazioni che hanno un voto: <strong>{$a->reviewername}</strong>, autore consegna: <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Valutazioni riutilizzate:

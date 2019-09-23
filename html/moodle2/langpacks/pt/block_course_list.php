@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_list', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adminview'] = 'Vista de administrador';
 $string['allcourses'] = 'O administrador vê todas as disciplinas';
-$string['configadminview'] = 'O que é que o administrador deve ver no bloco lista de disciplinas?';
+$string['configadminview'] = 'Se pretende mostrar todas as disciplinas no bloco Disciplinas ou apenas as disciplinas nas quais o administrador está inscrito.';
 $string['confighideallcourseslink'] = 'Remover a hiperligação "Todas as disciplinas" abaixo da lista de disciplinas (esta configuração não afeta a vista de administrador).';
 $string['course_list:addinstance'] = 'Adicionar um novo bloco Disciplinas';
 $string['course_list:myaddinstance'] = 'Adicionar um novo bloco Disciplinas ao Painel do utilizador';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_dropbox', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_dropbox
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['cachelimit_info'] = 'Dropboxエイリアス/ショートカットのた
 $string['configplugin'] = 'Dropbox設定 ';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Dropboxフォルダを表示する';
-$string['instruction'] = 'あなたはAPIキーおよび秘密鍵を<a href="http://www.dropbox.com/developers/apps">Dropbox developers</a>より取得することができます。あなたのキーをセットアップする場合、「Type of access」を「Full Dropbox」にしてください。';
+$string['instruction'] = 'あなたはAPIキーおよび秘密鍵を<a href="https://www.dropbox.com/developers/apps">Dropbox developers</a>より取得することができます。あなたのキーをセットアップする場合、「Type of access」を「Full Dropbox」にしてください。';
 $string['logoutdesc'] = '(Dropboxの利用終了後、ログアウトする)';
 $string['notitle'] = 'タイトルなし';
 $string['oauth2redirecturi'] = 'OAuth 2リダイレクトURI';

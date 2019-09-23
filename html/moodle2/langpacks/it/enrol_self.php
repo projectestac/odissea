@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_self', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['canntenrollate'] = 'Non puoi più iscriverti, le iscrizioni sono chiuse
 $string['cohortnonmemberinfo'] = 'Possono iscriversi spontaneamente solo gli appartenenti al gruppo globale \'{$a}\'';
 $string['cohortonly'] = 'Gruppo globale';
 $string['cohortonly_help'] = 'L\'iscrizione spontanea può essere limitata agli  appartenenti ad un determinato gruppo globale. Da notare che modificare questa impostazione non altera le iscrizioni già esistenti.';
+$string['confirmbulkdeleteenrolment'] = 'Sei sicuro di eliminare le iscrizioni di questi utenti?';
 $string['customwelcomemessage'] = 'Messaggio di benvenuto personalizzato';
 $string['customwelcomemessage_help'] = 'E\' possibile inserire un messaggio personalizzato di benvenuto, sia in formato testo semplice sia in formato Moodle, dove includere tag HTML e tag multilingua.
 
@@ -42,6 +43,8 @@ E\' anche possibile utilizzare i seguenti segnaposto:
 * Nome dell\'utente {$a->fullname}';
 $string['defaultrole'] = 'Ruolo di default';
 $string['defaultrole_desc'] = 'Il ruolo di default da assegnare in caso di iscrizioni spontanee.';
+$string['deleteselectedusers'] = 'Elimina iscrizioni degli utenti selezionati';
+$string['editselectedusers'] = 'Modifica iscrizioni degli utenti selezionati';
 $string['enrolenddate'] = 'Data di fine';
 $string['enrolenddate_help'] = 'Gli utenti potranno iscriversi solo entro la data impostata.';
 $string['enrolenddaterror'] = 'La data di fine delle iscrizioni non può essere antecedente la data di inizio';
@@ -65,6 +68,9 @@ $string['expirymessageenrollerbody'] = 'L\'iscrizione spontanea al corso \'{$a->
 
 Per prorogare l\'iscrizione, recati su {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notifica scadenza iscrizione spontanea';
+$string['expirynotifyall'] = 'Sia ai partecipanti sia a colui che
+li ha iscritti';
+$string['expirynotifyenroller'] = 'Solo a colui che ha iscritto i partecipanti';
 $string['groupkey'] = 'Utilizza chiavi di iscrizione ai gruppi';
 $string['groupkey_desc'] = 'Utilizza di default le chiavi di iscrizione ai gruppi.';
 $string['groupkey_help'] = 'Oltre alla chiave di iscrizione al corso, è possibile usare chiavi di iscrizione ai gruppi per regolare sia l\'accesso al corso sia l\'inserimento automatico dell\'utente in un gruppo.
@@ -102,14 +108,17 @@ $string['self:unenrol'] = 'Disiscrivere utenti dal corso';
 $string['self:unenrolself'] = 'Disiscriversi dal corso';
 $string['sendcoursewelcomemessage'] = 'Invia messaggio di benvenuto al corso';
 $string['sendcoursewelcomemessage_help'] = 'Gli utenti che si iscrivono spontaneamente in un corso riceveranno per email un messaggio di benvenuto. Se il messaggio verrà inviato dai contatti del corso (di default il docente), il nome dell\'utente nell\'email coinciderà con il primo utente al quale è stato assegnato il ruolo.';
+$string['sendexpirynotificationstask'] = 'Invio notifiche scadenza delle iscrizioni spontanee';
 $string['showhint'] = 'Visualizza suggerimento';
 $string['showhint_desc'] = 'Visualizza la prima lettera della chiave d\'iscrizione.';
 $string['status'] = 'Abilita iscrizione spontanea';
 $string['status_desc'] = 'Abilita il metodo di iscrizione spontanea ai corsi.';
 $string['status_help'] = 'Abilitando questa impostazione e disabilitando "Consenti nuove iscrizioni", potranno accedere al corso solamente gli utenti che si sono già iscritti spontaneamente Disabilitando l\'impostazione, saranno disabilitate le iscrizioni con questo metodo, le iscrizioni spontanee esistenti saranno sospese e non saranno consentite nuove iscrizioni.';
+$string['syncenrolmentstask'] = 'Sincronizzazione iscrizioni spontanee';
 $string['unenrol'] = 'Cancella iscrizione utente';
 $string['unenrolselfconfirm'] = 'Sei certo di volerti disiscrivere dal corso "{$a}"?';
 $string['unenroluser'] = 'Sei certo di rimuovere l\'iscrizione di "{$a->user}" dal corso "{$a->course}"?';
+$string['unenrolusers'] = 'Disiscrivi utenti';
 $string['usepasswordpolicy'] = 'Utilizza regole password';
 $string['usepasswordpolicy_desc'] = 'Le chiavi d\'iscrizione dovranno seguire le regole password.';
 $string['welcometocourse'] = 'Benvenuto(a) in {$a}';

@@ -61,32 +61,37 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 									$this->optAuxiliarCas = true;
 									$this->tabCorrectAnswer = true;
 								} else {
-									if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISAUXILIARCASREPLACEEDITOR) {
-										$this->optAuxiliarCasReplaceEditor = true;
+									if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISAUXILIARTEXTINPUT) {
+										$this->optAuxiliarTextInput = true;
+										$this->tabCorrectAnswer = true;
 									} else {
-										if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISTEACHERANSWER) {
-											$this->optOpenAnswer = true;
+										if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISAUXILIARCASREPLACEEDITOR) {
+											$this->optAuxiliarCasReplaceEditor = true;
 										} else {
-											if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISGRADINGFUNCTION) {
-												$this->optGradingFunction = true;
+											if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISTEACHERANSWER) {
+												$this->optOpenAnswer = true;
 											} else {
-												if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISASSERTIONSFEEDBACK) {
-													$this->showAssertionsFeedback = true;
+												if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISGRADINGFUNCTION) {
+													$this->optGradingFunction = true;
 												} else {
-													if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISCORRECTFEEDBACK) {
-														$this->showCorrectAnswerFeedback = true;
+													if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISASSERTIONSFEEDBACK) {
+														$this->showAssertionsFeedback = true;
 													} else {
-														if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISANSWERFIELDINLINEEDITOR) {
-															$this->optAnswerFieldInlineEditor = true;
-															$this->tabCorrectAnswer = true;
+														if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISCORRECTFEEDBACK) {
+															$this->showCorrectAnswerFeedback = true;
 														} else {
-															if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISANSWERFIELDPOPUPEDITOR) {
-																$this->optAnswerFieldPopupEditor = true;
+															if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISANSWERFIELDINLINEEDITOR) {
+																$this->optAnswerFieldInlineEditor = true;
 																$this->tabCorrectAnswer = true;
 															} else {
-																if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISANSWERFIELDPLAINTEXT) {
-																	$this->optAnswerFieldPlainText = true;
+																if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISANSWERFIELDPOPUPEDITOR) {
+																	$this->optAnswerFieldPopupEditor = true;
 																	$this->tabCorrectAnswer = true;
+																} else {
+																	if($className === com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISANSWERFIELDPLAINTEXT) {
+																		$this->optAnswerFieldPlainText = true;
+																		$this->tabCorrectAnswer = true;
+																	}
 																}
 															}
 														}
@@ -125,6 +130,9 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 		if($this->optOpenAnswer) {
 			$this->add($sb, com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISTEACHERANSWER);
 		}
+		if($this->optAuxiliarTextInput) {
+			$this->add($sb, com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISAUXILIARTEXTINPUT);
+		}
 		if($this->optAuxiliarCas) {
 			$this->add($sb, com_wiris_quizzes_impl_HTMLGuiConfig::$WIRISAUXILIARCAS);
 		}
@@ -147,6 +155,7 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 		$this->tabPreview = false;
 		$this->optOpenAnswer = false;
 		$this->optAuxiliarCas = false;
+		$this->optAuxiliarTextInput = false;
 		$this->optAuxiliarCasReplaceEditor = false;
 		$this->optGradingFunction = false;
 		$this->optAnswerFieldInlineEditor = false;
@@ -165,6 +174,7 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 		$this->tabPreview = true;
 		$this->optOpenAnswer = true;
 		$this->optAuxiliarCas = false;
+		$this->optAuxiliarTextInput = false;
 		$this->optAuxiliarCasReplaceEditor = false;
 		$this->optGradingFunction = false;
 		$this->optAnswerFieldInlineEditor = true;
@@ -184,6 +194,7 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 	public $optAnswerFieldPopupEditor;
 	public $optAnswerFieldInlineEditor;
 	public $optCompoundAnswer;
+	public $optAuxiliarTextInput;
 	public $optGradingFunction;
 	public $optAuxiliarCasReplaceEditor;
 	public $optAuxiliarCas;
@@ -211,6 +222,7 @@ class com_wiris_quizzes_impl_HTMLGuiConfig {
 	static $WIRISPREVIEW = "wirispreview";
 	static $WIRISTEACHERANSWER = "wiristeacheranswer";
 	static $WIRISAUXILIARCAS = "wirisauxiliarcas";
+	static $WIRISAUXILIARTEXTINPUT = "wirisauxiliartextinput";
 	static $WIRISAUXILIARCASREPLACEEDITOR = "wirisauxiliarcasreplaceeditor";
 	static $WIRISGRADINGFUNCTION = "wirisgradingfunction";
 	static $WIRISANSWERFIELDINLINEEDITOR = "wirisanswerfieldinlineeditor";

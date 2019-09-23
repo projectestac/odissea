@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'search', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['advancedsearch'] = 'Ricerca avanzata';
 $string['all'] = 'Tutti';
 $string['allareas'] = 'Tutte le aree';
 $string['allcourses'] = 'Tutti i corsi';
+$string['allusers'] = 'Tutti gli  utenti';
 $string['author'] = 'Autore';
 $string['authorname'] = 'Nome dell\'autore';
 $string['back'] = 'Indietro';
@@ -43,6 +44,7 @@ $string['createdon'] = 'Data di creazione';
 $string['database'] = 'Database';
 $string['databasestate'] = 'Stato indicizzazione database';
 $string['datadirectory'] = 'Directory dati';
+$string['deleteindex'] = 'Elimina indice {$a}';
 $string['deletionsinindex'] = 'Cancellazioni nell\'indice';
 $string['docmodifiedon'] = 'Ultima modifica: {$a}';
 $string['doctype'] = 'Tipo documento';
@@ -79,7 +81,11 @@ $string['normalsearch'] = 'Rierca normale';
 $string['notitle'] = 'Senza titolo';
 $string['openedon'] = 'aperto il';
 $string['optimize'] = 'Ottimizza';
+$string['priority'] = 'Priorità';
+$string['priority_normal'] = 'Normale';
+$string['priority_reindexing'] = 'Inidicizzazione in corso';
 $string['privacy:metadata'] = 'Il sotto sistema di ricerca non memorizza dati personali.';
+$string['progress'] = 'Avanzamento';
 $string['queryerror'] = 'Il motore di ricerca non ha potuto analizzare la query: {$a}';
 $string['resultsreturnedfor'] = 'risultati ottenuti per';
 $string['runindexer'] = 'Eseguire indexer (reale)';
@@ -92,8 +98,10 @@ $string['search:message_received'] = 'Messaggi - ricevuti';
 $string['search:message_sent'] = 'Messaggi - inviati';
 $string['search:mycourse'] = 'I miei corsi';
 $string['searchnotpermitted'] = 'Non sei autorizzato ad eseguire ricerche';
+$string['search:section'] = 'Sezioni del corso';
 $string['searchsetupdescription'] = 'I passi seguenti faciliteranno l\'impostazione della ricerca globale di Moodle:';
 $string['search:user'] = 'Utenti';
+$string['searchwithin'] = 'Cerca in';
 $string['seconds'] = 'secondi';
 $string['solutions'] = 'Soluzioni';
 $string['statistics'] = 'Statistiche';

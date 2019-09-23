@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_graphs', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scormreport_graphs', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   scormreport_graphs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['invaliddata'] = 'بيانات غير كافية';
 $string['participants'] = 'عدد المشاركين';
+$string['percent'] = 'نسبة(%) الأمان';
+$string['pluginname'] = 'تقرير بالرسم البياني';
+$string['privacy:metadata'] = 'يعرض التقرير بالرسم البياني البيانات المخزنة في مواقع أخرى فقط.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_grading', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['automaticallygraded'] = 'Automatically graded';
 $string['backtothelistofquestions'] = 'Back to the list of questions';
 $string['bydate'] = 'By date';
 $string['bystudentfirstname'] = 'By student first name';
-$string['bystudentidnumber'] = 'By student id number';
+$string['bystudentidnumber'] = 'By student ID number';
 $string['bystudentlastname'] = 'By student last name';
 $string['cannotgradethisattempt'] = 'Cannot grade this attempt.';
 $string['cannotloadquestioninfo'] = 'Unable to load questiontype specific question information';
@@ -60,7 +60,7 @@ $string['gradingquestionx'] = 'Grading question {$a->number}: {$a->questionname}
 $string['gradingreport'] = 'Manual grading report';
 $string['gradingungraded'] = '{$a} ungraded attempts';
 $string['gradinguser'] = 'Attempts for {$a}';
-$string['grading:viewidnumber'] = 'See student idnumbers while grading';
+$string['grading:viewidnumber'] = 'See student ID numbers while grading';
 $string['grading:viewstudentnames'] = 'See student names while grading';
 $string['hideautomaticallygraded'] = 'Hide questions that have been graded automatically';
 $string['inprogress'] = 'In progress';

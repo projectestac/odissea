@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'survey', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -235,15 +235,15 @@ $string['pluginname'] = 'Hausnarketa';
 $string['preferred'] = 'Lehenetsia';
 $string['preferredclass'] = 'Lehenetsitako klasea';
 $string['preferredstudent'] = '{$a} lehenetsia';
-$string['privacy:metadata:analysis'] = 'Banakako erantzunen analisiaren erregistro bat';
-$string['privacy:metadata:analysis:notes'] = 'Banakako erantzunekin batera gordetako oharrak.';
-$string['privacy:metadata:analysis:userid'] = 'Erantzuna zein erabiltzailerena den';
+$string['privacy:metadata:analysis'] = 'Erantzunen analisiaren erregistro bat';
+$string['privacy:metadata:analysis:notes'] = 'Erabiltzaileen erantzunekin batera gordetako oharrak.';
+$string['privacy:metadata:analysis:userid'] = 'Erantzuna eman duen erabiltzaileren IDa.';
 $string['privacy:metadata:answers'] = 'Hausnarketei emandako erantzunen bilduma bat.';
 $string['privacy:metadata:answers:answer1'] = 'Galderaren erantzuna gordetzeko eremua.';
 $string['privacy:metadata:answers:answer2'] = 'Galderaren erantzuna gordetzeko eremua gehigarria.';
 $string['privacy:metadata:answers:question'] = 'Galdera';
 $string['privacy:metadata:answers:time'] = 'Erantzuna eman zeneko unea.';
-$string['privacy:metadata:answers:userid'] = 'Erantzuna eman zuen erabiltzailea.';
+$string['privacy:metadata:answers:userid'] = 'Erantzuna bidali zuen erabiltzailearen IDa.';
 $string['question'] = 'Galdera';
 $string['questions'] = 'Galderak';
 $string['questionsnotanswered'] = 'Aukera anitzeko galderaren batek ez du erantzunik.';

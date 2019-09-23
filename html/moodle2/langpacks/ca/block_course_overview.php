@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_overview', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['alwaysshowall'] = 'Mostra-ho sempre tot';
 $string['collapseall'] = 'Contreu totes les llistes de cursos';
 $string['configotherexpanded'] = 'Si s\'habilita, el Altres Cursos s\'expandiran per defecte llevat que les preferències de l\'usuari assenyalin el contrari.';
 $string['configpreservestates'] = 'Si s\'habilita, els estats col·lapsats / expandits establerts per l\'usuari s\'emmagatzemaran i utilitzaran en cada càrrega.';
-$string['course_overview:addinstance'] = 'Afegir un nou bloc de resum de cursos';
+$string['course_overview:addinstance'] = 'Afegeix un nou bloc de resum de cursos';
 $string['course_overview:myaddinstance'] = 'Afegeix un bloc de resum de cursos nou a la pàgina del Tauler';
 $string['expandall'] = 'Expandeix totes les llistes de cursos';
 $string['favourites'] = 'Preferits';

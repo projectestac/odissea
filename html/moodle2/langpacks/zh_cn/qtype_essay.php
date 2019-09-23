@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_essay', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = '可接受的文件类型';
+$string['acceptedfiletypes_help'] = '接受的文件类型可以通过输入一系列文件扩展名来实现限制。如果此处为空，那么所有的文件格式都能被接受。';
 $string['allowattachments'] = '允许上传附件';
 $string['attachmentsoptional'] = '附件是可选的';
 $string['attachmentsrequired'] = '要求附件';

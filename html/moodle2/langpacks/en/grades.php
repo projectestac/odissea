@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'grades', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -126,7 +126,7 @@ $string['changedefaults'] = 'Change defaults';
 $string['changereportdefaults'] = 'Change report defaults';
 $string['chooseaction'] = 'Choose an action ...';
 $string['choosecategory'] = 'Select category';
-$string['combo'] = 'Tabs and Dropdown menu';
+$string['combo'] = 'Tabs and drop-down menu';
 $string['compact'] = 'Compact';
 $string['componentcontrolsvisibility'] = 'Whether this grade item is hidden is controlled by the activity settings.';
 $string['contract'] = 'Contract category';
@@ -161,7 +161,7 @@ $string['displaylettergrade'] = 'Display letter grades';
 $string['displaypercent'] = 'Display percents';
 $string['displaypoints'] = 'Display points';
 $string['displayweighted'] = 'Display weighted grades';
-$string['dropdown'] = 'Dropdown menu';
+$string['dropdown'] = 'Drop-down menu';
 $string['droplow'] = 'Drop the lowest';
 $string['droplowestvalue'] = 'Set drop lowest grade value';
 $string['droplowestvalues'] = 'Drop {$a} lowest values';
@@ -202,7 +202,13 @@ $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Error updating the "In
 $string['errorupdatinggradecategoryaggregation'] = 'Error updating the aggregation type of grade category ID {$a->id}';
 $string['errorupdatinggradeitemaggregationcoef'] = 'Error updating the aggregation coefficient (weight or extra credit) of grade item ID {$a->id}';
 $string['eventgradedeleted'] = 'Grade deleted';
+$string['eventgradelettercreated'] = 'Grade letter created';
+$string['eventgradeletterdeleted'] = 'Grade letter deleted';
+$string['eventgradeletterupdated'] = 'Grade letter updated';
 $string['eventgradeviewed'] = 'Grades were viewed in the gradebook';
+$string['eventscalecreated'] = 'Scale created';
+$string['eventscaledeleted'] = 'Scale deleted';
+$string['eventscaleupdated'] = 'Scale updated';
 $string['eventusergraded'] = 'User graded';
 $string['excluded'] = 'Excluded';
 $string['excluded_help'] = 'If ticked, the grade will not be included in any aggregation.';
@@ -210,6 +216,7 @@ $string['expand'] = 'Expand category';
 $string['export'] = 'Export';
 $string['exportalloutcomes'] = 'Export all outcomes';
 $string['exportfeedback'] = 'Include feedback in export';
+$string['exportfeedback_desc'] = 'This can be overridden during export.';
 $string['exportformatoptions'] = 'Export format options';
 $string['exportonlyactive'] = 'Exclude suspended users';
 $string['exportonlyactive_help'] = 'Only include students in the export whose enrolment is active and has not been suspended';
@@ -223,8 +230,10 @@ $string['extracreditwarning'] = 'Note: Setting all items for a category to extra
 $string['feedback'] = 'Feedback';
 $string['feedbackadd'] = 'Add feedback';
 $string['feedbackedit'] = 'Edit feedback';
+$string['feedbackfiles'] = 'Feedback files';
 $string['feedbackforgradeitems'] = 'Feedback for {$a}';
 $string['feedback_help'] = 'This box enables any comments about the grade to be added.';
+$string['feedbackhistoryfiles'] = 'Feedback history files';
 $string['feedbacks'] = 'Feedbacks';
 $string['feedbacksaved'] = 'Feedback saved';
 $string['feedbackview'] = 'View feedback';
@@ -326,7 +335,7 @@ $string['gradepointmax_validateerror'] = 'This setting must be an integer betwee
 $string['gradepreferences'] = 'Grade preferences';
 $string['gradepreferenceshelp'] = 'Grade preferences Help';
 $string['gradepublishing'] = 'Enable publishing';
-$string['gradepublishing_help'] = 'Enable publishing in exports and imports: Exported grades can be accessed by accessing a URL, without having to log on to a Moodle site. Grades can be imported by accessing such a URL (which means that a Moodle site can import grades published by another site). By default only administrators may use this feature, please educate users before adding required capabilities to other roles (dangers of bookmark sharing and download accelerators, IP restrictions, etc.).';
+$string['gradepublishing_help'] = 'Grade publishing is a way of importing and exporting grades via a URL without being logged in to Moodle. If enabled, administrators and users with the permission to publish grades (by default, users with the role of manager only) are provided with grade export publishing settings in each course gradebook.';
 $string['gradepublishinglink'] = 'Download: {$a}';
 $string['gradereport'] = 'Grade report';
 $string['graderreport'] = 'Grader report';
@@ -494,7 +503,7 @@ For example, if this option is set to \'Yes\', changing the maximum grade on an 
 $string['modgradedonotmodify'] = 'Do not modify existing grades';
 $string['modgradeerrorbadpoint'] = 'Invalid grade value. This must be an integer between 1 and {$a}';
 $string['modgradeerrorbadscale'] = 'Invalid scale selected. Please make sure you select a scale from the selections below.';
-$string['modgrade_help'] = 'Select the type of grading used for this activity. If "scale" is chosen, you can then choose the scale from the "scale" dropdown. If using "point" grading, you can then enter the maximum grade available for this activity.';
+$string['modgrade_help'] = 'Select the type of grading used for this activity. If \'scale\' is chosen, you can then choose the scale from the drop-down menu. If using point grading, you can then enter the maximum grade available for this activity.';
 $string['modgrademaxgrade'] = 'Maximum grade';
 $string['modgraderescalegrades'] = 'Rescale existing grades';
 $string['modgraderescalegrades_help'] = 'When changing the maximum grades on a gradebook item you need to specify whether or not this will cause existing percentage grades to change as well.
@@ -611,6 +620,7 @@ $string['prefrows'] = 'Special rows';
 $string['prefshow'] = 'Show/hide toggles';
 $string['previewrows'] = 'Preview rows';
 $string['privacy:metadata:categorieshistory'] = 'A record of previous versions of grade categories';
+$string['privacy:metadata:filepurpose'] = 'Feedback files stored in the gradebook for a user.';
 $string['privacy:metadata:grade_import_newitem'] = 'Temporary table for storing new grade_item names from grade import';
 $string['privacy:metadata:grade_import_newitem:importcode'] = 'A unique batch code for identifying one batch of imports';
 $string['privacy:metadata:grade_import_newitem:importer'] = 'User importing the data';
@@ -628,7 +638,7 @@ $string['privacy:metadata:grades:aggregationweight'] = 'The weight in aggregatio
 $string['privacy:metadata:grades:feedback'] = 'The feedback';
 $string['privacy:metadata:grades:finalgrade'] = 'The grade';
 $string['privacy:metadata:gradeshistory'] = 'A record of the previous grades';
-$string['privacy:metadata:grades:information'] = 'Some information additional information';
+$string['privacy:metadata:grades:information'] = 'Additional information about the grade';
 $string['privacy:metadata:grades:timemodified'] = 'The time when the grade was last modified';
 $string['privacy:metadata:grades:userid'] = 'The ID of the user whose grade it is';
 $string['privacy:metadata:grades:usermodified'] = 'The ID of the user who last modified the record';
@@ -829,6 +839,7 @@ $string['userid'] = 'User ID';
 $string['useridnumberwarning'] = 'Users without an ID number are excluded from the export as they cannot be imported';
 $string['usermappingerror'] = 'User mapping error: Could not find user with {$a->field} of "{$a->value}".';
 $string['usermappingerrorcurrentgroup'] = 'User is not a member of current group.';
+$string['usermappingerrormultipleusersfound'] = 'User mapping error: Multiple users found with {$a->field} of "{$a->value}". Please use a more unique mapping field.';
 $string['usermappingerrorusernotfound'] = 'User mapping error. Could not find user.';
 $string['userpreferences'] = 'User preferences';
 $string['useweighted'] = 'Use weighted';

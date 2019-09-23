@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'folder', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,6 +60,7 @@ $string['page-mod-folder-view'] = 'Главная страница модуля 
 $string['page-mod-folder-x'] = 'Любая страница модуля «Папка»';
 $string['pluginadministration'] = 'Управление папкой';
 $string['pluginname'] = 'Папка';
+$string['privacy:metadata'] = 'Плагин Ресурс Папка не хранит никаких персональных данных.';
 $string['search:activity'] = 'Папка';
 $string['showdownloadfolder'] = 'Показать кнопку для скачивания папки';
 $string['showdownloadfolder_help'] = 'Если параметр установлен в «Да», показывается кнопка, которая позволяет скачать содержимое папки в виде zip-файла.';

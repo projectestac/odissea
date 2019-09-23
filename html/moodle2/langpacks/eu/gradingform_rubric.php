@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradingform_rubric', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,11 +60,11 @@ $string['name'] = 'Izena';
 $string['needregrademessage'] = 'Errubrikaren definizioa aldatu da ikasle hau kalifikatu ondoren. Ikasleak ezin du ikusi errubrika hau egiaztatu eta kalifikazioa eguneratu arte.';
 $string['pluginname'] = 'Errubrika';
 $string['previewrubric'] = 'Aurreikusi errubrika';
-$string['privacy:metadata:criterionid'] = 'Kalifikatzen ari den irizpide zehatz batera identzifikatzaile bat.';
-$string['privacy:metadata:fillingssummary'] = 'Errubrikak sortutako erabiltzailearen kalifikazioari buruzko informazioa gordetzen du.';
-$string['privacy:metadata:instanceid'] = 'Jarduera bateko kalifikazioarekin erlazionatutako identifikatzaile bat.';
-$string['privacy:metadata:levelid'] = 'Errubrikan erdietsitako maila.';
-$string['privacy:metadata:remark'] = 'Ebaluatzen ari den errubrikaren irizpidearekin erlazionatutako iruzkinak.';
+$string['privacy:metadata:criterionid'] = 'Kalifikatzen den irizpidearen identifikatzailea';
+$string['privacy:metadata:fillingssummary'] = 'Errubrikak sortutako erabiltzailearen kalifikazioaren inguruko informazioa gordetzen du';
+$string['privacy:metadata:instanceid'] = 'Jarduera bateko kalifikazioaren identifikatzailea';
+$string['privacy:metadata:levelid'] = 'Errubrikan lortutako maila';
+$string['privacy:metadata:remark'] = 'Ebaluatutako errubrika-irizpidearekin lotutako iruzkinak';
 $string['regrademessage1'] = 'Aldaketak egin behar dituzu kalifikatzeko erabili den errubrika batean. Mesedez, adierazi orain arteko kalifikazioak berrikusi behar diren. Ezarpen hau gaitzen baduzu, errubrika ikasleei ezkutatuko zaie beren kalifikazioa berrikusi arte.';
 $string['regrademessage5'] = 'Kalifikatzeko erabilia izan den errubrika batean aldaketa nabarmenak egin behar dituzu. Kalifikazio liburuaren balioa ez da aldatuko, baina errubrika ikasleei ezkutatuko zaie beren kalifikazioa berrikusi arte.';
 $string['regradeoption0'] = 'Ez markatu berriz kalifikatzeko';

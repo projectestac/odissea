@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_shibboleth', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_shib_auth_logo'] = '身份验证方法徽标';
+$string['auth_shib_auth_logo_description'] = '提供用户熟悉的口令身份验证方式徽标 。如可以是口令联盟徽标，<tt>SWITCHaai 登录</tt> or <tt>InCommon 登录</tt> or 等类型徽标。';
 $string['auth_shib_auth_method'] = '身份认证方法名称';
 $string['auth_shib_auth_method_description'] = '给Shibboleth验证方法起一个用户熟悉的名字。可以是您的Shibboleth组织的名字，比如<tt>SWITCHaai 登陆</tt> 或者 <tt>InCommon 登陆</tt> 或者其他类似的名字。';
 $string['auth_shibbolethdescription'] = '是用这个方法，用户的创建和验证是使用 <a href="http://shibboleth.internet2.edu/" target="_blank">Shibboleth</a> 进行的';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -81,6 +81,7 @@ $string['answers'] = '答案';
 $string['answersingleno'] = '允许多个答案';
 $string['answersingleyes'] = '只有一个正确答案';
 $string['answertoolong'] = '行 {$a} 后的答案过长(最多 255 个英文字符)';
+$string['anytags'] = '任何标签';
 $string['aon'] = 'AON 格式';
 $string['areyousureremoveselected'] = '您确定要删除所有已选择的试题？';
 $string['asshownoneditscreen'] = '与编辑屏幕相同';
@@ -638,6 +639,7 @@ $string['questionposition'] = '为问题{$a}有新位置';
 $string['questions'] = '试题';
 $string['questionsinclhidden'] = '试题（包括隐藏的）';
 $string['questionsinthisquiz'] = '测验中的试题';
+$string['questionsmatchingfilter'] = '问题符合该筛选条件: {$a}';
 $string['questionsperpage'] = '每页试题数';
 $string['questionsperpageselected'] = '已经设置了每页题目数，所以分页现在是固定的，分页控制被禁用。您可以在这里修改 {$a}。';
 $string['questionsperpagex'] = '每页题目数：{$a}';

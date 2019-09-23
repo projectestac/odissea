@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -357,6 +357,5 @@ $string['workshop:viewauthornames'] = '查看作者姓名';
 $string['workshop:viewauthorpublished'] = '查看已发布作业的作者';
 $string['workshop:viewpublishedsubmissions'] = '查看已发布作业';
 $string['workshop:viewreviewernames'] = '查看评价人姓名';
-$string['yourassessment'] = '您的评价';
 $string['yourgrades'] = '您的成绩';
 $string['yoursubmission'] = '您的作业';

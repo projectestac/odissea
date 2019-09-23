@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_datetime', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'profilefield_datetime', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   profilefield_datetime
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['currentdatedefault'] = 'Marcar o uso da data actual como predeterminada
 $string['defaultdate'] = 'Data predeterminada';
 $string['endyear'] = 'Ano de finalización';
 $string['notset'] = 'Non estabelecido';
-$string['pluginname'] = 'Data/Hora';
+$string['pluginname'] = 'Data/hora';
 $string['privacy:metadata:profilefield_datetime:data'] = 'Os datos almacenados do usuario.';
 $string['privacy:metadata:profilefield_datetime:dataformat'] = 'O formato dos datos almacenados do usuario.';
 $string['privacy:metadata:profilefield_datetime:fieldid'] = 'O ID do campo do perfil.';

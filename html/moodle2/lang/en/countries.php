@@ -24,7 +24,7 @@
 
 //XTEC ************ AFEGIT - Added Catalonia to countries list
 //2012.08.22  @sarjona
-$string['CT'] = 'Catalunya';
+$string['CT'] = 'Catalonia';
 //************ FI
 $string['AD'] = 'Andorra';
 $string['AE'] = 'United Arab Emirates';

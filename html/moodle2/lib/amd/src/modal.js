@@ -35,6 +35,7 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
         FOOTER: '[data-region="footer"]',
         HIDE: '[data-action="hide"]',
         DIALOG: '[role=dialog]',
+        FORM: 'form',
         MENU_BAR: '[role=menubar]',
         HAS_Z_INDEX: '.moodle-has-zindex',
         CAN_RECEIVE_FOCUS: 'input:not([type="hidden"]), a[href], button, textarea, select, [tabindex]',
@@ -272,7 +273,12 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
             if (value.state() == 'pending') {
                 // We're still waiting for the body promise to resolve so
                 // let's show a loading icon.
-                body.animate({height: '100px'}, 150);
+                var height = body.innerHeight();
+                if (height < 100) {
+                    height = 100;
+                }
+
+                body.animate({height: height + 'px'}, 150);
 
                 body.html('');
                 contentPromise = Templates.render(TEMPLATES.LOADING, {})
@@ -560,10 +566,22 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
 
             this.root.removeClass('hide').addClass('show');
             this.accessibilityShow();
-            this.getTitle().focus();
+            this.getModal().focus();
             $('body').addClass('modal-open');
             this.root.trigger(ModalEvents.shown, this);
         }.bind(this));
+    };
+
+    /**
+     * Hide this modal if it does not contain a form.
+     *
+     * @method hideIfNotForm
+     */
+    Modal.prototype.hideIfNotForm = function() {
+        var formElement = this.modal.find(SELECTORS.FORM);
+        if (formElement.length == 0) {
+            this.hide();
+        }
     };
 
     /**
@@ -710,6 +728,20 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
                 this.handleTabLock(e);
             } else if (e.keyCode == KeyCodes.escape) {
                 this.hide();
+            }
+        }.bind(this));
+
+        // Listen for clicks on the modal container.
+        this.getRoot().click(function(e) {
+            // If the click wasn't inside the modal element then we should
+            // hide the modal.
+            if (!$(e.target).closest(SELECTORS.MODAL).length) {
+                // The check above fails to detect the click was inside the modal when the DOM tree is already changed.
+                // So, we check if we can still find the container element or not. If not, then the DOM tree is changed.
+                // It's best not to hide the modal in that case.
+                if ($(e.target).closest(SELECTORS.CONTAINER).length) {
+                    this.hideIfNotForm();
+                }
             }
         }.bind(this));
 

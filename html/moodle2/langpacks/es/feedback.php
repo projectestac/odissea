@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'feedback', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,11 +40,8 @@ $string['autonumbering'] = 'Auto numerar preguntas';
 $string['autonumbering_help'] = 'Activa o desactiva la numeración automática para cada pregunta';
 $string['average'] = 'Promedio';
 $string['bold'] = 'Negrita';
-$string['cancel_moving'] = 'Cancelar movimiento';
 $string['cannotaccess'] = 'Sólo puedes acceder a este feedback desde un curso';
-$string['cannotmapfeedback'] = 'Problema con la base de datos, imposible asignar encuesta al curso';
 $string['cannotsavetempl'] = 'no se permite guardar plantillas';
-$string['cannotunmap'] = 'Problema con la base de datos, imposible desasignar';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'No se ha ajustado el Captcha.';
 $string['check'] = 'Elección múltiple (varias respuestas)';
@@ -152,16 +149,13 @@ $string['item_label'] = 'Etiqueta';
 $string['item_name'] = 'Pregunta';
 $string['label'] = 'Etiqueta';
 $string['labelcontents'] = 'Contenidos';
-$string['line_values'] = 'Clasificación';
 $string['mapcourse'] = 'Asignar encuesta a cursos';
 $string['mapcourse_help'] = 'Por defecto, los formularios de encuesta creados en su página de inicio están disponibles en todo el sitio y aparecerá en todos los cursos utilizando el bloque de encuestas. Puede forzar que el formulario de encuestas se visualice haciendo que sea un bloque fijo o puede limitar los cursos en los que se mostrará el formulario de encuesta mediante su asignación a cursos específicos.';
 $string['mapcourseinfo'] = 'Esta encuesta está disponible en todos los cursos que usan el bloque Encuesta. Sin embargo, usted puede  limitar los cursos en los que aparece. Busque el curso y asígnelo a esta encuesta.';
 $string['mapcoursenone'] = 'No hay cursos asignados. La encuesta está disponible en todos los cursos';
 $string['mapcourses'] = 'Asignar encuesta a cursos';
-$string['mapcourses_help'] = 'Una vez seleccionados los cursos correspondientes a partir de la búsqueda, es posible asociarlos con esta encuesta utilizando el mapeo. Para seleccionar varios cursos mantenga pulsada la tecla Ctrl mientras hace clic en los nombres de los cursos. Se puede quitar la asociación de un curso a una encuesta en cualquier momento.';
 $string['mappedcourses'] = 'Cursos asignados';
 $string['mappingchanged'] = 'El mapeo del curso ha cambiado';
-$string['max_args_exceeded'] = 'Se admite un máximo de 6 argumentos; demasiados argumentos para';
 $string['maximal'] = 'máximo';
 $string['messageprovider:message'] = 'Recordatorio de encuesta';
 $string['messageprovider:submission'] = 'Notificaciones de encuesta';
@@ -179,10 +173,7 @@ La actividad Encuesta puede ser utilizada
 * Para encuestar a los invitados a la hora de la elección de cursos, las políticas escolares, etc
 * Para que en caso de "acoso escolar" los estudiantes pueden reportar incidentes de forma anónima';
 $string['modulenameplural'] = 'Encuestas';
-$string['movedown_item'] = 'Bajar esta pregunta';
-$string['move_here'] = 'Mover aquí';
 $string['move_item'] = 'Mover esta pregunta';
-$string['moveup_item'] = 'Subir esta pregunta';
 $string['multichoice'] = 'Elección múltiple';
 $string['multichoicerated'] = 'Elección múltiple (clasificadas)';
 $string['multichoicetype'] = 'Tipo elección múltiple';
@@ -199,7 +190,6 @@ $string['no_items_available_yet'] = 'No se han planificado preguntas';
 $string['non_anonymous'] = 'Los nombres de los usuarios se mostrarán y registrarán con las respuestas';
 $string['non_anonymous_entries'] = 'entradas no anónimas';
 $string['non_respondents_students'] = 'estudiantes no respondientes';
-$string['notavailable'] = 'esta encuesta no está disponible';
 $string['not_completed_yet'] = 'Aún no se ha finalizado';
 $string['no_templates_available_yet'] = 'No hay plantillas disponibles';
 $string['not_selected'] = 'No seleccionada';
@@ -217,27 +207,17 @@ $string['page'] = 'Página';
 $string['page_after_submit'] = 'Página a mostrar tras el envío';
 $string['pagebreak'] = 'Salto de página';
 $string['page-mod-feedback-x'] = 'Cualquier página del módulo Encuesta';
-$string['parameters_missing'] = 'Faltan parámetros de';
-$string['picture'] = 'Imagen';
-$string['picture_file_list'] = 'Lista de imágenes';
-$string['picture_values'] = 'Seleccione una o más<br />imagenes de la lista:';
 $string['pluginadministration'] = 'Administración de la encuesta';
 $string['pluginname'] = 'Módulo de encuesta';
 $string['position'] = 'Posición';
-$string['preview'] = 'Previsualizar';
-$string['preview_help'] = 'En la vista previa se puede cambiar el orden de las preguntas.';
 $string['previous_page'] = 'Página anterior';
 $string['public'] = 'Pública';
 $string['question'] = 'Pregunta';
 $string['questionandsubmission'] = 'Ajustes de pregunta y envío';
 $string['questions'] = 'Preguntas';
 $string['radio'] = 'Opción múltiple (una respuesta)';
-$string['radiobutton'] = 'Opción múltiple (una respuesta -botones-)';
-$string['radiobutton_rated'] = 'Botones de opción (clasificadas)';
-$string['radiorated'] = 'Botones de opción (clasificadas)';
 $string['radio_values'] = 'Valores de los botones de opción';
 $string['ready_feedbacks'] = 'Encuestas preparadas';
-$string['relateditemsdeleted'] = 'Se eliminarán también todas las respuestas de los usuarios a esta pregunta';
 $string['required'] = 'Obligatorio';
 $string['resetting_data'] = 'Reiniciar respuestas a la encuesta';
 $string['resetting_feedbacks'] = 'Reiniciando encuestas';
@@ -249,7 +229,6 @@ $string['save_as_new_template'] = 'Guardar como nueva plantilla';
 $string['save_entries'] = 'Enviar sus respuestas';
 $string['save_item'] = 'Guardar pregunta';
 $string['saving_failed'] = 'No se pudo guardar';
-$string['saving_failed_because_missing_or_false_values'] = 'No se pudo guardar debido a valores ausentes o falsos';
 $string['search:activity'] = 'Retroalimentación - información de actividad';
 $string['search_course'] = 'Buscar curso';
 $string['searchcourses'] = 'Buscar cursos';
@@ -257,8 +236,6 @@ $string['searchcourses_help'] = 'Buscar el código o el nombre del (los) curso(s
 $string['selected_dump'] = 'Los índices seleccionados en la variable $SESSION se desecharon debajo:';
 $string['send'] = 'enviar';
 $string['send_message'] = 'enviar mensaje';
-$string['separator_decimal'] = '.';
-$string['separator_thousand'] = ',';
 $string['show_all'] = 'Mostrar todo';
 $string['show_analysepage_after_submit'] = 'Mostrar página de análisis';
 $string['show_entries'] = 'Mostrar respuestas';
@@ -266,12 +243,9 @@ $string['show_entry'] = 'Mostrar respuesta';
 $string['show_nonrespondents'] = 'Mostrar no respondientes';
 $string['site_after_submit'] = 'Sitio tras el envío';
 $string['sort_by_course'] = 'Ordenar por curso';
-$string['start'] = 'Inicio';
 $string['started'] = 'comenzado';
 $string['startedon'] = 'Empezado el {$a}';
-$string['stop'] = 'Fin';
 $string['subject'] = 'Materia';
-$string['switch_group'] = 'Cambiar grupo';
 $string['switch_item_to_not_required'] = 'cambiar a: respuesta no obligatoria';
 $string['switch_item_to_required'] = 'cambiar a: respuesta obligatoria';
 $string['template'] = 'Plantilla';
@@ -294,6 +268,3 @@ $string['use_one_line_for_each_value'] = '<br>¡Use una línea por cada respuest
 $string['use_this_template'] = 'Utilizar esta plantilla';
 $string['using_templates'] = 'Utilizar una plantilla';
 $string['vertical'] = 'vertical';
-$string['viewcompleted'] = 'encuestas completadas';
-$string['viewcompleted_help'] = 'Usted puede ver los formularios de encuesta completados, que pueden buscarse por curso y/o por pregunta.
-Las respuestas a la encuesta pueden exportarse a Excel.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,7 +49,7 @@ $string['listheader_multi_and'] = 'alle';
 $string['listheader_multi_before'] = 'voldoen aan';
 $string['listheader_multi_or'] = 'gelijk welke';
 $string['listheader_sign_before'] = 'Leerling';
-$string['listheader_sign_neg'] = 'moet niet';
+$string['listheader_sign_neg'] = 'mag niet';
 $string['listheader_sign_pos'] = 'moet';
 $string['listheader_single'] = 'voldoen aan volgende voorwaarden';
 $string['list_or'] = 'Gelijk welke van:';
@@ -67,5 +67,5 @@ $string['restrictbygroup'] = 'Voeg toegangsrestrictie voor groep/groepering toe'
 $string['setheading'] = '{$a->number} Set van {$a->count} beperking(en)';
 $string['shown_all'] = 'Wordt in het grijs getoond als de gebruiker niet aan de voorwaarden voldoet.';
 $string['shown_individual'] = 'Wordt in het grijs getoond als de gebruiker niet aan deze voorwaarde voldoet.';
-$string['show_verb'] = 'Klik om te tonen';
+$string['show_verb'] = 'Klik om te tonen is grijs';
 $string['unknowncondition'] = 'Onbekende voorwaarde (voorwaarde-plugin verwijderd)';

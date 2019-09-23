@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -125,15 +125,15 @@ $string['periodnone'] = '{$a} matrikulatuta';
 $string['periodstart'] = 'noiztik {$a}';
 $string['periodstartend'] = '{$a->start} -tik  {$a->end} arte';
 $string['privacy:metadata:user_enrolments'] = 'Matrikulak';
-$string['privacy:metadata:user_enrolments:enrolid'] = 'Matrikulazio-pluginaren instantzia.';
-$string['privacy:metadata:user_enrolments:modifierid'] = 'Erabiltzailearen matrikula azkenik aldatu zuen erabiltzailearen IDa.';
-$string['privacy:metadata:user_enrolments:status'] = 'Erabiltzailearen matrikulazio-egoera ikastaroan.';
-$string['privacy:metadata:user_enrolments:tableexplanation'] = 'Matrikulazio-kudeatzaileak matrikulatutako erabiltzaileak hemen gordetzen ditu.';
-$string['privacy:metadata:user_enrolments:timecreated'] = 'Erabiltzailearen matrikula sortu zeneko data/ordua.';
-$string['privacy:metadata:user_enrolments:timeend'] = 'Erabiltzailearen matrikula amaitu zeneko data/ordua.';
-$string['privacy:metadata:user_enrolments:timemodified'] = 'Erabiltzailearen matrikula aldatu zeneko data/ordua.';
-$string['privacy:metadata:user_enrolments:timestart'] = 'Erabiltzailearen matrikula hasi zeneko data/ordua.';
-$string['privacy:metadata:user_enrolments:userid'] = 'Erabiltzailearen IDa.';
+$string['privacy:metadata:user_enrolments:enrolid'] = 'Matrikulazio-pluginaren instantzia';
+$string['privacy:metadata:user_enrolments:modifierid'] = 'Erabiltzailearen matrikula azkenik aldatu zuen erabiltzailearen IDa';
+$string['privacy:metadata:user_enrolments:status'] = 'Erabiltzailearen matrikulazio-egoera ikastaroan';
+$string['privacy:metadata:user_enrolments:tableexplanation'] = 'Muineko matrikulazio-pluginak matrikulatutako erabiltzaileak gordetzen ditu.';
+$string['privacy:metadata:user_enrolments:timecreated'] = 'Erabiltzailearen matrikula sortu zeneko unea';
+$string['privacy:metadata:user_enrolments:timeend'] = 'Erabiltzailearen matrikula amaitu zeneko unea';
+$string['privacy:metadata:user_enrolments:timemodified'] = 'Erabiltzailearen matrikula aldatu zeneko unea';
+$string['privacy:metadata:user_enrolments:timestart'] = 'Erabiltzailearen matrikula hasi zeneko unea';
+$string['privacy:metadata:user_enrolments:userid'] = 'Erabiltzailearen IDa';
 $string['proceedtocourse'] = 'Jarraitu ikastaro-edukiarekin';
 $string['recovergrades'] = 'Berreskuratu erabiltzailearen lehengo kalfikazioak, posible bada';
 $string['rolefromcategory'] = '{$a->role} (Ikastaro-kategoriatik heredatutakoa)';

@@ -49,16 +49,12 @@ M.atto_recordrtc.videomodule = {
         cm.startStopBtn = Y.one('button#start-stop');
         cm.uploadBtn = Y.one('button#upload');
         cm.recType = 'video';
-        cm.olderMoodle = scope.get('oldermoodle');
-        // Extract the numbers from the string, and convert to bytes.
-        cm.maxUploadSize = window.parseInt(scope.get('maxrecsize').match(/\d+/)[0], 10) * Math.pow(1024, 2);
+        cm.maxUploadSize = scope.get('maxrecsize');
 
         // Show alert and close plugin if WebRTC is not supported.
         ccm.check_has_gum();
         // Show alert and redirect user if connection is not secure.
         ccm.check_secure();
-        // Show alert if using non-ideal browser.
-        ccm.check_browser();
 
         // Run when user clicks on "record" button.
         cm.startStopBtn.on('click', function() {
@@ -72,13 +68,12 @@ M.atto_recordrtc.videomodule = {
                 cm.uploadBtn.ancestor().ancestor().addClass('hide');
 
                 // Change look of recording button.
-                if (!cm.olderMoodle) {
-                    cm.startStopBtn.replaceClass('btn-outline-danger', 'btn-danger');
-                }
+                cm.startStopBtn.replaceClass('btn-outline-danger', 'btn-danger');
 
                 // Empty the array containing the previously recorded chunks.
                 cm.chunks = [];
                 cm.blobSize = 0;
+                cm.uploadBtn.detach('click');
 
                 // Initialize common configurations.
                 var commonConfig = {
@@ -94,9 +89,7 @@ M.atto_recordrtc.videomodule = {
                     onMediaStopped: function(btnLabel) {
                         cm.startStopBtn.set('textContent', btnLabel);
                         cm.startStopBtn.set('disabled', false);
-                        if (!cm.olderMoodle) {
-                            cm.startStopBtn.replaceClass('btn-danger', 'btn-outline-danger');
-                        }
+                        cm.startStopBtn.replaceClass('btn-danger', 'btn-outline-danger');
                     },
 
                     // Handle recording errors.
@@ -125,9 +118,7 @@ M.atto_recordrtc.videomodule = {
 
                 // Change button to offer to record again.
                 cm.startStopBtn.set('textContent', M.util.get_string('recordagain', 'atto_recordrtc'));
-                if (!cm.olderMoodle) {
-                    cm.startStopBtn.replaceClass('btn-danger', 'btn-outline-danger');
-                }
+                cm.startStopBtn.replaceClass('btn-danger', 'btn-outline-danger');
             }
 
             // Get dialogue centered.

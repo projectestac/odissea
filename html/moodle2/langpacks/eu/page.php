@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'page', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,8 +62,10 @@ $string['popupheightexplain'] = 'Zehaztu zabaltzen den leihoaren lehenetsitako a
 $string['popupwidth'] = 'Popup-aren zabalera (pixeletan)';
 $string['popupwidthexplain'] = 'Zehaztu zabaltzen den leihoaren lehenetsitako zabalera.';
 $string['printheading'] = 'Erakutsi orriaren izena';
-$string['printheadingexplain'] = 'Orriaren izena edukiaren gainean erakutsi?';
+$string['printheadingexplain'] = 'Erakutsi orriaren izena edukiaren gainean?';
 $string['printintro'] = 'Erakutsi orriaren deskribapena';
-$string['printintroexplain'] = 'Orriaren deskribapena edukiaren gainean erakutsi?';
-$string['privacy:metadata'] = 'mod_page pluginak ez du datu pertsonalik biltzen.';
+$string['printintroexplain'] = 'Erakutsi orriaren deskribapena edukiaren gainean?';
+$string['printlastmodified'] = 'Erakutsi azken aldatze-data';
+$string['printlastmodifiedexplain'] = 'Erakutsi azken aldatze-data orriaren azpian?';
+$string['privacy:metadata'] = 'Orria baliabide-pluginak ez du datu pertsonalik biltzen.';
 $string['search:activity'] = 'Orria';

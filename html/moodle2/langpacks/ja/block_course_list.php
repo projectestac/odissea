@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_list', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adminview'] = '管理者ビュー';
 $string['allcourses'] = '管理者はすべてのコースを閲覧可';
-$string['configadminview'] = 'コース一覧ブロックで管理者に何を表示しますか?';
+$string['configadminview'] = 'コースブロックにすべてのコースを表示するか管理者が登録されているコースのみ表示するか指定してください。';
 $string['confighideallcourseslink'] = 'コース一覧下部の「すべてのコース」リンクを削除します (この設定は管理者ビューに影響しません)。';
 $string['course_list:addinstance'] = '新しいコースブロックを追加する';
 $string['course_list:myaddinstance'] = '新しいコースブロックをダッシュボードに追加する';

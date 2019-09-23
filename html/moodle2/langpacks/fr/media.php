@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'media', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,14 +31,11 @@ $string['defaultheightdesc'] = 'La hauteur du lecteur vidéo si aucune hauteur n
 $string['defaultwidth'] = 'Largeur par défaut';
 $string['defaultwidthdesc'] = 'La largeur du lecteur vidéo si aucune hauteur n\'est spécifiée et que le lecteur n\'est pas capable de détecter la hauteur réelle de la vidéo.';
 $string['extensions'] = 'Extensions : {$a}';
-$string['legacyheading'] = 'Lecteurs média obsolètes';
-$string['legacyheading_desc'] = 'Ces lecteurs sont rarement utilisés sur le web. Ils requièrent pour les navigateurs des plugins qui ne sont pas très répandus.';
 $string['managemediaplayers'] = 'Gérer les lecteurs de média';
 $string['mediaformats'] = 'Lecteurs disponibles';
 $string['mediaformats_desc'] = 'Lorsque des lecteurs sont activés, des fichiers peuvent être intégrés à l\'aide du filtre des plugins multimédia (s\'il est activé) ou à l\'aide de ressources de type fichier ou URL. Sinon, ces formats ne sont pas intégrés et les utilisateurs peuvent télécharger ou suivre les liens vers ces ressources.
 
 Si deux lecteurs supportent le même format, leur activation commune permet d\'augmenter la compatibilité avec des appareils différents, comme les téléphones portables ou les tablettes. Il est possible d\'augmenter encore cette compatibilité en fournissant un même son ou une même vidéo en plusieurs formats.';
-$string['mediasettings'] = 'Intégration de média';
 $string['privacy:metadata'] = 'Le plugin Intégration de média n\'enregistre aucune donnée personnelle.';
 $string['supports'] = 'Supports';
 $string['videoextensions'] = 'Vidéo : {$a}';

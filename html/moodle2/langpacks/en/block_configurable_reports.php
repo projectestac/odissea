@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_configurable_reports', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   block_configurable_reports
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -303,6 +303,7 @@ $string['others'] = 'Others';
 $string['pagination'] = 'Pagination';
 $string['pagination_help'] = 'Number of records to show in each page. Zero means no pagination';
 $string['parentcategory'] = 'Parent category';
+$string['percent'] = 'Percentage';
 $string['permissions'] = 'Permissions';
 $string['pie'] = 'Pie';
 $string['pieareaname'] = 'Name';

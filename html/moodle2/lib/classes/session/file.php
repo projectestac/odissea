@@ -62,7 +62,6 @@ class file extends handler {
         if (!is_writable($this->sessiondir)) {
             throw new exception('sessionhandlerproblem', 'error', '', null, 'Session directory is not writable');
         }
-
         // Need to disable debugging since disk_free_space()
         // will fail on very large partitions (see MDL-19222).
         $freespace = @disk_free_space($this->sessiondir);

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,7 +82,7 @@ $string['settingshortname'] = 'Tag di descrizione IMS per il titolo abbreviato d
 $string['settingshortnamedescription'] = 'Il titolo abbreviato del corso è un capo obbligatorio, è necessario definire il tag di descrizione nel file IMS Enterprise';
 $string['settingsummary'] = 'Tag di descrizione IMS per la descrizione del corso';
 $string['settingsummarydescription'] = 'Il campo è opzionale, è possibile non utilizzarlo selezionando \'Lascia vuoto\'';
-$string['sourcedidfallback'] = 'Utilizza il campo &quot;sourcedid&quot; come userid di una persona se il campo &quot;userid&quot; non è presente';
+$string['sourcedidfallback'] = 'Utilizza il campo \'sourcedid\' come userid di un utente se non si trova il campo \'userid\' .';
 $string['sourcedidfallback_desc'] = 'Nei file IMS il campo <sourcedid> rappresenta il codice ID permanente assegnato all\'utente dal sistema da dove si originano i dati.
 Il campo <userid> è un campo separato che contiene il codice ID usato dagli utenti per autenticarsi. Spesso i due valori coincidono, in altri casi no.
 
@@ -93,7 +93,7 @@ $string['updatecourses'] = 'Aggiorna corso';
 $string['updatecourses_desc'] = 'Il plugin di iscrizione IMS Enterprise può aggiornare il titolo ed il titolo abbreviato del corso ("recstatus" deve essere impostato a 2, cosa che indica un aggiornamento).';
 $string['updateusers'] = 'Aggiorna gli account degli utenti se indicato nei dati IMS';
 $string['updateusers_desc'] = 'I dati di iscrizione IMS Enterprise possono aggiornare gli account degli utenti ("recstatus" deve essere impostato a 2, cosa che indica un aggiornamento).';
-$string['usecapitafix'] = 'Compatibilità "Capita" (il formato XML generato da questo sistema è impreciso)';
+$string['usecapitafix'] = 'Compatibilità "Capita" (il formato XML generato da questo sistema è leggermente diverso)';
 $string['usecapitafix_desc'] = 'Lo student data system di Capita produce un XML con delle imprecisioni. Se usi Capita, è bene abilitare questa impostazione.';
 $string['usersettings'] = 'Opzioni utente';
 $string['zeroisnotruncation'] = '0 indica nessun troncamento';

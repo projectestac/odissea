@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,7 +53,7 @@ $string['authloginviaemail_desc'] = '사이트 로그인에 사용자이름과 �
 $string['auth_multiplehosts'] = '다수의 호스트들은 host1.com;host2.com;host3.com 식이나 IP의 경우 xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx 형태로 쓸 수 있다.';
 $string['auth_notconfigured'] = '인증 방법{$a}이(가)구성되지 않았습니다.';
 $string['auth_outofnewemailupdateattempts'] = '허용된 이메일 주소 변경의 업데이트 시도 횟수를 넘겼습니다. 요청이 기각되었습니다.';
-$string['auth_passwordisexpired'] = '당신의 비밀번호가 만료되었습니다. 지금 비밀번호를 바꾸세요.';
+$string['auth_passwordisexpired'] = '당신의 비밀번호가 만료되었습니다. 지금 비밀번호를 바꾸시겠습니까?';
 $string['auth_passwordwillexpire'] = '당신의 비밀번호가 {$a} 일 후에 만료됩니다. 지금 비밀번호를 바꾸시겠습니까?';
 $string['auth_remove_delete'] = '내부적으로 완전 삭제';
 $string['auth_remove_keep'] = '내부적으로 유지';
@@ -73,23 +73,27 @@ $string['auth_updateremote_ldap'] = '<p><b>경고:</b> 외부의 LDAP 데이터�
 $string['auth_user_create'] = '사용자 생성 가능';
 $string['auth_user_creation'] = '새로운 사용자는 외부인증 소스 혹은 확인되어진 이메일을 통해 계정을 생성할 수 있다. 만약 이 기능을 켜 놓으면 사용자 생성을 위한 모듈 나름대로의 옵션 설정을 잊지마시오.';
 $string['auth_usernameexists'] = '선택하신 사용자 아이다는 이미 존재합니다. 다른 사용자아이디를 입력하세요.';
+$string['auth_usernotexist'] = '존재하지 않는 사용자 {$a} 는 업데이트할 수 없음';
 $string['auto_add_remote_users'] = '원격 사용자 자동 추가';
 $string['cannotmapfield'] = '"{$a->fieldname}" 필드의 "{$a-> fieldname}" 짧은 이름이 너무 길기 때문에 필드를 매핑 할 수 없습니다. 매핑을 허용하려면 짧은 이름을 {$a->charlimit} 문자로 줄여야합니다. <a href="{$a->link} "> 사용자 프로필 입력란 수정 </a>';
 $string['changepassword'] = '패스워드 URL 변경';
 $string['changepasswordhelp'] = '만약 사용자가 자신의 계정과 비밀번호를 잊어버리는 경우를 대비해 이곳에 계정과 비밀번호를 찾거나 혹은 바꿀 수 있는 장소를 지정해 줍니다. 이것은 로그인 페이지나 사용자 페이지에서 버튼으로 제공되지만, 이곳을 빈칸으로 놓아둔다면 웹페이지에 버튼이 나타나지 않습니다.';
 $string['chooseauthmethod'] = '인증 방법 선택';
-$string['chooseauthmethod_help'] = '이 설정은 사용자가 로그인할 때 사용되는 인증 방법을 결정합니다. 활성화된 인증 플러그 인만 선택해야 합니다. 그렇지 않으면 사용자가 더 이상 로그인할 수 없습니다. 사용자의 로그인을 차단하려면"로그인 없음"을 선택합니다.';
+$string['chooseauthmethod_help'] = '<p>본 메뉴는 특별한 사용자를 위해 인증 방법을 바꿀 수 있도록 허용합니다.</p>
+
+<p>하지만 여러분이 사이트 인증방법에 무엇을 썼으며 또 어떻게 설정하였는지에 의해 긴밀히 의존되어 있음을 유의하기 바랍니다.</p>
+
+<p>이 곳에서 설정을 잘못하게 되면 로그인을 하지 못할 뿐만 아니라, 사용자 자신들의 계정을 완전히 삭제할 수도 없게 되므로, 이에 대한 내용을 완전하게 숙지하지 못한 경우, 기본 설정을 그대로 두는 것이 안전합니다.</p>';
 $string['createpassword'] = '암호를 만들고 사용자에게 통지';
-$string['createpasswordifneeded'] = '필요한 경우 암호 생성 및 이메일 전송';
+$string['createpasswordifneeded'] = '필요시 암호 생성';
 $string['emailchangecancel'] = '이메일 주소변경 취소';
 $string['emailchangepending'] = '변경 보류. {$a->preference_newemail} 로 발송된 확인 내용에 응답하기 바랍니다.';
 $string['emailnowexists'] = '최초 메일 변경 요청 이후, 누군가 여러분의 개인정보난의 이메일 주소에 대해 확인을 했습니다. 이에따라 이메일 주소 변경 요청은 기각되었읍니다만, 다른 주소를 이용하여 재 시도할 수는 있습니다.';
 $string['emailupdate'] = '이메일 주소 업데이트';
 $string['emailupdatemessage'] = '{$a->fullname} 님,
 
-{$a->site}에서 귀하의 사용자 계정에 대한 이메일 주소 변경을 요청하셨습니다. 이 변경 사항을 확인하려면 브라우저에서 다음 URL을여십시오.
-
-궁금한 점이 있으면 {$a->supportemail}에서 지원팀에 문의하십시오.
+{$a->site} 에 등록된 이메일 주소 변경을 요구하신 바 있습니다.
+확실하다면, 다음에 나오는 URL을 클릭하여 확인해주길 부탁드립니다.
 
 {$a->url}';
 $string['emailupdatesuccess'] = '사용자 <em>{$a->fullname}</em>의 이메일 주소가 <em>{$a->email}</em>로 업데이트 완료되었음';
@@ -100,7 +104,7 @@ $string['errormaxconsecutiveidentchars'] = '암호에는 최소 {$a} 개의 연�
 $string['errorminpassworddigits'] = '암호에는 최소 {$a} 개의 숫자가 포함되야 합니다.';
 $string['errorminpasswordlength'] = '암호길이는 최소 {$a} 문자 이상이라야 합니다.';
 $string['errorminpasswordlower'] = '암호에는 최소 {$a} 개의 소문자가 포함되야 합니다.';
-$string['errorminpasswordnonalphanum'] = '암호에는*, -, 또는 #과 같은 영숫자가 아닌 문자가 {$a}개 이상 있어야 합니다.';
+$string['errorminpasswordnonalphanum'] = '암호에는 최소 {$a} 개의 특수문자가 포함되야 합니다.';
 $string['errorminpasswordupper'] = '암호에는 최소 {$a} 개의 대문자가 포함되야 합니다.';
 $string['errorpasswordreused'] = '이 암호는 이전에 사용되었으며 재사용할 수 없습니다.';
 $string['errorpasswordupdate'] = '비밀번호 업데이트 오류. 비밀번호가 변경되지 않았습니다.';
@@ -122,7 +126,7 @@ $string['infilefield'] = '파일에 필요한 항목';
 $string['informminpassworddigits'] = '최소 숫자 {$a} 개';
 $string['informminpasswordlength'] = '최소 문자 {$a} 개';
 $string['informminpasswordlower'] = '최소 소문자 {$a} 개';
-$string['informminpasswordnonalphanum'] = '*, -, 또는 #와 같은 적어도 {$a}개의 영숫자가 아닌 문자';
+$string['informminpasswordnonalphanum'] = '최소 특수문자 {$a} 개';
 $string['informminpasswordreuselimit'] = '{$a}변경 후 비밀번호 재사용 가능';
 $string['informminpasswordupper'] = '최소 대문자 {$a} 개';
 $string['informpasswordpolicy'] = '암호는 {$a} 를 충족시켜야 합니다.';
@@ -142,11 +146,17 @@ $string['passwordhandling'] = '비밀번호 처리';
 $string['plaintext'] = '단순 텍스트';
 $string['pluginnotenabled'] = '인증 플러그인 \'{$a}\'은 활성화되어 있지 않습니다.';
 $string['pluginnotinstalled'] = '인증 플러그인 \'{$a}\'은 설치되어 있지 않습니다.';
-$string['potentialidps'] = '귀하의 계정을 사용하여 로그인하십시오 :';
+$string['potentialidps'] = '이전에 로그아웃한 곳과 다른 곳에서 접속을 자주하십니까?<br />다음 중 접속하는 곳의 위치를 선택하세요: ';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'CAPTCHA는 자동화된 프로그램의 남용을 방지하기 위한 것입니다. 지시에 따라 자신이 사람인지 확인합니다. 이것은 확인할 상자, 입력해야 하는 이미지에 표시된 문자 또는 선택할 이미지 세트일 수 있습니다.
+$string['recaptcha_help'] = '<h2>설명</h2>
+<p>캡차(CAPTCHA)는 사용자가 사람인지 컴퓨터인지를 구별해 낼 수 있는 프로그램입니다. 대개 스팸을 생성해내는 "봇(bots)" 혹은 자동화된 프로그램에 의해 사이트의 오용을 막기 위해 많은 웹사이트에서 캡차를 이용합니다. 어떤 컴퓨터 프로그램도 왜곡되어 있는 문서를 사람처럼 읽어내지 못하기 때문에, 봇들은 캡차에 의해 보호된 사이트를 누비고 다닐 수 없게 됩니다.</p>
 
-이미지가 무엇인지 잘 모르겠으면 다른 CAPTCHA나 오디오 CAPTCHA를 사용해 보십시오.';
+<h2>안내</h2>
+<p>상자 안에 보이는 단어를 순서에 따라 빈칸으로 구분하여 입력해 넣으세요. 이렇게 함으로서 자동화된 프로그램이 이 서비스를 오용하는 것을 막는 데 일조하게 되는 것입니다.</p>
+
+<p>만일 단어가 확실하다고 느끼지 않으시면, 가장 그럴듯한 것을 쓰던지 아니면 "또 다른 캡차 보기"를 누르시기 바랍니다. </p>
+
+<p>시력에 문제가 있으신 분들은 시각적인 도전대신, 숫자의 집합을 듣기위해 "캡차 소리 듣기"를 이용하여 입력할 수도 있습니다.</p>';
 $string['security_question'] = '보안 질문';
 $string['selfregistration'] = '자체 등록';
 $string['selfregistration_help'] = '이메일 기잔 자체 인증과 같은 인증 플러그인이 선택되면 잠재적인 사용자들이 자신을 등록하고 계정을 만들 수 있게 합니다. 이 경우 스팸을 보내는 사람들이 계정을 만들어 포럼 게시글이나 블로그 게시글을 스팸 목적으로 사용할 수 있습니다. 이러한 위험을 피하기 위해서는 자체 등록을 비활성화하거나 <em>허용된 이메일 도메인</em> 설정으로 자체등록을 제한해야 합니다.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_outline', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['nocapability'] = 'Ez dago sarbiderik laburpen-txostenera';
 $string['nologreaderenabled'] = 'Ez dago irakurlerik gaituta';
 $string['numviews'] = '{$a->distinctusers} erabiltzailek  {$a->numviews} ikusi dituzte';
 $string['outline:view'] = 'Ikusi ikastaroaren jarduera-txostena';
+$string['outline:viewuserreport'] = 'Ikusi erabiltzailearen  jarduera-txostena';
 $string['page-report-outline-index'] = 'Ikastaroko laburpen-txostena';
 $string['page-report-outline-user'] = 'Erabiltzailearen ikastaroko laburpen-txostena';
 $string['page-report-outline-x'] = 'Edozein laburpen-txosten';

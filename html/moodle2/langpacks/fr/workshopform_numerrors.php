@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredimensions'] = 'Emplacements pour {$a} assertions supplémentaires';
 $string['configgrade0'] = 'Le terme par défaut décrivant l\'évaluation négative d\'une assertion.';
 $string['configgrade1'] = 'Le terme par défaut décrivant l\'évaluation positive d\'une assertion.';
-$string['dimensioncomment'] = 'Commentaire';
 $string['dimensioncommentfor'] = 'Commentaire pour {$a}';
 $string['dimensiondescription'] = 'Description';
 $string['dimensiongrade'] = 'Note';
@@ -41,7 +40,6 @@ $string['grade1default'] = 'Oui';
 $string['grademapping'] = 'Tableau de correspondance des notes';
 $string['maperror'] = 'Le nombre d\'erreurs pondéré est inférieur ou égal à';
 $string['mapgrade'] = 'Note pour le travail remis';
-$string['percents'] = '{$a} %';
 $string['pluginname'] = 'Nombre d\'erreurs';
 $string['privacy:export:metadata:map'] = 'Si le nombre pondéré des erreurs atteint {$a->nonegative}, la note est alors de {$a->grade} pour-cents.';
 $string['privacy:metadata'] = 'Le plugin Nombre d\'erreurs n\'enregistre que des informations sur le formulaire d\'évaluation. Les données personnelles récoltées sont enregistrées par le plugin Atelier lui-même et sont annexées aux évaluations exportées.';

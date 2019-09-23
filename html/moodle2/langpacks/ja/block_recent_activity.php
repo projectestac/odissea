@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_recent_activity', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   block_recent_activity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cleanuptask'] = '最近の活動ブロックのクリーンアップタスク';
 $string['pluginname'] = '最近の活動';
 $string['privacy:metadata'] = '最近の活動ブロックにはMoodle内で保存されたデータのキャッシュを含みます。';
 $string['privacy:metadata:block_recent_activity'] = '最近の教師の活動の一時ログです。2日後に削除されます。';

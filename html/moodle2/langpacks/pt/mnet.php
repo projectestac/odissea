@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mnet', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,7 @@ $string['applicationtype'] = 'Tipo da aplicação';
 $string['authfail_nosessionexists'] = 'A autorização falhou: a sessão mnet não existe.';
 $string['authfail_sessiontimedout'] = 'A autorização falhou: o tempo da sessão mnet expirou.';
 $string['authfail_usermismatch'] = 'A autorização falhou: o utilizador não foi reconhecido.';
-$string['authmnetdisabled'] = 'O módulo de autenticação da rede Moodle está <strong>desativado</strong>.';
+$string['authmnetdisabled'] = 'O módulo de autenticação Rede Moodle está <strong>desativado</strong>.';
 $string['badcert'] = 'Este certificado não é válido.';
 $string['certdetails'] = 'Detalhe do certificado';
 $string['configmnet'] = 'A Rede Moodle permite a comunicação entre este servidor e outros servidores e serviços.';
@@ -130,14 +130,14 @@ $string['methodsignature'] = 'Assinatura do método para {$a}';
 $string['mnet'] = 'Rede Moodle';
 $string['mnet_concatenate_strings'] = 'Concatenar (até) 3 strings e devolver o resultado';
 $string['mnetdisabled'] = 'A Rede Moodle está <strong>desativada</strong>.';
-$string['mnetidprovider'] = 'Fornecedor de identidade para a rede Moodle';
+$string['mnetidprovider'] = 'Fornecedor de identidade para a Rede Moodle';
 $string['mnetidproviderdesc'] = 'Pode utilizar esta funcionalidade para obter uma hiperligação para iniciar sessão. Para isso, deverá indicar o e-mail que corresponda aos dados de acesso que utilizou para se autenticar.';
 $string['mnetidprovidermsg'] = 'Deverá poder autenticar-se no seu fornecedor {$a}.';
 $string['mnetidprovidernotfound'] = 'Não foi possível encontrar mais informação.';
 $string['mnetpeers'] = 'Pares';
 $string['mnetservices'] = 'Serviços';
 $string['mnet_session_prohibited'] = 'Utilizadores do seu servidor doméstico não têm permissão para navegar para {$a}.';
-$string['mnetsettings'] = 'Definições da rede Moodle';
+$string['mnetsettings'] = 'Configurações da Rede Moodle';
 $string['moodle_home_help'] = 'O caminho para a página principal do Moodle no servidor externo. Exemplo: /moodle/';
 $string['name'] = 'Nome';
 $string['net'] = 'Rede';
@@ -162,7 +162,7 @@ $string['notBASE64'] = 'Esta string não está com formato de codificação Base
 $string['notenoughidpinfo'] = 'O seu fornecedor de identidade não está a fornecer informação suficiente para que seja possível criar a sua conta localmente.';
 $string['not_in_range'] = 'O endereço de IP &nbsp;<code>{$a}</code>&nbsp; não representa um servidor válido de confiança.';
 $string['notinxmlrpcserver'] = 'Tentar aceder ao cliente externo da Rede Moodle, mas não durante a execução XMLRPC do servidor';
-$string['notmoodleapplication'] = 'AVISO: Esta não é uma aplicação Moodle, pelo que alguns métodos de inspeção podem não funcionar corretamente.';
+$string['notmoodleapplication'] = 'AVISO: Esta não é uma Aplicação móvel Moodle, pelo que alguns métodos de inspeção podem não funcionar corretamente.';
 $string['notPEM'] = 'Esta chave não pode ser utilizada porque não está em formato PEM.';
 $string['notpermittedtojump'] = 'Não tem permissão para começar uma sessão remota a partir deste hub Moodle.';
 $string['notpermittedtojumpas'] = 'Não pode começar uma sessão remota enquanto estiver autenticado como outro utilizador.';
@@ -185,7 +185,7 @@ $string['publickey'] = 'Chave pública';
 $string['publickey_help'] = 'A chave pública é obtida automaticamente a partir do servidor remoto.';
 $string['publickeyrequired'] = 'Deve inserir uma chave pública';
 $string['publish'] = 'Publicar';
-$string['reallydeleteserver'] = 'Tem a certeza de que pretende eliminar o servidor';
+$string['reallydeleteserver'] = 'Tem a certeza de que pretende eliminar o servidor?';
 $string['receivedwarnings'] = 'Foram recebidos os seguintes avisos';
 $string['recordnoexists'] = 'O registo não existe.';
 $string['reenableserver'] = 'Não – Selecione esta opção para reativar este servidor.';
@@ -229,8 +229,8 @@ $string['sslverification_help'] = 'Esta opção permite configurar o nível de s
 * Verificar apenas o servidor: Valida o domínio do certificado SSL
 * Verificar servidor e pares (recomendado): Valida o domínio e a origem do certificado SSL';
 $string['ssoaccesscontrol'] = 'Controlo de acessos SSO';
-$string['ssoacldescr'] = 'Esta página permite configurar o acesso de utilizadores específicos provenientes de servidores externos pertencentes à Rede Moodle. Esta configuração é importante quando são  disponibilizados serviços de SSO a utilizadores externos.É possível configurar a permissão dos utilizadores <em>locais</em> deste site navegarem para outros servidores da rede Moodle utilizando o sistema de papéis para lhes dar a permissão <em>mnetlogintoremote</em>.';
-$string['ssoaclneeds'] = 'Para que esta opção funcione, tem de ter a Rede Moodle ativa, além do módulo de autenticação rede Moodle, com a opção de adicionar utilizadores automaticamente ligada.';
+$string['ssoacldescr'] = 'Esta página permite configurar o acesso de utilizadores específicos provenientes de servidores externos pertencentes à Rede Moodle. Esta configuração é importante quando são  disponibilizados serviços de SSO a utilizadores externos.É possível configurar a permissão dos utilizadores <em>locais</em> deste site navegarem para outros servidores da Rede Moodle utilizando o sistema de papéis para lhes dar a permissão <em>mnetlogintoremote</em>.';
+$string['ssoaclneeds'] = 'Para que esta opção funcione, tem de ter a Rede Moodle ativa, além do módulo de autenticação Rede Moodle, com a opção de adicionar utilizadores automaticamente ligada.';
 $string['strict'] = 'Rigoroso';
 $string['subscribe'] = 'Subscrever';
 $string['system'] = 'Sistema';
@@ -243,7 +243,7 @@ $string['transport_help'] = 'Estas opções são recíprocas, de modo que só lh
 $string['trustedhosts'] = 'Servidores XML-RPC';
 $string['trustedhostsexplain'] = '<p>O mecanismo de servidores de confiança permite que determinadas "máquinas" executem chamadas através de XML-RPC para qualquer parte da API do Moodle.
 Esta opção está disponível para que scripts controlem o comportamento de Moodle e pode ser muito perigoso ativá-la. Em caso de dúvidas, mantenha-a desativada.</p>
-Esta opção <strong>não</strong> é necessária para o funcionamento da rede Moodle.</p>
+Esta opção <strong>não</strong> é necessária para o funcionamento da Rede Moodle.</p>
 <p>Para a ativar, introduza uma lista de endereços ou redes IP, um em cada linha.
 Alguns exemplos: </p>localhost:<br />127.0.0.1<br />localhost (com um bloco de rede):<br />127.0.0.1/32<br />
 Apenas o servidor com endereço IP 192.168.0.7:<br />192.168.0.7/32<br />

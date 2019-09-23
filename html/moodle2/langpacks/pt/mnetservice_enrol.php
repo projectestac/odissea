@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mnetservice_enrol', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   mnetservice_enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['availablecourseson'] = 'Disciplinas disponíveis em {$a}';
 $string['availablecoursesonnone'] = 'Servidor remoto <a href="{$a->hosturl}">{$a->hostname}</a> não tem nenhumas disciplinas para os utilizadores.';
 $string['clientname'] = 'Cliente de inscrição remota';
-$string['clientname_help'] = 'Inscreve e anule a inscrição de utilizadores na sua instalação Moodle nos servidores Moodle que permitam que o faça através do módulo de inscrição na rede Moodle.';
+$string['clientname_help'] = 'Inscreve e anule a inscrição de utilizadores na sua instalação Moodle nos servidores Moodle que permitam que o faça através do módulo de inscrição na Rede Moodle.';
 $string['editenrolments'] = 'Editar inscrições';
 $string['hostappname'] = 'Aplicação';
 $string['hostname'] = 'Nome do servidor';

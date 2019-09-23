@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_statistics', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,6 +103,8 @@ $string['quizname'] = '小テスト名';
 $string['quizoverallstatistics'] = '小テスト全体の統計';
 $string['quizstructureanalysis'] = '問題構造分析';
 $string['random_guess_score'] = '当てずっぽうの評点';
+$string['rangebetween'] = '{$a->min} − {$a->max}';
+$string['rangeofvalues'] = '問題の統計範囲';
 $string['recalculatenow'] = '再計算する';
 $string['reportsettings'] = '統計計算設定';
 $string['response'] = '解答';
@@ -118,4 +120,5 @@ $string['statisticsreportgraph'] = '問題ポジションの統計';
 $string['statistics:view'] = '統計レポートを表示する';
 $string['statsfor'] = '小テスト統計 ({$a})';
 $string['variant'] = '変形';
+$string['viewanalysis'] = '詳細を表示する';
 $string['whichtries'] = '解答分析対象';

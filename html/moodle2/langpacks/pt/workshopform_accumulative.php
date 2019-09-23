@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,10 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['absent'] = 'Ausente';
 $string['addmoredimensions'] = 'Adicionar mais {$a} critérios';
 $string['correct'] = 'Correto';
-$string['dimensioncomment'] = 'Comentário';
 $string['dimensioncommentfor'] = 'Comentário para {$a}';
 $string['dimensiondescription'] = 'Descrição';
-$string['dimensiongrade'] = 'Nota';
 $string['dimensiongradefor'] = 'Nota para {$a}';
 $string['dimensionmaxgrade'] = 'Nota máxima/Escala';
 $string['dimensionnumber'] = 'Critério {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability_completion', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   availability_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,10 +36,11 @@ $string['option_fail'] = 'ha d\'estar completada amb qualificació suspesa';
 $string['option_incomplete'] = 'no ha d\'estar marcada com a completada';
 $string['option_pass'] = 'ha d\'estar completada amb qualificació aprovada';
 $string['pluginname'] = 'Restricció per compleció d\'activitat';
-$string['requires_complete'] = 'L\'activitat <strong>{$a}</strong> està marcada com a completada';
-$string['requires_complete_fail'] = 'L\'activitat <strong>{$a}</strong> està completada i suspesa';
-$string['requires_complete_pass'] = 'L\'activitat <strong>{$a}</strong> està completada i aprovada';
-$string['requires_incomplete'] = 'L\'activitat <strong>{$a}</strong> està incompleta';
-$string['requires_not_complete_fail'] = 'L\'activitat <strong>{$a}</strong> no està completa i està suspesa';
-$string['requires_not_complete_pass'] = 'L\'activitat <strong>{$a}</strong>  no està completa però està aprovada';
+$string['requires_complete'] = 'L\'activitat <strong>{$a}</strong>
+estigui marcada com a completada';
+$string['requires_complete_fail'] = 'L\'activitat <strong>{$a}</strong> estigui completada i suspesa';
+$string['requires_complete_pass'] = 'L\'activitat <strong>{$a}</strong> estigui completada i aprovada';
+$string['requires_incomplete'] = 'L\'activitat <strong>{$a}</strong> estigui incompleta';
+$string['requires_not_complete_fail'] = 'L\'activitat <strong>{$a}</strong> estigui incompleta i suspesa';
+$string['requires_not_complete_pass'] = 'L\'activitat <strong>{$a}</strong> estigui incompleta però aprovada';
 $string['title'] = 'Compleció de l\'activitat';

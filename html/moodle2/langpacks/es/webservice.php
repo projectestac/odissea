@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'webservice', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -144,8 +144,11 @@ $string['postrestparam'] = 'Código PHP para REST (POST request)';
 $string['potusers'] = 'No hay usuarios autorizados';
 $string['potusersmatching'] = 'No hay usuarios autorizados que coincidan';
 $string['print'] = 'Imprimir todo';
+$string['privacy:metadata:serviceusers'] = 'Una lista de usuarios que pueden usar un determinado servicio externo';
 $string['privacy:metadata:serviceusers:iprestriction'] = 'IP restringidas para utilizar el servicio';
+$string['privacy:metadata:serviceusers:timecreated'] = 'La fecha en la cual fue creado el registro';
 $string['privacy:metadata:serviceusers:userid'] = 'El ID del usuario';
+$string['privacy:metadata:serviceusers:validuntil'] = 'La fecha hasta la que es válida la autorización';
 $string['privacy:metadata:tokens'] = 'Un registro de fichas (tokens) para interactuar con Moodle mediante servicios web o aplicaciones móviles.';
 $string['privacy:metadata:tokens:creatorid'] = 'El ID del usuario que creó el la ficha (token)';
 $string['privacy:metadata:tokens:iprestriction'] = 'IP restringidas para usar esta ficha (token)';
@@ -186,6 +189,7 @@ $string['service'] = 'Servicio';
 $string['servicehelpexplanation'] = 'Un servicio es un conjunto de funciones. A dicho servicio pueden acceder todos los usuarios o sólo algunos especificados.';
 $string['servicename'] = 'Nombre del servicio';
 $string['servicenotavailable'] = 'El servicio Web no está disponible (no existe o puede estar deshabilitado)';
+$string['servicerequireslogin'] = 'El servicio web no está disponible. (Se ha salido de la sesión o ha expirado).';
 $string['servicesbuiltin'] = 'Servicios incluidos';
 $string['servicescustom'] = 'Servicios personalizados';
 $string['serviceusers'] = 'Usuarios autorizados';

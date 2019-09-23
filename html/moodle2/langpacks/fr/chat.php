@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'chat', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,8 +66,8 @@ $string['errornousers'] = 'Il n\'y a pas d\'utilisateur';
 $string['eventmessagesent'] = 'Message envoyé';
 $string['eventsessionsviewed'] = 'Sessions consultées';
 $string['explaingeneralconfig'] = 'Ces réglages sont <strong>toujours</strong> utilisés';
-$string['explainmethoddaemon'] = 'Ces réglages sont effectifs <strong>uniquement</strong> si vous avez choisi la méthode de chat « Utilisation d\'un démon »';
-$string['explainmethodnormal'] = 'Ces réglages sont effectifs <strong>uniquement</strong> si vous avez choisi la méthode de chat « Méthode normale »';
+$string['explainmethoddaemon'] = 'Ces réglages ne sont effectifs que si vous avez choisi la méthode de chat « Démon de chat »';
+$string['explainmethodnormal'] = 'Ces réglages ne sont effectifs que si vous avez choisi la méthode de chat « Normal ».';
 $string['generalconfig'] = 'Configuration générale';
 $string['idle'] = 'En attente';
 $string['indicator:cognitivedepth'] = 'Chat : aspect cognitif';
@@ -86,9 +86,9 @@ $string['messageexit'] = '{$a} a quitté ce chat';
 $string['messages'] = 'Messages';
 $string['messageyoubeep'] = 'Vous avez bippé {$a}';
 $string['method'] = 'Méthode du chat';
-$string['methodajax'] = 'Méthode AJAX';
-$string['methoddaemon'] = 'Utilisation d\'un démon';
-$string['methodnormal'] = 'Méthode normale';
+$string['methodajax'] = 'AJAX';
+$string['methoddaemon'] = 'Démon de chat';
+$string['methodnormal'] = 'Normal';
 $string['modulename'] = 'Chat';
 $string['modulename_help'] = 'Le module d\'activité chat permet aux participants d\'avoir une discussion synchrone en temps réel, en mode texte.
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_glossary', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filter_glossary', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   filter_glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Автоматическое создание ссылок на записи модуля «Глоссарий»';
+$string['glossarycategory'] = '{$a->glossary}: Категория {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
 $string['privacy:metadata'] = 'Плагин автосвязывания глоссария не хранит никаких персональных данных.';

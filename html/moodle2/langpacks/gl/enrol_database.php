@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_database', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,7 +72,7 @@ $string['remoterolefield_desc'] = 'O nome do campo na táboa remota que se está
 $string['remoteuserfield'] = 'Campo de usuario remoto';
 $string['remoteuserfield_desc'] = 'O nome do campo na táboa remota que se está a usar para casar entradas na táboa de usuario.';
 $string['settingsheaderdb'] = 'Conexión coa base de datos externa';
-$string['settingsheaderlocal'] = 'Mapeo de campo local';
+$string['settingsheaderlocal'] = 'Asignación de campo local';
 $string['settingsheadernewcourses'] = 'Creación de novos cursos';
 $string['settingsheaderremote'] = 'Sincronizar a matrícula remota';
 $string['templatecourse'] = 'Modelo de novo curso';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_shibboleth', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_shib_auth_logo'] = 'Logo für Authentifizierungsmethode';
+$string['auth_shib_auth_logo_description'] = 'Stellen Sie ein Logo für die Authentifizierungsmethode \'Shibboleth\' bereit, die Ihren Nutzer/innen vertraut vorkommt. Dies könnte das Logo  Ihrer Shibboleth-Föderation sein, z.B. <tt> SWITCHaai Login </tt> oder <tt> InCommon Login </tt> oder ähnlich.';
 $string['auth_shib_auth_method'] = 'Bezeichnung der Authentifizierungemethode';
 $string['auth_shib_auth_method_description'] = 'Vergeben Sie für die verwendete Shibboleth-Methode einen Titel, der den Nutzern vertraut ist, z.B. der Titel des Shibboleth-Verbunds (<tt>SWITCHaai Login</TT> oder <tt>Gemeinsamer Login</tt>.';
 $string['auth_shibbolethdescription'] = 'Mit diesem Verfahren können Sie die Verbindung zu einem bestehenden Shibboleth Server herstellen, um  Zugänge zu prüfen und anzulegen.';
@@ -33,7 +35,7 @@ $string['auth_shibboleth_login'] = 'Shibboleth Login';
 $string['auth_shibboleth_login_long'] = 'Login für Moodle über Shibboleth';
 $string['auth_shibboleth_manual_login'] = 'Manueller Login';
 $string['auth_shibboleth_select_member'] = 'Ich bin Mitglied von ...';
-$string['auth_shibboleth_select_organization'] = 'Wählen Sie aus dem Aufklappmenü die Organisation aus, der Sie angehören:';
+$string['auth_shibboleth_select_organization'] = 'Zur Authentifizierung über Shibboleth wählen Sie Ihre Organisation aus dem Dropdown-Menü aus:';
 $string['auth_shib_changepasswordurl'] = 'URL zur Kennwortänderung';
 $string['auth_shib_contact_administrator'] = 'Falls Sie nicht dieser Organisation zugeordnet wurden und Kurszugriff benötigen, nehmen Sie bitte mit dem <a href="mailto:{$a}">Moodle Administrator</a> Kontakt auf.';
 $string['auth_shib_convert_data'] = 'Datenmodifikation APU';

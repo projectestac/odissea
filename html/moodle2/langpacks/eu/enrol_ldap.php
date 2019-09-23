@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_ldap', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['bind_pw_key'] = 'Pasahitza';
 $string['bind_settings'] = 'Bind ezarpenak';
 $string['cannotcreatecourse'] = 'Ezin izan da ikastaroa sortu: LDAP erregistroan beharrezko datuak falta dira!';
 $string['cannotupdatecourse'] = 'Ezin izan da ikastaroa eguneratu: LDAP erregistroan beharrezko datuak falta dira! Ikastaroaren ID zenbakia: \'{$a->idnumber}\'';
-$string['cannotupdatecourse_duplicateshortname'] = 'Ezin izan da ikastaroa eguneratu: Bikoiztutako izen laburra. Albo batera utzi da \'{$a->idnumber}\' ID zenbakia duen ikastaroa...';
+$string['cannotupdatecourse_duplicateshortname'] = 'Ezin izan da ikastaroa eguneratu: Bikoiztutako izen laburra. Alde batera utzi da \'{$a->idnumber}\' ID zenbakia duen ikastaroa...';
 $string['category'] = 'Era automatikoan sortutako ikastaroetarako kategoria';
 $string['category_key'] = 'Kategoria';
 $string['contexts'] = 'LDAP kontestuak';
@@ -99,7 +99,7 @@ $string['nested_groups_settings'] = 'Habiaratutako taldeen ezarpenak';
 $string['nosuchrole'] = 'Hurrengo rola ez da existitzen: \'{$a}\'';
 $string['objectclass'] = 'Ikastaroak bilatzeko erabilitako objectClass. Ohikoena \'posixGroup\'.';
 $string['objectclass_key'] = 'Objektu-mota';
-$string['ok'] = 'ONDO!';
+$string['ok'] = 'Ados!';
 $string['opt_deref'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu bilaketetan ezinezak nola kudeatuko diren. Aukeratu hurengo balioetako bat: \'Ez\' (LDAP_DEREF_NEVER) edo \'Bai\' (LDAP_DEREF_ALWAYS)';
 $string['opt_deref_key'] = 'Erreferentziazko ezizenak';
 $string['phpldap_noextension'] = '<em>Dirudienez PHPko LDAP modulua ez dago instalatuta. Mesedez ziurtatu instalatuta eta gaituta dagoela matrikulazio plugin hau erabili nahi baduzu</em>';
@@ -108,14 +108,14 @@ $string['pluginname_desc'] = '<p>LDAP zerbitzaria erabil dezakezu matrikulazioak
 <p>Plugin hau LDAPn talde berriak agertzen direnean ikastaro berriak era automatikoan sortzeko ere zehaztu ahal da.</p>';
 $string['pluginnotenabled'] = 'Plugina ez dago gaituta!';
 $string['privacy:metadata'] = 'LDAP bidezko matrikulazio-pluginak ez du datu pertsonalik biltzen.';
-$string['role_mapping'] = '<p>LDAP bidez esleitu nahi duzun rol bakoitzeko, zehaztu beharko duzu non dagoen kokatuta rol horren ikastaroetako taldeetako testuinguruen zerrenda. Banadu testuinguruak \';\' karakterea erabilz.</p><p>Zure LDAP zerbitzariak taldeetako kideak gordetzeko erabiltzen duen atributua ere zehaztu beharko duzu. Normalean \'member\' edo \'memberUid\'</p>';
+$string['role_mapping'] = '<p>Rol bakoitzeko, ikastaroak adierazten dituzten taldeen kokapenaren LDAP testuinguruak zehaztu behar dituzu. Banatu testuinguruak \';\' karakterea erabiliz.</p><p>Zure LDAP zerbitzariak taldeetako kideak gordetzeko erabiltzen duen atributua ere zehaztu beharko duzu. Hau normalean \'member\' edo \'memberUid\'.</p>';
 $string['role_mapping_attribute'] = 'LDAP \'member\' atributua {$a}-(r)entzat';
 $string['role_mapping_context'] = 'LDAP testuinguruak {$a}-(r)entzat';
 $string['role_mapping_key'] = 'Lotu rolak LDAPetik';
 $string['roles'] = 'Rolen lotura';
 $string['server_settings'] = 'LDAP zerbitzariaren ezarpenak';
 $string['synccourserole'] = '== \'{$a->idnumber}\' ikastaroaren \'{$a->role_shortname}\' rola sinkronizatzen';
-$string['syncenrolmentstask'] = 'Sinkronizatu matrikulazio-zereginak';
+$string['syncenrolmentstask'] = 'Sinkronizatu LDAP matrikulazioak zeregina';
 $string['template'] = 'Aukerakoa: era automatikoan sortutako ikastaroak ikastaro-txantiloi batetik kopia ditzakete beren zehaztasunak.';
 $string['template_key'] = 'Txantiloia';
 $string['unassignrole'] = '\'{$a->user_username}\' erabiltzaileari \'{$a->role_shortname}\' rola kentzen \'{$a->course_shortname}\' ikastarotik (id {$a->course_id})';

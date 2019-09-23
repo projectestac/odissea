@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'competency', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'S\'ha configurat de forma manual l
 $string['evidence_manualoverrideinplan'] = 'S\'ha configurat de forma manual la qualificació de la competència al pla d\'aprenentatge «{$a}».';
 $string['invalidevidencedesc'] = 'La descripció de l\'evidència no és vàlida.';
 $string['invalidgrade'] = 'La qualificació no és vàlida';
-$string['invalidpersistent'] = 'Persistent no vàlid';
 $string['invalidpersistenterror'] = 'Error: {$a}';
 $string['invalidplan'] = 'El pla d\'aprenentatge no és vàlid.';
 $string['invalidtaxonomy'] = 'Taxonomia invàlida: {$a}';

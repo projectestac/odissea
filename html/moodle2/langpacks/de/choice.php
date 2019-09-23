@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choice', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,7 +66,7 @@ $string['eventanswersubmitted'] = 'Abstimmung durchgeführt';
 $string['eventanswerupdated'] = 'Abstimmung aktualisiert';
 $string['eventreportdownloaded'] = 'Abstimmungsübersicht heruntergeladen';
 $string['eventreportviewed'] = 'Abstimmungsübersicht angezeigt';
-$string['expired'] = 'Diese Abstimmung ist seit {$a} beendet. Eine Auswahl ist nicht mehr möglich.';
+$string['expired'] = 'Diese Abstimmung ist seit {$a} beendet.';
 $string['full'] = '(Nicht verfügbar)';
 $string['havetologin'] = 'Sie müssen angemeldet sein, um sich an der Abstimmung beteiligen zu können.';
 $string['includeinactive'] = 'Einschließlich Ergebnissen von inaktiven/gesperrten Nutzer/innen';
@@ -78,7 +78,9 @@ $string['limit'] = 'Obergrenze';
 $string['limitanswers'] = 'Anzahl der Antworten bei den Abstimmungoptionen beschränken';
 $string['limitanswers_help'] = 'Diese Option setzt die maximale Anzahl von möglichen Stimmabgaben für die betreffende Abstimmoption. Sobald diese Obergrenze erreicht ist, kann sich niemand mehr für diese Abstimmoption entscheiden.
 
-Wenn Obergrenzen deaktiviert sind, gibt es keine Beschränkungen bei der Abstimmung.';
+Wenn Sie diese Aktivität im Gruppenmodus nutzen, gilt dieses Limit pro Gruppe. Wenn die Obergrenze beispielsweise auf 5 gesetzt wird, dann können jeweils 5 Mitglieder einer Gruppe sich für diese Option entscheiden. Wenn es 3 Gruppen gibt, würde das bedeuten, dass bis zu 5 x 3 = 15 Teilnehmende diese Option wählen könnten.
+
+Wenn die Obergrenzen deaktiviert sind, gibt es keine Beschränkungen bei der Abstimmung.';
 $string['limitno'] = 'Obergrenze {no}';
 $string['modulename'] = 'Abstimmung';
 $string['modulename_help'] = 'Mit der Abstimmung können Sie im Kurs eine Frage mit vordefinierten Antwortmöglichkeiten stellen.
@@ -114,6 +116,11 @@ $string['publishafteranswer'] = 'Nach eigener Stimmabgabe';
 $string['publishafterclose'] = 'Nach Abstimmungsende';
 $string['publishalways'] = 'Ergebnisse immer zeigen';
 $string['publishanonymous'] = 'Ergebnisse ohne Namen';
+$string['publishinfoanonafter'] = 'Ergebnisse werden ohne Namensnennung nach Ihrer Antwort veröffentlicht.';
+$string['publishinfoanonclose'] = 'Ergebnisse werden ohne Namensnennung nach Abschluss der Aktivität veröffentlicht.';
+$string['publishinfofullafter'] = 'Ergebnisse werden vollständig mit Namensnennung nach Ihrer Antwort veröffentlicht.';
+$string['publishinfofullclose'] = 'Ergebnisse werden vollständig mit Namensnennung nach Abschluss der Aktivität veröffentlicht.';
+$string['publishinfonever'] = 'Die Ergebnisse werden nach Ihrer Antwort nicht veröffentlicht.';
 $string['publishnames'] = 'Ergebnisse mit Namen';
 $string['publishnot'] = 'Keine Ergebnisse veröffentlichen';
 $string['removemychoice'] = 'Meine Auswahl löschen';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['deleteinstanceconfirm'] = 'Πρόκειται να διαγράψετε
 
 Είστε βέβαιοι ότι θέλετε να συνεχίσετε;';
 $string['deleteinstanceconfirmself'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε το στιγμιότυπο «{$a->name}» που σας δίνει πρόσβαση σε αυτό το μάθημα; Είναι πιθανό να μην έχετε πρόσβαση σε αυτό το μάθημα αν συνεχίσετε.';
-$string['deleteinstancenousersconfirm'] = 'Πρόκειται να διαγράψετε την μέθοδο εγγραφής "{$a->name}". Είστε βεβαιοι  ότι θέλετε να συνεχίσετε;';
+$string['deleteinstancenousersconfirm'] = 'Πρόκειται να διαγράψετε την μέθοδο εγγραφής «{$a->name}». Είστε βεβαιοι ότι θέλετε να συνεχίσετε;';
 $string['disableinstanceconfirmself'] = 'Είστε βέβαιοι ότι θέλετε να απενεργοποιήσετε το στιγμιότυπο «{$a->name}» που σας δίνει πρόσβαση σε αυτό το μάθημα; Είναι πιθανό να μην έχετε πρόσβαση σε αυτό το μάθημα αν συνεχίσετε.';
 $string['durationdays'] = '{$a} ημέρες';
 $string['editenrolment'] = 'Επεξεργασία εγγραφής';
@@ -63,11 +63,11 @@ $string['enrolmentnewuser'] = 'Ο μαθητής {$a->user} έκανε εγγρ�
 $string['enrolmentoptions'] = 'Επιλογές εγγραφής';
 $string['enrolments'] = 'Εγγραφές';
 $string['enrolnotpermitted'] = 'Δεν έχετε δικαίωμα ή δεν επιτρέπεται να εγγράψετε κάποιον σε αυτό το μάθημα';
-$string['enrolperiod'] = 'Διάρκεια εγγραφής';
-$string['enroltimecreated'] = 'Δημιουργία εγγραφής';
-$string['enroltimeend'] = 'Λήξη εγγραφής';
-$string['enroltimeendinvalid'] = 'Η ημερομηνία λήξης της εγγραφής πρέπει να είναι μετά την ημερομηνία έναρξης εγγραφής';
-$string['enroltimestart'] = 'Έναρξη εγγραφής';
+$string['enrolperiod'] = 'Διάρκεια εγγραφών';
+$string['enroltimecreated'] = 'Δημιουργία εγγραφής (ώρα)';
+$string['enroltimeend'] = 'Λήξη εγγραφών';
+$string['enroltimeendinvalid'] = 'Η ημερομηνία λήξης εγγραφών πρέπει να είναι μετά την ημερομηνία έναρξης';
+$string['enroltimestart'] = 'Έναρξη εγγραφών';
 $string['enrolusage'] = 'Στιγμιότυπα / εγγραφές';
 $string['enrolusers'] = 'Εγγραφή χρηστών';
 $string['enrolxusers'] = 'Εγγραφή {$a} χρηστών';
@@ -155,7 +155,7 @@ $string['unenrolconfirm'] = 'Είστε βέβαιοι ότι θέλετε να 
 $string['unenrolme'] = 'Ακύρωση της εγγραφής μου στο μάθημα {$a}';
 $string['unenrolnotpermitted'] = 'Δεν έχετε δικαίωμα ή δεν μπορείτε να ακυρώσετε την εγγραφή αυτού του χρήστη σε αυτό το μάθημα.';
 $string['unenrolroleusers'] = 'Ακύρωση εγγραφής χρηστών';
-$string['uninstallmigrating'] = 'Μετεγκατάσταση (μεταφορά/μετατροπή) "{$a}" εγγραφών';
+$string['uninstallmigrating'] = 'Μετεγκατάσταση (μεταφορά/μετατροπή) «{$a}» εγγραφών';
 $string['unknowajaxaction'] = 'Έγινε αίτημα για άγνωστη ενέργεια';
 $string['unlimitedduration'] = 'Χωρίς περιορισμό';
 $string['userremovedfromselectiona'] = 'Ο χρήστης «{$a}» αφαιρέθηκε από την επιλογή.';

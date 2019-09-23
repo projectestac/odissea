@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_ldap', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,13 +52,13 @@ $string['auth_ldap_expireattr_key'] = '到期属性';
 $string['auth_ldapextrafields'] = '这些字段是可选的。您可以用这里指定的<b>LDAP 字段</b>中的信息预先填充Moodle的用户字段。 <p>如果此处留空，将使用Moodle系统默认值。</p><p>无论以上何种情况，用户在登录之后都可以修改这些字段。</p>';
 $string['auth_ldap_graceattr_desc'] = '可选: 覆盖宽限登录属性';
 $string['auth_ldap_gracelogin_key'] = '宽限登录属性';
-$string['auth_ldap_gracelogins_desc'] = '激活 LDAP 宽限登录的支持。在密码过期后，宽限登录计数值为0前，用户仍可以登录。激活这个选项后，当密码过期时将显示宽限登录信息。';
+$string['auth_ldap_gracelogins_desc'] = '激活 LDAP 宽限登录的支持。在密码过期后，宽限登录计数值为0前，用户仍可以登录。激活此选项后，当密码过期时将显示宽限登录信息。';
 $string['auth_ldap_gracelogins_key'] = '宽限登录';
 $string['auth_ldap_groupecreators'] = '哪些组或情景的成员允许创建组。多个组使用“;”分隔，例如“cn=teachers,ou=staff,o=myorg”';
 $string['auth_ldap_groupecreators_key'] = '组创建者';
 $string['auth_ldap_host_url'] = '以网址形式指定 LDAP 主机，类似于：“ldap://ldap.myorg.com/”或“ldaps://ldap.myorg.com/”。多个服务器之间用“;”分隔来获得故障转移支持。';
 $string['auth_ldap_host_url_key'] = '主机 URL';
-$string['auth_ldap_ldap_encoding'] = '指定 LDAP 服务器的编码方式。一般是 utf-8。MS AD V2 使用默认的平台编码，如 cp1252、cp1250 等。';
+$string['auth_ldap_ldap_encoding'] = 'LDAP 服务器使用的编码方式。通常是 utf-8。如选择LDAP v2, Active Directory 将使用其已配置编码方式，如cp1252或cp1250';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP 编码方式';
 $string['auth_ldap_login_settings'] = '登录设置';
 $string['auth_ldap_memberattribute'] = '可选：当用户属于某个组时，覆盖用户成员的属性。一般是“member”';
@@ -122,7 +122,7 @@ $string['didntfindexpiretime'] = 'password_expire()未找到过期时间。';
 $string['didntgetusersfromldap'] = '没有从LDAP获得任何用户——出错？——退出中';
 $string['gotcountrecordsfromldap'] = '从LDAP获得{$a}条记录';
 $string['ldapnotconfigured'] = '当前未配置LDAP 主机的 url';
-$string['morethanoneuser'] = '诡异！在LDAP中找到多于一条的用户记录。只使用第一条。';
+$string['morethanoneuser'] = '在LDAP中找到多于一条的用户记录。只使用第一条。';
 $string['needbcmath'] = '您需要安装BCMath插件才能使用活动目录中的宽限登录';
 $string['needmbstring'] = '您需要安装mbstring插件才能使用活动目录中的宽限登录';
 $string['nodnforusername'] = 'user_update_password()出错。{$a->username}没有DN';

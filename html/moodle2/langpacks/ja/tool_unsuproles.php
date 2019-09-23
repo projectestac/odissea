@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_unsuproles', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_unsuproles', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_unsuproles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmdelete'] = '本当にコンテクストレベル「 {$a->level} 」内ロール「 {$a->role} 」へのサポートされないロール割り当てすべてを削除してもよろしいですか?';
+$string['confirmdelete'] = '本当にコンテクストレベル「 {$a->level} 」内のロール「 {$a->role} 」へのサポートされないロール割り当てすべてを削除してもよろしいですか?';
 $string['contextlevel'] = 'コンテクストレベル';
 $string['count'] = 'カウント';
 $string['noprolbems'] = 'サポートされないロール割り当ては見つかりませんでした。';

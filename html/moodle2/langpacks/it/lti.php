@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lti', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -479,7 +479,7 @@ Se due configurazioni di tool si riferiscono ad uno stesso dominio, verrà utili
 E\' anche possibile inserire un URL cartridge e i dettagli del tool saranno compilati automaticamente.';
 $string['toolurlplaceholder'] = 'URL del tool';
 $string['typename'] = 'Nome del tool';
-$string['typename_help'] = 'Il nome del tool è consente di identificare il provider del tool in Moodle. Il nome sarà visibile ai docenti quando aggiungono i tool nei corsi.';
+$string['typename_help'] = 'Il nome del tool consente di identificare il provider del tool in Moodle. Il nome sarà visibile ai docenti quando aggiungono i tool nei corsi.';
 $string['types'] = 'Tipi';
 $string['unabletocreatetooltype'] = 'Non è possibile creare il tool';
 $string['unabletofindtooltype'] = 'Non è possibile trovare un tool per';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_outline', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['nocapability'] = 'Impossible d\'accéder au rapport résumé de l\'util
 $string['nologreaderenabled'] = 'Aucun lecteur de journaux activé';
 $string['numviews'] = '{$a->numviews} consultations par {$a->distinctusers} utilisateurs';
 $string['outline:view'] = 'Consulter le rapport d\'activité du cours';
+$string['outline:viewuserreport'] = 'Consulter le rapport d\'activité de l\'utilisateur';
 $string['page-report-outline-index'] = 'Rapport résumé de cours';
 $string['page-report-outline-user'] = 'Rapport utilisateur de résumé de cours';
 $string['page-report-outline-x'] = 'Tout rapport résumé';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'grading', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['activemethodinfonone'] = 'There is no advanced grading method selected 
 $string['changeactivemethod'] = 'Change active grading method to';
 $string['clicktoclose'] = 'click to close';
 $string['exc_gradingformelement'] = 'Unable to instantiate grading form element';
-$string['formnotavailable'] = 'Advanced grading method was selected to use but the grading form is not available yet. You may need to define it first via a link in the Administration block.';
+$string['formnotavailable'] = 'An advanced grading method was selected to use but the grading form is not available yet. You may need to define it first via a link in the actions menu or administration block.';
 $string['gradingformunavailable'] = 'Please note: the advanced grading form is not ready at the moment. Simple grading method will be used until the form has a valid status.';
 $string['gradingmanagement'] = 'Advanced grading';
 $string['gradingmanagementtitle'] = 'Advanced grading: {$a->component} ({$a->area})';

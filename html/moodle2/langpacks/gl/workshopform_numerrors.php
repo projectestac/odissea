@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredimensions'] = 'Espazos en branco para {$a} asercións máis';
 $string['configgrade0'] = 'Palabra predeterminada que describe a avaliación negativa dunha aserción.';
 $string['configgrade1'] = 'Palabra predeterminada que describe a avaliación positiva dunha aserción.';
-$string['dimensioncomment'] = 'Comentario';
 $string['dimensiondescription'] = 'Descrición';
 $string['dimensiongrade'] = 'Cualificación';
 $string['dimensionnumber'] = 'Aserción {$a}';
@@ -40,5 +39,4 @@ $string['grade1default'] = 'Si';
 $string['grademapping'] = 'Táboa de asignación de cualificacións';
 $string['maperror'] = 'O número ponderado de erros é menor ou igual';
 $string['mapgrade'] = 'Cualificación para a entrega';
-$string['percents'] = '{$a} %';
 $string['pluginname'] = 'Número de erros';

@@ -111,8 +111,10 @@ class google_docs {
                     $title = $gdoc->title.'.odt';
                     $source = 'https://docs.google.com/feeds/download/documents/Export?id='.$docid.'&exportFormat=odt';
                     //***********CODI ORIGINAL
-                    //$title = $gdoc->title.'.rtf';
-                    //$source = 'https://docs.google.com/feeds/download/documents/Export?id='.$docid.'&exportFormat=rtf';
+                    /*
+                    $title = $gdoc->title.'.rtf';
+                    $source = 'https://docs.google.com/feeds/download/documents/Export?id='.$docid.'&exportFormat=rtf';
+                    */
                     //*****************FI PATCH
                     break;
                 case 'presentation':

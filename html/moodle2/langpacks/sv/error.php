@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,12 +57,12 @@ $string['cannotcreatepopupwin'] = 'Odefinierad element - kan inte skapa pop-up f
 $string['cannotcreatesitedir'] = 'Kan inte skapa webbplats-mapp. En administratör kan ändra filrättigheterna.';
 $string['cannotcreatetempdir'] = 'Det går inte att skapa en temp-katalog';
 $string['cannotcreateuploaddir'] = 'Kan inte skapa mapp. En administratör kan ändra filrättigheterna.';
-$string['cannotcustomisefiltersblockuser'] = 'Du kan inte anpassa inställningar för filter i sammanhangen för användare eller block';
+$string['cannotcustomisefiltersblockuser'] = 'Du kan inte ändra inställningar för filter i sammanhangen för användare eller block';
 $string['cannotdeletebackupids'] = 'Kunde inte raderas tidigare backuppers id.';
 $string['cannotdeletecategorycourse'] = 'Det gick inte att ta bort kursen {$a}.';
 $string['cannotdeletecategoryquestions'] = 'Det gick inte att ta bort frågor från kategorin {$a}.';
 $string['cannotdeletecourse'] = 'Du har inte tillstånd att ta bort den här kursen. ';
-$string['cannotdeletecustomfield'] = 'Fel i sb m borttagande av anpassad fältdata';
+$string['cannotdeletecustomfield'] = 'Fel i sb m borttagande av anpassade fältdata';
 $string['cannotdeletedir'] = 'Kan inte ta bort ({$a})';
 $string['cannotdeletefile'] = 'Det går inte att ta bort den här filen';
 $string['cannotdeleterole'] = 'It cannot be deleted, because {$a}';
@@ -343,7 +343,6 @@ $string['logfilenotavailable'] = 'Loggar ej tillgängliga';
 $string['loginasnoenrol'] = 'Du kan inte använda \'registrera\' eller \'avregistrera\' när Du är i en session för \'logga in som\' för kurs.';
 $string['loginasonecourse'] = 'Du har inte tillträde till den här kursen.<br/ > Du måste avsluta sessionen \'Logga in som\' innan Du kan få tillträde till någon annan kurs.';
 $string['maxareabytes'] = 'Filen är större än det kvarvarande utrymmet i den här arean.';
-$string['maxbytes'] = 'Filen är större än maximalt tillåtna storlek.';
 $string['messagingdisable'] = 'Meddelanden har inaktiverats på den här webbplatsen';
 $string['mimetexisnotexist'] = 'Ditt system är inte konfigurerat för att köra mimeTeX. Du måste ladda ned lämplig exekverbar fil för din PHP_OS-plattform från <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a> eller hämta C-källkoden från <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, kompilera samt lägga den exekverbara filen i din moodle/filter/tex/-folder.';
 $string['mimetexnotexecutable'] = 'Anpassad mimetex är inte körbar!';

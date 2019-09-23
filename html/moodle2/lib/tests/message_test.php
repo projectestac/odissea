@@ -167,14 +167,14 @@ class core_message_testcase extends advanced_testcase {
         $emails = $sink->get_messages();
         $this->assertCount(1, $emails);
         $email = reset($emails);
-        $recordexists = $DB->record_exists('message', array('id' => $messageid));
+        $recordexists = $DB->record_exists('messages', array('id' => $messageid));
         $this->assertSame(true, $recordexists);
         $this->assertSame($user1->email, $email->from);
         $this->assertSame($user2->email, $email->to);
-        $this->assertSame($message->subject, $email->subject);
+        $this->assertSame(get_string('unreadnewmessage', 'message', fullname($user1)), $email->subject);
         $this->assertNotEmpty($email->header);
         $this->assertNotEmpty($email->body);
-        $this->assertRegExp('/test message body test/', $email->body);
+        $this->assertRegExp('/test message body.*test/s', $email->body);
         $sink->clear();
 
         // Test that event fired includes the courseid.
@@ -207,11 +207,11 @@ class core_message_testcase extends advanced_testcase {
         $emails = $sink->get_messages();
         $this->assertCount(1, $emails);
         $email = reset($emails);
-        $recordexists = $DB->record_exists('message', array('id' => $messageid));
+        $recordexists = $DB->record_exists('messages', array('id' => $messageid));
         $this->assertSame(true, $recordexists);
         $this->assertSame($user1->email, $email->from);
         $this->assertSame($user2->email, $email->to);
-        $this->assertSame($message->subject, $email->subject);
+        $this->assertSame(get_string('unreadnewmessage', 'message', fullname($user1)), $email->subject);
         $this->assertNotEmpty($email->header);
         $this->assertNotEmpty($email->body);
         $this->assertNotRegExp('/test message body test/', $email->body);

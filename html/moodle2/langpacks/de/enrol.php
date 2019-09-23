@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,7 +74,7 @@ $string['errajaxsearch'] = 'Fehler bei der Nutzersuche';
 $string['erroreditenrolment'] = 'Bei der Bearbeitung der Nutzereinschreibung ist ein Fehler aufgetreten';
 $string['errorenrolcohort'] = 'Fehler bei der Einschreibesynchronisation von globalen Gruppen in diesem Kurs';
 $string['errorenrolcohortusers'] = 'Fehler bei der Einschreibung von globalen Gruppen in diesem Kurs';
-$string['errorthresholdlow'] = 'Die Benachrichtigung muss mindestens einen Tag vor Teilnahmeende erfolgen';
+$string['errorthresholdlow'] = 'Die Systemnachricht muss mindestens einen Tag vor Teilnahmeende erfolgen';
 $string['errorwithbulkoperation'] = 'Fehler bei der Nutzerverarbeitung (Bulk)';
 $string['eventenrolinstancecreated'] = 'Instanz für Einschreibeverfahren wurde erstellt';
 $string['eventenrolinstancedeleted'] = 'Instanz für Einschreibeverfahren wurde gelöscht';
@@ -85,8 +85,8 @@ $string['eventuserenrolmentupdated'] = 'Nutzereinschreibung aktualisiert';
 $string['expirynotify'] = 'Benachrichtigung bevor Teilnahme endet';
 $string['expirynotifyall'] = 'Einschreibender und eingeschriebene Nutzer/innen';
 $string['expirynotifyenroller'] = 'Nur Einschreibender';
-$string['expirynotify_help'] = 'Die Einstellung legt fest, ob vor Ablauf der Teilnahmedauer eine Benachrichtigung erfolgen soll.';
-$string['expirynotifyhour'] = 'Stunde zum Versand der Ablaufmitteilungen';
+$string['expirynotify_help'] = 'Die Einstellung legt fest, ob vor Ablauf der Teilnahmedauer eine Systemnachricht erfolgen soll.';
+$string['expirynotifyhour'] = 'Stunde zum Versand der Ablaufnachricht';
 $string['expirythreshold'] = 'Benachrichtigungsgrenze';
 $string['expirythreshold_help'] = 'Wie lange vor dem Ablauf sollen Nutzer/innen benachrichtigt werden?';
 $string['extremovedaction'] = 'Externer Abmeldevorgang';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'table', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'table', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   table
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,3 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadas'] = 'Descarregar tabela de dados como';
-$string['downloadcsv'] = 'Ficheiro de texto com valores separados por vírgulas';
-$string['downloadexcel'] = 'Folha de cálculo do Excel';
-$string['downloadods'] = 'Folha de cálculo do OpenDocument';
-$string['downloadoptions'] = 'Selecione as opções de descarga';
-$string['downloadtsv'] = 'Ficheiro de texto com valores separados por tabulações';
-$string['downloadxhtml'] = 'Documento XHTML sem paginação';

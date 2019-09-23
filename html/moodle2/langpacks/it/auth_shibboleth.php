@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_shibboleth', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_shib_auth_logo'] = 'Logo associato al metodo di autenticazione';
+$string['auth_shib_auth_logo_description'] = 'Per facilitare gli utenti, è possibile associare un logo al metodo di  autenticazione Shibboleth, come ad esempio  <tt>SWITCHaai Login</tt> or <tt>InCommon Login</tt>.';
 $string['auth_shib_auth_method'] = 'Nome del metodo di autenticazione';
 $string['auth_shib_auth_method_description'] = 'Inserite un nome familiare ai vostri utenti per identificare il metodo di autenticazione Shibboleth. Un nome adatto potrebbe essere il nome della vostra federazione Shibboleth, ad esempio <tt>SWITCHaai Login</tt> oppure <tt>InCommon Login</tt>.';
 $string['auth_shibbolethdescription'] = 'Utilizzando questo metodo gli utenti vengono creati e autenticati utilizzando <a href="http://shibboleth.internet2.edu/" target="_blank">Shibboleth</a>';
@@ -33,7 +35,7 @@ $string['auth_shibboleth_login'] = 'Login Shibboleth';
 $string['auth_shibboleth_login_long'] = 'Login a Moodle via Shibboleth';
 $string['auth_shibboleth_manual_login'] = 'Login manuale';
 $string['auth_shibboleth_select_member'] = 'Sono un membro di ...';
-$string['auth_shibboleth_select_organization'] = 'Per l\'autenticazione via Shibboleth, seleziona la tua organizzazione dalla lista drop down:';
+$string['auth_shibboleth_select_organization'] = 'Per l\'autenticazione via Shibboleth, seleziona l\'organizzazione di appartenenza dal menu a discesa:';
 $string['auth_shib_changepasswordurl'] = 'URL per cambiare password';
 $string['auth_shib_contact_administrator'] = 'Qualora tu non appartenga alle organizzazioni fornite e hai bisogno di accedere ai corsi presenti su questo server, per favore contatta <a href="mailto:{$a}">l\'Amministratore Moodle</a>.';
 $string['auth_shib_convert_data'] = 'API per la modifica dei dati';

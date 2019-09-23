@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,5 +67,5 @@ $string['restrictbygroup'] = 'Adicionar condição de acesso de grupos/agrupamen
 $string['setheading'] = '{$a->number} conjunto(s) de {$a->count} condição(ões)';
 $string['shown_all'] = 'Mostrar em cor acinzentada se o utilizador não reunir as condições';
 $string['shown_individual'] = 'Mostrar em cor acinzentada se o utilizador não reunir esta condição';
-$string['show_verb'] = 'Clique para mostrar';
+$string['show_verb'] = 'Clique para mostrar em cor cinza';
 $string['unknowncondition'] = 'Condição desconhecida (módulo de condição eliminado)';

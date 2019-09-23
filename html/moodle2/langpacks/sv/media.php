@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'media', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['legacyheading'] = 'Vanliga mediaspelare';
-$string['legacyheading_desc'] = 'Dessa spelare används ine så ofta på webben och kräver webläsarplugins som inte alltid finns installerade hos användaren.';
 $string['mediaformats'] = 'Tillgängliga spelare';
 $string['mediaformats_desc'] = '<p>När spelare aktiveras i dessa inställningar kan filer bäddas in med mediafiltret (om aktiverat) eller genom att använda fil eller URL resurser med embed. Om ej aktiverat bäddas dessa format inte in och användarna kan manuellt ladda ner eller följa länkar till dessa resurser.</p><br />
 <p>När två spelare stödjer samma format kommer aktivering av båda att öka kompatibliteten för olika apparater som mobiltelefoner. Om det är möjligt att öka kompatibliteten ytterligare genom att tillhandahålla flera filer med olika format för samma videoklipp.</p>';
-$string['mediasettings'] = 'Media inbäddning';

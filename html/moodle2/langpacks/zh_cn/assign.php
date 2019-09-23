@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assign', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['addnewattempt_help'] = '建立一个空白作业，供你使用。';
 $string['addnewgroupoverride'] = '添加组覆盖';
 $string['addnewuseroverride'] = '添加用户覆盖';
 $string['addsubmission'] = '添加提交';
+$string['addsubmission_help'] = '您尚未提交';
 $string['allocatedmarker'] = '指派评分者';
 $string['allocatedmarker_help'] = '指派对该作业评分的人员';
 $string['allowsubmissions'] = '允许用户继续提交该作业。';
@@ -111,7 +112,6 @@ $string['blindmarking_help'] = '盲评，评分人看不到学生的身份信息
 $string['calendardue'] = '{$a} 已到期';
 $string['calendargradingdue'] = '{$a} 等待评分中';
 $string['changefilters'] = '变更筛选条件';
-$string['changegradewarning'] = '该作业有已评分的提交，修改成绩不会自动重新计算每个提交的分数。如果您确定要修改分数，那么您必须对现有提交重新评分。';
 $string['changeuser'] = '变更用户';
 $string['choosegradingaction'] = '评分动作';
 $string['choosemarker'] = '选择……';
@@ -164,7 +164,7 @@ $string['editingstatus'] = '编辑状态';
 $string['editonline'] = '在线编辑';
 $string['editoverride'] = '编辑覆盖';
 $string['editsubmission'] = '编辑提交的作业';
-$string['editsubmission_help'] = '修改提交作业';
+$string['editsubmission_help'] = '您仍可更改提交项的内容';
 $string['editsubmissionother'] = '对{$a}的提交进行编辑';
 $string['enabled'] = '开启';
 $string['errornosubmissions'] = '没有可下载的作业';
@@ -233,6 +233,7 @@ $string['gradecanbechanged'] = '允许更改成绩';
 $string['gradechangessaveddetail'] = '对成绩与反馈的更改已保存';
 $string['graded'] = '已评分';
 $string['gradedby'] = '评分人';
+$string['gradedfollowupsubmit'] = '成绩 - 已收到后续提报';
 $string['gradedon'] = '评分时间';
 $string['gradelocked'] = '该成绩在成绩册中被锁定或被覆盖';
 $string['gradeoutof'] = '成绩（满分 {$a} ）';

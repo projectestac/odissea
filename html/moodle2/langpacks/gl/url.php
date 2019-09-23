@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'url', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,6 +72,7 @@ $string['popupwidth'] = 'Largura da xanela emerxente (en píxeles)';
 $string['popupwidthexplain'] = 'Especifica a largura predeterminada das xanelas emerxentes.';
 $string['printintro'] = 'Presentar a descrición do URL';
 $string['printintroexplain'] = 'Presentar a descrición do URL debaixo do contido? Algúns tipos de pantallas poida que non presenten a descrición aínda que estea activado.';
+$string['privacy:metadata'] = 'O engadido de recurso URL non almacena ningún dato persoal.';
 $string['rolesinparams'] = 'Incluír nomes de roles nos parámetros';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'URL do servidor';

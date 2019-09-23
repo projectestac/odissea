@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'competency', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,11 +42,11 @@ $string['deletecompetencyratings'] = 'Διαγραφή εκτιμήσεων πρ
 $string['duplicateditemname'] = '{$a} (αντίγραφο)';
 $string['enablecompetencies'] = 'Ενεργοποίηση προσόντων';
 $string['enablecompetencies_desc'] = 'Τα προσόντα επιτρέπουν στους χρήστες να αξιολογούνται σύμφωνα με σχέδια μάθησης.';
-$string['errorcannotchangeapastduedate'] = 'H καταληκτική ημερομηνία έχει περάσει· δεν μπορεί να αλλάξει.';
-$string['errorcannotsetduedateinthepast'] = 'H καταληκτική ημερομηνία δεν μπορεί να οριστεί στο παρελθόν.';
-$string['errorcannotsetduedatetoosoon'] = 'H καταληκτική ημερομηνία είναι πάρα πολύ σύντομα.';
-$string['errorcompetencyrule'] = 'Ο κανόνας προσόντος μαθήματος \'{$a}\' δεν βρέθηκε';
-$string['errorcoursecompetencyrule'] = 'Ο κανόνας προσόντος μαθήματος \'{$a}\' δεν βρέθηκε';
+$string['errorcannotchangeapastduedate'] = 'H οφειλόμενη ημερομηνία έχει περάσει· δεν μπορεί να αλλάξει.';
+$string['errorcannotsetduedateinthepast'] = 'H οφειλόμενη ημερομηνία δεν μπορεί να οριστεί στο παρελθόν.';
+$string['errorcannotsetduedatetoosoon'] = 'H οφειλόμενη ημερομηνία είναι πάρα πολύ σύντομα.';
+$string['errorcompetencyrule'] = 'Ο κανόνας προσόντος μαθήματος «{$a}» δεν βρέθηκε';
+$string['errorcoursecompetencyrule'] = 'Ο κανόνας προσόντος μαθήματος «{$a}» δεν βρέθηκε';
 $string['errorinvalidcourse'] = 'Μη έγκυρο μάθημα.';
 $string['errornocompetency'] = 'Το προσόν «{$a}» δεν βρέθηκε';
 $string['errorplanstatus'] = 'Άγνωστη κατάσταση σχεδίων μάθησης «{$a}»';
@@ -96,19 +96,18 @@ $string['eventuserevidenceupdated'] = 'Το αποδεικτικό προηγο�
 $string['evidence_competencyrule'] = 'Ο κανόνας του προσόντος ικανοποιήθηκε.';
 $string['evidence_coursecompleted'] = 'Το μάθημα «{$a}» ολοκληρώθηκε.';
 $string['evidence_coursemodulecompleted'] = 'Η δραστηριότητα «{$a}» ολοκληρώθηκε.';
-$string['evidence_courserestored'] = 'Η εκτίμηση επαναφέρθηκε μαζί με το μάθημα \'{$a}\'.';
-$string['evidence_evidenceofpriorlearninglinked'] = 'Το αποδεικτικό προηγούμενης μάθησης \'{$a}\' συνδέθηκε.';
-$string['evidence_evidenceofpriorlearningunlinked'] = 'Το αποδεικτικό προηγούμενης μάθησης \'{$a}\' αποσυνδέθηκε.';
+$string['evidence_courserestored'] = 'Η εκτίμηση επαναφέρθηκε μαζί με το μάθημα «{$a}».';
+$string['evidence_evidenceofpriorlearninglinked'] = 'Το αποδεικτικό προηγούμενης μάθησης «{$a}» συνδέθηκε.';
+$string['evidence_evidenceofpriorlearningunlinked'] = 'Το αποδεικτικό προηγούμενης μάθησης «{$a}» αποσυνδέθηκε.';
 $string['evidence_manualoverride'] = 'Η εκτίμηση του προσόντος έγινε μη αυτόματα.';
-$string['evidence_manualoverrideincourse'] = 'Η εκτίμηση του προσόντος έγινε μη αυτόματα στο μάθημα \'{$a}\'.';
-$string['evidence_manualoverrideinplan'] = 'Η εκτίμηση του προσόντος έγινε μη αυτόματα στο σχέδιο μάθησης \'{$a}\'.';
+$string['evidence_manualoverrideincourse'] = 'Η εκτίμηση του προσόντος έγινε μη αυτόματα στο μάθημα «{$a}».';
+$string['evidence_manualoverrideinplan'] = 'Η εκτίμηση του προσόντος έγινε μη αυτόματα στο σχέδιο μάθησης «{$a}».';
 $string['invalidevidencedesc'] = 'Περιγραφή άκυρου αποδεικτικού';
 $string['invalidgrade'] = 'Μη έγκυρη εκτίμηση';
-$string['invalidpersistent'] = 'Μη έγκυρο μοντέλο (persistent)';
 $string['invalidpersistenterror'] = 'Σφάλμα: {$a}';
 $string['invalidplan'] = 'Άκυρο σχέδιο μάθησης';
 $string['invalidtaxonomy'] = 'Μη έγκυρη ταξινομία: {$a}';
-$string['invalidurl'] = 'Η διεύθυνση URL δεν είναι έγκυρη. Βεβαιωθείτε ότι ξεκινά με \'http://\' or \'https://\'.';
+$string['invalidurl'] = 'Η διεύθυνση URL δεν είναι έγκυρη. Βεβαιωθείτε ότι ξεκινά με «http://» or «https://».';
 $string['planstatusactive'] = 'Ενεργό';
 $string['planstatuscomplete'] = 'Πλήρες';
 $string['planstatusdraft'] = 'Προσχέδιο';
@@ -145,7 +144,7 @@ $string['privacy:metadata:evidence:grade'] = 'Ο βαθμός που συσχε�
 $string['privacy:metadata:evidence:note'] = 'Μια μη μεταφρασμένη σημείωση συνημμένη στο αποδεικτικό';
 $string['privacy:metadata:evidence:url'] = 'Μια διεύθυνση URL που συσχετίζεται με το αποδεικτικό';
 $string['privacy:metadata:plan:description'] = 'Η περιγραφή του σχεδίου μάθησης';
-$string['privacy:metadata:plan:duedate'] = 'H καταληκτική ημερομηνία του σχεδίου μάθησης';
+$string['privacy:metadata:plan:duedate'] = 'H οφειλόμενη ημερομηνία του σχεδίου μάθησης';
 $string['privacy:metadata:plan:name'] = 'Το όνομα του σχεδίου μάθησης';
 $string['privacy:metadata:plan:reviewerid'] = 'Το αναγνωριστικό του εξεταστή του σχεδίου μάθησης';
 $string['privacy:metadata:plan:status'] = 'Η κατάσταση του σχεδίου μάθησης';
@@ -188,11 +187,14 @@ $string['usercommentedonacompetencyhtml'] = '<p>Ο/Η {$a->fullname} έκανε 
 <p>Δείτε: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonacompetencysmall'] = 'Ο/Η {$a->fullname} έκανε ένα σχόλιο για το προσόν «{$a->competency}».';
 $string['usercommentedonacompetencysubject'] = 'Ο/Η {$a} έκανε ένα σχόλιο για κάποιο προσόν.';
-$string['usercommentedonaplan'] = 'Ο/Η {$a->fullname} σχολίασε για το σχέδιο μάθησης "{$a->plan}":<br /> {$a->comment}<br />
+$string['usercommentedonaplan'] = 'Ο/Η {$a->fullname} σχολίασε για το σχέδιο μάθησης «{$a->plan}»:
+
+{$a->comment}
+
 Δείτε: {$a->url}';
-$string['usercommentedonaplanhtml'] = '<p>Ο/Η {$a->fullname} σχολίασε για το σχέδιο μάθησης "{$a->plan}":</p> <div>{$a->comment}</div>
+$string['usercommentedonaplanhtml'] = '<p>Ο/Η {$a->fullname} σχολίασε για το σχέδιο μάθησης «{$a->plan}»:</p> <div>{$a->comment}</div>
 <p>Δείτε: <a href="{$a->url}">{$a->urlname}</a>.</p>';
-$string['usercommentedonaplansmall'] = 'Ο/Η {$a->fullname} σχολίασε για το σχέδιο μάθησης "{$a->plan}".';
+$string['usercommentedonaplansmall'] = 'Ο/Η {$a->fullname} σχολίασε το σχέδιο μάθησης «{$a->plan}».';
 $string['usercommentedonaplansubject'] = 'Ο/Η {$a} σχολίασε για ένα σχέδιο μάθησης.';
 $string['usercompetencystatus_idle'] = 'Σε αδράνεια';
 $string['usercompetencystatus_inreview'] = 'Εξετάζεται';

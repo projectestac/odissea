@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_ldap', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -127,7 +127,7 @@ $string['didntgetusersfromldap'] = 'Non foi posíbel obter usuarios desde LDAP. 
 $string['gotcountrecordsfromldap'] = 'Obtivéronse {$a} rexistros desde LDAP';
 $string['ldapnotconfigured'] = 'O URL da máquina/servidor LDAP actualmente no está configurada';
 $string['morethanoneuser'] = 'Estraño! Atopouse máis dun rexistro de usuario en ldap. Empregarase só o primeiro.';
-$string['needbcmath'] = 'Necesita a extensión BCMath para usar accesos libres con Active';
+$string['needbcmath'] = 'Necesita a extensión BCMath para usar accesos libres con Active Directory.';
 $string['needmbstring'] = 'Necesita a extensión mbstring para cambiar contrasinais no Active Directory.';
 $string['nodnforusername'] = 'Produciuse un erro en user_update_password(). Non DN para: {$a->username}';
 $string['noemail'] = 'Tentouse enviar un correo mais non foi posíbel.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,5 +67,5 @@ $string['restrictbygroup'] = 'グループ/グルーピングアクセス制限�
 $string['setheading'] = '{$a->number} セット - {$a->count} 制限';
 $string['shown_all'] = 'ユーザが条件に合致しない場合、グレイアウトされた状態で表示します。';
 $string['shown_individual'] = 'ユーザがこの条件に合致しない場合、グレイアウトされた状態で表示します';
-$string['show_verb'] = '表示するにはクリックしてください。';
+$string['show_verb'] = 'グレイアウトを表示するにはクリックしてください。';
 $string['unknowncondition'] = '不明なコンディション (削除されたコンディションプラグイン)';

@@ -6,6 +6,8 @@
  */
 class H5PReport {
 
+  private static $version = '1.0.0';
+
   private static $processorMap = array(
     'compound' => 'CompoundProcessor',
     'fill-in' => 'FillInProcessor',
@@ -15,6 +17,7 @@ class H5PReport {
     'long-choice' => 'LongChoiceProcessor',
   );
 
+  private static $versionExtension = 'https://h5p.org/x-api/h5p-reporting-version';
   private static $contentTypeExtension = 'https://h5p.org/x-api/h5p-machine-name';
 
   public static $contentTypeProcessors = array(
@@ -38,6 +41,9 @@ class H5PReport {
    */
   public function generateReport($xapiData, $forcedProcessor = null, $disableScoring = false) {
     $interactionType = $xapiData->interaction_type;
+    if (!self::isSupportedVersion($xapiData)) {
+      return self::renderUnsupportedVersionPage($xapiData);
+    }
 
     $contentTypeProcessor = self::getContentTypeProcessor($xapiData);
     if (isset($contentTypeProcessor)) {
@@ -225,5 +231,70 @@ class H5PReport {
     }
 
     return $processor;
+  }
+
+    /**
+     * Get required reporting module version from statement
+     *
+     * @param $xapiData
+     *
+     * @return string Defaults to 1.0.0
+     */
+  public static function getVersion($xapiData) {
+    if (!isset($xapiData->additionals)) {
+      return '1.0.0';
+    }
+
+    $additionals = json_decode($xapiData->additionals);
+    if (!isset($additionals->contextExtensions->{self::$versionExtension})) {
+      return '1.0.0';
+    }
+
+    return $additionals->contextExtensions->{self::$versionExtension};
+  }
+
+    /**
+     * Check is render report from statement is supported
+     *
+     * @param $xapiData
+     *
+     * @return bool
+     */
+  public static function isSupportedVersion($xapiData) {
+    $reportingVersion = array_map('intval', explode('.', self::$version));
+    $statementVersion = array_map('intval', explode('.', self::getVersion($xapiData)));
+
+    // Sanitation
+    if (!count($statementVersion) === 3) {
+      return false;
+    }
+
+    // Check major version
+    if ($reportingVersion[0] < $statementVersion[0]) {
+      return false;
+    }
+
+    // Check minor version
+    $hasOutdatedMinorVersion = $reportingVersion[0] === $statementVersion[0]
+                               && $reportingVersion[1] < $statementVersion[1];
+    if ($hasOutdatedMinorVersion) {
+      return false;
+    }
+
+    // Patch versions are assumed to be compatible
+    return true;
+  }
+
+    /**
+     * Display message saying that report could not be rendered
+     *
+     * @param $xapiData
+     *
+     * @return string
+     */
+  public static function renderUnsupportedVersionPage($xapiData) {
+    $requiredVersion = self::getVersion($xapiData);
+    $installedVersion = self::$version;
+    return "<div>Version {$requiredVersion} of the reporting module is required to render this report. Currently installed: {$installedVersion}</div>";
   }
 }

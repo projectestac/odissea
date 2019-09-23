@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_stats', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_stats', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   report_stats
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,4 +44,4 @@ $string['privacy:metadata:timeend'] = 'Ώρα λήξης της προβολής
 $string['privacy:metadata:userid'] = 'Το αναγνωριστικό χρήστη που συνδέεται με αυτόν τον πίνακα.';
 $string['privacy:monthlypath'] = 'Στατιστικά μηνιαία';
 $string['privacy:weeklypath'] = 'Στατιστικά εβδομαδιαία';
-$string['stats:view'] = 'Προβολή αναφοράς στατιστικών μαθήματος';
+$string['stats:view'] = 'Εμφάνιση αναφοράς στατιστικών μαθήματος';

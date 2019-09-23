@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['checkbox'] = 'Caixa de selección';
 $string['chooseexportfields'] = 'Seleccione os campos que quere exportar:';
 $string['chooseexportformat'] = 'Seleccione o formato que quere exportar:';
 $string['chooseorupload'] = 'Seleccionar ficheiro';
+$string['closebeforeopen'] = 'Especificou unha data de remate anterior á do inicio.';
 $string['columns'] = 'columnas';
 $string['comment'] = 'Comentario';
 $string['commentdeleted'] = 'Comentario eliminado';
@@ -85,8 +86,8 @@ $string['confirmdeleterecord'] = 'Confirma que quere eliminar esta entrada?';
 $string['confirmdeleterecords'] = 'Confirma que quere eliminar estas entradas?';
 $string['csstemplate'] = 'Modelo CSS';
 $string['csvfailed'] = 'Non se pode ler os datos en bruto do ficheiro CSV';
-$string['csvfile'] = 'ficheiro CSV';
-$string['csvimport'] = 'importar ficheiro CSV';
+$string['csvfile'] = 'Ficheiro CSV';
+$string['csvimport'] = 'Importar ficheiro CSV';
 $string['csvimport_help'] = 'As entradas pódense importar mediante un ficheiro de texto simple cunha lista de nomes de campos na primeira liña, logo os datos, cun rexistro por liña.';
 $string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">CSV</acronym> texto co seguinte delimitados:';
 $string['data:addinstance'] = 'Engadir unha nova base de datos';
@@ -170,9 +171,9 @@ $string['fieldheight'] = 'Altura';
 $string['fieldheightlistview'] = 'Altura na vista da lista';
 $string['fieldheightsingleview'] = 'Altura en vista única';
 $string['fieldids'] = 'Id de campo';
-$string['fieldmappings'] = 'Mapeamento de campo';
-$string['fieldmappings_help'] = 'Este menú permítelle gardar os datos da base de datos existente. Para preservar os datos nun campo, debe mapealo nun novo campo, onde os datos aparecerán. Calquera campo pode tamén deixarse en branco, sen información copiada nel. Calquera campo antigo non mapeado nun novo perderase e todos os seus datos se eliminarán.
-Soamente pode mapear campos do mesmo tipo, así cada opción despregábel terá diferentes campos nela. Tamén debe coidar de non tentar mapear un campo antigo a máis dun novo campo.';
+$string['fieldmappings'] = 'Asignacións de campo';
+$string['fieldmappings_help'] = 'Este menú permítelle gardar os datos da base de datos existente. Para preservar os datos nun campo, debe asignalo nun novo campo, onde os datos aparecerán. Calquera campo pode tamén deixarse en branco, sen información copiada nel. Calquera campo antigo non asignado nun novo perderase e todos os seus datos se eliminarán.
+Soamente pode asignar campos do mesmo tipo, así cada opción despregábel terá diferentes campos nela. Tamén debe coidar de non tentar asignar un campo antigo a máis dun novo campo.';
 $string['fieldname'] = 'Nome de campo';
 $string['fieldnotmatched'] = 'Os seguintes campos do seu ficheiro non son coñecido nesta base datos: {$a}';
 $string['fieldoptions'] = 'Opcións (unha por liña)';
@@ -204,7 +205,7 @@ $string['importentries'] = 'Importar entradas';
 $string['importsuccess'] = 'A predefinición aplicouse correctamente.';
 $string['includeapproval'] = 'Incluír estado de aprobación';
 $string['includetags'] = 'Incluír as etiquetas';
-$string['includetime'] = 'Include time added/modified';
+$string['includetime'] = 'Incluír o momento de engadido/modificado';
 $string['includeuserdetails'] = 'Incluír detalles do usuario';
 $string['indicator:cognitivedepth'] = 'Base de datos cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de base de datos.';
@@ -233,9 +234,9 @@ $string['listtemplate'] = 'Modelo de lista';
 $string['longitude'] = 'Lonxitude';
 $string['manageapproved'] = 'Permitir a edición de entradas aprobadas';
 $string['manageapproved_help'] = 'Se o desactiva, as entradas aprobadas xa non serán editábeis ou eliminábeis polo usuario que as engadiu. Este axuste non ten efecto a non ser que estea activado «Aprobación requirida».';
-$string['mapexistingfield'] = 'Mapear a {$a}';
+$string['mapexistingfield'] = 'Asignar a {$a}';
 $string['mapnewfield'] = 'Crear un novo campo';
-$string['mappingwarning'] = 'Todos os vellos campos non mapeados nun novo campo perderanse e todos os datos nese campo se eliminarán.';
+$string['mappingwarning'] = 'Todos os vellos campos non asignados nun novo campo perderanse e todos os datos nese campo se eliminarán.';
 $string['maxentries'] = 'Entradas máximas';
 $string['maxentries_help'] = 'O número máximo de entradas que se lle permite remitir a un alumno para esta actividade.';
 $string['maxsize'] = 'Tamaño máximo';
@@ -264,18 +265,6 @@ $string['movezipfailed'] = 'Non se pode mover o zip';
 $string['multientry'] = 'Entrada repetida';
 $string['multimenu'] = 'Menú (Multiselección)';
 $string['multipletags'] = 'Atopáronse múltiples etiquetas! Modelo non gardado';
-$string['namecheckbox'] = 'Campo con caixa de selección';
-$string['namedate'] = 'Campo de data';
-$string['namefile'] = 'Campo de ficheiro';
-$string['namelatlong'] = 'Campo de latitude/lonxitude';
-$string['namemenu'] = 'Campo de menú';
-$string['namemultimenu'] = 'Campo de menú de selección múltiple';
-$string['namenumber'] = 'Campo de número';
-$string['namepicture'] = 'Campo de imaxe';
-$string['nameradiobutton'] = 'Campo de botón de radio';
-$string['nametext'] = 'Campo de texto';
-$string['nametextarea'] = 'Campo de área de texto';
-$string['nameurl'] = 'Campo de URL';
 $string['newentry'] = 'Nova entrada';
 $string['newfield'] = 'Crear un novo campo';
 $string['newfield_help'] = 'Un campo permite a introdución de datos. Cada entrada nunha actividade de base de datos pode ter múltiples campos de múltiples tipos como un campo de data, que lles permite aos participantes seleccionar un día, mes e ano dunha lista despregábel, un campo de imaxe que lles permite aos participantes subir un ficheiro de imaxe ou un campo de caixa de selección, o que lles permite aos participantes seleccionar un ou máis opcións.
@@ -298,6 +287,7 @@ $string['numberrssarticles'] = 'Artigos RSS';
 $string['numnotapproved'] = 'Pendente';
 $string['numrecords'] = '{$a} entradaas';
 $string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (LibreOffice)';
+$string['openafterclose'] = 'Especificou unha data aberta após a data de remate';
 $string['optionaldescription'] = 'Descrición curta (opcional)';
 $string['optionalfilename'] = 'Nome de ficheiro (opcional)';
 $string['other'] = 'Outro';
@@ -332,7 +322,7 @@ $string['privacy:metadata:data_records:userid'] = 'Usuario que creou o rexistro'
 $string['privacy:metadata:filepurpose'] = 'Ficheiro anexo ao rexistro da base de datos';
 $string['privacy:metadata:ratingpurpose'] = 'Puntuación nos rexistros da base de datos';
 $string['privacy:metadata:tagpurpose'] = 'Etiquetas nos rexistros da base de datos';
-$string['radiobutton'] = 'Botóns de radio';
+$string['radiobutton'] = 'Botóns de opción';
 $string['recordapproved'] = 'Entrada aprobada';
 $string['recorddeleted'] = 'Entrada eliminada';
 $string['recorddisapproved'] = 'Entrada non aprobada';
@@ -343,7 +333,10 @@ $string['requireapproval'] = 'Solicita aprobación?';
 $string['requireapproval_help'] = 'De estar activada, as entradas requiren a aprobación por un profesor antes de ser visíbeis para calquera';
 $string['required'] = 'Requirido';
 $string['requiredentries'] = 'Entradas solicitadas';
-$string['requiredentries_help'] = 'O número de entradas que se lle piden que envíe o alumno antes de que a actividade se poida considerar completada.';
+$string['requiredentries_help'] = 'Se está definido, amósase unha mensaxe que indica a cantidade de entradas necesarias para completar. Teña en conta que esta configuración non está conectada ao completado da actividade.
+
+Para as entradas requiridas para o completado da actividade, debería usarse a nova configuración de completado de actividade «Requirir entradas». Para retirar este axuste completamente, estabeleza como «ningunha» e, a continuación, garde os cambios.
+Use os campos de entradas requiridos na sección de completado da actividade.';
 $string['requiredentriestoview'] = 'Entradas requiridas antes da visualización';
 $string['requiredentriestoview_help'] = 'O número de entradas que se lle pide que envíe un alumno antes de que poida ver as entradas doutros alumnos.
 

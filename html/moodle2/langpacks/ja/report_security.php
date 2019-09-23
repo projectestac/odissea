@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_security', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['check_configrw_details'] = '<p>ウェブサーバからファイルが�
 $string['check_configrw_name'] = '書き込み可能なconfig.php';
 $string['check_configrw_ok'] = 'PHPスクリプトはconfig.phpを修正することができません。';
 $string['check_configrw_warning'] = 'PHPスクリプトはconfig.phpを修正することができます。';
-$string['check_cookiesecure_details'] = '<p>あなたがhttps通信を有効にした場合、セキュアクッキーも有効にすることをお勧めします。また、httpからhttpsへのパーマネントリダイレクトも追加してください。理想的にはHSTSヘッダも送信してください。</p>';
+$string['check_cookiesecure_details'] = '<p>https通信が有効にされた場合、セキュアクッキーの送信を有効にすることをお勧めします。また、httpからhttpsへのパーマネントリダイレクトを設定してください。理想的には同時にHSTSヘッダも送信してください。</p>';
 $string['check_cookiesecure_error'] = 'セキュアクッキーを有効にしてください。';
 $string['check_cookiesecure_name'] = 'セキュアクッキー';
 $string['check_cookiesecure_ok'] = 'セキュアクッキーは有効にされています。';

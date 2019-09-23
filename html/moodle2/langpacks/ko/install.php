@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -134,10 +134,7 @@ $string['memorylimithelp'] = '<p>현재 서버의 PHP 메모리 사용량은 {$a
 <li>또 도저히 php.ini 안에 있는 값을 바꿀 수가 없다면 무들 디렉토리에 아래와 같은 내용을 포함하는 .htaccess 를 넣어두면 됩니다.
 <P><blockquote>php_value memory_limit 40M<blockquote></p>
 <p>그러나 어떤 서버에서는 이러한 기능이 모든 PHP페이지에 적용되어 버릴 수도 있게 되는 데 (당신이 페이지를 살펴보았을때 문제를 찾을 것이다) 이 때에는 .htaccess 를 제거해야 하고 다른 방안을 찾아봐야 할 것입니다.</p></li></ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'MSSQL확장자를 이용해 SQL*서버와 연동할 수 있도록 적절하게 설정되지 못했습니다. php.ini 파일을 점검해 보거나 PHP를 다시 컴파일 하십시오.';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP가 MySQLi확장자를 이용해 서버와 연동할 수 있도록 적절하게 설정되지 못해서 MySQL로 통신하게 되었습니다. php.ini 파일을 점검해 보거나 PHP를 다시 컴파일 하십시오.  MySQLi 확장자는 PHP 4에는 사용할 수 없습니다.';
-$string['nativemssql'] = 'FreeTDS SQL* 서버(원본/mssql)';
-$string['nativemssqlhelp'] = '이제 대부분의 무들 자료가 저장될 데이터베이스를 설정해야 합니다. 이 데이터베이스는 미리 생성되어 있어야 하며 사용자명과 비밀번호는 데이터베이스에 접속하는데 이용될 것입니다. 테이블 접두어는 필수입니다.';
 $string['nativemysqli'] = '향상된 MySQL (원본/mysqli)';
 $string['nativemysqlihelp'] = '이제 대부분의 무들 자료가 저장될 데이터베이스를 설정해야 합니다. 이미 데이터베이스에 관련된 사용자명, 비밀번호 및 허가권을 가지고 있다면 데이터베이스가 생성될 수 있을 것입니다. 테이블의 접두어는 선택사항입니다.';
 $string['nativeoci'] = '오라클 (원본/oci)';

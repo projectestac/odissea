@@ -90,6 +90,25 @@ class api {
 
                 require("$path/db/mobile.php");
                 foreach ($addons as $addonname => $addoninfo) {
+
+                    // Add handlers (for site add-ons).
+                    $handlers = !empty($addoninfo['handlers']) ? $addoninfo['handlers'] : array();
+                    $handlers = json_encode($handlers); // JSON formatted, since it is a complex structure that may vary over time.
+
+                    // Now language strings used by the app.
+                    $lang = array();
+                    if (!empty($addoninfo['lang'])) {
+                        $stringmanager = get_string_manager();
+                        $langs = $stringmanager->get_list_of_translations(true);
+                        foreach ($langs as $langid => $langname) {
+                            foreach ($addoninfo['lang'] as $stringinfo) {
+                                $lang[$langid][$stringinfo[0]] =
+                                    $stringmanager->get_string($stringinfo[0], $stringinfo[1], null, $langid);
+                            }
+                        }
+                    }
+                    $lang = json_encode($lang);
+
                     $plugininfo = array(
                         'component' => $component,
                         'version' => $version,
@@ -97,7 +116,9 @@ class api {
                         'dependencies' => !empty($addoninfo['dependencies']) ? $addoninfo['dependencies'] : array(),
                         'fileurl' => '',
                         'filehash' => '',
-                        'filesize' => 0
+                        'filesize' => 0,
+                        'handlers' => $handlers,
+                        'lang' => $lang,
                     );
 
                     // All the mobile packages must be under the plugin mobile directory.
@@ -149,6 +170,13 @@ class api {
             'maintenancemessage' => $maintenancemessage,
             'mobilecssurl' => !empty($CFG->mobilecssurl) ? $CFG->mobilecssurl : '',
             'tool_mobile_disabledfeatures' => get_config('tool_mobile', 'disabledfeatures'),
+            'country' => clean_param($CFG->country, PARAM_NOTAGS),
+            'agedigitalconsentverification' => \core_auth\digital_consent::is_age_digital_consent_verification_enabled(),
+            'autolang' => $CFG->autolang,
+            'lang' => clean_param($CFG->lang, PARAM_LANG),  // Avoid breaking WS because of incorrect package langs.
+            'langmenu' => $CFG->langmenu,
+            'langlist' => $CFG->langlist,
+            'locale' => $CFG->locale,
         );
 
         $typeoflogin = get_config('tool_mobile', 'typeoflogin');
@@ -178,6 +206,12 @@ class api {
         $identityprovidersdata = \auth_plugin_base::prepare_identity_providers_for_output($identityproviders, $OUTPUT);
         if (!empty($identityprovidersdata)) {
             $settings['identityproviders'] = $identityprovidersdata;
+        }
+
+        // If age is verified, return also the admin contact details.
+        if ($settings['agedigitalconsentverification']) {
+            $settings['supportname'] = clean_param($CFG->supportname, PARAM_NOTAGS);
+            $settings['supportemail'] = clean_param($CFG->supportemail, PARAM_EMAIL);
         }
 
         return $settings;
@@ -243,6 +277,7 @@ class api {
             $settings->tool_mobile_customlangstrings = get_config('tool_mobile', 'customlangstrings');
             $settings->tool_mobile_disabledfeatures = get_config('tool_mobile', 'disabledfeatures');
             $settings->tool_mobile_custommenuitems = get_config('tool_mobile', 'custommenuitems');
+            $settings->tool_mobile_apppolicy = get_config('tool_mobile', 'apppolicy');
         }
 
         return $settings;
@@ -301,6 +336,7 @@ class api {
         $mainmenu = new lang_string('mainmenu', 'tool_mobile');
         $course = new lang_string('course');
         $modules = new lang_string('managemodules');
+        $blocks = new lang_string('blocks');
         $user = new lang_string('user');
         $files = new lang_string('files');
         $remoteaddons = new lang_string('remoteaddons', 'tool_mobile');
@@ -324,8 +360,30 @@ class api {
 
         }
 
+        // Display blocks.
+        $availableblocks = core_plugin_manager::instance()->get_plugins_of_type('block');
+        $courseblocks = array();
+        $appsupportedblocks = array(
+            'activity_modules' => 'CoreBlockDelegate_AddonBlockActivityModules',
+            'site_main_menu' => 'CoreBlockDelegate_AddonBlockSiteMainMenu',
+            'myoverview' => 'CoreBlockDelegate_AddonBlockMyOverview',
+            'timeline' => 'CoreBlockDelegate_AddonBlockTimeline',
+            'recentlyaccessedcourses' => 'CoreBlockDelegate_AddonBlockRecentlyAccessedCourses',
+            'starredcourses' => 'CoreBlockDelegate_AddonBlockStarredCourses',
+            'recentlyaccesseditems' => 'CoreBlockDelegate_AddonBlockRecentlyAccessedItems',
+        );
+
+        foreach ($availableblocks as $block) {
+            if (isset($appsupportedblocks[$block->name])) {
+                $courseblocks[$appsupportedblocks[$block->name]] = $block->displayname;
+            }
+        }
+
         $features = array(
+            'NoDelegate_CoreOffline' => new lang_string('offlineuse', 'tool_mobile'),
             '$mmLoginEmailSignup' => new lang_string('startsignup'),
+            'NoDelegate_CoreComments' => new lang_string('comments'),
+            'NoDelegate_CoreRating' => new lang_string('ratings', 'rating'),
             "$mainmenu" => array(
                 '$mmSideMenuDelegate_mmCourses' => new lang_string('mycourses'),
                 '$mmSideMenuDelegate_mmaFrontpage' => new lang_string('sitehome'),
@@ -334,6 +392,7 @@ class api {
                 '$mmSideMenuDelegate_mmaNotifications' => new lang_string('notifications', 'message'),
                 '$mmSideMenuDelegate_mmaMessages' => new lang_string('messages', 'message'),
                 '$mmSideMenuDelegate_mmaCalendar' => new lang_string('calendar', 'calendar'),
+                'CoreMainMenuDelegate_AddonBlog' => new lang_string('blog', 'blog'),
                 '$mmSideMenuDelegate_mmaFiles' => new lang_string('files'),
                 '$mmSideMenuDelegate_website' => new lang_string('webpage'),
                 '$mmSideMenuDelegate_help' => new lang_string('help'),
@@ -345,6 +404,9 @@ class api {
                 '$mmCoursesDelegate_mmaGrades' => new lang_string('grades', 'grades'),
                 '$mmCoursesDelegate_mmaCourseCompletion' => new lang_string('coursecompletion', 'completion'),
                 '$mmCoursesDelegate_mmaNotes' => new lang_string('notes', 'notes'),
+                'NoDelegate_CoreCourseDownload' => new lang_string('downloadcourse', 'tool_mobile'),
+                'NoDelegate_CoreCoursesDownload' => new lang_string('downloadcourses', 'tool_mobile'),
+                'CoreCourseOptionsDelegate_AddonBlog' => new lang_string('blog', 'blog'),
             ),
             "$user" => array(
                 '$mmUserDelegate_mmaBadges' => new lang_string('badges', 'badges'),
@@ -356,6 +418,7 @@ class api {
                 '$mmUserDelegate_mmaMessages:blockContact' => new lang_string('blockcontact', 'message'),
                 '$mmUserDelegate_mmaNotes:addNote' => new lang_string('addnewnote', 'notes'),
                 '$mmUserDelegate_picture' => new lang_string('userpic'),
+                'CoreCourseOptionsDelegate_AddonBlog' => new lang_string('blog', 'blog'),
             ),
             "$files" => array(
                 'files_privatefiles' => new lang_string('privatefiles'),
@@ -363,6 +426,7 @@ class api {
                 'files_upload' => new lang_string('upload'),
             ),
             "$modules" => $coursemodules,
+            "$blocks" => $courseblocks,
         );
 
         if (!empty($remoteaddonslist)) {

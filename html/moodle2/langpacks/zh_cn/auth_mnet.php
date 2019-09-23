@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_mnet', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,9 +88,11 @@ $string['privacy:metadata:mnet_log:remoteid'] = '在远程系统中执行操作�
 $string['privacy:metadata:mnet_log:time'] = '操作发生的时间。';
 $string['privacy:metadata:mnet_log:url'] = '发生操作的远程系统网址。';
 $string['privacy:metadata:mnet_log:userid'] = '在远程系统中执行操作用户的本地ID。';
+$string['privacy:metadata:mnet_session'] = '远程系统中每个 MNet 用户会话的详细信息。数据是临时存储的。';
 $string['privacy:metadata:mnet_session:expires'] = '会话过期的时间。';
 $string['privacy:metadata:mnet_session:mnethostid'] = '远程系统 MNet ID。';
 $string['privacy:metadata:mnet_session:token'] = '唯一会话标识符';
+$string['privacy:metadata:mnet_session:useragent'] = '用于访问远程系统的用户代理';
 $string['privacy:metadata:mnet_session:userid'] = '跳转到远程系统的用户的 ID。';
 $string['privacy:metadata:mnet_session:username'] = '跳转到远程系统用户的登录名。';
 $string['rpc_negotiation_timeout'] = 'RPC 超时';

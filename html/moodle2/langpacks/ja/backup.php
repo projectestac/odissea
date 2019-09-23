@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -240,6 +240,7 @@ $string['qcategory2coursefallback'] = '本来はバックアップファイル�
 $string['qcategorycannotberestored'] = '問題カテゴリ「 {$a->name} 」をリストアで作成できません。';
 $string['question2coursefallback'] = '本来バックアップファイルのシステム/コースカテゴリコンテクストにある問題カテゴリ「 {$a->name} 」はリストアによりコースコンテクストに作成されます。';
 $string['questionegorycannotberestored'] = '問題カテゴリ「 {$a->name} 」をリストアで作成できません。';
+$string['recyclebin_desc'] = 'これらの設定はゴミ箱にも適用されることに留意してください。';
 $string['replacerestoredefaults'] = '別のコースへのコンテンツを削除したグループ統合時のリストアデフォルト';
 $string['restoreactivity'] = '活動をリストアする';
 $string['restorecourse'] = 'コースをリストアする';

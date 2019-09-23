@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendar', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -144,7 +144,6 @@ $string['export'] = 'Exportació';
 $string['exportbutton'] = 'Exporta';
 $string['exportcalendar'] = 'Exporta el calendari';
 $string['exporthelp'] = 'Com em subscric a aquest calendari des d\'una aplicació de calendari (Google/Outlook/una altra)?';
-$string['for'] = 'per a';
 $string['forcecalendartype'] = 'Força el calendari';
 $string['fri'] = 'dv';
 $string['friday'] = 'divendres';

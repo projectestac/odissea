@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_wq', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_wq', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_wq
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['access_provider_enabled'] = 'Access control';
 $string['access_provider_enabled_help'] = 'If enabled ony authenticated users can access Wiris services.';
 $string['addingwq'] = 'Adding a generic Wiris Quizzes question';
+$string['auxiliar_text'] = 'Write an optional reasoning for your answer:';
 $string['cachedef_images'] = 'Wiris Quizzes images.';
 $string['cachedir'] = 'CACHE_DIR:';
 $string['connectionsettings'] = 'Connection settings';

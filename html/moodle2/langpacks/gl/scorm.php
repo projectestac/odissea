@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -144,21 +144,26 @@ $string['exit'] = 'Saír do curso';
 $string['exitactivity'] = 'Saír da actividade';
 $string['expired'] = 'Mágoa, esta actividade pechouse o {$a} e xa non está dispoñíbel';
 $string['external'] = 'Actualizar os tempos dos paquetes externos';
-$string['failed'] = 'Fallou';
+$string['failed'] = 'Suspenso';
 $string['finishscorm'] = 'Se xa rematou de ver este recurso, {$a}';
 $string['finishscormlinkname'] = 'prema aquí para volver á páxina do curso';
 $string['firstaccess'] = 'Primeiro acceso';
 $string['firstattempt'] = 'Primeiro intento';
 $string['floating'] = 'Flotante';
-$string['forcecompleted'] = 'Forzar finalización';
-$string['forcecompleteddesc'] = 'Esta preferencia estabelece o valor predeterminado para forzar o axuste de finalización';
+$string['forceattemptalways'] = 'Sempre';
+$string['forceattemptoncomplete'] = 'Cando o intento anterior foi completado, aprobado ou suspenso';
+$string['forcecompleted'] = 'Forzar o completado';
+$string['forcecompleteddesc'] = 'Esta preferencia estabelece o valor predeterminado para forzar o axuste de completado';
 $string['forcecompleted_help'] = 'Se está activado, o estado do intento actual fórzase ao estado «completado». Este axuste aplícaselle só aos paquetes SCORM 1.2.';
 $string['forcejavascript'] = 'Forzar aos usuarios a ter JavaScript activado';
 $string['forcejavascript_desc'] = 'Se está activado (recomendado), impide o acceso aos obxectos SCORM cando JavaScript non está admitido/activado no navegador do usuario. Se está desactivado, o usuario pode ver o SCORM, mais a comunicación co API fallará e non se gardará a información da cualificación.';
 $string['forcejavascriptmessage'] = 'Requírese de JavaScript para ver este obxecto, active JavaScript no seu navegador e tenteo de novo.';
-$string['forcenewattempt'] = 'Forzar un novo intento';
-$string['forcenewattemptdesc'] = 'Esta preferencia estabelece o valor predeterminado para forzar o axuste de novo intento';
-$string['forcenewattempt_help'] = 'Se está activado, cada vez que se acceda a un paquete SCORM contarase como un novo intento.';
+$string['forcenewattempts'] = 'Forzar un novo intento';
+$string['forcenewattempts_help'] = 'Hai 3 opcións:
+
+* Non - Se un intento previamente completado, aprobado ou suspenso, o alumno contará coa opción de ingresar no modo de revisión ou iniciar un novo intento.
+* Cando o intento anterior foi completado, aprobado ou suspenso - Isto depende do paquete SCORM que estabelece o estado de «completado», «aprobado» ou «suspenso».
+* Sempre - Cada reentrada á actividade SCORM xerará un novo intento e o alumno non será devolto ao mesmo punto que acadou no seu intento anterior.';
 $string['found'] = 'Atopouse o manifesto';
 $string['frameheight'] = 'Esta preferencia determina a altura predeterminada para o cadro ou xanela da etapa';
 $string['framewidth'] = 'Esta preferencia determina a largura predeterminado para o cadro ou xanela da etapa';
@@ -200,7 +205,7 @@ $string['indicator:cognitivedepth'] = 'SCORM cognitivo';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de SCORM.';
 $string['indicator:socialbreadth'] = 'SCORM social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nunha actividade de SCORM.';
-$string['info'] = 'Info';
+$string['info'] = 'Información';
 $string['interactions'] = 'Interaccións';
 $string['invalidactivity'] = 'A actividade SCORM é incorrecta';
 $string['invalidhacpsession'] = 'Sesión HACP incorrecta';
@@ -273,6 +278,7 @@ $string['notattempted'] = 'Sen intentos';
 $string['not_corr_type'] = 'Non coincide o tipo para a etiqueta {$a->tag}';
 $string['notopenyet'] = 'Mágoa, esta actividade non está dispoñíbel ata {$a}';
 $string['objectives'] = 'Obxectivos';
+$string['openafterclose'] = 'Especificou unha data aberta após a data de remate';
 $string['optallstudents'] = 'todos os usuarios';
 $string['optattemptsonly'] = 'só usuarios con intentos';
 $string['options'] = 'Opcións (non admitidas por algúns navegadores)';
@@ -286,7 +292,7 @@ $string['package'] = 'Ficheiro de paquete';
 $string['packagedir'] = 'Erro do sistema de ficheiros: Non é posíbel crear o directorio de paquetes';
 $string['packagefile'] = 'Non especificou ningún ficheiro de paquete';
 $string['packagehdr'] = 'Paquete';
-$string['package_help'] = 'O ficheiro de paquete é un arquivo zip (ou pif) que conten ficheiros de definición do curso SCORM/AICC.';
+$string['package_help'] = 'O ficheiro de paquete é un arquivo zip (ou pif) que contén ficheiros de definición do curso SCORM/AICC.';
 $string['packageurl'] = 'URL';
 $string['packageurl_help'] = 'Este axuste activa un URL para especificar o paquete SCORM no canto de escoller un ficheiro a través do selector de ficheiros.';
 $string['page-mod-scorm-x'] = 'Calquera páxina do módulo SCORM';
@@ -335,9 +341,6 @@ $string['reviewmode'] = 'Modo revisión';
 $string['rightanswer'] = 'Resposta correcta';
 $string['scoes'] = 'Obxectos de aprendizaxe';
 $string['score'] = 'Puntuación';
-$string['scorm12standard'] = 'Activar o modo estándar SCORM 1.2';
-$string['scorm12standarddesc'] = 'Desactivar esta configuración permite que Moodle almacene máis datos do que permite a especificación SCORM 1.2.
-Se os seus paquetes de SCORM permiten que os usuarios escriban grandes cantidades de texto, o se os seus paquetes intentan almacenar grandes cantidades de datos no campo suspend_data, desactive isto.';
 $string['scorm:addinstance'] = 'Engadir un paquete novo de SCORM';
 $string['scormclose'] = 'Dispoñíbel para';
 $string['scormcourse'] = 'Curso de aprendizaxe';
@@ -349,6 +352,8 @@ $string['scormopen'] = 'Dispoñíbel desde';
 $string['scormresponsedeleted'] = 'Eliminados os intentos do usuario';
 $string['scorm:savetrack'] = 'Gardar seguimentos';
 $string['scorm:skipview'] = 'Omitir a vista xeral';
+$string['scormstandard'] = 'Modo de estándares SCORM';
+$string['scormstandarddesc'] = 'Cando está desactivado, Moodle permite que os paquetes de SCORM 1.2 almacenen máis que a especificación que permite e utiliza a configuración do formato de nome completo de Moodle ao pasar o nome do usuario ao paquete SCORM.';
 $string['scormtype'] = 'Tipo';
 $string['scormtype_help'] = 'Este axuste determina como se inclúe o paquete no el curso. Hai 4 opcións:
 
@@ -367,7 +372,7 @@ $string['show'] = 'Amosar';
 $string['sided'] = 'Lateral';
 $string['skipview'] = 'Omitir para o alumno a páxina de estrutura de contidos';
 $string['skipviewdesc'] = 'Esta preferencia estabelece o valor predeterminado sobre cando omitir a estrutura do contido dunha páxina';
-$string['skipview_help'] = 'Este axuste especifica se a páxina de estrutura de contido nunca debe ser omitido (non se presenta). Se o paquete conten só un obxecto de aprendizaxe, a páxina de estrutura de contidos pódese omitir sempre.';
+$string['skipview_help'] = 'Este axuste especifica se a páxina de estrutura de contido nunca debe ser omitido (non se presenta). Se o paquete contén só un obxecto de aprendizaxe, a páxina de estrutura de contidos pódese omitir sempre.';
 $string['slashargs'] = 'AVISO: os argumentos «slash» (barrados) están desactivados neste sitio e é probábel que os obxectos non se comporten como se agarda.';
 $string['stagesize'] = 'Tamaño da etapa';
 $string['stagesize_help'] = 'Estes dous axustes definen a altura e a largura do marco ou xanela do obxecto de aprendizaxe.</p>';
@@ -433,15 +438,14 @@ $string['versionwarning'] = 'A versión do manifesto é anterior á 1.3, atenci�
 $string['viewallreports'] = 'Ver informes para {$a} intentos';
 $string['viewalluserreports'] = 'Ver os informes de {$a} usuarios';
 $string['whatgrade'] = 'Intentos de cualificación';
-$string['whatgradedesc'] = 'Esta preferencia estabelece o valor predeterminado sobre a cualificación de intentos';
-$string['whatgrade_help'] = 'De se permitir intentos múltiples, esta configuración especifica se o máis alto, o medio (media), o primeiro ou o último intento rematada son o  rexistrado no libro de cualificacións. A opción do último intento completado non inclúe intentos cun estado «fallou».
-
+$string['whatgradedesc'] = 'Se o máximo, o medio, o primeiro ou último intento completado se rexistra na axenda de cualificación se se permiten múltiples intentos.';
+$string['whatgrade_help'] = 'De se permitir intentos múltiples, esta configuración especifica se o máis alto, o medio (media), o primeiro ou o último intento completado son o  rexistrado no libro de cualificacións. A opción do último intento completado non inclúe intentos cun estado «suspenso».
 
 Notas sobre a manipulación de varios intentos:
 
 * A opción de iniciar un novo intento fornécese mediante unha caixa enriba do botón Intro na páxina de estrutura de contidos, para que asegúrese de estar dando acceso a esta páxina, se quere permitir máis de un intento.
-* Algúns paquetes SCORM son intelixentes sobre os novos intentos, non son moitos. O que isto significa é que, se o alumno reintroduce un intento anterior, se o contido SCORM non ten lóxica interna para evitar a substitución de intentos anteriores poden ser sobrescritos, aínda que o intento fose «completado» ou «pasado».
-* A configuración «Forzar o remate», «Forzar un novo intento» e «Bloqueo tras intento final» tamén facilitar aínda máis a xestión de varios intentos.';
+* Algúns paquetes SCORM son intelixentes sobre os novos intentos, non son moitos. O que isto significa é que, se o alumno reintroduce un intento anterior, se o contido SCORM non ten lóxica interna para evitar a substitución de intentos anteriores poden ser sobrescritos, aínda que o intento fose «completado» ou «aprobado».
+* A configuración «Forzar o completado», «Forzar un novo intento» e «Bloqueo tras intento final» tamén facilitar aínda máis a xestión de varios intentos.';
 $string['width'] = 'Largura';
 $string['window'] = 'Xanela';
 $string['youmustselectastatus'] = 'Debe seleccionar un estado a requirir';

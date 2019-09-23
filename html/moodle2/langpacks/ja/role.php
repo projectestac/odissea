@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'role', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,9 @@ $string['allowoverride'] = 'ロールのオーバーライドを許可する';
 $string['allowroletoassign'] = 'ロール {$a->fromrole} のユーザにロール {$a->targetrole} の割り当てを許可する';
 $string['allowroletooverride'] = 'ロール {$a->fromrole} のユーザにロール {$a->targetrole} へのオーバーライドを許可する';
 $string['allowroletoswitch'] = 'ロール {$a->fromrole} のユーザにロール {$a->targetrole} へのスイッチを許可する';
+$string['allowroletoview'] = 'ロール {$a->fromrole} のユーザがロール {$a->targetrole} を表示できるようにする';
 $string['allowswitch'] = 'ロールのスイッチを許可する';
+$string['allowview'] = 'ロールの表示を許可する';
 $string['allsiteusers'] = 'すべてのサイトユーザ';
 $string['analytics:listinsights'] = '洞察を一覧表示する';
 $string['analytics:managemodels'] = 'モデルを管理する';
@@ -166,6 +168,7 @@ $string['course:changeidnumber'] = 'コースIDナンバーを変更する';
 $string['course:changeshortname'] = 'コース省略名を変更する';
 $string['course:changesummary'] = 'コース概要を変更する';
 $string['course:create'] = 'コースを作成する';
+$string['course:creategroupconversations'] = 'グループ会話を作成する';
 $string['course:delete'] = 'コースを削除する';
 $string['course:enrolconfig'] = 'コースの登録インスタンスを設定する';
 $string['course:enrolreview'] = 'コース登録をレビューする';
@@ -187,7 +190,9 @@ $string['course:reset'] = 'コースをリセットする';
 $string['course:reviewotherusers'] = '他のユーザをレビューする';
 $string['course:sectionvisibility'] = 'セクションの可視性をコントロールする';
 $string['course:setcurrentsection'] = '現在のセクションを設定する';
+$string['course:setforcedlanguage'] = 'コース言語を強制する';
 $string['course:tag'] = 'コースタグを変更する';
+$string['course:togglecompletion'] = '手動で活動を完了マークする';
 $string['course:update'] = 'コース設定を更新する';
 $string['course:useremail'] = 'メールアドレスを有効/無効にする';
 $string['course:view'] = '参加せずにコースを表示する';
@@ -228,6 +233,7 @@ $string['errorroleshortnametoolong'] = '省略名は半角100文字を超えな�
 $string['eventroleallowassignupdated'] = 'ロール割り当てを許可する';
 $string['eventroleallowoverrideupdated'] = 'ロールオーバーライドを許可する';
 $string['eventroleallowswitchupdated'] = 'ロールスイッチを許可する';
+$string['eventroleallowviewupdated'] = 'ロールの表示を許可する';
 $string['eventroleassigned'] = 'ロールが割り当てられました。';
 $string['eventrolecapabilitiesupdated'] = 'ロールケイパビリティが更新されました。';
 $string['eventroledeleted'] = 'ロールが削除されました。';
@@ -300,6 +306,7 @@ $string['notabletooverrideroleshere'] = 'あなたはここでロールのパー
 $string['notes:manage'] = 'ノートを管理する';
 $string['notes:view'] = 'ノートを表示する';
 $string['notset'] = '設定なし';
+$string['novisibleroles'] = 'ロールなし';
 $string['overrideanotherrole'] = '別のロールをオーバーライドする';
 $string['overridecontext'] = 'コンテクストをオーバーライドする';
 $string['overridepermissions'] = 'パーミッションをオーバーライドする';
@@ -352,6 +359,8 @@ $string['question:flag'] = '受験中、問題にフラグを付ける';
 $string['question:managecategory'] = '問題カテゴリを管理する';
 $string['question:moveall'] = 'すべての問題を移動する';
 $string['question:movemine'] = 'あなたの問題を移動する';
+$string['question:tagall'] = 'すべての問題にタグ付けする';
+$string['question:tagmine'] = 'あなたの問題にタグ付けする';
 $string['question:useall'] = 'すべての問題を使用する';
 $string['question:usemine'] = 'あなたの問題を使用する';
 $string['question:viewall'] = 'すべての問題を表示する';
@@ -422,6 +431,8 @@ $string['site:import'] = '別のコースをコースにインポートする';
 $string['site:maintenanceaccess'] = 'メンテナンスモード時にサイトにアクセスする';
 $string['site:manageallmessaging'] = 'すべてのユーザの連絡先を追加、削除、ブロックおよびブロック解除する';
 $string['site:manageblocks'] = 'ページのブロックを管理する';
+$string['site:managecontextlocks'] = 'コンテクストの凍結を管理する';
+$string['site:messageanyuser'] = 'すべてのユーザへのメッセージングのユーザプライバシープリファレンスを無視する';
 $string['site:mnetloginfromremote'] = 'MNet経由でリモートアプリケーションからログインする';
 $string['site:mnetlogintoremote'] = 'MNet経由でリモートアプリケーションを散策する';
 $string['site:readallmessages'] = 'サイトのすべてのメッセージを読む';

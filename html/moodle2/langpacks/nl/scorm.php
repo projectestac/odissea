@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -154,17 +154,20 @@ $string['finishscormlinkname'] = 'klik hier om terug te keren naar de cursuspagi
 $string['firstaccess'] = 'Eerste toegang';
 $string['firstattempt'] = 'Eerste poging';
 $string['floating'] = 'Zwevend';
+$string['forceattemptalways'] = 'Altijd';
+$string['forceattemptoncomplete'] = 'Wanneer vorige poging voltooid, geslaagd of niet geslaagd is';
 $string['forcecompleted'] = 'Verplichte poging voltooid';
 $string['forcecompleteddesc'] = 'Deze instelling regelt de standaard waarde voor het verplicht voltooien';
 $string['forcecompleted_help'] = 'Indien ingeschakeld wordt de status van de huidige poging naar voltooid gezet. (Deze instelling is enkel toepasbaar op SCORM 1.2-pakketten.)';
 $string['forcejavascript'] = 'Verplicht gebruikers om JavaScript in te schakelen';
 $string['forcejavascript_desc'] = 'Indien ingeschakeld (aanbevolen) verhindert dit toegang tot SCORM-objecten wanneer JavaScript niet is ondersteund/ingeschakeld in de browser van een gebruiker.  Indien uitgeschakeld, dan kan de gebruiker de SCORM bekijken, maar de API-communicatie zal niet werken en er zal geen cijferinformatie bewaard worden.';
 $string['forcejavascriptmessage'] = 'JavaScript is vereist om dit object te kunnen bekijken. Schakel JavaScript in in je browser en probeer opnieuw.';
-$string['forcenewattempt'] = 'Verplicht nieuwe poging';
-$string['forcenewattemptdesc'] = 'Dit verbergt het selectievakje "Start een nieuwe poging" en verhindert de bekijken-modus. SCORM laat leerlingen terugkomen naar eenzelfde punt in een poging en een nieuwe poging is niet mogelijk tenzij de vorige poging als "voltooid", "geslaagd" of "mislukt" gemarkeerd is. Als het SCORM-pakket dit niet doet, dan zal de leerling altijd dezelfde poging opnieuw openen.';
-$string['forcenewattempt_help'] = 'Dit verbergt het selectievakje "Start een nieuwe poging" en verhindert de bekijken-modus.
+$string['forcenewattempts'] = 'Verplicht nieuwe poging';
+$string['forcenewattempts_help'] = 'Er zijn 3 opties:
 
-SCORM laat leerlingen terugkomen naar eenzelfde punt in een poging en een nieuwe poging is niet mogelijk tenzij de vorige poging als "voltooid", "geslaagd" of "mislukt" gemarkeerd is. Als het SCORM-pakket dit niet doet, dan zal de leerling altijd dezelfde poging opnieuw openen.';
+* Nee - Als een vorige poging voltooid is, geslaagd of niet geslaagd zal de leerling de optie krijgen om de poging te herbekijken of een nieuwe poging te starten.
+*Wanneer vorige poging voltooid, geslaagd of niet geslaagd is - Dit steunt op de status van de instelling voltooid, geslaagd of niet geslaagd van het SCORM-pakket.
+* Altijd - Elke nieuwe toegang tot het SCORM-pakket zal een nieuwe poging genereren en de leerling zal niet terug gestuurd worden naar hetzelfde punt dat die bereikt had bij de vorige poging.';
 $string['found'] = 'Manifest gevonden';
 $string['frameheight'] = 'Met deze instelling kies je de hoogte van het frame of venster.';
 $string['framewidth'] = 'Deze voorkeurinstelling is de standaardbreedte van het frame of venster.';
@@ -281,6 +284,7 @@ $string['notattempted'] = 'Niet geprobeerd';
 $string['not_corr_type'] = 'Typfout voor tag {$a->tag}';
 $string['notopenyet'] = 'Sorry, deze activiteit is niet beschikbaar tot {$a}';
 $string['objectives'] = 'Objectieven';
+$string['openafterclose'] = 'Je hebt een startdatum na de einddatum opgegeven';
 $string['optallstudents'] = 'alle gebruikers';
 $string['optattemptsonly'] = 'enkel gebruikers met pogingen';
 $string['options'] = 'Opties (niet mogelijk in sommige browsers)';
@@ -320,7 +324,7 @@ $string['pluginadministration'] = 'Beheer SCORM-pakket';
 $string['pluginname'] = 'SCORM-pakket';
 $string['popup'] = 'Open de huidige SCORM/AICC in een nieuw venster';
 $string['popuplaunched'] = 'Dit scormpakket is gestart in een popup-venster. Als je klaar bent met het bekijken van deze bron, klik dan hier om naar de cursuspagina terug te keren.';
-$string['popupmenu'] = 'In een drop downmenu';
+$string['popupmenu'] = 'In een rolmenu';
 $string['popupopen'] = 'Open het pakket in een nieuw venster';
 $string['popupsblocked'] = 'Blijkbaar zijn pop-upvensters geblokkeerd, waardoor dit SCORM-pakket niet kan afspelen. Controleer je browserinstellingen voor je verder gaat.';
 $string['position_error'] = 'De {$a->tag} kan geen child zijn van {$a->parent} tag';
@@ -358,8 +362,6 @@ $string['reviewmode'] = 'Nalezen';
 $string['rightanswer'] = 'Juist antwood';
 $string['scoes'] = 'Leerobjecten';
 $string['score'] = 'Score';
-$string['scorm12standard'] = 'SCORM 1.2 standaard modus inschakelen';
-$string['scorm12standarddesc'] = 'Door deze instelling uit te schakelen, kan Moodle meer gegevens bewaren dan de SCORM 1.2-specificatie toestaat. Als jouw SCORM-pakket het toestaat dat gebruikers grote hoeveelheden tekst bewaren of als je pakket grote hoeveelheden data wil bewaren in het suspend_data-veld, schakel dit dan uit.';
 $string['scorm:addinstance'] = 'Voeg een nieuw SCORM-pakket toe';
 $string['scormclose'] = 'Beschikbaar tot';
 $string['scormcourse'] = 'Leercursus';
@@ -371,6 +373,8 @@ $string['scormopen'] = 'Beschikbaar van';
 $string['scormresponsedeleted'] = 'Verwijderde gebruikerspoging';
 $string['scorm:savetrack'] = 'Bewaar spoor';
 $string['scorm:skipview'] = 'Overzicht overslaan';
+$string['scormstandard'] = 'SCORM standaardmodus';
+$string['scormstandarddesc'] = 'Wanneer uitgeschakeld zal Moodle SCORM 1.2-pakketten toestaan om meer te bewaren dan de specificatie toestaat en zal de volledige naam instelling van Moodle gebruiken wanneer de gebruikersnaam doorgegeven wordt aan het SCORM-pakket.';
 $string['scormtype'] = 'Type';
 $string['scormtype_help'] = 'Deze instelling bepaalt hoe het pakket wordt opgenomen in de cursus. Er zijn vijf opties:
 

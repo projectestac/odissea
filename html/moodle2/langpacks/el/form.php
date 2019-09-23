@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['err_nopunctuation'] = 'Δεν πρέπει να εισάγετε χαρ
 $string['err_numeric'] = 'Πρέπει να εισάγετε έναν αριθμό εδώ.';
 $string['err_rangelength'] = 'Πρέπει να εισάγετε μεταξύ {$a->format[0]} και {$a->format[1]} χαρακτήρες εδώ.';
 $string['err_required'] = 'Πρέπει να εισάγετε μια τιμή εδώ.';
+$string['err_wrappingwhitespace'] = 'Η τιμή δεν πρέπει να ξεκινάει ή να τελειώνει με κενά.';
 $string['err_wrongfileextension'] = 'Κάποια αρχεία ({$a->wrongfiles}) δεν μπορούν να ανεβούν. Επιτρέπονται μόνο οι τύποι αρχείων {$a->whitelist}.';
 $string['filesofthesetypes'] = 'Αποδεκτοί τύποι αρχείων:';
 $string['filetypesany'] = 'Όλοι οι τύποι αρχείων';
@@ -73,7 +74,6 @@ $string['passwordunmaskrevealhint'] = 'Αποκάλυψη';
 $string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Πρόσφατα επιλεγμένη κατάσταση προβολής του στοιχείου επιλογής αρχείων';
 $string['privacy:preference:filemanager_recentviewmode'] = 'Ο προτιμώμενος τρόπος προβολής των αρχείων στον επιλογέα αρχείων είναι: {$a}';
 $string['requiredelement'] = 'Απαιτούμενο πεδίο.';
-$string['revealpassword'] = 'Αποκάλυψη';
 $string['security'] = 'Ασφάλεια';
 $string['selectallornone'] = 'Επιλογή όλων/κανενός';
 $string['selected'] = 'Επιλεγμένο';
@@ -82,7 +82,7 @@ $string['showadvanced'] = 'Εμφάνιση προχωρημένων';
 $string['showless'] = 'Εμφάνιση λιγότερων...';
 $string['showmore'] = 'Εμφάνιση περισσότερων...';
 $string['somefieldsrequired'] = 'Υπάρχουν απαιτούμενα πεδία σε αυτή τη φόρμα σημειωμένα με {$a}.';
-$string['time'] = 'Χρόνος';
+$string['time'] = 'Ώρα';
 $string['timeunit'] = 'Μονάδα χρόνου';
 $string['timing'] = 'Συγχρονισμός';
 $string['unmaskpassword'] = 'Αφαίρεση μάσκας';

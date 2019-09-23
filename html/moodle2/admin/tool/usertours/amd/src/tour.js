@@ -2,7 +2,7 @@
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module unless amdModuleId is set
-    define(["jquery","./popper"], function (a0,b1) {
+    define(["jquery","core/popper"], function (a0,b1) {
       return (root['Tour'] = factory(a0,b1));
     });
   } else if (typeof module === 'object' && module.exports) {
@@ -638,18 +638,6 @@ Tour.prototype.processStepListeners = function (stepConfig) {
     {
         node: $('[data-flexitour="backdrop"]'),
         args: ['click', $.proxy(this.hide, this)]
-    },
-
-    // Click out and hide tour without backdrop.
-    {
-        node: $('body'),
-        args: ['click', $.proxy(function (e) {
-            // Handle click in or click out tour content,
-            // if click out, hide tour.
-            if (!this.currentStepNode.is(e.target) && $(e.target).closest('[data-role="flexitour-step"]').length === 0) {
-                this.hide();
-            }
-        }, this)]
     },
 
     // Keypresses.

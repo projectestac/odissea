@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_security', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,7 @@ $string['check_noauth_details'] = '<p>La extensión <em>Sin identificación</em>
 $string['check_noauth_error'] = 'La extensión "Sin identificación" no puede usarse en sitios en producción.';
 $string['check_noauth_name'] = 'Sin identificación';
 $string['check_noauth_ok'] = 'La extensión "Sin identificación" está deshabilitada';
+$string['check_nodemodules_info'] = 'El directorio node_modules no debería estar presente en sitios públicos.';
 $string['check_openprofiles_details'] = '<p>Los perfiles de usuario abiertos pueden ser explotados por spammers. Se recomienda que haga una de dos acciones: Habilitar <code>Forzar a los usuarios a que se identifiquen para ver perfiles</code> o  Habilitar <code>Forzar usuarios a identificarse.</p>';
 $string['check_openprofiles_error'] = 'Cualquier persona puede ver los perfiles de usuarios sin autenticarse';
 $string['check_openprofiles_name'] = 'Abrir perfiles de usuario';
@@ -87,6 +88,7 @@ N ponga unos requisitos demasiado estrictos, ya que puede ocurrir que los usuari
 $string['check_passwordpolicy_error'] = 'No se ha configurado la política de contraseñas.';
 $string['check_passwordpolicy_name'] = 'Política de contraseñas';
 $string['check_passwordpolicy_ok'] = 'Política de contraseñas habilitada.';
+$string['check_preventexecpath_warning'] = 'Las rutas hacia ejecutables pueden configurarse en la Interfaz Gráfica del Usuario Administrador.';
 $string['check_riskadmin_detailsok'] = '<p>Por favor, compruebe la siguiente lista de los administradores del sistema:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Por favor verifique la lista siguiente de administradores del sistema:</p>{$a->admins} <p> Se recomienda que solamente se asigne el rol de administrador en el contexto de sistema. Los siguientes usuarios tienen asignaciones de rol de administrador (no soportadas) en otros contextos:</p>{$a->unsupported}';
 $string['check_riskadmin_name'] = 'Administradores';
@@ -111,6 +113,7 @@ $string['check_unsecuredataroot_error'] = '!Su directorio dataroot <code>{$a}</c
 $string['check_unsecuredataroot_name'] = 'Directorio dataroot inseguro';
 $string['check_unsecuredataroot_ok'] = 'El directorio de datos (normalmente /moodledata) no debe ser accesible desde la web';
 $string['check_unsecuredataroot_warning'] = '!Su directorio dataroot <code>{$a}</code> ¡ está en el lugar equivocado y puede estar expuesto a la web!';
+$string['check_vendordir_info'] = 'El directorio del vendedor no debería estar presente en sitios públicos.';
 $string['check_webcron_name'] = 'Cron web';
 $string['check_webcron_ok'] = 'Los usuarios anónimos no pueden acceder al cron.';
 $string['check_webcron_warning'] = 'Los usuarios anónimos pueden acceder al cron.';

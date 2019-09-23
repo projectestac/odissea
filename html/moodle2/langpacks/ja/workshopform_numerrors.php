@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredimensions'] = 'さらに {$a} 個の空白アサーションを追加する';
 $string['configgrade0'] = '主張に対するマイナス評価を表すために使用するデフォルトの言葉です。';
 $string['configgrade1'] = '主張に対するプラス評価を表すために使用するデフォルトの言葉です。';
-$string['dimensioncomment'] = 'コメント';
 $string['dimensioncommentfor'] = '{$a} のコメント';
 $string['dimensiondescription'] = '説明';
 $string['dimensiongrade'] = '評定';
@@ -41,7 +40,6 @@ $string['grade1default'] = 'Yes';
 $string['grademapping'] = '評定マッピングテーブル';
 $string['maperror'] = 'エラーの加重数 <= ';
 $string['mapgrade'] = '提出の評価';
-$string['percents'] = '{$a}%';
 $string['pluginname'] = 'エラー数';
 $string['privacy:export:metadata:map'] = 'エラーの加重値が {$a->nonegative} に達した場合、評点は {$a->grade} パーセントになります。';
 $string['privacy:metadata'] = 'エラー数プラグインは評価フォームの詳細のみ保存します。フォームがどのように入力されたかという実際の個人データはワークショップモジュール自体に保存されます。データはエクスポートされる提出に添付されます。';

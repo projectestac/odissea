@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   editor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['bold'] = 'Έντονα';
 $string['borderthickness'] = 'Πλάτος περιγράμματος';
 $string['bottom'] = 'Κάτω';
 $string['browse'] = 'Αναζήτηση';
-$string['cancel'] = 'Ακύρωση';
+$string['cancel'] = 'Άκυρο';
 $string['cellpadding'] = 'Γέμισμα κελιού';
 $string['cellspacing'] = 'Κενό κελιού';
 $string['choosechar'] = 'Επιλέξτε χαρακτήρα';
@@ -97,7 +97,7 @@ $string['linktargetother'] = 'Άλλο (εκτός σειράς)';
 $string['linktargetself'] = 'Ίδιο πλαίσιο';
 $string['linktargettop'] = 'Ίδιο παράθυρο';
 $string['linktitle'] = 'Τίτλος';
-$string['linkurl'] = 'URL';
+$string['linkurl'] = 'Διεύθυνση URL';
 $string['matchcase'] = 'Αντιστοίχιση μεγέθους των γραμμάτων';
 $string['middle'] = 'Μέση';
 $string['minimize'] = 'Ελαχιστοποίηση επεξεργαστή κειμένου';
@@ -145,7 +145,7 @@ $string['superscript'] = 'Εκθέτης';
 $string['textindicator'] = 'Τρέχον στυλ';
 $string['textmode'] = 'Βρίσκεστε σε TEXT MODE. Χρησιμοποιήστε το κουμπί <>] για επιστροφή σε WYSIWYG MODE.';
 $string['texttop'] = 'Κορυφή κειμένου';
-$string['top'] = 'Κορυφή';
+$string['top'] = 'Πάνω';
 $string['type'] = 'Τύπος';
 $string['underline'] = 'Υπογράμμιση';
 $string['undo'] = 'Αναίρεση τελευταίας ενέργειας';

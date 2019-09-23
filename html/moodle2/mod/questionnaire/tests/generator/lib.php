@@ -152,8 +152,8 @@ class mod_questionnaire_generator extends testing_module_generator {
 
         $record['position'] = count($questionnaire->questions);
 
-        if (!isset($record['survey_id'])) {
-            throw new coding_exception('survey_id must be present in phpunit_util::create_question() $record');
+        if (!isset($record['surveyid'])) {
+            throw new coding_exception('surveyid must be present in phpunit_util::create_question() $record');
         }
 
         if (!isset($record['name'])) {
@@ -213,7 +213,7 @@ class mod_questionnaire_generator extends testing_module_generator {
         $cm = get_coursemodule_from_instance('questionnaire', $questionnaire->id);
         if ($qtype !== null) {
             $questiondata['type_id'] = $qtype;
-            $questiondata['survey_id'] = $questionnaire->sid;
+            $questiondata['surveyid'] = $questionnaire->sid;
             $questiondata['name'] = isset($questiondata['name']) ? $questiondata['name'] : 'Q1';
             $questiondata['content'] = isset($questiondata['content']) ? $questiondata['content'] : 'Test content';
             $this->create_question($questionnaire, $questiondata, $choicedata);
@@ -229,9 +229,8 @@ class mod_questionnaire_generator extends testing_module_generator {
         global $DB;
         $currentrid = 0;
         $_POST['q'.$question->id] = $respval;
-        $responseid = $questionnaire->response_insert($question->survey_id, $section, $currentrid, $userid);
+        $responseid = $questionnaire->response_insert($section, $currentrid, $userid);
         $this->response_commit($questionnaire, $responseid);
-        questionnaire_record_submission($questionnaire, $userid, $responseid);
         return $DB->get_record('questionnaire_response', array('id' => $responseid));
     }
 
@@ -503,9 +502,10 @@ class mod_questionnaire_generator extends testing_module_generator {
      *
      * @param array|stdClass $record
      * @param array $questionresponses
+     * @param boolean $complete Whether the response is complete or not.
      * @return stdClass the discussion object
      */
-    public function create_response($record = null, $questionresponses) {
+    public function create_response($record = null, $questionresponses, $complete = true) {
         global $DB;
 
         // Increment the response count.
@@ -513,8 +513,8 @@ class mod_questionnaire_generator extends testing_module_generator {
 
         $record = (array)$record;
 
-        if (!isset($record['survey_id'])) {
-            throw new coding_exception('survey_id must be present in phpunit_util::create_response() $record');
+        if (!isset($record['questionnaireid'])) {
+            throw new coding_exception('questionnaireid must be present in phpunit_util::create_response() $record');
         }
 
         if (!isset($record['userid'])) {
@@ -536,13 +536,8 @@ class mod_questionnaire_generator extends testing_module_generator {
         }
 
         // Mark response as complete.
-        $record['complete'] = 'y';
+        $record['complete'] = ($complete) ? 'y' : 'n';
         $DB->update_record('questionnaire_response', $record);
-
-        // Create attempt record.
-        $attempt = ['qid' => $record['survey_id'], 'userid' => $record['userid'], 'rid' => $record['id'],
-            'timemodified' => time()];
-        $DB->insert_record('questionnaire_attempts', $attempt);
 
         return $record;
     }
@@ -582,10 +577,11 @@ class mod_questionnaire_generator extends testing_module_generator {
      * @param questionnaire $questionnaire
      * @param \mod_questionnaire\question\base[] $questions
      * @param $userid
+     * @param $complete
      * @return stdClass
      * @throws coding_exception
      */
-    public function generate_response($questionnaire, $questions, $userid) {
+    public function generate_response($questionnaire, $questions, $userid, $complete = true) {
         $responses = [];
         foreach ($questions as $question) {
 
@@ -637,7 +633,7 @@ class mod_questionnaire_generator extends testing_module_generator {
             }
 
         }
-        return $this->create_response(['survey_id' => $questionnaire->sid, 'userid' => $userid], $responses);
+        return $this->create_response(['questionnaireid' => $questionnaire->id, 'userid' => $userid], $responses, $complete);
     }
 
     public function create_and_fully_populate($coursecount = 4, $studentcount = 20, $questionnairecount = 2,
@@ -683,7 +679,7 @@ class mod_questionnaire_generator extends testing_module_generator {
                     $qdg->create_question(
                         $questionnaire,
                         [
-                            'survey_id' => $questionnaire->sid,
+                            'surveyid' => $questionnaire->sid,
                             'name'      => $qdg->type_name($questiontype),
                             'type_id'   => QUESSECTIONTEXT
                         ]
@@ -697,7 +693,7 @@ class mod_questionnaire_generator extends testing_module_generator {
                         $questions[] = $qdg->create_question(
                             $questionnaire,
                             [
-                                'survey_id' => $questionnaire->sid,
+                                'surveyid' => $questionnaire->sid,
                                 'name'      => $qdg->type_name($questiontype).' '.$qname++,
                                 'type_id'   => $questiontype
                             ],
@@ -708,7 +704,7 @@ class mod_questionnaire_generator extends testing_module_generator {
                     $qdg->create_question(
                         $questionnaire,
                         [
-                            'survey_id' => $questionnaire->sid,
+                            'surveyid' => $questionnaire->sid,
                             'name' => 'pagebreak '.$qname++,
                             'type_id' => QUESPAGEBREAK
                         ]
@@ -716,8 +712,15 @@ class mod_questionnaire_generator extends testing_module_generator {
                 }
 
                 // Create responses.
+                $count = 1;
                 foreach ($students as $student) {
-                    $qdg->generate_response($questionnaire, $questions, $student->id);
+                    // Make the last response an "incomplete" response.
+                    if ($count < $studentcount) {
+                        $qdg->generate_response($questionnaire, $questions, $student->id);
+                    } else {
+                        $qdg->generate_response($questionnaire, $questions, $student->id, false);
+                    }
+                    $count++;
                 }
             }
         }

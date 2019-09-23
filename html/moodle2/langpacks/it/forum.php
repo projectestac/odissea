@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['advancedsearch'] = 'Ricerca avanzata';
 $string['allforums'] = 'Tutti i forum';
 $string['allowdiscussions'] = 'Ad un {$a} è consentito di intervenire in questo forum?';
 $string['allowsallsubscribe'] = 'Questo forum è a sottoscrizione facoltativa';
-$string['allowsdiscussions'] = 'Questo forum consente a tutti i partecipati di iniziare una nuova discussione.';
+$string['allowsdiscussions'] = 'Il forum consente a tutti i partecipati di iniziare una nuova discussione.';
 $string['allsubscribe'] = 'Sottoscrivi tutti i forum';
 $string['allunsubscribe'] = 'Revoca la sottoscrizione da tutti i forum';
 $string['alreadyfirstpost'] = 'Questo è già il primo intervento della discussione';
@@ -55,6 +55,7 @@ $string['bynameondate'] = 'di {$a->name} - {$a->date}';
 $string['cannotadd'] = 'La discussione non può essere aggiunta in questo forum';
 $string['cannotadddiscussion'] = 'Per aggiungere discussioni in questo forum è necessario appartenere ad un gruppo.';
 $string['cannotadddiscussionall'] = 'Non hai il permesso per aggiungere un argomento di discussione per tutti i partecipanti.';
+$string['cannotadddiscussiongroup'] = 'Non puoi creare discussioni perché non sei membro di nessun gruppo.';
 $string['cannotaddsubscriber'] = 'Non è stato attivare la sottoscrizione al forum per l\'utente con id {$a}!';
 $string['cannotaddteacherforumto'] = 'Non è stato possibile aggiungere il forum teacher con il tipo già cambiato nella sezione 0 del corso';
 $string['cannotcreatediscussion'] = 'Non è stato possibile creare una nuova discussione';
@@ -65,7 +66,7 @@ $string['cannotfinddiscussion'] = 'Non è stato possibile trovare la discussione
 $string['cannotfindfirstpost'] = 'Non è stato possibile trovare il primo intervento di questo forum';
 $string['cannotfindorcreateforum'] = 'Non è stato possibile trovare o creare un forum annunci per il sito';
 $string['cannotfindparentpost'] = 'Non è stato possibile trovare l\'intervento iniziale associato all\'intervento {$a}';
-$string['cannotmovefromsingleforum'] = 'Una discussione non può essere spostata da un forum a singola discussione semplice';
+$string['cannotmovefromsingleforum'] = 'Una discussione non può essere spostata da un forum monotematico';
 $string['cannotmovenotvisible'] = 'Forum non visibile';
 $string['cannotmovetonotexist'] = 'Non possono essere effettuati spostamenti verso questo forum - non esiste!';
 $string['cannotmovetonotfound'] = 'Il forum di destinazione non è stato trovato in questo corso.';
@@ -83,16 +84,16 @@ $string['cannotviewusersposts'] = 'Non ci sono interventi di questo utente che t
 $string['cleanreadtime'] = 'Ora per spuntare come letti i messaggi vecchi';
 $string['clicktosubscribe'] = 'Non hai sottoscritto questa discussione, Click per sottoscriverla.';
 $string['clicktounsubscribe'] = 'Hai sottoscritto la discussione. Click per revocare la sottoscrizione.';
-$string['completiondiscussions'] = 'L\'utente deve iniziare il seguente numero di discussioni:';
+$string['completiondiscussions'] = 'Lo studente deve avviare il seguente numero di discussioni:';
 $string['completiondiscussionsdesc'] = 'Lo studente deve avviare almeno il seguente numero di discussioni: {$a}';
 $string['completiondiscussionsgroup'] = 'Numero minimo discussioni';
 $string['completiondiscussionshelp'] = 'è necessario un numero minimo di discussioni';
-$string['completionposts'] = 'L\'utente deve effettuare il seguente numero di discussioni o di interventi:';
-$string['completionpostsdesc'] = 'L\'utente deve effettuare almeno {$a} discussioni o interventi';
+$string['completionposts'] = 'Lo studente deve effettuare il seguente numero di discussioni o interventi:';
+$string['completionpostsdesc'] = 'Lo studente deve effettuare almeno {$a} discussioni o interventi';
 $string['completionpostsgroup'] = 'Numero minimo interventi';
 $string['completionpostshelp'] = 'è necessario un numero minimo di discussioni o di interventi';
-$string['completionreplies'] = 'L\'utente deve inviare il seguente numero di risposte:';
-$string['completionrepliesdesc'] = 'L\'utente deve effettuare almeno {$a} interventi';
+$string['completionreplies'] = 'Lo studente deve effettuare il seguente numero di interventi:';
+$string['completionrepliesdesc'] = 'Lo studente deve effettuare almeno {$a} interventi';
 $string['completionrepliesgroup'] = 'Numero minimo risposte';
 $string['completionreplieshelp'] = 'è necessario un numero minimo di interventi';
 $string['configcleanreadtime'] = 'L\'ora del giorno in cui la tabella \'lettura\' vien ripulita dai messaggi vecchi.';
@@ -139,7 +140,7 @@ $string['disallowsubscribeteacher'] = 'Sottoscrizioni non consentita (tranne che
 $string['disallowsubscription'] = 'Sottoscrizione';
 $string['disallowsubscription_help'] = 'La configurazione di questo forum non consente la sottoscrizione delle discussioni.';
 $string['discussion'] = 'Discussione';
-$string['discussionlocked'] = 'Questa discussione è stata bloccata e non è più possibile intervenire.';
+$string['discussionlocked'] = 'La discussione è stata bloccata e non è più possibile intervenire.';
 $string['discussionlockingdisabled'] = 'Non bloccare discussioni';
 $string['discussionlockingheader'] = 'Blocco discussioni';
 $string['discussionmoved'] = 'La discussione è stata spostata in \'{$a}\'';
@@ -151,6 +152,7 @@ $string['discussionpin'] = 'Metti in evidenza';
 $string['discussionpinned'] = 'In evidenza';
 $string['discussionpinned_help'] = 'Le discussioni in evidenza saranno visualizzate all\'inizio';
 $string['discussions'] = 'Discussioni';
+$string['discussionsplit'] = 'La discussione è stata divisa';
 $string['discussionsstartedby'] = 'Discussione iniziata da {$a}';
 $string['discussionsstartedbyrecent'] = 'Discussione iniziata recentemente da {$a}';
 $string['discussionsstartedbyuserincourse'] = 'Discussioni avviate da {$a->fullname} nel corso {$a->coursename}';
@@ -173,9 +175,6 @@ $string['edit'] = 'Modifica';
 $string['editedby'] = 'Modificato da {$a->name} - intervento originale effettuato il {$a->date}';
 $string['editedpostupdated'] = 'Il post di {$a} è stato aggiornato';
 $string['editing'] = 'Modifica';
-$string['emaildigest_0'] = 'Riceverai una email per ciascun messaggio nel forum';
-$string['emaildigest_1'] = 'Riceverai una email al giorno contenente la raccolta dei messaggi  di ciascun messaggio nei forum.';
-$string['emaildigest_2'] = 'Riceverai una email al giorno contenente la raccolta del solo oggetto di ciascun messaggio nei forum.';
 $string['emaildigestcompleteshort'] = 'Messaggi per intero';
 $string['emaildigestdefault'] = 'Default ({$a})';
 $string['emaildigestoffshort'] = 'Nessuna raccolta';
@@ -187,8 +186,6 @@ $string['emaildigesttype_help'] = 'Il tipo di notifiche che riceverai dai forum.
 * Nessuna raccolta - riceverai una email per ciascun messaggio nei forum
 * Raccolta - messaggi per intero - riceverai una email al giorno contenente la raccolta dei messaggi  di ciascun messaggio nei forum.
 * Raccolta - solo oggetto - Riceverai una email al giorno contenente la raccolta del solo oggetto di ciascun messaggio nei forum.';
-$string['emaildigestupdated'] = 'Le opzioni email di raccolta sono state cambiate in \'{$a->maildigesttitle}\' per il forum \'{$a->forum}\'. {$a->maildigestdescription}';
-$string['emaildigestupdated_default'] = 'L\' impostazioni di default presa dal tuo profilo - \'{$a->maildigesttitle}\' - è stata utilizzata per il forum \'{$a->forum}\'. {$a->maildigestdescription}.';
 $string['emptymessage'] = 'Il tuo intervento contiene qualche errore. Forse lo hai lasciato in bianco, oppure l\'allegato era troppo grande. Le tue modifiche NON sono state salvate.';
 $string['erroremptymessage'] = 'Il corpo del messaggio non può essere vuoto';
 $string['erroremptysubject'] = 'L\'oggetto non può essere vuoto';
@@ -338,7 +335,7 @@ $string['modulename_help'] = 'Il modulo attività Forum consente di tenere discu
 
 Sono disponibili diversi tipi di forum tra cui scegliere,  forum standard dove chiunque può avviare una discussione, forum dove ciascuno studente può avviare una sola discussioni, forum domande e risposte, dove lo studente deve intervenire prima di poter visualizzare gli interventi degli altri. E\' possibile consentire file allegati. Se gli allegati sono immagini saranno visualizzate direttamente nel corpo dell\'intervento.
 
-I partecipanti possono sottoscrivere il forum per ricevere notifiche di nuovi interventi. Il docente può impostare la sottoscrizione al forum come facoltativa, obbligatoria, automatica. oppure può non consentirne la sottoscrizione. In caso di necessità è anche possibile bloccare studenti che abbiano postato più di un certo numero di interventi in un dato intervallo di tempo, riducendo il rischio che qualcuno domini la discussione.
+I partecipanti possono sottoscrivere il forum per ricevere notifiche di nuovi interventi. Il docente può impostare la sottoscrizione al forum come facoltativa, obbligatoria, automatica, oppure può non consentirne la sottoscrizione. In caso di necessità è anche possibile bloccare studenti che abbiano postato più di un certo numero di interventi in un dato intervallo di tempo, riducendo il rischio che qualcuno domini la discussione.
 
 Gli interventi nei forum possono essere valutati dal docente o dagli stessi studenti (valutazione tra pari). I punteggi ottenuti vengono aggregati e memorizzati nel registro valutatore.
 
@@ -419,9 +416,6 @@ $string['postbymailsuccess'] = 'Congratulazioni, il tuo intervento su "{$a->subj
 $string['postbymailsuccess_html'] = 'Congratulazioni, il tuo intervento su "{$a->subject}" è stato inserito correttamente nel forum. <a href="{$a->discussionurl}">Fai click qui per visualizzarlo.</a>';
 $string['postbyuser'] = '{$a->post} di {$a->user}';
 $string['postincontext'] = 'Visualizza questo intervento nel contesto';
-$string['postmailinfo'] = 'Questa è la copia di un intervento effettuato sul sito {$a} .
-
-Per replicare clicca su questo link:';
 $string['postmailinfolink'] = 'Questa è una copia del messaggio inserito nei forum del del corso {$a->coursename}.
 
 Per rispondere, utilizza il link seguente: {$a->replylink}';
@@ -489,6 +483,7 @@ $string['privacy:metadata:preference:maildigest'] = 'Preferenza raccolta email p
 $string['privacy:metadata:preference:markasreadonnotification'] = 'Scelta di contrassegnare i post sul forum come letti quando si ricevono come messaggi.';
 $string['privacy:metadata:preference:trackforums'] = 'Scelta di abilitare il tracciamento della lettura.';
 $string['privacy:postwasread'] = 'Questo intervento è stato letto la prima volta il {$a->firstread} e la lettura più recente è del {$a->lastread}';
+$string['privacy:readtrackingdisabled'] = 'Hai scelto di non monitorare gli interventi che hai scritto in questo forum.';
 $string['privacy:request:delete:discussion:name'] = 'Elimina su richiesta dell\'autore';
 $string['privacy:request:delete:post:message'] = 'Il contenuto di questo intervento è stato eliminato su richiesta dell\'autore.';
 $string['privacy:request:delete:post:subject'] = 'Elimina su richiesta dell\'autore';
@@ -577,7 +572,7 @@ $string['subscriptionoptional'] = 'Facoltativa';
 $string['subscriptions'] = 'Sottoscrizioni';
 $string['tagarea_forum_posts'] = 'Interventi forum';
 $string['tagsdeleted'] = 'I tag del forum sono stati eliminati';
-$string['thisforumisthrottled'] = 'Questo forum ha una soglia massima di interventi che è possibile effettuare in un dato intervallo di tempo - la soglia al momento è impostata a {$a->blockafter} interventi in {$a->blockperiod}';
+$string['thisforumisthrottled'] = 'Il forum ha una soglia massima di interventi che è possibile effettuare in un dato intervallo di tempo - la soglia al momento è impostata a {$a->blockafter} interventi in {$a->blockperiod}';
 $string['timedhidden'] = 'Stato Intervento a tempo: non visibile agli studenti';
 $string['timedposts'] = 'Interventi a tempo';
 $string['timedvisible'] = 'Stato Intervento a tempo: visibile a tutti gli utenti';

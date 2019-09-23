@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'url', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['chooseavariable'] = 'Escolha uma variável…';
 $string['clicktoopen'] = 'Clique na hiperligação {$a} para abrir o URL.';
 $string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Prima a tecla CTRL para selecionar múltiplas opções.';
-$string['configframesize'] = 'Quando uma página web ou um ficheiro é exibido numa frame, este valor é a altura (em pixels) da frame superior (que contém a barra de navegação).';
+$string['configframesize'] = 'Quando uma página Web ou um ficheiro é exibido numa frame, este valor é a altura (em pixels) da frame superior (que contém a barra de navegação).';
 $string['configrolesinparams'] = 'Ative esta opção se deseja incluir os nomes dos papéis locais na listagem das variáveis de disponíveis nos parâmetros.';
 $string['configsecretphrase'] = 'Esta frase secreta é usada para produzir um código criptografado que pode ser enviado para alguns servidores como parâmetro. O código criptografado é produzido por um valor md5 do endereço de IP do utilizador atual concatenado com a sua frase secreta. ie code = md5(IP.secretphrase). Tenha em conta que isto não é fiável pois o endereço IP pode mudar e muitas vezes é partilhado por diferentes computadores.';
 $string['contentheader'] = 'Conteúdo';
@@ -77,7 +77,7 @@ $string['popupwidth'] = 'Largura da janela de pop-up (em pixeis)';
 $string['popupwidthexplain'] = 'Especifique a largura predefinida quando abre numa janela de pop-up';
 $string['printintro'] = 'Mostrar descrição do URL';
 $string['printintroexplain'] = 'Mostrar a descrição do URL abaixo do conteúdo? Alguns modos de exibição não apresentam a descrição do recurso, mesmo com esta configuração ativa.';
-$string['privacy:metadata'] = 'O módulo mod_url não armazena qualquer dado pessoal.';
+$string['privacy:metadata'] = 'O módulo do recurso URL não armazena quaisquer dados pessoais.';
 $string['rolesinparams'] = 'Incluir designações de papéis nos parâmetros';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'URL do servidor';

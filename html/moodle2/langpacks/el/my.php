@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'my', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,9 +37,8 @@ $string['nocourses'] = 'Δεν υπάρχει πληροφορία του μαθ
 $string['noguest'] = 'Η σελίδα του Ταμπλό δεν είναι διαθέσιμη στους επισκέπτες';
 $string['pinblocks'] = 'Διαμόρφωση καρφιτσωμένων μπλοκ για «Το Moodle μου»';
 $string['pinblocksexplan'] = 'Οι ρυθμίσεις των μπλοκ που θα κάνετε εδώ θα είναι εμφανείς (και μη επεξεργάσιμες) σε κάθε χρήστη του Moodle στην επισκόπηση της σελίδας «Το Moodle μου».';
-$string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'Η προτίμηση αρχικής σελίδας χρήστη που ρυθμίζεται για τη σελίδα του Ταμπλό.';
+$string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'Η προτίμηση χρήστη για αρχική σελίδα.';
 $string['reseterror'] = 'Προέκυψε σφάλμα κατά την επαναφορά της σελίδας';
-$string['reseteveryonesdashboard'] = 'Επαναφορά Ταμπλό για όλους τους χρήστες';
-$string['reseteveryonesprofile'] = 'Επαναφορά προφίλ για όλους τους χρήστες';
-$string['resetpage'] = 'Επαναφορά σελίδας σε προεπιλογή';
-$string['unabletoaccess'] = 'Ως προφύλαξη ασφαλείας, δεν επιτρέπεται πρόσβαση σε Ταμπλό άλλου χρήστη';
+$string['reseteveryonesdashboard'] = 'Αρχικοποίηση Ταμπλό για όλους τους χρήστες';
+$string['reseteveryonesprofile'] = 'Αρχικοποίηση προφίλ για όλους τους χρήστες';
+$string['resetpage'] = 'Αρχικοποίηση σελίδας σε προεπιλογή';

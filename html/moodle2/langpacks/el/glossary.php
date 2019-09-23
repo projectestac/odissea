@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,18 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Προσθήκη κατηγορίας';
 $string['addcomment'] = 'Προσθήκη σχολίου';
 $string['addentry'] = 'Προσθήκη νέας εγγραφής';
 $string['addingcomment'] = 'Προσθήκη ενός σχολίου';
 $string['alias'] = 'Λέξη κλειδί';
-$string['aliases'] = 'Λέξεις κλειδιά';
+$string['aliases'] = 'Λέξεις/-η κλειδιά';
 $string['aliases_help'] = 'Κάθε καταχώρηση γλωσσάριου μπορεί να έχει μια συσχετισμένη λίστα λέξεων-κλειδιών (ή ψευδωνύμων). Εάν η καταχώριση συνδέεται αυτόματα, τότε όλες οι λέξεις-κλειδιά θα συνδέονται αυτόματα. Εισαγάγετε κάθε λέξη-κλειδί σε μια νέα γραμμή (και όχι χωρισμένες με κόμματα).';
 $string['allcategories'] = 'Όλες οι κατηγορίες';
-$string['allentries'] = '&nbsp;ΟΛΑ';
+$string['allentries'] = 'ΟΛΑ';
 $string['allowcomments'] = 'Να επιτρέπονται τα σχόλια στις εγγραφές';
 $string['allowcomments_help'] = 'Αν ενεργοποιηθεί, όλοι οι συμμετέχοντες με δικαίωμα να δημιουργήσουν σχόλια θα μπορούν να προσθέσουν σχόλια σε καταχωρήσεις γλωσσαρίου.';
 $string['allowduplicatedentries'] = 'Επιτρέπονται διπλότυπες εγγραφές';
-$string['allowduplicatedentries_help'] = 'Αν ενεργοποιηθεί, πολλές καταχωρίσεις μπορούν να έχουν το ίδιο όνομα έννοιας.';
+$string['allowduplicatedentries_help'] = 'Αν ενεργοποιηθεί, πολλές καταχωρήσεις μπορούν να έχουν το ίδιο όνομα έννοιας.';
 $string['allowprintview'] = 'Να επιτρέπεται η προεπισκόπηση εκτύπωσης';
 $string['allowprintview_help'] = 'Αν ενεργοποιηθεί, στους μαθητές παρέχεται ένας σύνδεσμος προς μια φιλική προς τους εκτυπωτές έκδοση του γλωσσαρίου. Ο σύνδεσμος είναι πάντοτε διαθέσιμος στους διδάσκοντες.';
 $string['andmorenewentries'] = 'και {$a} περισσότερες νέες καταχωρήσεις.';
@@ -53,7 +54,7 @@ $string['ascending'] = '(αύξουσα)';
 $string['attachment'] = 'Συνημμένο';
 $string['attachment_help'] = 'Μπορείτε προαιρετικά να επισυνάψετε ένα ή περισσότερα αρχεία σε μία καταχώρηση γλωσσαρίου.';
 $string['author'] = 'συγγραφέας';
-$string['authorview'] = 'Προβολή ανά συγγραφέα';
+$string['authorview'] = 'Εμφάνιση ανά συγγραφέα';
 $string['back'] = 'Επιστροφή';
 $string['cachedef_concepts'] = 'Συνδέσεις έννοιας';
 $string['cantinsertcat'] = 'Αδυναμία εισαγωγής κατηγορίας';
@@ -96,7 +97,7 @@ $string['configenablerssfeeds'] = 'Αυτός ο διακόπτης θα ενε�
 $string['current'] = 'Ταξινομημένα προς το παρόν {$a}';
 $string['currentglossary'] = 'Τρέχον γλωσσάριο';
 $string['date'] = 'ημερομηνία';
-$string['dateview'] = 'Προβολή ανά ημερομηνία';
+$string['dateview'] = 'Εμφάνιση ανά ημερομηνία';
 $string['defaultapproval'] = 'Αποδοχή από προεπιλογή';
 $string['defaultapproval_help'] = 'Αν οριστεί σε όχι, οι καταχωρήσεις απαιτούν έγγριση από διδάσκοντα πριν να γίνουν ορατές από όλους.';
 $string['defaulthook'] = 'Προεπιλεγμένο άγκιστρο';
@@ -105,6 +106,7 @@ $string['defaultsortkey'] = 'Προεπιλεγμένο κλειδί ταξιν�
 $string['defaultsortorder'] = 'Προεπιλεγμένη σειρά ταξινόμησης';
 $string['definition'] = 'Ορισμός';
 $string['definitions'] = 'Ορισμοί';
+$string['deletecategory'] = 'Διαγραφή κατηγορίας';
 $string['deleteentry'] = 'Διαγραφή εγγραφής';
 $string['deleteentrya'] = 'Διαγραφή καταχώρησης: {$a}';
 $string['deletenotenrolled'] = 'Διαγραφή των καταχωρήσεων από χρήστες που δεν έχουν εγγραφεί στο μάθημα';
@@ -139,6 +141,7 @@ $string['duplicateentry'] = 'Διπλή καταχώρηση';
 $string['editalways'] = 'Επιτρέπεται πάντα επεξεργασία';
 $string['editalways_help'] = 'Αυτή η ρύθμιση καθορίζει εάν οι μαθητές θα μπορούν πάντα να επεξεργάζονται τις καταχωρήσεις τους ή εάν θα μπορούν μόνο εντός ενός ρυθμιζόμενου χρόνου επεξεργασίας (συνήθως 30 λεπτά).';
 $string['editcategories'] = 'Επεξεργασία κατηγοριών';
+$string['editcategory'] = 'Επεξεργασία κατηγορίας';
 $string['editentry'] = 'Επεξεργασία καταχώρησης';
 $string['editentrya'] = 'Επεξεργασία καταχώρησης: {$a}';
 $string['editingcomment'] = 'Επεξεργασία σχολίου...';
@@ -152,6 +155,7 @@ $string['entrydeleted'] = 'Η καταχώρηση διαγράφηκε';
 $string['entryexported'] = 'Η καταχώρηση εξάχθηκε επιτυχώς';
 $string['entryishidden'] = '(αυτή η καταχώρηση είναι προς το παρόν κρυμμένη)';
 $string['entryleveldefaultsettings'] = 'Προεπιλεγμένες ρυθμίσεις επιπέδου καταχώρησης';
+$string['entrylink'] = 'Σύνδεσμος καταχώρησης: {$a}';
 $string['entrysaved'] = 'Αυτή η καταχώρηση αποθηκεύτηκε';
 $string['entryupdated'] = 'Αυτή η καταχώρηση ενημερώθηκε';
 $string['entryusedynalink'] = 'Σε αυτήν την καταχώρηση θα γίνεται σύνδεση αυτόματα.';
@@ -202,7 +206,7 @@ $string['glossary:manageentries'] = 'Διαχείριση καταχωρήσεω
 $string['glossary:rate'] = 'Βαθμολόγηση καταχωρήσεων';
 $string['glossarytype'] = 'Τύπος γλωσσαρίου';
 $string['glossarytype_help'] = 'Ένα κύριο γλωσσάριο είναι ένα γλωσσάριο στο οποίο μπορούν να εισάγονται καταχωρήσεις από δευτερεύοντα γλωσσάρια. Μπορεί να υπάρχει μόνο ένα κύριο γλωσσάριο σε ένα μάθημα. Αν δεν απαιτείται μαζική εισαγωγή καταχωρήσεων (από άλλο γλωσσάριο), τότε όλα τα γλωσσάρια στο μάθημα μπορούν να είναι δευτερεύοντα.';
-$string['glossary:view'] = 'Προβολή γλωσσαρίου';
+$string['glossary:view'] = 'Εμφάνιση γλωσσαρίου';
 $string['glossary:viewallratings'] = 'Εμφάνιση όλων των πρώτων αξιολογήσεων που δόθηκαν ατομικά';
 $string['glossary:viewanyrating'] = 'Εμφάνιση όλων των συνολικών αξιολογήσεων που έλαβε κάποιος';
 $string['glossary:viewrating'] = 'Δείτε τη συνολική βαθμολογία που λάβατε';
@@ -234,6 +238,7 @@ $string['modulename_help'] = 'Το άρθρωμα δραστηριότητας �
 * Ένα βοήθημα «Χρήσιμες συμβουλές» με βέλτιστες πρακτικές σε ένα πρακτικό θέμα
 * των χρήσιμων βίντεο, εικόνων ή αρχείων ήχου
 * Ένα βοήθημα για επανάληψη των γεγονότων που πρέπει να θυμόμαστε';
+$string['modulename_link'] = 'άρθρωμα/γλωσσάριο/εμφάνιση';
 $string['modulenameplural'] = 'Γλωσσάρια';
 $string['newentries'] = 'Νέες καταχωρήσεις γλωσσαρίου';
 $string['newglossary'] = 'Νέο γλωσσάριο';
@@ -280,7 +285,7 @@ $string['resetglossaries'] = 'Διαγραφή καταχωρήσεων από';
 $string['resetglossariesall'] = 'Διαγραφή καταχωρήσεων από όλα τα γλωσσάρια';
 $string['rssarticles'] = 'Αριθμός πρόσφατων άρθρων τροφοδοσίας RSS';
 $string['rssarticles_help'] = 'Αυτή η ρύθμιση καθορίζει τον αριθμό των καταχωρήσεων εννοιών του γλωσσαρίου που θα συμπεριληφθούν στην RSS τροφοδοσία. Γενικά επιτρέπονται 5 με 20.';
-$string['rsssubscriberss'] = 'Εμφάνιση της τροφοδοσίας RSS για \'{$a}\' έννοιες';
+$string['rsssubscriberss'] = 'Εμφάνιση της τροφοδοσίας RSS για «{$a}» έννοιες';
 $string['rsstype'] = 'Τροφοδοσία RSS για αυτή τη δραστηριότητα';
 $string['rsstype_help'] = 'Για να ενεργοποιήσετε την τροφοδοσία RSS για αυτήν τη δραστηριότητα, επιλέξτε είτε έννοιες με συγγραφέα ή έννοιες χωρίς συγγραφέα που θα συμπεριληφθούν στην τροφοδοσία.';
 $string['search:activity'] = 'Πληροφορίες δραστηριότητας γλωσσαρίου';
@@ -298,7 +303,7 @@ $string['sortbycreation'] = 'Κατά ημερομηνία δημιουργία�
 $string['sortbylastupdate'] = 'Κατά τελευταία ενημέρωση';
 $string['sortchronogically'] = 'Ταξινόμηση χρονολογικά';
 $string['special'] = 'Ειδικά';
-$string['standardview'] = 'Προβολή ανά αλφάβητο';
+$string['standardview'] = 'Εμφάνιση ανά αλφάβητο';
 $string['studentcanpost'] = 'Οι μαθητές μπορούν να κάνουν δημοσιεύσεις';
 $string['tagarea_glossary_entries'] = 'Καταχωρήσεις γλωσσαρίου';
 $string['tagsdeleted'] = 'Οι ετικέτες γλωσσαρίου διαγράφηκαν';

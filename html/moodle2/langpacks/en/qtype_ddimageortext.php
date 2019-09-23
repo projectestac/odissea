@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['answer'] = 'Answer';
 $string['bgimage'] = 'Background image';
 $string['blank'] = 'blank';
 $string['correctansweris'] = 'The correct answer is: {$a}';
+$string['deletedchoice'] = '[Deleted choice]';
 $string['draggableimage'] = 'Draggable image';
 $string['draggableitem'] = 'Draggable item';
 $string['draggableitemheader'] = 'Draggable item {$a}';
@@ -40,7 +41,7 @@ $string['draggableword'] = 'Draggable text';
 $string['dropbackground'] = 'Background image for dragging markers onto';
 $string['dropzone'] = 'Drop zone {$a}';
 $string['dropzoneheader'] = 'Drop zones';
-$string['formerror_disallowedtags'] = 'Sorry, HTML tags are not allowed in draggable text.';
+$string['formerror_disallowedtags'] = 'Only "{$a}" tags are allowed in this draggable text.';
 $string['formerror_multipledraginstance'] = 'You have selected this image {$a} more than once as the correct choice for a drop zone but it is not marked as being an unlimited drag item.';
 $string['formerror_multipledraginstance2'] = 'You have selected this image more than once as the correct choice for a drop zone but it is not marked as being an unlimited drag item.';
 $string['formerror_noallowedtags'] = 'HTML tags are not allowed in this text which is the alt text for a draggable image.';

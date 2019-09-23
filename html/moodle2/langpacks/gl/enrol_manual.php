@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_manual', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,11 +71,13 @@ $string['privacy:metadata'] = 'O engadido de matriculacións manuais non almacen
 $string['selectcohorts'] = 'Escoller círculos';
 $string['selection'] = 'Selección';
 $string['selectusers'] = 'Escoller usuarios';
+$string['sendexpirynotificationstask'] = 'Tarefas de enviar notificacións de expiración da matriculación manual';
 $string['status'] = 'Activar as matriculacións manuais';
 $string['status_desc'] = 'Permitirlle acceso ao curso aos usuarios internamente matriculados. Isto debería permanecer activado na maioría dos casos.';
 $string['statusdisabled'] = 'Desactivado';
 $string['statusenabled'] = 'Activado';
 $string['status_help'] = 'Este axuste determina cando os usuarios poden ser matriculados manualmente, ben mediante unha ligazón na configuración da administración do curso, ben mediante un usuario cos permisos apropiados como pode ser un profesor.';
+$string['syncenrolmentstask'] = 'A matriculación manual sincroniza a tarefa de inscrición';
 $string['unenrol'] = 'Desmatricular o usuario';
 $string['unenrolselectedusers'] = 'Desmatricular os usuarios seleccionados';
 $string['unenrolselfconfirm'] = 'Confirma que quere desmatricularse a si mesmo do curso «{$a}»?';

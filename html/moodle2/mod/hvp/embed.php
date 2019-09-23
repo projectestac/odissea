@@ -27,6 +27,18 @@ global $PAGE, $DB, $CFG, $OUTPUT;
 
 $id = required_param('id', PARAM_INT);
 
+// Allow login through an authentication token.
+$userid = optional_param('user_id', null, PARAM_ALPHANUMEXT);
+$secret  = optional_param('secret', null, PARAM_RAW);
+$disabledownload = false;
+$disablefullscreen = false;
+if (\mod_hvp\mobile_auth::has_valid_token($userid, $secret)) {
+    $user = get_complete_user_data('id', $userid);
+    complete_user_login($user);
+    $disabledownload = true;
+    $disablefullscreen = true;
+}
+
 // Verify course context.
 $cm = get_coursemodule_from_id('hvp', $id);
 if (!$cm) {
@@ -59,7 +71,7 @@ $context = context_module::instance($cm->id);
 require_capability('mod/hvp:view', $context);
 
 // Set up view assets.
-$view    = new \mod_hvp\view_assets($cm, $course);
+$view    = new \mod_hvp\view_assets($cm, $course, ['disabledownload' => $disabledownload, 'disablefullscreen' => $disablefullscreen]);
 $content = $view->getcontent();
 $view->validatecontent();
 

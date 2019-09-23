@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_aiken', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qformat_aiken', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   qformat_aiken
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Μορφότυπος ερωτήσεων Aiken';
 $string['pluginname_help'] = 'Αυτός είναι ένας απλός μορφότυπος εισαγωγής ερωτήσεων πολλαπλών επιλογών από ένα αρχείο κειμένου.';
+$string['pluginname_link'] = 'qformat/aiken';
 $string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις μορφότυπου Aiken» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['questionmissinganswers'] = 'Η ερώτηση πρέπει να έχει τουλάχιστον 2 απαντήσεις στη γραμμή {$a}';
 $string['questionnotcomplete'] = 'Η ερώτηση δεν ολοκληρώθηκε πριν από την αρχή της επόμενης ερώτησης στη γραμμή {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['allowresets'] = 'Allow resets';
 $string['allowresets_help'] = 'Whether the reset field is accepted or not.';
 $string['cachedef_helper'] = 'Helper caching';
 $string['cannotdeletecoursenotexist'] = 'Cannot delete a course that does not exist';
+$string['cannotforcelang'] = 'No permission to force language for this course';
 $string['cannotgenerateshortnameupdatemode'] = 'Cannot generate a shortname when updates are allowed';
 $string['cannotreadbackupfile'] = 'Cannot read the backup file';
 $string['cannotrenamecoursenotexist'] = 'Cannot rename a course that does not exist';
@@ -107,8 +108,7 @@ $string['reset_help'] = 'Whether to reset the course after creating/updating it.
 $string['restoreafterimport'] = 'Restore after import';
 $string['result'] = 'Result';
 $string['rowpreviewnum'] = 'Preview rows';
-$string['rowpreviewnum_help'] = 'Number of rows from the CSV file that will be previewed in the next page. This option exists in
-order to limit the next page size.';
+$string['rowpreviewnum_help'] = 'Number of rows from the CSV file that will be previewed on the following page. This option is for limiting the size of the following page.';
 $string['shortnametemplate'] = 'Template to generate a shortname';
 $string['shortnametemplate_help'] = 'The short name of the course is displayed in the navigation. You may use template syntax here (%f = fullname, %i = idnumber), or enter an initial value that is incremented.';
 $string['templatefile'] = 'Restore from this file after upload';

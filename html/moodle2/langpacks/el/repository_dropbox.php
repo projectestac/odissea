@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_dropbox', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_dropbox
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['cachelimit_info'] = 'Δώστε το μέγιστο μέγεθος αρ
 $string['configplugin'] = 'Ρυθμίσεις Dropbox';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Εμφάνιση ενός φακέλου Dropbox';
-$string['instruction'] = 'Μπορείτε να πάρετε κ λειδί API και μυστικό κωδικό από τους <a href="http://www.dropbox.com/developers/apps">κατασκευαστές του Dropbox</a>';
+$string['instruction'] = 'Μπορείτε να πάρετε το κλειδί σας API και τον μυστικό κωδικό σας από τους <a href="https://www.dropbox.com/developers/apps">κατασκευαστές του Dropbox</a>. Κατά τη ρύθμιση του κλειδιού σας, επιλέξτε «Πλήρες Dropbox» ως «Επίπεδο πρόσβασης».';
 $string['logoutdesc'] = '(Αποσύνδεση όταν ολοκληρωθεί η χρήση του Dropbox)';
 $string['notitle'] = 'χωρίς τίτλο';
 $string['oauth2redirecturi'] = 'URI ανακατεύθυνσης OAuth 2';

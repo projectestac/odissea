@@ -87,16 +87,20 @@
     $table->set_attribute('class', 'admintable generaltable');
     $table->setup();
 
-    foreach ($modules as $module) {
+    $pluginmanager = core_plugin_manager::instance();
 
-        //XTEC ************ AFEGIT - Only enabled modules has to be shown
+    foreach ($modules as $module) {
+        $plugininfo = $pluginmanager->get_plugin_info('mod_'.$module->name);
+        $status = $plugininfo->get_status();
+
+        //XTEC ************ AFEGIT - Only enabled modules has to be showed
         //2012.11.06  @sarjona
         if (!is_enabled_in_agora($module->name) ){
             continue;
         }
         //************ FI
 
-        if (!file_exists("$CFG->dirroot/mod/$module->name/lib.php")) {
+        if ($status === core_plugin_manager::PLUGIN_STATUS_MISSING) {
             $strmodulename = '<span class="notifyproblem">'.$module->name.' ('.get_string('missingfromdisk').')</span>';
             $missing = true;
         } else {

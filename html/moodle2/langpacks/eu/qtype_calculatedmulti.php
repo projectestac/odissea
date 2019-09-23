@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_calculatedmulti', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_calculatedmulti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['answeroptions'] = 'Erantzunak aukeratu';
 $string['answeroptions_help'] = 'Iradokitutako erantzunaren formula ...<strong>{={x}+..}</strong>... da';
-$string['pluginname'] = 'Aukera anitzeko kalkulu motako galdera';
-$string['pluginnameadding'] = 'Aukera anitzeko kalkulu motako galdera gehitzen';
-$string['pluginnameediting'] = 'Aukera anitzeko kalkulu motako galdera editatzen';
-$string['pluginname_help'] = 'Kalkulatutako aukera anitzeko galderak aukera anitzeko galdera arruntak bezalakoak dira, baina erantzunen aukeretan zenbakizko formulak gehitu daitezke giltzen artean komodinak erabilita, gero galdetegia egitean balioekin ordezkatuak izango direnak. Adibidez, "Zein da {I} luzera eta {w} zabalera duen laukiaren azalera?" aukeretako bat {{I}*{w}} izango da (non * karaktereak biderketa esan nahi duen)';
-$string['pluginnamesummary'] = 'Kalkulatutako aukera anitzeko galderak aukera anitzeko galdera arruntak bezalakoak dira, baina erantzunen aukeretan datu-multzo batetik ausaz aukeratzen diren zenbakizko balioen araberako formulak gehitu daitezke galdetegia egitean.';
-$string['privacy:metadata'] = 'Aukera anitzeko kalkulu motako galdera galdera-mota pluginak ez du datu pertsonalik biltzen.';
+$string['pluginname'] = 'Aukera anitzeko galdera kalkulatua';
+$string['pluginnameadding'] = 'Aukera anitzeko galdera kalkulatua gehitzen';
+$string['pluginnameediting'] = 'Aukera anitzeko galdera kalkulatua editatzen';
+$string['pluginname_help'] = 'Aukera anitzeko galdera kalkulatuak aukera anitzeko galdera arruntak bezalakoak dira, baina erantzunen aukeretan zenbakizko formulak gehitu daitezke giltzen artean komodinak erabilita, gero galdetegia egitean balioekin ordezkatuak izango direnak. Adibidez, "Zein da {I} luzera eta {w} zabalera duen laukiaren azalera?" aukeretako bat {{I}*{w}} izango da (non * karaktereak biderketa esan nahi duen)';
+$string['pluginnamesummary'] = 'Aukera anitzeko galdera kalkulatuak aukera anitzeko galdera arruntak bezalakoak dira, baina erantzunen aukeretan datu-multzo batetik ausaz aukeratzen diren zenbakizko balioen araberako formulak gehitu daitezke galdetegia egitean.';
+$string['privacy:metadata'] = 'Aukera anitzeko galdera kalkulatua galdera-mota pluginak ez du datu pertsonalik biltzen.';

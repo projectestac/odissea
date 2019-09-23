@@ -26,25 +26,6 @@ function xmldb_data_upgrade($oldversion) {
 
     $dbman = $DB->get_manager();
 
-    if ($oldversion < 2016030300) {
-
-        // Define field timemodified to be added to data.
-        $table = new xmldb_table('data');
-        $field = new xmldb_field('timemodified', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0', 'notification');
-
-        // Conditionally launch add field timemodified.
-        if (!$dbman->field_exists($table, $field)) {
-            $dbman->add_field($table, $field);
-        }
-
-        // Data savepoint reached.
-        upgrade_mod_savepoint(true, 2016030300, 'data');
-    }
-
-
-    // Moodle v3.1.0 release upgrade line.
-    // Put any upgrade step following this.
-
     if ($oldversion < 2016090600) {
 
         // Define field config to be added to data.
@@ -83,6 +64,30 @@ function xmldb_data_upgrade($oldversion) {
 
     // Automatically generated Moodle v3.4.0 release upgrade line.
     // Put any upgrade step following this.
+
+    // Automatically generated Moodle v3.5.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v3.6.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2018120301) {
+
+        $columns = $DB->get_columns('data');
+
+        $oldclass = "mod-data-default-template ##approvalstatus##";
+        $newclass = "mod-data-default-template ##approvalstatusclass##";
+
+        // Update existing classes.
+        $DB->replace_all_text('data', $columns['singletemplate'], $oldclass, $newclass);
+        $DB->replace_all_text('data', $columns['listtemplate'], $oldclass, $newclass);
+        $DB->replace_all_text('data', $columns['addtemplate'], $oldclass, $newclass);
+        $DB->replace_all_text('data', $columns['rsstemplate'], $oldclass, $newclass);
+        $DB->replace_all_text('data', $columns['asearchtemplate'], $oldclass, $newclass);
+
+        // Data savepoint reached.
+        upgrade_mod_savepoint(true, 2018120301, 'data');
+    }
 
     return true;
 }

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopallocation_random', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['allocationsettings'] = 'Esleipenaren ezarpenak';
 $string['assessmentdeleteddetail'] = 'Ebaluazioaren esleipena kendu da: <strong>{$a->reviewername}</strong> jada ez da <strong>{$a->authorname}</strong>-(e)n ebaluatzailea';
 $string['assesswosubmission'] = 'Partaideek ezer bidali gabe ere ebalua dezakete';
 $string['confignumofreviews'] = 'Lehenetsitako bidalketa-kopurua ausaz esleitzeko';
-$string['excludesamegroup'] = 'Debekatu talde bereko kideen arteko ebaluazioak';
+$string['excludesamegroup'] = 'Saihestu talde bereko kideen arteko ebaluazioak';
 $string['noallocationtoadd'] = 'Ez dago gehitzeko esleipenik';
 $string['nogroupusers'] = '<p>Oharra: Tailerra \'Taldeek elkar ikusten dute\' moduan edo \'Taldeek ezin elkar ikusi\' moduan badago erabiltzaileak gutxienez talde bateko kide izan BEHAR dira erreminta honen bidez parekoen arteko ebaluazioa egin ahal izateko. Halere talderik gabeko erabiltzaileei auto-ebaluazioa esleitu dakieke eta dauzkaten ebaluazioak ezabatu daitezke.</p>
 <p>Hurrengo erabiltzaileek une honetan ez daude inongo taldetan: {$a}</p>';

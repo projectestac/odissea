@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'questionnaire', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,10 @@ $string['activityoverview'] = 'Existem questionários que já expiraram';
 $string['additionalinfo'] = 'Informação adicional';
 $string['additionalinfo_help'] = 'Texto a exibir no topo da primeira página do questionário (ex. instruções, informação geral, objetivos, etc.).';
 $string['addnewquestion'] = 'Adicionar questão do tipo: {$a}';
+$string['addnewsection'] = 'Adicionar nova secção';
+$string['addquestion'] = 'Adicionar questão...';
 $string['addquestions'] = 'Adicionar questões';
+$string['addquestiontosection'] = 'Adicionar questão à secção';
 $string['addselqtype'] = 'Adicionar questão do tipo selecionado';
 $string['alignment'] = 'Alinhamento dos botões de rádio';
 $string['alignment_help'] = 'Selecione o alinhamento dos botões: vertical (predefinido) ou horizontal.';
@@ -92,10 +95,12 @@ $string['configusergraph'] = 'Mostrar gráficos no feedback de "Teste de persona
 $string['configusergraphlong'] = 'Usar a biblioteca <a href="http://www.rgraph.net/"> Rgraph </a>para mostrar gráficos no feedback de "Teste de Personalidade".';
 $string['confirmdelallresp'] = 'Tem a certeza de que pretende apagar TODAS as respostas a este questionário?';
 $string['confirmdelchildren'] = 'Se apagar esta questão, a(s) questão(ões) dependente(s) também será(ão) apagada(s):';
+$string['confirmdeletesection'] = 'Tem a certeza de que pretende apagar a secção de comentários "{$a}"?';
 $string['confirmdelgroupresp'] = 'Tem a certeza de que pretende apagar TODAS as respostas de {$a}?';
 $string['confirmdelquestion'] = 'Tem a certeza de que pretende apagar a questão na posição {$a}?';
 $string['confirmdelquestionresps'] = 'Isso também apagará {$a} resposta(s) já dada(s) a esta questão.';
 $string['confirmdelresp'] = 'Tem a certeza de que pretende apagar a resposta de {$a}?';
+$string['confirmremovequestion'] = 'Tem a certeza de que pretende apagar a pergunta "{$a->qname}" da secção "{$a->sname}"?';
 $string['confpage'] = 'Titulo';
 $string['confpagedesc'] = 'Titulo (a negrito) e texto da mensagem que é mostrado na página de \'Confirmação\'; página exibida após o participante completar o questionário. (Se definir um URL, este tem precedência em relação ao texto de confirmação).';
 $string['confpage_help'] = 'Titulo (a negrito) e texto da mensagem que é mostrado na página de \'Confirmação\' após o participante responder/concluir o questionário. (Se definir um URL, este tem precedência em relação ao texto de confirmação).
@@ -119,10 +124,12 @@ $string['deletedallresp'] = 'TODAS as respostas a este questionário foram apaga
 $string['deletedisabled'] = 'Este item não pode ser apagado';
 $string['deletedresp'] = 'Resposta apagada';
 $string['deleteresp'] = 'Apagar esta resposta';
+$string['deletesection'] = 'Apagar esta secção';
 $string['deletingresp'] = 'A apagar resposta';
 $string['dependencies'] = 'Dependências';
 $string['dependquestion'] = 'Dependente da questão';
 $string['dependquestion_help'] = 'Pode selecionar uma questão e uma opção de resposta da qual esta questão depende. A questão dependente só será exibida ao aluno, se a questão de que depende for respondida com a opção definida.';
+$string['didnotrespondtoquestion'] = 'Não respondeu à questão';
 $string['directwarnings'] = 'As dependências diretas para esta questão serão apagadas. Isso afetará:';
 $string['displaymethod'] = 'Método de exibição não definido para a questão.';
 $string['download'] = 'Descarregar';
@@ -133,6 +140,7 @@ $string['dropdown'] = 'Lista pendente';
 $string['dropdown_help'] = 'Não existe grande vantagem em usar Listas pendentes em vez de Botões de Rádio, exceto quando as opções de resposta são uma lista grande.';
 $string['dropdown_link'] = 'mod/questionnaire/questions#Dropdown_Box';
 $string['edit'] = 'Editar';
+$string['editingfeedback'] = 'A editar as configurações do feedback';
 $string['editingquestionnaire'] = 'Editar configurações';
 $string['editquestion'] = 'Editar questão do tipo: {$a}';
 $string['email'] = 'E-mail';
@@ -157,6 +165,7 @@ $string['event_submitted'] = 'Respostas submedtidas';
 $string['feedback'] = 'Feedback';
 $string['feedbackaddmorefeedbacks'] = 'Adicionar mais {no} campos de feedback';
 $string['feedbackbysection'] = 'Secções de Feedback';
+$string['feedbackdefaultlabel'] = '[Nova secção]';
 $string['feedbackeditingglobal'] = 'Edição do Feedback Global';
 $string['feedbackeditingmessages'] = 'Edição das Mensagens de Feedback';
 $string['feedbackeditingsections'] = 'Edição das Secções de Feedback';
@@ -194,6 +203,7 @@ $string['feedbacksectionheadingmissing'] = 'Deve digitar um título para esta se
 $string['feedbacksectionheadingtext'] = 'Título do Feedback';
 $string['feedbacksectionlabel'] = 'Etiqueta';
 $string['feedbacksectionlabel_help'] = 'Esta etiqueta será utilizada nos gráficos/diagramas. Por favor, mantenha-a o mais curto possível!';
+$string['feedbacksectionquestions'] = '{$a} questões da secção';
 $string['feedbacksections'] = '{$a} secções de feedback';
 $string['feedbacksectionsselect'] = 'Secções';
 $string['feedbacksectionsselect_help'] = 'Disponha as questões para as diversas secções';
@@ -214,12 +224,14 @@ $string['horizontal'] = 'Horizontal';
 $string['id'] = 'ID';
 $string['includechoicecodes'] = 'Incluir código das opções de escolha';
 $string['includechoicetext'] = 'Incluir designação das opções de escolha';
+$string['includeincomplete'] = 'Incluir respostas incompletas';
 $string['incorrectcourseid'] = 'O ID da disciplina está incorreto';
 $string['incorrectmodule'] = 'O ID do módulo da disciplina está incorreto';
 $string['incorrectquestionnaire'] = 'O questionário está incorreto';
 $string['indirectwarnings'] = 'Esta lista mostra as questões dependentes indiretas e as restantes dependências para questões dependentes diretas:';
 $string['invalidresponse'] = 'Resposta inválida';
 $string['invalidresponserecord'] = 'Registo de resposta inválido';
+$string['invalidsectionid'] = 'Especificada secção inválida de feedback.';
 $string['invalidsurveyid'] = 'ID do questionário inválido';
 $string['kindofratescale'] = 'Tipo de escala';
 $string['kindofratescale_help'] = 'Clique com o botão direito do rato na hiperligação abaixo *Mais ajuda*.';
@@ -256,6 +268,7 @@ $string['myresults'] = 'Os seus resultados';
 $string['name'] = 'Nome';
 $string['navigate'] = 'Permitir questões dependentes';
 $string['navigate_help'] = 'Ativar questões Sim/Não e Botões de Rádio de modo a ter questões dependentes das escolhas de respostas no questionário.';
+$string['navigatetosection'] = 'Ir para a secção de feedback';
 $string['next'] = 'Seguinte';
 $string['nextpage'] = 'Página Seguinte';
 $string['nlines'] = '{$a} linhas';
@@ -367,6 +380,7 @@ $string['privacy:metadata:questionnaire_response_other:choice_id'] = 'ID do regi
 $string['privacy:metadata:questionnaire_response_other:question_id'] = 'ID do registo da questão para esta resposta.';
 $string['privacy:metadata:questionnaire_response_other:response'] = 'A resposta de texto específica.';
 $string['privacy:metadata:questionnaire_response_other:response_id'] = 'ID do registo desta resposta.';
+$string['privacy:metadata:questionnaire_response:questionnaireid'] = 'O ID do registo do questionário desta resposta.';
 $string['privacy:metadata:questionnaire_response_rank'] = 'Uma resposta a uma questão de classificação.';
 $string['privacy:metadata:questionnaire_response_rank:choice_id'] = 'ID do registo de escolha para esta resposta.';
 $string['privacy:metadata:questionnaire_response_rank:question_id'] = 'ID do registo da questão para esta resposta.';
@@ -501,6 +515,7 @@ $string['show_nonrespondents'] = 'Sem resposta';
 $string['started'] = 'iniciado';
 $string['strfdate'] = '%d/%m/%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
+$string['strictdateformatting'] = 'Use o formato ano-mês-dia, por exemplo, para 4 de março de 1945: <strong>1945-03-04</strong>';
 $string['subject'] = 'Assunto';
 $string['submissionnotificationhtmlanon'] = 'Existe uma nova <a href="{$a->submissionurl}">submissão</a> do questionário "{$a->name}".';
 $string['submissionnotificationhtmluser'] = '<a href="{$a->profileurl}">{$a->username}</a> fez uma nova <a href="{$a->submissionurl}">submissão</a> do questionário "{$a->name}" na disciplina "{$a->coursename}".';
@@ -535,10 +550,13 @@ $string['theme'] = 'Tema';
 $string['thismonth'] = 'este mês';
 $string['thisresponse'] = 'Esta resposta';
 $string['thisweek'] = 'esta semana';
+$string['thousands'] = 'Não usar separador de milhares.';
 $string['title'] = 'Título do questionário';
 $string['title_help'] = 'Título do questionário que aparece no início de cada página. Por predefinição o título é igual ao nome do questionário mas pode editá-lo como desejar.';
 $string['today'] = 'hoje';
 $string['total'] = 'Total';
+$string['totalofnumbers'] = 'Total de números digitados';
+$string['totalresponses'] = 'Total de respostas à questão';
 $string['type'] = 'Tipo de questão';
 $string['undefinedquestiontype'] = 'Tipo de questão indefinido';
 $string['unknown'] = 'Desconhecido';

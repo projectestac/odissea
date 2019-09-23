@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -123,14 +123,14 @@ $string['periodnone'] = '{$a} inscrito(s)';
 $string['periodstart'] = 'desde {$a}';
 $string['periodstartend'] = 'desde {$a->start} até {$a->end}';
 $string['privacy:metadata:user_enrolments'] = 'Inscrições';
-$string['privacy:metadata:user_enrolments:enrolid'] = 'Instância do módulo de inscrição.';
+$string['privacy:metadata:user_enrolments:enrolid'] = 'A instância do módulo de inscrição';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'O ID do utilizador que modificou pela última vez a inscrição do utilizador.';
-$string['privacy:metadata:user_enrolments:status'] = 'O estado da inscrição do utilizador numa disciplina.';
+$string['privacy:metadata:user_enrolments:status'] = 'O estado da inscrição do utilizador numa disciplina';
 $string['privacy:metadata:user_enrolments:tableexplanation'] = 'O módulo de base de gestão de inscrições armazena os utilizadores inscritos.';
-$string['privacy:metadata:user_enrolments:timecreated'] = 'A data/hora em que a inscrição do utilizador foi criada.';
+$string['privacy:metadata:user_enrolments:timecreated'] = 'A hora em que a inscrição do utilizador foi criada.';
 $string['privacy:metadata:user_enrolments:timeend'] = 'A data/hora em que termina a inscrição do utilizador.';
-$string['privacy:metadata:user_enrolments:timemodified'] = 'A data/hora em que a inscrição do utilizador foi modificada.';
-$string['privacy:metadata:user_enrolments:timestart'] = 'A data/hora em que a inscrição do utilizador inicia.';
+$string['privacy:metadata:user_enrolments:timemodified'] = 'A hora em que a inscrição do utilizador foi modificada.';
+$string['privacy:metadata:user_enrolments:timestart'] = 'A data e hora a que inicia a inscrição do utilizador.';
 $string['privacy:metadata:user_enrolments:userid'] = 'O ID do utilizador.';
 $string['proceedtocourse'] = 'Avançar para o conteúdo da disciplina';
 $string['recovergrades'] = 'Recuperar, se possível, as notas antigas do utilizador';
@@ -140,7 +140,7 @@ $string['rolefromsystem'] = 'Papel "{$a->role}" atribuído no contexto do site';
 $string['rolefromthiscourse'] = 'Papel "{$a->role}" atribuído no contexto da disciplina';
 $string['sendfromcoursecontact'] = 'Do contacto da disciplina';
 $string['sendfromkeyholder'] = 'Do titular da chave';
-$string['sendfromnoreply'] = 'Do endereço Não responder';
+$string['sendfromnoreply'] = 'Do endereço \'Não responder\'';
 $string['startdatetoday'] = 'Hoje';
 $string['synced'] = 'Sincronizado(a)';
 $string['testsettings'] = 'Definições de teste';

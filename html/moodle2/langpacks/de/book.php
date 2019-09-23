@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'book', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -91,7 +91,7 @@ $string['page-mod-book-x'] = 'Jede Seite des Moduls \'Buch\'';
 $string['pluginadministration'] = 'Buch-Administration';
 $string['pluginname'] = 'Buch';
 $string['privacy:metadata'] = 'Das Plugin \'Buch\' speichert keine personenbezogenen Daten.';
-$string['removeallbooktags'] = 'Alle Buchschlagwörter entfernen';
+$string['removeallbooktags'] = 'Alle Buch-Tags entfernen';
 $string['search:activity'] = 'Buch - Beschreibung';
 $string['search:chapter'] = 'Buch - Kapitel';
 $string['showchapter'] = 'Kapitel "{$a}" anzeigen';
@@ -100,6 +100,6 @@ $string['subchapternotice'] = '(Nur verfügbar, sobald das erste Kapitel angeleg
 $string['subplugintype_booktool'] = 'Buchaktivität';
 $string['subplugintype_booktool_plural'] = 'Buchaktivität';
 $string['tagarea_book_chapters'] = 'Buchkapitel';
-$string['tagsdeleted'] = 'Die Buchschlagwörter wurden entfernt.';
+$string['tagsdeleted'] = 'Die Buch-Tags wurden entfernt.';
 $string['toc'] = 'Inhaltsverzeichnis';
 $string['top'] = 'Anfang';

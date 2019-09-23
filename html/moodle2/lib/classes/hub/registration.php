@@ -80,7 +80,7 @@ class registration {
         global $DB;
 
         if (self::$registration === null) {
-            self::$registration = $DB->get_record('registration_hubs', ['huburl' => HUB_MOODLEORGHUBURL]);
+            self::$registration = $DB->get_record('registration_hubs', ['huburl' => HUB_MOODLEORGHUBURL]) ?: null;
         }
 
         if (self::$registration && (bool)self::$registration->confirmed == (bool)$confirmed) {
@@ -406,19 +406,6 @@ class registration {
             return true;
         }
 
-        // Unpublish the courses.
-        try {
-            publication::delete_all_publications($unpublishalladvertisedcourses, $unpublishalluploadedcourses);
-        } catch (moodle_exception $e) {
-            $errormessage = $e->getMessage();
-            $errormessage .= \html_writer::empty_tag('br') .
-                get_string('errorunpublishcourses', 'hub');
-
-            \core\notification::add(get_string('unregistrationerror', 'hub', $errormessage),
-                \core\output\notification::NOTIFY_ERROR);
-            return false;
-        }
-
         // Course unpublish went ok, unregister the site now.
         try {
             api::unregister_site();
@@ -512,13 +499,10 @@ class registration {
             $markasviewed = true;
         } else {
             $showregistration = !empty($CFG->registrationpending);
-            if ($showregistration) {
-                $host = parse_url($CFG->wwwroot, PHP_URL_HOST);
-                if ($host === 'localhost' || preg_match('|^127\.\d+\.\d+\.\d+$|', $host)) {
-                    // If it's a localhost, don't redirect to registration, it won't work anyway.
-                    $showregistration = false;
-                    $markasviewed = true;
-                }
+            if ($showregistration && !site_is_public()) {
+                // If it's not a public site, don't redirect to registration, it won't work anyway.
+                $showregistration = false;
+                $markasviewed = true;
             }
         }
         if ($markasviewed !== null) {

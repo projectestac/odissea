@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'badges', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,18 +28,27 @@ defined('MOODLE_INTERNAL') || die();
 $string['actions'] = 'Actions';
 $string['activate'] = 'Enable access';
 $string['activatesuccess'] = 'Access to the badges was successfully enabled.';
+$string['addalignment'] = 'Add competency';
+$string['addbadge'] = 'Add badges';
 $string['addbadgecriteria'] = 'Add badge criteria';
+$string['addbadge_help'] = 'Select all badges that should be added to this badge requirement. Hold CTRL key to select multiple items.';
+$string['addcohort'] = 'Add cohort';
+$string['addcohort_help'] = 'Select all cohorts that should be added to this badge requirement. Hold CTRL key to select multiple items.';
 $string['addcourse'] = 'Add courses';
 $string['addcourse_help'] = 'Select all courses that should be added to this badge requirement. Hold CTRL key to select multiple items.';
 $string['addcriteria'] = 'Add criteria';
 $string['addcriteriatext'] = 'To start adding criteria, please select one of the options from the drop-down menu.';
+$string['addrelated'] = 'Add related badge';
 $string['addtobackpack'] = 'Add to backpack';
 $string['adminonly'] = 'This page is restricted to site administrators only.';
 $string['after'] = 'after the date of issue.';
 $string['aggregationmethod'] = 'Aggregation method';
+$string['alignment'] = 'Competency';
 $string['all'] = 'All';
 $string['allmethod'] = 'All of the selected conditions are met';
 $string['allmethodactivity'] = 'All of the selected activities are complete';
+$string['allmethodbadges'] = 'All of the selected badges have been earned';
+$string['allmethodcohort'] = 'Membership in all the selected cohorts';
 $string['allmethodcourseset'] = 'All of the selected courses are complete';
 $string['allmethodmanual'] = 'All of the selected roles award the badge';
 $string['allmethodprofile'] = 'All of the selected profile fields have been completed';
@@ -52,6 +61,8 @@ Note: It is recommended to leave this option disabled if the website cannot be a
 $string['any'] = 'Any';
 $string['anymethod'] = 'Any of the selected conditions is met';
 $string['anymethodactivity'] = 'Any of the selected activities is complete';
+$string['anymethodbadges'] = 'Any of the selected badges have been earned';
+$string['anymethodcohort'] = 'Membership in any of the selected cohorts';
 $string['anymethodcourseset'] = 'Any of the selected courses is complete';
 $string['anymethodmanual'] = 'Any of the selected roles awards the badge';
 $string['anymethodprofile'] = 'Any of the selected profile fields has been completed';
@@ -60,7 +71,7 @@ $string['archiveconfirm'] = 'Delete and keep existing issued badges';
 $string['archivehelp'] = '<p>This option means that the badge will be marked as "retired" and will no longer appear in the list of badges. Users will no longer be able to earn this badge, however existing badge recipients will still be able to display this badge on their profile page and push it to their external backpacks.</p>
 <p>If you would like your users to retain access to the earned badges it is important to select this option instead of fully deleting badges.</p>';
 $string['attachment'] = 'Attach badge to message';
-$string['attachment_help'] = 'If enabled, an issued badge file will be attached to the recipient\'s email for download. (Attachments must be enabled in Site administration > Plugins > Message outputs > Email to use this option.)';
+$string['attachment_help'] = 'If enabled, an issued badge will be attached to the recipient\'s email for download. (Attachments must be enabled in Site administration / Server / Email / Outgoing mail configuration to use this option.)';
 $string['award'] = 'Award badge';
 $string['awardedtoyou'] = 'Issued to me';
 $string['awardoncron'] = 'Access to the badges was successfully enabled. Too many users can instantly earn this badge. To ensure site performance, this action will take some time to process.';
@@ -95,7 +106,7 @@ $string['backpackemail_help'] = 'The email address associated with your backpack
 $string['backpackemailverificationpending'] = 'Verification pending';
 $string['backpackemailverifyemailbody'] = 'Hi,
 
-A new connection to your OpenBadges backpack has been requested from \'{$a->sitename}\' using your email address.
+A new connection to your badges backpack has been requested from \'{$a->sitename}\' using your email address.
 
 To confirm and activate the connection to your backpack, please go to
 
@@ -105,7 +116,7 @@ In most mail programs, this should appear as a blue link which you can just clic
 
 If you need help, please contact the site administrator,
 {$a->admin}';
-$string['backpackemailverifyemailsubject'] = '{$a}: OpenBadges Backpack email verification';
+$string['backpackemailverifyemailsubject'] = '{$a}: Badges backpack email verification';
 $string['backpackemailverifypending'] = 'A verification email has been sent to <strong>{$a}</strong>. Click on the verification link in the email to activate your Backpack connection.';
 $string['backpackemailverifysuccess'] = 'Thanks for verifying your email address. You are now connected to your backpack.';
 $string['backpackemailverifytokenmismatch'] = 'The token in the link you clicked does not match the stored token. Make sure you clicked the link in most recent email you received.';
@@ -139,12 +150,18 @@ $string['badgestatus_4'] = 'Archived';
 $string['badgestoearn'] = 'Number of badges available: {$a}';
 $string['badgesview'] = 'Course badges';
 $string['badgeurl'] = 'Issued badge link';
+$string['balignment'] = 'Competencies ({$a})';
 $string['bawards'] = 'Recipients ({$a})';
 $string['bcriteria'] = 'Criteria';
 $string['bdetails'] = 'Edit details';
+$string['bendorsement'] = 'Endorsement';
 $string['bmessage'] = 'Message';
 $string['boverview'] = 'Overview';
+$string['brelated'] = 'Related badges ({$a})';
 $string['bydate'] = 'complete by';
+$string['claim'] = 'Claim';
+$string['claimcomment'] = 'Endorsement comment';
+$string['claimid'] = 'Claim URL';
 $string['clearsettings'] = 'Clear settings';
 $string['completioninfo'] = 'This badge was issued for completing:';
 $string['completionnotenabled'] = 'Course completion is not enabled for this course, so it cannot be included in badge criteria. Course completion may be enabled in the course settings.';
@@ -176,6 +193,10 @@ $string['criteria_5'] = 'Completing a set of courses';
 $string['criteria_5_help'] = 'Allows a badge to be awarded to users who have completed a set of courses. Each course can have additional parameters such as minimum grade and date of course completion.';
 $string['criteria_6'] = 'Profile completion';
 $string['criteria_6_help'] = 'Allows a badge to be awarded to users for completing certain fields in their profile. You can select from default and custom profile fields that are available to users.';
+$string['criteria_7'] = 'Awarded badges';
+$string['criteria_7_help'] = 'Allows a badge to be awarded to users based on the other badges thay have earned.';
+$string['criteria_8'] = 'Cohort membership';
+$string['criteria_8_help'] = 'Allows a badge to be awarded to users based on cohort membership.';
 $string['criteriacreated'] = 'Badge criteria successfully created';
 $string['criteriadeleted'] = 'Badge criteria successfully deleted';
 $string['criteria_descr'] = 'Users are awarded this badge when they complete the following requirement:';
@@ -185,6 +206,8 @@ $string['criteria_descr_2'] = 'This badge has to be awarded by the users with <s
 $string['criteria_descr_4'] = 'Users must complete the course';
 $string['criteria_descr_5'] = '<strong>{$a}</strong> of the following courses have to be completed:';
 $string['criteria_descr_6'] = '<strong>{$a}</strong> of the following user profile fields have to be completed:';
+$string['criteria_descr_7'] = '<strong>{$a}</strong> of the following badges have to be earned:';
+$string['criteria_descr_8'] = 'Membership in <strong>{$a}</strong> of the following cohorts is required:';
 $string['criteria_descr_bydate'] = 'by <em>{$a}</em>';
 $string['criteria_descr_grade'] = 'with minimum grade of <em>{$a}</em>';
 $string['criteria_descr_short0'] = 'Complete <strong>{$a}</strong> of:';
@@ -193,16 +216,22 @@ $string['criteria_descr_short2'] = 'Awarded by <strong>{$a}</strong> of:';
 $string['criteria_descr_short4'] = 'Complete the course';
 $string['criteria_descr_short5'] = 'Complete <strong>{$a}</strong> of:';
 $string['criteria_descr_short6'] = 'Complete <strong>{$a}</strong> of:';
+$string['criteria_descr_short7'] = 'Complete <strong>{$a}</strong> of:';
+$string['criteria_descr_short8'] = 'Cohort membership in <strong>{$a}</strong> of:';
 $string['criteria_descr_single_1'] = 'The following activity has to be completed:';
 $string['criteria_descr_single_2'] = 'This badge has to be awarded by a user with the following role:';
 $string['criteria_descr_single_4'] = 'Users must complete the course';
 $string['criteria_descr_single_5'] = 'The following course has to be completed:';
 $string['criteria_descr_single_6'] = 'The following user profile field has to be completed:';
+$string['criteria_descr_single_7'] = 'The following badge has to be earned:';
+$string['criteria_descr_single_8'] = 'Membership in the following cohort is required:';
 $string['criteria_descr_single_short1'] = 'Complete:';
 $string['criteria_descr_single_short2'] = 'Awarded by:';
 $string['criteria_descr_single_short4'] = 'Complete the course';
 $string['criteria_descr_single_short5'] = 'Complete:';
 $string['criteria_descr_single_short6'] = 'Complete:';
+$string['criteria_descr_single_short7'] = 'Complete:';
+$string['criteria_descr_single_short8'] = 'Membership in:';
 $string['criteriasummary'] = 'Criteria summary';
 $string['criteriaupdated'] = 'Badge criteria successfully updated';
 $string['criterror'] = 'Current parameters issues';
@@ -229,6 +258,7 @@ $string['disconnect'] = 'Disconnect';
 $string['donotaward'] = 'Currently, this badge is not active, so it cannot be awarded to users. If you would like to award this badge, please set its status to active.';
 $string['editsettings'] = 'Edit settings';
 $string['enablebadges'] = 'Enable badges';
+$string['endorsement'] = 'Endorsement';
 $string['error:backpackdatainvalid'] = 'The data return from the backpack was invalid.';
 $string['error:backpackemailnotfound'] = 'The email \'{$a}\' is not associated with a backpack. You need to <a href="http://backpack.openbadges.org">create a backpack</a> for that account or sign in with another email address.';
 $string['error:backpackloginfailed'] = 'You could not be connected to an external backpack for the following reason: {$a}';
@@ -246,17 +276,22 @@ $string['error:connectionunknownreason'] = 'The connection was unsuccessful but 
 $string['error:duplicatename'] = 'Badge with such name already exists in the system.';
 $string['error:externalbadgedoesntexist'] = 'Badge not found';
 $string['error:guestuseraccess'] = 'You are currently using guest access. To see badges you need to log in with your user account.';
-$string['error:invalidbadgeurl'] = 'Invalid badge issuer URL format.';
+$string['error:invalidbadgeurl'] = 'Invalid issuer URL format. The URL should have a prefix http:// or https://.';
 $string['error:invalidcriteriatype'] = 'Invalid criteria type.';
 $string['error:invalidexpiredate'] = 'Expiry date has to be in the future.';
 $string['error:invalidexpireperiod'] = 'Expiry period cannot be negative or equal 0.';
+$string['error:invalidparambadge'] = 'Badge does not exist.';
+$string['error:invalidparamcohort'] = 'Cohort does not exist.';
 $string['error:noactivities'] = 'There are no activities with completion criteria enabled in this course.';
 $string['error:noassertion'] = 'No assertion was returned by Persona. You may have closed the dialog before completing the login process.';
+$string['error:nobadges'] = 'There are no course or site badges with access enabled to be added as criteria.';
+$string['error:nocohorts'] = 'No cohorts';
 $string['error:nocourses'] = 'Course completion is not enabled for any of the courses in this site, so none can be displayed. Course completion may be enabled in the course settings.';
 $string['error:nogroups'] = '<p>There are no public collections of badges available in your backpack. </p>
 <p>Only public collections are shown, <a href="http://backpack.openbadges.org">visit your backpack</a> to create some public collections.</p>';
 $string['error:nopermissiontoview'] = 'You have no permissions to view badge recipients';
 $string['error:nosuchbadge'] = 'Badge with id {$a} does not exist.';
+$string['error:nosuchcohort'] = 'Warning: This cohort is no longer available.';
 $string['error:nosuchcourse'] = 'Warning: This course is no longer available.';
 $string['error:nosuchfield'] = 'Warning: This user profile field is no longer available.';
 $string['error:nosuchmod'] = 'Warning: This activity is no longer available.';
@@ -265,6 +300,7 @@ $string['error:nosuchuser'] = 'User with this email address does not have an acc
 $string['error:notifycoursedate'] = 'Warning: Badges associated with course and activity completions will not be issued until the course start date.';
 $string['error:parameter'] = 'Warning: At least one parameter should be selected to ensure correct badge issuing workflow.';
 $string['error:personaneedsjs'] = 'Currently, Javascript is required to connect to your backpack. If you can, enable Javascript and reload the page.';
+$string['error:relatedbadgedoesntexist'] = 'There is no public badge with this identifier';
 $string['error:requesterror'] = 'The connection request failed (error code {$a}).';
 $string['error:requesttimeout'] = 'The connection request timed out before it could complete.';
 $string['error:save'] = 'Cannot save the badge.';
@@ -300,12 +336,28 @@ $string['externalbadgesp'] = 'Badges from other web sites:';
 $string['externalconnectto'] = 'To display external badges you need to <a href="{$a}">connect to a backpack</a>.';
 $string['fixed'] = 'Fixed date';
 $string['hiddenbadge'] = 'Unfortunately, the badge owner has not made this information available.';
+$string['imageauthoremail'] = 'Image author\'s email';
+$string['imageauthoremail_help'] = 'If specified, the email address of the badge image author is displayed on the badge page.';
+$string['imageauthorname'] = 'Image author\'s name';
+$string['imageauthorname_help'] = 'If specified, the name of the badge image author is displayed on the badge page.';
+$string['imageauthorurl'] = 'Image author\'s URL';
+$string['imageauthorurl_help'] = 'If specified, a link to the badge image author\'s website is displayed on the badge page. The URL should have a prefix http:// or https://.';
+$string['imagecaption'] = 'Image caption';
+$string['imagecaption_help'] = 'If specified, an image caption is displayed on the badge page.';
+$string['invalidurl'] = 'Invalid URL';
 $string['issuancedetails'] = 'Badge expiry';
 $string['issuedbadge'] = 'Issued badge information';
 $string['issuerdetails'] = 'Issuer details';
+$string['issueremail'] = 'Email';
+$string['issueremail_help'] = 'A contact email address of the organisation issuing the endorsement.';
 $string['issuername'] = 'Issuer name';
+$string['issuername_endorsement'] = 'Endorser name';
+$string['issuername_endorsement_help'] = 'The name of the endorser.';
 $string['issuername_help'] = 'Name of the issuing agent or authority.';
 $string['issuerurl'] = 'Issuer URL';
+$string['issuerurl_help'] = 'The website of the organisation issuing the endorsement. The URL should have a prefix http:// or https://.';
+$string['language'] = 'Language';
+$string['language_help'] = 'The language used on the badge page.';
 $string['localbadges'] = 'My badges from {$a} web site';
 $string['localbadgesh'] = 'My badges from this web site';
 $string['localbadgesh_help'] = 'All badges earned within this web site by completing courses, course activities, and other requirements.
@@ -331,17 +383,23 @@ $string['mybadges'] = 'My badges';
 $string['never'] = 'Never';
 $string['newbadge'] = 'Add a new badge';
 $string['newimage'] = 'New image';
+$string['noalignment'] = 'This badge does not have any competencies specified.';
 $string['noawards'] = 'This badge has not been earned yet.';
 $string['nobackpack'] = 'There is no backpack service connected to this account.<br/>';
 $string['nobackpackbadges'] = 'There are no badges in the collections you have selected. <a href="mybackpack.php">Add more collections</a>.';
 $string['nobackpackcollections'] = 'No badge collections have been selected. <a href="mybackpack.php">Add collections</a>.';
 $string['nobadges'] = 'There are no badges available.';
 $string['nocriteria'] = 'Criteria for this badge have not been set up yet.';
+$string['noendorsement'] = 'This badge does not have an endorsement.';
 $string['noexpiry'] = 'This badge does not have an expiry date.';
 $string['noparamstoadd'] = 'There are no additional parameters available to add to this badge requirement.';
+$string['norelated'] = 'This badge does not have any related badges.';
 $string['notacceptedrole'] = 'Your current role assignment is not among the roles that can manually issue this badge.<br/>
 If you would like to see users who have already earned this badge, you can visit {$a} page.';
 $string['notconnected'] = 'Not connected';
+$string['notealignment'] = 'External competencies, skills or standards which the badge covers may be specified. Any competencies are displayed on the badge page.';
+$string['noteendorsement'] = 'An endorsement from a third party may be used to add value to the badge. For example, a badge issued by a teacher may be endorsed by the school, or a badge issued by a local awarding body may be endorsed by the national awarding body.';
+$string['noterelated'] = 'Badges with a connection may be marked as related. For example, badges with the same criteria which are displayed in different languages may be marked as related. Any related badges are displayed on the badge page.';
 $string['nothingtoadd'] = 'There are no available criteria to add.';
 $string['notification'] = 'Notify badge creator';
 $string['notification_help'] = 'This setting manages notifications sent to a badge creator to let them know that the badge has been issued.
@@ -402,7 +460,10 @@ $string['recipientdetails'] = 'Recipient details';
 $string['recipientidentificationproblem'] = 'Cannot find a recipient of this badge among the existing users.';
 $string['recipients'] = 'Badge recipients';
 $string['recipientvalidationproblem'] = 'Current user cannot be verified as a recipient of this badge.';
+$string['relatedbages'] = 'Related badges';
 $string['relative'] = 'Relative date';
+$string['requiredbadge'] = 'At least one badge should be added to the badge criterion.';
+$string['requiredcohort'] = 'At least one cohort should be added to the cohort criterion.';
 $string['requiredcourse'] = 'At least one course should be added to the courseset criterion.';
 $string['reviewbadge'] = 'Changes in badge access';
 $string['reviewconfirm'] = '<p>This will make your badge visible to users and allow them to start earning it.</p>
@@ -443,6 +504,17 @@ $string['statusmessage_2'] = 'This badge is currently not available to users, an
 $string['statusmessage_3'] = 'This badge is currently available to users, and its criteria are locked.';
 $string['statusmessage_4'] = 'This badge is currently archived.';
 $string['subject'] = 'Message subject';
+$string['targetcode'] = 'Code';
+$string['targetcode_help'] = 'A unique string identifier for referencing the competency within its framework.';
+$string['targetdescription'] = 'Description';
+$string['targetdescription_help'] = 'Short description of the alignment target.';
+$string['targetframework'] = 'Framework';
+$string['targetframework_help'] = 'The name of the competency framework.';
+$string['targetname'] = 'Competency name';
+$string['targetname_help'] = 'The competency, skill or standard which the badge covers.';
+$string['targeturl'] = 'URL';
+$string['targeturl_help'] = 'A link to a page describing the competency, skill or standard. The URL should have a prefix http:// or https://.';
+$string['type'] = 'Type';
 $string['variablesubstitution'] = 'Variable substitution in messages.';
 $string['variablesubstitution_help'] = 'In a badge message, certain variables can be inserted into the subject and/or body of a message so that they will be replaced with real values when the message is sent. The variables should be inserted into the text exactly as they are shown below. The following variables can be used:
 
@@ -454,6 +526,8 @@ $string['variablesubstitution_help'] = 'In a badge message, certain variables ca
 
 %badgelink%
 : This will be replaced by the public URL with information about the issued badge.';
+$string['version'] = 'Version';
+$string['version_help'] = 'The version field may be used to keep track of the badge\'s development. If specified, the version is displayed on the badge page.';
 $string['viewbadge'] = 'View issued badge';
 $string['visible'] = 'Visible';
 $string['warnexpired'] = '(This badge has expired!)';

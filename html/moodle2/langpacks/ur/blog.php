@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ur', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'ur', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addnewentry'] = 'نیا اندراج کریں';
 $string['backupblogshelp'] = 'اگر مجاز ہوا تو بلاگز سائٹ کے خودکار بیک اپ میں شامل ہونگے';
-$string['blocktitle'] = 'بلاگ ٹیگز بند ٹائیٹل';
 $string['blog'] = 'بلاگ';
 $string['blogdeleteconfirm'] = 'کیا اس بلاگ کو ختم کر دیں؟';
 $string['blogpreferences'] = 'بلاگ کی پریفرینسز';

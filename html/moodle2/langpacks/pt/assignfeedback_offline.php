@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_offline', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_offline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['gradeupdate'] = 'Definir a nota do aluno {$a->student} para {$a->grade}
 $string['ignoremodified'] = 'Permitir a atualização de registos que foram modificados mais recentemente no Moodle do que no Ficheiro de avaliação.';
 $string['ignoremodified_help'] = 'Quando é descarregado a partir do Moodle, o ficheiro de avaliação contém a data da última modificação para cada uma das notas. Se alguma nota for atualizada no Moodle depois deste ficheiro ser descarregado, o Moodle irá recusar, por predefinição, a substituição desta informação atualizada quando importar as notas. Se ativar esta opção, o Moodle não fará esta verificação de segurança, sendo possível que múltiplos avaliadores substituam as notas uns dos outros.';
 $string['importgrades'] = 'Confirme as alterações no ficheiro de avaliação';
-$string['invalidgradeimport'] = 'O Moodle não conseguiu ler o ficheiro carregado. Assegure-se que o ficheiro foi gravado no formato .csv (valores separados por vírgula) e tente novamente.';
+$string['invalidgradeimport'] = 'O Moodle não conseguiu ler o ficheiro carregado. Assegure-se que o ficheiro foi guardado no formato .csv (valores separados por vírgula) e tente novamente.';
 $string['nochanges'] = 'Não foram encontradas notas alteradas no ficheiro carregado';
 $string['offlinegradingworksheet'] = 'Notas';
 $string['pluginname'] = 'Ficheiro de avaliação';

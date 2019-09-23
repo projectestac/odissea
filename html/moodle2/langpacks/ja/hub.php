@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hub', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['audience_help'] = 'コースが対象とするオーディエンスを�
 $string['audiencestudents'] = '学生';
 $string['badgesnumber'] = 'バッジ数 ({$a})';
 $string['badurlformat'] = '無効なURLフォーマット';
-$string['cannotsearchcommunity'] = '申し訳ございません、あなたにはこのページを閲覧するために適切なパーミッションがありません。';
+$string['cannotsearchcommunity'] = '申し訳ございません、あなたにはこのページを閲覧するための適切なパーミッションがありません。';
 $string['community'] = 'コミュニティ';
 $string['communityremoved'] = 'あなたのリストからコースリンクが削除されました。';
 $string['completeregistration'] = 'Moodle.netの登録を完了する';
@@ -174,7 +174,7 @@ $string['registeredmoodleorg'] = 'Moodle ({$a})';
 $string['registeredon'] = 'あなたが登録されている場所';
 $string['registeredsites'] = '登録済みサイト';
 $string['registereduserdevices'] = '登録モバイルデバイスのユーザ数 ({$a})';
-$string['registermoochtips'] = 'セキュリティ警告の受信および私たちのコース共有プラットフォームMoodle.netにアクセスするにはあなたのサイトをMoodleに登録してください。';
+$string['registermoochtips'] = '登録することにより、あなたはセキュリティ警告を受信できます。あなたのサイトのモバイルアプリプッシュ通知を有効にできます。また、私たちの世界規模のコミュニティのMoodle統計に貢献できます。';
 $string['registersite'] = '{$a} に登録する';
 $string['registerwith'] = 'ハブに登録する';
 $string['registrationconfirmed'] = 'サイト登録承認';
@@ -208,10 +208,10 @@ $string['shareonhub'] = 'このコースをハブにアップロードする';
 $string['sharepublication_help'] = 'このコースのバックアップは他の人がMoodle.netで入手して自分のサイトでリストアおよび利用することができます。';
 $string['siteadmin'] = '管理者';
 $string['siteadmin_help'] = 'サイト管理者のフルネームです。';
-$string['sitecommnews'] = 'Moodleニュースおよび特集を更新する';
-$string['sitecommnews_help'] = 'あなたはMoodleコミュニティで何が起きているか知るため私たちの配信頻度の低いメーリングリストを購読することができます。';
-$string['sitecommnewsno'] = 'いいえ、私はMoodle HQからメールを受信したくありません';
-$string['sitecommnewsyes'] = 'はい、私をMoodleの定期Eニュースレター更新情報に登録してください';
+$string['sitecommnews'] = 'Moodleニュースレター';
+$string['sitecommnews_help'] = 'あなたには私たちのMoodleニュースレターを購読するオプションがあります。あなたはいつでも購読解除できます。';
+$string['sitecommnewsno'] = 'いいえ、私はどのようなメールも受信したくありません';
+$string['sitecommnewsyes'] = 'はい、私はMoodleニュースレターの受信を希望します';
 $string['sitecountry'] = '国';
 $string['sitecountry_help'] = 'あなたの組織が存在する国です。';
 $string['sitecreated'] = 'サイト作成日時';
@@ -235,8 +235,8 @@ $string['siteprivacypublished'] = 'サイト名のみ表示してください';
 $string['siteregconfcomment'] = 'あなたのサイトは {$a} の最終確認が必要です ({$a} のスパムを避けるため)。';
 $string['siteregistrationcontact'] = 'コンタクトフォームを表示する';
 $string['siteregistrationcontact_help'] = 'この設定を有効にした場合、私たちのMoodleコミュニティの他の人 (ログインアカウントが必要な人) は私たちのMoodleコミュニティサイトのフォーム経由であなたに連絡することができます。他の人はあなたのメールアドレスを閲覧することはできません。';
-$string['siteregistrationemail'] = '重要なセキュリティおよび技術的問題に関するメール通知';
-$string['siteregistrationemail_help'] = 'あなたは重要なニュース (セキュリティ問題または新しいリリース) に関して私たちの配信頻度の低いメーリングリストを購読することができます。';
+$string['siteregistrationemail'] = '新しいMoodleリリース、セキュリティ警告およびその他重要ニュースの通知';
+$string['siteregistrationemail_help'] = 'あなたには新しいMoodleリリース、セキュリティ警告およびその他重要ニュースの通知に関して私たちの配信頻度の低いメーリングリストを購読するオプションがあります。';
 $string['siteregistrationupdated'] = 'サイト登録が更新されました。';
 $string['siterelease'] = 'Moodleリリース';
 $string['siterelease_help'] = 'このサイトのMoodleリリースナンバーです。';

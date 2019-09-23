@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -171,9 +171,6 @@ $string['edit'] = 'Edita';
 $string['editedby'] = 'Editat per {$a->name} - Missatge original enviat el {$a->date}';
 $string['editedpostupdated'] = 'El missatge de {$a} s\'ha actualitzat';
 $string['editing'] = 'S\'està editant';
-$string['emaildigest_0'] = 'Rebreu un correu electrònic per cada missatge del fòrum.';
-$string['emaildigest_1'] = 'Rebreu un correu electrònic de resum al dia que contindrà els continguts complets dels missatges del fòrum.';
-$string['emaildigest_2'] = 'Rebreu un correu electrònic de resum al dia que contindrà l\'assumpte de cada missatge del fòrum.';
 $string['emaildigestcompleteshort'] = 'Missatges complets';
 $string['emaildigestdefault'] = 'Per defecte ({$a})';
 $string['emaildigestoffshort'] = 'Sense resum';
@@ -185,8 +182,6 @@ $string['emaildigesttype_help'] = 'El tipus de notificacions que rebreu de cada 
 * Sense resum, missatges complets: rebreu un correu electrònic per cada missatge del fòrum.
 * Resum, missatges complets: rebreu un correu de resum al dia que contindrà els missatges complets del fòrum.
 * Resum, sols assumptes: rebreu un correu de resum al dia que contindrà només els assumptes dels missatges del fòrum.';
-$string['emaildigestupdated'] = 'L\'opció de resum del correu electrònic ha estat canviada a  «{$a->maildigesttitle}» per al fòrum «{$a->forum}». {$a->maildigestdescription}';
-$string['emaildigestupdated_default'] = 'La configuració del vostre perfil per defecte de «{$a->maildigesttitle}» s\'ha usat al fòrum  «{$a->forum}». {$a->maildigestdescription}.';
 $string['emptymessage'] = 'El vostre missatge presentava algun problema. Potser l\'havíeu deixat en blanc, o el fitxer adjunt era massa gran. Els canvis NO s\'han desat.';
 $string['erroremptymessage'] = 'El missatge no pot estar buit';
 $string['erroremptysubject'] = 'La casella «Assumpte» no pot estar buida';
@@ -411,9 +406,6 @@ $string['postbymailsuccess'] = 'El vostre missatge de fòrum amb l\'assumpte «{
 $string['postbymailsuccess_html'] = 'El vostre missatge de fòrum <a href="{$a->discussionurl}"> amb l\'assumpte «{$a->subject}» s\'ha publicat amb èxit.';
 $string['postbyuser'] = '{$a->post} de {$a->user}';
 $string['postincontext'] = 'Mostra aquest missatge en el seu context';
-$string['postmailinfo'] = 'Això és una còpia d\'un missatge enviat al lloc web {$a}.
-
-Per respondre-hi cliqueu damunt d\'aquest enllaç:';
 $string['postmailinfolink'] = 'Aquesta és una còpia d\'un missatge enviat al curs {$a->coursename}.
 Per respondre, feu clic en aquest enllaç: {$a->replylink}';
 $string['postmailnow'] = '<p>Aquest missatge s\'enviarà per correu, immediatament, a tots els subscriptors del fòrum.</p>';

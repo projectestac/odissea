@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'feedback', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,6 @@ $string['append_new_items'] = 'إلحاق عناصر جديدة';
 $string['autonumbering'] = 'أرقام لآلية';
 $string['average'] = 'متوسط';
 $string['bold'] = 'داكن';
-$string['cancel_moving'] = 'الغي النقل';
 $string['check'] = 'متعدد الخيارات - متعدد الاجابات';
 $string['check_values'] = 'الاجابات المحتمله';
 $string['choosefile'] = 'اختر ملف';
@@ -88,16 +87,12 @@ $string['info'] = 'معلومات';
 $string['infotype'] = 'نوع المعلومات';
 $string['insufficient_responses'] = 'إجابات غير كافية';
 $string['item_name'] = 'سؤال';
-$string['line_values'] = 'تقييم';
 $string['messageprovider:message'] = 'تذكير إفادة';
 $string['messageprovider:submission'] = 'إعلامات الإفادة';
 $string['mode'] = 'نمط';
 $string['modulename'] = 'إفادة';
 $string['modulenameplural'] = 'إفادة';
-$string['movedown_item'] = 'أنقل هذا السؤال إلى الأسفل';
-$string['move_here'] = 'أنقل هناء';
 $string['move_item'] = 'أنقل هذا السؤال ';
-$string['moveup_item'] = 'أنقل هذا السؤال إلى الأعلى';
 $string['multichoice'] = 'متعدد الخيارات';
 $string['multichoicetype'] = 'نوع متعدد الخيارات';
 $string['multichoice_values'] = 'قيم متعدد الخيارات';
@@ -117,12 +112,9 @@ $string['numeric_range_to'] = 'المجال إلى:';
 $string['overview'] = 'نظرة عامة';
 $string['page'] = 'صفحة';
 $string['page_after_submit'] = 'الصفحة بعد الإرسال';
-$string['picture'] = 'صورة';
-$string['picture_file_list'] = 'قائمة صور';
 $string['pluginadministration'] = 'إدارة الإفادة';
 $string['pluginname'] = 'إفادة';
 $string['position'] = 'موضع';
-$string['preview'] = 'معاينة';
 $string['previous_page'] = 'صفحة سابقة';
 $string['public'] = 'عام';
 $string['question'] = 'سؤال';
@@ -138,17 +130,13 @@ $string['search_course'] = 'البحث في مقرر دراسي';
 $string['searchcourses'] = 'البحث في المقررات الدراسية';
 $string['send'] = 'إرسل';
 $string['send_message'] = 'ارسل رسالة';
-$string['separator_decimal'] = '.';
-$string['separator_thousand'] = '،';
 $string['show_all'] = 'إظهار الكل';
 $string['show_analysepage_after_submit'] = 'عرض صفحة التحليل بعد الإرسال';
 $string['show_entries'] = 'عرض الردود';
 $string['show_entry'] = 'إظهار إجابة';
 $string['show_nonrespondents'] = 'معاينة غير المستجيبين';
 $string['sort_by_course'] = 'أفرز حسب المقرر الدراسي';
-$string['start'] = 'إبداء';
 $string['started'] = 'بداء';
-$string['stop'] = 'انتهى';
 $string['subject'] = 'موضوع';
 $string['switch_item_to_not_required'] = 'تغيير إلى: الجواب غير مطلوب';
 $string['switch_item_to_required'] = 'تغيير إلى: الجواب مطلوب';

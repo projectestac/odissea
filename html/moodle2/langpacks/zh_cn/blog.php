@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['autotags'] = '添加这些标签';
 $string['autotags_help'] = '在此输入一个或多个本地标签（用半角逗号分隔）。所有从您的外部博客拷贝到本地博客的文章都会被自动加上这些标签。';
 $string['backupblogshelp'] = '如果启用，所有博客将被包含在网站自动备份中';
 $string['blockexternalstitle'] = '外部博客';
-$string['blocktitle'] = '博客分类的版块名称';
 $string['blog'] = '博客';
 $string['blogaboutthis'] = '关于此{$a->type}的博客';
 $string['blogaboutthiscourse'] = '发篇关于此课程的博客';

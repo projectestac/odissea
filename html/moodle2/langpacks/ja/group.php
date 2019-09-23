@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'group', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,8 @@ $string['deleteselectedgroup'] = '選択したグループを削除する';
 $string['editgroupingsettings'] = 'グルーピング設定を編集する';
 $string['editgroupsettings'] = 'グループ設定を編集する';
 $string['editusersgroupsa'] = '「 {$a} 」のグループを編集する';
+$string['enablemessaging'] = 'グループメッセージング';
+$string['enablemessaging_help'] = 'この設定を有効にした場合、グループメンバーはメッセージングドロワを使用してグループ内の他の人にメッセージを送信することができます。';
 $string['enrolmentkey'] = '登録キー';
 $string['enrolmentkeyalreadyinuse'] = 'この登録キーはすでに別のグループで使用されています。';
 $string['enrolmentkey_help'] = '登録キーによりキーを知っているユーザにのみ限定してコースへのアクセスを許可することができます。グループ登録キーが指定された場合、そのキーによりユーザがコースに入ることができるようになるだけではなく、自動的にこのグループのメンバーとして登録されます。
@@ -140,7 +142,7 @@ $string['importgroups_help'] = 'テキストファイル経由でグループを
 * それぞれのレコードはカンマ区切りのデータです。
 * 先頭レコードには残りのデータのフォーマットを定義したフィールド名を記述してください。
 * 必須フィールド名は「groupname」です。
-* 任意フィールド名は「description」「enrolmentkey」「picture」「hidepicture」です。';
+* 任意フィールド名は「groupidnumber」「description」「enrolmentkey」「groupingname」です。';
 $string['includeonlyactiveenrol'] = 'アクティブな登録のみ含む';
 $string['includeonlyactiveenrol_help'] = 'この設定を有効にした場合、利用停止ユーザはグループに含まれません。';
 $string['javascriptrequired'] = 'このページではJavaScriptを有効にする必要があります。';
@@ -173,6 +175,7 @@ $string['overview'] = '概要';
 $string['potentialmembers'] = '潜在的メンバー: {$a}';
 $string['potentialmembs'] = '潜在的メンバー';
 $string['printerfriendly'] = 'プリンタフレンドリ表示';
+$string['privacy:metadata:core_message'] = 'グループ会話';
 $string['privacy:metadata:groups'] = 'グループメンバーシップのレコードです。';
 $string['privacy:metadata:groups:groupid'] = 'グループのIDです。';
 $string['privacy:metadata:groups:timeadded'] = 'タイムスタンプはユーザがグループに追加された日時を示します。';

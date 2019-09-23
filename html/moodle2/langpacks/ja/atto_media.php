@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['descriptionssourcelabel'] = '説明トラックURL';
 $string['displayoptions'] = 'オプションを表示する';
 $string['entername'] = '名称を入力する';
 $string['entersource'] = 'ソースURL';
+$string['entertitle'] = 'タイトルを入力する';
 $string['enterurl'] = 'URLを入力する';
 $string['height'] = '高さ';
 $string['kind'] = 'タイプ';
@@ -66,7 +67,7 @@ $string['metadata'] = 'メタデータ';
 $string['metadata_help'] = 'スクスクリプトから使用されるメタデータトラックはプレイヤがメタデータをサポートする場合のみ使用することができます。';
 $string['metadatasourcelabel'] = 'メタデータトラックURL';
 $string['mute'] = 'ミュート';
-$string['pluginname'] = 'メディア';
+$string['pluginname'] = 'オーディオ/ビデオファイルを挿入または編集します。';
 $string['poster'] = 'サムネイルURL';
 $string['privacy:metadata'] = 'atto_mediaプラグインはどのような個人データも保存しません。';
 $string['remove'] = '削除';

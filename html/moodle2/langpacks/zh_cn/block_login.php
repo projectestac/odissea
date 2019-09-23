@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_login', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_login', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   block_login
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

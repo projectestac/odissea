@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_ldap', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,7 +60,7 @@ $string['auth_ldap_groupecreators'] = 'Elenco dei gruppi o dei contesti i cui me
 $string['auth_ldap_groupecreators_key'] = 'Creatori di gruppi';
 $string['auth_ldap_host_url'] = 'URL del server LDAP, ad esempio \'ldap://ldap.myorg.com/\' oppure \'ldaps://ldap.myorg.com/\'. Per impostare più server per il supporto al failover, separare gli URL con \';\'.';
 $string['auth_ldap_host_url_key'] = 'URL dell\'host';
-$string['auth_ldap_ldap_encoding'] = 'La codifica usata dal server LDAP, di solito utf-8. MS AD v2 usa la codifica default della piattaforma, come cp1252, cp1250, ecc.';
+$string['auth_ldap_ldap_encoding'] = 'La codifica usata dal server LDAP, di solito utf-8. Selezionando LDAP v2, MS AD utilizzerà la propria codifica, come cp1252 o cp125.';
 $string['auth_ldap_ldap_encoding_key'] = 'Codifica LDAP';
 $string['auth_ldap_login_settings'] = 'Impostazioni login';
 $string['auth_ldap_memberattribute'] = 'Opzionale: modifica l\'attributo user member nel caso gli utenti appartengano ad un gruppo. Di solito \'member\'';
@@ -119,7 +119,7 @@ $string['auth_ntlmsso_subnet'] = 'L\'impostazione consente l\'SSO solo dai clien
 $string['auth_ntlmsso_subnet_key'] = 'Subnet';
 $string['auth_ntlmsso_type'] = 'Il metodo di autenticazione configurato nel web server per autenticare gli utenti (se sei in dubbio scegli NTLM)';
 $string['auth_ntlmsso_type_key'] = 'Tipo di autenticazione';
-$string['cannotmaprole'] = 'Non è possibile mappare Il ruolo  "{$a->rolename}" poiché è troppo lungo il suo nome abbreviato "{$a->shortname}". Per poterlo mappare, è necessario ridurre la lunghezza a {$a->charlimit} caratteri. <a href="{$a->link}">Modifica i campi del profilo utente.</a>';
+$string['cannotmaprole'] = 'Non è possibile mappare Il ruolo  "{$a->rolename}" poiché il suo nome abbreviato "{$a->shortname}" è troppo lungo oppure contiene trattini. Per poterlo mappare, è necessario ridurre la lunghezza a {$a->charlimit} caratteri e/o rimuovere i tratini. <a href="{$a->link}">Modifica il ruolo.</a>';
 $string['connectingldap'] = 'Connessione al server LDAP...';
 $string['connectingldapsuccess'] = 'La connessione al server LDAP è avvenuta correttamente';
 $string['creatingtemptable'] = 'Creazione tabella temporanea {$a}';
@@ -127,7 +127,7 @@ $string['didntfindexpiretime'] = 'password_expire() non ha trovato la data di sc
 $string['didntgetusersfromldap'] = 'LDAP non ha restituito nessun acccount -- un errore ? --';
 $string['gotcountrecordsfromldap'] = 'LDAP ha restituito {$a} record';
 $string['ldapnotconfigured'] = 'L\'URL dell\'host LDAP non è configurata';
-$string['morethanoneuser'] = 'Strano! LDAP ha restituito più account dello stesso utente. Verrà usato il primo.';
+$string['morethanoneuser'] = 'LDAP ha restituito più account dello stesso utente. Verrà usato il primo.';
 $string['needbcmath'] = 'Per verificare le password scadute su Active Directory occorre l\'estensione BCMath';
 $string['needmbstring'] = 'Per cambiare password in Active Directory occorre l\'estensione mbstring.';
 $string['nodnforusername'] = 'Si è verificato un errore in user_update_password(). Nessun DN per: {$a->username}';
@@ -156,7 +156,7 @@ $string['synctask'] = 'Sincronizzazione utenti LDAP';
 $string['systemrolemapping'] = 'Mappatura ruoli di sistema';
 $string['updatepasserror'] = 'Errore in user_update_password(). Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Si è verificato un errore in user_update_password() durante la lettura della data di scadenza della password. Codice errore: {$a->errno}; messagio di errore: {$a->errstring}';
-$string['updatepasserrorexpiregrace'] = 'Errore in user_update_password() durante la modifica di expirationtime e/o gracelogin. Error code: {$a->errno}; Error string: {$a->errstring}';
+$string['updatepasserrorexpiregrace'] = 'Errore in user_update_password() durante la modifica della data di scadenza e/o gracelogin. Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updateremfail'] = 'Errore durante l\'aggiornamento del record LDAP. Error code: {$a->errno}; Error string: {$a->errstring}<br/>Key ({$a->key}) - valore moodle precedente: \'{$a->ouvalue}\' nuovo valore: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Errore durante l\'aggiornamento LDAP con il campo ambiguo {$a->key}; valore moodle precedente: \'{$a->ouvalue}\' nuovo valore: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'L\'utente non è stato trovato durante l\'aggiornamento dei dati esterni. Dettagli: search base: \'{$a->userdn}\'; search filter: \'(objectClass=*)\'; search attributes: {$a->attribs}';

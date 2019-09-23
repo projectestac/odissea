@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -328,7 +328,6 @@ $string['listcantmoveleft'] = 'فشل في التحرك البند اليسار�
 $string['listnoitem'] = 'لم يتم إيجاد العنصر';
 $string['logfilenotavailable'] = 'السجلات غير متوفرة';
 $string['maxareabytes'] = 'الملف أكبر من المساحة المتبقية في هذه المنطقة.';
-$string['maxbytes'] = 'حجم هذا الملف اكبر من الحجم المسموح به';
 $string['maxbytesfile'] = 'حجم الملف {$a->file} كبير جداً . الحد الأقصى الذي تستطيع رفعه هو {$a->size}.';
 $string['messagingdisable'] = 'نظام الرسائل معطل في هذا الموقع';
 $string['missingfield'] = 'الحقل "{$a}" غير موجود';

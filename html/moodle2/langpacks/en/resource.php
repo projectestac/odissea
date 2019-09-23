@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'resource', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,7 +71,7 @@ $string['legacyfilesactive'] = 'Active';
 $string['legacyfilesdone'] = 'Finished';
 $string['modifieddate'] = 'Modified {$a}';
 $string['modulename'] = 'File';
-$string['modulename_help'] = 'The file module enables a teacher to provide a file as a course resource. Where possible, the file will be displayed within the course interface; otherwise students will be prompted to download it. The file may include supporting files, for example an HTML page may have embedded images or Flash objects.
+$string['modulename_help'] = 'The file module enables a teacher to provide a file as a course resource. Where possible, the file will be displayed within the course interface; otherwise students will be prompted to download it. The file may include supporting files, for example an HTML page may have embedded images.
 
 Note that students need to have the appropriate software on their computers in order to open the file.
 
@@ -79,7 +79,7 @@ A file may be used
 
 * To share presentations given in class
 * To include a mini website as a course resource
-* To provide draft files of certain software programs (eg Photoshop .psd) so students can edit and submit them for assessment';
+* To provide draft files of software programs so students can edit and submit them for assessment';
 $string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Files';
 $string['notmigrated'] = 'This legacy resource type ({$a}) was not yet migrated, sorry.';
@@ -95,7 +95,7 @@ $string['popupwidth'] = 'Pop-up width (in pixels)';
 $string['popupwidthexplain'] = 'Specifies default width of popup windows.';
 $string['printintro'] = 'Display resource description';
 $string['printintroexplain'] = 'Display resource description below content? Some display types may not display description even if enabled.';
-$string['privacy:metadata'] = 'The mod_resource plugin does not store any personal data.';
+$string['privacy:metadata'] = 'The File resource plugin does not store any personal data.';
 $string['resource:addinstance'] = 'Add a new resource';
 $string['resourcecontent'] = 'Files and subfolders';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

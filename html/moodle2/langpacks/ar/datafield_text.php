@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_text', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'datafield_text', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   datafield_text
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'حقل النص';
+$string['pluginname'] = 'النص المدخل';
+$string['privacy:metadata'] = 'لا يخزن  Text field component  أيّ بيانات شخصية ، فهو يستخدم الجداول المعرفة في mod_data.';

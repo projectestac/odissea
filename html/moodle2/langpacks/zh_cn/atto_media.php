@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['descriptionssourcelabel'] = '描述轨道网址';
 $string['displayoptions'] = '显示选项';
 $string['entername'] = '输入名称';
 $string['entersource'] = '源网址';
+$string['entertitle'] = '输入标题';
 $string['enterurl'] = '输入网址';
 $string['height'] = '高度';
 $string['kind'] = '类型';
@@ -66,7 +67,7 @@ $string['metadata'] = '元数据';
 $string['metadata_help'] = '元数据轨道，用于脚本的使用，只有在播放器支持元数据时才会使用。';
 $string['metadatasourcelabel'] = '元数据轨道网址';
 $string['mute'] = '柔和的';
-$string['pluginname'] = '媒体';
+$string['pluginname'] = '插入或编辑音频/视频文件';
 $string['poster'] = '缩略图URL';
 $string['privacy:metadata'] = 'atto_media 插件不储存任何私人数据。';
 $string['remove'] = '移除';

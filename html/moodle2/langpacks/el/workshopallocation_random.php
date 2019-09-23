@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopallocation_random', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = 'Προσθέστε αυτοαξιολογήσεις';
 $string['allocationaddeddetail'] = 'Νέα αξιολόγηση: Ο/Η <strong>{$a->reviewername}</strong> είναι εξεταστής του <strong>{$a->authorname}</strong>';
-$string['allocationdeallocategraded'] = 'Δεν είναι δυνατή η ακύρωση εκχώρησης ήδη βαθμολογημένης αξιολόγησης: εξεταστής: <strong>{$a->reviewername}</strong>, συγγραφέας υποβολής: <strong>{$a->authorname}</strong>';
+$string['allocationdeallocategraded'] = 'Δεν είναι δυνατή η ακύρωση εκχώρησης της ήδη βαθμολογημένης αξιολόγησης... εξεταστής: <strong>{$a->reviewername}</strong>, συγγραφέας υποβολής: <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Επαναχρησιμοποίηση αξιολόγησης: Ο/Η <strong>{$a->reviewername}</strong> διατηρήθηκε ως εξεταστής του <strong>{$a->authorname}</strong>';
 $string['allocationsettings'] = 'Ρυθμίσεις εκχώρησης';
 $string['assessmentdeleteddetail'] = 'Ακύρωση εκχώρησης αξιολόγησης: Ο/Η <strong>{$a->reviewername}</strong> δεν είναι πλέον εξεταστής του/της <strong>{$a->authorname}</strong>';
@@ -37,7 +37,7 @@ $string['excludesamegroup'] = 'Αποτρέψτε την εξέταση από �
 $string['noallocationtoadd'] = 'Καμία εκχώρηση για να προστεθεί';
 $string['nogroupusers'] = '<p>Προειδοποίηση: Εάν το εργαστήριο βρίσκεται σε λειτουργία «ορατές ομάδες» ή «ξεχωριστές ομάδες», τότε οι χρήστες ΠΡΕΠΕΙ να είναι μέρος τουλάχιστον μιας ομάδας για να τους εκχωρηθούν αξιολογήσεις από ομότιμους χρήστες με αυτό το εργαλείο. Οι χρήστες που δεν είναι μέλη ομάδας μπορούν πάντως να λάβουν νέες αυτο-αξιολογήσεις ή να καταργήσουν υπάρχουσες αξιολογήσεις.</p>
 <p>Αυτοί οι χρήστες δεν βρίσκονται αυτήν τη στιγμή σε ομάδα: {$a}</p>';
-$string['numofdeallocatedassessment'] = 'Ακύρωση εκχώρησης {$a} αξιολογήσεων (-ης)';
+$string['numofdeallocatedassessment'] = 'Ακύρωση εκχώρησης {$a} αξιολογήσεων/-όγησης';
 $string['numofrandomlyallocatedsubmissions'] = 'Τυχαία ανάθεση {$a} εκχωρήσεων...';
 $string['numofreviews'] = 'Αριθμός αξιολογήσεων';
 $string['numofselfallocatedsubmissions'] = 'Αυτο-εκχώρηση {$a} υποβολών (-ής)...';

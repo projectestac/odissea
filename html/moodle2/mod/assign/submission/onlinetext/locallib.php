@@ -232,6 +232,9 @@ class assign_submission_onlinetext extends assign_submission_plugin {
         if (!empty($submission->userid) && ($submission->userid != $USER->id)) {
             $params['relateduserid'] = $submission->userid;
         }
+        if ($this->assignment->is_blind_marking()) {
+            $params['anonymous'] = 1;
+        }
         $event = \assignsubmission_onlinetext\event\assessable_uploaded::create($params);
         $event->trigger();
 
@@ -396,8 +399,8 @@ class assign_submission_onlinetext extends assign_submission_plugin {
         $onlinetextsubmission = $this->get_onlinetext_submission($submission->id);
 
         // Note that this check is the same logic as the result from the is_empty function but we do
-        // not call it directly because we alread have the submission record.
-        if ($onlinetextsubmission && !empty($onlinetextsubmission->onlinetext)) {
+        // not call it directly because we already have the submission record.
+        if ($onlinetextsubmission) {
             // Do not pass the text through format_text. The result may not be displayed in Moodle and
             // may be passed to external services such as document conversion or portfolios.
             $formattedtext = $this->assignment->download_rewrite_pluginfile_urls($onlinetextsubmission->onlinetext, $user, $this);
@@ -577,12 +580,17 @@ class assign_submission_onlinetext extends assign_submission_plugin {
     public function is_empty(stdClass $submission) {
         $onlinetextsubmission = $this->get_onlinetext_submission($submission->id);
         $wordcount = 0;
+        $hasinsertedresources = false;
 
         if (isset($onlinetextsubmission->onlinetext)) {
             $wordcount = count_words(trim($onlinetextsubmission->onlinetext));
+            // Check if the online text submission contains video, audio or image elements
+            // that can be ignored and stripped by count_words().
+            $hasinsertedresources = preg_match('/<\s*((video|audio)[^>]*>(.*?)<\s*\/\s*(video|audio)>)|(img[^>]*>(.*?))/',
+                    trim($onlinetextsubmission->onlinetext));
         }
 
-        return $wordcount == 0;
+        return $wordcount == 0 && !$hasinsertedresources;
     }
 
     /**
@@ -599,12 +607,17 @@ class assign_submission_onlinetext extends assign_submission_plugin {
             return true;
         }
         $wordcount = 0;
+        $hasinsertedresources = false;
 
         if (isset($data->onlinetext_editor['text'])) {
             $wordcount = count_words(trim((string)$data->onlinetext_editor['text']));
+            // Check if the online text submission contains video, audio or image elements
+            // that can be ignored and stripped by count_words().
+            $hasinsertedresources = preg_match('/<\s*((video|audio)[^>]*>(.*?)<\s*\/\s*(video|audio)>)|(img[^>]*>(.*?))/',
+                    trim((string)$data->onlinetext_editor['text']));
         }
 
-        return $wordcount == 0;
+        return $wordcount == 0 && !$hasinsertedresources;
     }
 
     /**

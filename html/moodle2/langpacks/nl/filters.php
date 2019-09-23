@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filters', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['actfilterhdr'] = 'Actieve filters';
 $string['addfilter'] = 'Voeg filter toe';
 $string['anycategory'] = 'alle categorieën';
 $string['anycourse'] = 'alle cursussen';
+$string['anycourses'] = 'Aangemeld in een cursus';
 $string['anyfield'] = 'alle velden';
 $string['anyrole'] = 'alle rollen';
 $string['anyvalue'] = 'alle waarden';
@@ -41,7 +42,7 @@ $string['coursecategory'] = 'Cursuscategorie';
 $string['courserole'] = 'Cursusrol';
 $string['courserolelabel'] = '{$a->label} is {$a->rolename} in {$a->coursename} van {$a->categoryname}';
 $string['courserolelabelerror'] = '{$a->label} fout: cursus {$a->coursename} bestaat niet';
-$string['coursevalue'] = 'cursus waarde';
+$string['coursevalue'] = 'cursuswaarde';
 $string['datelabelisafter'] = '{$a->label} is na {$a->after}';
 $string['datelabelisbefore'] = '{$a->label} is voor {$a->before}';
 $string['datelabelisbetween'] = '{$a->label} is tussen {$a->after} en {$a->before}';
@@ -64,7 +65,7 @@ $string['isanyvalue'] = 'is willekeurige waarde';
 $string['isbefore'] = 'is voor';
 $string['isdefined'] = 'is bepaald';
 $string['isempty'] = 'is leeg';
-$string['isequalto'] = 'gelijk aan';
+$string['isequalto'] = 'is gelijk aan';
 $string['isnotdefined'] = 'is niet gedefinieerd';
 $string['isnotequalto'] = 'is niet gelijk aan';
 $string['limiterfor'] = '{$a} veldscheidingsteken';

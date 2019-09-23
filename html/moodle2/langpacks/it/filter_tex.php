@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filter_tex', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,10 +30,10 @@ $string['convertformat'] = 'Formato immagine in output';
 $string['filtername'] = 'Notazione TeX';
 $string['latexpreamble'] = 'Preambolo LaTex';
 $string['latexsettings'] = 'Impostazioni di rendering LaTex';
-$string['pathconvert'] = 'Percorso per l\'eseguibile <i>convert</i>';
-$string['pathdvips'] = 'Percorso per l\'eseguibile <i>dvips</i>';
-$string['pathdvisvgm'] = 'Percorso per l\'eseguibile i>dvisvgm</i>';
-$string['pathlatex'] = 'Percorso per l\'eseguibile <i>latex</i>';
+$string['pathconvert'] = 'Percorso dell\'eseguibile <i>convert</i>';
+$string['pathdvips'] = 'Percorso dell\'eseguibile <i>dvips</i>';
+$string['pathdvisvgm'] = 'Percorso dell\'eseguibile i>dvisvgm</i>';
+$string['pathlatex'] = 'Percorso dell\'eseguibile <i>latex</i>';
 $string['pathmimetex'] = 'Percorso del codice binario <i>mimetex</i>';
 $string['pathmimetexdesc'] = 'In assenza di un percorso valido, Moodle utilizzerà il proprio eseguibile binario';
 $string['privacy:metadata'] = 'Il plugin "Notazione TeX" non memorizza dati personali.';

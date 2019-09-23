@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_calculated', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -134,7 +134,7 @@ $string['synchronize'] = 'Sincronizza i dati dei dataset condivisi con altre dom
 $string['synchronizeno'] = 'Non sincronizzare';
 $string['synchronizeyes'] = 'Sincronizza';
 $string['synchronizeyesdisplay'] = 'Sincronizza e visualizza il nome del dataset condiviso come prefisso del nome della domanda';
-$string['tolerance'] = 'Tolleranza &plusmn;';
+$string['tolerance'] = 'Tolleranza ±';
 $string['tolerancetype'] = 'Tipo';
 $string['trueanswerinsidelimits'] = 'Risposta corretta: {$a->correct} dentro i limiti del valore vero {$a->true}';
 $string['trueansweroutsidelimits'] = '<span class="error">ERRORE Risposta corretta: {$a->correct} fuori dai limiti del valore vero {$a->true}</span>';

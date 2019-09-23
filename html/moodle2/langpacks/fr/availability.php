@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,5 +67,5 @@ $string['restrictbygroup'] = 'Ajouter une restriction de groupe/groupement';
 $string['setheading'] = '{$a->number} jeu de {$a->count} restriction(s)';
 $string['shown_all'] = 'Affiché en grisé si les conditions ne sont pas remplies par l\'utilisateur';
 $string['shown_individual'] = 'Affiché en grisé si cette condition n\'est pas remplie par l\'utilisateur';
-$string['show_verb'] = 'Cliquer pour afficher';
+$string['show_verb'] = 'Cliquer pour afficher en grisé';
 $string['unknowncondition'] = 'Condition inconnue (plugin de condition supprimé)';

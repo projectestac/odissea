@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploaduser', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,7 @@ $string['uploadpicture_overwrite'] = 'Αντικατάσταση υφιστάμ�
 $string['uploadpictures'] = 'Ανέβασμα εικόνων χρηστών';
 $string['uploadpictures_help'] = 'Εικόνες χρηστών μπορούν να ανεβούν ως ένα zip συμπιεσμένο αρχείο με εικόνες. Τα αρχεία εικόνων πρέπει να ονομάζονται επιλεγμένος-χρήστης-ιδιότητα.επέκταση, για παράδειγμα χρήστης1234.jpg για ένα χρήστη με όνομα χρήστη χρήστης1234.';
 $string['uploadpicture_userfield'] = 'Ιδιότητα χρήστη για ταίριασμα εικόνων:';
-$string['uploadpicture_usernotfound'] = 'Ο χρήστης με \'{$a->userfield}\' τιμή του \'{$a->uservalue}\' δεν υπάρχει. Παράλειψη χρήστη.';
+$string['uploadpicture_usernotfound'] = 'Ο χρήστης με «{$a->userfield}» τιμή του «{$a->uservalue}» δεν υπάρχει. Παράλειψη χρήστη.';
 $string['uploadpicture_userskipped'] = 'Παράλειψη χρήστη {$a} (ο χρήστης έχει ειόνα ήδη).';
 $string['uploadpicture_userupdated'] = 'Ανανέωση εικόνας για το χρήστη {$a}.';
 $string['uploadusers'] = 'Εισαγωγή χρηστών';

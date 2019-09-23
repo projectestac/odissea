@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Categorie toevoegen';
 $string['addcomment'] = 'Voeg commentaar toe';
 $string['addentry'] = 'Voeg een item toe';
 $string['addingcomment'] = 'Commentaar toevoegen';
@@ -113,6 +114,7 @@ $string['defaultsortkey'] = 'Standaard sorteersleutel';
 $string['defaultsortorder'] = 'Standaard sorteervolgorde';
 $string['definition'] = 'Definitie';
 $string['definitions'] = 'Definities';
+$string['deletecategory'] = 'Categorie verwijderen';
 $string['deleteentry'] = 'Verwijder woord';
 $string['deleteentrya'] = 'Verwijder item: {$a}';
 $string['deletenotenrolled'] = 'Verwijder items van niet aangemelde gebruikers';
@@ -147,6 +149,7 @@ $string['duplicateentry'] = 'Dupliceer item';
 $string['editalways'] = 'Bewerken altijd toestaan';
 $string['editalways_help'] = 'Deze instelling bepaalt of items altijd bewerkt kunnen worden of dat leerlingen ze slechts gedurende een geconfigureerde bewerktijd (gewoonlijk 30 minuten) kunnen aanpassen.';
 $string['editcategories'] = 'Bewerk categorieën';
+$string['editcategory'] = 'Categorie bewerken';
 $string['editentry'] = 'Bewerk item';
 $string['editentrya'] = 'Bewerk item: {$a}';
 $string['editingcomment'] = 'Bewerk commentaar';
@@ -160,6 +163,7 @@ $string['entrydeleted'] = 'Item verwijderd';
 $string['entryexported'] = 'Item met succes geëxporteerd';
 $string['entryishidden'] = '(dit item is verborgen)';
 $string['entryleveldefaultsettings'] = 'Standaardinstellingen invoer';
+$string['entrylink'] = 'Item link: {$a}';
 $string['entrysaved'] = 'Dit item is bewaard';
 $string['entryupdated'] = 'Dit item is geüpdatet';
 $string['entryusedynalink'] = 'Dit item wordt<br />automatisch gelinkt';

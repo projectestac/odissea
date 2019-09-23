@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -376,7 +376,6 @@ $string['logfilenotavailable'] = 'Registros no disponibles';
 $string['loginasnoenrol'] = 'No puede usar matricular o desmatricular cuando está en curso una sesión "Entrar como"';
 $string['loginasonecourse'] = 'No puede entrar a este curso.<br /> Debe terminar la sesión "Entrar como" antes de entrar a cualquier otro curso.';
 $string['maxareabytes'] = 'Este archivo es mayor que el espacio  disponible en este área.';
-$string['maxbytes'] = 'El tamaño de este archivo supera el máximo permitido.';
 $string['maxbytesfile'] = 'El archivo {$a->file} es demasiado grande. El tamaño de subida máximo es {$a->size}.';
 $string['messagingdisable'] = 'El envío de mensajes esta deshabilitado en este sitio';
 $string['mimetexisnotexist'] = 'Su sistema no está configurado para ejecutar mimeTeX. Usted necesita descargar el ejecutable adecuado para su plataforma PHP_OS de <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, o obtener el código fuente C de <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, compilarlo y colocar el ejecutable dentro de su directorio moodle/filter/tex/';

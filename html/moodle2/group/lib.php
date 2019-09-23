@@ -107,6 +107,11 @@ function groups_add_member($grouporid, $userorid, $component=null, $itemid=0) {
     // Invalidate the group and grouping cache for users.
     cache_helper::invalidate_by_definition('core', 'user_group_groupings', array(), array($userid));
 
+    // Group conversation messaging.
+    if ($conversation = \core_message\api::get_conversation_by_area('core_group', 'groups', $groupid, $context->id)) {
+        \core_message\api::add_members_to_conversation([$userid], $conversation->id);
+    }
+
     // Trigger group event.
     $params = array(
         'context' => $context,
@@ -211,6 +216,12 @@ function groups_remove_member($grouporid, $userorid) {
     // Invalidate the group and grouping cache for users.
     cache_helper::invalidate_by_definition('core', 'user_group_groupings', array(), array($userid));
 
+    // Group conversation messaging.
+    $context = context_course::instance($group->courseid);
+    if ($conversation = \core_message\api::get_conversation_by_area('core_group', 'groups', $groupid, $context->id)) {
+        \core_message\api::remove_members_from_conversation([$userid], $conversation->id);
+    }
+
     // Trigger group event.
     $params = array(
         'context' => context_course::instance($group->courseid),
@@ -233,7 +244,7 @@ function groups_remove_member($grouporid, $userorid) {
  * @return id of group or false if error
  */
 function groups_create_group($data, $editform = false, $editoroptions = false) {
-    global $CFG, $DB;
+    global $CFG, $DB, $USER;
 
     //check that courseid exists
     $course = $DB->get_record('course', array('id' => $data->courseid), '*', MUST_EXIST);
@@ -274,6 +285,21 @@ function groups_create_group($data, $editform = false, $editoroptions = false) {
 
     // Invalidate the grouping cache for the course
     cache_helper::invalidate_by_definition('core', 'groupdata', array(), array($course->id));
+
+    // Group conversation messaging.
+    if (\core_message\api::can_create_group_conversation($USER->id, $context)) {
+        if (!empty($data->enablemessaging)) {
+            \core_message\api::create_conversation(
+                \core_message\api::MESSAGE_CONVERSATION_TYPE_GROUP,
+                [],
+                $group->name,
+                \core_message\api::MESSAGE_CONVERSATION_ENABLED,
+                'core_group',
+                'groups',
+                $group->id,
+                $context->id);
+        }
+    }
 
     // Trigger group event.
     $params = array(
@@ -383,7 +409,7 @@ function groups_update_group_icon($group, $data, $editform) {
  * @return bool true or exception
  */
 function groups_update_group($data, $editform = false, $editoroptions = false) {
-    global $CFG, $DB;
+    global $CFG, $DB, $USER;
 
     $context = context_course::instance($data->courseid);
 
@@ -411,6 +437,43 @@ function groups_update_group($data, $editform = false, $editoroptions = false) {
 
     if ($editform) {
         groups_update_group_icon($group, $data, $editform);
+    }
+
+    // Group conversation messaging.
+    if (\core_message\api::can_create_group_conversation($USER->id, $context)) {
+        if ($conversation = \core_message\api::get_conversation_by_area('core_group', 'groups', $group->id, $context->id)) {
+            if ($data->enablemessaging && $data->enablemessaging != $conversation->enabled) {
+                \core_message\api::enable_conversation($conversation->id);
+            }
+            if (!$data->enablemessaging && $data->enablemessaging != $conversation->enabled) {
+                \core_message\api::disable_conversation($conversation->id);
+            }
+            \core_message\api::update_conversation_name($conversation->id, $group->name);
+        } else {
+            if (!empty($data->enablemessaging)) {
+                $conversation = \core_message\api::create_conversation(
+                    \core_message\api::MESSAGE_CONVERSATION_TYPE_GROUP,
+                    [],
+                    $group->name,
+                    \core_message\api::MESSAGE_CONVERSATION_ENABLED,
+                    'core_group',
+                    'groups',
+                    $group->id,
+                    $context->id
+                );
+
+                // Add members to conversation if they exists in the group.
+                if ($groupmemberroles = groups_get_members_by_role($group->id, $group->courseid, 'u.id')) {
+                    $users = [];
+                    foreach ($groupmemberroles as $roleid => $roledata) {
+                        foreach ($roledata->users as $member) {
+                            $users[] = $member->id;
+                        }
+                    }
+                    \core_message\api::add_members_to_conversation($users, $conversation->id);
+                }
+            }
+        }
     }
 
     // Trigger group event.
@@ -485,12 +548,39 @@ function groups_delete_group($grouporid) {
         }
     }
 
+    $context = context_course::instance($group->courseid);
+
     // delete group calendar events
     $DB->delete_records('event', array('groupid'=>$groupid));
     //first delete usage in groupings_groups
     $DB->delete_records('groupings_groups', array('groupid'=>$groupid));
     //delete members
     $DB->delete_records('groups_members', array('groupid'=>$groupid));
+
+    // Delete any members in a conversation related to this group.
+    if ($conversation = \core_message\api::get_conversation_by_area('core_group', 'groups', $groupid, $context->id)) {
+        $DB->delete_records('message_conversations', ['id' => $conversation->id]);
+        $DB->delete_records('message_conversation_members', ['conversationid' => $conversation->id]);
+
+        // Now, go through and delete any messages and related message actions for the conversation.
+        if ($messages = $DB->get_records('messages', ['conversationid' => $conversation->id])) {
+            $messageids = array_keys($messages);
+
+            list($insql, $inparams) = $DB->get_in_or_equal($messageids);
+            $DB->delete_records_select('message_user_actions', "messageid $insql", $inparams);
+
+            // Delete the messages now.
+            $DB->delete_records('messages', ['conversationid' => $conversation->id]);
+        }
+
+        // Delete all favourite records for all users relating to this conversation.
+        // Whilst not ideal, we can't use the component service as it doesn't exist here, so must do this manually.
+        $params = ['component' => 'core_message', 'itemtype' => 'message_conversations', 'itemid' => $conversation->id,
+            'contextid' => $conversation->contextid];
+        $select = ' component = :component AND itemtype = :itemtype AND itemid = :itemid AND contextid = :contextid';
+        $DB->delete_records_select('favourite', $select, $params);
+    }
+
     //group itself last
     $DB->delete_records('groups', array('id'=>$groupid));
 
@@ -600,14 +690,6 @@ function groups_delete_group_members($courseid, $userid=0, $unused=false) {
     }
     $rs->close();
 
-    // TODO MDL-41312 Remove events_trigger_legacy('groups_members_removed').
-    // This event is kept here for backwards compatibility, because it cannot be
-    // translated to a new event as it is wrong.
-    $eventdata = new stdClass();
-    $eventdata->courseid = $courseid;
-    $eventdata->userid   = $userid;
-    events_trigger_legacy('groups_members_removed', $eventdata);
-
     return true;
 }
 
@@ -635,11 +717,6 @@ function groups_delete_groupings_groups($courseid, $showfeedback=false) {
     // Purge the group and grouping cache for users.
     cache_helper::purge_by_definition('core', 'user_group_groupings');
 
-    // TODO MDL-41312 Remove events_trigger_legacy('groups_groupings_groups_removed').
-    // This event is kept here for backwards compatibility, because it cannot be
-    // translated to a new event as it is wrong.
-    events_trigger_legacy('groups_groupings_groups_removed', $courseid);
-
     // no need to show any feedback here - we delete usually first groupings and then groups
 
     return true;
@@ -665,11 +742,6 @@ function groups_delete_groups($courseid, $showfeedback=false) {
     cache_helper::invalidate_by_definition('core', 'groupdata', array(), array($courseid));
     // Purge the group and grouping cache for users.
     cache_helper::purge_by_definition('core', 'user_group_groupings');
-
-    // TODO MDL-41312 Remove events_trigger_legacy('groups_groups_deleted').
-    // This event is kept here for backwards compatibility, because it cannot be
-    // translated to a new event as it is wrong.
-    events_trigger_legacy('groups_groups_deleted', $courseid);
 
     if ($showfeedback) {
         echo $OUTPUT->notification(get_string('deleted').' - '.get_string('groups', 'group'), 'notifysuccess');
@@ -698,11 +770,6 @@ function groups_delete_groupings($courseid, $showfeedback=false) {
     cache_helper::invalidate_by_definition('core', 'groupdata', array(), array($courseid));
     // Purge the group and grouping cache for users.
     cache_helper::purge_by_definition('core', 'user_group_groupings');
-
-    // TODO MDL-41312 Remove events_trigger_legacy('groups_groupings_deleted').
-    // This event is kept here for backwards compatibility, because it cannot be
-    // translated to a new event as it is wrong.
-    events_trigger_legacy('groups_groupings_deleted', $courseid);
 
     if ($showfeedback) {
         echo $OUTPUT->notification(get_string('deleted').' - '.get_string('groupings', 'group'), 'notifysuccess');
@@ -978,6 +1045,7 @@ function groups_calculate_role_people($rs, $context) {
     }
 
     $allroles = role_fix_names(get_all_roles($context), $context);
+    $visibleroles = get_viewable_roles($context);
 
     // Array of all involved roles
     $roles = array();
@@ -1036,14 +1104,15 @@ function groups_calculate_role_people($rs, $context) {
 
     // Now we rearrange the data to store users by role
     foreach ($users as $userid=>$userdata) {
-        $rolecount = count($userdata->roles);
+        $visibleuserroles = array_intersect_key($userdata->roles, $visibleroles);
+        $rolecount = count($visibleuserroles);
         if ($rolecount == 0) {
             // does not have any roles
             $roleid = 0;
         } else if($rolecount > 1) {
             $roleid = '*';
         } else {
-            $userrole = reset($userdata->roles);
+            $userrole = reset($visibleuserroles);
             $roleid = $userrole->id;
         }
         $roles[$roleid]->users[$userid] = $userdata;

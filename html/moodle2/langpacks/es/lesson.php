@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lesson', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['actions'] = 'Acciones';
 $string['activitylink'] = 'Enlace a la siguiente actividad';
 $string['activitylink_help'] = '<p>El menú emergente contiene todas las actividades del curso. Si se selecciona una de ellas, al final de la        lección aparecerá un enlace a dicha actividad.</p>';
 $string['activitylinkname'] = 'Ir a {$a}';
-$string['activityoverview'] = 'Tiene lecciones disponibles';
+$string['activityoverview'] = 'Tiene lecciones vencidas';
 $string['addabranchtable'] = 'Añadir una página de contenido';
 $string['addanendofbranch'] = 'Añadir un final de ramificación';
 $string['addanewpage'] = 'Añadir una nueva página';
@@ -128,7 +128,6 @@ $string['completiontimespent'] = 'El estudiante deberá realizar esta actividad 
 $string['completiontimespentdesc'] = 'El estudiante deberá realizar esta actividad durante al menos {$a}';
 $string['completiontimespentgroup'] = 'Tiempo necesario invertido';
 $string['conditionsfordependency'] = 'Condición(es) para la dependencia';
-$string['configactionaftercorrectanswer'] = 'Acción predeterminada a ejecutar tras una respuesta correcta';
 $string['configmaxanswers'] = 'Número máximo de respuestas por página predeterminado';
 $string['configmediaclose'] = 'Muestra un botón de cierre en el marco de la ventana emergente generada por un archivo multimedia vinculado';
 $string['configmediaheight'] = 'Establece la altura de la ventana emergente para mostrar un archivo multimedia enlazado';
@@ -424,6 +423,7 @@ $string['ongoingcustom'] = 'Ha obtenido {$a->score} punto(s) sobre {$a->currenth
 $string['ongoing_help'] = '<p>Cuando se activa esta opción, cada página mostrará los puntos que el estudiante ha obtenido del total de          puntos posible. Por ejemplo, si un estudiante ha contestado correctamente cuatro preguntas de 5 puntos y ha      fallado una pregunta, la puntuación provisional será de 15/20 puntos.</p>';
 $string['ongoingnormal'] = 'Usted ha respondido correctamente {$a->correct} pregunta(s) de un total de {$a->viewed} pregunta(s).';
 $string['onpostperpage'] = 'Solo un mensaje por calificación';
+$string['openafterclose'] = 'Ha indicado un fecha de apertura posterior a la fecha de cierre';
 $string['options'] = 'Opciones';
 $string['or'] = 'O';
 $string['ordered'] = 'Ordenado';

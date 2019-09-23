@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_paypal', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,9 +42,9 @@ $string['enrolperiod_desc'] = 'Vorgabe zur Teilnahmedauer (in Sekunden). Falls d
 $string['enrolperiod_help'] = 'Teilnahmedauer (in Sekunden), beginnend mit dem Einschreibezeitpunkt. Falls dieser Wert auf Null gesetzt ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
 $string['enrolstartdate'] = 'Einschreibungsbeginn';
 $string['enrolstartdate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen ab diesem Zeitpunkt eingeschrieben werden.';
-$string['errdisabled'] = 'Die Einschreibemethode \'PayPal\' ist deaktiviert und kann keine Zahlungsmitteilungen verarbeiten.';
-$string['erripninvalid'] = 'Die Mitteilung über die sofortige Zahlung wurde von PayPal nicht bestätigt.';
-$string['errpaypalconnect'] = 'Eine Verbindung zu {$a->url} konnte nicht hergestellt werden, um die Mitteilung zur sofortigen Zahlung zu überprüfen: {$a->result}';
+$string['errdisabled'] = 'Die Einschreibemethode \'PayPal\' ist deaktiviert und kann keine Zahlungsnachrichten verarbeiten.';
+$string['erripninvalid'] = 'Die sofortige Zahlung wurde von PayPal nicht bestätigt.';
+$string['errpaypalconnect'] = 'Eine Verbindung zu {$a->url} konnte nicht hergestellt werden, um die Nachricht zur sofortigen Zahlung zu überprüfen: {$a->result}';
 $string['expiredaction'] = 'Aktion bei Ablauf der Kurseinschreibung';
 $string['expiredaction_help'] = 'Wählen Sie die Aktionen, die beim Ablauf der Kurseinschreibung ausgeführt werden sollen. Beim Austragen des Nutzers aus dem Kurs werden einige Nutzerdaten und Einstellungen entfernt.';
 $string['mailadmins'] = 'Admin benachrichtigen';
@@ -64,12 +64,12 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = 'E-Mail-Adresse
 $string['privacy:metadata:enrol_paypal:enrol_paypal:courseid'] = 'ID des Kurses für den die Zahlung erfolgt';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:instanceid'] = 'ID der Einschreibeinstanz im Kurs';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:item_name'] = 'Vollständiger Name des Kurses für den eine Zahlung zur Einschreibung erfolgte';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:memo'] = 'Eine Notiz. die der zahlende Teilnehmer während des Zahlungsvorgang auf der Paypal-Seite hinterlegt hat';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:memo'] = 'Eine Notiz, die der zahlende Teilnehmer während des Zahlungsvorgang auf der Paypal-Seite hinterlegt hat';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:option_selection1_x'] = 'Vollständiger Name des Käufers';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:parent_txn_id'] = 'Im Falle einer Erstattung, Stornierung, oder einer widerrufenen Stornierung ist dies die Transaktion der Original-Transaktion.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_status'] = 'Status der Zahlung';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_type'] = 'Enthält die Information mit welchem Zahlungsverfahren die Zahlung erfolgte';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'Grund warum die Zahlung noch nicht abgeschlossen ist (falle dies der Fall ist)';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'Grund warum die Zahlung noch nicht abgeschlossen ist (falls dies der Fall ist)';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:reason_code'] = 'Grund warum Status erstattet, Wiederrufen, Wiederruf_abgebrochen oder verweigert ist (falls dies einer der Stati ist).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'Primäre E-Mail-Adresse des Zahlungsempfängers';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = 'Eindeutige Paypal Account-ID des Zahlungsempfängers';
@@ -86,6 +86,7 @@ $string['privacy:metadata:enrol_paypal:paypal_com:email'] = 'E-Mail-Adresse des 
 $string['privacy:metadata:enrol_paypal:paypal_com:first_name'] = 'Vorname des kaufenden Nutzers';
 $string['privacy:metadata:enrol_paypal:paypal_com:last_name'] = 'Nachname des kaufenden Nutzers';
 $string['privacy:metadata:enrol_paypal:paypal_com:os0'] = 'Vollständiger Name des Käufers';
+$string['processexpirationstask'] = 'Paypal-Einschreibung: Erinnerung für Einschreibungsablauf';
 $string['sendpaymentbutton'] = 'Zahlung über PayPal';
 $string['status'] = 'PayPal-Einschreibung erlauben';
 $string['status_desc'] = 'Nutzer/innen erlauben, standardmäßig PayPal zur Kurseinschreibung zu benutzen';

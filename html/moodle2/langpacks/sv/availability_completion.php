@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability_completion', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   availability_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,10 +35,10 @@ $string['option_fail'] = 'ska vara genomförd och <strong>underkänd</strong>';
 $string['option_incomplete'] = 'behöver inte vara markerad som fullföljd';
 $string['option_pass'] = 'måste vara fullföljd och godkänd';
 $string['pluginname'] = 'Villkor av slutförande av aktivitet';
-$string['requires_complete'] = 'Aktiviteten <strong>{$a}</strong> markeras komplett';
-$string['requires_complete_fail'] = 'Aktiviteten <strong>{$a}</strong> är komplett och är underkänd';
-$string['requires_complete_pass'] = 'Aktiviteten <strong>{$a}</strong> är komplett och godkänd';
+$string['requires_complete'] = 'Aktiviteten <strong>{$a}</strong> markeras som genomförd';
+$string['requires_complete_fail'] = 'Aktiviteten <strong>{$a}</strong> är genomförd och är underkänd';
+$string['requires_complete_pass'] = 'Aktiviteten <strong>{$a}</strong> är genomförd och godkänd';
 $string['requires_incomplete'] = 'Aktiviteten <strong>{$a}</strong> är ofullständig';
-$string['requires_not_complete_fail'] = 'Aktiviteten <strong>{$a}</strong> är inte komplett och underkändes';
-$string['requires_not_complete_pass'] = 'Aktiviteten <strong>{$a}</strong> är inte komplett och godkändes';
+$string['requires_not_complete_fail'] = 'Aktiviteten <strong>{$a}</strong> är inte genomförd och underkändes';
+$string['requires_not_complete_pass'] = 'Aktiviteten <strong>{$a}</strong> är inte genomförd och godkändes';
 $string['title'] = 'Activity completion';

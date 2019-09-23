@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_online_users', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Количество минут для определения какие из пользователей сейчас на сайте';
+$string['nouser'] = 'Нет пользователей на сайте';
+$string['numuser'] = '{$a} пользователь на сайте';
+$string['numusers'] = 'Пользователей на сайте: {$a}';
+$string['online_status:hide'] = 'Скрыть моё присутствие на сайте от других пользователей';
+$string['online_status:show'] = 'Показать моё присутствие на сайте другим пользователям';
 $string['online_users:addinstance'] = 'Добавлять новый блок «Пользователи на сайте»';
 $string['online_users:myaddinstance'] = 'Добавлять новый блок «Пользователи на сайте» на страницу «Личный кабинет»';
 $string['online_users:viewlist'] = 'Видеть список пользователей на сайте';
 $string['periodnminutes'] = 'последние {$a} минут';
 $string['pluginname'] = 'Пользователи на сайте';
-$string['privacy:metadata'] = 'Блок «Пользователи на сайте» только показывает данные, хранящиеся в других местах.';
 $string['timetosee'] = 'Удалять после неактивности (минут)';

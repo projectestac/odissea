@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['addplugin'] = 'リポジトリプラグインを追加する';
 $string['allowexternallinks'] = '外部リンクを許可する';
 $string['areacategoryintro'] = 'カテゴリイントロダクション';
 $string['areacourseintro'] = 'コースイントロダクション';
-$string['areacourseoverviewfiles'] = 'コース概要ファイル';
+$string['areacourseoverviewfiles'] = 'コースイメージ';
 $string['areamainfile'] = 'メインファイル';
 $string['arearoot'] = 'システム';
 $string['areauserbackup'] = 'ユーザバックアップ';
@@ -51,7 +51,7 @@ $string['back'] = '戻る';
 $string['backtodraftfiles'] = '下書きファイルマネージャに戻る';
 $string['cachecleared'] = 'キャッシュファイルが削除されます。';
 $string['cacheexpire'] = 'キャッシュ有効期限';
-$string['cannotaccessparentwin'] = '親ウィンドウがHTTPSにある場合、私たちはwindow.openerオブジェクトへのアクセスを許可されません。そのため、あなたのためにリポジトリを自動的にリフレッシュすることができません。しかし、すでにあなたのセッションが存在するため、ファイルピッカに戻って、再度リポジトリを選択してください。';
+$string['cannotaccessparentwin'] = 'HTTPSを使用する場合、リポジトリは自動的にリフレッシュされません。代わりにあなたはファイルピッカに戻ってリポジトリを再度選択する必要があります。';
 $string['cannotdelete'] = 'このファイルを削除できません。';
 $string['cannotdownload'] = 'このファイルをダウンロードできません。';
 $string['cannotdownloaddir'] = 'このフォルダをダウンロードできません。';
@@ -113,7 +113,7 @@ $string['entername'] = 'フォルダ名を入力してください。';
 $string['enternewname'] = '新しいファイル名を入力してください。';
 $string['error'] = '不明なエラーが発生しました!';
 $string['errordoublereference'] = 'このファイルに対するショートカットはすでに存在しているため、ファイルをショートカット/エイリアスで上書きできません。';
-$string['errornotyourfile'] = 'あなたが追加していないファイルを取得することはできません。';
+$string['errornotyourfile'] = 'あなたが追加したファイルのみ取得することができます。';
 $string['errorpostmaxsize'] = 'あなたがアップロードを試みたファイルはサーバが処理するには大き過ぎます。';
 $string['erroruniquename'] = 'リポジトリインスタンス名はユニークにしてください。';
 $string['errorwhilecommunicatingwith'] = 'リポジトリ「 {$a} 」との通信中にエラーが発生しました。';

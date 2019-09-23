@@ -36,6 +36,11 @@ defined('MOODLE_INTERNAL') || die();
 class manager {
 
     /**
+     * Default mlbackend
+     */
+    const DEFAULT_MLBACKEND = '\mlbackend_php\processor';
+
+    /**
      * @var \core_analytics\predictor[]
      */
     protected static $predictionprocessors = null;
@@ -117,9 +122,9 @@ class manager {
     }
 
     /**
-     * Returns the site selected predictions processor.
+     * Returns the provided predictions processor class.
      *
-     * @param string $predictionclass
+     * @param false|string $predictionclass Returns the system default processor if false
      * @param bool $checkisready
      * @return \core_analytics\predictor
      */
@@ -128,13 +133,13 @@ class manager {
         // We want 0 or 1 so we can use it as an array key for caching.
         $checkisready = intval($checkisready);
 
-        if ($predictionclass === false) {
+        if (!$predictionclass) {
             $predictionclass = get_config('analytics', 'predictionsprocessor');
         }
 
         if (empty($predictionclass)) {
             // Use the default one if nothing set.
-            $predictionclass = '\mlbackend_php\processor';
+            $predictionclass = self::default_mlbackend();
         }
 
         if (!class_exists($predictionclass)) {
@@ -177,6 +182,44 @@ class manager {
             $predictionprocessors[$classfullpath] = self::get_predictions_processor($classfullpath, false);
         }
         return $predictionprocessors;
+    }
+
+    /**
+     * Returns the name of the provided predictions processor.
+     *
+     * @param \core_analytics\predictor $predictionsprocessor
+     * @return string
+     */
+    public static function get_predictions_processor_name(\core_analytics\predictor $predictionsprocessor) {
+            $component = substr(get_class($predictionsprocessor), 0, strpos(get_class($predictionsprocessor), '\\', 1));
+        return get_string('pluginname', $component);
+    }
+
+    /**
+     * Whether the provided plugin is used by any model.
+     *
+     * @param string $plugin
+     * @return bool
+     */
+    public static function is_mlbackend_used($plugin) {
+        $models = self::get_all_models();
+        foreach ($models as $model) {
+            $processor = $model->get_predictions_processor();
+            $noprefixnamespace = ltrim(get_class($processor), '\\');
+            $processorplugin = substr($noprefixnamespace, 0, strpos($noprefixnamespace, '\\'));
+            if ($processorplugin == $plugin) {
+                return true;
+            }
+        }
+
+        // Default predictions processor.
+        $defaultprocessorclass = get_config('analytics', 'predictionsprocessor');
+        $pluginclass = '\\' . $plugin . '\\processor';
+        if ($pluginclass === $defaultprocessorclass) {
+            return true;
+        }
+
+        return false;
     }
 
     /**
@@ -504,46 +547,72 @@ class manager {
     public static function cleanup() {
         global $DB;
 
-        // Clean up stuff that depends on contexts that do not exist anymore.
-        $sql = "SELECT DISTINCT ap.contextid FROM {analytics_predictions} ap
-                  LEFT JOIN {context} ctx ON ap.contextid = ctx.id
-                 WHERE ctx.id IS NULL";
-        $apcontexts = $DB->get_records_sql($sql);
+        $DB->execute("DELETE FROM {analytics_prediction_actions} WHERE predictionid IN
+                          (SELECT ap.id FROM {analytics_predictions} ap
+                        LEFT JOIN {context} ctx ON ap.contextid = ctx.id
+                            WHERE ctx.id IS NULL)");
 
-        $sql = "SELECT DISTINCT aic.contextid FROM {analytics_indicator_calc} aic
-                  LEFT JOIN {context} ctx ON aic.contextid = ctx.id
-                 WHERE ctx.id IS NULL";
-        $indcalccontexts = $DB->get_records_sql($sql);
-
-        $contexts = $apcontexts + $indcalccontexts;
-        if ($contexts) {
-            list($sql, $params) = $DB->get_in_or_equal(array_keys($contexts));
-            $DB->execute("DELETE FROM {analytics_prediction_actions} WHERE predictionid IN
-                (SELECT ap.id FROM {analytics_predictions} ap WHERE ap.contextid $sql)", $params);
-
-            $DB->delete_records_select('analytics_predictions', "contextid $sql", $params);
-            $DB->delete_records_select('analytics_indicator_calc', "contextid $sql", $params);
-        }
+        $contextsql = "SELECT id FROM {context} ctx";
+        $DB->delete_records_select('analytics_predictions', "contextid NOT IN ($contextsql)");
+        $DB->delete_records_select('analytics_indicator_calc', "contextid NOT IN ($contextsql)");
 
         // Clean up stuff that depends on analysable ids that do not exist anymore.
+
         $models = self::get_all_models();
         foreach ($models as $model) {
+
+            // We first dump into memory the list of analysables we have in the database (we could probably do this with 1 single
+            // query for the 3 tables, but it may be safer to do it separately).
+            $predictsamplesanalysableids = $DB->get_fieldset_select('analytics_predict_samples', 'DISTINCT analysableid',
+                'modelid = :modelid', ['modelid' => $model->get_id()]);
+            $predictsamplesanalysableids = array_flip($predictsamplesanalysableids);
+            $trainsamplesanalysableids = $DB->get_fieldset_select('analytics_train_samples', 'DISTINCT analysableid',
+                'modelid = :modelid', ['modelid' => $model->get_id()]);
+            $trainsamplesanalysableids = array_flip($trainsamplesanalysableids);
+            $usedanalysablesanalysableids = $DB->get_fieldset_select('analytics_used_analysables', 'DISTINCT analysableid',
+                'modelid = :modelid', ['modelid' => $model->get_id()]);
+            $usedanalysablesanalysableids = array_flip($usedanalysablesanalysableids);
+
             $analyser = $model->get_analyser(array('notimesplitting' => true));
+
             $analysables = $analyser->get_analysables();
             if (!$analysables) {
                 continue;
             }
 
-            $analysableids = array_map(function($analysable) {
-                return $analysable->get_id();
-            }, $analysables);
+            foreach ($analysables as $analysable) {
+                unset($predictsamplesanalysableids[$analysable->get_id()]);
+                unset($trainsamplesanalysableids[$analysable->get_id()]);
+                unset($usedanalysablesanalysableids[$analysable->get_id()]);
+            }
 
-            list($notinsql, $params) = $DB->get_in_or_equal($analysableids, SQL_PARAMS_NAMED, 'param', false);
-            $params['modelid'] = $model->get_id();
+            $param = ['modelid' => $model->get_id()];
 
-            $DB->delete_records_select('analytics_predict_samples', "modelid = :modelid AND analysableid $notinsql", $params);
-            $DB->delete_records_select('analytics_train_samples', "modelid = :modelid AND analysableid $notinsql", $params);
+            if ($predictsamplesanalysableids) {
+                list($idssql, $idsparams) = $DB->get_in_or_equal(array_flip($predictsamplesanalysableids), SQL_PARAMS_NAMED);
+                $DB->delete_records_select('analytics_predict_samples', "modelid = :modelid AND analysableid $idssql",
+                    $param + $idsparams);
+            }
+            if ($trainsamplesanalysableids) {
+                list($idssql, $idsparams) = $DB->get_in_or_equal(array_flip($trainsamplesanalysableids), SQL_PARAMS_NAMED);
+                $DB->delete_records_select('analytics_train_samples', "modelid = :modelid AND analysableid $idssql",
+                    $param + $idsparams);
+            }
+            if ($usedanalysablesanalysableids) {
+                list($idssql, $idsparams) = $DB->get_in_or_equal(array_flip($usedanalysablesanalysableids), SQL_PARAMS_NAMED);
+                $DB->delete_records_select('analytics_used_analysables', "modelid = :modelid AND analysableid $idssql",
+                    $param + $idsparams);
+            }
         }
+    }
+
+    /**
+     * Default system backend.
+     *
+     * @return string
+     */
+    public static function default_mlbackend() {
+        return self::DEFAULT_MLBACKEND;
     }
 
     /**

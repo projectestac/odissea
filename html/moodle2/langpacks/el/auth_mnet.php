@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_mnet', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_mnet_auto_add_remote_users'] = 'Όταν οριστεί σε Ναι, μια εγγραφή τοπικού χρήστη δημιουργείται αυτόματα όταν ένας απομακρυσμένος χρήστης συνδέεται για πρώτη φορά.';
 $string['auth_mnetdescription'] = 'Οι χρήστες αυθεντικοποιούνται σύμφωνα με τον ιστό εμπιστοσύνης που ορίζεται στις ρυθμίσεις του δικτύου Moodle.';
-$string['auth_mnet_roamin'] = 'These host\'s users can roam in to your site';
-$string['auth_mnet_roamout'] = 'Your users can roam out to these hosts';
+$string['auth_mnet_roamin'] = 'Οι χρήστες αυτού του κεντρικού Η/Υ μπορούν να συνδέονται και στον ιστοτόπο σας';
+$string['auth_mnet_roamout'] = 'Οι χρήστες σας μπορούν να συνδέονται και σε αυτούς τους κεντρικούς Η/Υ';
 $string['auth_mnet_rpc_negotiation_timeout'] = 'Το χρονικό όριο σε δευτερόλεπτα για αυθεντικοποίηση κατά τη μεταφορά XMLRPC.';
-$string['auto_add_remote_users'] = 'Auto add remote users';
+$string['auto_add_remote_users'] = 'Αυτόματη προσθήκη απομακρυσμένων χρηστών';
 $string['pluginname'] = 'Αυθεντικοποίηση στο MNet (Moodle Network)';
 $string['privacy:metadata:external:mahara'] = 'Αυτό το πρόσθετο μπορεί να στείλει δεδομένα εξωτερικά σε μια συνδεδεμένη εφαρμογή Mahara.';
 $string['privacy:metadata:external:moodle'] = 'Αυτό το πρόσθετο μπορεί να στείλει δεδομένα εξωτερικά σε μια συνδεδεμένη εφαρμογή Mahara.';
@@ -88,11 +88,11 @@ $string['privacy:metadata:mnet_log:remoteid'] = 'Απομακρυσμένο αν
 $string['privacy:metadata:mnet_log:time'] = 'Ώρα όταν η ενέργεια πραγματοποιήθηκε.';
 $string['privacy:metadata:mnet_log:url'] = 'Διεύθυνση URL απομακρυσμένου συστήματος όπου έλαβε χώρα η ενέργεια.';
 $string['privacy:metadata:mnet_log:userid'] = 'Τοπικό αναγνωριστικό του χρήστη που εκτέλεσε την ενέργεια στο απομακρυσμένο σύστημα.';
-$string['privacy:metadata:mnet_session'] = 'Οι λεπτομέρειες κάθε συνόδου χρήστη MNet σε απομακρυσμένο σύστημα αποθηκεύονται προσωρινά.';
-$string['privacy:metadata:mnet_session:expires'] = 'Ώρα λήξης της συνεδρίας.';
+$string['privacy:metadata:mnet_session'] = 'Οι λεπτομέρειες κάθε συνόδου χρήστη MNet σε ένα απομακρυσμένο σύστημα. Τα δεδομένα αποθηκεύονται προσωρινά.';
+$string['privacy:metadata:mnet_session:expires'] = 'Ώρα λήξης της συνόδου.';
 $string['privacy:metadata:mnet_session:mnethostid'] = 'Αναγνωριστικό απομακρυσμένου συστήματος MNet.';
 $string['privacy:metadata:mnet_session:token'] = 'Μοναδικό αναγνωριστικό συνόδου.';
-$string['privacy:metadata:mnet_session:useragent'] = 'Το λογισμικό περιηγητή που χρησιμοποιείται για την απομακρυσμένη πρόσβαση στη σελίδα';
+$string['privacy:metadata:mnet_session:useragent'] = 'Ο πράκτορας χρήστη (περιηγητής) που χρησιμοποιείται για την πρόσβαση στο απομακρυσμένο σύστημα';
 $string['privacy:metadata:mnet_session:userid'] = 'Αναγνωριστικό του χρήστη που μεταπηδά στο απομακρυσμένο σύστημα.';
 $string['privacy:metadata:mnet_session:username'] = 'Όνομα χρήστη του χρήστη που μεταπηδά στο απομακρυσμένο σύστημα.';
 $string['rpc_negotiation_timeout'] = 'RPC negotiation timeout';

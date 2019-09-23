@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,14 +50,10 @@ $string['flag'] = '표식';
 $string['flagasinappropriate'] = '부적절 표시';
 $string['helprelatedtags'] = '관련 태그를 컴마로 분리';
 $string['id'] = 'id';
-$string['manageofficialtags'] = '공식 태그 관리';
 $string['managetags'] = '태그 관리';
 $string['name'] = '태그 명칭';
 $string['namesalreadybeeingused'] = '이미 있는 태그명칭';
 $string['noresultsfor'] = '"{$a}"에 대한 결과 없음';
-$string['officialtag'] = '공식 태그';
-$string['otags'] = '공식 태그';
-$string['othertags'] = '기타 태그(태그는 쉼표로 구분하여 입력)';
 $string['owner'] = '소유자';
 $string['page-tag-index'] = '단일 태그 페이지';
 $string['page-tag-manage'] = '태그 페이지 관리';
@@ -79,10 +75,8 @@ $string['seeallblogs'] = '"{$a}" 태그를 사용한 모든 블로그 보기';
 $string['select'] = '선택';
 $string['tag'] = '태그';
 $string['tagdescription'] = '태그 설명';
-$string['taggedwith'] = '"{$a}" 태그';
 $string['tags'] = '태그';
 $string['tagsaredisabled'] = '태그를 사용할 수 없음';
-$string['tagtype'] = '태그 형식';
 $string['thingstaggedwith'] = '"{$a->name}"이  {$a->count} 번 사용됨';
 $string['thingtaggedwith'] = '"{$a->name}" 가 한차례 사용되었음';
 $string['timemodified'] = '수정됨';

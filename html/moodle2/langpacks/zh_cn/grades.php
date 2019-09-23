@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'grades', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -197,7 +197,13 @@ $string['errorupdatinggradecategoryaggregateoutcomes'] = '在更新ID为{$a->id}
 $string['errorupdatinggradecategoryaggregation'] = '在更新ID为{$a->id}的成绩类别时出错';
 $string['errorupdatinggradeitemaggregationcoef'] = '在更新ID为{$a->id}的成绩项的汇总系数（权重或额外加分）时出错';
 $string['eventgradedeleted'] = '级别删除';
+$string['eventgradelettercreated'] = '成绩字母已创建';
+$string['eventgradeletterdeleted'] = '分数段已删除';
+$string['eventgradeletterupdated'] = '分数段已更新';
 $string['eventgradeviewed'] = '级别包含在成绩册中';
+$string['eventscalecreated'] = '等级制定完成';
+$string['eventscaledeleted'] = '等级已删除';
+$string['eventscaleupdated'] = '等级已更新';
 $string['eventusergraded'] = '给用户评分';
 $string['excluded'] = '排除';
 $string['excluded_help'] = '勾选后，此项成绩将不会被包含在任何成绩汇总中。';
@@ -205,6 +211,7 @@ $string['expand'] = '扩展类别';
 $string['export'] = '导出';
 $string['exportalloutcomes'] = '导出所有成果';
 $string['exportfeedback'] = '导出内容中包括反馈';
+$string['exportfeedback_desc'] = '导出时可优先取代。';
 $string['exportformatoptions'] = '导出格式选项';
 $string['exportonlyactive'] = '不包括已暂停用户';
 $string['exportonlyactive_help'] = '在导出内容中仅包括已选课且未暂停的学生';
@@ -321,7 +328,7 @@ $string['gradepointmax_validateerror'] = '此设置必须在1到10000之间的�
 $string['gradepreferences'] = '成绩使用偏好';
 $string['gradepreferenceshelp'] = '成绩使用偏好帮助';
 $string['gradepublishing'] = '启用成绩发布功能';
-$string['gradepublishing_help'] = '在成绩导出和导入中启用发布功能：可以通过访问一个URL地址获得导出的成绩，并且不需要登录到Moodle网站中。成绩同样可以通过一个可访问的URL地址导入（这就意味着可以将成绩从一个Moodle网站导入到另一个Moodle网站中）。默认只有网站管理员可以使用该功能，如果要让其他用户使用该功能，那么在分配权限前确保用户已经明白如何操作。（书签共享、下载加速和IP限制等可能会带来安全威胁）';
+$string['gradepublishing_help'] = '成绩发布功能无需登录Moodle即可通过URL导入和导出成绩。如启用，各课程成绩簿将为管理员及拥有发布成绩权限的用户(默认仅经理角色用户)提供成绩导出发布设置。';
 $string['gradepublishinglink'] = '下载：{$a}';
 $string['gradereport'] = '成绩报表';
 $string['graderreport'] = '成绩单';

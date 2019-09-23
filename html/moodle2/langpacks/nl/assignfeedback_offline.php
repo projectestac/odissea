@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_offline', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_offline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['feedbackupdate'] = 'Zet veld "{$a->field}" voor "{$a->student}" op "{$a
 $string['gradelockedingradebook'] = 'Dit cijfer is geblokkeerd in de cijferlijst voor {$a}';
 $string['graderecentlymodified'] = 'Het cijfer is in de Moodle-cijferlijst is recenter dan het cijfer op het beoordelingswerkblad voor {$a}';
 $string['gradesfile'] = 'Beoordelingswerkblad (csv-opmaak)';
-$string['gradesfile_help'] = 'Beoordelingswerkblad met aangepaste cijfers. Dit bestand moet een csv-bestand zijn dat gedownload is via deze opdracht en moet kolommen voor het cijfer van de leerlinge en identificatie bevatten. De encoding van het bestand moet UTF-8 zijn.';
+$string['gradesfile_help'] = 'Beoordelingswerkblad met aangepaste cijfers. Dit bestand moet een csv-bestand met UTF9-encodering zijn dat gedownload is via deze opdracht en moet kolommen voor het cijfer van de leerlingen en identificatie bevatten.';
 $string['gradeupdate'] = 'Zet het cijfer voor {$a->student} op {$a->grade}';
 $string['ignoremodified'] = 'Het updaten van cijfers die recenter zijn in Moodle dan op het werkblad toestaan.';
 $string['ignoremodified_help'] = 'Wanneer het beoordelingswerkblad von Moodle gedownload wordt, dan bevat het de laatste wijzigingsdatum voor elk van de cijfers. Als er cijfers na deze data gewijzigd worden via Moodle nadat dit werkblad gedownload is, dan zal Moodle standaard die cijfers niet overschrijven tijdens het importeren van het beoordelingswerkblad. Door deze optie te selecteren schakel je deze beveiligingscontrole uit en wordt het mogelijk bij meerdere beoordelaars dat ze elkaars cijfers overschrijven.';

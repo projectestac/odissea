@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_database', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'logstore_database', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   logstore_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['create'] = 'Δημιουργία';
 $string['databasecollation'] = 'Σύστημα ταξινόμησης βάσης δεδομένων';
 $string['databasehandlesoptions'] = 'Η βάση δεδομένων χειρίζεται επιλογές';
 $string['databasehandlesoptions_help'] = 'Χειρίζεται η απομακρυσμένη βάση δεδομένων μόνη της, τις επιλογές της;';
-$string['databasepersist'] = 'Διαρκείς συνδέσεις βάσεων δεδομένων';
+$string['databasepersist'] = 'Παραμένουσες συνδέσεις βάσεων δεδομένων';
 $string['databaseschema'] = 'Σχήμα βάσης δεδομένων';
 $string['databasesettings'] = 'Ρυθμίσεις βάσης δεδομένων';
 $string['databasesettings_help'] = 'Λεπτομέρειες σύνδεσης για την εξωτερική βάση δεδομένων καταγραφών: {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,8 @@ $string['commentindex'] = '评论索引';
 $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = '无法保存第{$a}页';
 $string['currentstamp'] = '印章';
+$string['default'] = '默认开启';
+$string['default_help'] = '如果设置此项，将会为所有新作业默认开启此反馈方法。';
 $string['deleteannotation'] = '删除批注';
 $string['deletecomment'] = '删除评论';
 $string['deletefeedback'] = '删除反馈的PDF文件';
@@ -65,12 +67,13 @@ $string['jsrequired'] = '要批注一个PDF文件，是需要用到JavaScript。
 $string['launcheditor'] = '启动PDF编辑器';
 $string['line'] = '线';
 $string['loadingeditor'] = '加载PDF编辑器';
-$string['navigatenext'] = '下一页';
-$string['navigateprevious'] = '上一页';
+$string['navigatenext'] = '下一页 (Alt/Shift-Alt/Ctrl-Option + {$a})';
+$string['navigateprevious'] = '上一页 (Alt/Shift-Alt/Ctrl-Option + {$a})';
 $string['output'] = '输出';
 $string['oval'] = '椭圆形';
 $string['pagenumber'] = '第 {$a} 页';
 $string['pagexofy'] = '第 {$a->page} 页，共 {$a->total} 页';
+$string['partialwarning'] = '提交某些文件只能通过直接下载进行访问。';
 $string['pathtogspathdesc'] = '请注意，这个说明的pdf文件要在{$a}设定到ghostscript的目录。';
 $string['pen'] = '笔';
 $string['pluginname'] = '批注的PDF文件';

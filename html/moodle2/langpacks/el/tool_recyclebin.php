@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_recyclebin', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_recyclebin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['alertdeleted'] = 'Το «{$a->name}» έχει διαγραφεί.';
 $string['alertemptied'] = 'Ο κάδος ανακύκλωσης έχει αδειάσει.';
-$string['alertrestored'] = 'Το \'{$a->name}\' έχει επαναφερθεί.';
+$string['alertrestored'] = 'Το «{$a->name}» έχει επαναφερθεί.';
 $string['autohide'] = 'Αυτόματη απόκρυψη';
 $string['autohide_desc'] = 'Αυτόματη απόκρυψη του συνδέσμου του κάδου ανακύκλωσης όταν ο κάδος είναι κενός.';
 $string['categorybinenable'] = 'Ενεργοποίηση κάδου ανακύκλωσης κατηγοριών';

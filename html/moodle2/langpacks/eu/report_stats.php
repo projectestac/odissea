@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_stats', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_stats', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   report_stats
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['page-report-stats-x'] = 'Edozein estatistika-txosten';
 $string['pluginname'] = 'Estatistikak';
 $string['privacy:dailypath'] = 'Eguneroko estatistikak';
 $string['privacy:metadata'] = 'Estatistikak pluginak ez du datu pertsonalik biltzen.';
-$string['privacy:metadata:courseid'] = 'Ikastaroaren identifikatzailea.';
+$string['privacy:metadata:courseid'] = 'Ikastaroaren identifikatzailea';
 $string['privacy:metadata:roleid'] = 'Erabiltzailearen rolaren IDa.';
 $string['privacy:metadata:statsreads'] = 'Edukiaren ikuspenak';
 $string['privacy:metadata:statssummary'] = 'Erabiltzaileek ikastaroetan izandako jardueraren oinarrizko estatistikak gordetzen ditu.';

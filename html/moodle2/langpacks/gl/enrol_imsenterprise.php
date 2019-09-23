@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'Unha vez gardadas as súas configuracións, poderá desexar';
-$string['allowunenrol'] = 'Permitir datos IMS para <strong>dar de baixa</strong> alumnos/profesores';
+$string['allowunenrol'] = 'Permitir datos IMS para <strong>desmatricular</strong> alumnos/profesores';
 $string['allowunenrol_desc'] = 'De estar activado, as matriculacións retiraranse cando se especifique nos datos de empresa.';
 $string['basicsettings'] = 'Configuracións básicas';
 $string['categoryidnumber'] = 'Permitir «idnumber» por categoría';
@@ -39,11 +39,11 @@ $string['createnewcategories_desc'] = 'Se o elemento <org><orgunit> está presen
 
 Se non existe ningunha categoría co nome desexado, daquela crearase unha categoría agochada.';
 $string['createnewcourses'] = 'Crear novos cursos (ocultos) se non os encontra en Moodle';
-$string['createnewcourses_desc'] = 'Se está activado, o complemento de IMS Enterprise pode crear novos cursos de calquera que atope nos datos do IMS pero non na base de datos de Moodle. Todos os cursos creados de novas están en principio agochados.';
+$string['createnewcourses_desc'] = 'Se está activado, o engadido de IMS Enterprise pode crear novos cursos de calquera que atope nos datos do IMS pero non na base de datos de Moodle. Todos os cursos creados de novas están en principio agochados.';
 $string['createnewusers'] = 'Crear contas para usuarios aínda non rexistrados en Moodle';
 $string['createnewusers_desc'] = 'Os datos de matriculación de IMS Enterprise normalmente describen un conxunto de usuarios. Se está activado, as contas poden crearse para calquera dos usuarios que non se atopan na base de datos de Moodle.
 
-Búscase os usuarios primeiro polo seu "idnumber", e secundariamente polo seu nome de usuario de Moodle. Os contrasinais non os importa o complemento IMS Enterprise. O uso dun complemento de autenticación recoméndase para a identificación de usuarios.';
+Búscase os usuarios primeiro polo seu «idnumber», e secundariamente polo seu nome de usuario de Moodle. Os contrasinais non os importa o engadido IMS Enterprise. O uso dun engadido de autenticación recoméndase para a identificación de usuarios.';
 $string['cronfrequency'] = 'Frecuencia do procesamento';
 $string['deleteusers'] = 'Eliminar contas de usuario cando son especificadas en datos IMS';
 $string['deleteusers_desc'] = 'Se está activado, os datos de matriculación de IMS Enterprise poden especificar a eliminación das contas de usuario (se a marca "recstatus" se define como 3, que representa a eliminación dunha conta). Como é estándar no Moodle, o rexistro do usuario non se elimina realmente da base de datos de Moodle, pero estabelécese un marca para sinalar a conta como eliminada.';
@@ -72,7 +72,7 @@ $string['privacy:metadata'] = 'O engadido de matriculación por ficheiro IMS Ent
 $string['processphoto'] = 'Engadir datos da fotografía do usuario para o perfil';
 $string['processphotowarning'] = 'Aviso: Ao procesar unha imaxe é probable que sexa engadida unha carga significativa ao servidor. Non é recomendábel que active esta opción se hai un grande número de alumnos para seren procesados.';
 $string['restricttarget'] = 'Só procesa datos se o seguinte obxectivo é especificado';
-$string['restricttarget_desc'] = 'Un ficheiro de datos de IMS Enterprise podería ser destinado a varios "obxectivos" - distintos ou sistemas diferentes dentro dunha escola/universidade. É posíbel especificar no ficheiro do Enterprise que os datos están preparados para un ou máis sistemas de destino, nomeándoos en etiquetas <target> contidas na etiqueta <properties>.
+$string['restricttarget_desc'] = 'Un ficheiro de datos de IMS Enterprise podería ser destinado a varios «obxectivos» - distintos ou sistemas diferentes dentro dunha escola/universidade. É posíbel especificar no ficheiro do Enterprise que os datos están preparados para un ou máis sistemas de destino, nomeándoos en etiquetas <target> contidas na etiqueta <properties>.
 
 En xeral, non se preocupe diso. Deixe en branco a opción e Moodle procesará o ficheiro de datos, non importa se o destino está especificado ou non. En caso contrario, cubra o nome exacto que estará na saída da etiqueta <target>.';
 $string['roles'] = 'Roles';

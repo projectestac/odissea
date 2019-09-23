@@ -109,7 +109,7 @@ Feature: Edit quiz page - adding things
 
     # Create a couple of sub categories.
     And I am on "Course 1" course homepage
-    And I navigate to "Categories" node in "Course administration > Question bank"
+    And I navigate to "Question bank > Categories" in current page administration
     Then I should see "Add category"
     Then I set the field "Parent category" to "Default for C1"
     And I set the field "Name" to "Subcat 1"
@@ -123,14 +123,14 @@ Feature: Edit quiz page - adding things
     Then I press "id_submitbutton"
     And I should see "Subcat 2"
 
-    And I navigate to "Questions" node in "Course administration > Question bank"
+    And I follow "Question bank"
     Then I should see "Question bank"
     And I should see "Select a category"
 
     # Create the Essay 01 question.
     When I press "Create a new question ..."
     And I set the field "item_qtype_essay" to "1"
-    And I press "Add"
+    And I click on "Add" "button" in the "Choose a question type to add" "dialogue"
     Then I should see "Adding an Essay question"
     And I set the field "Question name" to "Essay 01"
     And I set the field "Question text" to "Please write 100 words about Essay 01"
@@ -143,7 +143,7 @@ Feature: Edit quiz page - adding things
     And I set the field "Select a category:" to "Subcat 1"
     When I press "Create a new question ..."
     And I set the field "item_qtype_essay" to "1"
-    And I press "Add"
+    And I click on "Add" "button" in the "Choose a question type to add" "dialogue"
     Then I should see "Adding an Essay question"
     And I set the field "Question name" to "Essay 02"
     And I set the field "Question text" to "Please write 200 words about Essay 02"
@@ -156,7 +156,7 @@ Feature: Edit quiz page - adding things
     And I wait until the page is ready
     When I press "Create a new question ..."
     And I set the field "item_qtype_essay" to "1"
-    And I press "Add"
+    And I click on "Add" "button" in the "Choose a question type to add" "dialogue"
     Then I should see "Adding an Essay question"
     And I set the field "Question name" to "Essay 03"
     And I set the field "Question text" to "Please write 300 words about Essay 03"
@@ -167,7 +167,7 @@ Feature: Edit quiz page - adding things
     # Create the TF 01 question.
     When I press "Create a new question ..."
     And I set the field "item_qtype_truefalse" to "1"
-    And I press "Add"
+    And I click on "Add" "button" in the "Choose a question type to add" "dialogue"
     Then I should see "Adding a True/False question"
     And I set the field "Question name" to "TF 01"
     And I set the field "Question text" to "The correct answer is true"
@@ -179,7 +179,7 @@ Feature: Edit quiz page - adding things
     # Create the TF 02 question.
     When I press "Create a new question ..."
     And I set the field "item_qtype_truefalse" to "1"
-    And I press "Add"
+    And I click on "Add" "button" in the "Choose a question type to add" "dialogue"
     Then I should see "Adding a True/False question"
     And I set the field "Question name" to "TF 02"
     And I set the field "Question text" to "The correct answer is false"
@@ -195,6 +195,9 @@ Feature: Edit quiz page - adding things
     And I navigate to "Edit quiz" in current page administration
     And I open the "last" add to quiz menu
     And I follow "from question bank"
+    Then the "Add selected questions to the quiz" "button" should be disabled
+    And I click on "Essay 03" "checkbox"
+    Then the "Add selected questions to the quiz" "button" should be enabled
     And I click on "Add to quiz" "link" in the "Essay 03" "table_row"
     Then I should see "Editing quiz: Quiz 1"
     And I should see "Essay 03" on quiz page "1"

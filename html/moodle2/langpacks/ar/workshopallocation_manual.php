@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_manual', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopallocation_manual', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopallocation_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addreviewee'] = 'أضف مُراجعة';
+$string['addreviewer'] = 'أضف مُراجع';
+$string['allocationadded'] = 'التقديم تم تخصيصه بنجاح';
+$string['allocationexists'] = 'التخصيص بالفعل موجود';
+$string['areyousuretodeallocate'] = 'هل أنت متأكد أنك تريد إلغاء تخصيص التقييم المختار؟';
+$string['areyousuretodeallocategraded'] = 'أنت على وشك إزالة التقييم الذي سبق أن أعطي درجات. هل أنت متأكد حقا أنك تريد أن تفعل ذلك؟';
+$string['pluginname'] = 'تخصيص يدوي';
+$string['privacy:metadata:preference:perpage'] = 'عدد التقييمات المخصصة التي يفضل المستخدم رؤيتها على صفحة واحدة.';
 $string['showallparticipants'] = 'أظهر كل المشاركين';

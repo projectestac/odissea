@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,11 +41,22 @@ $string['dropbackground'] = 'マーカーをドラッグするための背景イ
 $string['dropzone'] = 'ドロップゾーン {$a}';
 $string['dropzoneheader'] = 'ドロップゾーン';
 $string['dropzones'] = 'ドロップゾーン';
-$string['dropzones_help'] = '座標を入力することによりドラッグゾーンを定義することができます。あなたが入力した場合、上のプレビューがすぐに更新されるため試行錯誤しながら配置することができます。
+$string['dropzones_help'] = 'ドロップゾーンは座標または上のプレビューでポジションをドラッグすることにより定義することができます。
 
-* 円: 中心_x, 中心_y; 半径<br>例えば次のようになります: <code>80, 100; 50</code>
-* 多角形: x1, y1; x2, y2; ...; xn, yn<br>例えば次のようになります: <code>20, 60; 100, 60; 20, 100</code>
-* 長方形: 左, トップ, 幅, 高さ<br>例えば次のようになります: <code>20, 60; 80, 40</code>';
+最初に形 (円、長方形または多角形) を選択することによりプレビューの上部左側に新しいドロップゾーンの形を追加します。これはあなたがドロップゾーンの編集中にプレビューを表示するためのマーカーセクションの最小化に有用です。
+
+形の編集はプレビュー内の形をクリックして編集ハンドルを表示して始めることができます。あなたは中央ハンドルを使用するか、形の範囲の交点ハンドルで調整することにより形を移動することができます。
+
+多角形のみ交点ハンドルをクリックしている間にCTRLボタン (Macのcommandボタン) を押したままにすることで新しい多角形の交点を追加することができます。線を交差させずに多角形を可能な限りシンプルにしてください。
+
+以下、3つの形での座標の使用に関する情報です:
+
+* 円: 中心_x, 中心_y; 半径<br />例えば次のようになります: <code>80, 100; 50</code>
+20, 100</code>
+* 長方形: 左, トップ, 幅, 高さ<br />例えば次のようになります: <code>20, 60; 80, 40</code>
+* 多角形: x1, y1; x2, y2; ...; xn, yn<br />例えば次のようになります: <code>20,60;100,60;20,100</code>
+
+マーカーテキストを選択することによりプレビューの形にそのテキストを追加します。';
 $string['followingarewrong'] = '以下のマーカーは正しくないエリアに置かれました: {$a}';
 $string['followingarewrongandhighlighted'] = '次のマーカーは正しくない場所に置かれています : {$a}。ハイライトされたマーカーは正しい場所で表示されています。<br />許可された場所をハイライトするにはマーカーをクリックしてください。';
 $string['formerror_nobgimage'] = 'あなたはドラッグ＆ドロップエリアの背景として使用するイメージを選択する必要があります。';

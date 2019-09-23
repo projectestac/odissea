@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_coursefiles', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_coursefiles', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_coursefiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configplugin'] = 'Configuración para repositorio de archivo de cursos heredados';
 $string['coursefiles:view'] = 'Utilice la extensión de repositorios de archivos';
 $string['emptyfilelist'] = 'No hay archivos que mostrar';
 $string['notitle'] = 'sin título';
 $string['pluginname'] = 'Archivos de curso heredados';
 $string['pluginname_help'] = 'Archivos de curso heredados';
+$string['privacy:metadata'] = 'El plugin de Archivos de curso heredados no almacena ni transmite ningún dato personal.';
 $string['remember'] = 'Recordarme';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_manual', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_manual', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['auth_manualdescription'] = 'Metodo honek erabiltzaileen sorrera automat
 $string['expiration'] = 'Gaitu pasahitzen iraungitzea';
 $string['expiration_desc'] = 'Gaitu pasahitzak denbora baten ondoren iraungitzea.';
 $string['expiration_warning'] = 'Jakinarazpenen ataria';
-$string['expiration_warning_desc'] = 'Pasahitza iraungitu aurretiko egun kopurua jakinarazpena bidaltzeko.';
+$string['expiration_warning_desc'] = 'Pasahitza iraungi aurretiko egun kopurua jakinarazpena bidaltzeko.';
 $string['passwdexpire_settings'] = 'Pasahitzaren iraungitzerako ezarpenak';
 $string['passwdexpiretime'] = 'Pasahitzaren iraupena';
 $string['passwdexpiretime_desc'] = 'Pasahitza baliozkoa den denbora-tartea.';

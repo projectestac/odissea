@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor_tinymce', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -602,6 +602,7 @@ $string['paste:selectall_desc'] = 'Selecciona-ho Tot';
 $string['pluginname'] = 'Editor HTML TinyMCE';
 $string['preview:preview_desc'] = 'Vista prèvia';
 $string['print:print_desc'] = 'Imprimeix';
+$string['privacy:metadata'] = 'El connector de l\'editor HTML TinyMCE no emmagatzema cap dada personal.';
 $string['save:cancel_desc'] = 'Cancel·la tots els canvis';
 $string['save:save_desc'] = 'Desa';
 $string['searchreplace:delta_height'] = '';

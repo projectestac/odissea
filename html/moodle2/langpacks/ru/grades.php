@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'grades', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -196,7 +196,13 @@ $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Ошибка при о
 $string['errorupdatinggradecategoryaggregation'] = 'Ошибка обновления способа расчета итоговой оценки для категории с ID {$a->id}';
 $string['errorupdatinggradeitemaggregationcoef'] = 'Ошибка обновления итогового коэффициента (вес или дополнительный балл) элемента оценивания с ID {$a->id}';
 $string['eventgradedeleted'] = 'Оценка удалена';
+$string['eventgradelettercreated'] = 'Буква оценки создана';
+$string['eventgradeletterdeleted'] = 'Буква оценки удалена';
+$string['eventgradeletterupdated'] = 'Буква оценки обновлена';
 $string['eventgradeviewed'] = 'Оценки были просмотрены в журнале оценок';
+$string['eventscalecreated'] = 'Шкала создана';
+$string['eventscaledeleted'] = 'Шкала удалена';
+$string['eventscaleupdated'] = 'Шкала обновлена';
 $string['eventusergraded'] = 'Пользователю поставлена оценка';
 $string['excluded'] = 'НЕ оцени-<br />вается';
 $string['excluded_help'] = 'Если отмечено, оценка не будет использоваться при расчете итоговых оценок';
@@ -204,6 +210,7 @@ $string['expand'] = 'Расширить категорию';
 $string['export'] = 'Экспорт';
 $string['exportalloutcomes'] = 'Экспортировать все показатели';
 $string['exportfeedback'] = 'Включить отзыв в экспорт';
+$string['exportfeedback_desc'] = 'Может быть переопределен во время экспорта.';
 $string['exportformatoptions'] = 'Параметры формата экспорта';
 $string['exportonlyactive'] = 'Исключить приостановленных пользователей';
 $string['exportonlyactive_help'] = 'Включить в экспорт только реально обучающихся студентов, исключив приостановленных.';
@@ -217,8 +224,10 @@ $string['extracreditwarning'] = 'Примечание: установка все
 $string['feedback'] = 'Отзыв';
 $string['feedbackadd'] = 'Добавить отзыв';
 $string['feedbackedit'] = 'Редактировать отзыв';
+$string['feedbackfiles'] = 'Файлы отзыва';
 $string['feedbackforgradeitems'] = 'Отзыв для {$a}';
 $string['feedback_help'] = 'Это поле позволяет добавить какие-либо комментарии к оценке.';
+$string['feedbackhistoryfiles'] = 'История файлов отзывов';
 $string['feedbacks'] = 'Отзывы';
 $string['feedbacksaved'] = 'Отзыв сохранен';
 $string['feedbackview'] = 'Просмотр отзыва';
@@ -320,7 +329,7 @@ $string['gradepointmax_validateerror'] = 'Значение этого парам
 $string['gradepreferences'] = 'Настройки оценок';
 $string['gradepreferenceshelp'] = 'Справка по настройками Журнала оценок';
 $string['gradepublishing'] = 'Разрешить публикацию';
-$string['gradepublishing_help'] = 'Разрешить публикацию в экспорте и импорте: Можно разрешить доступ к файлу с экспортируемыми оценками по URL, без необходимости входить на сайт Moodle. Можно импортировать оценки, получив доступ к такому URL (это означает, что Ваш сайт Moodle может импортировать оценки, опубликованные на другом сайте). По умолчанию, только администраторы могут использовать эту возможность. Пожалуйста, обучите пользователей, прежде чем давать необходимые права другим ролям (расскажите им, что нельзя разглашать полученную ссылку, не следует использовать скачку в несколько потоков, нужно устанавливать ограничение по IP-адресу и т.п.).';
+$string['gradepublishing_help'] = 'Публикация оценок - это способ импорта и экспорта оценок через URL без входа в Moodle. Если этот параметр включен, администраторам и пользователям с разрешением публиковать оценки (по умолчанию это только пользователи с ролью администратора) предоставляются настройки публикации экспорта оценок в каждом журнале оценок.';
 $string['gradepublishinglink'] = 'Скачать: {$a}';
 $string['gradereport'] = 'Отчет об оценках';
 $string['graderreport'] = 'Отчет по оценкам';
@@ -602,6 +611,7 @@ $string['prefrows'] = 'Специальные столбцы';
 $string['prefshow'] = 'Показать/спрятать переключатели';
 $string['previewrows'] = 'Строк предпросмотра';
 $string['privacy:metadata:categorieshistory'] = 'Запись предыдущих версий категорий оценок';
+$string['privacy:metadata:filepurpose'] = 'Файлы обратной связи хранятся в журнале оценок для пользователя.';
 $string['privacy:metadata:grade_import_newitem'] = 'Временная таблица для хранения новых имен элементов оценивания из импорта оценок';
 $string['privacy:metadata:grade_import_newitem:importcode'] = 'Уникальный код пакета для идентификации одного пакета импорта';
 $string['privacy:metadata:grade_import_newitem:importer'] = 'Пользователь, импортирующий данные';
@@ -619,7 +629,7 @@ $string['privacy:metadata:grades:aggregationweight'] = 'Вес в итогово
 $string['privacy:metadata:grades:feedback'] = 'Отзыв';
 $string['privacy:metadata:grades:finalgrade'] = 'Оценка';
 $string['privacy:metadata:gradeshistory'] = 'Запись предыдущих оценок';
-$string['privacy:metadata:grades:information'] = 'Некоторая дополнительная информация';
+$string['privacy:metadata:grades:information'] = 'Дополнительная информация об оценке';
 $string['privacy:metadata:grades:timemodified'] = 'Время последнего изменения оценки';
 $string['privacy:metadata:grades:userid'] = 'ID пользователя, которому поставлена оценка';
 $string['privacy:metadata:grades:usermodified'] = 'ID пользователя, который последним изменял запись';

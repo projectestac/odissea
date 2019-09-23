@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['autotags'] = 'Aggiungi questi tag';
 $string['autotags_help'] = 'Inserisci uno più tag locali (separati da virgole) da aggiungere automaticamente agli interventi copiati dal blog esterno al blog locale. ';
 $string['backupblogshelp'] = 'Se abilitato, i blog verranno inclusi nei backup automatici di SITO';
 $string['blockexternalstitle'] = 'Blog esterni';
-$string['blocktitle'] = 'Titolo blocco tag dei blog';
 $string['blog'] = 'Blog';
 $string['blogaboutthis'] = 'Blog su questo {$a->type}';
 $string['blogaboutthiscourse'] = 'Aggiungi un intervento su questo corso';

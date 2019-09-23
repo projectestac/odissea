@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -202,9 +202,9 @@ $string['continuepreview'] = 'Fortsätt med den senaste förhandsgranskningen';
 $string['copyingfrom'] = 'Skapar en kopia av frågan \'{$a}\'';
 $string['copyingquestion'] = 'Kopierar en fråga';
 $string['correct'] = 'Rätt';
-$string['correctanswer'] = 'Det rätta svaret är';
+$string['correctanswer'] = 'Rätt svar';
 $string['correctanswerformula'] = 'Formel för korrekta svar';
-$string['correctansweris'] = 'Det rätta svaret är: {$a}';
+$string['correctansweris'] = 'Korrekt svar: {$a}';
 $string['correctanswerlength'] = 'Viktiga symboler';
 $string['correctanswers'] = 'Rätt svar';
 $string['correctanswershows'] = 'Rätt svar visar';

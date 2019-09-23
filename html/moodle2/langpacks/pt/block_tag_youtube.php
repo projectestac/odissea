@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tag_youtube', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tag_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['apikeyinfo'] = 'Adquira uma <a href="https://developers.google.com/yout
 $string['autosvehicles'] = 'Automóveis & Veículos';
 $string['category'] = 'Categoria';
 $string['comedy'] = 'Comédia';
-$string['configtitle'] = 'Título';
+$string['configtitle'] = 'Título do bloco Youtube';
 $string['education'] = 'Educação';
 $string['entertainment'] = 'Entretenimento';
 $string['filmsanimation'] = 'Filmes & Animação';

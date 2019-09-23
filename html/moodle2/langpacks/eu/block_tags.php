@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tags', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,11 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['anycollection'] = 'Edozein';
 $string['anytype'] = 'Guztiak';
-$string['configtitle'] = 'Blokearen izenburua';
+$string['configtitle'] = 'Etiketak blokearen izenburua';
 $string['defaultdisplay'] = 'Erakutsi etiketak';
 $string['disabledtags'] = 'Etiketak gaitu gabe daude';
 $string['pluginname'] = 'Etiketak';
-$string['privacy:metadata'] = 'Etiketak blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
+$string['privacy:metadata'] = 'Etiketak blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['recursivecontext'] = 'Sartu testuinguru seme-alabak';
 $string['recursivecontext_help'] = 'Ez aukeratuz gero, zehaztutako testuinguruko etiketak erakutsiko dira baina ez beheragoko testuinguruetako etiketak. Esaterako, ikastaroko etiketak erakutsiko dira, baina ez ikastaroko jardueretako etiketak.';
 $string['standardonly'] = 'Estandarra baino ez';

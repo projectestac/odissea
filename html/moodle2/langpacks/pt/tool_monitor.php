@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_monitor', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,11 +65,11 @@ $string['managesubscriptionslink'] = 'Pode subscrever as regras da página {$a}.
 $string['messageprovider:notification'] = 'Notificações de subscrições de regras';
 $string['messagetemplate'] = 'Mensagem de notificação';
 $string['messagetemplate_help'] = 'Uma mensagem de notificação é enviada aos subscritores assim que o limite de notificação tenha sido atingido. A notificação pode incluir qualquer um, ou todos, os seguintes espaços reservados:
-<br /><br />
-* Hiperligação para a localização do evento {link}<br />
-* Hiperligação para a área de monitorização {modulelink}<br />
-* Nome da regra {rulename}<br />
-* Descrição {description}<br />
+
+* Hiperligação para a localização do evento {link}
+* Hiperligação para a área monitorizada {modulelink}
+* Nome da regra {rulename}
+* Descrição {description}
 * Evento {eventname}';
 $string['moduleinstance'] = 'Instância';
 $string['monitordisabled'] = 'A monitorização de eventos está atualmente desativada.';

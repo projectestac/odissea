@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_completion_progress', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   block_completion_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,7 +85,7 @@ $string['progress'] = 'Progreso';
 $string['progressbar'] = 'Estado de Finalización';
 $string['shortname'] = 'Nombre corto de curso';
 $string['showallinfo'] = 'Mostrar toda la información';
-$string['showinactive'] = 'Mostrar estudaintes inactivos en Vista general';
+$string['showinactive'] = 'Mostrar estudiantes inactivos en Vista general';
 $string['submitted'] = 'Enviado';
 $string['submittednotcomplete_colour'] = '#FFCC00';
 $string['submittednotcomplete_colour_descr'] = 'El código de color HTML para los elementos enviados, pero no completados aún.';

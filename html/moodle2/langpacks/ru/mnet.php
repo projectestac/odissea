@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mnet', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -184,7 +184,7 @@ $string['publickey'] = 'Открытый ключ';
 $string['publickey_help'] = 'Открытый ключ получен автоматически с удаленного сервера.';
 $string['publickeyrequired'] = 'Вы должны предоставить открытый ключ.';
 $string['publish'] = 'Опубликовать';
-$string['reallydeleteserver'] = 'Вы действительно хотите удалить сервер';
+$string['reallydeleteserver'] = 'Вы уверены, что хотите удалить сервер?';
 $string['receivedwarnings'] = 'Были получены следующие предупреждения';
 $string['recordnoexists'] = 'Запись не существует.';
 $string['reenableserver'] = 'Нет - выберите эту опцию, чтобы повторно включить этот сайт';

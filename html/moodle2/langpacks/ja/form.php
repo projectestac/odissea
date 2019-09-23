@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['err_nopunctuation'] = 'あなたはここに句読点以外の文字を
 $string['err_numeric'] = 'あなたはここに数字を入力する必要があります。';
 $string['err_rangelength'] = 'あなたはここに {$a->format[0]} から {$a->format[1]} の文字を入力する必要があります。';
 $string['err_required'] = 'あなたはここに値を入力する必要があります。';
+$string['err_wrappingwhitespace'] = '値を空白で開始または終了しないでください。';
 $string['err_wrongfileextension'] = 'いくつかのファイル ({$a->wrongfiles}) はアップロードすることができません。ファイルタイプ {$a->whitelist} のみ許可されます。';
 $string['filesofthesetypes'] = '許可されるファイルタイプ:';
 $string['filetypesany'] = 'すべてのファイルタイプ';
@@ -73,14 +74,13 @@ $string['passwordunmaskrevealhint'] = '表示';
 $string['privacy:metadata:preference:filemanager_recentviewmode'] = 'ファイルピッカエレメントの最近選択された表示モードです。';
 $string['privacy:preference:filemanager_recentviewmode'] = 'あなたのファイルピッカでのファイル表示方法は次のとおりです: {$a}';
 $string['requiredelement'] = '必須入力フィールド';
-$string['revealpassword'] = '公開';
 $string['security'] = 'セキュリティ';
 $string['selectallornone'] = 'すべてを選択する/なし';
 $string['selected'] = '選択済み';
 $string['selecteditems'] = '選択済みアイテム:';
 $string['showadvanced'] = '拡張要素を表示する';
 $string['showless'] = '表示を減らす ...';
-$string['showmore'] = '表示を増やす ...';
+$string['showmore'] = 'さらに表示する ...';
 $string['somefieldsrequired'] = '{$a} マークが付けられたフィールドは必須入力フィールドです。';
 $string['time'] = '時間';
 $string['timeunit'] = '時間単位';

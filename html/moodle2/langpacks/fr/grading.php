@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'grading', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,14 +30,14 @@ $string['activemethodinfonone'] = 'Aucune méthode d\'évaluation avancée n\'es
 $string['changeactivemethod'] = 'Changer la méthode d\'évaluation courante à';
 $string['clicktoclose'] = 'Cliquer pour fermer';
 $string['exc_gradingformelement'] = 'Impossible d\'instancier l\'élément de formulaire d\'évaluation';
-$string['formnotavailable'] = 'Une méthode d\'évaluation avancée a été choisie, mais le formulaire d\'évaluation n\'est pas encore disponible. Veuillez le définir au moyen du lien dans le bloc Administration.';
-$string['gradingformunavailable'] = 'Remarque : le formulaire d\'évaluation avancée n\'est pas encore disponible. La méthode d\'évaluation simple  sera utilisée tant que le formulaire ne sera pas créé et validé.';
+$string['formnotavailable'] = 'Une méthode d\'évaluation avancée a été choisie, mais le formulaire d\'évaluation n\'est pas encore disponible. Veuillez le définir au moyen du lien dans le menu des action ou le bloc d\'administration.';
+$string['gradingformunavailable'] = 'Remarque : le formulaire d\'évaluation avancée n\'est pas encore disponible. La méthode d\'évaluation simple sera utilisée tant que le formulaire ne sera pas créé et validé.';
 $string['gradingmanagement'] = 'Évaluation avancée';
 $string['gradingmanagementtitle'] = 'Évaluation avancée : {$a->component} ({$a->area})';
 $string['gradingmethod'] = 'Méthode d\'évaluation';
 $string['gradingmethod_help'] = 'Choisissez la méthode d\'évaluation avancée qui doit être utilisée pour calculer les notes dans le contexte donné.
 
-Pour désactiver l\'évaluation avancée et revenir à  la méthode d\'évaluation par défaut, choisissez « Évaluation simple directe ».';
+Pour désactiver l\'évaluation avancée et revenir à la méthode d\'évaluation par défaut, choisissez « Évaluation simple directe ».';
 $string['gradingmethodnone'] = 'Évaluation simple directe';
 $string['gradingmethods'] = 'Méthodes d\'évaluation';
 $string['manageactionclone'] = 'Créer un formulaire d\'évaluation à partir d\'un modèle';

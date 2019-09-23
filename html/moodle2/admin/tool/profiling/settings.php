@@ -30,18 +30,17 @@ defined('MOODLE_INTERNAL') || die;
 //2018.05.26  @svallde2
 if (get_protected_agora()) {
 //************ FI    
-    // profiling tool, added to development
-    // Profiling tool, added to development.
-    $hasextension = extension_loaded('tideways_xhprof');
-    $hasextension = $hasextension || extension_loaded('tideways');
-    $hasextension = $hasextension || extension_loaded('xhprof');
-    $isenabled = !empty($CFG->profilingenabled) || !empty($CFG->earlyprofilingenabled);
-    if ($hasextension && $isenabled) {
-        $ADMIN->add('development', new admin_externalpage('toolprofiling', get_string('pluginname', 'tool_profiling'),
+// Profiling tool, added to development.
+$hasextension = extension_loaded('tideways_xhprof');
+$hasextension = $hasextension || extension_loaded('tideways');
+$hasextension = $hasextension || extension_loaded('xhprof');
+$isenabled = !empty($CFG->profilingenabled) || !empty($CFG->earlyprofilingenabled);
+if ($hasextension && $isenabled) {
+    $ADMIN->add('development', new admin_externalpage('toolprofiling', get_string('pluginname', 'tool_profiling'),
             "$CFG->wwwroot/$CFG->admin/tool/profiling/index.php", 'moodle/site:config'));
 }
 //XTEC ************ AFEGIT - To let access only to xtecadmin user
 //2012.08.20  @sarjona
 //2018.05.26  @svallde2
 }
-//************ FI    
+//************ FI

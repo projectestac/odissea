@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,7 +88,7 @@ $string['choosefilefromuserbackup'] = 'Sicherungsbereich des Nutzers';
 $string['choosefilefromuserbackup_help'] = 'Sicherungsdateien mit der Option \'anonymisierte Nutzereinträge\' werden hier gespeichert.';
 $string['configgeneralactivities'] = 'Standard für die Einbeziehung von Aktivitäten in eine Sicherung';
 $string['configgeneralanonymize'] = 'Standard für die Anonymisierung aller nutzerbezogenen Informationen in eine Sicherung';
-$string['configgeneralbadges'] = 'Diese Option legt fest, ob Auszeichnungen standardmäßig in eine Sicherung einbezogen werden.';
+$string['configgeneralbadges'] = 'Diese Option legt fest, ob Badges standardmäßig in eine Sicherung einbezogen werden.';
 $string['configgeneralblocks'] = 'Standard für die Einbeziehung von Blöcken in eine Sicherung';
 $string['configgeneralcalendarevents'] = 'Diese Option legt die Standardeinstellung für die Einbeziehung von Kalendereinträgen in Kurssicherungen fest.';
 $string['configgeneralcomments'] = 'Standard für die Einbeziehung von Kommentaren in eine Sicherung';
@@ -109,7 +109,7 @@ $string['config_overwrite_course_fullname'] = 'Standardmäßig wird der aktuelle
 $string['config_overwrite_course_shortname'] = 'Standardmäßig wird der aktuelle Kurskurzname mit dem Kurskurznamen aus der Sicherungsdatei überschrieben. Um das Recht zu haben, den Kurskurznamen zu ändern (moodle/course:changeshortname) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
 $string['config_overwrite_course_startdate'] = 'Standardmäßig wird der aktuelle Kursbeginn mit dem Kursbeginn aus der Sicherungsdatei überschrieben. Um das Recht zu haben, den Kursbeginn zu ändern (moodle/restore:rolldates) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
 $string['configrestoreactivities'] = 'Standard für die Wiederherstellung von Aktivitäten setzen';
-$string['configrestorebadges'] = 'Standard für die Wiederherstellung von Auszeichnungen setzen';
+$string['configrestorebadges'] = 'Standard für die Wiederherstellung von Badges setzen';
 $string['configrestoreblocks'] = 'Standard für die Wiederherstellung von Blöcken setzen';
 $string['configrestorecalendarevents'] = 'Standard für die Wiederherstellung von Kalendereinträgen setzen';
 $string['configrestorecomments'] = 'Standard für die Wiederherstellung von Kommentaren setzen';
@@ -161,7 +161,7 @@ $string['filereferencessamesite'] = 'Die Sicherung stammt von der gleichen Websi
 $string['generalactivities'] = 'Aktivitäten einbeziehen';
 $string['generalanonymize'] = 'Informationen anonymisieren';
 $string['generalbackdefaults'] = 'Allgemeines';
-$string['generalbadges'] = 'Auszeichnungen einbeziehen';
+$string['generalbadges'] = 'Badges einbeziehen';
 $string['generalblocks'] = 'Blöcke einbeziehen';
 $string['generalcalendarevents'] = 'Kalender einbeziehen';
 $string['generalcomments'] = 'Kommentare einbeziehen';
@@ -238,6 +238,7 @@ $string['qcategory2coursefallback'] = 'Die Fragenkategorie "{$a->name}" in der S
 $string['qcategorycannotberestored'] = 'Die Fragenkategorie "{$a->name}" kann bei der Wiederherstellung nicht erstellt werden';
 $string['question2coursefallback'] = 'Die Fragenkategorie "{$a->name}" in der Sicherungsdatei ist ursprünglich eine System- bzw. Kurskategorie. Bei der Wiederherstellung wird sie im Kurskontext erstellt.';
 $string['questionegorycannotberestored'] = 'Die Fragen "{$a->name}" können bei der Wiederherstellung nicht erstellt werden';
+$string['recyclebin_desc'] = 'Diese Einstellungen werden auch auf den Papierkorb angewendet.';
 $string['replacerestoredefaults'] = 'Standard wiederherstellen, wenn in einem anderen Kurs wiederhergestellt wird und die bisherigen Kursinhalte gelöscht werden';
 $string['restoreactivity'] = 'Aktivität wiederherstellen';
 $string['restorecourse'] = 'Kurs wiederherstellen';
@@ -278,7 +279,7 @@ $string['restoringcourseshortname'] = 'Kurs wird wiederhergestellt';
 $string['rootenrolmanual'] = 'Wiederherstellen mit manueller Einschreibung';
 $string['rootsettingactivities'] = 'Aktivitäten einbeziehen';
 $string['rootsettinganonymize'] = 'Nutzerinformationen anonymisieren';
-$string['rootsettingbadges'] = 'Auszeichnungen einbeziehen';
+$string['rootsettingbadges'] = 'Badges einbeziehen';
 $string['rootsettingblocks'] = 'Blöcke einbeziehen';
 $string['rootsettingcalendarevents'] = 'Kalender einbeziehen';
 $string['rootsettingcomments'] = 'Kommentare einbeziehen';

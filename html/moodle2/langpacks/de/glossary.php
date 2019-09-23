@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Kategorie hinzufügen';
 $string['addcomment'] = 'Kommentar hinzufügen';
 $string['addentry'] = 'Eintrag hinzufügen';
 $string['addingcomment'] = 'Kommentar hinzufügen';
 $string['alias'] = 'Alternativbegriff';
 $string['aliases'] = 'Alternativbegriff(e)';
-$string['aliases_help'] = 'Zu jedem Glossareintrag kann eine Reihe von Alternativbegriffen (Schlagwörter, Synonyme, Keywords, Tags) angegeben werden. Tragen Sie jeden Begriff in einer neuen Zeile ein (nicht als kommagetrennte Liste).
+$string['aliases_help'] = 'Zu jedem Glossareintrag kann eine Reihe von Alternativbegriffen (Tags, Schlagwörter, Synonyme, Keywords) angegeben werden. Tragen Sie jeden Begriff in einer neuen Zeile ein (nicht als kommagetrennte Liste).
 
 Wenn ein Glossareintrag automatisch verlinkt wird wird jeder dieser Begriffe ebenfalls markiert.';
 $string['allcategories'] = 'Alle Kategorien';
@@ -110,6 +111,7 @@ $string['defaultsortkey'] = 'Standardschlüssel';
 $string['defaultsortorder'] = 'Standardsortierung';
 $string['definition'] = 'Definition';
 $string['definitions'] = 'Definitionen';
+$string['deletecategory'] = 'Kategorie löschen';
 $string['deleteentry'] = 'Eintrag löschen';
 $string['deleteentrya'] = 'Eintrag löschen: {$a}';
 $string['deletenotenrolled'] = 'Einträge von eingeschriebenen Nutzer/innen löschen';
@@ -151,6 +153,7 @@ $string['editalways_help'] = 'Diese Option legt fest, wie Teilnehmer/innen ihre 
 * Ja - Einträge sind jederzeit bearbeitbar
 * Nein - Einträge sind nur im festgelegten Zeitraum bearbeitbar (standardmäßig 30 min)';
 $string['editcategories'] = 'Kategorien bearbeiten';
+$string['editcategory'] = 'Kategorie bearbeiten';
 $string['editentry'] = 'Eintrag bearbeiten';
 $string['editentrya'] = 'Eintrag bearbeiten: {$a}';
 $string['editingcomment'] = 'Kommentar bearbeiten';
@@ -164,6 +167,7 @@ $string['entrydeleted'] = 'Eintrag gelöscht';
 $string['entryexported'] = 'Der Eintrag wurde erfolgreich exportiert';
 $string['entryishidden'] = '(Dieser Eintrag ist aktuell nicht sichtbar)';
 $string['entryleveldefaultsettings'] = 'Grundeinstellungen für Einträge';
+$string['entrylink'] = 'Eingabelink: {$a}';
 $string['entrysaved'] = 'Der Eintrag wurde gespeichert';
 $string['entryupdated'] = 'Der Eintrag wurde geändert';
 $string['entryusedynalink'] = 'Eintrag automatisch verlinken';
@@ -290,7 +294,7 @@ $string['privacy:metadata:glossary_entries:userid'] = 'ID des Nutzers der Glossa
 $string['question'] = 'Frage';
 $string['rejectedentries'] = 'Abgelehnte Einträge';
 $string['rejectionrpt'] = 'Übersicht über abgelehnte Einträge';
-$string['removeallglossarytags'] = 'Alle Glossarschlagwörter entfernen';
+$string['removeallglossarytags'] = 'Alle Glossar-Tags entfernen';
 $string['resetglossaries'] = 'Einträge löschen von';
 $string['resetglossariesall'] = 'Einträge aus allen Glossaren löschen';
 $string['rssarticles'] = 'Anzahl neuer RSS-Artikel ';
@@ -316,7 +320,7 @@ $string['special'] = '@';
 $string['standardview'] = 'Alphabetisch';
 $string['studentcanpost'] = 'Teilnehmer/innen können eigene Einträge anlegen, bearbeiten und löschen.';
 $string['tagarea_glossary_entries'] = 'Glossareinträge';
-$string['tagsdeleted'] = 'Glossarschlagwörter wurden gelöscht';
+$string['tagsdeleted'] = 'Glossar-Tags wurden gelöscht';
 $string['totalentries'] = 'Gesamtzahl der Einträge';
 $string['usedynalink'] = 'Automatisch verlinken';
 $string['usedynalink_help'] = 'Wenn diese Option aktiviert ist, wird beim Hinzufügen eines neuen Eintrages die Option "Eintrag automatisch verlinken" angezeigt.

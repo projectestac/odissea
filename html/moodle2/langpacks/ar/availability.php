@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,8 @@ $string['addrestriction'] = 'إضافة قيود ...';
 $string['and'] = 'و';
 $string['condition_group'] = 'مجموعة تقييد';
 $string['condition_group_info'] = 'أضف مجموعة من القيود المتداخلة لتطبيق المنطق المعقد.';
-$string['enableavailability'] = 'فعل خاصية الوصول المشروط';
-$string['enableavailability_desc'] = 'يسمح لك هذا الخيار عند تفعيله وضع شروط (بناءً على التاريخ، العلامة، أو الإكتمال) لتحديد متى يكون النشاط متوافراً.';
+$string['enableavailability'] = 'فعل خاصية الدخول المشروط';
+$string['enableavailability_desc'] = 'يسمح لك هذا الخيار عند تفعيله وضع شروط (بناءً على التاريخ، العلامة، أو الإكمال) لتحديد متى يكون النشاط متوافراً.';
 $string['error_list_nochildren'] = 'يجب أن تحتوي مجموعات القيود على شرط واحد على الأقل.';
 $string['hidden_all'] = 'مخفي تمامًا إذا لم يستوفي المستخدم الشروط';
 $string['hidden_individual'] = 'مخفي تمامًا إذا لم يستوفِ المستخدم هذا الشرط';
@@ -61,7 +61,8 @@ $string['list_root_or_hidden'] = 'غير متاح (مخفي) ما لم يكن أ
 $string['manageplugins'] = 'إدارة القيود';
 $string['missingplugin'] = 'مكوّن تقييد إضافي مفقود';
 $string['or'] = 'أو';
-$string['restrictaccess'] = 'تقييد الوصول';
+$string['privacy:metadata'] = 'النظام الفرعي لتقييد الوصول لا يخزن أي بيانات شخصية.';
+$string['restrictaccess'] = 'تقييد الدخول';
 $string['restrictbygroup'] = 'إضافة تقييد الوصول إلى المجموعة / التجميع المجموعات';
 $string['setheading'] = '{$a->number} منظومة من {$a->count} قيد (قيود)';
 $string['shown_all'] = 'تظهر بلون رمادي إذا لم يستوفي المستخدم الشروط';

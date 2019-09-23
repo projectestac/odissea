@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_meta', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['coursesort'] = 'Ταξινόμηση λίστας μαθημάτων';
 $string['coursesort_help'] = 'Αυτό καθορίζει αν η λίστα με τα μαθήματα που μπορούν να συνδεθούν θα είναι ταξινομημένη με σειρά (π.χ. την σειρά που ορίζεται στη Διαχείριση ιστοτόπου > Μαθήματα > Διαχείριση μαθημάτων και κατηγοριών) ή την αλφαβητική σειρά των μαθημάτων.';
 $string['creategroup'] = 'Δημιουργία νέας ομάδας';
 $string['defaultgroupnametext'] = '{$a->name} μάθημα {$a->increment}';
+$string['enrolmetasynctask'] = 'Εργασία συγχρονισμού μετα-εγγραφών';
 $string['linkedcourse'] = 'Σύνδεση μαθήματος';
 $string['meta:config'] = 'Παραμετροποίηση meta enroll περιπτώσεων';
 $string['meta:selectaslinked'] = 'Επιλογή μαθήματος ως μετα-συνδεδεμένου';

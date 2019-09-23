@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choice', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,16 +41,13 @@ $string['choiceclose'] = 'Até';
 $string['choicecloseson'] = 'A escolla pecha en {$a}';
 $string['choice:deleteresponses'] = 'Eliminar respostas';
 $string['choice:downloadresponses'] = 'Cargar respostas';
-$string['choicefull'] = 'Esta escolla está chea en non hai prazas dispoñíbeis.';
+$string['choicefull'] = 'Unha ou máis das opcións que seleccionou xa foron cubertas. Non se gardou a súa resposta. Faga outra selección.';
 $string['choicename'] = 'Nome escollido';
 $string['choiceopen'] = 'Abrir';
 $string['choiceoptions'] = 'Opcións de escolla';
-$string['choiceoptions_help'] = '<P ALIGN=CENTER><B>Opcións a elixir</B></P>
+$string['choiceoptions_help'] = 'Aquí é onde pode especificar as opcións entre as que teñen os participantes para escoller.
 
-<P>Aquí é onde vostede especifica as opcións que os participantes teñen para
-escoller.<P>Pode encher calquera número destas opcións, é dicir, pode deixar
-algunha en branco se
-non necesita as seis opcións. As opcións non cubertas non aparecerán no cuestionario.';
+Pode especificar calquera número destas. Se deixar algunha das opcións en branco, non se presentarán. De necesitar máis opcións, prema o botón «Engadir 3 campos ao formulario».';
 $string['choice:readresponses'] = 'Ler respostas';
 $string['choicesaved'] = 'Gardouse a súa escolla';
 $string['choicetext'] = 'Texto escollido';
@@ -124,6 +121,11 @@ $string['publishafteranswer'] = 'Mostrar resultados aos alumnos despois de que r
 $string['publishafterclose'] = 'Mostrar resultados aos alumnos só despois de que a escolla estea fechada';
 $string['publishalways'] = 'Mostrar os resultados aos alumnos sempre';
 $string['publishanonymous'] = 'Publicar resultados de maneira anónima, sen mostrar os nomes dos alumnos';
+$string['publishinfoanonafter'] = 'Os resultados anónimos publicaranse após responder.';
+$string['publishinfoanonclose'] = 'Os resultados anónimos publicaranse após pechar a actividade.';
+$string['publishinfofullafter'] = 'Os resultados completos, que amosan as opcións de todos, serán publicados após responder.';
+$string['publishinfofullclose'] = 'Os resultados completos, que amosan as opcións de todos, serán publicados após que a actividade estea pechada.';
+$string['publishinfonever'] = 'Os resultados desta actividade non se publicarán após responder.';
 $string['publishnames'] = 'Publicar os resultados completos, mostrando os nomes e as súas escollas';
 $string['publishnot'] = 'Non publicar resultados aos alumnos';
 $string['removemychoice'] = 'Retirar a miña escolla';

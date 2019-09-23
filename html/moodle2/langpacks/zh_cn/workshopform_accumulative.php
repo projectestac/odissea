@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,9 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['absent'] = '缺勤';
 $string['addmoredimensions'] = '再增加 {$a} 个空白采分点';
 $string['correct'] = '正确';
-$string['dimensioncomment'] = '评语';
 $string['dimensiondescription'] = '描述';
-$string['dimensiongrade'] = '分数';
 $string['dimensionmaxgrade'] = '最高分数/等级';
 $string['dimensionnumber'] = '采分点 {$a}';
 $string['dimensionweight'] = '权重';

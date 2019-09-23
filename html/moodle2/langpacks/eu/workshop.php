@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -209,6 +209,7 @@ $string['noexamplesformready'] = 'Ebaluazio-moldea zehaztu behar duzu adibide-bi
 $string['nogradeyet'] = 'Ez da oraindik kalifikatu';
 $string['nosubmissionfound'] = 'Ez da erabiltzaile honen bidalketarik aurkitu';
 $string['nosubmissions'] = 'Oraindik ez dago bidalketarik tailer honetan';
+$string['nosubmissiontype'] = 'Gutxienez bidalketa mota bat izango da eskuragarri.';
 $string['notassessed'] = 'Ebaluatu gabea';
 $string['nothingfound'] = 'Ez dago erakusteko ezer';
 $string['nothingtoreview'] = 'Ez dago berrikusteko ezer';
@@ -242,10 +243,10 @@ $string['privacy:metadata:aggregatedgradinggrade'] = 'Tailer-jardueran erabiltza
 $string['privacy:metadata:assessmentgrade'] = 'Ebaluazio honetan bidalketa honetarako iradokitutako kalifikazioen batura';
 $string['privacy:metadata:assessmentgradinggrade'] = 'Ebaluazio hau emateagatiko kalifikazioa';
 $string['privacy:metadata:assessmentgradinggradeover'] = 'Ebaluazio hau emateagatiko kalifikazioarentzat eskuz baliogabetutako balioa';
-$string['privacy:metadata:assessmentid'] = 'Ebaluazioaren identifikatzailea';
-$string['privacy:metadata:authorid'] = 'Bidalketaren egilearen identifikatzailea';
+$string['privacy:metadata:assessmentid'] = 'Ebaluazioaren IDa';
+$string['privacy:metadata:authorid'] = 'Bidalketaren egilearen IDa';
 $string['privacy:metadata:dimensiongrade'] = 'Emandako ebaluazio-dimentsioari emadako kalifikazioa';
-$string['privacy:metadata:dimensionid'] = 'Ebaluazio-dimentsioaren identifikatzailea';
+$string['privacy:metadata:dimensionid'] = 'Ebaluazio-dimentsioaren IDa';
 $string['privacy:metadata:example'] = 'Erregistro hau adibidezko bidalketa batekoa den edo ez';
 $string['privacy:metadata:feedbackauthor'] = 'Egilearentzako feedbacka';
 $string['privacy:metadata:feedbackauthorformat'] = 'Egilearentzako feedbackaren testu-formatua';
@@ -256,13 +257,13 @@ $string['privacy:metadata:peercomment'] = 'Bidalketa egin zuen erabiltzaileak em
 $string['privacy:metadata:peercommentformat'] = 'Emandako kalifikazioari egindako iruzkinaren testu-formatua';
 $string['privacy:metadata:preference:perpage'] = 'Erabiltzileak orri bakarrean ikusi nahi duen bidalketa-kopurua';
 $string['privacy:metadata:published'] = 'Behin tailerra itxi ondoren bidalketa partaide guztiei argitaratu behar den edo ez';
-$string['privacy:metadata:reviewerid'] = 'Ebaluazioa eman zuen erabiltzailearen identifikatzailea';
+$string['privacy:metadata:reviewerid'] = 'Ebaluazioa eman zuen erabiltzailearen IDa';
 $string['privacy:metadata:strategy'] = 'Gordetako balioak interpretatuko dituen kalifikazio-estrategia pluginaren izena';
 $string['privacy:metadata:submissioncontent'] = 'Bidalketaren edukia';
 $string['privacy:metadata:submissioncontentformat'] = 'Bidalketaren edukiaren testu-formatua';
 $string['privacy:metadata:submissiongrade'] = 'Bidalketaren kalifikazioen batura 0 eta 100 arteko zenbaki hamartar gisa idatzita';
 $string['privacy:metadata:submissiongradeover'] = 'Eskuz baliogabetutako kalifikazioen baturaren balioa';
-$string['privacy:metadata:submissionid'] = 'Bidalketaren identifikatzailea';
+$string['privacy:metadata:submissionid'] = 'Bidalketaren IDa';
 $string['privacy:metadata:submissiontitle'] = 'Bidalketaren izenburua';
 $string['privacy:metadata:subsystem:corefiles'] = 'Tailerrak bidalketaren testuan txertatutako fitxategiak gordetzen ditu';
 $string['privacy:metadata:subsystem:coreplagiarism'] = 'Tailerrak plagioaren prebentziorko sistemak berez onartzen ditu';
@@ -274,9 +275,9 @@ $string['privacy:metadata:weight'] = 'Ebaluazioaren pisua';
 $string['privacy:metadata:workshopaggregations'] = 'Ebaluazioaren kalifikazioen baturak gordetzen ditu';
 $string['privacy:metadata:workshopassessments'] = 'Tailerreko bidalketen ebaluazioak nola esleitu zireneko informazioa gordetzen du';
 $string['privacy:metadata:workshopgrades'] = 'Ebaluazio-formularioak kalifikazioekin eta iruzkinekin nola osatu zireneko informazioa gordetzen du';
-$string['privacy:metadata:workshopid'] = 'Tailer-jardueraren identifikatzailea';
+$string['privacy:metadata:workshopid'] = 'Tailer-jardueraren IDa';
 $string['privacy:metadata:workshopsubmissions'] = 'Tailerreko bidalketen inguruko informazioa gordetzen du';
-$string['privacy:request:delete:content'] = 'Edukia ezabatua izan da egilearen eskaeraren ondorioz.';
+$string['privacy:request:delete:content'] = 'Edukia ezabatua izan da (egilearen eskaeraren ondorioz edo iraungitu delako)';
 $string['privacy:request:delete:title'] = '[Ezabatua]';
 $string['publishedsubmissions'] = 'Argitaratutako bidalketak';
 $string['publishsubmission'] = 'Argitaratu bidalketa';
@@ -336,6 +337,12 @@ $string['submissionstart'] = 'Bidalketetarako lehen eguna';
 $string['submissionstartdatetime'] = 'Bidalketetarako lehen eguna {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} bidalketetarako lehen eguna';
 $string['submissiontitle'] = 'Izenburua';
+$string['submissiontypedisabled'] = 'Bidalketa mota hau desgatiu da tailer honetan.';
+$string['submissiontypefileavailable'] = 'Fitxategi-eransketa <span class="accesshide">eskuragarria</span>';
+$string['submissiontypefilerequired'] = '<span class="accesshide">Fitxategi-eransketa </span> Nahitaezkoa';
+$string['submissiontypes'] = 'Bidalketa-motak';
+$string['submissiontypetextavailable'] = 'On-line testua<span class="accesshide"> eskuragarri</span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide">On-line testua </span>beharrezkoa';
 $string['submittednotsubmitted'] = 'Bidalita ({$a->submitted}) / bidali gabe ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Bidalketak esleitzeko metodoa';
 $string['subplugintype_workshopallocation_plural'] = 'Bidalketak esleitzeko metodoak';
@@ -381,7 +388,7 @@ $string['usepeerassessment_help'] = 'Gaituz gero, erabiltzaile bat izenda daitek
 $string['userdatecreated'] = 'noiz bidalia: <span>{$a}</span>';
 $string['userdatemodified'] = 'noiz aldatua: <span>{$a}</span>';
 $string['userplan'] = 'Tailerraren planifikazioa';
-$string['userplanaccessibilityskip'] = 'Egin jauzi oraingo lanetara';
+$string['userplanaccessibilityskip'] = 'Egin salto oraingo lanetara';
 $string['userplanaccessibilitytitle'] = 'Tailerraren kronologia {$a} faserekin';
 $string['userplancurrentphase'] = 'Oraingo fasea';
 $string['userplan_help'] = 'Tailerraren planifikazioak jardueraren aldiak erakusten ditu eta aldi bakoitzaren lanak zerrendatzen ditu. Uneko aldia nabarmenduta dago eta lanen osaketa marka batez adierazten da.';
@@ -411,7 +418,6 @@ $string['workshop:viewauthornames'] = 'Ikusi egileen izenak';
 $string['workshop:viewauthorpublished'] = 'Ikusi argitaratutako bidaldeten egileak';
 $string['workshop:viewpublishedsubmissions'] = 'Ikusi argitaratutako bidalketak';
 $string['workshop:viewreviewernames'] = 'Ikusi ebaluatzaileen izenak';
-$string['yourassessment'] = 'Zure ebaluazioa';
 $string['yourassessmentfor'] = '{$a}-(r)ako zure ebaluazioa';
 $string['yourgrades'] = 'Zure kalifikazioak';
 $string['yoursubmission'] = 'Zure bidalketak';

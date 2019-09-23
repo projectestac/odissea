@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_bootstrapbase', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'theme_bootstrapbase', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   theme_bootstrapbase
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,9 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h2>Bootstrap Base</h2>
-<img class=img-polaroid src="bootstrap/pix/screenshot.jpg" />
+<img class="img-polaroid" src="bootstrap/pix/screenshot.jpg" />
 <h3>Theme Credits</h3>
-<p>
 <h3>Moodle twitter Bootstrap theme</h3>
 <p>
 This theme is based on the Bootstrap CSS framework, version 2.3
@@ -40,7 +39,7 @@ This theme is based on the Bootstrap CSS framework, version 2.3
 This is a GPL theme that is available on GitHub:
 </p>
 <p>
-<a href=https://github.com/bmbrands/theme_bootstrap">https://github.com/bmbrands/theme_bootstrap</a>
+<a href="https://github.com/bmbrands/theme_bootstrap">https://github.com/bmbrands/theme_bootstrap</a>
 </p>
 <p>
 Feel free to modify / improve / share
@@ -62,10 +61,12 @@ on the Moodle tracker</p>
 
 <h3>More information</h3>
 <ul>
-<li><a href="https://github.com/bmbrands/theme_bootstrap/wiki">Wiki page for this theme</a>
+<li><a href="https://github.com/bmbrands/theme_bootstrap/wiki">Wiki page for this theme</a></li>
 <li><a href="http://docs.moodle.org/23/en/bootstrap-Theme">Bootstrap on Moodle docs</a></li>
 <li><a href="http://theming.sonsbeekmedia.nl/">Theme testing playground </a></li>
-</ul>';
+</ul>
+</div>
+</div>';
 $string['pluginname'] = 'Bootstrap Base';
 $string['privacy:metadata'] = 'The bootstrapbase theme does not store any personal data about any user.';
 $string['region-side-post'] = 'Right';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = 'Edonon';
 $string['inputstandardtags'] = 'Idatzi etiketa berrien zerrenda komaz banatuta';
 $string['itemstaggedwith'] = '{$a->tagarea} ondokoarekin etiketatu da: "{$a->tag}"';
 $string['lesstags'] = 'gutxiago...';
-$string['manageofficialtags'] = 'Etiketa ofizialak kudeatu';
 $string['managestandardtags'] = 'Kudeatu etiketa estandarrak';
 $string['managetagcolls'] = 'Kudeatu etiketa-bildumak';
 $string['managetags'] = 'Kudeatu etiketak';
@@ -94,9 +93,6 @@ $string['nextpage'] = 'Gehiago';
 $string['noresultsfor'] = 'Ez dago emaitzarik "{$a}"-(e)rako';
 $string['notagsfound'] = 'Ez da aurkitu "{$a}"-(r)ekin bat datorren etiketarik';
 $string['nothingtoupdate'] = 'Ez dago eguneratzeko ezer';
-$string['officialtag'] = 'Ofiziala';
-$string['otags'] = 'Etiketa ofizialak';
-$string['othertags'] = 'Beste etiketa batzuk';
 $string['owner'] = 'Jabea';
 $string['page-tag-index'] = 'Etiketa-orri sinplea';
 $string['page-tag-manage'] = 'Kudeatu etiketa-orria';
@@ -114,8 +110,8 @@ $string['privacy:metadata:taginstance:timemodified'] = 'Etiketa hau helbururako 
 $string['privacy:metadata:taginstance:tiuserid'] = 'Erabiltzaileek partekatutako edukia banaka etiketatu dezaketenean, etiketa-instantziaren jabea gordetzen da.';
 $string['privacy:metadata:tag:name'] = 'Etiketaren izena - hau izenaren normalizatutako bertsioa da.';
 $string['privacy:metadata:tag:rawname'] = 'Etiketaren izena - hau da erakutsiko den izena.';
-$string['privacy:metadata:tag:timemodified'] = 'Etiketa azkenengo aldiz aldatua izan zeneko unea.';
-$string['privacy:metadata:tag:userid'] = 'Etiketa lehen aldiz sortu zuen erabiltzailea.';
+$string['privacy:metadata:tag:timemodified'] = 'Etiketa azkenengoz aldatua izan zeneko unea.';
+$string['privacy:metadata:tag:userid'] = 'Etiketa sortu zuen erabiltzailearen IDa.';
 $string['ptags'] = 'Erabiltzaileek definitutako etiketak (komaz banatuta)';
 $string['relatedblogs'] = 'Azken aldiko blog-sarrerak';
 $string['relatedtags'] = 'Harremana duten etiketak';
@@ -138,7 +134,6 @@ $string['selectmaintag'] = 'Aukeratu konbinatu ondoren erabiliko den etiketa';
 $string['selectmultipletags'] = 'Mesedez, aukeratu etiketa bat baino gehiago';
 $string['selecttag'] = 'Aukeratu {$a} etiketa';
 $string['settypedefault'] = 'Ezabatu etiketa estandarretatik';
-$string['settypeofficial'] = 'Egin ofizial';
 $string['settypestandard'] = 'Bihurtu estandar';
 $string['showingfirsttags'] = '{$a} etiketa ospetsuenak erakusten';
 $string['showstandard'] = 'Etiketa estandarren erabilera';
@@ -161,10 +156,8 @@ $string['tagcollection'] = 'Etiketa-bilduma';
 $string['tagcollection_help'] = 'Etiketa-bildumak arlo ezberdinetako etiketa multzoak dira. Esaterako, etiketa estandarren bilduma bat erabili daiteke ikastaroak etiketatzeko, eta beste bilduma bana erabiltzaileen interesak eta blogetako mezuak etiketatzeko. Erabiltzaile batek etiketa batean klik egiten duenean, etiketa-orriak etiketa hori duten bilduma bereko elementuak erakusten ditu. Etiketak bilduma batera automatikoki gehitu daitezke zehaztutako eremuaren arabera edo eskuz etiketa estandar gisa gordeta.';
 $string['tagcollections'] = 'Etiketa-bildumak';
 $string['tagdescription'] = 'Etiketaren deskribapena';
-$string['taggedwith'] = '"{$a}" etiketa dutenak';
 $string['tags'] = 'Etiketak';
 $string['tagsaredisabled'] = 'Etiketak desgaituta daude';
-$string['tagtype'] = 'Etiketa-mota';
 $string['thingstaggedwith'] = '"{$a->name}" {$a->count} aldiz erabili da';
 $string['thingtaggedwith'] = '"{$a->name}" behin erabili da';
 $string['timemodified'] = 'Aldatuta';

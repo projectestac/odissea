@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'media', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,8 +31,6 @@ $string['defaultheightdesc'] = 'Höhe des MediaPlayers, falls eine Höhe nicht a
 $string['defaultwidth'] = 'Standardbreite';
 $string['defaultwidthdesc'] = 'Breite des MediaPlayers, falls eine Breite nicht angegeben ist und die tatsächliche Breite in der abgespielten Mediendatei vom Player nicht erkannt wird.';
 $string['extensions'] = 'Dateiendungen: {$a}';
-$string['legacyheading'] = 'Ältere MediaPlayer';
-$string['legacyheading_desc'] = 'Diese MediaPlayer erfordern die Installation spezieller Browser-Plugins.';
 $string['managemediaplayers'] = 'MediaPlayer verwalten';
 $string['mediaformats'] = 'Verfügbare MediaPlayer';
 $string['mediaformats_desc'] = 'Wenn die MediaPlayer aktiviert sind, können Mediendateien einfach eingebettet werden, u.z. durch Nutzung des Filters \'Multimedia-Plugins\' (falls aktiviert), außerdem durch Hochladen als \'Datei\' bzw. Verlinken einer externen Ressource als \'Link/URL\'.
@@ -40,7 +38,6 @@ $string['mediaformats_desc'] = 'Wenn die MediaPlayer aktiviert sind, können Med
 Wenn die MediaPlayer nicht aktiviert sind, werden die Mediendateien nicht eingebettet. Nutzer/innen können die Dateien herunterladen oder den URLs zu den externen Ressourcen folgen.
 
 Wenn zwei MediaPlayer das gleiche Format unterstützen, können beide aktiviert werden, um das Abspielen auf unterschiedlichen digitalen Endgeräten zu ermöglichen oder verschiedene Dateiformate alternativ anzubieten.';
-$string['mediasettings'] = 'Mediaeinbettung';
 $string['privacy:metadata'] = 'Die Einbettung von Medien speichert keine personenbezogenen Daten.';
 $string['supports'] = 'Unterstützung';
 $string['videoextensions'] = 'Video: {$a}';

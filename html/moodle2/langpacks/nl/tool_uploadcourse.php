@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['allowresets'] = 'Standaardinstellingen toestaan';
 $string['allowresets_help'] = 'Is het reset-veld toegestaan of niet.';
 $string['cachedef_helper'] = 'Helper caching';
 $string['cannotdeletecoursenotexist'] = 'Kan onbestaande cursus niet verwijderen';
+$string['cannotforcelang'] = 'Geen rechten om de taal te verplichten voor deze cursus';
 $string['cannotgenerateshortnameupdatemode'] = 'Kan geen korte naam genereren als aanpassen is toegestaan';
 $string['cannotreadbackupfile'] = 'Kan backupbestand niet lezen';
 $string['cannotrenamecoursenotexist'] = 'Kan onbestaande cursus niet hernoemen';

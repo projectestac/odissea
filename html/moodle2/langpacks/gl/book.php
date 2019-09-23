@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'book', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['content'] = 'Contido';
 $string['customtitles'] = 'Títulos personalizados';
 $string['customtitles_help'] = 'Normalmente o título do capítulo amosase na táboa de contidos (TOC) E TAMÉN como cabeceira enriba do contido.
 
-Se activa a caixiña para títulos á medida, no título do capítulo NON SE AMOSARÁ como cabeceira enriba do contido. Pódese escribir un título diferente (posibelmente máis longo que o título do capítulo) como parte do contnido.';
+Se activa a caixa para títulos á medida, no título do capítulo NON SE AMOSARÁ como cabeceira enriba do contido. Pódese escribir un título diferente (posibelmente máis longo que o título do capítulo) como parte do contido.';
 $string['deletechapter'] = 'Eliminar o capítulo «{$a}»';
 $string['editchapter'] = 'Editar o capítulo «{$a}»';
 $string['editingchapter'] = 'Editando o capítulo';

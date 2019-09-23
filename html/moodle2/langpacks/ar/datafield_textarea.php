@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'datafield_textarea', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   datafield_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'حقل منطقة النص';
+$string['maxbytes'] = 'الحد الأقصى لحجم الملف المضمن (بايتات)';
+$string['maxbytes_desc'] = 'إذا وضعت صفر فسوف يكون غير محدود بشكل افتراضي';
+$string['pluginname'] = 'مساحة النص';
+$string['privacy:metadata'] = 'لا يخزن مكون حقل Textarea أي بيانات شخصية ، فهو يستخدم الجداول المعرفة في mod_data.';

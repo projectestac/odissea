@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_log', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_log', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'Διαθέσιμες αποθήκες καταγραφών';
 $string['configlogplugins'] = 'Παρακαλώ, ενεργοποιήστε όλα τα απαραίτητα πρόσθετα και οργανώστε τα με την κατάλληλη σειρά.';
-$string['exportlog'] = 'Συμπερίληψη καταγραφών κατά την εξαγωγή.';
+$string['exportlog'] = 'Συμπερίληψη καταγραφών κατά την εξαγωγή';
 $string['exportlogdetail'] = 'Συμπεριλάβετε καταγραφές που σχετίζονται με τον χρήστη κατά την εξαγωγή.';
 $string['logging'] = 'Γίνονται καταγραφές';
 $string['managelogging'] = 'Διαχείριση αποθηκών καταγραφών';

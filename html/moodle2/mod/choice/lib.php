@@ -823,15 +823,6 @@ function choice_get_response_data($choice, $cm, $groupmode, $onlyactive) {
 }
 
 /**
- * Returns all other caps used in module
- *
- * @return array
- */
-function choice_get_extra_capabilities() {
-    return array('moodle/site:accessallgroups');
-}
-
-/**
  * @uses FEATURE_GROUPS
  * @uses FEATURE_GROUPINGS
  * @uses FEATURE_MOD_INTRO
@@ -1248,6 +1239,14 @@ function mod_choice_core_calendar_provide_event_action(calendar_event $event,
         return null;
     }
 
+    $completion = new \completion_info($cm->get_course());
+
+    $completiondata = $completion->get_data($cm, false, $userid);
+
+    if ($completiondata->completionstate != COMPLETION_INCOMPLETE) {
+        return null;
+    }
+
     $now = time();
 
     if (!empty($cm->customdata['timeclose']) && $cm->customdata['timeclose'] < $now) {
@@ -1453,10 +1452,9 @@ function mod_choice_get_completion_active_rule_descriptions($cm) {
     foreach ($cm->customdata['customcompletionrules'] as $key => $val) {
         switch ($key) {
             case 'completionsubmit':
-                if (empty($val)) {
-                    continue;
+                if (!empty($val)) {
+                    $descriptions[] = get_string('completionsubmit', 'choice');
                 }
-                $descriptions[] = get_string('completionsubmit', 'choice');
                 break;
             default:
                 break;

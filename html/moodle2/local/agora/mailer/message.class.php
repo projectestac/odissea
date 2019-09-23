@@ -447,7 +447,7 @@ class message {
 
         try {
             return log4p::instance(true, $path, $debug);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             debugging('ERROR: Cannot initialize apligestlogger, there won\'t be any log.');
             debugging($e->getMessage());
         }

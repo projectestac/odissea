@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -100,7 +100,7 @@ $string['cannotfindinfo'] = 'Cannot find info for: "{$a}"';
 $string['cannotfindlang'] = 'Cannot find "{$a}" language pack!';
 $string['cannotfindteacher'] = 'Cannot find teacher';
 $string['cannotfinduser'] = 'Cannot find user named "{$a}"';
-$string['cannotgeoplugin'] = 'Cannot connect to geoPlugin server at http://www.geoplugin.com, please check proxy settings or better install MaxMind GeoLite City data file';
+$string['cannotgeoplugin'] = 'Cannot connect to the geoPlugin server at https://www.geoplugin.com. Please check your proxy settings or install the MaxMind GeoLite City data file.';
 $string['cannotgetblock'] = 'Could not retrieve blocks from the database';
 $string['cannotgetcats'] = 'Cannot get category record';
 $string['cannotgetdata'] = 'Cannot get data';
@@ -266,6 +266,7 @@ $string['filternotactive'] = 'Filter {$a} is not currently active';
 $string['filternotenabled'] = 'Filter not enabled!';
 $string['filternotinstalled'] = 'Filter {$a} is not currently installed';
 $string['forumblockingtoomanyposts'] = 'You have exceeded the posting threshold set for this forum';
+$string['functionalityremoved'] = 'You are trying to access functionality that has been removed.';
 $string['generalexceptionmessage'] = 'Exception - {$a}';
 $string['gradecantregrade'] = 'An error occurred during grade calculation: {$a}';
 $string['gradepubdisable'] = 'Grade publishing disabled';
@@ -351,8 +352,8 @@ $string['invalidpasswordpolicy'] = 'Invalid password policy';
 $string['invalidpaymentmethod'] = 'Invalid payment method: {$a}';
 $string['invalidqueryparam'] = 'ERROR: Incorrect number of query parameters. Expected {$a->expected}, got {$a->actual}.';
 $string['invalidratingarea'] = 'Invalid rating area';
-$string['invalidrecord'] = 'Can not find data record in database table {$a}.';
-$string['invalidrecordunknown'] = 'Can not find data record in database.';
+$string['invalidrecord'] = 'Can\'t find data record in database table {$a}.';
+$string['invalidrecordunknown'] = 'Can\'t find data record in database.';
 $string['invalidrequest'] = 'Invalid request';
 $string['invalidrole'] = 'Invalid role';
 $string['invalidroleid'] = 'Invalid role ID';
@@ -385,10 +386,9 @@ $string['logfilenotavailable'] = 'Logs not available';
 $string['loginasnoenrol'] = 'You cannot use enrol or unenrol when in course "Login as" session';
 $string['loginasonecourse'] = 'You cannot enter this course.<br /> You have to terminate the "Login as" session before entering any other course.';
 $string['maxareabytes'] = 'The file is larger than the space remaining in this area.';
-$string['maxbytes'] = 'The file is larger than the maximum size allowed.';
 $string['maxbytesfile'] = 'The file {$a->file} is too large. The maximum size you can upload is {$a->size}.';
 $string['messagingdisable'] = 'Messaging is disabled on this site';
-$string['mimetexisnotexist'] = 'Your system is not configured to run mimeTeX. You need to obtain the C source from <a href="http://www.forkosh.com/mimetex.zip">http://www.forkosh.com/mimetex.zip</a>, compile it and put the executable into your moodle/filter/tex/ directory.';
+$string['mimetexisnotexist'] = 'Your system is not configured to run mimeTeX. You need to obtain the C source from <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip</a>, compile it and put the executable into your moodle/filter/tex/ directory.';
 $string['mimetexnotexecutable'] = 'Custom mimetex is not executable!';
 $string['missingfield'] = 'Field "{$a}" is missing';
 $string['missingkeyinsql'] = 'ERROR: missing param "{$a}" in query';
@@ -435,7 +435,7 @@ $string['nologinas'] = 'You are not allowed to log in as that user';
 $string['nonmeaningfulcontent'] = 'Non meaningful content';
 $string['noparticipants'] = 'No participants found for this course';
 $string['noparticipatorycms'] = 'Sorry, but you have no participatory course modules to report on';
-$string['nopermissions'] = 'Sorry, but you do not currently have permissions to do that ({$a})';
+$string['nopermissions'] = 'Sorry, but you do not currently have permissions to do that ({$a}).';
 $string['nopermissiontocomment'] = 'You can\'t add comments';
 $string['nopermissiontodelentry'] = 'You can\'t delete other people\'s entries!';
 $string['nopermissiontoeditcomment'] = 'You can\'t edit other people\'s comments!';
@@ -446,7 +446,7 @@ $string['nopermissiontomanagegroup'] = 'You do not have the required permissions
 $string['nopermissiontorate'] = 'Rating of items not allowed!';
 $string['nopermissiontoshow'] = 'No permission to see this!';
 $string['nopermissiontounlock'] = 'No permission to unlock!';
-$string['nopermissiontoupdatecalendar'] = 'Sorry, but you do not currently have permissions to update calendar event';
+$string['nopermissiontoupdatecalendar'] = 'Sorry, but you do not have permission to update the calendar event.';
 $string['nopermissiontoviewgrades'] = 'Can not view grades.';
 $string['nopermissiontoviewletergrade'] = 'Missing permission to view letter grades';
 $string['nopermissiontoviewpage'] = 'You are not allowed to look at this page';

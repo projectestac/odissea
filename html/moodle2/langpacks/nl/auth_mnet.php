@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_mnet', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,11 +88,11 @@ $string['privacy:metadata:mnet_log:remoteid'] = 'Externe ID van de gebruiker die
 $string['privacy:metadata:mnet_log:time'] = 'Tijdstip waarop de actie gebeurde.';
 $string['privacy:metadata:mnet_log:url'] = 'URL van het extern systeem waar de actie gebeurde.';
 $string['privacy:metadata:mnet_log:userid'] = 'Lokale ID van de gebruiker die de actie deed in het extern systeem.';
-$string['privacy:metadata:mnet_session'] = 'De details van elke MNet gebruikerssessie in een extern systeem wordt tijdelijk bewaard.';
+$string['privacy:metadata:mnet_session'] = 'De details van elke MNet gebruikerssessie in een extern systeem. De gegevens worden tijdelijk bewaard.';
 $string['privacy:metadata:mnet_session:expires'] = 'Verlooptijd van de sessie.';
 $string['privacy:metadata:mnet_session:mnethostid'] = 'MNet-ID van het extern systeem.';
 $string['privacy:metadata:mnet_session:token'] = 'Unieke sessie-ID';
-$string['privacy:metadata:mnet_session:useragent'] = 'String die de user agent weergeeft die gebruikt is om toegang te krijgen tot de pagina.';
+$string['privacy:metadata:mnet_session:useragent'] = 'De user agent gebruikt is om toegang te krijgen tot het externe systeem';
 $string['privacy:metadata:mnet_session:userid'] = 'ID van de gebruiker die naar een extern systeem gaat.';
 $string['privacy:metadata:mnet_session:username'] = 'Gebruikersnaam van de gebruiker die naar een extern systeem gaat.';
 $string['rpc_negotiation_timeout'] = 'RPC-negotiatie time-out';

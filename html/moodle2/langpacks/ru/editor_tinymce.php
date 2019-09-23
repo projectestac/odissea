@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor_tinymce', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -183,7 +183,7 @@ $string['advimage_dlg:example_img'] = 'Предварительный просм
 $string['advimage_dlg:general'] = 'Общие';
 $string['advimage_dlg:height'] = 'Высота';
 $string['advimage_dlg:hspace'] = 'Горизонтальный отступ';
-$string['advimage_dlg:id'] = 'Идентификатор';
+$string['advimage_dlg:id'] = 'ID';
 $string['advimage_dlg:image_list'] = 'Список изображений';
 $string['advimage_dlg:langcode'] = 'Код языка';
 $string['advimage_dlg:langdir'] = 'Направление языка';
@@ -220,7 +220,7 @@ $string['advlink_dlg:events_tab'] = 'События';
 $string['advlink_dlg:general_props'] = 'Общие свойства';
 $string['advlink_dlg:general_tab'] = 'Общие';
 $string['advlink_dlg:height'] = 'Высота';
-$string['advlink_dlg:id'] = 'Идентификатор';
+$string['advlink_dlg:id'] = 'ID';
 $string['advlink_dlg:is_email'] = 'Введенный адрес похож на эл. почту. Вы хотите добавить префикс mailto:?';
 $string['advlink_dlg:is_external'] = 'Введенный адрес похож на внешнюю ссылку. Вы хотите добавить префикс http://?';
 $string['advlink_dlg:langcode'] = 'Код языка';
@@ -523,7 +523,7 @@ $string['media_dlg:href'] = 'Адрес ссылки';
 $string['media_dlg:hspace'] = 'Горизонтальный отступ';
 $string['media_dlg:html5_audio_options'] = 'Опции аудио';
 $string['media_dlg:html5_video_options'] = 'Опции видео HTML5';
-$string['media_dlg:id'] = 'Идентификатор';
+$string['media_dlg:id'] = 'ID';
 $string['media_dlg:iframe'] = 'фрейм';
 $string['media_dlg:imagestatus'] = 'Image status';
 $string['media_dlg:invokeurls'] = 'Invoke URLs';
@@ -571,7 +571,7 @@ $string['media_dlg:stretchtofit'] = 'Stretch to fit';
 $string['media_dlg:swstretchhalign'] = 'Stretch H-Align';
 $string['media_dlg:swstretchstyle'] = 'Растягивающийся стиль';
 $string['media_dlg:swstretchvalign'] = 'Stretch V-Align';
-$string['media_dlg:target'] = 'Target';
+$string['media_dlg:target'] = 'Цель';
 $string['media_dlg:targetcache'] = 'Target cache';
 $string['media_dlg:title'] = 'Вставить/редактировать медиа-объект';
 $string['media_dlg:type'] = 'Тип';
@@ -597,6 +597,7 @@ $string['paste:selectall_desc'] = 'Выделить все';
 $string['pluginname'] = 'HTML-редактор TinyMCE';
 $string['preview:preview_desc'] = 'Предварительный просмотр';
 $string['print:print_desc'] = 'Печать';
+$string['privacy:metadata'] = 'Плагин формата данных «HTML-редактор TinyMCE» не хранит никаких персональных данных.';
 $string['save:cancel_desc'] = 'Отменить';
 $string['save:save_desc'] = 'Сохранить';
 $string['searchreplace:delta_height'] = '';

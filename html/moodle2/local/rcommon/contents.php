@@ -34,7 +34,7 @@ if ($action == 'update') {
         } else {
             echo $OUTPUT->notification(get_string('consumeerror', 'local_rcommon'));
         }
-    } catch(Exception $fault) {
+    } catch(Throwable $fault) {
         echo $OUTPUT->notification($fault->getMessage());
     }
 } else if ($action == 'delete') {

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -212,6 +212,7 @@ $string['noexamplesformready'] = 'You must define the assessment form before pro
 $string['nogradeyet'] = 'No grade yet';
 $string['nosubmissionfound'] = 'No submission found for this user';
 $string['nosubmissions'] = 'No submissions yet in this workshop';
+$string['nosubmissiontype'] = 'At least one submission type must be available';
 $string['notassessed'] = 'Not assessed yet';
 $string['nothingfound'] = 'Nothing to display';
 $string['nothingtoreview'] = 'Nothing to review';
@@ -339,6 +340,12 @@ $string['submissionstart'] = 'Open for submissions from';
 $string['submissionstartdatetime'] = 'Open for submissions from {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} opens for submissions';
 $string['submissiontitle'] = 'Title';
+$string['submissiontypedisabled'] = 'This submission type is disabled for this workshop.';
+$string['submissiontypefileavailable'] = 'File attachment<span class="accesshide"> available</span>';
+$string['submissiontypefilerequired'] = '<span class="accesshide">File attachment </span>Required';
+$string['submissiontypes'] = 'Submission types';
+$string['submissiontypetextavailable'] = 'Online text<span class="accesshide"> available</span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide">Online text </span>Required';
 $string['submittednotsubmitted'] = 'Submitted ({$a->submitted}) / not submitted ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Submissions allocation method';
 $string['subplugintype_workshopallocation_plural'] = 'Submissions allocation methods';
@@ -414,7 +421,6 @@ $string['workshop:viewauthornames'] = 'View author names';
 $string['workshop:viewauthorpublished'] = 'View authors of published submissions';
 $string['workshop:viewpublishedsubmissions'] = 'View published submissions';
 $string['workshop:viewreviewernames'] = 'View reviewer names';
-$string['yourassessment'] = 'Your assessment';
 $string['yourassessmentfor'] = 'Your assessment for {$a}';
 $string['yourgrades'] = 'Your grades';
 $string['yoursubmission'] = 'Your submission';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['auth_dbextencodinghelp'] = 'Encoding gebruikt in externe databank';
 $string['auth_dbextrafields'] = 'Deze velden zijn niet verplicht. Je kunt ervoor kiezen om sommige Moodle-gebruikersvelden in te vullen met informatie uit de <b>externe database velden</b> die je hier aangeeft. <p>Als je deze niet invult zullen standaardwaarden worden gebruikt.</p> <p>In beide gevallen kan de gebruiker alle velden wijzigen zodra hij/zij is ingelogd.</p>';
 $string['auth_dbfieldpass'] = 'Naam van het veld dat de wachtwoorden bevat';
 $string['auth_dbfieldpass_key'] = 'Wachtwoordveld';
-$string['auth_dbfielduser'] = 'Naam van het veld dat de gebruikersnamen bevat';
+$string['auth_dbfielduser'] = 'Naam van het veld dat de gebruikersnamen bevat. Dit veld moet het data-type varchar zijn.';
 $string['auth_dbfielduser_key'] = 'Veld gebruikersnaam';
 $string['auth_dbhost'] = 'De computer die de databaseserver host.
 Gebruik een systeem DSN als je OBDC gebruikt. Gebruik een PDO DSN als je PDO gebruikt.';
@@ -69,14 +69,13 @@ $string['auth_dbsyncuserstask'] = 'Synchroniseer gebruikerstaak';
 $string['auth_dbtable'] = 'Naam  van  de  tabel in de database';
 $string['auth_dbtableempty'] = 'Externe tabel is leeg.';
 $string['auth_dbtable_key'] = 'Tabel';
-$string['auth_dbtype'] = 'Het type database (Bekijk <a href="http://phplens.com/adodb/supported.databases.html" target="_blank">ADOdb documentatie</a> voor meer informatie)';
+$string['auth_dbtype'] = 'Het type database (Bekijk  <a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - Database Abstraction Layer for PHP</a> voor meer informatie).';
 $string['auth_dbtype_key'] = 'Databank';
 $string['auth_dbupdateusers'] = 'Gebruikers bijwerken';
 $string['auth_dbupdateusers_description'] = 'Evenals het invoegen van nieuwe gebruikers, update bestaande gebruikers';
 $string['auth_dbupdatinguser'] = 'Gebruiker {$a->name} id {$a->id} aan het updaten';
 $string['auth_dbuser'] = 'Gebruikersnaam met read access tot de database';
 $string['auth_dbuser_key'] = 'DB gebruiker';
-$string['auth_dbusernotexist'] = 'Gebruiker {$a} bestaat niet: kan niet updaten.';
 $string['auth_dbuserstoadd'] = 'Toe te voegen gebruikers: {$a}';
 $string['auth_dbuserstoremove'] = 'Te verwijderen gebruikers: {$a}';
 $string['pluginname'] = 'Externe databank';

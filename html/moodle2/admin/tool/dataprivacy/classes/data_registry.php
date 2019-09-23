@@ -32,8 +32,6 @@ use core\persistent;
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->libdir . '/coursecatlib.php');
-
 /**
  * Data registry business logic methods. Mostly internal stuff.
  *
@@ -120,17 +118,17 @@ class data_registry {
     /**
      * Returns all site categories that are visible to the current user.
      *
-     * @return \coursecat[]
+     * @return \core_course_category[]
      */
     public static function get_site_categories() {
         global $DB;
 
-        if (method_exists('\coursecat', 'get_all')) {
-            $categories = \coursecat::get_all(['returnhidden' => true]);
+        if (method_exists('\core_course_category', 'get_all')) {
+            $categories = \core_course_category::get_all(['returnhidden' => true]);
         } else {
             // Fallback (to be removed once this gets integrated into master).
             $ids = $DB->get_fieldset_select('course_categories', 'id', '');
-            $categories = \coursecat::get_many($ids);
+            $categories = \core_course_category::get_many($ids);
         }
 
         foreach ($categories as $key => $category) {
@@ -154,8 +152,8 @@ class data_registry {
 
         if ($contextcourse = $context->get_course_context(false)) {
             // Below course level we look at module or block level roles + course-assigned roles.
-            $courseroles = get_roles_with_assignment_on_context($contextcourse);
-            $roles = $courseroles + get_roles_with_assignment_on_context($context);
+            $courseroles = get_roles_used_in_context($contextcourse, false);
+            $roles = $courseroles + get_roles_used_in_context($context, false);
         } else {
             // We list category + system for others (we don't work with user instances so no need to work about them).
             $roles = get_roles_used_in_context($context);

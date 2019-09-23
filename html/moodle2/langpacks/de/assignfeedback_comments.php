@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,5 +37,6 @@ $string['pluginname'] = 'Feedback als Kommentar';
 $string['privacy:commentpath'] = 'Feedback Kommentare';
 $string['privacy:metadata:assignmentid'] = 'Aufgaben-ID';
 $string['privacy:metadata:commentpurpose'] = 'Der Text des Kommentars';
+$string['privacy:metadata:filepurpose'] = 'Feedback-Dateien des/der Trainer/in für den/die Teilnehmer/in';
 $string['privacy:metadata:gradepurpose'] = 'Bewertungs-ID für Kommentar';
 $string['privacy:metadata:tablesummary'] = 'Speichert Kommentare, die der Bewertende als Feedback zu einer Lösung des Teilnehmenden erstellt hat';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'chat', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = 'Tem sessões de Chat a decorrer em breve';
-$string['ajax'] = 'Versão com Ajax';
+$string['ajax'] = 'Versão com AJAX';
 $string['autoscroll'] = 'Scroll automático';
 $string['beep'] = 'Chamar';
 $string['bubble'] = 'Balões de texto';
@@ -45,7 +45,7 @@ $string['chattime'] = 'Próxima sessão de chat';
 $string['chat:view'] = 'Ver atividade Chat';
 $string['compact'] = 'Compacto';
 $string['composemessage'] = 'Compor mensagem';
-$string['configmethod'] = 'O método de chat com ajax proporciona um inteface de chat baseado em ajax e contacta o servidor regularmente para atualização. O método normal do chat precisa que os clientes contactem regularmente o servidor para obter atualizações. Não precisa de nenhuma configuração e funciona em qualquer parte, mas poderá sobrecarregar um servidor quando há muitas pessoas no chat. A utilização dum servidor daemon requer acesso via shell ao Unix, mas o resultado é um ambiente de chat mais rápido e que escala melhor.';
+$string['configmethod'] = 'O método de chat com AJAX proporciona uma inteface de chat baseado em AJAX que contacta o servidor regularmente para atualização. O método normal de chat precisa que os clientes contactem regularmente o servidor para obter atualizações. Não precisa de nenhuma configuração e funciona em qualquer parte, mas poderá sobrecarregar o servidor quando estão muitas pessoas no chat. A utilização dum servidor daemon requer acesso via shell ao Unix, mas o resultado é um ambiente de chat mais rápido e escalável.';
 $string['confignormalupdatemode'] = 'Normalmente, as atualizações da sala de chat são feitas de forma eficiente usando o comando <em>Keep-Alive</em> do HTTP 1.1, mas esse método gera uma grande carga no servidor. Um método mais avançado consiste em usar a estratégia de  <em>Stream</em> para enviar atualizações para os utilizadores. A utilização do <em>Stream</em> tem uma escalabilidade melhor (semelhante à do método chat) mas o seu servidor poderá não suportar este método.';
 $string['configoldping'] = 'Qual o tempo máximo sem resposta para considerar que o utilizador está desconectado (em segundos)? Este é apenas um limite superior pois habitualmente quando um utilizador se desconecta tal é detetado rapidamente. Valores reduzidos irão exigir mais do servidor. Se estiver a utilizar o método normal <strong>nunca</strong> defina este valor para menos de 2 x o tempo de Atualizar sala';
 $string['configrefreshroom'] = 'Com que frequência será atualizada a sala de chat (em segundos)? Um valor muito baixo fará com que a resposta da sala de chat seja mais rápida, mas vai impor uma carga mais pesada ao seu servidor quando o número de participantes no chat for elevado. Se estiver a usar atualizações <em>Stream</em>, pode escolher uma frequência de atualização superior - tente o valor 2.';
@@ -66,8 +66,8 @@ $string['errornousers'] = 'Não foi encontrado nenhum utilizador!';
 $string['eventmessagesent'] = 'Mensagem enviada';
 $string['eventsessionsviewed'] = 'Sessões visualizadas';
 $string['explaingeneralconfig'] = 'Estas configurações serão  <strong>sempre</strong> aplicadas.';
-$string['explainmethoddaemon'] = 'Estas configurações aplicam-se <strong>unicamente</strong> se tiver selecionado "Servidor daemon de Chat" na opção Método do Chat';
-$string['explainmethodnormal'] = 'Estas configurações aplicam-se <strong>unicamente</strong> se tiver selecionado o "Método Normal" na opção Método do Chat';
+$string['explainmethoddaemon'] = 'Estas configurações aplicam-se unicamente se tiver selecionado "Servidor daemon de Chat" na opção Método do Chat';
+$string['explainmethodnormal'] = 'Estas configurações aplicam-se unicamente se tiver selecionado o "Normal" na opção Método do Chat';
 $string['generalconfig'] = 'Configuração geral';
 $string['idle'] = 'Parado';
 $string['indicator:cognitivedepth'] = 'Compreensão do Chat';
@@ -86,9 +86,9 @@ $string['messageexit'] = '{$a} acabou de sair deste chat';
 $string['messages'] = 'Mensagens';
 $string['messageyoubeep'] = 'Você chamou {$a}';
 $string['method'] = 'Método do Chat';
-$string['methodajax'] = 'Método Ajax';
+$string['methodajax'] = 'AJAX';
 $string['methoddaemon'] = 'Servidor daemon de Chat';
-$string['methodnormal'] = 'Método Normal';
+$string['methodnormal'] = 'Normal';
 $string['modulename'] = 'Chat';
 $string['modulename_help'] = 'A atividade Chat permite aos alunos participarem numa sessão síncrona via web.
 

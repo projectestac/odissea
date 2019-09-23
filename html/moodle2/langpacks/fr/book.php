@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'book', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addafter'] = 'Ajouter un nouveau chapitre';
 $string['book:addinstance'] = 'Ajouter un livre';
 $string['book:edit'] = 'Modifier des chapitres';
-$string['book:read'] = 'Consulter le livre';
+$string['book:read'] = 'Consulter un livre';
 $string['book:viewhiddenchapters'] = 'Accéder aux chapitres cachés d\'un livre';
 $string['chapterandsubchaptersdeleted'] = 'Le chapitre « {$a->title} » et ses {$a->subchapters} sous-chapitres ont été supprimés';
 $string['chapterdeleted'] = 'Le chapitre « {$a->title} » a été supprimé';

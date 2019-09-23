@@ -24,8 +24,6 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once($CFG->libdir.'/eventslib.php');
-
 defined('MOODLE_INTERNAL') || die();
 
 // File areas for file submission assignment.
@@ -253,6 +251,9 @@ class assign_submission_file extends assign_submission_plugin {
         );
         if (!empty($submission->userid) && ($submission->userid != $USER->id)) {
             $params['relateduserid'] = $submission->userid;
+        }
+        if ($this->assignment->is_blind_marking()) {
+            $params['anonymous'] = 1;
         }
         $event = \assignsubmission_file\event\assessable_uploaded::create($params);
         $event->set_legacy_files($files);

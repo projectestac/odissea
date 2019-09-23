@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcached', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['bufferwrites'] = 'Idazteko buffer-ak';
 $string['bufferwrites_help'] = 'Buffer bidezko diskoko idazketa-irakurketak (I/O) gaitu edo desgaitzen ditu. Buffer bidezko idazketa-irakurketek biltegiratze-komandoak bidali beharrean "bufferatu" egiten ditu. Datuak eskuratzen dituen edozein ekintzak buffer hau urruneko zerbitzarira bidaltzea eragiten du. Konexioa amaitzea edo ixteak ere buferatutako datuak urruneko konexiora bidaltzea eragingo dute.';
 $string['clustered'] = 'Gaitu taldekatutako zerbitzariak';
-$string['clusteredheader'] = 'Bereizi zerbitzariak';
+$string['clusteredheader'] = 'Banatu zerbitzariak';
 $string['clustered_help'] = 'Ezarpen hau behin-irakurri guztietan-ezarri funtzionalitatea baimentzeko erabiltzen da.
 
 Nahitako erabilera-kasua karga-banatze konfigurazioetan biltegi hobetu bat sortzea da. Biltegiak zerbitzari batetik jasoko du datua (normalean localhost), baina anitzetan ezarriko du (karga-banatze guneko zerbitzari guztietan). Irakurketa-ratio handiko cacheetarako, ezarpen honek sare-gainkarga esanguratsua aurrezten du.
@@ -52,9 +52,9 @@ Cachea beste aplikazio batzuekin partekatzen bada aplikazio honetako cachea garb
 
 Aplikazio honentzako dedikatutako cachea erabiltzen ari bazara cache osorik ezabatu daiteke beste aplikazioren baten datuak ezabatzeko arriskurik izan gabe. Aukera honek cachea garbitzeko unean errendimendu hobea izango du.';
 $string['pluginname'] = 'Memcached';
-$string['prefix'] = 'Aurrizki-gakoa';
+$string['prefix'] = 'Gakoen aurrizkia';
 $string['prefix_help'] = 'Aukera hau zure elementuen gakoentzako "domeinu" bat sortzeko erabili daiteke, eta horrela memecached instalazio bakarrean memcached biltegi anitz sortzeko aukera izango duzu. Ezin da 16 karaktere baino luzeagoa izan gako-luzera arazoak gertatzen ez direla bermatzeko.';
-$string['prefixinvalid'] = 'Aurrizki baliogabea. Bakarrik erabil ditzakezu ondokoak: a-z A-Z 0-9-_.';
+$string['prefixinvalid'] = 'Aurrizki baliogabea. Ondoko hauek baino ezin dira erabili: a-z A-Z 0-9-_.';
 $string['privacy:metadata:memcached'] = 'Memcached cache-biltegi pluginak datuak laburki gordetzen ditu bere cache-funtzioaren baitan. Datu hauek Memcached zerbitzari batean gordetzen dira, eta bertan datuak erregularki ezabatzen dira.';
 $string['privacy:metadata:memcached:data'] = 'Cachean gordetako era askotako datuak';
 $string['serialiser_igbinary'] = 'igbinary serializatzailea.';
@@ -79,14 +79,14 @@ $string['setservers'] = 'Ezarri zerbitzariak';
 $string['setservers_help'] = 'Cacheko datuak aldatzen direnean eguneratuko diren zerbitzarien zerrenda da hau, normalean guneko zerbitzari bakoitzaren izen osoa.
 Goiko *Zerbitzariak* zerrendan zehaztutako zerbitzaria ere agertuko **behar** da hemen, ostalari-izen ezberdinarekin bada ere.
 Errenkada bakoitzean zerbitzari bat zehaztu behar da, zerbitzariaren helbidea eta aukeran ataka zehaztuta.
-Atakarik zehazten ez bada berezko ataka (11211) erabiliko da.
+Atakarik zehazten ez bada lehenetsitako ataka (11211) erabiliko da.
 
 Adibidez:
 <pre>
 zerbitzari.url.eus
 iphelbidea:ataka
 </pre>';
-$string['testservers'] = 'Proba-zerbitzariak';
+$string['testservers'] = 'Probetarako zerbitzariak';
 $string['testservers_desc'] = 'memcached zerbitzariekin konexio-proba egiteko karaketere-katea edo kateak. Probetarako zerbitzari bat zehaztu bada memcached-en errendimendua kudeaketa blokeko Cache atalaren Probatu errendimendua orria erabiliz probatu daiteke.
 Adibidez: 127.0.0.1:11211';
 $string['upgrade200recommended'] = 'Zure PHPko Memcached luzapena 2.0.0 bertsiora edo goragoko batera eguneratzea gomendatzen dizugu.

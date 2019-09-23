@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_myprofile', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,6 @@ $string['display_phone1'] = '電話番号を表示する';
 $string['display_phone2'] = '携帯電話番号を表示する';
 $string['display_picture'] = '画像を表示する';
 $string['display_skype'] = 'Skypeを表示する';
-$string['display_un'] = '氏名を表示する';
 $string['display_yahoo'] = 'Yahooを表示する';
 $string['myprofile:addinstance'] = '新しいログインユーザブロックを追加する';
 $string['myprofile:myaddinstance'] = '新しいログインユーザブロックをダッシュボードに追加する';

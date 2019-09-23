@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_monitor', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,7 +82,7 @@ $string['pluginname'] = 'Monitoraggio eventi';
 $string['privacy:metadata:description'] = 'Descrizione della regola.';
 $string['privacy:metadata:eventname'] = 'Nome non ambiguo dell\'evento.';
 $string['privacy:metadata:frequency'] = 'Frequenza delle notifiche.';
-$string['privacy:metadata:historysummary'] = 'Memorizza la storia delle notifiche inviate tramite email.';
+$string['privacy:metadata:historysummary'] = 'Memorizza lo storico delle notifiche inviate tramite email.';
 $string['privacy:metadata:inactivedate'] = 'Periodi di tempo, in giorni, dopo il quale una sottoscrizione inattiva verrà rimossa definitivamente.';
 $string['privacy:metadata:lastnotificationsent'] = 'Quando è stata inviata l\'ultima notifica per questa sottoscrizione.';
 $string['privacy:metadata:messagesummary'] = 'Le notifiche vengono inviate al sistema di messaggistica.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'search', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['createdon'] = 'Creado el';
 $string['database'] = 'Base de datos';
 $string['databasestate'] = 'Indexando el estado de la base de datos';
 $string['datadirectory'] = 'Directorio de datos';
+$string['deleteindex'] = 'Eliminar índice {$a}';
 $string['deletionsinindex'] = 'Directorios en índice';
 $string['docmodifiedon'] = 'Modificado por última vez el {$a}';
 $string['doctype'] = 'Tipo de documento';
@@ -82,6 +83,7 @@ $string['queryerror'] = 'La consulta que proporcionaste no se pudo realizar por 
 $string['resultsreturnedfor'] = 'resultados devueltos para';
 $string['runindexer'] = 'Ejecutar indexador (real)';
 $string['runindexertest'] = 'Ejecutar prueba de indexador';
+$string['schemaversionunknown'] = 'El motor de búsqueda no conoce la versión actual del esquema (schema).';
 $string['score'] = 'Puntuación';
 $string['search'] = 'Búsqueda';
 $string['searcharea'] = 'Área de búsqueda';
@@ -92,6 +94,7 @@ $string['search:mycourse'] = 'Mis cursos';
 $string['searchnotpermitted'] = 'A Usted no se le permite hacer una búsqueda';
 $string['searchsetupdescription'] = 'Los siguientes pasos son necesarios para configurar la búsqueda global de Moodle.';
 $string['search:user'] = 'Usuarios';
+$string['searchwithin'] = 'Buscar dentro de';
 $string['seconds'] = 'segundos';
 $string['solutions'] = 'Soluciones';
 $string['statistics'] = 'Estadísticas';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -385,7 +385,6 @@ $string['logfilenotavailable'] = '日志不可用';
 $string['loginasnoenrol'] = '在课程中“登录为”其他用户时，不能选课或取消选课';
 $string['loginasonecourse'] = '您不能进入该课程。<br />在进入课程之前，您必须停止“登录为”其他用户。';
 $string['maxareabytes'] = '此文件的大小超过了剩余的空间。';
-$string['maxbytes'] = '此文件超过了允许的最大体积。';
 $string['maxbytesfile'] = '这个文件 {$a->file} 太大了。你可以上传的文件最大容量是 {$a->size}。';
 $string['messagingdisable'] = '本站的消息系统已禁用';
 $string['mimetexisnotexist'] = '您的系统未配置运行mimeTeX。您需要从<a href="http://www.forkosh.com/mimetex.zip">http://www.forkosh.com/mimetex.zip</a> 下载C语言源代码，编译后将可执行文件复制到您的 moodle/filter/tex/ 目录。';

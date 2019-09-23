@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_rss_client', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,15 +29,15 @@ $string['addfeed'] = 'Προσθήκη διεύθυνσης URL, τροφοδο�
 $string['addheadlineblock'] = 'Προσθήκη μπλοκ τίτλων τροφοδοσίας RSS';
 $string['addnew'] = 'Προσθήκη νέου';
 $string['addnewfeed'] = 'Προσθήκη νέας τροφοδοσίας RSS';
-$string['cannotmakemodification'] = 'Δεν επιτρέπονται τροποποιήσεις σ\' αυτή την τροφοδοσία RSS.';
+$string['cannotmakemodification'] = 'Δεν επιτρέπονται τροποποιήσεις σε αυτή την τροφοδοσία RSS.';
 $string['choosefeedlabel'] = 'Επιλέξτε τροφοδοσίες RSS οι οποίες θα θέλατε να εμφανίζονται σε αυτό το μπλοκ:';
 $string['clientchannellink'] = 'Σελίδα πηγών:';
-$string['clientnumentries'] = 'Ο προεπιλεγμένος αριθμός εγγραφών για εμφάνιση σε κάθε τροφοδοσία RSS.';
-$string['clientshowchannellinklabel'] = 'Να εμφανίζεται σύνδεσμος προς την πρωτότυπη σελίδα; (Σημειώστε ότι αν δεν παρέχεται σύνδεσμος τροφοδοσίας RSS τότε δεν θα εμφανίζεται σύνδεσμος)';
-$string['clientshowimagelabel'] = 'Εμφάνιση της εικόνας καναλιού, αν είναι διαθέσιμη:';
-$string['configblock'] = 'Ρύθμιση μπλοκ';
-$string['couldnotfindfeed'] = 'Δεν ήταν δυνατή η εύρεση της τροφοδότησης με αναγνωριστικό {$a}';
-$string['couldnotfindloadrssfeed'] = 'Δεν ήταν δυνατή η εύρεση ή φόρτωση τροφοδοσίας RSS.';
+$string['clientnumentries'] = 'Ο προεπιλεγμένος αριθμός καταχωρήσεων για εμφάνιση σε κάθε τροφοδοσία RSS.';
+$string['clientshowchannellinklabel'] = 'Να εμφανίζεται σύνδεσμος προς την πρωτότυπη σελίδα (σύνδεσμος καναλιού); (Σημειώστε ότι αν δεν παρέχεται σύνδεσμος τροφοδοσίας RSS τότε δεν θα εμφανίζεται σύνδεσμος) :';
+$string['clientshowimagelabel'] = 'Εμφάνιση της εικόνας καναλιού, αν είναι διαθέσιμη :';
+$string['configblock'] = 'Ρύθμιση αυτού του μπλοκ';
+$string['couldnotfindfeed'] = 'Δεν ήταν δυνατή η εύρεση της τροφοδοσίας με αναγνωριστικό {$a}';
+$string['couldnotfindloadrssfeed'] = 'Δεν ήταν δυνατή η εύρεση ή φόρτωση της τροφοδοσίας RSS.';
 $string['customtitlelabel'] = 'Δικός σας τίτλος (αφήστε κενό για χρήση του τίτλου του RSS):';
 $string['deletefeedconfirm'] = 'Σίγουρα θέλετε να διαγράψετε αυτήν την τροφοδοσία RSS;';
 $string['disabledrssfeeds'] = 'Οι τροφοδοσίες RSS είναι απενεργοποιημένες';
@@ -47,7 +47,7 @@ $string['editfeeds'] = 'Επεξεργασία, εγγραφή ή απεγγρα
 $string['editnewsfeeds'] = 'Επεξεργασία τροφοδοσιών RSS ειδήσεων';
 $string['editrssblock'] = 'Επεξεργασία μπλοκ τίτλων τροφοδοσίας RSS';
 $string['enableautodiscovery'] = 'Ενεργοποίηση αυτόματης αναζήτησης τροφοδοσιών RSS;';
-$string['enableautodiscovery_help'] = 'Αν ενεργοποιηθεί, οι τροφοδοσίες RSS στις ιστοσελίδες βρίσκονται αυτόματα. Για παράδειγμα, αν εισαχθεί το http://docs.moodle.org, τότε  θα βρεθεί το http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss.';
+$string['enableautodiscovery_help'] = 'Αν ενεργοποιηθεί, οι τροφοδοσίες RSS στις ιστοσελίδες βρίσκονται αυτόματα. Για παράδειγμα, αν εισαχθεί το https://docs.moodle.org, τότε  θα βρεθεί το https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss.';
 $string['failedfeed'] = 'Η τροφοδοσία απέτυχε στη λήψη - προσπάθεια ξανά μετά από {$a}';
 $string['failedfeeds'] = 'Μία ή περισσότερες τροφοδοσίες RSS απέτυχαν';
 $string['feed'] = 'Τροφοδοσία RSS';
@@ -74,20 +74,21 @@ $string['privacy:metadata:block_rss_client:tableexplanation'] = 'Οι πληρο
 $string['privacy:metadata:block_rss_client:title'] = 'Ο τίτλος της τροφοδοσίας RSS.';
 $string['privacy:metadata:block_rss_client:url'] = 'Η διεύθυνση URL της τροφοδοσίας RSS.';
 $string['privacy:metadata:block_rss_client:userid'] = 'Το αναγνωριστικό του χρήστη που πρόσθεσε την τροφοδοσία RSS.';
+$string['refreshfeedstask'] = 'Ανανέωση της εργασίας τροφοδοσίας RSS';
 $string['remotenewsfeed'] = 'Απομακρυσμένες τροφοδοσίες RSS ειδήσεων';
 $string['rss_client:addinstance'] = 'Προσθήκη νέου μπλοκ απομακρυσμένης RSS τροφοδοσίας ειδήσεων';
 $string['rss_client:createprivatefeeds'] = 'Δημιουργία ιδιωτικών τροφοδοσιών RSS';
 $string['rss_client:createsharedfeeds'] = 'Δημιουργία διαμοιραζόμενων τροφοδοσιών RSS';
 $string['rss_client:manageanyfeeds'] = 'Διαχείριση οποιωνδήποτε τροφοδοσιών RSS';
 $string['rss_client:manageownfeeds'] = 'Διαχείριση των δικών σας τροφοδοσιών RSS';
-$string['rss_client:myaddinstance'] = 'Προσθήκη ενός νέου μπλοκ τροφοδοσιών RSS στο Ταμπλό';
+$string['rss_client:myaddinstance'] = 'Προσθήκη ενός νέου μπλοκ απομακρυσμένων τροφοδοσιών RSS στο Ταμπλό';
 $string['seeallfeeds'] = 'Εμφάνιση όλων των τροφοδοσιών RSS';
-$string['sharedfeed'] = 'Διαμοιραζόμενη τροφοδοσία RSS';
-$string['shownumentrieslabel'] = 'Μέγιστος αριθμός εγγραφών για εμφάνιση ανα μπλοκ';
+$string['sharedfeed'] = 'Κοινόχρηστη τροφοδοσία RSS';
+$string['shownumentrieslabel'] = 'Μέγιστος αριθμός καταχωρήσεων για εμφάνιση ανά μπλοκ.';
 $string['submitters'] = 'Ποιός επιτρέπεται να ορίζει νέες τροφοδοσίες RSS; Οι καθορισμένες τροφοδοσίες RSS είναι διαθέσιμες για κάθε σελίδα του ιστοτόπου σας.';
 $string['submitters2'] = 'Υποβολείς';
 $string['timeout'] = 'Χρόνος σε λεπτά πριν μια RSS τροφοδοσία λήξει στην κρυφή μνήμη. Σημειώστε πως αυτός ο χρόνος ορίζει τον ελάχιστο χρόνο πριν την λήξη· η τροφοδοσία θα ανανεωθεί στην κρυφή μνήμη κατά την επόμενη εκτέλεση της εντολής χρονοπρογραμματισμού cron μετά την λήξη. Προτεινόμενες τιμές είναι 30 λεπτά ή μεγαλύτερες.';
 $string['timeout2'] = 'Λήξη χρόνου';
 $string['timeoutdesc'] = 'Διάρκεια σε λεπτά μιας τροφοδοσίας RSS (χωρίς ανανέωση) στην κρυφή μνήμη.';
 $string['updatefeed'] = 'Ενημέρωση μιας διεύθυνσης URL, τροφοδοσίας RSS ειδήσεων:';
-$string['viewfeed'] = 'Προβολή τροφοδοσίας';
+$string['viewfeed'] = 'Εμφάνιση τροφοδοσίας';

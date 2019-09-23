@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_login', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_login', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   block_login
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['login:addinstance'] = 'Engadir un novo bloque de inicio';
+$string['login:addinstance'] = 'Engadir un novo bloque de acceso';
 $string['pluginname'] = 'Acceso';
 $string['privacy:metadata'] = 'O bloque de acceso só fornece unha forma de iniciar sesión e non gardar os datos en si.';

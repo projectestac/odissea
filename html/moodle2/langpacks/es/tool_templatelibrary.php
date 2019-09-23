@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_templatelibrary', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_templatelibrary', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_templatelibrary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,8 +33,8 @@ $string['example'] = 'Ejemplo';
 $string['noresults'] = 'Sin resultados';
 $string['notemplateselected'] = 'No se ha seleccionado ninguna plantilla';
 $string['pluginname'] = 'Biblioteca de plantillas';
-$string['search'] = 'Buscar';
-$string['searchtemplates'] = 'Buscar plantillas';
+$string['search'] = 'Búsqueda';
+$string['searchtemplates'] = 'Plantillas de búsqueda';
 $string['templatehasnoexample'] = 'Esta plantilla no posee contexto de ejemplo, por lo que no se puede representar aquí. Para añadir un contexto de ejemplo a esta plantilla, introduzca en un comentario de Mustache «Contexto de ejemplo (json):» seguido del contexto de la muestra codificado en json para la plantilla.';
 $string['templates'] = 'Plantillas';
 $string['templateselected'] = 'Plantilla: {$a}';

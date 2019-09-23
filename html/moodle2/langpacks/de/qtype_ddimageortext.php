@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['answer'] = 'Antwort';
 $string['bgimage'] = 'Hintergrundbild';
 $string['blank'] = 'leer';
 $string['correctansweris'] = 'Die richtige Antwort ist: {$a}';
+$string['deletedchoice'] = '[Auswahl löschen]';
 $string['draggableimage'] = 'Unbekannter';
 $string['draggableitem'] = 'Verschiebbares Element';
 $string['draggableitemheader'] = 'Verschiebbares Element {$a}';
@@ -40,7 +41,7 @@ $string['draggableword'] = 'Verschiebbarer Text';
 $string['dropbackground'] = 'Hintergrundbild, auf das die Markierungen gezogen werden';
 $string['dropzone'] = 'Dropzone {$a}';
 $string['dropzoneheader'] = 'Dropzonen';
-$string['formerror_disallowedtags'] = 'HTML-Tags sind in ziehbaren Texten nicht erlaubt.';
+$string['formerror_disallowedtags'] = 'Nur "{$a}" Tags sind in ziehbaren Texten erlaubt.';
 $string['formerror_multipledraginstance'] = 'Sie haben das Bild {$a} mehr als einmal als richtige Antwort für einen Ablegebereich ausgewählt, ohne es als mehrfach benutzbares Objekt zu kennzeichnen.';
 $string['formerror_multipledraginstance2'] = 'Sie haben das Bild mehr als einmal als richtige Antwort für einen Ablegebereich ausgewählt, ohne es als mehrfach benutzbares Objekt zu kennzeichnen.';
 $string['formerror_noallowedtags'] = 'HTML-Tags sind im alternativen Text zu einem ziehbaren Bild nicht erlaubt.';

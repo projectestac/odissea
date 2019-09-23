@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_googledocs', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_googledocs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,7 @@ $string['privacy:metadata:repository_googledocs'] = 'O engadido de repositorio d
 $string['privacy:metadata:repository_googledocs:email'] = 'O correo do usuario do repositorio de Google Drive.';
 $string['privacy:metadata:repository_googledocs:searchtext'] = 'A consulta de busca de texto de usuario do repositorio Google Drive.';
 $string['searchfor'] = 'Buscar por: {$a}';
-$string['secret'] = 'Secreto';
+$string['secret'] = 'Segredo';
 $string['servicenotenabled'] = 'O acceso non está configurado. Asegúrese de que o servizo «Drive API» está activo.';
 $string['spreadsheetformat'] = 'Formato de importación predeterminado de folla de cálculo';
 $string['supportedreturntypes'] = 'Ficheiros admitidos';

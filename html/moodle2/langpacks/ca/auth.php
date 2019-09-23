@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['auth_updateremote_ldap'] = '<p><b>Nota:</b> actualitzar dades LDAP exte
 $string['auth_user_create'] = 'Habilita la creació d\'usuaris';
 $string['auth_user_creation'] = 'Els nous usuaris (anònims) poden crear comptes d\'usuari en la font d\'autenticació externa i confirmar-los via correu electrònic. Si habiliteu aquesta opció, recordeu de configurar també opcions específiques del mòdul per a la creació d\'usuaris.';
 $string['auth_usernameexists'] = 'El nom d\'usuari elegit ja existeix. Trieu-ne un altre.';
+$string['auth_usernotexist'] = 'No es pot actualitzar un usuari no existent: {$a}';
 $string['auto_add_remote_users'] = 'Afegeix automàticament usuaris remots';
 $string['cannotmapfield'] = 'El camp «{$a->fieldname}» no pot ser mapat, perquè el nom curt «{$a->shortname}» és massa llarg. Per habilitar el mapatge cal reduir el nom curt del camp del perfil fins a {$a->charlimit} caràcters. <a href="{$a->link}">Edita els camps de perfil de l\'usuari</a>';
 $string['changepassword'] = 'URL de canvi de contrasenya';

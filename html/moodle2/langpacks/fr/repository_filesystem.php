@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_filesystem', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['configplugin'] = 'Configuration pour dépôt système de fichiers';
 $string['donotusesysdir'] = 'N\'utilisez pas le dossier système comme dépôt de fichiers, notamment';
 $string['enablecourseinstances'] = 'Permettre aux utilisateurs d\'ajouter un dépôt système de fichiers dans les cours (ne peut être configuré que par les administrateurs)';
 $string['enableuserinstances'] = 'Permettre aux utilisateurs d\'ajouter un dépôt système de fichier dans leur espace personnel (ne peut être configuré que par les administrateurs)';
-$string['filesystem:view'] = 'Consulter le dépôt système de fichiers';
+$string['filesystem:view'] = 'Consulter un dépôt système de fichiers';
 $string['information'] = 'Ces dossiers sont situés dans le dossier <b>{$a}</b>.';
 $string['invalidpath'] = 'Chemin d\'accès non valide';
 $string['nosubdir'] = 'Vous devez créer au moins un dossier dans le dossier <b>{$a}</b>, afin de pouvoir le sélectionner ici.';

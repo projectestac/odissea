@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'access', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   access
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,21 +26,23 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['access'] = 'Accessibilité';
-$string['accesshelp'] = 'Aide d\'accessibilité';
+$string['accesshelp'] = 'Aide sur l\'accessibilité';
 $string['accesskey'] = 'Raccourci clavier, {$a}';
 $string['accessstatement'] = 'Déclaration d\'accessibilité';
 $string['activitynext'] = 'Activité suivante';
 $string['activityprev'] = 'Activité précédente';
 $string['breadcrumb'] = 'Barre de navigation';
-$string['hideblocka'] = 'Cacher bloc {$a}';
+$string['eventcontextlocked'] = 'Contexte gelé';
+$string['eventcontextunlocked'] = 'Contexte degelé';
+$string['hideblocka'] = 'Cacher le bloc {$a}';
 $string['monthnext'] = 'Mois suivant';
 $string['monthprev'] = 'Mois précédent';
-$string['showblocka'] = 'Afficher bloc {$a}';
-$string['sitemap'] = 'Carte du site';
+$string['showblocka'] = 'Montrer le bloc {$a}';
+$string['sitemap'] = 'Plan du site';
 $string['skipa'] = 'Passer {$a}';
 $string['skipblock'] = 'Passer le bloc';
 $string['skipnavigation'] = 'Passer la navigation';
 $string['skipto'] = 'Passer à {$a}';
 $string['tocontent'] = 'Passer au contenu principal';
-$string['tonavigation'] = 'Vers la navigation';
+$string['tonavigation'] = 'Aller à la navigation';
 $string['youarehere'] = 'Vous êtes ici';

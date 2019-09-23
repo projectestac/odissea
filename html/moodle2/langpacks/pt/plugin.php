@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'plugin', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -122,8 +122,8 @@ $string['type_calendartype'] = 'Tipo de calendário';
 $string['type_calendartype_plural'] = 'Tipos de calendário';
 $string['type_coursereport'] = 'Relatório da disciplina';
 $string['type_coursereport_plural'] = 'Relatórios da disciplina';
-$string['type_dataformat'] = 'Formato de dados';
-$string['type_dataformat_plural'] = 'Formatos de dados';
+$string['type_dataformat'] = 'Formato dos dados';
+$string['type_dataformat_plural'] = 'Formatos dos dados';
 $string['type_editor'] = 'Editor';
 $string['type_editor_plural'] = 'Editores';
 $string['type_enrol'] = 'Método de inscrição';
@@ -181,20 +181,20 @@ $string['type_webservice'] = 'Protocolo Web service';
 $string['type_webservice_plural'] = 'Protocolos Web service';
 $string['uninstall'] = 'Desinstalar';
 $string['uninstallconfirm'] = 'Está prestes a desinstalar o módulo \'<strong>{$a->name}</strong>\'. Isto irá apagar completamente tudo o que existe na base de dados associado a este módulo, incluindo a sua configuração, registos de atividade, ficheiros do utilizador geridos pelo módulo, etc. Esta operação é irreversível e o Moodle não cria qualquer cópia de segurança para recuperação. Tem a certeza de que pretende continuar?';
-$string['uninstalldelete'] = 'Todos os dados associados ao módulo \'<strong>{$a->name}</strong>\' foram eliminados da base de dados. Para evitar que o módulo se reinstale, a respetiva pasta [<em>{$a->rootdir}</em>] deve ser agora removida manualmente a partir do seu servidor. O Moodle por si só não pode remover a pasta devido a permissões de escrita.';
+$string['uninstalldelete'] = 'Todos os dados associados ao módulo \'<strong>{$a->name}</strong>\' foram eliminados da base de dados. Para evitar que o módulo se reinstale, a respetiva pasta [<em>{$a->rootdir}</em>] deve ser agora removida manualmente do seu servidor. O Moodle por si só não pode remover a pasta devido a permissões de escrita.';
 $string['uninstalldeleteconfirm'] = 'Todos os dados associados ao módulo \'<strong>{$a->name}</strong>\' foram apagados da base de dados. Para evitar que o módulo se reinstale, a respetiva pasta [ <em>{$a->rootdir}</em> ] tem de ser apagada do seu servidor. Pretende apagar a pasta do módulo agora?';
 $string['uninstalldeleteconfirmexternal'] = 'Aparentemente, a versão atual do módulo foi obtida através de um sistema de gestão do código fonte ({$a}). Se remover a pasta do módulo, pode perder importantes modificações locais do código. Certifique-se de que pretende remover definitivamente a pasta do módulo antes de continuar.';
 $string['uninstallextraconfirmblock'] = 'Existem {$a->instances} instâncias deste bloco.';
 $string['uninstallextraconfirmenrol'] = 'Existem {$a->enrolments} inscrições do utilizador.';
 $string['uninstallextraconfirmmod'] = 'Existem {$a->instances} instâncias deste módulo em {$a->courses} disciplinas.';
 $string['uninstalling'] = 'A desinstalar \'{$a->name}\'';
-$string['updateavailable'] = 'Existe uma nova versão {$a} disponível!';
+$string['updateavailable'] = 'Existe uma nova versão \'{$a}\' disponível!';
 $string['updateavailable_moreinfo'] = 'Mais informação...';
 $string['updateavailable_release'] = 'Lançamento {$a}';
 $string['updatepluginconfirm'] = 'Confirmação da atualização do módulo';
 $string['updatepluginconfirmexternal'] = 'Aparentemente, a versão atual do módulo foi obtida através do sistema de gestão de verificação do código-fonte ({$a}). Se instalar esta atualização, não será possível obter atualizações de módulos do sistema de gestão do código fonte. Certifique-se que pretende mesmo atualizar o módulo antes de continuar.';
-$string['updatepluginconfirminfo'] = 'Está prestes a instalar uma nova versão do módulo <strong>{$a->name}</strong>. Um pacote ZIP com a versão \'{$a->version}\' do módulo será descarregada de <a href="{$a->url}">{$a->url}</a> e extraída para a sua instalação Moodle para que possa atualizar a versão instalada.';
-$string['updatepluginconfirmwarning'] = 'Por favor, note que o Moodle não fará uma cópia de segurança da sua base de dados antes da atualização. Recomendamos que faça uma cópia de segurança completa, para evitar que eventuais bugs do novo código tornem o seu site indisponível ou até corromper a sua base de dados. Prossiga por sua conta e risco.';
+$string['updatepluginconfirminfo'] = 'Está prestes a instalar uma nova versão do módulo <strong>{$a->name}</strong>. Um pacote ZIP com a versão \'{$a->version}\' do módulo será descarregado de <a href="{$a->url}">{$a->url}</a> e extraído para a sua instalação Moodle para que possa atualizar a versão instalada.';
+$string['updatepluginconfirmwarning'] = 'Por favor, tenha em atenção que o Moodle não fará uma cópia de segurança da sua base de dados antes da atualização. Recomendamos que faça uma cópia de segurança completa, para evitar que eventuais bugs do novo código tornem o seu site indisponível ou até corromper a sua base de dados. Prossiga por sua conta e risco.';
 $string['validationmsg_componentmatch'] = 'Nome completo do componente';
 $string['validationmsg_componentmismatchname'] = 'Incompatibilidade de nome do módulo';
 $string['validationmsg_componentmismatchname_help'] = 'Alguns pacotes ZIP, tais como os gerados pelo Github, podem conter um nome incorreto da diretoria raiz. É preciso corrigir o nome da diretoria raiz para que este corresponda ao nome do módulo declarado.';

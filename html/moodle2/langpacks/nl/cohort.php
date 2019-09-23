@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cohort', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,9 +61,10 @@ $string['eventcohortmemberremoved'] = 'Gebruiker verwijderd uit een site-groep';
 $string['eventcohortupdated'] = 'Site-groep geüpdate';
 $string['external'] = 'Externe site groep';
 $string['idnumber'] = 'Site groep ID';
+$string['invalidtheme'] = 'Site-groep-thema bestaat niet';
 $string['memberscount'] = 'Site groep grootte';
 $string['name'] = 'Naam';
-$string['namecolumnmissing'] = 'Er is wat mis met de opmaak van het CSV-bestand. Controleer of de kolomnamen er in staan.';
+$string['namecolumnmissing'] = 'Er is wat mis met de opmaak van het CSV-bestand. Controleer of de juiste kolomnamen er in staan. Ga om gebruikers aan site-groepen toe te voegen naar Gebruikers uploaden in het site-beheer.';
 $string['namefieldempty'] = 'Veldnaam kan niet leeg zijn';
 $string['newidnumberfor'] = 'Nieuw ID nummer voor site-groep  {$a}';
 $string['newnamefor'] = 'Nieuwe naam voor site-groep  {$a}';

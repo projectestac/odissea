@@ -111,3 +111,7 @@ preserved.
 $string['nocontents'] = 'There are no contents in Clickedu for this course.';
 $string['contentssynced'] = 'Contents synced.';
 $string['syncingcontents'] = 'Syncing contents';
+
+
+// Privacy
+$string['privacy:metadata'] = 'The local Clickedu only shows data stored in other locations.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_html', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,10 +30,9 @@ $string['configallowadditionalcssclasses'] = 'Προσθέτει μια επιλ
 $string['configclasses'] = 'Επιπρόσθετες κλάσεις CSS';
 $string['configclasses_help'] = 'Σκοπός αυτών των ρυθμίσεων είναι να βοηθήσουν με τα θέματα βοηθώντας τη διάκριση των μπλοκ HTML μεταξύ τους. Οποιεσδήποτε κλάσεις CSS που εισάγονται εδώ (με κενό ως διαχωριστικό) θα προσαρτηθούν στις προεπιλεγμένες κλάσεις του μπλοκ.';
 $string['configcontent'] = 'Περιεχόμενο';
-$string['configtitle'] = 'Τίτλος μπλοκ';
+$string['configtitle'] = 'Τίτλος μπλοκ HTML';
 $string['html:addinstance'] = 'Προσθήκη νέου μπλοκ HTML';
 $string['html:myaddinstance'] = 'Προσθήκη νέου μπλοκ HTML στο Ταμπλό';
-$string['leaveblanktohide'] = 'Αφήστε κενό αυτό το πεδίο για να μην εμφανίζεται τίτλος';
 $string['newhtmlblock'] = '(Νέο μπλοκ HTML)';
 $string['pluginname'] = 'HTML';
 $string['privacy:metadata:block'] = 'Το μπλοκ HTML αποθηκεύει όλα τα δεδομένα του στο υποσύστημα μπλοκ.';

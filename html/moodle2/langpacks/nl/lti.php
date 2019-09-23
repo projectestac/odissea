@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lti', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -146,19 +146,18 @@ $string['errortooltypenotfound'] = 'LTI tool-type niet gevonden.';
 $string['existing_window'] = 'Bestaand venster';
 $string['extensions'] = 'LTI extensie services';
 $string['external_tool_type'] = 'Voorgeconfigureerde tool';
-$string['external_tool_type_help'] = '* **Automatisch, gebaseerd op de URL van lancering** - Dit is in bijna alle gevallen de meest aangewezen instelling. Moodle zal de meest geschikte tool configuratie selecteren, gebaseerd op de URL van lancering. Tools die geconfigureerd werden zowel door een administrator als binnen deze cursus zullen worden gebruikt. Wanneer de URL van lancering gespecificeerd is, zal Moodle feedback geven of het deze herkent ja of nee. Indien Moodle de URL van lancering niet herkent, zul je de details van de tool configuratie manueel moeten invoeren.
-* **Een specifiek tool type** - Door te kiezen voor een specifiek tooltype, dwing je Moodle om deze tool configuratie te gebruiken bij communicatie met de externe tool provider. Indien de URL van lancering niet lijkt te horen bij de tool provider, zal een waarschuwing verschijnen. In sommige gevallen is het niet nodig om een URL van lancering in te geven wanneer je een specifiek tool type opgeeft (wanneer de lancering zich niet richt tot een bepaalde bron binnen de tool provider).
-
-* **Aangepaste configuratie** - Om de aangepaste tool configuratie enkel in dit exemplaar in te stellen, open Geadvanceerde opties, en geef de consumer key en de shared secret zelf in; misschien ontvang je deze na navraag bij de tool provider.
-Niet alle tools vereisen een consumer key en een shared secret; in dit geval kun je de velden open laten.
+$string['external_tool_type_help'] = '* **Automatisch, gebaseerd op de tool-URL** - De beste tool-configuratie wordt automatisch geselecteerd. Als de tpol-URL niet automatisch wordt herkent, zul je de details van de tool configuratie manueel moeten invoeren.
+* **Een specifiek tool type** - De tool-configuratie voor een bepaalde tool zal gebruikt worde tijdens de communicatie met de externe tool provider. Als de tool-URL niet bij de tool provider hoort, dan wordt een waarschuwing getoond. Het is niet altijd nodig om een tool-URL in te voeren.
+* **Aangepaste configuratie** - Er moet waarschijnlijk manueel een consumer key en de shared secret ingevoerd worden. Die kun je ontvangen van de tool provider.
+Niet alle tools vereisen een consumer key en een shared secret;. In dit geval kun je de velden open laten.
 
 ###Bewerken van tool type
 
-Er zijn drie icoontjes beschikbaar in de externe tool type dropdown lijst:
+Er zijn drie icoontjes beschikbaar in de externe tool-type rolmenu:
 
-* **Toevoegen** - Maak een tool configuratie aan op cursus niveau. Alle externe tool-exemplaren in deze cursus kunnen de tool configuratie gebruiken.
-* **Bewerken** - Selecteer een tool type op cursus niveau in de dropdown, en klik dan op dit icoontje. De details van de tool configuratie kunnen worden bewerkt.
-* **Verwijderen** - Verwijder het geselecteerde tool type op cursus niveau.';
+* **Toevoegen** - Maak een tool-configuratie aan op cursusniveau. Alle externe tool-instanties in deze cursus kunnen de tool-configuratie gebruiken.
+* **Bewerken** - Selecteer een tool-type op cursusniveau in het rolmenu en klik dan op dit icoontje. De details van de tool-configuratie kunnen worden bewerkt.
+* **Verwijderen** - Verwijder het geselecteerde tool-type op cursusniveau.';
 $string['external_tool_types'] = 'Voorgeconfigureerde tools';
 $string['failedtoconnect'] = 'Moodle was niet in staat om te communiceren met het "{$a}" systeem';
 $string['failedtocreatetooltype'] = 'Nieuwe tool maken mislukt. Controleer de url en probeer opnieuw.';
@@ -209,7 +208,7 @@ Indien je een voorgeconfigureerde tool hebt gekozen, kan het onnodig zijn om een
 $string['leaveblank'] = 'Laat leeg als je ze niet nodig hebt';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Voeg cursusspecifieke tool-configuraties toe';
-$string['lti:addinstance'] = 'Voeg nieuwe externe tool-activiteiten toe';
+$string['lti:addinstance'] = 'Voeg een nieuwe externe tool-activiteit toe';
 $string['lti:admin'] = 'Wordt beheerder wanneer de tool wordt gestart';
 $string['lti_administration'] = 'Bewerk voorgeconfigureerde tool';
 $string['lti_errormsg'] = 'De tool zond de volgende foutmelding terug: "{$a}"';
@@ -331,8 +330,8 @@ $string['privacy:metadata:lti_tool_proxies:name'] = 'LTI-proxy-naam';
 $string['privacy:metadata:lti_types'] = 'LTI-types';
 $string['privacy:metadata:lti_types:name'] = 'LTI-typenaam';
 $string['privacy:metadata:role'] = 'De cursusrol van de gebruiker die toegang kreeg tot de LTI-Consumer';
-$string['privacy:metadata:timecreated'] = 'De datum waarop de record gemaakt werd';
-$string['privacy:metadata:timemodified'] = 'De datum waarop de record gewijzigd werd';
+$string['privacy:metadata:timecreated'] = 'Het tijdstip waarop de record gemaakt werd';
+$string['privacy:metadata:timemodified'] = 'Het tijdstip waarop de record gewijzigd werd';
 $string['privacy:metadata:userid'] = 'De ID van de gebruiker doe toegang kreeg tot de LTI-Consumer';
 $string['privacy:metadata:useridnumber'] = 'D ID-nummer van de gebruiker die toegang kreeg tot de LTI-Consumer';
 $string['privacy:metadata:username'] = 'De gebruikersnaam van de gebruiker die toegang kreeg tot de LTI-Consumer';
@@ -449,6 +448,8 @@ $string['tooltypenotdeleted'] = 'Kon voorgeconfigureerde tool niet verwijderen';
 $string['tooltypes'] = 'Tools';
 $string['tooltypeupdated'] = 'Voorgeconfigureerde tool aangepast';
 $string['toolurl'] = 'Tool-URL';
+$string['toolurl_contentitemselectionrequest'] = 'Toestemmingsselectie-URL';
+$string['toolurl_contentitemselectionrequest_help'] = 'De toestemminsselectie-URL zal gebruikt worden om de inhoudsselectiepagina van de toolprovider te openen. Als die leeg is, dan zaal de Tool-URL gebruikt worden';
 $string['toolurl_help'] = 'De tool-URL wordt gebruikt om de juiste tool-URL\'s te koppelen aan de juiste tool configuratie. Het voorvoegsel http(s) in de URL is optioneel.
 
 Bijkomend wordt de basis URL gebruikt als tool-URL als er geen tool-URL is opgegeven in de configuratie van de externe tool.

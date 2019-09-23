@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_monitor', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,10 +62,10 @@ $string['managerules'] = 'Event-Beobachtung';
 $string['manageruleslink'] = 'Sie können Events der {$a} Seite verwalten.';
 $string['managesubscriptions'] = 'Event-Beobachtung';
 $string['managesubscriptionslink'] = 'Sie können sich über Ereignisse der Seite {$a} benachrichtigen lassen.';
-$string['messageprovider:notification'] = 'Mitteilung über Regel-Abonnements';
-$string['messagetemplate'] = 'Mitteilung über Benachrichtigungen';
-$string['messagetemplate_help'] = 'Eine Benachrichtigung wird dem Empfänger zugesandt wenn die Benachrichtigungsschwelle erreicht wurde. Sie kann einen oder mehrere Platzhalter enthalten:
-<br /><br />
+$string['messageprovider:notification'] = 'Systemnachrichten über Regel-Abonnements';
+$string['messagetemplate'] = 'Benachrichtigung';
+$string['messagetemplate_help'] = 'Eine Benachrichtigung wird dem Empfänger zugesandt, wenn die Meldeschwelle erreicht wurde. Sie kann einen oder mehrere Platzhalter enthalten:
+
 * Link zur Seite des Ereignisses {link}<br />
 * Link zum beobachteten Bereich {modulelink}<br />
 * Name der Regel {rulename}<br />
@@ -82,23 +82,23 @@ $string['pluginname'] = 'Event-Beobachtung';
 $string['privacy:createdrules'] = 'Regel für Ereignisbeobachtung, die ich erstellte';
 $string['privacy:metadata:description'] = 'Beschreibung der Regel';
 $string['privacy:metadata:eventname'] = 'Vollständig qualifizierter Name des Events';
-$string['privacy:metadata:frequency'] = 'Häufigkeit der Mitteilungen';
-$string['privacy:metadata:historysummary'] = 'Speichert die Historie der gesendeten Mitteilungen';
+$string['privacy:metadata:frequency'] = 'Häufigkeit der Systemnachrichten';
+$string['privacy:metadata:historysummary'] = 'Speichert den Verlauf der gesendeten Benachrichtigungen';
 $string['privacy:metadata:inactivedate'] = 'Zeitraum (in Tagen) nachdem ein inaktiver Account gelöscht wird (Selbstregistrierung ohne Bestätigung)';
 $string['privacy:metadata:lastnotificationsent'] = 'Wann zuletzt eine Benachrichtigung für Registrierung versandt wurde';
-$string['privacy:metadata:messagesummary'] = 'Benachrichtungen wurden über das Mitteilungssystem gesendet.';
+$string['privacy:metadata:messagesummary'] = 'Mitteilungen wurden über das Mitteilungssystem gesendet.';
 $string['privacy:metadata:name'] = 'Name der Regel';
 $string['privacy:metadata:plugin'] = 'Frankenstyle-Name des Plugins (eindeutige Bezeichnung)';
 $string['privacy:metadata:rulessummary'] = 'Speichert Regeln zur Beobachtung';
 $string['privacy:metadata:subscriptionssummary'] = 'Speichert Nutzerzuordnung in verschiedene Regeln';
-$string['privacy:metadata:template'] = 'Nachrichten Template';
+$string['privacy:metadata:template'] = 'Nachrichten-Template';
 $string['privacy:metadata:timecreatedrule'] = 'Wann die Regel erstellt wurde';
 $string['privacy:metadata:timecreatedsub'] = 'Wann das Abonnement erstellt wurde';
 $string['privacy:metadata:timemodifiedrule'] = 'Wann Regel zuletzt verändert wurde';
-$string['privacy:metadata:timesent'] = 'Zeitpunkt der Versendung der Nachricht';
+$string['privacy:metadata:timesent'] = 'Zeitpunkt des Nachrichtenversands';
 $string['privacy:metadata:timewindow'] = 'Zeitfenster in Sekunden';
 $string['privacy:metadata:userid'] = 'ID des Nutzers, der die Regel erstellt hat';
-$string['privacy:metadata:useridhistory'] = 'ID des Nutzers, dem die Benachrichtigung zugesandt wurde';
+$string['privacy:metadata:useridhistory'] = 'ID des Nutzers, dem die Benachrichtigung gesendet wurde';
 $string['privacy:metadata:useridsub'] = 'ID des Abonnenten';
 $string['privacy:subscriptions'] = 'Meine Ereignis-Abonnement';
 $string['processevents'] = 'Events abfragen';

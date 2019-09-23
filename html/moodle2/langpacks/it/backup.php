@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['autoactivedescription'] = 'E\' possibile scegliere come impostare i bac
 $string['autoactivedisabled'] = 'Disabilitato';
 $string['autoactiveenabled'] = 'Abilitato';
 $string['autoactivemanual'] = 'Manuale';
-$string['automatedbackupschedule'] = 'Schedulazione';
+$string['automatedbackupschedule'] = 'Pianificazione';
 $string['automatedbackupschedulehelp'] = 'I giorni della settimana nei quali effettuare i backup automatici.';
 $string['automatedbackupsinactive'] = 'I backup automatici non sono stati abilitati dall\'amministratore del sito.';
 $string['automatedbackupstatus'] = 'Stato backup automatico';
@@ -95,7 +95,7 @@ $string['configgeneralcomments'] = 'Imposta il default per l\'inclusione dei com
 $string['configgeneralcompetencies'] = 'Imposta il default per l\'inclusione delle competenze nei backup.';
 $string['configgeneralfilters'] = 'Imposta il default per l\'inclusione dei filtri nei backup.';
 $string['configgeneralgroups'] = 'Il default per l\'inclusione nei backup di gruppi e raggruppamenti.';
-$string['configgeneralhistories'] = 'Imposta il default per l\'inclusione della storia degli utenti nei backup.';
+$string['configgeneralhistories'] = 'Imposta il default per l\'inclusione dello storico degli utenti nei backup.';
 $string['configgenerallogs'] = 'Imposta il default per l\'inclusione dei log nei backup.';
 $string['configgeneralquestionbank'] = 'Include di default il deposito delle domande nei backup. NOTA: disabilitando questa impostazione saranno disabilitati i backup delle attività che usano il deposito delle domande, come ad esempio i quiz.';
 $string['configgeneralroleassignments'] = 'Imposta il default per l\'inclusione delle assegnazioni di ruolo nei backup.';
@@ -172,7 +172,7 @@ $string['generalenrolments'] = 'Includi metodi di iscrizione';
 $string['generalfilters'] = 'Includi filtri';
 $string['generalgradehistories'] = 'Includi storie';
 $string['generalgroups'] = 'Includi gruppi e raggruppamenti';
-$string['generalhistories'] = 'Includi storia';
+$string['generalhistories'] = 'Includi storico';
 $string['generallogs'] = 'Includi log';
 $string['generalquestionbank'] = 'Includi deposito delle domande';
 $string['generalrestoredefaults'] = 'Impostazioni di ripristino di default';
@@ -240,6 +240,7 @@ $string['qcategory2coursefallback'] = 'La categoria di domande "{$a->name}", pre
 $string['qcategorycannotberestored'] = 'Il ripristino non può creare la categoria di domande "{$a->name}"';
 $string['question2coursefallback'] = 'La categoria di domande "{$a->name}", presente nel backup e proveniente contesto della categoria system/course, sarà ripristinata nel contesto del corso.';
 $string['questionegorycannotberestored'] = 'Il ripristino non può creare le domande "{$a->name}"';
+$string['recyclebin_desc'] = 'Da notare che le stesse impostazioni saranno applicate anche al cestino.';
 $string['replacerestoredefaults'] = 'Default per il ripristino quando si ripristina in un altro corso eliminando i contenuti';
 $string['restoreactivity'] = 'Ripristina attività';
 $string['restorecourse'] = 'Ripristina corso';

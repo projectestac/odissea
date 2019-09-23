@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_textarea', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor_textarea', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   editor_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Περιοχή απλού κειμένου';
-$string['privacy:metadata'] = 'Το πρόσθετο editor_textarea (επεξεργαστής περιοχής κειμένου) δεν αποθηκεύει καθόλου προσωπικά δεδομένα.';
+$string['privacy:metadata'] = 'Το πρόσθετο «Επεξεργαστής περιοχής απλού κειμένου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,5 +67,5 @@ $string['restrictbygroup'] = 'Aggiungi criterio di accesso basato su gruppi/ragg
 $string['setheading'] = 'Insieme {$a->number} di  {$a->count} criteri';
 $string['shown_all'] = 'Visualizzato disabilitato se l\'utente non soddisfa le condizioni';
 $string['shown_individual'] = 'Visualizzato disabilitato se l\'utente non soddisfa la condizione';
-$string['show_verb'] = 'Click per visualizzare';
+$string['show_verb'] = 'Click per visualizzare disabilitata';
 $string['unknowncondition'] = 'Criterio sconosciuto (plugin criterio eliminato)';

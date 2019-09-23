@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['addplugin'] = 'Attivazione repository plugin';
 $string['allowexternallinks'] = 'Consenti link esterni';
 $string['areacategoryintro'] = 'Introduzione alla categoria';
 $string['areacourseintro'] = 'Introduzione al corso';
-$string['areacourseoverviewfiles'] = 'File dell\'introduzione al corso';
+$string['areacourseoverviewfiles'] = 'Immagine del corso';
 $string['areamainfile'] = 'File primario';
 $string['arearoot'] = 'Sistema';
 $string['areauserbackup'] = 'Backup utente';
@@ -47,8 +47,8 @@ $string['attachedfiles'] = 'File allegati';
 $string['attachment'] = 'Allegato';
 $string['author'] = 'Autore';
 $string['automatedbackup'] = 'Backup automatici';
-$string['back'] = '&laquo; Back';
-$string['backtodraftfiles'] = '&laquo; Torna al gestore dei file draft';
+$string['back'] = 'Back';
+$string['backtodraftfiles'] = 'Torna al gestore dei file draft';
 $string['cachecleared'] = 'I file in cache sono stati eliminati';
 $string['cacheexpire'] = 'Permanenza in cache';
 $string['cannotaccessparentwin'] = 'Se la finestra parent è in HTTPS non è possibile accedervi tramite l\'oggetto window.opener, pertanto non è possibile aggiornare automaticamente il repository. Tuttavia la sessione è nota, quindi affinché l\'aggiornamento funzioni dovrebbe essere sufficiente ritornare al file picker e selezionare nuovamente il repository.';
@@ -147,7 +147,7 @@ $string['instancesforusers'] = '{$a} Istanze private';
 $string['invalidfiletype'] = 'Non è possibile accettare il tipo di file {$a}';
 $string['invalidjson'] = 'Stringa JSON non valida';
 $string['invalidparams'] = 'Parametri non validi';
-$string['invalidplugin'] = 'Repository plug-in non valido';
+$string['invalidplugin'] = 'Repository plugin {$a} non valido';
 $string['invalidrepositoryid'] = 'Repository ID non valido';
 $string['isactive'] = 'Attivo ?';
 $string['keyword'] = 'Parola chiave';
@@ -190,7 +190,7 @@ $string['original'] = 'Originale';
 $string['overwrite'] = 'Sovrascrivi';
 $string['overwriteall'] = 'Sovrascrivi tutti';
 $string['path'] = 'Percorso';
-$string['plugin'] = 'Repository plug-in';
+$string['plugin'] = 'Plugin Repository';
 $string['pluginerror'] = 'Si sono verificati errori nel repository plugin';
 $string['pluginname'] = 'Nome plugin repository';
 $string['pluginnamehelp'] = 'Non compilando questo campo, Moodle userà il nome di default.';
@@ -198,6 +198,7 @@ $string['popup'] = 'Fai click sul pulsante "Login" per autenticarti';
 $string['popupblockeddownload'] = 'La finestra di download è stata bloccata, per favore abilita le finestre popup e riprova.';
 $string['preview'] = 'Anteprima';
 $string['privacy:metadata:repository'] = 'La componente Repository memorizza le tipologie di repository all\'interno del sottosistema core.';
+$string['privacy:metadata:repository_instances'] = 'La componente plugin Repository memorizza i dati delle repository degli utenti all\'interno del sottosistema core.';
 $string['privacy:metadata:repository_instances:name'] = 'Nome personalizzato del repository.';
 $string['privacy:metadata:repository_instances:password'] = 'Password facoltativa configurata per il repository.';
 $string['privacy:metadata:repository_instances:timecreated'] = 'Data e ora di creazione del repository.';

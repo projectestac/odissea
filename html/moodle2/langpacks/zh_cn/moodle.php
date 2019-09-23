@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'moodle', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -231,7 +231,7 @@ $string['cachecontrols'] = '缓存控制';
 $string['cancel'] = '取消';
 $string['cancelled'] = '取消';
 $string['categories'] = '课程分类';
-$string['categoriesandcoures'] = '课程类别和课程';
+$string['categoriesandcourses'] = '课程类别和课程';
 $string['category'] = '课程分类';
 $string['categoryadded'] = '已经添加类别‘{$a}’';
 $string['categorybulkaction'] = '对选定类别的批量设置';
@@ -304,6 +304,7 @@ $string['cookiesenabled_help'] = '本站使用两个cookie：
 最重要的是会话cookie，通常叫做 MoodleSession。您必须在浏览器里接受这个 cookie，才能使您的登录在页与页之间连续有效。当您登出或关闭浏览器，这个 cookie 在浏览器和服务器里都会被删除。
 
 另一个 cookie 纯粹是为了方便，通常被叫做类似 MOODLEID 之类的名字。它只用来在浏览器里记住您的用户名。这意味着当您再次回到本站，登录页面里的用户名已经替您填好了。拒绝此 cookie 是安全的，只不过每次登录都要重新输入用户名而已。';
+$string['cookiesenabledonlysession'] = '您浏览器的 cookies 设置必须打开';
 $string['cookiesnotenabled'] = '很不幸，您的浏览器目前并未开启对 cookie 的支持';
 $string['copy'] = '复制';
 $string['copyasnoun'] = '复制';
@@ -410,6 +411,12 @@ $string['courserequestsupport'] = '一些额外的信息，帮助管理员来评
 $string['courserequestwarning'] = '允许用户自助选课请求并分配 {$a}角色。';
 $string['courserestore'] = '课程恢复';
 $string['courses'] = '课程';
+$string['coursesearch_help'] = '<p>您可以一次使用多关键字搜索，并按照下面的方式重新定义你的搜索:</p>
+<ul>
+<li>word: 搜索任何包含该关键字的内容。</li>
+<li>+word: 严格匹配。</li>
+<li>-word: 结果中不含该关键词。</li>
+</ul>';
 $string['coursesectionsummaries'] = '课程小节概述';
 $string['coursesectiontitle'] = '课程： {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
 $string['coursesettings'] = '课程缺省设置';
@@ -651,8 +658,9 @@ $string['emaildisable'] = '这个email地址已禁用';
 $string['emaildisableclick'] = '点击此处不再向此地址发送任何邮件';
 $string['emaildisplay'] = '显示Email';
 $string['emaildisplaycourse'] = '只允许课程成员查看我的email地址';
+$string['emaildisplay_help'] = '特权用户（例如教师或管理员）将看到您的邮箱地址。';
 $string['emaildisplayhidden'] = '已隐藏 Email';
-$string['emaildisplayno'] = '对所有人隐藏我的email地址';
+$string['emaildisplayno'] = '对无权限用户隐藏我的电子邮件地址';
 $string['emaildisplayyes'] = '允许所有人看到我的email地址';
 $string['emailenable'] = '该email地址已激活';
 $string['emailenableclick'] = '点击此处重新允许向此地址发送email';
@@ -817,14 +825,15 @@ $string['explanationdigitalminor'] = '此信息用于确认您是否已达到可
 $string['extendenrol'] = '延长选课时间（个人）';
 $string['extendperiod'] = '延长选课';
 $string['failedloginattempts'] = '从您上次登录后共有{$a->attempts}次失败的登录尝试。';
+$string['favourites'] = '带星号标记的';
 $string['feedback'] = '反馈';
 $string['file'] = '文件';
 $string['fileexists'] = '已经有名为 {$a} 的文件';
 $string['filemissing'] = '找不到文件 {$a}';
+$string['filereaderror'] = '无法读取文件  \'{$a}\'。请检查它确实是文件而非文件夹。';
 $string['files'] = '文件';
 $string['filesanduploads'] = '文件上传';
 $string['filesfolders'] = '文件/文件夹';
-$string['filetoolarge'] = '太大不能上传';
 $string['fileuploadwithcontent'] = '不能在文件上传中包含内容参数';
 $string['filloutallfields'] = '请填完这个表单的所有空格';
 $string['filter'] = '筛选';
@@ -1141,7 +1150,6 @@ $string['markedthistopic'] = '该主题作为当前主题突出显示';
 $string['markthistopic'] = '标记该主题为当前主题';
 $string['matchingsearchandrole'] = '与“{$a->search}”匹配的{$a->role}';
 $string['maxareabytesreached'] = '这个文件（或几个文件的总和）的大小超过了预留的空间';
-$string['maxbytesforfile'] = '这个文件{$a}超过了允许的最高限制';
 $string['maxfilesize'] = '新上传文件的最大体积：{$a}';
 $string['maxfilesreached'] = '此项允许您最多附加 {$a} 个文件';
 $string['maximumchars'] = '最多{$a}个字符';
@@ -1214,8 +1222,6 @@ $string['missingsummary'] = '概况没填';
 $string['missingteacher'] = '必须选个东西';
 $string['missingurl'] = '遗漏了URL';
 $string['missingusername'] = '用户名没填';
-$string['modchooserdisable'] = '活动选择器关闭';
-$string['modchooserenable'] = '活动选择器打开';
 $string['moddoesnotsupporttype'] = '模块 {$a->modname} 不支持上传 {$a->type} 类型文件';
 $string['modhide'] = '隐藏';
 $string['modified'] = '修改时间';
@@ -1486,6 +1492,7 @@ $string['payments'] = '付费';
 $string['paymentsorry'] = '谢谢您付费! 您的付费手续尚未处理完毕，您还不能注册进入课程“{$a->fullname}”。请过几分钟后再试，但如果您始终有问题，请告知{$a->teacher}或站点管理员。';
 $string['paymentthanks'] = '谢谢您付费! 现在您已经可以加入如下课程了: <br />“{$a}”';
 $string['pendingrequests'] = '待批申请';
+$string['percents'] = '{$a}%';
 $string['periodending'] = '结束时间({$a})';
 $string['perpage'] = '每页';
 $string['perpagea'] = '每页：{$a}';
@@ -1622,6 +1629,7 @@ $string['requestcourse'] = '申请新建一门课程';
 $string['requestedby'] = '申请人';
 $string['requestedcourses'] = '请求的课程';
 $string['requestreason'] = '申请理由';
+$string['requests'] = '请求';
 $string['required'] = '必需的';
 $string['requirespayment'] = '此课程需要付费才能访问';
 $string['reset'] = '重置';
@@ -1725,12 +1733,6 @@ $string['searchagain'] = '再次搜索';
 $string['searchbyemail'] = '用email地址搜索';
 $string['searchbyusername'] = '用用户名搜索';
 $string['searchcourses'] = '搜索课程';
-$string['searchhelp'] = '<p>您可以一次使用多关键字搜索，并按照下面的方式重新定义你的搜索:</p>
-<ul>
-<li>word: 搜索任何包含该关键字的内容。</li>
-<li>+word: 严格匹配。</li>
-<li>-word: 结果中不含该关键词。</li>
-</ul>';
 $string['search_help'] = '基本搜索可以在文本中查找一个或多个词。词之间用空格分隔。只有一个字母的单词会被忽略。
 
 如要进行高级搜索，直接点击搜索按钮，搜索框中什么都不要输入，便可访问高级搜索表单。';
@@ -2085,7 +2087,6 @@ $string['uploadthisfile'] = '上传这个文件';
 $string['url'] = '网页地址';
 $string['used'] = '已使用';
 $string['usedinnplaces'] = '在{$a}处使用';
-$string['usemessageform'] = '或者使用下面输入框发消息给已选择的学生';
 $string['user'] = '用户';
 $string['useraccount'] = '用户帐号';
 $string['useractivity'] = '活动';

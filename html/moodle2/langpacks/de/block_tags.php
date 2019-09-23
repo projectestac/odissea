@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tags', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,17 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['anycollection'] = 'Ein beliebiges';
 $string['anytype'] = 'Alle';
-$string['configtitle'] = 'Blocktitel';
-$string['defaultdisplay'] = 'Angezeigte Schlagwörter';
-$string['disabledtags'] = 'Schlagwörter sind deaktiviert';
-$string['pluginname'] = 'Schlagwörter';
-$string['privacy:metadata'] = 'Der Block Schlagwörter zeigt nur Daten an, die an anderen Orten gespeichert sind.';
+$string['configtitle'] = 'Titel für Block \'Tags\'';
+$string['defaultdisplay'] = 'Tags anzeigen';
+$string['disabledtags'] = 'Tags sind deaktiviert';
+$string['pluginname'] = 'Tags';
+$string['privacy:metadata'] = 'Der Block \'Tags\' zeigt nur Daten an, die an anderen Orten gespeichert sind.';
 $string['recursivecontext'] = 'Abhängigkeiten einbeziehen';
-$string['recursivecontext_help'] = 'Diese Option legt fest, ob Schlagwörter nur aus dem aktuellen Kontext angezeigt werden, aber keine Schlagwörter aus untergeordneten Kontexten. Es können z.B. Schlagwörter des Kurses angezeigt, aber Schlagwörter der Kursaktivitäten ausgeblendet werden.';
-$string['standardonly'] = 'Nur offizielle';
-$string['tagcollection'] = 'Schlagwortgruppe';
-$string['tagcollection_help'] = 'Wählen Sie die Schlagwortgruppe, aus der die Schlagwörter angezeigt werden sollen. Wenn Sie \'beliebige\' auswählen, werden alle Sammlungen außer denen angezeigt, die mit * markiert sind.';
-$string['taggeditemscontext'] = 'Schlagwörter im Kontext';
-$string['taggeditemscontext_help'] = 'Sie können die Schlagwörterwolke auf Schlagwörter beschränken, die nur im aktuellen Kontext (Kursbereich, Kurs, Aktivität) vorhanden sind.';
-$string['tags:addinstance'] = 'Schlagwörter-Block hinzufügen';
-$string['tags:myaddinstance'] = 'Schlagwörter-Block zum Dashboard hinzufügen';
+$string['recursivecontext_help'] = 'Diese Option legt fest, ob Tags nur im aktuellen Kontext angezeigt werden, aber nicht aus untergeordneten Kontexten. Es können z.B. Tags des Kurses angezeigt, aber Tags der Kursaktivitäten ausgeblendet sein.';
+$string['standardonly'] = 'Nur standardmäßige';
+$string['tagcollection'] = 'Tag-Collection';
+$string['tagcollection_help'] = 'Wählen Sie die Collection aus, deren Tags angezeigt werden sollen. Wenn Sie \'beliebige\' auswählen, werden alle Collections außer denen angezeigt, die mit * markiert sind.';
+$string['taggeditemscontext'] = 'Tags im Kontext';
+$string['taggeditemscontext_help'] = 'Sie können die Tag-Cloud auf die Tags beschränken, die nur im aktuellen Kontext (Kursbereich, Kurs, Aktivität) verfügbar sind.';
+$string['tags:addinstance'] = 'Neuen Block \'Tags\' hinzufügen';
+$string['tags:myaddinstance'] = 'Neuen Block \'Tags\' zum Dashboard hinzufügen';

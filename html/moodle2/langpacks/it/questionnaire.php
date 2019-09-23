@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'questionnaire', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,10 @@ $string['activityoverview'] = 'Ci sono questionari che richiedono la tua attenzi
 $string['additionalinfo'] = 'Informazioni aggiuntive';
 $string['additionalinfo_help'] = 'Le informazioni aggiuntive vengono visualizzate nella intestazione della prima pagina del questionario. Sono state pensate per fornire all\'utente al quale il questionario è sottoposto, informazioni di carattere generale quali: istruzioni, informazioni di contesto, dettagli tecnici e/o organizzativi o quant\'altro possa apparire necessario.';
 $string['addnewquestion'] = 'Nuova domanda di tipo: {$a}.';
+$string['addnewsection'] = 'Aggiungi una sezione';
+$string['addquestion'] = 'Aggiungi una domanda...';
 $string['addquestions'] = 'Aggiungi domande';
+$string['addquestiontosection'] = 'Aggiungi una domanda alla sezione';
 $string['addselqtype'] = 'Aggiungi una domanda del tipo selezionato';
 $string['alignment'] = 'Allineamento';
 $string['alignment_help'] = 'Di default, i pulsanti radio sono allineati verticalmente. Se le indicazioni nella lista "Risposte" sono relativamente corte (o numerose) si può scegliere di mostrarle orizzontalmente. <br /><strong>Nota:</strong><br />La correttezza della visualizzazione orizzontale non è garantita su tutti i browsers. Si prega di effettuare delle verifiche personali.';
@@ -89,15 +92,17 @@ $string['configusergraph'] = 'Visualizza i grafici per il feedback del "Test del
 $string['configusergraphlong'] = 'Usa <a href="http://www.rgraph.net/">Rgraph</a>  per visualizzare i grafici del feedback del "Test della personalità".';
 $string['confirmdelallresp'] = 'Sei sicuro di eliminare TUTTE le risposte del questionario?';
 $string['confirmdelchildren'] = 'Eliminando questa domanda, verranno eliminate anche le domande "figlie":';
+$string['confirmdeletesection'] = 'Sei sicuro di eliminare la sezione "{$a}" del feedback?';
 $string['confirmdelgroupresp'] = 'Sei sicuro di eliminare TUTTE le risposte del gruppo {$a}?';
 $string['confirmdelquestion'] = 'Sei sicuro di voler eliminare la domanda alla posizione {$a}?';
 $string['confirmdelquestionresps'] = 'Verranno anche eliminate le {$a} risposte già date.';
 $string['confirmdelresp'] = 'Sei sicuro di eliminare le risposte di {$a} ?';
+$string['confirmremovequestion'] = 'Sei sicuro di eliminare la domanda  "{$a->qname}" dalla sezione "{$a->sname}"?';
 $string['confpage'] = 'Pagina di conferma';
 $string['confpagedesc'] = 'Intestazione (in grassetto) e corpo del testo per la Pagina di Conferma; viene visualizzata dopo che l\'utente ha inviato il questionario. (La URL, se inserita, ha la precedenza sulla conferma testuale)';
 $string['confpage_help'] = 'La <strong>pagina di conferma</strong> verrà visualizzata all\'utente a valle dell\'invio del questionario. Consta di una intestazione (in grassetto) e di un messaggio.<br />
 <strong>Nota:</strong><br /> Un\'eventuale pagina web specifica nel campo URL di questa scheda ha la precedenza su questa opzione. Qualora non si specifichi un URL e neppure si definiscano le opzioni intestazione e messaggio, all\'invio del questionario da parte dell\'utente verrà mostrato il messaggio di default: "Grazie per aver compilato il questionario."';
-$string['contentoptions'] = 'Opzioni per il contenuto';
+$string['contentoptions'] = 'Opzioni del contenuto';
 $string['couldnotcreatenewsurvey'] = 'Impossibile creare un nuovo questionario!';
 $string['couldnotdelresp'] = 'Non è stato possibile eliminare la risposta';
 $string['createcontent'] = 'Definisce nuovo contenuto';
@@ -120,11 +125,13 @@ $string['deletedallresp'] = 'Le risposte al questionario sono state eliminate.';
 $string['deletedisabled'] = 'L\'elemento non può essere eliminato';
 $string['deletedresp'] = 'Risposte eliminate';
 $string['deleteresp'] = 'Elimina questa risposta';
+$string['deletesection'] = 'Elimina sezione';
 $string['deletingresp'] = 'Eliminazione delle risposte';
 $string['dependencies'] = 'Dipendenze';
 $string['dependquestion'] = 'Domanda genitore';
 $string['dependquestion_help'] = 'E\' possibile selezionare una domanda genitore e un\'opzione di scelta per questa domanda. Allo studente verrà visualizzata una domanda figlia"
                  in basse alla scelta operata nella domanda genitore.';
+$string['didnotrespondtoquestion'] = 'Non ha risposto alla domanda';
 $string['directwarnings'] = 'Le dipendenze dirette di questa domanda verranno rimosse. Questo influenzerà:';
 $string['displaymethod'] = 'Il metodo di visualizzazione delle domande non è definito.';
 $string['download'] = 'Download';
@@ -134,6 +141,7 @@ Questo file può essere importato in un programma di foglio di calcolo (ad esemp
 $string['dropdown'] = 'Menu a tendina';
 $string['dropdown_help'] = 'Inserire una opzione di risposta per ogni linea';
 $string['edit'] = 'Modifica';
+$string['editingfeedback'] = 'Modifica impostazioni del feedback';
 $string['editingquestionnaire'] = 'Modifica del questionario - Pagina principale';
 $string['editquestion'] = 'Modifica la domanda di tipo: {$a}';
 $string['email'] = 'Email';
@@ -158,6 +166,7 @@ $string['event_submitted'] = 'Inviate risposte';
 $string['feedback'] = 'Feedback';
 $string['feedbackaddmorefeedbacks'] = 'Aggiungi {no} campi feedback';
 $string['feedbackbysection'] = 'Sezioni di feedback';
+$string['feedbackdefaultlabel'] = '[Nuova sezione]';
 $string['feedbackeditingglobal'] = 'Modifica del Feedback globale del questionario';
 $string['feedbackeditingmessages'] = 'Modifica del Feedback dei messaggi del questionario';
 $string['feedbackeditingsections'] = 'Modifica le sezioni del feedback del questionario';
@@ -196,6 +205,7 @@ $string['feedbacksectionheadingmissing'] = 'Inserire un\'intestazione per la sez
 $string['feedbacksectionheadingtext'] = 'Intestazione';
 $string['feedbacksectionlabel'] = 'Etichetta';
 $string['feedbacksectionlabel_help'] = 'Questa etichetta verrà utilizzata in grafici/diagrammi. Deve essere il più breve possibile!';
+$string['feedbacksectionquestions'] = '{$a} domande della sezione';
 $string['feedbacksections'] = '{$a} sezioni per il feedback';
 $string['feedbacksectionsselect'] = 'Sezioni';
 $string['feedbacksectionsselect_help'] = 'Posiziona le tue domande in queste sezioni';
@@ -216,12 +226,14 @@ $string['horizontal'] = 'Orizzontale';
 $string['id'] = 'ID';
 $string['includechoicecodes'] = 'Sovrascrivi le risposte con il valore dell\'opzione html';
 $string['includechoicetext'] = 'Includi anche i testi delle risposte';
+$string['includeincomplete'] = 'Includi risposte incomplete';
 $string['incorrectcourseid'] = 'ID del corso non corretto';
 $string['incorrectmodule'] = 'ID del modulo non corretto';
 $string['incorrectquestionnaire'] = 'Il questionario non è corretto';
 $string['indirectwarnings'] = 'Lìelenco mostra le domande dipendenti indirette e le dipendenze rimanenti per le domande dipendenti dirette:';
 $string['invalidresponse'] = 'La risposta specificata non è valida.';
 $string['invalidresponserecord'] = 'Il record specificato per la risposta non è corretto.';
+$string['invalidsectionid'] = 'E\' stata specificata una sezione non corretta del feedback.';
 $string['invalidsurveyid'] = 'ID del questionario non corretto';
 $string['kindofratescale'] = 'Tipo di scala';
 $string['kindofratescale_help'] = 'Click con il pulsante destro del mouse sul link "Aiuto ulteriore"';
@@ -257,6 +269,7 @@ $string['myresults'] = 'I miei risultati';
 $string['name'] = 'Nome';
 $string['navigate'] = 'Consenti domande condizionate';
 $string['navigate_help'] = 'Consente alle domande di tipo Sì/No e Pulsanti radio di avere domande figlie dipendenti dalle opzioni selezionate nel questionario.';
+$string['navigatetosection'] = 'Ritorna alla sezione del feedback';
 $string['next'] = 'Prossimo';
 $string['nextpage'] = 'Pagina successiva';
 $string['nlines'] = '{$a} linee';
@@ -365,6 +378,7 @@ $string['privacy:metadata:questionnaire_response_other:choice_id'] = 'ID del rec
 $string['privacy:metadata:questionnaire_response_other:question_id'] = 'ID del record della domanda per questa risposta.';
 $string['privacy:metadata:questionnaire_response_other:response'] = 'Specifica risposta alla domanda di tipo "altro".';
 $string['privacy:metadata:questionnaire_response_other:response_id'] = 'ID del record della risposta.';
+$string['privacy:metadata:questionnaire_response:questionnaireid'] = 'L\'ID del record del questionario per questa risposta.';
 $string['privacy:metadata:questionnaire_response_rank'] = 'Risposta della domanda di tipo "punteggio".';
 $string['privacy:metadata:questionnaire_response_rank:choice_id'] = 'ID del record della scelta per questa risposta.';
 $string['privacy:metadata:questionnaire_response_rank:question_id'] = 'ID del record della domanda per questa risposta.';
@@ -559,10 +573,13 @@ $string['theme'] = 'Tema';
 $string['thismonth'] = 'questo mese';
 $string['thisresponse'] = 'Questa risposta';
 $string['thisweek'] = 'questa settimana';
+$string['thousands'] = 'Non utilizzare il separatore delle migliaia.';
 $string['title'] = 'Titolo';
 $string['title_help'] = 'Il titolo del questionario appare nell\'intestazione di ogni pagina del questionario stesso. Di default il titolo corrisponde al nome del questionario ma, ovviamente, è possibile modificarlo sulla base delle proprie necessità.';
 $string['today'] = 'oggi';
 $string['total'] = 'Totale';
+$string['totalofnumbers'] = 'Totale dei numeri inseriti';
+$string['totalresponses'] = 'Risposte totali al questionario';
 $string['type'] = 'Tipo';
 $string['undefinedquestiontype'] = 'Tipo di domanda non definito!';
 $string['unknown'] = 'Sconosciuto';

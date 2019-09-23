@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['allowresets'] = 'Baimendu berrabiaraztea';
 $string['allowresets_help'] = '\'reset\' eremua onartuko den edo ez.';
 $string['cachedef_helper'] = 'Laguntzailearen cachea';
 $string['cannotdeletecoursenotexist'] = 'Ezin da ezabatu existitzen ez den ikastaroa';
+$string['cannotforcelang'] = 'Ez duzu baimenik ikastaro honetan hizkuntza behartzeko';
 $string['cannotgenerateshortnameupdatemode'] = 'Ezin da izen laburra sortu eguneratzeak baimenduta daudenean';
 $string['cannotreadbackupfile'] = 'Ezin da segurtasun-kopiaren fitxategia irakurri';
 $string['cannotrenamecoursenotexist'] = 'Ezin da berrizendatu existitzen ez den ikastaroa';

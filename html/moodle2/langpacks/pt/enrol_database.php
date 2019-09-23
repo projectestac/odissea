@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_database', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,7 +64,7 @@ $string['privacy:metadata'] = 'O módulo Base de dados externa não armazena qua
 $string['remotecoursefield'] = 'Nome do campo "Disciplina" na tabela externa';
 $string['remotecoursefield_desc'] = 'Nome do campo na tabela externa que é usado na sincronização com a tabela de disciplinas do Moodle.';
 $string['remoteenroltable'] = 'Nome da tabela externa de inscrições';
-$string['remoteenroltable_desc'] = 'Nome da tabela externa que contém as inscrições dos utilizadores. Se este campo estiver vazio as inscrições dos utilizadores não serão sincronizadas,';
+$string['remoteenroltable_desc'] = 'Nome da tabela externa que contém as inscrições dos utilizadores. Se este campo estiver vazio as inscrições dos utilizadores não serão sincronizadas.';
 $string['remoteotheruserfield'] = 'Campo Outro utilizador remoto';
 $string['remoteotheruserfield_desc'] = 'O nome do campo na tabela remota que está a ser usada para assinalar atribuições do papel "Outro utilizador".';
 $string['remoterolefield'] = 'Nome do campo "Papel" na tabela externa';

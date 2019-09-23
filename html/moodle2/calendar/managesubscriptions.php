@@ -129,6 +129,10 @@ $params = [];
 $usedefaultfilters = true;
 if (!empty($courseid) && $courseid == SITEID && !empty($types['site'])) {
     $searches[] = "(eventtype = 'site')";
+    $usedefaultfilters = false;
+}
+
+if (!empty($types['user'])) {
     $searches[] = "(eventtype = 'user' AND userid = :userid)";
     $params['userid'] = $USER->id;
     $usedefaultfilters = false;
@@ -170,7 +174,7 @@ if ($usedefaultfilters) {
 
     if (!empty($types['category'])) {
         list($categoryinsql, $categoryparams) = $DB->get_in_or_equal(
-                array_keys(\coursecat::make_categories_list('moodle/category:manage')), SQL_PARAMS_NAMED, 'category');
+                array_keys(\core_course_category::make_categories_list('moodle/category:manage')), SQL_PARAMS_NAMED, 'category');
         $searches[] = "(eventtype = 'category' AND categoryid {$categoryinsql})";
         $params += $categoryparams;
     }

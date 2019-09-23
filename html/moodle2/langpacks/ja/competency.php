@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'competency', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'コンピテンシー評定はコ�
 $string['evidence_manualoverrideinplan'] = 'コンピテンシー評定は学習プラン「 {$a} 」で手動設定されました。';
 $string['invalidevidencedesc'] = '無効なエビデンス説明';
 $string['invalidgrade'] = '無効な評定';
-$string['invalidpersistent'] = '無効な持続性です。';
 $string['invalidpersistenterror'] = 'エラー: {$a}';
 $string['invalidplan'] = '無効な学習プラン';
 $string['invalidtaxonomy'] = '無効な分類: {$a}';

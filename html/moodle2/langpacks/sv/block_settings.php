@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_settings', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   block_settings
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['enabledock'] = 'Tillåt användare att docka det här blocket';
 $string['pluginname'] = 'Inställningar';
 $string['settings:addinstance'] = 'Lägg till blocket Inställningar';
-$string['settings:myaddinstance'] = 'Lägg till ett nytt block för Inställningar till Mitt Moodle';
+$string['settings:myaddinstance'] = 'Lägg till ett nytt block för Inställningar på Mitt Moodle';

@@ -30,6 +30,8 @@ class com_wiris_quizzes_impl_SubQuestionInstance extends com_wiris_quizzes_impl_
 	}
 	public function setParameter($name, $value) {
 	}
+	public function setAuxiliarText($text) {
+	}
 	public function setCasSession($session) {
 	}
 	public function setRandomSeed($seed) {

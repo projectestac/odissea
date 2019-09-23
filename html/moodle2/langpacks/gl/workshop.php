@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,11 +61,11 @@ $string['assessmentdeleted'] = 'Avaliación desasignada';
 $string['assessmentend'] = 'Data límite de avaliacións';
 $string['assessmentendbeforestart'] = 'A data límite de avaliacións non pode ser anterior á data de comezo da avaliación';
 $string['assessmentenddatetime'] = 'Data límite da avalición: {$a->daydatetime} ({$a->distanceday})';
-$string['assessmentendevent'] = '{$a} (data límite das avaliacións)';
+$string['assessmentendevent'] = '{$a} (data límite para a avaliación)';
 $string['assessmentform'] = 'Forma de avaliación';
 $string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Avaliación</a> de <a href="{$a->submissionurl}">{$a->submissiontitle}</a>';
 $string['assessmentreference'] = 'Avaliación de referencia';
-$string['assessmentreferenceconflict'] = 'Non é posíbel avaliar unha entrega de exemplo para que xa fixo unha avaliación de de referencia.';
+$string['assessmentreferenceconflict'] = 'Non é posíbel avaliar unha entrega de exemplo para que xa fixo unha avaliación de referencia.';
 $string['assessmentreferenceneeded'] = 'Ten que avaliar esta entrega de exemplo, para proporcionar unha avaliación de referencia. Prema no botón «Continuar» para avaliar a entrega.';
 $string['assessments'] = 'Avaliacións';
 $string['assessmentsettings'] = 'Axustes da avaliación';
@@ -117,7 +117,7 @@ $string['err_wrongfileextension'] = 'Algúns ficheios ({$a->wrongfiles}) non pod
 $string['evaluategradeswait'] = 'Agarde ata que se teñan feito as avaliacións e calculado as cualificacións';
 $string['evaluation'] = 'Cualificación das avaliacións';
 $string['evaluationmethod'] = 'Método de cualificación das avaliacións';
-$string['evaluationmethod_help'] = 'O método de cualificación  das avaliacións determina como se calculan as cualificacións nas avaliacións. Pode deixar que se volvan calcular as cualificacións segundo diferentes axustes a non ser que xa estea satisfeito co resultado.';
+$string['evaluationmethod_help'] = 'O método de cualificación das avaliacións determina como se calculan as cualificacións nas avaliacións. Pode deixar que se volvan calcular as cualificacións segundo diferentes axustes a non ser que xa estea satisfeito co resultado.';
 $string['evaluationsettings'] = 'Axustes da cualificación das avaliacións';
 $string['eventassessableuploaded'] = 'Foi enviada unha entrega.';
 $string['eventassessmentevaluated'] = 'Avaliación verificada';
@@ -313,7 +313,7 @@ $string['strategy_help'] = 'A estratexia de cualificación determina a forma de 
  * Comentarios - Fanse comentarios sobre aspectos específicos, mais non se outorga cualificación.
  * Número de erros - Realízanse comentarios e unha cualificación tipo si/non sobre as afirmacións realizadas.
  * Rúbrica - Realizase unha avaliación de nivel respecto aos criterios especificados';
-$string['submission'] = 'Envío';
+$string['submission'] = 'Entrega';
 $string['submissionattachment'] = 'Anexo';
 $string['submissionby'] = 'Entregado por {$a}';
 $string['submissioncontent'] = 'Contido da entrega';
@@ -339,6 +339,7 @@ $string['submissionstart'] = 'Comezo dos envíos';
 $string['submissionstartdatetime'] = 'Aberto para entregas desde {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} (comezo dos envíos)';
 $string['submissiontitle'] = 'Título';
+$string['submissiontypedisabled'] = 'Este tipo de entrega está desactivado para este obradoiro.';
 $string['submittednotsubmitted'] = 'Entregado ({$a->submitted}) / en entregar ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Método de asignación de entregas';
 $string['subplugintype_workshopallocation_plural'] = 'Métodos de asignación de entregas';
@@ -414,7 +415,6 @@ $string['workshop:viewauthornames'] = 'Ver os nomes dos autores';
 $string['workshop:viewauthorpublished'] = 'Ver os autores das entregas publicadas';
 $string['workshop:viewpublishedsubmissions'] = 'Ver as entregas publicadas';
 $string['workshop:viewreviewernames'] = 'Ver os nomes dos revisores';
-$string['yourassessment'] = 'A súa avaliación';
 $string['yourassessmentfor'] = 'A súa avaliación para {$a}';
 $string['yourgrades'] = 'A súa cualificación';
 $string['yoursubmission'] = 'A súa entrega';

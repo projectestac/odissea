@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,15 +42,11 @@ $string['flag'] = 'Flagga';
 $string['flagasinappropriate'] = 'Flagga som olämplig';
 $string['helprelatedtags'] = 'Kommaseparerade rubriker som är relaterade';
 $string['id'] = 'id';
-$string['manageofficialtags'] = 'Administrera officiella etiketter';
 $string['managetags'] = 'Administrera rubriker för intressen';
 $string['moretags'] = 'mer...';
 $string['name'] = 'Namn på etikett';
 $string['namesalreadybeeingused'] = 'Namn på etiketter som redan är tagna i bruk';
 $string['noresultsfor'] = 'Inget resultat för  "{$a}"';
-$string['officialtag'] = 'Officiell etikett';
-$string['otags'] = 'Officiella etiketter';
-$string['othertags'] = 'Övriga etiketter (skriv in etiketter separerade med komman)';
 $string['owner'] = 'Ägare';
 $string['page-tag-x'] = 'Alla etikettsidor';
 $string['ptags'] = 'Etiketter som har definierats av användare (kommaseparerade)';
@@ -69,10 +65,8 @@ $string['seeallblogs'] = 'Visa alla blogginlägg med den här etiketten  "{$a}".
 $string['select'] = 'Välj';
 $string['tag'] = 'Rubrik för intresse';
 $string['tagdescription'] = 'Beskrivning av rubrik för intresse';
-$string['taggedwith'] = 'med den här etiketten  "{$a}"';
 $string['tags'] = 'Rubriker för intressen';
 $string['tagsaredisabled'] = 'Rubriker för intressen är avaktiverade';
-$string['tagtype'] = 'Typ av etikett';
 $string['thingstaggedwith'] = '"{$a->name}" har använts {$a->count} gånger';
 $string['thingtaggedwith'] = '"{$a->name}" har använts en gång';
 $string['timemodified'] = 'Modifierad';

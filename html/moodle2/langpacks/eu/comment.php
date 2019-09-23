@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'comment', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'comment', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   comment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,4 @@ $string['commentsubcontext'] = 'Iruzkinak';
 $string['privacy:metadata:comment'] = 'Erabiltzaileen iruzkinak biltzen ditu.';
 $string['privacy:metadata:comment:content'] = 'Iruzkinaren testua biltzen du.';
 $string['privacy:metadata:comment:timecreated'] = 'Iruzkina sortu zeneko unea.';
-$string['privacy:metadata:comment:userid'] = 'Iruzkina egin duen erabiltzailea';
+$string['privacy:metadata:comment:userid'] = 'Iruzkina egin duen erabiltzailea.';

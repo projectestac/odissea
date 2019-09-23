@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'book', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,12 +55,13 @@ $string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασί
 $string['modulename'] = 'Βιβλίο';
 $string['modulename_help'] = 'Το άρθρωμα βιβλίου δίνει τη δυνατότητα σε έναν διδάσκοντα να δημιουργήσει έναν πόρο πολλών σελίδων σε μορφή βιβλίου, με κεφάλαια και υποκεφάλαια. Τα βιβλία μπορούν να περιέχουν αρχεία πολυμέσων καθώς και κείμενο και είναι χρήσιμα για την εμφάνιση μακρών αποσπασμάτων πληροφοριών που μπορούν να αναλυθούν σε τμήματα. Ένα βιβλίο μπορεί να χρησιμοποιηθεί:
 
-* Για να εμφανιστεί υλικό ανάγνωσης για μεμονωμένες ενότητες μελέτης
+* Για να εμφανιστεί υλικό ανάγνωσης για μεμονωμένα αρθρώματα μελέτης
 * Ως εγχειρίδιο του προσωπικού ενός τμήματος
 * Ως χαρτοφυλάκιο επίδειξης μαθητικής εργασίας';
+$string['modulename_link'] = 'άρθρωμα/βιβλίο/εμφάνιση';
 $string['modulenameplural'] = 'Βιβλία';
 $string['movechapterdown'] = 'Μετακίνηση κεφαλαίου κάτω «{$a}»';
-$string['movechapterup'] = 'Move chapter up «{$a}»';
+$string['movechapterup'] = 'Μετακίνηση κεφαλαίου πάνω «{$a}»';
 $string['navexit'] = 'Έξοδος από το βιβλίο';
 $string['navimages'] = 'Εικόνες';
 $string['navnext'] = 'Επόμενο';

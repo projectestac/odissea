@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendar', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -95,7 +95,6 @@ $string['explain_site_timeformat'] = '사이트 전체의 시간 표시 형태�
 $string['export'] = '내보내기';
 $string['exportbutton'] = '내보냄';
 $string['exportcalendar'] = '일정 내보냄';
-$string['for'] = '동안';
 $string['fri'] = '금';
 $string['friday'] = '금요일';
 $string['generateurlbutton'] = '일정 URL 가져옴';

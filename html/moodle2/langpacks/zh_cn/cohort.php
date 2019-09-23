@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cohort', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,9 +61,10 @@ $string['eventcohortmemberremoved'] = '用户从群中移除';
 $string['eventcohortupdated'] = '群更新';
 $string['external'] = '外部群';
 $string['idnumber'] = '群ID';
+$string['invalidtheme'] = '群组主题不存在';
 $string['memberscount'] = '群大小';
 $string['name'] = '名称';
-$string['namecolumnmissing'] = 'CSV文件出现了一些问题，请检查它包含的列名称';
+$string['namecolumnmissing'] = 'CSV文件格式有错误。请检查文件包含正确的列表头。请注意上传群组功能仅允许您向现有群组中添加新用户，但不支持从现有群组中删除用户。';
 $string['namefieldempty'] = '字段名称不能为空';
 $string['newidnumberfor'] = '群{$a}的新ID';
 $string['newnamefor'] = '群{$a}的新名称';

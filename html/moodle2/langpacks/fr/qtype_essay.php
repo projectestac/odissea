@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_essay', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Types de fichiers acceptés';
+$string['acceptedfiletypes_help'] = 'Les types de fichiers peuvent être restreints en saisissant une liste d\'extensions de fichiers. Si le champ est laissé vide, tous les types de fichiers sont autorisés.';
 $string['allowattachments'] = 'Permettre des annexes';
 $string['attachmentsoptional'] = 'Les annexes sont optionnelles';
 $string['attachmentsrequired'] = 'Exiger des annexes';
@@ -40,6 +42,7 @@ $string['mustattach'] = 'Si l\'option « Pas de texte en ligne » est choisie 
 $string['mustrequire'] = 'Si l\'option « Pas de texte en ligne » est choisie ou si les réponses sont optionnelles, vous devez exiger au moins une annexe.';
 $string['mustrequirefewer'] = 'Vous ne pouvez pas exiger plus d\'annexes que le nombre que vous autorisez.';
 $string['nlines'] = '{$a} lignes';
+$string['nonexistentfiletypes'] = 'Les types de fichier suivants n\'ont pas été reconnus : {$a}';
 $string['pluginname'] = 'Composition';
 $string['pluginnameadding'] = 'Ajout d\'une question de composition';
 $string['pluginnameediting'] = 'Modification d\'une question de composition';

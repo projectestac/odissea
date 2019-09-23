@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lesson', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -119,7 +119,6 @@ $string['completiontimespent'] = 'L\'estudiant ha de fer aquesta activitat duran
 $string['completiontimespentdesc'] = 'L\'estudiant ha de fer aquesta activitat un mínim de {$a}';
 $string['completiontimespentgroup'] = 'Requereix dedicar-hi un temps';
 $string['conditionsfordependency'] = 'Condició o condicions de dependència';
-$string['configactionaftercorrectanswer'] = 'Acció a realitzar per defecte després d\'una resposta correcta';
 $string['configintro'] = 'Els valors establerts aquí defineixen els valors per defecte que s\'utilitzaran en el formulari de configuració quan es crei una nova activitat de lliçó. Els paràmetres especificats com a avançats només es mostren en clicar l\'enllaç «Mostra\'n més...»';
 $string['configmaxanswers'] = 'Nombre màxim per defecte de respostes per pàgina';
 $string['configmediaclose'] = 'Mostra un botó "Tanca" a la finestra emergent generada per un fitxer multimèdia enllaçat';

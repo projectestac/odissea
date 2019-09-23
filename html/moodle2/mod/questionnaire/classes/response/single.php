@@ -156,13 +156,59 @@ class single extends base {
     }
 
     /**
+     * Provide a template for results screen if defined.
+     * @return mixed The template string or false/
+     */
+    public function results_template() {
+        return 'mod_questionnaire/results_choice';
+    }
+
+    /**
+     * Return the JSON structure required for the template.
+     *
      * @param bool $rids
      * @param string $sort
      * @param bool $anonymous
      * @return string
      */
     public function display_results($rids=false, $sort='', $anonymous=false) {
-        return $this->display_response_choice_results($this->get_results($rids, $anonymous), $rids, $sort);
+        global $DB;
+
+        $rows = $this->get_results($rids, $anonymous);
+        if (is_array($rids)) {
+            $prtotal = 1;
+        } else if (is_int($rids)) {
+            $prtotal = 0;
+        }
+        $numresps = count($rids);
+
+        $responsecountsql = 'SELECT COUNT(DISTINCT r.response_id) ' .
+            'FROM {' . $this->response_table() . '} r ' .
+            'WHERE r.question_id = ? ';
+        $numrespondents = $DB->count_records_sql($responsecountsql, [$this->question->id]);
+
+        if ($rows) {
+            foreach ($rows as $idx => $row) {
+                if (strpos($idx, 'other') === 0) {
+                    $answer = $row->response;
+                    $ccontent = $row->content;
+                    $content = preg_replace(array('/^!other=/', '/^!other/'),
+                        array('', get_string('other', 'questionnaire')), $ccontent);
+                    $content .= ' ' . clean_text($answer);
+                    $textidx = $content;
+                    $this->counts[$textidx] = !empty($this->counts[$textidx]) ? ($this->counts[$textidx] + 1) : 1;
+                } else {
+                    $contents = questionnaire_choice_values($row->content);
+                    $this->choice = $contents->text.$contents->image;
+                    $textidx = $this->choice;
+                    $this->counts[$textidx] = !empty($this->counts[$textidx]) ? ($this->counts[$textidx] + 1) : 1;
+                }
+            }
+            $pagetags = $this->get_results_tags($this->counts, $numresps, $numrespondents, $prtotal, $sort);
+        } else {
+            $pagetags = new \stdClass();
+        }
+        return $pagetags;
     }
 
     /**
@@ -235,16 +281,15 @@ class single extends base {
     /**
      * Return sql and params for getting responses in bulk.
      * @author Guy Thomas
-     * @param int $surveyid
+     * @param int|array $questionnaireids One id, or an array of ids.
      * @param bool|int $responseid
      * @param bool|int $userid
      * @return array
      */
-    public function get_bulk_sql($surveyid, $responseid = false, $userid = false, $groupid = false) {
+    public function get_bulk_sql($questionnaireids, $responseid = false, $userid = false, $groupid = false, $showincompletes = 0) {
         global $DB;
 
-        $sql = $this->bulk_sql($surveyid, $responseid, $userid);
-        $params = [];
+        $sql = $this->bulk_sql();
         if (($groupid !== false) && ($groupid > 0)) {
             $groupsql = ' INNER JOIN {groups_members} gm ON gm.groupid = ? AND gm.userid = qr.userid ';
             $gparams = [$groupid];
@@ -252,13 +297,28 @@ class single extends base {
             $groupsql = '';
             $gparams = [];
         }
+
+        if (is_array($questionnaireids)) {
+            list($qsql, $params) = $DB->get_in_or_equal($questionnaireids);
+        } else {
+            $qsql = ' = ? ';
+            $params = [$questionnaireids];
+        }
+        if ($showincompletes == 1) {
+            $showcompleteonly = '';
+        } else {
+            $showcompleteonly = 'AND qr.complete = ? ';
+            $params[] = 'y';
+        }
+
         $sql .= "
-            AND qr.survey_id = ? AND qr.complete = ?
+            AND qr.questionnaireid $qsql $showcompleteonly
       LEFT JOIN {questionnaire_response_other} qro ON qro.response_id = qr.id AND qro.choice_id = qrs.choice_id
       LEFT JOIN {user} u ON u.id = qr.userid
       $groupsql
         ";
-        $params = array_merge([$surveyid, 'y'], $gparams);
+        $params = array_merge($params, $gparams);
+
         if ($responseid) {
             $sql .= " WHERE qr.id = ?";
             $params[] = $responseid;

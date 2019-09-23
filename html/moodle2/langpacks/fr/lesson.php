@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lesson', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -121,7 +121,6 @@ $string['completiontimespent'] = 'Les étudiants doivent faire cette activité a
 $string['completiontimespentdesc'] = 'L\'étudiant doit travailler sur cette activité durant au moins {$a}';
 $string['completiontimespentgroup'] = 'Exiger une durée minimale';
 $string['conditionsfordependency'] = 'Condition(s) de dépendance';
-$string['configactionaftercorrectanswer'] = 'L\'action à effectuer par défaut après une réponse correcte';
 $string['configintro'] = 'Les données saisies ici définissent les valeurs par défaut utilisées dans la configuration d\'une nouvelle activité Leçon. Les réglages indiqués comme avancés ne sont affichés que le lien « Afficher plus » est cliqué.';
 $string['configmaxanswers'] = 'Nombre maximal par défaut de réponses par page';
 $string['configmediaclose'] = 'Afficher un bouton fermer dans la fenêtre surgissante créée pour un fichier média lié';
@@ -209,6 +208,7 @@ $string['eolstudentoutoftimenoanswers'] = 'vous n\'avez répondu à aucune quest
 $string['essay'] = 'Composition';
 $string['essayemailmessage2'] = '<p>Question ouverte : {$a->question}</p><p>Votre réponse : <em>{$a->response}</em></p><p>Commentaire de l\'évaluateur : <em>{$a->comment}</em></p><p>Vous avez obtenu {$a->earned} points sur un total de {$a->outof} à cette question ouverte.</p><p>Votre note pour cette leçon est maintenant {$a->newgrade} %.</p>';
 $string['essayemailsubject'] = 'Note pour la question de leçon';
+$string['essaynotgradedyet'] = 'La composition n\'a pas encore été évaluée';
 $string['essayresponses'] = 'Compositions';
 $string['essays'] = 'Compositions';
 $string['essayscore'] = 'Score de votre composition';
@@ -249,7 +249,7 @@ $string['gradeis'] = 'La note est {$a}';
 $string['gradeoptions'] = 'Options des notes';
 $string['groupoverrides'] = 'Dérogations de groupe';
 $string['groupoverridesdeleted'] = 'Dérogations de groupe supprimées';
-$string['groupsnone'] = 'Il n\'y a pas de groupe dans ce cours';
+$string['groupsnone'] = 'Il n\'y a pas de groupe auquel vous pouvez accéder.';
 $string['handlingofretakes'] = 'Traitement des différentes tentatives';
 $string['handlingofretakes_help'] = 'Lorsque les étudiants ont le droit de répéter la leçon, ce réglage spécifie si la note de la leçon est la moyenne ou la note de la meilleure tentative.';
 $string['havenotgradedyet'] = 'Pas encore été notée.';
@@ -399,6 +399,7 @@ $string['ongoingcustom'] = 'Vous avez jusqu\'ici reçu {$a->score} sur un maximu
 $string['ongoing_help'] = 'Si ce réglage est activé, l\'étudiant verra sur chaque page, le nombre des points qu\'il a obtenu par rapport au total possible jusqu\'ici.';
 $string['ongoingnormal'] = 'Vous avez répondu correctement à {$a->correct} tentatives sur {$a->viewed}.';
 $string['onpostperpage'] = 'Seulement un message par note';
+$string['openafterclose'] = 'Vous avez indiqué une date d\'ouverture postérieure à la date de fermeture.';
 $string['options'] = 'Options';
 $string['or'] = 'OU';
 $string['ordered'] = 'Ordonnés';
@@ -574,6 +575,7 @@ $string['usepassword_help'] = 'Si ce réglage est activé, un mot de passe doit 
 $string['useroverrides'] = 'Dérogations utilisateur';
 $string['useroverridesdeleted'] = 'Dérogations utilisateur supprimées';
 $string['usersnone'] = 'Aucun étudiant n\'a accès à cette leçon';
+$string['viewessayanswers'] = 'Consultez les réponses de composition';
 $string['viewgrades'] = 'Afficher les notes';
 $string['viewreports'] = 'Afficher les {$a->attempts} tentatives terminées';
 $string['viewreports2'] = 'Afficher les {$a} tentatives terminées';

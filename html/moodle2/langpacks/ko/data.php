@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -261,18 +261,6 @@ $string['movezipfailed'] = 'Zip 파일을 옮길 수 없음';
 $string['multientry'] = '반복되는 게시물';
 $string['multimenu'] = '메뉴(다중 선택)';
 $string['multipletags'] = '범주 중복! 템플릿 저장되지 않음';
-$string['namecheckbox'] = '체크박스 항목';
-$string['namedate'] = '날짜 항목';
-$string['namefile'] = '파일 항목';
-$string['namelatlong'] = '위도/경도 항목';
-$string['namemenu'] = '메뉴 항목';
-$string['namemultimenu'] = '다중 선택 메뉴 항목';
-$string['namenumber'] = '수 항목';
-$string['namepicture'] = '그림 항목';
-$string['nameradiobutton'] = '라디오 버튼 항목';
-$string['nametext'] = '텍스트 항목';
-$string['nametextarea'] = '텍스트 영역 항목';
-$string['nameurl'] = 'URL 항목';
 $string['newentry'] = '새 게시물';
 $string['newfield'] = '새 항목 만들기';
 $string['newfield_help'] = '항목은 데이터 입력을 허용합니다. 데이터베이스 활동의 각 입력 항목은 드롭다운 목록해서 연월일을 선택할 수 있는 날짜 필드, 이미지를 올릴 수 있는 그림 필드, 참여자들이 한개 혹은 여러개의 옵션을 선택할 수 있는 체크박스 필드등의 여러 형식의 다중 필드를 포함할 수 있습니다.

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_cohort', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['cohort:config'] = 'Globale Gruppen konfigurieren';
 $string['cohort:unenrol'] = 'Gesperrte Nutzer/innen aus Kursen abmelden';
 $string['creategroup'] = 'Neue Gruppe anlegen';
 $string['defaultgroupnametext'] = '{$a->name} Globale Gruppe {$a->increment}';
+$string['enrolcohortsynctask'] = 'Synchronisierungsaufgabe der Einschreibung über Globale Gruppen';
 $string['instanceexists'] = 'Globale Gruppe ist bereits mit der gewählten Rolle synchronisiert';
 $string['pluginname'] = 'Globale Gruppe';
 $string['pluginname_desc'] = 'Das Plugin \'Globale Gruppe\' synchronisiert die Mitglieder aus globalen Gruppen mit der Kurseinschreibung';

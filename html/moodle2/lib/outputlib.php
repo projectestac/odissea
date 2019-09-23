@@ -670,6 +670,12 @@ class theme_config {
     public $remapiconcache = [];
 
     /**
+     * The name of the function to call to get precompiled CSS.
+     * @var string
+     */
+    public $precompiledcsscallback = null;
+
+    /**
      * Load the config.php file for a particular theme, and return an instance
      * of this class. (That is, this is a factory method.)
      *
@@ -743,10 +749,11 @@ class theme_config {
             'parents', 'sheets', 'parents_exclude_sheets', 'plugins_exclude_sheets', 'usefallback',
             'javascripts', 'javascripts_footer', 'parents_exclude_javascripts',
             'layouts', 'enable_dock', 'enablecourseajax', 'requiredblocks',
-            'rendererfactory', 'csspostprocess', 'editor_sheets', 'rarrow', 'larrow', 'uarrow', 'darrow',
+            'rendererfactory', 'csspostprocess', 'editor_sheets', 'editor_scss', 'rarrow', 'larrow', 'uarrow', 'darrow',
             'hidefromselector', 'doctype', 'yuicssmodules', 'blockrtlmanipulations',
             'lessfile', 'extralesscallback', 'lessvariablescallback', 'blockrendermethod',
-            'scss', 'extrascsscallback', 'prescsscallback', 'csstreepostprocessor', 'addblockposition', 'iconsystem');
+            'scss', 'extrascsscallback', 'prescsscallback', 'csstreepostprocessor', 'addblockposition',
+            'iconsystem', 'precompiledcsscallback');
 
         foreach ($config as $key=>$value) {
             if (in_array($key, $configurable)) {
@@ -967,6 +974,31 @@ class theme_config {
     }
 
     /**
+     * Compiles and returns the content of the SCSS to be used in editor content
+     *
+     * @return string Compiled CSS from the editor SCSS
+     */
+    public function editor_scss_to_css() {
+        $css = '';
+
+        if (!empty($this->editor_scss)) {
+            $compiler = new core_scss();
+
+            foreach ($this->editor_scss as $filename) {
+                $compiler->set_file("{$this->dir}/scss/{$filename}.scss");
+
+                try {
+                    $css .= $compiler->to_css();
+                } catch (\Exception $e) {
+                    debugging('Error while compiling editor SCSS: ' . $e->getMessage(), DEBUG_DEVELOPER);
+                }
+            }
+        }
+
+        return $css;
+    }
+
+    /**
      * Get the stylesheet URL of this theme.
      *
      * @param moodle_page $page Not used... deprecated?
@@ -1097,7 +1129,13 @@ class theme_config {
                 } else {
                     if ($type === 'theme' && $identifier === self::SCSS_KEY) {
                         // We need the content from SCSS because this is the SCSS file from the theme.
-                        $csscontent .= $this->get_css_content_from_scss(false);
+                        if ($compiled = $this->get_css_content_from_scss(false)) {
+                            $csscontent .= $compiled;
+                        } else {
+                            // The compiler failed so default back to any precompiled css that might
+                            // exist.
+                            $csscontent .= $this->get_precompiled_css_content();
+                        }
                     } else if ($type === 'theme' && $identifier === $this->lessfile) {
                         // We need the content from LESS because this is the LESS file from the theme.
                         $csscontent .= $this->get_css_content_from_less(false);
@@ -1257,13 +1295,22 @@ class theme_config {
      * @return string CSS markup
      */
     public function get_css_content_editor() {
-        // Do not bother to optimise anything here, just very basic stuff.
-        $cssfiles = $this->editor_css_files();
         $css = '';
+        $cssfiles = $this->editor_css_files();
+
+        // If editor has static CSS, include it.
         foreach ($cssfiles as $file) {
             $css .= file_get_contents($file)."\n";
         }
-        return $this->post_process($css);
+
+        // If editor has SCSS, compile and include it.
+        if (($convertedscss = $this->editor_scss_to_css())) {
+            $css .= $convertedscss;
+        }
+
+        $output = $this->post_process($css);
+
+        return $output;
     }
 
     /**
@@ -1482,7 +1529,7 @@ class theme_config {
             // Compile!
             $compiled = $compiler->to_css();
 
-        } catch (\Leafo\ScssPhp\Exception $e) {
+        } catch (\Exception $e) {
             $compiled = false;
             debugging('Error while compiling SCSS: ' . $e->getMessage(), DEBUG_DEVELOPER);
         }
@@ -1492,6 +1539,26 @@ class theme_config {
         unset($compiler);
 
         return $compiled;
+    }
+
+    /**
+     * Return the precompiled CSS if the precompiledcsscallback exists.
+     *
+     * @return string Return compiled css.
+     */
+    public function get_precompiled_css_content() {
+        $configs = array_reverse($this->parent_configs) + [$this];
+        $css = '';
+
+        foreach ($configs as $config) {
+            if (isset($config->precompiledcsscallback)) {
+                $function = $config->precompiledcsscallback;
+                if (function_exists($function)) {
+                    $css .= $function($this);
+                }
+            }
+        }
+        return $css;
     }
 
     /**

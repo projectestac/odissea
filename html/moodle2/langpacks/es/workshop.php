@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -242,6 +242,7 @@ $string['privacy:metadata:assessmentid'] = 'Identificador de la evaluación';
 $string['privacy:metadata:authorid'] = 'Identificador del autor del envío';
 $string['privacy:metadata:feedbackauthor'] = 'Comentario para el autor';
 $string['privacy:metadata:feedbackauthorformat'] = 'Formato de texto para el comentario para el autor';
+$string['privacy:request:delete:title'] = '[Eliminado]';
 $string['publishedsubmissions'] = 'Envíos publicados';
 $string['publishsubmission'] = 'Publicar envío';
 $string['publishsubmission_help'] = 'Los envíos publicados estarán disponibles para los demás cuando el taller esté cerrado.';
@@ -378,7 +379,6 @@ $string['workshop:viewauthornames'] = 'Ver el nombre de los autores';
 $string['workshop:viewauthorpublished'] = 'Ver los autores de los envíos publicados';
 $string['workshop:viewpublishedsubmissions'] = 'Ver los envíos publicados';
 $string['workshop:viewreviewernames'] = 'Ver los nombres de los evaluadores';
-$string['yourassessment'] = 'Su evaluación';
 $string['yourassessmentfor'] = 'Su valoración para {$a}';
 $string['yourgrades'] = 'Sus calificaciones';
 $string['yoursubmission'] = 'Su envío';

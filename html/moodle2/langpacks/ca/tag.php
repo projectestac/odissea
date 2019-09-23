@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = 'Arreu';
 $string['inputstandardtags'] = 'Introduïu la llista separada per comes de les etiquetes noves';
 $string['itemstaggedwith'] = '{$a->tagarea} etiquetada amb «{$a->tag}»';
 $string['lesstags'] = 'menys...';
-$string['manageofficialtags'] = 'Gestiona les etiquetes oficials';
 $string['managestandardtags'] = 'Gestiona les etiquetes estàndards';
 $string['managetagcolls'] = 'Gestiona les col·leccions d\'etiquetes';
 $string['managetags'] = 'Gestiona les etiquetes';
@@ -94,9 +93,6 @@ $string['nextpage'] = 'Més';
 $string['noresultsfor'] = 'Cap resultat per a "{$a}"';
 $string['notagsfound'] = 'No s\'han trobat etiquetes coincidents amb «{$a}»';
 $string['nothingtoupdate'] = 'Res per actualitzar';
-$string['officialtag'] = 'Etiqueta oficial';
-$string['otags'] = 'Etiquetes oficials';
-$string['othertags'] = 'Altres etiquetes (introduïu les etiquetes separades per comes)';
 $string['owner'] = 'Propietari';
 $string['page-tag-index'] = 'Pàgina amb una sola etiqueta.';
 $string['page-tag-manage'] = 'Gestiona la pàgina d\'etiquetes';
@@ -125,7 +121,6 @@ $string['selectmaintag'] = 'Seleccioneu l\'etiqueta que es farà servir després
 $string['selectmultipletags'] = 'Seleccioneu més d\'una etiqueta';
 $string['selecttag'] = 'Selecciona l\'etiqueta {$a}';
 $string['settypedefault'] = 'Elimineu de les etiquetes estàndards';
-$string['settypeofficial'] = 'Fes oficial';
 $string['settypestandard'] = 'Feu estàndard';
 $string['showingfirsttags'] = 'S\'estan mostrant les {$a} etiquetes més populars';
 $string['showstandard'] = 'Ús de les etiquetes estàndard';
@@ -148,10 +143,8 @@ $string['tagcollection'] = 'Col·lecció d\'etiquetes';
 $string['tagcollection_help'] = 'Les col·leccions d\'etiquetes són un conjunt d\'etiquetes per a diferents àrees. Per exemple, una col·lecció d\'etiquetes estàndard es pot utilitzar per etiquetar cursos amb els interessos de l\'usuari, i les etiquetes d\'entrades de blogs es poden mantenir en una col·lecció separada.  Quan un usuari fa clic a una etiqueta, la pàgina d\'etiquetes mostra només els elements amb aquesta etiqueta en la mateixa col·lecció. Les etiquetes es poden afegir automàticament a una col·lecció, d\'acord amb l\'àrea d\'etiquetatge, o es poden afegir manualment com a etiquetes estàndard.';
 $string['tagcollections'] = 'Col·leccions d\'etiquetes';
 $string['tagdescription'] = 'Descripció de l\'etiqueta';
-$string['taggedwith'] = 'etiquetat amb "{$a}"';
 $string['tags'] = 'Etiquetes';
 $string['tagsaredisabled'] = 'Les etiquetes estan inhabilitades';
-$string['tagtype'] = 'Tipus d\'etiqueta';
 $string['thingstaggedwith'] = '{$a->count} elements amb l\'etiqueta "{$a->name}"';
 $string['thingtaggedwith'] = '"{$a->name}" s\'ha utilitzat una vegada';
 $string['timemodified'] = 'Modificat';

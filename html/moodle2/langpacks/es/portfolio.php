@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['configure'] = 'Configurar';
 $string['confirmcancel'] = '¿Está seguro de que desea cancelar esta exportación?';
 $string['confirmexport'] = 'Por favor, confirme esta exportación';
 $string['confirmsummary'] = 'Resumen de su exportación';
-$string['continuetoportfolio'] = 'Continuar con el portafolios';
+$string['continuetoportfolio'] = 'Ir a tu portafolio';
 $string['deleteportfolio'] = 'Eliminar ejemplo de portafolios';
 $string['destination'] = 'Destino';
 $string['disabled'] = 'Lo sentimos, pero las exportaciones de portafolios están deshabilitadas en este sitio';
@@ -53,7 +53,7 @@ $string['displayarea'] = 'Área de exportación';
 $string['displayexpiry'] = 'Tiempo de expiración de la transferencia';
 $string['displayinfo'] = 'Información sobre la exportación';
 $string['dontwait'] = 'No esperar';
-$string['enabled'] = 'Portafolios disponibles';
+$string['enabled'] = 'Habilitar portafolios';
 $string['enableddesc'] = 'Esta opción permite a los administradores configurar sistemas remotos para que los usuarios exporten contenidos a ellos';
 $string['err_uniquename'] = 'El nombre del portafolios debe ser único (por plugin)';
 $string['exportalreadyfinished'] = 'Se ha completado la exportación del portafolios';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mnet', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -138,7 +138,7 @@ $string['mnetpeers'] = 'Nodi';
 $string['mnetservices'] = 'Servizi';
 $string['mnet_session_prohibited'] = 'Agli utenti del tuo server non è al momento consentito l\'accesso ad {$a}.';
 $string['mnetsettings'] = 'Impostazioni MNet';
-$string['moodle_home_help'] = 'Il percorso alla pagina home dell\'applicazione MNet sul host remoto, per es. /moodle/';
+$string['moodle_home_help'] = 'Il percorso della pagina home dell\'applicazione MNet sul host remoto, per es. /moodle/';
 $string['name'] = 'Nome';
 $string['net'] = 'Networking';
 $string['networksettings'] = 'Importazioni networking';
@@ -184,7 +184,7 @@ $string['publickey'] = 'Chiave pubblica';
 $string['publickey_help'] = 'La chiave pubblica viene ottenuta automaticamente dal server remoto.';
 $string['publickeyrequired'] = 'Devi fornire una chiave pubblica.';
 $string['publish'] = 'Offri il servizio';
-$string['reallydeleteserver'] = 'Sei sicuro di voler eliminare il server';
+$string['reallydeleteserver'] = 'Sei sicuro di eliminare il server?';
 $string['receivedwarnings'] = 'Sono stati ricevuti i seguenti messaggi di attenzione';
 $string['recordnoexists'] = 'Il record non esiste.';
 $string['reenableserver'] = 'No - seleziona questa opzione per ri-abilitare il server.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'completion', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -98,7 +98,7 @@ $string['completionnotenabledforcourse'] = 'Il completamento non è abilitato in
 $string['completionnotenabledforsite'] = 'Il completamento non è abilitato in questo sito';
 $string['completion-n-override'] = 'Non completato: (impostato da {$a})';
 $string['completionondate'] = 'Data';
-$string['completionondatevalue'] = 'L\'utente deve rimanere iscritto fino al';
+$string['completionondatevalue'] = 'Data nella quale il corso sarà contrassegnato come completato';
 $string['completion-pass'] = 'Completato (raggiunta la sufficienza)';
 $string['completionsettingslocked'] = 'Impostazioni di completamento bloccate';
 $string['completion-title-manual-n'] = 'Spunta come completata: {$a}';
@@ -106,7 +106,7 @@ $string['completion-title-manual-y'] = 'Spunta come non completata: {$a}';
 $string['completionupdated'] = 'Il completamento dell\'attività <b>{$a}</b> è stato aggiornato';
 $string['completionusegrade'] = 'Valutazione';
 $string['completionusegrade_desc'] = 'Lo studente deve ricevere una valutazione per completare l\'attività';
-$string['completionusegrade_help'] = 'L\'attività dello studente sarà completata quando avrà ricevuto una valutazione. Impostando un voto minimo, saranno visualizzate icone di superamento o di non superamento.';
+$string['completionusegrade_help'] = 'L\'attività dello studente sarà completata quando avrà ricevuto una valutazione. Impostando una sufficienza, saranno visualizzate icone di superamento o di non superamento.';
 $string['completionview'] = 'Visualizzazione';
 $string['completionview_desc'] = 'Lo studente deve accedere all\'attività per completarla.';
 $string['completion-y'] = 'Completato';

@@ -222,6 +222,10 @@ class H5PReportXAPIData {
         $additionals['extensions'] = $this->getObjectDefinition('extensions', (object)array());
     }
 
+    // Add context extensions
+    $additionals['contextExtensions'] = isset($this->statement->context->extensions)
+      ? $this->statement->context->extensions : new stdClass();
+
     return (empty($additionals) ? '' : json_encode($additionals));
   }
 

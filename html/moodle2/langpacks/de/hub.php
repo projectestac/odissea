@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hub', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['audienceadmins'] = 'Administrator/innen';
 $string['audienceeducators'] = 'Lehrende';
 $string['audience_help'] = 'Angestrebte Zielgruppe des Kurses';
 $string['audiencestudents'] = 'Lernende';
-$string['badgesnumber'] = 'Anzahl der Auszeichnungen ({$a})';
+$string['badgesnumber'] = 'Anzahl der Badges ({$a})';
 $string['badurlformat'] = 'Falsches URL-Format';
 $string['cannotsearchcommunity'] = 'Sie haben nicht die nötigen Rechte, diese Seite zu sehen.';
 $string['community'] = 'Community';
@@ -89,7 +89,7 @@ $string['edulevelother'] = 'Andere';
 $string['edulevelprimary'] = 'Primarstufe';
 $string['edulevelsecondary'] = 'Sekundarstufe';
 $string['eduleveltertiary'] = 'Berufsausbildung';
-$string['emailalert'] = 'E-Mail-Benachrichtigungen';
+$string['emailalert'] = 'E-Mail-Systemnachrichten';
 $string['emailalert_help'] = 'Wenn dies aktiviert ist, kann der Administrator Sie per Mail über Sicherheitsaspekte und andere wichtige Neuigkeiten informieren.';
 $string['enrollable'] = 'Einschreibbar';
 $string['errorbadimageheightwidth'] = 'Das Bild sollte folgende Maximalgröße haben {$a->width}px x {$a->height}px';
@@ -116,14 +116,14 @@ $string['hub'] = 'Hub';
 $string['imageurl'] = 'Bild-URL';
 $string['imageurl_help'] = 'Das Bild wird auf dem Hub angezeigt. Dieses Bild muss vom Hub aus jederzeit erreichbar sein. Die maximale Göße sollte {$a->width} x {$a->height} Pixel sein.';
 $string['information'] = 'Information';
-$string['issuedbadgesnumber'] = 'Anzahl der erteilten Auszeichnungen ({$a})';
+$string['issuedbadgesnumber'] = 'Anzahl der verliehenen Badges ({$a})';
 $string['language'] = 'Sprache';
 $string['language_help'] = 'Hauptsprache dieses Kurses';
 $string['lasttimechecked'] = 'Letztes mal geprüft';
 $string['licence'] = 'Lizenz';
 $string['licence_help'] = 'Wählen Sie eine Lizenz aus, unter der Sie Ihren Kurs bereitstellen möchten.';
 $string['logourl'] = 'Logo-URL';
-$string['mobilenotificationsenabled'] = 'Mobile Mitteilungen aktiviert ({$a})';
+$string['mobilenotificationsenabled'] = 'Mobile Systemnachrichten aktiviert ({$a})';
 $string['mobileservicesenabled'] = 'Mobile Dienste aktiviert ({$a})';
 $string['modulenumberaverage'] = 'Durchschnittliche Anzahl von Kursmodulen ({$a})';
 $string['moodleorg'] = 'Moodle';
@@ -167,7 +167,7 @@ $string['publishon'] = 'Veröffentlichen auf';
 $string['publishonspecifichub'] = 'Auf einem anderen Hub veröffentlichen';
 $string['questionsnumber'] = 'Anzahl der Fragen ({$a})';
 $string['readvertiseon'] = 'Informationen auf {$a} aktualisieren';
-$string['registeredactiveuserdevices'] = 'Anzahl von aktiven Nutzer/innen mit registrierten mobilen Geräten, die Mitteilungen empfangen ({$a})';
+$string['registeredactiveuserdevices'] = 'Anzahl von aktiven Nutzer/innen mit registrierten mobilen Geräten, die Systemnachrichten empfangen ({$a})';
 $string['registeredcourses'] = 'Registrierte Kurse';
 $string['registeredmoodleorg'] = 'Moodle ({$a})';
 $string['registeredon'] = 'Wo Ihre Wesite registriert ist';
@@ -234,7 +234,7 @@ $string['siteprivacypublished'] = 'Nur den Namen der Website veröffentlichen';
 $string['siteregconfcomment'] = 'Ihre Website braucht eine endgültige Bestätigung auf {$a} (zur Vermeidung von Spam)';
 $string['siteregistrationcontact'] = 'Kontaktformular anzeigen';
 $string['siteregistrationcontact_help'] = 'Wenn diese Option aktiviert ist, können andere Personen über ein Kontaktformular auf dem Hub mit Ihnen in Kontakt treten. Ihre E-Mail-Adresse wird niemals angezeigt.';
-$string['siteregistrationemail'] = 'Benachrichtigungen über wichtige Sicherheitsfragen und technische Aspekte';
+$string['siteregistrationemail'] = 'Systemnachrichten über wichtige Sicherheitsfragen und technische Aspekte';
 $string['siteregistrationemail_help'] = 'Sie haben die Möglichkeit, sich in unsere E-Mail-Benachrichtigungsliste für wichtige informationen über technische Fragen und Sicherheitsaspekte einzutragen. Wir werden nur sehr selten Benachrichtigungen versenden.';
 $string['siteregistrationupdated'] = 'Seitenregistrierung aktualisiert';
 $string['siterelease'] = 'Moodle-Release';
@@ -255,8 +255,8 @@ $string['statuspublished'] = 'Gelistet';
 $string['statusunpublished'] = 'Nicht gelistet';
 $string['subject'] = 'Thema';
 $string['subject_help'] = 'Wählen Sie  des Hauptthema des Kurses aus.';
-$string['tags'] = 'Schlagwörter';
-$string['tags_help'] = 'Schlagwörter helfen, Ihren Kurs zu kategorisieren und ihn wiederzufinden. Verwenden Sie ausschließlich einfache und aussagekräftige Wörter. Trennen Sie mehrere Schlagwörter mit einem Komma, z.B. Mathematik, Algebra, Geometrie';
+$string['tags'] = 'Tags';
+$string['tags_help'] = 'Tags helfen, Ihren Kurs zu kategorisieren und ihn wiederzufinden. Verwenden Sie ausschließlich einfache und aussagekräftige Wörter. Trennen Sie mehrere Tags mit einem Komma, z.B. Mathematik, Algebra, Geometrie';
 $string['trustme'] = 'Vertrauen';
 $string['type'] = 'Geteilt';
 $string['unknownstatus'] = 'Unbekannt';

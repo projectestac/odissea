@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_s3', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_s3', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_s3
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,6 @@ $string['configplugin'] = 'Amazon S3-ren ezarpenak';
 $string['endpoint'] = 'Amazon S3  amaiera-puntua';
 $string['needaccesskey'] = 'Sarbide-gitza lortu behar da';
 $string['pluginname'] = 'Amazon S3';
-$string['privacy:metadata'] = 'Amazon S3 biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata'] = 'Amazon S3 biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
 $string['s3:view'] = 'Ikusi Amazon S3 biltegia';
 $string['secret_key'] = 'Giltza sekretua';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_image', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['enteralt'] = 'Describe this image for someone who cannot see it';
 $string['enterurl'] = 'Enter URL';
 $string['height'] = 'Height';
 $string['imageproperties'] = 'Image properties';
-$string['pluginname'] = 'Image';
+$string['pluginname'] = 'Insert or edit image';
 $string['presentation'] = 'Description not necessary';
 $string['presentationoraltrequired'] = 'Images must have a description, except if the description is marked as not necessary.';
 $string['preview'] = 'Preview';

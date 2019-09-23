@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopallocation_scheduled', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopallocation_scheduled
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['currentstatusexecution3'] = 'Προς εκτέλεση στις {$a->da
 $string['currentstatusexecution4'] = 'Σε αναμονή εκτέλεσης';
 $string['currentstatusnext'] = 'Επόμενη εκτέλεση';
 $string['currentstatusnext_help'] = 'Σε ορισμένες περιπτώσεις, η εκχώρηση προγραμματίζεται να εκτελεστεί αυτόματα και πάλι, ακόμη και αν εκτελούνταν ήδη. Αυτό μπορεί να συμβεί, για παράδειγμα, αν παρατάθηκε η προθεσμία υποβολής.';
-$string['currentstatusreset'] = 'Επαναφορά';
+$string['currentstatusreset'] = 'Αρχικοποίηση';
 $string['currentstatusreset_help'] = 'Η αποθήκευση της φόρμας με αυτό το πλαίσιο ελέγχου επιλεγμένο θα έχει ως αποτέλεσμα να επαναρχικοποιηθεί η τρέχουσα κατάσταση. Όλες οι πληροφορίες για την προηγούμενη εκτέλεση θα διαγραφούν ώστε η εκχώρηση να μπορεί να εκτελεστεί ξανά (αν επιτραπεί παραπάνω).';
 $string['currentstatusresetinfo'] = 'Επιλέξτε το πλαίσιο και αποθηκεύστε τη φόρμα για να επαναφέρετε το αποτέλεσμα εκτέλεσης';
 $string['currentstatusresult'] = 'Πρόσφατο αποτέλεσμα εκτέλεσης';

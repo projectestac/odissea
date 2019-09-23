@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['assignmentdisabled'] = 'Il modulo di attività obsoleto "Compito 2.2" �
 $string['assignment:exportownsubmission'] = 'Esportare la propria consegna';
 $string['assignment:exportsubmission'] = 'Esportare consegna';
 $string['assignment:grade'] = 'Valutare compito';
-$string['assignmentneedsupgrade'] = 'Il modulo di attività obsoleto "Compito 2.2" è stato disabilitato. Per favore richiedi all\'amministratore del sito di utilizzare l\'Assistente per l\'aggiornamento dei compiti.';
+$string['assignmentneedsupgrade'] = 'Il modulo di attività obsoleto "Compito 2.2" è stato rimosso.';
 $string['assignment:submit'] = 'Consegnare compito';
 $string['assignment:view'] = 'Visualizzare compito';
 $string['messageprovider:assignment_updates'] = 'Notifiche compito (2.2)';
@@ -60,4 +60,3 @@ $string['privacy:metadata:assignment_submissions:timemodified'] = 'Data/ora di m
 $string['privacy:metadata:assignment_submissions:userid'] = 'ID dell\'utente che ha effettuato la consegna';
 $string['privacy:submissionpath'] = 'consegna';
 $string['upgradenotification'] = 'Questa attività si basa su un modulo compito obsoleto.';
-$string['viewassignmentupgradetool'] = 'Visualizza l\'assistente per l\'aggiornamento dei compiti';

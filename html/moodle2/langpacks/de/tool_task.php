@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_task', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['asap'] = 'ASAP';
 $string['backtoscheduledtasks'] = 'Zurück zu den geplanten Vorgängen';
 $string['blocking'] = 'Blockierend';
+$string['cannotfindthepathtothecli'] = 'Der Pfad zum Ausführen von PHP CLI wurde auf dem Server  nicht gefunden. Die Ausführung wurde daher abgebrochen. Tragen Sie den richtigen Pfad unter "Pfad für PHP CLI" ein unter Website Administration - Server - Systempfade';
+$string['clearfaildelay_confirm'] = 'Möchten Sie die Fehlerverzögerung für den Vorgang \'{$a}\' wirklich löschen? Nach dem Löschen wird der Vorgang gemäß seinem normalen Zeitplan ausgeführt.';
 $string['component'] = 'Komponente';
 $string['corecomponent'] = 'Kern';
 $string['default'] = 'Standard';
@@ -35,7 +37,7 @@ $string['disabled'] = 'Deaktiviert';
 $string['disabled_help'] = 'Deaktivierte geplante Vorgänge werden vom Cronjob nicht ausgeführt, können aber manuell über die Kommandozeile gestartet werden.';
 $string['edittaskschedule'] = 'Geplanten Vorgang bearbeiten: {$a}';
 $string['enablerunnow'] = '\'Sofort ausführen\' von geplanten Vorgängen erlauben';
-$string['enablerunnow_desc'] = 'Diese Option ermöglicht es Administratoren, einen einzelnen geplanten Vorgang sofort auszuführen, ohne auf den planmäßigen Termin zu warten. Ein solcher Vorgang läuft auf dem Webserver, so dass diese Option deaktiviert sein könnte, um Leistungseinbrüche zu vermeiden.';
+$string['enablerunnow_desc'] = 'Diese Option ermöglicht es Administratoren, einen einzelnen geplanten Vorgang sofort auszuführen, ohne auf den planmäßigen Termin zu warten. Dafür muss "Pfad für PHP CLI" in Systempfade eingestellt sein. Ein solcher Vorgang läuft auf dem Webserver, so dass diese Option deaktiviert sein könnte, um Leistungseinbrüche zu vermeiden.';
 $string['faildelay'] = 'Fehlerverzögerung';
 $string['lastruntime'] = 'Letzte Ausführung';
 $string['nextruntime'] = 'Nächste Ausführung';
@@ -46,6 +48,7 @@ $string['resettasktodefaults'] = 'Zeitplan dieses Vorgangs auf Standardwerte zur
 $string['resettasktodefaults_help'] = 'Damit werden alle lokalen Änderungen rückgängig gemacht und die Originaleinstellungen für den Vorgang wieder hergestellt.';
 $string['runnow'] = 'Sofort ausführen';
 $string['runnow_confirm'] = 'Möchten Sie den Vorgang \'{$a}\' wirklich sofort ausführen? Der Vorgang läuft auf dem Webserver und könnte eventuell lange dauern, um fertig zu werden.';
+$string['runpattern'] = 'Ausführungsmuster';
 $string['scheduledtaskchangesdisabled'] = 'Änderungen in der Liste der geplanten Vorgänge sind nicht erlaubt.';
 $string['scheduledtasks'] = 'Geplante Vorgänge';
 $string['taskdisabled'] = 'Vorgang deaktiviert';

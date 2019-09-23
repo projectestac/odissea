@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['createnewusers'] = 'Sortu oraindik Moodle-n erregistratu ez diren erabi
 $string['createnewusers_desc'] = 'IMS Enterprise matrikulazio-datuek normalean erabiltzaile-multzo bat deskribatzen dute. Gaituz gero, Moodle-ko datu-basean existitzen ez diren erabiltzaileentzako kontuak sortu ahalko dira.
 
 Erabiltzaileak aurkitzeko lehenengo euren "ID zenbakia" eta ondoren euren Moodle-ko erabiltzaile-izena bilatzen dira. IMS Enterprise pluginak ez ditu pasahitzak inportatzen. Erabiltzaileak autentifikatzeko autentifikazio-plugin bat erabiltzea gomendatzen da.';
-$string['cronfrequency'] = 'Prozesamendu-maiztasuna';
+$string['cronfrequency'] = 'Prozesamenduaren maiztasuna';
 $string['deleteusers'] = 'Ezabatu erabiltzaile-kontuak IMS datuetan zehazten denean';
 $string['deleteusers_desc'] = 'Gaituz gero, IMS Enterprise matrikulazio-gehigarriak erabiltzaile-kontuen ezabatzea zehaztu dezake ("recstatus" banderak 3 balioa badu, kontuaren ezabatzea irudikatzen duena). Moodle-n modu lehenetsian gertatzen den moduan, erabiltzailearen erregistroa ez da datu-basetik ezabatzen, baina kontua ezabatu gisa markatzen da.';
 $string['doitnow'] = 'Exekutatu oraintxe bertan IMS Enterprise inportazioa';
@@ -72,7 +72,7 @@ $string['privacy:metadata'] = 'IMS Enterprise fitxategia matrikulazio-pluginak e
 $string['processphoto'] = 'Gehitu erabiltzailearen argazkia profilari';
 $string['processphotowarning'] = 'Kontuz: Irudiak prozesatzeak zerbitzariari lan karga nabarmen gaineratuko dio seguruenik. Aukera hau ez aktibatzeko gomendatzen da ikasle-kopuru altua prozesatzeko asmoa badago.';
 $string['restricttarget'] = 'Ondorengo helburua zehaztu bada bakarrik prozesatu datuak.';
-$string['restricttarget_desc'] = 'IMS Enterprise-ko datu-fitxategi bat "helburu" anitzetarako erabil daiteke - LMS ezberdinak, edota eskola/unibertsitatekosistema ezberdinak. Fitxategian helburuko sistemarako datuak zeintzuk diren zehazteko aukera dago, hauek <properties> etiketaren barruan <target> etiketekin izendatuz.
+$string['restricttarget_desc'] = 'IMS Enterprise-ko datu-fitxategi bat "helburu" anitzetarako erabil daiteke - LMS ezberdinak, edota eskola/unibertsitateko sistema ezberdinak. Fitxategian helburuko sistemarako datuak zeintzuk diren zehazteko aukera dago, hauek <properties> etiketaren barruan <target> etiketekin izendatuz.
 
 Orokorrean ez duzu honengatik arduratu behar. Hutsik utzi ezarpen hau eta Moodle-k datuak beti prozesatuko ditu, helburua zehaztuta egon edo ez. Bestela, zehaztu <target> etiketaren barruan erabilitako izen zehatza.';
 $string['roles'] = 'Rolak';
@@ -82,7 +82,7 @@ $string['settingshortname'] = 'IMS deskribapen-etiketa ikastaroaren izen laburre
 $string['settingshortnamedescription'] = 'Izen laburra ikastaroaren beharrezko eremua da eta beraz zure IMS Enterprise fitxategiko description etiketan definitu behar duzu';
 $string['settingsummary'] = 'IMS deskribapen-etiketa ikastaroaren laburpenerako';
 $string['settingsummarydescription'] = 'Aukerazko eremua da , aukeratu \'Utzi hutsik\' ez baduzu ikastaroaren laburpena zehaztu nahi.';
-$string['sourcedidfallback'] = 'Userdid-erako "Sourcedid"a erabili, pertsona baten "userid" kanpoa aurkitzen ez bada.';
+$string['sourcedidfallback'] = 'Erabili \'sourcedid\'-a erabiltzaile baten erabiltzaile-ID gisa bere "userid" eremua aurkitzen ez bada';
 $string['sourcedidfallback_desc'] = 'IMS datuetan, <sourcedid> eremuak jatorrizko sisteman pertsona batentzako ID kode iraunkorra irudikatzen du. <userid> eremua beste eremu bat da eta sartzera zoazen sistemarako ID kodea eduki beharko luke. Kasu askotan bi kode hauek berdinak izango dira - baina ez beti.
 
 Informazio Zerbitzu batzuk ikasleen <userid> eremua esportatzean huts egiten dute. Kasu horretan, ezarpen hau gaitu beharko zenuke <sourcedid> eremua Moodle-ko erabiltzaile ID gisa erabili ahal izateko. Bestela, utzi ezarpen hau desgaituta.';
@@ -92,7 +92,7 @@ $string['updatecourses'] = 'Eguneratu ikastaroa';
 $string['updatecourses_desc'] = 'Gaituz gero, IMS Enterprise matrikulazio-pluginak ikastaroen izen laburra eta izen osoa eguneratzeko aukera izango du ("recstatus" markak 2 balioa badu, eguneratze bat erakusten duena)';
 $string['updateusers'] = 'Eguneratu erabiltzaile-kontuak IMS datuetan zehaztuta dagoenean';
 $string['updateusers_desc'] = 'Gaituz gero, IMS Enterprise  matrikulazio-gehigarriaren datuetan erabiltzaile-kontuetako aldaketak zehaz daitezke ("recstatus" markak 2 balioa badu, eguneratze bat erakusten duena)';
-$string['usecapitafix'] = 'Kutxa hau markatu "Capita" erabiltzen bada (XML formatua neurri batean okerra da)';
+$string['usecapitafix'] = 'Kutxa hau markatu Capita erabiltzen bada (bere XML formatua ezberdina delako)';
 $string['usecapitafix_desc'] = 'Errore bat antzeman da Capita sistemak sortutako ikasleen datuetako XML irteeran. Capita erabiltzen ari bazara ezarpen hau gaitu beharko zenuke - bestela utz ezazu markatu gabe.';
 $string['usersettings'] = 'Erabiltzailearen datuen aukerak';
 $string['zeroisnotruncation'] = '0-ak kodeak ez direla mozten adierazten du';

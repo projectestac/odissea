@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,7 +57,6 @@ $string['optional'] = 'Valfri';
 $string['othersettings'] = 'Andra inställningar';
 $string['passwordunmaskrevealhint'] = 'Avslöja';
 $string['requiredelement'] = 'Obligatoriskt fält';
-$string['revealpassword'] = 'Avslöja';
 $string['security'] = 'Säkerhet';
 $string['selectallornone'] = 'Välj alla/ingen';
 $string['selected'] = 'Vald';

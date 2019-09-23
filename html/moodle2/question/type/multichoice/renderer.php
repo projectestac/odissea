@@ -91,24 +91,14 @@ abstract class qtype_multichoice_renderer_base extends qtype_with_combined_feedb
                     'value' => 0,
                 ));
             }
-	    // ***** XTEC MODIFICAT - Prevent Google Chrome from translating the question identifier
-	    // ***** CODI ORIGINAL
-            //$radiobuttons[] = $hidden . html_writer::empty_tag('input', $inputattributes) .
-            //        html_writer::tag('label',
-            //            $this->number_in_style($value, $question->answernumbering) .
-            //            $question->make_html_inline($question->format_text(
-            //                    $ans->answer, $ans->answerformat,
-            //                    $qa, 'question', 'answer', $ansid)),
-            //       array('for' => $inputattributes['id']));
- 	    // ***** CODI MODIFICAT
-	    $radiobuttons[] = $hidden . html_writer::empty_tag('input', $inputattributes) .
+            $radiobuttons[] = $hidden . html_writer::empty_tag('input', $inputattributes) .
                     html_writer::tag('label',
-                        '<span class="notranslate">'.$this->number_in_style($value, $question->answernumbering).'</span>'.
+                        html_writer::span($this->number_in_style($value, $question->answernumbering), 'answernumber') .
                         $question->make_html_inline($question->format_text(
                                 $ans->answer, $ans->answerformat,
                                 $qa, 'question', 'answer', $ansid)),
-                    array('for' => $inputattributes['id']));
-	    // ***** FI
+                        array('for' => $inputattributes['id'], 'class' => 'm-l-1'));
+
             // Param $options->suppresschoicefeedback is a hack specific to the
             // oumultiresponse question type. It would be good to refactor to
             // avoid refering to it here.

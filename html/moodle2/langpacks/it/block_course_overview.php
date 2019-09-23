@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_overview', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,8 @@ $string['configpreservestates'] = 'Consente la memorizzazione e il riutilizzo de
 $string['course_overview:addinstance'] = 'Aggiungere blocco Panoramica corsi';
 $string['course_overview:myaddinstance'] = 'Aggiungere blocco Panoramica corsi nella Dashboard';
 $string['courses'] = 'Corsi';
+$string['defaulttab'] = 'Scheda di default';
+$string['defaulttabdesc'] = 'La scheda che sarà visualizzata di default accedendo alla dashboard';
 $string['expandall'] = 'Espandi tutti gli elenchi corsi';
 $string['favourites'] = 'Preferiti';
 $string['fullpath'] = 'Tutte le categorie e sotto categorie';
@@ -49,6 +51,7 @@ $string['movecourse'] = 'Sposta corso: {$a}';
 $string['movecoursehere'] = 'Sposta il corso qui';
 $string['movetofirst'] = 'Sposta corso {$a} all\'inizio';
 $string['movingcourse'] = 'Stai spostando: {$a->fullname} ({$a->cancellink})';
+$string['nextpage'] = 'Pagina successiva';
 $string['nocourses'] = 'Nessun corso da visualizzare';
 $string['none'] = 'Nessuno';
 $string['numtodisplay'] = 'Numero di corsi da visualizzare';
@@ -56,6 +59,7 @@ $string['onlyparentname'] = 'Solo categoria genitore';
 $string['otherexpanded'] = 'Espandi altri corsi';
 $string['pluginname'] = 'Panoramica corsi (obsoleto)';
 $string['preservestates'] = 'Mantieni stati espansi';
+$string['prevpage'] = 'Pagina precedente';
 $string['privacy:metadata:coursesortorder'] = 'Ordinamento dei corsi (versione obsoleta)';
 $string['privacy:metadata:numberofcourses'] = 'Numero di corsi visualizzati';
 $string['privacy:metadata:sortorder'] = 'Ordinamento';
@@ -72,6 +76,8 @@ $string['showcategoriesdesc'] = 'Visualizza la categoria di appartenenza sotto a
 $string['sortorder'] = 'Ordinamento';
 $string['title'] = 'Panoramica corsi (obsoleta)';
 $string['unfavourite'] = 'Rimuovi dai preferiti';
+$string['userchoosezero'] = '(utilizza default)';
+$string['usersetmaxcourses'] = 'Numero i corsi da visualizzare:';
 $string['view_edit_profile'] = '(Visualizza e modifica il tuo profilo)';
 $string['welcome'] = 'Benvenuto {$a}';
 $string['youhavemessages'] = 'Hai {$a} messaggi da leggere&nbsp;';

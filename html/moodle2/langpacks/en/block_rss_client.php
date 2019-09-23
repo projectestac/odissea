@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_rss_client', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,7 +47,7 @@ $string['editfeeds'] = 'Edit, subscribe or unsubscribe from RSS/Atom news feeds'
 $string['editnewsfeeds'] = 'Edit news feeds';
 $string['editrssblock'] = 'Edit RSS headline block';
 $string['enableautodiscovery'] = 'Enable auto-discovery of feeds?';
-$string['enableautodiscovery_help'] = 'If enabled, feeds on web pages are found automatically. For example, if http://docs.moodle.org is entered, then http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss would be found.';
+$string['enableautodiscovery_help'] = 'If enabled, feeds on web pages are found automatically. For example, if https://docs.moodle.org is entered, then https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss would be found.';
 $string['failedfeed'] = 'Feed failed to download - will retry after {$a}';
 $string['failedfeeds'] = 'One or more RSS feeds have failed';
 $string['feed'] = 'Feed';
@@ -74,13 +74,14 @@ $string['privacy:metadata:block_rss_client:tableexplanation'] = 'RSS block infor
 $string['privacy:metadata:block_rss_client:title'] = 'The title of the RSS feed.';
 $string['privacy:metadata:block_rss_client:url'] = 'The URL of the RSS feed.';
 $string['privacy:metadata:block_rss_client:userid'] = 'The ID of the user that added the RSS feed.';
+$string['refreshfeedstask'] = 'Refresh RSS feeds task';
 $string['remotenewsfeed'] = 'Remote news feed';
 $string['rss_client:addinstance'] = 'Add a new remote RSS feeds block';
 $string['rss_client:createprivatefeeds'] = 'Create private RSS feeds';
 $string['rss_client:createsharedfeeds'] = 'Create shared RSS feeds';
 $string['rss_client:manageanyfeeds'] = 'Manage any RSS feeds';
 $string['rss_client:manageownfeeds'] = 'Manage own RSS feeds';
-$string['rss_client:myaddinstance'] = 'Add a new RSS feeds block to Dashboard';
+$string['rss_client:myaddinstance'] = 'Add a new Remote RSS feeds block to Dashboard';
 $string['seeallfeeds'] = 'See all feeds';
 $string['sharedfeed'] = 'Shared feed';
 $string['shownumentrieslabel'] = 'Max number entries to show per block.';

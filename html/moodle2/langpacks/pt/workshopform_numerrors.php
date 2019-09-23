@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredimensions'] = 'Adicionar mais {$a} proposições';
 $string['configgrade0'] = 'Palavra predefinida para descrever a avaliação negativa de um determinada proposição.';
 $string['configgrade1'] = 'Mensagem predefinida para descrever a avaliação positiva de uma determinada proposição.';
-$string['dimensioncomment'] = 'Comentário';
 $string['dimensioncommentfor'] = 'Comentário para {$a}';
 $string['dimensiondescription'] = 'Descrição';
 $string['dimensiongrade'] = 'Nota';
@@ -41,7 +40,6 @@ $string['grade1default'] = 'Sim';
 $string['grademapping'] = 'Tabela de conversão em nota';
 $string['maperror'] = 'O número ponderado de erros é menor ou igual a';
 $string['mapgrade'] = 'Nota do trabalho';
-$string['percents'] = '{$a}%';
 $string['pluginname'] = 'Número de erros';
 $string['privacy:export:metadata:map'] = 'Se o número ponderado de erros atingir {$a->nonegative} então a nota será {$a->grade}.';
 $string['privacy:metadata'] = 'O módulo Número de erros apenas armazena detalhes da grelha de avaliação. Os atuais dados pessoais de como a grelha tem sido preenchida são armazenados pelo módulo workshop e anexados a avaliações exportadas.';

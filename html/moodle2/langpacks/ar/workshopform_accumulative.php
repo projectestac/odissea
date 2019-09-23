@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,14 +25,27 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['absent'] = 'غائب';
+$string['addmoredimensions'] = 'الفراغات لـ {$a}  أكثر من جوانب أخرى';
 $string['correct'] = 'صحيح';
+$string['dimensioncommentfor'] = 'تعليق لـ {$a}';
+$string['dimensiondescription'] = 'الوصف';
+$string['dimensiongradefor'] = 'التقدير لـ {$a}';
 $string['dimensionmaxgrade'] = 'افضل درجة محتملة  / المقياس الممكن أستخدام';
 $string['dimensionnumber'] = 'اوجه الدولار  {$a}';
+$string['dimensionweight'] = 'الوزن';
+$string['excellent'] = 'ممتاز';
+$string['good'] = 'جيد';
 $string['incorrect'] = 'خطأ';
 $string['mustchoosegrade'] = 'يجب انتقاء درجة لهذا الوجه';
 $string['pluginname'] = 'التدرج   التراكمي';
 $string['poor'] = 'ضعيف';
 $string['present'] = 'حاضر';
+$string['privacy:metadata'] = 'يخزن ملحق  Accumulative grading  فقط تفاصيل نموذج التقييم. يتم تخزين البيانات الشخصية الفعلية لكيفية ملئ النموذج بواسطة وحدة ورشة العمل نفسها و يتم إرفاقها بالتقييمات المصدرة.';
+$string['scalename0'] = '(نعم/لا) درجتان';
+$string['scalename1'] = '(حاضر/ غائب) درجتان';
+$string['scalename2'] = '(صح / خطاء) درجتان';
+$string['scalename3'] = '(جيد/ ضعيف) درجتان';
 $string['scalename4'] = 'ممتاز  / ضعيف جدا';
 $string['scalename5'] = 'ممتاز  / ضعيف جدا';
 $string['scalename6'] = 'ممتاز  / ضعيف جدا';

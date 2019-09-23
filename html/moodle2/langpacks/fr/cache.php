@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cache', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -94,7 +94,7 @@ $string['deletelockconfirmation'] = 'Voulez-vous vraiment effacer le verrou {$a}
 $string['deletelockhasuses'] = 'Vous ne pouvez pas supprimer cette instance de verrouillage, car elle est utilisée par un ou plusieurs entrepôts.';
 $string['deletelocksuccess'] = 'Suppression du verrou réussie.';
 $string['deletestore'] = 'Supprimer entrepôt';
-$string['deletestoreconfirmation'] = 'Voulez-vous vraiment supprimer l\'entrepôt « {$a} »?';
+$string['deletestoreconfirmation'] = 'Voulez-vous vraiment supprimer l\'entrepôt « {$a} » ?';
 $string['deletestorehasmappings'] = 'Cet entrepôt ne peut pas être supprimé, car il comprend des correspondances. Veuillez supprimer toutes les correspondances avant de supprimer l\'entrepôt';
 $string['deletestoresuccess'] = 'L\'entrepôt de cache a été supprimé';
 $string['editdefinitionmappings'] = 'Définition des correspondance de l\'entrepôt {$a}';
@@ -168,7 +168,7 @@ $string['storenotready'] = 'Dépôt pas prêt';
 $string['storeperformance'] = 'Rapport de performance de l\'entrepôt de cache. {$a} requêtes uniques par opération.';
 $string['storeready'] = 'Prêt';
 $string['storerequiresattention'] = 'Requiert votre attention.';
-$string['storerequiresattention_help'] = 'Cet instance dépôt n\'est pas prête à être utilisée, mais comporte des correspondances. La correction de ce problème améliorera la performance de votre système. Veuillez vérifier que l\'infrastructure du dépôt est prête à être utilisée et que tous les prérequis PHP sont remplis.';
+$string['storerequiresattention_help'] = 'Cette instance de dépôt n\'est pas prête à être utilisée, mais comporte des correspondances. La correction de ce problème améliorera la performance de votre système. Veuillez vérifier que l\'infrastructure du dépôt est prête à être utilisée et que tous les prérequis PHP sont remplis.';
 $string['storeresults_application'] = 'Requêtes sur l\'entrepôt utilisé comme cache d\'application';
 $string['storeresults_request'] = 'Requêtes sur l\'entrepôt utilisé comme cache de requête';
 $string['storeresults_session'] = 'Requêtes sur l\'entrepôt utilisé comme cache de session';

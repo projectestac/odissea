@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'choice', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,7 +66,7 @@ $string['eventanswersubmitted'] = 'Eseguita scelta';
 $string['eventanswerupdated'] = 'Aggiornata scelta';
 $string['eventreportdownloaded'] = 'Scaricato report delle scelte';
 $string['eventreportviewed'] = 'Visualizzato report scelta';
-$string['expired'] = 'Spiacente, questa attività è stata chiusa il {$a} e non è più disponibile';
+$string['expired'] = 'L\'attività è stata chiusa il {$a}.';
 $string['full'] = '(Completo)';
 $string['havetologin'] = 'Devi autenticarti prima di poter effettuare la tua scelta';
 $string['includeinactive'] = 'Includi risposte degli utenti non attivi e sospesi';
@@ -98,7 +98,7 @@ $string['noguestchoose'] = 'Spiacente, gli ospiti non possono effettuare scelte.
 $string['noresultsviewable'] = 'I risultati non sono al momento visualizzabili.';
 $string['notanswered'] = 'Senza scelta';
 $string['notenrolledchoose'] = 'Spiacente, solo gli iscritti al corso possono effettuare scelte.';
-$string['notopenyet'] = 'Spiacente, questa attività  non è disponibile fino al {$a}';
+$string['notopenyet'] = 'L\'attività  non sarà disponibile fino al {$a}';
 $string['numberofuser'] = 'Numero di risposte';
 $string['numberofuserinpercentage'] = 'Percentuale delle risposte';
 $string['openafterclose'] = 'Hai specificato una data di apertura successiva alla data di chiusura';
@@ -110,18 +110,23 @@ $string['pluginadministration'] = 'Gestione Scelta';
 $string['pluginname'] = 'Scelta';
 $string['previewonly'] = 'Questa è un\'anteprima delle scelte disponibili. Potrai inviare la tua scelta solo dal {$a}.';
 $string['privacy'] = 'Privacy dei risultati';
-$string['privacy:metadata:choice_answers'] = 'Informazioni sulla/e scelte effettuate dall\'utente in una data attività scelta';
+$string['privacy:metadata:choice_answers'] = 'Informazioni sulle risposte dell\'utente in un\'attività a scelta';
 $string['privacy:metadata:choice_answers:choiceid'] = 'ID dell\'attività a scelta';
 $string['privacy:metadata:choice_answers:optionid'] = 'L\'ID della scelta effettuata dall\'utente.';
 $string['privacy:metadata:choice_answers:timemodified'] = 'Data e ora di modica della scelta dell\'utente';
 $string['privacy:metadata:choice_answers:userid'] = 'L\'ID dell\'utente che effettua una scelta';
 $string['publish'] = 'Rendi pubblici i risultati';
-$string['publishafteranswer'] = 'Visualizza i risultati agli studenti dopo che hanno risposto';
+$string['publishafteranswer'] = 'Visualizza i risultati agli studenti dopo che avranno risposto';
 $string['publishafterclose'] = 'Visualizza i risultati agli studenti solo dopo la chiusura della scelta';
 $string['publishalways'] = 'Visualizza sempre i risultati agli studenti';
-$string['publishanonymous'] = 'Rendi pubblici i risultati in forma anonima. Non visualizzare i nomi degli studenti.';
+$string['publishanonymous'] = 'Rendi pubblici i risultati in forma anonima. Non visualizzare i nomi degli studenti';
+$string['publishinfoanonafter'] = 'I risultati saranno pubblicati in forma anonima dopo la risposta.';
+$string['publishinfoanonclose'] = 'I risultati saranno pubblicati in forma anonima dopo la chiusura dell\'attività.';
+$string['publishinfofullafter'] = 'I risultati delle scelte degli utenti saranno pubblicati dopo la tua risposta.';
+$string['publishinfofullclose'] = 'I risultati delle scelte degli utenti saranno pubblicati dopo la chiusura dell\'attività.';
+$string['publishinfonever'] = 'I risultati delle scelte non saranno pubblicati dopo la tua risposta.';
 $string['publishnames'] = 'Rendi pubblici i risultati in maniera completa con i nomi e le rispettive scelte.';
-$string['publishnot'] = 'Non rendere pubblici i risultati agli studenti.';
+$string['publishnot'] = 'Non rendere pubblici i risultati agli studenti';
 $string['removemychoice'] = 'Elimina la mia scelta';
 $string['removeresponses'] = 'Elimina tutte le risposte';
 $string['responses'] = 'Scelte';
@@ -131,7 +136,7 @@ $string['results'] = 'Risultati';
 $string['savemychoice'] = 'Salva la mia scelta';
 $string['search:activity'] = 'Scelta - Informazioni sull\'attività';
 $string['showpreview'] = 'Visualizza anteprima';
-$string['showpreview_help'] = 'Gli studenti potranno visualizzare un\'anteprima della scelta prima della data di apertura.';
+$string['showpreview_help'] = 'Gli studenti potranno visualizzare l\'anteprima della scelta prima della data di apertura.';
 $string['showunanswered'] = 'Visualizza colonna di chi non ha scelto';
 $string['skipresultgraph'] = 'Salta il grafico dei risultati';
 $string['spaceleft'] = 'spazio disponibile';

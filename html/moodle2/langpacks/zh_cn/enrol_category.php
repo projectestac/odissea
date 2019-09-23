@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_category', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_category
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['category:config'] = '配置分类选课实例';
 $string['category:synchronised'] = '角色分配与选课同步';
+$string['enrolcategorysynctask'] = '分类选课同步任务';
 $string['pluginname'] = '分类选课';
 $string['pluginname_desc'] = '分类选课插件是旧版本使用的基于角色分配的课程分类级的选课解决方案。建议使用群同步插件代替它。';
 $string['privacy:metadata'] = '分类选课插件不会存储任何个人数据。';

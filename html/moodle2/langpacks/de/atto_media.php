@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['descriptionssourcelabel'] = 'URL für Beschreibungs-Track';
 $string['displayoptions'] = 'Darstellung';
 $string['entername'] = 'Name eingeben';
 $string['entersource'] = 'URL';
+$string['entertitle'] = 'Titel eingeben';
 $string['enterurl'] = 'URL eingeben';
 $string['height'] = 'Höhe';
 $string['kind'] = 'Typ';
@@ -66,7 +67,7 @@ $string['metadata'] = 'Metadaten';
 $string['metadata_help'] = 'Metadata-Tracks können nur verwendet werden, wenn der Player ein Script für Metadata unterstützt.';
 $string['metadatasourcelabel'] = 'URL für Metadata-Track';
 $string['mute'] = 'Stummgeschaltet';
-$string['pluginname'] = 'Medien';
+$string['pluginname'] = 'Audio/Videodatei einfügen oder bearbeiten';
 $string['poster'] = 'URL für Vorschaubild';
 $string['privacy:metadata'] = 'Das Plugin atto_media speichert keine personenbezogenen Daten.';
 $string['remove'] = 'Entfernen';
@@ -77,7 +78,7 @@ $string['subtitles_help'] = 'Untertitel können eine Umschreibung oder Übersetz
 $string['subtitlessourcelabel'] = 'URL für Untertitel-Track';
 $string['track'] = 'URL für Track';
 $string['tracks'] = 'Untertitel und Bildunterschriften';
-$string['tracks_help'] = 'Untertitel, Beschriftungen, Kapitel und Beschreibungen können über eine WebVTT (Web Video Text Tracks) Formatdatei eingefügt werden. Track-Labels werden im Auswahlmenü angezeigt. Für jede Art von Spur wird jede Spur, die als Standard eingestellt ist, zu Beginn des Videos vorgewählt.';
+$string['tracks_help'] = 'Untertitel, Beschriftungen, Kapitel und Beschreibungen können über eine WebVTT-Formatdatei (Web Video Text Tracks) eingefügt werden. Track-Labels werden im Auswahlmenü angezeigt. Für jeden Spurtyp wird die standardmäßig eingestellte Spur zu Beginn des Videos vorgewählt.';
 $string['video'] = 'Video';
 $string['videoheight'] = 'Video-Höhe';
 $string['videosourcelabel'] = 'URL für Video';

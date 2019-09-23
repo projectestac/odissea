@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_calculated', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,10 +74,10 @@ $string['incorrectfeedback'] = '不正解すべて';
 $string['itemno'] = 'アイテム {$a}';
 $string['itemscount'] = 'アイテム<br />カウント';
 $string['itemtoadd'] = '追加するアイテム';
-$string['keptcategory1'] = '前回と同じ既存の共有データセットを使用する';
+$string['keptcategory1'] = '以前と同じ既存の共有データセットを使用する';
 $string['keptcategory2'] = '同一カテゴリ内にある前と同じ再利用可能ファイルセットのファイル';
 $string['keptcategory3'] = '同一カテゴリ内にある前と同じ再利用可能リンクセットのリンク';
-$string['keptlocal1'] = '前回と同じ既存のプライベートデータセットを使用する';
+$string['keptlocal1'] = '以前と同じ既存のプライベートデータセットを使用する';
 $string['keptlocal2'] = '同一問題内にある前と同じプライベートファイルセットのファイル';
 $string['keptlocal3'] = '同一問題内にある前と同じプライベートリンクセットのリンク';
 $string['lengthoption'] = '長さオプションを選択する';

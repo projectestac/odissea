@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = '到处';
 $string['inputstandardtags'] = '输入逗号分隔的新标签列表';
 $string['itemstaggedwith'] = '{$a->tagarea}由"{$a->tag}"标签标记';
 $string['lesstags'] = '更少…';
-$string['manageofficialtags'] = '管理官方标签';
 $string['managestandardtags'] = '管理标准标签';
 $string['managetagcolls'] = '管理标签集';
 $string['managetags'] = '管理标签';
@@ -94,9 +93,6 @@ $string['nextpage'] = '更多';
 $string['noresultsfor'] = '未找到与“{$a}”相关的结果';
 $string['notagsfound'] = '未发现匹配"{$a}"的标签';
 $string['nothingtoupdate'] = '无可更新';
-$string['officialtag'] = '官方标签';
-$string['otags'] = '官方标签';
-$string['othertags'] = '其它标签（输入用半角逗号分隔的标签）';
 $string['owner'] = '所有者';
 $string['page-tag-index'] = '单个标签页';
 $string['page-tag-manage'] = '管理标签页';
@@ -138,7 +134,6 @@ $string['selectmaintag'] = '选择合并后使用的标签';
 $string['selectmultipletags'] = '请选择超过1个标签';
 $string['selecttag'] = '选择标签{$a}';
 $string['settypedefault'] = '移除标准标签';
-$string['settypeofficial'] = '设为官方';
 $string['settypestandard'] = '设为标准';
 $string['showingfirsttags'] = '显示最受欢迎标签{$a}';
 $string['showstandard'] = '标准标签使用';
@@ -161,10 +156,8 @@ $string['tagcollection'] = '标签集';
 $string['tagcollection_help'] = '标签集是用于不同区域的一系列标签。 例如，标准标签集可以用于标记课程，同时用户兴趣和博客帖子标签保持在单独的集合中。 当用户点击标签时，标签页仅在同一集合中显示具有该标签的项目。 标签可以根据标记的区域自动添加到集合中，也可以作为标准标签手动添加。';
 $string['tagcollections'] = '标签集';
 $string['tagdescription'] = '标签描述';
-$string['taggedwith'] = '标记为“{$a}”';
 $string['tags'] = '标签';
 $string['tagsaredisabled'] = '标签功能禁用';
-$string['tagtype'] = '标签类型';
 $string['thingstaggedwith'] = '“{$a->name}”使用次数：{$a->count}';
 $string['thingtaggedwith'] = '“{$a->name}”用过一次了';
 $string['timemodified'] = '修改';

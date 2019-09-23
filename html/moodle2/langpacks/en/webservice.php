@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'webservice', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,11 +87,11 @@ $string['errornotemptydefaultparamarray'] = 'The web service description paramet
 $string['erroroptionalparamarray'] = 'The web service description parameter named \'{$a}\' is an single or multiple structure. It can not be set as VALUE_OPTIONAL. Check web service description.';
 $string['eventwebservicefunctioncalled'] = 'Web service function called';
 $string['eventwebserviceloginfailed'] = 'Web service login failed';
-$string['eventwebserviceservicecreated'] = 'Web service service created';
-$string['eventwebserviceservicedeleted'] = 'Web service service deleted';
-$string['eventwebserviceserviceupdated'] = 'Web service service updated';
-$string['eventwebserviceserviceuseradded'] = 'Web service service user added';
-$string['eventwebserviceserviceuserremoved'] = 'Web service service user removed';
+$string['eventwebserviceservicecreated'] = 'Web service created';
+$string['eventwebserviceservicedeleted'] = 'Web service deleted';
+$string['eventwebserviceserviceupdated'] = 'Web service updated';
+$string['eventwebserviceserviceuseradded'] = 'Web service user added';
+$string['eventwebserviceserviceuserremoved'] = 'Web service user removed';
 $string['eventwebservicetokencreated'] = 'Web service token created';
 $string['eventwebservicetokensent'] = 'Web service token sent';
 $string['execute'] = 'Execute';
@@ -108,7 +108,7 @@ $string['functions'] = 'Functions';
 $string['generalstructure'] = 'General structure';
 $string['information'] = 'Information';
 $string['installexistingserviceshortnameerror'] = 'A web service with the shortname "{$a}" already exists. Can not install/update a different web service with this shortname.';
-$string['installserviceshortnameerror'] = 'Coding error: the service shortname "{$a}" should have contains numbers, letters  and _-.. only.';
+$string['installserviceshortnameerror'] = 'Coding error: the service shortname "{$a}" can only contain alphanumeric characters (letters and numbers), underscore (_), hyphen (-) or full stop (.)';
 $string['invalidextparam'] = 'Invalid external api parameter: {$a}';
 $string['invalidextresponse'] = 'Invalid external api response: {$a}';
 $string['invalidiptoken'] = 'Invalid token - your IP is not supported';
@@ -144,11 +144,11 @@ $string['postrestparam'] = 'PHP code for REST (POST request)';
 $string['potusers'] = 'Not authorised users';
 $string['potusersmatching'] = 'Not authorised users matching';
 $string['print'] = 'Print all';
-$string['privacy:metadata:serviceusers'] = 'A list of users who can use a certain external services';
+$string['privacy:metadata:serviceusers'] = 'A list of users who can use a certain external service';
 $string['privacy:metadata:serviceusers:iprestriction'] = 'IP restricted to use the service';
-$string['privacy:metadata:serviceusers:timecreated'] = 'The date at which the record was created';
+$string['privacy:metadata:serviceusers:timecreated'] = 'The date when the record was created';
 $string['privacy:metadata:serviceusers:userid'] = 'The ID of the user';
-$string['privacy:metadata:serviceusers:validuntil'] = 'The date at which the authorisation ends';
+$string['privacy:metadata:serviceusers:validuntil'] = 'The date that the authorisation is valid until';
 $string['privacy:metadata:tokens'] = 'A record of tokens for interacting with Moodle through web services or Mobile applications.';
 $string['privacy:metadata:tokens:creatorid'] = 'The ID of the user who created the token';
 $string['privacy:metadata:tokens:iprestriction'] = 'IP restricted to use this token';
@@ -188,8 +188,8 @@ $string['selectspecificuserdescription'] = 'Add the web services user as an auth
 $string['service'] = 'Service';
 $string['servicehelpexplanation'] = 'A service is a set of functions. A service can be accessed by all users or just specified users.';
 $string['servicename'] = 'Service name';
-$string['servicenotavailable'] = 'Web service is not available (it doesn\'t exist or might be disabled)';
-$string['servicerequireslogin'] = 'Web service is not available (the session has been logged out or has expired)';
+$string['servicenotavailable'] = 'Web service is not available. (It doesn\'t exist or might be disabled.)';
+$string['servicerequireslogin'] = 'Web service is not available. (The session has been logged out or has expired.)';
 $string['servicesbuiltin'] = 'Built-in services';
 $string['servicescustom'] = 'Custom services';
 $string['serviceusers'] = 'Authorised users';

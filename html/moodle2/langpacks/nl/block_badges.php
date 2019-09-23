@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_badges', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   block_badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['badges:addinstance'] = 'Voeg een Mijn badges blok toe';
-$string['badges:myaddinstance'] = 'Voeg een Mijn nieuwe badges blok toe aan Mijn startpagina';
+$string['badges:addinstance'] = 'Voeg een nieuw Mijn badges blok toe';
+$string['badges:myaddinstance'] = 'Voeg een nieuw Mijn nieuwe badges blok toe aan Mijn startpagina';
 $string['nothingtodisplay'] = 'Je hebt nog geen badges om te tonen';
 $string['numbadgestodisplay'] = 'Aantal te tonen nieuwe badges';
 $string['pluginname'] = 'Nieuwe badges';

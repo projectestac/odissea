@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'user', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,17 +31,17 @@ $string['privacy:devicespath'] = 'Erabiltzailearen gailuak';
 $string['privacy:draftfilespath'] = 'Zirriborro-fitxategiak';
 $string['privacy:lastaccesspath'] = 'Azken sarrerak ikastaroetara';
 $string['privacy:metadata:address'] = 'Erabiltzailearen helbidea.';
-$string['privacy:metadata:aim'] = 'Erabiltzailearen AIM identifikatzailea.';
+$string['privacy:metadata:aim'] = 'Erabiltzailearen AIM identifikatzailea';
 $string['privacy:metadata:alternatename'] = 'Erabiltzailearentzako ordezko izena.';
 $string['privacy:metadata:appid'] = 'App-aren IDa, normalean com.moodle.moodlemobile moduko zerbait';
 $string['privacy:metadata:auth'] = 'Erabiltzaile-erregistro honetarako erabilitako autentifikazio-plugina.';
 $string['privacy:metadata:autosubscribe'] = 'Erabiltzaileak idazten duen foroetara automatikoki harpidetu behar den adierazteko hobespena.';
 $string['privacy:metadata:calendartype'] = 'Erabili beharreko egutegi-motaren erabiltzaile-hobespena.';
-$string['privacy:metadata:category'] = 'Kategoriaren identifikatzailea.';
+$string['privacy:metadata:category'] = 'Kategoriaren identifikatzailea';
 $string['privacy:metadata:city'] = 'Erabiltzailearen hiria.';
 $string['privacy:metadata:confirmed'] = 'Erabiltzailea aktibo dagoen edo ez.';
 $string['privacy:metadata:country'] = 'Erabiltzailearen herrialdea.';
-$string['privacy:metadata:courseid'] = 'Ikastaroaren identifikatzailea.';
+$string['privacy:metadata:courseid'] = 'Ikastaroaren IDa';
 $string['privacy:metadata:currentlogin'] = 'Erabiltzaile honen uneko saio-hasiera.';
 $string['privacy:metadata:data'] = 'Erabiltzailearen erabiltzaile-eremu pertsonalizatuarekin lotutako datuak.';
 $string['privacy:metadata:deleted'] = 'Erabiltzailea ezabatua izan den adierazteko marka.';
@@ -60,8 +60,8 @@ $string['privacy:metadata:firstnamephonetic'] = 'Erabiltzailearen izenaren ingur
 $string['privacy:metadata:fullname'] = 'Ikastaroaren izen osoa.';
 $string['privacy:metadata:hash'] = 'Aurreko pasahitzaren hash-a.';
 $string['privacy:metadata:icq'] = 'Erabiltzailearen ICQ zenbakia.';
-$string['privacy:metadata:id'] = 'Erabiltzailearen identifikatzailea.';
-$string['privacy:metadata:idnumber'] = 'Instituzioak emandako identifikazio-zenbakia.';
+$string['privacy:metadata:id'] = 'Erabiltzailearen IDa';
+$string['privacy:metadata:idnumber'] = 'Instituzioak emandako identifikazio-zenbakia';
 $string['privacy:metadata:imagealt'] = 'Erabiltzailearen irudiarentzako ordezko testua.';
 $string['privacy:metadata:infotablesummary'] = 'Erabiltzailearen informazio pertsonalizatua gordetzen du.';
 $string['privacy:metadata:institution'] = 'Erabiltzailearen instituzioa.';
@@ -74,10 +74,10 @@ $string['privacy:metadata:lastname'] = 'Erabiltzailearen abizena.';
 $string['privacy:metadata:lastnamephonetic'] = 'Erabiltzailearen abizenaren inguruko xehetasun fonetikoak.';
 $string['privacy:metadata:maildigest'] = 'Erabiltzaile honentzako e-posta banatzearen aukeraren ezarpena.';
 $string['privacy:metadata:maildisplay'] = 'Erabiltzailearen e-posta helbidea beste erabiltzaileei erakustekoaren inguruko hobespena.';
-$string['privacy:metadata:middlename'] = 'Erabiltzailearen bigarren izena.';
+$string['privacy:metadata:middlename'] = 'Erabiltzailearen bigarren izena';
 $string['privacy:metadata:mnethostid'] = 'MNet ostalariaren identifikatzailea, erabiliz gero.';
 $string['privacy:metadata:model'] = 'Gailuaren izena, occam edo iPhone...';
-$string['privacy:metadata:msn'] = 'Erabiltzailearen MSN identifikatzailea.';
+$string['privacy:metadata:msn'] = 'Erabiltzailearen MSN identifikatzailea';
 $string['privacy:metadata:my_pages'] = 'Erabiltzailearen orriak - aginte-panela eta profila. Taula honetan ez da datu pertsonalik gordetzen eta soilik erabiltzaileen aginte-paneletako blokeak estekatzeko erabiltzen da.';
 $string['privacy:metadata:my_pages:name'] = 'Orriaren izena';
 $string['privacy:metadata:my_pages:private'] = 'Orria pribatua (aginte-panela) edo publikoa (profila) den';
@@ -91,14 +91,14 @@ $string['privacy:metadata:platform'] = 'Gailuaren plataforma, Android edo iOS...
 $string['privacy:metadata:policyagreed'] = 'Erabiltzaileak guneko politikari onespena eman dion zehazteko marka.';
 $string['privacy:metadata:pushid'] = 'Gailuaren PUSH token/gako/identifikatzaile/erregistroaren IDa';
 $string['privacy:metadata:reason'] = 'Ikastaro hau eskatzearen arrazoia.';
-$string['privacy:metadata:requester'] = 'Ikastaro hau eskatu duen erabiltzailearen identifikatzailea.';
+$string['privacy:metadata:requester'] = 'Ikastaro hau eskatu duen erabiltzailearen IDa';
 $string['privacy:metadata:requestsummary'] = 'Erabiltzaileak egiten dituen ikastaro-eskaeren inguruko informazioa gordetzen du.';
 $string['privacy:metadata:secret'] = 'Sekretua... ez da ziurra.';
 $string['privacy:metadata:sessdata'] = 'Saioaren edukia';
 $string['privacy:metadata:sessiontablesummary'] = 'Datu-basean oinarritutako saio-biltegia';
 $string['privacy:metadata:shortname'] = 'Ikastaroaren izen laburra.';
 $string['privacy:metadata:sid'] = 'Saioaren IDa';
-$string['privacy:metadata:skype'] = 'Erabiltzailearen Skype identifikatzailea.';
+$string['privacy:metadata:skype'] = 'Erabiltzailearen Skype identifikatzailea';
 $string['privacy:metadata:state'] = 'Zerok saio normala adierazten du';
 $string['privacy:metadata:summary'] = 'Ikastaroaren deskribapena.';
 $string['privacy:metadata:suspended'] = 'Erabiltzailea etenda dagoen adierazteko marka.';
@@ -122,7 +122,7 @@ $string['privacy:metadata:user_preferences:value'] = 'Hobespenaren balioa';
 $string['privacy:metadata:usertablesummary'] = 'Taula honek erabitzailearen datu pertsonal nagusiak gordetzen ditu.';
 $string['privacy:metadata:uuid'] = 'Gailuaren saltzailearen UUIDa';
 $string['privacy:metadata:version'] = 'Gailuaren bertsioa: 6.1.2, 4.2.2...';
-$string['privacy:metadata:yahoo'] = 'Erabiltzailearen Yahoo identifikatzailea.';
+$string['privacy:metadata:yahoo'] = 'Erabiltzailearen Yahoo identifikatzailea';
 $string['privacy:passwordhistorypath'] = 'Pasahitzen historia';
 $string['privacy:passwordresetpath'] = 'Pasahitzaren berrezartze kopurua';
 $string['privacy:privatefilespath'] = 'Fitxategi pribatuak';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   qbehaviour_deferredcbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,7 +58,7 @@ $string['dontknow'] = 'Idearik ez';
 $string['foransweredquestions'] = 'Emaitzak erantzundako {$a} galderentzat soilik';
 $string['forentirequiz'] = 'Emaitzak galdetegi osoarentzat ({$a} galdera)';
 $string['howcertainareyou'] = 'Ziurtasuna {$a->help}: {$a->choices}';
-$string['judgementok'] = 'Ondo!';
+$string['judgementok'] = 'Ados';
 $string['judgementsummary'] = 'Erantzunak: {$a->responses}. Zehaztasuna: {$a->fraction}. (Balio-tarte egokiena {$a->idealrangelow} eta {$a->idealrangehigh} artean). Zu {$a->judgement} izan zara ziurtasun-maila honen arabera.';
 $string['noquestions'] = 'Erantzunik ez';
 $string['overconfident'] = 'zure buruaz ziurregi';

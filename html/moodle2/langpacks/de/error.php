@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -384,7 +384,6 @@ $string['logfilenotavailable'] = 'Keine Logdaten verfügbar';
 $string['loginasnoenrol'] = 'Das "Einschreiben" oder "Abmelden" für einem Kurs ist nicht möglich, wenn Sie als andere Person angemeldet sind.';
 $string['loginasonecourse'] = 'Sie können sich in diesen Kurs nicht eintragen.<br /> Beenden Sie zuerst die Funktion "Login als", um sich dann in den anderen Kurs einzutragen.';
 $string['maxareabytes'] = 'Diese Datei ist zu groß';
-$string['maxbytes'] = 'Diese Datei ist größer als die Maximalgröße';
 $string['maxbytesfile'] = 'Die Datei {$a->file} ist zu groß. Die maximale Größe zum Hochladen ist {$a->size}.';
 $string['messagingdisable'] = 'Die Mitteilungen sind für diese Website deaktiviert.';
 $string['mimetexisnotexist'] = 'Ihr System ist nicht richtig konfiguriert, um mimeTeX ausführen zu können. Sie müssen den C-Quellcode unter <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a> herunterladen, kompilieren und dann das ausführbare Programm in das Verzeichnis moodle/filter/tex/ legen.';
@@ -434,7 +433,7 @@ $string['nologinas'] = 'Sie dürfen sich nicht in der Rolle dieser Person einlog
 $string['nonmeaningfulcontent'] = 'Kein sinnvoller Inhalt';
 $string['noparticipants'] = 'Keine Teilnehmer/innen für diesen Kurs gefunden';
 $string['noparticipatorycms'] = 'Sie haben keine beteiligten Kursmodule für einen Bericht.';
-$string['nopermissions'] = 'Sie besitzen derzeit keine Rechte, dies zu tun ({$a}).';
+$string['nopermissions'] = 'Sie haben derzeit keine Rechte, dies zu tun ({$a}).';
 $string['nopermissiontocomment'] = 'Sie können keine Kommentare hinzufügen';
 $string['nopermissiontodelentry'] = 'Sie dürfen keine fremden Einträge löschen!';
 $string['nopermissiontoeditcomment'] = 'Sie dürfen keine fremden Kommentare bearbeiten!';
@@ -445,7 +444,7 @@ $string['nopermissiontomanagegroup'] = 'Sie haben keine Berechtigung, Gruppen zu
 $string['nopermissiontorate'] = 'Bewertung von Beiträgen ist nicht erlaubt!';
 $string['nopermissiontoshow'] = 'Kein Recht zum Anzeigen!';
 $string['nopermissiontounlock'] = 'Kein Recht zum Freigeben!';
-$string['nopermissiontoupdatecalendar'] = 'Sie haben nicht das Recht, den Termin zu aktualisieren.';
+$string['nopermissiontoupdatecalendar'] = 'Sie haben nicht die Rechte, den Termin zu aktualisieren.';
 $string['nopermissiontoviewgrades'] = 'Bewertungen können nicht angezeigt werden';
 $string['nopermissiontoviewletergrade'] = 'Kein Recht zur Anzeige von Notenstufen';
 $string['nopermissiontoviewpage'] = 'Sie haben keinen Zugriff auf diese Seite';
@@ -521,7 +520,7 @@ $string['storedfilecannotread'] = 'Die Datei kann nicht gelesen werden. Eventuel
 $string['storedfilecannotreadfile'] = 'Datei \'{$a}\' kann nicht gelesen werden. Entweder existiert die Datei nicht oder es gibt ein Berechtigungsproblem.';
 $string['storedfilenotcreated'] = 'Datei kann nicht angelegt werden \'{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}\'';
 $string['storedfileproblem'] = 'Unbekannter Fehler mit lokalen Dateien ({$a})';
-$string['tagdisabled'] = 'Schlagwörter sind deaktiviert!';
+$string['tagdisabled'] = 'Tags sind deaktiviert!';
 $string['tagnotfound'] = 'Der verwendete Tag wurde in der Datenbank nicht gefunden.';
 $string['targetdatabasenotempty'] = 'Die Zieldatenbank ist nicht leer. Aus Sicherheitsgründen wurde die Übertragung abgebrochen.';
 $string['textconditionsnotallowed'] = 'Ein Vergleich der Textspaltenbedingungen ist nicht zugelassen. Bitte verwenden Sie in Ihrer Abfrage sql_compare_text() . ';

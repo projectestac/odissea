@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'countries', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   countries
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -129,7 +129,7 @@ $string['ID'] = 'Indonesië';
 $string['IE'] = 'Ierland';
 $string['IL'] = 'Israel';
 $string['IM'] = 'Isle Of Man';
-$string['IN'] = 'Indië';
+$string['IN'] = 'India';
 $string['IO'] = 'Brits Indische Oceaan Territorium';
 $string['IQ'] = 'Irak';
 $string['IR'] = 'Iran';

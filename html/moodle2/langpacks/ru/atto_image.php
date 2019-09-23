@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_image', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['enteralt'] = 'Описание изображения для тех, у
 $string['enterurl'] = 'Введите URL';
 $string['height'] = 'Высота';
 $string['imageproperties'] = 'Свойства изображения';
-$string['pluginname'] = 'Изображение';
+$string['pluginname'] = 'Вставить или отредактировать изображение';
 $string['presentation'] = 'Описание не обязательно';
 $string['presentationoraltrequired'] = 'Изображение должно иметь описание, если не указано обратное';
 $string['preview'] = 'Предварительный просмотр';

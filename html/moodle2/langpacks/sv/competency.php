@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'competency', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'Kompetensgraderingen sattes manuel
 $string['evidence_manualoverrideinplan'] = 'Kompetensgraderingen sattes manuellt i studeplanen \'{$a}\'.';
 $string['invalidevidencedesc'] = 'Felaktig beskrivning av verifiering';
 $string['invalidgrade'] = 'Felaktig bedömning';
-$string['invalidpersistent'] = 'Ständigt felaktig';
 $string['invalidplan'] = 'Felaktig studieplan';
 $string['invalidtaxonomy'] = 'Felaktig taxonomi: {$a}';
 $string['invalidurl'] = 'URL:en är felaktig.  Se till att den börjar med \'http://\' eller \'https://\'.';

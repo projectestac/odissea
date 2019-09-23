@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['auth_dbextencodinghelp'] = 'Codificação usada na base de dados extern
 $string['auth_dbextrafields'] = 'Estes campos são opcionais. Pode optar por preencher alguns campos do perfil do utilizador com informação da base de dados externa indicada aqui.<p>Se deixar estes campos em branco serão usados os valores predefinidos.</p><p>Em qualquer caso o utilizador poderá alterar estes dados depois de se autenticar no Moodle.</p>';
 $string['auth_dbfieldpass'] = 'Nome do campo que contém as senhas';
 $string['auth_dbfieldpass_key'] = 'Campo senha';
-$string['auth_dbfielduser'] = 'Nome do campo que contém os nomes de utilizador';
+$string['auth_dbfielduser'] = 'Nome do campo que contém os nomes de utilizador. Este campo deve ser do tipo de dados de carácter variável (varchar).';
 $string['auth_dbfielduser_key'] = 'Campo nome de utilizador';
 $string['auth_dbhost'] = 'Computador onde está alojado o servidor de base de dados. Use um sistema de entrada DSN se estiver a usar ODBC. Use uma entrada PDO DSN se estiver a usar PDO.';
 $string['auth_dbhost_key'] = 'Servidor';
@@ -64,7 +64,7 @@ $string['auth_dbsuspenduser'] = 'O utilizador {$a->name} com ID {$a->id} foi sus
 $string['auth_dbsuspendusererror'] = 'Erro ao suspender o utilizador {$a}';
 $string['auth_dbsybasequoting'] = 'Usar formato de aspas Sybase';
 $string['auth_dbsybasequotinghelp'] = 'Usar o estilo de Sybase de escaping de aspas - necessário para Oracle, MS SQL e outras bases de dados. Não usar com MySQL!';
-$string['auth_dbsyncuserstask'] = 'Sincronizar tarefa de utilizadores';
+$string['auth_dbsyncuserstask'] = 'Tarefa de sincronizar utilizadores';
 $string['auth_dbtable'] = 'Nome da tabela na base de dados';
 $string['auth_dbtableempty'] = 'A tabela externa está vazia.';
 $string['auth_dbtable_key'] = 'Tabela';
@@ -75,7 +75,6 @@ $string['auth_dbupdateusers_description'] = 'Bem como ao inserir novos utilizado
 $string['auth_dbupdatinguser'] = 'A atualizar o utilizador {$a->name} com ID {$a->id}';
 $string['auth_dbuser'] = 'Nome de utilizador da conta com permissão de leitura na base de dados';
 $string['auth_dbuser_key'] = 'Utilizador da base de dados';
-$string['auth_dbusernotexist'] = 'Não é possível atualizar o utilizador {$a} porque não existe na base de dados';
 $string['auth_dbuserstoadd'] = 'Registos de utilizador a adicionar: {$a}';
 $string['auth_dbuserstoremove'] = 'Registos de utilizador a remover: {$a}';
 $string['pluginname'] = 'Base de dados externa';

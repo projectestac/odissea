@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_performance', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   report_performance
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['check_cachejs_comment_enable'] = 'Wenn deaktiviert, kann die Seite lang
 $string['check_cachejs_details'] = 'Javascript Caching und Kompression kann die Leistung beim Laden der Seite positiv beeinflussen. Für produktive Seiten wird dies empfohlen.';
 $string['check_debugmsg_comment_developer'] = 'Wenn diese Option nicht auf DEVELOPER gesetzt ist, kann die Leistung geringfügig verbessert werden.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Wenn diese Option auf DEVELOPER gesetzt ist, kann die Leistung geringfügig beeinträchtigt sein.';
-$string['check_debugmsg_details'] = 'Wenn Sie kein Entwickler sind, gibt es eigentlich keinen Grund, den Developer-Level zu aktivieren. Für Entwickler ist es jedoch durchaus emphehlenswert.<p>Nachdem Sie eine Fehlermeldung gesehen haben, sollten Sie sich diese kopieren und abspeichern. Stellen Sie dann den Entwickler-Debug-Modus wird auf Keine zurück.Debug-Fehlermeldung werden auch von anderren Nutzern gesehen. Hacker können daraus Schlüsse über die Konfiguration Ihrer Seite und Schwachstellen ziehen. Der Debug-Modus kann sich auch auf die Performance auswirken.</p>';
+$string['check_debugmsg_details'] = 'Wenn Sie kein Entwickler sind, gibt es eigentlich keinen Grund, den Developer-Level zu aktivieren. Für Entwickler ist es jedoch durchaus emphehlenswert.<p>Nachdem Sie eine Fehlermeldung gesehen haben, sollten Sie diese kopieren und abspeichern. Stellen Sie dann den Entwickler-Debug-Modus auf KEIN zurück. Debug-Fehlermeldungen werden auch von anderen Nutzern gesehen. Hacker können daraus Schlüsse über die Konfiguration Ihrer Seite und Schwachstellen ziehen. Der Debug-Modus kann sich auch auf die Performance auswirken.</p>';
 $string['check_enablestats_comment_disable'] = 'Statistische Berechnungen können die Leistung beeinflussen. Die Einstellungen sollten daher mit Vorsicht vorgenommen werden.';
 $string['check_enablestats_comment_enable'] = 'Statistische Berechnungen können die Leistung beeinflussen. Die Einstellungen sollten daher mit Vorsicht vorgenommen werden.';
 $string['check_enablestats_details'] = 'Die Aktivierung dieser Option führt dazu, dass bei der Abarbeitung des Cron-Jobs die Logdaten ausgewertet werden, um statistische Auswertungen zu erstellen.Je nachdem wie viel Betrieb auf Ihrer Plattform ist, kann dies einige Zeit in Ansprucch nehmen.<p>Während des Prozesses werden mehr Serverressourcen in Anspruch genommen. Dies kann die Leistung beeinflussen.</p>';

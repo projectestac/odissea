@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -211,6 +211,7 @@ $string['noexamplesformready'] = 'あなたは提出例を提供する前に評�
 $string['nogradeyet'] = '未評価';
 $string['nosubmissionfound'] = 'このユーザの提出はありません。';
 $string['nosubmissions'] = 'このワークショップの提出はまだありません。';
+$string['nosubmissiontype'] = '少なくとも1つの提出タイプを利用可にする必要があります。';
 $string['notassessed'] = '未評価';
 $string['nothingfound'] = '表示するものはありません。';
 $string['nothingtoreview'] = 'レビューするものはありません。';
@@ -338,6 +339,12 @@ $string['submissionstart'] = '提出開始日時';
 $string['submissionstartdatetime'] = '提出開始日時 {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} 提出開始';
 $string['submissiontitle'] = 'タイトル';
+$string['submissiontypedisabled'] = 'このワークショップのこの提出タイプは無効にされています。';
+$string['submissiontypefileavailable'] = 'ファイル添付<span class="accesshide"> 利用可</span>';
+$string['submissiontypefilerequired'] = '<span class="accesshide">ファイル添付 </span>要';
+$string['submissiontypes'] = '提出タイプ';
+$string['submissiontypetextavailable'] = 'オンラインテキスト<span class="accesshide"> 利用可</span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide">オンラインテキスト </span>要';
 $string['submittednotsubmitted'] = '提出 ({$a->submitted}) / 未提出 ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = '提出割り当て方法';
 $string['subplugintype_workshopallocation_plural'] = '提出割り当て方法';
@@ -413,7 +420,6 @@ $string['workshop:viewauthornames'] = '作成者名を表示する';
 $string['workshop:viewauthorpublished'] = '公開された提出の作成者を表示する';
 $string['workshop:viewpublishedsubmissions'] = '公開済み提出を表示する';
 $string['workshop:viewreviewernames'] = '評価者名を表示する';
-$string['yourassessment'] = 'あなたの評価';
 $string['yourassessmentfor'] = 'あなたの {$a} の評価';
 $string['yourgrades'] = 'あなたの評点';
 $string['yoursubmission'] = 'あなたの提出課題';

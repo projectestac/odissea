@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'journal', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,6 +73,12 @@ $string['notstarted'] = 'You have not started this journal yet';
 $string['overallrating'] = 'Overall rating';
 $string['pluginadministration'] = 'Journal module administration';
 $string['pluginname'] = 'Journal';
+$string['privacy:metadata:journal_entries'] = 'A record of journal entry';
+$string['privacy:metadata:journal_entries:entrycomment'] = 'The comment received by user to journal';
+$string['privacy:metadata:journal_entries:modified'] = 'The start time of the journal entries.';
+$string['privacy:metadata:journal_entries:rating'] = 'The rating received by user to journl';
+$string['privacy:metadata:journal_entries:text'] = 'The text written by user';
+$string['privacy:metadata:journal_entries:userid'] = 'The ID of the user';
 $string['rate'] = 'Rate';
 $string['removeentries'] = 'Remove all entries';
 $string['removemessages'] = 'Remove all Journal entries';

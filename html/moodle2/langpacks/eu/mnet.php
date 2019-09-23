@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mnet', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,7 @@ $string['description'] = 'Deskribapena';
 $string['duplicate_usernames'] = 'Zure erabiltzaile-taulako "mnethostid" eta "username" zutabeetan indize bat sortzeak huts egin du.<br />Hau <a href="{$a}" target="_blank">erabiltzaile-taulan bikoiztutako erabiltzaileak dituzunean</a> gerta daiteke.<br />Hala ere, zure eguneratzea ondo amai daiteke. Egin klik beheko estekan eta arazo hau konpontzeko argibideak leiho berri batean agertuko dira. Eguneratzea bukatu ondoren konpon dezakezu hori.<br />';
 $string['enabled_for_all'] = '(Zerbitzu hau ostalari guztietarako gaitu da).';
 $string['enterausername'] = 'Idatzi mesedez erabiltzaile-izena, edo komaz banatutako erabiltzaile-izenen zerrenda bat.';
-$string['error7020'] = 'Errore hau gertatzen denean normalean urruneko guneak zuretzako erregistroa sortu du wwwroot okerrarekin, esaterako http://adibidea.eus  http://www.adibidea.eus izan beharrean. Urruneko gunearen kudeatzailearekin harremanetan jarri beharko zenuke zure wwwroot adierazita (config.php fitxategian zehaztuta dagoen moduan) zure ostalariko erregistroa eguneratzeko eskatuz.';
+$string['error7020'] = 'Errore hau gertatzen denean normalean urruneko guneak zuretzako erregistroa sortu du wwwroot okerrarekin, esaterako https://adibidea.eus https://www.adibidea.eus izan beharrean. Mesedez urruneko gunearen kudeatzailearekin harremanetan jarri zaitez zure wwwroot adierazita (config.php fitxategian zehaztuta dagoen moduan) zure ostalariko erregistroa eguneratzeko eskatuz.';
 $string['error7022'] = 'Urruneko gunera bidali duzun mezua ondo zifratu da, baina ez da sinatu. Hau ezuste handia da; hau gertatzen bada arazoaren berri eman beharko zenuke (guri ahal bezain beste informazio emanda arazoak dituen aplikazioen bertsioei buruz...)';
 $string['error7023'] = 'Urruneko guneak zure mezua zure guneak erregistroan duen gakoekin deszifratzen saiatu da. Denek huts egin dute. Arazo hau konpondu ahal izan beharko zenuke urruneko guneko gakoak eskuz eguneratuta. Hau nekez gertatuko da urruneko gunearekin hilabete batzuz konexiorik egon ez bada.';
 $string['error7024'] = 'Urruneko gunera zifratu gabeko mezu bat bidali duzu, baina urruneko guneak ez du zure gunetik zifratu gabeko komunikaziorik onartzen. Hau ezuste handia da; hau gertatzen bada arazoaren berri eman beharko zenuke (guri ahal bezain beste informazio emanda arazoak dituen aplikazioen bertsioei buruz...)';
@@ -241,7 +241,7 @@ $string['trustedhosts'] = 'XML-RPC ostalariak';
 $string['trustedhostsexplain'] = '<p>Konfiantzazko ostalarien mekanismoak makina konkretu batzuk XML-RPC bitartez Moodle API-ko edozein dei exekutatzeko aukera ematen du. Honek Moodle-ko jokaera script bidez kontrolatzea ahalbidetzen du eta gaitzeak arrisku handia suposa lezake. Zalantzak badituzu, desgaituta utzi.</p>
 <p><strong>Hau ez da beharrezkoa ohiko MNet funtzioentzat!</strong> Soilik gaitu zer egiten ari zaren badakizu.</p>
 <p>Aukera hau gaitzeko, sartu IP helbideen edo sareen zerrenda, bat errenkada bakoitzean. Adibide batzuk:</p>
-Zure ostalari lokala:<br />127.0.0.1<br />Zur eostalari lokala (sareko blokearekin):<br />127.0.0.1/32<br />Soilik  192.168.0.7 IP helbidea duen ostalaria:<br />192.168.0.7/32<br />192.168.0.1 eta 192.168.0.255 IP helbideen arteko edozein ostalari:<br />192.168.0.0/24<br />Edozein ostalari:<br />192.168.0.0/0<br />Jakina, azken adibidea <strong>ez</strong> da gomendatutako konfigurazio bat.';
+Zure ostalari lokala:<br />127.0.0.1<br />Zure ostalari lokala (sareko blokearekin):<br />127.0.0.1/32<br />Soilik  192.168.0.7 IP helbidea duen ostalaria:<br />192.168.0.7/32<br />192.168.0.1 eta 192.168.0.255 IP helbideen arteko edozein ostalari:<br />192.168.0.0/24<br />Edozein ostalari:<br />192.168.0.0/0<br />Jakina, azken adibidea <strong>ez</strong> da gomendatutako konfigurazio bat.';
 $string['turnitoff'] = 'Itzali';
 $string['turniton'] = 'Piztu';
 $string['type'] = 'Mota';

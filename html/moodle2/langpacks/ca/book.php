@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'book', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -97,5 +97,5 @@ $string['subplugintype_booktool'] = 'Eina del llibre';
 $string['subplugintype_booktool_plural'] = 'Eines del llibre';
 $string['tagarea_book_chapters'] = 'Capítols del llibre';
 $string['tagsdeleted'] = 'Les etiquetes del llibre s\'han suprimit';
-$string['toc'] = 'Índex';
+$string['toc'] = 'Taula de continguts';
 $string['top'] = 'amunt';

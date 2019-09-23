@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'role', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -285,8 +285,8 @@ $string['manager'] = 'Administratör';
 $string['manageroles'] = 'Administrera roller';
 $string['morethan'] = 'Mer än {$a}';
 $string['multipleroles'] = 'Flerfaldiga roller';
-$string['my:configsyspages'] = 'Konfigurera systemmallarna för MittMoodle-sidorna';
-$string['my:manageblocks'] = 'Administrera sidblock för MittMoodle';
+$string['my:configsyspages'] = 'Konfigurera systemmallarna för Mitt Moodle-sidorna';
+$string['my:manageblocks'] = 'Administrera sidblock för Mitt Moodle';
 $string['neededroles'] = 'Roller med tillstånd';
 $string['nocapabilitiesincontext'] = 'Det finns inte några tillgängliga kapaciteter i det här sammanhanget.';
 $string['noneinthisx'] = 'Ingen/a i den här {$a}';

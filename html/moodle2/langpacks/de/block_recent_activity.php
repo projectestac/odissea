@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_recent_activity', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   block_recent_activity
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cleanuptask'] = 'Task zum Bereinigen des Blocks \'Letzte Aktivitäten\'';
 $string['pluginname'] = 'Neue Aktivitäten';
 $string['privacy:metadata'] = 'Der letzte Aktivitäten-Block enthält einen Cache mit Daten, die an anderen Stellen in Moodle gespeichert wurden.';
 $string['privacy:metadata:block_recent_activity'] = 'Temporärer Log früherer Traineraktivitäten. Wird nach zwei Tagen gelöscht.';
@@ -32,7 +33,7 @@ $string['privacy:metadata:block_recent_activity:action'] = 'Aktion: erstellt, ak
 $string['privacy:metadata:block_recent_activity:cmid'] = 'Kursaktivitäts-ID';
 $string['privacy:metadata:block_recent_activity:courseid'] = 'Kurs-ID';
 $string['privacy:metadata:block_recent_activity:modname'] = 'Modultypbezeichung (für Löschaktion)';
-$string['privacy:metadata:block_recent_activity:timecreated'] = 'Zeitpunkt der Ausführung derAktion';
+$string['privacy:metadata:block_recent_activity:timecreated'] = 'Zeitpunkt der Ausführung der Aktion';
 $string['privacy:metadata:block_recent_activity:userid'] = 'Nutzer der die Aktion ausführte';
 $string['recent_activity:addinstance'] = 'Neuen Block \'Neue Aktivitäten\' hinzufügen';
 $string['recent_activity:viewaddupdatemodule'] = 'Hinzugefügte und aktualisierte Module im Block \'Letzte Aktivitäten\' anzeigen.';

@@ -73,13 +73,11 @@ class tool_dataprivacy_expired_data_requests_testcase extends data_privacy_testc
         // Create and approve data request.
         $this->setUser($studentuser->id);
         $datarequest = api::create_data_request($studentuser->id, api::DATAREQUEST_TYPE_EXPORT);
-        $this->setAdminUser();
-        ob_start();
-        $this->runAdhocTasks('\tool_dataprivacy\task\initiate_data_request_task');
         $requestid = $datarequest->get('id');
-        $this->setUser($dpouser->id);
-        api::approve_data_request($requestid);
         $this->setAdminUser();
+        api::approve_data_request($requestid);
+        $this->setUser();
+        ob_start();
         $this->runAdhocTasks('\tool_dataprivacy\task\process_data_request_task');
         ob_end_clean();
 
@@ -119,7 +117,6 @@ class tool_dataprivacy_expired_data_requests_testcase extends data_privacy_testc
         $this->assertEquals(0, $DB->count_records('files', $fileconditions));
     }
 
-
     /**
      * Test for \tool_dataprivacy\data_request::is_expired()
      * Tests for the expected request status to protect from false positive/negative,
@@ -144,7 +141,6 @@ class tool_dataprivacy_expired_data_requests_testcase extends data_privacy_testc
 
         // Approve the request.
         ob_start();
-        $this->runAdhocTasks('\tool_dataprivacy\task\initiate_data_request_task');
         $this->setAdminUser();
         api::approve_data_request($requestid);
         $this->runAdhocTasks('\tool_dataprivacy\task\process_data_request_task');

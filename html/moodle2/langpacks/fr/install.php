@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'install', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -116,7 +116,6 @@ $string['memorylimithelp'] = '<p>La limite de mémoire de PHP sur votre serveur 
 <blockquote><div>php_value memory_limit 40M</div></blockquote>
 <p>Cependant, sur certains serveurs, cela empêchera le fonctionnement correct de <b>tous</b> les fichiers PHP (vous verrez s\'afficher des erreurs lors de la consultation de pages). Dans ce cas, vous devrez supprimer le fichier « .htaccess ».</p></li>
 </ol>';
-$string['mssqlextensionisnotpresentinphp'] = 'La configuration de l\'extension MSSQL de PHP n\'a pas été effectuée correctement. De ce fait, PHP ne peut communiquer avec SQL*Server. Veuillez vérifier votre fichier « php.ini » ou recompiler PHP.';
 $string['mysqliextensionisnotpresentinphp'] = 'La configuration de l\'extension MySQLi de PHP n\'a pas été effectuée correctement. De ce fait, PHP ne peut communiquer avec MySQL. Veuillez contrôler votre fichier « php.ini » ou recompiler PHP.';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>La base de données permet l\'enregistrement de la plupart des réglages et des données de Moodle. Elle doit être configurée ici.</p>
@@ -124,8 +123,6 @@ $string['nativemariadbhelp'] = '<p>La base de données permet l\'enregistrement 
 <p>Le nom de la base de données ne doit comporter que des caractères alphanumériques, le dollar ($) et le caractère soulignement (_).</p>
 <p>Si la base de données n\'existe pas encore et que l\'utilisateur indiqué a les droits d\'accès requis, Moodle tentera de créer une nouvelle base de données avec les permissions et réglages adéquats.</p>
 <p>Ce pilote de base de données n\'est pas compatible avec le moteur MyISAM.</p>';
-$string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
-$string['nativemssqlhelp'] = 'Vous devez maintenant configurer la base de données où seront stockées les données de Moodle. Cette base de données doit être déjà créée, tout comme le nom d\'utilisateur et le mot de passe pour y accéder. Le préfixe des tables est obligatoire.';
 $string['nativemysqli'] = 'MySQL amélioré (natif, mysqli)';
 $string['nativemysqlihelp'] = '<p>La base de données permet l\'enregistrement de la plupart des réglages et des données de Moodle. Elle doit être configurée ici.</p>
 <p>Le nom de la base de données, son nom d\'utilisateur et son mot de passe sont des champs obligatoires ; le préfixe des tables est optionnel.</p>
@@ -178,7 +175,7 @@ $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'Vous voyez cette page, car vous avez installé Moodle correctement et lancé le logiciel <b>{$a->packname} {$a->packversion}</b> sur votre ordinateur. Félicitations !';
 $string['welcomep30'] = 'Cette version de <b>{$a->installername}</b> comprend des logiciels qui créent un environnement dans lequel <b>Moodle</b> va fonctionner, à savoir :';
 $string['welcomep40'] = 'Ce paquet contient également <b>Moodle {$a->moodlerelease} ({$a->moodleversion})</b>.';
-$string['welcomep50'] = 'L\'utilisation de tous les logiciels de ce paquet est soumis à l\'acceptation de leurs licences respectives. Le paquet <b>{$a->installername}</b> est un <a href="http://www.opensource.org/docs/definition_plain.html">logiciel libre</a>. Il est distribué sous licence <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
+$string['welcomep50'] = 'L\'utilisation de tous les logiciels de ce paquetage est soumis à l\'acceptation de leurs licences respectives. Le paquetage complet <strong>{$a->installername}</strong> est un <a href="https://www.opensource.org/docs/definition_plain.html">logiciel libre</a>. Il est distribué sous licence <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a>.';
 $string['welcomep60'] = 'Les pages suivantes vous aideront pas à pas à configurer et mettre en place <b>Moodle</b> sur votre ordinateur. Il vous sera possible d\'accepter les réglages par défaut ou, facultativement, de les adapter à vos propres besoins.';
 $string['welcomep70'] = 'Cliquer sur le bouton « Suivant » ci-dessous pour continuer l\'installation de <b>Moodle</b>.';
 $string['wwwroot'] = 'Adresse web';

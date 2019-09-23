@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_badges', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   block_badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['badges:addinstance'] = 'Добавлять новый блок «Мои последние значки»';
-$string['badges:myaddinstance'] = 'Добавлять новый блок «Мои последние значки» на страницу «Личный кабинет»';
+$string['badges:addinstance'] = 'Добавлять новый блок «Последние значки»';
+$string['badges:myaddinstance'] = 'Добавлять новый блок «Последние значки» на страницу «Личный кабинет»';
 $string['nothingtodisplay'] = 'У Вас нет значков для отображения';
 $string['numbadgestodisplay'] = 'Количество отображаемых последних значков';
 $string['pluginname'] = 'Последние значки';

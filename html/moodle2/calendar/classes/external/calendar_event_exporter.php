@@ -93,6 +93,8 @@ class calendar_event_exporter extends event_exporter_base {
 
         $values = parent::get_other_values($output);
         $event = $this->event;
+        $course = $this->related['course'];
+        $hascourse = !empty($course);
 
         // By default all events that can be edited are
         // draggable.
@@ -109,12 +111,9 @@ class calendar_event_exporter extends event_exporter_base {
             $values['editurl'] = $editurl->out(false);
         } else if ($event->get_type() == 'category') {
             $url = $event->get_category()->get_proxied_instance()->get_view_link();
-        } else if ($event->get_type() == 'course') {
-            $url = course_get_url($event->get_course()->get('id') ?: SITEID);
         } else {
             // TODO MDL-58866 We do not have any way to find urls for events outside of course modules.
-            $course = $event->get_course()->get('id') ?: SITEID;
-            $url = course_get_url($course);
+            $url = course_get_url($hascourse ? $course : SITEID);
         }
 
         $values['url'] = $url->out(false);
@@ -165,13 +164,10 @@ class calendar_event_exporter extends event_exporter_base {
         }
 
         // Include course's shortname into the event name, if applicable.
-        $course = $this->event->get_course();
-        if ($course && $course->get('id') && $course->get('id') !== SITEID) {
+        if ($hascourse && $course->id !== SITEID) {
             $eventnameparams = (object) [
                 'name' => $values['popupname'],
-                'course' => format_string($course->get('shortname'), true, [
-                        'context' => $this->related['context'],
-                    ])
+                'course' => $values['course']->shortname,
             ];
             $values['popupname'] = get_string('eventnameandcourse', 'calendar', $eventnameparams);
         }
@@ -180,7 +176,7 @@ class calendar_event_exporter extends event_exporter_base {
 
         if ($event->get_course_module()) {
             $values = array_merge($values, $this->get_module_timestamp_limits($event));
-        } else if ($course && $course->get('id') && $course->get('id') != SITEID && empty($event->get_group())) {
+        } else if ($hascourse && $course->id != SITEID && empty($event->get_group())) {
             // This is a course event.
             $values = array_merge($values, $this->get_course_timestamp_limits($event));
         }
@@ -198,6 +194,7 @@ class calendar_event_exporter extends event_exporter_base {
         $related['daylink'] = \moodle_url::class;
         $related['type'] = '\core_calendar\type_base';
         $related['today'] = 'int';
+        $related['moduleinstance'] = 'stdClass?';
 
         return $related;
     }
@@ -262,14 +259,11 @@ class calendar_event_exporter extends event_exporter_base {
      * @return array
      */
     protected function get_module_timestamp_limits($event) {
-        global $DB;
-
         $values = [];
         $mapper = container::get_event_mapper();
         $starttime = $event->get_times()->get_start_time();
         $modname = $event->get_course_module()->get('modname');
-        $modid = $event->get_course_module()->get('instance');
-        $moduleinstance = $DB->get_record($modname, ['id' => $modid]);
+        $moduleinstance = $this->related['moduleinstance'];
 
         list($min, $max) = component_callback(
             'mod_' . $modname,
@@ -380,11 +374,15 @@ class calendar_event_exporter extends event_exporter_base {
      * Get the correct minimum midnight day limit based on the event start time
      * and the module's minimum timestamp limit.
      *
+     * @deprecated since Moodle 3.6. Please use get_timestamp_min_limit().
+     * @todo final deprecation. To be removed in Moodle 4.0
      * @param DateTimeInterface $starttime The event start time
      * @param array $min The module's minimum limit for the event
      * @return array Returns an array with mindaytimestamp and mindayerror keys.
      */
     protected function get_module_timestamp_min_limit(\DateTimeInterface $starttime, $min) {
+        debugging('get_module_timestamp_min_limit() has been deprecated. Please call get_timestamp_min_limit() instead.',
+                DEBUG_DEVELOPER);
         return $this->get_timestamp_min_limit($starttime, $min);
     }
 
@@ -392,11 +390,15 @@ class calendar_event_exporter extends event_exporter_base {
      * Get the correct maximum midnight day limit based on the event start time
      * and the module's maximum timestamp limit.
      *
+     * @deprecated since Moodle 3.6. Please use get_timestamp_max_limit().
+     * @todo final deprecation. To be removed in Moodle 4.0
      * @param DateTimeInterface $starttime The event start time
      * @param array $max The module's maximum limit for the event
      * @return array Returns an array with maxdaytimestamp and maxdayerror keys.
      */
     protected function get_module_timestamp_max_limit(\DateTimeInterface $starttime, $max) {
+        debugging('get_module_timestamp_max_limit() has been deprecated. Please call get_timestamp_max_limit() instead.',
+                DEBUG_DEVELOPER);
         return $this->get_timestamp_max_limit($starttime, $max);
     }
 }

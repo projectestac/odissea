@@ -54,6 +54,12 @@ if ($hassiteconfig or has_any_capability($capabilities, $systemcontext)) {
     );
     //************ FI
     $ADMIN->add('courses',
+        new admin_externalpage('addnewcourse', new lang_string('addnewcourse'),
+            new moodle_url('/course/edit.php', array('category' => 0)),
+            array('moodle/category:manage')
+        )
+    );
+    $ADMIN->add('courses',
         new admin_externalpage('restorecourse', new lang_string('restorecourse', 'admin'),
             new moodle_url('/backup/restorefile.php', array('contextid' => context_system::instance()->id)),
             array('moodle/restore:restorecourse')
@@ -158,7 +164,6 @@ if ($hassiteconfig or has_any_capability($capabilities, $systemcontext)) {
     $temp->add(new admin_setting_configselect('moodlecourse/groupmodeforce', new lang_string('force'), new lang_string('coursehelpforce'), 0,array(0 => new lang_string('no'), 1 => new lang_string('yes'))));
 
     $ADMIN->add('courses', $temp);
-
 
     // "courserequests" settingpage.
     $temp = new admin_settingpage('courserequest', new lang_string('courserequest'));
@@ -339,7 +344,7 @@ if ($hassiteconfig or has_any_capability($capabilities, $systemcontext)) {
     $temp->add(new admin_setting_configcheckbox('backup/backup_auto_skip_modif_prev', new lang_string('skipmodifprev', 'backup'), new lang_string('skipmodifprevhelp', 'backup'), 0));
 
     // Automated defaults section.
-    $temp->add(new admin_setting_heading('automatedsettings', new lang_string('automatedsettings','backup'), ''));
+    $temp->add(new admin_setting_heading('automatedsettings', new lang_string('automatedsettings','backup'), new lang_string('recyclebin_desc', 'backup')));
     $temp->add(new admin_setting_configcheckbox('backup/backup_auto_users', new lang_string('generalusers', 'backup'), new lang_string('configgeneralusers', 'backup'), 1));
     $temp->add(new admin_setting_configcheckbox('backup/backup_auto_role_assignments', new lang_string('generalroleassignments','backup'), new lang_string('configgeneralroleassignments','backup'), 1));
     $temp->add(new admin_setting_configcheckbox('backup/backup_auto_activities', new lang_string('generalactivities','backup'), new lang_string('configgeneralactivities','backup'), 1));

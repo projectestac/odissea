@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'atto_media', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['descriptionssourcelabel'] = 'URL traccia descrzioni';
 $string['displayoptions'] = 'Opzioni di visualizzazione';
 $string['entername'] = 'Inserisci nome';
 $string['entersource'] = 'URL sorgente';
+$string['entertitle'] = 'Inserisci il titolo';
 $string['enterurl'] = 'Inserisci URL';
 $string['height'] = 'Altezza';
 $string['kind'] = 'Tipo';
@@ -66,7 +67,7 @@ $string['metadata'] = 'Metadati';
 $string['metadata_help'] = 'Tracce dei metadati, utilizzabili da script. Saranno utilizzate solo dai riproduttori che supportano i metadati.';
 $string['metadatasourcelabel'] = 'URL traccia metadati';
 $string['mute'] = 'Muto';
-$string['pluginname'] = 'Media';
+$string['pluginname'] = 'Inserisci/modifica audio/video';
 $string['poster'] = 'URL della miniatura';
 $string['privacy:metadata'] = 'Il plugin atto_media non memorizza dati personali.';
 $string['remove'] = 'Elimina';
@@ -77,7 +78,7 @@ $string['subtitles_help'] = 'I sottotitoli sono utili per fornire il testo o la 
 $string['subtitlessourcelabel'] = 'URL della traccia sottotitoli';
 $string['track'] = 'URL della traccia';
 $string['tracks'] = 'Sottotitoli e didascalie';
-$string['tracks_help'] = 'I sottotitoli, le didascalie, i capitoli e le descrizioni possono essere inserito tramite il formato file WebVTT (Web Video Text Tracks). Le etichette delle tracce saranno visualizzate nel menu di selezione a discesa. Per ciascun tipo di traccia, all\'avvio del video sarà selezionata la traccia impostata come default.';
+$string['tracks_help'] = 'I sottotitoli, le didascalie, i capitoli e le descrizioni possono essere inseriti tramite il formato file WebVTT (Web Video Text Tracks). Le etichette delle tracce saranno visualizzate nel menu di selezione a discesa. Per ciascun tipo di traccia, all\'avvio del video sarà selezionata la traccia impostata come default.';
 $string['video'] = 'Video';
 $string['videoheight'] = 'Altezza video';
 $string['videosourcelabel'] = 'URL sorgente video';

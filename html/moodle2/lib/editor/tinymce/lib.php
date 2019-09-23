@@ -146,10 +146,12 @@ class tinymce_texteditor extends texteditor {
                 'insertdatetime,save,iespell,preview,print,noneditable,visualchars,' .
                 'xhtmlxtras,template,pagebreak',
             //************ ORIGINAL
-            //'plugins' => 'lists,table,style,layer,advhr,advlink,emotions,inlinepopups,' .
-            //    'searchreplace,paste,directionality,fullscreen,nonbreaking,contextmenu,' .
-            //    'insertdatetime,save,iespell,preview,print,noneditable,visualchars,' .
-            //    'xhtmlxtras,template,pagebreak',
+            /*
+            'plugins' => 'lists,table,style,layer,advhr,advlink,emotions,inlinepopups,' .
+                'searchreplace,paste,directionality,fullscreen,nonbreaking,contextmenu,' .
+                'insertdatetime,save,iespell,preview,print,noneditable,visualchars,' .
+                'xhtmlxtras,template,pagebreak',
+            */
             //************ FI
             'gecko_spellcheck' => true,
             'theme_advanced_font_sizes' => "1,2,3,4,5,6,7",

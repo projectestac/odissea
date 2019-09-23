@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'search', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['advancedsearch'] = 'Расширенный поиск';
 $string['all'] = 'Всё';
 $string['allareas'] = 'Все области';
 $string['allcourses'] = 'Все курсы';
+$string['allusers'] = 'Все пользователи';
 $string['author'] = 'Автор';
 $string['authorname'] = 'Имя автора';
 $string['back'] = 'Назад';
@@ -38,11 +39,16 @@ $string['checkdbadvice'] = 'Проверить базу данных на пре
 $string['checkdir'] = 'Проверить папку';
 $string['checkdiradvice'] = 'Удостоверьтесь, что папка данных существует и доступна для записи.';
 $string['commenton'] = 'Комментарий к';
+$string['confirm_delete'] = 'Вы уверены, что хотите удалить индекс для {$a}? Пока область поиска не будет проиндексирована, пользователи не смогут получить результаты поиска из этой области.';
+$string['confirm_deleteall'] = 'Вы уверены, что хотите сейчас удалить всё проиндексированное содержимое? Пока сайт не будет снова проиндексирован, пользователи не смогут получить результаты поиска.';
+$string['confirm_indexall'] = 'Вы уверены, что хотите сейчас обновить всё проиндексированное содержимое? Если нужно индексировать большой объем контента, это может занять длительное время. Для рабочих серверов обычно Вы должны оставлять индексирование запланированной задаче «Построение глобального поискового индекса».';
+$string['confirm_reindexall'] = 'Вы уверены, что хотите сейчас переиндексировать всё содержимое сайта? Если Ваш сайт содержит большой объем контента, это может занять длительное время и пользователи не будут получать полные результаты поиска до завершения переиндексации.';
 $string['createanindex'] = 'создать индекс';
 $string['createdon'] = 'Создан';
 $string['database'] = 'База данных';
 $string['databasestate'] = 'Состояние индексирования базы данных';
 $string['datadirectory'] = 'Папка данных';
+$string['deleteindex'] = 'Удалить индекс {$a}';
 $string['deletionsinindex'] = 'Удаления в индексах';
 $string['docmodifiedon'] = 'Последнее изменение - {$a}';
 $string['doctype'] = 'Тип документа';
@@ -61,11 +67,15 @@ $string['enteryoursearchquery'] = 'Введите ваш поисковый за
 $string['errorareanotavailable'] = 'Область поиска «{$a}» не доступна.';
 $string['error_indexing'] = 'Во время индексации произошла ошибка';
 $string['errors'] = 'Ошибки';
+$string['everywhere'] = 'В любом месте, куда у вас есть доступ';
 $string['filesinindexdirectory'] = 'Файлы в индексной папке';
 $string['filterheader'] = 'Фильтр';
 $string['fromtime'] = 'Изменено после';
 $string['globalsearch'] = 'Глобальный поиск';
 $string['globalsearchdisabled'] = 'Глобальный поиск не включен.';
+$string['gradualreindex'] = 'Частичная переиндексация {$a}';
+$string['gradualreindex_confirm'] = 'Вы уверены, что хотите переиндексировать {$a}? Это может занять определенное время, хотя существующие данные будут доступны во время переиндексации.';
+$string['gradualreindex_queued'] = 'Переиндексация была запрошена для {$a->name} ({$a->count} контекстов). Эта индексация будет выполняться запланированной задачей «Построение глобального поискового индекса».';
 $string['incourse'] = 'в курсе «{$a}»';
 $string['index'] = 'Индекс';
 $string['invalidindexerror'] = 'Папка индекса содержит не корректный индекс или пуста';
@@ -79,11 +89,21 @@ $string['normalsearch'] = 'Обычный поиск';
 $string['notitle'] = 'Нет заголовка';
 $string['openedon'] = 'открыто';
 $string['optimize'] = 'Оптимизировать';
+$string['order'] = 'Сортировка результатов';
+$string['order_location'] = 'Приоритет результатов, связанных с {$a}';
+$string['order_relevance'] = 'Наиболее релевантные результаты первыми';
+$string['priority'] = 'Приоритет';
+$string['priority_normal'] = 'Обычный';
+$string['priority_reindexing'] = 'Переиндексация';
 $string['privacy:metadata'] = 'Подсистема поиска не хранит никаких персональных данных.';
+$string['progress'] = 'Прогресс';
 $string['queryerror'] = 'Введенный Вами запрос не может быть проанализирован поисковой машиной: {$a}';
+$string['queueheading'] = 'Дополнительная очередь индексирования (элементов: {$a})';
 $string['resultsreturnedfor'] = 'результаты возвращены для';
 $string['runindexer'] = 'Запустить индексирование';
 $string['runindexertest'] = 'Запустить тест индексирования';
+$string['schemanotupdated'] = 'Схема поиска устарела.';
+$string['schemaversionunknown'] = 'Поисковая машина не знает о текущей версии схемы.';
 $string['score'] = 'Очки';
 $string['search'] = 'Поиск';
 $string['searcharea'] = 'Область поиска';
@@ -92,8 +112,10 @@ $string['search:message_received'] = 'Полученные сообщения';
 $string['search:message_sent'] = 'Отправленные сообщения';
 $string['search:mycourse'] = 'Мои курсы';
 $string['searchnotpermitted'] = 'Вам не разрешено использовать поиск';
+$string['search:section'] = 'Разделы курса';
 $string['searchsetupdescription'] = 'Следующие шаги помогут Вам настроить глобальный поиск в Moodle.';
 $string['search:user'] = 'Пользователи';
+$string['searchwithin'] = 'Искать в';
 $string['seconds'] = 'секунд';
 $string['solutions'] = 'Решения';
 $string['statistics'] = 'Статистика';

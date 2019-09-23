@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'editor_atto', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,7 +49,7 @@ $string['recover'] = '回復';
 $string['settings'] = 'Attoツールバー設定';
 $string['subplugintype_atto'] = 'Attoプラグイン';
 $string['subplugintype_atto_plural'] = 'Attoプラグイン';
-$string['taskautosavecleanup'] = 'データベースから期限切れのオートセーブ下書きを削除する';
+$string['taskautosavecleanup'] = '期限切れのオートセーブ下書きを削除する';
 $string['textrecovered'] = 'このテキストの下書きバージョンが自動的にリストアされました。';
 $string['toolbarconfig'] = 'ツールバー設定';
 $string['toolbarconfig_desc'] = 'ここではプラグイン一覧および表示順を設定することができます。設定にはグループ (1行あたり1件) およびそのグループに関するプラグインの順番付きリストを含みます。グループは等号によりプラグインと分離されプラグインはカンマで分離されます。グループ名をユニークにしてボタンを共通していることを示す必要があります。ボタンおよびグループ名は繰り返さずに半角英数字のみを使用してください。';

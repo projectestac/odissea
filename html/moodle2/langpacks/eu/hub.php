@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'hub', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -172,7 +172,7 @@ $string['registeredmoodleorg'] = 'Moodle ({$a})';
 $string['registeredon'] = 'Non dago erregistratuta zure gunea';
 $string['registeredsites'] = 'Erregistratutako guneak';
 $string['registereduserdevices'] = 'Erregistratutako gailu mugikorrak duen erabiltzaile-kopurua ({$a})';
-$string['registermoochtips'] = 'Erregistratu zure Moodle gunea segurtasun-abisuak jasotzeko eta Moodle.net-era sartzeko, gure plataforma ikastaroak partekatzeko';
+$string['registermoochtips'] = 'Gunea erregistratuz gero, segurtasun-abisuak jasoko dituzu, zure gunean Moodle app-aren push jakinarazpenak gaitu ahalko dituzu eta mundu mailako gure Moodle komunitatearen estatistikei ekarpena egingo diezu.';
 $string['registersite'] = 'Erregistratu hemen: {$a}';
 $string['registerwith'] = 'Erregistratu bilgune batean';
 $string['registrationconfirmed'] = 'Gunearen erregistroa baieztatuta';
@@ -246,7 +246,7 @@ $string['siteurl'] = 'Gunearen URLa';
 $string['siteurl_help'] = 'URL hau gunearen helbidea da. Pribatutasun-ezerpenek jendeak guneko helbidea ikustea baimenduz gero, URL hau erabiliko da horretarako.';
 $string['siteversion'] = 'Moodle bertsioa';
 $string['siteversion_help'] = 'Gune honen Moodle-ren bertsioa.';
-$string['skipregistration'] = 'Alde batera utzi';
+$string['skipregistration'] = 'Utzi alde batera';
 $string['specifichubregistrationdetail'] = 'Zeure gunea beste bilgune batzuetan ere erregistra dezakezu';
 $string['statistics'] = 'Pribatutasun-estatistikak';
 $string['status'] = 'Zerrendatzearen egoera';

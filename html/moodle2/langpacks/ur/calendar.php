@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ur', branch 'MOODLE_34_STABLE'
+ * Strings for component 'calendar', language 'ur', branch 'MOODLE_36_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,6 @@ $string['explain_site_timeformat'] = 'آپ منتخب کرسکتے ہیں کہ
 $string['export'] = 'برآمد کرو';
 $string['exportbutton'] = 'برآمد کرو';
 $string['exportcalendar'] = 'تقویم برآمد کرو';
-$string['for'] = 'کے لیے';
 $string['fri'] = 'جمعہ';
 $string['friday'] = 'جمعہ';
 $string['generateurlbutton'] = 'تقویم کا یو آر ایل حاصل کرو';

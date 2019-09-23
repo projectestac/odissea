@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignment', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,4 +43,3 @@ $string['page-mod-assignment-x'] = 'Pàgina de qualsevol mòdul de tasques';
 $string['pluginadministration'] = 'Administració de Tasques 2.2 (inhabilitat)';
 $string['pluginname'] = 'Tasca (2.2) (inhabilitat)';
 $string['upgradenotification'] = 'Aquesta activitat es basa en un mòdul de tasca antic.';
-$string['viewassignmentupgradetool'] = 'Visualitza l\'eina d\'actualització de la tasca';

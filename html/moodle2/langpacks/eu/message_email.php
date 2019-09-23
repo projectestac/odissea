@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'message_email', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   message_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['privacy:metadata:attachment'] = 'Fitxategi-sistemako fitxategi bat.';
 $string['privacy:metadata:attachname'] = 'Erantsitako fitxategiaren izena (luzapenak MIME mota adierazten du).';
 $string['privacy:metadata:externalpurpose'] = 'Informazio hau kanpoko SMTP zerbitzari batera bidaltzen da jasotzaileari e-posta gisa helarazteko.';
 $string['privacy:metadata:fullmessage'] = 'Mezu osoa emandako formatuan.';
-$string['privacy:metadata:fullmessagehtml'] = 'Mezuaren bertsio osoa';
+$string['privacy:metadata:fullmessagehtml'] = 'Mezuaren bertsio osoa.';
 $string['privacy:metadata:recipient'] = 'Mezuaren jasotzailea.';
 $string['privacy:metadata:replyto'] = 'Erantzuteko e-posta helbidea.';
 $string['privacy:metadata:replytoname'] = 'Erantzuteko jasotzailearen izena.';

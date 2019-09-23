@@ -472,7 +472,9 @@ class cache_config_writer extends cache_config {
                 //2014.08.12 @pferre2
                 'configuration' => $file_config,
                 //************ ORIGINAL
-                //'configuration' => array(),
+                /*
+                'configuration' => array(),
+                */
                 //************ FI
                 'features' => cachestore_file::get_supported_features(),
                 'modes' => cachestore_file::get_supported_modes(),

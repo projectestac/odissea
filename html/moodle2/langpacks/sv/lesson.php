@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'lesson', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -127,7 +127,6 @@ $string['completed'] = 'Avslutad';
 $string['completederror'] = 'Fullfölj lektionen';
 $string['completethefollowingconditions'] = 'Du måste uppfylla följande villkor i <b>{$a}</b> lektion innan Du kan fortsätta.';
 $string['conditionsfordependency'] = 'Villkor för beroendet';
-$string['configactionaftercorrectanswer'] = 'Det standardmässiga förvalet av åtgärd efter rätt svar';
 $string['configmaxanswers'] = 'Det standardmässiga förvalet av maximalt antal svar per sida';
 $string['configmediaclose'] = 'Visar en stängningsknapp som en del av det popup-fönster som skapas för en länkad mediafil';
 $string['configmediaheight'] = 'Avgör höjden på det popup-fönster som visas för en länkad mediafil';

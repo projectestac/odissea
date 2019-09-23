@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,9 @@ $string['configgeneralactivities'] = '缺省情况下，备份是否包含各种
 $string['configgeneralanonymize'] = '如果激活，会默认将与用户有关的信息匿名化。';
 $string['configgeneralbadges'] = '缺省情况下，备份包含奖章。';
 $string['configgeneralblocks'] = '缺省情况下，备份是否包含各个版块。';
+$string['configgeneralcalendarevents'] = '设置默认在备份中包括日历事件。';
 $string['configgeneralcomments'] = '缺省情况下，备份是否包含评论。';
+$string['configgeneralcompetencies'] = '设置默认在备份中包含能力。';
 $string['configgeneralfilters'] = '缺省情况下，备份是否包含过滤器。';
 $string['configgeneralgroups'] = '为包括在分组和备份中的分组设置默认值。';
 $string['configgeneralhistories'] = '缺省情况下，备份是否包含用户的历史记录。';
@@ -100,7 +102,13 @@ $string['configgeneralquestionbank'] = '如果启用，默认备份题库。
 $string['configgeneralroleassignments'] = '如果激活，会默认备份角色分配情况。';
 $string['configgeneralusers'] = '缺省情况下，备份是否包含用户。';
 $string['configgeneraluserscompletion'] = '如果启用，会默认在备份中包含用户的课程完成信息。';
+$string['config_keep_groups_and_groupings'] = '默认保留当前组和分组。';
+$string['config_keep_roles_and_enrolments'] = '默认保留当前角色和选课。';
 $string['configloglifetime'] = '这里设置将备份的日志信息保留多久。超过此期限的日志会被自动删除。建议把此值设得小一些，因为备份的日志可能会很大。';
+$string['config_overwrite_conf'] = '允许用户覆盖当前课程配置';
+$string['config_overwrite_course_fullname'] = '默认用备份文件中的全名覆盖课程全名。需要已选定 "覆盖课程配置", 同时当前用户有权限更改课程全名 (moodle/课程: 更改命名)';
+$string['config_overwrite_course_shortname'] = '默认用备份文件中的全名覆盖课程短名。需要已选定 "覆盖课程配置", 同时当前用户有权限更改课程短名 (moodle/课程: 更改短名)';
+$string['config_overwrite_course_startdate'] = '默认用备份文件中的开始日期覆盖课程开始日期。需要已选定 "覆盖课程配置", 并且当前用户有权限还原课程日期 (moodle/还原: 还原日期)';
 $string['configrestoreactivities'] = '设置恢复活动的默认值。';
 $string['configrestorebadges'] = '设置恢复奖章的默认值。';
 $string['configrestoreblocks'] = '设置恢复版块的默认值。';
@@ -109,6 +117,8 @@ $string['configrestorecomments'] = '设置恢复评论的默认值。';
 $string['configrestorecompetencies'] = '设置恢复能力的默认值。';
 $string['configrestoreenrolments'] = '设置恢复选课方法的默认值。';
 $string['configrestorefilters'] = '设置恢复过滤器的默认值。';
+$string['configrestoregroups'] = '设置还原组和分组 (如果它们包含在备份中) 的默认值。';
+$string['configrestorehistories'] = '设置还原用户历史记录 (如果包含在备份中) 的默认值。';
 $string['configrestorelogs'] = '如果启用，如果在备份中包含了日志，则默认恢复日志。';
 $string['configrestoreroleassignments'] = '如果启用，默认情况下包含在备份中的角色分配将被恢复。';
 $string['configrestoreusers'] = '设置默认值，是否恢复包含在备份中的用户。';
@@ -220,12 +230,19 @@ $string['overwrite'] = '覆盖';
 $string['preparingdata'] = '数据准备中';
 $string['preparingui'] = '准备显示页面';
 $string['previousstage'] = '上一步';
+$string['privacy:metadata:backup_controllers'] = '备份操作列表';
 $string['privacy:metadata:backup_controllers:itemid'] = '课程编号';
+$string['privacy:metadata:backup_controllers:operation'] = '已执行的操作 例如，恢复。';
+$string['privacy:metadata:backup_controllers:timecreated'] = '操作创建时间';
+$string['privacy:metadata:backup_controllers:timemodified'] = '操作修改时间';
+$string['privacy:metadata:backup_controllers:type'] = '正在操作的对象的类型, 如，活动。';
 $string['privacy:metadata:backup:detailsofarchive'] = '此存档可以包含与课程相关的各种用户数据, 如成绩、用户注册和活动数据。';
+$string['privacy:metadata:backup:externalpurpose'] = '此存档的目的是存储与课程相关的信息, 将来可能会还原该课程。';
 $string['qcategory2coursefallback'] = '备份文件中的题目类别“{$a->name}”原来是在系统/课程级类别中，恢复后将建立在课程级类别';
 $string['qcategorycannotberestored'] = '恢复过程中不能创建题目类别“{$a->name}”';
 $string['question2coursefallback'] = '备份文件中的题目类别“{$a->name}”原来是在系统/课程级类别中，恢复后将建立在课程级类别';
 $string['questionegorycannotberestored'] = '这些题目“{$a->name}”不能用还原来创建';
+$string['recyclebin_desc'] = '这些设置也将应用于回收站';
 $string['replacerestoredefaults'] = '当恢复到另一个删除内容的课程时，恢复的默认值';
 $string['restoreactivity'] = '恢复活动';
 $string['restorecourse'] = '恢复课程';
@@ -315,5 +332,6 @@ $string['timetaken'] = '耗时';
 $string['title'] = '标题';
 $string['totalcategorysearchresults'] = '分类总数：{$a}';
 $string['totalcoursesearchresults'] = '课程总数：{$a}';
+$string['undefinedrolemapping'] = '未定义"{$A}" 结构原型的角色映射。';
 $string['unnamedsection'] = '未命名的小节';
 $string['userinfo'] = '用户资料';

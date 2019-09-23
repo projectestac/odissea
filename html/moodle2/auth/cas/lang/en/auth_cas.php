@@ -75,4 +75,3 @@ $string['noldapserver'] = 'No LDAP server configured for CAS! Syncing disabled.'
 $string['pluginname'] = 'CAS server (SSO)';
 $string['synctask'] = 'CAS users sync job';
 $string['privacy:metadata'] = 'The CAS server (SSO) authentication plugin does not store any personal data.';
-

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_rss_client', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,13 +74,14 @@ $string['privacy:metadata:block_rss_client:tableexplanation'] = 'Informatie van 
 $string['privacy:metadata:block_rss_client:title'] = 'De titel van de RSS-feed.';
 $string['privacy:metadata:block_rss_client:url'] = 'De URL van de RSS-feed.';
 $string['privacy:metadata:block_rss_client:userid'] = 'De ID van de gebruiker die de RSS-feed toegevoegd heeft.';
+$string['refreshfeedstask'] = 'Ververs RSS-feeds taak';
 $string['remotenewsfeed'] = 'In het nieuws';
 $string['rss_client:addinstance'] = 'Voeg een nieuw RSS-feedblok toe';
 $string['rss_client:createprivatefeeds'] = 'Maak private RSS-feeds';
 $string['rss_client:createsharedfeeds'] = 'Maak gedeelde RSS-feeds';
 $string['rss_client:manageanyfeeds'] = 'Beheer alle RSS-feeds';
 $string['rss_client:manageownfeeds'] = 'Beheer eigen RSS-feeds';
-$string['rss_client:myaddinstance'] = 'Voeg een nieuw RSS-feedblok toe aan Mijn startpagina.';
+$string['rss_client:myaddinstance'] = 'Voeg een nieuw externe RSS-feedblok toe aan Mijn startpagina';
 $string['seeallfeeds'] = 'Bekijk alle RSS-feeds';
 $string['sharedfeed'] = 'Gedeelde RSS-feed';
 $string['shownumentrieslabel'] = 'Maximale aantal items per blok.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_comments', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopform_comments', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopform_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'さらに {$a} 個の空白アスペクトを追加する';
-$string['dimensioncomment'] = 'コメント';
 $string['dimensioncommentfor'] = '{$a} のコメント';
 $string['dimensiondescription'] = '説明';
 $string['dimensionnumber'] = 'アスペクト {$a}';

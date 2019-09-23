@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_flatfile', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['flatfilesync'] = 'Sincronización do ficheiro simple de matrícula';
 $string['flatfile:unenrol'] = 'Desmatricular manualmente os usuarios do curso';
 $string['location'] = 'Localización do ficheiro';
 $string['location_desc'] = 'Especifique a ruta completa ao ficheiro de matriculación. Este ficheiro elimínase automaticamente despois do procesamento.';
-$string['mapping'] = 'Mapeo do ficheiro simple de matrícula';
+$string['mapping'] = 'Asignación do ficheiro simple de matrícula';
 $string['messageprovider:flatfile_enrolment'] = 'Mensaxes do ficheiro simple de matrícula';
 $string['notifyadmin'] = 'Notificarlle ao administrador';
 $string['notifyenrolled'] = 'Notificarlle os usuarios matriculados';
@@ -45,23 +45,24 @@ $string['pluginname'] = 'Ficheiro simple (CSV)';
 $string['pluginname_desc'] = 'Este método comprobará repetidamente e procesará un ficheiro de texto formatado especialmente na localización que vostede especifique.
 O ficheiro contén os valores separados por comas e asúmese que ten entre catro e seis campos por liña:
 
- operation, role, user idnumber, course idnumber [, starttime [, endtime]]
+    operation, role, user idnumber, course idnumber [, starttime [, endtime]]
 
-where:
+onde:
 
-* operation - add | del * role - student | teacher | teacheredit
-* user idnumber - idnumber in the user table NB not id
-* course idnumber - idnumber in the course table NB not id
-* starttime - start time (in seconds since epoch) - optional
-* endtime - end time (in seconds since epoch) - optional
+* operation - add | del
+* role - student | teacher | teacheredit
+* user idnumber - idnumber na táboa de usuarios MAIS NON É Id
+* course idnumber - idnumber na táboa do curso MAIS NON É Id
+* starttime - hora de inicio (en segundos dende epoch) - opcional
+* endtime - hora de término (en segundos dende epoch) - opcional
 
 Podería resultar algo así:
 
 <pre class="informationbox">
-add, student, 5, CF101
-add, teacher, 6, CF101
-add, teacheredit, 7, CF101
-del, student, 8, CF101
+   add, student, 5, CF101
+   add, teacher, 6, CF101
+   add, teacheredit, 7, CF101
+   del, student, 8, CF101
 del, student, 17, CF101
 add, student, 21, CF101, 1091115000, 1091215000
 </pre>';

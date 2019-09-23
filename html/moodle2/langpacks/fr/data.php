@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,7 @@ $string['availablefromdate'] = 'Disponible du';
 $string['availabletags'] = 'Balises disponibles';
 $string['availabletags_help'] = 'Les balises sont des paramètres du modèle, qui seront remplacés par des champs ou d\'autres éléments, par exemple une icône d\'édition, lorsque les fiches sont modifiées ou affichées.
 
-Les champs ont le format [[nom_de_champ]]. Toutes les autres balises sont formatées ainsi  ##une_balise##.
+Les champs ont le format [[nom_de_champ]]. Toutes les autres balises sont formatées ainsi ##une_balise##.
 
 Seules les balises dans la liste des « Balises disponibles » peuvent être utilisées dans le modèle actuel.';
 $string['availabletodate'] = 'Disponible jusqu\'au';
@@ -68,6 +68,7 @@ $string['checkbox'] = 'Case à cocher';
 $string['chooseexportfields'] = 'Sélectionnez les champs que vous voulez exporter :';
 $string['chooseexportformat'] = 'Sélectionnez le format d\'exportation désiré :';
 $string['chooseorupload'] = 'Sélectionner un fichier';
+$string['closebeforeopen'] = 'Vous avez indiqué une date de fin antérieure à la date de début.';
 $string['columns'] = 'colonnes';
 $string['comment'] = 'Commentaire';
 $string['commentdeleted'] = 'Commentaire supprimé';
@@ -92,7 +93,7 @@ $string['csvwithselecteddelimiter'] = 'Texte <acronym title="Comma Separated Val
 $string['data:addinstance'] = 'Ajouter une base de données';
 $string['data:approve'] = 'Approuver ou retirer l\'approbation de fiches';
 $string['data:comment'] = 'Écrire des commentaires';
-$string['data:exportallentries'] = 'Export toutes les fiches d\'une base de données';
+$string['data:exportallentries'] = 'Exporter toutes les fiches d\'une base de données';
 $string['data:exportentry'] = 'Exporter des fiches de base de données';
 $string['data:exportownentry'] = 'Exporter ses propres fiches de base de données';
 $string['data:exportuserinfo'] = 'Exporter l\'information de l\'utilisateur';
@@ -171,8 +172,7 @@ $string['fieldheightlistview'] = 'Hauteur en affichage liste';
 $string['fieldheightsingleview'] = 'Hauteur en affichage fiche';
 $string['fieldids'] = 'Identifiants de champs';
 $string['fieldmappings'] = 'Correspondance des champs';
-$string['fieldmappings_help'] = 'Ce menu vous permet de conserver des données de la base de données existante. Pour préserver les données d\'un champ, vous devez faire correspondre ce champ à un nouveau champ, dans lequel apparaîtront les données. Les champs peuvent aussi être laissé vides, sans qu\'aucune donnée n\'y soit copiée. Les anciens champs n\'étant pas mis en correspondance avec un nouveau seront supprimés, et toutes les données qu\'ils contenaient seront perdues.
-Vous ne pouvez mettre en correspondance que des champs de même type. Les deux menus déroulants comporteront des champs différents. Veuillez en outre faire attention à ne pas mettre en correspondance un ancien champ avec plus d\'un nouveau.';
+$string['fieldmappings_help'] = 'Ce menu vous permet de conserver des données de la base de données existante. Pour préserver les données d\'un champ, vous devez faire correspondre ce champ à un nouveau champ, dans lequel apparaîtront les données. Les champs peuvent aussi être laissé vides, sans qu\'aucune donnée n\'y soit copiée. Les anciens champs n\'étant pas mis en correspondance avec un nouveau seront supprimés, et toutes les données qu\'ils contenaient seront perdues. Vous ne pouvez mettre en correspondance que des champs de même type. Les deux menus déroulants comporteront des champs différents. Veuillez en outre faire attention à ne pas mettre en correspondance un ancien champ avec plus d\'un nouveau.';
 $string['fieldname'] = 'Nom du champ';
 $string['fieldnotmatched'] = 'Les champs suivants de votre fichier n\'existent pas dans cette base de données : {$a}';
 $string['fieldoptions'] = 'Options (une par ligne)';
@@ -193,10 +193,10 @@ $string['fromfile'] = 'Importer d\'un fichier zip';
 $string['fromfile_help'] = 'Utilisez cette fonctionnalité pour importer des préréglages que vous avez enregistrés auparavant sur votre propre ordinateur en les exportant.';
 $string['generateerror'] = 'Erreur de génération de certains fichiers !';
 $string['header'] = 'Entête';
-$string['headeraddtemplate'] = 'Définit l\'interface présentée lors de la modification de fiches';
-$string['headerasearchtemplate'] = 'Définit l\'interface présentée pour les recherches avancées';
+$string['headeraddtemplate'] = 'Définit l\'interface présentée lors de l\'ajout ou de la modification de fiches';
+$string['headerasearchtemplate'] = 'Définit l\'interface présentée pour la recherche avancée';
 $string['headercsstemplate'] = 'Définit les styles CSS des autres modèles';
-$string['headerjstemplate'] = 'Définit du code Javascript utilisable dans les autres modèles';
+$string['headerjstemplate'] = 'Définit du code Javascript pout modifier la façon dont sont présentés les éléments dans les modèles Liste, Simple et Ajout';
 $string['headerlisttemplate'] = 'Définit l\'interface présentée lors de la consultation de plusieurs fiches';
 $string['headerrsstemplate'] = 'Définit l\'aspect des fiches dans les flux RSS';
 $string['headersingletemplate'] = 'Définit l\'interface présentée lors de la consultation d\'une fiche';
@@ -263,18 +263,6 @@ $string['movezipfailed'] = 'Impossible de déplacer le fichier zip';
 $string['multientry'] = 'Fiche répétée';
 $string['multimenu'] = 'Menu (sélection multiple)';
 $string['multipletags'] = 'Plusieurs balises ont été trouvées ! Le modèle n\'a pas été enregistré';
-$string['namecheckbox'] = 'Champ case à cocher';
-$string['namedate'] = 'Champ date';
-$string['namefile'] = 'Champ fichier';
-$string['namelatlong'] = 'Champ latitude/longitude';
-$string['namemenu'] = 'Champ menu';
-$string['namemultimenu'] = 'Champ menu à sélection multiple';
-$string['namenumber'] = 'Champ nombre';
-$string['namepicture'] = 'Champ image';
-$string['nameradiobutton'] = 'Champ bouton radio';
-$string['nametext'] = 'Champ texte';
-$string['nametextarea'] = 'Champ zone de texte';
-$string['nameurl'] = 'Champ URL';
 $string['newentry'] = 'Nouvelle fiche';
 $string['newfield'] = 'Créer un nouveau champ';
 $string['newfield_help'] = 'Un champ permet de saisir des données. Chaque enregistrement d\'une activité base de données peut avoir plusieurs champs de divers types, par exemple un champ de type date, qui permet à l\'utilisateur de saisir une date à partir d\'un menu déroulant, un champ de type image, lui permettant de déposer un fichier image, ou un champ de type case à cocher, lui permettant de choisir une ou plusieurs options.
@@ -297,6 +285,7 @@ $string['numberrssarticles'] = 'Fiches dans le flux RSS';
 $string['numnotapproved'] = 'En attente';
 $string['numrecords'] = '{$a} fiches';
 $string['ods'] = 'Document <acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['openafterclose'] = 'Vous avez indiqué une date de début postérieure à la date de fin.';
 $string['optionaldescription'] = 'Brève description (facultative)';
 $string['optionalfilename'] = 'Nom affiché (facultatif)';
 $string['other'] = 'Autre';

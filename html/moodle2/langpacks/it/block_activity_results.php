@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_activity_results', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,7 @@ $string['defaulthighestgrades_desc'] = 'Imposta il numero di valutazioni più al
 $string['defaultlowestgrades'] = 'Numero di valutazioni più basse visualizzate di default';
 $string['defaultlowestgrades_desc'] = 'Imposta il numero di valutazioni più basse visualizzate di default';
 $string['defaultnameoptions'] = 'Privacy dei risultati';
-$string['defaultnameoptions_desc'] = 'La modalità tramite la quale gli studenti saranno identificati.';
+$string['defaultnameoptions_desc'] = 'La modalità tramite la quale saranno identificati gli studenti.';
 $string['defaultshowgroups'] = 'Visualizza gruppi di default';
 $string['defaultshowgroups_desc'] = 'Di default saranno visualizzati gruppi al posto degli studenti (solo se l\'attività supporta i gruppi)';
 $string['error_emptyactivityid'] = 'Per favore configura il blocco selezionando l\'attività dalla quale saranno tratti i risultati da visualizzare.';

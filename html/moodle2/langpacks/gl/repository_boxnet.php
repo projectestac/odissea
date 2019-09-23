@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_boxnet', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_boxnet', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,7 @@ $string['invalidpassword'] = 'Contrasinal incorrecto';
 $string['nullfilelist'] = 'Non hai ficheiros neste repositorio';
 $string['password'] = 'Contrasinal';
 $string['pluginname'] = 'Box.net';
-$string['pluginname_help'] = 'Repositorio en Box.net';
+$string['pluginname_help'] = 'Repositorio en Box';
 $string['privacy:metadata:repository_boxnet'] = 'O engadido de repositorio en Box almacena as preferencias do usuario e transmite os datos do usuario de Moodle ao sistema remoto.';
 $string['privacy:metadata:repository_boxnet:query'] = 'A consulta de busca de texto de usuario do repositorio Box.';
 $string['saved'] = 'Dato gardado en Box.net';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'role', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -337,7 +337,7 @@ $string['question:useall'] = 'Utilitzar totes les preguntes';
 $string['question:usemine'] = 'Utilitzar les preguntes pròpies';
 $string['question:viewall'] = 'Veure totes les preguntes';
 $string['question:viewmine'] = 'Veure les preguntes pròpies';
-$string['rating:rate'] = 'Afegir puntuacions a ítems';
+$string['rating:rate'] = 'Afegir puntuacions als elements';
 $string['rating:view'] = 'Veure la puntuació total rebuda';
 $string['rating:viewall'] = 'Veure totes les puntuacions en brut subministrades pels particulars';
 $string['rating:viewany'] = 'Veure les puntuacions totals rebudes per qualsevol';

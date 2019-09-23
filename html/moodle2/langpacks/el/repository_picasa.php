@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_picasa', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_picasa', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_picasa
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'Αναγνωριστικό πελάτη';
 $string['configplugin'] = 'Ρυθμίσεις αποθετηρίου Picasa';
-$string['oauthinfo'] = '<p>Για να χρησιμοποιήσετε αυτό το πρόσθετο, πρέπει να καταχωρήσετε τον ιστότοπό σας στο Google, όπως περιγράφεται στην τεκμηρίωση για την<a href="{$a->docsurl} "> εγκατάσταση του Google OAuth 2.0 </a>.</p><p>Ως μέρος της διαδικασίας καταχώρησης, θα πρέπει να δώσετε την ακόλουθη διεύθυνση URL ως \'Authorized Redirect URIs\' (εξουσιοδοτημένες ανακατευθύνσεις URI): </p><p>{$a->callbackurl} </p><p>Μόλις καταχωρηθείτε, σας παρέχεται ένα αναγνωριστικό πελάτη και ένα μυστικό που μπορεί να χρησιμοποιηθεί για τη διαμόρφωση όλων των πρόσθετων Google Drive και Picasa.</p>';
+$string['oauthinfo'] = '<p>Για να χρησιμοποιήσετε αυτό το πρόσθετο, πρέπει να καταχωρήσετε τον ιστότοπό σας στο Google, όπως περιγράφεται στην τεκμηρίωση για την <a href="{$a->docsurl}">εγκατάσταση του Google OAuth 2.0</a>.</p>
+<p>Ως μέρος της διαδικασίας καταχώρησης, θα πρέπει να δώσετε την ακόλουθη διεύθυνση URL ως «Authorized Redirect URIs» (εξουσιοδοτημένες ανακατευθύνσεις URI): </p>
+<p>{$a->callbackurl} </p>
+<p>Μόλις καταχωρηθείτε, σας παρέχεται ένα αναγνωριστικό πελάτη και ένα μυστικό που μπορεί να χρησιμοποιηθεί για τη διαμόρφωση όλων των πρόσθετων Google Drive και Picasa.</p>';
 $string['picasa:view'] = 'Εμφάνιση του repository picasa';
 $string['pluginname'] = 'Άλμπουμ Ιστού Picasa';
 $string['privacy:metadata:repository_picasa'] = 'Το πρόσθετο «Αποθετήριο Picasa για άλμπουμ ιστού» δεν αποθηκεύει κανένα προσωπικό δεδομένο αλλά μεταβιβάζει δεδομένα χρήστη από το Moodle προς το απομακρυσμένο σύστημα.';

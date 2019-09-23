@@ -360,6 +360,19 @@ class question_attempt {
     }
 
     /**
+     * When the question is rendered, this unique id is added to the
+     * outer div of the question. It can be used to uniquely reference
+     * the question from JavaScript.
+     *
+     * Note, this is not truly unique. It will be changed in Moodle 3.7. See MDL-65029.
+     *
+     * @return string id added to the outer <div class="que ..."> when the question is rendered.
+     */
+    public function get_outer_question_div_unique_id() {
+        return 'q' . $this->slot;
+    }
+
+    /**
      * Get one of the steps in this attempt.
      *
      * @param int $i the step number, which counts from 0.
@@ -1107,8 +1120,10 @@ class question_attempt {
             return null;
         }
 
-        return new question_file_saver($draftitemid, 'question', 'response_' .
-                str_replace($this->get_field_prefix(), '', $name), $text);
+        $filearea = str_replace($this->get_field_prefix(), '', $name);
+        $filearea = str_replace('-', 'bf_', $filearea);
+        $filearea = 'response_' . $filearea;
+        return new question_file_saver($draftitemid, 'question', $filearea, $text);
     }
 
     /**
@@ -1164,12 +1179,31 @@ class question_attempt {
                 $this->behaviour->get_expected_data(), $postdata, '-');
 
         $expected = $this->behaviour->get_expected_qt_data();
+        $this->check_qt_var_name_restrictions($expected);
+
         if ($expected === self::USE_RAW_DATA) {
             $submitteddata += $this->get_all_submitted_qt_vars($postdata);
         } else {
             $submitteddata += $this->get_expected_data($expected, $postdata, '');
         }
         return $submitteddata;
+    }
+
+    /**
+     * Ensure that no reserved prefixes are being used by installed
+     * question types.
+     * @param array $expected An array of question type variables
+     */
+    protected function check_qt_var_name_restrictions($expected) {
+        global $CFG;
+
+        if ($CFG->debugdeveloper && $expected !== self::USE_RAW_DATA) {
+            foreach ($expected as $key => $value) {
+                if (strpos($key, 'bf_') !== false) {
+                    debugging('The bf_ prefix is reserved and cannot be used by question types', DEBUG_DEVELOPER);
+                }
+            }
+        }
     }
 
     /**
@@ -1315,8 +1349,13 @@ class question_attempt {
 
             } else {
                 // This is the normal case. Replay the next step of the attempt.
-                $this->process_action($step->get_submitted_data(),
-                        $step->get_timecreated(), $step->get_user_id(), $step->get_id());
+                if ($step === $oldqa->autosavedstep) {
+                    $this->process_autosave($step->get_submitted_data(),
+                            $step->get_timecreated(), $step->get_user_id());
+                } else {
+                    $this->process_action($step->get_submitted_data(),
+                            $step->get_timecreated(), $step->get_user_id(), $step->get_id());
+                }
             }
         }
 
@@ -1370,16 +1409,17 @@ class question_attempt {
 
     /**
      * @return array(string, int) the most recent manual comment that was added
-     * to this question, and the FORMAT_... it is.
+     * to this question, the FORMAT_... it is and the step itself.
      */
     public function get_manual_comment() {
         foreach ($this->get_reverse_step_iterator() as $step) {
             if ($step->has_behaviour_var('comment')) {
                 return array($step->get_behaviour_var('comment'),
-                        $step->get_behaviour_var('commentformat'));
+                        $step->get_behaviour_var('commentformat'),
+                        $step);
             }
         }
-        return array(null, null);
+        return array(null, null, null);
     }
 
     /**
@@ -1399,7 +1439,7 @@ class question_attempt {
             if ($commentformat === null) {
                 $commentformat = FORMAT_HTML;
             }
-            return array($comment, $commentformat);
+            return array($comment, $commentformat, null);
         }
     }
 

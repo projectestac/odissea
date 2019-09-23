@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'user', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,8 +70,8 @@ $string['privacy:metadata:lastaccess'] = 'A data/hora em que o utilizador acedeu
 $string['privacy:metadata:lastaccesstablesummary'] = 'Informação sobre a última vez que o utilizador acedeu à disciplina.';
 $string['privacy:metadata:lastip'] = 'O último endereço de IP do utilizador.';
 $string['privacy:metadata:lastlogin'] = 'A última autenticação deste utilizador.';
-$string['privacy:metadata:lastname'] = 'O sobrenome do utilizador.';
-$string['privacy:metadata:lastnamephonetic'] = 'Os detalhes fonéticos do sobrenome do utilizador.';
+$string['privacy:metadata:lastname'] = 'O apelido do utilizador.';
+$string['privacy:metadata:lastnamephonetic'] = 'Os detalhes fonéticos do apelido do utilizador.';
 $string['privacy:metadata:maildigest'] = 'Uma configuração para o resumo de notificação deste utilizador.';
 $string['privacy:metadata:maildisplay'] = 'A preferência do utilizador sobre a exibição do seu e-mail para outros utilizadores.';
 $string['privacy:metadata:middlename'] = 'O nome do meio do utilizador';

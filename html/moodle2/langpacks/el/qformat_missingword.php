@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qformat_missingword', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   qformat_missingword
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['beginanswernotfound'] = 'Δεν ήταν δυνατή η εύρεση ενός απαιτούμενου χαρακτήρα "{" στο εισαγόμενο περιεχόμενο αρχείου.';
-$string['endanswernotfound'] = 'Δεν ήταν δυνατή η εύρεση ενός απαιτούμενου χαρακτήρα "}" στο εισαγόμενο περιεχόμενο αρχείου.';
+$string['beginanswernotfound'] = 'Δεν ήταν δυνατή η εύρεση ενός απαιτούμενου χαρακτήρα «{» στο εισαγόμενο περιεχόμενο αρχείου.';
+$string['endanswernotfound'] = 'Δεν ήταν δυνατή η εύρεση ενός απαιτούμενου χαρακτήρα «}» στο εισαγόμενο περιεχόμενο αρχείου.';
 $string['noanswerfound'] = 'Δεν βρέθηκαν απαντήσεις στην ερώτηση';
 $string['pluginname'] = 'Μορφότυπος λέξης που λείπει';
 $string['pluginname_help'] = 'Ο μορφότυπος λέξης που λείπει επιτρέπει την εισαγωγή ερωτήσεων μέσω αρχείου κειμένου.';
+$string['pluginname_link'] = 'Μορφότυπος λέξης που λείπει';
 $string['privacy:metadata'] = 'Το πρόσθετο μορφότυπου ερώτησης λέξης που λείπει δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_shibboleth', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_shib_auth_logo'] = 'Logo authenthicatiemethode';
+$string['auth_shib_auth_logo_description'] = 'Geef een logo voor de Shibboleth authenticatiemethode dat bekend is voor jouw gebruikers. Dit dan het logo van jouw Shibboleth federatie zijn, bijvoorbeeld <tt>SWITCHaai Login</tt> of <tt>InCommon Login</tt> of iets gelijkaardigs.';
 $string['auth_shib_auth_method'] = 'Naam authenticatiemethode';
 $string['auth_shib_auth_method_description'] = 'Geef een naam voor de Shibboleth authenticatiemethode die bekend is voor je gebruikers. Dit zou de naam van je Shibboleth federatie kunnen zijn, vb. <tt>SWITCHaai Login</tt> of <tt>InCommon Login</tt> of gelijkaardig:';
 $string['auth_shibbolethdescription'] = 'Door deze methode te gebruiken kun je verbinding maken met een bestaande Shibboleth server om gebruikers te controleren en nieuwe aan te maken';
@@ -33,7 +35,7 @@ $string['auth_shibboleth_login'] = 'Shibboleth aanmelding';
 $string['auth_shibboleth_login_long'] = 'Inloggen bij Moodle via Shibboleth';
 $string['auth_shibboleth_manual_login'] = 'Manueel inloggen';
 $string['auth_shibboleth_select_member'] = 'Ik ben lid van ...';
-$string['auth_shibboleth_select_organization'] = 'Kies om the authenticeren via Shibboleth je organisatie uit het rolmenu.';
+$string['auth_shibboleth_select_organization'] = 'Kies om the authenticeren via Shibboleth. Selecteer je organisatie uit het rolmenu:';
 $string['auth_shib_changepasswordurl'] = 'URL om wachtwoord te wijzigen';
 $string['auth_shib_contact_administrator'] = 'Als je niet geassocieerd bent met de opgegeven organisaties en je hebt toegang nodig tot cursussen op deze server, neem dan contact op met de <a href="mailto:{$a}">Moodle beheerder</a>.';
 $string['auth_shib_convert_data'] = 'Data wijzigings-API';

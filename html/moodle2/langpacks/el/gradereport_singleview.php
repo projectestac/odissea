@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'gradereport_singleview', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['excludeall'] = 'Αποκλεισμός όλων των βαθμών';
 $string['excludefor'] = 'Αποκλεισμός για {$a}';
 $string['excludenone'] = 'Να μην αποκλείεται κανένας βαθμός';
 $string['feedbackfor'] = 'Ανατροφοδότηση για {$a}';
-$string['filtergrades'] = 'Προβολή βαθμών για {$a}';
+$string['filtergrades'] = 'Εμφάνιση βαθμών για {$a}';
 $string['gradefor'] = 'Βαθμός για {$a}';
 $string['gradeitem'] = 'Στοιχείο βαθμού: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Αυτό το στοιχείο βαθμού δεν μπορεί να παρακαμφθεί.';
@@ -59,7 +59,7 @@ $string['savegrades'] = 'Αποθήκευση βαθμών';
 $string['savegradessuccess'] = 'Οι βαθμοί ορίστηκαν για {$a} στοιχεία';
 $string['selectgrade'] = 'Επιλέξτε στοιχείο βαθμού...';
 $string['selectuser'] = 'Επιλογή χρήστη...';
-$string['singleview:view'] = 'Προβολή αναφοράς';
+$string['singleview:view'] = 'Εμφάνιση αναφοράς';
 $string['summarygrade'] = 'Ένας πίνακας χρηστών, με στήλες για εύρος, βαθμό, ανατροφοδότηση, και εάν θα παρακαμφθεί ή θα εξαιρεθεί ένας συγκεκριμένος βαθμός.';
 $string['summaryuser'] = 'Ένας πίνακας στοιχείων βαθμού, με στήλες για κατηγορία βαθμού, εύρος, βαθμό, ανατροφοδότηση, και εάν θα παρακαμφθεί ή θα εξαιρεθεί ένας συγκεκριμένος βαθμός.';
 $string['userselect'] = 'Επιλογή δραστηριότητας';

@@ -31,6 +31,7 @@ $calendarEventUserColor: #dce7ec !default; // Pale blue.
 .path-calendar {
     .calendartable {
         width: 100%;
+        table-layout: fixed;
 
         th,
         td {
@@ -237,8 +238,15 @@ $calendarEventUserColor: #dce7ec !default; // Pale blue.
             }
         }
 
-        .event .card-header img {
-            vertical-align: baseline;
+        .event {
+            .card-header img {
+                vertical-align: baseline;
+            }
+
+            .location {
+                word-break: break-all;
+                overflow-wrap: break-word;
+            }
         }
 
     }
@@ -372,6 +380,7 @@ $calendarEventUserColor: #dce7ec !default; // Pale blue.
             }
             .icon {
                 vertical-align: initial;
+                margin: 0 0.1rem 0 0.4rem;
             }
 
             > a {
@@ -420,8 +429,13 @@ table.calendartable caption {
 
 .summary-modal-container {
     .description-content {
+        overflow-wrap: break-word;
         > p {
             margin: 0;
         }
+    }
+
+    .location-content {
+        overflow-wrap: break-word;
     }
 }

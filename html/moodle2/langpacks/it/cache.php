@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cache', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,7 +55,7 @@ $string['cachedef_htmlpurifier'] = 'HTML Purifier . contenuto ripulito';
 $string['cachedef_langmenu'] = 'Elenco delle lingue disponibili';
 $string['cachedef_locking'] = 'Locking';
 $string['cachedef_message_processors_enabled'] = 'Stato abilitazione gestori messaggi';
-$string['cachedef_message_time_last_message_between_users'] = 'Data di creazione dei messaggi recenti tra utenti';
+$string['cachedef_message_time_last_message_between_users'] = 'Data di creazione dei messaggi più recenti di una conversazione';
 $string['cachedef_navigation_expandcourse'] = 'Navigazione espandibile dei corsi';
 $string['cachedef_observers'] = 'Event observer';
 $string['cachedef_plugin_functions'] = 'Callback offerti dai plugin';

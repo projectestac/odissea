@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopallocation_random', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = 'Adicionar auto-avaliações';
 $string['allocationaddeddetail'] = 'Novas avaliações a realizar:<strong>{$a->reviewername}</strong> é avaliador de <strong>{$a->authorname}</strong>';
-$string['allocationdeallocategraded'] = 'O trabalho se encontra avaliado, desta forma, não é possível alterarar as definições de revisão: avaliador<strong>{$a->reviewername}</strong>, autor do trabalho: <strong>{$a->authorname}</strong>';
+$string['allocationdeallocategraded'] = 'O trabalho já está avaliado e, por isso, não é possível alterar as definições de revisão: avaliador: <strong>{$a->reviewername}</strong>, submissão do trabalho: <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Re-avaliação: <strong>{$a->reviewername}</strong> permanece como avaliador de <strong>{$a->authorname}</strong>';
 $string['allocationsettings'] = 'Configurações de atribuição de trabalhos';
 $string['assessmentdeleteddetail'] = 'Trabalhos  que deixaram de estar atribuídos: <strong>{$a->reviewername}</strong>já não é avaliador de <strong>{$a->authorname}</strong>';

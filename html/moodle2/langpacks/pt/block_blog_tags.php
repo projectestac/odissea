@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_tags', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_blog_tags', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   block_blog_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['blog_tags:addinstance'] = 'Adicionar um novo bloco de palavras-chave do Blogue';
+$string['configtitle'] = 'Nome do bloco de palavras-chave';
 $string['pluginname'] = 'Palavras-chave do Blogue';
 $string['privacy:metadata'] = 'O bloco Palavras-chave do Blogue apenas mostra dados armazenados noutros locais.';

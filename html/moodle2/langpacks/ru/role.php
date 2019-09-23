@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'role', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,9 @@ $string['allowoverride'] = 'Разрешить переопределение р
 $string['allowroletoassign'] = 'Разрешить пользователям с ролью «{$a->fromrole}» назначать роль «{$a->targetrole}»';
 $string['allowroletooverride'] = 'Разрешить пользователям с ролью «{$a->fromrole}» переопределять роль «{$a->targetrole}»';
 $string['allowroletoswitch'] = 'Разрешить пользователям с ролью {$a->fromrole} переключаться на роль {$a->targetrole}';
+$string['allowroletoview'] = 'Разрешить пользователям с ролью {$a->fromrole} просматривать роль {$a->targetrole}';
 $string['allowswitch'] = 'Разрешить переключение между ролями';
+$string['allowview'] = 'Разрешить просмотр роли';
 $string['allsiteusers'] = 'Все пользователи сайта';
 $string['analytics:listinsights'] = 'Просматривать список инсайтов';
 $string['analytics:managemodels'] = 'Управлять моделями';
@@ -188,6 +190,7 @@ $string['course:reset'] = 'Очищать курс';
 $string['course:reviewotherusers'] = 'Просматривать страницу «Другие пользователи»';
 $string['course:sectionvisibility'] = 'Управлять видимостью разделов';
 $string['course:setcurrentsection'] = 'Устанавливать текущий раздел';
+$string['course:setforcedlanguage'] = 'Задавать язык курса';
 $string['course:tag'] = 'Изменять теги курса';
 $string['course:update'] = 'Изменять установки курса';
 $string['course:useremail'] = 'Включать/выключать адреса электронной почты';
@@ -229,6 +232,7 @@ $string['errorroleshortnametoolong'] = 'Короткое имя не должн�
 $string['eventroleallowassignupdated'] = 'Разрешение на назначение роли обновлено';
 $string['eventroleallowoverrideupdated'] = 'Разрешение на переопределение роли обновлено';
 $string['eventroleallowswitchupdated'] = 'Разрешение на переключение между ролями обновлено';
+$string['eventroleallowviewupdated'] = 'Разрешение на просмотр ролей обновлено';
 $string['eventroleassigned'] = 'Роль назначена';
 $string['eventrolecapabilitiesupdated'] = 'Права для роли обновлены';
 $string['eventroledeleted'] = 'Роль удалена';
@@ -301,6 +305,7 @@ $string['notabletooverrideroleshere'] = 'Вы не можете переопре
 $string['notes:manage'] = 'Управлять заметками';
 $string['notes:view'] = 'Просматривать заметки';
 $string['notset'] = 'Не установлено';
+$string['novisibleroles'] = 'Нет ролей';
 $string['overrideanotherrole'] = 'Переопределить другую роль';
 $string['overridecontext'] = 'Контекст переопределения';
 $string['overridepermissions'] = 'Переопределение разрешений';
@@ -353,6 +358,8 @@ $string['question:flag'] = 'Помечать вопросы при попытк�
 $string['question:managecategory'] = 'Редактировать категории вопросов';
 $string['question:moveall'] = 'Перемещать все вопросы';
 $string['question:movemine'] = 'Перемещать свои вопросы';
+$string['question:tagall'] = 'Отмечать тегами все вопросы';
+$string['question:tagmine'] = 'Отмечать тегами свои вопросы';
 $string['question:useall'] = 'Использовать все вопросы';
 $string['question:usemine'] = 'Использовать свои вопросы';
 $string['question:viewall'] = 'Просматривать все вопросы';

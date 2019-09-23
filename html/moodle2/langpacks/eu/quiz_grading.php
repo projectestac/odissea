@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_grading', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['automaticallygraded'] = 'Automatikoki kalifikatua';
 $string['backtothelistofquestions'] = 'Itzuli galdera-zerrendara';
 $string['bydate'] = 'Dataren arabera';
 $string['bystudentfirstname'] = 'Ikaslearen izenaren arabera';
-$string['bystudentidnumber'] = 'Ikaslearen id zenbakiaren arabera';
+$string['bystudentidnumber'] = 'Ikaslearen ID zenbakiaren arabera';
 $string['bystudentlastname'] = 'Ikaslearen deituraren arabera';
 $string['cannotgradethisattempt'] = 'Ezin da saiakera hau kalifikatu';
 $string['cannotloadquestioninfo'] = 'Ezin da aurkitu questiontype galdera-informazio zehatza';
@@ -60,7 +60,7 @@ $string['gradingquestionx'] = '{$a->number} galdera kalifikatzen: {$a->questionn
 $string['gradingreport'] = 'Eskuzko kalifikazioaren txostena';
 $string['gradingungraded'] = 'Kalifikatu gabeko {$a} saiakera';
 $string['gradinguser'] = 'Saiakerak honentzat: {$a}';
-$string['grading:viewidnumber'] = 'Ikusi ikasleen ID zenbakiak kalifikatu birtean';
+$string['grading:viewidnumber'] = 'Ikusi ikasleen ID zenbakiak kalifikatu bitartean';
 $string['grading:viewstudentnames'] = 'Ikusi ikasleen izenak kalifikatu bitartean';
 $string['hideautomaticallygraded'] = 'Ezkutatu automatikoki kalifikatutako galderak';
 $string['inprogress'] = 'Ari da';

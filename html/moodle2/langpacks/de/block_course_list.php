@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_list', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adminview'] = 'Administratoransicht';
 $string['allcourses'] = 'Administrator sieht alle Kurse';
-$string['configadminview'] = 'Was soll dem Administrator im Block \'Kurse\' angezeigt werden?';
+$string['configadminview'] = 'Im Block \'Kurse\' werden dem Administrator alle Kurse angezeigt oder nur diejenigen, in denen er eingeschrieben ist.';
 $string['confighideallcourseslink'] = 'Wenn diese Option aktiviert ist, wird der Link \'Alle Kurse\' am Ende der Kursliste entfernt (außer für Administrator/innen).';
 $string['course_list:addinstance'] = 'Neuen Block \'Kurse\' hinzufügen';
 $string['course_list:myaddinstance'] = 'Neuen Block \'Kurse\' zum Dashboard hinzufügen';

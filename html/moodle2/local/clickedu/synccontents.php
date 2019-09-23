@@ -14,6 +14,15 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Syncro clickedu course contents file
+ *
+ * @author      Adrià Monguillot <amonguillot@clickedu.net>
+ * @author      Daniel Ureña Zafra <durenadev@gmail.com>
+ * @copyright   2019 CLICKART TALLER DE COMUNICACIÓ, S.L.
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 define('NO_OUTPUT_BUFFERING', true);
 
 require_once('../../config.php');

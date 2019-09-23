@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'availability', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,5 +67,5 @@ $string['restrictbygroup'] = 'Add group/grouping access restriction';
 $string['setheading'] = '{$a->number} Set of {$a->count} restriction(s)';
 $string['shown_all'] = 'Displayed greyed-out if user does not meet conditions';
 $string['shown_individual'] = 'Displayed greyed-out if user does not meet this condition';
-$string['show_verb'] = 'Click to show';
+$string['show_verb'] = 'Click to display greyed-out';
 $string['unknowncondition'] = 'Unknown condition (deleted condition plugin)';

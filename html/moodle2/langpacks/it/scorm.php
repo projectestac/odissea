@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'scorm', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -150,17 +150,20 @@ $string['finishscormlinkname'] = 'fai click qui per tornare alla pagina del cors
 $string['firstaccess'] = 'Primo accesso';
 $string['firstattempt'] = 'Primo tentativo';
 $string['floating'] = 'Fluttuante';
+$string['forceattemptalways'] = 'Sempre';
+$string['forceattemptoncomplete'] = 'Se il tentativo precedente è completed, passed o failed';
 $string['forcecompleted'] = 'Forza completamento';
 $string['forcecompleteddesc'] = 'Imposta il valore di default per l\'opzione Forza completamento';
 $string['forcecompleted_help'] = 'Forzare il completamento assicura che lo stato del tentativo sia "completato". L\'impostazione ha senso solo per i pacchetti SCORM 1.2.';
 $string['forcejavascript'] = 'Obbliga gli utenti ad abilitare JavaScript';
 $string['forcejavascript_desc'] = 'Impedisce l\'accesso ad oggetti SCORM quando il borwser dell\'utente non supporta javascript oppure non lo ha abilitato. Se l\'impostazione è disbailitata, l\'utente può vedere l\'oggetto SCORM ma la comunicazione dei dati di fruizione sarà perduta.';
 $string['forcejavascriptmessage'] = 'Per visualizzare questo oggetto è necessario JavaScript, per favore abilita JavaScript nel tuo browser e riprova';
-$string['forcenewattempt'] = 'Forza un nuovo tentativo';
-$string['forcenewattemptdesc'] = 'Consente di nascondere la casella di spunta "Avvia nuovo tentativo" ed evita la modalità revisione. Lo SCORM consente agli studenti di tornare allo stesso tentativo in qualsiasi punto e non è possibile avviare un nuovo tentativo finché il tentativo precedente non risulta "completed", "passed" o "failed". Se il pacchetto SCORM non gestisce la cosa, lo studente rientrerà sempre nello stesso tentativo.';
-$string['forcenewattempt_help'] = 'Consente di nascondere la casella di spunta "Avvia nuovo tentativo" ed evita la modalità revisione.
+$string['forcenewattempts'] = 'Forza un nuovo tentativo';
+$string['forcenewattempts_help'] = 'Sono disponibili 3 opzioni:
 
-Lo SCORM consente agli studenti di tornare allo stesso tentativo in qualsiasi punto e non è possibile avviare un nuovo tentativo finché il tentativo precedente non risulta "completed", "passed" o "failed". Se il pacchetto SCORM non gestisce la cosa, lo studente rientrerà sempre nello stesso tentativo.';
+* No - Se il tentativo precedente è \'completed\', \'passed\' o \'failed\', allo studente verrà fornita l\'opzione per entrare in modalità revisione o iniziare un nuovo tentativo.
+* Quando il precedente tentativo è \'completed\', \'passed\' o \'failed \'- Questo si basa sul\'impostazione del pacchetto SCORM che imposta lo stato di  \'completed\', \'passed\' o \'failed\'.
+* Sempre - Ogni rientro all\'attività SCORM genererà un nuovo tentativo e lo studente non tornerà allo stesso punto in cui era nel suo tentativo precedente.';
 $string['found'] = 'Manifest trovato';
 $string['frameheight'] = 'L\'altezza del frame o della finestra';
 $string['framewidth'] = 'La larghezza del frame o della finestra';
@@ -272,6 +275,7 @@ $string['notattempted'] = 'Non tentato';
 $string['not_corr_type'] = 'Tipo sbagliato per il tag {$a->tag}';
 $string['notopenyet'] = 'Spiacente, questa attività non è disponibile fino al {$a}';
 $string['objectives'] = 'Obiettivi';
+$string['openafterclose'] = 'Hai specificato una data di apertura successiva alla data di chiusura';
 $string['optallstudents'] = 'tutti gli utenti';
 $string['optattemptsonly'] = 'solo utenti con tentativi';
 $string['options'] = 'Opzioni (in alcuni browser non consentite)';
@@ -334,9 +338,6 @@ $string['reviewmode'] = 'Modalità revisione';
 $string['rightanswer'] = 'Risposta corretta';
 $string['scoes'] = 'Learning Object';
 $string['score'] = 'Punteggio';
-$string['scorm12standard'] = 'Abilita modalità SCORM 1.2 standard';
-$string['scorm12standarddesc'] = 'L\'impostazione consente di scegliere se Moodle può memorizzare più informazioni di quante ne consenta la specifica SCORM 1.2.
-Disabilitare l\'impostazione qualora il pacchetto SCORM in uso consenta agli utenti l\'inserimento di grandi quantitativi di testo oppure memorizzi molti dati nel campo suspend_data.';
 $string['scorm:addinstance'] = 'Aggiungere pacchetto SCORM';
 $string['scormclose'] = 'Al';
 $string['scormcourse'] = 'Corso';
@@ -387,7 +388,7 @@ $string['too_many_children'] = 'Il tag {$a->tag} ha troppi figli';
 $string['totaltime'] = 'Tempo';
 $string['trackcorrectcount'] = 'Numero risultati corretti';
 $string['trackcorrectcount_help'] = 'Numero di risultati corretti per la domanda';
-$string['trackid'] = 'Id';
+$string['trackid'] = 'ID';
 $string['trackid_help'] = 'L\'identificativo della domanda impostato dal pacchetto SCORM. Le specifiche SCORM non consentono di ricavare il testo della domanda.';
 $string['trackingloose'] = 'ATTENZIONE: I dati di tracciamento esistenti saranno eliminati!';
 $string['tracklatency'] = 'Latenza';

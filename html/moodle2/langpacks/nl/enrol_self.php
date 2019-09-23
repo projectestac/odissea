@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_self', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['canntenrollate'] = 'Inschrijven is niet meer mogelijk, inschrijven is b
 $string['cohortnonmemberinfo'] = 'Enkel de leden van site-groep \'{$a}\' kunnen zelf aanmelden';
 $string['cohortonly'] = 'Enkel site-groepsleden';
 $string['cohortonly_help'] = 'Zelf aanmelden kan beperkt worden tot leden van een specifieke site-groep. Merk op dat het wijizgen van deze instelling geen effect heeft op bestaande aanmeldingen.';
+$string['confirmbulkdeleteenrolment'] = 'Weet je zeker dat je de aanmeldingen van deze gebruiker wil verwijderen?';
 $string['customwelcomemessage'] = 'Aangepaste welkomstboodschap';
 $string['customwelcomemessage_help'] = 'Een aangepast welkomstbericht dat toegevoegd kan worden als tekst of als Moodle-auto-opmaak, met HTML-tags en multilang-tags.
 
@@ -42,6 +43,8 @@ Volgende plaatshouders kunnen gebruikt worden in het bericht:
 * Volledige naam gebruiker {$a->fullname}';
 $string['defaultrole'] = 'Standaard roltoewijzing';
 $string['defaultrole_desc'] = 'Kies de rol die moet toegewezen worden tijdens zelf aanmelden';
+$string['deleteselectedusers'] = 'Verwijder geselecteerde gebruikersaanmeldingen';
+$string['editselectedusers'] = 'Bewerk geselecteerde gebruikersaanmeldingen';
 $string['enrolenddate'] = 'Einddatum';
 $string['enrolenddate_help'] = 'Indien ingeschakeld kunnen nieuwe gebruikers zich slechts aanmelden tot deze datum';
 $string['enrolenddaterror'] = 'De einddatum van de aanmelding in je cursus kan niet voor de startdatum zijn';
@@ -65,6 +68,8 @@ $string['expirymessageenrollerbody'] = 'Zelf aanmelden in cursus \'{$a->course}\
 
 Ga naar {$a->extendurl} om hun aanmelding te verlengen';
 $string['expirymessageenrollersubject'] = 'Melding van vervallen zelfaanmelding';
+$string['expirynotifyall'] = 'Aanmelder en aangemelde gebruiker';
+$string['expirynotifyenroller'] = 'Enkel aanmelder';
 $string['groupkey'] = 'Gebruik sleutels voor groepsaanmelding';
 $string['groupkey_desc'] = 'Gebruik sleutels voor groepsaanmelding als standaardinstelling';
 $string['groupkey_help'] = 'Het gebruik van een groepsaanmeldingssleutel zal de toegang tot de cursus niet alleen beperken tot diegenen die de sleutel kennen, maar de leerlingen zullen ook ingedeeld worden in hun juiste groep.
@@ -103,14 +108,17 @@ $string['self:unenrol'] = 'Gebruikers afmelden van de cursus';
 $string['self:unenrolself'] = 'Jezelf afmelden van de cursus';
 $string['sendcoursewelcomemessage'] = 'Stuur welkomstboodschap voor cursus';
 $string['sendcoursewelcomemessage_help'] = 'Gebruikers kunnen een welkomstboodschap via e-mail krijgen wanneer zij zichzelf aanmelden bij een cursus. Indien deze verstuurd wordt vanaf de account van de contactpersoon van de cursus (standaard de leraar) en er zijn meer gebruikers met die rol, dan wordt de e-mail verstuurd vanaf de eerste gebruiker die die rol gekregen heeft.';
+$string['sendexpirynotificationstask'] = 'Taak voor het versturen van berichten over het verlopen van zelf aanmeldingen';
 $string['showhint'] = 'Toon hint';
 $string['showhint_desc'] = 'Toon de eerste letter van de gast toegangssleutel';
 $string['status'] = 'Bestaande aanmeldingen toestaan';
 $string['status_desc'] = 'Zelf aanmelden inschakelen in nieuwe cursussen.';
 $string['status_help'] = 'Indien ingeschakeld samen met \'Nieuwe aanmeldingen toestaan\' uitgeschakeld, zullen enkel gebruikers die voorheen zelf aangemeld waren toegang hebben tot de cursus. Indien uitgeschakeld  is deze zelf aanmeldenmethode effectief uitgeschakeld, omdat alle bestaande zelf aangemelde gebruikers geschorst zijn en nieuwe gebruikers niet zelf kunnen aanmelden.';
+$string['syncenrolmentstask'] = 'Zelf aanmelden synchronisatietaak';
 $string['unenrol'] = 'Gebruiker afmelden';
 $string['unenrolselfconfirm'] = 'Wil je jezelf echt afmelden van cursus "{$a}"?';
 $string['unenroluser'] = 'Wil je echt gebruiker "{$a->user}" van cursus "{$a->course}"?';
+$string['unenrolusers'] = 'Gebruikers afmelden';
 $string['usepasswordpolicy'] = 'Gebruik wachtwoordbeleid';
 $string['usepasswordpolicy_desc'] = 'Gebruik standaard wachtwoordbeleid voor aanmeldingssleutels';
 $string['welcometocourse'] = 'Welkom bij {$a}';

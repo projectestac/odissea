@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'course', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   course
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aria:courseimage'] = 'Изображение курса';
+$string['aria:coursename'] = 'Название курса';
+$string['aria:courseshortname'] = 'Краткое название курса';
+$string['aria:favourite'] = 'Курс помечен';
+$string['favourite'] = 'Помеченный курс';
 $string['privacy:completionpath'] = 'Завершение курса';
+$string['privacy:favouritespath'] = 'Информация помеченного курса';
 $string['privacy:metadata:completionsummary'] = 'Курс содержит информацию о завершении его пользователем.';
+$string['privacy:metadata:favouritessummary'] = 'Курс содержит информацию, относящуюся к курсу, отмеченному пользователем.';
 $string['privacy:perpage'] = 'Число курсов, показываемых на странице.';

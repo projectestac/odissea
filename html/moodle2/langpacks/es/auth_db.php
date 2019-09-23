@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,7 +66,6 @@ $string['auth_dbtype_key'] = 'Base de datos';
 $string['auth_dbupdatinguser'] = 'Actualizando al usuario {$a->name} id {$a->id}';
 $string['auth_dbuser'] = 'Nombre de usuario con acceso de lectura a la base de datos';
 $string['auth_dbuser_key'] = 'Usuario de la Base de Datos';
-$string['auth_dbusernotexist'] = 'No se puede actualizar un usuario no existente: {$a}';
 $string['auth_dbuserstoadd'] = 'Entradas de usuario a añadir: {$a}';
 $string['auth_dbuserstoremove'] = 'Entradas de usuario a eliminar: {$a}';
 $string['pluginname'] = 'Usar una base de datos externa';

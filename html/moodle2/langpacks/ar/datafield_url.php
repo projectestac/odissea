@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_url', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'datafield_url', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   datafield_url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'حقل عنوان أنترنت';
+$string['openlinkinnewwindow'] = 'افتح الرابط في نافذة جديدة';
+$string['pluginname'] = 'رابط إنترنت';
+$string['privacy:metadata'] = 'لا يخزن المكون الإضافي URL أيّ بيانات شخصية ، فهو يستخدم الجداول المحددة في mod_data.';

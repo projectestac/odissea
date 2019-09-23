@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_self', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['canntenrollate'] = 'Xa non pode matricularse, a matriculación rematou 
 $string['cohortnonmemberinfo'] = 'Soamente os membros do círculo «{$a}» poden automatricularse.';
 $string['cohortonly'] = 'Soamente os membros do círculo';
 $string['cohortonly_help'] = 'A automatriculación pódese restrinxir aos membros dun único círculo especifico. Vexa que o cambio desta configuración non ten efecto sobre as matriculacións existentes.';
+$string['confirmbulkdeleteenrolment'] = 'Confirma que quere eliminar estas matriculacións de usuarios?';
 $string['customwelcomemessage'] = 'Mensaxe de benvida personalizada';
 $string['customwelcomemessage_help'] = 'Pode engadirse unha mensaxe personalizada de benvida, en formato simple ou en formáto automático do Moodle, incluídas as etiquetas HTML e as etiquetas multi-idioma.
 
@@ -40,6 +41,8 @@ Pódense incluír na mensaxe os seguintes marcadores de posición:
 * Ligazón á páxina de perfil doo usuario {$a->profileurl}';
 $string['defaultrole'] = 'Asignación de rol predeterminado';
 $string['defaultrole_desc'] = 'Seleccionar o rol que se lle debería de asignar aos usuarios durante a automatriculación';
+$string['deleteselectedusers'] = 'Eliminar as matriculacións dos usuarios seleccionados';
+$string['editselectedusers'] = 'Editar as matriculacións dos usuarios seleccionados';
 $string['enrolenddate'] = 'Data final';
 $string['enrolenddate_help'] = 'De estar activado, os usuarios poden matricularse por si mesmos soamente ata esta data.';
 $string['enrolenddaterror'] = 'A data final de matriculación non pode ser anterior á data inicial';
@@ -63,6 +66,8 @@ $string['expirymessageenrollerbody'] = 'A matriculación no curso «{$a->course}
 
 Para estender a súa matriculación, vaia a {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notificación da expiración da automatrícula';
+$string['expirynotifyall'] = 'Matriculador e usuario matriculado';
+$string['expirynotifyenroller'] = 'Só o matriculador';
 $string['groupkey'] = 'Utilice chaves de matriculación de grupo';
 $string['groupkey_desc'] = 'Utilice chaves de matriculación de grupo de modo predeterminado.';
 $string['groupkey_help'] = 'Ademais de restrinxir o acceso ao curso soamente para aqueles que coñezan a chave, utilizar unha chave de matriculación de grupo significa que os usuarios se engadirán automaticamente ao grupo cando se matriculen no curso.
@@ -100,15 +105,18 @@ $string['self:manage'] = 'Xestionar os usuarios matriculados';
 $string['self:unenrol'] = 'Desmatricular usuarios do curso';
 $string['self:unenrolself'] = 'Desmatricularse do curso';
 $string['sendcoursewelcomemessage'] = 'Enviar mensaxe de benvida do curso';
-$string['sendcoursewelcomemessage_help'] = 'De estar activado, os usuarios reciben unha mensaxe de benvida vía correo cando tentan matricularse por si mesmos nun curso.';
+$string['sendcoursewelcomemessage_help'] = 'Cando un usuario se matricula nun curso, pode enviarse un correo de mensaxe de benvida. Se se envía desde o contacto do curso (como predeterminado o profesor) e máis dun usuario ten este rol, o correo será enviado desde o primeiro usuario para asignarlle o rol.';
+$string['sendexpirynotificationstask'] = 'Tarefas de enviar notificacións de expiración da automatrículación';
 $string['showhint'] = 'Amosar un consello';
 $string['showhint_desc'] = 'Amosar a primeira letra da chave de acceso como convidado';
 $string['status'] = 'Activar as matriculacións existentes';
 $string['status_desc'] = 'Activar o método de automatriculación nos novos cursos.';
-$string['status_help'] = 'De estar desactivado supéndense todas as matriculacións existentes e non se poden matricular novos usuarios.';
+$string['status_help'] = 'Se está activado xunto con «Permitir novas matriculacións» desactivado, só os usuarios que se inscribiron previamente poden acceder ao curso. Se está desactivado, este método de automatriculación está efectivamente desactivado, xa que todas as automatriculacións existentes están suspendidas e os novos usuarios non poden matricularse.';
+$string['syncenrolmentstask'] = 'A automatriculación sincroniza a tarefa de inscrición';
 $string['unenrol'] = 'Desmatricular o usuario';
 $string['unenrolselfconfirm'] = 'Confirma que quere desmatricularse a si mesmo do curso «{$a}»?';
 $string['unenroluser'] = 'Confirma que quere desmatricular a «{$a->user}» do curso «{$a->course}»?';
+$string['unenrolusers'] = 'Desmatricular usuarios';
 $string['usepasswordpolicy'] = 'Utilizar a norma de contrasinais';
 $string['usepasswordpolicy_desc'] = 'Utilice a norma estándar de contrasinais para as chaves de matriculación.';
 $string['welcometocourse'] = 'Benvido/a a {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'webservice', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,7 @@ $string['eventwebserviceloginfailed'] = 'Fallita autenticazione web service';
 $string['eventwebserviceservicecreated'] = 'Creato servizio web service';
 $string['eventwebserviceservicedeleted'] = 'Eliminato servizio web service';
 $string['eventwebserviceserviceupdated'] = 'Aggiornato servizio web service';
-$string['eventwebserviceserviceuseradded'] = 'Aggiornato utente servizio web service';
+$string['eventwebserviceserviceuseradded'] = 'Aggiunto utente servizio web service';
 $string['eventwebserviceserviceuserremoved'] = 'Eliminato utente servizio web service';
 $string['eventwebservicetokencreated'] = 'Creato token web service';
 $string['eventwebservicetokensent'] = 'Inviato token web service';
@@ -108,7 +108,7 @@ $string['functions'] = 'Funzioni';
 $string['generalstructure'] = 'Struttura generale';
 $string['information'] = 'Informazioni';
 $string['installexistingserviceshortnameerror'] = 'Un web service di nome "{$a}" esiste già. Non è possibile creare o aggiornare un web service con lo stesso nome';
-$string['installserviceshortnameerror'] = 'Errore di codifica: il nome del web service "{$a}" deve contenere solamente numeri, lettere e _-..';
+$string['installserviceshortnameerror'] = 'Errore di codifica: il nome abbreviato del servizio "{$a}" può contenere solamente caratteri alfanumerici (letter e numeri), il trattino basso (_), il segno meno (-) ed il punto (.)';
 $string['invalidextparam'] = 'Parametro api esterne non valido: {$a}';
 $string['invalidextresponse'] = 'Risposta api esterne non valida:{$a}';
 $string['invalidiptoken'] = 'Token non valido - il tuo IP non è supportato';
@@ -144,8 +144,11 @@ $string['postrestparam'] = 'Codice PHP per REST (POST request)';
 $string['potusers'] = 'Utenti non autorizzati';
 $string['potusersmatching'] = 'Utenti non autorizzati che corrispondono';
 $string['print'] = 'Stampa tutto';
+$string['privacy:metadata:serviceusers'] = 'Elenco degli utenti che possono usare un determinato servizio esterno.';
 $string['privacy:metadata:serviceusers:iprestriction'] = 'IP limitato per usare il servizio.';
+$string['privacy:metadata:serviceusers:timecreated'] = 'Data e ora di creazione del record.';
 $string['privacy:metadata:serviceusers:userid'] = 'ID dell\'utente.';
+$string['privacy:metadata:serviceusers:validuntil'] = 'Data di scadenza della validità dell\'autorizzazione.';
 $string['privacy:metadata:tokens'] = 'Record dei token per interagire con Moodle tramite i servizi web o le app di Moodle.';
 $string['privacy:metadata:tokens:creatorid'] = 'ID dell\'utente che ha creato il token.';
 $string['privacy:metadata:tokens:iprestriction'] = 'IP limitato per usare il token.';
@@ -156,6 +159,7 @@ $string['privacy:metadata:tokens:token'] = 'Token dell\'utente.';
 $string['privacy:metadata:tokens:tokentype'] = 'Tipo di token.';
 $string['privacy:metadata:tokens:userid'] = 'ID dell\'utente a cui appartiene il token.';
 $string['privacy:metadata:tokens:validuntil'] = 'Data di scadenza della validità del token.';
+$string['privacy:request:notexportedsecurity'] = 'Non esportato per motivi di sicurezza';
 $string['protocol'] = 'Protocollo';
 $string['removefunction'] = 'Rimuovi';
 $string['removefunctionconfirm'] = 'Vuoi rimuovere la funzione "{$a->function}" dal servizio "{$a->service}"?';
@@ -184,7 +188,8 @@ $string['selectspecificuserdescription'] = 'Aggiungi l\'utente web service tra g
 $string['service'] = 'Servizio';
 $string['servicehelpexplanation'] = 'Un servizio è composto da un insieme di funzioni e può essere utilizzato pubblicamente oppure solo da utenti selezionati.';
 $string['servicename'] = 'Nome del servizio';
-$string['servicenotavailable'] = 'Il web service non è disponibile (non esiste oppure è disabilitato)';
+$string['servicenotavailable'] = 'Il web service non è disponibile (non esiste oppure è disabilitato).';
+$string['servicerequireslogin'] = 'Il web service non è disponibile (sessione terminata o scaduta).';
 $string['servicesbuiltin'] = 'Servizi predefiniti';
 $string['servicescustom'] = 'Servizi personalizzati';
 $string['serviceusers'] = 'Utenti autorizzati';

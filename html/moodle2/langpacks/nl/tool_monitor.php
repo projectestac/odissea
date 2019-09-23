@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_monitor', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,11 +65,11 @@ $string['managesubscriptionslink'] = 'Je kunt inschrijven op regels van de {$a} 
 $string['messageprovider:notification'] = 'Meldingen van regel-inschrijvingen';
 $string['messagetemplate'] = 'Meldingsbericht';
 $string['messagetemplate_help'] = 'Er is een melding gestuurd naar wie ingeschreven is om een melding te ontvangen wanneer de drempelwaarde is bereikt. Het kan gaan om één of meer van volgende plaatshouders:
-<br /><br />
-* Link naar de locatie van de gebeurtenis {link}<br />
-* Link naar de gemonitorde zone {modulelink}<br />
-* Naam van de regel {rulename}<br />
-* Beschrijving {description}<br />
+
+* Link naar de locatie van de gebeurtenis {link}
+* Link naar de gemonitorde zone {modulelink}
+* Naam van de regel {rulename}
+* Beschrijving {description}
 * Gebeurtenis {eventname}';
 $string['moduleinstance'] = 'Instantie';
 $string['monitordisabled'] = 'Gebeurtenismonitoring is uitgeschakeld';

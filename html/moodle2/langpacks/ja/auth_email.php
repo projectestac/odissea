@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_email', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_email', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_emaildescription'] = '<p>Eメールによる自己登録ではログインページの「アカウントを作成する」ボタンをクリックすることによりユーザが自分のアカウントを作成することができます。アカウント作成後、ユーザはアカウントを確認するための安全なリンクが含まれたメールを受信します。その後のログインではMoodleデータベース内に保存された値とユーザ名およびパスワードが比較されます。</p><p>注意: 「Eメールによる自己登録」プラグインを有効にするのと同時に「認証管理」ページ内の「自己登録」ドロップダウンメニューの「Eメールによる自己登録」を選択する必要があります。</p>';
 $string['auth_emailnoemail'] = 'あなたへのメール送信を試みましたが、失敗しました!';
-$string['auth_emailrecaptcha'] = 'Eメールによる自己登録ユーザのため、サインアップページにビジュアル/オーディオ確認フォームエレメントを追加します。これはあなたのサイトをスパム発信者から守り、価値ある活動に貢献します。詳細はhttp://www.google.com/recaptchaをご覧ください。';
+$string['auth_emailrecaptcha'] = 'Eメールによる自己登録ユーザのため、サインアップページにビジュアル/オーディオ確認フォームエレメントを追加します。これはあなたのサイトをスパム発信者から守り、価値ある活動に貢献します。詳細はhttps://www.google.com/recaptchaをご覧ください。';
 $string['auth_emailrecaptcha_key'] = 'reCAPTCHAエレメントを有効にする';
 $string['auth_emailsettings'] = '設定';
 $string['pluginname'] = 'Eメールによる自己登録';

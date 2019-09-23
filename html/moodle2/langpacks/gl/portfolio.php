@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,7 +89,7 @@ $string['highdbsizethreshold'] = 'Maior tamaño da base de datos a transferir';
 $string['highdbsizethresholddesc'] = 'Número de rexistros na base de datos por riba do que se considerará que a transferencia leva demasiado tempo';
 $string['highfilesizethreshold'] = 'Maior tamaño do ficheiro a transferir';
 $string['highfilesizethresholddesc'] = 'Tamaños de ficheiros maiores que este limiar considerase que levan moito tempo para transferirse';
-$string['insanebody'] = 'Ola! Estás recibindo esta mensaxe como administrador do sitio {$a->sitename}.
+$string['insanebody'] = 'Ola! Está recibindo esta mensaxe como administrador do sitio {$a->sitename}.
 
 Algunhas instancias do engadido de portafolios foron desactivadas automaticamente por estar mal configuradas. Isto significa que os usuarios actualmente non poden exportar contidos a estes portafolios.
 
@@ -98,12 +98,12 @@ A lista de portafolios que foron desactivados é:
 {$a->textlist}
 
 Isto debe corrixirse o máis cedo posíbel, visitando {$a->fixurl}.';
-$string['insanebodyhtml'] = '<p>Ola! Estás recibindo esta mensaxe como administrador do sitio {$a->sitename}.</p>
+$string['insanebodyhtml'] = '<p>Ola! Está recibindo esta mensaxe como administrador do sitio {$a->sitename}.</p>
 <p>Algunhas instancias do engadido de portafolios foron desactivadas automaticamente por estar mal configuradas. Isto significa que os usuarios actualmente non poden exportar contidos a estes portafolios.</p>
 <p>A lista de portafolios que foron desactivados é:</p>
 {$a->htmllist}
 <p>Isto debe corrixirse o máis cedo posíbel, visitando as <a href="{$a->fixurl}">páxinas de configuración dos portafolios</a></p>';
-$string['insanebodysmall'] = 'Ola! Estás recibindo esta mensaxe como administrador do sitio {$a->sitename}. Algunhas instancias do engadido de portafolios foron desactivadas automaticamente por estar mal configuradas. Isto significa que os usuarios actualmente non poden exportar contidos a estes portafolios. Isto debe corrixirse o máis cedo posíbel, visitando {$a->fixurl}.';
+$string['insanebodysmall'] = 'Ola! Está recibindo esta mensaxe como administrador do sitio {$a->sitename}. Algunhas instancias do engadido de portafolios foron desactivadas automaticamente por estar mal configuradas. Isto significa que os usuarios actualmente non poden exportar contidos a estes portafolios. Isto debe corrixirse o máis cedo posíbel, visitando {$a->fixurl}.';
 $string['insanesubject'] = 'Algunhas instancias de portafolios foron desactivadas automaticamente';
 $string['instancedeleted'] = 'O portafolios foi eliminado satisfactoriamente';
 $string['instanceismisconfigured'] = 'A instancia de portafolios está mal configurada e foi omitida. O erro foi: {$a}';
@@ -170,13 +170,20 @@ $string['pluginismisconfigured'] = 'O engadido de portafolios está mal configur
 $string['portfolio'] = 'Portafolios';
 $string['portfolios'] = 'Portafolios';
 $string['privacy:metadata'] = 'O subsistema de portafolios actúa como unha canle, pasando solicitudes de engadidos a varios engadidos de portafolios.';
+$string['privacy:metadata:instance'] = 'Identificador para o portafolios.';
+$string['privacy:metadata:instancesummary'] = 'Isto almacena tanto as instancias como as preferencias para os portafolios que o usuario está a usar.';
+$string['privacy:metadata:name'] = 'Nome da preferencia.';
 $string['privacy:metadata:portfolio_log'] = 'Rexistro de transferencias de portafolios (usado para verificar posteriormente os duplicados)';
 $string['privacy:metadata:portfolio_log:caller_class'] = 'Nome da clase usada para crear a transferencia';
 $string['privacy:metadata:portfolio_log:caller_component'] = 'Nome do compoñente responsábel da exportación';
+$string['privacy:metadata:portfolio_log:time'] = 'Tempo de transferencia (no caso dunha transferencia en cola este é o momento en que a transferencia real correu, non cando o usuario a iniciou)';
+$string['privacy:metadata:portfolio_log:userid'] = 'Usuario que exportou o contido';
+$string['privacy:metadata:portfolio_tempdata'] = 'Almacena datos temporais para as exportacións de carteira, limpado por cron após un día';
 $string['privacy:metadata:portfolio_tempdata:data'] = 'Exportar datos';
 $string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Hora de caducidade deste rexistro';
 $string['privacy:metadata:portfolio_tempdata:instance'] = 'Se está a usar a instancia de engadido de portafolios';
 $string['privacy:metadata:portfolio_tempdata:userid'] = 'Usuario que realiza as exportacións';
+$string['privacy:metadata:userid'] = 'O identificador do usuario.';
 $string['privacy:metadata:value'] = 'Valor para a preferencia.';
 $string['privacy:path'] = 'Instancias de portafolios';
 $string['queuesummary'] = 'Transferencias actualmente na cola';

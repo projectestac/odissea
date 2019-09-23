@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_googledocs', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_googledocs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['oauthinfo'] = '<p>Plugin hau erabiltzeko zure gunea Google-n erregistra
 $string['owner'] = 'Jabea: {$a}';
 $string['pluginname'] = 'Google Drive';
 $string['presentationformat'] = 'Aurkezpenen inportatze-formatu lehenetsia';
-$string['privacy:metadata:repository_googledocs'] = 'Google Drive biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_googledocs'] = 'Google Drive biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_googledocs:email'] = 'Google Drive biltegiko erabiltzailearen e-posta helbidea.';
 $string['privacy:metadata:repository_googledocs:searchtext'] = 'Google Drive biltegiko erabiltzailearen bilaketaren testua.';
 $string['searchfor'] = 'Bilatu {$a}';

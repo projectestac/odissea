@@ -577,9 +577,14 @@ abstract class base {
             return $result;
         }
 
-        // Remove samples the target consider invalid.
-        $this->analysabletarget->add_sample_data($samplesdata);
-        $this->analysabletarget->filter_out_invalid_samples($sampleids, $analysable, $includetarget);
+        try {
+            // Remove samples the target consider invalid.
+            $this->analysabletarget->add_sample_data($samplesdata);
+            $this->analysabletarget->filter_out_invalid_samples($sampleids, $analysable, $includetarget);
+        } catch (\Throwable $e) {
+            $dataset->close_process();
+            throw $e;
+        }
 
         if (!$sampleids) {
             $result->status = \core_analytics\model::NO_DATASET;
@@ -588,19 +593,26 @@ abstract class base {
             return $result;
         }
 
-        foreach ($this->indicators as $key => $indicator) {
-            // The analyser attaches the main entities the sample depends on and are provided to the
-            // indicator to calculate the sample.
-            $this->indicators[$key]->add_sample_data($samplesdata);
-        }
+        try {
 
-        // Here we start the memory intensive process that will last until $data var is
-        // unset (until the method is finished basically).
-        if ($includetarget) {
-            $data = $timesplitting->calculate($sampleids, $this->get_samples_origin(), $this->indicators, $ranges,
-                $this->analysabletarget);
-        } else {
-            $data = $timesplitting->calculate($sampleids, $this->get_samples_origin(), $this->indicators, $ranges);
+            // Instantiate empty indicators to ensure that no garbage is dragged from previous analyses.
+            foreach ($this->instantiate_indicators() as $key => $indicator) {
+                // The analyser attaches the main entities the sample depends on and are provided to the
+                // indicator to calculate the sample.
+                $this->indicators[$key]->add_sample_data($samplesdata);
+            }
+
+            // Here we start the memory intensive process that will last until $data var is
+            // unset (until the method is finished basically).
+            if ($includetarget) {
+                $data = $timesplitting->calculate($sampleids, $this->get_samples_origin(), $this->indicators, $ranges,
+                    $this->analysabletarget);
+            } else {
+                $data = $timesplitting->calculate($sampleids, $this->get_samples_origin(), $this->indicators, $ranges);
+            }
+        } catch (\Throwable $e) {
+            $dataset->close_process();
+            throw $e;
         }
 
         if (!$data) {
@@ -610,11 +622,16 @@ abstract class base {
             return $result;
         }
 
-        // Add extra metadata.
-        $this->add_model_metadata($data);
+        try {
+            // Add extra metadata.
+            $this->add_model_metadata($data);
 
-        // Write all calculated data to a file.
-        $file = $dataset->store($data);
+            // Write all calculated data to a file.
+            $file = $dataset->store($data);
+        } catch (\Throwable $e) {
+            $dataset->close_process();
+            throw $e;
+        }
 
         // Flag the model + analysable + timesplitting as analysed.
         $dataset->close_process();
@@ -634,6 +651,18 @@ abstract class base {
         $result->message = get_string('successfullyanalysed', 'analytics');
         $result->file = $file;
         return $result;
+    }
+
+    /**
+     * Instantiate the indicators.
+     *
+     * @return \core_analytics\local\indicator\base[]
+     */
+    public function instantiate_indicators() {
+        foreach ($this->indicators as $key => $indicator) {
+            $this->indicators[$key] = call_user_func(array($indicator, 'instance'));
+        }
+        return $this->indicators;
     }
 
     /**

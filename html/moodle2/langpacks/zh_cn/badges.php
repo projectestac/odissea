@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'badges', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,18 +28,27 @@ defined('MOODLE_INTERNAL') || die();
 $string['actions'] = '行为';
 $string['activate'] = '启用访问';
 $string['activatesuccess'] = '访问徽章被成功启用。';
+$string['addalignment'] = '添加能力';
+$string['addbadge'] = '增加勋章';
 $string['addbadgecriteria'] = '添加徽章规则';
+$string['addbadge_help'] = '选项需要加入此勋章需求的所有勋章。按住CTRL键进行多选。';
+$string['addcohort'] = '新增群组';
+$string['addcohort_help'] = '选项需要加入此勋章需求的所有群组。按住CTRL键进行多选。';
 $string['addcourse'] = '添加课程';
 $string['addcourse_help'] = '选出徽章所要求的所有课程，按 CTRL 键可以选择多个项目。';
 $string['addcriteria'] = '添加判断规则';
 $string['addcriteriatext'] = '要开始添加判断规则，请从下拉菜单中选择一项。';
+$string['addrelated'] = '添加相关徽章';
 $string['addtobackpack'] = '添加进勋章背包';
 $string['adminonly'] = '本页面只限制系统管理员访问';
 $string['after'] = '自从授予之后。';
 $string['aggregationmethod'] = '聚合方法';
+$string['alignment'] = '能力';
 $string['all'] = '全部';
 $string['allmethod'] = '所有选中的条件全部满足';
 $string['allmethodactivity'] = '所有选中的活动全部完成';
+$string['allmethodbadges'] = '已获得所有已选勋章';
+$string['allmethodcohort'] = '所有已选群组的成员';
 $string['allmethodcourseset'] = '所有选中的课程全部完成';
 $string['allmethodmanual'] = '所有选中的角色全部授予';
 $string['allmethodprofile'] = '所有选中的个人信息项都得到完善';
@@ -52,6 +61,8 @@ $string['allowexternalbackpack_desc'] = '允许用户通过网络连接展示他
 $string['any'] = '任一个';
 $string['anymethod'] = '任一个选中的条件符合';
 $string['anymethodactivity'] = '任一个选中的活动完成';
+$string['anymethodbadges'] = '任何已获得的已选勋章';
+$string['anymethodcohort'] = '是任何已选群组的成员';
 $string['anymethodcourseset'] = '任一个选中的课程完成';
 $string['anymethodmanual'] = '任一个选中的角色授予此勋章';
 $string['anymethodprofile'] = '只要有一项个人信息项得到完善';
@@ -90,7 +101,7 @@ $string['backpackconnection_help'] = '本页允许你设置一个访问外部背
 $string['backpackconnectionresendemail'] = '重发验证邮件';
 $string['backpackconnectionunexpectedresult'] = '连接背包出现问题。请再次尝试。<br><br>如果该问题继续发生，请联系管理员。';
 $string['backpackdetails'] = '背包设置';
-$string['backpackemail'] = 'Email';
+$string['backpackemail'] = '电子信箱';
 $string['backpackemail_help'] = '您的背包已经关联了电子邮件地址。当您连接，任何在本网站获取的徽章将与此电子邮件地址相关联。';
 $string['backpackemailverificationpending'] = '等待审核中';
 $string['backpackemailverifyemailsubject'] = '{$a}:开放徽章背包的邮箱验证';
@@ -160,6 +171,10 @@ $string['criteria_5'] = '完成一个课程集';
 $string['criteria_5_help'] = '允许勋章被授予给完成课程的用户。各门课程可以附带参数，例如至少获得的成绩分数和完成日期不迟于指定日期等。';
 $string['criteria_6'] = '个人信息完善';
 $string['criteria_6_help'] = '允许一个徽章是用户完成他们某些领域授予简介。你可以从默认和自定义配置文件域是提供给用户选择。';
+$string['criteria_7'] = '已颁发勋章';
+$string['criteria_7_help'] = '根据用户已获得的其它勋章确定是否颁发勋章。';
+$string['criteria_8'] = '群组成员';
+$string['criteria_8_help'] = '允许根据群组成员颁发勋章。';
 $string['criteriacreated'] = '徽章标准创建成功';
 $string['criteriadeleted'] = '徽章标准删除成功';
 $string['criteria_descr'] = '符合下列条件的用户可以获得此勋章：';
@@ -169,6 +184,7 @@ $string['criteria_descr_2'] = '由以下角色中 <strong>{$a}</strong> 授予�
 $string['criteria_descr_4'] = '用户必须完成课程';
 $string['criteria_descr_5'] = '下列课程 <strong>{$a}</strong> 得到完成：';
 $string['criteria_descr_6'] = '下列个人信息项 <strong>{$a}</strong> 得到完善：';
+$string['criteria_descr_8'] = '需要为以下群组中的<strong>{$a}</strong>成员：';
 $string['criteria_descr_bydate'] = '创建于 <em>{$a}</em>';
 $string['criteria_descr_grade'] = '并获得不低于 <em>{$a}</em> 分的成绩';
 $string['criteria_descr_short0'] = '完成 <strong>{$a}</strong> :';
@@ -231,8 +247,10 @@ $string['error:invalidbadgeurl'] = '授勋机构 URL 格式错误。';
 $string['error:invalidcriteriatype'] = '无效的标准类型';
 $string['error:invalidexpiredate'] = '过期时间必须是将来某个时间。';
 $string['error:invalidexpireperiod'] = '有效期不能为负或为0。';
+$string['error:invalidparamcohort'] = '群组不存在。';
 $string['error:noactivities'] = '此课程中没有启用进度跟踪的活动。';
 $string['error:noassertion'] = '角色没有被声明，在完成登录过程前，你可以关闭这个对话框。';
+$string['error:nocohorts'] = '无群组';
 $string['error:nocourses'] = '当前站点所有课程均未启用进度跟踪，故没能显示。课程进度跟踪特性可以在课程设置里面启用。';
 $string['error:nogroups'] = '<p>你的背包中没有收集有效的公开勋章集。 </p>
 <p>仅显示公开勋章集, <a href="http://backpack.openbadges.org">浏览你的背包</a> 创建公开勋章集。</p>';
@@ -271,6 +289,7 @@ $string['hiddenbadge'] = '抱歉，徽章的主要没有提供此信息。';
 $string['issuancedetails'] = '有效期';
 $string['issuedbadge'] = '授予的勋章信息';
 $string['issuerdetails'] = '授勋机构详情';
+$string['issueremail'] = '电子邮件';
 $string['issuername'] = '授勋机构名称';
 $string['issuername_help'] = '授勋机构的名称。';
 $string['issuerurl'] = '授勋机构 URL';

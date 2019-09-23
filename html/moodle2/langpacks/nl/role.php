@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'role', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,9 @@ $string['allowoverride'] = 'Overschrijven van rollen toestaan';
 $string['allowroletoassign'] = 'Laat gebruikers met de rol {$a->fromrole} toe om de rol {$a->targetrole} toe te wijzen';
 $string['allowroletooverride'] = 'Laat gebruikers met de rol {$a->fromrole} toe om de rol {$a->targetrole} te overschrijven';
 $string['allowroletoswitch'] = 'Laat gebruikers met rol {$a->fromrole} van rol te veranderen naar de rol {$a->targetrole}';
+$string['allowroletoview'] = 'Sta gebruikers met rol  {$a->fromrole} toe om de rol {$a->targetrole} te bekijken';
 $string['allowswitch'] = 'Toestaan van rol te wisselen';
+$string['allowview'] = 'Rol bekijken toestaan';
 $string['allsiteusers'] = 'Alle sitegebruikers';
 $string['analytics:listinsights'] = 'Lijst inzichten';
 $string['analytics:managemodels'] = 'Beheer modellen';
@@ -167,6 +169,7 @@ $string['course:changeidnumber'] = 'Wijzig cursus IDnummer';
 $string['course:changeshortname'] = 'Wijzig cursus korte naam';
 $string['course:changesummary'] = 'Cursussamenvatting wijzigen';
 $string['course:create'] = 'Cursussen aanmaken';
+$string['course:creategroupconversations'] = 'Maak groepsconversaties';
 $string['course:delete'] = 'Cursussen verwijderen';
 $string['course:enrolconfig'] = 'Configureer aanmeldingen in cursussen';
 $string['course:enrolreview'] = 'Aanmeldingen in cursussen nakijken';
@@ -188,7 +191,9 @@ $string['course:reset'] = 'Cursus naar standaardinstellingen';
 $string['course:reviewotherusers'] = 'Beoordeel andere gebruikers';
 $string['course:sectionvisibility'] = 'Zichtbaarheid van secties beheren';
 $string['course:setcurrentsection'] = 'Huidige sectie instellen';
+$string['course:setforcedlanguage'] = 'Cursustaal verplichten';
 $string['course:tag'] = 'Wijzig cursus-tags';
+$string['course:togglecompletion'] = 'Sta gebruikers toe om activiteiten handmatig als voltooid aan te duiden';
 $string['course:update'] = 'Cursusinstellingen wijzigen';
 $string['course:useremail'] = 'Inschakelen/uitschakelen e-mailadressen';
 $string['course:view'] = 'Cursussen zien zonder deel te nemen';
@@ -229,6 +234,7 @@ $string['errorroleshortnametoolong'] = 'De korte naam mag niet langer zijn dan 1
 $string['eventroleallowassignupdated'] = 'Roltoewijzing toestaan';
 $string['eventroleallowoverrideupdated'] = 'Rol overschrijven toestaan';
 $string['eventroleallowswitchupdated'] = 'Rol wijzigen toestaan';
+$string['eventroleallowviewupdated'] = 'Rol bekijken toestaan';
 $string['eventroleassigned'] = 'Rol toegewezen';
 $string['eventrolecapabilitiesupdated'] = 'Rolmogelijkheden aangepast';
 $string['eventroledeleted'] = 'Rol verwijderd';
@@ -301,6 +307,7 @@ $string['notabletooverrideroleshere'] = 'Je kunt hier geen rollen overschrijven'
 $string['notes:manage'] = 'Notities beheren';
 $string['notes:view'] = 'Notities bekijken';
 $string['notset'] = 'Niet ingesteld';
+$string['novisibleroles'] = 'Geen rollen';
 $string['overrideanotherrole'] = 'Nog een rol overschrijven';
 $string['overridecontext'] = 'Context overschrijven';
 $string['overridepermissions'] = 'Rechten overschrijven';
@@ -375,6 +382,8 @@ $string['question:flag'] = 'Zet een vlag bij vragen terwijl je ze probeert';
 $string['question:managecategory'] = 'Vraagcategorieën bewerken';
 $string['question:moveall'] = 'Alle vragen verplaatsen';
 $string['question:movemine'] = 'Eigen vragen verplaatsen';
+$string['question:tagall'] = 'Tag alle vragen';
+$string['question:tagmine'] = 'Tag je eigen vragen';
 $string['question:useall'] = 'Alle vragen gebruiken';
 $string['question:usemine'] = 'Eigen vragen gebruiken';
 $string['question:viewall'] = 'Alle vragen bekijken';
@@ -445,6 +454,8 @@ $string['site:import'] = 'Importeren van andere cursussen in een cursus';
 $string['site:maintenanceaccess'] = 'Toegang tot de site terwijl die in onderhoudsmodus is.';
 $string['site:manageallmessaging'] = 'Toevoegen, verwijderen, blokkeren en deblokkeren contacten voor elke gebruiker';
 $string['site:manageblocks'] = 'Beheer blokken op een pagina';
+$string['site:managecontextlocks'] = 'Het bevriezen van contexten beheren';
+$string['site:messageanyuser'] = 'Negeer privacy-instellingen van gebruikers om alle gebruikers een bericht te kunnen sturen';
 $string['site:mnetloginfromremote'] = 'Aanmelden vanaf een externe Moodle met MNet';
 $string['site:mnetlogintoremote'] = 'Ga naar een externe Moodle met MNet';
 $string['site:readallmessages'] = 'Alle berichten op de site lezen';

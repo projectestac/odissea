@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_list', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adminview'] = 'Kudeatzaileak ikusi';
 $string['allcourses'] = 'Kudeatzaileak ikastaro guztiak ikusten ditu';
-$string['configadminview'] = 'Zer ikusi behar luke kudeatzaileak Ikastaroen zerrenda blokean?';
+$string['configadminview'] = 'Ikastaroak blokean ikastaro guztiak erakutsi edo kudeatzailea matrikulatuta dagoen ikastaroak soilik erakutsiko diren.';
 $string['confighideallcourseslink'] = 'Ezabatu blokearen azpiko "Ikastaro guztiak" esteka. (Ezarpen honek ez dio eragingo Kudeatzailearen ikusteko moduari.)';
 $string['course_list:addinstance'] = 'Gehitu ikastaroak bloke berria';
 $string['course_list:myaddinstance'] = 'Gehitu ikastaroak bloke berria aginte-panelean';

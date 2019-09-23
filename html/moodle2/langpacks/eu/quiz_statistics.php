@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_statistics', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,6 +103,8 @@ $string['quizname'] = 'Galdetegiaren izena';
 $string['quizoverallstatistics'] = 'Galdetegiaren estatistika orokorrak';
 $string['quizstructureanalysis'] = 'Galdetegiaren egituraren analisia';
 $string['random_guess_score'] = 'Ausaz erantzundakoen kalifikazioa';
+$string['rangebetween'] = '{$a->min} − {$a->max}';
+$string['rangeofvalues'] = 'Galdera hauetarako estatistika-tartea';
 $string['recalculatenow'] = 'Berriz kalkulatu orain';
 $string['reportsettings'] = 'Estatistikak kalkulatzeko ezarpenak';
 $string['response'] = 'Erantzuna';
@@ -118,4 +120,5 @@ $string['statisticsreportgraph'] = 'Estatistikak galderen kokalekuaz';
 $string['statistics:view'] = 'Ikusi estatistiken txostena';
 $string['statsfor'] = 'Galdetegiaren estatitstikak (({$a}-rentzat)';
 $string['variant'] = 'Aldaera';
+$string['viewanalysis'] = 'Ikusi xehetasunak';
 $string['whichtries'] = 'Aztertu erantzunak honentzat';

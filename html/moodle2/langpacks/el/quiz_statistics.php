@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_statistics', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,12 +29,12 @@ $string['actualresponse'] = 'Πραγματική απόκριση';
 $string['allattempts'] = 'όλες οι προσπάθειες';
 $string['allattemptsavg'] = 'Μέση βαθμολογία όλων των προσπαθειών';
 $string['allattemptscount'] = 'Συνολικός αριθμός πλήρως βαθμολογημένων προσπαθειών';
-$string['analysisnameonly'] = '"{$a->name}"';
+$string['analysisnameonly'] = '«{$a->name}»';
 $string['analysisno'] = '({$a->number}) «{$a->name}»';
-$string['analysisnovariant'] = '({$a->number}) "{$a->name}" παραλλαγή {$a->variant}';
+$string['analysisnovariant'] = '({$a->number}) «{$a->name}» παραλλαγή {$a->variant}';
 $string['analysisofresponses'] = 'Ανάλυση των απαντήσεων';
 $string['analysisofresponsesfor'] = 'Ανάλυση των αποκρίσεων για {$a}';
-$string['analysisvariant'] = '"{$a->name}" παραλλαγή {$a->variant}';
+$string['analysisvariant'] = '«{$a->name}» παραλλαγή {$a->variant}';
 $string['attempts'] = 'Προσπάθειες';
 $string['attemptsall'] = 'όλες οι προσπάθειες';
 $string['attemptsfirst'] = 'πρώτη προσπάθεια';
@@ -48,7 +48,7 @@ $string['counttryno'] = 'Αριθμός προσπάθειας  {$a}';
 $string['coursename'] = 'Όνομα μαθήματος';
 $string['detailedanalysis'] = 'Λεπτομερέστερη ανάλυση των απαντήσεων σε αυτή την ερώτηση';
 $string['detailedanalysisforvariant'] = 'Λεπτομερέστερη ανάλυση των αποκρίσεων στην παραλλαγή {$a} αυτής της ερώτησης';
-$string['discrimination_index'] = 'Δείκτης διάκρισης';
+$string['discrimination_index'] = 'Δείκτης διακριτικότητας';
 $string['discriminative_efficiency'] = 'Διακριτική ικανότητα';
 $string['downloadeverything'] = 'Λήψη πλήρους αναφοράς σαν';
 $string['duration'] = 'Άνοιγμα για';
@@ -80,13 +80,13 @@ $string['modelresponse'] = 'Μοντέλο απόκρισης';
 $string['nameforvariant'] = 'Παραλλαγή {$a->variant} από {$a->name}';
 $string['negcovar'] = 'Αρνητική συνδιακύμανση του βαθμού με βαθμό συνολικής προσπάθειας';
 $string['negcovar_help'] = 'Ο βαθμός αυτής της ερώτησης για αυτό το σύνολο προσπαθειών για το κουίζ ποικίλλει κατά τρόπο αντίθετο από τον συνολικό βαθμό της προσπάθειας. Αυτό σημαίνει ότι ο συνολικός βαθμός της προσπάθειας, τείνει να είναι κάτω από το μέσο όρο όταν ο βαθμός για αυτήν την ερώτηση είναι υψηλότερος από τον μέσο όρο και αντιστρόφως. Ο τύπος μας για την ισχύουσα βαρύτητα ερωτήσεων δεν μπορεί να υπολογιστεί στην περίπτωση αυτή. Οι υπολογισμοί για την ισχύουσα βαρύτητα ερωτήσεων για άλλα ερωτήματα σε αυτό το κουίζ είναι η ισχύουσα βαρύτητα ερωτήσεων για αυτά τα ερωτήματα αν στις επισημανθείσες ερωτήσεις με αρνητική συνδιακύμανση δοθεί μέγιστη βαθμολογία μηδέν. Εάν επεξεργαστείτε ένα κουίζ και δώσετε σε αυτές τις ερωτήσεις με αρνητική συνδιακύμανση ως μέγιστο βαθμό το μηδέν τότε η ισχύουσα βαρύτητα ερωτήσεων αυτών των ερωτήσεων θα είναι μηδέν και η πραγματική ισχύουσα βαρύτητα ερωτήσεων άλλων ερωτήσεων θα υπολογιστεί όπως τώρα.';
-$string['nogradedattempts'] = 'Δεν έγιναν προσπάθειες σε αυτό το κουίζ ή όλες οι προσπάθειες έχουν ερωτήσεις που χρειάζονται χειροκίνητη ταξινόμηση.';
+$string['nogradedattempts'] = 'Δεν έγιναν προσπάθειες σε αυτό το κουίζ ή όλες οι προσπάθειες έχουν ερωτήσεις που χρειάζονται χειροκίνητη βαθμολόγηση.';
 $string['nostudentsingroup'] = 'Δεν υπάρχουν μαθητές σε αυτή την ομάδα ακόμα';
 $string['optiongrade'] = 'Μερικός έπαινος';
 $string['partofquestion'] = 'Μέρος της ερώτησης';
 $string['pluginname'] = 'Στατιστικά';
 $string['position'] = 'Θέση';
-$string['positions'] = 'Θέση(εις)';
+$string['positions'] = 'Θέση/-εις';
 $string['privacy:metadata'] = 'Παρόλο που το πρόσθετο «Στατιστικά Κουίζ» έχει πίνακες βάσης δεδομένων, τα δεδομένα είναι συγκεντρωτικά δεδομένα και δεν περιγράφουν ένα μοναδικό άτομο.';
 $string['questioninformation'] = 'Πληροφορίες ερώτησης';
 $string['questionname'] = 'Όνομα ερώτησης';
@@ -99,6 +99,8 @@ $string['quizname'] = 'Όνομα κουίζ';
 $string['quizoverallstatistics'] = 'Γενικά στατιστικά κουίζ';
 $string['quizstructureanalysis'] = 'Ανάλυση δομής του κουίζ';
 $string['random_guess_score'] = 'Σκορ τυχαίας εικασίας';
+$string['rangebetween'] = '{$a->min} − {$a->max}';
+$string['rangeofvalues'] = 'Εύρος στατιστικών στοιχείων για αυτές τις ερωτήσεις';
 $string['recalculatenow'] = 'Επαναβαθμολόγηση τώρα';
 $string['reportsettings'] = 'Ρυθμίσεις υπολογισμού στατιστικών στοιχείων';
 $string['response'] = 'Απόκριση';
@@ -114,4 +116,5 @@ $string['statisticsreportgraph'] = 'Στατιστικά για τη θέση τ
 $string['statistics:view'] = 'Εμφάνιση αναφοράς στατιστικών';
 $string['statsfor'] = 'Στατιστικά κουίζ (για {$a})';
 $string['variant'] = 'Παραλλαγή';
+$string['viewanalysis'] = 'Εμφάνιση λεπτομερειών';
 $string['whichtries'] = 'Αναλύστε τις απαντήσεις για';

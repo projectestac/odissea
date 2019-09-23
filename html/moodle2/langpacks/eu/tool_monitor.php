@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_monitor', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,11 +65,11 @@ $string['managesubscriptionslink'] = 'Arauetara harpidetu ahal zara {$a} orritik
 $string['messageprovider:notification'] = 'Arau-harpidetzen jakinarazpenak';
 $string['messagetemplate'] = 'Jakinarazpen-mezua';
 $string['messagetemplate_help'] = 'Harpidedunei jakinarazpen-mezua bidaltzen zaie behin jakinarazpen atalasea gainditzen denean. Mezuan hurrengo hitz-gakoan erabil daitezke:
-<br /><br />
-* Ekitaldiaren kokapenaren esteka {link}<br />
-* Kontrolatutako eremuaren esteka {modulelink}<br />
-* Arauaren izena {rulename}<br />
-* Deskribapena {description}<br />
+
+* Ekitaldiaren kokapenaren esteka {link}
+* Kontrolatutako eremuaren esteka {modulelink}
+* Arauaren izena {rulename}
+* Deskribapena {description}
 * Ekitaldia {eventname}';
 $string['moduleinstance'] = 'Instantzia';
 $string['monitordisabled'] = 'Ekitaldi-kontrola une honetan desgaituta dago.';
@@ -96,10 +96,10 @@ $string['privacy:metadata:timecreatedrule'] = 'Arau hau noiz sortu zen';
 $string['privacy:metadata:timecreatedsub'] = 'Harpidetza hau noiz sortu zen';
 $string['privacy:metadata:timemodifiedrule'] = 'Arau hau azkenengoz noiz aldatu zen';
 $string['privacy:metadata:timesent'] = 'Mezua noiz bidali zen';
-$string['privacy:metadata:timewindow'] = 'Denbora-tartea segundutan';
-$string['privacy:metadata:userid'] = 'Araua sortu zuen erabiltzailearen IDa';
-$string['privacy:metadata:useridhistory'] = 'Jakinarazpen hau bidali zaion erabiltzailea';
-$string['privacy:metadata:useridsub'] = 'Harpidedunaren erabiltzaile IDa';
+$string['privacy:metadata:timewindow'] = 'Denbora-tartea (segundoetan)';
+$string['privacy:metadata:userid'] = 'Araua sortu zuen erabiltzailearen IDa.';
+$string['privacy:metadata:useridhistory'] = 'Jakinarazpen hau bidali zitzaion erabiltzailearen IDa';
+$string['privacy:metadata:useridsub'] = 'Harpidedunaren IDa.';
 $string['privacy:subscriptions'] = 'Nire ekitaldi-kontrolerako arauen harpidetzak';
 $string['processevents'] = 'Prozesatu ekitaldiak';
 $string['ruleareyousure'] = 'Ziur al zaude "{$a}" araua ezabatu nahi duzula?';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'portfolio', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -166,14 +166,14 @@ $string['portfolio'] = 'Портфолио';
 $string['portfolios'] = 'Портфолио';
 $string['privacy:metadata'] = 'Подсистема портфолио работает как канал, передающий запросы от плагинов различным плагинам портфолио.';
 $string['privacy:metadata:instance'] = 'Идентификатор для портфолио.';
-$string['privacy:metadata:instancesummary'] = 'Хранит экземпляры и настройки для портфолио, которые использует пользователь.';
+$string['privacy:metadata:instancesummary'] = 'Хранит данные об экземплярах и настройках портфолио.';
 $string['privacy:metadata:name'] = 'Название настройки.';
 $string['privacy:metadata:portfolio_log'] = 'Журнал отправки портфолио (используется для последующей проверки дубликатов)';
 $string['privacy:metadata:portfolio_log:caller_class'] = 'Название класса, использованного для создания отправки';
 $string['privacy:metadata:portfolio_log:caller_component'] = 'Название компонента, отвечающего за экспорт';
 $string['privacy:metadata:portfolio_log:time'] = 'Время отправки (в случае использования очереди отправки это — время фактического запуска отправки, а не время начала отправки пользователем)';
 $string['privacy:metadata:portfolio_log:userid'] = 'Пользователь, экспортировавший контент';
-$string['privacy:metadata:portfolio_tempdata'] = 'Хранит временные данные для экспортируемых портфолио, очистку производит cron через один день';
+$string['privacy:metadata:portfolio_tempdata'] = 'Хранит временные данные для экспортируемых портфолио';
 $string['privacy:metadata:portfolio_tempdata:data'] = 'Экспортируемые данные';
 $string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Время окончания срока действия записи';
 $string['privacy:metadata:portfolio_tempdata:instance'] = 'Используемый экземпляр плагина портфолио';

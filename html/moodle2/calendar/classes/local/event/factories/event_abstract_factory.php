@@ -36,8 +36,6 @@ use core_calendar\local\event\value_objects\event_description;
 use core_calendar\local\event\value_objects\event_times;
 use core_calendar\local\event\entities\event_interface;
 
-require_once($CFG->libdir . '/coursecatlib.php');
-
 /**
  * Abstract factory for creating calendar events.
  *
@@ -189,7 +187,8 @@ abstract class event_abstract_factory implements event_factory_interface {
                 (new \DateTimeImmutable())->setTimestamp($dbrow->timemodified)
             ),
             !empty($dbrow->visible),
-            $subscription
+            $subscription,
+            $dbrow->location
         );
 
         $isactionevent = !empty($dbrow->type) && $dbrow->type == CALENDAR_EVENT_TYPE_ACTION;

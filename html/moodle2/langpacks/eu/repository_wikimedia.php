@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_wikimedia', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'repository_wikimedia', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   repository_wikimedia
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,10 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Wikimedia biltegi-motaren ezarpenak';
 $string['keyword'] = 'Bilatu';
 $string['maxheight'] = 'Irudiaren gehienezko altuera (px)';
-$string['maxwidth'] = 'Irudiaren gehienezko altuera (px)';
+$string['maxwidth'] = 'Irudiaren gehienezko zabalera (px)';
 $string['pluginname'] = 'Wikimedia';
 $string['privacy:metadata:repository_wikimedia'] = 'Wikimedia biltegi-pluginak erabiltzaile-hobespenak gordetzen ditu, eta erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'Wikimedia biltegirako konfiguratutako Gehienezko Altuera erabiltzaile-hobespena.';
-$string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'Wikimedia biltegirako konfiguratutako Gehienezko Zabalera erabiltzaile-hobespena.';
+$string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'Wikimedia biltegirako konfiguratutako gehienezko zabalera erabiltzaile-hobespena';
 $string['privacy:metadata:repository_wikimedia:search_text'] = 'Dropbox biltegiko erabiltzailearen bilaketaren testua.';
 $string['wikimedia:view'] = 'Ikusi Wikimedia biltegia';

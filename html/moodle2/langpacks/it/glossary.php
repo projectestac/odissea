@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'glossary', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Aggiungi categoria';
 $string['addcomment'] = 'Aggiungi commento';
 $string['addentry'] = 'Aggiungi voce';
 $string['addingcomment'] = 'Aggiungi un commento';
@@ -107,6 +108,7 @@ $string['defaultsortkey'] = 'Chiave di ordinamento di default';
 $string['defaultsortorder'] = 'Priorità di ordinamento di default';
 $string['definition'] = 'Definizione';
 $string['definitions'] = 'Definizioni';
+$string['deletecategory'] = 'Elimina categoria';
 $string['deleteentry'] = 'Elimina voce';
 $string['deleteentrya'] = 'Elimina voce: {$a}';
 $string['deletenotenrolled'] = 'Elimina le voci inserite da utenti non iscritti';
@@ -141,6 +143,7 @@ $string['duplicateentry'] = 'Voce duplicata';
 $string['editalways'] = 'Consenti di modificare sempre';
 $string['editalways_help'] = 'L\'impostazione determina se le voci saranno sempre modificabili oppure no. Nel secondo caso i partecipanti le potranno modificare ed eliminare all\'interno di un prefissato intervallo di tempo (di norma 30 minuti).';
 $string['editcategories'] = 'Modifica categorie';
+$string['editcategory'] = 'Modifica categoria';
 $string['editentry'] = 'Modifica voce';
 $string['editentrya'] = 'Modifica voce: {$a}';
 $string['editingcomment'] = 'Modifica commento';
@@ -154,6 +157,7 @@ $string['entrydeleted'] = 'Voce eliminata';
 $string['entryexported'] = 'Voce esportata correttamente';
 $string['entryishidden'] = '(al momento questa voce è nascosta)';
 $string['entryleveldefaultsettings'] = 'Impostazioni di default per le voci';
+$string['entrylink'] = 'Link d\'accesso: {$a}';
 $string['entrysaved'] = 'La voce è stata salvata';
 $string['entryupdated'] = 'La voce è stata aggiornata';
 $string['entryusedynalink'] = 'Collega la voce automaticamente';

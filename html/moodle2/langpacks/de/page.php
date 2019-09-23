@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'page', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,5 +60,7 @@ $string['printheading'] = 'Seitenname anzeigen';
 $string['printheadingexplain'] = 'Name der Seite oberhalb des Inhalts anzeigen';
 $string['printintro'] = 'Beschreibung oberhalb des Seiteninhalts anzeigen';
 $string['printintroexplain'] = 'Soll die einleitende Beschreibung über dem Seiteninhalt angezeigt werden?';
+$string['printlastmodified'] = 'Zeitpunkt der letzten Bearbeitung anzeigen';
+$string['printlastmodifiedexplain'] = 'Soll der Zeitpunkt der letzten Bearbeitung unterhalb des Inhalts angezeigt werden?';
 $string['privacy:metadata'] = 'Das Plugin Textseite speichert keine personenbezogenen Daten.';
 $string['search:activity'] = 'Textseite';

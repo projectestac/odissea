@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'grading', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['changeactivemethod'] = 'Alterar o método de avaliação ativo para';
 $string['clicktoclose'] = 'clique para fechar';
 $string['exc_gradingformelement'] = 'Não é possível instanciar o elemento da grelha de avaliação';
 $string['formnotavailable'] = 'O Método de avaliação avançado foi selecionado para ser usado no Trabalho mas a grelha de avaliação ainda não se encontra definida. Poderá ser necessário editá-la primeiro a partir da respetiva opção no bloco Administração.';
-$string['gradingformunavailable'] = 'Atenção: a grelha de avaliação ainda não está configurada. Será usado o método de avaliação simples direta até que a grelha esteja configurada.';
+$string['gradingformunavailable'] = '<b>Atenção</b>: A grelha de avaliação ainda não está configurada. Será usado o método de avaliação simples direta até que a grelha esteja configurada.';
 $string['gradingmanagement'] = 'Método de avaliação avançado';
 $string['gradingmanagementtitle'] = 'Método de avaliação avançado: {$a->component} ({$a->area})';
 $string['gradingmethod'] = 'Método de avaliação';

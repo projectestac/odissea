@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_manual', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshopallocation_manual', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   workshopallocation_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['addreviewee'] = 'Add reviewee';
 $string['addreviewer'] = 'Add reviewer';
 $string['allocationadded'] = 'The submission has been successfully allocated';
 $string['allocationexists'] = 'The allocation already exists';
-$string['areyousuretodeallocate'] = 'Are you sure you want deallocate the selected assessment?';
+$string['areyousuretodeallocate'] = 'Are you sure you want to deallocate the selected assessment?';
 $string['areyousuretodeallocategraded'] = 'You are going to remove the assessment that has already been graded. Are you really sure you want to do it?';
 $string['pluginname'] = 'Manual allocation';
 $string['privacy:metadata:preference:perpage'] = 'Number of allocated assessments the user prefers to see on one page.';

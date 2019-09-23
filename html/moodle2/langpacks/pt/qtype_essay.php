@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_essay', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Tipos de ficheiro permitidos';
+$string['acceptedfiletypes_help'] = 'Os tipos de ficheiros permitidos podem ser restringidos se indicar uma lista de extensões de ficheiros. Se deixar o campo vazio, todos os tipos de ficheiro serão permitidos.';
 $string['allowattachments'] = 'Permitir anexos';
 $string['attachmentsoptional'] = 'Anexos são opcionais';
 $string['attachmentsrequired'] = 'Exigir anexos';
@@ -40,6 +42,7 @@ $string['mustattach'] = 'Quando é selecionada a opção "Sem texto online" ou a
 $string['mustrequire'] = 'Quando é selecionada a opção "Sem texto online" ou as respostas são opcionais, tem de exigir pelo menos um anexo.';
 $string['mustrequirefewer'] = 'Não pode exigir mais anexos do que aqueles que permite.';
 $string['nlines'] = '{$a} linhas';
+$string['nonexistentfiletypes'] = 'Os seguintes tipos de ficheiros não foram reconhecidos: {$a}';
 $string['pluginname'] = 'Desenvolvimento';
 $string['pluginnameadding'] = 'A adicionar pergunta de desenvolvimento';
 $string['pluginnameediting'] = 'A editar pergunta de desenvolvimento';

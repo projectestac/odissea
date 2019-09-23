@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['commentcolour'] = 'Kommentarfärg';
 $string['commentcontextmenu'] = 'Kommentera snabbmenyn';
 $string['couldnotsavepage'] = 'Det gick inte att spara sidan {$a}';
 $string['currentstamp'] = 'Stämpel';
+$string['default'] = 'Aktiverat som standard';
+$string['default_help'] = 'Om detta aktiveras, kommer denna återkopplingsmetod vara aktiverad som standard för alla nya uppgifter';
 $string['deleteannotation'] = 'Radera';
 $string['deletecomment'] = 'Radera kommentar';
 $string['deletefeedback'] = 'Radera återkopplings PDF';

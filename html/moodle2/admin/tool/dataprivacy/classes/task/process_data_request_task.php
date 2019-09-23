@@ -79,12 +79,24 @@ class process_data_request_task extends adhoc_task {
             mtrace('Warning: No purpose is defined at the system level. Deletion will delete all.');
         }
 
+        // Grab the manager.
+        // We set an observer against it to handle failures.
+        $manager = new \core_privacy\manager();
+        $manager->set_observer(new \tool_dataprivacy\manager_observer());
+
         // Get the user details now. We might not be able to retrieve it later if it's a deletion processing.
         $foruser = core_user::get_user($request->userid);
 
         // Update the status of this request as pre-processing.
-        mtrace('Processing request...');
+        mtrace('Pre-processing request...');
         api::update_request_status($requestid, api::DATAREQUEST_STATUS_PROCESSING);
+        $contextlistcollection = $manager->get_contexts_for_userid($requestpersistent->get('userid'));
+
+        mtrace('Fetching approved contextlists from collection');
+        $approvedclcollection = api::get_approved_contextlist_collection_for_collection(
+                $contextlistcollection, $foruser, $request->type);
+
+        mtrace('Processing request...');
         $completestatus = api::DATAREQUEST_STATUS_COMPLETE;
         $deleteuser = false;
 
@@ -97,13 +109,7 @@ class process_data_request_task extends adhoc_task {
                 return;
             }
 
-            // Get the collection of approved_contextlist objects needed for core_privacy data export.
-            $approvedclcollection = api::get_approved_contextlist_collection_for_request($requestpersistent);
-
             // Export the data.
-            $manager = new \core_privacy\manager();
-            $manager->set_observer(new \tool_dataprivacy\manager_observer());
-
             $exportedcontent = $manager->export_user_data($approvedclcollection);
 
             $fs = get_file_storage();
@@ -121,9 +127,6 @@ class process_data_request_task extends adhoc_task {
             $thing = $fs->create_file_from_pathname($filerecord, $exportedcontent);
             $completestatus = api::DATAREQUEST_STATUS_DOWNLOAD_READY;
         } else if ($request->type == api::DATAREQUEST_TYPE_DELETE) {
-            // Get the collection of approved_contextlist objects needed for core_privacy data deletion.
-            $approvedclcollection = api::get_approved_contextlist_collection_for_request($requestpersistent);
-
             // Delete the data.
             $manager = new \core_privacy\manager();
             $manager->set_observer(new \tool_dataprivacy\manager_observer());

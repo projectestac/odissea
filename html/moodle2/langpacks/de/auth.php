@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['auth_updateremote_ldap'] = '<p><b>Anmerkung:</b> Das Update externer LD
 $string['auth_user_create'] = 'Nutzererstellung aktivieren';
 $string['auth_user_creation'] = 'Neue (anonyme) Nutzer können Nutzerkonten außerhalb der Authentifizierungsquelle erstellen und per E-Mail bestätigen. Wenn Sie diese Option aktivieren, müssen Sie außerdem modulspezifische Optionen zur Erstellung neuer Nutzerkonten konfigurieren.';
 $string['auth_usernameexists'] = 'Der Anwendername existiert bereits. Bitte ändern Sie Ihre Eingabe.';
+$string['auth_usernotexist'] = 'Nicht existierender Nutzer {$a} kann nicht aktualisiert werden';
 $string['auto_add_remote_users'] = 'Automatisches Hinzufügen externer Nutzer';
 $string['cannotmapfield'] = 'Das Profilfeld \'{$a->fieldname}\' kann nicht zugeordnet werden, da sein Kurzname \'{$a->shortname}\' zu lang ist. Um die Zuordnung aktivieren zu können, darf der Kurzname des Profilfelds nur {$a->charlimit} Zeichen haben. <a href="{$a->link}">Profilfelder bearbeiten</a>';
 $string['changepassword'] = 'URL zur Kennwortänderung';

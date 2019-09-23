@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,7 @@ $string['bynameondate'] = 'door  {$a->name}  - {$a->date}';
 $string['cannotadd'] = 'Kon de discussie niet toevoegen aan dit forum';
 $string['cannotadddiscussion'] = 'Om discussies aan dit forum te kunnen toevoegen, moet je lid zijn van deze groep';
 $string['cannotadddiscussionall'] = 'Je hebt het recht niet om een nieuw discussieonderwerp te starten voor alle deelnemers.';
+$string['cannotadddiscussiongroup'] = 'Je kunt geen discussie maken omdat je geen lid bent van een groep.';
 $string['cannotaddsubscriber'] = 'Kon gebruiker met ID {$a} niet inschrijven voor het ontvangen van e-mail van dit forum!';
 $string['cannotaddteacherforumto'] = 'Kon het geconverteerde leraarsforum niet toevoegen aan sectie 0 van de cursus';
 $string['cannotcreatediscussion'] = 'Kon geen nieuwe discussie starten';
@@ -151,6 +152,7 @@ $string['discussionpin'] = 'Vastpinnen';
 $string['discussionpinned'] = 'Vastgepind';
 $string['discussionpinned_help'] = 'Vastgepinde discussies zullen bovenaan het forum verschijnen';
 $string['discussions'] = 'Discussies';
+$string['discussionsplit'] = 'Discussie is gesplitst';
 $string['discussionsstartedby'] = 'Discussies die door {$a} zijn gestart';
 $string['discussionsstartedbyrecent'] = 'Discussies die recentelijk door {$a} zijn gestart';
 $string['discussionsstartedbyuserincourse'] = 'Discussies, gestart door {$a->fullname} in {$a->coursename}';
@@ -181,9 +183,6 @@ $string['edit'] = 'Wijzig';
 $string['editedby'] = 'Bewerkt door {$a->name} - oorspronkelijk bericht van {$a->date}';
 $string['editedpostupdated'] = '{$a}\'s bericht is aangepast';
 $string['editing'] = 'Wijzigen';
-$string['emaildigest_0'] = 'Je zult één e-mail per forumbericht ontvangen.';
-$string['emaildigest_1'] = 'Je zult één samenvattende e-mail per dag ontvangen waarin de inhoud van alle forumberichten zit.';
-$string['emaildigest_2'] = 'Je zult één samenvattende e-mail per dag ontvangen waarin het onderwerp van elk forumbericht zit.';
 $string['emaildigestcompleteshort'] = 'Volledige berichten';
 $string['emaildigestdefault'] = 'Standaard ({$a})';
 $string['emaildigestoffshort'] = 'Geen samenvattende mail';
@@ -195,8 +194,6 @@ $string['emaildigesttype_help'] = 'Het type melding dat je zult krijgen voor elk
 * Geen samenvattende e-mail - je zult één e-mail krijgen per forumbericht;
 * Samenvattende e-mail - volledige berichten - je krijgt één samenvattende e-mail per dag met daarin de volledige inhoud van elk forumbericht;
 * Samenvattende e-mail - enkel onderwerpen - je krijgt één samenvattende e-mail per dag met daarin enkel het onderwerp van elk forumbericht.';
-$string['emaildigestupdated'] = 'De optie voor verzamelde mail is gewijzigd naar \'{$a->maildigesttitle}\' voor forum \'{$a->forum}\'. {$a->maildigestdescription}';
-$string['emaildigestupdated_default'] = 'De standaardinstelling van je profiel \'{$a->maildigesttitle}\' werd gebruikt voor forum \'{$a->forum}\'. {$a->maildigestdescription}.';
 $string['emptymessage'] = 'Er was iets mis met je bericht. Misschien heb je het leeg gelaten of was de bijlage te groot. Je wijzigingen zijn NIET bewaard.';
 $string['erroremptymessage'] = 'Bericht kan niet leeg zijn';
 $string['erroremptysubject'] = 'Onderwerp kan niet leeg zijn';
@@ -341,15 +338,15 @@ $string['modeflatoldestfirst'] = 'Laat de antwoorden in één lijst zien, met de
 $string['modenested'] = 'Laat de antwoorden \'genest\' zien';
 $string['modethreaded'] = 'Laat de antwoorden in hun \'draden\' zien';
 $string['modulename'] = 'Forum';
-$string['modulename_help'] = 'Met de forum-acticviteitsmodule kunnen deelnemers asynchrone discurssies voeren over een lange tijdsperiode.
+$string['modulename_help'] = 'Met de activiteit Forum kunnen deelnemers asynchrone discussies voeren over een lange tijdsperiode.
 
-Er zijn verschillende forumtypes om uit te kiezen, zoals standaard forum, waarbij iedereen een nieuwe discussie kan starten, een forum waarbij elke leerling slechts één discussie kan starten, of een vraag en antwoordforum, waar leerlingen eerst moeten posten, voor ze de berichten van andere leerlingen kunnen zien. Een leraar kan toestaan om bestanden als bijlage bij een bericht te laten voegen. Als dit afbeeldingen zijn, dan worden die getoond in het bericht.
+Er zijn verschillende forumtypes om uit te kiezen, zoals standaard forum, waarbij iedereen een nieuwe discussie kan starten, een forum waarbij elke leerling slechts één discussie kan starten, of een vraag en antwoordforum, waar leerlingen eerst moeten posten, voor ze de berichten van andere leerlingen kunnen zien. Een leraar kan toestaan bestanden als bijlage bij een bericht te laten voegen. Als dit afbeeldingen zijn, worden deze getoond in het bericht.
 
-Deelnemers kunnen zich inschrijven op een forum, zodat ze meldingen krijgen van nieuwe forumberichten. Een leraar kan die inschrijvingsmodus op optioneel, verplicht of automatich zetten of het inschrijven volledig blokkeren. Indien nodig kunnen leerlingen geblokkeerd worden als ze meer dan een bepaald aantal berichten posten per tijdsperiode; dit kan verhinderen dat sommigen de discussie domineren.
+Deelnemers kunnen zich inschrijven op een forum, zodat ze meldingen krijgen van nieuwe forumberichten. Een leraar kan die inschrijvingsmodus op optioneel, verplicht of automatisch zetten of het inschrijven volledig blokkeren. Indien nodig kunnen leerlingen geblokkeerd worden als ze meer dan een bepaald aantal berichten posten per tijdsperiode; dit kan verhinderen dat sommigen de discussie domineren.
 
-Forumberichten kunnen beoordeeld worden door leraars of door leerlingen (peer-evaluatie). De beoordelingen kunnen samengeteld worden om een eindbeoordeling voor het forum te verkrijgen, die dan in de cijferlijst opgenomen wordt.
+Forumberichten kunnen beoordeeld worden door leraren of door leerlingen (peer-evaluatie). De beoordelingen kunnen samengeteld worden om een eindbeoordeling voor het forum te verkrijgen, die dan in de cijferlijst opgenomen wordt.
 
-Forums kunnen voor veel zaken gebruikt worden, zoals
+Fora kunnen voor veel zaken gebruikt worden, zoals
 
 * een sociale ruimte waar leerlingen elkaar kunnen leren kennen
 * voor cursusmededelingen (door gebruik te maken van een nieuwsforum met verplicht ontvangen van meldingen)
@@ -358,7 +355,7 @@ Forums kunnen voor veel zaken gebruikt worden, zoals
 * voor discussies tussen leraren (in een verborgen forum)
 * als helpcentrum waar leraren en leerlingen advies kunnen geven
 * als één-op-één ondersteuningszone voor een privé leraar-leerling communicatie (door een forum met groepen te gebruiken met 1 leerling per groep)
-* voor uitbreidingsoefeningen, met uitdagende denkoefeningen waar leerlingen kunnen over nadenken, discussieren en oplossingen voorstellen.';
+* voor uitbreidingsoefeningen, met uitdagende denkoefeningen waar leerlingen kunnen over nadenken, discussiëren en oplossingen voorstellen.';
 $string['modulenameplural'] = 'Forums';
 $string['more'] = 'meer';
 $string['movedmarker'] = '(Verplaatst)';
@@ -399,8 +396,8 @@ $string['notpartofdiscussion'] = 'Dit bericht is geen deel van een discussie!';
 $string['notrackforum'] = 'Schakel volgen van ongelezen berichten uit';
 $string['notsubscribed'] = 'Inschrijven';
 $string['noviewdiscussionspermission'] = 'Je mag de discussies in dit forum niet zien';
-$string['nowallsubscribed'] = 'Je krijgt mail van alle forums in {$a}';
-$string['nowallunsubscribed'] = 'Je krijgt van geen enkel forum in {$a} mail';
+$string['nowallsubscribed'] = 'Je krijgt e-mail van alle forums in {$a}.';
+$string['nowallunsubscribed'] = 'Je krijgt van geen enkel forum in {$a} e-mail.';
 $string['nownotsubscribed'] = '{$a->name} zal GEEN meldingen over nieuwe forumberichten in  \'{$a->forum}\' ontvangen';
 $string['nownottracking'] = '{$a->name} volgt niet langer het forum \'{$a->forum}\'.';
 $string['nowsubscribed'] = '{$a->name} zal meldingen ontvangen over nieuwe forumberichtingen in \'{$a->forum}\'';
@@ -426,9 +423,6 @@ $string['postbymailsuccess'] = 'Je bericht met als onderwerp  "{$a->subject}" is
 $string['postbymailsuccess_html'] = 'Je <a href="{$a->discussionurl}">bericht</a> met als onderwerp  "{$a->subject}" is toegevoegd.';
 $string['postbyuser'] = '{$a->post} door {$a->user}';
 $string['postincontext'] = 'Bekijk dit bericht in zijn context';
-$string['postmailinfo'] = 'Dit is een kopie van een bericht dat op de {$a} website is toegevoegd.
-
-Klik op deze link om jouw antwoord via de website toe te voegen:';
 $string['postmailinfolink'] = 'Dit is een kopie van een bericht, gepost op de website {$a->coursename}.
 
 Klik op volgende link om te antwoorden: {$a->replylink}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,6 @@ $string['autotags'] = 'Lägg till de här etiketterna';
 $string['autotags_help'] = 'Skriv in en eller flera lokala etiketter (separerade med kommatecken) som du vill automatiskt ska läggas till varje blogginlägg som kopieras från den externa bloggen in i din lokala blogg.';
 $string['backupblogshelp'] = 'Om detta är aktiverat så kommer bloggar att tas med i automatiska säkerhetskopieringar på webbplatsnivå.';
 $string['blockexternalstitle'] = 'Externa bloggar';
-$string['blocktitle'] = 'Blockrubrik för bloggetiketter';
 $string['blog'] = 'Blogg';
 $string['blogaboutthis'] = 'Blogga om det här {$a->type}';
 $string['blogaboutthiscourse'] = 'Lägg till ett inlägg om den här kursen';

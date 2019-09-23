@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_list', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['allcourses'] = 'Administratören ser alla kurser';
 $string['configadminview'] = 'Vad ska systemadministratören se i blocket med listan över kurser?';
 $string['confighideallcourseslink'] = 'Dölj länken \'Alla kurser\' längst ner på blocket. Detta påverkar inte det som administratören kan se.';
 $string['course_list:addinstance'] = 'Lägg till en ny Kursblock';
-$string['course_list:myaddinstance'] = 'Lägg till en ny Kursblock till Mitt Moodle';
+$string['course_list:myaddinstance'] = 'Lägg till en ny Kursblock på Mitt Moodle';
 $string['hideallcourseslink'] = 'Dölj alla länkar till kurser';
 $string['owncourses'] = 'Administratören ser sina egna  kurser';
 $string['pluginname'] = 'Lista över kurser';

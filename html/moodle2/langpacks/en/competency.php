@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'competency', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -104,7 +104,6 @@ $string['evidence_manualoverrideincourse'] = 'The competency rating was manually
 $string['evidence_manualoverrideinplan'] = 'The competency rating was manually set in the learning plan \'{$a}\'.';
 $string['invalidevidencedesc'] = 'Invalid evidence description';
 $string['invalidgrade'] = 'Invalid rating';
-$string['invalidpersistent'] = 'Invalid persistent';
 $string['invalidpersistenterror'] = 'Error: {$a}';
 $string['invalidplan'] = 'Invalid learning plan';
 $string['invalidtaxonomy'] = 'Invalid taxonomy: {$a}';

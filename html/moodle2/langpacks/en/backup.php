@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'backup', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -242,6 +242,7 @@ $string['qcategory2coursefallback'] = 'The questions category "{$a->name}", orig
 $string['qcategorycannotberestored'] = 'The questions category "{$a->name}" cannot be created by restore';
 $string['question2coursefallback'] = 'The questions category "{$a->name}", originally at system/course category context in backup file, will be created at course context by restore';
 $string['questionegorycannotberestored'] = 'The questions "{$a->name}" cannot be created by restore';
+$string['recyclebin_desc'] = 'Note that these settings will be also be used for the recycle bin.';
 $string['replacerestoredefaults'] = 'Restore defaults when restoring into another course deleting contents';
 $string['restoreactivity'] = 'Restore activity';
 $string['restorecourse'] = 'Restore course';

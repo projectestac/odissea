@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_legacy', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'logstore_legacy', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   logstore_legacy
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['privacy:metadata:log'] = 'Een verzameling van vorige evenementen';
 $string['privacy:metadata:log:action'] = 'Een beschrijving van de actie';
 $string['privacy:metadata:log:info'] = 'Extra informatie';
 $string['privacy:metadata:log:ip'] = 'Het IP-adres dat werd gebruikt op het moment van het evenement';
-$string['privacy:metadata:log:time'] = 'De datum waarop de actie plaatsvond';
+$string['privacy:metadata:log:time'] = 'Het tijdstip waarop de actie plaatsvond';
 $string['privacy:metadata:log:url'] = 'De URL, gerelateerd aan de gebeurtenis';
 $string['privacy:metadata:log:userid'] = 'De ID van die gebruiker die de actie uitvoerde';
 $string['taskcleanup'] = 'Opschonen oude logtabel';

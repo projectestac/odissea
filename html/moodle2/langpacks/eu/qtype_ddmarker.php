@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,11 +41,21 @@ $string['dropbackground'] = 'Atzeko planoaren irudia, bertara markatzaileak eram
 $string['dropzone'] = 'Eramateko tokia {$a}';
 $string['dropzoneheader'] = 'Eramateko tokiak';
 $string['dropzones'] = 'Eramateko tokiak';
-$string['dropzones_help'] = 'Askatze-eremuak koordenatuak idatzita zehazten dira. Idazten joan ahala, goiko aurrebista berehala eguneratzen da, eta beraz elementuak kokatu ditzakezu probatu eta ondoren hobetzen joanda.
+$string['dropzones_help'] = 'Eramateko tokiak koordenatuak idatzita edo goiko aurrebistan euren kokapenera eramanda zehaztu daitezke.
 
-* Zirkulua: zentroa_x, zentroa_y; erradioa<br>adibidez: <code>80, 100; 50</code>
-* Poligonoa: x1,y1; x2,y2; ...; xn, yn<br>adibidez: <code>20, 60; 100, 60; 20, 100</code>
-* Laukizuzena: x1, y1; zabalera, altuera<br>adibidez: <code>20, 60; 80, 40</code>';
+Lehen aldiz forma bat (zirkulua, laukizuzena edo poligonoa) aukeratzen denean aurrebistaren goiko ezkerraldean eramateko toki berri bat gehituko da. Markatzaileen atala tolestea lagungarria izan daiteke eramateko tokiak editatu bitartean aurrebista ikusi ahal izateko.
+
+Forma bat editatzeko aurrena aurrebistan forma horretan klik egin ezazu edizio-kontrolak erakusteko. Forma mugitu dezakezu erdiko kontrola erabilita, edo formaren neurriak egokitu ertzetako kontrolak erabilita.
+
+Poligonoak direnean, CTRL botoian sakatuta mantenduz (komando botoia Mac batean bada) ertzetako kontrolean klik eginda poligonoari ertz berri bat gehituko zaio. Saiatu zaitez poligonoaren forma ahal bezain sinplea mantentzen, gurutzatzen diren lerrorik gabe.
+
+Hauek dira hiru formen koordenatuak definitzean erabiltzen den notazioa:
+
+* Zirkulua: zentroa_x, zentroa_y; erradioa<br />adibidez: <code>80,100;50</code>
+* Laukizuzena: goi_ezker_x, goi_ezker_y; zabalera, altuera<br />adibidez: <code>20,60;80,40</code>
+* Poligonoa: x1,y1; x2,y2; ...; xn, yn<br />adibidez: <code>20,60;100,60;20,100</code>
+
+Markatzailearen testu bat aukeratzeak testu hori aurrebistako formara gehituko da.';
 $string['followingarewrong'] = 'Ondoko markatzaileak okerreko tokian jarri dira: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Hurrengo markatzaileak modu ezegokian kokatu dira: {$a}. Nabarmendutako markatzaileak orain kokapen egokietan erakusten dira.<br /> Egin klik markatzailean baimendutako eremua nabarmentzeko.';
 $string['formerror_nobgimage'] = 'Irudi bat aukeratu behar duzu atzeko planoan hartu eta eramateko tokiak zehazteko.';

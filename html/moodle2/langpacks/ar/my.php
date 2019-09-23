@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'my', language 'ar', branch 'MOODLE_36_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['defaultpage'] = 'صفحة مودل الافتراضية الخاصة ب
 $string['defaultprofilepage'] = 'صفحة اللمحة الشخصية الافتراضية';
 $string['delpage'] = 'حذف الصفحة';
 $string['managepages'] = 'إدارة الصفحات';
-$string['mymoodle'] = 'مودل الخاص بي';
+$string['mymoodle'] = 'لوحة عدادات';
 $string['nocourses'] = 'لا يوجد معلومات لمقرر دراسي ليتم اظهرها';
 $string['noguest'] = 'صفحة مودل الخاص بي غير متاحة للزوار';
 $string['pinblocks'] = 'إعاداد الكتل الخاصة بمودل الخاص بي';

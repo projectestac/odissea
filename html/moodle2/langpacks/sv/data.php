@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'data', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -264,18 +264,6 @@ $string['movezipfailed'] = 'Det gick inte att flytta zip-filen';
 $string['multientry'] = 'Dubblerat bidrag';
 $string['multimenu'] = 'Meny (välj flera)';
 $string['multipletags'] = 'Det fanns flerfaldiga taggar! Mallen har inte sparats';
-$string['namecheckbox'] = 'Fält för kryssruta';
-$string['namedate'] = 'Fält för datum';
-$string['namefile'] = 'Fält för fil';
-$string['namelatlong'] = 'Fält för latitud/longitud';
-$string['namemenu'] = 'Fält för meny';
-$string['namemultimenu'] = 'Fält för flervalsmeny';
-$string['namenumber'] = 'Fält för tal';
-$string['namepicture'] = 'Fält för bild';
-$string['nameradiobutton'] = 'Fält för radioknapp';
-$string['nametext'] = 'Fält för text';
-$string['nametextarea'] = 'Fält för textyta';
-$string['nameurl'] = 'Fält för URL';
 $string['newentry'] = 'Nytt bidrag';
 $string['newfield'] = 'Skapa ett nytt fält';
 $string['newfield_help'] = '<p align="center"><strong>Fält</strong></p>

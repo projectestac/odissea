@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'label', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,5 +52,5 @@ $string['modulename_link'] = 'mod/label/link';
 $string['modulenameplural'] = 'Separadores';
 $string['pluginadministration'] = 'Administração do Separador';
 $string['pluginname'] = 'Separador';
-$string['privacy:metadata'] = 'O módulo mod_label não armazena qualquer dado pessoal.';
+$string['privacy:metadata'] = 'O módulo do recurso Separador não armazena quaisquer dados pessoais.';
 $string['search:activity'] = 'Separador';

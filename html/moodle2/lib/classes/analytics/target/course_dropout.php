@@ -203,6 +203,8 @@ class course_dropout extends \core_analytics\local\target\binary {
      */
     public function is_valid_sample($sampleid, \core_analytics\analysable $course, $fortraining = true) {
 
+        $now = time();
+
         $userenrol = $this->retrieve('user_enrolments', $sampleid);
         if ($userenrol->timeend && $course->get_start() > $userenrol->timeend) {
             // Discard enrolments which time end is prior to the course start. This should get rid of
@@ -224,6 +226,16 @@ class course_dropout extends \core_analytics\local\target\binary {
         if (($userenrol->timestart && $userenrol->timestart > $course->get_end()) ||
                 (!$userenrol->timestart && $userenrol->timecreated > $course->get_end())) {
             // Discard user enrolments that starts after the analysable official end.
+            return false;
+        }
+
+        if ($now < $userenrol->timestart && $userenrol->timestart) {
+            // Discard enrolments whose start date is after now (no need to check timecreated > $now :P).
+            return false;
+        }
+
+        if (!$fortraining && $userenrol->timeend && $userenrol->timeend < $now) {
+            // We don't want to generate predictions for finished enrolments.
             return false;
         }
 

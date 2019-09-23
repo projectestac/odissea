@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_ldap', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -123,7 +123,7 @@ $string['role_mapping_key'] = 'Mappa ruoli da LDAP';
 $string['roles'] = 'Mappatura ruoli';
 $string['server_settings'] = 'Impostazioni server LDAP';
 $string['synccourserole'] = '== Sincronizzazione del corso \'{$a->idnumber}\' per il ruolo \'{$a->role_shortname}\'';
-$string['syncenrolmentstask'] = 'Sincronizzazione iscrizioni';
+$string['syncenrolmentstask'] = 'Sincronizzazione iscrizioni LDAP';
 $string['template'] = 'Opzionale: i corsi creati automaticamente possono ereditare le impostazioni da un corso modello. Inserisci qui il titolo del corso da usare come modello.';
 $string['template_key'] = 'Modello';
 $string['unassignrole'] = 'Rimozione del ruolo {$a->role_shortname}\' dell\'utente user \'{$a->user_username}\' nel corso \'{$a->course_shortname}\' (id {$a->course_id})';

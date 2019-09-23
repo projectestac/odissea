@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'question', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,8 @@ $string['cannotdeletecate'] = 'Vous ne pouvez pas supprimer cette catégorie, ca
 $string['cannotdeleteneededbehaviour'] = 'Impossible de supprimer le comportement de question « {$a} ». D\'autres comportements installés se basent dessus.';
 $string['cannotdeleteqtypeinuse'] = 'Vous ne pouvez pas supprimer le type « {$a} », car il y a des questions de ce type dans la banque de questions.';
 $string['cannotdeleteqtypeneeded'] = 'Vous ne pouvez pas supprimer le type « {$a} », car d\'autres types de question installés en ont besoin.';
+$string['cannotdeletetopcat'] = 'Les catégories racine ne peuvent pas être supprimées.';
+$string['cannotedittopcat'] = 'Les catégories racine ne peuvent pas être modifiées.';
 $string['cannotenable'] = 'Le type de question {$a} ne peut pas être créé directement.';
 $string['cannotenablebehaviour'] = 'Le comportement de question {$a} ne peut pas être utilisé directement. Il est conçu pour une utilisation interne uniquement.';
 $string['cannotfindcate'] = 'Impossible de trouver l\'enregistrement pour la catégorie';
@@ -104,7 +106,7 @@ $string['correctfeedback'] = 'Pour toutes réponses correctes';
 $string['correctfeedbackdefault'] = 'Votre réponse est correcte.';
 $string['created'] = 'Date de création';
 $string['createdby'] = 'Créée par';
-$string['createdmodifiedheader'] = 'Création / Dernier enregistrement';
+$string['createdmodifiedheader'] = 'Création / dernière modification';
 $string['createnewquestion'] = 'Créer une question...';
 $string['cwrqpfs'] = 'Questions aléatoires sélectionnant des questions dans les sous-catégories.';
 $string['cwrqpfsinfo'] = '<p>Lors de la mise à jour à Moodle 1.9, les catégories de questions seront séparées en différents contextes. Certaines catégories et questions de votre site verront leur état de partage modifié. Cette opération est rarement nécessaire. Elle est effectuée lorsque l\'une ou plusieurs questions aléatoires d\'un test sont réglées de façon à sélectionner des questions dans des catégories partagées et non partagées (et c\'est le cas sur ce site). Cette situation survient quand une question aléatoire puise dans des sous-catégories et l\'une de ces sous-catégories a un statut de partage différent de la catégorie parente dans laquelle la question aléatoire a été créée.</p><p>Les catégories de question suivantes, d\'où sont puisées des questions aléatoires à partir de questions dans une catégorie parente, verront leur état de partage modifié de façon à correspondre à l\'état de partage de la catégorie parente lors de la mise à jour à Moodle 1.9. Les catégories ci-dessous sont concernées par ce changement. Les questions affectées par ce changement continueront à fonctionner dans tous les tests existants, jusqu\'à ce que vous les retiriez de ces tests.</p>';
@@ -148,11 +150,11 @@ $string['errordeletingquestionsfromcategory'] = 'Erreur lors de la suppression d
 $string['errorduringpost'] = 'Erreur lors du post-traitement !';
 $string['errorduringpre'] = 'Erreur lors du pré-traitement !';
 $string['errorduringproc'] = 'Erreur lors du traitement !';
-$string['errorduringregrade'] = 'Impossible de renoter la question {$a->qid}. Retour à l\'état {$a->stateid}.';
+$string['errorduringregrade'] = 'Impossible de ré-évaluer la question {$a->qid}. Retour à l\'état {$a->stateid}.';
 $string['errorfilecannotbecopied'] = 'Impossible de copier le fichier {$a}.';
 $string['errorfilecannotbemoved'] = 'Impossible de déplacer le fichier {$a}.';
 $string['errorfileschanged'] = 'Erreur : certains fichiers liés dans des questions ont été modifiés depuis l\'affichage du formulaire.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La question ({$a}) est présente avec des coefficients différents en des endroits différents du test. Une telle fonctionnalité n\'est pas supportée par le rapport statistique et pourrait rendre des statistiques de cette question incorrectes.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La question ({$a}) apparaît plusieurs fois avec des coefficients différents en divers endroits du test. Une telle fonctionnalité n\'est pas supportée par le rapport statistique et pourrait rendre des statistiques de cette question incorrectes.';
 $string['errormanualgradeoutofrange'] = 'La note {$a->grade} n\'est pas entre 0 et {$a->maxgrade} pour la question {$a->name}. Le score et le commentaire n\'ont pas été enregistrés.';
 $string['errormovingquestions'] = 'Erreur lors du déplacement des questions d\'identifiants {$a}.';
 $string['errorpostprocess'] = 'Erreur lors du post-traitement !';
@@ -171,6 +173,7 @@ Certains formats (par exemple GIFT et Moodle XML) permettent l\'inclusion de la 
 $string['exporterror'] = 'Des erreurs sont survenues lors de l\'exportation !';
 $string['exportfilename'] = 'quiz';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
+$string['exportonequestion'] = 'Télécharger cette question en format Moodle XML';
 $string['exportquestions'] = 'Exporter des questions vers un fichier';
 $string['exportquestions_help'] = 'Ce réglage permet d\'activer l\'exportation de catégories (avec toutes les sous-catégories) de questions vers un fichier. Suivant le format de fichier choisi, certaines données de questions et certains types de questions ne pourront pas être exportés.';
 $string['feedback'] = 'Feedback';
@@ -181,6 +184,7 @@ $string['filesareacourse'] = 'la zone des fichiers du cours';
 $string['filesareasite'] = 'la zone des fichiers du site';
 $string['filestomove'] = 'Déplacer / copier les fichiers vers {$a} ?';
 $string['fillincorrect'] = 'Remplir les réponses correctes';
+$string['filterbytags'] = 'Filtrer par tags...';
 $string['firsttry'] = 'Première tentative';
 $string['flagged'] = 'Marquée';
 $string['flagthisquestion'] = 'Marquer cette question';
@@ -201,6 +205,8 @@ $string['howquestionsbehave_help'] = 'Les participants peuvent agir avec les que
 Sinon, vous pourriez souhaiter que les participants envoient chaque question au fur et à mesure du test et reçoivent immédiatement le feedback correspondant, qu\'ils puissent tenter de répondre à nouveau s\'ils ont échoué, mais avec une note moindre. Ce sera le mode « Interactif avec essais multiples ».
 
 Ces deux exemples illustrent les deux comportements les plus utilisés.';
+$string['idnumber'] = 'Numéro d\'identification';
+$string['idnumber_help'] = 'Si renseigné, le numéro d\'identification doit être unique dans chaque catégorie de question. Ce numéro fournit une autre façon d\'identifier une question. Il est laissé vide la plupart du temps.';
 $string['ignorebroken'] = 'Ignorer les liens cassés';
 $string['import'] = 'Importer';
 $string['importcategory'] = 'Catégorie d\'importation';
@@ -268,7 +274,7 @@ $string['movingcategory'] = 'Déplacement catégorie';
 $string['movingcategoryandfiles'] = 'Voulez-vous vraiment déplacer la catégorie {$a->name} et toutes les catégories filles vers le contexte « {$a->contextto} »?<br />{$a->urlcount} fichiers liés depuis des questions situées dans {$a->fromareaname} ont été détectés. Voulez-vous les copier ou les déplacer vers {$a->toareaname} ?';
 $string['movingcategorynofiles'] = 'Voulez-vous vraiment déplacer la catégorie {$a->name} et toutes les catégories filles vers le contexte « {$a->contextto} »?';
 $string['movingquestions'] = 'Déplacement des questions et des fichiers';
-$string['movingquestionsandfiles'] = 'Voulez-vous vraiment déplacer la(les) question(s) {$a->questions} vers le contexte « {$a->tocontext} »?<br />{$a->urlcount} fichiers liés depuis cette(ces) question(s) dans {$a->fromareaname} ont été détectés.  Voulez-vous les copier ou les déplacer vers {$a->toareaname} ';
+$string['movingquestionsandfiles'] = 'Voulez-vous vraiment déplacer la(les) question(s) {$a->questions} vers le contexte « {$a->tocontext} »?<br />{$a->urlcount} fichiers liés depuis cette(ces) question(s) dans {$a->fromareaname} ont été détectés. Voulez-vous les copier ou les déplacer vers {$a->toareaname} ';
 $string['movingquestionsnofiles'] = 'Voulez-vous vraiment déplacer la(les) question(s) {$a->questions} vers le contexte « {$a->tocontext} »?<br />Il n\'y a <strong>aucun fichier</strong> liés depuis cette(ces) question(s) dans {$a->fromareaname}.';
 $string['needtochoosecat'] = 'Vous devez choisir une catégorie dans laquelle déplacer cette question ou cliquer sur « Annuler ».';
 $string['nocate'] = 'Aucune catégorie {$a} !';
@@ -278,6 +284,7 @@ $string['noprobs'] = 'Aucun problème n\'a été détecté dans votre banque de 
 $string['noquestions'] = 'Aucune question à exporter. Assurez-vous que vous avez sélectionné pour l\'exportation une catégorie contenant des questions.';
 $string['noquestionsinfile'] = 'Il n\'y a aucune question dans le fichier d\'importation';
 $string['noresponse'] = '[Pas de réponse]';
+$string['notagfiltersapplied'] = 'Aucun filtre de tag appliqué';
 $string['notanswered'] = 'Non répondue';
 $string['notchanged'] = 'Non modifiée depuis la dernière tentative';
 $string['notenoughanswers'] = 'Ce type de question requiert au moins {$a} réponses';
@@ -300,7 +307,7 @@ $string['page-question-import'] = 'Page d\'importation de questions';
 $string['page-question-x'] = 'Toute page de questions';
 $string['parent'] = 'Parent';
 $string['parentcategory'] = 'Catégorie parente';
-$string['parentcategory_help'] = 'La catégorie parente est celle dans laquelle la nouvelle catégorie sera placée. Le plus haut niveau signifie que cette catégorie n\'est contenue dans aucune autre. Les  contextes de catégories sont en caractères gras. Il faut avoir au moins une catégorie par contexte.';
+$string['parentcategory_help'] = 'La catégorie parente est celle dans laquelle la nouvelle catégorie sera placée. Le plus haut niveau signifie que cette catégorie n\'est contenue dans aucune autre. Les contextes de catégories sont en caractères gras. Il faut avoir au moins une catégorie par contexte.';
 $string['parenthesisinproperclose'] = 'La parenthèse avant ** n\'est pas fermée correctement dans {$a}**';
 $string['parenthesisinproperstart'] = 'La parenthèse avant ** n\'est pas ouverte correctement dans {$a}**';
 $string['parsingquestions'] = 'Analyse des questions du fichier d\'importation.';
@@ -314,7 +321,9 @@ Le facteur de pénalité doit être un nombre compris entre 0 et 1. Un facteur d
 $string['penaltyforeachincorrecttry'] = 'Pénalité pour tout essai incorrect';
 $string['penaltyforeachincorrecttry_help'] = 'Lorsque des questions sont en mode « Interactif avec essais multiples » ou « Adaptatif », les participants ont plusieurs essais pour trouver la bonne réponse. Cette option contrôle comment ils sont pénalisés pour chaque essai incorrect.
 
-La pénalité est un pourcentage de la note totale de la question, donc si la question est notée sur 3 points et que la pénalité est de 0,3333333, alors le participant aura 3 points s\'il répond correctement à la question au premier essai, 2 points s\'il répond correctement au deuxième essai, et 1 point s\'il répond correctement au troisième essai.';
+La pénalité est un pourcentage de la note totale de la question, donc si la question est notée sur 3 points et que la pénalité est de 0,3333333, alors le participant aura 3 points s\'il répond correctement à la question au premier essai, 2 points s\'il répond correctement au deuxième essai, et 1 point s\'il répond correctement au troisième essai.
+
+Pour certaines questions en plusieurs parties, cette logique est appliquée séparément à chacune des parties de la question. Les détails dépendent du type de question et peuvent être compliqués, mais le principe est de donner crédit aux étudiants de manière aussi équitable que possible pour les connaissances qu\'ils ont démontrées.';
 $string['permissionedit'] = 'Modifier cette question';
 $string['permissionmove'] = 'Déplacer cette question';
 $string['permissionsaveasnew'] = 'Enregistrer ceci en tant que nouvelle question';
@@ -349,12 +358,13 @@ $string['questionaffected'] = '<a href="{$a->qurl}">La question « {$a->name} 
 $string['questionbank'] = 'Banque de questions';
 $string['questionbehaviouradminsetting'] = 'Paramètres des comportements de questions';
 $string['questionbehavioursdisabled'] = 'Comportements de questions à désactiver';
-$string['questionbehavioursdisabledexplained'] = 'Saisissez une liste des comportements que vous ne voulez pas voir apparaître dans le menu déroulant, séparés par des virgules';
+$string['questionbehavioursdisabledexplained'] = 'Saisissez une liste des comportements que vous ne voulez pas voir apparaître dans le menu déroulant, séparés par des virgules.';
 $string['questionbehavioursorder'] = 'Ordre des comportements de questions';
-$string['questionbehavioursorderexplained'] = 'Entrez une liste des comportements dans l\'ordre où vous souhaitez les voir apparaître dans le menu déroulant,  séparés par des virgules';
+$string['questionbehavioursorderexplained'] = 'Saisissez une liste des comportements dans l\'ordre où vous souhaitez les voir apparaître dans le menu déroulant, séparés par des virgules.';
 $string['questioncategory'] = 'Catégorie de questions';
 $string['questioncatsfor'] = 'Catégories de question de « {$a} »';
 $string['questiondoesnotexist'] = 'Cette question n\'existe pas';
+$string['questionformtagheader'] = 'Tags {$a}';
 $string['questionidmismatch'] = 'Les identifiants de questions ne correspondent pas';
 $string['questionname'] = 'Nom de question';
 $string['questionnamecopy'] = '{$a} (copie)';
@@ -367,6 +377,7 @@ $string['questionsinuse'] = '(* Les questions marquées d\'un astérisque sont d
 $string['questionsmovedto'] = 'Les questions encore utilisées ont été déplacées vers « {$a} » dans la catégorie de cours mère.';
 $string['questionsrescuedfrom'] = 'Questions enregistrées depuis le contexte {$a}.';
 $string['questionsrescuedfrominfo'] = 'Ces questions (dont certaines sont peut-être cachées) ont été enregistrées lors de la suppression du contexte {$a}, car elles sont encore utilisées dans certains tests ou d\'autres activités.';
+$string['questiontags'] = 'Tags de question';
 $string['questiontext'] = 'Texte de la question';
 $string['questiontype'] = 'Type de question';
 $string['questionuse'] = 'Utilisation de question dans cette activité';
@@ -376,9 +387,10 @@ $string['requiresgrading'] = 'Nécessite évaluation';
 $string['responsehistory'] = 'Historique des réponses';
 $string['restart'] = 'Recommencer';
 $string['restartwiththeseoptions'] = 'Recommencer avec ces options';
+$string['restoremultipletopcats'] = 'Le fichier de sauvegarde contient plus d\'une catégorie racine de questions pour le contexte {$a}.';
 $string['reviewresponse'] = 'Relire la réponse';
 $string['rightanswer'] = 'Réponse juste';
-$string['rightanswer_help'] = 'Un résumé de la réponse correcte généré automatiquement. Ce texte peut être limité. Il peut être plus judicieux d\'expliquer la réponse correcte dans le feedback général de la question et de désactiver cette option.';
+$string['rightanswer_help'] = 'Un résumé de la réponse correcte généré automatiquement. Ce texte peut être limitatif. Il peut être plus judicieux d\'expliquer la réponse correcte dans le feedback général de la question et de désactiver cette option.';
 $string['save'] = 'Enregistrer';
 $string['savechangesandcontinueediting'] = 'Enregistrer les modifications et continuer';
 $string['saved'] = 'Enregistré : {$a}';
@@ -421,6 +433,7 @@ $string['technicalinfostate'] = 'État de la question : {$a}';
 $string['technicalinfovariant'] = 'Variante de question : {$a}';
 $string['tofilecategory'] = 'Exporter la catégorie dans le fichier';
 $string['tofilecontext'] = 'Exporter le contexte dans le fichier';
+$string['topfor'] = 'Racine pour {$a}';
 $string['uninstallbehaviour'] = 'Supprimer ce comportement de question.';
 $string['uninstallqtype'] = 'Désinstaller ce type de question.';
 $string['unknown'] = 'Inconnu';

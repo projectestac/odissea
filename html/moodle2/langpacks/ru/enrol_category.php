@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'ru', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_category', language 'ru', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_category
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['category:config'] = 'Настраивать экземпляры способа записи на курс «Зачисление из категории»';
 $string['category:synchronised'] = 'Быть зачисленным на курс способом записи «Зачисление из категории»';
+$string['enrolcategorysynctask'] = 'Синхронизация зачисления из категории';
 $string['pluginname'] = 'Зачисление из категории';
 $string['pluginname_desc'] = 'Плагин записи из категории синхронизирует любые назначения ролей в контексте категории для ролей с возможностью enrol/category:synchronised allowed.';
 $string['privacy:metadata'] = 'Плагин «Зачисление из категории» не хранит никаких персональных данных.';

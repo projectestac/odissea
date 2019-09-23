@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'en', branch 'MOODLE_34_STABLE'
+ * Strings for component 'forum', language 'en', branch 'MOODLE_36_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,7 @@ $string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['cannotadd'] = 'Could not add the discussion for this forum';
 $string['cannotadddiscussion'] = 'Adding discussions to this forum requires group membership.';
 $string['cannotadddiscussionall'] = 'You do not have permission to add a new discussion topic for all participants.';
+$string['cannotadddiscussiongroup'] = 'You are not able to create a discussion because you are not a member of any group.';
 $string['cannotaddsubscriber'] = 'Could not add subscriber with id {$a} to this forum!';
 $string['cannotaddteacherforumto'] = 'Could not add converted teacher forum instance to section 0 in the course';
 $string['cannotcreatediscussion'] = 'Could not create new discussion';
@@ -151,6 +152,7 @@ $string['discussionpin'] = 'Pin';
 $string['discussionpinned'] = 'Pinned';
 $string['discussionpinned_help'] = 'Pinned discussions will appear at the top of a forum.';
 $string['discussions'] = 'Discussions';
+$string['discussionsplit'] = 'Discussion has been split';
 $string['discussionsstartedby'] = 'Discussions started by {$a}';
 $string['discussionsstartedbyrecent'] = 'Discussions recently started by {$a}';
 $string['discussionsstartedbyuserincourse'] = 'Discussions started by {$a->fullname} in {$a->coursename}';
@@ -173,9 +175,6 @@ $string['edit'] = 'Edit';
 $string['editedby'] = 'Edited by {$a->name} - original submission {$a->date}';
 $string['editedpostupdated'] = '{$a}\'s post was updated';
 $string['editing'] = 'Editing';
-$string['emaildigest_0'] = 'You will receive one e-mail per forum post.';
-$string['emaildigest_1'] = 'You will receive one digest e-mail per day containing the complete contents of each forum post.';
-$string['emaildigest_2'] = 'You will receive one digest e-mail per day containing the subject of each forum post.';
 $string['emaildigestcompleteshort'] = 'Complete posts';
 $string['emaildigestdefault'] = 'Default ({$a})';
 $string['emaildigestoffshort'] = 'No digest';
@@ -187,8 +186,6 @@ $string['emaildigesttype_help'] = 'The type of notification that you will receiv
 * No digest - you will receive one e-mail per forum post;
 * Digest - complete posts - you will receive one digest e-mail per day containing the complete contents of each forum post;
 * Digest - subjects only - you will receive one digest e-mail per day containing just the subject of each forum post.';
-$string['emaildigestupdated'] = 'The e-mail digest option was changed to \'{$a->maildigesttitle}\' for the forum \'{$a->forum}\'. {$a->maildigestdescription}';
-$string['emaildigestupdated_default'] = 'Your default profile setting of \'{$a->maildigesttitle}\' was used for the forum \'{$a->forum}\'. {$a->maildigestdescription}.';
 $string['emptymessage'] = 'Something was wrong with your post. Perhaps you left it blank, or the attachment was too big. Your changes have NOT been saved.';
 $string['erroremptymessage'] = 'Post message cannot be empty';
 $string['erroremptysubject'] = 'Post subject cannot be empty.';
@@ -234,7 +231,7 @@ $string['forumblockingalmosttoomanyposts'] = 'You are approaching the posting th
 $string['forumbodydeleted'] = 'The content of this forum post has been removed and can no longer be accessed.';
 $string['forumbodyhidden'] = 'This post cannot be viewed by you, probably because you have not posted in the discussion, the maximum editing time hasn\'t passed yet, the discussion has not started or the discussion has expired.';
 $string['forum:canoverridediscussionlock'] = 'Reply to locked discussions';
-$string['forum:canposttomygroups'] = 'Can post to all groups you have access to';
+$string['forum:canposttomygroups'] = 'Post to all groups you have access to';
 $string['forum:createattachment'] = 'Create attachments';
 $string['forum:deleteanypost'] = 'Delete any posts (anytime)';
 $string['forum:deleteownpost'] = 'Delete own posts (within deadline)';
@@ -393,8 +390,8 @@ $string['notpartofdiscussion'] = 'This post is not part of a discussion!';
 $string['notrackforum'] = 'Don\'t track unread posts';
 $string['notsubscribed'] = 'Subscribe';
 $string['noviewdiscussionspermission'] = 'You do not have the permission to view discussions in this forum';
-$string['nowallsubscribed'] = 'All forums in {$a} are subscribed.';
-$string['nowallunsubscribed'] = 'All forums in {$a} are not subscribed.';
+$string['nowallsubscribed'] = 'You are now subscribed to all forums in {$a}.';
+$string['nowallunsubscribed'] = 'You are now unsubscribed from all forums in {$a}.';
 $string['nownotsubscribed'] = '{$a->name} will NOT be notified of new posts in \'{$a->forum}\'';
 $string['nownottracking'] = '{$a->name} is no longer tracking \'{$a->forum}\'.';
 $string['nowsubscribed'] = '{$a->name} will be notified of new posts in \'{$a->forum}\'';
@@ -420,9 +417,6 @@ $string['postbymailsuccess'] = 'Congratulations, your forum post with subject "{
 $string['postbymailsuccess_html'] = 'Congratulations, your <a href="{$a->discussionurl}">forum post</a> with subject "{$a->subject}" was successfully posted.';
 $string['postbyuser'] = '{$a->post} by {$a->user}';
 $string['postincontext'] = 'See this post in context';
-$string['postmailinfo'] = 'This is a copy of a message posted on the {$a} website.
-
-To reply click on this link:';
 $string['postmailinfolink'] = 'This is a copy of a message posted in {$a->coursename}.
 
 To reply click on this link: {$a->replylink}';
@@ -490,7 +484,7 @@ $string['privacy:metadata:preference:maildigest'] = 'The site-wide mail digest p
 $string['privacy:metadata:preference:markasreadonnotification'] = 'Whether to mark forum posts as read when receiving them as messages.';
 $string['privacy:metadata:preference:trackforums'] = 'Whether to enable read tracking.';
 $string['privacy:postwasread'] = 'This post was first read on {$a->firstread} and most recently read on {$a->lastread}';
-$string['privacy:readtrackingdisabled'] = 'You have chosen to not track which posts that you have read within this forum.';
+$string['privacy:readtrackingdisabled'] = 'You have chosen to not track posts you have read within this forum.';
 $string['privacy:request:delete:discussion:name'] = 'Delete at the request of the author';
 $string['privacy:request:delete:post:message'] = 'The content of this post has been deleted at the request of its author.';
 $string['privacy:request:delete:post:subject'] = 'Delete at the request of the author';
@@ -592,7 +586,7 @@ $string['trackingoptional'] = 'Optional';
 $string['trackingtype'] = 'Read tracking';
 $string['trackingtype_help'] = 'Read tracking enables participants to easily check which posts they have not yet seen by highlighting any new posts.
 
-If set to optional, participants can choose whether to turn tracking on or off via a link in the administration block. (Users must also enable forum tracking in their forum preferences.)
+If set to optional, participants can choose whether to turn tracking on or off via a link in the actions menu or administration block, depending on the theme. (Users must also enable forum tracking in their forum preferences.)
 
 If \'Allow forced read tracking\' is enabled in the site administration, then a further option is available - forced. This means that tracking is always on, regardless of users\' forum preferences.';
 $string['trackreadposts_header'] = 'Forum tracking';

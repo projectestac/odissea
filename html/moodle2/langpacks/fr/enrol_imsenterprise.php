@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ Si aucune catégorie du nom désiré n\'existe, une catégorie cachée portant c
 $string['createnewcourses'] = 'Créer de nouveaux cours (cachés) si inexistants dans Moodle';
 $string['createnewcourses_desc'] = 'Si ce réglage est activé, le plugin IMS Enterprise peut créer de nouveaux cours pour ceux qui se trouvent dans les données IMS mais pas dans la base de données de Moodle. Tous les cours générés sont cachés lors de leur création.';
 $string['createnewusers'] = 'Créer des comptes utilisateur pour les utilisateurs pas encore enregistrés dans Moodle';
-$string['createnewusers_desc'] = 'Les données d\'inscription IMS Enterprise décrivent un ensemble d\'utilisateurs.  Si ce réglage est activé, les comptes utilisateurs peuvent être créés automatiquement pour tous les utilisateurs qui ne sont pas trouvés dans la base de données de Moodle.
+$string['createnewusers_desc'] = 'Les données d\'inscription IMS Enterprise décrivent un ensemble d\'utilisateurs. Si ce réglage est activé, les comptes utilisateurs peuvent être créés automatiquement pour tous les utilisateurs qui ne sont pas trouvés dans la base de données de Moodle.
 
 On recherche dans la base de données les utilisateurs dans un premier temps d\'après leur identifiant (« idnumber »), puis par leur nom d\'utilisateur Moodle. Les mots de passe ne sont pas importés par le plugin d\'inscription IMS Enterprise. Il est recommandé d\'utiliser les plugins d\'authentification de Moodle pour authentifier les utilisateurs.';
 $string['cronfrequency'] = 'Fréquence de traitement';

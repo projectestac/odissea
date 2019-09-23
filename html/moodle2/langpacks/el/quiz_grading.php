@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz_grading', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz_grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,10 +33,10 @@ $string['automaticallygraded'] = 'Αυτόματη βαθμολόγηση';
 $string['backtothelistofquestions'] = 'Επιστροφή στη λίστα ερωτήσεων';
 $string['bydate'] = 'Κατά ημερομηνία';
 $string['bystudentfirstname'] = 'Με το μικρό όνομα του μαθητή';
-$string['bystudentidnumber'] = 'Κατά αναγνωριστικό αριθμό μαθητή';
+$string['bystudentidnumber'] = 'Κατά αναγνωριστικό αριθμό  μαθητή';
 $string['bystudentlastname'] = 'Με το επώνυμο μαθητή';
 $string['cannotgradethisattempt'] = 'Δεν είναι δυνατή η βαθμολόγηση αυτής της προσπάθειας.';
-$string['cannotloadquestioninfo'] = 'Δεν ήταν δυνατόν να φορτωθούν οι πληροφορίες ερώτησεις για τον συγκεκριμένο τύπο ερωτήσεων';
+$string['cannotloadquestioninfo'] = 'Δεν ήταν δυνατόν να φορτωθούν οι πληροφορίες ερώτησης για τον συγκεκριμένο τύπο ερώτησης';
 $string['changeoptions'] = 'Αλλαγή επιλογών';
 $string['essayonly'] = 'Οι παρακάτω ερωτήσεις πρέπει να βαθμολογηθούν χειροκίνητα';
 $string['grade'] = 'βαθμός';
@@ -60,7 +60,7 @@ $string['gradingquestionx'] = 'Βαθμολόγηση ερώτησης {$a->numb
 $string['gradingreport'] = 'Αναφορά χειροκίνητης βαθμολόγησης';
 $string['gradingungraded'] = '{$a} μη βαθμολογημένες προσπάθειες';
 $string['gradinguser'] = 'Προσπάθειες για {$a}';
-$string['grading:viewidnumber'] = 'Εμφάνιση των idnumbers των μαθητών κατά τη διάρκεια της βαθμολόγησης';
+$string['grading:viewidnumber'] = 'Εμφάνιση των αναγνωριστικών αριθμών των μαθητών κατά τη διάρκεια της βαθμολόγησης';
 $string['grading:viewstudentnames'] = 'Εμφάνιση των ονομάτων των μαθητών κατά τη διάρκεια της βαθμολόγησης';
 $string['hideautomaticallygraded'] = 'Απόκρυψη ερωτήσεων που έχουν βαθμολογηθεί αυτόματα';
 $string['inprogress'] = 'Σε εξέλιξη';
@@ -76,7 +76,7 @@ $string['qno'] = 'Ερ. #';
 $string['questionname'] = 'Όνομα ερώτησης';
 $string['questionsperpage'] = 'Ερωτήσεις ανά σελίδα';
 $string['questionsthatneedgrading'] = 'Ερωτήσεις που χρειάζονται βαθμολόγηση';
-$string['questiontitle'] = 'Ερώτηση {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} προσπάθειες {$a->openspan}βαθμολογημένες{$a->closespan}).';
+$string['questiontitle'] = 'Ερώτηση {$a->number} : «{$a->name}» ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} προσπάθειες {$a->openspan}βαθμολογημένες{$a->closespan}).';
 $string['randomly'] = 'Τυχαία';
 $string['saveandnext'] = 'Αποθήκευση και μετάβαση στην επόμενη σελίδα';
 $string['showstudentnames'] = 'Δώστε ονόματα μαθητών';

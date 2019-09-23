@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['allowonlinetextsubmissions'] = 'Abilitato';
 $string['default'] = 'Abilitato di default';
 $string['default_help'] = 'Questo metodo di consegna sarà abilitato di default per le nuove istanze di compito.';
 $string['enabled'] = 'Testo online';
-$string['enabled_help'] = 'Gli studenti potranno inserire testo direttamente tramite l\'editor e consegnarlo';
+$string['enabled_help'] = 'Gli studenti potranno redigere testo direttamente tramite l\'editor e consegnarlo';
 $string['eventassessableuploaded'] = 'Effettuata consegna testo online';
 $string['nosubmission'] = 'Non sono presenti consegne per questo compito';
 $string['numwords'] = '({$a} parole)';

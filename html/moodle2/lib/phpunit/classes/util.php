@@ -208,9 +208,9 @@ class phpunit_util extends testing_util {
         // reset all static caches
         \core\event\manager::phpunit_reset();
         accesslib_clear_all_caches(true);
+        accesslib_reset_role_cache();
         get_string_manager()->reset_caches(true);
         reset_text_filters_cache(true);
-        events_get_handlers('reset');
         core_text::reset_caches();
         get_message_processors(false, true, true);
         filter_manager::reset_caches();
@@ -714,7 +714,7 @@ class phpunit_util extends testing_util {
     /**
      * To be called from messagelib.php only!
      *
-     * @param stdClass $message record from message_read table
+     * @param stdClass $message record from messages table
      * @return bool true means send message, false means message "sent" to sink.
      */
     public static function message_sent($message) {
@@ -765,7 +765,7 @@ class phpunit_util extends testing_util {
     /**
      * To be called from messagelib.php only!
      *
-     * @param stdClass $message record from message_read table
+     * @param stdClass $message record from messages table
      * @return bool true means send message, false means message "sent" to sink.
      */
     public static function phpmailer_sent($message) {
@@ -880,5 +880,17 @@ class phpunit_util extends testing_util {
         $method = $reflection->getMethod($methodname);
         $method->setAccessible(true);
         return $method->invokeArgs($object, $params);
+    }
+
+    /**
+     * Whether the current process is an isolated test process.
+     *
+     * @return bool
+     */
+    public static function is_in_isolated_process(): bool {
+        // Note: There is no function to call, or much to go by in order to tell whether we are in an isolated process
+        // during Bootstrap, when this function is called.
+        // We can do so by testing the existence of the wrapper function, but there is nothing set until that point.
+        return function_exists('__phpunit_run_isolated_test');
     }
 }

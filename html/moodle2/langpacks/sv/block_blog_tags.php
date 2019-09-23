@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_tags', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_blog_tags', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   block_blog_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['blog_tags:addinstance'] = 'Lägg till ett nytt block för etiketter för blogg';
+$string['configtitle'] = 'Blockrubrik för bloggetiketter';
 $string['pluginname'] = 'Bloggetiketter';

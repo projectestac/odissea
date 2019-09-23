@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_manual', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,11 +71,13 @@ $string['privacy:metadata'] = 'Il plugin di iscrizione "Iscrizione manuale" non 
 $string['selectcohorts'] = 'Seleziona gruppi globali';
 $string['selection'] = 'Selezione';
 $string['selectusers'] = 'Seleziona utenti';
+$string['sendexpirynotificationstask'] = 'Invio notifiche scadenza delle iscrizioni manuali';
 $string['status'] = 'Abilita iscrizione manuale';
 $string['status_desc'] = 'Consente l\'accesso ai corsi da parte di utenti iscritti manualmente. Di norma deve rimanere abilitato.';
 $string['statusdisabled'] = 'Disabilitato';
 $string['statusenabled'] = 'Abilitato';
 $string['status_help'] = 'L\'impostazione stabilisce se gli utenti possono essere iscritti manualmente, sia tramite un link nella Amministrazione del corso, sia da parte di un utente in possesso dei privilegi necessari, come ad esempio un docente.';
+$string['syncenrolmentstask'] = 'Sincronizzazione iscrizioni manuali';
 $string['unenrol'] = 'Cancella iscrizione utente';
 $string['unenrolselectedusers'] = 'Cancella iscrizioni degli utenti selezionti';
 $string['unenrolselfconfirm'] = 'Sei sicuro di volerti disiscrivere dal corso "{$a}"?';

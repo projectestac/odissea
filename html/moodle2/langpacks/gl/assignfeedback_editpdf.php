@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,8 @@ $string['commentindex'] = 'Índice de comentarios';
 $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Non foi posíbel gardar a páxina {$a}';
 $string['currentstamp'] = 'Selo';
+$string['default'] = 'Activado de xeito predeterminado';
+$string['default_help'] = 'Se establece, este método de comentarios será activado como predeterminado para todas as novas asignacións.';
 $string['deleteannotation'] = 'Eliminar anotación';
 $string['deletecomment'] = 'Eliminar comentario';
 $string['deletefeedback'] = 'Eliminar PDF de comentarios';
@@ -65,10 +67,13 @@ $string['jsrequired'] = 'Requírese JavaScript para facer anotacións nun PDF. A
 $string['launcheditor'] = 'Iniciar o editor de PDF...';
 $string['line'] = 'Liña';
 $string['loadingeditor'] = 'Cargando o editor de PDF...';
+$string['navigatenext'] = 'Páxina seguinte (Alt/Maiús-Alt/Ctrl-Opción + {$a})';
+$string['navigateprevious'] = 'Páxina anterior (Alt/Maiús-Alt/Ctrl-Opción + {$a})';
 $string['output'] = 'Saída:';
 $string['oval'] = 'Óvalo';
 $string['pagenumber'] = 'Páxina {$a}';
 $string['pagexofy'] = 'Páxina {$a->page} de {$a->total}';
+$string['partialwarning'] = 'A algúns dos ficheiros deste envío só se pode acceder mediante descarga directa.';
 $string['pathtogspathdesc'] = 'Teña en conta que facer anotacións nun PDF require que a ruta a ghostscript se configure en {$a}.';
 $string['pen'] = 'Lapis';
 $string['pluginname'] = 'Facer anotacións en PDF';

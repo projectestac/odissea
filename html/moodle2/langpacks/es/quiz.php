@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'es', branch 'MOODLE_34_STABLE'
+ * Strings for component 'quiz', language 'es', branch 'MOODLE_36_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -99,7 +99,7 @@ $string['attemptquiznow'] = 'Intente resolver el cuestionario ahora';
 $string['attempts'] = 'Intentos';
 $string['attemptsallowed'] = 'Intentos permitidos';
 $string['attemptsdeleted'] = 'Eliminados intentos de resolver el cuestionario';
-$string['attemptselection'] = 'Seleccionar qué intentos analizar por ususario:';
+$string['attemptselection'] = 'Seleccionar qué intentos analizar por usuario:';
 $string['attemptsexist'] = 'Ya ha intentado contestar este cuestionario';
 $string['attemptsnum'] = 'Intentos: {$a}';
 $string['attemptsnumthisgroup'] = 'Intentos: {$a->total} ({$a->group} de este grupo)';
@@ -588,7 +588,7 @@ Para agregar saltos de página después de determinadas cuestiones, marque la ca
 Para ordenar las preguntas por un número de páginas, haga clic en el botón "Paginar de nuevo" y seleccione el número deseado de preguntas por página.';
 $string['orderingquiz'] = 'Orden y paginación';
 $string['orderingquizx'] = 'Orden y paginación: {$a}';
-$string['outcomesadvanced'] = '';
+$string['outcomesadvanced'] = 'Los resultados son ajustes avanzados';
 $string['outof'] = '{$a->grade} de {$a->maxgrade}';
 $string['outofpercent'] = '{$a->grade} de {$a->maxgrade} ({$a->percent}%)';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';

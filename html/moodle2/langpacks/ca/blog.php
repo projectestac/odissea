@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'blog', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,6 @@ $string['autotags'] = 'Afegeix aquestes etiquetes';
 $string['autotags_help'] = 'Introduïu una o més etiquetes locals (separades per comes) que vulgueu afegir automàticament a cada entrada del blog copiada des del blog extern, cap al vostre blog.';
 $string['backupblogshelp'] = 'Si habiliteu aquesta opció els blogs s\'inclouran en les còpies de seguretat automàtiques del lloc.';
 $string['blockexternalstitle'] = 'Blogs externs';
-$string['blocktitle'] = 'Títol del bloc d\'etiquetes dels blogs';
 $string['blog'] = 'Blog';
 $string['blogaboutthis'] = 'Blog sobre aquest {$a->type}';
 $string['blogaboutthiscourse'] = 'Afegiu una entrada sobre aquest curs';

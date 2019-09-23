@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'chat', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -153,7 +153,7 @@ $string['serverip'] = 'IP do servidor';
 $string['servermax'] = 'Usuarios máximos';
 $string['serverport'] = 'Porto do servidor';
 $string['sessions'] = 'Sesións de conversa';
-$string['sessionstart'] = 'A seguinte sesión de conversa comezará en: {$a';
+$string['sessionstart'] = 'A seguinte sesión de conversa comezará en: {$a->date}, ({$a->fromnow}a partires de agora)';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Todo o mundo pode ver as sesións pasadas';
 $string['studentseereports_help'] = 'De estabelecer como Non, soamente os usuarios que teñan a posibilidade de mod/chat:readlog poderán ver os rexistros de conversas';

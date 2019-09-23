@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'gl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_outline', language 'gl', branch 'MOODLE_36_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['nocapability'] = 'Non é posíbel acceder ao informe do esquema do usua
 $string['nologreaderenabled'] = 'Non hai un lector de rexistros activado';
 $string['numviews'] = '{$a->numviews} por {$a->distinctusers} usuarios';
 $string['outline:view'] = 'Ver o informe de actividade';
+$string['outline:viewuserreport'] = 'Ver o informe de actividade do usuario';
 $string['page-report-outline-index'] = 'Informe do esquema do curso';
 $string['page-report-outline-user'] = 'Informe esquemático do curso do usuario';
 $string['page-report-outline-x'] = 'Calquera informe esquemático';

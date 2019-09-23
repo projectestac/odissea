@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'grades', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -196,7 +196,13 @@ $string['errorupdatinggradecategoryaggregateoutcomes'] = '評定カテゴリID {
 $string['errorupdatinggradecategoryaggregation'] = '評定カテゴリID {$a->id} の総計タイプ更新中にエラーが発生しました。';
 $string['errorupdatinggradeitemaggregationcoef'] = '評定カテゴリID {$a->id} の総計係数 (加重または追加点) 更新中にエラーが発生しました。';
 $string['eventgradedeleted'] = '評点が削除されました。';
+$string['eventgradelettercreated'] = '評定文字が作成されました。';
+$string['eventgradeletterdeleted'] = '評定文字が削除されました。';
+$string['eventgradeletterupdated'] = '評定文字が更新されました。';
 $string['eventgradeviewed'] = '評定表の評点が閲覧されました。';
+$string['eventscalecreated'] = '尺度が作成されました。';
+$string['eventscaledeleted'] = '尺度が削除されました。';
+$string['eventscaleupdated'] = '尺度が更新されました。';
 $string['eventusergraded'] = 'ユーザが評定されました。';
 $string['excluded'] = '除外';
 $string['excluded_help'] = '除外が有効にされた場合、評点はすべての総計から除外されます。';
@@ -204,6 +210,7 @@ $string['expand'] = 'カテゴリを展開する';
 $string['export'] = 'エクスポート';
 $string['exportalloutcomes'] = 'すべてのアウトカムをエクスポートする';
 $string['exportfeedback'] = 'エクスポートにフィードバックを含む';
+$string['exportfeedback_desc'] = 'エクスポート中、これはオーバーライドされます。';
 $string['exportformatoptions'] = 'エクスポートフォーマットオプション';
 $string['exportonlyactive'] = '一時停止ユーザを除く';
 $string['exportonlyactive_help'] = '登録が有効であり、一時停止されていない学生のみエクスポートに含みます。';
@@ -217,8 +224,10 @@ $string['extracreditwarning'] = '注意: カテゴリ内のすべての評定項
 $string['feedback'] = 'フィードバック';
 $string['feedbackadd'] = 'フィードバックを追加する';
 $string['feedbackedit'] = 'フィードバックを編集する';
+$string['feedbackfiles'] = 'フィードバックファイル';
 $string['feedbackforgradeitems'] = '{$a} のフィードバック';
 $string['feedback_help'] = 'この設定を有効にした場合、評定に関するコメントすべてが追加されます。';
+$string['feedbackhistoryfiles'] = 'フィードバック履歴ファイル';
 $string['feedbacks'] = 'フィードバック';
 $string['feedbacksaved'] = 'フィードバックが保存されました。';
 $string['feedbackview'] = 'フィードバックを表示する';
@@ -320,7 +329,7 @@ $string['gradepointmax_validateerror'] = 'この設定は1から10000までの�
 $string['gradepreferences'] = '評定プリファレンス';
 $string['gradepreferenceshelp'] = '評定プリファレンスヘルプ';
 $string['gradepublishing'] = '公開を有効にする';
-$string['gradepublishing_help'] = 'エクスポートおよびインポートの公開を有効にします。Moodleサイトにログインせず指定されたURLよりエクスポートされた評定にアクセスできます。また、そのようなURLにアクセスすることで、評定をインポートすることもできます (他のサイトで公開された評定をMoodleサイトがインポートできることを意味します)。デフォルトではこの機能を管理者のみ使用することができます。必要なケイパビリティを他のロールに追加する前にユーザを教育してください (ブックマーク共有およびダウンロードアクセラレータの危険性、IP制限等)。';
+$string['gradepublishing_help'] = '評定公開はMoodleにログインせずにURL経由で評定をインポートおよびエクスポートする方法です。この設定を有効にした場合、管理者および評定を公開できるパーミッションのあるユーザ (デフォルトではマネージャロールのユーザのみ) にはそれぞれのコースの評定表に評定エクスポート公開設定が提供されます。';
 $string['gradepublishinglink'] = 'ダウンロード: {$a}';
 $string['gradereport'] = '評定レポート';
 $string['graderreport'] = '評定者レポート';
@@ -485,7 +494,7 @@ $string['modgradecategoryrescalegrades_help'] = '評定表内の最大評点を�
 $string['modgradedonotmodify'] = '既存の評点を変更しない';
 $string['modgradeerrorbadpoint'] = '無効な評定値です。評点は 1 から {$a} までの整数にする必要があります。';
 $string['modgradeerrorbadscale'] = '無効な尺度が選択されました。あなたが以下の選択から尺度を選択したことを確認してください。';
-$string['modgrade_help'] = 'この活動で使用される評定タイプを選択してください。「尺度」が選択された場合、あなたは「尺度」ドロップダウンから尺度を選択することができます。「評点」評定が使用される場合、あなたはこの活動で利用できる最大評点を入力することができます。';
+$string['modgrade_help'] = 'この活動で使用される評定タイプを選択してください。「尺度」が選択された場合、あなたは「尺度」ドロップダウンメニューから尺度を選択することができます。「評点」評定が使用される場合、あなたはこの活動で利用できる最大評点を入力することができます。';
 $string['modgrademaxgrade'] = '最大評点';
 $string['modgraderescalegrades'] = '既存の評点を変更する';
 $string['modgraderescalegrades_help'] = '評定表アイテムの最大評点を変更する場合、あなたは同様に既存のパーセントの評点を変更するかどうか指定する必要があります。
@@ -602,6 +611,7 @@ $string['prefrows'] = '特別行';
 $string['prefshow'] = 'トグルの表示/非表示';
 $string['previewrows'] = 'プレビュー行';
 $string['privacy:metadata:categorieshistory'] = '前のバージョンの評定カテゴリのレコードです。';
+$string['privacy:metadata:filepurpose'] = 'フィードバックファイルはユーザの評定を保存します。';
 $string['privacy:metadata:grade_import_newitem'] = '評定インポートから新しいgrade_item名を保存する一時テーブルです。';
 $string['privacy:metadata:grade_import_newitem:importcode'] = 'インポートのバッチからバッチを識別するためのユニークなバッチコードです。';
 $string['privacy:metadata:grade_import_newitem:importer'] = 'データをインポートするユーザです。';
@@ -619,7 +629,7 @@ $string['privacy:metadata:grades:aggregationweight'] = '総計の加重です。
 $string['privacy:metadata:grades:feedback'] = 'フィードバックです。';
 $string['privacy:metadata:grades:finalgrade'] = '評定です。';
 $string['privacy:metadata:gradeshistory'] = '前の評定のレコードです。';
-$string['privacy:metadata:grades:information'] = '追加情報の情報です。';
+$string['privacy:metadata:grades:information'] = '評定に関する情報です。';
 $string['privacy:metadata:grades:timemodified'] = '最後に評定が修正された日時です。';
 $string['privacy:metadata:grades:userid'] = '評点のユーザのIDです。';
 $string['privacy:metadata:grades:usermodified'] = '最後に評点を修正したユーザのIDです。';
@@ -820,6 +830,7 @@ $string['userid'] = 'ユーザID';
 $string['useridnumberwarning'] = 'インポートできないため、IDナンバーのないユーザはエクスポートから除外されます。';
 $string['usermappingerror'] = 'ユーザマッピングエラー: 「 {$a->field} 」が「 {$a->value} 」のユーザを見つけることができませんでした。';
 $string['usermappingerrorcurrentgroup'] = 'ユーザは現在のグループのメンバーではありません。';
+$string['usermappingerrormultipleusersfound'] = 'ユーザマッピングエラー: 「 {$a->value} 」の {$a->field} に複数のユーザが見つかりました。さらにユニークなマッピングフィールドを使用してください。';
 $string['usermappingerrorusernotfound'] = 'ユーザマッピングエラー: ユーザを見つけることができませんでした。';
 $string['userpreferences'] = 'ユーザプリファレンス';
 $string['useweighted'] = '加重を使用する';

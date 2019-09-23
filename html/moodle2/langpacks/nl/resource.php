@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'resource', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -93,6 +93,7 @@ $string['popupwidth'] = 'Pop-up breedte (in pixels)';
 $string['popupwidthexplain'] = 'Bepaalt de standaard breedte van pop-upvensters';
 $string['printintro'] = 'Toon bronbeschrijving';
 $string['printintroexplain'] = 'Toon bronbeschrijving onder de inhoud? Sommige manieren van tonen zullen de beschrijving niet laten zien, zelfs niet als het zo ingesteld is.';
+$string['privacy:metadata'] = 'De bestand bron-plugin bewaart geen persoonlijke gegevens.';
 $string['resource:addinstance'] = 'Voeg een nieuwe bron toe';
 $string['resourcecontent'] = 'Bestanden en submappen';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

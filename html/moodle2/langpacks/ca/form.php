@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'form', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,7 +66,6 @@ $string['passwordunmaskedithint'] = 'Edita la contrasenya';
 $string['passwordunmaskinstructions'] = 'Pitgeu la tecla de retorn per desar els canvis';
 $string['passwordunmaskrevealhint'] = 'Revela';
 $string['requiredelement'] = 'Camp requerit';
-$string['revealpassword'] = 'Revela';
 $string['security'] = 'Seguretat';
 $string['selectallornone'] = 'Selecciona-ho/desselecciona-ho tot';
 $string['selected'] = 'Seleccionat';

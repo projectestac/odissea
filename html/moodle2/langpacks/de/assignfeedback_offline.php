@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_offline', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_offline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['confirmimport'] = 'Bewertungsimport bestätigen';
 $string['default'] = 'Standardmäßig aktiviert';
-$string['default_help'] = 'Wenn diese Option legt fest, ob die Offline-Bewertung standardmäßig in allen neuen Aufgaben aktiviert wird.';
+$string['default_help'] = 'Diese Option legt fest, ob die Offline-Bewertung standardmäßig in allen neuen Aufgaben aktiviert wird.';
 $string['downloadgrades'] = 'Bewertungstabelle herunterladen';
 $string['enabled'] = 'Offline-Bewertungstabelle';
 $string['enabled_help'] = 'Wenn diese Option aktiviert wird, können Trainer/innen eine Bewertungstabelle herunterladen, offline alle Bewertungen für die Teilnehmer/innen ausfüllen und später die Bewertungstabelle wieder hochladen.';

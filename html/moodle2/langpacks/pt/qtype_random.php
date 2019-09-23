@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_random', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,19 @@ $string['pluginnameediting'] = 'A editar pergunta aleatória';
 $string['pluginname_help'] = 'A pergunta aleatória não é um tipo de pergunta convencional, mas sim uma maneira de inserir num teste uma pergunta escolhida aleatoriamente de uma determinada categoria.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Aleatória não armazena dados pessoais.';
 $string['randomqname'] = 'Aleatória ({$a})';
+$string['randomqnamefromtop'] = 'Pergunta aleatória com erro! Por favor, apague esta pergunta.';
+$string['randomqnamefromtoptags'] = 'Pergunta aleatória com erro! Por favor, apague esta pergunta.';
+$string['randomqnametags'] = 'Aleatória ({$a->category}, palavras-chave: {$a->tags})';
 $string['randomqplusname'] = 'Aleatório ({$a} e subcategorias)';
+$string['randomqplusnamecourse'] = 'Aleatória (Qualquer categoria da disciplina)';
+$string['randomqplusnamecoursecat'] = 'Aleatória (Qualquer categoria dentro da categoria da disciplina {$a})';
+$string['randomqplusnamecoursecattags'] = 'Aleatória (Qualquer categoria dentro da categoria da disciplina  {$a->category}, palavras-chave: {$a->tags})';
+$string['randomqplusnamecoursetags'] = 'Aleatória (Qualquer categoria da disciplina, palavras-chave: {$a->tags})';
+$string['randomqplusnamemodule'] = 'Aleatória (Qualquer categoria deste teste)';
+$string['randomqplusnamemoduletags'] = 'Aleatória (Qualquer categoria deste teste, palavras-chave: {$a->tags})';
+$string['randomqplusnamesystem'] = 'Aleatória (Qualquer categoria do nível do sistema)';
+$string['randomqplusnamesystemtags'] = 'Aleatória (Qualquer categoria do nível do sistema, palavras-chave: {$a->tags})';
+$string['randomqplusnametags'] = 'Aleatória ({$a->category} e sub-categorias, palavras-chave: {$a->tags})';
 $string['selectedby'] = '{$a->questionname} selecionada por {$a->randomname}';
 $string['selectmanualquestions'] = 'As perguntas aleatórias podem incluir perguntas de avaliação manual';
+$string['taskunusedrandomscleanup'] = 'Remover perguntas aleatórias não utilizadas';

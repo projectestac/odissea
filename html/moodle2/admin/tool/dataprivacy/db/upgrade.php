@@ -18,14 +18,15 @@
  * tool_dataprivacy plugin upgrade code
  *
  * @package    tool_dataprivacy
- * @copyright  2018 David Monllao
+ * @copyright  2018 Jun Pataleta
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Function to upgrade auth_cas.
+ * Function to upgrade tool_dataprivacy.
+ *
  * @param int $oldversion the version we are upgrading from
  * @return bool result
  */
@@ -34,14 +35,7 @@ function xmldb_tool_dataprivacy_upgrade($oldversion) {
 
     $dbman = $DB->get_manager();
 
-    if ($oldversion < 2017111300) {
-        // Nothing to do here. Moodle Plugins site's just complaining about missing upgrade.php.
-        // Savepoint reached.
-        upgrade_plugin_savepoint(true, 2017111300, 'error', 'dataprivacy');
-    }
-
-    if ($oldversion < 2017111303) {
-
+    if ($oldversion < 2018051405) {
         // Define table tool_dataprivacy_ctxexpired to be created.
         $table = new xmldb_table('tool_dataprivacy_ctxexpired');
 
@@ -61,12 +55,6 @@ function xmldb_tool_dataprivacy_upgrade($oldversion) {
         if (!$dbman->table_exists($table)) {
             $dbman->create_table($table);
         }
-
-        // Dataprivacy savepoint reached.
-        upgrade_plugin_savepoint(true, 2017111303, 'tool', 'dataprivacy');
-    }
-
-    if ($oldversion < 2017111304) {
 
         // Define table tool_dataprivacy_contextlist to be created.
         $table = new xmldb_table('tool_dataprivacy_contextlist');
@@ -124,11 +112,6 @@ function xmldb_tool_dataprivacy_upgrade($oldversion) {
             $dbman->create_table($table);
         }
 
-        // Dataprivacy savepoint reached.
-        upgrade_plugin_savepoint(true, 2017111304, 'tool', 'dataprivacy');
-    }
-
-    if ($oldversion < 2017111305) {
         // Define field lawfulbases to be added to tool_dataprivacy_purpose.
         $table = new xmldb_table('tool_dataprivacy_purpose');
 
@@ -159,10 +142,10 @@ function xmldb_tool_dataprivacy_upgrade($oldversion) {
         }
 
         // Dataprivacy savepoint reached.
-        upgrade_plugin_savepoint(true, 2017111305, 'tool', 'dataprivacy');
+        upgrade_plugin_savepoint(true, 2018051405, 'tool', 'dataprivacy');
     }
 
-    if ($oldversion < 2017111315) {
+    if ($oldversion < 2018051406) {
         // Update completed delete requests to new delete status.
         $query = "UPDATE {tool_dataprivacy_request}
                      SET status = :setstatus
@@ -185,10 +168,10 @@ function xmldb_tool_dataprivacy_upgrade($oldversion) {
 
         $DB->execute($query, $params);
 
-        upgrade_plugin_savepoint(true, 2017111315, 'tool', 'dataprivacy');
+        upgrade_plugin_savepoint(true, 2018051406, 'tool', 'dataprivacy');
     }
 
-    if ($oldversion < 2017111316) {
+    if ($oldversion < 2018082100) {
 
         // Changing precision of field status on table tool_dataprivacy_request to (2).
         $table = new xmldb_table('tool_dataprivacy_request');
@@ -198,10 +181,10 @@ function xmldb_tool_dataprivacy_upgrade($oldversion) {
         $dbman->change_field_precision($table, $field);
 
         // Dataprivacy savepoint reached.
-        upgrade_plugin_savepoint(true, 2017111316, 'tool', 'dataprivacy');
+        upgrade_plugin_savepoint(true, 2018082100, 'tool', 'dataprivacy');
     }
 
-    if ($oldversion < 2017111354) {
+    if ($oldversion < 2018100401) {
         // Define table tool_dataprivacy_purposerole to be created.
         $table = new xmldb_table('tool_dataprivacy_purposerole');
 
@@ -262,10 +245,10 @@ function xmldb_tool_dataprivacy_upgrade($oldversion) {
         $dbman->change_field_notnull($table, $field);
 
         // Dataprivacy savepoint reached.
-        upgrade_plugin_savepoint(true, 2017111354, 'tool', 'dataprivacy');
+        upgrade_plugin_savepoint(true, 2018100401, 'tool', 'dataprivacy');
     }
 
-    if ($oldversion < 2017111356) {
+    if ($oldversion < 2018100406) {
         // Define field sensitivedatareasons to be added to tool_dataprivacy_purpose.
         $table = new xmldb_table('tool_dataprivacy_request');
         $field = new xmldb_field('creationmethod', XMLDB_TYPE_INTEGER, 10, null, XMLDB_NOTNULL, null, 0, 'timemodified');
@@ -276,10 +259,47 @@ function xmldb_tool_dataprivacy_upgrade($oldversion) {
         }
 
         // Dataprivacy savepoint reached.
-        upgrade_plugin_savepoint(true, 2017111356, 'tool', 'dataprivacy');
+        upgrade_plugin_savepoint(true, 2018100406, 'tool', 'dataprivacy');
     }
 
-    if ($oldversion < 2017111358) {
+
+    if ($oldversion < 2018110700) {
+        // Define table tool_dataprivacy_ctxlst_ctx to be dropped.
+        $table = new xmldb_table('tool_dataprivacy_ctxlst_ctx');
+
+        // Conditionally launch drop table for tool_dataprivacy_ctxlst_ctx.
+        if ($dbman->table_exists($table)) {
+            $dbman->drop_table($table);
+        }
+
+        // Define table tool_dataprivacy_rqst_ctxlst to be dropped.
+        $table = new xmldb_table('tool_dataprivacy_rqst_ctxlst');
+
+        // Conditionally launch drop table for tool_dataprivacy_rqst_ctxlst.
+        if ($dbman->table_exists($table)) {
+            $dbman->drop_table($table);
+        }
+
+        // Define table tool_dataprivacy_contextlist to be dropped.
+        $table = new xmldb_table('tool_dataprivacy_contextlist');
+
+        // Conditionally launch drop table for tool_dataprivacy_contextlist.
+        if ($dbman->table_exists($table)) {
+            $dbman->drop_table($table);
+        }
+
+        // Update all requests which were in states Pending, or Pre-Processing, to Awaiting approval.
+        $DB->set_field('tool_dataprivacy_request', 'status', 2, ['status' => 0]);
+        $DB->set_field('tool_dataprivacy_request', 'status', 2, ['status' => 1]);
+
+        // Remove the old initiate_data_request_task adhoc entries.
+        $DB->delete_records('task_adhoc', ['classname' => '\tool_dataprivacy\task\initiate_data_request_task']);
+
+        // Dataprivacy savepoint reached.
+        upgrade_plugin_savepoint(true, 2018110700, 'tool', 'dataprivacy');
+    }
+
+    if ($oldversion < 2018112500) {
         // Delete orphaned data privacy requests.
         $sql = "SELECT r.id
                   FROM {tool_dataprivacy_request} r LEFT JOIN {user} u ON r.userid = u.id
@@ -290,8 +310,11 @@ function xmldb_tool_dataprivacy_upgrade($oldversion) {
             $DB->delete_records_list('tool_dataprivacy_request', 'id', $orphaned);
         }
 
-        upgrade_plugin_savepoint(true, 2017111358, 'tool', 'dataprivacy');
+        upgrade_plugin_savepoint(true, 2018112500, 'tool', 'dataprivacy');
     }
+
+    // Automatically generated Moodle v3.6.0 release upgrade line.
+    // Put any upgrade step following this.
 
     return true;
 }

@@ -179,6 +179,7 @@ function block_completion_progress_get_activities($courseid, $config = null, $fo
                     $config == null || (
                         !isset($config->activitiesincluded) || (
                             $config->activitiesincluded != 'selectedactivities' ||
+                                !empty($config->selectactivities) &&
                                 in_array($module.'-'.$cm->instance, $config->selectactivities))))
             ) {
                 $activities[] = array (
@@ -650,4 +651,23 @@ function block_completion_progress_exclusions ($courseid) {
         $exclusions[] = $value->exclusion;
     }
     return $exclusions;
+}
+
+/**
+ * Determines whether a user is a member of a given group or grouping
+ *
+ * @param string $group    The group or grouping identifier starting with 'group-' or 'grouping-'
+ * @param int    $courseid The ID of the course containing the block instance
+ * @return boolean value indicating membership
+ */
+function block_completion_progress_group_membership ($group, $courseid, $userid) {
+    if ($group === '0') {
+        return true;
+    } else if ((substr($group, 0, 6) == 'group-') && ($groupid = intval(substr($group, 6)))) {
+        return groups_is_member($groupid, $userid);
+    } else if ((substr($group, 0, 9) == 'grouping-') && ($groupingid = intval(substr($group, 9)))) {
+        return array_key_exists($groupingid, groups_get_user_groups($courseid, $userid));
+    }
+
+    return false;
 }

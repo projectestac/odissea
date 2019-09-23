@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'report_loglive', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   report_loglive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,12 +30,12 @@ $string['eventcontext'] = 'Testuingurua';
 $string['eventloggedas'] = '{$a->realusername} {$a->asusername} gisa';
 $string['eventorigin'] = 'Jatorria';
 $string['eventrelatedfullnameuser'] = 'Inplikatutako erabiltzailea';
-$string['eventreportviewed'] = 'Un honetako agerraldien txostena ikusi da';
-$string['livelogs'] = 'Azken orduko agerraldiak zuzenean';
-$string['loglive:view'] = 'Ikusi une honetako agerraldiak';
-$string['nologreaderenabled'] = 'Agerraldien irakurlea gaitu da';
-$string['pause'] = 'Gelditu une honetako eguneraketak';
-$string['pluginname'] = 'Une honetako agerraldiak';
-$string['privacy:metadata'] = 'Une honetako agerraldiak pluginak ez du datu pertsonalik biltzen.';
-$string['resume'] = 'Jarraitu erakusten une honetako eguneraketak';
+$string['eventreportviewed'] = 'Zuzeneko agerraldien txostena ikusi da';
+$string['livelogs'] = 'Azken orduko zuzeneko agerraldiak';
+$string['loglive:view'] = 'Ikusi zuzeneko agerraldiak';
+$string['nologreaderenabled'] = 'Ez dago gaituta agerraldien irakurlerik';
+$string['pause'] = 'Gelditu zuzeneko eguneraketak';
+$string['pluginname'] = 'Zuzeneko agerraldiak';
+$string['privacy:metadata'] = 'Zuzeneko agerraldiak pluginak ez du datu pertsonalik biltzen.';
+$string['resume'] = 'Berriz abiatu zuzeneko eguneraketak';
 $string['selectlogreader'] = 'Aukeratu agerraldi-irakurlea';

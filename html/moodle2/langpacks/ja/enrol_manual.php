@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'enrol_manual', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,11 +71,13 @@ $string['privacy:metadata'] = '手動登録プラグインはどのような個�
 $string['selectcohorts'] = 'コーホートを選択する';
 $string['selection'] = '選択';
 $string['selectusers'] = 'ユーザを選択する';
+$string['sendexpirynotificationstask'] = '手動登録有効期限切れ通知送信タスク';
 $string['status'] = '手動登録を有効にする';
 $string['status_desc'] = '内部登録済みユーザがコースにアクセスできるようにします。多くの場合、この設定は有効のままにすべきです。';
 $string['statusdisabled'] = '無効';
 $string['statusenabled'] = '有効';
 $string['status_help'] = 'この設定では教師等の適切なパーミッションを割り当てたユーザをコース管理設定で手動登録できるかどうか指定します。';
+$string['syncenrolmentstask'] = '手動登録タスクを同期する';
 $string['unenrol'] = 'ユーザの登録を解除する';
 $string['unenrolselectedusers'] = '選択したユーザの登録を解除する';
 $string['unenrolselfconfirm'] = '本当にコース「 {$a} 」からあなたの登録を解除してもよろしいですか?';

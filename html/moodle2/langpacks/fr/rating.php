@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'rating', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'L\'évaluation n\'est pas valide';
 $string['ratings'] = 'Évaluations';
 $string['ratingtime'] = 'Restreindre l\'évaluation aux éléments dont les dates sont dans cet intervalle :';
 $string['rolewarning'] = 'Rôles avec autorisation d\'évaluer';
-$string['rolewarning_help'] = 'Pour donner des évaluations, les utilisateurs ont besoin de la capacité moodle/rating:rate, ainsi que de capacités spécifiques des modules. Les utilisateurs avec les rôles suivants peuvent évaluer des éléments. Cette liste peut être modifiée via le lien permissions dans le bloc administration.';
+$string['rolewarning_help'] = 'Pour donner des évaluations, les utilisateurs ont besoin de la capacité moodle/rating:rate, ainsi que de capacités spécifiques des modules. Les utilisateurs avec les rôles suivants peuvent évaluer des éléments. Cette liste peut être modifiée via le lien permissions dans le menu des actions ou le bloc administration, selon le thème.';
 $string['scaleselectionrequired'] = 'Lors du choix d\'un type de tendance centrale pour des notes, vous devez également doit choisir un barème, soit fixer un nombre de points maximum.';

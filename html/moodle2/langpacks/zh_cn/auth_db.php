@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'zh_cn', branch 'MOODLE_34_STABLE'
+ * Strings for component 'auth_db', language 'zh_cn', branch 'MOODLE_36_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['auth_dbextencodinghelp'] = '外部数据库使用的编码方式';
 $string['auth_dbextrafields'] = '这些字段是可选的。您在此指定的<b>外部数据库字段</b>将预先填入本系统的用户数据库中。<p>如果您留空不填，将使用系统默认值。</p><p>无论以上哪种情况，用户在登录后都可以改写这些字段。</p>';
 $string['auth_dbfieldpass'] = '含有密码的字段名';
 $string['auth_dbfieldpass_key'] = '密码字段';
-$string['auth_dbfielduser'] = '含有用户名的字段名';
+$string['auth_dbfielduser'] = '含有用户名的字段名。此字段必须为varchar数据类型';
 $string['auth_dbfielduser_key'] = '用户名字段';
 $string['auth_dbhost'] = '数据库服务所在的主机。若使用ODBC，请使用一个系统DSN项。如果用PDO则请使用PDO DSN项。';
 $string['auth_dbhost_key'] = '主机';
@@ -75,7 +75,6 @@ $string['auth_dbupdateusers_description'] = '在加入新用户同时，更新�
 $string['auth_dbupdatinguser'] = '更新用户{$a->name}，id {$a->id}';
 $string['auth_dbuser'] = '对该数据库具有读权限的用户名';
 $string['auth_dbuser_key'] = '数据库用户';
-$string['auth_dbusernotexist'] = '不能更新不存在的用户 {$a}';
 $string['auth_dbuserstoadd'] = '添加用户记录 {$a}';
 $string['auth_dbuserstoremove'] = '删除用户记录 {$a}';
 $string['pluginname'] = '使用外部数据库';

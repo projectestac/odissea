@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ko', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'ko', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -352,7 +352,6 @@ $string['logfilenotavailable'] = '기록할 수 없음';
 $string['loginasnoenrol'] = '강좌에서 타인명의로는 등록 또는 탈퇴를 할 수 없음';
 $string['loginasonecourse'] = '이 강좌에 입장할 수 없습니다.<br /> 다른 강좌에 들어가기 전에 반드시 다른 역할로로그인한 세션을 종료하여야 합니다.';
 $string['maxareabytes'] = '이 파일은 이 영역에 남아 있는 공간보다 크큽니다.';
-$string['maxbytes'] = '파일이 처리할 수 있는 최대 크기보다 큼';
 $string['messagingdisable'] = '이 사이트에서는 메시지 기능을 쓸 수 없음';
 $string['mimetexisnotexist'] = '시스템이 mimeTeX를 구동하도록 설정되지 않음. <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>에서 환경에 맞는 적절한 파일을 내려받거나 <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>에서 C 원본 코드를 내려받아 컴파일하여 moodle/filter/tex/ 경로에 넣어야 함.';
 $string['mimetexnotexecutable'] = '맞춤 mimetex가 실행되지 않음!';

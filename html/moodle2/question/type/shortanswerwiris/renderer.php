@@ -69,6 +69,13 @@ class qtype_shortanswerwiris_renderer extends qtype_wq_renderer {
             $result .= html_writer::nonempty_tag('div',
                     $question->get_validation_error(array('answer' => $currentanswer)), array('class' => 'validationerror'));
         }
+
+        // Auxiliar text
+        $show_auxiliar_text_input = $qa->get_question()->wirisquestion->question->getProperty(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_AUXILIAR_TEXT_INPUT);
+        if ($show_auxiliar_text_input) {
+            $result .= $this->auxiliar_text($qa, $options);
+        }
+
         $result .= $this->add_javascript();
         $result .= $this->lang();
         $result .= $this->question($qa);

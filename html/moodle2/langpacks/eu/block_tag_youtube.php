@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_tag_youtube', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_tag_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,25 +29,25 @@ $string['anycategory'] = 'Edozein kategoria';
 $string['apierror'] = 'Youtube-ren API giltza ez da zehaztu. Jarri harremanetan zure kudeatzailearekin.';
 $string['apikey'] = 'API gakoa';
 $string['apikeyinfo'] = 'Lortu  <a href="https://developers.google.com/youtube/v3/getting-started">Google-ren API gakoa</a>zure Moodle gunerako.';
-$string['autosvehicles'] = 'Autoak &amp; Ibilgailuak';
+$string['autosvehicles'] = 'Autoak eta Ibilgailuak';
 $string['category'] = 'Kategoria';
 $string['comedy'] = 'Komedia';
-$string['configtitle'] = 'Izenburua';
+$string['configtitle'] = 'YouTube blokearen izenburua';
 $string['education'] = 'Hezkuntza';
 $string['entertainment'] = 'Denbora-pasa';
-$string['filmsanimation'] = 'Filmak &amp; animazioa';
-$string['gadgetsgames'] = 'Trikimailuak &amp; jokoak';
-$string['howtodiy'] = 'Nola egin&amp; DIY';
+$string['filmsanimation'] = 'Filmak eta animazioa';
+$string['gadgetsgames'] = 'Gadget eta jokoak';
+$string['howtodiy'] = 'How-to eta DIY';
 $string['includeonlyvideosfromplaylist'] = 'Sartu soilik ID-a duten zerrendako bideoak';
 $string['music'] = 'Musika';
-$string['newspolitics'] = 'Albisteak &amp; Politika';
+$string['newspolitics'] = 'Albisteak eta Politika';
 $string['numberofvideos'] = 'Bideo-kopurua';
-$string['peopleblogs'] = 'Jendea &amp; blogak';
-$string['petsanimals'] = 'Animaliak';
+$string['peopleblogs'] = 'Jendea eta blogak';
+$string['petsanimals'] = 'Maskotak eta Animaliak';
 $string['pluginname'] = 'YouTube';
-$string['privacy:metadata'] = 'Youtube blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
+$string['privacy:metadata'] = 'YouTube blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['requesterror'] = 'Ezin izan da zerbitzaritik daturik eskuratu. Jarri harremanetan zure kudeatzailearekin arazoa errepikatzen bada.';
-$string['scienceandtech'] = 'Zientzia &amp; Teknika';
+$string['scienceandtech'] = 'Zientzia eta Teknika';
 $string['sports'] = 'Kirolak';
 $string['tag_youtube:addinstance'] = 'Gehitu YouTube bloke berria';
-$string['travel'] = 'Bidaiak &amp; Herriak';
+$string['travel'] = 'Bidaiak eta Lekuak';

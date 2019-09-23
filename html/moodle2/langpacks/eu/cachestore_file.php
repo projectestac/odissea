@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_file', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   cachestore_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['autocreate'] = 'Sortu karpeta automatikoki';
 $string['autocreate_help'] = 'Gaituz gero bidean zehaztutako karpeta automatikoki sortuko da dagoeneko existitzen ez bada.';
-$string['path'] = 'Cache-bidea';
+$string['path'] = 'Cachearen bidea';
 $string['path_help'] = 'Cache-biltegi honetarako fitxategiak gordetzeko erabili beharreko karpeta. Hutsik utziz gero (modu lehenetsian), moodledata karpetaren barruan karpeta bat sortuko da automatikoki. Hau errendimendu hobea duen unitate bateko fitxategi-biltegi bat zehazteko erabil daiteke (memorian dagoen bat adibidez).';
 $string['pluginname'] = 'Fitxategi-cachea';
 $string['prescan'] = 'Aurrez eskaneatu karpeta';

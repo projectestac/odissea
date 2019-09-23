@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cohort', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,7 @@ $string['eventcohortmemberremoved'] = 'Utilizador removido de um grupo global';
 $string['eventcohortupdated'] = 'Grupo global atualizado';
 $string['external'] = 'Grupo global externo';
 $string['idnumber'] = 'ID';
+$string['invalidtheme'] = 'Tema do Grupo global não existe';
 $string['memberscount'] = 'Tamanho';
 $string['name'] = 'Nome';
 $string['namecolumnmissing'] = 'Existe algo errado com o formato do ficheiro CSV. Por favor, verifique se estão incluídos os nomes corretos das colunas. Para adicionar utilizadores a um Grupo Global, aceda a  "Carregar utilizadores" na Administração do Site.';
@@ -75,7 +76,7 @@ $string['privacy:metadata:cohort_members'] = 'Informação sobre o grupo de util
 $string['privacy:metadata:cohort_members:cohortid'] = 'O ID do grupo';
 $string['privacy:metadata:cohort_members:timeadded'] = 'O tempo exato de indicação de quando o utilizador foi adicionado ao grupo';
 $string['privacy:metadata:cohort_members:userid'] = 'O ID do utilizador associado ao grupo';
-$string['removeuserwarning'] = 'Remover utilizadores dos Grupos globais significa desinscrevê-los de várias disciplinas, o que faz com que estes percam as suas configurações, notas, grupos e outras informações nessas disciplinas.';
+$string['removeuserwarning'] = 'Remover utilizadores dos Grupos globais significa desinscrevê-los das disciplinas, o que faz com que estes percam as suas configurações, notas, grupos e outras informações nessas disciplinas.';
 $string['search'] = 'Procurar';
 $string['searchcohort'] = 'Procurar Grupos globais';
 $string['selectfromcohort'] = 'Selecionar utilizadores do grupo global';

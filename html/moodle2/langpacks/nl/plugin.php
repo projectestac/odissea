@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'plugin', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -123,7 +123,7 @@ $string['type_calendartype_plural'] = 'Kalendertypes';
 $string['type_coursereport'] = 'Cursusrapport';
 $string['type_coursereport_plural'] = 'Cursusrapporten';
 $string['type_dataformat'] = 'Datumformaat';
-$string['type_dataformat_plural'] = 'Datumformaten';
+$string['type_dataformat_plural'] = 'Dataformaten';
 $string['type_editor'] = 'Editor';
 $string['type_editor_plural'] = 'Editors';
 $string['type_enrol'] = 'Aanmeldingswijze';

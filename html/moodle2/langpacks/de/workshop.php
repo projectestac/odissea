@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'workshop', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -213,6 +213,7 @@ $string['noexamplesformready'] = 'Sie müssen zuerst den Beurteilungsbogen erste
 $string['nogradeyet'] = 'Bisher keine Punkte';
 $string['nosubmissionfound'] = 'Für diese/n Nutzer/in wurde keine Einreichung gefunden';
 $string['nosubmissions'] = 'Bisher gibt es in dieser gegenseitigen Beurteilung keine Einreichungen';
+$string['nosubmissiontype'] = 'Zumindest ein Abgabetyp muss aktiviert sein';
 $string['notassessed'] = 'Bisher nicht beurteilt';
 $string['nothingfound'] = 'Nichts anzuzeigen';
 $string['nothingtoreview'] = 'Nichts zu beurteilen';
@@ -243,12 +244,12 @@ $string['pluginname'] = 'Gegenseitige Beurteilung';
 $string['prepareexamples'] = 'Beispieleinreichungen erstellen';
 $string['previewassessmentform'] = 'Vorschau';
 $string['privacy:metadata:aggregatedgradinggrade'] = 'Zusammengefasste Bewertung aller Aufgaben des Nutzers in der  Aktivität gegenseitige Beurteilung';
-$string['privacy:metadata:assessmentgrade'] = 'Zusammengefasste Bewertung für die Löoungen dieser Aufgabe';
+$string['privacy:metadata:assessmentgrade'] = 'Zusammengefasste Bewertung für die Lösungen dieser Aufgabe';
 $string['privacy:metadata:assessmentgradinggrade'] = 'Bewertug für die Abgabe in dieser Aufgabe';
-$string['privacy:metadata:assessmentgradinggradeover'] = 'Manuell überschriebene Bewertungrt für die Aufgabe';
+$string['privacy:metadata:assessmentgradinggradeover'] = 'Manuell überschriebene Bewertungart für die Aufgabe';
 $string['privacy:metadata:assessmentid'] = 'Aufgaben-ID';
 $string['privacy:metadata:authorid'] = 'ID der Person, die die Lösung abgibt';
-$string['privacy:metadata:dimensiongrade'] = 'Bewertrung in der festgelegten Aufgabendimension';
+$string['privacy:metadata:dimensiongrade'] = 'Bewertung in der festgelegten Aufgabendimension';
 $string['privacy:metadata:dimensionid'] = 'ID der Aufgabendimension';
 $string['privacy:metadata:example'] = 'Ob der Datensatz zu einer Musterabgabe gehört';
 $string['privacy:metadata:feedbackauthor'] = 'Feedback für den Verfasser';
@@ -258,17 +259,17 @@ $string['privacy:metadata:feedbackreviewerformat'] = 'Textformat des Feeedbacks 
 $string['privacy:metadata:late'] = 'Ob die Lösung nach dem Abgabetermin eingereicht wurde';
 $string['privacy:metadata:peercomment'] = 'Kommentar zur Bewertung';
 $string['privacy:metadata:peercommentformat'] = 'Textformat des Kommentars';
-$string['privacy:metadata:preference:perpage'] = 'Anzahl der Lösungen auf einer Seitefürden Nutzer';
-$string['privacy:metadata:published'] = 'Ob die Lösungen für alle Nutzer angezeigt werden sollen, wenn die \'gegenseitige Beurteilung\' abgeschlossen wurde';
+$string['privacy:metadata:preference:perpage'] = 'Anzahl der Lösungen auf einer Seite für den Nutzer';
+$string['privacy:metadata:published'] = 'Ob die Lösungen für alle Nutzer angezeigt werden sollen wenn die \'gegenseitige Beurteilung\' abgeschlossen wurde';
 $string['privacy:metadata:reviewerid'] = 'ID der Person, die die Bewertung abgibt';
-$string['privacy:metadata:strategy'] = 'Nacme des Bewertungsstratgieplugins, das Datensätze auswertet';
+$string['privacy:metadata:strategy'] = 'Name des Bewertungsstratgieplugins, das Datensätze auswertet';
 $string['privacy:metadata:submissioncontent'] = 'Inhalt der Lösung';
 $string['privacy:metadata:submissioncontentformat'] = 'Textformat des Lösungsinhalts';
 $string['privacy:metadata:submissiongrade'] = 'Zusammengeffasste Bewertung der Lösung als Dezimalzahl zwischen 0.. 1000';
 $string['privacy:metadata:submissiongradeover'] = 'Manuell angepasster Wert der zusammengefassten Bewertung';
 $string['privacy:metadata:submissionid'] = 'ID der Lösung';
 $string['privacy:metadata:submissiontitle'] = 'Titel der Lösung';
-$string['privacy:metadata:subsystem:corefiles'] = 'Das Modull \'gegenseitige Beurteilung\' speichert Dateien, die in den Lösungstext eingebunden oder an diesen angehängt wurden';
+$string['privacy:metadata:subsystem:corefiles'] = 'Das Modul \'gegenseitige Beurteilung\' speichert Dateien, die in den Lösungstext eingebunden oder an diesen angehängt wurden';
 $string['privacy:metadata:subsystem:coreplagiarism'] = 'Das Modul \'gegenseitige Beurteilung\' verfügt über ein integriertes Plagiatssystem.';
 $string['privacy:metadata:timeaggregated'] = 'Wann die aggregrierte Bewertung zuletzt berechnet wurde';
 $string['privacy:metadata:timecreated'] = 'Wann der Datensatz in der Datenbank angelegt wurde';
@@ -341,6 +342,12 @@ $string['submissionstart'] = 'Einreichungen ab';
 $string['submissionstartdatetime'] = 'Einreichungen sind möglich ab {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} (Start für Einreichungen)';
 $string['submissiontitle'] = 'Titel';
+$string['submissiontypedisabled'] = 'Der Abgabetyp ist für diese Gegenseitige Beurteilung deaktiviert.';
+$string['submissiontypefileavailable'] = 'Dateianhang <span class="accesshide">verfügbar</span>';
+$string['submissiontypefilerequired'] = '<span class="accesshide">Dateianhang </span> Erforderlich';
+$string['submissiontypes'] = 'Abgabetypen';
+$string['submissiontypetextavailable'] = 'Online-Texteingabe<span class="accesshide"> verfügbar</span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide">Online-Texteingabe </span>Erforderlich';
 $string['submittednotsubmitted'] = 'Abgegeben ({$a->submitted}) / nicht abgegeben ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Methode zur Einreichungszuteilung';
 $string['subplugintype_workshopallocation_plural'] = 'Methoden zur Einreichungszuteilung';
@@ -416,7 +423,6 @@ $string['workshop:viewauthornames'] = 'Autorennamen betrachten';
 $string['workshop:viewauthorpublished'] = 'Autor/innen von veröffentlichten Beiträgen ansehen';
 $string['workshop:viewpublishedsubmissions'] = 'Veröffentlichte Einreichungen betrachten';
 $string['workshop:viewreviewernames'] = 'Beurteilernamen anzeigen';
-$string['yourassessment'] = 'Ihre Beurteilung';
 $string['yourassessmentfor'] = 'Ihre Beurteilung für {$a}';
 $string['yourgrades'] = 'Ihre Bewertungen';
 $string['yoursubmission'] = 'Ihre Einreichung';

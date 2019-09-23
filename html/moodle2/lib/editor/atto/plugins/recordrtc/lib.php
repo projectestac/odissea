@@ -34,21 +34,36 @@ defined('MOODLE_INTERNAL') || die();
  * @param stdClass $fpoptions - unused.
  */
 function atto_recordrtc_params_for_js($elementid, $options, $fpoptions) {
-    global $CFG;
-
-    $moodleversion = intval($CFG->version, 10);
-    $moodle32 = 2016120500;
-
     $context = $options['context'];
     if (!$context) {
         $context = context_system::instance();
     }
+
     $sesskey = sesskey();
     $allowedtypes = get_config('atto_recordrtc', 'allowedtypes');
     $audiobitrate = get_config('atto_recordrtc', 'audiobitrate');
     $videobitrate = get_config('atto_recordrtc', 'videobitrate');
     $timelimit = get_config('atto_recordrtc', 'timelimit');
-    $maxrecsize = ini_get('upload_max_filesize');
+
+    // Update $allowedtypes to account for capabilities.
+    $audioallowed = $allowedtypes === 'audio' || $allowedtypes === 'both';
+    $videoallowed = $allowedtypes === 'video' || $allowedtypes === 'both';
+    $audioallowed = $audioallowed && has_capability('atto/recordrtc:recordaudio', $context);
+    $videoallowed = $videoallowed && has_capability('atto/recordrtc:recordvideo', $context);
+    if ($audioallowed && $videoallowed) {
+        $allowedtypes = 'both';
+    } else if ($audioallowed) {
+        $allowedtypes = 'audio';
+    } else if ($videoallowed) {
+        $allowedtypes = 'video';
+    } else {
+        $allowedtypes = '';
+    }
+
+    $maxrecsize = get_max_upload_file_size();
+    if (!empty($options['maxbytes'])) {
+        $maxrecsize = min($maxrecsize, $options['maxbytes']);
+    }
     $audiortcicon = 'i/audiortc';
     $videortcicon = 'i/videortc';
     $params = array('contextid' => $context->id,
@@ -59,7 +74,6 @@ function atto_recordrtc_params_for_js($elementid, $options, $fpoptions) {
                     'timelimit' => $timelimit,
                     'audiortcicon' => $audiortcicon,
                     'videortcicon' => $videortcicon,
-                    'oldermoodle' => $moodleversion < $moodle32,
                     'maxrecsize' => $maxrecsize
               );
 
@@ -84,6 +98,8 @@ function atto_recordrtc_strings_for_js() {
                      'gumnotfound',
                      'gumnotreadable_title',
                      'gumnotreadable',
+                     'gumnotsupported',
+                     'gumnotsupported_title',
                      'gumoverconstrained_title',
                      'gumoverconstrained',
                      'gumsecurity_title',
@@ -92,8 +108,6 @@ function atto_recordrtc_strings_for_js() {
                      'gumtype',
                      'insecurealert_title',
                      'insecurealert',
-                     'browseralert_title',
-                     'browseralert',
                      'startrecording',
                      'recordagain',
                      'stoprecording',
@@ -106,10 +120,7 @@ function atto_recordrtc_strings_for_js() {
                      'uploadprogress',
                      'uploadfailed',
                      'uploadfailed404',
-                     'uploadaborted',
-                     'annotationprompt',
-                     'annotation:audio',
-                     'annotation:video'
+                     'uploadaborted'
                );
 
     $PAGE->requires->strings_for_js($strings, 'atto_recordrtc');
@@ -120,7 +131,7 @@ function atto_recordrtc_strings_for_js() {
  */
 function atto_recordrtc_get_fontawesome_icon_map() {
     return [
-        'atto_recordrtc:i/audiortc' => 'fa-file-audio-o',
-        'atto_recordrtc:i/videortc' => 'fa-file-video-o'
+        'atto_recordrtc:i/audiortc' => 'fa-microphone',
+        'atto_recordrtc:i/videortc' => 'fa-video-camera'
     ];
 }

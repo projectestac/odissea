@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mathjaxloader', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'filter_mathjaxloader', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   filter_mathjaxloader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,4 +43,4 @@ $string['mathjaxsettings_desc'] = 'La configuració per defecte de MathJax, haur
 $string['texfiltercompatibility'] = 'Compatibilitat del filtre TeX';
 $string['texfiltercompatibility_help'] = 'El filtre MathJax es pot utilitzar com a substitut del filtre TeX.
 
-A fi de permetre l\'ús de tots els delimitadors utilitzats peel filtre TeX, MathJax es configurarà per a mostrar totes les equacions inserides en el text.';
+A fi de permetre l\'ús de tots els delimitadors utilitzats pel filtre TeX, MathJax es configurarà per a mostrar totes les equacions inserides en el text.';

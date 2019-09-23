@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'el', branch 'MOODLE_34_STABLE'
+ * Strings for component 'mimetypes', language 'el', branch 'MOODLE_36_STABLE'
  *
  * @package   mimetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,14 +34,14 @@ $string['application/vnd.ms-excel'] = 'Υπολογιστικό φύλλο Excel
 $string['application/vnd.ms-excel.sheet.macroEnabled.12'] = 'Βιβλίο εργασίας με δυνατότητα μακροεντολών Excel 2007';
 $string['application/vnd.ms-powerpoint'] = 'Παρουσίαση Powerpoint';
 $string['application/vnd.oasis.opendocument.spreadsheet'] = 'Υπολογιστικό φύλλο OpenDocument';
-$string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'Πρότυπο υπολογιστικού φύλλου OpenDocument';
+$string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'Πρότυπο φόρμας υπολογιστικού φύλλου OpenDocument';
 $string['application/vnd.oasis.opendocument.text'] = 'Έγγραφο κειμένου OpenDocument';
-$string['application/vnd.oasis.opendocument.text-template'] = 'Πρότυπο κειμένου OpenDocument';
-$string['application/vnd.oasis.opendocument.text-web'] = 'Πρότυπο ιστοσελίδας του OpenDocument';
+$string['application/vnd.oasis.opendocument.text-template'] = 'Πρότυπο φόρμας κειμένου OpenDocument';
+$string['application/vnd.oasis.opendocument.text-web'] = 'Πρότυπο φόρμας ιστοσελίδας του OpenDocument';
 $string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Παρουσίαση του Powerpoint 2007';
-$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Προβολή διαφανειών PowerPoint 2007';
+$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Εμφάνιση διαφανειών PowerPoint 2007';
 $string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Υπολογιστικό φύλλο Excel 2007';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Πρότυπο του Excel 2007';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Πρότυπο φόρμας του Excel 2007';
 $string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Έγγραφο Word 2007';
 $string['application/xhtml_xml'] = 'Έγγραφο XHTML';
 $string['application/x-iwork-keynote-sffkey'] = 'iWork Keynote παρουσίαση';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_upcoming', language 'sv', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_calendar_upcoming', language 'sv', branch 'MOODLE_36_STABLE'
  *
  * @package   block_calendar_upcoming
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['calendar_upcoming:addinstance'] = 'Lägg till en ny Kommande evenemang block';
-$string['calendar_upcoming:myaddinstance'] = 'Lägg till en ny Kommande händelser block till mitt Moodle';
+$string['calendar_upcoming:addinstance'] = 'Lägg till ett nytt Kommande händelser block';
+$string['calendar_upcoming:myaddinstance'] = 'Lägg till en ny Kommande händelser block på Mitt Moodle';
 $string['gotocalendar'] = 'Gå till Kalender';
 $string['pluginname'] = 'Kommande händelser';
 $string['privacy:metadata'] = 'Kommande händelser-blocket visar enbart befintlig kalenderdata.';

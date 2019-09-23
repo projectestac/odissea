@@ -534,10 +534,9 @@ function mod_assign_get_completion_active_rule_descriptions($cm) {
     foreach ($cm->customdata['customcompletionrules'] as $key => $val) {
         switch ($key) {
             case 'completionsubmit':
-                if (empty($val)) {
-                    continue;
+                if (!empty($val)) {
+                    $descriptions[] = get_string('completionsubmit', 'assign');
                 }
-                $descriptions[] = get_string('completionsubmit', 'assign');
                 break;
             default:
                 break;
@@ -1296,10 +1295,7 @@ function assign_cron() {
  * @return array Array of capability strings
  */
 function assign_get_extra_capabilities() {
-    return array('gradereport/grader:view',
-                 'moodle/grade:viewall',
-                 'moodle/site:viewfullnames',
-                 'moodle/site:config');
+    return ['gradereport/grader:view', 'moodle/grade:viewall'];
 }
 
 /**
@@ -1631,7 +1627,11 @@ function assign_user_outline($course, $user, $coursemodule, $assignment) {
         return null;
     }
     $result = new stdClass();
-    $result->info = get_string('outlinegrade', 'assign', $gradebookgrade->str_long_grade);
+    if (!$gradingitem->hidden || has_capability('moodle/grade:viewhidden', context_course::instance($course->id))) {
+        $result->info = get_string('outlinegrade', 'assign', $gradebookgrade->str_long_grade);
+    } else {
+        $result->info = get_string('grade') . ': ' . get_string('hidden', 'grades');
+    }
     $result->time = $gradebookgrade->dategraded;
 
     return $result;
@@ -1878,6 +1878,14 @@ function mod_assign_core_calendar_provide_event_action(calendar_event $event,
 
     $cm = get_fast_modinfo($event->courseid, $userid)->instances['assign'][$event->instance];
     $context = context_module::instance($cm->id);
+
+    $completion = new \completion_info($cm->get_course());
+
+    $completiondata = $completion->get_data($cm, false, $userid);
+
+    if ($completiondata->completionstate != COMPLETION_INCOMPLETE) {
+        return null;
+    }
 
     $assign = new assign($context, $cm, null);
 

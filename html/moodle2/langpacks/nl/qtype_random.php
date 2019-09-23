@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'qtype_random', language 'nl', branch 'MOODLE_36_STABLE'
  *
  * @package   qtype_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,19 @@ $string['pluginnameediting'] = 'Willekeurige vraag bewerken';
 $string['pluginname_help'] = 'Een willekeurige vraag is geen vraagtype op zich, maar is een manier om willekeurig gekozen vragen uit een categorie in een activiteit (zoals een test) te plaatsen.';
 $string['privacy:metadata'] = 'De willekeurige vraagtype-plugin bewaart geen persoonlijke gegevens.';
 $string['randomqname'] = 'Willekeurig ({$a})';
+$string['randomqnamefromtop'] = 'Foute willekeurige vraag. Verwijder deze vraag.';
+$string['randomqnamefromtoptags'] = 'Foute willekeurige vraag. Verwijder deze vraag.';
+$string['randomqnametags'] = 'Willekeurig  ({$a->category}, tags: {$a->tags';
 $string['randomqplusname'] = 'Willekeurig ({$a} en subcategorieën)';
+$string['randomqplusnamecourse'] = 'Willekeurig (elke categorie in deze cursus)';
+$string['randomqplusnamecoursecat'] = 'Willekeurig (elke categorie in cursuscategorie {$a}';
+$string['randomqplusnamecoursecattags'] = 'Willekeurig (elke categorie in cursuscategorie {$a->category}, tags: {$a->tags})';
+$string['randomqplusnamecoursetags'] = 'Willekeurig (elke categorie in deze cursus, tags: {$a->tags})';
+$string['randomqplusnamemodule'] = 'Willekeurig (elke categorie van deze test)';
+$string['randomqplusnamemoduletags'] = 'Willekeurig (elke categorie van deze test, tags: {$a->tags})';
+$string['randomqplusnamesystem'] = 'Willekeurig (elke categorie op systeem-niveau)';
+$string['randomqplusnamesystemtags'] = 'Willekeurig (elke categorie op systeem-niveau,tags: {$a->tags})';
+$string['randomqplusnametags'] = 'Willekeurig ({$a->category} en subcategorieën, tags: {$a->tags})';
 $string['selectedby'] = '{$a->questionname} gekozen door  {$a->randomname}';
 $string['selectmanualquestions'] = 'Willekeurige vraag kan manueel beoordeelde vragen gebruiken';
+$string['taskunusedrandomscleanup'] = 'Verwijder ongebruikte willekeurige vragen';

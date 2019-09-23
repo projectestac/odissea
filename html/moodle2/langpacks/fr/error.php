@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'fr', branch 'MOODLE_34_STABLE'
+ * Strings for component 'error', language 'fr', branch 'MOODLE_36_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -100,7 +100,7 @@ $string['cannotfindinfo'] = 'Impossible de trouver d\'information pour « {$a}�
 $string['cannotfindlang'] = 'Paquetage de la langue « {$a} » introuvable';
 $string['cannotfindteacher'] = 'Impossible de trouver un enseignant';
 $string['cannotfinduser'] = 'Impossible de trouver l\'utilisateur « {$a} »';
-$string['cannotgeoplugin'] = 'Impossible de se connecter au serveur geoPlugin à l\'adresse http://www.geoplugin.com. Veuillez vérifier les réglages du proxy, ou, mieux encore, installer le fichier MaxMind GeoLite City data.';
+$string['cannotgeoplugin'] = 'Impossible de se connecter au serveur geoPlugin à l\'adresse https://www.geoplugin.com. Veuillez vérifier les réglages du proxy ou installer le fichier MaxMind GeoLite City data.';
 $string['cannotgetblock'] = 'Impossible de récupérer les blocs dans la base de données';
 $string['cannotgetcats'] = 'Impossible d\'obtenir l\'enregistrement de la catégorie';
 $string['cannotgetdata'] = 'Impossible d\'obtenir les données';
@@ -263,6 +263,7 @@ $string['filternotactive'] = 'Le filtre {$a} n\'est actuellement pas actif';
 $string['filternotenabled'] = 'Le filtre n\'est pas activé !';
 $string['filternotinstalled'] = 'Le filtre {$a} n\'est actuellement pas installé';
 $string['forumblockingtoomanyposts'] = 'Vous avez dépassé le maximum de messages fixé pour ce forum';
+$string['functionalityremoved'] = 'Vous tentez d\'accéder à une fonctionnalité qui a été supprimée.';
 $string['generalexceptionmessage'] = 'Exception : {$a}';
 $string['gradecantregrade'] = 'Une erreur est survenue lors du calcul de la note : {$a}';
 $string['gradepubdisable'] = 'Publication des notes désactivée';
@@ -382,10 +383,9 @@ $string['logfilenotavailable'] = 'Journaux non disponibles';
 $string['loginasnoenrol'] = 'Vous ne pouvez pas vous inscrire ou vous désinscrire d\'un cours lorsque vous êtes « Connecté sous le nom » d\'un autre participant';
 $string['loginasonecourse'] = 'Vous ne pouvez pas entrer dans ce cours.<br />Vous devez d\'abord terminer la session dans laquelle vous êtes « Connecté sous le nom » d\'un autre participant';
 $string['maxareabytes'] = 'Le fichier dépasse l\'espace disponible dans cette zone.';
-$string['maxbytes'] = 'Le fichier dépasse la taille maximale permise.';
 $string['maxbytesfile'] = 'La taille du fichier {$a->file} est trop grande. La taille maximale d\'un fichier à déposer est de {$a->size}.';
 $string['messagingdisable'] = 'La messagerie est désactivée sur ce site';
-$string['mimetexisnotexist'] = 'Votre serveur n\'est pas configuré pour lancer mimeTeX. Veuillez télécharger les sources en C du programme ici <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, les compiler et placer le programme dans le dossier moodle/filter/tex/.';
+$string['mimetexisnotexist'] = 'Votre serveur n\'est pas configuré pour lancer mimeTeX. Veuillez télécharger les sources en C du programme ici <a href="https://www.forkosh.com/mimetex.zip"> https://www.forkosh.com/mimetex.zip</a>, les compiler et placer le programme dans le dossier moodle/filter/tex/.';
 $string['mimetexnotexecutable'] = 'Votre programme <i>mimetex</i> n\'est pas exécutable !';
 $string['missingfield'] = 'Le champ « {$a} » est manquant';
 $string['missingkeyinsql'] = 'Erreur : paramètre « {$a} » manquant dans la requête';
@@ -432,7 +432,7 @@ $string['nologinas'] = 'Vous n\'êtes pas autorisé à vous connecter avec ce no
 $string['nonmeaningfulcontent'] = 'Le contenu ne fait pas de sens';
 $string['noparticipants'] = 'Aucun participant trouvé dans ce cours';
 $string['noparticipatorycms'] = 'Désolé, aucun module de participation pour lequel faire un rapport';
-$string['nopermissions'] = 'Désolé, vous n\'avez actuellement pas les droits d\'accès requis pour effectuer ceci ({$a})';
+$string['nopermissions'] = 'Désolé, vous n\'avez actuellement pas les permissions pour effectuer ceci ({$a})';
 $string['nopermissiontocomment'] = 'Vous n\'êtes pas autorisé à ajouter des commentaires !';
 $string['nopermissiontodelentry'] = 'Vous n\'êtes pas autorisé à supprimer les articles d\'autres utilisateurs !';
 $string['nopermissiontoeditcomment'] = 'Vous n\'êtes pas autorisé à modifier les commentaires d\'autres utilisateurs !';
@@ -443,7 +443,7 @@ $string['nopermissiontomanagegroup'] = 'Vous n\'êtes pas autorisé à gérer le
 $string['nopermissiontorate'] = 'Vous n\'êtes pas autorisé à évaluer des articles !';
 $string['nopermissiontoshow'] = 'Vous n\'êtes pas autorisé à voir ceci !';
 $string['nopermissiontounlock'] = 'Vous n\'êtes pas autorisé à déverrouiller !';
-$string['nopermissiontoupdatecalendar'] = 'Vous n\'avez pas les droits d\'accès requis pour modifier un événement de calendrier';
+$string['nopermissiontoupdatecalendar'] = 'Vous n\'avez pas les permissions pour modifier un événement de calendrier.';
 $string['nopermissiontoviewgrades'] = 'Vous n\'êtes pas autorisé à voir les notes.';
 $string['nopermissiontoviewletergrade'] = 'Vous n\'êtes pas autorisé à voir les notes lettres';
 $string['nopermissiontoviewpage'] = 'Vous n\'êtes pas autorisé à voir cette page';

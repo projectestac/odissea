@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'chat', language 'ca', branch 'MOODLE_36_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = 'Teniu sessions de xat properes';
 $string['ajax'] = 'Versió Ajax';
 $string['autoscroll'] = 'Desplaçament automàtic';
-$string['beep'] = 'bip';
+$string['beep'] = 'Fes sonar';
 $string['bubble'] = 'Bombolla';
 $string['cantlogin'] = 'No s\'ha pogut entrar a la sala de xat';
 $string['chat:addinstance'] = 'Afegeix un xat nou';

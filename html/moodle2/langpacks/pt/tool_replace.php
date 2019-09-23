@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'pt', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_replace', language 'pt', branch 'MOODLE_36_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cannotfit'] = 'A substituição é maior do que o original e não é possível encurtar. Não pode continuar.';
+$string['cannotfit'] = 'A substituição é maior do que o original e não é possível encurtar. Não é possível continuar.';
 $string['disclaimer'] = 'Compreendo os riscos desta operação';
 $string['doit'] = 'Sim, executar!';
 $string['excludedtables'] = 'Várias tabelas não são atualizadas como parte da substituição de texto. Isto inclui as tabelas de configuração, registos de atividade, eventos e tabelas de sessão.';

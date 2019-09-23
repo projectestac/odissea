@@ -10,7 +10,7 @@
 }
 
 .mform .containsadvancedelements .advanced.show {
-    display: block;
+    display: flex;
 }
 
 #adminsettings span.error {
@@ -27,12 +27,30 @@
     .custom-select {
         max-width: 100%;
     }
+    .form-group {
+        margin: 0.1rem 0.25rem 0.1rem 0;
+    }
+    br + label {
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+.unresponsive.mform .form-inline,
+.unresponsive.mform .form-inline label {
+    display: inline-flex;
+}
+
+#jump-to-activity.custom-select {
+    width: 100%;
 }
 
 .mform fieldset {
-    margin-left: $spacer * 1.5;
     margin-bottom: $spacer / 2;
     border-bottom: $border-width solid $table-border-color;
+}
+.mform > .form-group {
+    margin-left: $spacer * 1.5;
 }
 
 .editor_atto_content.form-control {
@@ -41,20 +59,6 @@
 
 #adminsettings .form-control[size] {
     width: auto;
-}
-
-.mform fieldset.collapsible legend a.fheader {
-    padding: 0 5px 0 ($spacer * 1.5);
-    margin-left: -($spacer * 1.5);
-    background: url([[pix:t/expanded]]) 0 center no-repeat;
-}
-
-.mform fieldset.collapsed legend a.fheader {
-    /*rtl:raw:
-    background-image: url([[pix:t/collapsed_rtl]]);
-    */
-    /*rtl:remove*/
-    background-image: url([[pix:t/collapsed]]);
 }
 
 .jsenabled .mform .collapsed .fcontainer {
@@ -98,6 +102,10 @@ input#id_externalurl {
     display: inline;
 }
 
+.form-inline label:not(.sr-only):not(.accesshide) + select {
+    margin-left: 0.5rem;
+}
+
 .formsettingheading .form-horizontal {
     @extend .text-muted;
 }
@@ -118,10 +126,8 @@ input#id_externalurl {
 // Pale grey container for submit buttons.
 .form-buttons,
 .path-admin .buttons,
-#fitem_id_submitbutton,
 .fp-content-center form + div,
-div.backup-section + form,
-#fgroup_id_buttonar {
+div.backup-section + form {
     @extend .form-group;
     padding-left: 0;
 }
@@ -153,14 +159,19 @@ div.backup-section + form,
 // I think this could be avoided (or at least tidied up) ifr
 // we used HTML5 input types like url, phone, email, number etc.
 /* rtl:ignore */
-.mform .fitem .felement input[name=email],
-.mform .fitem .felement input[name=email2],
-.mform .fitem .felement input[name=url],
-.mform .fitem .felement input[name=idnumber],
-.mform .fitem .felement input[name=phone1],
-.mform .fitem .felement input[name=phone2] {
+.mform .fitem .felement input[name="email"],
+.mform .fitem .felement input[name="email2"],
+.mform .fitem .felement input[name="url"],
+.mform .fitem .felement input[name="idnumber"],
+.mform .fitem .felement input[name="phone1"],
+.mform .fitem .felement input[name="phone2"] {
     text-align: left;
     direction: ltr;
+}
+
+// Reduce the mediaplugin width when using inside forms.
+.que.match .mediaplugin {
+    width: 50vw;
 }
 
 /* rtl:ignore */
@@ -224,6 +235,15 @@ fieldset.coursesearchbox label {
     display: none;
 }
 
+.availability-field {
+    label {
+        display: inline-flex;
+    }
+    .availability-group label {
+        vertical-align: top;
+    }
+}
+
 .availability-eye {
     clear: left;
     float: left;
@@ -233,8 +253,12 @@ fieldset.coursesearchbox label {
     float: left;
     @include border-radius($card-border-radius);
     border: $card-border-width solid $card-border-color;
-    padding: $card-spacer-x / 2;
-    margin-left: $card-spacer-x / 2;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+.availability-plugincontrols,
+.availability-childlist .availability-inner {
+    margin-left: .625rem;
 }
 .availability-field .availability-plugincontrols .availability-group select {
     max-width: 12rem;
@@ -257,7 +281,7 @@ fieldset.coursesearchbox label {
 }
 .form-autocomplete-selection {
     margin: $input-padding-y-sm;
-    // Padding top and bottom, plus m-b-1 and the 100% lineheight.
+    // Padding top and bottom, plus mb-1 and the 100% lineheight.
     min-height: 2 * $input-padding-y-sm + 2 * $font-size-base;
 }
 
@@ -299,10 +323,16 @@ fieldset.coursesearchbox label {
 
 .form-autocomplete-downarrow {
     color: $body-color;
-    position: relative;
-    top: 0.2em;
-    left: -1.5em;
+    top: 0.2rem;
+    right: 0.5rem;
     cursor: pointer;
+
+    .loading-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $white;
+    }
 }
 
 .form-autocomplete-selection:focus {
@@ -326,7 +356,8 @@ select[size],
 select[multiple] {
     overflow: auto;
 }
-select[size=1] {
+
+select[size="1"] {
     overflow: visible;
 }
 
@@ -388,8 +419,8 @@ textarea[data-auto-rows] {
     background-image: $form-icon-danger;
     padding-right: ($input-padding-x * 3);
     background-repeat: no-repeat;
-    background-position: center right ($input-height / 4);
-    background-size: ($input-height / 2) ($input-height / 2);
+    background-position: center right 1rem;
+    background-size: 1.5rem;
 }
 
 // Styles for the JS file types browser provided by the "filetypes" element.
@@ -398,5 +429,35 @@ textarea[data-auto-rows] {
     [aria-expanded="false"] [data-filetypesbrowserfeature="hideifcollapsed"],
     [aria-expanded="true"] [data-filetypesbrowserfeature="hideifexpanded"] {
         display: none;
+    }
+}
+
+// The autocomplete popup needs a display:block container to correctly position to popup.
+.form-inline[data-fieldtype="autocomplete"],
+.form-inline[data-fieldtype="tags"] {
+    display: block;
+}
+
+// Show editor at 100% width by default.
+[data-fieldtype="editor"] > div {
+    flex-grow: 1;
+}
+
+@include media-breakpoint-up(sm) {
+    .mform fieldset {
+        margin-left: $spacer * 1.5;
+    }
+    .mform fieldset.collapsible legend a.fheader {
+        padding: 0 5px 0 ($spacer * 1.5);
+        margin-left: -($spacer * 1.5);
+        background: url([[pix:t/expanded]]) 0 center no-repeat;
+    }
+
+    .mform fieldset.collapsed legend a.fheader {
+        /*rtl:raw:
+        background-image: url([[pix:t/collapsed_rtl]]);
+        */
+        /*rtl:remove*/
+        background-image: url([[pix:t/collapsed]]);
     }
 }

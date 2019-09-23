@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_completion_progress', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   block_completion_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,7 @@ $string['completion_progress:showbar'] = 'Balken im Block \'Fortschrittsbalken\'
 $string['config_activitiesincluded'] = 'Aktivitäten enthalten';
 $string['config_activitycompletion'] = 'Alle Aktivitäten mit aktivierter Abschlussverfolgung';
 $string['config_default_title'] = 'Fortschrittsbalken';
-$string['config_group'] = 'Nur für Gruppe sichtbar';
+$string['config_group'] = 'Nur für Gruppe oder Gruppierung sichtbar';
 $string['config_header_monitored'] = 'Überwacht';
 $string['config_icons'] = 'Icons im Balken nutzen';
 $string['config_longbars'] = 'Anzeige langer Balken';
@@ -60,7 +60,7 @@ $string['futureNotCompleted_colour_title'] = 'Farbe für zukünftig und nicht ab
 $string['how_activitiesincluded_works'] = 'Wie Einfügen von Aktivitäten funktioniert';
 $string['how_activitiesincluded_works_help'] = '<p>Standardmäßig werden alle Aktivitäten mit Aktivitätsabschluss in den Balken angezeigt.</p><p>Aktivitäten können auch manuell ausgewählt werden.</p>';
 $string['how_group_works'] = 'Wie sichtbare Gruppen funktionieren';
-$string['how_group_works_help'] = '<p>Wenn Sie eine Gruppe auswählen, wird die Anzeige dieses Blocks auf diese Gruppe beschränkt.</p>';
+$string['how_group_works_help'] = '<p>Wenn Sie eine Gruppe oder Gruppierung auswählen, wird die Anzeige dieses Blocks auf diese Gruppe oder Gruppierung beschränkt.</p>';
 $string['how_longbars_works'] = 'Anzeige langer Balken';
 $string['how_longbars_works_help'] = '<p>Wenn Balken eine bestimmte Länge überschreiten, können sie auf eine der folgenden Arten dargestellt werden.</P><ul>
 <li>In eine horizontale Leiste gedrückt</li>

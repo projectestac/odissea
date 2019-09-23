@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tag', language 'it', branch 'MOODLE_36_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,6 @@ $string['inalltagcoll'] = 'Ovunque';
 $string['inputstandardtags'] = 'Inserisci l\'elenco dei tag separato da virgola';
 $string['itemstaggedwith'] = '{$a->tagarea} è stata associata a "{$a->tag}"';
 $string['lesstags'] = 'meno...';
-$string['manageofficialtags'] = 'Gestione tag ufficiali';
 $string['managestandardtags'] = 'Gestione tag standard';
 $string['managetagcolls'] = 'Gestione raccolte di tag';
 $string['managetags'] = 'Gestione tag';
@@ -94,9 +93,6 @@ $string['nextpage'] = 'Altri';
 $string['noresultsfor'] = 'Nessun risultato per "{$a}"';
 $string['notagsfound'] = 'Non sono stati trovati tag corrispondenti a {$a}"';
 $string['nothingtoupdate'] = 'Nulla da aggiornare';
-$string['officialtag'] = 'Ufficiale';
-$string['otags'] = 'Tag ufficiali';
-$string['othertags'] = 'Altri tag';
 $string['owner'] = 'Proprietario';
 $string['page-tag-index'] = 'Pagina tag singolo';
 $string['page-tag-manage'] = 'Pagina gestione tag';
@@ -138,7 +134,6 @@ $string['selectmaintag'] = 'Seleziona il tag da utilizzare dopo averli combinati
 $string['selectmultipletags'] = 'Per favore seleziona più di un tag';
 $string['selecttag'] = 'Seleziona tag {$a}';
 $string['settypedefault'] = 'Rimuovi dai tag standard';
-$string['settypeofficial'] = 'Rendi ufficiale';
 $string['settypestandard'] = 'Rendi standard';
 $string['showingfirsttags'] = 'Visualizzazione dei {$a} più utilizzati';
 $string['showstandard'] = 'Utilizzo dei tag standard';
@@ -161,10 +156,8 @@ $string['tagcollection'] = 'Raccolta di tag';
 $string['tagcollection_help'] = 'Le raccolte di tag sono insiemi di tag rivolti ad aree diverse. Ad esempio, una raccolta di tag standard può essere utilizzata per associare tag ai corsi, mentre gli interessi degli utenti e gli interventi blog possono utilizzare altre raccolte. Quando un utente clicca su un tag, la pagina dei tag visualizzerà solamente gli elementi associati al tag presenti nella stessa raccolta. E\' possibile sia inserire i tag nelle raccolte in modo automatico in funzione dell\'area associata al tag, sia inserire i tag manualmente come tag standard.';
 $string['tagcollections'] = 'Raccolte di tag';
 $string['tagdescription'] = 'Descrizione tag';
-$string['taggedwith'] = 'con il tag "{$a}"';
 $string['tags'] = 'Tag';
 $string['tagsaredisabled'] = 'I tag sono disabilitati';
-$string['tagtype'] = 'Tipo tag';
 $string['thingstaggedwith'] = '"{$a->name}" è utilizzato {$a->count} volte';
 $string['thingtaggedwith'] = '"{$a->name}" è utilizzato una sola volta';
 $string['timemodified'] = 'Modificato';

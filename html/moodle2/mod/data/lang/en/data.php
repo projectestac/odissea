@@ -62,6 +62,7 @@ $string['cannotadd'] = 'Can not add entries!';
 $string['cannotdeletepreset'] = 'Error deleting a preset!';
 $string['cannotoverwritepreset'] = 'Error overwriting preset';
 $string['cannotunziptopreset'] = 'Cannot unzip to the preset directory';
+$string['closebeforeopen'] = 'You have specified an end date before the start date.';
 $string['columns'] = 'columns';
 $string['comment'] = 'Comment';
 $string['commentdeleted'] = 'Comment deleted';
@@ -165,8 +166,8 @@ $string['fieldheightlistview'] = 'Height in list view';
 $string['fieldheightsingleview'] = 'Height in single view';
 $string['fieldids'] = 'Field ids';
 $string['fieldmappings'] = 'Field mappings';
-$string['fieldmappings_help'] = 'This menu allows you to keep the data from the existing database. To preserve the data in a field, you must map it to a new field, where the data will appear. Any field can also be left blank, with no infomation copied into it. Any old field not mapped to a new one will be lost and all it\'s data removed.
-You can only map fields of the same type, so each dropdown will have different fields in it. Also, you must be careful not to try and map one old field to more than one new field.';
+$string['fieldmappings_help'] = 'This menu allows you to keep the data from the existing database. To preserve the data in a field, you must map it to a new field, where the data will appear. Any field can also be left blank, with no information copied into it. Any old field not mapped to a new one will be lost and all its data removed.
+You can only map fields of the same type, so each drop-down menu will have different fields in it. Also, you must be careful not to try and map one old field to more than one new field.';
 $string['fieldname'] = 'Field name';
 $string['fieldnotmatched'] = 'The following fields in your file are not known in this database: {$a}';
 $string['fieldoptions'] = 'Options (one per line)';
@@ -186,10 +187,10 @@ $string['fromfile'] = 'Import from zip file';
 $string['fromfile_help'] = 'The import from zip file feature allows you to browse for and upload a preset zip of templates and fields.';
 $string['generateerror'] = 'Not all files generated!';
 $string['header'] = 'Header';
-$string['headeraddtemplate'] = 'Defines the interface when editing entries';
-$string['headerasearchtemplate'] = 'Defines the interface for Advanced Searches';
+$string['headeraddtemplate'] = 'Defines the interface for adding or editing entries';
+$string['headerasearchtemplate'] = 'Defines the interface for the advanced search';
 $string['headercsstemplate'] = 'Defines local CSS styles for the other templates';
-$string['headerjstemplate'] = 'Defines custom Javascript for the other templates';
+$string['headerjstemplate'] = 'Defines custom Javascript for manipulating the way elements are displayed in the List, Single or Add templates';
 $string['headerlisttemplate'] = 'Defines browsing interface for multiple entries';
 $string['headerrsstemplate'] = 'Defines appearance of entries in RSS feeds';
 $string['headersingletemplate'] = 'Defines browsing interface for a single entry';
@@ -242,7 +243,7 @@ $string['menuchoose'] = 'Choose...';
 $string['missingdata'] = 'Data id or object must be provided to field class';
 $string['missingfield'] = 'Programmer error: You must specify field and/or data when defining field class.';
 $string['modulename'] = 'Database';
-$string['modulename_help'] = 'The database activity module enables participants to create, maintain and search a collection of entries (i.e. records).  The structure of the entries is defined by the teacher as a number of fields. Field types include checkbox, radio buttons, dropdown menu, text area, URL, picture and uploaded file.
+$string['modulename_help'] = 'The database activity module enables participants to create, maintain and search a collection of entries (i.e. records).  The structure of the entries is defined by the teacher as a number of fields. Field types include checkbox, radio buttons, drop-down menu, text area, URL, picture and uploaded file.
 
 The visual layout of information when listing, viewing or editing database entries may be controlled by database templates. Database activities may be shared between courses as presets and a teacher may also import and export database entries.
 
@@ -253,7 +254,7 @@ A teacher can allow comments on entries. Entries can also be rated by teachers o
 Database activities have many uses, such as
 
 * A collaborative collection of web links, books, book reviews, journal references etc
-* For displaying student-created photos, posters, websites or poems for peer comment and review';
+* For displaying student-created photos, posters, websites or poems for peer comment and review.';
 $string['modulename_link'] = 'mod/data/view';
 $string['modulenameplural'] = 'Databases';
 $string['more'] = 'More';
@@ -264,7 +265,7 @@ $string['multimenu'] = 'Menu (Multi-select)';
 $string['multipletags'] = 'Multiple tags found! Template not saved';
 $string['newentry'] = 'New entry';
 $string['newfield'] = 'Create a new field';
-$string['newfield_help'] = 'A field allows the input of data. Each entry in a database activity can have multiple fields of multiple types such as a date field, which allows participants to select a day, month and year from a dropdown list, a picture field, which allows participants to upload an image file, or a checkbox field, which allows participants to select one or more options.
+$string['newfield_help'] = 'A field allows the input of data. Each entry in a database activity can have multiple fields of multiple types such as a date field, which allows participants to select a day, month and year from a drop-down menu, a picture field, which allows participants to upload an image file, or a checkbox field, which allows participants to select one or more options.
 
 Each field must have a unique field name. The field description is optional.';
 $string['noaccess'] = 'You do not have access to this page';
@@ -284,6 +285,7 @@ $string['numberrssarticles'] = 'Entries in the RSS feed';
 $string['numnotapproved'] = 'Pending';
 $string['numrecords'] = '{$a} entries';
 $string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['openafterclose'] = 'You have specified an open date after the close date';
 $string['optionaldescription'] = 'Short description (optional)';
 $string['optionalfilename'] = 'Filename (optional)';
 $string['other'] = 'Other';
@@ -390,7 +392,7 @@ $string['uploadrecords_help'] = 'Entries may be uploaded via text file. The form
 
 The field enclosure is a character that surrounds each field in each record. It can normally be left unset.';
 $string['uploadrecords_link'] = 'mod/data/import';
-$string['url'] = 'Url';
+$string['url'] = 'URL';
 $string['usedate'] = 'Include in search.';
 $string['usestandard'] = 'Use a preset';
 $string['usestandard_help'] = 'To use a preset available to the whole site, select it from the list. (If you have added a preset to the list using the save as preset feature then you have the option of deleting it.)';
@@ -398,17 +400,3 @@ $string['viewfromdate'] = 'Read only from';
 $string['viewtodate'] = 'Read only to';
 $string['viewtodatevalidation'] = 'The read only to date cannot be before the read only from date.';
 $string['wrongdataid'] = 'Wrong data id provided';
-
-// Deprecated since Moodle 3.2.
-$string['namedate'] = 'Date field';
-$string['namefile'] = 'File field';
-$string['namecheckbox'] = 'Checkbox field';
-$string['namelatlong'] = 'Latitude/longitude field';
-$string['namemenu'] = 'Menu field';
-$string['namemultimenu'] = 'Multiple-selection menu field';
-$string['namenumber'] = 'Number field';
-$string['namepicture'] = 'Picture field';
-$string['nameradiobutton'] = 'Radio button field';
-$string['nametext'] = 'Text field';
-$string['nametextarea'] = 'Textarea field';
-$string['nameurl'] = 'URL field';

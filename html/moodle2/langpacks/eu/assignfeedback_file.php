@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'assignfeedback_file', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   assignfeedback_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,11 +34,11 @@ $string['countfiles'] = '{$a} fitxategi';
 $string['default'] = 'Gaituta modu lehenetsian';
 $string['default_help'] = 'Ezarriz gero, feedback-metodo hau modu lehenetsian gaituko da zeregin berri guztietan.';
 $string['enabled'] = 'Feedback-fitxategia';
-$string['enabled_help'] = 'Gaituz gero, irakasleak feedbackekin fitxategiak igo ahal izango ditu zereginak kalifikatzean. Fitxategi hauek izan daitezke, besteak beste, ikasleen dokumentuak oharrekin, dokumentu berriak iruzkinekin edo hitzezko feedbacka duten audioak.';
+$string['enabled_help'] = 'Gaituz gero, irakasleak feedbackekin fitxategiak igo ahal izango ditu zereginetako bidalketak kalifikatzean. Fitxategi hauek izan daitezke, besteak beste, ikasleen dokumentuak oharrekin, dokumentu berriak iruzkinekin edo hitzezko feedbacka duten audioak.';
 $string['feedbackfileadded'] = '"{$a->filename}" feedback fitxategi berria "{$a->student}" ikaslearentzat';
 $string['feedbackfileupdated'] = '"{$a->filename}" feedback fitxategia aldatuta "{$a->student}" ikaslearentzat';
 $string['feedbackzip'] = 'Feedback-fitxategiak dituen zip-fitxategia';
-$string['feedbackzip_help'] = 'Zip fitxategi bat, ikasle bat edo batzuentzat feedbacka duen fitxategi zerrenda duena. Feedback fitxategiak ikasleei esleituko zaie parte hartzailearen id-aren baitan, eta id hau fitxategi izenaren bigarren zatia izan behar du. Bidalketak jaisterakoan, fitxategiei izena ematen zaie protokolo hau jarraituz, eta horrela, fitxategi guztiak jaitsi, iruzkinak egin, berriro zipeatu eta igo ditzakezu. Aldaketarik gabeko fitxategiak ez dira kontuan hartuko.';
+$string['feedbackzip_help'] = 'Zip fitxategi bat, ikasle bat edo batzuentzat feedbacka duen fitxategi zerrenda duena. Feedback fitxategiak ikasleei euren erabiltzaile-IDaren arabera esleituko zaie, eta ID hau fitxategi izenaren bigarren zatia izan behar du, erabiltzailearen izen osoaren ondoren. Bidalketak jaisterakoan, fitxategiei izena protokolo hau jarraituz ematen zaie, eta horrela, fitxategi guztiak jaitsi, iruzkinak egin, berriro zipeatu eta igo ditzakezu. Aldaketarik gabeko fitxategiak ez dira kontuan hartuko.';
 $string['file'] = 'Feedback-fitxategiak';
 $string['filesadded'] = 'Feedback-fitxategiak gehituta: {$a}';
 $string['filesupdated'] = 'Feedback-fitxategiak eguneratuta: {$a}';

@@ -182,10 +182,10 @@ $string['external_tool_type_help'] = '* **Automatic, based on tool URL** - The b
 
 ### Preconfigured tool editing
 
-Three icons are available after the preconfigured tool dropdown list:
+Three icons are available after the preconfigured tool drop-down menu:
 
 * **Add** - Create a course level tool configuration. All External tool instances in this course may use the tool configuration.
-* **Edit** - Select a course level tool from the dropdown, then click this icon. The details of the tool configuration may be edited.
+* **Edit** - Select a course level tool from the drop-down menu, then click this icon. The details of the tool configuration may be edited.
 * **Delete** - Remove the selected course level tool.';
 $string['external_tool_types'] = 'Preconfigured tools';
 $string['failedtoconnect'] = 'Moodle was unable to communicate with the "{$a}" system';
@@ -242,7 +242,7 @@ real estate to the tool, and others provide a more integrated feel with the Mood
 $string['launchoptions'] = 'Launch options';
 $string['leaveblank'] = 'Leave blank if you do not need them';
 $string['lti'] = 'LTI';
-$string['lti:addinstance'] = 'Add new external tool activities';
+$string['lti:addinstance'] = 'Add a new external tool';
 $string['lti:addcoursetool'] = 'Add course-specific tool configurations';
 $string['lti:grade'] = 'View grades returned by the external tool';
 $string['lti:manage'] = 'Be an Instructor when the tool is launched';
@@ -263,19 +263,13 @@ $string['lti_tool_request_added'] = 'Tool configuration request successfully sub
 $string['lti_tool_request_existing'] = 'A tool configuration for the tool domain has already been submitted.';
 $string['ltiunknownserviceapicall'] = 'LTI unknown service API call.';
 $string['main_admin'] = 'General help';
-$string['main_admin_help'] = 'External tools allow Moodle users to seamlessly interact with learning resources hosted remotely. Through a special
-launch protocol, the remote tool will have access to some general information about the launching user. For example,
-the institution name, course id, user id, and other information such as the user\'s name or e-mail address.
+$string['main_admin_help'] = 'External tools allow Moodle users to interact with learning resources hosted remotely. Through a special launch protocol, the remote tool has access to general information about the launching user. For example, the institution name, course ID, user ID, and other information such as the user\'s name or email address.
 
 Tools listed on this page are separated into three categories:
 
-* **Active** - These tool providers have been approved and configured by an administrator. They can be used from within any
-        course on this Moodle instance. If a consumer key and shared secret are entered, a trust relationship is established
-        between this Moodle instance and the remote tool, providing a secure communication channel.
-* **Pending** - These tool providers came in through a package import, but have not been configured by an administrator.
-        Teachers may still use tools from these providers if they have a consumer key and shared secret, or if none is required.
-* **Rejected** - These tools providers are flagged as ones which an administrator has no intention of making available to the entire
-        Moodle instance. Teachers may still use tools from these providers if they have a consumer key and shared secret, or if none is required.';
+* **Active** - These tool providers have been approved and configured by an administrator. They can be used from within any course on this site. If a consumer key and shared secret are entered, a trust relationship is established between this site and the remote tool, providing a secure communication channel.
+* **Pending** - These tool providers came in through a package import, but have not been configured by an administrator. Teachers may still use tools from these providers if they have a consumer key and shared secret, or if none is required.
+* **Rejected** - These tools providers are flagged as ones which an administrator has no intention of making available on the site. Teachers may still use tools from these providers if they have a consumer key and shared secret, or if none is required.';
 $string['manage_external_tools'] = 'Manage tools';
 $string['manage_tools'] = 'Manage preconfigured tools';
 $string['manage_tool_proxies'] = 'Manage external tool registrations';
@@ -462,9 +456,9 @@ $string['share_roster_help'] = 'Specify whether the tool can access the list of 
 Note that this setting may be overridden in the tool configuration.';
 $string['show_in_course_activity_chooser'] = 'Show in activity chooser and as a preconfigured tool';
 $string['show_in_course_lti1'] = 'Tool configuration usage';
-$string['show_in_course_lti1_help'] = 'This tool may be shown in the activity chooser for a teacher to select to add to a course. Alternatively, it may be shown in the preconfigured tool dropdown menu when adding an external tool to a course. A further option is for the tool configuration to only be used if the exact tool URL is entered when adding an external tool to a course.';
+$string['show_in_course_lti1_help'] = 'This tool may be shown in the activity chooser for a teacher to select to add to a course. Alternatively, it may be shown in the preconfigured tool drop-down menu when adding an external tool to a course. A further option is for the tool configuration to only be used if the exact tool URL is entered when adding an external tool to a course.';
 $string['show_in_course_lti2'] = 'Tool configuration usage';
-$string['show_in_course_lti2_help'] = 'This tool can be shown in the activity chooser for a teacher to select to add to a course or in the preconfigured tool dropdown menu when adding an external tool to a course.';
+$string['show_in_course_lti2_help'] = 'This tool can be shown in the activity chooser for a teacher to select to add to a course or in the preconfigured tool drop-down menu when adding an external tool to a course.';
 $string['show_in_course_no'] = 'Do not show; use only when a matching tool URL is entered';
 $string['show_in_course_preconfigured'] = 'Show as preconfigured tool when adding an external tool';
 $string['size'] = 'Size parameters';
@@ -535,9 +529,10 @@ A base URL of *quiz.tool.com* would match the following:
 If two different tool configurations are for the same domain, the most specific match will be used.
 
 You can also insert a cartridge URL if you have one and the details for the tool will be automatically filled.';
+$string['toolurl_contentitemselectionrequest'] = 'Content Selection URL';
+$string['toolurl_contentitemselectionrequest_help'] = 'The Content Selection URL will be used to launch the content selection page from the tool provider. If it is empty, the Tool URL will be used';
 $string['typename'] = 'Tool name';
-$string['typename_help'] = 'The tool name is used to identify the tool provider within Moodle. The name entered will be visible
-to teachers when adding external tools within courses.';
+$string['typename_help'] = 'The tool name is used to identify the tool provider within Moodle. The name entered will be visible to teachers when adding external tools within courses.';
 $string['types'] = 'Types';
 $string['unabletocreatetooltype'] = 'Unable to create tool';
 $string['unabletofindtooltype'] = 'Unable to find tool for {$a->id}';

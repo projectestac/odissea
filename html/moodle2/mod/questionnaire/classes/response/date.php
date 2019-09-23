@@ -41,17 +41,14 @@ class date extends base {
 
     public function insert_response($rid, $val) {
         global $DB;
-        $checkdateresult = questionnaire_check_date($val);
-        $thisdate = $val;
-        if (substr($checkdateresult, 0, 5) == 'wrong') {
+
+        if (!$this->question->check_date_format($val)) {
             return false;
         }
-        // Now use ISO date formatting.
-        $checkdateresult = questionnaire_check_date($thisdate, true);
         $record = new \stdClass();
         $record->response_id = $rid;
         $record->question_id = $this->question->id;
-        $record->response = $checkdateresult;
+        $record->response = $val;
         return $DB->insert_record(self::response_table(), $record);
     }
 
@@ -73,14 +70,25 @@ class date extends base {
         return $DB->get_records_sql($sql, $params);
     }
 
+    /**
+     * Provide a template for results screen if defined.
+     * @return mixed The template string or false/
+     */
+    public function results_template() {
+        return 'mod_questionnaire/results_date';
+    }
+
+    /**
+     * @param bool $rids
+     * @param string $sort
+     * @param bool $anonymous
+     * @return string
+     * @throws \coding_exception
+     */
     public function display_results($rids=false, $sort='', $anonymous=false) {
-        $output = '';
-        if (is_array($rids)) {
-            $prtotal = 1;
-        } else if (is_int($rids)) {
-            $prtotal = 0;
-        }
+        $numresps = count($rids);
         if ($rows = $this->get_results($rids, $anonymous)) {
+            $numrespondents = count($rows);
             foreach ($rows as $row) {
                 // Count identical answers (case insensitive).
                 $this->text = $row->response;
@@ -91,12 +99,51 @@ class date extends base {
                     $this->counts[$textidx] = !empty($this->counts[$textidx]) ? ($this->counts[$textidx] + 1) : 1;
                 }
             }
-            $output .= \mod_questionnaire\response\display_support::mkreslistdate($this->counts, count($rids),
-                $this->question->precise, $prtotal);
+            $pagetags = $this->get_results_tags($this->counts, $numresps, $numrespondents);
         } else {
-            $output .= '<p class="generaltable">&nbsp;'.get_string('noresponsedata', 'questionnaire').'</p>';
+            $pagetags = new \stdClass();
         }
-        return $output;
+        return $pagetags;
+    }
+
+    /**
+     * Override the results tags function for templates for questions with dates.
+     *
+     * @param $weights
+     * @param $participants Number of questionnaire participants.
+     * @param $respondents Number of question respondents.
+     * @param $showtotals
+     * @param string $sort
+     * @return \stdClass
+     * @throws \coding_exception
+     */
+    public function get_results_tags($weights, $participants, $respondents, $showtotals = 1, $sort = '') {
+        $dateformat = get_string('strfdate', 'questionnaire');
+
+        $pagetags = new \stdClass();
+        if ($respondents == 0) {
+            return $pagetags;
+        }
+
+        if (!empty($weights) && is_array($weights)) {
+            $pagetags->responses = [];
+            $numresps = 0;
+            ksort ($weights); // Sort dates into chronological order.
+            foreach ($weights as $content => $num) {
+                $response = new \stdClass();
+                $response->text = userdate($content, $dateformat, '', false);    // Change timestamp into readable dates.
+                $numresps += $num;
+                $response->total = $num;
+                $pagetags->responses[] = (object)['response' => $response];
+            }
+
+            if ($showtotals == 1) {
+                $pagetags->total = new \stdClass();
+                $pagetags->total->total = "$numresps/$participants";
+            }
+        }
+
+        return $pagetags;
     }
 
     /**
@@ -130,7 +177,7 @@ class date extends base {
                     if (preg_match('/\d\d\d\d-\d\d-\d\d/', $val)) {
                         $dateparts = preg_split('/-/', $val);
                         $val = make_timestamp($dateparts[0], $dateparts[1], $dateparts[2]); // Unix timestamp.
-                        $val = userdate ( $val, $dateformat);
+                        $val = userdate($val, $dateformat);
                         $newrow[] = $val;
                     }
                 }

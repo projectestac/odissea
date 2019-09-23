@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_search_forums', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_search_forums', language 'eu', branch 'MOODLE_36_STABLE'
  *
  * @package   block_search_forums
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsearch'] = 'Bilaketa aurreratua';
 $string['pluginname'] = 'Bilatu foroetan';
-$string['privacy:metadata'] = 'Bilatu foroetan blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
+$string['privacy:metadata'] = 'Bilatu foroetan blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['search_forums:addinstance'] = 'Gehitu beste "bilatu  foroetan" bloke bat';

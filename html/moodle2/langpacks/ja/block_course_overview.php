@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'ja', branch 'MOODLE_34_STABLE'
+ * Strings for component 'block_course_overview', language 'ja', branch 'MOODLE_36_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,7 @@ $string['privacy:metadata:sortorder'] = '並べ替え順です。';
 $string['removefavourite'] = 'お気に入りを削除する';
 $string['reorderfullname'] = 'コースフルネーム';
 $string['reorderid'] = 'コースID';
+$string['reorderiddesc'] = 'コースID説明';
 $string['reordernone'] = 'ドラッグ＆ドロップ並べ替え';
 $string['reordershortname'] = 'コース省略名';
 $string['setmaxcourses'] = '最大コース数を設定する';

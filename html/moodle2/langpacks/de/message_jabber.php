@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_jabber', language 'de', branch 'MOODLE_34_STABLE'
+ * Strings for component 'message_jabber', language 'de', branch 'MOODLE_36_STABLE'
  *
  * @package   message_jabber
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['configjabberhost'] = 'Server für den Versand von Jabber-Mitteilungen';
 $string['configjabberpassword'] = 'Das Kennwort ist für die Verbindung zum Jabber-Server notwendig.';
 $string['configjabberport'] = 'Über diesen Port wird die Verbindung zum Jabber-Server aufgebaut.';
 $string['configjabberserver'] = 'XMPP-Host-ID (leer, wenn dies der gleiche Server wie der Jabber-Server ist)';
-$string['configjabberusername'] = 'Der Anmeldename ist für die Verbindung zum Jabber-Server notwendig.';
+$string['configjabberusername'] = 'Der Anmeldename ist zum Verbinden mit dem Jabber-Server notwendig.';
 $string['jabberhost'] = 'Jabber-Server';
 $string['jabberid'] = 'Jabber-ID';
 $string['jabberpassword'] = 'Jabber-Kennwort';
@@ -39,7 +39,7 @@ $string['jabberusername'] = 'Jabber-Anmeldename';
 $string['notconfigured'] = 'Der Jabber-Server ist nicht konfiguriert, so dass keine Jabber-Mitteilungen gesendet werden können.';
 $string['pluginname'] = 'Jabber';
 $string['privacy:metadata:contexturl'] = 'Die URL der Veranstaltung.';
-$string['privacy:metadata:externalpurpose'] = 'Diese Information wird an einen externen Jabber-Server gesendet und letztlich als Benachrichtigung an den Empfänger versendet.';
+$string['privacy:metadata:externalpurpose'] = 'Diese Information wird an einen externen Jabber-Server gesendet und dann als Benachrichtigung an den Empfänger versendet.';
 $string['privacy:metadata:smallmessage'] = 'Ein Teil der Nachricht.';
 $string['privacy:metadata:userfrom'] = 'Der Sender der Benachrichtigung.';
 $string['privacy:metadata:userto'] = 'Der Empfänger der Benachrichtigung.';
