@@ -3,9 +3,33 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 19.09.25
+---------------------------------------------------------------------------------------
+- Upgraded Moodle from v3.4.8 to v3.6.6
+- Updated language packs
+- Re-added Catalonia to countries list
+- Marsupial: Updated components
+- Improved cache definitions
+- Modified theme XTEC2 for compatibility to Moodle v3.6
+- Upgraded all wiris plugins
+- Upgraded module clickedu
+- Upgraded module geogebra
+- Upgraded module hot potatoes
+- Upgraded module H5P
+- Upgraded module choicegroup
+- Upgraded module journal
+- Upgraded module questionnaire
+- Upgraded block "completion progress"
+- Upgraded question type "ordering"
+- Upgraded question type "wq"
+- Local agora: Removed old message_notifier plugin
+- Local agora: Disallow theme boost
+
+
 Changes 19.07.01
 ---------------------------------------------------------------------------------------
 - Fixed memcached lib
+
 
 Changes 19.04.15
 ---------------------------------------------------------------------------------------
@@ -19,6 +43,7 @@ Changes 19.04.15
 - Updated mod/geogebra
 - Updated mod/jclic
 
+
 Changes 18.11.23
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 3.4.6
@@ -26,12 +51,14 @@ Changes 18.11.23
 - Fix the mod_jclic problem set as the first activity and improve some parts
 - Update auth odissea
 
+
 Changes 18.11.05
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 3.4.5
 - Fix deprecated js functions in rgrade
 - Improve the use of memcached
 - Add recordRTC to atto editor
+
 
 Changes 18.08.13
 ---------------------------------------------------------------------------------------
@@ -46,6 +73,7 @@ Changes 18.08.13
 - Marsupial: Compatibility update for php7 and Moodle 3.4
 - Remove hub configuration
 - Add GLPR support
+
 
 Changes 18.04.20
 ---------------------------------------------------------------------------------------
