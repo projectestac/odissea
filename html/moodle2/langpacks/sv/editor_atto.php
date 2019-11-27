@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['autosavefailed'] = 'Kan inte kontakta servern. Om du klickar Spara/Skicka nu riskerar du att förlora de ändringar du gjort.';
 $string['autosavesucceeded'] = 'Utkast sparat.';
+$string['taskautosavecleanup'] = 'Ta bort gamla utkast som sparats automatiskt';
 $string['textrecovered'] = 'Ett utkast av denna text har återställts automatiskt.';
 $string['warningstatus'] = 'Varning';

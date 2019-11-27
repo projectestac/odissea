@@ -124,8 +124,8 @@ $string['calendar_weekend'] = 'Tage am Wochenende';
 $string['cannotdeletemodfilter'] = 'Der Filter \'{$a->filter}\' kann nicht deinstalliert werden, weil er Teil des Moduls \'{$a->module}\' ist.';
 $string['cannotuninstall'] = '{$a} kann nicht deinstalliert werden.';
 $string['categoryemail'] = 'E-Mail';
-$string['cfgwwwrootslashwarning'] = 'In der Datei config.php ist die Einstellung für $CFG->wwwroot  falsch eingetragen. Das Zeichen \'/\' am Ende muss gelöscht werden, weil es andernfalls Probleme verursachen kann. Siehe <a href=\'http://tracker.moodle.org/browse/MDL-11061\'>MDL-11061</a>.';
-$string['cfgwwwrootwarning'] = 'In der Datei config.php ist die Einstellung für $CFG->wwwroot  falsch eingetragen. Der Text passt nicht zu der URL, mit der die Seite aufgerufen wurde. Eine Änderung ist notwendig, weil es andernfalls zu Problemen kommen kann. Siehe <a href=\'http://tracker.moodle.org/browse/MDL-11061\'>MDL-11061</a>.';
+$string['cfgwwwrootslashwarning'] = 'In der Datei config.php ist die Einstellung für $CFG->wwwroot  falsch eingetragen. Das Zeichen \'/\' am Ende muss gelöscht werden.';
+$string['cfgwwwrootwarning'] = 'In der Datei config.php ist die Einstellung für $CFG->wwwroot  falsch eingetragen. Der Text passt nicht zu der URL, mit der die Seite aufgerufen wurde.';
 $string['change'] = 'Ändern';
 $string['checkboxno'] = 'Nein';
 $string['checkboxyes'] = 'Ja';
@@ -237,7 +237,7 @@ $string['configdebugdisplay'] = 'Wenn diese Option aktiviert ist, werden Fehlerm
 $string['configdebugpageinfo'] = 'Wenn diese Option aktiviert ist, werden Seiteninformationen in der Fußzeile angezeigt.';
 $string['configdebugsmtp'] = 'Umfassende Debug-Mitteilungen zum Versand von E-Mails über den eingestellten SMTP-Server erstellen.';
 $string['configdebugvalidators'] = 'Aktivieren Sie diese Option, um Links zu externen Validierungsservern in der Fußzeile anzuzeigen. Möglicherweise müssen Sie einen neuen Nutzer mit dem Anmeldenamen <em>w3cvalidator</em> erstellen und den Gastzugang freischalten. Diese Änderungen erlauben unauthorisierte Serverzugriffe und sollten nicht auf Produktivsystemen eingeschaltet werden!';
-$string['configdefaulthomepage'] = 'Diese Option legt fest, welche Seite eingeloggte Nutzer/innen als Startseite bekommen.';
+$string['configdefaulthomepage'] = 'Diese Option legt fest, welche Seite eingeloggte Nutzer/innen in der Startseite als ersten Link sehen.';
 $string['configdefaultrequestcategory'] = 'Von Nutzer/innen beantragte Kurse werden automatisch in diesem Kursbereich angelegt.';
 $string['configdefaultrequestedcategory'] = 'Voreingestellter Kursbereich, in dem beantragte Kurse angelegt werden.';
 $string['configdefaultuserroleid'] = 'Angemeldete Nutzer/innen erhalten für die gesamte Website automatisch die hier angegebene Rolle zugewiesen, u.z. zusätzlich zu anderen Rollenzuweisungen. Standardmäßig ist die Rolle "Authentifizierte/r Nutzer/in" eingestellt. Achten Sie darauf, dass Sie mit Ihrer Einstellung keine Konflikte mit anderen Rollen schaffen und dass die Nutzer/innen sinnvolle Dinge tun können, z.B. ihr Nutzerprofil verwalten, den eigenen Kalender verwalten oder Blogeinträge schreiben.';
@@ -450,8 +450,8 @@ $string['courserequestnotifyemail'] = 'Guten Tag,
 der Nutzer {$a->user} hat einen neuen Kurs unter {$a->link} angefordert.
 
 Ihr E-Learning-Team';
-$string['courserequests'] = 'Kursanfragen';
-$string['courserequestspending'] = 'Offene Kursanfragen';
+$string['courserequests'] = 'Kursanträge';
+$string['courserequestspending'] = 'Offene Kursanträge';
 $string['courses'] = 'Kurse';
 $string['coursesperpage'] = 'Kurse pro Seite';
 $string['courseswithsummarieslimit'] = 'Maximale Kursanzahl mit Beschreibung';
@@ -567,7 +567,7 @@ $string['enableactivitychooser'] = 'Aktivitätenauswahl aktivieren';
 $string['enableblogs'] = 'Blogs aktivieren';
 $string['enablecalendarexport'] = 'Kalender-Export aktivieren';
 $string['enablecomments'] = 'Kommentare aktivieren';
-$string['enablecourserequests'] = 'Kursanfragen erlauben';
+$string['enablecourserequests'] = 'Kursanträge erlauben';
 $string['enabled'] = 'Aktiviert';
 $string['enabledevicedetection'] = 'Geräteerkennung';
 $string['enableglobalsearch'] = 'Globale Suche aktivieren';
@@ -702,9 +702,9 @@ $string['ipblocked'] = 'Diese Website ist im Moment nicht verfügbar.';
 $string['ipblocker'] = 'IP-Adressen';
 $string['ipblockersyntax'] = 'Schreiben Sie jeden IP-Eintrag in eine neue Zeile. Gültig sind vollständige IP-Adressen für ein einzelnes Gerät (z.B. <b>192.168.10.1</b>) oder eine teilweise Angabe (z.B. <b>192.168.</b>) für alle IP-Adressen, die mit diesen Zahlen beginnen. Ebenfalls gültig sind IP-Adressbereiche (z.B. <b>192.168.10.20-50</b>) für alle IP-Adressen im Bereich (hier 20 bis 50) oder IP-Adressen in der CIDR-Schreibweise (z.B. <b>231.54.211.0/20</b>). Die Angabe von Domainnamen (z.B. \'beispiel.de\') ist nicht erlaubt. Leere Zeilen und Inhalte nach einem \'#\' Zeichen werden ignoriert.';
 $string['iplookup'] = 'IP-Adressen-Suche';
-$string['iplookupgeoplugin'] = 'Ortsdaten werden aktuell durch den Dienst <a href="http://www.geoplugin.com">geoPlugin</a> bereitgestellt. Bessere Ergebnisse erhalten Sie mit der Ortsdatenbank \'<a href="http://www.maxmind.com">GeoLite City von MaxMind.com</a>\'.';
+$string['iplookupgeoplugin'] = 'Ortsdaten werden aktuell durch den Dienst <a href="http://www.geoplugin.com">geoPlugin</a> bereitgestellt. Bessere Ergebnisse erhalten Sie mit der Ortsdatenbank \'<a href="http://www.maxmind.com">GeoLite  von MaxMind.com</a>\'.';
 $string['iplookupinfo'] = 'Standardmäßig nutzt Moodle zur Lokalisierung von IP-Adressen die Datenbank NetGeo (Internet Geographic Database). Die Datenbank wird nicht gepflegt und liefert leider oft seltsame Daten. Die Installation der freien Datenbank \'MaxMind GeoLite2 City\' wird empfohlen. Die IP-Adressen werden auf einer einfachen Übersichtskarte lokalisiert. Mit einem Googlekonto und einen freien API Key könnten Sie auch interaktive Karten über Google Maps verwenden.';
-$string['iplookupmaxmindnote'] = 'Moodle benutzt zur Darstellung die Ortsdatenbank \'<a href="http://www.maxmind.com">GeoLite2 City MaxMind DB</a>\'.';
+$string['iplookupmaxmindnote'] = 'Moodle benutzt zur Darstellung die Ortsdatenbank \'<a href="http://www.maxmind.com">GeoLite2</a>\'.';
 $string['ishttpswarning'] = 'Ihre Website ist nicht mit HTTPS abgesichert. Es wird dringend empfohlen, die Website auf HTTPS umzuwandeln, um die Sicherheit zu erhöhen und die Integration anderer Systeme zu verbessern.';
 $string['keeptagnamecase'] = 'Schreibweise von Tags beibehalten';
 $string['lang'] = 'Sprache';
@@ -1033,7 +1033,7 @@ $string['proxyuser'] = 'Proxy-Anmeldename';
 $string['purgecaches'] = 'Alle Caches löschen';
 $string['purgecachesconfirm'] = '<p>Zur Leistungsoptimierung werden JavaScripts, Designs, Sprachdateien, gefilterte Texte, RSS Feeds und viele andere Daten in einem Cache zwischengespeichert. </p>
 <p>Wenn Sie den Cache löschen, müssen alle zwischengespeicherten Daten erneuert und im Browser neu geladen werden. Auf diese Weise sehen Sie anschließend wirklich die aktuellen Werte und Darstellungen. Beim Löschen des Caches gehen keine Daten verloren, aber die Website könnte anfangs wesentlich langsamer reagieren.</p>';
-$string['purgecachesfinished'] = 'Cache wurde gelöscht';
+$string['purgecachesfinished'] = 'Caches wurden gelöscht.';
 $string['purgecachesnoneselected'] = 'Einen oder mehr Caches zum Löschen auswählen';
 $string['purgecachespage'] = 'Caches löschen';
 $string['purgefiltercache'] = 'Textfilter';
@@ -1058,7 +1058,7 @@ $string['quizattemptsupgradedmessage'] = 'In Moodle 2.1 gab es eine umfangreiche
 $string['recaptchaprivatekey'] = 'ReCaptcha: Secret  Key';
 $string['recaptchapublickey'] = 'ReCaptcha: Site Key';
 $string['register'] = 'Website registrieren';
-$string['registermoodlenet'] = '<p>Wir möchten gerne mit Ihnen in Kontakt bleiben und Sie mit wichtigen Dingen für Ihre Plattform unterstützen!</p><p>Nach der Registrierung Ihrer Website</p> <ul>
+$string['registermoodlenet'] = '<p>Wir möchten gerne mit Ihnen in Kontakt bleiben und Sie mit wichtigen Dingen für Ihre Plattform unterstützen!</p><p>Nach der Registrierung Ihrer Website können Sie verschiedene Benachrichtigungen aktivieren </p> <ul>
 <li>informieren wir Sie über Sicherheitswarnungen und neue Moodle-Releases.</li>
 <li>können Sie mobile Push-Mitteilungen von Ihrer Website über unsere kostenlose App <a href="https://download.moodle.org/mobile/">Moodle Mobile</a> empfangen.</li>
 <li>tragen Sie zu unserer weltweiten <a href="https://moodle.net/stats/">Moodle-Statistik</a> bei, die uns hilft, Moodle und unsere Community zu verbessern.</li>
@@ -1080,11 +1080,7 @@ $string['rememberusername'] = 'Anmeldenamen merken';
 $string['rememberusername_desc'] = 'Aktivieren Sie diese Option, wenn Sie für das Login den Anmeldenamen in einem Cookie speichern möchten. Cookies könnten als Datenschutzrisiko betrachtet werden, wenn man sie ohne Information verwendet.';
 $string['reportsmanage'] = 'Berichte verwalten';
 $string['requestcategoryselection'] = 'Kategorieauswahl aktivieren';
-$string['requiredentrieschanged'] = '<strong>WICHTIG - UNBEDINGT LESEN<br />Die Warnung wird ausschließlich bei dieser Aktualisierung gezeigt!</strong><br />
-Infolge einer Fehlerkorrektur wird sich das Verhalten von Datenbankaktivitäten ändern, die die Einstellungen \'Required entries\' und \'Required entries before viewing settings\' nutzen.
-
-Weitere Erklärungen entnehmen Sie bitte hier <a href="http://moodle.org/mod/forum/discuss.php?d=110928" target="_blank">the database module forum</a>. Zusätzliche Informationen zum beabsichtigten Verhalten: <a href="http://docs.moodle.org/en/Adding/editing_a_database#Required_entries" target="_blank">Moodle Docs</a>.
-<br/><br/>Diese Änderung betrifft die folgenden Datenbanken in Ihrem System . Bitte sichern Sie die nachfolgende Liste und prüfen Sie nach der Aktualisierung, ob alle Aktivitäten noch wie beabsichtigt funktionieren.<br/><strong>{$a->text}</strong><br/>';
+$string['requiredentrieschanged'] = 'Hinweis: Nach dem Upgrade wird die Funktion \'Erforderliche Einträge vor Zugriff\' nun erzwungen für die folgenden Datenbankeinträge:<br/>{$a->text}<br/>';
 $string['requiremodintro'] = 'Beschreibung notwendig';
 $string['requiremodintro_desc'] = 'Diese Option legt fest, dass für jede Aktivität eine Beschreibung angegeben werden muss.';
 $string['requires'] = 'Erfordernisse';
@@ -1257,8 +1253,8 @@ $string['taskregistrationcron'] = 'Website-Registrierung';
 $string['tasksendfailedloginnotifications'] = 'Systemnachricht zu fehlgeschlagenen Anmeldeversuchen senden';
 $string['tasksendnewuserpasswords'] = 'Neues Nutzerkennwort senden';
 $string['tasksessioncleanup'] = 'Alte Sessions bereinigen';
-$string['taskstatscron'] = 'Hintergrundverarbeitung für Statistiken';
-$string['tasktagcron'] = 'Hintergrundverarbeitung für Tags';
+$string['taskstatscron'] = 'Hintergrundprozess für Statistiken';
+$string['tasktagcron'] = 'Hintergrundprozess für Tags';
 $string['tasktempfilecleanup'] = 'Veraltete temporäre Dateien löschen';
 $string['tempdatafoldercleanup'] = 'Temporäre Dateien löschen, wenn älter als';
 $string['testsiteupgradewarning'] = 'Sie verwenden derzeit die Testseite {$a}. Um ein korrektes Upgrade durchzuführen, verwenden SIe die Befehlszeile.';
@@ -1304,6 +1300,7 @@ $string['unsupportedphpversion7'] = 'PHP 7 wird nicht unterstützt.';
 $string['unsupportedphpversion71'] = 'PHP 7.1 wird nicht unterstützt.';
 $string['unsupportedphpversion72'] = 'Die PHP Version 7.2 wird nicht unterstützt.';
 $string['unsupportedphpversion73'] = 'PHP-Version 7.3 wird nicht unterstützt';
+$string['unsupportedphpversion74'] = 'Die PHP-Version 7.4 wird nicht unterstützt.';
 $string['unsuspenduser'] = 'Nutzerkonto aktivieren';
 $string['updateaccounts'] = 'Update bestehender Accounts';
 $string['updateautocheck'] = 'Aktualisierungen prüfen';

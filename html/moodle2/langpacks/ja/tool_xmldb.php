@@ -42,7 +42,7 @@ $string['checkindexes'] = 'インデックスをチェックする';
 $string['check_indexes'] = '不明なDBインデックスを探す';
 $string['checkoraclesemantics'] = 'セマンティクスをチェックする';
 $string['check_oracle_semantics'] = '正しくない長さのセマンティクスを探す';
-$string['completelogbelow'] = '(検索結果に関する下記の完全なログをご覧ください。)';
+$string['completelogbelow'] = '(検索結果に関する以下の完全なログをご覧ください。)';
 $string['confirmcheckbigints'] = 'この機能はあなたのMoodleサーバで<a href="https://tracker.moodle.org/browse/MDL-11038">潜在的に不正なインテジャフィールド</a>を調査しDB内のインテジャを適切に定義するためのSQL文を自動的に生成します (実行ではありません!)。
 
 SQL文の生成後、あなたはSQL文をコピーして自分の好きなSQLインターフェースで安全に実行することができます (実行前にあなたのデータを忘れずにバックアップしてください)。
@@ -174,7 +174,7 @@ $string['pendingchangescannotbesaved'] = 'このファイルに変更が加え�
 $string['pendingchangescannotbesavedreload'] = 'このファイルに変更が加えられましたが、保存できませんでした! ディレクトリおよび「install.xml」にウェブサーバからの書込み権があるかどうか確認してください。確認後、このページをリロードすることで、あなたは変更を保存することができます。';
 $string['pluginname'] = 'XMLDBエディタ';
 $string['primarykeyonlyallownotnullfields'] = '主キーをNullにすることはできません。';
-$string['privacy:metadata'] = 'XMLDBエディタプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'XMLDBエディタプラグインはいかなる個人データも保存しません。';
 $string['reserved'] = '予約済み';
 $string['reservedwords'] = '予約語';
 $string['revert'] = '元に戻す';

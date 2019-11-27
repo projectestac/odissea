@@ -47,7 +47,7 @@ $string['editfeeds'] = 'Bewerk, schrijf je in of uit RSS/Atom nieuws-feeds';
 $string['editnewsfeeds'] = 'Bewerk nieuwe RSS-feeds';
 $string['editrssblock'] = 'Bewerk RSS-hoofdpuntenblok';
 $string['enableautodiscovery'] = 'Automatisch vinden van feeds inschakelen?';
-$string['enableautodiscovery_help'] = 'Indien ingeschakeld, worden feeds automatisch gevonden op webpagina\'s. Bijvoorbeeld als je http://docs.moodle.org ingeeft, dan zou http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss gevonden worden.';
+$string['enableautodiscovery_help'] = 'Indien ingeschakeld, worden feeds automatisch gevonden op webpagina\'s. Bijvoorbeeld als je https://docs.moodle.org ingeeft, dan zou https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss gevonden worden.';
 $string['failedfeed'] = 'Dowloaden feed mislukt - er wordt opnieuw geprobeerd na {$a}';
 $string['failedfeeds'] = 'Eén of meer RSS-feeds mislukt';
 $string['feed'] = 'Nieuws-feed';

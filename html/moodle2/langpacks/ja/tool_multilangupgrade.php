@@ -29,4 +29,4 @@ $string['multilangupgradeinfo'] = '<p>multilangフィルタシンタックスは
 <p>例: <span lang="en" class="multilang">Hello!</span><span lang="es" class="multilang">Hola!</span></p>
 <p> 既存のすべてのテキストに関するシンタックスをアップグレードしてもよろしいですか?</p>';
 $string['pluginname'] = '複数言語アップグレード';
-$string['privacy:metadata'] = '複数言語アップグレードプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '複数言語アップグレードプラグインはいかなる個人データも保存しません。';

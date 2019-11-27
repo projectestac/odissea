@@ -708,6 +708,8 @@ $string['modchooserdefault'] = 'Aktivitetsväljaren standard';
 $string['modeditdefaults'] = 'Standardvärden för inställningar för aktiviteter';
 $string['modsettings'] = 'Administrera aktiviteter';
 $string['modulesecurity'] = 'Säkerhet för modul';
+$string['moodleapp_help'] = '<p>Om du har ett konto på en Moodle-sajt kan du komma åt dina kurser från dina mobila enheter med vår kostnadsfria mobilapp för Moodle.</p>
+<a href="https://moodle.com/mobile-app">Hämta Moodle-appen</a>';
 $string['moodleorghubname'] = 'Moodle.net';
 $string['multilangforceold'] = 'Tvinga fram den gamla syntaxen för flerspråkigt innehåll <span> utan  class="multilang" och <lang>';
 $string['mustenablestats'] = 'Statistik har ännu inte aktiverats för den här webbplatsen.';

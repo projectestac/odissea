@@ -57,7 +57,7 @@ $string['basiclti_base_string'] = 'LTI OAuth-en oinarrizko katea';
 $string['basiclti_endpoint'] = 'LTI abiarazteko amaiera-puntua';
 $string['basicltifieldset'] = 'Eremu-multzo pertsonalizatuaren adibidea';
 $string['basiclti_in_new_window'] = 'Zure jarduera leiho berrian zabaldu da';
-$string['basiclti_in_new_window_open'] = 'Zabaldu leiho berrian';
+$string['basiclti_in_new_window_open'] = 'Ireki leiho berrian';
 $string['basicltiintro'] = 'Jardueraren deskribapena';
 $string['basicltiname'] = 'Jardueraren izena';
 $string['basiclti_parameters'] = 'LTI hasierako parametroak';
@@ -79,7 +79,7 @@ $string['configresourceurl'] = 'Baliabideen lehenetsitako URLa';
 $string['configtoolurl'] = 'Urrutiko tresnan lehenetsitako URLa';
 $string['configtypes'] = 'Gaitu LTI aplikazioak';
 $string['configured'] = 'Konfiguratua';
-$string['confirmtoolactivation'] = 'Ziur al zaude tresna hau aktibatu nahi duzula?';
+$string['confirmtoolactivation'] = 'Ziur zaude tresna hau aktibatu nahi duzula?';
 $string['contentitem'] = 'Eduki-Item Mezua';
 $string['contentitem_help'] = 'Hautatuz gero, \'Aukeratu edukia\' aukera eskuragarri izango da kanpoko tresna bat gehitzean.';
 $string['courseactivitiesorresources'] = 'Ikastaroko jarduerak edo baliabideak';
@@ -89,7 +89,7 @@ $string['courselink'] = 'Joan ikastarora';
 $string['coursemisconf'] = 'Ikastaroa gaizki konfiguratuta dago';
 $string['course_tool_types'] = 'Ikastaroko tresnak';
 $string['createdon'] = 'Noiz sortua:';
-$string['curllibrarymissing'] = 'PHP Curl luzapena beharrezkoa da kanpoko tresnarako.';
+$string['curllibrarymissing'] = 'PHP cURL hedapena beharrezkoa da kanpoko tresnarako.';
 $string['custom'] = 'Parametro pertsonalizatuak';
 $string['custom_config'] = 'Pertsonalizatutko ezarpen-tresna erabiltzen.';
 $string['custom_help'] = 'Tresna-hornitzaileek beren ezarpenen artean parametro pertsonalizatuak erabiltzen dituzte. Adibidez, parametro pertsonalizatu bat erabil daiteke hornitzailearen baliabide zehatz bat erakusteko. Parametroak lerro banatan sartuko dira "name=value" formatua erabiliz; esaterako, "chapter=3".
@@ -111,7 +111,7 @@ Nabigatzailearen arabera, fitxa edo leiho berria batean irekiko da.
 Baliteke nabigatzaileak leiho berria irekiera eragoztea.';
 $string['delegate'] = 'Utzi irakaslearen esku';
 $string['delete'] = 'Ezabatu';
-$string['delete_confirmation'] = 'Ziur al zaude aurretik konfiguratutako tresna ezabatu nahi duzula?';
+$string['delete_confirmation'] = 'Ziur zaude aurretik konfiguratutako tresna ezabatu nahi duzula?';
 $string['deletetype'] = 'Ezabatu aurretik konfiguratutako tresna';
 $string['display_description'] = 'Erakutsi jardueraren deskribapena hastean';
 $string['display_description_help'] = 'Aukeratuz gero, goian zehaztutako jardueraren deskribapena tresna-hornitzailearen edukiaren gainean erakutsiko da.
@@ -134,9 +134,9 @@ $string['editdescription'] = 'Egin klik hemen tresna deskribatzeko';
 $string['edittype'] = 'Editatu aurretik konfiguratutako tresna';
 $string['embed'] = 'Enbotatu';
 $string['embed_no_blocks'] = 'Enbotatu, blokerik gabe';
-$string['enableemailnotification'] = 'Bidali jakinarazteko e-postak';
-$string['enableemailnotification_help'] = 'Gaituz gero, ikasleek e-posta bidezko jakinarazpena jasoko dute bidalketak kalifikatzen direnean.';
-$string['enterkeyandsecret'] = 'Sartu kontsumitzaile-gakoa eta partekatutako sekretua';
+$string['enableemailnotification'] = 'Bidali jakinarazpenak posta elektroniko bidez';
+$string['enableemailnotification_help'] = 'Gaituz gero, ikasleek posta elektroniko bidezko jakinarazpena jasoko dute bidalketak kalifikatzen direnean.';
+$string['enterkeyandsecret'] = 'Idatzi kontsumitzaile-gakoa eta partekatutako sekretua';
 $string['enterkeyandsecret_help'] = 'Kontsumiltzaile-gakoa edo/eta partekatutako sekretua eman bazaizu, sartu hemen';
 $string['errorbadurl'] = 'URLa ez da tresna edo kartutxo baliagarria';
 $string['errorincorrectconsumerkey'] = 'Kontsumitzaile-gakoa ez da egokia.';
@@ -168,7 +168,7 @@ $string['filterconfig'] = 'LTIren kudeaketa';
 $string['filtername'] = 'LTI';
 $string['fixexistingconf'] = 'Erabili dagoeneko existitzen den ezarpena gaizki konfiguratutako instantziarako';
 $string['fixnew'] = 'Ezarpen berriak';
-$string['fixnewconf'] = 'Ezarri ezerpen berria gaizki konfiguratutako instantziarako';
+$string['fixnewconf'] = 'Zehaztu ezarpen berria gaizki konfiguratutako instantziarako';
 $string['fixold'] = 'Erabili existitzen dena';
 $string['forced_help'] = 'Ezarpen hau ikastaro edo  gunearen mailan konfiguratu da. Litekeena da interfaz honetatik ezin aldatzea.';
 $string['force_ssl'] = 'Behartu SSL';
@@ -224,12 +224,12 @@ $string['lti_launch_error_unsigned_help'] = '<p>Errore hau tresna-hornitzaileare
 $string['lti:manage'] = 'Irakaslea izan erreminta abiarazten denean';
 $string['lti:requesttooladd'] = 'Tresnaren eskaera gune osorako ezarri da';
 $string['ltisettings'] = 'LTIren ezarpenak';
-$string['lti_tool_request_added'] = 'Tresna-ezarpenaren eskaera arrakastaz bidali da. Tresnaren ezarpenekin bukatzeko kudeatzaile batekin harremanetan jarri beharko zenuke.';
+$string['lti_tool_request_added'] = 'Tresna-ezarpenaren eskaera ondo bidali da. Tresnaren ezarpenekin bukatzeko kudeatzaile batekin harremanetan jarri beharko zenuke.';
 $string['lti_tool_request_existing'] = 'Tresnaren domeinurako tresna-ezarpena dagoeneko bidali da.';
 $string['ltiunknownserviceapicall'] = 'LTI zerbitzu ezezagun baten API deia';
 $string['lti:view'] = 'Abiarazi kanpoko tresnaren jarduerak';
 $string['main_admin'] = 'Laguntza orokorra';
-$string['main_admin_help'] = 'Kanpoko tresnek Moodle-erabiltzaileek urruneko ikasketa-baliabideekin eragitea ahalbidetzen dute. Abio-protokolo berezi batez, urruneko tresnak abiatzen duen erabiltzailearen informazio orokorrera sarbidea du. Adibidez, erakundearen izena, ikastaroaren IDa, eta erabiltzaile-izen edo e-postaren helbidea bezalako informazioa.
+$string['main_admin_help'] = 'Kanpoko tresnek Moodle-erabiltzaileek urruneko ikasketa-baliabideekin eragitea ahalbidetzen dute. Abio-protokolo berezi batez, urruneko tresnak abiatzen duen erabiltzailearen informazio orokorrera sarbidea du. Adibidez, erakundearen izena, ikastaroaren IDa, eta erabiltzaile-izen edo helbide elektronikoa bezalako informazioa.
 
 Orri honetan zerrendatutako tresnak hiru kategoriatan banatzen dira:
 
@@ -316,7 +316,7 @@ $string['privacy:metadata:courseid'] = 'LTI kontsumitzailera sartzen ari den era
 $string['privacy:metadata:courseidnumber'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen jatorrizko ikastaroaren ID zenbakia';
 $string['privacy:metadata:courseshortname'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen jatorrizko ikastaroaren izen laburra';
 $string['privacy:metadata:createdby'] = 'Erregistroa sortu zuen erabiltzailea';
-$string['privacy:metadata:email'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen e-posta helbidea';
+$string['privacy:metadata:email'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen helbide elektronikoa';
 $string['privacy:metadata:externalpurpose'] = 'LTI kontsumitzaileak LTI tresna-hornitzaileari erabiltzailearen eta testuinguruaren informazioa ematen dio.';
 $string['privacy:metadata:firstname'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen izena';
 $string['privacy:metadata:fullname'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen izen osoa';
@@ -344,7 +344,7 @@ $string['register'] = 'Erregistratu';
 $string['registertype'] = 'Konfiguratu kanpoko tresna berri baten erregistroa.';
 $string['register_warning'] = 'Erregistro-orria irekitzea luzeegi irauten ari dela dirudi. Erakusten ez bada, baieztatu konfigurazioan URL egokia sartu duzula. Moodle-k https erabiltzen badu, ziurtatu konfiguratzen ari zaren tresnak https onartzen duen eta URLan https erabiltzen ari zaren.';
 $string['registrationname'] = 'Tresna-hornitzailearen izena';
-$string['registrationname_help'] = 'Sartu erregistratzen ari den tresnaren hornitzailearen izena.';
+$string['registrationname_help'] = 'Idatzi erregistratzen ari den tresnaren hornitzailearen izena.';
 $string['registration_options'] = 'Erregistrorako aukerak';
 $string['registrationurl'] = 'Erregistrorako URLa';
 $string['registrationurl_help'] = 'Tresna-hornitzaileak erregistroko URLa eskuragai izan beharko luke erregistro-eskaerak bidali beharreko kokapen gisa.';
@@ -383,12 +383,13 @@ $string['send'] = 'Bidali';
 $string['services'] = 'Zerbitzuak';
 $string['services_help'] = 'Aukeratu tresna-hornitzaileari eskaini nahi dizkiozun zerbitzuak. Zerbitzu bat baino gehiago aukera daiteke.';
 $string['setupoptions'] = 'Ezarpen-aukerak';
-$string['share_email'] = 'Partekatu erabiltzailearen e-posta tresnarekin';
-$string['share_email_admin'] = 'Partekatu erabiltzailearen e-posta tresnarekin';
-$string['share_email_admin_help'] = 'Zehaztu tresna abiarazten ari den erabiltzailearen e-posta helbidea tresna-hornitzailearekin partekatuko den.
-Tresna-hornitzaileak abiarazten dutenen e-posta helbideak eska ditzake UIn izen bera duten erabiltzaileak bereiztearren, edo tresnaren elkarrekintzaren araberako mezuak erabiltzaileei bidaltzearren.';
-$string['share_email_help'] = 'Zehaztu tresna abiarazten ari den erabiltzailearen e-posta helbidea tresna-hornitzailearekin partekatuko den.
-Tresna-hornitzaileak abiarazten dutenen e-posta helbideak eska ditzake UIn izen bera duten erabiltzaileak bereiztearren, edo tresnaren elkarrekintzaren araberako mezuak erabiltzaileei bidaltzearren.
+$string['share_email'] = 'Partekatu erabiltzailearen helbide elektronikoa tresnarekin';
+$string['share_email_admin'] = 'Partekatu erabiltzailearen helbide elektronikoa tresnarekin';
+$string['share_email_admin_help'] = 'Zehaztu tresna abiarazten ari den erabiltzailearen helbide elektronikoa tresna-hornitzailearekin partekatuko den.
+Tresna-hornitzaileak abiarazten dutenen helbide elektronikoak eska ditzake UIn izen bera duten erabiltzaileak bereiztearren, edo tresnaren elkarrekintzaren araberako e-mailak erabiltzaileei bidaltzearren.';
+$string['share_email_help'] = 'Zehaztu tresna abiarazten ari den erabiltzailearen helbide elektronikoa tresna-hornitzailearekin partekatuko den.
+
+Tresna-hornitzaileak abiarazten dutenen helbide elektronikoak eska ditzake UIn izen bera duten erabiltzaileak bereiztearren, edo tresnaren elkarrekintzaren araberako mezuak erabiltzaileei bidaltzearren.
 
 Ohar zaitez tresnaren konfigurazioan ezarpen hau gainidatz daitekeela.';
 $string['share_name'] = 'Partekatu erabiltzailearen izena tresnarekin';
@@ -424,7 +425,7 @@ $string['subplugintype_ltiservice_plural'] = 'LTI zerbitzuak';
 $string['subplugintype_ltisource'] = 'LTIren iturburua';
 $string['subplugintype_ltisource_plural'] = 'LTIren iturburuak';
 $string['successfullycreatedtooltype'] = 'Ondo sortu da tresna!';
-$string['successfullyfetchedtoolconfigurationfromcontent'] = 'Aukeratutako edukitik tresnaren konfigurazioa arrakastaz pasa da.';
+$string['successfullyfetchedtoolconfigurationfromcontent'] = 'Aukeratutako edukitik tresnaren konfigurazioa ondo pasa da.';
 $string['toggle_debug_data'] = 'Trukatu arazketaren informazioa';
 $string['tool_config_not_found'] = 'Ez da aurkitu URL honetarako tresna-konfiguraziorik.';
 $string['tooldescription'] = 'Tresnaren deskribapena';
@@ -439,7 +440,7 @@ $string['toolproxy_help'] = 'Kanpoko tresnen erregistroak Moodle guneko kudeatza
 Orri honetan zerrendatutako tresnen erregistroak lau kategoriatan banatzen dira:
 
 * **Konfiguratuak** - Tresna hauen erregistroak instalatu dira, baina erregistro-prozesua ez da oraindik hasi.
-* **Zain** - Tresna hauetarako erregistro-prozesua hasi da, baina ez da oraindik bukatu. Ireki eta gorde ezarpenak berriro \'Konfiguratuak\' kategoriara mugitzeko.
+* **Zain** - Tresna hauetarako erregistro-prozesua hasi da, baina ez da oraindik amaitu. Ireki eta gorde ezarpenak berriro \'Konfiguratuak\' kategoriara mugitzeko.
 * **Onartuak** - Tresna hauen erregistroak onartu dira. Proxy-tresnan zehaztutako baliabideak aurrez konfiguratutako tresnen orrian \'Zain\' egoeran azalduko dira.
 * **Gaitzetsiak** - Tresna hauen erregistroak prozesuan gaitzetsi zirenak dira. Ireki eta gorde ezarpenak berriro \'Konfiguratuak\' kategoriara mugitzeko, erregistro-prozesua berrabiaraz dadin.';
 $string['toolproxyregistration'] = 'Kanpoko tresnen erregistroa';

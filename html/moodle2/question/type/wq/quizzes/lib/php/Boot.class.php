@@ -246,7 +246,7 @@ function _hx_mod($x, $y) {
 	}
 	if (!is_nan($x) && !is_nan($y) && !is_finite($y) && is_finite($x)) {
 		return $x;
-	} 
+	}
 	return fmod($x, $y);
 }
 
@@ -576,12 +576,12 @@ function _hx_string_rec($o, $s) {
 		}
 	}
 	if(is_string($o)) {
-		if(_hx_is_lambda($o)) return '«function»';
+		if(_hx_is_lambda($o)) return '»function»';
 //		if(strlen($s) > 0)    return '"' . str_replace('"', '\"', $o) . '"';
 		else                  return $o;
 	}
 	if(is_array($o)) {
-		if(is_callable($o)) return '«function»';
+		if(is_callable($o)) return '»function»';
 		$str = '[';
 		$s .= "	";
 		$first = true;
@@ -662,7 +662,7 @@ class _hx_anonymous extends stdClass {
 		$b = '{ ';
 		$properties = $rfl->getProperties();
 		$first = true;
-		while(list(, $prop) = each($properties)) {
+		foreach ($properties as $prop) {
 			if($first)
 				$first = false;
 			else

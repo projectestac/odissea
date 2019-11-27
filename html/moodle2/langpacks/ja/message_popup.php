@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'ウェブ';
-$string['privacy:metadata'] = 'メッセージングウェブプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'メッセージングウェブプラグインはいかなる個人データも保存しません。';

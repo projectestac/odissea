@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Formats de sortie HTML';
+$string['privacy:metadata'] = 'Le plugin Formats de sortie HTML n\'enregistre aucune donnée personnelle.';

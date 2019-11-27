@@ -103,6 +103,7 @@ $string['members/'] = 'Members';
 $string['members/max'] = 'Members / Capacity';
 $string['modulename'] = 'Group choice';
 $string['modulename_help'] = 'The Group Choice module allows students to enrol themselves in a group within a course. The teacher can select which groups students can choose from and the maximum number of students allowed in each group.';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Group choices';
 $string['moveselectedusersto'] = 'Move selected users to...';
 $string['multipleenrollmentspossible'] = 'Allow enrollment to multiple groups';

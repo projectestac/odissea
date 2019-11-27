@@ -47,7 +47,7 @@ $string['editfeeds'] = 'Επεξεργασία, εγγραφή ή απεγγρα
 $string['editnewsfeeds'] = 'Επεξεργασία τροφοδοσιών RSS ειδήσεων';
 $string['editrssblock'] = 'Επεξεργασία μπλοκ τίτλων τροφοδοσίας RSS';
 $string['enableautodiscovery'] = 'Ενεργοποίηση αυτόματης αναζήτησης τροφοδοσιών RSS;';
-$string['enableautodiscovery_help'] = 'Αν ενεργοποιηθεί, οι τροφοδοσίες RSS στις ιστοσελίδες βρίσκονται αυτόματα. Για παράδειγμα, αν εισαχθεί το https://docs.moodle.org, τότε  θα βρεθεί το https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss.';
+$string['enableautodiscovery_help'] = 'Αν ενεργοποιηθεί, οι τροφοδοσίες RSS στις ιστοσελίδες βρίσκονται αυτόματα. Για παράδειγμα, αν εισαχθεί το https://docs.moodle.org, τότε θα βρεθεί το https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss.';
 $string['failedfeed'] = 'Η τροφοδοσία απέτυχε στη λήψη - προσπάθεια ξανά μετά από {$a}';
 $string['failedfeeds'] = 'Μία ή περισσότερες τροφοδοσίες RSS απέτυχαν';
 $string['feed'] = 'Τροφοδοσία RSS';

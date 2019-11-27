@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'XML評定がエクスポートされました。';
 $string['pluginname'] = 'XMLファイル';
-$string['privacy:metadata'] = 'XMLファイル評定エクスポートプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'XMLファイル評定エクスポートプラグインはいかなる個人データも保存しません。';
 $string['xml:publish'] = 'XML評定エクスポートを公開する';
 $string['xml:view'] = 'XML評定エクスポートを使用する';

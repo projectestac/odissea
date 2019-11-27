@@ -44,12 +44,12 @@ $string['check_displayerrors_details'] = '<p>Ez da gomendatzen <code>display_err
 $string['check_displayerrors_error'] = 'Erroreak erakusteko PHP ezarpena gaituta dago. Desgaituta egotea gomendatzen da.';
 $string['check_displayerrors_name'] = 'PHP erroreak erakustea';
 $string['check_displayerrors_ok'] = 'PHP erroreak erakustea desgaituta.';
-$string['check_emailchangeconfirmation_details'] = '<p>Erabiltzaile batek bere profileko e-posta helbidea aldatzen duenean e-posta helbidea baieztatzeko urratsa behartzea gomendatzen da. Desgaituz gero, spam-igorleek aukera hori baliatu dezakete zerbitzaria SPAMa bidaltzen saiatzeko.</p>
-<p>Beste aukera bat e-posta helbidearen eremua autentifikazio-pluginetan blokeatzea da, baina aukera hori hemen ez da kontuan hartzen.</p>';
-$string['check_emailchangeconfirmation_error'] = 'Erabiltzaileek edozein posta-helbide sar dezakete.';
-$string['check_emailchangeconfirmation_info'] = 'Erabiltzaileek baimendutako domeinuetako posta-helbideak sar ditzakete.';
-$string['check_emailchangeconfirmation_name'] = 'E-posta helbidearen aldaketaren baieztatzea';
-$string['check_emailchangeconfirmation_ok'] = 'E-postaren helbidearen aldaketaren baieztatzea erabiltzaile-profilean';
+$string['check_emailchangeconfirmation_details'] = '<p>Erabiltzaile batek bere profileko helbide elektronikoa aldatzen duenean helbide elektronikoa baieztatzeko urratsa behartzea gomendatzen da. Desgaituz gero, spam-igorleek aukera hori baliatu dezakete zerbitzaria SPAMa bidaltzen saiatzeko.</p>
+<p>Beste aukera bat helbide elektronikoaren eremua autentifikazio-pluginetan blokeatzea da, baina aukera hori hemen ez da kontuan hartzen.</p>';
+$string['check_emailchangeconfirmation_error'] = 'Erabiltzaileek edozein helbide elektroniko sar dezakete.';
+$string['check_emailchangeconfirmation_info'] = 'Erabiltzaileek baimendutako domeinuetako helbide elektronikoak sar ditzakete.';
+$string['check_emailchangeconfirmation_name'] = 'Helbide elektronikoaren aldaketaren baieztatzea';
+$string['check_emailchangeconfirmation_ok'] = 'Helbide elektronikoaren aldaketaren baieztatzea erabiltzaile-profilean';
 $string['check_embed_details'] = '<p>Objektuak mugarik gabe enbotatzeko aukera oso arriskutsua da - erregistratutako edozein erabiltzailek XSS eraso bat burutu dezake. Ezarpen hau desgaitu beharko litzateke lanean dauden guneetan.</p>';
 $string['check_embed_error'] = 'Objektuak mugarik gabe enbotatzeko aukera gaituta dago - hau oso arriskutsua izan daiteke zerbitzari gehienetan.';
 $string['check_embed_name'] = 'Baimendu EMBED eta OBJECT';

@@ -51,5 +51,5 @@ $string['modulename_help'] = 'ラベルモジュールではテキストおよ�
 $string['modulenameplural'] = 'ラベル';
 $string['pluginadministration'] = 'ラベル管理';
 $string['pluginname'] = 'ラベル';
-$string['privacy:metadata'] = 'ラベルリソースプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ラベルリソースプラグインはいかなる個人データも保存しません。';
 $string['search:activity'] = 'ラベル';

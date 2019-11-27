@@ -60,12 +60,12 @@ $string['uploadpicture_usernotfound'] = '\'{$a->uservalue}\'-n \'{$a->userfield}
 $string['uploadpicture_userskipped'] = '{$a} erabiltzailea alde batera utzi da (dagoeneko badu irudia).';
 $string['uploadpicture_userupdated'] = '{$a} erabiltzailearen irudia eguneratu da.';
 $string['uploadusers'] = 'Igo erabiltzaileak';
-$string['uploadusers_help'] = 'Erabiltzaileak testu-fitxategi bidez egunera (eta aukeran ikastaroetan matrikulatu) daitezke. Fitxategiak hurrengo formatua izan behar du:
+$string['uploadusers_help'] = 'Erabiltzaileak testu-fitxategi bidez igo (eta aukeran ikastaroetan matrikulatu) daitezke. Fitxategiak hurrengo formatua izan behar du:
 
 * Fitxategiko errenkada bakoitzak erregistro bat du
 * Erregistro bakoitza komaz (edo bestelako bereizleak) banatutako datu-multzo bat da
-* Fitxategiko lehen erregistroak fitxategiaren formatua definitzen duten eremuen zerrenda du.
-* Derrigorrezko eremuen izenak: \'username\' (erabiltzaile-izena), \'password\' (pasahitza), \'firstname\' (izena), \'lastname\' (abizena) eta \'email\' (e-posta helbidea)';
+* Fitxategiko lehen errenkadak fitxategiaren formatua definitzen duten eremuen zerrenda du.
+* Derrigorrezko eremuen izenak: \'username\' (erabiltzaile-izena), \'firstname\' (izena), \'lastname\' (abizena) eta \'email\' (helbide elektronikoa)';
 $string['uploaduserspreview'] = 'Igotako erabiltzaileen aurrebista';
 $string['uploadusersresult'] = 'Igotako erabiltzaileen emaitzak';
 $string['uploaduser:uploaduserpictures'] = 'Igo erabiltzailearen irudiak';
@@ -87,7 +87,7 @@ $string['uucsvline'] = 'CSV lerroa';
 $string['uulegacy1role'] = '(Jatorrizko Ikaslea) N=1 mota';
 $string['uulegacy2role'] = '(Jatorrizko Irakaslea) N=2 mota';
 $string['uulegacy3role'] = '(Jatorrizko edizio-baimenik gabeko Irakaslea) N=3 mota';
-$string['uunoemailduplicates'] = 'Saihestu e-posta helbideak bikoiztea';
+$string['uunoemailduplicates'] = 'Galarazi helbide elektronikoak bikoiztea';
 $string['uuoptype'] = 'Igotze-mota';
 $string['uuoptype_addinc'] = 'Gehitu guztia, eta gehitu kontagailua erabiltzaile-izenari beharrezko balitz.';
 $string['uuoptype_addnew'] = 'Gehitu berriak soilik, albo batera utzi lehendik dauden erabiltzaileak';

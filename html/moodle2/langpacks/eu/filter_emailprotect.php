@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'E-postaren babesa';
-$string['privacy:metadata'] = 'E-postaren babesa pluginak ez du datu pertsonalik biltzen.';
+$string['filtername'] = 'Helbide elektronikoaren babesa';
+$string['privacy:metadata'] = 'Helbide elektronikoaren babesa pluginak ez du datu pertsonalik biltzen.';

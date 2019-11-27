@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '複数受験インタラクティブ';
-$string['privacy:metadata'] = '複数受験インタラクティブ問題動作プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '複数受験インタラクティブ問題動作プラグインはいかなる個人データも保存しません。';
 $string['triesremaining'] = '残り受験数: {$a}';
 $string['tryagain'] = '再受験';

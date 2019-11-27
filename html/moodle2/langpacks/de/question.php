@@ -452,9 +452,7 @@ $string['restartwiththeseoptions'] = 'Nochmal mit diesen Optionen beginnen';
 $string['restoremultipletopcats'] = 'Die Sicherungsdatei enthält mehr als eine Hauptkategorie für Fragen im Kontext {$a}.';
 $string['reviewresponse'] = 'Antworten einsehen';
 $string['rightanswer'] = 'Richtige Antwort';
-$string['rightanswer_help'] = 'Automatisch erzeugte Zusammenfassung der richtigen Antworten.
-
-Wenn Sie die richtige Lösung im Gesamtfeedback noch einmal erklären möchten, schalten Sie diese Option aus.';
+$string['rightanswer_help'] = 'Automatisch erzeugte Zusammenfassung der richtigen Antworten. Wenn Sie die richtige Lösung im Gesamtfeedback noch einmal erklären möchten, schalten Sie diese Option aus.';
 $string['save'] = 'Sichern';
 $string['savechangesandcontinueediting'] = 'Sichern und weiter bearbeiten';
 $string['saved'] = 'Gespeichert: {$a}';

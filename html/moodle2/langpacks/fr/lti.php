@@ -237,7 +237,7 @@ $string['manage_tools'] = 'Gérer les outils préconfigurés';
 $string['manuallyaddtype'] = 'Il est aussi possible de <a href="{$a}">configurer manuellement un outil</a>.';
 $string['miscellaneous'] = 'Divers';
 $string['misconfiguredtools'] = 'Des instances d\'outil mal configurées ont été détectées';
-$string['missingparameterserror'] = 'Cette page est mal configurée : {$a}';
+$string['missingparameterserror'] = 'Cette page est mal configurée : « {$a} »';
 $string['module_class_type'] = 'Type de module Moodle';
 $string['modulename'] = 'Outil externe';
 $string['modulename_help'] = 'Les outils externes permettent aux utilisateurs de Moodle d\'interagir avec des ressources d\'apprentissage sur d\'autres sites web. Par exemple, un outil externe donnera accès à un nouveau type d\'activité et ou des moyens d\'enseignements d\'un éditeur.
@@ -267,7 +267,7 @@ $string['no_tp_cancelled'] = 'Il n\'y a pas d\'enregistrement d\'outil externe a
 $string['no_tp_configured'] = 'Il n\'y a pas d\'enregistrement d\'outil externe configuré.';
 $string['no_tp_pending'] = 'Il n\'y a pas d\'enregistrement d\'outil externe en attente.';
 $string['no_tp_rejected'] = 'Il n\'y a pas d\'enregistrement d\'outil externe rejeté.';
-$string['notypes'] = 'Il n\'y a actuellement dans Moodle aucune configuration d\'outil LTI. Cliquer le lien d\'installation ci-dessus pour en ajouter.';
+$string['notypes'] = 'Il n\'y a actuellement dans Moodle aucune configuration d\'outil LTI. Cliquer sur le lien d\'installation ci-dessus pour en ajouter.';
 $string['noviewusers'] = 'Aucun utilisateur n\'a l\'autorisation d\'utiliser cet outil';
 $string['optionalsettings'] = 'Réglages optionnels';
 $string['organization'] = 'Informations sur l\'institution';
@@ -330,7 +330,7 @@ $string['privacy:metadata:userid'] = 'L\'identifiant de l\'utilisateur qui accè
 $string['privacy:metadata:useridnumber'] = 'Le numéro de l\'utilisateur de l\'utilisateur qui accède au contenu LTI';
 $string['privacy:metadata:username'] = 'Le nom d\'utilisateur de l\'utilisateur qui accède au contenu LTI';
 $string['quickgrade'] = 'Permettre l\'évaluation rapide';
-$string['quickgrade_help'] = 'Si ce réglage est activé, plusieurs outils peuvent être évalués sur une seule page. Ajoutez des notes et des commentaires, puis cliquez « Enregistrer mes feedbacks » pour enregistrer toutes les modifications.';
+$string['quickgrade_help'] = 'Si ce réglage est activé, plusieurs outils peuvent être évalués sur une seule page. Ajoutez des notes et des commentaires, puis cliquez « Enregistrer mes feedbacks » pour enregistrer toutes les modifications.';
 $string['redirect'] = 'Vous allez être redirigé dans quelques secondes. Dans le cas contraire, cliquez sur le bouton.';
 $string['register'] = 'Enregistrer';
 $string['registertype'] = 'Configurer l\'enregistrement d\'un outil externe';
@@ -433,7 +433,7 @@ Les enregistrements répertoriés sur cette page sont classés en quatre catégo
 * **Configuré** - Ces enregistrements ont été configurés, mais le processus d\'enregistrement n\'a pas encore été initié.
 * **En attente** - Le processus d\'enregistrement a été initié, mais ne s\'est pas terminé. Ouvrez, puis enregistrez les réglages pour le remettre dans la catégorie « Configuré ».
 * **Accepté** - Ces enregistrements ont été approuvés ; les ressources indiquées dans le proxy d\'outil apparaîtront sur la page des types d\'outil externe, avec un statut initial de « En attente ».
-* **Rejeté** - Ces enregistrements ont été rejetés durant le processus d\'enregistrement. Ouvrez, puis enregistrez les réglages pour le remettre dans la catégorie « Configuré », afin de pouvoir recommencer le processus d\'enregistrement.';
+* **Rejeté** - Ces enregistrements ont été rejetés durant le processus d\'enregistrement. Ouvrez, puis enregistrez les réglages pour le remettre dans la catégorie « Configuré », afin de pouvoir recommencer le processus d\'enregistrement.';
 $string['toolproxyregistration'] = 'Enregistrement d\'outil externe';
 $string['toolregistration'] = 'Enregistrement d\'outil externe';
 $string['tool_settings'] = 'Réglages de l\'outil';
@@ -471,7 +471,7 @@ Une URL de base *quiz.outil.fr* pourra correspondre à :
 S\'il y a deux configurations d\'outils différentes pour le même domaine, la correspondance la plus spécifique est utilisée.
 
 Il est aussi possible d\'indiquer une URL de paquet, et les autres informations sur l\'outil seront automatiquement renseignées.';
-$string['toolurlplaceholder'] = 'URL de l\'outil...';
+$string['toolurlplaceholder'] = 'URL de l\'outil…';
 $string['typename'] = 'Nom de l\'outil';
 $string['typename_help'] = 'Le nom de l\'outil est utilisé pour identifier le fournisseur de l\'outil dans Moodle. Le nom saisi sera visible pour les enseignants lors de l\'ajout d\'outils externes dans leurs cours.';
 $string['types'] = 'Types';

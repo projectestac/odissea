@@ -50,7 +50,7 @@ $string['clitablesexist'] = 'データベーステーブルはすでに作成さ
 $string['compatibilitysettings'] = 'あなたのPHP設定を確認しています ...';
 $string['compatibilitysettingshead'] = 'あなたのPHP設定を確認しています ...';
 $string['compatibilitysettingssub'] = 'Moodleを適切に動作させるために、あなたのサーバがこれらすべてのテストに合格する必要があります。';
-$string['configfilenotwritten'] = 'インストールスクリプトは自動的にあなたの選択した設定を反映したconfig.phpファイルを作成することができませんでした。恐らく、Moodleディレクトリに書き込み権がないためだと思われます。あなたは下記コードをconfig.phpという名称のファイルとしてMoodleのルートディレクトリにコピーすることができます。';
+$string['configfilenotwritten'] = 'インストールスクリプトは自動的にあなたの選択した設定を反映したconfig.phpファイルを作成することができませんでした。恐らく、Moodleディレクトリに書き込み権がないためだと思われます。あなたは以下のコードをconfig.phpという名称のファイルとしてMoodleのルートディレクトリにコピーすることができます。';
 $string['configfilewritten'] = 'config.phpが正常に作成されました。';
 $string['configurationcomplete'] = '設定が完了しました。';
 $string['configurationcompletehead'] = '設定が完了しました。';
@@ -98,7 +98,7 @@ Moodleにアクセスする完全なウェブアドレスを指定してくだ�
 <p><b>データディレクトリ:</b>
 Moodleにはアップロードされたファイルを保存する場所が必要です。 このディレクトリはウェブサーバのユーザ (通常は「nobody」または「apache」) が読み込みおよび書き込みできるようにしてください。ウェブから直接アクセスできないようにしてください。データディレクトリがない場合、インストーラーは作成を試みます。</p>';
 $string['dirroot'] = 'Moodleディレクトリ';
-$string['dirrooterror'] = '「Moodleディレクトリ」設定が正しくないようです - インストール済みMoodleが見つかりませんでした。下記の値がリセットされました。';
+$string['dirrooterror'] = '「Moodleディレクトリ」設定が正しくないようです - インストール済みMoodleが見つかりませんでした。以下の値がリセットされました。';
 $string['download'] = 'ダウンロード';
 $string['downloadlanguagebutton'] = '「 {$a} 」言語パックをダウンロードする';
 $string['downloadlanguagehead'] = '言語パックのダウンロード';
@@ -121,6 +121,7 @@ $string['inputdatadirectory'] = 'データディレクトリ :';
 $string['inputwebadress'] = 'ウェブアドレス :';
 $string['inputwebdirectory'] = 'Moodleディレクトリ :';
 $string['installation'] = 'インストレーション';
+$string['invaliddbprefix'] = '無効な接頭辞です。接頭辞は半角小文字およびアンダースコアのみで構成できます。';
 $string['langdownloaderror'] = '残念ですが、言語「 {$a} 」をダウンロードできませんでした。インストール処理は英語で継続されます。';
 $string['langdownloadok'] = '言語「 {$a} 」が正常にインストールされました。インストール処理はこの言語で継続されます。';
 $string['memorylimit'] = 'Memory Limit';
@@ -133,7 +134,7 @@ $string['memorylimithelp'] = '<p>現在、サーバのPHPメモリ制限が {$a}
 <ol>
 <li>あなたがリコンパイル可能な場合、PHPを<i>--enable-memory-limit</i>オプションでコンパイルしてください。これにより、Moodle自身がメモリ制限を設定することが可能になります。</li>
 <li>あなたがphp.iniファイルにアクセスできる場合、<b>memory_limit</b>設定を40Mのように変更することができます。php.iniファイルにアクセスできない場合、管理者に変更を依頼してください。</li>
-<li>いくつかのPHPサーバでは下記の行を含む.htaccessファイルをMoodleディレクトリに作成することができます:
+<li>いくつかのPHPサーバでは以下の行を含む.htaccessファイルをMoodleディレクトリに作成することができます:
 <blockquote><div>php_value memory_limit 40M</div></blockquote>
 <p>しかし、この設定が<b>すべての</b>PHPページの動作を妨げる場合もあります。ページ閲覧中にエラーが表示される場合、.htaccessファイルを削除してください。</p></li>
 </ol>';
@@ -210,4 +211,4 @@ $string['welcomep50'] = 'このパッケージ内のすべてのアプリケー�
 $string['welcomep60'] = '次からのページはあなたのコンピュータに<strong>Moodle</strong>を簡単に設定およびセットアップする手順にしたがって進みます。あなたはデフォルトの設定を使用することも、必要に応じて任意で設定を変更することもできます。';
 $string['welcomep70'] = '<strong>Moodle</strong>のセットアップを続けるには「次へ」ボタンをクリックしてください。';
 $string['wwwroot'] = 'ウェブアドレス';
-$string['wwwrooterror'] = '「ウェブアドレス」が正しくありません - Moodleインストレーションはそこには表示されません。下記値はリセットされました。';
+$string['wwwrooterror'] = '「ウェブアドレス」が正しくありません - Moodleインストレーションはそこには表示されません。以下の値はリセットされました。';

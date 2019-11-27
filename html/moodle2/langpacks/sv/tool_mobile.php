@@ -29,4 +29,7 @@ $string['configmobilecssurl'] = 'En CSS-fil för att anpassa ditt mobil app-grä
 $string['getmoodleonyourmobile'] = 'Hämta mobilappen';
 $string['mobileapp'] = 'Mobilapp';
 $string['mobileappconnected'] = 'Kopplat till mobilapp';
+$string['mobileappearance'] = 'Mobilvy';
 $string['mobilecssurl'] = 'CSS';
+$string['mobilenotificationsdisabledwarning'] = 'Mobilnotifieringar är inte påslagna. De borde aktiveras i Inställningar för notifieringar.';
+$string['mobilesettings'] = 'Mobilinställningar';

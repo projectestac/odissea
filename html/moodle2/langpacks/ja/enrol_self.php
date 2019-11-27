@@ -35,7 +35,7 @@ $string['confirmbulkdeleteenrolment'] = '本当にこれらのユーザ登録を
 $string['customwelcomemessage'] = 'カスタムウェルカムメッセージ';
 $string['customwelcomemessage_help'] = 'プレインテキストまたはHTMLタグおよびmulti-langタグを含むMoodleオートフォーマットとしてカスタムウェルカムメッセージを追加することができます。
 
-メッセージの中に下記のプレースホルダを含むことができます:
+メッセージの中に以下のプレースホルダを含むことができます:
 
 * コース名 {$a->coursename}
 * ユーザプロファイルページへのリンク {$a->profileurl}
@@ -62,7 +62,7 @@ $string['expirymessageenrolledbody'] = '{$a->user} さん
 
 詳細は {$a->enroller} をご連絡ください。';
 $string['expirymessageenrolledsubject'] = '自己登録期限切れ通知';
-$string['expirymessageenrollerbody'] = '下記のユーザに関してコース「 {$a->course} 」の自己登録は次の {$a->threshold} で有効期限切れとなります:
+$string['expirymessageenrollerbody'] = '以下のユーザに関してコース「 {$a->course} 」の自己登録は次の {$a->threshold} で有効期限切れとなります:
 
 {$a->users}
 
@@ -96,7 +96,7 @@ $string['passwordinvalid'] = '登録キーが正しくありません。再度�
 $string['passwordinvalidhint'] = '登録キーが正しくありません。再度入力してください。<br /> (ヒント - 「 {$a} 」で始まる言葉です)';
 $string['pluginname'] = '自己登録';
 $string['pluginname_desc'] = '自己登録プラグインにより、ユーザは自分が参加したいコースを選択することができます。登録キーによりコースを保護することができます。内部的には同一コースで有効にする必要のある手動登録プラグイン経由で登録されます。';
-$string['privacy:metadata'] = '自己登録プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '自己登録プラグインはいかなる個人データも保存しません。';
 $string['requirepassword'] = '登録キーを要求する';
 $string['requirepassword_desc'] = '新しいコースに登録キーを要求します。また、既存のコースからの登録キーの削除を防ぎます。';
 $string['role'] = 'デフォルトに割り当てるロール';

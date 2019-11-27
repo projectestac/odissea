@@ -162,7 +162,7 @@ $string['claimid'] = '請求URL';
 $string['clearsettings'] = '設定をクリアする';
 $string['completioninfo'] = 'このバッジは完了に対して発行されました:';
 $string['completionnotenabled'] = 'このコースのコース完了が有効にされていないため、バッジクライテリアに含むことはできません。コース設定でコース完了を有効にすることができます。';
-$string['configenablebadges'] = '有効にした場合、あなたがバッジを作成してサイトユーザに授与できるようになります。';
+$string['configenablebadges'] = 'この設定を有効にした場合、あなたがバッジを作成してサイトユーザに授与できるようになります。';
 $string['configuremessage'] = 'バッジメッセージ';
 $string['connect'] = '接続';
 $string['connected'] = '接続済み';
@@ -512,7 +512,7 @@ $string['targeturl'] = 'URL';
 $string['targeturl_help'] = 'コンピテンシー、スキルまたは標準を説明したページへのリンクです。URLには「http://」または「https://」の接頭辞が必要です。';
 $string['type'] = 'タイプ';
 $string['variablesubstitution'] = 'メッセージ内の変数置換です。';
-$string['variablesubstitution_help'] = 'バッジメッセージにおいて、メッセージ送信時に実際の文字と置換するようメッセージの件名および本文に変数を入れることができます。変数は下記に表示されているものと厳密に同じようにテキストに入れてください。以下の変数を使用することができます:
+$string['variablesubstitution_help'] = 'バッジメッセージにおいて、メッセージ送信時に実際の文字と置換するようメッセージの件名および本文に変数を入れることができます。変数は以下に表示されているものと厳密に同じようにテキストに入れてください。以下の変数を使用することができます:
 
 %badgename%
 : これはバッジフルネームと置換されます。

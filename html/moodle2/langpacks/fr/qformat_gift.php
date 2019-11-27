@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['braceerror'] = 'Impossible de trouver une paire d\'accolades {...} autour des réponses';
+$string['braceerror'] = 'Impossible de trouver une paire d\'accolades {…} autour des réponses';
 $string['giftleftbraceerror'] = 'Impossible de trouver une accolade {';
 $string['giftmatchingformat'] = 'Les réponses de la question d\'appariement ne sont pas formatées correctement';
 $string['giftnonumericalanswers'] = 'Aucune réponse trouvée pour la question numérique';

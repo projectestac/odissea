@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'ファイルフィールド';
 $string['pluginname'] = 'ファイル';
-$string['privacy:metadata'] = 'ファイルフィールドコンポーネントはどのような個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['privacy:metadata'] = 'ファイルフィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

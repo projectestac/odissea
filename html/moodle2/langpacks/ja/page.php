@@ -67,5 +67,5 @@ $string['printintro'] = 'ページ説明を表示する';
 $string['printintroexplain'] = 'コンテンツの上にページ説明を表示しますか?';
 $string['printlastmodified'] = '最終更新日を表示する';
 $string['printlastmodifiedexplain'] = 'コンテンツの下に最終更新日を表示しますか?';
-$string['privacy:metadata'] = 'ページリソースプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ページリソースプラグインはいかなる個人データも保存しません。';
 $string['search:activity'] = 'ページ';

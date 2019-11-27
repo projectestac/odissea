@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '元に戻す/やり直す';
-$string['privacy:metadata'] = 'atto_undoプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_undoプラグインはいかなる個人データも保存しません。';
 $string['redo'] = 'やり直す';
 $string['undo'] = '元に戻す';

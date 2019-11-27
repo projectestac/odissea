@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadfile'] = 'あなたのポートフォリオのエクスポートファイルをダウンロードする';
 $string['downloading'] = 'ダウンロード中 ...';
 $string['pluginname'] = 'ファイルダウンロード';
-$string['privacy:metadata'] = 'このプラグインははどのような個人データも保存しません。また、外部に個人データを転送することもありません。';
+$string['privacy:metadata'] = 'このプラグインはいかなる個人データも保存しません。また、外部に個人データを転送することもありません。';

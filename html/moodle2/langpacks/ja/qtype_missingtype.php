@@ -34,5 +34,5 @@ $string['missingqtypewarning'] = '現在、この問題タイプはシステム�
 $string['pluginname'] = 'タイプ不明';
 $string['pluginnameadding'] = 'このシステムにインストールされていない問題タイプの追加';
 $string['pluginnameediting'] = 'このシステムにインストールされていない問題タイプの編集';
-$string['privacy:metadata'] = 'ミッシングタイプ問題タイププラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ミッシングタイプ問題タイププラグインはいかなる個人データも保存しません。';
 $string['warningmissingtype'] = '<b>この問題タイプはあなたのMoodleにまだインストールされていません。<br />Moodle管理者にご連絡ください。</b>';

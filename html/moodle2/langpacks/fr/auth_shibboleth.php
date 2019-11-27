@@ -34,7 +34,7 @@ $string['auth_shibboleth_errormsg'] = 'Veuillez choisir l\'organisation dont vou
 $string['auth_shibboleth_login'] = 'Connexion Shibboleth';
 $string['auth_shibboleth_login_long'] = 'Connexion à Moodle via Shibboleth';
 $string['auth_shibboleth_manual_login'] = 'Connexion manuelle';
-$string['auth_shibboleth_select_member'] = 'Je suis membre de...';
+$string['auth_shibboleth_select_member'] = 'Je suis membre de…';
 $string['auth_shibboleth_select_organization'] = 'Pour l\'authentification via Shibboleth, veuillez sélectionner votre organisation dans le menu déroulant :';
 $string['auth_shib_changepasswordurl'] = 'URL pour changement de mot de passe';
 $string['auth_shib_contact_administrator'] = 'Si vous n\'êtes pas affilié aux organisations indiquées et que vous avez besoin d\'accéder à un cours sur ce serveur, veuillez contacter l\'<a href="mailto:{$a}">administrateur de ce serveur</a>.';

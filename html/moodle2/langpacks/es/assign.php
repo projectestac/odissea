@@ -223,6 +223,7 @@ $string['gradecanbechanged'] = 'La calificación puede ser cambiada';
 $string['gradechangessaveddetail'] = 'Los cambios a la calificación y a la retroalimentación fueron guardados';
 $string['graded'] = 'Calificado';
 $string['gradedby'] = 'Calificado por';
+$string['gradedfollowupsubmit'] = 'Calificado - recibida nueva entrega';
 $string['gradedon'] = 'Calificado sobre';
 $string['gradelocked'] = 'Esta calificación está bloqueada o ha sido modificada en el libro de calificaciones';
 $string['gradeoutof'] = 'Calificación sobre {$a}';

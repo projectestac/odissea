@@ -356,6 +356,7 @@ $string['sortchronogically'] = 'Buscar cronológicamente';
 $string['special'] = 'Especial';
 $string['standardview'] = 'Vista Alfabética';
 $string['studentcanpost'] = 'Los estudiantes pueden agregar entradas';
+$string['tagarea_glossary_entries'] = 'Entradas de glosario';
 $string['totalentries'] = 'Total de entradas';
 $string['usedynalink'] = 'Enlace automático a las entradas del glosario';
 $string['usedynalink_help'] = 'Si el <strong>Enlace automático al glosario</strong> ha sido habilitada por un administrador y esta opción está activada, la opción del formulario "Agregar una nueva entrada" permite vincular automáticamente las palabras y frases del concepto allá donde aparezcan en el resto del curso.';

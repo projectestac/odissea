@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredropzones'] = 'Zuriuneak {no} eramateko toki gehiagotarako';
-$string['addmoreimages'] = 'Zuriuneak {no} eramateko elementu gehiagotarako';
+$string['addmoredropzones'] = 'Gehitu {no} zuriune eramateko toki gehiagorako';
+$string['addmoreimages'] = 'Gehitu {no} zuriune eramateko elementu gehiagorako';
 $string['answer'] = 'Erantzuna';
 $string['bgimage'] = 'Atzeko planoaren irudia';
 $string['blank'] = 'hutsik';

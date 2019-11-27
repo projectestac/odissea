@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Dropbox-en API giltza';
 $string['cachelimit'] = 'Cache-muga';
-$string['cachelimit_info'] = 'Sartu hemen zerbitzariaren cachean gordetako Dropbox-eko alias/lasterbideen fitxategien gehienezko tamaina. Cachean gordetako fitxategiak erabiliko dira jatorrizkoa eskuragarri ez dagoenean. Hutsik utziz gero edo zero jarrita fitxategi guztian gordeko dira cachean euren tamaina edozein izanda ere.';
+$string['cachelimit_info'] = 'Idatzi hemen zerbitzariaren cachean gordetako Dropbox-eko alias/lasterbideen fitxategien gehienezko tamaina. Cachean gordetako fitxategiak erabiliko dira jatorrizkoa eskuragarri ez dagoenean. Hutsik utziz gero edo zero jarrita fitxategi guztian gordeko dira cachean euren tamaina edozein izanda ere.';
 $string['configplugin'] = 'Dropbox-en ezarpenak';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Ikusi Dropbox karpeta';

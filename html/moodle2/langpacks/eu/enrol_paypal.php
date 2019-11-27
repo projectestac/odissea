@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = 'Esleitu rola';
-$string['businessemail'] = 'PayPal business-eko e-posta helbidea';
-$string['businessemail_desc'] = 'Zure PayPal business-eko e-posta helbidea';
+$string['businessemail'] = 'PayPal business-eko helbide elektronikoa';
+$string['businessemail_desc'] = 'Zure PayPal business-eko helbide elektronikoa';
 $string['cost'] = 'Matrikularen prezioa';
 $string['costerror'] = 'Matrikularen prezioa ez da zenbaki bat';
 $string['costorkey'] = 'Mesedez, aukeratu ondorengo matrikulazio-motetako bat.';
@@ -60,7 +60,7 @@ $string['paypal:unenrolself'] = 'Desmatrikulatu norbera ikastararotik';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'PayPal moduluak ordaindutako ikastaroak konfiguratzeko aukera ematen du. Ikastaroren bateko kostua zero bada ikasleei ikastaroan sartzeko ez zaie ordaintzea eskatuko. Lehenetsitako gune mailako kostua zehazten da hemen eta ondoren ikastaro bakoitzaren ezarpenetan kostua zehaztu daiteke. Ikastaroaren kostuak gune mailakoa baliogabetzen du.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'PayPal matrikulazioetarako PayPal transakzioen inguruko informazioa.';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = 'Ordainketaren jasotzailearen e-posta helbidea edo PayPal kontuaren IDa (hau da, saleroslea).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = 'Ordainketaren jasotzailearen helbide elektronikoa edo PayPal kontuaren IDa (hau da, saleroslea).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:courseid'] = 'Saltzen den ikastaroaren IDa.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:instanceid'] = 'Ikastaroaren matrikulazio-instantziaren IDa.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:item_name'] = 'Saldu den matrikularen ikastaroaren izen osoa.';
@@ -71,7 +71,7 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_status'] = 'Ordainke
 $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_type'] = 'Ordainketa eCheck baten bitartez (echeck), PayPal balantzearekin, kreditu-txartelarekin edo bat-bateko transferentziarekin (instant) egin den gordetzen du.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'Ordainketa ordaindu gabe egotearen arrazoia (ordaindu gabe dagoenean).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:reason_code'] = 'Ordainketa atzera botata (Reversed), itzulita (Refunded), bertan behera utzi eta atzera botata (Canceled_Reversal) edo ukatua (Denied) egotearen arrazoia (egoera horietako bat denean).';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'Ordainketaren jasotzailearen e-posta helbidea (hau da, saleroslea).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'Ordainketaren jasotzailearen helbide elektronikoa (hau da, saleroslea).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = 'Ordainketaren jasotzailearen PayPal kontuaren IDa (hau da, saleroslea).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:tax'] = 'Ordainketa egitean kobratutako zerga kopurua.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:timeupdated'] = 'Moodle-ri PayPal-eko ordainketa buruz jakinarazi zaion unea.';
@@ -82,7 +82,7 @@ $string['privacy:metadata:enrol_paypal:paypal_com:address'] = 'Ikastaroa erosten
 $string['privacy:metadata:enrol_paypal:paypal_com:city'] = 'Ikastaroa erosten ari den erabiltzailearen hiria.';
 $string['privacy:metadata:enrol_paypal:paypal_com:country'] = 'Ikastaroa erosten ari den erabiltzailearen herrialdea.';
 $string['privacy:metadata:enrol_paypal:paypal_com:custom'] = 'Erabiltzailearen (eroslea) IDa, ikastaroaren IDa eta matrikulazio-instantziaren IDa dituen gidoiaz banatutako katea.';
-$string['privacy:metadata:enrol_paypal:paypal_com:email'] = 'Ikastaroa erosten ari den erabiltzailearen e-posta helbidea.';
+$string['privacy:metadata:enrol_paypal:paypal_com:email'] = 'Ikastaroa erosten ari den erabiltzailearen helbide elektronikoa.';
 $string['privacy:metadata:enrol_paypal:paypal_com:first_name'] = 'Ikastaroa erosten ari den erabiltzailearen izena.';
 $string['privacy:metadata:enrol_paypal:paypal_com:last_name'] = 'Ikastaroa erosten ari den erabiltzailearen abizena.';
 $string['privacy:metadata:enrol_paypal:paypal_com:os0'] = 'Ikastaroa erosten ari den erabiltzailearen izen osoa.';

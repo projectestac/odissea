@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Lägg till en kategori';
 $string['addcomment'] = 'Lägg till kommentarer';
 $string['addentry'] = 'Lägg till bidrag';
 $string['addingcomment'] = 'Lägg till en kommentar';
@@ -116,6 +117,7 @@ $string['comments'] = 'Kommentarer';
 $string['commentson'] = 'Kommentarer aktiverade';
 $string['commentupdated'] = 'Kommentaren har uppdaterats';
 $string['completionentries'] = 'Studenter/elever/deltagare/lärande måste lämna bidrag:';
+$string['completionentriesdesc'] = 'Deltagaren måste skapa minst {$a} uppslagsord/inlägg';
 $string['completionentriesgroup'] = 'Gör bidrag obligatoriska';
 $string['concept'] = 'Begrepp';
 $string['concepts'] = 'Begrepp';
@@ -134,7 +136,9 @@ $string['defaultsortkey'] = 'Förvald nyckel för sortering';
 $string['defaultsortorder'] = 'Förvald ordning för sortering';
 $string['definition'] = 'Definition';
 $string['definitions'] = 'Definitioner';
+$string['deletecategory'] = 'Ta bort kategori';
 $string['deleteentry'] = 'Ta bort bidrag';
+$string['deleteentrya'] = 'Ta bort uppslagsord/inlägg: {$a}';
 $string['deletenotenrolled'] = 'Ta bort bidrag gjorda av användare som inte är registrerade';
 $string['deletingcomment'] = 'Tar bort kommentar';
 $string['deletingnoneemptycategory'] = 'Om Du tar bort den här kaegorin så bidragen i den inte att tas bort - istället kommer de att markeras som inte-kategoriserade.';
@@ -147,6 +151,7 @@ den f&ouml;r tillf&auml;llet &ouml;ppna ord- och begreppslistan.</li>
 <li><strong>Ny ord- och begreppslista:</strong> Detta kommer att skapa en ord- och begreppslista
 som baseras p&aring; den information som som finns i den markerade importfilen och de nya bidragen kommer att infogas i den.</li>
 </ul>';
+$string['disapprove'] = 'Återkalla godkännande';
 $string['displayformat'] = 'Format för visning';
 $string['displayformatcontinuous'] = 'Fortlöpande men utan författare';
 $string['displayformatdictionary'] = 'Enkel ordboksstil';
@@ -175,6 +180,7 @@ som Du anv&auml;nder. Det kallar Du <b>displayformat[number]</b>,
 och ger det en meningsfull beskrivning.</p>';
 $string['displayformats'] = 'Format för visning';
 $string['displayformatssetup'] = 'Visa hur formaten har skapats';
+$string['duplicatecategory'] = 'Dubblera kategori';
 $string['duplicateentry'] = 'Dubblerat bidrag';
 $string['editalways'] = 'Redigera alltid';
 $string['editalways_help'] = '<p>Det h&auml;r alternativet l&aring;ter Dig avg&ouml;ra om studenterna/eleverna/deltagarna/de l&auml;rande
@@ -185,7 +191,9 @@ ska kunna redigera sina bidrag n&auml;r som helst.</p>
 <li><b>Nej:</b> Bidrag g&aring;r bara att redigera inom den angivna tiden.</li>
 </ul>';
 $string['editcategories'] = 'Redigera kategorier';
+$string['editcategory'] = 'Redigera kategori';
 $string['editentry'] = 'Redigera bidrag';
+$string['editentrya'] = 'Redigera uppslagsord/inlägg: {$a}';
 $string['editingcomment'] = 'Redigerar kommentar';
 $string['entbypage'] = 'Bidrag visade per sida';
 $string['entries'] = 'bidrag';
@@ -197,6 +205,7 @@ $string['entrydeleted'] = 'Bidraget är borttaget';
 $string['entryexported'] = 'Bidraget har framgångsrikt exporterats';
 $string['entryishidden'] = '(det här bidraget är f n dolt)';
 $string['entryleveldefaultsettings'] = 'Standardval för inställningar på ingångsnivån ';
+$string['entrylink'] = 'Länk till uppslagsord/inlägg: {$a}';
 $string['entrysaved'] = 'Det här bidraget har sparats';
 $string['entryupdated'] = 'Det här bidraget har uppdaterats';
 $string['entryusedynalink'] = 'Det här bidraget bör<br /> vara automatiskt länkat';
@@ -211,6 +220,15 @@ $string['errconceptalreadyexists'] = 'Det här begreppet finns redan med. Det ä
 $string['errdeltimeexpired'] = 'Du kan inte ta bort det här. Tiden har gått ut!';
 $string['erredittimeexpired'] = 'Tiden för att redigera det här bidraget har gått ut.';
 $string['errorparsingxml'] = 'Det uppstod fel när filen skulle parsas. Säkerställ att det är en giltig syntax för XML.';
+$string['eventcategorycreated'] = 'Katagori skapad';
+$string['eventcategorydeleted'] = 'Kategori borttagen';
+$string['eventcategoryupdated'] = 'Kategori uppdaterad';
+$string['evententryapproved'] = 'Uppslagsordet/inlägget har godkänts';
+$string['evententrycreated'] = 'Uppslagsord/inlägg skapat';
+$string['evententrydeleted'] = 'Uppslagsord/inlägg borttaget';
+$string['evententrydisapproved'] = 'Uppslagsordet/inlägget godkänns inte.';
+$string['evententryupdated'] = 'Uppslagsordet/inlägget har uppdaterats.';
+$string['evententryviewed'] = 'Uppslagsordet/inlägget har visats.';
 $string['explainaddentry'] = 'Lägg till ett nytt bidrag till den aktuella ord- och begreppslistan.<br />\'Begrepp\' och \'definition\' är obligatoriska fält.';
 $string['explainall'] = '<b>ALLA</b> kommer att visa alla bidrag på en sida';
 $string['explainalphabet'] = 'Välj den sida Du vill söka efter<p>';
@@ -235,6 +253,7 @@ Om Du st&auml;ller in det h&auml;r alternativet allts&aring;.</p>
 <p>L&auml;gg  m&auml;rke till att det h&auml;r alternativet inte
 kr&auml;ver att bokst&auml;verna har samma storlek. Anv&auml;nd
 ist&auml;llet alternativet \'Skiftl&auml;gesk&auml;nslig\' f&ouml;r det.</p>';
+$string['glossary:addinstance'] = 'Lägg till en ny ordbok.';
 $string['glossary:approve'] = 'Godkänn icke-godkända bidrag';
 $string['glossary:comment'] = 'Skapa kommentarer';
 $string['glossary:export'] = 'Exportera bidrag';
@@ -333,6 +352,7 @@ namnet p&aring; f&ouml;rfattaren i varje artikel.</li>
 <li><b>Utan f&ouml;rfattare:</b>Om Du anv&auml;nder detta, s&aring; kommer de genererade matningarna INTE att ta med
 namnet p&aring; f&ouml;rfattaren i varje artikel.</li>
 </ul>';
+$string['search:entry'] = 'Ordbok - uppslagsord/inlägg';
 $string['searchindefinition'] = 'Sök i begrepp OCH definitioner?';
 $string['secondaryglossary'] = 'sekundär ord- och begreppslista';
 $string['showall'] = 'Visa länken \'ALLA\'';
@@ -390,6 +410,7 @@ $string['sortchronogically'] = 'Sortera kronologiskt';
 $string['special'] = 'Special';
 $string['standardview'] = 'Standardvy';
 $string['studentcanpost'] = 'Studenter/elever/deltagare/lärande kan lägga till bidrag';
+$string['tagarea_glossary_entries'] = 'Uppslagsord/inlägg i ordboken';
 $string['totalentries'] = 'Totalt antal bidrag';
 $string['usedynalink'] = 'Länka bidrag automatiskt';
 $string['usedynalink_help'] = '<p align="center"><b>

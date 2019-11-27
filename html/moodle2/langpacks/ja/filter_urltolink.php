@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['embedimages'] = '埋め込みイメージ';
 $string['embedimages_desc'] = '選択されたテキストフォーマットのイメージURLがイメージに置換されます。';
 $string['filtername'] = 'URLをリンクおよびイメージに変換する';
-$string['privacy:metadata'] = 'URLをリンクおよびイメージに変換するプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'URLをリンクおよびイメージに変換するプラグインはいかなる個人データも保存しません。';
 $string['settingformats'] = 'フォーマットに適用する';
 $string['settingformats_desc'] = '選択されたフォーマットの1つにオリジナルテキストが追加された場合のみフィルタが適用されます。';

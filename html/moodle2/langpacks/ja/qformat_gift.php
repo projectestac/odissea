@@ -36,4 +36,4 @@ $string['importminerror'] = '問題にエラーがあります。この問題タ
 $string['nohandler'] = '問題タイプ {$a} のハンドラがありません。';
 $string['pluginname'] = 'GIFTフォーマット';
 $string['pluginname_help'] = 'GIFTフォーマットではテキストファイルを使用して多肢選択問題、○/×問題、記述問題、組み合わせ問題、ミッシングワード問題、数値問題および作文問題をインポートまたはエクスポートすることができます。';
-$string['privacy:metadata'] = 'GIFT問題フォーマットプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'GIFT問題フォーマットプラグインはいかなる個人データも保存しません。';

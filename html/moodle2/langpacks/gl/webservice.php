@@ -189,6 +189,7 @@ $string['service'] = 'Servizo';
 $string['servicehelpexplanation'] = 'Un servizo é un conxunto de funcións. A dito servizo poden acceder todos os usuarios ou só algúns especificados.';
 $string['servicename'] = 'Nome do servizo';
 $string['servicenotavailable'] = 'O servizo Web non está dispoñíbel (non existe ou pode estar desactivado)';
+$string['servicerequireslogin'] = 'O servizo Web non está dispoñíbel (a sesión foi pechada ou caducou).';
 $string['servicesbuiltin'] = 'Servizos incluídos';
 $string['servicescustom'] = 'Servizos personalizados';
 $string['serviceusers'] = 'Usuarios autorizados';

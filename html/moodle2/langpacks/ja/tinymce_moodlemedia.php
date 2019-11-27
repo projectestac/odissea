@@ -29,4 +29,4 @@ $string['moodlemedia:browsemedia'] = 'サウンド、ビデオまたはアプレ
 $string['moodlemedia:desc'] = 'Moodleメディアを追加する';
 $string['nopreview'] = 'メディアをプレビューできません。';
 $string['pluginname'] = 'メディアを追加する';
-$string['privacy:metadata'] = 'TinyMCE Moodleメディアプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'TinyMCE Moodleメディアプラグインはいかなる個人データも保存しません。';

@@ -119,6 +119,7 @@ $string['eventsimported'] = 'Esdeveniments importats: {$a}';
 $string['eventskey'] = 'Llegenda d\'esdeveniments';
 $string['eventsource'] = 'Font de l\'esdeveniment';
 $string['eventspersonal'] = 'Esdeveniments personals';
+$string['eventsrelatedtocategories'] = 'Esdeveniments relacionats amb les categories';
 $string['eventsrelatedtocourses'] = 'Esdeveniments relacionats amb els cursos';
 $string['eventsrelatedtogroups'] = 'Esdeveniments de grup';
 $string['eventstarttime'] = 'Data d\'inici';

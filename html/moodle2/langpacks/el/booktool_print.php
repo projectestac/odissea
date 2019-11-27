@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventbookprinted'] = 'Το  βιβλίο εκτυπώθηκε';
+$string['eventbookprinted'] = 'Το βιβλίο εκτυπώθηκε';
 $string['eventchapterprinted'] = 'Το κεφάλαιο εκτυπώθηκε';
 $string['pluginname'] = 'Εκτύπωση βιβλίου';
 $string['printbook'] = 'Εκτύπωσε βιβλίο';

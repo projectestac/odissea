@@ -65,7 +65,7 @@ $string['enroldownload_help'] = '選択されたハブ内に一覧表示され�
 他のコースはあなたがダウンロードして自分のMoodleサイトに使用できるコーステンプレートとして提供されています。';
 $string['enrollable'] = '私が登録できるコース';
 $string['enrollablecourses'] = '登録可能なコース';
-$string['errorcourselisting'] = '選択したハブからコース一覧の検索中にエラーが発生しました。後ほど再度お試しください。 ({$a})';
+$string['errorcourselisting'] = '注意: moodle.netでのコミュニティコースは検索できなくなりました。以前共有されたコースはarchive.moodle.netでダウンロード可能です。詳細は<a href="https://docs.moodle.org/en/Sunsetting_moodle.net">moodle.netの廃止</a>をご覧ください。';
 $string['errorhublisting'] = 'Moodle.orgからハブ一覧の検索中にエラーが発生しました。後ほど再度お試しください。({$a})';
 $string['fileinfo'] = '言語: {$a->lang} - ライセンス: {$a->license} - 更新日時: {$a->timeupdated}';
 $string['hideall'] = 'ハブを隠す';

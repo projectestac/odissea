@@ -136,7 +136,7 @@ $string['synchronize'] = 'Συγχρονίστε τα δεδομένα από δ
 $string['synchronizeno'] = 'Χωρίς συγχρονισμό';
 $string['synchronizeyes'] = 'Με συγχρονισμό';
 $string['synchronizeyesdisplay'] = 'Συγχρονίστε και εμφανίστε το διαμοιραζόμενο όνομα του συνόλου δεδομένων ως πρόθεμα του ονόματος ερωτήματος';
-$string['tolerance'] = 'Ανοχή  ±';
+$string['tolerance'] = 'Ανοχή ±';
 $string['tolerancetype'] = 'Τύπος (ανοχής)';
 $string['trueanswerinsidelimits'] = 'Η σωστή απάντηση : {$a->correct} είναι μέσα στα όρια της πραγματικής τιμής {$a->true}';
 $string['trueansweroutsidelimits'] = '<span class="error">ΣΦΑΛΜΑ Η σωστή απάντηση : {$a->correct} είναι έξω από τα όρια της πραγματικής τιμής {$a->true}</span>';
@@ -151,7 +151,7 @@ $string['useadvance'] = 'Χρησιμοποιήστε το κουμπί προώ
 $string['usedinquestion'] = 'Χρησιμοποιείται σε Ερώτηση';
 $string['wildcard'] = 'Μπαλαντέρ {<strong>{$a}</strong>}';
 $string['wildcardparam'] = 'Οι παράμετροι των μπαλαντέρ που χρησιμοποιούνται για τη δημιουργία των τιμών';
-$string['wildcardrole'] = 'Τα μπαλαντέρ <strong>{x..}</strong>  θα αντικαθίστανται από μια αριθμητική τιμή από τις παραγόμενες τιμές';
+$string['wildcardrole'] = 'Τα μπαλαντέρ <strong>{x..}</strong> θα αντικαθίστανται από μια αριθμητική τιμή από τις παραγόμενες τιμές';
 $string['wildcards'] = 'Μπαλαντέρ {a}...{z}';
 $string['wildcardvalues'] = 'Τιμές μπαλαντέρ';
 $string['wildcardvaluesgenerated'] = 'Οι τιμές μπαλαντέρ δημιουργήθηκαν';

@@ -133,4 +133,4 @@ $string['statusinfo'] = 'Information';
 $string['statusok'] = 'OK';
 $string['statusserious'] = 'Sérieux';
 $string['statuswarning'] = 'Avertissement';
-$string['timewarning'] = 'Le traitement des données peut prendre beaucoup de temps. Veuillez prendre patience...';
+$string['timewarning'] = 'Le traitement des données peut prendre beaucoup de temps. Veuillez prendre patience…';

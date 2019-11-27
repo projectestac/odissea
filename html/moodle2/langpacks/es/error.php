@@ -566,6 +566,7 @@ $string['usernotdeleteddeleted'] = 'Ese usuario ya ha sido borrado.';
 $string['usernotdeletederror'] = 'Usuario no eliminado: error';
 $string['usernotdeletedmissing'] = 'Usuario no eliminado: no se encontró el nombre de usuario.';
 $string['usernotdeletedoff'] = 'Usuario no eliminado: eliminación no permitida.';
+$string['usernotfullysetup'] = 'El usuario no está completamente configurado';
 $string['usernotincourse'] = 'Este usuario no esta en este curso!';
 $string['usernotrenamedadmin'] = 'No se pueden renombrar las cuentas del administrador.';
 $string['usernotrenamedexists'] = 'Usuario no renombrado: el nuevo nombre de usuario ya está en uso.';

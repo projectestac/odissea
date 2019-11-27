@@ -131,7 +131,7 @@ $string['definitions'] = 'Определения';
 $string['deletecategory'] = 'Удалить категорию';
 $string['deleteentry'] = 'Удалить запись';
 $string['deleteentrya'] = 'Удалить запись: {$a}';
-$string['deletenotenrolled'] = 'Удаление записей незарегистрированных пользователей';
+$string['deletenotenrolled'] = 'Удалить записи незарегистрированных пользователей';
 $string['deletingcomment'] = 'Удаление комментария';
 $string['deletingnoneemptycategory'] = 'Удаление категории не удалит записи, которые к ней относились - они просто будут отмечены, как не относящиеся к категориям.';
 $string['descending'] = '(убывание)';
@@ -351,7 +351,7 @@ $string['rejectedentries'] = 'Отклоненные записи';
 $string['rejectionrpt'] = 'Отчет по отклоненным записям';
 $string['removeallglossarytags'] = 'Удалить все теги глоссария';
 $string['resetglossaries'] = 'Удаление записей из';
-$string['resetglossariesall'] = 'Удаление записей из всех глоссариев';
+$string['resetglossariesall'] = 'Удалить записи из всех глоссариев';
 $string['rssarticles'] = 'Количество статей в RSS-ленте';
 $string['rssarticles_help'] = '<h2>Количество RSS статей в рассылке</h2>
 

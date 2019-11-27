@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['acceptandaddcontact'] = 'Accetta ed aggiungi ai contatti';
 $string['addcontact'] = 'Aggiungi contatto';
 $string['addcontactconfirm'] = 'Sei sicuro di aggiungere {$a} ai contatti?';
-$string['addtofavourites'] = 'Contrassegna';
+$string['addtofavourites'] = 'Contrassegna conversazione';
 $string['addtoyourcontacts'] = 'Aggiungi ai contatti';
 $string['addtoyourcontactsandmessage'] = 'Aggiungi ai contatti ed invia messaggio';
 $string['ago'] = '{$a} fa';

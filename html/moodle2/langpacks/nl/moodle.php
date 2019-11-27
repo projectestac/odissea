@@ -200,7 +200,7 @@ $string['backuplogdetailed'] = 'Gedetailleerde log van de bewerking';
 $string['backuploglaststatus'] = 'Laatste log van de bewerking';
 $string['backupmissinguserinfoperms'] = 'Opmerking: deze back-up bevat geen gebruikersgegevens. Oefening en Workshop-activiteiten zullen niet in de back-up zitten omdat dieze modules niet compatibel zijn met dit type back-up.';
 $string['backupnext'] = 'Volgende back-up';
-$string['backupnonisowarning'] = 'Waarschuwing: deze back-up is er één van een niet-unicodeversie van Moodle (voor 1.6). Als deze back-up andere dan ISO-8859-1 teksten bevat, dan kunnen deze CORRUPT worden als je ze probeert in een unicode versie van Moodle terug te zetten. Zie de <a href="http://docs.moodle.org/en/Backup_FAQ">Back-up FAQ</a> voor meer informatie over hoe je deze back-up wel kunt terugzetten.';
+$string['backupnonisowarning'] = 'Waarschuwing: deze back-up is er één van een niet-unicodeversie van Moodle (voor 1.6). Als deze back-up andere dan ISO-8859-1 teksten bevat, dan kunnen deze CORRUPT worden als je ze probeert in een unicode versie van Moodle terug te zetten. Zie de <a href="https://docs.moodle.org/en/Backup_FAQ">Back-up FAQ</a> voor meer informatie over hoe je deze back-up wel kunt terugzetten.';
 $string['backupnotyetrun'] = 'Automatiche backup bezig';
 $string['backuporiginalname'] = 'Naam back-up';
 $string['backuproleassignments'] = 'Back-up de roltoewijzingen voor deze rollen';
@@ -650,11 +650,11 @@ $string['emaildigest'] = 'Type samenvattende e-mail';
 $string['emaildigestcomplete'] = 'Volledige samenvatting  (dagelijkse e-mail met alle berichten)';
 $string['emaildigest_help'] = 'Dit zijn de instellingen voor het versturen van een samenvattende mail die forums zullen gebruiken:
 
-* Geen samenvattende mail - je zult één e-mail per forumbericht ontvangen;
-* Samenvattende mail - volledige berichten - je zult één samenvattende mail per dag ontvangen waarin de volledige inhoud van elk forumbericht van die dag zit;
-Samenvattende mail - enkel onderwerpen je zult één samenvattende mail per dag ontvangen waarin alleen de onderwerpen van elk forumbericht zal zitten.
+* Geen samenvattende mail - je zult één e-mail krijgen per forumbericht;
+* Samenvattende mail - volledige berichten - je krijgt één samenvattende mail per dag met daarin de volledige inhoud van elk forumbericht;
+* Samenvattende mail - enkel onderwerpen - je krijgt één samenvattende mail per dag met daarin enkel het onderwerp van elk forumbericht.
 
-Als je wil kun je kunt andere instellingen voor elk forum gebruiken.';
+Als je wilt, kun je kunt andere instellingen voor elk forum gebruiken.';
 $string['emaildigestoff'] = 'Geen samenvatting (voor elk forumbericht een e-mail)';
 $string['emaildigestsubjects'] = 'Onderwerpen (dagelijkse e-mail met alleen de onderwerpen van de berichten)';
 $string['emaildisable'] = 'Dit e-mailadres is uitgeschakeld';
@@ -906,13 +906,13 @@ $string['geolocation'] = 'breedtegraad - lengtegraad';
 $string['gettheselogs'] = 'Toon logs';
 $string['go'] = 'Start';
 $string['gpl'] = 'Copyright (C) 1999 en verder Martin Dougiamas
-(http://moodle.com)
+(https://moodle.com)
 
 Dit programma is gratis software; je kunt het redistribueren en/of wijzigen volgens de voorwaarden van de GNU General Public License zoals deze is gepubliceerd door de Free Software Foundation; versie 2 van de licentie (of een latere versie als daar je voorkeur naar uit gaat).
 
 Dit programma is gedistribueerd met de hoop dat het bruikbaar is, maar ZONDER ENIGE GARANTIE; zelfs zonder een geïmpliceerde garantie tot VERKOOPBAARHEID (merchantability) of BRUIKBAARHEID VOOR EEN BEPAALDE DOELSTELLING (fitness for a particular purpose). Bekijk de Moodle License information pagina voor meer details:
 
-http://docs.moodle.org/dev/License';
+https://docs.moodle.org/dev/License';
 $string['gpl3'] = 'Copyright (C) 1999 en verder Martin Dougiamas (http://moodle.com)
 
 VERTALING NIET OFFICIEEL
@@ -924,7 +924,7 @@ Bekijk de Moodle-licentie informatiepagina voor alle details (Engels):  http://d
 $string['gpllicense'] = 'GPL Licentie';
 $string['grade'] = 'Cijfer';
 $string['grades'] = 'Cijfers';
-$string['gravatarenabled'] = '<a href="http://www.gravatar.com/">Gravatar</a> is ingeschakeld voor deze site. Als je geen profielafbeelding uploadt, zal Moodle er proberen één te downloaden van Gravatar.';
+$string['gravatarenabled'] = '<a href="https://www.gravatar.com/">Gravatar</a> is ingeschakeld voor deze site. Als je geen profielafbeelding uploadt, zal Moodle er proberen één te downloaden van Gravatar.';
 $string['group'] = 'Groep';
 $string['groupadd'] = 'Nieuwe groep';
 $string['groupaddusers'] = 'Voeg selectie toe aan groep';
@@ -2100,7 +2100,7 @@ $string['uploadfailednotrecovering'] = 'Je bestandsupload is mislukt omdat er ee
 $string['uploadfilelog'] = 'Uploadlog voor bestand {$a}';
 $string['uploadformlimit'] = 'Het geüploade bestand {$a} is groter dan de maximale grootte ingesteld op het formulier';
 $string['uploadlabel'] = 'Titel:';
-$string['uploadlimitwithsize'] = '{$a->contextname} oploadlimiet ({$a->displaysize})';
+$string['uploadlimitwithsize'] = '{$a->contextname} uploadlimiet ({$a->displaysize})';
 $string['uploadnewfile'] = 'Upload nieuw bestand';
 $string['uploadnofilefound'] = 'Er is geen bestand gevonden - weet je zeker dat je een bestand geselecteerd hebt om te uploaden?';
 $string['uploadnotallowed'] = 'Uploads niet toegestaan';

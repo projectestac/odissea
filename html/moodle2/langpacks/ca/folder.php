@@ -25,11 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bynameondate'] = 'per {$a->name} - {$a->date}';
 $string['contentheader'] = 'Contingut';
-$string['display'] = 'Mostra els continguts de la carpeta';
-$string['display_help'] = 'Si escolliu mostrar els continguts de la carpeta en una pàgina del curs, no hi haurà enllaç a una pàgina separada. La descripció es mostrarà només si «Mostra la descripció a la pàgina del curs» està marcada.<br />
+$string['display'] = 'Mostra el contingut de la carpeta';
+$string['display_help'] = 'Si escolliu mostrar el contingut de la carpeta en una pàgina del curs, no hi haurà enllaç a una pàgina separada. La descripció es mostrarà només si «Mostra la descripció a la pàgina del curs» està marcada.<br />
 També cal tenir en compte que en aquest cas no es podran registrar les accions de visualització dels participants.';
-$string['displayinline'] = 'Dins d\'una pàgina del curs';
+$string['displayinline'] = 'En la pàgina principal del curs';
 $string['displaypage'] = 'En una pàgina separada';
 $string['dnduploadmakefolder'] = 'Descomprimeix els fitxers i crea una carpeta nova';
 $string['downloadfolder'] = 'Descarrega la carpeta';
@@ -39,6 +40,10 @@ $string['folder:addinstance'] = 'Afegeix una carpeta nova';
 $string['foldercontent'] = 'Fitxers i subcarpetes';
 $string['folder:managefiles'] = 'Gestiona fitxers al mòdul Carpeta';
 $string['folder:view'] = 'Visualitza el contingut de la carpeta';
+$string['indicator:cognitivedepth'] = 'Carpeta cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva assolida per l\'estudiant en un recurs de carpeta.';
+$string['indicator:socialbreadth'] = 'Carpeta social';
+$string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en la amplitud social assolida per l\'estudiant en un recurs de carpeta.';
 $string['maxsizetodownload'] = 'Mida màxima de la carpeta a descarregar (MB)';
 $string['maxsizetodownload_help'] = 'Mida màxima de la carpeta que es podrà descarregar com un fitxer comprimit. Si s\'estableix a zero, la mida de la carpeta serà il·limitada.';
 $string['modulename'] = 'Carpeta';
@@ -48,13 +53,15 @@ Una carpeta pot utilitzar-se
 * Per a una sèrie de fitxers d\'un tema; per exemple, un conjunt d\'exàmens d\'anys anteriors en format .pdf o una col·lecció de fitxers d\'imatge, perquè els alumnes els emprin en els seus projectes
 * Per oferir un espai compartit de càrrega de fitxers per als professors en la pàgina del curs (en aquest cas, s\'ha de mantenir la carpeta oculta a fi que només els professors la puguin veure)';
 $string['modulenameplural'] = 'Carpetes';
+$string['newfoldercontent'] = 'Nou contingut de carpeta';
 $string['noautocompletioninline'] = 'La compleció automàtica de la visualització de l\'activitat no és pot seleccionar al mateix temps que l\'opció «Mostra en línia»';
 $string['page-mod-folder-view'] = 'Pàgina principal del mòdul de fitxers';
 $string['page-mod-folder-x'] = 'Qualsevol pàgina del mòdul de fitxers';
 $string['pluginadministration'] = 'Administració de carpetes';
 $string['pluginname'] = 'Carpeta';
+$string['privacy:metadata'] = 'El connector de recurs de carpeta no emmagatzema cap dada personal.';
 $string['search:activity'] = 'Carpeta';
 $string['showdownloadfolder'] = 'Mostra el botó de descàrrega de la carpeta';
-$string['showdownloadfolder_help'] = 'Si s\'estableix a «sí», es mostrarà un botó que permetrà descarregar el contingut de la carpeta en un fitxer comprimit.';
+$string['showdownloadfolder_help'] = 'Si s\'estableix a «Sí», es mostrarà un botó que permetrà de descarregar el contingut de la carpeta en un fitxer comprimit.';
 $string['showexpanded'] = 'Mostra les subcarpetes expandides.';
-$string['showexpanded_help'] = 'Si s\'habilita mostrarà les subcarpetes expandides per defecte. En cas contrari les subcarpetes es mostraran col·lapsades.';
+$string['showexpanded_help'] = 'Si s\'estableix a «Sí», es mostraran per defecte les subcarpetes expandides. En cas contrari les subcarpetes es mostraran col·lapsades.';

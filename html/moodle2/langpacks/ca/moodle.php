@@ -29,6 +29,7 @@ $string['abouttobeinstalled'] = 's\'instal·larà ara';
 $string['action'] = 'Acció';
 $string['actionchoice'] = 'Què voleu fer amb el fitxer \'{$a}\'?';
 $string['actions'] = 'Accions';
+$string['actionsmenu'] = 'Menú d\'accions';
 $string['active'] = 'Actiu';
 $string['activeusers'] = 'Usuaris actius';
 $string['activities'] = 'Activitats';

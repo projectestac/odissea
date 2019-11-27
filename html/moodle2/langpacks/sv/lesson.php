@@ -537,6 +537,7 @@ då kommer man att nå slutet på lektionen när alla sidor har visats.
 $string['numberofpagesviewed'] = 'Antal sidor som har visats:  {$a}';
 $string['numberofpagesviewednotice'] = 'Antal besvarade frågor: {$a->nquestions}; (Du bör besvara åtminstone: {$a->minquestions})';
 $string['numerical'] = 'Numerisk';
+$string['offlinedatamessage'] = 'Du har arbetat med detta försök på en mobil enhet. Senaste gången något sparades var för {$a} sedan. Kolla gärna så att du inte har arbete som inte sparats.';
 $string['ongoing'] = 'Visa pågående resultat';
 $string['ongoingcustom'] = 'Du har uppnått {$a->score} poäng av {$a->currenthigh} poäng så här långt.';
 $string['ongoing_help'] = '<p>Om Du har aktiverat det här så kommer varje sida att visa det aktuella resultatet (så här långt) som andel av det möjliga sammanlagda resultatet.  Exempel:  Någon har besvarat 4 frågor värda 5 poäng vardera och besvarat en felaktigt. Det hittills ackumulerade resultatet skulle visa att vederbörande   att f.n. har uppnått 15/20 poäng.</p>';
@@ -667,6 +668,7 @@ $string['preprocesserror'] = 'Ett fel uppstod i sb m förbearbetning ';
 $string['preview'] = 'Förhandsgranska';
 $string['previewlesson'] = 'Förhandsgranska {$a}';
 $string['previouspage'] = 'Föregående sida';
+$string['privacy:metadata:timer:timemodifiedoffline'] = 'Det senaste tillfället när vi sparade aktivitet från mobilappen';
 $string['processerror'] = 'Ett fel uppstod i sb m bearbetning ';
 $string['progressbar'] = 'Rad som visar hur något fortskrider';
 $string['progressbar_help'] = '<p>Detta visar längst ner på sidan en rad som visar hur processen fortgår.

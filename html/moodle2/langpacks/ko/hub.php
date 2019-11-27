@@ -164,6 +164,7 @@ $string['registeredsites'] = '등록된 사이트들';
 $string['registermoochtips'] = 'Moodle.net에 등록하기 위해서는 Moodle.org  에 등록되어 있어야 합니다.';
 $string['registersite'] = '{$a}에 등록';
 $string['registerwith'] = '허브에 등록';
+$string['registerwithmoodleorg'] = 'Moodle.org 에 등록';
 $string['registrationconfirmed'] = '사이트 등록이 확인 되었습니다.';
 $string['registrationconfirmedon'] = '이제 허브 {$a}에 등록되었습니다. 강좌 관리메뉴의 "공개" 링크를 사용하여 강좌들을 이 허브에 공개할 수 있습니다.';
 $string['registrationinfo'] = '등록 정보';

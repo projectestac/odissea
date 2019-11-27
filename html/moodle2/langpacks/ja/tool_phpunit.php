@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'PHPユニットテスト';
-$string['privacy:metadata'] = 'PHPUnitテストプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'PHPUnitテストプラグインはいかなる個人データも保存しません。';

@@ -122,6 +122,7 @@ $string['eventspersonal'] = 'Meine persönlichen Termine';
 $string['eventsrelatedtocategories'] = 'Termine bezogen auf Kursbereiche';
 $string['eventsrelatedtocourses'] = 'Kursbezogene Termine';
 $string['eventsrelatedtogroups'] = 'Gruppenbezogene Termine';
+$string['eventsskipped'] = 'Termine übersprungen: {$a}';
 $string['eventstarttime'] = 'Anfangszeit';
 $string['eventstoexport'] = 'Zu exportierende Termine';
 $string['eventsubscriptioncreated'] = 'Kalenderabonnement angelegt';

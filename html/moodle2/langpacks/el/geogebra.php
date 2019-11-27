@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['attempts'] = 'Προσπάθειες';
+$string['availabledate'] = 'Διαθέσιμη από';
+$string['average'] = 'Μέσος όρος';
 $string['comment'] = 'Σχόλιο';
 $string['contentheader'] = 'Περιεχόμενο';
 $string['description'] = 'Περιγραφή';

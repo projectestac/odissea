@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'イタリック';
-$string['privacy:metadata'] = 'atto_italicプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_italicプラグインはいかなる個人データも保存しません。';

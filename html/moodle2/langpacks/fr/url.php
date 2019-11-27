@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['chooseavariable'] = 'Sélectionner une variable...';
+$string['chooseavariable'] = 'Sélectionner une variable…';
 $string['clicktoopen'] = 'Cliquer le lien {$a} pour ouvrir la ressource.';
 $string['configdisplayoptions'] = 'Sélectionner toutes les options à mettre à disposition des utilisateurs. Les réglages existants ne sont pas modifiés. Vous pouvez sélectionner plusieurs champs simultanément.';
 $string['configframesize'] = 'Cette valeur est la hauteur (en pixels) du cadre contenant la navigation. Elle est utilisée quand une page web ou un fichier déposé est affiché dans un cadre.';

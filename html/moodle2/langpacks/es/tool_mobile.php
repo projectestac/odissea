@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configmobilecssurl'] = 'Archivo CSS para personalizar su interfaz de aplicaciones móviles.';
 $string['customlangstrings'] = 'Cadenas personalizadas del idioma';
+$string['downloadcourse'] = 'Descargar curso';
 $string['getmoodleonyourmobile'] = 'Descargar la app para dispositivos móviles';
 $string['httpsrequired'] = 'HTTPS requerido';
 $string['mobileapp'] = 'App para dispositivos móviles';

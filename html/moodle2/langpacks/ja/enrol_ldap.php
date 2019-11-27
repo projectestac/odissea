@@ -111,7 +111,7 @@ $string['pluginname_desc'] = '<p>あなたのユーザ登録をコントロー�
 <p>ユーザ登録情報はユーザのログイン時に更新されます。登録情報の同期をとるため、スクリプトを実行させることもできます。<em>enrol/ldap/enrol_ldap_sync.php</em>をご覧ください。</p>
 <p>このプラグインでは新しいグループがLDAP内に作成された場合、自動的に新しいコースを作成することも可能です。</p>';
 $string['pluginnotenabled'] = 'プラグインが有効にされていません!';
-$string['privacy:metadata'] = 'LDAP登録プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'LDAP登録プラグインはいかなる個人データも保存しません。';
 $string['role_mapping'] = '<p>それぞれのロールにおいて、あなたはコースが置かれている場所を表すグループのLDAPコンテクストすべてを指定する必要があります。異なるコンテクストはセミコロン (;) で分離してください。</p><p>また、あなたのLDAPサーバがグループメンバーを保持するため使用する属性も指定する必要があります。通常、「member」または「memberUid」です。</p>';
 $string['role_mapping_attribute'] = '{$a} のLDAPメンバー属性';
 $string['role_mapping_context'] = '{$a} のLDAPコンテクスト';

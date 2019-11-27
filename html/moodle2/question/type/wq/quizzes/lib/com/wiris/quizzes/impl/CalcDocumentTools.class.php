@@ -86,6 +86,7 @@ class com_wiris_quizzes_impl_CalcDocumentTools {
 		com_wiris_util_xml_WXmlUtils::setAttribute($prop2, "name", $name);
 		$props->addChild($prop2);
 		$prop2->addChild(Xml::createPCData($value));
+		$this->stringCalcDocument = com_wiris_util_xml_WXmlUtils::serializeXML($this->calcDocument);
 		return $this->stringCalcDocument;
 	}
 	public function getVersion() {

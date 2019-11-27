@@ -119,6 +119,7 @@ $string['eventsimported'] = 'Eventos importados: {$a}';
 $string['eventskey'] = 'Clave de eventos';
 $string['eventsource'] = 'Orixe do evento';
 $string['eventspersonal'] = 'Os meus eventos persoais';
+$string['eventsrelatedtocategories'] = 'Eventos referidos a categorías';
 $string['eventsrelatedtocourses'] = 'Eventos referidos aos cursos';
 $string['eventsrelatedtogroups'] = 'Eventos referidos aos grupos';
 $string['eventstarttime'] = 'Hora de comezo';

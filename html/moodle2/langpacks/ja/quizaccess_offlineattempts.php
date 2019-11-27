@@ -35,4 +35,4 @@ $string['offlineattemptserror'] = '時間制限が設定されている場合、
 $string['offlinedatamessage'] = 'あなたはこの受験にモバイルデバイスを使用して取り組みました。データはこのサイトに {$a} 前に保存されました。';
 $string['pleaseconfirm'] = '未保存の作業がないことを確認してください。';
 $string['pluginname'] = 'オフライン受験アクセスルール';
-$string['privacy:metadata'] = 'オフライン受験小テストアクセスルールプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'オフライン受験小テストアクセスルールプラグインはいかなる個人データも保存しません。';

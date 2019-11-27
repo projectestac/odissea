@@ -29,4 +29,4 @@ $string['pluginname'] = 'Fitxategi pribatuak';
 $string['privacy:metadata'] = 'Fitxategi pribatuak blokeak erabiltzailearen fitxategi pribatuen zerrenda eta estekak baino ez ditu erakusten.';
 $string['privatefiles'] = 'Fitxategi pribatuak';
 $string['private_files:addinstance'] = 'Gehitu fitxategi pribatuak bloke berria';
-$string['private_files:myaddinstance'] = 'Gehitu fitxategi pribatuak bloke berria aginte-panelean';
+$string['private_files:myaddinstance'] = 'Gehitu fitxategi pribatuak bloke berria Aginte-panelean';

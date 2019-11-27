@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'JavaScriptセキュリティ - 小テストアクセスルール';
 $string['popupwithjavascriptsupport'] = 'JavaScriptセキュリティ対策を施したフルスクリーンポップアップ';
-$string['privacy:metadata'] = 'JavaScriptセキュリティ小テストアクセスルールプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'JavaScriptセキュリティ小テストアクセスルールプラグインはいかなる個人データも保存しません。';

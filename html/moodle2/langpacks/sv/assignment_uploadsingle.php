@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Ladda upp enkskild';
+$string['privacy:metadata'] = 'Modulen "Inlämningsuppgift - enskilt fil"  sparar inte personuppgifter.';

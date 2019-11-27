@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['correctanswer'] = 'Réponse correcte';
-$string['correctanswerfalse'] = 'La réponse correcte est « Faux ».';
-$string['correctanswertrue'] = 'La réponse correcte est « Vrai ».';
+$string['correctanswerfalse'] = 'La réponse correcte est « Faux ».';
+$string['correctanswertrue'] = 'La réponse correcte est « Vrai ».';
 $string['false'] = 'Faux';
 $string['feedbackfalse'] = 'Feedback pour la réponse « Faux »';
 $string['feedbacktrue'] = 'Feedback pour la réponse « Vrai »';
@@ -35,7 +35,7 @@ $string['pleaseselectananswer'] = 'Veuillez sélectionner une réponse.';
 $string['pluginname'] = 'Vrai/Faux';
 $string['pluginnameadding'] = 'Ajouter une question Vrai/Faux';
 $string['pluginnameediting'] = 'Modification d\'une question Vrai/Faux';
-$string['pluginname_help'] = 'En réponse à une question (qui peut contenir des images) le participant choisit entre « Vrai » et « Faux ».';
+$string['pluginname_help'] = 'En réponse à une question (qui peut contenir des images) le participant choisit entre « Vrai » et « Faux ».';
 $string['pluginnamesummary'] = 'Une forme simplifiée de choix multiple avec les deux seules options Vrai et Faux.';
 $string['privacy:metadata'] = 'Le plugin de type de question Vrai/faux n\'enregistre aucune donnée personnelle.';
 $string['selectone'] = 'Sélectionnez une réponse :';

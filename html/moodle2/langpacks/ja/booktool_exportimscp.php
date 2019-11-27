@@ -30,4 +30,4 @@ $string['exportimscp:export'] = 'IMSコンテンツパッケージとしてブ�
 $string['generateimscp'] = 'IMS CPを生成する';
 $string['nochapters'] = 'ブックの章が見つからないため、IMS CPにエクスポートできません。';
 $string['pluginname'] = 'ブックIMS CPエクスポート';
-$string['privacy:metadata'] = 'ブックIMS CPエクスポートプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ブックIMS CPエクスポートプラグインはいかなる個人データも保存しません。';

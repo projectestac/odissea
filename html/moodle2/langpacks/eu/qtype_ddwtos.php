@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmorechoiceblanks'] = 'Zuriuneak {no} aukera gehiagotarako';
+$string['addmorechoiceblanks'] = 'Gehitu {no} zuriune aukera gehiagorako';
 $string['answer'] = 'Erantzuna';
 $string['blank'] = 'hutsik';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';

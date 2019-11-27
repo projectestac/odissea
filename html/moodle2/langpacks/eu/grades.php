@@ -85,9 +85,9 @@ $string['aggregationhintnovalue'] = '(Hutsik)';
 $string['aggregation_link'] = 'kalifikazioa/agregazioa';
 $string['aggregationofa'] = '{$a}-(r)en agregazioa';
 $string['aggregationposition'] = 'Agregazioaren kokalekua';
-$string['aggregationposition_help'] = 'Ezarpen honek adierazten du kategoria eta ikastaroan guztirako zutabeak kalifikazio-liburuaren txostenaren hasieran edo bukaeran agertuko diren.';
+$string['aggregationposition_help'] = 'Ezarpen honek adierazten du kategoria eta ikastaroan guztirako zutabeak kalifikazio-liburuaren txostenaren hasieran edo amaieran agertuko diren.';
 $string['aggregationsvisible'] = 'Eskura dauden agregazio-motak';
-$string['aggregationsvisiblehelp'] = 'Aukeratu erabilgarri egongo diren agregazio-motak. Erabili Ctrl tekla bat batino gehiago aukeratzeko.';
+$string['aggregationsvisiblehelp'] = 'Aukeratu erabilgarri egongo diren agregazio-motak. Mantendu Ctrl tekla sakatuta hainbat elementu aukeratzeko.';
 $string['allgrades'] = 'Kalifikazio guztiak kategoriaka';
 $string['allstudents'] = 'Ikasle guztiak';
 $string['allusers'] = 'Erabiltzaile guztiak';
@@ -108,7 +108,7 @@ $string['calculatedgrade'] = 'Kalkulatutako kalifikazioa';
 $string['calculation'] = 'Kalkulua';
 $string['calculationadd'] = 'Gehitu kalkulua';
 $string['calculationedit'] = 'Editatu kalkulua';
-$string['calculation_help'] = 'Kalifikazioen kalkulua kalifikazioak ezartzeko erabiltzen den formula bat da. Formulak berdin (=) sinboloarekin hasi behar du eta matematika-eragiketa ohikoak erabiltzen ditu, besteak beste max, min and sum. Nahi izanez gero, beste kalifikazio-elementu batzuk sar daitezke kalkuluan horien ID zenbakiak bi kortxeteren artean idatzita.';
+$string['calculation_help'] = 'Kalifikazioen kalkulua kalifikazioak ezartzeko erabiltzen den formula bat da. Formulak berdin (=) sinboloarekin hasi behar du eta ohiko eragiketa matematikoak erabiltzen ditu, besteak beste max, min and sum. Nahi izanez gero, beste kalifikazio-elementu batzuk sar daitezke kalkuluan horien ID zenbakiak bi kortxeteren artean idatzita.';
 $string['calculation_link'] = 'kalifikazioa/kalkulua';
 $string['calculationsaved'] = 'Kalkulua gordeta';
 $string['calculationview'] = 'Ikusi kalkulua';
@@ -160,7 +160,7 @@ $string['displaypercent'] = 'Erakutsi portzentajeak';
 $string['displaypoints'] = 'Erakutsi puntuak';
 $string['displayweighted'] = 'Erakutsi kalifikazio ponderatuak';
 $string['dropdown'] = 'Zabaltzen den menua';
-$string['droplow'] = 'Baxuena baztertu';
+$string['droplow'] = 'Baztertu baxuena';
 $string['droplowestvalue'] = 'Ezarri kalifikazio-balio txikiena baztertzeko aukera';
 $string['droplowestvalues'] = 'Baztertu balio txikienak {$a}';
 $string['droplow_help'] = 'Ezarpen honek X kalifikaziotik beherakoak agregaziotik baztertzea ahalbidetzen du.';
@@ -236,7 +236,7 @@ $string['feedbacks'] = 'Feedbackak';
 $string['feedbacksaved'] = 'Feedbacka gordeta';
 $string['feedbackview'] = 'Ikusi feedbacka';
 $string['finalgrade'] = 'Amaierako kalifikazioa';
-$string['finalgrade_help'] = '<p>Kalkulu guztiak egin ondoren lortutako bukaerako kalifikazioa (cache-an).</p>';
+$string['finalgrade_help'] = '<p>Kalkulu guztiak egin ondoren lortutako amaierako kalifikazioa (cache-an).</p>';
 $string['fixedstudents'] = 'Ikasleen zutabe finkoa';
 $string['fixedstudents_help'] = 'Ikasleen zutabea kalifikatzailearen txostenean finkatzen du, kalifikazioak horizontalean lerratuz.';
 $string['forceimport'] = 'Behartu inportatzea';
@@ -255,7 +255,7 @@ $string['gradeanalysis'] = 'Kalifikazio-analisia';
 $string['gradebook'] = 'Kalifikazio-liburua';
 $string['gradebookcalculationsfixbutton'] = 'Onartu kalifikazioen aldaketak eta konpondu kalkulu-erroreak';
 $string['gradebookcalculationsuptodate'] = 'Kalifikazio-liburuko kalkuluak eguneratuta daude. Agian orria eguneratu beharko duzu aldaketak ikusi ahal izateko.';
-$string['gradebookcalculationswarning'] = 'Oharra: Errore batzuk atzeman dira kalifikazio-liburuko kalifikazioak kalkulatzean. Zure ikastaroa oraindik ez bada hasi edo abian badago, gomendagarria da erroreak beheko botoian klik eginda konpontzea, nahiz eta horrek kalifikazio batzuk aldatzea suposa dezakeen. Zure ikastaroa dagoeneko bukatu bada eta kalifikazioak bidali badira, ziur aski ez duzu arazo hau konpondu nahiko.
+$string['gradebookcalculationswarning'] = 'Oharra: Errore batzuk atzeman dira kalifikazio-liburuko kalifikazioak kalkulatzean. Zure ikastaroa oraindik ez bada hasi edo abian badago, gomendagarria da erroreak beheko botoian klik eginda konpontzea, nahiz eta horrek kalifikazio batzuk aldatzea suposa dezakeen. Zure ikastaroa dagoeneko amaitu bada eta kalifikazioak bidali badira, ziur aski ez duzu arazo hau konpondu nahiko.
 
 Bertsio berria {$a->currentversion} da; zuk kalifikazio-liburuaren {$a->gradebookversion} bertsioa erabiltzen ari zara. Aldaketen zerrenda bat ikusi dezakezu <a href="{$a->url}">Kalifikazio-liburuaren kalkuluen aldaketetan</a>.';
 $string['gradebookhiddenerror'] = 'Kalifikazio-liburua konfiguratuta dago ikasleei ezer ez erakusteko.';
@@ -396,7 +396,7 @@ $string['importcsv_help'] = 'Kalifikazioak CSV fitxategiak erabiliz inporta dait
 * Fitxategiko errenkada bakoitzak erregistro bana du
 * Erregistro bakoitza komaz (edo bestelako bereizle batez) banatutako datu-multzo bat da
 * Lehen erregistroak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
-* Erabiltzailea identifikatuko duen eremu bat beharrezkoa da - erabiltzaile-izena, ID zenbakia edo e-posta helbidea
+* Erabiltzailea identifikatuko duen eremu bat beharrezkoa da - erabiltzaile-izena, ID zenbakia edo helbide elektronikoa
 
 Formatu egokia duen fitxategi bat lortu daiteke aurretik kalifikazio batzuk esportatuta. Fitxategi hori gero editatu eta CSV formatuarekin gorde daiteke.';
 $string['importcustom'] = 'Inportatu pertsonalizatutako ikaste-emaitza bezala (ikastaro honetan baino ez)';
@@ -457,7 +457,7 @@ $string['lowest'] = 'Baxuena';
 $string['lowgradeletter'] = 'Baxua';
 $string['manualitem'] = 'Eskuzko elementua';
 $string['mapfrom'] = 'Mapa hemendik';
-$string['mapfrom_help'] = 'Aukeratu erabiltzailea identifikatzen duen datua duen kalkulu-orriko zutabea, hala nola erabiltzaile-izena, erabiltzailearen IDa edo e-posta helbidea.';
+$string['mapfrom_help'] = 'Aukeratu erabiltzailea identifikatzen duen datua duen kalkulu-orriko zutabea, hala nola erabiltzaile-izena, erabiltzailearen IDa edo helbide elektronikoa.';
 $string['mappings'] = 'Kalifikazio-elementuen lotura';
 $string['mappings_help'] = 'Kalkulu-orriko kalifikazio-zutabe bakoitzeko, aukeratu dagokion kalifikazio-elementua kalifikazioak bertara inportatzeko.';
 $string['mapto'] = 'Mapa hona';
@@ -561,7 +561,7 @@ $string['outcome'] = 'Ikaste-emaitza';
 $string['outcomeassigntocourse'] = 'Esleitu beste ikaste-emaitza bat ikastaro honetan';
 $string['outcomecategory'] = 'Sortu ikaste-emaitzak kategorian';
 $string['outcomecategorynew'] = 'Kategoria berria';
-$string['outcomeconfirmdelete'] = 'Ziur al zaude "{$a}" ikaste-emaitza ezabatu nahi duzula?';
+$string['outcomeconfirmdelete'] = 'Ziur zaude "{$a}" ikaste-emaitza ezabatu nahi duzula?';
 $string['outcomecreate'] = 'Gehitu ikaste-emaitza berria';
 $string['outcomedelete'] = 'Ezabatu ikaste-emaitza';
 $string['outcomefullname'] = 'Izen osoa';
@@ -694,8 +694,8 @@ $string['respectingcurrentdata'] = 'Egungo ezarpenak ez dira aldatu';
 $string['rowpreviewnum'] = 'Aurreikusi zutabeak';
 $string['rowpreviewnum_help'] = 'Inportatzera doazen datuak aurreikusi daitezke inportazioa konfirmatu aurretik. Ezarpen honek zenbat errenkada aurreikusiko diren zehazten du.';
 $string['savechanges'] = 'Gorde aldaketak';
-$string['savepreferences'] = 'Hobespenak gorde';
-$string['scaleconfirmdelete'] = 'Ziur al zaude "{$a}" eskala ezabatu nahi duzula?';
+$string['savepreferences'] = 'Gorde hobespenak';
+$string['scaleconfirmdelete'] = 'Ziur zaude "{$a}" eskala ezabatu nahi duzula?';
 $string['scaledpct'] = 'Eskalatua %';
 $string['seeallcoursegrades'] = 'Ikusi ikastaroaren kalifikazio guztiak';
 $string['select'] = 'Aukeratu {$a}';
@@ -780,7 +780,7 @@ $string['sitewide'] = 'Gune osoa';
 $string['sort'] = 'ordenatu';
 $string['sortasc'] = 'Ordenatu behetik gora';
 $string['sortbyfirstname'] = 'Ordenatu izenaren arabera';
-$string['sortbylastname'] = 'Ordenatu deituraren arabera';
+$string['sortbylastname'] = 'Ordenatu abizenaren arabera';
 $string['sortdesc'] = 'Ordenatu goitik behera';
 $string['standarddeviation'] = 'Desbiderapen estandarra';
 $string['stats'] = 'Estatistikak';
@@ -828,7 +828,7 @@ $string['usepercent'] = 'Erabili portzentajea';
 $string['user'] = 'Erabiltzailea';
 $string['userenrolmentsuspended'] = 'Erabiltzaile-matrikulazioa eten da.';
 $string['userfields_show'] = 'Erakutsi erabiltzailearen eremuak';
-$string['userfields_show_help'] = 'Erakutsi e-posta helbidearen moduko erabiltzaile eremu gehigarriak kalifikatzaile-txostenean. Erakutsiko diren eremu zehatzak gune mailako \'Erakutsi erabiltzailearen identitatea\' ezarpenak kontrolatzen du.';
+$string['userfields_show_help'] = 'Erakutsi helbide elektronikoaren moduko erabiltzaile eremu gehigarriak kalifikatzaile-txostenean. Erakutsiko diren eremu zehatzak gune mailako \'Erakutsi erabiltzailearen identitatea\' ezarpenak kontrolatzen du.';
 $string['usergrade'] = 'Erabiltzailea {$a->fullname} ({$a->useridnumber}) elementu honetan {$a->gradeidnumber}';
 $string['userid'] = 'Erabiltzailearen IDa';
 $string['useridnumberwarning'] = 'ID zenbakia ez duten erabiltzaileak baztertuta daude esportaziotik. Era beran, ezin dira inportatu';

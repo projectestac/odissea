@@ -30,4 +30,4 @@ $string['category:synchronised'] = 'ロール割り当てをコース登録に�
 $string['enrolcategorysynctask'] = 'カテゴリ登録同期タスク';
 $string['pluginname'] = 'カテゴリ登録';
 $string['pluginname_desc'] = 'カテゴリ登録プラグインはカテゴリコンテクスト内でケイパビリティ「enrol/category:synchronised」が許可されるロールすべてのロール割り当てを同期します。';
-$string['privacy:metadata'] = 'カテゴリ登録プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'カテゴリ登録プラグインはいかなる個人データも保存しません。';

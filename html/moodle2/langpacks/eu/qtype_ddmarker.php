@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoreitems'] = 'Zuriuneak {no} markatzaile gehiagotarako';
+$string['addmoreitems'] = 'Gehitu {no} zuriune markatzaile gehiagorako';
 $string['alttext'] = 'Aukerako testua';
 $string['answer'] = 'Erantzuna';
 $string['bgimage'] = 'Atzeko planoaren irudia';

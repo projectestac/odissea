@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'データベース自動リンク';
-$string['privacy:metadata'] = 'データベース自動リンクプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'データベース自動リンクプラグインはいかなる個人データも保存しません。';

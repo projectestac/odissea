@@ -33,4 +33,4 @@ $string['printchapter'] = 'この章を印刷する';
 $string['printdate'] = '日付';
 $string['printedby'] = '印刷者';
 $string['print:print'] = 'ブックを印刷する';
-$string['privacy:metadata'] = 'ブック印刷プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ブック印刷プラグインはいかなる個人データも保存しません。';

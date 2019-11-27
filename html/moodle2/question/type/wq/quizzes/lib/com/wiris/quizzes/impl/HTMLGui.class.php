@@ -101,15 +101,15 @@ class com_wiris_quizzes_impl_HTMLGui {
 	}
 	public function printLocalData($h, $q, $unique, $conf) {
 		$h->openDivClass(null, "wirisfieldsetwrapper");
-		$h->openFieldset("wirislocaldatafieldset" . _hx_string_rec($unique, ""), $this->t->t("inputmethod"), "wirismainfieldset");
+		$h->openFieldset("wirislocaldatafieldset" . $unique, $this->t->t("inputmethod"), "wirismainfieldset");
 		$langString = $this->t->t("lang");
-		$h->help("wirisinputmethodhelp" . _hx_string_rec($unique, ""), "https://docs.wiris.com/" . $langString . "/quizzes/studio#correct_answer", $this->t->t("manual"));
+		$h->help("wirisinputmethodhelp" . $unique, "https://docs.wiris.com/" . $langString . "/quizzes/studio#correct_answer", $this->t->t("manual"));
 		$id = null;
 		$inputmethod = $conf->optAnswerFieldInlineEditor || $conf->optAnswerFieldPopupEditor || $conf->optAnswerFieldPlainText;
 		if($inputmethod) {
-			$h->openDivClass("wirisinputfielddiv" . _hx_string_rec($unique, ""), "wirissecondaryfieldset");
+			$h->openDivClass("wirisinputfielddiv" . $unique, "wirissecondaryfieldset");
 			$h->openUl("wirisinputfieldul", "wirisul");
-			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD . "]";
+			$id = "wirislocaldata" . $unique . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD . "]";
 			if($conf->optAnswerFieldInlineEditor) {
 				$h->openLi();
 				$h->input("radio", $id . "[0]", $id, com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR, null, null);
@@ -132,37 +132,37 @@ class com_wiris_quizzes_impl_HTMLGui {
 			$h->close();
 		}
 		if($conf->optOpenAnswer && $conf->optCompoundAnswer) {
-			$h->openDivClass("wiriscompoundanswerdiv" . _hx_string_rec($unique, ""), "wirissecondaryfieldset");
-			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER . "]";
+			$h->openDivClass("wiriscompoundanswerdiv" . $unique, "wirissecondaryfieldset");
+			$id = "wirislocaldata" . $unique . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER . "]";
 			$h->input("checkbox", $id, "", com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE, null, null);
 			$h->label($this->t->t("compoundanswer"), $id, null);
-			$h->openDivClass("wiriscompoundanswergradediv" . _hx_string_rec($unique, ""), "wiristerciaryfieldset");
-			$h->openDiv("wiriscompoundanswergradeand" . _hx_string_rec($unique, ""));
-			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE . "][and]";
+			$h->openDivClass("wiriscompoundanswergradediv" . $unique, "wiristerciaryfieldset");
+			$h->openDiv("wiriscompoundanswergradeand" . $unique);
+			$id = "wirislocaldata" . $unique . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE . "][and]";
 			$h->input("radio", $id, "wiriscompoundanswergrade", com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_AND, null, null);
 			$h->label($this->t->t("allanswerscorrect"), $id, null);
 			$h->close();
-			$h->openDiv("wiriscompoundanswergradedistribute" . _hx_string_rec($unique, ""));
-			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE . "][distribute]";
+			$h->openDiv("wiriscompoundanswergradedistribute" . $unique);
+			$id = "wirislocaldata" . $unique . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE . "][distribute]";
 			$h->input("radio", $id, "wiriscompoundanswergrade", com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTE, null, null);
 			$h->label($this->t->t("distributegrade"), $id, null);
-			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION . "]";
+			$id = "wirislocaldata" . $unique . "[" . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION . "]";
 			$h->input("text", $id, "", "", $this->t->t("gradedistribution"), "wirisadditionalinput");
 			$h->close();
 			$h->close();
 			$h->close();
 		}
 		if($conf->optAuxiliarTextInput) {
-			$h->openDivClass("wirisauxiliartextinputdiv" . _hx_string_rec($unique, ""), "wirissecondaryfieldset");
-			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_SHOW_AUXILIAR_TEXT_INPUT . "]";
+			$h->openDivClass("wirisauxiliartextinputdiv" . $unique, "wirissecondaryfieldset");
+			$id = "wirislocaldata" . $unique . "[" . com_wiris_quizzes_impl_LocalData::$KEY_SHOW_AUXILIAR_TEXT_INPUT . "]";
 			$h->input("checkbox", $id, "", "true", null, null);
 			$labelText = $this->t->t("showauxiliartextinput");
 			$h->label($labelText, $id, null);
 			$h->close();
 		}
 		if($conf->optAuxiliarCas) {
-			$h->openDivClass("wirisauxiliarcasdiv" . _hx_string_rec($unique, ""), "wirissecondaryfieldset");
-			$id = "wirislocaldata" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS . "]";
+			$h->openDivClass("wirisauxiliarcasdiv" . $unique, "wirissecondaryfieldset");
+			$id = "wirislocaldata" . $unique . "[" . com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS . "]";
 			if(!$conf->optAuxiliarCasReplaceEditor) {
 				$h->input("checkbox", $id, "", com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_ADD, null, null);
 			}
@@ -174,7 +174,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 				$h->select($id, null, new _hx_array(array(new _hx_array(array(com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_FALSE, $this->t->t("no"))), new _hx_array(array(com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_ADD, $this->t->t("add"))), new _hx_array(array(com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_REPLACE_INPUT, $this->t->t("replaceeditor"))))));
 			}
 			$h->text(" ");
-			$h->jsComponent("wirisinitialcontentbutton" . _hx_string_rec($unique, ""), "JsInitialCasInput", $q->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION));
+			$h->jsComponent("wirisinitialcontentbutton" . $unique, "JsInitialCasInput", $q->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION));
 			$h->close();
 		}
 		$h->close();
@@ -313,19 +313,19 @@ class com_wiris_quizzes_impl_HTMLGui {
 	}
 	public function getWirisTestDynamic($q, $qi, $correctAnswer, $userAnswer, $unique) {
 		$h = new com_wiris_quizzes_impl_HTML();
-		$h->openDivClass("wiristestresult" . _hx_string_rec($unique, ""), "wiristestresult");
-		$h->openDivClass("wiristestassertions" . _hx_string_rec($unique, ""), "wiristestassertions");
-		$h->openDivClass("wiristestassertionslistwrapper", "wiristestassertionslistwrapper");
+		$h->openDivClass("wiristestresult" . $unique, "wiristestresult");
+		$h->openDivClass("wiristestassertions" . $unique, "wiristestassertions");
+		$h->openDivClass("wiristestassertionslistwrapper" . $unique, "wiristestassertionslistwrapper");
 		$h->close();
 		$h->close();
 		$h->close();
-		$h->openDivClass("wiristestcorrectanswer" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($correctAnswer, "") . "]", "wiristestcorrectanswer");
+		$h->openDivClass("wiristestcorrectanswer" . $unique . "[" . _hx_string_rec($correctAnswer, "") . "]", "wiristestcorrectanswer");
 		$h->openDivClass(null, "wirisfieldsetwrapper");
-		$h->openFieldset("wiristestcorrectanswerfieldset" . _hx_string_rec($unique, ""), $this->t->t("correctanswer"), "wirismainfieldset wiristestcorrectanswerfieldset");
-		$h->open("span", new _hx_array(array(new _hx_array(array("id", "wiriscorrectanswerlabel")), new _hx_array(array("class", "mathml wiriscorrectanswerlabel")))));
+		$h->openFieldset("wiristestcorrectanswerfieldset" . $unique, $this->t->t("correctanswer"), "wirismainfieldset wiristestcorrectanswerfieldset");
+		$h->open("span", new _hx_array(array(new _hx_array(array("id", "wiriscorrectanswerlabel" . $unique)), new _hx_array(array("class", "mathml wiriscorrectanswerlabel")))));
 		$h->close();
-		$h->input("button", "wirisfillwithcorrectbutton", null, null, $this->t->t("fillwithcorrect"), "wirisfillwithcorrectbutton");
-		$h->input("button", "wirisrefreshbutton", null, null, $this->t->t("refresh"), "wirisrefreshbutton");
+		$h->input("button", "wirisfillwithcorrectbutton" . $unique, null, null, $this->t->t("fillwithcorrect"), "wirisfillwithcorrectbutton");
+		$h->input("button", "wirisrefreshbutton" . $unique, null, null, $this->t->t("refresh"), "wirisrefreshbutton");
 		$h->close();
 		$h->close();
 		$h->close();
@@ -339,30 +339,30 @@ class com_wiris_quizzes_impl_HTMLGui {
 			$qi = new com_wiris_quizzes_impl_QuestionInstanceImpl();
 		}
 		$hasUserAnswer = $qi->userData !== null && $qi->userData->answers !== null && $qi->userData->answers->length > $userAnswer;
-		$h->openDivClass("wiristestwrapper" . _hx_string_rec($unique, ""), "wiristestwrapper");
-		$h->openDivClass("wiristestanswerwrapper" . _hx_string_rec($unique, ""), "wiristestanswerwrapper");
-		$h->jsComponent("wirisanswer" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($userAnswer, "") . "]", "JsInput", com_wiris_quizzes_impl_HTMLGui_0($this, $correctAnswer, $h, $hasUserAnswer, $q, $qi, $unique, $userAnswer));
+		$h->openDivClass("wiristestwrapper" . $unique, "wiristestwrapper");
+		$h->openDivClass("wiristestanswerwrapper" . $unique, "wiristestanswerwrapper");
+		$h->jsComponent("wirisanswer" . $unique . "[" . _hx_string_rec($userAnswer, "") . "]", "JsInput", com_wiris_quizzes_impl_HTMLGui_0($this, $correctAnswer, $h, $hasUserAnswer, $q, $qi, $unique, $userAnswer));
 		$h->close();
-		$h->openDivClass("wiristestbuttons" . _hx_string_rec($unique, ""), "wiristestbuttons");
-		$h->input("button", "wiristestbutton", null, $this->t->t("test"), null, "wirisbutton");
-		$h->open("span", new _hx_array(array(new _hx_array(array("id", "wirisclicktesttoevaluate")))));
+		$h->openDivClass("wiristestbuttons" . $unique, "wiristestbuttons");
+		$h->input("button", "wiristestbutton" . $unique, null, $this->t->t("test"), null, "wirisbutton");
+		$h->open("span", new _hx_array(array(new _hx_array(array("id", "wirisclicktesttoevaluate" . $unique)))));
 		$h->text($this->t->t("clicktesttoevaluate"));
 		$h->close();
 		$h->close();
-		$h->openDivClass("wiristestdynamic" . _hx_string_rec($unique, ""), "wiristestdynamic");
+		$h->openDivClass("wiristestdynamic" . $unique, "wiristestdynamic");
 		$h->raw($this->getWirisTestDynamic($q, $qi, $correctAnswer, $userAnswer, $unique));
 		$h->close();
 		$h->close();
 	}
 	public function printAssertionsControls($h, $q, $correctAnswer, $userAnswer, $unique, $conf) {
 		$answers = "[" . _hx_string_rec($correctAnswer, "") . "][" . _hx_string_rec($userAnswer, "") . "]";
-		$h->openDiv("wirisassertioncontrols" . _hx_string_rec($unique, ""));
+		$h->openDiv("wirisassertioncontrols" . $unique);
 		$h->openDivClass(null, "wirisfieldsetwrapper");
-		$h->openFieldset("wiriscomparisonfieldset" . _hx_string_rec($unique, "") . $answers, $this->t->t("comparisonwithstudentanswer"), "wirismainfieldset wiriscomparisonfieldset");
+		$h->openFieldset("wiriscomparisonfieldset" . $unique . $answers, $this->t->t("comparisonwithstudentanswer"), "wirismainfieldset wiriscomparisonfieldset");
 		$langString = $this->t->t("lang");
-		$h->help("wiriscomparisonhelp" . _hx_string_rec($unique, ""), "https://docs.wiris.com/" . $langString . "/quizzes/studio#comparison_with_student_answer", $this->t->t("manual"));
-		$h->openDivClass("wiristolerance" . _hx_string_rec($unique, ""), "wiristolerance");
-		$idtolPrefix = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SYMBOLIC . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_EQUATIONS . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION . "]";
+		$h->help("wiriscomparisonhelp" . $unique, "https://docs.wiris.com/" . $langString . "/quizzes/studio#comparison_with_student_answer", $this->t->t("manual"));
+		$h->openDivClass("wiristolerance" . $unique, "wiristolerance");
+		$idtolPrefix = "wirisassertionparam" . $unique . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SYMBOLIC . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_EQUATIONS . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION . "]";
 		$idTolValue = $idtolPrefix . "[tolerance_value]" . $answers;
 		$h->label($this->t->t("tolerance") . ":", $idTolValue, "wirisleftlabel2");
 		$h->text(" ");
@@ -372,7 +372,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$toleranceTypes = new _hx_array(array(new _hx_array(array("relative_tolerance", $this->t->t("percenterror"))), new _hx_array(array("absolute_tolerance", $this->t->t("absoluteerror"))), new _hx_array(array("significant_figures", $this->t->t("significantfigures"))), new _hx_array(array("decimal_places", $this->t->t("decimalplaces")))));
 		$h->select($idTolType, "", $toleranceTypes);
 		$h->close();
-		$h->openUl("wiriscomparison" . _hx_string_rec($unique, "") . $answers, "wirisul");
+		$h->openUl("wiriscomparison" . $unique . $answers, "wirisul");
 		$i = null;
 		$idassertion = null;
 		{
@@ -383,13 +383,13 @@ class com_wiris_quizzes_impl_HTMLGui {
 					continue;
 				}
 				$h->openLiClass("wiris" . com_wiris_quizzes_impl_Assertion::$equivalent[$i1]);
-				$idassertion = "wirisassertion" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$equivalent[$i1] . "]" . $answers;
-				$h->input("radio", $idassertion, "wirisradiocomparison" . _hx_string_rec($unique, "") . $answers, null, null, null);
+				$idassertion = "wirisassertion" . $unique . "[" . com_wiris_quizzes_impl_Assertion::$equivalent[$i1] . "]" . $answers;
+				$h->input("radio", $idassertion, "wirisradiocomparison" . $unique . $answers, null, null, null);
 				$h->label($this->t->t(com_wiris_quizzes_impl_Assertion::$equivalent[$i1]), $idassertion, null);
 				if(com_wiris_quizzes_impl_Assertion::$equivalent[$i1] === com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION) {
 					$h->text(" ");
-					$h->input("text", "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION . "][name]" . $answers, "", "", null, null);
-					$idNotEvaluate = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION . "][notevaluate]" . $answers;
+					$h->input("text", "wirisassertionparam" . $unique . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION . "][name]" . $answers, "", "", null, null);
+					$idNotEvaluate = "wirisassertionparam" . $unique . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION . "][notevaluate]" . $answers;
 					$h->input("checkbox", $idNotEvaluate, null, null, null, null);
 					$h->label($this->t->t("notevaluate"), $idNotEvaluate, "wirissmalllabel");
 					unset($idNotEvaluate);
@@ -399,19 +399,19 @@ class com_wiris_quizzes_impl_HTMLGui {
 			}
 		}
 		$h->openLiClass("wiriscomparesets");
-		$comparesetsid = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SYMBOLIC . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL . "][comparesets]" . $answers;
+		$comparesetsid = "wirisassertionparam" . $unique . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SYMBOLIC . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL . "][comparesets]" . $answers;
 		$h->input("checkbox", $comparesetsid, null, null, null, null);
 		$h->text(" ");
 		$h->label($this->t->t("comparesets"), $comparesetsid, null);
 		$h->close();
 		$h->openLiClass("wirisusecase");
-		$usecaseid = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL . "][usecase]" . $answers;
+		$usecaseid = "wirisassertionparam" . $unique . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL . "][usecase]" . $answers;
 		$h->input("checkbox", $usecaseid, null, null, null, null);
 		$h->text(" ");
 		$h->label($this->t->t("usecase"), $usecaseid, null);
 		$h->close();
 		$h->openLiClass("wirisusespaces");
-		$usespacesid = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL . "][usespaces]" . $answers;
+		$usespacesid = "wirisassertionparam" . $unique . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL . "][usespaces]" . $answers;
 		$h->input("checkbox", $usespacesid, null, null, null, null);
 		$h->text(" ");
 		$h->label($this->t->t("usespaces"), $usespacesid, null);
@@ -420,10 +420,10 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->close();
 		$h->close();
 		$h->openDivClass(null, "wirisfieldsetwrapper");
-		$h->openFieldset("wirisadditionalchecksfieldset" . _hx_string_rec($unique, "") . $answers, $this->t->t("additionalproperties"), "wirismainfieldset wirisadditionalchecksfieldset");
-		$h->help("wirisadditionalcheckshelp" . _hx_string_rec($unique, ""), "https://docs.wiris.com/" . $langString . "/quizzes/studio#additional_properties", $this->t->t("manual"));
-		$h->openDivClass("wirisstructurediv" . _hx_string_rec($unique, "") . $answers, "wirissecondaryfieldset");
-		$h->openDivClass("wirisstructuredivlegend" . _hx_string_rec($unique, "") . $answers, "wirissecondaryfieldsetlegend");
+		$h->openFieldset("wirisadditionalchecksfieldset" . $unique . $answers, $this->t->t("additionalproperties"), "wirismainfieldset wirisadditionalchecksfieldset");
+		$h->help("wirisadditionalcheckshelp" . $unique, "https://docs.wiris.com/" . $langString . "/quizzes/studio#additional_properties", $this->t->t("manual"));
+		$h->openDivClass("wirisstructurediv" . $unique . $answers, "wirissecondaryfieldset");
+		$h->openDivClass("wirisstructuredivlegend" . $unique . $answers, "wirissecondaryfieldsetlegend");
 		$h->text($this->t->t("structure") . ":");
 		$h->close();
 		$options = new _hx_array(array());
@@ -440,34 +440,34 @@ class com_wiris_quizzes_impl_HTMLGui {
 				unset($i1);
 			}
 		}
-		$h->select("wirisstructureselect" . _hx_string_rec($unique, "") . $answers, "", $options);
+		$h->select("wirisstructureselect" . $unique . $answers, "", $options);
 		$h->close();
-		$h->openDivClass("wirismorediv" . _hx_string_rec($unique, "") . $answers, "wirissecondaryfieldset");
+		$h->openDivClass("wirismorediv" . $unique . $answers, "wirissecondaryfieldset");
 		$h->text($this->t->t("more") . ":");
-		$h->openUl("wirismore" . _hx_string_rec($unique, "") . $answers, "wirisul");
+		$h->openUl("wirismore" . $unique . $answers, "wirisul");
 		{
 			$_g1 = 0; $_g = com_wiris_quizzes_impl_Assertion::$checks->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
 				$aname = com_wiris_quizzes_impl_Assertion::$checks[$i1];
 				$h->openLi();
-				$idassertion = "wirisassertion" . _hx_string_rec($unique, "") . "[" . $aname . "]" . $answers;
+				$idassertion = "wirisassertion" . $unique . "[" . $aname . "]" . $answers;
 				$h->input("checkbox", $idassertion, null, null, null, null);
 				$h->label($this->t->t($aname), $idassertion, null);
 				$parameters = com_wiris_quizzes_impl_Assertion::getParameterNames($aname);
 				if($parameters !== null) {
 					if($aname === com_wiris_quizzes_impl_Assertion::$CHECK_PRECISION) {
-						$idparam = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . $aname . "][" . $parameters[0] . "]" . $answers;
+						$idparam = "wirisassertionparam" . $unique . "[" . $aname . "][" . $parameters[0] . "]" . $answers;
 						$h->text(" ");
 						$h->label($this->t->t("fromprecision"), $idparam, null);
 						$h->text(" ");
 						$h->input("text", $idparam, null, null, null, "wirisintinputbox");
-						$idparam = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . $aname . "][" . $parameters[1] . "]" . $answers;
+						$idparam = "wirisassertionparam" . $unique . "[" . $aname . "][" . $parameters[1] . "]" . $answers;
 						$h->text(" ");
 						$h->label($this->t->t("toprecision"), $idparam, null);
 						$h->text(" ");
 						$h->input("text", $idparam, null, null, null, "wirisintinputbox");
-						$idparam = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . $aname . "][" . $parameters[2] . "]" . $answers;
+						$idparam = "wirisassertionparam" . $unique . "[" . $aname . "][" . $parameters[2] . "]" . $answers;
 						$h->text(" ");
 						$h->select($idparam, null, new _hx_array(array(new _hx_array(array("true", $this->t->t("significantfigures"))), new _hx_array(array("false", $this->t->t("decimalplaces"))))));
 						unset($idparam);
@@ -478,7 +478,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 							while($_g3 < $_g2) {
 								$j1 = $_g3++;
 								$h->text(" ");
-								$h->input("text", "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . $aname . "][" . $parameters[$j1] . "]" . $answers, null, null, null, "wirissmalltextfield");
+								$h->input("text", "wirisassertionparam" . $unique . "[" . $aname . "][" . $parameters[$j1] . "]" . $answers, null, null, null, "wirissmalltextfield");
 								unset($j1);
 							}
 							unset($_g3,$_g2);
@@ -849,21 +849,21 @@ class com_wiris_quizzes_impl_HTMLGui {
 	public function printInputControls($h, $q, $correctAnswer, $userAnswer, $unique) {
 		$answers = "[" . _hx_string_rec($correctAnswer, "") . "][" . _hx_string_rec($userAnswer, "") . "]";
 		$id = null;
-		$h->openDiv("wirisinputcontrols" . _hx_string_rec($unique, ""));
+		$h->openDiv("wirisinputcontrols" . $unique);
 		$h->openDivClass(null, "wirisfieldsetwrapper");
-		$h->openFieldset("wirisinputcontrolsfieldset" . _hx_string_rec($unique, ""), $this->t->t("allowedinput"), "wirismainfieldset");
+		$h->openFieldset("wirisinputcontrolsfieldset" . $unique, $this->t->t("allowedinput"), "wirismainfieldset");
 		$langString = $this->t->t("lang");
-		$h->help("wirisinputcontrolshelp" . _hx_string_rec($unique, ""), "https://docs.wiris.com/" . $langString . "/quizzes/studio#allowed_input", $this->t->t("manual"));
-		$h->openDivClass("wirissyntaxassertions" . _hx_string_rec($unique, ""), "wirissyntaxassertions");
-		$h->openUl("wirisinputcontrolslist" . _hx_string_rec($unique, ""), "wirisinputcontrolslist");
+		$h->help("wirisinputcontrolshelp" . $unique, "https://docs.wiris.com/" . $langString . "/quizzes/studio#allowed_input", $this->t->t("manual"));
+		$h->openDivClass("wirissyntaxassertions" . $unique, "wirissyntaxassertions");
+		$h->openUl("wirisinputcontrolslist" . $unique, "wirisinputcontrolslist");
 		$i = null;
 		{
 			$_g1 = 0; $_g = com_wiris_quizzes_impl_Assertion::$syntactic->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
 				$h->openLi();
-				$id = "wirisassertion" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$syntactic[$i1] . "]" . $answers;
-				$h->input("radio", $id, "wirisradiosyntax" . _hx_string_rec($unique, ""), null, null, null);
+				$id = "wirisassertion" . $unique . "[" . com_wiris_quizzes_impl_Assertion::$syntactic[$i1] . "]" . $answers;
+				$h->input("radio", $id, "wirisradiosyntax" . $unique, null, null, null);
 				$h->openStrong();
 				$h->label($this->t->t(com_wiris_quizzes_impl_Assertion::$syntactic[$i1]), $id, null);
 				$h->close();
@@ -874,13 +874,13 @@ class com_wiris_quizzes_impl_HTMLGui {
 			}
 		}
 		$h->close();
-		$h->openCollapsibleFieldset("wirissyntaxparams" . _hx_string_rec($unique, ""), $this->t->t("syntaxparams"), "wirissyntaxparams", true, true);
-		$h->openDivClass("wirissyntaxconstants" . _hx_string_rec($unique, ""), "wirissyntaxparam wirisspaceafter");
-		$h->openSpan("wirissyntaxconstantslabel" . _hx_string_rec($unique, ""), "wirissyntaxlabel");
+		$h->openCollapsibleFieldset("wirissyntaxparams" . $unique, $this->t->t("syntaxparams"), "wirissyntaxparams", true, true);
+		$h->openDivClass("wirissyntaxconstants" . $unique, "wirissyntaxparam wirisspaceafter");
+		$h->openSpan("wirissyntaxconstantslabel" . $unique, "wirissyntaxlabel");
 		$h->text($this->t->t("constants") . ":");
 		$h->close();
-		$h->openSpan("wirissyntaxconstantsvalues" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
-		$id = "wirisassertionparampart" . _hx_string_rec($unique, "") . "[syntax_expression, syntax_quantity][constants]" . $answers;
+		$h->openSpan("wirissyntaxconstantsvalues" . $unique, "wirissyntaxvalues");
+		$id = "wirisassertionparampart" . $unique . "[syntax_expression, syntax_quantity][constants]" . $answers;
 		$letterpi = com_wiris_quizzes_impl_HTMLGui_7($this, $answers, $correctAnswer, $h, $i, $id, $langString, $q, $unique, $userAnswer);
 		$this->syntaxCheckbox($h, $id . "[0]", $letterpi, $letterpi, false);
 		$this->syntaxCheckbox($h, $id . "[1]", "e", "e", false);
@@ -888,34 +888,34 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$this->syntaxCheckbox($h, $id . "[3]", "j", "j", false);
 		$h->close();
 		$h->close();
-		$h->openDivClass("wirissyntaxfunctions" . _hx_string_rec($unique, ""), "wirissyntaxparam");
-		$h->openDivClass("wirissyntaxfunctionscheckboxes" . _hx_string_rec($unique, ""), "wirisspaceafter");
-		$h->openSpan("wirissyntaxfunctionlabel" . _hx_string_rec($unique, ""), "wirissyntaxlabel");
+		$h->openDivClass("wirissyntaxfunctions" . $unique, "wirissyntaxparam");
+		$h->openDivClass("wirissyntaxfunctionscheckboxes" . $unique, "wirisspaceafter");
+		$h->openSpan("wirissyntaxfunctionlabel" . $unique, "wirissyntaxlabel");
 		$h->text($this->t->t("functions") . ":");
 		$h->close();
-		$h->openSpan("wirissyntaxfunctionvalues" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
-		$id = "wirisassertionparampart" . _hx_string_rec($unique, "") . "[syntax_expression][functions]" . $answers;
+		$h->openSpan("wirissyntaxfunctionvalues" . $unique, "wirissyntaxvalues");
+		$id = "wirisassertionparampart" . $unique . "[syntax_expression][functions]" . $answers;
 		$this->syntaxCheckbox($h, $id . "[0]", "exp, log, ln", $this->t->t("explog"), false);
-		$this->syntaxCheckbox($h, $id . "[1]", "sin, cos, tan, asin, acos, atan, arcsin, arccos, arctan, cosec, csc, sec, cotan, cot, acosec, acsc, asec, acotan, acot, sen, asen, arcsen", $this->t->t("trigonometric"), false);
-		$this->syntaxCheckbox($h, $id . "[2]", "sinh, cosh, tanh, asinh, acosh, atanh, arcsinh, arccosh, arctanh, cosech, csch, sech, cotanh, coth, acosech, acsch, asech, acotanh, acoth, senh, asenh, arcsenh", $this->t->t("hyperbolic"), false);
+		$this->syntaxCheckbox($h, $id . "[1]", "sin, cos, tan," . " asin, acos, atan," . " arcsin, arccos, arctan," . " cosec, csc," . " sec," . " cotan, cot," . " acosec, acsc, arccosec, arccsc," . " asec, arcsec," . " acotan, acot, arccotan, arccot," . " sen, asen, arcsen", $this->t->t("trigonometric"), false);
+		$this->syntaxCheckbox($h, $id . "[2]", "sinh, cosh, tanh," . " asinh, acosh, atanh," . " arcsinh, arccosh, arctanh," . " arsinh, arcosh, artanh," . " cosech, csch," . " sech," . " cotanh, coth," . " acosech, acsch, arccosech, arccsch, arcosech, arcsch," . " asech, arcsech, arsech," . " acotanh, acoth, arccotanh, arccoth, arcotanh, arcoth," . " senh, asenh, arcsenh, arsenh", $this->t->t("hyperbolic"), false);
 		$this->syntaxCheckbox($h, $id . "[3]", "min, max, sign", $this->t->t("arithmetic"), false);
 		$h->close();
 		$h->close();
-		$h->openDivClass("wirissyntaxfunctionscustom" . _hx_string_rec($unique, ""), "wirisspaceafter");
-		$h->openSpan("wirissyntaxuserfunctionlabel" . _hx_string_rec($unique, ""), "wirissyntaxlabel");
+		$h->openDivClass("wirissyntaxfunctionscustom" . $unique, "wirisspaceafter");
+		$h->openSpan("wirissyntaxuserfunctionlabel" . $unique, "wirissyntaxlabel");
 		$h->label($this->t->t("userfunctions") . ":", $id . "[4]", null);
 		$h->close();
-		$h->openSpan("wirissyntaxfunctionscustomvalues" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
+		$h->openSpan("wirissyntaxfunctionscustomvalues" . $unique, "wirissyntaxvalues");
 		$h->input("text", $id . "[4]", "", null, null, "wirisuserfunctions");
 		$h->close();
 		$h->close();
 		$h->close();
-		$h->openDivClass("wirissyntaxunits" . _hx_string_rec($unique, ""), "wirissyntaxparam wirisspaceafter");
-		$h->openSpan("wirissyntaxunitslabel" . _hx_string_rec($unique, ""), "wirissyntaxlabel");
+		$h->openDivClass("wirissyntaxunits" . $unique, "wirissyntaxparam wirisspaceafter");
+		$h->openSpan("wirissyntaxunitslabel" . $unique, "wirissyntaxlabel");
 		$h->text($this->t->t("units") . ":");
 		$h->close();
-		$h->openSpan("wirissyntaxunitsvalues" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
-		$id = "wirisassertionparampart" . _hx_string_rec($unique, "") . "[syntax_quantity][units]" . $answers;
+		$h->openSpan("wirissyntaxunitsvalues" . $unique, "wirissyntaxvalues");
+		$id = "wirisassertionparampart" . $unique . "[syntax_quantity][units]" . $answers;
 		$this->syntaxCheckbox($h, $id . "[0]", "m", "m", false);
 		$this->syntaxCheckbox($h, $id . "[1]", "s", "s", false);
 		$this->syntaxCheckbox($h, $id . "[2]", "g", "g", false);
@@ -925,12 +925,12 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$this->syntaxCheckbox($h, $id . "[6]", com_wiris_quizzes_impl_Assertion::$ALL_UNITS_LIST, $this->t->t("all"), true);
 		$h->close();
 		$h->close();
-		$h->openDivClass("wirissyntaxunitprefixes" . _hx_string_rec($unique, ""), "wirissyntaxparam wirisspaceafter");
-		$h->openSpan("wirissyntaxunitslabel" . _hx_string_rec($unique, ""), "wirissyntaxlabel");
+		$h->openDivClass("wirissyntaxunitprefixes" . $unique, "wirissyntaxparam wirisspaceafter");
+		$h->openSpan("wirissyntaxunitslabel" . $unique, "wirissyntaxlabel");
 		$h->text($this->t->t("unitprefixes") . ":");
 		$h->close();
-		$h->openSpan("wirissyntaxunitsvalues" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
-		$id = "wirisassertionparampart" . _hx_string_rec($unique, "") . "[syntax_quantity][unitprefixes]" . $answers;
+		$h->openSpan("wirissyntaxunitsvalues" . $unique, "wirissyntaxvalues");
+		$id = "wirisassertionparampart" . $unique . "[syntax_quantity][unitprefixes]" . $answers;
 		$this->syntaxCheckbox($h, $id . "[0]", "M", "M", false);
 		$this->syntaxCheckbox($h, $id . "[1]", "k", "k", false);
 		$this->syntaxCheckbox($h, $id . "[2]", "c", "c", false);
@@ -938,58 +938,58 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$this->syntaxCheckbox($h, $id . "[4]", "y, z, a, f, p, n, " . com_wiris_quizzes_impl_HTMLGui_11($this, $answers, $correctAnswer, $h, $i, $id, $langString, $letterpi, $q, $unique, $userAnswer) . ", m, c, d, da, h, k, M, G, T, P, E, Z, Y", $this->t->t("all"), true);
 		$h->close();
 		$h->close();
-		$h->openDivClass("wirissyntaxmixedfractions" . _hx_string_rec($unique, ""), "wirissyntaxparam wirisspaceafter");
-		$id = "wirisassertionparam" . _hx_string_rec($unique, "") . "[syntax_quantity][mixedfractions]" . $answers;
-		$h->openSpan("wirissyntaxmixedfractionslabel" . _hx_string_rec($unique, ""), "wirissyntaxlabel");
+		$h->openDivClass("wirissyntaxmixedfractions" . $unique, "wirissyntaxparam wirisspaceafter");
+		$id = "wirisassertionparam" . $unique . "[syntax_quantity][mixedfractions]" . $answers;
+		$h->openSpan("wirissyntaxmixedfractionslabel" . $unique, "wirissyntaxlabel");
 		$h->label($this->t->t("mixedfractions") . ":", $id, null);
 		$h->close();
-		$h->openSpan("wirissyntaxmixedfractionsvalues" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
+		$h->openSpan("wirissyntaxmixedfractionsvalues" . $unique, "wirissyntaxvalues");
 		$h->input("checkbox", $id, "", "true", null, null);
 		$h->close();
 		$h->close();
-		$h->openDivClass("wirissyntaxlist" . _hx_string_rec($unique, ""), "wirissyntaxparam");
-		$id = "wirisassertionparam" . _hx_string_rec($unique, "") . "[syntax_expression,syntax_quantity][list]" . $answers;
-		$h->openSpan("wirissyntaxlistlabel" . _hx_string_rec($unique, ""), "wirissyntaxlabel");
+		$h->openDivClass("wirissyntaxlist" . $unique, "wirissyntaxparam");
+		$id = "wirisassertionparam" . $unique . "[syntax_expression,syntax_quantity][list]" . $answers;
+		$h->openSpan("wirissyntaxlistlabel" . $unique, "wirissyntaxlabel");
 		$h->label($this->t->t("list") . ":", $id, null);
 		$h->close();
-		$h->openSpan("wirissyntaxlistvalue" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
+		$h->openSpan("wirissyntaxlistvalue" . $unique, "wirissyntaxvalues");
 		$h->input("checkbox", $id, "", "true", null, null);
 		$h->close();
 		$h->close();
-		$h->openDivClass("wirissyntaxforcebrackets" . _hx_string_rec($unique, ""), "wirissyntaxparam");
-		$h->openSpan("wirissyntaxforcebracketslabel" . _hx_string_rec($unique, ""), "wirissyntaxlabel");
+		$h->openDivClass("wirissyntaxforcebrackets" . $unique, "wirissyntaxparam");
+		$h->openSpan("wirissyntaxforcebracketslabel" . $unique, "wirissyntaxlabel");
 		$h->close();
-		$h->openSpan("wirissyntaxforcebracketsvalues" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
-		$id = "wirisassertionparam" . _hx_string_rec($unique, "") . "[syntax_expression][forcebrackets]" . $answers;
+		$h->openSpan("wirissyntaxforcebracketsvalues" . $unique, "wirissyntaxvalues");
+		$id = "wirisassertionparam" . $unique . "[syntax_expression][forcebrackets]" . $answers;
 		$this->syntaxCheckbox($h, $id, "true", $this->t->t("forcebrackets"), false);
 		$h->close();
 		$h->close();
-		$h->openDivClass("wirissyntaxintervals" . _hx_string_rec($unique, ""), "wirissyntaxparam wirisspacebefore");
-		$id = "wirisassertionparam" . _hx_string_rec($unique, "") . "[syntax_expression][intervals]" . $answers;
-		$h->openSpan("wirissyntaxintervalslabel" . _hx_string_rec($unique, ""), "wirissyntaxlabel");
+		$h->openDivClass("wirissyntaxintervals" . $unique, "wirissyntaxparam wirisspacebefore");
+		$id = "wirisassertionparam" . $unique . "[syntax_expression][intervals]" . $answers;
+		$h->openSpan("wirissyntaxintervalslabel" . $unique, "wirissyntaxlabel");
 		$h->label($this->t->t("intervals") . ":", $id, null);
 		$h->close();
-		$h->openSpan("wirissyntaxintervalsvalue" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
+		$h->openSpan("wirissyntaxintervalsvalue" . $unique, "wirissyntaxvalues");
 		$h->input("checkbox", $id, "", "true", null, null);
 		$h->close();
 		$h->close();
-		$h->openDivClass("wirissyntaxchars" . _hx_string_rec($unique, ""), "wirissyntaxparam wirisspacebefore");
-		$h->openSpan("wirissyntaxcharslabel" . _hx_string_rec($unique, ""), "wirissyntaxlabel");
+		$h->openDivClass("wirissyntaxchars" . $unique, "wirissyntaxparam wirisspacebefore");
+		$h->openSpan("wirissyntaxcharslabel" . $unique, "wirissyntaxlabel");
 		$h->text($this->t->t("separators") . ":");
 		$h->close();
-		$h->openSpan("wirissyntaxcharsvalue" . _hx_string_rec($unique, ""), "wirissyntaxvalues");
-		$idgeneric = "wirisassertionparampart" . _hx_string_rec($unique, "") . "[syntax_expression,syntax_quantity]";
-		$h->openSpan("wirissyntaxcharspoint" . _hx_string_rec($unique, ""), "wirissyntaxchar");
+		$h->openSpan("wirissyntaxcharsvalue" . $unique, "wirissyntaxvalues");
+		$idgeneric = "wirisassertionparampart" . $unique . "[syntax_expression,syntax_quantity]";
+		$h->openSpan("wirissyntaxcharspoint" . $unique, "wirissyntaxchar");
 		$id = $idgeneric . "[point]" . $answers;
 		$h->labelTitle($this->t->t("point") . ":", $id, "wirissyntaxcharslabel", $this->t->t("pointrole"));
 		$h->select($id, "", new _hx_array(array(new _hx_array(array("nothing", $this->t->t("nothing"))), new _hx_array(array("decimalseparators", $this->t->t("decimalmark"))), new _hx_array(array("digitgroupseparators", $this->t->t("digitsgroup"))))));
 		$h->close();
-		$h->openSpan("wirissyntaxcharscomma" . _hx_string_rec($unique, ""), "wirissyntaxchar");
+		$h->openSpan("wirissyntaxcharscomma" . $unique, "wirissyntaxchar");
 		$id = $idgeneric . "[comma]" . $answers;
 		$h->labelTitle($this->t->t("comma") . ":", $id, "wirissyntaxcharslabel", $this->t->t("commarole"));
 		$h->select($id, "", new _hx_array(array(new _hx_array(array("decimalseparators", $this->t->t("decimalmark"))), new _hx_array(array("digitgroupseparators", $this->t->t("digitsgroup"))), new _hx_array(array("itemseparators", $this->t->t("listitems"))))));
 		$h->close();
-		$h->openSpan("wirissyntaxcharsspace" . _hx_string_rec($unique, ""), "wirissyntaxchar");
+		$h->openSpan("wirissyntaxcharsspace" . $unique, "wirissyntaxchar");
 		$id = $idgeneric . "[space]" . $answers;
 		$h->labelTitle($this->t->t("space") . ":", $id, "wirissyntaxcharslabel", $this->t->t("spacerole"));
 		$h->select($id, "", new _hx_array(array(new _hx_array(array("nothing", $this->t->t("nothing"))), new _hx_array(array("digitgroupseparators", $this->t->t("digitsgroup"))), new _hx_array(array("itemseparators", $this->t->t("listitems"))))));
@@ -1081,7 +1081,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 	}
 	public function getTabVariables($q, $correctAnswer, $unique, $conf) {
 		$h = new com_wiris_quizzes_impl_HTML();
-		$h->jsComponent("wiriscas" . _hx_string_rec($unique, ""), "jsCasInput", $q->wirisCasSession);
+		$h->jsComponent("wiriscas" . $unique, "jsCasInput", $q->wirisCasSession);
 		return $h->getString();
 	}
 	public function getTabValidation($q, $correctAnswer, $userAnswer, $unique, $conf) {
@@ -1093,12 +1093,12 @@ class com_wiris_quizzes_impl_HTMLGui {
 	public function getTabCorrectAnswer($q, $correctAnswer, $unique, $conf) {
 		$h = new com_wiris_quizzes_impl_HTML();
 		if($conf->optOpenAnswer) {
-			$h->openDivClass("wiriseditorwrapper" . _hx_string_rec($unique, ""), "wiriscorrectanswerfieldwrapper");
+			$h->openDivClass("wiriseditorwrapper" . $unique, "wiriscorrectanswerfieldwrapper");
 			$content = "";
 			if($q->correctAnswers !== null && $q->correctAnswers->length > $correctAnswer) {
 				$content = _hx_array_get($q->correctAnswers, $correctAnswer)->content;
 			}
-			$h->jsComponent("wiriscorrectanswer" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($correctAnswer, "") . "]", "jsEditorInput", $content);
+			$h->jsComponent("wiriscorrectanswer" . $unique . "[" . _hx_string_rec($correctAnswer, "") . "]", "jsEditorInput", $content);
 			$h->close();
 		}
 		$this->printLocalData($h, $q, $unique, $conf);

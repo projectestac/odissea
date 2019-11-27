@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'URLフィールド';
 $string['openlinkinnewwindow'] = 'リンクを新しいウィンドウで開く';
 $string['pluginname'] = 'URL';
-$string['privacy:metadata'] = 'URLフィールドコンポーネントはどのような個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['privacy:metadata'] = 'URLフィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

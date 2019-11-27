@@ -79,4 +79,4 @@ $string['auth_dbuser_key'] = 'DBユーザ';
 $string['auth_dbuserstoadd'] = '追加するユーザエントリ: {$a}';
 $string['auth_dbuserstoremove'] = '削除するユーザエントリ: {$a}';
 $string['pluginname'] = '外部データベース';
-$string['privacy:metadata'] = '外部データ認証プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '外部データ認証プラグインはいかなる個人データも保存しません。';

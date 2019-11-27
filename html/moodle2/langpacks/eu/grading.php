@@ -51,7 +51,7 @@ $string['manageactiondeleteconfirm'] = '\'{$a->formname}\' kalifikazio-formulari
 * Ekintza honek ez dauka eraginik beste jardueratan egindako formulario honen kopietan.';
 $string['manageactiondeletedone'] = 'Formularioa ondo ezabatu da';
 $string['manageactionedit'] = 'Editatu oraingo formularioaren definizioa';
-$string['manageactionnew'] = 'Definitu beste kalifikazio-formulario bat hasieratik';
+$string['manageactionnew'] = 'Zehaztu beste kalifikazio-formulario bat hasieratik';
 $string['manageactionshare'] = 'Argitaratu formularioa txantiloi berri gisa';
 $string['manageactionshareconfirm'] = '\'{$a}\' kalifikazio-formularioaren kopia bat txantiloi publiko gisa gordetzera zoaz. Zure guneko beste erabiltzaileek txantiloi hori erabiliz kalifikazio-formulario berriak sortzeko aukera izango dute.';
 $string['manageactionsharedone'] = 'Formularioa ondo gorde da txantiloi berri gisa';
@@ -78,7 +78,7 @@ $string['privacy:metadata:grading_instances:raterid'] = 'Kalifikazio-instantzia 
 $string['privacy:metadata:grading_instances:rawgrade'] = 'Kalifikazio-instantziaren kalifikazioa.';
 $string['privacy:metadata:grading_instances:status'] = 'Kalifikazio-instantzia honen egoera.';
 $string['privacy:metadata:grading_instances:timemodified'] = 'Kalifikazio-instantzia azkenengoz aldatu zeneko unea.';
-$string['searchownforms'] = 'Neure formularioak ere barne';
+$string['searchownforms'] = 'bilatu nire formularioetan ere';
 $string['searchtemplate'] = 'Bilatu kalifikazio-formularioak';
 $string['searchtemplate_help'] = 'Hemen kalifikazio-formulario bat bilatu eta txantiloi gisa erabil dezakezu. Idatzi formularioaren izenean agertu beharko liratekeen hitzak, bere deskribapena edo formularioaren edukiak. Esaldi bat bilatzeko. idatz ezazu kontsulta osoa komatxo bikoitzen barruan.
 

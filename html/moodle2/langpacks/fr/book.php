@@ -85,7 +85,7 @@ $string['numbering1'] = 'Nombres';
 $string['numbering2'] = 'Puces';
 $string['numbering3'] = 'Indentation';
 $string['numbering_help'] = '* Aucun - Les titres des chapitres et sous-chapitres ne sont pas mis en forme
-* Nombres - Les chapitres et sous-chapitres sont numérotés (1, 1.1, 1.2, 2, ...)
+* Nombres - Les chapitres et sous-chapitres sont numérotés (1, 1.1, 1.2, 2…)
 * Puces - Les sous-chapitres sont indentés et affichés au moyen de puces
 * Indentations - les sous-chapitres sont indentés dans la table des matières';
 $string['numberingoptions'] = 'Options disponibles pour le format des titres de chapitre';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Aikenフォーマット';
 $string['pluginname_help'] = 'これはテキストファイルから多肢選択問題をインポートするためのシンプルなフォーマットです。';
-$string['privacy:metadata'] = 'Aiken問題フォーマットプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'Aiken問題フォーマットプラグインはいかなる個人データも保存しません。';
 $string['questionmissinganswers'] = '問題は行 {$a} に少なくとも2つの答えを設定する必要があります。';
 $string['questionnotcomplete'] = '問題は行 {$a} で次の問題の開始まで完了しません。';
 $string['questionnotstarted'] = '問題は行 {$a} で開始していません。';

@@ -46,6 +46,7 @@ $string['keepfavouritesdesc'] = 'Visualizza i corsi nella scheda principale anch
 $string['makefavourite'] = 'Aggiungi ai preferiti';
 $string['message'] = 'messaggio';
 $string['messages'] = 'messaggi';
+$string['morecoursestext'] = 'Elenca ulteriori corsi';
 $string['moveafterhere'] = 'Sposta corso {$a->movingcoursename} dopo {$a->currentcoursename}';
 $string['movecourse'] = 'Sposta corso: {$a}';
 $string['movecoursehere'] = 'Sposta il corso qui';

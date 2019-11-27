@@ -31,4 +31,4 @@ $string['healthproblemsolution'] = '健康問題の解決方法';
 $string['healthreturntomain'] = '続ける';
 $string['healthsolution'] = '解決方法';
 $string['pluginname'] = 'ヘルスセンター';
-$string['privacy:metadata'] = 'ヘルスセンタープラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ヘルスセンタープラグインはいかなる個人データも保存しません。';

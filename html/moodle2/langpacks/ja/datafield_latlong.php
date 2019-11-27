@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = '緯度/経度フィールド';
 $string['pluginname'] = '等緯度経度';
-$string['privacy:metadata'] = '緯度/経度フィールドコンポーネントはどのような個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['privacy:metadata'] = '緯度/経度フィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

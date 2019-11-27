@@ -42,7 +42,7 @@ $string['gradingmethodnone'] = 'シンプル直接評定';
 $string['gradingmethods'] = '評定方法';
 $string['manageactionclone'] = 'テンプレートから新しい評定フォームを作成する';
 $string['manageactiondelete'] = '現在定義されているフォームを削除する';
-$string['manageactiondeleteconfirm'] = 'あなたは評定フォーム「 {$a->formname} 」および関連する情報すべてを「 {$a->component} ({$a->area}) 」から削除しようとしています。下記内容を十分理解して、操作を進めてください:
+$string['manageactiondeleteconfirm'] = 'あなたは評定フォーム「 {$a->formname} 」および関連する情報すべてを「 {$a->component} ({$a->area}) 」から削除しようとしています。以下の内容を十分理解して、操作を進めてください:
 
 * この操作を元に戻すことはできません。
 * このフォームを削除せずに、あなたは「シンプル直接評定」を含む他の評定方法にスイッチすることができます。

@@ -30,6 +30,6 @@ $string['logsofbackupexecutedon'] = '{$a} に実行されたバックアップ�
 $string['nobackupsfound'] = 'バックアップは見つかりませんでした。';
 $string['nologsfound'] = 'このバックアップにログは見つかりませんでした。';
 $string['pluginname'] = 'バックアップレポート';
-$string['privacy:metadata'] = 'バックアップレポートプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'バックアップレポートプラグインはいかなる個人データも保存しません。';
 $string['strftimetime'] = '%H:%M:%S';
 $string['viewlogs'] = 'ログを表示する';

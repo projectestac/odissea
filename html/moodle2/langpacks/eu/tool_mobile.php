@@ -36,14 +36,14 @@ $string['cachedef_plugininfo'] = 'Honek mobile-gehigarriak dituzten pluginak bil
 $string['clickheretolaunchtheapp'] = 'Egin klik hemen app-ak ez badu automatikoki zabaltzen.';
 $string['configmobilecssurl'] = 'CSS fitxategia app mugikorraren interfazea pertsonalizatzeko.';
 $string['customlangstrings'] = 'Pertsonalizatu hizkuntza-kateak';
-$string['customlangstrings_desc'] = 'Hemen app-an erakusten diren hitz eta esaldiak pertsonalizatu daitezke. Sartu hemen pertsonalizatutako hizkuntza-kate bat errenkada bakoitzean hurrengo formatuarekin: kate-identifikatzailea, pertsonalizatutako hizkuntza-katea eta hizkuntza-kodea, marra bertikal batez banatuak. Adibidez:
+$string['customlangstrings_desc'] = 'Hemen app-an erakusten diren hitz eta esaldiak pertsonalizatu daitezke. Idatzi hemen pertsonalizatutako hizkuntza-kate bat errenkada bakoitzean hurrengo formatuarekin: kate-identifikatzailea, pertsonalizatutako hizkuntza-katea eta hizkuntza-kodea, marra bertikal batez banatuak. Adibidez:
 <pre>
 mm.user.student|Learner|en
 mm.user.student|Ikaslea|eu
 </pre>
 Kate-identifikatzaileen zerrenda osoa lortzeko, ikusi dokumentazioa.';
 $string['custommenuitems'] = 'Pertsonalizatu menuaren elementuak';
-$string['custommenuitems_desc'] = 'Hemen app-aren menu nagusian elementu gehigarriak gehitu daitezke. Sartu hemen menu-elementu pertsonalizatu bat errenkada bakoitzean hurrengo formatuarekin: elementuaren testua, URLa, esteka irekitzeko modua eta hizkuntza-kodea (aukerazkoa, elementua hizkuntza zehatz batean soilik erakusteko), marra bertikal batez banatuak.
+$string['custommenuitems_desc'] = 'Hemen app-aren menu nagusian elementu gehigarriak gehitu daitezke. Idatzi hemen menu-elementu pertsonalizatu bat errenkada bakoitzean hurrengo formatuarekin: elementuaren testua, URLa, esteka irekitzeko modua eta hizkuntza-kodea (aukerazkoa, elementua hizkuntza zehatz batean soilik erakusteko), marra bertikal batez banatuak.
 
 Estekak irekitzeko moduak hurrengoak dira: app (app-ak onartzen duen jarduera bat estekatzeko), inappbrowser (esteka nabigatzailean irekitzeko app-tik irten gabe), browser (esteka gailuaren lehenetsitako nabigatzailean app-tik kanpo irekitzeko) eta embedded (esteka app-aren orri berri baten barruko iframe batean erakusteko).
 
@@ -63,7 +63,7 @@ $string['enablesmartappbanners_desc'] = 'Gaituz gero, mobile app-a iragartzen du
 $string['forcedurlscheme'] = 'Zure pertsonalizatutako app-a nabigatzaile leiho batean baino irekitzea nahi ez baduzu, zehaztu hemen URL eskema; bestela, utzi eremua hutsik.';
 $string['forcedurlscheme_key'] = 'URL eskema';
 $string['forcelogout'] = 'Behartu irtetera';
-$string['forcelogout_desc'] = 'Gaituz gero, app-ko \'Aldatu gunea\' aukera \'Irten\' aukerarekin ordezkatuko da. Honen ondorioz erabiltzailea guztiz ateratzen da. Hurrengo aldian gunean sartzeko euren pasahitza sartu beharko dute.';
+$string['forcelogout_desc'] = 'Gaituz gero, app-ko \'Aldatu gunea\' aukera \'Irten\' aukerarekin ordezkatuko da. Honen ondorioz erabiltzailea guztiz ateratzen da. Hurrengo aldian gunean sartzeko euren pasahitza sartu beharko du.';
 $string['getmoodleonyourmobile'] = 'Eskuratu aplikazio mugikorra';
 $string['httpsrequired'] = 'HTTPS beharrezkoa da';
 $string['insecurealgorithmwarning'] = 'Badirudi HTTPS ziurtagiriak zifratze-algoritmo ez segurua erabiltzen ari dela sinaduretarako (SHA-1). Mesedez saiatu ziurtagiria eguneratzen.';
@@ -85,7 +85,7 @@ $string['mobileappenabled'] = 'Gune honek mobile app bidezko sarbidea gaituta da
 $string['mobileauthentication'] = 'Mobile autentifikazioa';
 $string['mobilecssurl'] = 'CSS';
 $string['mobilefeatures'] = 'Mobile ezaugarriak';
-$string['mobilenotificationsdisabledwarning'] = 'Mobile jakinarazpenak ez daude gaituta. Gaitu beharko lirateke \'Kudeatu irteerako mezuak\' atalean.';
+$string['mobilenotificationsdisabledwarning'] = 'Mobile jakinarazpenak ez daude gaituta. Jakinarazpenen ezarpenak atalean gaitu beharko lirateke.';
 $string['mobilesettings'] = 'Mobile ezarpenak';
 $string['offlineuse'] = 'Lineaz kanpoko erabilera';
 $string['pluginname'] = 'Moodle app-rako tresnak';
@@ -95,7 +95,7 @@ $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'Azk
 $string['remoteaddons'] = 'Urruneko gehigarriak';
 $string['selfsignedoruntrustedcertificatewarning'] = 'Badirudi HTTPS ziurtagiria autosinatua edo ez da konfiantzazkoa. Mobile app-ak soilik konfiantzazko guneetan funtzionatzen du.';
 $string['setuplink'] = 'Aplikazioa deskargatzeko orria';
-$string['setuplink_desc'] = 'App Store eta Google Play-tik Mobile app-a jaisteko estekak dituen orriaren URLa.';
+$string['setuplink_desc'] = 'App Store eta Google Play-tik Mobile app-a jaisteko aukera ematen duen orriaren URLa. App-a jaisteko orriaren esteka orri-oinean eta erabiltzaile-profilean erakusten da. Hutsik utzi ezazu estekarik ez erakusteko.';
 $string['smartappbanners'] = 'App Banner-ak';
 $string['typeoflogin'] = 'Sarrera-mota';
 $string['typeoflogin_desc'] = 'Guneak SSO autentifikazio-metodo bat erabiliz gero, aukeratu nabigatzaile-leiho edo enbotatutako nabigatzaile bidezko modua. Enbotatutako nabigatzaileak erabiltzaile-esperientzia hobea ematen du, baina ez ditu SSO plugin guztiak onartzen.';

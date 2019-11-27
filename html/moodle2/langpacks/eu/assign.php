@@ -39,13 +39,13 @@ $string['allocatedmarker'] = 'Esleitutako kalifikatzailea';
 $string['allocatedmarker_help'] = 'Bidalketa honi esleitutako kalifikatzailea.';
 $string['allowsubmissions'] = 'Baimendu erabiltzaileari zereginean bidalketak egiten jarraitzea.';
 $string['allowsubmissionsanddescriptionfromdatesummary'] = 'Zereginaren nondik norakoak eta bidalketarako formularioa eskuragarri izango dituzu <strong>{$a}</strong>-tik aurrera';
-$string['allowsubmissionsfromdate'] = 'Baimendu bidalketak hemendik:';
+$string['allowsubmissionsfromdate'] = 'Bidalketetarako hasiera-data';
 $string['allowsubmissionsfromdate_help'] = 'Gaituz gero, ikasleek ezingo dute bidalketa egin data hau baino lehen. Desgaituz gero, ikasleek bidalketa egin ahal izango dute oraintxe bertan.';
 $string['allowsubmissionsfromdatesummary'] = 'Zeregin honetan bidalketak onartuko dira <strong>{$a}</strong>-tik aurrera';
 $string['allowsubmissionsshort'] = 'Baimendu aldaketak bidalketan';
 $string['alwaysshowdescription'] = 'Deskribapena beti erakutsi';
 $string['alwaysshowdescription_help'] = 'Desgaituz gero, ikasleek goiko zereginaren deskripzioa soilik ikusiko dute "Baimendu bidalketak hemendik" aukeran markatutako egunetik aurrera.';
-$string['applytoteam'] = 'Kalifikazioak eta feedbackak talde osoari aplikatu';
+$string['applytoteam'] = 'Aplikatu kalifikazioak eta feedbackak talde osoari';
 $string['assign:addinstance'] = 'Gehitu zeregin berria';
 $string['assign:editothersubmission'] = 'Editatu beste ikasle baten bidalketa';
 $string['assign:exportownsubmission'] = 'Esportatu norberaren bidalketa';
@@ -56,7 +56,7 @@ $string['assign:grantextension'] = 'Eman epearen luzapena';
 $string['assign:manageallocations'] = 'Kudeatu bidalketei esleitutako kalifikatzaileak';
 $string['assign:managegrades'] = 'Berrikusi eta argitaratu kalifikazioa';
 $string['assign:manageoverrides'] = 'Kudeatu zeregin-salbuespenak';
-$string['assignmentisdue'] = 'Epea bukatu da';
+$string['assignmentisdue'] = 'Epea amaitu da';
 $string['assignmentmail'] = '{$a->grader}-k feedbacka bidali du zure \'{$a->assignment}\' zereginaren bidalketarako.
 
 Zure zereginaren bidalketaren eranskin gisa ikus dezakezu:
@@ -83,7 +83,11 @@ $string['attempthistory'] = 'Aurreko saiakerak';
 $string['attemptnumber'] = 'Saiakera-kopurua';
 $string['attemptreopenmethod'] = 'Saiakerak berriro ireki dira';
 $string['attemptreopenmethod_help'] = 'Ikasleen bidalketa-saiakerak nola berrirekitzen diren zehazten du. Aukera hauek
-daude: <ul><li>Inoiz ez - Bidalketa ezin da berrireki.</li><li>Eskuz - Irakasle batek ikaslearen bidalketa berrireki ahal izango du.</li><li>Automatikoki gainditu arte - Bidalketa automatikoki berrirekiko da ikasleak kalifikazio liburuan zeregin hau gainditzeko moduko kalifikazio bat lortu arte.</li></ul>';
+daude:
+
+* Inoiz ez - Bidalketa ezin da berrireki.
+* Eskuz - Irakasle batek ikaslearen bidalketa berrireki ahal izango du.
+* Automatikoki gainditu arte - Bidalketa automatikoki berrirekiko da ikasleak kalifikazio liburuan zeregin hau gainditzeko zehaztutako kalifikazioa lortu arte.';
 $string['attemptreopenmethod_manual'] = 'Eskuz';
 $string['attemptreopenmethod_none'] = 'Inoiz ere ez';
 $string['attemptreopenmethod_untilpass'] = 'Automatikoki gainditu arte';
@@ -120,9 +124,9 @@ $string['collapsereviewpanel'] = 'Tolestu berrikusketa-panela';
 $string['comment'] = 'Iruzkina';
 $string['completionsubmit'] = 'Ikasleak bidalketa egin behar du jarduera honetan osatutzat emateko';
 $string['configshowrecentsubmissions'] = 'Duela gutxiko aktibitatearen txostenetan guztiek ikus ditzakete bidalketen jakinarazpenak';
-$string['confirmbatchgradingoperation'] = 'Ziur al zaude {$a->operation} nahi duzula {$a->count} ikaslerentzat?';
-$string['confirmsubmission'] = 'Ziur al zaude zure lana bidali nahi duzula kalifikatzeko? Ezin izango duzu aldaketarik egin.';
-$string['confirmsubmissionheading'] = 'Baiezttau bidalketa';
+$string['confirmbatchgradingoperation'] = 'Ziur zaude {$a->operation} nahi duzula {$a->count} ikaslerentzat?';
+$string['confirmsubmission'] = 'Ziur zaude zure lana bidali nahi duzula kalifikatzeko? Ezin izango duzu aldaketarik egin.';
+$string['confirmsubmissionheading'] = 'Baieztatu bidalketa';
 $string['conversionexception'] = 'Zeregina ezin izan da bihurtu. Salbuespena hau izan da: {$a}.';
 $string['couldnotconvertgrade'] = 'Ezin izan da bihurtu zereginaren kalifikazioa {$a} erabiltzailearentzat.';
 $string['couldnotconvertsubmission'] = 'Ezin izan da bihurtu zereginaren bidalketa {$a} erabiltzailearentzat.';
@@ -282,7 +286,7 @@ $string['lastmodifiedsubmission'] = 'Azken aldaketa (bidalketa)';
 $string['latesubmissions'] = 'Epez kanpoko bidalketak';
 $string['latesubmissionsaccepted'] = 'Noiz arte baimendua: {$a}';
 $string['loading'] = 'Igotzen...';
-$string['locksubmissionforstudent'] = 'Ez utzi bidalketa berririk ikasle hauentzat: (id={$a->id}, izen osoa={$a->fullname}).';
+$string['locksubmissionforstudent'] = 'Galarazi bidalketa berriak egitea ikasle honi: (id={$a->id}, izen osoa={$a->fullname}).';
 $string['locksubmissions'] = 'Blokeatu bidalketak';
 $string['manageassignfeedbackplugins'] = 'Kudeatu zereginaren feedback-pluginak';
 $string['manageassignsubmissionplugins'] = 'Kudeatu zereginetarako bidalketa-plugina';
@@ -297,8 +301,8 @@ $string['markingworkflowstate'] = 'Kalifikazio lan-fluxuaren egoera';
 $string['markingworkflowstate_help'] = 'Balizko lan-fluxu batek hurrengo egoerak izan ditzake (baimenen arabera):
 
 * Kalifikatu gabe - kalifikatzailea oraindik ez da lanean hasi.
-* Kalifikatzen - kalifikatzailea lanean hasi da baina oraindik ez du bukatu.
-* Kalifikazioa osatua - kalifikatzaileak lana bukatu du baina oraindik ikuskatu/zuzentzera sartuko da.
+* Kalifikatzen - kalifikatzailea lanean hasi da baina oraindik ez du amaitu.
+* Kalifikazioa osatua - kalifikatzaileak lana amaitu du baina oraindik ikuskatu/zuzentzera sartuko da.
 * Berrikusten - irakaslea kalifikazioaren kalitatearen ikuskapena egiten ari da.
 * Ikusgai jartzeko prest - irakasleak kalifikazioari onespena eman dio baina ikasleari oraindik ez zaio kalifikazioa erakutsi.
 * Ikusgai - ikasleak kalifikazio eta feedbacka ikusi ditzake';
@@ -356,7 +360,7 @@ $string['numberofsubmissionsneedgrading'] = 'Kalifikatu beharrekoak';
 $string['numberofsubmittedassignments'] = 'Bidalita';
 $string['numberofteams'] = 'Taldeak';
 $string['offline'] = 'Ez du on-line bidalketarik eskatzen';
-$string['open'] = 'Zabalik';
+$string['open'] = 'Irekita';
 $string['outlinegrade'] = 'Kalifikazioa: {$a}';
 $string['outof'] = '{$a->current}.a {$a->total}-tik';
 $string['overdue'] = '<font color="red">Zeregina bidaltzeko epea amaitu da orain dela {$a}</font>';
@@ -374,10 +378,10 @@ $string['paramtimeremaining'] = '{$a} geratzen da';
 $string['participant'] = 'Partaidea';
 $string['pluginadministration'] = 'Zereginaren kudeaketa';
 $string['pluginname'] = 'Zeregina';
-$string['preventsubmissionnotingroup'] = 'Taldeko kidea izatea behartu';
+$string['preventsubmissionnotingroup'] = 'Behartu taldeko kidea izatea bidalketa egiteko';
 $string['preventsubmissionnotingroup_help'] = 'Gaituz gero, inongo taldeko kideak ez diren partaideek ezingo dute bidalketarik egin.';
-$string['preventsubmissions'] = 'Ez utzi erabiltzaileari bidalketa berriak egiten zeregin honetan.';
-$string['preventsubmissionsshort'] = 'Debekatu bidalketan aldaketak egitea';
+$string['preventsubmissions'] = 'Galarazi erabiltzaileari zeregin honetan bidalketa berriak egitea.';
+$string['preventsubmissionsshort'] = 'Galarazi bidalketan aldaketak egitea';
 $string['previous'] = 'Aurrekoa';
 $string['privacy:attemptpath'] = 'saiakera {$a}';
 $string['privacy:blindmarkingidentifier'] = 'Kalifikazio itsurako erabilitako identifikatzailea';
@@ -414,12 +418,12 @@ $string['recordid'] = 'Identifikatzailea';
 $string['removeallgroupoverrides'] = 'Ezabatu talde-salbuespen guztiak';
 $string['removealluseroverrides'] = 'Ezabatu erabiltzaile-salbuespen guztiak';
 $string['reopenuntilpassincompatiblewithblindmarking'] = 'Gainditu arte berrireki aukera ez da bategarria kalifikazio itsuarekin, kalifikazioak ez direlako kalifikatzailera bidaltzen ikasleen identitateak ezagutarazi arte.';
-$string['requireallteammemberssubmit'] = 'Taldekide guztiek bidalketa egin behar dute';
+$string['requireallteammemberssubmit'] = 'Behartu taldekide guztiak bidalketa egitera';
 $string['requireallteammemberssubmit_help'] = 'Gaituz gero, bidalketa amaitutzat emateko taldekide guztiek bidalketa-botoian klik egin behar dute. Desgaituz gero, bidalketa egina egongo da taldekide bakar batek bidalketa egin bezain laster.';
 $string['requiresubmissionstatement'] = 'Behartu ikasleak bidalketa-adierazpena onartzera';
 $string['requiresubmissionstatement_help'] = 'Behartu ikasleak bidalketa-adierazpena onartzera zeregin honen bidalketa guztietan.';
 $string['revealidentities'] = 'Ezagutarazi ikasleen identitatea';
-$string['revealidentitiesconfirm'] = 'Ziur al zaude ikasleen identitatea jakinarazi nahi duzula zeregin honetan? Eragiketa hau ezin da desegin. Behin ikasleen identitateak jakinarazi direla, kalifikazioak kalifikazio liburura bidaliko dira.';
+$string['revealidentitiesconfirm'] = 'Ziur zaude ikasleen identitatea jakinarazi nahi duzula zeregin honetan? Eragiketa hau ezin da desegin. Behin ikasleen identitateak jakinarazi direla, kalifikazioak kalifikazio liburura bidaliko dira.';
 $string['reverttodefaults'] = 'Itzuli zereginaren balio lehenetsietara';
 $string['reverttodraft'] = 'Itzuli bidalketa zirriborro egoerara.';
 $string['reverttodraftforstudent'] = 'Itzuli ikasle honen bidalketa zirriborro egoerara: (id={$a->id}, izen osoa={$a->fullname}).';
@@ -537,7 +541,7 @@ $string['timemodified'] = 'Azken aldaketa';
 $string['timeremaining'] = 'Geratzen den denbora';
 $string['timeremainingcolon'] = 'Geratzen den denbora: {$a}';
 $string['togglezoom'] = 'Zoom gehiego/gutxiago eremuan';
-$string['ungroupedusers'] = '\'Taldeko kidea izatea behartu\' ezarpena gaituta dago eta erabiltzaile batzuk ez dira inongo taldeko kide edo talde bat baino gehiagoko kideak dira, eta honek erabiltzaile horiek bidalketak egitea ekidingo du.';
+$string['ungroupedusers'] = '\'Behartu taldeko kidea izatea bidalketa egiteko\' ezarpena gaituta dago eta erabiltzaile batzuk ez dira inongo taldeko kide edo talde bat baino gehiagoko kideak dira, eta beraz erabiltzaile horiek ezingo dute bidalketarik egin.';
 $string['unlimitedattempts'] = 'Mugarik gabea';
 $string['unlimitedattemptsallowed'] = 'Mugarik gabeko saiakera-kopurua onartzen da.';
 $string['unlimitedpages'] = 'Mugarik gabea';
@@ -562,7 +566,7 @@ $string['viewbatchsetmarkingworkflowstate'] = 'Ikusi kalifikazio lan-fluxu egoer
 $string['viewfeedback'] = 'Ikusi feedbacka';
 $string['viewfeedbackforuser'] = 'Ikusi erabiltzaile honentzako feedbacka: {$a}';
 $string['viewfull'] = 'Ikusi guztia';
-$string['viewfullgradingpage'] = 'Joan kalifikazio guztien orrira feedbacka emateko';
+$string['viewfullgradingpage'] = 'Ireki kalifikazio guztien orria feedbacka emateko';
 $string['viewgradebook'] = 'Ikusi kalifikazio-liburua';
 $string['viewgrading'] = 'Ikusi bidalketa guztiak';
 $string['viewgradingformforstudent'] = 'Ikusi ikasle honen kalifikazio-orria: (id={$a->id}, izen osoa={$a->fullname}).';

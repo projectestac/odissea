@@ -29,4 +29,4 @@ $string['areafiles:view'] = 'リポジトリ埋め込みファイルを表示す
 $string['configplugin'] = 'リポジトリ埋め込みファイルの設定';
 $string['pluginname'] = '埋め込みファイル';
 $string['pluginname_help'] = '現在のテキストエディタの埋め込みファイルです。';
-$string['privacy:metadata'] = '埋め込みファイルリポジトリプラグインはどのような個人データも保存または転送しません。';
+$string['privacy:metadata'] = '埋め込みファイルリポジトリプラグインはいかなる個人データも保存または転送しません。';

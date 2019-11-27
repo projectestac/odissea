@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'アップロード課題が提出されました。';
 $string['event_assessable_uploaded'] = 'ファイルがアップロードされました。';
 $string['pluginname'] = 'アップロード';
-$string['privacy:metadata'] = 'アップロード課題プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'アップロード課題プラグインはいかなる個人データも保存しません。';

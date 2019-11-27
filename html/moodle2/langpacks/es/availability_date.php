@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['ajaxerror'] = 'Error contactando con el servidor';
-$string['description'] = 'Prevenir el acceso hasta (o desde) una fecha y hora predeterminada';
+$string['description'] = 'Prevenir el acceso hasta (o desde) una fecha y hora predeterminada.';
 $string['direction_before'] = 'Fecha';
 $string['direction_from'] = 'desde';
 $string['direction_label'] = 'Dirección';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = '代数式';
 $string['filtername'] = '代数表記法';
-$string['privacy:metadata'] = '代数表記法プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '代数表記法プラグインはいかなる個人データも保存しません。';

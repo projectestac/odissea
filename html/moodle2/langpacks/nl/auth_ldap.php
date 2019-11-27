@@ -43,7 +43,7 @@ $string['auth_ldap_create_error'] = 'Fout bij het aanmaken van de gebruiker in L
 $string['auth_ldap_creators'] = 'Lijst met groepen gebruikers. De leden van de groepen mogen nieuwe cursussen aanmaken. Scheid verschillende groepen met \';\'. Meestal iets als \'cn=leraren,ou=medewerkers,o=mijnorganisatie\'';
 $string['auth_ldap_creators_key'] = 'Aanmakers';
 $string['auth_ldapdescription'] = 'Deze methode levert authenticatie door middel van een externe LDAP-server.
-Als de gebruikersnaam en wachtwoord geldig zijn maakt Moodle een nieuwe gebruiker aan in zijn database. Deze module kan gebruikerseigenschappen vanuit LDAP lezen en bepaalde velden in Moodle alvast invullen. Bij latere aanmeldingen worden alleen de gebruikersnaam en het wachtwoord gecontroleerd.';
+Als de gebruikersnaam en wachtwoord geldig zijn, maakt Moodle een nieuwe gebruiker aan in zijn database. Deze plugin kan gebruikerseigenschappen vanuit LDAP lezen en bepaalde velden in Moodle alvast invullen. Bij latere aanmeldingen worden alleen de gebruikersnaam en het wachtwoord gecontroleerd.';
 $string['auth_ldap_expiration_desc'] = 'Kies  \'{$a->no}\' om de controle op vervallen wachtwoorden uit te schakelen of  \'{$a->ldapserver}\' de geldigheidsduur van de wachtwoorden rechtstreeks uit LDAP te laten lezen.';
 $string['auth_ldap_expiration_key'] = 'Verstrijken';
 $string['auth_ldap_expiration_warning_desc'] = 'Aantal dagen op voorhand dat er een waarschuwing voor het vervallen van het wachtwoord gegeven wordt.';
@@ -101,7 +101,7 @@ $string['auth_ldap_usertypeundefined2'] = 'config.user_type is niet gedefinieerd
 $string['auth_ldap_version'] = 'De versie van het LDAP-protocol die jouw server gebruikt.';
 $string['auth_ldap_version_key'] = 'Versie';
 $string['auth_ntlmsso'] = 'NTLM SSO';
-$string['auth_ntlmsso_enabled'] = 'Zet dit op Ja om Single-sign-on met het NTLM-domein te verkrijgen.<strong>Opmerking</strong>dit vereist bijkomende instellingen op de webserver. Zie <a href="http://docs.moodle.org/nl/NTLM_authenticatie">http://docs.moodle.org/nl/NTLM_authenticatie</a>';
+$string['auth_ntlmsso_enabled'] = 'Zet dit op Ja om Single-sign-on met het NTLM-domein te verkrijgen. Merk op dat dit bijkomende instellingen op de webserver vereist. Zie <a href="https://docs.moodle.org/nl/NTLM_authenticatie">https://docs.moodle.org/nl/NTLM_authenticatie</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Inschakelen';
 $string['auth_ntlmsso_ie_fastpath'] = 'Zet op ja om NTLM SSO fast path in in te schakelen (slaat sommige stappen over als de browser MS Internet Explorer is).';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Probeer NTLM met alle browsers';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_uploaded'] = 'オンラインテキストがアップロードされました。';
 $string['pluginname'] = 'オンライン';
-$string['privacy:metadata'] = 'オンライン課題プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'オンライン課題プラグインはいかなる個人データも保存しません。';

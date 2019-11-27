@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['nocourses'] = '最近のコースなし';
 $string['pluginname'] = '最近アクセスされたコース';
-$string['privacy:metadata'] = '最近アクセスされたコースブロックはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '最近アクセスされたコースブロックはいかなる個人データも保存しません。';
 $string['recentlyaccessedcourses:addinstance'] = '新しい最近アクセスされたコースブロックを追加する';
 $string['recentlyaccessedcourses:myaddinstance'] = '新しい最近アクセスされたコースブロックをダッシュボードに追加する';

@@ -107,7 +107,7 @@ $string['defaultunexpiredwithexceptions'] = 'Seulement les données des utilisat
 À moins qu\'ils n\'aient également l\'un des rôles suivants :<br>
 {$a->unexpired}';
 $string['deletecategory'] = 'Supprimer la catégorie';
-$string['deletecategorytext'] = 'Voulez-vous vraiment supprimer la catégorie « {$a} »?';
+$string['deletecategorytext'] = 'Voulez-vous vraiment supprimer la catégorie « {$a} » ?';
 $string['deletedefaults'] = 'Supprimer les valeurs par défaut : {$a}';
 $string['deletedefaultsconfirmation'] = 'Voulez-vous vraiment supprimer la catégorie et la finalité par défaut de {$a} modules ?';
 $string['deleteexistingdeleteduserstask'] = 'Créer des demandes de suppression de données pour les utilisateurs supprimés antérieurement';
@@ -115,7 +115,7 @@ $string['deleteexpiredcontextstask'] = 'Supprimer les contextes échus';
 $string['deleteexpireddatarequeststask'] = 'Supprimer les fichiers d\'exportation des demandes de données échues';
 $string['deletemyaccount'] = 'Supprimer mon compte';
 $string['deletepurpose'] = 'Supprimer la finalité';
-$string['deletepurposetext'] = 'Voulez-vous vraiment supprimer la finalité « {$a} »?';
+$string['deletepurposetext'] = 'Voulez-vous vraiment supprimer la finalité « {$a} » ?';
 $string['deny'] = 'Refuser';
 $string['denyrequest'] = 'Refuser la demande';
 $string['deprecated'] = 'Obsolète';

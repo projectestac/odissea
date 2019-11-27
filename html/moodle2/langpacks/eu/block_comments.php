@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comments:addinstance'] = 'Gehitu iruzkinak bloke berria';
-$string['comments:myaddinstance'] = 'Gehitu iruzkinak bloke berria aginte-panelean';
+$string['comments:myaddinstance'] = 'Gehitu iruzkinak bloke berria Aginte-panelean';
 $string['pluginname'] = 'Iruzkinak';
 $string['privacy:metadata:core_comment'] = 'Gehitutako iruzkinen erregistroa.';

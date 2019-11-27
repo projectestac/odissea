@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['choosereadme'] = 'Canvas, ένα γονικό θέμα του Moodle 2.0 από τον Patrick Malley.';
+$string['choosereadme'] = 'Canvas, ένα γονικό αισθητικό θέμα του Moodle 2.0 από τον Patrick Malley.';
 $string['pluginname'] = 'Canvas';
 $string['region-side-post'] = 'Δεξιά';
 $string['region-side-pre'] = 'Αριστερά';

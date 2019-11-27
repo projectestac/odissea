@@ -30,6 +30,7 @@ $string['confirmsave'] = 'Confirmar e logo gardar {$a}';
 $string['correctanswer'] = 'Corrixir a resposta';
 $string['correctanswerandfeedback'] = 'Corrixir a resposta e o comentario';
 $string['decodeverifyquestiontext'] = 'Decodificar e comprobar o texto da pregunta';
+$string['invalidmultianswerquestion'] = 'Pregunta de respostas incrustadas (Cloze) non válida({$a}).';
 $string['layout'] = 'Deseño';
 $string['layouthorizontal'] = 'Fila horizontal de botóns de opción';
 $string['layoutmultiple_horizontal'] = 'Fila horizontal de caixas de selección';

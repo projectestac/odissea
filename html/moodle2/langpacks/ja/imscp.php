@@ -49,6 +49,6 @@ $string['packagefile'] = 'パッケージファイル';
 $string['page-mod-imscp-x'] = 'すべてのIMSコンテンツパッケージモジュールページ';
 $string['pluginadministration'] = 'IMSCP管理';
 $string['pluginname'] = 'IMSコンテンツパッケージ';
-$string['privacy:metadata'] = 'IMSコンテンツパッケージプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'IMSコンテンツパッケージプラグインはいかなる個人データも保存しません。';
 $string['search:activity'] = 'IMSコンテンツパッケージ - リソース情報';
 $string['toc'] = 'TOC';

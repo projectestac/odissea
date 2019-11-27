@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'IPアドレス - 小テストアクセスルール';
-$string['privacy:metadata'] = 'IPアドレス小テストアクセスルールプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'IPアドレス小テストアクセスルールプラグインはいかなる個人データも保存しません。';
 $string['subnetwrong'] = 'この小テストには特定の場所からのみアクセスすることができます。このコンピュータは許可一覧にありません。';

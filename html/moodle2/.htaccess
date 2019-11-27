@@ -2,6 +2,12 @@ RewriteEngine on
 
 RewriteBase /
 
+# Required for the proper functioning of cacti
+RewriteRule ^server-status$ - [L]
+RewriteRule ^server-info$ - [L]
+RewriteRule ^works\.php - [L]
+RewriteRule ^monitor\.php - [L]
+
 # Force https
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteCond %{HTTPS} off
@@ -10,4 +16,3 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 # Block access to install.php
 RewriteCond %{REQUEST_URI} ([^/]*)/install.php
 RewriteRule ^([^.]*)/install.php(.*)$ $1/siteoff.html [QSA,L]
-

@@ -34,3 +34,6 @@ $string['default_help'] = 'Om detta aktiveras, kommer denna återkopplingsmetod 
 $string['enabled'] = 'Återkoppling/kommentarer';
 $string['enabled_help'] = 'Om funktionen är aktiverad kan den som betygsätter lämna kommentarer för varje inskickat uppgift.';
 $string['pluginname'] = 'Återkoppling/kommentarer';
+$string['privacy:commentpath'] = 'Återkopplingskommentar';
+$string['privacy:metadata:commentpurpose'] = 'Kommentarstexten';
+$string['privacy:metadata:filepurpose'] = 'Återkopplingsfiler från lärare till deltagaren.';

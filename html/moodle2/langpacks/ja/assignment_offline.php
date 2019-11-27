@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'オフライン';
-$string['privacy:metadata'] = 'オフライン課題プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'オフライン課題プラグインはいかなる個人データも保存しません。';

@@ -29,7 +29,7 @@ $string['accessdenied'] = 'Accesso negato';
 $string['accounts'] = 'Profili';
 $string['addcategory'] = 'Aggiungi categoria';
 $string['additionalhtml'] = 'HTML aggiuntivo';
-$string['additionalhtml_desc'] = 'Le impostazioni seguenti consentono di aggiungere codice HTML da includere in tutte le pagine. È possibile specificare codice HTML da inserire all\'interno del tag HEAD, all\'interno del corpo pagina dopo l\'apertura del tag BODY oppure subito prima della chiusura del tag BODY.<br/>Le impostazioni consentono di aggiungere intestazioni o note a piè di pagina personalizzati su tutte le pagine, oppure di aggiungere servizi quali Google Analytics con facilità ed indipendentemente dal tema utilizzato.';
+$string['additionalhtml_desc'] = 'Le seguenti impostazioni consentono di aggiungere del codice HTML da includere in tutte le pagine. È possibile specificare del codice HTML da inserire all\'interno del tag HEAD, all\'interno del corpo pagina dopo l\'apertura del tag BODY, oppure subito prima della chiusura del tag BODY.<br/>Le impostazioni consentono di aggiungere intestazioni o note a piè di pagina personalizzate su tutte le pagine, oppure di aggiungere servizi quali Google Analytics con facilità ed indipendentemente dal tema utilizzato.';
 $string['additionalhtmlfooter'] = 'Prima della chiusura del tag BODY';
 $string['additionalhtmlfooter_desc'] = 'Il codice HTML verrà aggiunto in tutte le pagine prima della chiusura del tag BODY.';
 $string['additionalhtmlhead'] = 'All\'interno del tag HEAD';
@@ -234,7 +234,7 @@ $string['configdoctonewwindow'] = 'Abilitatando questa opzione, i collegamenti a
 $string['configeditordictionary'] = 'Questo valore sarà utilizzato se lo spell checker aspell non dispone del dizionario corrispondente alla lingua degli utenti.';
 $string['configeditorfontlist'] = 'Scegli i font che appariranno nella lista drop-down dell\'editor.';
 $string['configemailchangeconfirmation'] = 'Obbliga gli utenti a confermare il cambio di email quando modificano l\'indirizzo di posta elettronica nel proprio profilo.';
-$string['configemailfromvia'] = 'Consente di aggiungere le informazioni del sito di provenienza nella sezione "From" della email. E\' utile per rendere nota ai destinatari  la provenienza dell\'email ed aiuta a prevenire rispsote accidentali ad indirizzi no-reply.';
+$string['configemailfromvia'] = 'Consente di aggiungere le informazioni del sito di provenienza nella sezione "From" della email. E\' utile per rendere nota ai destinatari la provenienza dell\'email ed aiuta a prevenire risposte accidentali ad indirizzi no-reply.';
 $string['configenableactivitychooser'] = 'Il selettore attività è una finestra di dialogo che offre una breve descrizione di ciascuna attività e risorsa. Disabilitando il selettore attività, saranno visualizzati due menù a discesa, uno per le attività ed uno per le risorse.';
 $string['configenableblogs'] = 'L\'impostazione attiva  blog personali per tutti gli utenti del sito.';
 $string['configenablecalendarexport'] = 'Abilita l\'esportazione o la sottoscrizione ai calendari.';
@@ -803,7 +803,7 @@ $string['moodleapp_help'] = '<p>Chiunque abbia un account su un sito Moodle può
 $string['moodlebrandedapp'] = 'Moodle app pesonalizzata';
 $string['moodlebrandedapp_help'] = '<p>La Moodle app personalizzata ha le stesse funzionalità dell\'app gratuita ma riporta logo e colori a scelta.</p>
 <a href="https://moodle.com/branded-app">Ulteriori informazioni sulla Moodle app personalizzata</a>';
-$string['moodleorghubname'] = 'Moodle.net';
+$string['moodleorghubname'] = 'Moodle';
 $string['moodlepartners'] = 'Moodle Partner';
 $string['moodlepartners_help'] = '<p>I Moodle Partner sono aziende che forniscono servizi di alta qualità su Moodle, certificati dal Moodle HQ.</p>
 <a href="https://moodle.com/about-partners/">I nostri Partner</a><br />
@@ -1019,7 +1019,11 @@ $string['registermoodleorgli1'] = 'Verrai inserito in una mailing list a basso t
 $string['registermoodleorgli2'] = 'Le statistiche relative al tuo sito saranno inserite nella comunità mondiale {$a} di Moodle.';
 $string['registerwithmoodleorg'] = 'Registra il sito';
 $string['registration'] = 'Registrazione';
-$string['registration_help'] = 'E\' possibile registrare il sito per ricevere avvisi di sicurezza ed accedere a Moodle.net, la piattaforma di condivisione di corsi.';
+$string['registration_help'] = 'Registrando il sito:
+
+* saranno inviati avvisi di sicurezza
+* sarà possibile attivare notifiche push per l\'app mobile
+* sarà possibile contribuire alle statistiche di Moodle sulla comunità mondiale degli utilizzatori';
 $string['registrationwarning'] = 'Se lo desideri puoi registrare il sito.';
 $string['registrationwarningcontactadmin'] = 'Il sito non è registrato. Per favore avverti l\'amministratore.';
 $string['releasenoteslink'] = 'Per informazioni su questa versione di Moodle, si prega di consultare le <a target="_blank" href="{$a}">Note di rilascio</a> in linea';
@@ -1245,6 +1249,7 @@ $string['unsupportedphpversion7'] = 'La versione 7 del PHP non è supportata.';
 $string['unsupportedphpversion71'] = 'PHP 7.1 non è supportato.';
 $string['unsupportedphpversion72'] = 'Il PHP versione 7.2 non è supportato';
 $string['unsupportedphpversion73'] = 'Il PHP versione 7.3 non è supportato.';
+$string['unsupportedphpversion74'] = 'Il PHP versione 7.4 non è supportato';
 $string['unsuspenduser'] = 'Attiva account';
 $string['updateaccounts'] = 'Aggiornare registrazioni esistenti';
 $string['updateautocheck'] = 'Controllo automatico degli aggiornamenti';

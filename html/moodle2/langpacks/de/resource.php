@@ -75,9 +75,15 @@ $string['legacyfilesactive'] = 'Aktiv';
 $string['legacyfilesdone'] = 'Beendet';
 $string['modifieddate'] = 'Geändert {$a}';
 $string['modulename'] = 'Datei';
-$string['modulename_help'] = 'Wenn ein Lernmaterial als Datei vorliegt, kann es einfach in den Kurs eingebunden werden. Achten Sie darauf, dass Ihre Teilnehmer/innen die genutzten Dateiformate auch öffnen können.
+$string['modulename_help'] = 'Mit dem Lernmaterial \'Datei\' können Trainer/innen eine Datei als Kursressource bereitstellen. Nach Möglichkeit wird die Datei in der Kursoberfläche angezeigt; andernfalls werden die Teilnehmer/innen zum Herunterladen aufgefordert. Die Datei kann zugehörige Dateien enthalten, beispielsweise eingebettete Bilder in einer HTML-Seite.
 
-Tipp: Wenn Sie mehrere zusammenhängende HTML-Dateien als Lerninhalt nutzen wollen, packen Sie alles als ZIP-Datei zusammen und laden es in den Kurs hoch. Entpacken Sie dort die ZIP-Datei wieder und markieren Sie die Startseite (oft: index.html) als Hauptdatei im Menü hinter dem Dateinamen.';
+Beachten Sie, dass die Teilnehmer/innen die entsprechende Software brauchen, um die Datei zu öffnen.
+
+Eine Datei kann verwendet werden, um
+
+ * Präsentationen für den Unterricht zu teilen
+ * eine Mini-Website als Kursressource einzubinden
+ * Entwurfsdateien bereitzustellen, damit die Teilnehmer/innen diese bearbeiten und zur Bewertung einreichen können.';
 $string['modulenameplural'] = 'Dateien';
 $string['notmigrated'] = 'Dieser Materialtyp ({$a}) wurde bisher noch nicht migriert';
 $string['optionsheader'] = 'Optionen';

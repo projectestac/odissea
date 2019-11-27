@@ -32,6 +32,6 @@ $string['noimages'] = 'イメージなし';
 $string['nolinks'] = 'リンクなし';
 $string['nostyles'] = 'スタイルなし';
 $string['pluginname'] = 'スクリーンリーダヘルパ';
-$string['privacy:metadata'] = 'atto_accessibilityhelperプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_accessibilityhelperプラグインはいかなる個人データも保存しません。';
 $string['selectimage'] = 'イメージを選択する';
 $string['selectlink'] = 'リンクを選択する';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configtitle'] = 'Mentees blokearen izenburua';
 $string['configtitleblankhides'] = 'Mentees blokearen izenburua (hutsik utziz gero izenbururik ez)';
 $string['mentees:addinstance'] = 'Gehitu mentees bloke berria';
-$string['mentees:myaddinstance'] = 'Gehitu mentees bloke berria aginte-panelean';
+$string['mentees:myaddinstance'] = 'Gehitu mentees bloke berria Aginte-panelean';
 $string['newmenteesblock'] = '(Mentees bloke berria)';
 $string['pluginname'] = 'Mentees';
 $string['privacy:metadata'] = 'Mentees blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';

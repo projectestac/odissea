@@ -810,7 +810,7 @@ $string['moodlebrandedapp_help'] = '<p>Фирменное приложение M
 $string['moodlebrandedappreference'] = 'Кроме того, вы можете получить <a href="https://moodle.com/branded-app/">фирменное приложение Moodle</a> со своим собственным фирменным знаком.';
 $string['moodleorghubname'] = 'Moodle';
 $string['moodlepartners'] = 'Партнеры Moodle';
-$string['moodlepartners_help'] = '<p> Партнеры Moodle - это поставщики услуг, сертифицированные штаб-квартирой Moodle для предоставления высококачественных услуг Moodle для онлайн-среды обучения вашей организации. </ p>
+$string['moodlepartners_help'] = '<p> Партнеры Moodle - это поставщики услуг, сертифицированные штаб-квартирой Moodle для предоставления высококачественных услуг Moodle для онлайн-среды обучения вашей организации. </p>
 <a href="https://moodle.com/about-partners/"> О наших партнерах </a> <br />
 <a href="https://moodle.com/partners"> Найти партнера </a>';
 $string['moodleservices'] = 'Сервисы Moodle';

@@ -36,6 +36,6 @@ $string['loglive:view'] = 'ライブログを表示する';
 $string['nologreaderenabled'] = '有効にされているログリーダはありません。';
 $string['pause'] = 'ライブアップデートを一時停止する';
 $string['pluginname'] = 'ライブログ';
-$string['privacy:metadata'] = 'ライブログプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ライブログプラグインはいかなる個人データも保存しません。';
 $string['resume'] = 'ライブアップデートを再開する';
 $string['selectlogreader'] = 'ログリーダを選択する';

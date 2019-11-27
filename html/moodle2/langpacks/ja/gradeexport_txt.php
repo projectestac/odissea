@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'TXT評定がエクスポートされました。';
 $string['pluginname'] = 'プレインテキストファイル';
-$string['privacy:metadata'] = 'プレインテキストファイル評定エクスポートプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'プレインテキストファイル評定エクスポートプラグインはいかなる個人データも保存しません。';
 $string['timeexported'] = 'このコースからの最新ダウンロード日時';
 $string['txt:publish'] = 'TXT評定エクスポートを公開する';
 $string['txt:view'] = 'テキスト評定エクスポートを使用する';

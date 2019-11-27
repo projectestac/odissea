@@ -31,6 +31,6 @@ $string['antivirussettings'] = 'アンチウイルスプラグインを管理す
 $string['configantivirusplugins'] = 'あなたが使用したいアンチウイルスプラグインを選択して、適用順に並べ替えてください。';
 $string['datastream'] = 'データ';
 $string['emailsubject'] = '{$a} :: ClamAV通知';
-$string['privacy:metadata'] = 'アンチウイルスシステムはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'アンチウイルスシステムはいかなる個人データも保存しません。';
 $string['virusfound'] = '{$a->item} をウイルスチェッカでスキャンした結果、感染が発見されました!';
 $string['virusfounduser'] = 'あなたがアップロードしたファイル {$a->filename} はウイルスチェッカによりスキャンされ、ウイルスに感染していることが発見されました! あなたのファイルは正常にアップロードされませんでした。';

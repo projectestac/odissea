@@ -30,7 +30,7 @@ $string['privacy:metadata'] = 'De Spam cleaner-plugin bewaart geen persoonlijke 
 $string['spamauto'] = 'Detecteer automatisch veel voorkomende spampatronen';
 $string['spamcannotdelete'] = 'Kan deze gebruiker niet verwijderen';
 $string['spamcannotfinduser'] = 'Geen gebruikers voldoen aan je zoekopdracht';
-$string['spamcleanerintro'] = '<p>Met dit script kun je gebruikersprofielen doorzoeken op bepaalde strings en dan die accounts, die duidelijk door spammers gemaakt zijn, verwijderen. Je kunt zoeken naar meerdere woorden door ze in een komma gescheiden lijst te zetten (vb casino,porn)</p><p>In Moodledocs vind je meer informatie over <a href="http://docs.moodle.org/nl/Spam_vermijden_in_Moodle">Spam vermijden in Moodle</a></p>';
+$string['spamcleanerintro'] = '<p>Met dit script kun je gebruikersprofielen doorzoeken op bepaalde strings en dan die accounts, die duidelijk door spammers gemaakt zijn, verwijderen. Je kunt zoeken naar meerdere woorden door ze in een komma gescheiden lijst te zetten (vb casino,porn)</p><p>In Moodledocs vind je meer informatie over <a href="https://docs.moodle.org/nl/Spam_vermijden_in_Moodle">Spam vermijden in Moodle</a></p>';
 $string['spamdeleteall'] = 'Verwijder al deze accounts';
 $string['spamdeleteallconfirm'] = 'Ben je er zeker van dat je al deze accounts wil verwijderen? Je kan dit niet ongedaan maken.';
 $string['spamdeleteconfirm'] = 'Ben je er zeker van dat je dit wil verwijderen? Je kan dit niet ongedaan maken.';

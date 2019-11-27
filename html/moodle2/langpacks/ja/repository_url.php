@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'URLリポジトリタイプ設定';
 $string['download'] = 'ダウンロード';
 $string['pluginname'] = 'URLダウンローダ';
-$string['privacy:metadata'] = 'URLダウンローダリポジトリプラグインはどのような個人データも保存または転送しません。';
+$string['privacy:metadata'] = 'URLダウンローダリポジトリプラグインはいかなる個人データも保存または転送しません。';
 $string['rename'] = '名称';
 $string['url'] = 'URL';
 $string['url:view'] = 'ファイルピッカ内のURLダウンローダを使用する';

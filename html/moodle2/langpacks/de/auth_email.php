@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_emaildescription'] = '<p>Die Authentifizierung \'E-Mail basiert\' ermöglicht, dass sich Nutzer/innen selber in Moodle neu anmelden können. Die Nutzer/innen erhalten nach dem Ausfüllen des Nutzerprofils automatisch eine E-Mail mit einer Bestätigungs-URL zugesendet, über die das neue Nutzerkonto freigeschaltet werden muss. Anschließend wird bei der Anmeldung nur noch der Anmeldename und das Kennwort anhand der gespeicherten Daten geprüft.</p>
 <p>Hinweis: Zusätzlich zur Aktivierung muss für die Selbstregistrierung das Plugin \'E-Mail basiert\' auf der Seite \'Authentifizierungen verwalten\' ausgewählt werden.</p>';
 $string['auth_emailnoemail'] = 'Der Versuch ist gescheitert, Ihnen eine E-Mail zu senden!';
-$string['auth_emailrecaptcha'] = 'Diese Option fügt bei der Selbstregistierung ein Kontrollelement (Bild oder Audio) ein, um die Website gegen Spambots zu schützen. Weitere Infos finden Sie unter <a href="http://www.google.com/recaptcha" target="_blank">http://www.google.com/recaptcha</a>.';
+$string['auth_emailrecaptcha'] = 'Diese Option fügt bei der Selbstregistierung per E-Mai ein Kontrollelement hinzu (Bild oder Audio), um die Website gegen Spambots zu schützen. Weitere Infos finden Sie unter <a href="https://www.google.com/recaptcha" target="_blank">https://www.google.com/recaptcha</a>.';
 $string['auth_emailrecaptcha_key'] = 'ReCaptcha aktivieren';
 $string['auth_emailsettings'] = 'Einstellungen';
 $string['pluginname'] = 'E-Mail basiert';

@@ -72,7 +72,7 @@ $string['delete_item'] = 'Supprimer question';
 $string['delete_old_items'] = 'Supprimer anciens éléments';
 $string['delete_pagebreak'] = 'Supprimer le saut de page';
 $string['delete_template'] = 'Supprimer modèle';
-$string['delete_templates'] = 'Supprimer modèle...';
+$string['delete_templates'] = 'Supprimer modèle…';
 $string['depending'] = 'Dépendances';
 $string['depending_help'] = 'Il est possible d\'afficher un élément en fonction de la valeur d\'un autre élément.<br />
 <strong>Voici un exemple.</strong><br />

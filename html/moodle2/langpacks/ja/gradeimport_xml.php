@@ -38,6 +38,6 @@ $string['fileurl_help'] = 'リモートファイルURLフィールドは学生�
 $string['importxml'] = 'XMLインポート';
 $string['importxml_help'] = '評定はユーザIDナンバーおよび活動IDナンバーを含むXMLファイルによりインポートすることができます。正しいフォーマットを取得するには最初にXMLファイルに評定をエクスポートしてファイルを確認してください。';
 $string['pluginname'] = 'XMLファイル';
-$string['privacy:metadata'] = 'XMLから評定をインポートするプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'XMLから評定をインポートするプラグインはいかなる個人データも保存しません。';
 $string['xml:publish'] = 'XMLからの評定インポートを公開する';
 $string['xml:view'] = 'XMLから評定をインポートする';

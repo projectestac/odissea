@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['courseoverview:view'] = 'コース概要レポートを表示する';
 $string['pluginname'] = 'コース概要';
-$string['privacy:metadata'] = 'コース概要プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'コース概要プラグインはいかなる個人データも保存しません。';

@@ -100,7 +100,7 @@ $string['cannotfindinfo'] = 'Kan geen informatie voor "{$a}" vinden';
 $string['cannotfindlang'] = 'Kan taalpakket "{$a}" niet vinden';
 $string['cannotfindteacher'] = 'Kon leraar niet vinden';
 $string['cannotfinduser'] = 'Kan gebruiker {$a} niet vinden';
-$string['cannotgeoplugin'] = 'Kan niet verbinden met de geoPlugin server op http://www.geoplugin.com. Controleer je proxy-instellingen of installeer het MaxMind GeoLite City gegevensbestand';
+$string['cannotgeoplugin'] = 'Kan niet verbinden met de geoPlugin server op https://www.geoplugin.com. Controleer je proxy-instellingen of installeer het MaxMind GeoLite City gegevensbestand';
 $string['cannotgetblock'] = 'Kon blokken niet vinden in de databank';
 $string['cannotgetcats'] = 'fout bij het ophalen van het categorie record';
 $string['cannotgetdata'] = 'Kan gegevens niet ophalen';
@@ -388,7 +388,7 @@ $string['loginasonecourse'] = 'Je kunt deze cursus niet openen.<br />Je moet je 
 $string['maxareabytes'] = 'Het bestand is groter dan de beschikbare plaats.';
 $string['maxbytesfile'] = 'Het bestand {$a->file} is te groot. De maximale grootte die je kunt uploaden is {$a->size}.';
 $string['messagingdisable'] = 'Berichten zijn uitgeschakeld op deze site';
-$string['mimetexisnotexist'] = 'Je systeem is niet geconfigureerd om mimeTeX te gebruiken. Je moet de C bronbestanden verkrijgen van  <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, ze compileren en het uitvoerbaar bestand in je moodle/filter/tex/ map zetten.';
+$string['mimetexisnotexist'] = 'Je systeem is niet geconfigureerd om mimeTeX te gebruiken. Je moet de C bronbestanden verkrijgen van  <a href="https://www.forkosh.com/mimetex.zip"> https://www.forkosh.com/mimetex.zip</a>, ze compileren en het uitvoerbaar bestand in je moodle/filter/tex/ map zetten.';
 $string['mimetexnotexecutable'] = 'Aangepast mimetex bestand is niet uitvoerbaar!';
 $string['missingfield'] = 'Veld "{$a}" ontbreekt';
 $string['missingkeyinsql'] = 'FOUT: ontbrekende param "{$a}" in query';

@@ -47,7 +47,6 @@ $string['confirmdialogbody'] = '您确定继续吗？此操作不可逆。';
 $string['confirmdialogheader'] = '确认操作';
 $string['confirmlabel'] = '确认';
 $string['contentchanged'] = '这个内容在你上次使用后已修改过。';
-$string['contentCopied'] = '内容被复制到剪贴板';
 $string['contentstatefrequency'] = '内容保存频率';
 $string['contentstatefrequency_help'] = '你希望多少秒为自动保存进度？如果有需要请修改此数值。';
 $string['contenttype'] = '内容类型';

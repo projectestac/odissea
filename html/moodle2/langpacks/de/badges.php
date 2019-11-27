@@ -89,7 +89,7 @@ Auf einer produktiven Website sollten Sie das Problem lösen. Andernfalls könne
 **Was muss ich tun, wenn nicht die gesamte Website öffentlich erreichbar sein soll?**
 
 Die einzige URL, die für die Verifizierung benötigt wird, ist [website]/badges/assertion.php. Wenn die Firewall so konfiguriert ist, dass sie den Zugriff auf dieses Skript erlaubt, funktioniert die Verifizierung von Badges.';
-$string['backpackbadges'] = 'Sie haben {$a->totalbadges} Badge(s), angezeigt aus {$a->totalcollections} Sammlung(en). <a href="mybackpack.php">Backpack konfigurieren</a>.';
+$string['backpackbadges'] = 'Sie haben {$a->totalbadges} Badge(s), angezeigt aus {$a->totalcollections} Collection(s). <a href="mybackpack.php">Backpack konfigurieren</a>.';
 $string['backpackcannotsendverification'] = 'Eine Bestätigungsmitteilung konnte nicht gesendet werden.';
 $string['backpackconnection'] = 'Verbindung zum Backpack';
 $string['backpackconnectioncancelattempt'] = 'Verwenden Sie zum Verbinden eine andere E-Mail-Adresse.';
@@ -107,7 +107,7 @@ Wenn eine Verbindung zum Backpack-Dienst besteht, werden alle Badges dieser Webs
 $string['backpackemailverificationpending'] = 'Bestätigung ausstehend';
 $string['backpackemailverifyemailbody'] = 'Guten Tag,
 
-unter Verwendung Ihrer E-Mail-Adresse wurde von \'{$a->sitename}\' eine neue Verbindung zu Ihrem OpenBadges-Backpack angefordert. Um die Verbindung zu prüfen und zu aktivieren, klicken Sie bitte auf den nachfolgenden Link.
+unter Verwendung Ihrer E-Mail-Adresse wurde von \'{$a->sitename}\' eine neue Verbindung zu Ihrem Badges-Backpack angefordert. Um die Verbindung zu prüfen und zu aktivieren, klicken Sie bitte auf den nachfolgenden Link.
 
 {$a->link}
 
@@ -116,14 +116,14 @@ In den meisten E-Mail-Programmen sollte dieser Link blau und anklickbar sein. Fa
 Wenn Sie Hilfe benötigen, wenden Sie sich an den Administrator der Website, {$a->admin}
 
 Ihr E-Learning-Team';
-$string['backpackemailverifyemailsubject'] = '{$a}: E-Mail-Bestätigung für OpenBadges-Backpack';
+$string['backpackemailverifyemailsubject'] = '{$a}: E-Mail-Bestätigung für Badges-Backpack';
 $string['backpackemailverifypending'] = 'Eine Bestätigungsmitteilung wurde an <strong>{$a}</strong> versendet. Klicken Sie auf den Bestätigungslink in der E-Mail, um die Backpack-Verbindung zu aktivieren.';
 $string['backpackemailverifysuccess'] = 'Danke für die Bestätigung Ihrer E-Mail-Adresse. Sie sind jetzt mit Ihrem Backpack verbunden.';
 $string['backpackemailverifytokenmismatch'] = 'Das Token im angeklickten Link stimmt nicht mit dem gespeicherten Token überein. Prüfen Sie, ob Sie wirklich den Link in der aktuellsten E-Mail angeklickt haben.';
 $string['backpackimport'] = 'Importeinstellungen';
 $string['backpackimport_help'] = 'Wenn die Verbindung zum Backpack erfolgreich hergestellt ist, können Badges aus Ihrem Backpack auf der Seite \'Meine Badges\' und in Ihrem Nutzerprofil angezeigt werden.
 
-An dieser Stelle können Sie die Badges auswählen, die Sie in Ihrem Profil anzeigen möchten.';
+An dieser Stelle können Sie die Badge Collections auswählen, die Sie in Ihrem Profil anzeigen möchten.';
 $string['badgedetails'] = 'Grundeinstellungen';
 $string['badgeimage'] = 'Bild';
 $string['badgeimage_help'] = 'Dieses Bild wird verwendet, wenn der Badge verliehen wird.
@@ -165,7 +165,7 @@ $string['claimid'] = 'Leitsatz (URL)';
 $string['clearsettings'] = 'Einstellungen löschen';
 $string['completioninfo'] = 'Dieser Badge wurde verliehen für den Abschluss:';
 $string['completionnotenabled'] = 'Die Abschlussverfolgung ist für diesen Kurs nicht aktiviert. Deshalb kann der Kursabschluss nicht als Kriterium zur Verleihung eines Badge verwendet werden. Aktivieren Sie die Abschlussverfolgung in den Kurseinstellungen.';
-$string['configenablebadges'] = 'Wenn diese Option aktiviert ist, können Badges angelegt und an Nutzer/innen der Website verliehen werden.';
+$string['configenablebadges'] = 'Wenn diese Option aktiviert ist, können Sie Badges erstellen und an Nutzer/innen der Website vergeben.';
 $string['configuremessage'] = 'Mitteilung';
 $string['connect'] = 'Verbinden';
 $string['connected'] = 'Verbunden';
@@ -384,8 +384,8 @@ $string['newimage'] = 'Neues Bild';
 $string['noalignment'] = 'Für diesen Badge sind keine Kompetenzen angegeben.';
 $string['noawards'] = 'Dieser Badge wurde bisher nicht verliehen.';
 $string['nobackpack'] = 'Mit diesem Nutzerkonto ist kein Backpack-Dienst verbunden.<br/>';
-$string['nobackpackbadges'] = 'Kein Badge in der ausgewählten Sammlung. <a href="mybackpack.php">Weitere Sammlungen hinzufügen</a>.';
-$string['nobackpackcollections'] = 'Keine Badge-Sammlung ausgewählt. <a href="mybackpack.php">Sammlungen hinzufügen</a>.';
+$string['nobackpackbadges'] = 'Kein Badge in der ausgewählten Collection. <a href="mybackpack.php">Weitere Collections hinzufügen</a>.';
+$string['nobackpackcollections'] = 'Keine Badge Collection ausgewählt. <a href="mybackpack.php">Collections hinzufügen</a>.';
 $string['nobadges'] = 'Keine Badges verfügbar';
 $string['nocriteria'] = 'Badge-Kriterien sind bisher nicht festgelegt.';
 $string['noendorsement'] = 'Für das Badge wurde keine Bestätigung erteilt.,';
@@ -431,12 +431,12 @@ $string['privacy:metadata:backpack:backpackuid'] = 'Eindeutiger Identifier des B
 $string['privacy:metadata:backpack:backpackurl'] = 'URL des Backpacks';
 $string['privacy:metadata:backpack:email'] = 'E-Mail-Adresse, die mit dem Backpack verbunden ist';
 $string['privacy:metadata:backpack:userid'] = 'ID der Person, deren Backpack das ist';
-$string['privacy:metadata:badge'] = 'Sammlung von Badges';
+$string['privacy:metadata:badge'] = 'Badge Collection';
 $string['privacy:metadata:badge:timecreated'] = 'Zeit, zu der der Badge erstellt wurde';
 $string['privacy:metadata:badge:timemodified'] = 'Zeit, zu der der Badge zuletzt bearbeitet wurde';
 $string['privacy:metadata:badge:usercreated'] = 'ID der Person, die den Badge erstellt hat';
 $string['privacy:metadata:badge:usermodified'] = 'ID der Person, die den Badge bearbeitet hat';
-$string['privacy:metadata:criteriamet'] = 'Sammlung von Kriterien, die erreicht wurden';
+$string['privacy:metadata:criteriamet'] = 'Liste von Kriterien, die erreicht wurden';
 $string['privacy:metadata:criteriamet:datemet'] = 'Das Datum, an dem das Kriterium erfüllt wurde';
 $string['privacy:metadata:criteriamet:userid'] = 'ID der Person, die die Kriterien erfüllt hat';
 $string['privacy:metadata:external:backpacks'] = 'Geteilte Daten, wenn eine Person Ihre Badges an ein externes Backpack überträgt';
@@ -476,12 +476,12 @@ $string['save'] = 'Speichern';
 $string['searchname'] = 'Nach Name suchen';
 $string['selectaward'] = 'Wählen Sie die Rolle, die diesen Badge verleihen darf:';
 $string['selectgroup_end'] = 'Nur öffentliche Sammlungen werden angezeigt. <a href="http://backpack.openbadges.org">Gehen Sie zu Ihrem Backpack</a> und legen Sie eine öffentliche Sammlung an.';
-$string['selectgroup_start'] = 'Wählen Sie Sammlungen aus Ihrem Backpack, um sie auf dieser Seite anzuzeigen:';
+$string['selectgroup_start'] = 'Wählen Sie Collections aus Ihrem Backpack, um sie auf dieser Seite anzuzeigen:';
 $string['selecting'] = 'Mit den gewählten Badges ...';
 $string['setup'] = 'Verbindung konfigurieren';
 $string['signinwithyouremail'] = 'Melden Sie sich mit Ihrer E-Mail-Adresse an';
-$string['sitebadges'] = 'Globale Badges';
-$string['sitebadges_help'] = 'Globale Badges können nur für systemweite Leistungen verliehen werden, wie z.B. das Abschließen mehrerer Kurse oder die Vervollständigung des Nutzerprofils. Globale Badges können auch manuell von einer Person an eine andere verliehen werden.
+$string['sitebadges'] = 'Website-Badges';
+$string['sitebadges_help'] = 'Website-Badges können nur für systemweite Leistungen verliehen werden, wie z.B. das Abschließen mehrerer Kurse oder die Vervollständigung des Nutzerprofils. Website-Badges können auch manuell von einer Person an eine andere verliehen werden.
 
 Badges für kursbezogene Leistungen müssen für den jeweiligen Kurs angelegt werden. Sie finden die entsprechenden kursbezogenen Badges unter \'Kurs-Administration > Badges\'.';
 $string['status'] = 'Status';

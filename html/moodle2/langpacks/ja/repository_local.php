@@ -32,5 +32,5 @@ $string['local:view'] = 'サーバリポジトリを表示する';
 $string['notitle'] = 'タイトルなし';
 $string['pluginname'] = 'サーバファイル';
 $string['pluginname_help'] = '前回、Moodleサーバにアップロードされたファイル';
-$string['privacy:metadata'] = 'サーバファイルリポジトリプラグインはどのような個人データも保存または転送しません。';
+$string['privacy:metadata'] = 'サーバファイルリポジトリプラグインはいかなる個人データも保存または転送しません。';
 $string['remember'] = '次回から入力を省略する';

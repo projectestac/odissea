@@ -109,7 +109,7 @@ $string['configoldpostdays'] = '古い投稿を既読とする日数です。';
 $string['configreplytouser'] = 'フォーラムの投稿がメール送信される場合、受信者がフォーラムを介さず個人的に返信できるようメールにユーザのメールアドレスを表示しますか? 「Yes」に設定した場合でもユーザはプロファイルページでメールアドレスを隠すよう設定することができます。';
 $string['configrssarticlesdefault'] = 'RSSフィードが有効にされた場合、デフォルト投稿数 (ディスカッションまたは投稿) を設定してください。';
 $string['configrsstypedefault'] = 'RSSフィードが有効にされた場合、デフォルト活動タイプを設定してください。';
-$string['configshortpost'] = 'この文字長以下の長さ (HTMLは含まない) は短いとみなされます (下記参照)。';
+$string['configshortpost'] = 'この文字長以下の長さ (HTMLは含まない) は短いとみなされます (以下参照)。';
 $string['configsubscriptiontype'] = '購読モードのデフォルト設定です。';
 $string['configtrackingtype'] = '未読管理のデフォルト設定';
 $string['configtrackreadposts'] = 'ユーザごとに未読管理したい場合、「Yes」を選択してください。';
@@ -339,7 +339,7 @@ $string['modulename_help'] = 'フォーラム活動モジュールにおいて�
 
 フォーラム投稿は教師または学生 (ピア評価) によって評価することができます。評価は合計した後に最終評価として評定表に記録させることができます。
 
-フォーラムは下記のように使用することができます:
+フォーラムは以下のように使用することができます:
 
 * 学生がお互いを知り合うためのソーシャルスペースとして
 * コースのお知らせ用として (強制購読のニュースフォーラムを使用)
@@ -524,7 +524,7 @@ $string['search'] = '検索';
 $string['search:activity'] = 'フォーラム - 活動情報';
 $string['searchdatefrom'] = '投稿がこの日付よりも新しい';
 $string['searchdateto'] = '投稿がこの日付よりも古い';
-$string['searchforumintro'] = '下記のフィールドの少なくとも1つに検索語句を入力してください:';
+$string['searchforumintro'] = '以下のフィールドの少なくとも1つに検索語句を入力してください:';
 $string['searchforums'] = 'フォーラムを検索する';
 $string['searchfullwords'] = 'これらの語を完全に含む';
 $string['searchnotwords'] = 'これらの語を含まない';

@@ -25,14 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['broughtbymoodle'] = 'Esta exportación de datos é fornecida por Moodle.';
+$string['exportfrom'] = 'Exportado de {$a}';
+$string['exporttime'] = 'Exportado en {$a}';
+$string['exportuser'] = 'Datos para {$a}';
+$string['navigation'] = 'Navegación';
 $string['privacy:metadata'] = 'O subsistema de privacidade non almacena ningún dato propio e está deseñado para actuar como unha canle entre os compoñentes e a interface utilizada para describir, exportar e eliminar os seus datos.';
 $string['privacy:subsystem:empty'] = 'Este subsistema non almacena ningún dato.';
 $string['trace:deletingapproved'] = 'Realizando a remoción de {$a->total} contextos aprobados ({$a->datetime})';
+$string['trace:deletingapprovedusers'] = 'Realizando a remoción de usuarios en {$a->total} compoñentes aprobados para o contesto {$a->contextid} ({$a->datetime}).';
 $string['trace:deletingcontext'] = 'Realizando a remoción de contexto de {$a->total} compoñentes ({$a->datetime})';
+$string['trace:deletinguser'] = 'Realizando a remoción do usuario de {$a->total} compoñentes ({$a->datetime})';
 $string['trace:done'] = 'Completa';
 $string['trace:exportcomplete'] = 'Exportación completa';
 $string['trace:exportingapproved'] = 'Realizando exportación primaria para {$a->total} compoñentes ({$a->datetime})';
 $string['trace:exportingrelated'] = 'Realizando exportación relacionada para {$a->total} compoñentes ({$a->datetime})';
 $string['trace:fetchcomponents'] = 'Buscando {$a->total} compoñentes ({$a->datetime})';
 $string['trace:finalisingexport'] = 'Finalizando a exportación';
+$string['trace:preprocessingcomponent'] = 'Preprocesando {$a->component} ({$a->progress}/{$a->total}) ({$a->datetime})';
 $string['trace:processingcomponent'] = 'Procesando {$a->component} ({$a->progress}/{$a->total}) ({$a->datetime})';
+$string['viewdata'] = 'Prema nunha ligazón na navegación para ver os datos.';

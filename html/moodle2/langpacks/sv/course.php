@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aria:coursename'] = 'Kursnamn';
+$string['aria:favourite'] = 'Kursen är favoritmärkt';

@@ -51,7 +51,7 @@ $string['expirymessageenrolledbody'] = '{$a->user} さん
 
 詳細は {$a->enroller} をご連絡ください。';
 $string['expirymessageenrolledsubject'] = '登録期限切れ通知';
-$string['expirymessageenrollerbody'] = '下記ユーザに関して、次の {$a->threshold} でコース「 {$a->course} 」の登録が期限切れとなります:
+$string['expirymessageenrollerbody'] = '以下ユーザに関して次の {$a->threshold} でコース「 {$a->course} 」の登録が期限切れとなります:
 
 {$a->users}
 
@@ -67,7 +67,7 @@ $string['messageprovider:expiry_notification'] = '手動登録期限切れ通知
 $string['now'] = '今すぐ';
 $string['pluginname'] = '手動登録';
 $string['pluginname_desc'] = '手動登録プラグインではコース管理設定内のリンクを使用してユーザが教師等の適切なパーミッションを割り当てたユーザを手動で登録できるようにします。自己登録等の登録プラグインで必要とするため、通常、このプラグインは有効にされています。';
-$string['privacy:metadata'] = '手動登録プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '手動登録プラグインはいかなる個人データも保存しません。';
 $string['selectcohorts'] = 'コーホートを選択する';
 $string['selection'] = '選択';
 $string['selectusers'] = 'ユーザを選択する';

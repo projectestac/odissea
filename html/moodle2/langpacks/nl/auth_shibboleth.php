@@ -29,7 +29,7 @@ $string['auth_shib_auth_logo'] = 'Logo authenthicatiemethode';
 $string['auth_shib_auth_logo_description'] = 'Geef een logo voor de Shibboleth authenticatiemethode dat bekend is voor jouw gebruikers. Dit dan het logo van jouw Shibboleth federatie zijn, bijvoorbeeld <tt>SWITCHaai Login</tt> of <tt>InCommon Login</tt> of iets gelijkaardigs.';
 $string['auth_shib_auth_method'] = 'Naam authenticatiemethode';
 $string['auth_shib_auth_method_description'] = 'Geef een naam voor de Shibboleth authenticatiemethode die bekend is voor je gebruikers. Dit zou de naam van je Shibboleth federatie kunnen zijn, vb. <tt>SWITCHaai Login</tt> of <tt>InCommon Login</tt> of gelijkaardig:';
-$string['auth_shibbolethdescription'] = 'Door deze methode te gebruiken kun je verbinding maken met een bestaande Shibboleth server om gebruikers te controleren en nieuwe aan te maken';
+$string['auth_shibbolethdescription'] = 'Door deze methode te gebruiken kun je verbinding maken met een bestaande Shibboleth server om gebruikers te controleren en nieuwe aan te maken. Documentatie op <a href="../auth/shibboleth/README.txt">Shibboleth README</a>.';
 $string['auth_shibboleth_errormsg'] = 'Kies de organisatie waarvan je lid bent';
 $string['auth_shibboleth_login'] = 'Shibboleth aanmelding';
 $string['auth_shibboleth_login_long'] = 'Inloggen bij Moodle via Shibboleth';
@@ -47,7 +47,7 @@ $string['auth_shib_instructions'] = 'Gebruik de <a href="{$a}">Shibboleth login<
 $string['auth_shib_instructions_help'] = 'Hier zou je aangepaste instructies moeten geven om je gebruikers Shibboleth uit te leggen. Die instructies zullen getoond worden op de login-pagina in het gedeelte voor instructies. Er zou een link naar "<b>{$a}</b>" moeten instaan, zodat gebruikers gemakkelijk kunnen inloggen. Als je dit blanco laat, dan zullen de standaardinstructies getoond worden (niet specifiek voor Shibboleth).';
 $string['auth_shib_instructions_key'] = 'Inlog instructies';
 $string['auth_shib_integrated_wayf'] = 'Moodle WAYF Service';
-$string['auth_shib_integrated_wayf_description'] = 'Als je dit inschakeld zal Moodle zijn eigen WAYF service gebruiken in plaats van degene die vor Shibboleth geconfigureerd is. Moodle zal een rolmenu tonen op deze alternatieve loginpagina waar de gebruiker zijn identiteitsprovider kan kiezen.';
+$string['auth_shib_integrated_wayf_description'] = 'Als je dit inschakelt, zal Moodle zijn eigen WAYF service gebruiken in plaats van degene die vor Shibboleth geconfigureerd is. Moodle zal een rolmenu tonen op deze alternatieve loginpagina waar de gebruiker zijn identiteitsprovider kan kiezen.';
 $string['auth_shib_logout_return_url'] = 'Alternatieve URL om naar terug te keren bij afmelden';
 $string['auth_shib_logout_return_url_description'] = 'Geef de URL waarnaar Shibboleth-gebruikers zullen gebracht worden bij afmelden.<br/>Indien niet ingevuld zullen gebruikers naar de locatie gebracht worden waarnaar Moodle ze brengt.';
 $string['auth_shib_logout_url'] = 'Shibollet Service Provider URL voor afmelden';

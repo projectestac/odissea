@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = '未完了';
 $string['pluginname'] = '即時フィードバック';
-$string['privacy:metadata'] = '即時フィードバック問題動作プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '即時フィードバック問題動作プラグインはいかなる個人データも保存しません。';

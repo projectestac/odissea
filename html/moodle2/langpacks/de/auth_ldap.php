@@ -43,11 +43,7 @@ $string['auth_ldap_create_context_key'] = 'Kontext für neue Nutzer/innen';
 $string['auth_ldap_create_error'] = 'Fehler beim Anlegen des Nutzerkontos in LDAP';
 $string['auth_ldap_creators'] = 'Liste von Gruppen oder Kontexten, deren Mitglieder Kurse verwalten und neu anlegen dürfen (Liste der Kursersteller/innen). Mehrere Gruppen werden durch ein \';\' (Semikolon) getrennt. Normalerweise hat der Eintrag diese Form: \'cn=teachers,ou=staff,o=myorg\'';
 $string['auth_ldap_creators_key'] = 'Kursersteller/innen';
-$string['auth_ldapdescription'] = '<p>Diese Anmeldemethode ermöglicht die Authentifizierung über einen externen LDAP-Server.</p>
-
-<p>Um ein neues LDAP-basiertes Nutzerkonto in Moodle anzulegen, muss vorher das LDAP-Nutzerkonto existieren. Beim ersten Login wird automatisch ein neues Nutzerkonto in der Moodle-Datenbank, wobei Anmeldename und Kennwort vorher von LDAP geprüft werden. Das Modul sorgt dafür, dass ausgewählte Nutzerdaten von LDAP in die Moodle-Datenbank übernommen werden können. Wenn das Kennwort weiterhin ausschließlich von LDAP verwaltet wird, ermöglicht dies einheitliche Anmeldedaten in unterschiedlichen Moodle-Instanzen und bei anderen Servern.</p>
-
-<p>Bei allen weiteren Logins werden weiterhin Anmeldename und Kennwort vom LDAP-Server überprüft.</p>';
+$string['auth_ldapdescription'] = 'Diese Anmeldemethode ermöglicht die Authentifizierung gegenüber einem externen LDAP-Server. Wenn der angegebene Anmeldename und das angegebene Kennwort gültig sind, erstellt Moodle ein neues Nutzerkonto in seiner Datenbank. Dieses Plugin kann Nutzerattribute aus LDAP lesen und gewünschte Felder in Moodle vorab ausfüllen. Bei nachfolgenden Anmeldungen werden nur noch der Anmeldename und das Kennwort überprüft.';
 $string['auth_ldap_expiration_desc'] = 'Wählen Sie \'{$a->no}\', um den Ablauf von Kennwörtern nicht zu prüfen. Wenn Sie \'{$a->ldapserver}\' wählen, wird Ablaufdatum direkt vom LDAP-Server zu lesen.';
 $string['auth_ldap_expiration_key'] = 'Ablauf';
 $string['auth_ldap_expiration_warning_desc'] = 'Anzahl der Tage, an denen vor dem Ablauf eines Kennwortes eine Warnung ausgegeben wird';
@@ -104,7 +100,7 @@ $string['auth_ldap_usertypeundefined2'] = 'config.user_type ist nicht definiert 
 $string['auth_ldap_version'] = 'Tragen Sie verfügbare LDAP-Version auf Ihrem Server ein.';
 $string['auth_ldap_version_key'] = 'Version';
 $string['auth_ntlmsso'] = 'NTLM-SSO';
-$string['auth_ntlmsso_enabled'] = 'Aktivieren Sie diese Einstellung, um die einmalige Anmeldung (Single Sign On) mit der NTML-Domain zu versuchen. Anmerkung: Zusätzlich sind Einstellungen für den Webserver notwendig. Siehe <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
+$string['auth_ntlmsso_enabled'] = 'Setzen Sie diesen Wert auf "ja", um Single-Sign-On mit der NTLM-Domäne zu versuchen. Beachten Sie, dass dies zusätzliche Einstellungen auf dem Server erfordert, um zu funktionieren. Weitere Informationen finden Sie in der Dokumentation <a href="https://docs.moodle.org/en/NTLM_authentication">NTLM-Authentifizierung</a>.';
 $string['auth_ntlmsso_enabled_key'] = 'Aktivieren';
 $string['auth_ntlmsso_ie_fastpath'] = 'Wenn diese Option aktiviert ist, wird der \'NTLM SSO fast path\' zugelassen. Das funktioniert nur mit dem Internet Explorer.';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'NTLM mit allen Browsern versuchen';

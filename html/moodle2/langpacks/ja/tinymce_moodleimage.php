@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleimage:browseimage'] = 'イメージを探すまたはアップロードする ...';
 $string['pluginname'] = 'イメージを追加する';
-$string['privacy:metadata'] = 'TinyMCE Moodleイメージプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'TinyMCE Moodleイメージプラグインはいかなる個人データも保存しません。';

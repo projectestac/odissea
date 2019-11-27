@@ -40,8 +40,8 @@ $string['cohorts'] = 'コーホート';
 $string['cohortsin'] = '{$a}: 利用可能なコーホート';
 $string['component'] = 'ソース';
 $string['contextnotfound'] = 'コンテクスト <b>{$a}</b> が見つからないか、あなたにはコーホートを作成するパーミッションがありません。デフォルトコンテクストが使用されます。';
-$string['csvcontainserrors'] = 'CSVデータにエラーが見つかりました。詳細は下記をご覧ください。';
-$string['csvcontainswarnings'] = 'CSVデータに警告が見つかりました。詳細は下記をご覧ください。';
+$string['csvcontainserrors'] = 'CSVデータにエラーが見つかりました。詳細は以下をご覧ください。';
+$string['csvcontainswarnings'] = 'CSVデータに警告が見つかりました。詳細は以下をご覧ください。';
 $string['csvextracolumns'] = 'カラム <b>{$a}</b> は無視されます。';
 $string['currentusers'] = '現在のユーザ';
 $string['currentusersmatching'] = '既存ユーザとの合致';
@@ -83,7 +83,7 @@ $string['selectfromcohort'] = 'コーホートからメンバーを選択する'
 $string['systemcohorts'] = 'システムコーホート';
 $string['unknowncohort'] = '不明なコーホートです ({$a})!';
 $string['uploadcohorts'] = 'コーホートをアップロードする';
-$string['uploadcohorts_help'] = 'テキストファイルによってコーホートをアップロードすることができます。ファイルのフォーマットは下記に従ってください:
+$string['uploadcohorts_help'] = 'テキストファイルによってコーホートをアップロードすることができます。ファイルのフォーマットは以下に従ってください:
 
 * それぞれの行に1レコードを含んでください。
 * それぞれのレコードはカンマ (またはデリミタ) によって区切られた一連のデータです。

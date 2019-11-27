@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'メニューフィールド';
 $string['pluginname'] = 'メニュー';
-$string['privacy:metadata'] = 'メニューフィールドコンポーネントはどのような個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['privacy:metadata'] = 'メニューフィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

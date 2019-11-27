@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Engadir categoría';
 $string['addcomment'] = 'Engadir comentario';
 $string['addentry'] = 'Engadir un novo artigo';
 $string['addingcomment'] = 'Engadir un comentario';
@@ -107,6 +108,7 @@ $string['defaultsortkey'] = 'Clave de ordenación predeterminada';
 $string['defaultsortorder'] = 'Ordenación predeterminada';
 $string['definition'] = 'Definición';
 $string['definitions'] = 'Definicións';
+$string['deletecategory'] = 'Eliminar categoría';
 $string['deleteentry'] = 'Eliminar entrada';
 $string['deleteentrya'] = 'Eliminar a entrada: {$a}';
 $string['deletenotenrolled'] = 'Eliminar as entradas de usuarios non matriculados';
@@ -141,6 +143,7 @@ $string['duplicateentry'] = 'Duplicar entrada';
 $string['editalways'] = 'Editar sempre';
 $string['editalways_help'] = 'Esta configuración especifica se as entradas son sempre editábeis ou se os alumnos soamente poden editar as entradas durante o tempo de edición configurado (adoita ser de 30 minutos)';
 $string['editcategories'] = 'Editar categorías';
+$string['editcategory'] = 'Editar categoría';
 $string['editentry'] = 'Editar entrada';
 $string['editentrya'] = 'Editar a entrada: {$a}';
 $string['editingcomment'] = 'Editar comentario';

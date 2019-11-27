@@ -31,5 +31,5 @@ $string['h5'] = 'ヘッディング  (小)';
 $string['p'] = '段落';
 $string['pluginname'] = '段落スタイル';
 $string['pre'] = 'フォーマット済み';
-$string['privacy:metadata'] = 'atto_titleプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_titleプラグインはいかなる個人データも保存しません。';
 $string['title'] = '段落スタイル';

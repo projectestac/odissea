@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'メールプロテクション';
-$string['privacy:metadata'] = 'メールプロテクションプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'メールプロテクションプラグインはいかなる個人データも保存しません。';

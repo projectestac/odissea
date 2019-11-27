@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['mysessions'] = 'マイ活動セッション';
 $string['navigationlink'] = 'ブラウザセッション';
 $string['pluginname'] = 'ユーザセッションレポート';
-$string['privacy:metadata'] = 'ユーザセッションレポートプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ユーザセッションレポートプラグインはいかなる個人データも保存しません。';
 $string['thissession'] = '現在のセッション';
 $string['usersessions:manageownsessions'] = '自分のブラウザセッションを管理する';

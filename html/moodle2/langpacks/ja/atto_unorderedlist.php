@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '番号なしリスト';
-$string['privacy:metadata'] = 'atto_unorderedlistプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_unorderedlistプラグインはいかなる個人データも保存しません。';

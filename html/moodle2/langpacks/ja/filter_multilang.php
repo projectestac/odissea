@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = '多言語コンテンツ';
-$string['privacy:metadata'] = '多言語コンテンツプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '多言語コンテンツプラグインはいかなる個人データも保存しません。';

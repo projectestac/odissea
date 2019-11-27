@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'イメージギャラリー';
 $string['pluginname'] = 'イメージギャラリー';
-$string['privacy:metadata'] = 'イメージギャラリープラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'イメージギャラリープラグインはいかなる個人データも保存しません。';

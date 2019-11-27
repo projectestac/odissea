@@ -123,8 +123,8 @@ $string['calendar_weekend'] = 'Weekend';
 $string['cannotdeletemodfilter'] = 'Je kunt de filter \'{$a->filter}\' niet verwijderen omdat die deel uitmaakt van de module \'{$a->module}\'.';
 $string['cannotuninstall'] = '{$a} kan niet verwijderd worden;';
 $string['categoryemail'] = 'E-mail';
-$string['cfgwwwrootslashwarning'] = 'Je hebt $CFG->wwwroot fout ingesteld in het bestand config.php. Je hebt een \'/\' aan het einde van je pad gezet. Verwijder dit. Je kunt er vreemde bugs mee ondervinden, zoals  <a href=\'http://tracker.moodle.org/browse/MDL-11061\'>MDL-11061</a>';
-$string['cfgwwwrootwarning'] = 'Je hebt $CFG->wwwroot fout ingesteld in het bestand config.php. Het pad komt niet overeen met de URL die je bebruikt om toegang te krijgen tot deze pagina  Pas dit aan. Je kunt er vreemde bugs mee ondervinden, zoals  <a href=\'http://tracker.moodle.org/browse/MDL-11061\'>MDL-11061</a>';
+$string['cfgwwwrootslashwarning'] = 'Je hebt $CFG->wwwroot fout ingesteld in het bestand config.php. Je hebt een \'/\' aan het einde van je pad gezet. Verwijder dit.';
+$string['cfgwwwrootwarning'] = 'Je hebt $CFG->wwwroot fout ingesteld in het bestand config.php. Het pad komt niet overeen met de URL die je bebruikt om toegang te krijgen tot deze pagina.';
 $string['change'] = 'wijzig';
 $string['checkboxno'] = 'Nee';
 $string['checkboxyes'] = 'Ja';
@@ -196,19 +196,19 @@ $string['configcourserequestnotify2'] = 'Gebruikers die een melding zullen krijg
 $string['configcoursesperpage'] = 'Geef het maximale aantal te tonen cursussen per pagina in een cursuslijst';
 $string['configcourseswithsummarieslimit'] = 'Het maximale aantal te tonen cursussen in een cursuslijst met samenvattingen voor terug te vallen op een eenvoudigere lijst.';
 $string['configcronclionly'] = 'Cron via het web laten lopen kan beveiligde informatie vrijgeven over gebruikers van je site aan anonieme gebruikers. Je kunt cron best alleen vanaf de command prompt laten starten of beveiligen met een wachtwoord.';
-$string['configcronremotepassword'] = 'Dit betekent dat het script cron.php niet vanuit een webbrowser gestart kan worden zonder het wachtwoord te geven in volgend formulier <pre>
-http://site.voorbeeld.com/admin/cron.php?password=opensesame
-</pre> Als dit leeggelaten wordt, is er geen wachtwoord nodig';
+$string['configcronremotepassword'] = 'Dit betekent dat het script cron.php niet vanuit een webbrowser gestart kan worden zonder het wachtwoord te geven via volgende URL: <pre>
+https://site.voorbeeld.com/admin/cron.php?password=opensesame
+</pre> Als dit leeg gelaten wordt, is er geen wachtwoord nodig.';
 $string['configcurlcache'] = 'Levenduur van cURL-cache in sekonden.';
-$string['configcustommenuitems'] = 'Je kunt hier een aangepast menu laten tonen door thema\'s. Elke lijn bestaat uit wat menu tekst, een URL (optioneel), een tooltip titel (optioneel) en een taalcode of kommagescheiden lijst met codes (optioneel, om de lijn aan gebruikers van een bepaalde taal te tonen), gescheiden door pipe tekens ( | ). Je kunt de structuur opgeven met liggende streepjes en scheidingen kunnen gemaakt worden door een lijn met één of meer #-tekens in te voegen waar je dit wenst. Bijvoorbeeld:
+$string['configcustommenuitems'] = 'Je kunt hier een aangepast menu laten tonen door thema\'s. Elke lijn bestaat uit wat menu tekst, een URL (optioneel), een tooltip titel (optioneel) en een taalcode of komma-gescheiden lijst met codes (optioneel, om de lijn aan gebruikers van een bepaalde taal te tonen), gescheiden door pipe tekens ( | ). Je kunt de structuur opgeven met liggende streepjes en scheidingen kunnen gemaakt worden door een lijn met één of meer #-tekens in te voegen waar je dit wenst. Bijvoorbeeld:
 <pre>
 Moodle community|https://moodle.org
 -Moodle free support|https://moodle.org/support
--Moodle Docs|http://docs.moodle.org|Moodle Docs
--German Moodle Docs|http://docs.moodle.org/de|Documentation in German|de
+-Moodle Docs|https://docs.moodle.org|Moodle Docs
+-German Moodle Docs|https://docs.moodle.org/de|Documentation in German|de
 -###
 -Moodle development|https://moodle.org/development
-Moodle.com|http://moodle.com/
+Moodle.com|https://moodle.com/
 </pre>';
 $string['configcustomusermenuitems'] = 'Je kunt de inhoud van het gebruikersmenu configureren (uitgezonderd de link om af te melden, die wordt automatisch toegevoegd). Elke lijn wordt gescheiden door een verticale lijn of pipe (|)  en bestaat uit 1) een string in het formaat "taalstringnaam, componentnaam" of als platte tekst, 2) een URL en 3) een icoontje als een pix-icoon (in de pix-map met als structuur  [subfoldername]/[iconname], vb. i/publish) of als URL.
 Je kunt scheidingen maken waar je wil door een regel met één of meer #-tekens in te voegen.';
@@ -217,9 +217,9 @@ Indien je MySQL gebruikt, zorg er dan voor dat \'max_allowed_packet\' in my.cnf 
 $string['configdebug'] = 'Als je dit aan zet zullen er meer PHP-fouten op het scherm worden weergegeven. Dit is alleen maar handig voor ontwikkelaars van de applicatie.';
 $string['configdebugdisplay'] = 'Als je dit inschakelt, dan gaat de foutmelding naar de HTML pagina. Dit is handig, maar het breekt XHTML, JS, Cookies en HTTP-headers in het algemeen. Als je dit uitschakelt, dan zal de output naar je serverlogs weggeschreven worden, wat een betere foutopsporing mogelijk maakt. De PHP-instelling error_log controleert naar welk logbestand dit gaat.';
 $string['configdebugpageinfo'] = 'Schakel in als je paginainformatie onderaan de pagina wil zien';
-$string['configdebugsmtp'] = 'Schakel het tonen van foutopsporingsinformatie tijdens het sturen van e-mailberichten naar de SMTP-server.';
+$string['configdebugsmtp'] = 'Schakel het tonen van foutopsporingsinformatie tijdens het sturen van e-mailberichten naar de SMTP-server. Om dit te doen werken moeten \'Foutopsporingsmeldingen\' op \'ontwikkelaar\' gezet worden.';
 $string['configdebugvalidators'] = 'Schakel dit in als je links naar externe paginavalidators wil zien onderaan elke pagina. Het is mogelijk dat je een nieuwe gebruikersaccount moet maken <em>w3cvalidator</em>, en gasttoegang moet inschakelen. Deze wijzigingen kunnen ongeauthenticeerde toegang tot de server mogelijk maken, schakel dit niet in op productiesites!';
-$string['configdefaulthomepage'] = 'Dit bepaalt de startpagina voor aangemelde gebruikers';
+$string['configdefaulthomepage'] = 'Dit bepaalt de eerste link in de navigatie voor aangemelde gebruikers';
 $string['configdefaultrequestcategory'] = 'Cursussen die door gebruikers aangevraagd worden zullen automatisch in deze categorie gezet worden.';
 $string['configdefaultrequestedcategory'] = 'Standaardcategorie om aangevraagde cursussen te plaatsen nadat ze goedgekeurd zijn.';
 $string['configdefaultuserroleid'] = 'Alle aangemelde gebruikers zullen de rechten krijgen van de rol die je hier op siteniveau opgeeft. Deze rol is bijkomend bij andere rollen die je misschien al gegeven hebt. De standaardrol is de rol van geauthenticeerde gebruiker.
@@ -420,7 +420,7 @@ $string['coursecontactduplicates_desc'] = 'Indien ingeschakeld, zullen gebruiker
 $string['coursegraceperiodafter'] = 'Bedenkperiode voor eerdere cursussen';
 $string['coursegraceperiodbefore'] = 'Bedenkperiode voor toekomstige cursussen';
 $string['courselistshortnames'] = 'Toon uitgebreide cursusnamen';
-$string['courselistshortnames_desc'] = 'Toon zowel korte als volledige namen tijdens het tonen van lijsten van cursussen of tijdens het verwijzen naar cursussen op beheerschermen. Wanneer je deze instelling inschakeld, wordt  de taalstring \'courseextendednamedisplay\' gebruikt en kun je door die aan te passen via \'Taalpakket aanpassen\', kiezen wat getoond wordt.';
+$string['courselistshortnames_desc'] = 'Toon zowel korte als volledige namen tijdens het tonen van lijsten van cursussen of tijdens het verwijzen naar cursussen op beheerschermen. Wanneer je deze instelling inschakelt, wordt  de taalstring \'courseextendednamedisplay\' gebruikt en kun je door die aan te passen via \'Taalpakket aanpassen\', kiezen wat getoond wordt.';
 $string['coursemgmt'] = 'Beheer cursussen en categorieën';
 $string['courseoverview'] = 'Cursusoverzicht';
 $string['courserequestnotify'] = 'Melding cursusaanvragen';
@@ -475,7 +475,7 @@ $string['debugvalidators'] = 'Toon validatorlinks';
 $string['defaultcity'] = 'Standaard stad';
 $string['defaultcity_help'] = 'Wanneer je nieuwe gebruikersaccounts aanmaakt, dan zal de stad die je hier opgeeft als standaardinstelling gebruikt worden';
 $string['defaultformatnotset'] = 'Fout bij het bepalen van de standaard cursusopmaak. Controleer je instellingen.';
-$string['defaulthomepage'] = 'Standaard startpagina voor gebruikers';
+$string['defaulthomepage'] = 'Startpagina voor gebruikers';
 $string['defaultrequestcategory'] = 'Standaardcategorie voor cursusaanvragen';
 $string['defaultsettinginfo'] = 'Standaard: {$a}';
 $string['defaultuserroleid'] = 'Standaardrol voor alle gebruikers';
@@ -512,7 +512,7 @@ $string['editorfontsize'] = 'Lettertypegrootte';
 $string['editorhidebuttons'] = 'Verborgen knoppen';
 $string['editorkillword'] = 'Word-document opschonen';
 $string['editorspelling'] = 'Editor spelling';
-$string['editorspellinghelp'] = 'Inschakelen of uitschakelen van spellingscontrole. Wanneer je dit inschakeld, moet <strong>aspell</strong> op de server geïnstalleerd zijn.';
+$string['editorspellinghelp'] = 'Inschakelen of uitschakelen van spellingscontrole. Wanneer je dit inschakelt, moet <strong>aspell</strong> op de server geïnstalleerd zijn.';
 $string['editstrings'] = 'Bewerk woorden en zinnen';
 $string['emailchangeconfirmation'] = 'Bevestiging van wijziging e-mailadres';
 $string['emailfromvia'] = 'E-mail via-informatie';
@@ -539,7 +539,7 @@ $string['enabledevicedetection'] = 'Toesteldetectie inschakelen';
 $string['enableglobalsearch'] = 'Globaal zoeken inschakelen';
 $string['enableglobalsearch_desc'] = 'Indien ingeschakeld zullen gegevens geïndexeerd en gesynchroniseerd worden door een geplande taak.';
 $string['enablegravatar'] = 'Gravatar inschakelen';
-$string['enablegravatar_help'] = 'Als je dit inschakeld zal Moodle proberen een gebruikersprofielfoto van Gravataar te halen als de gebruiker nog geen afbeelding geüpload heeft.';
+$string['enablegravatar_help'] = 'Als je dit inschakelt, zal Moodle proberen een gebruikersprofielfoto van Gravatar te halen als de gebruiker nog geen afbeelding geüpload heeft.';
 $string['enablemobilewebservice'] = 'Webservices voor mobiele toestellen inschakelen';
 $string['enablerecordcache'] = 'Record cache inschakelen';
 $string['enablerssfeeds'] = 'RSS-feeds inschakelen';
@@ -673,7 +673,7 @@ $string['iplookupgeoplugin'] = 'De <a href="http://www.geoplugin.com">geoPlugin<
 $string['iplookupinfo'] = 'Standaard gebruikt Moodle de gratis  NetGeo (The Internet Geographic Database) server om de plaats van IP-adressen op te zoeken. Jammer genoeg wordt deze databank niet meer onderhouden en kan  <em>foute</em> data weergeven.
 Het is dan ook aangeraden om een lokale kopie van de gratis GeoLite City database van MaxMind te installeren.<br />
 IP-adreslocatie wordt dan getoond op een eenvoudige kaart of op een kaart van Google Maps. Merk op dat je hiervoor een Google account nodig hebt en een gratis Google Maps API sleutel moet aanvragen om de interactieve kaarten in te schakelen.';
-$string['iplookupmaxmindnote'] = 'Dit product bevat GeoLite2 data gemaakt door  <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>.';
+$string['iplookupmaxmindnote'] = 'Dit product bevat GeoLite2 data gemaakt door  MaxMind en beschikbaar van <a href="https://www.maxmind.com/">https://www.maxmind.com/</a>.';
 $string['ishttpswarning'] = 'Je site gebruikt geen HTTPS. Voor een betere beveiliging en voor een verbeterde integratie met andere systemen wordt sterk aangeraden om jouw site naar HTTPS om te schakelen.';
 $string['keeptagnamecase'] = 'Hoofdletters tag-namen behouden';
 $string['lang'] = 'Standaardtaal';
@@ -808,7 +808,7 @@ $string['moodlebrandedapp'] = 'Branded Moodle app';
 $string['moodlebrandedapp_help'] = '<p>De Branded Moodle app heeft alle functionaliteit van de gratis moodle app voor Moodle, maar met jouw huisstijl toegevoegd.</p>
 <a href="https://moodle.com/branded-app">Over de Branded Moodle app</a>';
 $string['moodlebrandedappreference'] = 'Je kunt ook een  <a href="https://moodle.com/branded-app">Branded Moodle app</a>, aangepast aan je huisstijl bekomen.';
-$string['moodleorghubname'] = 'Moodle.net';
+$string['moodleorghubname'] = 'Moodle';
 $string['moodlepartners'] = 'Moodle Partners';
 $string['moodlepartners_help'] = '<p>Moodle Partners zijn door Moodle HQ gecertificeerde dienstverleners die hoge kwaliteits Moodle dienstverlening leveren voor de online leeromgeving van jouw organisatie.</p>
 <a href="https://moodle.com/about-partners/">Over onze Partners</a><br />
@@ -943,7 +943,7 @@ $string['profilefield'] = 'Profielveld';
 $string['profilefieldcolumns'] = 'Kolommen';
 $string['profilefieldispassword'] = 'Is dit een wachtwoordveld?';
 $string['profilefieldlink'] = 'Link';
-$string['profilefieldlink_help'] = 'Om tekst om te vormen in een link, geef je een URL in die $$ bevat, waar $$ vervangen zal worden door de tekst. Om bijvoorbeeld een Twitter ID om te zetten in een link, typ je http://twitter.com/$$';
+$string['profilefieldlink_help'] = 'Om tekst om te vormen in een link, geef je een URL in die $$ bevat, waar $$ vervangen zal worden door de tekst. Om bijvoorbeeld een Twitter ID om te zetten in een link, typ je https://twitter.com/$$.';
 $string['profilefieldlinktarget'] = 'Link doel';
 $string['profilefieldmaxlength'] = 'Maximale lengte';
 $string['profilefieldrows'] = 'Rijen';
@@ -973,13 +973,13 @@ $string['profilevisiblenone'] = 'Niet zichtbaar';
 $string['profilevisibleprivate'] = 'Zichtbaar voor gebruiker';
 $string['profiling'] = 'Profiling';
 $string['profilingallowall'] = 'Continu profilen';
-$string['profilingallowall_help'] = 'Als je deze instelling inschakeld, dan kun je altijd gebruik maken van de PROFILEALL parameter (PGC) om profiling in te schakelen voor alle uitgevoerde scripts tijdens de duur van je Moodlesessie. Analoog kun je de PROFILEALLSTOP parameter gebruiken om het te stoppen';
+$string['profilingallowall_help'] = 'Als je deze instelling inschakelt, dan kun je altijd gebruik maken van de PROFILEALL parameter (PGC) om profiling in te schakelen voor alle uitgevoerde scripts tijdens de duur van je Moodlesessie. Analoog kun je de PROFILEALLSTOP parameter gebruiken om het te stoppen';
 $string['profilingallowme'] = 'Selectief profilen';
-$string['profilingallowme_help'] = 'Als je deze instelling inschakeld, dan kun je gebruik maken van de PROFILEME parameter (PGC) om profiling in te schakelen voor een script. Analoog kun je de DONTPROFILEME parameter gebruiken om het te stoppen';
+$string['profilingallowme_help'] = 'Als je deze instelling inschakelt, dan kun je gebruik maken van de PROFILEME parameter (PGC) om profiling in te schakelen voor een script. Analoog kun je de DONTPROFILEME parameter gebruiken om het te stoppen';
 $string['profilingautofrec'] = 'Automatisch profilen';
 $string['profilingautofrec_help'] = 'Door deze instelling te configureren, zullen sommige requests (willekeurig, gebaseerd op de opgegeven frequentie - 1 van N) er uitgekozen worden en automatisch geprofiled worden, waarbij de resultaten voor verdere analyse bewaard worden. Merk op dat deze manier van profilen de include/exclude instellingen bekijkt. Zet dit op 0 om automatisch profilen uit te schakelen.';
 $string['profilingenabled'] = 'Profilen inschakelen';
-$string['profilingenabled_help'] = 'Als je deze instelling inschakeld, dan zal pofiling op deze site mogelijk zijn en zul je het gedrag ervan kunnen bepalen met onderstaande opties.';
+$string['profilingenabled_help'] = 'Als je deze instelling inschakelt, dan zal profiling op deze site mogelijk zijn en zul je het gedrag ervan kunnen bepalen met onderstaande opties.';
 $string['profilingexcluded'] = 'Profilen uitsluiten';
 $string['profilingexcluded_help'] = 'Lijst met URL\'s (kommagescheiden, absoluut wwwroot overslaan, aanroepbaar) die uitgesloten zullen worden van diegene die met de \'Profile deze\' instelling gedefinieerd worden.';
 $string['profilingimportprefix'] = 'Profiling import prefix';
@@ -1019,13 +1019,17 @@ $string['quizattemptsupgradedmessage'] = 'In Moodle 2.1 was eer een grote upgrad
 $string['recaptchaprivatekey'] = 'ReCAPTCHA geheime sleutel';
 $string['recaptchapublickey'] = 'ReCAPTCHA site-sleutel';
 $string['register'] = 'Registreer je site';
-$string['registermoodlenet'] = '<p>We zouden graag contact met je kunnen opnemen als er belangrijke zaken te melden zijn over jouw Moodle site! </p><p>Door te registreren</p><ul><li>zul je één van de eersten zijn die belangrijke berichten zoals beveiligingswaarschuwingen en nieuwe Moodle releases krijgt</li><li>krijg je toegang tot ons gratis systeem om push-meldingen te sturen vanaf jouw Moodle-site via de gratis<a href="https://download.moodle.org/mobile/">Moodle Mobile app</a>.</li><li>draag je bij aan onze <a href="https://moodle.net/stats/">Moodle statistics</a> van de internationale community, die ons helpt om Moodle en onze community sites te verbeteren</li><li>kan je optioneel je site laten opnemen op de  <a href="https://moodle.net/stats">lijst met geregistreerde sites</a> in jouw land.</li></ul>';
+$string['registermoodlenet'] = '<p>We zouden graag contact met je kunnen opnemen als er belangrijke zaken te melden zijn over jouw Moodle site! </p><p>Door te registreren</p><ul><li>kun je inschrijvingen om belangrijke berichten zoals beveiligingswaarschuwingen en nieuwe Moodle releases te krijgen</li><li>krijg je toegang tot ons systeem om push-meldingen te activeren vanaf jouw Moodle-site via de gratis<a href="https://download.moodle.org/mobile/">Moodle Mobile app</a>.</li><li>draag je bij aan onze <a href="https://moodle.net/stats/">Moodle statistics</a> van de internationale community, die ons helpt om Moodle en onze community sites te verbeteren</li><li>kan je optioneel je site laten opnemen op de  <a href="https://moodle.net/sites/">lijst met geregistreerde sites</a> in jouw land.</li></ul>';
 $string['registermoodleorg'] = 'Wanneer je je site registreert';
 $string['registermoodleorgli1'] = 'Je wordt toegevoegd aan een laag-volume mailinglijst voor belangrijke berichten in verband met veiligheidsproblemen en nieuwe Moodleversies.';
 $string['registermoodleorgli2'] = 'Statistieken over je site zullen aan {$a} van de wereldwijde Moodlegemeenschap toegevoegd worden.';
 $string['registerwithmoodleorg'] = 'Registreer je site';
 $string['registration'] = 'Registratie';
-$string['registration_help'] = 'Het is aan te raden om te registreren bij Moodle.org om meldingen over beveiligingsproblemen te ontvangen en voor toegang tot Moodle.net, ons platform om cursussen te delen.';
+$string['registration_help'] = 'Door te registreren:
+
+* krijg je beveiligingsmeldingen
+* kun je de mobile app push-meldingen activeren voor jouw site
+* draag je bij aan onze Moodle-statistieken over de wereldwijde gebruikersgemeenschap';
 $string['registrationwarning'] = 'Je site is nog niet geregistreerd.';
 $string['registrationwarningcontactadmin'] = 'Je site is nog niet geregistreerd. Gelieve contact op te nemen met je sitebeheerder.';
 $string['releasenoteslink'] = 'Bekijk de online <a target="_new" href="{$a}">Release Notes</a> voor informatie over deze versie van Moodle.';
@@ -1033,8 +1037,7 @@ $string['rememberusername'] = 'Gebruikersnaam onthouden';
 $string['rememberusername_desc'] = 'Schakel dit in als je permanente cookies wil bewaren met de gebruikersnaam tijdens het aanmelden. Permanente cookies kunnen een privacyprobleem stellen als ze niet met zorg gebruikt worden.';
 $string['reportsmanage'] = 'Beheer rapporten';
 $string['requestcategoryselection'] = 'Categorieselectie inschakelen';
-$string['requiredentrieschanged'] = '<strong>BELANGRIJK - LEES DIT<br /> (Deze waarschuwingsboodschap zal alleen tijdens deze upgrade getoond worden)</strong><br /> Door een bug fix zal het gedrag van databankactiviteiten die gebruik maken van \'Vereiste items\' en \'Vereiste items voor bekijken\' wijzigen. Een meer gedetailleerde beschrijving vind je in <a href="http://moodle.org/mod/forum/discuss.php?d=110928" target="_blank">the database module forum</a>. Het verwachte gedrag van deze instellingen kun je ook nalezen op  <a href="http://docs.moodle.org/en/Adding/editing_a_database#Required_entries" target="_blank">Moodle Docs</a>.<br/><br/>
-Deze wijziging heeft effect op volgende databanken in je systeem (bewaar deze lijst nu, zodat je na de upgrade kunt testen of de activiteiten nog steeds werken zoals de leraar het bedoelt): <br/><strong style="color:red">{$a->text}</strong><br/>';
+$string['requiredentrieschanged'] = 'Opmerking: na upgraden is de instellinge  \'Vereiste items voor bekijken\' nu verplicht in volgende database activiteiten:<br />{$a->text}<br/>';
 $string['requiremodintro'] = 'Beschrijving van de activiteit vereist';
 $string['requiremodintro_desc'] = 'Schakel deze optie in als je je gebruikers wil dwingen om een beschrijving te geven bij elke activiteit.';
 $string['requires'] = 'Vereist';
@@ -1254,6 +1257,7 @@ $string['unsupportedphpversion7'] = 'PHP versie 7 is niet ondersteund.';
 $string['unsupportedphpversion71'] = 'PHP-versie 7.1 wordt niet ondersteund.';
 $string['unsupportedphpversion72'] = 'PHP-versie 7.2 wordt niet ondersteund.';
 $string['unsupportedphpversion73'] = 'PHP-versie 7.3 wordt niet ondersteund.';
+$string['unsupportedphpversion74'] = 'PHP versie 7.4 wordt niet ondersteund.';
 $string['unsuspenduser'] = 'Activeer gebruikersaccount';
 $string['updateaccounts'] = 'Update bestaande accounts';
 $string['updateautocheck'] = 'Automatisch controleren op beschikbare updates';

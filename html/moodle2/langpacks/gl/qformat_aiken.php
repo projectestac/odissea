@@ -29,3 +29,6 @@ $string['pluginname'] = 'Formato Aiken';
 $string['pluginname_help'] = 'Este é un formato sinxelo para importar preguntas de opción múltiple dun ficheiro de texto.';
 $string['pluginname_link'] = 'qformat/aiken';
 $string['privacy:metadata'] = 'O engadido de formato de preguntas Aiken non almacena ningún dato persoal.';
+$string['questionmissinganswers'] = 'A pregunta debe ter polo menos 2 respostas en liña {$a}';
+$string['questionnotcomplete'] = 'Pregunta sen completar antes da seguinte pregunta en liña {$a}';
+$string['questionnotstarted'] = 'A pregunta non comezou en liña {$a}';

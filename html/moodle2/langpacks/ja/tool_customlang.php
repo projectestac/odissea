@@ -56,6 +56,6 @@ $string['placeholder_help'] = 'プレースホルダはストリングの中で�
 プレースホルダはオリジナルのストリングと同じようにコピーすることが重要です。また、翻訳したり左右の向きを変えないでください。';
 $string['placeholderwarning'] = 'プレースホルダを含むストリング';
 $string['pluginname'] = '言語カスタマイゼーション';
-$string['privacy:metadata'] = '言語カスタマイゼーションプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '言語カスタマイゼーションプラグインはいかなる個人データも保存しません。';
 $string['savecheckin'] = '修正を言語パックに保存する';
 $string['savecontinue'] = '修正を適用して編集を続ける';

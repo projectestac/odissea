@@ -50,5 +50,5 @@ $string['morehelp'] = '詳細情報';
 $string['performancereportdesc'] = 'このレポートではサイトのパフォーマンスに影響する可能性のある問題点を一覧表示しています。 {$a}';
 $string['performance:view'] = 'パフォーマンスレポートを表示する';
 $string['pluginname'] = 'パフォーマンス概要';
-$string['privacy:metadata'] = 'パフォーマンス概要プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'パフォーマンス概要プラグインはいかなる個人データも保存しません。';
 $string['value'] = '値';

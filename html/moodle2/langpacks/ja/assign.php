@@ -33,8 +33,8 @@ $string['addnewattemptfromprevious_help'] = 'ここではあなたの作業の�
 $string['addnewattempt_help'] = 'ここではあなたの作業のために空の提出を作成します。';
 $string['addnewgroupoverride'] = 'グループオーバーライドを追加する';
 $string['addnewuseroverride'] = 'ユーザオーバーライドを追加する';
-$string['addsubmission'] = '課題を追加する';
-$string['addsubmission_help'] = 'あなたはまだ提出していいません。';
+$string['addsubmission'] = '提出物をアップロード・入力する';
+$string['addsubmission_help'] = 'あなたはまだ提出していません。';
 $string['allocatedmarker'] = '割り当て採点者';
 $string['allocatedmarker_help'] = 'この提出に割り当てられた採点者です。';
 $string['allowsubmissions'] = 'この課題にユーザが継続して提出できるようにします。';
@@ -300,7 +300,7 @@ $string['markingallocation_help'] = 'この設定および採点ワークフロ�
 $string['markingworkflow'] = '採点ワークフローを使用する';
 $string['markingworkflow_help'] = 'この設定を有効にした場合、評点は学生にリリースされる前にワークフローステージに入ります。これにより採点者が一連の評点を同じタイミングですべての学生にリリースすることができます。';
 $string['markingworkflowstate'] = '採点ワークフローステータス';
-$string['markingworkflowstate_help'] = '使用可能なワークフローステータスは下記を含みます (あなたのパーミッションに依存します):
+$string['markingworkflowstate_help'] = '使用可能なワークフローステータスは以下を含みます (あなたのパーミッションに依存します):
 
 * 未採点 - まだ採点者は開始していません。
 * 採点中 - 採点者は開始しましたが、まだ完了していません。
@@ -468,7 +468,7 @@ $string['submissioncopiedhtml'] = '<p>あなたは「 {$a->assignment} 」の前
 $string['submissioncopiedsmall'] = 'あなたは「 {$a->assignment} 」の前回の課題提出をコピーしました。';
 $string['submissioncopiedtext'] = 'あなたは「 {$a->assignment} 」の前回の課題提出をコピーしました。
 
-あなたの課題提出に関するステータスは下記で確認することができます:
+あなたの課題提出に関するステータスは以下で確認することができます:
 
 {$a->url}';
 $string['submissiondrafts'] = '学生に提出ボタンのクリックを求める';

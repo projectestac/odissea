@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_webservicedescription'] = 'この認証方法はウェブサービスクライアントによる排他利用アカウントのため使用されるべきです。';
 $string['pluginname'] = 'ウェブサービス認証';
-$string['privacy:metadata'] = 'ウェブサービス認証プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ウェブサービス認証プラグインはいかなる個人データも保存しません。';

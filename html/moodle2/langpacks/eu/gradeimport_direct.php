@@ -29,4 +29,4 @@ $string['direct:view'] = 'Inportatu kalifikazioa kalkulu-orritik';
 $string['pluginname'] = 'Itsatsi kalkulu-orritik';
 $string['privacy:metadata'] = 'Kalifikazioak kopiatutako kalkulu-orritik inportatzeko pluginak ez du datu pertsonalik biltzen.';
 $string['userdata'] = 'Datuak formulario honetara kopiatzeko laguntza';
-$string['userdata_help'] = 'Kalifikazioak kalkulu-orri batetik kopiatu eta itsats  daitezke kalifikazio-liburura. Kalkulu-orriak erabiltzailea identifikatuko duen zutabe bat izan beharko luke - erabiltzailea, ID zenbakia edo e-posta helbidea. Inportatu beharreko zutabe bakoitzak goiburua izan beharko luke.';
+$string['userdata_help'] = 'Kalifikazioak kalkulu-orri batetik kopiatu eta itsats  daitezke kalifikazio-liburura. Kalkulu-orriak erabiltzailea identifikatuko duen zutabe bat izan beharko luke - erabiltzailea, ID zenbakia edo helbide elektronikoa. Inportatu beharreko zutabe bakoitzak goiburua izan beharko luke.';

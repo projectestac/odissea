@@ -34,5 +34,5 @@ $string['noactiveplans'] = 'Aucun plan actif pour l\'instant.';
 $string['planstoreview'] = 'Plans à valider';
 $string['pluginname'] = 'Plans de formation';
 $string['privacy:metadata'] = 'Le bloc Plans de formation affiche seulement des données enregistrées à d\'autres endroits.';
-$string['viewmore'] = 'Voir plus...';
-$string['viewotherplans'] = 'Consulter d\'autres plans...';
+$string['viewmore'] = 'Voir plus…';
+$string['viewotherplans'] = 'Consulter d\'autres plans…';

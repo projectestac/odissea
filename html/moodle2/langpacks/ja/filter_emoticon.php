@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'エモーティコンをイメージとして表示する';
-$string['privacy:metadata'] = 'エモーティコンをイメージとして表示するプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'エモーティコンをイメージとして表示するプラグインはいかなる個人データも保存しません。';
 $string['settingformats'] = '適用対象フォーマット';
 $string['settingformats_desc'] = '選択されたフォーマットの1つがオリジナルテキストに入力された場合のみ、フィルタが適用されます。';

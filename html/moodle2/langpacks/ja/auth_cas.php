@@ -76,5 +76,5 @@ $string['auth_cas_version'] = '使用するCASプロトコルバージョン';
 $string['CASform'] = '認証選択';
 $string['noldapserver'] = 'CAS用にLDAPサーバが設定されていません! 同期は無効にされました。';
 $string['pluginname'] = 'CASサーバ (SSO)';
-$string['privacy:metadata'] = 'CASサーバ (SSO) 認証プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'CASサーバ (SSO) 認証プラグインはいかなる個人データも保存しません。';
 $string['synctask'] = 'CASユーザ同期ジョブ';

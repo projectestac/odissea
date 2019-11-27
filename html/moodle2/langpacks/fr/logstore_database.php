@@ -60,6 +60,6 @@ $string['privacy:metadata:log:userid'] = 'L\'identifiant de l\'utilisateur qui a
 $string['read'] = 'Lire';
 $string['tablenotfound'] = 'La table indiquée n\'a pas été trouvée';
 $string['teaching'] = 'Enseignement';
-$string['testingsettings'] = 'Test des paramètres de la base de données...';
+$string['testingsettings'] = 'Test des paramètres de la base de données…';
 $string['testsettings'] = 'Test de connexion';
 $string['update'] = 'Modifier';

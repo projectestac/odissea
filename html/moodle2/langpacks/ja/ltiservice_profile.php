@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'ールコンシューマプロファイルLTIサービス';
-$string['privacy:metadata'] = 'ツールコンシューマプロファイルLTIサービスプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ツールコンシューマプロファイルLTIサービスプラグインはいかなる個人データも保存しません。';

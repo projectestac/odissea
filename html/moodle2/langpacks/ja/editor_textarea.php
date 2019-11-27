@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'プレインテキストエリア';
-$string['privacy:metadata'] = 'プレインテキストエリアエディタプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'プレインテキストエリアエディタプラグインはいかなる個人データも保存しません。';

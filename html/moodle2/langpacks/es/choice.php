@@ -72,6 +72,7 @@ $string['havetologin'] = 'Debe entrar antes de remitir su elección';
 $string['includeinactive'] = 'Incluir respuestas de usuarios inactivos/suspendidos';
 $string['indicator:cognitivedepth'] = 'Elección cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Elección.';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Consulta.';
 $string['limit'] = 'Límite';
 $string['limitanswers'] = 'Limitar el número de respuestas permitidas';
 $string['limitanswers_help'] = '<p>Esta opción le permite limitar el número de participantes que

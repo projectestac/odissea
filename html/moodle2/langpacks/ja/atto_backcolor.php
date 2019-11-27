@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '背景色';
-$string['privacy:metadata'] = 'atto_backcolorプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_backcolorプラグインはいかなる個人データも保存しません。';

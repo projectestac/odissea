@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['canntenrol'] = 'L\'inscription est désactivée';
 $string['canntenrolearly'] = 'Impossible de s\'inscrire pour l\'instant ; les inscriptions commenceront le {$a}.';
 $string['canntenrollate'] = 'Vous ne pouvez plus vous inscrire : les inscriptions se sont terminées le {$a}.';
-$string['cohortnonmemberinfo'] = 'Seuls les membres de la cohorte {$a} peuvent s\'inscrire eux-mêmes.';
+$string['cohortnonmemberinfo'] = 'Seuls les membres de la cohorte « {$a} » peuvent s\'inscrire eux-mêmes.';
 $string['cohortonly'] = 'Seulement les membres de la cohorte';
 $string['cohortonly_help'] = 'L\'auto-inscription peut être restreinte aux seuls membres d\'une cohorte spécifique. La modification de ce réglage n\'a pas d\'effet sur les inscriptions existantes.';
 $string['confirmbulkdeleteenrolment'] = 'Voulez-vous vraiment supprimer les inscriptions de cet utilisateur ?';
@@ -121,9 +121,9 @@ $string['unenrolusers'] = 'Désinscrire des utilisateurs';
 $string['usepasswordpolicy'] = 'Utiliser la politique de mots de passe';
 $string['usepasswordpolicy_desc'] = 'Utiliser la politique de mots de passe standard pour les clefs d\'inscription.';
 $string['welcometocourse'] = 'Bienvenue sur {$a}';
-$string['welcometocoursetext'] = 'Bienvenue au cours « {$a->coursename} » !
+$string['welcometocoursetext'] = 'Bienvenue au cours « {$a->coursename} » !
 
-Si vous ne l\'avez pas encore fait, veuillez modifier et compléter votre profil :
+Si vous ne l\'avez pas encore fait, veuillez modifier et compléter votre profil :
 {$a->profileurl}
 
-Bon travail dans ce cours !';
+Bon travail dans ce cours !';

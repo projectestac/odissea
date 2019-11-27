@@ -37,4 +37,4 @@ $string['page-report-outline-index'] = 'コースアウトラインレポート'
 $string['page-report-outline-user'] = 'ユーザコースアウトラインレポート';
 $string['page-report-outline-x'] = 'すべてのアウトラインレポート';
 $string['pluginname'] = '活動レポート';
-$string['privacy:metadata'] = '活動レポートプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '活動レポートプラグインはいかなる個人データも保存しません。';

@@ -221,7 +221,7 @@ $string['blocksetup'] = 'ブロックテーブル設定中';
 $string['blocksuccess'] = '{$a} テーブルが正常に設定されました。';
 $string['brief'] = '概要';
 $string['bulkactions'] = 'バルク処理';
-$string['bulkactionselect'] = '{$a} バルク操作選択';
+$string['bulkactionselect'] = '{$a} バルク処理選択';
 $string['bulkmovecoursessuccess'] = '{$a->courses} 件のコースを正常に「 {$a->category} 」に移動しました。';
 $string['bycourseorder'] = 'コース順';
 $string['byname'] = 'by {$a}';
@@ -628,7 +628,7 @@ $string['emailconfirmation'] = '{$a->firstname} さん
 
 「 {$a->sitename} 」であなたのメールアドレスによる新しいアカウントの作成が依頼されました。
 
-あなたの新しいアカウントを確定するには下記のウェブアドレスにアクセスしてください:
+あなたの新しいアカウントを確定するには以下のウェブアドレスにアクセスしてください:
 
 {$a->link}
 
@@ -719,7 +719,7 @@ $string['emailresetconfirmation'] = '{$a->lastname} さん
 
 {$a->sitename} において、あなたのアカウント「 {$a->username} 」のパスワードリセットがリクエストされました。
 
-このリクエストを確認して、あなたのアカウントに新しいパスワードを設定するため、下記のウェブサイトにアクセスしてください:
+このリクエストを確認して、あなたのアカウントに新しいパスワードを設定するため、以下のウェブサイトにアクセスしてください:
 
 {$a->link}
 (このリンクは最初にリセットがリクエストされてから {$a->resetminutes} 分間有効です)
@@ -844,8 +844,8 @@ $string['firsttime'] = 'はじめての方ですか?';
 $string['folder'] = 'フォルダ';
 $string['folderclosed'] = 'クローズフォルダ';
 $string['folderopened'] = 'オープンフォルダ';
-$string['followingoptional'] = '下記項目は任意入力です。';
-$string['followingrequired'] = '下記項目は必須入力です。';
+$string['followingoptional'] = '以下の項目は任意入力です。';
+$string['followingrequired'] = '以下の項目は必須入力です。';
 $string['for'] = '-';
 $string['force'] = '強制';
 $string['forcelanguage'] = '言語の強制';
@@ -1615,7 +1615,7 @@ $string['removecreator'] = 'コース作成者を削除する';
 $string['removestudent'] = '学生を削除する';
 $string['removeteacher'] = '教師を削除する';
 $string['rename'] = 'リネーム';
-$string['renamefileto'] = '<b>{$a}</b> を下記名称にリネームする';
+$string['renamefileto'] = '<b>{$a}</b> を以下の名称にリネームする';
 $string['report'] = 'レポート';
 $string['reports'] = 'レポート';
 $string['repositories'] = 'リポジトリ';
@@ -1851,7 +1851,7 @@ $string['skiptocourselisting'] = 'コース一覧にスキップする';
 $string['skypeid'] = 'Skype ID';
 $string['socialheadline'] = 'ソーシャルフォーラム - 最新トピック';
 $string['someallowguest'] = 'いくつかのコースにはゲストアクセスできます';
-$string['someerrorswerefound'] = 'いくつかの情報が未入力または正しくありません。詳細は下記をご覧ください。';
+$string['someerrorswerefound'] = 'いくつかの情報が未入力または正しくありません。詳細は以下をご覧ください。';
 $string['sort'] = '並べ替え';
 $string['sortby'] = '並べ替え';
 $string['sortbyx'] = '{$a} の昇順で並べ替える';
@@ -1910,7 +1910,7 @@ $string['statsuserreads'] = '閲覧';
 $string['statsuserwrites'] = '投稿';
 $string['statswrites'] = '投稿';
 $string['status'] = 'ステータス';
-$string['stringsnotset'] = '下記の文字は {$a} で定義されていません。';
+$string['stringsnotset'] = '以下の文字は {$a} で定義されていません。';
 $string['studentnotallowed'] = '申し訳ございません、あなたはこのコースに「 {$a} 」として入ることはできません。';
 $string['students'] = '学生';
 $string['studentsandteachers'] = '学生および教師';
@@ -2166,8 +2166,8 @@ $string['yahooid'] = 'Yahoo ID';
 $string['year'] = '年';
 $string['years'] = '年';
 $string['yes'] = 'Yes';
-$string['youareabouttocreatezip'] = 'あなたは下記ファイルを含んだzipファイルを作成しようとしています';
-$string['youaregoingtorestorefrom'] = 'あなたは下記ファイルのリストア処理を開始しようとしています';
+$string['youareabouttocreatezip'] = 'あなたは以下のファイルを含んだzipファイルを作成しようとしています';
+$string['youaregoingtorestorefrom'] = 'あなたは以下のファイルのリストア処理を開始しようとしています';
 $string['youneedtoenrol'] = 'この操作を実行するにはあなたはこのコースに登録する必要があります。';
 $string['yourlastlogin'] = 'あなたの最終ログイン';
 $string['yourself'] = 'あなた自身';

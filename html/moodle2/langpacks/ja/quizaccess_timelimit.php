@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['confirmstart'] = '小テストには {$a} の時間制限があります。あなたが受験を開始した時点から時間が計測されます。あなたは有効期限前に受験を送信する必要があります。今から開始してもよろしいですか?';
 $string['confirmstartheader'] = '時間制限小テスト';
 $string['pluginname'] = '時間制限 - 小テストアクセスルール';
-$string['privacy:metadata'] = '時間制限小テストアクセスルールプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '時間制限小テストアクセスルールプラグインはいかなる個人データも保存しません。';
 $string['quiztimelimit'] = '制限時間: {$a}';

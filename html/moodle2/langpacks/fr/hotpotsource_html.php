@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fichiers source HTML';
+$string['privacy:metadata'] = 'Le plugin Formats de sortie Hot Potatoes n\'enregistre aucune donnée personnelle.';

@@ -362,10 +362,9 @@ $string['requiredentries_help'] = 'Indien ingesteld wordt er een bericht getoond
 
 Voor items die vereist zijn voor activiteitsvoltooiing moet je de nieuwe instelling \'Vereiste items\' gebruiken. Om deze instelling volledig te verwijderen moet je ze om \'geen\' zetten en de wijzigingen bewaren. Gebruik de vereiste items velden in de sectie activiteitsvoltooiing .';
 $string['requiredentriestoview'] = 'Items vereist voor bekijken';
-$string['requiredentriestoview_help'] = '<p align="center"><strong>Vereist aantal items voor bekijken</strong></p>
+$string['requiredentriestoview_help'] = 'Het aantal items een leerling moet invoeren voor hij de andere items in deze databank mag zien.
 
-<p>THet aantal items een leerling moet invoeren voor hij de andere items in deze databank mag zien.</p>
-<p>Opmerking: deze functie kan niet gebruikt worden samen met de autolink filter voor de databank, omdat het niet mogelijk is voor de databank autolink filter om te bepalen of een gebruiker het vereiste aantal items al ingestuurd heeft.</p>';
+Opmerking: deze functie kan niet gebruikt worden samen met de autolink filter voor de databank, omdat het niet mogelijk is voor de databank autolink filter om te bepalen of een gebruiker het vereiste aantal items al ingestuurd heeft.';
 $string['requiredentrieswarning'] = 'Deze instelling is vervangen door de activiteitsvoltooiingsinstelling "Vereiste items"';
 $string['requiredfield'] = 'Vereist veld';
 $string['resetsettings'] = 'Reset filters';

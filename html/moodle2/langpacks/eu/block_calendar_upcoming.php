@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = 'Gehitu datozen ekitaldiak bloke berria';
-$string['calendar_upcoming:myaddinstance'] = 'Gehitu datozen ekitaldiak bloke berria aginte-panelean';
+$string['calendar_upcoming:myaddinstance'] = 'Gehitu datozen ekitaldiak bloke berria Aginte-panelean';
 $string['gotocalendar'] = 'Joan egutegira...';
 $string['pluginname'] = 'Datozen ekitaldiak';
 $string['privacy:metadata'] = 'Datozen ekitaldiak blokeak egutegiko datuak baino ez ditu erakusten.';

@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessrestrictions'] = 'Eskuragarritasun-baldintzak';
+$string['accessrestrictions'] = 'Eskuragarritasun baldintzak';
 $string['addrestriction'] = 'Gehitu baldintza...';
 $string['and'] = 'eta';
 $string['condition_group'] = 'Baldintza-sorta';
 $string['condition_group_info'] = 'Gehitu habiaratutako baldintza-multzoa logika konplexua aplikatzeko.';
-$string['enableavailability'] = 'Gaitu baldintzatutako eskuragarritasuna';
-$string['enableavailability_desc'] = 'Gaituta, baldintzak (data, kalifikazioa edo osatua egotea) ezarri ahal izango dituzu jarduera eskuragarri dagoen ala ez kontrolatzeko.';
+$string['enableavailability'] = 'Gaitu eskuragarritasun baldintzak';
+$string['enableavailability_desc'] = 'Gaituz gero, baldintzak (data, kalifikazioa edo beste jarduera bat osatua egotea) ezarri ahal izango dituzu jarduera eskuragarri dagoen ala ez kontrolatzeko.';
 $string['error_list_nochildren'] = 'Baldintza-sortek gutxienez baldintza bat izan behar dute.';
 $string['hidden_all'] = 'Guztiz ezkutatuta erabiltzaileak baldintzak betetzen ez baditu';
 $string['hidden_individual'] = 'Guztiz ezkutatuta erabiltzaileak baldintza hau betetzen ez badu';
@@ -61,9 +61,9 @@ $string['list_root_or_hidden'] = 'Ez eskuragarri (bestela ezkutuan) hurrengoetak
 $string['manageplugins'] = 'Kudeatu baldintzak';
 $string['missingplugin'] = 'Baldintza-plugina falta da';
 $string['or'] = 'edo';
-$string['privacy:metadata'] = 'Eskuragarritasun-baldintzen azpisistemak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Eskuragarritasun baldintzen azpisistemak ez du datu pertsonalik biltzen.';
 $string['restrictaccess'] = 'Mugatu eskuragarritasuna';
-$string['restrictbygroup'] = 'Gehitu talde/taldekatze eskuragarritasun-baldintza';
+$string['restrictbygroup'] = 'Gehitu talde/taldekatze eskuragarritasun baldintza';
 $string['setheading'] = '{$a->number} {$a->count} sortako baldintza(k)';
 $string['shown_all'] = 'Grisean erakusten da erabiltzaileak baldintzak betetzen ez baditu';
 $string['shown_individual'] = 'Grisean erakusten da erabiltzaileak baldintza hau betetzen ez badu';

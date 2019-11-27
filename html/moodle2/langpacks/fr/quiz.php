@@ -34,7 +34,7 @@ $string['add'] = 'Ajouter';
 $string['addaquestion'] = 'une question';
 $string['addarandomquestion'] = 'une question aléatoire';
 $string['addarandomquestion_help'] = 'Quand une question aléatoire est ajoutée, une question choisie au hasard dans la catégorie est insérée dans le test. Les étudiants auront une sélection de questions différentes. Quand un test permet plusieurs tentatives, chaque tentative pourra contenir une sélection différente de questions.';
-$string['addarandomselectedquestion'] = 'Ajouter une question choisie aléatoirement...';
+$string['addarandomselectedquestion'] = 'Ajouter une question choisie aléatoirement…';
 $string['addasection'] = 'Un nouveau titre de section';
 $string['adddescriptionlabel'] = 'Ajouter un élément descriptif';
 $string['addingquestion'] = 'Ajout d\'une question';
@@ -305,11 +305,11 @@ Vous avez envoyé vos réponses au test « {$a->quizname} » du cours « {$a-
 Ce message confirme que vos réponses ont été enregistrées.
 
 Vous pouvez accéder à ce test en suivant le lien {$a->quizurl}.';
-$string['emailconfirmsmall'] = 'Merci pour l\'envoi de vos réponses au test {$a->quizname}';
+$string['emailconfirmsmall'] = 'Merci pour l\'envoi de vos réponses au test « {$a->quizname} »';
 $string['emailconfirmsubject'] = 'Confirmation d\'envoi : {$a->quizname}';
 $string['emailnotifybody'] = 'Bonjour {$a->username},
 
-Le participant {$a->studentname} a terminé le test « {$a->quizname} » ({$a->quizurl}) du cours « {$a->coursename} ».
+Le participant {$a->studentname} a terminé le test « {$a->quizname} » ({$a->quizurl}) du cours « {$a->coursename} ».
 
 Vous pouvez voir cette tentative en suivant le lien {$a->quizreviewurl}.';
 $string['emailnotifysmall'] = '{$a->studentname} a terminé le test {$a->quizname}. Consultez {$a->quizreviewurl}';
@@ -324,7 +324,7 @@ $string['emailoverduesmall'] = 'Vous n\'avez pas envoyé votre tentative du test
 $string['emailoverduesubject'] = 'Tentative maintenant en retard : {$a->quizname}';
 $string['empty'] = 'Vide';
 $string['enabled'] = 'Activé';
-$string['endtest'] = 'Terminer le test...';
+$string['endtest'] = 'Terminer le test…';
 $string['erroraccessingreport'] = 'Vous ne pouvez pas consulter ce rapport';
 $string['errorinquestion'] = 'Erreur dans la question';
 $string['errormissingquestion'] = 'Erreur ! Le système ne trouve pas la question d\'identifiant {$a}';
@@ -371,7 +371,7 @@ $string['filloutnumericalanswer'] = 'Vous devez fournir au moins une proposition
 $string['filloutoneanswer'] = 'Vous devez fournir au moins une proposition. Les propositions laissées vides ne seront pas prises en compte. Le caractère * (joker) peut être utilisé pour correspondre à n\'importe quelle caractère. La première proposition correspondant à la réponse donnée par le participant sera utilisée pour déterminer la note et le feedback.';
 $string['filloutthreequestions'] = 'Vous devez fournir au moins trois propositions avec les réponses correspondantes.<br />Les propositions laissées vides ne seront pas prises en compte.';
 $string['fillouttwochoices'] = 'Vous devez donner au moins deux propositions.<br />Les propositions laissées vides ne seront pas prises en compte.';
-$string['finishattemptdots'] = 'Terminer le test...';
+$string['finishattemptdots'] = 'Terminer le test…';
 $string['finishreview'] = 'Terminer la relecture';
 $string['forceregeneration'] = 'Forcer l\'actualisation';
 $string['formatnotfound'] = 'Le format d\'importation/exportation {$a} n\'a pas été trouvé';
@@ -422,8 +422,8 @@ $string['howquestionsbehave_desc'] = 'Réglage par défaut pour le comportement 
 $string['imagedisplay'] = 'Image à afficher';
 $string['importcategory'] = 'Importer une catégorie';
 $string['importerror'] = 'Une erreur est survenue lors de l\'importation';
-$string['importfilearea'] = 'Importer à partir d\'un fichier du cours...';
-$string['importfileupload'] = 'Importer à partir d\'un fichier à déposer...';
+$string['importfilearea'] = 'Importer à partir d\'un fichier du cours…';
+$string['importfileupload'] = 'Importer à partir d\'un fichier à déposer…';
 $string['importfromthisfile'] = 'Importer à partir de ce fichier';
 $string['import_help'] = 'Cette fonction vous permet d\'importer des questions à partir de fichiers texte externes.
 
@@ -575,7 +575,7 @@ $string['openafterclose'] = 'Impossible de modifier le test. Vous avez indiqué 
 $string['openclosedatesupdated'] = 'Dates d\'ouverture et de fermeture du test modifiées';
 $string['optional'] = 'Facultatif';
 $string['orderandpaging'] = 'Ordre et pagination';
-$string['orderandpaging_help'] = 'Les nombres 10, 20, 30, ... en face de chaque question indiquent l\'ordre des questions. Les nombres augmentent par pas de 10 pour laisser de la place à l\'insertion éventuelle de questions supplémentaires. Pour réarranger les questions, modifiez les nombres, puis cliquez sur le bouton « Arranger les questions ».
+$string['orderandpaging_help'] = 'Les nombres 10, 20, 30… en face de chaque question indiquent l\'ordre des questions. Les nombres augmentent par pas de 10 pour laisser de la place à l\'insertion éventuelle de questions supplémentaires. Pour réarranger les questions, modifiez les nombres, puis cliquez sur le bouton « Arranger les questions ».
 
 Pour ajouter des sauts de page après certaines questions, cochez la case en face de ces questions, puis cliquez sur le bouton « Ajouter de nouvelles pages après les questions sélectionnées ».
 
@@ -864,7 +864,7 @@ $string['seequestions'] = '(voir les questions)';
 $string['select'] = 'Sélectionner';
 $string['selectall'] = 'Tout sélectionner';
 $string['selectcategory'] = 'Sélectionner catégorie';
-$string['selectedattempts'] = 'Tentatives sélectionnées...';
+$string['selectedattempts'] = 'Tentatives sélectionnées…';
 $string['selectmultipleitems'] = 'Sélectionner plusieurs éléments';
 $string['selectmultipletoolbar'] = 'Sélectionner plusieurs barres d\'outils';
 $string['selectnone'] = 'Tout désélectionner';

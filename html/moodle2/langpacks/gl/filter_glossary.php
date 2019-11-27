@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Glosario autoligado';
+$string['glossarycategory'] = '{$a->glossary}: Categoría {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
 $string['privacy:metadata'] = 'O engadido de glosario autoligado non almacena ningún dato persoal.';

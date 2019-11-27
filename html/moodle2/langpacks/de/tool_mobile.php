@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['adodbdebugwarning'] = 'ADOdb Debugging ist aktiviert. Das sollte in den Einstellungen für die externe Datenbankauthentifizierung oder für die externe Datenbankeinschreibung deaktiviert werden.';
 $string['androidappid'] = 'Eindeutige ID der Android-App';
 $string['androidappid_desc'] = 'Diese Einstellung sollte nur geändert werden, wenn Sie eine eigene Android-App verwenden.';
-$string['apppolicy'] = 'Datenschutzinformation für mobile App';
-$string['apppolicy_help'] = 'Die URL zur Datenschutzinformation für Nutzer/innen der mobilen App, die auf der Seite \'Info\' in der App aufgeführt ist. Wenn das Feld leer bleibt, wird stattdessen die URL der Datenschutzinformation für die Website verwendet.';
+$string['apppolicy'] = 'Datenschutzinfo für mobile App';
+$string['apppolicy_help'] = 'Die URL zur Datenschutzinfo für Nutzer/innen der mobilen App, die auf der Seite \'Info\' in der App aufgeführt ist. Wenn das Feld leer bleibt, wird stattdessen die URL der Datenschutzinfo für die Website verwendet.';
 $string['autologinkeygenerationlockout'] = 'Das Erzeugen von Auto-Login-Token ist blockiert. Sie müssen 6 Minuten zwischen den Anforderungen warten.';
 $string['autologinnotallowedtoadmins'] = 'Das Auto-Login ist für Administratoren der Website nicht erlaubt.';
 $string['cachedef_plugininfo'] = 'Dies speichert die Liste von Plugins mit mobilen Add-ons.';
@@ -44,7 +44,7 @@ mm.user.student|Aprendiz|es
 </pre>
 Die vollständige Liste der Text-IDs und weitere Infos finden Sie in der <a href="https://github.com/moodlehq/moodlemobile-phonegapbuild/blob/master/assets/lang/de.json" target="_blank">Dokumentation</a>.';
 $string['custommenuitems'] = 'Angepasste Menüpunkte';
-$string['custommenuitems_desc'] = 'Zusätzliche Menüpunkte können im Hauptmenü der App hinzugefügt werden. Geben Sie jeden benutzerdefinierten Menüpunkt in eine neue Zeile mit folgendem Format ein: Elementtext, Link-URL, Link-Öffnungsmethode und Sprachcode (optional, zum Anzeigen des Elements in der angegebenen Sprache), getrennt durch Pipe-Zeichen.
+$string['custommenuitems_desc'] = 'Zusätzliche Menüpunkte können im Hauptmenü der App hinzugefügt werden. Geben Sie jeden benutzerdefinierten Menüpunkt in eine neue Zeile mit folgendem Format ein: Elementtext, Link-URL, Link-Öffnungsmethode und Sprachcode (optional, zum Anzeigen des Elements für Nutzer/innen der angegebenen Sprache), getrennt durch Pipe-Zeichen.
 
 Link-Öffnungsmethoden sind: App (zur Verknüpfung mit einer von der App unterstützten Aktivität), Inappbrowser (zum Öffnen im integrierten Browser innerhalb der App), Browser (zum Öffnen im Standard-Browser außerhalb der App) und eingebettet (zum Anzeigen in einem Iframe in einer neuen Seite innerhalb der App).
 
@@ -86,7 +86,7 @@ $string['mobileappenabled'] = 'Für diese Website ist der mobile Zugriff aktivie
 $string['mobileauthentication'] = 'Mobile Authentifizierung';
 $string['mobilecssurl'] = 'CSS';
 $string['mobilefeatures'] = 'Mobile Funktionen';
-$string['mobilenotificationsdisabledwarning'] = 'Die mobilen Systemnachrichten sind nicht aktiviert. Sie sollten unter "Systemnachrichten verwalten" aktiviert werden.';
+$string['mobilenotificationsdisabledwarning'] = 'Die mobilen Push-Mitteilungen sind nicht aktiviert. Sie sollten unter "Systemnachrichten verwalten" aktiviert werden.';
 $string['mobilesettings'] = 'Mobile Einstellungen';
 $string['offlineuse'] = 'Offline-Nutzung';
 $string['pluginname'] = 'Moodle App Tools';
@@ -96,7 +96,7 @@ $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'Dat
 $string['remoteaddons'] = 'Remote Add-ons';
 $string['selfsignedoruntrustedcertificatewarning'] = 'Das HTTPS-Zertifikat scheint selbst erstellt und nicht vertrauenswürdig zu sein. Die mobile App funktioniert nur mit vertrauenswürdigen Websites.';
 $string['setuplink'] = 'Download für mobile App';
-$string['setuplink_desc'] = 'Link zum Download der mobilen App im AppStore und bei Google Play.';
+$string['setuplink_desc'] = 'Link zum Download der mobilen App im App Store und bei Google Play. Der Link zum Download wird in der Fußzeile und in der Übersicht zum Nutzerprofil aller Nutzer/innen angezeigt. Wenn das Feld leer ist, wird kein Link angezeigt.';
 $string['smartappbanners'] = 'Hinweisbanner für App';
 $string['typeoflogin'] = 'Login';
 $string['typeoflogin_desc'] = 'Wenn die Website eine SSO-Authentifizierung verwendet, wählen Sie entweder \'Im Browser\' oder \'Im integrierten Browser\'. Der integrierte Browser sorgt für eine bessere Nutzerführung, funktioniert aber nicht mit allen SSO-Plugins.';

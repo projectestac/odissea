@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activation'] = 'Activation';
 $string['activityloading'] = 'Vous allez être dirigé automatiquement vers l\'activité dans';
 $string['activityoverview'] = 'Des paquetages SCORM requièrent votre attention';
-$string['activitypleasewait'] = 'Activité en cours de chargement. Veuillez patienter...';
+$string['activitypleasewait'] = 'Activité en cours de chargement. Veuillez patienter…';
 $string['adminsettings'] = 'Réglages administrateur';
 $string['advanced'] = 'Paramètres';
 $string['aicchacpkeepsessiondata'] = 'Données de session AICC HACP';
@@ -161,7 +161,7 @@ $string['forcejavascriptmessage'] = 'Javascript est requis pour voir cet éléme
 $string['forcenewattempts'] = 'Imposer une nouvelle tentative';
 $string['forcenewattempts_help'] = 'Il y a 3 options disponibles :
 * Non – Si une tentative précédente est terminée, réussie ou a échoué, l\'étudiant aura la possibilité d\'entrer en mode relecture ou d\'effectuer une nouvelle tentative.
-* Lorsque la tentative précédente a été terminée, réussie ou a échoué – Tient compte du réglage du paquetage SCORM définissant l\'état « terminé », « réussi » ou « échoué ».
+* Lorsque la tentative précédente a été terminée, réussie ou a échoué – Tient compte du réglage du paquetage SCORM définissant l\'état « terminé », « réussi » ou « échoué ».
 * Toujours – Chaque nouvel accès à l\'activité SCORM générera une nouvelle tentative et l\'étudiant ne sera pas dirigé au point atteint lors de la tentative précédente.';
 $string['found'] = 'Fichier « manifest » trouvé';
 $string['frameheight'] = 'La hauteur du cadre ou de la fenêtre';
@@ -415,7 +415,7 @@ $string['tracksuspenddata_help'] = 'Fournit de la place pour enregistrer et réc
 $string['tracktime'] = 'Durée';
 $string['tracktime_help'] = 'Heure du début de la tentative';
 $string['tracktype'] = 'Type';
-$string['tracktype_help'] = 'Le type de question, par exemple « Choix » ou « Réponse courte ».';
+$string['tracktype_help'] = 'Le type de question, par exemple « Choix » ou « Réponse courte ».';
 $string['trackweight'] = 'Pondération';
 $string['trackweight_help'] = 'Pondération attribuée à l\'élément';
 $string['type'] = 'Type';

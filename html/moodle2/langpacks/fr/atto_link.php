@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['browserepositories'] = 'Parcourir les dépôts...';
+$string['browserepositories'] = 'Parcourir les dépôts…';
 $string['createlink'] = 'Créer lien';
 $string['enterurl'] = 'Saisir l\'URL';
 $string['openinnewwindow'] = 'Ouvrir dans une nouvelle fenêtre';

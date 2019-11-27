@@ -42,6 +42,6 @@ $string['pluginnameadding'] = '組み合わせ問題の追加';
 $string['pluginnameediting'] = '組み合わせ問題の編集';
 $string['pluginname_help'] = '組み合わせ問題では解答者が名称または文章のリスト (問題) を別の名称または文章のリスト (答え) に正しく合わせる必要があります。';
 $string['pluginnamesummary'] = '多くのサブ問題の答えは可能性のある答えの一覧より選択されるべきです。';
-$string['privacy:metadata'] = '組み合わせ問題タイププラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '組み合わせ問題タイププラグインはいかなる個人データも保存しません。';
 $string['shuffle'] = 'シャッフル';
 $string['shuffle_help'] = 'この設定を有効にした場合、問題 (答え) の組み合わせが受験ごとにランダムにシャッフルされます。同時に活動設定内の「問題内部をシャッフルする」を有効にする必要があります。';

@@ -30,4 +30,4 @@ $string['endanswernotfound'] = 'インポートされたファイルコンテン
 $string['noanswerfound'] = '問題に答えがありません。';
 $string['pluginname'] = 'ミッシングワードフォーマット';
 $string['pluginname_help'] = 'ミッシングワードフォーマットではテキストファイルを使用して問題をインポートすることができます。';
-$string['privacy:metadata'] = 'ミッシングワード問題フォーマットプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ミッシングワード問題フォーマットプラグインはいかなる個人データも保存しません。';

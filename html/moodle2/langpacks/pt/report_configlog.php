@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configlog'] = 'Alterações à configuração';
+$string['configlog'] = 'Alterações da configuração';
 $string['oldvalue'] = 'Valor original';
 $string['plugin'] = 'Módulo';
-$string['pluginname'] = 'Alterações à configuração';
-$string['privacy:metadata'] = 'O módulo Alterações à configuração não armazena dados pessoais.';
+$string['pluginname'] = 'Alterações da configuração';
+$string['privacy:metadata'] = 'O módulo Alterações da configuração não armazena dados pessoais.';
 $string['setting'] = 'Configuração';
 $string['timemodified'] = 'Data';
 $string['value'] = 'Novo valor';

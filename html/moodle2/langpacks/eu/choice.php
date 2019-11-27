@@ -37,13 +37,13 @@ $string['choice'] = 'Aukera';
 $string['choiceactivityname'] = 'Aukera: {$a}';
 $string['choice:addinstance'] = 'Gehitu kontsulta berria';
 $string['choice:choose'] = 'Erantzun kontsultari';
-$string['choiceclose'] = 'Noiz arte baimendu erantzunak';
+$string['choiceclose'] = 'Erantzunetarako amaiera-data';
 $string['choicecloseson'] = 'Kontsultaren itxiera: {$a}';
 $string['choice:deleteresponses'] = 'Aldatu eta ezabatu erantzunak';
 $string['choice:downloadresponses'] = 'Jaitsi erantzunak';
 $string['choicefull'] = 'Hautatu duzun aukeretakoren bat beteta dago jada. Zure erantzuna ez da gorde. Mesedez aukeratu ezazu berriz ere.';
 $string['choicename'] = 'Kontsultaren izena';
-$string['choiceopen'] = 'Baimendu erantzunak data honetatik aurrera:';
+$string['choiceopen'] = 'Erantzunetarako hasiera-data';
 $string['choiceoptions'] = 'Kontsultaren aukerak';
 $string['choiceoptions_help'] = 'Hemen partaideek hauta ditzaketen aukerak jarri behar dituzu.
 

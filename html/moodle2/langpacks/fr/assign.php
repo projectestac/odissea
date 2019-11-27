@@ -57,12 +57,12 @@ $string['assign:manageallocations'] = 'Gérer les évaluateurs attribués à des
 $string['assign:managegrades'] = 'Relire et publier les notes';
 $string['assign:manageoverrides'] = 'Gérer les exceptions de devoir';
 $string['assignmentisdue'] = 'Devoir à effectuer';
-$string['assignmentmail'] = '{$a->grader} a donné un feedback pour le travail remis pour «&nbsp;{$a->assignment}&nbsp;».
+$string['assignmentmail'] = '{$a->grader} a donné un feedback pour le travail remis pour « {$a->assignment} ».
 
-Vous pouvez le consulter en annexe à votre travail&nbsp;: {$a->url}';
-$string['assignmentmailhtml'] = '<p>{$a->grader} a donné un feedback pour le travail remis pour «&nbsp;<em>{$a->assignment}</em>&nbsp;».</p>
+Vous pouvez le consulter en annexe à votre travail : {$a->url}';
+$string['assignmentmailhtml'] = '<p>{$a->grader} a donné un feedback pour le travail remis pour « <em>{$a->assignment}</em> ».</p>
 <p>Vous pouvez le consulter en annexe à <a href="{$a->url}">votre travail</a>.</p>';
-$string['assignmentmailsmall'] = '{$a->grader} a donné un feedback pour le travail remis pour «&nbsp;{$a->assignment}&nbsp;». Vous pouvez le consulter en annexe à votre travail';
+$string['assignmentmailsmall'] = '{$a->grader} a donné un feedback pour le travail remis pour « {$a->assignment} ». Vous pouvez le consulter en annexe à votre travail';
 $string['assignmentname'] = 'Nom du devoir';
 $string['assignmentplugins'] = 'Plugins de devoir';
 $string['assignmentsperpage'] = 'Devoirs par page';
@@ -101,7 +101,7 @@ $string['batchoperationconfirmsetmarkingworkflowstate'] = 'Définir le statut de
 $string['batchoperationconfirmunlock'] = 'Déverrouiller tous les travaux sélectionnés&nbsp;?';
 $string['batchoperationlock'] = 'verrouiller les travaux remis';
 $string['batchoperationreverttodraft'] = 'remettre à l\'état de brouillon les travaux remis';
-$string['batchoperationsdescription'] = 'Avec la sélection...';
+$string['batchoperationsdescription'] = 'Avec la sélection…';
 $string['batchoperationunlock'] = 'déverrouiller les travaux remis';
 $string['batchsetallocatedmarker'] = 'Évaluateur attribué pour {$a} utilisateurs sélectionnés.';
 $string['batchsetmarkingworkflowstateforusers'] = 'Statut d\'évaluation défini pour {$a} utilisateurs sélectionnés.';
@@ -113,7 +113,7 @@ $string['calendargradingdue'] = '{$a} doit être évalué';
 $string['changefilters'] = 'Modifier les filtres';
 $string['changeuser'] = 'Modifier l\'utilisateur';
 $string['choosegradingaction'] = 'Action d\'évaluation';
-$string['choosemarker'] = 'Sélectionner...';
+$string['choosemarker'] = 'Sélectionner…';
 $string['chooseoperation'] = 'Choisir une opération';
 $string['clickexpandreviewpanel'] = 'Cliquer pour développer le panneau de relecture';
 $string['collapsegradepanel'] = 'Minimiser le panneau des notes';
@@ -157,7 +157,7 @@ $string['duedateno'] = 'Pas de date de remise';
 $string['duedatereached'] = 'La date de remise de ce devoir est passée';
 $string['duedatevalidation'] = 'La date de remise ne doit pas être antérieure à la date à partir de laquelle les remises sont autorisées.';
 $string['duplicateoverride'] = 'Dupliquer l\'exception';
-$string['editaction'] = 'Actions...';
+$string['editaction'] = 'Actions…';
 $string['editattemptfeedback'] = 'Modifier la note et le feedback pour la tentative numéro {$a}.';
 $string['editingpreviousfeedbackwarning'] = 'Vous modifiez le feedback d\'une tentative précédente. Ceci est la tentative {$a->attemptnumber} de {$a->totalattempts}.';
 $string['editingstatus'] = 'Statut d\'édition';
@@ -203,11 +203,11 @@ $string['extensionduedate'] = 'Date de prolongation';
 $string['extensionnotafterduedate'] = 'La date de prolongation doit être ultérieure à la date de remise';
 $string['extensionnotafterfromdate'] = 'La date de prolongation doit être ultérieure à la date après laquelle la remise des devoirs est permise.';
 $string['feedback'] = 'Feedback';
-$string['feedbackavailablehtml'] = '{$a->username} a donné un feedback pour le travail remis pour «&nbsp;<em>{$a->assignment}</em>&nbsp;».<br /><br />Vous pouvez le consulter en annexe à <a href="{$a->url}">votre travail</a>.';
+$string['feedbackavailablehtml'] = '{$a->username} a donné un feedback pour le travail remis pour « <em>{$a->assignment}</em> ».<br /><br />Vous pouvez le consulter en annexe à <a href="{$a->url}">votre travail</a>.';
 $string['feedbackavailablesmall'] = '{$a->username} a donné un feedback pour le devoir {$a->assignment}';
-$string['feedbackavailabletext'] = '{$a->username} a donné un feedback pour le travail remis pour «&nbsp;{$a->assignment}&nbsp;».
+$string['feedbackavailabletext'] = '{$a->username} a donné un feedback pour le travail remis pour « {$a->assignment} ».
 
-Vous pouvez le consulter en annexe à votre travail&nbsp;: {$a->url}';
+Vous pouvez le consulter en annexe à votre travail : {$a->url}';
 $string['feedbackplugin'] = 'Plugin feedback';
 $string['feedbackpluginforgradebook'] = 'Le plugin feedback qui transmettra des commentaires au carnet de notes';
 $string['feedbackpluginforgradebook_help'] = 'La transmission des commentaires au carnet de notes ne peut pas être effectuée par plusieurs plugins de feedback.';
@@ -236,11 +236,11 @@ $string['gradelocked'] = 'Cette note est verrouillée ou modifiée dans le carne
 $string['gradeoutof'] = 'Note sur {$a}';
 $string['gradeoutofhelp'] = 'Note';
 $string['gradeoutofhelp_help'] = 'Saisir ici la note pour le travail de l\'étudiant. On peut indiquer des décimales.';
-$string['gradersubmissionupdatedhtml'] = '{$a->username} a modifié son travail remis pour le devoir «&nbsp;<em>{$a->assignment}</em>&nbsp;» le {$a->timeupdated}.<br /><br />Le travail remis est <a href="{$a->url}">disponible sur le site web</a>.';
+$string['gradersubmissionupdatedhtml'] = '{$a->username} a modifié son travail remis pour le devoir « <em>{$a->assignment}</em> » le {$a->timeupdated}.<br /><br />Le travail remis est <a href="{$a->url}">disponible sur le site web</a>.';
 $string['gradersubmissionupdatedsmall'] = '{$a->username} a modifié son travail remis pour le devoir {$a->assignment}.';
-$string['gradersubmissionupdatedtext'] = '{$a->username} a modifié son travail remis pour le devoir «&nbsp;{$a->assignment}&nbsp;» le {$a->timeupdated}.
+$string['gradersubmissionupdatedtext'] = '{$a->username} a modifié son travail remis pour le devoir « {$a->assignment} » le {$a->timeupdated}.
 
-Ce travail est disponible ici&nbsp;:
+Ce travail est disponible ici :
 
 {$a->url}';
 $string['gradestudent'] = 'Évaluer l\'étudiant&nbsp;: (id={$a->id}, fullname={$a->fullname}).';
@@ -279,7 +279,7 @@ $string['lastmodifiedgrade'] = 'Dernière modification (note)';
 $string['lastmodifiedsubmission'] = 'Dernière modification (travail remis)';
 $string['latesubmissions'] = 'Devoirs en retard';
 $string['latesubmissionsaccepted'] = 'Permis jusqu\'au {$a}';
-$string['loading'] = 'Chargement...';
+$string['loading'] = 'Chargement…';
 $string['locksubmissionforstudent'] = 'Empêcher la remise d\'autres travaux par l\'étudiant&nbsp;: (id={$a->id}, fullname={$a->fullname}).';
 $string['locksubmissions'] = 'Verrouiller la remise des travaux';
 $string['manageassignfeedbackplugins'] = 'Gérer les plugins de feedback des devoirs';
@@ -319,7 +319,7 @@ Les étudiants peuvent remettre des travaux sous forme numérique (fichiers), pa
 
 Lors de l\'évaluation des devoirs, les enseignants peuvent donner aux étudiants des feedbacks, leur envoyer des fichiers : travaux annotés, documents avec commentaires ou feedbacks audio. Les devoirs peuvent être évalués au moyen d\'une note numérique, d\'un barème spécifique ou d\'une méthode avancée comme une grille d\'évaluation. Les notes définitives sont enregistrées dans le carnet de notes.';
 $string['modulenameplural'] = 'Devoirs';
-$string['moreusers'] = '{$a} de plus...';
+$string['moreusers'] = '{$a} de plus…';
 $string['multipleteams'] = 'Membre de plusieurs groupes';
 $string['multipleteams_desc'] = 'Ce devoir nécessite la remise des travaux en groupes. Vous faites partie de plusieurs groupes. Pour pouvoir remettre un travail, vous devez ne faire partie que d\'un seul groupe. Veuillez contacter votre enseignant pour qu\'il change votre appartenance aux groupes.';
 $string['multipleteamsgrader'] = 'Membre de plusieurs groupes ; impossible donc de remettre un travail.';
@@ -430,19 +430,19 @@ $string['savechanges'] = 'Enregistrer';
 $string['savegradingresult'] = 'Note';
 $string['savenext'] = 'Enregistrer et afficher la suite';
 $string['saveoverrideandstay'] = 'Enregistrer et ajouter une autre exception';
-$string['savingchanges'] = 'Enregistrement des modifications...';
+$string['savingchanges'] = 'Enregistrement des modifications…';
 $string['scale'] = 'Barème';
 $string['search:activity'] = 'Devoir – information sur l\'activité';
 $string['selectedusers'] = 'Utilisateurs sélectionnés';
-$string['selectlink'] = 'Sélectionner...';
+$string['selectlink'] = 'Sélectionner…';
 $string['selectuser'] = 'Sélectionner {$a}';
 $string['sendlatenotifications'] = 'Informer les évaluateurs des travaux en retard';
 $string['sendlatenotifications_help'] = 'Si ce réglage est activé, les évaluateurs (normalement les enseignants) recevront un message lorsque les étudiants remettent un travail en retard. La façon dont le message est délivré est configurable.';
 $string['sendnotifications'] = 'Informer les évaluateurs des travaux remis';
 $string['sendnotifications_help'] = 'Si ce réglage est activé, les évaluateurs (en principe les enseignants) recevront un message chaque fois qu\'un étudiant remet un travail pour ce devoir, qu\'il soit en avance, à temps ou en retard. La méthode d\'envoi des messages est configurable.';
 $string['sendstudentnotifications'] = 'Notifier les étudiants';
-$string['sendstudentnotificationsdefault'] = 'Réglages par défaut pour «&nbsp;Notifier les étudiants&nbsp;»';
-$string['sendstudentnotificationsdefault_help'] = 'Définit la valeur par défaut de la case à cocher «&nbsp;Notifier les étudiants&nbsp;» sur le formulaire d\'évaluation.';
+$string['sendstudentnotificationsdefault'] = 'Réglages par défaut pour « Notifier les étudiants »';
+$string['sendstudentnotificationsdefault_help'] = 'Définit la valeur par défaut de la case à cocher « Notifier les étudiants » sur le formulaire d\'évaluation.';
 $string['sendstudentnotifications_help'] = 'Si ce réglage est activé, les étudiants reçoivent un message lors de la modification d\'une note ou d\'un feedback.';
 $string['sendsubmissionreceipts'] = 'Envoyer aux étudiants un accusé de réception';
 $string['sendsubmissionreceipts_help'] = 'Ce réglage active les accusés de réception pour les étudiants. Les étudiants recevront alors une notification chaque fois qu\'ils remettent un travail pour un devoir.';
@@ -474,21 +474,21 @@ $string['submissionnotcopiedinvalidstatus'] = 'Le travail remis n\'a pas été c
 $string['submissionnoteditable'] = 'L\'étudiant ne peut pas modifier ce travail remis';
 $string['submissionnotready'] = 'Ce travail n\'est pas prêt à être remis&nbsp;:';
 $string['submissionplugins'] = 'Plugins de remise';
-$string['submissionreceipthtml'] = '<p>Vous avez remis un travail pour le devoir «&nbsp;<em>{$a->assignment}</em>&nbsp;»</p>
+$string['submissionreceipthtml'] = '<p>Vous avez remis un travail pour le devoir « <em>{$a->assignment}</em> »</p>
 <p>Vous pouvez consulter l\'état de votre <a href="{$a->url}">travail</a>.</p>';
-$string['submissionreceiptotherhtml'] = 'Votre travail pour «&nbsp;<em>{$a->assignment}</em>&nbsp;» a été remis.<br /><br />
+$string['submissionreceiptotherhtml'] = 'Votre travail pour « <em>{$a->assignment}</em> » a été remis.<br /><br />
 Vous pouvez consulter le statut de votre <a href="{$a->url}">travail remis</a>.';
 $string['submissionreceiptothersmall'] = 'Votre travail pour {$a->assignment} a été remis.';
-$string['submissionreceiptothertext'] = 'Votre travail pour «&nbsp;{$a->assignment}&nbsp;» a été remis.
+$string['submissionreceiptothertext'] = 'Votre travail pour « {$a->assignment} » a été remis.
 
-Vous pouvez consulter le statut de votre travail remis&nbsp;:
+Vous pouvez consulter le statut de votre travail remis :
 
     {$a->url}';
 $string['submissionreceipts'] = 'Envoyer les accusés de réception';
 $string['submissionreceiptsmall'] = 'Vous avez remis votre travail pour le devoir {$a->assignment}';
-$string['submissionreceipttext'] = 'Vous avez remis un travail pour le devoir «&nbsp;{$a->assignment}&nbsp;».
+$string['submissionreceipttext'] = 'Vous avez remis un travail pour le devoir « {$a->assignment} ».
 
-Vous pouvez consulter l\'état de votre travail&nbsp;: {$a->url}';
+Vous pouvez consulter l\'état de votre travail : {$a->url}';
 $string['submissions'] = 'Devoirs rendus';
 $string['submissionsclosed'] = 'La remise des travaux est terminée';
 $string['submissionsettings'] = 'Réglages de la remise des travaux';

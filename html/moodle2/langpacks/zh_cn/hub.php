@@ -164,6 +164,7 @@ $string['registeredsites'] = '已注册网站';
 $string['registermoochtips'] = '要注册 Moodle.org Open Community Hub (MOOCH)，您的网站必须在 Moodle.org 注册。';
 $string['registersite'] = '在{$a}注册';
 $string['registerwith'] = '在中心服务器注册';
+$string['registerwithmoodleorg'] = '注册你的网站';
 $string['registrationconfirmed'] = '网站注册已确认';
 $string['registrationconfirmedon'] = '您已在中心服务器{$a}注册。您现在可以通过课程管理菜单中的“发布”链接向它发布课程。';
 $string['registrationinfo'] = '注册信息';

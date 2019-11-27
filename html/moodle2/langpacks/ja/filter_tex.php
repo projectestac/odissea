@@ -36,5 +36,5 @@ $string['pathdvisvgm'] = 'dvisvgmバイナリのパス';
 $string['pathlatex'] = 'latexバイナリのパス';
 $string['pathmimetex'] = 'mimetexバイナリのパス';
 $string['pathmimetexdesc'] = '別の有効なパスが指定されない場合、Moodleは独自のmimetexバイナリを使用します。';
-$string['privacy:metadata'] = 'TeX表記法プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'TeX表記法プラグインはいかなる個人データも保存しません。';
 $string['source'] = 'TeXソース';

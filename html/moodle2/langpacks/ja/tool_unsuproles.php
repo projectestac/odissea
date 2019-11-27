@@ -30,4 +30,4 @@ $string['contextlevel'] = 'コンテクストレベル';
 $string['count'] = 'カウント';
 $string['noprolbems'] = 'サポートされないロール割り当ては見つかりませんでした。';
 $string['pluginname'] = 'サポートされないロール割り当て';
-$string['privacy:metadata'] = 'サポートされないロール割り当てプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'サポートされないロール割り当てプラグインはいかなる個人データも保存しません。';

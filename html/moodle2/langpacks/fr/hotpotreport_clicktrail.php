@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Suivre les clics de souris';
+$string['privacy:metadata'] = 'Le plugin Suivre les clic de souris n\'enregistre aucune donnée personnelle.';

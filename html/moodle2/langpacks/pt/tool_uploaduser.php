@@ -60,10 +60,10 @@ $string['uploadpicture_userupdated'] = 'Imagem atualizada para o utilizador {$a}
 $string['uploadusers'] = 'Carregar utilizadores';
 $string['uploadusers_help'] = 'Os utilizadores podem ser carregados (e opcionalmente inscritos nas disciplinas) através de ficheiro de texto. O ficheiro deve ter o seguinte formato:
 
-* A primeira linha contém a lista dos nomes dos campos que define o formato do ficheiro.
-* Os nomes dos campos obrigatórios são: username, password, firstname, lastname, email
 * Cada linha do ficheiro contém um registo
-* Cada registo é uma linha com dados separados por vírgulas (ou outro delimitador)';
+* Cada registo é uma linha com dados separados por vírgulas (ou outro delimitador)
+* A primeira linha contém a lista dos nomes dos campos que define o formato do ficheiro
+* Os nomes dos campos obrigatórios são: username, password, firstname, lastname, email';
 $string['uploaduserspreview'] = 'Pré-visualizar os utilizadores carregados';
 $string['uploadusersresult'] = 'Resultados dos utilizadores carregados';
 $string['uploaduser:uploaduserpictures'] = 'Carregar imagens de utilizador';

@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_month:addinstance'] = 'Gehitu egutegi bloke berria';
-$string['calendar_month:myaddinstance'] = 'Gehitu egutegi bloke berria aginte-panelean';
+$string['calendar_month:myaddinstance'] = 'Gehitu egutegi bloke berria Aginte-panelean';
 $string['pluginname'] = 'Egutegia';
 $string['privacy:metadata'] = 'Egutegia blokeak egutegiko datuak baino ez ditu erakusten.';

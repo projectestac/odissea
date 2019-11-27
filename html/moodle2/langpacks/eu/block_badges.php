@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['badges:addinstance'] = 'Gehitu Azken dominak bloke berri bat';
-$string['badges:myaddinstance'] = 'Gehitu Azken dominak bloke berri bat aginte-panelean';
+$string['badges:myaddinstance'] = 'Gehitu Azken dominak bloke berri bat Aginte-panelean';
 $string['nothingtodisplay'] = 'Ez duzu erakusteko dominarik';
 $string['numbadgestodisplay'] = 'Erakusteko azken dominen kopurua';
 $string['pluginname'] = 'Azken dominak';

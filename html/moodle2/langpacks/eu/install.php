@@ -35,7 +35,7 @@ $string['caution'] = 'Kontuz';
 $string['chooselanguage'] = 'Aukeratu hizkuntza bat';
 $string['chooselanguagehead'] = 'Aukeratu hizkuntza bat';
 $string['chooselanguagesub'] = 'Mesedez, aukeratu instalaziorako hizkuntza bat. Hizkuntza hori erabiliko da gunearen hizkuntza lehenetsi gisa, baina aurrerago alda daiteke.';
-$string['cliadminemail'] = 'Kudeatzailearen e-posta helbide berria';
+$string['cliadminemail'] = 'Kudeatzailearen helbide elektroniko berria';
 $string['cliadminpassword'] = 'Kudeatzailearen pasahitz berria';
 $string['cliadminusername'] = 'Kudeatzaile kontuaren erabiltzaile-izena';
 $string['clialreadyconfigured'] = 'Dagoeneko badago config.php konfigurazio-fitxategia. Mesedez erabili admin/cli/install_database.php Moodle gune honetan instalatu nahi baduzu.';
@@ -119,7 +119,7 @@ $string['downloadlanguagesub'] = 'Orain zure hizkuntza-paketea jaisteko eta hizk
 $string['doyouagree'] = 'Ados al zaude? (bai/ez):';
 $string['environmenthead'] = 'Zure ingurunea egiaztatzen...';
 $string['environmentsub'] = 'Zure zerbitzariaren osagai ezberdinak sistemaren betebeharrekin bat datozen egiaztatzen ari gara';
-$string['environmentsub2'] = 'Moodle-ko bertsio bakoitzak PHPko gutxieneko bertsioa eta derrigorrez instalatu beharreko PHP luzapen batzuk ditu. Ingurunearen azterketa oso bat egiten da instalazioa eta eguneraketa bakoitza egin aurretik. Mesedez, jarri harremanetan zerbitzariaren kudeatzailearekin ez badakizu bertsio berria edo PHP luzapenak nola instalatu.';
+$string['environmentsub2'] = 'Moodle-ko bertsio bakoitzak PHPko gutxieneko bertsioa eta derrigorrez instalatu beharreko PHP hedapen batzuk ditu. Ingurunearen azterketa oso bat egiten da instalazioa eta eguneraketa bakoitza egin aurretik. Mesedez, jarri harremanetan zerbitzariaren kudeatzailearekin ez badakizu bertsio berria edo PHP hedapenak nola instalatu.';
 $string['errorsinenvironment'] = 'Huts egin du ingurunearen egiaztatzeak!';
 $string['fail'] = 'Errorea';
 $string['fileuploads'] = 'Fitxategien igoera';
@@ -136,6 +136,7 @@ $string['inputdatadirectory'] = 'Datu-direktorioa:';
 $string['inputwebadress'] = 'Web helbidea:';
 $string['inputwebdirectory'] = 'Moodle direktorioa:';
 $string['installation'] = 'Instalazioa';
+$string['invaliddbprefix'] = 'Aurrizki baliogabea. Aurrizkian soilik letra xeheak eta marratxo baxua (_) erabili daitezke.';
 $string['langdownloaderror'] = 'Zoritxarrez "{$a}" hizkuntza ezin izan da jaitsi. Instalazio-prozesuak ingelesez jarraituko du.';
 $string['langdownloadok'] = '"{$a}" hizkuntza zuzen instalatu da. Instalazio-prozesuak hizkuntza horretan jarraituko du.';
 $string['memorylimit'] = 'Memoriaren muga';
@@ -157,7 +158,7 @@ Horrek Moodle-k berak memoria-muga ezartzea ahalbidetzen du.</li>
 <p>Hala ere, zerbitzari batzuetan horrek PHP orri <b>guztiek</b> ez funtzionatzea ekar dezake
 (orriak ikustean erroreak ere ikusiko dituzu). Kasu horretan, .htaccess fitxategia ezabatu beharko duzu.</p></li>
 </ol>';
-$string['mysqliextensionisnotpresentinphp'] = 'PHP ez da ondo konfiguratu MySQLi luzapenaren bidez MySQL-rekin komunikatzeko. Mesedez konprobatu zure php.ini fitxategia edo PHP berriz konpilatu.';
+$string['mysqliextensionisnotpresentinphp'] = 'PHP ez da ondo konfiguratu MySQLi hedapenaren bidez MySQL-rekin komunikatzeko. Mesedez konprobatu zure php.ini fitxategia edo PHP berriz konpilatu.';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>Datu-basean gordetzen dira Moodle-ko ezarpen eta datu gehienak eta hemen konfiguratu behar da.</p>
 <p>Datu-basearen izena, erabiltzailea eta pasahitza derrigorrezko eremuak dira; taulen aurrizkia aukerakoa da.</p>
@@ -180,7 +181,7 @@ $string['nativesqlsrv'] = 'SQL*Server Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'Orain Moodle-ko datuak gordeko diren datu-basea konfiguratu behar duzu.
 Datu-base hau lehendik sortuta egon behar du, baita sarbidea eta pasahitza dituen erabiltzaile bat ere. Taulen aurrizkia derrigorrezkoa da.';
 $string['nativesqlsrvnodriver'] = 'PHP-rako Microsoft-eko SQL Server-erako Kontrolatzaileak ez daude instalatuta edo ez daude ondo konfiguratuta.';
-$string['ociextensionisnotpresentinphp'] = 'PHP ez da ondo konfiguratu OCI8 luzapenaren bidez Oracle-rekin komunikatzeko. Mesedez konprobatu zure php.ini fitxategia edo PHP berriz konpilatu.';
+$string['ociextensionisnotpresentinphp'] = 'PHP ez da ondo konfiguratu OCI8 hedapenaren bidez Oracle-rekin komunikatzeko. Mesedez konprobatu zure php.ini fitxategia edo PHP berriz konpilatu.';
 $string['pass'] = 'Zuzena';
 $string['paths'] = 'Bideak';
 $string['pathserrcreatedataroot'] = 'Instalatzaileak ezin du datu-karpeta ({$a->dataroot}) sortu.';
@@ -199,8 +200,8 @@ $string['pathssubwwwroot'] = '<p>Moodle eskuragarri egongo den helbide osoa, hau
 <p>Oraingo helbidea egokia ez bada, mesedez aldatu ezazu URLa zure nabigatzailean eta instalazioa berriz abiatu ezazu.</p>';
 $string['pathsunsecuredataroot'] = 'Dataroot-en kokapena ez da segurua';
 $string['pathswrongadmindir'] = 'Admin direktorioa ez da existitzen';
-$string['pgsqlextensionisnotpresentinphp'] = 'PHP ez da ondo konfiguratu PGSQL luzapenaren bidez PostgreSQL-rekin komunikatzeko. Mesedez konprobatu zure php.ini fitxategia edo PHP berriz konpilatu.';
-$string['phpextension'] = '{$a} PHP luzapena';
+$string['pgsqlextensionisnotpresentinphp'] = 'PHP ez da ondo konfiguratu PGSQL hedapenaren bidez PostgreSQL-rekin komunikatzeko. Mesedez konprobatu zure php.ini fitxategia edo PHP berriz konpilatu.';
+$string['phpextension'] = '{$a} PHP hedapena';
 $string['phpversion'] = 'PHP bertsioa';
 $string['phpversionhelp'] = '<p>Moodle-k PHP 5.6.5 edo 7.1 bertsioetako bat behar du (7.0.x bertsioek muga batzuk dituzte). </p>
 <p>Zure bertsioa: {$a}</p>
@@ -218,7 +219,7 @@ $string['sessionautostarterror'] = 'Indargabetuta egon behar du';
 $string['sessionautostarthelp'] = '<p>Moodle-k saioko laguntza behar du eta horren ezean ez du funtzionatuko.</p>
 
 <p>Saioak php.ini fitxategian aktibatu behar dira session.auto_start parametroari dagokionez.</p>';
-$string['sqliteextensionisnotpresentinphp'] = 'PHP-ren SQLite luzapena ez da ondo konfiguratu. Mesedez konprobatu zure php.ini fitxategia edo PHP berriz konpilatu.';
+$string['sqliteextensionisnotpresentinphp'] = 'PHP-ren SQLite hedapena ez da ondo konfiguratu. Mesedez konprobatu zure php.ini fitxategia edo PHP berriz konpilatu.';
 $string['upgradingqtypeplugin'] = 'Galdera/mota plugina eguneratzen';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'Orri hau ikusten baduzu <strong>{$a->packname} {$a->packversion}</strong> paketea zure ordenagailuan instalatu ahal izan duzu. Zorionak!';

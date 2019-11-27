@@ -35,7 +35,7 @@ $string['cantguessstartdate'] = 'Não é possível determinar a data de inicio';
 $string['clearmodelpredictions'] = 'Tem a certeza de que pretende limpar todas as previsões para "{$a}"?';
 $string['clearpredictions'] = 'Limpar previsões';
 $string['clienablemodel'] = 'Pode ativar o modelo selecionando um método de divisão de tempo através do ID. Tenha em atenção que também pode ativá-lo depois usando a interface da web (\'Nenhum\' para sair).';
-$string['clievaluationandpredictions'] = 'Uma tarefa agendada interage através de modelos ativos e obtém previsões. A avaliação de modelos através da interface web está desativada. Pode permitir que estes processos sejam executados manualmente através da interface Web desativando a <a href="{$a}">\'onlycli\'</a> a configuração da análise.';
+$string['clievaluationandpredictions'] = 'Uma tarefa agendada interage através de modelos ativos e obtém previsões. A avaliação de modelos através da interface web está desativada. Pode permitir que estes processos sejam executados manualmente através da interface web desativando a configuração da análise <a href="{$a}">\'Execução dos processos de análise apenas por linha de comando\'</a>.';
 $string['clievaluationandpredictionsnoadmin'] = 'Uma tarefa agendada interage através de modelos ativos e obtém previsões. A avaliação de modelos através da interface web está desativada. Pode ser ativada por um administrador do site.';
 $string['disabled'] = 'Desativado';
 $string['editmodel'] = 'Editar modelo "{$a}"';
@@ -63,7 +63,7 @@ $string['getpredictionsresultscli'] = 'Resultados ao usar \'{$a->name}\' (id: {$
 $string['goodmodel'] = 'Este é um bom modelo para obter previsões. Ative-o para começar a obter previsões.';
 $string['indicators'] = 'Indicadores';
 $string['info'] = 'Informação';
-$string['insights'] = 'Percepções';
+$string['insights'] = 'Perceções';
 $string['invalidanalysables'] = 'Elementos inválidos';
 $string['invalidanalysablesinfo'] = 'Esta página mostra elementos analisáveis que não podem ser usados por este modelo de previsão. Os elementos listados não podem ser usados para treinar o modelo de previsão nem o modelo de previsão pode obter previsões para eles.';
 $string['invalidanalysablestable'] = 'Tabela de elementos analisáveis inválidos do site';

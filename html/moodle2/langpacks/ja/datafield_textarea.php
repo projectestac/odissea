@@ -29,4 +29,4 @@ $string['fieldtypelabel'] = 'テキストエリアフィールド';
 $string['maxbytes'] = '最大埋め込みファイルサイズ (バイト)';
 $string['maxbytes_desc'] = 'ゼロを設定した場合、デフォルトで無制限となります。';
 $string['pluginname'] = 'テキストエリア';
-$string['privacy:metadata'] = 'テキストエリアフィールドコンポーネントはどのような個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['privacy:metadata'] = 'テキストエリアフィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

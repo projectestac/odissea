@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pdw:desc'] = 'ツールバー切り替え';
 $string['pluginname'] = 'ツールバー切り替え';
-$string['privacy:metadata'] = 'TinyMCEツールバー切り替えプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'TinyMCEツールバー切り替えプラグインはいかなる個人データも保存しません。';

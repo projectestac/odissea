@@ -45,7 +45,7 @@ $string['incomingmailserversettings'] = 'Configuration du serveur de courriel en
 $string['incomingmailserversettings_desc'] = 'Moodle peut se connecter aux serveurs IMAP configurés adéquatement. Veuillez spécifier ici les réglages permettant de se connecter à votre serveur IMAP.';
 $string['invalidrecipientdescription'] = 'Le message « {$a->subject} » n\'a pas pu être validé, car il a été envoyé à partir d\'une adresse différente de celle qui est indiquée dans votre profil utilisateur. Pour le valider, veuillez répondre à ce message.';
 $string['invalidrecipientdescriptionhtml'] = 'Le message « {$a->subject} » n\'a pas pu être validé, car il a été envoyé à partir d\'une adresse différente de celle qui est indiquée dans votre profil utilisateur. Pour le valider, veuillez répondre à ce message.';
-$string['invalidrecipientfinal'] = 'Le message « {$a->subject} » n\'a pas pu être authentifié. Veuillez vous assurer que vous l\'envoyez avec la même adresse de courriel que celle qui est indiquée dans votre profil.';
+$string['invalidrecipientfinal'] = 'Le message « {$a->subject} » n\'a pas pu être authentifié. Veuillez vous assurer que vous l\'envoyez avec la même adresse de courriel que celle qui est indiquée dans votre profil.';
 $string['invalid_recipient_handler'] = 'Si un message valide est reçu, mais que l\'expéditeur ne peut pas être vérifié, le message est stocké sur le serveur de courriel et l\'expéditeur est contacté au moyen de l\'adresse de courriel indiquée dans son profil utilisateur. L\'expéditeur peut alors répondre afin de confirmer l\'authenticité du message d\'origine.
 
 Ce gestionnaire traite ces réponses.
@@ -80,7 +80,7 @@ $string['messageprocessingerrorhtml'] = '<p>Vous avez récemment envoyé un cour
 <p>Les détails de l\'erreur sont indiqués ci-dessous.</p>
 <p>{$a->error}</p>';
 $string['messageprocessingfailed'] = 'Le courriel « {$a->subject} » n\'a pas pu être traité. Voici le message d\'erreur qui a été renvoyé : « {$a->message} ».';
-$string['messageprocessingfailedunknown'] = 'Le courriel « {$a->subject} » n\'a pas pu être traité. Veuillez contacter l\'administrateur du Moodle pour plus d\'informations.';
+$string['messageprocessingfailedunknown'] = 'Le courriel « {$a->subject} » n\'a pas pu être traité. Veuillez contacter l\'administrateur du Moodle pour plus d\'informations.';
 $string['messageprocessingsuccess'] = '{$a->plain}
 
 Si vous ne voulez plus recevoir ces notifications, veuillez modifier les réglages de vos messages personnels en visitant {$a->messagepreferencesurl}.';

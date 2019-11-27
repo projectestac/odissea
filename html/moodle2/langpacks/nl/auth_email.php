@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_emaildescription'] = '<p>Met e-mail zelfregistratie kan een gebruiker  zelf zijn account maken op de moodle site: op het moment dat de gebruiker zich aanmeldt en daarbij een nieuwe gebruikersnaam en wachtwoord kiest, wordt er een bevestigingse-mail gestuurd naar het e-mailadres van de gebruiker. In deze e-mail staat een veilige link naar een pagina waar de gebruiker zijn account kan bevestigen. Tijdens alle latere aanmeldingen worden de gebruikersnaam en het wachtwoord alleen maar vergeleken met de bewaarde gebruikersgegevens in de Moodle database.</p>
 <p>Merk op: naast het inschakelen van deze plugin, moet e-mailgebaseerde zelfregistratie ook geselecteerd worden in het zelf registratie rolmenu op de \'Beheer authenticatie\'-pagina.</p>';
 $string['auth_emailnoemail'] = 'Probeerde je een e-mail te zenden maar het zenden is mislukt!';
-$string['auth_emailrecaptcha'] = 'Hiermee voeg je een visueel/auditief bevestigingsformulier toe aan de zelfregistratiepagina voor e-mailgebaseerde authenticatie. Dit beschermt je site tegen spammers en draagt ook bij tot een breder doel. Zie http://www.google.com/recaptcha voor meer details.';
+$string['auth_emailrecaptcha'] = 'Hiermee voeg je een visueel/auditief bevestigingsformulier toe aan de zelfregistratiepagina voor e-mailgebaseerde authenticatie. Dit beschermt je site tegen spammers en draagt ook bij tot een breder doel. Zie https://www.google.com/recaptcha voor meer details.';
 $string['auth_emailrecaptcha_key'] = 'reCAPTCHA-element inschakelen';
 $string['auth_emailsettings'] = 'Instellingen';
 $string['pluginname'] = 'E-mail zelfregistratie';

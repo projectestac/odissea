@@ -375,6 +375,7 @@ Tipos de campo de la base de datos';
 $string['subplugintype_datapreset'] = '	
 Tipos de campo de la base de datos';
 $string['subplugintype_datapreset_plural'] = 'Ajustes previos';
+$string['tagarea_data_records'] = 'Entradas de la base de datos';
 $string['tags'] = 'Marcas';
 $string['teachersandstudents'] = '{$a->teachers} y {$a->students}';
 $string['templates'] = 'Plantillas';

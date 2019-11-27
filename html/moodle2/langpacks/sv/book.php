@@ -85,6 +85,7 @@ $string['numberingoptions_desc'] = 'Inställningsalternativ för att visa kapite
 $string['page-mod-book-x'] = 'Valfri bokmodulsida';
 $string['pluginadministration'] = 'Bok administration';
 $string['pluginname'] = 'Bok';
+$string['privacy:metadata'] = 'Modulen Bok sparar inte personuppgifter.';
 $string['search:chapter'] = 'Bok - kapitel';
 $string['showchapter'] = 'Visa kapitel "{$a}"';
 $string['subchapter'] = 'Underavdelning';

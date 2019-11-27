@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '下付き文字';
-$string['privacy:metadata'] = 'atto_subscriptプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_subscriptプラグインはいかなる個人データも保存しません。';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Formats de sortie Qedoc';
+$string['privacy:metadata'] = 'Le plugin Formats de sortie Qedoc n\'enregistre aucune donnée personnelle.';

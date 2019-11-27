@@ -54,7 +54,7 @@ eremuok balio hauek izan ditzakete:
 * user idnumber - erabiltzaile taulako ID zenbakia
 * course idnumber - erabiltzaile taulako ID zenbakia
 * starttime - hasiera data (Unix-eko epoch-etik igarotako segundoak) - aukerazkoa
-* endtime - bukaera data (Unix-eko epoch-etik igarotako segundoak) - aukerazkoa
+* endtime - amaiera data (Unix-eko epoch-etik igarotako segundoak) - aukerazkoa
 
 Honen moduko zerbait izan daiteke:
 <pre class="informationbox">

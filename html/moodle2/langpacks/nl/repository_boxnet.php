@@ -32,7 +32,7 @@ $string['clientid'] = 'Client ID';
 $string['clientsecret'] = 'Client geheim';
 $string['configplugin'] = 'Box instellingen';
 $string['filesourceinfo'] = 'Box ({$a->fullname}): {$a->filename}';
-$string['information'] = 'Haal een Client ID en geheim van <a href="http://www.box.net/developers/service">Box ontwikkelaarspagina</a> voor je Moodle site.';
+$string['information'] = 'Haal een Client ID en geheim van <a href="https://www.box.net/developers/service">Box ontwikkelaarspagina</a> voor je Moodle site.';
 $string['invalidpassword'] = 'Ongeldig wachtwoord';
 $string['nullfilelist'] = 'Er zijn geen bestanden in deze opslagruimte';
 $string['password'] = 'Jouw wachtwoord:';

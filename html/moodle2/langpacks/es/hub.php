@@ -168,6 +168,7 @@ $string['registeredsites'] = 'Sitios registrados';
 $string['registermoochtips'] = 'Para estar registrado en Moodle.net, su sitio debe estar registrado en Moodle.org.';
 $string['registersite'] = 'Registrarse en {$a}';
 $string['registerwith'] = 'Registrar con un hub';
+$string['registerwithmoodleorg'] = 'Registre su sitio';
 $string['registrationconfirmed'] = 'Registro del sitio confirmado';
 $string['registrationconfirmedon'] = 'Gracias por registrar su sitio. La información de registro se mantendrá actualizada mediante la tarea programada "Registro del sitio".';
 $string['registrationinfo'] = 'Información de registro';

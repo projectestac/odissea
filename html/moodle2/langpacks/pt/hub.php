@@ -99,7 +99,7 @@ $string['errorcron'] = 'Ocorreu um erro no processo de atualização do registo 
 $string['errorcronnoxmlrpc'] = 'Para ser possível atualizar o registo é necessário que a extensão XML-RPC do PHP esteja instalada e ativa.';
 $string['errorhublisting'] = 'Ocorreu um erro ao obter a lista de hubs do site moodle.org. Por favor, tente novamente mais tarde.({$a})';
 $string['errorlangnotrecognized'] = 'O idioma fornecidoa não é reconhecido pelo Moodle. Por favor, contacte {$a}';
-$string['errorotherhubsnotsupported'] = 'Esta página já não pode ser usada para registo com sites que não Moodle.net';
+$string['errorotherhubsnotsupported'] = 'Esta página já não pode ser usada para registo com com diretorias de sites personalizados.';
 $string['errorregistration'] = 'Ocorreu um erro durante no registo. Por favor, tente novamente mais tarde. ({$a})';
 $string['errorregistrationupdate'] = 'Ocorreu um erro durante a atualização do registo ({$a})';
 $string['errorunpublishcourses'] = 'Ocorreu um erro inesperado no processo de remoção da disciplinas de Moodle.net. Por favor, tente novamente mais tarde (ação recomendada) ou contacte o administrador de Moodle.net.';
@@ -143,7 +143,7 @@ $string['operation'] = 'Ações';
 $string['orenterprivatehub'] = 'Em alternativa indique o URL de um hub privado:';
 $string['participantnumberaverage'] = 'Número médio de participantes ({$a})';
 $string['policyagreed'] = 'Política de privacidade e contrato de processamento de dados';
-$string['policyagreeddesc'] = 'Concordo com a <a href="{$a}" target="_blank">Política de privacidade e contrato de processamento de dados</a> de Moodle.net';
+$string['policyagreeddesc'] = 'Concordo com a <a href="{$a}" target="_blank">Política de privacidade e contrato de processamento de dados</a>';
 $string['postaladdress'] = 'Morada';
 $string['postaladdress_help'] = 'Morada deste site ou da entidade por ele representada.';
 $string['postsnumber'] = 'Número de mensagens ({$a})';
@@ -176,6 +176,19 @@ $string['registereduserdevices'] = 'Número de utilizadores com dispositivos mó
 $string['registermoochtips'] = 'Registe o seu site em Moodle.org para receber alertas de segurança e ter acesso ao Moodle.net, a nossa plataforma de partilha de disciplinas.';
 $string['registersite'] = 'Registar em {$a}';
 $string['registerwith'] = 'Registar-se num centro Moodle';
+$string['registerwithmoodleorg'] = 'Registar o seu site';
+$string['registerwithmoodleorgcomplete'] = 'Conclua o registo do seu site';
+$string['registerwithmoodleorginfo'] = 'Gostaríamos muito de ficar em contacto para lhe disponibilizar coisas importantes para o seu site Moodle! Ao registar o seu site:
+
+* Pode subscrever-se para receber notificações de novos lançamentos do Moodle, alertas de segurança e outras notícias importantes.
+* Pode aceder e ativar o envio de notificações móveis a partir do seu site através da Aplicação móvel Moodle gratuita.
+* Está a contribuir para as nossas estatísticas Moodle da comunidade mundial, que nos ajudam a melhorar o Moodle e os sites da nossa comunidade.
+* Se desejar, o seu site pode ser incluído na lista de sites Moodle registados do seu país.';
+$string['registerwithmoodleorginfoapp'] = 'Acerca da Aplicação móvel Moodle';
+$string['registerwithmoodleorginfosites'] = 'Outros sites do meu país';
+$string['registerwithmoodleorginfostats'] = 'Estatísticas do Moodle';
+$string['registerwithmoodleorgremove'] = 'A cancelar o registo do seu site';
+$string['registerwithmoodleorgupdate'] = 'Atualize o registo do seu site';
 $string['registrationconfirmed'] = 'Confirmação de registo do site';
 $string['registrationconfirmedon'] = 'Obrigado por ter registado o seu site. As informações do registo serão mantidas atualizadas através da tarefa agendada "Registo do site".';
 $string['registrationinfo'] = 'Informação do registo';
@@ -269,16 +282,17 @@ $string['unpublishconfirmation'] = 'Tem a certeza de que pretende apagar a disci
 $string['unpublishcourse'] = 'Parar partilha {$a}';
 $string['unregister'] = 'Remover registo';
 $string['unregisterconfirmation'] = 'Está prestes a remover o registo deste site no hub {$a}. Uma vez removido este registo não poderá gerir as disciplina que tiver enviado para este hub. Tem a certeza de que pretende apagar este registo?';
-$string['unregisterexplained'] = 'Se o site com URL {$a} estiver registado no Moodle.net, o registo será removido.';
+$string['unregisterexplained'] = 'Se o site com URL {$a} estiver registado, o registo será removido.';
 $string['unregisterfrom'] = 'Remover registo do hub {$a}';
 $string['unregistrationerror'] = 'Ocorreu um erro ao tentar remover o registo em Moodle.net: {$a}';
 $string['untrustme'] = 'Não é de confiança';
 $string['update'] = 'Atualizar';
 $string['updatesite'] = 'Atualizar registo em {$a}';
+$string['updatesiteregistration'] = 'Atualize o registo';
 $string['updatestatus'] = 'Verificar agora.';
 $string['uploaded'] = 'Enviada';
 $string['url'] = 'URL do hub';
-$string['urlalreadyregistered'] = 'Aparentemente este site já está registado em Moodle.net, o que indica que ocorreu um erro. Por favor, contacte o administrador de Moodle.net para limpar o seu registo e assim poder efetuar um novo.';
+$string['urlalreadyregistered'] = 'Aparentemente este site já está registado, o que significa que ocorreu um erro. Por favor, contacte o administrador do Moodle.net para limpar o seu registo de modo a poder efetuar um novo.';
 $string['usedifferentemail'] = 'Usar um e-mail diferente';
 $string['usersnumber'] = 'Número de utilizadores ({$a})';
 $string['warning'] = 'AVISO';

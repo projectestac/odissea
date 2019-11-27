@@ -287,7 +287,7 @@ $string['error:nocourses'] = 'A Conclusão da disciplina não está ativa para n
 $string['error:nogroups'] = '<p> Não existem coleções públicas de Medalhas disponíveis na sua Backpack. </p><p> Apenas coleções públicas são exibidas, <a href="http://backpack.openbadges.org">aceda à sua Backpack</a> para criar algumas coleções públicas. </p>';
 $string['error:nopermissiontoview'] = 'Não tem permissão para ver os condecorados com a medalha';
 $string['error:nosuchbadge'] = 'A medalha com o ID {$a} não existe.';
-$string['error:nosuchcohort'] = 'Aviso: este Grupo global já não está mais disponível.';
+$string['error:nosuchcohort'] = 'Aviso: este Grupo global já não está disponível.';
 $string['error:nosuchcourse'] = 'Aviso: Esta disciplina já não está disponível';
 $string['error:nosuchfield'] = 'Aviso: Este campo de perfil do utilizador já não está disponível.';
 $string['error:nosuchmod'] = 'Aviso: Esta atividade já não está disponível.';
@@ -494,10 +494,10 @@ Assim que uma medalha tiver sido atribuída pelo menos a um utilizador, esta fic
 *Porque são as medalhas bloqueadas?*
 
 É uma forma de assegurar que todos os utilizadores cumprem os mesmos requisitos para receber uma medalha. Atualmente, não é possível anular medalhas. Se fosse permitido que os critérios das medalhas fossem constantemente modificados, provavelmente resultaria em vários utilizadores a terem a mesma medalha apesar de terem cumprido com requisitos completamente diferentes.';
-$string['statusmessage_0'] = 'Atualmente, esta medalha não está disponível para os utilizadores. Ative o acesso se pretende que os utilizadores consigam obter esta medalha.';
-$string['statusmessage_1'] = 'Atualmente, esta medalha está disponível para os utilizadores. Desative o acesso para fazer alterações.';
-$string['statusmessage_2'] = 'Atualmente, esta medalha não está disponível para os utilizadores e os seus critérios estão bloqueados. Ative o acesso se pretende que os utilizadores consigam obter esta medalha.';
-$string['statusmessage_3'] = 'Atualmente, esta medalha está disponível para os utilizadores e os seus critérios estão bloqueados.';
+$string['statusmessage_0'] = 'De momento, esta medalha não está disponível para os utilizadores. Ative o acesso se pretende que os utilizadores consigam obter esta medalha.';
+$string['statusmessage_1'] = 'De momento, esta medalha está disponível para os utilizadores. Desative o acesso para fazer alterações.';
+$string['statusmessage_2'] = 'De momento, esta medalha não está disponível para os utilizadores e os seus critérios estão bloqueados. Ative o acesso se pretende que os utilizadores consigam obter esta medalha.';
+$string['statusmessage_3'] = 'De momento, esta medalha está disponível para os utilizadores e os seus critérios estão bloqueados.';
 $string['statusmessage_4'] = 'Atualmente, esta medalha está arquivada.';
 $string['subject'] = 'Assunto da mensagem';
 $string['targetcode'] = 'Código';

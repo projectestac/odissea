@@ -37,4 +37,4 @@ $string['gradingdetailswithpenalty'] = 'この送信の評点は {$a->raw}/{$a->
 $string['gradingdetailswithtotalpenalty'] = 'この送信の評点は {$a->raw}/{$a->max} です。この送信からペナルティ {$a->penalty} 点が引かれます。現在のペナルティ合計は {$a->totalpenalty} です。';
 $string['notcomplete'] = '未完了';
 $string['pluginname'] = 'アダプティブモード';
-$string['privacy:metadata'] = 'アダプティブモード問題動作プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'アダプティブモード問題動作プラグインはいかなる個人データも保存しません。';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['moodleimage:browseimage'] = 'Chercher ou déposer une image...';
+$string['moodleimage:browseimage'] = 'Chercher ou déposer une image…';
 $string['pluginname'] = 'Insérer image';
 $string['privacy:metadata'] = 'Le plugin TinyMCE Insérer image n\'enregistre aucune donnée personnelle.';

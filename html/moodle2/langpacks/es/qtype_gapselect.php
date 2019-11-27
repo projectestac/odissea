@@ -42,4 +42,4 @@ $string['pluginname_help'] = 'Seleccione las palabras perdidas. Las preguntas re
 $string['pluginnamesummary'] = 'Las palabras que faltan en el texto de la pregunta se rellenan mediante los menús desplegables.';
 $string['shuffle'] = 'Barajar';
 $string['tagsnotallowed'] = '{$a->tag} no está permitido. (Solamente {$a->allowed} están permetidos.)';
-$string['tagsnotallowedatall'] = '{$a->tag) no está permitido. (No se permite usar código HTML aquí.)';
+$string['tagsnotallowedatall'] = '{$a->tag} no está permitido. (No se permite usar código HTML aquí.)';

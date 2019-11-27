@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'InnoDB変換';
-$string['privacy:metadata'] = 'InnoDB変換プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'InnoDB変換プラグインはいかなる個人データも保存しません。';

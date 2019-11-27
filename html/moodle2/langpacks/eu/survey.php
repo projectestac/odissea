@@ -217,7 +217,7 @@ $string['invalidsurveyid'] = 'Hausnarketaren IDa ez zen egokia';
 $string['invalidtmptid'] = 'Txantiloiaren IDa ez da baliozkoa';
 $string['ipreferthat'] = 'Nahiago dut';
 $string['modulename'] = 'Hausnarketa';
-$string['modulename_help'] = 'Hausnarketa jarduerak on-line inguruneetan ikasketa eta ebaluazioa sustatzeko baliagarriak diren hausnarketa erremintak erabiltzeko aukera ematen du. Irakasleak erreminta hauek bere ikasleak eta bere irakasteko modua hobeto ezagutzen laguntzeko erabili ditzake.
+$string['modulename_help'] = 'Hausnarketa jarduerak on-line inguruneetan ikasketa eta ebaluazioa sustatzeko baliagarriak diren egiaztatutako hainbat hausnarketa erreminta erabiltzeko aukera ematen du. Irakasleak erreminta hauek bere ikasleak eta bere irakasteko modua hobeto ezagutzen laguntzeko erabili ditzake.
 
 Kontuan izan hausnarketa erreminta hauetako galderak aurrez definiturik daudela. Norbere inkestak egin nahi dituen irakasleak feedback jarduera erabili behar du.';
 $string['modulenameplural'] = 'Hausnarketak';
@@ -259,7 +259,7 @@ $string['seemoredetail'] = 'Egin klik hemen xehetasun gehiago ikusteko';
 $string['selectedquestions'] = 'Eskala batetik aukeratutako galderak, ikasle guztiak';
 $string['summary'] = 'Laburpena';
 $string['survey:addinstance'] = 'Gehitu hausnarketa berria';
-$string['surveycompleted'] = 'Hausnarketa hau bukatu duzu. Beheko grafikoak zure erantzunen eta klasearen erantzunen batez bestekoen arteko konparaketa da.';
+$string['surveycompleted'] = 'Hausnarketa hau osatu duzu. Beheko grafikoak zure erantzunen eta klasearen erantzunen batez bestekoen arteko konparaketa da.';
 $string['surveycompletednograph'] = 'Bete duzu hausnarketa hau';
 $string['survey:download'] = 'Erantzunak jaitsi';
 $string['surveygraph'] = 'Hausnarketaren grafikoa';

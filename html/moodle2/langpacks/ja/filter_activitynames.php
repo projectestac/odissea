@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = '活動名自動リンク';
-$string['privacy:metadata'] = '活動名自動リンクプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '活動名自動リンクプラグインはいかなる個人データも保存しません。';

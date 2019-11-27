@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['confirmdatasaved'] = 'Jag bekräftar att jag inte har osparat arbete på en mobil enhet.';
 $string['mobileapp'] = 'Mobilapp';
+$string['offlinedatamessage'] = 'Du har arbetet med detta försök på en mobil enhet. Senaste gången något sparades var för {$a} sedan.';

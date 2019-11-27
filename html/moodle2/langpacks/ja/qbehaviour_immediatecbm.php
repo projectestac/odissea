@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = '確信度を選択してください。';
 $string['pluginname'] = '即時フィードバック (CBM)';
-$string['privacy:metadata'] = '即時フィードバック (CBM) 問題動作プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '即時フィードバック (CBM) 問題動作プラグインはいかなる個人データも保存しません。';

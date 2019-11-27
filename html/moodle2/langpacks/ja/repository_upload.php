@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'アップロードプラグインの設定';
 $string['pluginname'] = 'ファイルのアップロード';
 $string['pluginname_help'] = 'ファイルをMoodleにアップロードする';
-$string['privacy:metadata'] = 'アップロードファイルリポジトリプラグインはどのような個人データも保存または転送しません。';
+$string['privacy:metadata'] = 'アップロードファイルリポジトリプラグインはいかなる個人データも保存または転送しません。';
 $string['upload_error_cant_write'] = 'ディスクへのファイル書き込みに失敗しました。';
 $string['upload_error_extension'] = 'PHP拡張モジュールがファイルアップロードを停止しました。';
 $string['upload_error_form_size'] = 'アップロードファイルがHTMLフォームで指定されているMAX_FILE_SIZEディレクティブを超えました。';

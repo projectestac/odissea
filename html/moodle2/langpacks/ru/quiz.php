@@ -706,6 +706,7 @@ $string['quiz:emailconfirmsubmission'] = 'Получать сообщение с
 $string['quiz:emailnotifysubmission'] = 'Получать сообщение с извещением о попытках прохождения теста';
 $string['quiz:emailwarnoverdue'] = 'Получать уведомление о том, что попытка становится просроченной и должна быть отправлена.';
 $string['quizeventcloses'] = '{$a} закрывается';
+$string['quizeventopens'] = '{$a} открывается';
 $string['quiz:grade'] = 'Оценивать тест вручную';
 $string['quiz:ignoretimelimits'] = 'Игнорировать ограничение времени в тестах';
 $string['quizisclosed'] = 'Этот тест закрыт';

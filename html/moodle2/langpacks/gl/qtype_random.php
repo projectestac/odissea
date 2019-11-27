@@ -47,3 +47,4 @@ $string['randomqplusnamesystemtags'] = 'Ao chou (Calquera categoría de nivel do
 $string['randomqplusnametags'] = 'Ao chou ({$a->category} e subcategorías, etiquetas: {$a->tags})';
 $string['selectedby'] = '{$a->questionname} seleccionada por {$a->randomname}';
 $string['selectmanualquestions'] = 'As preguntas ao chou poden ser preguntas cualificadas manualmente';
+$string['taskunusedrandomscleanup'] = 'Retirar as preguntas ao chou non usadas';

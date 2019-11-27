@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = '入力されたパスワードが正しくありません。';
 $string['pluginname'] = 'パスワード - 小テストアクセスルール';
-$string['privacy:metadata'] = 'パスワード小テストアクセスルールプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'パスワード小テストアクセスルールプラグインはいかなる個人データも保存しません。';
 $string['quizpassword'] = '小テストパスワード';
 $string['requirepasswordmessage'] = 'この小テストを受験するためはパスワードを入力する必要があります。';

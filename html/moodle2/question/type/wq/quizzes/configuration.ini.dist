@@ -110,3 +110,9 @@
 ; Wiris Graph URL.
 ;
 ;quizzes.graph.url = "http://www.wiris.net/demo/graph"
+
+;
+; The identifier of your license to use Wiris Quizzes. Will be used to track usage
+; in the future, but it is not required right now.
+;
+;quizzes.license.id = ""

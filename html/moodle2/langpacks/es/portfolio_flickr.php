@@ -39,12 +39,16 @@ $string['noauthtoken'] = 'No se ha podido recuperar una ficha de autentificació
 $string['other'] = 'Rótulos, ilustraciones, CGI u otras imágenes no fotográficas.';
 $string['photo'] = 'Fotos';
 $string['pluginname'] = 'Flickr.com';
+$string['privacy:metadata'] = 'Este plugin envía información a la cuenta asociada de Flickr. No se almacena ninguna información localmente.';
+$string['privacy:metadata:data'] = 'Información personal enviada a través del subsistema de portafolio.';
 $string['restricted'] = 'Restringidos';
 $string['safe'] = 'Seguro';
 $string['safetylevel'] = 'Nivel de seguridad';
 $string['screenshot'] = 'Imágenes';
 $string['set'] = 'Ajustar';
 $string['setupinfo'] = 'Instrucciones de instalación';
+$string['setupinfodetails'] = 'Para obtener la llave API y la cadena secreta, inicie sesión en Flickr y <a href="{$a->applyurl}">solicite una nueva llave</a>.
+Una vez que una nueva llave y cadena secreta sean generadas, siga el enlace de \'Editar flujo de autenticación para esta app\' de la página. Seleccione \'Tipo de App\' a \'Aplicación Web\'. En el campo \'Callback URL\' introduzca el valor: <br /><code>{$a->callbackurl}</code><br />Opcionalmente también podrá proveer su descripción del sitio Moodle y un logo. Estos valores podrán ser configurados posteriormente en <a href="{$a->keysurl}">la página</a> que muestra sus aplicaciones Flickr.';
 $string['sharedsecret'] = 'Cadena secreta';
 $string['title'] = 'Título';
 $string['uploadfailed'] = 'No se ha podido subir la imagen(es) a flickr.com: {$a}

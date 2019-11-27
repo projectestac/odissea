@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badwords'] = 'shit,fucked,fucker,fuck,dickhead, dick,cockhead,cock,cunt,asshole,arsehole,prick,bitch, jism,whore,slut,wanker, wank,bastard,dildo,masturbate, orgasm,penis,nigger, pussy,vagina';
 $string['filtername'] = 'ワードセンサーシップ';
-$string['privacy:metadata'] = 'ワードセンサーシッププラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ワードセンサーシッププラグインはいかなる個人データも保存しません。';

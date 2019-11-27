@@ -736,7 +736,7 @@ class mailsender {
 
                      default:
                         // date, ldate, ledate, leldate, beldate, lebelbe...
-                        continue;
+                        continue 2;
                   }
                }
 

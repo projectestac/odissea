@@ -67,7 +67,7 @@ $string['confirmcheckindexes'] = 'Deze functie zal zoeken naar mogelijk ontbreke
 Het is ten zeerste aangeraden de laatst beschikbare (+ versie) Moodleversie te gebruiken voor je zoekt naar ontbrekende indexen.
 
 Deze functie schrijft niets weg in de databank (enkel lezen), en kan dus veilig uitgevoerd worden op elk moment.';
-$string['confirmcheckoraclesemantics'] = 'Deze functie zal zoeken naar  <a href="http://tracker.moodle.org/browse/MDL-29322">Oracle varchar2 kolommen die BYTE semantics gebruiken</a> op je Moodle server, en hierbij automatisch de nodige SQL-statements genereren (maar niet uitvoeren!) om alle kolommen te converteren neer CHAR semantics (beter voor cross-db compatibiliteit en een grotere maximumlengte voor de inhoud).
+$string['confirmcheckoraclesemantics'] = 'Deze functie zal zoeken naar  <a href="https://tracker.moodle.org/browse/MDL-29322">Oracle varchar2 kolommen die BYTE semantics gebruiken</a> op je Moodle server, en hierbij automatisch de nodige SQL-statements genereren (maar niet uitvoeren!) om alle kolommen te converteren neer CHAR semantics (beter voor cross-db compatibiliteit en een grotere maximumlengte voor de inhoud).
 
 Eens gegenereerd kun je die statements kopiëren en veilig uitvoeren in je favoriete SQL-interface (vergeet niet om eerst een back-up te nemen)
 
@@ -141,7 +141,7 @@ $string['integerincorrectlength'] = 'Foute lengte voor integer veld';
 $string['key'] = 'Sleutel';
 $string['keynameempty'] = 'De sleutel kan niet leeg zijn';
 $string['keys'] = 'Sleutels';
-$string['listreservedwords'] = 'Lijst van gereserveerde woorden<br /> (gebruikt om <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a> up to date te houden)';
+$string['listreservedwords'] = 'Lijst van gereserveerde woorden<br /> (gebruikt om <a href="https://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a> up to date te houden)';
 $string['load'] = 'Laden';
 $string['main_view'] = 'Hoofdscherm';
 $string['masterprimaryuniqueordernomatch'] = 'De velden in je foreign key moeten in dezelfde volgorde opgelijst worden als ze staan in de UNIQUE KEY in de gerefereerde tabel.';

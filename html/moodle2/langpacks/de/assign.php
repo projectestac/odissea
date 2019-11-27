@@ -34,7 +34,7 @@ $string['addnewattempt_help'] = 'Dies erzeugt eine neue leere Lösung, in der Si
 $string['addnewgroupoverride'] = 'Verfügbarkeitsänderungen für Gruppen anlegen';
 $string['addnewuseroverride'] = 'Verfügbarkeitsänderung für Nutzer anlegen';
 $string['addsubmission'] = 'Abgabe hinzufügen';
-$string['addsubmission_help'] = 'Sie haben bisher nichts abgegeben.';
+$string['addsubmission_help'] = 'Sie haben bisher keine Lösungen abgegeben.';
 $string['allocatedmarker'] = 'Zugeordnete/r Bewerter/in';
 $string['allocatedmarker_help'] = 'Bewerter/in, der/die dieser Abgabe zugeordnet ist';
 $string['allowsubmissions'] = 'Nutzer/in erlauben, für diese Aufgabe weiter Lösungen abzugeben';
@@ -252,7 +252,7 @@ Die Abgabe ist auf der Website verfügbar
 {$a->url}';
 $string['gradestudent'] = 'Bewertung für Teilnehmer/in: (id={$a->id}, Name={$a->fullname}).';
 $string['gradeuser'] = 'Bewertung {$a}';
-$string['grading'] = 'Wird bewertet';
+$string['grading'] = 'Bewertung';
 $string['gradingchangessaved'] = 'Die geänderten Bewertungen wurden gespeichert.';
 $string['gradingduedate'] = 'An Bewertung erinnern';
 $string['gradingduedate_help'] = 'Dieser voraussichtliche Termin markiert den Abschluss der Abgabe. Das Datum wird verwendet, um Benachrichtigungen für Trainer/innen im Dashboard zu priorisieren.';

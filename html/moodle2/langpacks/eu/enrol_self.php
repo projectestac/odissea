@@ -39,7 +39,7 @@ Mezuan hurrengo gakoak sar daitezke:
 
 * Ikastaroaren izena {$a->coursename}
 * Erabiltzailearen profilerako esteka {$a->profileurl}
-* Erabiltzailearen e-posta helbidea {$a->email}
+* Erabiltzailearen helbide elektronikoa {$a->email}
 * Erabiltzailearen izen osoa {$a->fullname}';
 $string['defaultrole'] = 'Lehenetsitako rol-esleipena';
 $string['defaultrole_desc'] = 'Aukeratu matrikulazio automatikoa egitean erabiltzaileari esleituko zaion rola.';
@@ -107,7 +107,7 @@ $string['self:manage'] = 'Kudeatu matrikulatutako erabiltzaileak';
 $string['self:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
 $string['self:unenrolself'] = 'Desmatrikulatu norbera ikastararotik';
 $string['sendcoursewelcomemessage'] = 'Bidali ikastarorako harrera-mezua';
-$string['sendcoursewelcomemessage_help'] = 'Erabiltzaileek beren burua ikastaro batean matrikulatzen dutenean ongi etorri mezua jasoko dute e-postaz. Ikastaroko kontaktuak bidaltzen badu (modu lehenetsian irakasleak) eta erabiltzaile batek baino gehiagok badute rol hori, e-posta rol hori daukan lehen erabiltzailearen izenean bidaliko da.';
+$string['sendcoursewelcomemessage_help'] = 'Erabiltzaileek beren burua ikastaro batean matrikulatzen dutenean ongi etorri e-maila jasoko dute. Ikastaroko kontaktuak bidaltzen badu (modu lehenetsian irakasleak) eta erabiltzaile batek baino gehiagok badute rol hori, e-maila rol hori daukan lehen erabiltzailearen izenean bidaliko da.';
 $string['sendexpirynotificationstask'] = 'Matrikulazio automatikoen iraungitze-jakinarazpenen bidalketa zeregina';
 $string['showhint'] = 'Erakutsi argibidea';
 $string['showhint_desc'] = 'Erakutsi bisitarien sarbide-giltzaren lehenbiziko letra';

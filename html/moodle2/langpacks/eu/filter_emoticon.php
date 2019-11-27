@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Erakutsi aurpegierak irudi gisa';
 $string['privacy:metadata'] = 'Erakutsi aurpegierak irudi gisa pluginak ez du datu pertsonalik biltzen.';
-$string['settingformats'] = 'Formatuei aplikatu';
+$string['settingformats'] = 'Aplikatu formatuei';
 $string['settingformats_desc'] = 'Iragazkia bakarrik aplikatuko da jatorrizko testua aukeratutako formatuetako batean txertatu bada.';

@@ -68,6 +68,7 @@ $string['requesttype'] = '类型';
 $string['requesttypedelete'] = '删除所有我的个人数据';
 $string['requesttypeexport'] = '导出所有我的个人数据';
 $string['requesttype_help'] = '选择一个您联系该网页数据维护人员的理由';
+$string['retentionperiod'] = '保留期';
 $string['setdefaults'] = '设置默认值';
 $string['statuscancelled'] = '已取消';
 $string['statusdetail'] = '状态：';

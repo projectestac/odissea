@@ -47,7 +47,7 @@ $string['attls14'] = 'J\'essaie de montrer les faiblesses des réflexions des ge
 $string['attls14short'] = 'montrer les faiblesses';
 $string['attls15'] = 'Lors de discussions sur des sujets controversés, je tends à me mettre à la place des autres pour comprendre pourquoi ils pensent de cette façon.';
 $string['attls15short'] = 'me mettre à leur place';
-$string['attls16'] = 'Ma façon d\'analyser les choses pourrait s\'appeler les « mettre en jugement », car je prends le soin de considérer tous les aspects.';
+$string['attls16'] = 'Ma façon d\'analyser les choses pourrait s\'appeler les « mettre en jugement », car je prends le soin de considérer tous les aspects.';
 $string['attls16short'] = 'mettre en jugement';
 $string['attls17'] = 'Lors de la résolution de problèmes, je donne plus de poids à la logique et à la raison qu\'à mes propres soucis.';
 $string['attls17short'] = 'Je trouve la logique plus importante';
@@ -57,7 +57,7 @@ $string['attls19'] = 'Lorsque je rencontre des gens d\'opinions qui me semblent 
 $string['attls19short'] = 'faire l\'effort de s\'élargir l\'esprit';
 $string['attls1short'] = 'attention sur la qualité de l\'argumentation';
 $string['attls2'] = 'J\'aime jouer l\'avocat du diable - en argumentant l\'opposé de ce que quelqu\'un dit.';
-$string['attls20'] = 'Je prends du temps pour rechercher « ce qui ne vas pas ». Par exemple je cherche dans une interprétation littéraire ce qui n\'est pas suffisamment bien étayé.';
+$string['attls20'] = 'Je prends du temps pour rechercher « ce qui ne vas pas ». Par exemple je cherche dans une interprétation littéraire ce qui n\'est pas suffisamment bien étayé.';
 $string['attls20short'] = 'qu\'est-ce qui ne  va pas ?';
 $string['attls2short'] = 'jouer l\'avocat du diable';
 $string['attls3'] = 'J\'aime comprendre d\'où viennent les gens, quelles expériences les ont conduits à être comme ils sont.';
@@ -76,11 +76,11 @@ $string['attls9'] = 'Lorsque je lis un livre, je me surprends à contrer les arg
 $string['attls9short'] = 'discuter avec des auteurs';
 $string['attlsintro'] = 'Le but de cette consultation est de nous aider à évaluer votre état d\'esprit vis-à-vis de la réflexion et de l\'apprentissage.
 
-Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; seule votre opinion nous intéresse. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucun effet sur votre note finale.';
+Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; seule votre opinion nous intéresse. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucun effet sur votre note finale.';
 $string['attlsm1'] = 'État d\'esprit envers la réflexion et l\'étude';
 $string['attlsm2'] = 'Apprentissage lié';
 $string['attlsm3'] = 'Apprentissage détaché';
-$string['attlsmintro'] = 'En discussion ...';
+$string['attlsmintro'] = 'En discussion…';
 $string['attlsname'] = 'ATTLS (20 items)';
 $string['cannotfindanswer'] = 'Il n\'y a pas encore de réponse à cette consultation.';
 $string['cannotfindquestion'] = 'La question n\'existe pas';
@@ -151,7 +151,7 @@ $string['collesaintro'] = 'L\'objet de cette consultation est de nous aider à c
 
 Chacune des 24 affirmations ci-dessous vous interroge sur votre expérience dans ce cours.
 
-Il n\'y a pas de réponse « juste » ou « fausse » ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucune influence sur votre note finale.
+Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucune influence sur votre note finale.
 
 Vos réponses soigneusement réfléchies nous aideront à améliorer la façon de présenter ce cours.
 
@@ -161,7 +161,7 @@ $string['collesapintro'] = 'L\'objet de cette consultation est de nous aider à 
 
 Chacune des 24 affirmations ci-dessous vous demande de comparer votre expérience <strong>idéale</strong> (désirée) et <strong>réelle</strong> (vécue) dans ce cours.
 
-Il n\'y a pas de réponse « juste » ou « fausse » ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucune influence sur votre note finale.
+Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucune influence sur votre note finale.
 
 Vos réponses soigneusement réfléchies nous aideront à améliorer la façon de présenter ce cours.
 
@@ -179,12 +179,12 @@ $string['collesm5'] = 'Assistance des pairs';
 $string['collesm5short'] = 'Assistance des pairs';
 $string['collesm6'] = 'Interprétation';
 $string['collesm6short'] = 'Interprétation';
-$string['collesmintro'] = 'Dans ce cours en ligne ...';
+$string['collesmintro'] = 'Dans ce cours en ligne…';
 $string['collespintro'] = 'L\'objet de cette consultation est de nous aider à comprendre à quel point ce cours en ligne vous a permis d\'apprendre.
 
 Chacune des 24 affirmations ci-dessous vous interroge sur votre expérience <strong>idéale</strong> (désirée) dans ce cours.
 
-Il n\'y a pas de réponse « juste » ou « fausse » ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucune influence sur votre note finale.
+Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucune influence sur votre note finale.
 
 Vos réponses soigneusement réfléchies nous aideront à améliorer la façon de présenter ce cours.
 

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nologindescription'] = 'システムへのユーザログインを停止するための予備的なプラグインです。ユーザ宛に送信されるメールもすべて破棄されます。ユーザアカウントを「一時停止」する場合に使用することができます。';
 $string['pluginname'] = 'ログインなし';
-$string['privacy:metadata'] = 'ログインなし認証プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ログインなし認証プラグインはいかなる個人データも保存しません。';

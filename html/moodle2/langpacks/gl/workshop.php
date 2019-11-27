@@ -212,6 +212,7 @@ $string['noexamplesformready'] = 'Debe definir a forma de avaliación antes de p
 $string['nogradeyet'] = 'Aínda non hai cualificación';
 $string['nosubmissionfound'] = 'Non se atoparon entregas deste usuario';
 $string['nosubmissions'] = 'Aínda non hai entregas neste obradoiro';
+$string['nosubmissiontype'] = 'Polo menos debe estar dispoñíbel un tipo de entrega';
 $string['notassessed'] = 'Aínda sen avaliar';
 $string['nothingfound'] = 'Nada para presentar';
 $string['nothingtoreview'] = 'Non hai nada que revisar';
@@ -340,6 +341,11 @@ $string['submissionstartdatetime'] = 'Aberto para entregas desde {$a->daydatetim
 $string['submissionstartevent'] = '{$a} (comezo dos envíos)';
 $string['submissiontitle'] = 'Título';
 $string['submissiontypedisabled'] = 'Este tipo de entrega está desactivado para este obradoiro.';
+$string['submissiontypefileavailable'] = 'Ficheiro anexo<span class="accesshide"> dispoñíbel</span>';
+$string['submissiontypefilerequired'] = '<span class="accesshide">Ficheiro anexo </span>requirido';
+$string['submissiontypes'] = 'Tipos de entrega';
+$string['submissiontypetextavailable'] = 'Texto en liña<span class="accesshide"> dispoñíbel</span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide">Texto en liña </span>Requirido';
 $string['submittednotsubmitted'] = 'Entregado ({$a->submitted}) / en entregar ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Método de asignación de entregas';
 $string['subplugintype_workshopallocation_plural'] = 'Métodos de asignación de entregas';

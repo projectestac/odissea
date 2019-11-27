@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['indent'] = 'インデント';
 $string['outdent'] = 'アウトデント';
 $string['pluginname'] = 'インデント';
-$string['privacy:metadata'] = 'atto_indentプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_indentプラグインはいかなる個人データも保存しません。';

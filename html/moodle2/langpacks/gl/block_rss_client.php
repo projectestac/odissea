@@ -74,6 +74,7 @@ $string['privacy:metadata:block_rss_client:tableexplanation'] = 'A información 
 $string['privacy:metadata:block_rss_client:title'] = 'O título da fonte RSS.';
 $string['privacy:metadata:block_rss_client:url'] = 'O URL da fonte RSS.';
 $string['privacy:metadata:block_rss_client:userid'] = 'O ID do usuario que engadiu a fonte RSS.';
+$string['refreshfeedstask'] = 'Actualizar a tarefa de fontes RSS';
 $string['remotenewsfeed'] = 'Fonte de novas remota';
 $string['rss_client:addinstance'] = 'Engadir un novo bloque de fontes RSS remotas';
 $string['rss_client:createprivatefeeds'] = 'Crear fontes RSS privadas';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = 'Selbstbeurteilung hinzufügen';
 $string['allocationaddeddetail'] = 'Eine neue Beurteilung ist vorzunehmen: <strong>{$a->reviewername}</strong> beurteilt <strong>{$a->authorname}</strong>';
-$string['allocationdeallocategraded'] = 'Neuzuordnung kann nicht durchgeführt werden. <strong>{$a->reviewername}</strong>, hat bereits die Einreichung von: <strong>{$a->authorname}</strong> beurteilt.';
+$string['allocationdeallocategraded'] = 'Eine Neuzuordnung kann nicht durchgeführt werden. <strong>{$a->reviewername}</strong>, hat bereits die Einreichung von: <strong>{$a->authorname}</strong> beurteilt.';
 $string['allocationreuseddetail'] = 'Wiederverwendete Beurteilung: <strong>{$a->reviewername}</strong> wurde bei der Bewertung von <strong>{$a->authorname}</strong> behalten';
 $string['allocationsettings'] = 'Einstellungen Zuordnungen';
 $string['assessmentdeleteddetail'] = 'Zuordnung der Beurteilung aufgehoben: <strong>{$a->reviewername}</strong> ist nicht mehr Beurteiler von <strong>{$a->authorname}</strong>';

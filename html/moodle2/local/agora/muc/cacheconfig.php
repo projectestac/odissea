@@ -297,7 +297,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
     ),
     'core/coursecat' => 
     array (
-      'mode' => 1,
+      'mode' => 2,
       'invalidationevents' => 
       array (
         0 => 'changesincoursecat',

@@ -52,7 +52,7 @@ $string['choice:readresponses'] = 'Consulter les réponses';
 $string['choicesaved'] = 'Votre choix a été enregistré';
 $string['choicetext'] = 'Texte de la question';
 $string['choice:view'] = 'Consulter l\'activité sondage';
-$string['chooseaction'] = 'Choisir une action...';
+$string['chooseaction'] = 'Choisir une action…';
 $string['chooseoption'] = 'Choisir : {$a}';
 $string['closebeforeopen'] = 'La date de fermeture indiquée est antérieure à la date d\'ouverture.';
 $string['completionsubmit'] = 'Afficher comme terminé quand l\'utilisateur a rempli le sondage';
@@ -93,7 +93,7 @@ Un sondage peut être utilisé pour :
 * tester la compréhension des participants
 * faciliter une décision par les participants, en leur permettant par exemple de choisir une direction pour la suite du cours';
 $string['modulenameplural'] = 'Sondages';
-$string['moveselectedusersto'] = 'Déplacer les utilisateurs sélectionnés vers...';
+$string['moveselectedusersto'] = 'Déplacer les utilisateurs sélectionnés vers…';
 $string['multiplenotallowederror'] = 'Il n\'est pas permis de fournir plusieurs réponses à ce sondage';
 $string['mustchooseone'] = 'Vous devez sélectionner une réponse avant d\'enregistrer. L\'enregistrement n\'a pas eu lieu.';
 $string['noguestchoose'] = 'Désolé, les visiteurs anonymes ne peuvent pas participer aux sondages.';

@@ -66,7 +66,7 @@ $string['functiontakesnoargs'] = '関数 {$a} には引数は必要ありませ�
 $string['functiontakesonearg'] = '関数 {$a} には正確に1つの引数が必要です。';
 $string['functiontakesoneortwoargs'] = '関数 {$a} には1つまたは2つの引数が必要です。';
 $string['functiontakestwoargs'] = '関数 {$a} には正確に2つの引数が必要です。';
-$string['generatevalue'] = '下記の範囲で新しい値を生成する';
+$string['generatevalue'] = '以下の範囲で新しい値を生成する';
 $string['getnextnow'] = '「追加するアイテム」を仮取得する';
 $string['hexanotallowed'] = 'データセット <strong>{$a->name}</strong> では16進形式の値 $a->value は許可されません。';
 $string['illegalformulasyntax'] = '「 {$a} 」で始まる無効な計算式構文です。';
@@ -115,7 +115,7 @@ $string['pluginnameediting'] = '計算問題の編集';
 $string['pluginname_help'] = '計算問題では小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。例えば「高さ {l} 、幅 {w} の長方形の面積は?」という問題があったとして正解は {={l}*{w}} ( * は乗算を意味します) のようになります。';
 $string['pluginnamesummary'] = '計算問題は数値問題に似ていますが、小テスト受験時、設定された数値がランダムに使用されます。';
 $string['possiblehdr'] = '問題テキスト内のみのワイルドカード';
-$string['privacy:metadata'] = '計算問題タイププラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '計算問題タイププラグインはいかなる個人データも保存しません。';
 $string['questiondatasets'] = '問題データセット';
 $string['questiondatasets_help'] = '個別の問題で使用されるワイルドカードの問題データセットです。';
 $string['questionstoredname'] = '問題保存名';

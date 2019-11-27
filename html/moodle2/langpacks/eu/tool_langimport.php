@@ -49,5 +49,5 @@ $string['privacy:metadata'] = 'Hizkuntza-paketeak pluginak ez du datu pertsonali
 $string['purgestringcaches'] = 'Ezabatu hizkuntza-kateen cacheak';
 $string['selectlangs'] = 'Aukeratu desinstalatzeko hizkuntzak';
 $string['uninstall'] = 'Desinstalatu aukeratutako hizkuntza-paketea(k)';
-$string['uninstallconfirm'] = 'Hizkuntza-pakete hauek desinstalatzera zoaz: <strong>{$a}</strong>. Ziur al zaude?';
+$string['uninstallconfirm'] = 'Hizkuntza-pakete hauek desinstalatzera zoaz: <strong>{$a}</strong>. Ziur zaude?';
 $string['updatelangs'] = 'Eguneratu instalatutako hizkuntza-pakete guztiak';

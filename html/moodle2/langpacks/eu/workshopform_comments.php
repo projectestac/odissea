@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredimensions'] = 'Zuriuneak {$a}  alderdi gehiagotarako';
-$string['dimensioncommentfor'] = 'Iruzkina {$a}-(e)rako';
+$string['addmoredimensions'] = 'Gehitu {$a} zuriune irizpide gehiagorako';
+$string['dimensioncommentfor'] = '{$a}ren iruzkina';
 $string['dimensiondescription'] = 'Deskribapena';
-$string['dimensionnumber'] = '{$a} alderdia';
+$string['dimensionnumber'] = '{$a}. irizpidea';
 $string['pluginname'] = 'Iruzkinak';
 $string['privacy:metadata'] = 'Iruzkinak kalifikazio-pluginak ebaluazio-formularioaren xehetasunak baino ez ditu gordetzen. Formularioa nola osatu deneko datu pertsonalak Tailerra moduluak berak gordetzen ditu eta esportatutako ebaluazioetara txertatzen dira.';

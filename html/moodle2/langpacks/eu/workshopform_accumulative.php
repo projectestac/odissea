@@ -26,18 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['absent'] = 'Falta da';
-$string['addmoredimensions'] = 'Zuriuneak {$a} alderdi gehiagotarako';
+$string['addmoredimensions'] = 'Gehitu {$a} zuriune irizpide gehiagorako';
 $string['correct'] = 'Zuzena';
-$string['dimensioncommentfor'] = 'Iruzkina {$a}-(e)rako';
+$string['dimensioncommentfor'] = '{$a}ren iruzkina';
 $string['dimensiondescription'] = 'Deskribapena';
-$string['dimensiongradefor'] = 'Kalifikazioa {$a}-(e)rako';
+$string['dimensiongradefor'] = '{$a}ren kalifikazioa';
 $string['dimensionmaxgrade'] = 'Lor daitekeen kalifikazio onena / Erabiltzeko eskala';
-$string['dimensionnumber'] = '{$a} alderdia';
+$string['dimensionnumber'] = '{$a}. irizpidea';
 $string['dimensionweight'] = 'Pisua';
 $string['excellent'] = 'Bikain';
 $string['good'] = 'Ondo';
 $string['incorrect'] = 'Okerra';
-$string['mustchoosegrade'] = 'Kalifikazio bat aukeratu behar duzu alderdi honetarako';
+$string['mustchoosegrade'] = 'Kalifikazio bat aukeratu behar duzu irizpide honetarako';
 $string['pluginname'] = 'Metatutako kalifikazioa';
 $string['poor'] = 'Txarto';
 $string['present'] = 'Badago';

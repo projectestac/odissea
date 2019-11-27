@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_uploaded'] = 'En online text har laddats upp.';
 $string['pluginname'] = 'Online';
+$string['privacy:metadata'] = 'Modulen "Inlämningsuppgift - Online text" sparar inte personuppgifter.';

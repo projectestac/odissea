@@ -40,7 +40,7 @@ $string['displayselect_help'] = 'Ezarpen honek, URL fitxategi-mota kontuan hartu
 
 * Automatikoa - URLa erakusteko modurik onena automatikoki aukeratzea da
 * Txertatua - URLa orriaren barruan erakutsiko da, nabigazio-barraren azpitik eta URLaren deskribapenaren eta edozein blokeren ondoan
-* Zabaldu - URLa soilik erakusten da web-nabigatzailearen leihoan
+* Ireki - URLa soilik erakusten da web-nabigatzailearen leihoan
 * Pop-up-ean - URLa web-nabigatzailearen leiho berri batean erakusten da, menu eta helbide-barrarik gabe
 * Markoan - URLa marko baten barruan erakusten da, nabigazio-barraren eta URLaren deskribapenaren azpian
 * Leiho berria - URLa menuak eta helbide-barra dituen web-nabigatzailearen leiho berri batean erakusten da.';

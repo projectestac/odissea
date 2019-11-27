@@ -34,5 +34,5 @@ $string['importnotext'] = 'XMLファイル内に問題テキストが見つか�
 $string['notenoughtsubans'] = '少なくとも2問の問題および3つの答えを含む必要があるため組み合わせ問題「 {$a} 」をインポートすることができません。';
 $string['pluginname'] = 'Blackboard V6';
 $string['pluginname_help'] = 'BlackboardフォーマットではBlackboardエクスポートフォーマットで保存された問題をdatまたはzipファイルによってインポートすることができます。ZIPファイルおよびイメージのインポートがサポートされます。';
-$string['privacy:metadata'] = 'Blackbard問題フォーマットプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'Blackbard問題フォーマットプラグインはいかなる個人データも保存しません。';
 $string['unhandledpresblock'] = '未処理のプレゼンテーションブロック';

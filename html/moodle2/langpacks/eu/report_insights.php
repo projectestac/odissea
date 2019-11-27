@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calculatedvalue'] = 'Kalkulatutako balioa';
-$string['disabledmodel'] = 'Sentitzen dugu, kudeatzaileak eredu hau desgaitu du';
+$string['disabledmodel'] = 'Kudeatzaile batek eredu hau desgaitu du.';
 $string['indicator'] = 'adierazlea';
 $string['insight'] = 'Pertzepzioa';
 $string['insightprediction'] = '{$a} aurreikuspen';

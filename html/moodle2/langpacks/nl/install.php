@@ -119,6 +119,7 @@ $string['inputdatadirectory'] = 'Data map:';
 $string['inputwebadress'] = 'Web adres:';
 $string['inputwebdirectory'] = 'Moodle map:';
 $string['installation'] = 'Installatie';
+$string['invaliddbprefix'] = 'Ongeldig voorvoegsel. Het voorvoegsel mag alleen uit kleine letters en een onderstrepingsteken bestaan.';
 $string['langdownloaderror'] = 'De taal "{$a}" kon niet worden gedownload. Het installatieproces gaat verder in het Engels.';
 $string['langdownloadok'] = 'De taal "{$a}" is met succes geïnstalleerd. Het installatieproces zal in deze taal verder gaan.';
 $string['memorylimit'] = 'Geheugenlimiet';
@@ -197,7 +198,7 @@ $string['welcomep20'] = 'Je krijgt deze pagina te zien omdat je met succes het <
 $string['welcomep30'] = 'Deze uitgave van <strong>{$a->installername}</strong> bevat de software die nodig is om een omgeving te creëren waarin <strong>Moodle</strong> zal werken, namelijk:';
 $string['welcomep40'] = 'Dit pakket bevat ook <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.';
 $string['welcomep50'] = 'Het gebruik van alle programma\'s in dit pakket wordt geregeld door hun respectievelijke licenties. Het complete <strong>{$a->installername}</strong> pakket is
-<a href="http://www.opensource.org/docs/definition_plain.html">open source</a> en wordt verdeeld onder de <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a> licentie.';
+<a href="https://www.opensource.org/docs/definition_plain.html">open source</a> en wordt verdeeld onder de <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a> licentie.';
 $string['welcomep60'] = 'De volgende pagina\'s leiden je door een aantal makkelijk te volgen stappen om <strong>Moodle</strong> te installeren op je computer. Je kunt de standaardinstellingen overnemen of, optioneel, ze aanpassen aan je noden.';
 $string['welcomep70'] = 'Klik op de "volgende"-knop om verder te gaan met de installatie van <strong>Moodle</strong>';
 $string['wwwroot'] = 'Web adres';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoreanswerblanks'] = 'Zuriuneak {no} erantzun gehiagotarako';
+$string['addmoreanswerblanks'] = 'Gehitu {no} zuriune erantzun gehiagorako';
 $string['answer'] = 'Erantzuna: {$a}';
 $string['answermustbegiven'] = 'Erantzun bat eman behar duzu hau kalifikazioa edo feebacka baita.';
 $string['answerno'] = '{$a} erantzuna';

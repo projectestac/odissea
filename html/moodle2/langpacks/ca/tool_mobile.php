@@ -47,7 +47,7 @@ Visit our SIS | https://someurl.xyz | browser | en
 My grades | https://someurl.xyz/local/mygrades/index.php | embedded | en
 Mis calificaciones | https://someurl.xyz/local/mygrades/index.php | embedded | es
 </pre>
-Utilitzeu <em>inappbrowser</em> quan vulgueu obrir l\'enllaç en un navegador sense abandonar l\'app; utilitzeu <em>navegador</em> per a obrir l\'enllaç en el navegador web per defecte del dispositiu, i <em>incrustat</em> si voleu mostrar l\'enllaç incrustat en una pàgina nova a l\'app.';
+Utilitzeu <em>inappbrowser</em> quan vulgueu obrir l\'enllaç en un navegador sense abandonar l\'app; utilitzeu <em>navegador</em> per obrir l\'enllaç en el navegador web per defecte del dispositiu, i <em>incrustat</em> si voleu mostrar l\'enllaç incrustat en una pàgina nova a l\'app.';
 $string['disabledfeatures'] = 'Les característiques s\'han inhabilitat';
 $string['disabledfeatures_desc'] = 'Trieu aquí les característiques que voleu inhabilitar a l\'app Mobile per al vostre lloc. Fixeu-vos que algunes característiques enumerades aquí podrien estar ja inhabilitades a través d\'altres paràmetres del lloc. Haureu de tancar la sessió i iniciar-la una altra vegada a l\'app per a veure els canvis.';
 $string['downloadcourse'] = 'Descarrega el curs';

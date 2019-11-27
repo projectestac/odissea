@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'Gehitu irizpidea';
-$string['alwaysshowdefinition'] = 'Baimendu erabiltzaileei moduluan erabilitako errubrika aurreikusten (bestela, errubrika kalifikatu ondoren baino ez da ikusiko).';
-$string['backtoediting'] = 'Itzuli ediziora';
-$string['confirmdeletecriterion'] = 'Ziur al zaude irizpidea ezabatu nahi duzula?';
-$string['confirmdeletelevel'] = 'Ziur al zaude maila hau ezabatu nahi duzula?';
-$string['criterion'] = '{$a} irizpidea';
+$string['alwaysshowdefinition'] = 'Baimendu ikasleei erabilitako errubrika aurreikusten (bestela, errubrika kalifikatu ondoren baino ez da ikusiko).';
+$string['backtoediting'] = 'Itzuli editatzera';
+$string['confirmdeletecriterion'] = 'Ziur zaude irizpidea ezabatu nahi duzula?';
+$string['confirmdeletelevel'] = 'Ziur zaude maila hau ezabatu nahi duzula?';
+$string['criterion'] = '{$a}. irizpidea';
 $string['criterionaddlevel'] = 'Gehitu maila';
 $string['criteriondelete'] = 'Ezabatu irizpidea';
 $string['criterionduplicate'] = 'Bikoiztu irizpidea';
@@ -54,8 +54,8 @@ $string['leveldefinition'] = '{$a} mailaren definizioa';
 $string['leveldelete'] = 'Ezabatu {$a} maila';
 $string['levelempty'] = 'Egin klik maila editatzeko';
 $string['levelsgroup'] = 'Maila-taldeak';
-$string['lockzeropoints'] = 'Kalkulatu kalifikazioa errubrikan oinarrituta gutxieneko kalifikazioa zero izanda';
-$string['lockzeropoints_help'] = 'Ezarpen hau soilik aplikatzen da irizpide guztien gutxienezko puntuazioen batura zero baino handiagoa bada. Markatuz gero, errubrikan lor daitekeen gutxieneko puntuazioa zero baino handiagoa izango da. Markatu gabe utziz gero, errubrikaren gutxieneko puntuazioa aktibitatearen gutxieneko puntuazioa izango da (zero eskala bat erabiltzen ez bada).';
+$string['lockzeropoints'] = 'Kalkulatu kalifikazioa errubrikaren gutxieneko puntuazioa izateko gutxieneko kalifikazioa';
+$string['lockzeropoints_help'] = 'Ezarpen hau soilik aplikatzen da errubrikaren irizpide guztien gutxienezko puntuazioen batura 0 baino handiagoa bada. Markatuz gero, lor daitekeen gutxieneko kalifikazioa errubrikaren irizpide guztien gutxienezko puntuazioa izango da. Markatu gabe utziz gero, errubrikaren gutxieneko puntuazioa aktibitatearen gutxieneko puntuazioa izateko egokituko da (0 izango da eskala bat erabiltzen ez bada).';
 $string['name'] = 'Izena';
 $string['needregrademessage'] = 'Errubrikaren definizioa aldatu da ikasle hau kalifikatu ondoren. Ikasleak ezin du ikusi errubrika hau egiaztatu eta kalifikazioa eguneratu arte.';
 $string['pluginname'] = 'Errubrika';
@@ -72,11 +72,11 @@ $string['regradeoption1'] = 'Markatu berriz kalifikatzeko';
 $string['restoredfromdraft'] = 'OHARRA: pertsona hau kalifikatzeko azken saiakera ez da ondo gorde, beraz, zirriborro-kalifikazioak berreskuratu dira. Aldaketa hauek bertan behera utzi nahi badituzu, erabili azpiko \'Utzi\' botoia.';
 $string['rubric'] = 'Errubrika';
 $string['rubricmapping'] = 'Puntuazioetatik kalifikazioetara lotura egiteko arauak';
-$string['rubricmappingexplained'] = 'Errubrika honentzako gutxieneko puntuazioa  <b>{$a->minscore} puntu</b> da. Jardueraren gutxieneko kalifikaziora bihurtuko da (eskalarik erabiltzen ez bada, zero izango da). Gehienezko puntuazioa <b>{$a->maxscore} puntu</b> da, eta gehienezko kalifikaziora bihurtuko da. Erdiko puntuazioak era berean eraldatuko dira.
+$string['rubricmappingexplained'] = 'Errubrika honentzako gutxieneko puntuazioa  <b>{$a->minscore} puntu</b> da. Jardueraren gutxieneko kalifikaziora bihurtuko da (eskalarik erabiltzen ez bada, 0 izango da). Gehienezko puntuazioa <b>{$a->maxscore} puntu</b> da, eta gehienezko kalifikaziora bihurtuko da. Erdiko puntuazioak era berean eraldatuko dira.
 
 Eskala bat erabiltzen bada kalifikazio baten ordez, puntuazioa bihurtuko da eskalaren elementuetako batean, jarraian doazen zenbaki osoak bailiran.
 
-Kalifikazio-kalkulu hau aldatu daiteke formularioa editatu eta \'Kalkulatu kalifikazioa errubrikan oinarrituta gutxieneko kalifikazioa zero izanda\' aukera markatuta.';
+Kalifikazio-kalkulu hau aldatu daiteke formularioa editatu eta \'Kalkulatu kalifikazioa errubrikaren gutxieneko puntuazioa izateko gutxieneko kalifikazioa\' aukera markatuta.';
 $string['rubricnotcompleted'] = 'Mesedez, aukeratu zerbait irizpide bakoitzerako';
 $string['rubricoptions'] = 'Errubrikaren aukerak';
 $string['rubricstatus'] = 'Oraingo errubrikaren egoera';
@@ -85,13 +85,13 @@ $string['saverubric'] = 'Gorde errubrika eta utzi erabiltzeko prest';
 $string['saverubricdraft'] = 'Gorde zirriborro gisa';
 $string['scoreinputforlevel'] = 'Puntu-sarrera {$a} mailarentzat';
 $string['scorepostfix'] = '{$a} puntu';
-$string['showdescriptionstudent'] = 'Erakutsi errubrikaren deskribapena ebaluatutako erabiltzaileei';
+$string['showdescriptionstudent'] = 'Erakutsi errubrikaren deskribapena ikasleei';
 $string['showdescriptionteacher'] = 'Erakutsi errubrikaren deskribapena ebaluatu bitartean';
-$string['showremarksstudent'] = 'Erakutsi iruzkinak ebaluatutako erabiltzaileei';
-$string['showscorestudent'] = 'Erakutsi maila bakoitzaren puntuak ebaluatutako erabiltzaileei';
+$string['showremarksstudent'] = 'Erakutsi iruzkinak ikasleei';
+$string['showscorestudent'] = 'Erakutsi maila bakoitzaren puntuak ikasleei';
 $string['showscoreteacher'] = 'Erakutsi maila bakoitzeko puntuak ebaluatu bitartean';
 $string['sortlevelsasc'] = 'Mailentzako sailkatze-ordena:';
 $string['sortlevelsasc0'] = 'Goitik behera puntu-kopuruaren arabera';
 $string['sortlevelsasc1'] = 'Behetik gora puntu-kopuruaren arabera';
-$string['zerolevelsabsent'] = 'Kontuz: errubrikaren gutxieneko puntuazio posiblea ez da zero; honek aktibitatean ezusteko puntuazioak eragin ditzake. Hau ekiditeko, irizpide bakoitzak 0 puntuko maila bat izan behar du.<br>
+$string['zerolevelsabsent'] = 'Kontuz: errubrikaren gutxieneko puntuazioa ez da 0; honek aktibitatean ezusteko puntuazioak eragin ditzake. Hau ekiditeko, irizpide bakoitzaren lehen mailak 0 puntu izan behar du.<br>
 Ohar hau alde batera utz dezakezu kalifikatzeko eskala bat erabiltzen baduzu, eta errubrikaren gutxieneko mailak eskalaren gutxieneko mailekin bat badatoz.';

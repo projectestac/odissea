@@ -192,7 +192,7 @@ $string['coursegroupunknown'] = 'Es wurde kein Kurs für die Gruppe {$a} festgel
 $string['courseidnotfound'] = 'Kurs-ID existiert nicht';
 $string['courseidnumbertaken'] = 'ID-Nummer wird bereits für anderen Kurs ({$a}) genutzt';
 $string['coursemisconf'] = 'Kurs ist falsch konfiguriert.';
-$string['courserequestdisabled'] = 'Die Kursanfragen wurden vom Administrator deaktiviert.';
+$string['courserequestdisabled'] = 'Die Kursanträge wurden vom Administrator deaktiviert.';
 $string['csvcolumnduplicates'] = 'Doppelte Spalten gefunden';
 $string['csvemptyfile'] = 'Die CSV-Datei ist leer';
 $string['csvfewcolumns'] = 'Nicht genügend Spalten vorhanden - bitte prüfen Sie die Trennzeicheneinstellung';
@@ -386,7 +386,7 @@ $string['loginasonecourse'] = 'Sie können sich in diesen Kurs nicht eintragen.<
 $string['maxareabytes'] = 'Diese Datei ist zu groß';
 $string['maxbytesfile'] = 'Die Datei {$a->file} ist zu groß. Die maximale Größe zum Hochladen ist {$a->size}.';
 $string['messagingdisable'] = 'Die Mitteilungen sind für diese Website deaktiviert.';
-$string['mimetexisnotexist'] = 'Ihr System ist nicht richtig konfiguriert, um mimeTeX ausführen zu können. Sie müssen den C-Quellcode unter <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a> herunterladen, kompilieren und dann das ausführbare Programm in das Verzeichnis moodle/filter/tex/ legen.';
+$string['mimetexisnotexist'] = 'Ihr System ist nicht konfiguriert, um mimeTeX ausführen zu können. Sie müssen den C-Quellcode unter <a href="https://www.forkosh.com/mimetex.zip"> https://www.forkosh.com/mimetex.zip</a> herunterladen, kompilieren und das ausführbare Programm in das Verzeichnis moodle/filter/tex/ legen.';
 $string['mimetexnotexecutable'] = 'Das spezifische Programm mimetex ist nicht ausführbar!';
 $string['missingfield'] = 'Feld "{$a}" fehlt';
 $string['missingkeyinsql'] = 'Fehler: fehlender Parameter "{$a}" in der Abfrage';

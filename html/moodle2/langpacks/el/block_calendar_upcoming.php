@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['calendar_upcoming:addinstance'] = 'Προσθήκη νέου μπλοκ επικείμενα γεγονότα';
 $string['calendar_upcoming:myaddinstance'] = 'Προσθήκη νέου μπλοκ «Επικείμενα γεγονότα» στο Ταμπλό';
 $string['gotocalendar'] = 'Μετάβαση στο ημερολόγιο...';
-$string['pluginname'] = 'Επικείμενα  γεγονότα';
+$string['pluginname'] = 'Επικείμενα γεγονότα';
 $string['privacy:metadata'] = 'Το μπλοκ επερχόμενων γεγονότων εμφανίζει μόνο τα υπάρχοντα δεδομένα ημερολογίου';

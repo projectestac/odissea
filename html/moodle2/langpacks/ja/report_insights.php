@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calculatedvalue'] = '計算値';
-$string['disabledmodel'] = '申し訳ございません、このモデルは管理者によって無効にされています。';
+$string['disabledmodel'] = 'このモデルは管理者によって無効にされています。';
 $string['indicator'] = '指標';
 $string['insight'] = '洞察';
 $string['insightprediction'] = '{$a} 予測';
@@ -44,7 +44,7 @@ $string['pluginname'] = '洞察';
 $string['prediction'] = '予測';
 $string['predictioncalculations'] = '指標計算';
 $string['predictiondetails'] = '予測詳細';
-$string['privacy:metadata'] = '洞察プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '洞察プラグインはいかなる個人データも保存しません。';
 $string['selectotherinsights'] = '他の洞察を選択する ...';
 $string['timecreated'] = '予測時間';
 $string['timerange'] = '期間';

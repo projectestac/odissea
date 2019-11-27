@@ -37,26 +37,26 @@ $string['currentstatusreset'] = 'Berrabiarazi';
 $string['currentstatusreset_help'] = 'Aukera hau markaturik formulario gordez gero oraingo egoera berrabiaraziko da. Aurreko exekuzioaren inguruko informazio guztia ezabatuko da esleipena berriz exekutatzeko (goian gaituz gero).';
 $string['currentstatusresetinfo'] = 'Markatu eta formularioa gorde laukitxoa exekuzioaren emaitza berrabiarazteko.';
 $string['currentstatusresult'] = 'Duela gutxiko exekuzioaren emaitza';
-$string['enablescheduled'] = 'Gaitu esleipen automatikoa.';
-$string['enablescheduledinfo'] = 'Bidalketak automatikoki esleitu bidalketa-aldia amaitzean';
-$string['pluginname'] = 'Esleipen automatikoa';
-$string['privacy:metadata'] = 'Esleipen automatikoa pluginak ez du datu pertsonalik biltzen. Ebaluatuko duen pertsonaren datuak Tailerra moduluak berak gordetzen du eta horiek dira ebaluaziorako xehetasunak esportatzeko oinarria.';
+$string['enablescheduled'] = 'Gaitu esleipen programatua.';
+$string['enablescheduledinfo'] = 'Programatu bidalketen esleipena bidalketa-fasea amaitzean automatikoki egiteko';
+$string['pluginname'] = 'Esleipen programatua';
+$string['privacy:metadata'] = 'Esleipen programatua pluginak ez du datu pertsonalik biltzen. Ebaluatuko duen pertsonaren datuak Tailerra moduluak berak gordetzen du eta horiek dira ebaluaziorako xehetasunak esportatzeko oinarria.';
 $string['randomallocationsettings'] = 'Esleipenaren ezarpenak';
-$string['randomallocationsettings_help'] = 'Hemen ausazko esleipenerako parametroak aukeratzen dira. Esleipen automatikorako gehigarriak parametro hauek oraingo bidalketen esleipenerako erabiliko ditu.';
-$string['resultdisabled'] = 'Esleipen automatikoa desgaituta';
-$string['resultenabled'] = 'Esleipen automatikoa gaituta';
+$string['randomallocationsettings_help'] = 'Hemen ausazko esleipenerako parametroak aukeratzen dira. Ausazko esleipenerako gehigarriak parametro hauek oraingo bidalketen esleipenerako erabiliko ditu.';
+$string['resultdisabled'] = 'Esleipen programatua desgaituta';
+$string['resultenabled'] = 'Esleipen programatua gaituta';
 $string['resultexecuted'] = 'Ondo';
-$string['resultfailed'] = 'Ezin dira bidalketak automatikoki esleitu';
-$string['resultfailedconfig'] = 'Esleipen automatikoa gaizki konfiguraturik dago';
-$string['resultfaileddeadline'] = 'Tailerrak ez du bidalketetarako azken eguna zehazturik.';
-$string['resultfailedphase'] = 'Tailerra ez dago bidalketa-aldian';
+$string['resultfailed'] = 'Ezin izan dira bidalketak automatikoki esleitu';
+$string['resultfailedconfig'] = 'Esleipen programatua gaizki konfiguraturik dago';
+$string['resultfaileddeadline'] = 'Tailerrak ez du bidalketetarako amaiera-datarik zehaztuta.';
+$string['resultfailedphase'] = 'Tailerra ez dago bidalketa-fasean';
 $string['resultvoid'] = 'Ez dago esleitutako bidalketarik';
-$string['resultvoiddeadline'] = 'Ez da bidalketa-aldiko epea oraindik amaitu.';
+$string['resultvoiddeadline'] = 'Ez da bidalketa-faseko epea oraindik amaitu.';
 $string['resultvoidexecuted'] = 'Esleipena exekutatu da jada.';
-$string['scheduledallocationsettings'] = 'Esleipen automatikoaren ezarpenak';
-$string['scheduledallocationsettings_help'] = 'Esleipen automatikoa gaituz gero honek bidalketa-aldia bukatzean bidalketak ebaluatzeko automatikoki esleituko ditu. Aldiaren bukaera tailerraren ezarpenen "Bidalketen bukaera" atalean zehaztu daiteke.
+$string['scheduledallocationsettings'] = 'Esleipen programatuaren ezarpenak';
+$string['scheduledallocationsettings_help'] = 'Esleipen programatua gaituz gero honek bidalketa-fasea amaitzean bidalketak ebaluatzeko automatikoki esleituko ditu. Fasearen amaiera tailerraren ezarpenen "Bidalketetarako amaiera-data" atalean zehaztu daiteke.
 
-Ausazko esleipena formulario honetan zehaztutako parametroen arabera exekutatzen da. Honek esan nahi du, beraz, esleipen automatikoak irakasleak bidalketa aldia bukatzean ausazko esleipena beheko ezarpenak erabiliz egingo balu bezala funtzionatzen duela.
+Barrutik, ausazko esleipena formulario honetan zehaztutako parametroak erabilita exekutatzen da. Honek esan nahi du, beraz, esleipen programatuak irakasleak bidalketa fasea amaitzean ausazko esleipena beheko ezarpenak erabiliz egingo balu bezala funtzionatzen duela.
 
-Kontuan izan esleipen automatikoa *ez* dela exekutatzen irakasleak eskuz tailerraren aldia bidalketak egiteko epea amaitu baino lehen ebaluazio-aldira aldatzen badu. Kasu horretan irakasleak esleipena bere kabuz egin beharko du. Esleipen automatikoa bereziki erabilgarria da aldia automatikoki aldatzeko funtzioarekin batera erabiltzen denean.';
-$string['setup'] = 'Prestatu esleipen automatikoa';
+Kontuan izan esleipen programatua *ez* dela exekutatzen irakasleak eskuz tailerraren fasea bidalketetarako amaiera-data baino lehen ebaluazio-fasera aldatzen badu. Kasu horretan irakasleak esleipena bere kabuz egin beharko du. Esleipen programatua bereziki erabilgarria da fasea automatikoki aldatzeko funtzioarekin batera erabiltzen denean.';
+$string['setup'] = 'Prestatu esleipen programatua';

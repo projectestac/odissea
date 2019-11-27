@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = '複数選択メニューフィールド';
 $string['pluginname'] = 'マルチメニュー';
-$string['privacy:metadata'] = '多肢選択メニューフィールドコンポーネントはどのような個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['privacy:metadata'] = '多肢選択メニューフィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodlewrap:desc'] = '折り返し';
 $string['pluginname'] = '折り返し';
-$string['privacy:metadata'] = 'TinyMCE折り返しプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'TinyMCE折り返しプラグインはいかなる個人データも保存しません。';

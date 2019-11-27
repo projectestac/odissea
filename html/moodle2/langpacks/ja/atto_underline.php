@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '下線';
-$string['privacy:metadata'] = 'atto_underlineプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_underlineプラグインはいかなる個人データも保存しません。';

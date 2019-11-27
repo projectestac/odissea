@@ -51,7 +51,7 @@ Ce message pour vous informer que votre inscription au cours « {$a->course} �
 
 Si vous avez besoin d\'aide, veuillez contacter {$a->enroller}.';
 $string['expirymessageenrolledsubject'] = 'Notification d\'échéance d\'inscription';
-$string['expirymessageenrollerbody'] = 'Des inscriptions au cours « {$a->course} » arriveront à échéance durant les {$a->threshold} prochains pour les utilisateurs suivants :
+$string['expirymessageenrollerbody'] = 'Des inscriptions au cours « {$a->course} » arriveront à échéance durant les {$a->threshold} prochains pour les utilisateurs suivants :
 
 {$a->users}
 

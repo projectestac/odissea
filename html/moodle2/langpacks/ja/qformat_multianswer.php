@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '穴埋め問題 (Cloze)';
 $string['pluginname_help'] = '穴埋め問題 (Cloze) フォーマットでは多肢選択問題および記述問題のような問題を記述したテキストをインポートすることができます。';
-$string['privacy:metadata'] = '埋め込み問題プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '埋め込み問題プラグインはいかなる個人データも保存しません。';

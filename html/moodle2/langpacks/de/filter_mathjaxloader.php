@@ -33,11 +33,11 @@ $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'MathJax URL';
 $string['httpsurl_help'] = 'Vollständige URL zur MathJax Bibliothek';
 $string['localinstall'] = 'Lokale MathJax Installation';
-$string['localinstall_help'] = 'Die voreingestellte MathJax Konfiguration verwendet die CDN Version von MathJax. MathJax kann jedoch auch lokal installiert werden.
+$string['localinstall_help'] = 'Die standardmäßige MathJax-Konfiguration verwendet die CDN Version von MathJax. MathJax kann jedoch auch lokal installiert werden.
 
 Sinnvoll ist dies, um Bandbreite einzusparen oder um Proxy bedingte Beschränkungen zu umgehen.
 
-Um MathJax lokal zu installieren, laden Sie die Bibliothek von http://www.mathjax.org herunter und installieren Sie sie auf einem Webserver. Ändern Sie danach die Filter-Einstellungen httpurl und httpsurl, damit diese auf Ihre lokale Version verweisen.';
+Um MathJax lokal zu installieren, laden Sie die Bibliothek von https://www.mathjax.org herunter und installieren Sie sie auf einem Webserver. Ändern Sie danach die Filter-Einstellungen httpurl und/oder httpsurl, um auf die lokale Version zu verweisen.';
 $string['mathjaxsettings'] = 'MathJax Konfiguration';
 $string['mathjaxsettings_desc'] = 'Die voreingestellte MathJax Konfiguration ist in den meisten Fällen passend, aber MathJax ist in hohem Maße konfigurierbar. Alle Standardoptionen können hier hinzugefügt werden.';
 $string['privacy:metadata'] = 'Das MathJax-Plugin speichert keine personenbezogenen Daten.';

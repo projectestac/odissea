@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aria:courseimage'] = 'Imaxe do curso';
+$string['aria:coursename'] = 'Nome do curso';
+$string['aria:courseshortname'] = 'Nome curto do curso';
+$string['aria:favourite'] = 'O curso está destacado';
+$string['favourite'] = 'Curso destacado';
 $string['privacy:completionpath'] = 'Completado do curso';
+$string['privacy:favouritespath'] = 'Información destacada do curso';
 $string['privacy:metadata:completionsummary'] = 'O curso contén información de completado sobre o usuario.';
+$string['privacy:metadata:favouritessummary'] = 'O curso contén información relativa ao curso destacado polo usuario.';
 $string['privacy:perpage'] = 'Número de cursos a amosar por páxina.';

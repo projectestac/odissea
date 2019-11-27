@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['numberdiscussions'] = 'ディスカッション数';
 $string['numberdiscussions_help'] = 'この設定では何件のディスカッションを表示するか指定します。';
 $string['pluginname'] = 'ソーシャルフォーマット';
-$string['privacy:metadata'] = 'ソーシャルフォーマットプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ソーシャルフォーマットプラグインはいかなる個人データも保存しません。';
 $string['sectionname'] = 'セクション';

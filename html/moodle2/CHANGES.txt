@@ -3,6 +3,21 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 19.12.16
+---------------------------------------------------------------------------------------
+- Upgraded Moodle from v3.6.6 to v3.6.7
+- Updated language packs
+- MUC: Changed cache store for coursecat. Moved to default session
+- xtec-mailer: Fixed compatibility with PHP 7.3
+- Added atto plugin Cloze
+- Upgraded all wiris plugins
+- Upgraded module hot potatoes
+- Upgraded module choicegroup
+- Upgraded module H5P to version 1.20.1
+- Upgraded question format hot potatoes
+- Upgraded question type "ordering"
+
+
 Changes 19.09.25
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle from v3.4.8 to v3.6.6
@@ -72,7 +87,7 @@ Changes 18.08.13
 - Core: Hide some of the new settings for non xtecamdins and remove the obsoletes
 - Marsupial: Compatibility update for php7 and Moodle 3.4
 - Remove hub configuration
-- Add GLPR support
+- Add GDPR support
 
 
 Changes 18.04.20

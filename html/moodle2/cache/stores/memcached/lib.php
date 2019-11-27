@@ -149,14 +149,6 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
             $configuration['servers'] = array($configuration['servers']);
         }
 
-        //XTEC ************ AFEGIT - To have MUC configured. To have different prefixes, memcache_prefix must be in settings.php
-        //18.09.07 @svallde2
-        global $CFG;
-        if (isset($CFG->memcache_servers)) {
-            $configuration['servers'] = explode("\n", $CFG->memcache_servers);
-        }
-        //************ FI
-
         $compression = array_key_exists('compression', $configuration) ? (bool)$configuration['compression'] : true;
         if (array_key_exists('serialiser', $configuration)) {
             $serialiser = (int)$configuration['serialiser'];
@@ -164,13 +156,6 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
             $serialiser = Memcached::SERIALIZER_PHP;
         }
         $prefix = (!empty($configuration['prefix'])) ? (string)$configuration['prefix'] : crc32($name);
-
-        //XTEC ************ AFEGIT - To have MUC configured. To have different prefixes, memcache_prefix must be in settings.php
-        // 18.09.07 @svallde2
-        if (isset($CFG->memcache_prefix)) {
-            $prefix = $CFG->memcache_prefix;
-        }
-        //************ FI
 
         $hashmethod = (array_key_exists('hash', $configuration)) ? (int)$configuration['hash'] : Memcached::HASH_DEFAULT;
         $bufferwrites = array_key_exists('bufferwrites', $configuration) ? (bool)$configuration['bufferwrites'] : false;

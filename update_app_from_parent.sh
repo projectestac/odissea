@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#Exemple invocació: ./prepare_package.sh
+# Exemple invocació: ./update_app_from_parent.sh
 
-version=14.11.27
+version=19.11.27
 
 git clone https://github.com/projectestac/agora_moodle2.git moodle_new
 
@@ -13,7 +13,6 @@ read -p "Continuar? <prem una tecla> " -n 1 -r
 echo    # (optional) move to a new line
 find . -name '\.git*' -exec rm -rf {} \;
 popd
-
 
 
 mv html/moodle2 html/moodle2_old
@@ -38,10 +37,10 @@ cp -Rp html/moodle2_old/auth/odissea html/moodle2/auth/odissea
 cp -Rp html/moodle2_old/blocks/configurable_reports html/moodle2/blocks/configurable_reports
 cp -Rp html/moodle2_old/admin/tool/odisseagtafsync html/moodle2/admin/tool/odisseagtafsync
 
-rm html/moodle2/index_iw.php
 rm html/moodle2/site-config.php
 rm html/moodle2/config-mysql.php
 rm html/moodle2/config-oracle.php
+rm html/moodle2/config-pgsql.php
 rm html/moodle2/theme/xtec2/pix/logo_main.gif
 
 rm -Rf html/moodle2_old

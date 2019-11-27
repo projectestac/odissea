@@ -34,7 +34,7 @@ $string['autologinkeygenerationlockout'] = 'A geração de chaves de autenticaç
 $string['autologinnotallowedtoadmins'] = 'A autenticação automática não é permitida aos administradores do site.';
 $string['cachedef_plugininfo'] = 'Armazena a lista de módulos com suplementos móveis';
 $string['clickheretolaunchtheapp'] = 'Clique aqui se a aplicação não abrir automaticamente.';
-$string['configmobilecssurl'] = 'Um ficheiro CSS para personalizar a interface da sua aplicação móvel.';
+$string['configmobilecssurl'] = 'Um ficheiro CSS para personalizar a interface da sua Aplicação móvel.';
 $string['customlangstrings'] = 'Strings de idioma personalizadas';
 $string['customlangstrings_desc'] = 'Palavras e frases mostradas na aplicação podem ser personalizadas aqui. Digite cada string de idioma personalizado numa nova linha no formato: string identifier, custom language string e language code, separados por uma barra vertical. Por exemplo:
 <pre>
@@ -54,8 +54,8 @@ My grades | https://someurl.xyz/local/mygrades/index.php | embedded | en
 As minhas avaliações | https://someurl.xyz/local/mygrades/index.php | incorporado | pt
 </pre>';
 $string['disabledfeatures'] = 'Desativar funcionalidades';
-$string['disabledfeatures_desc'] = 'Selecione as funcionalidades do seu site que pretende desativar na aplicação móvel. Tenha em atenção que algumas funcionalidades aqui listadas podem já estar desativadas por meio de outras configurações do site. Terá de terminar sessão e voltar a iniciar sessão na aplicação para ver as alterações.';
-$string['displayerrorswarning'] = 'Mostrar mensagens de depuração (debugdisplay) está ativado. Deve ser desativado.';
+$string['disabledfeatures_desc'] = 'Selecione as funcionalidades do seu site que pretende desativar na Aplicação móvel. Tenha em atenção que algumas funcionalidades aqui listadas podem já estar desativadas por meio de outras configurações do site. Terá de terminar sessão e voltar a iniciar sessão na aplicação para ver as alterações.';
+$string['displayerrorswarning'] = 'Mostrar mensagens de depuração (debugdisplay) está ativado. Deve estar desativado.';
 $string['downloadcourse'] = 'Descarregar disciplina';
 $string['downloadcourses'] = 'Descarregar disciplinas';
 $string['enablesmartappbanners'] = 'Ativar App Banners';
@@ -64,7 +64,7 @@ $string['forcedurlscheme'] = 'Se pretende permitir que apenas a sua Aplicação 
 $string['forcedurlscheme_key'] = 'Esquema de URL';
 $string['forcelogout'] = 'Forçar terminar sessão';
 $string['forcelogout_desc'] = 'Se ativar esta opção, na aplicação, a opção \'Alterar site\' é substituída por \'Terminar sessão\'. Isso faz com que o utilizador fique totalmente desligado. Deverão voltar a digitar a senha na próxima vez que desejarem aceder ao site.';
-$string['getmoodleonyourmobile'] = 'Obter a aplicação móvel';
+$string['getmoodleonyourmobile'] = 'Obter a Aplicação móvel';
 $string['httpsrequired'] = 'HTTPS necessário';
 $string['insecurealgorithmwarning'] = 'Parece que o certificado HTTPS usa um algoritmo inseguro para assinar (SHA-1). Tente atualizar o certificado.';
 $string['invalidcertificatechainwarning'] = 'Parece que a cadeia de certificados não é válida.';
@@ -74,14 +74,14 @@ $string['invalidprivatetoken'] = 'Token privado inválido. Token não pode estar
 $string['invaliduserquotawarning'] = 'A quota do utilizador (userquota) está definida para um número inválido. Deve ser alterada para um número válido (número inteiro) nas Configurações de segurança do site.';
 $string['iosappid'] = 'Identificador exclusivo da aplicação iOS';
 $string['iosappid_desc'] = 'Esta configuração pode ser deixada com o valor predefinido a não que tenha uma aplicação iOS personalizada.';
-$string['loginintheapp'] = 'Através da aplicação móvel';
+$string['loginintheapp'] = 'Através da Aplicação móvel';
 $string['logininthebrowser'] = 'Através de uma janela do navegador (para módulos SSO)';
 $string['loginintheembeddedbrowser'] = 'Através de navegador incorporado (para módulos SSO)';
 $string['mainmenu'] = 'Menu principal';
 $string['mobileapp'] = 'Aplicação móvel';
 $string['mobileappconnected'] = 'Aplicação móvel ligada';
 $string['mobileappearance'] = 'Aparência em dispositivos móveis';
-$string['mobileappenabled'] = 'Pode aceder a este site com a aplicação móvel.<br /><a href="{$a}">Descarregue a Aplicação móvel Moodle</a>';
+$string['mobileappenabled'] = 'Pode aceder a este site com a Aplicação móvel.<br /><a href="{$a}">Descarregue a Aplicação móvel Moodle</a>';
 $string['mobileauthentication'] = 'Autenticação em dispositivos móveis';
 $string['mobilecssurl'] = 'CSS';
 $string['mobilefeatures'] = 'Funcionalidades da aplicacão móvel';
@@ -93,7 +93,7 @@ $string['pluginnotenabledorconfigured'] = 'Módulo não ativo ou não configurad
 $string['privacy:metadata:core_userkey'] = 'Chaves de utilizador para criar chave de autenticação automática para o utilizador atual.';
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'A data do último pedido da chave de autenticação automática. Entre cada pedido, são necessários 6 minutos.';
 $string['remoteaddons'] = 'Suplementos remotos';
-$string['selfsignedoruntrustedcertificatewarning'] = 'Parece que o certificado HTTPS está auto-assinado ou não é confiável. A aplicação móvel só funcionará com sites confiáveis.';
+$string['selfsignedoruntrustedcertificatewarning'] = 'Parece que o certificado HTTPS está auto-assinado ou não é confiável. A Aplicação móvel só funcionará com sites confiáveis.';
 $string['setuplink'] = 'Página de transferência da aplicação';
 $string['setuplink_desc'] = 'URL da página com hiperligações para transferência da Aplicação móvel Moodle da App Store e do Google Play.';
 $string['smartappbanners'] = 'Banners da aplicação';

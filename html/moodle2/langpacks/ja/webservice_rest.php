@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'RESTプロトコル';
-$string['privacy:metadata'] = 'RESTプロトコルプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'RESTプロトコルプラグインはいかなる個人データも保存しません。';
 $string['rest:use'] = 'RESTプロトコルを使用する';

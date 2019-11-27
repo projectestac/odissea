@@ -34,9 +34,9 @@ $string['addnewattempt_help'] = 'Isto irá criar uma nova submissão em branco.'
 $string['addnewgroupoverride'] = 'Adicionar exceção para grupo';
 $string['addnewuseroverride'] = 'Adicionar exceção para utilizador';
 $string['addsubmission'] = 'Enviar trabalho';
-$string['addsubmission_help'] = 'Ainda não efetuou a submissão';
+$string['addsubmission_help'] = 'Ainda não efetuou a submissão.';
 $string['allocatedmarker'] = 'Avaliador atribuído';
-$string['allocatedmarker_help'] = 'Avaliador atribuído a esta submissão';
+$string['allocatedmarker_help'] = 'Avaliador atribuído a esta submissão.';
 $string['allowsubmissions'] = 'Permitir que o utilizador continue a efetuar submissões neste trabalho.';
 $string['allowsubmissionsanddescriptionfromdatesummary'] = 'O enunciado do trabalho apenas estará disponível a partir de <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'Aceitar trabalhos a partir de';
@@ -44,7 +44,7 @@ $string['allowsubmissionsfromdate_help'] = 'Se ativar esta opção, os alunos n�
 $string['allowsubmissionsfromdatesummary'] = 'Pode submeter o trabalho a partir de <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Permitir atualizar o trabalho (desbloquear)';
 $string['alwaysshowdescription'] = 'Mostrar sempre a descrição';
-$string['alwaysshowdescription_help'] = 'Se selecionar \'Não\', os alunos só podem ver a descrição do trabalho após a data "Aceitar trabalhos a partir de".';
+$string['alwaysshowdescription_help'] = 'Se desativar esta opção, os alunos só poderão ver a descrição do trabalho após a data "Aceitar trabalhos a partir de".';
 $string['applytoteam'] = 'Atribuir notas e comentários a todo o grupo';
 $string['assign:addinstance'] = 'Adicionar novo trabalho';
 $string['assign:editothersubmission'] = 'Editar submissão do aluno';
@@ -85,7 +85,11 @@ $string['attemptheading'] = 'Tentativa {$a->attemptnumber}: {$a->submissionsumma
 $string['attempthistory'] = 'Tentativas anteriores';
 $string['attemptnumber'] = 'Número da tentativa';
 $string['attemptreopenmethod'] = 'Tentativas reabertas';
-$string['attemptreopenmethod_help'] = 'Determina como as tentativas de submissão do aluno são reabertas. As opções disponíveis são: <ul><li>Nunca - A submissão do aluno não pode ser reaberta.</li><li>Manualmente - A submissão do aluno pode ser reaberta pelo professor.</li><li>Automaticamente até obter aproveitamento - A submissão do aluno pode ser reaberta automaticamente até que obtenha a nota mínima definida na Pauta (secção \'Configurar a Pauta\') para este trabalho.</li></ul>';
+$string['attemptreopenmethod_help'] = 'Determina como as tentativas de submissão do aluno são reabertas. As opções disponíveis são:
+
+* Nunca - A submissão do aluno não pode ser reaberta.
+* Manualmente - A submissão do aluno pode ser reaberta pelo professor.
+* Automaticamente até obter aproveitamento - A submissão pode ser reaberta automaticamente até que o aluno obtenha a nota mínima definida na Pauta para este trabalho.';
 $string['attemptreopenmethod_manual'] = 'Manualmente';
 $string['attemptreopenmethod_none'] = 'Nunca';
 $string['attemptreopenmethod_untilpass'] = 'Automaticamente até obter aproveitamento';
@@ -109,7 +113,7 @@ $string['batchsetmarkingworkflowstateforusers'] = 'Definir processo de avaliaç�
 $string['blindmarking'] = 'Avaliação anónima';
 $string['blindmarkingenabledwarning'] = 'A \'Avaliação anónima\' está ativada nesta atividade.';
 $string['blindmarking_help'] = 'A avaliação anónima oculta a identidade dos alunos aos avaliadores. As configurações da avaliação anónima ficarão bloqueadas assim que um trabalho ou nota forem submetidos nesta atividade.';
-$string['calendardue'] = 'Termina prazo submissão de \'{$a}\'';
+$string['calendardue'] = 'Termina prazo de submissão de \'{$a}\'';
 $string['calendargradingdue'] = 'O trabalho \'{$a}\' já não pode ser avaliado';
 $string['changefilters'] = 'Alterar filtros';
 $string['changeuser'] = 'Alterar utilizador';
@@ -165,7 +169,7 @@ $string['editingstatus'] = 'Editar o estado';
 $string['editonline'] = 'Editar online';
 $string['editoverride'] = 'Editar exceção';
 $string['editsubmission'] = 'Editar submissão';
-$string['editsubmission_help'] = 'Pode fazer alterações à sua submissão';
+$string['editsubmission_help'] = 'Pode fazer alterações à sua submissão.';
 $string['editsubmissionother'] = 'Editar submissões para {$a}';
 $string['enabled'] = 'Ativo';
 $string['errornosubmissions'] = 'Não existem trabalhos submetidos para descarregar';
@@ -239,10 +243,10 @@ $string['gradelocked'] = 'Esta nota está bloqueada ou foi ajustada na Pauta.';
 $string['gradeoutof'] = 'Nota (de 0 a {$a})';
 $string['gradeoutofhelp'] = 'Avaliação';
 $string['gradeoutofhelp_help'] = 'Insira a nota do trabalho do aluno aqui. Pode incluir casas decimais.';
-$string['gradersubmissionupdatedhtml'] = '{$a->username} atualizou o trabalho em <i>\'{$a->assignment}\'  na seguinte data/hora: {$a->timeupdated}</i><br /><br />
+$string['gradersubmissionupdatedhtml'] = '{$a->username} atualizou a submissão do trabalho <i>\'{$a->assignment}\' {$a->timeupdated}</i><br /><br />
 Está <a href="{$a->url}">disponível no Moodle</a>.';
 $string['gradersubmissionupdatedsmall'] = '{$a->username} atualizou o seu trabalho em {$a->assignment}.';
-$string['gradersubmissionupdatedtext'] = '{$a->username} atualizou o seu trabalho em  \'{$a->assignment}\' na seguinte data/hora: {$a->timeupdated}
+$string['gradersubmissionupdatedtext'] = '{$a->username} atualizou a submissão do trabalho \'{$a->assignment}\'  {$a->timeupdated}
 Está disponível aqui:
 
     {$a->url}';
@@ -252,7 +256,7 @@ $string['grading'] = 'A avaliar';
 $string['gradingchangessaved'] = 'As alterações feitas à nota foram gravadas';
 $string['gradingduedate'] = 'Lembrete para terminar avaliação antes de';
 $string['gradingduedate_help'] = 'A data prevista para a conclusão das avaliações. Esta data é usada para definir a prioridade das notificações para os professores no seu painel de utilizador.';
-$string['gradingdueduedatevalidation'] = 'O lembrete não pode ser anterior à data de fecho.';
+$string['gradingdueduedatevalidation'] = 'O lembrete não pode ser anterior à data limite.';
 $string['gradingduefromdatevalidation'] = 'O lembrete de avaliar por data não pode ser anterior à data da permissão de submissões.';
 $string['gradingmethodpreview'] = 'Critérios de avaliação';
 $string['gradingoptions'] = 'Configurar tabela de trabalhos e avaliação';
@@ -298,9 +302,9 @@ $string['markingworkflowstate'] = 'Estado do processo de avaliação';
 $string['markingworkflowstate_help'] = 'Os estados do processo de avaliação poderão incluir as seguintes opções (dependendo das suas permissões de utilizador):
 
 - Não avaliado: o avaliador ainda não iniciou a avaliação;
-- Em avaliação: o avaliador iniciou o a avaliação mas esta ainda não está concluída;
-- Avaliação concluída: o avaliador terminou a avaliação mas esta ainda poderá ser sujeita a análise e/ou alterações;
-- Em validação: o professor responsável procede à validação qualitativa;
+- Em avaliação: o avaliador iniciou a avaliação mas ainda não está concluída;
+- Avaliação concluída: o avaliador terminou a avaliação mas ainda poderá ser sujeita a análise e/ou alterações;
+- Em validação: o professor responsável está a proceder à validação qualitativa;
 - Avaliação validada: o professor responsável validou a avaliação mas ainda não está disponível para os alunos;
 - Avaliação publicada: os alunos podem aceder às notas/feedback.';
 $string['markingworkflowstateinmarking'] = 'Em avaliação';
@@ -468,7 +472,7 @@ Pode ver o estado da sua submissão de trabalho:
 
 {$a->url}';
 $string['submissiondrafts'] = 'Ativar o botão “Submeter o trabalho”';
-$string['submissiondrafts_help'] = 'Se ativar esta opção, os alunos terão de clicar no botão Submeter para declarar o seu envio como sendo o trabalho final. Isto permite que os alunos possam manter o trabalho em curso no sistema até o finalizarem. Se esta opção for modificada de "Não" para "Sim" após alguns alunos já terem submetido o seu trabalho, este será considerado final.';
+$string['submissiondrafts_help'] = 'Se ativar esta opção, os alunos terão de clicar no botão Submeter para declarar o seu envio como sendo o trabalho final. Isto permite que os alunos possam manter o trabalho em curso no sistema até o finalizarem. Se esta opção for alterada de "Não" para "Sim" após algum aluno já ter submetido o seu trabalho, este será considerado como final.';
 $string['submissioneditable'] = 'Os alunos podem editar esta submissão';
 $string['submissionempty'] = 'Nenhum trabalho submetido';
 $string['submissionlog'] = 'Aluno: {$a->fullname},

@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '手動評定';
-$string['privacy:metadata'] = '手動評定問題動作プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '手動評定問題動作プラグインはいかなる個人データも保存しません。';

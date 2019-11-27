@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = '受験可能回数: {$a}';
 $string['pluginname'] = '受験数 - 小テストアクセスルール';
-$string['privacy:metadata'] = '受験数小テストアクセスルールプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '受験数小テストアクセスルールプラグインはいかなる個人データも保存しません。';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Offline';
+$string['privacy:metadata'] = 'Modulen "Inlämningsuppgift - offline" sparar inte personuppgifter.';

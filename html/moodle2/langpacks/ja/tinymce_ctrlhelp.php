@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ctrlhelp:desc'] = 'さらなるオプションのためのCTRL + 右クリック';
 $string['pluginname'] = 'CTRL + 右クリックヘルパ';
-$string['privacy:metadata'] = '「CTRL + 右」TinyMCEプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '「CTRL + 右」TinyMCEプラグインはいかなる個人データも保存しません。';

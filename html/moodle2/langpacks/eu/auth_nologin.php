@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_nologindescription'] = 'Plugin honek ez die erabiltzaileei sisteman saioa hasten uzten, eta erabiltzaileari bidalitako edozein e-posta ere ezeztatzen du. Erabiltzaileen kontuak <em>bertan behera uzteko</em> ere erabil daiteke.';
+$string['auth_nologindescription'] = 'Plugin honek ez die erabiltzaileei sisteman saioa hasten uzten, eta erabiltzaileari bidalitako edozein e-mail ere ezeztatzen du. Erabiltzaileen kontuak <em>bertan behera uzteko</em> ere erabil daiteke.';
 $string['pluginname'] = 'Autentifikaziorik ez';
 $string['privacy:metadata'] = 'Autentifikaziorik ez autentifikazio-pluginak ez du datu pertsonalik biltzen.';

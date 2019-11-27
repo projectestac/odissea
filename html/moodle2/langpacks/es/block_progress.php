@@ -132,7 +132,7 @@ $string['what_locked_means'] = '¿Qué significa Bloquear a fecha límite?';
 $string['what_locked_means_help'] = 'Cuando en una actividad, en su propia configuración interna, es posible determinar una fecha límite y esta se establece, de forma opcional se puede usar la fecha límite de la actividad o establecer otra diferente definida en la Barra de Progreso.
 
 
-Para bloquear la Barra de Progreso a la fecha límite de una actividad, debe tener disponible y estar definida una fecha límite. Si la fecha límite está bloqueada,  al cambiar la fecha límite en la configuración de la actividad, automáticamente se cambiará la fecha asociada con dicha actividad en la Barra de Progreso.
+Para bloquear la Barra de Progreso a la fecha límite de una actividad, debe tener disponible y estar definida una fecha límite. Si la fecha límite está bloqueada, al cambiar la fecha límite en la configuración de la actividad, automáticamente se cambiará la fecha asociada con dicha actividad en la Barra de Progreso.
 
 Cuando una actividad no está bloqueada a la fecha límite de la actividad, cambiar la fecha y hora en la configuración de la Barra de Progreso no afecta a la fecha límite de la actividad.';
 $string['why_display_now'] = '¿Por qué desearía ocultar/mostrar el indicador AHORA?';

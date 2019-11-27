@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'レガシースペルチェッカ';
-$string['privacy:metadata'] = 'TinyMCEレガシースペルチェッカプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'TinyMCEレガシースペルチェッカプラグインはいかなる個人データも保存しません。';

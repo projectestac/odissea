@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'フォント色';
-$string['privacy:metadata'] = 'atto_fontcolorプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_fontcolorプラグインはいかなる個人データも保存しません。';

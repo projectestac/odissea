@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['config_default_title'] = '完成进度';
 $string['mouse_over_prompt'] = '鼠标悬停或触摸以获取信息.';
 $string['no_activities_config_message'] = '没有完成设置的活动或资源或没有选择活动或资源。请在活动和资源配置区块，进行活动完成设置。';
+$string['no_courses'] = '你没有选择任何课程，只显示已选择的课程。';

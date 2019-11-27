@@ -98,6 +98,37 @@ class com_wiris_util_xml_MathMLUtils {
 		}
 		return -1;
 	}
+	static function isEmptyMathML($math) {
+		$empty = true;
+		if($math->nodeType == Xml::$Document) {
+			$empty = com_wiris_util_xml_MathMLUtils::isEmptyMathML($math->firstElement());
+		} else {
+			if($math->nodeType == Xml::$Element) {
+				$name = $math->getNodeName();
+				if($name === "mtext") {
+					if($math->iterator()->hasNext()) {
+						$child = $math->firstChild();
+						$value = com_wiris_util_xml_WXmlUtils::getNodeValue($child);
+						if($value !== null && !($value === "")) {
+							$empty = false;
+						}
+					}
+				} else {
+					if(!($name === "math" || $name === "mrow")) {
+						$empty = false;
+					} else {
+						$children = $math->elements();
+						while($children->hasNext()) {
+							$next = $children->next();
+							$empty = $empty && com_wiris_util_xml_MathMLUtils::isEmptyMathML($next);
+							unset($next);
+						}
+					}
+				}
+			}
+		}
+		return $empty;
+	}
 	function __toString() { return 'com.wiris.util.xml.MathMLUtils'; }
 }
 com_wiris_util_xml_MathMLUtils::$strokesAnnotationEncondings = new _hx_array(array(com_wiris_util_net_MimeTypes::$JSON, com_wiris_util_net_MimeTypes::$HAND_STROKES));

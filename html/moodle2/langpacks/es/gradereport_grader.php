@@ -40,4 +40,4 @@ $string['privacy:metadata:preference:grade_report_enableajax'] = 'Si se añade o
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'El número de estudiantes mostrados por página en el informe del calificador';
 $string['summarygrader'] = 'Una tabla con los nombres de los estudiantes en la primera columna, con actividades a calificar agrupadas por curso y categoría en la parte superior.';
 $string['useractivityfeedback'] = '{$a} retroalimentación';
-$string['useractivitygrade'] = '{$a] calificado';
+$string['useractivitygrade'] = '{$a} calificado';

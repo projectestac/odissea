@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['csv:view'] = 'CSVから評定をインポートする';
 $string['pluginname'] = 'CSVファイル';
-$string['privacy:metadata'] = 'CSVから評定をインポートするプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'CSVから評定をインポートするプラグインはいかなる個人データも保存しません。';

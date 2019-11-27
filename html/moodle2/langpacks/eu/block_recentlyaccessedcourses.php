@@ -29,4 +29,4 @@ $string['nocourses'] = 'Ez dago duela gutxiko ikastarorik';
 $string['pluginname'] = 'Duela gutxi bisitatutako ikastaroak';
 $string['privacy:metadata'] = 'Duela gutxi bisitatutako ikastaroak blokeak ez du datu pertsonalik biltzen.';
 $string['recentlyaccessedcourses:addinstance'] = 'Gehitu duela gutxi bisitatutako ikastaroak blokea';
-$string['recentlyaccessedcourses:myaddinstance'] = 'Gehitu duela gutxi bisitatutako ikastaroak blokea aginte-panelera';
+$string['recentlyaccessedcourses:myaddinstance'] = 'Gehitu duela gutxi bisitatutako ikastaroak blokea Aginte-panelera';

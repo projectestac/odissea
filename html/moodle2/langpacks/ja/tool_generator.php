@@ -61,7 +61,7 @@ $string['maketestcourse'] = 'テストコースを作成する';
 $string['maketestplan'] = 'JMeterテストプランを作成する';
 $string['notenoughusers'] = '選択されたユーザには十分なユーザが登録されていません。';
 $string['pluginname'] = '開発データジェネレータ';
-$string['privacy:metadata'] = '開発データジェレネータプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '開発データジェレネータプラグインはいかなる個人データも保存しません。';
 $string['progress_checkaccounts'] = 'ユーザアカウント確認中 ({$a})';
 $string['progress_coursecompleted'] = 'コース完了 ({$a})';
 $string['progress_createaccounts'] = 'ユーザアカウント作成中 ({$a->from} - {$a->to})';
@@ -94,7 +94,7 @@ $string['testplanexplanation'] = 'このツールはユーザ認証情報ファ�
 
 あなたはコースユーザのパスワードをconfig.phpで設定する必要があります (例 $CFG->tool_generator_users_password = \'moodle\';)。意図しないツールの使用を避けるため、このパスワードのデフォルト値はありません。あなたのコースユーザに他のパスワードが割り当てられている場合、あなたはパスワード更新オプションを使用する必要があります。または「$CFG->tool_generator_users_password」の値を設定しないことによりtool_generatorがパスワードを生成します。
 
-tool_generatorの一部であるため、コースによるコースおよびサイトジェネレータと良く動作します。また、少なくとも下記を含むコースに使用することもできます:
+tool_generatorの一部であるため、コースによるコースおよびサイトジェネレータと良く動作します。また、少なくとも以下を含むコースに使用することもできます:
 
 * パスワードを「moodle」にリセットした十分な数の登録済みユーザ (あなたが選択するテストプランのサイズに依存します)
 * ページモジュールインスタンス

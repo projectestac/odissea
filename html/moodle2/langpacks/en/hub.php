@@ -99,7 +99,7 @@ $string['errorcron'] = 'An error occurred during registration update on "{$a->hu
 $string['errorcronnoxmlrpc'] = 'XML-RPC must be enabled in order to update the registration.';
 $string['errorhublisting'] = 'An error occurred when retrieving the hub listing from Moodle. Please try again later. ({$a})';
 $string['errorlangnotrecognized'] = 'The provided language code is unknown by Moodle. Please contact {$a}';
-$string['errorotherhubsnotsupported'] = 'This page can no longer be used for registration with sites other than Moodle.net';
+$string['errorotherhubsnotsupported'] = 'This page can no longer be used for registration with custom sites directories.';
 $string['errorregistration'] = 'An error occurred during registration, please try again later. ({$a})';
 $string['errorregistrationupdate'] = 'An error occurred during registration update ({$a})';
 $string['errorunpublishcourses'] = 'Due to an unexpected error, the courses could not be deleted from Moodle.net. Try again later (recommended) or contact Moodle.net administrator.';
@@ -143,7 +143,7 @@ $string['operation'] = 'Actions';
 $string['orenterprivatehub'] = 'Alternatively, enter a private hub URL:';
 $string['participantnumberaverage'] = 'Average number of participants ({$a})';
 $string['policyagreed'] = 'Privacy notice and data processing agreement';
-$string['policyagreeddesc'] = 'I agree to the <a href="{$a}" target="_blank">Privacy notice and data processing agreement</a> for Moodle.net';
+$string['policyagreeddesc'] = 'I agree to the <a href="{$a}" target="_blank">Privacy notice and data processing agreement</a>';
 $string['postaladdress'] = 'Postal address';
 $string['postaladdress_help'] = 'Postal address of this site, or of the entity represented by this site.';
 $string['postsnumber'] = 'Number of posts ({$a})';
@@ -176,6 +176,19 @@ $string['registereduserdevices'] = 'Number of users with registered mobile devic
 $string['registermoochtips'] = 'By registering, you will receive security alerts, can activate mobile app push notifications from your site, and are contributing to our Moodle statistics of the worldwide community.';
 $string['registersite'] = 'Register with {$a}';
 $string['registerwith'] = 'Register with a hub';
+$string['registerwithmoodleorg'] = 'Register your site';
+$string['registerwithmoodleorgcomplete'] = 'Complete your site registration';
+$string['registerwithmoodleorginfo'] = 'We\'d love to stay in touch and provide you with important things for your Moodle site! By registering:
+
+* You can subscribe to receive notifications of new Moodle releases, security alerts and other important news.
+* You can access and activate mobile push notifications from your Moodle site through our free Moodle app.
+* You are contributing to our Moodle statistics of the worldwide community, which help us improve Moodle and our community sites.
+* If you wish, your site can be included in the list of registered Moodle sites in your country.';
+$string['registerwithmoodleorginfoapp'] = 'About the Moodle app';
+$string['registerwithmoodleorginfosites'] = 'Other sites in my country';
+$string['registerwithmoodleorginfostats'] = 'Moodle statistics';
+$string['registerwithmoodleorgremove'] = 'Unregistering your site';
+$string['registerwithmoodleorgupdate'] = 'Update your site registration';
 $string['registrationconfirmed'] = 'Site registration confirmed';
 $string['registrationconfirmedon'] = 'Thank you for registering your site. Registration information will be kept up to date by the \'Site registration\' scheduled task.';
 $string['registrationinfo'] = 'Registration information';
@@ -269,16 +282,17 @@ $string['unpublishconfirmation'] = 'Do you really want to remove the course "{$a
 $string['unpublishcourse'] = 'Stop sharing {$a}';
 $string['unregister'] = 'Unregister';
 $string['unregisterconfirmation'] = 'You are about to unregister this site from the hub {$a}.  Once you disconnect from it, you will not be able to manage any courses you left there.  Are you sure you want to unregister?';
-$string['unregisterexplained'] = 'If the site with URL {$a} is registered on Moodle.net its registration will be removed.';
+$string['unregisterexplained'] = 'If the site with URL {$a} is registered, then its registration will be removed.';
 $string['unregisterfrom'] = 'Unregister from {$a}';
 $string['unregistrationerror'] = 'An error occurred when the site tried to unregister from Moodle.net: {$a}';
 $string['untrustme'] = 'Not trusted';
 $string['update'] = 'Update';
 $string['updatesite'] = 'Update registration on {$a}';
+$string['updatesiteregistration'] = 'Update registration';
 $string['updatestatus'] = 'Check it now.';
 $string['uploaded'] = 'Uploaded';
 $string['url'] = 'hub URL';
-$string['urlalreadyregistered'] = 'Your site seems to be already registered on Moodle.net, which means something has gone wrong. Please contact the Moodle.net administrator to reset your registration so you can try again.';
+$string['urlalreadyregistered'] = 'Your site seems to be already registered, which means something has gone wrong. Please contact the Moodle.net administrator to reset your registration so you can try again.';
 $string['usedifferentemail'] = 'Use different email';
 $string['usersnumber'] = 'Number of users ({$a})';
 $string['warning'] = 'WARNING';

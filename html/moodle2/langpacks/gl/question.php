@@ -185,6 +185,7 @@ Certos formatos de importación, tales como GIFT e Moodle XML, permiten que se i
 $string['exporterror'] = 'Producíronse erros na exportación!';
 $string['exportfilename'] = 'preguntas';
 $string['exportnameformat'] = '%d/%m/%Y-%H:%M';
+$string['exportonequestion'] = 'Descargar esta pregunta no formato Moodle XML';
 $string['exportquestions'] = 'Exportar preguntas no ficheiro';
 $string['exportquestions_help'] = 'Esta función activa a exportación dunha categoría completa (e calquera subcategoría) de preguntas no ficheiro. Note que, consonte o formato de ficheiro seleccionado, algúns datos de preguntas e certos tipos de preguntas pode ser que non se exporten.';
 $string['exportquestions_link'] = 'pregunta/exportar';
@@ -218,6 +219,8 @@ Alternativamente, pode querer que os alumnos entreguen cada pregunta así como v
 
 Eses son probabelmente os dous modos máis comúns de comportamento usados.';
 $string['howquestionsbehave_link'] = 'Comportamento das preguntas';
+$string['idnumber'] = 'Número ID';
+$string['idnumber_help'] = 'Se se usa, o número de identificación debe ser único dentro de cada categoría de pregunta. Ofrece outro xeito de identificar unha pregunta que ás veces é útil, pero normalmente pódese deixar en branco.';
 $string['ignorebroken'] = 'Ignorar ligazóns rotas';
 $string['import'] = 'Importar';
 $string['importcategory'] = 'Importar categoría';

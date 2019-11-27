@@ -30,7 +30,7 @@ $string['apikey'] = 'APIキー';
 $string['configplugin'] = 'YouTubeリポジトリタイプ設定';
 $string['information'] = 'あなたのMoodleサイトのために<a href="https://developers.google.com/youtube/v3/getting-started">Google APIキー</a>を取得します。';
 $string['pluginname'] = 'YouTubeビデオ';
-$string['privacy:metadata:repository_youtube'] = 'YouTubeビデオリポジトリプラグインはどのような個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
+$string['privacy:metadata:repository_youtube'] = 'YouTubeビデオリポジトリプラグインはいかなる個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
 $string['privacy:metadata:repository_youtube:searchtext'] = 'YouTubeビデオリポジトリユーザ検索テキストクエリです。';
 $string['search'] = 'ビデオを検索する';
 $string['sortby'] = '並べ替え';

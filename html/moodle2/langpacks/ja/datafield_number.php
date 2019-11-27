@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = '数値フィールド';
 $string['pluginname'] = '数値';
-$string['privacy:metadata'] = '数字フィールドコンポーネントはどのような個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['privacy:metadata'] = '数字フィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

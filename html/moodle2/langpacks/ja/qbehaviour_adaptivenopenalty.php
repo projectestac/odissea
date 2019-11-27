@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'アダプティブモード (ペナルティなし)';
-$string['privacy:metadata'] = 'アダプティブモード (ペナルティなし) 問題動作プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'アダプティブモード (ペナルティなし) 問題動作プラグインはいかなる個人データも保存しません。';

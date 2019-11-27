@@ -63,7 +63,9 @@ $string['uploadusers_help'] = 'Il est possible d\'importer manuellement des comp
 * chaque ligne du fichier contient un enregistrement ;
 * les données de chaque enregistrement sont séparées par une virgule (ou un autre caractère de séparation) ;
 * le premier enregistrement contient le nom des champs qui composent les enregistrements, et détermine ainsi la structure de la suite du fichier ;
-* les champs requis sont username, password, firstname, lastname, email';
+* les champs requis sont username, password, firstname, lastname, email
+
+<a href="https://docs.moodle.org/fr/Importer_des_utilisateurs" target="_blank">Plus d\'aide à ce sujet</a>';
 $string['uploaduserspreview'] = 'Prévisualisation de la création d\'utilisateurs';
 $string['uploadusersresult'] = 'Résultats de la création d\'utilisateurs';
 $string['uploaduser:uploaduserpictures'] = 'Déposer des avatars';

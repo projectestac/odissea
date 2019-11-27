@@ -27,9 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'Almacéns de rexistro dispoñíbeis';
 $string['configlogplugins'] = 'Active todos os engadidos requiridos e arránxeos na orde apropiada.';
+$string['exportlog'] = 'Incluír os rexistros ao exportar.';
+$string['exportlogdetail'] = 'Inclúe os rexistros relacionados co usuario ao exportar.';
 $string['logging'] = 'Rexistrando';
 $string['managelogging'] = 'Administrar os almacéns de rexistro';
 $string['pluginname'] = 'Administrador do almacén de rexistros';
+$string['privacy:metadata:logstore'] = 'Os almacéns de rexistros';
+$string['privacy:path:logs'] = 'Rexistros';
+$string['privacy:request:origin:cli'] = 'Ferramenta de liña de ordes';
+$string['privacy:request:origin:restore'] = 'Estase a restaurar a copia de seguranza';
+$string['privacy:request:origin:web'] = 'Solicitude web estándar';
+$string['privacy:request:origin:ws'] = 'Aplicación móbil ou servizo web';
 $string['reportssupported'] = 'Informes compatíbeis';
 $string['subplugintype_logstore'] = 'Almacén de rexistros';
 $string['subplugintype_logstore_plural'] = 'Almacéns de rexistros';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['action'] = 'Ekintza';
 $string['addanotherhint'] = 'Gehitu beste pista bat';
 $string['addcategory'] = 'Gehitu kategoria';
-$string['addmorechoiceblanks'] = 'Zuriuneak {no} aukera gehiagotarako';
+$string['addmorechoiceblanks'] = 'Gehitu {no} zuriune aukera gehiagorako';
 $string['adminreport'] = 'Zure galderen datu-basean izan daitezkeen arazoei buruzko txostena';
 $string['advancedsearchoptions'] = 'Bilaketarako aukerak';
 $string['alltries'] = 'Saiakera guztiak';
@@ -128,16 +128,16 @@ $string['displayoptions'] = 'Erakusteko aukerak';
 $string['disterror'] = '{$a} banaketak arazoak sortu ditu';
 $string['donothing'] = 'Ez kopiatu, ez mugitu fitxategirik eta ez aldatu estekarik.';
 $string['editcategories'] = 'Editatu kategoriak';
-$string['editcategories_help'] = 'Zure galdera guztiak zerrenda luze bakar batean izan beharrean, kategoriak sor ditzakezu galderak bertan izateko.
+$string['editcategories_help'] = 'Zure galdera guztiak zerrenda luze bakar batean izan beharrean, kategoriak eta azpikategoriak sor ditzakezu galderak antolatzeko.
 
-Kategoria bakoitzak testuinguru bat izan behar du, eta honek zehaztuko du kategoriako zein galdera erabil daitekeen:
+Kategoria bakoitzak testuinguru bat du, eta honek zehaztuko du kategoriako galderak non erabil daitezkeen:
 
-* Jarduera-testuingurua - Galderak bakarrik daude eskura jarduera-moduluan
-*Ikastaro-testuingurua: Galderak eskura daude ikastaroko jarduera-modulu guztietan
-*Ikastaro-kategoriaren testuinguruan - Galderak eskura daude kategoriako ikastaro eta jarduera-modulu guztietan
-* Sistema-testuingurua - Galderak eskura daude guneko ikastaro eta jarduera-modulu guztietan
+* Jarduera-testuingurua - Galderak jarduera-moduluan soilik erabil daitezke
+* Ikastaro-testuingurua - Galderak ikastaroko jarduera-modulu guztietan erabil daitezke
+* Ikastaro-kategoriaren testuinguruan - Galderak kategoriako ikastaro eta jarduera-modulu guztietan erabil daitezke
+* Sistema-testuingurua - Galderak guneko ikastaro eta jarduera-modulu guztietan erabil daitezke
 
-Kategoriak ere ausazko galderetarako erabil daitezke eta galderak kategoria jakin batetik aukeratu.';
+Kategoriak ere ausazko galderetarako erabiltzen dira, ausazko galderak kategoria jakin batetik aukeratzen baitira.';
 $string['editcategory'] = 'Editatu kategoria';
 $string['editingcategory'] = 'Kategoria editatzen';
 $string['editingquestion'] = 'Galdera editatzen';
@@ -230,7 +230,7 @@ $string['incorrectfeedback'] = 'Edozein erantzun okerretarako';
 $string['incorrectfeedbackdefault'] = 'Zure erantzuna ez da zuzena';
 $string['information'] = 'Informazioa';
 $string['invalidanswer'] = 'Erantzuna ez dago osorik';
-$string['invalidarg'] = 'Argumentu ezegokiak egikarituta edo zerbitzariaren konfigurazio ezegokia';
+$string['invalidarg'] = 'Argumentu ezegokiak eman dira edo zerbitzariaren konfigurazio ezegokia da';
 $string['invalidcategoryidforparent'] = 'Goragoko kategoriaren IDak ez du balio!';
 $string['invalidcategoryidtomove'] = 'Mugitzeko kategoriaren IDak ez du balio!';
 $string['invalidconfirm'] = 'Egiaztatze-katea ez da egokia';
@@ -242,7 +242,7 @@ $string['lastmodifiedby'] = 'Nork aldatua azkenengoz';
 $string['lasttry'] = 'Azken saiakera';
 $string['linkedfiledoesntexist'] = 'Ez dago {$a} lotutako fitxategia';
 $string['makechildof'] = 'Bihurtu \'{$a}\'-ren ondorengo';
-$string['makecopy'] = 'Kopia egin';
+$string['makecopy'] = 'Egin kopia';
 $string['maketoplevelitem'] = 'Mugitu goragoko mailara';
 $string['manualgradeinvalidformat'] = 'Hau ez da zenbaki baliagarria.';
 $string['manualgradeoutofrange'] = 'Kalifikazio hau ibilartetik kanpo dago.';
@@ -272,11 +272,11 @@ $string['moveq'] = 'Mugitu galdera(k)';
 $string['moveqtoanothercontext'] = 'Mugitu galdera beste testuinguru batera';
 $string['moveto'] = 'Mugitu hona >>';
 $string['movingcategory'] = 'Kategoria mugitzen';
-$string['movingcategoryandfiles'] = 'Ziur al zaude {$a->name} eta bere azpiko kategoria guztiak "{$a->contextto}" testuingurura aldatu nahi dituzula?<br />Galderetatik lotutako {$a->urlcount} fitxategi aurkitu dugu {$a->fromareaname}-n, kopiatu edo {$a->toareaname}-ra mugitu nahi al dituzu?';
-$string['movingcategorynofiles'] = 'Ziur al zaude "{$a->name}" kategoria eta bere azpiko kategoria guztiak "{$a->contextto}" testuingurura mugitu nahi dituzula?';
+$string['movingcategoryandfiles'] = 'Ziur zaude {$a->name} eta bere azpiko kategoria guztiak "{$a->contextto}" testuingurura aldatu nahi dituzula?<br />Galderetatik lotutako {$a->urlcount} fitxategi aurkitu dugu {$a->fromareaname}-n, kopiatu edo {$a->toareaname}-ra mugitu nahi al dituzu?';
+$string['movingcategorynofiles'] = 'Ziur zaude "{$a->name}" kategoria eta bere azpiko kategoria guztiak "{$a->contextto}" testuingurura mugitu nahi dituzula?';
 $string['movingquestions'] = 'Galderak eta hainbat fitxategi mugitzen';
-$string['movingquestionsandfiles'] = 'Ziur al zaude {$a->questions} galdera(k) <strong>"{$a->tocontext}"</strong> kontestura mugitu nahi d(it)uzula?<br /> Galdera hauetatik/honetatik lotutako <strong>{$a->urlcount} fitxategi</strong> aurkitu dugu{$a->fromareaname}-n, kopiatu edo {$a->toareaname}-ra mugitu nahi al dituzu?';
-$string['movingquestionsnofiles'] = 'Ziur al zaude {$a->questions} galdera(k) <strong>"{$a->tocontext}"</strong> kontestura mugitu nahi d(it)uzula?<br /> Ez dago galdera hauetatik/honetatik lotutako <strong>inongo fitxategirik</strong> {$a->fromareaname}-n.';
+$string['movingquestionsandfiles'] = 'Ziur zaude {$a->questions} galdera(k) <strong>"{$a->tocontext}"</strong> kontestura mugitu nahi d(it)uzula?<br /> Galdera hauetatik/honetatik lotutako <strong>{$a->urlcount} fitxategi</strong> aurkitu dugu{$a->fromareaname}-n, kopiatu edo {$a->toareaname}-ra mugitu nahi al dituzu?';
+$string['movingquestionsnofiles'] = 'Ziur zaude {$a->questions} galdera(k) <strong>"{$a->tocontext}"</strong> kontestura mugitu nahi d(it)uzula?<br /> Ez dago galdera hauetatik/honetatik lotutako <strong>inongo fitxategirik</strong> {$a->fromareaname}-n.';
 $string['needtochoosecat'] = 'Galdera hau mugitzeko kategoria bat aukeratu behar duzu; bestela, egin klik \'utzi\' botoian.';
 $string['nocate'] = 'Ez da kategoria existitzen {$a}!';
 $string['nopermissionadd'] = 'Ez duzu baimenik hemen galderarik gaineratzeko.';

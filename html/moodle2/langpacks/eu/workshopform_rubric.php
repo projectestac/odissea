@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredimensions'] = 'Zuriuneak {$a} irizpide gehiagotarako';
+$string['addmoredimensions'] = 'Gehitu {$a} zuriune irizpide gehiagotarako';
 $string['configuration'] = 'Errubrikaren ezarpenak';
 $string['criteria'] = 'Irizpidea';
 $string['dimensiondescription'] = 'Deskribapena';
-$string['dimensionnumber'] = '{$a} irizpidea';
+$string['dimensionnumber'] = '{$a}. irizpidea';
 $string['layout'] = 'Errubrikaren diseinua';
 $string['layoutgrid'] = 'Laukia';
 $string['layoutlist'] = 'Zerrenda';

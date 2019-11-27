@@ -31,5 +31,5 @@ $string['emptyfilelist'] = '表示するファイルはありません。';
 $string['notitle'] = 'タイトルなし';
 $string['pluginname'] = 'レガシーコースファイル';
 $string['pluginname_help'] = 'レガシーコースファイル';
-$string['privacy:metadata'] = 'レガシーコースファイルリポジトリプラグインはどのような個人データも保存または転送しません。';
+$string['privacy:metadata'] = 'レガシーコースファイルリポジトリプラグインはいかなる個人データも保存または転送しません。';
 $string['remember'] = '次回から入力を省略する';

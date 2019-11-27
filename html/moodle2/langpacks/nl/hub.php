@@ -175,6 +175,18 @@ $string['registereduserdevices'] = 'Aantal gebruikers met geregistreerde mobiele
 $string['registermoochtips'] = 'Registreer je site bij Moodle om beveiligingswaarschuwingen te krijgen en om toegang te krijgen tot Moodle.net, ons platform om cursussen te delen.';
 $string['registersite'] = 'Registreer bij {$a}';
 $string['registerwith'] = 'Registreer bij een hub';
+$string['registerwithmoodleorg'] = 'Registreer je site';
+$string['registerwithmoodleorgcomplete'] = 'Voltooi de registratie van je site';
+$string['registerwithmoodleorginfo'] = 'We houden graag contact en voorzien je van belangrijke dingen voor je Moodle-website! Door te registreren:
+
+*  kun je je abonneren op meldingen van nieuwe Moodle-releases, beveiligingswaarschuwingen en ander belangrijk nieuws
+* kun je mobiele pushmeldingen van je Moodle-website openen en activeren via onze gratis Moodle-app
+* draag je bij aan onze Moodle-statistieken van de wereldwijde gemeenschap, die ons helpen Moodle en onze community-sites te verbeteren.
+* als je wil, kan je site worden opgenomen in de lijst met in jouw land geregistreerde Moodle-websites.';
+$string['registerwithmoodleorginfoapp'] = 'Over de Moodle-app';
+$string['registerwithmoodleorginfosites'] = 'Andere sites in mijn land';
+$string['registerwithmoodleorginfostats'] = 'Moodle-statistieken';
+$string['registerwithmoodleorgupdate'] = 'Update je site-registratie';
 $string['registrationconfirmed'] = 'Site-registratie bevestigd';
 $string['registrationconfirmedon'] = 'Bedankt voor het registreren van je site. De registratie-informatie zal up-to-date gehouden worden door de geplande taak "site-registratie".';
 $string['registrationinfo'] = 'Registratie-informatie';
@@ -274,6 +286,7 @@ $string['unregistrationerror'] = 'Er is een fout opgetreden wanneer de site prob
 $string['untrustme'] = 'Niet vertrouwd';
 $string['update'] = 'Aanpassen';
 $string['updatesite'] = 'Pas registratie aan op hub {$a}';
+$string['updatesiteregistration'] = 'Update registratie';
 $string['updatestatus'] = 'Controleer nu';
 $string['uploaded'] = 'Geüploaded';
 $string['url'] = 'Hub URL';

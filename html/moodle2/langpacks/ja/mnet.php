@@ -54,7 +54,7 @@ $string['deletedhosts'] = '削除されたホスト: {$a}';
 $string['deletehost'] = 'ホストを削除する';
 $string['deletekeycheck'] = '本当にこのキーを削除してもよろしいですか?';
 $string['deleteoutoftime'] = 'あなたがこのキーを削除できる60秒間の期限が切れました。再度お試しください。';
-$string['deleteuserrecord'] = 'SSO ACL: {$a->host} からのユーザレコード {$a->user} を削除します。';
+$string['deleteuserrecord'] = 'SSO ACL: {$a->host} からのユーザ「 {$a->user} 」のレコードを削除します。';
 $string['deletewrongkeyvalue'] = 'エラーが発生しました。あなたがサーバのSSLキーを削除しようと試みているのでなければ、悪意のある攻撃を受けている可能性があります。処理は実行されませんでした。';
 $string['deny'] = '拒否';
 $string['description'] = '説明';
@@ -174,7 +174,7 @@ $string['permittedtransports'] = '許可されたトランスポート';
 $string['phperror'] = '内部PHPエラーが発生したため、処理を実行できませんでした。';
 $string['position'] = 'ポジション';
 $string['postrequired'] = '削除処理にはPOSTリクエストが必要です。';
-$string['privacy:metadata'] = 'MNetプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'MNetプラグインはいかなる個人データも保存しません。';
 $string['profileexportfields'] = '送信するフィールド';
 $string['profilefielddesc'] = 'ここであなたはユーザアカウント作成または更新時にMNet経由で送信または受信されるプロファイルフィールドのリストを設定することができます。あなたはそれぞれのMNetピア設定を個別にオーバーライドすることもできます。次のフィールドは常に送信さるため、任意ではないことに留意してください: {$a}';
 $string['profilefields'] = 'プロファイルフィールド';
@@ -189,7 +189,7 @@ $string['receivedwarnings'] = '次のエラーが発生しました';
 $string['recordnoexists'] = 'レコードが存在しません。';
 $string['reenableserver'] = 'No - このサーバを再度有効にするため、このオプションを選択します。';
 $string['registerallhosts'] = 'すべてのホストを登録する (ハブモード)';
-$string['registerallhostsexplain'] = 'あなたのホストに自動接続を試みるすべてのホストを登録することができます。これはあなたのホストに接続して公開鍵を要求するMoodleサイトすべてがホスト一覧に表示されることを意味します。<br />あなたにはサービスを設定するため、下記で「すべてのホストを登録する」を選択するオプションがあります。そこでいくつかのサービスを有効にすることにより、あなたはMoodleサーバすべてに対して無差別にサービスを提供することができます。';
+$string['registerallhostsexplain'] = 'あなたのホストに自動接続を試みるすべてのホストを登録することができます。これはあなたのホストに接続して公開鍵を要求するMoodleサイトすべてがホスト一覧に表示されることを意味します。<br />あなたにはサービスを設定するため、以下で「すべてのホストを登録する」を選択するオプションがあります。そこでいくつかのサービスを有効にすることにより、あなたはMoodleサーバすべてに対して無差別にサービスを提供することができます。';
 $string['registerhostsoff'] = '現在、「すべてのホストを登録する」は<b>off</b>にされています。';
 $string['registerhostson'] = '現在、「すべてのホストを登録する」は<b>on</b>にされています。';
 $string['remotecourses'] = 'リモートコース';
@@ -238,8 +238,8 @@ $string['theypublish'] = 'こちらに公開する';
 $string['theysubscribe'] = 'こちらに登録する';
 $string['transport_help'] = 'これらのオプションでは相互認証が必要です。そのため、リモートホストに署名SSL証明書を強制するにはあなたのサーバも同様に署名SSL証明書を持つ必要があります。';
 $string['trustedhosts'] = 'XML-RPCホスト';
-$string['trustedhostsexplain'] = '<p>信頼できるホストメカニズムでは特定のマシンにXML-RPC経由であらゆるMoodle APIの一部を実行することを許可します。Moodleの挙動をコントロールするスクリプトの実行が可能になり、このオプションを有効にすることで非常に危険になります。分からない場合、無効のままにしてください。</p>
-<p>この設定はMoodleネットワーキングに必要<strong>ではありません!</strong> あなたが何をしているか分かっている場合のみ有効にしてください。</p><p>有効にするには1行に１つのIPアドレスのリストまたはネットワークを入力してください。例:</p>
+$string['trustedhostsexplain'] = '<p>信頼できるホストメカニズムでは特定のマシンにXML-RPC経由であらゆるMoodle APIの一部を実行することを許可します。Moodleの挙動をコントロールするスクリプトの実行が可能になり、このオプションを有効にすることで非常に危険になります。疑わしい場合、無効のままにしてください。</p>
+<p><strong>これは標準的なMNet機能に必要ではありません!</strong> あなたが何をしているか理解している場合のみ有効にしてください。</p><p>有効にするには1行に１つのIPアドレスのリストまたはネットワークを入力してください。例:</p>
 あなたのローカルホスト:<br />127.0.0.1<br />あなたのローカルホスト (CIDR表記、ネットワークブロック):<br />127.0.0.1/32<br />指定したIPアドレスのホストのみ 192.168.0.7:<br />192.168.0.7/32<br />IPアドレス 192.168.0.1 から 192.168.0.255 の間のホストはどれでも:<br />192.168.0.0/24<br />どのようなホストでも:<br />192.168.0.0/0<br />明らかに最後の例はお勧めできる設定<strong>ではありません</strong>。';
 $string['turnitoff'] = 'offにする';
 $string['turniton'] = 'onにする';

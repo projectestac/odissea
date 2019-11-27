@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '上付き文字';
-$string['privacy:metadata'] = 'atto_superscriptプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_superscriptプラグインはいかなる個人データも保存しません。';

@@ -57,7 +57,7 @@ $string['indicator:socialbreadth_help'] = 'この指標はブックリソース�
 $string['modulename'] = 'ブック';
 $string['modulename_help'] = 'ブックモジュールにおいて教師は章および節のある本のような複数ページのリソースを作成することができます。ブックにはテキストおよびメディアファイルを含むことができます。ブックはセクションに分けた長い情報を表示するために有用です。
 
-ブックは下記の用途に使用できます:
+ブックは以下の用途に使用できます:
 
 * 個別の学習要素の読書素材を表示するため
 * スタッフ部門のハンドブックとして
@@ -93,7 +93,7 @@ $string['numberingoptions_desc'] = '目次内の章および節の表示オプ�
 $string['page-mod-book-x'] = 'すべてのブックモジュールページ';
 $string['pluginadministration'] = 'ブック管理';
 $string['pluginname'] = 'ブック';
-$string['privacy:metadata'] = 'ブック活動モジュールはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ブック活動モジュールはいかなる個人データも保存しません。';
 $string['removeallbooktags'] = 'すべてのブックタグを削除する';
 $string['search:activity'] = 'ブック - リソース情報';
 $string['search:chapter'] = 'ブック - 章';

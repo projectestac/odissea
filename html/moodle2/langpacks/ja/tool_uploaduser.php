@@ -35,34 +35,34 @@ $string['deleteerrors'] = '削除エラー';
 $string['encoding'] = 'エンコーディング';
 $string['errormnetadd'] = 'リモートユーザを追加できません。';
 $string['errors'] = 'エラー';
-$string['invalidupdatetype'] = '選択したアップロードタイプでこのオプションを選択することはできません。';
-$string['invaliduserdata'] = 'ユーザ {$a} のデータに無効なデータが検出されたため、自動的に削除されました。';
+$string['invalidupdatetype'] = '選択されたアップロードタイプでこのオプションは選択できません。';
+$string['invaliduserdata'] = 'ユーザ {$a} に無効なデータが検出されたため自動的に削除されました。';
 $string['nochanges'] = '変更なし';
 $string['pluginname'] = 'ユーザアップロード';
-$string['privacy:metadata'] = 'ユーザアップロードプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ユーザアップロードプラグインはいかなる個人データも保存しません。';
 $string['renameerrors'] = 'リネームエラー';
-$string['requiredtemplate'] = '必須項目です。あなたはここでテンプレート構文 (%l = 姓、%f = 名、%u = ユーザ名) を使用することができます。詳細および例に関して、ヘルプをご覧ください。';
+$string['requiredtemplate'] = '必須項目です。あなたはここでテンプレート構文 (%l = 姓、%f = 名、%u = ユーザ名) を使用できます。詳細および例に関してヘルプをご覧ください。';
 $string['rowpreviewnum'] = 'プレビュー行';
 $string['unassignedsysrole'] = '割り当て解除済みシステムロール {$a}';
 $string['uploadpicture_baduserfield'] = '指定されたユーザ属性は有効ではありません。再度お試しください。';
 $string['uploadpicture_cannotmovezip'] = '一時ディレクトリにZIPファイルを移動できません。';
 $string['uploadpicture_cannotprocessdir'] = 'ZIP展開されたファイルを処理できません。';
-$string['uploadpicture_cannotsave'] = 'ユーザ {$a} の画像を保存できません。画像ファイルを確認してください。';
+$string['uploadpicture_cannotsave'] = 'ユーザ {$a} の画像を保存できません。オリジナルの画像ファイルを確認してください。';
 $string['uploadpicture_cannotunzip'] = '画像ファイルを展開できません。';
-$string['uploadpicture_invalidfilename'] = '画像ファイル {$a} のファイル名に無効な文字があります。スキップします。';
-$string['uploadpicture_overwrite'] = '既存のユーザ画像を上書きしますか?';
+$string['uploadpicture_invalidfilename'] = '画像ファイル {$a} のファイル名に無効な文字が含まれます。スキップします。';
+$string['uploadpicture_overwrite'] = '既存のユーザ画像を上書きしてもよろしいですか?';
 $string['uploadpictures'] = 'ユーザ画像をアップロードする';
-$string['uploadpictures_help'] = 'ZIP圧縮したイメージファイルをユーザ画像としてアップロードすることができます。イメージファイルは「選択されたユーザ属性.拡張子」という形で名前付けをする必要があります。例えば「user1234.jpg」はusernameが「user1234」のユーザ用となります。';
-$string['uploadpicture_userfield'] = '画像にマッチさせるユーザ属性';
+$string['uploadpictures_help'] = 'ZIP圧縮したイメージファイルをユーザ画像としてアップロードできます。イメージファイルは「選択されたユーザ属性.拡張子」という形で名前付けをする必要があります。例えば「user1234.jpg」はusernameが「user1234」のユーザ用となります。';
+$string['uploadpicture_userfield'] = '画像とのマッチに使用するユーザ属性:';
 $string['uploadpicture_usernotfound'] = '「 {$a->userfield} 」の値が「 {$a->uservalue} 」のユーザは存在しません。スキップします。';
 $string['uploadpicture_userskipped'] = 'ユーザ {$a} をスキップします (画像登録済みです)。';
 $string['uploadpicture_userupdated'] = 'ユーザ {$a} の画像が更新されました。';
 $string['uploadusers'] = 'ユーザをアップロードする';
-$string['uploadusers_help'] = 'テキストファイル経由でユーザをアップロード (および任意でコース登録) することができます。
+$string['uploadusers_help'] = 'テキストファイルでユーザをアップロード (および任意でコース登録) できます。ファイルのフォーマットは以下のとおりです:
 
-* ファイルのそれぞれの行には1レコード含みます。
-* それぞれのレコードはカンマ区切り (または他のデリミタ) の一覧のデータです。
-* 先頭レコードにはファイルの残りのフォーマットを定義したフィールド名を含みます。
+* ファイルのそれぞれの行に1レコードを含みます。
+* それぞれのレコードはカンマ区切り (または他のデリミタ) の一連のデータです。
+* 先頭レコードにはファイルの残りのフォーマットを定義したフィールド名一覧を含みます。
 * 必須フィールド名は次のとおりです: username, password, firstname, lastname, email';
 $string['uploaduserspreview'] = 'アップロードユーザプレビュー';
 $string['uploadusersresult'] = 'アップロードユーザ結果';

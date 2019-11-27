@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['downloadnotavailable'] = 'Non foi posíbel conectar co servidor de descargas. Non é posible instalar ou actualizar automaticamente os paquetes de idiomas. Descargue o(s) ficheiro(s) ZIP apropiados de <a href="{$a->src}">{$a->src}</a> e descomprímaos manualmente no directorio de datos <code>{$a->dest}</code>';
 $string['install'] = 'Instalar o paquete de idioma seleccionado';
 $string['installedlangs'] = 'Paquetes de idioma instalados';
 $string['langimport'] = 'Utilidade para a importación de idiomas';
@@ -44,6 +45,7 @@ $string['missinglangparent'] = 'Falta o idioma patron <em>{$a->parent}</em> de <
 $string['noenglishuninstall'] = 'Non é posíbel desinstalar o paquete de idioma inglés.';
 $string['nolangupdateneeded'] = 'Ningún dos seus paquetes de idioma precisa de ser actualizado.';
 $string['pluginname'] = 'Paquetes de idioma';
+$string['privacy:metadata'] = 'O engadido de paquetes de idioma non almacena ningún dato persoal.';
 $string['purgestringcaches'] = 'Purgar as cachés de cadeas';
 $string['selectlangs'] = 'Seleccione os idiomas a desinstalar';
 $string['uninstall'] = 'Desinstale o paquete de idiomas seleccionado';

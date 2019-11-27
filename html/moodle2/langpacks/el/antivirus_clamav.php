@@ -43,6 +43,6 @@ $string['privacy:metadata'] = 'Το πρόσθετο «Αντι-ιικό πρό�
 $string['quarantinedir'] = 'Κατάλογος/φάκελος καραντίνας';
 $string['runningmethod'] = 'Μέθοδος εκτέλεσης';
 $string['runningmethodcommandline'] = 'Γραμμή εντολών';
-$string['runningmethoddesc'] = 'Μέθοδος εκτέλεσης του ClamAV. Η γραμμή εντολών χρησιμοποιείται από προεπιλογή, όμως στα συστήματα Unix μπορεί να επιτευχθεί καλύτερη απόδοση  χρησιμοποιώντας ένα Unix domain socket.';
+$string['runningmethoddesc'] = 'Μέθοδος εκτέλεσης του ClamAV. Η γραμμή εντολών χρησιμοποιείται από προεπιλογή, όμως στα συστήματα Unix μπορεί να επιτευχθεί καλύτερη απόδοση χρησιμοποιώντας ένα Unix domain socket.';
 $string['runningmethodunixsocket'] = 'Unix domain socket';
 $string['unknownerror'] = 'Παρουσιάστηκε ένα σφάλμα με το πρόγραμμα αντιμετώπισης ιών.';

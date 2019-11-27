@@ -31,7 +31,7 @@ $string['auth_oauth2description'] = 'Authentification basée sur les standards O
 $string['auth_oauth2settings'] = 'Réglages d\'authentification OAuth 2.';
 $string['confirmaccountemail'] = 'Bonjour,
 
-La création d\'un compte pour {$a->sitename} a été demandée en utilisant votre adresse de courriel. Pour confirmer votre nouveau compte, veuillez visiter la page web suivante :
+La création d\'un compte pour « {$a->sitename} » a été demandée en utilisant votre adresse de courriel. Pour confirmer votre nouveau compte, veuillez visiter la page web suivante :
 
 {$a->link}
 
@@ -44,7 +44,7 @@ $string['confirmationinvalid'] = 'Le lien de confirmation n\'est pas valide ou e
 $string['confirmationpending'] = 'Ce compte est en attente de confirmation par courriel.';
 $string['confirmlinkedloginemail'] = 'Bonjour,
 
-Une requête a été effectuée pour lier le compte {$a->issuername} ({$a->linkedemail}) à votre compte sur la plateforme {$a->sitename}. Pour confirmer cette demande et lier ces comptes, veuillez visiter la page web suivante :
+Une requête a été effectuée pour lier le compte {$a->issuername} ({$a->linkedemail}) à votre compte sur la plateforme « {$a->sitename} ». Pour confirmer cette demande et lier ces comptes, veuillez visiter la page web suivante :
 
 {$a->link}
 

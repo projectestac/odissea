@@ -32,6 +32,7 @@ $string['allselectedusers'] = 'Todo seleccionado ({$a->count}/{$a->total})';
 $string['allusers'] = 'Todos os usuarios ({$a})';
 $string['available'] = 'Dispoñíbel';
 $string['confirmmessage'] = 'Realmente quere enviar a mensaxe anterior a todos estes usuarios?<br />{$a}';
+$string['deleteduser'] = 'Usuario eliminado';
 $string['nofilteredusers'] = 'Non se atoparon usuarios (0/{$a})';
 $string['noselectedusers'] = 'Non hai ningún usuario seleccionado';
 $string['removeall'] = 'Retirar todo';

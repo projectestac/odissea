@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowofflineattempts'] = 'Permitir que o teste seja respondido offline através da aplicação móvel';
-$string['allowofflineattempts_help'] = 'Se ativar esta opção, um utilizador da aplicação móvel pode descarregar o Teste e realizar uma tentativa offline.
+$string['allowofflineattempts'] = 'Permitir que o teste seja respondido offline através da Aplicação móvel';
+$string['allowofflineattempts_help'] = 'Se ativar esta opção, um utilizador da Aplicação móvel pode descarregar o Teste e realizar uma tentativa offline.
 
 Nota: Não é possível responder offline a um Teste caso este tenha sido configurado com um tempo limite, tenha definidos endereço de rede autorizados ou utilize outro modo de comportamento das perguntas que não seja o feedback diferido (com ou sem ABGC).';
 $string['confirmdatasaved'] = 'Confirmo que não tenho nenhum trabalho por guardar num dispositivo móvel.';

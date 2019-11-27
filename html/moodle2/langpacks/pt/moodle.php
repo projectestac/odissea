@@ -905,26 +905,26 @@ $string['general'] = 'Geral';
 $string['geolocation'] = 'latitude - longitude';
 $string['gettheselogs'] = 'Obter estes registos';
 $string['go'] = 'Executar';
-$string['gpl'] = 'Copyright (C) desde 1999, Martin Dougiamas (http://moodle.com)
+$string['gpl'] = 'Copyright (C) desde 1999, Martin Dougiamas (https://moodle.com)
 
-Este programa é software livre; pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU, conforme publicada pela Free Software Foundation, tanto a versão 2 da Licença como (a seu critério) qualquer versão mais recente.
+Este programa é software livre: pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU, conforme publicada pela Free Software Foundation, tanto a versão 2 da Licença como (a seu critério) qualquer versão mais recente.
 
-Este programa é distribuído com a espectativa de que seja útil, mas SEM QUALQUER GARANTIA; nem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO ESPECÍOFICO.
-
-Para mais informação, consulte a página da Licença do Moodle:
-http://docs.moodle.org/en/License';
-$string['gpl3'] = 'Copyright (C) desde 1999, Martin Dougiamas (http://moodle.com)
-
-Este programa é software livre; pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU, conforme publicada pela Free Software Foundation, tanto a versão 3 da Licença como (a seu critério) qualquer versão mais recente.
-
-Este programa é distribuído com a espectativa de que seja útil, mas SEM QUALQUER GARANTIA; nem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO ESPECÍOFICO.
+Este programa é distribuído com a espetativa de que seja útil, mas SEM QUALQUER GARANTIA; nem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO ESPECÍFICO.
 
 Para mais informação, consulte a página da Licença do Moodle:
-http://docs.moodle.org/en/License';
+https://docs.moodle.org/en/License';
+$string['gpl3'] = 'Copyright (C) desde 1999, Martin Dougiamas (https://moodle.com)
+
+Este programa é software livre: pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU, conforme publicada pela Free Software Foundation, tanto a versão 3 da Licença como (a seu critério) qualquer versão mais recente.
+
+Este programa é distribuído com a expectativa de que seja útil, mas SEM QUALQUER GARANTIA, nem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO ESPECÍFICO.
+
+Para mais informação, consulte a página da Licença do Moodle:
+https://docs.moodle.org/en/License';
 $string['gpllicense'] = 'licença GPL';
 $string['grade'] = 'Avaliação';
 $string['grades'] = 'Pauta';
-$string['gravatarenabled'] = '<a href="http://www.gravatar.com/">Gravatar</a> está ativo neste site. Se não carregar nenhuma foto para o perfil, o Moodle irá tentar obter uma a partir do Gravatar.';
+$string['gravatarenabled'] = '<a href="https://www.gravatar.com/">Gravatar</a> está ativo neste site. Se não carregar nenhuma foto para o perfil, o Moodle irá tentar obter uma a partir do Gravatar.';
 $string['group'] = 'Grupo';
 $string['groupadd'] = 'Adicione novo grupo';
 $string['groupaddusers'] = 'Adicione selecionados ao grupo';
@@ -1185,7 +1185,7 @@ $string['messageprovider:courserequested'] = 'Notificação do pedido de discipl
 $string['messageprovider:courserequestrejected'] = 'Notificação de rejeição do pedido de disciplina';
 $string['messageprovider:errors'] = 'Erros importantes no site';
 $string['messageprovider:errors_help'] = 'Estes são alguns erros importantes que o administrador deve conhecer';
-$string['messageprovider:insights'] = 'Percepções geradas por modelos de previsão';
+$string['messageprovider:insights'] = 'Perceções geradas por modelos de previsão';
 $string['messageprovider:instantmessage'] = 'Mensagens pessoais entre utilizadores';
 $string['messageprovider:instantmessage_help'] = 'Esta secção define as mensagens enviadas diretamente de uns utilizadores para outros através do site';
 $string['messageprovider:messagecontactrequests'] = 'Mensagem de notificação das solicitações de contacto';
@@ -1385,7 +1385,7 @@ $string['nopotentialadmins'] = 'Nenhum candidato a administrador';
 $string['nopotentialcreators'] = 'Nenhum candidato a criador de disciplina';
 $string['nopotentialstudents'] = 'Nenhum candidato a aluno';
 $string['nopotentialteachers'] = 'Nenhum candidato a professor';
-$string['norecentactivity'] = 'Não existe atividade recente';
+$string['norecentactivity'] = 'Sem atividade recente';
 $string['noreplybouncemessage'] = 'Respondeu para um e-mail que não aceita respostas. Se estava a responder a uma mensagem num fórum, por favor, use o Responder na mensagem {$a}.
 
 Segue o conteúdo da sua mensagem de e-mail:';
@@ -1460,7 +1460,7 @@ $string['pagedcontentnavigationitem'] = 'Ir para a página {$a}';
 $string['pagedcontentpagingbaritemsperpage'] = 'Mostrar {$a} itens por página';
 $string['pageheaderconfigablock'] = 'A configurar um bloco em {$a->fullname}';
 $string['pagepath'] = 'Caminho da página';
-$string['pageshouldredirect'] = 'Esta página será redirecionada automaticamente. Se tal não acontecer, use a hiperligação de continuar abaixo.';
+$string['pageshouldredirect'] = 'Esta página deverá redirecionar automaticamente. Se tal não acontecer, use a hiperligação abaixo para continuar.';
 $string['parentcategory'] = 'Categoria ascendente';
 $string['parentcoursenotfound'] = 'Disciplina ascendente desconhecida';
 $string['parentfolder'] = 'Pasta ascendente';
@@ -1821,7 +1821,7 @@ $string['showtheselogs'] = 'Mostrar estatísticas de acesso';
 $string['showthishelpinlanguage'] = 'Mostrar esta ajuda no idioma: {$a}';
 $string['sidepanel'] = 'Painel lateral';
 $string['signoutofotherservices'] = 'Sair em qualquer lugar';
-$string['signoutofotherservices_help'] = 'Se ativar esta opção, a conta será terminada em todos os dispositivos e sistemas que usam web services, tal como a aplicação móvel.';
+$string['signoutofotherservices_help'] = 'Se ativar esta opção, a conta será terminada em todos os dispositivos e sistemas que usam web services, tal como a Aplicação móvel.';
 $string['since'] = 'Desde';
 $string['sincelast'] = 'desde a última autenticação';
 $string['site'] = 'Site';

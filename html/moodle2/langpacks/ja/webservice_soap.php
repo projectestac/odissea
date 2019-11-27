@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'SOAPプロトコル';
-$string['privacy:metadata'] = 'SOAPプロトコルプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'SOAPプロトコルプラグインはいかなる個人データも保存しません。';
 $string['soap:use'] = 'SOAPプロトコルを使用する';

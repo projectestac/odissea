@@ -108,7 +108,7 @@ Als je verbindt worden alle badges die je op deze site verdient gekoppeld aan di
 $string['backpackemailverificationpending'] = 'Wachten op verificatie';
 $string['backpackemailverifyemailbody'] = 'Hallo,
 
-Er is een nieuwe verbinding gevraagd naar jouw OpenBadges backpack door \'{$a->sitename}\' met jouw e-mailadres.
+Er is een nieuwe verbinding gevraagd naar jouw badges backpack door \'{$a->sitename}\' met jouw e-mailadres.
 
 Klik om deze vraag te bevestigen en de verbinding met jouw backpack te activeren op onderstaande link.
 
@@ -118,7 +118,7 @@ In de meeste e-mailprogramma\'s zou dit moeten verschijnen als een blauwe link w
 
 Als je hulp nodig hebt, neem dan contact op met je site-beheerder,
 {$a->admin}';
-$string['backpackemailverifyemailsubject'] = '{$a}: OpenBadges Backpack e-mailverificatie';
+$string['backpackemailverifyemailsubject'] = '{$a}: Badges Backpack e-mailverificatie';
 $string['backpackemailverifypending'] = 'Er is een e-mail verstuurd naar <strong>{$a}</strong>. Klik op de verificatielink in de e-mail om je Backpack-verbinding te activeren.';
 $string['backpackemailverifysuccess'] = 'Bedankt voor het verifiëren van je e-mailadres. Je bent nu verbonden met jouw Backpack.';
 $string['backpackemailverifytokenmismatch'] = 'Het token in de link waarop je geklikt hebt, komt niet overeen met het opgeslagen token. Zorg ervoor dat je klikt op de link van de meest recente e-mail die je ontvangen hebt.';

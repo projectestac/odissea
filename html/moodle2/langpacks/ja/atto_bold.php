@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '太字';
-$string['privacy:metadata'] = 'atto_boldプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_boldプラグインはいかなる個人データも保存しません。';

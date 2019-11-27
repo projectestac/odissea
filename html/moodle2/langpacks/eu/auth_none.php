@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_nonedescription'] = 'Erabiltzaileek berehala eman dezakete izena eta baliozko kontuak sortu, kanpo-zerbitzari baten aurkako autentifikaziorik gabe eta e-posta bidez berretsi gabe. Kontuz aukera hau erabiltzean - honek sor ditzakeen segurtasun eta kudeaketa-arazoak kontuan hartu.';
+$string['auth_nonedescription'] = 'Erabiltzaileek berehala eman dezakete izena eta baliozko kontuak sortu, kanpo-zerbitzari baten aurkako autentifikaziorik gabe eta posta elektroniko bidez berretsi gabe. Kontuz aukera hau erabiltzean - honek sor ditzakeen segurtasun eta kudeaketa-arazoak kontuan hartu.';
 $string['pluginname'] = 'Autentifikatu gabe';
 $string['privacy:metadata'] = 'Autentifikatu gabe autentifikazio-pluginak ez du datu pertsonalik biltzen.';

@@ -81,7 +81,7 @@ $string['settingfullnamedescription'] = 'Le nom complet est un champ obligatoire
 $string['settingshortname'] = 'Tag de description IMS pour le nom abrégé du cours';
 $string['settingshortnamedescription'] = 'Le nom abrégé est un champ obligatoire. Vous devez définir le tag de description sélectionné dans votre fichier IMS Enterprise';
 $string['settingsummary'] = 'Tag de description IMS pour le résumé du cours';
-$string['settingsummarydescription'] = 'Champ optionnel.Veuillez sélectionner « Laisser vide » si vous ne voulez pas spécifier de résumé de cours';
+$string['settingsummarydescription'] = 'Champ optionnel. Veuillez sélectionner « Laisser vide » si vous ne voulez pas spécifier de résumé de cours';
 $string['sourcedidfallback'] = 'Utiliser le « sourcedid » comme identifiant pour les personnes dont le champ « userid » est introuvable';
 $string['sourcedidfallback_desc'] = 'Dans les données IMS, le champ <sourcedid> représente un identifiant persistant d\'une personne dans le système source. Le champ <userid> est un champ séparé pouvant contenir l\'identifiant utilisé par l\'utilisateur lors de ses connexions. Dans de nombreux cas, ces deux identifiants sont les mêmes, mais pas toujours.
 

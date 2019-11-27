@@ -37,6 +37,6 @@ $string['pluginnameadding'] = '○/×問題の追加';
 $string['pluginnameediting'] = '○/×問題の編集';
 $string['pluginname_help'] = '問題 (イメージを含む) の解答として解答者は「○」または「×」を選択します。';
 $string['pluginnamesummary'] = '2つの選択肢「○」および「×」のみ持ったシンプルな形の多肢選択問題です。';
-$string['privacy:metadata'] = '○/×問題タイププラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '○/×問題タイププラグインはいかなる個人データも保存しません。';
 $string['selectone'] = '1つ選択してください:';
 $string['true'] = '○';

@@ -37,6 +37,6 @@ $string['oauthinfo'] = '<p>このプラグインを使用するためにはあ�
 
 <p>登録完了後、あなたにはここで入力できるクライアントIDおよび秘密鍵が提供されます。</p>';
 $string['pluginname'] = 'Microsoft OneDrive (レガシー)';
-$string['privacy:metadata'] = 'Microsoft OneDrive (レガシー) リポジトリプラグインはどのような個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
+$string['privacy:metadata'] = 'Microsoft OneDrive (レガシー) リポジトリプラグインはいかなる個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
 $string['secret'] = '秘密鍵';
 $string['skydrive:view'] = 'OneDrive (レガシー) 表示する';

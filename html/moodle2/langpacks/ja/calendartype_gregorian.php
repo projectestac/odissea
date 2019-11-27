@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['name'] = 'グレゴリオ暦';
 $string['pluginname'] = 'グレゴリオ暦カレンダータイプ';
-$string['privacy:metadata'] = 'グレゴリオ暦カレンダーフォーマットプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'グレゴリオ暦カレンダーフォーマットプラグインはいかなる個人データも保存しません。';

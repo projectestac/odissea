@@ -28,13 +28,13 @@ defined('MOODLE_INTERNAL') || die();
 $string['action'] = 'Aktion';
 $string['activityoverview'] = 'Sie haben unbeantwortete Befragungen.';
 $string['additionalinfo'] = 'zusätzliche Information';
-$string['additionalinfo_help'] = 'Text, der auf der ersten Seite am Anfang dieses Fragebogens angezeigt werden soll, z.B. Anleitungen, Hintergrundinfos, usw.';
+$string['additionalinfo_help'] = 'Text, der am Anfang der ersten Seite dieses Fragebogens angezeigt werden soll, z.B. Anleitungen, Hintergrundinfos, usw.';
 $string['addnewquestion'] = '{$a}-Frage hinzufügen';
 $string['addnewsection'] = 'Neuen Abschnitt anlegen';
 $string['addquestion'] = 'Frage hinzufügen...';
 $string['addquestions'] = 'Fragen hinzufügen';
 $string['addquestiontosection'] = 'Weitere Fragen zum Abschnitt hinzufügen';
-$string['addselqtype'] = 'Fragetyp hinzufügen';
+$string['addselqtype'] = 'Ausgewählten Fragetyp hinzufügen';
 $string['alignment'] = 'Anordnung der Radio-Buttons';
 $string['alignment_help'] = 'Anordnung wählen: senkrecht (Standard) oder waagerecht';
 $string['all'] = 'Alle';
@@ -44,7 +44,7 @@ $string['anonymous'] = 'Anonym';
 $string['answer'] = 'Antwort';
 $string['answergiven'] = 'Diese Antwort gegeben';
 $string['answernotgiven'] = 'Diese Antwort nicht gegeben';
-$string['answerquestions'] = 'Beantworten Sie die Fragen ...';
+$string['answerquestions'] = 'Füllen Sie die Befragung aus ...';
 $string['answers'] = 'Antworten';
 $string['attempted'] = 'Der Fragebogen wurde abgegeben.';
 $string['attemptstillinprogress'] = 'In Bearbeitung. Gespeichert unter:';
@@ -72,7 +72,7 @@ $string['chart:type'] = 'Grafiktyp';
 $string['chart:type_help'] = 'Wählen Sie den Grafiktyp den Sie für dieses Feedback verwenden möchten.';
 $string['chart:vprogress'] = 'Vertikaler Fortschrittsbalken';
 $string['checkallradiobuttons'] = 'Wählen Sie bitte <strong>{$a}</strong> Antwort(en)!';
-$string['checkboxes'] = 'Auswahlkästchen';
+$string['checkboxes'] = 'Multiple Choice';
 $string['checkboxes_help'] = 'Tragen Sie jeweils eine Option pro Zeile ein. Die Teilnehmer/innen können eine oder mehrere Antworten auswählen.';
 $string['checkbreaksadded'] = 'Neuer Seitenumbruch/Seitenumbrüche an folgenden Positione(n) eingefügt:';
 $string['checkbreaksok'] = 'Alle erforderlichen Seitenumbrüche sind vorhanden!';
@@ -132,7 +132,7 @@ $string['download'] = 'Herunterladen';
 $string['downloadtextformat'] = 'Als Text (CSV) herunterladen';
 $string['downloadtextformat_help'] = 'Diese Funktion ermöglicht es Ihnen, alle Antworten eines Fragebogens in einer Textdatei (CSV) zu speichern. Diese Datei kann dann in ein Tabellenkalkulationsprogramm importiert oder von einer Statistik-Software weiter verarbeitet werden.';
 $string['dropdown'] = 'Dropdown-Feld';
-$string['dropdown_help'] = 'Es gibt keinen eindeutigen Vorteil eine Dropdown-Box Radio-Buttons vorzuziehen außer um Platz zu sparen und die Länge der Liste zu reduzieren.';
+$string['dropdown_help'] = 'Es gibt keinen wirklichen Vorteil eine Dropdown-Box vorzuziehen, außer um Platz zu sparen und die Länge der Liste zu reduzieren.';
 $string['edit'] = 'Bearbeiten';
 $string['editingfeedback'] = 'Feedbackeinstellungen';
 $string['editingquestionnaire'] = 'Einstellungen der Befragung bearbeiten';
@@ -141,7 +141,7 @@ $string['email'] = 'E-Mail';
 $string['errnewname'] = 'Sorry. Dieser Name wird bereits genutzt. Wählen Sie einen neuen Namen.';
 $string['erroropening'] = 'Fehler beim Öffnen der Befragung.';
 $string['errortable'] = 'Fehler. Befragungstabelle beschädigt.';
-$string['essaybox'] = 'Freitextfeld';
+$string['essaybox'] = 'Texteingabebereich';
 $string['essaybox_help'] = 'Diese Frage wird eine Textbox mit x Spalten (oder der entsprechenden Breite) und y Zeilen (Anzahl der Textzeilen) anzeigen.
 
 Wenn Sie beides auf dem Standardwert 0 belassen (oder es auf 0 setzen), wird der Texteditor mit Standardhöhe und -breite angezeigt (Werte aus dem Kurs- oder Nutzerprofil).';
@@ -182,7 +182,7 @@ $string['feedbackmessages'] = 'Feedbacktext für Abschnitt {$a}';
 $string['feedbacknextsection'] = 'Nächster Abschnitt {$a}';
 $string['feedbacknone'] = 'Kein Feedbacktext';
 $string['feedbacknotes'] = 'Anmerkungen zum Feedback';
-$string['feedbacknotes_help'] = 'Der hier eingetragene Text, wird den Antwortenden am Ende Ihres Feedbackberichts angezeigt.';
+$string['feedbacknotes_help'] = 'Der hier angegebene Text, wird den Personen am Ende Ihres Feedbackberichts angezeigt.';
 $string['feedbackoptions'] = 'Feedbackoptionen';
 $string['feedbackoptions_help'] = 'Die Feedbackoptionen sind verfügbar wenn Ihre Befragung eine der folgenden Fragetypen oder Frageeinstellungen enthält: Radiobuttons, Dropdown oder Rate. Diese Fragen müssen als \'erforderlich\' gesetzt werden, der Name der Frage darf NICHT leer sein und die vorhandenen Frageauswahlmöglichkeiten muss einen Wert enthalten.';
 $string['feedbackremovequestionfromsection'] = 'Diese Frage ist Teil des Feedback-Abschnitts [{$a}]';
@@ -205,11 +205,11 @@ $string['feedbacksectionsselect_help'] = 'Platzieren Sie Ihre Fragen in diese Ab
 $string['feedbacksettingssaved'] = 'Feedback-Einstellungen gespeichert';
 $string['feedbacktype'] = 'Art des Feedbacks';
 $string['field'] = 'Frage {$a}';
-$string['fieldlength'] = 'Eingabelänge';
-$string['fieldlength_help'] = 'Für den Fragetyp **Textfeld** können Sie die "Textfeldlänge" und die "Max. Textlänge" angeben.
-Standardlängen sind 20 Zeichen für das Textfeld und 25 Zeichen für die maximale Textlänge.';
+$string['fieldlength'] = 'Textfeldlänge';
+$string['fieldlength_help'] = 'Für den Fragetyp **Textfeld** können Sie die **Textfeldlänge** und die **Max. Textlänge** angeben.
+Standardmäßig sind 20 Zeichen für die Textfeldlänge und 25 Zeichen für die maximale Textlänge eingestellt.';
 $string['finished'] = 'Sie haben alle Fragen dieser Befragung beantwortet!';
-$string['firstrespondent'] = 'Erste/r Befragte/r';
+$string['firstrespondent'] = 'Erste Abgabe';
 $string['formateditor'] = 'HTML Editor';
 $string['formatplain'] = 'Text';
 $string['grade'] = 'Abgabe-Bewertung';
@@ -240,7 +240,7 @@ $string['maxdigitsallowed_help'] = 'Durch die Verwendung von Max. erlaubte Ziffe
 $string['maxforcedresponses'] = 'Max. geforderte Antworten';
 $string['maxforcedresponses_help'] = 'Verwenden Sie diese Parameter um den Befragten zu zwingen, mindestens **Min.** und höchstens **Max.** Häkchen zu setzen. Um eine bestimmte Anzahl von Häkchen zu erzwingen, setzen Sie in **Min.** und **Max.** den gleichen Wert ein. Wenn nur Minimum oder Maximum gewünscht wird, lassen Sie das andere Feld auf seinem Standardwert **0**. Wenn Sie **Min.** oder **Max.** auf einen anderen Wert als den Standard **0** setzen, wird eine Warnmeldung angezeigt, wenn der Befragte nicht mit Ihren Anforderungen übereinstimmt. Selbstverständlich sollten Sie dem Befragten alle Anforderungen entweder in den allgemeinen Angaben zu Ihrer Befragung oder im Text der betreffenden Fragen eindeutig erläutern.';
 $string['maxtextlength'] = 'Max. Textlänge';
-$string['maxtextlength_help'] = 'Für die Textbox-Frage geben Sie die Länge des Feldes und die maximal eingebbaren Zeichen an. Voreingestellt sind eingebbare 25 Zeichen bei einer Anzeigelänge von 20.';
+$string['maxtextlength_help'] = 'Für die Textfeld-Frage geben Sie die Textfeldlänge und die maximale Textlänge an. Standardmäßig sind 20 Zeichen für die Textfeldlänge und 25 Zeichen für die maximale Textlänge eingestellt.';
 $string['messageprovider:message'] = 'Erinnerung zu Befragung';
 $string['messageprovider:notification'] = 'Mitteilung zur Befragungsabgabe';
 $string['minforcedresponses'] = 'Min. geforderte Antworten';
@@ -252,11 +252,11 @@ Es ist wichtig, die Anforderungen an den Nutzer auch explizit zu verdeutlichen, 
 $string['misconfigured'] = 'Der Kurs ist falsch konfiguriert';
 $string['missingname'] = 'Die Frage {$a} kann in diesem Feedback nicht genutzt werden, weil sie keinen Namen hat.';
 $string['missingnameandrequired'] = 'Die Frage {$a} kann in diesem Feedback nicht genutzt werden, weil sie keinen Namen hat und nicht auf \'erforderlich\' gesetzt ist.';
-$string['missingquestion'] = 'Bitte beantworten Sie die Pflichtfrage';
-$string['missingquestions'] = 'Bitte beantworten Sie die Pflichtfragen:';
+$string['missingquestion'] = 'Füllen Sie das Pflichtfeld aus';
+$string['missingquestions'] = 'Füllen Sie die Pflichtfelder aus:';
 $string['missingrequired'] = 'Die Frage {$a} kann in diesem Feedback nicht genutzt werden, weil sie nicht auf \'erforderlich\' gesetzt ist.';
 $string['modulename'] = 'Befragung';
-$string['modulename_help'] = 'Das Befragung-Modul ermöglicht es Ihnen Fragebögen zu erstellen, die die Nutzer anschließend beantworten sollen.';
+$string['modulename_help'] = 'Das Modul Befragung ermöglicht es Ihnen Fragebögen zu erstellen, die die Nutzer/innen anschließend ausfüllen sollen.';
 $string['modulenameplural'] = 'Befragungen';
 $string['movedisabled'] = 'Dieses Objekt kann nicht bewegt werden';
 $string['myresponses'] = 'Alle Ihre Antworten';
@@ -304,7 +304,7 @@ $string['numberofdecimaldigits_help'] = 'Verwenden Sie **Dezimalziffern** um das
 $string['numberscaleitems'] = 'Skalenstufen';
 $string['numberscaleitems_help'] = 'Skalenstufen bezeichnet die Anzahl der Einheiten Ihrer Bewertungsskala.
 
-In der Regel sind 3 bis 5 Einheiten sinnvoll (Standard ist 5).';
+In der Regel sind 3 bis 5 Einheiten sinnvoll (standardmäßig 5).';
 $string['numeric'] = 'Nummerisch';
 $string['numeric_help'] = 'Wählen Sie diesen Fragetyp, wenn Sie eine korrekt formatierte Zahl als Antwort erwarten.';
 $string['of'] = 'von';
@@ -322,9 +322,9 @@ $string['order_descending'] = 'Absteigend';
 $string['orderresponses'] = 'Antworten sortieren';
 $string['orderresponses_help'] = 'Wenn Sie alle Antworten anzeigen, können Sie die Auswahl nach Anzahl der Antworten (die Spalte \'Durchschnitt\') für die folgenden 4 Arten von Fragen auswählen:
 
-* Einzelauswahl-Optionsfeld
+* Einzelauswahl Optionsfeld
 * Einzelauswahl Dropdown-Liste
-* Mehrfachauswahl (Kontrollkästchen)
+* Multiplechoice (Kontrollkästchen)
 * Wertungsfragen (einschließlich Likert Skalen).
 
 Wenn Sie auf der Seite \'Alle Antworten\' ankommen, werden standardmäßig alle Antworten in der Reihenfolge geordnet, in der der Fragebogen-Ersteller die Frage-Auswahl eingegeben hat.
@@ -341,7 +341,7 @@ $string['page'] = 'Seite';
 $string['pageof'] = 'Seite {$a->page} von {$a->totpages}';
 $string['parent'] = 'Vorläufer';
 $string['participant'] = 'Teilnehmer/in';
-$string['pleasecomplete'] = 'Bitte Auswahl vervollständigen';
+$string['pleasecomplete'] = 'Auswahl bitte vervollständigen';
 $string['pluginadministration'] = 'Befragungsadministration';
 $string['pluginname'] = 'Befragung';
 $string['position'] = 'Position';
@@ -361,12 +361,12 @@ $string['public'] = 'Öffentlich';
 $string['publiccopy'] = 'Kopie:';
 $string['publicoriginal'] = 'Orginal:';
 $string['qtype'] = 'Typ';
-$string['qtypedaily'] = 'täglich beantworten';
-$string['qtype_help'] = 'Wählen Sie aus, ob Teilnehmer/innen die Befragung einmal, täglich, wöchentlich, monatlich oder beliebig oft ausfüllen können.';
-$string['qtypemonthly'] = 'monatlich beantworten';
-$string['qtypeonce'] = 'einmal beantworten';
-$string['qtypeunlimited'] = 'mehrfach beantworten';
-$string['qtypeweekly'] = 'wöchentlich beantworten';
+$string['qtypedaily'] = 'täglich abgeben';
+$string['qtype_help'] = 'Wählen Sie, ob Teilnehmer/innen die Befragung einmal, täglich, wöchentlich, monatlich oder beliebig oft ausfüllen können.';
+$string['qtypemonthly'] = 'monatlich abgeben';
+$string['qtypeonce'] = 'einmal abgeben';
+$string['qtypeunlimited'] = 'mehrfach abgeben';
+$string['qtypeweekly'] = 'wöchentlich abgeben';
 $string['questionnaire:addinstance'] = 'Eine neue Befragung hinzufügen';
 $string['questionnaireadministration'] = 'Befragungsadministration';
 $string['questionnairecloses'] = 'Befragung wird beendet';
@@ -397,7 +397,7 @@ $string['questiontypes_help'] = 'Beachten Sie die Moodle-Dokumentation';
 $string['radiobuttons'] = 'Radio Buttons';
 $string['radiobuttons_help'] = 'Bei diesem Fragetyp, muss eine von mehreren Antwortvorgaben gewählt werden.';
 $string['rank'] = 'Rang';
-$string['ratescale'] = 'Bewertung (Skala 1..5)';
+$string['ratescale'] = 'Bewertungsskala (1..5)';
 $string['ratescale_help'] = 'Beachten Sie die Moodle-Dokumentation';
 $string['realm'] = 'Befragungstyp';
 $string['realm_help'] = '**Es gibt 3 Typen von Befragungen**
@@ -408,17 +408,17 @@ $string['redirecturl'] = 'URL, zu welcher ein Nutzer nach Abschluss der Befragun
 $string['remove'] = 'Löschen';
 $string['removeallquestionnaireattempts'] = 'Alle Abgaben der Befragung löschen';
 $string['removenotinuse'] = 'Diese Befragung war von einer öffentlichen Befragung abhängig, die gelöscht wurde. Sie kann nicht länger verwendet und sollte daher gelöscht werden.';
-$string['required'] = 'Antwort ist erforderlich';
+$string['required'] = 'Ausfüllen erforderlich';
 $string['required_help'] = 'Wenn Sie **Ja** wählen, ist eine Antwort auf diese Frage obligatorisch, d.h. der Nutzer wird die Befragung nicht abgeben können, bis diese Frage beantwortet ist.';
 $string['requiredparameter'] = 'Ein notwendiger Parameter fehlt.';
 $string['reset'] = 'Zurücksetzen';
 $string['respeligiblerepl'] = 'Ersetzt durch Rollenüberschreibung';
-$string['respondent'] = 'Häufigkeit der Antwort';
+$string['respondent'] = 'Abgabe von';
 $string['respondenteligibleall'] = 'alle';
 $string['respondenteligiblestudents'] = 'nur Teilnehmer/innen';
 $string['respondenteligibleteachers'] = 'nur Trainer/innen';
 $string['respondents'] = 'Befragte';
-$string['respondenttype'] = 'Gruppe der befragten Personen';
+$string['respondenttype'] = 'Abgabetyp';
 $string['respondenttypeanonymous'] = 'anonym';
 $string['respondenttypefullname'] = 'vollständiger Name';
 $string['respondenttype_help'] = 'Sie können die vollständigen Namen der User zu jeder Antwort anzeigen lassen, wenn Sie diese Option auf "mit Namen" setzen.
@@ -448,8 +448,8 @@ $string['savesettings'] = 'Einstellungen sichern';
 $string['search:activity'] = 'Questionnaire (Befragung) - Information zu Aktivität';
 $string['search:question'] = 'Questionnaire - Fragen';
 $string['section'] = 'Beschreibung';
-$string['sectionbreak'] = '-----Seitenumbruch-----';
-$string['sectionbreak_help'] = '-----Seitenumbruch-----';
+$string['sectionbreak'] = '--- Seitenumbruch ---';
+$string['sectionbreak_help'] = '--- Seitenumbruch ---';
 $string['sectionsnotset'] = 'Sie müssen mindestens EINE Frage pro Abschnitt auswählen!<br> Nicht ausgewählte Abschnitte: {$a}';
 $string['sectiontext'] = 'Beschriftung';
 $string['sectiontext_help'] = 'Dies ist keine Frage, sondern ein (kurzer) Text, der zur Einleitung/Erläuterung von Fragen dienen wird.';
@@ -494,9 +494,9 @@ Werden x und y auf 0 belassen (oder auf 0 gesetzt), dann wird der HTML-Editor mi
 $string['textarearows'] = 'Textbereich Zeilen';
 $string['textbox'] = 'Textfeld';
 $string['textbox_help'] = 'Für den Fragetyp **Textfeld** können Sie die "Textfeldlänge" und die "Max. Textlänge" angeben.
-Standardlängen sind 20 Zeichen für das Textfeld und 25 Zeichen für die maximale Textlänge.';
+Standardmäßig sind 20 Zeichen für die Textfeldlänge und 25 Zeichen für die maximale Textlänge eingestellt.';
 $string['textdownloadoptions'] = 'Optionen für das Herunterladen (CSV)';
-$string['thank_head'] = 'Danke für das Beantworten dieser Befragung.';
+$string['thank_head'] = 'Danke für das Ausfüllen dieser Befragung.';
 $string['theme'] = 'Theme';
 $string['thismonth'] = 'dieser Monat';
 $string['thisresponse'] = 'Diese Antwort';

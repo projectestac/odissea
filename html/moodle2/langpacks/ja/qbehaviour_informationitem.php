@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '情報アイテムに対する動作';
-$string['privacy:metadata'] = '情報アイテム問題動作プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '情報アイテム問題動作プラグインはいかなる個人データも保存しません。';
 $string['seen'] = '閲覧';

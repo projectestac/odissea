@@ -39,9 +39,9 @@ $string['defaultenrol'] = 'Gehitu instantzia ikastaro berrietarako';
 $string['defaultenrol_desc'] = 'Plugin hau modu lehenetsian ikastaro berri guztiei gehi dakieke.';
 $string['deleteinstanceconfirm'] = '"{$a->name}" matrikulatzeko-metodoa ezabatzekotan zaude. Metodo hori erabilita dagoeneko matrikulatutako {$a->users} guztiak desmatrikulatuko dira eta erabiltzaileen kalifikazioak, taldeetako partaidetza eta foroetako harpidetzak bezalako ikastaroko datu guztiak ezabatuko dira.
 
-Ziur al zaude aurrera egin nahi duzula?';
+Ziur zaude aurrera egin nahi duzula?';
 $string['deleteinstanceconfirmself'] = 'Ziur al zaude "{$a->name}"  ikastarora sartzeko modua ematen dizun instatzia ezabatu nahi duzula? Aurrera egiten baduzu, litekeena da gero ikastaro honetara ezinezkoa izatea  sartzea.';
-$string['deleteinstancenousersconfirm'] = '"{$a->name}" matrikulatzeko-metodoa ezabatzekotan zaude. Ziur al zaude aurrera egin nahi duzula?';
+$string['deleteinstancenousersconfirm'] = '"{$a->name}" matrikulatzeko-metodoa ezabatzekotan zaude. Ziur zaude aurrera egin nahi duzula?';
 $string['disableinstanceconfirmself'] = 'Ziur al zaude "{$a->name}"  ikastarora sartzeko modua ematen dizun instantzia desgaitu nahi duzula? Aurrera egiten baduzu, litekeena da gero ikastaro honetara ezinezkoa izatea  sartzea.';
 $string['durationdays'] = '{$a} egun';
 $string['editenrolment'] = 'Editatu matrikulazioa';
@@ -140,7 +140,7 @@ $string['rolefromcategory'] = '{$a->role} (Ikastaro-kategoriatik heredatutakoa)'
 $string['rolefrommetacourse'] = '{$a->role} (Goragoko ikastarotik heredatutakoa)';
 $string['rolefromsystem'] = '{$a->role} (Gune mailan esleitutakoa)';
 $string['rolefromthiscourse'] = '{$a->role} (Ikastaro honetan esleitutakoa)';
-$string['sendfromcoursecontact'] = 'Ikastaro kudeatzaileak bidalita';
+$string['sendfromcoursecontact'] = 'Ikastaroko kontaktuak bidalita';
 $string['sendfromkeyholder'] = 'Giltzainak bidalita';
 $string['sendfromnoreply'] = 'Ez-erantzun helbidetik bidalita';
 $string['startdatetoday'] = 'Gaur';

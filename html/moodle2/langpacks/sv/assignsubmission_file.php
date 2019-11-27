@@ -38,6 +38,7 @@ $string['eventassessableuploaded'] = 'En fil har laddats upp.';
 $string['file'] = 'Filinlämningar';
 $string['filesofthesetypes'] = 'Dessa filtyper kan bifogas i inlämningsuppgiften';
 $string['maxbytes'] = 'Maximal filstorlek';
+$string['maxfiles'] = 'Maxantal filer per inlämning';
 $string['maxfilessubmission'] = 'Maximalt antal uppladdade filer';
 $string['maxfilessubmission_help'] = 'Om uppladdning av filer är aktiverad, kommer varje student att kunna ladda upp till definierad antal filer för inlämnande';
 $string['maximumsubmissionsize'] = 'Maximal inlämningsstorlek';

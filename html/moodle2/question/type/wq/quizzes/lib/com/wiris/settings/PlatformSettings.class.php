@@ -8,8 +8,5 @@ class com_wiris_settings_PlatformSettings {
 	static $UTF8_CONVERSION = true;
 	static $IS_JAVASCRIPT = false;
 	static $IS_FLASH = false;
-	static function evenTokensBoxWidth() {
-		return true;
-	}
 	function __toString() { return 'com.wiris.settings.PlatformSettings'; }
 }

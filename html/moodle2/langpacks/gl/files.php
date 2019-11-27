@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:metadata:core_userkey'] = 'Xérase e almacena unha marca privada. Esta marca pode usarse para acceder aos ficheiros de Moodle sen necesidade de iniciar sesión.';
 $string['privacy:metadata:files'] = 'Un rexistro dos ficheiros enviados ou compartidos por usuarios';
 $string['privacy:metadata:files:author'] = 'O autor do contido do ficheiro';
 $string['privacy:metadata:files:contenthash'] = 'O «hash» do contido do ficheiro';

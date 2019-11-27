@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'En uppladdning har inlämnats.';
 $string['event_assessable_uploaded'] = 'En fil har uppladats.';
 $string['pluginname'] = 'Ladda upp';
+$string['privacy:metadata'] = 'Modulen "Inlämningsuppgift - filinmlämningar"  sparar inte personuppgifter.';

@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'ファイルロッキング';
-$string['privacy:metadata'] = 'ファイルロッキングプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'ファイルロッキングプラグインはいかなる個人データも保存しません。';

@@ -36,5 +36,5 @@ $string['gradingdetailswithadjustmenttotalpenalty'] = 'Βαθμοί για αυ�
 $string['gradingdetailswithpenalty'] = 'Βαθμοί για αυτήν την υποβολή: {$a->raw}/{$a->max}. Η υποβολή αυτή επέβαλε πρόστιμο ύψους {$a->penalty}.';
 $string['gradingdetailswithtotalpenalty'] = 'Βαθμοί για αυτήν την υποβολή: {$a->raw}/{$a->max}. Η υποβολή αυτή επέβαλε πρόστιμο ύψους {$a->penalty}. Συνολικές ποινές μέχρι στιγμής: {$a->totalpenalty}.';
 $string['notcomplete'] = 'Μη πλήρης';
-$string['pluginname'] = 'Προσαρμοστική κατάσταση';
-$string['privacy:metadata'] = 'Το πρόσθετο «Συμπεριφορά ερώτησης κατάστασης προσαρμογής» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['pluginname'] = 'Κατάσταση προσαρμογής';
+$string['privacy:metadata'] = 'Το πρόσθετο συμπεριφοράς ερώτησης «Κατάσταση προσαρμογής» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

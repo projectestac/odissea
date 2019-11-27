@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calculatedvalue'] = 'Valeur calculée';
-$string['disabledmodel'] = 'Ce modèle a été désactivé par l\'administrateur';
+$string['disabledmodel'] = 'Ce modèle a été désactivé par un administrateur.';
 $string['indicator'] = 'Indicateur';
 $string['insight'] = 'Indication';
 $string['insightprediction'] = 'Prédiction {$a}';
@@ -45,7 +45,7 @@ $string['prediction'] = 'Prédiction';
 $string['predictioncalculations'] = 'Calculs de l\'indicateur';
 $string['predictiondetails'] = 'Détails de la prédiction';
 $string['privacy:metadata'] = 'Le plugin Indications n\'enregistre aucune donnée personnelle.';
-$string['selectotherinsights'] = 'Sélectionner d\'autres indications...';
+$string['selectotherinsights'] = 'Sélectionner d\'autres indications…';
 $string['timecreated'] = 'Temps prédit';
 $string['timerange'] = 'Intervalle de temps';
 $string['timerangewithdata'] = '{$a->timestart} à {$a->timeend}';

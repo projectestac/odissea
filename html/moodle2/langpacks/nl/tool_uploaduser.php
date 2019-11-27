@@ -65,10 +65,7 @@ $string['uploadusers_help'] = 'Gebruikers kunnen geïmporteerd worden en optione
 * Elke lijn van het bestand moet één record bevatten
 * Elke record is een datareeks, gescheiden door komma\'s (of andere scheidingstekens)
 * Het eerste record van het bestand is speciaal: het bevat de lijst met veldnamen. Dit bepaalt de opmaak van de rest van het bestand.
-* Vereiste veldnamen zijn: username, firstname,  lastname, email
-* Optionele veldnamen zijn: institution, department, city, country, lang, auth, ajax, timezone, idnumber, icq, phone1, phone2, address, url, description, mailformat, maildisplay, htmleditor, autosubscribe, deleted, oldusername,course1, group1, type1, role1, course2, group2, type2, role2, enz.
-
-Bekijk zeker ook eens de documentatie op moodledocs voor meer info.';
+* Vereiste veldnamen zijn: username, firstname,  lastname, email';
 $string['uploaduserspreview'] = 'Voorbeeld uploaden gebruikers';
 $string['uploadusersresult'] = 'Resultaat uploaden gebruikers';
 $string['uploaduser:uploaduserpictures'] = 'Gebruikersfoto\'s uploaden';

@@ -30,6 +30,6 @@ $string['configplugin'] = 'Amazon S3設定';
 $string['endpoint'] = 'Amazon S3エンドポイント';
 $string['needaccesskey'] = 'アクセスキーを入力してください。';
 $string['pluginname'] = 'Amazon S3';
-$string['privacy:metadata'] = 'Amazon S3リポジトリプラグインはどのような個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
+$string['privacy:metadata'] = 'Amazon S3リポジトリプラグインはいかなる個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
 $string['s3:view'] = 'Amazon S3リポジトリを表示する';
 $string['secret_key'] = '秘密鍵';

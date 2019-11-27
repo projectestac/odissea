@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '単一アップロード';
-$string['privacy:metadata'] = 'アップロード単一課題プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'アップロード単一課題プラグインはいかなる個人データも保存しません。';

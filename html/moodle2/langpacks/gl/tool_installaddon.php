@@ -50,6 +50,7 @@ $string['permcheckrepeat'] = 'Revisar outra vez';
 $string['permcheckresultno'] = 'A localización do tipo de engadido <em>{$a->path}</em> non é escribíbel';
 $string['permcheckresultyes'] = 'A localización do tipo de engadido <em>{$a->path}</em> é escribíbel';
 $string['pluginname'] = 'Instalador de engadidos';
+$string['privacy:metadata'] = 'O engadido instalador de engadidos non almacena ningún dato persoal.';
 $string['remoterequestalreadyinstalled'] = 'Hai unha solicitude para instalar o engadido {$a->name} ({$a->component}) versión {$a->version} desde o directorio de engadidos de Moodle cara este sitio. Porén, este engadido <strong>xa está instalado</strong> neste sitio.';
 $string['remoterequestconfirm'] = 'Hai unha solicitude para instalar o engadido <strong>{$a->name}</strong> ({$a->component}) versión {$a->version} desde o directorio de engadidos de Moodle cara este sitio. Se continúa, o paquete ZIP do engadido será descargado para validación. Aínda non se instalará nada.';
 $string['remoterequestinvalid'] = 'Hai unha solicitude para instalar un engadido desde o directorio de engadidos de Moodle cara este sitio. Desafortunadamente, esta solicitude non é correcta, polo que o engadido non pode ser instalado.';

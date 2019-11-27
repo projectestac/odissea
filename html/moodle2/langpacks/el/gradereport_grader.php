@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['ajaxchoosescale'] = 'Επιλέξτε';
-$string['ajaxclicktoclose'] = 'Κάντε κλικ σε αυτό το κουτάκι για να το καταργήσετε';
+$string['ajaxclicktoclose'] = 'Κάντε κλικ σε αυτό το πλαίσιο για να το διαγράψετε';
 $string['ajaxerror'] = 'Σφάλμα';
 $string['ajaxfailedupdate'] = 'Δεν είναι εφικτή η ενημέρωση [1] από [2]';
 $string['ajaxfieldchanged'] = 'Το πεδίο που επεξεργάζεστε αυτήν τη στιγμή έχει αλλάξει. Θέλετε να χρησιμοποιήσετε την ενημερωμένη τιμή;';

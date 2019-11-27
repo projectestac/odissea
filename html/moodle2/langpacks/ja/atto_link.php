@@ -30,5 +30,5 @@ $string['createlink'] = 'リンクを作成する';
 $string['enterurl'] = 'URLを入力する';
 $string['openinnewwindow'] = '新しいウィンドウで開く';
 $string['pluginname'] = 'リンク';
-$string['privacy:metadata'] = 'atto_linkプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_linkプラグインはいかなる個人データも保存しません。';
 $string['unlink'] = 'リンク解除';

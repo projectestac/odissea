@@ -58,12 +58,12 @@ $string['aggregateweightedmean2'] = 'Simple moyenne pondérée des notes';
 $string['aggregation'] = 'Tendance centrale';
 $string['aggregationcoef'] = 'Coefficient';
 $string['aggregationcoefextra'] = 'Bonus';
-$string['aggregationcoefextra_help'] = 'Lorsque la tendance centrale choisie est la « Naturelle » ou « Moyenne simple pondérée » et que la case « Bonus » est cochée, la note maximale de l\'élément d\'évaluation n\'est pas comptée dans le maximum du total des notes. Cela a pour conséquence qu\'il est possible d\'obtenir la note maximale (ou une note dépassant la note maximale, si l\'administrateur du site a activé cette possibilité) dans la catégorie sans obtenir la note maximale dans tous les éléments d\'évaluation.
+$string['aggregationcoefextra_help'] = 'Lorsque la tendance centrale choisie est la « Naturelle » ou « Moyenne simple pondérée » et que la case « Bonus » est cochée, la note maximale de l\'élément d\'évaluation n\'est pas comptée dans le maximum du total des notes. Cela a pour conséquence qu\'il est possible d\'obtenir la note maximale (ou une note dépassant la note maximale, si l\'administrateur du site a activé cette possibilité) dans la catégorie sans obtenir la note maximale dans tous les éléments d\'évaluation.
 
 Si la tendance centrale choisie est « Moyenne des notes (avec points supplémentaires) » et que les points supplémentaires indiqués sont plus grands que 0, les points supplémentaires constituent le facteur qui multiplie la note avant de l\'ajouter au total, après le calcul de la moyenne.';
 $string['aggregationcoefextrasum'] = 'Bonus';
 $string['aggregationcoefextrasumabbr'] = '+';
-$string['aggregationcoefextrasum_help'] = 'Si la case « Bonus » est cochée, la note maximale de l\'élément d\'évaluation ne sera pas ajoutée à la note maximale de la catégorie, offrant la possibilité d\'obtenir la note maximale (ou une note dépassant la note maximale, si l\'administrateur du site a activé cette possibilité) dans la catégorie sans obtenir la note maximale dans tous les éléments d\'évaluation.';
+$string['aggregationcoefextrasum_help'] = 'Si la case « Bonus » est cochée, la note maximale de l\'élément d\'évaluation ne sera pas ajoutée à la note maximale de la catégorie, offrant la possibilité d\'obtenir la note maximale (ou une note dépassant la note maximale, si l\'administrateur du site a activé cette possibilité) dans la catégorie sans obtenir la note maximale dans tous les éléments d\'évaluation.';
 $string['aggregationcoefextraweight'] = 'Coefficient de bonus';
 $string['aggregationcoefextraweight_help'] = 'Si la pondération pour le bonus est plus grande que 0, la note est traitée comme bonus lors du calcul de la tendance centrale. Ce nombre est le facteur par lequel la note est multipliée avant d\'être ajoutée au total des notes pour le calcul de la moyenne.';
 $string['aggregationcoefweight'] = 'Coefficient de l\'élément';
@@ -105,7 +105,7 @@ $string['calculatedgrade'] = 'Note calculée';
 $string['calculation'] = 'Calcul';
 $string['calculationadd'] = 'Ajouter calcul';
 $string['calculationedit'] = 'Modifier calcul';
-$string['calculation_help'] = 'Les calculs de notes utilisent une syntaxe similaire à celle des fonctions de tableurs. Une formule commence par un signe d\'égalité (=) et emploie des opérateurs et fonctions mathématiques usuels, comme min, max ou sum. On peut au besoin inclure dans les formules les valeurs d\'autres éléments d\'évaluations en indiquant leur identifiant entouré de deux paires de crochets [[...]].';
+$string['calculation_help'] = 'Les calculs de notes utilisent une syntaxe similaire à celle des fonctions de tableurs. Une formule commence par un signe d\'égalité (=) et emploie des opérateurs et fonctions mathématiques usuels, comme min, max ou sum. On peut au besoin inclure dans les formules les valeurs d\'autres éléments d\'évaluations en indiquant leur identifiant entouré de deux paires de crochets [[…]].';
 $string['calculationsaved'] = 'Calcul enregistré';
 $string['calculationview'] = 'Afficher calcul';
 $string['cannotaccessgroup'] = 'Impossible d\'accéder aux notes du groupe sélectionné.';
@@ -118,7 +118,7 @@ $string['categorytotalfull'] = 'Total de {$a->category}';
 $string['categorytotalname'] = 'Nom du total de la catégorie';
 $string['changedefaults'] = 'Modifier les réglages par défaut';
 $string['changereportdefaults'] = 'Modifier les rapports par défaut';
-$string['chooseaction'] = 'Choisir une action...';
+$string['chooseaction'] = 'Choisir une action…';
 $string['choosecategory'] = 'Choisir une catégorie';
 $string['combo'] = 'Onglets et menu déroulant';
 $string['compact'] = 'Compact';

@@ -25,17 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['email'] = 'Bidali e-posta bidezko jakinarazpenak hona';
-$string['emailonlyfromnoreplyaddress'] = 'Beti bidali nahi duzu e-posta ez-erantzun moduko helbide batetik?';
+$string['email'] = 'Bidali posta elektroniok bidezko jakinarazpenak hona';
+$string['emailonlyfromnoreplyaddress'] = 'E-mailak beti ez-erantzun moduko helbide batetik bidali nahi duzu?';
 $string['ifemailleftempty'] = 'Hutsik utzi jakinarazpenak {$a} helbidera bidaltzeko';
-$string['pluginname'] = 'E-posta';
+$string['pluginname'] = 'Posta elektronikoa';
 $string['privacy:metadata:attachment'] = 'Fitxategi-sistemako fitxategi bat.';
 $string['privacy:metadata:attachname'] = 'Erantsitako fitxategiaren izena (luzapenak MIME mota adierazten du).';
-$string['privacy:metadata:externalpurpose'] = 'Informazio hau kanpoko SMTP zerbitzari batera bidaltzen da jasotzaileari e-posta gisa helarazteko.';
+$string['privacy:metadata:externalpurpose'] = 'Informazio hau kanpoko SMTP zerbitzari batera bidaltzen da jasotzaileari e-mail gisa helarazteko.';
 $string['privacy:metadata:fullmessage'] = 'Mezu osoa emandako formatuan.';
 $string['privacy:metadata:fullmessagehtml'] = 'Mezuaren bertsio osoa.';
 $string['privacy:metadata:recipient'] = 'Mezuaren jasotzailea.';
-$string['privacy:metadata:replyto'] = 'Erantzuteko e-posta helbidea.';
+$string['privacy:metadata:replyto'] = 'Erantzuteko helbide elektronikoa.';
 $string['privacy:metadata:replytoname'] = 'Erantzuteko jasotzailearen izena.';
 $string['privacy:metadata:subject'] = 'Mezuaren gaia duen lerroa.';
 $string['privacy:metadata:userfrom'] = 'Mezua bidaltzen duen erabiltzailea.';

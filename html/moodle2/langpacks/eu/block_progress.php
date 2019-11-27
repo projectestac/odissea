@@ -171,7 +171,7 @@ $string['what_does_monitored_mean_help'] = '<p>Bloke honen helburua ikasleak eur
 <p>Ezarpenen orrian sortu dituzun moduluen zerrenda ikusiko duzu, eta aurrerapen-barran horietatik zeintzuk jarraitu nahi dituzun aukera dezakezu. Moduluak jarraituak izango dira eta karratu txiki bat izango dute aurrerapen-barran soilik Bai aukeratzen baduzu bere "Jarraiturik" atalean.</p>';
 $string['what_expected_by_means'] = 'Zer esan nahi du noizko osatzea espero den?';
 $string['what_expected_by_means_help'] = '<p><em>Noizko osatzea espero den</em> datan jarduera/baliabidea noizko osatu behar den (ikusi, bidali, idatzi, etab.) zehazten da.</p>
-<p>Aktibitatearen erlazionatutako epemuga bat zehazturik badago, zeregin baten entregatze data adibidez, epemuga hori erabili daiteke "Epera mugatuta" aukera markatuta. Aukera hau markatu gabe utziz gero beste epemuga bat zehaztu daiteke aurrerapen-barran, eta azken hau aldatzeak ez du aktibitatearen berezko epemugari eragingo.</p>
+<p>Aktibitatearen erlazionatutako epemuga bat zehazturik badago, zeregin baten entregatze data adibidez, epemuga hori erabili daiteke "Epera mugatuta" aukera markatuta. Aukera hau desmarkatuz gero beste epemuga bat zehaztu daiteke aurrerapen-barran, eta azken hau aldatzeak ez du aktibitatearen berezko epemugari eragingo.</p>
 <p>Aurrerapen-barraren ezarpenetan sartzen zaren lehen aldian, edo jarduera/baliabide berri bat sortu ondoren ezarpenen orrira bueltatuz gero, jarduera/baliabidearen epemuga proposamena agertuko da.
 <ul>
 <li>Epemuga zehazturik duten aktibitateentzat data hori erabiliko da.</li>

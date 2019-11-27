@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answeroptions'] = 'Options à choix';
-$string['answeroptions_help'] = 'La formule de choix suggérée est ...<strong>{={x}+..}</strong>...';
+$string['answeroptions_help'] = 'La formule de choix suggérée est …<strong>{={x}+..}</strong>…';
 $string['pluginname'] = 'Calculée à choix multiple';
 $string['pluginnameadding'] = 'Ajout d\'une question calculée à choix multiple';
 $string['pluginnameediting'] = 'Modification d\'une question calculée à choix multiple';

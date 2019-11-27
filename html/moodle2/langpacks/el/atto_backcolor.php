@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Χρώμα φόντου';
+$string['pluginname'] = 'Χρώμα υπόβαθρου';
 $string['privacy:metadata'] = 'Το πρόσθετο «atto_backcolor» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

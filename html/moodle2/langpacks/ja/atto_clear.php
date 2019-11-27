@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '書式設定をクリアする';
-$string['privacy:metadata'] = 'atto_clearプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_clearプラグインはいかなる個人データも保存しません。';

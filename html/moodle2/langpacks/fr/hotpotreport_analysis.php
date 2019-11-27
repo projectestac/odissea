@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Rapport d\'analyse statistique';
+$string['privacy:metadata'] = 'Le plugin Rapport d\'analyse statistique n\'enregistre aucune donnée personnelle.';

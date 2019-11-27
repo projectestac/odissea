@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XHTMLフォーマット';
 $string['pluginname_help'] = 'XHTMLフォーマットでは別のアプリケーションで使用できるようカテゴリ内の問題すべてをstrict XHTML形式の単一ページにエクスポートすることができます。';
-$string['privacy:metadata'] = 'XHTML問題フォーマットプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'XHTML問題フォーマットプラグインはいかなる個人データも保存しません。';

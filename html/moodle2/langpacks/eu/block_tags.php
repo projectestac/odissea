@@ -40,4 +40,4 @@ $string['tagcollection_help'] = 'Aukeratu nongo etiketa-bilduma erakutsi. "Edoze
 $string['taggeditemscontext'] = 'Etiketatutako elementuen testuingurua';
 $string['taggeditemscontext_help'] = 'Etiketa-lainoan erakutsiko diren etiketak mugatu ditzakezu ikastaro-kategorian, ikastaroan edo moduluan daudenetara';
 $string['tags:addinstance'] = 'Gehitu etiketa bloke berria';
-$string['tags:myaddinstance'] = 'Gehitu etiketa bloke berria aginte-panelean';
+$string['tags:myaddinstance'] = 'Gehitu etiketa bloke berria Aginte-panelean';

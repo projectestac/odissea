@@ -69,6 +69,7 @@ $string['privacy:metadata:sortorder'] = 'Sortierreihenfolge';
 $string['removefavourite'] = 'Als Favorit löschen';
 $string['reorderfullname'] = 'Vollständiger Kursname';
 $string['reorderid'] = 'Kurs-ID';
+$string['reorderiddesc'] = 'Angezeigte Kurs-ID';
 $string['reordernone'] = 'Sortierung per Drag-und-Drop';
 $string['reordershortname'] = 'Kurzer Kursname';
 $string['setmaxcourses'] = 'Maximale Kurszahl';

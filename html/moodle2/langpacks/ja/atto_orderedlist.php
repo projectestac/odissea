@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '順序付きリスト';
-$string['privacy:metadata'] = 'atto_orderedlistプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_orderedlistプラグインはいかなる個人データも保存しません。';

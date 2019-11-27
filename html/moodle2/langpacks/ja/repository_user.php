@@ -29,5 +29,5 @@ $string['configplugin'] = 'ユーザプライベートファイルリポジト�
 $string['emptyfilelist'] = '表示するファイルはありません。';
 $string['pluginname'] = 'プライベートファイル';
 $string['pluginname_help'] = 'ユーザプライベートエリアのファイル';
-$string['privacy:metadata'] = 'プライベートファイルリポジトリプラグインはどのような個人データも保存または転送しません。';
+$string['privacy:metadata'] = 'プライベートファイルリポジトリプラグインはいかなる個人データも保存または転送しません。';
 $string['user:view'] = 'ユーザプライベートファイルを表示する';

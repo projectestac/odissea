@@ -29,4 +29,4 @@ $string['enabledock'] = 'Baimendu erabiltzaileari blokea ertzera eramaten';
 $string['pluginname'] = 'Kudeaketa';
 $string['privacy:metadata'] = 'Kudeaketa blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['settings:addinstance'] = 'Gehitu ezarpenak blokea';
-$string['settings:myaddinstance'] = 'Gehitu ezarpenak bloke berria aginte-panelean';
+$string['settings:myaddinstance'] = 'Gehitu ezarpenak bloke berria Aginte-panelean';

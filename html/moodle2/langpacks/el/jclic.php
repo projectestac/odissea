@@ -73,4 +73,5 @@ $string['totaltime'] = 'Συνολικός χρόνος';
 $string['unlimited'] = 'Απεριόριστο';
 $string['url'] = 'Διεύθυνση URL';
 $string['urledit'] = 'Αρχείο δραστηριότητας JClic';
+$string['urledit_help'] = 'Το αρχείο «jclic.zip» στο οποίο θα βρείτε το πακέτο δραστηριότητας JClic.';
 $string['width'] = 'Πλάτος';

@@ -29,7 +29,7 @@ $string['accessdenied'] = 'アクセスが拒否されました。';
 $string['accounts'] = 'アカウント';
 $string['addcategory'] = 'カテゴリを追加する';
 $string['additionalhtml'] = '追加HTML';
-$string['additionalhtml_desc'] = 'これらの設定ではあなたがすべてのページに追加したいHTMLを指定することができます。あなたはページのHEADタグ内、BODYタグが開かれた直後、またはBODYタグが閉じられる直前にHTMLを設定することができます。<br />この設定により、すべてのページにカスタムヘッダおよびフッタを追加またはGoogle Analytics のようなサービスのサポートをあなたが選択したテーマから独立して簡単に追加することができます。';
+$string['additionalhtml_desc'] = 'これらの設定ではあなたがすべてのページに追加したいHTMLを指定することができます。あなたはページのHEADタグ内、BODYタグが開かれた直後、またはBODYタグが閉じられる直前にHTMLを設定することができます。<br />この設定により、すべてのページにカスタムヘッダおよびフッタを追加またはGoogle Analyticsのようなサービスのサポートをあなたが選択したテーマから独立して簡単に追加することができます。';
 $string['additionalhtmlfooter'] = 'BODYタグが閉じられる前';
 $string['additionalhtmlfooter_desc'] = 'このコンテンツはすべてのページのBODYタグが閉じられる直前に追加されます。';
 $string['additionalhtmlhead'] = 'HEADタグ内';
@@ -170,7 +170,7 @@ $string['configallowobjectembed'] = 'デフォルトのセキュリティ対策�
 $string['configallowoverride'] = 'あなたは左側のロールを持つ人が他の人にカラムのロールをオーバーライドすることを許可できます。';
 $string['configallowoverride2'] = '左側カラム内のロールでオーバライドできるロールを選択してください。<br />これらの設定はケイパビリティ「moodle/role:override」または「moodle/role:safeoverride」を持つユーザにのみ適用されることに留意してください。';
 $string['configallowswitch'] = 'ユーザが持つロールをベースに、どのロールにスイッチできるか選択してください。このテーブルのエントリに加えてロールをスイッチできるようにするにはユーザが「moodle/role:switchroles」ケイパビリティを持つ必要があります。<br />「moodle/course:vie」wケイパビリティを持ち、「moodle/site:doanything」ケイパビリティを持たないロールにのみスイッチできるため、このテーブルのいくつかのカラムは無効にされていることに留意してください。';
-$string['configallowthemechangeonurl'] = 'この設定を有効にした場合、MoodleのURLに下記いずれかを追加することにより、テーマを変更することができます。
+$string['configallowthemechangeonurl'] = 'この設定を有効にした場合、MoodleのURLに以下のいずれかを追加することにより、テーマを変更することができます。
 <br />
 ?theme=themename (例: mymoodlesite.com/?theme=afterburner )
 <<br />
@@ -199,7 +199,7 @@ $string['configcourserequestnotify2'] = '新しいコースがリクエストさ
 $string['configcoursesperpage'] = 'コース一覧の1ページあたりに表示するコース数を入力してください。';
 $string['configcourseswithsummarieslimit'] = 'シンプルな一覧に戻る前、コース一覧に表示するコース概要を含むコースの最大数です。';
 $string['configcronclionly'] = 'ウェブ経由でcronを実行することにより、匿名ユーザに機密情報を晒してしまいます。そのため、コマンドラインによるcronの実行またはリモートアクセスに対してcronにパスワードを設定することをお勧めします。';
-$string['configcronremotepassword'] = 'cronパスワードを設定した場合、下記の形式のURLを使用してcronパスワードを提供しない限り、ウェブブラウザからcron.phpを動作させることはできません。<pre>
+$string['configcronremotepassword'] = 'cronパスワードを設定した場合、以下の形式のURLを使用してcronパスワードを提供しない限り、ウェブブラウザからcron.phpを動作させることはできません。<pre>
 https://site.example.com/admin/cron.php?password=opensesame
 </pre>これが空白の場合、パスワードは要求されません。';
 $string['configcurlcache'] = 'cURLキャッシュの有効期間 (Time-to-live) を秒で指定してください。';
@@ -302,7 +302,7 @@ $string['configmaxeditingtime'] = 'ここではフォーラム投稿、用語集
 $string['configmaxevents'] = '直近イベント数';
 $string['configmaxusersperpage'] = 'コース、グループ、コーホート、ウェブサービス等において、ユーザセレクタに表示するユーザの最大数です。';
 $string['configmessaging'] = 'この設定を有効にした場合、ユーザはサイトの他のユーザにメッセージを送信できるようになります。';
-$string['configmessagingallowemailoverride'] = 'ユーザにプロファイルに設定されたメールアドレス以外のメールアドレスへの通知メッセージ送信を許可します。';
+$string['configmessagingallowemailoverride'] = 'プロファイルのメールアドレス以外のメールアドレスへの通知メッセージ送信をユーザに許可します。';
 $string['configmessagingallusers'] = 'この設定を有効にした場合、ユーザはメッセージ送信先を選択する時にサイトの誰からでもメッセージの受信を許可しているユーザすべての一覧を閲覧することができます。この設定を無効にした場合、ユーザは自分のコースのユーザ一覧のみ閲覧することができます。また、メッセージプリファレンスに次の2つのオプションが提供されます - コンタクトからのメッセージのみ受信する、コンタクト先およびコース内の誰からでもメッセージを受信する。';
 $string['configmessagingdeleteallnotificationsdelay'] = '既読および未読の通知を削除することによりスペースを節約することができます。通知作成後、どのくらいの期間で通知を削除しますか?';
 $string['configmessagingdeletereadnotificationsdelay'] = 'スペースを空けるため、未読通知を削除することができます。どのくらいの期間の後、未読通知を削除しますか?';
@@ -371,7 +371,7 @@ $string['configsitemaxcategorydepthhelp'] = 'ここではカテゴリまたは�
 $string['configslasharguments'] = '「スラッシュ引数」 (<em>PATH_INFO</em>に使用) はSCORMパッケージおよび複数ファイルリソースを正しく表示するために必要です。あなたのウェブサーバがスラッシュ引数をサポートしない場合、そしてあなたが設定できない場合、結果として動作しないものが発生する可能性もありますが、この設定を無効にすることはできます。<br />注意: 「スラッシュ引数」の使用は将来的なMoodleのバージョンに必須となります。';
 $string['configsmartpix'] = 'この設定を有効にした場合、PHPスクリプトが現在のテーマ、そしてすべてのテーマ、最後にMoodle/pixフォルダを検索して、アイコンを表示します。これにより、テーマ間の重複するイメージファイルを減らすことができますが、パフォーマンスにおいてわずかな負荷がかかります。';
 $string['configsmtpauthtype'] = 'ここではSMTPサーバに使用する認証タイプを設定します。';
-$string['configsmtphosts'] = 'Moodleでメールを送信する時に使用する1つ以上のローカルSMTPサーバ名を入力してください (例 mail.a.comまたはmail.a.com;mail.b.com)。デフォルト以外のポート (例 ポート25以外) を指定するには[サーバ]:[ポート]シンタックスを使用することができます (例 mail.a.com:587)。セキュアコネクションのためには通常ポート465 (SSL)、ポート587 (TLS) が使用されます。必要であれば下記にセキュリティプロトコルを指定してください。空白にした場合、MoodleはデフォルトのPHPメール送信メソッドを使用します。';
+$string['configsmtphosts'] = 'Moodleでメールを送信する時に使用する1つ以上のローカルSMTPサーバ名を入力してください (例 mail.a.comまたはmail.a.com;mail.b.com)。デフォルト以外のポート (例 ポート25以外) を指定するには[サーバ]:[ポート]シンタックスを使用することができます (例 mail.a.com:587)。セキュアコネクションのためには通常ポート465 (SSL)、ポート587 (TLS) が使用されます。必要であれば以下にセキュリティプロトコルを指定してください。空白にした場合、MoodleはデフォルトのPHPメール送信メソッドを使用します。';
 $string['configsmtpmaxbulk'] = 'SMTPセッションごとに送信するメッセージの最大数です。メッセージのグルーピングにより、メールの送信をスピードアップすることができます。2より少ない値に設定した場合、メールごとに新しいSMTPセッションの開始が強制されます。';
 $string['configsmtpsecure'] = 'SMTPサーバにセキュアコネクションが必要な場合、正しいプロトコルタイプを指定してください。';
 $string['configsmtpuser'] = '上でSMTPサーバを設定し、なおかつ認証が必要な場合、ユーザ名およびパスワードを入力してください。';
@@ -918,13 +918,13 @@ $string['pluginsoverview'] = 'プラグイン概要';
 $string['pluginsoverviewsee'] = '詳細は<a href="{$a->url}">プラグイン概要</a>ページをご覧ください。';
 $string['policysettings'] = 'ポリシー設定';
 $string['privacyandpolicies'] = 'プライバシーおよびポリシー';
-$string['privacy:metadata'] = '管理プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '管理プラグインはいかなる個人データも保存しません。';
 $string['privacysettings'] = 'プライバシー設定';
 $string['profilecategory'] = 'カテゴリ';
 $string['profilecategoryname'] = 'カテゴリ名 (ユニークにしてください)';
 $string['profilecategorynamenotunique'] = 'このカテゴリ名はすでに使用されています。';
 $string['profilecommonsettings'] = '共通設定';
-$string['profileconfirmcategorydeletion'] = 'このカテゴリには上記 (トップカテゴリの場合は下記) カテゴリに移動される {$a} 個のフィールドが含まれています。<br />本当にこのカテゴリを削除してもよろしいですか?';
+$string['profileconfirmcategorydeletion'] = 'このカテゴリには上記 (トップカテゴリの場合は以下) カテゴリに移動される {$a} 個のフィールドが含まれています。<br />本当にこのカテゴリを削除してもよろしいですか?';
 $string['profileconfirmfielddeletion'] = 'このフィールドには削除される {$a} 名のユーザレコードが含まれています。<br />本当にこのフィールドを削除してもよろしいですか?';
 $string['profilecreatecategory'] = '新しいプロファイルカテゴリを作成する';
 $string['profilecreatefield'] = '新しいプロファイルフィールドを作成する:';
@@ -1268,6 +1268,7 @@ $string['unsupportedphpversion7'] = 'PHPバージョン7はサポートされて
 $string['unsupportedphpversion71'] = 'PHPバージョン7.1はサポートされません。';
 $string['unsupportedphpversion72'] = 'PHPバージョン7.2はサポートされていません。';
 $string['unsupportedphpversion73'] = 'PHPバージョン7.3はサポートされません。';
+$string['unsupportedphpversion74'] = 'PHPバージョン7.4はサポートされません。';
 $string['unsuspenduser'] = 'ユーザアカウントを有効にする';
 $string['updateaccounts'] = '既存のアカウントを更新する';
 $string['updateautocheck'] = '利用可能な更新を自動チェックする';
@@ -1308,7 +1309,7 @@ $string['upgradestalefilesinfo'] = 'Moodleディレクトリ内に少なくと�
 
 後で重大な問題が発生する可能性があるためあなたはMoodleディレクトリ内に単一バージョンのMoodleファイルのみ含まれていることを確認する必要があります。
 
-下記の方法であなたのMoodleディレクトリから不要なファイルを取り除くことをお勧めします:
+以下の方法であなたのMoodleディレクトリから不要なファイルを取り除くことをお勧めします:
 
 * 現在のMoodleディレクトリを「moodle_old」にリネームしてください。
 * ダウンロードまたはMoodle Gitリポジトリから取得した標準Moodleパッケージのみを含む新しいMoodleディレクトリを作成してください。

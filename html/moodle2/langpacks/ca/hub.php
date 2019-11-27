@@ -163,6 +163,7 @@ $string['registeredsites'] = 'Llocs registrats';
 $string['registermoochtips'] = 'Registreu el vostre lloc amb Moodle per obtenir alertes de seguretat i per accedir a Moodle.net, la nostra plataforma per compartir cursos.';
 $string['registersite'] = 'Registrat amb {$a}';
 $string['registerwith'] = 'Registre amb un concentrador';
+$string['registerwithmoodleorg'] = 'Registreu el vostre lloc a Moodle.org';
 $string['registrationconfirmed'] = 'Confirmat el registre del lloc';
 $string['registrationconfirmedon'] = 'Gràcies per registrar el vostre lloc {$a}. La informació del registre es mantindrà al dia mitjançant la tasca programada «Registre del lloc».';
 $string['registrationinfo'] = 'Informació de registre';

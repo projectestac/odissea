@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Examview';
 $string['pluginname_help'] = 'ExamviewフォーマットではExamview 4 XMLファイルより問題をインポートすることができます。新しいバージョンのExamviewではBlackboardフォーマットを使用することができます。';
-$string['privacy:metadata'] = 'Examview問題フォーマットプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'Examview問題フォーマットプラグインはいかなる個人データも保存しません。';

@@ -55,6 +55,7 @@ $string['bynameondate'] = 'per {$a->name} - {$a->date}';
 $string['cannotadd'] = 'No s\'ha pogut afegir el debat al fòrum';
 $string['cannotadddiscussion'] = 'Afegir debats en aquest fòrum requereix pertànyer al grup.';
 $string['cannotadddiscussionall'] = 'No teniu permís per a afegir un tema de debat nou per a tots els participants.';
+$string['cannotadddiscussiongroup'] = 'No podeu crear un debat perquè no sou membre de cap grup.';
 $string['cannotaddsubscriber'] = 'No es pot afegir la subscripció de l\'usuari ID {$a} en aquest fòrum.';
 $string['cannotaddteacherforumto'] = 'No s\'ha pogut agregar instància al fòrum del professor en la secció 0 del curs.';
 $string['cannotcreatediscussion'] = 'No s\'ha pogut obrir un debat nou';

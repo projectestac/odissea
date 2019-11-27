@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredimensions'] = 'Zuriuneak {$a} baieztapen gehiagotarako';
+$string['addmoredimensions'] = 'Gehitu {$a} zuriune baieztapen gehiagorako';
 $string['configgrade0'] = 'Baieztapen baten ebaluazio negatiboa deskribatzeko lehenetsitako hitza';
 $string['configgrade1'] = 'Baieztapen baten ebaluazio positiboa deskribatzeko lehenetsitako hitza';
-$string['dimensioncommentfor'] = 'Iruzkina {$a}rentzat';
+$string['dimensioncommentfor'] = '{$a}ren iruzkina';
 $string['dimensiondescription'] = 'Deskribapena';
 $string['dimensiongrade'] = 'Kalifikazioa';
 $string['dimensionnumber'] = '{$a}. baieztapena';

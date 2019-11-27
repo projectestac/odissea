@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'Unidades de armazenamento de registo disponíveis';
 $string['configlogplugins'] = 'Por favor, ative todos os módulos necessários e disponha-os pela ordem adequada.';
-$string['exportlog'] = 'Incluir relatórios ao realizar a exportação.';
+$string['exportlog'] = 'Incluir registos de atividade ao realizar a exportação.';
 $string['exportlogdetail'] = 'Incluir relatórios relacionados com o utilizador a quando da exportação.';
 $string['logging'] = 'Ferramenta de registo';
 $string['managelogging'] = 'Gerir unidades de armazenamento de registo';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activemethodinfo'] = 'La méthode {$a->method} est sélectionnée comme méthode d\'évaluation courante pour la zone « {$a->area} »';
+$string['activemethodinfo'] = 'La méthode « {$a->method} » est sélectionnée comme méthode d\'évaluation courante pour la zone « {$a->area} »';
 $string['activemethodinfonone'] = 'Aucune méthode d\'évaluation avancée n\'est sélectionnée pour la zone « {$a->area} ». L\'évaluation simple directe sera utilisée.';
 $string['changeactivemethod'] = 'Changer la méthode d\'évaluation courante à';
 $string['clicktoclose'] = 'Cliquer pour fermer';

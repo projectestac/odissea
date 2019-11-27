@@ -43,7 +43,7 @@ $string['check_indexes'] = 'Procurar indíces da BD em falta';
 $string['checkoraclesemantics'] = 'Verificar semântica';
 $string['check_oracle_semantics'] = 'Procurar por semânticas de comprimento errado';
 $string['completelogbelow'] = '(ver abaixo o registo completo da pesquisa)';
-$string['confirmcheckbigints'] = 'Esta funcionalidade vai procurar <a href="http://tracker.moodle.org/browse/MDL-11038">campos inteiros potencialmente errados</a> no seu servidor Moodle, gerando (mas não executando!) automaticamente os comandos SQL necessários para ter todos os campos inteiros da sua BD definidos corretamente.
+$string['confirmcheckbigints'] = 'Esta funcionalidade vai procurar <a href="https://tracker.moodle.org/browse/MDL-11038">campos inteiros potencialmente errados</a> no seu servidor Moodle, gerando (mas não executando!) automaticamente os comandos SQL necessários para ter todos os campos inteiros da sua BD definidos corretamente.
 
 Uma vez gerados, pode copiar estes comandos e executá-los de forma segura no seu interface SQL preferido (não se esqueça de fazer uma cópia de segurança dos seus dados antes de executar o comando).
 
@@ -69,7 +69,7 @@ Uma vez gerados, pode copiar estes comandos e executá-los de forma segura no se
 É altamente recomendado que esteja a executar a atualização mais recente disponível para a sua versão do Moodle antes de executar a pesquisa de índices em falta.
 
 Esta funcionalidade não realiza nenhuma ação na BD (apenas lê a partir desta) e, por isso, pode ser executada com segurança em qualquer momento.';
-$string['confirmcheckoraclesemantics'] = 'Esta funcionalidade vai procurar <a href="http://tracker.moodle.org/browse/MDL-29322">colunas varchar2 do Oracle usando semântica BYTE</a> no seu servidor Moodle, gerando (mas não executando!) automaticamente os comandos SQL necessários para usar semântica CHAR (melhor para compatibilidade entre BDs e limites superiores de dimensão do conteúdo).
+$string['confirmcheckoraclesemantics'] = 'Esta funcionalidade vai procurar <a href="https://tracker.moodle.org/browse/MDL-29322">colunas varchar2 do Oracle usando semântica BYTE</a> no seu servidor Moodle, gerando (mas não executando!) automaticamente os comandos SQL necessários para usar semântica CHAR (melhor para compatibilidade entre BDs e limites superiores de dimensão do conteúdo).
 
 Uma vez gerados, pode copiar estes comandos e executá-los de forma segura no seu interface SQL preferido (não se esqueça de fazer uma cópia de segurança dos seus dados antes de executar o comando).
 
@@ -142,7 +142,7 @@ $string['integerincorrectlength'] = 'Tamanho incorreto para campo inteiro';
 $string['key'] = 'Chave';
 $string['keynameempty'] = 'O nome da chave não pode ficar vazio';
 $string['keys'] = 'Chaves';
-$string['listreservedwords'] = 'Lista de palavras reservadas<br />(usada para manter atualizada a <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a>)';
+$string['listreservedwords'] = 'Lista de palavras reservadas<br />(usada para manter atualizada a <a href="https://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">lista de palavras reservadas do editor XMLDB</a>)';
 $string['load'] = 'Carregar';
 $string['main_view'] = 'Página principal XMLDB';
 $string['masterprimaryuniqueordernomatch'] = 'Os campos na sua chave externa devem estar na mesma ordem que estão na UNIQUE KEY na tabela referênciada.';

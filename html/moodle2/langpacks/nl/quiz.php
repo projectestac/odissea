@@ -158,9 +158,11 @@ $string['cannotstartmissingquestion'] = 'Kan geen poging voor deze test starten.
 $string['cannotstartnoquestions'] = 'Kan de poging voor deze test niet starten. De test is nog niet klaar. Er zijn nog geen vragen toegevoegd.';
 $string['cannotwrite'] = 'Kan exportbestand niet wegschrijven ({$a})';
 $string['canredoquestions'] = 'Opnieuw doen toestaan binnen een poging';
-$string['canredoquestions_desc'] = 'Indien ingeschakeld zullen leerlingen die een bepaalde vraag voltooid hebben een Vraag opnieuw beantwoorden-knop zien. Hiermee kunnen ze een andere versie van dezelfde vraag proberen, zonder de hele testpoging te moeten insturen en een nieuwe poging te starten. Deze optie is vooral nuttig voor oefentesten.
+$string['canredoquestions_desc'] = 'Indien ingeschakeld zullen leerlingen die een bepaalde vraag voltooid hebben een \'Vraag opnieuw beantwoorden\'-knop zien. Hiermee kunnen ze een andere versie van dezelfde vraag proberen, zonder de hele testpoging te moeten insturen en een nieuwe poging te starten. Deze optie is vooral nuttig voor oefentesten.
+
 Deze instelling is enkel van toepassing voor vragen (bijvoorbeeld niet de open vraag) en vraaggedrag (bijvoorbeeld onmiddellijke feedback of interactief met meerdere pogingen) waar het mogelijk is voor leerlingen om een vraag te beëindigen voor de poging is ingestuurd.';
-$string['canredoquestions_help'] = 'Indien ingeschakeld zullen leerlingen die een bepaalde vraag voltooid hebben een Vraag opnieuw beantwoorden-knop zien. Hiermee kunnen ze een andere versie van dezelfde vraag proberen, zonder de hele testpoging te moeten insturen en een nieuwe poging te starten. Deze optie is vooral nuttig voor oefentesten.
+$string['canredoquestions_help'] = 'Indien ingeschakeld zullen leerlingen die een bepaalde vraag voltooid hebben een \'Vraag opnieuw beantwoorden\'-knop zien. Hiermee kunnen ze een andere versie van dezelfde vraag proberen, zonder de hele testpoging te moeten insturen en een nieuwe poging te starten. Deze optie is vooral nuttig voor oefentesten.
+
 Deze instelling is enkel van toepassing voor vragen (bijvoorbeeld niet de open vraag) en vraaggedrag (bijvoorbeeld onmiddellijke feedback of interactief met meerdere pogingen) waar het mogelijk is voor leerlingen om een vraag te beëindigen voor de poging is ingestuurd.';
 $string['canredoquestionsyes'] = 'Leerlingen kunnen een andere versie van een vraag krijgen van een vraag die ze al beantwoord hebben.';
 $string['caseno'] = 'Nee, hoofd/kleine letters zijn niet belangrijk';
@@ -437,7 +439,7 @@ $string['gradingdetailszeropenalty'] = 'Je werd niet bestraft voor deze inzendin
 $string['gradingmethod'] = 'Beoordelingsmethode: {$a}';
 $string['groupoverrides'] = 'Groep voorrang';
 $string['groupoverridesdeleted'] = 'Groepsoverschrijvingen verwijderd';
-$string['groupsnone'] = 'Er zijn geen groepen in deze cursus';
+$string['groupsnone'] = 'Er zijn geen groepen waartoe je toegang hebt.';
 $string['guestsno'] = 'Sorry, gasten kunnen testen niet bekijken noch een poging wagen';
 $string['hidebreaks'] = 'Verberg paginascheidingen';
 $string['hidereordertool'] = 'Verberg tool om vraagvolgorde te wijzigen';
@@ -617,7 +619,7 @@ $string['overduehandlingautoabandon'] = 'Pogingen moeten ingestuurd worden voor 
 $string['overduehandlingautosubmit'] = 'Open pogingen worden automatisch ingestuurd';
 $string['overduehandling_desc'] = 'Wat er standaard zou moeten gebeuren wanneer een leerling zijn test niet instuurd voor de tijd verlopen is.';
 $string['overduehandlinggraceperiod'] = 'Er is extra tijd voorzien om open pogingen in te sturen, maar niet om meer vragen te beantwoorden';
-$string['overduehandling_help'] = 'Deze instelling controleert wat er gebeurt wanneer de leerling een test niet instuurt voor de tijd verstreken is. Als de leerling aan het werken is aan de test, dan zal de afteltimer de test altijd voor hen insturen, maar als ze afgemeld zijn, dan zal deze instelling controleren wat er gebeurt.';
+$string['overduehandling_help'] = 'Deze instelling controleert wat er gebeurt wanneer de leerling een test niet instuurt voor de tijd verstreken is. Als de leerling aan het werken is aan de test, dan zal de afteltimer de test altijd voor hen insturen, maar als ze afgemeld zijn, dan zal deze instelling bepalen wat er gebeurt.';
 $string['overduemustbesubmittedby'] = 'Deze poging is nu over tijd. Ze zou al moeten ingestuurd geweest zijn. Als je wil dat deze poging beoordeeld wordt, dan moet je ze insturen voor {$a}. Als je dit niet doet, dan zullen er voor deze poging geen punten gegeven worden.';
 $string['override'] = 'Overschrijf';
 $string['overridedeletegroupsure'] = 'Ben je er zeker van dat je de overschrijving voor groep {$a} wil verwijderen?';
@@ -694,7 +696,7 @@ $string['questionbank'] = 'uit vragenpool';
 $string['questionbankmanagement'] = 'Vragenpool beheer';
 $string['questionbehaviour'] = 'Vraaggedrag';
 $string['questioncats'] = 'Vraagcategorieën';
-$string['questiondeleted'] = 'Deze vraag is verwijderd. Neem contact op met je leraar';
+$string['questiondeleted'] = 'Deze vraag is verwijderd. Neem contact op met je leraar.';
 $string['questiondependencyadd'] = 'Er is geen beperking op wanneer vraag {$a->thisq} kan beantwoord worden. Klik om te wijzigen';
 $string['questiondependencyfree'] = 'Geen beperking op deze vraag';
 $string['questiondependencyremove'] = 'Vraag {$a->thisq} kan niet beantwoord worden voor de vorige vraag {$a->previousq} voltooid is. Klik om te wijzigen';
@@ -938,23 +940,23 @@ $string['showreport'] = 'Toon rapport';
 $string['showsmallimage'] = 'Kleine afbeelding';
 $string['showteacherattempts'] = 'Toon de pogingen van de leraar';
 $string['showuserpicture'] = 'Toon de foto van de gebruiker';
-$string['showuserpicture_help'] = '<p>Als je deze optie inschakeld, dan zal de naam en foto van de leerling zichtbaar op het scherm gehouden worden tijdens een poging van de test en tijdens het nalezen.</p>
+$string['showuserpicture_help'] = '<p>Als je deze optie inschakelt, zal de naam en foto van de leerling zichtbaar op het scherm gehouden worden tijdens een poging van de test en tijdens het nalezen.</p>
 
 <p>Eén voorbeeld van wanneer je dit zou willen doen is tijdens het afnemen van examens waarbij je zelf aanwezig bent, zodat je kan zien of de leerling wel als zichzelf is aangemeld.</p>';
 $string['shuffle'] = 'Willekeurige volgorde';
 $string['shuffleanswers'] = 'Mix de antwoorden';
 $string['shuffledrandomly'] = 'Willekeurige volgorde';
 $string['shufflequestions'] = 'Mix de vragen';
-$string['shufflequestions_help'] = 'Als je dit inschakelt, dat zal telkens wanneer de test geprobeerd wordt de volgorde van de vragen in deze sectie gewijzigd worden in willekeurige volgorde.
+$string['shufflequestions_help'] = 'Als je dit inschakelt, dan zal telkens wanneer de test geprobeerd wordt de volgorde van de vragen in deze sectie gewijzigd worden in willekeurige volgorde.
 
-Dit kan het moeilijker maken voor leerlingen om te spieken, maar het maakt het ook moeilijker wanneer leerlingen een bepaalde vraag met jou willen bespreken.';
+Dit kan het moeilijker maken voor leerlingen om te spieken, maar het maakt het ook moeilijker wanneer leerlingen een bepaalde vraag met de leraar willen bespreken.';
 $string['shufflewithin'] = 'Haal antwoordvolgorde door elkaar';
-$string['shufflewithin_help'] = '<p>Als je deze optie inschakeld, dan zullen de onderdelen waaruit elke vraag bestaat willekeurig door elkaar gehaald worden bij elke poging dat een leerling doet om de test te maken - gesteld dat deze optie ook ingesteld is bij de vragen van de test.</p>
+$string['shufflewithin_help'] = '<p>Als je deze optie inschakelt, dan zullen de onderdelen waaruit elke vraag bestaat willekeurig door elkaar gehaald worden bij elke poging dat een leerling doet om de test te maken - gesteld dat deze optie ook ingesteld is bij de vragen van de test.</p>
 
 <p>De bedoeling hiervan is om het de leerlingen moeilijker te maken om te spieken.</p>
 
 <p>Dit is natuurlijk alleen van toepassing op vragen die uit meerdere onderdelen bestaan, zoals
-   meerkeuzevragen en koppelvragen. Bij meerkeuzevragen wordt de volgorde van de antwoorden alleen verwisseld als deze instelling op &quot;ja&quot; staat. Voor koppelvragen worden de antwoorden altijd verwisseld. Met deze instelling kun je bepalen of ook nog eens de vraag-antwoord paren verwisseld worden.</p>
+   meerkeuzevragen en koppelvragen. Bij meerkeuzevragen wordt de volgorde van de antwoorden alleen verwisseld als deze instelling op "ja" staat. Voor koppelvragen worden de antwoorden altijd verwisseld. Met deze instelling kun je bepalen of ook nog eens de vraag-antwoord paren verwisseld worden.</p>
 
 <p>Deze instelling heeft niets te maken met het gebruik van willekeurige vragen.</p>';
 $string['singleanswer'] = 'Kies een antwoord';

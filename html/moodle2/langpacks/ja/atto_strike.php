@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '打ち消し線';
-$string['privacy:metadata'] = 'atto_strikeプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'atto_strikeプラグインはいかなる個人データも保存しません。';

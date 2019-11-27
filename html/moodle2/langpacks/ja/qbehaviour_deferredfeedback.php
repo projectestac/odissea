@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '遅延フィードバック';
-$string['privacy:metadata'] = '遅延フィードバック問題動作プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '遅延フィードバック問題動作プラグインはいかなる個人データも保存しません。';

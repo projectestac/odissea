@@ -26,15 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = 'Eskura dauden autentifikazio-pluginak';
-$string['allowaccountssameemail'] = 'Baimendu e-posta bera duten kontuak';
-$string['allowaccountssameemail_desc'] = 'Gaituz gero, posta-helbide bera erabiltzaile-kontu batek baino gehiagok parteka dezake. Horrek segurtasun- edo pribatutasun-arazoak sor ditzake, adibidez pasahitzaren aldaketa baieztatzeko mezuarekin.';
+$string['allowaccountssameemail'] = 'Baimendu helbide elektroniko bera duten kontuak';
+$string['allowaccountssameemail_desc'] = 'Gaituz gero, helbide elektroniko bera erabiltzaile-kontu batek baino gehiagok parteka dezake. Horrek segurtasun- edo pribatutasun-arazoak sor ditzake, adibidez pasahitzaren aldaketa baieztatzeko e-mailarekin.';
 $string['alternatelogin'] = 'Hemen URL bat sartuz gero, gune honetarako sarbide-orri gisa erabiliko da. Orriak formularioa eduki beharko luke, ekintza <strong>\'{$a}\'</strong> ezaugarrian ezarrita duena eta eremu hauek itzultzen dituena: <strong>erabiltzaile-izena</strong> eta <strong>pasahitza</strong>.<br />Tentuz saiatu zaitez URL ezegokia ez sartzen, hori egiteak gunetik kanpo utziko baitzaitu.<br />Lehenetsitako sarbide-orria erabiltzeko hutsik utzi, mesedez.';
 $string['alternateloginurl'] = 'Aukerazko sarbiderako URLa';
 $string['auth_changepasswordhelp'] = 'Pasahitza aldatzeko laguntza';
 $string['auth_changepasswordhelp_expl'] = '{$a} pasahitza galdu duten erabiltzaileei laguntza erakusten die. Aukera hau erantsi daiteke edo <strong>Pasahitza aldaketaren URLa</strong>ren ordez erakutsi edo Moodle-ren barne pasahitza-aldaketa moduan azaldu.';
 $string['auth_changepasswordurl'] = 'Pasahitza aldatzeko URLa';
 $string['auth_changepasswordurl_expl'] = 'Beren {$a} pasahitza galdu duten erabiltzaileak zein URL helbidera bidaliko dituzun zehaztu.  Aukeratu <strong>Pasahitz aldaketa orri estandar erabili</strong> orrian <strong>Ez</strong>.';
-$string['auth_changingemailaddress'] = 'E-posta helbidea {$a->oldemail}-tik {$a->newemail}-ra aldatzeko eskaera egin duzu. Segurtasunagatik, e-posta mezua ari gara bidaltzen helbide berrira benetan zurea dela ziurtatzeko. Mezu honetan bidali dizugun URLa ireki bezain pronto eguneratuko da e-posta helbidea.';
+$string['auth_changingemailaddress'] = 'Helbide elektronikoa {$a->oldemail}-tik {$a->newemail}-ra aldatzeko eskaera egin duzu. Segurtasunagatik, helbide elektroniko berrira e-maila bidaltzen ari gara benetan zurea dela ziurtatzeko. Mezu honetan bidali dizugun URLa ireki bezain pronto eguneratuko da helbide elektronikoa.';
 $string['auth_common_settings'] = 'Ezarpen komunak';
 $string['auth_data_mapping'] = 'Datuen lotura';
 $string['authenticationoptions'] = 'Autentifikazio-aukerak';
@@ -45,12 +45,12 @@ $string['auth_fieldlocks'] = 'Blokeatu erabiltzaile-eremuak';
 $string['auth_fieldlocks_help'] = '<p>Erabiltzaileen datu-eremuak blokea ditzakezu, kudeatzaileek datuok eskuz mantentzen dituzten guneetan bereziki erabilgarria gertatzen dena, erabiltzaileen erregistroak editatuz edo \'Erabiltzaileak igo\' aplikazioaren bidez. Moodle-k behar dituen eremuak blokeatzen badituzu, erabiltzaile-kontuak sortzean datu horiek ematen dituzula ziurtatu; bestela, kontuak ezingo dira erabili.</p><p>Pentsa ezazu ea \'Hutsik egotekotan desblokeatu\' aukera aktibatu behar duzun arazo hori ebitatzeko.</p>';
 $string['auth_fieldmapping'] = 'Datu-parekatzea ({$a})';
 $string['authinstructions'] = 'Eremu hau hutsik utzi ezazu hasiera-orrian sarbide-orrian lehenetsitako argibideak erakusteko. Argibide pertsonalizatuak eman nahi badituzu, idatz itzazu hemen.';
-$string['auth_invalidnewemailkey'] = 'Errorea: e-posta helbidea aldatzea baieztatu nahian ari bazara, nahastu egingo zinen zure e-postara bidali dugun URLa kopiatzean. Mesedez, kopiatu helbidea eta saiatu berriz.';
-$string['authloginviaemail'] = 'Baimendu e-posta bidezko saio-hasiera';
-$string['authloginviaemail_desc'] = 'Baimendu erabiltzaile-izen eta posta-helbidearen bidezko sarbidea (azken hori bakarra izatekotan).';
+$string['auth_invalidnewemailkey'] = 'Errorea: helbide elektronikoa aldatzea baieztatu nahian ari bazara, nahastu egingo zinen e-mailez bidali dugun URLa kopiatzean. Mesedez, kopiatu helbidea eta saiatu berriz.';
+$string['authloginviaemail'] = 'Baimendu helbide elektroniko bidezko saio-hasiera';
+$string['authloginviaemail_desc'] = 'Baimendu erabiltzaile-izen eta helbide elektronikoaren bidezko sarbidea (azken hori bakarra izatekotan).';
 $string['auth_multiplehosts'] = 'Ostalari anitzak zehaz daitezke (ad. ostalari1.com;ostalari2.com;ostalari3.com) edo (edo a. xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = '{$a} autentifikazio-metodoa ez dago konfiguratuta.';
-$string['auth_outofnewemailupdateattempts'] = 'Zure e-posta helbidea eguneratzeko baimenduta dauden saiakerak agortuko dituzu. Bertan behera utzi da zure eguneratzeko eskaria.';
+$string['auth_outofnewemailupdateattempts'] = 'Zure helbide elektronikoa eguneratzeko baimenduta dauden saiakerak agortuko dituzu. Bertan behera utzi da zure eguneratzeko eskaria.';
 $string['auth_passwordisexpired'] = 'Zure pasahitza iraungita dago. Mesedez aldatu ezazu orain.';
 $string['auth_passwordwillexpire'] = 'Zure pasahitza {$a} egun barru iraungiko da. Pasahitza orain aldatu nahi duzu?';
 $string['auth_remove_delete'] = 'Osorik ezabatu';
@@ -69,30 +69,30 @@ $string['auth_updateremote_expl'] = '<p><b>Eguneratu kanpoko datuak:</b> Gaituz 
 $string['auth_updateremotefield'] = 'Eguneratu kanpokoa ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Oharra:</b> LDAP kanpoko datuen eguneratzeak \'binddn\' eta \'bindpw\' balioak ezartzeko eskatzen du erabiltzaile-erregistro guztien edizio-baimena duen erabiltzaile batentzat. Oraingoz, honek ez ditu balio anitzeko atributuak babesten, eta soberako balioak ezabatuko ditu eguneratzean zehar. </p>';
 $string['auth_user_create'] = 'Gaitu erabiltzaileen sorrera';
-$string['auth_user_creation'] = 'Erabiltzaile anonimo berriek erabiltzaile-kontuak autentifikazioko kanpo kodearen gainean sor ditzakete eta e-mailez baieztatu. Hau indarrean jartzen baduzu, erabiltzaileen sorrerarako moduluaren aukerak ere ezarri behar dituzula gogoratu.';
+$string['auth_user_creation'] = 'Erabiltzaile anonimo berriek erabiltzaile-kontuak autentifikazioko kanpo kodearen gainean sor ditzakete eta posta elektroniko bidez baieztatu. Hau indarrean jartzen baduzu, erabiltzaileen sorrerarako moduluaren aukerak ere ezarri behar dituzula gogoratu.';
 $string['auth_usernameexists'] = 'Aukeratutako erabiltzailearen izena honez gero badago. Beste bat aukeratu, mesedez.';
 $string['auth_usernotexist'] = 'Ezin da existitzen ez den erabiltzailea eguneratu: {$a}';
 $string['auto_add_remote_users'] = 'Gehitu automatikoki urrutiko erabiltzaileak';
 $string['cannotmapfield'] = '"{$a->fieldname}" eremua ezin da lotu bere izen laburra "{$a->shortname}" luzeegia delako. Lotura egitea baimentzeko, izen laburra  {$a->charlimit} karaktereko luzerara murriztu beharko duzu. <a href="{$a->link}">Editatu erabiltzaile profilaren eremuak</a>';
 $string['changepassword'] = 'Pasahitza aldatzeko URLa';
-$string['changepasswordhelp'] = 'Ahaztutako pasahitza berreskuratzeko URLa, erabiltzaileei e-postaz bidaliko dena. Kontuan izan ezarpen honek ez duela efekturik autentikazio ezarpen orokorretan pasahitza berreskuratzeko URLa ezarriz gero.';
+$string['changepasswordhelp'] = 'Ahaztutako pasahitza berreskuratzeko URLa, erabiltzaileei posta elektronikoz bidaliko dena. Kontuan izan ezarpen honek ez duela efekturik autentifikazio ezarpen komunetan pasahitza berreskuratzeko URLa ezarriz gero.';
 $string['chooseauthmethod'] = 'Aukeratu autentifikazio-metodoa';
 $string['chooseauthmethod_help'] = 'Ezarpen honek erabiltzailea sartzean erabiltzen den autentifikazio-metodoa zehazten du. Soilik gaitutako autentifikazio-pluginak erabili beharko lirateke, bestela erabiltzailea ezingo da sartu. Erabiltzaileari sartzea ukatzeko, aukeratu "Autentifikaziorik ez"';
 $string['createpassword'] = 'Sortu pasahitza eta jakinarazi erabiltzaileari';
-$string['createpasswordifneeded'] = 'Sortu pasahitza eta bidali e-postaz, beharrezkoa bada';
-$string['emailchangecancel'] = 'Utzi e-postaren aldaketa';
+$string['createpasswordifneeded'] = 'Sortu pasahitza eta bidali posta elektronikoz, beharrezkoa bada';
+$string['emailchangecancel'] = 'Utzi helbide elektronikoaren aldaketa';
 $string['emailchangepending'] = 'Egin gabeko aldaketa. Ireki bidalitako esteka hemen {$a->preference_newemail}.';
-$string['emailnowexists'] = 'Zure profilari ezarri nahi diozun e-posta helbidea beste erabiltzaile bat ezarri zaio zuk eskari egin zenuenetik. E-posta helbidea aldatzeko eskaera bertan behera geratu da, beraz; baina, nahi izanez gero beste e-posta helbide batekin egin dezakezu eskaera berria.';
-$string['emailupdate'] = 'Eguneratu e-posta helbidea';
+$string['emailnowexists'] = 'Zure profilari ezarri nahi diozun helbide elektronikoa beste erabiltzaile bati ezarri zaio zuk eskaria egin zenuenetik. Helbide elektronikoa aldatzeko eskaera bertan behera geratu da, beraz; baina, nahi izanez gero beste helbide elektroniko batekin egin dezakezu eskaera berria.';
+$string['emailupdate'] = 'Eguneratu helbide elektronikoa';
 $string['emailupdatemessage'] = '{$a->fullname} agurgarria,
 
-Zure erabiltzaile kontuko e-posta helbidea aldatzeko eskaria egin duzu {$a->site}-n. Mesedez, ireki ondorengo URLa zure nabigatzailean aldaketa baieztatzeko.
+Zure erabiltzaile kontuko helbide elektronikoa aldatzeko eskaria egin duzu {$a->site}-n. Mesedez, ireki ondorengo URLa zure nabigatzailean aldaketa baieztatzeko.
 
 Edozein zalantza izanez gero mesedez laguntza eskatu hemen: : {$a->supportemail}
 
 {$a->url}';
-$string['emailupdatesuccess'] = '<em>{$a->fullname}</em> erabiltzailearean e-posta helbidea ondo eguneratu da honetara: <em>{$a->email}</em>';
-$string['emailupdatetitle'] = 'e-postaren eguneratzeko baieztapena hemen: {$a->site}';
+$string['emailupdatesuccess'] = '<em>{$a->fullname}</em> erabiltzailearean helbide elektronikoa ondo eguneratu da honetara: <em>{$a->email}</em>';
+$string['emailupdatetitle'] = 'Helbide elektronikoa eguneratzeko baieztapena hemen: {$a->site}';
 $string['enterthenumbersyouhear'] = 'Idatzi entzuten dituzun zenbakiak';
 $string['enterthewordsabove'] = 'Idatzi goiko hitzak';
 $string['errormaxconsecutiveidentchars'] = 'Pasahitzak gehienez {$a} karaktere berdin izan behar ditu elkarren segidan.';
@@ -156,7 +156,7 @@ $string['recaptcha_help'] = 'CAPTCHA programa automaten gehiegikeriak ekiditeko 
 Ziur ez bazaude zein irudi diren, beste CAPTCHA bat eska dezakezu edo audio CAPTCHA bat.';
 $string['security_question'] = 'Segurtasun-galdera';
 $string['selfregistration'] = 'Auto-erregistroa';
-$string['selfregistration_help'] = 'Autentifikazio-plugin bat, e-posta bidezko auto-erregistroa adibidez, aukeratzen bada aukera ematen die ustezko erabiltzaileei beren buruak erregistratu eta kontuak sortzeko. Horrela, spam sortzaileek kontuak sor ditzakete eta foroetako mezuak, blog sarrerak, e.a. spamerako erabili. Arrisku horri aurre egiteko, auto-erregistroa desgaitu edo mugatu egin behar da <em> Gaitutako e-posta domeinuak </em> ezarpena erabilita.';
+$string['selfregistration_help'] = 'Autentifikazio-plugin bat, posta elektronikoan oinarritutako auto-erregistroa adibidez, aukeratzen bada aukera ematen die ustezko erabiltzaileei beren buruak erregistratu eta kontuak sortzeko. Horrela, spam sortzaileek kontuak sor ditzakete eta foroetako mezuak, blog sarrerak, e.a. spamerako erabili. Arrisku horri aurre egiteko, auto-erregistroa desgaitu edo mugatu egin behar da <em>Baimendutako posta elektronikoko domeinuak </em> ezarpena erabilita.';
 $string['settingmigrationmismatch'] = 'Pluginaren ezarpenen izenak zuzentzerakoan desadostasuna aurkitu da. \'{$a->plugin}\' autentikazio-pluginak \'{$a->setting}\' ezarpena dauka \'{$a->legacy}\'(e)rako terminologia zaharrarekin eta \'{$a->current}\'(e)rako terminologia berriarekin. Azken balioa mantendu da. Baieztatu horrela izan behar duela, mesedez.';
 $string['sha1'] = 'SHA-1 zifratze-mota';
 $string['showguestlogin'] = 'Bisitariek saioa hasteko botoia erakuts edo ezkuta dezakezu sarbide-orrian.';

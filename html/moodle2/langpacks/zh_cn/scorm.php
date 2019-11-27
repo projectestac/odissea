@@ -79,6 +79,7 @@ $string['confirmloosetracks'] = '警告：课件包已更新。如果该课件�
 $string['contents'] = '内容';
 $string['coursepacket'] = '课程包';
 $string['coursestruct'] = '课程结构';
+$string['crontask'] = '后台处理SCORM';
 $string['currentwindow'] = '当前窗口';
 $string['datadir'] = '文件系统错误：无法创建课程数据目录';
 $string['defaultdisplaysettings'] = '默认的显示设置';
