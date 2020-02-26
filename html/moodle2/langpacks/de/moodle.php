@@ -259,7 +259,7 @@ $string['childcoursenotfound'] = 'Kurszuordnung nicht gefunden';
 $string['childcourses'] = 'Kurszuordnung';
 $string['choose'] = 'Auswahl';
 $string['choosecourse'] = 'Kurs wählen';
-$string['choosedots'] = 'Auswählen...';
+$string['choosedots'] = 'Auswählen ...';
 $string['chooselivelogs'] = 'Aktuelle Aktivitäten anzeigen';
 $string['chooselogs'] = 'Logdaten auswählen';
 $string['choosereportfilter'] = 'Filter für den Bericht auswählen';
@@ -271,7 +271,7 @@ $string['clear'] = 'Löschen';
 $string['clickhelpiconformoreinfo'] = '… zum Weiterlesen auf das Hilfe-Icon klicken';
 $string['clickhere'] = 'Hier klicken …';
 $string['clicktochangeinbrackets'] = '{$a} (mit Klick änderbar)';
-$string['clicktohideshow'] = 'Zum Erweitern oder Einklappen klicken';
+$string['clicktohideshow'] = 'Zum Erweitern oder Einklappen tippen';
 $string['closebuttontitle'] = 'Schließen';
 $string['closewindow'] = 'Fenster schließen';
 $string['collapse'] = 'Einklappen';
@@ -407,12 +407,11 @@ $string['courserequestwarning'] = 'Nutzer/innen, die einen Kurs beantragen, werd
 $string['courserestore'] = 'Kurswiederherstellung';
 $string['courses'] = 'Kurse';
 $string['coursesearch'] = 'Kurse suchen';
-$string['coursesearch_help'] = '<p>Sie können nach mehreren Begriffen gleichzeitig suchen.</p>
-<ul>
-<li>Begriff - findet jeden Treffer des Begriffs im Text
-<li>+Begriff - nur exakte Treffer werden gefunden
-<li>-Begriff - schließt Treffer aus, die den Begriff enthalten
-</ul>';
+$string['coursesearch_help'] = 'Sie können nach mehreren Begriffen gleichzeitig suchen und Ihre Suche steuern
+
+* Begriff - findet jeden Treffer des Begriffs im Text
+* +Begriff - nur exakte Treffer werden gefunden
+* -Begriff - schließt Treffer aus, die den Begriff enthalten';
 $string['coursesectionsummaries'] = 'Beschreibung zu Kursabschnitten';
 $string['coursesectiontitle'] = 'Kurs: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
 $string['coursesettings'] = 'Grundeinstellungen';
@@ -650,7 +649,7 @@ $string['emailconfirmsent'] = '<p>Um sicherzugehen, dass sich niemand unberechti
 Danach sind Sie auf dieser Moodle-Seite registriert und können sofort loslegen.</p>
 <p>Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website.</p>';
 $string['emailconfirmsentfailure'] = 'Fehler beim Senden der Bestätigungsmitteilung';
-$string['emailconfirmsentsuccess'] = 'Die Bestätigungsmitteilung wurde versendet.';
+$string['emailconfirmsentsuccess'] = 'Die Bestätigungsmitteilung wurde erfolgreich versendet.';
 $string['emaildigest'] = 'E-Mail-Zusammenfassung';
 $string['emaildigestcomplete'] = 'Vollständig (tägliche E-Mail mit allen Forumsbeiträgen)';
 $string['emaildigest_help'] = 'Diese Einstellung zur Zusammenfassung von Beiträgen wird von neuen Foren standardmäßig benutzt:
@@ -888,7 +887,7 @@ $string['forcepasswordchangenot'] = 'Die Kennwortänderung konnte nicht eingefor
 $string['forcepasswordchangenotice'] = 'Ändern Sie Ihr Kennwort, bevor Sie weiterarbeiten.';
 $string['forcetheme'] = 'Design festlegen';
 $string['forgotaccount'] = 'Kennwort vergessen?';
-$string['forgotten'] = 'Anmeldename oder Kennwort vergessen?';
+$string['forgotten'] = 'Kennwort vergessen?';
 $string['forgottenduplicate'] = 'Diese E-Mail-Adresse wird von mehreren Nutzern verwandt. Geben Sie daher bitte den Anmeldenamen ein.';
 $string['forgotteninvalidurl'] = 'Ungültige URL zum Kennwort-Rücksetzen';
 $string['format'] = 'Format';
@@ -930,24 +929,24 @@ $string['general'] = 'Allgemeines';
 $string['geolocation'] = 'Breitengrad - Längengrad';
 $string['gettheselogs'] = 'Logdaten holen';
 $string['go'] = 'Start';
-$string['gpl'] = 'Copyright (C)1999 onwards Martin Dougiamas http://moodle.com
+$string['gpl'] = 'Copyright (C) 1999 onwards Martin Dougiamas https://moodle.com
 
-Dieses Programm ist freie Software. Sie dürfen die Software weiterverbreiten und/oder verändern, und zwar im Rahmen der GNU General Public License, wie sie von der Free Software Foundation veröffentlicht wurde. Es gilt die Version 2 der Lizenz oder (falls Sie wünschen) auch jede spätere Version.
+Dieses Programm ist freie Software. Sie können die Software unter den Bedingungen der von der Free Software Foundation veröffentlichten GNU General Public License weitergeben und / oder ändern. Es gilt die Lizenzversion 2 oder (falls Sie es wünschen) auch jede spätere Version.
 
-Dieses Programm wurde in der Hoffnung erstellt, dass es nützlich sein könnte, allerdings OHNE IRGENDEINE GARANTIE, sogar ohne die implizierte Garantie der Marktfähigkeit oder der Eignung für einen bestimmten Zweck.
+Dieses Programm wird in der Absicht verbreitet, dass es nützlich sein könnte, jedoch OHNE JEGLICHE GARANTIE, also auch ohne die implizite Garantie der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
 
-Weitere Informationen finden Sie auf der Informationsseite zur Moodle-Lizenz : http://docs.moodle.org/dev/License';
-$string['gpl3'] = 'Copyright (C)1999 onwards Martin Dougiamas http://moodle.com
+Details finden Sie in den Moodle-Lizenzinfos: https://docs.moodle.org/dev/License';
+$string['gpl3'] = 'Copyright (C) 1999 onwards Martin Dougiamas https://moodle.com
 
-Dieses Programm ist freie Software. Sie dürfen die Software weiterverbreiten und/oder verändern, und zwar im Rahmen der GNU General Public License, wie sie von der Free Software Foundation veröffentlicht wurde. Es gilt die Version 3 der Lizenz oder (falls Sie wünschen) auch jede spätere Version.
+Dieses Programm ist freie Software. Sie können die Software unter den Bedingungen der von der Free Software Foundation veröffentlichten GNU General Public License weitergeben und / oder ändern. Es gilt die Lizenzversion 3 oder (falls Sie es wünschen) auch jede spätere Version.
 
-Dieses Programm wurde in der Hoffnung erstellt, dass es nützlich sein könnte, allerdings OHNE IRGENDEINE GARANTIE, sogar ohne die implizierte Garantie der Marktfähigkeit oder der Eignung für einen bestimmten Zweck.
+Dieses Programm wird in der Absicht verbreitet, dass es nützlich sein könnte, jedoch OHNE JEGLICHE GARANTIE, also auch ohne die implizite Garantie der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
 
-Weitere Informationen finden Sie auf der Informationsseite zur Moodle-Lizenz : http://docs.moodle.org/dev/License';
+Details finden Sie in den Moodle-Lizenzinfos: https://docs.moodle.org/dev/License';
 $string['gpllicense'] = 'GPL-Lizenz';
 $string['grade'] = 'Bewertung';
 $string['grades'] = 'Bewertungen';
-$string['gravatarenabled'] = '<a href="http://www.gravatar.com/">Gravatar</a> ist aktiviert. Wenn Sie kein eigenes Profilbild hochladen, wird Moodle ein Profilbild von Gravatar anzeigen.';
+$string['gravatarenabled'] = '<a href="https://www.gravatar.com/">Gravatar</a> ist für diese Website aktiviert. Wenn Sie kein eigenes Profilbild hochladen, zeigt Moodle ein Profilbild von Gravatar an.';
 $string['group'] = 'Gruppe';
 $string['groupadd'] = 'Neue Gruppe hinzufügen';
 $string['groupaddusers'] = 'Auswahl zur Gruppe hinzufügen';
@@ -1081,7 +1080,7 @@ $string['indicator:readactions'] = 'Umfang der Leseaktionen';
 $string['indicator:readactions_help'] = 'Dieser Indikator repräsentiert die Anzahl der vom Teilnehmer aufgenommenen Lese- (Ansichts-) Aktionen.';
 $string['indicator:userforumstracking'] = 'Nutzer/in verfolgt Foren';
 $string['indicator:userforumstracking_help'] = 'Dieser Indikator zeigt an, ob der Teilnehmer die Verfolgung in den Foren eingeschaltet hat oder nicht.';
-$string['info'] = 'Informationen';
+$string['info'] = 'Infos';
 $string['institution'] = 'Institution';
 $string['instudentview'] = 'Teilnehmeransicht';
 $string['interests'] = 'Persönliche Interessen';
@@ -1197,7 +1196,7 @@ $string['maxnumcoursesincombo'] = '<a href="{$a->link}">Übersicht mit {$a->numb
 $string['maxsectionslimit'] = 'Neuer Abschnitt kann nicht erstellt werden, da sonst die maximale Anzahl an Abschnitten für diesen Kurs überschritten wird ({$a}).';
 $string['maxsize'] = 'Max. Größe: {$a}';
 $string['maxsizeandareasize'] = 'Maximale Größe für neue Dateien: {$a->size}, Gesamtgröße: {$a->areasize}';
-$string['maxsizeandattachments'] = 'Maximale Größe für Dateien: {$a->size},, maximale Anzahl von Anhängen: {$a->attachments}';
+$string['maxsizeandattachments'] = 'Maximale Größe für Dateien: {$a->size}, maximale Anzahl von Anhängen: {$a->attachments}';
 $string['maxsizeandattachmentsandareasize'] = 'Maximale Größe für neue Dateien: {$a->size}, Anhänge: {$a->attachments}, Gesamtgröße: {$a->areasize}';
 $string['memberincourse'] = 'Kursteilnehmer/innen';
 $string['messagebody'] = 'Mitteilungstext';
@@ -1262,14 +1261,15 @@ $string['modulesetup'] = 'Lege Modultabellen an';
 $string['modulesuccess'] = '{$a} Tabellen wurden korrekt angelegt';
 $string['modulesused'] = 'Benutzte Module';
 $string['modvisible'] = 'Verfügbarkeit';
-$string['modvisible_help'] = 'Wird die Verfügbarkeit auf "Anzeigen auf Kursseite" gesetzt, wird die Aktivität/das Material für Lerner verfügbar (je nach den eingestellten Zugangsbeschränkungen für den Kurs).<br><br> Wird die Verfügbarkeit auf "Vor Lernern verbergen" gesetzt, wird die Aktivität/das Material nur für Nutzer sichtbar, welche Verborgene Aktivitäten sehen können (standardmäßig sind dies Dozenten oder Dozenten ohne Bearbeitungsrechte)';
+$string['modvisible_help'] = 'Wenn die Verfügbarkeit auf "Auf Kursseite anzeigen" gesetzt ist, wird die Aktivität/das Material für Teilnehmer/innen verfügbar (abhängig von möglicherweise eingestellten Zugangsbeschränkungen).<br><br>
+Wenn die Verfügbarkeit auf "Für Teilnehmer/innen verborgen" gesetzt ist, wird die Aktivität/das Material nur für Nutzer/innen verfügbar, die die Berechtigung haben verborgene Aktivitäten zu sehen (standardmäßig Trainer/innen oder Trainer/innen ohne Bearbeitungsrechte).';
 $string['modvisiblehiddensection'] = 'Verfügbarkeit';
 $string['modvisiblehiddensection_help'] = 'Wird die Verfügbarkeit auf "Vor Lernern verbergen" gesetzt, wird die Aktivität/das Material nur für Nutzer sichtbar, welche Verborgene Aktivitäten sehen können (standardmäßig sind dies Dozenten oder Dozenten ohne Bearbeitungsrechte)<br><br>
 Wenn der Kurs viele Aktivitäten/Materialen enthält, kann die Verfügbarkeit auf "Verfügbar machen aber nicht auf Kursseite anzeigen" gesetzt werden, um die Kursseite übersichtlich zu halten. In diesem Fall muss an anderer Stelle ein Link zur Aktivität/zum Material eingefügt werden, z. B. auf auf einer Textseite. Die Aktivität wird dann trotzdem in der Notenübersicht und in anderen Berichten angezeigt.';
 $string['modvisiblewithstealth'] = 'Verfügbarkeit';
-$string['modvisiblewithstealth_help'] = 'Wenn die Verfügbarkeit auf "Anzeigen auf Kursseite" gesetzt ist, wird die Aktivität für Teilnehmer/innen verfügbar (abhängig von möglichen Zugangsbeschränkungen).<br><br>
-Wenn die Verfügbarkeit auf "Vor Teilnehmer/innen verbergen" gesetzt ist, wird die Aktivität nur für Nutzer/innen verfügbar, die die Berechtigung haben verborgene Aktivitäten zu sehen (standardmäßig Trainer/innen).<br><br>
-Wenn der Kurs viele Aktivitäten und Materialien enthält, kann die Kursseite übersichtlich gehalten werden, indem die Verfügbarkeit auf "Für Teilnehmer/innen verbergen, aber über URL verfügbar" gesetzt wird. In diesem Fall muss ein Link zur Aktivität an anderer Stelle eingesetzt werden, z. B. auf einer Textseite. Die Aktivität wird in der Notenübersicht und in Berichten angezeigt.';
+$string['modvisiblewithstealth_help'] = 'Wenn die Verfügbarkeit auf "Auf Kursseite anzeigen" gesetzt ist, wird die Aktivität/das Material für Teilnehmer/innen verfügbar (abhängig von möglichen Zugangsbeschränkungen).<br><br>
+Wenn die Verfügbarkeit auf "Für Teilnehmer/innen verborgen" gesetzt ist, wird die Aktivität/das Material nur für Nutzer/innen verfügbar, die die Berechtigung haben verborgene Aktivitäten zu sehen (standardmäßig Trainer/innen oder Trainer/innen ohne Bearbeitungsrechte).<br><br>
+Wenn der Kurs viele Aktivitäten und Materialien enthält, kann die Kursseite übersichtlich gehalten werden, indem die Verfügbarkeit auf "Verfügbar, aber auf der Kursseite verborgen" gesetzt wird. In diesem Fall muss ein Link zur Aktivität oder zum Material an anderer Stelle eingesetzt werden, z. B. auf einer Textseite. Die Aktivität wird in den Bewertungen und in anderen Berichten angezeigt.';
 $string['month'] = 'Monat';
 $string['months'] = 'Monate';
 $string['moodledocs'] = 'Dokumentation';
@@ -1438,7 +1438,7 @@ $string['notavailable'] = 'Nicht verfügbar';
 $string['notavailablecourse'] = '"{$a}" ist nicht verfügbar';
 $string['noteachersyet'] = 'Dieser Kurs hat noch keine Trainer/innen';
 $string['notenrolled'] = '{$a} ist nicht in diesen Kurs eingeschrieben.';
-$string['notenrolledprofile'] = 'Dieses Profil ist nicht verfügbar, weil die Person den Kurs bisher nicht betreten hat.';
+$string['notenrolledprofile'] = 'Das Profil ist nicht verfügbar, weil diese Person den Kurs bisher nicht betreten hat.';
 $string['noteusercannotrolldatesoncontext'] = 'Hinweis: Die Möglichkeit zum Datenimport wurde für diese Wiederherstellung deaktiviert, da Sie nicht über die nötigen Rechte verfügen.';
 $string['noteuserschangednonetocourse'] = 'Hinweis: Bei der Wiederherstellung von Nutzerdaten (Aktivitäten, Dateien, Mitteilungen) müssen auch die Teilnehmer/innen wiederhergestellt werden. Diese Einstellung wurde automatisch geändert.';
 $string['nothingnew'] = 'Keine vorherige Aktivität';
@@ -1536,9 +1536,9 @@ $string['personal'] = 'Persönlich';
 $string['personalprofile'] = 'Persönliches Profil';
 $string['phone'] = 'Telefon';
 $string['phone1'] = 'Telefon';
-$string['phone2'] = 'Mobiltelefon';
+$string['phone2'] = 'Smartphone';
 $string['phpinfo'] = 'PHP Info';
-$string['pictureof'] = 'Nutzerbild {$a}';
+$string['pictureof'] = 'Nutzerbild von {$a}';
 $string['pictureofuser'] = 'Nutzerbild';
 $string['pleaseclose'] = 'Bitte schließen Sie jetzt dieses Fenster.';
 $string['pleasesearchmore'] = 'Bitte suchen Sie weiter';
@@ -1549,8 +1549,8 @@ $string['plugindeletefiles'] = 'Alle mit dem Plugin \'{$a->name}\' verknüpften 
 $string['pluginsetup'] = 'Lege Plugin-Tabellen an';
 $string['policyaccept'] = 'Ich habe den Text gelesen und stimme ihm zu';
 $string['policyagree'] = 'Lesen Sie diese Datenschutzinformation sorgfältig. Sie müssen zustimmen, um die Website nutzen zu können. Stimmen Sie zu?';
-$string['policyagreement'] = 'Datenschutzinformation';
-$string['policyagreementclick'] = 'URL zur Datenschutzinformation';
+$string['policyagreement'] = 'Datenschutzinfos';
+$string['policyagreementclick'] = 'URL zu den Datenschutzinfos';
 $string['popup'] = 'Popup';
 $string['popupwindow'] = 'Datei in neuem Fenster öffnen';
 $string['popupwindowname'] = 'Popup-Fenster';

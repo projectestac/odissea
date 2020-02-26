@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['confirmdelete'] = 'هل حقاً تريد حذف جميع تعيينات الأدوار غير المعتمدة لدور "{$a->role}" في إطار المستوى "{$a->level}" ؟';
 $string['contextlevel'] = 'مستوى السياق';
 $string['count'] = 'عد';
 $string['noprolbems'] = 'لم يتم العثور على تعيينات مدعومة';
 $string['pluginname'] = 'تعيينات الدور غير مدعومة';
+$string['privacy:metadata'] = 'لا يقوم المكون الإضافيUnsupported role assignments بتخزين أيّ بيانات شخصية.';

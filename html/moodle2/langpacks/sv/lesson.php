@@ -510,6 +510,7 @@ $string['nodeadline'] = 'Ingen tidsbegränsning';
 $string['noessayquestionsfound'] = 'Det gick inte att hitta några essäfrågor i den här lektionen.';
 $string['nohighscores'] = 'Inga höga resultat';
 $string['nolessonattempts'] = 'Det har inte gjorts några försök att genomföra den här lektionen.';
+$string['nolessonattemptsgroup'] = 'Inga försök har gjorts i denna lektion av {$a} gruppmedlemmar.';
 $string['nooneansweredcorrectly'] = 'Ingen lämnade ett korrekt svar.';
 $string['nooneansweredthisquestion'] = 'Ingen besvarade den här frågan.';
 $string['noonecheckedthis'] = 'Ingen kontrollerade det här.';
@@ -679,6 +680,7 @@ I samband med beräkning av det sammanlagda antalet sidor i Lektionen så bedöm
 <p>OBS: den aktuella stilen på raden är inte så imponerande ;-)  Alla stilreglerna (eg: colors, background images, etc) kan redigeras i in mod/lesson/styles.php.';
 $string['progressbarteacherwarning'] = 'Fortskridning av processen visas inte för {$a}';
 $string['progressbarteacherwarning2'] = 'Du kan inte se raden för fortskridande eftersom Du kan redigera den här lektionen';
+$string['progresscompleted'] = 'Du har gjort {$a}% av denna lektion.';
 $string['qtype'] = 'Typ av sida';
 $string['question'] = 'Fråga';
 $string['questionoption'] = 'Alternativ till fråga';

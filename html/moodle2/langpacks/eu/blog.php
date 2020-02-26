@@ -105,7 +105,7 @@ $string['feedisinvalid'] = 'Jario hau ez da egokia';
 $string['feedisvalid'] = 'Jario hau egokia da';
 $string['filterblogsby'] = 'Iragazi sarrerak honen arabera:';
 $string['filtertags'] = 'Iragazi etiketak';
-$string['filtertags_help'] = 'Erabili nahi dituzun sarrerak iragazteko erabil dezakezu funtzio hau. Hemen etiketak zehazten badituzu (komaz banatuta) etiketa horiek dituzten sarrerak bakarrik kopiatuko dira kanpoko blog-etik.';
+$string['filtertags_help'] = 'Erabili nahi dituzun sarrerak iragazteko erabil dezakezu funtzio hau. Hemen etiketak zehazten badituzu (komaz banatuta) soilik etiketa horiek dituzten sarrerak kopiatuko dira kanpoko blog-etik.';
 $string['groupblog'] = 'Talde-bloga: {$a}';
 $string['groupblogdisable'] = 'Talde-bloga ez dago gaituta';
 $string['groupblogentries'] = '{$a->coursename}-rekin {$a->groupname} taldeak lotutako blog-sarrerak';
@@ -166,10 +166,10 @@ $string['publishtogroupassoc'] = 'Zure taldekideak lotutako ikastaroan';
 $string['publishtogroupassocparam'] = 'Zure taldekiak {$a}-n';
 $string['publishto_help'] = 'Hiru aukera posible ditugu:
 
-* Zuretzat bakarrik (zirriborroa) - Kudeatzaileak baino ezin ditu zure mezuak irakurri.
+* Zuretzat soilik (zirriborroa) - Kudeatzaileak baino ezin ditu zure mezuak irakurri.
 * Gune honetako guztientzat - Gunean alta emanda dauden erabiltzaileek baino ezin dituzte irakurri mezuak.
 * Guztientzat - Mundu guztiak irakur ditzake, baita bisitariek ere.';
-$string['publishtonoone'] = 'Zuretzat bakarrik (zirriborroa)';
+$string['publishtonoone'] = 'Zuretzat soilik (zirriborroa)';
 $string['publishtosite'] = 'Gune honetako guztientzat';
 $string['publishtoworld'] = 'Mundu osoarentzat';
 $string['readfirst'] = 'Lehenik hau irakurri';

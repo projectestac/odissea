@@ -37,7 +37,7 @@ Feature: A teacher can add and preview an auxiliar text field in a Science Essay
     | Default mark  | 1                                                     |
     And I open Wiris Quizzes Studio
     And I click on "Correct answer" "text"
-    And I click on "Include text editor" "checkbox"
+    And I click on "Display auxiliary text field" "checkbox"
     And I press "OK" and switch to main window
     And I click on "//input[@name='submitbutton']" "xpath_element"
     And I click on "Preview question" "link"

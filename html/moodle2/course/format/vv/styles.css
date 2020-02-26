@@ -247,6 +247,10 @@ li.vv-activity .contentafterlink {
 .vv-icon-activity,
 .vv-icon-book,
 .vv-icon-document,
+.vv-icon-video,
+.vv-icon-mauthor,
+.vv-icon-mauthorgym,
+.vv-icon-mauthorcloudlibrary,
 .vv-icon-link {
     float: left;
     width: 35px;
@@ -319,4 +323,70 @@ li.vv-activity .contentafterlink {
 
 .vv-sociales .vv-icon-link {
     background-image: url([[pix:format_vv|icon-link-G]]);
+}
+.vv-mates .vv-icon-video {
+    background-image: url([[pix:format_vv|icon-video-B]]);
+}
+
+.vv-lengua .vv-icon-video {
+    background-image: url([[pix:format_vv|icon-video-R]]);
+}
+
+.vv-naturales .vv-icon-video {
+    background-image: url([[pix:format_vv|icon-video-O]]);
+}
+
+.vv-sociales .vv-icon-video {
+    background-image: url([[pix:format_vv|icon-video-G]]);
+}
+
+.vv-mates .vv-icon-mauthor {
+    background-image: url([[pix:format_vv|icon-mauthor-B]]);
+}
+
+.vv-lengua .vv-icon-mauthor {
+    background-image: url([[pix:format_vv|icon-mauthor-R]]);
+}
+
+.vv-naturales .vv-icon-mauthor {
+    background-image: url([[pix:format_vv|icon-mauthor-O]]);
+}
+
+.vv-sociales .vv-icon-mauthor {
+    background-image: url([[pix:format_vv|icon-mauthor-G]]);
+}
+
+.vv-mates .vv-icon-mauthorgym {
+    background-image: url([[pix:format_vv|icon-mauthorgym-B]]);
+}
+
+.vv-lengua .vv-icon-mauthorgym {
+    background-image: url([[pix:format_vv|icon-mauthorgym-R]]);
+}
+
+.vv-naturales .vv-icon-mauthorgym {
+    background-image: url([[pix:format_vv|icon-mauthorgym-O]]);
+}
+
+.vv-sociales .vv-icon-mauthorgym {
+    background-image: url([[pix:format_vv|icon-mauthorgym-G]]);
+}
+
+.vv-mates .vv-icon-mauthorcloudlibrary {
+    background-image: url([[pix:format_vv|icon-mauthorcloudlibrary-B]]);
+}
+
+.vv-lengua .vv-icon-mauthorcloudlibrary {
+    background-image: url([[pix:format_vv|icon-mauthorcloudlibrary-R]]);
+}
+
+.vv-naturales .vv-icon-mauthorcloudlibrary {
+    background-image: url([[pix:format_vv|icon-mauthorcloudlibrary-O]]);
+}
+
+.vv-sociales .vv-icon-mauthorcloudlibrary {
+    background-image: url([[pix:format_vv|icon-mauthorcloudlibrary-G]]);
+}
+h3.vv-sectionname.vv-void{
+    cursor: default;
 }

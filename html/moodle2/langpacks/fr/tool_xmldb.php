@@ -77,11 +77,11 @@ Il est vivement recommandé de disposer de la version la plus récente (version 
 
 Cette fonctionnalité n\'effectue aucune action sur votre base de données et peut donc être lancée à tout moment.';
 $string['confirmdeletefield'] = 'Voulez-vous vraiment supprimer le champ';
-$string['confirmdeleteindex'] = 'Voulez-vous vraiment supprimer l\'index :';
-$string['confirmdeletekey'] = 'Voulez-vous vraiment supprimer la clef :';
-$string['confirmdeletetable'] = 'Voulez-vous vraiment supprimer la table :';
-$string['confirmdeletexmlfile'] = 'Voulez-vous vraiment supprimer le fichier :';
-$string['confirmrevertchanges'] = 'Voulez-vous vraiment revenir à la version antérieure, en supprimant toutes les modifications :';
+$string['confirmdeleteindex'] = 'Voulez-vous vraiment supprimer l\'index :';
+$string['confirmdeletekey'] = 'Voulez-vous vraiment supprimer la clef :';
+$string['confirmdeletetable'] = 'Voulez-vous vraiment supprimer la table :';
+$string['confirmdeletexmlfile'] = 'Voulez-vous vraiment supprimer le fichier :';
+$string['confirmrevertchanges'] = 'Voulez-vous vraiment revenir à la version antérieure, en supprimant toutes les modifications :';
 $string['create'] = 'Créer';
 $string['createtable'] = 'Créer une table';
 $string['defaultincorrect'] = 'Valeur par défaut incorrecte';

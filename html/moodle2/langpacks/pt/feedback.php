@@ -29,7 +29,7 @@ $string['add_item'] = 'Adicionar uma pergunta';
 $string['add_pagebreak'] = 'Adicionar quebra de página';
 $string['adjustment'] = 'Disposição';
 $string['after_submit'] = 'Após submissão';
-$string['allowfullanonymous'] = 'Permitir resposta anónima';
+$string['allowfullanonymous'] = 'Permitir resposta completamente anónima';
 $string['analysis'] = 'Análise';
 $string['anonymous'] = 'Anónimo';
 $string['anonymous_edit'] = 'Guardar nomes dos utilizadores';
@@ -168,7 +168,17 @@ $string['messageprovider:submission'] = 'Notificações do inquérito';
 $string['minimal'] = 'Mínimo';
 $string['mode'] = 'Modo';
 $string['modulename'] = 'Inquérito';
-$string['modulename_help'] = 'O módulo <b>Inquérito</b> permite a criação de inquéritos configuráveis.';
+$string['modulename_help'] = 'O módulo <b>Inquérito</b> permite que um professor crie um inquérito personalizado para obter feedback dos participantes, usando uma variedade de tipos de questões, incluindo escolha múltipla, sim/não ou de resposta curta
+
+As respostas do inquérito podem ser anónimas, se desejado, e os resultados podem ser mostrados a todos os participantes ou restritos apenas aos professores. Quaisquer atividades de inquérito na página principal do site também podem ser concluídas por utilizadores não autenticados.
+
+As Atividades de inquérito podem ser usadas:
+
+* Para avaliações da disciplina, ajudando a melhorar os conteúdos para futuros participantes
+* Para permitir que os participantes se inscrevam nos módulos da disciplina, em eventos, etc.
+* Para inquérito aos visitantes sobre escolhas de disciplinas, políticas escolares, etc.
+* Para inquéritos anti-bullying nos quais os alunos podem relatar incidentes anonimamente
+* Para a criação de inquéritos configuráveis';
 $string['modulenameplural'] = 'Inquéritos';
 $string['move_item'] = 'Mover esta questão';
 $string['multichoice'] = 'Escolha múltipla';
@@ -222,7 +232,7 @@ $string['public'] = 'Público';
 $string['question'] = 'Questão';
 $string['questionandsubmission'] = 'Configurações da questão e da submissão';
 $string['questions'] = 'Questões';
-$string['questionslimited'] = 'A mostrar apenas as {$a} primeiras perguntas. Ver respostas individuais ou descarregar a tabela de dados para ver todas.';
+$string['questionslimited'] = 'A mostrar apenas as {$a} primeiras questões. Veja as respostas individuais ou descarregue a tabela de dados para ver todas.';
 $string['radio'] = 'Escolha múltipla - resposta única';
 $string['radio_values'] = 'Respostas';
 $string['ready_feedbacks'] = 'Inquéritos prontos';

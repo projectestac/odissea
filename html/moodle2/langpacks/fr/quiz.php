@@ -306,7 +306,7 @@ Ce message confirme que vos réponses ont été enregistrées.
 
 Vous pouvez accéder à ce test en suivant le lien {$a->quizurl}.';
 $string['emailconfirmsmall'] = 'Merci pour l\'envoi de vos réponses au test « {$a->quizname} »';
-$string['emailconfirmsubject'] = 'Confirmation d\'envoi : {$a->quizname}';
+$string['emailconfirmsubject'] = 'Confirmation d\'envoi : {$a->quizname}';
 $string['emailnotifybody'] = 'Bonjour {$a->username},
 
 Le participant {$a->studentname} a terminé le test « {$a->quizname} » ({$a->quizurl}) du cours « {$a->coursename} ».

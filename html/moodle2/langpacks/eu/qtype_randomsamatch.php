@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['insufficientoptions'] = 'Behar baino aukera gutxiago daude eskuragarri galdera honentzat, eta ondorioz ez dago galdetegi honetan eskuragarri. Mesedez eman zure irakasleari honen berri.';
 $string['nosaincategory'] = 'Ez dago erantzun laburreko galderarik aukeratutako \'{$a->catname}\' kategorian. Aukeratu beste kategoria bat eta sartu galdera bat edo beste bertan.';
-$string['notenoughsaincategory'] = '{$a->nosaquestions} erantzun laburreko galdera bakarrik dago aukeratutako \'{$a->catname}\' kategorian. Aukeratu beste kategoria bat, sartu bertan galdera bat edo beste edo gutxitu aukeratutako galdera kopurua.';
+$string['notenoughsaincategory'] = '{$a->nosaquestions} erantzun laburreko galdera baino ez dago aukeratutako \'{$a->catname}\' kategorian. Aukeratu beste kategoria bat, sartu bertan galdera gehiago edo gutxitu aukeratutako galdera kopurua.';
 $string['pluginname'] = 'Erantzun laburrak ausaz lotu';
 $string['pluginnameadding'] = 'Erantzun laburrak ausaz lotzeko galderak gehitzen';
 $string['pluginnameediting'] = 'Erantzun laburrak ausaz lotzeko galderak';

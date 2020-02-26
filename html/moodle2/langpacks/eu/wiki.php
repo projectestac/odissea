@@ -39,7 +39,7 @@ $string['backhistory'] = 'Itzuli historiara';
 $string['backoldversion'] = 'Itzuli bertsio zaharrera';
 $string['backpage'] = 'Itzuli orrira';
 $string['backtomapmenu'] = 'Itzuli mapa-menura';
-$string['cannotcomparenewerversion'] = 'Orriaren bertsioa bakarrik aldera daiteke bertsio zaharrago batekin.';
+$string['cannotcomparenewerversion'] = 'Orriaren bertsioa soilik bertsio zaharrago batekin alderatu daiteke.';
 $string['cannoteditpage'] = 'Ezin duzu orri hau editatu.';
 $string['cannotmanagefiles'] = 'Ez duzu baimenik wikiaren fitxategiak kudeatzeko.';
 $string['cannotviewfiles'] = 'Ez duzu baimenik wikiaren fitxategiak ikusteko.';
@@ -59,7 +59,7 @@ $string['creole'] = 'Creole';
 $string['defaultformat'] = 'Lehenetsitako formatua';
 $string['defaultformat_help'] = 'Ezarpen honek wiki-orriak editatzean erabiltzen den formatua zehatzen du.
 
-* HTML - HTML editorea eskura dago
+* HTML - HTML editorea eskuragarri dago
 * Creole - wiki-markak dituen hizkuntza, ediziorako tresna-barra txiki bat duena
 * Nwiki - Mediawiki-ren antzerako marka-hizkuntza, Nwiki moduluan erabiltzen dena';
 $string['deleteallpages'] = 'Ezabatu wikiaren orri guztiak';
@@ -103,7 +103,7 @@ $string['formatcreole'] = 'Creole Formatua';
 $string['formatcreole_help'] = 'Creole wiki-marken hizkuntza arrunta da, ediziorako erreminta-barra batekin marka egokiak gehitzeko.
 
 Orri berria sortzeko, idatzi orri berriaren izena bi kortxeteren artean, esaterako [[2 Orria]].';
-$string['format_help'] = '* HTML - HTML editorea eskura dago
+$string['format_help'] = '* HTML - HTML editorea eskuragarri dago
 * Creole - wiki-markak dituen hizkuntza, ediziorako tresna-barra txiki bat duena
 * Nwiki - Mediawiki-ren antzerako marka-hizkuntza, Nwiki moduluan erabiltzen dena';
 $string['formathtml'] = 'HTML formatua';
@@ -223,7 +223,7 @@ $string['privacy:metadata:wiki_locks:userid'] = 'Orria blokeatu zuen erabiltzail
 $string['privacy:metadata:wiki_pages'] = 'Wiki-orrien inguruko informazioa';
 $string['privacy:metadata:wiki_pages:cachedcontent'] = 'HTML formatuan cacheatutako edukiak';
 $string['privacy:metadata:wiki_pages:pageviews'] = 'Orria ikusi den aldi kopurua';
-$string['privacy:metadata:wiki_pages:readonly'] = 'Orria irakurtzekoa-bakarrik den edo ez';
+$string['privacy:metadata:wiki_pages:readonly'] = 'Orria soilik-irakurtzekoa den edo ez';
 $string['privacy:metadata:wiki_pages:timecreated'] = 'Orria sortu zeneko unea';
 $string['privacy:metadata:wiki_pages:timemodified'] = 'Orria azkenengoz eguneratu zeneko unea';
 $string['privacy:metadata:wiki_pages:timerendered'] = 'Orria azkenengoz erakutsi zeneko unea';
@@ -260,7 +260,7 @@ $string['search:collaborative_page'] = 'Wikia - elkarrekin lan egiteko orriak';
 $string['searchcontent'] = 'Bilatu orriaren edukian';
 $string['searchresult'] = 'Bilaketaren emaitzak';
 $string['searchterms'] = 'Bilaketa-terminoak';
-$string['searchwikis'] = 'Bilatu wikiak';
+$string['searchwikis'] = 'Bilatu wikietan';
 $string['special'] = 'Berezia';
 $string['tableofcontents'] = 'Eduki-taula';
 $string['tagarea_wiki_pages'] = 'Wiki-orriak';

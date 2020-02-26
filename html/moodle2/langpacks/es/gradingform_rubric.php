@@ -50,6 +50,8 @@ $string['level'] = 'Nivel {$a->definition}, {$a->score} puntos.';
 $string['leveldefinition'] = 'Nivel {$a} de definición';
 $string['leveldelete'] = 'Eliminar nivel';
 $string['levelempty'] = 'Clic para editar el nivel';
+$string['lockzeropoints'] = 'Calcular la puntuación basada en la rúbrica con una puntuación mínima de 0';
+$string['lockzeropoints_help'] = 'Este ajuste sólo se aplica si la suma del mínimo número de puntos de cada criterio es mayor de 0. Si se marca, la mínima puntuación posible para la rúbrica será mayor de 0. Si no se marca, la mínima puntuación posible para la rúbrica será mapeada a la mínima puntuación disponible para la actividad (la cual es 0 si no se ha usado una escala).';
 $string['name'] = 'Nombre';
 $string['needregrademessage'] = 'La definición de la rúbrica fue cambiada después de que este estudiante hubiera sido calificado. El estudiante no puede ver esta rúbrica hasta que usted la verifique y  actualice la calificación.';
 $string['pluginname'] = 'Rúbrica';
@@ -80,3 +82,5 @@ $string['showscoreteacher'] = 'Mostrar los puntos para cada nivel durante la eva
 $string['sortlevelsasc'] = 'Criterio de ordenación por niveles:';
 $string['sortlevelsasc0'] = 'Descendente por número de puntos';
 $string['sortlevelsasc1'] = 'Ascendente por número de puntos';
+$string['zerolevelsabsent'] = 'Atención: La mínima puntuación posible para esta rúbrica no es 0; esto puede provocar calificaciones inesperadas para la actividad. Para evitar esto, cada criterio debe tener un nivel con 0 puntos.<br>
+Este aviso puede ser ignorado si se utiliza una escala para calificar, y el nivel mínimo de la rúbrica corresponde al valor mínimo de la escala.';

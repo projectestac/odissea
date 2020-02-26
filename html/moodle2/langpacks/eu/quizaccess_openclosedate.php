@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['notavailable'] = 'Galdetegi hau ez dago eskuragarri une honetan';
 $string['pluginname'] = 'Irekiera eta itxiera-data sarbide-araua';
 $string['privacy:metadata'] = 'Irekiera eta itxiera-data galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';
-$string['quiznotavailable'] = 'Galdetegia eskura noiztik aurrera: {$a}';
+$string['quiznotavailable'] = 'Galdetegia noiztik aurrera eskuragarri: {$a}';

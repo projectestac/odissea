@@ -25,5 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['anygroup'] = '(أيّ مجموعة)';
+$string['description'] = 'السماح فقط للطلاب الذين ينتمون إلى مجموعة محددة ، أو جميع المجموعات.';
+$string['error_selectgroup'] = 'يجب عليك اختيار مجموعة.';
+$string['missing'] = '(مجموعة مفقودة)';
+$string['pluginname'] = 'القيود حسب المجموعة';
+$string['privacy:metadata'] = 'لا يقوم البرنامج المساعد Restriction by group بتخزين أيّ بيانات شخصية.';
 $string['requires_anygroup'] = 'أنت تنتمي إلى أي مجموعة';
 $string['requires_group'] = 'تنتمي إلى <strong>{$a}</strong>';
+$string['requires_notanygroup'] = 'أنت لا تنتمي إلى أيّ مجموعة';
+$string['requires_notgroup'] = 'أنت لا تنتمي إلى {$a}';
+$string['title'] = 'المجموعة';

@@ -71,7 +71,7 @@ $string['pluginname_desc'] = 'Metodo honek modu errepikakorrean zehaztutako koka
 $string['privacy:metadata'] = 'IMS Enterprise fitxategia matrikulazio-pluginak ez du datu pertsonalik biltzen.';
 $string['processphoto'] = 'Gehitu erabiltzailearen argazkia profilari';
 $string['processphotowarning'] = 'Kontuz: Irudiak prozesatzeak zerbitzariari lan karga nabarmen gaineratuko dio seguruenik. Aukera hau ez aktibatzeko gomendatzen da ikasle-kopuru altua prozesatzeko asmoa badago.';
-$string['restricttarget'] = 'Ondorengo helburua zehaztu bada bakarrik prozesatu datuak.';
+$string['restricttarget'] = 'Prozesatu datuak soilik ondorengo helburua zehaztu bada';
 $string['restricttarget_desc'] = 'IMS Enterprise-ko datu-fitxategi bat "helburu" anitzetarako erabil daiteke - LMS ezberdinak, edota eskola/unibertsitateko sistema ezberdinak. Fitxategian helburuko sistemarako datuak zeintzuk diren zehazteko aukera dago, hauek <properties> etiketaren barruan <target> etiketekin izendatuz.
 
 Orokorrean ez duzu honengatik arduratu behar. Hutsik utzi ezarpen hau eta Moodle-k datuak beti prozesatuko ditu, helburua zehaztuta egon edo ez. Bestela, zehaztu <target> etiketaren barruan erabilitako izen zehatza.';

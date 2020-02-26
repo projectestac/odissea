@@ -8,8 +8,7 @@ https://github.com/andrewnicols/moodle-atto_fontsize
 Requirements
 ============
 
-- Moodle 2.7
-- Moodle 2.8
+- Moodle 3.5
 
 Installation
 ============

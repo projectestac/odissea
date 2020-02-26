@@ -63,7 +63,7 @@ $string['confirmdeleteentry'] = 'Möchten Sie diesen Eintrag wirklich löschen?'
 $string['confirmdeleteitem'] = 'Möchten Sie dieses Element wirklich löschen?';
 $string['confirmdeletetemplate'] = 'Möchten Sie diese Vorlage wirklich löschen?';
 $string['confirmusetemplate'] = 'Möchten Sie diese Vorlage wirklich nutzen?';
-$string['continue_the_form'] = 'Beantworten der Fragen fortsetzen';
+$string['continue_the_form'] = 'Ausfüllen des Fragebogens fortsetzen';
 $string['count_of_nums'] = 'Anzahl von Werten';
 $string['courseid'] = 'Kurs-ID';
 $string['creating_templates'] = 'Diese Fragen als neue Vorlage speichern';
@@ -129,7 +129,7 @@ $string['feedback:deletesubmissions'] = 'Vollständige Einträge löschen';
 $string['feedback:deletetemplate'] = 'Templates löschen';
 $string['feedback:edititems'] = 'Fragen bearbeiten';
 $string['feedback_is_not_for_anonymous'] = 'Das Feedback ist nicht für anonyme Personen.';
-$string['feedback_is_not_open'] = 'Feedback ist zu diesem Zeitpunkt nicht möglich';
+$string['feedback_is_not_open'] = 'Ein Feedback ist zu diesem Zeitpunkt nicht möglich';
 $string['feedback:mapcourse'] = 'Kurse globalen Feedbacks zuordnen';
 $string['feedbackopen'] = 'Antworten erlauben ab';
 $string['feedback:receivemail'] = 'E-Mail-Nachricht empfangen';
@@ -163,7 +163,7 @@ $string['mapcourse_help'] = 'Standardmäßig sind Feedbacks, die Sie auf Ihrer S
 Sie können das Erscheinen in jedem Kurs erzwingen, indem Sie einen festen Block erzeugen. Andererseits können Sie das Feedback auf ausgewählte Kurse einschränken, indem Sie das Feedback mit bestimmten Kursen verknüpfen.';
 $string['mapcourseinfo'] = 'Dies ist ein globales Feedback. Es ist in allen Kursen verfügbar, die den Feedback-Block nutzen. Die Kurse in denen das Feedback erscheinen sollen, können begrenzt werden durch explizites Zuordnen. Dazu muss der Kurs gesucht und diesem Feedback zugeordnet werden.';
 $string['mapcoursenone'] = 'Keinem Kurs zugeordnet. Dieses Feedback ist in allen Kursen verfügbar';
-$string['mapcourses'] = 'Diesem Feedback Kurse zuordnen';
+$string['mapcourses'] = 'Feedback zu Kursen zuordnen';
 $string['mappedcourses'] = 'Zugeordnete Kurse';
 $string['mappingchanged'] = 'Kursstruktur wurde geändert';
 $string['maximal'] = 'Maximal';
@@ -179,7 +179,7 @@ Die Antworten können Personen zugeordnet oder anonym erfolgen. Die Ergebnisse k
 Feedbacks auf der Startseite können völlig anonym auch von nicht angemeldeten Personen ausgefüllt und abgegeben werden.
 
 Legen Sie Feedback-Fragebögen zentral an und setzen Sie sie in ausgewählten Kursen ein.';
-$string['modulenameplural'] = 'Feedbacks';
+$string['modulenameplural'] = 'Feedback';
 $string['move_item'] = 'Element verschieben';
 $string['multichoice'] = 'Multiple-Choice';
 $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span> {$a->name}';

@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = '自動リンクを抑える';
+$string['pluginname'] = '自動リンクを抑制する';
 $string['privacy:metadata'] = 'atto_noautolinkプラグインはいかなる個人データも保存しません。';

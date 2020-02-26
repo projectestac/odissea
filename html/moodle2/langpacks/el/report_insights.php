@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calculatedvalue'] = 'Υπολογισμένη τιμή';
-$string['disabledmodel'] = 'Λυπούμαστε, το μοντέλο αυτό έχει απενεργοποιηθεί από το διαχειριστή';
+$string['disabledmodel'] = 'Το μοντέλο αυτό έχει απενεργοποιηθεί από έναν διαχειριστή';
 $string['indicator'] = 'Δείκτης';
 $string['insight'] = 'Ενόραση';
 $string['insightprediction'] = '{$a} πρόβλεψη';

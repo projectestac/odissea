@@ -102,7 +102,7 @@ $string['groupingname'] = 'Taldekatzearen izena';
 $string['groupingnameexists'] = 'Dagoeneko badago ikastaro honetan \'{$a}\' izeneko taldekatzea; mesedez, aukeratu beste bat.';
 $string['groupings'] = 'Taldekatzeak';
 $string['groupingsection'] = 'Taldekatzeetarako sarbidea';
-$string['groupingsection_help'] = 'Taldekatzea ikastaro bateko talde-multzoa da. Hemen taldekatze bat aukeratuta, taldekatze horretako taldeetako ikasleek bakarrik izango dute eskura atala.';
+$string['groupingsection_help'] = 'Taldekatzea ikastaro bateko talde-multzoa da. Hemen taldekatze bat aukeratuta, soilik taldekatze horretako taldeetako ikasleek izango dute eskuragarri atala.';
 $string['groupingsonly'] = 'Taldekatzeak baino ez';
 $string['groupmember'] = 'Taldekidea';
 $string['groupmemberdesc'] = 'Talde bateko kideen rol estandarra';
@@ -131,7 +131,7 @@ $string['groupsinselectedgrouping'] = 'Aukeratutako taldekatzean dauden taldeak:
 $string['groupsnone'] = 'Talderik ez';
 $string['groupsonly'] = 'Taldeak baino ez';
 $string['groupspreview'] = 'Taldeen aurrebista';
-$string['groupsseparate'] = 'Banatutako taldeak';
+$string['groupsseparate'] = 'Taldeek ezin elkar ikusi';
 $string['groupsvisible'] = 'Taldeek elkar ikusten dute';
 $string['grouptemplate'] = '@ taldea';
 $string['hidepicture'] = 'Ezkutatu irudia';
@@ -143,7 +143,7 @@ $string['importgroups_help'] = 'Taldeak testu-fitxategien bitartez inporta daite
 * Fitxategiko lehen errenkadak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
 * <i>groupname</i> eremua derrigorrezkoa da
 * Aukerako eremuak <i>description</i>, <i>enrolmentkey</i>, <i>picture</i> eta <i>hidepicture</i> dira';
-$string['includeonlyactiveenrol'] = 'Sartu bakarrik aktibo dauden matrikulazioak';
+$string['includeonlyactiveenrol'] = 'Sartu soilik aktibo dauden matrikulazioak';
 $string['includeonlyactiveenrol_help'] = 'Gaituz gero, kontua etenda duten erabiltzaileak ez dira taldeetan sartuko.';
 $string['javascriptrequired'] = 'Orri honek Javascript-a gaituta izan behar du.';
 $string['members'] = 'Kideak taldeko';

@@ -115,6 +115,7 @@ $string['inputdatadirectory'] = 'Daten-Verzeichnis: ';
 $string['inputwebadress'] = 'Web-Adresse';
 $string['inputwebdirectory'] = 'Moodle-Verzeichnis: ';
 $string['installation'] = 'Installation';
+$string['invaliddbprefix'] = 'Ungültiges Präfix. Das Präfix kann nur aus Kleinbuchstaben und Unterstrich bestehen.';
 $string['langdownloaderror'] = 'Das Sprachpaket \'{$a}\' konnte nicht heruntergeladen werden. Die Installation wird in englischer Sprache fortgesetzt.';
 $string['langdownloadok'] = 'Das Sprachpaket \'{$a}\' wurde installiert. Der weitere Installationsprozess erfolgt nun in dieser Sprache.';
 $string['memorylimit'] = 'Memory Limit';

@@ -391,7 +391,7 @@ $string['nocriteria'] = 'Badge-Kriterien sind bisher nicht festgelegt.';
 $string['noendorsement'] = 'Für das Badge wurde keine Bestätigung erteilt.,';
 $string['noexpiry'] = 'Dieser Badge hat kein Ablaufdatum.';
 $string['noparamstoadd'] = 'Es gibt keine weiteren Parameter, die zu diesem Badge-Kriterium hinzugefügt werden können.';
-$string['norelated'] = 'Dieser Badge hat keine verwandten Badges.';
+$string['norelated'] = 'Dieser Badge hat keine zugeordneten Badges.';
 $string['notacceptedrole'] = 'Sie haben derzeit keine Rolle, die diesen Badge manuell verleihen darf.<br/>
 Personen, die diesen Badge bisher erworben haben, können Sie auf der Seite {$a} sehen.';
 $string['notconnected'] = 'Nicht verbunden';

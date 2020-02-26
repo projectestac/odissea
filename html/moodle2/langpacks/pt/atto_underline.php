@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Sublinhar';
+$string['pluginname'] = 'Sublinhado';
 $string['privacy:metadata'] = 'O módulo atto_underline não armazena nenhum dado pessoal.';

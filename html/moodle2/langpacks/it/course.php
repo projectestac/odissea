@@ -31,6 +31,7 @@ $string['aria:courseshortname'] = 'Titolo abbreviato del corso';
 $string['aria:favourite'] = 'Il corso è tra i preferiti';
 $string['favourite'] = 'Corso preferito';
 $string['privacy:completionpath'] = 'Completamento corso';
+$string['privacy:favouritespath'] = 'Informazioni sui corsi preferiti';
 $string['privacy:metadata:completionsummary'] = 'Il corso contiene informazioni sul completamento relative all\'utente.';
 $string['privacy:metadata:favouritessummary'] = 'Il corso contiene informazioni relative al corso che l\'utente ha inserito fra i preferiti.';
 $string['privacy:perpage'] = 'Numero di corsi da visualizzare sulla pagina.';

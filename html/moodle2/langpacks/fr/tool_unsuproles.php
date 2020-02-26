@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmdelete'] = 'Voulez-vous vraiment supprimer toutes les attributions non supportées de rôle « {$a->role} » dans le niveau de contexte « {$a->level} »&nbsp;?';
+$string['confirmdelete'] = 'Voulez-vous vraiment supprimer toutes les attributions non supportées de rôle « {$a->role} » dans le niveau de contexte « {$a->level} » ?';
 $string['contextlevel'] = 'Niveau de contexte';
 $string['count'] = 'Nombre';
 $string['noprolbems'] = 'Aucune attribution non supportée de rôle';

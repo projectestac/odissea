@@ -265,6 +265,7 @@ $string['filternotactive'] = 'Il filtro {$a} non è attivo';
 $string['filternotenabled'] = 'Il filtro non è abilitato!';
 $string['filternotinstalled'] = 'Il filtro {$a} non è installato';
 $string['forumblockingtoomanyposts'] = 'Hai superato il limite di messaggi impostato per questo forum.';
+$string['functionalityremoved'] = 'Stai tentando di accedere a funzionalità che sono state rimosse.';
 $string['generalexceptionmessage'] = 'Eccezione - {$a}';
 $string['gradecantregrade'] = 'Si è verificato un errore durante il calcolo delle valutazioni: {$a}';
 $string['gradepubdisable'] = 'La pubblicazione delle valutazioni è disabilitata';

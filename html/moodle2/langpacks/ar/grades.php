@@ -62,6 +62,7 @@ $string['autosort'] = 'فرز آلي';
 $string['average'] = 'متوسط';
 $string['averagesdecimalpoints'] = 'أعشار في متوسطات الأعمدة';
 $string['averagesdecimalpoints_help'] = 'يحدد هذا الخيار عدد الأرقام بعد الفاصلة العشرية التي يتم استخدامها لكل متوسط، وما إذا كان سيتم استخدام الإعداد العام لعدد الأرقام بعد الفاصلة العشرية للتصنيف أو المفردة (وراثة).';
+$string['badgrade'] = 'الدرجة المقدمة غير صالحة';
 $string['bonuspoints'] = 'نقاط إضافية';
 $string['calculatedgrade'] = 'الدرجة المحسوبة';
 $string['calculation'] = 'العملية الحسابية';
@@ -80,6 +81,7 @@ $string['changedefaults'] = 'تغير الأفتراضيات';
 $string['changereportdefaults'] = 'تغير إفتراضيات التقرير';
 $string['chooseaction'] = '.....أختر إجراء';
 $string['choosecategory'] = 'اختر تصنيف';
+$string['contributiontocoursetotal'] = 'المساهمة في مجموع المقرر الدراسي';
 $string['courseavg'] = 'متوسط المقرر الدراسي';
 $string['coursegradecategory'] = 'فئة درجة المقرر الدراسي';
 $string['coursegradedisplaytype'] = 'نوع عرض درجة المقرر الدراسي';
@@ -140,6 +142,7 @@ $string['generalsettings'] = 'الإعدادات العامة';
 $string['grade'] = 'درجة';
 $string['gradeadministration'] = 'إدارة الدرجات';
 $string['gradebook'] = 'سجل درجات';
+$string['gradebooksetup'] = 'إعدادات التهديف';
 $string['gradecategories'] = 'تصنيفات الدرجة';
 $string['gradecategory'] = 'تصنيف الدرجة';
 $string['gradecategoryonmodform'] = 'تصنيف الدرجة';
@@ -231,6 +234,9 @@ $string['meanselection'] = 'العلامات المحددة لمتوسطات ا�
 $string['median'] = 'متوسط';
 $string['min'] = 'الأدنى';
 $string['mode'] = 'وضع';
+$string['modgradetypenone'] = 'لا شئ';
+$string['modgradetypepoint'] = 'نقطة';
+$string['modgradetypescale'] = 'مقياس';
 $string['mypreferences'] = 'تفضيلاتي خاص';
 $string['myreportpreferences'] = 'تفضيلات تقريري';
 $string['newcategory'] = 'تصنيف جديد';
@@ -282,6 +288,7 @@ $string['outcomesstandard'] = 'مخرجات تعلم معيارية';
 $string['outcomesstandardavailable'] = 'مخرجات تعلم معيارية متوفرة';
 $string['outcomestandard'] = 'مخرج تعلم معياري';
 $string['overallaverage'] = 'المتوسط العام';
+$string['overriddennotice'] = 'تم ضبط درجتك النهائية من هذا النشاط يدويًا.';
 $string['overridesitedefaultgradedisplaytype'] = 'تخطى إفرتراضيات الموقع';
 $string['parentcategory'] = 'تصنيف أعلى';
 $string['pctoftotalgrade'] = '% المجموع الكل لدرجة';
@@ -309,6 +316,7 @@ $string['rangedecimals_help'] = 'عدد المراتب العشرية التي �
 $string['rangesdecimalpoints'] = 'إظهار المراتب العشرية في المجالات';
 $string['rangesdecimalpoints_help'] = 'يحدد هذا الخيار عدد الأرقام بعد الفاصلة العشرية التي سيتم استخدامها لكل مجال، وما إذا كان سيتم استخدام الإعداد العام لعدد الأرقام بعد الفاصلة العشرية للتصنيف أو المفردة (وراثة).';
 $string['rangesdisplaytype'] = 'طريقة إظهار المجالات';
+$string['rank'] = 'مرتبة';
 $string['real'] = 'حقيقي';
 $string['realletter'] = 'حقيقي (حرف)';
 $string['realpercentage'] = 'حقيقي (نسبة مئوية)';

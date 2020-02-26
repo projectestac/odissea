@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clicktodownload'] = 'Klicken Sie auf den Link \'{$a}\', um die Datei herunterzuladen';
-$string['clicktoopen2'] = 'Klicken Sie auf den Link \'{$a}\', um die Datei anzuzeigen';
+$string['clicktoopen2'] = 'Klicken Sie auf den Link \'{$a}\', um die Datei anzuzeigen.';
 $string['configdisplayoptions'] = 'Wählen Sie alle Optionen aus, die standardmäßig verfügbar sein sollen. Bestehende Einstellungen werden nicht geändert. Für  die Mehrfachauswahl drücken Sie die Taste \'strg\' oder \'cmd\'.';
 $string['configframesize'] = 'Wenn eine Webseite oder eine hochgeladene Datei in einem Frame angezeigt wird, dann ist dieser Wert die Höhe (in Pixeln) des Top-Frames mit der Navigation';
 $string['configparametersettings'] = 'Stellen Sie hier die Standardwerte für die Formularparameter beim Anlegen neuer Arbeitsmaterialien ein, die später individuell angepasst werden können';
@@ -119,4 +119,4 @@ Wenn zu einem Arbeitsmaterial mehrere Dateien gehören wird die Gesamtgröße al
 $string['showtype'] = 'Typ anzeigen';
 $string['showtype_desc'] = 'Zeigt den Dateityp (z.B. Word-Datei) auf der Kursseite an.';
 $string['showtype_help'] = 'Zeigt den Dateityp neben dem Link zur Datei an (z.B. Word-Datei). Falls mehrere Dateien zu einem Arbeitsmaterial gehören wird der Typ der ersten Datei angezeigt. Ist der Dateityp nicht bekannt, wird nichts angezeigt.';
-$string['uploadeddate'] = 'hochgeladen {$a}';
+$string['uploadeddate'] = 'Hochgeladen {$a}';

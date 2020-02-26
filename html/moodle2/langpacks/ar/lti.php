@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['donot'] = 'لا ترسل';
 $string['enableemailnotification'] = 'أرسل بريد تنبيه';
+$string['name'] = 'الاسم';
 $string['quickgrade'] = 'السماح بالتصحيح السريع';
 $string['saveallfeedback'] = 'احفظ جميع اجاباتي التقييمية';
 $string['send'] = 'إرسال';

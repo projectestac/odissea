@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_connection'] = 'Παρουσιάστηκε κάποιο σφάλμα κατά τη φόρτωση του MathType';
 $string['wiris_cas_title'] = 'Αριθμομηχανή';
 $string['wiris_chem_editor_title'] = 'Εισαγωγή ενός χημικού τύπου - ChemType';
 $string['wiris_editor_title'] = 'Εισαγωγή μιας μαθηματικής εξίσωσης - MathType';

@@ -32,5 +32,6 @@ $string['noimages'] = 'لايوجد صورة';
 $string['nolinks'] = 'لايوجد رابط';
 $string['nostyles'] = 'لايوجد أنماط';
 $string['pluginname'] = 'مساعد ترويسة الشاشة';
+$string['privacy:metadata'] = 'لا يقوم الملحق الإضافي atto_accessibilityhelper بتخزين أيّ بيانات شخصية.';
 $string['selectimage'] = 'حدد الصورة';
 $string['selectlink'] = 'حدد الرابط';

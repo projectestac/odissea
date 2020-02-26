@@ -66,7 +66,15 @@ foreach ($ws->subjects($lang) as $subject) {
     $subjects[$subject->idSubject] = $subject->name;
 }
 
-$licenses = vicensvives_count_licenses();
+// Obtener únicamente las licencias del libro del curso
+$course = $DB->get_record('course', array('id' => $courseid));
+$idbook = null;
+if (preg_match('/^vv-([0-9]+)-/', $course->idnumber, $match)) {
+    $idbook = (int) $match[1];
+}
+
+$licenses = vicensvives_count_licenses($idbook);
+
 $allbooks = array();
 
 foreach ($ws->books() as $book) {

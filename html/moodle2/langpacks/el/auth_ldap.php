@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_ldap_ad_create_req'] = 'Δεν είναι δυνατή η δημιουργία του νέου λογαριασμού στο Active Directory. Επιβεβαιώστε ότι πληρούνται όλες οι απαιτήσεις για να λειτουργήσει αυτό (σύνδεση LDAP, δέσμευση χρήστη με κατάλληλα δικαιώματα, κ.λπ.)';
+$string['auth_ldap_ad_create_req'] = 'Δεν είναι δυνατή η δημιουργία του νέου λογαριασμού στο Active Directory. Σιγουρευτείτε ότι πληρούνται όλες οι απαιτήσεις για να λειτουργήσει αυτό (σύνδεση LDAP, χρήστης δέσμευσης (bind-user) με κατάλληλα δικαιώματα, κ.λπ.)';
 $string['auth_ldap_attrcreators'] = 'Κατάλογος ομάδων ή πλαισίων στα μέλη των οποίων επιτρέπεται να δημιουργούν ιδιοχαρακτηριστικά. Διαχωρίστε περισσότερες από μία ομάδες με «;». Συνήθως κάτι σαν «cn=teachers,ou=staff,o=myorg».';
 $string['auth_ldap_attrcreators_key'] = 'Δημιουργοί ιδιοχαρακτηριστικών';
 $string['auth_ldap_auth_user_create_key'] = 'Δημιουργία χρηστών εξωτερικά';
-$string['auth_ldap_bind_dn'] = 'Εάν θέλετε να χρησιμοποιήσετε την υπηρεσία bind-user για να αναζητήσετε χρήστες, καθορίστε το εδώ. Κάτι σαν «cn=ldapuser,ou=public,o=org».';
+$string['auth_ldap_bind_dn'] = 'Εάν θέλετε να χρησιμοποιήσετε τον χρήστη δέσμευσης (bind-user) για να αναζητήσετε χρήστες, καθορίστε το εδώ. Κάτι σαν «cn=ldapuser,ou=public,o=org».';
 $string['auth_ldap_bind_dn_key'] = 'Διακεκριμένο όνομα';
-$string['auth_ldap_bind_pw'] = 'Κωδικός πρόσβασης για bind-user.';
+$string['auth_ldap_bind_pw'] = 'Κωδικός πρόσβασης για τον χρήστη δέσμευσης (bind-user).';
 $string['auth_ldap_bind_pw_key'] = 'Κωδικός πρόσβασης';
-$string['auth_ldap_bind_settings'] = 'Ρυθμίσεις bind';
+$string['auth_ldap_bind_settings'] = 'Ρυθμίσεις δέσμευσης';
 $string['auth_ldap_changepasswordurl_key'] = 'Διεύθυνση URL αλλαγής κωδικού πρόσβασης';
 $string['auth_ldap_contexts'] = 'Λίστα πλαισίων όπου οι χρήστες είναι τοποθετημένοι. Χωρίστε διαφορετικά πλαίσια με «;». Για παράδειγμα: «ou=users,o=org; ou=others,o=org».';
 $string['auth_ldap_contexts_key'] = 'Πλαίσια';
-$string['auth_ldap_create_context'] = 'Αν ενεργοποιήσετε τη δημιουργία χρηστών με επιβεβαίωση μέσω ηλεκτρονικού ταχυδρομείου τότε καθορίστε το πλαίσιο στο οποίο θα δημιουργηθούν οι χρήστες. Αυτό θα πρέπει να είναι διαφορετικό από ότι άλλων χρηστών για να αποφευχθούν προβλήματα ασφαλείας. Δεν χρειάζεται να προσθέσετε αυτή την τιμή στη μεταβλητή ldap_context, το Moodle θα αναζητήσει χρήστες αυτού του πλαισίου αυτόματα.<br /> <b>Σημείωση!</b> Πρέπει να τροποποιήσετε την μέθοδο user_create() στο αρχείο auth/ldap/auth.php ώστε να λειτουργήσει η δημιουργία χρηστών.';
+$string['auth_ldap_create_context'] = 'Αν ενεργοποιήσετε τη δημιουργία χρηστών με επιβεβαίωση μέσω ηλε.ταχυδρομείου τότε καθορίστε το πλαίσιο στο οποίο θα δημιουργηθούν οι χρήστες. Αυτό θα πρέπει να είναι διαφορετικό από ότι άλλων χρηστών για να αποφευχθούν προβλήματα ασφαλείας. Δεν χρειάζεται να προσθέσετε αυτή την τιμή στη μεταβλητή ldap_context, το Moodle θα αναζητήσει χρήστες αυτού του πλαισίου αυτόματα.<br /> <b>Σημείωση!</b> Πρέπει να τροποποιήσετε την μέθοδο user_create() στο αρχείο auth/ldap/auth.php ώστε να λειτουργήσει η δημιουργία χρηστών.';
 $string['auth_ldap_create_context_key'] = 'Πλαίσιο για νέους χρήστες';
 $string['auth_ldap_create_error'] = 'Σφάλμα στη δημιουργία χρήστη στο LDAP.';
 $string['auth_ldap_creators'] = 'Κατάλογος ομάδων των οποίων τα μέλη επιτρέπεται να δημιουργήσουν νέα μαθήματα. Οι ομάδες διαχωρίζονται με «;». Συνήθως κάτι σαν «cn=teachers,ou=staff,o=myorg».';
@@ -103,9 +103,9 @@ $string['auth_ldap_version_key'] = 'Έκδοση';
 $string['auth_ntlmsso'] = 'NTLM SSO (NTLM =NT LAN Manager: διαχείριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση)';
 $string['auth_ntlmsso_enabled'] = 'Ορίστε το σε «ναι» για προσπάθεια SSO (Single Sign On: μία και μόνον ενιαία αυθεντικοποίηση) στον τομέα NTLM (NT LAN Manager: Πρωτόκολλα ασφαλείας της Microsoft). Σημειώστε ότι αυτό απαιτεί επιπρόσθετες ρυθμίσεις στον εξυπηρετητή για να λειτουργήσει. Για περισσότερες λεπτομέρειες, δείτε <a href="https://docs.moodle.org/en/NTLM_authentication">https://docs.moodle.org/en/NTLM_authentication</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Ενεργοποίηση';
-$string['auth_ntlmsso_ie_fastpath'] = 'Επιλέξτε το για να ενεργοποιήσετε τη γρήγορη διαδρομή του NTLM SSO (παρακάμπτει ορισμένα βήματα μόνο στον περιηγητή MS Internet Explorer). (NTLM =NT LAN Manager: διαχείριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση)';
+$string['auth_ntlmsso_ie_fastpath'] = 'Επιλέξτε το για να ενεργοποιήσετε το γρήγορο μονοπάτι του NTLM SSO (παρακάμπτει ορισμένα βήματα μόνο στον περιηγητή MS Internet Explorer). (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση)';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Δοκιμάστε το NTLM σε όλους τους περιηγητές';
-$string['auth_ntlmsso_ie_fastpath_key'] = 'Γρήγορη διαδρομή MS IE (Microsoft Internet Explorer);';
+$string['auth_ntlmsso_ie_fastpath_key'] = 'Γρήγορο μονοπάτι MS IE (Microsoft Internet Explorer);';
 $string['auth_ntlmsso_ie_fastpath_yesattempt'] = 'Ναι, δοκιμή του NTLM σε άλλους περιηγητές';
 $string['auth_ntlmsso_ie_fastpath_yesform'] = 'Ναι, όλοι οι άλλοι περιηγητές χρησιμοποιούν τυποποιημένη φόρμα σύνδεσης/εισόδου';
 $string['auth_ntlmsso_maybeinvalidformat'] = 'Δεν είναι δυνατή η εξαγωγή του ονόματος χρήστη από την κεφαλίδα REMOTE_USER. Ορίστηκε σωστά ο μορφότυπος;';
@@ -128,7 +128,7 @@ $string['morethanoneuser'] = 'Περισσότερες από μία εγγρα�
 $string['needbcmath'] = 'Χρειάζεται η επέκταση BCMath για να χρησιμοποιηθεί ο έλεγχος ληγμένων κωδικών πρόσβασης με το Active Directory.';
 $string['needmbstring'] = 'Χρειάζεται η επέκταση mbstring για αλλαγή κωδικού πρόσβασης στο Active Directory';
 $string['nodnforusername'] = 'Σφάλμα στην user_update_password(). Λείπει το DN για τον/την: «{$a->username}»';
-$string['noemail'] = 'Έγινε προσπάθεια να σου σταλεί ένα μήνυμα ηλ. ταχυδρομείου αλλά απέτυχε!';
+$string['noemail'] = 'Έγινε προσπάθεια να σου σταλεί ένα μήνυμα ηλε.ταχυδρομείου αλλά απέτυχε!';
 $string['notcalledfromserver'] = 'Δεν πρέπει να καλείται από τον εξυπηρετητή ιστού!';
 $string['noupdatestobedone'] = 'Δεν υπάρχουν ενημερώσεις';
 $string['nouserentriestoremove'] = 'Δεν υπάρχουν καταχωρήσεις χρήστη για να διαγραφούν';

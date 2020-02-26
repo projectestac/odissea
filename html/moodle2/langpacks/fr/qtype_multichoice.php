@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['answerhowmany'] = 'Plusieurs réponses ou une seule ?';
+$string['answerhowmany'] = 'Plusieurs réponses ou une seule ?';
 $string['answerhowmany_desc'] = 'Ce réglage détermine si la question demande par défaut une seule réponse (boutons radio) ou plusieurs réponses (cases à cocher).';
 $string['answernumbering'] = 'Numéroter les choix ?';
 $string['answernumbering123'] = '1., 2., 3., etc.';

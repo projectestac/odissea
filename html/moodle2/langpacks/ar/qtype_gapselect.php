@@ -25,4 +25,26 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addmorechoiceblanks'] = 'الفراغات لـ {no} خيارات أخرى';
+$string['answer'] = 'الإجابة';
+$string['choices'] = 'الخيارات';
+$string['combinedcontrolnamegapselect'] = 'القائمة المنسدلة';
+$string['combinedcontrolnamegapselectplural'] = 'القوائم المنسدلة';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}';
+$string['errorblankchoice'] = 'يرجى التحقق من الخيارات: الاختيار {$a} فارغ.';
+$string['errormissingchoice'] = 'يرجى التحقق من نص السؤال: {$a} لم يتم العثور عليه في الاختيارات! يُسمح فقط باستخدام الأرقام التي تحتوي على إجابات اختيار محددة كعناصر نائبة.';
+$string['errornoslots'] = 'يجب أن يحتوي نص السؤال على عناصر نائبة مثل [[1]] لإظهار أين تذهب الكلمات المفقودة.';
+$string['errorquestiontextblank'] = 'يجب عليك إدخال نص السؤال.';
+$string['group'] = 'مجموعة';
+$string['pleaseputananswerineachbox'] = 'يرجى وضع إجابة في كل مربع.';
+$string['pluginname'] = 'اختيار الكلمات المفقودة';
+$string['pluginnameadding'] = 'إضافة سؤال اختيار الكلمات المفقودة';
+$string['pluginnameediting'] = 'تحرير سؤال تحديد الكلمات المفقودة';
+$string['pluginname_help'] = 'تتطلب أسئلة تحديد الكلمات المفقودة من المجيب تحديد الإجابات الصحيحة من القوائم المنسدلة. يتم استخدام [[1]] ، [[2]] ، [[3]] ، ... كعناصر نائبة في نص السؤال ، مع تحديد الإجابات الصحيحة كأجوبة اختيار 1 ، 2 ، 3 ، ... على التوالي. يمكن إضافة إجابات اختيار إضافي لجعل السؤال أكثر صعوبة. قد يتم تجميع إجابات الاختيار لتقييد الإجابات المتوفرة في كل قائمة منسدلة.';
+$string['pluginnamesummary'] = 'يتم ملء الكلمات المفقودة في نص السؤال باستخدام القوائم المنسدلة.';
+$string['privacy:metadata'] = 'لا يخزن مكون Select missing words أي بيانات شخصية.';
+$string['shuffle'] = 'خلط';
+$string['tagsnotallowed'] = '{$a->tag} غير مسموح به.
+(فقط {$a->allowed}  مسموح به.)';
+$string['tagsnotallowedatall'] = '{$a->tag} غير مسموح به.
+(لا يوجد HTML مسموح به هنا.)';

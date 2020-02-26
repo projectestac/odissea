@@ -43,11 +43,11 @@ $string['aggregatetype_help'] = 'Agregazio-motak definitzen du nola batuko diren
 "Ez kalifikatu" aukeratzen bada, jarduera ez da kalifikazio-liburuan agertuko.';
 $string['allowratings'] = 'Baimendu elementuak puntuatu ahal izatea?';
 $string['allratingsforitem'] = 'Bidalitako puntuazio guztiak';
-$string['capabilitychecknotavailable'] = 'Gaitasunen egiaztatzea ez dago eskura jarduera gorde arte';
+$string['capabilitychecknotavailable'] = 'Gaitasunen egiaztatzea ez dago eskuragarri jarduera gorde arte';
 $string['couldnotdeleteratings'] = 'Sentitzen dugu, ezin da ezabatu zeren norbaitek kalifikatu baitu';
 $string['norate'] = 'Elementuak sailkatzea ez dago gaituta!';
 $string['noratings'] = 'Ez da puntuaziorik bidali';
-$string['noviewanyrate'] = 'Zeure elementuen emaitzak bakarrik ikus ditzakezu';
+$string['noviewanyrate'] = 'Zeure elementuen emaitzak baino ezin ditzakezu ikusi';
 $string['noviewrate'] = 'Ez duzu elementuen puntuazioa ikusteko gaitasunik';
 $string['privacy:metadata:rating'] = 'Erabiltzaileak emandako puntuazioa puntuatutako elementuaren loturarekin batera gordetzen da.';
 $string['privacy:metadata:rating:rating'] = 'Erabiltzaileak emandako puntuazio numerikoa.';

@@ -25,5 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['badges:addinstance'] = 'إضافة كتلة لأحدث الشارات الجديدة';
+$string['badges:myaddinstance'] = 'إضافة كتلة لأحدث الشارات الجديدة إلى لوحة المعلومات';
 $string['nothingtodisplay'] = 'لا يوجد لديك شارات لعرضها';
+$string['numbadgestodisplay'] = 'عرض عدد الشارات الحديثة';
 $string['pluginname'] = 'أحدث الشارات';
+$string['privacy:metadata'] = 'كتلة عرض أحدث الشارات , يظهر بها البيانات المخزنة في مواقع أخري فقط';

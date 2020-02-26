@@ -25,4 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['pluginname'] = 'نظف البريد العشوائي';
+$string['privacy:metadata'] = 'لا يخزن المكون الإضافي Spam cleaner أيّ بيانات شخصية.';
+$string['spamauto'] = 'اكتشاف تلقائي لأنماط البريد العشوائي المشتركة';
+$string['spamcannotdelete'] = 'لا يمكن حذف هذا المستخدم';
+$string['spamcannotfinduser'] = 'لا يوجد مستخدمين مطابقين لبحثك';
+$string['spamcleanerintro'] = 'هذا البرنامج النصي يسمح لك بالبحث عن ملفات تعريف المستخدمين لبعض الجمل ثم قم بحذف تلك الحسابات التي يتم إنشاؤها من الواضح من قبل المتطفلين. يمكنك البحث عن كلمات رئيسية متعددة باستخدام الفواصل (مثل الكازينو، اباحي) <br /> وثائق مودل لديها المزيد من المعلومات حول href="http://docs.moodle.org/en/Reducing_spam_in_Moodle"> <a الحد من الرسائل غير المرغوب فيها في مودل </a>.';
+$string['spamdeleteall'] = 'احذف جميع حسابات المستخدمين هذه';
+$string['spamdeleteallconfirm'] = 'هل أنت متأكد أنك تريد حذف جميع حسابات المستخدمين هذه؟ لا يمكنك التراجع عن هذا.';
+$string['spamdeleteconfirm'] = 'هل أنت متأكد أنك تريد حذف هذا الموضوع؟ لا يمكنك التراجع عن هذا.';
+$string['spamdesc'] = 'الوصف';
+$string['spameg'] = 'على سبيل المثال: كازينو، الاباحية ، XXX';
+$string['spamfromblog'] = 'من مشاركات المدونة :';
+$string['spamfromcomments'] = 'من التعليقات :';
+$string['spamfromforumpost'] = 'من مشاركة المنتدى :';
+$string['spamfrommessages'] = 'من الرسائل :';
+$string['spaminvalidresult'] = 'غير معروف و لكن نتيجة غير صالحة';
+$string['spamkeyword'] = 'الكلمات المفتاحية';
 $string['spamoperation'] = 'عملية';
+$string['spamresult'] = 'نتائج البحث التي تحتوي على ملفات تعريف المستخدمين :';
+$string['spamsearch'] = 'البحث عن هذه الكلمات المفتاحية';

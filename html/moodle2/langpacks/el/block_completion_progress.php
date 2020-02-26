@@ -25,9 +25,32 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['completed_colour'] = '#73A839';
+$string['completed_colour_title'] = 'Χρώμα ολοκληρωμένου';
+$string['completion_not_enabled'] = 'Η παρακολούθηση ολοκλήρωσης δεν είναι ενεργοποιημένη σε αυτόν τον ιστότοπο.';
+$string['completion_not_enabled_course'] = 'Η παρακολούθηση ολοκλήρωσης δεν είναι ενεργοποιημένη σε αυτό το μάθημα.';
 $string['completion_progress:overview'] = 'Δείτε την επισκόπηση μαθημάτων της Προόδου Ολοκλήρωσης για όλους τους μαθητές';
+$string['config_activitiesincluded'] = 'Συμπεριληφθείσες δραστηριότητες';
+$string['config_default_title'] = 'Πρόοδος ολοκλήρωσης';
+$string['config_scroll'] = 'Κύληση';
+$string['config_selectactivities'] = 'Επιλογή δραστηριοτήτων';
+$string['config_selectedactivities'] = 'Επιλεγμένες δραστηριότητες';
+$string['config_title'] = 'Εναλλακτικός τίτλος';
+$string['config_wrap'] = 'Αναδίπλωση';
 $string['coursenametoshow'] = 'Όνομα μαθήματος που θα εμφανίζεται στο Ταμπλό';
 $string['fullname'] = 'Πλήρες όνομα μαθήματος';
+$string['futureNotCompleted_colour'] = '#025187';
+$string['futureNotCompleted_colour_descr'] = 'Κωδικός χρώματος HTML για μελοντικά στοιχεία που δεν έχουν ακόμη ολοκληρωθεί';
+$string['futureNotCompleted_colour_title'] = 'Χρώμα μελλοντικών μη ολοκληρωμένων';
+$string['how_activitiesincluded_works'] = 'Πως λειτουργεί η συμπερίληψη δραστηριοτήτων';
+$string['how_group_works'] = 'Πως λειτουργεί η ορατή ομάδα';
+$string['how_ordering_works'] = 'Πως λειτουργεί η ταξινόμηση';
+$string['how_selectactivities_works'] = 'Πως λειτουργεί η συμπερίληψη δραστηριοτήτων';
+$string['lastonline'] = 'Τελευταία φορά (σε σύνδεση) στο μάθημα';
+$string['mouse_over_prompt'] = 'Αιώρηση ποντικιού ή άγγιγμα μπάρας για πληροφορίες.';
+$string['notCompleted_colour'] = '#C71C22';
+$string['notCompleted_colour_descr'] = 'Κωδικός χρώματος HTML για τρέχοντα στοιχεία που δεν έχουν ακόμη ολοκληρωθεί';
+$string['notCompleted_colour_title'] = 'Χρώμα μη ολοκληρωμένου';
 $string['now_indicator'] = 'ΤΩΡΑ';
 $string['overview'] = 'Επισκόπηση μαθητών';
 $string['pluginname'] = 'Πρόοδος ολοκλήρωσης';

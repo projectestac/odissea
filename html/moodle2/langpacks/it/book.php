@@ -51,9 +51,9 @@ $string['eventchapterupdated'] = 'Aggiornato capitolo';
 $string['eventchapterviewed'] = 'Visualizzato capitolo';
 $string['hidechapter'] = 'Nascondi il capitolo "{$a}"';
 $string['indicator:cognitivedepth'] = 'Libro cognitivo';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse \'libro\'.';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse Libro.';
 $string['indicator:socialbreadth'] = 'Libro sociale';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse \'Libro\'.';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse Libro.';
 $string['modulename'] = 'Libro';
 $string['modulename_help'] = 'Il modulo libro consente ad un docente di creare risorse multi pagina componendole, similmente ad un libro, in capitoli e paragrafi.
 I libri possono contenere file multimediali e testi e sono indicati per contenuti corposi da suddividere in diverse sezioni.

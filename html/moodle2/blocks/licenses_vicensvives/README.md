@@ -10,4 +10,4 @@ profesores y estudiantes.
 El bloque incluye un enlace a una lista con la información de las licencias de
 todos los libros.
 
-Versiones de Moodle: 2.8, 2.9, 3.0, 3.1, 3.2, 3.3
+Versiones de Moodle: 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5

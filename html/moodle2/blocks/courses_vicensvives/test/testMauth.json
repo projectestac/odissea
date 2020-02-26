@@ -1,0 +1,149 @@
+{
+  "idBook": "573",
+  "fullname": "PRUEBA NUEVO VV - Lengua castellana y Literatura 1 . (Proyecto Zoom)",
+  "shortname": "llil1ect_lomce",
+  "isbn": "978-84-682-3252-2",
+  "authors": "M. M. Canals//J. M. Castellà (coord.)//C. González//D. Serra//M. Torramilans",
+  "idSubject": "LANGUAGE",
+  "idLevel": "f5537222-6787-11e5-8db3-5cf9dd71b632",
+  "lang": "ca",
+  "subject": "lengua",
+  "units": [
+    {
+      "id": "49baf8fd-6643-4736-9154-69c7eee663c7",
+      "name": "Actividades de bienvenida",
+      "sortorder": 0,
+      "label": "0",
+      "lti": {
+        "idnumber": "1207_unit_49baf8fd-6643-4736-9154-69c7eee663c7",
+        "activityName": "Actividades de bienvenida",
+        "launchURL": "http://edubooksso.vicensvivesdigital.com/lti?resource=1207_unit_49baf8fd-6643-4736-9154-69c7eee663c7",
+        "consumerKey": null,
+        "sharedSecret": null,
+        "customParameters": null,
+        "acceptGrades": false,
+        "activityDescription": ""
+      },
+      "sections": [
+        {
+          "id": "50f1227e-1c36-496c-bd36-693c43bb2604",
+          "name": "Pienso y resuelvo",
+          "sortorder": 0,
+          "label": null,
+          "lti": {
+            "idnumber": "1207_section_50f1227e-1c36-496c-bd36-693c43bb2604",
+            "activityName": "Pienso y resuelvo",
+            "launchURL": "http://edubooksso.vicensvivesdigital.com/lti?resource=1207_section_50f1227e-1c36-496c-bd36-693c43bb2604",
+            "consumerKey": null,
+            "sharedSecret": null,
+            "customParameters": null,
+            "acceptGrades": false,
+            "activityDescription": ""
+          },
+          "nameTheory": "Pienso y resuelvo",
+          "questions": [
+            {
+              "id": "72205",
+              "name": "Autoevaluación inicial T01 01",
+              "sortorder": 0,
+              "label": "",
+              "lti": {
+                "idnumber": "103_question_72205",
+                "activityName": "Autoevaluación inicial T01 01",
+                "activityDescription": "",
+                "launchURL": "http://edubooksso.vicensvivesdigital.dev/lti?resource=103_question_72205",
+                "consumerKey": null,
+                "sharedSecret": null,
+                "customParameters": null,
+                "acceptGrades": true
+              },
+              "qtype": "multichoice"
+            }
+          ],
+          "links": [
+            {
+              "id": "24310",
+              "name": "Anton van Leeuwenhoek",
+              "sortorder": 0,
+              "label": "",
+              "url": "http://www.dailymotion.com/video/xbzug7_la-celula-a-van-leeuwenhoek_school?utm_source=tiching&utm_medium=referral",
+              "summary": "Para saber más sobre Anton van Leeuwenhoek y su microscopio."
+            }
+          ],
+          "documents": [
+            {
+              "id": "24879",
+              "name": "El interesante mundo microscópico",
+              "sortorder": 0,
+              "label": null,
+              "lti": {
+                "idnumber": "103_document_24879",
+                "activityName": "El interesante mundo microscópico",
+                "activityDescription": "",
+                "launchURL": "http://edubooksso.vicensvivesdigital.dev/lti?resource=103_document_24879",
+                "consumerKey": null,
+                "sharedSecret": null,
+                "customParameters": null,
+                "acceptGrades": false
+              }
+            }
+          ],
+          "videos": [
+            {
+              "id": "efcbcbb1-45ec-47ff-af11-e526f09516f2",
+              "name": "Las letras m, l, p y s",
+              "sortorder": 0,
+              "label": "",
+              "lti": {
+                "idnumber": "1207_video_efcbcbb1-45ec-47ff-af11-e526f09516f2_section_abce3d85-d751-4034-b9af-83c612040237",
+                "activityName": "Las letras m, l, p y s",
+                "launchURL": "http://edubooksso.vicensvivesdigital.com/lti?resource=1207_video_efcbcbb1-45ec-47ff-af11-e526f09516f2_section_abce3d85-d751-4034-b9af-83c612040237",
+                "consumerKey": null,
+                "sharedSecret": null,
+                "customParameters": null,
+                "acceptGrades": false,
+                "activityDescription": ""
+              }
+            }
+          ],
+          "mauthors": [
+            {
+              "id": "4807067104968704",
+              "name": "Las vocales",
+              "sortorder": 0,
+              "label": "",
+              "lti": {
+                "idnumber": "1207_mauthor_4807067104968704_section_50f1227e-1c36-496c-bd36-693c43bb2604",
+                "activityName": "Las vocales",
+                "launchURL": "http://edubooksso.vicensvivesdigital.com/lti?resource=1207_mauthor_4807067104968704_section_50f1227e-1c36-496c-bd36-693c43bb2604",
+                "consumerKey": null,
+                "sharedSecret": null,
+                "customParameters": null,
+                "acceptGrades": false,
+                "activityDescription": ""
+              },
+              "mauthorType": "GYM"
+            },
+            {
+              "id": "4807067104968000",
+              "name": "Las vocales cloud library",
+              "sortorder": 0,
+              "label": "",
+              "lti": {
+                "idnumber": "1207_mauthor_4807067104968000_section_50f1227e-1c36-496c-bd36-693c43bb2604",
+                "activityName": "Las vocales",
+                "launchURL": "http://edubooksso.vicensvivesdigital.com/lti?resource=1207_mauthor_4807067104968000_section_50f1227e-1c36-496c-bd36-693c43bb2604",
+                "consumerKey": null,
+                "sharedSecret": null,
+                "customParameters": null,
+                "acceptGrades": false,
+                "activityDescription": ""
+              },
+              "mauthorType": "CLOUD_LIBRARY"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

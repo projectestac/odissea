@@ -99,7 +99,7 @@ $string['auth_ldap_usertypeundefined2'] = 'O parâmetro config.user_type não es
 $string['auth_ldap_version'] = 'Indique a versão do protocolo LDAP que o servidor está a usar.';
 $string['auth_ldap_version_key'] = 'Versão';
 $string['auth_ntlmsso'] = 'NTLM SSO';
-$string['auth_ntlmsso_enabled'] = 'Selecione o valor "Sim" para tentar SSO com o domínio NTLM. <strong>Nota:</strong> Para colocar em funcionamento esta opção é necessário alterar a configuração habitual do servidor web. Consulte a página <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a> para mais informações';
+$string['auth_ntlmsso_enabled'] = 'Selecione o valor "Sim" para tentar SSO com o domínio NTLM. <strong>Nota:</strong> Para colocar em funcionamento esta opção é necessário alterar a configuração habitual do servidor web. Consulte a página <a href="https://docs.moodle.org/en/NTLM_authentication">https://docs.moodle.org/en/NTLM_authentication</a> para mais informações';
 $string['auth_ntlmsso_enabled_key'] = 'Ativar';
 $string['auth_ntlmsso_ie_fastpath'] = 'Selecione o valor "Sim" para ativar o atalho NTLM SSO (algumas fases são ignoradas e só funciona se o navegador do utilizador for o MS Internet Explorer).';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Tentativa NTLM com todos os navegadores';
@@ -133,7 +133,7 @@ $string['nouserentriestoremove'] = 'Não existem registos de utilizador a apagar
 $string['nouserentriestorevive'] = 'Não existem registos de utilizador a reativar';
 $string['nouserstobeadded'] = 'Nenhum registo de utilizadores para criar';
 $string['ntlmsso_attempting'] = 'A tentar SSO através de NTLM…';
-$string['ntlmsso_failed'] = 'A autenticação automática falhou. Tente a página de autenticação normal';
+$string['ntlmsso_failed'] = 'A autenticação automática falhou. Tente usar a página normal da autenticação.';
 $string['ntlmsso_isdisabled'] = 'SSO NTLM está desativado.';
 $string['ntlmsso_unknowntype'] = 'Tipo de ntlmsso desconhecido!';
 $string['pagedresultsnotsupp'] = 'A página de resultados LDAP não é suportada (a sua versão do PHP não tem suporte ou configurou o Moodle para usar a versão do protocolo LDAP 2 ou o Moodle não pode contactar o servidor LDAP para verificar se o suporte a páginas está disponível).';

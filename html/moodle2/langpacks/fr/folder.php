@@ -64,5 +64,5 @@ $string['privacy:metadata'] = 'Le plugin de ressource Dossier n\'enregistre aucu
 $string['search:activity'] = 'Dossier';
 $string['showdownloadfolder'] = 'Afficher le bouton de téléchargement de dossier';
 $string['showdownloadfolder_help'] = 'Si ce réglage est activé, un bouton sera affiché permettant de télécharger une archive ZIP contenant tous les fichiers d\'un dossier.';
-$string['showexpanded'] = 'Afficher dépliés les sous-dossiers';
+$string['showexpanded'] = 'Afficher les sous-dossiers dépliés';
 $string['showexpanded_help'] = 'Si ce réglage est activé, les sous-dossiers seront affichés avec leur contenu. Dans le cas contraire, seul leur nom sera affiché.';

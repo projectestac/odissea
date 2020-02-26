@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['absoluteposition'] = 'Ακριβής θέση';
+$string['addmultipleanswers'] = 'Προσθήκη {$a} ακόμη στοιχείων';
+$string['addsingleanswer'] = 'Προσθήκη ενός ακόμη στοιχείου';
 $string['allornothing'] = 'Όλα ή τίποτα';
 $string['answer'] = 'Κείμενο απάντησης';
 $string['answerheader'] = 'Αριθμός συρόμενου αντικειμένου';

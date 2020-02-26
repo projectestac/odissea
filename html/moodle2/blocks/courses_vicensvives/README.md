@@ -5,7 +5,7 @@ Bloque para listar, crear y actualizar cursos a partir de lubros importados del
 web service de Vicens Vives. También permite configurar automáticamente el web
 service de Moodle.
 
-Versiones de Moodle: 3.2, 3.3
+Versiones de Moodle: 3.2, 3.3, 3.4, 3.5
 
 Parámetros de configuración
 ---------------------------
@@ -99,7 +99,7 @@ Actualización de cursos
 -----------------------
 
 El enlace "Ver cursos" muestra una lista de los cursos creados a partir de
-libros importados. El botón "Actualizar" vuelve a importar el lubro y añade los
+libros importados. El botón "Actualizar" vuelve a importar el libro y añade los
 contenidos nuevas al curso (no actualiza los contenidos ya creados). Las
 unidades, secciones y actividades se añaden ordenadas según su posición en el
 libro.

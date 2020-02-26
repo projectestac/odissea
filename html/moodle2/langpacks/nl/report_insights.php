@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calculatedvalue'] = 'Berekende waarde';
-$string['disabledmodel'] = 'Dit model is uitgeschakeld door de beheerder';
+$string['disabledmodel'] = 'Dit model is uitgeschakeld door de beheerder.';
 $string['indicator'] = 'Indicator';
 $string['insight'] = 'Inzicht';
 $string['insightprediction'] = '{$a} voorspelling';

@@ -33,7 +33,7 @@ $string['addbadge'] = 'Adicionar medalhas';
 $string['addbadgecriteria'] = 'Adicionar critério da medalha';
 $string['addbadge_help'] = 'Selecione todas as medalhas que devem fazer parte dos requisitos desta medalha. Mantenha a tecla CTRL pressionada para selecionar vários itens.';
 $string['addcohort'] = 'Adicionar Grupo global';
-$string['addcohort_help'] = 'Selecione todos Grupos globais que devem fazer parte dos requisitos desta medalha. Mantenha a tecla CTRL pressionada para selecionar vários itens.';
+$string['addcohort_help'] = 'Selecione todos os Grupos globais que devem fazer parte dos requisitos desta medalha. Mantenha a tecla CTRL pressionada para selecionar vários itens.';
 $string['addcourse'] = 'Adicionar disciplinas';
 $string['addcourse_help'] = 'Selecione todas as disciplinas que devem fazer parte dos requisitos desta medalha. Mantenha a tecla CTRL pressionada para selecionar vários itens.';
 $string['addcriteria'] = 'Adicionar critério';
@@ -44,7 +44,7 @@ $string['adminonly'] = 'Esta página é restrita apenas aos administradores do s
 $string['after'] = 'após a data de emissão.';
 $string['aggregationmethod'] = 'Método de agregação';
 $string['alignment'] = 'Competência';
-$string['all'] = 'Todos';
+$string['all'] = 'Todos(as)';
 $string['allmethod'] = 'Todas as condições selecionadas são cumpridas';
 $string['allmethodactivity'] = 'Todas as atividades selecionadas estão concluídas';
 $string['allmethodbadges'] = 'Todas medalhas selecionadas foram ganhas';
@@ -56,15 +56,15 @@ $string['allowcoursebadges'] = 'Ativar medalhas na disciplina';
 $string['allowcoursebadges_desc'] = 'Permitir que as medalhas sejam criadas e atribuídas no contexto da disciplina';
 $string['allowexternalbackpack'] = 'Ativar ligação a Backpacks externas';
 $string['allowexternalbackpack_desc'] = 'Permitir aos utilizadores configurar ligações e exibir Medalhas a partir dos seus fornecedores externos de Backpacks. Nota: É recomendável deixar esta opção desativada caso não seja possível aceder ao site a partir da Internet (por exemplo, por causa da firewall).';
-$string['any'] = 'Qualquer um';
-$string['anymethod'] = 'Qualquer uma das condições selecionadas se verifica';
+$string['any'] = 'Qualquer um(a)';
+$string['anymethod'] = 'Qualquer uma das condições selecionadas foi verificada';
 $string['anymethodactivity'] = 'Qualquer uma das atividades selecionadas foi concluída';
 $string['anymethodbadges'] = 'Qualquer uma das medalhas selecionadas foi ganha';
 $string['anymethodcohort'] = 'Ser membro de qualquer um dos Grupos globais selecionados';
 $string['anymethodcourseset'] = 'Qualquer uma das disciplinas selecionadas foi concluída';
 $string['anymethodmanual'] = 'Qualquer um dos papéis selecionados pode atribuir a medalha';
 $string['anymethodprofile'] = 'Qualquer um dos campos de perfil foi completado';
-$string['archivebadge'] = 'Gostaria de apagar a medalha \'{$a}\', mas manter as medalhas existentes que foram emitidas?';
+$string['archivebadge'] = 'Pretende apagar a medalha \'{$a}\' mas manter as medalhas existentes que foram emitidas?';
 $string['archiveconfirm'] = 'Apagar e manter as medalhas existentes que foram emitidas';
 $string['archivehelp'] = '<p>Esta opção significa que a medalha será marcada como "retirada" e não aparecerá mais na lista de medalhas. Os utilizadores deixarão de poder obter esta medalha, no entanto, os atuais condecorados com a medalha continuarão a poder exibir esta medalha na sua página de perfil e nas suas backpacks externas. </p><p> Se pretende que os utilizadores mantenham o acesso às medalhas recebidas, é importante selecionar esta opção em vez de excluir totalmente as medalhas.</p>';
 $string['attachment'] = 'Anexar a medalha à mensagem';
@@ -87,14 +87,14 @@ Deve resolver este problema em qualquer site de produção onde pretende emitir 
 **E se não conseguir que todo o seu site fique publicamente acessível?**
 
 O único URL que requer verificação é [url-do-seu-site]/badges/assertion.php, logo, se lhe for possível alterar a sua firewall para permitir o acesso externo a esse ficheiro, a verificação da medalha continuará a funcionar.';
-$string['backpackbadges'] = 'Tem {$a->totalbadges} medalha(s) exibidas a partir de {$a->totalcollections} coleções(s). <a href="mybackpack.php">Altere as configurações da backpack</a>.';
+$string['backpackbadges'] = 'Tem {$a->totalbadges} medalha(s) exibidas a partir de {$a->totalcollections} coleções(s). <a href="mybackpack.php">Alterar as configurações da backpack</a>.';
 $string['backpackcannotsendverification'] = 'Não é possível enviar e-mail de verificação';
 $string['backpackconnection'] = 'Ligação à backpack';
 $string['backpackconnectioncancelattempt'] = 'Autentique-se usando um endereço de e-mail diferente';
 $string['backpackconnectionconnect'] = 'Ligar à backpack';
-$string['backpackconnection_help'] = 'Esta página permite-lhe configurar a ligação com um fornecedor externo de Backpack. Ligar-se a uma Backpack permite-lhe exibir as Medalhas externas neste site e encaminhar para a sua Backpack as Medalhas que recebeu aqui.
+$string['backpackconnection_help'] = 'Esta página permite-lhe configurar a ligação a um fornecedor externo de backpack. Ligar-se a uma backpack permite-lhe exibir as medalhas externas neste site e enviar as medalhas que recebeu aqui para a sua backpack.
 
-Para já, apenas é suportado o <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>. Tem de se registar num serviço de Backpack antes de tentar configurar a ligação à Backpack nesta página.';
+Para já, apenas é suportada a <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>. Tem de registar-se num serviço de backpack antes de tentar configurar a ligação à backpack nesta página.';
 $string['backpackconnectionresendemail'] = 'Reenviar e-mail de verificação';
 $string['backpackconnectionunexpectedresult'] = 'Surgiu um problema ao ligar à sua backpack. Por favor, tente novamente.<br/><br/>Se este problema persistir, contacte o Administrador.';
 $string['backpackdetails'] = 'Configurações da backpack';
@@ -133,7 +133,7 @@ Continuará a poder controlar individualmente as configurações de privacidade 
 $string['badgeprivacysetting_str'] = 'Exibir automaticamente na página do meu perfil as medalhas que recebi';
 $string['badges'] = 'Medalhas';
 $string['badgesalt'] = 'Salt de encriptação do endereço de e-mail';
-$string['badgesalt_desc'] = 'Usar uma encriptação permite aos serviços de backpack confirmar o utilizador que recebeu a medalha sem ter de expor o seu endereço de e-mail. Esta configuração deverá usar apenas números e letras.
+$string['badgesalt_desc'] = 'Usar uma encriptação permite aos serviços de backpack confirmar o utilizador que recebeu a medalha sem divulgar o seu endereço de e-mail. Esta configuração deverá usar apenas números e letras.
 
 Nota: Para fins de verificação, evite mudar esta configuração assim que começar a emitir medalhas.';
 $string['badgesdisabled'] = 'As medalhas não estão ativas neste site.';
@@ -161,8 +161,8 @@ $string['claimcomment'] = 'Comentário da acreditação';
 $string['claimid'] = 'URL de reivindicação';
 $string['clearsettings'] = 'Limpar configurações';
 $string['completioninfo'] = 'Critérios de emissão da medalha: ';
-$string['completionnotenabled'] = 'A \'Conclusão da disciplina\' não está ativa para esta disciplina, por isso não poderá ser incluída nos critérios da medalha. A \'Conclusão da disciplina\' pode ser ativada nas configurações da disciplina.';
-$string['configenablebadges'] = 'Quando ativada, esta funcionalidade permite-lhe criar medalhas e atribuí-las aos utilizadores do site.';
+$string['completionnotenabled'] = 'A \'Conclusão da disciplina\' não está ativa nesta disciplina, por isso não poderá ser incluída nos critérios da medalha. A \'Conclusão da disciplina\' pode ser ativada nas configurações da disciplina.';
+$string['configenablebadges'] = 'Se ativada, esta funcionalidade permite-lhe criar medalhas e atribuí-las aos utilizadores do site.';
 $string['configuremessage'] = 'Mensagem da medalha';
 $string['connect'] = 'Ligar';
 $string['connected'] = 'Ligado';
@@ -185,9 +185,9 @@ $string['criteria_2_help'] = 'Permite que uma medalha seja atribuída manualment
 $string['criteria_3'] = 'Participação social';
 $string['criteria_3_help'] = 'Social';
 $string['criteria_4'] = 'Conclusão da disciplina';
-$string['criteria_4_help'] = 'Permite que uma medalha seja atribuída a utilizadores que tenham concluído a disciplina. Este critério pode ter parâmetros adicionais, tais como uma nota mínima e a data de conclusão da disciplina.';
+$string['criteria_4_help'] = 'Permite que uma medalha seja atribuída a utilizadores que tenham concluído a disciplina. Este critério pode ter parâmetros adicionais, tais como, uma nota mínima e a data de conclusão da disciplina.';
 $string['criteria_5'] = 'Concluir um conjunto de disciplinas';
-$string['criteria_5_help'] = 'Permite que uma medalha seja atribuída a utilizadores que tenham concluído um conjunto de disciplinas. Cada disciplina pode ter parâmetros adicionais, tais como uma nota mínima e a data de conclusão da disciplina.';
+$string['criteria_5_help'] = 'Permite que uma medalha seja atribuída a utilizadores que tenham concluído um conjunto de disciplinas. Cada disciplina pode ter parâmetros adicionais, tais como, uma nota mínima e a data de conclusão da disciplina.';
 $string['criteria_6'] = 'Preenchimento do perfil';
 $string['criteria_6_help'] = 'Permite que uma medalha seja atribuída a utilizadores que preencham determinados campos do seu perfil. Pode selecionar campos predefinidos e campos personalizados que estão disponíveis para os utilizadores.';
 $string['criteria_7'] = 'Medalhas atribuídas';
@@ -201,9 +201,9 @@ $string['criteria_descr_0'] = 'Os utilizadores recebem esta medalha quando cumpr
 $string['criteria_descr_1'] = '<strong>{$a}</strong> das seguintes atividades estão concluídas:';
 $string['criteria_descr_2'] = 'Esta medalha será atribuída a utilizadores com <strong>{$a}</strong> dos seguintes papéis:';
 $string['criteria_descr_4'] = 'Os utilizadores têm de concluir a disciplina';
-$string['criteria_descr_5'] = '<strong>{$a}</strong> das seguintes disciplinas têm de ser concluídas:';
-$string['criteria_descr_6'] = '<strong>{$a}</strong> dos seguintes campos de perfil têm de ser completados:';
-$string['criteria_descr_7'] = '<strong>{$a}</strong> das seguintes medalhas têm que ser obtidas:';
+$string['criteria_descr_5'] = '<strong>{$a}</strong> das seguintes disciplinas estão concluídas:';
+$string['criteria_descr_6'] = '<strong>{$a}</strong> dos seguintes campos de perfil estão completos:';
+$string['criteria_descr_7'] = '<strong>{$a}</strong> das seguintes medalhas foram obtidas:';
 $string['criteria_descr_8'] = 'É obrigatório ser membro de <strong>{$a}</strong> dos seguintes Grupos globais:';
 $string['criteria_descr_bydate'] = 'até <em>{$a}</em>';
 $string['criteria_descr_grade'] = 'com a nota mínima de <em>{$a}</em>';
@@ -294,7 +294,7 @@ $string['error:nosuchmod'] = 'Aviso: Esta atividade já não está disponível.'
 $string['error:nosuchrole'] = 'Aviso: Este papel já não está disponível.';
 $string['error:nosuchuser'] = 'O utilizador com este endereço de e-mail não tem uma conta no atual fornecedor backpack.';
 $string['error:notifycoursedate'] = 'Aviso: As medalhas associadas à conclusão de disciplina e de atividade não serão emitidas até à data de início da disciplina.';
-$string['error:parameter'] = 'Aviso: Pelo menos um parâmetro deve ser selecionado para garantir a correta emissão da medalha.';
+$string['error:parameter'] = 'Aviso: Deve ser selecionado pelo menos um parâmetro para garantir a correta emissão da medalha.';
 $string['error:personaneedsjs'] = 'Atualmente, é necessário JavaScript para estabelecer a ligação à sua Backpack. Se tiver permissão para tal, ative o JavaScript e atualize/recarregue a página.';
 $string['error:relatedbadgedoesntexist'] = 'Não existe uma medalha pública com esse identificador';
 $string['error:requesterror'] = 'O pedido de ligação falhou (código de erro {$a})';
@@ -354,24 +354,24 @@ $string['issuerurl'] = 'URL do emissor';
 $string['issuerurl_help'] = 'O site da organização que emite a acreditação. O URL deve ter um prefixo http:// ou https://.';
 $string['language'] = 'Idioma';
 $string['language_help'] = 'O idioma selecionado para a página da medalha.';
-$string['localbadges'] = 'As minhas medalhas do site {$a}';
-$string['localbadgesh'] = 'As Minhas Medalhas deste site';
-$string['localbadgesh_help'] = 'Todas as medalhas ganhas dentro deste web site por conclusão de disciplina, atividades e outros requisitos.
+$string['localbadges'] = 'As minhas medalhas do site: {$a}';
+$string['localbadgesh'] = 'As minhas medalhas deste site';
+$string['localbadgesh_help'] = 'Todas as medalhas ganhas neste site por conclusão de disciplinas, atividades e outros requisitos.
 
 Pode gerir as suas medalhas aqui e torná-las públicas ou privadas na página do seu perfil.
 
-Pode descarregar todas as medalhas, ou cada medalha separadamente, e guardá-las no seu computador. As medalhas que descarregou podem ser adicionadas ao seu serviço externo de Backpack.';
+Pode descarregar todas as medalhas, ou cada medalha separadamente, e guardá-las no seu computador. As medalhas que descarregou podem ser adicionadas ao seu serviço externo de backpack.';
 $string['localbadgesp'] = 'Medalhas de {$a}:';
-$string['localconnectto'] = 'Para partilhar estas medalhas fora deste site tem de <a href="{$a}">ligar-se a uma backpack</a>.';
+$string['localconnectto'] = 'Para partilhar estas medalhas fora deste site, tem de <a href="{$a}">ligar-se a uma backpack</a>.';
 $string['makeprivate'] = 'Tornar privadas';
 $string['makepublic'] = 'Tornar públicas';
 $string['managebadges'] = 'Gerir medalhas';
 $string['message'] = 'Texto da mensagem';
 $string['messagebody'] = '<p>Foi-lhe atribuída a medalha "%badgename%"!</p>
-<p>Mais informações sobre esta medalha em %badgelink%.</p>
-<p>Pode gerir e descarregar a medalha a partir da página {$a}.</p>';
+<p>Pode obter mais informações na página da medalha %badgelink% </p>
+<p>Pode gerir e descarregar a medalha na página {$a}.</p>';
 $string['messagesubject'] = 'Parabéns! Acabou de ganhar uma medalha!';
-$string['method'] = 'Este critério é cumprido quando…';
+$string['method'] = 'Este critério fica concluído quando…';
 $string['mingrade'] = 'Nota mínima necessária';
 $string['month'] = 'Mês/Meses';
 $string['mybackpack'] = 'Configurações da minha backpack';
@@ -453,14 +453,14 @@ $string['privacy:metadata:manualaward:issuerid'] = 'O ID do utilizador condecora
 $string['privacy:metadata:manualaward:issuerrole'] = 'O papel do utilizador condecorado com a medalha';
 $string['privacy:metadata:manualaward:recipientid'] = 'O ID do utilizador que foi condecorado manualmente com a medalha';
 $string['recipientdetails'] = 'Detalhes do condecorado';
-$string['recipientidentificationproblem'] = 'Não é possível encontrar um condecorado com esta medalha entre os utilizadores existentes.';
+$string['recipientidentificationproblem'] = 'Não foi possível encontrar um condecorado com esta medalha entre os utilizadores existentes.';
 $string['recipients'] = 'Condecorados com a medalha';
 $string['recipientvalidationproblem'] = 'Não é possível verificar este utilizador como um condecorado com esta medalha.';
 $string['relatedbages'] = 'Medalhas relacionadas';
 $string['relative'] = 'Data relativa';
-$string['requiredbadge'] = 'Pelo menos uma medalha deve ser adicionada ao critério medalha.';
-$string['requiredcohort'] = 'Pelo menos um Grupo global deve ser adicionado ao critério Grupo global.';
-$string['requiredcourse'] = 'Deve ser adicionada pelo menos uma disciplina ao critério disciplinas.';
+$string['requiredbadge'] = 'Deve ser adicionada pelo menos uma medalha ao critério medalha.';
+$string['requiredcohort'] = 'Deve ser adicionado pelo menos um grupo global ao critério grupo global.';
+$string['requiredcourse'] = 'Deve ser adicionada pelo menos uma disciplina ao critério disciplina.';
 $string['reviewbadge'] = 'Alterações no acesso à medalha';
 $string['reviewconfirm'] = '<p>Isto fará com que esta medalha fique visível para os utilizadores e disponível para lhes ser atribuída.</p>
 
@@ -474,7 +474,7 @@ $string['save'] = 'Guardar';
 $string['searchname'] = 'Pesquisar por nome';
 $string['selectaward'] = 'Por favor, selecione o papel que gostaria de usar para atribuir esta medalha: ';
 $string['selectgroup_end'] = 'Apenas as coleções públicas são exibidas, <a href="http://backpack.openbadges.org">visite a sua Backpack</a> para criar mais coleções públicas.';
-$string['selectgroup_start'] = 'Selecione coleções da sua backpack para exibir neste site:';
+$string['selectgroup_start'] = 'Selecione as coleções da sua backpack para exibir neste site:';
 $string['selecting'] = 'Com as medalhas selecionadas…';
 $string['setup'] = 'Configurar ligação';
 $string['signinwithyouremail'] = 'Autentique-se com o seu email';

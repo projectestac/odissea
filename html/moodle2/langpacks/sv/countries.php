@@ -217,6 +217,7 @@ $string['SM'] = 'San Marino';
 $string['SN'] = 'Senegal';
 $string['SO'] = 'Somalia';
 $string['SR'] = 'Surinam';
+$string['SS'] = 'Sydsudan';
 $string['ST'] = 'Sao Tome And Principe';
 $string['SV'] = 'El Salvador';
 $string['SY'] = 'Syrien';

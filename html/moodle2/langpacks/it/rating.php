@@ -43,7 +43,7 @@ $string['aggregatetype_help'] = 'La modalità di aggregazione definisce come ver
 Se si sceglie "Non aggregare i voti" l\'attività non comparirà nel registro valutatore.';
 $string['allowratings'] = 'Consenti la valutazione degli elementi';
 $string['allratingsforitem'] = 'Tutte le valutazioni inviate';
-$string['capabilitychecknotavailable'] = 'La verifica delle autorizzazioni non sarà disponibili fino a quando l\'attività non sarà salvata';
+$string['capabilitychecknotavailable'] = 'La verifica delle autorizzazioni non sarà disponibile fino a quando l\'attività non sarà salvata';
 $string['couldnotdeleteratings'] = 'Spiacente, non è possibile eliminarlo poiché alcuni partecipanti hanno già dato le loro valutazione';
 $string['norate'] = 'La valutazione degli elementi non è consentita!';
 $string['noratings'] = 'Nessuna valutazione inviata';

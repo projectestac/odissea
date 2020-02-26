@@ -83,7 +83,10 @@ $string['attempthistory'] = 'Tentativo precedente';
 $string['attemptnumber'] = 'Numero tentativo';
 $string['attemptreopenmethod'] = 'Riapertura tentativo';
 $string['attemptreopenmethod_help'] = 'Imposta la modalità di riapertura dei tentativi di consegna. Opzioni disponibili:
-<ul><li>Mai - Il tentativo di consegna non potrà essere riaperto.</li><li>Manualmente - Il tentativo di consegna potrà essere riaperto da un docente.</li><li>Automaticamente fino al superamento - Il tentativo di consegna verrà riaperto automaticamente fino al raggiungimento della sufficienza impostata per il compito nel Registro valutatore. (Sezione Impostazione registro valutatore).</li></ul>';
+
+* Mai - Il tentativo di consegna non potrà essere riaperto.
+* Manualmente - Il tentativo di consegna potrà essere riaperto da un docente.
+* Automaticamente fino al superamento - Il tentativo di consegna verrà riaperto automaticamente fino al raggiungimento della sufficienza impostata per il compito nel Registro valutatore.';
 $string['attemptreopenmethod_manual'] = 'Manualmente';
 $string['attemptreopenmethod_none'] = 'Mai';
 $string['attemptreopenmethod_untilpass'] = 'Automaticamente fino al superamento';
@@ -129,6 +132,7 @@ $string['couldnotconvertsubmission'] = 'Non è stato possibile convertire la con
 $string['couldnotcreatecoursemodule'] = 'Non è stato possibile creare il modulo del corso';
 $string['couldnotcreatenewassignmentinstance'] = 'Non è stato possibile creare una nuova istanza di compito';
 $string['couldnotfindassignmenttoupgrade'] = 'Non è stato possibile trovare precedenti istanze di compito da aggiornare';
+$string['currentassigngrade'] = 'Valutazione corrente del compito';
 $string['currentattempt'] = 'Tentativo {$a}.';
 $string['currentattemptof'] = 'Tentativo {$a->attemptnumber} (Tentativi consentiti: {$a->maxattempts}).';
 $string['currentgrade'] = 'Voto nel Registro valutatore';
@@ -150,7 +154,7 @@ $string['downloadasfolders_help'] = 'Se le consegne sono formate da più di un f
 $string['downloadselectedsubmissions'] = 'Scarica le consegne selezionate';
 $string['duedate'] = 'Termine consegne';
 $string['duedatecolon'] = 'Termine consegne: {$a}';
-$string['duedate_help'] = 'La data di consegna del compito. Eventuali consegne successive alla data di fine consegne saranno considerate in in ritardo. Per impedire consegne in ritardo devi impostare la data limite';
+$string['duedate_help'] = 'La data di consegna del compito. Eventuali consegne successive alla data di fine consegne saranno considerate in in ritardo. Per impedire consegne in ritardo è necessario impostare la data limite';
 $string['duedateno'] = 'Senza termine consegne';
 $string['duedatereached'] = 'La data di scadenza del compito è già trascorsa';
 $string['duedatevalidation'] = 'La data di scadenza non può essere antecedente alla data di inizio consegne';
@@ -269,9 +273,9 @@ $string['hiddenuser'] = 'Partecipante';
 $string['hideshow'] = 'Nascondi/Visualizza';
 $string['inactiveoverridehelp'] = '* Gli studenti non appartengono al gruppo corretto o non hanno un ruolo idoneo per consegnare il compito.';
 $string['indicator:cognitivedepth'] = 'Compito cognitivo';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'compito\'.';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Compito.';
 $string['indicator:socialbreadth'] = 'Compito sociale';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'compito\'.';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Compito.';
 $string['instructionfiles'] = 'File delle istruzioni';
 $string['introattachments'] = 'File aggiuntivi';
 $string['introattachments_help'] = 'Nei compiti è possibile utilizzare file aggiuntivi, come ad esempio modelli di risposte. I link per scaricare i file aggiuntivi saranno visualizzati sotto la descrizione presente nella pagina del compito.';

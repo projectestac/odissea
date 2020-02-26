@@ -15,6 +15,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 defined('MOODLE_INTERNAL') || die();
+require_once($CFG->dirroot . '/question/type/essay/renderer.php');
+
 
 class qtype_wq_renderer extends qtype_renderer {
 
@@ -106,13 +108,13 @@ class qtype_wq_renderer extends qtype_renderer {
         // Answer field.
         $step = $qa->get_last_step_with_qt_var('auxiliar_text');
         $question = $qa->get_question();
-        $responseoutput = $this->page->get_renderer('qtype_essay', 'format_editor');
+        $responseoutput = $this->page->get_renderer('qtype_wq', 'auxiliar_text');
 
         if (!$step->has_qt_var('auxiliar_text') && empty($options->readonly)) {
             // Auxiliar text has never been filled.
             $step = new question_attempt_step();
-        }
 
+        }
         if (empty($options->readonly)) {
             $auxiliartext = $responseoutput->response_area_input('auxiliar_text', $qa,
                     $step, $question->auxiliartextfieldlines, $options->context);
@@ -145,5 +147,32 @@ class qtype_wq_renderer extends qtype_renderer {
 
     public function feedback_class($fraction) {
         return $this->base->feedback_class($fraction);
+    }
+}
+
+/**
+ * Represents an essay with filepicker renderer. Is used to render an editor
+ * with a filepicker as auxiliar text.
+ */
+class qtype_wq_auxiliar_text_renderer extends qtype_essay_format_editorfilepicker_renderer {
+    protected function class_name() {
+        return 'qtype_wq_auxiliar_renderer';
+    }
+
+    /**
+     * Rewrite the auxiliar_text field response. To create the proper URL's for auxiliar_text
+     * qt variable.
+     */
+    protected function prepare_response($name, question_attempt $qa,
+            question_attempt_step $step, $context) {
+        if (!$step->has_qt_var($name)) {
+            return '';
+        }
+
+        $formatoptions = new stdClass();
+        $formatoptions->para = false;
+        $text = $qa->rewrite_response_pluginfile_urls($step->get_qt_var($name),
+                $context->id, 'auxiliar_text', $step);
+        return format_text($text, $step->get_qt_var($name), $formatoptions);
     }
 }

@@ -37,5 +37,5 @@ $string['privacy:metadata'] = 'Το πρόσθετο «Βιβλιοθήκη φο
 $string['search'] = 'Αναζήτηση';
 $string['searchtemplates'] = 'Αναζήτηση προτύπων';
 $string['templatehasnoexample'] = 'Αυτό το πρότυπο δεν έχει παράδειγμα πλαισίου, επομένως δεν μπορεί να αποδοθεί εδώ. Για να προσθέσετε ένα παράδειγμα πλαισίου σε αυτό το πρότυπο, εισαγάγετε σε ένα σχόλιο Mustache «Example context (json):», ακολουθούμενο από το κωδικοποιημένο μέσω json παράδειγμα πλαισίου για το πρότυπο.';
-$string['templates'] = 'Πρότυπα';
+$string['templates'] = 'Σχεδιότυπα';
 $string['templateselected'] = 'Πρότυπο: {$a}';

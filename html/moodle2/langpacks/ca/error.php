@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityisscheduledfordeletion'] = 'Eliminació de l\'activitat en curs...';
-$string['alreadyloggedin'] = 'Ja esteu registrat com {$a}, heu de tancar la sessió abans d\'identificar-vos com a un altre usuari.';
+$string['alreadyloggedin'] = 'Ja heu iniciat la sessió com a {$a}; heu de finalitzar la sessió abans d\'identificar-vos com un altre usuari.';
 $string['authnotexisting'] = 'No existeix el connector d\'autorització.';
 $string['backupcontainexternal'] = 'Aquest fitxer de còpia de seguretat conté hostes en xarxa de Moodle externs que no han estat configurats localment.';
 $string['backuptablefail'] = 'No s\'han pogut configurar correctament les taules de la còpia de seguretat.';
@@ -468,7 +468,7 @@ $string['refoundto'] = 'Poden reemborsar-se a {$a}';
 $string['refoundtoorigi'] = 'S\'ha retornat a la quantitat original: {$a}';
 $string['registrationdisabled'] = 'No s\'ha habilitat el registre en aquest lloc';
 $string['remotedownloaderror'] = '<p>No s\'ha pogut baixar el component al vostre servidor. Verifiqueu els paràmetres del servidor intermediari. Es recomana vivament l\'extensió cURL de PHP.</p>
-<p>Haureu de baixar manualment el fitxer <a href="{$a->url}">{$a->url}</a>, copiar-lo a la ubicació «{$a->dest}» del vostre servidor i descomprimir-lo allí.</p>';
+<p>Haureu de baixar manualment el fitxer <a href="{$a->url}">{$a->url}</a>, copiar-lo a la ubicació «{$a->dest}» del vostre servidor i descomprimir-lo allà.</p>';
 $string['remotedownloadnotallowed'] = 'El vostre servidor no permet baixar components ((allow_url_fopen inhabilitat).<br /><br />Heu de baixar manualment el fitxer <a href="{$a->url}">{$a->url}</a>, copiar-lo a la ubicació «{$a->dest}» del vostre servidor i descomprimir-lo allà.';
 $string['reportnotavailable'] = 'Aquest tipus d\'informe només es pot trobar al curs del lloc.';
 $string['requirecorrectaccess'] = 'L\'URL o el port no són vàlids.';

@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['complete'] = 'كامل';
+$string['future'] = 'المستقبل';
+$string['inprogress'] = 'قيد التنفيذ';
+$string['past'] = 'الماضي';
+$string['pluginname'] = 'معاينة مقرر دراسي';
+$string['timeline'] = 'الخط الزمني';

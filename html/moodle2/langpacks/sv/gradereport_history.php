@@ -42,3 +42,6 @@ $string['foundoneuser'] = '1 användare hittad';
 $string['gradenew'] = 'Reviderat betyg';
 $string['gradeold'] = 'Originalbetyg';
 $string['grader'] = 'Betygsättare';
+$string['history:view'] = 'Visa betygshistorik';
+$string['pluginname'] = 'Betygshistorik';
+$string['preferences'] = 'Inställningar för betygshistorik';

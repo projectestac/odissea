@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['csv:view'] = 'CSV kalifikazioak inportatu';
+$string['csv:view'] = 'Inportatu CSV kalifikazioak';
 $string['pluginname'] = 'CSV fitxategia';
 $string['privacy:metadata'] = 'Kalifikazioak CSV fitxategitik inportatzeko pluginak ez du datu pertsonalik biltzen.';

@@ -30,3 +30,7 @@ $string['nohaylicencias'] = 'There are no licenses to show';
 // Permisos
 $string['licenses_vicensvives:addinstance'] = 'Add block instance.';
 $string['licenses_vicensvives:myaddinstance'] = 'Add block instance into my.';
+
+// Privacy
+$string['privacy:metadata'] = 'The Licenses Vicens Vives block only shows data stored in other locations.';
+

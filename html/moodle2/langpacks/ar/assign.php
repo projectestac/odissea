@@ -121,6 +121,7 @@ $string['currentattemptof'] = 'هذه المحاولة رقم{$a->attemptnumber}
 $string['currentgrade'] = 'الدرجة الحالية في';
 $string['cutoffdate_help'] = 'إذا تم تفعيله، فإن التكليف (المهمة) لن تقبل التسليمات بعد هذا التاريخ دون تمديد.';
 $string['description'] = 'الوصف';
+$string['downloadall'] = 'تنزيل جميع التسليمات';
 $string['duedate'] = 'تاريخ تقديم مهمة';
 $string['duedateno'] = 'لا يوجد موعد لتقديم المهمة';
 $string['editsubmission'] = 'حرر تسليمي';
@@ -133,6 +134,8 @@ $string['gradersubmissionupdatedhtml'] = '{$a->username} قام بتحديث ا�
 $string['gradersubmissionupdatedtext'] = '{$a->username} قام بتحديث المهمةالمقدمة لـ \'{$a->assignment}\' وهذه المهمة موجودة في: {$a->url}';
 $string['gradingstatus'] = 'حالة التقييم';
 $string['gradingsummary'] = 'خلاصة التقييم';
+$string['latesubmissions'] = 'التقديمات المتأخرة';
+$string['modulename'] = 'الواجب';
 $string['modulename_help'] = 'تمكن وحدة نشاط الواجب  المدرس من إيصال الواجبات، وجمع التسليمات ووضع الدرجات والإفادات.
 
 يمكن للطلاب تقديم أي محتوى رقمي (ملفات)، مثل الوثائق النصية وجداول البيانات أو الصور أو مقاطع الصوت والفيديو.
@@ -142,6 +145,7 @@ $string['modulename_help'] = 'تمكن وحدة نشاط الواجب  المد�
 $string['modulenameplural'] = 'مهام';
 $string['newsubmissions'] = 'مهام تم تقديمها';
 $string['noattempt'] = 'لا توجد محاولات';
+$string['none'] = 'لا شيء';
 $string['nosavebutnext'] = 'التالي';
 $string['notgraded'] = 'لم يتم التقييم';
 $string['notgradedyet'] = 'لم تعطى درجة بعد';
@@ -153,7 +157,9 @@ $string['numberofsubmittedassignments'] = 'مسلمة';
 $string['overdue'] = '<font color="red"></font>فات موعد تسليم الوظيفة بـ: {$a}';
 $string['previous'] = 'السابق';
 $string['reviewed'] = 'تمت مراجعته';
+$string['save'] = 'احفظ';
 $string['savechanges'] = 'حفظ التغييرات';
+$string['scale'] = 'مقياس';
 $string['showrecentsubmissions'] = 'أظهر التسليمات الحديثة';
 $string['status'] = 'الحالة';
 $string['submission'] = 'تسليم';
@@ -171,6 +177,7 @@ $string['submittedearly'] = 'تم تسليم الوظيفة مبكرة بـ{$a}'
 $string['submittedlate'] = 'تم تسليم الوظيفة متأخرة بـ{$a}';
 $string['submittedlateshort'] = '{$a} متأخر';
 $string['timeremaining'] = 'الزمن المتبقي';
+$string['viewgradebook'] = 'شاهد سجل درجات';
 $string['viewgrading'] = 'معاينة/تقييم كل التسليمات';
 $string['viewownsubmissionform'] = 'معاينة صفحة تسليم الوظيفة الشخصية';
 $string['viewownsubmissionstatus'] = 'معاينة صفحة حالة التسليم الشخصية';

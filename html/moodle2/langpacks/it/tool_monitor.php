@@ -64,13 +64,13 @@ $string['managesubscriptions'] = 'Monitoraggio eventi';
 $string['managesubscriptionslink'] = 'E\' possibile sottoscrivere la regola nella pagina {$a}.';
 $string['messageprovider:notification'] = 'Ricevere notifiche delle regole sottoscritte';
 $string['messagetemplate'] = 'Messaggio di notifica';
-$string['messagetemplate_help'] = 'Il messaggio di notifica che sarà inviato agli utenti quando viene raggiunta la soglia di notifica. E\' possibile utilizzare i seguenti segnaposto:
-<br /><br />
-* {link} - Collegamento alla pagina dove si è verificato l\'evento<br />
-* {modulelink} - Collegamento all\'area monitorata<br />
-* {rulename} - Nome della regola<br />
-* {description} - Descrizione<br />
-* {eventname} - Nome dell\'evento<br />';
+$string['messagetemplate_help'] = 'Il messaggio di notifica che sarà inviato agli utenti quando verrà raggiunta la soglia di notifica. E\' possibile utilizzare i seguenti segnaposto:
+
+* Collegamento alla pagina dove si è verificato l\'evento {link}
+* Collegamento all\'area monitorata {modulelink}
+* Nome della regola {rulename}
+* Descrizione {description}
+* Nome dell\'evento {eventname}';
 $string['moduleinstance'] = 'Istanza';
 $string['monitordisabled'] = 'Il monitoraggio eventi è disabilitato.';
 $string['monitorenabled'] = 'Il monitoraggio eventi è abilitato.';
@@ -79,6 +79,7 @@ $string['monitor:managetool'] = 'Abilita/disabilita monitoraggio eventi';
 $string['monitor:subscribe'] = 'Sottoscrizione regole monitoraggio eventi';
 $string['norules'] = 'Non ci sono regole di monitoraggio eventi.';
 $string['pluginname'] = 'Monitoraggio eventi';
+$string['privacy:createdrules'] = 'Regole di monitoraggio eventi create da me';
 $string['privacy:metadata:description'] = 'Descrizione della regola.';
 $string['privacy:metadata:eventname'] = 'Nome non ambiguo dell\'evento.';
 $string['privacy:metadata:frequency'] = 'Frequenza delle notifiche.';
@@ -99,6 +100,7 @@ $string['privacy:metadata:timewindow'] = 'Intervallo di tempo in secondi.';
 $string['privacy:metadata:userid'] = 'ID dell\'utente che ha creato la regola.';
 $string['privacy:metadata:useridhistory'] = 'ID dell\'utente a cui è stata inviata la notifica.';
 $string['privacy:metadata:useridsub'] = 'ID del sottoscrittore.';
+$string['privacy:subscriptions'] = 'Le mie sottoscrizioni al monitoraggio eventi';
 $string['processevents'] = 'Elaborazione eventi';
 $string['ruleareyousure'] = 'Sei sicuro di eliminare la regola "{$a}"?';
 $string['ruleareyousureextra'] = 'Saranno eliminate anche  {$a} sottoscrizioni della regola.';

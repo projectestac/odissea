@@ -49,7 +49,7 @@ $string['loadmoreusers'] = 'Igo erabiltzaile gehiago...';
 $string['pluginname'] = 'Kalifikazio-historia';
 $string['preferences'] = 'Kalifikazio-historiaren hobespenak';
 $string['privacy:metadata'] = 'Kalifikazio-historia txostenak soilik beste kokapenetan gordetako datuak erakusten ditu.';
-$string['revisedonly'] = 'Berrikusitako kalifikazioak bakarrik';
+$string['revisedonly'] = 'Berrikusitako kalifikazioak baino ez';
 $string['revisedonly_help'] = 'Erakutsi soilik berrikusi diren kalifikazioak.
 
 Honek esan nahi du kalifikazioan aldaketak izan dituzten erregistroak erakutsiko direla.';

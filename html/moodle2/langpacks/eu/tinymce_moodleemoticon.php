@@ -29,4 +29,4 @@ $string['moodleemoticon:desc'] = 'Txertatu aurpegiera';
 $string['pluginname'] = 'Txertatu aurpegiera';
 $string['privacy:metadata'] = 'TinyMCEko Txertatu aurpegiera pluginak ez du datu pertsonalik biltzen.';
 $string['requireemoticon'] = 'Aurpegiera-iragazkia behar du';
-$string['requireemoticon_desc'] = 'Gaituz gero, emotikoien botoia bakarrik ikusgai izango da editorearen testuinguruan emotikoien iragazkia gaituta dagoenean.';
+$string['requireemoticon_desc'] = 'Gaituz gero, soilik aurpegieren botoia izango da ikusgai editorearen testuinguruan aurpegieren iragazkia gaituta dagoenean.';

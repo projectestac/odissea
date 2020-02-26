@@ -37,4 +37,5 @@ $string['exportschemaexception'] = 'بنية قاعدة البيانات الح�
 $string['importschemaexception'] = 'بنية قاعدة البيانات الحالية لا تطابق كل ملفات install.xml.<br /> {$a}';
 $string['importversionmismatchexception'] = 'الإصدار الحالي {$a->currentver} لا يطابق الإصدار الذي تم تصديره {$a->schemaver}.';
 $string['malformedxmlexception'] = 'تم العثور على XML غير سليم، لا يمكن الاستمرار.';
+$string['tablex'] = 'الجدول {$a}:';
 $string['unknowntableexception'] = 'تم إيجاد جدول غير معروف {$a} في ملف التصدير.';

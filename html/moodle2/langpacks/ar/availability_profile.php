@@ -25,6 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['conditiontitle'] = 'حقل ملف تعريف المستخدم';
+$string['description'] = 'التحكم في الوصول استنادًا إلى الحقول الموجودة في ملف تعريف الطالب.';
+$string['error_selectfield'] = 'يجب عليك تحديد حقل ملف التعريف.';
+$string['error_setvalue'] = 'يجب عليك كتابة قيمة.';
+$string['label_operator'] = 'طريقة المقارنة';
+$string['label_value'] = 'القيمة للمقارنة ضد';
+$string['missing'] = '(حقل مخصص مفقود: {$a})';
 $string['op_contains'] = 'يحتوي';
 $string['op_doesnotcontain'] = 'لا يحتوي';
 $string['op_endswith'] = 'ينتهي بـ';
@@ -32,4 +39,16 @@ $string['op_isempty'] = 'هو فارغ';
 $string['op_isequalto'] = 'هو يساوي';
 $string['op_isnotempty'] = 'ليس فارغاً';
 $string['op_startswith'] = 'يبداء بـ';
+$string['pluginname'] = 'تقييد حسب الملف الشخصي';
+$string['privacy:metadata'] = 'لا يقوم البرنامج المساعد Restriction by profile بتخزين أي بيانات شخصية.';
+$string['requires_contains'] = 'لديك {$a->field}  يحتوي على {$a->value}';
+$string['requires_doesnotcontain'] = 'لديك {$a->value}   لا يحتوي على  {$a->value}';
+$string['requires_endswith'] = 'لديك {$a->field} ينتهي  {$a->value}';
+$string['requires_isempty'] = 'مجال   {$a->field}  فارغ';
+$string['requires_isequalto'] = 'لديك  {$a->field}  هو {$a->value}';
+$string['requires_isnotempty'] = 'لديك  {$a->field}  ليس فارغا';
+$string['requires_notendswith'] = 'مجال  {$a->field}  لا ينتهي بـ {$a->value}';
+$string['requires_notisequalto'] = 'مجال  {$a->field}ليس {$a->value}';
+$string['requires_notstartswith'] = 'لديك  {$a->field} لم يبدأ مع {$a->value}';
+$string['requires_startswith'] = 'لديك  {$a->field} يبدأ {$a->value}';
 $string['title'] = 'الملف الشخصي';

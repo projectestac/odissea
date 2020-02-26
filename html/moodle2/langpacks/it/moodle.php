@@ -200,7 +200,7 @@ $string['backuplogdetailed'] = 'Log dettagliato';
 $string['backuploglaststatus'] = 'Log del backup più recente';
 $string['backupmissinguserinfoperms'] = 'Nota: questo backup non contiene dati utente. Le attività Esercizio e workshop non saranno incluse nel backup poiché queste attività non sono compatibili con i backup privi di dati utente.';
 $string['backupnext'] = 'Prossimo backup';
-$string['backupnonisowarning'] = 'Attenzione: questo backup proviene da una versione di Moodle (pre 1.6) non-Unicode. Se il backup contiene qualche testo non-ISO-8859-1, questo potrebbe essere ALTERATO se ne viene fatto il ripristino sulla presente versione Unicode di Moodle. Leggere <a href="http://docs.moodle.org/en/Backup_FAQ">Backup FAQ</a> per maggiori informazioni su come ripristinare correttamente questo backup.';
+$string['backupnonisowarning'] = 'Attenzione: questo backup proviene da una versione di Moodle (pre 1.6) non-Unicode. Se il backup contiene testo non-ISO-8859-1, questo potrebbe essere ALTERATO se ne viene fatto il ripristino sulla presente versione Unicode di Moodle. Leggere <a href="http://docs.moodle.org/en/Backup_FAQ">Backup FAQ</a> per maggiori informazioni su come ripristinare correttamente questo backup.';
 $string['backupnotyetrun'] = 'Backup automatico in attesa';
 $string['backuporiginalname'] = 'Nome del backup';
 $string['backuproleassignments'] = 'Backup delle assegnazioni per questi ruoli';
@@ -298,12 +298,13 @@ $string['continue'] = 'Continua';
 $string['continuetocourse'] = 'Clicca qui per entrare nel tuo corso';
 $string['convertingwikitomarkdown'] = 'Conversione in corso del wiki al formato Markdown ...';
 $string['cookiesenabled'] = 'Il browser deve avere i cookie abilitati';
-$string['cookiesenabled_help'] = 'I siti Moodle utilizzano due tipi di cookie.
+$string['cookiesenabled_help'] = 'Il sito utilizza due tipi di cookie:
 
-Il primo è un cookie di sessione chiamato MoodleSession. E\' indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando ci si scollega dal sito Moodle o si chiude il browser, il cookie MoodleSession viene eliminato.
+Il primo è un cookie di sessione ed è normalmente MoodleSession. E\' indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.
 
-Il secondo cookie, generalmente chiamato MOODLEID, serve solo per ricordare il tuo username all\'interno del browser. Grazie a questo cookie quando ritornerai a far vista allo stesso sito Moodle, troverai il campo della pagina di login già compilato con il tuo username. Non ci sono problemi se rifiuti questo cookie, l\'unico inconveniente sarà quello di dover inserire nuovamente il tuo username nella pagina di login.';
+Il secondo cookie, generalmente chiamato MOODLEID, serve solo per ricordare il proprio username all\'interno del browser. Grazie a questo cookie quando si ritorna a far vista allo stesso sito, il campo della pagina di login sarà già compilato con lo username. Non ci sono problemi a rifiutare questo cookie, l\'unico inconveniente sarà quello di dover inserire nuovamente lo username nella pagina di login.';
 $string['cookiesenabledonlysession'] = 'Il browser deve avere i cookie abilitati';
+$string['cookiesenabledonlysession_help'] = 'Il sito utilizza un cookie di sessione, normalmente chiamato MoodleSession. E\' indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.';
 $string['cookiesnotenabled'] = 'Purtroppo al momento i cookie non sono abilitati nel tuo browser.';
 $string['copy'] = 'copia';
 $string['copyasnoun'] = 'copia';
@@ -383,8 +384,8 @@ $string['coursenotyetstarted'] = 'Il corso non è iniziato';
 $string['courseoverview'] = 'Panoramica corsi';
 $string['courseoverviewfiles'] = 'Immagine del corso';
 $string['courseoverviewfilesext'] = 'Estensioni dei file dell\'immagine del corso';
-$string['courseoverviewfiles_help'] = 'I file dell\'introduzione al corso sono visualizzati nell\'elenco dei corsi assieme all\'introduzione.';
-$string['courseoverviewfileslimit'] = 'Limite file dell\'introduzione al corso';
+$string['courseoverviewfiles_help'] = 'L\'immagine del corso verrà visualizzata nella Panoramica corsi della Dashboard. Un amministratore del sito può impostare i tipi di file accettati e il numero di file caricabili, nel qual caso i file saranno visualizzati a fianco della descrizione del corso nelle pagine contenenti gli elenchi dei corsi.';
+$string['courseoverviewfileslimit'] = 'Limite file immagine del corso';
 $string['courseoverviewgraph'] = 'Grafico riassuntivo del corso';
 $string['coursepreferences'] = 'Preferenze corso';
 $string['courseprofiles'] = 'Profili corso';
@@ -410,12 +411,11 @@ $string['courserequestwarning'] = 'L\'utente che ha richiesto il corso verrà au
 $string['courserestore'] = 'Recupera corso';
 $string['courses'] = 'Corsi';
 $string['coursesearch'] = 'Cerca corsi';
-$string['coursesearch_help'] = '<p>E\' possibile cercare usando più parole e raffinare la ricerca:</p>
-<ul>
-<li>parola - trova le corrispondenze della parola  nel testo.</li>
-<li>+chiave - trova solo le corrispondenze esatte  della parola.</li>
-<li>-parola - non include i risultati che contengono la parola.</li>
-</ul>';
+$string['coursesearch_help'] = 'E\' possibile cercare usando più parole e raffinare la ricerca:
+
+* parola - trova le corrispondenze della parola  nel testo
+* +parola- trova solo le corrispondenze esatte della parola
+* -parola - non include i risultati che contengono la parola';
 $string['coursesectionsummaries'] = 'Sommari delle sezioni del corso';
 $string['coursesectiontitle'] = 'Corso: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
 $string['coursesettings'] = 'Default creazione corsi';
@@ -640,10 +640,13 @@ Nella maggior parte dei programmi di posta il link dovrebbe apparire colorato di
 
 Se hai bisogno di aiuto contatta l\'amministratore del sito,
 {$a->admin}';
+$string['emailconfirmationresend'] = 'Invia di nuovo email di conferma';
 $string['emailconfirmationsubject'] = '{$a}: conferma iscrizione';
 $string['emailconfirmsent'] = '<p>Una email è stata inviata al tuo indirizzo <b>{$a}</b></p>
 <p>Contiene semplici istruzioni per completare la tua registrazione.</p>
 <p>Se hai qualche difficoltà contatta l\'amministratore del sito.</p>';
+$string['emailconfirmsentfailure'] = 'L\'email di conferma non è stata inviata';
+$string['emailconfirmsentsuccess'] = 'L\'email di conferma è stata inviata correttamente';
 $string['emaildigest'] = 'Tipo email di raccolta';
 $string['emaildigestcomplete'] = 'Completa (email giornaliera con messaggi per intero)';
 $string['emaildigest_help'] = 'Le impostazioni di default del forum per le email di raccolta.
@@ -826,6 +829,7 @@ $string['explanationdigitalminor'] = 'L’informazione è necessaria per stabili
 $string['extendenrol'] = 'Prolunga iscrizione';
 $string['extendperiod'] = 'Estendi periodo';
 $string['failedloginattempts'] = '{$a->attempts} accessi falliti dall\'ultimo accesso corretto';
+$string['favourites'] = 'Preferiti';
 $string['feedback'] = 'Feedback';
 $string['file'] = 'File';
 $string['fileexists'] = 'E\' già presente un file di nome {$a}';
@@ -904,14 +908,13 @@ $string['general'] = 'Generale';
 $string['geolocation'] = 'latitudine - longitudine';
 $string['gettheselogs'] = 'Ottieni i log';
 $string['go'] = 'Vai';
-$string['gpl'] = 'Copyright (C) dal 1999 in poi  Martin Dougiamas
-(http://moodle.com)
+$string['gpl'] = 'Copyright (C) dal 1999 in poi  Martin Dougiamas (http://moodle.com)
 
-Questo programma è software libero; puoi ridistribuirlo e/o modificarlo secondo le condizioni previste dalla licenza GNU General Public License  pubblicata dalla Free Software Foundation, licenza versione 2 oppure una qualsiasi versione successiva.
+Questo programma è software libero; è possibile ridistribuirlo e/o modificarlo secondo le condizioni previste dalla licenza GNU General Public License  pubblicata dalla Free Software Foundation, licenza versione 2 oppure (a scelta) una qualsiasi versione successiva.
 
 Questo programma viene distribuito nell\'auspicio che possa essere utile, ma SENZA ALCUNA GARANZIA, ivi inclusa qualsiasi garanzia implicita di COMMERCIABILITÀ o di IDONEITÀ PER UN USO SPECIFICO.
 
-Per maggiori dettagli leggere la pagina informativa sulla Licenza di Moodle:
+Per maggiori dettagli leggere la pagina relativa alla licenza di Moodle:
 http://docs.moodle.org/dev/License';
 $string['gpl3'] = 'Copyright (C) dal 1999 in poi  Martin Dougiamas
 (http://moodle.com)
@@ -1032,9 +1035,9 @@ $string['includeroleassignments'] = 'Includi le attribuzioni di ruolo';
 $string['includesitefiles'] = 'Includi i file del sito usati in questo corso';
 $string['includeuserfiles'] = 'Includi i file degli utenti';
 $string['increasesections'] = 'Aumenta il numero di sezioni';
-$string['indicator:accessesafterend'] = 'Corso acceduto dopo la data di fine';
+$string['indicator:accessesafterend'] = 'Accesso al corso dopo la data di fine';
 $string['indicator:accessesafterend_help'] = 'L\'indicatore rappresenta l\'accesso al corso da parte dello studente dopo la data di fine.';
-$string['indicator:accessesbeforestart'] = 'Corso acceduto prima della data di inizio';
+$string['indicator:accessesbeforestart'] = 'Accesso al corso prima della data di inizio';
 $string['indicator:accessesbeforestart_help'] = 'L\'indicatore rappresenta l\'accesso al corso da parte dello studente prima della data d\'inizio.';
 $string['indicator:anywrite'] = 'Scritture';
 $string['indicator:anywrite_help'] = 'L\'indicatore rappresenta le azioni di scrittura (consegne, invii) operate dalla studente.';
@@ -1042,7 +1045,7 @@ $string['indicator:anywriteincourse'] = 'Scritture nel corso';
 $string['indicator:anywriteincourse_help'] = 'L\'indicatore rappresenta le azioni di scrittura (consegne, invii) operate dalla studente nelle attività del corso.';
 $string['indicator:completeduserprofile'] = 'Completamento profilo utente';
 $string['indicator:completeduserprofile_help'] = 'L\'indicatore rappresenta il completamento del profilo da parte dello studente-';
-$string['indicator:completionenabled'] = 'Tracciamento del completamento abilitato';
+$string['indicator:completionenabled'] = 'Abilitazione del tracciamento del completamento';
 $string['indicator:completionenabled_help'] = 'L\'indicatore rappresenta l\'abilitazione del tracciamento del completamento nel corso.';
 $string['indicator:nostudent'] = 'Mancanza di studenti';
 $string['indicator:nostudent_help'] = 'L\'indicatore rappresenta la mancanza di studenti nel corso';
@@ -1135,7 +1138,7 @@ $string['maincoursepage'] = 'Pagina home del corso';
 $string['makeafolder'] = 'Crea una cartella';
 $string['makeavailable'] = 'Rendi disponibile';
 $string['makeeditable'] = 'Se si rende \'{$a}\' modificabile dal processo del server web (es. apache) si potrà modificare questo file direttamente da questa pagina.';
-$string['makethismyhome'] = 'Rendi questa pagina la mia pagina home di default';
+$string['makethismyhome'] = 'Rendi questa pagina la mia pagina home';
 $string['makeunavailable'] = 'Rendi non disponibile';
 $string['manageblocks'] = 'Blocchi';
 $string['managecategorythis'] = 'Gestione categoria';
@@ -1162,12 +1165,13 @@ $string['maximumupload_help'] = '<p>Questa impostazione determina la dimensione 
 
 <p>E\' inoltre possibile limitare ulteriormente la dimensione massima dei file caricabili per ciascuna attività del corso.</p>';
 $string['maxnumberweeks'] = 'Numero massimo di sezioni';
-$string['maxnumberweeks_desc'] = 'Imposta il numero massimo di sezioni che compariranno nell\'impostazione dei corsi "Numero di sezioni" (solo per alcuni formati di corso).';
+$string['maxnumberweeks_desc'] = 'Il numero massimo di sezioni presenti nel meni a discesa delle sezioni (si applica solamente ad alcuni formati di corso).';
 $string['maxnumcoursesincombo'] = 'Visualizza <a href="{$a->link}">{$a->numberofcourses} corsi</a>.';
+$string['maxsectionslimit'] = 'Non è possibile creare la sezione perché il numero di sezioni totale eccederebbe il numero consentito per il corso ({$a}).';
 $string['maxsize'] = 'Dimensione massima: {$a}';
 $string['maxsizeandareasize'] = 'Dimensione massima dei file: {$a->size}, limite complessivo: {$a->areasize}';
-$string['maxsizeandattachments'] = 'Dimensione massima per i file nuovi: {$a->size}, numero massimo di allegati: {$a->attachments}';
-$string['maxsizeandattachmentsandareasize'] = 'Dimensione massima per i nuovi file: {$a->size}, numero massimo di allegati: {$a->attachments}, limite massimo: {$a->areasize}';
+$string['maxsizeandattachments'] = 'Dimensione massima dei file: {$a->size}, numero massimo di file: {$a->attachments}';
+$string['maxsizeandattachmentsandareasize'] = 'Dimensione massima dei file: {$a->size}, numero massimo di file: {$a->attachments}, dimensione totale: {$a->areasize}';
 $string['memberincourse'] = 'Persone nel corso';
 $string['messagebody'] = 'Corpo del messaggio';
 $string['messagedselectedcountusersfailed'] = 'Si è verificato un errore, {$a} messaggi non sono stati inviati.';
@@ -1188,6 +1192,7 @@ $string['messageprovider:errors_help'] = 'Sono errori rilevanti dei quali l\'amm
 $string['messageprovider:insights'] = 'Considerazioni generate dal modello dei pronostici';
 $string['messageprovider:instantmessage'] = 'Messaggi personali tra utenti';
 $string['messageprovider:instantmessage_help'] = 'La sezione consente di configurare il comportamento dei  messaggi che ricevi dagli altri utenti del sito.';
+$string['messageprovider:messagecontactrequests'] = 'Notifiche di richieste di contatto';
 $string['messageprovider:notices'] = 'Informazioni su problemi minori';
 $string['messageprovider:notices_help'] = 'Si tratta di note che dovrebbero essere rese note l\'amministratore.';
 $string['messageselect'] = 'Seleziona questo utente come destinatario del messaggio';
@@ -1265,6 +1270,7 @@ $string['movecategorytotopsuccess'] = 'La categoria \'{$a->moved}\' è stata spo
 $string['movecontent'] = 'Sposta {$a}';
 $string['movecontentafter'] = 'Dopo "{$a}"';
 $string['movecontentstoanothercategory'] = 'Sposta i corsi in un altra categoria';
+$string['movecontenttothetop'] = 'All\'inizio dell\'elenco';
 $string['movecoursemodule'] = 'Sposta risorsa';
 $string['movecoursesection'] = 'Sposta sezione';
 $string['movecourseto'] = 'Sposta corso in:';
@@ -1460,6 +1466,8 @@ $string['outline'] = 'Profilo';
 $string['outlinereport'] = 'Report riassuntivo';
 $string['page'] = 'Pagina';
 $string['pagea'] = 'Pagina {$a}';
+$string['pagedcontentnavigation'] = 'Navigazione delle pagine';
+$string['pagedcontentnavigationactiveitem'] = 'Pagina attuale, pagina {$a}';
 $string['pagedcontentnavigationitem'] = 'Vai alla pagina {$a}';
 $string['pagedcontentpagingbaritemsperpage'] = 'Visualizza {$a} elementi per pagina';
 $string['pageheaderconfigablock'] = 'Configurazione blocco in {$a->fullname}';
@@ -1608,14 +1616,14 @@ $string['registrationcontact'] = 'Possibilità di essere contattati';
 $string['registrationcontactno'] = 'No, non desidero essere contattato';
 $string['registrationcontactyes'] = 'Si, desidero un modello di contatto affinché altri Moodler mi possano contattare';
 $string['registrationemail'] = 'Notifiche via email';
-$string['registrationinfo'] = '<p>In questa pagina puoi registrare il tuo sito Moodle su moodle.org. La registrazione è gratuita e la tua email sarà inserita in una mailing list a basso traffico dalla quale riceverai avvisi di sicurezza e messaggi sulle nuove release di Moodle.</p>
-<p>I dati da te inviati rimarranno privati e non saranno venduti o trasferiti a terzi. I motivi per cui ti suggeriamo di registrarti sono la ricezione di avvisi sulla sicurezza e la raccolta di dati statistici utili a capire meglio l\'intera comunità Moodle.</p>
-<p>Se lo desideri il nome del tuo sito assieme alla nazionalità ed alla URL per raggiungerlo possono essere pubblicati nell\'elenco dei siti registrati.</p>
+$string['registrationinfo'] = '<p>In questa pagina è possibileregistrare il sito Moodle su moodle.org. La registrazione è gratuita e l\'email fornita sarà inserita in una mailing list a basso traffico con avvisi di sicurezza e messaggi sulle nuove release di Moodle.</p>
+<p>I dati inviati rimarranno privati e non saranno venduti o trasferiti a terzi. I motivi per i quali suggeriamo di registrare il sito sono la ricezione di avvisi sulla sicurezza e la raccolta di dati statistici utili a capire meglio l\'intera comunità Moodle.</p>
+<p>Se lo si desidera il nome del sito assieme alla nazionalità ed alla URL per raggiungerlo possono essere pubblicati nell\'elenco dei siti registrati.</p>
 <p>Le nuove registrazioni sono tutte verificate manualmente prima di essere inserite nell\'elenco pubblico. In qualsiasi momento è  possibile aggiornare i dati e modificare le preferenze di pubblicazione inviando nuovamente la registrazione.</p>';
 $string['registrationinfotitle'] = 'Informazioni per la registrazione';
-$string['registrationno'] = 'No, non voglio ricevere email dal Moodle HQ';
+$string['registrationno'] = 'No, non desidero ricevere email';
 $string['registrationsend'] = 'Invia la registrazione a moodle.org';
-$string['registrationyes'] = 'Si, inviatemi email su argomenti di rilievo (ad esempio problemi di sicurezza o nuovi rilasci)';
+$string['registrationyes'] = 'Si, inviatemi email su nuovi rilasci di Moodle, avvisi sulla sicurezza e altre novità di rilievo.';
 $string['reject'] = 'Invia il rifiuto';
 $string['rejectdots'] = 'Rifiuta...';
 $string['reload'] = 'Ricarica';
@@ -1634,8 +1642,10 @@ $string['requestcourse'] = 'Richiedi l\'attivazione di un corso';
 $string['requestedby'] = 'Richiesto da';
 $string['requestedcourses'] = 'Corsi richesti';
 $string['requestreason'] = 'Motivazione della richiesta del corso';
+$string['requests'] = 'Richieste';
 $string['required'] = 'Obbligatorio';
 $string['requirespayment'] = 'Questo corso richiede un pagamento per l\'accesso';
+$string['resendemail'] = 'Invia di nuovo l\'email';
 $string['reset'] = 'Reset';
 $string['resetcomponent'] = 'Componente';
 $string['resetcourse'] = 'Reset corso';
@@ -1794,6 +1804,7 @@ $string['separateandconnectedinfo'] = 'Scala basata sulla teoria della conoscenz
 <li>Il <strong>Conoscitore collegato</strong> è più disponibile verso le altre persone. E\' in grado di comunicare meglio e tende ad ascoltare e porre domande finché entra in sintonia e  "capisce le cose dal punto di vista degli altri". Impara cercando di condividere le esperienze che hanno portato alla conoscenza che ha trovato negli altri.</li></ul>';
 $string['servererror'] = 'Si è verificato un errore durante la comunicazione con il server';
 $string['serverlocaltime'] = 'Ora locale del server';
+$string['sessionforceclean'] = 'Per motivi di sicurezza, in questa sessione gli script generati dall\'utente sono stati disabilitati.';
 $string['setcategorytheme'] = 'Imposta tema di categoria';
 $string['setpassword'] = 'Imposta password';
 $string['setpasswordinstructions'] = 'Per favore inserisci sotto la nuova password e poi salva.';
@@ -1820,11 +1831,7 @@ $string['showcommentsnonjs'] = 'Visualizza commenti';
 $string['showdescription'] = 'Visualizza descrizione nella home del corso';
 $string['showdescription_help'] = 'Consente di visualizzare la descrizione soprastante nella pagina home del corso, subito sotto il link della risorsa o dell\'attività.';
 $string['showgrades'] = 'Visualizza valutazioni agli studenti';
-$string['showgrades_help'] = '<p>Molte delle attività di un corso possono essere oggetto di valutazione.</p>
-
-<p>Per impostazione predefinita, i risultati ottenuti dagli studenti vengono visualizzati nella pagina Valutazioni, raggiungibile direttamente dalla pagina principale del corso.</p>
-
-<p>Qualora un docente non sia interessato ad utilizzare le valutazioni oppure desideri evitare che gli studenti possano accedere alla pagina contenente i risultati ottenuti, è sufficiente impostare "Visualizza valutazioni agli studenti" su "No". L\'impostazione su "No" non impedisce di valutare le attività del corso, impedisce solamente agli studenti di visualizzarle.</p>';
+$string['showgrades_help'] = 'Molte delle attività di un corso possono essere oggetto di valutazione. L\'impostazione determina se uno studente potrà visualizzare le proprie valutazioni tramite apposito collegamento.';
 $string['showingacourses'] = 'Sono visualizzati tutti i {$a} corsi.';
 $string['showingxofycourses'] = 'Sono visualizzati i corsi da  {$a->start} a {$a->end} su {$a->total}';
 $string['showlistofcourses'] = 'Visualizza l\'elenco dei corsi';
@@ -1904,7 +1911,7 @@ $string['statsreport10'] = 'Attività utente';
 $string['statsreport11'] = 'Corsi più attivi';
 $string['statsreport12'] = 'Corsi più attivi (pesato)';
 $string['statsreport13'] = 'Corsi con maggiore partecipazione (iscrizioni)';
-$string['statsreport14'] = 'Corsi con maggiore partecipazione (letture/interventi)';
+$string['statsreport14'] = 'Corsi con maggiore partecipazione (interventi/visualizzazioni)';
 $string['statsreport2'] = 'Letture (tutti i ruoli)';
 $string['statsreport3'] = 'Interventi (tutti i ruoli)';
 $string['statsreport4'] = 'Tutta l\'attività (tutti i ruoli)';
@@ -1942,6 +1949,7 @@ $string['subcategory'] = 'Sottocategoria';
 $string['subcategoryof'] = 'Sottocategoria di {$a}';
 $string['submit'] = 'Invia';
 $string['success'] = 'Operazione eseguita correttamente';
+$string['successduration'] = 'Operazione completata correttamente ({$a} secondi)';
 $string['summary'] = 'Introduzione';
 $string['summary_help'] = '<p>Il sommario dell\'argomento o della settimana è un breve testo utile per preparare gli studenti alle attività che intraprenderanno nell\'argomento o nella settimana.</p>
 

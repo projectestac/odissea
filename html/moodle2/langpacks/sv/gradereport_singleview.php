@@ -25,5 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['all_grades'] = 'Alla betyg';
+$string['blanks'] = 'Tomma betyg';
+$string['bulkinsertvalue'] = 'Infoga värde';
+$string['bulklegend'] = 'Bulkinfogning (flera åt gången)';
+$string['bulkperform'] = 'Genomför bulkinfogning (flera åt gången)';
+$string['entrypage'] = 'Betygsätt användare eller betygsätt objekt';
+$string['gradeuser'] = 'Betygsätt användare: {$a}';
 $string['override'] = 'Överskrid';
+$string['overrideall'] = '';
+$string['pluginname'] = 'Enskild vy';
 $string['save'] = 'Spara';
+$string['selectgrade'] = 'Välj objekt att betygsätta';

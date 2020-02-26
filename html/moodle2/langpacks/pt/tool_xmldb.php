@@ -76,12 +76,12 @@ Uma vez gerados, pode copiar estes comandos e executá-los de forma segura no se
 É altamente recomendado que esteja a executar a atualização mais recente disponível para a sua versão do Moodle antes de executar a pesquisa de semânticas BYTE.
 
 Esta funcionalidade não realiza nenhuma ação na BD (apenas lê a partir desta) e, por isso, pode ser executada com segurança em qualquer momento.';
-$string['confirmdeletefield'] = 'Tem a certeza absoluta que pretende apagar o campo:';
-$string['confirmdeleteindex'] = 'Tem a certeza absoluta que pretende apagar o índice:';
-$string['confirmdeletekey'] = 'Tem a certeza absoluta que pretende apagar a chave:';
-$string['confirmdeletetable'] = 'Tem a certeza absoluta que pretende apagar a tabela:';
-$string['confirmdeletexmlfile'] = 'Tem a certeza absoluta que pretende apagar o ficheiro:';
-$string['confirmrevertchanges'] = 'Tem a certeza absoluta que pretende reverter as alterações realizadas:';
+$string['confirmdeletefield'] = 'Tem a certeza absoluta de que pretende apagar o campo:';
+$string['confirmdeleteindex'] = 'Tem a certeza absoluta de que pretende apagar o índice:';
+$string['confirmdeletekey'] = 'Tem a certeza absoluta de que pretende apagar a chave:';
+$string['confirmdeletetable'] = 'Tem a certeza absoluta de que pretende apagar a tabela:';
+$string['confirmdeletexmlfile'] = 'Tem a certeza absoluta de que pretende apagar o ficheiro:';
+$string['confirmrevertchanges'] = 'Tem a certeza absoluta de que pretende reverter as alterações realizadas:';
 $string['create'] = 'Criar';
 $string['createtable'] = 'Criar tabela:';
 $string['defaultincorrect'] = 'Predefinição incorreta';

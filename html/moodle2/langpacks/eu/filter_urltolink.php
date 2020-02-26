@@ -30,4 +30,4 @@ $string['embedimages_desc'] = 'Irudien URLak irudiekin ordezkatu aukeratutako te
 $string['filtername'] = 'URLak esteka eta irudi bihurtu';
 $string['privacy:metadata'] = 'URLak esteka eta irudi bihurtu pluginak ez du datu pertsonalik biltzen.';
 $string['settingformats'] = 'Aplikatu formatuei';
-$string['settingformats_desc'] = 'Iragazkia bakarrik aplikatuko da jatorrizko testua aukeratutako formatuetako batean txertatu bada.';
+$string['settingformats_desc'] = 'Iragazkia soilik jatorrizko testua aukeratutako formatuetako batean txertatu bada aplikatuko da.';

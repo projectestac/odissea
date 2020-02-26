@@ -33,7 +33,7 @@ $string['cohortroleassignmentnotremoved'] = 'L\'assegnazione di ruolo ai membri 
 $string['cohortroleassignmentremoved'] = 'L\'assegnazione di ruolo ai membri del gruppo globale è stata eliminata.';
 $string['cohortroles'] = 'Ruoli gruppo globale';
 $string['existingcohortroles'] = 'Assegnazioni di ruolo esistenti';
-$string['managecohortroles'] = 'Assegna ruoli ai membri del gruppo globale';
+$string['managecohortroles'] = 'Assegnazione ruoli utente a gruppi globali';
 $string['noassignableroles'] = 'Non sono presenti ruoli assegnabili nel contesto dell\'utente. <a href="../../roles/manage.php">Gestione ruoli</a>';
 $string['nocohortroleassignmentssaved'] = 'Non sono state salvate assegnazioni di ruolo del gruppo globale.';
 $string['onecohortroleassignmentsaved'] = 'E\' stata salvata una assegnazione di ruolo del gruppo globale.';

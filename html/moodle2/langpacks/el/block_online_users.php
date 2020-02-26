@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Πόσα λεπτά απαιτούνται ώστε η αδράνεια ενός χρήστη να θεωρείται αποσύνδεση;';
-$string['nouser'] = 'Κανένας χρήστης σε σύνδεση';
-$string['numuser'] = '{$a} χρήστης σε σύνδεση';
-$string['numusers'] = '{$a} χρήστες σε σύνδεση';
+$string['nouser'] = 'Κανένας χρήστης εντός σύνδεσης';
+$string['numuser'] = '{$a} χρήστης σε εντός σύνδεση';
+$string['numusers'] = '{$a} χρήστες εντός σύνδεσης';
 $string['online_status:hide'] = 'Απόκρυψη της κατάστασης σύνδεσής μου από άλλους χρήστες';
 $string['online_status:show'] = 'Εμφάνιση της κατάστασης σύνδεσής μου στους άλλους χρήστες';
 $string['online_users:addinstance'] = 'Προσθήκη νέου μπλοκ συνδεδεμένοι χρήστες';

@@ -30,6 +30,7 @@ $string['canntenrollate'] = 'Kursen är stängd för registrering sedan den {$a}
 $string['cohortnonmemberinfo'] = 'Endast medlemmar av kohort {$a} kan självregistrera';
 $string['cohortonly'] = 'Endast kohortmedlemmarna';
 $string['cohortonly_help'] = 'Självregistrering kan begränsas till medlemmar av en viss kohort. Observera att om du ändrar den här inställningen har detta ingen effekt på befintliga registreringar.';
+$string['confirmbulkdeleteenrolment'] = 'Vill du verkligen ta bort registreringen för dessa användare?';
 $string['customwelcomemessage'] = 'Välkomstmeddelande';
 $string['defaultrole'] = 'Förinställd roll för användare';
 $string['defaultrole_desc'] = 'Bestäm vilken roll användare som anger kursnyckeln ska få i kursen.';

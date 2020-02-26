@@ -82,7 +82,7 @@ $string['searchownforms'] = 'bilatu nire formularioetan ere';
 $string['searchtemplate'] = 'Bilatu kalifikazio-formularioak';
 $string['searchtemplate_help'] = 'Hemen kalifikazio-formulario bat bilatu eta txantiloi gisa erabil dezakezu. Idatzi formularioaren izenean agertu beharko liratekeen hitzak, bere deskribapena edo formularioaren edukiak. Esaldi bat bilatzeko. idatz ezazu kontsulta osoa komatxo bikoitzen barruan.
 
-Modu lehenetsian, partekatutako txantiloi gisa gordetako kalifikazio-formularioak bakarrik agertuko dira bilaketaren emaitzetan. Zure kalifikazio-formularioak ere bilaketaren emaitzetan gehi ditzakezu. Modu honetan, zure kalifikazio-formularioak partekatu gabe berrerabil ditzakezu. Modu honetan \'Erabiltzeko prest\' bezala gordetako formularioak bakarrik berrerabil daitezke.';
+Modu lehenetsian, bilaketaren emaitzetan soilik partekatutako txantiloi gisa gordetako kalifikazio-formularioak agertuko dira. Zure kalifikazio-formularioak ere bilaketaren emaitzetan gehi ditzakezu. Modu honetan, zure kalifikazio-formularioak partekatu gabe berrerabil ditzakezu. Modu honetan soilik \'Erabiltzeko prest\' bezala gordetako formularioak berrerabil daitezke.';
 $string['statusdraft'] = 'Zirroborroa';
 $string['statusready'] = 'Erabiltzeko prest';
 $string['templatedelete'] = 'Ezabatu';

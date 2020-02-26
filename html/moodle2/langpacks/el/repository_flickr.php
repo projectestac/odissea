@@ -36,9 +36,9 @@ $string['callbackwarning'] = '<ol>
 <li>Επεξεργαστείτε τις λεπτομέρειες του κλειδιού σας για το <a href="http://www.flickr.com/services/api/keys/"></a> ξανά και ρυθμίστε την callback διεύθυνση URL.</li>
 </ol>';
 $string['configplugin'] = 'Ρυθμίσεις Flickr';
-$string['emailaddress'] = 'Διεύθυνση ηλεκτρονικού ταχυδρομείου';
+$string['emailaddress'] = 'Διεύθυνση ηλε.ταχυδρομείου';
 $string['flickr:view'] = 'Εμφάνιση του repository Flickr';
-$string['invalidemail'] = 'Μη έγκυρη δι/νση ηλεκτρονικού ταχυδρομείου για το flickr';
+$string['invalidemail'] = 'Μη έγκυρη δι/νση ηλε.ταχυδρομείου για το flickr';
 $string['notitle'] = 'Χωρίς Τίτλο';
 $string['nullphotolist'] = 'Δεν υπάρχουν φωτογραφίες σε αυτό το λογαριασμό';
 $string['pluginname'] = 'Flickr';
@@ -49,4 +49,4 @@ $string['privacy:metadata:repository_flickr:preference:repository_flickr_access_
 $string['privacy:metadata:repository_flickr:text'] = 'Το κείμενο αναζήτησης ερωτήματος χρήστη του αποθετηρίου Flickr.';
 $string['remember'] = 'Να με θυμάσαι';
 $string['secret'] = 'Μυστικό';
-$string['username'] = 'Διεύθυνση ηλε. ταχυδρομείου του λογαριασμού στο Flickr';
+$string['username'] = 'Διεύθυνση ηλε.ταχυδρομείου του λογαριασμού στο Flickr';

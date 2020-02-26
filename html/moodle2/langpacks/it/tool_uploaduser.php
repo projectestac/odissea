@@ -51,7 +51,7 @@ $string['uploadpicture_cannotsave'] = 'Non è stato possibile salvare l\'immagin
 $string['uploadpicture_cannotunzip'] = 'Non è possibile decomprimere il file zip contenente le immagini.';
 $string['uploadpicture_invalidfilename'] = 'Il file immagine {$a} ha caratteri non validi nel nome. Saltato.';
 $string['uploadpicture_overwrite'] = 'Sovrascrivere le immagini utente già esistenti?';
-$string['uploadpictures'] = 'Importa immagini utenti';
+$string['uploadpictures'] = 'Importazione immagini utenti';
 $string['uploadpictures_help'] = '<p>Le foto degli tenti possono essere caricate come file zip di immagini. I file immagini devono essere chiamati <i>attributo-utente-scelto.estensione</i>. Per esempio, se l\'attributo utente scelto per la corrispondenza delle foto è lo username e lo username è user1234, allora il file si chiamerà user1234.jpg.</p>
 
 <p>I tipi immagini supportati sono gif, jpg, e png.</p>
@@ -61,7 +61,7 @@ $string['uploadpicture_userfield'] = 'Identificativo utente da utilizzare per fa
 $string['uploadpicture_usernotfound'] = 'Utente con un valore di \'{$a->uservalue}\' per \'{$a->userfield}\' non esiste. Saltato.';
 $string['uploadpicture_userskipped'] = 'Saltato utente {$a} (ha già un\'immagine).';
 $string['uploadpicture_userupdated'] = 'Immagine per l\'utente {$a} caricata.';
-$string['uploadusers'] = 'Importa utenti';
+$string['uploadusers'] = 'Importazione utenti';
 $string['uploadusers_help'] = 'E\' possibile caricare utenti (ed iscriverli ai corsi) tramite file di testo. Il formato del file deve avere le seguenti caratteristiche:
 
 * Ogni riga del file contiene un record

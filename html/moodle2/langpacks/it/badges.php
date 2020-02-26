@@ -107,7 +107,7 @@ $string['backpackemail_help'] = 'Indirizzo email associato con il tuo backpack. 
 $string['backpackemailverificationpending'] = 'Verifica in attesa';
 $string['backpackemailverifyemailbody'] = 'Ciao,
 
-con il tuo indirizzo email è stato richiesto un nuovo collegamento al tuo backpack OpenBadges da \'{$a->sitename}\'.
+su \'{$a->sitename}\' è stato richiesto un nuovo collegamento tra la tua email e il tuo backpack di badge.
 
 Per confermare e attivare il collegamento al backpack, fai click sul seguente link:
 

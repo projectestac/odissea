@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'IP helbidearen bidezko sarbide-araua';
 $string['privacy:metadata'] = 'IP helbidearen bidezko galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';
-$string['subnetwrong'] = 'Galdetegi hau helbide jakin batzuetatik bakarrik egin daiteke, eta ordenagailu hau ez dago baimenduen zerrendan.';
+$string['subnetwrong'] = 'Galdetegi hau soilik helbide jakin batzuetatik egin daiteke, eta ordenagailu hau ez dago baimenduen zerrendan.';

@@ -32,7 +32,7 @@ $string['analyticmodels'] = 'Modèles d\'analyse de données';
 $string['bettercli'] = 'L\'évaluation des modèles et la génération de prédictions peut causer une charge importante. Il est conseillé de lancer ces actions au moyen de la ligne de commande.';
 $string['cantguessenddate'] = 'Impossible d\'estimer la date de fin';
 $string['cantguessstartdate'] = 'Impossible d\'estimer la date de début';
-$string['clearmodelpredictions'] = 'Voulez-vous vraiment supprimer toutes les prédictions « {$a} » ?';
+$string['clearmodelpredictions'] = 'Voulez-vous vraiment supprimer toutes les prédictions « {$a} » ?';
 $string['clearpredictions'] = 'Supprimer les prédictions';
 $string['clienablemodel'] = 'Vous pouvez activer le modèle en sélectionnant une méthode de division temporelle par son identifiant. Il est aussi possible de l\'activer plus tard dans l\'interface web (« aucun » pour sortir)';
 $string['clievaluationandpredictions'] = 'Une tâche programmée passe en revue tous les modèles activés et calcule des prédictions. L\'évaluation des modèles via l\'interface web est désactivée. Vous pouvez permettre de lancer ces processus au moyen de l\'interface web en désactivant le <a href="{$a}">réglage « onlycli »</a>';

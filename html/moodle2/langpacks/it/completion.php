@@ -205,6 +205,7 @@ $string['remainingenroledfortime'] = 'Rimanere iscritti per un determinato perio
 $string['remainingenroleduntildate'] = 'Rimanere iscirtti fino ad una data prefissta';
 $string['reportpage'] = 'Utenti da {$a->from} a {$a->to} su  {$a->total} in totale.';
 $string['requiredcriteria'] = 'Criteri da soddisfare';
+$string['resetactivities'] = 'Deseleziona tutte le attività e risorse';
 $string['restoringcompletiondata'] = 'Ripristino dello stato di completamento';
 $string['roleaggregation'] = 'Aggregazione';
 $string['roleaggregation_all'] = 'TUTTI i ruoli selezionati devono approvare il completamento del corso';

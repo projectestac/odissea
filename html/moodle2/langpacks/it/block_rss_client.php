@@ -79,6 +79,7 @@ $string['privacy:metadata:block_rss_client:tableexplanation'] = 'Memorizzazione 
 $string['privacy:metadata:block_rss_client:title'] = 'Titolo del feed RSS';
 $string['privacy:metadata:block_rss_client:url'] = 'URL del feed RSS';
 $string['privacy:metadata:block_rss_client:userid'] = 'ID dell\'utente che ha aggiunto il feed RSS.';
+$string['refreshfeedstask'] = 'Aggiornamento feed RSS';
 $string['remotenewsfeed'] = 'Feed news remoto';
 $string['rss_client:addinstance'] = 'Aggiungere blocco Feed RSS remoto';
 $string['rss_client:createprivatefeeds'] = 'Creare feed RSS privati';

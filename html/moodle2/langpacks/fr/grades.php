@@ -51,7 +51,7 @@ Ce réglage détermine comment traiter les notes vides dans le calcul des tendan
 $string['aggregateoutcomes'] = 'Inclure les objectifs dans les tendances centrales';
 $string['aggregateoutcomes_help'] = 'Si ce réglage est activé, les objectifs sont inclus dans le calcul des tendances centrales. Ceci peut avoir comme conséquence une note globale inattendue.';
 $string['aggregatesonly'] = 'Passer aux tendances centrales seulement';
-$string['aggregatesubcatsupgradedgrades'] = 'Remarque : le réglage « Inclure les sous-catégories dans les tendances centrales » a été supprimé au cours de la mise à jour du site. Puisque ce réglage était utilisé antérieurement dans ce cours, il vous est conseillé de vérifier le résultat de cette modification dans le carnet de notes.';
+$string['aggregatesubcatsupgradedgrades'] = 'Remarque : le réglage « Inclure les sous-catégories dans les tendances centrales » a été supprimé au cours de la mise à jour du site. Puisque ce réglage était utilisé antérieurement dans ce cours, il vous est conseillé de vérifier le résultat de cette modification dans le carnet de notes.';
 $string['aggregatesum'] = 'Naturelle';
 $string['aggregateweightedmean'] = 'Moyenne pondérée des notes';
 $string['aggregateweightedmean2'] = 'Simple moyenne pondérée des notes';

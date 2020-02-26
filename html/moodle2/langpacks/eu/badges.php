@@ -40,7 +40,7 @@ $string['addcriteria'] = 'Gehitu irizpidea';
 $string['addcriteriatext'] = 'Irizpideak gehitzen hasteko, mesedez egin aukera zabaltzen den menutik';
 $string['addrelated'] = 'Gehitu erlazionatutako domina';
 $string['addtobackpack'] = 'Gehitu motxilara';
-$string['adminonly'] = 'Orri hau gunearen kudeatzaileentzat da bakarrik';
+$string['adminonly'] = 'Orri hau soilik gunearen kudeatzaileentzako da';
 $string['after'] = 'emate-dataren ondoren.';
 $string['aggregationmethod'] = 'Agregazio-metodoa';
 $string['alignment'] = 'Konpetentzia';
@@ -110,11 +110,11 @@ $string['backpackemailverifyemailbody'] = 'Kaixo,
 
 Zure dominen motxilara konexio berri baten eskaera egin da \'{$a->sitename}\' gunetik zure helbide elektronikoa erabilita.
 
-Konfirmatu eta zure motxilako konexioa aktibatzeko mesedez jo hona:
+Zure motxilako konexioa berretsi eta aktibatzeko mesedez hurrengo helbide honetara joan zaitez:
 
 {$a->link}
 
-Posta elektronikoko programa gehienetan goiko helbidea esteka urdin bat gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan. Ez bada horrela, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi.
+Posta elektronikoko programa gehienetan goiko helbidea esteka urdin gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan beharko zenuke. Horrela ez bada, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi ezazu.
 
 Laguntza behar baduzu, mesedez jarri harremanetan zure guneko kudeatzailearekin:
 {$a->admin}';
@@ -144,9 +144,9 @@ Oharra: jasotzaileak egiaztatzeko, ez aldatu ezarpen hau behin dominak ematen ha
 $string['badgesdisabled'] = 'Dominak ez daude gaituta gune honetan';
 $string['badgesearned'] = 'Lortutako domina-kopurua: {$a}';
 $string['badgesettings'] = 'Dominen ezarpenak';
-$string['badgestatus_0'] = 'Ez dago eskura erabiltzaileentzat';
+$string['badgestatus_0'] = 'Ez dago eskuragarri erabiltzaileentzat';
 $string['badgestatus_1'] = 'Eskura erabiltzaileentzat';
-$string['badgestatus_2'] = 'Ez dago eskura erabiltzaileentzat';
+$string['badgestatus_2'] = 'Ez dago eskuragarri erabiltzaileentzat';
 $string['badgestatus_3'] = 'Eskura erabiltzaileentzat';
 $string['badgestatus_4'] = 'Artxibatua';
 $string['badgestoearn'] = 'Eskura daitekeen domina-kopurua: {$a}';
@@ -237,7 +237,7 @@ $string['criteria_descr_single_short8'] = 'Partaidetza hemen:';
 $string['criteriasummary'] = 'Irizpide-multzoa';
 $string['criteriaupdated'] = 'Dominarako irizpidea modu egokian eguneratu da';
 $string['criterror'] = 'Oraingo parametroekiko arazoak';
-$string['criterror_help'] = 'Eremu-multzo honek erakusten du hasiera batean dominarako gehitu ziren baldintza guztiak baina dagoeneko eskura ez daudenak. Gomendagarria da parametro hauek desaktibatzea aurrerantzean ikasleek domina hau eskura dezaketela ziurtatzeko.';
+$string['criterror_help'] = 'Eremu-multzo honek erakusten du hasiera batean dominarako gehitu ziren baldintza guztiak baina dagoeneko eskuragarri ez daudenak. Gomendagarria da parametro hauek desaktibatzea aurrerantzean ikasleek domina hau eskura dezaketela ziurtatzeko.';
 $string['currentimage'] = 'Oraingo irudia:';
 $string['currentstatus'] = 'Oraingo egoera:';
 $string['dateawarded'] = 'Emate-data';
@@ -294,10 +294,10 @@ $string['error:nogroups'] = '<p>Zure motxilan ez dago domina-bilduma publikorik 
 $string['error:nopermissiontoview'] = 'Ez duzu baimenik domina-jasotzaileak ikusteko';
 $string['error:nosuchbadge'] = 'Ez dago {$a} id-a duen dominarik.';
 $string['error:nosuchcohort'] = 'Kontuz! Kohorte hau jada ez da eskuragarri.';
-$string['error:nosuchcourse'] = 'Kontuz: ikastaro hau ez dago eskura.';
-$string['error:nosuchfield'] = 'Kontuz: erabiltzaileran profil-eremu hau ez dago eskura.';
-$string['error:nosuchmod'] = 'Kontuz: jarduera hau ez dago eskura.';
-$string['error:nosuchrole'] = 'Kontuz: rol hau ez dago eskura.';
+$string['error:nosuchcourse'] = 'Kontuz: ikastaro hau ez dago eskuragarri.';
+$string['error:nosuchfield'] = 'Kontuz: erabiltzailearen profil-eremu hau ez dago eskuragarri.';
+$string['error:nosuchmod'] = 'Kontuz: jarduera hau ez dago eskuragarri.';
+$string['error:nosuchrole'] = 'Kontuz: rol hau ez dago eskuragarri.';
 $string['error:nosuchuser'] = 'Helbide elektroniko hau duen erabiltzaileak ez du oraingo motxila-hornitzailearekin konturik.';
 $string['error:notifycoursedate'] = 'Kontuz: Ikastaro-osaketa eta jarduera-osaketarekin lotutako dominak ez dira ikastaroa hasi arte emango.';
 $string['error:parameter'] = 'Kontuz: gutxinez parametro bat aukeratu behar da domina emateko lan-ildoa ziurtatzeko.';
@@ -390,7 +390,7 @@ $string['noawards'] = 'Domina hau ez da oraindik irabazi.';
 $string['nobackpack'] = 'Ez dago kontu honekin lotutako motxila-zerbitzurik.<br/>';
 $string['nobackpackbadges'] = 'Ez dago dominarik aukeratu dituzun bildumetan. <a href="mybackpack.php">Gehitu bilduma gehiago</a>.';
 $string['nobackpackcollections'] = 'Ez da domina-bildumarik aukeratu. <a href="mybackpack.php">Gehitu bilduman</a>.';
-$string['nobadges'] = 'Ez dago dominarik eskura.';
+$string['nobadges'] = 'Ez dago dominarik eskuragarri.';
 $string['nocriteria'] = 'Oraindik ez da ezarri domina honetarako irizpiderik.';
 $string['noendorsement'] = 'Dominak ez du onarpenik.';
 $string['noexpiry'] = 'Domina honek ez du iragungitze-datarik.';
@@ -485,7 +485,7 @@ $string['selecting'] = 'Aukeratutako dominekin...';
 $string['setup'] = 'Konfiguratu konexioa';
 $string['signinwithyouremail'] = 'Hasi saioa zure e-posta helbidearekin';
 $string['sitebadges'] = 'Guneko dominak';
-$string['sitebadges_help'] = 'Guneko dominak gunearekin lotutako jarduerak egin dituzten erabiltzaileei eman ahal zaizkie bakarrik. Jarduera horien artean daude hainbat ikastaro osatzea edo erabiltzaile-profileko hainbat eremu betetzea. Guneko dominak eskuz ere eman ahal dizkio erabiltzaile batek beste bati.
+$string['sitebadges_help'] = 'Guneko dominak soilik gunearekin lotutako jarduerak egin dituzten erabiltzaileei eman ahal zaizkie. Jarduera horien artean daude hainbat ikastaro osatzea edo erabiltzaile-profileko hainbat eremu betetzea. Guneko dominak eskuz ere eman ahal dizkio erabiltzaile batek beste bati.
 
 Ikastaroekin lotutako jardueretarako dominak ikastaro testuinguruan sortu behar dira. Hemen aurki daitezke ikastaroko dominak: Kudeaketa >  Dominak';
 $string['status'] = 'Dominen egoera';

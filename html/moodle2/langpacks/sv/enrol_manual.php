@@ -25,10 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = 'Avancerat';
 $string['alterstatus'] = 'Ändra status';
 $string['altertimeend'] = 'Ändra stopptid';
 $string['altertimestart'] = 'Ändra starttid';
 $string['assignrole'] = 'Tilldela roll';
+$string['assignroles'] = 'Tilldela roller';
+$string['browsecohorts'] = 'Bläddra genom kohorter';
+$string['browseusers'] = 'Bläddra genom användare';
 $string['confirmbulkdeleteenrolment'] = 'Vill du verkligen ta bort dessa deltagare i kursen?';
 $string['defaultperiod'] = 'Förinställd period som användare är kopplad till kursen';
 $string['defaultperiod_help'] = 'Förinställd tid som användaren är kopplad till kursen, med start från då användaren läggs till. Om denna är "0" är tiden obegränsad.';
@@ -36,12 +40,27 @@ $string['deleteselectedusers'] = 'Ta bort valda deltagare från kursen';
 $string['editselectedusers'] = 'Ändra valda användarkopplingar';
 $string['enrolledincourserole'] = 'Registrerad i "{$a->course}" som "{$a->role}"';
 $string['enrolusers'] = 'Lägg till användare';
+$string['enroluserscohorts'] = 'Registrera valda användare och kohorter';
+$string['expirymessageenrolledbody'] = 'Hej {$a->user},
+
+din registrering på kursen \'{$a->course}\' kommer att upphöra {$a->timeend}.
+
+Behöver du hjälp kontakta gärna {$a->enroller}.';
+$string['expirymessageenrollerbody'] = 'Registreringen på kursen \'{$a->course}\' upphör inom de kommande {$a->threshold} för följande användare:
+
+{$a->users}
+
+För att förlänga deras registrering, gå till  {$a->extendurl}';
 $string['manual:config'] = 'Konfigurera instanser för manuell tilläggning av användare i kurs';
 $string['manual:enrol'] = 'Lägg till användare';
 $string['manual:manage'] = 'Hantera tilläggning av användare';
 $string['manual:unenrol'] = 'Koppla bort användare från kursen';
 $string['manual:unenrolself'] = 'Koppla bort dig själv från kursen';
+$string['now'] = 'Nu';
 $string['pluginname'] = 'Koppla användare manuellt';
+$string['selectcohorts'] = 'Välj kohorter';
+$string['selection'] = 'Urval';
+$string['selectusers'] = 'Välj användare';
 $string['status'] = 'Tillåt lägga till användare manuellt';
 $string['statusdisabled'] = 'Avaktiverad';
 $string['statusenabled'] = 'Aktiverad';

@@ -209,7 +209,7 @@ $string['guestsnotallowed'] = 'Apenas os utilizadores inscritos têm permissão 
 $string['howlong'] = 'Quanto tempo demorou a completar este inquérito?';
 $string['howlongoptions'] = 'Menos de 1 min, 1 a 2 min, 2 a 3 min, 3 a 4 min, 4 a 5 min, 5 a 10 min, mais de 10';
 $string['ifoundthat'] = 'Achei isso';
-$string['indicator:cognitivedepth'] = 'Compreensão do Inquérito predefinido';
+$string['indicator:cognitivedepth'] = 'Compreensão do Inquérito';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Inquérito predefinido.';
 $string['indicator:socialbreadth'] = 'Socialização do Inquérito predefinido';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Inquérito predefinido.';
@@ -270,9 +270,9 @@ $string['surveysaved'] = 'O inquérito foi guardado';
 $string['surveytype'] = 'Tipo de inquérito';
 $string['surveytype_help'] = 'Existem 3 tipos de inquéritos disponíveis:
 
-* Inquérito de Atitudes perante o Pensamento e a Aprendizagem  (ATTLS) - É uma ferramenta para medir de que forma uma pessoa é um \'conhecedor ligado\' (tem tendência a achar a aprendizagem agradável e é habitualmente mais cooperativo e mais propenso a trabalhar com as ideias dos outros) ou um \'conhecedor isolado\' (tem tendência a  ter uma atitude mais crítica perante a aprendizagem).
+* Inquérito de Atitudes perante o Pensamento e a Aprendizagem  (ATTLS - Attitudes to Thinking and Learning Survey) - É uma ferramenta para aferir até que ponto uma pessoa é um \'conhecedor ligado\' (tem tendência a achar a aprendizagem agradável e é habitualmente mais cooperativo e mais propenso a trabalhar com as ideias dos outros) ou se é um \'conhecedor isolado\' (tem tendência a ter uma atitude mais crítica perante a aprendizagem).
 * Inquérito de incidentes críticos
-* Inquérito sobre Ambiente da Aprendizagem Online Construtivista (COLLES) – Para apurar em que medida a capacidade interativa da World Wide Web pode ser utilizada  para motivar os alunos com  práticas de aprendizagem dinâmica.';
+* Inquérito sobre o Ambiente da Aprendizagem Online Construtivista (COLLES - Constructivist On-line Learning Environment Survey) - Para apurar em que medida a capacidade interativa da World Wide Web (www) pode ser utilizada para motivar os alunos com práticas de aprendizagem dinâmica.';
 $string['surveytype_link'] = 'mod/inquérito/mod';
 $string['thanksforanswers'] = '{$a}, muito obrigado por responder ao inquérito';
 $string['time'] = 'Hora';

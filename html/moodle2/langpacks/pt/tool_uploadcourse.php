@@ -119,8 +119,8 @@ $string['updatemode'] = 'Modo de atualização';
 $string['updatemodedoessettonothing'] = 'O modo de atualização não permite que nada seja atualizado';
 $string['updatemode_help'] = 'Se permitir que as disciplinas sejam atualizadas, é necessário indicar com o que é que será feita a atualização das disciplinas';
 $string['updateonly'] = 'Apenas atualizar disciplinas existentes';
-$string['updatewithdataonly'] = 'Atualize apenas com dados CSV';
-$string['updatewithdataordefaults'] = 'Atualize com dados e predefinições de CSV';
+$string['updatewithdataonly'] = 'Atualizar apenas com dados CSV';
+$string['updatewithdataordefaults'] = 'Atualizar com dados CSV e predefinições';
 $string['uploadcourses'] = 'Carregar disciplinas';
 $string['uploadcourses_help'] = 'O carregamento das disciplinas pode ser feito via ficheiro de texto. O formato deste ficheiro deve estar de acordo com as seguintes indicações:
 

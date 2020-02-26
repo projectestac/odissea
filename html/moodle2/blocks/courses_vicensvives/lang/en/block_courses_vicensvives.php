@@ -91,3 +91,6 @@ $string['courses_vicensvives:myaddinstance'] = 'Crear instancia del bloque en my
 
 // Event
 $string['eventwebservicecalled'] = 'Web service llamado';
+
+// Privacy
+$string['privacy:metadata'] = 'The Courses Vicens Vives block only shows data stored in other locations.';

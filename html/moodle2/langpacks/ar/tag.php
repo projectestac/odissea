@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addotags'] = 'إضافة وسوم رسمية';
 $string['addtagtomyinterests'] = 'إضف "{$a}" لاهتماماتي';
+$string['description'] = 'الوصف';
 $string['edittag'] = 'حرر هذا الوسم';
 $string['entertags'] = 'أدخل الوسوم وبينها فواصل';
 $string['flagasinappropriate'] = 'أشر لهذا كمحتوى غير مرغوب';
@@ -43,5 +44,6 @@ $string['search'] = 'بحث';
 $string['searchresultsfor'] = 'نتائج البحث لـ "${a}"';
 $string['searchtags'] = 'البحث في الوسوم';
 $string['seeallblogs'] = 'معاينة كل منشورات المدونة الموسومة بـ"{$a}"...';
+$string['tagareaname'] = 'الاسم';
 $string['tags'] = 'وسوم';
 $string['tagsaredisabled'] = 'الوسوم معطّلة';

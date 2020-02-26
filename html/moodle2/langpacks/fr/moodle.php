@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['abouttobeinstalled'] = 'prêt à être installé';
 $string['action'] = 'Action';
-$string['actionchoice'] = 'Que voulez-vous faire avec le fichier « {$a} »&nbsp;?';
+$string['actionchoice'] = 'Que voulez-vous faire avec le fichier « {$a} » ?';
 $string['actions'] = 'Actions';
 $string['actionsmenu'] = 'Menu d\'actions';
 $string['active'] = 'Actif';
@@ -275,8 +275,8 @@ $string['clicktohideshow'] = 'Cliquer pour déplier ou replier';
 $string['closebuttontitle'] = 'Fermer';
 $string['closewindow'] = 'Fermer cette fenêtre';
 $string['collapse'] = 'Replier';
-$string['collapseall'] = 'Tout réduire';
-$string['collapsecategory'] = 'Réduire {$a}';
+$string['collapseall'] = 'Tout replier';
+$string['collapsecategory'] = 'Replier {$a}';
 $string['commentincontext'] = 'Chercher ce commentaire dans le contexte';
 $string['comments'] = 'Commentaires';
 $string['commentscount'] = 'Commentaires ({$a})';
@@ -380,7 +380,7 @@ $string['coursenotyetstarted'] = 'Le cours n\'a pas encore débuté';
 $string['courseoverview'] = 'Aperçu du cours';
 $string['courseoverviewfiles'] = 'Image de cours';
 $string['courseoverviewfilesext'] = 'Extensions des fichiers image de cours';
-$string['courseoverviewfiles_help'] = 'L\'image de cours est affichée dans la vue d\'ensemble des cours sur le Tableau de bord. D\'autres types de fichiers et plus d\'un fichiers peuvent être autorisés par un administrateur du site. Dans ce cas, ces fichiers seront affichés avec le résumé du cours, dans la page avec la liste des cours.';
+$string['courseoverviewfiles_help'] = 'L\'image de cours est affichée dans la vue d\'ensemble des cours sur le Tableau de bord. D\'autres types de fichiers et plus d\'un fichier peuvent être autorisés par un administrateur du site. Dans ce cas, ces fichiers seront affichés avec le résumé du cours, dans la page avec la liste des cours.';
 $string['courseoverviewfileslimit'] = 'Limite du nombre de fichiers image de cours';
 $string['courseoverviewgraph'] = 'Graphique de l\'aperçu du cours';
 $string['coursepreferences'] = 'Préférences du cours';
@@ -512,7 +512,7 @@ $string['deletecheck'] = 'Supprimer {$a} ?';
 $string['deletecheckfiles'] = 'Voulez-vous vraiment supprimer ces fichiers ?';
 $string['deletecheckfull'] = 'Voulez-vous vraiment supprimer l\'utilisateur {$a}, y compris toutes ses inscriptions, toutes ses activités et les autres données associées ?';
 $string['deletechecktype'] = 'Voulez-vous vraiment supprimer ce {$a->type} ?';
-$string['deletechecktypename'] = 'Voulez-vous vraiment supprimer le {$a->type} « {$a->name} » ?';
+$string['deletechecktypename'] = 'Voulez-vous vraiment supprimer le {$a->type} « {$a->name} » ?';
 $string['deletecheckwarning'] = 'Vous allez supprimer ces fichiers';
 $string['deletecomment'] = 'Supprimer ce commentaire';
 $string['deletecommentbyon'] = 'Supprimer le commentaire de {$a->user} écrit le {$a->time}';
@@ -635,7 +635,7 @@ Dans la plupart des logiciels de courriel, cette adresse devrait apparaître com
 Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site,
 {$a->admin}';
 $string['emailconfirmationresend'] = 'Renvoyer le courriel de confirmation';
-$string['emailconfirmationsubject'] = '{$a} : confirmation de l\'ouverture du compte';
+$string['emailconfirmationsubject'] = '{$a} : confirmation de l\'ouverture du compte';
 $string['emailconfirmsent'] = '<p>Un message vous a été envoyé à l\'adresse de courriel <strong>{$a}</strong>.</p><p>Il contient les instructions pour terminer votre enregistrement.</p><p>Si vous rencontrez des difficultés, veuillez contacter l\'administrateur du site.</p>';
 $string['emailconfirmsentfailure'] = 'Échec de l\'envoi du courriel de confirmation';
 $string['emailconfirmsentsuccess'] = 'Courriel de confirmation envoyé';
@@ -690,7 +690,7 @@ $string['emailpasswordchangeinfofail'] = 'Bonjour {$a->firstname},
 Quelqu\'un (probablement vous) a demandé un nouveau mot de passe pour votre compte sur « {$a->sitename} ».
 
 Malheureusement, les mots de passe ne peuvent pas être réinitialisés sur ce site. Veuillez contacter l\'administrateur du site, {$a->admin}.';
-$string['emailpasswordchangeinfosubject'] = '{$a} : information sur le changement de mot de passe';
+$string['emailpasswordchangeinfosubject'] = '{$a} : information sur le changement de mot de passe';
 $string['emailpasswordconfirmation'] = 'Bonjour {$a->firstname},
 
 Quelqu\'un (probablement vous) a demandé un nouveau mot de passe pour votre compte sur « {$a->sitename} ».
@@ -703,7 +703,7 @@ Dans la plupart des logiciels de courriel, cette adresse devrait apparaître com
 
 Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site,
 {$a->admin}';
-$string['emailpasswordconfirmationsubject'] = '{$a} : confirmation du changement de mot de passe';
+$string['emailpasswordconfirmationsubject'] = '{$a} : confirmation du changement de mot de passe';
 $string['emailpasswordconfirmmaybesent'] = '<p>Si vous avez fourni un nom d\'utilisateur ou une adresse de courriel corrects, un message vous a été envoyé par courriel.</p> <p>Ce message contient de simples instructions pour confirmer et terminer cette procédure de modification de mot de passe. Si vous n\'arrivez toujours pas à vous connecter, veuillez contacter l\'administrateur du site.</p>';
 $string['emailpasswordconfirmnoemail'] = '<p>Le compte utilisateur indiqué n\'a pas d\'adresse de courriel.</p>
 <p>Veuillez contacter l\'administrateur du site.</p>';
@@ -953,8 +953,8 @@ $string['hiddenassign'] = 'Attribution cachée';
 $string['hiddenfromstudents'] = 'Caché pour les étudiants';
 $string['hiddenoncoursepage'] = 'Disponible, mais pas affiché sur la page de cours';
 $string['hiddensections'] = 'Sections cachées';
-$string['hiddensectionscollapsed'] = 'Sections cachées affichées sous forme condensée';
-$string['hiddensections_help'] = 'Ce réglage détermine si les sections cachées de votre cours sont affichées sous forme condensée (par exemple en format hebdomadaire pour indiquer clairement les semaines où le cours n\'a pas lieu) ou si elles sont complètement invisibles.';
+$string['hiddensectionscollapsed'] = 'Sections cachées affichées sous forme repliée';
+$string['hiddensections_help'] = 'Ce réglage détermine si les sections cachées de votre cours sont affichées sous forme repliées (par exemple en format hebdomadaire pour indiquer clairement les semaines où le cours n\'a pas lieu) ou si elles sont complètement invisibles.';
 $string['hiddensectionsinvisible'] = 'Sections cachées invisibles';
 $string['hiddenwithbrackets'] = '(caché)';
 $string['hide'] = 'Cacher';
@@ -1062,7 +1062,7 @@ $string['keepsearching'] = 'Continuer à chercher';
 $string['langltr'] = 'La langue est écrite de gauche à droite';
 $string['langrtl'] = 'La langue est écrite de droite à gauche';
 $string['language'] = 'Langue';
-$string['languagegood'] = 'Le paquetage de langue est à jour ! :-)<br />Merci à tous les contributeurs !';
+$string['languagegood'] = 'Le paquetage de langue est à jour ! :-)<br />Merci à tous les contributeurs !';
 $string['last'] = 'Dernier';
 $string['lastaccess'] = 'Dernier accès';
 $string['lastcourseaccess'] = 'Dernier accès au cours';
@@ -1152,7 +1152,7 @@ $string['maxsectionslimit'] = 'Impossible de créer une nouvelle section, car ce
 $string['maxsize'] = 'Taille maximale : {$a}';
 $string['maxsizeandareasize'] = 'Taille maximale pour les nouveaux fichiers : {$a->size}, limite globale : {$a->areasize}';
 $string['maxsizeandattachments'] = 'Taille maximale des fichiers : {$a->size} ; nombre maximal de fichiers : {$a->attachments}';
-$string['maxsizeandattachmentsandareasize'] = 'Taille maximale des fichiers : {$a->size} ; nombre maximal de fichiers : {$a->attachments} ; limite globale : {$a->areasize}';
+$string['maxsizeandattachmentsandareasize'] = 'Taille maximale des fichiers : {$a->size} ; nombre maximal de fichiers : {$a->attachments} ; limite globale : {$a->areasize}';
 $string['memberincourse'] = 'Personnes dans le cours';
 $string['messagebody'] = 'Texte du message';
 $string['messagedselectedcountusersfailed'] = 'Un problème est survenu. {$a} messages n\'ont pas été envoyés.';
@@ -1401,10 +1401,10 @@ $string['nothingtodisplay'] = 'Rien à afficher';
 $string['notice'] = 'Remarque';
 $string['noticenewerbackup'] = 'Ce fichier de sauvegarde a été créé avec la version {$a->backuprelease} ({$a->backupversion}) de Moodle, qui est plus récente que votre installation actuelle de Moodle {$a->serverrelease} ({$a->serverversion}). Ceci peut causer des incohérences, car la compatibilité des fichiers de sauvegarde ne peut dans ce cas pas être garantie.';
 $string['notifications'] = 'Notifications';
-$string['notifyloginfailuresmessage'] = '{$a->time}, IP : {$a->ip}, utilisateur : {$a->info}, nom complet : {$a->name}';
+$string['notifyloginfailuresmessage'] = '{$a->time}, IP : {$a->ip}, utilisateur : {$a->info}, nom complet : {$a->name}';
 $string['notifyloginfailuresmessageend'] = 'Vous pouvez consulter ces journaux à l\'adresse {$a}';
 $string['notifyloginfailuresmessagestart'] = 'Voici une liste des tentatives de connexion au site {$a} depuis la dernière notification';
-$string['notifyloginfailuressubject'] = '{$a} :: notification de tentatives de connexion';
+$string['notifyloginfailuressubject'] = '{$a} :: notification de tentatives de connexion';
 $string['notincluded'] = 'Pas inclus';
 $string['notingroup'] = 'Désolé, vous devez faire partie d\'un groupe pour voir cette page.';
 $string['notpublic'] = 'Non public !';

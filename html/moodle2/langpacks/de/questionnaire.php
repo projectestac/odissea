@@ -35,9 +35,11 @@ $string['addquestion'] = 'Frage hinzufügen...';
 $string['addquestions'] = 'Fragen hinzufügen';
 $string['addquestiontosection'] = 'Weitere Fragen zum Abschnitt hinzufügen';
 $string['addselqtype'] = 'Ausgewählten Fragetyp hinzufügen';
-$string['alignment'] = 'Anordnung der Radio-Buttons';
+$string['alignment'] = 'Anordnung der Radio Buttons';
 $string['alignment_help'] = 'Anordnung wählen: senkrecht (Standard) oder waagerecht';
 $string['all'] = 'Alle';
+$string['allnameddegrees'] = 'Bezeichnung der Abstufungen';
+$string['allnameddegrees_help'] = 'Geben Sie für jede Abstufung einen Text ein. Verwenden Sie pro Abstufung eine neue Zeile. Lassen Sie eine Zeile leer, um die betreffende Abstufung nicht zu verwenden.';
 $string['alreadyfilled'] = 'Sie haben diese Befragung bereits ausgefüllt. {$a}';
 $string['andaveragevalues'] = 'und durchschnittliche Werte';
 $string['anonymous'] = 'Anonym';
@@ -72,7 +74,7 @@ $string['chart:type'] = 'Grafiktyp';
 $string['chart:type_help'] = 'Wählen Sie den Grafiktyp den Sie für dieses Feedback verwenden möchten.';
 $string['chart:vprogress'] = 'Vertikaler Fortschrittsbalken';
 $string['checkallradiobuttons'] = 'Wählen Sie bitte <strong>{$a}</strong> Antwort(en)!';
-$string['checkboxes'] = 'Multiple Choice';
+$string['checkboxes'] = 'Checkboxen';
 $string['checkboxes_help'] = 'Tragen Sie jeweils eine Option pro Zeile ein. Die Teilnehmer/innen können eine oder mehrere Antworten auswählen.';
 $string['checkbreaksadded'] = 'Neuer Seitenumbruch/Seitenumbrüche an folgenden Positione(n) eingefügt:';
 $string['checkbreaksok'] = 'Alle erforderlichen Seitenumbrüche sind vorhanden!';
@@ -85,7 +87,7 @@ $string['closedate'] = 'Enddatum verwenden';
 $string['closedate_help'] = 'Sie können hier ein Abgabedatum für den Fragebogen bestimmen. Markieren Sie das Feld und wählen Sie Datum und Uhrzeit aus.
 Teilnehmer werden den Fragebogen nach diesem Zeitpunkt nicht mehr ausfüllen können. Wenn hier keine Angabe gemacht wird, wird der Fragebogen nie geschlossen.';
 $string['closeson'] = 'Befragung schließt am {$a}';
-$string['completionsubmit'] = 'Teilnehmer müssen den Frageboten einreichen um ihn zu beenden';
+$string['completionsubmit'] = 'Teilnehmer/innen müssen den Fragebogen einreichen, um ihn zu beenden.';
 $string['condition'] = 'Bedingung';
 $string['confalts'] = '---oder--- <br />Bestätigungsseite';
 $string['configmaxsections'] = 'Maximale Feedback-Abschnitte';
@@ -93,7 +95,7 @@ $string['configusergraph'] = 'Zeigen Sie die Grafiken für das "Personality Test
 $string['configusergraphlong'] = 'Nutzen Sie die <a href="http://www.rgraph.net/">Rgraph library</a>, um die "Personality Test"-Feedback-Grafiken zu zeigen.';
 $string['confirmdelallresp'] = 'Möchten Sie wirklich alle Antworten in dieser Befragung löschen?';
 $string['confirmdelchildren'] = 'Wenn Sie diese Frage löschen wird/werden die abhängige(n) Frage(n) ebenfalls gelöscht:';
-$string['confirmdeletesection'] = 'Möchten Sie wirklich den Abschnitt \'{$a}\' löschen?';
+$string['confirmdeletesection'] = 'Möchten Sie wirklich den Feedback-Abschnitt \'{$a}\' löschen?';
 $string['confirmdelgroupresp'] = 'Möchten Sie wirklich alle Antworten von {$a} löschen?';
 $string['confirmdelquestion'] = 'Sind Sie sicher dass Sie die Frage an Position {$a} löschen möchten?';
 $string['confirmdelquestionresps'] = 'Dies wird auch die {$a} Antwort(en) löschen, die für die Frage bereits gegeben wurden.';
@@ -107,7 +109,7 @@ $string['contentoptions'] = 'Inhaltsoptionen';
 $string['couldnotcreatenewsurvey'] = 'Neue Befragung konnte nicht angelegt werden!';
 $string['couldnotdelresp'] = 'Antwort konnte nicht gelöscht werden';
 $string['createcontent'] = 'Neuen Inhalt festlegen';
-$string['createcontent_help'] = 'Wählen Sie eine Option für die Radio-Buttons ("neu erstellen" ist der Standard).';
+$string['createcontent_help'] = 'Wählen Sie eine Option für die Radio Buttons ("neu erstellen" ist der Standard).';
 $string['createnew'] = 'Neuen Inhalt festlegen';
 $string['crontask'] = 'Befragungen bereinigen';
 $string['date'] = 'Datum';
@@ -132,7 +134,7 @@ $string['download'] = 'Herunterladen';
 $string['downloadtextformat'] = 'Als Text (CSV) herunterladen';
 $string['downloadtextformat_help'] = 'Diese Funktion ermöglicht es Ihnen, alle Antworten eines Fragebogens in einer Textdatei (CSV) zu speichern. Diese Datei kann dann in ein Tabellenkalkulationsprogramm importiert oder von einer Statistik-Software weiter verarbeitet werden.';
 $string['dropdown'] = 'Dropdown-Feld';
-$string['dropdown_help'] = 'Es gibt keinen wirklichen Vorteil eine Dropdown-Box vorzuziehen, außer um Platz zu sparen und die Länge der Liste zu reduzieren.';
+$string['dropdown_help'] = 'Es gibt keinen wirklichen Vorteil einem Dropdown-Feld Radio Buttons vorzuziehen, außer um Platz zu sparen und die Länge der Liste zu reduzieren.';
 $string['edit'] = 'Bearbeiten';
 $string['editingfeedback'] = 'Feedbackeinstellungen';
 $string['editingquestionnaire'] = 'Einstellungen der Befragung bearbeiten';
@@ -182,9 +184,10 @@ $string['feedbackmessages'] = 'Feedbacktext für Abschnitt {$a}';
 $string['feedbacknextsection'] = 'Nächster Abschnitt {$a}';
 $string['feedbacknone'] = 'Kein Feedbacktext';
 $string['feedbacknotes'] = 'Anmerkungen zum Feedback';
-$string['feedbacknotes_help'] = 'Der hier angegebene Text, wird den Personen am Ende Ihres Feedbackberichts angezeigt.';
+$string['feedbacknotes_help'] = 'Der hier angegebene Text wird den Personen am Ende Ihres Feedbackberichts angezeigt.';
 $string['feedbackoptions'] = 'Feedbackoptionen';
-$string['feedbackoptions_help'] = 'Die Feedbackoptionen sind verfügbar wenn Ihre Befragung eine der folgenden Fragetypen oder Frageeinstellungen enthält: Radiobuttons, Dropdown oder Rate. Diese Fragen müssen als \'erforderlich\' gesetzt werden, der Name der Frage darf NICHT leer sein und die vorhandenen Frageauswahlmöglichkeiten muss einen Wert enthalten.';
+$string['feedbackoptions_help'] = 'Die Feedbackoptionen sind verfügbar, wenn Ihre Befragung eine der folgenden Fragetypen oder Frageeinstellungen enthält:
+Radio Buttons, Dropdown-Feld, Ja/Nein oder Bewertung (Normal oder semantisches Differential). Diese Fragen müssen als \'erforderlich\' gesetzt werden, der Name der Frage darf NICHT leer sein und die vorhandenen Frageauswahlmöglichkeiten müssen einen Wert enthalten.';
 $string['feedbackremovequestionfromsection'] = 'Diese Frage ist Teil des Feedback-Abschnitts [{$a}]';
 $string['feedbackremovesection'] = 'Das Löschen dieser Frage wird den Feedback-Abschnitt [{$a}] komplett löschen.';
 $string['feedbackreport'] = 'Feedbackbericht';
@@ -230,10 +233,10 @@ $string['invalidsectionid'] = 'Ungültiger Feedback-Abschnitt.';
 $string['invalidsurveyid'] = 'Falsche Befragungs-ID';
 $string['kindofratescale'] = 'Typ der Bewertungsskala';
 $string['kindofratescale_help'] = 'Rechtsklick auf den "Hilfe"-Link unten.';
-$string['lastrespondent'] = 'Letze Abgabe';
+$string['lastrespondent'] = 'Letzte Abgabe';
 $string['length'] = 'Länge';
 $string['managequestions'] = 'Fragen bearbeiten';
-$string['managequestions_help'] = 'In der "Fragen bearbeiten"-Sektion der "Frage hinzufügen"-Seite können Sie mehre Aktionen an den Fragebogen-Fragen vornehmen.';
+$string['managequestions_help'] = 'In der "Fragen bearbeiten"-Sektion der "Frage hinzufügen"-Seite können Sie mehrere Aktionen an den Fragebogen-Fragen vornehmen.';
 $string['mandatory'] = 'Verpflichtend - Alle diese Abhängigkeiten müssen erfüllt sein.';
 $string['maxdigitsallowed'] = 'Max. erlaubte Ziffern';
 $string['maxdigitsallowed_help'] = 'Durch die Verwendung von Max. erlaubte Ziffern und Anzahl der Nachkomastellen können Sie die Länge und Anzahl der geforderten Nachkommastellen bestimmen.';
@@ -264,8 +267,8 @@ $string['myresponsetitle'] = 'Ihre {$a} Antworten';
 $string['myresults'] = 'Ihre Ergebnisse';
 $string['name'] = 'Name';
 $string['navigate'] = 'Verzweigte Fragen erlauben';
-$string['navigate_help'] = 'Aktivieren Sie diese Option, damit Ja/Nein-Fragen, Radio-Button-Fragen und Mehrfachauswahlfragen abhängig von den gegebenen Antworten weitere Fragen sichtbar oder unsichtbar schalten.';
-$string['navigatetosection'] = 'Zu diesem Abschnitt wechseln';
+$string['navigate_help'] = 'Aktivieren Sie diese Option, damit Ja/Nein-Fragen, Radio Button-Fragen und Mehrfachauswahlfragen, abhängig von den gegebenen Antworten, weitere Fragen sichtbar oder unsichtbar schalten.';
+$string['navigatetosection'] = 'Zu diesem Feedback-Abschnitt wechseln';
 $string['next'] = 'Weiter';
 $string['nextpage'] = 'Nächste Seite';
 $string['nlines'] = '{$a} Zeilen';
@@ -310,11 +313,11 @@ $string['numeric_help'] = 'Wählen Sie diesen Fragetyp, wenn Sie eine korrekt fo
 $string['of'] = 'von';
 $string['opendate'] = 'Startdatum verwenden';
 $string['opendate_help'] = 'Hier können Sie ein Anfangszeitpunkt für den Fragebogen festlegen. Markieren Sie das Feld und wählen Sie die gewünschte Datum und Uhrzeit.
-Teilnhemer können vor dem angegebenen Zeitpunkt den Fragebogen nicht ausfüllen. Ohne Angabe steht der Fragebogen sofort zur Verfügung.';
+Teilnehmer können vor dem angegebenen Zeitpunkt den Fragebogen nicht ausfüllen. Ohne Angabe steht der Fragebogen sofort zur Verfügung.';
 $string['option'] = 'Option {$a}';
 $string['optional'] = 'Optional - Mindestens eine dieser Abhängigkeiten muss erfüllt sein.';
 $string['optionalname'] = 'Name der Frage';
-$string['optionalname_help'] = 'Der Fragetitel wird nur benutzt, wenn Sie die Antworten in das CSV/Excel-Format exportieren. Wenn Sie diese Funktion nicht verwenden, müssen Sie sich über die Fragetitel keine Gedanken machen. Wenn Sie einen regelmäßigen Export der Daten ins CSV-Format Planen, haben Sie die Wahl von zwei';
+$string['optionalname_help'] = 'Der Fragetitel wird nur benutzt, wenn Sie die Antworten in das CSV/Excel-Format exportieren. Wenn Sie diese Funktion nicht verwenden, müssen Sie sich über die Fragetitel keine Gedanken machen. Wenn Sie einen regelmäßigen Export der Daten ins CSV-Format planen, haben Sie die Wahl von zwei Optionen, wie die Fragen betitelt werden sollen.';
 $string['or'] = '---oder---';
 $string['order_ascending'] = 'Aufsteigend';
 $string['order_default'] = 'Standardreihenfolge';
@@ -322,10 +325,10 @@ $string['order_descending'] = 'Absteigend';
 $string['orderresponses'] = 'Antworten sortieren';
 $string['orderresponses_help'] = 'Wenn Sie alle Antworten anzeigen, können Sie die Auswahl nach Anzahl der Antworten (die Spalte \'Durchschnitt\') für die folgenden 4 Arten von Fragen auswählen:
 
-* Einzelauswahl Optionsfeld
+* Einzelauswahl Radio Buttons
 * Einzelauswahl Dropdown-Liste
-* Multiplechoice (Kontrollkästchen)
-* Wertungsfragen (einschließlich Likert Skalen).
+* Mehrfachauswahl (Checkboxen)
+* Bewertungsfragen (einschließlich Likert Skalen).
 
 Wenn Sie auf der Seite \'Alle Antworten\' ankommen, werden standardmäßig alle Antworten in der Reihenfolge geordnet, in der der Fragebogen-Ersteller die Frage-Auswahl eingegeben hat.
 Sie können sie in auf- oder absteigender Reihenfolge ordnen.';
@@ -356,6 +359,42 @@ $string['print'] = 'Druckversion (mit aktuellen Antworten)';
 $string['printblank'] = 'Druckversion (ohne Antworten)';
 $string['printblanktooltip'] = 'Ein Fenster mit einer druckfreundlichen Version der Befragung wird geöffnet (ohne Antworten)';
 $string['printtooltip'] = 'Ein Fenster mit einer druckfreundlichen Version der Befragung wird geöffnet (mit den aktuellen Antworten).';
+$string['privacy:metadata:questionnaire_resp_multiple'] = 'Eine Antwort auf eine Mehrfachauswahl-Frage';
+$string['privacy:metadata:questionnaire_resp_multiple:choice_id'] = 'Die ID eines Auswahldatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_resp_multiple:question_id'] = 'Die ID des Fragendatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_resp_multiple:response_id'] = 'Die ID des Antwortdatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response'] = 'Eine Antwort ist in Bearbeitung oder wurde eingereicht';
+$string['privacy:metadata:questionnaire_response_bool'] = 'Eine Antwort auf eine Boolean (Ja/Nein)-Frage';
+$string['privacy:metadata:questionnaire_response_bool:choice_id'] = 'Die spezifische Boolean-Antwort.';
+$string['privacy:metadata:questionnaire_response_bool:question_id'] = 'Die ID des Fragendatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response_bool:response_id'] = 'Die ID des Antwortdatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response:complete'] = 'Der Antwortabschlussstatus.';
+$string['privacy:metadata:questionnaire_response_date'] = 'Eine Antwort auf eine Datums-Frage';
+$string['privacy:metadata:questionnaire_response_date:question_id'] = 'Die ID des Fragendatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response_date:response'] = 'Die spezifische Datumsantwort.';
+$string['privacy:metadata:questionnaire_response_date:response_id'] = 'Die ID des Antwortdatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response:grade'] = 'Die Note für diese Antwort.';
+$string['privacy:metadata:questionnaire_response_other'] = 'Eine \'andere\' Auswahl-Antwort.';
+$string['privacy:metadata:questionnaire_response_other:choice_id'] = 'Die ID eines Auswahldatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response_other:question_id'] = 'Die ID des Fragendatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response_other:response'] = 'Die spezifische Textantwort.';
+$string['privacy:metadata:questionnaire_response_other:response_id'] = 'Die ID des Antwortdatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response:questionnaireid'] = 'Die ID des Fragebogendatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response_rank'] = 'Eine Antwort auf eine Rangfrage.';
+$string['privacy:metadata:questionnaire_response_rank:choice_id'] = 'Die ID eines Auswahldatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response_rank:question_id'] = 'Die ID des Fragendatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response_rank:rankvalue'] = 'Die spezifische Antwort auf diesen Rang';
+$string['privacy:metadata:questionnaire_response_rank:response_id'] = 'Die ID des Antwortdatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response:submitted'] = 'Der Zeitstempel für die letzte Speicherung dieser Antwort.';
+$string['privacy:metadata:questionnaire_response_text'] = 'Eine Antwort auf eine Freitext-Frage';
+$string['privacy:metadata:questionnaire_response_text:question_id'] = 'Die ID des Fragendatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response_text:response'] = 'Die spezifische Textantwort.';
+$string['privacy:metadata:questionnaire_response_text:response_id'] = 'Die ID des Antwortdatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_response:userid'] = 'Die ID des Nutzers für diese Antwort.';
+$string['privacy:metadata:questionnaire_resp_single'] = 'Eine Antwort auf eine Einfachauswahl-Frage';
+$string['privacy:metadata:questionnaire_resp_single:choice_id'] = 'Die ID eines Auswahldatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_resp_single:question_id'] = 'Die ID des Fragendatensatzes für diese Antwort.';
+$string['privacy:metadata:questionnaire_resp_single:response_id'] = 'Die ID des Antwortdatensatzes für diese Antwort.';
 $string['private'] = 'Privat';
 $string['public'] = 'Öffentlich';
 $string['publiccopy'] = 'Kopie:';
@@ -397,13 +436,13 @@ $string['questiontypes_help'] = 'Beachten Sie die Moodle-Dokumentation';
 $string['radiobuttons'] = 'Radio Buttons';
 $string['radiobuttons_help'] = 'Bei diesem Fragetyp, muss eine von mehreren Antwortvorgaben gewählt werden.';
 $string['rank'] = 'Rang';
-$string['ratescale'] = 'Bewertungsskala (1..5)';
+$string['ratescale'] = 'Bewertung (Skala 1..5)';
 $string['ratescale_help'] = 'Beachten Sie die Moodle-Dokumentation';
 $string['realm'] = 'Befragungstyp';
-$string['realm_help'] = '**Es gibt 3 Typen von Befragungen**
-* Privat: gehört ausschliesslich zum Kurs in dem sie erstellt wurde.
-* Vorlage: kopierbar und editierbar.
-* Öffentlich: kann in verschiedenen Kursen mehrfach eingesetzt werden.';
+$string['realm_help'] = '* **Es gibt 3 Typen von Befragungen:**
+ * Privat: gehört ausschliesslich zum Kurs in dem sie erstellt wurde.
+ * Vorlage: kopierbar und editierbar.
+ * Öffentlich: kann in verschiedenen Kursen mehrfach eingesetzt werden.';
 $string['redirecturl'] = 'URL, zu welcher ein Nutzer nach Abschluss der Befragung weiter geleitet wird.';
 $string['remove'] = 'Löschen';
 $string['removeallquestionnaireattempts'] = 'Alle Abgaben der Befragung löschen';
@@ -436,7 +475,7 @@ $string['responseviewstudentswhenanswered'] = 'Nach dem Ausfüllen der Befragung
 $string['responseviewstudentswhenclosed'] = 'Nach dem Ende der Befragung';
 $string['restrictedtoteacher'] = 'Diese Funktionen sind nur für Trainer/innen mit Editier-Rechten.';
 $string['resume'] = 'Speichern/Fortsetzen';
-$string['resume_help'] = 'Wenn diese Option aktiv ist, können Teilnehmer/innen die Antworten der Befragung speichern bevor Sie sie einreichen. Teilnehmer/innen können die Befragung unvollendet verlassen und zu einem späteren Zeitpunkt wieder auf den gespeicherten Zustand zugreifen.';
+$string['resume_help'] = 'Wenn diese Option aktiv ist, können Teilnehmer/innen die Antworten der Befragung speichern bevor sie sie einreichen. Teilnehmer/innen können die Befragung unvollendet verlassen und zu einem späteren Zeitpunkt wieder auf den gespeicherten Zustand zugreifen.';
 $string['resumesurvey'] = 'Weitermachen';
 $string['return'] = 'Zurück';
 $string['save'] = 'Speichern';
@@ -452,7 +491,7 @@ $string['sectionbreak'] = '--- Seitenumbruch ---';
 $string['sectionbreak_help'] = '--- Seitenumbruch ---';
 $string['sectionsnotset'] = 'Sie müssen mindestens EINE Frage pro Abschnitt auswählen!<br> Nicht ausgewählte Abschnitte: {$a}';
 $string['sectiontext'] = 'Beschriftung';
-$string['sectiontext_help'] = 'Dies ist keine Frage, sondern ein (kurzer) Text, der zur Einleitung/Erläuterung von Fragen dienen wird.';
+$string['sectiontext_help'] = 'Dies ist keine Frage, sondern ein (kurzer) Text, der zur Einleitung/Erläuterung von Fragen dient.';
 $string['selecttheme'] = 'Wählen Sie ein Theme (css) für diese Befragung.';
 $string['send'] = 'Senden';
 $string['sendemail'] = 'E-Mail versenden';
@@ -470,10 +509,10 @@ $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
 $string['strictdateformatting'] = 'Nutzen Sie das Format Jahr-Monat-Tag, z.B. für den 4. März 1945:  <strong>1945-03-04</strong>';
 $string['subject'] = 'Thema';
 $string['submissionnotificationhtmlanon'] = 'Jemand hat eine neue <a href="{$a->submissionurl}">Antwort </a> zur Befragung "{$a->name}" abgegeben.';
-$string['submissionnotificationhtmluser'] = '"<a href="{$a->profileurl}">{$a->username}</a>" hat eine neue <a href="{$a->submissionurl}">Antwort </a> zur Befragung "{$a->name}" abgegeben.';
+$string['submissionnotificationhtmluser'] = '"<a href="{$a->profileurl}">{$a->username}</a>" hat eine neue <a href="{$a->submissionurl}">Antwort</a> zur Befragung "{$a->name}" abgegeben.';
 $string['submissionnotificationsubject'] = 'Neue Befragungsantwort';
-$string['submissionnotificationtextanon'] = 'Es gibt eine neue <a href="{$a->submissionurl}">Antwort </a> zur Befragung "{$a->name}" abgegeben.';
-$string['submissionnotificationtextuser'] = '"<a href="{$a->profileurl}">{$a->username}</a>" hat eine neue <a href="{$a->submissionurl}">Antwort </a> zur Befragung "{$a->name}" abgegeben.';
+$string['submissionnotificationtextanon'] = 'Es gibt eine neue <a href="{$a->submissionurl}">Antwort</a> zur Befragung "{$a->name}" abgegeben.';
+$string['submissionnotificationtextuser'] = '"<a href="{$a->profileurl}">{$a->username}</a>" hat eine neue <a href="{$a->submissionurl}">Antwort</a> zur Befragung "{$a->name}" abgegeben.';
 $string['submitoptions'] = 'Abgabeoptionen';
 $string['submitpreview'] = 'Vorschau der Abgabe';
 $string['submitpreviewcorrect'] = 'Die Einreichung wurde als korrekt ausgefüllt akzeptiert.';
@@ -531,9 +570,9 @@ $string['warning'] = 'Warnung: Fehler aufgetreten';
 $string['wronganswers'] = 'Mit den Antworten stimmt etwas nicht. (siehe unten)';
 $string['wrongdateformat'] = 'Das eingegebene Datum <strong>{$a}</strong> entspricht nicht dem vorgegebenen Format.';
 $string['wrongdaterange'] = 'Fehler: die Jahreszahl muss zwischen 1902 und 2037 liegen.';
-$string['wrongformat'] = 'Es ist etwas fehlerhaft bei Ihrer Antwort zu der Frage:  ';
+$string['wrongformat'] = 'Es ist etwas fehlerhaft bei Ihrer Antwort zu der Frage:&nbsp;';
 $string['wrongformats'] = 'Es ist etwas fehlerhaft bei Ihrer Antwort zu den Fragen:&nbsp;';
 $string['yesno'] = 'Ja/Nein';
-$string['yesno_help'] = 'Einfache Ja/Nein-Frage';
+$string['yesno_help'] = 'Eine einfache Ja/Nein-Frage.';
 $string['yourresponse'] = 'Ihre Antwort';
 $string['yourresponses'] = 'Ihre Antworten';

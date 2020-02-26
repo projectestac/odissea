@@ -202,9 +202,9 @@ $string['highestattempt'] = 'Tentativo migliore';
 $string['identifier'] = 'Identificativo domanda';
 $string['incomplete'] = 'Incompleto';
 $string['indicator:cognitivedepth'] = 'SCORM cognitivo';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'SCORM\'.';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività SCORM.';
 $string['indicator:socialbreadth'] = 'SCORM sociale';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'SCORM\'.';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività SCORM.';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interazioni';
 $string['invalidactivity'] = 'L\'attività SCORM è errata';
@@ -244,6 +244,8 @@ E\' possibile usare attività SCORM per:
 * Presentare contenuti multimediali ed animazioni
 * Valutare le attività degli studenti';
 $string['modulenameplural'] = 'Pacchetti SCORM';
+$string['myaiccsessions'] = 'Le mie sessioni AICC';
+$string['myattempts'] = 'I miei tentativi';
 $string['nav'] = 'Visualizza navigazione';
 $string['navdesc'] = 'Specifica se visualizzare o nascondere i pulsanti di navigazione e la loro posizione';
 $string['nav_help'] = 'L\'impostazione visualizza o nasconde i pulsanti di navigazione e la loro posizione.

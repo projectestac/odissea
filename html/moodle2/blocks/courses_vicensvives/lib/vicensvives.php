@@ -28,6 +28,10 @@ class vicensvives_ws {
         if (!$bookid) {
             return null;
         }
+// global $CFG;
+// $json = file_get_contents( $CFG->wwwroot . '/blocks/courses_vicensvives/test/test.json');
+// return json_decode($json);
+
         return $this->call('get', 'books/' . $bookid, array('lti_info' => "true"));
     }
 

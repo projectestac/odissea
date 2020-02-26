@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['database:config'] = 'Configurare istanze plugin Database esterno';
 $string['database:unenrol'] = 'Disiscrivi utenti sospesi';
-$string['dbencoding'] = 'Codifica databse';
+$string['dbencoding'] = 'Codifica database';
 $string['dbhost'] = 'Host database';
 $string['dbhost_desc'] = 'Inserire l\'indirizzo IP o il nome host del database server. Utilizzare un system DSN se si usa ODBC. Utilizzare un DBS PDO se si usa PDO.';
 $string['dbname'] = 'Nome del database';

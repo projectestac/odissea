@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdisplayoptions'] = 'Aukera itzazu eskura egon behar duten aukera guztiak; dagoeneko diren balioak ez dira aldatuko. Eremu bat baino gehiago aukeratzeko, eutsi CTRL teklari sakatuta.';
+$string['configdisplayoptions'] = 'Aukera itzazu eskuragarri egon behar duten aukera guztiak; dagoeneko diren balioak ez dira aldatuko. Eremu bat baino gehiago aukeratzeko, eutsi CTRL teklari sakatuta.';
 $string['content'] = 'Orriaren edukia';
 $string['contentheader'] = 'Edukia';
 $string['createpage'] = 'Sortu beste orri bat';

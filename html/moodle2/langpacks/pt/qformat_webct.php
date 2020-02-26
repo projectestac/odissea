@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errorsdetected'] = '{$a} erro(s) detetados';
-$string['missinganswer'] = 'Poucas opções :RESPOSTA, :Lx, :Rx opções para a pergunta na linha {$a}. Tem de definir, pelo menos, duas opções de resposta';
+$string['missinganswer'] = 'Poucas opções :RESPOSTA, :Lx, :Rx para a linha {$a} da pergunta. Tem de definir, pelo menos, duas opções de resposta.';
 $string['missingquestion'] = 'Falta etiqueta da pergunta após a linha {$a}';
 $string['pluginname'] = 'Formato WebCT';
 $string['pluginname_help'] = 'O formato WebCT permite importar perguntas de escolha múltipla e de resposta curta guardadas em formato de texto WebCT';

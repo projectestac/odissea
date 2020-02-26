@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calculatedvalue'] = 'Valore calcolato';
-$string['disabledmodel'] = 'Spiacenti, il modello è stato disabilitato dall\'amministratore.';
+$string['disabledmodel'] = 'Il modello è stato disabilitato dall\'amministratore.';
 $string['indicator'] = 'Indicatore';
 $string['insight'] = 'Considerazione';
 $string['insightprediction'] = '{$a} pronostici';

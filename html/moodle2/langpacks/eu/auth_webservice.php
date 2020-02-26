@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_webservicedescription'] = 'Autentifikazio-metodo hau bakarrik erabili behar da web-zerbitzuen bezeroetako kontuetarako.';
+$string['auth_webservicedescription'] = 'Autentifikazio-metodo hau soilik web-zerbitzuen bezeroetako kontuetarako erabili behar da.';
 $string['pluginname'] = 'Web-zerbitzuetarako autentifikazioa';
 $string['privacy:metadata'] = 'Web-zerbitzuetarako autentifikazio-pluginak ez du datu pertsonalik biltzen.';

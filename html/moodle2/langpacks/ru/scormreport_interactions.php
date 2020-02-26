@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Отчет о взаимодействии';
+$string['privacy:metadata:preference:scorm_report_interactions_right'] = 'Отображать ли правильные ответы в отчете о взаимодействии SCORM?';
 $string['questionx'] = 'Вопрос {$a}';
 $string['responsex'] = 'Ответ {$a}';
 $string['resultx'] = 'Результат {$a}';

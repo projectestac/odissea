@@ -16,11 +16,12 @@
 
 require_once("$CFG->dirroot/blocks/courses_vicensvives/lib/vicensvives.php");
 
-function vicensvives_count_licenses($idbook=null) {
+function vicensvives_count_licenses($idcoursebook=null) {
     $result = array();
     $ws = new vicensvives_ws();
 
-    foreach ($ws->licenses($idbook) as $license) {
+    foreach ($ws->licenses($idcoursebook) as $license) {
+
         $idbook = $license->idBook;
         if (!isset($result[$idbook])) {
             $result[$idbook] = new stdClass;
@@ -29,10 +30,10 @@ function vicensvives_count_licenses($idbook=null) {
             $result[$idbook]->teachertotal = 0;
             $result[$idbook]->teacheractivated = 0;
         }
-        if ($license->userType == 'Student') {
+        if (preg_match("/Student/i", $license->userType)) {
             $result[$idbook]->studenttotal++;
             $result[$idbook]->studentactivated += (int) $license->activated;
-        } else if ($license->userType == 'Teacher') {
+        } else if (preg_match("/Teacher/i", $license->userType)) {
             $result[$idbook]->teachertotal++;
             $result[$idbook]->teacheractivated += (int) $license->activated;
         }

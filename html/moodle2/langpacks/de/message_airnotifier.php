@@ -64,5 +64,5 @@ $string['privacy:metadata:usersubsystem'] = 'Das Plugin ist mit dem Nutzer-Subsy
 $string['privacy:subcontext'] = 'Airnotifier-Mitteilungen';
 $string['requestaccesskey'] = 'Zugangsschlüssel abrufen';
 $string['showhide'] = 'Aktivieren/deaktivieren des Geräts';
-$string['sitemustberegistered'] = 'Um den öffentlichen Airnotifier-Server benutzen zu können, ist die Registrierung Ihrer Website bei Moodle.net erforderlich.';
+$string['sitemustberegistered'] = 'Um die öffentliche Airnotifier-Instanz nutzen zu können, muss Ihre Website bei Moodle registriert sein.';
 $string['unknowndevice'] = 'Unbekanntes Gerät';

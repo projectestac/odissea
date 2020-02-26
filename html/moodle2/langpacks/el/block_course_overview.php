@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'Υπάρχουν {$a} που χρήζουν παρακολούθησης';
+$string['activityoverview'] = 'Υπάρχουν {$a} που χρήζουν προσοχής';
 $string['addfavourite'] = 'Προσθήκη αγαπημένου';
 $string['alwaysshowall'] = 'Εμφάνιση όλων πάντα';
 $string['collapseall'] = 'Σύμπτυξη όλων των λιστών μαθημάτων';
@@ -40,7 +40,7 @@ $string['expandall'] = 'Ανάπτυξη όλων των λιστών μαθήμ
 $string['favourites'] = 'Αγαπημένα';
 $string['fullpath'] = 'Όλες οι κατηγορίες και υπο-κατηγορίες';
 $string['help'] = 'Βοήθεια';
-$string['help_help'] = '«Προσαρμογή αυτής της σελίδας», μετά μεταφορά και απόθεση για να αναδιατάξετε τα μαθήματα. Κάντε κλικ στα εικονίδια δραστηριότητας για επισκόπηση';
+$string['help_help'] = '«Προσαρμογή αυτής της σελίδας», μετά μεταφορά & απόθεση για να αναδιατάξετε τα μαθήματα. Κάντε κλικ στα εικονίδια δραστηριότητας για επισκόπηση';
 $string['keepfavourites'] = 'Κρατήστε τα αγαπημένα στη λίστα μαθημάτων';
 $string['keepfavouritesdesc'] = 'Δείξτε μαθήματα στην καρτέλα κύριου μαθήματος, ακόμα και αν βρίσκονται στην καρτέλα αγαπημένων';
 $string['makefavourite'] = 'Κάντε το αγαπημένο σας';
@@ -70,7 +70,7 @@ $string['removefavourite'] = 'Κατάργηση αγαπημένου';
 $string['reorderfullname'] = 'Πλήρες όνομα μαθήματος';
 $string['reorderid'] = 'Αναγνωριστικό μαθήματος';
 $string['reorderiddesc'] = 'Περιγραφή αναγνωριστικού μαθήματος';
-$string['reordernone'] = 'Ρύθμιση μεταφοράς και απόθεσης';
+$string['reordernone'] = 'Ρύθμιση μεταφοράς & απόθεσης';
 $string['reordershortname'] = 'Σύντομο όνομα μαθήματος';
 $string['setmaxcourses'] = 'Μέγιστος αριθμός μαθημάτων';
 $string['setmaxcoursesdesc'] = 'Προεπιλεγμένος μέγιστος αριθμός μαθημάτων που θα εμφανίζονται ταυτόχρονα στο μπλοκ σύνοψης μαθημάτων.';
@@ -87,6 +87,6 @@ $string['unfavourite'] = 'Κατάργηση αγαπημένου';
 $string['userchoosezero'] = '(χρήση προεπιλογής)';
 $string['usersetmaxcourses'] = 'Αριθμός μαθημάτων που θα εμφανίζονται:';
 $string['view_edit_profile'] = '(Εμφάνιση και επεξεργασία του προφίλ σας.)';
-$string['welcome'] = 'Καλώς ήρθατε {$a}';
-$string['youhavemessages'] = 'Έχετε {$a} αδιάβαστα';
-$string['youhavenomessages'] = 'Δεν έχετε αδιάβαστα';
+$string['welcome'] = 'Καλώς ορίσατε {$a}';
+$string['youhavemessages'] = 'Έχετε {$a} μη αναγνωμένα';
+$string['youhavenomessages'] = 'Δεν έχετε κανένα μη αναγνωμένο';

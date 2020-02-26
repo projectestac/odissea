@@ -25,4 +25,5 @@
 $string['pluginname'] = 'Font family';
 $string['settings'] = 'Font family settings';
 $string['fontselectlist'] = 'Available fonts list';
+$string['privacy:metadata'] = 'The Atto fontfamily plugin does not store any personal data.';
 

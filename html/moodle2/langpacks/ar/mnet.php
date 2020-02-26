@@ -43,6 +43,7 @@ $string['logs'] = 'سجلات';
 $string['mnet'] = 'شبكة مودل';
 $string['mnetservices'] = 'خدمات';
 $string['mnetsettings'] = 'إعدادات شبمة مودل';
+$string['name'] = 'الاسم';
 $string['net'] = 'شبكة';
 $string['networksettings'] = 'إعدادات الشبكة';
 $string['never'] = 'ابداَ';

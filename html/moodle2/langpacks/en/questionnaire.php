@@ -285,6 +285,7 @@ $string['missingquestions'] = 'Please answer required questions:';
 $string['missingrequired'] = 'Question {$a} cannot be used in this feedback section because it is not required.';
 $string['modulename'] = 'Questionnaire';
 $string['modulename_help'] = 'The questionnaire module allows you to construct surveys using a variety of question types, for the purpose of gathering data from users.';
+$string['modulename_link'] = 'mod/questionnaire/view';
 $string['modulenameplural'] = 'Questionnaires';
 $string['movedisabled'] = 'This item cannot be moved';
 $string['myresponses'] = 'All your responses';

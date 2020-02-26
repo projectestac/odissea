@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activemethodinfo'] = 'Η μέθοδος «{$a->method}» επιλέχτηκε ως η ενεργή μέθοδος βαθμολόγησης για την περιοχή «{$a->area}».';
+$string['activemethodinfo'] = 'Η μέθοδος «{$a->method}» επιλέχθηκε ως η ενεργή μέθοδος βαθμολόγησης για την περιοχή «{$a->area}».';
 $string['activemethodinfonone'] = 'Δεν υπάρχει προχωρημένη μέθοδος βαθμολόγησης επιλεγμένη για την περιοχή «{$a->area}». Θα χρησιμοποιηθεί η απλή άμεση βαθμολόγηση.';
 $string['changeactivemethod'] = 'Αλλαγή ενεργής μεθόδου βαθμολόγησης σε';
 $string['clicktoclose'] = 'κλικ για κλείσιμο';

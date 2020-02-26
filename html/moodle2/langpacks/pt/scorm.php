@@ -35,7 +35,7 @@ $string['aicchacpkeepsessiondata'] = 'Sessão de dados AICC HACP';
 $string['aicchacpkeepsessiondata_desc'] = 'Período de tempo em dias para manter os dados da sessão externa AICC HACP (uma configuração alta vai encher a tabela com dados antigos, mas pode ser útil quando estiver depurando)';
 $string['aicchacptimeout'] = 'Tempo limite AICC HACP';
 $string['aicchacptimeout_desc'] = 'Período de tempo em minutos que uma sessão externa AICC HACP pode permanecer aberta';
-$string['aiccuserid'] = 'passar ID numérico do utilizador ao AICC';
+$string['aiccuserid'] = 'Passar ID numérico do utilizador ao AICC';
 $string['aiccuserid_desc'] = 'A norma AICC para nomes de utilizador é bastante restritiva, em comparação com o Moodle, e permite apenas caracteres alfanuméricos, hífen e underscore. Os pontos, espaços e o símbolo @ não são permitidos. Se ativar esta opção, serão passados os ID dos utilizadores para o pacote AICC, e não os seus nomes de utilizadores.';
 $string['aliasonly'] = 'Ao selecionar um ficheiro \'imsmanifest.xml\' de um repositório, deverá usar um alias/atalho para este ficheiro.';
 $string['allowapidebug'] = 'Ativar depuração e rastreio da API (configure a máscara de captura com apidebugmask)';
@@ -124,7 +124,7 @@ $string['displaydesc'] = 'Esta opção define se o Pacote SCORM é exibido numa 
 $string['displaysettings'] = 'Exibir configurações';
 $string['dnduploadscorm'] = 'Adicionar um pacote SCORM';
 $string['domxml'] = 'Biblioteca externa DOMXML';
-$string['duedate'] = 'Data de fim';
+$string['duedate'] = 'Data limite';
 $string['element'] = 'Elemento';
 $string['enter'] = 'Entrar';
 $string['entercourse'] = 'Entrar';
@@ -159,6 +159,11 @@ $string['forcejavascript'] = 'Forçar utilizadores a ativar JavaScript';
 $string['forcejavascript_desc'] = 'Se ativar esta opção (recomendado), o acesso a objetos SCORM será impedido quando o JavaScript não é suportado ou não está ativo no navegador dos utilizadores. Se esta opção estiver desativada, o utilizador pode visualizar o SCORM, mas a comunicação API irá falhar e as informações sobre a nota não serão guardadas.';
 $string['forcejavascriptmessage'] = 'É necessário ter o JavaScript ativo para ver este objeto. Ative o JavaScript no seu navegador e tente de novo.';
 $string['forcenewattempts'] = 'Forçar nova tentativa';
+$string['forcenewattempts_help'] = 'Existem 3 opções:
+
+* Não - Se uma tentativa anterior for concluída, aprovada ou reprovada, o aluno terá a opção de entrar no modo de revisão ou iniciar uma nova tentativa.
+* Quando a tentativa anterior foi concluída, foi aprovada ou reprovada - Depende do pacote SCORM definir o estado de \'concluída\', \'aprovada\' ou \'reprovada\'.
+* Sempre - Cada reentrada na atividade SCORM gerará uma nova tentativa e o aluno não retornará ao mesmo ponto que alcançou na tentativa anterior.';
 $string['found'] = 'Manifesto encontrado';
 $string['frameheight'] = 'Altura da frame ou janela.';
 $string['framewidth'] = 'Largura da frame ou janela.';
@@ -376,7 +381,7 @@ $string['slashargs'] = 'AVISO: os argumentos slash estão desativados neste site
 $string['stagesize'] = 'Tamanho da janela';
 $string['stagesize_help'] = 'Essas duas opções definem o largura e altura da janela de exibição dos objetos de aprendizagem.';
 $string['started'] = 'Iniciado em';
-$string['status'] = 'Mostrar barra de estado';
+$string['status'] = 'Estado';
 $string['statusbar'] = 'Mostrar barra de estado';
 $string['student_response'] = 'Resposta';
 $string['subplugintype_scormreport'] = 'Relatório';

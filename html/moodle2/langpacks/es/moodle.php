@@ -154,7 +154,7 @@ $string['answer'] = 'Respuesta';
 $string['any'] = 'Cualquiera';
 $string['appearance'] = 'Apariencia';
 $string['approve'] = 'Aprobar';
-$string['areyousure'] = '¿Està seguro?';
+$string['areyousure'] = '¿Está seguro?';
 $string['areyousuretorestorethis'] = '¿Está seguro de que desea continuar?';
 $string['areyousuretorestorethisinfo'] = 'Más adelante en este proceso tendrá la opción de agregar esta copia a otro curso o utilizarla para crear un curso completamente nuevo.';
 $string['asc'] = 'Ascendente';
@@ -293,7 +293,7 @@ $string['confirmcoursemove'] = '¿Está seguro de que desea mover este curso ({$
 $string['confirmdeletesection'] = '¿Está absolutamente seguro que desea borrar completamente "{$a}" y todas las actividades que contiene?';
 $string['confirmed'] = 'Registro confirmado';
 $string['confirmednot'] = 'Su registro no se ha confirmado aún. Por favor compruebe su correo electrónico.';
-$string['considereddigitalminor'] = 'Eres demasiado joven para crearte una cuenta en este sitio.';
+$string['considereddigitalminor'] = 'Es muy joven para crear una cuenta en esta página.';
 $string['content'] = 'Contenido';
 $string['continue'] = 'Continuar';
 $string['continuetocourse'] = 'Haga clic aquí para entrar a su curso';
@@ -541,7 +541,7 @@ $string['deselectall'] = 'No seleccionar ninguno';
 $string['detailedless'] = 'Menos detalle';
 $string['detailedmore'] = 'Más detalle';
 $string['digitalminor'] = 'Menor digital';
-$string['digitalminor_desc'] = 'Para crear una cuenta en este sitio por favor solicite a su padre o tutor que contacte con la siguiente persona.';
+$string['digitalminor_desc'] = 'Por favor solicitele a su padre o tutor que contacte a:';
 $string['directory'] = 'Directorio';
 $string['disable'] = 'Deshabilitar';
 $string['disabledcomments'] = 'Los comandos están desactivados';
@@ -1129,24 +1129,7 @@ $string['loginaspasswordexplain'] = '<p>Debe introducir la "loginas password" es
 $string['login_failure_logs'] = 'Registro de fallos de acceso';
 $string['loginguest'] = 'Entrar como invitado';
 $string['loginsite'] = 'Entrar al sitio';
-$string['loginsteps'] = 'Hola. Para acceder al sistema tómese un minuto para
-crear una cuenta.
-Cada curso puede disponer de una "clave de acceso"
-que sólo tendrá que usar la primera vez.
-Estos son los pasos:
-<ol>
-<li>Rellene el <a href="{$a}">Formulario de Registro</a> con sus datos.</li>
-<li>El sistema le enviará un correo para verificar que su dirección sea correcta.</li>
-<li>Lea el correo y confirme su matrícula.</li>
-<li>Su registro será confirmado y usted podrá acceder al curso.</li>
-<li>Seleccione el curso en el que desea participar.</li>
-<li>Si algún curso en particular le solicita una "contraseña de acceso"
-utilice la que le facilitaron cuando se matriculó.
-Así quedará matriculado.</li>
-<li>A partir de ese momento no necesitará utilizar más que su nombre de usuario y contraseña
-en el formulario de la página
-para entrar a cualquier curso en el que esté matriculado.</li>
-</ol>';
+$string['loginsteps'] = 'Para acceder a esta página debe crear una cuenta primero.';
 $string['loginstepsnone'] = '<p>¡Hola!</p>
 <p>Para acceder a todos los cursos necesita crear una cuenta.</p>
 <p>Todo lo que tiene que hacer es inscribirse en esta página.</p>
@@ -1198,7 +1181,7 @@ $string['maxnumcoursesincombo'] = 'Examinar <a href="{$a->link}">{$a->numberofco
 $string['maxsectionslimit'] = 'No se puede crear nueva sección ya que excedería el número máximo de secciones permitidas para este curso ({$a}).';
 $string['maxsize'] = 'Tamaño máximo: {$a}';
 $string['maxsizeandareasize'] = 'El tamaño máximo para los archivos nuevos es: {$a->size},para el límite global es: {$a->areasize}';
-$string['maxsizeandattachments'] = 'Tamaño máximo para nuevos archivos: {$a->size}, número máximo de archivos adjuntos: {$a->attachments}';
+$string['maxsizeandattachments'] = 'Tamaño máximo de archivo: {$a->size}, número máximo de archivos: {$a->attachments}';
 $string['maxsizeandattachmentsandareasize'] = 'El tamaño máximo para los archivos nuevos es: {$a->size}, el número máximo de archivos adjuntos es: {$a->attachments}, el límite global es: {$a->areasize}';
 $string['memberincourse'] = 'Personas en el curso';
 $string['messagebody'] = 'Cuerpo del mensaje';
@@ -1455,7 +1438,7 @@ $string['notifyloginfailuresmessageend'] = 'Puede ver estos logs en {$a}';
 $string['notifyloginfailuresmessagestart'] = 'Listado de intentos fallidos de acceso a {$a} desde que se le envió la última notificación';
 $string['notifyloginfailuressubject'] = '{$a} :: Notificación de intentos de identificación fallidos';
 $string['notincluded'] = 'No incluido';
-$string['notingroup'] = 'Lo sentimos, para ver esta actividad necesita ser miembro del grupo.';
+$string['notingroup'] = 'Lo sentimos,  necesita ser miembro de un grupo para ver esta página.';
 $string['notpublic'] = '¡No es público!';
 $string['nousersfound'] = 'No se encuentran usuarios';
 $string['nousersmatching'] = 'No se encontraron usuarios con \'{$a}\'';
@@ -1886,7 +1869,7 @@ $string['sitehome'] = 'Inicio del sitio';
 $string['sitelegacyfiles'] = 'Archivos heredados del sitio';
 $string['sitelogs'] = 'Registros del sitio';
 $string['sitemessage'] = 'Mensaje usuarios';
-$string['sitenews'] = 'Novedades del sitio';
+$string['sitenews'] = 'Anuncios de la página';
 $string['sitepages'] = 'Páginas del sitio';
 $string['sitepartlist'] = 'No dispone de los permisos necesarios para ver la lista de participantes';
 $string['sitepartlist0'] = 'Para poder ver la lista de participantes, usted debe ser un profesor del sitio';

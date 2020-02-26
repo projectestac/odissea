@@ -115,6 +115,22 @@ $string['download'] = 'Download';
 $string['downloadfailed'] = 'Downloading the requested library failed.';
 $string['downloadtitle'] = 'Download this content as a H5P file.';
 $string['editor'] = 'Editor';
+$string['emailconfirmbody'] = 'Hi {$a->username},
+
+Thank you for submitting your answers to \'{$a->hvpname}\' in course \'{$a->coursename}\'.
+
+This message confirms that your answers have been saved.
+
+You can access this H5P at {$a->hvpurl}.';
+$string['emailconfirmsmall'] = 'Thank you for submitting your answers to \'{$a->hvpname}\\';
+$string['emailconfirmsubject'] = 'Submission confirmation: {$a->hvpname}';
+$string['emailnotifybody'] = 'Hi {$a->username},
+
+{$a->studentname} has completed \'{$a->hvpname}\' ({$a->hvpurl}) in course \'{$a->coursename}\'.
+
+You can review this attempt at {$a->hvpreporturl}.';
+$string['emailnotifysmall'] = '{$a->studentname} has completed {$a->hvpname}. See {$a->hvpreporturl}';
+$string['emailnotifysubject'] = '{$a->studentname} has completed {$a->hvpname}';
 $string['embed'] = 'Embed';
 $string['embedloginfailed'] = 'You do not have access to this content. Try logging in.';
 $string['embedtitle'] = 'View the embed code for this content.';
@@ -147,6 +163,8 @@ $string['hubisdisabled'] = 'The hub is disabled. You can re-enable it in the H5P
 $string['hubisdisableduploadlibraries'] = 'The H5P Hub has been disabled until this problem can be resolved. You may still upload libraries through the "H5P Libraries" page.';
 $string['hubsettingsheader'] = 'Content Types';
 $string['hvp:addinstance'] = 'Create new H5P activites';
+$string['hvp:emailconfirmsubmission'] = 'Get a confirmation message when submitting';
+$string['hvp:emailnotifysubmission'] = 'Get a notification message when an attempt is submitted';
 $string['hvp:getcachedassets'] = 'Required for viewing H5P activities';
 $string['hvp:getembedcode'] = 'View H5P embed code when \'controlled by permission\' option is set';
 $string['hvp:getexport'] = 'Download .h5p file when \'controlled by permission\' option is set';
@@ -221,6 +239,8 @@ $string['maximumgradeerror'] = 'Please enter a valid positive integer as the max
 $string['maxpostsizetoosmall'] = 'Your PHP max post size is quite small. With your current setup, you may not upload files larger than {$a->%number} MB. This might be a problem when trying to upload H5Ps, images and videos. Please consider to increase it to more than 5MB';
 $string['maxscore'] = 'Maximum Score';
 $string['maxuploadsizetoosmall'] = 'Your PHP max upload size is quite small. With your current setup, you may not upload files larger than {$a->%number} MB. This might be a problem when trying to upload H5Ps, images and videos. Please consider to increase it to more than 5MB.';
+$string['messageprovider:confirmation'] = 'Confirmation of your own H5P submissions';
+$string['messageprovider:submission'] = 'Notification of H5P submissions';
 $string['missingcontentfolder'] = 'A valid content folder is missing';
 $string['missingcontentuserdata'] = 'Error: Could not find content user data';
 $string['missingcoreversion'] = 'The system was unable to install the <em>{$a->%component}</em> component from the package, it requires a newer version of the H5P plugin. This site is currently running version {$a->%current}, whereas the required version is {$a->%required} or higher. You should consider upgrading and then try again.';

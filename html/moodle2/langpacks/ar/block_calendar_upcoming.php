@@ -25,5 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['calendar_upcoming:addinstance'] = 'إضافة صندوق جديد للأحداث القادمة';
+$string['calendar_upcoming:myaddinstance'] = 'إضافة صندوق جديد على لوحة التحكم للأحداث القادمة';
 $string['gotocalendar'] = '...اذهب إلى التقويم';
 $string['pluginname'] = 'الأحداث القادمة';
+$string['privacy:metadata'] = 'صندوق الأحداث القادمة يعرض فقط بيانات التقويم الموجودة.';

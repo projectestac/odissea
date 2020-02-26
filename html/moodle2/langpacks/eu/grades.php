@@ -50,7 +50,7 @@ $string['aggregateonlygraded_help'] = 'Hutsik dagoen kalifikazioa kalifikazio-li
 Ezarpen honek adierazten du hutsik dauden kalifikazioak agregazioan sartzen ez diren ala gutxieneko kalifikaziotzat hartzen diren, adibidez 0 0tik 100era kalifikatzen den zeregin batean.';
 $string['aggregateoutcomes'] = 'Sartu ikaste-emaitzak agregazioan';
 $string['aggregateoutcomes_help'] = 'Gaituz gero, ikaste-emaitzak agregazioan sartzen dira. Honen ondorioz, kategoriako guztirakoa espero ez zena izan daiteke.';
-$string['aggregatesonly'] = 'Aldatu agregatutakoetara bakarrik';
+$string['aggregatesonly'] = 'Aldatu agregatutakoetara soilik';
 $string['aggregatesubcatsupgradedgrades'] = 'Oharra: "Agregazioan azpikategoriak sartu" agregazio-metodoaren ezarpena ezabatu da eguneraketa egitearekin batera. Aurretik "Agregazioan azpikategoriak sartu" ikastaro honetan erabiltzen zenez, gomendagarria da aldaketa honek kalifikazio-liburuan izandako eragina aztertzea.';
 $string['aggregatesum'] = 'Naturala';
 $string['aggregateweightedmean'] = 'Kalifikazioen batez besteko ponderatua';
@@ -217,7 +217,7 @@ $string['exportfeedback'] = 'Sartu feedbacka esportatzean';
 $string['exportfeedback_desc'] = 'Esportatzerakoan hau baliogabetu daiteke.';
 $string['exportformatoptions'] = 'Esportatzeko formatuaren aukerak';
 $string['exportonlyactive'] = 'Utzi kanpoan kontua etenda duten erabiltzaileak';
-$string['exportonlyactive_help'] = 'Inportazioan bakarrik sartzen dira matrikula aktibo eta etenda ez duten ikasleak';
+$string['exportonlyactive_help'] = 'Soilik sartu inportazioan matrikula aktiboa eta etenda ez duten ikasleak';
 $string['exportplugins'] = 'Esportatu pluginak';
 $string['exportsettings'] = 'Esportatu ezarpenak';
 $string['exportto'] = 'Esportatu hona:';
@@ -309,7 +309,7 @@ $string['gradeitemsettings'] = 'Kalifikazio-elementuen ezarpenak';
 $string['gradeitemsinc'] = 'Sartu beharreko kalifikazio-elementuak';
 $string['gradeletter'] = 'Kalifikazio-letra';
 $string['gradeletter_help'] = 'Kalifikazio-letrak kalifikazio-tarteak adierazteko erabiltzen diren letrak, A, B, C,... edo hitzak dira, adibidez, Ezin hobea, Ikaragarria, Nahikoa,...';
-$string['gradeletternote'] = 'Kalifikazio-letra bat ezabatzeko, bakarrik letra horren<br /> hiru testu-eremuetako bat hustu eta aldaketa gorde.';
+$string['gradeletternote'] = 'Kalifikazio-letra bat ezabatzeko, letra horren<br /> hiru testu-eremuetako bat hustu eta aldaketa gorde ezazu.';
 $string['gradeletteroverridden'] = 'Lehenetsitako kalifikazio-letrak salbuespena dago une honetan.';
 $string['gradeletters'] = 'Kalifikazio-letrak';
 $string['gradelocked'] = 'Kalifikazioa blokeatuta dago';
@@ -333,7 +333,7 @@ $string['gradepointmax_validateerror'] = 'Balio honek 1 eta 10000 zenbakien arte
 $string['gradepreferences'] = 'Kalifikazioen hobespenak';
 $string['gradepreferenceshelp'] = 'Kalifikazio-hobespenei buruzko laguntza';
 $string['gradepublishing'] = 'Gaitu argitaratzea';
-$string['gradepublishing_help'] = 'Kalifikazioak argitaratzea Moodle-n sartu gabe kalifikazioak URL bitartez inportatu eta esportatzeko modu bat da. Gaituz gero, kudeatzaileek eta kalifikazioak argitaratzeko baimenak dituzten erabiltzaileek (modu lehenetsian kudeatzaile rola duten erabiltzaileek bakarrik) kalifikazio-liburuan kalifikazioen esportazioaren ezarpenetan argitaratzeko aukera izango dute.';
+$string['gradepublishing_help'] = 'Kalifikazioak argitaratzea Moodle-n sartu gabe kalifikazioak URL bitartez inportatu eta esportatzeko modu bat da. Gaituz gero, kudeatzaileek eta kalifikazioak argitaratzeko baimenak dituzten erabiltzaileek (modu lehenetsian soilik kudeatzaile rola duten erabiltzaileek) kalifikazio-liburuan kalifikazioen esportazioaren ezarpenetan argitaratzeko aukera izango dute.';
 $string['gradepublishinglink'] = 'Jaitsi: {$a}';
 $string['gradereport'] = 'Kalifikazio-txostena';
 $string['graderreport'] = 'Kalifikatzaile-txostena';
@@ -341,7 +341,7 @@ $string['grades'] = 'Kalifikazioak';
 $string['gradesforuser'] = '{$a->user} erabiltzailearen kalifikazioak';
 $string['gradesmoduledeletionpendingwarning'] = 'Oharra: Jarduerak ezabatzen ari dira! Kalifikazio batzuk ezabatuak izango dira.';
 $string['gradesmoduledeletionprefix'] = '[Ezabaketa martxan da]';
-$string['gradesonly'] = 'Aldatu bakarrik kalifikazioetara';
+$string['gradesonly'] = 'Aldatu soilik kalifikazioetara';
 $string['gradessettings'] = 'kalifikazioen ezarpenak';
 $string['gradetype'] = 'Kalifikazio-mota';
 $string['gradetype_help'] = '4 kalifikazio mota daude:
@@ -349,7 +349,7 @@ $string['gradetype_help'] = '4 kalifikazio mota daude:
 * Bat ere ez - Ezin da kalifikatu
 * Balioa - Zenbakizko balio bat, gehieneko eta gutxienekoarekin
 * Eskala - Zerrenda bateko elementu bat
-* Testua - Feedback-a bakarrik
+* Testua - Feedback-a soilik
 
 Soilik balioa eta eskala motako kalifikazioak batu daitezke. Jarduera baten kalifikaziorako kalifikazio-mota jardueraren ezarpenek orrian aukeratzen da.';
 $string['gradevaluetoobig'] = 'Kalifikazioren batek gehienez baimendutako {$a} balioa baino balio handiagoa du.';
@@ -435,7 +435,7 @@ $string['items'] = 'Elementuak';
 $string['itemsedit'] = 'Editatu kalifikazio-elementua';
 $string['keephigh'] = 'Mantendu altuena';
 $string['keephighestvalues'] = 'Mantendu baliorik altuenak: {$a}';
-$string['keephigh_help'] = '<p>Ezarriz gero, X kalifikazio altuenak bakarrik gordeko dira, eta X izango da aukera honetarako ezarritako balioa.</p>';
+$string['keephigh_help'] = '<p>Ezarriz gero, soilik X kalifikazio altuenak gordeko dira, eta X izango da aukera honetarako ezarritako balioa.</p>';
 $string['keymanager'] = 'Giltzen kudeatzailea';
 $string['lessthanmin'] = '{$a->itemname}-n {$a->username}-ri emandako kalifikazioa baimendutako txikiena baino baxuagoa da';
 $string['letter'] = 'Letra';
@@ -678,7 +678,7 @@ $string['recalculatinggrades'] = 'Kalifikazioak berriz kalkulatzen';
 $string['recovergradesdefault'] = 'Berreskuratu kalifikazioetako balio lehenetsiak';
 $string['recovergradesdefault_help'] = 'Modu lehenetsian kalifikazio zaharrak berreskuratu ikasle bat ikastaro batean berriz matrikulatzean.';
 $string['refreshpreview'] = 'Freskatu aurreikuspena';
-$string['regradeanyway'] = 'Kalifikatu berriz hala ere';
+$string['regradeanyway'] = 'Berriz kalifikatu hala ere';
 $string['removeallcoursegrades'] = 'Ezabatu kalifikazio guztiak';
 $string['removeallcoursegrades_help'] = 'Markatuz gero, kalifikazio-liburura eskuz gehitutako kalifikazio-elementu guztiak ezabatuko dira, baliogabetutakoak, kanpoan utzitako, ezkutatutako eta blokeatutako kalifikazioak euren kalifikazio eta datuekin batera. Soilik jarduerekin lotutako kalifikazio-elementuak mantenduko dira.';
 $string['removeallcourseitems'] = 'Ezabatu elementu eta kategoria guztiak';
@@ -744,9 +744,9 @@ $string['showhiddenitems_help'] = 'Ezkutuan dauden kalifikazio-elementuak guztiz
 * Ezkutuan data heldu arte - "ezkutuan data heldu arte" zehaztuta duten kalifikazio-elementua guztiz ezkutuan dago data heldu arte, eta ondoren elementua guztiz erakutsiko da.
 * Ez erakutsi - Ezkutuan dauden elementuak guztiz ezkutuan daude.';
 $string['showhiddenuntilonly'] = 'Ezkutuan data heldu arte';
-$string['showingaggregatesonly'] = 'Erakutsi batez bestekoak bakarrik';
+$string['showingaggregatesonly'] = 'Erakutsi batez bestekoak soilik';
 $string['showingfullmode'] = 'Ikuspegi osoa erakusten';
-$string['showinggradesonly'] = 'Kalifikazioak bakarrik erakusten';
+$string['showinggradesonly'] = 'Soilik kalifikazioak erakusten';
 $string['showlettergrade'] = 'Erakutsi kalifikazio-letrak';
 $string['showlettergrade_help'] = 'Kalifikazio-letren zutabea erakutsi ala ez';
 $string['showlocks'] = 'Erakutsi blokeoak';
@@ -755,7 +755,7 @@ $string['shownohidden'] = 'Ez erakutsi';
 $string['shownooutcomes'] = 'Ezkutatu ikaste-emaitzak';
 $string['shownumberofgrades'] = 'Erakutsi kalifikazio-kopurua batez bestekoetan';
 $string['shownumberofgrades_help'] = 'Gaituz gero, batez bestekoa kalkulatzean erabilitako kalifikazioa kopurua parentesi artean erakusten da batez besteko  bakoitzaren ondoan.';
-$string['showonlyactiveenrol'] = 'Erakutsi bakarrik matrikula aktiboak';
+$string['showonlyactiveenrol'] = 'Erakutsi soilik matrikula aktiboak';
 $string['showonlyactiveenrol_help'] = 'Ezarpen honek zehazten du kalifikazio-txostenean matrikulatutako erabiltzaile aktiboak soilik erakutsiko diren edo ez. Gaituz gero, kontua etenda duten erabiltzaileak ez dira kalifikazio-liburuan erakutsiko.';
 $string['showpercentage'] = 'Erakutsi portzentajea';
 $string['showpercentage_help'] = 'Erakutsi ehunekoaren balioa kalifikazio-elementu bakoitzerako ala ez';

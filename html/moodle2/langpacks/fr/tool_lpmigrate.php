@@ -44,7 +44,7 @@ $string['errorwhilemigratingmodulecompetencywithexception'] = 'Erreur lors de la
 $string['excludethese'] = 'Exclure';
 $string['explanation'] = 'Cet outil peut être utilisé pour mettre à jour un référentiel de compétences vers une nouvelle version. Il recherche dans les cours et les activités les compétences utilisant l\'ancien référentiel et met à jour les liens de sorte à pointer vers le nouveau référentiel.
 
-Il n\'est pas recommandé de modifier directement l\'ancien référentiel de compétences, car cela modifierait toutes les compétences qu\'ils ont déjà été marquées comme acquises dans les plans de formation des utilisateurs.
+Il n\'est pas recommandé de modifier directement l\'ancien référentiel de compétences, car cela modifierait toutes les compétences qui ont déjà été marquées comme acquises dans les plans de formation des utilisateurs.
 
 Une utilisation typique de cet outil commence par importer la nouvelle version d\'un référentiel, cacher l\'ancienne version, puis utiliser cet outil pour migrer les nouveaux cours vers le nouveau référentiel.';
 $string['findingcoursecompetencies'] = 'Recherche des compétences de cours';

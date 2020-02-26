@@ -40,7 +40,9 @@ Ga naar volgend webadres om je account te bevestigen:
 In de meeste e-mailprogramma\'s zou dit als een blauwe link moeten verschijnen waarop je gewoon kan klikken. Als dat niet werkt, knip en plak het adres dan in de adresbalk bovenaan je webbrowser.
 
 Als je hulp nodig hebt, contacteer dan de site-beheerder,
-{$a->admin}';
+{$a->admin}
+
+Als je geen nieuwe account hebt aangevraagd, dan is het mogelijk dat iemand misbruik wil maken van je account. Contacteer dan onmiddellijk de site-beheerder.';
 $string['confirmaccountemailsubject'] = '{$a}: accountbevestiging';
 $string['confirmationinvalid'] = 'De bevestigingslink is ongeldig of verlopen. Start het login proces opnieuw om een nieuwe bevestigingslnk te genereren.';
 $string['confirmationpending'] = 'Deze account wacht op bevestiging via e-mail';
@@ -55,7 +57,9 @@ Ga om deze vraag te te bevestigen en deze accounts te koppelen naar volgend weba
 In de meeste e-mailprogramma\'s zou dit als een blauwe link moeten verschijnen waarop je gewoon kan klikken. Als dat niet werkt, knip en plak het adres dan in de adresbalk bovenaan je webbrowser.
 
 Als je hulp nodig hebt, contacteer dan de site-beheerder,
-{$a->admin}';
+{$a->admin}
+
+Als je geen nieuwe account hebt aangevraagd, dan is het mogelijk dat iemand misbruik wil maken van je account. Contacteer dan onmiddellijk de site-beheerder.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: bevestiging gekoppelde aanmelding';
 $string['createaccountswarning'] = 'Met deze authenticatieplugin kunnen gebruikers zelf een account maken op jouw site. Misschien wil je de instelling "authpreventaccountcreation" inschakelen om dit te voorkomen wanneer je deze plugin gebruikt.';
 $string['createnewlinkedlogin'] = 'Koppel een nieuwe account ({$a})';

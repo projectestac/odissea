@@ -30,5 +30,5 @@ $string['privacy:metadata'] = 'atto_collapse pluginak ez du datu pertsonalik bil
 $string['settings'] = 'Tolestu tresna-barraren ezarpenak';
 $string['showfewer'] = 'Erakutsi botoi gutxiago';
 $string['showgroups'] = 'Erakutsi lehenengo (n) taldeak tolestutakoan.';
-$string['showgroups_desc'] = 'Tresna-barra tolestutakoan (hala dago hasieran) talde kopuru hau erakutsiko da bakarrik.';
+$string['showgroups_desc'] = 'Tresna-barra tolestutakoan (hala dago hasieran) soilik lehenengo talde hauek erakutsiko dira.';
 $string['showmore'] = 'Erakutsi botoi gehiago';

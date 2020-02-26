@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activities'] = 'Activitats';
 $string['addcategory'] = 'Afegeix una categoria';
 $string['addcategoryerror'] = 'No s\'ha pogut afegir la categoria.';
-$string['addexceptionerror'] = 'S\'ha produït un error en afegir l\'excepció per a userid:gradeitem';
+$string['addexceptionerror'] = 'S\'ha produït un error en sobreescriure per a userid:gradeitem';
 $string['addfeedback'] = 'Afegeix retroacció';
 $string['addgradeletter'] = 'Afegeix una lletra de qualificació';
 $string['addidnumbers'] = 'Afegeix números ID';

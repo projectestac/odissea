@@ -25,9 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['capabilitylabel'] = 'القدرة :';
 $string['capabilityreport'] = 'مراجعة الإمكانات';
+$string['changeoverrides'] = 'تغيير التجاوزات في هذا السياق';
+$string['changeroles'] = 'تغيير تعريفات الدور';
+$string['eventreportviewed'] = 'النظر إلى التقرير';
 $string['forroles'] = 'للأدوار {$a}';
 $string['getreport'] = 'الحصول على النظرة العامة';
+$string['intro'] = 'يبين هذا التقرير القدرة على وجه الخصوص ، ما إذا كان صاحب القدرة لديه في تعريف كل دور (أو مجموعة مختارة من الأدوار) ، و في كل مكان في الموقع حيث أن هذه القدرة ممكن تجاوزها .';
 $string['pluginname'] = 'مراجعة الإمكانات';
+$string['privacy:metadata'] = 'لا يخزن المكون الإضافي Capability overview لأي بيانات شخصية.';
 $string['reportforcapability'] = 'تقرير الإمكانية \'{$a}';
 $string['reportsettings'] = 'إعدادات التقرير';
+$string['roleslabel'] = 'الأدوار :';

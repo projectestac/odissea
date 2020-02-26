@@ -16,6 +16,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version  = 2016072900;
+$plugin->version  = 2018090100;
 $plugin->requires = 2014111000;
 $plugin->component = 'local_wsvicensvives';

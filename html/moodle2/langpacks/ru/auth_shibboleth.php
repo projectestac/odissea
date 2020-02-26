@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_shib_auth_logo'] = 'Логотип метода аутентификации';
+$string['auth_shib_auth_logo_description'] = 'Предоставьте знакомый  вашим пользователям логотип для метода аутентификации Shibboleth. Это может быть логотип вашей федерации Shibboleth, например <tt> SWITCHaai Login </ tt> или <tt> InCommon Login </ tt> или аналогичные.';
 $string['auth_shib_auth_method'] = 'Название метода аутентификации';
 $string['auth_shib_auth_method_description'] = 'Укажите название для метода аутентификации Shibboleth, которое знакомо вашим пользователям. Это может быть название вашего объединения Shibboleth, например <tt>SWITCHaai Login</tt> или <tt>InCommon Login</tt> или что-то подобное.';
 $string['auth_shibbolethdescription'] = 'При использовании этого метода пользователи создаются и аутентифицируются с использованием <a href="http://shibboleth.internet2.edu/">Shibboleth</a>.<br />Обязательно прочтите в файле <a href="../auth/shibboleth/README.txt">README (на английском языке)</a> о том, как настроить Moodle с Shibboleth.';

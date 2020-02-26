@@ -35,4 +35,4 @@ $string['orphanedwarning'] = 'Ces activités ne sont pas accessibles par les uti
 $string['pluginname'] = 'Activité unique';
 $string['privacy:metadata'] = 'Le plugin format activité unique n\'enregistre aucune donnée personnelle.';
 $string['sectionname'] = '';
-$string['warningchangeformat'] = 'Lorsque vous changez le format d\'un cours existant au format « Activité simple », assurez-vous d\'avoir supprimé du cours toutes les activités supplémentaires, y compris les « Annonces ». La structure des sections pourrait être modifiée.';
+$string['warningchangeformat'] = 'Lorsque vous changez le format d\'un cours existant au format « Activité unique », assurez-vous d\'avoir supprimé du cours toutes les activités supplémentaires, y compris les « Annonces ». La structure des sections pourrait être modifiée.';

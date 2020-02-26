@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['emptytext'] = 'Testu hutsa';
 $string['entiredocument'] = 'Dokumentu osoa';
-$string['imagesmissingalt'] = 'Irudiek ordezko testua behar dute. Abisu hau konpontzeko, gehitu alt ezaugarria zure irudiaren etiketei. Alt etiketa hutsa erabil daiteke baina irudia apaingarria denean eta informaziorik ematen ez duenean bakarrik.';
+$string['imagesmissingalt'] = 'Irudiek ordezko testua behar dute. Abisu hau konpontzeko, gehitu alt ezaugarria zure irudiaren etiketei. Alt etiketa hutsa erabil daiteke baina soilik irudia apaingarria denean eta informaziorik ematen ez duenean .';
 $string['needsmorecontrast'] = 'Testuaren eta atzeko koloreek ez dute nahiko kontraste. Abisu hau konpontzeko, aldatu testuaren edo atzeko koloreak eta hartara errazago irakurri ahal izango da.';
 $string['needsmoreheadings'] = 'Izenbururik gabeko testu luzea dago. Izenburuek pantaila-irakurleak erabiltzen dituzten erabiltzaileei orrian zehar modu errazean nabigatzea ahalbidetuko diete, eta orria erabilgarriago egingo dute guztientzat.';
 $string['nowarnings'] = 'Zorionak, ez da erabilerraztasun-arazorik aurkitu!';

@@ -29,7 +29,7 @@ $string['bynameondate'] = '{$a->name}-(e)k - {$a->date}';
 $string['contentheader'] = 'Edukia';
 $string['display'] = 'Erakutsi karpetaren edukiak';
 $string['display_help'] = 'Karpetako edukiak ikastaroaren orrian erakustea aukeratzen baduzu ez da agertuko aparteko orri baterako esteka eta izenburua ere ez da erakutsiko.
-Deskribapena "Erakutsi deskribapena ikastaroaren orriaren pantailan" aukeratzen bada bakarrik agertuko da.<br />
+Deskribapena soilik "Erakutsi deskribapena ikastaroaren orriaren pantailan" aukeratzen bada agertuko da.<br />
 Kontuan izan, bestalde, kasu honetan ezin dela erabiltzaileen ekintzarik erregistratu.';
 $string['displayinline'] = 'Erakutsi ikastaroaren orrian';
 $string['displaypage'] = 'Aparteko orri batean';
@@ -53,7 +53,7 @@ $string['modulename_help'] = 'Karpeta baliabideak irakasleak karpeta baten barru
 Karpeta bat erabil daiteke
 
 * Gai batekin lotutako fitxategi-multzoak erakusteko, iraganeko azterketa-multzoak edo ikasleek proiektuetan erabilitako irudi-multzoak adibidez.
-* Irakasleen ikastaroko elkartrukerako gune bezala (karpeta ezkutaturik utzita irakasleek bakarrik ikus dezaten)';
+* Irakasleen ikastaroko elkartrukerako gune bezala (karpeta ezkutaturik utzita soilik irakasleek ikus dezaten)';
 $string['modulenameplural'] = 'Karpetak';
 $string['newfoldercontent'] = 'Karpeta berriaren edukia';
 $string['noautocompletioninline'] = 'Jarduera ikustearen osaketa automatikoa ezin da aukeratu "Erakutsi ikastaroaren orrian" aukerarekin batera.';

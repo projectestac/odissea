@@ -37,10 +37,13 @@ Zure kontua berresteko, mesedez hurrengo helbide honetara joan:
 
 {$a->link}
 
-Posta elektronikoko programa gehienetan goiko helbidea esteka urdin bat gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan. Horrela ez bada, helbidea kopiatu eta zure web nabigatzailearen goiko aldean dagoen helbide-barran itsatsi.
+Posta elektronikoko programa gehienetan goiko helbidea esteka urdin gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan beharko zenuke. Horrela ez bada, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi ezazu.
 
 Laguntza behar izanez gero, mesedez jarri harremanetan guneko kudeatzailearekin,
-{$a->admin}';
+{$a->admin}
+
+Kontu-eskaera hau zuk egin ez baduzu, norbait zure kontuan sarbidea lortzeko saiakera egiten egon daiteke.
+Mesedez zure guneko kudeatzailearekin harremanetan jarri zaitez lehen bai lehen.';
 $string['confirmaccountemailsubject'] = '{$a}: kontuaren baieztatzea';
 $string['confirmationinvalid'] = 'Baieztatze-esteka baliogabea da edo iraungi da. Mesedez, hasi berriz sartzeko prozesua kontua baieztatze e-mail berri bat sortzeko.';
 $string['confirmationpending'] = 'Kontu hau posta elektroniko bidezko baiztapenaren zain dago.';
@@ -52,10 +55,13 @@ Eskaera hau baieztatu eta sarbide horiek lotzeko, mesedez sartu hurrengo helbide
 
 {$a->link}
 
-Posta elektronikoko programa gehienetan goiko helbidea esteka urdin bat gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan. Horrela ez bada, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi.
+Posta elektronikoko programa gehienetan goiko helbidea esteka urdin gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan beharko zenuke. Horrela ez bada, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi ezazu.
 
 Laguntza behar baduzu, mesedez jarri harremanetan zure guneko kudeatzailearekin,
-{$a->admin}';
+{$a->admin}
+
+Kontu-eskaera hau zuk egin ez baduzu, norbait zure kontuan sarbidea lortzeko saiakera egiten egon daiteke.
+Mesedez zure guneko kudeatzailearekin harremanetan jarri zaitez lehen bai lehen.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: lotutako sarbidearen baieztatzea';
 $string['createaccountswarning'] = 'Autentifikazio-plugin honek zure gunean kontuak sortzea ahalbidetzen du. Ezarpen hau erabili nahi baduzu baliteke "authpreventaccountcreation" ezarpena gaitzea nahi izatea.';
 $string['createnewlinkedlogin'] = 'Estekatu beste kontu bat ({$a})';

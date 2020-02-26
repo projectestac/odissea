@@ -31,13 +31,13 @@ $string['auth_oauth2description'] = 'Autenticazione basata sullo standard OAuth 
 $string['auth_oauth2settings'] = 'Impostazioni autenticazione OAuth 2';
 $string['confirmaccountemail'] = 'Gentile {$a->fullname},
 
-è stata richiesta la creazione di un nuovo account su \'{$a->sitename}\' con il tuo indirizzo di posta elettronica.
+è stata richiesta la creazione di un nuovo account su \'{$a->sitename}\' che utilizza il tuo indirizzo di posta elettronica.
 
-Per confermare questo account, devi cliccare sul link seguente:
+Per confermare l\'account, devi cliccare sul link seguente:
 
 {$a->link}
 
-Nella maggior parte dei programmi di posta il link dovrebbe apparire colorato di blu ed è sufficiente cliccarlo. Se il link non dovesse essere attivo, copia e incolla il link nella barra dell\'indirizzo del tuo browser e premi il tasto invio.
+Nella maggior parte dei programmi di posta il link apparirà colorato di blu ed è sufficiente cliccarlo. Se il link non dovesse essere attivo, copia e incolla il link nella barra dell\'indirizzo del browser e premi il tasto invio.
 
 Se hai bisogno di aiuto contatta l\'amministratore del sito,
 {$a->admin}';
@@ -46,16 +46,18 @@ $string['confirmationinvalid'] = 'Il link di conferma è scaduto o non è valido
 $string['confirmationpending'] = 'Account in attesa di conferma email';
 $string['confirmlinkedloginemail'] = 'Gentile {$a->fullname},
 
-è stato richiesto di collegare l\'autenticazione di \'{$a->issuername}\' {$a->linkedemail} con il tuo account su {$a->sitename}\' con il tuo indirizzo di posta elettronica.
+è stato richiesto di collegare l\'autenticazione di \'{$a->issuername}\' {$a->linkedemail} con il tuo account su {$a->sitename}\' utilizzando il tuo indirizzo di posta elettronica.
 
 Per confermare la richiesta e collegare le autenticazioni, devi cliccare sul link seguente:
 
 {$a->link}
 
-Nella maggior parte dei programmi di posta il link dovrebbe apparire colorato di blu ed è sufficiente cliccarlo. Se il link non dovesse essere attivo, copia e incolla il link nella barra dell\'indirizzo del tuo browser e premi il tasto invio.
+Nella maggior parte dei programmi di posta il link apparirà colorato di blu ed è sufficiente cliccarlo. Se il link non dovesse essere attivo, copia e incolla il link nella barra dell\'indirizzo del browser e premi il tasto invio.
 
 Se hai bisogno di aiuto contatta l\'amministratore del sito,
-{$a->admin}';
+{$a->admin}
+
+Se non hai richiesto tu il collegamento, allora è possibile che qualcuno stia tentando di compromettere il tuo account. Per favore contatta subito l\'amministratore del sito.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: Conferma collegamento autenticazioni';
 $string['createaccountswarning'] = 'Plugin di autenticazione che consente di creare account sul sito. E\' possibile abilitare l\'impostazione "Evita la creazione di account all\'atto dell\'autenticazione" quando si utilizza il plugin';
 $string['createnewlinkedlogin'] = 'Collega un nuovo account ({$a})';

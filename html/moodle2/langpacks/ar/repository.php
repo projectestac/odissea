@@ -88,6 +88,7 @@ $string['logout'] = 'خروج';
 $string['manage'] = 'إدارة المخزن';
 $string['manageurl'] = 'إدارة';
 $string['manageuserrepository'] = 'أدر مخزن فردي';
+$string['name'] = 'الاسم';
 $string['noenter'] = 'لم يتم إدخال اي شئ';
 $string['nofilesattached'] = 'لم يتم ارفاق ملفات';
 $string['nofilesavailable'] = 'لا توجد ملفات ';

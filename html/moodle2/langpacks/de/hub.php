@@ -100,7 +100,7 @@ $string['errorcron'] = 'Während der Aktualisierung der Registrierung auf "{$a->
 $string['errorcronnoxmlrpc'] = 'XML-RPC muss aktiviert sein, im die Registrierung zu aktualisieren';
 $string['errorhublisting'] = 'Fehler beim Abfragen der Moodle-Hubliste. Versuchen Sie es später noch einmal. ({$a})';
 $string['errorlangnotrecognized'] = 'Der vorgesehene Sprachencode ist Moodle nicht bekannt. Bitte kontaktieren Sie {$a}';
-$string['errorotherhubsnotsupported'] = 'Diese Seite kann nicht mehr für die Registrierung mit anderen Websites als Moodle.net verwendet werden.';
+$string['errorotherhubsnotsupported'] = 'Diese Seite kann nicht mehr für die Registrierung mit anderen Website-Verzeichnissen verwendet werden.';
 $string['errorregistration'] = 'Ein Fehler ist bei der Registrierung aufgetreten. Bitte versuchen Sie es später noch einmal.  ({$a})';
 $string['errorregistrationupdate'] = 'Ein Fehler erschien während des Registrierungsupdates ({$a})';
 $string['errorunpublishcourses'] = 'Wegen eines unerwarteten Fehlers konnten die Kurse von Moodle.net nicht gelöscht werden. Versuchen Sie es später nochmal oder nehmen Sie Kontakt zum Administrator auf.';
@@ -143,7 +143,7 @@ $string['operation'] = 'Aktionen';
 $string['orenterprivatehub'] = 'Alternativ geben Sie eine private URL ein:';
 $string['participantnumberaverage'] = 'Durchschnittsteilnehmerzahl ({$a})';
 $string['policyagreed'] = 'Datenschutzerklärung und Datenverarbeitungsvereinbarung';
-$string['policyagreeddesc'] = 'Ich stimme der <a href="{$a}" target="_blank">Datenschutzerklärung und der Datenverarbeitungsvereinbarung</a> für Moodle.net zu.';
+$string['policyagreeddesc'] = 'Ich stimme der <a href="{$a}" target="_blank">Datenschutzerklärung und der Datenverarbeitungsvereinbarung</a> zu.';
 $string['postaladdress'] = 'Postadresse';
 $string['postaladdress_help'] = 'Postadresse der Seite oder des für die Seite Verantwortlichen.';
 $string['postsnumber'] = 'Anzahl der Nachrichten ({$a})';
@@ -178,6 +178,12 @@ $string['registersite'] = 'Auf {$a} registrieren';
 $string['registerwith'] = 'Zugriff für einen Hub registrieren';
 $string['registerwithmoodleorg'] = 'Website registrieren';
 $string['registerwithmoodleorgcomplete'] = 'Website-Registrierung abschließen';
+$string['registerwithmoodleorginfo'] = 'Wir würden uns freuen, in Kontakt zu bleiben und Ihnen wichtige Dinge für Ihre Moodle-Website zu empfehlen! Mit der Registrierung:
+
+* Sie können sich anmelden, um Benachrichtigungen über neue Moodle-Versionen, Sicherheitswarnungen und andere wichtige Neuigkeiten zu erhalten.
+* Sie können auf mobile Push-Benachrichtigungen von Ihrer Moodle-Site aus über unsere kostenlose Moodle-App zugreifen und diese aktivieren.
+* Sie tragen zu unserer Moodle-Statistik der weltweiten Community bei, die uns hilft, Moodle und unsere Community-Seiten zu verbessern.
+* Wenn Sie möchten, kann Ihre Website in die Liste der registrierten Moodle-Websites in Ihrem Land aufgenommen werden.';
 $string['registerwithmoodleorginfoapp'] = 'Über die Moodle-App';
 $string['registerwithmoodleorginfosites'] = 'Weitere Websites in meinem Land';
 $string['registerwithmoodleorginfostats'] = 'Moodle-Statistiken';
@@ -214,9 +220,9 @@ $string['sharepublication_help'] = 'Wenn Sie diesen Kurse auf einen Community-Se
 $string['siteadmin'] = 'Administrator';
 $string['siteadmin_help'] = 'Vollständiger Name des Administrators';
 $string['sitecommnews'] = 'Moodle-Newsletter';
-$string['sitecommnews_help'] = 'Sie haben die Möglichkeit, unsere E-Mail-Infos zu abonnieren. Diese Infos werden nur in wichtigen Situationen versendet.';
-$string['sitecommnewsno'] = 'Nein, ich möchte keine E-Mails von Moodle HQ erhalten';
-$string['sitecommnewsyes'] = 'Ja, informieren Sie mich über Moodle Newsletter';
+$string['sitecommnews_help'] = 'Sie haben die Möglichkeit, unseren Moodle-Newsletter zu abonnieren. Sie können ihn jederzeit abbestellen.';
+$string['sitecommnewsno'] = 'Nein, ich möchte keine E-Mails bekommen';
+$string['sitecommnewsyes'] = 'Ja, ich möchte den Moodle-Newsletter empfangen';
 $string['sitecountry'] = 'Land';
 $string['sitecountry_help'] = 'Das Land Ihrer Organisation ist enthalten.';
 $string['sitecreated'] = 'Seite erstellt';
@@ -240,7 +246,7 @@ $string['siteprivacypublished'] = 'Nur den Namen der Website veröffentlichen';
 $string['siteregconfcomment'] = 'Ihre Website braucht eine endgültige Bestätigung auf {$a} (zur Vermeidung von Spam)';
 $string['siteregistrationcontact'] = 'Kontaktformular anzeigen';
 $string['siteregistrationcontact_help'] = 'Wenn diese Option aktiviert ist, können andere Personen über ein Kontaktformular auf dem Hub mit Ihnen in Kontakt treten. Ihre E-Mail-Adresse wird niemals angezeigt.';
-$string['siteregistrationemail'] = 'Systemnachrichten über wichtige Sicherheitsfragen und technische Aspekte';
+$string['siteregistrationemail'] = 'Systemnachrichten zu neuen Moodle-Releases, zu Sicherheitsfragen und andere wichtige Neuigkeiten';
 $string['siteregistrationemail_help'] = 'Sie haben die Möglichkeit, sich in unsere E-Mail-Benachrichtigungsliste für wichtige informationen über technische Fragen und Sicherheitsaspekte einzutragen. Wir werden nur sehr selten Benachrichtigungen versenden.';
 $string['siteregistrationupdated'] = 'Seitenregistrierung aktualisiert';
 $string['siterelease'] = 'Moodle-Release';

@@ -25,18 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'Dropbox-en API giltza';
+$string['apikey'] = 'Dropbox-en API gakoa';
 $string['cachelimit'] = 'Cache-muga';
-$string['cachelimit_info'] = 'Idatzi hemen zerbitzariaren cachean gordetako Dropbox-eko alias/lasterbideen fitxategien gehienezko tamaina. Cachean gordetako fitxategiak erabiliko dira jatorrizkoa eskuragarri ez dagoenean. Hutsik utziz gero edo zero jarrita fitxategi guztian gordeko dira cachean euren tamaina edozein izanda ere.';
+$string['cachelimit_info'] = 'Zehaztu zerbitzariaren cachean gordetako Dropbox-eko alias/esteken fitxategien gehienezko tamaina (byte-tan). Cachean gordetako fitxategiak erabiliko dira jatorrizkoa eskuragarri ez dagoenean. Hutsik utziz gero edo zero jarrita fitxategi guztian gordeko dira cachean euren tamaina edozein izanda ere.';
 $string['configplugin'] = 'Dropbox-en ezarpenak';
 $string['dropbox'] = 'Dropbox';
-$string['dropbox:view'] = 'Ikusi Dropbox karpeta';
-$string['instruction'] = 'API giltza eta sekretua lortu ahal dituzu <a href="https://www.dropbox.com/developers/apps">Dropbox-en garatzaileetatik</a>. Zure giltza konfiguratzean mesedez "Access level" atalean aukeratu "Full Dropbox".';
-$string['logoutdesc'] = '(Amaitu saioa Dropbox erabiltzen amaitzen duzunean)';
-$string['notitle'] = 'Izenbururik gabe';
+$string['dropbox:view'] = 'Ikusi Dropbox karpeta bat';
+$string['instruction'] = 'API gakoa eta sekretua <a href="https://www.dropbox.com/developers/apps">Dropbox-en garatzaileen orrian</a> lortu ahal dituzu. Zure gakoa konfiguratzean "Access level" atalean "Full Dropbox" aukeratu ezazu.';
+$string['logoutdesc'] = '(Saioa itxi ezazu Dropbox erabiltzen amaitzen duzunean)';
+$string['notitle'] = 'izenbururikez';
 $string['oauth2redirecturi'] = 'OAuth 2 Redirect URI';
 $string['pluginname'] = 'Dropbox';
 $string['privacy:metadata:repository_dropbox'] = 'Dropbox biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_dropbox:query'] = 'Dropbox biltegiko erabiltzailearen bilaketaren testua.';
-$string['remember'] = 'Gogoratu';
+$string['remember'] = 'Gogoratu nazazu';
 $string['secret'] = 'Dropbox-en sekretua';

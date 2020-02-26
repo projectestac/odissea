@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configlog'] = 'Αλλαγή ρυθμίσεων';
 $string['oldvalue'] = 'Αρχική τιμή';
-$string['plugin'] = 'Υπομονάδα λογισμικού';
+$string['plugin'] = 'Πρόσθετο';
 $string['pluginname'] = 'Αλλαγές ρυθμίσεων';
 $string['privacy:metadata'] = 'Το πρόσθετο «Αλλαγές διαμόρφωσης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['setting'] = 'Ρύθμιση';

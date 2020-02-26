@@ -89,7 +89,7 @@ $string['numbering_help'] = '* Bat ere ez - atalen eta azpiatalen izenburuek ez 
 * Buletak - azpiatalak koxkatuta daude eta buletak dituzte eduki-taulan.
 * Koskatuta - azpiatalak koskatuta daude eduki-taulan';
 $string['numberingoptions'] = 'Eskura dauden atalen formatuak';
-$string['numberingoptions_desc'] = 'Aukeratu liburu berriak sortzean eskura dauden zenbatze-aukerak.';
+$string['numberingoptions_desc'] = 'Aukeratu liburu berriak sortzean eskuragarri dauden zenbatze-aukerak.';
 $string['page-mod-book-x'] = 'Liburua moduluaren edozein orri';
 $string['pluginadministration'] = 'Liburuaren kudeaketa';
 $string['pluginname'] = 'Liburua';
@@ -99,7 +99,7 @@ $string['search:activity'] = 'Blokea - baliabidearen informazioa';
 $string['search:chapter'] = 'Liburua - atalak';
 $string['showchapter'] = 'Erakutsi  "{$a}" atala';
 $string['subchapter'] = 'Azpiatala';
-$string['subchapternotice'] = '(Lehen atala sortutakoan bakarrik egongo da erabilgarri)';
+$string['subchapternotice'] = '(Soilik lehen atala sortutakoan egongo da erabilgarri)';
 $string['subplugintype_booktool'] = 'Libururako tresna';
 $string['subplugintype_booktool_plural'] = 'Libururako tresnak';
 $string['tagarea_book_chapters'] = 'Liburu-atalak';

@@ -107,6 +107,18 @@ class block_courses_vicensvives extends block_list {
         return $this->content;
     }
 
+    /**
+     * Returns the role that best describes this blocks contents.
+     *
+     * This returns 'navigation' as the blocks contents is a list of links to activities and resources.
+     *
+     * @return string 'navigation'
+     */
+    public function get_aria_role() {
+        return 'navigation';
+    }
+
+    function applicable_formats() {
+        return array('all' => false,'site' => true);
+    }
 }
-
-

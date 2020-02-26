@@ -84,6 +84,6 @@ $string['showmore'] = 'Mostrar mais…';
 $string['somefieldsrequired'] = 'São de preenchimento obrigatório os campos assinalados com {$a}';
 $string['time'] = 'tempo';
 $string['timeunit'] = 'Unidade de tempo';
-$string['timing'] = 'Tempo';
+$string['timing'] = 'Disponibilidade';
 $string['unmaskpassword'] = 'Revelar';
 $string['year'] = 'Ano';

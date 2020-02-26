@@ -35,6 +35,22 @@ class com_wiris_quizzes_impl_QuizzesServiceImpl implements com_wiris_quizzes_api
 				}
 			}
 		}
+		$aqr = $mqr->questionRequests;
+		{
+			$_g = 0;
+			while($_g < $aqr->length) {
+				$qr = $aqr[$_g];
+				++$_g;
+				if(com_wiris_quizzes_impl_QuizzesServiceImpl::$deploymentId !== null) {
+					$qr->addMetaProperty("wrs-deployment", com_wiris_quizzes_impl_QuizzesServiceImpl::getDeploymentId());
+				}
+				if(com_wiris_quizzes_impl_QuizzesServiceImpl::$licenseId !== null) {
+					$qr->addMetaProperty("wrs-license", com_wiris_quizzes_impl_QuizzesServiceImpl::getLicenseId());
+				}
+				$qr->addMetaProperty("wrs-cause", "quizzes_generic_cause");
+				unset($qr);
+			}
+		}
 		$postData = $this->webServiceEnvelope($s->write($mqr));
 		$http = null;
 		$httpl = new com_wiris_quizzes_impl_HttpToQuizzesListener($listener, $mqr, $this, $async);
@@ -63,12 +79,6 @@ class com_wiris_quizzes_impl_QuizzesServiceImpl implements com_wiris_quizzes_api
 			}
 			$http->setHeader("Content-Type", "text/xml; charset=UTF-8");
 			$http->setPostData($postData);
-		}
-		if(com_wiris_quizzes_impl_QuizzesServiceImpl::$deploymentId !== null) {
-			$http->setParameter("wrs-deployment", com_wiris_quizzes_impl_QuizzesServiceImpl::getDeploymentId());
-		}
-		if(com_wiris_quizzes_impl_QuizzesServiceImpl::$licenseId !== null) {
-			$http->setParameter("wrs-license", com_wiris_quizzes_impl_QuizzesServiceImpl::getLicenseId());
 		}
 		$http->setAsync($async);
 		$http->request(true);

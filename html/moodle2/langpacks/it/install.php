@@ -118,6 +118,7 @@ $string['inputdatadirectory'] = 'Cartella dati:';
 $string['inputwebadress'] = 'Indirizzo Web:';
 $string['inputwebdirectory'] = 'Cartella di Moodle:';
 $string['installation'] = 'Installazione';
+$string['invaliddbprefix'] = 'Il prefisso non è valido. Può contenere solamente lettere minuscole d il trattino basso.';
 $string['langdownloaderror'] = 'Purtroppo non è stato possibile scaricare la lingua "{$a}". L\'installazione proseguirà in lingua Inglese.';
 $string['langdownloadok'] = 'La lingua "{$a}" è stata installata. L\'installazione proseguirà in questa lingua.';
 $string['memorylimit'] = 'Memory Limit';

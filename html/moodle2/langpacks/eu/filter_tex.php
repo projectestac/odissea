@@ -35,6 +35,6 @@ $string['pathdvips'] = '<i>dvips</i> bitarrerako bidea';
 $string['pathdvisvgm'] = '<i>dvisvgm</i> bitarrerako bidea';
 $string['pathlatex'] = '<i>latex</i> bitarrerako bidea';
 $string['pathmimetex'] = '<i>mimetex</i> bitarrarako bidea';
-$string['pathmimetexdesc'] = 'Moodle-k bere mimetex bitarra erabiliko du baliozkoa den beste helbide bat zehazten ez bada.';
+$string['pathmimetexdesc'] = 'Moodle-k bere mimetex bitarra erabiliko du baliozkoa den beste bide bat zehazten ez bada.';
 $string['privacy:metadata'] = 'TeX idazketa pluginak ez du datu pertsonalik biltzen.';
 $string['source'] = 'TeX iturburua';

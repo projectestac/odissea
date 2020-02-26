@@ -172,6 +172,7 @@ Alcuni formati di importazione come GIFT e Moodle XML permettono che la categori
 $string['exporterror'] = 'Si è verificato un errore durante l\'esportazione!';
 $string['exportfilename'] = 'domande';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
+$string['exportonequestion'] = 'Esporta la domanda nel formato Moodle XML';
 $string['exportquestions'] = 'Esporta le domande in un file';
 $string['exportquestions_help'] = 'Abilita l\'esportazione di una intera categoria di domande (e tutte le sue sotto-categorie) in un file di testo.
 Da notare in base al formato prescelto non sarà possibile esportare alcuni alcuni tipi di domande e alcune informazioni.';
@@ -385,9 +386,9 @@ $string['questionaffected'] = '<a href="{$a->qurl}">La domanda "{$a->name}" ({$a
 $string['questionbank'] = 'Deposito delle domande';
 $string['questionbehaviouradminsetting'] = 'Impostazioni comportamento della domanda';
 $string['questionbehavioursdisabled'] = 'Comportamenti domanda da disabilitare';
-$string['questionbehavioursdisabledexplained'] = 'Inserisci un elenco di comportamenti (separati da virgola) che non devono comparire nel menu a discesa.';
+$string['questionbehavioursdisabledexplained'] = 'Inserire un elenco di comportamenti (separati da virgola) che non devono comparire nel menu a discesa.';
 $string['questionbehavioursorder'] = 'Ordine dei comportamenti delle risposte';
-$string['questionbehavioursorderexplained'] = 'Inserisci un elenco di comportamenti (separati da virgole( nello stesso ordine con il quale desideri farli comparire nel menù a discesa';
+$string['questionbehavioursorderexplained'] = 'Inserire un elenco di comportamenti (separati da virgole)  nello stesso ordine con il quale si desidera farli comparire nel menù a discesa';
 $string['questioncategory'] = 'Categoria di domande';
 $string['questioncatsfor'] = 'Categorie di domande per \'{$a}\'';
 $string['questiondoesnotexist'] = 'Questa domanda non esiste';

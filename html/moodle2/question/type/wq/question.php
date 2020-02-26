@@ -151,7 +151,8 @@ class qtype_wq_question extends question_graded_automatically {
     public function get_expected_data() {
         $expected = $this->base->get_expected_data();
         $expected['_sqi'] = PARAM_RAW_TRIMMED;
-        $expected['auxiliar_text'] = PARAM_RAW;
+        $expected['auxiliar_text'] = question_attempt::PARAM_RAW_FILES;
+        $expecteddata['attachments'] = question_attempt::PARAM_FILES;
         return $expected;
     }
 
@@ -198,7 +199,12 @@ class qtype_wq_question extends question_graded_automatically {
     }
 
     public function check_file_access($qa, $options, $component, $filearea, $args, $forcedownload) {
-        return $this->base->check_file_access($qa, $options, $component, $filearea, $args, $forcedownload);
+        if ($component == 'question' && $filearea == 'response_auxiliar_text') {
+            // Response attachments visible if the question has them.
+            return true;
+        } else {
+            return $this->base->check_file_access($qa, $options, $component, $filearea, $args, $forcedownload);
+        }
     }
 
     /**

@@ -338,8 +338,8 @@ $string['submissiontypedisabled'] = 'Αυτός ο τύπος υποβολής �
 $string['submissiontypefileavailable'] = 'Επισύναψη αρχείου <span class="accesshide">διαθέσιμη</span>';
 $string['submissiontypefilerequired'] = 'pan class="accesshide">Επισύναψη αρχείου </span>Απαιτείται';
 $string['submissiontypes'] = 'Τύποι υποβολής';
-$string['submissiontypetextavailable'] = 'Κείμενο σε σύνδεση <span class="accesshide">διαθέσιμο</span>';
-$string['submissiontypetextrequired'] = '<span class="accesshide">Κείμενο σε σύνδεση</span> απαιτείται';
+$string['submissiontypetextavailable'] = 'Κείμενο εντός σύνδεσης <span class="accesshide">διαθέσιμο</span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide">Κείμενο εντός σύνδεσης</span> απαιτείται';
 $string['submittednotsubmitted'] = 'Υποβλήθηκαν ({$a->submitted}) / δεν υποβλήθηκαν ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Μέθοδος εκχώρησης υποβολών';
 $string['subplugintype_workshopallocation_plural'] = 'Μέθοδοι εκχώρησης υποβολών';

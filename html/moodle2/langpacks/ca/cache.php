@@ -182,4 +182,4 @@ $string['testperformance'] = 'Prova de rendiment';
 $string['unsupportedmode'] = 'Mode no compatible';
 $string['untestable'] = 'No es pot provar';
 $string['userinputsharingkey'] = 'Clau personalitzada per compartir';
-$string['userinputsharingkey_help'] = 'Introduïu la vostra clau privada aquí. Quan configureu altres magatzems en altres llocs web amb els quals vulgueu compartir dades, assegureu-vos de posar exactament la mateixa clau allí.';
+$string['userinputsharingkey_help'] = 'Introduïu la vostra clau privada aquí. Quan configureu altres magatzems en altres llocs web amb els quals vulgueu compartir dades, assegureu-vos de posar exactament la mateixa clau allà.';

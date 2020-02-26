@@ -103,6 +103,7 @@ $string['inputdatadirectory'] = 'Pasta de dados:';
 $string['inputwebadress'] = 'Endereço web:';
 $string['inputwebdirectory'] = 'Pasta do Moodle:';
 $string['installation'] = 'Instalação';
+$string['invaliddbprefix'] = 'Prefixo inválido. O prefixo pode ser apenas letras minúsculas e underscore.';
 $string['langdownloaderror'] = 'Não foi possível descarregar o idioma <b>{$a}</b> . O processo de instalação continuará em Inglês.';
 $string['langdownloadok'] = 'O idioma <b>{$a}</b> foi instalado com sucesso. O processo de instalação continuará neste idioma.';
 $string['memorylimit'] = 'Limite de memória';

@@ -31,7 +31,7 @@ $string['activatesuccess'] = 'L\'accès aux badges a été activé.';
 $string['addalignment'] = 'Ajouter une compétence';
 $string['addbadge'] = 'Ajouter des badges';
 $string['addbadgecriteria'] = 'Ajouter un critère de badge';
-$string['addbadge_help'] = 'Sélectionner tous les badges devant être ajouté comme requis pour obtenir ce badge. Utilisez la touche CTRL ou CMD pour sélectionner plusieurs éléments.';
+$string['addbadge_help'] = 'Sélectionner tous les badges devant être ajoutés comme requis pour obtenir ce badge. Utilisez la touche CTRL ou CMD pour sélectionner plusieurs éléments.';
 $string['addcohort'] = 'Ajouter une cohorte';
 $string['addcohort_help'] = 'Sélectionner toutes les cohortes à ajouter à ce critère de badge. Les sélections multiples sont possibles.';
 $string['addcourse'] = 'Ajouter des cours';
@@ -58,10 +58,10 @@ $string['allowexternalbackpack'] = 'Activer la connexion aux sacs à badges exte
 $string['allowexternalbackpack_desc'] = 'Autorise les utilisateurs à mettre en place des connexions vers leur fournisseur de sac à badges externe et d\'afficher ces badges.
 
 Attention : il est recommandé de ne pas activer cette option si le site ne peut pas être atteint via internet (par exemple en raison d\'un pare-feu).';
-$string['any'] = 'Un';
+$string['any'] = 'Une';
 $string['anymethod'] = 'Une des conditions sélectionnées est satisfaite';
 $string['anymethodactivity'] = 'Une des activités sélectionnées est achevée';
-$string['anymethodbadges'] = 'Un au moins des badges sélectionnés doit avoir été obtenu';
+$string['anymethodbadges'] = 'Au moins un des badges sélectionnés doit avoir été obtenu';
 $string['anymethodcohort'] = 'Appartenance à l\'une des cohortes sélectionnées';
 $string['anymethodcourseset'] = 'Un des cours sélectionnés est achevé';
 $string['anymethodmanual'] = 'Un des rôles sélectionnés décerne le badge';
@@ -128,7 +128,7 @@ $string['badgedetails'] = 'Description du badge';
 $string['badgeimage'] = 'Image';
 $string['badgeimage_help'] = 'Cette image sera utilisée lors de la remise de ce badge.
 
-Pour ajouter une image, sélectionnez un fichier (format JPG ou PNG), puis cliquez « Enregistrer les modifications.» L\'image sera redimensionnée en carré de dimensions adéquates.';
+Pour ajouter une image, sélectionnez un fichier (format JPG ou PNG), puis cliquez « Enregistrer les modifications. » L\'image sera redimensionnée en carré de dimensions adéquates.';
 $string['badgeprivacysetting'] = 'Réglages de confidentialité des badges';
 $string['badgeprivacysetting_help'] = 'Les badges que vous recevez peuvent être affichés sur votre page de profil. Ce réglage détermine si les nouveaux badges obtenus sont automatiquement visibles.
 
@@ -158,7 +158,7 @@ $string['bendorsement'] = 'Approbation';
 $string['bmessage'] = 'Message';
 $string['boverview'] = 'Vue d\'ensemble';
 $string['brelated'] = 'Badges associés ({$a})';
-$string['bydate'] = 'obtenue avant le';
+$string['bydate'] = ' obtenue avant le';
 $string['claim'] = 'Revendication';
 $string['claimcomment'] = 'Commentaire d\'approbation';
 $string['claimid'] = 'URL de revendication';
@@ -208,8 +208,8 @@ $string['criteria_descr_5'] = '<strong>{$a}</strong> des cours suivants doivent 
 $string['criteria_descr_6'] = '<strong>{$a}</strong> des champs du profil utilisateur doivent être renseignés :';
 $string['criteria_descr_7'] = '<strong>{$a}</strong> des badges suivants doit avoir été obtenu :';
 $string['criteria_descr_8'] = 'L\'appartenance à <strong>{$a}</strong> des cohortes suivantes est requise :';
-$string['criteria_descr_bydate'] = 'avant le <em>{$a}</em>';
-$string['criteria_descr_grade'] = 'avec une note minimale de <em>{$a}</em>';
+$string['criteria_descr_bydate'] = ' avant le <em>{$a}</em>';
+$string['criteria_descr_grade'] = ' avec une note minimale de <em>{$a}</em>';
 $string['criteria_descr_short0'] = 'Achever <strong>{$a}</strong> parmi :';
 $string['criteria_descr_short1'] = 'Achever <strong>{$a}</strong> parmi :';
 $string['criteria_descr_short2'] = 'Décerné par <strong>{$a}</strong> parmi :';
@@ -251,7 +251,7 @@ $string['delbadge'] = 'Voulez-vous supprimer le badge « {$a} » et supprimer 
 $string['delconfirm'] = 'Supprimer et supprimer les badges délivrés';
 $string['delcritconfirm'] = 'Voulez-vous vraiment supprimer ce critère ?';
 $string['deletehelp'] = '<p>La suppression complète d\'un badge effacera tous ses éléments (informations, critères, etc.). Les utilisateurs ayant reçu le badge ne pourront plus y accéder, ni l\'afficher sur leur page de profil.</p>
-<p>Remarque : les utilisateurs ayant reçu ce badge et l\'ayant enregistré sur leur sac à badges externe conserveront le badge dans leur sac à badges. Il ne pourront cependant plus accéder aux critères, ni aux preuves renvoyant vers ce site web.<p>';
+<p>Remarque : les utilisateurs ayant reçu ce badge et l\'ayant enregistré sur leur sac à badges externe conserveront le badge dans leur sac à badges. Ils ne pourront cependant plus accéder aux critères, ni aux preuves renvoyant vers ce site web.<p>';
 $string['delparamconfirm'] = 'Voulez-vous vraiment supprimer ce paramètre ?';
 $string['description'] = 'Description';
 $string['disconnect'] = 'Déconnecter';
@@ -524,5 +524,5 @@ $string['version'] = 'Version';
 $string['version_help'] = 'Le champ version peut être utilisé pour conserver la trace de l\'évolution du badge. Si spécifiée, la version est affichée sur la page du badge.';
 $string['viewbadge'] = 'Afficher le badge décerné';
 $string['visible'] = 'Visible';
-$string['warnexpired'] = '(Ce page est arrivé à échéance !)';
+$string['warnexpired'] = ' (Ce badge est arrivé à échéance !)';
 $string['year'] = 'Année(s)';

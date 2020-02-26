@@ -38,5 +38,5 @@ $string['pluginnameediting'] = 'Modification d\'une question Vrai/Faux';
 $string['pluginname_help'] = 'En réponse à une question (qui peut contenir des images) le participant choisit entre « Vrai » et « Faux ».';
 $string['pluginnamesummary'] = 'Une forme simplifiée de choix multiple avec les deux seules options Vrai et Faux.';
 $string['privacy:metadata'] = 'Le plugin de type de question Vrai/faux n\'enregistre aucune donnée personnelle.';
-$string['selectone'] = 'Sélectionnez une réponse :';
+$string['selectone'] = 'Sélectionnez une réponse :';
 $string['true'] = 'Vrai';

@@ -15,3 +15,6 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 $string['pluginname'] = 'Web service Vicens Vives';
+
+// Privacy
+$string['privacy:metadata'] = 'The Web service Vicens Vives only shows data stored in other locations.';

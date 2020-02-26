@@ -206,13 +206,21 @@ class format_vv_renderer extends format_topics_renderer {
         // When on a section page, we only display the general section title, if title is not the default one
         $hasnamesecpg = ($onsectionpage && ($section->section == 0 && !is_null($section->name)));
 
-        $classes = ' accesshide';
-        if ($hasnamenotsecpg || $hasnamesecpg) {
-            $classes = '';
+        // Ocultar despliegue en secciones vacías.
+        $classes = 'vv-sectionname';
+        if ($section->sequence == '') {
+                $classes .= ' vv-void';
+        }
+        if (!$hasnamenotsecpg && !$hasnamesecpg) {
+            $classes .= ' accesshide';
         }
 
+        // Ocultar despliegue en secciones vacías.
         $icons = html_writer::tag('span', '', array('class' => 'vv-icon-section'));
-        $icons .= html_writer::tag('span', '', array('class' => 'vv-icon-arrow'));
+        if ($section->sequence != '') {
+                $icons .= html_writer::tag('span', '', array('class' => 'vv-icon-arrow'));
+        }
+
         $edit = '';
 
         $context = context_course::instance($course->id);
@@ -229,7 +237,9 @@ class format_vv_renderer extends format_topics_renderer {
         }
 
         $title = $this->section_title($section, $course);
-        $o .= $this->output->heading($icons . $title . ' ' . $edit, 3, 'vv-sectionname' . $classes);
+
+        // Ocultar despliegue en secciones vacías.
+        $o .= $this->output->heading($icons . $title . ' ' . $edit, 3, $classes);
 
         $o .= $this->section_availability_message($section,
                 has_capability('moodle/course:viewhiddensections', $context));
@@ -597,7 +607,7 @@ class format_vv_course_renderer extends core_course_renderer {
 
         // Move
         if ($hasmanageactivities) {
-            if (!preg_match('/^\d+_(label|section|document|question|link)_\d+/', $mod->idnumber)) {
+            if (!preg_match('/^\d+_(label|section|document|question|link|video|mauthorgym|mauthorcloudlibrary|mauthor)_\d+/', $mod->idnumber)) {
                 $output .= $this->output->action_link(
                     new moodle_url($baseurl, array('copy' => $mod->id)), '',  null, array(),
                     new pix_icon('t/move', $str->move, 'moodle', array('class' => 'iconsmall', 'title' => $str->move))
@@ -725,6 +735,14 @@ class format_vv_course_renderer extends core_course_renderer {
             $icon = html_writer::tag('div', '', array('class' => 'vv-icon-activity'));
         } else if (preg_match('/link/', $mod->idnumber)) {
             $icon = html_writer::tag('div', '', array('class' => 'vv-icon-link'));
+        } else if (preg_match('/video/', $mod->idnumber)) {
+            $icon = html_writer::tag('div', '', array('class' => 'vv-icon-video'));
+        } else if (preg_match('/mauthorgym/', $mod->idnumber)) {
+            $icon = html_writer::tag('div', '', array('class' => 'vv-icon-mauthorgym'));
+        } else if (preg_match('/mauthorcloudlibrary/', $mod->idnumber)) {
+            $icon = html_writer::tag('div', '', array('class' => 'vv-icon-mauthorcloudlibrary'));
+        } else if (preg_match('/mauthor/', $mod->idnumber)) {
+            $icon = html_writer::tag('div', '', array('class' => 'vv-icon-mauthor'));
         } else {
             $attributes = array(
                 'src' => $mod->get_icon_url(),

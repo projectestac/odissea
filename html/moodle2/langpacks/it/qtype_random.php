@@ -40,3 +40,4 @@ $string['randomqplusnamemodule'] = 'Casuale (qualsiasi categoria presente nel qu
 $string['randomqplusnamesystem'] = 'Casuale (qualsiasi categoria a livello di sistema)';
 $string['selectedby'] = '{$a->questionname} scelte da {$a->randomname}';
 $string['selectmanualquestions'] = 'Le domande casuali possono usare domande con valutazione manuale';
+$string['taskunusedrandomscleanup'] = 'Rimuovi domande casuali non utilizzate';

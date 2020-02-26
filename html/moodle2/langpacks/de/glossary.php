@@ -30,7 +30,7 @@ $string['addcomment'] = 'Kommentar hinzufügen';
 $string['addentry'] = 'Eintrag hinzufügen';
 $string['addingcomment'] = 'Kommentar hinzufügen';
 $string['alias'] = 'Alternativbegriff';
-$string['aliases'] = 'Alternativbegriff(e)';
+$string['aliases'] = 'Alternativbegriffe';
 $string['aliases_help'] = 'Zu jedem Glossareintrag kann eine Reihe von Alternativbegriffen (Tags, Schlagwörter, Synonyme, Keywords) angegeben werden. Tragen Sie jeden Begriff in einer neuen Zeile ein (nicht als kommagetrennte Liste).
 
 Wenn ein Glossareintrag automatisch verlinkt wird wird jeder dieser Begriffe ebenfalls markiert.';
@@ -175,7 +175,7 @@ $string['entryusedynalink_help'] = 'Wenn diese Option aktiviert ist, werden Eint
 
 Voraussetzung ist die globale Freischaltung der Glossarverlinkung durch die Administrator/innen.';
 $string['errcannoteditothers'] = 'Sie dürfen keine fremden Einträge bearbeiten.';
-$string['errconceptalreadyexists'] = 'Diesen Begriff gibt es bereits. In diesem Glossar sind keine Doppeleinträge möglich.';
+$string['errconceptalreadyexists'] = 'Diesen Begriff gibt es bereits. In diesem Glossar sind keine Doppeleinträge erlaubt.';
 $string['errdeltimeexpired'] = 'Sie dürfen dies nicht löschen. Die Zeit ist abgelaufen!';
 $string['erredittimeexpired'] = 'Die Bearbeitungszeit für diesen Eintrag wurde überschritten.';
 $string['errorparsingxml'] = 'Es sind Fehler bei der Analyse der Datei aufgetreten. Stellen Sie sicher, dass die  XML-Syntax zulässig ist.';

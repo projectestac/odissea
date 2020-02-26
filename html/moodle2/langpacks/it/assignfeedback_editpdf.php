@@ -73,6 +73,7 @@ $string['output'] = 'Output:';
 $string['oval'] = 'Ovale';
 $string['pagenumber'] = 'Pagina {$a}';
 $string['pagexofy'] = 'Pagina {$a->page} di {$a->total}';
+$string['partialwarning'] = 'È possibile accedere ad alcuni dei file della consegna solamente tramite scaricamento diretto.';
 $string['pathtogspathdesc'] = 'L\'annotazione PDF richiede l\'impostazione del percorso di ghostscript in {$a}.';
 $string['pen'] = 'Penna';
 $string['pluginname'] = 'Annotazione PDF';

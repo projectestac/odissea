@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calculatedvalue'] = 'Resultado obtido';
-$string['disabledmodel'] = 'Lamentamos, este modelo foi desativado pelo administrador';
+$string['disabledmodel'] = 'Este modelo foi desativado pelo administrador';
 $string['indicator'] = 'Indicador';
-$string['insight'] = 'Discernimento';
+$string['insight'] = 'Perceção';
 $string['insightprediction'] = 'Previsão para \'{$a}\'';
 $string['insights'] = 'Perceções';
-$string['justpredictions'] = 'Tenha em atenção que as perceções apresentadas abaixo são apenas previsões. Não é possível prever o futuro a 100%. As perceções são fornecidas para que possam ser tomadas ações conforme necessário para evitar que as previsões negativas se tornem realidade.';
+$string['justpredictions'] = 'Tenha em atenção que as perceções abaixo apresentadas são apenas previsões. Não é possível prever o futuro a 100%. As perceções são fornecidas para que possam ser tomadas ações conforme necessário para evitar que as previsões negativas se tornem realidade.';
 $string['nodetailsavailable'] = 'Nenhum detalhe de previsão é relevante.';
 $string['outcome'] = 'Competência';
 $string['outcomenegative'] = 'Competência negativa';
@@ -44,7 +44,7 @@ $string['pluginname'] = 'Perceções';
 $string['prediction'] = 'Previsão';
 $string['predictioncalculations'] = 'Cálculos dos indicadores';
 $string['predictiondetails'] = 'Detalhes da previsão';
-$string['privacy:metadata'] = 'O módulo Apreciações não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Perceções não armazena dados pessoais.';
 $string['selectotherinsights'] = 'Selecione outras perceções...';
 $string['timecreated'] = 'Data/hora';
 $string['timerange'] = 'Intervalo de tempo';

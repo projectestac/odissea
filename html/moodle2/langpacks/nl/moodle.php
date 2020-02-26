@@ -646,16 +646,16 @@ $string['emailconfirmsent'] = '<p>Als het goed is, is er een e-mail verzonden na
 <p>Indien je moeilijkheden blijft ondervinden, neem dan contact op met je sitebeheerder.</p>';
 $string['emailconfirmsentfailure'] = 'Bevestigingsmail versturen is mislukt';
 $string['emailconfirmsentsuccess'] = 'Bevestigingsmail is verstuurd';
-$string['emaildigest'] = 'Type samenvattende e-mail';
+$string['emaildigest'] = 'Type e-mail berichtenoverzicht';
 $string['emaildigestcomplete'] = 'Volledige samenvatting  (dagelijkse e-mail met alle berichten)';
-$string['emaildigest_help'] = 'Dit zijn de instellingen voor het versturen van een samenvattende mail die forums zullen gebruiken:
+$string['emaildigest_help'] = 'Dit zijn de instellingen voor het versturen van e-mail met een berichtenoverzicht die forums zullen gebruiken:
 
 * Geen samenvattende mail - je zult één e-mail krijgen per forumbericht;
 * Samenvattende mail - volledige berichten - je krijgt één samenvattende mail per dag met daarin de volledige inhoud van elk forumbericht;
 * Samenvattende mail - enkel onderwerpen - je krijgt één samenvattende mail per dag met daarin enkel het onderwerp van elk forumbericht.
 
 Als je wilt, kun je kunt andere instellingen voor elk forum gebruiken.';
-$string['emaildigestoff'] = 'Geen samenvatting (voor elk forumbericht een e-mail)';
+$string['emaildigestoff'] = 'Geen berichtenoverzicht (voor elk forumbericht een e-mail)';
 $string['emaildigestsubjects'] = 'Onderwerpen (dagelijkse e-mail met alleen de onderwerpen van de berichten)';
 $string['emaildisable'] = 'Dit e-mailadres is uitgeschakeld';
 $string['emaildisableclick'] = 'Klik hier om ervoor te zorgen dat Moodle geen e-mail naar dit adres stuurt';
@@ -1809,7 +1809,7 @@ $string['separateandconnectedinfo'] = 'De schaal is gebaseerd op de theorie van 
 <li><strong>Gescheiden kenners</strong> blijven zo objectief mogelijk zonder gevoelens en emoties op te nemen. In een discussie met anderen zullen zij graag hun eigen ideeën verdedigen door het gebruik van logica en het vinden van fouten in de ideën van hun tegenstanders.</li><li><strong>Relationele kenners</strong> zijn meer gevoelig voor anderen. Zij zijn bedreven in de empathie en luisteren en stellen vragen tot ze verbondenheid voelen en de dingen "begrijpen vanuit hun standpunt". Zij leren door te proberen  ervaringen te delen die leiden tot de kennis die ze in anderen vinden.</li><ul>';
 $string['servererror'] = 'Er is een fout opgetreden tijdens de communicatie met de server';
 $string['serverlocaltime'] = 'De lokale tijd van de server';
-$string['sessionforceclean'] = 'Als veiligheidsmaatregel zijn door gebruikers gegenereerde scripts in deze sessie uitgeschakeld';
+$string['sessionforceclean'] = 'Als veiligheidsmaatregel zijn door gebruikers gegenereerde scripts in deze sessie uitgeschakeld.';
 $string['setcategorytheme'] = 'Kies categoriethema';
 $string['setpassword'] = 'Wachtwoord aanpassen';
 $string['setpasswordinstructions'] = 'Geef hieronder je nieuwe wachtwoord, bewaar de wijzigingen.';

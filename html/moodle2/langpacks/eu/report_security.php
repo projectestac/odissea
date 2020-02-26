@@ -113,7 +113,7 @@ $string['check_riskbackup_name'] = 'Erabiltzaile-datuen segurtasun-kopia';
 $string['check_riskbackup_ok'] = 'Ezein rolek ez du esplizituki erabiltzaile-datuen segurtasun-kopia baimentzen';
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) {$a->contextname}-(e)an</a>';
 $string['check_riskbackup_warning'] = '{$a->rolecount} rol, {$a->overridecount} baliogabetze eta erabiltzaile-datuen segurtasun-kopiak egiteko baimena duen {$a->usercount} erabiltzaile aurkitu dira.';
-$string['check_riskxss_details'] = '<p>RISK_XSS konfiantzazko erabiltzaileek bakarrik izan beharko luketen gaitasun arriskutusak biltzen ditu.</p>
+$string['check_riskxss_details'] = '<p>RISK_XSS soilik konfiantzazko erabiltzaileek izan beharko luketen gaitasun arriskutsuak biltzen ditu.</p>
 <p>Egiaztatu hurrengo erabiltzaile-zerrenda eta ziurtatu zerbitzari honetan erabiltzaileok konfiantzazkoak direla:</p>
 <p>{$a}</p>';
 $string['check_riskxss_name'] = 'XSS konfiantzazko erabiltzaileak';

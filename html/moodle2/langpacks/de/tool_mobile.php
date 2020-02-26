@@ -34,7 +34,7 @@ $string['autologinkeygenerationlockout'] = 'Das Erzeugen von Auto-Login-Token is
 $string['autologinnotallowedtoadmins'] = 'Das Auto-Login ist für Administratoren der Website nicht erlaubt.';
 $string['cachedef_plugininfo'] = 'Dies speichert die Liste von Plugins mit mobilen Add-ons.';
 $string['clickheretolaunchtheapp'] = 'Tippen Sie hier, falls sich die App nicht automatisch öffnet.';
-$string['configmobilecssurl'] = 'Die CSS-Datei dient zur Anpassung der mobilen App.';
+$string['configmobilecssurl'] = 'Die CSS-Datei ermöglicht die optische Anpassung der mobilen App.';
 $string['customlangstrings'] = 'Angepasste Texte';
 $string['customlangstrings_desc'] = 'Wörter und Texteinträge für die mobile App können angepasst werden. Schreiben Sie jeden angepassten Text in eine neue Zeile, u.z. in folgendem Format: Text-ID, angepasster Text und Sprachcode, jeweils getrennt durch Pipe-Zeichen |.
 

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['answer'] = 'Réponse {$a}';
 $string['availablechoices'] = 'Choix disponibles';
 $string['blanksforxmorequestions'] = '{no} emplacements supplémentaires vides';
-$string['correctansweris'] = 'La réponse correcte est : {$a}';
+$string['correctansweris'] = 'La réponse correcte est : {$a}';
 $string['deletedchoice'] = '[Choix supprimé]';
 $string['deletedsubquestion'] = 'Cette partie de la question a été supprimée après le début de la tentative';
 $string['filloutthreeqsandtwoas'] = 'Vous devez fournir au moins deux questions et trois réponses. Vous pouvez donner d\'autres réponses fausses en indiquant une réponse à une question vide. Les entrées avec une question et une réponse toutes deux vides seront ignorées.';

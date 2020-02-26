@@ -205,10 +205,10 @@ $string['extensionduedate'] = 'Extra tijd einddatum';
 $string['extensionnotafterduedate'] = 'De extra tijd einddatum moet na de einddatum zijn.';
 $string['extensionnotafterfromdate'] = 'De extra tijd einddatum moet na de startdatum zijn';
 $string['feedback'] = 'Feedback';
-$string['feedbackavailablehtml'] = '{$a->username} heeft feedbackgegeven op je ingestuurde opdracht voor \'<i>{$a->assignment}</i>\'<br /><br />
+$string['feedbackavailablehtml'] = '{$a->username} heeft feedback gegeven op je ingestuurde opdracht voor \'<i>{$a->assignment}</i>\'<br /><br />
 Je kunt die bekijken bij je <a href="{$a->url}">ingestuurde opdracht</a>.';
 $string['feedbackavailablesmall'] = '{$a->username} heeft feedback gegeven voor opdracht {$a->assignment}';
-$string['feedbackavailabletext'] = '{$a->username} heeft feedbackgegeven op je ingestuurde opdracht voor \'{$a->assignment}\'
+$string['feedbackavailabletext'] = '{$a->username} heeft feedback gegeven op je ingestuurde opdracht voor \'{$a->assignment}\'
 
 Je kunt die bekijken bij je ingestuurde opdracht:
 

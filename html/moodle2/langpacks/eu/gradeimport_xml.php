@@ -40,4 +40,4 @@ $string['importxml_help'] = 'Kalifikazioak erabiltzaile ID zenbakiak eta jarduer
 $string['pluginname'] = 'XML fitxategia';
 $string['privacy:metadata'] = 'Kalifikazioak XML fitxategitik inportatzeko pluginak ez du datu pertsonalik biltzen.';
 $string['xml:publish'] = 'XML kalifikazioen inportazioa argitaratu';
-$string['xml:view'] = 'Kalifikazioak XML fitxategitik inportatu';
+$string['xml:view'] = 'Inportatu kalifikazioak XML fitxategitik';

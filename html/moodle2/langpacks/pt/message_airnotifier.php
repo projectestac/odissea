@@ -64,5 +64,5 @@ $string['privacy:metadata:usersubsystem'] = 'O módulo está conectado ao subsis
 $string['privacy:subcontext'] = 'Mensagem Airnotifier';
 $string['requestaccesskey'] = 'Solicitar chave de acesso';
 $string['showhide'] = 'Ativar/desativar o dispositivo.';
-$string['sitemustberegistered'] = 'Para utilizar a instância pública Airnotifier deve registar o seu site em Moodle.net';
+$string['sitemustberegistered'] = 'Para utilizar a instância pública Airnotifier deve registar o seu site junto do Moodle';
 $string['unknowndevice'] = 'Dispositivo desconhecido';

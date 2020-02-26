@@ -438,8 +438,10 @@ function get_mailsender() {
     return $mailsender;
 }
 
-function send_apligest_mail(&$mail, $user) {
+function send_apligest_mail(&$mail, $user, $attachments = []) {
+
     global $CFG;
+
     try {
         $sender = get_mailsender();
         if (!$sender) {
@@ -454,24 +456,16 @@ function send_apligest_mail(&$mail, $user) {
             set_config('apligestlogpath', $CFG->apligestlogpath);
         }
 
-        // Load the message
-        $type = $mail->ContentType == 'text/plain' ? TEXTPLAIN : TEXTHTML;
-        $message = new message($type, $CFG->apligestlog, $CFG->apligestlogdebug, $CFG->apligestlogpath);
-
         // Set $to
         $toarray = array();
         foreach ($mail->to as $to) {
             $toarray[] = $to[0];
         }
-        $message->set_to($toarray);
-
+        
         // Set $cc
         $ccarray = array();
         foreach ($mail->cc as $cc) {
             $ccarray[] = $cc[0];
-        }
-        if (!empty($ccarray)) {
-            $message->set_cc($ccarray);
         }
 
         // Set $bcc
@@ -479,18 +473,21 @@ function send_apligest_mail(&$mail, $user) {
         foreach ($mail->bcc as $bcc) {
             $bccarray[] = $bcc[0];
         }
-        if (!empty($bccarray)) {
-            $message->set_bcc($bccarray);
+
+        // Set attachments
+        if (!empty($attachments)){
+            foreach ($attachments as $attachment) {
+                $attach_names[]     = $attachment[7];
+                $attach_contents[]  = $attachment[0];
+                $attach_mimetypes[] = $attachment[4];
+            }
+        } else {
+            $attach_names     = [];
+            $attach_contents  = [];
+            $attach_mimetypes = [];
         }
 
-        // Set $subject
-        $message->set_subject($mail->Subject);
-
-        // Set $bodyContent
-        $message->set_bodyContent($mail->Body);
-
-        // Add message to mailsender
-        if (!$sender->add($message)) {
+        if (!$sender->add_message($toarray, $ccarray, $bccarray, $mail->Subject, $mail->Body, $attach_names, '', $attach_contents, $attach_mimetypes, 'text/html')) {
             $mail->ErrorInfo = 'Impossible to add message to mailsender';
             return false;
         }

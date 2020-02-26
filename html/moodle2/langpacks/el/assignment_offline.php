@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Χωρίς σύνδεση';
-$string['privacy:metadata'] = 'Το πρόσθετο «Offline assignment» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['pluginname'] = 'Εκτός σύνδεσης';
+$string['privacy:metadata'] = 'Το πρόσθετο ανάθεσης εργασίας εκτός σύνδεσης δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:devicespath'] = 'Dispostivi dell\'utente';
+$string['privacy:draftfilespath'] = 'File in booza';
+$string['privacy:lastaccesspath'] = 'Ultimo accesso ai corsi';
 $string['privacy:metadata:address'] = 'Indirizzo dell\'utente.';
 $string['privacy:metadata:aim'] = 'Identificativo AIM dell\'utente.';
 $string['privacy:metadata:alternatename'] = 'Nome alternativo dell\'utente.';
@@ -45,7 +48,7 @@ $string['privacy:metadata:description'] = 'Dettagli generali dell\'utente.';
 $string['privacy:metadata:devicename'] = 'Nome del dispositivo (occam, iPhone, ecc)';
 $string['privacy:metadata:devicetablesummary'] = 'Questa tabella memorizza le informazioni sui dispositivi mobili dell\'utente per inviare notifiche PUSH.';
 $string['privacy:metadata:email'] = 'Indirizzo email per comunicazioni.';
-$string['privacy:metadata:emailstop'] = 'Preferenza per interrompere l\'invio di email all\'utente.';
+$string['privacy:metadata:emailstop'] = 'Preferenza per interrompere l\'invio di notifiche all\'utente.';
 $string['privacy:metadata:fieldid'] = 'ID relativo al campo personalizzato.';
 $string['privacy:metadata:filelink'] = 'File multipli dell\'utente memorizzati nella tabella dei file.';
 $string['privacy:metadata:firstaccess'] = 'Data e ora del primo accesso al sito da parte dell\'utente.';

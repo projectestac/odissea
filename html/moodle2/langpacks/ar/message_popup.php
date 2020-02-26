@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'الإعلامات المنبثقة';
+$string['privacy:metadata'] = 'المكوّن الإضافي Web messaging Web لا يخزن أي بيانات شخصية.';

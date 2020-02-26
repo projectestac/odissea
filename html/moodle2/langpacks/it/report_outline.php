@@ -32,6 +32,7 @@ $string['nocapability'] = 'Non è possibile accedere al report riassuntivo';
 $string['nologreaderenabled'] = 'Nessun log reader abilitato';
 $string['numviews'] = '{$a->numviews} visualizzazioni di {$a->distinctusers} utenti';
 $string['outline:view'] = 'Visualizzare il report delle attività del corso';
+$string['outline:viewuserreport'] = 'Visualizzare il report delle attività dell\'utente';
 $string['page-report-outline-index'] = 'Report riassuntivo del corso';
 $string['page-report-outline-user'] = 'Report riassuntivo dell\'utente';
 $string['page-report-outline-x'] = 'Qualsiasi report riassuntivo';

@@ -47,7 +47,7 @@ $string['editfeeds'] = 'Editar, subscrever ou cancelar subscrição da lista RSS
 $string['editnewsfeeds'] = 'Editar listas RSS';
 $string['editrssblock'] = 'Editar bloco de cabeçalhos RSS';
 $string['enableautodiscovery'] = 'Ativar autodescoberta de listas RSS?';
-$string['enableautodiscovery_help'] = 'Se ativar esta opção, as listas RSS a exibir numa página são encontradas automaticamente. Por exemplo se inserir http://docs.moodle.org, então http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss será encontrada.';
+$string['enableautodiscovery_help'] = 'Se ativar esta opção, as listas RSS a exibir numa página são encontradas automaticamente. Por exemplo, se inserir https://docs.moodle.org, então https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss será encontrada.';
 $string['failedfeed'] = 'Falha ao descarregar a lista - repetirá após {$a}';
 $string['failedfeeds'] = 'Ocorreu uma falha numa ou mais listas RSS';
 $string['feed'] = 'Lista';

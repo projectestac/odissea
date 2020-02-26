@@ -31,27 +31,35 @@ $string['auth_oauth2description'] = 'Authentification basée sur les standards O
 $string['auth_oauth2settings'] = 'Réglages d\'authentification OAuth 2.';
 $string['confirmaccountemail'] = 'Bonjour,
 
-La création d\'un compte pour « {$a->sitename} » a été demandée en utilisant votre adresse de courriel. Pour confirmer votre nouveau compte, veuillez visiter la page web suivante :
+Un nouveau compte a été demandé sur « {$a->sitename} » a été demandée en utilisant votre adresse de courriel.
+
+Pour confirmer votre nouveau compte, veuillez visiter la page web suivante :
 
 {$a->link}
 
 Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
 
 Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site,
-{$a->admin}';
+{$a->admin}
+
+Si vous n\'avez pas demandé de compte, quelqu\'un cherche peut-être à compromettre votre compte. Contactez immédiatement l\'administrateur du site.';
 $string['confirmaccountemailsubject'] = '{$a} : confirmation de compte';
 $string['confirmationinvalid'] = 'Le lien de confirmation n\'est pas valide ou est échu. Veuillez recommencer le processus de connexion afin de générer un nouveau message de confirmation.';
 $string['confirmationpending'] = 'Ce compte est en attente de confirmation par courriel.';
 $string['confirmlinkedloginemail'] = 'Bonjour,
 
-Une requête a été effectuée pour lier le compte {$a->issuername} ({$a->linkedemail}) à votre compte sur la plateforme « {$a->sitename} ». Pour confirmer cette demande et lier ces comptes, veuillez visiter la page web suivante :
+Une requête a été effectuée avec votre adresse de courriel pour lier le compte {$a->issuername} ({$a->linkedemail}) à votre compte sur la plateforme « {$a->sitename} ».
+
+Pour confirmer cette demande et lier ces comptes, veuillez visiter la page web suivante :
 
 {$a->link}
 
 Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu\'il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d\'adresse de votre navigateur web.
 
 Si vous avez besoin d\'aide, veuillez contacter l\'administrateur du site,
-{$a->admin}';
+{$a->admin}
+
+Si vous n\'avez pas demandé ceci, quelqu\'un cherche peut-être à compromettre votre compte. Contactez immédiatement l\'administrateur du site.';
 $string['confirmlinkedloginemailsubject'] = '{$a} : confirmation de liaison de compte';
 $string['createaccountswarning'] = 'Ce plugin d\'authentification permet aux utilisateurs de créer des comptes sur votre site. Si vous utilisez ce plugin, il est peut-être judicieux d\'activer le réglage « Empêcher la création de compte lors de l\'authentification » (authpreventaccountcreation).';
 $string['createnewlinkedlogin'] = 'Lier un nouveau compte ({$a})';

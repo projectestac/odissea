@@ -25,4 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['answer'] = 'الإجابة {$a}';
+$string['availablechoices'] = 'الخيارات المتاحة';
+$string['blanksforxmorequestions'] = 'فراغات لـ {no} أسئلة أخرى';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}';
+$string['deletedchoice'] = '[اختيار محذوف]';
+$string['deletedsubquestion'] = 'تم حذف هذا الجزء من السؤال بعد بدء المحاولة.';
+$string['filloutthreeqsandtwoas'] = 'يجب توفير ما لا يقل عن اثنين من الأسئلة و الأجوبة الثلاثة. يمكنك تقديم إجابات خاطئة إضافية من خلال إعطاء الجواب مع سؤال فارغ. سيتم تجاهل الإدخالات حيث كل من السؤال و الجواب فارغ.';
+$string['nomatchinganswer'] = 'يجب تحديد جواب مطابق للسؤال \'{$a}\'.';
+$string['nomatchinganswerforq'] = 'يجب عليك تحديد جواب لهذا السؤال.';
+$string['notenoughqsandas'] = 'يجب توفير ما لا يقل عن {$a->q}  أسئلة و {$a->a} إجابات.';
+$string['notenoughquestions'] = 'يجب توفير ما لا يقل عن {$a} سؤال وجواب بشكل أزواج.';
+$string['pleaseananswerallparts'] = 'يرجى الإجابة على جميع أجزاء هذه المسألة.';
+$string['pluginname'] = 'المطابقة';
+$string['pluginnameadding'] = 'إضافة سؤال المطابقة';
+$string['pluginnameediting'] = 'تحرير مسألة مطابقة';
+$string['pluginname_help'] = 'أسئلة تتطلب مطابقة الإجابة لقائمة أسماء أو بيانات (الأسئلة) إلى قائمة أخرى من الأسماء أو البيانات (إجابات) بشكل صحيح.';
+$string['pluginnamesummary'] = 'الجواب على كل الأسئلة الفرعية، كما يجب تحديده من قائمة الاحتمالات.';
+$string['privacy:metadata'] = 'لا يخزن المكون الإضافي لنوع المطابقة أية بيانات شخصية.';
+$string['shuffle'] = 'خلط';
+$string['shuffle_help'] = 'إذا مكّن ، و أسكن في ترتيب عبارات (إجابات) عشوائية في كل محاولة، شريطة أن يتم تمكين "العشوائي داخل الأسئلة" في إعدادات النشاط.';

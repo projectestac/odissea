@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['center'] = 'توسيط';
 $string['leftalign'] = 'باتجاه اليسار';
 $string['pluginname'] = 'باتجاه النص';
+$string['privacy:metadata'] = 'البرنامج المساعد atto_align لا يخزن أيّ بيانات شخصية.';
 $string['rightalign'] = 'باتجاه اليمين';

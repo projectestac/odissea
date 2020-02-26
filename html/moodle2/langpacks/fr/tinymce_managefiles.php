@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allfilesok'] = 'Il n\'y a aucun fichier manquant ou inutilisé';
 $string['deleteselected'] = 'Effacer les fichiers sélectionnés';
-$string['hasmissingfiles'] = 'Attention ! Les fichiers suivants qui sont référencés dans le texte semblent manquants';
+$string['hasmissingfiles'] = 'Attention ! Les fichiers suivants qui sont référencés dans le texte semblent manquants';
 $string['manageareafiles'] = 'Gérer les fichiers intégrés dans l\'éditeur de texte';
 $string['managefiles:desc'] = 'Gérer les fichiers intégrés';
 $string['pluginname'] = 'Gérer les fichiers intégrés';

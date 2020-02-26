@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['accuracy'] = 'Précision';
 $string['accuracyandbonus'] = 'Précision + bonus';
-$string['assumingcertainty'] = 'Vous n\'avez pas sélectionné de degré de certitude. Supposition : {$a}.';
+$string['assumingcertainty'] = 'Vous n\'avez pas sélectionné de degré de certitude. Supposition : {$a}.';
 $string['averagecbmmark'] = 'Évaluation moyenne du degré de certitude';
 $string['basemark'] = 'Évaluation de base {$a}';
 $string['breakdownbycertainty'] = 'Ventilé par certitude';

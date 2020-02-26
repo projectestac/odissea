@@ -53,9 +53,9 @@ $string['displayselect_help'] = 'Esta configuração, em conjunto com o tipo de 
 * Nova janela: o ficheiro é exibido numa nova janela do navegador, com menus e barra de endereço.';
 $string['externalurl'] = 'URL externo';
 $string['framesize'] = 'Altura da frame';
-$string['indicator:cognitivedepth'] = 'URL cognitivo';
+$string['indicator:cognitivedepth'] = 'Compreensão do URL';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na profundidade cognitiva alcançada pelo aluno num recurso URL.';
-$string['indicator:socialbreadth'] = 'URL social';
+$string['indicator:socialbreadth'] = 'Socialização do URL';
 $string['indicator:socialbreadth_help'] = 'Este indicador baseia-se na amplitude social alcançada pelo aluno numa recurso URL.';
 $string['invalidstoredurl'] = 'Não é possível mostrar este recurso, o URL é inválido';
 $string['invalidurl'] = 'Insira um URL válido';

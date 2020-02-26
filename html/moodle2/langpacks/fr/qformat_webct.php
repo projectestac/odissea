@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errorsdetected'] = '{$a} erreur(s) détéctée(s)';
-$string['missinganswer'] = 'Pas assez d\'instructions :ANSWER, :Lx, :Rx à la ligne {$a} de la question. Veuillez définir au moins deux réponses possibles.';
+$string['missinganswer'] = 'Pas assez d\'instructions :ANSWER, :Lx, :Rx à la ligne {$a} de la question. Veuillez définir au moins deux réponses possibles.';
 $string['missingquestion'] = 'Étiquette de question manquante après la ligne {$a}';
 $string['pluginname'] = 'Format WebCT';
 $string['pluginname_help'] = 'Le format WebCT permet d\'enregistrer des questions à choix multiple et à réponse courte dans un format texte pouvant être importé dans WebCT.';
@@ -34,4 +34,4 @@ $string['privacy:metadata'] = 'Le plugin de format de question WebCT n\'enregist
 $string['questionnametoolong'] = 'Le nom de la question est trop long à la ligne {$a} (255 car. max). Il a été tronqué.';
 $string['unknowntype'] = 'Type de question inconnu après la ligne {$a}';
 $string['warningsdetected'] = '{$a} avertissement(s) détecté(s)';
-$string['wronggrade'] = 'Note incorrecte (après la ligne {$a}) :';
+$string['wronggrade'] = 'Note incorrecte (après la ligne {$a}) :';

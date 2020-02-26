@@ -40,7 +40,10 @@ Para confirmar a sua nova conta, aceda a este endereço:
 Na maioria dos casos, deve aparecer como uma hiperligação azul, na qual apenas tem de clicar. Se tal não acontecer, copie o endereço e cole-o na linha de endereço, na parte superior da janela, do seu navegador da internet.
 
 Se precisar de ajuda, entre em contacto com o administrador do site,
-{$a->admin}';
+{$a->admin}
+
+Se não fez este pedido, outra pessoa pode estar a tentar comprometer a sua conta.
+Entre em contacto com o administrador do site imediatamente.';
 $string['confirmaccountemailsubject'] = '{$a}: confirmação da conta';
 $string['confirmationinvalid'] = 'A hiperligação de confirmação é inválida ou expirou. Inicie novamente o processo de autenticação para gerar um novo e-mail de confirmação.';
 $string['confirmationpending'] = 'Esta conta está pendente da confirmação do e-mail.';
@@ -55,7 +58,10 @@ Para confirmar este pedido e vincular as autenticações, aceda a este endereço
 Na maioria dos casos, deve aparecer como uma hiperligação azul, na qual apenas tem de clicar. Se tal não acontecer, copie o endereço e cole-o na linha de endereço, na parte superior da janela, do seu navegador da internet.
 
 Se precisar de ajuda, entre em contacto com o administrador do site,
-{$a->admin}';
+{$a->admin}
+
+Se não fez este pedido, outra pessoa pode estar a tentar comprometer a sua conta.
+Entre em contacto com o administrador do site imediatamente.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: confirmação da vinculação de autenticação';
 $string['createaccountswarning'] = 'Este módulo de autenticação permite aos utilizadores criarem contas no seu site. É importante ativar a configuração "authpreventaccountcreation" se pretende usar esta funcionalidade.';
 $string['createnewlinkedlogin'] = 'Vincular uma nova conta ({$a})';

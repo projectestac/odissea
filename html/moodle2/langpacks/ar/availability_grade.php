@@ -25,5 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cachedef_items'] = 'بنود الدرجة في الذاكرة المؤقتة لتقييم التوافر الشرطي';
+$string['cachedef_scores'] = 'درجات المستخدم في الذاكرة المؤقتة لتقييم التوافر الشرطي';
+$string['description'] = 'طلب من الطلاب لتحقيق درجات محددة.';
+$string['error_backwardrange'] = 'عند تحديد نطاق التقدير ، يجب أن يكون الحد الأدنى أقل من الحد الأقصى.';
+$string['error_invalidnumber'] = 'يجب تحديد نطاقات التقدير بنسب مئوية صالحة.';
+$string['error_selectgradeid'] = 'يجب عليك تحديد درجة محددة لتقديم حالة التقدير.';
+$string['label_max'] = 'النسبة المئوية للصف الأقصى (حصري)';
+$string['label_min'] = 'الحد الأدنى لنسبة الدرجة (شاملة)';
+$string['missing'] = '(النشاط المفقود)';
+$string['option_max'] = 'يجب أن يكون <';
+$string['option_min'] = 'يجب أن يكون ≥';
+$string['pluginname'] = 'تقييد بالدرجات';
+$string['privacy:metadata'] = 'البرنامج المساعد Restriction by grades لا يخزن أيّ بيانات شخصية.';
+$string['requires_any'] = 'لديك درجة في {$a}';
+$string['requires_max'] = 'أنت حصلت على درجة مناسبة في {$a}';
 $string['requires_min'] = 'حقتت الدرجة المطلوب في <strong>{$a}</strong>';
+$string['requires_notany'] = 'ليس لديك درجة في {$a}';
+$string['requires_notgeneral'] = 'لم تحصل على نتائج معينة في {$a}';
 $string['requires_range'] = 'تحصل على درجة معينة في <strong> {$ a} </ strong>';
+$string['title'] = 'الدرجة';

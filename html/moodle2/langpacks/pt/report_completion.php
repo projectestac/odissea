@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clicktomarkusercomplete'] = 'Clique para indicar que o aluno concluiu a disciplina';
-$string['completiondate'] = 'Data de conclusão';
+$string['completiondate'] = 'Data da conclusão';
 $string['completion:view'] = 'Ver relatório completo de conclusão';
 $string['eventreportviewed'] = 'Relatório de conclusão visualizado';
 $string['eventuserreportviewed'] = 'Relatório de conclusão visualizado';

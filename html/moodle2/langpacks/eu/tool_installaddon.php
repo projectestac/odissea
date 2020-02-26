@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Onarpena';
-$string['acknowledgementtext'] = 'Plugin gehigarriak instalatu aurreko gune honetako segurtasun-kopia osoak izatea nire ardura dela onartzen dut. Ulertu eta onartzen dut gehigarriek (eta bereziki jatorri ez-ofiziala dutenek, baina ez bakarrik) segurtasun-arazoak izan ditzaketela, gunea ez-eskuragarri utzi dezaketela, edota datu pribatuen filtrazioa edo galera eragin dezaketela.';
+$string['acknowledgementtext'] = 'Plugin gehigarriak instalatu aurreko gune honetako segurtasun-kopia osoak izatea nire ardura dela onartzen dut. Ulertu eta onartzen dut gehigarriek (eta bereziki jatorri ez-ofiziala dutenek, baina ez horiek bakarrik) segurtasun-arazoak izan ditzaketela, gunea ez-eskuragarri utzi dezaketela, edota datu pribatuen filtrazioa edo galera eragin dezaketela.';
 $string['featuredisabled'] = 'Plugin-instalatzailea desgaituta dago gune honetan.';
 $string['installaddon'] = 'Instalatu plugina!';
 $string['installaddons'] = 'Instalatu pluginak';

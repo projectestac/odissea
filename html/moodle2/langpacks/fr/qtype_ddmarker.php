@@ -55,19 +55,19 @@ Pour information, les trois types de formes utilisent les coordonnées ainsi :
 * Polygone : x1, y1; x2, y2; ...; xn, yn<br />par exemple : <code>20,60;100,60;20, 100</code>
 
 Sélectionner un marqueur de texte ajoutera ce texte à la zone dans l\'aperçu.';
-$string['followingarewrong'] = 'Les marqueurs suivants ont été placés dans la mauvaise zone : {$a}.';
-$string['followingarewrongandhighlighted'] = 'Les marqueurs suivants étaient placés de manière incorrecte : {$a}. Les marqueurs en surbrillance sont à présent à leur place.<br /> Cliquez sur le marqueur pour mettre la zone autorisée en surbrillance.';
+$string['followingarewrong'] = 'Les marqueurs suivants ont été placés dans la mauvaise zone : {$a}.';
+$string['followingarewrongandhighlighted'] = 'Les marqueurs suivants étaient placés de manière incorrecte : {$a}. Les marqueurs en surbrillance sont à présent à leur place.<br /> Cliquez sur le marqueur pour mettre la zone autorisée en surbrillance.';
 $string['formerror_nobgimage'] = 'Vous devez sélectionner une image à utiliser comme fond pour cette aire de glisser-déposer.';
 $string['formerror_noitemselected'] = 'Vous avez spécifié une zone de dépôt mais n\'avez pas choisi de marqueur qui doive être déplacé sur cette zone.';
-$string['formerror_nosemicolons'] = 'Il n\'y a pas de point-virgule dans votre chaîne de caractère définissant les coordonnées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
+$string['formerror_nosemicolons'] = 'Il n\'y a pas de point-virgule dans votre chaîne de caractère définissant les coordonnées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
 $string['formerror_onlysometagsallowed'] = 'Seules les balises « {$a} » sont autorisées dans le label d\'un marqueur.';
-$string['formerror_onlyusewholepositivenumbers'] = 'Veuillez n\'utiliser que des nombres entiers positifs pour spécifier les coordonnées x,y et/ou la largeur et la hauteur des formes. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
-$string['formerror_polygonmusthaveatleastthreepoints'] = 'Vous devez spécifier au moins 3 points pour définir un polygone. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
+$string['formerror_onlyusewholepositivenumbers'] = 'Veuillez n\'utiliser que des nombres entiers positifs pour spécifier les coordonnées x,y et/ou la largeur et la hauteur des formes. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
+$string['formerror_polygonmusthaveatleastthreepoints'] = 'Vous devez spécifier au moins 3 points pour définir un polygone. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
 $string['formerror_repeatedpoint'] = 'Vous avez saisi deux fois le même point. Veuillez retirer ce doublon. Les coordonnées pour un {$a->shape} doivent être exprimée ainsi : {$a->coordsstring}.';
 $string['formerror_shapeoutsideboundsofbgimage'] = 'La forme que vous avez définie sort des limites de l\'image de fond.';
-$string['formerror_toomanysemicolons'] = 'Il y a trop d\'éléments séparés par des points-virgules dans les coordonnées que vous avez spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
-$string['formerror_unrecognisedwidthheightpart'] = 'Impossible d\'évaluer la hauteur et la largeur spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
-$string['formerror_unrecognisedxypart'] = 'Impossible d\'évaluer les coordonnées x,y spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
+$string['formerror_toomanysemicolons'] = 'Il y a trop d\'éléments séparés par des points-virgules dans les coordonnées que vous avez spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
+$string['formerror_unrecognisedwidthheightpart'] = 'Impossible d\'évaluer la hauteur et la largeur spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
+$string['formerror_unrecognisedxypart'] = 'Impossible d\'évaluer les coordonnées x,y spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
 $string['infinite'] = 'Infini';
 $string['marker'] = 'Marqueur';
 $string['marker_n'] = 'Marqueur {no}';

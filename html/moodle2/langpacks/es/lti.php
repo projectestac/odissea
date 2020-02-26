@@ -251,7 +251,7 @@ Las herramientas externas difieren se los recursos URL en varias formas:
 * Las herramientas externas soportan leer, actualizar y borrar calificaciones asociadas con la instancia de la actividad
 
 * Las configuraciones de la herramienta externa crean una relación de confianza entre su sitio Moodle y el provedor de la herramienta, permitiendo la comunicación segura entre ambos';
-$string['modulenameplural'] = 'basicltis';
+$string['modulenameplural'] = 'Herramientas externas';
 $string['modulenamepluralformatted'] = 'Instancias LTI';
 $string['name'] = 'Nombre';
 $string['never'] = 'Nunca';
@@ -281,7 +281,7 @@ $string['pagesize'] = 'Entregas mostradas por página';
 $string['parameter'] = 'Parámetros de la herramienta';
 $string['pending'] = 'Pendiente';
 $string['pluginadministration'] = 'Administración de herramientas externas';
-$string['pluginname'] = 'LTI';
+$string['pluginname'] = 'Herramienta Externa';
 $string['preferheight'] = 'Altura recomendada';
 $string['preferwidth'] = 'Ancho recomendado';
 $string['press_to_submit'] = 'Pulsar para comenzar esta actividad';

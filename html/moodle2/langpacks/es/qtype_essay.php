@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Tipos de archivo aceptados';
+$string['acceptedfiletypes_help'] = 'Los tipos de archivo aceptados pueden ser modificados introduciendo una lista de extensiones de archivo. Si el campo está vacío, todos los tipos de archivo serán permitidos.';
 $string['allowattachments'] = 'Permitir archivos adjuntos';
 $string['attachmentsoptional'] = 'Los archivos adjuntos son opcionales';
 $string['attachmentsrequired'] = 'Archivos adjuntos requeridos';
@@ -40,6 +42,7 @@ $string['mustattach'] = 'Si se selecciona "sin texto", o las respuestas son opci
 $string['mustrequire'] = 'Si se selecciona "sin texto", o las respuestas son opcionales, debe requerir al menos un archivo adjunto.';
 $string['mustrequirefewer'] = 'No puede requerir más archivos adjuntos de los que permite.';
 $string['nlines'] = '{$a} líneas';
+$string['nonexistentfiletypes'] = 'Los siguientes tipos de archivo no fueron reconocidos: {$a}';
 $string['pluginname'] = 'Ensayo';
 $string['pluginnameadding'] = 'Agregando una pregunta de ensayo';
 $string['pluginnameediting'] = 'Editando una pregunta de ensayo';

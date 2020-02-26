@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['courseoverview:view'] = 'عرض نظرة عامة على تقرير المقرر';
+$string['pluginname'] = 'معاينة مقرر دراسي';

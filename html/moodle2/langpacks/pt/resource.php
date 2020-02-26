@@ -77,14 +77,15 @@ $string['legacyfilesactive'] = 'Ativo';
 $string['legacyfilesdone'] = 'Terminado';
 $string['modifieddate'] = 'Modificado {$a}';
 $string['modulename'] = 'Ficheiro';
-$string['modulename_help'] = 'O recurso Ficheiro permite que um professor insira um ficheiro como um recurso de uma disciplina. Sempre que o navegador o permitir, o ficheiro será exibido dentro da interface da disciplina, caso contrário os alunos poderão descarregar. Este recurso pode incluir ficheiros de suporte, como por exemplo uma página HTML com imagens ou conteúdos em Flash.
+$string['modulename_help'] = 'O recurso Ficheiro permite que um professor insira um ficheiro como um recurso de uma disciplina. Sempre que o navegador o permitir, o ficheiro será exibido dentro da interface da disciplina, caso contrário os alunos poderão descarregar. Este recurso pode incluir ficheiros de suporte, como por exemplo uma página HTML pode ter imagens incorporadas.
 
-Note que os alunos precisam de ter os programas apropriados instalados nos seus computadores para visualizarem os ficheiros.
+Tenha em atenção que os alunos precisam de ter os programas apropriados instalados nos seus computadores para visualizarem os ficheiros.
 
 Um ficheiro pode ser utilizado para:
+
 * Partilhar apresentações com a turma;
 * Incluir um mini site como um recurso da disciplina;
-* Disponibilizar ficheiros de certos programas (p. ex. Photoshop .psd) para os alunos editarem e submeterem para avaliação.';
+* Disponibilizar ficheiros de rascunho de certos programas para que os alunos possam editar e submeterpara avaliação.';
 $string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Ficheiros';
 $string['notmigrated'] = 'O tipo de recurso herdado ({$a}) ainda não foi migrado.';

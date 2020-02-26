@@ -89,7 +89,7 @@ $string['csvfailed'] = 'Não foi possível ler a informação existente no fiche
 $string['csvfile'] = 'Ficheiro CSV';
 $string['csvimport'] = 'Importação de ficheiro CSV';
 $string['csvimport_help'] = 'Os registos podem ser importados através de um ficheiro de texto, indicando na primeira linha os nomes dos campos e nas linhas seguintes a respetiva informação, com um registo por linha.';
-$string['csvwithselecteddelimiter'] = 'Ficheiro <acronym title="Comma Separated Values">CSV</acronym> com delimitador';
+$string['csvwithselecteddelimiter'] = 'Ficheiro <acronym title="Valores separados por vírgulas">CSV</acronym> com delimitador';
 $string['data:addinstance'] = 'Adicionar nova Base de Dados';
 $string['data:approve'] = 'Aprovar e cancelar registos já aprovados';
 $string['data:comment'] = 'Escrever comentários';
@@ -132,7 +132,7 @@ $string['editcomment'] = 'Editar comentário';
 $string['editentry'] = 'Editar registo';
 $string['editordisable'] = 'Desativar editor';
 $string['editorenable'] = 'Ativar editor';
-$string['emptyadd'] = 'O modelo <b>Adicionar</b> está vazio, a gerar o formulário predefinido';
+$string['emptyadd'] = 'O modelo <b>Adicionar</b> está vazio. A gerar o formulário predefinido...';
 $string['emptyaddform'] = 'Não preencheu nenhum campo!';
 $string['enabletemplateeditorcheck'] = 'Tem a certeza de que pretende ativar o editor? Esta ação pode resultar numa alteração de conteúdo quando o modelo for guardado.';
 $string['entries'] = 'Registos';
@@ -267,7 +267,7 @@ $string['multimenu'] = 'Menu (seleção múltipla)';
 $string['multipletags'] = 'Foram encontrados múltiplos marcadores! O modelo não foi guardado';
 $string['newentry'] = 'Novo registo';
 $string['newfield'] = 'Criar novo campo';
-$string['newfield_help'] = 'Um campo permite a inserção de um determinado tipo de informação nos registos de dados. Cada registo da base de dados pode ter diversos campos, de vários tipos. Ex: Um campo <b>Data</b> permite aos participantes escolher um dia, mês e ano a partir de uma lista pendente; um campo <b>Imagem</b> permite aos participantes enviar um ficheiro de imagem; um campo <b>Caixa seleção</b> permite aos participantes selecionar uma ou mais opções.
+$string['newfield_help'] = 'Um campo permite a inserção de um determinado tipo de informação. Cada registo da base de dados pode ter diversos campos, de vários tipos. Ex: Um campo <b>Data</b> permite aos participantes escolher um dia, mês e ano a partir de uma lista pendente; um campo <b>Imagem</b> permite aos participantes enviar um ficheiro de imagem; um campo <b>Caixa seleção</b> permite aos participantes selecionar uma ou mais opções.
 
 Cada campo deve ter um nome único na estrutura do registo. A descrição do campo é opcional.';
 $string['noaccess'] = 'Não tem permissão para aceder a esta página';
@@ -301,7 +301,7 @@ $string['picture'] = 'Imagem';
 $string['pleaseaddsome'] = 'Crie campos abaixo ou <a href="{$a}">escolha um protótipo</a> para definir a estrutura da base de dados.';
 $string['pluginadministration'] = 'Administração da Base de dados';
 $string['pluginname'] = 'Base de dados';
-$string['portfolionotfile'] = 'Exportar para portefólio em vez de ficheiro (apenas CSV e Leap2a)';
+$string['portfolionotfile'] = 'Exportar para portefólio em vez de para ficheiro (apenas CSV e Leap2a)';
 $string['presetinfo'] = 'A gravação como protótipo permite a outros utilizadores usar o mesmo nas suas bases de dados.';
 $string['presets'] = 'Protótipos';
 $string['privacy:metadata:commentpurpose'] = 'Comentários aos registos da Base de dados';

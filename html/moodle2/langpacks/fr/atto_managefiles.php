@@ -27,11 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['deleteselected'] = 'Effacer les fichiers sélectionnés';
 $string['filemanager'] = 'Gestionnaire de fichiers';
-$string['hasmissingfiles'] = 'Attention ! Les fichiers suivants qui sont référencés dans le texte semblent manquants :';
+$string['hasmissingfiles'] = 'Attention ! Les fichiers suivants qui sont référencés dans le texte semblent manquants :';
 $string['managefiles'] = 'Gérer les fichiers';
 $string['missingfiles'] = 'Fichiers manquants';
 $string['pluginname'] = 'Gestion des fichiers';
 $string['privacy:metadata'] = 'Le plugin atto_managefiles n\'enregistre aucune donnée personnelle.';
-$string['unusedfilesdesc'] = 'Les fichiers suivants ne sont pas utilisés dans l\'éditeur de texte :';
+$string['unusedfilesdesc'] = 'Les fichiers suivants ne sont pas utilisés dans l\'éditeur de texte :';
 $string['unusedfilesheader'] = 'Fichiers inutilisés';
 $string['unusedfilesremovalnotice'] = 'Tous les fichiers non utilisés seront supprimés automatiquement lors de l\'enregistrement des changements.';

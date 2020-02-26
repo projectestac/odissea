@@ -2,6 +2,13 @@
 Change log for qtype_ordering
 ========================================
 
+2019-12-14 (00)
+ - Thanks Tim Hunt: (1) Update Behat tests to use the MDL-66821 changes (2) Fix Behat test that was failing
+ - Thanks HuongNV13: (1) Items crash together horizontally (2) Number/letter no longer tracks with dragged item
+
+2019-12-12 (98)
+ - fix JS error on Moodle >= 3.7 caused by incorrect syntax in 'define' statement in key_codes.js
+
 2019-10-24 (96)
  - standardize layout and spelling in CHANGES.txt
 
@@ -326,17 +333,17 @@ Change log for qtype_ordering
  - fix display of correct/wrong items for question review
  - fix display of correct/wrong items for question review
 
-2014-05-14.01
+2014-05-14 (01)
  - fix display of correct/wrong items for question review
  - fix display of correct/wrong items for question review
  - add method to intialize new ordering question
  - half fix for delays and cheating
  - fix undefined passwordsaltmain in Moodle >= 2.6
 
-2013-06-28.00
+2013-06-28 (00)
  - standardize version.php and add readme.txt
 
-2013-06-28.00
+2013-06-28 (00)
  - standardize version.php and add readme.txt
  - replace __DIR__ with dirname(__FILE__) for compatability with PHP 5.2
  - fix REFTABLE 'questions' -> 'question' in db/install.xml

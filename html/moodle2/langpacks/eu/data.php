@@ -300,7 +300,7 @@ $string['picture'] = 'Irudia';
 $string['pleaseaddsome'] = 'Mesedez, sortu baten bat azpian edo <a href="{$a}">aukeratu aurrez definitutako multzo bat</a> hasteko.';
 $string['pluginadministration'] = 'Datu-basea jardueraren kudeaketa';
 $string['pluginname'] = 'Datu-basea';
-$string['portfolionotfile'] = 'Esportatu portfolio batera fitxategi batera izan beharrean (csn eta leap2a bakarrik)';
+$string['portfolionotfile'] = 'Esportatu portfolio batera fitxategi batera izan beharrean (soilik csn eta leap2a)';
 $string['presetinfo'] = 'Aurretiko ezarpen gisa gordetzean publikatu egingo da txantiloi hau. Beste erabiltzaile batzuek euren datu-baseetan erabili ahal izango dute.';
 $string['presets'] = 'Aurretiko ezarpenak';
 $string['privacy:metadata:commentpurpose'] = 'Datu-baseko erregistroen iruzkinak';

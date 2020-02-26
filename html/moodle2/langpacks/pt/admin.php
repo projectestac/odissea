@@ -218,9 +218,9 @@ $string['configdefaultrequestedcategory'] = 'Categoria por predefinição para c
 $string['configdefaultuserroleid'] = 'Todos os utilizadores autenticados terão as permissões do papel aqui indicado no contexto do site, para além de quaisquer outros papéis que estejam atribuidos a esse utilizador. O valor predefinido desta opção é "Utilizador autenticado". Note que isto não colide com outros papéis que os utilizadores tenham, simplesmente garante que todos os utilizadores têm permissões que não são atribuíveis ao nível da disciplina (por exemplo, inserir entradas no blogue, gerir o próprio calendário, etc.).';
 $string['configdeleteincompleteusers'] = 'Depois deste período, qualquer conta sem o Nome, Apelido ou campo de e-mail preenchido é apagada.';
 $string['configdeleteunconfirmed'] = 'Para alguns métodos de autenticação, tal como o auto-registo com autenticação por e-mail, os utilizadores devem confirmar a sua conta dentro de um determinado período de tempo. Depois deste período, as contas antigas não confirmadas serão apagadas automaticamente.';
-$string['configdenyemailaddresses'] = 'Para recusar endereços de correio de determinados domínios, introduza aqui uma lista dos mesmos, separados por espaços. Todos os outros outros domínios serão aceites. Ex: <strong>hotmail.com yahoo.co.uk live.com</strong>';
+$string['configdenyemailaddresses'] = 'Para recusar endereços de e-mail de determinados domínios, introduza aqui a lista dos mesmos, separados por espaços. Todos os outros domínios serão aceites. Por exemplo: <strong>hotmail.com yahoo.co.uk live.com</strong>';
 $string['configdisableuserimages'] = 'Se ativar esta configuração os utilizadores não poderão alterar a sua fotografia no perfil de utilizador.';
-$string['configdisplayloginfailures'] = 'Isto irá exibir informação aos utilizadores sobre as tentativas de autenticação falhadas.';
+$string['configdisplayloginfailures'] = 'Se ativar esta opção, serão exibidas informação aos utilizadores sobre as tentativas de autenticação falhadas anteriormente.';
 $string['configdndallowtextandlinks'] = 'Permite que, em simultâneo com a possibilidade de arrastar e largar ficheiros para uma página de disciplina, possa arrastar e largar texto e hiperligações. Note que arrastar texto para o Firefox, ou entre diferentes navegadores, não é fiável, podendo acontecer que nenhuma informação seja carregada ou o texto carregado fique corrompido.';
 $string['configdoclang'] = 'Idioma que será usado nas hiperligações para as páginas de documentação.';
 $string['configdocroot'] = 'Define o URL para o Moodle Docs para fornecer documentação adaptada ao contexto através da hiperligação "Documentação Moodle para esta página" no rodapé de cada página. Se o campo for deixado em branco, as hiperligações não serão exibidas.';
@@ -259,12 +259,12 @@ $string['configfrontpage'] = 'Esta configuração permite definir qual a informa
 $string['configfrontpagecourselimit'] = 'Número máximo de disciplinas';
 $string['configfrontpagecourselimithelp'] = 'Número máximo de disciplinas a serem exibidas nas listas de disciplinas na página principal.';
 $string['configfrontpageloggedin'] = 'Esta configuração permite definir qual a informação a apresentar aos utilizadores quando estes estão autenticados.';
-$string['configfullnamedisplay'] = 'Forma como os nomes completos são mostrados. Na generalidade dos sites a forma mais comum é "nome + apelido", mas é possível ocultar o apelido ou mostrar de acordo com o critério definido no pacote linguístico do idioma que estiver a ser usado (alguns idiomas têm convenções diferentes).
+$string['configfullnamedisplay'] = 'Define como são mostrados os nomes completos. Na generalidade dos sites o formato mais comum é "nome + apelido", mas é possível ocultar o apelido ou mostrar de acordo com o critério definido no pacote linguístico do idioma que estiver a ser usado (alguns idiomas têm convenções diferentes).
 
 Para a maioria dos sites com apenas um idioma instalado, a configuração mais eficiente é "firstname lastname" ("nome apelido"), mas pode optar por ocultar completamente os apelidos.
 
-Podem se usudos os seguintes espaços reservados: firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, e alternatename.';
-$string['configgeoipfile'] = 'Localização do ficheiro binário de dados do GeoLite2 City. Este ficheiro não faz parte da distribuição do Moodle e deverá ser obtido separadamente em <a href="https://www.maxmind.com/">MaxMind</a>.<br />É possível comprar uma versão comercial ou utilizar a versão gratuita. Pode descarregar o ficheiro em <a href="https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a> e extraí-lo para a diretoria "{$a}" no seu servidor.';
+Podem ser usados os seguintes espaços reservados: firstname, lastname, firstnamephonetic, lastnamephonetic, middlename e alternatename.';
+$string['configgeoipfile'] = 'Localização do ficheiro binário de dados do GeoLite2 City. Este ficheiro não faz parte da distribuição do Moodle e deverá ser obtido separadamente em <a href="https://www.maxmind.com/">MaxMind</a>.<br />É possível comprar uma versão comercial ou utilizar a versão gratuita. Tem de se registar para descarregar o ficheiro da base de dados da cidade, o que pode ser feito em <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>. Depois de registar-se e descarregar o ficheiro, extraia-o para a diretoria "{$a}" do seu servidor.';
 $string['configgetremoteaddrconf'] = 'Se o acesso ao Moodle for feito através de um <em>Reverse Proxy</em> é possível especificar neste campo que cabeçalhos HTTP são mais fiávies para obter o endereço IP externo. Os cabeçalhos são lidos por ordem sendo usado o primeiro que se encontrar disponível.';
 $string['configgradebookroles'] = 'Esta opção permite controlar quem aparece na pauta. Só constarão da pauta duma disciplina os utilizadores que desempenham pelo menos um destes papéis nessa disciplina.';
 $string['configgradeexport'] = 'Selecione os formatos principais que usa para exportar as notas da pauta. Os módulos selecionados configurarão e usarão o campo "Última exportação" associado a cada nota. Por exemplo, isto poderá fazer com que os registos exportados sejam identificados como "novos" ou "atualizados". Se não tiver a certeza sobre como configurar esta opção, não selecione qualquer formato.';
@@ -327,7 +327,7 @@ $string['configproxypassword'] = 'Senha necessária para aceder à Internet atra
 $string['configproxyport'] = 'Se este servidor precisar de usar um proxy, escreva aqui a porta do proxy.';
 $string['configproxytype'] = 'Tipo de web proxy (é necessário o PHP5 e a extensão cURL para suportar SOCKS5)';
 $string['configproxyuser'] = 'Nome de utilizador necessário para aceder à Internet através do proxy, se necessário, ou vazio se não necessário (é necessária a extensão cURL do PHP)';
-$string['configrecaptchaprivatekey'] = 'Sequência de caracteres (Chave privada) utilizada na comunicação entre o servidor Moodle e o servidor recaptcha. As chaves reCAPTCHA podem ser obtidas em <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
+$string['configrecaptchaprivatekey'] = 'Sequência de caracteres (Chave privada) utilizada na comunicação entre o servidor Moodle e o servidor reCAPTCHA. As chaves reCAPTCHA podem ser obtidas em <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['configrecaptchapublickey'] = 'Sequência de caracteres (Chave pública) utilizada para exibir o elemento reCAPTCHA no formulário de registo. As chaves reCAPTCHA podem ser obtidas em <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['configrequestcategoryselection'] = 'Permitir a seleção de uma categoria ao solicitar uma disciplina.';
 $string['configrequestedstudentname'] = 'Designação do Aluno, a usar nas disciplinas pedidas';
@@ -365,13 +365,13 @@ $string['configsmtpmaxbulk'] = 'Número máximo de mensagens enviadas por sessã
 $string['configsmtpsecure'] = 'Se o servidor SMTP requerer uma ligação segura, especifique o tipo de protocolo correto.';
 $string['configsmtpuser'] = 'Se acima especificou um servidor SMTP e o servidor requer autenticação, digite o nome de utilizador e a senha.';
 $string['configstartwday'] = 'Primeiro dia da semana';
-$string['configstatsfirstrun'] = 'Esta opção especifica qual a antiguidade dos registos de atividade que serão processados <strong>na primeira vez</strong> que o cronjob processar as estatísticas. Se tiver muito tráfego e usar um servidor partilhado, não é aconselhado o processamento de registos muito antigos, pois poderá demorar muito tempo e consume muitos recursos do servidor. (Note que para esta definição, 1 Mês = 28 Dias. Nos gráficos e relatórios gerados, 1 Mês = 1 Mês do Calendário)';
+$string['configstatsfirstrun'] = 'Esta opção especifica qual a antiguidade dos registos de atividade que serão processados <strong>na primeira vez</strong> que o cron processar as estatísticas. Se tiver muito tráfego e usar um servidor partilhado, não é aconselhado o processamento de registos muito antigos, pois poderá demorar muito tempo e consome muitos recursos do servidor. (Tenha em atenção que para esta definição, 1 mês = 28 Dias. Nos gráficos e relatórios gerados, 1 mês = 1 mês do calendário)';
 $string['configstatsmaxruntime'] = 'O processamento das estatísticas pode ser muito intensivo, por isso use uma combinação desta opção com a próxima para especificar quando irá ter lugar e durante quanto tempo.';
-$string['configstatsmaxruntime2'] = 'O processamento das estatísticas pode ser muito intensivo. Defina o tempo máximo permitido para o processamento de estatísticas de um dia. O número máximo de dias processados por cada execução do cron é de 3.';
-$string['configstatsmaxruntime3'] = 'Esta configuração especifica o tempo máximo permitido para calcular as estatísticas de um dia, tendo em conta que o processamento das estatísticas pode sobrecarregar o servidor. O número máximo de dias processados num cron pode ser especificado abaixo.';
-$string['configstatsruntimedays'] = 'Esta configuração especifica o número máximo de dias processados em cada execução das estatísticas. Assim que as estatísticas estão atualizadas, apenas um dia será processado (ajuste este valor em função da capacidade do seu servidor, reduzindo-o se for necessário encurtar o tempo de execução do cron).';
+$string['configstatsmaxruntime2'] = 'O processamento das estatísticas pode ser muito intensivo. Defina o tempo máximo permitido para o processamento das estatísticas de um dia. O número máximo de dias processados por cada execução do cron é de 31.';
+$string['configstatsmaxruntime3'] = 'Tempo máximo permitido para calcular as estatísticas de um dia, tendo em conta que o processamento das estatísticas pode sobrecarregar o servidor. O número máximo de dias processados, em cada execução do cron, pode ser especificado abaixo.';
+$string['configstatsruntimedays'] = 'Número máximo de dias processados em cada execução das estatísticas. Assim que as estatísticas estão atualizadas, apenas um dia será processado (ajuste este valor em função da capacidade do seu servidor, reduzindo-o se for necessário encurtar o tempo de execução do cron).';
 $string['configstatsruntimestart'] = 'A que horas deverá iniciar o cronjob que executa o processamento das estatísticas? Especifique horas diferentes se existirem diversos sites Moodle alojados no mesmo servidor.';
-$string['configstatsuserthreshold'] = 'Número mínimo de utilizadores inscritos que uma disciplina deve ter para ser incluído nas estatísticas.';
+$string['configstatsuserthreshold'] = 'Número mínimo de utilizadores inscritos que uma disciplina deve ter para seja incluída nas estatísticas.';
 $string['configstrictformsrequired'] = 'Se ativado, os utilizadores são impedidos de inserir apenas um espaço ou quebra de linha nos campos obrigatórios dos formulários.';
 $string['configstripalltitletags'] = 'Se desativar esta configuração as <em>tags</em> HTML existentes nos nomes das atividades e recursos das disciplinas deixarão de ser removidas.';
 $string['configsupportemail'] = 'Este endereço de e-mail será divulgado aos utilizadores deste site como sendo o e-mail para pedidos de ajuda (por exemplo, quando os utilizadores criam as suas próprias contas). Se este e-mail estiver em branco, não será fornecido nenhum contacto para ajuda.';
@@ -396,7 +396,7 @@ $string['confirmcontextlock'] = '\'{$a->contextname}\' está atualmente desbloqu
 $string['confirmcontextunlock'] = '{$a->contextname} está atualmente bloqueado. O desbloqueio permitirá aos utilizadores fazerem alterações. Tem a certeza de que pretende continuar?';
 $string['confirmdeletecomments'] = 'Tem a certeza de que pretende apagar comentários?';
 $string['confirmed'] = 'Confirmado';
-$string['contextlockappliestoadmin'] = 'O bloqueio de contextos aplica-se a administradores';
+$string['contextlockappliestoadmin'] = 'Bloqueio de contextos aplica-se a administradores';
 $string['contextlockappliestoadmin_desc'] = 'Se desativar esta opção, os administradores permanecem com acesso de escrita a qualquer contexto bloqueado.';
 $string['contextlocking'] = 'Bloqueio de contextos';
 $string['contextlocking_desc'] = 'Esta configuração permite atribuir acesso "só de leitura" a categorias, disciplinas, atividades ou blocos selecionados.';
@@ -577,7 +577,7 @@ $string['filtersettings'] = 'Gerir filtros';
 $string['filtersettingsgeneral'] = 'Definições gerais dos filtros';
 $string['filteruploadedfiles'] = 'Filtrar envios de ficheiros';
 $string['forceclean'] = 'Limpeza geral de conteúdos';
-$string['forceclean_desc'] = 'O conteúdo adicionado ao site é normalmente limpo antes de ser mostrado, para remover tudo o que possa ser uma ameaça à segurança. No entanto, o conteúdo não é limpo em determinados locais, como descrições de atividades, recursos de páginas ou blocos HTML para permitir que scripts, ficheiros multimédia, molduras incorporadas, etc. sejam adicionados. Se ativar esta configuração, TODO o conteúdo será limpo. Isto pode resultar que o conteúdo existente não seja mostrado corretamente.';
+$string['forceclean_desc'] = 'O conteúdo adicionado ao site é normalmente limpo antes de ser mostrado, para remover tudo o que possa ser uma ameaça à segurança. No entanto, o conteúdo não é limpo em determinados locais, tais como, descrições das atividades, páginas ou blocos HTML, para permitir que sejam adicionados scripts, ficheiros multimédia, molduras incorporadas, etc. Se ativar esta configuração, TODO o conteúdo será limpo. Isto pode resultar que o conteúdo existente não seja mostrado corretamente.';
 $string['forcelogin'] = 'Forçar autenticação dos utilizadores';
 $string['forceloginforprofileimage'] = 'Forçar os utilizadores a autenticarem-se para visualizarem as fotos dos utilizadores';
 $string['forceloginforprofileimage_help'] = 'Se ativar esta opção, os utilizadores devem autenticar-se para verem fotos de perfil e a imagem de utilizador predefinida será usada em todos os e-mails de notificação.';
@@ -677,8 +677,8 @@ $string['libcurlwarning'] = 'Foi detetado que o libcurl não tem suporte para o 
 $string['licensesettings'] = 'Definições da licença';
 $string['linkadmincategories'] = 'Hiperligações para as categorias admin';
 $string['linkadmincategories_help'] = 'Se ativar esta opção, as categorias de configurações da Administração do Site serão mostradas como hiperligações na Navegação apontando para as páginas de configurações da categoria.';
-$string['linkcoursesections'] = 'Interligar sempre as secções da disciplina';
-$string['linkcoursesections_help'] = 'Tentar sempre fornecer uma interligação entre as secções da disciplina. As secções das disciplinas são habitualmente visualizadas apenas como hiperligações caso o formato da disciplina esteja definido para apresentar apenas uma secção por página. Se ativar esta opção, será sempre disponibilizada uma hiperligação.';
+$string['linkcoursesections'] = 'Hiperligações para as secções da disciplina';
+$string['linkcoursesections_help'] = 'Tentar sempre disponibilizar uma hiperligação para as secções da disciplina. As hiperligações para as secções da disciplina estão sempre disponíveis quando o formato da disciplina está definido para apresentar apenas uma secção por página. Se ativar esta opção, será sempre disponibilizada uma hiperligação.';
 $string['loading'] = 'A carregar';
 $string['localetext'] = 'Locale do site';
 $string['localstringcustomization'] = 'Personalização local do idioma';
@@ -749,6 +749,7 @@ $string['maxtimelimit'] = 'Tempo limite máximo';
 $string['maxtimelimit_desc'] = 'Para restringir o tempo máximo de execução PHP que o Moodle permitirá, sem que qualquer resultado seja exibido, digite um valor em segundos aqui. "0" significa que as restrições predefinidas do Moodle estão a ser usadas. Se tem um servidor de front-end com o seu próprio limite de tempo, defina este valor para um número mais baixo para receber os erros de PHP nos registos de atividade. Não se aplica aos scripts CLI.';
 $string['maxusersperpage'] = 'Número máximo de utilizadores por página';
 $string['mbstringrecommended'] = 'É recomendada a instalação da extensão MBSTRING do PHP para um melhor desempenho do site, principalmente se o site utiliza idiomas não-latinos.';
+$string['mbstringrequired'] = 'É necessário instalar a biblioteca MBSTRING para melhorar o desempenho do site, principalmente se o seu site oferecer suporte a idiomas não latinos.';
 $string['mediapluginavi'] = 'Ativar filtro .avi';
 $string['mediapluginflv'] = 'Ativar filtro .flv';
 $string['mediapluginimg'] = 'Ativar incorporação automática de imagens com hiperligações.';
@@ -774,7 +775,7 @@ $string['minpasswordlength'] = 'Dimensão da senha';
 $string['minpasswordlower'] = 'Letras minúsculas';
 $string['minpasswordnonalphanum'] = 'Caracteres não alfanuméricos';
 $string['minpasswordupper'] = 'Letras maiúsculas';
-$string['misc'] = 'Outros';
+$string['misc'] = 'Diversos';
 $string['mnetrestore_extusers'] = '<strong>Nota:</strong> Esta cópia de segurança contém contas remotas de utilizadores da Rede Moodle que serão restauradas como parte do processo.';
 $string['mnetrestore_extusers_admin'] = '<strong>Aviso:</strong> Este ficheiro da cópia de segurança parece provir de uma instalação Moodle diferente e contêm contas de utilizador remotas de Rede Moodle. O processo de restauro irá tentar identificar a Rede de anfitriões Moodle para todos os utilizadores criados. Aqueles que não coincidirem serão automaticamente registados com autenticação interna (em vez do mnet). O registo do restauro conterá informação detalhada sobre estas ocorrências.';
 $string['mnetrestore_extusers_mismatch'] = '<strong>Nota:</strong> Esta cópia de segurança aparentemente tem origem numa instalação diferente do Moodle e contém contas de utilizadores remotos da Rede Moodle que podem não ser restauradas com sucesso. Esta operação não é suportada. Se tem a certeza de que foi criada nesta instalação do Moodle, ou se garantir que todos os servidores da Rede Moodle necessários estão configurados, pode querer tentar restaurar.';
@@ -799,7 +800,7 @@ $string['moodlepartners_help'] = '<p>Parceiros Moodle são fornecedores de servi
 <a href="https://moodle.com/partners"> Encontre um parceiro</a>';
 $string['moodleservices'] = 'Serviços Moodle';
 $string['moodleservices_help'] = 'Certifique-se que obtém o melhor do ambiente de aprendizagem Moodle usando estes serviços Moodle:';
-$string['multilangforceold'] = 'Forçar sintaxe multilingue antiga:<span> sem a class="multilang" e <lang>';
+$string['multilangforceold'] = 'Forçar sintaxe multilingue antiga: &lt;span&gt; sem a class="multilang" e &lt;lang&gt;';
 $string['mustenablestats'] = 'As estatísticas ainda não foram ativadas neste site.';
 $string['mycoursesperpage'] = 'Número de disciplinas';
 $string['mydashboard'] = 'Painel predefinido de controlo do sistema';
@@ -882,7 +883,7 @@ $string['pathtopsqlinvalid'] = 'O caminho indicado para <strong>psql</strong> é
 $string['pathtopython'] = 'Caminho para Python';
 $string['pathtopythondesc'] = 'Caminho para o binário Python executável (Python 2 e Python 3 são aceites).';
 $string['pathtosassc'] = 'Caminho para SassC';
-$string['pathtosassc_help'] = 'Ao especificar a localização do binário SassC mudará o compilador SASS da implementação PHP do Moodle para SassC. Visite https://github.com/sass/sassc para mais informações.';
+$string['pathtosassc_help'] = 'Ao especificar a localização do binário SassC mudará o compilador SASS da implementação PHP do Moodle para SassC. Para mais informações, visite https://github.com/sass/sassc .';
 $string['pcreunicodewarning'] = 'É extremamente recomendado usar a extensão PCRE PHP que é compatível como os caracteres Unicode.';
 $string['perfdebug'] = 'Informação de desempenho';
 $string['performance'] = 'Desempenho';
@@ -899,7 +900,7 @@ $string['pluginscheck'] = 'Conferir dependências dos módulos';
 $string['pluginscheckfailed'] = 'A verificação de dependências falhou para {$a->pluginslist}';
 $string['pluginschecktodo'] = 'Tem de resolver todas as exigências do módulo antes de prosseguir para instalar esta versão do Moodle!';
 $string['pluginsoverview'] = 'Lista de módulos instalados';
-$string['pluginsoverviewsee'] = 'Consulte a página <a href="{$a->url}">Lista de Módulos Instalados</a> para mais detalhes.';
+$string['pluginsoverviewsee'] = 'Consulte a página \'<a href="{$a->url}">Lista de módulos instalados</a>\' para mais detalhes.';
 $string['policysettings'] = 'Configurações da política';
 $string['privacyandpolicies'] = 'Privacidade e políticas';
 $string['privacy:metadata'] = 'O módulo de administração não armazena dados pessoais';
@@ -995,15 +996,15 @@ $string['purgeselectedcachesfinished'] = 'As caches selecionadas foram esvaziada
 $string['purgethemecache'] = 'Temas';
 $string['query'] = 'Pesquisa';
 $string['question'] = 'Pergunta';
-$string['questionbehaviours'] = 'Comportamentos das perguntas';
+$string['questionbehaviours'] = 'Comportamento das perguntas';
 $string['questioncwqpfscheck'] = 'Uma ou mais perguntas \'aleatórias\' num teste foram configuradas para selecionar perguntas de uma mistura de categorias partilhadas e não partilhadas. Existe um <a href="{$a->reporturl}">relatório mais completo </a> e deve consultar
 <a href="{$a->docsurl}">esta página do Moodle Docs</a>.';
 $string['questioncwqpfsok'] = 'Bom! Não existem nos seus testes perguntas aleatórias configuradas para selecionar perguntas de uma mistura de categorias partilhadas e não partilhadas.';
 $string['questiontype'] = 'Tipo de pergunta';
 $string['questiontypes'] = 'Tipos de perguntas';
 $string['quizattemptsupgradedmessage'] = 'No Moodle 2.1 houve uma grande atualização para as perguntas do teste. Foi possível atrasar partes da atualização da base de dados a serem executadas mais tarde. Deve concluir essa atualização antes de atualizar para o Moodle 2.7';
-$string['recaptchaprivatekey'] = 'Chave secreta do ReCAPTCHA';
-$string['recaptchapublickey'] = 'Chave do site ReCAPTCHA';
+$string['recaptchaprivatekey'] = 'Chave secreta do reCAPTCHA';
+$string['recaptchapublickey'] = 'Chave de site do reCAPTCHA';
 $string['register'] = 'Registe o seu site';
 $string['registermoodlenet'] = '<p>Gostaríamos muito de ficar em contacto para lhe disponibilizar coisas importantes para o seu site Moodle!</p><p>Ao registar o seu site:</p><ul><li>Pode subscrever-se para receber notificações de novos lançamentos do Moodle, alertas de segurança e outras notícias importantes.</li><li>Pode aceder e ativar o envio de notificações móveis a partir do seu site através da <a href="https://download.moodle.org/mobile/">Aplicação móvel Moodle</a> gratuita.</li><li>Está a contribuir para as nossas <a href="https://moodle.net/stats/">estatísticas Moodle</a> da comunidade mundial, que nos ajudam a melhorar o Moodle e os sites da nossa comunidade.</li><li>Se desejar, o seu site pode ser incluído na <a href="https://moodle.net/sites/">lista de sites Moodle registados</a> no seu país.</li></ul>';
 $string['registermoodleorg'] = 'Quando regista o seu site';
@@ -1143,7 +1144,7 @@ $string['stats'] = 'Estatísticas';
 $string['statsfirstrun'] = 'Intervalo máximo de processamento';
 $string['statsmaxruntime'] = 'Tempo máximo de execução';
 $string['statsmoodleorg'] = 'estatísticas';
-$string['statsruntimedays'] = 'Dias para ser processado';
+$string['statsruntimedays'] = 'Dias para processamento';
 $string['statsruntimestart'] = 'Horário de execução';
 $string['statsuserthreshold'] = 'Limite de utilizadores';
 $string['stickyblocks'] = 'Blocos Persistentes';

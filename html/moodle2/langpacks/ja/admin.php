@@ -275,7 +275,7 @@ $string['configfullnamedisplay'] = 'ここでは氏名がどのように表示�
 
 単一言語を使用したほとんどのサイトでは「名 + 姓」を使用した方が良いでしょう。しかし、あなたは姓を完全に隠すこともできます。使用できるプレースホルダは次のとおりです:
 firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, alternatename';
-$string['configgeoipfile'] = 'GeoLite2 City バイナリデータファイルのロケーションです。このファイルはMoodleディストリビューションの一部ではなく、<a href="https://www.maxmind.com/">MaxMind</a>から個別に取得する必要があります。あなたは商用バージョンを購入、または無料バージョンを使用することができます。無料バージョンの場合、<a href="https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a>からダウンロードした後、あなたのサーバの「 {$a} 」ディレクトリに展開してください。';
+$string['configgeoipfile'] = 'GeoLite2 Cityバイナリデータファイルのロケーションです。このファイルはMoodleディストリビューションの一部ではなく、<a href="https://www.maxmind.com/">MaxMind</a>から個別に取得する必要があります。あなたは商用バージョンを購入または無料バージョンを使用できます。<a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>からダウンロードできるCityデータベースファイルをダウンロードする場合、あなたは登録する必要があります。あなたが登録してファイルをダウンロードした後、あなたのサーバの「 {$a} 」ディレクトリで展開してください。';
 $string['configgetremoteaddrconf'] = 'リバースプロキシの背後にサーバを設置している場合、あなたはリモートIPアドレスを含んだ信頼できるHTTPヘッダを指定することができます。ヘッダは順番に読まれ最初の有効なヘッダが使用されます。';
 $string['configgradebookroles'] = 'ここでは誰が評定表に表示されるか設定することができます。ユーザがコース評定表で表示されるためにはこれらの中から少なくとも１つのロールを割り当ててください。';
 $string['configgradeexport'] = 'どの評定表エクスポートフォーマットをあなたの主要な評定表エクスポート方法にするか選択してください。選択されたフォーマットのプラグインが設定され、すべての評定の「最新エクスポート」フィールドに使用されます。例えばエクスポートされたレコードは「新規」または「更新」レコードとして認識されます。この設定に関して自信を持てない場合、すべてをチェックしないままにしてください。';
@@ -766,6 +766,7 @@ $string['maxtimelimit'] = '最大制限時間';
 $string['maxtimelimit_desc'] = 'Moodleが許可するPHP最大実行時間を出力表示なしで制限するにはここに値 (秒) を入力してください。ゼロはMoodleのデフォルト制限が使用されることを意味します。あなたが独自の制限時間を持ったフロントエンドサーバを使用する場合、この値を低くすることでPHPエラーをログに受け付けることになります。CLIスクリプトには適用されません。';
 $string['maxusersperpage'] = '1ページあたりのユーザ数';
 $string['mbstringrecommended'] = 'サイトパフォーマンスを改善するため、mbstringライブラリのインストールおよび稼動を強くお勧めします。あなたのサイトがラテン文字以外をサポートしている場合、特にお勧めします。';
+$string['mbstringrequired'] = '特にあなたのサイトが非ラテン言語をサポートしている場合、サイトパフォーマンスを改善するためmbstringライブラリのインストールは必須です。';
 $string['mediapluginavi'] = '.aviフィルタを有効にする';
 $string['mediapluginflv'] = '.flvフィルタを有効にする';
 $string['mediapluginimg'] = 'リンクイメージの自動埋め込みを有効にする';
@@ -890,11 +891,11 @@ $string['pathtodu'] = 'duのパス';
 $string['pathtogs'] = 'Ghostscriptのパス';
 $string['pathtogs_help'] = 'ほとんどのLinuxインストールの場合、ここは「/usr/bin/gs」のままにしてください。Windowsでは「c:\\gs\\bin\\gswin32c.exe」のようになります (パスの間にスペースがないことを確認してください - 必要であれば、ファイル「gswin32c.exe」および「gsdll32.dll」をパス内にスペースを入れずに新しいフォルダにコピーしてください)。';
 $string['pathtopgdump'] = 'pg_dumpのパス';
-$string['pathtopgdumpdesc'] = 'あなたのシステムに2つ以上のpg_dumpが存在する場合 (例 1つ以上のバージョンのpostgresqlがインストールされている場合) のみ入力する必要があります。';
+$string['pathtopgdumpdesc'] = 'あなたのシステムに2つ以上のpg_dumpが存在する場合 (例 2つ以上のバージョンのpostgresqlがインストールされている場合) のみ入力する必要があります。';
 $string['pathtopgdumpinvalid'] = 'pg_dumpのパスが正しくありません - パスが間違っているか実行可能ではありません。';
 $string['pathtophp'] = 'PHP CLIのパス';
 $string['pathtopsql'] = 'psqlのパス';
-$string['pathtopsqldesc'] = 'あなたのシステムに2つ以上のpsqlが存在する場合 (例 1つ以上のバージョンのpostgresqlがインストールされている場合) のみ入力する必要があります。';
+$string['pathtopsqldesc'] = 'あなたのシステムに2つ以上のpsqlが存在する場合 (例 2つ以上のバージョンのpostgresqlがインストールされている場合) のみ入力する必要があります。';
 $string['pathtopsqlinvalid'] = 'psqlのパスが正しくありません - パスが間違っているか実行可能ではありません。';
 $string['pathtopython'] = 'Pythonのパス';
 $string['pathtopythondesc'] = 'あなたのPython実行バイナリのパスです (Python 2およびPython 3の両方とも設定可能です)。';

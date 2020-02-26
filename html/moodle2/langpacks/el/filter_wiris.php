@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accessproviderenabled'] = 'Έλεγχος πρόσβασης';
+$string['area'] = 'περιοχή';
+$string['clearcache'] = 'Καθαρισμός κρυφής μνήμης';
+$string['connectionsettings'] = 'Ρυθμίσεις σύνδεσης';
 $string['connectionsettings_text'] = '';
 $string['disabled'] = 'Απενεργοποιημένο';
 $string['editormodalwindowfullscreen_help'] = '';

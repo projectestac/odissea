@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_modules:addinstance'] = 'إضافة كتلة أنشطة جديدة';
 $string['pluginname'] = 'أنشطة';
+$string['privacy:metadata'] = 'يظهر صندوق الأنشطة فقط البيانات المخزنة في مواقع أخرى';

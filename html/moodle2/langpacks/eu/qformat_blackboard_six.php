@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['defaultname'] = 'Inportatutako galdera: {$a}';
 $string['errormanifest'] = 'Errorea IMS manifestua aztertzen zen bitartean';
 $string['filenothandled'] = 'Pakete honek {$a} fitxategi-materialari egiten dio erreferentzia eta momentu honetan ezin da inportatu.';
-$string['imagenotfound'] = '{$a} helbidea duen irudi-fitxategia ez da inportazioan topatu.';
+$string['imagenotfound'] = '{$a} bidea duen irudi-fitxategia ez da inportazioan topatu.';
 $string['importedcategory'] = 'Inportatutako kategoria: {$a}';
 $string['importnotext'] = 'XML fitxategian galderaren testua falta da';
 $string['notenoughtsubans'] = 'Ezin izan da {$a} elkartu motako galdera inportatu, mota honetako galderek gutxienez bi galdera eta hiru erantzun izan behar dituztelako.';

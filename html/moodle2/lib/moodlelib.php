@@ -6267,8 +6267,12 @@ function email_to_user($user, $from, $subject, $messagetext, $messagehtml = '', 
     //28.04.2011 @fcasanel
     //14.03.2012 @aginard
     //28.04.2015 @pferre22
+    //21.11.2019 @nacho: added attachments functionality
+
+    $attachments = $mail->getAttachments();
+
     if (!empty($CFG->apligestmail)) {
-        $mailsent = send_apligest_mail($mail, $user);
+        $mailsent = send_apligest_mail($mail, $user, $attachments);
     } else {
         $mailsent = $mail->send();
     }

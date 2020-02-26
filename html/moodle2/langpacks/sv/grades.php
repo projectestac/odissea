@@ -610,6 +610,7 @@ $string['showverbose'] = 'Visa {$a->category}$a->itemmodule {$a->itemname}';
 $string['showweight'] = 'Visa viktningar';
 $string['showweight_help'] = 'Ska betygsviktningskolumnen visas?';
 $string['simpleview'] = 'Enkel vy';
+$string['singleview'] = 'Enskild vy för {$a}';
 $string['sitewide'] = 'Över hela webbplatsen';
 $string['sort'] = 'Sortera';
 $string['sortasc'] = 'Sortera i stigande ordning';
