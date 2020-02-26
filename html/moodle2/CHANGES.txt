@@ -3,7 +3,21 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
-Changes 19.12.16
+Changes 20.03.02
+---------------------------------------------------------------------------------------
+- H5P: Upgraded module to version 1.20.2
+- Updated language packages
+- Theme XTEC2: Removed loading of mobile CSS
+- Upgraded all wiris plugins
+- Upgraded all vicens vives plugins
+- Upgraded module choicegroup to version 1.18
+- Upgraded question type "ordering"
+- Added support for attachments in email
+- Atto fontfamily: Fixed dependency and added RGPD compliance
+- Local mobile: Removed plugin
+
+
+Changes 19.12.16 (undeployed)
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle from v3.6.6 to v3.6.7
 - Updated language packs
