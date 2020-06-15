@@ -452,6 +452,7 @@ $string['tooltypenotdeleted'] = 'Non è stato possibile eliminare il tool precon
 $string['tooltypes'] = 'Tool';
 $string['tooltypeupdated'] = 'Il tool preconfigurato è stato aggiornato';
 $string['toolurl'] = 'URL tool';
+$string['toolurl_contentitemselectionrequest'] = 'URL della selezione dei contenuti';
 $string['toolurl_help'] = 'L\'URL del tool viene utilizzata per far corrispondere  l\'URL del tool con la relativa configurazione. Il prefisso http(s) sull\'URL è facoltativo.
 
 Inoltre, l\'URL di base viene utilizzata come URL del tool se non è stata definita una URL del tool nell\'istanza del tool esterno.

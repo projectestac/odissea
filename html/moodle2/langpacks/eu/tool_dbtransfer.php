@@ -42,5 +42,5 @@ $string['targetdatabase'] = 'Helburuko datu-basea';
 $string['targetdatabasenotempty'] = 'Helburuko datu-baseak ezin du emandako aurrizki bera duen taularik izan!';
 $string['transferdata'] = 'Transferitu datuak';
 $string['transferdbintro'] = 'Script-ak datu-base honetako eduki guztiak beste datu-base zerbitzari batera transferituko ditu. Datu-base mota ezberdinen arteko datu-migrazioak egiteko erabili ohi da.';
-$string['transferdbtoserver'] = 'Transferitu Moodle-ko datu-base hau beste zerbitzari batera';
+$string['transferdbtoserver'] = 'Transferitu Moodleko datu-base hau beste zerbitzari batera';
 $string['transferringdbto'] = '{$a->dbtypefrom} datu-basea {$a->dbtype} motako "{$a->dbname}" datu-basera transferitzen "{$a->dbhost}" -n';

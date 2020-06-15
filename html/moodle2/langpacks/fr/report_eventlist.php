@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['abstractclass'] = 'Classe abstraite';
 $string['action'] = 'Action';
-$string['affectedtable'] = 'Table affectée';
+$string['affectedtable'] = 'Table touchée';
 $string['all'] = 'Tout';
 $string['clear'] = 'Effacer';
 $string['component'] = 'Composant';

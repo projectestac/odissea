@@ -72,7 +72,7 @@ $string['eventaccesscontrolupdated'] = 'Sarbide-kontrola eguneratu da';
 $string['expired'] = 'Gako hau ondoko datan iraungi zen:';
 $string['expires'] = 'Noiz arte indarrean';
 $string['expireyourkey'] = 'Ezabatu giltza hau';
-$string['expireyourkeyexplain'] = 'Moodle-k zure gakoak 28 egunean behin (modu lehenetsian) automatikoki biratzen ditu baina edozein unetan gako hau <em>eskuz</em> iraungi dezakezu. Hau soilik gakoa arriskuan egon bada izan daiteke erabilgarria. Ordezkoa automatikoki sortuko da.<br />Gakoa ezabatuta beste aplikazioek ez dute zurekin komunikatzeko aukera izango, zuk kudeatzaile bakoitzarekin eskuz harremanetan jarri eta zure gako berria helarazi ezean.';
+$string['expireyourkeyexplain'] = 'Moodlek zure gakoak 28 egunean behin (modu lehenetsian) automatikoki biratzen ditu baina edozein unetan gako hau <em>eskuz</em> iraungi dezakezu. Hau soilik gakoa arriskuan egon bada izan daiteke erabilgarria. Ordezkoa automatikoki sortuko da.<br />Gakoa ezabatuta beste aplikazioek ez dute zurekin komunikatzeko aukera izango, zuk kudeatzaile bakoitzarekin eskuz harremanetan jarri eta zure gako berria helarazi ezean.';
 $string['exportfields'] = 'Esportatzeko eremuak';
 $string['failedaclwrite'] = 'MNet sarbide-kontrolaren zerrenda \'{$a}\' erabiltzailea idazteak huts egin du.';
 $string['findlogin'] = 'Aurkitu sarbidea';
@@ -238,7 +238,7 @@ $string['theypublish'] = 'Haiek argitaratu';
 $string['theysubscribe'] = 'Haiek harpidetu';
 $string['transport_help'] = 'Aukera hauek bi norabidetakoak dira, eta beraz, urruneko ostalari batek sinatutako SSL ziurtagiria erabiltzera behartu ahal izateko zure zerbitzariak ere sinatutako SSL ziurtagiria izan behar du.';
 $string['trustedhosts'] = 'XML-RPC ostalariak';
-$string['trustedhostsexplain'] = '<p>Konfiantzazko ostalarien mekanismoak makina konkretu batzuk XML-RPC bitartez Moodle API-ko edozein dei exekutatzeko aukera ematen du. Honek Moodle-ko jokaera script bidez kontrolatzea ahalbidetzen du eta gaitzeak arrisku handia suposa lezake. Zalantzak badituzu, desgaituta utzi.</p>
+$string['trustedhostsexplain'] = '<p>Konfiantzazko ostalarien mekanismoak makina konkretu batzuk XML-RPC bitartez Moodle API-ko edozein dei exekutatzeko aukera ematen du. Honek Moodleko jokaera script bidez kontrolatzea ahalbidetzen du eta gaitzeak arrisku handia suposa lezake. Zalantzak badituzu, desgaituta utzi.</p>
 <p><strong>Hau ez da beharrezkoa ohiko MNet funtzioentzat!</strong> Soilik gaitu zer egiten ari zaren badakizu.</p>
 <p>Aukera hau gaitzeko, sartu IP helbideen edo sareen zerrenda, bat errenkada bakoitzean. Adibide batzuk:</p>
 Zure ostalari lokala:<br />127.0.0.1<br />Zure ostalari lokala (sareko blokearekin):<br />127.0.0.1/32<br />Soilik  192.168.0.7 IP helbidea duen ostalaria:<br />192.168.0.7/32<br />192.168.0.1 eta 192.168.0.255 IP helbideen arteko edozein ostalari:<br />192.168.0.0/24<br />Edozein ostalari:<br />192.168.0.0/0<br />Jakina, azken adibidea <strong>ez</strong> da gomendatutako konfigurazio bat.';

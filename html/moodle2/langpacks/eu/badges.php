@@ -106,7 +106,7 @@ $string['backpackdetails'] = 'Motxilaren ezarpenak';
 $string['backpackemail'] = 'Helbide elektronikoa';
 $string['backpackemail_help'] = 'Zure motxilarekin lotutako helbide elektronikoa. Konektatuta zauden bitartean, gune honetan irabazitako dominak helbide elektroniko honekin lotuko dira.';
 $string['backpackemailverificationpending'] = 'Egiaztapena falta da';
-$string['backpackemailverifyemailbody'] = 'Kaixo,
+$string['backpackemailverifyemailbody'] = 'Kaixo:
 
 Zure dominen motxilara konexio berri baten eskaera egin da \'{$a->sitename}\' gunetik zure helbide elektronikoa erabilita.
 
@@ -448,7 +448,7 @@ $string['privacy:metadata:external:backpacks:badge'] = 'Dominaren izena';
 $string['privacy:metadata:external:backpacks:description'] = 'Dominaren deskribapena';
 $string['privacy:metadata:external:backpacks:image'] = 'Dominaren irudia';
 $string['privacy:metadata:external:backpacks:issuer'] = 'Emailearen inguruko informazioa';
-$string['privacy:metadata:external:backpacks:url'] = 'Dominaren informazioa ikusgarri dagoen Moodle-ko URLa';
+$string['privacy:metadata:external:backpacks:url'] = 'Dominaren informazioa ikusgarri dagoen Moodleko URLa';
 $string['privacy:metadata:issued'] = 'Emandako dominen erregistroa';
 $string['privacy:metadata:issued:dateexpire'] = 'Domina-ematea iraungitzen deneko data';
 $string['privacy:metadata:issued:dateissued'] = 'Domina-ematearen data';

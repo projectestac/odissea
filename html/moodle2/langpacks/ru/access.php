@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['access'] = 'Доступность';
-$string['accesshelp'] = 'Справка о доступности';
+$string['accesshelp'] = 'Помощь по доступности';
 $string['accesskey'] = 'Ключ доступа, {$a}';
-$string['accessstatement'] = 'Доступность отчета';
+$string['accessstatement'] = 'Заявление о доступности';
 $string['activitynext'] = 'Следующий элемент курса';
 $string['activityprev'] = 'Предыдущий элемент курса';
 $string['breadcrumb'] = 'Панель навигации';

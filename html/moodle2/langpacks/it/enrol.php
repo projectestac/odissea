@@ -118,6 +118,7 @@ $string['notenrollable'] = 'Non puoi iscriverti al corso.';
 $string['notenrolledusers'] = 'Altri utenti';
 $string['otheruserdesc'] = 'Gli utenti elencati di seguito non sono iscritti al corso ma possiedono dei ruoli sia ereditati sia assegnati direttamente.';
 $string['participationactive'] = 'Attivo';
+$string['participationnotcurrent'] = 'Non attuale';
 $string['participationstatus'] = 'Stato';
 $string['participationsuspended'] = 'Sospeso';
 $string['periodend'] = 'fino al {$a}';

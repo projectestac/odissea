@@ -288,7 +288,7 @@ $string['error:nobadges'] = 'Il n\'y a pas de badge de cours ou de site accessib
 $string['error:nocohorts'] = 'Aucune cohorte.';
 $string['error:nocourses'] = 'L\'achèvement de cours n\'est activé pour aucun cours de ce site. Aucun cours n\'est donc affiché ici. L\'achèvement de cours peut être activé dans les réglages du cours.';
 $string['error:nogroups'] = '<p>Il n\'y a pas de collection publique de badges dans votre sac à badges.</p> <p>Seules les collections publiques sont affichées. Veuillez <a href="http://backpack.openbadges.org">visiter votre sac à badges</a> pour créer une collection publique.</p>';
-$string['error:nopermissiontoview'] = 'Vous n\'avez pas l\'autorisation de voir les détenteurs du badge';
+$string['error:nopermissiontoview'] = 'Vous n\'avez pas les permissions requises pour voir les détenteurs du badge';
 $string['error:nosuchbadge'] = 'Le badge d\'identifiant {$a} n\'existe pas.';
 $string['error:nosuchcohort'] = 'Attention ! Cette cohorte n\'est plus disponible.';
 $string['error:nosuchcourse'] = 'Attention ! Ce cours n\'est plus disponible.';

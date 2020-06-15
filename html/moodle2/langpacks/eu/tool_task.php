@@ -49,18 +49,16 @@ $string['resettasktodefaults_help'] = 'Honek lokalki egindako edozein aldaketa b
 $string['runnow'] = 'Exekutatu orain';
 $string['runnow_confirm'] = 'Ziur zaude \'{$a}\' zeregina orain exekutatu nahi duzula? Zeregina web-zerbitzarian exekutatuko da eta denbora bat eman dezake osatu arte.';
 $string['runpattern'] = 'Exekuzio-patroia';
-$string['scheduledtaskchangesdisabled'] = 'Moodle-ko konfigurazioan programatutako zereginen zerrendari aldaketak egitea ekidin da.';
+$string['scheduledtaskchangesdisabled'] = 'Moodleko konfigurazioan programatutako zereginen zerrendari aldaketak egitea ekidin da.';
 $string['scheduledtasks'] = 'Programatutako zereginak';
 $string['taskdisabled'] = 'Ataza desgaituta';
 $string['taskscheduleday'] = 'Eguna';
 $string['taskscheduleday_help'] = 'Programatutako zereginerako hileko egunentzako eremua. Eremuak unix cron-aren formau bera erabiltzen du. Hauek dira adibide batzuk:
-<br/>
-<ul>
-<li><strong>*</strong> Egunero</li>
-<li><strong>*/2</strong> Bi egunean behin</li>
-<li><strong>1</strong> Hileko lehen egunean</li>
-<li><strong>1,15</strong> Hileko lehen eta 15. egunean</li>
-</ul>';
+
+* <strong>*</strong> Egunero
+* <strong>*</strong> Bi egunean behin
+* <strong>*</strong> Hileko lehen egunean
+* <strong>*</strong> Hileko lehen eta 15. egunean';
 $string['taskscheduledayofweek'] = 'Asteko eguna';
 $string['taskscheduledayofweek_help'] = 'Programatutako zereginerako asteko egunentzako eremua. Eremuak unix cron-aren formau bera erabiltzen du. Hauek dira adibide batzuk:
 

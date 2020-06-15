@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = '\'{$a->role_shortname}\' rola esleitzen \'{$a->user_username}\' erabiltzaileari \'{$a->course_shortname}\'  ikastaroan (id {$a->course_id})';
 $string['assignrolefailed'] = 'Huts egin du \'{$a->role_shortname}\' rola esleitzean \'{$a->user_username}\' erabiltzaileari \'{$a->course_shortname}\' ikastaroan (id {$a->course_id})';
-$string['autocreate'] = '<p>Ikastaroak era automatikoan sor daitezke oraindik ere Moodle-n existitzen ez den ikastaro batean matrikulazioak badaude.</p><p>Ikastaro sorrera automatikoa erabiltzen baduzu, gomendagarria da gaitasun hauek rol garrantzitsuenei ezgaitzea: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname eta moodle/course:changesummary. Horrela, goian aipatutako lau ikastaro eremuak aldatzea debekatuko da (ID zenbakia, izen laburra, izen osoa eta laburpena).</p>';
+$string['autocreate'] = '<p>Ikastaroak era automatikoan sor daitezke oraindik ere Moodlen existitzen ez den ikastaro batean matrikulazioak badaude.</p><p>Ikastaro sorrera automatikoa erabiltzen baduzu, gomendagarria da gaitasun hauek rol garrantzitsuenei ezgaitzea: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname eta moodle/course:changesummary. Horrela, goian aipatutako lau ikastaro eremuak aldatzea debekatuko da (ID zenbakia, izen laburra, izen osoa eta laburpena).</p>';
 $string['autocreate_key'] = 'Sortu automatikoki';
 $string['autocreation_settings'] = 'Ikastaroak era automatikoan sortzeko ezarpenak';
 $string['autoupdate_settings'] = 'Ikastaroak era automatikoan eguneratzeko ezarpenak';

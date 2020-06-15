@@ -63,7 +63,7 @@ $string['cannotaccesspresentsother'] = 'Ez duzu beste erabiltzaile batzuen aurre
 $string['cannotadd'] = 'Ezin duzu sarrerarik gehitu!';
 $string['cannotdeletepreset'] = 'Errorea aurretiko ezarpena ezabatzean!';
 $string['cannotoverwritepreset'] = 'Errorea aurretiko ezarpenak gainidaztean';
-$string['cannotunziptopreset'] = 'Ezin izan da aurretiko ezarpenen karpeta deskonprimatu';
+$string['cannotunziptopreset'] = 'Ezin izan da aurretiko ezarpenen direktoriora deskonprimatu';
 $string['checkbox'] = 'Aukera anitzeko laukitxoa';
 $string['chooseexportfields'] = 'Aukeratu esportatu nahi duzun eremua';
 $string['chooseexportformat'] = 'Aukeratu zein formatuta esportatu nahi duzun hona:';
@@ -89,7 +89,7 @@ $string['csvfailed'] = 'Ezin dira datu gordinak irakurri CSV fitxategi honetatik
 $string['csvfile'] = 'CSV fitxategia';
 $string['csvimport'] = 'CSV fitxategia inportatu';
 $string['csvimport_help'] = 'Sarrerak testu-soileko fitxategi batetik inportatu daitezke, lehen errenkadan eremuen izenak eta hurrengo errenkadetan datuak daudela, errenkada bakoitzean erregistro bakarra sartuta.';
-$string['csvwithselecteddelimiter'] = '<acronym title="Komaz Banatutako Balioak">CSV</acronym> testua eta aukeratutako banatzailea';
+$string['csvwithselecteddelimiter'] = '<acronym title="Komaz Banatutako Balioak">CSV</acronym>&nbsp;testua eta aukeratutako hurrengo banatzailea:';
 $string['data:addinstance'] = 'Gehitu datu-base berria';
 $string['data:approve'] = 'Onartu eta bertan behera utzi onartutako sarrerak';
 $string['data:comment'] = 'Idatzi iruzkinak';
@@ -285,7 +285,7 @@ $string['number'] = 'Zenbakia';
 $string['numberrssarticles'] = 'Sarrerak RSS jarioan';
 $string['numnotapproved'] = 'Onarpenaren zain';
 $string['numrecords'] = '{$a} sarrera';
-$string['ods'] = '<acronym title="OpenDocument-eko Kalkulu-orria">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<acronym title="OpenDocument-eko Kalkulu-orria">ODS</acronym>&nbsp;(OpenOffice)';
 $string['openafterclose'] = 'Zehaztu duzun hasiera-data amaiera-data baino beranduagokoa da.';
 $string['optionaldescription'] = 'Deskribapen motza (aukerazkoa)';
 $string['optionalfilename'] = 'Fitxategi-izena (aukerazkoa)';

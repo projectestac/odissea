@@ -81,8 +81,8 @@ $string['check_noauth_name'] = 'Autentifikatu gabe';
 $string['check_noauth_ok'] = '\'Autentifikatu gabe\' plugina desgaituta dago.';
 $string['check_nodemodules_details'] = '<p><em>{$a->path}</em> karpetak Node.js moduluak eta euren menpekotasunak ditu, normalean NPM bitartez instalatuta. Modulu hauek Moodle-ko garapen lokalerako beharrezkoak izan daitezke, esaterako grunt framework-a erabiltzeko. Ez dira behar lanean dagoen Moodle gune batean, eta potentzialki urruneko erasotzaileei kodea erakusteko arriskua dago.</p>
 <p>Karpeta hori ezabatzea irmoki gomendatzen da gunea URL publiko baten bitartez eskuragarri badago, edo gutxienez zure web-zerbitzariaren konfigurazioan bertara web bidezko sarbidea ukatzea.</p>';
-$string['check_nodemodules_info'] = 'node_modules karpetak ez luke gune publikoetan egon behar.';
-$string['check_nodemodules_name'] = 'Node.js moduluen karpeta';
+$string['check_nodemodules_info'] = 'node_modules direktorioak ez luke gune publikoetan egon behar.';
+$string['check_nodemodules_name'] = 'Node.js moduluen direktorioa';
 $string['check_openprofiles_details'] = 'Spam-bidaltzaileek erabiltzaile-profil irekiak baliatu ditzakete. Gomendatzen da <code>Behartu erabiltzaileak identifikatzera profilak ikusi ahal izateko</code> edo <code>Behartu erabiltzaileak identifikatzera</code> gaituta egotea.';
 $string['check_openprofiles_error'] = 'Edozeinek erabiltzaileen profilak ikus ditzake saioa hasi gabe ere.';
 $string['check_openprofiles_name'] = 'Erabiltzaile-profil irekiak';
@@ -118,16 +118,16 @@ $string['check_riskxss_details'] = '<p>RISK_XSS soilik konfiantzazko erabiltzail
 <p>{$a}</p>';
 $string['check_riskxss_name'] = 'XSS konfiantzazko erabiltzaileak';
 $string['check_riskxss_warning'] = 'RISK_XSS - konfiantzazkoak izan beharko liratekeen {$a} erabiltzaile aurkitu dira.';
-$string['check_unsecuredataroot_details'] = '<p>dataroot karpeta ez litzateke web bidez eskuragarri egon beharko. Karpeta web bidez eskuragarri ez dagoela ziurtatzeko modurik onena web-karpeta publikotik kanpoko karpeta bat erabiltzea da.</p>
-<p>Karpeta mugitzen baduzu, <code>config.php</code> fitxategiko <code>$CFG->dataroot</code> ezarpenean aldaketa bera egin beharko duzu.</p>';
-$string['check_unsecuredataroot_error'] = 'Zure <code>{$a}</code> dataroot karpeta okerreko kokagunean dago eta web bidez eskuragarri dago!';
+$string['check_unsecuredataroot_details'] = '<p>dataroot direktorioa ez litzateke web bidez eskuragarri egon beharko. Direktorioa web bidez eskuragarri ez dagoela ziurtatzeko modurik onena web-direktorio publikotik kanpoko direktorio bat erabiltzea da.</p>
+<p>Direktorioa mugitzen baduzu, <code>config.php</code> fitxategiko <code>$CFG->dataroot</code> ezarpenean aldaketa bera egin beharko duzu.</p>';
+$string['check_unsecuredataroot_error'] = 'Zure <code>{$a}</code> dataroot direktorioa okerreko kokagunean dago eta web bidez eskuragarri dago!';
 $string['check_unsecuredataroot_name'] = 'dataroot ez da segurua';
-$string['check_unsecuredataroot_ok'] = 'Dataroot karpetak ez du web bidez eskuragarri egon behar.';
-$string['check_unsecuredataroot_warning'] = 'Zure <code>{$a}</code> dataroot karpeta okerreko kokagunean dago eta web bidez eskuragarri egon daiteke.';
+$string['check_unsecuredataroot_ok'] = 'Dataroot direktorioak ez du web bidez eskuragarri egon behar.';
+$string['check_unsecuredataroot_warning'] = 'Zure <code>{$a}</code> dataroot direktorioa okerreko kokagunean dago eta web bidez eskuragarri egon daiteke.';
 $string['check_vendordir_details'] = '<p><em>{$a->path}</em> karpetak bitartekoen liburutegiak eta euren menpekotasunak ditu, normalean PHP composer bitartez instalatutakoak. Liburutegi hauek Moodle-ko garapen lokalerako beharrezkoak izan daitezke, esaterako PHPUnit framework-a instalatzeko. Ez dira behar lanean dagoen Moodle gune batean, eta potentzialki urruneko erasotzaileei kodea erakusteko arriskua dago.</p>
 <p>Karpeta hori ezabatzea irmoki gomendatzen da gunea URL publiko baten bitartez eskuragarri badago, edo gutxienez zure web-zerbitzariaren konfigurazioan bertara web bidezko sarbidea ukatzea.</p>';
-$string['check_vendordir_info'] = 'vendor karpetak ez luke gune publikoetan egon behar.';
-$string['check_vendordir_name'] = 'vendor karpeta';
+$string['check_vendordir_info'] = 'vendor direktorioak ez luke gune publikoetan egon behar.';
+$string['check_vendordir_name'] = 'vendor direktorioa';
 $string['check_webcron_details'] = '<p>Cron-a web-nabigatzaile baten bitartez exekutatzeak informazio pribilegiatua erabiltzaile ezezagunei ikusgai jartzea suposatu lezake. Cron-a komando-lerro batetik baino ez exekutatzea edo bestela cron-aren urruneko sarbideetarako pasahitza zehaztea gomendatzen da</p>';
 $string['check_webcron_name'] = 'Web bidezko cron-a';
 $string['check_webcron_ok'] = 'Erabiltzaile anonimoek ez dute cron-era sarbiderik.';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badges:addinstance'] = 'Προσθήκη ενός νέου μπλοκ «Τα πρόσφατα διακριτικά μου»';
 $string['badges:myaddinstance'] = 'Προσθήκη ενός νέου μπλοκ «Τα πρόσφατα διακριτικά μου» στο Ταμπλό';
-$string['nothingtodisplay'] = 'Δεν έχετε κανένα διακριτικό προς εμφάνιση';
+$string['nothingtodisplay'] = 'Κανένα διακριτικό προς εμφάνιση';
 $string['numbadgestodisplay'] = 'Αριθμός πιο πρόσφατων διακριτικών προς εμφάνιση';
 $string['pluginname'] = 'Πρόσφατα διακριτικά';
 $string['privacy:metadata'] = 'Το μπλοκ «Πρόσφατα διακριτικά» εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';

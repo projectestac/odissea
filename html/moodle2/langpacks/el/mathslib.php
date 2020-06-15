@@ -40,4 +40,4 @@ $string['undefinedvariableinfunctiondefinition'] = 'απροσδιόριστη �
 $string['unexpectedclosingbracket'] = 'απροσδόκητο κλείσιμο παρένθεσης';
 $string['unexpectedcomma'] = 'απροσδόκητο κόμμα';
 $string['unexpectedoperator'] = 'απροσδόκητος τελεστής «{$a}»';
-$string['wrongnumberofarguments'] = 'λάθος αριθμός ορισμάτων (δόθηκαν {$a->given}, αναμένονταν {$a->expected})';
+$string['wrongnumberofarguments'] = 'λάθος αριθμός ορισμάτων (δόθηκαν {$a->given}, αναμενόνταν {$a->expected})';

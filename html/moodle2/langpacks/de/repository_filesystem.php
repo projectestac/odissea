@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['blockedpath'] = 'Rootpfad geblockt';
 $string['configplugin'] = 'Einstellungen für \'Dateisystem\'';
 $string['donotusesysdir'] = 'Verwenden Sie nicht das Systemverzeichnis als Repository, einschließlich';
-$string['enablecourseinstances'] = 'Administratoren erlauben, ein Repository \'Dateisystem\' zu einem Kurs hinzuzufügen (kann nur von Administratoren konfiguriert werden)';
+$string['enablecourseinstances'] = 'Administrator/innen erlauben, ein Repository \'Dateisystem\' zu einem Kurs hinzuzufügen (kann nur von Administrator/innen konfiguriert werden)';
 $string['enableuserinstances'] = 'Admins erlauben, ein Dateisystem-Repository im Nutzerkontext hinzuzufügen (kann nur von Admins konfiguriert werden)';
 $string['filesystem:view'] = 'Repository \'Dateisystem\'  sehen';
 $string['information'] = 'Diese Verzeichnisse liegen innerhalb von <b>{$a}</b>';

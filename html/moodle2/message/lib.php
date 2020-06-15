@@ -874,6 +874,10 @@ function core_message_standard_after_main_region_html() {
             'entertosend' => $entertosend
         ],
         'overview' => [
+            // XTEC ************ AFEGIT - Show "See all" link in message drawer (deprecated from >=3.7)
+            // 2020.03.26 @joancarbassa
+            'messageurl' => $messageurl = new \moodle_url('/message/index.php'),
+            //************ FI
             'notification' => $notification
         ]
     ]);

@@ -155,7 +155,7 @@ $string['noinstanceyet'] = 'Pas encore sélectionné';
 $string['nologs'] = 'Il n\'y a pas de journal à afficher !';
 $string['nomultipleexports'] = 'Le portfolio de destination ({$a->plugin}) ne supporte pas les exportations multiples simultanées. Veuillez <a href="{$a->link}">terminer l\'exportation actuelle</a>, puis réessayer';
 $string['nonprimative'] = 'Une valeur incorrecte a été passée comme paramètre à portfolio_add_button. Impossible de continuer. La clef était {$a->key} et la valeur {$a->value}';
-$string['nopermissions'] = 'Vous n\'avez pas les droits d\'accès requis pour exporter des fichiers depuis cette zone';
+$string['nopermissions'] = 'Vous n\'avez pas les les permissions requises pour exporter des fichiers depuis cette zone';
 $string['notexportable'] = 'Désolé, le type de contenu que vous essayez d\'exporter n\'est pas exportable';
 $string['notimplemented'] = 'Désolé, vous essayez d\'exporter du contenu dans un format non encore implémenté ({$a})';
 $string['notyetselected'] = 'Pas encore sélectionné';

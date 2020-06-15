@@ -37,7 +37,7 @@ $string['localinstall_help'] = 'La configurazione di default prevede l\'uso dell
 
 L\'installazione locale può essere utile ad esempio per limitare l\'utilizzo di banda o per ovviare a restrizioni dovute a proxy.
 
-Per utilizzare un\'installazione locale di MathJAX è necessario scaricare l\'omonima libreria da http://www.mathjax.org/ ed installarla su un web server. Dopodiché sarà possibile modificare le impostazioni http o https del filtro MathJax per raggiungere l\'installazione MathJax locale.';
+Per utilizzare un\'installazione locale di MathJAX è necessario scaricare l\'omonima libreria da http://www.mathjax.org/ ed installarla sul web server. Dopodiché sarà possibile modificare le impostazioni http o https del filtro MathJax per raggiungere l\'installazione MathJax locale.';
 $string['mathjaxsettings'] = 'Configurazione MathJax';
 $string['mathjaxsettings_desc'] = 'La configurazione di default di MathJax è adatta alla maggioranza dei casi, tuttavia MathJax è altamente configurabile ed è possibile configurare qualsiasi opzione standard di MathJax.';
 $string['privacy:metadata'] = 'Il plugin "MathJax" non memorizza dati personali.';

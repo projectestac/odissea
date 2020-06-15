@@ -32,7 +32,7 @@ $string['clientid'] = 'Αναγνωριστικό πελάτη';
 $string['clientsecret'] = 'Μυστικό πελάτη';
 $string['configplugin'] = 'Ρυθμίσεις Box.net';
 $string['filesourceinfo'] = 'Box ({$a->fullname}): {$a->filename}';
-$string['information'] = 'Λάβετε ένα αναγνωριστικό πελάτη και μυστικό κωδικό από την<a href="https://app.box.com/developers/services">σελίδα ανάπτυξης του Box</a> για τον Moodle ιστότοπό σας.';
+$string['information'] = 'Λάβετε ένα αναγνωριστικό πελάτη και μυστικό κωδικό από την <a href="https://app.box.com/developers/services">σελίδα ανάπτυξης του Box</a> για τον Moodle ιστότοπό σας.';
 $string['invalidpassword'] = 'Μη έγκυρος κωδικός πρόσβασης';
 $string['nullfilelist'] = 'Δεν υπάρχουν αρχεία σε αυτό το αποθετήριο';
 $string['password'] = 'Κωδικός πρόσβασης';

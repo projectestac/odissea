@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['broughtbymoodle'] = 'Moodle-k eskainitako datu-esportazioa.';
+$string['broughtbymoodle'] = 'Moodlek eskainitako datu-esportazioa.';
 $string['exportfrom'] = '{$a}(e)tik esportatua';
 $string['exporttime'] = '{$a}(e) esportatuan';
 $string['exportuser'] = '{$a}(e)rako datua';

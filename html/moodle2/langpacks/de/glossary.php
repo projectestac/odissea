@@ -127,7 +127,7 @@ $string['destination_help'] = 'Beim Import können Sie wählen, wo importierte G
 $string['disapprove'] = 'Freigegebenen Eintrag sperren';
 $string['displayformat'] = 'Anzeigeformat';
 $string['displayformatcontinuous'] = 'Wörterbuch (ohne Synonyme)';
-$string['displayformatdefault'] = 'Standardmäßig wie das Anzeigeformat';
+$string['displayformatdefault'] = 'Standard: wie das Anzeigeformat';
 $string['displayformatdictionary'] = 'Wörterbuch (mit Synonymen)';
 $string['displayformatencyclopedia'] = 'Enzyklopädie';
 $string['displayformatentrylist'] = 'Liste';
@@ -151,7 +151,7 @@ $string['editalways'] = 'Immer bearbeitbar';
 $string['editalways_help'] = 'Diese Option legt fest, wie Teilnehmer/innen ihre Einträge bearbeiten dürfen:
 
 * Ja - Einträge sind jederzeit bearbeitbar
-* Nein - Einträge sind nur im festgelegten Zeitraum bearbeitbar (standardmäßig 30 min)';
+* Nein - Einträge sind nur im festgelegten Zeitraum bearbeitbar (oft 30 Minuten)';
 $string['editcategories'] = 'Kategorien bearbeiten';
 $string['editcategory'] = 'Kategorie bearbeiten';
 $string['editentry'] = 'Eintrag bearbeiten';
@@ -233,9 +233,9 @@ $string['importentries'] = 'Einträge importieren';
 $string['importentriesfromxml'] = 'Einträge aus XML-Datei importieren';
 $string['includegroupbreaks'] = 'Gruppentrennung einbeziehen';
 $string['indicator:cognitivedepth'] = 'Glossar kognitiv';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Glossaraktivität erreicht hat.';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Glossaraktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Glossar sozial';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Glossaraktivität erreicht hat.';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Glossaraktivität erreicht hat.';
 $string['isglobal'] = 'Kursübergreifendes Glossar 
 ';
 $string['isglobal_help'] = 'Ein kursübergreifendes Glossar enthält Einträge, die im gesamten Moodle verlinkt werden. Ist ein Glossar nicht global, werden die Einträge nur lokal im Kurs verlinkt. Ausschließlich Administrator/innen können Glossare als kursübergreifend definieren.';
@@ -272,7 +272,7 @@ $string['page-mod-glossary-edit'] = 'Glossareintragbearbeitungsseite
 ';
 $string['page-mod-glossary-view'] = 'Glossaransichtsseite
 ';
-$string['page-mod-glossary-x'] = 'Alle Glossarseiten';
+$string['page-mod-glossary-x'] = 'Jede Glossarseite';
 $string['pluginadministration'] = 'Glossar-Administration';
 $string['pluginname'] = 'Glossar';
 $string['popupformat'] = 'Popup-Format';

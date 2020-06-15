@@ -175,11 +175,16 @@ $string['markingworkflowstate_help'] = '당신의 권한에 따라, 업무흐름
 * 검토중 - 최종 검토를 담당하는 선생님이 현재 확인 중
 * 발표 대기 - 최종 확인이 끝났으나, 결과를 발표하기 전 대기중
 * 발표 - 학생들이 자신의 점수와 선생님의 의견을 읽을 수 있음.';
+$string['markingworkflowstatereadyforrelease'] = '공개 준비 완료';
+$string['markingworkflowstatereadyforreview'] = '채점 완료';
+$string['markingworkflowstatereleased'] = '공개됨';
 $string['maxattempts'] = '최대 시도';
 $string['maxgrade'] = '최대 성적';
 $string['messageprovider:assign_notification'] = '과제 통지';
 $string['modulename'] = '과제';
 $string['modulenameplural'] = '과제제출';
+$string['multipleteams'] = '한 그룹 이상의 회원';
+$string['multipleteams_desc'] = '본 과제는 그룹 제출 과제입니다. 당신은 두 그룹 이상의 회원입니다. 과제 제출을 위해서는 반드시 한 곳에만 속해 있어야 합니다.  가입된 그룹을 변경 하려면 담당 선생님께 문의하시기 바랍니다.';
 $string['mysubmission'] = '내 제출';
 $string['newsubmissions'] = '제출된 과제들';
 $string['noattempt'] = '시도 없음';
@@ -191,6 +196,8 @@ $string['noonlinesubmissions'] = '이 과제는 온라인으로 제출하는 것
 $string['nosavebutnext'] = '다음';
 $string['nosubmission'] = '이 과제에 대해 제출된 것이 없습니다.';
 $string['nosubmissionsacceptedafter'] = '다음 이후에는 제출을 받지 않습니다';
+$string['noteam'] = '어느 그룹의 회원도 아님';
+$string['noteam_desc'] = '본 과제는 그룹 제출 과제입니다. 당신은 어떤 그룹에도 속해 있지 않기 때문에, 과제물을 제출할 수 없습니다.  그룹에 참여하려면 담당 선생님에게 연락하시기 바랍니다.';
 $string['notgraded'] = '채점되지 않음';
 $string['notgradedyet'] = '아직 채점되지 않음';
 $string['notifications'] = '통지';
@@ -293,6 +300,7 @@ $string['teamsubmissiongroupingid'] = '학습 모둠들을 위한 모둠 무리'
 $string['textinstructions'] = '과제 안내';
 $string['timemodified'] = '마지막 수정';
 $string['timeremaining'] = '남은 시간';
+$string['ungroupedusers'] = '\'제출하기 위해서는 그룹이 요구됨\'이란 설정이 활성화되어 있는데,  사용자가 어느 그룹의 회원도 아니거나 또 두 그룹 이상의 회원이라면 제출할 수 없습니다.';
 $string['unlimitedattempts'] = '무제한';
 $string['unlimitedattemptsallowed'] = '무제한 시도가 허용됩니다.';
 $string['unlocksubmissionforstudent'] = '학생에게 제출 허용 : (아이디={$a->id}, 전체이름={$a->fullname}).';

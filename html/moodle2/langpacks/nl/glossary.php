@@ -90,7 +90,7 @@ $string['cnfshowgroup'] = 'Stel in of er een scheiding tussen groeperingen moet 
 $string['cnfsortkey'] = 'Kies de standaardsorteersleutel';
 $string['cnfsortorder'] = 'Kies de standaardsorteervolgorde';
 $string['cnfstudentcanpost'] = 'Stel als standaardinstelling in of een leerling al dan niet zelf kan invoeren';
-$string['cnftabs'] = 'Selecteer zichtbare tabs voor de woordelijstopmaak';
+$string['cnftabs'] = 'Selecteer zichtbare tabs voor de woordenlijstopmaak';
 $string['comment'] = 'Commentaar';
 $string['commentdeleted'] = 'De commentaar is verwijderd.';
 $string['comments'] = 'Commentaren';
@@ -257,11 +257,11 @@ $string['modulename_help'] = 'Met de woordenlijstmodule kunnen deelnemers een li
 
 Een leraar kan toestaan dat bestanden als bijlage bij een item gevoegd worden. Afbeeldingen worden in het woordenlijstitem getoond. De items kunnen alfabetisch doorzocht worden of per categorie, datum of auteur. Items kunnen standaard goed gekeurd worden of goedkeuring door een leraar vereisen voor ze getoond worden aan iedereen.
 
-Als de autolinkfilter voor woordenlijsten is ingeschakeld, dan kunnen woordenlijstitems automatisch gelinkt worden telkens wanneer het woord ergens in de cursus verschijnt.
+Als het autolink-filter voor woordenlijsten is ingeschakeld, dan kunnen woordenlijstitems automatisch gelinkt worden telkens wanneer het woord ergens in de cursus verschijnt.
 
 Een leraar kan commentaren op woordenlijstitems toestaan. De items kunnen ook beoordeeld worden door leraars of leerlingen (peer-evaluatie). Beoordelingen kunnen samengeteld worden om een totaalcijfer te vormen dat opgenomen wordt in de cijferlijst.
 
-Woordelijsten kunnen gebruikt worden voor vele zaken, zoals
+Woordenlijsten kunnen gebruikt worden voor vele zaken, zoals
 
 * een samen opgebouwde databank met sleutelwoorden
 * een plaats waar leerlingen hun naam en persoonlijke details kunnen zetten om elkaar te leren kennen

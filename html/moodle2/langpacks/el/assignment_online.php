@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_uploaded'] = 'Ένα κείμενο σε ιστοσελίδα (σε σύνδεση) έχει ανεβεί.';
+$string['event_assessable_uploaded'] = 'Ένα εντός σύνδεσης κείμενο έχει ανεβεί.';
 $string['pluginname'] = 'Εντός σύνδεσης';
 $string['privacy:metadata'] = 'Το πρόσθετο ανάθεσης εργασίας εκτός σύνδεσης δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

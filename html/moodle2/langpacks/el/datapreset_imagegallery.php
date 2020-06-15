@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'Γκαλερί εικόνων';
-$string['pluginname'] = 'Γκαλερί εικόνων';
-$string['privacy:metadata'] = 'Το πρόσθετο «Συλλογή εικόνων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['modulename'] = 'Χώρος έκθεσης εικόνων';
+$string['pluginname'] = 'Χώρος έκθεσης εικόνων';
+$string['privacy:metadata'] = 'Το πρόσθετο «Χώρος έκθεσης εικόνων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

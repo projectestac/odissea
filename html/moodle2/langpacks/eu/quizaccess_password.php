@@ -29,4 +29,4 @@ $string['passworderror'] = 'Sartutako pasahitza ez da zuzena';
 $string['pluginname'] = 'Pasahitzaren bidezko sarbide-araua';
 $string['privacy:metadata'] = 'Pasahitzaren bidezko galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';
 $string['quizpassword'] = 'Galdetegiaren pasahitza';
-$string['requirepasswordmessage'] = 'Galdetegi hau egiten saiatzeko galdetegiko pasahitza jakin behar duzu';
+$string['requirepasswordmessage'] = 'Galdetegi hau egiten saiatzeko galdetegiko pasahitza ezagutu behar duzu';

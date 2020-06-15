@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['hotpot'] = 'Hot Potatoes XML formatua';
-$string['hotpot_help'] = 'Hau fitxategi formatua da, Moodle-ko galdera-bankura hurrengo formatuetatik galderak inportatzeko: Hot Potatoes xml files, JCloze (jcl), JCross (jcw), JMatch (jmt), JMix(jmx) eta JQuiz (jqz)';
+$string['hotpot_help'] = 'Hau fitxategi formatua da, Moodleko galdera-bankura hurrengo formatuetatik galderak inportatzeko: Hot Potatoes xml files, JCloze (jcl), JCross (jcw), JMatch (jmt), JMix(jmx) eta JQuiz (jqz)';
 $string['pluginname'] = 'Hot Potatoes XML formatua';
-$string['pluginname_help'] = 'Hau fitxategi formatua da, Moodle-ko galdera-bankura hurrengo formatuetatik galderak inportatzeko: Hot Potatoes xml files, JCloze (jcl), JCross (jcw), JMatch (jmt), JMix(jmx) eta JQuiz (jqz)';
+$string['pluginname_help'] = 'Hau fitxategi formatua da, Moodleko galdera-bankura hurrengo formatuetatik galderak inportatzeko: Hot Potatoes xml files, JCloze (jcl), JCross (jcw), JMatch (jmt), JMix(jmx) eta JQuiz (jqz)';
 $string['requiremodhotpot'] = 'Hot Potatoes galderak inportatzeko gehigarria ezin da instalatu HotPot modulua falta delako. HotPot jarduera modulua jaitsi ezazu, {$a}/mod/hotpot helbidean kopiatu eta ondoren orri hau freskatu ezazu';

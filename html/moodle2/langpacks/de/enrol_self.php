@@ -50,8 +50,8 @@ $string['enrolenddate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/
 $string['enrolenddaterror'] = 'Das Einschreibungsende muss nach dem Einschreibungsbeginn liegen.';
 $string['enrolme'] = 'Einschreiben';
 $string['enrolperiod'] = 'Teilnahmedauer';
-$string['enrolperiod_desc'] = 'Die standardmäßige Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
-$string['enrolperiod_help'] = 'Die Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt, beginnend mit dem Moment der Nutzereinschreibung. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
+$string['enrolperiod_desc'] = 'Die Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer unbegrenzt.';
+$string['enrolperiod_help'] = 'Die Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt, beginnend mit dem Moment der Nutzereinschreibung. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer unbegrenzt.';
 $string['enrolstartdate'] = 'Einschreibungsbeginn';
 $string['enrolstartdate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen sich ab diesem Zeitpunkt selbst in den Kurs einschreiben.';
 $string['expiredaction'] = 'Aktion bei Ablauf der Kurseinschreibung';
@@ -77,7 +77,7 @@ $string['expirymessageenrollersubject'] = 'In Kürze endet Ihr Kurs';
 $string['expirynotifyall'] = 'Einschreibender und eingeschriebene Nutzer/innen';
 $string['expirynotifyenroller'] = 'Nur Einschreibender';
 $string['groupkey'] = 'Einschreibeschlüssel für Gruppen';
-$string['groupkey_desc'] = 'Standardmäßig einen Einschreibeschlüssel für Gruppen benutzen';
+$string['groupkey_desc'] = 'Einen Einschreibeschlüssel für Gruppen benutzen';
 $string['groupkey_help'] = 'Ergänzend zum Einschreibeschlüssel für die Kurseinschreibung lassen sich weitere Einschreibeschlüssel für Gruppen festlegen. Nutzer/innen können damit bei ihrer Kurseinschreibung automatisch einer bestimmten Gruppe zugewiesen werden.
 
 Um Einschreibeschlüssel für Gruppen verwenden zu können, muss zusätzlich ein Einschreibeschlüssel für den Kurs vergeben sein, den aber niemand kennen muss.';
@@ -91,7 +91,7 @@ $string['maxenrolledreached'] = 'Die maximale Anzahl der erlaubten Nutzer/innen 
 ';
 $string['messageprovider:expiry_notification'] = 'Systemnachricht beim Ablauf von Selbsteinschreibungen';
 $string['newenrols'] = 'Selbsteinschreibung erlauben';
-$string['newenrols_desc'] = 'Nutzer/innen dürfen sich standardmäßig selbst einschreiben';
+$string['newenrols_desc'] = 'Nutzer/innen dürfen sich selbst einschreiben';
 $string['newenrols_help'] = 'Diese Einstellung legt fest, ob Nutzer/innen sich in diesen Kurs einschreiben dürfen.';
 $string['nopassword'] = 'Kein Einschreibeschlüssel notwendig';
 $string['password'] = 'Einschreibeschlüssel';

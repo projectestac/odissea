@@ -113,7 +113,7 @@ unter Verwendung Ihrer E-Mail-Adresse wurde von \'{$a->sitename}\' eine neue Ver
 
 In den meisten E-Mail-Programmen sollte dieser Link blau und anklickbar sein. Falls das nicht funktioniert, kopieren Sie die Adresse vollständig und fügen Sie sie in die Adresszeile Ihres Webbrowsers ein.
 
-Wenn Sie Hilfe benötigen, wenden Sie sich an den Administrator der Website, {$a->admin}
+Wenn Sie Hilfe benötigen, wenden Sie sich an die Administrator/innen der Website, {$a->admin}
 
 Ihr E-Learning-Team';
 $string['backpackemailverifyemailsubject'] = '{$a}: E-Mail-Bestätigung für Badges-Backpack';
@@ -246,7 +246,7 @@ $string['deactivatesuccess'] = 'Der Zugriff auf den Badge wurde erfolgreich deak
 $string['defaultissuercontact'] = 'Kontakt des standardmäßigen Verleihers';
 $string['defaultissuercontact_desc'] = 'Tragen Sie hier eine E-Mail-Adresse ein, die standardmäßig mit dem Verleiher von Badges auf der Website verknüpft ist.';
 $string['defaultissuername'] = 'Standardmäßiger Verleiher';
-$string['defaultissuername_desc'] = 'Tragen Sie hier einen Namen ein, der standardmäßig als Verleiher von Badges auf der Website verwendet wird (z.B. den Namen der verleihenden Institution).';
+$string['defaultissuername_desc'] = 'Tragen Sie hier einen Namen ein, der Verleiher von Badges auf der Website verwendet wird (z.B. den Namen der verleihenden Institution).';
 $string['delbadge'] = 'Möchten Sie wirklich den Badge \'{$a}\' und alle verliehenen Instanzen löschen?';
 $string['delconfirm'] = 'Löschen und verliehene Badges entfernen';
 $string['delcritconfirm'] = 'Möchten Sie dieses Kriterium wirklich löschen?';

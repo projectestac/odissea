@@ -211,6 +211,7 @@ $string['invalidactivity'] = 'SCORM activity is incorrect';
 $string['invalidhacpsession'] = 'Invalid HACP session';
 $string['invalidmanifestname'] = 'Only imsmanifest.xml or .zip files may be selected';
 $string['invalidmanifestresource'] = 'WARNING: The following resources were referenced in your manifest but couldn\'t be found:';
+$string['invalidstatus'] = 'Invalid status';
 $string['invalidurl'] = 'Invalid URL specified';
 $string['invalidurlhttpcheck'] = 'Invalid URL specified. Debug message:<pre>{$a->cmsg}</pre>';
 $string['last'] = 'Last accessed on';

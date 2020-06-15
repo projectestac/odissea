@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Alle Kategorien';
-$string['apierror'] = 'Der YouTube API Key ist nicht gesetzt. Wenden Sie sich an den Administrator.';
+$string['apierror'] = 'Der YouTube API Key ist nicht gesetzt. Wenden Sie sich an die Administrator/innen.';
 $string['apikey'] = 'API Key';
 $string['apikeyinfo'] = 'Holen Sie sich einen <a href="https://developers.google.com/youtube/v3/getting-started">Google API key</a> für Ihre Website.';
 $string['autosvehicles'] = 'Autos & Fahrzeuge';
@@ -46,7 +46,7 @@ $string['peopleblogs'] = 'Personen & Blogs';
 $string['petsanimals'] = '(Haus-)Tiere';
 $string['pluginname'] = 'YouTube';
 $string['privacy:metadata'] = 'Der YouTube-Block zeigt ausschließlich Daten an, die woanders gespeichert sind.';
-$string['requesterror'] = 'Daten konnten nicht vom Server abgerufen werden. Informieren Sie den Administrator, wenn das Problem weiter auftritt.';
+$string['requesterror'] = 'Daten konnten nicht vom Server abgerufen werden. Informieren Sie die Administrator/innen, wenn das Problem weiter auftritt.';
 $string['scienceandtech'] = 'Wissenschaft & Technik';
 $string['sports'] = 'Sport';
 $string['tag_youtube:addinstance'] = 'Neuen YouTube-Block hinzufügen';

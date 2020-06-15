@@ -351,6 +351,7 @@ $string['scormopen'] = 'Dal';
 $string['scormresponsedeleted'] = 'I tentativi degli utenti sono stati eliminati';
 $string['scorm:savetrack'] = 'Essere tracciato';
 $string['scorm:skipview'] = 'Saltare pagina introduttiva';
+$string['scormstandard'] = 'Modalità SCORM standard';
 $string['scormtype'] = 'Tipo';
 $string['scormtype_help'] = 'L\'impostazione stabilisce come sarà incluso il pacchetto nel corso. Sono disponibili 4 opzioni:
 

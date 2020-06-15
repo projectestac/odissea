@@ -25,6 +25,7 @@ $string['disk_consume_repofiles'] = '<strong>{$a->number} {$a->unit}</strong> ut
 $string['disk_consume_courses'] = '<strong>{$a->number} {$a->unit}</strong> utilizados en los cursos (sin contar las copias de seguridad)';
 $string['disk_consume_backups'] = '<strong>{$a->number} {$a->unit}</strong> utilizados en las copias de seguridad, incluídas las de los cursos y las de los usuarios';
 $string['disk_consume_user'] = '<strong>{$a->number} {$a->unit}</strong> utilizados en archivos de usuario';
+$string['disk_consume_h5plib'] = '<strong>{$a->number} {$a->unit}</strong> utilizados en librerías de H5P';
 $string['disk_consume_temp'] = '<strong>{$a->number} {$a->unit}</strong> utilizados en la carpeta <em>temp</em> (ficheros temporales pendientes de ser borrados por el cron)';
 $string['disk_consume_trash'] = '<strong>{$a->number} {$a->unit}</strong> utilizados en la carpeta <em>trashdir</em> (ficheros marcados como borrados y pendientes de ser borrados por el cron)';
 $string['total_description'] = 'A continuación se muestra el porcentaje de cuota de disco ocupado en relación con al total';

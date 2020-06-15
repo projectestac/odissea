@@ -33,7 +33,7 @@ $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'MathJax URL';
 $string['httpsurl_help'] = 'Vollständige URL zur MathJax Bibliothek';
 $string['localinstall'] = 'Lokale MathJax Installation';
-$string['localinstall_help'] = 'Die standardmäßige MathJax-Konfiguration verwendet die CDN Version von MathJax. MathJax kann jedoch auch lokal installiert werden.
+$string['localinstall_help'] = 'Die MathJax-Konfiguration verwendet die CDN Version von MathJax. MathJax kann jedoch auch lokal installiert werden.
 
 Sinnvoll ist dies, um Bandbreite einzusparen oder um Proxy bedingte Beschränkungen zu umgehen.
 

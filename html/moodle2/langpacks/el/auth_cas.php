@@ -31,7 +31,7 @@ $string['auth_cas_auth_user_create'] = 'Create users externally';
 $string['auth_cas_baseuri'] = 'URI του εξυπηρετητή (τίποτα αν δεν υπάρχει baseURI)<br />Για παράδειγμα, εάν ο εξυπηρετητής CAS απαντάει στο host.domaine.fr/CAS/ τότε <br />cas_baseuri = CAS/';
 $string['auth_cas_baseuri_key'] = 'Base URI';
 $string['auth_cas_broken_password'] = 'Δεν μπορείτε να προχωρήσετε χωρίς να αλλάξετε τον κωδικό πρόσβασής σας, ωστόσο δεν υπάρχει διαθέσιμη σελίδα για την αλλαγή του. Παρακαλούμε επικοινωνήστε με τον διαχειριστή του Moodle.';
-$string['auth_cas_cantconnect'] = 'To LDAP μέρος του αρθρώματος CAS δεν μπορεί να συνδεθεί στον εξυπηρετητή: {$a}';
+$string['auth_cas_cantconnect'] = 'Το LDAP μέρος του αρθρώματος CAS δεν μπορεί να συνδεθεί στον εξυπηρετητή: {$a}';
 $string['auth_cas_casversion'] = 'Έκδοση πρωτοκόλλου CAS';
 $string['auth_cas_certificate_check'] = 'Επιλέξτε «ναι» αν θέλετε να επικυρώσετε το πιστοποιητικό του εξυπηρετητή';
 $string['auth_cas_certificate_check_key'] = 'Επικύρωση εξυπηρετητή';

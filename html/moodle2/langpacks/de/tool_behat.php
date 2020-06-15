@@ -33,7 +33,7 @@ $string['errordataroot'] = '$CFG->behat_dataroot ist nicht gesetzt oder ungülti
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix und $CFG->behat_wwwroot müssen in der config.php definiert werden.';
 $string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix und $CFG->behat_wwwroot values müssen sich unterscheiden von den Werten für $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot und $CFG->phpunit_prefix.';
 $string['fieldvalueargument'] = 'Argumente für Feldwert';
-$string['fieldvalueargument_help'] = 'Das Argument wird mit einem Feldwert abgeschlossen. Neben einfachen Feldwerten wie Checkboxen, gibt es Texteingabebereiche oder Auswahllisten. Unter <a href="http://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a> finden Sie Details zu den erwarteten Feldtypen.';
+$string['fieldvalueargument_help'] = 'Dieses Argument sollte durch einen Feldwert ergänzt werden. Es gibt viele Feldtypen, darunter einfache wie Kontrollkästchen, Auswahl- oder Textbereiche oder komplexe Optionen wie Datumsauswahl. Weitere Infos zu den Feldwerten finden Sie in der Entwicklerdokumentation <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank"> Acceptance_testing </a>.';
 $string['giveninfo'] = 'Vorgefunden (given). Prozesse zum Anlegen der Umgebung.';
 $string['infoheading'] = 'Info';
 $string['installinfo'] = 'Lesen {$a} Information für Installation und Testdurchlauf';

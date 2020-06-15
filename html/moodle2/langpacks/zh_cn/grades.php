@@ -501,7 +501,7 @@ $string['nocategoryview'] = '无分类可以看';
 $string['nocourses'] = '目前没有课程';
 $string['noforce'] = '不强制';
 $string['nogradeletters'] = '未设定分数段';
-$string['nogradesreturned'] = '未找到成绩';
+$string['nogradesreturned'] = '没有成绩';
 $string['noidnumber'] = '无ID号';
 $string['nolettergrade'] = '无分数段给';
 $string['nomode'] = '无';
@@ -551,7 +551,7 @@ $string['overridden'] = '覆盖';
 $string['overridden_help'] = '勾选后，此成绩项将不能被相关的活动更改。
 
 在成绩单中编辑了一个成绩后，覆盖框会被自动勾选。但是，可以取消它使得相关的活动能更改成绩。';
-$string['overriddennotice'] = '您在该活动中的最终成绩将自动调整。';
+$string['overriddennotice'] = '您在该活动中的最终成绩将手动调整。';
 $string['overridecat'] = '允许类别中的成绩被人工覆盖';
 $string['overridecat_help'] = '禁用此项使得用户无法覆盖类别成绩。';
 $string['overridesitedefaultgradedisplaytype'] = '覆盖网站默认值';

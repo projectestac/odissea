@@ -92,7 +92,7 @@ $string['methodnormal'] = 'Normal';
 $string['modulename'] = 'Chat';
 $string['modulename_help'] = 'Le module d\'activité chat permet aux participants d\'avoir une discussion synchrone en temps réel, en mode texte.
 
-Un chat peut être une activité unique ou peut être répété à la même heure chaque jour ou chaque semaine. Les sessions de chat sont enregistrées et peuvent être publiées pour tous ou restreintes aux utilisateurs ayant les autorisations adéquates.
+Un chat peut être une activité unique ou peut être répété à la même heure chaque jour ou chaque semaine. Les sessions de chat sont enregistrées et peuvent être publiées pour tous ou restreintes aux utilisateurs ayant les les permissions requises.
 
 Les chats sont particulièrement utiles lorsque le groupe ne peut pas se rencontrer face à face, pour :
 
@@ -107,11 +107,11 @@ $string['nochat'] = 'Aucun chat trouvé';
 $string['no_complete_sessions_found'] = 'Aucune session complète trouvée.';
 $string['noguests'] = 'Ce salon n\'est pas ouvert aux visiteurs anonymes';
 $string['nomessages'] = 'Pas encore de messages';
-$string['nopermissiontoseethechatlog'] = 'Vous n\'avez pas l\'autorisation de consulter les journaux de chat.';
+$string['nopermissiontoseethechatlog'] = 'Vous n\'avez pas les permissions requises pour consulter les journaux de chat.';
 $string['normalkeepalive'] = 'Keep-Alive';
 $string['normalstream'] = 'Flux';
 $string['noscheduledsession'] = 'Aucune session agendée';
-$string['notallowenter'] = 'Vous n\'avez pas l\'autorisation d\'accéder à ce salon de chat.';
+$string['notallowenter'] = 'Vous n\'avez pas les permissions requises pour accéder à ce salon de chat.';
 $string['notlogged'] = 'Vous n\'êtes pas authentifié !';
 $string['oldping'] = 'Délai de déconnexion';
 $string['page-mod-chat-x'] = 'Toute page du module chat';

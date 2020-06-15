@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Αναίρεση/επανάληψη';
-$string['privacy:metadata'] = 'Το πρόσθετο «atto_undo» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['pluginname'] = 'Αναίρεση/Επανάληψη';
+$string['privacy:metadata'] = 'Το πρόσθετο «Atto_Undo» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['redo'] = 'Επανάληψη';
 $string['undo'] = 'Αναίρεση';

@@ -66,9 +66,11 @@ $string['movechapterup'] = '向上移动章节“{$a}”';
 $string['navexit'] = '退出图书';
 $string['navimages'] = '导航图片';
 $string['navnext'] = '下一个';
+$string['navnexttitle'] = '下一个: {$a}';
 $string['navoptions'] = '导航链接的有效选项';
 $string['navoptions_desc'] = '图书页面显示导航的选项';
 $string['navprev'] = '前一个';
+$string['navprevtitle'] = '上一个: {$a}';
 $string['navstyle'] = '导航样式';
 $string['navstyle_help'] = '*图像导航——以图标作为导航
 *文字导航——章节标题作为导航';

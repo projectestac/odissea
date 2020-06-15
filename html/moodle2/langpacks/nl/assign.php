@@ -243,7 +243,7 @@ $string['gradeoutofhelp'] = 'Cijfer';
 $string['gradeoutofhelp_help'] = 'Geef hier het cijfer voor de opdracht van de leerling. Je mag ook decimalen gebruiken.';
 $string['gradersubmissionupdatedhtml'] = '{$a->username} heeft de inzending voor opdracht <i>{$a->assignment}</i> aangepast om {$a->timeupdated}.<br /><br />
 Je kunt ze <a href="{$a->url}"> nakijken op de website</a>.';
-$string['gradersubmissionupdatedsmall'] = '{$a->username} heeft zijn ingestuurde taak aangepast voor opdracht {$a->assignment}';
+$string['gradersubmissionupdatedsmall'] = '{$a->username} heeft de ingestuurde taak aangepast voor opdracht {$a->assignment}';
 $string['gradersubmissionupdatedtext'] = '{$a->username} heeft de inzending voor opdracht {$a->assignment} aangepast om {$a->timeupdated}.
 
 Je kunt ze hier vinden:

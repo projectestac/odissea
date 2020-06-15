@@ -25,6 +25,7 @@ $string['disk_consume_repofiles'] = '<strong>{$a->number} {$a->unit}</strong> us
 $string['disk_consume_courses'] = '<strong>{$a->number} {$a->unit}</strong> used in the courses (backups not included)';
 $string['disk_consume_backups'] = '<strong>{$a->number} {$a->unit}</strong> used in backups, included courses and users backups';
 $string['disk_consume_user'] = '<strong>{$a->number} {$a->unit}</strong> used in user files';
+$string['disk_consume_h5plib'] = '<strong>{$a->number} {$a->unit}</strong> used in H5P libraries';
 $string['disk_consume_temp'] = '<strong>{$a->number} {$a->unit}</strong> used in <em>temp</em> directory (temporary files to be removed by cron)';
 $string['disk_consume_trash'] = '<strong>{$a->number} {$a->unit}</strong> used in <em>trashdir</em> directory (trash files to be removed by cron)';
 $string['total_description'] = 'Percentage of used disk versus the total disk space';

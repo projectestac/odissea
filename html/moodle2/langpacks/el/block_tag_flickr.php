@@ -41,4 +41,4 @@ $string['privacy:metadata:block_tag_flickr'] = 'Το πρόσθετο «Μπλο
 $string['privacy:metadata:block_tag_flickr:tags'] = 'Οι τιμές των ετικετών αποστέλλονται σε μορφότυπο CSV για αναζήτηση εικόνων Flickr.';
 $string['relevance'] = 'Σχετικότητα';
 $string['sortby'] = 'Ταξινόμηση κατά';
-$string['tag_flickr:addinstance'] = 'Προσθήκη ένος νέου μπλοκ flickr';
+$string['tag_flickr:addinstance'] = 'Προσθήκη ενός νέου μπλοκ flickr';

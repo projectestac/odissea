@@ -39,6 +39,7 @@ $string['mustchoosegrade'] = 'Ten que seleccionar unha cualificación para este 
 $string['pluginname'] = 'Cualificación acumulativa';
 $string['poor'] = 'Pobre';
 $string['present'] = 'Presente';
+$string['privacy:metadata'] = 'O engadido de cualificación acumulativa só almacena os detalles do formulario de avaliación. Os datos persoais reais de como se encheu o formulario almacénanse no propio módulo Workshop (Obradoiro), e engádense ás avaliacións exportadas.';
 $string['scalename0'] = 'Si/Non (2 puntos)';
 $string['scalename1'] = 'Presente/Ausente (2 puntos)';
 $string['scalename2'] = 'Correcto/Incorrecto (2 puntos)';

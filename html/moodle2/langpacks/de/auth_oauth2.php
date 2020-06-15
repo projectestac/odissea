@@ -56,7 +56,7 @@ Bestätigen Sie über diesen Link die Anfrage zum Verbinden mit Ihrem Nutzerkont
 
 In den meisten E-Mail-Programmen sollte dieser Link in blau angezeigt werden und anklickbar sein. Sollte dies nicht der Fall sein, kopieren Sie bitte den Link und fügen Ihn in der Adresszeile Ihres Browserfensters ein.
 
-Falls Sie Hilfe benötigen, kontaktieren Sie bitte Administrator der Website,
+Falls Sie Hilfe benötigen, kontaktieren Sie bitte Administrator/innen der Website,
 {$a->admin}
 
 Ihr E-Learning-Team';
@@ -68,7 +68,7 @@ $string['emailconfirmlinksent'] = '<p>Zu dieser E-Mail-Adresse wurde ein bereits
 <p>Die Nutzerkonten müssen verlinkt werden, bevor Sie sich einloggen können.</p>
 <p>Eine E-Mail sollte an Ihre Emailadresse bei <b>{$a}</b> versandt worden sein.</p>
 <p>Diese E-Mail enthält einfache Anweisungen, wie Sie Ihre Nutzerkonten miteinander verbinden.</p>
- <p>Kontaktieren Sie den Administrator der Website, falls Probleme auftreten.</p>';
+ <p>Kontaktieren Sie die Administrator/innen der Website, falls Probleme auftreten.</p>';
 $string['info'] = 'Externes Nutzerkonto';
 $string['issuer'] = 'OAuth 2 Service';
 $string['issuernologin'] = 'Der Aussteller kann nicht als Login verwendet werden';

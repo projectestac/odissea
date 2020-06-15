@@ -345,8 +345,8 @@ $string['permission_help'] = 'Rechten zijn instellingen van mogelijkheden. Er zi
 
 * Niet ingesteld
 * Toestaan - Het recht wordt gegeven voor de mogelijkheid
-* Verhinder - Het recht wordt verwijderd voor de mogelijkheid, zelfs als dat toegestaan wordt in eenn hogere context
-* Blokkeer - Het recht wordt volledig ontzegt en kan niet overschreven worden in een lagere, meer specifieke context.';
+* Blokkeren - Het recht wordt verwijderd voor de mogelijkheid, zelfs als dat toegestaan wordt in een hogere context
+* Verbieden - Het recht wordt volledig ontzegd en kan niet overschreven worden in een lagere, meer specifieke context';
 $string['permissions'] = 'Rechten';
 $string['permissionsforuser'] = 'Rechten voor gebruiker {$a}';
 $string['permissionsincontext'] = 'Rechten in {$a}';

@@ -90,7 +90,7 @@ $string['testservers'] = 'Probetarako zerbitzariak';
 $string['testservers_desc'] = 'memcached zerbitzariekin konexio-proba egiteko karaketere-katea edo kateak. Probetarako zerbitzari bat zehaztu bada memcached-en errendimendua kudeaketa blokeko Cache atalaren Probatu errendimendua orria erabiliz probatu daiteke.
 Adibidez: 127.0.0.1:11211';
 $string['upgrade200recommended'] = 'Zure PHPko Memcached hedapena 2.0.0 bertsiora edo goragoko batera eguneratzea gomendatzen dizugu.
-Une honetan erabiltzen ari zaren PHPko Memcached hedapenak ez du Moodle-k erabiltzen duen "sandboxed cache" funtzioa eskaintzen. Eguneratu bitartean Moodle-k erabiltzen duen Memcached zerbitzari bera erabiltzen duen beste aplikaziorik ez konfiguratzea gomendatzen dizugu.';
+Une honetan erabiltzen ari zaren PHPko Memcached hedapenak ez du Moodlek erabiltzen duen "sandboxed cache" funtzioa eskaintzen. Eguneratu bitartean Moodlek erabiltzen duen Memcached zerbitzari bera erabiltzen duen beste aplikaziorik ez konfiguratzea gomendatzen dizugu.';
 $string['usecompression'] = 'Erabili konpresioa';
 $string['usecompression_help'] = 'Konpresioa gaitu edo desgaitzen du. Gaituz gero, atalase batetik goragoko elementuen balioak (une honetan 100 byte) gordetzerakoan konprimatuko dira eta berriz eskuratzean gardenki deskonprimatuko dira.';
 $string['useserialiser'] = 'Erabili serializatzailea';

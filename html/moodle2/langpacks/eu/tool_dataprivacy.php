@@ -258,13 +258,13 @@ $string['requestbydetail'] = 'Eskatzailea:';
 $string['requestcomments'] = 'Iruzkinak';
 $string['requestcomments_help'] = 'Eremu honek zure datu-eskaeraren inguruko xehetasun gehiago emateko aukera ematen dizu.';
 $string['requestcreation'] = 'Sorrera';
-$string['requestdenied'] = 'Eskaera gaitzetsi da';
+$string['requestdenied'] = 'Eskaera ukatu da';
 $string['requestemailintro'] = 'Datu-eskaera bat jaso duzu:';
 $string['requestfor'] = 'Erabiltzailea';
 $string['requestmarkedcomplete'] = 'Eskaera osatutzat markatu da';
 $string['requestorigin'] = 'Gunea';
 $string['requestsapproved'] = 'Eskaerak onartu dira';
-$string['requestsdenied'] = 'Eskaerak baztertu dira';
+$string['requestsdenied'] = 'Eskaerak ukatu dira';
 $string['requeststatus'] = 'Egoera';
 $string['requestsubmitted'] = 'Zure eskaera guneko pribatutasunerako ordezkariari bidali zaio';
 $string['requesttype'] = 'Mota';
@@ -286,7 +286,7 @@ Ikastaroko matrikula aktiboa aztertzean, ikastaroak amaiera-datarik ez badauka, 
 
 Ikastaroak amaiera-datarik ez badauka eta ezarpena hori gaituta badago, erabiltzailea ezingo da ezabatu.';
 $string['requiresattention'] = 'Zure arreta behar du.';
-$string['requiresattentionexplanation'] = 'Plugin honek ez du Moodle-n pribatutasun APIa inplementatu. Plugin honek datu-pertsonale bat biltzen badu ezingo da Moodle-n pribatutasun sistemaren bitartez esportatu edo ezabatu.';
+$string['requiresattentionexplanation'] = 'Plugin honek ez du Moodlen pribatutasun APIa inplementatu. Plugin honek datu-pertsonalen bat biltzen badu ezingo da Moodlen pribatutasun sistemaren bitartez esportatu edo ezabatu.';
 $string['resubmitrequest'] = 'Birbidali {$a->username}(r)entzako {$a->type} eskaera.';
 $string['resubmitrequestasnew'] = 'Birbidali eskaera berri gisa';
 $string['resubmittedrequest'] = '{$a->username}(r)entzako {$a->type} eskaera deuseztatu eta birbidali egin da.';

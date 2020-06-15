@@ -48,7 +48,7 @@ $string['displayselect_help'] = 'Ezarpen honek, fitxategi-mota kontuan hartuta e
 
 * Automatikoa - Fitxategi-mota erakusteko aukerarik onena automatikoki aukeratuko da.
 * Enbotatu - Fitxategia orriaren barruan erakutsiko da, nabigazio-barraren azpian eta fitxategiaren deskribapena eta blokeen ondoan.
-* Jaistera behartu - Erabiltzaileari fitxategia jaisteko mezua erakutsiko zaio
+* Behartu jaistera - Erabiltzaileari fitxategia jaisteko mezua erakutsiko zaio
 * Ireki - Web-nabigatzailearen orrian fitxategia soilik erakutsiko da.
 * Pop-up-ean - Fitxategia web-nabigatzailearen leiho berri batean erakutsiko da, menu eta helbide-barrarik gabe.
 * Markoan - Fitxategia marko baten barruan erakutsiko da, nabigazio-barraren eta fitxategiaren deskribapenaren azpian.
@@ -59,7 +59,7 @@ $string['filenotfound'] = 'Ez da fitxategia aurkitu, sentitzen dugu.';
 $string['filterfiles'] = 'Erabili iragazkiak fitxategiaren edukian';
 $string['filterfilesexplain'] = 'Aukeratu iragazkiak zein fitxategi-motetako edukietan aplikatuko diren; kontuan izan honek Flash eta Java-ko applet-etan arazoak eragin ditzakeela. Ziurtatu mesedez testu-fitxategi guztiek UTF-8 kodeaketa dutela.';
 $string['filtername'] = 'Automatikoki lotutako baliabideak';
-$string['forcedownload'] = 'Jaistera behartu';
+$string['forcedownload'] = 'Behartu jaistera';
 $string['framesize'] = 'Markoaren altuera';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa fitxategietan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Fitxategia motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';

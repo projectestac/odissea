@@ -25,6 +25,7 @@ $string['disk_consume_repofiles'] = '<strong>{$a->number} {$a->unit}</strong> ut
 $string['disk_consume_courses'] = '<strong>{$a->number} {$a->unit}</strong> utilitzats als cursos (sense comptar les còpies de seguretat)';
 $string['disk_consume_backups'] = '<strong>{$a->number} {$a->unit}</strong> utilitzats a les còpies de seguretat, incloses les dels cursos i les dels usuaris';
 $string['disk_consume_user'] = '<strong>{$a->number} {$a->unit}</strong> utilitzats en fitxers d\'usuari';
+$string['disk_consume_h5plib'] = '<strong>{$a->number} {$a->unit}</strong> utilitzats en biblioteques de l\'H5P';
 $string['disk_consume_temp'] = '<strong>{$a->number} {$a->unit}</strong> utilitzats a la carpeta <em>temp</em> (fitxers temporals pendents de ser esborrats pel cron)';
 $string['disk_consume_trash'] = '<strong>{$a->number} {$a->unit}</strong> utilitzats a la carpeta <em>trashdir</em> (fitxers marcats com a esborrats i pendents de ser esborrats pel cron)';
 $string['total_description'] = 'Percentatge de disc ocupat en relació amb el total de la quota assignada';

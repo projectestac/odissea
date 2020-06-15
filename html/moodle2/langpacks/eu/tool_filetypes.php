@@ -58,13 +58,13 @@ $string['groups_help'] = 'Aukeran luzapen hau biltzen duten fitxategi-taldeak ze
 $string['icon'] = 'Fitxategiaren ikonoa';
 $string['icon_help'] = 'Ikonoaren fitxategi-izena.
 
-Ikonoen zerrenda Moodle-ko instalazio barruko  /pix/f karpetatik hartzen da. Behar izanez gero karpetan honetara ikono pertsonalizatuak gehitu ditzakezu.';
+Ikonoen zerrenda Moodleko instalazio barruko  /pix/f direktoriotik hartzen da. Behar izanez gero direktorioan honetara ikono pertsonalizatuak gehitu ditzakezu.';
 $string['mimetype'] = 'MIME mota';
 $string['mimetype_help'] = 'Fitxategi-mota honekin lotutako MIME mota, \'application/x-mobipocket-ebook\' adibidez';
 $string['pluginname'] = 'Fitxategi-motak';
 $string['privacy:metadata'] = 'Fitxategi-motak pluginak ez du datu pertsonalik biltzen.';
-$string['revert'] = 'Berrezarri {$a} Moodle-ko lehenetsitako balioetara';
-$string['revert_confirmation'] = 'Ziur zaude <strong>.{$a}</strong> Moodle-ko lehenetsitako balioetara berrezarri nahi duzula, zure aldaketak baztertuta?';
+$string['revert'] = 'Berrezarri {$a} Moodleko lehenetsitako balioetara';
+$string['revert_confirmation'] = 'Ziur zaude <strong>.{$a}</strong> Moodleko lehenetsitako balioetara berrezarri nahi duzula, zure aldaketak baztertuta?';
 $string['revertfiletype'] = 'Berrezarri fitxategi-mota';
 $string['source'] = 'Mota';
 $string['source_custom'] = 'Pertsonalizatua';

@@ -25,24 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['clamfailed'] = 'Σφάλμα εκτέλεσης του Clam AV. Το μήνυμα που επεστράφηκε ήταν το «{$a}». Αυτή είναι η έξοδος του Clam:';
+$string['clamfailed'] = 'Σφάλμα εκτέλεσης του Clam AV. Το μήνυμα που επιστράφηκε ήταν το «{$a}». Αυτή είναι η έξοδος του Clam:';
 $string['clamfailureonupload'] = 'Σε περίπτωση αποτυχίας του ClamAV';
-$string['configclamactlikevirus'] = 'Θεώρησε οτι τα αρχεία περιέχουν ιούς';
+$string['configclamactlikevirus'] = 'Θεώρησε ότι τα αρχεία περιέχουν ιούς';
 $string['configclamdonothing'] = 'Θεώρησε ότι τα αρχεία δεν περιέχουν ιούς';
 $string['configclamfailureonupload'] = 'Αν έχετε ρυθμίσει το πρόγραμμα clam για να σαρώνει τα ανεβασμένα αρχεία αλλά δεν έχει ρυθμιστεί σωστά ή αποτυγχάνει να εκτελεστεί για κάποιον άγνωστο λόγο, πώς θέλετε να ενεργήσει; Αν επιλέξετε «Θεώρησε οτι τα αρχεία περιέχουν ιούς», θα μεταφερθούν στην περιοχή καραντίνας ή θα διαγραφούν. Αν επιλέξετε «Θεώρησε ότι τα αρχεία δεν περιέχουν ιούς», τα αρχεία θα μεταφερθούν στον φάκελο προορισμού όπως συνήθως. Σε κάθε περίπτωση, οι διαχειριστές θα ειδοποιηθούν συναγερμικά ότι το clam απέτυχε. Αν επιλέξετε «Θεώρησε οτι τα αρχεία περιέχουν ιούς» και για κάποιο λόγο το clam αποτύχει να εκτελεστεί (συνήθως διότι έχετε εισαγάγει λανθασμένο μονοπάτι ως το clam), τότε ΟΛΑ τα ανεβασμένα αρχεία θα μεταφερθούν στην ορισμένη περιοχή καραντίνας ή θα διαγραφούν. Προσοχή με αυτή τη ρύθμιση.';
-$string['errorcantopensocket'] = 'Η σύνδεση στο Unix domain socket επέστρεψε το σφάλμα {$a}';
+$string['errorcantopensocket'] = 'Η σύνδεση στο Unix domain socket (υποδοχή τομέα Unix) επέστρεψε το σφάλμα {$a}';
 $string['errorclamavnoresponse'] = 'Το ClamAV δεν ανταποκρίνεται· ελέγξτε την κατάσταση λειτουργίας της αυτόνομης υπηρεσίας (daemon).';
-$string['errornounixsocketssupported'] = 'Η μεταφορά μέσω Unix domain socket δεν υποστηρίζεται σε αυτό το σύστημα. Παρακαλούμε χρησιμοποιήστε την γραμμή εντολών ως εναλλακτική επιλογή.';
+$string['errornounixsocketssupported'] = 'Η μεταφορά μέσω Unix domain socket (υποδοχή τομέα Unix) δεν υποστηρίζεται σε αυτό το σύστημα. Παρακαλούμε χρησιμοποιήστε την γραμμή εντολών ως εναλλακτική επιλογή.';
 $string['invalidpathtoclam'] = 'Το μονοπάτι για το εκτελέσιμο αρχείο Clam AV, {$a}, δεν είναι έγκυρο.';
 $string['pathtoclam'] = 'Γραμμή εντολών';
 $string['pathtoclamdesc'] = 'Αν η μέθοδος εκτέλεσης είναι ορισμένη σε «Γραμμή εντολών», εισάγετε εδώ το μονοπάτι για το ClamAV. Στο Linux αυτό θα είναι /usr/bin/clamscan ή /usr/bin/clamdscan.';
-$string['pathtounixsocket'] = 'Διαδρομή για το Unix domain socket';
-$string['pathtounixsocketdesc'] = 'Αν η μέθοδος εκτέλεσης είναι ορισμένη σε «Unix domain socket», εισάγετε το μονοπάτι για τη UNIX υποδοχή (socket) του ClamAV εδώ. Στο Debian Linux αυτό θα είναι /var/run/clamav/clamd.ctl. Παρακαλούμε βεβαιωθείτε πως ο clamav daemon (δαίμονας, διεργασία, αυτόνομη υπηρεσία) έχει πρόσβαση ανάγνωσης στα ανεβασμένα αρχεία. Ο ευκολότερος τρόπος για να το επιβεβαιώσετε είναι να προσθέσετε τον χρήστη «clamav» στην ομάδα του εξυπηρετητή ιστού σας («www-data» στο Debian Linux).';
+$string['pathtounixsocket'] = 'Unix domain socket (υποδοχή τομέα Unix)';
+$string['pathtounixsocketdesc'] = 'Αν η μέθοδος εκτέλεσης είναι ορισμένη σε «Unix domain socket (υποδοχή τομέα Unix)», εισάγετε το μονοπάτι για το Unix domain socket του ClamAV εδώ. Στο Debian Linux αυτό θα είναι /var/run/clamav/clamd.ctl. Παρακαλούμε βεβαιωθείτε πως ο clamav daemon (δαίμονας, διεργασία, αυτόνομη υπηρεσία) έχει πρόσβαση ανάγνωσης στα ανεβασμένα αρχεία. Ο ευκολότερος τρόπος για να το επιβεβαιώσετε είναι να προσθέσετε τον χρήστη «clamav» στην ομάδα του εξυπηρετητή ιστού σας («www-data» στο Debian Linux).';
 $string['pluginname'] = 'Αντιιικό πρόγραμμα ClamAV';
 $string['privacy:metadata'] = 'Το πρόσθετο «Αντι-ιικό πρόγραμμα ClamAV» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['quarantinedir'] = 'Κατάλογος/φάκελος καραντίνας';
 $string['runningmethod'] = 'Μέθοδος εκτέλεσης';
 $string['runningmethodcommandline'] = 'Γραμμή εντολών';
-$string['runningmethoddesc'] = 'Μέθοδος εκτέλεσης του ClamAV. Η γραμμή εντολών χρησιμοποιείται από προεπιλογή, όμως στα συστήματα Unix μπορεί να επιτευχθεί καλύτερη απόδοση χρησιμοποιώντας ένα Unix domain socket.';
-$string['runningmethodunixsocket'] = 'Unix domain socket';
+$string['runningmethoddesc'] = 'Μέθοδος εκτέλεσης του ClamAV. Η γραμμή εντολών χρησιμοποιείται από προεπιλογή, όμως στα συστήματα Unix μπορεί να επιτευχθεί καλύτερη απόδοση χρησιμοποιώντας ένα Unix domain socket (υποδοχή τομέα Unix).';
+$string['runningmethodunixsocket'] = 'Unix domain socket (υποδοχή τομέα Unix)';
 $string['unknownerror'] = 'Παρουσιάστηκε ένα σφάλμα με το πρόγραμμα αντιμετώπισης ιών.';

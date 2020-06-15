@@ -195,7 +195,7 @@ $string['maxbytes'] = 'Bidalketa eranskinaren gehienezko tamaina';
 $string['modulename'] = 'Tailerra';
 $string['modulename_help'] = 'Tailerra jarduerak ikasleen lanak jaso, berrikusi eta parekoen arteko ebaluazioa egiteko aukera ematen du.
 
-Ikasleak edozein eduki digital bidal dezake (fitxategiak), hala nola testu-fitxategiak, eta Moodle-n zuzenean ere idatz dezake testu editorea erabilita.
+Ikasleak edozein eduki digital bidal dezake (fitxategiak), hala nola testu-fitxategiak, eta Moodlen zuzenean ere idatz dezake testu editorea erabilita.
 
 Bidalitako lanak irakasleak zehazturiko irizpide anitzeko ebaluazio-formulario bat erabilita kalifikatzen dira. Aurretik parekoen arteko ebaluazio prozesua eta ebaluazio formularioa ulertzeko praktikak egin daitezke irakasleak emandako adibiderako bidalketak erabilita, ebaluazio-erreferentzia batekin batera. Ikasleek kide baten edo gehiagoren ebaluazioa egiteko aukera du. Bidalketak eta berrikusketak anonimoak izan daitezke nahi izanez gero.
 

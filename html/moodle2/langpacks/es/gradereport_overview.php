@@ -29,3 +29,4 @@ $string['eventgradereportviewed'] = 'Informe de resumen de notas visto';
 $string['gradesoverview'] = 'Resumen de Calificaciones';
 $string['overview:view'] = 'Ver informe general';
 $string['pluginname'] = 'Informe general';
+$string['privacy:metadata'] = 'El Informe de Vista general de calificación solamente muestra datos almacenados en otros sitios.';

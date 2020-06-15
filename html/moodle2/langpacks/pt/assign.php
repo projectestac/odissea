@@ -243,9 +243,9 @@ $string['gradelocked'] = 'Esta nota está bloqueada ou foi ajustada na Pauta.';
 $string['gradeoutof'] = 'Nota (de 0 a {$a})';
 $string['gradeoutofhelp'] = 'Avaliação';
 $string['gradeoutofhelp_help'] = 'Insira a nota do trabalho do aluno aqui. Pode incluir casas decimais.';
-$string['gradersubmissionupdatedhtml'] = '{$a->username} atualizou a submissão do trabalho <i>\'{$a->assignment}\' {$a->timeupdated}</i><br /><br />
-Está <a href="{$a->url}">disponível no Moodle</a>.';
-$string['gradersubmissionupdatedsmall'] = '{$a->username} atualizou o seu trabalho em {$a->assignment}.';
+$string['gradersubmissionupdatedhtml'] = '{$a->username} atualizou a submissão do seu trabalho em <i>"{$a->assignment}", {$a->timeupdated}</i><br /><br />
+Pode <a href="{$a->url}">consultar no Moodle</a>.';
+$string['gradersubmissionupdatedsmall'] = '{$a->username} atualizou o seu trabalho em "{$a->assignment}".';
 $string['gradersubmissionupdatedtext'] = '{$a->username} atualizou a submissão do trabalho \'{$a->assignment}\'  {$a->timeupdated}
 Está disponível aqui:
 

@@ -45,7 +45,7 @@ $string['enrolusers'] = 'Matrikulatu erabiltzaileak';
 $string['enroluserscohorts'] = 'Matrikulatu aukeratutako erabiltzaile eta kohorteak';
 $string['expiredaction'] = 'Matrikulazioaren iraungitze-ekintza';
 $string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
-$string['expirymessageenrolledbody'] = 'Kaixo {$a->user},
+$string['expirymessageenrolledbody'] = 'Kaixo, {$a->user}:
 
 Mezu hau \'{$a->course}\' ikastaroan zure matrikula {$a->timeend} datan amaituko dela jakinarazteko da.
 

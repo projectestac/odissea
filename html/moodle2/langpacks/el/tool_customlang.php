@@ -42,7 +42,7 @@ $string['filterstringid'] = 'Όνομα συμβολοσειράς';
 $string['filtersubstring'] = 'Μόνο συμβολοσειρές που περιέχουν';
 $string['headingcomponent'] = 'Στοιχείο λογισμικού';
 $string['headinglocal'] = 'Τοπική προσαρμογή<br />
-<small><i>Δείτε το <a href="https://moodle.org/mod/glossary/view.php?id=8542&mode=letter&hook=ALL&sortkey&sortorder=asc&fullsearch=0&page=-1">Γλωσσάριο</a> πριν κάνετε τις μεταφράσεις σας.</i></small>';
+<small><i>Αν πιστεύετε ότι η μετάφρασή σας είναι καλύτερη από την επίσημη (ή δεν υπάρχει άλλη), μπορείτε να συνεισφέρετε μέσω της <a href="https://lang.moodle.org/local/amos/view.php">Εργαλειοθήκης μετάφρασης AMOS</a>.</i></small>';
 $string['headingstandard'] = 'Αρχικό κείμενο';
 $string['headingstringid'] = 'Συμβολοσειρά';
 $string['markinguptodate'] = 'Σημείωση της τοπικής προσαρμογής μετάφρασης ως ενημερωμένης';

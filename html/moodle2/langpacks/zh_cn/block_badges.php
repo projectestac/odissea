@@ -29,4 +29,4 @@ $string['badges:addinstance'] = '添加一个最新勋章版块';
 $string['badges:myaddinstance'] = '在个人主页新增一个最新勋章版块';
 $string['nothingtodisplay'] = '您没有可以显示的勋章';
 $string['numbadgestodisplay'] = '最新勋章显示个数';
-$string['pluginname'] = '我的最新勋章';
+$string['pluginname'] = '最新勋章';

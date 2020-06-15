@@ -116,7 +116,7 @@ $string['entries_saved'] = 'Zure erantzunak ondo gorde dira. Eskerrik asko';
 $string['eventresponsedeleted'] = 'Erantzuna ezabatu da';
 $string['eventresponsesubmitted'] = 'Erantzuna bidali da';
 $string['export_questions'] = 'Esportatu galderak';
-$string['export_to_excel'] = 'Esportatu Excelera';
+$string['export_to_excel'] = 'Esportatu Excel-era';
 $string['feedback:addinstance'] = 'Gehitu inkesta berria';
 $string['feedbackclose'] = 'Erantzunetarako itxiera-data';
 $string['feedback:complete'] = 'Osatu inkesta bat';
@@ -170,7 +170,7 @@ $string['mode'] = 'Modua';
 $string['modulename'] = 'Inkesta';
 $string['modulename_help'] = 'Inkesta jarduerak irakasleari inkesta pertsonalizatuak sortzea ahalbidetzen diote, parte-hartzaileen feedbackak jasotzeko hainbat galdera-mota erabilita, tartean aukera anitzekoak, Bai/Ez modukoak eta testua idaztekoak.
 
-Inkestaren emaitzak ikasleek erantzun ondoren erakutsi daitezke, baita irakasleentzat soilik erakutsi ere. Emaitzak ikasleen izenekin edo modu anonimoan erakutsi daitezke. Moodle-ko hasiera orrian dauden inkestak saioa hasi gabeko erabiltzaileek ere osatu ditzakete.
+Inkestaren emaitzak ikasleek erantzun ondoren erakutsi daitezke, baita irakasleentzat soilik erakutsi ere. Emaitzak ikasleen izenekin edo modu anonimoan erakutsi daitezke. Moodleko hasiera orrian dauden inkestak saioa hasi gabeko erabiltzaileek ere osatu ditzakete.
 
 Inkesta jarduerak erabili daitezke
 

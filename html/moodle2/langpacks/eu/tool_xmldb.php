@@ -43,35 +43,35 @@ $string['check_indexes'] = 'Bilatu falta diren datu-baseko indizeak';
 $string['checkoraclesemantics'] = 'Egiaztatu semantika';
 $string['check_oracle_semantics'] = 'Bilatu luzera ezegokiko semantika';
 $string['completelogbelow'] = '(ikusi behean bilaketaren erregistro osoa)';
-$string['confirmcheckbigints'] = 'Funtzionalitate honek <a href="https://tracker.moodle.org/browse/MDL-11038">zenbaki oso ezegokiak izan ditzaketen eremuak</a> bilatuko ditu zure Moodle zerbitzarian, eta sortuko ditu (exekutatu gabe!) zenbaki osoak zure datu-basean modu egokian definituta izateko beharrezkoak diren SQL komandoak.
+$string['confirmcheckbigints'] = 'Funtzionalitate honek <a href="https://tracker.moodle.org/browse/MDL-11038">zenbaki oso ezegokiak izan ditzaketen eremuak</a> bilatuko ditu zure Moodle zerbitzarian, eta sortuko ditu (exekutatu gabe!) zenbaki osoak zure datu-basean modu egokian definituta izateko beharrezkoak diren SQL adierazpenak.
 
-Behin komando horiek sortuta zure SQL interfaze gogokoenean kopiatu eta modu seguruan exekuta ditzakezu (ez ahaztu hori egin aurretik zure datuen segurtasun-kopia bat egitea).
+Behin adierazpen horiek sortuta zure SQL interfaze gogokoenean kopiatu eta modu seguruan exekuta ditzakezu (ez ahaztu hori egin aurretik zure datuen segurtasun-kopia bat egitea).
 
 Irmoki gomendatzen da eskuragarri dagoen zure Moodle bertsioaren azken kaleratzea instalatuta izatea zenbaki oso ezegokiak bilatu baino lehen.
 
 Funtzionalitate honek ez du datu-basean inolako ekintzarik egiten (bertatik irakurri baino ez), eta beraz arazorik gabe edozein unetan exekuta daiteke.';
-$string['confirmcheckdefaults'] = 'Funtzionalitate honek zure Moodle zerbitzarian sendotasunik ez duten lehenetsitako balioak bilatuko ditu, eta sortuko ditu (exekutatu gabe!) lehenetsitako balio horiek guztiak modu egokian zehazteko beharrezkoak diren SQL komandoak.
+$string['confirmcheckdefaults'] = 'Funtzionalitate honek zure Moodle zerbitzarian sendotasunik ez duten lehenetsitako balioak bilatuko ditu, eta sortuko ditu (exekutatu gabe!) lehenetsitako balio horiek guztiak modu egokian zehazteko beharrezkoak diren SQL adierazpenak.
 
-Behin komando horiek sortuta zure SQL interfaze gogokoenean kopiatu eta modu seguruan exekuta ditzakezu (ez ahaztu hori egin aurretik zure datuen segurtasun-kopia bat egitea).
+Behin adierazpen horiek sortuta zure SQL interfaze gogokoenean kopiatu eta modu seguruan exekuta ditzakezu (ez ahaztu hori egin aurretik zure datuen segurtasun-kopia bat egitea).
 
 Irmoki gomendatzen da eskuragarri dagoen zure Moodle bertsioaren azken kaleratzea instalatuta izatea sendotasunik gabeko lehenetsitako balioak bilatu baino lehen.
 
 Funtzionalitate honek ez du datu-basean inolako ekintzarik egiten (bertatik irakurri baino ez), eta beraz arazorik gabe edozein unetan exekuta daiteke.';
-$string['confirmcheckforeignkeys'] = 'Funtzionalitate honek install.xml definizioetan zehaztutako kanpoko gakoen urraketa potentzialen bilaketa egingo du. (Moodle-k une honetan ez du kanpoko gakorik sortzen datu-basean, eta horregatik ager daitezke datu baliogabeak.)
+$string['confirmcheckforeignkeys'] = 'Funtzionalitate honek install.xml definizioetan zehaztutako kanpoko gakoen urraketa potentzialen bilaketa egingo du. (Moodlek une honetan ez du kanpoko gakorik sortzen datu-basean, eta horregatik ager daitezke datu baliogabeak.)
 
 Irmoki gomendatzen da eskuragarri dagoen zure Moodle bertsioaren azken kaleratzea instalatuta izatea kanpoko gakoen urraketa potentzialen bilaketa exekutatu baino lehen.
 
 Funtzionalitate honek ez du datu-basean inolako ekintzarik egiten (bertatik irakurri baino ez), eta beraz arazorik gabe edozein unetan exekuta daiteke.';
-$string['confirmcheckindexes'] = 'Funtzionalitate honek falta daitezkeen indizeak bilatuko ditu zure Moodle zerbitzarian, eta sortuko ditu (exekutatu gabe!) dena eguneratuta izateko beharrezkoak diren SQL komandoak.
+$string['confirmcheckindexes'] = 'Funtzionalitate honek falta daitezkeen indizeak bilatuko ditu zure Moodle zerbitzarian, eta sortuko ditu (exekutatu gabe!) dena eguneratuta izateko beharrezkoak diren SQL adierazpenak.
 
-Behin komando horiek sortuta zure SQL interfaze gogokoenean kopiatu eta modu seguruan exekuta ditzakezu (ez ahaztu hori egin aurretik zure datuen segurtasun-kopia bat egitea).
+Behin adierazpen horiek sortuta zure SQL interfaze gogokoenean kopiatu eta modu seguruan exekuta ditzakezu (ez ahaztu hori egin aurretik zure datuen segurtasun-kopia bat egitea).
 
 Irmoki gomendatzen da eskuragarri dagoen zure Moodle bertsioaren azken kaleratzea instalatuta izatea falta diren indizeak bilatu baino lehen.
 
 Funtzionalitate honek ez du datu-basean inolako ekintzarik egiten (bertatik irakurri baino ez), eta beraz arazorik gabe edozein unetan exekuta daiteke.';
-$string['confirmcheckoraclesemantics'] = 'Funtzionalitate honek <a href="https://tracker.moodle.org/browse/MDL-29322">BYTE semantika erabiltzen duten Oracle varchar2 zutabeak</a> bilatuko ditu zure Moodle zerbitzarian, eta sortuko ditu (exekutatu gabe!) zutabe guztiek horren ordez CHAR semantika (datu-baseen arteko bateragarritasunerako hobea eta edukien gehienezko luzera handitzen duena) erabil dezaten beharrezkoak diren SQL komandoak.
+$string['confirmcheckoraclesemantics'] = 'Funtzionalitate honek <a href="https://tracker.moodle.org/browse/MDL-29322">BYTE semantika erabiltzen duten Oracle varchar2 zutabeak</a> bilatuko ditu zure Moodle zerbitzarian, eta sortuko ditu (exekutatu gabe!) zutabe guztiek horren ordez CHAR semantika (datu-baseen arteko bateragarritasunerako hobea eta edukien gehienezko luzera handitzen duena) erabil dezaten beharrezkoak diren SQL adierazpenak.
 
-Behin komando horiek sortuta zure SQL interfaze gogokoenean kopiatu eta modu seguruan exekuta ditzakezu (ez ahaztu hori egin aurretik zure datuen segurtasun-kopia bat egitea).
+Behin adierazpen horiek sortuta zure SQL interfaze gogokoenean kopiatu eta modu seguruan exekuta ditzakezu (ez ahaztu hori egin aurretik zure datuen segurtasun-kopia bat egitea).
 
 Irmoki gomendatzen da eskuragarri dagoen zure Moodle bertsioaren azken kaleratzea instalatuta izatea BYTE semantika erabiltzen duten zutabeak bilatu baino lehen.
 
@@ -170,8 +170,8 @@ $string['numberincorrectdecimals'] = 'Hamartarren kopuru ezegokia zenbakizko ere
 $string['numberincorrectlength'] = 'Zenbakizko eremuaren luzera ezegokia';
 $string['numberincorrectwholepart'] = 'Zenbakizko eremuaren zenbaki-atal handiegia.';
 $string['pendingchanges'] = 'Oharra: Fitxategi honi aldaketak egin dizkiozu. Edozein unetan gorde daitezke.';
-$string['pendingchangescannotbesaved'] = 'Fitxategi honetan aldaketak daude baina ezin dira gorde! Mesedez egiaztatu web zerbitzariak bai karpeta baita bertako "install.xml" fitxategia ere idazteko baimenak dituela.';
-$string['pendingchangescannotbesavedreload'] = 'Fitxategi honetan aldaketak daude baina ezin dira gorde! Mesedez egiaztatu web zerbitzariak bai karpeta baita bertako "install.xml" fitxategiak ere idazteko baimenak dituztela. Orduan orri hau freskatu eta aldaketa horiek gorde ahal izango dituzu.';
+$string['pendingchangescannotbesaved'] = 'Fitxategi honetan aldaketak daude baina ezin dira gorde! Mesedez egiaztatu web zerbitzariak bai direktorioa baita bertako "install.xml" fitxategia ere idazteko baimenak dituela.';
+$string['pendingchangescannotbesavedreload'] = 'Fitxategi honetan aldaketak daude baina ezin dira gorde! Mesedez egiaztatu web zerbitzariak bai direktorioa baita bertako "install.xml" fitxategiak ere idazteko baimenak dituztela. Orduan orri hau freskatu eta aldaketa horiek gorde ahal izango dituzu.';
 $string['pluginname'] = 'XMLDB editorea';
 $string['primarykeyonlyallownotnullfields'] = 'Gako nagusiak (primary key) ezin dira hutsik egon';
 $string['privacy:metadata'] = 'XMLDB editorea pluginak ez du datu pertsonalik biltzen.';
@@ -215,11 +215,11 @@ $string['wronglengthforenum'] = 'Enum eremuaren luzera ez da egokia';
 $string['wrongnumberofreffields'] = 'Zenbaki ezegokia erakutsitako eremuan';
 $string['wrongoraclesemantics'] = 'Oracle-ko BYTE semantika ezegokia aurkitu da';
 $string['wrongreservedwords'] = 'Une honetan erabilitako Hitz Erreserbatuak<br />(kontuan izan taularen izenak ez direla garrantzizkoak $CFG->prefix erabiltzen bada)';
-$string['yesmissingindexesfound'] = '<p>Zure datu-basean hainbat indize falta direla atzeman da. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaz gogokoenean exekutatu behar diren SQL komandoak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
+$string['yesmissingindexesfound'] = '<p>Zure datu-basean hainbat indize falta direla atzeman da. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaz gogokoenean exekutatu behar diren SQL adierazpenak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
 <p>Behin hori egindakoan, funtzio hau berriz ere exekutatzea gomendatzen da indize gehiagorik ez dela falta egiaztatzeko.</p>';
-$string['yeswrongdefaultsfound'] = '<p>Zure datu-basean sendotasunik gabeko lehenetsitako balio batzuk aurkitu dira. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaze gogokoenean exekutatu behar diren SQL komandoak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
+$string['yeswrongdefaultsfound'] = '<p>Zure datu-basean sendotasunik gabeko lehenetsitako balio batzuk aurkitu dira. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaze gogokoenean exekutatu behar diren SQL adierazpenak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
 <p>Behin hori egindakoan, funtzio hau berriz ere exekutatzea gomendatzen da arazoak sortzen dituen lehenetsitako beste baliorik ez dagoela ziurtatzeko.</p>';
-$string['yeswrongintsfound'] = '<p>Zure datu-basean hainbat integer oker aurkitu dira. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaz gogokoenean exekutatu behar diren SQL komandoak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
+$string['yeswrongintsfound'] = '<p>Zure datu-basean hainbat integer oker aurkitu dira. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaz gogokoenean exekutatu behar diren SQL adierazpenak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
 <p>Arazoak konpondu ondoren, funtzio hau berriz ere exekutatzea gomendatzen da beste zenbaki okerrik ez dagoela ziurtatzeko.</p>';
-$string['yeswrongoraclesemanticsfound'] = '<p>Zure datu-basean BYTE semantika erabiltzen duten Oracle zutabeak aurkitu dira. Hemen dituzu horien zehaztasunak eta zutabeak eraldatzeko zure SQL interfaz gogokoenean exekutatu behar diren SQL komandoak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
+$string['yeswrongoraclesemanticsfound'] = '<p>Zure datu-basean BYTE semantika erabiltzen duten Oracle zutabeak aurkitu dira. Hemen dituzu horien zehaztasunak eta zutabeak eraldatzeko zure SQL interfaz gogokoenean exekutatu behar diren SQL adierazpenak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
 <p>Behin hori egindakoan, funtzio hau berriz ere exekutatzea gomendatzen da semantika ezegoki gehiago ez dagoela ziurtatzeko.</p>';

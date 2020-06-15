@@ -51,9 +51,9 @@ $string['eventchapterupdated'] = 'Kapitel aktualisiert';
 $string['eventchapterviewed'] = 'Kapitel angezeigt';
 $string['hidechapter'] = 'Kapitel "{$a}" verbergen';
 $string['indicator:cognitivedepth'] = 'Buch kognitiv';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in bei einem Buch erreicht hat.';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einem Buch erreicht hat.';
 $string['indicator:socialbreadth'] = 'Buch sozial';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in bei einem Buch erreicht hat.';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einem Buch erreicht hat.';
 $string['modulename'] = 'Buch';
 $string['modulename_help'] = 'Statt endlos durch lange Texte am Bildschirm zu scrollen, teilen Sie Ihre Lerninhalte auf kurze Seiten innerhalb des Buchs auf.
 

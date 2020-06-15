@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['access'] = 'Eskuragarritasuna';
 $string['accesshelp'] = 'Eskuragarritasunari buruzko laguntza';
 $string['accesskey'] = 'Sarbide-giltza, {$a}';
-$string['accessstatement'] = 'Eskuragarritasun-aldarrikapena';
+$string['accessstatement'] = 'Eskuragarritasun-adierazpena';
 $string['activitynext'] = 'Hurrengo jarduera';
 $string['activityprev'] = 'Aurreko jarduera';
 $string['breadcrumb'] = 'Nabigazio-barra';

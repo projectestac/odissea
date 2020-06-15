@@ -149,7 +149,7 @@ $string['cutoffdatefromdatevalidation'] = 'Der Termin der letzten Abgabemöglich
 $string['cutoffdate_help'] = 'Diese Funktion sperrt die Abgabe von Lösungen ab diesem Termin, sofern keine individuellen Verlängerungen zugelassen wurden.';
 $string['cutoffdatevalidation'] = 'Der Termin der letzten Abgabemöglichkeit kann nicht früher liegen als das Fälligkeitsdatum.';
 $string['defaultlayout'] = 'Standardlayout wiederherstellen';
-$string['defaultsettings'] = 'Standardmäßige Voreinstellungen';
+$string['defaultsettings'] = 'Voreinstellungen';
 $string['defaultsettings_help'] = 'Diese Einstellungen legen Vorgaben für alle neuen Aufgaben fest.';
 $string['defaultteam'] = 'Standard-Gruppe';
 $string['deleteallsubmissions'] = 'Alle Abgaben löschen';
@@ -264,7 +264,7 @@ $string['gradingstatus'] = 'Bewertungsstatus';
 $string['gradingstudent'] = 'Person wird bewertet';
 $string['gradingsummary'] = 'Bewertungsüberblick';
 $string['grantextension'] = 'Verlängerung zulassen';
-$string['grantextensionforusers'] = 'Verlängerung für {$a} Teillnehmer/innen zulassen';
+$string['grantextensionforusers'] = 'Verlängerung für {$a} Teilnehmer/innen zulassen';
 $string['groupoverrides'] = 'Verfügbarkeitsänderung für Gruppen';
 $string['groupoverridesdeleted'] = 'Verfügbarkeitsänderungen für Gruppen gelöscht';
 $string['groupsnone'] = 'Keine Gruppe, auf die Sie zugreifen können.';
@@ -273,9 +273,9 @@ $string['hiddenuser'] = 'Teilnehmer/in';
 $string['hideshow'] = 'Verbergen/Anzeigen';
 $string['inactiveoverridehelp'] = '* Der Schüler hat nicht die korrekte Gruppe oder Rolle um die Aufgabe zu versuchen';
 $string['indicator:cognitivedepth'] = 'Aufgabe kognitiv';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Aufgabenaktivität erreicht hat.';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Aufgabenaktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Aufgabe sozial';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Aufgabenaktivität erreicht hat.';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Aufgabenaktivität erreicht hat.';
 $string['instructionfiles'] = 'Anleitungsdateien';
 $string['introattachments'] = 'Zusätzliche Dateien';
 $string['introattachments_help'] = 'Zusätzliche Dateien bei der Benutzung der Aktivität Aufgabe können hinzugefügt werden, z.B. Antwortvorlagen.';
@@ -306,13 +306,13 @@ $string['markingworkflowstate_help'] = 'Die Liste der Workflowstati, die Sie aus
 * Bewertung abgeschlossen: Die Bewertung wurde vorgenommen, ist jedoch noch nicht für die Teilnehmer/innen freigegeben.
 * In weiterer Überprüfung: Die Bewertung wird im Review-Verfahren von weiteren Trainer/innen durchgesehen.
 * Fertig zur Freigabe: Die abschließende Bewertung steht fest, wartet jedoch noch mit der Freigabe für die Teilnehmer/innen.
-* Freigegeben: Teilnehmer/innen erhalten eine Benachrichtgung per E-Mail – soweit aktiviert - und sehen ihre Bewertungen sowie das Feedback.';
+* Freigegeben: Teilnehmer/innen können ihre Bewertungen sowie das Feedback einsehen und erhalten, sofern dies aktiviert wird,  eine Benachrichtgung per E-Mail.';
 $string['markingworkflowstateinmarking'] = 'In Bewertung';
 $string['markingworkflowstateinreview'] = 'In weiterer Überprüfung';
 $string['markingworkflowstatenotmarked'] = 'Unbewertet';
 $string['markingworkflowstatereadyforrelease'] = 'Fertig zur Freigabe';
 $string['markingworkflowstatereadyforreview'] = 'Bewertung abgeschlossen';
-$string['markingworkflowstatereleased'] = 'Freigegeben (Teilnehmer/innen informieren)';
+$string['markingworkflowstatereleased'] = 'Freigegeben (Teilnehmer können ihre Bewertung einsehen)';
 $string['maxattempts'] = 'Maximal mögliche Versuche';
 $string['maxattempts_help'] = 'Maximale Anzahl von Abgabeversuchen. Nach dieser Anzahl von Versuchen können Teilnehmer/innen ihre Abgabe nicht mehr neu öffnen oder ändern.';
 $string['maxgrade'] = 'Bestwertung';

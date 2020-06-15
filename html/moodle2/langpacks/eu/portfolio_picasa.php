@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'Bezeroaren IDa';
-$string['noauthtoken'] = 'Ez da autentifikazio-tokena jaso Google-tik. Mesedez, ziurta ezazu Moodle-n zure Google-ren kontura sartzeko baimena duzula.';
+$string['noauthtoken'] = 'Ez da autentifikazio-tokena jaso Google-tik. Mesedez, ziurta ezazu Moodlen zure Google-ren kontura sartzeko baimena duzula.';
 $string['nooauthcredentials'] = 'OAuth kredentzialak behar dira.';
 $string['nooauthcredentials_help'] = 'Picasa portfolio-plugina erabiltzeko portfolioaren ezarpenetan OAuth kredentzialak konfiguratu behar dituzu.';
 $string['oauthinfo'] = '<p>Plugin hau erabiltzeko, zure gunea Google-n erregistratu behar duzu <a href="{$a->docsurl}">Google OAuth 2.0 setup</a> dokumentazioan azaltzen den eran.</p><p>Erregistro-prozesuaren une batean, hurrengo URLa  \'Authorized Redirect URIs\' gisa sartu beharko duzu:</p><p>{$a->callbackurl}</p><p>Behin erregistroa eginda, bezero IDa eta sekretua emango zaizu Google Drive eta Picasa gehigarriak konfiguratu ahal izateko.</p>';

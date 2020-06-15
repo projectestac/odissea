@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Igotzeko pluginerako ezarpenak';
 $string['pluginname'] = 'Igo fitxategia';
-$string['pluginname_help'] = 'Igo fitxategia Moodle-ra';
+$string['pluginname_help'] = 'Igo fitxategia Moodlera';
 $string['privacy:metadata'] = 'Igo fitxategia biltegi-pluginak ez du datu pertsonalik biltzen edo transmititzen.';
 $string['upload_error_cant_write'] = 'Ezin izan da fitxategia diskoan idatzi';
 $string['upload_error_extension'] = 'PHP hedapen batek eten du fitxategiaren igoera.';

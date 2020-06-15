@@ -297,7 +297,7 @@ $string['lockdiscussionafter_help'] = 'Eztabaidak automatikoki blokeatu daitezke
 
 Blokeatutako eztabaidetan erantzuteko gaitasuna duten erabiltzaileek eztabaidak desblokeatu ditzakete bertan erantzunez.';
 $string['longpost'] = 'Mezu luzea';
-$string['mailnow'] = 'Bidali foroko mezuen jakinarazpenak editatzeko atzerapen tarterik gabe';
+$string['mailnow'] = 'Bidali berehala foroko mezuaren jakinarazpenak, editatzeko atzerapen tarterik gabe';
 $string['managesubscriptionsoff'] = 'Amaitu harpidetzen kudeaketa';
 $string['managesubscriptionson'] = 'Kudeatu harpidedunak';
 $string['manydiscussions'] = 'Eztabaidak orriko';
@@ -534,7 +534,7 @@ $string['searchresults'] = 'Bilaketaren emaitzak';
 $string['searchsubject'] = 'Hitz hauek izenburuan agertu behar lirateke';
 $string['searchtags'] = 'hurrengo etiketa dauka:';
 $string['searchuser'] = 'Egileak izen honekin bat etorri beharko luke';
-$string['searchuserid'] = 'Egilearen ID-a Moodle-n';
+$string['searchuserid'] = 'Egilearen ID-a Moodlen';
 $string['searchwhichforums'] = 'Aukeratu zein forotan bilatu behar den';
 $string['searchwords'] = 'Hitz hauek mezuaren edozein lekutan ager daitezke';
 $string['seeallposts'] = 'Ikusi erabiltzaile honen mezu guztiak';

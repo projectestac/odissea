@@ -32,7 +32,7 @@ $string['callbackurltext'] = '<ol>
 <li>Ziurtatu ezazu  atzera deiaren URLaren ezarpena Flickr-en giltza bezala<strong>{$a}</strong></li></ol>';
 $string['callbackwarning'] = '<ol>
 <li>Lortu <a href="http://www.flickr.com/services/api/keys/">Flickr API Key and Secret</a> zure Moodle gunerako.</li>
-<li>Idatzi datu horiek hemen, ondoren egin klik Gorde botoian hona bueltatzeko eta gero egin klik Ezarpenak botoian. Moodle-k zuretzako atzera deiaren URL bat sortu duela ikusiko duzu.</li>
+<li>Idatzi datu horiek hemen, ondoren egin klik Gorde botoian hona bueltatzeko eta gero egin klik Ezarpenak botoian. Moodlek zuretzako atzera deiaren URL bat sortu duela ikusiko duzu.</li>
 <li>Editatu zure <a href="http://www.flickr.com/services/api/keys/">Flickr</a> giltzaren zehaztasunak bertan atzera deiaren URLa zehazteko</li>
 <li>Editatu zure <a href="http://www.flickr.com/services/api/keys/">Flickr</a> gakoaren xehetasunak berriz ere eta ezarri bertan atzera deiaren URLa.</li>
 </ol>';
@@ -44,7 +44,7 @@ $string['notitle'] = 'Izenbururik gabe';
 $string['nullphotolist'] = 'Ez dago argazkirik kontu honetan';
 $string['pluginname'] = 'Flickr';
 $string['pluginname_help'] = 'Biltegia flickr.com-en';
-$string['privacy:metadata:repository_flickr'] = 'Flickr biltegiak erabiltzailearen honespenak gordetzen ditu, eta erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_flickr'] = 'Flickr biltegiak erabiltzailearen honespenak gordetzen ditu, eta erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token'] = 'Flickr biltegiaren OAuth tokenaren honespena.';
 $string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token_secret'] = 'Flickr biltegiaren OAuth sekretuaren honespena; hau pribatutasun datuen esportaziotik kanpo uzten da.';
 $string['privacy:metadata:repository_flickr:text'] = 'Flickr biltegiko erabiltzailearen bilaketaren testua.';

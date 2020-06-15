@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_emaildescription'] = '<p>Posta elektronikoan oinarritutako auto-erregistroak erabiltzaileari sarbide-orriko \'Sortu kontu berri bat\' botoiaren bidez bere kontua sortzea ahalbidetzen dio. Erabiltzaileak orduan pasahitza berresteko orrira doan esteka seguru bat duen e-mail bat jasoko luke. Hurrengo sarreretan erabiltzaile eta pasahitza Moodle-ko datu-basean gordetako balioekin egiaztatuko dira.</p><p>Oharra: Plugin hau gehitzeaz gain, \'Kudeatu autentifikazioa\' orriko \'Auto-erregistroa\' menuan \'Posta elektronikoan oinarritutako auto-erregistroa\' aukeratu behar da .</p>';
+$string['auth_emaildescription'] = '<p>Posta elektronikoan oinarritutako auto-erregistroak erabiltzaileari sarbide-orriko \'Sortu kontu berri bat\' botoiaren bidez bere kontua sortzea ahalbidetzen dio. Erabiltzaileak orduan pasahitza berresteko orrira doan esteka seguru bat duen e-mail bat jasoko luke. Hurrengo sarreretan erabiltzaile eta pasahitza Moodleko datu-basean gordetako balioekin egiaztatuko dira.</p><p>Oharra: Plugin hau gehitzeaz gain, \'Kudeatu autentifikazioa\' orriko \'Auto-erregistroa\' menuan \'Posta elektronikoan oinarritutako auto-erregistroa\' aukeratu behar da .</p>';
 $string['auth_emailnoemail'] = 'E-mail bat bidali nahi izan dizugu baina ezin izan dugu!';
 $string['auth_emailrecaptcha'] = 'Gehitu erabiltzaileak posta elektronikoan oinarritutako auto-erregistroaren bidez izena emateko orrian egiaztatzeko ikus-entzutezko konfirmazio-formularioa. Horrek babestu egingo du zure gunea spam-sortzaileengandik eta lan garbian lagunduko du. Ikusi https://www.google.com/recaptcha zehaztasun gehiagorako.';
 $string['auth_emailrecaptcha_key'] = 'Gaitu reCAPTCHA elementua';

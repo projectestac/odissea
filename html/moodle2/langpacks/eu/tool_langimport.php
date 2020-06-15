@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadnotavailable'] = 'Ezin izan da deskargen zerbitzarira konektatu. Ezin da hizkuntza-paketerik automatikoki instalatu edo eguneratu. Mesedez jaitsi ZIP fitxategi egokia(k) <a href="{$a->src}">{$a->src}</a> helbidetik eta eskuz erauzi zure datuen karpetako <code>{$a->dest}</code> kokapenean.';
+$string['downloadnotavailable'] = 'Ezin izan da deskargen zerbitzarira konektatu. Ezin da hizkuntza-paketerik automatikoki instalatu edo eguneratu. Mesedez jaitsi ZIP fitxategi egokia(k) <a href="{$a->src}">{$a->src}</a> helbidetik eta eskuz erauzi zure datuen direktorioko <code>{$a->dest}</code> kokapenean.';
 $string['install'] = 'Instalatu aukeratutako hizkuntza-paketea(k)';
 $string['installedlangs'] = 'Instalatutako hizkuntza-paketeak';
 $string['langimport'] = 'Hizkuntza inportatzeko baliabidea';

@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Espazos en branco para {$a} aspectos máis';
+$string['dimensioncommentfor'] = 'Comentario para {$a}';
 $string['dimensiondescription'] = 'Descrición';
 $string['dimensionnumber'] = 'Aspecto {$a}';
 $string['pluginname'] = 'Comentarios';
+$string['privacy:metadata'] = 'O engadido de cualificación Comentarios só almacena os detalles do formulario de avaliación. Os datos persoais reais de como se encheu o formulario almacénanse no propio módulo Workshop (Obradoiro), e engádense ás avaliacións exportadas.';

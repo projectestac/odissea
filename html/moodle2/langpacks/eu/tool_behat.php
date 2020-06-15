@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aim'] = 'Kudeaketa erreminta honek garatzaileei eta probatzaileei Moodle-ko funtzionalitateak zehazten dituzten .feature fitxategiak sortzen eta automatikoki exekutatzen laguntzen die. .feature fitxategietan erabiltzeko eskuragarri dauden urratsen definizioak behean zerrendatzen dira.';
+$string['aim'] = 'Kudeaketa erreminta honek garatzaileei eta probatzaileei Moodleko funtzionalitateak zehazten dituzten .feature fitxategiak sortzen eta automatikoki exekutatzen laguntzen die. .feature fitxategietan erabiltzeko eskuragarri dauden urratsen definizioak behean zerrendatzen dira.';
 $string['allavailablesteps'] = 'Eskuragarri dauden urratsen definizio guztiak';
 $string['errorbehatcommand'] = 'Errorea behat CLI komandoa exekutatzean. Saiatu "{$a} --help" CLI bidez eskuz exekutatzen arazoaren inguruan gehiago jakiteko.';
 $string['errorcomposer'] = 'Composer-eko menpekotasunak ez daude instalatuta.';
@@ -52,5 +52,5 @@ $string['viewsteps'] = 'Iragazkia';
 $string['wheninfo'] = 'Noiz. Ekitaldi bat abiarazten duen ekintza';
 $string['wrongbehatsetup'] = 'Arazoren bat dago behat-eko konfigurazioarekin eta urratsen definizioak ezin izan dira zerrendatu: <b>{$a->errormsg}</b><br/><br/>Mesedez egiaztatu:<ul>
 <li>$CFG->behat_dataroot, $CFG->behat_prefix eta $CFG->behat_wwwroot parametroak config.php fitxategian $CFG->dataroot, $CFG->prefix eta $CFG->wwwroot parametroen balio ezberdinekin definituta daudela.</li>
-<li>"{$a->behatinit}" zure Moodle-ko jatorrizko karpetatik exekutatu duzula.</li>
+<li>"{$a->behatinit}" zure Moodleko jatorrizko direktoriotik exekutatu duzula.</li>
 <li>Menpekotasunak vendor/ kokapenean instalatuta daudela eta {$a->behatcommand} fitxategiak exekutatzeko baimank dituela.</li></ul>';

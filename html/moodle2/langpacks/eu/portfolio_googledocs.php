@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'Bezeroaren IDa';
-$string['noauthtoken'] = 'Ez da autentifikazio tokenik jaso Google-tik. Mesedez, ziurtatu baimena duzula Moodle-n zure Google kontura sartzeko';
+$string['noauthtoken'] = 'Ez da autentifikazio tokenik jaso Google-tik. Mesedez, ziurtatu baimena duzula Moodlen zure Google kontura sartzeko';
 $string['nooauthcredentials'] = 'OAuth kredentzialak behar dira.';
 $string['nooauthcredentials_help'] = 'Google Drive portfolio-plugina erabiltzeko portfolio-ezarpenetan OAuth kredentzialak konfiguratu behar dituzu.';
 $string['nosessiontoken'] = 'Saioko tokenik ez dago google-ra esportatzea debekatuz';

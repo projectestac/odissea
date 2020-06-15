@@ -389,7 +389,7 @@ $string['courseprofiles'] = 'Perfis da disciplina';
 $string['coursereasonforrejecting'] = 'Razão para rejeitar este pedido';
 $string['coursereasonforrejectingemail'] = 'Mensagem que será enviada a quem fez o pedido';
 $string['coursereject'] = 'Rejeitar pedido de disciplina';
-$string['courserejected'] = 'A disciplina foi rejeitada e o autor do pedido notificado.';
+$string['courserejected'] = 'O pedido de disciplina foi rejeitado e o autor do pedido foi notificado.';
 $string['courserejectemail'] = 'Lamentamos, mas a disciplina que pediu foi rejeitada. A causa é a seguinte:
 
 {$a}';
@@ -404,7 +404,7 @@ $string['courserequestintro'] = 'Use este formulário para fazer um pedido de cr
 $string['courserequestreason'] = 'Justificação do pedido de criação da disciplina';
 $string['courserequestsuccess'] = 'O seu pedido de criação de disciplina foi registado com sucesso. Em breve irá receber um e-mail a informá-lo do resultado do seu pedido.';
 $string['courserequestsupport'] = 'Informação de suporte para auxiliar o administrador a avaliar este pedido';
-$string['courserequestwarning'] = 'O utilizador que solicite acesso a esta disciplina será inscrito automaticamente e ser-lhe-á atribuído o papel de {$a}.';
+$string['courserequestwarning'] = 'O utilizador que efetuou o pedido da disciplina será inscrito automaticamente e ser-lhe-á atribuído o papel de {$a}.';
 $string['courserestore'] = 'Reposição da disciplina';
 $string['courses'] = 'Disciplinas';
 $string['coursesearch'] = 'Procurar disciplinas';
@@ -1333,7 +1333,7 @@ Esta configuração determina quantos anúncios mais recentes aparecem no bloco 
 Se não for necessário um fórum na disciplina, esta configuração deve ser definida como zero.';
 $string['newuser'] = 'Novo utilizador';
 $string['newusernewpasswordsubj'] = 'Nova conta de utilizador';
-$string['newusernewpasswordtext'] = 'Caro(a) {$a->firstname} {$a->lastname},
+$string['newusernewpasswordtext'] = 'Caro(a) {$a->firstname},
 
 Foi criada uma nova conta de utilizador em seu nome no site \'{$a->sitename}\' e foi-lhe atribuída uma senha temporária.
 
@@ -1614,7 +1614,7 @@ $string['registrationno'] = 'Não pretendo receber notificações por e-mail';
 $string['registrationsend'] = 'Enviar dados de registo para o moodle.org';
 $string['registrationyes'] = 'Sim, notifique-me acerca de novas versões do Moodle, alertas de segurança e outros assuntos importantes';
 $string['reject'] = 'Rejeitar';
-$string['rejectdots'] = 'Rejeitar...';
+$string['rejectdots'] = 'Rejeitar';
 $string['reload'] = 'Recarregar';
 $string['remoteappuser'] = 'Utilizador remoto {$a}';
 $string['remove'] = 'Remover';
@@ -1878,7 +1878,7 @@ $string['statsmodegeneral'] = 'Visão geral';
 $string['statsnodata'] = 'Não existem dados disponíveis para essa combinação de disciplina e período.';
 $string['statsnodatauser'] = 'Não existem dados disponíveis para essa combinação de disciplina, utilizador e período.';
 $string['statsoff'] = 'Estatísticas atualmente desativadas';
-$string['statsreads'] = 'Vistas';
+$string['statsreads'] = 'Visualizações';
 $string['statsreport1'] = 'Autenticações';
 $string['statsreport10'] = 'Atividade de utilizador';
 $string['statsreport11'] = 'Disciplinas mais ativas';
@@ -1893,7 +1893,7 @@ $string['statsreport7'] = 'Atividade de utilizadores (consultas e contribuiçõe
 $string['statsreport8'] = 'Toda a atividade de utilizadores';
 $string['statsreport9'] = 'Autenticações (página principal)';
 $string['statsreportactivity'] = 'Toda a atividade (professores e alunos)';
-$string['statsreportactivitybyrole'] = 'Todas as atividades (vistas e contribuições)';
+$string['statsreportactivitybyrole'] = 'Todas as atividades (Visualizações e submissões)';
 $string['statsreportforuser'] = 'para';
 $string['statsreportlogins'] = 'Autenticações';
 $string['statsreportreads'] = 'Consultas (todos os papéis)';
@@ -1909,9 +1909,9 @@ $string['statstimeperiod'] = 'Período de tempo - fim:';
 $string['statsuniquelogins'] = 'Autenticações únicas';
 $string['statsuseractivity'] = 'Toda a atividade';
 $string['statsuserlogins'] = 'Autenticações';
-$string['statsuserreads'] = 'Vistas';
-$string['statsuserwrites'] = 'Afixação de elementos';
-$string['statswrites'] = 'Afixação de elementos';
+$string['statsuserreads'] = 'Visualizações';
+$string['statsuserwrites'] = 'Submissões';
+$string['statswrites'] = 'Submissões';
 $string['status'] = 'Estado';
 $string['stringsnotset'] = 'As variáveis seguintes não estão definidas em {$a}';
 $string['studentnotallowed'] = 'Desculpe, mas não se pode inscrever nesta disciplina como \'{$a}\'';

@@ -98,7 +98,7 @@ $string['check_riskadmin_warning'] = '{$a->admincount} administrateurs et {$a->u
 $string['check_riskbackup_detailsok'] = 'Aucun rôle ne permet explicitement la sauvegarde des données des utilisateurs. Toutefois, les administrateurs ayant la capacité « doanything » peuvent malgré tout le faire.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Ces dérogations permettent d\'inclure les données des utilisateurs dans les sauvegardes. Veuillez vous assurer que cette permission est nécessaire.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Les rôles ci-dessous permettent d\'inclure les données des utilisateurs dans les sauvegardes. Veuillez vous assurer que cette permission est nécessaire.</p> {$a}';
-$string['check_riskbackup_details_users'] = '<p>À cause des rôles ou des dérogations locales ci-dessus, les utilisateurs ci-dessous peuvent inclure dans les sauvegardes les données privées de n\'importe quel utilisateur inscrit dans leur cours. Veuillez vous assurer que ces utilisateurs sont fiables et que le compte est protégé par un mot de passe fort.</p> {$a}';
+$string['check_riskbackup_details_users'] = '<p>À cause des rôles ou des dérogations locales ci-dessus, les utilisateurs ci-dessous ont les permissions requises pour inclure dans les sauvegardes les données privées de n\'importe quel utilisateur inscrit dans leur cours. Veuillez vous assurer que ces utilisateurs sont fiables et que le compte est protégé par un mot de passe fort.</p> {$a}';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} dans {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Sauvegarde des données des utilisateurs.';

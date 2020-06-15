@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['moodlenolink:desc'] = 'Αποτροπή αυτόματων σύνδεσμων';
+$string['moodlenolink:desc'] = 'Αποτροπή αυτόματων συνδέσμων';
 $string['pluginname'] = 'Αποτροπή αυτόματων συνδέσμων';
 $string['privacy:metadata'] = 'Το πρόσθετο «Αποτροπή αυτόματων συνδέσμων» του TinyMCE δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

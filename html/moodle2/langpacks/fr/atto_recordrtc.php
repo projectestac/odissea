@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowedtypes'] = 'Types autorisés';
+$string['allowedtypes'] = 'Types permis';
 $string['allowedtypes_desc'] = 'Quels boutons d\'enregistrement doivent apparaître dans Atto. En plus de ce réglage, des capacités permettent de contrôler l\'accès à certains boutons pour des utilisateurs spécifiques, dans des contextes spécifiques.';
 $string['attachrecording'] = 'Joindre l\'enregistrement';
 $string['audioandvideo'] = 'Audio et vidéo';
@@ -68,7 +68,7 @@ $string['settings'] = 'Paramètres de l\'enregistrement RTC';
 $string['startrecording'] = 'Commencer l\'enregistrement';
 $string['stoprecording'] = 'Terminer l\'enregistrement';
 $string['timelimit'] = 'Durée maximale en secondes';
-$string['timelimit_desc'] = 'Durée maximale autorisée pour les enregistrements audio et vidéo';
+$string['timelimit_desc'] = 'Durée maximale permise pour les enregistrements audio et vidéo';
 $string['uploadaborted'] = 'Dépôt annulé :';
 $string['uploadfailed'] = 'Échec du dépôt :';
 $string['uploadfailed404'] = 'Échec du dépôt : le fichier est trop volumineux';

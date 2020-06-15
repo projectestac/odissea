@@ -44,6 +44,7 @@ $content .= '<ul style="margin:auto; width: 800px; margin-bottom:20px;">' .
             '<li>' . get_string('disk_consume_courses', 'report_coursequotas', $chartinfo['course'] ) . '</li>' .
             '<li>' . get_string('disk_consume_backups', 'report_coursequotas', $chartinfo['backup']) . '</li>' .
             '<li>' . get_string('disk_consume_user', 'report_coursequotas', $chartinfo['user']) . '</li>' .
+            '<li>' . get_string('disk_consume_h5plib', 'report_coursequotas', $chartinfo['h5plib']) . '</li>' .
             '<li>' . get_string('disk_consume_repofiles', 'report_coursequotas', $chartinfo['repository']) . '</li>' .
             '<li>' . get_string('disk_consume_temp', 'report_coursequotas', $chartinfo['temp']) . '</li>' .
             '<li>' . get_string('disk_consume_trash', 'report_coursequotas', $chartinfo['trash']) . '</li>' .

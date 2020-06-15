@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = 'Zain dituzu hainbat {$a}';
 $string['addfavourite'] = 'Gehitu gogokoa';
-$string['alwaysshowall'] = 'Erakutsi beti guztiak';
+$string['alwaysshowall'] = 'Beti erakutsi guztiak';
 $string['collapseall'] = 'Tolestu ikastaro-zerrenda guztiak';
 $string['configotherexpanded'] = 'Gaituz gero, beste ikastaro batzuk modu lehenetsian zabalduko dira, erabiltzailearen hobespenetan baliogabetzen ez bada behintzat.';
 $string['configpreservestates'] = 'Gaituz gero, erabiltzaileak ezarritako tolestu/zabaldu egoerak kargatze bakoitzean gorde eta erabiltzen dira.';

@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = '再增加 {$a} 个空白采分点';
+$string['dimensioncommentfor'] = '评论 {$a}';
 $string['dimensiondescription'] = '描述';
 $string['dimensionnumber'] = '采分点 {$a}';
 $string['pluginname'] = '评语';

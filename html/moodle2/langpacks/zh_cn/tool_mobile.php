@@ -30,6 +30,7 @@ $string['configmobilecssurl'] = '用来修改手机界面的CSS文件';
 $string['customlangstrings'] = '自定义语言字符串';
 $string['custommenuitems'] = '自定义菜单项';
 $string['disabledfeatures'] = '禁用功能';
+$string['downloadcourse'] = '下载课程';
 $string['enablesmartappbanners'] = '启用App 广告横幅';
 $string['forcedurlscheme'] = '如果你想只允许你自定义的品牌应用通过浏览器窗口打开，那么在这里指定它的URL方案;否则，留空该字段就可以了。';
 $string['forcedurlscheme_key'] = 'URL方案';

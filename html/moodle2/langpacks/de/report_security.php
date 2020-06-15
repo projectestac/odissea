@@ -53,7 +53,7 @@ $string['check_embed_details'] = '<p>Die uneingeschränkte Nutzung von EMBED/OBJ
 $string['check_embed_error'] = 'Die uneingeschränkte Nutzung von EMBED/OBJECT ist aktiviert. Diese Einstellung ist für die meisten Webserver sehr gefährlich.';
 $string['check_embed_name'] = 'EMBED/OBJECT';
 $string['check_embed_ok'] = 'Die uneingeschränkte Nutzung von EMBED/OBJECT ist nicht erlaubt.';
-$string['check_frontpagerole_details'] = '<p>Die standardmäßige Rolle für die Startseite erhalten alle angemeldeten Nutzer/innen. Beachten Sie, dass für die Startseite keine bedenklichen Rechte vergeben werden dürfen.</p>
+$string['check_frontpagerole_details'] = '<p>Diese Rolle für die Startseite erhalten alle angemeldeten Nutzer/innen. Beachten Sie, dass für die Startseite keine bedenklichen Rechte vergeben werden dürfen.</p>
 <p>Es wird empfohlen, immer eine Rolle neu anzulegen und keine vorgegebene Rolle zu verändern.</p>';
 $string['check_frontpagerole_error'] = 'Rolle für die Startseite \'{$a}\' ist falsch definiert!';
 $string['check_frontpagerole_name'] = 'Rolle für die Startseite';
@@ -94,12 +94,12 @@ $string['check_preventexecpath_name'] = 'Pfade zu ausführbaren Programmen';
 $string['check_preventexecpath_ok'] = 'Pfade zu ausführbaren Programmen einstellbar über config.php';
 $string['check_preventexecpath_warning'] = 'Pfade zu ausführbaren Programmen einstellbar über Admin GUI';
 $string['check_riskadmin_detailsok'] = '<p>Bitte prüfen Sie die folgende Liste von Serveradministrator(en):</p>{$a}';
-$string['check_riskadmin_detailswarning'] = '<p>Bitte prüfen Sie die folgende Liste von Serveradministrator(en):</p>{$a->admins}
-<p>Es wird empfohlen, die Administratorenrolle nur auf Systemebene zu vergeben. Die folgenden Nutzer verfügen über nicht unterstützte Zuweisungen zur Administratorrolle:</p>{$a->unsupported}';
-$string['check_riskadmin_name'] = 'Administratoren';
+$string['check_riskadmin_detailswarning'] = '<p>Bitte prüfen Sie die folgende Liste von Serveradministrator/innen:</p>{$a->admins}
+<p>Es wird empfohlen, die Administrator/innennrolle nur auf Systemebene zu vergeben. Die folgenden Nutzer verfügen über nicht unterstützte Zuweisungen zur Administrator/innenrolle:</p>{$a->unsupported}';
+$string['check_riskadmin_name'] = 'Administrator/innen';
 $string['check_riskadmin_ok'] = '{$a} Serveradministrator(en) gefunden';
 $string['check_riskadmin_unassign'] = 'Rollenzuweisung überprüfen bei <a href="{$a->url}">{$a->fullname} ({$a->email})</a>';
-$string['check_riskadmin_warning'] = '{$a->admincount} Serveradministrator(en) und {$a->unsupcount} nicht unterstützte Zuweisung(en) zur Administratorrolle gefunden.';
+$string['check_riskadmin_warning'] = '{$a->admincount} Serveradministrator/inn/en und {$a->unsupcount} nicht unterstützte Zuweisung(en) zur Administrator/innenrolle gefunden.';
 $string['check_riskbackup_detailsok'] = 'Keine Rolle erlaubt das Sichern von Nutzerdaten. Beachten Sie aber, dass Admins mit der Berechtigung "doanything" (alles tun) auch weiterhin dazu befähigt sind.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Diese aktivierten Änderungen geben Nutzern/innen die Möglichkeit, auch Nutzerdaten in eine Kurssicherung einzubeziehen. Bitte prüfen Sie, ob diese Berechtigung nötig ist.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Die folgenden Systemrollen erlauben es aktuell, Nutzerdaten in eine Kurssicherung einzubeziehen. Bitte prüfen Sie, ob diese Berechtigung nötig ist.</p> {$a}';

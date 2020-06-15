@@ -29,7 +29,7 @@ $string['accountexists'] = 'Lehendik erabiltzaile-izen hori duen erabiltzaile ba
 $string['alreadylinked'] = 'Lehendik kanpoko kontu hau guneko kontu batekin parekatuta dago.';
 $string['auth_oauth2description'] = 'OAuth 2 estandarretan oinarritutako autentifikazioa';
 $string['auth_oauth2settings'] = 'OAuth 2 autentifikazioaren ezarpenak';
-$string['confirmaccountemail'] = 'Kaixo {$a->firstname},
+$string['confirmaccountemail'] = 'Kaixo, {$a->firstname}:
 
 Kontu-eskaera bat jaso dugu \'{$a->sitename}\' gunean zure helbide elektronikotik.
 
@@ -47,7 +47,7 @@ Mesedez zure guneko kudeatzailearekin harremanetan jarri zaitez lehen bai lehen.
 $string['confirmaccountemailsubject'] = '{$a}: kontuaren baieztatzea';
 $string['confirmationinvalid'] = 'Baieztatze-esteka baliogabea da edo iraungi da. Mesedez, hasi berriz sartzeko prozesua kontua baieztatze e-mail berri bat sortzeko.';
 $string['confirmationpending'] = 'Kontu hau posta elektroniko bidezko baiztapenaren zain dago.';
-$string['confirmlinkedloginemail'] = 'Kaixo {$a->fullname},
+$string['confirmlinkedloginemail'] = 'Kaixo, {$a->fullname}:
 
 Eskaera bat egin da {$a->issuername}-(e)ko {$a->linkedemail} helbidea zure helbide elektronikoa erabiliz zure \'{$a->sitename}\' guneko kontuarekin lotzeko.
 

@@ -63,7 +63,7 @@ Dies kann passieren, wenn ein  <a href="{$a}" target="_blank">doppelter Anmelden
 Das Update sollte dennoch erfolgreich abgeschlossen worden sein. Klicken Sie auf den Link und die Hinweise zur Problemlösung öffnen sich in einem neuen Fenster. Sie können sich mit diesem Problem nach Abschluss des Updates befassen.<br/>';
 $string['enabled_for_all'] = 'Dieser Dienst wurde für alle Hosts aktiviert.';
 $string['enterausername'] = 'Bitte geben Sie einen Anmeldenamen ein (oder eine kommagetrennte Liste von Anmeldenamen)';
-$string['error7020'] = 'Dieser Fehler tritt normalerweise auf, wenn die Remote-Server einen Dateneintrag für wwwroot falsch erzeugt hat, z.B. http://domain.de statt http://www.domain.de. Sie sollten den Administrator der Remote-Servers über die richtige Einstellung für wwwroot  informieren (so wie in config.php angegeben), damit dortige Dateneintrag für Ihren Server korrigiert werden kann.';
+$string['error7020'] = 'Dieser Fehler tritt normalerweise auf, wenn die Remote-Server einen Dateneintrag für wwwroot falsch erzeugt hat, z.B. http://domain.de statt http://www.domain.de. Sie sollten den/die Administrator/in der Remote-Server über die richtige Einstellung für wwwroot  informieren (so wie in config.php angegeben), damit der dortige Dateneintrag für Ihren Server korrigiert werden kann.';
 $string['error7022'] = 'Die von Ihnen an den Remote-Server übermittelte Nachricht war richtig verschlüsselt, aber nicht signiert. Dies ist ziemlich seltsam! Sie sollten diesen Fehler bei seinem Auftreten unbedingt melden und dabei die beteiligten Moodle-Versionen angeben.';
 $string['error7023'] = 'Der Remote-Server ist bei dem Versuch gescheitert, Ihre Nachricht mit den für Ihre Site verfügbaren Schlüssel zu entschlüsseln. Eventuell sind Sie in der Lage, dieses Problem durch ein manuelles Eingreifen (re-keying) zu beheben. Dieses Problem ist sehr unwahrscheinlich, außer Sie hatten mehrere Monate keinen Kontakt zum Remote-Server.';
 $string['error7024'] = 'Sie haben eine unverschlüsselte Nachricht an den Remote-Server versandt, aber dieser akzeptiert keine unverschlüsselte Kommunikation von Ihrer Site. Dies ist ziemlich seltsam! Sie sollten diesen Fehler bei seinem Auftreten unbedingt melden und dabei die beteiligten Moodle-Versionen angeben.';
@@ -148,7 +148,7 @@ $string['never'] = 'Nie';
 $string['noaclentries'] = 'Keine Einträge in der SSO-Access-Kontrollliste';
 $string['noaddressforhost'] = 'Die Server-URL konnte nicht aufgelöst werden: {$a}';
 $string['nocurl'] = 'PHP-Library cURL wurde nicht installiert';
-$string['nolocaluser'] = 'Für diesen Remote-Nutzer ist kein lokaler Datensatz vorhanden. Ein Datensatz konnte auch nicht erzeugt werden, weil dieser Rechner Nutzerkonten nicht automatisch anlegt. Bitte melden Sie sich bei Ihrem Administrator!';
+$string['nolocaluser'] = 'Für diesen Remote-Nutzer ist kein lokaler Datensatz vorhanden. Ein Datensatz konnte auch nicht erzeugt werden, weil dieser Rechner Nutzerkonten nicht automatisch anlegt. Bitte melden Sie sich bei Ihrer/m Administrator/in!';
 $string['nomodifyacl'] = 'Sie sind nicht berechtigt, die MNET-Access-Kontrollliste zu verändern.';
 $string['nonmatchingcert'] = 'Der Inhalt des Zertifikats: <br /><em>{$a->subject}</em><br />Passt nicht zu dem Host von dem es stammt:<br /><em>{$a->host}</em>.';
 $string['nopubkey'] = 'Bei der Abfrage des PublicKey ist ein Problem aufgetreten. <br />Vielleicht erlaubt der Rechner kein Moodle-Netzwerk oder der PublicKey ist ungültig.';
@@ -233,7 +233,7 @@ $string['ssoaclneeds'] = 'Damit diese Funktion arbeitet muss das Moodle-Netzwerk
 $string['strict'] = 'Streng';
 $string['subscribe'] = 'Abonnieren';
 $string['system'] = 'System';
-$string['testclient'] = 'Testrechner für MNet';
+$string['testclient'] = 'Testclient für MNet';
 $string['testtrustedhosts'] = 'Adresse testen';
 $string['testtrustedhostsexplain'] = 'Geben Sie eine IP-Adresse ein, um einen vertrauenswürdigen Rechner zu prüfen.';
 $string['theypublish'] = 'Sie veröffentlichen';

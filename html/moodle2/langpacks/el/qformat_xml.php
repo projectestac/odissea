@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['invalidxml'] = 'Μη έγκυρο αρχείο xml - αναμένοταν συμβολοσειρά (χρήση CDATA;)';
+$string['invalidxml'] = 'Μη έγκυρο αρχείο xml - αναμενόταν συμβολοσειρά (χρήση CDATA;)';
 $string['pluginname'] = 'Μορφότυπος ερωτήσεων Moodle XML';
 $string['pluginname_help'] = 'Αυτός είναι ένας μορφότυπος του Moodle για την εισαγωγή και την εξαγωγή ερωτήσεων.';
 $string['pluginname_link'] = 'qformat/XML';

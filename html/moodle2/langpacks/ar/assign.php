@@ -119,22 +119,41 @@ $string['couldnotfindassignmenttoupgrade'] = 'لا يمكن العثور على 
 $string['currentattempt'] = 'هذه المحاولة {$a}.';
 $string['currentattemptof'] = 'هذه المحاولة رقم{$a->attemptnumber} ( {$a->maxattempts} محاولات مسموحة ).';
 $string['currentgrade'] = 'الدرجة الحالية في';
+$string['cutoffdate'] = 'موعد التسليم النهائي';
 $string['cutoffdate_help'] = 'إذا تم تفعيله، فإن التكليف (المهمة) لن تقبل التسليمات بعد هذا التاريخ دون تمديد.';
+$string['defaultteam'] = 'المجموعة الأساسية';
 $string['description'] = 'الوصف';
 $string['downloadall'] = 'تنزيل جميع التسليمات';
 $string['duedate'] = 'تاريخ تقديم مهمة';
 $string['duedateno'] = 'لا يوجد موعد لتقديم المهمة';
+$string['duedatereached'] = 'لقد انتهى موعد تسليم الواجب';
+$string['editingstatus'] = 'تعديل الحالة';
 $string['editsubmission'] = 'حرر تسليمي';
 $string['errornosubmissions'] = 'لا يوجد تسليمات ليتم تنزيلها';
+$string['extensionduedate'] = 'تاريخ انتهاء الإضافة';
 $string['feedback'] = 'اجابة تقييمية';
 $string['filtersubmitted'] = 'تم التسليم';
 $string['graded'] = 'تم رصد درجة';
+$string['gradedby'] = 'تم التصحيح من قبل';
+$string['gradedfollowupsubmit'] = 'تم التصحيح - يوجد ملاحظات ما بعد التسليم';
+$string['gradedon'] = 'صححت على';
+$string['gradelocked'] = 'هذه العلامة مغلقة أو تم الكتابة فوقها في تقرير العلامات';
 $string['gradeoutof'] = 'الدرجة من {$a}';
 $string['gradersubmissionupdatedhtml'] = '{$a->username} قام بتحديث المهمةالمقدمة لـ <i>\'{$a->assignment}\'</i><br /><br /> وهي <a href="{$a->url}">available on the web site</a>.';
 $string['gradersubmissionupdatedtext'] = '{$a->username} قام بتحديث المهمةالمقدمة لـ \'{$a->assignment}\' وهذه المهمة موجودة في: {$a->url}';
 $string['gradingstatus'] = 'حالة التقييم';
 $string['gradingsummary'] = 'خلاصة التقييم';
+$string['groupsubmissionsettings'] = 'إعدادات تسليم المجموعات';
+$string['hiddenuser'] = 'المشاركين';
 $string['latesubmissions'] = 'التقديمات المتأخرة';
+$string['latesubmissionsaccepted'] = 'السماح حتى  {$a}';
+$string['markingworkflowstate'] = 'تقييم حالة سير العمل';
+$string['markingworkflowstateinmarking'] = 'في التصحيح';
+$string['markingworkflowstateinreview'] = 'في المراجعة';
+$string['markingworkflowstatenotmarked'] = 'لم تصحح';
+$string['markingworkflowstatereadyforrelease'] = 'جاهز للنشر';
+$string['markingworkflowstatereadyforreview'] = 'تم الانتهاء من التصحيح';
+$string['markingworkflowstatereleased'] = 'تم النشر';
 $string['modulename'] = 'الواجب';
 $string['modulename_help'] = 'تمكن وحدة نشاط الواجب  المدرس من إيصال الواجبات، وجمع التسليمات ووضع الدرجات والإفادات.
 
@@ -143,6 +162,7 @@ $string['modulename_help'] = 'تمكن وحدة نشاط الواجب  المد�
 
 عند استعراض الواجبات، يمكن للمدرسين ترك ملاحظات التقييم ورفع ملفات، مثل تسليمات الطلاب المصححة، وثائق مع تعليقات أو إفادات صوتية.  يمكن وضع درجات الواجبات  باستخدام مقياس عددي أو مقياس مخصص أو أسلوب الدرجات المتقدمة مثل سلم التقييم. تسجل الدرجات النهائية في دفتر التقديرات';
 $string['modulenameplural'] = 'مهام';
+$string['multipleteams'] = 'عضو لأكثر من مجموعة';
 $string['newsubmissions'] = 'مهام تم تقديمها';
 $string['noattempt'] = 'لا توجد محاولات';
 $string['none'] = 'لا شيء';

@@ -33,7 +33,7 @@ $string['cohortonly'] = 'Soilik kohorteko partaideak';
 $string['cohortonly_help'] = 'Matrikulazio automatikoa soilik kohorte bateko kideentzat egon daiteke eskuragarri. Kontuan izan ezarpen hau aldatzeak ez duela eraginik existitzen diren matrikulazioetan.';
 $string['confirmbulkdeleteenrolment'] = 'Ziur zaude erabiltzaile-matrikula hauek ezabatu nahi dituzula?';
 $string['customwelcomemessage'] = 'Pertsonalizatu ongi etorria emateko mezua';
-$string['customwelcomemessage_help'] = 'Ongi-etorri mezu pertsonalizatua gehi daiteke testu-soilean edo Moodle-ko formatu automatikoan, HTML etiketak eta etiketa eleanitzak barne.
+$string['customwelcomemessage_help'] = 'Ongi-etorri mezu pertsonalizatua gehi daiteke testu-soilean edo Moodleko formatu automatikoan, HTML etiketak eta etiketa eleanitzak barne.
 
 Mezuan hurrengo gakoak sar daitezke:
 
@@ -56,7 +56,7 @@ $string['enrolstartdate'] = 'Hasiera-data';
 $string['enrolstartdate_help'] = 'Gaituz gero, erabiltzaileek soilik data honetatik aurrera izango dute matrikulatzeko aukera.';
 $string['expiredaction'] = 'Matrikulazioaren iraungitze-ekintza';
 $string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez, kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
-$string['expirymessageenrolledbody'] = 'Kaixo {$a->user},
+$string['expirymessageenrolledbody'] = 'Kaixo, {$a->user}:
 
 Mezu hau \'{$a->course}\' ikastaroan zure matrikula {$a->timeend} datan amaituko dela jakinarazteko da.
 

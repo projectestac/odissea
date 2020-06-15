@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_ldap_ad_create_req'] = 'Δεν είναι δυνατή η δημιουργία του νέου λογαριασμού στο Active Directory. Σιγουρευτείτε ότι πληρούνται όλες οι απαιτήσεις για να λειτουργήσει αυτό (σύνδεση LDAP, χρήστης δέσμευσης (bind-user) με κατάλληλα δικαιώματα, κ.λπ.)';
+$string['auth_ldap_ad_create_req'] = 'Δεν είναι δυνατή η δημιουργία του νέου λογαριασμού στο Active Directory. Σιγουρευτείτε ότι πληρούνται όλες οι απαιτήσεις για να λειτουργήσει αυτό (σύνδεση LDAP, χρήστης δέσμευσης (bind-user) με κατάλληλα δικαιώματα, κλπ.)';
 $string['auth_ldap_attrcreators'] = 'Κατάλογος ομάδων ή πλαισίων στα μέλη των οποίων επιτρέπεται να δημιουργούν ιδιοχαρακτηριστικά. Διαχωρίστε περισσότερες από μία ομάδες με «;». Συνήθως κάτι σαν «cn=teachers,ou=staff,o=myorg».';
 $string['auth_ldap_attrcreators_key'] = 'Δημιουργοί ιδιοχαρακτηριστικών';
 $string['auth_ldap_auth_user_create_key'] = 'Δημιουργία χρηστών εξωτερικά';
@@ -37,12 +37,12 @@ $string['auth_ldap_bind_settings'] = 'Ρυθμίσεις δέσμευσης';
 $string['auth_ldap_changepasswordurl_key'] = 'Διεύθυνση URL αλλαγής κωδικού πρόσβασης';
 $string['auth_ldap_contexts'] = 'Λίστα πλαισίων όπου οι χρήστες είναι τοποθετημένοι. Χωρίστε διαφορετικά πλαίσια με «;». Για παράδειγμα: «ou=users,o=org; ou=others,o=org».';
 $string['auth_ldap_contexts_key'] = 'Πλαίσια';
-$string['auth_ldap_create_context'] = 'Αν ενεργοποιήσετε τη δημιουργία χρηστών με επιβεβαίωση μέσω ηλε.ταχυδρομείου τότε καθορίστε το πλαίσιο στο οποίο θα δημιουργηθούν οι χρήστες. Αυτό θα πρέπει να είναι διαφορετικό από ότι άλλων χρηστών για να αποφευχθούν προβλήματα ασφαλείας. Δεν χρειάζεται να προσθέσετε αυτή την τιμή στη μεταβλητή ldap_context, το Moodle θα αναζητήσει χρήστες αυτού του πλαισίου αυτόματα.<br /> <b>Σημείωση!</b> Πρέπει να τροποποιήσετε την μέθοδο user_create() στο αρχείο auth/ldap/auth.php ώστε να λειτουργήσει η δημιουργία χρηστών.';
+$string['auth_ldap_create_context'] = 'Αν ενεργοποιήσετε τη δημιουργία χρηστών με επιβεβαίωση μέσω ηλε.ταχυδρομείου τότε καθορίστε το πλαίσιο στο οποίο θα δημιουργηθούν οι χρήστες. Αυτό θα πρέπει να είναι διαφορετικό από ότι άλλων χρηστών για να αποφευχθούν προβλήματα ασφαλείας. Δεν χρειάζεται να προσθέσετε αυτή την τιμή στη μεταβλητή ldap_context, το Moodle θα αναζητήσει χρήστες αυτού του πλαισίου αυτόματα.<br /><b>Σημείωση!</b> Πρέπει να τροποποιήσετε την μέθοδο user_create() στο αρχείο auth/ldap/auth.php ώστε να λειτουργήσει η δημιουργία χρηστών.';
 $string['auth_ldap_create_context_key'] = 'Πλαίσιο για νέους χρήστες';
 $string['auth_ldap_create_error'] = 'Σφάλμα στη δημιουργία χρήστη στο LDAP.';
 $string['auth_ldap_creators'] = 'Κατάλογος ομάδων των οποίων τα μέλη επιτρέπεται να δημιουργήσουν νέα μαθήματα. Οι ομάδες διαχωρίζονται με «;». Συνήθως κάτι σαν «cn=teachers,ou=staff,o=myorg».';
 $string['auth_ldap_creators_key'] = 'Δημιουργοί';
-$string['auth_ldapdescription'] = 'Αυτή η μέθοδος παρέχει αυθεντικοποίηση μέσω (έναντι) ενός εξωτερικού εξυπηρετητή LDAP. Εάν το όνομα χρήστη και ο κωδικός πρόσβασης που δίνονται, ισχύουν, το Moodle δημιουργεί μια νέα καταχώρηση χρήστη στη βάση δεδομένων του. Αυτό το πρόσθετο μπορεί να διαβάσει τα ιδιοχαρακτηριστικά χρηστών από το LDAP και να συμπληρώσει εκ των προτέρων τα ζητούμενα πεδία στο Moodle. Για τις συνδέσεις στο εξής, ελέγχονται μόνο το όνομα χρήστη και ο κωδικός πρόσβασης.';
+$string['auth_ldapdescription'] = 'Αυτή η μέθοδος παρέχει αυθεντικοποίηση μέσω (έναντι) ενός εξωτερικού εξυπηρετητή LDAP (Lightweight Directory Access Protocol). Εάν το όνομα χρήστη και ο κωδικός πρόσβασης που δίνονται, ισχύουν, το Moodle δημιουργεί μια νέα καταχώρηση χρήστη στη βάση δεδομένων του. Αυτό το πρόσθετο μπορεί να διαβάσει τα ιδιοχαρακτηριστικά χρηστών από το LDAP και να συμπληρώσει εκ των προτέρων τα ζητούμενα πεδία στο Moodle. Για τις συνδέσεις στο εξής, ελέγχονται μόνο το όνομα χρήστη και ο κωδικός πρόσβασης.';
 $string['auth_ldap_expiration_desc'] = 'Επιλέξτε «{$a->no}» για να απενεργοποιήσετε τον έλεγχο ληγμένου κωδικού ή «{$a->ldapserver}» για να διαβάζετε την λήξη του κωδικού απευθείας από τον εξυπηρετητή LDAP.';
 $string['auth_ldap_expiration_key'] = 'Λήξη';
 $string['auth_ldap_expiration_warning_desc'] = 'Αριθμός ημερών πριν εμφανιστεί προειδοποίηση λήξης του κωδικού πρόσβασης.';
@@ -82,14 +82,14 @@ $string['auth_ldap_passwdexpire_settings'] = 'Ρυθμίσεις λήξης κω
 $string['auth_ldap_preventpassindb'] = 'Επιλέξτε ναι για να αποτρέψετε την αποθήκευση κωδικών πρόσβασης στην βάση δεδομένων του Moodle.';
 $string['auth_ldap_preventpassindb_key'] = 'Αποτροπή αποθήκευσης κωδικού πρόσβασης σε κρυφή μνήμη';
 $string['auth_ldap_rolecontext'] = 'Πλαίσιο «{$a->localname}»';
-$string['auth_ldap_rolecontext_help'] = 'Το πλαίσιο LDAP που χρησιμοποιείται για την επιλογή αντιστοίχισης του<i> {$a->localname} </ i>. Διαχωρίστε πολλαπλές ομάδες με «;». Συνήθως κάτι σαν «cn = {$->shortname}, ou = staff, o = myorg».';
-$string['auth_ldap_search_sub'] = 'Βάλτε τις τιμές <> 0 εάν θέλετε να αναζητήσετε χρήστες από τα υπο-περιεχόμενα.';
+$string['auth_ldap_rolecontext_help'] = 'Το πλαίσιο LDAP που χρησιμοποιείται για την επιλογή αντιστοίχισης του <i>{$a->localname}</i>. Διαχωρίστε πολλαπλές ομάδες με «;». Συνήθως κάτι σαν «cn = {$->shortname}, ou = staff, o = myorg».';
+$string['auth_ldap_search_sub'] = 'Αναζητήστε χρήστες από τα υπο-πλαίσια.';
 $string['auth_ldap_search_sub_key'] = 'Αναζήτηση σε υπο-πλαίσια';
 $string['auth_ldap_server_settings'] = 'Ρυθμίσεις εξυπηρετητή LDAP';
 $string['auth_ldap_suspended_attribute'] = 'Προαιρετικό: Όταν παρέχεται αυτό το χαρακτηριστικό θα χρησιμοποιηθεί για την ενεργοποίηση / αναστολή του τοπικά δημιουργημένου λογαριασμού χρήστη.';
 $string['auth_ldap_suspended_attribute_key'] = 'Χαρακτηριστικό αναστολής';
 $string['auth_ldap_unsupportedusertype'] = 'auth: ldap user_create() δεν υποστηρίζει τον επιλεγμένο τύπο χρήστη: {$a} (...ακόμα)';
-$string['auth_ldap_update_userinfo'] = 'Ενημερώστε τις πληροφορίες χρήστη (όνομα, επώνυμο, διεύθυνση...) από το LDAP στο Moodle. Προσδιορίστε ρυθμίσεις για «Aντιστοίχιση πεδίων» αν χρειάζεται.';
+$string['auth_ldap_update_userinfo'] = 'Ενημερώστε τις πληροφορίες χρήστη (όνομα, επώνυμο, διεύθυνση...) από το LDAP στο Moodle. Προσδιορίστε ρυθμίσεις για «Αντιστοίχιση πεδίων» αν χρειάζεται.';
 $string['auth_ldap_user_attribute'] = 'Το χαρακτηριστικό που χρησιμοποιείται για την ονομασία/αναζήτηση χρηστών. Συνήθως «cn».';
 $string['auth_ldap_user_attribute_key'] = 'Χαρακτηριστικό χρήστη';
 $string['auth_ldap_user_exists'] = 'Το όνομα χρήση υπάρχει ήδη στο LDAP.';
@@ -100,7 +100,7 @@ $string['auth_ldap_usertypeundefined'] = 'Ο τύπος config.user_type δεν 
 $string['auth_ldap_usertypeundefined2'] = 'Ο τύπος config.user_type δεν έχει οριστεί ή η συνάρτηση ldap_unixi2expirationtime δεν υποστηρίζει τον επιλεγμένο τύπο!';
 $string['auth_ldap_version'] = 'Η έκδοση του πρωτοκόλλου LDAP που χρησιμοποιεί ο εξυπηρετητής σας.';
 $string['auth_ldap_version_key'] = 'Έκδοση';
-$string['auth_ntlmsso'] = 'NTLM SSO (NTLM =NT LAN Manager: διαχείριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση)';
+$string['auth_ntlmsso'] = 'NTLM SSO (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση)';
 $string['auth_ntlmsso_enabled'] = 'Ορίστε το σε «ναι» για προσπάθεια SSO (Single Sign On: μία και μόνον ενιαία αυθεντικοποίηση) στον τομέα NTLM (NT LAN Manager: Πρωτόκολλα ασφαλείας της Microsoft). Σημειώστε ότι αυτό απαιτεί επιπρόσθετες ρυθμίσεις στον εξυπηρετητή για να λειτουργήσει. Για περισσότερες λεπτομέρειες, δείτε <a href="https://docs.moodle.org/en/NTLM_authentication">https://docs.moodle.org/en/NTLM_authentication</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Ενεργοποίηση';
 $string['auth_ntlmsso_ie_fastpath'] = 'Επιλέξτε το για να ενεργοποιήσετε το γρήγορο μονοπάτι του NTLM SSO (παρακάμπτει ορισμένα βήματα μόνο στον περιηγητή MS Internet Explorer). (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση)';
@@ -136,12 +136,12 @@ $string['nouserentriestorevive'] = 'Δεν υπάρχουν καταχωρήσε
 $string['nouserstobeadded'] = 'Δεν υπάρχουν καταχωρήσεις χρηστών για να προστεθούν';
 $string['ntlmsso_attempting'] = 'Attempting Single Sign On via NTLM...';
 $string['ntlmsso_failed'] = 'Αποτυχία αυτόματης σύνδεσης, παρακαλούμε δοκιμάστε την κανονική σελίδα σύνδεσης...';
-$string['ntlmsso_isdisabled'] = 'Απενεργοποίηση του NTLM SSO (NTLM =NT LAN Manager: διαχείριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση).';
-$string['ntlmsso_unknowntype'] = 'Άγνωστος τύπος NTLM SSO (NTLM =NT LAN Manager: διαχείριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση).';
+$string['ntlmsso_isdisabled'] = 'Απενεργοποίηση του NTLM SSO (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση).';
+$string['ntlmsso_unknowntype'] = 'Άγνωστος τύπος NTLM SSO (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση).';
 $string['pagedresultsnotsupp'] = 'Δεν υποστηρίζονται τα σελιδοποιημένα αποτελέσματα LDAP (είτε η έκδοση PHP δεν τα υποστηρίζει, είτε έχετε ρυθμίσει το Moodle να χρησιμοποιεί το πρωτόκολλο LDAP έκδοσης 2, ή το Moodle δεν μπορεί να επικοινωνήσει με τον LDAP εξυπηρετητή σας για να δει αν είναι διαθέσιμη η υποστήριξη σελιδοποίησης.';
 $string['pagesize'] = 'Επιβεβαιώστε ότι αυτή η τιμή είναι μικρότερη από το όριο πλήθους αποτελεσμάτων του LDAP εξυπηρετητή σας (μέγιστος αριθμός καταχωρήσεων που μπορούν να επιστραφούν σε ένα ερώτημα)';
 $string['pagesize_key'] = 'Μέγεθος σελίδας';
-$string['pluginname'] = 'Εξυπηρετητής LDAP (Lightweight Directory Access Protocol)';
+$string['pluginname'] = 'Εξυπηρετητής LDAP';
 $string['pluginnotenabled'] = 'Πρόσθετο μη ενεργοποιημένο!';
 $string['privacy:metadata'] = 'Το πρόσθετο «Αυθεντικοποίηση LDAP» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['renamingnotallowed'] = 'Η μετονομασία χρήστη δεν επιτρέπεται στο LDAP';

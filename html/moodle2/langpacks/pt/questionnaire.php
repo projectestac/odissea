@@ -517,7 +517,7 @@ $string['show_nonrespondents'] = 'Sem resposta';
 $string['started'] = 'iniciado';
 $string['strfdate'] = '%d/%m/%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
-$string['strictdateformatting'] = 'Use o formato ano-mês-dia, por exemplo, para 4 de março de 1945: <strong>1945-03-04</strong>';
+$string['strictdateformatting'] = 'Use o formato dia-mês-ano, por exemplo, para 4 de março de 1945: <strong>04-03-1945</strong>';
 $string['subject'] = 'Assunto';
 $string['submissionnotificationhtmlanon'] = 'Existe uma nova <a href="{$a->submissionurl}">submissão</a> do questionário "{$a->name}".';
 $string['submissionnotificationhtmluser'] = '<a href="{$a->profileurl}">{$a->username}</a> fez uma nova <a href="{$a->submissionurl}">submissão</a> do questionário "{$a->name}" na disciplina "{$a->coursename}".';

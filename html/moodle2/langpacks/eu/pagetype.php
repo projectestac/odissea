@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['page-admin-current'] = 'Oraingo gunearen kudeaketako orria';
-$string['page-admin-x'] = 'Edozein gunearen kudeaketako orri';
+$string['page-admin-current'] = 'Gunearen kudeaketako oraingo orria';
+$string['page-admin-x'] = 'Gunearen kudeaketako edozein orri';
 $string['page-course-index'] = 'Goragoko kategoriaren orria';
 $string['page-course-index-category'] = 'Oraingo kategoriaren orria';
-$string['page-course-index-x'] = 'Edozein kategoriaren orria';
+$string['page-course-index-x'] = 'Kategoriaren edozein orri';
 $string['page-course-report-x'] = 'Edozein ikastaro-txosten';
 $string['page-course-search'] = 'Ikastaroak bilatzeko orria';
-$string['page-course-view-x'] = 'Edozein motatako ikastaroko hasiera-orria';
-$string['page-course-x'] = 'Edozein ikastaro-orri';
-$string['page-mod-x'] = 'Edozein jarduera-moduluko orria';
+$string['page-course-view-x'] = 'Ikastaroko edozein motatako hasiera-orria';
+$string['page-course-x'] = 'Ikastaroko edozein orri';
+$string['page-mod-x'] = 'Jarduera-moduluko edozein orri';
 $string['page-mod-x-view'] = 'Jarduera-modulu nagusiaren edozein orri';
 $string['page-my-index'] = 'Aginte-panela';
 $string['page-report-x'] = 'Edozein txosten-orri';

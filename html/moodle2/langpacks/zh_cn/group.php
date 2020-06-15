@@ -127,6 +127,7 @@ $string['importgroups_help'] = '可以从文本文件导入组。文件格式如
 $string['javascriptrequired'] = '该页需要浏览器打开JavaScript功能';
 $string['members'] = '每组成员数';
 $string['membersofselectedgroup'] = '组成员';
+$string['mygroups'] = '我的小组';
 $string['namingscheme'] = '命名规则';
 $string['namingscheme_help'] = '符号@可以用来创建名中包含英文字母的组。例如“组@”会生成组名“组A”、“组B”、“组C”、...
 
@@ -145,6 +146,7 @@ $string['nousersinrole'] = '在选定角色中，没有合适的用户';
 $string['number'] = '小组/成员 数目';
 $string['numgroups'] = '小组数量';
 $string['nummembers'] = '每个小组成员数';
+$string['othergroups'] = '其他小组';
 $string['overview'] = '概要';
 $string['potentialmembers'] = '候选成员：{$a}';
 $string['potentialmembs'] = '潜在的成员';

@@ -59,6 +59,7 @@ My grades | https://someurl.xyz/local/mygrades/index.php | embedded | en
 $string['disabledfeatures'] = 'Отключенные функции';
 $string['disabledfeatures_desc'] = 'Выберите здесь функции, которые вы хотите отключить в мобильном приложении для своего сайта. Обратите внимание, что некоторые функции, перечисленные здесь, могут быть уже отключены с помощью других настроек сайта. Увидеть изменения вы сможете после повторного входа в приложение.';
 $string['displayerrorswarning'] = 'Отображение сообщений отладки (debugdisplay) включено. Его нужно отключить.';
+$string['downloadcourse'] = 'Скачать курс';
 $string['downloadcourses'] = 'Скачать курсы';
 $string['enablesmartappbanners'] = 'Включить баннеры приложений';
 $string['enablesmartappbanners_desc'] = 'При входе на сайт через мобильный браузер будет отображаться баннер, рекламирующий мобильное приложение Moodle.';

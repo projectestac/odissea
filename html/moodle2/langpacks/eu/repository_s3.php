@@ -30,6 +30,6 @@ $string['configplugin'] = 'Amazon S3-ren ezarpenak';
 $string['endpoint'] = 'Amazon S3  amaiera-puntua';
 $string['needaccesskey'] = 'Sarbide-gitza lortu behar da';
 $string['pluginname'] = 'Amazon S3';
-$string['privacy:metadata'] = 'Amazon S3 biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata'] = 'Amazon S3 biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['s3:view'] = 'Ikusi Amazon S3 biltegia';
 $string['secret_key'] = 'Giltza sekretua';

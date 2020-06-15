@@ -42,7 +42,7 @@ $string['activitymodules'] = 'Jarduera-moduluak';
 $string['activityreport'] = 'Jardueraren txostena';
 $string['activityreports'] = 'Jardueraren txostenak';
 $string['activityselect'] = 'Aukeratu jarduera hau beste norabait joateko';
-$string['activitysince'] = 'Noiztik martxan: {$a}';
+$string['activitysince'] = '{$a}-(e)tik aurrerako aktibitatea';
 $string['activitytypetitle'] = '{$a->activity} - {$a->type}';
 $string['activityweighted'] = 'Erabiltzaileen jardueraren txostenak';
 $string['add'] = 'Gehitu';
@@ -105,7 +105,7 @@ $string['adminhelpmymoodle'] = 'Konfiguratu \'Nire Moodle\' blokeak erabiltzaile
 $string['adminhelpreports'] = 'Irizpide ezberdinen araberako ikastaroen sailkapena';
 $string['adminhelpsitefiles'] = 'Fitxategi orokorrak argitaratu edo kanpoko segurtasun-kopiak eguneratzeko';
 $string['adminhelpsitesettings'] = 'Zehaztu webgunearen lehen orriaren itxura';
-$string['adminhelpstickyblocks'] = 'Konfiguratu bloke finkoak Moodle-ren bidez';
+$string['adminhelpstickyblocks'] = 'Konfiguratu bloke finkoak Moodleren bidez';
 $string['adminhelpthemes'] = 'Erabaki webgune osoaren itxura (koloreak, letra-tipoak, ...)';
 $string['adminhelpuploadusers'] = 'Inportatu erabiltzaile berrien kontuak testu-fitxategi batetik';
 $string['adminhelpusers'] = 'Zehaztu erabiltzaileak eta egiaztatzeko modua';
@@ -200,11 +200,11 @@ $string['backuplogdetailed'] = 'Segurtasun-kopiaren exekuzioaren erregistro zeha
 $string['backuploglaststatus'] = 'Azken segurtasun-kopiaren exekuzioaren erregistroa';
 $string['backupmissinguserinfoperms'] = 'Oharra: segurtasun-kopia honek erabiltzaile ez diren datuak ditu. Ariketa eta Tailerra jarduerak ez dira sartuko segurtasun-kopiak, modulu horiek ez baitira segurtasun-kopia mota honekin bateragarriak.';
 $string['backupnext'] = 'Hurrengo segurtasun-kopia';
-$string['backupnonisowarning'] = 'Kontuz: kopia hau Moodle bertsio ez Unicode (1.6aren aurretikoa) batetik dator. Kopiak ISO-8859-1 ez den edozein testu badu KALTETUA izan daiteke Moodle-ren Unicode bertsio honetara berreskuratzean. Ikusi <a href="https://docs.moodle.org/eu/FAQ_segurtasun-kopia_eta_berreskuratu">Segurtasun-kopia FAQ</a> segurtasun-kopia hau modu egokian egiteko informazio gehiago lortzeko.';
+$string['backupnonisowarning'] = 'Kontuz: kopia hau Moodle bertsio ez Unicode (1.6aren aurretikoa) batetik dator. Kopiak ISO-8859-1 ez den edozein testu badu KALTETUA izan daiteke Moodleren Unicode bertsio honetara berreskuratzean. Ikusi <a href="https://docs.moodle.org/eu/FAQ_segurtasun-kopia_eta_berreskuratu">Segurtasun-kopia FAQ</a> segurtasun-kopia hau modu egokian egiteko informazio gehiago lortzeko.';
 $string['backupnotyetrun'] = 'Segurtasun-kopia automatizatua egiteke';
 $string['backuporiginalname'] = 'Segurtasun-kopiaren izena';
 $string['backuproleassignments'] = 'Rol hauetarako rol-esleipenen segurtasun-kopia';
-$string['backupsavetohelp'] = 'Segurtasun-kopiaren fitxategiak gorde nahi dituzun karpetaren helbide osoa';
+$string['backupsavetohelp'] = 'Segurtasun-kopiaren fitxategiak gorde nahi dituzun direktorioaren helbide osoa';
 $string['backupsitefileshelp'] = 'Gaituz gero ikastaroetan erabilitako guneko fitxategiak segurtasun-kopia automatizatuetan sartuko dira.';
 $string['backuptakealook'] = 'Mesedez, eman begiratu bat zure segurtasun-kopiaren erregistroei hemen: {$a}';
 $string['backupuserfileshelp'] = 'Erabaki erabiltzaileen fitxategiak (profilaren irudiak, adibidez) segurtasun-kopia automatizatuetan sartu behar diren ala ez.';
@@ -468,7 +468,7 @@ $string['currentlyselectedusers'] = 'Aukeratutako erabiltzaileak';
 $string['currentpicture'] = 'Oraingo argazkia';
 $string['currentrelease'] = 'Oraingo bertsioari buruzko informazioa';
 $string['currentversion'] = 'Oraingo bertsioa';
-$string['databasechecking'] = 'Moodle datu-basea bertsioberritzen {$a->oldversion}-(e)tik {$a->newversion}-(e)ra';
+$string['databasechecking'] = 'Moodleko datu-basea bertsioberritzen {$a->oldversion}-(e)tik {$a->newversion}-(e)ra';
 $string['databaseperformance'] = 'Datu-basearen errendimendua';
 $string['databasesetup'] = 'Datu-basea ezartzen';
 $string['databasesuccess'] = 'Datu-basea ondo eguneratu da';
@@ -559,7 +559,7 @@ $string['dndworkingfiletextlink'] = 'Hartu eta eraman fitxategiak, testua edo es
 $string['dndworkinglink'] = 'Hartu eta eraman estekak ikastaro-ataletara igotzeko';
 $string['dndworkingtext'] = 'Hartu eta eraman testua ikastaro-ataletara igotzeko';
 $string['dndworkingtextlink'] = 'Hartu eta eraman testua edo estekak ikastaro-ataletara igotzeko';
-$string['documentation'] = 'Moodle-ren dokumentazioa';
+$string['documentation'] = 'Moodleren dokumentazioa';
 $string['dontsortcategories'] = 'Ez ordenatu kategoriak';
 $string['dontsortcourses'] = 'Ez ordenatu ikastaroak';
 $string['down'] = 'Jaitsi';
@@ -609,7 +609,7 @@ $string['editsummary'] = 'Editatu laburpena';
 $string['editthisactivity'] = 'Editatu aktibitate hau';
 $string['editthiscategory'] = 'Editatu kategoria hau';
 $string['edittitle'] = 'Editatu izenburua';
-$string['edittitleinstructions'] = 'Sakatu esc teklari uzteko. Idatzi amaitzeko';
+$string['edittitleinstructions'] = 'Sakatu "Esc" uzteko, "Enter" gordetzeko';
 $string['edituser'] = 'Editatu erabiltzaile-kontuak';
 $string['edulevel'] = 'Ekitaldi guztiak';
 $string['edulevel_help'] = '* Irakaskuntza - irakasle batek egindako ekintzak, ad. baliabide bat eguneratu
@@ -624,7 +624,7 @@ $string['emailagain'] = 'Helbide elektronikoa (berriro)';
 $string['emailalreadysent'] = 'Pasahitza berrezartzeko e-mail bat bidali da jada. Mesedez begiratu zure posta elektronikoa.';
 $string['emailcharset'] = 'Posta elektronikorako karaktere-multzoa';
 $string['emailconfirm'] = 'Zure kontua berretsi';
-$string['emailconfirmation'] = 'Kaixo {$a->firstname},
+$string['emailconfirmation'] = 'Kaixo, {$a->firstname}:
 
 \'{$a->sitename}\' gunean kontu berri baten eskaera bat jaso dugu zure helbide elektronikotik.
 
@@ -644,7 +644,7 @@ $string['emailconfirmsent'] = '<p>E-mail bat bidali dugu zure hurrengo helbide h
 $string['emailconfirmsentfailure'] = 'Baieztatze e-maila bidaltzeak huts egin du';
 $string['emailconfirmsentsuccess'] = 'Baieztatze e-maila ondo bidali da';
 $string['emaildigest'] = 'Mezuak posta elektroniko bidez banatzeko moduak';
-$string['emaildigestcomplete'] = 'Osoa (egunero e-mail bakarra mezu guztiekin)';
+$string['emaildigestcomplete'] = 'Osoa (egunean e-mail bakarra mezu guztiekin)';
 $string['emaildigest_help'] = 'Hau da guneko foroetako azken mezuen banaketarentzako ezarpen lehenetsia.
 
 * Laburpenik ez - foroko mezu bakoitzeko e-mail bana jasoko duzu;
@@ -653,7 +653,7 @@ $string['emaildigest_help'] = 'Hau da guneko foroetako azken mezuen banaketarent
 
 Nahi izanez gero, ezarpen desberdin bat aukeratu dezakezu foro bakoitzean.';
 $string['emaildigestoff'] = 'Laburpenik ez (foroetako mezu bakoitzeko e-mail bana jaso)';
-$string['emaildigestsubjects'] = 'Gaiak (egunero e-mail bakarra soilik mezuen gaiekin)';
+$string['emaildigestsubjects'] = 'Gaiak (egunean e-mail bakarra soilik mezuen gaiekin)';
 $string['emaildisable'] = 'Helbide elektroniko hau desgaituta dago';
 $string['emaildisableclick'] = 'Egin klik hemen helbide honetara inongo e-mailik ez bidaltzeko';
 $string['emaildisplay'] = 'Helbide elektronikoa erakustea';
@@ -672,7 +672,7 @@ $string['emailmustbereal'] = 'Oharra: zure helbide elektronikoak benetakoa izan 
 $string['emailnotallowed'] = 'Domeinu hauetako helbide elektronikoak ez dira onartzen ({$a})';
 $string['emailnotfound'] = 'Ez da helbide elektronikoa datu-basean aurkitu';
 $string['emailonlyallowed'] = 'Helbide elektroniko hau ez da onartzen ({$a})';
-$string['emailpasswordchangeinfo'] = 'Kaixo {$a->firstname},
+$string['emailpasswordchangeinfo'] = 'Kaixo, {$a->firstname}:
 
 Norbaitek (ziurrenik zeuk) zure \'{$a->sitename}\' guneko \'{$a->username}\' konturako pasahitz berria eskatu du.
 
@@ -684,20 +684,20 @@ Posta elektronikoko programa gehienetan goiko helbidea esteka urdin gisa agertu 
 
 Laguntza behar izanez gero, mesedez jarri harremanetan guneko kudeatzailearekin.
 {$a->admin}';
-$string['emailpasswordchangeinfodisabled'] = 'Kaixo {$a->firstname},
+$string['emailpasswordchangeinfodisabled'] = 'Kaixo, {$a->firstname}:
 
 Norbaitek (zeuk ziurrenik) \'{$a->sitename}\' guneko zure konturako pasahitz berria eskatu du.
 
 Tamalez, gune honetako zure kontua desgaitu egin da eta ezin da berriz ezarri. Mesedez, jarri harremanetan gunearen kudeatzailearekin,
 {$a->admin}';
-$string['emailpasswordchangeinfofail'] = 'Kaixo {$a->firstname},
+$string['emailpasswordchangeinfofail'] = 'Kaixo, {$a->firstname}:
 
 Norbaitek (zeuk ziurrenik) \'{$a->sitename}\' guneko zure konturako pasahitz berria eskatu du.
 
 Tamalez pasahitzak ezin dira aldatu gune honetan. Mesedez, jarri harremanetan gunearen kudeatzailearekin,
 {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: Pasahitz-aldaketari buruzko informazioa';
-$string['emailpasswordconfirmation'] = 'Kaixo, {$a->firstname}.
+$string['emailpasswordconfirmation'] = 'Kaixo, {$a->firstname}:
 
 Norbaitek (ziurrenik zeuk) zure \'{$a->sitename}\' guneko zure konturako pasahitz berria eskatu du.
 
@@ -721,7 +721,7 @@ $string['emailpasswordconfirmsent'] = 'Zure <b>{$a}</b> helbidera e-mail bat bid
 Arazorik bazenu, mesedez gunearen kudeatzailearekin harremanetan jarri.';
 $string['emailpasswordsent'] = 'Mila esker pasahitz aldaketa baieztatzeagatik. Zure pasahitz berria duen e-mail bat helbide honetara bidali dizugu: <br /><b>{$a->email}</b>.<br />
 Pasahitz berria automatikoki sortu da. Agian, <a href="{$a->link}">zure pasahitza aldatu</a> nahiko duzu eta gogoratzeko errazagoa den beste bat ezarri.';
-$string['emailresetconfirmation'] = 'Kaixo {$a->firstname},
+$string['emailresetconfirmation'] = 'Kaixo, {$a->firstname}:
 
 Norbaitek (zeuk ziurrenik) \'{$a->sitename}\' zure \'{$a->username}\' konturako pasahitz berria eskatu du.
 
@@ -1151,7 +1151,7 @@ $string['manageroles'] = 'Rolak eta baimenak';
 $string['markallread'] = 'Markatu guztiak irakurritako gisa';
 $string['markedthistopic'] = 'Gai hau oraingo gisa dago nabarmendua';
 $string['markthistopic'] = 'Gai hau oraingoa gisa nabarmendu';
-$string['matchingsearchandrole'] = '\'{$a->search}\' kointzidentziak eta  {$a->role}';
+$string['matchingsearchandrole'] = 'Aurkitutako \'{$a->search}\' kointzidentziak {$a->role} rolarekin';
 $string['maxareabytesreached'] = 'Fitxategiaren tamaina (edo fitxategi guztien tamainen batura) atal honetan eskuragarri dagoena baino handiagoa da.';
 $string['maxfilesize'] = 'Gehienezko tamaina fitxategi berrietarako: {$a}';
 $string['maxfilesreached'] = '{$a} fitxategi erantsi ahal diozu elementu honi gehienez';
@@ -1245,8 +1245,8 @@ $string['month'] = 'Hilabetea';
 $string['months'] = 'Hilabeteak';
 $string['moodledocs'] = 'Moodle Doc-ak';
 $string['moodledocslink'] = 'Moodle Doc-ak orri honetarako';
-$string['moodlelogo'] = 'Moodle-ren logoa';
-$string['moodlerelease'] = 'Moodle-ren ezaugarriak';
+$string['moodlelogo'] = 'Moodleren logoa';
+$string['moodlerelease'] = 'Moodleren ezaugarriak';
 $string['moodleversion'] = 'Moodle bertsioa';
 $string['more'] = 'gehiago';
 $string['morehelp'] = 'Laguntza gehiago';
@@ -1288,7 +1288,7 @@ $string['mycourses'] = 'Nire ikastaroak';
 $string['myfiles'] = 'Nire fitxategi pribatuak';
 $string['myfilesmanage'] = 'Kudeatu nire fitxategi pribatuak';
 $string['myhome'] = 'Aginte-panela';
-$string['mymoodledashboard'] = 'Nire Moodle-ko aginte-panela';
+$string['mymoodledashboard'] = 'Nire Moodleko aginte-panela';
 $string['myprofile'] = 'Nire profila';
 $string['name'] = 'Izena';
 $string['namedfiletoolarge'] = '\'{$a->filename}\' fitxategia handiegia da eta ezin izan da igo';
@@ -1307,7 +1307,7 @@ $string['newcourse'] = 'Ikastaro berria';
 $string['newpassword'] = 'Pasahitz berria';
 $string['newpasswordfromlost'] = '<strong>OHARRA:</strong> Zure <strong>Oraingo zure pasahitza</strong> bi e-mailetatik <strong>bigarrengoan</strong> bidaliko zaizu galdutako pasahitzaren errekuperazio-prozesuan. Pantaila honekin jarraitu aurretik, ziurtatu ezazu pasahitza jaso duzula, mesedez.';
 $string['newpassword_help'] = 'Idatzi paasahitz berri bat edo hutsik utzi oraingo pasahitza mantentzeko.';
-$string['newpasswordtext'] = 'Kaixo {$a->firstname},
+$string['newpasswordtext'] = 'Kaixo, {$a->firstname}:
 
 Zure kontuaren pasahitza \'{$a->sitename}\' gunean berrezarri da eta behin behineko pasahitz berri bat ezarri dizugu.
 
@@ -1336,7 +1336,7 @@ Ezarpen honek ikastaroaren hasiera-orrian, azken berriak blokean zenbat berri ag
 Ikastaroan berrien foroa behar ez bada, ezarpen honetan zero jarri behar da.';
 $string['newuser'] = 'Erabiltzaile berria';
 $string['newusernewpasswordsubj'] = 'Erabiltzaile berriaren kontua';
-$string['newusernewpasswordtext'] = 'Kaixo {$a->firstname},
+$string['newusernewpasswordtext'] = 'Kaixo, {$a->firstname}:
 
 Kontu berria ireki zaizu \'{$a->sitename}\'-(e)n eta behin behineko pasahitza ezarri zaizu.
 
@@ -1414,7 +1414,7 @@ $string['noteuserschangednonetocourse'] = 'Oharra: Erabiltzaileen datuak berreza
 $string['nothingnew'] = 'Ez dago duela gutxiko aktibitaterik';
 $string['nothingtodisplay'] = 'Erakustekorik ez';
 $string['notice'] = 'Abisua';
-$string['noticenewerbackup'] = 'Segurtasun-kopia egin zeneko Moodle-ko bertsioa {$a->backuprelease} da, ({$a->backupversion}) eta bertsio hori instalatutako Moodle bertsioa baino berriagoa da {$a->serverrelease} ({$a->serverversion}). Honek arazoak sor litzake ezin delako bermatu segurtasun-kopien atzera begirako bateragarritasuna.';
+$string['noticenewerbackup'] = 'Segurtasun-kopia egin zeneko Moodleko bertsioa {$a->backuprelease} da, ({$a->backupversion}) eta bertsio hori instalatutako Moodle bertsioa baino berriagoa da {$a->serverrelease} ({$a->serverversion}). Honek arazoak sor litzake ezin delako bermatu segurtasun-kopien atzera begirako bateragarritasuna.';
 $string['notifications'] = 'Jakinarazpenak';
 $string['notifyloginfailuresmessage'] = '{$a->time}, IP: {$a->ip}, Erabiltzailea: {$a->info}, Erabiltzailearen izen osoa: {$a->name}';
 $string['notifyloginfailuresmessageend'] = 'Erregistro horiek ikusteko hona jo: {$a}';
@@ -1453,13 +1453,13 @@ $string['options'] = 'aukerak';
 $string['order'] = 'Ordena';
 $string['originalpath'] = 'Jatorrizko bidea';
 $string['orphanedactivitiesinsectionno'] = 'Jarduera umezurtzak ({$a} atala)';
-$string['other'] = 'Beste';
+$string['other'] = 'Besteak';
 $string['outline'] = 'Laburpena';
 $string['outlinereport'] = 'Laburpen-txostena';
 $string['page'] = 'Orria';
-$string['pagea'] = '{$a} orria';
+$string['pagea'] = '{$a}. orria';
 $string['pagedcontentnavigation'] = 'Orrien bidezko nabigazioa';
-$string['pagedcontentnavigationactiveitem'] = 'Oraingo orria, {$a} orria';
+$string['pagedcontentnavigationactiveitem'] = 'Oraingo orria, {$a}. orria';
 $string['pagedcontentnavigationitem'] = 'Joan {$a} orrira';
 $string['pagedcontentpagingbaritemsperpage'] = 'Erakutsi {$a} elementu orriko';
 $string['pageheaderconfigablock'] = 'Blokea hemen konfiguratzen: {$a->fullname}';
@@ -1476,11 +1476,11 @@ $string['participationreport'] = 'Partaidetza-txostena';
 $string['password'] = 'Pasahitza';
 $string['passwordchanged'] = 'Pasahitza aldatu da';
 $string['passwordconfirmchange'] = 'Baieztatu pasahitzaren aldaketa';
-$string['passwordextlink'] = 'Esteka honek galdutako pasahitza errekuperatzeko balio du eta Moodle-tik ateratzen behartzen zaitu.';
+$string['passwordextlink'] = 'Esteka honek galdutako pasahitza errekuperatzeko balio du eta Moodletik ateratzen behartzen zaitu.';
 $string['passwordforgotten'] = 'Ahaztutako pasahitza';
 $string['passwordforgotteninstructions'] = 'Zure datuak lehenik erabiltzaileen datu-basean bilatu behar dira. Zure erabiltzaile-izena <strong>edo</strong> helbide elektronikoa dagokion lekuan idatzi, mesedez. Biak idaztea ez da beharrezkoa.';
 $string['passwordforgotteninstructions2'] = 'Zure pasahitza berritzeko, bidali zure erabiltzaile-izena edo zure helbide elektronikoa. Datu-basean aurkitzen bazaitugu, zure helbide elektronikora e-maila bidaliko dizugu berriz sartzeko argibideekin.';
-$string['passwordnohelp'] = 'Ezin izan da galdu duzun pasahitza aurkitu. Moodle-ren kudeatzailearekin harremanetan jarri, mesedez.';
+$string['passwordnohelp'] = 'Ezin izan da galdu duzun pasahitza aurkitu. Moodleren kudeatzailearekin harremanetan jarri, mesedez.';
 $string['passwordrecovery'] = 'Bai, laguntza behar dut saioa hasteko';
 $string['passwordsdiffer'] = 'Pasahitz hauek ez datoz bat';
 $string['passwordsent'] = 'Pasahitza bidali da';
@@ -1518,9 +1518,9 @@ $string['plugincheck'] = 'Pluginen egiaztatzea';
 $string['plugindeletefiles'] = '\'{$a->name}\' pluginarekin lotutako datu guztiak ezabatu egin dira datu-basetik. Berriz ere plugina instalatzea ekiditeko, zure zerbitzaritik ondorengo direktorioa ezabatu beharko zenuke: {$a->directory}';
 $string['pluginsetup'] = 'Plugin-taulak zehazten';
 $string['policyaccept'] = 'Ulertu dut eta ados nago';
-$string['policyagree'] = 'Webgune honetan jarraitu aurretik baldintzekin ados egon behar duzu. Ados al zaude?';
-$string['policyagreement'] = 'Gunearen politiken onespena';
-$string['policyagreementclick'] = 'Gunearen politikak irakurtzeko esteka';
+$string['policyagree'] = 'Gune hau erabiltzen jarraitu aurretik politika honi onespena eman behar diozu. Ados al zaude?';
+$string['policyagreement'] = 'Guneko politiken onespena';
+$string['policyagreementclick'] = 'Guneko politikak irakurtzeko esteka';
 $string['popup'] = 'popup';
 $string['popupwindow'] = 'Ireki fitxategia leiho berrian';
 $string['popupwindowname'] = 'Popup leihoa';
@@ -1610,7 +1610,7 @@ $string['registrationcontactyes'] = 'Bai, beste Moodlezale batzuk nirekin harrem
 $string['registrationemail'] = 'Posta elektroniko bidezko jakinarazpenak';
 $string['registrationinfo'] = '<p>Orria honek zure webgunea moodle.org-en erregistratzea ahalbidetzen dizu.
 Erregistroa doakoa da. Izango duzun etekina zure webgunea posta-zerrenda batean sartzea da, ohar garrantzitsu,
-segurtasun-jakinarazpenak eta Moodle-ko eskaintzak jasotzeko.</p>
+segurtasun-jakinarazpenak eta Moodleko eskaintzak jasotzeko.</p>
 <p>Zure informazioa konfidentziala izango da, eta ez zaio inoiz inori salduko edo helaraziko. Informazio hau biltzeko
 arrazoi bakarra zu lagundu eta Moodle komunitatearen koadro estatistikoa sortzea da.</p>
 <p>Nahi izanez gero, zure webgunearen izenburua, herria eta URLa idatz ditzakezu Moodle erabiltzen duten guneen zerrenda agertzeko.</p>
@@ -1657,7 +1657,7 @@ $string['resortsubcategoriesby'] = 'Ordenatu azpikategoriak {$a}-(r)en arabera g
 $string['resortsubcategoriesbyreverse'] = 'Ordenatu azpikategoriak {$a}-(r)en arabera beherantz';
 $string['resource'] = 'Baliabidea';
 $string['resourcedisplayauto'] = 'Automatikoa';
-$string['resourcedisplaydownload'] = 'Jaistera behartu';
+$string['resourcedisplaydownload'] = 'Behartu jaistera';
 $string['resourcedisplayembed'] = 'Enbotatu';
 $string['resourcedisplayframe'] = 'Markoan';
 $string['resourcedisplaynew'] = 'Leiho berria';
@@ -1827,7 +1827,7 @@ $string['showtheselogs'] = 'Erakutsi agerraldi hauek';
 $string['showthishelpinlanguage'] = 'Erakutsi laguntza hizkuntza honetan: {$a}';
 $string['sidepanel'] = 'Alboko panela';
 $string['signoutofotherservices'] = 'Deskonektatu guztietatik';
-$string['signoutofotherservices_help'] = 'Markatuz gero, web-zerbitzuen bidez kontua erabiltzen dituzten gailu eta sistema guztiak deskonektatuko dira, esaterako mobile app-a.';
+$string['signoutofotherservices_help'] = 'Markatuz gero, web-zerbitzuen bidez kontua erabiltzen dituzten gailu eta sistema guztiak deskonektatuko dira, esaterako mobile aplikazioa.';
 $string['since'] = 'Noiztik';
 $string['sincelast'] = 'azkeneko sarreratik';
 $string['site'] = 'Gunea';

@@ -51,5 +51,5 @@ $string['removecohortroleassignmentconfirm'] = 'Είστε βέβαιοι ότι
 $string['selectcohorts'] = 'Επιλογή ομάδων χρηστών';
 $string['selectrole'] = 'Επιλογή ρόλου';
 $string['selectusers'] = 'Επιλέξτε χρήστες για ανάθεση ρόλου';
-$string['taskname'] = 'Συγχρονισμός αναθέσων ρόλου στην ομάδα χρηστών';
+$string['taskname'] = 'Συγχρονισμός αναθέσεων ρόλου στην ομάδα χρηστών';
 $string['thisuserroles'] = 'Ρόλοι που ανατέθηκαν σε σχέση με αυτόν τον χρήστη';

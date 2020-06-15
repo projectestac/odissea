@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cannotfit'] = 'Die Textersetzung ist länger als das Original. Ein Verkürzen ist nicht zugelassen. Der Vorgang wird abgebrochen.';
+$string['cannotfit'] = 'Die Textersetzung ist länger als das Original und ein Verkürzen ist nicht möglich. Der Vorgang wird abgebrochen.';
 $string['disclaimer'] = 'Ja, ich kenne das Risiko!';
 $string['doit'] = 'Ersetzen';
 $string['excludedtables'] = 'Verschiedene Tabellen werden nicht geändert, z.B. configuration, log, events und session';

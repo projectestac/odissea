@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventreportviewed'] = 'Beteiligungsbericht gesehen';
 $string['nologreaderenabled'] = 'Anzeige für Logdaten deaktiviert';
 $string['page-report-participation-index'] = 'Kursteilnahmebericht';
-$string['page-report-participation-x'] = 'Alle Teilnahmeberichte';
+$string['page-report-participation-x'] = 'Jeder Teilnahmebericht';
 $string['participation:view'] = 'Übersicht zur Kursbeteiligung ansehen';
 $string['pluginname'] = 'Kursbeteiligung';
 $string['privacy:metadata'] = 'Das Kursteilnahme-Plugin speichert keine personenbezogenen Daten.';

@@ -170,7 +170,7 @@ $string['configallowobjectembed'] = 'Lehenetsitako segurtasun-neurri gisa, erabi
 $string['configallowoverride'] = 'Zutabeetan agertzen diren rolak beste batzuei baliogabetzen utzi ahal diezu ezkerreko rolak dituztenei';
 $string['configallowoverride2'] = 'Aukeratu zein rol baliogabetu ahal duen ezkerreko zutabeko rol bakoitzak.<br />Kontuan izan ezarpen hau moodle/role:override edo moodle/role:safeoverride gaitasunak baimenduta dituzten erabiltzaileei baino ezin zaiela aplikatu.';
 $string['configallowswitch'] = 'Aukeratu erabiltzaile bat zein roletara alda daitekeen, jadanik dituen roletan oinarrituz. Taula honetako sarreraz gain, erabiltzaileak moodle/role:switchroles gaitasuna gaituta izan beharko du. <br />Ohar zaitez soilik moodle/course:view gaitasuna duten baina moodle/site:doanything gaitasuna ez duten roletara alda daitekeenez, taula honetako zutabe batzuk desgaituta daudela.';
-$string['configallowthemechangeonurl'] = 'Gaituz gero, itxura aldatu egin daiteke edozein Moodle-ren URL-tatik &theme=itxurarenizena gehituta (adibidez: niremoodlegunea.com/?theme=afterburner edo niremoodlegunea.com/course/view.php?id=2&theme=afterburner).';
+$string['configallowthemechangeonurl'] = 'Gaituz gero, itxura aldatu egin daiteke edozein Moodleren URL-tatik &theme=itxurarenizena gehituta (adibidez: niremoodlegunea.com/?theme=afterburner edo niremoodlegunea.com/course/view.php?id=2&theme=afterburner).';
 $string['configallowuserblockhiding'] = 'Erabiltzaileek guneko aldeetako blokeak erakutsi eta ezkutatu ahal izatea nahi al duzu? Aukera honek Javascript eta cookie-ak erabiltzen ditu blokeen egoera gogoratzeko, eta erabiltzaileek informazioa nola ikusiko duten zehazten du.';
 $string['configallowusermailcharset'] = 'Gaituz gero, guneko erabiltzaile guztiek ezarri ahal izango dute bere karaktere-multzoa e-mailak idazteko.';
 $string['configallowuserswitchrolestheycantassign'] = 'Modu lehenetsian, moodle/role:assign gaitasuna beharrezkoa da erabiltzaileek beste rol bat hartu ahal izateko. Ezarpen hau gaituta baldintza hori kendu egiten duzu eta ondorioz "Aukeratu beste rol bat" zabaltzen den menuan agertuko diren rolak soilik "Baimendu rol esleipenak" taulan ezarritakoak baldintzatuko du.
@@ -240,13 +240,13 @@ $string['configenablecalendarexport'] = 'Gaitu egutegiak esportatzea eta harpide
 $string['configenablecomments'] = 'Gaitu iruzkinak';
 $string['configenablecourserequests'] = 'Edozein erabiltzailek ikastaro bat sortzeko eska dezala ahalbidetzen du.';
 $string['configenabledevicedetection'] = 'Ezarpen hau gaitzeak telefono mugikorrak, smartphone-ak, tabletak edo bestelako gailuak (mahai-gaineko ordenagailuak, ordenagailu eramangarriak, e.a.) atzematea baimentzen du, itxura edo beste ezaugarri batzuk aplikatu ahal izateko.';
-$string['configenablemobilewebservice'] = 'Gaitu zerbitzu mugikorra Moodle-ren app ofizialerako edo eska dezaketen beste aplikazio baterako. Informazio gehiagorako, irakurri {$a}';
+$string['configenablemobilewebservice'] = 'Gaitu zerbitzu mugikorra Moodleren app ofizialerako edo eska dezaketen beste aplikazio baterako. Informazio gehiagorako, irakurri {$a}';
 $string['configenablerssfeeds'] = 'Gaituz gero, guneko hainbat funtzionalitatek RSS jarioak sortuko dituzte, besteak beste, blog, foro, datu-base jarduera eta glosarioek. Kontuan izan modulu bakoitzean ere RSS jarioak aktibatu behar direla.';
 $string['configenablerssfeedsdisabled'] = 'Ez dago eskuragarri RSS kanalak gune osoan desaktibatuta daudelako. Aktibatzeko, Aldagaietara joan Admin - Konfigurazioan.';
 $string['configenablerssfeedsdisabled2'] = 'RSS jarioak ez daude gaituta gunearen mailan. Gunearen kudeaketako Funtzio Aurreratuak aukeran gaitu ahal dira.';
 $string['configenablesafebrowserintegration'] = 'Ezarpen honek \'Behartu Safe Exam Browser erabiltzera\' aukera gehitzen du galdetegiaren ezarpen-formularioko \'Nabigatzailearen segurtasuna\' atalean. Ikusi https://www.safeexambrowser.org/ informazio gehiagorako.';
-$string['configenablestats'] = '\'Bai\' aukeratuz gero, Moodle-ko cronjoba erregistroak prozesatu eta estatistika batzuk bilduko ditu. Gunearen trafikoaren arabera, operazio hau luza daiteke. Aukera hau hartuz gero, zure ikastaroen grafiko eta estatistika interesgarri batzuk ikusi ahal izango dituzu, edo gune osoari buruzkoak.';
-$string['configenabletrusttext'] = 'Modu lehenetsian, Moodle-k erabiltzaileek idatzitako testua sakon garbituko du segurtasunerako arrisku izan daitekeen edozein \'script\', media e.a. ezabatzeko. Konfiantzazko Edukiaren sistemarekin zure konfiantza duten erabiltzaile jakinei edukietan ezaugarri aurreratu horiek sartzeko baimena ematen diezu, interferentziarik gabe. Sistema gaitzeko, ezarpen hau gaitu behar duzu lehenik eta ondoren Konfiantzazko Eduki baimena eman Moodle-ren rol zehatz bati. Erabiltzaile horiek sortu edo igotako testuak konfiantzazko gisa markatuko dira eta ez dira garbiketa prozesutik pasako erakutsi aurretik.';
+$string['configenablestats'] = '\'Bai\' aukeratuz gero, Moodleko cronjoba erregistroak prozesatu eta estatistika batzuk bilduko ditu. Gunearen trafikoaren arabera, operazio hau luza daiteke. Aukera hau hartuz gero, zure ikastaroen grafiko eta estatistika interesgarri batzuk ikusi ahal izango dituzu, edo gune osoari buruzkoak.';
+$string['configenabletrusttext'] = 'Modu lehenetsian, Moodlek erabiltzaileek idatzitako testua sakon garbituko du segurtasunerako arrisku izan daitekeen edozein \'script\', media e.a. ezabatzeko. Konfiantzazko Edukiaren sistemarekin zure konfiantza duten erabiltzaile jakinei edukietan ezaugarri aurreratu horiek sartzeko baimena ematen diezu, interferentziarik gabe. Sistema gaitzeko, ezarpen hau gaitu behar duzu lehenik eta ondoren Konfiantzazko Eduki baimena eman Moodleren rol zehatz bati. Erabiltzaile horiek sortu edo igotako testuak konfiantzazko gisa markatuko dira eta ez dira garbiketa prozesutik pasako erakutsi aurretik.';
 $string['configenablewebservices'] = 'Web-zerbitzuak aukera ematen die beste sistema batzuei Moodle honetan identifikatu eta bertan eragiteko. Segurtasunerako, aukera hau desgaitu egin behar da benetan erabiltzen ari ez bazara.';
 $string['configenablewsdocumentation'] = 'Gaitu web-zerbitzuen dokumentazioa automatikoki sortzea. Erabiltzaileak bere dokumentaziora sarbidea {$a} bere segurtasun-kodeen orrian dauka. Horrek gaitu diren protokoloen dokumentazioa soilik erakusten ditu.';
 $string['configerrorlevel'] = 'Aukeratu erakustsi nahi duzun PHP abisu-kopurua. Aukera onena \'Arrunta\' izan ohi da.';
@@ -257,7 +257,7 @@ $string['configextramemorylimit'] = 'Bilatu, segurtasun-kopia/berreskuratu edo c
 $string['configfilterall'] = 'Iragazi kate guztiak, goiburu, izenburu, nabigazio-barrak, etab. barne. Hau bereziki erabilgarria izan daiteke iragazki eleanitzarekin; bestela, gunean karga handia ezarriko du etekin gutxi lortzeko.';
 $string['configfiltermatchoneperpage'] = 'Esteka automatikoaren iragazkiek esteka bakarra sortuko dute orri osoan aurkituko den lehenengo testu-adibide egokiarekiko, beste guztia alde batera utziz.';
 $string['configfiltermatchonepertext'] = 'Esteka automatikoaren iragazkiek esteka bakarra sortuko dute orriko testu-elementu bakoitzean (ad. baliabidea, blokea...) aurkituko den lehenengo testu-adibide egokiarekiko, beste guztia alde batera utziz. Ezarpen hau ez da kontuan hartuko orriko ezarpen bakarra <i>bai</i> baldin bada.';
-$string['configfilteruploadedfiles'] = 'Aukera honek Moodle-k igotako HTML eta testu-fitxategi guztiak erakutsi aurretik iragazkiekin prozesatzea ahalbidetzen du.';
+$string['configfilteruploadedfiles'] = 'Aukera honek Moodlek igotako HTML eta testu-fitxategi guztiak erakutsi aurretik iragazkiekin prozesatzea ahalbidetzen du.';
 $string['configforcelogin'] = 'Normalean gunearen orri nagusia eta ikastaroen zerrenda (baina ikastaroak ez) edonork irakur ditzake bere erabiltzaile-izena eta pasahitza idatzi beharrik gabe. Bisitariek EZEIN EDUKIRIK ikusi aurretik gunera pasahitzez sartzera behartu nahi badituzu, aukera hau aktibatu beharko duzu.';
 $string['configforceloginforprofiles'] = 'Aukera honek gunera kontu baliagarrien bidez sartzera behartzen du (bisitari gisa ez) erabiltzaile-profilen orria ikusi aurretik. Ezarpen hau ezgaitzen baduzu, gerta daiteke erabiltzaile batzuk iragarkiak (spam) edo eduki ezegokiak argitaratzea bere profiletan eta edonorentzat ikusgai geratuko lirateke.';
 $string['configfrontpage'] = 'Aukeratutako elementuak gunearen hasiera-orrian erakutsiko dira.';
@@ -267,13 +267,13 @@ $string['configfrontpageloggedin'] = 'Aukeratutako elementuak gunearen hasiera-o
 $string['configfullnamedisplay'] = 'Aukera honek izenak osorik erakustean nola ikusiko diren definitzen du. Balio lehenetsiak, "language", erakutsi beharrekoa hizkuntza pakete bakoitzaren "fullnamedisplay" katearen menpe uzten du. Hizkuntza batzuek izenak erakusteko arau ezberdinak dituzte.
 
 Hizkuntza bakarra erabiltzen duten gune gehienek lehenetsitako balioa mantentzea aholkatzen da: ("Izena + Abizena"), baina abizena ezkutatzea erabaki dezakezu. Erabili daitezken gakoak hauek dira: firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, and alternatename.';
-$string['configgeoipfile'] = 'GeoLite2 City fitxategi bitarraren kokapena. Fitxategi hau ez dator Moodle-ren pakete estandarrean eta aparte lortu behar da hemen: <a href="https://www.maxmind.com/">MaxMind</a>. Bertsio komertziala nahiz doakoa dituzu eskura. Erregistratu beharko duzu City datu-basea hurrengo estekatik jaitsi ahal izateko: <a href="https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a>. Behin erregistratuta eta fitxategia jaitsita, zure zerbitzariaren "{$a}" karpetan erauzi ezazu.';
+$string['configgeoipfile'] = 'GeoLite2 City fitxategi bitarraren kokapena. Fitxategi hau ez dator Moodleren pakete estandarrean eta aparte lortu behar da hemen: <a href="https://www.maxmind.com/">MaxMind</a>. Bertsio komertziala nahiz doakoa dituzu eskura. Erregistratu beharko duzu City datu-basea hurrengo estekatik jaitsi ahal izateko: <a href="https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a>. Behin erregistratuta eta fitxategia jaitsita, zure zerbitzariaren "{$a}" direktorioan erauzi ezazu.';
 $string['configgetremoteaddrconf'] = 'Zure zerbitzaria \'reverse proxy\' baten atzean badago aukera hau erabil dezakezu urrutiko IP helbidea duten zein HTTP goibururekin fidatu daitekeen zehazteko. Goiburuak ordenean irakurriko dira eta eskuragarri dagoen lehenengoa erabiliko da.';
 $string['configgradebookroles'] = 'Ezarpen honek kalifikazio-liburuan nor agertuko den kontrolatzen utziko dizu. Erabiltzaileek hauetako rolen bat izan behar dute gutxienez ikastaro batean ikastaro horretako kalifikazio-liburuan agertzeko.';
 $string['configgradeexport'] = 'Aukeratu kalifikazio-liburua esportatzeko zein formatu izango den kalifikazioak esportatzeko metodo nagusia. Aukeratutako lokailuek eremu bat (\'esporatutako azkenak\') erabiliko dute kalifikazio bakoitzerako. Adibidez, honen ondorioz esportatutako erregistroak "berriak" edo "eguneratuta" gisa identifikatuko dira. Hau nola egin ez badakizu, ez markatu ezer.';
 $string['confighiddenuserfields'] = 'Aukeratu irakasle eta kudeatzaileak ez diren ikastaroko erabiltzaileei zer erabiltzaile-eremuren informazioa ezkutatu nahi diezun, ikasleen pribatutasuna handitzeko. CTRL sakatuta mantendu eremu batzuk aukeratzeko.';
 $string['configidnumber'] = 'Aukera honek zehazten du ea (a) Erabiltzaileei ID zenbakia ez zaien eskatzen, (b) ID zenbakia eskatu, baina hutsik utz dezaketen edo (c) ID zenbakia eskatu eta ezin duten hutsik utzi. Baiezko kasuan, erabiltzailearen ID zenbakia bere profilean erakusten da.';
-$string['configintro'] = 'Orri honetan Moodle-k zure zerbitzarian modu egokian lan egiten laguntzen duten aldagai-kopuru bat zehatz dezakezu. Horrek ez zaitu gehiegi kezkatu behar: lehenetsitako balioek ondo funtzionatuko dute eta, hala ere, orri honetara nahi duzunean itzul zaitezke ezarpenak aldatzeko.';
+$string['configintro'] = 'Orri honetan Moodlek zure zerbitzarian modu egokian lan egiten laguntzen duten aldagai-kopuru bat zehatz dezakezu. Horrek ez zaitu gehiegi kezkatu behar: lehenetsitako balioek ondo funtzionatuko dute eta, hala ere, orri honetara nahi duzunean itzul zaitezke ezarpenak aldatzeko.';
 $string['configintroadmin'] = 'Orri honetan kudeatzaile nagusiaren kontua konfiguratu beharko zenuke -horrek gunearen erabateko kontrola emango baitizu-. Ziurtatu ezazu erabiltzaile-izen eta pasahitz seguruak erabiltzen dituzula, bai eta zure helbide elektronikoa baliagarria dela ere. Aurrerago kudeatzaile-kontu gehiago sortu ahal izango dituzu.';
 $string['configintrosite'] = 'Orri honek orri nagusia konfiguratzen eta zure gune berriari izena ematen ahalbidetzen dizu. Beranduago itzul zaitezke zerbait aldatzera orri nagusiko \'Gunearen kudeaketa\' menuaren bitartez.';
 $string['configiplookup'] = 'IP helbidean klik egiten duzunean (adib. 34.12.222.93), erregistroetan egiten denaren antzera, IP hori ahalik eta zehatzen kokatuko zaizu mapan. Hori egiteko, hainbat pluginen artean aukeratu dezakezu. Bakoitzak bere abantailak eta desabantailak ditu.';
@@ -281,7 +281,7 @@ $string['configkeeptagnamecase'] = 'Markatu hau etiketen izenek jatorrizko \'cas
 $string['configlang'] = 'Aukeratu gune osoan lehenetsitako hizkuntza. Erabiltzaileek ezarpen hau aldatu dezakete hizkuntza-menua edo euren profileko ezarpena erabilita.';
 $string['configlanglist'] = 'Erabiltzaileek Moodle-ren instalazioan dagoen edozein hizkuntza aukeratzeko hau hutsik utzi dezakezu. Hala ere, menua laburbildu daiteke komaz banatutako nahi dituzun hizkuntzen kodeen zerrenda idatziz. Adibidez, eu,fr,it,en,es';
 $string['configlangmenu'] = 'Erabaki hizkuntza aukeratzeko menua orri nagusian, hasiera-orrian, sarbide-orrian, etab. erakutsi nahi duzun. Horrek ez du oztopatzen erabiltzaileek beren profilean nahi duten hizkuntza lehenesteko.';
-$string['configlangstringcache'] = 'Hizkuntza-kateak datu-karpetako fitxategi konpilatutan gordetzen ditu. Moodle itzultzen edo iturburu kodearen kateak aldatzen ari bazara, aukera hau desgaitu dezakezu. Bestela, utz ezazu gaituta errendimenduaren onurak nabaritzeko.';
+$string['configlangstringcache'] = 'Hizkuntza-kateak datu-direktorioko fitxategi konpilatutan gordetzen ditu. Moodle itzultzen edo iturburu kodearen kateak aldatzen ari bazara, aukera hau desgaitu dezakezu. Bestela, utz ezazu gaituta errendimenduaren onurak nabaritzeko.';
 $string['configlatinexcelexport'] = 'Aukeratu kodifikazioa Excel formatuko esportazioetarako.';
 $string['configlocale'] = 'Aukeratu gunearen kokapena (honek hizkuntzaren formatan eta datetan eragina izango du). Datu horiek zure sistema eragilean ere instalatuta egon behar dute (ad., en_US.UTF-8 edo es_ES.UTF-8). Zalantzan bazaude, hutsik utzi.';
 $string['configloginhttps'] = 'Aukera honek Moodle-ri sarbide-orrian https konexio segurua erabilarazten dio (sarbide segurua ziurtatzen) URL http arruntera itzultzeko. KONTUZ: aukera honek https zure zerbitzarian indarrean egotea behar du. Bestela, ZU ZEU EZINGO ZARA GUNERA SARTU.';
@@ -319,7 +319,7 @@ $string['configopentogoogle'] = 'Aukera hau aktibatuz gero, Google gunera gonbid
 $string['configoverride'] = 'config.php-n definituta';
 $string['configpasswordpolicy'] = 'Aukera hau gaituz gero, erabiltzaileen pasahitzak alderatuko dira pasahitzen baliozkotasunerako beheko zehaztapenekin. Pasahitzen politikak ez du eraginik izango erabiltzaileengan pasahitza aldatzea erabakitzen ez badute, edo eskatzen ez bazaie.';
 $string['configpasswordresettime'] = 'Honek pasahitz baten berrabiaraztea iraungi aurretik balioesteko epea zehazten du. Normalean epe egokia 30 minutu izan daiteke.';
-$string['configpathtodu'] = 'Du-rako bidea. Seguru asko honako zerbait: /usr/bin/du. Hori idazten baduzu, karpetaren edukia erakusten duten orriak askoz azkarrago exekutatuko dira karpetek fitxategi asko dauzkatenean.';
+$string['configpathtodu'] = 'Du-rako bidea. Seguru asko honako zerbait: /usr/bin/du. Hori idazten baduzu, direktorioaren edukia erakusten duten orriak askoz azkarrago exekutatuko dira karpetek fitxategi asko dauzkatenean.';
 $string['configpathtophp'] = 'PHP CLI-rako bidea. Seguru asko /usr/bin/php antzeko zerbait. Hori sartuz gero, cron script-ak web-kudeaketako interfazetik exekutatu ahal izango da.';
 $string['configperfdebug'] = 'Aukera hau aktibatuz gero, itxura estandarreko orri-oinean errendimenduaren informazioa azalduko da.';
 $string['configprofileroles'] = 'Erabiltzaile-profiletan eta partaidetza-orrian ikusten den rol-zerrenda';
@@ -338,6 +338,7 @@ $string['configrequestedstudentname'] = 'Eskatutako ikastaroetan \'ikaslea\' ize
 $string['configrequestedstudentsname'] = 'Eskatutako ikastaroetan  \'ikasleak\' izendatzeko erabilitako hitza';
 $string['configrequestedteachername'] = 'Eskatutako ikastaroetan  \'irakaslea\' izendatzeko erabilitako hitza';
 $string['configrequestedteachersname'] = 'Eskatutako ikastaroetan  \'irakasleak\' izendatzeko erabilitako hitza';
+$string['configreverseproxyignore'] = 'Zure zerbitzaria X-Forwarded-For goiburua gehitzen duten alderantzizko proxy anitzen atzean badago erabiltzaileen benetako IP helbidea aurkitu ahal izateko komaz banatutako ezikusi beharreko alderantzizko proxy-en IP helbide edo azpisareen zerrenda zehaztu beharko duzu.';
 $string['configsectioninterface'] = 'Interfazea';
 $string['configsectionmail'] = 'Posta';
 $string['configsectionmaintenance'] = 'Mantenua';
@@ -348,10 +349,10 @@ $string['configsectionrequestedcourse'] = 'Ikastaro-eskariak';
 $string['configsectionsecurity'] = 'Segurtasuna';
 $string['configsectionstats'] = 'Estatistikak';
 $string['configsectionuser'] = 'Erabiltzailea';
-$string['configsecureforms'] = 'Moodle-k segurtasun-maila altuagoa erabil dezake web formularioetako datuak onartzen dituenean. Aukera aktibatuz gero, nabigatzailearen HTTP_REFERER formularioaren helbidearekin konparatuko da. Honek oso kasu gutxitan emango ditu erroreak erabiltzaileak firewalla badauka (ad., ZoneAlarm) bere HTTP_REFERER web trafikotik aparte izateko. Sintoma formularioan \'trabatuta\' geratzea izaten da. Erabiltzaileek, esaterako, sarbide-orrian arazorik izango balute, agian aukera hau desaktibatzea komeniko litzateke, gunea indar gordineko (brute force) erasoetara irekiago uzteko desabantailarekin. Zalantza kasuan, \'Bai\' aukeratu.';
-$string['configsessioncookie'] = 'Aukera honek Moodle-ko saioetako cookie-aren izena pertsonalizatzen du. Aukerazkoa da, eta praktikoa izaten da soilik zerbitzari berean Moodle-ko beste kopia bat egikaritzen ari denean cookie-ak nahas daitezkeelako.';
-$string['configsessioncookiedomain'] = 'Honek Moodle-ko cookie-ak hartuko diren domeinua aldatzeko aukera ematen dizu. Erabilgarria da Moodle saioaren informazioa beste azpidomeinu bateko web-aplikazio batekin sarean egotea eskatzen duten pertsonalizazioetarako (adib. autentifikazio edo matrikulatzeko pluginak). <strong>KONTUZ: erabat gomendatzen da ezarpen hau modu lehenetsian datorren bezala uztea (hutsik) - balio ezegoki batek guneko sarbide guztiak galaraziko ditu.</strong>';
-$string['configsessioncookiepath'] = 'Nabigatzaileek Moodle-ren cookie-ak bidaltzen dituzten lekua aldatu beharra baduzu, aukera hau alda dezakezu zure web-gunean azpidirektorio bat zehazteko. Bestela lehenetsitako balioak (\'/\') balioko dizu.';
+$string['configsecureforms'] = 'Moodlek segurtasun-maila altuagoa erabil dezake web formularioetako datuak onartzen dituenean. Aukera aktibatuz gero, nabigatzailearen HTTP_REFERER formularioaren helbidearekin konparatuko da. Honek oso kasu gutxitan emango ditu erroreak erabiltzaileak firewalla badauka (ad., ZoneAlarm) bere HTTP_REFERER web trafikotik aparte izateko. Sintoma formularioan \'trabatuta\' geratzea izaten da. Erabiltzaileek, esaterako, sarbide-orrian arazorik izango balute, agian aukera hau desaktibatzea komeniko litzateke, gunea indar gordineko (brute force) erasoetara irekiago uzteko desabantailarekin. Zalantza kasuan, \'Bai\' aukeratu.';
+$string['configsessioncookie'] = 'Aukera honek Moodleko saioetako cookie-aren izena pertsonalizatzen du. Aukerazkoa da, eta praktikoa izaten da soilik zerbitzari berean Moodleko beste kopia bat egikaritzen ari denean cookie-ak nahas daitezkeelako.';
+$string['configsessioncookiedomain'] = 'Honek Moodleko cookie-ak hartuko diren domeinua aldatzeko aukera ematen dizu. Erabilgarria da Moodle saioaren informazioa beste azpidomeinu bateko web-aplikazio batekin sarean egotea eskatzen duten pertsonalizazioetarako (adib. autentifikazio edo matrikulatzeko pluginak). <strong>KONTUZ: erabat gomendatzen da ezarpen hau modu lehenetsian datorren bezala uztea (hutsik) - balio ezegoki batek guneko sarbide guztiak galaraziko ditu.</strong>';
+$string['configsessioncookiepath'] = 'Nabigatzaileek Moodleren cookie-ak bidaltzen dituzten lekua aldatu beharra baduzu, aukera hau alda dezakezu zure web-gunean azpidirektorio bat zehazteko. Bestela lehenetsitako balioak (\'/\') balioko dizu.';
 $string['configsessiontimeout'] = 'Gunean konektatutako erabiltzaileek epe luzean aktibitaterik ez badute (ad., ez badute orririk kargatzen), automatikoki deskonektatuko dira (ad., saioa amaituko da). Aldagai honek deskonektatu baino lehen pasa beharreko aktibitaterik gabeko epea zehazten du.';
 $string['configshowcommentscount'] = 'Iruzkin-kopurua erakutsiz gero, beste kontsulta bat egin beharko da iruzkinetarako esteka erakusten denean';
 $string['configshowicalsource'] = 'Erakutsi iturburuaren informazioa iCal ekitaldietarako';
@@ -362,9 +363,9 @@ $string['configsitemailcharset'] = 'Ezarpen honek zehazten du lehenetsitako kara
 $string['configsitemaxcategorydepth'] = 'Gehienezko kategoria-mailak';
 $string['configsitemaxcategorydepthhelp'] = 'Honek zehazten du gehienez zenbat azpiko kategoria erakutsiko den zerrenda moduan erakusteko garaian. Maila sakonagoetan dauden kategoriak esteka moduan agertuko dira eta erabiltzaileak zabaldu ahal izango ditu AJAX eskaeren bitartez.';
 $string['configslasharguments'] = 'SCORM paketeak eta fitxategi-anitzeko baliabideak modu egokian erakusteko \'slash arguments\' delakoak erabiltzen dira (<em>PATH_INFO</em> erabilita). Zure zerbitzariak ez baditu \'slash arguments\'-ak onartzen eta konfiguratzeko gai ez bazara, aukera hau desgaitu dezakezu, nahiz eta horrek gauza batzuk ez funtzionatzea suposatuko duen.<br />Oharra: \'slash arguments\'-en erabilera derrigorrezkoa izango da etorkizuneko Moodle bertsioetan.';
-$string['configsmartpix'] = 'Aktibatuta, lehenik oraingo itxura, ondoren goragoko itxura guztiak eta ondoren Moodle-ren /pix karpeta bilatzen duen PHP script baten bitartez ematen dira ikonoak. Horrela, ez da beharrezkoa irudi-fitxategiak behin baino gehiagotan izatea itxuretan, baina errendimendua jaitsi egiten da pixka bat.';
+$string['configsmartpix'] = 'Aktibatuta, lehenik oraingo itxura, ondoren goragoko itxura guztiak eta ondoren Moodleren /pix karpeta bilatzen duen PHP script baten bitartez ematen dira ikonoak. Horrela, ez da beharrezkoa irudi-fitxategiak behin baino gehiagotan izatea itxuretan, baina errendimendua jaitsi egiten da pixka bat.';
 $string['configsmtpauthtype'] = 'Honek smtp zerbitzarian erabiliko den autentifikazio-mota konfiguratzen du.';
-$string['configsmtphosts'] = 'Moodle-k posta-mezuak bidaltzeko erabiliko duen SMTP zerbitzari lokal bat edo gehiagoren izenak hemen idatzi (ad., \'mail.a.com\' edo \'mail.a.com;mail.b.com\'). Lehenetsitakoa ez den portu bat aukeratzeko (adibidez: 25a ez den bat) [zerbitzaria]:[portua] sintaxia erabili dezakezu (adibidez: \'mail.a.com:587\'). Konexio seguruak egiteko, normalean 465 SSL-arekin erabiltzen da eta 587 TLS-arekin. Behar izanez gero segurtasun protokoloa behian adierazi. Hutsik uzten baduzu, Moodle-k posta bidaltzeko lehenetsitako PHP metodoa erabiliko du.';
+$string['configsmtphosts'] = 'Moodlek posta-mezuak bidaltzeko erabiliko duen SMTP zerbitzari lokal bat edo gehiagoren izenak hemen idatzi (ad., \'mail.a.com\' edo \'mail.a.com;mail.b.com\'). Lehenetsitakoa ez den portu bat aukeratzeko (adibidez: 25a ez den bat) [zerbitzaria]:[portua] sintaxia erabili dezakezu (adibidez: \'mail.a.com:587\'). Konexio seguruak egiteko, normalean 465 SSL-arekin erabiltzen da eta 587 TLS-arekin. Behar izanez gero segurtasun protokoloa behian adierazi. Hutsik uzten baduzu, Moodlek posta bidaltzeko lehenetsitako PHP metodoa erabiliko du.';
 $string['configsmtpmaxbulk'] = 'SMTP saioko bidalitako gehienezko mezu-kopurua. Mezuak taldekatzeak arindu egin dezake e-mail bidalketa. 2tik beherako balioek e-mail bakoitzeko SMTP saio berria sortarazten dute.';
 $string['configsmtpsecure'] = 'smtp zerbitzarian konexio segurua behar badu, ezarri protokolo-mota zuzena.';
 $string['configsmtpuser'] = 'Lehenago SMTP zerbitzaria zehaztu baduzu, eta zerbitzariak autentifikazioa behar badu, erabiltzaile-izena eta pasahitza hemen idatzi.';
@@ -391,7 +392,7 @@ $string['configuserquota'] = 'Erabiltzaileak bere fitxategi-pribatu eremuan gord
 $string['configusesitenameforsitepages'] = 'Gaituz gero nabigazioan gunearen izen laburra erabiliko da guneko orrien nodo gisa, \'Guneko orriak\' katearen ordez';
 $string['configusetags'] = 'Webgunean zehar etiketen funtzionalitatea gaitu nahi al duzu?';
 $string['configvariables'] = 'Aldagaiak';
-$string['configverifychangedemail'] = 'Aldatutako helbide elektronikoak baimendutako eta debekatutako posta elektronikoko domeinuak erabilita egiaztatzea gaitzen du. Gaitu gabe badago, domeinuak soilik erabiltzaile berriak sortzean derrigortuko dira.';
+$string['configverifychangedemail'] = 'Aldatutako helbide elektronikoak baimendutako eta ukatutako posta elektronikoko domeinuak erabilita egiaztatzea gaitzen du. Gaitu gabe badago, domeinuak soilik erabiltzaile berriak sortzean derrigortuko dira.';
 $string['configvisiblecourses'] = 'Erakutsi ezkutuko kategorietako ikastaroak';
 $string['configwarning'] = 'Emaitza hauek aldatzerakoan kontuz ibili (balio bitxiek arazoak sor ditzakete).';
 $string['configyuicomboloading'] = 'Aukera honek YUI liburutegiaren optimizaziorako fitxategi-konbinaketa gaitzen du. Ezarpen hau lanean ari diren guneetan gaituta egon beharko litzateke errendimendu arrazoiak direla-eta.';
@@ -434,15 +435,15 @@ $string['cron_help'] = 'cron.php script-ak zeregin asko maiztasun ezberdinarekin
 $string['cronremotepassword'] = 'Urrutiko sarbiderako cron-pasahitza';
 $string['cronwarning'] = '<a href="{$a}">cron.php mantenu scripta</a> ez da azken 24 orduetan exekutatu.';
 $string['cronwarningcli'] = 'cli/cron.php mantentze-script-a azkenengoz exekutatu zenetik gutxienez 24 ordu igaro dira.';
-$string['ctyperequired'] = 'Moodle-k orain PHP ctype hedapena behar du, gunearen errendimendua hobetzeko eta hizkuntz anitzeko bateragarritasuna eskaini ahal izateko.';
+$string['ctyperequired'] = 'Moodlek orain PHP ctype hedapena behar du, gunearen errendimendua hobetzeko eta hizkuntz anitzeko bateragarritasuna eskaini ahal izateko.';
 $string['curlcache'] = 'cURl cachea TTL';
-$string['curlrequired'] = 'Moodle-k orain cURL PHP hedapena behar du, Moodle biltegiekin harremanetan jartzeko.';
+$string['curlrequired'] = 'Moodlek orain cURL PHP hedapena behar du, Moodle biltegiekin harremanetan jartzeko.';
 $string['curlsecurityallowedport'] = 'Baimendutako cURL ataken zerrenda';
 $string['curlsecurityallowedportsyntax'] = 'Konektatzea baimenduta dagoen cURL ataken zerrenda. Soilik zenbaki osoak onartzen dira. Jar ezazu sarrera bakoitza lerro berri batean. Hutsik utziz gero, ataka guztiak onartuko dira. Zehaztuz gero, 443 eta 80 atakak zehaztu beharko dira HTTPS eta HTTP ataka estandarrak erabilita konektatzeko.';
 $string['curlsecurityblockedhosts'] = 'Blokeatutako cURL ataken zerrenda';
 $string['curlsecurityblockedhostssyntax'] = 'Jar ezazu sarrera bakoitza lerro berri batean. Onartzen diren sarrerak hurrengoak dira: ostalari bakarrarekin bat datozen IPv4 edo IPv6 helbide osoak (hala nola 192.168.10.1, 0:0:0:0:0:0:0:1, ::1, fe80::); CIDR notazioa duten helbideak (231.54.211.0/20 edo fe80::/64); IP helbideen tarteak (hala nola 231.3.56.10-20 edo fe80::1111-bbbb), non tarteak azken helbide-taldeari aplikatzen zaizkion; domeinu-izenak (hala nola localhost edo adibidea.eus); komodinak dituzten domeinu izenak (hala nola *.adibidea.eus or *.azpi.adibidea.eus). Hutsik dauden lerroak ez dira onartzen.';
 $string['curlsecurityurlblocked'] = 'URLa blokeatuta dago.';
-$string['curltimeoutkbitrate'] = 'cURL denbora-mugak kalkulatzeko bit-ratioa (Kbps)';
+$string['curltimeoutkbitrate'] = 'cURL denbora-mugak kalkulatzeko bit-emaria (Kbps)';
 $string['curltimeoutkbitrate_help'] = 'Ezarpen hau cURL eskaera luzeetan denbora-muga egokia kalkulatzeko erabiltzen da. Kalkulu honen une batean HTTP HEAD eskaera bat egiten da edukiaren tamaina zehazteko. Hemen 0 jarriz gero eskaera hori egitea desgaitzen da.';
 $string['currenttheme'] = 'Oraingo itxura';
 $string['customcheck'] = 'Beste konprobazio batzuk';
@@ -477,10 +478,10 @@ $string['deleteincompleteusers'] = 'Ezabatu osatu gabeko erabiltzaileak tarte ho
 $string['deleteunconfirmed'] = 'Ezabatu konfirmatu gabeko erabiltzaileak honen ondoren:';
 $string['deleteuser'] = 'Ezabatu erabiltzailea';
 $string['density'] = 'Dentsitatea';
-$string['denyemailaddresses'] = 'Debekatutako posta elektronikoko domeinuak';
+$string['denyemailaddresses'] = 'Ukatutako posta elektronikoko domeinuak';
 $string['development'] = 'Garapena';
 $string['devicedetectregex'] = 'Gailuen antzematerako adierazpen erregularrak';
-$string['devicedetectregex_desc'] = '<p>Modu lehenetsian, Moodle-k hurrengo gailu-motak antzeman ditzake: arrunta (mahaigaineko PCa, eramangarria,...) sakeleko gailuak (sakeleko telefonoak eta eskurako gailu txikiak), tablet-ak  (iPad-ak, Android tablet-ak) eta zaharkitutakoak (Internet Explorer 6 erabiltzaileak). Itxura-hautatzailea erabil daitezke horietako bakoitzari itxura ezberdinak aplikatzeko. Ezarpen honek gailu-mota gehigarriak antzemateko adierazpen erregularrak erabiltzea ahalbidetzen du (honek modu lehenetsian antzemandako gailu-motekiko lehentasuna izango luke).</p>
+$string['devicedetectregex_desc'] = '<p>Modu lehenetsian, Moodlek hurrengo gailu-motak antzeman ditzake: arrunta (mahaigaineko PCa, eramangarria,...) sakeleko gailuak (sakeleko telefonoak eta eskurako gailu txikiak), tablet-ak  (iPad-ak, Android tablet-ak) eta zaharkitutakoak (Internet Explorer 6 erabiltzaileak). Itxura-hautatzailea erabil daitezke horietako bakoitzari itxura ezberdinak aplikatzeko. Ezarpen honek gailu-mota gehigarriak antzemateko adierazpen erregularrak erabiltzea ahalbidetzen du (honek modu lehenetsian antzemandako gailu-motekiko lehentasuna izango luke).</p>
 <p>Adibidez, zuk \'/(MIDP-1.0|Maemo|Windows CE)/\' adierazpen erregularra sar dezakezu telefonoen funtzio arrunt batzuk antzeman eta horietan \'funtzioduntelefonoa\' balioa bueltatzeko. Honek Itxura-hautatzailean \'funtzioduntelefonoa\' aukera gehitzen du eta horrek gailu hauei itxura bat aplikatzeko aukera emango lizuke. Beste telefonoek gailu mugikorrentzako aukeratutako itxura erabiltzen jarraituko lukete.</p>';
 $string['devicedetectregexexpression'] = 'Adierazpen erregularra';
 $string['devicedetectregexvalue'] = 'Itzulera-balioa';
@@ -494,7 +495,7 @@ $string['doclang'] = 'Dokumentaziorako hizkuntza';
 $string['docroot'] = 'Moodle Doc-en iturburua';
 $string['doctonewwindow'] = 'Ireki leiho berrian';
 $string['doesnotfit'] = 'Helbide elektronikoa erakusteko ezarpenak';
-$string['doesnotfitdetail'] = 'Erakutsi Moodle-tik bidaltzen diren e-mailetarako ezarpenak';
+$string['doesnotfitdetail'] = 'Erakutsi Moodletik bidaltzen diren e-mailetarako ezarpenak';
 $string['download'] = 'Jaitsi';
 $string['durationunits'] = 'iraupen-unitateak';
 $string['edithelpdocs'] = 'Editatu laguntza-dokumentuak';
@@ -548,8 +549,8 @@ $string['enrolinstancedefaults'] = 'Lehenetsitako matrikulaziorako instantzia';
 $string['enrolinstancedefaults_desc'] = 'Lehenetsitako matrikulazio-ezarpenak ikastaro berrietan.';
 $string['enrolmultipleusers'] = 'Matrikulatu erabiltzaileak';
 $string['environment'] = 'Ingurunea';
-$string['environmenterrortodo'] = 'Moodle-ren bertsio hau instalatu aurretik goian aurkitutako inguru-arazo (errore) guztiak zuzendu behar dituzu.';
-$string['environmenterrorupgrade'] = 'Kontuz: ingurune-arazo guztiak konpondu beharko zenituzke Moodle-ren bertsio hau eguneratzen hasi aurretik! Baldintza hau bete gabe egindako eguneraketak hainbat arazo sor dezakete, besteak beste datuak galtzea. Ziur zaude eguneraketarekin aurrera egin nahi duzula?';
+$string['environmenterrortodo'] = 'Moodleren bertsio hau instalatu aurretik goian aurkitutako inguru-arazo (errore) guztiak zuzendu behar dituzu.';
+$string['environmenterrorupgrade'] = 'Kontuz: ingurune-arazo guztiak konpondu beharko zenituzke Moodleren bertsio hau eguneratzen hasi aurretik! Baldintza hau bete gabe egindako eguneraketak hainbat arazo sor dezakete, besteak beste datuak galtzea. Ziur zaude eguneraketarekin aurrera egin nahi duzula?';
 $string['environmentmariadbwrongdbtype'] = '<code>$CFG->dbtype</code> ezegokia: zure <code>config.php</code> fitxategia editatu behar duzu, \'<code>mysql</code>\' beharrean \'<code>mariadb</code>\' jarrita.';
 $string['environmentmustfixsetting'] = 'PHP ezarpenak aldatu egin behar dira.';
 $string['environmentok'] = 'Zure zerbitzariaren inguruneak beharrezko eskakizunak betetzen ditu.';
@@ -606,7 +607,7 @@ $string['frontpageroles'] = 'Hasiera-orriaren rolak';
 $string['frontpagesettings'] = 'Hasiera-orriaren ezarpenak';
 $string['fullnamedisplay'] = 'Izen osoaren formatua';
 $string['fullnamedisplayprivate'] = 'Izen osoaren formatua - pribatua';
-$string['gdrequired'] = 'GD hedapena orain Moodle-n derrigorrezkoa da irudiak bihurtzeko.';
+$string['gdrequired'] = 'GD hedapena orain Moodlen derrigorrezkoa da irudiak bihurtzeko.';
 $string['generalsettings'] = 'Ezarpen orokorrak';
 $string['geoipfile'] = 'GeoLite2 City MaxMind DB';
 $string['getremoteaddrconf'] = 'Erregistratutako IP helbideen iturburua';
@@ -665,7 +666,7 @@ $string['ipblocker'] = 'IP blokeatzailea';
 $string['ipblockersyntax'] = 'Sarrera bakoitza lerro batean idatzi. Baliozko sarrerak horrelakoak izan daitezke: IP helbide osoak (hala nola <b>192.168.10.1</b>), hostalari bakar batekin bat egiten dutenak; IP helbideen zatiak (hala nola <b>192.168</b>), zenbaki horiekin bat egiten duten helbideekin bat egiten dutenak; CIDR notazioko helbideak (hala nola <b>231.54.211.0/20</b>); IP helbideen tarte bat (hala nola <b>231.3.56.10-20</b>), non tartea helbidearen azken zatiari aplikatzen zaion. Testuzko domeinu -izenak (\'adibidea.eus\' adibidez) ez dira onartzen. Hutsik dauden lerroak eta "#" karakterearen ondorengoko testuak ez dira kontuan hartuko.';
 $string['iplookup'] = 'IP helbidea bilatu';
 $string['iplookupgeoplugin'] = 'Une honetan <a href="https://www.geoplugin.com">geoPlugin</a> zerbitzua informazio geografikoa eskuratzeko erabiltzen da. Emaitza zehatzagoak lortzeko MaxMind GeoLite datu-basearen kopia bat lokalean instalatzea gomendatzen dugu.';
-$string['iplookupinfo'] = 'Modu lehenetsian, Moodle-k NetGeo (The Internet Geographic Database) doako on-line zerbitzari erabiltzen du IP helbideen kokapena bilatzeko. Tamalez, datu-base horren mantenua eten egin da eta emaitza <em>erabat ezegokiak</em> eman ditzake.
+$string['iplookupinfo'] = 'Modu lehenetsian, Moodlek NetGeo (The Internet Geographic Database) doako on-line zerbitzari erabiltzen du IP helbideen kokapena bilatzeko. Tamalez, datu-base horren mantenua eten egin da eta emaitza <em>erabat ezegokiak</em> eman ditzake.
 Gomendagarria da doako GeoLite2 City datu-basearen kopia lokala instalatzea MaxMind-etik.<br />
 IP helbideen kokapena mapa erraz batean edo Google Maps erabilita erakusten da. Mesedez, ohartu mapa interaktiboak gaitzeko Google kontua behar duzula eta Google Maps API giltza doan eskatu.';
 $string['iplookupmaxmindnote'] = 'Produktu honek MaxMind-ek sortutako GeoLite2 datuak barne ditu eta hemendik eskura daitezke: <a href="https://www.maxmind.com/">https://www.maxmind.com/</a>.';
@@ -742,7 +743,7 @@ $string['managecontextlocklocked'] = '{$a->contextname} eta beheragoko beste edo
 $string['managecontextlockunlocked'] = '{$a->contextname} eta beheragoko beste edozein testuinguru dagoeneko ez daude izoztuta.';
 $string['managecontextunlock'] = 'Desizoztu testuinguru hau';
 $string['manageformats'] = 'Kudeatu ikastaro-formatuak';
-$string['manageformatsgotosettings'] = 'Lehenetsitako formatua izan da aldatu hemen: {$a}';
+$string['manageformatsgotosettings'] = 'Lehenetsitako formatua alda daiteke hemen: {$a}';
 $string['managelang'] = 'Kudeatu';
 $string['managelicenses'] = 'Kudeatu lizentziak';
 $string['manageqbehaviours'] = 'Kudeatu galderen jokaerak';
@@ -758,7 +759,7 @@ $string['maxbytes'] = 'Igotako fitxategiaren gehienezko tamaina';
 $string['maxconsecutiveidentchars'] = 'Jarraian dauden karaktere berdinak';
 $string['maxeditingtime'] = 'Mezuak editatzeko gehienezo denbora-tartea';
 $string['maxtimelimit'] = 'Gehienezko denbora-epea';
-$string['maxtimelimit_desc'] = 'Moodle-k onartuko duen gehienezko PHP exekuzio-denbora mugatzeko inolako irteerarik erakutsi gabe, sartu hemen balio bat (segundoetan), 0 jarriz gero Moodle-ko lehenetsitako mugak aplikatuko dira. Bere muga propioak dituen frontend zerbitzari bat baduzu hemen balio baxuago bat ezarri PHP error mezuak jasotzeko. Muga hau ez zaie CLI script-ei aplikatzen.';
+$string['maxtimelimit_desc'] = 'Moodlek onartuko duen gehienezko PHP exekuzio-denbora mugatzeko inolako irteerarik erakutsi gabe, sartu hemen balio bat (segundoetan), 0 jarriz gero Moodleko lehenetsitako mugak aplikatuko dira. Bere muga propioak dituen frontend zerbitzari bat baduzu hemen balio baxuago bat ezarri PHP error mezuak jasotzeko. Muga hau ez zaie CLI script-ei aplikatzen.';
 $string['maxusersperpage'] = 'Gehienezko erabiltzaileak orriko';
 $string['mbstringrecommended'] = 'MBSTRING aukerako liburutegia instalatzea gomendagarria da  oso gunearen errendimendua hobetzeko, batez ere zure guneak latindarrak ez diren hizkuntzak erabiltzen baditu.';
 $string['mbstringrequired'] = 'MBSTRING liburutegia instalatzea derrigorrezkoa da gunearen errendimendua hobetzeko, bereziki zure guneak hizkuntza erromantzeak ez direnak onartzen baditu.';
@@ -789,22 +790,22 @@ $string['minpasswordnonalphanum'] = 'Karaktere alfanumerikorik ez';
 $string['minpasswordupper'] = 'Letra larriak';
 $string['misc'] = 'Bestelakoak';
 $string['mnetrestore_extusers'] = '<strong>Oharra:</strong> Segurtasun-kopia honek Moodle Sareko urrutiko erabiltzaile-kontuak ditu eta prozesuaren zati bezala berreskuratuko dira.';
-$string['mnetrestore_extusers_admin'] = '<strong>Oharra:</strong> Segurtasun-kopia honek Moodle-ren instalazio ezberdin batean du iturburua antza eta Moodle Sareko urrutiko erabiltzaile-kontuak ditu. Berreskuratzeko prozesuan sortutako erabiltzaile guztien Moodle Sareko hostalariekin bat egiten saiatuko gara. Bat ez datozenak automatikoki bihurtuko dira barne-autentifikaziora (mnet-en ordez). Berreskuratzeko logek emango dizute horren berri.';
-$string['mnetrestore_extusers_mismatch'] = '<strong>Oharra:</strong> Segurtasun-kopia honek Moodle-ren instalazio ezberdin batean du iturburua antza eta berreskura ezin daitezkeen Moodle Sareko urrutiko erabiltzaile-kontuak ditu. Ezin da eragiketa hau burutu. Ziur bazaude Moodle instalazio honetan sortu dela, edo beharrezko diren Moodle Sareko hostalari guztiak konfiguratuta daudela ziur bazaude, berreskuratzen saia zaitezke.';
-$string['mnetrestore_extusers_noadmin'] = '<strong>Oharra:</strong> Segurtasun-kopia honek Moodle-ren instalazio ezberdin batean du iturburua eta Moodle Sareko urrutiko erabiltzaile-kontuak ditu. Zuk ez duzu berreskuratze-mota hau burutzeko baimenik. Jarri harremanetan guneko kudeatzailearekin edo, bestela, berreskuratu ikastaro hau erabiltzaileen informaziorik (moduluak, fitxategiak...) gabe.';
+$string['mnetrestore_extusers_admin'] = '<strong>Oharra:</strong> Segurtasun-kopia honek Moodleren instalazio ezberdin batean du iturburua antza eta Moodle Sareko urrutiko erabiltzaile-kontuak ditu. Berreskuratzeko prozesuan sortutako erabiltzaile guztien Moodle Sareko hostalariekin bat egiten saiatuko gara. Bat ez datozenak automatikoki bihurtuko dira barne-autentifikaziora (mnet-en ordez). Berreskuratzeko logek emango dizute horren berri.';
+$string['mnetrestore_extusers_mismatch'] = '<strong>Oharra:</strong> Segurtasun-kopia honek Moodleren instalazio ezberdin batean du iturburua antza eta berreskura ezin daitezkeen Moodle Sareko urrutiko erabiltzaile-kontuak ditu. Ezin da eragiketa hau burutu. Ziur bazaude Moodle instalazio honetan sortu dela, edo beharrezko diren Moodle Sareko hostalari guztiak konfiguratuta daudela ziur bazaude, berreskuratzen saia zaitezke.';
+$string['mnetrestore_extusers_noadmin'] = '<strong>Oharra:</strong> Segurtasun-kopia honek Moodleren instalazio ezberdin batean du iturburua eta Moodle Sareko urrutiko erabiltzaile-kontuak ditu. Zuk ez duzu berreskuratze-mota hau burutzeko baimenik. Jarri harremanetan guneko kudeatzailearekin edo, bestela, berreskuratu ikastaro hau erabiltzaileen informaziorik (moduluak, fitxategiak...) gabe.';
 $string['mnetrestore_extusers_switchuserauth'] = '{$a->username} urrutiko Moodle Sareko erabiltzailea ({$a->mnethosturl}-tik datorrena) {$a->auth} lokalean autentifikatutako erabiltzaile bihurtu da.';
-$string['mobilenotconfiguredwarning'] = 'Moodle app-a ez dago gaituta';
+$string['mobilenotconfiguredwarning'] = 'Moodle aplikazioa ez dago gaituta';
 $string['modchooserdefault'] = 'Lehenetsitako jarduera-hautatzailea';
 $string['modeditdefaults'] = 'Lehenetsitako balioak jardueren ezarpenetarako';
 $string['modsettings'] = 'Kudeatu jarduerak';
 $string['modulesecurity'] = 'Moduluaren segurtasuna';
-$string['moodleapp'] = 'Moodle app-a';
-$string['moodleapp_help'] = '<p>Moodle gune batean kontua baduzu, gailu mugikorretan zure ikastaro guztietarako sarbidea izan dezakezu mugikorretarako gure doako app-a erabiliz.</p>
-<a href="https://moodle.com/mobile-app">Eskuratu Moodle app-a</a>';
-$string['moodlebrandedapp'] = 'Moodle markako app-a';
-$string['moodlebrandedapp_help'] = '<p>Moodle markako app-ak gure Moodle-rako app librearen funtzionalitate guztiak ditu, zure marka pertsonalizatua ere jasoz.</p>
-<a href="https://moodle.com/branded-app">Moodle markako app-ari buruz</a>';
-$string['moodlebrandedappreference'] = 'Bestela, lortu <a href="https://moodle.com/branded-app/">Moodle markako app-a</a> zure marka pertsonalizatuarekin.';
+$string['moodleapp'] = 'Moodle aplikazioa';
+$string['moodleapp_help'] = '<p>Moodle gune batean kontua baduzu, gailu mugikorretan zure ikastaro guztietarako sarbidea izan dezakezu mugikorretarako gure doako aplikazioa erabiliz.</p>
+<a href="https://moodle.com/mobile-app">Eskuratu Moodle aplikazioa</a>';
+$string['moodlebrandedapp'] = 'Moodle markako aplikazioa';
+$string['moodlebrandedapp_help'] = '<p>Moodle markako aplikazioak gure Moodlerako aplikazio librearen funtzionalitate guztiak ditu, zure marka pertsonalizatua ere jasoz.</p>
+<a href="https://moodle.com/branded-app">Moodle markako aplikazioari buruz</a>';
+$string['moodlebrandedappreference'] = 'Bestela, lortu <a href="https://moodle.com/branded-app/">Moodle markako aplikazioa</a> zure marka pertsonalizatuarekin.';
 $string['moodleorghubname'] = 'Moodle';
 $string['moodlepartners'] = 'Moodle Bazkideak';
 $string['moodlepartners_help'] = '<p>Moodle Bazkideak Moodle HQk egiaztatutako zerbitzu-hornitzaileak dira, zure erakundearen online hezkuntza-ingurunerako goi mailako kalitateko Moodle-zerbitzuak eman ditzaketenak.</p>
@@ -840,7 +841,7 @@ $string['neverdeleteruns'] = 'Inoiz ez ezabatu exekuzioak';
 $string['newestdocindexed'] = 'Indexatutako dokumentu berriena';
 $string['nobookmarksforuser'] = 'Ez duzu inongo markarik.';
 $string['nodatabase'] = 'Ez dago datu-baserik';
-$string['nohttpsformobilewarning'] = 'HTTPS ziurtagiri onargarri batekin gaitzea gomendatzen da. Moodle app-ak lehenik konexio segurua erabiltzen saiatuko da beti.';
+$string['nohttpsformobilewarning'] = 'HTTPS ziurtagiri onargarri batekin gaitzea gomendatzen da. Moodle aplikazioak lehenik konexio segurua erabiltzen saiatuko da beti.';
 $string['nomissingstrings'] = 'Ez da katerik falta';
 $string['none'] = 'Bat ere ez';
 $string['nonewsettings'] = 'Eguneraketa honetan ez da ezarpen berririk egin.';
@@ -849,7 +850,7 @@ $string['noreplyaddress'] = 'Ez-erantzun helbidea';
 $string['noreplydomain'] = 'Ez-erantzun eta domeinua';
 $string['noreplydomaindetail'] = 'Ezarpenak ez-erantzun eta konfiguratutako domeinuetarako';
 $string['noresults'] = 'Ez da emaitzarik aurkitu.';
-$string['noroles'] = 'Ez dago rolik';
+$string['noroles'] = 'Rolik ez';
 $string['nosupportedlogstore'] = 'Onartzen ez den erregistro-biltegia aurkitu da';
 $string['notifications'] = 'Jakinarazpenak';
 $string['notifyloginfailures'] = 'Bidali posta elektronikoz huts egindako sarrerak hona:';
@@ -862,7 +863,7 @@ $string['oauthrefreshtokenexpiredshort'] = 'Zure {$a->siteurl} guneko {$a->issue
 $string['onlynoreply'] = 'Soilik ez-erantzun helbide batetik denean';
 $string['opcacherecommended'] = 'PHP opcode cacheak errendimendua hobetzen du eta memoria eskakizunak murrizten ditu. OPcache hedapena gomendatzen da eta erabat sostengatzen da.';
 $string['opensslrecommended'] = 'Aukerako OpenSSL liburutegia oso da gomendagarria - Moode Sarearen funtzionamendua gaitzen du.';
-$string['opensslrequired'] = 'PHPko OpenSSL hedapena orain beharrezkoa da Moodle-n zerbitzu kriptografiko sendoagoak eskaintzeko.';
+$string['opensslrequired'] = 'PHPko OpenSSL hedapena orain beharrezkoa da Moodlen zerbitzu kriptografiko sendoagoak eskaintzeko.';
 $string['opentogoogle'] = 'Google-ri zabaldu';
 $string['optionalmaintenancemessage'] = 'Mantenuari buruzko aukerazko mezua';
 $string['order1'] = 'Lehena';
@@ -895,7 +896,7 @@ $string['pathtopsqlinvalid'] = 'psql-rako bideak ez du balio: akatsa du edo ezin
 $string['pathtopython'] = 'Python-erako  bidea';
 $string['pathtopythondesc'] = 'Zure Python exekutagarri bitarrerako bidea (bai Python 2 zein Pyhton 3 onartzen dira).';
 $string['pathtosassc'] = 'SassCerako bidea';
-$string['pathtosassc_help'] = 'SassC bitarraren kokapena zehaztuta SASS konpilatzailearen Moodle-ren PHP inplementaziotik SassC-ra aldatuko du. Informazio gehiagorako https://github.com/sass/sassc ikusi ezazu.';
+$string['pathtosassc_help'] = 'SassC bitarraren kokapena zehaztuta SASS konpilatzailearen Moodleren PHP inplementaziotik SassC-ra aldatuko du. Informazio gehiagorako https://github.com/sass/sassc ikusi ezazu.';
 $string['pcreunicodewarning'] = 'Unicode karaktereekin bateragarria den PHPko PCRE hedapena instalatzea irmoki gomendatzen da.';
 $string['perfdebug'] = 'Errendimendu-informazioa';
 $string['performance'] = 'Errendimendua';
@@ -995,7 +996,7 @@ $string['proxyport'] = 'Proxy portua';
 $string['proxytype'] = 'Proxy mota';
 $string['proxyuser'] = 'Proxy erabiltzaile-izena';
 $string['purgecaches'] = 'Ezabatu cache guztiak';
-$string['purgecachesconfirm'] = 'Moodle-k katxean gorde ditzake itxura, javascript, hizkuntza-kate, iragazitako testu, RSS jario eta beste datu asko. Datu horiek zerbitzarian arazteak bezeroen nabigatzaileak informazioa eguneratzera behartuko ditu eta ziurtatu egingo duzu, horrela, erabiltzaileek azken aldaketak dituen informazioa ikusiko dutela. Hau egiteak ez dakar inongo arriskurik, baina hasieran gunea makalago dabilela eman dezake, zerbitzariak eta bezeroek informazioa berriz eguneratu eta datuak katxean gorde arte.';
+$string['purgecachesconfirm'] = 'Moodlek katxean gorde ditzake itxura, javascript, hizkuntza-kate, iragazitako testu, RSS jario eta beste datu asko. Datu horiek zerbitzarian arazteak bezeroen nabigatzaileak informazioa eguneratzera behartuko ditu eta ziurtatu egingo duzu, horrela, erabiltzaileek azken aldaketak dituen informazioa ikusiko dutela. Hau egiteak ez dakar inongo arriskurik, baina hasieran gunea makalago dabilela eman dezake, zerbitzariak eta bezeroek informazioa berriz eguneratu eta datuak katxean gorde arte.';
 $string['purgecachesfinished'] = 'Cache guztiak ezabatu dira.';
 $string['purgecachesnoneselected'] = 'Aukeratu ezabatzeko cache baten bat';
 $string['purgecachespage'] = 'Ezabatu cacheak';
@@ -1025,18 +1026,18 @@ $string['registermoodlenet'] = '<p>Zurekin harremanetan egotea eta zure Moodle g
 <li>Gure mundu mailako komunitatearen <a href="https://moodle.net/stats/">Moodle estatistikei</a> ekarpena egingo diezu, Moodle eta gure komunitateen guneak hobetzen laguntzen diguna.</li>
 <li>Nahi baduzu, gunea zure herrialdeko <a href="https://moodle.net/sites/">erregistratutako Moodle guneen zerrendan</a> gehitu daiteke ere.</li></ul>';
 $string['registermoodleorg'] = 'Zure gunea erregistratzean';
-$string['registermoodleorgli1'] = 'Bolumen gutxiko posta-zerrenda batean gehituko zaizu jakinarazpen garrantzitsuak jasotzeko, hala nola segurtasun-abisuak eta Moodle-ko bertsio berrien kaleratzea.';
+$string['registermoodleorgli1'] = 'Bolumen gutxiko posta-zerrenda batean gehituko zaizu jakinarazpen garrantzitsuak jasotzeko, hala nola segurtasun-abisuak eta Moodleko bertsio berrien kaleratzea.';
 $string['registermoodleorgli2'] = 'Zure gunearen estatistikak mundu osoko Moodle komunitatera gehituko dira {$a}.';
 $string['registerwithmoodleorg'] = 'Erregistratu zeure gunea';
 $string['registration'] = 'Erregistroa';
 $string['registration_help'] = 'Erregistratuz gero:
 
 * Segurtasun-abisuak jasoko dituzu
-* Zure guneko Moodle app-arentzako push jakinarazpenak gaitu ahal izango dituzu
+* Zure guneko Moodle aplikazioarentzako push jakinarazpenak gaitu ahal izango dituzu
 * Mundu mailako gure Moodle komunitatearen estatistikei ekarpena egingo diezu';
 $string['registrationwarning'] = 'Zure gunea oraindik ez dago erregistratuta.';
 $string['registrationwarningcontactadmin'] = 'Zure gunea oraindik ez dago erregistratuta. Mesedez jarri harremanetan zure kudeatzailearekin.';
-$string['releasenoteslink'] = 'Moodle-ren bertsio honi buruzko informazioa nahi baduzu, mesedez begiratu <a target="_new" href="{$a}">Bertsio oharrak</a>';
+$string['releasenoteslink'] = 'Moodleren bertsio honi buruzko informazioa nahi baduzu, mesedez begiratu <a target="_new" href="{$a}">Bertsio-kaleratze oharrak</a>';
 $string['rememberusername'] = 'Gogoratu erabiltzaile-izena';
 $string['rememberusername_desc'] = 'Gaitu erabiltzaileen cookie iraunkorrak gorde nahi badituzu erabiltzailea barruan dagoen bitartean. Cookie iraunkorrak pribatutasun arazo gisa ikusiak izan daitezke baimenik gabe erabiliz gero.';
 $string['reportsmanage'] = 'Kudeatu txostenak';
@@ -1049,6 +1050,7 @@ $string['restorecourse'] = 'Berreskuratu ikastaroa';
 $string['restorernewroleid'] = 'Berreskuratze rola ikastaroetan';
 $string['restorernewroleid_help'] = 'Erabiltzaileak aurretik ez badu berreskuratu berri duen ikastaroa kudeatzeko baimenik, erabiltzaileari automatikoki rol hau esleitzen zaio eta behar izanez gero matrikulatzen zaio. Aukeratu ‘Bat ere ez’ ez baduzu nahi ikastaroak berreskuratzen dutenek berreskuratutako ikastaro guztiak kudeatzeko baimenik izatea.';
 $string['reverseproxy'] = 'Alderantzizko proxy-a';
+$string['reverseproxyignore'] = 'Ezikusi alderantzizko proxy-ak';
 $string['riskconfig'] = 'Erabiltzaileek gunearen konfigurazioa eta ezarpenak alda litzakete';
 $string['riskconfigshort'] = 'Ezarpen-arriskua';
 $string['riskdataloss'] = 'Erabiltzaileek eduki edo informazio atal asko desegin dezakete';
@@ -1083,7 +1085,7 @@ $string['searchindextime'] = 'Indexatzearen denbora-muga';
 $string['searchindextime_desc'] = 'Eduki berri asko indexatzean programatutako zeregina denbora tarte hau igaro ondoren geratuko da. Zeregina exekutatzen den hurrengo aldian jarraituko du.';
 $string['searchindexupdated'] = 'Bilatzailearen edukiak eguneratu dira';
 $string['searchindexwhendisabled'] = 'Indexatu desgaituta dagoenean';
-$string['searchindexwhendisabled_desc'] = 'Programatutako zereginak indexak eraikitzea ahalbidetzen du bilaketak desgaituta egonda ere. Hau erabilgarria da index-ak eraiki nahi badituzu ikasleei bilatzeko aukera eman aurretik.';
+$string['searchindexwhendisabled_desc'] = 'Programatutako zereginak indizeak eraikitzea ahalbidetzen du bilaketak desgaituta egonda ere. Hau erabilgarria da ikasleei bilatzeko aukera eman aurretik indizeak eraiki nahi badituzu.';
 $string['searchinsettings'] = 'Bilatu ezarpenetan';
 $string['searchlastrun'] = 'Azken exekutatzea (denbora, dokumentu kopurua, erregistro kopurua, ezikusitakoen kopurua)';
 $string['searchnotavailable'] = 'Bilaketa ez dago eskuragarri';
@@ -1103,7 +1105,7 @@ $string['selecttheme'] = 'Aukeratu itxura {$a} gailurako';
 $string['server'] = 'Zerbitzaria';
 $string['serverchecks'] = 'Zerbitzariaren egiaztatzeak';
 $string['serverlimit'] = 'Zerbitzariaren muga';
-$string['sessionautostartwarning'] = '<p>Ezarpenetan garrantzizko errorea aurkitu da. Mesedez, jakinarazi zerbitzariaren kudatzaileari.</p><p> Ondo aritzeko, Moodle-k beharrezkoa du kudeatzaileak  PHP ezarpenak aldatzea.</p><p><code>session.auto_start</code> -k honela behar du egon ezarrita: <code>off</code>.</p><p>Ezarpen hau zerbitzariko <code>php.ini</code> editatuz, Apache/IIS <br /> ezarpenen bitartez edo <code>.htaccess</code> fitxategiarekin kontrolatzen da.</p>';
+$string['sessionautostartwarning'] = '<p>Ezarpenetan garrantzizko errorea aurkitu da. Mesedez, jakinarazi zerbitzariaren kudatzaileari.</p><p> Ondo aritzeko, Moodlek beharrezkoa du kudeatzaileak  PHP ezarpenak aldatzea.</p><p><code>session.auto_start</code> -k honela behar du egon ezarrita: <code>off</code>.</p><p>Ezarpen hau zerbitzariko <code>php.ini</code> editatuz, Apache/IIS <br /> ezarpenen bitartez edo <code>.htaccess</code> fitxategiarekin kontrolatzen da.</p>';
 $string['sessioncookie'] = 'Cookie-aren aurrizkia';
 $string['sessioncookiedomain'] = 'Cookie-n domeinua';
 $string['sessioncookiepath'] = 'Cookie-bidea';
@@ -1117,7 +1119,7 @@ $string['showcommentscount'] = 'Erakutsi iruzkin-kopurua';
 $string['showdetails'] = 'Erakutsi xehetasunak';
 $string['showuseridentity'] = 'Erakutsi erabiltzailearen identitatea';
 $string['showuseridentity_desc'] = 'Erabiltzaileak aukeratu edo bilatzean, eta erabiltzaileen zerrenda erakusterakoan, eremu hauek euren izen osoarekin batera erakutsi daitezke. Eremuok soilik moodle/site:viewuseridentity gaitasuna duten erabiltzaileei erakusten zaizkie; modu lehenetsian, irakasle eta kudeatzaileei. (Aukera honek zentzua du zure erakundeak beharrezkoak diren eremu bat edo bi aukeratzen badituzu.)';
-$string['simplexmlrequired'] = 'Moodle-k orain beharrezkoa du SimpleXML PHP hedapena';
+$string['simplexmlrequired'] = 'Moodlek orain beharrezkoa du SimpleXML PHP hedapena';
 $string['sitemailcharset'] = 'Karaktere-multzoa';
 $string['sitemaintenance'] = 'Gune hau mantenuan dago eta oraingoz ez da eskuragarria';
 $string['sitemaintenancemode'] = 'Mantenu-modua';
@@ -1156,7 +1158,7 @@ $string['sort_shortname'] = 'Ikastaroaren izen laburra';
 $string['sort_sortorder'] = 'Sailkatze-ordena';
 $string['spellengine'] = 'Motor ortografikoa';
 $string['spelllanguagelist'] = 'Hizkuntza-zerrenda';
-$string['splrequired'] = 'Moodle-k orain SPL PHP hedapena beharrezkoa du.';
+$string['splrequired'] = 'Moodlek orain SPL PHP hedapena beharrezkoa du.';
 $string['stats'] = 'Estatistikak';
 $string['statsfirstrun'] = 'Prozesamenduaren gehienezko tartea';
 $string['statsmaxruntime'] = 'Egikaritzeko gehienezko denbora';
@@ -1206,7 +1208,7 @@ $string['taskgradecron'] = 'Kalifikazio-liburuaren atzeko planoko prozesatzea';
 $string['tasklegacycron'] = 'Pluginen zaharkitutako cron-aren prozesatzea';
 $string['taskmessagingcleanup'] = 'Mezularitzaren atzeko planoko prozesatzea';
 $string['taskpasswordresetcleanup'] = 'Garbitu pasahitza berrezartzeko saiakerak';
-$string['taskplagiarismcron'] = 'Plagio-pluginen zaharkitutako cron-aren atzeko planoaren prozesatzea';
+$string['taskplagiarismcron'] = 'Plagio-pluginen zaharkitutako cron-aren atzeko planoko prozesatzea';
 $string['taskportfoliocron'] = 'Portfolio-pluginen atzeko planoko prozesatzea';
 $string['taskquestioncron'] = 'Galdera-motorraren atzeko planoko prozesatzea';
 $string['taskrefreshsystemtokens'] = 'Freskatu zerbitzu-kontuen OAuth tokenak';
@@ -1240,7 +1242,7 @@ $string['timezonephpdefault'] = 'Lehenetsitako PHP ordu eremua ({$a})';
 $string['timezoneserver'] = 'Zerbitzariaren ordu eremua ({$a}) ({$a})';
 $string['tlswarning'] = 'Ez da TLSv1.2 onartzen duen PHP/cURL hedapenik aurkitu. Baliteke zerbitzu batzuk ez funtzionatzea. Zure TLS liburutegiak eguneratzea irmoki gomendatzen da.';
 $string['tokenduration'] = 'Erabiltzaileek sortutako token-en iraupena';
-$string['tokenduration_desc'] = 'Erabiltzaile batek sortutako web-zerbitzu baten token-a (mobile app-aren bidez adibidez) baliozkoa izango den denbora.';
+$string['tokenduration_desc'] = 'Erabiltzaile batek sortutako web-zerbitzu baten token-a (mobile aplikazioaren bidez adibidez) baliozkoa izango den denbora.';
 $string['tokenizerrecommended'] = 'PHP Tokenizer aukerako hedapena instalatzea gomendagarria da - Moodle Sarearen funtzionamendua hobetzen du.';
 $string['tools'] = 'Kudeaketarako tresnak';
 $string['toolsmanage'] = 'Kudeatu kudeaketarako tresnak';
@@ -1266,7 +1268,7 @@ $string['unsuspenduser'] = 'Aktibatu erabiltzailearen kontua';
 $string['updateaccounts'] = 'Eguneratu dauden kontuak';
 $string['updateautocheck'] = 'Bilatu eskuragai dauden eguneraketak automatikoki';
 $string['updateautocheck_desc'] = 'Gaituz gero, zure guneak Moodle nahiz plugin gehigarrietarako eskuragai dauden eguneraketak automatikoki bilatuko ditu.';
-$string['updateavailable'] = 'Bada Moodle-ren bertsio berriago bat eskuragarri!';
+$string['updateavailable'] = 'Bada Moodleren bertsio berriago bat eskuragarri!';
 $string['updateavailabledetailslink'] = 'Ikusi {$a->url} xehetasun gehiago izateko';
 $string['updateavailableforplugin'] = 'Eskuragarri dago zure hainbat pluginen bertsio berriagoa!';
 $string['updateavailableinstall'] = 'Instalatu eguneraketa hau';
@@ -1282,9 +1284,9 @@ $string['updateminmaturity'] = 'Beharrezko kode-heldutasuna';
 $string['updateminmaturity_desc'] = 'Ohartarazi eskuragai dauden eguneraketez soilik baldin eta kodeak gutxienez aukeratutako heldutasun-maila badauka. Kodearen heldutasun-maila zehazten ez duten pluginen eguneraketez beti informatzen da ezarpen honi jaramonik egin gabe.';
 $string['updatenotificationfooter'] = 'Zure {$a->siteurl} Moodle gunea eskuragarri dauden eguneraketak automatikoki bilatzeko dago konfiguratuta. Gunearen kudeatzaile gisa jasotzen duzu mezu hau. Eskuragarri dauden eguneraketak automatikoki bilatzea desgaitu dezakezu Gunearen Kudeaketa / Zerbitzaria / Eguneraketa jakinarazpenak atalean, eta bestela mezu honen bidalketa pertsonalizatu dezakezu zure hobespenen orria erabilita.';
 $string['updatenotifications'] = 'Eguneraketen jakinarazpenak';
-$string['updatenotificationsubject'] = 'Moodle-n hainbat eguneraketa daude eskuragarri ({$a->siteurl})';
-$string['updatenotifybuilds'] = 'Ohartarazi hobekuntzez';
-$string['updatenotifybuilds_desc'] = 'Gaituz gero, eskuragai dauden Moodle-ren eguneraketez ere informatuko da instalatutako bertsiorako hobekuntzak egotekotan. Normalean hobekuntzak astero argitaratzen dira. Desgaituz gero, soilik eskuragarri dauden eguneraketez informatuko da Moodle-ren bertsio berriagoak argitaratzen direnean. Ezarpen honek ez du eraginik pluginen eguneraketen bilaketan.';
+$string['updatenotificationsubject'] = 'Moodlen hainbat eguneraketa daude eskuragarri ({$a->siteurl})';
+$string['updatenotifybuilds'] = 'Ohartarazi "build" berrietaz';
+$string['updatenotifybuilds_desc'] = 'Gaituz gero, eskuragarri dauden Moodleren eguneraketez ere informatuko da instalatutako bertsiorako "build" berri bat dagoenean. "Build" bat Moodle bertsio baterako hobekuntza jarraitua da, eta astero argitaratu ohi dira. Desgaituz gero, eskuragarri dauden eguneraketez soilik Moodleren bertsio berriagoak argitaratzen direnean informatuko da. Ezarpen honek ez du eraginik pluginen eguneraketen bilaketan.';
 $string['upgradeerror'] = 'Errore ezezaguna {$a->plugin} {$a->version} bertsiora eguneratzean, ezin da aurrera egin.';
 $string['upgradeforumread'] = 'Moodle 1.5en foroetara bidalitako irakurritako eta irakurri gabeko mezuen jarraipena egiteko funtzionalitate berria gehitu da.<br />Funtzionalitate hori erabiltzeko, <a href="{$a}">zure taulak eguneratu behar dituzu</a>.';
 $string['upgradeforumreadinfo'] = 'Moodle 1.5en foroetara bidalitako irakurritako eta irakurri gabeko mezuen jarraipena egiteko funtzionalitate berria erantsi da. Funtzionalitate hori erabiltzeko, zure taulak eguneratu behar dituzu mezuen jarraipenaren informazio osoarekin. Gunearen tamainaren arabera, honek luze jo dezake (orduak) eta datu-basearen erabilera astuna ekarri. Hori dela eta, hobe da lasaitasun une batea egitea. Hala ere, eguneratzean zehar guneak martxan jarraituko du eta erabiltzaileak ez dira kaltetuko. Behin prozesua hasita, bukatzen utzi beharko zenuke (ad., nabigatzailearen leihoa irekita utzi). Hala ere, leihoa itxi eta prozesua eteten baduzu, ez zaitez kezkatu, beti ere berriro has zaitezke.<br /><br />Prozesua orain hasi nahi al duzu?';
@@ -1294,29 +1296,29 @@ $string['upgradelogs'] = 'Funtzionalitate osoa lortzeko, zure erregistro zaharra
 $string['upgradelogsinfo'] = 'Duela gutxi erregistroak gordetzeko moduan aldaketak egin dira. Zure erregistro zaharrak jardueraren arabera sailkatuta ikusteko, erregistro horiek eguneratu behar dira. Tamainaren arabera prozesuak luze jo dezake (ad., ordu batzuk) datu-basean behin eta berriro kontsultako beharko baita. bukatzen utzi beharko zenuke (ad., nabigatzailearen leihoa irekita utzi). Hala ere, leihoa itxi eta prozesua eteten baduzu, ez zaitez kezkatu, beti ere berriro has zaitezke.<br /><br />Prozesua orain hasi nahi al duzu?';
 $string['upgradepluginsfirst'] = 'Gomendagarria da lehenengo eskuragarri dauden eguneraketa guztiak instalatzea';
 $string['upgradepluginsinfo'] = 'Pluginak eguneratzen';
-$string['upgradepluginsinfo_help'] = 'Zure plugin batzuetarako eguneraketak daude eskuragai. Moodle-ren datu-basea eguneratu aurretik horiek guztiak instalatu beharko zenituzke. Zure guneak eguneraketa automatikoak onartzen ez baditu, pluginen bertsio berriak jaitsi eta zure zerbitzarian eskuz instalatu beharko dituzu.';
+$string['upgradepluginsinfo_help'] = 'Zure plugin batzuetarako eguneraketak daude eskuragai. Moodleko datu-basea eguneratu aurretik horiek guztiak instalatu beharko zenituzke. Zure guneak eguneraketa automatikoak onartzen ez baditu, pluginen bertsio berriak jaitsi eta zure zerbitzarian eskuz instalatu beharko dituzu.';
 $string['upgradesettings'] = 'Ezarpen berriak';
-$string['upgradesettingsintro'] = 'Beheragoko ezarpenak Moodle-ren azken eguneraketan gehitu ziren. Egin beharrezko aldaketak lehenetsitako balioetan eta ondoren egin klik orriaren amaierako \'Gorde aldaketak\' botoiari.';
+$string['upgradesettingsintro'] = 'Beheragoko ezarpenak Moodleren azken eguneraketan gehitu ziren. Egin beharrezko aldaketak lehenetsitako balioetan eta ondoren egin klik orriaren amaierako \'Gorde aldaketak\' botoiari.';
 $string['upgradestalefiles'] = 'Moodle bertsio nahastuak atzeman dira. Eguneraketak ezin du jarraitu.';
-$string['upgradestalefilesinfo'] = 'Moodle-ren eguneraketa-prozesua gelditu da Moodle-ren karpetan Moodle-ren gutxienez bi bertsio nagusiren PHP scriptak atzeman direlako.
+$string['upgradestalefilesinfo'] = 'Moodleren eguneraketa-prozesua gelditu da Moodleren direktorioan gutxienez Moodleren bi bertsio nagusiren PHP scriptak atzeman direlako.
 
-Hori beranduago arazo-iturria izan daitekeenez, jarraitu aurretik Moodle-ren karpetak Moodle-ren bertsio bakarreko fitxategiak dauzkala ziurtatu behar duzu.
+Hori beranduago arazo-iturria izan daitekeenez, jarraitu aurretik Moodleren direktorioak Moodleren bertsio bakarreko fitxategiak dauzkala ziurtatu behar duzu.
 
-Zure Moodle-ren karpeta garbitzeko hau egiteko aholkatzen dizugu:
+Zure Moodleren direktorioa garbitzeko hau egiteko aholkatzen dizugu:
 
-* Berrizendatu oraingo Moodle-ren karpeta, adibidez "moodle_old" jarriz.
-* Sortu Moodle karpeta berri bat jaitsitako Moodle pakete estandar baten edo Moodle Git biltegitik jaitsitakoaren fitxategiekin.
-* Mugitu jatorrizko config.php fitxategia eta plugin ezestandarrak  "moodle_old" karpetatik Moodle karpeta berrira.
+* Berrizendatu oraingo Moodleren direktorioa, adibidez "moodle_old" jarriz.
+* Sortu Moodle direktorioa berri bat jaitsitako Moodle pakete estandar baten edo Moodle Git biltegitik jaitsitakoaren fitxategiekin.
+* Mugitu jatorrizko config.php fitxategia eta plugin ezestandarrak  "moodle_old" direktoriotik Moodle direktorio berrira.
 
-Moodle karpeta garbi dagoenean, freskatu orri hau eguneraketa-prozesuak jarrai dezan.
+Moodle direktorioa garbi dagoenean, freskatu orri hau eguneraketa-prozesuak jarrai dezan.
 
 Abisua askotan gertatzen da Moodle estandar paketea aurreko bertsio baten gainean deskonprimatzeagatik. Azpibertsioekin hori prozedura egokia izan arren, ez da inola ere bertsio nagusiekin egin behar.
 
 Abisua ere gerta daiteke amaitu gabeko Git biltegiko azterketa edo eguneraketagatik. Kasu horretan nahikoa izango da itxarotea eragiketa amaitu arte, edo agian garbiketa-komando egokia erabiltzea eta berriro saiatzea.
 
 Eguneraketako dokumentazioan informazio gehiago aurkituko duzu: <a href="{$a}">{$a}</a>.';
-$string['upgradestart'] = 'Eguneratu orain Moodle-ren datu-basea';
-$string['upgradesure'] = '<p>Moodle-ko zure fitxategiak aldatu dira, eta zure zerbitzaria bertsio honetara eguneratzear zaude:</p>
+$string['upgradestart'] = 'Eguneratu orain Moodleko datu-basea';
+$string['upgradesure'] = '<p>Moodleko zure fitxategiak aldatu dira, eta zure zerbitzaria bertsio honetara eguneratzear zaude:</p>
 <p><b>{$a}</b></p>
 <p>Hori egin eta gero, ezingo duzu atzera jo. Kontuan izan prozesu honek denbora luzea eraman dezakeela.</p>
 <p>Ziur zaude zerbitzari hau bertsio horretara eguneratu nahi duzula?</p>';
@@ -1350,4 +1352,4 @@ $string['webproxy'] = 'Web proxya';
 $string['webproxyinfo'] = 'Ondoko aukerak bete zure Moodle zerbitzariak zuzenean interneterako sarbidea ez badu. Beharrezkoa da ingunearen datuak, hizkuntza-paketeak, RSS jaioak, ordu eremuak... jaitsi ahal izateko. <br /><em>Oso gomendagarria da PHP cURL hedapena.</em>\'*;';
 $string['xmlrpcrecommended'] = 'XMLRPC hedapena erabilgarria da web-zerbitzuetarako eta Moodle sarerako.';
 $string['yuicomboloading'] = 'YUI combo kargatzen';
-$string['ziprequired'] = 'Moodle-k orain Zip PHP hedapena behar du. Dagoeneko ez dira info-ZIP bitarrak erabiltzen ezta PclZip liburutegia ere.';
+$string['ziprequired'] = 'Moodlek orain Zip PHP hedapena behar du. Dagoeneko ez dira info-ZIP bitarrak erabiltzen ezta PclZip liburutegia ere.';

@@ -46,4 +46,4 @@ $string['privacy:metadata:textpurpose'] = 'Le texte remis pour cette remise du d
 $string['privacy:path'] = 'Texte remis';
 $string['wordlimit'] = 'Nombre maximal de mots';
 $string['wordlimitexceeded'] = 'Le nombre maximal de mots pour ce devoir est de {$a->limit} mots, alors que vous essayez de remettre un devoir de {$a->count} mots. Veuillez retravailler votre devoir et essayer à nouveau.';
-$string['wordlimit_help'] = 'Si les travaux en format texte sont activés, ce réglage indique le nombre maximal de mots que les étudiants sont autorisés à remettre.';
+$string['wordlimit_help'] = 'Si les travaux en format texte sont activés, ce réglage indique le nombre maximal de mots que les étudiants peuvent remettre.';

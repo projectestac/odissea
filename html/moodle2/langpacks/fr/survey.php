@@ -151,7 +151,7 @@ $string['collesaintro'] = 'L\'objet de cette consultation est de nous aider à c
 
 Chacune des 24 affirmations ci-dessous vous interroge sur votre expérience dans ce cours.
 
-Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucune influence sur votre note finale.
+Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucun effet sur votre note finale.
 
 Vos réponses soigneusement réfléchies nous aideront à améliorer la façon de présenter ce cours.
 
@@ -161,7 +161,7 @@ $string['collesapintro'] = 'L\'objet de cette consultation est de nous aider à 
 
 Chacune des 24 affirmations ci-dessous vous demande de comparer votre expérience <strong>idéale</strong> (désirée) et <strong>réelle</strong> (vécue) dans ce cours.
 
-Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucune influence sur votre note finale.
+Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucun effet sur votre note finale.
 
 Vos réponses soigneusement réfléchies nous aideront à améliorer la façon de présenter ce cours.
 
@@ -184,7 +184,7 @@ $string['collespintro'] = 'L\'objet de cette consultation est de nous aider à c
 
 Chacune des 24 affirmations ci-dessous vous interroge sur votre expérience <strong>idéale</strong> (désirée) dans ce cours.
 
-Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucune influence sur votre note finale.
+Il n\'y a pas de « bonne » ou de « mauvaise » réponse ; nous ne nous intéressons qu\'à votre opinion. Soyez assuré que vos réponses seront traitées avec le maximum de confidentialité, et qu\'elles n\'auront aucun effet sur votre note finale.
 
 Vos réponses soigneusement réfléchies nous aideront à améliorer la façon de présenter ce cours.
 

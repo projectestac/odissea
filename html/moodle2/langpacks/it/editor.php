@@ -121,6 +121,7 @@ $string['popupeditor'] = 'Editor in nuova finestra';
 $string['preformatted'] = 'Preformattato';
 $string['preview'] = 'Anteprima';
 $string['privacy:metadata:preference:htmleditor'] = 'Preferenze dell\'editor di testo.';
+$string['privacy:preference:htmleditor'] = 'Editor preferito per redigere testi HTML: {$a}';
 $string['properties'] = 'Proprietà';
 $string['redo'] = 'Ripeti ultima azione';
 $string['regularexpressions'] = 'Utilizza espressioni regolari';

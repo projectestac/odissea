@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['application/epub_zip'] = 'Ηλεκτρονικό βιβλίο EPUB';
+$string['application/epub_zip'] = 'Ηλε.βιβλίο EPUB';
 $string['application/json'] = 'Κείμενο {$a->MIMETYPE2}';
 $string['application/msword'] = 'Έγγραφο Word';
 $string['application/pdf'] = 'Έγγραφο PDF';
@@ -34,14 +34,14 @@ $string['application/vnd.ms-excel'] = 'Υπολογιστικό φύλλο Excel
 $string['application/vnd.ms-excel.sheet.macroEnabled.12'] = 'Βιβλίο εργασίας με δυνατότητα μακροεντολών Excel 2007';
 $string['application/vnd.ms-powerpoint'] = 'Παρουσίαση Powerpoint';
 $string['application/vnd.oasis.opendocument.spreadsheet'] = 'Υπολογιστικό φύλλο OpenDocument';
-$string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'Πρότυπο φόρμας υπολογιστικού φύλλου OpenDocument';
+$string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'Υπόδειγμα υπολογιστικού φύλλου OpenDocument';
 $string['application/vnd.oasis.opendocument.text'] = 'Έγγραφο κειμένου OpenDocument';
-$string['application/vnd.oasis.opendocument.text-template'] = 'Πρότυπο φόρμας κειμένου OpenDocument';
-$string['application/vnd.oasis.opendocument.text-web'] = 'Πρότυπο φόρμας ιστοσελίδας του OpenDocument';
+$string['application/vnd.oasis.opendocument.text-template'] = 'Υπόδειγμα κειμένου OpenDocument';
+$string['application/vnd.oasis.opendocument.text-web'] = 'Υπόδειγμα ιστοσελίδας του OpenDocument';
 $string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Παρουσίαση του Powerpoint 2007';
 $string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Εμφάνιση διαφανειών PowerPoint 2007';
 $string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Υπολογιστικό φύλλο Excel 2007';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Πρότυπο φόρμας του Excel 2007';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Υπόδειγμα του Excel 2007';
 $string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Έγγραφο Word 2007';
 $string['application/xhtml_xml'] = 'Έγγραφο XHTML';
 $string['application/x-iwork-keynote-sffkey'] = 'iWork Keynote παρουσίαση';

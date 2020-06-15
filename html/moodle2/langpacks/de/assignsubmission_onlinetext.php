@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowonlinetextsubmissions'] = 'Aktiviert';
-$string['default'] = 'Standardmäßig aktiviert';
+$string['default'] = 'Bereits aktiviert';
 $string['default_help'] = 'Die gewählte Methode für die Abgabe von Lösungen wird für alle neuen Aufgaben voreingestellt.';
 $string['enabled'] = 'Texteingabe online';
 $string['enabled_help'] = 'Diese Methode ermöglicht den Teilnehmer/innen die Lösung direkt in einem Texteingabefeld mit Editor einzutragen.';

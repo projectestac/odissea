@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Αποτροπή αυτόματων σύνδεσμων';
+$string['pluginname'] = 'Αποτροπή αυτόματων συνδέσμων';
 $string['privacy:metadata'] = 'Το πρόσθετο «atto_noautolink» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityevent'] = 'Atividade do evento';
+$string['activityevent'] = 'Evento de atividade';
 $string['addevent'] = 'Adicionar eventos';
 $string['advancedoptions'] = 'Opções avançadas';
 $string['allday'] = 'Todo o dia';

@@ -35,4 +35,4 @@ $string['pluginname'] = 'Mota falta da';
 $string['pluginnameadding'] = 'Sisteman instalaturik ez dagoen mota bateko galdera bat gehitzen';
 $string['pluginnameediting'] = 'Mota ezezaguneko galdera editatzen';
 $string['privacy:metadata'] = 'Mota falta da galdera-mota pluginak ez du datu pertsonalik biltzen.';
-$string['warningmissingtype'] = '<b>Galdera hau zure Moodle-n oraindik ere instalatu ez den mota batekoa da.<br />Mesedez, jakinarazi zure Moodle kudeatzaileari.</b>';
+$string['warningmissingtype'] = '<b>Galdera hau zure Moodlen oraindik ere instalatu ez den mota batekoa da.<br />Mesedez, jakinarazi zure Moodle kudeatzaileari.</b>';

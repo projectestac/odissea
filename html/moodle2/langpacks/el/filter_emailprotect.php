@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'Προστασία ηλε.ταχυδρμείου';
+$string['filtername'] = 'Προστασία ηλε.ταχυδρομείου';
 $string['privacy:metadata'] = 'Το πρόσθετο «Προστασία ηλε.ταχυδρομείου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

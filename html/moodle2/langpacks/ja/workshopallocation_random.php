@@ -32,13 +32,13 @@ $string['allocationreuseddetail'] = '評価の再利用: <strong>{$a->reviewerna
 $string['allocationsettings'] = '割り当て設定';
 $string['assessmentdeleteddetail'] = '提出が再割り当てされました: <strong>{$a->reviewername}</strong> は <strong>{$a->authorname}</strong> の評価者ではなくなりました。';
 $string['assesswosubmission'] = '参加者は何も提出せずに評価できる';
-$string['confignumofreviews'] = 'ランダムに割り当てられるデフォルトの送信数です。';
-$string['excludesamegroup'] = '同一グループ内の他のユーザによるレビューを抑制する';
+$string['confignumofreviews'] = 'ランダムに割り当てられるデフォルトの提出数です。';
+$string['excludesamegroup'] = '同一グループ内の他のメンバーによるレビューを抑制する';
 $string['noallocationtoadd'] = '追加できる割り当てはありません。';
 $string['nogroupusers'] = '<p>警告: ワークショップに「可視グループ」または「分離グループ」が設定されていない場合、ユーザが自分に割り当てられた相互評価を実施するためにはこのツールにより少なくとも1つのグループに属する必要があります。グループなしのユーザには新しい自己評価を割り当てることができます。そうでない場合、既存の評価は削除されます。</p>
-<p>現在、これらのユーザはグループに属していません {$a}</p>';
-$string['numofdeallocatedassessment'] = '再割り当て {$a} 提出';
-$string['numofrandomlyallocatedsubmissions'] = '{$a} 件の割り当てのランダム割り当て';
+<p>現在、これらのユーザはグループに属していません: {$a}</p>';
+$string['numofdeallocatedassessment'] = '{$a} 件の評価を再度割り当てる';
+$string['numofrandomlyallocatedsubmissions'] = '{$a} 件の割り当てをランダムに割り当てる';
 $string['numofreviews'] = 'レビュー数';
 $string['numofselfallocatedsubmissions'] = '自己割り当て {$a} 提出';
 $string['numperauthor'] = '提出あたり';

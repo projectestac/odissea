@@ -60,6 +60,14 @@
     </div>
     <div class="footer-container position-relative" data-region="footer-container">
         {{> core_message/message_drawer_view_conversation_footer }}
+        {{!
+        // XTEC ************ AFEGIT - Show "See all" link in message drawer (deprecated from >=3.7)
+        // 2020.03.26 @joancarbassa
+        }}
+        {{> core_message/message_drawer_view_overview_footer }}
+        {{!
+        //************ FI
+        }}
     </div>
 </div>
 {{#js}}

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['completiondate'] = '完成时间';
+$string['completiondate'] = '完成日期';
 $string['completion:view'] = '查看课程进度报告';
 $string['id'] = 'ID';
 $string['name'] = '姓名';

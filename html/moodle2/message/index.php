@@ -100,7 +100,14 @@ $usernode->remove();
 $settings = $PAGE->settingsnav->find('messages', null);
 $settings->make_active();
 
+// XTEC ************ ORIGINAL - Render the old message UI (deprecated from >=3.7)
+// 2020.03.26 @joancarbassa
+if (false) {
+//************ ORIGINAL
+/*
 if ($currentuser) {
+*/
+//************ FI
     // We're in the pprocess of deprecating this page however we haven't replaced the functionality
     // for the admin (or user with correct capabilities) to view other user's conversations. For the
     // time being this page will simply open the message drawer unless it's the admin user case just

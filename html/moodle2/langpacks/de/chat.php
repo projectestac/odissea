@@ -45,9 +45,7 @@ $string['chattime'] = 'Nächster Chat';
 $string['chat:view'] = 'Chataktivität anzeigen';
 $string['compact'] = 'Kompakt';
 $string['composemessage'] = 'Mitteilung schreiben';
-$string['configmethod'] = 'Die Methode \'Ajax-Chat\'  bietet eine ajaxbasierte Oberfläche, die sich regelmäßig mit dem Server zur Aktualisierung verbindet. Diese Methode funktioniert nur mit modernen Browsern und aktiviertem Ajax/JavaScript.
-<br />Bei der Methode \'Standard-Chat\' laden alle Clients regelmäßig die gesamte Chat-Seite neu vom Server, was zwar keine Konfiguration erfordert und immer funktioniert, aber durch dauernde Anfragen zu einer sehr hohen Serverbelastung führen kann.
-<br />Die Verwendung eines speziellen Chat-Server-Daemons erfordert eine zusätzliche Installation auf dem Server, aber liefert eine schnelle skalierbare Chat-Umgebung.';
+$string['configmethod'] = 'Die Chat-Methode AJAX bietet eine AJAX-basierte Chat-Oberfläche, die den Server regelmäßig kontaktiert, um Aktualisierungen zu erhalten. Bei der Chat-Methode Normal wenden sich Clients regelmäßig an den Server, um Aktualisierungen zu erhalten. Es erfordert keine Konfiguration und funktioniert überall, kann jedoch eine große Belastung des Servers verursachen, wenn viele Nutzer/innen chatten. Die Verwendung eines Server-Daemons erfordert Shell-Zugriff auf Unix, führt jedoch zu einer schnell skalierbaren Chat-Umgebung.';
 $string['confignormalupdatemode'] = 'Chat-Aktualisierungen arbeiten normalerweise mit dem Modus <em>KeepAlive</em> von HTTP 1.1, was aber den Server sehr stark beansprucht. Eine andere Variante nutzt den Modus <em>Stream</em> zur Aktualisierung der Anzeige. <em>Stream</em> arbeitet wesentlich besser (ähnlich wie chatd), aber eventuell unterstützt Ihr Server diese Methode nicht.';
 $string['configoldping'] = 'Nach welcher Zeit (in Sekunden) kann jemand aus der Nutzerliste gelöscht werden, wenn die Kommunikation abgebrochen scheint? Dieser Wert legt die maximale Zeit dafür fest, denn normalerweise werden Kommunikationsabbrüche schnell erkannt. Zu kleine Werte führen zu einer sehr hohen Serverbelastung! Setzen Sie den Wert für den "Standard-Chat"  <strong>niemals</strong> kleiner als 2 * chat_refresh_room!!';
 $string['configrefreshroom'] = 'Nach welcher Zeit (in Sekunden) soll der Chat aktualisiert werden? Ein niedriger Wert lässt den Chat schneller erscheinen, führt aber bei hohen Nutzerzahlen zu einer wesentlich höheren Serverbelastung. Falls Sie den Modus <em>Stream</em> verwenden, können Sie kleinere Werte wählen (probieren Sie es mit 2 Sekunden).';
@@ -68,14 +66,14 @@ $string['errornousers'] = 'Niemanden gefunden!';
 $string['eventmessagesent'] = 'Mitteilung  gesendet';
 $string['eventsessionsviewed'] = 'Sitzungen angezeigt';
 $string['explaingeneralconfig'] = 'Diese Einstellungen werden <strong>immer</strong> benutzt';
-$string['explainmethoddaemon'] = 'Diese Einstellungen sind <strong>nur erforderlich</strong>, wenn Sie die Methode \'Chat-Server-Daemon\' gewählt haben';
-$string['explainmethodnormal'] = 'Diese Einstellungen sind <strong>nur erforderlich</strong>, wenn Sie die Methode \'Standard-Chat\' gewählt haben.';
+$string['explainmethoddaemon'] = 'Diese Einstellungen wirken sich nur aus, wenn "Chat-Server-Daemon" als Chat-Methode ausgewählt ist.';
+$string['explainmethodnormal'] = 'Diese Einstellungen wirken sich nur aus, wenn Normal als Chat-Methode ausgewählt ist.';
 $string['generalconfig'] = 'Allgemeines';
 $string['idle'] = 'Leerlauf';
 $string['indicator:cognitivedepth'] = 'Chat kognitiv';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Chat-Aktivität erreicht hat.';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Chat-Aktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Chat sozial';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Chat-Aktivität erreicht hat.';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Chat-Aktivität erreicht hat.';
 $string['inputarea'] = 'Eingabefeld';
 $string['invalidid'] = 'Chat-Raum wurde nicht gefunden!';
 $string['list_all_sessions'] = 'Alle Sitzungen auflisten';
@@ -88,15 +86,15 @@ $string['messageexit'] = '{$a} hat den Chat verlassen';
 $string['messages'] = 'Mitteilungen';
 $string['messageyoubeep'] = 'Sie haben {$a} angepiepst';
 $string['method'] = 'Chat-Methode';
-$string['methodajax'] = 'Ajax';
+$string['methodajax'] = 'AJAX';
 $string['methoddaemon'] = 'Chat-Server-Daemon';
-$string['methodnormal'] = 'Standard';
+$string['methodnormal'] = 'Normal';
 $string['modulename'] = 'Chat';
-$string['modulename_help'] = 'Im Chat diskutieren kleine Gruppen bis zu sechs Personen aktuelle Lerninhalte und Aufgaben.
+$string['modulename_help'] = 'Die Chat-Aktivität ermöglicht eine textbasierte synchrone Diskussion.
 
-Die Chat-Funktion in Moodle ist für den Einsatz mit kleinen Gruppen konzipiert. Bei großen Gruppen entsteht eine hohe Belastung auf den Webservern.
+Der Chat in Moodle ist für den Einsatz mit kleinen Gruppen konzipiert. Bei großen Gruppen entsteht eine hohe Belastung auf den Webservern.
 
-Ein Chat kann eine einmalige Aktivität sein, täglich oder wöchentlich wiederholt werden. Chat-Sitzungen können gespeichert und veröffentlicht werden.';
+Ein Chat kann eine einmalige Aktivität sein, aber auch täglich oder wöchentlich nach Terminabsprache wiederholt werden. Chat-Sitzungen können gespeichert und veröffentlicht werden.';
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Nie löschen';
 $string['nextsession'] = 'Nächste Sitzung';
@@ -129,8 +127,8 @@ $string['privacy:metadata:messages:issystem'] = 'Ob die Mitteilung eine systemge
 $string['privacy:metadata:messages:message'] = 'Mitteilung';
 $string['privacy:metadata:messages:timestamp'] = 'Zeit, bei der die Mitteilung gesendet wurde';
 $string['privacy:metadata:messages:userid'] = 'Nutzer-ID, mit der die Mitteilung verfasst wurde';
-$string['refreshroom'] = 'Aktualisierung Chat';
-$string['refreshuserlist'] = 'Aktualisierung Nutzerliste';
+$string['refreshroom'] = 'Chat aktualisieren';
+$string['refreshuserlist'] = 'Nutzerliste aktualisieren';
 $string['removemessages'] = 'Alle Mitteilungen entfernen';
 $string['repeatdaily'] = 'Täglich zur gleichen Zeit';
 $string['repeatnone'] = 'Nur zum angegebenen Termin';
@@ -151,7 +149,7 @@ $string['sessionstart'] = 'Der nächste Chat beginnt {$a->date}, (also in {$a->f
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Chat-Protokolle sichtbar für alle';
 $string['studentseereports_help'] = 'Mit der Einstellung \'Nein\' dürfen ausschließlich Nutzer/innen mit dem Recht \'mod/chat:readlog\' die Chat-Protokolle sehen.';
-$string['talk'] = 'Sprechen';
+$string['talk'] = 'Talk';
 $string['updatemethod'] = 'Aktualisierungsmodus';
 $string['updaterate'] = 'Aktualisierungsrate:';
 $string['userlist'] = 'Teilnehmerliste';

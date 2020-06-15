@@ -253,7 +253,7 @@ $string['gradebookcalculationsfixbutton'] = '評点変更を受け入れて計�
 $string['gradebookcalculationsuptodate'] = '評定表の計算は最新です。変更を表示するにはあなたはこのページをリロードする必要があります。';
 $string['gradebookcalculationswarning'] = '注意: 評定表に表示されている評点の計算にエラーが検出されました。あなたのコースが開始していない場合または進行中の場合、結果としていくつかの評点が変更されることになりますが、以下のボタンをクリックしてエラーを修正することをお勧めします。コースがすでに終了して評点が送信されている場合、あなたは恐らくこの問題を修正したくないことでしょう。
 
-新しいバージョンは {$a->currentversion} です。あなたはバージョン {$a->gradebookversion} の評定表を使用しています。あなたは<a href="{$a->url}">評定計算変更</a>で変更一覧を確認することができます。';
+新しいバージョンは {$a->currentversion} です。あなたはバージョン {$a->gradebookversion} の評定表を使用しています。あなたは<a href="{$a->url}">評定計算変更</a>で変更一覧を確認できます。';
 $string['gradebookhiddenerror'] = '現在、評定表は学生からすべて隠されています。';
 $string['gradebookhistories'] = '評定履歴';
 $string['gradebooksetup'] = '評定表セットアップ';

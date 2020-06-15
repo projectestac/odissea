@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodlemedia:browsemedia'] = 'Βρείτε ή ανεβάστε έναν ήχο, ένα βίντεο ή μια μικροεφαρμογή...';
 $string['moodlemedia:desc'] = 'Εισαγωγή πολυμέσων Moodle';
-$string['nopreview'] = 'Αδυναμία προεπισκόπισης πολυμέσου';
+$string['nopreview'] = 'Αδυναμία προεπισκόπησης πολυμέσου';
 $string['pluginname'] = 'Εισαγωγή πολυμέσου';
 $string['privacy:metadata'] = 'Το πρόσθετο «Πολυμέσα Moodle» του TinyMCE δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

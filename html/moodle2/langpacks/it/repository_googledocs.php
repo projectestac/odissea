@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['both'] = 'Interno ed esterno';
 $string['clientid'] = 'Client ID';
 $string['configplugin'] = 'Configurazione plugin Google Drive';
+$string['defaultreturntype'] = 'Tipo restituito di default';
+$string['fileoptions'] = 'E\' possibile configurare il tipo ed il default dei file restituiti. Da notare che saranno a aggiornati i collegamenti a file esterni in modo che il proprietario diventi l\'account di sistema Moodle.';
 $string['googledocs:view'] = 'Visualizzare repository Google Drive';
 $string['internal'] = 'Interno (file memorizzati in Moodle)';
 $string['issuer'] = 'Servizio Oauth 2';

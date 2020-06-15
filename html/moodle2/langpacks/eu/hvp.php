@@ -115,7 +115,7 @@ $string['download'] = 'Jaitsi';
 $string['downloadfailed'] = 'Eskatutako liburutegiaren deskargak huts egin du.';
 $string['downloadtitle'] = 'Jaitsi eduki hau H5P fitxategi gisa.';
 $string['editor'] = 'Editorea';
-$string['emailconfirmbody'] = 'Kaixo {$a->username},
+$string['emailconfirmbody'] = 'Kaixo, {$a->username}:
 
 Eskerrik asko \'{$a->coursename}\' ikastaroko \'{$a->hvpname}\' jardueran zure erantzunak bidaltzeagatik.
 
@@ -124,7 +124,7 @@ Mezu honen bitartez zure erantzunak ondo gorde direla baieztatzen dizugu.
 H5P hau hurrengo estekan ikusi dezakezu: {$a->hvpurl}';
 $string['emailconfirmsmall'] = 'Eskerrik asko \'{$a->hvpname}\\ jardueran zure erantzunak bidaltzeagatik';
 $string['emailconfirmsubject'] = 'Bidalketaren baieztapena: {$a->hvpname}';
-$string['emailnotifybody'] = 'Kaixo {$a->username},
+$string['emailnotifybody'] = 'Kaixo, {$a->username}:
 
 {$a->studentname} ikasleak \'{$a->coursename}\' ikastaroko \'{$a->hvpname}\' jarduera ({$a->hvpurl}) osatu du.
 
@@ -209,7 +209,7 @@ $string['invalidvideoformat'] = 'Bideoko fitxategi-formatu baliogabea. Erabili m
 $string['invalidxapiresult'] = 'Ez da xAPI emaitzarik aurkitu emandako eduki eta id konbinaziorako';
 $string['javascriptloading'] = 'JavaScript-aren zain...';
 $string['libraries'] = 'H5P liburutegiak';
-$string['librarydirectoryerror'] = 'Liburutegi-karpetaren izenak machineName edo machineName-majorVersion.minorVersion bertsioekin bateragarria izan behar du (library.json fitxategitik). (Karpeta: {$a->%directoryName} , machineName: {$a->%machineName}, majorVersion: {$a->%majorVersion}, minorVersion: {$a->%minorVersion})';
+$string['librarydirectoryerror'] = 'Liburutegi-direktorioaren izenak machineName edo machineName-majorVersion.minorVersion bertsioekin bateragarria izan behar du (library.json fitxategitik). (Direktorioa: {$a->%directoryName} , machineName: {$a->%machineName}, majorVersion: {$a->%majorVersion}, minorVersion: {$a->%minorVersion})';
 $string['librarylistactions'] = 'Ekintzak';
 $string['librarylistinstancedependencies'] = 'Instantziaren mendekotasunak';
 $string['librarylistinstances'] = 'Instantzia';
@@ -257,7 +257,7 @@ $string['modulename_help'] = 'H5P jarduera-moduluak eduki interaktiboa sortzen a
 
 Eduki aberatseko egile-tresna izateaz gain, H5P-k fitxategiak inportatzea eta esportatzea ahalbidetzen dizu edukia berrerabili eta partekatzeko.
 
-Erabiltzaileen agerraldiak eta emaitzak xAPI erabiliz gordetzen dira eta Moodle-ren kalifikazio-liburuan eskuragarri ddaude.
+Erabiltzaileen agerraldiak eta emaitzak xAPI erabiliz gordetzen dira eta Moodleren kalifikazio-liburuan eskuragarri ddaude.
 
 H5P eduki interaktiboa gehitu dezakezu txertatutako egile-tresna erabiliz edo H5P gaituta duten beste guneetako H5P fitxategiak igoz.';
 $string['modulename_link'] = 'https://h5p.org/moodle-more-help';
@@ -418,7 +418,7 @@ $string['validationfailed'] = 'Eskatutako H5P fitxategia baliogabea zen';
 $string['viewreportlabel'] = 'Txostena';
 $string['welcomecommunity'] = 'H5P gustukoa izatea eta etengabe hazten ari den gure komunitatearen partaide egitea espero dugu gure <a {$a->forums}>foroen</a> bitartez.';
 $string['welcomecontactus'] = 'Feedbacken bat baduzu, jar zaitez <a {$a}>gurekin harremanetan</a>. Zure iruzkinak kontuan hartzen ditugu, H5P gero eta hobeagoa izatea gure zeregina baita!';
-$string['welcomegettingstarted'] = 'H5P eta Moodle-rekin hasteko, emaiozu begiratua gure <a {$a->moodle_tutorial}>eskuliburuari</a> eta inspiratzeko ikusi itzazu <a {$a->example_content}>adibideak</a> H5P.org webgunean.';
+$string['welcomegettingstarted'] = 'H5P eta Moodlerekin hasteko, emaiozu begiratua gure <a {$a->moodle_tutorial}>eskuliburuari</a> eta inspiratzeko ikusi itzazu <a {$a->example_content}>adibideak</a> H5P.org webgunean.';
 $string['welcomeheader'] = 'Ongi etorri H5P-ren mundura!';
 $string['wrongversion'] = 'Eduki honetan erabilitako H5P {$a->%machineName} liburutegiaren bertsioa baliogabea da. Edukia {$a->%contentLibrary} liburutegia erabiltzen ari da, baina {$a->%semanticsLibrary} izan beharko luke.';
 $string['year'] = 'Urtea';

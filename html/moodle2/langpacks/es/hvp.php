@@ -115,6 +115,22 @@ $string['download'] = 'Descargar';
 $string['downloadfailed'] = 'La descarga de la biblioteca solicitada falló.';
 $string['downloadtitle'] = 'Descargue este contenido como un archivo H5P.';
 $string['editor'] = 'Editor';
+$string['emailconfirmbody'] = 'Hola {$a->username},
+
+Gracias por enviar tus respuestas a \'{$a->hvpname}\' en el curso \'{$a->coursename}\'.
+
+Este mensaje confirma que tus respuestas han sido guardadas.
+
+Puedes acceder a este H5P en {$a->hvpurl}.';
+$string['emailconfirmsmall'] = 'Gracias por enviar tus respuestas a \'{$a->hvpname}\\';
+$string['emailconfirmsubject'] = 'Confirmación de envío: {$a->hvpname}';
+$string['emailnotifybody'] = 'Hola {$a->username},
+
+{$a->studentname} ha completado \'{$a->hvpname}\' ({$a->hvpurl}) en el curso \'{$a->coursename}\'.
+
+Puedes revisar este intento en {$a->hvpreporturl}.';
+$string['emailnotifysmall'] = '{$a->studentname} ha completado {$a->hvpname}. Mira en {$a->hvpreporturl}';
+$string['emailnotifysubject'] = '{$a->studentname} ha completado {$a->hvpname}';
 $string['embed'] = 'Incrustar';
 $string['embedloginfailed'] = 'Tú no tienes acceso a este contenido. Intenta iniciar sesión.';
 $string['embedtitle'] = 'Ver el código embebido para este contenido.';
@@ -147,6 +163,8 @@ $string['hubisdisabled'] = 'El hub está deshabilitado. Puede volver a habilitar
 $string['hubisdisableduploadlibraries'] = 'El hub H5P se ha deshabilitado hasta que este problema se pueda resolver. Todavía puede cargar bibliotecas a través de la página "Bibliotecas H5P".';
 $string['hubsettingsheader'] = 'Tipos de contenido';
 $string['hvp:addinstance'] = 'Crear nuevas actividades H5P';
+$string['hvp:emailconfirmsubmission'] = 'Obtener un mensaje de confirmación cuando envía';
+$string['hvp:emailnotifysubmission'] = 'Obtener un mensaje de notificación cuando un intento es enviado';
 $string['hvp:getcachedassets'] = 'Necesario para ver las actividades H5P';
 $string['hvp:getembedcode'] = 'Ver código de inserción H5P cuando la opción \'controlado por permiso\' está configurada';
 $string['hvp:getexport'] = 'Descargar el archivo .h5p cuando la opción \'controlado por permiso\' está configurada';
@@ -221,6 +239,8 @@ $string['maximumgradeerror'] = 'Por favor introduzca un número entero positivo 
 $string['maxpostsizetoosmall'] = 'Su tamaño máximo de publicación de PHP es bastante pequeño. Con su configuración actual, no puede cargar archivos con un tamaño mayor a {$a->%number} MB. Esto podría ser un problema al intentar cargar H5Ps, imágenes y videos. Por favor considere aumentarla a más de 5MB';
 $string['maxscore'] = 'Máxima Puntuación';
 $string['maxuploadsizetoosmall'] = 'El tamaño máximo de carga de PHP es bastante pequeño. Con su configuración actual, no puede cargar archivos con un tamaño mayor a {$a->%number} MB. Esto podría ser un problema al intentar cargar H5Ps, imágenes y videos. Por favor considere aumentarla a más de 5MB.';
+$string['messageprovider:confirmation'] = 'Confirmación de tus envíos H5P';
+$string['messageprovider:submission'] = 'Notificación de envíos H5P';
 $string['missingcontentfolder'] = 'Falta una carpeta de contenido válida';
 $string['missingcontentuserdata'] = 'Error: no se pudieron encontrar los datos del usuario';
 $string['missingcoreversion'] = 'El sistema no pudo instalar el componente <em>{$a->%component}</em> del paquete, requiere una versión más reciente de la extensión H5P. Este sitio está ejecutando actualmente la versión {$a->%current}, mientras que la versión requerida es {$a->%required} o superior. Debes considerar actualizar y luego intentarlo de nuevo.';

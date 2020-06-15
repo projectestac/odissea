@@ -35,6 +35,6 @@ $string['outline:view'] = 'Übersicht der Kursaktivitäten ansehen';
 $string['outline:viewuserreport'] = 'Übersicht zur Nutzeraktivität anzeigen';
 $string['page-report-outline-index'] = 'Kurs-Lernzielbericht';
 $string['page-report-outline-user'] = 'Nutzer-Lernzielbericht';
-$string['page-report-outline-x'] = 'Alle Lernzielberichte';
+$string['page-report-outline-x'] = 'Jeder Lernzielbericht';
 $string['pluginname'] = 'Kursaktivität';
 $string['privacy:metadata'] = 'Das Aktivitätenberichts-Plugin speichert keine personenbezogenen Daten.';

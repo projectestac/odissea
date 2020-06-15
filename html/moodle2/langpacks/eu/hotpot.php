@@ -81,7 +81,7 @@ $string['completed'] = 'Beteta';
 $string['completionmingrade'] = 'Gutxieneko kalifikazioa beharrezkoa da';
 $string['completionpass'] = 'Gainditzeko kalifikazioa beharrezkoa da';
 $string['completionwarning'] = 'Eremu hauek desgaituta daude jarduera honetako kalifikazio-muga "Kalifikaziorik ez" baldin bada, edo kalifikazioaren pisua "Pisurik ez" bada.';
-$string['configbodystyles'] = 'Moodle-ren itxura motak HotPot jardueraren itxura gainidaztea dago lehenetsita. Hala ere, hemen aukeratutako itxura edozein izanda ere, HotPot jardueraren itxurak lehentasuna izango du Moodle-ren itxuraren gainetik.';
+$string['configbodystyles'] = 'Moodleren itxura motak HotPot jardueraren itxura gainidaztea dago lehenetsita. Hala ere, hemen aukeratutako itxura edozein izanda ere, HotPot jardueraren itxurak lehentasuna izango du Moodleren itxuraren gainetik.';
 $string['configenablecache'] = 'HotPot galdetegien cache-a mantentzeak abiadura biziki arinduko du ikasleek lan egiterakoan.';
 $string['configenablecron'] = 'Zehaztu cron-a abiarazteko zure ordutegi-eremuko orduak';
 $string['configenablemymoodle'] = 'Ezarpen honek kontrolatzen du Nire Moodle orrian HotPot jarduerak zerrendatuko diren ala ez';
@@ -110,7 +110,7 @@ $string['d_index'] = 'Diskriminazio-indizea';
 $string['duration'] = 'Iraupena';
 $string['enablecache'] = 'Gaitu HotPot-en cache-a';
 $string['enablecron'] = 'Gaitu HotPot-en cron-a';
-$string['enablemymoodle'] = 'Erakutsi HotPot-ak Nire Moodle-n';
+$string['enablemymoodle'] = 'Erakutsi HotPot-ak Nire Moodlen';
 $string['enableobfuscate'] = 'Media Player koderako kapsulazioa gaitu';
 $string['enableswf'] = 'HotPot jardueretan SWF fitxategiak txertatzea baimendu';
 $string['entry_attempts'] = 'Saiakerak';
@@ -129,7 +129,7 @@ $string['entrypagehdr'] = 'Sarrera-orria';
 $string['entrytext'] = 'Sarrera-orriaren testua';
 $string['entry_title'] = 'Unitatearen izena titulu gisa';
 $string['event_report_viewed'] = 'HotPot txostena ikusi da';
-$string['exit_areyouok'] = 'Kaixo, hor al zaude?';
+$string['exit_areyouok'] = 'Kaixo. Hor al zaude?';
 $string['exit_attemptscore'] = 'Saiakera honetarako kalifikazioa {$a}';
 $string['exitcm'] = 'Hurrengo jarduera';
 $string['exitcmcourse'] = 'Hurrengo jarduera ikastaro honetan';
@@ -169,8 +169,8 @@ $string['exit_whatnext_1'] = 'Aukeratu zure helburua ...';
 $string['exit_whatnext_default'] = 'Aukeratu mesedez hurrengo aukeretako bat:';
 $string['feedbackdiscuss'] = 'Galdetegi honen inguruan foroan eztabaidatu';
 $string['feedbackformmail'] = 'Feedback-erako formularioa';
-$string['feedbackmoodleforum'] = 'Moodle-ren foroa';
-$string['feedbackmoodlemessaging'] = 'Moodle-ren mezularitza';
+$string['feedbackmoodleforum'] = 'Moodleren foroa';
+$string['feedbackmoodlemessaging'] = 'Moodleren mezularitza';
 $string['feedbacknone'] = 'Bat ez';
 $string['feedbacksendmessage'] = 'Bidali mezua zeure irakasleari';
 $string['feedbackwebpage'] = 'Web orria';
@@ -201,11 +201,11 @@ $string['lastaccess'] = 'Azken sarrera';
 $string['lastattempt'] = 'Azken saiakera';
 $string['lockframe'] = 'Markoa blokeatu';
 $string['mediafilter_hotpot'] = 'HotPot-en multimedia-iragazkia';
-$string['mediafilter_moodle'] = 'Moodle-ren multimedia-iragazki estandarrak';
+$string['mediafilter_moodle'] = 'Moodleren multimedia-iragazki estandarrak';
 $string['modulename'] = 'HotPot';
 $string['modulename_help'] = 'HotPot moduluak irakasleari Moodle bidez ikasleei hezkuntza-material interaktiboak banatzeko aukera ematen dio, baita ikasleen erantzun eta emaitzak ikusteko aukera ere.
 
-HotPot jarduera soil bat ausazko hasiera-orri batez, elearning ariketa sinple batez eta ausazko irteera-orri batez osatzen da. Elearning ariketa web-gune estatiko bat izan daiteke, baita testu, audio eta bideoak erakutsi eta ikasleen erantzunak gordetzen duen web-gune interaktibo bat ere. Elearning ariketak egile softwarea erabiliz irakaslearen ordenagailuan sortzen dira eta ondoren Moodle-ra igotzen dira.
+HotPot jarduera soil bat ausazko hasiera-orri batez, elearning ariketa sinple batez eta ausazko irteera-orri batez osatzen da. Elearning ariketa web-gune estatiko bat izan daiteke, baita testu, audio eta bideoak erakutsi eta ikasleen erantzunak gordetzen duen web-gune interaktibo bat ere. Elearning ariketak egile softwarea erabiliz irakaslearen ordenagailuan sortzen dira eta ondoren Moodlera igotzen dira.
 
 HotPot jarduerak hurrengo egile softwareak erabiliz sortutako ariketak maneia ditzake:
 
@@ -220,9 +220,9 @@ $string['nameedit'] = 'Izena';
 $string['nameedit_help'] = 'Ikasleei erakutsiko zaien testu zehatza';
 $string['navigation'] = 'Nabigazioa';
 $string['navigation_embed'] = 'Enbotatutako web orria';
-$string['navigation_frame'] = 'Moodle-ren nabigazio-markoa';
+$string['navigation_frame'] = 'Moodleren nabigazio-markoa';
 $string['navigation_give_up'] = '&quot;Utzi&quot; botoi bakarra';
-$string['navigation_moodle'] = 'Moodle-ren nabigazio estandarreko barrak (goikoa eta albokoa)';
+$string['navigation_moodle'] = 'Moodleren nabigazio estandarreko barrak (goikoa eta albokoa)';
 $string['navigation_none'] = 'Bat ez';
 $string['noactivity'] = 'Ez dago aktibitaterik';
 $string['nohotpots'] = 'Ez da HotPot-ik aurkitu';

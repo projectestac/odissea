@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configconvertformat'] = 'Wenn neben <i>latex</i> und <i>dvips</i> auch <i>convert</i> oder <i>dvisvgm</i> auf dem Server verfügbar sind, können Sie für die Formelbilder ein Ausgabeformat wählen. (<i>convert</i> liefert GIF oder PNG; <i>dvisvgm</i> liefert SVG). Standardmäßig wird <i>mimeTeX</i> benutzt, das die Formelbilder als GIF ausgibt.';
+$string['configconvertformat'] = 'Wenn neben <i>latex</i> und <i>dvips</i> auch <i>convert</i> oder <i>dvisvgm</i> auf dem Server verfügbar sind, können Sie für die Formelbilder ein Ausgabeformat wählen. (<i>convert</i> liefert GIF oder PNG; <i>dvisvgm</i> liefert SVG). Meist wird <i>mimeTeX</i> benutzt, das die Formelbilder als GIF ausgibt.';
 $string['convertformat'] = 'Ausgabeformat';
 $string['filtername'] = 'TeX-Notation';
 $string['latexpreamble'] = 'LaTeX Präambel';

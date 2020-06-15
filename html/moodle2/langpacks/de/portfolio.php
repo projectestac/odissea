@@ -90,7 +90,7 @@ $string['highdbsizethresholddesc'] = 'Anzahl der Datensätze, oberhalb der eine 
 $string['highfilesizethreshold'] = 'Oberer Wert für Dateigrößen';
 $string['highfilesizethresholddesc'] = 'Dateigröße, oberhalb der eine sehr lange Übertragungszeit eingeplant werden muss';
 $string['insanebody'] = 'Guten Tag,<br />
-Sie erhalten diese Nachricht als Administrator von {$a->sitename}.
+Sie erhalten diese Nachricht als Administrator/in von {$a->sitename}.
 
 Einige Portfolio Plugin Instanzen wurden wegen fehlerhafter Konfiguration deaktiviert. Zur Zeit ist ein Export in diese Systeme durch Nutzer nicht möglich.
 
@@ -102,7 +102,7 @@ Prüfen und korrigieren Sie die Einstellungen alsbald. Zugriff unter
 
 Ihr E-Learning-Team';
 $string['insanebodyhtml'] = '<p>Guten Tag,</p>
-<p>Sie erhalten diese Nachricht als Administrator von {$a->sitename}.</p>
+<p>Sie erhalten diese Nachricht als Administrator/in von {$a->sitename}.</p>
 <p>Einige Portfolio Plugin Instanzen wurden wegen fehlerhafter Konfiguration deaktiviert. Zur Zeit ist ein Export in diese Systeme durch Nutzer nicht möglich. </p>
 <p>Folgende Portfolio Plugin Instanzen wurden deaktiviert:<br />
 {$a->htmllist}
@@ -113,7 +113,7 @@ $string['insanebodyhtml'] = '<p>Guten Tag,</p>
 Ihr E-Learning-Team';
 $string['insanebodysmall'] = 'Guten Tag,
 
-Sie erhalten diese Nachricht als Administrator von {$a->sitename}.<br />
+Sie erhalten diese Nachricht als Administrator/in von {$a->sitename}.<br />
 Einige Portfolioplugin Instanzen wurden wegen fehlerhafter Konfiguration deaktiviert. Zur Zeit ist ein Export in diese Systeme durch Nutzer nicht möglich. <br />
 
 Prüfen und korrigieren Sie die Einstellungen möglichst bald über den Zugriff auf

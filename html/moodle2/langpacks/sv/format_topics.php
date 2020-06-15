@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsections'] = 'Lägg till sektioner/ämnen';
 $string['currentsection'] = 'Det här ämnet';
 $string['page-course-view-topics'] = 'Vilken ingångssida (för kurs) som helst i  ämnesformat';
 $string['pluginname'] = 'Ämnesformat';

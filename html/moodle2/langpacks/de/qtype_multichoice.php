@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = 'Eine oder mehrere Antworten?';
-$string['answerhowmany_desc'] = 'Sollen neue Multiple-Choice-Fragen standardmäßig eine Antwort (mit Radiobuttons) oder mehrere Antworten (mit Checkboxen) haben?';
+$string['answerhowmany_desc'] = 'Sollen neue Multiple-Choice-Fragen eine Antwort (mit Radiobuttons) oder mehrere Antworten (mit Checkboxen) haben?';
 $string['answernumbering'] = 'Antworten nummerieren?';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
-$string['answernumbering_desc'] = 'Legen SIe die standardmäßige Nummerierung neuer Multiple-Choice-Fragen fest.';
+$string['answernumbering_desc'] = 'Legen SIe die Nummerierung neuer Multiple-Choice-Fragen fest.';
 $string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
 $string['answernumberingnone'] = 'Keine Nummerierung';
@@ -69,7 +69,7 @@ $string['privacy:metadata'] = 'Der Fragentyp \'Multiple-Choice\' speichert keine
 $string['selectmulti'] = 'Wählen Sie eine oder mehrere Antworten:';
 $string['selectone'] = 'Wählen Sie eine Antwort:';
 $string['shuffleanswers'] = 'Antworten mischen?';
-$string['shuffleanswers_desc'] = 'Sollen die Antwortmöglichkeiten neuer Multiple-Choice-Fragen standardmäßig gemischt werden?';
+$string['shuffleanswers_desc'] = 'Sollen die Antwortmöglichkeiten neuer Multiple-Choice-Fragen gemischt werden?';
 $string['shuffleanswers_help'] = 'Wenn aktiviert ist die Reihenfolge der Antworten bei jedem Versuch zufällig, sofern die Option "In Fragen zufällig mischen" aktiviert ist.';
 $string['singleanswer'] = 'Antwort wählen:';
 $string['toomanyselected'] = 'Sie haben zu viele Optionen gewählt.';

@@ -46,7 +46,7 @@ $string['archetypecoursecreator'] = 'MODÈLE : Créateur de cours';
 $string['archetypeeditingteacher'] = 'MODÈLE : Enseignant';
 $string['archetypefrontpage'] = 'MODÈLE : Utilisateur authentifié sur la page d\'accueil';
 $string['archetypeguest'] = 'MODÈLE : Visiteur anonyme';
-$string['archetype_help'] = 'Le modèle de rôle détermine les permissions affectées à un rôle lors de sa réinitialisation. Il détermine également les nouvelles permissions lors d\'une mise à jour du site.';
+$string['archetype_help'] = 'Le modèle de rôle détermine les permissions attribuées à un rôle lors de son initialisation. Il détermine également les nouvelles permissions lors d\'une mise à jour du site.';
 $string['archetypemanager'] = 'MODÈLE : Gestionnaire';
 $string['archetypestudent'] = 'MODÈLE : Étudiant';
 $string['archetypeteacher'] = 'MODÈLE : Enseignant non éditeur';
@@ -153,7 +153,7 @@ $string['competency:userevidencemanageown'] = 'Gérer ses propres preuves d\'acq
 $string['competency:userevidenceview'] = 'Consulter les preuves d\'acquis d\'un utilisateur';
 $string['confirmaddadmin'] = 'Voulez-vous vraiment ajouter l\'utilisateur <strong>{$a}</strong> comme nouvel administrateur du site ?';
 $string['confirmdeladmin'] = 'Voulez-vous vraiment retirer l\'utilisateur <strong>{$a}</strong> de la liste des administrateurs du site ?';
-$string['confirmroleprevent'] = 'Voulez-vous vraiment retirer le rôle « <strong>{$a->role}</strong> » de la liste des rôles avec autorisation pour la capacité « {$a->cap} » dans le contexte « {$a->context} » ?';
+$string['confirmroleprevent'] = 'Voulez-vous vraiment retirer le rôle « <strong>{$a->role}</strong> » de la liste des rôles avec permission pour la capacité « {$a->cap} » dans le contexte « {$a->context} » ?';
 $string['confirmroleunprohibit'] = 'Voulez-vous vraiment retirer le rôle « <strong>{$a->role}</strong> » de la liste des rôles avec interdiction pour la capacité « {$a->cap} » dans le contexte « {$a->context} » ?';
 $string['confirmunassign'] = 'Voulez-vous vraiment retirer ce rôle à cet utilisateur ?';
 $string['confirmunassignno'] = 'Annuler';
@@ -267,7 +267,7 @@ $string['grade:unlock'] = 'Déverrouiller les notes ou éléments';
 $string['grade:view'] = 'Voir ses propres notes';
 $string['grade:viewall'] = 'Voir les notes d\'autres utilisateurs';
 $string['grade:viewhidden'] = 'Voir ses propres notes cachées';
-$string['highlightedcellsshowdefault'] = 'Les cellules en surbrillance dans le tableau ci-dessous indiquent la permission par défaut pour le modèle de rôle spécifié ci-dessus.';
+$string['highlightedcellsshowdefault'] = 'Les cellules en surbrillance dans le tableau ci-dessous indiquent les permissions par défaut pour le modèle de rôle spécifié ci-dessus.';
 $string['highlightedcellsshowinherit'] = 'Les cellules en surbrillance dans le tableau ci-dessous indiquent s\'il y a lieu la permission qui sera héritée. À part les capacités dont vous voulez modifier les permissions, il est suggéré de laisser le tout sur Hériter.';
 $string['inactiveformorethan'] = 'inactif depuis plus de {$a->timeperiod}';
 $string['ingroup'] = 'dans le groupe « {$a->group} »';
@@ -321,8 +321,8 @@ $string['permission'] = 'Permission';
 $string['permission_help'] = 'Les permissions sont les réglages que vous accordez pour des capacités spécifiques. Il y a quatre possibilités pour les permissions :
 
 * Non défini
-* Autoriser : la permission est donnée pour cette capacité
-* Empêcher : la permission n\'est pas donnée pour cette capacité
+* Autoriser : la permission est accordée pour cette capacité
+* Empêcher : la permission n\'est pas accordée pour cette capacité
 * Interdire : la permission est totalement refusée pour cette capacité et ne peut pas être accordée dans un contexte inférieur (ou plus spécifique)';
 $string['permissions'] = 'Permissions';
 $string['permissionsforuser'] = 'Permissions de l\'utilisateur {$a}';
@@ -409,7 +409,7 @@ $string['roleshortname_help'] = 'Le nom abrégé du rôle est un identifiant dan
 $string['role:switchroles'] = 'Prendre d\'autres rôles';
 $string['roletoassign'] = 'Rôle à attribuer';
 $string['roletooverride'] = 'Rôle pour lequel définir des dérogations';
-$string['safeoverridenotice'] = 'Remarque : les capacités comportant des risques élevés sont verrouillées, car vous n\'êtes autorisé à définir des dérogations que pour des capacités sûres.';
+$string['safeoverridenotice'] = 'Remarque : les capacités comportant des risques élevés sont verrouillées, car vous n\'avez les permissions requises pour définir des dérogations que pour des capacités sûres.';
 $string['search:query'] = 'Effectuer des recherches globales';
 $string['selectanotheruser'] = 'Sélectionner un autre utilisateur';
 $string['selectauser'] = 'Sélectionner un utilisateur';

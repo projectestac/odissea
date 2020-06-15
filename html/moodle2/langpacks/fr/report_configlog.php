@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configlog'] = 'Modifications de configuration';
-$string['oldvalue'] = 'Valeur précédente';
+$string['oldvalue'] = 'Valeur originale';
 $string['plugin'] = 'Plugin';
 $string['pluginname'] = 'Modifications de configuration';
 $string['privacy:metadata'] = 'Le plugin Modifications de configuration n\'enregistre aucune donnée personnelle.';

@@ -29,6 +29,7 @@ $string['eventgradereportviewed'] = 'Informe de notas de usuario visto';
 $string['myself'] = 'Yo mismo';
 $string['otheruser'] = 'Usuario';
 $string['pluginname'] = 'Usuario';
+$string['privacy:metadata:preference:gradereport_user_view_user'] = 'Si se visualiza el informe como usuario actual o como otro usuario en los informes del Libro de calificaciones';
 $string['tablesummary'] = 'La tabla está ordenada como una lista de elementos que incluye categorías y notas. Cuando los elementos pertenecen a una categoría se indica.';
 $string['user:view'] = 'Ver su propio informe de calificación';
 $string['viewas'] = 'Ver informe como';

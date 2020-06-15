@@ -208,11 +208,11 @@ $string['feedback'] = 'フィードバック';
 $string['feedbackavailablehtml'] = 'あなたの「 {$a->assignment} 」への提出課題に {$a->username} がフィードバックを投稿しました。
 <br />
 <br />
-あなたの<a href="{$a->url}">提出課題</a>に追加されたフィードバックを確認することができます。';
+あなたの<a href="{$a->url}">提出課題</a>に追加されたフィードバックを確認できます。';
 $string['feedbackavailablesmall'] = '課題「 {$a->assignment} 」のフィードバックが{$a->username} により投稿されました。';
 $string['feedbackavailabletext'] = 'あなたの「 {$a->assignment} 」への提出課題に {$a->username} がフィードバックを投稿しました。
 
-あなたの提出課題に追加されたフィードバックを確認することができます:
+あなたの提出課題に追加されたフィードバックを確認できます:
 
     {$a->url}';
 $string['feedbackplugin'] = 'フィードバックプラグイン';
@@ -244,11 +244,11 @@ $string['gradeoutof'] = '{$a} 点中の評点';
 $string['gradeoutofhelp'] = '評定';
 $string['gradeoutofhelp_help'] = 'ここで学生の提出に関する評点を入力してください。あなたは小数点を含むことができます。';
 $string['gradersubmissionupdatedhtml'] = '{$a->username} が「 {$a->assignment} 」の提出課題を更新しました (更新日時: {$a->timeupdated} )。<br /><br />
-<a href="{$a->url}">ウェブサイトで確認することができます</a>。';
+<a href="{$a->url}">ウェブサイトで確認できます</a>。';
 $string['gradersubmissionupdatedsmall'] = '{$a->username} が課題「 {$a->assignment} 」への提出を更新しました。';
 $string['gradersubmissionupdatedtext'] = '{$a->username} が「 {$a->assignment} 」の提出課題を更新しました (更新日時: {$a->timeupdated} )。
 
-以下で確認することができます:
+以下で確認できます:
 
 {$a->url}';
 $string['gradestudent'] = '学生を評定する: (id={$a->id}, フルネーム={$a->fullname})';
@@ -464,11 +464,11 @@ $string['status'] = 'ステータス';
 $string['studentnotificationworkflowstateerror'] = '学生に通知するにはワークフロー状態を「リリース済み」にする必要があります。';
 $string['submission'] = '提出課題';
 $string['submissioncopiedhtml'] = '<p>あなたは「 {$a->assignment} 」の前回の課題提出をコピーしました。</p>
-<p>あなたの<a href="{$a->url}">課題提出</a>に関するステータスを確認することができます。</p>';
+<p>あなたの<a href="{$a->url}">課題提出</a>に関するステータスを確認できます。</p>';
 $string['submissioncopiedsmall'] = 'あなたは「 {$a->assignment} 」の前回の課題提出をコピーしました。';
 $string['submissioncopiedtext'] = 'あなたは「 {$a->assignment} 」の前回の課題提出をコピーしました。
 
-あなたの課題提出に関するステータスは以下で確認することができます:
+あなたの課題提出に関するステータスは以下で確認できます:
 
 {$a->url}';
 $string['submissiondrafts'] = '学生に提出ボタンのクリックを求める';
@@ -484,18 +484,18 @@ $string['submissionnotready'] = 'この課題はまだ提出することがで�
 $string['submissionplugins'] = '提出プラグイン';
 $string['submissionreceipthtml'] = '<p>あなたは課題「 {$a->assignment} 」への提出を送信しました。</p>
 <p>あなたの<a href="{$a->url}">提出課題</a>のステータスをご覧ください。</p>';
-$string['submissionreceiptotherhtml'] = 'あなたの「 {$a->assignment} 」の課題提出が送信されました。<br /><br />あなたの<a href="{$a->url}">課題提出</a>ステータスを確認することができます。';
+$string['submissionreceiptotherhtml'] = 'あなたの「 {$a->assignment} 」の課題提出が送信されました。<br /><br />あなたの<a href="{$a->url}">課題提出</a>ステータスを確認できます。';
 $string['submissionreceiptothersmall'] = 'あなたの「 {$a->assignment} 」の課題提出が送信されました。';
 $string['submissionreceiptothertext'] = 'あなたの「 {$a->assignment} 」の課題提出が送信されました。
 
-あなたの課題提出ステータスを確認することができます:
+あなたの課題提出ステータスを確認できます:
 
 {$a->url}';
 $string['submissionreceipts'] = '提出受領書を送信する';
 $string['submissionreceiptsmall'] = 'あなたは課題「 {$a->assignment} 」への提出を送信しました。';
 $string['submissionreceipttext'] = 'あなたは課題「 {$a->assignment} 」への提出を送信しました。
 
-あなたの課題提出ステータスを確認することができます:
+あなたの課題提出ステータスを確認できます:
 
      {$a->url}';
 $string['submissions'] = '提出課題';

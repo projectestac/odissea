@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['page-report-progress-index'] = 'Aktivitäten Abschlussbericht';
 $string['page-report-progress-user'] = 'Nutzeraktivitäten Abschlussbericht';
-$string['page-report-progress-x'] = 'Alle Aktivitätenabschlussberichte';
+$string['page-report-progress-x'] = 'Jeder Aktivitätenabschlussbericht';
 $string['pluginname'] = 'Aktivitätsabschluss';
 $string['privacy:metadata'] = 'Der Aktivitäten-Abschluß-Bericht zeigt nur Daten an, die an anderer Stelle gespeichert werden.';
 $string['progress:view'] = 'Übersicht zum Kursverlauf ansehen';

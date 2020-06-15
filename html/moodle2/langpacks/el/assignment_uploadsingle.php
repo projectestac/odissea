@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Μονό ανέβασμα';
-$string['privacy:metadata'] = 'Το πρόσθετο «Upload single assignment» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata'] = 'Το πρόσθετο Μονό ανέβασμα εργασίας δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

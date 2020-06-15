@@ -35,7 +35,7 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa IMS eduki-paketeetan'
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak IMS motako eduki-paketea baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala IMS eduki-paketeetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak IMS motako eduki-paketea baliabideetan lortutako zabalera sozialean oinarrituta dago.';
-$string['keepold'] = 'Paketeak gorde';
+$string['keepold'] = 'Artxiboko paketeak';
 $string['keepoldexplain'] = 'Zenbat pakete gorde  behar dira?';
 $string['modulename'] = 'IMS eduki-paketea';
 $string['modulename_help'] = 'IMS eduki-paketeak sistema ezberdinetan erabiliak izan daitezen adostutako estandarrei jarraituz bildutako fitxategi-multzoak dira. IMS eduki-paketea jarduerak ikastaroan baliabide gisa erabiliak izateko ZIP fitxategi batean igo daitezke.
@@ -45,7 +45,7 @@ Edukia hainbat orritan erakutsi ohi da, orrien arteko nabigazioarekin. Edukiak e
 IMS eduki-paketea eduki multimedia eta animazioak erakusteko erabil daiteke.';
 $string['modulenameplural'] = 'IMS eduki-paketeak';
 $string['navigation'] = 'Nabigazioa';
-$string['packagefile'] = 'Paketearen fitxategia';
+$string['packagefile'] = 'Pakete-fitxategia';
 $string['page-mod-imscp-x'] = 'IMS eduki-paketearen edozein orri';
 $string['pluginadministration'] = 'IMSCP kudeaketa';
 $string['pluginname'] = 'IMS eduki-paketea';

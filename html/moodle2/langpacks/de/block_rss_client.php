@@ -47,7 +47,7 @@ $string['editfeeds'] = 'RSS Feeds verwalten';
 $string['editnewsfeeds'] = 'RSS Feeds bearbeiten';
 $string['editrssblock'] = 'RSS Themen bearbeiten';
 $string['enableautodiscovery'] = 'RSS Feeds automatisch erkennen';
-$string['enableautodiscovery_help'] = 'Wenn diese Option aktiviert ist, werden RSS Feeds auf Webseiten automatisch erkannt. Wenn Sie z.B. http://docs.moodle.org als Webseite eingeben, dann würde http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss automatisch gefunden werden.';
+$string['enableautodiscovery_help'] = 'Wenn diese Option aktiviert ist, werden RSS Feeds auf Webseiten automatisch gefunden. Wenn beispielsweise https://docs.moodle.org eingegeben wird, wird https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss gefunden.';
 $string['failedfeed'] = 'Der Feed konnte nicht heruntergeladen werden - wird nach {$a} wiederholt';
 $string['failedfeeds'] = 'Einer oder mehrere RSS Feeds sind fehlgeschlagen';
 $string['feed'] = 'RSS Feed';

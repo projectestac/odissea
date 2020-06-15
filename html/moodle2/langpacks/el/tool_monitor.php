@@ -123,4 +123,4 @@ $string['subhelp_help'] = 'Αυτή η συνδρομή παρακολουθεί
 $string['subscribeto'] = 'Εγγραφείτε στον κανόνα «{$a}»';
 $string['taskchecksubscriptions'] = 'Ενεργοποίηση/απενεργοποίηση των μη έγκυρων εγγραφών κανόνα';
 $string['taskcleanevents'] = 'Εκκαθάριση γεγονότων της παρακολούθησης γεγονότων';
-$string['unsubscribe'] = 'Κατάργηση εγγραφής';
+$string['unsubscribe'] = 'Απεγγραφή';

@@ -920,9 +920,13 @@ class core_course_renderer extends plugin_renderer_base {
             $output .= html_writer::span($modicons, 'actions');
         }
 
-        // Show availability info (if module is not available).
-        // XTEC ************ ELIMINAT
+        // XTEC ************ MODIFICAT - Show availability info (if module is not available)
         // 2019.02.27 @svallde2
+        // 2020.03.03 @ulises.martinez
+        if ('label' == $mod->modname) {
+            $output .= $this->course_section_cm_availability($mod, $displayoptions);
+        }
+        //************ ORIGINAL
         /*
         $output .= $this->course_section_cm_availability($mod, $displayoptions);
         */

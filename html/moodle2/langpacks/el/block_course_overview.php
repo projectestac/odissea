@@ -88,5 +88,5 @@ $string['userchoosezero'] = '(χρήση προεπιλογής)';
 $string['usersetmaxcourses'] = 'Αριθμός μαθημάτων που θα εμφανίζονται:';
 $string['view_edit_profile'] = '(Εμφάνιση και επεξεργασία του προφίλ σας.)';
 $string['welcome'] = 'Καλώς ορίσατε {$a}';
-$string['youhavemessages'] = 'Έχετε {$a} μη αναγνωμένα';
-$string['youhavenomessages'] = 'Δεν έχετε κανένα μη αναγνωμένο';
+$string['youhavemessages'] = 'Έχετε {$a} μη αναγνωσμένα';
+$string['youhavenomessages'] = 'Δεν έχετε κανένα μη αναγνωσμένο';

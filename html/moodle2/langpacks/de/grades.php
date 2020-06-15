@@ -196,7 +196,7 @@ $string['enableajax_help'] = 'Ajax-Funktionalität für die Bewerterübersicht b
 $string['enableoutcomes'] = 'Lernziele aktivieren';
 $string['enableoutcomes_help'] = 'Wenn die Option aktiviert ist, können Bewertungsaspekte mit einer oder mehreren Bewertungsskalen bewertet werden, die mit Aussagen eines Lernziels verknüpft sind.';
 $string['encoding'] = 'Kodierung';
-$string['encoding_help'] = 'Wählen Sie die Zeichencodierung aus, die für diese Daten benutzt wird (standardmäßig UTF-8). Bei einer falschen Zeichencodierung wird diese in der Datenvorschau sichtbar.';
+$string['encoding_help'] = 'Wählen Sie die Zeichencodierung aus, die für diese Daten benutzt wird (Standard: UTF-8). Bei einer falschen Zeichencodierung wird diese in der Datenvorschau sichtbar.';
 $string['errorcalculationbroken'] = 'Zirkelverweis oder unvollständige Berechnungsformel';
 $string['errorcalculationnoequal'] = 'Formeln müssen mit einem Gleichheitszeichen beginnen (=1+2)';
 $string['errorcalculationunknown'] = 'Ungültige Formel';
@@ -337,7 +337,7 @@ $string['gradepass'] = 'Bestehensgrenze';
 $string['gradepassgreaterthangrade'] = 'Die Bestehensgrenze kann nicht höher sein als die Höchstbewertung {$a}';
 $string['gradepass_help'] = 'Diese Option legt die erforderliche Mindestbewertung für das Bestehen fest. Der Wert wird beim Aktivitäts- und beim Kursabschluss verwendet, außerdem wird bei der Bewertung ein Bestehen in grün und ein Scheitern in rot markiert.
 ';
-$string['gradepointdefault'] = 'Standardmäßige Punktebewertung';
+$string['gradepointdefault'] = 'Standard-Punktebewertung';
 $string['gradepointdefault_help'] = 'Diese Einstellung legt den voreingestellten Standardwert der Punktbewertung für diese Aktivität fest.';
 $string['gradepointdefault_validateerror'] = 'Der eingetragene Wert musss eine ganze Zahl zwischen 1 und der Höchstbewertung sein.';
 $string['gradepointmax'] = 'Maximale Punktebewertung';
@@ -346,9 +346,9 @@ $string['gradepointmax_validateerror'] = 'Diese Einstellung muss eine Ganzzahl z
 $string['gradepreferences'] = 'Bewertungseinstellungen';
 $string['gradepreferenceshelp'] = 'Hilfe für Bewertungseinstellungen';
 $string['gradepublishing'] = 'Veröffentlichen erlauben';
-$string['gradepublishing_help'] = 'Aktiviert die Export und Importfunktion: Exportierte Bewertungen können für andere verlinkt werden, ohne dass sie sich im Moodle-System einloggen müssen.  Bewertungen können auf die gleiche Art und Weise importiert werden. Damit können Bewertungen, die aus anderen Systemen stammen integriert werden. Normalerweise können nur Administratoren diese Funktion nutzen. Falls dieses Recht weitergegeben wird, sind die betroffenen Personen darauf hinzuweisen, dass mit entsprechender Sorgfalt mit diesen persönlichen Daten umgegangen wird.
+$string['gradepublishing_help'] = 'Aktiviert die Export und Importfunktion: Exportierte Bewertungen können für andere verlinkt werden, ohne dass sie sich im Moodle-System einloggen müssen.  Bewertungen können auf die gleiche Art und Weise importiert werden. Damit können Bewertungen, die aus anderen Systemen stammen integriert werden. Normalerweise können nur Administrator/innen diese Funktion nutzen. Falls dieses Recht weitergegeben wird, sind die betroffenen Personen darauf hinzuweisen, dass mit entsprechender Sorgfalt mit diesen persönlichen Daten umgegangen wird.
 
-Das Veröffentlichen von Bewertungen ist eine Möglichkeit, Bewertungen über eine URL zu importieren und zu exportieren, ohne bei Moodle angemeldet zu sein. Wenn diese Option aktiviert ist, werden für Administratoren und Nutzer/innen mit der Berechtigung zum Veröffentlichen von Bewertungen (standardmäßig nur Benutzer mit der Managerrolle) die Einstellungen zum Veröffentlichen von Bewertungsexporten angeboten.';
+Das Veröffentlichen von Bewertungen ist eine Möglichkeit, Bewertungen über eine URL zu importieren und zu exportieren, ohne bei Moodle angemeldet zu sein. Wenn diese Option aktiviert ist, werden für Administrator/innen und Nutzer/innen mit der Berechtigung zum Veröffentlichen von Bewertungen (meist nur Benutzer mit der Managerrolle) die Einstellungen zum Veröffentlichen von Bewertungsexporten angeboten.';
 $string['gradepublishinglink'] = 'Herunterladen: {$a}';
 $string['gradereport'] = 'Bewertungsbericht';
 $string['graderreport'] = 'Bewerterübersicht';
@@ -512,7 +512,7 @@ Wenn Sie "Ja" auswählen, werden bereits existierende, überschriebene Bewertung
 Beispiel für Auswahl von "Ja":  Bei der Änderung der Maximalbewertung eines Items von 10 auf 20 wird die Bewertung von 6/10 (60%) neu skaliert auf 12/60 (60%).
 Bei der Auswahl von "Nein" bleibt die Bewertung unverändert und muss manuell angepasst werden, um korrekte Scores sicherzustellen.';
 $string['modgradedonotmodify'] = 'Existierende Bewertungen nicht ändern';
-$string['modgradeerrorbadpoint'] = 'Ungültiger Bewertungswert. Es muss ein ganzzahliger Wert zwischen 1 und {$a} sein.';
+$string['modgradeerrorbadpoint'] = 'Ungültiger Bewertungswert. Der Wert muss ganzzahlig zwischen 1 und {$a} sein.';
 $string['modgradeerrorbadscale'] = 'Falsche Skala ausgewählt. Bite wählen Sie eine der vorhandenen Skalen aus.';
 $string['modgrade_help'] = 'Wählen Sie die Art der Bewertung für diese Aktivität aus. Wenn Sie z.B. Skala auswählen, steht ein DropDown-Feld mit einer Skala zur Auswahl zur Verfügung. Wenn Sie Punkt-Bewertung auswählen, so können Sie die Höchstpunktzahl für diese Aktivität auswählen.';
 $string['modgrademaxgrade'] = 'Maximalpunkte';
@@ -694,7 +694,7 @@ $string['realletter'] = 'Punkte (Noten)';
 $string['realpercentage'] = 'Punkte (Prozent)';
 $string['recalculatinggrades'] = 'Bewertungen neu berechnen...';
 $string['recovergradesdefault'] = 'Bewertungen wiederherstellen';
-$string['recovergradesdefault_help'] = 'Standardmäßig werden alte Bewertungen wiederhergestellt, wenn Nutzer/innen erneut in einen Kurs eingeschrieben werden.';
+$string['recovergradesdefault_help'] = 'Alte Bewertungen werden wiederhergestellt, wenn Nutzer/innen erneut in einen Kurs eingeschrieben werden.';
 $string['refreshpreview'] = 'Vorschau aktualisieren';
 $string['regradeanyway'] = 'Auf jeden Fall neu bewerten';
 $string['removeallcoursegrades'] = 'Alle Bewertungen löschen';
@@ -721,7 +721,7 @@ $string['selectalloroneuser'] = 'Alle oder einen auswählen';
 $string['selectauser'] = 'Nutzer/in wählen';
 $string['selectdestination'] = 'Ziel für {$a} auswählen';
 $string['separator'] = 'Trennzeichen';
-$string['separator_help'] = 'Wählen Sie den Trenner für die CSV-Datei aus (standardmäßig Semikolon).';
+$string['separator_help'] = 'Wählen Sie den Trenner für die CSV-Datei aus (Standard: Semikolon).';
 $string['sepcolon'] = 'Doppelpunkt';
 $string['sepcomma'] = 'Komma';
 $string['sepsemicolon'] = 'Semikolon';
@@ -831,7 +831,7 @@ $string['uncategorised'] = 'Nicht kategorisiert';
 $string['unchangedgrade'] = 'Unveränderte Bewertungen';
 $string['unenrolledusersinimport'] = 'Beim Import werden Bewertungen der folgenden Teilnehmer/innen importiert, die zur Zeit nicht im Kurs registriert sind: {$a}';
 $string['unlimitedgrades'] = 'Offene Bewertung';
-$string['unlimitedgrades_help'] = 'Standardmäßig sind Bewertungen durch Minimal- und Maximalwert einer Bewertungsstufe definiert. Falls diese Option aktiviert ist, entfällt die Einschränkung und erlaubt auch das direkte Eintragen von Bewertungen über 100%.';
+$string['unlimitedgrades_help'] = 'Zumeist sind Bewertungen durch Minimal- und Maximalwert einer Bewertungsstufe definiert. Falls diese Option aktiviert ist, entfällt die Einschränkung und erlaubt auch das direkte Eintragen von Bewertungen über 100%.';
 $string['unlock'] = 'Freigeben';
 $string['unlockverbose'] = '{$a->category} {$a->itemmodule} {$a->itemname} entsperren';
 $string['unused'] = 'Unbenutzt';

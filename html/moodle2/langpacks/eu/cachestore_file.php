@@ -25,15 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['autocreate'] = 'Sortu karpeta automatikoki';
-$string['autocreate_help'] = 'Gaituz gero bidean zehaztutako karpeta automatikoki sortuko da dagoeneko existitzen ez bada.';
+$string['autocreate'] = 'Sortu direktorioa automatikoki';
+$string['autocreate_help'] = 'Gaituz gero bidean zehaztutako direktorioa automatikoki sortuko da dagoeneko existitzen ez bada.';
 $string['path'] = 'Cachearen bidea';
-$string['path_help'] = 'Cache-biltegi honetarako fitxategiak gordetzeko erabili beharreko karpeta. Hutsik utziz gero (modu lehenetsian), moodledata karpetaren barruan karpeta bat sortuko da automatikoki. Hau errendimendu hobea duen unitate bateko fitxategi-biltegi bat zehazteko erabil daiteke (memorian dagoen bat adibidez).';
+$string['path_help'] = 'Cache-biltegi honetarako fitxategiak gordetzeko erabili beharreko direktorioa. Hutsik utziz gero (modu lehenetsian), moodledata direktorioaren barruan direktorio bat sortuko da automatikoki. Hau errendimendu hobea duen unitate bateko fitxategi-biltegi bat zehazteko erabil daiteke (memorian dagoen bat adibidez).';
 $string['pluginname'] = 'Fitxategi-cachea';
-$string['prescan'] = 'Aurrez eskaneatu karpeta';
-$string['prescan_help'] = 'Gaituz gero cachea erabiltzen den lehen aldian karpeta eskaneatuko da eta fitxategi-eskaerak eskaneatze-datuetan lehenegoz egiaztatzen dira. Honek lagundu dezake fitxategi-sistema motela baduzu eta fitxategien eragiketek itogunea eragiten dutela ikusten baduzu.';
+$string['prescan'] = 'Aurrez eskaneatu direktorioa';
+$string['prescan_help'] = 'Gaituz gero cachea erabiltzen den lehen aldian direktorioa eskaneatuko da eta fitxategi-eskaerak eskaneatze-datuetan lehenegoz egiaztatzen dira. Honek lagundu dezake fitxategi-sistema motela baduzu eta fitxategien eragiketek itogunea eragiten dutela ikusten baduzu.';
 $string['privacy:metadata'] = 'Fitxategi-cachea cache-biltegi pluginak datuak laburki gordetzen ditu bere cache-funtzioaren baitan, baina datuak erregularki ezabatzen dira eta ez dira inola kanpora bidaltzen.';
-$string['singledirectory'] = 'Karpeta bakarreko biltegia';
+$string['singledirectory'] = 'Direktorio bakarreko biltegia';
 $string['singledirectory_help'] = 'Gaituz gero fitxategiak (cacheatutako elementuak) karpeta bakarrean gordeko diren karpeta anitzetan banatu beharrean.<br />
 Hau gaituta fitxategiekiko elkarrekintzak azkartuko dira baina fitxategi-sistemaren mugetara iristeko arriskua egon daiteke.<br />
 Aukera hau gaitzea soilik hurrengo hauetako bat gertatzen bada gomendatzen da:<br />

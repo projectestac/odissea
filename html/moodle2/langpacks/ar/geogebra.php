@@ -27,3 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attempt'] = 'محاولة';
 $string['attempts'] = 'محاولات';
+$string['modulename'] = 'جيوجبرا';
+$string['modulenameplural'] = 'جيوجبرا';
+$string['pluginname'] = 'جيوجبرا';

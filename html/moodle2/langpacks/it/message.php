@@ -146,6 +146,7 @@ $string['outputenabled'] = 'Output abilitato';
 $string['outputnotavailable'] = 'Non disponibile';
 $string['outputnotconfigured'] = 'Non configurato';
 $string['participants'] = 'Partecipanti';
+$string['pendingcontactrequests'] = 'Hai {$a} richieste di contatto in attesa';
 $string['permitted'] = 'Consentito';
 $string['privacy'] = 'Privacy';
 $string['privacy_desc'] = 'E\' possibile definire quali utenti possono inviarti messaggi';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['classname'] = 'Klasearen izena';
 $string['component'] = 'Osagaia';
-$string['configmessageinboundhost'] = 'Moodle-k e-mailak bilatzera joan behar deneko zerbitzariaren helbidea. Lehenetsitakoa ez den ataka bat zehazteko, [zerbitzaria]:[ataka] erabili dezakezu, mail.adibidea.eus:587 formatua adibidez. Atakarik zehazten ez baduzu, posta elektronikoko zerbitzari motaren lehenetsitako ataka erabiliko da.';
+$string['configmessageinboundhost'] = 'Moodlek e-mailak bilatzera joan behar deneko zerbitzariaren helbidea. Lehenetsitakoa ez den ataka bat zehazteko, [zerbitzaria]:[ataka] erabili dezakezu, mail.adibidea.eus:587 formatua adibidez. Atakarik zehazten ez baduzu, posta elektronikoko zerbitzari motaren lehenetsitako ataka erabiliko da.';
 $string['defaultexpiration'] = 'Helbideen iraungitze-epe lehenetsia';
 $string['defaultexpiration_help'] = 'Kudeatzaileak helbide elektroniko bat sortzen duenean, automatikoki iraungitze-epe bat zehaztu dakioke epe hori igaro ondoren ezin erabiltzeko. Iraungitze-epea zehaztea gomendagarria da.';
 $string['description'] = 'Deskribapena';
@@ -61,16 +61,16 @@ $string['messageinbound'] = 'Sarrerako mezua';
 $string['messageinboundenabled'] = 'Gaitu sarrerako posta elektronikoaren prozesatzea';
 $string['messageinboundenabled_desc'] = 'Sarrerako posta elektronikoaren prozesatzea gaitu behar da mezuak dagokien informazioarekin bidali ahal izateko.';
 $string['messageinboundgeneralconfiguration'] = 'Ezarpen orokorra';
-$string['messageinboundgeneralconfiguration_desc'] = 'Sarrerako mezuen prozesatzeak e-mailak jaso eta Moodle-ren baitan kudeatzea ahalbidetzen du. Honela posta elektroniko bidez foroetan erantzutea eta gune pribatura fitxategiak igotzea moduko erabilerak gaitu daitezke.';
+$string['messageinboundgeneralconfiguration_desc'] = 'Sarrerako mezuen prozesatzeak e-mailak jaso eta Moodleren baitan kudeatzea ahalbidetzen du. Honela posta elektroniko bidez foroetan erantzutea eta gune pribatura fitxategiak igotzea moduko erabilerak gaitu daitezke.';
 $string['messageinboundhost'] = 'Sarrerako posta elektronikoko zerbitzaria';
 $string['messageinboundhostpass'] = 'Pasahitza';
 $string['messageinboundhostpass_desc'] = 'Hemen zure zerbitzu-hornitzaileak helbide elektronikoan sartzeko eman dizun pasahitza zehaztu behar da.';
 $string['messageinboundhostssl'] = 'Erabili SSL';
-$string['messageinboundhostssl_desc'] = 'Posta elektronikoko zerbitzari batzuk segurtasun-maila gehigarria onartzen dute zure zerbitzariaren eta Moodle-n arteko komunikazioak zifratzea ahalbidetuz.  Zure zerbitzariak onartzen badu SSL zifratzea erabiltzea gomendagarria da.';
+$string['messageinboundhostssl_desc'] = 'Posta elektronikoko zerbitzari batzuk segurtasun-maila gehigarria onartzen dute zure zerbitzariaren eta Moodlen arteko komunikazioak zifratzea ahalbidetuz.  Zure zerbitzariak onartzen badu SSL zifratzea erabiltzea gomendagarria da.';
 $string['messageinboundhosttype'] = 'Zerbitzari-mota';
 $string['messageinboundhostuser'] = 'Erabiltzaile-izena';
 $string['messageinboundhostuser_desc'] = 'Hemen zure zerbitzu-hornitzaileak helbide elektronikoan sartzeko eman dizun erabiltzaile-izena zehaztu behar da.';
-$string['messageinboundmailboxconfiguration_desc'] = 'Mezuak bidaltzen direnean, helbidea+datuak@adibidea.eus formatua izaten dute. Moodle-tik helbideak modu fidagarrian sortzeko, mesedez zehaztu @ zeinuaren aurretik erabili beharreko helbidea eta @ zeinuaren atzetik erabili beharreko domeinua. Esaterako, adibideko Postontziaren izena "helbidea" izango litzateke, eta posta elektronikoaren domeinua "adibidea.eus" izango litzateke. Helburu honetarako posta kontu dedikatu bat erabili beharko zenuke.';
+$string['messageinboundmailboxconfiguration_desc'] = 'Mezuak bidaltzen direnean, helbidea+datuak@adibidea.eus formatua izaten dute. Moodletik helbideak modu fidagarrian sortzeko, mesedez zehaztu @ zeinuaren aurretik erabili beharreko helbidea eta @ zeinuaren atzetik erabili beharreko domeinua. Esaterako, adibideko Postontziaren izena "helbidea" izango litzateke, eta posta elektronikoaren domeinua "adibidea.eus" izango litzateke. Helburu honetarako posta kontu dedikatu bat erabili beharko zenuke.';
 $string['messageprocessingerror'] = 'Orain dela gutxi "{$a->subject}" izenburuko e-maila bidali duzu baina tamalez ezin izan da prozesatu.
 
 Errorearen xehetasunak azpian erakusten dira.

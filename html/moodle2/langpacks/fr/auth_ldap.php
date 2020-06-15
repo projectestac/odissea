@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_ldap_ad_create_req'] = 'Impossible de créer le nouveau compte dans Active Directory. Assurez-vous que votre serveur satisfait toutes les conditions requises pour que cela fonctionne (connexion LDAPS, utilisateur de connexion avec droits adéquats, etc.)';
-$string['auth_ldap_attrcreators'] = 'Liste des groupes ou contextes dont les membres sont autorisés à créer des attributs. Les groupes (en général, de la forme « cn=teachers,ou=staff,o=myorg ») sont séparés par des points-virgules (;)';
+$string['auth_ldap_ad_create_req'] = 'Impossible de créer le nouveau compte dans Active Directory. Assurez-vous que votre serveur satisfait toutes les conditions requises pour que cela fonctionne (connexion LDAPS, utilisateur de connexion avec droits d\'accès adéquats, etc.)';
+$string['auth_ldap_attrcreators'] = 'Liste des groupes ou contextes dont les membres ont les permissions requises pour créer des attributs. Les groupes (en général, de la forme « cn=teachers,ou=staff,o=myorg ») sont séparés par des points-virgules (;)';
 $string['auth_ldap_attrcreators_key'] = 'Gestionnaires d\'attributs';
 $string['auth_ldap_auth_user_create_key'] = 'Créer les utilisateurs en externe';
 $string['auth_ldap_bind_dn'] = 'Si vous souhaitez utiliser une connexion authentifiée au serveur LDAP pour chercher les utilisateurs, indiquez ici son nom de connexion. Quelque chose comme : « cn=ldapuser, o=Organisation, c=FR ».';
@@ -54,7 +54,7 @@ $string['auth_ldap_graceattr_desc'] = 'Facultatif : ne pas tenir compte de l\'a
 $string['auth_ldap_gracelogin_key'] = 'Attribut tolérance de connexion';
 $string['auth_ldap_gracelogins_desc'] = 'Activer le support de tolérance de connexion de LDAP. Une fois le mot de passe échu, l\'utilisateur peut se connecter jusqu\'à ce que le paramètre de tolérance de connexion ait une valeur de 0. L\'activation de ce réglage affiche un message explicite lorsque le mot de passe est échu.';
 $string['auth_ldap_gracelogins_key'] = 'Tolérance des connexions';
-$string['auth_ldap_groupecreators'] = 'Liste des groupes ou contextes dont les membres sont autorisés à créer des groupes. Les groupes (en général, de la forme « cn=teachers,ou=staff,o=myorg ») sont séparés par des points-virgules (;)';
+$string['auth_ldap_groupecreators'] = 'Liste des groupes ou contextes dont les membres ont les permissions requises pour créer des groupes. Les groupes (en général, de la forme « cn=teachers,ou=staff,o=myorg ») sont séparés par des points-virgules (;)';
 $string['auth_ldap_groupecreators_key'] = 'Gestionnaires de groupes';
 $string['auth_ldap_host_url'] = 'Indiquer le serveur LDAP sous forme d\'URL comme « ldap://ldap.organisation.fr/ » ou « ldaps://ldap.organisation.fr/ ». Si vous utilisez plusieurs serveurs LDAP redondants, séparez leurs adresses avec des points-virgules (;).';
 $string['auth_ldap_host_url_key'] = 'URL du serveur';
@@ -142,7 +142,7 @@ $string['pagesize_key'] = 'Taille de page';
 $string['pluginname'] = 'Serveur LDAP';
 $string['pluginnotenabled'] = 'Plugin non activé !';
 $string['privacy:metadata'] = 'Le plugin d\'authentification Serveur LDAP n\'enregistre aucune donnée personnelle.';
-$string['renamingnotallowed'] = 'Le changement de nom d\'utilisateur n\'est pas autorisé dans LDAP';
+$string['renamingnotallowed'] = 'Le changement de nom d\'utilisateur n\'est pas permis dans LDAP';
 $string['rootdseerror'] = 'Erreur lors de la requête rootDSE pour Active Directory';
 $string['start_tls'] = 'Utiliser le service LDAP normal (port 389) avec cryptage TLS';
 $string['start_tls_key'] = 'Utiliser TLS';

@@ -304,7 +304,7 @@ $string['lockdiscussionafter'] = 'Blokkeer discussies na een periode zonder acti
 $string['lockdiscussionafter_help'] = 'Discussies kunnen automatisch worden geblokkeerd nadat een bepaalde tijd is verstreken sinds het laatste antwoord.
 Gebruikers met de mogelijkheid om te antwoorden op gesloten discussies kunnen een discussie ontgrendelen door een antwoord te plaatsen.';
 $string['longpost'] = 'Lang bericht';
-$string['mailnow'] = 'Stuur e-mail onmiddellijk';
+$string['mailnow'] = 'Verstuur meldingen over dit forumbericht zonder vertraging voor bewerken';
 $string['managesubscriptionsoff'] = 'Beëindig het beheren van inschrijvingen';
 $string['managesubscriptionson'] = 'Beheer abonnementen';
 $string['manydiscussions'] = 'Discussies per pagina';

@@ -323,7 +323,7 @@ $string['emailoverduesmall'] = 'あなたは {$a->quizname} の受験を送信�
 $string['emailoverduesubject'] = '受験期限切れ: {$a->quizname}';
 $string['empty'] = '空';
 $string['enabled'] = '有効';
-$string['endtest'] = 'テスト終了 ...';
+$string['endtest'] = 'テストを終了する処理へ ...';
 $string['erroraccessingreport'] = 'あなたはこのレポートにアクセスできません。';
 $string['errorinquestion'] = '問題のエラー';
 $string['errormissingquestion'] = 'エラー: id {$a} の問題はありません。';
@@ -370,7 +370,7 @@ $string['filloutnumericalanswer'] = 'あなたは少なくとも1つの答えお
 $string['filloutoneanswer'] = 'あなたは1つ以上の考えられる答えを入力する必要があります。空白の答えは使用されません。「*」はどのような文字にでも合致するワイルドカードとして使用することができます。最初の組み合わせの答えは評点およびフィードバックを決定するため使用されます。';
 $string['filloutthreequestions'] = '組み合わせの答えがある問題を少なくとも3つ入力してください。答えが空白の問題を使用して誤答を余分に提供することもできます。問題と答えの両方が空白のエントリは無視されます。';
 $string['fillouttwochoices'] = 'あなたは2つ以上の選択肢を入力する必要があります。空白の選択肢は使用されません。';
-$string['finishattemptdots'] = '受験を終了する ...';
+$string['finishattemptdots'] = '受験を終了する処理へ ...';
 $string['finishreview'] = 'レビューを終了する';
 $string['forceregeneration'] = '再生成を強制する';
 $string['formatnotfound'] = 'インポート/エクスポートフォーマット {$a} が見つかりませんでした。';
@@ -810,29 +810,29 @@ $string['returnattempt'] = '受験に戻る';
 $string['reuseifpossible'] = '前に削除したものを再利用する';
 $string['reverttodefaults'] = '小テストデフォルトに戻す';
 $string['review'] = 'レビュー';
-$string['reviewafter'] = '小テスト終了後にレビューを許可する';
+$string['reviewafter'] = '小テストのクローズ後にレビューを許可する';
 $string['reviewalways'] = '常にレビューを許可する';
 $string['reviewattempt'] = '受験をレビューする';
-$string['reviewbefore'] = '小テスト実施中にレビューを許可する';
-$string['reviewclosed'] = '小テスト終了後';
-$string['reviewduring'] = '受験中';
-$string['reviewimmediately'] = '受験後すぐに';
+$string['reviewbefore'] = '小テストのクローズ前の期間に (受験可能期限が設定されていない場合は恒久的に) レビューを許可する';
+$string['reviewclosed'] = '小テストのクローズ後 (受験可能期限が設定されており、その期限を過ぎた後)';
+$string['reviewduring'] = '学生の受験最中';
+$string['reviewimmediately'] = '学生の受験直後 (2分間)';
 $string['reviewnever'] = 'レビューを許可しない';
 $string['reviewofattempt'] = '受験 {$a} のレビュー';
 $string['reviewofpreview'] = 'プレビューのレビュー';
 $string['reviewofquestion'] = '{$a->user} による {$a->quiz} の問題 {$a->question} のレビュー';
-$string['reviewopen'] = '後で、小テスト実施中';
+$string['reviewopen'] = '学生の受験後、小テストがクローズされるまで';
 $string['reviewoptions'] = '学生はレビューできる';
 $string['reviewoptionsheading'] = 'レビューオプション';
 $string['reviewoptionsheading_help'] = 'このオプションでは小テスト受験結果をレビューまたは小テストレポートを表示する場合、どの情報を学生が閲覧できるかコントロールします。
 
-**受験中** 設定は「複数受験インタラクティブ」のような特定の挙動にのみ関連します。
+**学生の受験最中** 設定は「複数受験インタラクティブ」のような特定の挙動にのみ関連します。
 
-**受験後すぐに** 設定はユーザが「すべてを送信して終了する」ボタンをクリックして受験を終了した後、2分以内を意味します。
+**学生の受験直後 (2分間)** 設定はユーザが「すべてを送信して終了する」ボタンをクリックして受験を終了した後、2分以内を意味します。
 
-**後で、小テスト実施中** 設定は今後および小テスト終了日時の前を意味します。
+**学生の受験後、小テストがクローズされるまで** 設定は今後および小テスト終了日時の前を意味します。
 
-**小テスト終了後** 設定は小テスト終了日時経過後を意味します。小テストに終了日時が設定されていない場合、この状態に達することはありません。';
+**小テストのクローズ後 (受験可能期限が設定されており、その期限を過ぎた後)** 設定は小テスト終了日時経過後を意味します。小テストに終了日時が設定されていない場合、この状態に達することはありません。';
 $string['reviewoverallfeedback'] = '全体フィードバック';
 $string['reviewoverallfeedback_help'] = '学生の合計点に応じて受験の最後に与えられるフィードバックです。';
 $string['reviewresponse'] = '解答のレビュー';
@@ -924,7 +924,7 @@ $string['stateoverdue'] = '期限切れ';
 $string['stateoverduedetails'] = '送信期限: {$a}';
 $string['status'] = 'ステータス';
 $string['stoponerror'] = 'エラーで中止する';
-$string['submitallandfinish'] = 'すべてを送信して終了する';
+$string['submitallandfinish'] = 'すべての解答をサーバへ送信し、採点待ちにする';
 $string['subneterror'] = '申し訳ございません、この小テストは特定の場所からのみアクセスすることができます。現在、あなたのコンピュータはこの小テストを利用できるコンピュータではありません。';
 $string['subnetnotice'] = '特定の場所からのみアクセスできるようこの小テストはロックされています。現在、あなたのコンピュータはこの小テストの使用を許可されていません。あなたが教師としてプレビューすることは許可されています。';
 $string['subplugintype_quiz'] = 'レポート';

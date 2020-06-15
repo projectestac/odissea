@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = '我的私人文件';
+$string['pluginname'] = '私人文件';
 $string['privatefiles'] = '私人文件';
 $string['private_files:addinstance'] = '新增私人文件版块';
 $string['private_files:myaddinstance'] = '在个人主页新增一个私人文件版块';

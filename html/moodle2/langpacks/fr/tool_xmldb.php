@@ -36,8 +36,8 @@ $string['checkbigints'] = 'Vérifier les entiers';
 $string['check_bigints'] = 'Recherche des entiers incorrects dans la base de données';
 $string['checkdefaults'] = 'Vérifier les valeurs par défaut';
 $string['check_defaults'] = 'Recherche des valeurs par défaut incohérentes dans la base de données';
-$string['checkforeignkeys'] = 'Vérifier les clefs extérieures';
-$string['check_foreign_keys'] = 'Recherche des violations de clefs extérieures';
+$string['checkforeignkeys'] = 'Vérifier les clefs étrangères';
+$string['check_foreign_keys'] = 'Recherche des violations de clefs étrangères';
 $string['checkindexes'] = 'Vérifier les index';
 $string['check_indexes'] = 'Recherche des index manquants de la base de données';
 $string['checkoraclesemantics'] = 'Vérifier les sémantiques';
@@ -57,7 +57,7 @@ Vous pouvez copier alors ces instructions et les lancer avec votre interface SQL
 Il est vivement recommandé d\'avoir la dernière version (version +) disponible pour votre version de Moodle avant de lancer la recherche des valeurs par défaut incohérentes.
 
 Cette fonctionnalité n\'effectue aucune modification de la base de données (elle ne fait que la lire), et peut donc être lancée à tout instant.';
-$string['confirmcheckforeignkeys'] = 'Cette fonctionnalité recherche les violations potentielles des clefs extérieures définies dans le fichier de définitions install.xml. (Moodle ne génère actuellement dans sa base de données aucune contrainte sur les clefs extérieures, raison pour laquelle des données non valides peuvent être présentes.)
+$string['confirmcheckforeignkeys'] = 'Cette fonctionnalité recherche les violations potentielles des clefs étrangères définies dans le fichier de définitions install.xml. (Moodle ne génère actuellement dans sa base de données aucune contrainte sur les clefs étrangères, raison pour laquelle des données non valides peuvent être présentes.)
 
 Il est vivement recommandé d\'avoir la dernière version (version +) disponible pour votre version de Moodle avant de lancer la recherche des éventuelles violations.
 
@@ -122,9 +122,9 @@ $string['fieldsusedinindex'] = 'Ce champ est utilisé comme index';
 $string['fieldsusedinkey'] = 'Ce champ est utilisé comme clef';
 $string['filemodifiedoutfromeditor'] = 'Attention ! Fichier modifié localement à l\'aide de l\'éditeur XMLDB. L\'enregistrement écrasera les modifications locales.';
 $string['filenotwriteable'] = 'Fichier non accessible en écriture';
-$string['fkunknownfield'] = 'La clef externe {$a->keyname} sur la table {$a->tablename} fait référence à un champ inexistant {$a->reffield} dans la table référencée {$a->reftable}.';
-$string['fkunknowntable'] = 'La clef externe {$a->keyname} sur la table {$a->tablename} fait référence à une table inexistante {$a->reftable}.';
-$string['fkviolationdetails'] = 'La clef extérieure {$a->keyname} sur la table {$a->tablename} subit {$a->numviolations} violations sur un total de {$a->numrows} rangées.';
+$string['fkunknownfield'] = 'La clef étrangère {$a->keyname} sur la table {$a->tablename} fait référence à un champ inexistant {$a->reffield} dans la table référencée {$a->reftable}.';
+$string['fkunknowntable'] = 'La clef étrangère {$a->keyname} sur la table {$a->tablename} fait référence à une table inexistante {$a->reftable}.';
+$string['fkviolationdetails'] = 'La clef étrangère {$a->keyname} sur la table {$a->tablename} subit {$a->numviolations} violations sur un total de {$a->numrows} rangées.';
 $string['float2numbernote'] = 'Remarque : bien que les champs « float » soient supportés à 100% par XMLDB, il est recommandé de les convertir en champs « number ».';
 $string['floatincorrectdecimals'] = 'Nombre de décimales incorrecte pour champ virgule flottante';
 $string['floatincorrectlength'] = 'Longueur du champ virgule flottante incorrecte';
@@ -145,7 +145,7 @@ $string['keys'] = 'Clefs';
 $string['listreservedwords'] = 'Liste des mots réservés<br />(utilisée pour tenir à jour <a href="https://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a>)';
 $string['load'] = 'Charger';
 $string['main_view'] = 'Vue d\'ensemble';
-$string['masterprimaryuniqueordernomatch'] = 'Les champs dans votre clef externe doivent être listés dans le même ordre que la UNIQUE KEY dans la table référencée.';
+$string['masterprimaryuniqueordernomatch'] = 'Les champs dans votre clef étrangère doivent être listés dans le même ordre que la UNIQUE KEY dans la table référencée.';
 $string['missing'] = 'Manquant(s)';
 $string['missingindexes'] = 'Index manquants trouvés';
 $string['mustselectonefield'] = 'Pour voir les actions possibles sur un champ, vous devez d\'abord en sélectionner un !';
@@ -158,11 +158,11 @@ $string['newtable'] = 'Nouvelle table';
 $string['newtablefrommysql'] = 'Nouvelle table depuis MySQL';
 $string['new_table_from_mysql'] = 'Nouvelle table depuis MySQL';
 $string['nofieldsspecified'] = 'Aucun champ spécifié';
-$string['nomasterprimaryuniquefound'] = 'La (les) colonne(s) référencées par votre clef externe doit(vent) être inclues dans une clef (KEY) primaire ou unique de la table référencée. Il ne suffit pas que la colonne soit dans un UNIQUE INDEX.';
+$string['nomasterprimaryuniquefound'] = 'La (les) colonne(s) référencées par votre clef étrangère doit(vent) être inclues dans une clef (KEY) primaire ou unique de la table référencée. Il ne suffit pas que la colonne soit dans un UNIQUE INDEX.';
 $string['nomissingindexesfound'] = 'Aucun index manquant n\'a été trouvé. Votre base de données ne nécessite aucune manipulation.';
 $string['noreffieldsspecified'] = 'Aucun champ de référence spécifié';
 $string['noreftablespecified'] = 'Table de référence spécifiée non trouvée';
-$string['noviolatedforeignkeysfound'] = 'Aucune violation de clef extérieure n\'a été trouvée.';
+$string['noviolatedforeignkeysfound'] = 'Aucune violation de clef étrangère n\'a été trouvée.';
 $string['nowrongdefaultsfound'] = 'Aucune valeur par défaut incohérente n\'a été trouvée. Votre base de données ne nécessite aucune manipulation.';
 $string['nowrongintsfound'] = 'Aucun entier incorrectement défini n\'a été trouvé. Votre base de données ne nécessite aucune manipulation.';
 $string['nowrongoraclesemanticsfound'] = 'Aucune colonne Oracle varchar2 utilisant la sémantique BYTE n\'a été trouvée. Aucune intervention n\'est nécessaire sur votre base de données.';
@@ -170,8 +170,8 @@ $string['numberincorrectdecimals'] = 'Nombre de décimales incorrect pour champ 
 $string['numberincorrectlength'] = 'Longueur du champ numérique incorrecte';
 $string['numberincorrectwholepart'] = 'Nombre entier trop grand pour le champ nombre';
 $string['pendingchanges'] = 'Remarque ! Vous avez effectué des modifications dans ce fichier. Vous pouvez l\'enregistrer quand cela vous convient.';
-$string['pendingchangescannotbesaved'] = 'Ce fichier comprend des modifications, mais ne peut pas être enregistré ! Veuillez vérifier que le dossier, ainsi que le fichier « install.xml » qu\'il contient, disposent des droits d\'accès en écriture du serveur web.';
-$string['pendingchangescannotbesavedreload'] = 'Ce fichier comprend des modifications, mais ne peut pas être enregistré ! Veuillez vérifier que le dossier, ainsi que le fichier « install.xml » qu\'il contient, disposent des permissions d\'écriture du serveur web. Rafraîchissez ensuite l\'affichage de cette page, et vous pourrez alors enregistrer les modifications.';
+$string['pendingchangescannotbesaved'] = 'Ce fichier comprend des modifications, mais ne peut pas être enregistré ! Veuillez vérifier que le dossier, ainsi que le fichier « install.xml » qu\'il contient, disposent des droits d\'accès en écriture par le serveur web.';
+$string['pendingchangescannotbesavedreload'] = 'Ce fichier comprend des modifications, mais ne peut pas être enregistré ! Veuillez vérifier que le dossier, ainsi que le fichier « install.xml » qu\'il contient, disposent des droits d\'accès en écriture par le serveur web. Rafraîchissez ensuite l\'affichage de cette page, et vous pourrez alors enregistrer les modifications.';
 $string['pluginname'] = 'Éditeur XMLDB';
 $string['primarykeyonlyallownotnullfields'] = 'Les clefs primaires ne peuvent pas être nulles';
 $string['privacy:metadata'] = 'Le plugin Éditeur XMLDB n\'enregistre aucune donnée personnelle.';
@@ -205,8 +205,8 @@ $string['view_structure_sql'] = 'Afficher la structure SQL';
 $string['view_table_php'] = 'Afficher la table PHP';
 $string['view_table_sql'] = 'Afficher la table SQL';
 $string['viewxml'] = 'XML';
-$string['violatedforeignkeys'] = 'Clefs extérieures subissant des violations';
-$string['violatedforeignkeysfound'] = 'Clefs extérieures trouvées subissant des violations';
+$string['violatedforeignkeys'] = 'Clefs étrangères subissant des violations';
+$string['violatedforeignkeysfound'] = 'Clefs étrangères trouvées subissant des violations';
 $string['violations'] = 'Violations';
 $string['wrong'] = 'Incorrect';
 $string['wrongdefaults'] = 'Valeurs par défaut erronées';

@@ -50,6 +50,7 @@ $string['bulkcompletiontracking_help'] = '<strong>Nessuno:</strong> Non tracciar
 <strong>Manuale:</strong> Gli studenti possono spuntare manualmente l\'attività per indicarla completata
 
 <strong>In base a condizioni:</strong> Considera l\'attività completata in base al soddisfacimento di condizioni';
+$string['checkactivity'] = 'Casella di spunta dell\'attività / risorsa: {$a}';
 $string['checkall'] = 'Seleziona/deseleziona tutte le attività e risorse';
 $string['checkallsection'] = 'Seleziona/deseleziona tutte le attività e risorse della sezione {$a}';
 $string['completed'] = 'Completato';
@@ -104,7 +105,7 @@ $string['completionsettingslocked'] = 'Impostazioni di completamento bloccate';
 $string['completion-title-manual-n'] = 'Spunta come completata: {$a}';
 $string['completion-title-manual-y'] = 'Spunta come non completata: {$a}';
 $string['completionupdated'] = 'Il completamento dell\'attività <b>{$a}</b> è stato aggiornato';
-$string['completionusegrade'] = 'Valutazione';
+$string['completionusegrade'] = 'Ricevere una valutazione';
 $string['completionusegrade_desc'] = 'Lo studente deve ricevere una valutazione per completare l\'attività';
 $string['completionusegrade_help'] = 'L\'attività dello studente sarà completata quando avrà ricevuto una valutazione. Impostando una sufficienza, saranno visualizzate icone di superamento o di non superamento.';
 $string['completionview'] = 'Visualizzazione';
@@ -112,7 +113,7 @@ $string['completionview_desc'] = 'Lo studente deve accedere all\'attività per c
 $string['completion-y'] = 'Completato';
 $string['completion-y-override'] = 'Completato: (impostato da {$a})';
 $string['configcompletiondefault'] = 'Le impostazioni di default per il tracciamento del completamento quando si creano nuove attività.';
-$string['configenablecompletion'] = 'Consente di abilitare le funzionalità di tracciamento del completamento  nei corsi.';
+$string['configenablecompletion'] = 'Consente di abilitare le funzionalità di tracciamento del completamento  nei corsi. Si consiglia di attivari i criteri di completamento affinché gli utenti possano visualizzare dati utili nella propria Dashboard.';
 $string['confirmselfcompletion'] = 'Conferma di completamento';
 $string['courseaggregation'] = 'Aggregazione';
 $string['courseaggregation_all'] = 'Devono essere completati TUTTI i corsi selezionati';
@@ -171,7 +172,7 @@ $string['markingyourselfcomplete'] = 'Segnalare il completamento del corso';
 $string['modifybulkactions'] = 'Modifica le condizioni per il completamento';
 $string['moredetails'] = 'Ulteriori informazioni';
 $string['nocriteriaset'] = 'Non ci sono criteri di completamento in questo corso';
-$string['nogradeitem'] = 'Non è possibile abilitare la sufficienza su <b>{$a}</b> poiché l\'attività non è valutata.';
+$string['nogradeitem'] = 'Non è possibile abilitare \'ricevere una valutazione\' su <b>{$a}</b> poiché l\'attività non è valutata.';
 $string['notcompleted'] = 'Non completato';
 $string['notenroled'] = 'Non sei iscritto in questo corso';
 $string['nottracked'] = 'In questo corso il tuo stato di completamento non è tracciato.';

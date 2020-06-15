@@ -203,6 +203,7 @@ $string['horizontal'] = 'Horitzontal';
 $string['id'] = 'ID';
 $string['includechoicecodes'] = 'Inclou els codis de selecció';
 $string['includechoicetext'] = 'Inclou el text de selecció';
+$string['includeincomplete'] = 'Inclou les respostes incompletes';
 $string['incorrectcourseid'] = 'L\'identificador del curs és incorrecte';
 $string['incorrectmodule'] = 'L\'identificador del mòdul del curs és incorrecte';
 $string['incorrectquestionnaire'] = 'L\'enquesta és incorrecta';

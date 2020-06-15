@@ -31,10 +31,10 @@ $string['accept_grades'] = 'Onartu kalifikazioak tresnatik';
 $string['accept_grades_admin'] = 'Onartu kalifikazioak tresnatik';
 $string['accept_grades_admin_help'] = 'Zehaztu tresna-hornitzaileak instantziekin lotutako kalifikazioak gehitu, eguneratu, irakurri eta ezabatu ahal izango dituen.
 
-Tresna-hornitzaile batzuek tresnaren barruko ekintzetan oinarritutako kalifikazioak Moodle-ra pasatzea ahalbidetzen dute, esperientzia integratuagoa lortuz.';
+Tresna-hornitzaile batzuek tresnaren barruko ekintzetan oinarritutako kalifikazioak Moodlera pasatzea ahalbidetzen dute, esperientzia integratuagoa lortuz.';
 $string['accept_grades_help'] = 'Zehaztu tresna-hornitzaileak instantziekin lotutako kalifikazioak gehitu, eguneratu, irakurri eta ezabatu ahal izango dituen.
 
-Tresna-hornitzaile batzuek tresnaren barruko ekintzetan oinarritutako kalifikazioak Moodle-ra pasatzea ahalbidetzen dute, esperientzia integratuagoa lortuz.
+Tresna-hornitzaile batzuek tresnaren barruko ekintzetan oinarritutako kalifikazioak Moodlera pasatzea ahalbidetzen dute, esperientzia integratuagoa lortuz.
 
 Ohartu ezarpen hau tresnaren konfigurazioak baliogabe dezakeela.';
 $string['action'] = 'Ekintza';
@@ -46,7 +46,7 @@ $string['addnewapp'] = 'Gaitu kanpoko aplikazioa';
 $string['addserver'] = 'Gehitu konfiantzazko beste zerbitzari bat';
 $string['addtype'] = 'Gehitu aurretik konfiguratutako tresna';
 $string['allow'] = 'Baimendu';
-$string['allowsetting'] = 'Baimendu tresnek Moodle-n ezarpenen 8K gordetzen.';
+$string['allowsetting'] = 'Baimendu tresnek Moodlen ezarpenen 8K gordetzen.';
 $string['always'] = 'Beti';
 $string['autoaddtype'] = 'Gehitu tresna';
 $string['automatic'] = 'Automatikoa, erremintaren URLan oinarritua';
@@ -101,11 +101,11 @@ $string['debuglaunchoff'] = 'Hasiera arrunta';
 $string['debuglaunchon'] = 'Araztu hasiera';
 $string['default'] = 'Lehenetsitakoa';
 $string['default_launch_container'] = 'Lehenetsitako hasierako edukiontzia';
-$string['default_launch_container_help'] = 'Hasierako edukiontziak tresnaren itxurari eragiten dio ikastarotik abiarazten denean. Hasierako edukiontzi batzuek tresnari pantaila-espazio gehiago ematen diote, eta beste batzuek, integrazio hobea Moodle-ren ingurunearekin.
+$string['default_launch_container_help'] = 'Hasierako edukiontziak tresnaren itxurari eragiten dio ikastarotik abiarazten denean. Hasierako edukiontzi batzuek tresnari pantaila-espazio gehiago ematen diote, eta beste batzuek, integrazio hobea Moodleren ingurunearekin.
 
 * **Lehenetsi ** - Erabili tresnaren ezarpenek zehaztutako  hasierako edukiontzia.
-* **Enbotatu ** - Tresna Moodle-ren leihoan bertan agertzen da, jarduera-mota gehienek egiten duten antzeko moduan.
-* **Blokerik gabe enbotatu ** - resna Moodle-ren leihoan bertan agertzen da, orrialdearen goialdeko nabigazio-kontrolekin.
+* **Enbotatu ** - Tresna Moodleren leihoan bertan agertzen da, jarduera-mota gehienek egiten duten antzeko moduan.
+* **Blokerik gabe enbotatu ** - resna Moodleren leihoan bertan agertzen da, orrialdearen goialdeko nabigazio-kontrolekin.
 * *Leiho berria ** - Tresna leiho berri batean irekitzen da, espazio osoa betez.
 Nabigatzailearen arabera, fitxa edo leiho berria batean irekiko da.
 Baliteke nabigatzaileak leiho berria irekiera eragoztea.';
@@ -136,8 +136,8 @@ $string['embed'] = 'Enbotatu';
 $string['embed_no_blocks'] = 'Enbotatu, blokerik gabe';
 $string['enableemailnotification'] = 'Bidali jakinarazpenak posta elektroniko bidez';
 $string['enableemailnotification_help'] = 'Gaituz gero, ikasleek posta elektroniko bidezko jakinarazpena jasoko dute bidalketak kalifikatzen direnean.';
-$string['enterkeyandsecret'] = 'Idatzi kontsumitzaile-gakoa eta partekatutako sekretua';
-$string['enterkeyandsecret_help'] = 'Kontsumiltzaile-gakoa edo/eta partekatutako sekretua eman bazaizu, sartu hemen';
+$string['enterkeyandsecret'] = 'Idatzi kontsumitzaile-gakoa eta sekretu partekatua';
+$string['enterkeyandsecret_help'] = 'Kontsumitzaile-gakoa edo/eta sekretu partekatua eman bazaizu, sartu hemen';
 $string['errorbadurl'] = 'URLa ez da tresna edo kartutxo baliagarria';
 $string['errorincorrectconsumerkey'] = 'Kontsumitzaile-gakoa ez da egokia.';
 $string['errorinvaliddata'] = 'Datu baliogabea: {$a}';
@@ -150,7 +150,7 @@ $string['extensions'] = 'LTI luzapenaren zerbitzuak';
 $string['external_tool_type'] = 'Aurretik konfiguratutako tresna';
 $string['external_tool_type_help'] = '* **Automatikoa, tresnaren URLan oinarritua** - Tresnaren konfigurazio egokiena automatikoki aukeratzen da. Tresnaren URLa ezagutzen ez bada, konfigurazioaren xehetasunak eskuz sartu beharko lirateke.
 * **Aurrez konfiguratutako tresna** - Zehaztutako tresnaren konfigurazioa kanpoko tresna-hornitzailearekin komunikatzean erabiliko da. Tresnaren URLa hornitzaileari ez dagokiola baldin badirudi, abisua erakutsiko da. Tresnaren URLa ematea ez da beti beharrezkoa.
-* **Konfigurazio pertsonala** - Kontsumitzaile-gakoa eta partekatutako sekretua eskuz sartu behar dira. Kontsumitzaile-gakoa eta partekatutako sekretua tresnaren hornitzailearengandik jaso behar dira. Hala ere, tresna guztiek ez dute kontsumitzaile-gakorik eskatzen, ezta partekatutako sekreturik ere. Kasu horretan, eremuak hutsik utzi behar dira.
+* **Konfigurazio pertsonala** - Kontsumitzaile-gakoa eta sekretu partekatua eskuz sartu behar dira. Kontsumitzaile-gakoa eta sekretu partekatua tresnaren hornitzailearengandik jaso behar dira. Hala ere, tresna guztiek ez dute kontsumitzaile-gakorik eskatzen, ezta sekretu partekaturik ere. Kasu horretan, eremuak hutsik utzi behar dira.
 
 ### Aurrez konfiguratutako tresna editatzen
 Aurrez konfiguratutako tresnaren zerrenda zabalgarrian hiru ikono daude:
@@ -159,7 +159,7 @@ Aurrez konfiguratutako tresnaren zerrenda zabalgarrian hiru ikono daude:
 * **Editatu** - Aukeratu ikastaro mailako tresna zerrenda zabalgarrian eta egin klik ikonoan. Tresnaren konfigurazioaren xehetasun guztiak edita daitezke.
 * **Ezabatu** - Ezabatu aukeratutako ikastaro mailako tresna.';
 $string['external_tool_types'] = 'Aurretik konfiguratutako tresnak';
-$string['failedtoconnect'] = 'Moodle-k ezin izan du "{$a}" sistemarekin komunikatu';
+$string['failedtoconnect'] = 'Moodlek ezin izan du "{$a}" sistemarekin komunikatu';
 $string['failedtocreatetooltype'] = 'Tresna berria sortzeak huts egin du. Berrikusi URLa eta saiatu berriro, mesedez.';
 $string['failedtodeletetoolproxy'] = 'Tresnaren erregistroa ezabatzeak huts egin du. "Kudeatu kanpoko tresnen erregistroak" bisitatu eta eskuz ezabatu beharko duzu.';
 $string['filter_basiclti_configlink'] = 'Konfiguratu gogoko guneak eta pasahitzak';
@@ -188,14 +188,14 @@ $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak LTI motako ja
 $string['indicator:socialbreadth'] = 'Gaitasun soziala LTI jardueretan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak LTI motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['invalidid'] = 'LTIren IDa ez zen egokia';
-$string['launch_in_moodle'] = 'Abiarazi tresna Moodle-n';
+$string['launch_in_moodle'] = 'Abiarazi tresna Moodlen';
 $string['launchinpopup'] = 'Abiarazi edukiontzia';
 $string['launch_in_popup'] = 'Abiarazi tresna pop-up-ean';
-$string['launchinpopup_help'] = 'Hasierako edukiontziak tresnaren itxurari eragiten dio ikastarotik abiarazten denean. Hasierako edukiontzi batzuek tresnari pantaila-espazio gehiago ematen diote, eta beste batzuek, integrazio hobeagoa Moodle-ren ingurunearekin.
+$string['launchinpopup_help'] = 'Hasierako edukiontziak tresnaren itxurari eragiten dio ikastarotik abiarazten denean. Hasierako edukiontzi batzuek tresnari pantaila-espazio gehiago ematen diote, eta beste batzuek, integrazio hobeagoa Moodleren ingurunearekin.
 
 * **Lehenetsi ** - Erabili tresnaren ezarpenek zehaztutako  hasierako edukiontzia.
-* **Enbotatu ** - Tresna Moodle-ren leihoan bertan agertzen da, jarduera-mota gehienek egiten duten antzeko moduan.
-* **Blokerik gabe enbotatu ** - resna Moodle-ren leihoan bertan agertzen da, orrialdearen goialdeko nabigazio-kontrolekin.
+* **Enbotatu ** - Tresna Moodleren leihoan bertan agertzen da, jarduera-mota gehienek egiten duten antzeko moduan.
+* **Blokerik gabe enbotatu ** - resna Moodleren leihoan bertan agertzen da, orrialdearen goialdeko nabigazio-kontrolekin.
 * *Leiho berria ** - Tresna leiho berri batean irekitzen da, espazio osoa betez.
 Nabigatzailearen arabera, fitxa edo leiho berria batean irekiko da.
 Baliteke nabigatzaileak leiho berria irekiera eragoztea.';
@@ -218,8 +218,8 @@ $string['lti_launch_error'] = 'Errorea gertatu da kanpoko tresna hastean:';
 $string['lti_launch_error_tool_request'] = '<p>
 Kudeatzaileari tresnaren ezarpena osa dezala eskatzeko egin klik <a href="{$a->admin_request_url}" target="_top">hemen</a>.
 </p>';
-$string['lti_launch_error_unsigned_help'] = '<p>Errore hau tresna-hornitzailearentzako kontsumitzaile-gakoaren eta partekatutako sekretuaren faltagatik gerta liteke.</p>
-<p>Kontsumitzaile-gakoa eta partekatutako sekretua baldin badauzkazu, kanpoko tresnaren instantzia editatzean sar dezakezu (ziurtatu aukera aurreratuak ikusgai direla).</p>
+$string['lti_launch_error_unsigned_help'] = '<p>Errore hau tresna-hornitzailearentzako kontsumitzaile-gakoaren eta sekretu partekatuaren faltagatik gerta liteke.</p>
+<p>Kontsumitzaile-gakoa eta sekretu partekatua baldin badauzkazu, kanpoko tresnaren instantzia editatzean sar dezakezu (ziurtatu aukera aurreratuak ikusgai direla).</p>
 <p>Beste posibilitatea <a href="{$a->course_tool_editor}">ikastaro-mailako tresna-hornitzailearen konfigurazioa sortzea da</a>.</p>';
 $string['lti:manage'] = 'Irakaslea izan erreminta abiarazten denean';
 $string['lti:requesttooladd'] = 'Tresnaren eskaera gune osorako ezarri da';
@@ -229,14 +229,14 @@ $string['lti_tool_request_existing'] = 'Tresnaren domeinurako tresna-ezarpena da
 $string['ltiunknownserviceapicall'] = 'LTI zerbitzu ezezagun baten API deia';
 $string['lti:view'] = 'Abiarazi kanpoko tresnaren jarduerak';
 $string['main_admin'] = 'Laguntza orokorra';
-$string['main_admin_help'] = 'Kanpoko tresnek Moodle-erabiltzaileek urruneko ikasketa-baliabideekin eragitea ahalbidetzen dute. Abio-protokolo berezi batez, urruneko tresnak abiatzen duen erabiltzailearen informazio orokorrera sarbidea du. Adibidez, erakundearen izena, ikastaroaren IDa, eta erabiltzaile-izen edo helbide elektronikoa bezalako informazioa.
+$string['main_admin_help'] = 'Kanpoko tresnek Moodle-ko erabiltzaileek urruneko ikasketa-baliabideekin eragitea ahalbidetzen dute. Abio-protokolo berezi batez, urruneko tresnak abiatzen duen erabiltzailearen informazio orokorrera sarbidea du. Adibidez, erakundearen izena, ikastaroaren IDa, eta erabiltzaile-izen edo helbide elektronikoa bezalako informazioa.
 
 Orri honetan zerrendatutako tresnak hiru kategoriatan banatzen dira:
 
-* **Aktibo** - Tresna-hornitzaile hauek kudeatzaile batek onartu eta ezarri ditu. Gune honetako edozein ikastarotan erabil daiteke. Kontsumitzaile-gakoa eta partekatutako sekretua sartuz gero, gune honen eta urruneko tresnaren arteko konfiantzazko harremana ezartzen da, komunikazio-kanal segurua erabiliz.
+* **Aktibo** - Tresna-hornitzaile hauek kudeatzaile batek onartu eta ezarri ditu. Gune honetako edozein ikastarotan erabil daiteke. Kontsumitzaile-gakoa eta sekretu partekatua sartuz gero, gune honen eta urruneko tresnaren arteko konfiantzazko harremana ezartzen da, komunikazio-kanal segurua erabiliz.
 * **Zain** - Tresna-hornitzaile hauek pakete-inportazioaz ezartzen dira, baina ez ditu kudeatzaile batek konfiguratu behar.
-Irakasleek hornitzaile hauen tresnak erabil ditzake kontsumitzaile-gakoa eta partekatutako sekretua baldin badauzka, edo holakorik eskatzen ez bada.
-* **Ezeztatu** - Kudeatzaileak tresna-hornitzaile hauek markatu ditu, gune osoan erabili ahal izateko asmorik ez baitauka. Irakasleek hornitzaile hauen tresnak erabil ditzake kontsumitzaile-gakoa eta partekatutako sekretua baldin badauzka, edo holakorik eskatzen ez bada.';
+Irakasleek hornitzaile hauen tresnak erabil ditzake kontsumitzaile-gakoa eta sekretu partekatua baldin badauzka, edo holakorik eskatzen ez bada.
+* **Ezeztatu** - Kudeatzaileak tresna-hornitzaile hauek markatu ditu, gune osoan erabili ahal izateko asmorik ez baitauka. Irakasleek hornitzaile hauen tresnak erabil ditzake kontsumitzaile-gakoa eta sekretu partekatua baldin badauzka, edo holakorik eskatzen ez bada.';
 $string['manage_external_tools'] = 'Kudeatu tresnak';
 $string['manage_tool_proxies'] = 'Kudeatu kanpoko tresnen erregistroak';
 $string['manage_tools'] = 'Kudeatu aurretik konfiguratutako tresnak';
@@ -244,7 +244,7 @@ $string['manuallyaddtype'] = 'Bestela, <a href="{$a}">tresna eskuz konfigura dez
 $string['miscellaneous'] = 'Denetarikoak';
 $string['misconfiguredtools'] = 'Gaizki konfiguratutako tresna-instantziak atzeman dira';
 $string['missingparameterserror'] = 'Orria gaizki konfiguratuta dago: "{$a}"';
-$string['module_class_type'] = 'Moodle-ren jarduera-mota';
+$string['module_class_type'] = 'Moodleko jarduera-mota';
 $string['modulename'] = 'Kanpoko tresna';
 $string['modulename_help'] = 'Kanpoko tresna jarduerak ikasleen eta beste webguneetako irakaskuntza jarduera eta baliabideen arteko interakzioa ahalbidetzen du. Esaterako, kanpoko tresna batek jarduera mota ezberdin baterako edo editore baten irakaskuntza-materialetarako sarbidea eman dezake.
 
@@ -254,7 +254,7 @@ Kanpoko tresna jarduera URL baliabidearekin hainbat gauzatan desberdintzen da:
 
 * Kanpoko tresnak ingurunearen jakitun dira; besteak beste erreminta abiatu duen erabiltzailearen, bere instituzioaren, ikastaroaren eta izenaren berri du.
 * Kanpoko tresnek jarduerarekin erlazionaturiko kalifikazioak irakurri, eguneratu eta ezabatzeko aukera ematen du.
-* Kanpoko tresnek erreminta hornitzailearen webgunearen eta Moodle-ren arteko konfiantzazko erlazioa ezartzen du, euren arteko konfiantzazko komunikazioa ahalbidetuz.';
+* Kanpoko tresnek erreminta hornitzailearen webgunearen eta Moodleren arteko konfiantzazko erlazioa ezartzen du, euren arteko konfiantzazko komunikazioa ahalbidetuz.';
 $string['modulenameplural'] = 'Kanpoko tresnak';
 $string['modulenamepluralformatted'] = 'LTI instantziak';
 $string['name'] = 'Izena';
@@ -273,7 +273,7 @@ $string['no_tp_cancelled'] = 'Ez da kanpoko tresnen erregistrorik ezeztatu.';
 $string['no_tp_configured'] = 'Ez da ezarri kanpoko tresnen erregistrorik.';
 $string['no_tp_pending'] = 'Ez dago zain kanpoko tresnaren erregistrorik.';
 $string['no_tp_rejected'] = 'Ez da kanpoko tresnen erregistrorik gaitzetsi.';
-$string['notypes'] = 'Une honetan Moodle-n ez da LTI tresnarik ezarri. Egin klik goiko instalazio-estekan bat gehitzeko.';
+$string['notypes'] = 'Une honetan Moodlen ez da LTI tresnarik ezarri. Egin klik goiko instalazio-estekan bat gehitzeko.';
 $string['noviewusers'] = 'Ez da baimendutako erabiltzailerik aurkitu tresna hau erabiltzeko';
 $string['optionalsettings'] = 'Aukerako ezarpenak';
 $string['organization'] = 'Erakundearen xehetasunak';
@@ -289,20 +289,20 @@ Eremu hau hutsik utzi da, gunearen ezarpenen araberako balio lehenetsia erabilik
 $string['pagesize'] = 'Orriko erakutsitako bidalketak';
 $string['parameter'] = 'Tresnaren parametroak';
 $string['parameter_help'] = 'Tresna-hornitzaileak tresnaren parametroak eskatzen ditu onartutako proxy-tresnan.';
-$string['password'] = 'Partekatutako sekretua';
-$string['password_admin'] = 'Partekatutako sekretua';
-$string['password_admin_help'] = 'Partekatutako sekretua tresnaren sarbide kautotua lortzeko moduko pasahitzatzat jo daiteke. Tresna-hornitzailearen kontsumiltzaile-gakoarekin batera erabili beharko litzateke.
+$string['password'] = 'Sekretu partekatua';
+$string['password_admin'] = 'Sekretu partekatua';
+$string['password_admin_help'] = 'Sekretu partekatua tresnaren sarbide kautotua lortzeko moduko pasahitzatzat jo daiteke. Tresna-hornitzailearen kontsumitzaile-gakoarekin batera erabili beharko litzateke.
 
-Baliteke Moodle-rekin komunikazio segurua behar ez duten eta kalifikazio-txostenak bezalako zerbitzu gehigarririk ematen ez duten tresnek partekatutako sekretuaren beharrik ez izatea.';
-$string['password_help'] = 'Aurrez konfiguratutako tresnen kasuan, ez da beharrezkoa partekatutako sekretua hemen sartzea, horixe konfigurazio-prozesuaren barruan emango baita.
+Baliteke Moodlerekin komunikazio segurua behar ez duten eta kalifikazio-txostenak bezalako zerbitzu gehigarririk ematen ez duten tresnek sekretu partekatuaren beharrik ez izatea.';
+$string['password_help'] = 'Aurrez konfiguratutako tresnen kasuan, ez da beharrezkoa sekretu partekatua hemen sartzea, horixe konfigurazio-prozesuaren barruan emango baita.
 
 Eremu hau osatu beharko da oraindik konfiguratu ez den tresna-hornitzaile baterako esteka sortzen ari bada.
 
 Tresna-hornitzailea ikastaro honetan behin baino gehiagotan erabiliko bada, ikastaroko tresna-konfigurazioa gehitzea ideia ona da.
 
-Partekatutako sekretua tresnaren sarbide kautotua lortzeko moduko pasahitzatzat jo daiteke. Tresna-hornitzailearen kontsumiltzaile-gakoarekin batera erabili beharko litzateke.
+Sekretu partekatua tresnaren sarbide kautotua lortzeko moduko pasahitza gisa jo daiteke. Tresna-hornitzailearen kontsumitzaile-gakoarekin batera erabili beharko litzateke.
 
-Baliteke Moodle-rekin komunikazio segurua behar ez duten eta kalifikazio-txostenak bezalako zerbitzu gehigarririk ematen ez duten tresnek partekatutako sekretuaren beharrik ez izatea.';
+Baliteke Moodlerekin komunikazio segurua behar ez duten eta kalifikazio-txostenak bezalako zerbitzu gehigarririk ematen ez duten tresnek sekretu partekatuaren beharrik ez izatea.';
 $string['pending'] = 'Zain';
 $string['pluginadministration'] = 'Kanpoko tresnaren kudeaketa';
 $string['pluginname'] = 'Kanpoko tresna';
@@ -342,7 +342,7 @@ $string['quickgrade_help'] = 'Gaituz gero, tresna asko orri batean kalifika dait
 $string['redirect'] = 'Berbidalketa segundu gutxitan gertatuko da. Horren ezean, egin klik botoian.';
 $string['register'] = 'Erregistratu';
 $string['registertype'] = 'Konfiguratu kanpoko tresna berri baten erregistroa.';
-$string['register_warning'] = 'Erregistro-orria irekitzea luzeegi irauten ari dela dirudi. Erakusten ez bada, baieztatu konfigurazioan URL egokia sartu duzula. Moodle-k https erabiltzen badu, ziurtatu konfiguratzen ari zaren tresnak https onartzen duen eta URLan https erabiltzen ari zaren.';
+$string['register_warning'] = 'Erregistro-orria irekitzea luzeegi irauten ari dela dirudi. Erakusten ez bada, baieztatu konfigurazioan URL egokia sartu duzula. Moodlek https erabiltzen badu, ziurtatu konfiguratzen ari zaren tresnak https onartzen duen eta URLan https erabiltzen ari zaren.';
 $string['registrationname'] = 'Tresna-hornitzailearen izena';
 $string['registrationname_help'] = 'Idatzi erregistratzen ari den tresnaren hornitzailearen izena.';
 $string['registration_options'] = 'Erregistrorako aukerak';
@@ -357,7 +357,7 @@ $string['resourcekey_admin_help'] = 'Kontsumitzaile-gakoa tresnaren sarbide kaut
 
 Kontsumitzaile-gakoa tresna-hornitzaileak eman behar du. Lortzeko metodoa hornitzailearen arabera aldatzen da. Prozedura automatikoa izan daiteke edo tresna-hornitzailearen elkarrizketa eska dezake.
 
-Baliteke Moodle-rekin komunikazio segurua behar ez duten eta kalifikazio-txostenak bezalako zerbitzu gehigarririk ematen ez duten tresnek partekatutako sekretuaren beharrik ez izatea.';
+Baliteke Moodlekin komunikazio segurua behar ez duten eta kalifikazio-txostenak bezalako zerbitzu gehigarririk ematen ez duten tresnek partekatutako sekretuaren beharrik ez izatea.';
 $string['resourcekey_help'] = 'Aurrez konfiguratutako tresnen kasuan, hemen baliabide-gakoa sartzea ez da beharrezkoa, kontsumitzailearen gakoa ezarpen-prozesuan zehar emango baita.
 
 Eremu hau sartu beharko litzateke oraindik konfiguratu ez den tresna-hornitzaile batekiko esteka sortzen bada.
@@ -367,15 +367,15 @@ Kontsumitzaile-gakoa tresnarako sarbidea kautotzeko erabiltzaile-izen bezala ule
 
 Kontsumitzaile-gakoa tresna-hornitzaileak eman behar du. Kontsumitzaile-gakoa lortzeko metodoa tresna-hornitzailearen arabera aldatzen da. Prozedura automatikoa izan daiteke, edo tresna-hornitzailearekin elkarrizketa eskatu.
 
-Moodle-rekin komunikazio segurua eskatzen ez duten zerbitzu gehigarririk ematen ez duten tresnek (kalifikazio-txostenek bezala) ez dute baliabide-gakorik behar izaten.';
+Moodlekin komunikazio segurua eskatzen ez duten zerbitzu gehigarririk ematen ez duten tresnek (kalifikazio-txostenek bezala) ez dute baliabide-gakorik behar izaten.';
 $string['resourceurl'] = 'Baliabidearen URLa';
 $string['return_to_course'] = 'Egin klik <a href="{$a->link}" target="_top">hemen</a> ikastarora itzultzeko.';
 $string['saveallfeedback'] = 'Gorde nire feedback guztiak';
 $string['search:activity'] = 'Kanpoko tresna - jardueraren informazioa';
 $string['secure_icon_url'] = 'Ikono seguruaren URLa';
-$string['secure_icon_url_help'] = 'URL ikonoaren antzekoa, baina Moodle-ra modu seguruan SSLren bidez sartzen denean erabilia. Eremu hau nabigatzaileak irudi ez-seguruaren arrisku-abisua ez erakusteko erabiltzen da.';
+$string['secure_icon_url_help'] = 'URL ikonoaren antzekoa, baina Moodlera modu seguruan SSLren bidez sartzen denean erabilia. Eremu hau nabigatzaileak irudi ez-seguruaren arrisku-abisua ez erakusteko erabiltzen da.';
 $string['secure_launch_url'] = 'Tresna seguruaren URLa';
-$string['secure_launch_url_help'] = 'URL tresnaren antzekoa, baina URL tresnaren ordez erabilia segurtasun-maila altua eskatzen denean. Moodle-k URL tresna segurua erabiliko du URL tresnaren odez, Moodle-ra SSLren bidez sartzen denean erabilia, edo konfigurazio-tresna ezarri bada beti SSLren bidez abiarazteko.
+$string['secure_launch_url_help'] = 'URL tresnaren antzekoa, baina URL tresnaren ordez erabilia segurtasun-maila altua eskatzen denean. Moodlek URL tresna segurua erabiliko du URL tresnaren odez, Moodlera SSLren bidez sartzen denean erabilia, edo konfigurazio-tresna ezarri bada beti SSLren bidez abiarazteko.
 
 URL tresnan https helbidea ezar daiteke SSLren bidez abiaraztea behartzeko, eta eremu hau hutsik utz daiteke.';
 $string['selectcontent'] = 'Aukeratu edukia';
@@ -482,7 +482,7 @@ Domeinu berean bi tresna-konfigurazio ezberdin badaude, hoberen egokitzen dena e
 Baldin badaukazu, URL kartxuoa sar dezakezu eta xehetasunak automatikoki beteko dira.';
 $string['toolurlplaceholder'] = 'Tresnaren URLa...';
 $string['typename'] = 'Tresnaren izena';
-$string['typename_help'] = 'Tresnaren izena Moodle-ren barruan tresna-hornitzailea identifikatzeko erabiltzen da. Izena irakasleek ikusi ahal izango dute, ikastaroen barruan kanpoko tresnak gehitzean.';
+$string['typename_help'] = 'Tresnaren izena Moodleren barruan tresna-hornitzailea identifikatzeko erabiltzen da. Izena irakasleek ikusi ahal izango dute, ikastaroen barruan kanpoko tresnak gehitzean.';
 $string['types'] = 'Motak';
 $string['unabletocreatetooltype'] = 'Ezin da tresna sortu';
 $string['unabletofindtooltype'] = '{$a->id}(e)rako tresna ezin izan da aurkitu';

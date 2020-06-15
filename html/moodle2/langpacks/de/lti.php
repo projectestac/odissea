@@ -67,12 +67,12 @@ $string['capabilities_help'] = 'Wählen Sie die Berechtigungen, die Sie dem Tool
 $string['capabilitiesrequired'] = 'Dieses Tool benötigt zur Aktivierung den Zugriff auf folgende Daten:';
 $string['click_to_continue'] = '<a href="{$a->link}" target="_top">Weiter</a>';
 $string['comment'] = 'Kommentar';
-$string['configpassword'] = 'Standardmäßiges Kennwort für Remote Tool';
+$string['configpassword'] = 'Standardkennwort für Remote Tool';
 $string['configpreferheight'] = 'Höhe (Vorgabe)';
 $string['configpreferwidget'] = 'Widget als Standard zum Start setzen';
 $string['configpreferwidth'] = 'Breite (Vorgabe)';
-$string['configresourceurl'] = 'Standardmäßige URL für Ressource';
-$string['configtoolurl'] = 'Standardmäßige Remote Tool URL';
+$string['configresourceurl'] = 'Standard-URL für Ressource';
+$string['configtoolurl'] = 'Standard-Remote Tool URL';
 $string['configtypes'] = 'LTI Anwendungen aktivieren';
 $string['configured'] = 'Konfiguriert';
 $string['confirmtoolactivation'] = 'Möchten Sie dieses Tool wirklich aktivieren?';
@@ -97,7 +97,7 @@ $string['debuglaunch'] = 'Debug-Optionen';
 $string['debuglaunchoff'] = 'Normaler Start';
 $string['debuglaunchon'] = 'Debug-Start';
 $string['default'] = 'Standardwert';
-$string['default_launch_container'] = 'Standardmäßiger Startcontainer';
+$string['default_launch_container'] = 'Standard-Startcontainer';
 $string['default_launch_container_help'] = 'Der Startcontainer beeinflusst die Anzeige des Tools beim Start aus dem Kurs heraus. Einige Startcontainer generieren eine Oberfläche in der Darstellung des Tools, andere passen sich an die Oberfläche von Moodle an.
 
 * **Standard** - Startcontainer wie in Tool-Konfiguration festgelegt verwenden.
@@ -170,9 +170,9 @@ $string['icon_url'] = 'Icon URL';
 $string['icon_url_help'] = 'Die Funktion Icon URl ermöglich es, das für die Aktivität verwandte Icon auszutauschen.  An Stelle des Standard LTI Icons kann ein Icon, das zur eingebundenen Aktivität passt, gewählt werden.';
 $string['id'] = 'ID';
 $string['indicator:cognitivedepth'] = 'LTI kognitiv';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer LTI-Aktivität erreicht hat.';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer LTI-Aktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'LTI sozial';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer LTI-Aktivität erreicht hat.';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer LTI-Aktivität erreicht hat.';
 $string['invalidid'] = 'LTI ID war fehlerhaft';
 $string['launch_in_moodle'] = 'Tool in Moodle starten';
 $string['launchinpopup'] = 'Startcontainer';
@@ -194,18 +194,18 @@ $string['leaveblank'] = 'Lassen Sie dies leer, wenn Sie die Angaben nicht brauch
 $string['lti'] = 'Externes Tool';
 $string['lti:addcoursetool'] = 'Kursspezifisch LTI Aktivitäten konfigurieren';
 $string['lti:addinstance'] = 'Neue Aktivität \'Externes Tool\' hinzufügen';
-$string['lti:admin'] = 'Tool als Administrator ausführen';
+$string['lti:admin'] = 'Tool als Administrator/in ausführen';
 $string['lti_administration'] = 'Vorkonfiguriertes Tool bearbeiten';
 $string['lti_errormsg'] = 'Das Tool gab folgende Fehlermeldung zurück: \'{$a}\'';
 $string['lti:grade'] = 'Bewertungen vom ext. Tool anzeigen';
 $string['lti_launch_error'] = 'Beim Start des externen Tools trat ein Fehler auf:';
-$string['lti_launch_error_tool_request'] = '<p>Zum Versand einer Anfrage an den Administrator zur Vervollständigung der Tool-Konfiguration klicken Sie <a href="{$a->admin_request_url}" target="_top">hier</a>. </p>';
+$string['lti_launch_error_tool_request'] = '<p>Zum Versand einer Anfrage an Administrator/innen zur Vervollständigung der Tool-Konfiguration klicken Sie <a href="{$a->admin_request_url}" target="_top">hier</a>. </p>';
 $string['lti_launch_error_unsigned_help'] = '<p>Der Fehler kann seine Ursache in einem fehlenden Anwenderschlüssel und Sicherheitseinstellungen für den Toolanbieter haben</p><p>Wenn Sie einen Anwenderschlüssel und Daten für die Sicherheitskonfiguration haben, geben Sie diese bei den Einstellungen für das externe Tool  ein. Beachten Sie auch die erweiterten Einstelloptionen.<br />Alternativ können Sie auch eine kursweite Konfiguration für den Tool-Anbieter anlegen. Klicken Sie dazu
 <a href="{$a->course_tool_editor}">hier</a>. </p>';
 $string['lti:manage'] = 'Als Trainer/in auf das ext. Tool zugreifen';
 $string['lti:requesttooladd'] = 'Externes Tool zur systemweiten Nutzung anfragen';
 $string['ltisettings'] = 'LTI Einstellungen';
-$string['lti_tool_request_added'] = 'Die Konfigurationsanfrage wurde erfolgreich weitergeleitet. Kontakten Sie den Administrator nun, um den Prozess abzuschließen.';
+$string['lti_tool_request_added'] = 'Die Konfigurationsanfrage wurde erfolgreich weitergeleitet. Kontakten Sie die Administrator/innen nun, um den Prozess abzuschließen.';
 $string['lti_tool_request_existing'] = 'Für die Domain wurde bereits eine Konfiguration beauftragt.';
 $string['ltiunknownserviceapicall'] = 'Unbekannter API-Aufruf für externes Tool';
 $string['lti:view'] = 'Aktivität Externes Tool aufrufen';
@@ -214,9 +214,9 @@ $string['main_admin_help'] = 'Externe Tools ermöglichen es Moodle Nutzern nahtl
 
 Die Tools auf dieser Seite sind in drei unterschiedliche Typen klassifiziert:
 
-* ** Aktiv** - Diese Tool Anbieter wurden durch einen Administrator geprüft und konfiguriert. Sie können in jedem Kurs genutzt werden. Wenn ein Anwenderschlüssel und ein Kennwort eingegegeben werden, wird eine geschützte Verbindung zwischen Moodle und dem Tool-Anbieter aufgebaut.
-* **Abwarten** - Diese Tool Anbieter wurden im Rahmen eines Paketimports im System hinterlegt. Sie sind noch nicht von einem Administrator konfiguriert worden. Trainer können diese Tools verwenden, wenn sie selber über einen Anwenderschlüssel und ein Kennwort verfügen, oder dies nicht erforderlich ist.
-* **Gesperrt** - Diese Tool Anbieter sind vom Administrator nicht zur systemweiten Nutzung freigegeben worden. Trainer können die Tools dennoch nutzen, wenn sie über einen Anwenderschlüssel und ein Kennwort für dieses Tool verfügen, oder dies nicht erforderlich ist.';
+* ** Aktiv** - Diese Toolanbieter wurden durch eine/n Administrator/in geprüft und konfiguriert. Sie können in jedem Kurs genutzt werden. Wenn ein Anwenderschlüssel und ein Kennwort eingegeben werden, wird eine geschützte Verbindung zwischen Moodle und dem Toolanbieter aufgebaut.
+* **Abwarten** - Diese Tool Anbieter wurden im Rahmen eines Paketimports im System hinterlegt. Sie sind noch nicht von einer/m Administrator/in konfiguriert worden. Trainer können diese Tools verwenden, wenn sie selber über einen Anwenderschlüssel und ein Kennwort verfügen, oder dies nicht erforderlich ist.
+* **Gesperrt** - Diese Toolanbieter sind von Administrator/innen nicht zur systemweiten Nutzung freigegeben worden. Trainer können die Tools dennoch nutzen, wenn sie über einen Anwenderschlüssel und ein Kennwort für dieses Tool verfügen, oder dies nicht erforderlich ist.';
 $string['manage_external_tools'] = 'Tools verwalten';
 $string['manage_tool_proxies'] = 'Registrierung von externen Tools verwalten';
 $string['manage_tools'] = 'Vorkonfigurierte Tools verwalten';
@@ -236,7 +236,7 @@ $string['modulenamepluralformatted'] = 'LTI Instanzen';
 $string['name'] = 'Name';
 $string['never'] = 'Nie';
 $string['new_window'] = 'Neues Fenster';
-$string['noattempts'] = 'Es gibt noch keine Versuche in diesr Tool-Instanz';
+$string['noattempts'] = 'Es gibt noch keine Versuche in dieser Tool-Instanz';
 $string['no_lti_configured'] = 'Keine aktiven externen Tools konfiguriert';
 $string['no_lti_pending'] = 'Keine anstehenden externen Tools';
 $string['no_lti_rejected'] = 'Keine zurückgewiesenen externen Tools';
@@ -308,7 +308,7 @@ $string['privacy:metadata:useridnumber'] = 'ID-Nummer des Nutzers, der den LTI C
 $string['privacy:metadata:username'] = 'Nutzername des Nutzers, der den LTI Consumer aufgerufen hat';
 $string['quickgrade'] = 'Direktbewertung zulassen';
 $string['quickgrade_help'] = 'Nach der Aktivierung können mehrere Tools auf einer Seite bewertet werden. Bewertungen und Kommentare eintragen und dann den \'Speichern aller Feedbacks\' Button drücken.';
-$string['redirect'] = 'Sie werden in ein paar Sekunden weitergeleitet. andernfalls den Button anklicken.';
+$string['redirect'] = 'Sie werden in ein paar Sekunden weitergeleitet. Andernfalls den Button anklicken.';
 $string['register'] = 'Registrieren';
 $string['registertype'] = 'Konfiguration eines neu registrierten externen Tools';
 $string['register_warning'] = 'Die Registrierungsseite benötigt einige Zeit zum Öffnen. Sollte sie nicht erscheinen, prüfen Sie die eingegebene URL in den Konfigurationseinstellungen. Wenn Moodle https nutzt, stellen Sie sicher, dass das konfigurierte Tool https unterstützt und dass Sie in der URL https nutzen.';
@@ -397,7 +397,7 @@ Sie sollte beschreiben, wofür das Tool ist, was es tut und jede weitere Informa
 $string['toolisbeingused'] = 'Dieses Tool wurde {$a} Mal verwendet.';
 $string['toolisnotbeingused'] = 'Dieses Tool wurde bisher nicht verwendet.';
 $string['toolproxy'] = 'Registrierung von externen Tools';
-$string['toolproxy_help'] = 'Administratoren können hier externe Tools registrieren, die den LTI 2.0 Standard bereitstellen. Für den Beginn ist nur eine URL des Anbieters des Tools erforderlich. Die Berechtigungen und Service-Zugänge werden dann beim Anlegen einer neuen Aktivität festgelegt.
+$string['toolproxy_help'] = 'Administrator/innen können hier externe Tools registrieren, die den LTI 2.0 Standard bereitstellen. Für den Beginn ist nur eine URL des Anbieters des Tools erforderlich. Die Berechtigungen und Service-Zugänge werden dann beim Anlegen einer neuen Aktivität festgelegt.
 
 Die registrierten Tools  werden in vier Kategorien angezeigt:
 

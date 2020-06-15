@@ -43,11 +43,12 @@ $string['gradenew'] = 'Calificación revisada';
 $string['gradeold'] = 'Calificación original';
 $string['grader'] = 'Calificador';
 $string['historyperpage'] = 'Historial de entradas por página';
-$string['historyperpage_help'] = 'Este ajuste determina el número de entradas de historial mostradas por página en el reporte de historial.';
+$string['historyperpage_help'] = 'Este ajuste determina el número de entradas de historial mostradas por página en el informe de historial.';
 $string['history:view'] = 'Ver el historial de calificaciones';
 $string['loadmoreusers'] = 'Cargar más usuarios...';
 $string['pluginname'] = 'Historial de calificación';
 $string['preferences'] = 'Preferencias del historial de calificaciones';
+$string['privacy:metadata'] = 'El Informe de Historia de la calificación solamente muestra datos almacenados en otros sitios.';
 $string['revisedonly'] = 'Solamente calificaciones revisadas';
 $string['revisedonly_help'] = 'Mostrar solamente calificaciones que han sido revisadas.
 

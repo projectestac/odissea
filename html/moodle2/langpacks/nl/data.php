@@ -358,7 +358,7 @@ $string['requireapproval_help'] = '<p align="center"><strong>Goedkeuring vereist
 <p>Moeten toegevoegde items eerst door een leraar goedgekeurd worden voor ze gezien kunnen worden door leerlingen? Dit kan nuttig zijn om inhoud te modereren die misschien beledigend of ongeschikt is.</p>';
 $string['required'] = 'Vereist';
 $string['requiredentries'] = 'Vereiste items voor voltooien (oud)';
-$string['requiredentries_help'] = 'Indien ingesteld wordt er een bericht getoond met het aantal items die een student verplicht moet invoeren vóór de activiteit als voltooid wordt beschouwd. Merk op dat deze instelling niet verbonden is met activiteitsvoltooiing.
+$string['requiredentries_help'] = 'Indien ingesteld wordt er een bericht getoond met het aantal items die een leerling verplicht moet invoeren vóór de activiteit als voltooid wordt beschouwd. Merk op dat deze instelling niet verbonden is met activiteitsvoltooiing.
 
 Voor items die vereist zijn voor activiteitsvoltooiing moet je de nieuwe instelling \'Vereiste items\' gebruiken. Om deze instelling volledig te verwijderen moet je ze om \'geen\' zetten en de wijzigingen bewaren. Gebruik de vereiste items velden in de sectie activiteitsvoltooiing .';
 $string['requiredentriestoview'] = 'Items vereist voor bekijken';

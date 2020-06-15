@@ -48,11 +48,12 @@ $string['config_percentage'] = 'Prozente für Teilnehmer/innen anzeigen';
 $string['config_scroll'] = 'Scrollen';
 $string['config_selectactivities'] = 'Aktivitäten auswählen';
 $string['config_selectedactivities'] = 'Ausgewählte Aktivitäten';
-$string['config_squeeze'] = 'Squeeze';
+$string['config_squeeze'] = 'Skaliert';
 $string['config_title'] = 'Alternativer Titel';
 $string['config_wrap'] = 'Umbruch';
 $string['coursenametoshow'] = 'Kursname im Dashboard';
 $string['defaultlongbars'] = 'Standardmäßige Darstellung für lange Balken';
+$string['forceiconsinbar'] = 'Icons im Fortschrittsbalken erzwingen';
 $string['fullname'] = 'Vollständiger Kursname';
 $string['futureNotCompleted_colour'] = '#025187';
 $string['futureNotCompleted_colour_descr'] = 'HTML-Farbcode für demnächst fällige Elemente, die noch nicht abgeschlossen sind';
@@ -62,28 +63,28 @@ $string['how_activitiesincluded_works_help'] = '<p>Standardmäßig werden alle A
 $string['how_group_works'] = 'Wie sichtbare Gruppen funktionieren';
 $string['how_group_works_help'] = '<p>Wenn Sie eine Gruppe oder Gruppierung auswählen, wird die Anzeige dieses Blocks auf diese Gruppe oder Gruppierung beschränkt.</p>';
 $string['how_longbars_works'] = 'Anzeige langer Balken';
-$string['how_longbars_works_help'] = '<p>Wenn Balken eine bestimmte Länge überschreiten, können sie auf eine der folgenden Arten dargestellt werden.</P><ul>
-<li>In eine horizontale Leiste gedrückt</li>
-<li>Seitliches Blättern, um überlaufende Balkensegmente anzuzeigen</li>
+$string['how_longbars_works_help'] = '<p>Wenn Balken eine bestimmte Länge überschreiten, können sie auf eine der folgenden Arten dargestellt werden.</p><ul>
+<li>Auf die verfügbare Breite skaliert</li>
+<li>Seitliches Scrollen, um überlaufende Balkensegmente anzuzeigen</li>
 <li>Zeilenumbruch innerhalb des Balkens</li></ul>
-<p>Beachten Sie, dass bei dieser Anzeige der \'Fortschrittsbalken\' nicht angezeigt wird.</P>';
+<p>Beachten Sie, dass bei dieser Anzeige der \'Fortschrittsbalken\' nicht angezeigt wird.</p>';
 $string['how_ordering_works'] = 'Wie das Ordnen funktioniert';
 $string['how_ordering_works_help'] = '<p>Es gibt zwei Möglichkeiten, Aktivitäten im Block \'Fortschrittsbalken\' anzuordnen.</p>
-<ul><li><em>Datum der erwarteten Fertigstellung</em> (Standard) <br/>Die erwarteten Fertigstellungstermine der Aktivitäten / Ressourcen werden verwendet, um die Elemente des Balkens anzuordnen. Wenn Aktivitäten / Ressourcen keinen erwarteten Abschluss haben, wird stattdessen die Reihenfolge im Kurs verwendet.</li><li><em>Reihenfolge im Kurs</em><br/>Aktivitäten / Ressourcen werden in derselben Reihenfolge dargestellt wie auf der Kursseite. Wenn diese Option verwendet wird, werden erwartete Fertigstellungstermine ignoriert. Wenn diese Option verwendet wird, wird die "Fortschritts-Anzeige" nicht angezeigt. </Li></ul>';
+<ul><li><em>Datum der erwarteten Fertigstellung</em> (Standard) <br/>Die erwarteten Fertigstellungstermine der Aktivitäten / Ressourcen werden verwendet, um die Elemente des Balkens anzuordnen. Wenn Aktivitäten / Ressourcen keinen erwarteten Abschluss haben, wird stattdessen die Reihenfolge im Kurs verwendet. Wenn diese Möglichkeit gewählt wird, wird die Anzeige "JETZT" angezeigt</li><li><em>Reihenfolge im Kurs</em><br/>Aktivitäten / Ressourcen werden in derselben Reihenfolge dargestellt wie auf der Kursseite. Wenn diese Option verwendet wird, werden erwartete Fertigstellungstermine ignoriert. Wenn diese Option verwendet wird, wird die Anzeige "JETZT" nicht angezeigt. </li></ul>';
 $string['how_selectactivities_works'] = 'Wie das Einbeziehen von Aktivitäten funktioniert';
-$string['how_selectactivities_works_help'] = '<p>Um die Aktivitäten, die in die Leiste aufgenommen werden sollen, manuell auszuwählen, stellen Sie sicher, dass die Option "eingefügte Aktivitäten" auf "ausgewählte Aktivitäten" gesetzt ist.</p><p>Es können nur Aktivitäten mit aktiviertem Aktivitätsabschluss eingefügt werden.<p>Halten Sie die STRG-Taste gedrückt, um mehrere Aktivitäten auszuwählen. </p>';
+$string['how_selectactivities_works_help'] = '<p>Um Aktivitäten manuell in die Leiste aufzunehmen, müssen Sie die Option "eingefügte Aktivitäten" auf "ausgewählte Aktivitäten" setzen.</p><p>Es können nur Aktivitäten mit aktiviertem Aktivitätsabschluss eingefügt werden. Eine Mehrfachauswahl ist mit der Taste <strg> bzw. <cmd> möglich.</p>';
 $string['lastonline'] = 'Zuletzt im Kurs';
-$string['mouse_over_prompt'] = 'Mehr Infos anzeigen, wenn die Maus über den Balken ist oder einzelne Blöcke angeklickt werden';
-$string['no_activities_config_message'] = 'Es gibt keine Aktivitäten oder Ressourcen mit Aktivitätsabschluss? Aktivieren Sie den Aktivitätsabschluss für Aktivitäten und Ressourcen, konfigurieren Sie anschließend diesen Block.';
-$string['no_activities_message'] = 'Es werden keine Aktivitäten oder Ressourcen beobachtet? Stellen Sie dies in den Einstellungen ein.';
+$string['mouse_over_prompt'] = 'Um mehr Informationen anzuzeigen, mit der Maus über den Balken fahren oder einzelne Blöcke anklicken';
+$string['no_activities_config_message'] = 'Es gibt keine Aktivitäten oder Ressourcen mit Aktivitätsabschluss oder keine Aktivitäten oder Ressourcen wurden ausgewählt. Aktivieren Sie den Aktivitätsabschluss für Aktivitäten und Ressourcen und konfigurieren Sie anschließend diesen Block.';
+$string['no_activities_message'] = 'Es werden keine Aktivitäten oder Ressourcen beobachtet. Stellen Sie dies in den Einstellungen ein.';
 $string['no_blocks'] = 'Es ist kein Block \'Fortschrittsbalken\' für Ihre Kurse aktiviert.';
 $string['no_courses'] = 'Sie sind in keine Kurse eingeschrieben. Es wird nur der Bearbeitungsfortschritt von Kursen angezeigt, in die Sie eingeschrieben sind.';
-$string['not_all_expected_set'] = 'Nicht alle beendeten Aktivitäten haben ein \'{$a}\' Datum gesetzt.';
+$string['not_all_expected_set'] = 'Nicht alle Aktivitäten mit aktivierter Abschlussverfolgung haben ein \'{$a}\'-Datum gesetzt.';
 $string['notCompleted_colour'] = '#C71C22';
 $string['notCompleted_colour_descr'] = 'HTML-Farbcode für die aktuelle Elemente, die noch nicht abgeschlossen sind.';
 $string['notCompleted_colour_title'] = 'Farbe für nicht-abgeschlossen';
 $string['no_visible_activities_message'] = 'Keine der überwachten Aktivitäten ist derzeit sichtbar.';
-$string['now_indicator'] = 'Fortschritt';
+$string['now_indicator'] = 'JETZT';
 $string['overview'] = 'Überblick Teilnehmer/innen';
 $string['pluginname'] = 'Fortschrittsbalken';
 $string['privacy:metadata'] = 'Der Block ‚Fortschrittsbalken‘ stellt nur an anderer Stelle gespeicherte Abschlussdaten dar.';
@@ -92,15 +93,16 @@ $string['progressbar'] = 'Fortschrittsbalken';
 $string['shortname'] = 'Kurzer Kursname';
 $string['showallinfo'] = 'Alle Infos anzeigen';
 $string['showinactive'] = 'Inaktive Teilnehmer/innen in der Übersicht anzeigen';
+$string['showlastincourse'] = 'In der Übersicht anzeigen, wann Teilnehmer/innen zuletzt im Kurs waren';
 $string['submitted'] = 'Eingereicht';
 $string['submittednotcomplete_colour'] = '#FFCC00';
 $string['submittednotcomplete_colour_descr'] = 'HTML-Farbcode für Elemente, die eingereicht, aber noch nicht abgeschlossen sind.';
 $string['submittednotcomplete_colour_title'] = 'Farbe für eingereicht und noch nicht abgeschlossen';
 $string['time_expected'] = 'Erwartet';
 $string['why_set_the_title'] = 'Warum Sie den Block Beispiel-Titel setzten sollten.';
-$string['why_set_the_title_help'] = '<p>Es können mehrere Instanzen des Blocks \'Fortschrittsbalken\' vorhanden sein. So können Sie verschiedene solcher Blöcke verwenden, um unterschiedliche Kombinationen von Aktivitäten oder Ressourcen darzustellen. Wenn Sie z.B. in einem Block den Fortschritt von Tests beobachten, können Sie einen anderen für die Nutzung von Foren verwenden. Deswegen kann der Standardtitel Standardtitel mit einem passenden Blocktitel überschrieben werden. </p>';
+$string['why_set_the_title_help'] = '<p>Es können mehrere Instanzen des Blocks \'Fortschrittsbalken\' vorhanden sein. So können Sie verschiedene solcher Blöcke verwenden, um unterschiedliche Kombinationen von Aktivitäten oder Ressourcen darzustellen. Wenn Sie z.B. in einem Block den Fortschritt von Tests beobachten, können Sie einen anderen für die Nutzung von Foren verwenden. Deswegen kann der Standardtitel mit einem passenden Blocktitel überschrieben werden. </p>';
 $string['why_show_precentage'] = 'Warum Sie den Bearbeitungsfortschritt in Prozenten anzeigen sollten?';
-$string['why_show_precentage_help'] = '<p>Es ist möglich, den Teilnehmer/innen einen Gesamtprozentsatz des Fortschritts anzuzeigen.</p><p>Dieser wird berechnet als die Anzahl der durchgeführten Aktivitäten, geteilt durch die Gesamtzahl der Aktivitäten in dem Balken.</p><p> Der Fortschrittsprozentsatz wird angezeigt, bis die Teilnehemnden mit der Maus über ein Element in dem Balken fahren.</p>';
+$string['why_show_precentage_help'] = '<p>Es ist möglich, den Teilnehmer/innen einen Gesamtprozentsatz des Fortschritts anzuzeigen.</p><p>Dieser wird berechnet als die Anzahl der durchgeführten Aktivitäten, geteilt durch die Gesamtzahl der Aktivitäten in dem Balken.</p><p>Der Fortschrittsprozentsatz wird angezeigt, bis die Teilnehmenden mit der Maus über ein Element in dem Balken fahren.</p>';
 $string['why_use_icons'] = 'Warum Sie Icons nutzen sollten?';
-$string['why_use_icons_help'] = '<p>Vielleicht möchten Sie Tick- und Cross-Icons für den Fortschrittsbalken hinzufügen, um diesen Block für Teilnehmer/innen mit Farbblindheit visuell zugänglich zu machen. </p> <p>Es kann auch die Bedeutung des Blocks klarer machen, wenn Sie glauben, Farben sind nicht intuitiv, weder aus kulturellen noch aus persönlichen Gründen. </p>';
+$string['why_use_icons_help'] = '<p>Vielleicht möchten Sie Häkchen- und Kreuz-Icons für den Fortschrittsbalken hinzufügen, um diesen Block für Teilnehmer/innen mit Farbblindheit visuell zugänglich zu machen.</p><p>Es kann auch die Bedeutung des Blocks klarer machen, wenn Sie glauben, dass Farben weder aus kulturellen noch aus persönlichen Gründen intuitiv sind. </p>';
 $string['wrapafter'] = 'Beim Umbruch auf Zeilen beschränken mit';

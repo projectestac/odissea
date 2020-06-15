@@ -37,6 +37,7 @@ $string['cbmgrades_help'] = '在信心加权计分法（Certainty Based Marking 
 
 **正确度**是指只看答对百分比而忽视对于答案的信心，然后再依据每一题的配分进行加权。**正确度**+**信心加权分**是比**正确度**更好的测量知识的方法。但是错误的想法会导致负的加权分，这会提醒师生仔细检查错在什么地方。';
 $string['cbmmark'] = 'CBM 信心加权分 {$a}';
+$string['certainty'] = '确定';
 $string['certainty1'] = '不太确定（低于67%）';
 $string['certainty2'] = '还算确定（超过67%）';
 $string['certainty3'] = '非常确定（高于80%）';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['category:config'] = 'Ρύθμιση στιγμιοτύπων εγγραφής κατηγορίας';
+$string['category:config'] = 'Ρύθμιση στιγμιότυπων εγγραφής κατηγορίας';
 $string['category:synchronised'] = 'Οι αναθέσεις ρόλων συγχρονίζονται με τις εγγραφές μαθημάτων';
 $string['enrolcategorysynctask'] = 'Εργασία συγχρονισμού εγγραφής κατηγορίας';
 $string['pluginname'] = 'Κατηγορία εγγραφών';

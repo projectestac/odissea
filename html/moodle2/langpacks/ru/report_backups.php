@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backupofcourselogs'] = 'Резервное копирование журналов для {$a}';
+$string['backupofcourselogs'] = 'Журналы резервного копирования для {$a}';
 $string['logsofbackupexecutedon'] = 'Журналы резервного копирования {$a}';
 $string['nobackupsfound'] = 'Резервные копии не найдены.';
 $string['nologsfound'] = 'Журналы для этой резервной копии не найдены.';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['cleanuptask'] = 'Duela gutxiko aktibitatea blokearen garbiketa zeregina';
 $string['pluginname'] = 'Duela gutxiko aktibitatea';
-$string['privacy:metadata'] = 'Duela gutxiko aktibitatea blokeak Moodle-ko beste leku batzuetan gordetako datuen cachea gordetzen du.';
+$string['privacy:metadata'] = 'Duela gutxiko aktibitatea blokeak Moodleko beste leku batzuetan gordetako datuen cachea gordetzen du.';
 $string['privacy:metadata:block_recent_activity'] = 'Irakasleen jardueraren behin-behineko biltegia. Bi egun igarotzean ezabatzen da.';
 $string['privacy:metadata:block_recent_activity:action'] = 'Ekintza: sortuta, eguneratuta edo ezabatuta';
 $string['privacy:metadata:block_recent_activity:cmid'] = 'Ikastaro-jardueraren IDa';

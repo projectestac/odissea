@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['commentinline'] = 'Inline-Kommentar';
 $string['commentinlinedefault'] = 'Inline-Kommentar als Standard';
-$string['commentinlinedefault_help'] = 'Wenn diese Option aktiviert ist, wird die Funktion Inline-Kommentar standardmäßig für alle neuen Aufgaben benutzt.';
+$string['commentinlinedefault_help'] = 'Wenn diese Option aktiviert ist, wird die Funktion Inline-Kommentar für alle neuen Aufgaben benutzt.';
 $string['commentinline_help'] = 'Wenn diese Option aktiviert ist, wird der Abgabetext für die Bewertung in das Kommentarfeld kopiert, um die Inline-Kommentierung (am besten in einer anderen Farbe) zu vereinfachen oder die Bearbeitung des Originaltextes zu ermöglichen.';
-$string['default'] = 'Standardmäßig aktiviert';
+$string['default'] = 'Bereits aktiviert';
 $string['default_help'] = 'Die gewählte Feedback-Methode wird für alle neuen Aufgaben voreingestellt.';
 $string['enabled'] = 'Feedback als Kommentar';
 $string['enabled_help'] = 'Bewerter/innen können Feedback-Kommentare für jede abgegebene Lösung erstellen, wenn die Funktion aktiviert wird.';

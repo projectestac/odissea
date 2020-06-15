@@ -180,10 +180,10 @@ $string['registerwithmoodleorgcomplete'] = 'Osatu zure gunearen erregistroa';
 $string['registerwithmoodleorginfo'] = 'Zurekin harremanetan egotea eta zure Moodle gunerako gauza garrantzitsuak eskaintzea gustatuko litzaiguke! Erregistratuz gero:
 
 * Moodle bertsio berrien kaleratzeen, segurtasun-alerten eta bestelako berri garrantzitsuen jakinarazpenak jasotzeko harpidetu zaitezke.
-* Zure Moodle gunerako mugikorrentzako push jakinarazpenak gaitu ditzakezu gure doako Moodle app-aren bidez.
+* Zure Moodle gunerako mugikorrentzako push jakinarazpenak gaitu ditzakezu gure doako Moodle aplikazioaren bidez.
 * Gure mundu mailako komunitatearen Moodle estatistikei ekarpena egingo diezu, Moodle eta gure komunitateen guneak hobetzen laguntzen diguna.
 * Nahi baduzu, gunea zure herrialdeko erregistratutako Moodle guneen zerrendan gehitu daiteke ere.';
-$string['registerwithmoodleorginfoapp'] = 'Moodle app-ari buruz';
+$string['registerwithmoodleorginfoapp'] = 'Moodle aplikazioari buruz';
 $string['registerwithmoodleorginfosites'] = 'Nire herrialdeko beste gune batzuk';
 $string['registerwithmoodleorginfostats'] = 'Moodle estatistikak';
 $string['registerwithmoodleorgremove'] = 'Zure gunearen erregistroa ezabatzen';
@@ -249,16 +249,16 @@ $string['siteregistrationcontact_help'] = 'Baimena emanez gero, Moodle komunitat
 $string['siteregistrationemail'] = 'Moodle bertsio berrien kaleratzeen, segurtasun-alerten eta bestelako berri garrantzitsuen jakinarazpenak';
 $string['siteregistrationemail_help'] = 'Bolumen txikiko gure posta elektronikoko zerrendara harpidetu zaitezke Moodle bertsio berrien kaleratzeen, segurtasun-alerten eta bestelako berri garrantzitsuen jakinarazpenak jasotzeko. Edozein unetan harpidetza kendu dezakezu.';
 $string['siteregistrationupdated'] = 'Gunearen erregistroa eguneratu da';
-$string['siterelease'] = 'Moodle-ren bertsioa';
-$string['siterelease_help'] = 'Gune honen Moodle-ren ezaugarriak';
-$string['sitereleasenum'] = 'Moodle-ren bertsioa ({$a})';
+$string['siterelease'] = 'Moodleren bertsioa';
+$string['siterelease_help'] = 'Gune honen Moodleren ezaugarriak';
+$string['sitereleasenum'] = 'Moodleren bertsioa ({$a})';
 $string['siteupdatedcron'] = 'Gunearen erregistroa "{$a}"-(e)n eguneratu da';
 $string['siteupdatesend'] = 'Bilguneetako erregistroaren eguneraketa amaituta.';
 $string['siteupdatesstart'] = 'Bilguneetako erregistroaren eguneraketa hasi da...';
 $string['siteurl'] = 'Gunearen URLa';
 $string['siteurl_help'] = 'URL hau gunearen helbidea da. Pribatutasun-ezerpenek jendeak guneko helbidea ikustea baimenduz gero, URL hau erabiliko da horretarako.';
 $string['siteversion'] = 'Moodle bertsioa';
-$string['siteversion_help'] = 'Gune honen Moodle-ren bertsioa.';
+$string['siteversion_help'] = 'Gune honen Moodleren bertsioa.';
 $string['skipregistration'] = 'Utzi alde batera';
 $string['specifichubregistrationdetail'] = 'Zeure gunea beste bilgune batzuetan ere erregistra dezakezu';
 $string['statistics'] = 'Pribatutasun-estatistikak';

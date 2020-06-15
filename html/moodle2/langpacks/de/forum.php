@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'Es gibt neue Forumsbeiträge';
+$string['activityoverview'] = 'Neue Forenbeiträge';
 $string['addanewdiscussion'] = 'Neues Thema hinzufügen';
 $string['addanewquestion'] = 'Neue Frage hinzufügen';
 $string['addanewtopic'] = 'Neues Thema hinzufügen';
@@ -101,13 +101,13 @@ $string['configdigestmailtime'] = 'Diese Option legt fest, wann die tägliche Zu
 $string['configdisplaymode'] = 'Standardanzeige für Themen, falls nichts eingestellt wurde.';
 $string['configenablerssfeeds'] = 'Diese Option aktiviert die Einstellmöglichkeit von RSS Feeds für alle Foren. Jedes Forum muss einzeln für RSS Feeds freigegeben werden.';
 $string['configenabletimedposts'] = 'Wenn diese Option aktiviert ist, dann lässt sich ein Zeitraum für die Sichtbarkeit eines Forumsbeitrags festlegen.';
-$string['configlongpost'] = 'Jeder Beitrag wird als lang eingestuft, wenn er länger als diese Zeichenzahl ist (ohne Berücksichtigung der HTML-Codierung).';
+$string['configlongpost'] = 'Jeder Beitrag wird als "lang" eingestuft, wenn er länger als diese Zeichenzahl ist (ohne Berücksichtigung der HTML-Tags). Beiträge auf der Startseite, auf Kursseiten im sozialen Format oder in Benutzerprofilen angezeigt werden, werden auf einen natürlichen Bruch zwischen den Werten forum_shortpost und forum_longpost gekürzt.';
 $string['configmanydiscussions'] = 'Anzahl von Themen pro Seite';
 $string['configmaxattachments'] = 'Voreinstellung für die Anzahl von Anhängen, die pro Beitrag in einem Forum erlaubt sind';
 $string['configmaxbytes'] = 'Voreinstellung für die Dateigröße von Anhängen in Foren auf dieser Website (je nach Kurs oder durch andere lokale Einstellungen weiter eingeschränkt)';
 $string['configoldpostdays'] = 'Anzahl der Tage, nach denen eine neue Nachricht automatisch als gelesen gilt.';
 $string['configreplytouser'] = 'Wenn ein Forumsbeitrag per E-Mail verschickt wird, soll er die Teilnehmeradresse enthalten, damit der Empfänger persönlich antworten kann (statt über das Forum)? Wenn Sie "Ja" auswählen, können die Teilnehmer/innen in ihrem Profil festlegen, ob die E-Mail-Adresse veröffentlicht werden soll oder nicht.';
-$string['configrssarticlesdefault'] = 'Wenn RSS Feeds aktiviert sind, wird hiermit der standardmäßige Anzahl von Artikeln (bzw. Themen oder Beiträgen) festgelegt.';
+$string['configrssarticlesdefault'] = 'Wenn RSS Feeds aktiviert sind, wird hiermit die Anzahl von Artikeln (bzw. Themen oder Beiträgen) festgelegt.';
 $string['configrsstypedefault'] = 'Wenn RSS Feeds aktiviert sind, wird hiermit der Standardtyp festgelegt.';
 $string['configshortpost'] = 'Jeder Beitrag wird als kurz eingestuft, wenn er kürzer als diese Zeichenzahl ist (ohne Berücksichtigung der HTML-Codierung).';
 $string['configsubscriptiontype'] = 'Standardeinstellung für Abonnement';
@@ -150,7 +150,7 @@ $string['discussionlockingheader'] = 'Themensperrung';
 $string['discussionmoved'] = 'Dieses Thema wurde verschoben nach \'{$a}\'.';
 $string['discussionmovedpost'] = 'Dieses Thema wurde verschoben nach <a href="{$a->discusshref}">hier</a> ins Forum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Thema';
-$string['discussionnownotsubscribed'] = '{$a->name} wird nicht benachrichtigt über neue Beiträge zu \'{$a->name}\' in \'{$a->forum}\'.';
+$string['discussionnownotsubscribed'] = '{$a->name} wird nicht benachrichtigt über neue Beiträge zu \'{$a->discussion}\' in \'{$a->forum}\'.';
 $string['discussionnowsubscribed'] = '{$a->name} wird benachrichtigt über neue Beiträge zu \'{$a->discussion}\' in \'{$a->forum}\'.';
 $string['discussionpin'] = 'Anpinnen';
 $string['discussionpinned'] = 'Angepinnt';
@@ -180,7 +180,7 @@ $string['editedby'] = 'Bearbeitet von {$a->name} - Originaleintrag am {$a->date}
 $string['editedpostupdated'] = 'Beitrag von {$a} wurde aktualisiert';
 $string['editing'] = 'Wird bearbeitet';
 $string['emaildigestcompleteshort'] = 'Vollständige Beiträge';
-$string['emaildigestdefault'] = 'Standardmäßig ({$a})';
+$string['emaildigestdefault'] = 'Standard ({$a})';
 $string['emaildigestoffshort'] = 'Keine Zusammenfassung';
 $string['emaildigestsubjectsshort'] = 'Nur die Themen';
 $string['emaildigesttype'] = 'Optionen für die E-Mail-Zusammenfassung';
@@ -279,9 +279,9 @@ $string['generalforum'] = 'Standardforum';
 $string['generalforums'] = 'Allgemeines Forum';
 $string['hiddenforumpost'] = 'Verborgener Forumsbeitrag';
 $string['indicator:cognitivedepth'] = 'Forum kognitiv';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Forumsaktivität erreicht hat.';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Forumsaktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Forum sozial';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Forumsaktivität erreicht hat.';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Forumsaktivität erreicht hat.';
 $string['inforum'] = 'in {$a}';
 $string['introblog'] = 'Die Beiträge in diesem Forum wurden automatisch aus Teilnehmerblogs des Kurses erstellt, weil die Blogeinträge nicht mehr verfügbar sind';
 $string['intronews'] = 'Nachrichten und Ankündigungen';
@@ -335,7 +335,7 @@ $string['modeflatoldestfirst'] = 'Anzeige nach Zeit (alt > neu)';
 $string['modenested'] = 'Anzeige in geschachtelter Form';
 $string['modethreaded'] = 'Anzeige in hierarchischer Form';
 $string['modulename'] = 'Forum';
-$string['modulename_help'] = 'Richten Sie ein Forum ein, um den Teilnehmer/innen Ihres Kurses die Gelegenheit zur Diskussion zu geben.
+$string['modulename_help'] = 'Richten Sie ein Forum ein, um den Personen in Ihrem Kurs die Gelegenheit zur Diskussion zu geben.
 
 Weitere Möglichkeiten:
 * Verschiedene Forentypen
@@ -353,7 +353,7 @@ $string['movethisdiscussionto'] = 'Das Thema verschieben nach ...';
 $string['mustprovidediscussionorpost'] = 'Für den Export müssen Sie entweder eine Themen-ID oder eine Nachrichten-ID angeben';
 $string['myprofileotherdis'] = 'Forumsthemen';
 $string['myprofileowndis'] = 'Meine Forumsthemen';
-$string['myprofileownpost'] = 'Meine Forumsbeiträge';
+$string['myprofileownpost'] = 'Meine Forenbeiträge';
 $string['namenews'] = 'Ankündigungen';
 $string['namenews_help'] = 'Das Ankündigungsforum ist ein Forum, das automatisch von Moodle in jedem Kurs und auch der Startseite generiert wird. Ausschließlich Trainer/innen und Administrator/innen dürfen im Ankündigungsforum schreiben. Pro Kurs kann es nur ein Ankündigungsforum geben. Im Block "Neuste Ankündigungen" werden die aktuelle Beiträge angezeigt.';
 $string['namesocial'] = 'Soziales Forum';
@@ -388,7 +388,7 @@ $string['notsubscribed'] = 'Abonnieren';
 $string['noviewdiscussionspermission'] = 'Sie dürfen die Themen in diesem Forum nicht sehen';
 $string['nowallsubscribed'] = 'Sie haben alle Foren von {$a} abonniert';
 $string['nowallunsubscribed'] = 'Sie haben kein Forum von {$a} abonniert';
-$string['nownotsubscribed'] = '{$a->name} wird künftig KEINE Kopien von \'{$a->forum}\' per E-Mail erhalten.';
+$string['nownotsubscribed'] = '{$a->name} wird künftig keine Beiträge von \'{$a->forum}\' per E-Mail erhalten.';
 $string['nownottracking'] = '{$a->name} will \'{$a->forum}\' nicht weiter verfolgen.';
 $string['nowsubscribed'] = '{$a->name} wird künftig Kopien von \'{$a->forum}\'  per E-Mail erhalten.';
 $string['nowtracking'] = '{$a->name} verfolgt nun das \'{$a->forum}\'.';

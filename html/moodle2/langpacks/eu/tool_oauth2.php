@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['authconfirm'] = 'Ekintza honek Moodle-ri autentifikatutako kontuan API sarbide iraunkorra emango dio. Hau Moodle-renak diren fitxategiak kudeatzeko sistemako kontu gisa erabiltzeko pentsatuta dago.';
+$string['authconfirm'] = 'Ekintza honek Moodleri autentifikatutako kontuan API sarbide iraunkorra emango dio. Hau Moodlerenak diren fitxategiak kudeatzeko sistemako kontu gisa erabiltzeko pentsatuta dago.';
 $string['authconnected'] = 'Sistemako kontua lineaz kanpoko sarbiderako konektatuta dago orain';
 $string['authnotconnected'] = 'Sistemako kontua ez dago lineaz kanpoko sarbiderako konektatuta';
 $string['configured'] = 'Konfiguratuta';
@@ -105,6 +105,6 @@ $string['userfieldexternalfield'] = 'Kanpoko eremuaren izena';
 $string['userfieldexternalfield_error'] = 'Eremuak ezin du izan HTML koderik.';
 $string['userfieldexternalfield_help'] = 'Kanpoko OAuth sistemak emandako eremuaren izena';
 $string['userfieldinternalfield'] = 'Barruko eremuaren izena';
-$string['userfieldinternalfield_help'] = 'Kanpoko eremuarekin lotu beharreko Moodle-ko erabiltzaile-eremuaren izena';
+$string['userfieldinternalfield_help'] = 'Kanpoko eremuarekin lotu beharreko Moodleko erabiltzaile-eremuaren izena';
 $string['userfieldmappingdeleted'] = 'Erabiltzaile-eremu lotura ezabatu da';
 $string['userfieldmappingsforissuer'] = 'Emailearentzako erabiltzaile-eremu loturak: {$a}';

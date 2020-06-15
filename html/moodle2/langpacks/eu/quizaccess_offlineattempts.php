@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowofflineattempts'] = 'Baimendu galdetegia lineaz-kanpo mobile app-a erabiliz erantzuten saiatzea';
-$string['allowofflineattempts_help'] = 'Gaituz gero, mobile app-aren erabiltzaile batek galdetegia jaitsi eta lineaz kanpo erantzuteko aukera izango du.
+$string['allowofflineattempts'] = 'Baimendu galdetegia lineaz-kanpo mobile aplikazioa erabiliz erantzuten saiatzea';
+$string['allowofflineattempts_help'] = 'Gaituz gero, mobile aplikazioaren erabiltzaile batek galdetegia jaitsi eta lineaz kanpo erantzuteko aukera izango du.
 
 Oharra: Ezin da galdetegia lineaz kanpo erantzun denbora-muga bat badu, sare-helbide zehatza eskatzen badu, edo beranduagoko feedbacka (CBM-rekin edo gabe) ez den galderen jokaera bat erabiltzen badu.';
 $string['confirmdatasaved'] = 'Konfirmatzen dut ez dudala gorde gabeko lanik gailu mugikorrean.';

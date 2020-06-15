@@ -1056,5 +1056,12 @@ div.moodle-dialogue-wrap div.fp-viewbar i.fa.icon {
     padding: 7px;
 }
 
+a.dimmed + .availabilityinfoXTEC .label-info{
+    background-color: #999;
+}
+.availabilityinfoXTEC .label-info.isrestricted{
+    background-color: #999;
+}
+
 /* Custom CSS Settings */
 [[setting:customcss]]

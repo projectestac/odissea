@@ -64,9 +64,9 @@ $string['uploadpicture_userupdated'] = 'Immagine per l\'utente {$a} caricata.';
 $string['uploadusers'] = 'Importazione utenti';
 $string['uploadusers_help'] = 'E\' possibile caricare utenti (ed iscriverli ai corsi) tramite file di testo. Il formato del file deve avere le seguenti caratteristiche:
 
-* Ogni riga del file contiene un record
+* Ogni riga del file dev contenere un record
 * Il record è una serie di dati separati da virgole o altri delimitatori
-La prima riga del file è speciale e contiene le intestazioni con i nomi dei campi e definisce il formato del resto del file
+* La prima riga del file è riservata e contiene le intestazioni con i nomi dei campi e definisce il formato del resto del file
 * I campi obbligatori sono username, password, firstname,  lastname, email';
 $string['uploaduserspreview'] = 'Anteprima importazione utenti';
 $string['uploadusersresult'] = 'Risultati importazione utenti';

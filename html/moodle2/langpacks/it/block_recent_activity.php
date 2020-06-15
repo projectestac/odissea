@@ -32,6 +32,7 @@ $string['privacy:metadata:block_recent_activity'] = 'Log temporaneo delle azioni
 $string['privacy:metadata:block_recent_activity:action'] = 'Azione: creato, modificato o eliminato.';
 $string['privacy:metadata:block_recent_activity:cmid'] = 'ID dell\'attività del corso';
 $string['privacy:metadata:block_recent_activity:courseid'] = 'ID del corso';
+$string['privacy:metadata:block_recent_activity:timecreated'] = 'Ora di svolgimento dell\'azione';
 $string['privacy:metadata:block_recent_activity:userid'] = 'Utente che svolge l\'azione';
 $string['recent_activity:addinstance'] = 'Aggiungere blocco Attività recente';
 $string['recent_activity:viewaddupdatemodule'] = 'Visualizzare nel blocco attività recente i moduli inseriti o aggiornati';

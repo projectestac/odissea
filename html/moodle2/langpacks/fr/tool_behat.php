@@ -54,4 +54,4 @@ $string['wrongbehatsetup'] = 'Quelque chose n\'est pas correct dans vos réglage
 <ul>
 <li>les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot sont définies config.php avec des valeurs différentes de $CFG->dataroot, $CFG->prefix et $CFG->wwwroot ;</li>
 <li>vous avez lancé la commande « {$a->behatinit} » depuis votre dossier moodle ;</li>
-<li>les dépendances sont installées dans le dossier vendor/ et le fichier {$a->behatcommand} possède les droits pour être lancé.</li></ul>';
+<li>les dépendances sont installées dans le dossier vendor/ et le fichier {$a->behatcommand} possède les droits d\'accès pour être lancé.</li></ul>';

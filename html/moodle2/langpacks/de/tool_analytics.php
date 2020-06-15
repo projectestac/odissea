@@ -36,7 +36,7 @@ $string['clearmodelpredictions'] = 'Möchten Sie wirklich alle "{$a}" Vorhersage
 $string['clearpredictions'] = 'Vorhersagen löschen';
 $string['clienablemodel'] = 'Sie können das Modell aktivieren, indem Sie über die ID eine Zeitaufteilungsmethode auswählen. Beachten Sie, dass sie diese auch später aktivieren können, indem Sie die Weboberfläche nutzen (\'keine\' zum Beenden).';
 $string['clievaluationandpredictions'] = 'Ein regelmäßiger Task arbeitet sich durch die aktivierten Modelle und erzeugt Vorhersagen. Die Modellauswertung über die Weboberfläche ist deaktiviert. Sie können die Prozesse manuell über die Weboberfläche anstoßen, indem Sie die Analytics-Einstellung <a href="{$a}">\'onlycli\'</a> deaktivieren.';
-$string['clievaluationandpredictionsnoadmin'] = 'Ein regelmäßiger Task arbeitet sich durch die aktivierten Modelle und erzeugt Vorhersagen. Der Start der Evaluation über die Weboberfläche ist deaktiviert und kann vom Administrator aktiviert werden.';
+$string['clievaluationandpredictionsnoadmin'] = 'Ein regelmäßiger Task arbeitet sich durch die aktivierten Modelle und erzeugt Vorhersagen. Der Start der Evaluation über die Weboberfläche ist deaktiviert und kann von Administrator/innen aktiviert werden.';
 $string['disabled'] = 'Deaktiviert';
 $string['editmodel'] = 'Modell "{$a}" bearbeiten';
 $string['edittrainedwarning'] = 'Dieses Modell wurde bereits trainiert. Beachten Sie, dass die Veränderung seiner Indikatoren oder seiner Zeitaufteilungsmethide seine bisherigen Vorhersagen löschen wird und damit beginnen wird neue zu erstellen.';

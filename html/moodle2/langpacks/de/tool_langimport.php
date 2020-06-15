@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadnotavailable'] = 'Eine Verbindung zum Download-Server konnte nicht hergestellt werden. Deswegen ist es nicht möglich, die Sprachpakete automatisch zu installieren oder zu aktualisieren. Laden Sie die entsprechende ZIP-Datei von <a href="{$a->src}">{$a->src}</a> herunter und entpacken Sie sie manuell in Ihr Datenverzeichnis <code>{$a->dest}</code>.';
-$string['install'] = 'Ausgewähltes Sprachpaket installieren';
+$string['install'] = 'Ausgewählte Sprachpakete installieren';
 $string['installedlangs'] = 'Installierte Sprachpakete';
 $string['langimport'] = 'Sprachpakete verwalten';
 $string['langimportdisabled'] = 'Der Import von Sprachpaketen wurde deaktiviert. Sie müssen die Sprachpakete manuell auf dem Server aktualisieren. Abschließend müssen Sie den Sprachcache löschen.';
@@ -48,6 +48,6 @@ $string['pluginname'] = 'Sprachpakete';
 $string['privacy:metadata'] = 'Das Plugin \'Sprachpakete\' speichert keine personenbezogenen Daten.';
 $string['purgestringcaches'] = 'Sprachcache löschen';
 $string['selectlangs'] = 'Wählen Sie ein Sprachpaket, das deinstalliert werden soll.';
-$string['uninstall'] = 'Ausgewähltes Sprachpaket deinstallieren';
-$string['uninstallconfirm'] = 'Möchten Sie die Sprachpakete \'{$a}\' wirklich deinstallieren?';
-$string['updatelangs'] = 'Sprachpakete aktualisieren';
+$string['uninstall'] = 'Ausgewählte Sprachpakete deinstallieren';
+$string['uninstallconfirm'] = 'Möchten Sie die Sprachpakete <strong>\'{$a}\'</strong> wirklich deinstallieren?';
+$string['updatelangs'] = 'Installierte Sprachpakete aktualisieren';

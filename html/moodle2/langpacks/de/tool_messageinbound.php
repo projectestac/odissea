@@ -80,7 +80,7 @@ $string['messageprocessingerrorhtml'] = '{$a->error}<p>Sie haben vor kurzem eine
 <p>Die Gründe dafür stehen hier unten.</p>
 <p>{$a->error}</p>';
 $string['messageprocessingfailed'] = 'Die E-Mail \'{$a->subject}\' konnte nicht verarbeitet werden. Folgender Fehler ist aufgetreten: \'{$a->message}\'.';
-$string['messageprocessingfailedunknown'] = 'Die E-Mail \'{$a->subject}\' konnte nicht verarbeitet werden. Für weitere Informationen wenden Sie sich an den Administrator.';
+$string['messageprocessingfailedunknown'] = 'Die E-Mail \'{$a->subject}\' konnte nicht verarbeitet werden. Für weitere Informationen wenden Sie sich an eine/n Administrator/in.';
 $string['messageprocessingsuccess'] = '{$a->plain}
 
 Wenn Sie künftig diese Benachrichtigungen nicht erhalten wollen, können Sie die Einstellungen für persönliche Benachrichtigungen anpassen. Öffnen Sie den folgenden Link {$a->messagepreferencesurl} in Ihrem Browser.';

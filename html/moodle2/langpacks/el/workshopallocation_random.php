@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addselfassessment'] = 'Προσθέστε αυτοαξιολογήσεις';
+$string['addselfassessment'] = 'Προσθέστε αυτο-αξιολογήσεις';
 $string['allocationaddeddetail'] = 'Νέα αξιολόγηση: Ο/Η <strong>{$a->reviewername}</strong> είναι εξεταστής του <strong>{$a->authorname}</strong>';
 $string['allocationdeallocategraded'] = 'Δεν είναι δυνατή η ακύρωση εκχώρησης της ήδη βαθμολογημένης αξιολόγησης... εξεταστής: <strong>{$a->reviewername}</strong>, συγγραφέας υποβολής: <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Επαναχρησιμοποίηση αξιολόγησης: Ο/Η <strong>{$a->reviewername}</strong> διατηρήθηκε ως εξεταστής του <strong>{$a->authorname}</strong>';
@@ -44,7 +44,7 @@ $string['numofselfallocatedsubmissions'] = 'Αυτο-εκχώρηση {$a} υπ�
 $string['numperauthor'] = 'ανά υποβολή';
 $string['numperreviewer'] = 'ανά εξεταστή';
 $string['pluginname'] = 'Τυχαία εκχώρηση';
-$string['privacy:metadata'] = 'Το πρόσθετο «Τυχαία εκχώρηση» δεν αποθηκεύει κανένα προσωπικό δεδομένο. Τα πραγματικά προσωπικά δεδομένα σχετικά με το ποιος πρόκειται να αξιολογήσει ποιόν, αποθηκεύονται από από το ίδιο το άρθρωμα Εργαστηρίου και αποτελούν βάση για την εξαγωγή των λεπτομερειών αξιολόγησης.';
+$string['privacy:metadata'] = 'Το πρόσθετο «Τυχαία εκχώρηση» δεν αποθηκεύει κανένα προσωπικό δεδομένο. Τα πραγματικά προσωπικά δεδομένα σχετικά με το ποιος πρόκειται να αξιολογήσει ποιόν, αποθηκεύονται από το ίδιο το άρθρωμα Εργαστηρίου και αποτελούν βάση για την εξαγωγή των λεπτομερειών αξιολόγησης.';
 $string['randomallocationdone'] = 'Η τυχαία εκχώρηση ολοκληρώθηκε';
 $string['removecurrentallocations'] = 'Ακύρωση τρεχουσών εκχωρήσεων';
 $string['resultnomorepeers'] = 'Δεν υπάρχουν άλλοι διαθέσιμοι ομότιμοι';

@@ -45,6 +45,6 @@ $string['privacy:metadata'] = 'Das Plugin \'ClamAV Antivirus\' speichert keine p
 $string['quarantinedir'] = 'Quarantäne Verzeichnis';
 $string['runningmethod'] = 'Ausführungsmethode';
 $string['runningmethodcommandline'] = 'Befehlszeile';
-$string['runningmethoddesc'] = 'Methode zum Ausführen von ClamAV. Die Befehlszeile wird standardmäßig verwendet, aber auf Unix-Systemen könnte eine bessere Leistung durch die Verwendung von System-Sockets erreicht werden.';
+$string['runningmethoddesc'] = 'Methode zum Ausführen von ClamAV. Die Befehlszeile wird üblicherweise verwendet, aber auf Unix-Systemen könnte eine bessere Leistung durch die Verwendung von System-Sockets erreicht werden.';
 $string['runningmethodunixsocket'] = 'Unix Domain Socket';
 $string['unknownerror'] = 'Ein unbekannter Fehler ist bei ClamAV aufgetreten.';

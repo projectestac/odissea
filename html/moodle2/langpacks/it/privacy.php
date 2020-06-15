@@ -29,6 +29,7 @@ $string['exportfrom'] = 'Esportato da {$a}';
 $string['exporttime'] = 'Esportato il {$a}';
 $string['navigation'] = 'Navigazione';
 $string['privacy:metadata'] = 'Il sottosistema privacy non memorizza dati personali ed è progettato per fungere da canale tra i componenti e l\'interfaccia utilizzata per descrivere, esportare e rimuovere i dati.';
+$string['trace:exportcomplete'] = 'Esportazione completata';
 $string['trace:finalisingexport'] = 'Finalizzazione del report';
 $string['trace:preprocessingcomponent'] = 'Pre elaborazione {$a->component} ({$a->progress}/{$a->total}) ({$a->datetime})';
 $string['trace:processingcomponent'] = 'Elaborazione {$a->component} ({$a->progress}/{$a->total}) ({$a->datetime})';

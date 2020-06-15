@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtofavourites'] = '用星号标记课程';
+$string['addtofavourites'] = '用标星课程';
 $string['all'] = '所有';
 $string['aria:addtofavourites'] = '用星号标记';
 $string['aria:allcourses'] = '所有课程';
@@ -48,7 +48,7 @@ $string['card'] = '卡片';
 $string['cards'] = '卡片';
 $string['complete'] = '完成';
 $string['courseprogress'] = '课程进度';
-$string['favourites'] = '带星号标记的';
+$string['favourites'] = '带标星的';
 $string['future'] = '尚未开始的';
 $string['hidden'] = '隐藏的课程';
 $string['hiddencourses'] = '隐藏的';
@@ -70,7 +70,7 @@ $string['past'] = '过期的';
 $string['pluginname'] = '课程概览';
 $string['privacy:request:preference:set'] = '设置 \'{$a->name}\' 的值是 \'{$a->value}\'';
 $string['recentlyoverdue'] = '最近逾期的';
-$string['removefromfavourites'] = '撤销星号标记';
+$string['removefromfavourites'] = '撤销标星';
 $string['show'] = '显示课程';
 $string['sortbycourses'] = '按课程排序';
 $string['sortbydates'] = '按日期排序';

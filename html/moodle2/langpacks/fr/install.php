@@ -122,19 +122,19 @@ $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>La base de données permet l\'enregistrement de la plupart des réglages et des données de Moodle. Elle doit être configurée ici.</p>
 <p>Le nom de la base de données, son nom d\'utilisateur et son mot de passe sont des champs obligatoires ; le préfixe des tables est optionnel.</p>
 <p>Le nom de la base de données ne doit comporter que des caractères alphanumériques, le dollar ($) et le caractère soulignement (_).</p>
-<p>Si la base de données n\'existe pas encore et que l\'utilisateur indiqué a les droits d\'accès requis, Moodle tentera de créer une nouvelle base de données avec les permissions et réglages adéquats.</p>
+<p>Si la base de données n\'existe pas encore et que l\'utilisateur indiqué a les permissions requises, Moodle tentera de créer une nouvelle base de données avec les droits d\'accès et réglages adéquats.</p>
 <p>Ce pilote de base de données n\'est pas compatible avec le moteur MyISAM.</p>';
 $string['nativemysqli'] = 'MySQL amélioré (natif, mysqli)';
 $string['nativemysqlihelp'] = '<p>La base de données permet l\'enregistrement de la plupart des réglages et des données de Moodle. Elle doit être configurée ici.</p>
 <p>Le nom de la base de données, son nom d\'utilisateur et son mot de passe sont des champs obligatoires ; le préfixe des tables est optionnel.</p>
 <p>Le nom de la base de données ne doit comporter que des caractères alphanumériques, le dollar ($) et le caractère soulignement (_).</p>
-<p>Si la base de données n\'existe pas encore et que l\'utilisateur indiqué a les droits d\'accès requis, Moodle tentera de créer une nouvelle base de données avec les permissions et réglages adéquats.</p>';
+<p>Si la base de données n\'existe pas encore et que l\'utilisateur indiqué a les permissions requises, Moodle tentera de créer une nouvelle base de données avec les droits d\'accès et réglages adéquats.</p>';
 $string['nativeoci'] = 'Oracle (natif, oci)';
 $string['nativeocihelp'] = 'Vous devez maintenant configurer la base de données où seront stockées les données de Moodle. Cette base de données doit être déjà créée, tout comme le nom d\'utilisateur et le mot de passe pour y accéder. Le préfixe des tables est obligatoire.';
 $string['nativepgsql'] = 'PostgreSQL (natif, pgsql)';
 $string['nativepgsqlhelp'] = '<p>La base de données permet l\'enregistrement de la plupart des réglages et des données de Moodle. Elle doit être configurée ici.</p>
 <p>Le nom de la base de données, son nom d\'utilisateur,  son mot de passe et le préfixe des tables sont des champs obligatoires.</p>
-<p>Si la base de données n\'existe pas encore et que l\'utilisateur indiqué a les droits d\'accès requis, Moodle tentera de créer une nouvelle base de données avec les permissions et réglages adéquats.</p>';
+<p>Si la base de données n\'existe pas encore et que l\'utilisateur indiqué a les permissions requises, Moodle tentera de créer une nouvelle base de données avec les droits d\'accès et réglages adéquats.</p>';
 $string['nativesqlsrv'] = 'SQL*Server Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'Vous devez maintenant configurer la base de données où seront stockées les données de Moodle. Cette base de données doit être déjà créée, tout comme le nom d\'utilisateur et le mot de passe pour y accéder. Le préfixe des tables est obligatoire.';
 $string['nativesqlsrvnodriver'] = 'Les pilotes Microsoft Drivers for SQL Server pour PHP ne sont pas installés ou ne sont pas configurés correctement.';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aggregateavg'] = '平均分';
-$string['aggregatecount'] = '评分总数';
+$string['aggregatecount'] = '评分数';
 $string['aggregatemax'] = '最高分';
 $string['aggregatemin'] = '最低分';
 $string['aggregatenone'] = '无评分';

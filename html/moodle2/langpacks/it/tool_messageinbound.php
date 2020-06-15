@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['classname'] = 'Nome classe';
 $string['component'] = 'Componente';
-$string['configmessageinboundhost'] = 'L\'indirizzo del server dove Moodle controllerà la presenza di email in entrata. Per indicare porte non standard è possibile usare la sintassi [server]:[port], ad esempio "mail.example.com:587". Se il campo è vuoto Moodle userà la porta standard in accordo al mail server specificato.';
+$string['configmessageinboundhost'] = 'L\'indirizzo del server dove Moodle controllerà la presenza di email in entrata. Per indicare porte non standard è possibile usare la sintassi [server]:[port], ad esempio "mail.example.com:993". Se il campo è vuoto Moodle userà la porta standard in accordo al mail server specificato.';
 $string['defaultexpiration'] = 'Periodo di default di scadenza dell\'indirizzo';
 $string['defaultexpiration_help'] = 'Quando un gestore genera un indirizzo email, è possibile cionfigfurare il periodo trascorso il quale l\'indirizzo scadrà e non sarà più valido. Si raccomanda di impostare il periodo di scadenza.';
 $string['description'] = 'Descrizione';
@@ -42,7 +42,7 @@ $string['fixedvalidateaddress_help'] = 'Non è possibile modificare la verifica 
 $string['handlerdisabled'] = 'Il gestore email che hai tentato di contattare è stato disabilitato. Non è possibile elaborare il messaggio.';
 $string['incomingmailconfiguration'] = 'Configurazione email in entrata';
 $string['incomingmailserversettings'] = 'Impostazioni server email in entrata';
-$string['incomingmailserversettings_desc'] = 'Moodle può collegarsi ad un server IMAP correttamnte configurato. Le impostazioni del server IMAP possono essere specificate sotto.';
+$string['incomingmailserversettings_desc'] = 'Moodle può collegarsi ad un server IMAP correttamente configurato. Le impostazioni del server IMAP possono essere specificate sotto.';
 $string['invalidrecipientdescription'] = 'Non è stato possibile verificare il messaggio "{$a->subject}" poiché l\'indirizzo del mittente è diverso da quello presente nel tuo profilo. Per verificare il tuo messaggio devi rispondere a questo messaggio.';
 $string['invalidrecipientdescriptionhtml'] = 'Non è stato possibile verificare il messaggio "{$a->subject}" poiché l\'indirizzo del mittente è diverso da quello presente nel tuo profilo. Per verificare il tuo messaggio devi rispondere a questo messaggio.';
 $string['invalidrecipientfinal'] = 'Non è stato possibile autenticare il messaggio "{$a->subject}". Per favore controlla che stai inviando messaggi dalla stessa email presente nel tuo profilo.';

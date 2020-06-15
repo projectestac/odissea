@@ -37,8 +37,8 @@ $string['deleteconfirm'] = '删除该备注吗？';
 $string['deletenotes'] = '删除所有备注';
 $string['editnote'] = '编辑备注';
 $string['enablenotes'] = '启用备注';
-$string['eventnotecreated'] = '创建了笔记';
-$string['eventnotedeleted'] = '删除了笔记';
+$string['eventnotecreated'] = '创建了备注';
+$string['eventnotedeleted'] = '删除了备注';
 $string['eventnotesviewed'] = '查看了笔记';
 $string['eventnoteupdated'] = '修改了笔记';
 $string['groupaddnewnote'] = '添加相同备注';
@@ -56,8 +56,8 @@ $string['nouser'] = '您必须选择一个用户';
 $string['page-notes-index'] = '备注主页';
 $string['page-notes-x'] = '任意备注页面';
 $string['personal'] = '私人';
-$string['personalnotes'] = '私人备注';
-$string['publishstate'] = '上下文';
+$string['personalnotes'] = '个人备注';
+$string['publishstate'] = '场景';
 $string['publishstate_help'] = '备注的上下文决定了谁能看到这个备注。
 
 * 个人 - 只有您自己可以看见

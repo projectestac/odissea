@@ -105,7 +105,7 @@ $string['aggregation_help'] = 'El Cálculo total determina cómo las calificacio
 * Calificación más alta
 * Moda - La calificación que se produce con más frecuencia
 * Suma  - La suma de todas las calificaciones, ignorando los valores de la escala establecida';
-$string['aggregationhintdropped'] = '( Abandonado )';
+$string['aggregationhintdropped'] = '( Descartada )';
 $string['aggregationhintexcluded'] = '( Excluído )';
 $string['aggregationhintextra'] = '( Crédito extra )';
 $string['aggregationhintnovalue'] = '( Vacío )';
@@ -323,7 +323,7 @@ $string['gradeitemsinc'] = 'Ítems de calificación a incluir';
 $string['gradeletter'] = 'Letra de calificación';
 $string['gradeletter_help'] = '<p>Una letra u otro símbolo utilizado para representar un rango de calificaciones.</p>';
 $string['gradeletternote'] = 'Para eliminar una letra de calificación, simplemente vacíe cualquiera de las<br />tres áreas de texto de dicha letra y haga clic en guardar cambios.';
-$string['gradeletteroverridden'] = 'Las calificaciones con letras están actualmente anuladas.';
+$string['gradeletteroverridden'] = 'Han sido modificados los valores por defecto para las calificaciones con letras.';
 $string['gradeletters'] = 'Letras de calificación';
 $string['gradelocked'] = 'La calificación está bloqueada';
 $string['gradelong'] = '{$a->grade} / {$a->max}';

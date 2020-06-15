@@ -57,7 +57,7 @@ $string['createtokenforuserdescription'] = 'Nutzer-Token für den Webservice erz
 $string['createuser'] = 'Webservice-Nutzer anlegen';
 $string['createuserdescription'] = 'Sie müssen einen speziellen Webservice-Nutzer für das System anlegen, das Moodle steuern soll';
 $string['criteriaerror'] = 'Fehlende Rechte für die Kriteriensuche';
-$string['default'] = 'Standardmäßig für \'{$a}\'';
+$string['default'] = 'Standard für \'{$a}\'';
 $string['deleteaservice'] = 'Service löschen';
 $string['deleteservice'] = 'Service löschen: {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'Wenn ein Webservice gelöscht wird, werden auch alle damit verbundenen Token gelöscht. Möchten Sie wirklich den externen Service \'{$a}\' löschen?';
@@ -203,7 +203,7 @@ $string['simpleauthlog'] = 'Login mit einfacher Authentifizierung';
 $string['step'] = 'Schritt';
 $string['supplyinfo'] = 'Weitere Details';
 $string['testauserwithtestclientdescription'] = 'Simulieren Sie einen externen Dienstzugriff mit dem Webservice-Testclient. Loggen Sie sich zuerst als Nutzer/in mit der Berechtigung "moodle/webservice:createtoken" ein. Suchen Sie die Option \'Sicherheitsschlüssel\' (Token) auf der Nutzerseite \'Einstellungen\'. Verwenden Sie das Token im Testclient. Wählen Sie im Testclient ein aktiviertes Protokoll mit Token-Authentifizierung. <strong>Achtung: Die getesteten Funktionen werden für dieses Nutzerkonto tatsächlich ausgeführt. Seien Sie deswegen vorsichtig mit der Auswahl Ihrer Tests.</strong>';
-$string['testclient'] = 'Webservice-Testrechner';
+$string['testclient'] = 'Webservice-Testclient';
 $string['testclientdescription'] = '* Der Webservice-TestClient <strong>führt die Funktionen tatsächlich aus </strong>. Testen Sie keine Funktionen, die Ihnen unbekannt sind.<br />
 * Die Webservice-Funktionen sind bisher noch nicht alle in den TestClient implementiert.<br />
 * Um zu prüfen, dass ein Nutzer auf manche Funktionen nicht zugreifen kann, geben Sie auch einige Funktionen an, die Sie nicht zugelassen haben.<br />
@@ -212,7 +212,7 @@ $string['testwithtestclient'] = 'Service testen';
 $string['testwithtestclientdescription'] = 'Simulation des externen Zugriffs mit dem Webservice Testclient. Verwenden Sie ein aktiviertes Protokoll mit Token-Authentifizierung. <strong>Warnung: Die Funktionen, die Sie testen, WERDEN AUSGEFÜHRT. Seien Sie also vorsichtig, mit dem, was Sie testen.</strong>';
 $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Token Authentifizierung';
-$string['tokencreatedbyadmin'] = 'Kann ausschließlich vom Administrator zurückgesetzt werden (*)';
+$string['tokencreatedbyadmin'] = 'Kann ausschließlich von Administrator/innen zurückgesetzt werden (*)';
 $string['tokencreator'] = 'Ersteller';
 $string['unknownoptionkey'] = 'Unbekannter optionaler Schlüssel ({$a})';
 $string['unnamedstringparam'] = 'Unbenannter Textparameter';

@@ -40,7 +40,7 @@ $string['configplugin'] = 'Δημόσιες ρυθμίσεις Flickr';
 $string['creativecommonscommercial'] = 'Μόνο (με άδεια) Creative Commons εμπορική (Αναφορά Δημιουργού)';
 $string['emailaddress'] = 'Διεύθυνση ηλε.ταχυδρομείου';
 $string['flickr_public:view'] = 'Χρήση του repository Flickr public στο σύστημα επιλογής αρχείων (file picker)';
-$string['fulltext'] = 'Πλήρες κέιμενο';
+$string['fulltext'] = 'Πλήρες κείμενο';
 $string['information'] = '<div>Λάβετε ένα <a href="http://www.flickr.com/services/api/keys/">Κλειδί API για το Flickr</a> για τον Moodle ιστότοπό σας.</div>';
 $string['invalidemail'] = 'Μη έγκυρος λογαριασμός ηλε.ταχυδρομείου για το flickr';
 $string['license'] = 'Άδεια';

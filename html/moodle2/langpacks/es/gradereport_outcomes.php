@@ -31,4 +31,5 @@ $string['coursespecoutcome'] = 'Resultados del curso';
 $string['eventgradereportviewed'] = 'Informe de resultados visto';
 $string['outcomes:view'] = 'Ver informe de resultados';
 $string['pluginname'] = 'Informe de resultados';
+$string['privacy:metadata'] = 'El Informe de Resultados de calificación solamente muestra datos almacenados en otros sitios.';
 $string['usedgradeitem'] = 'Número de elementos de calificación';

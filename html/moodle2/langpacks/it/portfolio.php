@@ -188,6 +188,7 @@ $string['privacy:metadata:portfolio_tempdata:instance'] = 'Istanza del plugin po
 $string['privacy:metadata:portfolio_tempdata:userid'] = 'Utente che effettua l\'esportazione.';
 $string['privacy:metadata:userid'] = 'ID utente.';
 $string['privacy:metadata:value'] = 'Valore della preferenza.';
+$string['privacy:path'] = 'istanze portfolio';
 $string['queuesummary'] = 'Trasferimenti in coda';
 $string['returntowhereyouwere'] = 'Ritorna dove hai iniziato l\'esportazione';
 $string['save'] = 'Salva';

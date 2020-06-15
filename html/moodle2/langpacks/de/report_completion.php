@@ -35,6 +35,6 @@ $string['name'] = 'Name';
 $string['nocapability'] = 'Kein Zugriff auf die Nutzerabschlussübersicht';
 $string['page-report-completion-index'] = 'Kursabschlussbericht';
 $string['page-report-completion-user'] = 'Nutzer-Kursabschlussbericht';
-$string['page-report-completion-x'] = 'Alle Abschlussberichte';
+$string['page-report-completion-x'] = 'Jeder Abschlussbericht';
 $string['pluginname'] = 'Kursabschluss';
 $string['privacy:metadata'] = 'Der Kursabschlussbericht zeigt nur Daten, die an anderen Stellen gespeichert werden';

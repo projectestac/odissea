@@ -65,5 +65,7 @@ $string['printheading'] = 'Visualizza il nome della pagina';
 $string['printheadingexplain'] = 'Consente di visualizzare il nome della pagina sopra il testo del contenuto.';
 $string['printintro'] = 'Visualizza la descrizione della pagina';
 $string['printintroexplain'] = 'Consente di visualizzare la descrizione della pagina prima del contenuto.';
+$string['printlastmodified'] = 'Visualizza data di ultima modifica';
+$string['printlastmodifiedexplain'] = 'La data di ultima modifica sarà visualizzata sotto il contenuto';
 $string['privacy:metadata'] = 'Il plugin risorsa "Pagina" non memorizza dati personali.';
 $string['search:activity'] = 'Pagina';

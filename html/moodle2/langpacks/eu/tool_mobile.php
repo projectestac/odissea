@@ -26,17 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['adodbdebugwarning'] = 'ADOdb arazketa gaituta dago. Desgaituta egon behar du kanpoko datu-base bidezko autentifikazio-pluginaren edo kanpoko datu-base bidezko matrikulazio-pluginaren ezarpenetan.';
-$string['androidappid'] = 'Android app-aren identifikatzaile bakarra';
+$string['androidappid'] = 'Android aplikazioaren identifikatzaile bakarra';
 $string['androidappid_desc'] = 'Ezarpen hau lehenetsitako balioarekin utz daiteke Android app pertsonalizatu bat izan ezean.';
-$string['apppolicy'] = 'App-aren politikaren URLa';
-$string['apppolicy_help'] = 'App-aren erabiltzaileentzako politikaren URLa app-aren Honi buruz orrian zerrendatzen dena. Eremua hutsik badago, horren ordez gunearen politikaren URLa erabiliko da.';
+$string['apppolicy'] = 'Aplikazioaren politikaren URLa';
+$string['apppolicy_help'] = 'Aplikazioaren erabiltzaileentzako politikaren URLa aplikazioaren Honi buruz orrian zerrendatzen dena. Eremua hutsik badago, horren ordez gunearen politikaren URLa erabiliko da.';
 $string['autologinkeygenerationlockout'] = 'Saio-hasiera automatikorako gakoak sortzea blokeatuta dago. Eskaeren artean 6 minutu itxaron behar dituzu.';
 $string['autologinnotallowedtoadmins'] = 'Saio-hasiera automatikoa ez dago guneko kudeatzaileentzat baimenduta.';
 $string['cachedef_plugininfo'] = 'Honek mobile-gehigarriak dituzten pluginak biltzen ditu';
-$string['clickheretolaunchtheapp'] = 'Egin klik hemen app-ak ez badu automatikoki zabaltzen.';
+$string['clickheretolaunchtheapp'] = 'Egin klik hemen aplikazioak ez badu automatikoki zabaltzen.';
 $string['configmobilecssurl'] = 'CSS fitxategia app mugikorraren interfazea pertsonalizatzeko.';
 $string['customlangstrings'] = 'Pertsonalizatu hizkuntza-kateak';
-$string['customlangstrings_desc'] = 'Hemen app-an erakusten diren hitz eta esaldiak pertsonalizatu daitezke. Idatzi hemen pertsonalizatutako hizkuntza-kate bat errenkada bakoitzean hurrengo formatuarekin: kate-identifikatzailea, pertsonalizatutako hizkuntza-katea eta hizkuntza-kodea, marra bertikal batez banatuak. Adibidez:
+$string['customlangstrings_desc'] = 'Hemen aplikazioan erakusten diren hitz eta esaldiak pertsonalizatu daitezke. Idatzi hemen pertsonalizatutako hizkuntza-kate bat errenkada bakoitzean hurrengo formatuarekin: kate-identifikatzailea, pertsonalizatutako hizkuntza-katea eta hizkuntza-kodea, marra bertikal batez banatuak. Adibidez:
 <pre>
 mm.user.student|Learner|en
 mm.user.student|Ikaslea|eu
@@ -54,16 +54,16 @@ My grades|https://adibidea.eus/laguntza/local/mygrades/index.php|embedded|en
 Nire kalifikazioak|https://adibidea.eus/laguntza/local/mygrades/index.php|embedded|eu
 </pre>';
 $string['disabledfeatures'] = 'Desgaitutako ezaugarriak';
-$string['disabledfeatures_desc'] = 'Aukeratu hemen zure guneko Mobile app-an desgaitu nahi dituzun ezaugarriak. Mesedez kontuan izan hemen zerredatutako ezaugarrietako batzuk guneko beste ezarpen batzuen bitartez dagoeneko desgaituta egon daitezkela. Aldaketak ikusteko app-tik irten eta berriz sartu beharko zara.';
+$string['disabledfeatures_desc'] = 'Aukeratu hemen zure guneko Mobile aplikazioan desgaitu nahi dituzun ezaugarriak. Mesedez kontuan izan hemen zerredatutako ezaugarrietako batzuk guneko beste ezarpen batzuen bitartez dagoeneko desgaituta egon daitezkeela. Aldaketak ikusteko aplikaziotik irten eta berriz sartu beharko zara.';
 $string['displayerrorswarning'] = 'Erakutsi arazketa-mezuak (debugdisplay) gaituta dago. Desgaituta egon beharko litzateke.';
 $string['downloadcourse'] = 'Jaitsi ikastaroa';
 $string['downloadcourses'] = 'Jaitsi ikastaroak';
-$string['enablesmartappbanners'] = 'Gaitu App Banner-ak';
-$string['enablesmartappbanners_desc'] = 'Gaituz gero, mobile app-a iragartzen duen banner bat erakutsiko da gunean gailu mugikorretako nabigatzailea erabiliz sartuz gero.';
+$string['enablesmartappbanners'] = 'Gaitu Aplikazioaren Iragarkiak';
+$string['enablesmartappbanners_desc'] = 'Gaituz gero, mobile aplikazioa iragartzen duen banner bat erakutsiko da gunean gailu mugikorretako nabigatzailea erabiliz sartuz gero.';
 $string['forcedurlscheme'] = 'Zure pertsonalizatutako app-a nabigatzaile leiho batean baino irekitzea nahi ez baduzu, zehaztu hemen URL eskema; bestela, utzi eremua hutsik.';
 $string['forcedurlscheme_key'] = 'URL eskema';
 $string['forcelogout'] = 'Behartu irtetera';
-$string['forcelogout_desc'] = 'Gaituz gero, app-ko \'Aldatu gunea\' aukera \'Irten\' aukerarekin ordezkatuko da. Honen ondorioz erabiltzailea guztiz ateratzen da. Hurrengo aldian gunean sartzeko euren pasahitza sartu beharko du.';
+$string['forcelogout_desc'] = 'Gaituz gero, aplikazioko \'Aldatu gunea\' aukera \'Irten\' aukerarekin ordezkatuko da. Honen ondorioz erabiltzailea guztiz ateratzen da. Hurrengo aldian gunean sartzeko euren pasahitza sartu beharko du.';
 $string['getmoodleonyourmobile'] = 'Eskuratu aplikazio mugikorra';
 $string['httpsrequired'] = 'HTTPS beharrezkoa da';
 $string['insecurealgorithmwarning'] = 'Badirudi HTTPS ziurtagiriak zifratze-algoritmo ez segurua erabiltzen ari dela sinaduretarako (SHA-1). Mesedez saiatu ziurtagiria eguneratzen.';
@@ -72,30 +72,30 @@ $string['invalidcertificateexpiredatewarning'] = 'Badirudi guneko HTTPS ziurtagi
 $string['invalidcertificatestartdatewarning'] = 'Badirudi guneko HTTPS ziurtagiria ez dela oraindik baliozkoa (etorkizuneko hasiera-data dauka).';
 $string['invalidprivatetoken'] = 'Token pribatu baliogabea. Tokena ez da hutsik egon edo GET parametro bidez bidali.';
 $string['invaliduserquotawarning'] = 'Erabiltzailearen kuota (userquota) zenbaki baliogabea du ezarrita. Baliozko zenbaki bat zehaztu behar da (balio oso bat) Gunearen segurtasun-ezarpenetan.';
-$string['iosappid'] = 'iOS app-aren identifikatzaile bakarra';
+$string['iosappid'] = 'iOS aplikazioaren identifikatzaile bakarra';
 $string['iosappid_desc'] = 'Ezarpen hau lehenetsitako balioarekin utzi daiteke iOS app pertsonalizatu bat izan ezean.';
 $string['loginintheapp'] = 'Aplikazioaren bidez';
 $string['logininthebrowser'] = 'Nabigatzaile-leihoaren bidez (SSO pluginentzat)';
 $string['loginintheembeddedbrowser'] = 'Enbotatutako nabigatzailearen bidez (SSO pluginentzat)';
 $string['mainmenu'] = 'Menu nagusia';
-$string['mobileapp'] = 'Mobile app-a';
-$string['mobileappconnected'] = 'Mobile app-a konektatu da';
+$string['mobileapp'] = 'Mobile aplikazioa';
+$string['mobileappconnected'] = 'Mobile aplikazioa konektatu da';
 $string['mobileappearance'] = 'Mobile itxura';
-$string['mobileappenabled'] = 'Gune honek mobile app bidezko sarbidea gaituta dauka<br /><a href="{$a}">Jaitsi mobile app-a</a>.';
+$string['mobileappenabled'] = 'Gune honek mobile app bidezko sarbidea gaituta dauka<br /><a href="{$a}">Jaitsi mobile aplikazioa</a>.';
 $string['mobileauthentication'] = 'Mobile autentifikazioa';
 $string['mobilecssurl'] = 'CSS';
 $string['mobilefeatures'] = 'Mobile ezaugarriak';
 $string['mobilenotificationsdisabledwarning'] = 'Mobile jakinarazpenak ez daude gaituta. Jakinarazpenen ezarpenak atalean gaitu beharko lirateke.';
 $string['mobilesettings'] = 'Mobile ezarpenak';
 $string['offlineuse'] = 'Lineaz kanpoko erabilera';
-$string['pluginname'] = 'Moodle app-rako tresnak';
+$string['pluginname'] = 'Moodle aplikaziorako tresnak';
 $string['pluginnotenabledorconfigured'] = 'Plugina ez dago gaituta edo konfiguratuta.';
 $string['privacy:metadata:core_userkey'] = 'Oraingo erabiltzailearen saio-hasiera automatikoa sortzeko erabilitako erabiltzaile-gakoak.';
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'Azken saio-hasiera automatikoko eskaeraren data. Eskaeren artean beharrezkoa da 6 minutu igarotzea.';
 $string['remoteaddons'] = 'Urruneko gehigarriak';
-$string['selfsignedoruntrustedcertificatewarning'] = 'Badirudi HTTPS ziurtagiria autosinatua edo ez da konfiantzazkoa. Mobile app-ak soilik konfiantzazko guneetan funtzionatzen du.';
+$string['selfsignedoruntrustedcertificatewarning'] = 'Badirudi HTTPS ziurtagiria autosinatua edo ez da konfiantzazkoa. Mobile aplikazioak soilik konfiantzazko guneetan funtzionatzen du.';
 $string['setuplink'] = 'Aplikazioa deskargatzeko orria';
-$string['setuplink_desc'] = 'App Store eta Google Play-tik Mobile app-a jaisteko aukera ematen duen orriaren URLa. App-a jaisteko orriaren esteka orri-oinean eta erabiltzaile-profilean erakusten da. Hutsik utzi ezazu estekarik ez erakusteko.';
-$string['smartappbanners'] = 'App Banner-ak';
+$string['setuplink_desc'] = 'App Store eta Google Play-tik Mobile aplikazioa jaisteko aukera ematen duen orriaren URLa. Aplikazioa jaisteko orriaren esteka orri-oinean eta erabiltzaile-profilean erakusten da. Hutsik utzi ezazu estekarik ez erakusteko.';
+$string['smartappbanners'] = 'Aplikazioaren Iragarkiak';
 $string['typeoflogin'] = 'Sarrera-mota';
 $string['typeoflogin_desc'] = 'Guneak SSO autentifikazio-metodo bat erabiliz gero, aukeratu nabigatzaile-leiho edo enbotatutako nabigatzaile bidezko modua. Enbotatutako nabigatzaileak erabiltzaile-esperientzia hobea ematen du, baina ez ditu SSO plugin guztiak onartzen.';

@@ -42,5 +42,5 @@ $string['page-site-index'] = 'Nur Startseite';
 $string['page-site-x'] = 'Jede Startseite einer Domäne';
 $string['page-user-profile'] = 'Nur Nutzerprofilseiten';
 $string['page-user-view'] = 'Nur Nutzerprofilseiten';
-$string['page-user-x'] = 'Alle Nutzerseiten';
+$string['page-user-x'] = 'Jede Nutzerseite';
 $string['page-x'] = 'Jede Seite';

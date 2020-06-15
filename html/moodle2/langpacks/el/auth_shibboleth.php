@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_shib_auth_logo'] = 'Λογότυπο μεθόδου αυθεντικοποίησης';
 $string['auth_shib_auth_logo_description'] = 'Εισαγάγετε ένα λογότυπο για τη μέθοδο αυθεντικοποίησης Shibboleth που είναι οικεία στους χρήστες σας. Αυτό θα μπορούσε να είναι το λογότυπο της ομοσπονδίας σας Shibboleth, π.χ. <tt>SWITCHaai Login</tt> ή <tt>InCommon Login</tt> ή παρόμοιο.';
 $string['auth_shib_auth_method'] = 'Όνομα μεθόδου αυθεντικοποίησης';
-$string['auth_shib_auth_method_description'] = 'Δώστε ένα όνομα για τη μέθοδο αυθεντικοποίησης Shibboleth που να είναι οικείο στους χρήστες σας. Αυτό θα μπορούσε να είναι το όνομα της Shibboleth ομοσπονδίας σας, π.χ. <tt>Σύνδεση SWITCHaai</ tt> ή <tt>Σύνδεση InCommon</ tt> ή παρόμοια.';
+$string['auth_shib_auth_method_description'] = 'Δώστε ένα όνομα για τη μέθοδο αυθεντικοποίησης Shibboleth που να είναι οικείο στους χρήστες σας. Αυτό θα μπορούσε να είναι το όνομα της Shibboleth ομοσπονδίας σας, π.χ. <tt>Σύνδεση SWITCHaai</tt> ή <tt>Σύνδεση InCommon</tt> ή παρόμοια.';
 $string['auth_shibbolethdescription'] = 'Με αυτή την μέθοδο οι χρήστες δημιουργούνται και πιστοποιούνται χρησιμοποιώντας το Shibboleth. Για λεπτομέρειες εγκατάστασης/ρυθμίσεων, δείτε το <a href="../auth/shibboleth/README.txt">αρχείο README.txt του Shibboleth</a>.';
 $string['auth_shibboleth_errormsg'] = 'Παρακαλούμε, επιλέξτε τον οργανισμό στον οποίο ανήκετε!';
 $string['auth_shibboleth_login'] = 'Σύνδεση μέσω Shibboleth';

@@ -81,6 +81,9 @@ function report_course_quotas_get_chart_info() {
     // Get quota used by users.
     $chartinfo['user'] = report_coursequotas_get_user_usage();
 
+    // Get quota used in H5P libraries.
+    $chartinfo['h5plib'] = report_coursequotas_get_h5plib_usage();
+
     // Get quota used in repositories.
     $chartinfo['repository'] = report_coursequotas_get_repository_usage();
 
@@ -312,6 +315,19 @@ function report_coursequotas_get_backup_usage() {
     return report_coursequotas_format_size($size);
 }
 
+/**
+ * Gets the amount of bytes used by H5P libraries.
+ *
+ * @author Toni Ginard (aginard@xtec.cat)
+ * @global array $DB
+ *
+ * @return int Number of bytes used
+ */
+function report_coursequotas_get_h5plib_usage() {
+    $size = get_coursequotas_filesize("(f.component = 'mod_hvp' AND f.filearea = 'libraries')");
+    return report_coursequotas_format_size($size);
+}
+
 function get_backup_where_sql() {
     return "((f.component = 'backup' AND (f.filearea = 'activity' OR f.filearea = 'course' OR f.filearea = 'automated')) OR (f.component = 'user' AND f.filearea = 'backup'))";
 }
@@ -371,7 +387,7 @@ function report_coursequotas_get_charinfo_total($chartinfo) {
 function report_coursequotas_print_chart($chartinfo, $consumed = false, $total = false) {
     global $CFG;
 
-    $text = "";
+    $text = '';
 
     $consumedcalc = report_coursequotas_get_charinfo_total($chartinfo);
 

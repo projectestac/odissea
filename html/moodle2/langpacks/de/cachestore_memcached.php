@@ -55,16 +55,16 @@ Die Löschung des Caches sollte zu erhöhter Leistung führen.';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Prefix-Schlüssel';
 $string['prefix_help'] = 'Dies kann verwandt werden, um eine \'domain\' für Ihre Schlüsselwerte für mehrere memcached Speicher auf einer einzelnen memcached Installation zu erzeugen. Sie darf nicht länger als 16 Zeichen sein.';
-$string['prefixinvalid'] = 'Ungültiger Schlüssel. Verwenden Sie nur a-z A-Z o-9 -_.';
+$string['prefixinvalid'] = 'Ungültiger Schlüssel. Verwenden Sie nur a-z, A-Z, 0-9, -_.';
 $string['privacy:metadata:memcached'] = 'Das Memcache Cachestore-Plugin speichert kurzfristig Daten. Sie werden regelmäßig gelöscht.';
 $string['privacy:metadata:memcached:data'] = 'Verschiedene im Cache gespeicherte Daten';
 $string['serialiser_igbinary'] = 'Serialiser igbinary';
 $string['serialiser_json'] = 'Serialiser JSON';
-$string['serialiser_php'] = 'Standardmäßiger PHP-Serialiser';
+$string['serialiser_php'] = 'Standard-PHP-Serialiser';
 $string['servers'] = 'Server';
 $string['serversclusterinvalid'] = 'Wenn das Clustering aktiviert wird, ist die Angabe genau eines Servers notwendig.';
 $string['servers_help'] = 'Diese Option legt die Server für den Memcached Adapter fest.
-Verwenden Sie für jeden Server eine neue Zeile. Tragen Sie die Serveradresse, den Port (optonal) und die Gewichtung (optonal) ein.  Wenn kein Port angegeben ist, wird der standardmäßige Port 11211 verwendet.
+Verwenden Sie für jeden Server eine neue Zeile. Tragen Sie die Serveradresse, den Port (optonal) und die Gewichtung (optonal) ein.  Wenn kein Port angegeben ist, wird als Standard Port 11211 verwendet.
 
 Beispiele:
 <pre>
@@ -79,7 +79,7 @@ $string['setservers'] = 'Server auswählen';
 $string['setservers_help'] = 'In der Liste sind die zu aktualisierenden Server aufgeführt, wenn Daten im Cache verändert werden, u.z. mit vollständigem Namen für jeden Server im Pool.
 Es **muss** den Server enthalten, der unter *Server* oben gelistet, möglicherweise mit einem anderen Hostnamen.
 In jeder Zeile wird ein Server mit Serveradresse und optional einem Port eingetragen.
-Wenn kein Port eingetragen wird, wird standardmäßig Port 11211 verwendet.
+Wenn kein Port eingetragen wird, wird der Standard-Port 11211 verwendet.
 
 Beispiel:
 <pre>

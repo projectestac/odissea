@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['adminview'] = 'Administratoransicht';
-$string['allcourses'] = 'Administrator sieht alle Kurse';
-$string['configadminview'] = 'Im Block \'Kurse\' werden dem Administrator alle Kurse angezeigt oder nur diejenigen, in denen er eingeschrieben ist.';
+$string['adminview'] = 'Administrationsansicht';
+$string['allcourses'] = 'Administrator/innen sehen alle Kurse';
+$string['configadminview'] = 'Im Block \'Kurse\' werden Administrator/innen  alle Kurse angezeigt oder nur diejenigen, in denen sie eingeschrieben ist.';
 $string['confighideallcourseslink'] = 'Wenn diese Option aktiviert ist, wird der Link \'Alle Kurse\' am Ende der Kursliste entfernt (außer für Administrator/innen).';
 $string['course_list:addinstance'] = 'Neuen Block \'Kurse\' hinzufügen';
 $string['course_list:myaddinstance'] = 'Neuen Block \'Kurse\' zum Dashboard hinzufügen';
 $string['hideallcourseslink'] = 'Link \'Alle Kurse\' verbergen';
-$string['owncourses'] = 'Administrator sieht nur eigene Kurse';
+$string['owncourses'] = 'Administrator/in sieht nur eigene Kurse';
 $string['pluginname'] = 'Kurse';
 $string['privacy:metadata'] = 'Der Block Kurse zeigt nur Daten an, die an anderen Orten gespeichert sind.';

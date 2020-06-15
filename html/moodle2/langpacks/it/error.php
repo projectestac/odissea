@@ -387,7 +387,7 @@ $string['loginasonecourse'] = 'Non puoi entrare in questo corso.<br/>Devi prima 
 $string['maxareabytes'] = 'La dimensione del file eccede lo spazio rimasto disponibile in quest\'area.';
 $string['maxbytesfile'] = 'Il file {$a->file} è troppo grande. La dimensione massima che è possibile caricare è pari a {$a->size}.';
 $string['messagingdisable'] = 'La messaggistica è disabilitata';
-$string['mimetexisnotexist'] = 'Il tuo sistema non è configurato per eseguire mimeTEX. Devi scaricare l\'eseguibile adatto al tuo sistema operativo e versione PHP da <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, oppure ottenere il codice sorgente C da <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, compilarlo e caricare l\'eseguibile risultante nella cartella moodle/filter/tex/.';
+$string['mimetexisnotexist'] = 'Il sistema non è configurato per eseguire mimeTEX. E\' necessario scaricare il sorgente C da <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip</a>, compilarlo e copiare l\'eseguibile nella cartella  moodle/filter/tex/.';
 $string['mimetexnotexecutable'] = 'Il mimetex personalizzato non è eseguibile!';
 $string['missingfield'] = 'Manca il campo "{$a}"';
 $string['missingkeyinsql'] = 'ERROR: nella query manca il parametro "{$a}"';
@@ -429,7 +429,7 @@ $string['nofiltersenabled'] = 'Non ci sono filtri abilitati.';
 $string['nofolder'] = 'La cartella richiesta non esiste';
 $string['noformdesc'] = 'Per questa attività nella formslib non sono state trovate definizioni del form';
 $string['noguest'] = 'Non ci sono ospiti qui!';
-$string['noinstances'] = 'Non ci sono istanze di {$a} in questo corso!';
+$string['noinstances'] = 'Non ci sono istanze di {$a} in questo corso.';
 $string['nologinas'] = 'Non sei autorizzato ad autenticarti come quell\'utente';
 $string['nonmeaningfulcontent'] = 'Contenuto senza significato';
 $string['noparticipants'] = 'In questo corso non sono stati trovati partecipanti';
@@ -469,7 +469,7 @@ $string['pagenotexist'] = 'Si è verificato un errore insolito (si è provato a 
 $string['pathdoesnotstartslash'] = 'Non sono stati forniti argomenti validi, i percorsi non iniziano con lo slash!';
 $string['pleasereport'] = 'Se hai tempo, ti preghiamo di farci sapere cosa stavi cercando di fare quando l\'errore si è verificato:';
 $string['pluginrequirementsnotmet'] = 'Non è possibile installare Il plugin "{$a->pluginname}" ({$a->pluginversion}). E\' necessaria una versione più recente di Moodle (versione in uso:  {$a->currentmoodle}, versione richiesta: {$a->requiremoodle}).';
-$string['prefixcannotbeempty'] = '<p>Errore: il prefisso del database non può essere nullo. ({$a})</p>
+$string['prefixcannotbeempty'] = '<p>Errore: il prefisso del database non può essere vuoto. ({$a})</p>
 <p>L\'amministratore del sito deve risolvere questo problema.</p>';
 $string['prefixtoolong'] = '<p>Errore: il prefisso delle tabelle del database è troppo lungo ({$a->dbfamily})</p>
 <p>L\'amministratore del sito deve risolvere questo problema. La lunghezza massima del prefisso delle tabelle per {$a->dbfamily} è {$a->maxlength} caratteri.</p>';
@@ -484,7 +484,7 @@ $string['registrationdisabled'] = 'La creazione di account non è abilitata';
 $string['remotedownloaderror'] = '<p>Lo scaricamento delle componenti non è andato a buon fine. Verificare le impostazioni del proxy. L\'estensione PHP cURL è fortemente consigliata.</p>
 <p>Devi scaricare manualmente il file <a href="{$a->url}">{$a->url}</a>, copiarlo in "{$a->dest}" e decomprimerlo.</p>';
 $string['remotedownloadnotallowed'] = 'Non è permesso scaricare i componenti sul  server (allow_url_fopen è disabilitato). <br /><br /> È necessario scaricare manualmente il file <a href="{$a->url}">{$a->url}</a>, copiarlo in "{$a->dest}" sul server e scompattarlo.';
-$string['reportnotavailable'] = 'Questo tipo di report è disponibile solamente nel corso della pagina home';
+$string['reportnotavailable'] = 'Questo tipo di report è disponibile solamente nel corso home del sito';
 $string['requirecorrectaccess'] = 'URL o porta non valido';
 $string['requireloginerror'] = 'L\'accesso al corso o attività non è consentito.';
 $string['restorechecksumfailed'] = 'Si sono verificati alcuni problemi con le informazioni di ripristino presenti nella tua sessione. Per favore controllare i limiti della memoria PHP e della dimensione del pacchetto. Il ripristino è stato interrotto.';
@@ -493,7 +493,7 @@ $string['restore_path_element_noobject'] = 'L\'oggetto del ripristino {$a} non �
 $string['restrictedcontextexception'] = 'Spiacente, l\'esecuzione di funzioni esterne viola le restrizioni del contesto.';
 $string['restricteduser'] = 'Spiacente, ma il tuoi account  "{$a}" non è autorizzato a fare questo';
 $string['reverseproxyabused'] = 'Spiacente ma il server non può essere raggiunto direttamente, è stato abilitato un reverse proxy.<br />Per favore contattate l\'amministratore del server.';
-$string['rpcerror'] = 'Ooops! La comunicazione MNET è fallita! Questo è il messaggio di errore da fornire all\'amministratore: {$a}';
+$string['rpcerror'] = 'Ooops! La comunicazione MNET è fallita! Di seguito il messaggio di errore da fornire all\'amministratore: {$a}';
 $string['scheduledbackupsdisabled'] = 'I backup periodici sono stati disabilitati dall\'amministratore del server.';
 $string['secretalreadyused'] = 'Il link di conferma cambio password è già stato utilizzato, la password non è stata cambiata';
 $string['sectionnotexist'] = 'Questa sezione non esiste';

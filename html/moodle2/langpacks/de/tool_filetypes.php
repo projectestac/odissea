@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addfiletypes'] = 'Dateityp hinzufügen';
 $string['corestring'] = 'Alternativer Text';
-$string['corestring_help'] = 'Diese Option kann verwendet werden, um einen von den Einträgen in mimetypes.php abweichenden Text festzulegen.  Standardmäßig sollte die Option leer bleiben. Für benutzerdefinierte Typen verwenden Sie das Feld \'Beschreibung\'.';
-$string['defaulticon'] = 'Standardmäßiges Icon für MIME-Typ';
+$string['corestring_help'] = 'Diese Option kann verwendet werden, um einen von den Einträgen in mimetypes.php abweichenden Text festzulegen.  Meist sollte die Option leer bleiben. Für benutzerdefinierte Typen verwenden Sie das Feld \'Beschreibung\'.';
+$string['defaulticon'] = 'Icon für MIME-Typ';
 $string['defaulticon_help'] = 'Falls es mehrere Dateiendungen für den gleichen MIME-Type gibt, wählen Sie in dieser Option aus, welches Icon für diesen MIME-Typ verwendet werden soll.';
 $string['deletea'] = 'Löschen {$a}';
 $string['delete_confirmation'] = 'Möchten Sie wirklich \'.{$a}\' löschen?';
@@ -40,7 +40,7 @@ $string['descriptiontype_custom'] = 'Angepasste Beschreibung, wie in diesem Form
 $string['descriptiontype_default'] = 'Standard (MIME-Type oder Texteintrag, falls vorhanden)';
 $string['descriptiontype_help'] = 'Es gibt drei Möglichkeiten, um eine Beschreibung anzugeben.
 
-* Standardmäßig wird der MIME-Typ verwendet. Wenn es einen Texteintrag in mimetypes.php für diesen MIME-Typ gibt, wird der Name angezeigt, andernfalls der MIME-Typ.
+* Meist wird der MIME-Typ verwendet. Wenn es einen Texteintrag in mimetypes.php für diesen MIME-Typ gibt, wird der Name angezeigt, andernfalls der MIME-Typ.
 * Sie können eine angepasste Beschreibung in diesem Formular angeben.
 * Sie können den Namen des Texteintrags aus mimetypes.php angeben, um ihn statt des MIME-Typs zu verwenden.';
 $string['descriptiontype_lang'] = 'Alternativer Texteintrag (in mimetypes.php)';

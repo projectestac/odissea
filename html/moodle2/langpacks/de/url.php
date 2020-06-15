@@ -52,9 +52,9 @@ Folgende Einstelloptionen sind möglich:
 $string['externalurl'] = 'Externe URL';
 $string['framesize'] = 'Frame-Höhe';
 $string['indicator:cognitivedepth'] = 'URL kognitiv';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in bei einer URL-Ressource erreicht hat.';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einer URL-Ressource erreicht hat.';
 $string['indicator:socialbreadth'] = 'URL sozial';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in bei einer URL-Ressource erreicht hat.';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einer URL-Ressource erreicht hat.';
 $string['invalidstoredurl'] = 'Das Material kann nicht angezeigt werden, weil die URL ungültig ist';
 $string['invalidurl'] = 'Ungültige URL';
 $string['modulename'] = 'Link/URL';

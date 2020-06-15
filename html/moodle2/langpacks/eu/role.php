@@ -301,7 +301,7 @@ $string['noneinthisx'] = 'Bat ere ez {$a} honetan';
 $string['noneinthisxmatching'] = 'Ez dago \'{$a->search}\' erabiltzailerik {$a->contexttype} honetan';
 $string['norole'] = 'Rolik ez';
 $string['noroleassignments'] = 'Erabiltzaile honek ez du inongo rolik esleituta gune honetan.';
-$string['noroles'] = 'Ez dago rolik';
+$string['noroles'] = 'Rolik ez';
 $string['notabletoassignroleshere'] = 'Kudeatzaileak ez du testuinguru honetan rolak esleitzea gaitu.';
 $string['notabletooverrideroleshere'] = 'Ez duzu baimenik hemen baimenik kentzeko inongo roli';
 $string['notes:manage'] = 'Kudeatu oharrak';
@@ -320,12 +320,11 @@ $string['overriderolesin'] = 'Baliogabetu rolak hemen: {$a}';
 $string['overrides'] = 'Baliogabetu';
 $string['overridesbycontext'] = 'Baliogabetu (testuinguruaren arabera)';
 $string['permission'] = 'Baimena';
-$string['permission_help'] = 'Baimenak gaitasun jakinetarako duzun ezarpenak dira. 4 aukera dira:
+$string['permission_help'] = 'Baimenak gaitasun jakinetarako ezarpenak dira. 4 aukera daude:
 
 * Ezarri gabea
-* Baimendu - gaitasun horretarako
-baimena dago
-* Ukatu - gaitasun honetarako baimena kendu da, baita goragoko testuinguru batean baimenduta badago ere.
+* Baimendu - gaitasun horretarako baimena dago
+* Ukatu - gaitasun honetarako baimena kendu da, baita goragoko testuinguru batean baimenduta badago ere
 * Debekatu - baimena erabat ukatuta dago eta ezin da baliogabetu eta, beraz, baimendu beheragoko (zehatzagoko) inongo testuingurutan';
 $string['permissions'] = 'Baimenak';
 $string['permissionsforuser'] = 'Baimenak  {$a} erabiltzailearentzat';

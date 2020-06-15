@@ -25,6 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpermissions'] = 'Παραχώρηση δικαιωμάτων στο ρόλο αυθεντικοποιημένου χρήστη';
+$string['allowpermissionsdescription'] = 'Επεξεργασία του ρόλου αυθεντικοποιημένου χρήστη και παραχώρηση της δυνατότητας moodle/webservice:createtoken';
+$string['cannotcreatetoken'] = 'Η αυτόματη δημιουργία κουπονιού δεν είναι διαθέσιμη στους διαχειριστές ιστοτόπων (πρέπει να δημιουργήσουν ένα κουπόνι χειροκίνητα στον ιστότοπο)';
+$string['checkpluginconfiguration'] = 'Έλεγχος ρυθμίσεων πρόσθετου';
+$string['clickheretolaunchtheapp'] = 'Παρακαλούμε, κάντε κλικ εδώ αν η εφαρμογή δεν ανοίγει αυτόματα';
 $string['enableadditionalservice'] = 'Ενεργοποίηση της υπηρεσίας πρόσθετων χαρακτηριστικών του Moodle για κινητά';
+$string['enableadditionalservicedescription'] = 'Αυτή η υπηρεσία πρέπει να είναι ενεργοποιημένη.';
+$string['local_mobiledescription'] = 'Πρόσθετο που επεκτείνει τις λειτουργίες της υπηρεσίας κινητής τηλεφωνίας';
 $string['local_mobilesettings'] = 'Ρυθμίσεις';
 $string['pluginname'] = 'Πρόσθετα χαρακτηριστικά του Moodle για κινητά';
+$string['pluginnotenabledorconfigured'] = 'Το τοπικό πρόσθετο Moodle για κινητά πρέπει να είναι ενεργοποιημένο και ρυθμισμένο για να ξεκινήσει η εφαρμογή';
+$string['privacy:metadata'] = 'Το πρόσθετο επιπρόσθετων λειτουργιών του Moodle για κινητά δεν αποθηκεύει καθόλου προσωπικά δεδομένα';

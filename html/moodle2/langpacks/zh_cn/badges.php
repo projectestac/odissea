@@ -137,9 +137,12 @@ $string['badgeurl'] = '授予的勋章链接';
 $string['bawards'] = '获得人（{$a}）';
 $string['bcriteria'] = '授勋规则';
 $string['bdetails'] = '编辑';
+$string['bendorsement'] = '签注';
 $string['bmessage'] = '消息';
 $string['boverview'] = '概览';
 $string['bydate'] = '完成日期不迟于';
+$string['claimcomment'] = '签注意见';
+$string['claimid'] = '声明网址';
 $string['clearsettings'] = '清除设置';
 $string['completioninfo'] = '该勋章是因为符合下面的条件而被授予的：';
 $string['completionnotenabled'] = '当前课程没有启用课程进度跟踪，故它不能纳入授勋规则当中。课程进度跟踪特性可以在课程设置里面启用，如果在课程设置里面看不到这项，说明网站没有启用这一特性，可以用管理员身份进入：网站管理->高级特性启用它。';
@@ -286,6 +289,10 @@ $string['externalbadgesp'] = '在其它网站获得的勋章：';
 $string['externalconnectto'] = '为显示外部徽章，你需要<a href="{$a}">连接到背包</a>.';
 $string['fixed'] = '固定日期';
 $string['hiddenbadge'] = '抱歉，徽章的主要没有提供此信息。';
+$string['imageauthoremail'] = '图片作者的电子邮件';
+$string['imageauthorname'] = '图片作者的名字';
+$string['imageauthorurl'] = '图片作者的网址';
+$string['imagecaption'] = '图片说明';
 $string['issuancedetails'] = '有效期';
 $string['issuedbadge'] = '授予的勋章信息';
 $string['issuerdetails'] = '授勋机构详情';
@@ -293,6 +300,7 @@ $string['issueremail'] = '电子邮件';
 $string['issuername'] = '授勋机构名称';
 $string['issuername_help'] = '授勋机构的名称。';
 $string['issuerurl'] = '授勋机构 URL';
+$string['language'] = '语言';
 $string['localbadges'] = '我的徽章来源于 {$a} 站点。';
 $string['localbadgesh'] = '我的徽章来源于这个站点。';
 $string['localbadgesh_help'] = '所有徽章赢得了在此网站完成课程，课程活动，及其他要求。
@@ -324,6 +332,7 @@ $string['nobadges'] = '没有可用的勋章';
 $string['nocriteria'] = '此勋章还没有定义授勋规则。';
 $string['noexpiry'] = '此勋章永不过期。';
 $string['noparamstoadd'] = '没有附加的有效参数添加到这枚勋章';
+$string['norelated'] = '这个勋章没有任何关联勋章。';
 $string['notacceptedrole'] = '您的用户角色没有被赋予权限来授予此勋章。<br/>
 您可以访问 {$a} 页面来查看已经被授予此勋章的用户列表。';
 $string['notconnected'] = '未连接';
@@ -359,6 +368,7 @@ $string['recipientdetails'] = '获得者详情';
 $string['recipientidentificationproblem'] = '在现有用户中无法找到此勋章的接受人';
 $string['recipients'] = '勋章获得者';
 $string['recipientvalidationproblem'] = '当前用户不能被验证为这个勋章的接受者。';
+$string['relatedbages'] = '关联勋章';
 $string['relative'] = '相对日期';
 $string['requiredcourse'] = '课程集授勋规则必须至少选择添加一门课程。';
 $string['reviewbadge'] = '勋章获取方式的变更';
@@ -411,6 +421,7 @@ $string['variablesubstitution_help'] = '在设置勋章消息时，可以将某�
 
 %badgelink%
 ：此变量将会被替换成授勋机构的URL网址。';
+$string['version'] = '版本';
 $string['viewbadge'] = '查看授予的勋章';
 $string['visible'] = '可见';
 $string['warnexpired'] = '（此勋章已过期！）';

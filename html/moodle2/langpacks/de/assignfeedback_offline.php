@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['confirmimport'] = 'Bewertungsimport bestätigen';
-$string['default'] = 'Standardmäßig aktiviert';
-$string['default_help'] = 'Diese Option legt fest, ob die Offline-Bewertung standardmäßig in allen neuen Aufgaben aktiviert wird.';
+$string['default'] = 'Bereits aktiviert';
+$string['default_help'] = 'Diese Option legt fest, ob die Offline-Bewertung in allen neuen Aufgaben aktiviert wird.';
 $string['downloadgrades'] = 'Bewertungstabelle herunterladen';
 $string['enabled'] = 'Offline-Bewertungstabelle';
 $string['enabled_help'] = 'Wenn diese Option aktiviert wird, können Trainer/innen eine Bewertungstabelle herunterladen, offline alle Bewertungen für die Teilnehmer/innen ausfüllen und später die Bewertungstabelle wieder hochladen.';

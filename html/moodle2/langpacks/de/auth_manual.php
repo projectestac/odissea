@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_manualdescription'] = 'Diese Authentifizierung verhindert, dass Personen ihre Nutzerkonten selbst anlegen können. Jedes Nutzerprofil wird manuell vom Administrator eingerichtet.';
+$string['auth_manualdescription'] = 'Diese Authentifizierung verhindert, dass Personen ihre Nutzerkonten selbst anlegen können. Jedes Nutzerprofil wird manuell von Administrator/innen eingerichtet.';
 $string['expiration'] = 'Ablauf von Kennwörtern';
 $string['expiration_desc'] = 'Diese Option legt fest, dass Kennwörter nach einer festgelegten Zeit ungültig werden.';
 $string['expiration_warning'] = 'Systemnachricht zum Kennwort';

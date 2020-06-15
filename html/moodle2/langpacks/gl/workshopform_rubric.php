@@ -37,4 +37,6 @@ $string['levelgroup'] = 'Cualificación de nivel e definición';
 $string['levels'] = 'Niveis';
 $string['mustbeunique'] = 'As cualificacións do nivel deben ser únicas dentro dun criterio';
 $string['mustchooseone'] = 'Ten que seleccionar un destes elementos';
+$string['mustdefinelevel'] = 'Requírese cando menos un nivel';
 $string['pluginname'] = 'Rubrica';
+$string['privacy:metadata'] = 'O engadido Rúbrica só almacena os detalles do formulario de avaliación. Os datos persoais reais de como se encheu o formulario almacénanse no propio módulo Workshop (Obradoiro), e engádense ás avaliacións exportadas.';

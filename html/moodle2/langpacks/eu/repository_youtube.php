@@ -30,7 +30,7 @@ $string['apikey'] = 'API giltza';
 $string['configplugin'] = 'YouTube biltegi-motaren ezarpenak';
 $string['information'] = 'Lortu <a href="https://developers.google.com/youtube/v3/getting-started">Google-ren API giltza</a> zure  Moodle gunerako.';
 $string['pluginname'] = 'YouTube bideoak';
-$string['privacy:metadata:repository_youtube'] = 'YouTube bideoak biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_youtube'] = 'YouTube bideoak biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_youtube:searchtext'] = 'YouTube-ko bideoak biltegiko erabiltzailearen bilaketaren testua';
 $string['search'] = 'Bilatu bideoak';
 $string['sortby'] = 'Ordenatu honela';

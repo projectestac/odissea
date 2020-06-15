@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clidriverlist'] = 'Verfügbare Datenbanktreiber für die Migration';
 $string['cliheading'] = 'Datenbank-Migration - während der Migration darf kein Serverzugriff stattfinden!';
-$string['climigrationnotice'] = 'Aktuell läuft eine Datenbank-Migration - bitte warten Sie, bis die Migration abgeschlossen ist und der Administrator die Konfiguration aktualisiert und die Datei $CFG->dataroot/climaintenance.html gelöscht hat.';
+$string['climigrationnotice'] = 'Aktuell läuft eine Datenbank-Migration - bitte warten Sie, bis die Migration abgeschlossen ist und die/der Administrator/in die Konfiguration aktualisiert und die Datei $CFG->dataroot/climaintenance.html gelöscht hat.';
 $string['convertinglogdisplay'] = 'Logging-Anzeigen werden konvertiert';
 $string['dbexport'] = 'Datenbank-Export';
 $string['dbtransfer'] = 'Datenbank-Migration';

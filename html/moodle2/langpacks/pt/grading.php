@@ -78,7 +78,7 @@ $string['privacy:metadata:grading_instances:raterid'] = 'O ID do utilizador que 
 $string['privacy:metadata:grading_instances:rawgrade'] = 'A avaliação para a instância de avaliação.';
 $string['privacy:metadata:grading_instances:status'] = 'O estado desta instância de avaliação';
 $string['privacy:metadata:grading_instances:timemodified'] = 'A hora em que a instância de avaliação foi modificada pela última vez.';
-$string['searchownforms'] = 'incluir as minhas grelhas';
+$string['searchownforms'] = 'Incluir as minhas grelhas&nbsp;';
 $string['searchtemplate'] = 'Pesquisar grelhas de avaliação';
 $string['searchtemplate_help'] = 'Pode pesquisar por uma grelha de avaliação e usá-la aqui como modelo a partir da nova grelha de avaliação. Basta inserir as palavras que devem aparecer em algum lugar no nome da grelha, na sua descrição ou no próprio corpo da grelha. Para pesquisar uma frase, insira a expressão inteira entre aspas.
 

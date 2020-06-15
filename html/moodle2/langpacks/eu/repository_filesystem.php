@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blockedpath'] = 'Root-erako bide-izena blokeatuta';
 $string['configplugin'] = 'Ezarpenak fitxategi-sistema biltegirako';
-$string['donotusesysdir'] = 'Ez erabili sistemako karpetarik biltegi gisa, hauek barne:';
+$string['donotusesysdir'] = 'Ez erabili sistemako direktoriorik biltegi gisa, hauek barne:';
 $string['enablecourseinstances'] = 'Baimendu kudeatzaileei fitxategi-sistema biltegien instantziak ikastaro batera gehitzea (soilik kudeatzaileek konfigura dezakete)';
 $string['enableuserinstances'] = 'Baimendu kudeatzaileei fitxategi-sistema biltegiko elementu bat gehitzen norberaren erabilerarako (soilik kudeatzaileek konfigura dezakete)';
 $string['filesystem:view'] = 'Ikusi fitxategi-sistema biltegia';

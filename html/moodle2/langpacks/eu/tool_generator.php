@@ -90,7 +90,7 @@ $string['smallfiles'] = 'Fitxategi txikiak';
 $string['targetcourse'] = 'Probatu helburuko ikastaroa';
 $string['testplanexplanation'] = 'Erreminta honek JMeter-eko proba-plan fitxategia sortzen du erabiltzaile-kredentzialen fitxategiarekin batera.
 
-Proba-plan hau {$a}-(r)ekin funtzionatzeko dago diseinatua, Moodle-ko ingurune zehatz batean proba-planak exekutatzea erraztu, exekuzioaren inguruko informazioa bildu eta emaitzak konparatzen dituena, eta beraz, hau jaitsi eta bere test_runner.sh script-a erabili edo instalazio eta erabilera argibideak jarraitu beharko duzu.
+Proba-plan hau {$a}-(r)ekin funtzionatzeko dago diseinatua, Moodleko ingurune zehatz batean proba-planak exekutatzea erraztu, exekuzioaren inguruko informazioa bildu eta emaitzak konparatzen dituena, eta beraz, hau jaitsi eta bere test_runner.sh script-a erabili edo instalazio eta erabilera argibideak jarraitu beharko duzu.
 
 Ikastaroko erabiltzaileentzako pasahitza config.php fitxategian zehaztu beharko duzu ($CFG->tool_generator_users_password = \'moodle\'; adibidez). Pasahitz honek ez dauka lehenetsitako baliorik erremintaren erabilera okerra ekiditeko. Pasahitzak eguneratzeko aukera erabili beharko duzu zure ikastaroko erabiltzaileek beste pasahitz batzuk badituzte edo tool_generator erreminta erabilita $CFG->tool_generator_users_password balioa zehaztu gabe sortu baziren.
 

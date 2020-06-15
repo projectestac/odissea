@@ -29,7 +29,7 @@ $string['checkin'] = 'Gorde kateak hizkuntza-paketean';
 $string['checkout'] = 'Ireki hizkuntza-paketea editatzeko';
 $string['checkoutdone'] = 'Hizkuntza-paketea eguneratu da';
 $string['checkoutinprogress'] = 'Hizkuntza-paketea eguneratzen';
-$string['confirmcheckin'] = 'Aldatutako kateak zure hizkuntza-pakete lokalean gordetzekotan zara. Honela pertsonalizatutako kateak itzultzailearengandik zure guneko datuen karpetara esportatuko dira eta zure gunea aldatutako kateak erabiltzen hasiko da. Egin klik \'Jarraitu\' botoian egiaztatzeko.';
+$string['confirmcheckin'] = 'Aldatutako kateak zure hizkuntza-pakete lokalean gordetzekotan zara. Honela pertsonalizatutako kateak itzultzailearengandik zure guneko datuen direktoriora esportatuko dira eta zure gunea aldatutako kateak erabiltzen hasiko da. Egin klik \'Jarraitu\' botoian egiaztatzeko.';
 $string['customlang:edit'] = 'Editatu itzulpen lokala';
 $string['customlang:view'] = 'Ikusi itzulpen lokala';
 $string['filter'] = 'Iragazi kateak';
@@ -51,7 +51,7 @@ $string['modifiedno'] = 'Ez dago aldatutako katerik gordetzeko.';
 $string['modifiednum'] = '{$a} aldatutako kate daude. Aldaketa horiek zure hizkuntza-paketean gorde nahi dituzu?';
 $string['nostringsfound'] = 'Ez da katerik aurkitu. Mesedez, aldatu iragazkiaren ezarpenak.';
 $string['placeholder'] = 'Gakoak';
-$string['placeholder_help'] = 'Gakoak `{$a}` edo `{$a->zerbait}` moduko sententzia bereziak dira. Katea erakusten denean balio batekin ordezkatzen dira.
+$string['placeholder_help'] = 'Gakoak `{$a}` edo `{$a->zerbait}` moduko adierazpen bereziak dira. Katea erakusten denean balio batekin ordezkatzen dira.
 
 Garrantzitsua da gakoa jatorrizko katean dagoen modu zehatzean kopiatzea. Ez ezazu euskaratu edo aldatu bere norabidea.';
 $string['placeholderwarning'] = 'kateak gakoren bat dauka';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['buffersize'] = 'Idazteko buffer-aren tamaina';
 $string['pluginname'] = 'Agerraldi estandarra';
-$string['pluginname_desc'] = 'Ekitaldiak Moodle-ko datu-basean gordetzen dituen agerraldi-erregistro plugin bat.';
+$string['pluginname_desc'] = 'Ekitaldiak Moodleko datu-basean gordetzen dituen agerraldi-erregistro plugin bat.';
 $string['privacy:metadata:log'] = 'Igarotako ekitaldien bilduma';
 $string['privacy:metadata:log:anonymous'] = 'Ekitaldia anonimo gisa markatua izan den edo ez';
 $string['privacy:metadata:log:eventname'] = 'Ekitaldiaren izena';
