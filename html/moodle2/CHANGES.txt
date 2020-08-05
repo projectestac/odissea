@@ -10,6 +10,7 @@ Changes 20.06.17
 - Coursequotas: Added disk usage of H5P libraries
 - Updated language packages
 - Geogebra: Fixed error when accessing to closed activities
+- odisseagtafsync: Changed the last cron execution time to be updated when files are processed instead of when cron is executed
 
 
 Changes 20.03.02
