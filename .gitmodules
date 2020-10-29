@@ -1,3 +1,6 @@
 [submodule "html/admin/tool/odisseagtafsync"]
 	path = html/admin/tool/odisseagtafsync
 	url = https://github.com/projectestac/moodle-admin_odisseagtafsync.git
+[submodule "html/auth/saml2"]
+	path = html/auth/saml2
+	url = https://github.com/projectestac/moodle-auth_saml2.git
