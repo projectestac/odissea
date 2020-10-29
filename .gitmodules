@@ -4,3 +4,7 @@
 [submodule "html/blocks/configurable_reports"]
 	path = html/blocks/configurable_reports
 	url = https://github.com/jleyva/moodle-block_configurablereports.git
+
+[submodule "html/auth/saml2"]
+	path = html/auth/saml2
+	url = https://github.com/projectestac/moodle-auth_saml2.git
