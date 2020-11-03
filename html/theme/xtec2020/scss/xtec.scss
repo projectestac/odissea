@@ -1,0 +1,643 @@
+$maincolor: #ac2013 !default; //color2
+$colorcontrast: white !default;
+$fontcolor: #303030 !default; //color4
+$linkscolor: #ac2013 !default; //color5
+$headerbg: #f4f4f4 !default;
+$fontsize: 1rem !default;
+$fontfamily: null !default;
+$texttransform: null !default;
+
+
+@font-face {
+    font-family: Abecedario;
+    src: url('[[font:theme|Abecedario.ttf]]');
+}
+
+@font-face {
+    font-family: Abecedario;
+    src: url('[[font:theme|AbecedarioNegrita.ttf]]');
+    font-weight: bold;
+}
+
+body {
+    font-size: $fontsize;
+    font-family: $fontfamily;
+    text-transform: $texttransform;
+    background-color: $gray-100;
+}
+
+i > img {
+    display: none;
+    visibility: hidden;
+}
+
+a,
+.usermenu .login a {
+    color: $linkscolor;
+    i.navicon {
+        color: $gray-600;
+    }
+}
+
+.page-header-image .userpicture {
+    width: 50px;
+    height: 50px;
+}
+
+/* Copy styling of all contexts to pages of CONTEXT_USER, which are formatted differently by context_header() */
+div.page-context-header div.page-header-image {
+    margin-bottom: 0px;
+}
+
+h2,
+h3,
+h4 {
+    color: $fontcolor;
+}
+
+/* Header */
+#page-header {
+    // min-height attribute moved to header first child (.row) to avoid fixed height
+    // min-height: 93px;
+    margin-top: 50px;
+    background-image: url('[[pix:theme|top]]');
+    // Use absolute right margin instead of width percentage
+    // background-position: 98% center;
+    background-position: center right 0px;
+    background-repeat: no-repeat;
+    background-color: $headerbg;
+
+    .row {
+        min-height: 93px;
+    }
+}
+
+/* Remove duplicated link to messages */
+#page-header a#message-user-button.btn {
+    display: none;
+}
+
+/* Navigation */
+nav.fixed-top.navbar {
+    
+    padding: 0.5rem;
+
+    border-bottom: 2px solid $maincolor;
+
+    .brand {
+        padding: 6px 10px;
+    }
+
+    .navbar-brand {
+        line-height: 28px;
+        color: #777;
+        /* Gracefully truncate long site titles */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Don't wrap right nav bar*/
+    .navbar-nav {
+        flex-wrap: nowrap;
+    }
+
+    /* Don't wrap nav bar elements*/
+    .navbar-nav li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+#main_navigation {
+    background-color: $maincolor;
+    color: $colorcontrast;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    max-height: 40px;
+    z-index: 1;
+    min-height: 40px;
+    .navbar-nav {
+        margin-left: 1em;
+        flex-direction: row;
+        overflow-x: auto;
+        .nav-link {
+            padding: 8px 15px;
+            margin: 0;
+            list-style: none;
+            background-color: transparent;
+            color: $colorcontrast;
+            min-height: 20px;
+        }
+    }
+
+}
+
+.breadcrumb {
+    background-color: $white;
+    padding: .5rem;
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: "▶︎";
+        font-family: auto;
+    }
+}
+
+#close_agora_alerts {
+    cursor: pointer;
+}
+
+#showhideblocks,
+#showhideblocks i {
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#showhideblocks:before {
+    display: inline-block;
+    font: normal normal normal 24px/1 FontAwesome;
+    text-rendering: auto;
+    line-height: 36px;
+}
+
+#showhideblocks.expanded:before {
+    content: "\f066";
+}
+
+#showhideblocks.collapsed:before {
+    content: "\f065";
+}
+
+/* Blocks */
+
+.block {
+    border: 0;
+    padding-top: 0;
+    box-shadow: 0 0.375em 0.375em rgb(229, 229, 229);
+    background: white;
+
+    .block-header,
+    .block-noheader {
+        background-color: $maincolor;
+        h5.card-title {
+            cursor: pointer;
+            color: $colorcontrast;
+        }
+        .block-controls,
+        .block-controls .dropdown-toggle {
+            color: $colorcontrast;
+        }
+    }
+
+    .block-noheader {
+        height: 60px;
+    }
+
+    &.block-hidden .content.card-text {
+        display: none;
+    }
+
+    &.block_settings .content {
+        margin-top: 0px !important;
+    }
+
+    .minicalendar {
+        max-width: none;
+
+        .calendar-controls {
+            text-transform: uppercase;
+            height: 2.8em;
+            line-height: 2em;
+            h3 {
+                line-height: 14px;
+            }
+        }
+    }
+}
+
+#nav-drawer {
+    background: $gray-100;
+    border-right: 1px solid $gray-200;
+}
+
+#drawer-button {
+    color: $colorcontrast;
+}
+
+/* Page */
+
+#page {
+    background-color: $gray-100;
+    margin-top: 0;
+}
+
+/* Footer */
+
+#page-footer-top {
+    background-color: $maincolor; /* Color */
+    color: $colorcontrast;
+    padding: 1em;
+    text-align: center;
+
+    .social-icons {
+        text-align: right;
+        img,
+        i {
+            text-align: center;
+            margin-left: 5px;
+            margin-bottom: 3px;
+            height: 32px;
+            width: 32px;
+            line-height: 32px;
+            font-size: 20px;
+            color: $white;
+            vertical-align: middle;
+            border-radius: 60px;
+        }
+
+        i.fa-globe {
+            background-color: $colorcontrast;
+            color: $maincolor;
+        }
+
+        i.fa-phone {
+            background-color: #34af23;
+        }
+
+        i.fa-envelope {
+            background-color: #9b90c8;
+        }
+
+        .nodes img {
+            background-color: #1b393a;
+        }
+
+        i.fa-whatsapp {
+            background-color: #34af23;
+        }
+
+        i.fa-facebook {
+            background-color: #3b5998;
+        }
+
+        i.fa-twitter {
+            background-color: #55acee;
+        }
+
+        i.fa-pinterest {
+            background-color: #cb2027;
+        }
+
+        i.fa-instagram {
+            background-color: #517fa4;
+        }
+
+        i.fa-flickr {
+            background-color: #ff0084;
+        }
+
+        i.fa-youtube {
+            background-color: #cd201f;
+        }
+
+        i.fa-linkedin {
+            background-color: #007bb6;
+        }
+
+        i.fa-skype {
+            background-color: #00aff0;
+        }
+    }
+
+    a {
+        color: $colorcontrast;
+        text-decoration: underline;
+    }
+
+    a.btn,
+    #page-footer-top .dropdown-menu a {
+        color: $body-color;
+        text-decoration: none;
+    }
+
+    .dropdown-menu > li > a:hover {
+        color: $white;
+    }
+
+    .lang-icons {
+        text-align: left;
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+                display: inline-block;
+            }
+
+            li.lang {
+                text-align: center;
+                margin-left: 5px;
+                margin-bottom: 3px;
+                height: 32px;
+                width: 32px;
+                line-height: 32px;
+                font-size: 16px;
+                color: $white;
+                vertical-align: middle;
+                border-radius: 60px;
+                background-color: $gray-600;
+                text-decoration: none;
+                font-family: arial, helvetica, clean, sans-serif;
+            }
+
+            li.lang a {
+                text-decoration: none;
+            }
+
+            li.current-lang {
+                background-color: $white;
+                color: $maincolor;
+                font-weight: bolder;
+            }
+
+            li.lang:hover,
+            li.lang a:hover {
+                background-color: $black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            li.current-lang:hover {
+                background-color: $white;
+                cursor: default;
+            }
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.footerlogos {
+    text-align: center;
+    margin: 8px 0;
+    a {
+        display: inline-block;
+        margin: 8px 16px;
+    }
+
+    .moodle_footer img {
+        width: 95px;
+    }
+}
+
+#goto-top-link {
+    i {
+        opacity: 0.3;
+        display: block;
+        background-color: $gray-600;
+        color: $white;
+        border-radius: 50%;
+        position: fixed;
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+        vertical-align: middle;
+        bottom: 20px;
+        right: 20px;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+.availabilityinfoXTEC {
+    margin-left: 0;
+    margin-right: 0.2rem;
+}
+
+.availabilityinfoXTEC .label {
+    min-width: 4rem;
+    text-align: center;
+    margin-left: 0.2rem;
+}
+
+a.dimmed + .availabilityinfoXTEC .label-info{
+    background-color: #999;
+}
+.availabilityinfoXTEC .label-info.isrestricted{
+    background-color: #999;
+}
+
+/* Login */
+#page-login-index {
+    .card-header {
+        background-color: white;
+    }
+}
+
+/* Block icons */
+
+.block .block-header h5:before {
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $colorcontrast;
+    margin-left: 0;
+    margin-right: .3em;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 0px;
+}
+
+.block_news_items .block-header h5:before {
+    content: "\f0a1";
+}
+
+.block_navigation .block-header h5:before {
+    content: "\f0e8";
+}
+
+.block_calendar_upcoming .block-header h5:before,
+.block_calendar_month .block-header h5:before {
+    content: "\f073";
+}
+
+.block_course_list .block-header h5:before {
+    content: "\f108";
+}
+
+.block_completionstatus .block-header h5:before,
+.block_selfcompletion .block-header h5:before {
+    content: "\f0e4";
+}
+
+.block_blog_menu .block-header h5:before {
+    content: "\f02d";
+}
+
+.block_quiz_results .block-header h5:before {
+    content: "\f080";
+}
+
+.block_quiz_navblock .block-header h5:before {
+    content: "\f126";
+}
+
+.block_glossary_random .block-header h5:before {
+    content: "\f0eb";
+}
+
+.block_book_toc .block-header h5:before {
+    content: "\f02d";
+}
+
+.block_participants .block-header h5:before,
+.block_online_users .block-header h5:before {
+    content: "\f0c0";
+}
+
+.block_html .block-header h5:before {
+    content: "\f022";
+}
+
+.block_section_links .block-header h5:before {
+    content: "\f02e";
+}
+
+.block_activity_modules .block-header h5:before {
+    content: "\f12e";
+}
+
+.block_comments .block-header h5:before {
+    content: "\f075";
+}
+
+.block_settings .block-header h5:before {
+    content: "\f0ad";
+}
+
+.block_admin_bookmarks .block-header h5:before {
+    content: "\f02e";
+}
+
+.block_blog_tags .block-header h5:before,
+.block_tags .block-header h5:before {
+    content: "\f02c";
+}
+
+.block_private_files .block-header h5:before {
+    content: "\f114";
+}
+
+.block_block_mentees .block-header h5:before {
+    content: "\f0c0";
+}
+
+.block_messages .block-header h5:before {
+    content: "\f0e0";
+}
+
+.block_community .block-header h5:before {
+    content: "\f0ac";
+}
+
+.block_recent_activity .block-header h5:before {
+    content: "\f017";
+}
+
+.block_search_forums .block-header h5:before {
+    content: "\f0e6";
+}
+
+.block_myprofile .block-header h5:before {
+    content: "\f007";
+}
+
+.block_adminblock .block-header h5:before {
+    content: "\f009";
+}
+
+.block_feedback .block-header h5:before {
+    content: "\f087";
+}
+
+.block_flickr .block-header h5:before {
+    content: "\f03e";
+}
+
+.block_youtube .block-header h5:before {
+    content: "\f145";
+}
+
+.block_course_badges .block-header h5:before {
+    content: "\f091";
+}
+
+.block_twitter_search .block-header h5:before {
+    content: "\f099";
+}
+
+.block_my_books .block-header h5:before {
+    content: "\f02d";
+}
+
+.block_advices .block-header h5:before {
+    content: "\f0a1";
+}
+
+.block_site_main_menu .block-header h5:before {
+    content: "\f0c9";
+}
+
+.block_rss_client .block-header h5:before {
+    content: "\f09e";
+}
+
+.block_login .block-header h5:before {
+    content: "\f090";
+}
+
+.block_badges .block-header h5:before {
+    content: "\f091";
+}
+
+.block_rgrade .block-header h5:before {
+    content: "\f0ce";
+}
+
+.block_timeline .block-header h5:before,
+.block_recentlyaccessedcourses .block-header h5:before {
+    content: "\f017";
+}
+
+.block_myoverview .block-header h5:before {
+    content: "\f0e4";
+}
+
+.block_starredcourses .block-header h5:before {
+    content: "\f005";
+}
+
+/* Tables */
+
+th, td {
+    border: none;
+}
+
+/* Custom menu */
+
+.nav-item .dropdown-menu {
+    ul {
+        list-style: none;
+    }
+    li * {
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,12 @@
+.path-mod-rcontent  iframe {
+  margin: 0;
+  padding: 0;
+  /*height:100%; */
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+.path-mod-rcontent table tbody>tr.selected>td {
+    background-color: #A8E49C;
+}

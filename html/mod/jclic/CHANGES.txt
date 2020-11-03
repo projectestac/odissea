@@ -1,0 +1,160 @@
+Release notes for JClic Module for Moodle (https://github.com/projectestac/moodle-mod_jclic/releases)
+
+More information on each of the fixes can be found in the project
+development home at https://github.com/projectestac/moodle-mod_jclic
+
+Changes in 3.0.3 - 2018112000 (2018/11/19)
+---------------------------------------------------------------------------------------
+- Fixed incorrect assignement of coursemodule identifiers in locallib.php
+- Removed unused dependence of 'eventslib.php' (deprecated in 3.6)
+- Changed default size of embedded activities to 800x600 (instead of 600x400)
+- All references to 'clic.xtec.cat' are now based on https
+
+Changes in 3.0.2 - 2017051200 (2017/05/12)
+---------------------------------------------------------------------------------------
+- Changed default report to detailed
+- Redesigned edit form parameters
+- Replaced .jclic.zip references in some translations
+
+Changes in 3.0.1 - 2016061300 (2016/09/28)
+---------------------------------------------------------------------------------------
+- Added support for JClic HTML5 player
+
+Changes in 3.0.0 - 2016052000 (2016/05/20)
+---------------------------------------------------------------------------------------
+- Deleted cron function
+- Replaced deprecated add_intro_editor function
+- Added first behat tests
+- Prepared version for Moodle 3.1
+
+Changes in 2.7.0 - 2015120300 (2015/12/03)
+---------------------------------------------------------------------------------------
+ - Changed version numbering method, now the first two numbers are the minimum Moodle required version
+ - Solved two missing string identifiers
+ - Solved string on reset
+ - Changed links to lafarga
+
+Changes in 0.2.6 - 2015061500 (2015/06/15)
+---------------------------------------------------------------------------------------
+ - Changed HTTP_RAW_POST_DATA by php://input
+ - Requirements of Moodle 2.7 or greater
+ - Revert Jarbase to http
+ - Settings moved to config_plugins
+
+Changes in 0.2.5 - 2015031300 (2015/03/13)
+---------------------------------------------------------------------------------------
+- Adapt module to Moodle 2.7 and 2.8
+- Some navigation changes and added new events API classes
+- Start testing new Travis CI scripts for continous integration
+- Solved error selecting groups on results page
+- Change status of no found session message
+- Solved issue adding a jclic using a URL
+- Updated translation to catalan and spanish
+- Set JClic default settings to https
+- Add protocol recognision through wwwroot url for the applet
+- Removed support for versions before 2.6
+
+Changes in 0.2.4 - 2014052901 (2014/11/07)
+---------------------------------------------------------------------------------------
+- Adapted module to Moodle 2.6
+- Solved error with activities that lasts more than 99 seconds saving total_time in seconds instead of miliseconds. Now the limit is about 27 hours per activity
+- Changed default jclicplugin.js (to use the clic server one) and updated the local to the last version
+- Reviewed permissions for lang/pt_br/jclic.php file
+
+
+Changes in 0.2.3 - 2013022200 (2013/09/19)
+---------------------------------------------------------------------------------------
+- Fixed bug when deleting jclic activities and enableajax is enabled
+- Fixed bug when upgrading empty maxgrade (reported by Ferran Recio - UPCnet)
+- Fixed bug when editing title from main course page (is still not working but solve some minor warnings)
+- Jclicplugin.js can be loaded from config.
+
+
+Changes in 0.2.3 RC - 2013022200 (2013/02/22)
+---------------------------------------------------------------------------------------
+- Added Brazilian translation
+- Updated Euskara translation (downloaded from AMOS)
+- Reviewed English translation (thanks to German Valero!)
+- Reviewed some SQL to avoid Postgre problem with userid
+- Included SVG icons (thanks to Pau Ferrer!)
+- Fixed bug with users reporting (only first page was showed)
+
+
+Changes in 0.2.2 (2012/08/24)
+---------------------------------------------------------------------------------------
+- Added Brazilian translation
+- Added Galician translation
+- Fixed some bugs related with importation from Moodle 1.9
+- Solved some 'Strict standards' warnings
+- Adapted code for Moodle 2.3 (like addinstance capability)
+
+
+Changes in 0.2.1 (2012/06/05)
+---------------------------------------------------------------------------------------
+- First version of the jclic module for Moodle 2.
+
+
+Changes in 0.1.0.11 (2011/05/25)
+---------------------------------------------------------------------------------------
+- Added language parameter to the activity edition page to let specify the player language (http://projectes.lafarga.cat/projects/jclicmoodle/tracker/291/1641/detail)
+- Added exiturl parameter to the activity edition page to let specify exit URL (http://projectes.lafarga.cat/projects/jclicmoodle/tracker/291/1287/detail)
+- Revised information showed in summary
+- Solved problem when moodle is installed in the root (without path in the URL)
+- Added jclic_scale_used_anywhere function sended by David Monllao from URV to improve the performance of the module
+- Fixed warnings when restoring jclic activities (http://projectes.lafarga.cat/projects/jclicmoodle/tracker/288/1200/detail)
+- Fixed bug with single quote reported to Moodle tracker (http://tracker.moodle.org/browse/CONTRIB-2079?page=com.atlassian.jira.plugin.system.issuetabpanels%3Acvs-tabpanel)
+- Fixed warning message when there were no users in the course (http://projectes.lafarga.cat/projects/jclicmoodle/tracker/288/1335/detail)
+- Added protocol parameter to TCPReporter jclic function to let it works with HTTPS connections (https://projectes.lafarga.cat/projects/jclicmoodle/tracker/288/1507/detail)
+- Solved error with maxattempts (http://projectes.lafarga.cat/projects/jclicmoodle/tracker/288/1775/detail)
+
+
+
+Changes in 0.1.0.9 (2009/10/27)
+---------------------------------------------------------------------------------------
+- Added Hebrew translation (Nadav Kavalerchik - nadavkav@gmail.com)
+- Removed the pass-by-reference to the $grades parameter in jclic_user_grades function.
+- Assigned a default value to maxgrade parameter and removed restriction in jclic_grades function to solve the problem with the qualificator of Moodle if maxgrade isn't specified.
+- Added COPYING, CREDITS and INSTALL files
+- Added user picture to the teacher view
+- Commented if (function_exists('date_default_timezone_set')) date_default_timezone_set('UTC'); line in lib.php file to solve time problems (Jaume Rocarias from UAB)
+- Added IOC implementation for restarting courses with JClic activities (Albert Gasset Romo)
+- Solved some problems with Moodle 1.6
+
+
+Changes in 0.1.0.8 (2008/12/10)
+---------------------------------------------------------------------------------------
+- Solved include /gradelib.php bug
+
+
+Changes in 0.1.0.8 (2008/11/07)
+---------------------------------------------------------------------------------------
+- Added Galician translation (Xosé Luis Barreiro Cebey - xoseluis@edu.xunta.es)
+- Added Greek translation (Yannis Kaskamanidis - ttnfy17@yahoo.gr)
+- Solved problems with Moodle 1.9 qualification
+- Added preview button from teachers view
+- Solved problems with white spaces in URL
+- Added @mini.xml skin
+
+
+Changes in 0.1.0.7 (2008/01/25)
+---------------------------------------------------------------------------------------
+- Added compatibility with course groups
+- Solved problems with switch role button
+- Added file install.xml file (for compatibility with Oracle)
+- Moved lang directory inside jclic module.
+- Added Basque translation (Abel Camacho - didaktika@santurtzieus.com)
+
+
+Changes in 0.1.0.6 (2007/03/07)
+---------------------------------------------------------------------------------------
+- Added compatibility with Moodle 1.7 and 1.8; therefore, the jclicmoodle module works correctly with Moodle 1.5 and superior.
+- Incorporated detailed information of the activities for each student's session.
+- Added button "Choose or upload a file..." to use your own JClic activities.
+- Inserted new configuration parameter (lap) which allows you configuring the time between JClic applet client and Moodle server transactions.
+- Students' view updated: sessions list replaced for a button (to open the results in a new window)
+
+
+Changes in 0.1.0.5 (2006/12/12)
+---------------------------------------------------------------------------------------
+- Solved problems detected in the backup of Moodle courses containing JClic activities.
+

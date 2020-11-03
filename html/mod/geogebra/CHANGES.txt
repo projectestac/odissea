@@ -1,0 +1,92 @@
+Release notes for GeoGebra Module for Moodle (http://moodle.org/plugins/pluginversions.php?plugin=mod_geogebra)
+
+More information on each of the fixes can be found in the project
+development home at https://github.com/projectestac/moodle-mod_geogebra
+
+Changes in 3.6.1 (2020/09/08)
+---------------------------------------------------------------------------------------
+- Texts adapted to new geogebra.org format
+
+Changes in 3.6.0 (2019/01/06)
+---------------------------------------------------------------------------------------
+- Removed unused dependence of 'eventslib.php' (deprecated in 3.6)
+
+Changes in 3.5.0 (2019/12/11)
+---------------------------------------------------------------------------------------
+- Add privacy api
+- Fix some minor bugs:
+
+Changes in 3.4.0 (2018/01/11)
+---------------------------------------------------------------------------------------
+- Removed Preview menu option for users who are not able to grade
+- Changed from report to preview for users who are able to view all, for compatibility
+  with menu in boost theme
+- Fixed some minor bugs
+   * Duration calculation in average was only added if there was some grade (may confuse users)
+   * Extrafields were not shown correctly
+   * Total time conversion has been changed
+
+Changes in 3.0.1 (2016/06/17)
+---------------------------------------------------------------------------------------
+- Fixed bug when saving manual-grade and comments for each attempt
+
+Changes in 3.0.0 (2016/05/20)
+---------------------------------------------------------------------------------------
+- Changed version numbering method, now the first two numbers are the minimum Moodle required version
+- Deleted cron function
+- Replaced deprecated add_intro_editor function
+- Added first behat tests
+- Prepared version for Moodle 3.1
+
+Changes in 0.2.7.1 (2015/10/15)
+---------------------------------------------------------------------------------------
+ - Solve two missing string identifiers
+ - Solve reset errors
+ - Remove fixed protocol in JavaScript file. Thanks to @XSmeets
+ - Delete some warnings in JS
+ - Restore executing JS embedded in Geogebra files
+
+Changes in 0.2.7 (2015/06/15)
+---------------------------------------------------------------------------------------
+ - Adapted plugin to admit new HTML5 embed
+ - Requirements of Moodle 2.7 or greater
+ - Some navigation changes and added new events API classes
+ - Code cleaning
+
+Changes in 0.2.6 (2014/11/07)
+---------------------------------------------------------------------------------------
+- Adapted module to Moodle 2.6
+- Fixed get_string() error (thanks to papillon326)
+
+
+Changes in 0.2.5 RC (2014/01/14)
+---------------------------------------------------------------------------------------
+- Changed default codebase from unsigned to unpacked to avoid problems when sending data
+
+
+Changes in 0.2.4 RC (2013/09/19)
+---------------------------------------------------------------------------------------
+- First version of the GeoGebra module for Moodle 2.4
+
+
+Changes in progress (Moodle 1.9 version)
+---------------------------------------------------------------------------------------
+- Fixed some Oracle bugs related with ` character
+
+
+Changes in 1.1.0 (2012/08/22)
+---------------------------------------------------------------------------------------
+- Fixed some problems related with installation in Oracle (renamed date field, reviewed some SQL queries...)
+- Fixed some bugs reported by beta-testers
+- Reviewed Catalan translation
+
+
+Changes in 1.0.1 (2012/08/16)
+---------------------------------------------------------------------------------------
+- Added new option to evaluate manually the attempts
+- Fixed some bugs
+
+
+Changes in 1.0.0 (2011/11/18)
+---------------------------------------------------------------------------------------
+- First version of the GeoGebra module for Moodle 1.9
