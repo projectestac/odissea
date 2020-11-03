@@ -1,116 +1,52 @@
-Release notes for Agora-Moodle2 (https://agora.xtec.cat)
+Release notes for Odissea (http://odissea.xtec.cat)
 
 More information on each of the fixes can be found in the project
-development home at https://github.com/projectestac/agora_moodle2
+development home at https://github.com/projectestac/odissea/
 
 
-Changes 21.03.01
+Work in progress
 ---------------------------------------------------------------------------------------
-- Updated language packages
-
-
-Changes 21.02.09
----------------------------------------------------------------------------------------
-- Upgraded Moodle from v3.8.6 to v3.8.7
-- Updated language packages
-- Upgraded all wiris plugins
-- Upgraded block completion_progress
-- Upgraded atto plugin cloze
-- Upgraded module choicegroup
-- Theme xtec2020: Fixed preference of uploaded logo before default logo
-- Theme xtec2020: Internal improvements to code
-- rcontent: FIX user_picture object evaluation
-- Local Agora: Improvements to code quality. Added script to calculate course quotas
-- Alexandria importer: Fixed error in development mode. Removed reference to non-existing node
-- Coursequotas: Added tables to cache quota usage by course and category and load data from cache tables
-- Backported MDL-47750 to allow copy & paste images from clipboard to the atto editor
-
-
-Changes 20.12.10
----------------------------------------------------------------------------------------
-- Upgraded Moodle from v3.8.5 to v3.8.6
-- Updated language packages
-- Upgraded module clickedu
-- Upgraded all wiris plugins
-- Upgraded module jclic
-- Upgraded block completion_progress
-- Upgraded atto plugin Cloze
-- Theme xtec2020: Added colorset PEDC and reworked general design
-- Theme xtec2020: Replaced specific xtecadmin check by generic access function, compatible with Odissea and Alexandria
-- User bulk capitalize: Fixed functionality
-- Local Agora: Updated cache definitions
-- Local Agora: Fixed loading colorset from Nodes
-- Reduced minimum time between cron executions to 8 minutes
-
-
-Changes 20.10.26
----------------------------------------------------------------------------------------
-- Add redirect using full URI for sites that have changed their domain
-- Removed is_portal. Added is_odissea and is_alexandria. Some clean up.
-- Unlock digestmailtime parameter
-- Unlock supportemail parameter
-- Updated language packages
-
-
-Changes 20.10.02
----------------------------------------------------------------------------------------
-- Updated language packages
-
-
-Changes 20.09.18
----------------------------------------------------------------------------------------
-- Upgraded Moodle from v3.8.4 to v3.8.5
-
-
-Changes 20.09.02
----------------------------------------------------------------------------------------
-- Upgraded block completion_progress
-- Upgraded module H5P
-- Upgraded all components from Vicens Vives
-- Upgraded block completion_progress
-- Upgraded Wiris components: filter and atto plugin
-- Upgraded module journal
-- Geogebra: Improved literals
-- Theme xtec2020: Allow access to header menu to anonymous users
-- Theme xtec2020: Added support for multilevel custom menu
-- Theme xtec2020: Improved accessibility
-- Theme xtec2020: Fixed repeated button and javascript errors in question bank preview
-- Theme xtec2020: Allow removal of blocks Navigation and Settings
-
-
-Changes 20.07.27
----------------------------------------------------------------------------------------
-- Upgraded Moodle from v3.6.7 to v3.8.4
+- Upgraded Moodle from v3.6.7 to v3.8.7
 - Updated language packages
 - Removed theme xtec2
 - Added theme xtec2020
 - Removed module mailer (mail sender using apligest) and associated hacks in Moodle core
+- Upgraded block completion_progress
 - Upgraded all wiris plugins
+- Upgraded all components from Vicens Vives
 - Upgraded atto plugin Cloze
-- Fixed typo in local_oauth
 - Upgraded module choicegroup
+- Upgraded module H5P
 - Upgraded module Hot Potatoes
+- Upgraded module journal
 - Upgraded module questionnaire
 - Upgraded module jclic
 - Upgraded block completion_progress
 - Course format Simple: Fixed edition of section name
+- Geogebra: Improved literals
+- Removed is_portal. Added is_odissea and is_alexandria. Some clean up.
+- Unlock digestmailtime parameter
+- Unlock supportemail parameter
+- Fixed typo in local_oauth
+- Geogebra: Improved literals
 
 
-Changes 20.05.12
+Changes 21.01.07
+---------------------------------------------------------------------------------------
+- xtec-mailer: Moved bus to FMO server
+
+
+Changes 20.06.17
 ---------------------------------------------------------------------------------------
 - Message: Show old message UI and allow access to all messages
 - Show 'hidden' text next to hidden labels in courses
 - Coursequotas: Added disk usage of H5P libraries
 - Updated language packages
-
-
-Changes 20.04.15
----------------------------------------------------------------------------------------
 - Geogebra: Fixed error when accessing to closed activities
-- Added support for new service states: migrated and saturated
+- odisseagtafsync: Changed the last cron execution time to be updated when files are processed instead of when cron is executed
 
 
-Changes 20.02.18
+Changes 20.03.02
 ---------------------------------------------------------------------------------------
 - H5P: Upgraded module to version 1.20.2
 - Updated language packages
@@ -124,7 +60,7 @@ Changes 20.02.18
 - Local mobile: Removed plugin
 
 
-Changes 19.11.14
+Changes 19.12.16 (undeployed)
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle from v3.6.6 to v3.6.7
 - Updated language packs
@@ -134,44 +70,25 @@ Changes 19.11.14
 - Upgraded all wiris plugins
 - Upgraded module hot potatoes
 - Upgraded module choicegroup
-- Upgraded module H5P
+- Upgraded module H5P to version 1.20.1
 - Upgraded question format hot potatoes
 - Upgraded question type "ordering"
-- Only allow access to parameter atto_recordrtc | allowedtypes to xtecadmin
 
 
 Changes 19.09.25
 ---------------------------------------------------------------------------------------
-- Upgraded Moodle from v3.6.5 to v3.6.6
+- Upgraded Moodle from v3.4.8 to v3.6.6
 - Updated language packs
 - Re-added Catalonia to countries list
-- Made exception for FRM environment to put cache files in moodledata
-- Oauth2 server: Updated code to connect to WordPress
 - Marsupial: Updated components
+- Improved cache definitions
+- Modified theme XTEC2 for compatibility to Moodle v3.6
 - Upgraded all wiris plugins
 - Upgraded module clickedu
 - Upgraded module geogebra
 - Upgraded module hot potatoes
 - Upgraded module H5P
-- Upgraded block "completion progress"
-- Upgraded question type "ordering"
-
-
-Changes 19.08.29
----------------------------------------------------------------------------------------
-- Fixed cache pollution due to XTEC patches
-- Improved cache definitions
-
-
-Changes 19.07.24
----------------------------------------------------------------------------------------
-- Upgraded Moodle from v3.4.8 to v3.6.5
-- Updated translation files
-- Modified theme XTEC2 for compatibility to Moodle v3.6.5
-- Upgraded all wiris plugins
 - Upgraded module choicegroup
-- Upgraded module hotpot
-- Upgraded module H5P
 - Upgraded module journal
 - Upgraded module questionnaire
 - Upgraded block "completion progress"
@@ -179,6 +96,11 @@ Changes 19.07.24
 - Upgraded question type "wq"
 - Local agora: Removed old message_notifier plugin
 - Local agora: Disallow theme boost
+
+
+Changes 19.07.01
+---------------------------------------------------------------------------------------
+- Fixed memcached lib
 
 
 Changes 19.04.15
@@ -199,6 +121,7 @@ Changes 18.11.23
 - Moodle upgraded to from 3.4.6
 - Fix presentation in rgrade
 - Fix the mod_jclic problem set as the first activity and improve some parts
+- Update auth odissea
 
 
 Changes 18.11.05
@@ -212,10 +135,9 @@ Changes 18.11.05
 Changes 18.08.13
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 3.4.4
-- Àgora only works in https
+- Odissea only works in https
 - Set env-config-dist to https
 - Updated local/agora
-- Updated LangPacks
 - Updated LangPacks
 - Check if competencies have been enabled by xtecadmin or let acces to xtecadmin to the competencies submenu
 - Remove wwwsecureroot from advancededit button and ad second parametres to pix_icon
@@ -235,16 +157,6 @@ Changes 18.04.20
 - Updated filter/wiris
 - Fix the string comparision with CLOB reference field
 - Filter the notifications from assigns in popup
-
-
-Changes 17.07.04
----------------------------------------------------------------------------------------
-- Moodle upgraded to from 3.2.3
-- Updated local/clickedu
-- Updated local/mobile
-- Updated mod/geogebra
-- Updated mod/questionnaire
-- Updated mod/journal
 
 
 Changes 17.05.23
@@ -267,7 +179,6 @@ Changes 17.04.24
 - Updated LangPacks
 - Added Vicens Vives modules: one course format, two blocks and a local (Trello #1331)
 - Added H5P module (Trello #1571)
-- JClic: Fixed bug with time conversion
 
 
 Changes 17.03.28
@@ -301,6 +212,8 @@ Changes 17.01.16
 
 Changes 16.10.24
 ---------------------------------------------------------------------------------------
+- tool/odisseagtafsync: Fixed bug with deprecated function
+- login: Forgot password stopped working with loginhttps - MDL-55945 (Trello #1391)
 - mod/assign: Filtering in Assignment grading interface throws a javascript error - MDL-56300 (Trello #1392)
 - report/coursequotas: Separate the report views to improve performance (Trello #1278)
 - Updated mod/hotpot
@@ -321,9 +234,6 @@ Changes 16.09.19
 - theme/xtec2: fixed problem when more than 5 languages
 - report/coursequotas: Added icons for usability and improved performance (Trello #1278)
 - mod/jclic: Added support for JClic HTML5 player (Trello #1294)
-- Updated mod/hotpot
-- local/rcommon: Fixed bug when filtering users from a course with group mode different from "No groups" (Trello #1353)
-- login: Forgot password stopped working with loginhttps - MDL-55945 (Trello #1391)
 
 
 Changes 16.09.07
@@ -354,7 +264,15 @@ Changes 16.08.22
 - Updated all related wiris plugins
 
 
-Changes 16.05.03
+Changes 16.07.04
+---------------------------------------------------------------------------------------
+- Updated LangPacks
+- GeoGebra: Fixed bug when saving manual-grade and comments for each attempt (Trello #1276)
+- Updated local_mobile
+- Updated mod/hotpot to 2016-06-14 (96)
+
+
+Changes 16.05.30
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 2.8.12 (Trello #1213)
 - Updated local_mobile to 2.8.310
@@ -363,15 +281,16 @@ Changes 16.05.03
 - local_agora: Changed default exceptionerror to avoid error in admin pages when datadir is not writable
 - Zipped old log cron and mailer files until they will be deleted (Trello #1234)
 - Updated mod/hotpot
-
-
-Changes 16.05.03
----------------------------------------------------------------------------------------
-- Added support to split data folders if necessary (Trello #1230)
+- Added Quiz access rules: Offline attempts access rule to enable offline quizzes from the app
+- odisseagtafsync: Fixed bug when sending error messages from this tool. Added also some improvements
+- Updated blocks/configurablereports
 
 
 Changes 16.03.14
 ---------------------------------------------------------------------------------------
+- Works.php: Added check for data directories (Trello #1110)
+- GTAF: Fixed bug changing directories inside FTP
+- Configurable-reports: updated version to 2.3.8
 - Updated LangPacks
 - Added progress bar block and updated submodules in order to get progress bar working
 - MDL-48778 assign: Use proper latest attempt for quickgrading prechecks
@@ -384,6 +303,7 @@ Changes 16.02.22
 - Moved local crons to Moodle tasks
 - Updates to prepare for Moodle 3 version
 - Updated Local Mobile
+- Odissea GTAF Sync: Change remote file deletion and add log and Solve problem changing directories inside ftp
 
 
 Changes 16.02.01
@@ -396,6 +316,7 @@ Changes 16.02.01
 - Agora mailer: Change some address errors to warnings
 - Updated Local Mobile
 - Updated Hotpotatoes module
+- Odissea GTAF Sync: Change cron to task, added copy and delete feature and some log
 - Added a script to clean temporary tables
 
 
@@ -411,6 +332,10 @@ Changes 15.12.14
 - Updated Local Mobile
 - Jclic: Changed version numbering method, now the first two numbers are the minimum Moodle required version
 - QV: Changed version numbering method, now the first two numbers are the minimum Moodle required version
+- Configurable reports: Updated
+- Added fist version of Monitor
+- Odissea GTAF sync: Solved warnings and deprecations
+- Deleted warnings on memcache
 
 
 Changes 15.11.16
@@ -452,7 +377,6 @@ Changes 15.11.16
   - Local Mobile
   - Mod and qformat Hotpot
   - Mod Questionnaire
-
 
 Changes 15.10.09
 ---------------------------------------------------------------------------------------
@@ -509,6 +433,7 @@ Changes 15.07.20
 
 Changes 15.06.18
 ---------------------------------------------------------------------------------------
+- Added testapp
 - Moodle upgraded to from 2.8.6
 - Hide some settings to non xtecadmins
 - Set stasharguments by default in config.php
@@ -541,7 +466,6 @@ Changes 15.06.18
   - MDL-49440 lib: Date picker duplicated week day names repaired
   - MDL-49742 lib: Removed additional names on tables for sorting. (solved in 2.8.7)
 
-
 Changes 15.05.19
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 2.6.10 to 2.6.11
@@ -554,7 +478,7 @@ Changes 15.05.19
 - Added proxy settings
 - Updated modules:
   - Marsupial rcontent now has reports
-  - Hotpot, Moodle mobile, DD question types...
+  - Hotpot, Moodle mobile, DD question types..
 
 Changes 15.03.20
 ---------------------------------------------------------------------------------------
@@ -581,9 +505,9 @@ Changes 15.03.20
     - Set JClic default settings to https
     - Solved problem showing url on mod edit form
 
-
 Changes 15.02.20
 ---------------------------------------------------------------------------------------
+
 - MDL-49234 oracle: Remove variables passed by reference error
 - Forum: Solved courseoverview patch on mymoodle page
 - Now Agora is instalable if environment is LOCAL
@@ -637,7 +561,6 @@ Changes 15.01.28
 - Adware: New string added
 - Module updates: HotPot, questionnaire, languagepacks
 
-
 Changes 14.12.22
 ---------------------------------------------------------------------------------------
 - Upgrade to Moodle 2.6.6
@@ -682,7 +605,6 @@ Changes 14.11.27
   - Disabled cacheconfig overwrite
   - New Cacheconfig file without memcache configured
 
-
 Changes 14.11.05
 ---------------------------------------------------------------------------------------
 - MDL-47581 Force box.net repository work with https
@@ -692,7 +614,6 @@ Changes 14.11.05
 - Scripting module
 - Enable webservice mobile settings for all admins
 - More intelligent purge cache
-
 
 Changes 14.10.15
 ---------------------------------------------------------------------------------------
@@ -711,10 +632,11 @@ Changes 14.10.15
 - Changed Oauth server params to Server menu
 - Recovered log database fails function
 - Repaired Moodle APP
-
+- Added some log to gtafsync
 
 Changes 14.09.30
 ---------------------------------------------------------------------------------------
+
  - Updated module Google Oauth, button on login block and some bugs repaired
  - Repaired syntaxt error on geogebra attempt
  - Workarround to solve hotpot width
@@ -729,12 +651,13 @@ Changes 14.09.30
  - Better grader report for grading assignments
  - Performance settings
 
-
 Changes 14.09.18 codename jmeler
 ---------------------------------------------------------------------------------------
+
+ - Cron by cli enabled by default
  - GoogleOauth now admits users with other auth method configured
  - Repaired many errors in Marsupial
- - Repaired bug: MDL-47227 User bulk selection gets Oracle database errors when more than 1000 are selected
+ - Repaired bug: MDL-47227 User bulk selection gets Orable database errors when more than 1000 are selected
  - Repaired bug: MDL-43197 gradereport_user: Parents/mentors can see all the relevant grades
  - Report course quotas now has information about backup files
  - Deleted uninstall option of all modules and submodules
@@ -749,16 +672,16 @@ Changes 14.09.18 codename jmeler
    -- Calendar activity titles are now smaller
    -- Better grade report
 
-
 Changes 14.09.08
 ---------------------------------------------------------------------------------------
+
 - Some errors solved in marsupial, theme and jclic
 - Google Oauth2 module translated
 - Enabled cron CLI for testing
 
-
 Changes 14.09.03
 ---------------------------------------------------------------------------------------
+
 - Font awesome icons
 - New button to toggle block visibility
 - Now submit buttons uses main background color
@@ -769,56 +692,54 @@ Changes 14.09.03
 - Improved Xtec2 styles
 - Updated Wiris Quizzes and Wiris
 
-
-Changes 14.08.26
----------------------------------------------------------------------------------------
-- Added Google Auth2 Auth method
-- Solved problem authenticating to Marsupial servers
-
-
 Changes 14.08.19 codename mgrau
 ---------------------------------------------------------------------------------------
+
 - Moodle 2 Updated to 2.6.4 version
 - Fixed CLOB error with events when restoring courses with events
 - Updated version of all thirdparty modules
 - Deleted support for rscorm activities
 - Renewed XTEC2 theme with layout settings, configuration menus and bootstrap support
+- Added Google Auth2 Auth method
 
+
+Time to say Goodbyes...
+-----------------------
+MOODLE Deleted 1.9 version.
+A memory lasts forever, never will it die... true friends stay together and never say goodbye...
 
 Changes 14.07.04
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Assignment: Solved reset assignment submissions MDL-46219
-
-
-Changes 14.06.02
----------------------------------------------------------------------------------------
-- Rcontent: Delete parent redirection on Rcontent activities
 
 
 Changes 14.05.28
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Solved MDL-39740 Updating grade_item idnumber doesn't update course_module idnumber
-- Changed loglifetime from 365 to 0 to avoid delete them (for learning analytics project)
 - Solved MDL-45480 Mod completion cannot be changed on certain cases
-- Jclic module updated to the last version (0.2.3+)
-- Geogebra module updated to the last version (0.2.5+)
+- Jclic module updated to the lastest version (0.2.3+)
+- Geogebra module updated to the lastest version (0.2.5+)
 - Format simple improvements showing custom images and solving duplicity of topic zero
-- Marsupial modules updated to the last version (2.0.5+)
+- Marsupial modules updated to the lastest version (2.0.5+)
 - Updated catalan translation (27-05-2014)
 
 
 Changes 14.04.09
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Tiny_MCE Wiris Replaced wrong ampersand
 - added TreeMenu.js
 - Solved error with activities that lasts more than 99 seconds saving total_time in seconds instead of miliseconds. Now the limit is about 27 hours per activity
-- Updated Jclicplugin.js to the last version
+- Updated Jclicplugin.js to the lastest version
 - Solved duplicity of topic zero in Simple course format
 - Fixes and improvements in table styles
 
 
 Changes 14.03.12
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Fix for correct index detection when there's more than 1 Moodle in an Oracle instance
 - Hotpot report solved CONTRIB-4910
 - Repaired the display of hidden sections on simple course format
@@ -826,31 +747,9 @@ Changes 14.03.12
 - Re-added Catalonia to countries list
 
 
-Changes 14.02.26 codename sarjona
----------------------------------------------------------------------------------------
-- Upgrade Moodle2 to 2.4.8 version which includes:
--- Update QV module
--- Update of Wiris quizzes question types
--- Update of journal module
--- Update of hotpot module and question format
--- Update of format simple and Wiris plugins
--- Update of Marsupial to the latest version
--- Update of Admin tools third party modules
--- Update of language files
--- Update Simple course format
--- Delete patch MDL-27071 already exists on moodle 2.4.8
-- Added debug by session feature
-- Import19: Don't show import section if tables of Moodle 1.9 are not present and avoid current error
-- Protect cron to run twice at the same time
-- MUC for questiondata is now configured and is set for separately for every Moodle instance
-- Added repairing scripts for duplicates of course_completion and quiz_attempts
-- Cleaning of local/agora cron
-- Updated catalan translation of questiontypes of the Open University (gapselect, ddimageortext, ddmarker and ddwtos)
-- Preparing cron to run from CLI
-
-
 Changes 14.02.05
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Repairing of course_section duplicates
 - Instaled some questiontypes of the Open University (gapselect, ddimageortext, ddmarker and ddwtos)
 - Updated Questionnaire from version 2.3.3 to version 2.4.2
@@ -859,14 +758,16 @@ Changes 14.02.05
 
 Changes 14.01.15
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Coursequotas: Fixed error in temp and trashdir info for non-Agora installs
-- GeoGebra: updated module to last version (0.2.5rc)
+- GeoGebra: updated module to lastest version (0.2.5rc)
 - Bug correct: MDL-27071 Oracle cannot cope withan IN operator with more than 1000 conditions in it
-- site-config.php: Removed exception for usu1
+- Added .htaccess to block install.php
 
 
 Changes 13.12.16
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Reviewed code for reseting assign grades to include also recovergradesdefault parameter (https://tracker.moodle.org/browse/MDL-41877)
 - Coursequotas: Added temp and trashdir info for non-Agora installs and minor text format changes
 - Coursequotas: Fixed error when counting used space in course and in front page
@@ -882,6 +783,7 @@ Changes 13.12.16
 
 Changes 13.11.13
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Fixed bug on submissions count shown in My Moodle summary page
 - Coursequotas: Duplicated files in a course are only counted once
 - Coursequotas: Added usage info of temp and trashdir directories
@@ -900,6 +802,7 @@ Changes 13.11.13
 
 Changes 13.10.16
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Fixed bug when reseting assign grades (https://tracker.moodle.org/browse/MDL-41877)
 - Installed Wiris Quizzes (version 3.23.0.0749)
 - Participants count correction shown in Grading summary page (https://tracker.moodle.org/browse/MDL-38128)
@@ -913,6 +816,7 @@ Changes 13.10.16
 
 Changes 13.09.23
 ---------------------------------------------------------------------------------------
+MOODLE2
 - Changed cron order to delete files from temp before uppgrading assignments (to avoid problems with course sections) and reviewed code to avoid warning when trying to delete '.' folder
 - Fixed bug for JClic activities when upgrading from Moodle 1.9 empty maxgrade (reported by Ferran Recio - UPCnet)
 - Fixed bug related with SMART Board incompatibility with Drag&Drop AJAX (https://tracker.moodle.org/browse/MDL-37528)
@@ -926,8 +830,26 @@ Changes 13.09.23
 - Updated catalan translation (19-09-2013)
 
 
+Changes 13.09.04
+---------------------------------------------------------------------------------------
+MOODLE2
+- Reviewed Odissea authentication module to validate also users with GICAR
+- Upgrade odissea authentication module. The new version lets validate also users with GICAR and fixes a bug with NIE users
+
+
+Changes 13.08.27
+---------------------------------------------------------------------------------------
+MOODLE2
+- Added first version of the replacextec tool
+- Added first version of the odisseagtafsync tool
+
+
 Changes 13.07.10
 ---------------------------------------------------------------------------------------
+MOODLE
+- Fixed backup copies not being automatically removed when moving to Moodle 2
+
+MOODLE2
 - Changed lib/moodlelib.php to add odissea auth method
 - Fixed whitespaces in langlist
 - Added support for SSO from Zikula 1.3
@@ -938,8 +860,20 @@ Changes 13.07.10
 - Fix for style in module page which is incorrectly overriden by style in rcommon block
 
 
+Changes 13.06.21
+---------------------------------------------------------------------------------------
+MOODLE
+- Fixed "inconsistent datatypes: expected - got CLOB" bug when creating questionnaire backup.
+- Revised procedure to create a backup of the specified course without user information (1.9 -> 2 import tool).
+- Added first version of the odissea auth method (at the moment only uses XTEC-LDAP validation)
+
+
 Changes 13.06.14
 ---------------------------------------------------------------------------------------
+MOODLE
+- Added permision to xtecadmin to access to scheduled backup parameters
+
+MOODLE2
 - Fixed font face "lletra lligada", which only worked in theme design mode
 - Fixed course import when category names in Moodle 1.9 have some special chars
 - Fixed javascript interference from theme xtec2 to other themes. Credits to mTorres for the fix (https://github.com/projectestac/agora/issues/14)
@@ -955,6 +889,7 @@ Changes 13.06.14
 
 Changes 13.05.13
 ---------------------------------------------------------------------------------------
+MOODLE2
 - Added SVG icons for rcontent and rscorm
 - Added cron code to upgrade upgradable assigments.
 - Course import from 1.9 now allows import of all courses where user has capability 'moodle/site:backup'
@@ -963,10 +898,12 @@ Changes 13.05.13
 - Reviewed MUC configuration to avoid use agora_store for questiondata cache
 - Installed alpha version of the GeoGebra module
 - Forced default timezone to Server's local time (to avoid problems with quizzes)
+- Fixed course import when category names in Moodle 1.9 have some special chars
 
 
-Changes 13.04.26
+Changes 13.04.25
 ---------------------------------------------------------------------------------------
+MOODLE2
 - Fixed error when building category tree
 - Import utility now removes backup copies after restoration
 - Installed QV module
@@ -985,15 +922,15 @@ Changes 13.04.26
 
 Changes 13.03.22
 ---------------------------------------------------------------------------------------
-- Fixed bug in db authentication related with Intraweb users integration
+MOODLE2
 - Upgraded Moodle 2.4.0 to 2.4.3
-- Fixed size of input files of login block
+- Fixed size of input fields of login block
 - Added temporary debug code in coursequotas
-- Updated EOICampus module version to fix problem when restoring courses from Moodle 1.9
 
 
 Changes 13.03.15
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Added CSS style for "Defined in config" params and improved styles for input fields
 - Released 0.2.3 JClic version and updated version.php file (changes has been included some weeks ago)
 - Fixed bug when deleting jclic activities and enableajax is enabled
@@ -1008,6 +945,10 @@ Changes 13.03.15
 
 Changes 13.02.12
 ---------------------------------------------------------------------------------------
+MOODLE
+- Changed value to backup_sche_users parameter to avoid Odissea problems when restoring courses directly from Moodle 1.9 to Moodle 2
+
+MOODLE 2
 - Fixed sending e-mail using XTEC Web Service
 - Added course format "Senzill per temes"
 - Performance improvements to coursequotas report plus code organizational changes
@@ -1021,6 +962,10 @@ Changes 13.02.12
 
 Changes 13.01.14
 ---------------------------------------------------------------------------------------
+MOODLE
+- Fixed bug with sessions_summary initialization at JClic module
+
+MOODLE 2
 - Updated Wiris version for Moodle 2.4
 - Fixed bug in hotpot module: https://tracker.moodle.org/browse/CONTRIB-3896
 - Fixed hand-write font family (aka 'lletra lligada') in Moodle 2.4
@@ -1029,6 +974,7 @@ Changes 13.01.14
 
 Changes 12.12.28
 ---------------------------------------------------------------------------------------
+MOODLE 2
 - Updated Moodle version to 2.4.0
 - Updated hotpot module to 3.0.52
 - Updated questionnaire to 2.3.3
@@ -1037,6 +983,13 @@ Changes 12.12.28
 
 Changes 12.12.12
 ---------------------------------------------------------------------------------------
+MOODLE
+- Added server name to adodberror log to know which web server was implied
+- Fixed database ordering problems notified by Odissea team (http://tracker.moodle.org/browse/MDL-33603)
+- Fixed problem when deleting some of the user responses in a choice activity (only affects to multi-site instances)
+- Showed $CFG->dataroot/climaintenance.html file when exists (at the moment, it will be used in demo site but, if necessary, it can be used in the remaining multi-sites)
+
+MOODLE 2
 - Fixed course order in courses tab of coursequotas. Units were not being considered when ordering.
 - Added missign Catalan translation files to questionnaire module
 - Added support for https authentication using BigIP
@@ -1046,102 +999,161 @@ Changes 12.12.12
 - Added CFG->userquota = 0 to avoid the private files area
 
 
-12.11.21
+Changes 12.11.08
 ---------------------------------------------------------------------------------------
-- Modified the file auth/db/auth.php to make possible to validate simultaniously through the intranet, simulating a SSO validation, and the typical Moodle authentification form using the External Database authentification method
-- Fixed bug when restoring directly big courses from Moodle 1.9 (the course filename was different because the creation took more than one minute).
-- Fixed hardcoded prefixes in import19
-- Added is_agora() checks to import19 to enable Moodle to import when is not Àgora
-- Fixed bug related with guest viewing folders (http://tracker.moodle.org/browse/MDL-34338)
-- Added some restrictions to disable specific modules, like eoicampus
-- Fixed bug in JClic module related with users reporting (only first page was showed)
-- Reduced from 4 days to 1 the waiting time to purge draft files
-- Increased default repository timeout from 30 to 150 to let downloading bigger files
-- Added $CFG->agora_draftfilepurgeage parameter to let configure the waiting time to purge files (default Moodle value was 4 days but now it's only 1 day if $CFG->agora_draftfilepurgeage is not specified).
-- Installed first version of the eoicampus module
+MOODLE
+- Fixed some Oracle bugs in GeoGebra module related with ` character
+- Fixed bug related with sending email during users signup adding $CFG->noreplyaddress to config.php
+- Reviewed coursequotes to make it works with single installations (like Odissea)
+- Added is_agora() check to backup_agora.php to enable Moodle to import when is not Àgora
+- Fixed bug with database activities to avoid problem with data visualization when entrieslefttoadd parameter is defined
+- Updated synchronizer.php from GTAF block to improve the code to fix problem with city codification
+
+MOODLE 2
+- First installation of Odissea-Moodle 2 at http://odissea.xtec.cat/m2
 
 
-12.10.24
+Changes 12.08.27
 ---------------------------------------------------------------------------------------
-- Updated coursequotas report. Now is ready for production.
+- Included apc.php file
+- Installed GeoGebra module (http://moodle.org/plugins/pluginversions.php?plugin=mod_geogebra)
+- Updated Moodle from 1.9.12 to 1.9.19+
+- Adapted admin/replace.php to replace also content in label, forum, resources, quizzes...
+- Reviewed style for dimmed links
+- Changed ldap/auth.php to connect to OID LDAP server (instead of SUN LDAP server)
+- Fixed bug with user export to CSV: added empty fields also to the file
+- Added password field to bulk download
+- Fixed bug to get aplication name and replyTo address from configuration (instead of having the "AGORA" default values directly in the source code)
+- Updated marsupial to v1.5.2
+- Added marsupial_rgrade block (developed by Text-La Galera)
 
 
-12.10.10
+Changes 12.04.02
 ---------------------------------------------------------------------------------------
-- Fixed bug in /moodle/my related with Oracle reserved word (http://tracker.moodle.org/browse/MDL-35387)
-- Updated wiris version to 3.18.2 and hidden Wiris buttons when the filter is not enabled.
-- Fixed bug to let navigation in courses with COURSE_DISPLAY_SINGLEPAGE when a section is marked as current.
-- Undone change because the patch specified in http://tracker.moodle.org/browse/MDL-29432 create problems restoring other backups.
+- Added patch for MSA-11-0031 (http://moodle.org/mod/forum/discuss.php?d=188313)
+- Added patch for MSA-11-0036 (http://moodle.org/mod/forum/discuss.php?d=188318)
+- Added patch for MSA-11-0038 (http://moodle.org/mod/forum/discuss.php?d=188320)
+- Added patch for MSA-11-0045 (http://moodle.org/mod/forum/discuss.php?d=191754)
+- Added patch for MSA-11-0007 (http://moodle.org/mod/forum/discuss.php?d=194015)
+
+- $CFG->iseoi moved to database from settings.php
+- Updated marsupial version to 1.5.2 (beta) to fix some bugs in rcontent and rscorm modules from Marsupial (related with wsSeguimiento, the monitoring web service)
+
+- Added links to courses and categories in the coursequotes report page.
+
+- Reviewed questiontype bug to replace "temporary" solution by the "oficial" one (http://tracker.moodle.org/browse/MDL-29294)
+
+- Updated Wiris CAS and Editor to 2.3.5 and installed Wiris Quizzes (v1.4.5.39)
+- Fixed "ORA-00932: inconsistent datatypes: expected - got CLOB" error with HotPot Quiz activity
+- Fixed bug when there is no rscorm_scoes (in this case it's not necessary to return false)
+
+- Fixed "ORA-00932: inconsistent datatypes: expected - got CLOB" error with HotPot Quiz activity
+- Updated marsupial version to 1.5.1 (final release)
+
+- Added stream_context parameter to SoapClient calls from marsupial-atria module to void problems with HTTPS connection and updated Atria URL from HTTP to HTTPS
+- Added CURLOPT_CAINFO to validate certificates for all the HTTPS connections (like recaptcha when loginhttps=true)
+- Applied patch to update new recaptcha domains (http://tracker.moodle.org/browse/MDL-27328)
+- Updated marsupial version to 1.5.1 (beta release)
+
+- Fixed bug in Marsupial users viewer
+- Updated Marsupial module version to 1.5
+- Added CURLOPT_SSL_VERIFYHOST=FALSE to avoid problems with CA when the connection is HTTPS (it can be tested, for instance, with the recaptcha if loginhttps=true)
+- Changed temporally Atria URL from HTTPS to HTTP until problems with CA in some of the servers will be fixed
+
+- Fixed bug in marsupial state page when getting users with and without credentials
+- Reviewed code to remove mlXXXX references and optimize SQL queries
+- Fixed little bugs in marsupial block
+- Hidden "Manage publishers" if there isn't any publisher and useAtria!=false
+- Hidden "Syncronize with Atria" button when there is some publisher
+- Fixed "ORA-00932: inconsistent datatypes: expected - got CLOB" error with assignments when ordering by comments
+
+- Fixed bug in data searches
+- Rush hour don't affect to xtecadmin
+- index_iw.php: Changed zikula login URL
+- Reviewed rcontent to save view action into the Moodle log
+- Updated rcommon to fix some minor problems related with publishers with only one book
+- Added report option to check Marsupial service state
+
+- Home of the diskquote viewer shows real data instead of stored data
+- Updated marsupial module to version 1.4-beta
+- Updated marsupial-atria module to version 1.5
+
+- Fixed some bugs related with images of the "senzill" format course
+- In "disk space viewer" categories contains subcategories size too
+- Removed extra security checks in index_iw.php to avoid problems with SSO and marsupial
+
+- Fixed problem when importing quizzes activities
+
+- Fixed problems with the top menu size
+- Added function to remove old backups remotely
+- Added menu to view disk usage quotes
+- Added menu to manage Marsupial options
+- Created page to show all the books from a publisher. Modified default option in the Marsupial main menu to show this page instead of update the book structure directly.
+- rscorm lang files: Replaced ISBN string for "Book"
+- rcommon lang files: Revised some strings to add HTML entities
+
+- Added functionality to block upload forms if there isn't free disk space
+- Added functionality to remove old copies when backup succed
+- Fixed problems with special characters in top menu
+- Added option to remove old backups
+- Modified XTEC2 theme (decoration and color of links)
 
 
-12.10.03
+Changes 11.07.08
 ---------------------------------------------------------------------------------------
-- Enabled spell checker for tiny_mce editor (http://tracker.moodle.org/browse/MDL-34674)
-- Removed contextmenu plugin of tiny_mce editor to normally check spelling with right click button
-- Enabled purgecaches without login (to update automatically changes in xtec2 theme)
-- Updated version from 2.3.1 to 2.3.2. Updated also questionnaire and journal modules to latest version
+- Updated version to 1.9.12
+- Updated marsupial modules to last version and revised the code to hide them for non-marsupial schools.
+- Installed atria module.
+- Installed my_books block.
+- Revised site-config.php to move location when the school domain is not correct.
+- Added code to avoid upload files if the disk quota is exceeded.
+- Enabled grouping experimental feature.
+
+- Added e-mail format validation
+- New improvements in the management of Senzill format icons
+- Removed old config files no longer used: personal_config.php and personal_config-dist.php
+- Fixed problem with load balancing (BIGIP) HTTPS is enabled
+- Moved CFG->enable_hour_restrictions param to database to change it easily
+- Moved CFG->loginhttps param to database to change it easily
+
+- Fixed error in forum's index appearance
+- Fixed error in forum's summary sent via webservice
+
+- Added top menu in XTEC2 theme
+- Added handwrite font
+- Added possibility to send messages via apligest system
+- Appearance modifications
+- Fixed error of multiple file fields in the same database form
+- Fixed errors between versions with UPCnet in "Senzill per temes" format
+- Icon can't be chosen for "label" resource type in "Senzill per temes" format
+
+- Added log for ADODB connection error. Log file is stored in usu1 site files.
+- Removed warnings messages in format "Senzill per temes".
+- Several improvements in management of format "Senzill per temes".
+- Fixed invalid DNS showing database error instead of "not a valid school".
+- Label resource is now enabled in format "Senzill per temes".
+
+ - Added Senzill course format, including big icons. GIF icons allowed. By defaul uses png icons.
+ - New options to configure navigation bar in the top of the courses
+ - Slideshow module upgraded to last version and edit_form.php addded
+ - In personal messages sent from school account, the name of the autor appears on "subject" and "replyto" fields only
 
 
-
-12.09.19
+Changes in 11.01.24
 ---------------------------------------------------------------------------------------
-- Improved XTEC2 theme to redessign tab options, underline theme titles and review color button in file selector.
-- Fixed bug related with sending email during users signup adding $CFG->noreplyaddress to settings.php
+- Using new system to get database connection information
+- Added patch to change special chars in CSV user upload files  (only for the username field)
+- Updated marsupial module (rcommon, rcontent and rscorm) to last version (1.2)
 
+PORTAL
+- Using new system to get database connection information
 
-12.09.05
----------------------------------------------------------------------------------------
-- Fixed bug with filtering in analysis report (http://tracker.moodle.org/browse/CONTRIB-3896)
-- Fixed bug with cohorts when adding users (http://tracker.moodle.org/browse/MDL-35270)
+ZIKULA
+- Using new system to get database connection information
+- Fixed wrong width attributes in <img> tags
+- Fixed false-positive errors shown related to Moodle DB Connection
 
-
-10.08.27
----------------------------------------------------------------------------------------
-- Updated Moodle version to 2.3.1
-- Updated hotpot module to 3.0.43
-- Updated hotpot question format to 2.0.8
-- Updated journal to 1.6
-- Updated questionnaire to 2.3.1
-- Updated assign to moodle 2.3.1+ (Build: 20120823)
-- Installed Wiris CAS and Editor 3.17.23
-- Changed default coursedisplay to show only one section per page and showed current section if none is selected
-- Added Catalonia to countries list
-- Improvements to theme xtec2
-- Added param to import external CSS in theme xtec2
-- Changed block image to fold/unfold block by an HTML entity
-- Implemented file upload blocking when disk quota is exceeded
-- Fixed problem duplicating quizzes (http://tracker.moodle.org/browse/MDL-29432)
-- Fixed bug with Intranet user sincronization
-
-
-12.08.01
----------------------------------------------------------------------------------------
-- Fixed bug with advices block
-- Added french and german languages
-- Updated catalan language
-- Added library jpgraph, required by quota reports (which is not added yet)
-- Updated Hot Potatoes module to 3.0.42. Fixes several bugs
-- Import courses from 1.9: fixed bug with siteadmin and managers if the user doesn't exist in Moodle 1.9
-
-
-12.07.17
----------------------------------------------------------------------------------------
-- Added option to restore courses directly from Moodle 1.9 (beta version, only accessible for xtecadmin)
-- Added additional check to avoid problems when restoring JClic activities from Moodle 1.9 with incorrect URL
-- Fixed bug related with calendar (when calendar_adminseesallis enabled) - http://tracker.moodle.org/browse/MDL-32340
-- Reviewed restriction to avoid admins or managers edit user profiles (except xtecadmin)
-
-
-12.07.10
----------------------------------------------------------------------------------------
-- Added additional check to avoid problems when restoring JClic activities from Moodle 1.9 with incorrect URL
-
-
-12.06.20
----------------------------------------------------------------------------------------
-- Changed simple to multi installation
-
-
-12.06.14
----------------------------------------------------------------------------------------
-- Uploaded first version of Moodle 2 (single installation with USU2) for testing it
+- Warning of "Advices block" removed
+- Edu3 videos now available in tasks
+- Changed logos according to new brandname
+- Updated marsupial module (rcommon, rcontent and rscorm) to last version (1.1)
