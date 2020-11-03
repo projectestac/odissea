@@ -25545,6 +25545,15 @@ COPY public.m2block_instances (id, blockname, parentcontextid, showinsubcontexts
 8	lp	1	0	0	my-index	2	content	0		1603909074	1603909074
 9	recentlyaccessedcourses	1	0	0	my-index	2	content	1		1603909074	1603909074
 10	myoverview	1	0	0	my-index	2	content	2		1603909074	1603909074
+11	timeline	16	0	0	my-index	3	side-post	0		1604422437	1604422437
+12	private_files	16	0	0	my-index	3	side-post	1		1604422437	1604422437
+13	online_users	16	0	0	my-index	3	side-post	2		1604422437	1604422437
+14	badges	16	0	0	my-index	3	side-post	3		1604422437	1604422437
+15	calendar_month	16	0	0	my-index	3	side-post	4		1604422437	1604422437
+16	calendar_upcoming	16	0	0	my-index	3	side-post	5		1604422437	1604422437
+17	lp	16	0	0	my-index	3	content	0		1604422437	1604422437
+18	recentlyaccessedcourses	16	0	0	my-index	3	content	1		1604422437	1604422437
+19	myoverview	16	0	0	my-index	3	content	2		1604422437	1604422437
 \.
 
 
@@ -25625,8 +25634,8 @@ COPY public.m2cache_filters (id, filter, version, md5key, rawtext, timemodified)
 --
 
 COPY public.m2cache_flags (id, flagtype, name, timemodified, value, expiry) FROM stdin;
-2	userpreferenceschanged	3	1603911452	1	1603918652
 1	userpreferenceschanged	2	1603983054	1	1603990254
+2	userpreferenceschanged	3	1604422442	1	1604429642
 \.
 
 
@@ -27108,8 +27117,8 @@ COPY public.m2config (id, name, value) FROM stdin;
 517	hotpot_storedetails	0
 518	hotpot_maxeventlength	5
 414	allversionshash	8f60adb14671c7508b8d06a58ae3add468e84d57
-24	themerev	1603982943
 158	langrev	1603982943
+24	themerev	1604422477
 \.
 
 
@@ -29032,6 +29041,13 @@ COPY public.m2config_log (id, userid, timemodified, plugin, name, value, oldvalu
 1912	2	1603981844	auth_saml2	field_updateremote_alternatename	0	\N
 1913	2	1603981844	auth_saml2	field_lock_alternatename	unlocked	\N
 1914	2	1603983058	core	siteadmins	2, 3	2
+1915	3	1604422472	theme_xtec2020	agora_alert_message		\N
+1916	3	1604422472	theme_xtec2020	agora_alert_start		\N
+1917	3	1604422472	theme_xtec2020	agora_alert_end		\N
+1918	3	1604422472	theme_xtec2020	admin_alert_message		\N
+1919	3	1604422472	theme_xtec2020	admin_alert_start		\N
+1920	3	1604422472	theme_xtec2020	admin_alert_end		\N
+1921	3	1604422633	logstore_standard	loglifetime	60	0
 \.
 
 
@@ -30883,7 +30899,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1917	logstore_legacy	loglegacy	0
 1918	logstore_standard	logguests	1
 1919	logstore_standard	jsonformat	1
-1920	logstore_standard	loglifetime	0
 1921	logstore_standard	buffersize	50
 1922	media_videojs	videoextensions	html_video,media_source,.f4v,.flv
 1923	media_videojs	audioextensions	html_audio
@@ -31201,6 +31216,13 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2263	auth_saml2	field_updatelocal_alternatename	oncreate
 2264	auth_saml2	field_updateremote_alternatename	0
 2265	auth_saml2	field_lock_alternatename	unlocked
+2266	theme_xtec2020	agora_alert_message	
+2267	theme_xtec2020	agora_alert_start	
+2268	theme_xtec2020	agora_alert_end	
+2269	theme_xtec2020	admin_alert_message	
+2270	theme_xtec2020	admin_alert_start	
+2271	theme_xtec2020	admin_alert_end	
+1920	logstore_standard	loglifetime	60
 \.
 
 
@@ -31225,6 +31247,15 @@ COPY public.m2context (id, contextlevel, instanceid, path, depth, locked) FROM s
 14	80	9	/1/14	2	0
 15	80	10	/1/15	2	0
 16	30	3	/1/16	2	0
+17	80	11	/1/16/17	3	0
+18	80	12	/1/16/18	3	0
+19	80	13	/1/16/19	3	0
+20	80	14	/1/16/20	3	0
+21	80	15	/1/16/21	3	0
+22	80	16	/1/16/22	3	0
+23	80	17	/1/16/23	3	0
+24	80	18	/1/16/24	3	0
+25	80	19	/1/16/25	3	0
 \.
 
 
@@ -33486,9 +33517,9 @@ COPY public.m2license (id, shortname, fullname, source, enabled, version) FROM s
 
 COPY public.m2lock_db (id, resourcekey, expires, owner) FROM stdin;
 3	core_theme_get_css_content_boost	\N	\N
-4	core_theme_get_css_content_xtec2020	\N	\N
-2	core_modinfo_build_course_cache_1	\N	\N
 1	core_coursecattree_core_coursecattree_cache	\N	\N
+2	core_modinfo_build_course_cache_1	\N	\N
+4	core_theme_get_css_content_xtec2020	\N	\N
 \.
 
 
@@ -35344,6 +35375,19 @@ COPY public.m2logstore_standard_log (id, eventname, component, action, target, o
 1597	\\core\\event\\course_viewed	core	viewed	course	\N	\N	r	2	2	50	1	2	1	\N	0	null	1603983067	web	192.168.33.1	\N
 1598	\\core\\event\\user_loggedout	core	loggedout	user	user	2	r	0	1	10	0	2	0	\N	0	{"sessionid":"07um6t89tpeugoksor9scqs7vu"}	1603983074	web	192.168.33.1	\N
 1599	\\core\\event\\course_viewed	core	viewed	course	\N	\N	r	2	2	50	1	0	1	\N	0	null	1603983074	web	192.168.33.1	\N
+1600	\\core\\event\\course_viewed	core	viewed	course	\N	\N	r	2	2	50	1	0	1	\N	0	null	1604422424	web	192.168.33.1	\N
+1601	\\core\\event\\user_loggedin	core	loggedin	user	user	3	r	0	1	10	0	3	0	\N	0	{"username":"xtecadmin"}	1604422435	web	192.168.33.1	\N
+1602	\\core\\event\\dashboard_viewed	core	viewed	dashboard	\N	\N	r	0	16	30	3	3	0	3	0	null	1604422438	web	192.168.33.1	\N
+1603	\\tool_usertours\\event\\tour_started	tool_usertours	started	tour	tool_usertours_tours	2	r	2	16	30	3	3	0	3	0	{"pageurl":"https:\\/\\/odissea-aws.xtec.cat\\/my\\/"}	1604422440	web	192.168.33.1	\N
+1604	\\tool_usertours\\event\\step_shown	tool_usertours	shown	step	tool_usertours_steps	7	r	2	16	30	3	3	0	3	0	{"pageurl":"https:\\/\\/odissea-aws.xtec.cat\\/my\\/","tourid":2,"stepindex":0}	1604422440	web	192.168.33.1	\N
+1605	\\tool_usertours\\event\\tour_ended	tool_usertours	ended	tour	tool_usertours_tours	2	c	2	16	30	3	3	0	3	0	{"pageurl":"https:\\/\\/odissea-aws.xtec.cat\\/my\\/","stepid":7,"stepindex":0}	1604422442	web	192.168.33.1	\N
+1606	\\core\\event\\config_log_created	core	created	config_log	config_log	1915	c	0	1	10	0	3	0	\N	0	{"name":"agora_alert_message","oldvalue":null,"value":"","plugin":"theme_xtec2020"}	1604422472	web	192.168.33.1	\N
+1607	\\core\\event\\config_log_created	core	created	config_log	config_log	1916	c	0	1	10	0	3	0	\N	0	{"name":"agora_alert_start","oldvalue":null,"value":"","plugin":"theme_xtec2020"}	1604422472	web	192.168.33.1	\N
+1608	\\core\\event\\config_log_created	core	created	config_log	config_log	1917	c	0	1	10	0	3	0	\N	0	{"name":"agora_alert_end","oldvalue":null,"value":"","plugin":"theme_xtec2020"}	1604422472	web	192.168.33.1	\N
+1609	\\core\\event\\config_log_created	core	created	config_log	config_log	1918	c	0	1	10	0	3	0	\N	0	{"name":"admin_alert_message","oldvalue":null,"value":"","plugin":"theme_xtec2020"}	1604422472	web	192.168.33.1	\N
+1610	\\core\\event\\config_log_created	core	created	config_log	config_log	1919	c	0	1	10	0	3	0	\N	0	{"name":"admin_alert_start","oldvalue":null,"value":"","plugin":"theme_xtec2020"}	1604422472	web	192.168.33.1	\N
+1611	\\core\\event\\config_log_created	core	created	config_log	config_log	1920	c	0	1	10	0	3	0	\N	0	{"name":"admin_alert_end","oldvalue":null,"value":"","plugin":"theme_xtec2020"}	1604422472	web	192.168.33.1	\N
+1612	\\core\\event\\config_log_created	core	created	config_log	config_log	1921	c	0	1	10	0	3	0	\N	0	{"name":"loglifetime","oldvalue":"0","value":"60","plugin":"logstore_standard"}	1604422633	web	192.168.33.1	\N
 \.
 
 
@@ -35832,6 +35876,7 @@ COPY public.m2modules (id, name, cron, lastcron, search, visible) FROM stdin;
 COPY public.m2my_pages (id, userid, name, private, sortorder) FROM stdin;
 1	\N	__default	0	0
 2	\N	__default	1	0
+3	3	__default	1	0
 \.
 
 
@@ -38610,6 +38655,7 @@ COPY public.m2search_simpledb_index (id, docid, itemid, title, content, contexti
 
 COPY public.m2sessions (id, state, sid, userid, sessdata, timecreated, timemodified, firstip, lastip) FROM stdin;
 8	0	qqq7nl4k0am3djhqu4mjsf3mv0	0	VVNFUnxPOjg6InN0ZENsYXNzIjo3OntzOjI6ImlkIjtpOjA7czoxMDoibW5ldGhvc3RpZCI7czoxOiIxIjtzOjEwOiJwcmVmZXJlbmNlIjthOjA6e31zOjc6InNlc3NrZXkiO3M6MTA6ImdCeHNwWGlMc0kiO3M6MjU6ImFqYXhfdXBkYXRhYmxlX3VzZXJfcHJlZnMiO2E6MTp7czoxNToiZHJhd2VyLW9wZW4tbmF2IjtzOjU6ImFscGhhIjt9czo2OiJhY2Nlc3MiO2E6Mzp7czoyOiJyYSI7YToxOntzOjI6Ii8xIjthOjE6e2k6NjtpOjY7fX1zOjQ6InRpbWUiO2k6MTYwMzk4MzA3NDtzOjM6InJzdyI7YTowOnt9fXM6NToiZW5yb2wiO2E6Mjp7czo4OiJlbnJvbGxlZCI7YTowOnt9czo5OiJ0ZW1wZ3Vlc3QiO2E6MDp7fX19U0VTU0lPTnxPOjg6InN0ZENsYXNzIjoyOntzOjQ6ImxhbmciO3M6MjoiY2EiO3M6MTg6ImNhY2hlc3RvcmVfc2Vzc2lvbiI7YToxOntzOjMwOiJkZWZhdWx0X3Nlc3Npb24tY29yZS9jb3Vyc2VjYXQiO2E6Njp7czo0MzoiX19sYXN0YWNjZXNzX191MF9xcXE3bmw0azBhbTNkamhxdTRtanNmM212MCI7YToyOntpOjA7aToxNjAzOTgzMDc0O2k6MTtpOjE2MDM5ODMwNzQ7fXM6NzA6InUwX3FxcTdubDRrMGFtM2RqaHF1NG1qc2YzbXYwX2NiOTY5MzQxNmUzMWM0ZDMyZTZjYjlkZTRiZGI2ZGU3OWYyOWFiOGEiO2E6Mjp7aTowO3M6Mzk6IjE2MDM5ODMwNzQuOTAzOS01ZjlhZDZlMmRjYWUzNi4yOTcwMDI2NSI7aToxO2k6MTYwMzk4MzA3NDt9czo3MDoidTBfcXFxN25sNGswYW0zZGpocXU0bWpzZjNtdjBfODQ4MjJlYTRkOWE2NzJlZWE0ZWRjNmQ4MTg4ODUwMWJhMTJhMGFhYSI7YToyOntpOjA7YTowOnt9aToxO2k6MTYwMzk4MzA3NDt9czo3MDoidTBfcXFxN25sNGswYW0zZGpocXU0bWpzZjNtdjBfNGE0YTNjNzRjOGJiYWM1ZDJlZGRmYzI3YzY3NjVlYmUxOTIyMzdjZSI7YToyOntpOjA7YToxOntpOjA7czoxOiIxIjt9aToxO2k6MTYwMzk4MzA3NDt9czo3MDoidTBfcXFxN25sNGswYW0zZGpocXU0bWpzZjNtdjBfMzE4ODI0YmRkNTVmOTczMWJjMGQ2MjVmMDY5OTRiOTIwNzc2Y2MyZCI7YToyOntpOjA7YTowOnt9aToxO2k6MTYwMzk4MzA3NDt9czo3MDoidTBfcXFxN25sNGswYW0zZGpocXU0bWpzZjNtdjBfYjFiNWNiY2JmODUwODg2ZTRiZTg2Nzk4NDYyM2Y1MDU0MDhlMzM2YiI7YToyOntpOjA7aTowO2k6MTtpOjE2MDM5ODMwNzQ7fX19fQ==	1603983074	1603983075	192.168.33.1	192.168.33.1
+10	0	6lsoc7v3dmhc59l55af31ej0lh	3	VVNFUnxPOjg6InN0ZENsYXNzIjo2MTp7czoyOiJpZCI7czoxOiIzIjtzOjQ6ImF1dGgiO3M6NjoibWFudWFsIjtzOjk6ImNvbmZpcm1lZCI7czoxOiIxIjtzOjEyOiJwb2xpY3lhZ3JlZWQiO3M6MToiMCI7czo3OiJkZWxldGVkIjtzOjE6IjAiO3M6OToic3VzcGVuZGVkIjtzOjE6IjAiO3M6MTA6Im1uZXRob3N0aWQiO3M6MToiMSI7czo4OiJ1c2VybmFtZSI7czo5OiJ4dGVjYWRtaW4iO3M6ODoiaWRudW1iZXIiO3M6MDoiIjtzOjk6ImZpcnN0bmFtZSI7czoxMzoiQWRtaW5pc3RyYWRvciI7czo4OiJsYXN0bmFtZSI7czo0OiJYVEVDIjtzOjU6ImVtYWlsIjtzOjIyOiJ4dGVjYWRtaW5AeHRlYy5pbnZhbGlkIjtzOjk6ImVtYWlsc3RvcCI7czoxOiIwIjtzOjM6ImljcSI7czowOiIiO3M6NToic2t5cGUiO3M6MDoiIjtzOjU6InlhaG9vIjtzOjA6IiI7czozOiJhaW0iO3M6MDoiIjtzOjM6Im1zbiI7czowOiIiO3M6NjoicGhvbmUxIjtzOjA6IiI7czo2OiJwaG9uZTIiO3M6MDoiIjtzOjExOiJpbnN0aXR1dGlvbiI7czowOiIiO3M6MTA6ImRlcGFydG1lbnQiO3M6MDoiIjtzOjc6ImFkZHJlc3MiO3M6MDoiIjtzOjQ6ImNpdHkiO3M6MDoiIjtzOjc6ImNvdW50cnkiO3M6MjoiQ1QiO3M6NDoibGFuZyI7czoyOiJjYSI7czoxMjoiY2FsZW5kYXJ0eXBlIjtzOjk6ImdyZWdvcmlhbiI7czo1OiJ0aGVtZSI7czowOiIiO3M6ODoidGltZXpvbmUiO3M6MjoiOTkiO3M6MTE6ImZpcnN0YWNjZXNzIjtpOjE2MDQ0MjI0MzU7czoxMDoibGFzdGFjY2VzcyI7aToxNjA0NDIyNzY2O3M6OToibGFzdGxvZ2luIjtzOjE6IjAiO3M6MTI6ImN1cnJlbnRsb2dpbiI7aToxNjA0NDIyNDM1O3M6NjoibGFzdGlwIjtzOjEyOiIxOTIuMTY4LjMzLjEiO3M6Njoic2VjcmV0IjtzOjA6IiI7czo3OiJwaWN0dXJlIjtzOjE6IjAiO3M6MzoidXJsIjtzOjA6IiI7czoxNzoiZGVzY3JpcHRpb25mb3JtYXQiO3M6MToiMSI7czoxMDoibWFpbGZvcm1hdCI7czoxOiIxIjtzOjEwOiJtYWlsZGlnZXN0IjtzOjE6IjAiO3M6MTE6Im1haWxkaXNwbGF5IjtzOjE6IjIiO3M6MTM6ImF1dG9zdWJzY3JpYmUiO3M6MToiMSI7czoxMToidHJhY2tmb3J1bXMiO3M6MToiMCI7czoxMToidGltZWNyZWF0ZWQiO3M6MTA6IjE2MDM5MTE0NTIiO3M6MTI6InRpbWVtb2RpZmllZCI7czoxMDoiMTYwMzkxMTQ1MiI7czoxMjoidHJ1c3RiaXRtYXNrIjtzOjE6IjAiO3M6ODoiaW1hZ2VhbHQiO3M6MDoiIjtzOjE2OiJsYXN0bmFtZXBob25ldGljIjtzOjA6IiI7czoxNzoiZmlyc3RuYW1lcGhvbmV0aWMiO3M6MDoiIjtzOjEwOiJtaWRkbGVuYW1lIjtzOjA6IiI7czoxMzoiYWx0ZXJuYXRlbmFtZSI7czowOiIiO3M6MTY6Imxhc3Rjb3Vyc2VhY2Nlc3MiO2E6MDp7fXM6MTk6ImN1cnJlbnRjb3Vyc2VhY2Nlc3MiO2E6MDp7fXM6MTE6Imdyb3VwbWVtYmVyIjthOjA6e31zOjc6InByb2ZpbGUiO2E6MDp7fXM6Nzoic2Vzc2tleSI7czoxMDoicmZlRzJZc0VldSI7czoxMDoicHJlZmVyZW5jZSI7YTo2OntzOjI0OiJhdXRoX2ZvcmNlcGFzc3dvcmRjaGFuZ2UiO3M6MToiMCI7czoxODoiZW1haWxfYm91bmNlX2NvdW50IjtzOjE6IjEiO3M6MTY6ImVtYWlsX3NlbmRfY291bnQiO3M6MToiMSI7czoyNToiY29yZV9tZXNzYWdlX21pZ3JhdGVfZGF0YSI7czoxOiIxIjtzOjM3OiJ0b29sX3VzZXJ0b3Vyc190b3VyX2NvbXBsZXRpb25fdGltZV8yIjtzOjEwOiIxNjA0NDIyNDQyIjtzOjExOiJfbGFzdGxvYWRlZCI7aToxNjA0NDIyNzY4O31zOjc6ImVkaXRpbmciO2k6MDtzOjI1OiJhamF4X3VwZGF0YWJsZV91c2VyX3ByZWZzIjthOjE6e3M6MTU6ImRyYXdlci1vcGVuLW5hdiI7czo1OiJhbHBoYSI7fXM6NjoiYWNjZXNzIjthOjM6e3M6MjoicmEiO2E6Mjp7czoyOiIvMSI7YToxOntpOjc7aTo3O31zOjQ6Ii8xLzIiO2E6MTp7aTo4O2k6ODt9fXM6NDoidGltZSI7aToxNjA0NDIyNDM3O3M6MzoicnN3IjthOjA6e319czo1OiJlbnJvbCI7YToyOntzOjg6ImVucm9sbGVkIjthOjA6e31zOjk6InRlbXBndWVzdCI7YTowOnt9fX1TRVNTSU9OfE86ODoic3RkQ2xhc3MiOjc6e3M6MTg6ImNhY2hlc3RvcmVfc2Vzc2lvbiI7YToyOntzOjMwOiJkZWZhdWx0X3Nlc3Npb24tY29yZS9jb3Vyc2VjYXQiO2E6MTE6e3M6NDM6Il9fbGFzdGFjY2Vzc19fdTBfcmU2ZWZxcDVxN2YzdG1rOWc2bTdpbGNzdmEiO2E6Mjp7aTowO2k6MTYwNDQyMjQyNTtpOjE7aToxNjA0NDIyNDI1O31zOjcwOiJ1MF9yZTZlZnFwNXE3ZjN0bWs5ZzZtN2lsY3N2YV9jYjk2OTM0MTZlMzFjNGQzMmU2Y2I5ZGU0YmRiNmRlNzlmMjlhYjhhIjthOjI6e2k6MDtzOjM5OiIxNjA0NDIyNDI1LjI2OTItNWZhMThiMTk0MWI4MTcuNjcwOTk3MzAiO2k6MTtpOjE2MDQ0MjI0MjU7fXM6NzA6InUwX3JlNmVmcXA1cTdmM3RtazlnNm03aWxjc3ZhXzg0ODIyZWE0ZDlhNjcyZWVhNGVkYzZkODE4ODg1MDFiYTEyYTBhYWEiO2E6Mjp7aTowO2E6MDp7fWk6MTtpOjE2MDQ0MjI0MjU7fXM6NzA6InUwX3JlNmVmcXA1cTdmM3RtazlnNm03aWxjc3ZhXzRhNGEzYzc0YzhiYmFjNWQyZWRkZmMyN2M2NzY1ZWJlMTkyMjM3Y2UiO2E6Mjp7aTowO2E6MTp7aTowO3M6MToiMSI7fWk6MTtpOjE2MDQ0MjI0MjU7fXM6NzA6InUwX3JlNmVmcXA1cTdmM3RtazlnNm03aWxjc3ZhXzMxODgyNGJkZDU1Zjk3MzFiYzBkNjI1ZjA2OTk0YjkyMDc3NmNjMmQiO2E6Mjp7aTowO2E6MDp7fWk6MTtpOjE2MDQ0MjI0MjU7fXM6NzA6InUwX3JlNmVmcXA1cTdmM3RtazlnNm03aWxjc3ZhX2IxYjVjYmNiZjg1MDg4NmU0YmU4Njc5ODQ2MjNmNTA1NDA4ZTMzNmIiO2E6Mjp7aTowO2k6MDtpOjE7aToxNjA0NDIyNDI1O31zOjcwOiJ1M182bHNvYzd2M2RtaGM1OWw1NWFmMzFlajBsaF9jYjk2OTM0MTZlMzFjNGQzMmU2Y2I5ZGU0YmRiNmRlNzlmMjlhYjhhIjthOjI6e2k6MDtzOjM5OiIxNjA0NDIyNDM3LjYxMDEtNWZhMThiMjU5NGY2NTkuNDc4Mzk5MzUiO2k6MTtpOjE2MDQ0MjI0Mzc7fXM6NzA6InUzXzZsc29jN3YzZG1oYzU5bDU1YWYzMWVqMGxoXzg0ODIyZWE0ZDlhNjcyZWVhNGVkYzZkODE4ODg1MDFiYTEyYTBhYWEiO2E6Mjp7aTowO2E6MDp7fWk6MTtpOjE2MDQ0MjI0Mzc7fXM6NzA6InUzXzZsc29jN3YzZG1oYzU5bDU1YWYzMWVqMGxoXzRhNGEzYzc0YzhiYmFjNWQyZWRkZmMyN2M2NzY1ZWJlMTkyMjM3Y2UiO2E6Mjp7aTowO2E6MTp7aTowO3M6MToiMSI7fWk6MTtpOjE2MDQ0MjI0Mzc7fXM6NzA6InUzXzZsc29jN3YzZG1oYzU5bDU1YWYzMWVqMGxoX2RiMWZiYzBmOTA4NTE3N2MyOWJlYzZhZDkxZDQzOTZhNjAxMWM3YTAiO2E6Mjp7aTowO2E6MTp7aToxO2E6Mjp7czo0OiJuYW1lIjtzOjE0OiJNaXNjZWzCt2zDoG5pYSI7czo0OiJwYXRoIjtzOjI6Ii8xIjt9fWk6MTtpOjE2MDQ0MjI2MDk7fXM6NDM6Il9fbGFzdGFjY2Vzc19fdTNfNmxzb2M3djNkbWhjNTlsNTVhZjMxZWowbGgiO2E6Mjp7aTowO2k6MTYwNDQyMjc2NztpOjE7aToxNjA0NDIyNzY3O319czo0MDoiZGVmYXVsdF9zZXNzaW9uLWNvcmUvY2FsZW5kYXJfY2F0ZWdvcmllcyI7YTozOntzOjc5OiJ1M182bHNvYzd2M2RtaGM1OWw1NWFmMzFlajBsaF9sYXN0aW52YWxpZGF0aW9uLTQxN2EwOTAwYWZiYTIzNWVlYTMzMzczZTkyY2JlZWZjIjthOjI6e2k6MDtzOjM5OiIxNjA0NDIyNDM3LjYxMDEtNWZhMThiMjU5NGY2NTkuNDc4Mzk5MzUiO2k6MTtpOjE2MDQ0MjI0Mzc7fXM6Njc6InUzXzZsc29jN3YzZG1oYzU5bDU1YWYzMWVqMGxoX3NpdGUtNDE3YTA5MDBhZmJhMjM1ZWVhMzMzNzNlOTJjYmVlZmMiO2E6Mjp7aTowO2E6MDp7fWk6MTtpOjE2MDQ0MjI0Mzc7fXM6NDM6Il9fbGFzdGFjY2Vzc19fdTNfNmxzb2M3djNkbWhjNTlsNTVhZjMxZWowbGgiO2E6Mjp7aTowO2k6MTYwNDQyMjQzOTtpOjE7aToxNjA0NDIyNDM5O319fXM6MTA6ImxvZ2ludG9rZW4iO2E6MTp7czoxNToiY29yZV9hdXRoX2xvZ2luIjthOjI6e3M6NToidG9rZW4iO3M6MzI6IjJIQ3RwT1piVTVPbEIyN3M5OElZZXZJdVlqc3RLUFNrIjtzOjc6ImNyZWF0ZWQiO2k6MTYwNDQyMjQzNTt9fXM6MjA6ImN1c3RvbV9ibG9ja19yZWdpb25zIjthOjE6e3M6ODoibXktaW5kZXgiO2E6MTp7aTowO3M6NzoiY29udGVudCI7fX1zOjIxOiJjYWxlbmRhcnNob3dldmVudHR5cGUiO2k6MTU7czoyMToibG9hZF9uYXZpZ2F0aW9uX2FkbWluIjtpOjE7czoyMjoiYWRtaW5fY3JpdGljYWxfd2FybmluZyI7YjowO3M6ODoibmF2Y2FjaGUiO086ODoic3RkQ2xhc3MiOjE6e3M6MTA6Im5hdmlnYXRpb24iO2E6Mjp7czoxNjoidXNlcmJsb2dvcHRpb25zMyI7YTozOntpOjA7aToxNjA0NDIyNzY3O2k6MTtzOjE6IjMiO2k6MjtzOjcxMzoiYToyOntzOjQ6InZpZXciO2E6Mjp7czo2OiJzdHJpbmciO3M6MTc6IkVudHJhZGVzIGRlbCBibG9nIjtzOjQ6ImxpbmsiO086MTA6Im1vb2RsZV91cmwiOjk6e3M6OToiACoAc2NoZW1lIjtzOjU6Imh0dHBzIjtzOjc6IgAqAGhvc3QiO3M6MjA6Im9kaXNzZWEtYXdzLnh0ZWMuY2F0IjtzOjc6IgAqAHBvcnQiO3M6MDoiIjtzOjc6IgAqAHVzZXIiO3M6MDoiIjtzOjc6IgAqAHBhc3MiO3M6MDoiIjtzOjc6IgAqAHBhdGgiO3M6MTU6Ii9ibG9nL2luZGV4LnBocCI7czoxNjoiACoAc2xhc2hhcmd1bWVudCI7czowOiIiO3M6OToiACoAYW5jaG9yIjtOO3M6OToiACoAcGFyYW1zIjthOjE6e3M6NjoidXNlcmlkIjtzOjE6IjMiO319fXM6MzoiYWRkIjthOjI6e3M6Njoic3RyaW5nIjtzOjI0OiJBZmVnZWl4IHVuYSBlbnRyYWRhIG5vdmEiO3M6NDoibGluayI7TzoxMDoibW9vZGxlX3VybCI6OTp7czo5OiIAKgBzY2hlbWUiO3M6NToiaHR0cHMiO3M6NzoiACoAaG9zdCI7czoyMDoib2Rpc3NlYS1hd3MueHRlYy5jYXQiO3M6NzoiACoAcG9ydCI7czowOiIiO3M6NzoiACoAdXNlciI7czowOiIiO3M6NzoiACoAcGFzcyI7czowOiIiO3M6NzoiACoAcGF0aCI7czoxNDoiL2Jsb2cvZWRpdC5waHAiO3M6MTY6IgAqAHNsYXNoYXJndW1lbnQiO3M6MDoiIjtzOjk6IgAqAGFuY2hvciI7TjtzOjk6IgAqAHBhcmFtcyI7YToxOntzOjY6ImFjdGlvbiI7czozOiJhZGQiO319fX0iO31zOjE3OiJjb250ZXh0aGFzcmVwb3MxNiI7YTozOntpOjA7aToxNjA0NDIyNzY3O2k6MTtzOjE6IjMiO2k6MjtzOjQ6ImI6MDsiO319fX0=	1604422435	1604422766	192.168.33.1	192.168.33.1
 \.
 
 
@@ -40543,8 +40589,8 @@ COPY public.m2url (id, course, name, intro, introformat, externalurl, display, d
 
 COPY public.m2user (id, auth, confirmed, policyagreed, deleted, suspended, mnethostid, username, password, idnumber, firstname, lastname, email, emailstop, icq, skype, yahoo, aim, msn, phone1, phone2, institution, department, address, city, country, lang, calendartype, theme, timezone, firstaccess, lastaccess, lastlogin, currentlogin, lastip, secret, picture, url, description, descriptionformat, mailformat, maildigest, maildisplay, autosubscribe, trackforums, timecreated, timemodified, trustbitmask, imagealt, lastnamephonetic, firstnamephonetic, middlename, alternatename) FROM stdin;
 1	manual	1	0	0	0	1	guest	$2y$10$CFokzHIxm7HyxXvoUatsEOVB5bK/0xi5Vx/OZPrj7VgaUw5TjqvJy		Usuari convidat	 	root@localhost	0													ca	gregorian		99	0	0	0	0			0		Aquest usuari és un usuari especial que permet entrar a alguns cursos en mode només de lectura (read-only).	1	1	0	2	1	0	0	1603909020	0	\N	\N	\N	\N	\N
-3	manual	1	0	0	0	1	xtecadmin	$2y$10$9fyNq/zdjWkdheNPsM/pHOu7LKAR6ERFLg9A.0YPd14m6vLRXS22C		Administrador	XTEC	xtecadmin@xtec.invalid	0												CT	ca	gregorian		99	0	0	0	0			0			1	1	0	2	1	0	1603911452	1603911452	0					
 2	manual	1	0	0	0	1	admin	$2y$10$JbL6B67VOmmzjQyv/h9JpeJdsNoc2abrGW3TV/N3OoP68FBZU3G4.		Admin	Usuari	admin@xtec.invalid	0												CT	ca	gregorian		99	1603909129	1603983032	1603910527	1603981833	192.168.33.1		0			1	1	0	1	1	0	0	1603911485	0					
+3	manual	1	0	0	0	1	xtecadmin	$2y$10$9fyNq/zdjWkdheNPsM/pHOu7LKAR6ERFLg9A.0YPd14m6vLRXS22C		Administrador	XTEC	xtecadmin@xtec.invalid	0												CT	ca	gregorian		99	1604422435	1604422766	0	1604422435	192.168.33.1		0			1	1	0	2	1	0	1603911452	1603911452	0					
 \.
 
 
@@ -40627,6 +40673,8 @@ COPY public.m2user_preferences (id, userid, name, value) FROM stdin;
 8	2	userselector_preserveselected	0
 9	2	userselector_autoselectunique	0
 10	2	userselector_searchanywhere	0
+11	3	core_message_migrate_data	1
+12	3	tool_usertours_tour_completion_time_2	1604422442
 \.
 
 
@@ -41160,7 +41208,7 @@ SELECT pg_catalog.setval('public.m2block_id_seq', 49, true);
 -- Name: m2block_instances_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2block_instances_id_seq', 10, true);
+SELECT pg_catalog.setval('public.m2block_instances_id_seq', 19, true);
 
 
 --
@@ -41454,21 +41502,21 @@ SELECT pg_catalog.setval('public.m2config_id_seq', 519, true);
 -- Name: m2config_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_log_id_seq', 1914, true);
+SELECT pg_catalog.setval('public.m2config_log_id_seq', 1921, true);
 
 
 --
 -- Name: m2config_plugins_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_plugins_id_seq', 2265, true);
+SELECT pg_catalog.setval('public.m2config_plugins_id_seq', 2271, true);
 
 
 --
 -- Name: m2context_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2context_id_seq', 16, true);
+SELECT pg_catalog.setval('public.m2context_id_seq', 25, true);
 
 
 --
@@ -41615,7 +41663,7 @@ SELECT pg_catalog.setval('public.m2data_records_id_seq', 1, false);
 -- Name: m2editor_atto_autosave_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2editor_atto_autosave_id_seq', 6, true);
+SELECT pg_catalog.setval('public.m2editor_atto_autosave_id_seq', 8, true);
 
 
 --
@@ -42532,7 +42580,7 @@ SELECT pg_catalog.setval('public.m2log_queries_id_seq', 1, false);
 -- Name: m2logstore_standard_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2logstore_standard_log_id_seq', 1599, true);
+SELECT pg_catalog.setval('public.m2logstore_standard_log_id_seq', 1612, true);
 
 
 --
@@ -42826,7 +42874,7 @@ SELECT pg_catalog.setval('public.m2modules_id_seq', 31, true);
 -- Name: m2my_pages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2my_pages_id_seq', 2, true);
+SELECT pg_catalog.setval('public.m2my_pages_id_seq', 3, true);
 
 
 --
@@ -43792,7 +43840,7 @@ SELECT pg_catalog.setval('public.m2search_simpledb_index_id_seq', 1, false);
 -- Name: m2sessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2sessions_id_seq', 8, true);
+SELECT pg_catalog.setval('public.m2sessions_id_seq', 10, true);
 
 
 --
@@ -44149,7 +44197,7 @@ SELECT pg_catalog.setval('public.m2user_password_resets_id_seq', 1, false);
 -- Name: m2user_preferences_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2user_preferences_id_seq', 10, true);
+SELECT pg_catalog.setval('public.m2user_preferences_id_seq', 12, true);
 
 
 --
