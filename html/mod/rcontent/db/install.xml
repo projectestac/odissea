@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/rcontent/db" COMMENT="" VERSION="2013030500" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd">
+<TABLES>
+	<TABLE NAME="rcontent" COMMENT="" >
+		<FIELDS>
+			<FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT=""/>
+			<FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+			<FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  COMMENT=""/>
+			<FIELD NAME="intro" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        	<FIELD NAME="introformat" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="text format of intro field"/>
+			<FIELD NAME="levelid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+			<FIELD NAME="bookid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+			<FIELD NAME="unitid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+			<FIELD NAME="activityid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+            <FIELD NAME="whatgrade" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false"  />
+			<FIELD NAME="popup" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"  COMMENT=""/>
+			<FIELD NAME="popup_options" TYPE="char"  LENGTH="255" NOTNULL="true" SEQUENCE="false"  COMMENT=""/>
+			<FIELD NAME="frame" TYPE="char"  LENGTH="255" NOTNULL="true" SEQUENCE="false"  COMMENT=""/>
+			<FIELD NAME="width" TYPE="char" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="100%" SEQUENCE="false"  />
+			<FIELD NAME="height" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="600" SEQUENCE="false"  />
+			<FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+			<FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+		</FIELDS>
+		<KEYS>
+			<KEY NAME="primary" TYPE="primary" FIELDS="id" />
+		</KEYS>
+
+	</TABLE>
+<TABLE NAME="rcontent_grades" COMMENT="" >
+	<FIELDS>
+		<FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT=""/>
+		<FIELD NAME="userid" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="rcontentid" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="unitid" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="activityid" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="grade" TYPE="float" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="mingrade" TYPE="float" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="maxgrade" TYPE="float" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="attempt" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="maxattempts" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="starttime" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="totaltime" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="maxtotaltime" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="status" TYPE="char" LENGTH="50" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="comments" TYPE="char" LENGTH="255" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="urlviewresults" TYPE="char" LENGTH="1024" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="sumweights" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"   COMMENT=""/>
+		<FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"   COMMENT=""/>
+		<FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+	</FIELDS>
+	 <KEYS>
+		<KEY NAME="primary" TYPE="primary" FIELDS="id" />
+	</KEYS>
+</TABLE>
+
+<TABLE NAME="rcontent_grades_details" COMMENT="" >
+	<FIELDS>
+		<FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT=""/>
+		<FIELD NAME="userid" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="rcontentid" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="false" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="unitid" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"   COMMENT=""/>
+		<FIELD NAME="activityid" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="code" TYPE="char" LENGTH="100" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""  />
+		<FIELD NAME="typeid" TYPE="char" LENGTH="100" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"   COMMENT=""/>
+		<FIELD NAME="description" TYPE="char" LENGTH="255" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="grade" TYPE="float" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="mingrade" TYPE="float" NOTNULL="true" DEFAULT="0" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="maxgrade" TYPE="float" NOTNULL="true" DEFAULT="0" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="starttime" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="totaltime" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="maxtotaltime" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="attempt" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="maxattempts" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="weight"  TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="urlviewresults" TYPE="char" LENGTH="1024" NOTNULL="false" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+		<FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+	</FIELDS>
+	<KEYS>
+		<KEY NAME="primary" TYPE="primary" FIELDS="id" />
+	</KEYS>
+</TABLE>
+<TABLE NAME="rcontent_track_credentials" COMMENT="" >
+      <FIELDS>
+      <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"  COMMENT=""/>
+      <FIELD NAME="username" TYPE="char" LENGTH="255" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+      <FIELD NAME="password" TYPE="char" LENGTH="255" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"  COMMENT=""/>
+      <FIELD NAME="publisherid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+      <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+      <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"  COMMENT=""/>
+</FIELDS>
+<KEYS>
+    <KEY NAME="primary" TYPE="primary" FIELDS="id" />
+</KEYS>
+</TABLE>
+
+
+</TABLES>
+</XMLDB>
+

@@ -1,0 +1,48 @@
+========================================
+Change log for qformat_hotpot
+========================================
+
+2019-10-12 (21)
+ - standardize layout and spelling in CHANGES.txt
+
+2018-05-25 (20)
+ - fix URL of secondary zip download site
+
+2018-05-25 (20)
+ - add to <open-text> tags to JCloze XML to account for new behavior of XML parser in Moodle >= 3.5
+
+2017-12-29 (19)
+ - mod_hotpot add composer.json
+
+2017-08-18 (18)
+ - when importing multi-select questions from JQuiz, set negative score for wrong answers in order to match Moodle's grading scheme
+
+2015-10-07 (17)
+ - standardize format of release string in version.php
+
+2014.08.31 (16)
+ - CONTRIB-5274 fix importing of JCloze dropdown with non-ascii chars in gaps
+
+2013.11.30 (15)
+ - detect missing HotPot module in Moodle 2.0 and 2.1
+
+v2.0.14
+ - specified HotPot module in dependencies in version.php
+
+v2.0.13
+ - MDL-38137 fix errant multianswer answer types in Moodle DB
+
+v2.0.11
+ - MDL-38137 force multianswer questions to use UPPERCASE answer type
+
+v2.0.10
+ - Moodle.2x microincrement version number to 2010112410
+
+v2.0.9
+ - Moodle.2x for JMatch set qtype to 'match' instead of obsolete constant MATCH
+ - Moodle.2x replace MULTICHOICE and SHORTANSWER constants with strings
+
+v2.0.8
+ - Moodle.2x small fix of whitespace in readme.txt
+ - fix cvs/git/svn ignore files
+ - Moodle.2x add mod/hotpot and question/format/hotpot

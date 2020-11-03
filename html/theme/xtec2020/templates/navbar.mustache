@@ -1,0 +1,90 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page navbar.
+}}
+<nav class="fixed-top navbar navbar-light bg-white navbar-expand moodle-has-zindex" aria-label="{{#str}}sitemenubar, admin{{/str}}">
+
+        <div data-region="drawer-toggle" class="d-inline-block">
+            <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left btn-light bg-gray" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
+        </div>
+        {{{output.header_logos}}}
+
+        <a href="{{{ config.wwwroot }}}" class="navbar-brand {{# output.should_display_navbar_logo }}has-logo{{/ output.should_display_navbar_logo }}
+            {{^ output.should_display_navbar_logo }}
+                d-none d-sm-inline
+            {{/ output.should_display_navbar_logo }}
+                ">
+            {{# output.should_display_navbar_logo }}
+                <span class="logo d-none d-sm-inline">
+                    <img src="{{output.get_compact_logo_url}}" alt="{{sitename}}">
+                </span>
+            {{/ output.should_display_navbar_logo }}
+            <span class="site-name d-none d-md-inline">{{{ sitename }}}</span>
+        </a>
+
+        <ul class="nav navbar-nav ml-auto">
+            <li class="d-none d-lg-block">
+                {{{ output.search_box }}}
+            </li>
+            <!-- navbar_plugin_output -->
+            <li class="nav-item">
+                {{{ output.navbar_plugin_output }}}
+            </li>
+            <!-- user_menu -->
+            <li class="nav-item d-flex align-items-center">
+                {{{ output.user_menu }}}
+            </li>
+        </ul>
+        <!-- search_box -->
+</nav>
+{{^element.frozen}}
+{{#js}}
+  require(['jquery'], function($) {
+    $(function () {
+      // Hide all submenus
+      $('#main_navigation .nav-item .dropdown-menu ul').css({ display: 'none'});
+      // Store a reference to the currently deployed submenu
+      document.$currentSubMenu = null;
+      // Show the little triangle near items that are submenu headers
+      $('#main_navigation .nav-item .dropdown-item[id]').addClass('dropdown-toggle');
+      // Define the click handler
+      $('#main_navigation .nav-item .dropdown-item').click((ev) => {
+        const id = ev.target.id;
+        if (id) {
+          // Dropdown items with 'id' are submenu headers
+          ev.stopPropagation();
+          ev.preventDefault();
+          // Find the target submenu
+          $targetMenu = $(`ul[aria-labelledby=${id}]`);
+          if ($targetMenu.length) {
+            // Hide the current submenu if not ancestor of the target
+            if (document.$currentSubMenu && !$.contains(document.$currentSubMenu[0], $targetMenu[0]))
+              document.$currentSubMenu.css({ display: 'none' });
+            // Store the current submenu for later reference
+            document.$currentSubMenu = $targetMenu;
+            // Display the submenu
+            $targetMenu.css({ display: 'inherit' });
+          }
+          else
+            console.log('Warning: submenu without items');
+        }
+      });
+    });
+  });
+{{/js}}
+{{/element.frozen}}

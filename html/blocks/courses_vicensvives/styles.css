@@ -1,0 +1,65 @@
+.block_courses_vicensvives .footer {
+    margin-top: 5px;
+}
+
+.vicensvives_courses  {
+    padding: 20px;
+}
+
+table.vicensvives_books {
+    width: 95%;
+}
+
+table.vicensvives_books th {
+    text-align: left;
+}
+
+table.vicensvives_books .vicensvives_actions {
+    text-align: center;
+}
+
+ul.vicensives_newunits {
+    margin-left: 0;
+    list-style: none;
+}
+
+.vicensvives_course {
+    margin: 15px 0;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+}
+
+.vicensvives_course_name {
+    margin: 3px 0;
+    text-align: left;
+}
+
+.vicensvives_course_teachers {
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.vicensvives_course_left {
+    float: left;
+    width: 40%;
+    margin: 5px;
+    font-size: 1em;
+}
+
+.vicensvives_course_right {
+    float: right;
+    width: 55%;
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+#page-blocks-courses_vicensvives-addbook .progress .bar {
+    transition: none !important;
+}
+
+.vicensvives_create_warning {
+    margin-top: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+{
+  "idBook": "573",
+  "fullname": "PRUEBA NUEVO VV - Lengua castellana y Literatura 1 . (Proyecto Zoom)",
+  "shortname": "llil1ect_lomce",
+  "isbn": "978-84-682-3252-2",
+  "authors": "M. M. Canals//J. M. Castellà (coord.)//C. González//D. Serra//M. Torramilans",
+  "idSubject": "LANGUAGE",
+  "idLevel": "f5537222-6787-11e5-8db3-5cf9dd71b632",
+  "lang": "ca",
+  "subject": "lengua",
+  "units": [
+    {
+      "id": "49baf8fd-6643-4736-9154-69c7eee663c7",
+      "name": "Actividades de bienvenida",
+      "sortorder": 0,
+      "label": "0",
+      "lti": {
+        "idnumber": "1207_unit_49baf8fd-6643-4736-9154-69c7eee663c7",
+        "activityName": "Actividades de bienvenida",
+        "launchURL": "http://edubooksso.vicensvivesdigital.com/lti?resource=1207_unit_49baf8fd-6643-4736-9154-69c7eee663c7",
+        "consumerKey": null,
+        "sharedSecret": null,
+        "customParameters": null,
+        "acceptGrades": false,
+        "activityDescription": ""
+      },
+      "sections": []
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page footer.
+}}
+<footer id="page-footer" class="container-fluid pb-3">
+    <div class="row" id="page-footer-top">
+        <div class="col-12 col-sm-3 align-self-end lang-icons">
+            {{{ output.lang_menu }}}
+        </div>
+        <div class="col-12 col-sm-6 text-center">
+            <div id="course-footer">{{{ output.course_footer }}}</div>
+
+            {{# output.page_doc_link }}
+                <p class="helplink">{{{ output.page_doc_link }}}</p>
+            {{/ output.page_doc_link }}
+
+            {{# footnote }}
+                <div class="footnote text-center">{{{ footnote }}}</div>
+            {{/ footnote }}
+
+            {{{ output.login_info }}}
+            <div class="tool_usertours-resettourcontainer"></div>
+            {{{ output.home_link }}}
+            {{{ output.standard_footer_html }}}
+        </div>
+
+        <div class="col-12 col-sm-3 social-icons align-self-end">
+            {{{ output.social_icons }}}
+        </div>
+    </div>
+    <div>
+        <div class="footerlogos text-center mt-3">
+            {{{ output.footer_logos }}}
+        </div>
+        <div id="goto-top-link" class="d-none d-sm-inline">
+            <a href="#top" class="btn btn-light">
+                {{#pix}} i/up, core, {{#str}} totop, theme_xtec2020 {{/str}}{{/pix}}
+            </a>
+        </div>
+        {{{ output.standard_end_of_body_html }}}
+    </div>
+</footer>

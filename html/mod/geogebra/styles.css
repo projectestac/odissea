@@ -1,0 +1,43 @@
+.GeoGebraFrame .AutoCompleteTextFieldW.SymbolCanBeShown .TextField,
+.GeoGebraFrame .AutoCompleteTextFieldW.SymbolCanBeShown.FromDrawTextFieldNew input[type="text"].TextField,
+.GeoGebraFrame input[type="text"].TextField {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+}
+
+.geogebra-activity-solved td {background-color:#DFFFDF!important;}
+.geogebra-activity-unsolved td {background-color:#FFDFDF!important;}
+
+.geogebra-activities-table{margin:20px!important; width:95%;}
+
+#page-mod-geogebra-action-student_results #region-main-box{left:0px!important;}
+
+#dates .title-time{width:150px;float:left;clear:both;}
+#dates .data-time{float:left;}
+#dates.generalbox{height:30px;}
+.geogebradates{margin: 10px;}
+
+#geogebra-summary-all-link {float:left; margin-top:20px;}
+#geogebra-preview-link {float:right; margin-top:20px;}
+
+.summary-row{font-weight: bold;}
+
+.geogebra-session-activities-visible{visibility: visible; ;}
+.geogebra-session-activities-hidden{visibility: hidden; display: none;}
+
+.firstinitial{clear:both; margin-top:30px;}
+.initialbar {text-align: center;}
+
+.pendinggrade{background-color: #FFD991;}
+
+#applet_container>div{
+    margin: 0 auto;
+}
+
+#applet_container {
+    margin: 20px auto;
+    background-image:url([[pix:i/loading_small]]);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
