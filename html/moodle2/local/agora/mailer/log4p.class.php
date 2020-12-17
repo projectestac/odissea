@@ -189,34 +189,17 @@ final class log4p {
                 return false;
             }
         }
-        // Add Filename
-        $outputfile = $savetofilepath.'/mailsender'.$site.'_'.date("Ymd").'.log';
-
-        // Zip old files
-        $site = $site ? '_'.$site : "";
-        $search = $savetofilepath.'/mailsender'.$site.'_'.date("Y", strtotime("-1 day"));
-        foreach (glob($search.'*.log') as $filename) {
-            if ($outputfile != $filename) {
-                // If not is current cron file, zip it
-                $gzfilename = $filename.'.gz';
-                $fp = gzopen ($gzfilename, 'w9');
-                gzwrite ($fp, file_get_contents($filename));
-                gzclose($fp);
-                if (filesize($gzfilename) > 0) {
-                    // If gz file is created, remove unzipped origin file
-                    unlink($filename);
-                }
-            }
-        }
 
         // Erase old files
+        $site = $site ? '_'.$site : "";
         $search = $savetofilepath.'/mailsender'.$site.'_'.date("Ym", strtotime("-2 month"));
-        foreach (glob($search.'*.gz') as $filename) {
+        foreach (glob($search.'*.log') as $filename) {
             unlink($filename);
         }
-
+        // Add Filename
+        $savetofilepath .= '/mailsender'.$site.'_'.date("Ymd").'.log';
         // Open or create log file
-        if (!$file = fopen($outputfile, "a+")) {
+        if (!$file = fopen($savetofilepath, "a+")) {
             $this->add('log4p: file not exits and its imposible to create it', 'WARNING');
             return false;
         }
@@ -228,7 +211,7 @@ final class log4p {
         }
 
         $this->filelogpointer = $file;
-        $this->add('log4p: loaded correctly in '.$outputfile);
+        $this->add('log4p: loaded correctly in '.$savetofilepath);
         return true;
     }
 }

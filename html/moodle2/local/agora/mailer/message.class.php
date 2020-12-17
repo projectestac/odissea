@@ -35,7 +35,7 @@ class message {
     //Define arrays list
     private $allowed_bodyType = array (TEXTPLAIN,
                                        TEXTHTML);
-    private $allowed_in = array ('to',
+    private $alloweb_in = array ('to',
                                  'cc',
                                  'bcc');
     private $error = array('bodyType' => false,
@@ -52,7 +52,7 @@ class message {
      * @param bool   $logdebug ->
      * @param string $logpath  ->
      */
-    function __construct ($bodytype = TEXTPLAIN, $log = false, $logdebug = false, $logpath = '') {
+    function message ($bodytype = TEXTPLAIN, $log = false, $logdebug = false, $logpath = '') {
         $this->logger = ($log)? $this->get_logger($logdebug, $logpath) : false;
 
         $this->set_bodyType($bodytype);
@@ -75,11 +75,23 @@ class message {
      * @param string       $in      -> type of address (to, cc, bcc)
      * @return bool                 -> true if all ok or false if not
      */
-    private function set_address ($address, $in) {
+    private function set_address ($address = null, $in) {
 
         // Check if parameter $to is empty
         if (empty($address)) {
-            $this->add_log('set_address parameter $address is empty', 'WARNING');
+            $this->add_log('set_address parameter $address is empty', 'ERROR');
+            return false;
+        }
+
+        // Check if parameter $in is empty
+        if (empty($in)) {
+            $this->add_log('set_address parameter $in is empty', 'ERROR');
+            return false;
+        }
+
+        // Check if parameter $in is in the alloweb list
+        if (!in_array($in, $this->alloweb_in)) {
+            $this->add_log('set_address parameter $in is not alloweb', 'ERROR');
             return false;
         }
 
@@ -115,12 +127,12 @@ class message {
         $email = trim($email);
 
         if (empty($email)) {
-            $this->add_log('Found empty address', 'WARNING');
+            $this->add_log('Found empty address', 'ERROR');
             return false;
         }
 
         if (substr($email, -8) == '.invalid') {
-            $this->add_log('Found .invalid address', 'WARNING');
+            $this->add_log('Found .invalid address', 'ERROR');
             return false;
         }
 
@@ -143,7 +155,7 @@ class message {
         }
 
         // Check if parameter $in is in the alloweb list
-        if (!in_array($in, $this->allowed_in)) {
+        if (!in_array($in, $this->alloweb_in)) {
             $this->add_log('get_address parameter $in is not alloweb', 'ERROR');
             return false;
         }
@@ -447,7 +459,7 @@ class message {
 
         try {
             return log4p::instance(true, $path, $debug);
-        } catch (Throwable $e) {
+        } catch (Exception $e) {
             debugging('ERROR: Cannot initialize apligestlogger, there won\'t be any log.');
             debugging($e->getMessage());
         }
