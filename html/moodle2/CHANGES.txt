@@ -3,6 +3,12 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+
+Changes 21.01.07
+---------------------------------------------------------------------------------------
+- xtec-mailer: Moved bus to FMO server
+
+
 Changes 20.06.17
 ---------------------------------------------------------------------------------------
 - Message: Show old message UI and allow access to all messages
