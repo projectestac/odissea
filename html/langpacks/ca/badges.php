@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'ca', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,47 +29,59 @@ $string['actions'] = 'Accions';
 $string['activate'] = 'Activa l\'accés';
 $string['activatesuccess'] = 'S\'ha activat correctament l\'accés a les insígnies.';
 $string['addalignment'] = 'Afegeix una competència externa o un estàndard';
+$string['addbackpack'] = 'Afegeix una motxilla';
 $string['addbadge'] = 'Afegeix una insígnia';
+$string['addbadge_help'] = 'Seleccioneu totes les insígnies que s\'han d\'afegir als requisits d\'aquesta insígnia. Premeu la tecla CTRL per seleccionar múltiples elements.';
 $string['addbadgecriteria'] = 'Afegeix un criteri per la insígnia';
 $string['addcohort'] = 'Afegeix una cohort';
+$string['addcohort_help'] = 'Seleccioneu totes les cohorts que s\'han d\'afegir als requisits d\'aquesta insígnia. Premeu la tecla CTRL per seleccionar múltiples elements.';
+$string['addcompetency'] = 'Afegeix una competència';
+$string['addcompetency_help'] = 'Seleccioneu totes les competències que s\'han d\'afegir als requisits d\'aquesta insígnia. Premeu la tecla CTRL per seleccionar múltiples elements.';
 $string['addcourse'] = 'Afegeix cursos';
 $string['addcourse_help'] = 'Seleccioneu tots els cursos que haurien d\'afegir-se al requeriment d\'aquesta insígnia. Premeu la tecla CTRL per seleccionar diversos elements.';
 $string['addcriteria'] = 'Afegeix criteri';
 $string['addcriteriatext'] = 'Per començar a afegir criteris cal que seleccioneu una de les opcions del menú desplegable.';
+$string['addedtobackpack'] = 'S\'ha afegit la insígnia a la motxilla';
+$string['addrelated'] = 'Afegeix una insígnia relacionada';
 $string['addtobackpack'] = 'Afegeix a la motxilla';
 $string['adminonly'] = 'Aquesta pàgina està restringida als administradors del lloc.';
 $string['after'] = 'després de la data de lliurament.';
 $string['aggregationmethod'] = 'Mètode d\'agregació';
-$string['alignment'] = 'Competència';
+$string['alignment'] = 'Alineació';
 $string['all'] = 'Tot';
 $string['allmethod'] = 'Totes les condicions seleccionades coincideixen';
 $string['allmethodactivity'] = 'S\'han completat totes les activitats seleccionades';
+$string['allmethodbadges'] = 'S\'han obtingut totes les insígnies seleccionades';
+$string['allmethodcohort'] = 'Membre a totes les cohorts seleccionades';
+$string['allmethodcompetencies'] = 'S\'han assolit totes les competències seleccionades';
 $string['allmethodcourseset'] = 'S\'han completat tots els cursos seleccionats';
 $string['allmethodmanual'] = 'Tots els rols seleccionats han de concedir la insígnia';
 $string['allmethodprofile'] = 'S\'han completat tots els camps del perfil seleccionats';
 $string['allowcoursebadges'] = 'Activa les insígnies del curs';
 $string['allowcoursebadges_desc'] = 'Permet crear i concedir insígnies en el context del curs.';
-$string['allowexternalbackpack'] = 'Activa la connexió amb motxilles externes';
-$string['allowexternalbackpack_desc'] = 'Permet als usuaris configurar connexions i mostrar les insígnies de les motxilles dels seus proveïdors externs.
-
-Nota: Es recomana no activar aquesta opció si no es pot accedir al lloc web des d\'Internet (p. ex., perquè hi ha un tallafoc activat).';
+$string['allowexternalbackpack'] = 'Connexió amb motxilles externes';
+$string['allowexternalbackpack_desc'] = 'Si està activat, els usuaris es poden connectar a una motxilla externa i compartir les seves insígnies des d\'aquest lloc. Els usuaris també poden optar per mostrar qualsevol col·lecció d\'insígnies públiques de la motxilla externa a la pàgina del perfil d\'aquest lloc. Es recomana deixar aquesta opció desactivada si el vostre lloc no és accessible des d\'Internet.';
 $string['any'] = 'Qualsevol';
 $string['anymethod'] = 'Es compleix qualsevol de les condicions seleccionades';
 $string['anymethodactivity'] = 'S\'ha completat qualsevol de les activitats seleccionades';
+$string['anymethodbadges'] = 'S\'ha obtingut qualsevol de les insígnies seleccionades';
 $string['anymethodcohort'] = 'Membres de qualsevol de les cohorts seleccionades';
+$string['anymethodcompetencies'] = 'S\'ha assolit qualsevol de les competències seleccionades';
 $string['anymethodcourseset'] = 'S\'ha completat qualsevol dels cursos seleccionats';
 $string['anymethodmanual'] = 'Qualsevol dels rols seleccionats pot concedir la insígnia.';
 $string['anymethodprofile'] = 'S\'ha completat qualsevol dels camps del perfil seleccionats';
+$string['apiversion'] = 'Versió admesa de l\'API';
 $string['archivebadge'] = 'Voleu suprimir la insígnia \'{$a}\', però mantenir les insígnies existents ja emeses?';
 $string['archiveconfirm'] = 'Suprimeix i manté les insígnies existents ja emeses.';
 $string['archivehelp'] = '<p> Aquesta opció significa que la insígnia ha estat marcada com a "retirada" i no apareixerà a la llista d\'insígnies. Els usuaris ja no podran guanyar aquesta insígnia, però els que l\'hagin rebuda anteriorment continuaran mostrant-la en les seves pàgines de perfil i podran promoure-la a les seves motxilles externes.</p>
 <p>Si voleu que els vostres estudiants conservin l\'accés a les insígnies que hagin guanyat, és important seleccionar aquesta opció en lloc de suprimir totalment les insígnies.</p>';
 $string['attachment'] = 'Adjunta la insígnia al missatge';
-$string['attachment_help'] = 'Si s\'habilita, s\'adjuntarà un fitxer amb la insígnia lliurada al missatge de correu perquè el destinatari la pugui descarregar. (Per poder usar aquesta caractarística cal que els fitxers adjunts estiguin permesos a Administració del lloc > Connectors > Missatges sortints > Correu electrònic.)';
+$string['attachment_help'] = 'Si està activat, s\'adjuntarà la insígnia emesa al correu electrònic del destinatari per descarregar-la. (Els fitxers adjunts han d\'estar habilitats a Administració del lloc / Servidor / Correu electrònic / Configuració del correu de sortida per utilitzar aquesta opció.)';
 $string['award'] = 'Insígnia guanyada';
 $string['awardedtoyou'] = 'Insígnies que m\'han donat';
 $string['awardoncron'] = 'S\'ha activat correctament l\'accés a les insígnies. Però hi ha massa usuaris que poden guanyar al mateix temps aquesta insígnia. Per assegurar el bon funcionament del lloc aquesta acció trigarà una mica a completar-se.';
 $string['awards'] = 'Destinataris';
+$string['backpackapiurl'] = 'URL de l\'API de la motxilla';
 $string['backpackavailability'] = 'Verificació d\'una insígnia externa';
 $string['backpackavailability_help'] = 'Per tal que els guanyadors de les insígnies puguin demostrar que les hi heu donat, cal que un servei extern de motxilles pugui accedir al vostre lloc i verificar les insígnies emeses. Sembla que ara mateix el vostre lloc no és accessible, i, en conseqüència, no es podran verificar les insígnies que ja heu donat o que donareu en el futur.
 
@@ -85,15 +97,18 @@ Si teniu planejat lliurar insígnies des d\'un lloc en producció, haureu de sol
 
 L\'únic URL necessari per la verificació és [URL-del-lloc]/badges/assertion.php, així que, si podeu modificar el tallafoc per tal de permetre l\'accés extern a aquest fitxer, la verificació podrà funcionar.';
 $string['backpackbadges'] = 'Es mostren {$a->totalbadges} insígnia(es) de {$a->totalcollections} col·lecció(ons). <a href="mybackpack.php">Canvia la configuració de la motxilla</a>.';
+$string['backpackbadgessettings'] = 'Canvia la configuració de la motxilla';
+$string['backpackbadgessummary'] = 'Teniu {$a->totalbadges} insígnia(es) que es mostra(en) a partir de {$a->totalcollections} col·lecció(ons).';
 $string['backpackcannotsendverification'] = 'No es pot enviar un correu de verificació';
 $string['backpackconnection'] = 'Connexió a la motxilla';
+$string['backpackconnection_help'] = 'Connectar-vos a una motxilla us permetrà compartir les vostres insígnies des d\'aquest lloc i mostrar col·leccions d\'insígnies públiques de la vostra motxilla a la pàgina del perfil d\'aquest lloc.';
 $string['backpackconnectioncancelattempt'] = 'Connecta utilitzant una adreça de correu diferent';
 $string['backpackconnectionconnect'] = 'Connecta a la motxilla';
-$string['backpackconnection_help'] = 'Aquesta pàgina us permet configurar la connexió a un proveïdor extern de motxilles. Si us hi connecteu, podreu mostrar insígnies externes en aquest lloc i pujar a la motxilla les insígnies que guanyeu aquí.
-
-Actualment només s\'admet per a la motxilla de Mozilla la <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>. Cal que us  registreu en aquest servei de motxilles abans de provar d\'establir la connexió des d\'aquesta pàgina.';
+$string['backpackconnectionnottested'] = 'La connexió no es pot provar per a aquesta motxilla perquè només les motxilles Open Badges v2.0 ho admeten.';
+$string['backpackconnectionok'] = 'La connexió a la motxilla s\'ha establert correctament';
 $string['backpackconnectionresendemail'] = 'Torna a enviar el correu de verificació';
-$string['backpackconnectionunexpectedresult'] = 'Hi ha hagut un problema en connectar amb la vostra motxilla. Torneu a intentar-ho. <br><br>Si el problema persisteix, contacteu amb el vostre administrador.';
+$string['backpackconnectionunexpectedmessage'] = 'La motxilla ha retornat l\'error: "{$a}".';
+$string['backpackconnectionunexpectedresult'] = 'Hi ha hagut un problema en connectar a la motxilla. Si us plau, comproveu les credencials i torneu-ho a provar.';
 $string['backpackdetails'] = 'Configuració de la motxilla';
 $string['backpackemail'] = 'Adreça de correu';
 $string['backpackemail_help'] = 'Adreça electrònica associada a la vostra motxilla.
@@ -101,16 +116,17 @@ Mentre esteu connectat, qualsevol insígnia guanyada en aquest lloc quedarà ass
 $string['backpackemailverificationpending'] = 'Pendent de verificació';
 $string['backpackemailverifyemailbody'] = 'Hola,
 
-S\'ha sol·licitat una connexió a la vostra motxilla d\'OpenBadges des de «{$a->sitename}» utilitzant la vostra adreça de correu electrònic.
+S\'ha sol·licitat una connexió nova a la vostra motxilla d\'insígnies des de «{$a->sitename}» mitjançant la vostra adreça de correu electrònic.
 
-Per confirmar i activar la connexió amb la vostra motxilla, aneu a
+Per confirmar i activar la connexió a la motxilla, aneu a
 
 {$a->link}
 
-En la majoria de clients de correu, hauria d\'aparèixer un enllaç blau on podeu fer clic. Si això no funciona, copieu i enganxeu l\'adreça a la barra d\'adreces a la part superior del navegador.
+A la majoria de programes de correu electrònic, hauria d\'aparèixer com un enllaç blau al qual podeu fer clic. Si això no funciona, retalleu i enganxeu l\'adreça a la línia d\'adreces a la part superior del vostre navegador web.
 
-Si necessiteu ajuda, contacteu amb l\'administrador del lloc, {$a->admin}';
-$string['backpackemailverifyemailsubject'] = '{$a}: verificació del correu de la motxilla d\'OpenBadges';
+Si us cal ajuda poseu-vos en contacte amb l\'administrador del lloc,
+{$a->admin}';
+$string['backpackemailverifyemailsubject'] = '{$a}: Verificació del correu electrònic de la motxilla de les insígnies';
 $string['backpackemailverifypending'] = 'S\'ha enviat un correu de verificació a <strong>{$a}</strong>. Feu clic sobre l\'enllaç de verificació del correu per tal d\'activar la connexió a la vostra motxilla.';
 $string['backpackemailverifysuccess'] = 'Gràcies per verificar la vostra adreça de correu electrònic. Ja esteu connectats a la vostra motxilla.';
 $string['backpackemailverifytokenmismatch'] = 'El testimoni (<em>token</em>) de l\'enllaç on heu fet clic no coincideix amb el testimoni desat. Assegureu-vos que heu fet clic a l\'enllaç del correu més recent que heu rebut.';
@@ -118,6 +134,9 @@ $string['backpackimport'] = 'Configuració de la importació d\'insígnies';
 $string['backpackimport_help'] = 'Un cop s\'hagi establert correctament la connexió amb la motxilla, les insígnies de la vostra motxilla es podran veure a la pàgina «Les meves insígnies» i a la del vostre perfil.
 
 En aquesta àrea podeu seleccionar les col·leccions d\'insígnies de la vostra motxilla que voleu mostrar al vostre perfil.';
+$string['backpackneedsupdate'] = 'La motxilla connectada a aquest perfil no coincideix amb la motxilla del lloc. Cal desconnectar i tornar a connectar la motxilla.';
+$string['backpacksettings'] = 'Paràmetres de la motxilla';
+$string['backpackweburl'] = 'URL de la motxilla';
 $string['badgedetails'] = 'Detalls de la insígnia';
 $string['badgeimage'] = 'Imatge';
 $string['badgeimage_help'] = 'Aquesta és una imatge que s\'utilitzarà quan s\'emeti aquesta insígnia.
@@ -143,7 +162,7 @@ $string['badgestatus_4'] = 'Arxivat';
 $string['badgestoearn'] = 'Nombre d\'insígnies disponibles: {$a}';
 $string['badgesview'] = 'Insígnies del curs';
 $string['badgeurl'] = 'Enllaç d\'insígnia emès';
-$string['balignment'] = 'Competències ({$a})';
+$string['balignment'] = 'Alineacions ({$a})';
 $string['bawards'] = 'Destinataris ({$a})';
 $string['bcriteria'] = 'Criteris';
 $string['bdetails'] = 'Edita els detalls';
@@ -158,7 +177,7 @@ $string['claimid'] = 'URL de reclamació';
 $string['clearsettings'] = 'Suprimeix l\'arranjament';
 $string['completioninfo'] = 'Aquesta insígnia es va emetre per completar:';
 $string['completionnotenabled'] = 'La compleció del curs no està habilitada per a aquest curs, per la qual cosa no es pot incloure en els criteris de les insígnies. La compleció del curs es pot activar des de la configuració del curs.';
-$string['configenablebadges'] = 'Quan està activada, aquesta característica us permet crear insígnies i concedir-les als usuaris del lloc.';
+$string['configenablebadges'] = 'Si està activada, aquesta funcionalitat us permet crear insígnies i atorgar-les als usuaris del lloc.';
 $string['configuremessage'] = 'Missatge de la insígnia';
 $string['connect'] = 'Connecta';
 $string['connected'] = 'Connectat';
@@ -187,9 +206,11 @@ $string['criteria_5_help'] = 'Permet concedir una insígnia als usuaris que hagi
 $string['criteria_6'] = 'Compleció del perfil';
 $string['criteria_6_help'] = 'Permet concedir una insígnia als usuaris que hagin completat determinats camps en el seu perfil. Podeu triar entre els camps de perfil personalitzats que estan disponibles per als usuaris per defecte.';
 $string['criteria_7'] = 'Insígnies guanyades';
+$string['criteria_7_help'] = 'Permet atorgar una insígnia als usuaris en funció d\'altres insígnies que hagin obtingut.';
 $string['criteria_8'] = 'Membres de la cohort';
-$string['criteriacreated'] = 'Els criteris de la insígnia s\'han creat amb èxit.';
-$string['criteriadeleted'] = 'Els criteris de la insígnia s\'han esborrat amb èxit.';
+$string['criteria_8_help'] = 'Permet atorgar una insígnia als usuaris en funció de la pertinença a la cohort.';
+$string['criteria_9'] = 'Competències';
+$string['criteria_9_help'] = 'Permet atorgar una insígnia als usuaris en funció de les competències que hagin assolit.';
 $string['criteria_descr'] = 'Els usuaris guanyaran aquesta insígnia quan completin el següent requisit:';
 $string['criteria_descr_0'] = 'Els usuaris guanyaran aquesta insígnia quan completin <strong>{$a}</strong>  de la llista de requisits.';
 $string['criteria_descr_1'] = 'S\'han completat <strong>{$a}</strong> de les següents activitats:';
@@ -197,6 +218,9 @@ $string['criteria_descr_2'] = 'Aquesta insígnia la concediran els usuaris amb <
 $string['criteria_descr_4'] = 'Els usuaris han de completar el curs.';
 $string['criteria_descr_5'] = 'S\'han de completar <strong>{$a}</strong> dels següents cursos:';
 $string['criteria_descr_6'] = 'S\'han de completar <strong>{$a}</strong> dels següents camps del perfil d\'usuari:';
+$string['criteria_descr_7'] = 'S\'han de guanyar <strong>{$a}</strong> de les insígnies següents:';
+$string['criteria_descr_8'] = 'Es requereix la pertinença a <strong>{$a}</strong> de les cohorts següents:';
+$string['criteria_descr_9'] = 'S\'han d\'assolir <strong>{$a}</strong> de les competències següents:';
 $string['criteria_descr_bydate'] = 'per <em>{$a}</em>';
 $string['criteria_descr_grade'] = 'amb la qualificació mínima de <em>{$a}</em>';
 $string['criteria_descr_short0'] = 'Completeu <strong>{$a}</strong> de:';
@@ -205,17 +229,27 @@ $string['criteria_descr_short2'] = 'Concedida per <strong>{$a}</strong> de:';
 $string['criteria_descr_short4'] = 'Completeu el curs';
 $string['criteria_descr_short5'] = 'Completeu <strong>{$a}</strong> de:';
 $string['criteria_descr_short6'] = 'Completeu <strong>{$a}</strong> de:';
+$string['criteria_descr_short7'] = 'Completades <strong>{$a}</strong> de:';
+$string['criteria_descr_short8'] = 'Membre de <strong>{$a}</strong> cohorts de:';
+$string['criteria_descr_short9'] = 'Assolides <strong>{$a}</strong> de:';
 $string['criteria_descr_single_1'] = 'S\'ha de completar l\'activitat següent:';
 $string['criteria_descr_single_2'] = 'Aquesta insígnia la concediran els usuaris amb el rol següent:';
 $string['criteria_descr_single_4'] = 'Els usuaris han de completar el curs';
 $string['criteria_descr_single_5'] = 'S\'ha de completar el següent curs:';
 $string['criteria_descr_single_6'] = 'S\'ha de completar el següent camp del perfil d\'usuari:';
+$string['criteria_descr_single_7'] = 'Cal guanyar la insígnia següent:';
+$string['criteria_descr_single_8'] = 'Es requereix pertànyer a la cohort següent:';
+$string['criteria_descr_single_9'] = 'S\'han d\'assolir les competències següents:';
 $string['criteria_descr_single_short1'] = 'Completeu:';
 $string['criteria_descr_single_short2'] = 'Guardonat per:';
 $string['criteria_descr_single_short4'] = 'Completeu el curs';
 $string['criteria_descr_single_short5'] = 'Completeu:';
 $string['criteria_descr_single_short6'] = 'Completeu:';
 $string['criteria_descr_single_short7'] = 'Acabat:';
+$string['criteria_descr_single_short8'] = 'Membre de:';
+$string['criteria_descr_single_short9'] = 'Assolides:';
+$string['criteriacreated'] = 'Els criteris de la insígnia s\'han creat amb èxit.';
+$string['criteriadeleted'] = 'Els criteris de la insígnia s\'han esborrat amb èxit.';
 $string['criteriasummary'] = 'Resum de criteris';
 $string['criteriaupdated'] = 'Els criteris de la insígnia s\'han actualitzat amb èxit.';
 $string['criterror'] = 'Paràmetres de les característiques actuals';
@@ -227,10 +261,12 @@ $string['dateearned'] = 'Data: {$a}';
 $string['day'] = 'Dia (dies)';
 $string['deactivate'] = 'Inhabilita l\'accés';
 $string['deactivatesuccess'] = 'L\'accés a les insígnies s\'ha desactivat amb èxit.';
-$string['defaultissuercontact'] = 'Dades de contacte de l\'emissor de la insígnia per defecte';
-$string['defaultissuercontact_desc'] = 'Una adreça electrònica associada a l\'entitat emissora de la insígnia.';
-$string['defaultissuername'] = 'Nom de l\'emissor de la insígnia per defecte';
+$string['defaultissuercontact'] = 'Adreça electrònica de l\'emissor de la insígnia';
+$string['defaultissuercontact_desc'] = 'Una adreça electrònica associada a l\'emissor de la insígnia. En una motxilla Open Badges v2.0, s\'utilitza per a l\'autenticació quan es publiquen insígnies a una motxilla.';
+$string['defaultissuername'] = 'Nom de l\'emissor de la insígnia';
 $string['defaultissuername_desc'] = 'Nom de l\'autoritat que l\'expedeix.';
+$string['defaultissuerpassword'] = 'Contrasenya de l\'emissor de la insígnia';
+$string['defaultissuerpassword_help'] = 'Es requereix un compte al lloc de la motxilla amb l\'adreça de correu electrònic tal com s\'especifica a la configuració de l\'adreça de correu electrònic de l\'emissor de la insígnia a Administració del lloc / Insígnies / Configuració de les insígnies. La contrasenya del compte s\'ha d\'introduir aquí.';
 $string['delbadge'] = 'Voleu suprimir la insígnia \'{$a}\'  i eliminar les insígnies ja emeses?';
 $string['delconfirm'] = 'Esteu segur que voleu suprimir la insígnia \'{$a}\' i eliminar les insígnies ja emeses?';
 $string['delcritconfirm'] = 'Confirmeu que voleu suprimir aquest criteri?';
@@ -238,12 +274,14 @@ $string['deletehelp'] = '<p>Suprimir completament una insígnia vol dir que tots
 <p>
 Nota: Els usuaris que hagin guanyat aquesta insígnia i l\'hagin promoguda a la seva motxilla externa, conservaran aquesta insígnia en la motxilla externa. No obstant això, no funcionaran els enllaços a les pàgines de criteris i evidències en aquest lloc web.
 </p>';
+$string['delexternalbackpackconfirm'] = 'Voleu suprimir la motxilla del lloc «{$a}»?';
 $string['delparamconfirm'] = 'Confirmeu que voleu suprimir aquest paràmetre?';
 $string['description'] = 'Descripció';
 $string['disconnect'] = 'Desconnecta';
 $string['donotaward'] = 'Actualment, aquesta insígnia no està activa, per la qual cosa no es pot concedir als usuaris. Si voleu atorgar aquesta insígnia, configureu el seu estat a actiu.';
 $string['editsettings'] = 'Edita els paràmetres';
 $string['enablebadges'] = 'Habilita les insígnies';
+$string['endorsement'] = 'Aval';
 $string['error:backpackdatainvalid'] = 'Les dades retornades pel servei de motxilla no són vàlides.';
 $string['error:backpackemailnotfound'] = 'L\'adreça electrònica «{$a}» no està associada a cap motxilla. Us cal <a href="http://backpack.openbadges.org">crear una motxilla</a> per a aquest compte o bé iniciar la sessió amb una altra adreça electrònica.';
 $string['error:backpacknotavailable'] = 'El vostre lloc no és accessible a través d\'Internet, per la qual cosa les insígnies emeses per aquest lloc no podran verificar-se pels serveis de motxilla externs.';
@@ -263,6 +301,7 @@ $string['error:invalidbadgeurl'] = 'El format d\'URL de l\'emissor de la insígn
 $string['error:invalidcriteriatype'] = 'Tipus de criteri invàlid.';
 $string['error:invalidexpiredate'] = 'La data de caducitat ha d\'estar en el futur.';
 $string['error:invalidexpireperiod'] = 'El període de caducitat no pot ser negatiu o igual a zero.';
+$string['error:invalidparambadge'] = 'La insígnia no existeix.';
 $string['error:invalidparamcohort'] = 'La cohort no existeix.';
 $string['error:noactivities'] = 'No hi ha activitats amb els criteris de compleció habilitats en aquest curs.';
 $string['error:nocohorts'] = 'No hi ha cap cohort';
@@ -313,6 +352,7 @@ $string['externalbadges_help'] = 'Aquesta àrea mostra insígnies de la vostra m
 $string['externalbadgesp'] = 'Insígnies d\'altres llocs web:';
 $string['externalconnectto'] = 'Per mostrar les insígnies externes necessiteu <a href="{$a}">connectar-vos a una motxilla</a>.';
 $string['fixed'] = 'Data fixa';
+$string['hidden'] = 'Oculta';
 $string['hiddenbadge'] = 'Malauradament, el propietari de la insígnia no ha fet disponible aquesta informació.';
 $string['imageauthoremail'] = 'Correu de l\'autor de la imatge';
 $string['imageauthorname'] = 'Nom de l\'autor de la imatge';
@@ -338,8 +378,8 @@ $string['makeprivate'] = 'Fes privada';
 $string['makepublic'] = 'Fes pública';
 $string['managebadges'] = 'Gestiona les insígnies';
 $string['message'] = 'Cos del missatge';
-$string['messagebody'] = '<p>Heu guanyat una insígnia "%badgename%"!</p>
-<p>Podeu trobar més informació sobre aquesta insígnia a la pàgina %badgelink%.</p>
+$string['messagebody'] = '<p>Heu guanyat una insígnia "%badgename%"! </p>
+<p>Podeu trobar més informació sobre aquesta insígnia a la pàgina %badgelink%. </p>
 <p>Podeu gestionar i descarregar la insígnia des de la vostra pàgina {$a}.</p>';
 $string['messagesubject'] = 'Enhorabona! Heu guanyat una insígnia!';
 $string['method'] = 'Aquest criteri es completa quan...';

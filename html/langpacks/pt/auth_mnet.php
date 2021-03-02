@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,30 +12,31 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_mnet', language 'pt', version '3.8'.
  *
- * @package   auth_mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_mnet_auto_add_remote_users'] = 'Se escolher "SIM", será criado automaticamente um registo de utilizador local sempre que um utilizador remoto entrar pela primeira vez.';
-$string['auth_mnetdescription'] = 'Os utilizadores são autenticados de acordo com a Rede de confiança estabelecida na sua configuração da Rede Moodle.';
 $string['auth_mnet_roamin'] = 'Os utilizadores registados nos servidores desta lista terão acesso a este site';
 $string['auth_mnet_roamout'] = 'Os utilizadores deste site poderão aceder remotamente aos seguintes servidores';
 $string['auth_mnet_rpc_negotiation_timeout'] = 'O tempo em segundos para autenticação sobre o transporte XMLRPC.';
+$string['auth_mnetdescription'] = 'Os utilizadores são autenticados de acordo com a Rede de confiança estabelecida na sua configuração da Rede Moodle.';
 $string['auto_add_remote_users'] = 'Adicionar automaticamente utilizadores remotos';
 $string['crontask'] = 'Processamento em segundo plano da autenticação MNET';
 $string['pluginname'] = 'Rede Moodle';
 $string['privacy:metadata:external:mahara'] = 'Este módulo consegue enviar dados externamente para uma ligação da aplicação Mahara.';
 $string['privacy:metadata:external:moodle'] = 'Este módulo consegue enviar dados externamente para uma ligação da Aplicação móvel Moodle.';
 $string['privacy:metadata:mnet_external:address'] = 'A morada do utilizador.';
-$string['privacy:metadata:mnet_external:aim'] = 'O identificador AIM do utilizador.';
+$string['privacy:metadata:mnet_external:aim'] = 'O identificador AIM do utilizador';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Um nome alternativo para o utilizador.';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'A preferência em se o utilizador deve ser subscrito automaticamente nos fóruns em que cria tópicos.';
 $string['privacy:metadata:mnet_external:calendartype'] = 'A preferência de utilizador para o tipo de calendário a usar.';

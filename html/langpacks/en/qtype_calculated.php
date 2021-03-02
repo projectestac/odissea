@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculated', language 'en', version '3.8'.
  *
- * @package   qtype_calculated
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculated
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -111,10 +111,10 @@ $string['oneanswertrueansweroutsidelimits'] = 'At least one correct answer outsi
 $string['param'] = 'Param {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'For any partially correct response';
 $string['pluginname'] = 'Calculated';
-$string['pluginnameadding'] = 'Adding a Calculated question';
-$string['pluginnameediting'] = 'Editing a Calculated question';
 $string['pluginname_help'] = 'Calculated questions enable individual numerical questions to be created using wildcards in curly brackets that are substituted with individual values when the quiz is taken. For example, the question "What is the area of a rectangle of length {l} and width {w}?" would have correct answer formula "{l}*{w}" (where * denotes multiplication).';
 $string['pluginname_link'] = 'question/type/calculated';
+$string['pluginnameadding'] = 'Adding a Calculated question';
+$string['pluginnameediting'] = 'Editing a Calculated question';
 $string['pluginnamesummary'] = 'Calculated questions are like numerical questions but with the numbers used selected randomly from a set when the quiz is taken.';
 $string['possiblehdr'] = 'Possible wild cards present only in the question text';
 $string['privacy:metadata'] = 'The Calculated question type plugin does not store any personal data.';

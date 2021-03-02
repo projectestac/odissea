@@ -29,6 +29,9 @@ class com_wiris_util_type_StringUtils {
 	static function compareIgnoringAccents($a, $b) {
 		return com_wiris_util_type_StringUtils::stripAccents($a) === com_wiris_util_type_StringUtils::stripAccents($b);
 	}
+	static function contains($a, $b) {
+		return _hx_index_of($a, $b, null) !== -1;
+	}
 	static function slice($s, $beginIndex, $endIndex) {
 		$stringLength = strlen($s);
 		if($beginIndex < 0) {
@@ -74,6 +77,31 @@ class com_wiris_util_type_StringUtils {
 			unset($nb);
 		}
 		return 0;
+	}
+	static function append($a, $b) {
+		return $a . $b;
+	}
+	static function replaceFirstOccurrence($s, $target, $replacement) {
+		if($s === null || $s === "") {
+			return $s;
+		}
+		return com_wiris_util_type_StringUtils::replaceOccurrenceImpl($s, $target, $replacement, _hx_index_of($s, $target, null));
+	}
+	static function replaceLastOccurrence($s, $target, $replacement) {
+		if($s === null || $s === "") {
+			return $s;
+		}
+		return com_wiris_util_type_StringUtils::replaceOccurrenceImpl($s, $target, $replacement, _hx_last_index_of($s, $target, null));
+	}
+	static function replaceOccurrenceImpl($s, $target, $replacement, $pos) {
+		if($pos === -1) {
+			return $s;
+		}
+		$sb = new StringBuf();
+		$sb->b .= _hx_substr($s, 0, $pos);
+		$sb->add($replacement);
+		$sb->b .= _hx_substr($s, $pos + strlen($target), strlen($s) - $pos - strlen($target));
+		return $sb->b;
 	}
 	function __toString() { return 'com.wiris.util.type.StringUtils'; }
 }

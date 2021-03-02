@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'fr', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -71,7 +71,6 @@ $string['privacy:metadata:grading_definitions:timecreated'] = 'La date et l\'heu
 $string['privacy:metadata:grading_definitions:timemodified'] = 'La date et l\'heure de la dernière modification de la définition d\'évaluation.';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'L\'identifiant de l\'utilisateur qui a créé la définition d\'évaluation.';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'L\'identifiant de l\'utilisateur qui a modifié la définition d\'évaluation pour la dernière fois.';
-$string['privacy:metadata:gradingformpluginsummary'] = 'Données de la méthode d\'évaluation.';
 $string['privacy:metadata:grading_instances'] = 'Enregistrement d\'évaluation pour un élément évaluable, évalué par un évaluateur.';
 $string['privacy:metadata:grading_instances:feedback'] = 'Le feedback de l\'utilisateur.';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'Le format de texte du feedback de l\'utilisateur.';
@@ -79,6 +78,7 @@ $string['privacy:metadata:grading_instances:raterid'] = 'L\'identifiant de l\'ut
 $string['privacy:metadata:grading_instances:rawgrade'] = 'La note de l\'instance d\'évaluation.';
 $string['privacy:metadata:grading_instances:status'] = 'Le statut de cette instance d\'évaluation.';
 $string['privacy:metadata:grading_instances:timemodified'] = 'La date et l\'heure de la dernière modification de cette instance d\'évaluation.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Données de la méthode d\'évaluation.';
 $string['searchownforms'] = 'Inclure mes propres formulaires';
 $string['searchtemplate'] = 'Recherche de formulaires d\'évaluation';
 $string['searchtemplate_help'] = 'Vous pouvez rechercher un formulaire d\'évaluation et l\'utiliser comme modèle pour créer un nouveau formulaire. Tapez de simples mots sensés apparaître dans le formulaire cherché ou dans sa description. Pour rechercher une phrase, tapez le texte entre des guillemets droits.

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,64 +12,75 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradingform_rubric', language 'sv', version '3.8'.
  *
- * @package   gradingform_rubric
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradingform_rubric
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'Lägg till kriterium';
-$string['alwaysshowdefinition'] = 'Tillåt användare att förhandsgranska rubriken som används i modulen (annars visas rubriken endast  efterbetygsättning)';
+$string['additionalfeedback'] = 'Ytterligare återkoppling';
+$string['alwaysshowdefinition'] = 'Tillåt användare att förhandsgranska bedömningsmatrisen som används i modulen (annars visas matrisen endast efter betygsättning)';
 $string['backtoediting'] = 'Tillbaka till redigering';
-$string['confirmdeletecriterion'] = 'Är du säker på att du vill ta bort detta kriterium?';
-$string['confirmdeletelevel'] = 'Är du säker på att du vill ta bort den här nivån?';
+$string['confirmdeletecriterion'] = 'Är du säker på att du vill radera detta kriterium?';
+$string['confirmdeletelevel'] = 'Är du säker på att du vill radera denna nivån?';
+$string['criterion'] = 'Kriterium {$a}';
 $string['criterionaddlevel'] = 'Lägg till nivå';
 $string['criteriondelete'] = 'Ta bort kriterium';
-$string['criterionempty'] = 'Välj för att redigera kriterium';
-$string['criterionmovedown'] = 'Flytta ner';
+$string['criterionduplicate'] = 'Duplicera kriterium';
+$string['criterionempty'] = 'Klicka här för att redigera kriterium';
+$string['criterionmovedown'] = 'Flytta ned';
 $string['criterionmoveup'] = 'Flytta upp';
-$string['definerubric'] = 'Definiera rubrik';
+$string['criterionremark'] = 'Kommentar för kriterium {$a->description}: {$a->remark}';
+$string['definerubric'] = 'Definiera bedömningsmatris';
 $string['description'] = 'Beskrivning';
-$string['enableremarks'] = 'Tillåt betygssättare att lägga till kommentarer för varje kriterium';
+$string['enableremarks'] = 'Tillåt betygsättare att lägga till kommentarer vid varje kriterium';
 $string['err_mintwolevels'] = 'Varje kriterium måste innehålla minst två nivåer';
-$string['err_nocriteria'] = 'Rubrik måste innehålla minst en kriterium';
-$string['err_nodefinition'] = 'Definition av nivå kan inte vara tomt';
-$string['err_nodescription'] = 'Definition av kriterium kan inte vara tomt';
-$string['err_scoreformat'] = 'Antal poäng för varje nivå måste vara en giltig icke-negativt tal';
-$string['err_totalscore'] = 'Maximalt antal möjliga pöäng när graderad med rubriken måste vara mer än noll';
+$string['err_nocriteria'] = 'Matris måste innehålla minst en kriterium';
+$string['err_nodefinition'] = 'Definition av nivå måste fyllas i';
+$string['err_nodescription'] = 'Beskrivning av kriterium måste fyllas i';
+$string['err_novariations'] = 'Kriterienivåerna kan inte alla vara värda samma poäng';
+$string['err_scoreformat'] = 'Antal poäng för varje nivå måste vara ett giltigt tal';
+$string['err_totalscore'] = 'Maximalt antal möjliga poäng när bedömning sker med matris måste vara mer än noll';
 $string['gradingof'] = '{$a} Betygsättning';
-$string['leveldelete'] = 'Radera nivå';
-$string['levelempty'] = 'Välj för att redigrera nivå';
+$string['level'] = 'Nivå {$a->definition}, {$a->score} poäng.';
+$string['leveldefinition'] = 'Nivå {$a}-definition';
+$string['leveldelete'] = 'Ta bort nivå {$a}';
+$string['levelempty'] = 'Klick för att redigera nivå';
+$string['levelsgroup'] = 'Nivågrupp';
 $string['name'] = 'Namn';
-$string['needregrademessage'] = 'Definitionen av rubriken ändrades efter att studenten betygsattes. Studenten kan inte se den här rubriken förrän du kontrollerar rubriken och uppdatera betyget.';
-$string['pluginname'] = 'Rubrik';
-$string['previewrubric'] = 'Förhandsgranska rubriken';
-$string['regrademessage1'] = 'Du håller på att spara ändringarna till en rubrik som redan har använts för betygssättning. Vänligen ange om befintliga betyg behöver ses över. Om du ställer in detta kommer rubriken att döljas för studenten eleverna tills deras uppgift är åter betygsatt.';
-$string['regrademessage5'] = 'Du håller på att spara betydande ändringarna till en rubrik som redan har använts för betygssättning. Betygssättningens värde kommer att vara oförändrad, men rubriken kommer att döljas för studenter tills deras uppgift är åter betygsatt.';
-$string['regradeoption0'] = 'Markera inte för poängändring';
-$string['regradeoption1'] = 'Markera för poängändring';
-$string['restoredfromdraft'] = 'OBS: Den sista försök att betygsätta denna person har inte sparats korrekt - betyg har sparats som "förslag".  Om du vill avbryta dessa ändringarna använda "Avbryt" knappen nedan.';
-$string['rubric'] = 'Rubrik';
-$string['rubricmapping'] = '';
-$string['rubricmappingexplained'] = 'Minsta möjliga poäng för denna rubrik är {$a->minscore} poäng och det kommer att konverteras till den minsta grad som är tillgängliga i denna modul (som är noll om inte skalan redan används). Den maximala poängen {$a->maxscore} poäng kommer att konverteras till den högsta grad. Mellanliggande poäng kommer att konverteras till närmaste betyg. Om en skala används istället för en betyg, kommer poängen omvandlas till skalans elementer som om de vore på varandra följande heltal.';
+$string['needregrademessage'] = 'Definitionen av bedömningsmatrisen ändrades efter att studenten betygsattes. Studenten kan inte se den här matrisen förrän du kontrollerar matrisen och uppdatera betyget.';
+$string['notset'] = 'Ej angiven';
+$string['pluginname'] = 'Bedömningsmatris';
+$string['pointsvalue'] = '{$a} poäng';
+$string['previewrubric'] = 'Förhandsgranska matris';
+$string['regrademessage1'] = 'Du håller på att spara ändringarna till en bedömningsmatris som redan har använts för betygssättning. Vänligen ange om befintliga betyg behöver ses över. Om du ställer in detta kommer matrisen att döljas för studenten eleverna tills deras uppgift är åter betygsatt.';
+$string['regrademessage5'] = 'Du håller på att spara betydande ändringarna till en bedömningsmatris som redan har använts för betygssättning. Betygssättningens värde kommer att vara oförändrad, men matrisen kommer att döljas för studenter tills deras uppgift är åter betygsatt.';
+$string['regradeoption0'] = 'Markera inte för ombedömning';
+$string['regradeoption1'] = 'Markera för ombedömning';
+$string['restoredfromdraft'] = 'OBS: Den senaste försök att betygsätta denna student har inte sparats korrekt - betyg har sparats som "utkast". Om du vill ta bort dessa ändringarna välj "Avbryt" nedan.';
+$string['rubric'] = 'Bedömningsmatris';
+$string['rubricmapping'] = 'Hur poäng omvandlas till resultat för uppgiften';
+$string['rubricmappingexplained'] = 'Minsta möjliga poäng för denna bedömningsmatris är {$a->minscore} poäng och det kommer att konverteras till den minsta grad som är tillgängliga i denna modul (som är noll om inte skalan redan används). Den maximala poängen {$a->maxscore} poäng kommer att konverteras till den högsta grad. Mellanliggande poäng kommer att konverteras till närmaste betyg. Om en skala används istället för en betyg, kommer poängen omvandlas till skalans element som om de vore på varandra följande heltal.';
 $string['rubricnotcompleted'] = 'Välj något för varje kriterium';
-$string['rubricoptions'] = 'Rubrik optioner';
-$string['rubricstatus'] = 'Nuvarande rubrik status';
+$string['rubricoptions'] = 'Bedömningsmatrisalternativ';
+$string['rubricstatus'] = 'Nuvarande bedömningsmatris-status';
 $string['save'] = 'Spara';
-$string['saverubric'] = 'Spara rubrik och gör den redo';
+$string['saverubric'] = 'Spara matris och gör den redo';
 $string['saverubricdraft'] = 'Sparar som utkast';
 $string['scorepostfix'] = '{$a}poäng';
-$string['showdescriptionstudent'] = 'Visa rubrikens beskrivning för de som betygsätter';
-$string['showdescriptionteacher'] = 'Visa rubrikens beskrivning under värderingen';
-$string['showremarksstudent'] = 'Visa anmärkningar till dem som betygssätts';
+$string['showdescriptionstudent'] = 'Visa matrisens beskrivning för de som betygsätter';
+$string['showdescriptionteacher'] = 'Visa matrisens beskrivning under värderingen';
+$string['showremarksstudent'] = 'Visa kommentarer för de som betygssätts';
 $string['showscorestudent'] = 'Visa poäng för varje nivå för dem som betygssätts';
-$string['showscoreteacher'] = 'Visa poäng för varje nivå under värderingen';
-$string['sortlevelsasc'] = 'Sortering av nivåer:';
-$string['sortlevelsasc0'] = 'Nedstigande efter antal poäng';
-$string['sortlevelsasc1'] = 'Uppstigande efter antal poäng';
+$string['showscoreteacher'] = 'Visa poäng för varje nivå för den som betygsätter';
+$string['sortlevelsasc'] = 'Visningsordning för nivåer:';
+$string['sortlevelsasc0'] = 'Fallande i poängordning';
+$string['sortlevelsasc1'] = 'Stigande i poängordning';

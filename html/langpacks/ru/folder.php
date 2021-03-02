@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'folder', language 'ru', version '3.8'.
  *
- * @package   folder
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     folder
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,13 +37,15 @@ $string['downloadfolder'] = 'Скачать папку';
 $string['eventallfilesdownloaded'] = 'Zip-архив или папка скачаны';
 $string['eventfolderupdated'] = 'Папка обновлена';
 $string['folder:addinstance'] = 'Добавлять новый ресурс типа «Папка»';
-$string['foldercontent'] = 'Файлы и вложенные папки';
 $string['folder:managefiles'] = 'Управлять файлами в модуле «Папка»';
 $string['folder:view'] = 'Просматривать содержимое ресурса типа «Папка»';
+$string['foldercontent'] = 'Файлы и вложенные папки';
 $string['indicator:cognitivedepth'] = 'Папка: познавательный аспект';
 $string['indicator:cognitivedepth_help'] = 'Этот показатель основан на  глубине познания, достигнутой студентом при работе с ресурсом Папка.';
 $string['indicator:socialbreadth'] = 'Папка: социальный аспект';
 $string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Папка.';
+$string['indicator:socialbreadthdef'] = 'Папка: социальный аспект';
+$string['indicator:socialbreadthdef_help'] = 'Участник достиг этого процента социальной активности, предлагаемой ресурсами Папка в течение этого интервала анализа (Уровни = нет участия, единственный участник)';
 $string['maxsizetodownload'] = 'Максимальный размер скачиваемой папки (Мб)';
 $string['maxsizetodownload_help'] = 'Максимальный размер папки, которая может быть скачана в виде zip-файла. Если параметр равен 0, размер папки не ограничен.';
 $string['modulename'] = 'Папка';

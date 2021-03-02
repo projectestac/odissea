@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_dataprivacy', language 'zh_cn', version '3.8'.
  *
- * @package   tool_dataprivacy
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_dataprivacy
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,10 +45,10 @@ $string['cannotreset'] = '无法重置此请求。只有被拒绝的请求才能
 $string['categories'] = '类别';
 $string['categorieslist'] = '数据类别列表';
 $string['category'] = '类别';
+$string['category_help'] = '数据注册表中的一个类别描述了数据的类型。可以添加新类别，或者如果选择继承，则应用来自上级场景的数据类别。场景是(从低到高)：版块>活动模块>课程>课程类别>网站。';
 $string['categorycreated'] = '已创建类别';
 $string['categorydefault'] = '默认类别';
 $string['categorydefault_help'] = '默认类别是应用于任何新实例的数据类别。如果选择继承，则应用来自上级场景的数据类别。场景是(从低到高):版块>活动模块>课程>课程类别>用户>网站。';
-$string['category_help'] = '数据注册表中的一个类别描述了数据的类型。可以添加新类别，或者如果选择继承，则应用来自上级场景的数据类别。场景是(从低到高)：版块>活动模块>课程>课程类别>网站。';
 $string['categoryupdated'] = '已上传类别';
 $string['close'] = '关闭';
 $string['compliant'] = '遵循';
@@ -241,10 +241,10 @@ $string['privacyrequestexpiry_desc'] = '批准的数据请求将在到期之前�
 $string['protected'] = '受保护的';
 $string['protectedlabel'] = '保留这些数据比用户要求被遗忘有更高的法律先例。这些数据只有在保留期结束后才会被删除。';
 $string['purpose'] = '用途';
+$string['purpose_help'] = '用途是描述处理数据的原因。可以添加新的用途，或者如果选择了继承，则应用来自上级场景的用途。场景是(从低到高)：版块>活动模块>课程>课程类别>用户>网站。';
 $string['purposecreated'] = '创建用途';
 $string['purposedefault'] = '默认用途';
 $string['purposedefault_help'] = '默认用途是应用于任何新实例的用途。如果选择了继承，则应用来自上级场景的用途。场景是(从低到高)：版块>活动模块>课程>课程类别>用户>网站。';
-$string['purpose_help'] = '用途是描述处理数据的原因。可以添加新的用途，或者如果选择了继承，则应用来自上级场景的用途。场景是(从低到高)：版块>活动模块>课程>课程类别>用户>网站。';
 $string['purposeoverview'] = '用途描述存储数据的预期使用和保留政策。用途中还描述了存储和保留这些数据的根据。';
 $string['purposes'] = '用途';
 $string['purposeslist'] = '数据用途列表';
@@ -267,11 +267,11 @@ $string['requestsdenied'] = '这些请求被拒绝了';
 $string['requeststatus'] = '状态';
 $string['requestsubmitted'] = '您的请求已提交给隐私专员';
 $string['requesttype'] = '类型';
+$string['requesttype_help'] = '选择一个您联系隐私专员的理由。请注意，删除所有个人数据会导致您不能再登入本网站。';
 $string['requesttypedelete'] = '删除我所有的个人数据';
 $string['requesttypedeleteshort'] = '删除';
 $string['requesttypeexport'] = '导出我所有的个人数据';
 $string['requesttypeexportshort'] = '导出';
-$string['requesttype_help'] = '选择一个您联系隐私专员的理由。请注意，删除所有个人数据会导致您不能再登入本网站。';
 $string['requesttypeothers'] = '一般询盘';
 $string['requesttypeothersshort'] = '消息';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';

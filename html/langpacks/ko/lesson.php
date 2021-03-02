@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'ko', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -112,7 +112,7 @@ $string['confirmdelete'] = '페이지 삭제';
 $string['confirmdeletionofthispage'] = '페이지 삭제 확인';
 $string['congratulations'] = '학습의 끝입니다 - 축하합니다';
 $string['continue'] = '계속';
-$string['continuetoanswer'] = '답 수정 계속하기';
+$string['continuetoanswer'] = '답 수정하려면 계속';
 $string['continuetonextpage'] = '다음 페이지로 가기';
 $string['correctanswerjump'] = '정답인 경우 이동할 곳';
 $string['correctanswerscore'] = '정답에 대한 점수';
@@ -137,7 +137,7 @@ $string['didnotreceivecredit'] = '점수를 못 받음';
 $string['displaydefaultfeedback'] = '기본 피드백 사용';
 $string['displaydefaultfeedback_help'] = '활성화되면 특정 질문에 대해 응답이 발견되지 않으면 "정답입니다" 혹은 "틀린 답입니다"라는 기본 응답이 보여질 것입니다.';
 $string['displayinleftmenu'] = '왼쪽 메뉴를 보일까요?';
-$string['displayleftif'] = '다음 성적 이상일 때 왼쪽 메뉴 표시 :';
+$string['displayleftif'] = '메뉴를 표시하는 최소 등급';
 $string['displayleftif_help'] = '이 설정은 학생이 왼쪽 메뉴를 보기 전, 몇 점을 얻어야 하는지를 결정하는 것이다. 이는 학생으로 하여금 첫 시도에 전체 학습을 하게 하고, 요구된 점수를 얻게 되면 복습을 위해 왼쪽 메뉴를 사용할 수 있게 한다.';
 $string['displayleftmenu'] = '왼쪽 메뉴 표시';
 $string['displayleftmenu_help'] = '활성화되면  페이지의 목록이 표시됩니다.';
@@ -213,12 +213,12 @@ $string['leftduringtimed'] = '당신은 규정된 학습시간에 자리를 비�
 $string['leftduringtimednoretake'] = '당신은 규정된 학습시간에 자리를 비웠기 때문에<br />재학습을 하거나 계속할 수 없습니다.';
 $string['leftduringtimedsession'] = '시간이 정해진 세션에서 나갔습니다.';
 $string['lesson:addinstance'] = '새 완전학습 추가';
+$string['lesson:edit'] = '완전학습 편집';
+$string['lesson:manage'] = '완전학습 관리';
 $string['lessonclosed'] = '이 완전학습은 {$a} 에 종료되었습니다.';
 $string['lessoncloses'] = '완전학습 종료';
 $string['lessoncloseson'] = '완전학습은 {$a} 에 종료됨';
-$string['lesson:edit'] = '완전학습 편집';
 $string['lessonformating'] = '완전 학습 포맷중';
-$string['lesson:manage'] = '완전학습 관리';
 $string['lessonmenu'] = '완전 학습 메뉴';
 $string['lessonnotready'] = '이 학습은 진행할 수 없습니다. {$a} 에게 연락하기 바랍니다.';
 $string['lessonnotready2'] = '이 학습은 진행할 수 없습니다.';
@@ -242,7 +242,7 @@ $string['maximumnumberofattempts'] = '최대 시도 수';
 $string['maximumnumberofattempts_help'] = '이 설정은 각 질문에 대해 허용된 최대 시도 횟수를 명시합니다. 반복적으로 틀리게 답하고, 최대 시도 회수에 도달하면 완전학습의 다음 페이지가 표시됩니다.';
 $string['maximumnumberofattemptsreached'] = '최대 허용 시도횟수에 도달하였습니다. 다음 페이지로 갑니다.';
 $string['mediaclose'] = '종료 버튼 보이기';
-$string['mediafile'] = '미디어파일 창';
+$string['mediafile'] = '파일 팝업';
 $string['mediafile_help'] = '완전 학습의 처음에 팝업 창을 포함시키기 위해서 표시할 적절한 페이지를 선택하십시요. 모든 완전 학습 페이지는 필요한 경우 팝업을 다시 열 수 있는 링크를 포함하게 될 것입니다.';
 $string['mediafilepopup'] = '이곳을 누르면 수업 동영상 파일을 볼 수 있습니다.';
 $string['mediaheight'] = '팝업 창 높이 :';
@@ -271,7 +271,7 @@ $string['nameapproved'] = '이름 승인됨';
 $string['namereject'] = '죄송합니다. 당신의 이름은 필터에 의해 거부되었습니다. <br />다른 이름을 입력하세요.';
 $string['new'] = '신규';
 $string['nextpage'] = '다음 페이지';
-$string['noanswer'] = '답을 하지 않았습니다. 되돌아 가서 답을 입력하세요.';
+$string['noanswer'] = '한개 혹은 그 이상의 질문에 대한 답이 없습니다. 되돌아 가서 답을 제출하세요.';
 $string['noattemptrecordsfound'] = '한 번도 시도한 기록이 없습니다. 성적이 주어지지 않았습니다.';
 $string['nobranchtablefound'] = '콘텐츠 페이지를 찾을 수 없습니다.';
 $string['nocommentyet'] = '아직 코멘트 없음';
@@ -303,8 +303,8 @@ $string['numberofpagesviewed'] = '응답한 질문의 수: {$a}';
 $string['numberofpagesviewednotice'] = '응답한 질문수 : {$a->nquestions} (최소한  {$a->minquestions} 개 답해야 합니다.)';
 $string['numerical'] = '숫자';
 $string['ongoing'] = '현재 점수 보기';
-$string['ongoingcustom'] = '당신은 {$a->currenthigh} (최고)점 중 {$a->score} 점입니다.';
 $string['ongoing_help'] = '<p>이 기능을 켜놓으면, 각 페이지마다 학생이 현재까지 얻은 점수가 표시된다. 예를들어 어떤 학생이 5점짜리 문제 네개를 답했는데 그 중 하나만 틀렸다고 하면, 현재 점수는 15/20 점으로 표시된다.</p>';
+$string['ongoingcustom'] = '당신은 {$a->currenthigh} (최고)점 중 {$a->score} 점입니다.';
 $string['ongoingnormal'] = '당신은 {$a->viewed} 개의 질문 중  {$a->correct} 질문에 정확한 답을 했습니다.';
 $string['onpostperpage'] = '성적 당 하나의 게시물만';
 $string['options'] = '옵션';
@@ -315,10 +315,10 @@ $string['outof'] = '{$a} 중';
 $string['overview'] = '개요';
 $string['overview_help'] = '완전학습은 페이지들과 선택적으로 콘텐츠 페이지로 구성되어 있습니다. 페이지에는 콘텐츠를 포함하고 있으며 보통 질문으로 끝납니다. 각 질문들은 바로가기와 연관되어 있습니다. 바로가기는 이 페이지, 다음 페이지 등 상대적일 수 있으며, 완전학습의 어느 한 페이지를 명시하는 절대적인 경로일 수 있습니다. 분기 표는 목차와 같이 완전학습의 다른 페이지로의 링크를 포함하는 페이지입니다.';
 $string['page'] = '페이지: {$a}';
-$string['pagecontents'] = '페이지의 내용';
 $string['page-mod-lesson-edit'] = '완전학습 페이지 편집';
 $string['page-mod-lesson-view'] = '완전학습 페이지를 보기 혹은 미리보기';
 $string['page-mod-lesson-x'] = '모든 완전학습 페이지';
+$string['pagecontents'] = '페이지의 내용';
 $string['pages'] = '페이지들';
 $string['pagetitle'] = '페이지 제목';
 $string['password'] = '비밀번호';
@@ -380,18 +380,18 @@ $string['showanunseenpage'] = '보지 않은 페이지 보기';
 $string['singleanswer'] = '단답';
 $string['skip'] = '찾아가기 건너뛰기';
 $string['slideshow'] = '슬라이드쇼';
+$string['slideshow_help'] = '활성화되면 완전 학습은 고정된 폭과 높이의 슬라이드쇼로 표시됩니다.';
 $string['slideshowbgcolor'] = '슬라이드쇼 배경색';
 $string['slideshowheight'] = '슬라이드쇼 높이';
-$string['slideshow_help'] = '활성화되면 완전 학습은 고정된 폭과 높이의 슬라이드쇼로 표시됩니다.';
 $string['slideshowwidth'] = '슬라이드쇼 너비';
 $string['startlesson'] = '학습 시작하기';
-$string['studentattemptlesson'] = '{$a->firstname} {$a->lastname} 의 시도 수 : {$a->attempt}';
+$string['studentattemptlesson'] = '{$a->lastname} {$a->firstname} 의 시도 수 : {$a->attempt}';
 $string['studentname'] = '이름 : {$a}';
 $string['studentoneminwarning'] = '경고: 학습 종료 시간이 1분 정도 남았습니다.';
 $string['studentresponse'] = '{$a} 의 반응';
 $string['submit'] = '제출';
 $string['submitname'] = '이름 입력';
-$string['teacherjumpwarning'] = '이 완전학습에서 {$a->cluster}나 {$a->unseen} 으로의 이동 과정이 사용되고 있습니다. 다음 페이지 이동이 대신 사용될 수 있습니다. 이들 이동을 점검하기 위해서는 학생으로 로그인하십시요.';
+$string['teacherjumpwarning'] = '이 학습에서는 {$a->cluster}나 {$a->unseen} 으로의 이동이 사용되고 있습니다. 하지만 다음 페이지 이동 기능을 사용할 수 있습니다. 이들 이동을 점검하기 위해서는 학생 자격으로 로그인 하십시오.';
 $string['teacherongoingwarning'] = '현재 점수는 학생들에게만 보여집니다. 현재 점수를 확인하기 위해서는 학생으로 로그인하십시오.';
 $string['teachertimerwarning'] = '타이머는 학생들을 위해서만 작동됩니다. 학생으로 로그인 하여 타이머를 점검하세요.';
 $string['thatsthecorrectanswer'] = '올바른 답 입니다.';

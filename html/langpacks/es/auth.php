@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth', language 'es', version '3.8'.
  *
- * @package   auth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actauthhdr'] = 'Plugins de identificación disponibles';
+$string['actauthhdr'] = 'Extensiones (plugins) de identificación disponibles';
 $string['allowaccountssameemail'] = 'Permitir cuentas con la misma dirección de correo';
 $string['allowaccountssameemail_desc'] = 'Si se activa, más de una cuenta de usuario podrá compartir la misma dirección de correo. Esto puede resultar en problemas de seguridad o privacidad, por ejemplo con el email de confirmación de cambio de clave.';
 $string['alternatelogin'] = 'Si introduce aquí una URL, se usará como página de acceso al sitio. La página debería contener un formulario cuya propiedad de acción está ajustada a <strong>\'{$a}\'</strong> y devuelve los campos <strong>nombre de usuario</strong> y <strong>contraseña</strong>.<br />Procure no introducir una URL incorrecta puesto que hacerlo supondrá su expulsión del sitio.<br />Deje el ajuste en blanco para utilizar la página de acceso por defecto.';
@@ -37,17 +37,13 @@ $string['auth_changepasswordurl_expl'] = 'Especifique la URL a la que enviar a l
 $string['auth_changingemailaddress'] = 'Usted ha solicitado un cambio de dirección email, desde {$a->oldemail} a {$a->newemail}. Por razones de seguridad, le hemos enviado un mensaje de email a la nueva dirección para confirmar que usted es el titular. Su nueva dirección será actualizada una vez que abra la dirección que le enviamos en ese mensaje.';
 $string['auth_common_settings'] = 'Ajustes comunes';
 $string['auth_data_mapping'] = 'Mapeado de datos';
-$string['authenticationoptions'] = 'Opciones de identificación';
 $string['auth_fieldlock'] = 'Bloquear valor';
 $string['auth_fieldlock_expl'] = '<p><b>Bloquear valor:</b> Si se activa, los usuarios y administradores de Moodle no podrán editar directamente el campo. Utilice esta opción si mantiene estos datos en el sistema de identificación externo. </p>';
 $string['auth_fieldlockfield'] = 'Bloquear valor ({$a})';
 $string['auth_fieldlocks'] = 'Bloquear campos de usuario';
 $string['auth_fieldlocks_help'] = '<p>Usted puede bloquear los campos de datos de los usuarios, lo que resulta útil en sitios donde esos datos están mantenidos por administradores de forma manual, editando los registros de los usuarios o subiéndolos mediante la utilidad \'Subir usuarios\'. Si usted bloquea campos requeridos por Moodle, asegúrese de que proporciona esos datos al crear las cuentas de los usuarios; de otro modo las cuentas no serán utilizables.</p><p>Considere fijar esta opción de bloqueo en \'Desbloqueado si está vacío\', para evitar este problema.</p>';
 $string['auth_fieldmapping'] = 'Mapeo de datos ({$a})';
-$string['authinstructions'] = 'Deje esta opción en blanco para mostrar las instrucciones por defecto de entrada al sitio en la página de entrada. Si desea proporcionar instrucciones personalizadas introdúzcalas aquí.';
 $string['auth_invalidnewemailkey'] = 'Error: Si está intentando confirmar un cambio de dirección email. debe haber cometido un error al copiar la URL que le enviamos por email. Por favor, copie la dirección y pruebe de nuevo.';
-$string['authloginviaemail'] = 'Permitir iniciar sesión por correo electrónico';
-$string['authloginviaemail_desc'] = 'Permitir a los usuarios acceder al sitio indistintamente con su nombre de usuario o con su  dirección de correo (siempre que sea única).';
 $string['auth_multiplehosts'] = 'Es posible especificar múltiples servidores (por ej. servidor1.com;servidor2.com;servidor3.com';
 $string['auth_notconfigured'] = 'El método de autenticación {$a} no está configurado.';
 $string['auth_outofnewemailupdateattempts'] = 'Ha hecho más intentos de los permitidos para actualizar su dirección de email. Su solicitud de actualización ha sido cancelada.';
@@ -56,22 +52,26 @@ $string['auth_passwordwillexpire'] = 'Su contraseña caducará en {$a} días ¿D
 $string['auth_remove_delete'] = 'Borrado completo';
 $string['auth_remove_keep'] = 'Mantener interna';
 $string['auth_remove_suspend'] = 'Suspender interna';
-$string['auth_remove_user'] = 'Especifique qué hacer con una cuenta de usuario interna durante sincronización masiva cuando el usuario fue eliminado de la fuente externa. Únicamente los usuarios suspendidos son automáticamente revividos si ellos reaparecen en una fuente externa.';
+$string['auth_remove_user'] = 'Especificar qué hacer con la cuenta de usuario durante la sincronización interna masiva cuando el usuario se retira de una fuente externa. Sólo los usuarios suspendidos se restauran automáticamente si vuelven a aparecer en la fuente externa.';
 $string['auth_remove_user_key'] = 'Usuario externo eliminado';
-$string['auth_sync_script'] = 'Sincronización de la cuenta de usuario';
+$string['auth_sync_script'] = 'Sincronización de cuenta de usuario';
 $string['auth_sync_suspended'] = 'Cuando está habilitado, el atributo suspendido será utilizado para actualizar el estado de suspensión de la cuenta de usuario local.';
-$string['auth_sync_suspended_key'] = 'Sincronizar el estado de suspensión de usuario local';
+$string['auth_sync_suspended_key'] = 'Sincronizar estado de suspensión de usuario local';
 $string['auth_updatelocal'] = 'Actualizar datos locales';
 $string['auth_updatelocal_expl'] = '<p><b>Actualizar datos locales:</b> Si está activado, el campo debe ser actualizado (con identificación externa) cada vez que el usuario entra o se produce una sincronización de usuarios. Los campos a actualizar localmente deberían ser bloqueados.</p>';
 $string['auth_updatelocalfield'] = 'Actualizar local ({$a})';
 $string['auth_updateremote'] = 'Actualizar datos externos';
 $string['auth_updateremote_expl'] = '<p><b>Actualizar datos externos:</b> Si está activado, la identificación externa será actualizada cuando se actualice el registro del usuario. Los campos deberían estar desbloqueados para poder editarlos.</p>';
-$string['auth_updateremotefield'] = 'Actualizar externo ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Note:</b> La actualización de datos LDAP externos requiere que usted ajuste los valores \'binddn\' y \'bindpw\' a un usuario con privilegios de edición de todos los registros de usuario. Por el momento, esto no preserva los atributos multi-valor, y eliminará los valores extra durante la actualización. </p>';
+$string['auth_updateremotefield'] = 'Actualizar externo ({$a})';
 $string['auth_user_create'] = 'Habilitar creación por parte del usuario';
 $string['auth_user_creation'] = 'Los nuevos usuarios (anónimos) pueden crear cuentas de usuario sobre el código externo de identificación y confirmar vía correo electrónico. Si usted habilita esto, recuerde también configurar las opciones del módulo específico para la creación de usuario.';
 $string['auth_usernameexists'] = 'El nombre de usuario seleccionado ya existe. Por favor, elija otro.';
 $string['auth_usernotexist'] = 'No se puede actualizar un usuario no existente: {$a}';
+$string['authenticationoptions'] = 'Opciones de identificación';
+$string['authinstructions'] = 'Deje esta opción en blanco para mostrar las instrucciones por defecto de entrada al sitio en la página de entrada. Si desea proporcionar instrucciones personalizadas introdúzcalas aquí.';
+$string['authloginviaemail'] = 'Permitir iniciar sesión por correo electrónico';
+$string['authloginviaemail_desc'] = 'Permitir a los usuarios acceder al sitio indistintamente con su nombre de usuario o con su  dirección de correo (siempre que sea única).';
 $string['auto_add_remote_users'] = 'Añadir automáticamente usuarios remotos';
 $string['cannotmapfield'] = 'El campo "{$a->fieldname}" no puede ser mapeado porque su nombre corto "{$a->shortname}" es demasiado largo. Para permitir que sea mapeado, necesita reducir el nombre corto a  {$a->charlimit} caracteres. <a href="{$a->link}">Editar campos del perfil del usuario</a>';
 $string['changepassword'] = 'Cambiar contraseña URL';
@@ -103,8 +103,8 @@ $string['eventuserloggedin'] = 'El usuario ha iniciado sesión';
 $string['eventuserloggedinas'] = 'El usuario inicia sesión como otro usuario';
 $string['eventuserloginfailed'] = 'Inicio de sesión fallido';
 $string['forcechangepassword'] = 'Forzar cambio de contraseña';
-$string['forcechangepasswordfirst_help'] = 'Forzar a los usuarios a cambiar la contraseña la primera vez que accedan a Moodle.';
 $string['forcechangepassword_help'] = 'Forzar a los usuarios a cambiar la contraseña la próxima vez que accedan a Moodle.';
+$string['forcechangepasswordfirst_help'] = 'Forzar a los usuarios a cambiar la contraseña la primera vez que accedan a Moodle.';
 $string['forgottenpassword'] = 'Si escribe aquí una URL, se usará como página de recuperación de la contraseña perdida para este sitio. Esto está pensado para sitios en los que las contraseñas se gestionan totalmente fuera de Moodle. Déjelo en blanco para usar la recuperación por defecto de la contraseña.';
 $string['forgottenpasswordurl'] = 'URL contraseña olvidada';
 $string['getrecaptchaapi'] = 'Para usar reCAPTCHA necesita obtener una clave API de <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';

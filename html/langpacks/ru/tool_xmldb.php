@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'ru', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,16 +32,16 @@ $string['backtomainview'] = 'Вернуться к главной';
 $string['cannotuseidfield'] = 'Невозможно заполнить поле «ID». Это столбец автонумерации.';
 $string['change'] = 'Изменить';
 $string['charincorrectlength'] = 'Некорректная длина символьного поля';
-$string['checkbigints'] = 'Проверить целые';
 $string['check_bigints'] = 'Поиск некорректных целых БД';
-$string['checkdefaults'] = 'Проверить умолчания';
 $string['check_defaults'] = 'Поиск противоречивых значений по умолчанию';
-$string['checkforeignkeys'] = 'Проверить внешние ключи';
 $string['check_foreign_keys'] = 'Поиск ошибочных внешних ключей';
-$string['checkindexes'] = 'Проверить индексы';
 $string['check_indexes'] = 'Поиск отсутствующих индексов БД';
-$string['checkoraclesemantics'] = 'Проверить семантику';
 $string['check_oracle_semantics'] = 'Поиск некорректной длины семантики';
+$string['checkbigints'] = 'Проверить целые';
+$string['checkdefaults'] = 'Проверить умолчания';
+$string['checkforeignkeys'] = 'Проверить внешние ключи';
+$string['checkindexes'] = 'Проверить индексы';
+$string['checkoraclesemantics'] = 'Проверить семантику';
 $string['completelogbelow'] = '(Ниже см. полный протокол поиска)';
 $string['confirmcheckbigints'] = 'Это возможность найти <a href="http://tracker.moodle.org/browse/MDL-11038">потенциально неверные целочисленные поля</a> на сервере Moodle, автоматически создавая (но не исполняя!) необходимые утверждения SQL, чтобы все целые числа в БД были правильно определены.
 
@@ -151,12 +151,12 @@ $string['missingindexes'] = 'Найдены отсутствующие инде�
 $string['mustselectonefield'] = 'Вы должны выбрать одно поле, чтобы увидеть действия, связанные с ним!';
 $string['mustselectoneindex'] = 'Вы должны выбрать один индекс, чтобы увидеть действия, связанные с ним!';
 $string['mustselectonekey'] = 'Вы должны выбрать один ключ, чтобы увидеть действия, связанные с ним!';
+$string['new_table_from_mysql'] = 'Новая таблица из MySQL';
 $string['newfield'] = 'Новое поле';
 $string['newindex'] = 'Новый индекс';
 $string['newkey'] = 'Новый ключ';
 $string['newtable'] = 'Новая таблица';
 $string['newtablefrommysql'] = 'Новая таблица из MySQL';
-$string['new_table_from_mysql'] = 'Новая таблица из MySQL';
 $string['nofieldsspecified'] = 'Нет заданных полей';
 $string['nomasterprimaryuniquefound'] = '';
 $string['nomissingindexesfound'] = 'Отсутствующие индексы не найдены, база данных не нуждается в дальнейших действиях.';
@@ -197,15 +197,15 @@ $string['unknowntable'] = 'Указана неизвестная таблица'
 $string['unload'] = 'Выгрузить';
 $string['up'] = 'Вверх';
 $string['view'] = 'Просмотр';
-$string['viewedited'] = 'Просмотр отредактированного';
-$string['vieworiginal'] = 'Просмотр оригинала';
-$string['viewphpcode'] = 'Просмотр PHP-кода';
 $string['view_reserved_words'] = 'Просмотр зарезервированных слов';
-$string['viewsqlcode'] = 'Просмотр SQL-кода';
 $string['view_structure_php'] = 'Просмотр структуры PHP';
 $string['view_structure_sql'] = 'Просмотр структуры SQL';
 $string['view_table_php'] = 'Просмотр таблицы PHP';
 $string['view_table_sql'] = 'Просмотр таблицы SQL';
+$string['viewedited'] = 'Просмотр отредактированного';
+$string['vieworiginal'] = 'Просмотр оригинала';
+$string['viewphpcode'] = 'Просмотр PHP-кода';
+$string['viewsqlcode'] = 'Просмотр SQL-кода';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Ошибочные внешние ключи';
 $string['violatedforeignkeysfound'] = 'Поиск ошибочных внешних ключей';

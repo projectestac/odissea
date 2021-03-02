@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'en', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,11 +43,11 @@ $string['analytics:listinsights'] = 'List insights';
 $string['analytics:listowninsights'] = 'List own insights';
 $string['analytics:managemodels'] = 'Manage models';
 $string['archetype'] = 'Role archetype';
+$string['archetype_help'] = 'The role archetype determines the permissions when a role is reset to default. It also determines any new permissions for the role when the site is upgraded.';
 $string['archetypecoursecreator'] = 'ARCHETYPE: Course creator';
 $string['archetypeeditingteacher'] = 'ARCHETYPE: Teacher (editing)';
 $string['archetypefrontpage'] = 'ARCHETYPE: Authenticated user on frontpage';
 $string['archetypeguest'] = 'ARCHETYPE: Guest';
-$string['archetype_help'] = 'The role archetype determines the permissions when a role is reset to default. It also determines any new permissions for the role when the site is upgraded.';
 $string['archetypemanager'] = 'ARCHETYPE: Manager';
 $string['archetypestudent'] = 'ARCHETYPE: Student';
 $string['archetypeteacher'] = 'ARCHETYPE: Teacher (non-editing)';
@@ -62,8 +62,8 @@ $string['assignrole'] = 'Assign role';
 $string['assignrolenameincontext'] = 'Assign role \'{$a->role}\' in {$a->context}';
 $string['assignroles'] = 'Assign roles';
 $string['assignroles_help'] = 'By assigning a role to a user in a context, you are granting them the permissions contained in that role, for the current context and all lower contexts. For example, if a user is assigned the role of student in a course, they will also have the role of student for all activities and blocks within the course.';
-$string['assignrolesin'] = 'Assign roles in {$a}';
 $string['assignroles_link'] = 'admin/roles/assign';
+$string['assignrolesin'] = 'Assign roles in {$a}';
 $string['assignrolesrelativetothisuser'] = 'Assign roles relative to this user';
 $string['backtoallroles'] = 'Back to the list of all roles';
 $string['backup:anonymise'] = 'Anonymise user data on backup';
@@ -286,15 +286,15 @@ $string['legacy:editingteacher'] = 'LEGACY ROLE: Teacher (editing)';
 $string['legacy:guest'] = 'LEGACY ROLE: Guest';
 $string['legacy:student'] = 'LEGACY ROLE: Student';
 $string['legacy:teacher'] = 'LEGACY ROLE: Teacher (non-editing)';
-$string['legacytype'] = 'Legacy role type';
 $string['legacy:user'] = 'LEGACY ROLE: Authenticated user';
+$string['legacytype'] = 'Legacy role type';
 $string['listallroles'] = 'List all roles';
 $string['localroles'] = 'Locally assigned roles';
 $string['mainadmin'] = 'Main administrator';
 $string['mainadminset'] = 'Set main admin';
 $string['manageadmins'] = 'Manage site administrators';
 $string['manager'] = 'Manager';
-$string['managerdescription'] = 'Managers can access course and modify them, they usually do not participate in courses.';
+$string['managerdescription'] = 'Managers can access courses and modify them, but usually do not participate in them.';
 $string['manageroles'] = 'Manage roles';
 $string['maybeassignedin'] = 'Context types where this role may be assigned';
 $string['morethan'] = 'More than {$a}';
@@ -317,10 +317,10 @@ $string['novisibleroles'] = 'No roles';
 $string['overrideanotherrole'] = 'Override another role';
 $string['overridecontext'] = 'Override context';
 $string['overridepermissions'] = 'Override permissions';
-$string['overridepermissionsforrole'] = 'Override permissions for role \'{$a->role}\' in {$a->context}';
 $string['overridepermissions_help'] = 'Permissions overrides enable selected capabilities to be allowed or prevented in a specific context.';
-$string['overridepermissionsin'] = 'Override permissions in {$a}';
 $string['overridepermissions_link'] = 'admin/roles/override';
+$string['overridepermissionsforrole'] = 'Override permissions for role \'{$a->role}\' in {$a->context}';
+$string['overridepermissionsin'] = 'Override permissions in {$a}';
 $string['overrideroles'] = 'Override roles';
 $string['overriderolesin'] = 'Override roles in {$a}';
 $string['overrides'] = 'Overrides';
@@ -390,31 +390,31 @@ $string['restore:uploadfile'] = 'Upload files to backup areas';
 $string['restore:userinfo'] = 'Restore user data';
 $string['restore:viewautomatedfilearea'] = 'Restore courses from automated backups';
 $string['risks'] = 'Risks';
+$string['role:assign'] = 'Assign roles to users';
+$string['role:manage'] = 'Create and manage roles';
+$string['role:override'] = 'Override permissions for others';
+$string['role:review'] = 'Review permissions for others';
+$string['role:safeoverride'] = 'Override safe permissions for others';
+$string['role:switchroles'] = 'Switch to other roles';
 $string['roleallowheader'] = 'Allow role:';
 $string['roleallowinfo'] = 'Select a role to be added to the list of allowed roles in context "{$a->context}", capability "{$a->cap}":';
-$string['role:assign'] = 'Assign roles to users';
 $string['roleassignments'] = 'Role assignments';
 $string['roledefinitions'] = 'Role definitions';
 $string['rolefullname'] = 'Role name';
 $string['roleincontext'] = '{$a->role} in {$a->context}';
-$string['role:manage'] = 'Create and manage roles';
-$string['role:override'] = 'Override permissions for others';
 $string['roleprohibitheader'] = 'Prohibit role';
 $string['roleprohibitinfo'] = 'Select a role to be added to the list of prohibited roles in context "{$a->context}", capability "{$a->cap}":';
 $string['rolerepreset'] = 'Use role preset';
 $string['roleresetdefaults'] = 'Defaults';
 $string['roleresetrole'] = 'Use role or archetype';
-$string['role:review'] = 'Review permissions for others';
 $string['rolerisks'] = 'Role risks';
 $string['roles'] = 'Roles';
-$string['role:safeoverride'] = 'Override safe permissions for others';
+$string['roles_help'] = 'A role is a collection of permissions defined for the whole system that you can assign to specific users in specific contexts.';
+$string['roles_link'] = 'roles';
 $string['roleselect'] = 'Select role';
 $string['rolesforuser'] = 'Roles for user {$a}';
-$string['roles_help'] = 'A role is a collection of permissions defined for the whole system that you can assign to specific users in specific contexts.';
 $string['roleshortname'] = 'Short name';
 $string['roleshortname_help'] = 'Role short name is a low level role identifier in which only ASCII alphanumeric characters are allowed. Do not change short names of standard roles.';
-$string['roles_link'] = 'roles';
-$string['role:switchroles'] = 'Switch to other roles';
 $string['roletoassign'] = 'Role to assign';
 $string['roletooverride'] = 'Role to override';
 $string['safeoverridenotice'] = 'Note: Capabilities with higher risks are locked because you are only allowed to override safe capabilities.';
@@ -425,7 +425,6 @@ $string['selectrole'] = 'Select a role';
 $string['showallroles'] = 'Show all roles';
 $string['showthisuserspermissions'] = 'Show this user\'s permissions';
 $string['site:accessallgroups'] = 'Access all groups';
-$string['siteadministrators'] = 'Site administrators';
 $string['site:approvecourse'] = 'Approve course creation';
 $string['site:backup'] = 'Backup courses';
 $string['site:config'] = 'Change site configuration';
@@ -452,6 +451,7 @@ $string['site:viewfullnames'] = 'Always see full names of users';
 $string['site:viewparticipants'] = 'View participants';
 $string['site:viewreports'] = 'View reports';
 $string['site:viewuseridentity'] = 'See full user identity in lists';
+$string['siteadministrators'] = 'Site administrators';
 $string['tag:edit'] = 'Edit existing tags';
 $string['tag:editblocks'] = 'Edit blocks in tags pages';
 $string['tag:flag'] = 'Flag tags as inappropriate';
@@ -476,12 +476,6 @@ $string['user:manageownfiles'] = 'Manage files on own private file areas';
 $string['user:managesyspages'] = 'Configure default page layout for public user profiles';
 $string['user:readuserblogs'] = 'View all user blogs';
 $string['user:readuserposts'] = 'View all user forum posts';
-$string['usersfrom'] = 'Users from {$a}';
-$string['usersfrommatching'] = 'Users from {$a->contextname} matching \'{$a->search}\'';
-$string['usersinthisx'] = 'Users in this {$a}';
-$string['usersinthisxmatching'] = 'Users in this {$a->contexttype} matching \'{$a->search}\'';
-$string['userswithrole'] = 'All users with a role';
-$string['userswiththisrole'] = 'Users with role';
 $string['user:update'] = 'Update user profiles';
 $string['user:viewalldetails'] = 'View user full information';
 $string['user:viewdetails'] = 'View user profiles';
@@ -489,6 +483,12 @@ $string['user:viewhiddendetails'] = 'View hidden details of users';
 $string['user:viewlastip'] = 'View user last ip address';
 $string['user:viewuseractivitiesreport'] = 'See user activity reports';
 $string['user:viewusergrades'] = 'View user grades';
+$string['usersfrom'] = 'Users from {$a}';
+$string['usersfrommatching'] = 'Users from {$a->contextname} matching \'{$a->search}\'';
+$string['usersinthisx'] = 'Users in this {$a}';
+$string['usersinthisxmatching'] = 'Users in this {$a->contexttype} matching \'{$a->search}\'';
+$string['userswithrole'] = 'All users with a role';
+$string['userswiththisrole'] = 'Users with role';
 $string['useshowadvancedtochange'] = 'Use \'Show advanced\' to change';
 $string['viewingdefinitionofrolex'] = 'Viewing the definition of role \'{$a}\'';
 $string['viewrole'] = 'View role details';

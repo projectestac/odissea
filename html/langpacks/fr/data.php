@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'data', language 'fr', version '3.8'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -207,13 +207,13 @@ $string['includetags'] = 'Inclure les tags';
 $string['includetime'] = 'Inclure la date d\'ajout/de modification';
 $string['includeuserdetails'] = 'Inclure les détails de l\'utilisateur';
 $string['indicator:cognitivedepth'] = 'Base de données : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Base de données.';
 $string['indicator:cognitivedepthdef'] = 'Base de données : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Base de données » (niveaux : pas de vue, vue, envoi).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Base de données.';
 $string['indicator:socialbreadth'] = 'Base de données : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Base de données.';
 $string['indicator:socialbreadthdef'] = 'Base de données : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Base de données » (niveaux : pas de participation, participant seul).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Base de données.';
 $string['insufficiententries'] = 'autres fiches sont requises pour afficher cette base de données';
 $string['intro'] = 'Description';
 $string['invalidaccess'] = 'L\'accès à cette page n\'a pas été effectué correctement';
@@ -314,13 +314,13 @@ $string['privacy:metadata:data_content:content2'] = 'Contenu additionnel 2';
 $string['privacy:metadata:data_content:content3'] = 'Contenu additionnel 3';
 $string['privacy:metadata:data_content:content4'] = 'Contenu additionnel 4';
 $string['privacy:metadata:data_content:fieldid'] = 'Identifiant de la définition du champ';
-$string['privacy:metadata:datafieldnpluginsummary'] = 'Champs de la base de données';
 $string['privacy:metadata:data_records'] = 'Représente les enregistrements de la base de données';
 $string['privacy:metadata:data_records:approved'] = 'Statut d\'approbation';
 $string['privacy:metadata:data_records:groupid'] = 'Groupe';
 $string['privacy:metadata:data_records:timecreated'] = 'Date et heure de la création de la fiche';
 $string['privacy:metadata:data_records:timemodified'] = 'Date et heure de la dernière modification de la fiche';
 $string['privacy:metadata:data_records:userid'] = 'Utilisateur qui a créé la fiche';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Champs de la base de données';
 $string['privacy:metadata:filepurpose'] = 'Fichier annexé à la fiche de base de données';
 $string['privacy:metadata:ratingpurpose'] = 'Évaluations des fiches de base de données';
 $string['privacy:metadata:tagpurpose'] = 'Tags des fiches de base de données';

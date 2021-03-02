@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_installaddon', language 'ru', version '3.8'.
  *
- * @package   tool_installaddon
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_installaddon
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,9 +33,9 @@ $string['installaddons'] = 'Установка плагинов';
 $string['installfromrepo'] = 'Установить плагины из каталога плагинов Moodle (Moodle Plugins Directory)';
 $string['installfromrepo_help'] = 'Вы будете перенаправлены в каталог плагинов Moodle (Moodle Plugins Directory) для поиска и установки плагина. Обратите внимание, что при этом будут переданы полное имя, URL-адрес и версия системы Moodle, установленной на Вашем сайте; это упрощает процесс установки плагинов.';
 $string['installfromzip'] = 'Установить плагин из ZIP-файла';
+$string['installfromzip_help'] = 'В качестве альтернативы установке плагина непосредственно из каталога плагинов Moodle можно загрузить плагин в виде ZIP-пакета. ZIP-пакет должен иметь такую же структуру, как и пакет, скачанный из каталога плагинов Moodle.';
 $string['installfromzipfile'] = 'ZIP-пакет';
 $string['installfromzipfile_help'] = 'ZIP-пакет с плагином должен содержать только один каталог, имя которого должно совпадать с названием плагина. Архив будет извлечен в каталог, предназначенный для плагинов указанного типа. Если архив был загружен из каталога плагинов Moodle, он точно имеет необходимую структуру.';
-$string['installfromzip_help'] = 'В качестве альтернативы установке плагина непосредственно из каталога плагинов Moodle можно загрузить плагин в виде ZIP-пакета. ZIP-пакет должен иметь такую же структуру, как и пакет, скачанный из каталога плагинов Moodle.';
 $string['installfromzipinvalid'] = 'ZIP-пакет плагина должен содержать только один каталог, имя которого совпадает с именем плагина. Представленный файл не является корректным ZIP-пакетом плагина.';
 $string['installfromziprootdir'] = 'Переименовать корневой каталог';
 $string['installfromziprootdir_help'] = 'В некоторых ZIP-пакетах (например, в генерируемых сервисом Github) корневой каталог может иметь неправильное название. В этом случае здесь можно указать правильное название.';

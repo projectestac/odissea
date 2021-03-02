@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,23 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'ar', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = 'تعيين دور \'{$a->role_shortname}\' للمستخدم \'{$a->user_username}\' في المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
-$string['assignrolefailed'] = 'فشل في تعيين الدور \'{$a->role_shortname}\' للمستخدم \'{$a->user_username}\' في المقرر \'{$a->course_shortname}\' (id {$a->course_id})';
+$string['assignrolefailed'] = 'فشل في إسناد الدور \'{$a->role_shortname}\' للمستخدم \'{$a->user_username}\' في المقرر \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['autocreate'] = '<p>يمكن إنشاء المساقات تلقائياً إن كانت هناك انضمامات إلى مساق ليس له وجود بعد في مودل</p><p>إذا كنت تستعمل إنشاء المساق تلقائياً، فمن الموصى به إزالة الإمكانيات الآتية: moodle/course:changeidnumber، moodle/course:changeshortname، moodle/course:changefullname و moodle/course:changesummary، من الأدوار ذات الصلة لمنع التعديل في حقول المساق الأربعة المحددة أعلاه (ID number، shortname، fullname و summary).</p>';
 $string['autocreate_key'] = 'أنشئ تلقائياً';
-$string['autocreation_settings'] = 'الإعدادت التلقائية لإنشاء المساق';
+$string['autocreation_settings'] = 'الإعدادات الآلية لإنشاء مقرر دراسي';
 $string['autoupdate_settings'] = 'الإعداد التلقائية لتحديث المساق';
 $string['autoupdate_settings_desc'] = '<p>إختر الحقول المطلوب تحديها عندما تكون المهمة المجدولة \'مزامنة انضمامات LDAP\' شغالة.</p><p>عند اختيار حقل واحد على الأقل، فالتحديث سيقع.</p>';
 $string['bind_dn'] = 'إذا أردت استعمال مستخدم مربوط للبحث عن المستخدمين، حدده هنا. شيء ما من قبيل \'cn=ldapuser,ou=public,o=org\\';
@@ -40,55 +40,55 @@ $string['bind_settings'] = 'إعدادات الربط';
 $string['cannotcreatecourse'] = 'تعذر إنشاء المساق: البيانات المطلوبة مفقودة من سجل LDAP!';
 $string['cannotupdatecourse'] = 'تعذر تحديث المساق: البيانات المطلوبة مفقودة من سجل LDAP!  الرمز التعريفي للمساق هو: \'{$a->idnumber}\\';
 $string['cannotupdatecourse_duplicateshortname'] = 'تعذر تحديث المساق: تكرار في الاسم المختصر. يتم تجاوز المساق ذي  الرمز التعريفي \'{$a->idnumber}\'...';
-$string['category'] = 'تصنيف المساقات المنشأة تلقائياً';
+$string['category'] = 'تصنيف المقررات الدراسية المنشأة تلقائياً';
 $string['category_key'] = 'التصنيف';
 $string['contexts'] = 'سياقات LDAP';
 $string['couldnotfinduser'] = 'تعذر العثور على المستخدم \'{$a}\'، تم تجاوزه';
 $string['course_fullname'] = 'إختياري: سمة LDAP للحصول على الاسم الكامل من';
 $string['course_fullname_key'] = 'الاسم الكامل';
-$string['course_fullname_updateonsync'] = 'تحديث الاسم الكامل خلال نص المزامنة';
-$string['course_fullname_updateonsync_key'] = 'تحديث الاسم الكامل';
+$string['course_fullname_updateonsync'] = 'قم بحديث الاسم الكامل خلال نص مزامنة';
+$string['course_fullname_updateonsync_key'] = 'قم بتحديث الاسم الكامل';
 $string['course_idnumber'] = 'سمة LDAP للحصول منه على رقم مُعرَّف المساق. عادة \'cn\' أو \'uid\'.';
 $string['course_idnumber_key'] = 'رقم المُعرَّف';
-$string['coursenotexistskip'] = 'المساق \'{$a}\' غير موجود والإنشاء التلقائي للمساقات معطل، تم تجاوزه';
 $string['course_search_sub'] = 'إبحث عن عضويات المجموعة من السياقات الفرعية';
 $string['course_search_sub_key'] = 'البحث في السياقات الفرعية';
-$string['course_settings'] = 'إعدادات الانضمام إلى المساق';
+$string['course_settings'] = 'إعدادات الانضمام إلى المقرر الدراسي';
 $string['course_shortname'] = 'خيارى: حقل الـ LDAP للحصول على اسم قصير من';
 $string['course_shortname_key'] = 'الاسم المختصر';
-$string['course_shortname_updateonsync'] = 'تحديث الاسم المختصر خلال نص مزامنة';
-$string['course_shortname_updateonsync_key'] = 'تحديث الاسم المختصر';
+$string['course_shortname_updateonsync'] = 'قم بحديث الاسم المختصر خلال نص مزامنة';
+$string['course_shortname_updateonsync_key'] = 'قم بتحديث الاسم المختصر';
 $string['course_summary'] = 'خيارى: حقل الـ LDAP للحصول على ملخص من';
 $string['course_summary_key'] = 'الموجز';
-$string['course_summary_updateonsync'] = 'تحديث الملخص خلال نص المزامنة';
-$string['course_summary_updateonsync_key'] = 'تحديث الملخص';
+$string['course_summary_updateonsync'] = 'قم بحديث الموجز خلال نص مزامنة';
+$string['course_summary_updateonsync_key'] = 'قم بتحديث الموجز';
+$string['coursenotexistskip'] = 'المساق \'{$a}\' غير موجود والإنشاء التلقائي للمساقات معطل، تم تجاوزه';
 $string['courseupdated'] = 'تم تحديث المساق ذي  الرمز التعريفي \'{$a->idnumber}\' بنجاح.';
 $string['courseupdateskipped'] = 'المساق ذي  الرمز التعريفي \'{$a->idnumber}\' لا يحتاج التحديث، تم تجاوزه.';
-$string['createcourseextid'] = 'إنشاء مستخدم منضم إلى المساق غير الموجود \'{$a->courseextid}\'';
+$string['createcourseextid'] = 'قم بإنشاء مستخدم منضم إلى المساق غير الموجود \'{$a->courseextid}\\';
 $string['createnotcourseextid'] = 'المستخدم المنضم إلى المساق غير الموجود \'{$a->courseextid}\\';
 $string['creatingcourse'] = 'يتم إنشاء المساق \'{$a}\'...';
 $string['duplicateshortname'] = 'فشل إنشاء المساق. تكرار الاسم المختصر. تم تجاوز المساق ذي الرمز التعريفي \'{$a->idnumber}\'...';
 $string['editlock'] = 'أغلق القيمة';
 $string['emptyenrolment'] = 'أفرغ الانضمام لدور \'{$a->role_shortname}\' في المساق \'{$a->course_shortname}\\';
 $string['enrolname'] = 'LDAP';
-$string['enroluser'] = 'ضم المستخدم \'{$a->user_username}\' في المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
-$string['enroluserenable'] = 'تمكين الانضمام للمستخدم \'{$a->user_username}\' في المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
+$string['enroluser'] = 'قم بضم المستخدم \'{$a->user_username}\' في المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
+$string['enroluserenable'] = 'قم بتمكين الانضمام للمستخدم \'{$a->user_username}\' في المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
 $string['explodegroupusertypenotsupported'] = 'الدالة ldap_explode_group() لا تدعم نوع المستخدم المحدد: {$a}';
 $string['extcourseidinvalid'] = 'المُعرَّف الخارجي للمساق غير صحيح!';
-$string['extremovedsuspend'] = 'تعطيل الانضمام للمستخدم \'{$a->user_username}\' في المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
-$string['extremovedsuspendnoroles'] = 'تعطيل الانضمام للمستخدم \'{$a->user_username}\'  وأزل أدواره في المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
+$string['extremovedsuspend'] = 'قم بتعطيل الانضمام للمستخدم \'{$a->user_username}\' في المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
+$string['extremovedsuspendnoroles'] = 'تعطيل التسجيل والأدوار المحذوفة للمستخدم \'{$a->user_username}\' في المقرر \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['extremovedunenrol'] = 'ألغ انضمام المستخدم \'{$a->user_username}\'  في المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
 $string['failed'] = 'فشل!';
-$string['general_options'] = 'خيارات عامة';
+$string['general_options'] = 'الخيارات العامة';
 $string['group_memberofattribute'] = 'اسم السمة التي تحدد المجموعة التي ينتمي إليها مستخدم معين أوة مجموعة ما (مثل memberOf، groupMembership... إلخ.)';
 $string['group_memberofattribute_key'] = 'سمة \'Member of\\';
 $string['host_url'] = 'حدد مضيف LDAP بشكل رابط مثل \'ldap://ldap.myorg.com/\' أو \'ldaps://ldap.myorg.com/\\';
 $string['host_url_key'] = 'رابط المضيف';
 $string['idnumber_attribute'] = 'إن كانت عضوية المجموعة تضم أسماء مميزة، حدد نفس السمة التي استعملتها لمُعرَّف المستخدم \'ID Number\' المعين في إعدادات مصادقة LDAP.';
 $string['idnumber_attribute_key'] = 'سمة المُعرَّف';
+$string['ldap:manage'] = 'إدارة عينات انضمام LDAP';
 $string['ldap_encoding'] = 'حدد الترميز المستعمل من قبل مخدم LDAP. غالباً هو utf-8، يستعمل MS AD v2 ترميز المنصة الافتراضي مثل cp1252، cp1250، إلخ.';
 $string['ldap_encoding_key'] = 'ترميز LDAP';
-$string['ldap:manage'] = 'إدارة عينات انضمام LDAP';
 $string['memberattribute'] = 'سمة العضو في LDAP';
 $string['memberattribute_isdn'] = 'إذا كانت عضوية المجموعة تحتوي على أسماء مميزة، فعليك تحديدها هنا. إن كان الأمر كذلك، عليك إكمال باقي الإعدادات في هذا المقطع.';
 $string['memberattribute_isdn_key'] = 'سمة العضو تستعمل dn';
@@ -117,7 +117,7 @@ $string['syncenrolmentstask'] = 'مهمة مزامنة انضمامات LDAP';
 $string['template'] = 'خياري: المناهج الدراسية المنشئه آليا يمكن أن تنسخ اعداداتهامن قالب مقرر دراسي.';
 $string['template_key'] = 'القالب';
 $string['unassignrole'] = 'إلغاء تعيين دور \'{$a->role_shortname}\' للمستخدم \'{$a->user_username}\' من المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
-$string['unassignrolefailed'] = 'فشل في إلغاء تعيين الدور \'{$a->role_shortname}\' للمستخدم \'{$a->user_username}\' في المقرر \'{$a->course_shortname}\' (id {$a->course_id})';
+$string['unassignrolefailed'] = 'فشل في إلغاء تعيين الدور \'{$a->role_shortname}\' to للمستخدم \'{$a->user_username}\' في المقرر \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['unassignroleid'] = 'إلغاء الدور ذي المُعرَّف \'{$a->role_id}\' للمستخدم ذي المُعرَّف \'{$a->user_id}\\';
 $string['updatelocal'] = 'حدث المعلومات المحلية';
 $string['user_attribute'] = 'إذا كانت عضوية المجموعة تحتوي على أسماء مميزة، حدد السمة المستعملة لتسمية/بحث المستخدمين. إذا كنت تستعمل مصادقة LDAP، هذه القيمة ينبغي أن تطابق السمة المحددة في \'ID Number\' المعينة في ملحق مصادقة LDAP.';

@@ -148,9 +148,16 @@ function($, log, str, templates, notification, LoadingIcon) {
             M.core_formchangechecker.set_form_changed();
         }
 
-        // Note, jQuery .change() was not working here. Better to
-        // use plain JavaScript anyway.
-        originalSelect[0].dispatchEvent(new Event('change'));
+        // Note, jQuery .change() was not working here.
+        var event;
+        if (typeof Event === 'function') {
+            event = new Event('change');
+        } else {
+            // Support IE.
+            event = document.createEvent('Event');
+            event.initEvent('change', true, true);
+        }
+        originalSelect[0].dispatchEvent(event);
     };
 
     /**
@@ -1093,6 +1100,10 @@ function($, log, str, templates, notification, LoadingIcon) {
             return $.when(renderInput, renderDatalist, renderSelection)
             .then(function(input, suggestions, selection) {
                 originalSelect.hide();
+
+                // Ensure that the data-fieldtype is set for behat.
+                $(input).find('input').attr('data-fieldtype', 'autocomplete');
+
                 originalSelect.after(suggestions);
                 originalSelect.after(input);
                 originalSelect.after(selection);

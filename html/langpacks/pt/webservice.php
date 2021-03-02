@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'webservice', language 'pt', version '3.8'.
  *
- * @package   webservice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     webservice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,7 +44,7 @@ $string['arguments'] = 'Argumentos';
 $string['authmethod'] = 'Método de autenticação';
 $string['callablefromajax'] = 'Disponível para pedidos de de AJAX';
 $string['cannotcreatetoken'] = 'Não tem permissões para criar o token de web service para o serviço {$a}.';
-$string['cannotgetcoursecontents'] = 'Não é possível obter os conteúdos da disciplina';
+$string['cannotgetcoursecontents'] = 'Não é possível obter os conteúdos das disciplinas';
 $string['checkusercapability'] = 'Verificar permissões do utilizador';
 $string['checkusercapabilitydescription'] = 'O utilizador deve ter as permissões correspondentes aos protocolos que usar (Ex: webservice/rest:use, webservice/soap:use). Para ter acesso a esta configuração é necessário criar um papel "web services" com as permissões correspondentes aos protocolos e atribuir este papel, no contexto do site, ao utilizador que irá usar os web services.';
 $string['configwebserviceplugins'] = 'Por questões de segurança apenas os protocolos em utilização devem estar ativos.';
@@ -70,7 +70,7 @@ $string['downloadfiles'] = 'Pode descarregar ficheiros';
 $string['downloadfiles_help'] = 'Se ativar esta opção, qualquer utilizador pode descarregar ficheiros com chaves de segurança. É claro que eles estão limitados aos ficheiros que estão autorizados a descarregar no site.';
 $string['editaservice'] = 'Alterar serviço';
 $string['editservice'] = 'Alterar o serviço: {$a->name} (id: {$a->id})';
-$string['enabled'] = 'Ativo';
+$string['enabled'] = 'Ativo(a)';
 $string['enabledocumentation'] = 'Ativar documentação para programadores';
 $string['enabledocumentationdescription'] = 'Existe documentação detalhada sobre todos os web services cujos protocolos estão ativos.';
 $string['enableprotocols'] = 'Ativar protocolos';

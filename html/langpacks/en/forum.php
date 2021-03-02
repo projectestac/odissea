@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'forum', language 'en', version '3.8'.
  *
- * @package   forum
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     forum
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,8 +58,8 @@ $string['availability'] = 'Availability';
 $string['blockafter'] = 'Post threshold for blocking';
 $string['blockafter_help'] = 'This setting specifies the maximum number of posts which a user can post in the given time period. Users with the capability mod/forum:postwithoutthrottling are exempt from post limits.';
 $string['blockperiod'] = 'Time period for blocking';
-$string['blockperioddisabled'] = 'Don\'t block';
 $string['blockperiod_help'] = 'Students can be blocked from posting more than a given number of posts in a given time period. Users with the capability mod/forum:postwithoutthrottling are exempt from post limits.';
+$string['blockperioddisabled'] = 'Don\'t block';
 $string['blogforum'] = 'Standard forum displayed in a blog-like format';
 $string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['cachedef_forum_is_tracked'] = 'Forum tracking status for user';
@@ -208,13 +208,13 @@ $string['discussionunsubscribed'] = 'You are now unsubscribed from this discussi
 $string['discussthistopic'] = 'Discuss this topic';
 $string['discusstopicname'] = 'Discuss the topic: {$a}';
 $string['displayend'] = 'Display end';
-$string['displayenddate'] = 'Display end: {$a}.';
 $string['displayend_help'] = 'This setting specifies whether a forum post should be hidden after a certain date. Note that administrators can always view forum posts.';
+$string['displayenddate'] = 'Display end: {$a}.';
 $string['displaymode'] = 'Display mode';
 $string['displayperiod'] = 'Display period';
 $string['displaystart'] = 'Display start';
-$string['displaystartdate'] = 'Display start: {$a}.';
 $string['displaystart_help'] = 'This setting specifies whether a forum post should be displayed from a certain date. Note that administrators can always view forum posts.';
+$string['displaystartdate'] = 'Display start: {$a}.';
 $string['displaywordcount'] = 'Display word count';
 $string['displaywordcount_help'] = 'This setting specifies whether the word count of each post should be displayed or not.';
 $string['duedate'] = 'Due date';
@@ -287,10 +287,6 @@ $string['forum:addinstance'] = 'Add a new forum';
 $string['forum:addnews'] = 'Add announcements';
 $string['forum:addquestion'] = 'Add question';
 $string['forum:allowforcesubscribe'] = 'Allow force subscribe';
-$string['forumauthorhidden'] = 'Author (hidden)';
-$string['forumblockingalmosttoomanyposts'] = 'You are approaching the posting threshold. You have posted {$a->numposts} times in the last {$a->blockperiod} and the limit is {$a->blockafter} posts.';
-$string['forumbodydeleted'] = 'The content of this forum post has been removed and can no longer be accessed.';
-$string['forumbodyhidden'] = 'This post cannot be viewed by you, probably because you have not posted in the discussion, the maximum editing time hasn\'t passed yet, the discussion has not started or the discussion has expired.';
 $string['forum:canoverridecutoff'] = 'Post to forums after their cut-off date';
 $string['forum:canoverridediscussionlock'] = 'Reply to locked discussions';
 $string['forum:canposttomygroups'] = 'Post to all groups you have access to';
@@ -304,24 +300,35 @@ $string['forum:exportforum'] = 'Export forum';
 $string['forum:exportownpost'] = 'Export own post';
 $string['forum:exportpost'] = 'Export post';
 $string['forum:grade'] = 'Grade forum';
-$string['forumgrader'] = 'Forum grader';
-$string['forumgradingnavigation'] = 'Forum grading navigation';
-$string['forumgradingpanel'] = 'Forum grading panel';
-$string['forumintro'] = 'Description';
 $string['forum:managesubscriptions'] = 'Manage subscribers';
 $string['forum:movediscussions'] = 'Move discussions';
-$string['forumname'] = 'Forum name';
 $string['forum:pindiscussions'] = 'Pin discussions';
 $string['forum:postprivatereply'] = 'Reply privately to posts';
-$string['forumposts'] = 'Forum posts';
 $string['forum:postwithoutthrottling'] = 'Exempt from post threshold';
 $string['forum:rate'] = 'Rate posts';
 $string['forum:readprivatereplies'] = 'View private replies';
 $string['forum:replynews'] = 'Reply to announcements';
 $string['forum:replypost'] = 'Reply to posts';
-$string['forums'] = 'Forums';
 $string['forum:splitdiscussions'] = 'Split discussions';
 $string['forum:startdiscussion'] = 'Start new discussions';
+$string['forum:viewallratings'] = 'View all raw ratings given by individuals';
+$string['forum:viewanyrating'] = 'View total ratings that anyone received';
+$string['forum:viewdiscussion'] = 'View discussions';
+$string['forum:viewhiddentimedposts'] = 'View hidden timed posts';
+$string['forum:viewqandawithoutposting'] = 'Always see Q and A posts';
+$string['forum:viewrating'] = 'View the total rating you received';
+$string['forum:viewsubscribers'] = 'View subscribers';
+$string['forumauthorhidden'] = 'Author (hidden)';
+$string['forumblockingalmosttoomanyposts'] = 'You are approaching the posting threshold. You have posted {$a->numposts} times in the last {$a->blockperiod} and the limit is {$a->blockafter} posts.';
+$string['forumbodydeleted'] = 'The content of this forum post has been removed and can no longer be accessed.';
+$string['forumbodyhidden'] = 'This post cannot be viewed by you, probably because you have not posted in the discussion, the maximum editing time hasn\'t passed yet, the discussion has not started or the discussion has expired.';
+$string['forumgrader'] = 'Forum grader';
+$string['forumgradingnavigation'] = 'Forum grading navigation';
+$string['forumgradingpanel'] = 'Forum grading panel';
+$string['forumintro'] = 'Description';
+$string['forumname'] = 'Forum name';
+$string['forumposts'] = 'Forum posts';
+$string['forums'] = 'Forums';
 $string['forumsubjectdeleted'] = 'This forum post has been removed';
 $string['forumsubjecthidden'] = 'Subject (hidden)';
 $string['forumtracked'] = 'Unread posts are being tracked';
@@ -334,27 +341,20 @@ $string['forumtype_help'] = 'There are 5 forum types:
 * Q and A forum - Students must first post their perspectives before viewing other students\' posts
 * Standard forum displayed in a blog-like format - An open forum where anyone can start a new discussion at any time, and in which discussion topics are displayed on one page with "Discuss this topic" links
 * Standard forum for general use - An open forum where anyone can start a new discussion at any time';
-$string['forum:viewallratings'] = 'View all raw ratings given by individuals';
-$string['forum:viewanyrating'] = 'View total ratings that anyone received';
-$string['forum:viewdiscussion'] = 'View discussions';
-$string['forum:viewhiddentimedposts'] = 'View hidden timed posts';
-$string['forum:viewqandawithoutposting'] = 'Always see Q and A posts';
-$string['forum:viewrating'] = 'View the total rating you received';
-$string['forum:viewsubscribers'] = 'View subscribers';
 $string['generalforum'] = 'Standard forum for general use';
 $string['generalforums'] = 'General forums';
-$string['graded'] = 'Graded';
-$string['gradeforrating'] = 'Grade for rating: {$a->str_long_grade}';
-$string['gradeforratinghidden'] = 'Grade for rating hidden';
 $string['grade_forum_header'] = 'Whole forum grading';
 $string['grade_forum_name'] = 'Whole forum';
 $string['grade_forum_title'] = 'Grade';
+$string['grade_rating_name'] = 'Rating';
+$string['graded'] = 'Graded';
+$string['gradeforrating'] = 'Grade for rating: {$a->str_long_grade}';
+$string['gradeforratinghidden'] = 'Grade for rating hidden';
 $string['gradeforwholeforum'] = 'Grade for forum: {$a->str_long_grade}';
 $string['gradeforwholeforumhidden'] = 'Grade for forum hidden';
 $string['gradeitem:forum'] = 'Forum';
 $string['gradeitemnameforrating'] = 'Rating grade for {$a->name}';
 $string['gradeitemnameforwholeforum'] = 'Whole forum grade for {$a->name}';
-$string['grade_rating_name'] = 'Rating';
 $string['grades:gradesavedfor'] = 'Grade saved for {$a->fullname}';
 $string['grades:gradesavefailed'] = 'Unable to save grade for {$a->fullname}: {$a->error}';
 $string['gradeusers'] = 'Grade users';
@@ -366,15 +366,15 @@ $string['hidepreviousrepliescount'] = 'Hide previous replies ({$a})';
 $string['hideusersearch'] = 'Hide user search';
 $string['indexoutoftotal'] = '{$a->index} out of {$a->total}';
 $string['indicator:cognitivedepth'] = 'Forum cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Forum activity.';
 $string['indicator:cognitivedepthdef'] = 'Forum cognitive';
 $string['indicator:cognitivedepthdef_help'] = 'The participant has reached this percentage of the cognitive engagement offered by the Forum activities during this analysis interval (Levels = No view, View, Submit, View feedback, Comment on feedback, Resubmit after viewing feedback)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
-$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Forum activity.';
 $string['indicator:socialbreadth'] = 'Forum social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Forum activity.';
 $string['indicator:socialbreadthdef'] = 'Forum social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the Forum activities during this analysis interval (Levels = No participation, Participant alone, Participant with others)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Forum activity.';
 $string['inforum'] = 'in {$a}';
 $string['inpagereplysubject'] = 'Re: {$a}';
 $string['inreplyto'] = 'In reply to {$a}';
@@ -562,14 +562,14 @@ $string['privacy:metadata:forum_digests'] = 'Information about the digest prefer
 $string['privacy:metadata:forum_digests:forum'] = 'The forum subscribed to.';
 $string['privacy:metadata:forum_digests:maildigest'] = 'The digest preference.';
 $string['privacy:metadata:forum_digests:userid'] = 'The ID of the user with the digest preference.';
-$string['privacy:metadata:forum_discussions'] = 'Information about the individual forum discussions that a user has created';
-$string['privacy:metadata:forum_discussions:assessed'] = 'TODOD - what does this field store';
-$string['privacy:metadata:forum_discussions:name'] = 'The name of the discussion, as chosen by the author.';
-$string['privacy:metadata:forum_discussions:timemodified'] = 'The time that the discussion was last modified.';
 $string['privacy:metadata:forum_discussion_subs'] = 'Information about the subscriptions to individual forum discussions';
 $string['privacy:metadata:forum_discussion_subs:discussionid'] = 'The ID of the discussion that was subscribed to.';
 $string['privacy:metadata:forum_discussion_subs:preference'] = 'The start time of the subscription.';
 $string['privacy:metadata:forum_discussion_subs:userid'] = 'The ID of the user with the discussion subscription.';
+$string['privacy:metadata:forum_discussions'] = 'Information about the individual forum discussions that a user has created';
+$string['privacy:metadata:forum_discussions:assessed'] = 'TODOD - what does this field store';
+$string['privacy:metadata:forum_discussions:name'] = 'The name of the discussion, as chosen by the author.';
+$string['privacy:metadata:forum_discussions:timemodified'] = 'The time that the discussion was last modified.';
 $string['privacy:metadata:forum_discussions:userid'] = 'The ID of the user who created the discussion';
 $string['privacy:metadata:forum_discussions:usermodified'] = 'The ID of the user who last modified the discussion in some way.';
 $string['privacy:metadata:forum_grades'] = 'Grade data for the forum';
@@ -631,10 +631,10 @@ $string['replies'] = 'Replies';
 $string['repliesmany'] = '{$a} replies so far';
 $string['repliesone'] = '{$a} reply so far';
 $string['reply'] = 'Reply';
-$string['replyauthorself'] = '{$a} (you)';
-$string['replyforum'] = 'Reply to forum';
 $string['reply_handler'] = 'Reply to forum posts via email';
 $string['reply_handler_name'] = 'Reply to forum posts';
+$string['replyauthorself'] = '{$a} (you)';
+$string['replyforum'] = 'Reply to forum';
 $string['replyingtoauthor'] = 'Replying to {$a}...';
 $string['replyplaceholder'] = 'Write your reply...';
 $string['replytopostbyemail'] = 'You can reply to this via email.';
@@ -649,10 +649,11 @@ $string['rssarticles_help'] = 'This setting specifies the number of articles (ei
 $string['rsssubscriberssdiscussions'] = 'RSS feed of discussions';
 $string['rsssubscriberssposts'] = 'RSS feed of posts';
 $string['rsstype'] = 'RSS feed for this activity';
-$string['rsstypedefault'] = 'RSS feed type';
 $string['rsstype_help'] = 'To enable the RSS feed for this activity, select either discussions or posts to be included in the feed.';
+$string['rsstypedefault'] = 'RSS feed type';
 $string['search'] = 'Search';
 $string['search:activity'] = 'Forum - activity information';
+$string['search:post'] = 'Forum - posts';
 $string['searchdatefrom'] = 'Posts must be newer than this';
 $string['searchdateto'] = 'Posts must be older than this';
 $string['searchforumintro'] = 'Please enter search terms into one or more of the following fields:';
@@ -661,7 +662,6 @@ $string['searchfullwords'] = 'These words should appear as whole words';
 $string['searchnotwords'] = 'These words should NOT be included';
 $string['searcholderposts'] = 'Search older posts...';
 $string['searchphrase'] = 'This exact phrase must appear in the post';
-$string['search:post'] = 'Forum - posts';
 $string['searchresults'] = 'Search results';
 $string['searchsubject'] = 'These words should be in the subject';
 $string['searchtags'] = 'Is tagged with';
@@ -700,11 +700,11 @@ $string['subscriberstowithcount'] = 'Subscribers to "{$a->name}" ({$a->count})';
 $string['subscribestart'] = 'Send me notifications of new posts in this forum';
 $string['subscribestop'] = 'I don\'t want to be notified of new posts in this forum';
 $string['subscription'] = 'Subscription';
+$string['subscription_help'] = 'If you are subscribed to a forum it means you will receive notification of new forum posts. Usually you can choose whether you wish to be subscribed, though sometimes subscription is forced so that everyone receives notifications.';
 $string['subscriptionandtracking'] = 'Subscription and tracking';
 $string['subscriptionauto'] = 'Auto subscription';
 $string['subscriptiondisabled'] = 'Subscription disabled';
 $string['subscriptionforced'] = 'Forced subscription';
-$string['subscription_help'] = 'If you are subscribed to a forum it means you will receive notification of new forum posts. Usually you can choose whether you wish to be subscribed, though sometimes subscription is forced so that everyone receives notifications.';
 $string['subscriptionmode'] = 'Subscription mode';
 $string['subscriptionmode_help'] = 'When a participant is subscribed to a forum it means they will receive forum post notifications. There are 4 subscription mode options:
 

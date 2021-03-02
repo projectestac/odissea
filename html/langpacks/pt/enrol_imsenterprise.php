@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'pt', version '3.8'.
  *
- * @package   enrol_imsenterprise
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_imsenterprise
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,14 +39,14 @@ $string['createnewcategories_desc'] = 'Se o elemento &lt;org&gt;&lt;orgunit&gt; 
 
 Nos casos em que não existir nenhuma categoria com o nome indicado será criada uma nova categoria (oculta).';
 $string['createnewcourses'] = 'Criar novas disciplinas (ocultas) caso não existam no Moodle';
-$string['createnewcourses_desc'] = 'Se ativar esta opção, o módulo de inscrição IMS Enterprise pode criar as disciplinas que forem especificadas nos dados IMS e que ainda não existam no Moodle. As disciplinas criadas neste processo estarão ocultas inicialmente.';
+$string['createnewcourses_desc'] = 'Se esta configuração estiver ativa, o módulo de inscrição IMS Enterprise pode criar as disciplinas que forem especificadas nos dados IMS e que ainda não existam no Moodle. As disciplinas criadas neste processo estarão ocultas inicialmente.';
 $string['createnewusers'] = 'Criar contas de utilizador para utilizadores ainda não registados no Moodle';
 $string['createnewusers_desc'] = 'A informação de inscrição IMS Enterprise normalmente descreve um conjunto de utilizadores. Se este módulo estiver ativo, as contas podem ser criadas para os utilizadores que ainda não existam no Moodle.
 
 Os utilizadores são procurados inicialmente pelo campo <strong>idnumber</strong> e depois pelo seu nome de utilizador. As senhas não são importadas pelo módulo. Por isso, deve ser especificado um módulo de autenticação para validar as contas de utilizador.';
 $string['cronfrequency'] = 'Frequência de processamento';
 $string['deleteusers'] = 'Eliminar as contas de utilizador se isso for especificado nos dados IMS';
-$string['deleteusers_desc'] = 'Se ativar esta opção, o módulo de inscrição IMS Enterprise pode remover contas de utilizador, caso esteja especificado nos dados IMS (campo "recstatus" = 3). Como procedimento predefinido no Moodle, as contas não serão apagadas da base de dados, mas marcadas como "apagadas".';
+$string['deleteusers_desc'] = 'Se esta configuração estiver ativa, o módulo de inscrição IMS Enterprise pode remover contas de utilizador se isso for especificado nos dados IMS (campo "recstatus" = 3). Como é procedimento habitual no Moodle, as contas não serão removidas da base de dados, mas marcadas como "apagadas".';
 $string['doitnow'] = 'executar uma importação IMS Enterprise';
 $string['emptyattribute'] = 'Deixar vazio';
 $string['filelockedmail'] = 'O ficheiro de texto que está a utilizar para inscrições IMS ({$a}) não pôde ser eliminado pelo processo cron. Normalmente, tal significa que as permissões não estão bem definidas. Por favor, ajuste as permissões de forma a que o Moodle possa eliminar o ficheiro; caso contrário, este será repetidamente processado.';
@@ -71,7 +71,7 @@ $string['pluginname'] = 'Ficheiro IMS Enterprise';
 $string['pluginname_desc'] = 'Este módulo de inscrição irá verificar de forma contínua a existência de um ficheiro para processamento na localização que for especificada. O ficheiro deve estar no formato IMS Enterprise e conter os seguintes elementos XML: person, group, and membership.';
 $string['privacy:metadata'] = 'O módulo Ficheiro IMS Enterprise não armazena quaisquer dados pessoais.';
 $string['processphoto'] = 'Adicionar dados da fotografia do utilizador ao perfil';
-$string['processphotowarning'] = 'Aviso: o processamento de imagens tende a aumentar significativamente a carga no servidor. Não é recomendado ativar esta opção se o número de alunos a processar for muito elevado.';
+$string['processphotowarning'] = 'Aviso: o processamento de imagens tende a aumentar significativamente a carga no servidor. Não é recomendável ativar esta opção se o número de alunos a processar for muito elevado.';
 $string['restricttarget'] = 'Os dados apenas devem ser processados se for especificado';
 $string['restricttarget_desc'] = 'Um ficheiro IMS Enterprise pode ser criado para diferentes destinos (LMSs distintos ou diferentes departamento de uma instituição). É possível especificar nestes ficheiros um ou mais sistemas de destino. Isto é feito através da inclusão da tag <strong>target</strong> dentro da tag <strong>properties</strong>.
 

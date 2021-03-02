@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multichoice', language 'de', version '3.8'.
  *
- * @package   qtype_multichoice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multichoice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,11 +29,11 @@ $string['answerhowmany'] = 'Eine oder mehrere Antworten?';
 $string['answerhowmany_desc'] = 'Sollen neue Multiple-Choice-Fragen eine Antwort (mit Radiobuttons) oder mehrere Antworten (mit Checkboxen) haben?';
 $string['answernumbering'] = 'Antworten nummerieren?';
 $string['answernumbering123'] = '1., 2., 3., ...';
-$string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
-$string['answernumbering_desc'] = 'Legen SIe die Nummerierung neuer Multiple-Choice-Fragen fest.';
-$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
+$string['answernumbering_desc'] = 'Legen SIe die Nummerierung neuer Multiple-Choice-Fragen fest.';
+$string['answernumberingabc'] = 'a., b., c., ...';
+$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingnone'] = 'Keine Nummerierung';
 $string['answersingleno'] = 'Mehrere Antworten erlauben';
 $string['answersingleyes'] = 'Nur eine Antwort erlauben';
@@ -41,7 +41,7 @@ $string['choiceno'] = 'Auswahl {$a}';
 $string['choices'] = 'Antwort-Optionen';
 $string['clearchoice'] = 'Meine Auswahl widerrufen';
 $string['clozeaid'] = 'Fehlendes Wort eintragen';
-$string['correctansweris'] = 'Die richtige Antwort lautet: {$a}';
+$string['correctansweris'] = 'Die richtige Antwort ist: {$a}';
 $string['correctanswersare'] = 'Die richtigen Antworten sind: {$a}';
 $string['correctfeedback'] = 'Für alle richtigen Antworten';
 $string['deletedchoice'] = 'Diese Auswahl ist gelöscht worden, nachdem der Versuch begonnen wurde.';
@@ -62,9 +62,9 @@ $string['partiallycorrectfeedback'] = 'Für alle teilrichtigen Antworten';
 $string['pleaseselectananswer'] = 'Bitte wählen Sie eine Antwort.';
 $string['pleaseselectatleastoneanswer'] = 'Bitte wählen Sie mindestens eine Antwort.';
 $string['pluginname'] = 'Multiple-Choice';
+$string['pluginname_help'] = 'Teilnehmer/innen wählen zur Beantwortung eine oder mehrere Antwortvorgaben aus einer Liste aus. Legen Sie fest, ob eine oder mehrere Antworten angeklickt werden können.';
 $string['pluginnameadding'] = 'Multiple-Choice-Frage hinzufügen';
 $string['pluginnameediting'] = 'Multiple-Choice-Frage bearbeiten';
-$string['pluginname_help'] = 'Teilnehmer/innen wählen zur Beantwortung eine oder mehrere Antwortvorgaben aus einer Liste aus. Legen Sie fest, ob eine oder mehrere Antworten angeklickt werden können.';
 $string['pluginnamesummary'] = 'Erlaubt eine Auswahl einer oder mehrerer Antworten aus einer vordefinierten Liste.';
 $string['privacy:metadata'] = 'Der Fragentyp \'Multiple-Choice\' speichert keine personenbezogenen Daten.';
 $string['selectmulti'] = 'Wählen Sie eine oder mehrere Antworten:';

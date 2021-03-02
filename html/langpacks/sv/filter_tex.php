@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,23 +12,29 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filter_tex', language 'sv', version '3.8'.
  *
- * @package   filter_tex
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filter_tex
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['configconvertformat'] = 'Om <i>latex, dvips</i> och <i>konvertera</i> är tillgängliga, visas bilderna skapas med det angivna formatet. Om det inte är aktiverat kommer mimetex att användas och det kommer att skapa GIF-bilder.';
-$string['convertformat'] = '<i>omvandla</i> formatet för output';
-$string['filtername'] = 'TeX notation';
+$string['convertformat'] = 'Bildformat';
+$string['filtername'] = 'TeX-notation';
 $string['latexpreamble'] = 'LaTeX utkast';
 $string['latexsettings'] = 'Inställningar för LaTeX Renderer';
 $string['pathconvert'] = 'Sökväg för <i>convert</i> binär';
 $string['pathdvips'] = 'Sökväg för <i>dvips</i> binär';
+$string['pathdvisvgm'] = 'Sökväg för <i>dvisvgm</i>-fil';
 $string['pathlatex'] = 'Sökväg för <i>latex</i> binär';
+$string['pathmimetex'] = 'Sökväg för <i>mimetex</i>-fil';
+$string['pathmimetexdesc'] = 'Moodle kommer att använda den egna minetex-filen såvida inte en annan sökväg anges.';
+$string['privacy:metadata'] = 'Pluginmodulen TeX-notation lagrar ingen personlig information.';
+$string['source'] = 'TeX-källa';

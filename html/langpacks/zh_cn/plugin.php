@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'plugin', language 'zh_cn', version '3.8'.
  *
- * @package   plugin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     plugin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -97,8 +97,8 @@ $string['type_editor'] = '编辑器';
 $string['type_editor_plural'] = '编辑器';
 $string['type_enrol'] = '注册方法';
 $string['type_enrol_plural'] = '注册方法';
-$string['type_fileconvertermanage'] = '管理文档转换器';
 $string['type_fileconverter_plural'] = '文档转换器';
+$string['type_fileconvertermanage'] = '管理文档转换器';
 $string['type_filter'] = '文本过滤器';
 $string['type_filter_plural'] = '文本过滤器';
 $string['type_format'] = '课程格式';
@@ -164,8 +164,6 @@ $string['updatepluginconfirmwarning'] = '请注意：Moodle不会自动备份你
 $string['validationmsg_componentmatch'] = '完整的组件名称';
 $string['validationmsg_componentmismatchname'] = '插件名不符合';
 $string['validationmsg_componentmismatchtype'] = '插件类型不符合';
-$string['validationmsglevel_debug'] = '调试';
-$string['validationmsglevel_warning'] = '警告';
 $string['validationmsg_missingcomponent_help'] = '所有插件必须在version.php文件的“$plugin-$component”中提供完整的组件名称。';
 $string['validationmsg_missingexpectedlangenfile_info'] = '指定的插件类型缺少应有的英语语言文件{$a}。';
 $string['validationmsg_missinglangenfile'] = '没有找到英语语言文件';
@@ -174,6 +172,8 @@ $string['validationmsg_onedir'] = 'ZIP 压缩包文件结构不正确。';
 $string['validationmsg_targetexists'] = '目标位置已经存在并且将被移除';
 $string['validationmsg_targetnotdir'] = '目标位置被一个文件占用';
 $string['validationmsg_unknowntype'] = '未知的插件类型';
+$string['validationmsglevel_debug'] = '调试';
+$string['validationmsglevel_warning'] = '警告';
 $string['version'] = '版本';
 $string['versiondb'] = '当前版本';
 $string['versiondisk'] = '新版本';

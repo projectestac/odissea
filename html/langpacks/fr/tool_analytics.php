@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'fr', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,15 +70,15 @@ $string['evaluate'] = 'Évaluer';
 $string['evaluatemodel'] = 'Évaluer le modèle';
 $string['evaluationinbatches'] = 'Les contenus du site sont calculés et stockés en lots. Le processus d\'évaluation peut être arrêté à tout moment. Lors du prochain lancement, il continuera là où il s\'est arrêté.';
 $string['evaluationmode'] = 'Mode d\'évaluation';
-$string['evaluationmodecolconfiguration'] = 'Configuration';
-$string['evaluationmodecoltrainedmodel'] = 'Modèle entraîné';
-$string['evaluationmodeconfiguration'] = 'Évaluer le modèle de configuration';
 $string['evaluationmode_help'] = 'Il y a deux modes d\'évaluation :
 
 * Modèle entraîné - Les données du site sont utilisées comme données de test pour évaluer la précision du modèle entraîné.
 * Configuration - Les données du site sont séparées en données d\'entraînement et données de test, pour à la fois entraîner et tester la précision de la configuration du modèle.
 
 Le mode Modèle entraîné n\'est disponible que si un modèle entraîné a été importé dans le site et qu\'il n\'a pas encore été ré-entraîné avec les données du site.';
+$string['evaluationmodecolconfiguration'] = 'Configuration';
+$string['evaluationmodecoltrainedmodel'] = 'Modèle entraîné';
+$string['evaluationmodeconfiguration'] = 'Évaluer le modèle de configuration';
 $string['evaluationmodeinfo'] = 'Ce modèle a été importé dans le site. Vous pouvez soit évaluer sa performance, soit évaluer la performance de sa configuration au moyen des données du site.';
 $string['evaluationmodetrainedmodel'] = 'Évaluer le modèle entraîné';
 $string['executescheduledanalysis'] = 'Effectuer l\'analyse programmée';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,84 +12,71 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'sv', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addinganewrole'] = 'Lägger till en ny roll';
-$string['addrole'] = 'Lägg till en ny roll';
-$string['advancedoverride'] = 'Avancerat överskridande av roll';
+$string['addinganewrole'] = 'Lägger till ny roll';
+$string['addrole'] = 'Lägg till ny roll';
+$string['advancedoverride'] = 'Avancerat åsidosättande av roll';
 $string['allow'] = 'Tillåt';
 $string['allowassign'] = 'Tillåt tilldelning av roller';
 $string['allowed'] = 'Tillåten';
-$string['allowoverride'] = 'Tillåt överskridanden av roller';
+$string['allowoverride'] = 'Tillåt åsidosättande av roller';
 $string['allowroletoassign'] = 'Tillåt användare med rollen {$a->fromrole} att tilldela rollen {$a->targetrole}';
-$string['allowroletooverride'] = 'Tillåt användare med rollen {$a->fromrole} att överskrida rollen {$a->targetrole}';
+$string['allowroletooverride'] = 'Tillåt användare med rollen {$a->fromrole} att åsidosätta rollen {$a->targetrole}';
 $string['allowroletoswitch'] = 'Tillåt användare med rollen {$a->fromrole} att byta till rollen {$a->targetrole}';
-$string['allowswitch'] = 'Tillåt byten av roller';
+$string['allowroletoview'] = 'Tillåt användare med rollen {$a->fromrole} att se rollen {$a->targetrole}';
+$string['allowswitch'] = 'Tillåt rollbyten';
+$string['allowview'] = 'Tillåt roll att se';
 $string['allsiteusers'] = 'Alla användare på webbplatsen';
+$string['analytics:listinsights'] = 'Visa insikter';
+$string['analytics:listowninsights'] = 'Visa egna insikter';
+$string['analytics:managemodels'] = 'Hantera modeller';
 $string['archetype'] = 'Arketyp för roll';
+$string['archetype_help'] = 'Roll-arketypen bestämmer behörigheterna när en roll återställs till standard. Den bestämmer också eventuella nya behörigheter för rollen när webbplatsen uppgraderas.';
 $string['archetypecoursecreator'] = 'ARKETYP: Kursutvecklare';
-$string['archetypeeditingteacher'] = 'ARKETYP: (redigerande) (distans)lärare';
-$string['archetypefrontpage'] = 'ARKETYP: Användare som är autenticerad på ingångssidan';
+$string['archetypeeditingteacher'] = 'ARKETYP: Lärare (redigerande)';
+$string['archetypefrontpage'] = 'ARKETYP: Användare som är autentiserad på ingångssidan';
 $string['archetypeguest'] = 'ARKETYP: Gäst';
 $string['archetypemanager'] = 'ARKETYP: Administratör';
-$string['archetypestudent'] = 'ARKETYP: student/elev/deltagare/lärande';
-$string['archetypeteacher'] = 'ARKETYP: icke-redigerande (distans)lärare';
+$string['archetypestudent'] = 'ARKETYP: Student';
+$string['archetypeteacher'] = 'ARKETYP: Lärare (icke-redigerande)';
 $string['archetypeuser'] = 'ARKETYP: Autenticerad användare';
 $string['assignanotherrole'] = 'Tilldela en annan roll';
 $string['assignedroles'] = 'Tilldelade roller';
 $string['assignerror'] = 'Fel vid tilldelning av rollen {$a->role} till användaren {$a->user}.';
-$string['assignglobalroles'] = 'Tilldela globala roller';
+$string['assignglobalroles'] = 'Tilldela systemroller';
+$string['assignmentcontext'] = 'Tilldelningskontext';
+$string['assignmentoptions'] = 'Tilldelningsalternativ';
 $string['assignrole'] = 'Tilldela roll';
 $string['assignrolenameincontext'] = 'Tilldela rollen  \'{$a->role}\' i {$a->context}';
 $string['assignroles'] = 'Tilldela roller';
-$string['assignroles_help'] = '<p>
-Genom att tilldela en roll till användare i ett sammanhang
-så ger du dem de tillstånd som den rollen innefattar. Detta
-gäller både för det aktuella sammanhanget och alla lägre sammanhang.
-</p>
-
-<p>
-Sammanhang:
-</p>
-<ol>
-<li>System (hela installationen)</li>
+$string['assignroles_help'] = '<p>Genom att tilldela en roll till användare i ett sammanhang så ger du dem de tillstånd som den rollen innefattar. Detta gäller både för det aktuella sammanhanget och alla lägre sammanhang.</p>
+<p>Sammanhang:</p>
+<ol><li>System (hela installationen)</li>
 <li>Ingångssidan ("kursen på webbplatsnivå")</li>
 <li>Kategorier för kurser</li>
 <li>Underkategorier för kurser</li>
 <li>Kurser</li>
-<li>Block och aktiviteter</li>
-</ol>
-
-<p>
-Så om du t.ex. tilldelar en roll som student/elev/deltagare/lärande
-till en användare i en kurs så kommer de att ha den rollen i den kursen
-men även i alla block och aktiviteter inne i den kursen. De tillstånd som de
-sedan rent faktiskt kommer att inneha kan vara beroende av andra roller och av överskridanden som har definierats.
-</p>
-
-<p>
-Sen även
-<a href="help.php?file=roles.html">Roller</a>,
-<a href="help.php?file=contexts.html">Sammanhang</a>,
-<a href="help.php?file=permissions.html">Tillstånd</a> och
-<a href="help.php?file=overrides.html">Överskridanden</a>.
-</p>';
+<li>Block och aktiviteter</li></ol>
+<p>Så om du t.ex. tilldelar en roll som student till en användare i en kurs så kommer de att ha den rollen i den kursen men även i alla block och aktiviteter inne i den kursen. De tillstånd som de sedan rent faktiskt kommer att inneha kan vara beroende av andra roller och av överskridanden som har definierats.</p>
+<p>Sen även <a href="help.php?file=roles.html">Roller</a>, <a href="help.php?file=contexts.html">Sammanhang</a>, <a href="help.php?file=permissions.html">Tillstånd</a> och <a href="help.php?file=overrides.html">Överskridanden</a>.</p>';
 $string['assignrolesin'] = 'Tilldela roller i {$a}';
-$string['assignrolesrelativetothisuser'] = 'Tilldela roller som är relativa i förh till den här användaren';
+$string['assignrolesrelativetothisuser'] = 'Tilldela roller relativt den här användaren';
 $string['backtoallroles'] = 'Tillbaka till listan över alla roller';
 $string['backup:anonymise'] = 'Anonymisera användardata vid säkerhetskopiering';
 $string['backup:backupactivity'] = 'Aktiviteter för säkerhetskopiering';
-$string['backup:backupcourse'] = 'Säkerhetskopiering - kurser';
+$string['backup:backupcourse'] = 'Säkerhetskopiera kurser';
 $string['backup:backupsection'] = 'Sektioner för säkerhetskopiering';
 $string['backup:backuptargetimport'] = 'Säkerhetskopiering för import';
 $string['backup:configure'] = 'Konfigurera alternativ för säkerhetskopiering';
@@ -103,71 +89,73 @@ $string['badges:configuremessages'] = 'Konfigurera meddelanden för märken';
 $string['badges:createbadge'] = 'Skapa/duplicera märken';
 $string['badges:deletebadge'] = 'Ta bort märken';
 $string['badges:earnbadge'] = 'Ta märke';
-$string['badges:manageglobalsettings'] = 'Administrera globala inställningar för märken';
+$string['badges:manageglobalsettings'] = 'Hantera globala märkesinställningar';
 $string['badges:manageownbadges'] = 'Visa och administrera egna tagna märken';
 $string['badges:revokebadge'] = 'Återkalla ett märke från en användare';
 $string['badges:viewawarded'] = 'Visa användare som tagit ett specifikt märke utan att kunna tilldela ett märke';
 $string['badges:viewbadges'] = 'Visa tillgängliga märken utan att ha tagit dem';
 $string['badges:viewotherbadges'] = 'Visa publika märken i andra användares profiler';
-$string['block:edit'] = 'Redigera inställningarna ett block';
+$string['block:edit'] = 'Redigera blockinställningar';
 $string['block:view'] = 'Visa block';
-$string['blog:create'] = 'Skapa nya bidrag till bloggar';
-$string['blog:manageentries'] = 'Redigera och administrera inlägg';
-$string['blog:manageexternal'] = 'Redigera och administrera externa bloggar';
-$string['blog:search'] = 'Sök inlägg i bloggar';
-$string['blog:view'] = 'Visa bidrag till bloggar';
-$string['blog:viewdrafts'] = 'Visa utkast till inlägg i bloggar';
-$string['calendar:manageentries'] = 'Administrera vilka bidrag som helst  till kalender';
-$string['calendar:managegroupentries'] = 'Administrera bidrag till gruppkalendern';
-$string['calendar:manageownentries'] = 'Administrera egna bidrag till kalender';
-$string['capabilities'] = 'Kapaciteter';
-$string['capability'] = 'Kapacitet';
+$string['blog:create'] = 'Skapa nya blogginlägg';
+$string['blog:manageentries'] = 'Redigera och hantera inlägg';
+$string['blog:manageexternal'] = 'Redigera och hantera externa bloggar';
+$string['blog:search'] = 'Sök blogginlägg';
+$string['blog:view'] = 'Visa blogginlägg';
+$string['blog:viewdrafts'] = 'Visa utkast till blogginlägg';
+$string['calendar:manageentries'] = 'Hantera alla kalenderhändelser';
+$string['calendar:managegroupentries'] = 'Hantera händelser i gruppkalendrar';
+$string['calendar:manageownentries'] = 'Hantera egna kalenderhändelser';
+$string['capabilities'] = 'Behörigheter';
+$string['capability'] = 'Behörighet';
 $string['category:create'] = 'Skapa kategorier';
 $string['category:delete'] = 'Ta bort kategorier';
-$string['category:manage'] = 'Administrera kategorier';
+$string['category:manage'] = 'Hantera kategorier';
 $string['category:update'] = 'Uppdatera kategorier';
+$string['category:viewcourselist'] = 'Visa lista med kurser du inte är registrerad på';
 $string['category:viewhiddencategories'] = 'Se dolda kategorier';
-$string['category:visibility'] = 'Visa dolda kategorier';
+$string['category:visibility'] = 'Se dolda kategorier';
 $string['checkglobalpermissions'] = 'Kontrollera tillstånd för system';
 $string['checkpermissions'] = 'Kontrollera tillstånd';
 $string['checkpermissionsin'] = 'Kontrollera tillstånd i {$a}';
 $string['checksystempermissionsfor'] = 'Kontrollera tillstånd på systemnivå för  {$a->fullname}';
 $string['checkuserspermissionshere'] = 'Kontrollera vilka tillstånd  {$a->fullname} har i det här sammanhanget {$a->contextlevel}';
-$string['chooseroletoassign'] = 'Var snäll och välj en roll att tilldela';
+$string['chooseroletoassign'] = 'Välj roll att tilldela';
 $string['cohort:assign'] = 'Lägg till och ta bort medlemmar i kohort';
 $string['cohort:manage'] = 'Skapa, ta bort och flytta kohorter';
-$string['cohort:view'] = 'Visa kohorter på webbplatsnivå';
+$string['cohort:view'] = 'Visa webbplatsövergripande kohorter';
 $string['comment:delete'] = 'Ta bort kommentarer';
 $string['comment:post'] = 'Publicera kommentarer';
-$string['comment:view'] = 'Läs kommentarer';
+$string['comment:view'] = 'Visa kommentarer';
 $string['competency:competencygrade'] = 'Ange bedömning av kompetenser';
-$string['competency:competencymanage'] = 'Hantera ramverk för kompetenser';
-$string['competency:competencyview'] = 'Visa ramverk för kompetenser';
-$string['competency:coursecompetencyconfigure'] = 'Konfigurera inställningar för ramverk för kompetenser';
+$string['competency:competencymanage'] = 'Hantera kompetensramverk';
+$string['competency:competencyview'] = 'Visa kompetensramverk';
+$string['competency:coursecompetencyconfigure'] = 'Konfigurera inställningar för kurskompetenser';
 $string['competency:coursecompetencygradable'] = 'Mottag kompetensbedömning';
 $string['competency:coursecompetencymanage'] = 'Hantera kurskompetenser';
 $string['competency:coursecompetencyview'] = 'Visa kurskompetenser';
-$string['competency:evidencedelete'] = 'Ta bort verifiering';
-$string['competency:plancomment'] = 'Kommentar på en studieplan';
-$string['competency:plancommentown'] = 'Kommentar på den egna studieplanen';
+$string['competency:evidencedelete'] = 'Ta bort bevis';
+$string['competency:plancomment'] = 'Kommentar en studieplan';
+$string['competency:plancommentown'] = 'Kommentar den egna studieplanen';
 $string['competency:planmanage'] = 'Hantera studieplaner';
 $string['competency:planmanagedraft'] = 'Hantera utkast av studieplaner';
 $string['competency:planmanageown'] = 'Hantera egna studieplaner';
 $string['competency:planmanageowndraft'] = 'Hantera egna utkast av studieplaner';
-$string['competency:planrequestreview'] = 'Begär en granskning av en studieplan';
-$string['competency:planrequestreviewown'] = 'Begär en granskning av den egna studieplanen';
-$string['competency:planreview'] = 'Granska en studieplan';
-$string['competency:planview'] = 'Granska alla studieplaner';
-$string['competency:planviewdraft'] = 'Granska utkast till studieplaner';
+$string['competency:planrequestreview'] = 'Begär granskning av en studieplan';
+$string['competency:planrequestreviewown'] = 'Begär granskning av den egna studieplanen';
+$string['competency:planreview'] = 'Granska studieplan';
+$string['competency:planview'] = 'Visa alla studieplaner';
+$string['competency:planviewdraft'] = 'Visa alla utkast till studieplaner';
 $string['competency:planviewown'] = 'Visa egna studieplaner';
-$string['competency:planviewowndraft'] = 'Visa egna utkast av studieplaner';
+$string['competency:planviewowndraft'] = 'Visa egna utkast till studieplaner';
 $string['competency:templatemanage'] = 'Hantera mallar för läroplaner';
 $string['competency:templateview'] = 'Visa mallar för studieplaner';
 $string['competency:usercompetencycomment'] = 'Kommentera en användares kompetens';
-$string['competency:usercompetencycommentown'] = 'Kommentera på egna användarkompetensen';
+$string['competency:usercompetencycommentown'] = 'Kommentera den egna användarkompetensen';
 $string['competency:usercompetencyrequestreview'] = 'Begär en granskning av en användares kompetens';
 $string['competency:usercompetencyrequestreviewown'] = 'Begär en granskning av den egna användarkompetensen';
 $string['competency:usercompetencyreview'] = 'Granska en användares kompetens';
+$string['competency:usercompetencyview'] = 'Visa användarkompetens';
 $string['competency:userevidencemanage'] = 'Hantera verifieringar av tidigare lärande';
 $string['competency:userevidencemanageown'] = 'Hantera verifieringar av eget tidigare lärande';
 $string['competency:userevidenceview'] = 'Visa verifieringar av användares tidigare lärande';
@@ -175,56 +163,74 @@ $string['confirmaddadmin'] = 'Vill Du verkligen lägga till användaren <strong>
 $string['confirmdeladmin'] = 'Vill Du verkligen ta bort användaren <strong>{$a}</strong> från listan över administratörer på webbplatsen?';
 $string['confirmroleprevent'] = 'Vill Du verkligen ta bort <strong>{$a->role}</strong> från listan av tillåtna roller för kapaciteten {$a->cap} i sammanhanget {$a->context}?';
 $string['confirmroleunprohibit'] = 'Vill Du verkligen ta bort <strong>{$a->role}</strong> från listan av inte tillåtna roller för kapaciteten {$a->cap} i sammanhanget {$a->context}?';
+$string['confirmunassign'] = 'Är du säker på att du vill ta bort den här rollen för denna användare?';
 $string['confirmunassignno'] = 'Avbryt';
-$string['confirmunassigntitle'] = 'Bekräfta byte av roll';
+$string['confirmunassigntitle'] = 'Bekräfta ändring av roll';
 $string['confirmunassignyes'] = 'Ta bort';
 $string['context'] = 'Sammanhang';
 $string['course:activityvisibility'] = 'Dölj/visa aktiviteter';
 $string['course:bulkmessaging'] = 'Skicka ett meddelande till många människor';
-$string['course:changecategory'] = 'Byt kategori av kurs';
-$string['course:changefullname'] = 'Ändra kursens fulla namn';
+$string['course:changecategory'] = 'Ändra kurskategori';
+$string['course:changefullname'] = 'Ändra kursens fullständiga namn';
 $string['course:changeidnumber'] = 'Ändra kursens ID-nummer';
+$string['course:changelockedcustomfields'] = 'Ändra låsta anpassade fält';
 $string['course:changeshortname'] = 'Ändra kursens kortnamn';
-$string['course:changesummary'] = 'Ändra kursens sammanfattning';
+$string['course:changesummary'] = 'Ändra kursbeskrivning';
+$string['course:configurecustomfields'] = 'Konfigurera anpassade fält';
 $string['course:create'] = 'Skapa kurser';
+$string['course:creategroupconversations'] = 'Skapa gruppkonversationer';
 $string['course:delete'] = 'Ta bort kurser';
 $string['course:enrolconfig'] = 'Konfigurera instanser av registreringar i kurser';
 $string['course:enrolreview'] = 'Ta bort registreringar på kurser';
-$string['course:manageactivities'] = 'Administrera aktiviteter';
-$string['course:managefiles'] = 'Administrera filer';
-$string['course:managegrades'] = 'Administrera betyg/omdömen';
-$string['course:managegroups'] = 'Administrera grupper';
-$string['course:managescales'] = 'Administrera skalor';
-$string['course:markcomplete'] = 'Markera användare som färdiga i dokumentation om kursens fullföljande';
+$string['course:ignoreavailabilityrestrictions'] = 'Ignorera tillgänglighetsrestriktioner';
+$string['course:ignorefilesizelimits'] = 'Använda filer större än begränsningarna tillåter';
+$string['course:isincompletionreports'] = 'Visas i rapporter över slutföranden av kurser';
+$string['course:manageactivities'] = 'Hantera aktiviteter';
+$string['course:managefiles'] = 'Hantera filer';
+$string['course:managegrades'] = 'Hantera betyg och omdömen';
+$string['course:managegroups'] = 'Hantera grupper';
+$string['course:managescales'] = 'Hantera skalor';
+$string['course:markcomplete'] = 'Markera användare som färdiga i kurs-slutförandet';
 $string['course:movesections'] = 'Flytta sektioner';
+$string['course:overridecompletion'] = 'Åsidosätt status för slutförande av aktivitet';
+$string['course:renameroles'] = 'Byta namn på roller';
 $string['course:request'] = 'Begär nya kurser';
-$string['course:reset'] = 'Återställ kurs';
-$string['course:sectionvisibility'] = 'Kontrollera huruvuda en sektion är synlig';
+$string['course:reset'] = 'Återställa kurs';
+$string['course:reviewotherusers'] = 'Granska andra användare';
+$string['course:sectionvisibility'] = 'Kontrollera sektionssynlighet';
 $string['course:setcurrentsection'] = 'Ställ in aktuell sektion';
-$string['course:update'] = 'Uppdatera inställningar för kurs';
-$string['course:useremail'] = 'Aktivera/avaktivera e-postadress';
+$string['course:setforcedlanguage'] = 'Tvinga kursspråk';
+$string['course:tag'] = 'Ändra kursetiketter';
+$string['course:togglecompletion'] = 'Manuellt markera aktiviteter som slutförda';
+$string['course:update'] = 'Uppdatera kursinställningar';
+$string['course:useremail'] = 'Aktivera/inaktivera e-postadress';
 $string['course:view'] = 'Visa kurser utan deltagande';
-$string['course:viewcoursegrades'] = 'Visa kursbetyg/omdömen';
+$string['course:viewcoursegrades'] = 'Visa kursbetyg';
 $string['course:viewhiddenactivities'] = 'Visa dolda aktiviteter';
 $string['course:viewhiddencourses'] = 'Visa dolda kurser';
 $string['course:viewhiddensections'] = 'Visa dolda sektioner';
-$string['course:viewhiddenuserfields'] = 'Visa dolda fält för användare';
+$string['course:viewhiddenuserfields'] = 'Visa dolda användarfält';
 $string['course:viewparticipants'] = 'Visa deltagare';
 $string['course:viewscales'] = 'Visa skalor';
+$string['course:viewsuspendedusers'] = 'Visa spärrade användare';
 $string['course:visibility'] = 'Dölj/visa kurser';
 $string['createrolebycopying'] = 'Skapar en ny roll genom att kopiera {$a}';
 $string['createthisrole'] = 'Skapa den här rollen';
 $string['currentcontext'] = 'Aktuellt sammanhang';
-$string['currentrole'] = 'Aktuell roll';
+$string['currentrole'] = 'Nuvarande roll';
+$string['customroledescription'] = 'Beskrivning';
+$string['customroledescription_help'] = 'Beskrivningar av standardroller lokaliseras automatiskt om den anpassade beskrivningen är tom.';
+$string['customrolename'] = 'Fullständigt namn';
+$string['customrolename_help'] = 'Namn på standardroller lokaliseras automatiskt om det anpassade namnet är tomt. Du måste ange ett fullständigt namn för alla anpassade roller.';
 $string['defaultrole'] = 'Standardroll';
 $string['defaultx'] = 'Standard: {$a}';
-$string['defineroles'] = 'Definiera roller';
-$string['deletecourseoverrides'] = 'Ta bort alla överskridanden i kursen';
-$string['deletelocalroles'] = 'Ta bort alla lokala tilldelningar av roller';
+$string['defineroles'] = 'Hantera roller';
+$string['deletecourseoverrides'] = 'Ta bort alla åsidosättanden kurs';
+$string['deletelocalroles'] = 'Ta bort alla lokala rolltilldelningar';
 $string['deleterolesure'] = 'Är Du säker på att Du vill ta bort rollen "{$a->name} ({$a->shortname})"?<br /> F.n. är den rollen tilldelad till {$a->count} användare.';
 $string['deletexrole'] = 'Ta bort rollen {$a}';
-$string['duplicaterole'] = 'Dubblerad roll';
-$string['duplicaterolesure'] = 'Är Du säker på att Du vill dubblera rollen
+$string['duplicaterole'] = 'Duplicera roll';
+$string['duplicaterolesure'] = 'Är Du säker på att Du vill duplicera rollen
 "{$a->name} ({$a->shortname})"?';
 $string['editingrolex'] = 'Redigerar rollen {$a}';
 $string['editrole'] = 'Redigera roll';
@@ -233,7 +239,18 @@ $string['errorbadrolename'] = 'Felaktigt namn på roll';
 $string['errorbadroleshortname'] = 'Felaktigt kortnamn på roll';
 $string['errorexistsrolename'] = 'Namnet på rollen finns redan';
 $string['errorexistsroleshortname'] = 'Namnet på rollen finns redan';
+$string['errorroleshortnametoolong'] = 'Rollnamnet får inte vara längre än 100 tecken';
+$string['eventcapabilityassigned'] = 'Behörighet tilldelad';
+$string['eventcapabilityunassigned'] = 'Behörighet borttagen';
 $string['eventroleallowassignupdated'] = 'Tillåt rolltilldelning';
+$string['eventroleallowoverrideupdated'] = 'Tillåt åsidosättande av roll';
+$string['eventroleallowswitchupdated'] = 'Tillåt rollbyte';
+$string['eventroleallowviewupdated'] = 'Tillåt visning av roll';
+$string['eventroleassigned'] = 'Roll tilldelad';
+$string['eventrolecapabilitiesupdated'] = 'Funktionsbehörigheter uppdaterade';
+$string['eventroledeleted'] = 'Roll borttagen';
+$string['eventroleunassigned'] = 'Roll fråntagen';
+$string['eventroleupdated'] = 'Roll uppdaterad';
 $string['existingadmins'] = 'Aktuella administratörer av webbplats';
 $string['existingusers'] = '{$a} befintliga användare';
 $string['explanation'] = 'Förklaring';
@@ -241,155 +258,83 @@ $string['export'] = 'Exportera';
 $string['extusers'] = 'Befintliga användare';
 $string['extusersmatching'] = 'Befintliga användare som matchar {$a}';
 $string['filter:manage'] = 'Administrera lokala inställningar för filter';
-$string['frontpageuser'] = 'Användare som är autenticerade på ingångssidan';
+$string['frontpageuser'] = 'Användare som är autentiserade på ingångssidan';
 $string['frontpageuserdescription'] = 'Alla användare som är inloggade på kursens ingångssida.';
-$string['globalrole'] = 'Global roll';
+$string['globalrole'] = 'Systemroll';
 $string['globalroleswarning'] = 'Varning! Vilka roller Du än tilldelar från den här sidan kommer att vara giltiga för de tilldelade användarna globalt över hela webbplatsen, inklusive ingångssidan (första/hem) och alla kurser.';
 $string['gotoassignroles'] = 'Gå till \'Tilldela roller\' för det här {$a->contextlevel}';
 $string['gotoassignsystemroles'] = 'Gå till \'Tilldela systemroller\'';
 $string['grade:edit'] = 'Redigera betyg';
-$string['grade:export'] = 'Exportera betyg/omdömen';
-$string['grade:hide'] = 'Dölj/visa betyg/omdömen';
-$string['grade:import'] = 'Importera betyg/omdömen';
-$string['grade:lock'] = 'Lås betyg/omdömen eller komponenter';
-$string['grade:manage'] = 'Administrera betygskomponenter';
+$string['grade:export'] = 'Exportera betyg';
+$string['grade:hide'] = 'Dölj/visa betyg';
+$string['grade:import'] = 'Importera betyg';
+$string['grade:lock'] = 'Lås betyg eller komponenter';
+$string['grade:manage'] = 'Hantera betygsobjekt';
 $string['grade:managegradingforms'] = 'Hantera avancerade betygssättningsmetoder';
-$string['grade:manageletters'] = 'Administrera bokstavsbetyg';
-$string['grade:manageoutcomes'] = 'Administrera resultat för betyg/omdömen';
+$string['grade:manageletters'] = 'Hantera bokstavsbetyg';
+$string['grade:manageoutcomes'] = 'Hantera resultat för betyg';
 $string['grade:managesharedforms'] = 'Hantera mallar för avancerade betygssättningsmetoder';
-$string['grade:override'] = 'Överskrid betyg/omdömen';
+$string['grade:override'] = 'Åsidosätt betyg';
 $string['grade:sharegradingforms'] = 'Dela formulär för avancerade betygssättningsmetod som en mall.';
-$string['grade:unlock'] = 'Lås upp betyg/omdömen eller komponenter';
-$string['grade:view'] = 'Visa egna betyg/omdömen';
-$string['grade:viewall'] = 'Visa betyg/omdömen för andra användare';
-$string['grade:viewhidden'] = 'Visa dolda getyg/omdömen för ägaren';
+$string['grade:unlock'] = 'Lås upp betyg eller komponenter';
+$string['grade:view'] = 'Visa egna betyg';
+$string['grade:viewall'] = 'Visa betyg för övriga användare';
+$string['grade:viewhidden'] = 'Visa dolda betyg för ägaren';
+$string['h5p:deploy'] = 'Ladda upp H5P-innehåll';
+$string['h5p:setdisplayoptions'] = 'Visningsalternativ för H5P';
+$string['h5p:updatelibraries'] = 'Hantera H5P-innehållstyper';
+$string['highlightedcellsshowdefault'] = 'Behörigheterna som markeras i tabellen nedan är standardvärdena för rollarketypen som är markerad ovan.';
+$string['highlightedcellsshowinherit'] = 'De markerade cellerna i tabellen nedan visar behörigheten (om någon) som kommer att ärvas. Bortsett från de funktioner vars tillstånd du faktiskt vill ändra, bör du lämna allt inställt på Ärv.';
 $string['inactiveformorethan'] = 'Inaktiv i mer än {$a->timeperiod}';
 $string['ingroup'] = 'i gruppen "{$a->group}"';
 $string['inherit'] = 'Ärv';
+$string['invalidpresetfile'] = 'Ogiltig definitionsfil för roll';
 $string['legacy:admin'] = 'ÄRVD ROLL: Administratör';
 $string['legacy:coursecreator'] = 'ÄRVD ROLL: Kursutvecklare';
-$string['legacy:editingteacher'] = 'ÄRVD ROLL: (redigerande) distanslärare';
+$string['legacy:editingteacher'] = 'ÄRVD ROLL: (redigerande) lärare';
 $string['legacy:guest'] = 'ÄRVD ROLL: Gäst';
-$string['legacy:student'] = 'ÄRVD ROLL: Student/elev/deltagare/lärande';
-$string['legacy:teacher'] = 'ÄRVD ROLL: (icke-redigerande) distanslärare';
-$string['legacytype'] = 'Typ av ärvd roll';
+$string['legacy:student'] = 'ÄRVD ROLL: Student';
+$string['legacy:teacher'] = 'ÄRVD ROLL: (icke-redigerande) lärare';
 $string['legacy:user'] = 'ÄRVD ROLL: autenticerad användare';
+$string['legacytype'] = 'Gammal rolltyp';
 $string['listallroles'] = 'Lista alla roller';
 $string['localroles'] = 'Lokalt tilldelade roller';
+$string['mainadmin'] = 'Huvudadministratör';
+$string['mainadminset'] = 'Ställ in huvudadministratör';
 $string['manageadmins'] = 'Administrera administratörer på webbplatsnivå';
 $string['manager'] = 'Administratör';
-$string['manageroles'] = 'Administrera roller';
+$string['managerdescription'] = 'Chefer kan komma åt kurser och ändra dem, men deltar normalt inte i dem.';
+$string['manageroles'] = 'Hantera roller';
+$string['maybeassignedin'] = 'Kontexttyper där denna roll kan tilldelas';
 $string['morethan'] = 'Mer än {$a}';
-$string['multipleroles'] = 'Flerfaldiga roller';
-$string['my:configsyspages'] = 'Konfigurera systemmallarna för MittMoodle-sidorna';
-$string['my:manageblocks'] = 'Administrera sidblock för MittMoodle';
+$string['multipleroles'] = 'Flera roller';
+$string['my:configsyspages'] = 'Konfigurera systemmallarna för Mitt Moodle-sidorna';
+$string['my:manageblocks'] = 'Hantera sidblock för Mitt Moodle';
 $string['neededroles'] = 'Roller med tillstånd';
-$string['nocapabilitiesincontext'] = 'Det finns inte några tillgängliga kapaciteter i det här sammanhanget.';
-$string['noneinthisx'] = 'Ingen/a i den här {$a}';
+$string['nocapabilitiesincontext'] = 'Det finns inte några tillgängliga behörigheter i det här sammanhanget.';
+$string['noneinthisx'] = 'Ingen i den här {$a}';
 $string['noneinthisxmatching'] = 'Inga användare som matchar \'{$a->search}\' i den här {$a->contexttype}';
+$string['norole'] = 'Ingen roll';
+$string['noroleassignments'] = 'Den här användaren har inga rolltilldelningar någonstans på den här webbplatsen.';
 $string['noroles'] = 'Inga roller';
-$string['notabletoassignroleshere'] = 'Du har inte tillstånd att tilldela några roller här';
-$string['notes:manage'] = 'Administrera anteckningar';
+$string['notabletoassignroleshere'] = 'Du har inte behörighet att tilldela några roller här.';
+$string['notabletooverrideroleshere'] = 'Du har inte möjlighet att åsidosätta rättigheterna på rollerna här.';
+$string['notes:manage'] = 'Hantera anteckningar';
 $string['notes:view'] = 'Visa anteckningar';
 $string['notset'] = 'Inte inställd';
-$string['overrideanotherrole'] = 'Överskrid en annan roll';
-$string['overridecontext'] = 'Överskrid sammanhanget';
+$string['novisibleroles'] = 'Inga roller';
+$string['overrideanotherrole'] = 'Åsidosätt en annan roll';
+$string['overridecontext'] = 'Åsidosätt sammanhanget';
 $string['overridepermissions'] = 'Överskrid tillstånd';
+$string['overridepermissions_help'] = '<p>Överskridanden är de specifika tillstånd som är utformade för att överskrida en roll i ett specifikt sammanhang; vilket innebär att du kan modifiera dina tillstånd så som du önskar. </p> <p> i normalfallet är det så att användare som har tilldelats rollen som student i din kurs kan inleda nya diskussionsämnen. Om du då har ett speciellt forum där du vill förhindra den kapaciteten då kan du ange ett överskridande som FÖRHINDRAR att studenter kan använda den kapaciteten att "Inleda nya diskussionsämnen". </p> <p> Överskridanden kan också användas för att "öppna upp" delar av din webbplats och dina kurser så att användare får utökade tillstånd där du finner det motiverat. Du kan t.ex. tänkas vilja experimentera genom att ge studenter kapacitetet att sätta betyg på en del uppgifter. </p> <p> Gränssnittet liknar det som du använder för att definiera roller, förutom det att ibland så visas bara relevanta kapaciteter, och du kommer också att upptäcka att en del kapaciteter framhävs särskilt för att visa dig vilket tillståndet för den rollen skulle vara om det INTE fanns något aktivt överskridande (dvs när ditt överskridande är inställt till ÄRV). </p> <p> See also <a href="help.php?file=roles.html">Roller</a>, <a href="help.php?file=contexts.html">Sammanhang</a>, <a href="help.php?file=assignroles.html">Tilldela roller</a> and <a href="help.php?file=permissions.html">Tillstånd</a>. </p>';
 $string['overridepermissionsforrole'] = 'Överskrid tillstånden för rollen {$a->role}\' i {$a->context}';
-$string['overridepermissions_help'] = '<p>
-Överskridanden är de specifika tillstånd som är utformade
-för att överskrida en roll i ett specifikt sammanhang;
-vilket innebär att du kan modifiera dina tillstånd så
-som du önskar.
-</p>
-
-<p>
-i normalfallet är det så att användare som har tilldelats rollen som student/elev/deltagare/lärande
-i din kurs kan inleda nya diskussionsämnen. Om du då har ett speciellt forum där du vill förhindra den kapaciteten då kan du ange ett överskridande som FÖRHINDRAR att studenter/elever/deltagare/lärande kan använda den kapaciteten att "Inleda nya diskussionsämnen".
-</p>
-
-<p>
-Överskridanden kan också användas för att "öppna upp" delar av din webbplats
-och dina kurser så att användare får utökade tillstånd där du finner det
-motiverat. Du kan t.ex. tänkas vilja experimentera genom att ge studenter/elever/deltagare/lärande
-kapacitetet att sätta betyg på en del uppgifter. </p>
-
-<p>
-Gränssnittet liknar det som du använder för att definiera roller,
-förutom det att ibland så visas bara relevanta kapaciteter,
-och du kommer också att upptäcka att en del kapaciteter
-framhävs särskilt för att visa dig vilket tillståndet för
-den rollen skulle vara om  det INTE fanns något aktivt
-överskridande (dvs när ditt överskridande är inställt till
-ÄRV).
-</p>
-
-<p>
-See also
-<a href="help.php?file=roles.html">Roller</a>,
-<a href="help.php?file=contexts.html">Sammanhang</a>,
-<a href="help.php?file=assignroles.html">Tilldela roller</a> and
-<a href="help.php?file=permissions.html">Tillstånd</a>.
-</p>';
 $string['overridepermissionsin'] = 'Överskrid tillstånd i {$a}';
-$string['overrideroles'] = 'Överskrida roller';
-$string['overriderolesin'] = 'Överskrid roller i {$a}';
-$string['overrides'] = 'Överskridningar';
+$string['overrideroles'] = 'Åsidosätt roller';
+$string['overriderolesin'] = 'Åsidosätt roller i {$a}';
+$string['overrides'] = 'Åsidosättningar';
+$string['overridesbycontext'] = 'Åsidosättningar (per kontext)';
 $string['permission'] = 'Tillstånd';
-$string['permission_help'] = '<p>
-Tillstånd är de inställningar som Du medger för vissa specifika kapaciteter.
-</p>
-
-<p>
-Det kan t.ex. vara kapaciteten att \'Starta ett nytt diskussionsämne\' (i forum).
-</p>
-
-<p>
-I varje roll kan Du välja att ställa in tillståndet för en sådan kapacitet
-till ett av fyra värden:
-<dl>
-<dt>INTE INSTÄLLT</dt>
-<dd>Detta är, normalt sett, det förinställda standardvärdet.
-Det är en neutral inställning som betyder \'använd de inställningar som redan gäller för användaren\'.
-Om någon blir tilldelad en roll (t.ex. i en kurs) som har detta tillstånd för en kapacitet
-då kommer det faktiska tillstånd som de kommer att ha bara att vara samma tillstånd som de har
-i det högre sammanhanget (t.ex. på kategori- eller webbplatsnivå).
-Och i slutänden blir det så att, om rollen inte medger ett tillstånd på någon nivå så kommer användaren inte att ha något tillstånd för den kapaciteten.
-    </dd>
-
-<dt>TILLÅT</dt>
-<dd>Om Du väljer detta så innebär det att Du medger tillstånd för den här kapaciteten till de som har tilldelats den här rollen. Detta tillstånd är tillämpbart på det sammanhang där denna roll tilldelas - och för alla \'lägre\' sammanhang.  Om det här t.ex. är en roll som \'Lärande\' som är tilldelad en kurs då kommer de som har rollen att kunna \'Starta nytt diskussionsämne\' i alla forum i den kursen. Detta FÖRUTOM i de fall då något forum innehåller ett överskridande eller en ny uppgift med ett Förhindra eller Förbjud-attribut för den här kapaciteten.</dd>
-
-<dt>FÖRHINDRA</dt>
-<dd>Om Du väljer detta så innebär det att Du tar bort tillståndet för den här kapaciteten även om användarna med denna roll skulle ha kvar tillståndet på en högre nivå. </dd>
-
-<dt>FÖRBJUD</dt>
-<dd>Det här behöver Du sällan använda men någon gång kan Du tänkas vilja neka tillstånd för en roll
-helt och hållet och det så att det INTE går att överskrida det på något sätt i ett \'lägre\' sammanhang. Ett bra exempel är när en sysadmin vill förhindra en person från att starta några nya diskussionsämnen på webbplatsen överhuvudtaget. I det fallet kan de skapa en roll där denna kapacitet är inställd till \'Förbjud\' och sedan tilldela den personen rollen på webbplatsnivå.
-  </dd>
-
-</dl>
-</p>
-
-
-<p> Tillstånd i ett \'lägre\' sammanhang kommer generellt sett att överskrida allting i ett \'högre\' sammanhang (detta är tillämpbart på överskridanden och tilldelade roller). Undantaget är   FÖRBJUD som inte kan överskridas i lägre sammanhang.
-</p>
-
-<p> Om två roller skulle tilldelas samma person i ett visst givet sammanhang, den ena med TILLÅT och den andra med FÖRHINDRA - vilken är det då som kommer att gälla? I det här fallet kommer Moodle att inspektera trädet för sammanhang och leta efter \'något som kan avgöra det hela\'.   </p>
-
-<p> Om t.ex. en student/elev/deltagare/lärande har två roller i en kurs; en som tillåter honom/henne att starta nya diskussionsämnen och en som förhindrar detta. I det här fallet kontrollerar vi sammanhangen på kategori- och webbplatsnivå för att hitta något annat definierat tillstånd som kan hjälpa oss att avgöra saken. Om vi inte kan hitta någonting så är det tillståndet FÖRHINDRA som gäller som förinställt standardvärde. Detta därför att de två tillstånden tar ut varandra och därmed har Du inget tillstånd.
-</p>
-
-
-<p> Lägg märke till att kontot för gästanvändare normalt sett förhindrar gäster från att bidra med innehåll, (t.ex. i forum, kalendrar, bloggar osv) även om det har tilldelats tillståndet att göra det.
-
-<p>
-Se även
-<a href="help.php?file=roles.html">Roller</a>,
-<a href="help.php?file=contexts.html">Sammanhang</a>,
-<a href="help.php?file=assignroles.html">Tilldela roller</a> and
-<a href="help.php?file=overrides.html">Överskridanden</a>.
-</p>';
+$string['permission_help'] = '<p> Tillstånd är de inställningar som Du medger för vissa specifika kapaciteter. </p> <p> Det kan t.ex. vara kapaciteten att \'Starta ett nytt diskussionsämne\' (i forum). </p> <p> I varje roll kan Du välja att ställa in tillståndet för en sådan kapacitet till ett av fyra värden: <dl> <dt>INTE INSTÄLLT</dt> <dd>Detta är, normalt sett, det förinställda standardvärdet. Det är en neutral inställning som betyder \'använd de inställningar som redan gäller för användaren\'. Om någon blir tilldelad en roll (t.ex. i en kurs) som har detta tillstånd för en kapacitet då kommer det faktiska tillstånd som de kommer att ha bara att vara samma tillstånd som de har i det högre sammanhanget (t.ex. på kategori- eller webbplatsnivå). Och i slutänden blir det så att, om rollen inte medger ett tillstånd på någon nivå så kommer användaren inte att ha något tillstånd för den kapaciteten. </dd> <dt>TILLÅT</dt> <dd>Om Du väljer detta så innebär det att Du medger tillstånd för den här kapaciteten till de som har tilldelats den här rollen. Detta tillstånd är tillämpbart på det sammanhang där denna roll tilldelas - och för alla \'lägre\' sammanhang. Om det här t.ex. är en roll som \'Lärande\' som är tilldelad en kurs då kommer de som har rollen att kunna \'Starta nytt diskussionsämne\' i alla forum i den kursen. Detta FÖRUTOM i de fall då något forum innehåller ett överskridande eller en ny uppgift med ett Förhindra eller Förbjud-attribut för den här kapaciteten.</dd> <dt>FÖRHINDRA</dt> <dd>Om Du väljer detta så innebär det att Du tar bort tillståndet för den här kapaciteten även om användarna med denna roll skulle ha kvar tillståndet på en högre nivå. </dd> <dt>FÖRBJUD</dt> <dd>Det här behöver Du sällan använda men någon gång kan Du tänkas vilja neka tillstånd för en roll helt och hållet och det så att det INTE går att överskrida det på något sätt i ett \'lägre\' sammanhang. Ett bra exempel är när en sysadmin vill förhindra en person från att starta några nya diskussionsämnen på webbplatsen överhuvudtaget. I det fallet kan de skapa en roll där denna kapacitet är inställd till \'Förbjud\' och sedan tilldela den personen rollen på webbplatsnivå. </dd> </dl> </p> <p> Tillstånd i ett \'lägre\' sammanhang kommer generellt sett att överskrida allting i ett \'högre\' sammanhang (detta är tillämpbart på överskridanden och tilldelade roller). Undantaget är FÖRBJUD som inte kan överskridas i lägre sammanhang. </p> <p> Om två roller skulle tilldelas samma person i ett visst givet sammanhang, den ena med TILLÅT och den andra med FÖRHINDRA - vilken är det då som kommer att gälla? I det här fallet kommer Moodle att inspektera trädet för sammanhang och leta efter \'något som kan avgöra det hela\'. </p> <p> Om t.ex. en student har två roller i en kurs; en som tillåter honom/henne att starta nya diskussionsämnen och en som förhindrar detta. I det här fallet kontrollerar vi sammanhangen på kategori- och webbplatsnivå för att hitta något annat definierat tillstånd som kan hjälpa oss att avgöra saken. Om vi inte kan hitta någonting så är det tillståndet FÖRHINDRA som gäller som förinställt standardvärde. Detta därför att de två tillstånden tar ut varandra och därmed har Du inget tillstånd. </p> <p> Lägg märke till att kontot för gästanvändare normalt sett förhindrar gäster från att bidra med innehåll, (t.ex. i forum, kalendrar, bloggar osv) även om det har tilldelats tillståndet att göra det. <p> Se även <a href="help.php?file=roles.html">Roller</a>, <a href="help.php?file=contexts.html">Sammanhang</a>, <a href="help.php?file=assignroles.html">Tilldela roller</a> and <a href="help.php?file=overrides.html">Överskridanden</a>. </p>';
 $string['permissions'] = 'Tillstånd';
 $string['permissionsforuser'] = 'Tillstånd för användaren {$a}';
 $string['permissionsincontext'] = 'Tillstånd i {$a}';
@@ -398,96 +343,107 @@ $string['potentialusers'] = '{$a} potentiella användare';
 $string['potusers'] = 'Möjliga användare';
 $string['potusersmatching'] = 'Möjliga användare som matchar \'{$a}\'';
 $string['prevent'] = 'Förhindra';
+$string['privacy:metadata:preference:showadvanced'] = 'Hantera knappen för avancerat läge';
+$string['privacy:metadata:role_assignments'] = 'Rolltilldelningar';
+$string['privacy:metadata:role_assignments:component'] = 'Plugin ansvarig för rolltildelning. Tom om tilldelad manuellt.';
+$string['privacy:metadata:role_assignments:itemid'] = 'ID för den registrerings-/autentiseringsinstans som är ansvarig för denna rolltilldelning';
+$string['privacy:metadata:role_assignments:modifierid'] = 'ID för den användare som skapade eller ändrade denna rolltilldelning';
+$string['privacy:metadata:role_assignments:roleid'] = 'Rollens ID';
+$string['privacy:metadata:role_assignments:tableexplanation'] = 'Denna tabell lagrar de tilldelade rollerna för varje kontext.';
+$string['privacy:metadata:role_assignments:timemodified'] = 'Datum då rolltilldelningen skapades eller ändrades.';
+$string['privacy:metadata:role_assignments:userid'] = 'Användar-ID';
+$string['privacy:metadata:role_capabilities'] = 'Funktionsbehörigheter för roll';
+$string['privacy:metadata:role_capabilities:capability'] = 'Funktionsbehörighetens namn';
+$string['privacy:metadata:role_capabilities:modifierid'] = 'ID för användare som skapade eller ändrade funktionsbehörigheten';
+$string['privacy:metadata:role_capabilities:permission'] = 'Rättigheterna för en funktionsbehörighet: ärv, tillåt, förhindra eller förbjud.';
+$string['privacy:metadata:role_capabilities:roleid'] = 'Rollens ID';
+$string['privacy:metadata:role_capabilities:tableexplanation'] = 'Funktionsbehörigheter och åsidosatta funktionsbehörigheter för en specifik roll i en specifik kontext.';
+$string['privacy:metadata:role_capabilities:timemodified'] = 'Datum då funktionsbehörigheten skapades eller ändrades.';
+$string['privacy:metadata:role_cohortroles'] = 'Roller-Kohortroller';
 $string['prohibit'] = 'Förbjud';
 $string['prohibitedroles'] = 'Förbjuden';
 $string['question:add'] = 'Lägg till nya frågor';
 $string['question:config'] = 'Konfigurera frågetyper';
 $string['question:editall'] = 'Redigera alla frågor';
-$string['question:editmine'] = 'Redigera Dina egna frågor';
-$string['question:flag'] = 'Flagga frågor när det görs försök att besvara dem';
-$string['question:managecategory'] = 'Redigera kategorier för frågor';
+$string['question:editmine'] = 'Redigera dina egna frågor';
+$string['question:flag'] = 'Flagga frågor då man försök besvara dem';
+$string['question:managecategory'] = 'Redigera frågekategorier';
 $string['question:moveall'] = 'Flytta alla frågor';
-$string['question:movemine'] = 'Flytta Dina egna frågor';
+$string['question:movemine'] = 'Flytta dina egna frågor';
+$string['question:tagall'] = 'Tagga alla frågor';
+$string['question:tagmine'] = 'Tagga egna frågor';
 $string['question:useall'] = 'Använd alla frågor';
-$string['question:usemine'] = 'Använd Dina egna frågor';
+$string['question:usemine'] = 'Använd dina egna frågor';
 $string['question:viewall'] = 'Visa alla frågor';
-$string['question:viewmine'] = 'Visa Dina egna frågor';
+$string['question:viewmine'] = 'Visa dina egna frågor';
 $string['rating:rate'] = 'Lägg till betygssättning/omdömen till komponenterna';
-$string['rating:view'] = 'Visa den sammanlagda bedömning som Du har fått';
+$string['rating:view'] = 'Visa den sammanlagda bedömning som du har fått';
 $string['rating:viewall'] = 'Visa alla \'råa\' bedömningar som har avgivits av individer';
 $string['rating:viewany'] = 'Visa de sammanlagda bedömningar som någon har fått';
-$string['resetrole'] = 'Återställ till standardvärden';
-$string['restore:configure'] = 'Konfigurera alternativ för återställande';
-$string['restore:createuser'] = 'Skapa användare i sb m återställande';
+$string['resetrole'] = 'Återställ';
+$string['resettingrole'] = 'Återställer roll \'{$a}\'';
+$string['restore:configure'] = 'Konfigurera återställningsslternativ';
+$string['restore:createuser'] = 'Skapa användare vid återställning';
 $string['restore:restoreactivity'] = 'Aktiviteter för återställande';
 $string['restore:restorecourse'] = 'Återställ kurser';
 $string['restore:restoresection'] = 'Återställ sektioner';
 $string['restore:restoretargetimport'] = 'Återställ från filer som är markerade som import';
+$string['restore:rolldates'] = 'Tillåten att förskjuta registreringsdatum vid återställning';
 $string['restore:uploadfile'] = 'Ladda upp filer till områden för säkerhetskopiering';
 $string['restore:userinfo'] = 'Återställ användardata';
-$string['restore:viewautomatedfilearea'] = 'Återställ kurser från automatiska säkerhetskopior';
+$string['restore:viewautomatedfilearea'] = 'Återställ kurser från automatiska säkerhetskopieringar';
 $string['risks'] = 'Risker';
-$string['roleallowheader'] = 'Tillåt roll:';
-$string['roleallowinfo'] = 'Väl en roll som ska läggas till listan med tillåtna roller i sammanhanget';
 $string['role:assign'] = 'Tilldela användare roller';
-$string['roleassignments'] = 'Tilldelning av roller';
-$string['rolefullname'] = 'Namn';
-$string['role:manage'] = 'Skapa och administrera roller';
+$string['role:manage'] = 'Skapa och hantera roller';
 $string['role:override'] = 'Översskrid tillstånd för andra';
-$string['roleprohibitinfo'] = 'Välj en roll att lägga till listan av förbjudna roller i kontext {$a->context}, förmåga {$a->cap}:';
+$string['role:review'] = 'Granska andras behörigheter';
+$string['role:safeoverride'] = 'Åsidosätt säkra behörigheter för andra';
+$string['role:switchroles'] = 'Byt till andra roller';
+$string['roleallowheader'] = 'Tillåt roll:';
+$string['roleallowinfo'] = 'Välj en roll att lägga till listan med tillåtna roller i kontexten {$a->context}, funktionsbehörighet <code>{$a->cap}</code>:';
+$string['roleassignments'] = 'Rolltilldelningar';
+$string['roledefinitions'] = 'Rolldefinitioner';
+$string['rolefullname'] = 'Namn';
+$string['roleincontext'] = '{$a->role} i {$a->context}';
+$string['roleprohibitheader'] = 'Förbjud roll';
+$string['roleprohibitinfo'] = 'Välj en roll att lägga till listan med förbjudna roller i kontexten {$a->context}, funktionsbehörighet <code>{$a->cap}</code>:';
+$string['rolerepreset'] = 'Använd förinställningar för roll';
+$string['roleresetdefaults'] = 'Standardvärden';
+$string['roleresetrole'] = 'Använd roll eller arketyp';
+$string['rolerisks'] = 'Rollrisker';
 $string['roles'] = 'Roller';
+$string['roles_help'] = '<p> En roll är en samling tillstånd som har definierats för hela systemet. Du kan tilldela en viss roll till specifika användare i specifika sammanhang. </p> <p> Du kan t.ex. ha en roll som kallas för "lärare" som är inställd så att den ger lärare tillstånd att göra vissa saker och andra inte. När en sådan roll väl finns så kan du tilldela den till någon i en kurs för att göra dem till "(distans)lärare. Du skulle även kunna tilldela rollen till användare som kan utöva den i en kurskategori så att de kan undervisa på alla kurser i den kategorin. Du kan också tilldela någon rollen i ett mycket avgränsat och specifikt sammanhang som t.ex. bara i ett visst forum. </p> <p> En roll måste ha ett <strong>namn</strong>. Om du behöver ett namn för rollen på ett flertal språk så kan du använda multilang syntax som t.ex. <pre> &lt;span lang="en"&gt;Teacher&lt;/span&gt; &lt;span lang="es_es"&gt;Profesor&lt;/span&gt; </pre>Om du gör detta så måste du se till att inställningen "filtrera strängar" är aktiverad i din installation. </p> <p><strong>Kortnamnet</strong> är nödvändigt för andra plugin-program i Moodle som kan behöva referera till dina roller (t.ex. när du laddar upp användare från en fil eller när du gör inställningar för registrering via ett plugin-program för det). </p> <p> <strong>Beskrivningen</strong> är helt enkelt till för att du ska kunna beskriva din roll med egna ord så att var och en kan förstå syftet med den rollen. </p> <p> Se även <a href="help.php?file=contexts.html">Sammanhang</a>, <a href="help.php?file=permissions.html">Tillstånd</a>, <a href="help.php?file=assignroles.html">Tilldela roller</a> and <a href="help.php?file=overrides.html">Överskridanden</a>. </p>';
 $string['roleselect'] = 'Välj roll';
-$string['roles_help'] = '<p>
-En roll är en samling tillstånd som har definierats för hela systemet.
-Du kan tilldela en viss roll till specifika användare i specifika sammanhang.
-
-</p>
-
-<p>
-Du kan t.ex. ha en roll som kallas för "(Distans)lärare" som är inställd så att den ger (distans)lärare tillstånd att göra vissa saker och andra inte. När en sådan roll väl finns
-så kan du tilldela den till någon i en kurs för att göra dem till "(distans)lärare.  Du skulle även kunna tilldela rollen till användare som kan utöva den i en kurskategori så att de kan undervisa på alla kurser i den kategorin. Du kan också tilldela någon rollen i ett mycket avgränsat och specifikt sammanhang som t.ex. bara i ett visst forum.
-</p>
-
-<p>
-En roll måste ha ett <strong>namn</strong>.  Om du behöver ett namn för rollen på ett flertal språk så kan du använda multilang syntax som t.ex. <pre>
-  &lt;span lang="en"&gt;Teacher&lt;/span&gt;
-  &lt;span lang="es_es"&gt;Profesor&lt;/span&gt;
-  </pre>Om du gör detta så måste du se till att inställningen "filtrera strängar" är aktiverad i din  installation.
-</p>
-
-<p><strong>Kortnamnet</strong> är nödvändigt för andra plugin-program i Moodle som kan behöva referera till dina roller (t.ex. när du laddar upp användare från en fil eller när du gör inställningar för registrering via ett plugin-program för det).
-</p>
-
-<p>
-<strong>Beskrivningen</strong> är helt enkelt till för att du ska kunna beskriva din roll med
-egna ord så att var och en kan förstå syftet med den rollen.
-</p>
-
-<p>
-Se även
-<a href="help.php?file=contexts.html">Sammanhang</a>,
-<a href="help.php?file=permissions.html">Tillstånd</a>,
-<a href="help.php?file=assignroles.html">Tilldela roller</a> and
-<a href="help.php?file=overrides.html">Överskridanden</a>.
-</p>';
+$string['rolesforuser'] = 'Roller för {$a}';
 $string['roleshortname'] = 'Kortnamn';
-$string['role:switchroles'] = 'Skifta till andra roller';
+$string['roleshortname_help'] = 'Kortnamnet för en roll är en lågnivåidentifierare där enbart alfanumeriska ASCII-tecken är tillåtna. Ändra inte kortnamnet på standardroller.';
 $string['roletoassign'] = 'Roll att tilldela';
-$string['roletooverride'] = 'Roll att överskrida';
+$string['roletooverride'] = 'Roll att åsidosätta';
+$string['safeoverridenotice'] = 'OBS! Funktionsbehörigheter vilka medför högre risker är låsta eftersom du endast är behörig att åsidosätta säkra funktionsbehörigheter.';
+$string['search:query'] = 'Utför sajtövergripande sökningar';
+$string['selectanotheruser'] = 'Välj annan användare';
 $string['selectauser'] = 'Välj en användare';
 $string['selectrole'] = 'Välj en roll';
 $string['showallroles'] = 'Visa alla roller';
-$string['showthisuserspermissions'] = 'Visa denna användares rättigheter';
+$string['showthisuserspermissions'] = 'Visa behörigheter';
 $string['site:accessallgroups'] = 'Tillträde till alla grupper';
 $string['site:approvecourse'] = 'Godkänn skapande av kurs';
 $string['site:backup'] = 'Säkerhetskopiera kurser';
 $string['site:config'] = 'Ändra konfigurationen för webbplatsen';
+$string['site:configview'] = 'Visa hela trädet i webbplatsadministrationen (dock inte själva sidorna i det)';
+$string['site:deleteanymessage'] = 'Ta bort valfria meddelanden på webbsajten';
+$string['site:deleteownmessage'] = 'Ta bort meddelanden skickade av och till användaren';
 $string['site:doanything'] = 'Tillåten att göra allting';
 $string['site:doclinks'] = 'Visa länkar till dokument utanför webbplatsen';
+$string['site:forcelanguage'] = 'Åsidosätt kursspråk';
 $string['site:import'] = 'Importera andra kurser i en kurs';
-$string['site:manageblocks'] = 'Administrera block på en sida';
-$string['site:mnetloginfromremote'] = 'Logga in från en annan instans av Moodle';
-$string['site:mnetlogintoremote'] = 'Flytta över till en annan instans av Moodle';
+$string['site:maintenanceaccess'] = 'Nå webbplatsen då den är i underhållsläge';
+$string['site:manageallmessaging'] = 'Lägg till, blockera eller tillåt kontakter för användare';
+$string['site:manageblocks'] = 'Hantera block på en sida';
+$string['site:managecontextlocks'] = 'Hantera frysning av context';
+$string['site:messageanyuser'] = 'Frångå användares egna inställningar rörande meddelanden till alla användare';
+$string['site:mnetloginfromremote'] = 'Logga in från en annan applikation via MNet';
+$string['site:mnetlogintoremote'] = 'Flytta till en annan applikation via MNet';
 $string['site:readallmessages'] = 'Läs alla meddelanden på webbplatsen';
 $string['site:restore'] = 'Återställ kurser';
 $string['site:sendmessage'] = 'Skicka meddelanden till vilken användare som helst';
@@ -496,26 +452,52 @@ $string['site:uploadusers'] = 'Ladda upp nya användare från fil';
 $string['site:viewfullnames'] = 'Se alltid användarnas fullständiga namn';
 $string['site:viewparticipants'] = 'Visa deltagare';
 $string['site:viewreports'] = 'Visa rapporter';
-$string['tag:edit'] = 'Redigera befintliga rubriker för intressen';
-$string['tag:editblocks'] = 'Redigera block som finns på sidorna för rubriker för intressen';
-$string['tag:manage'] = 'Administrera alla rubriker för intressen';
-$string['thisusersroles'] = 'Denne användares tilldelade roller';
+$string['site:viewuseridentity'] = 'Se den fullständiga användaridentiteten i listor';
+$string['siteadministrators'] = 'Webbplatsadministratörer';
+$string['tag:edit'] = 'Redigera befintliga etiketter';
+$string['tag:editblocks'] = 'Redigera block på etikettsidor';
+$string['tag:flag'] = 'Flagga etiketter som olämpliga';
+$string['tag:manage'] = 'Hantera etiketter';
+$string['thisnewrole'] = 'Denna nya roll';
+$string['thisusersroles'] = 'Mina roller';
+$string['unassignarole'] = 'Frånta roll {$a}';
+$string['unassignconfirm'] = 'Vill du verkligen frånta rollen "{$a->role}" från "{$a->user}"?';
+$string['unassignerror'] = 'Ett fel inträffade då användaren {$a->user} fråntogs rollen {$a->role}.';
 $string['user:changeownpassword'] = 'Ändra Ditt eget lösenord';
 $string['user:create'] = 'Skapa användare';
 $string['user:delete'] = 'Ta bort användare';
 $string['user:editmessageprofile'] = 'Redigera användarens meddelandeprofil';
 $string['user:editownmessageprofile'] = 'Redigera användarens egna meddelandeprofil';
-$string['user:editownprofile'] = 'Redigera Din egen profil';
+$string['user:editownprofile'] = 'Redigera din egen profil';
 $string['user:editprofile'] = 'Redigera användarprofil';
+$string['user:ignoreuserquota'] = 'Ignorera gräns för användarkvot.';
 $string['user:loginas'] = 'Logga in som andra användare';
 $string['user:manageblocks'] = 'Hantera block i användarprofil hos andra användare';
-$string['user:readuserblogs'] = 'Se alla användarbloggar';
-$string['user:readuserposts'] = 'Se alla inlägg från användare';
+$string['user:manageownblocks'] = 'Hantera block i den egna publika användarprofilen.';
+$string['user:manageownfiles'] = 'Hantera filer på den privata filarea.';
+$string['user:managesyspages'] = 'Konfigurera standardlayouten för publika användarprofilsidor.';
+$string['user:readuserblogs'] = 'Visa alla användarbloggar';
+$string['user:readuserposts'] = 'Se alla foruminlägg från användare';
 $string['user:update'] = 'Uppdatera användarprofiler';
+$string['user:viewalldetails'] = 'Visa fullständig användarinformation';
 $string['user:viewdetails'] = 'Visa användarprofiler';
 $string['user:viewhiddendetails'] = 'Visa dolda detaljer angående användare';
+$string['user:viewlastip'] = 'Visa användarens senaste IP-adress';
 $string['user:viewuseractivitiesreport'] = 'Se rapporter över användarnas aktivitet';
-$string['user:viewusergrades'] = 'Visa betyg/omdömen för användare';
+$string['user:viewusergrades'] = 'Visa betyg för användare';
+$string['usersfrom'] = 'Användare från {$a}';
+$string['usersfrommatching'] = 'Användare från {$a->contextname} som matchar \'{$a->search}\'';
+$string['usersinthisx'] = 'Användare i {$a}';
+$string['usersinthisxmatching'] = 'Användare i {$a->contextname} som matchar \'{$a->search}\'';
+$string['userswithrole'] = 'Alla användare med en roll';
+$string['userswiththisrole'] = 'Användare med rollen';
+$string['useshowadvancedtochange'] = 'Använd \'Visa avancerat\' för att ändra';
+$string['viewingdefinitionofrolex'] = 'Visar definitionen av rollen \'{$a}\'';
 $string['viewrole'] = 'Visa detaljer angående roll';
+$string['webservice:createmobiletoken'] = 'Skapa webbtjänsttoken för mobil åtkomst';
+$string['webservice:createtoken'] = 'Skapa webbtjänsttoken';
+$string['webservice:managealltokens'] = 'Hantera alla användares webbtjänsttoken';
+$string['whydoesuserhavecap'] = 'Varför har {$a->fullname} funktionsbehörigheten <code>{$a->capability}</code> i kontexten {$a->context}?';
+$string['whydoesusernothavecap'] = 'Varför saknar {$a->fullname} funktionsbehörigheten <code>{$a->capability}</code> i kontexten {$a->context}?';
 $string['xroleassignments'] = ', tilldelade roller';
 $string['xuserswiththerole'] = 'Användare med rollen "{$a->role}"';

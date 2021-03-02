@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'questionnaire', language 'sv', version '3.8'.
  *
- * @package   questionnaire
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     questionnaire
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -73,10 +73,10 @@ $string['noattempts'] = 'Ingen har påbörjat detta frågeformulär';
 $string['non_respondents'] = 'Användare som ännu inte har lämnat sina svar';
 $string['noresponsedata'] = 'Inga svar för denna fråga';
 $string['noresponses'] = 'Inga svar';
+$string['not_started'] = 'inte påbörjat';
 $string['notavail'] = 'Detta frågeformulär är inte längre tillgängligt. Var god be din lärare att ta bort det.';
 $string['noteligible'] = 'Du har inte rätt behörighet för att fylla i detta frågeformulär.';
 $string['notopen'] = 'Detta frågeformulär öppnas först den {$a}.';
-$string['not_started'] = 'inte påbörjat';
 $string['order_ascending'] = 'Stigande sortering';
 $string['order_default'] = 'Visa standardsortering';
 $string['order_descending'] = 'Fallande sortering';
@@ -92,9 +92,9 @@ $string['pageof'] = 'Sida {$a->page} av {$a->totpages}';
 $string['participant'] = 'Deltagare';
 $string['pleasecomplete'] = 'Var god fyll i detta alternativ';
 $string['pluginname'] = 'Frågeformulär';
-$string['previewing'] = 'Förhandsgranskar frågeformulär';
 $string['preview_label'] = 'Förhandsgranska';
 $string['preview_questionnaire'] = 'Förhandsgranskar frågeformulär';
+$string['previewing'] = 'Förhandsgranskar frågeformulär';
 $string['previous'] = 'Föregående';
 $string['previouspage'] = 'Föregående sida';
 $string['print'] = 'Skriv ut svaret';
@@ -111,14 +111,14 @@ $string['qtypeonce'] = 'Svara en enda gång';
 $string['qtypeunlimited'] = 'Svara många gånger';
 $string['qtypeweekly'] = 'Svara en gång per vecka';
 $string['questionnaire:addinstance'] = 'Lägg till ett nytt frågeformulär';
-$string['questionnaireopens'] = 'Frågeformuläret öppnas';
 $string['questionnaire:preview'] = 'Förhandsgranska frågeformulär';
 $string['questionnaire:printblank'] = 'Skriv ut tomt frågeformulär';
 $string['questionnaire:readownresponses'] = 'Läs egna svar';
-$string['questionnairereport'] = 'Rapport över frågeformulär';
 $string['questionnaire:submit'] = 'Fyll i och skicka in frågeformulär';
 $string['questionnaire:view'] = 'Visa ett frågeformulär';
 $string['questionnaire:viewsingleresponse'] = 'Visa kompletta individuella svar';
+$string['questionnaireopens'] = 'Frågeformuläret öppnas';
+$string['questionnairereport'] = 'Rapport över frågeformulär';
 $string['realm'] = 'Typ av frågeformulär';
 $string['removeallquestionnaireattempts'] = 'Ta bort alla svar i frågeformuläret';
 $string['required'] = 'Svar behövs';

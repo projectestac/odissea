@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_task', language 'it', version '3.8'.
  *
- * @package   tool_task
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_task
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,12 +29,14 @@ $string['asap'] = 'ASAP';
 $string['backtoscheduledtasks'] = 'Torna alle elaborazioni pianificate';
 $string['blocking'] = 'Blocco';
 $string['cannotfindthepathtothecli'] = 'Non è stato possibile trovare il percorso del CLI PHP, l\'elaborazione non è stata avviata. E\' possibile impostare il \'Percorso del CLI PHP\' in Amministrazione del sito / Server / Percorsi di sistema';
+$string['clearfaildelay_confirm'] = 'Sei sicuro di annullare il ritardo massimo dell\'elaborazione \'{$a}\'? A seguire l\'elaborazione riprenderà la sua pianificazione.';
 $string['component'] = 'Componente';
 $string['corecomponent'] = 'Core';
 $string['default'] = 'Default';
 $string['disabled'] = 'Disabilitato';
 $string['disabled_help'] = 'Le elaborazioni pianificate disabilitate che non  saranno elaborate dal cron possono essere lanciate manualmente via CLI.';
 $string['edittaskschedule'] = 'Modifica elaborazione pianificata:  {$a}';
+$string['enablerunnow'] = 'Abilita \'Esegui adesso\' per le elaborazioni pianificate';
 $string['enablerunnow_desc'] = 'Gli amministratori potranno lanciare singole elaborazioni direttamente dall\'interfaccia senza attendere l\'elaborazione pianificata. La funzione richiede l\'impostazione del \'Percorso del CLI PHP\' nei Percorsi di sistema. Da tenere presente che l\'elaborazione girerà sul web server, quindi durante l\'elaborazione le prestazioni potrebbero degradarsi.';
 $string['faildelay'] = 'Ritardo in caso di errore';
 $string['lastruntime'] = 'Ultima elaborazione';
@@ -46,6 +48,7 @@ $string['resettasktodefaults'] = 'Ripristina la pianificazione di default';
 $string['resettasktodefaults_help'] = 'La pianificazione personalizzata sarà eliminata e verrà ripristinata la pianificazione di default';
 $string['runnow'] = 'Esegui adesso';
 $string['runnow_confirm'] = 'Sei sicuro di eseguire l\'elaborazione ‘{$a}’ adesso? L\'elaborazione sarà lanciata sul server web e richiederà del tempo per essere completata.';
+$string['runpattern'] = 'Schema di esecuzione';
 $string['scheduledtaskchangesdisabled'] = 'La modifica delle elaborazioni pianificate è disabilitata';
 $string['scheduledtasks'] = 'Elaborazioni pianificate';
 $string['taskdisabled'] = 'Elaborazione disabilitata';

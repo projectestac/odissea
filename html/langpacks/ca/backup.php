@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'ca', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -86,6 +86,12 @@ $string['choosefilefromcoursebackup'] = 'Àrea de còpies de seguretat de cursos
 $string['choosefilefromcoursebackup_help'] = 'Les còpies de seguretat de cursos fetes utilitzant els paràmetres per defecte es desaran aquí.';
 $string['choosefilefromuserbackup'] = 'Àrea privada de còpies de seguretat de l\'usuari';
 $string['choosefilefromuserbackup_help'] = 'Els fitxers de còpies de seguretat amb informació d\'usuaris anonimitzada es desaran aquí.';
+$string['config_keep_groups_and_groupings'] = 'Per defecte mantén els grups i agrupaments actuals.';
+$string['config_keep_roles_and_enrolments'] = 'Per defecte mantén els rols i les inscripcions actuals.';
+$string['config_overwrite_conf'] = 'Permet a l\'usuari sobreescriure la configuració del curs actual';
+$string['config_overwrite_course_fullname'] = 'Per defecte sobreescriu el nom complet del curs amb el del fitxer de la còpia de seguretat. Això requereix que «Sobreescriu la configuració dels curs» estigui marcat i que l\'usuari actual tingui la capacitat de canviar el nom complet del curs (moodle/course:changefullname)';
+$string['config_overwrite_course_shortname'] = 'Per defecte sobreescriu el nom curt del curs amb el del fitxer de la còpia de seguretat. Això requereix que «Sobreescriu la configuració dels curs» estigui marcat i que l\'usuari actual tingui la capacitat de canviar el nom curt del curs (moodle/course:changeshortname)';
+$string['config_overwrite_course_startdate'] = 'Per defecte sobreescriu la data d\'inici del curs amb la del fitxer de la còpia de seguretat. Això requereix que «Sobreescriu la configuració dels curs» estigui marcat i que l\'usuari actual tingui la capacitat de canviar la dates del curs en la restauració (moodle/restore:rolldates)';
 $string['configgeneralactivities'] = 'Estableix el valor per defecte per incloure activitats en una còpia de seguretat.';
 $string['configgeneralanonymize'] = 'Si està habilitat, tota la informació pertanyent als usuaris serà anonimitzada per defecte.';
 $string['configgeneralbadges'] = 'Estableix el valor per defecte per incloure insígnies en una còpia de seguretat.';
@@ -102,13 +108,7 @@ TINGUEU EN COMPTE que inhabilitar aquest paràmetre inhabilitarà la còpia de s
 $string['configgeneralroleassignments'] = 'Si està habilitat, s\'inclouran per defecte les assignacions de rols dins de la còpia de seguretat.';
 $string['configgeneralusers'] = 'Estableix el valor per defecte per incloure els usuaris en una còpia de seguretat.';
 $string['configgeneraluserscompletion'] = 'Si està habilitat, s\'inclourà per defecte la informació de progrés de l\'usuari dins de la còpia de seguretat.';
-$string['config_keep_groups_and_groupings'] = 'Per defecte mantén els grups i agrupaments actuals.';
-$string['config_keep_roles_and_enrolments'] = 'Per defecte mantén els rols i les inscripcions actuals.';
 $string['configloglifetime'] = 'Especifica el temps que es conservarà una còpia de seguretat de la informació del registre. La informació més antiga s\'esborrarà automàticament. Es recomana que aquest valor sigui petit, perquè la còpia de seguretat pot ser molt gran.';
-$string['config_overwrite_conf'] = 'Permet a l\'usuari sobreescriure la configuració del curs actual';
-$string['config_overwrite_course_fullname'] = 'Per defecte sobreescriu el nom complet del curs amb el del fitxer de la còpia de seguretat. Això requereix que «Sobreescriu la configuració dels curs» estigui marcat i que l\'usuari actual tingui la capacitat de canviar el nom complet del curs (moodle/course:changefullname)';
-$string['config_overwrite_course_shortname'] = 'Per defecte sobreescriu el nom curt del curs amb el del fitxer de la còpia de seguretat. Això requereix que «Sobreescriu la configuració dels curs» estigui marcat i que l\'usuari actual tingui la capacitat de canviar el nom curt del curs (moodle/course:changeshortname)';
-$string['config_overwrite_course_startdate'] = 'Per defecte sobreescriu la data d\'inici del curs amb la del fitxer de la còpia de seguretat. Això requereix que «Sobreescriu la configuració dels curs» estigui marcat i que l\'usuari actual tingui la capacitat de canviar la dates del curs en la restauració (moodle/restore:rolldates)';
 $string['configrestoreactivities'] = 'Estableix els paràmetres per defecte de la restauració de les activitats.';
 $string['configrestorebadges'] = 'Estableix els paràmetres per defecte de la restauració de les insígnies.';
 $string['configrestoreblocks'] = 'Estableix els paràmetres per defecte de la restauració dels blocs.';
@@ -141,8 +141,8 @@ $string['currentstage4'] = 'Confirmació i revisió';
 $string['currentstage8'] = 'Fes la còpia';
 $string['enterasearch'] = 'Introduïu una cerca';
 $string['error_block_for_module_not_found'] = 'S\'ha trobat una instància de bloc òrfena (id: {$a->bid}) per al curs (id: {$a->mid}). Aquest bloc no es copiarà a la còpia de seguretat.';
-$string['errorcopyingbackupfile'] = 'No s\'ha pogut copiar el fitxer de la còpia de seguretat a la carpeta temporal abans de restaurar.';
 $string['error_course_module_not_found'] = 'S\'ha trobat un mòdul de curs orfe (id: {$a}). Aquest mòdul no es copiarà a la còpia de seguretat.';
+$string['errorcopyingbackupfile'] = 'No s\'ha pogut copiar el fitxer de la còpia de seguretat a la carpeta temporal abans de restaurar.';
 $string['errorfilenamemustbezip'] = 'El nom de fitxer que introduïu ha d\'ésser un fitxer ZIP i ha de tenir l\'extensió .mbz';
 $string['errorfilenamerequired'] = 'Cal que introduïu un nom de fitxer vàlid per a aquesta còpia de seguretat';
 $string['errorfilenametoolong'] = 'La longitud del nom de l\'arxiu que introduïu ha de ser inferior a 255 caràcters';

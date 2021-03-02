@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'wiki', language 'nl', version '3.8'.
  *
- * @package   wiki
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     wiki
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -99,13 +99,13 @@ $string['firstpagetitle_help'] = 'Titel van de eerste pagina van de wiki. Zodra 
 $string['forceformat'] = 'Opmaak opleggen';
 $string['forceformat_help'] = 'Als de opmaak is opgelegd (vinkje gezet), dan is er geen keuzemogelijkheid om de opmaakmethode te kiezen tijdens het bewerken van een wiki-pagina.';
 $string['format'] = 'Opmaak';
+$string['format_help'] = '*HTML - Gebruik de HTML-editor
+*Creole - Een veel gebruikte wiki opmaaktaal waarvoor een kleine werkbalk beschikbaar is
+*Nwiki - Mediawiki-achtige opmaaktaal die in de Nwiki module gebruikt wordt.';
 $string['formatcreole'] = 'Creole-opmaak';
 $string['formatcreole_help'] = 'Creole is een veel gebruikte  wiki opmaaktaal met een werkbalk voor het invoeren van de juiste opmaak.
 
 Typ een nieuwe paginanaam tussen dubbele vierkante haken om een nieuwe pagina te maken, bijvoorbeeld [[Pagina 2]].';
-$string['format_help'] = '*HTML - Gebruik de HTML-editor
-*Creole - Een veel gebruikte wiki opmaaktaal waarvoor een kleine werkbalk beschikbaar is
-*Nwiki - Mediawiki-achtige opmaaktaal die in de Nwiki module gebruikt wordt.';
 $string['formathtml'] = 'HTML-opmaak';
 $string['formathtml_help'] = 'De HTML-editor kan gebruikt worden om de tekst op te maken.
 
@@ -122,13 +122,13 @@ $string['incorrectpageid'] = 'Pagina-ID is fout.';
 $string['incorrectsubwikiid'] = 'Subwiki-ID is fout.';
 $string['incorrectwikiid'] = 'Wiki-ID is fout.';
 $string['indicator:cognitivedepth'] = 'Wiki cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Wiki activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Wiki cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de Wiki-activiteiten bereikt tijdens dit analyse-interval (Niveaus = Geen weergave, Bekijken, Verzenden)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Wiki activiteit.';
 $string['indicator:socialbreadth'] = 'Wiki sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Wiki activiteit.';
 $string['indicator:socialbreadthdef'] = 'Wiki sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de Wiki-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, Alleen deelnemer, Deelnemer met anderen)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Wiki activiteit.';
 $string['individualpagedoesnotexist'] = 'Individuele wiki-pagina bestaat niet';
 $string['insertcomment'] = 'Opmerking invoegen';
 $string['insertimage'] = 'Voeg een afbeelding toe...';
@@ -199,17 +199,17 @@ $string['orphaned'] = 'Verweesde pagina\'s';
 $string['orphaned_help'] = 'Lijst met pagina\'s die niet gelinkt zijn vanaf een andere pagina.';
 $string['overridelocks'] = 'Blokkering negeren';
 $string['overridinglocks'] = 'Blokkeringen negeren...';
+$string['page-mod-wiki-comments'] = 'Commentaarpagina voor de wiki-module';
+$string['page-mod-wiki-history'] = 'Wiki geschiedenispagina';
+$string['page-mod-wiki-map'] = 'Wiki kaartpagina';
+$string['page-mod-wiki-view'] = 'Wikimodule startpagina';
+$string['page-mod-wiki-x'] = 'Elke wikimodulepagina';
 $string['pageexists'] = 'Deze pagina bestaat al.';
 $string['pageindex'] = 'Indexpagina';
 $string['pageindex_help'] = 'Paginastructuur van deze wiki';
 $string['pageislocked'] = 'Iemand anders is deze pagina nu aan het bewerken. Probeer opnieuw binnen enkele minuten.';
 $string['pagelist'] = 'Paginalijst';
 $string['pagelist_help'] = 'Paginalijst in alfabetische volgorde';
-$string['page-mod-wiki-comments'] = 'Commentaarpagina voor de wiki-module';
-$string['page-mod-wiki-history'] = 'Wiki geschiedenispagina';
-$string['page-mod-wiki-map'] = 'Wiki kaartpagina';
-$string['page-mod-wiki-view'] = 'Wikimodule startpagina';
-$string['page-mod-wiki-x'] = 'Elke wikimodulepagina';
 $string['pagename'] = 'Paginanaam';
 $string['peerreview'] = 'Peer beoordeling';
 $string['pluginadministration'] = 'Wiki beheer';
@@ -289,11 +289,17 @@ $string['viewperpage'] = 'Toon {$a} versies per pagina';
 $string['viewversion'] = 'Versienummer {$a} aan het bekijken';
 $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Voeg een nieuwe wiki toe';
-$string['wikiattachments'] = 'Wiki bijlagen';
-$string['wikiboldtext'] = 'Vet';
 $string['wiki:createpage'] = 'Maak nieuwe wiki-pagina\'s';
 $string['wiki:editcomment'] = 'Voeg opmerkingen toe aan pagina\'s';
 $string['wiki:editpage'] = 'Bewaar wiki-pagina\'s';
+$string['wiki:managecomment'] = 'Beheer wiki-opmerkingen';
+$string['wiki:managefiles'] = 'Beheer wikibestanden';
+$string['wiki:managewiki'] = 'Beheer wiki-instellingen';
+$string['wiki:overridelock'] = 'Negeer geblokkeerde pagina\'s';
+$string['wiki:viewcomment'] = 'Bekijk pagina-opmerkingen';
+$string['wiki:viewpage'] = 'Bekijk wikipagina\'s';
+$string['wikiattachments'] = 'Wiki bijlagen';
+$string['wikiboldtext'] = 'Vet';
 $string['wikiexternalurl'] = 'Externe URL';
 $string['wikifiles'] = 'Wikibestanden';
 $string['wikifiletable'] = 'Lijst met geüploade bestanden';
@@ -304,21 +310,15 @@ $string['wikiinternalurl'] = 'Interne link';
 $string['wikiintro'] = 'Beschrijving';
 $string['wikiitalictext'] = 'Cursief';
 $string['wikilockingsettings'] = 'Blokkeren en time-out opnieuw verwerken';
-$string['wiki:managecomment'] = 'Beheer wiki-opmerkingen';
-$string['wiki:managefiles'] = 'Beheer wikibestanden';
-$string['wiki:managewiki'] = 'Beheer wiki-instellingen';
 $string['wikimode'] = 'Wikimodus';
-$string['wikimodecollaborative'] = 'Wiki voor samenwerken';
 $string['wikimode_help'] = 'De wikimodule bepaalt of iedereen een wiki kan bewerken - een samenwerkingswiki - of iedereen zijn eigen wiki heeft - een individuele wiki.';
+$string['wikimodecollaborative'] = 'Wiki voor samenwerken';
 $string['wikimodeindividual'] = 'Individuele wiki';
 $string['wikiname'] = 'Wikinaam';
 $string['wikinowikitext'] = 'Geen wikitekst';
 $string['wikiorderedlist'] = 'Geordende lijst';
-$string['wiki:overridelock'] = 'Negeer geblokkeerde pagina\'s';
 $string['wikipages'] = 'Wikipagina\'s';
 $string['wikisettings'] = 'Wiki-instellingen';
 $string['wikiunorderedlist'] = 'Ongeordende lijst';
-$string['wiki:viewcomment'] = 'Bekijk pagina-opmerkingen';
-$string['wiki:viewpage'] = 'Bekijk wikipagina\'s';
 $string['wrongversionlock'] = 'Een andere gebruiker heeft deze pagina bewerkt terwijl jij er ook aan bezig was en jouw inhoud is verloren gegaan.';
 $string['wrongversionsave'] = 'Een andere gebruiker  heeft een versie gemaakt terwijl jij aan het bewerken was en jij hebt zijn wijzigingen overschreven. Controleer de paginageschiedenis.';

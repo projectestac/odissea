@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'completion', language 'it', version '3.8'.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -61,7 +61,6 @@ $string['completedunlockedtext'] = 'Salvando le modifiche, sarà eliminato lo st
 $string['completedwarning'] = 'Opzioni di completamento bloccate';
 $string['completedwarningtext'] = 'Alcuni utenti ({$a}) hanno già indicato questa attività come completata. La modifica delle opzioni di completamento eliminerà l\'attuale stato di completamento degli utenti i quali potranno non vedersi ricalcolati i loro stati. Per questo motivo le opzioni sono bloccate e si raccomanda di non sbloccarle se non strettamente necessario.';
 $string['completion'] = 'Tracciamento del completamento';
-$string['completionactivitydefault'] = 'Utilizza il default delle attività';
 $string['completion-alt-auto-enabled'] = 'Il sistema traccia automaticamente il completamento di questa attività in base alle seguenti condizioni: {$a}';
 $string['completion-alt-auto-fail'] = 'Completato: {$a} (senza raggiungere la sufficienza)';
 $string['completion-alt-auto-n'] = 'Non completata: {$a}';
@@ -75,34 +74,37 @@ Selezionarla per spuntarla come completata.';
 $string['completion-alt-manual-n-override'] = 'Non completato: {$a->modname} (impostato da {$a->overrideuser}). Selezionare per contrassegnare come completato.';
 $string['completion-alt-manual-y'] = 'Completata: {$a}. Selezionarla per spuntarla come non completata.';
 $string['completion-alt-manual-y-override'] = 'Completato: {$a->modname} (impostato da {$a->overrideuser}). Selezionare per contrassegnare come non completato.';
+$string['completion-fail'] = 'Completato (senza raggiungere la sufficienza)';
+$string['completion-n'] = 'Non completato';
+$string['completion-n-override'] = 'Non completato: (impostato da {$a})';
+$string['completion-pass'] = 'Completato (raggiunta la sufficienza)';
+$string['completion-y'] = 'Completato';
+$string['completion-y-override'] = 'Completato: (impostato da {$a})';
 $string['completion_automatic'] = 'Considera l\'attività completata in base alle condizioni seguenti';
+$string['completion_help'] = 'Il completamento delle attività consente di tenere traccia delle attività svolte, sia manualmente sia automaticamente, al soddisfacimento delle condizioni impostate. E\' possibile impostare più condizioni, che dovranno essere tutte soddisfatte affinché l\'attività sia considerata completata.';
+$string['completion_manual'] = 'Gli studenti possono spuntare manualmente l\'attività per indicarla completata';
+$string['completion_none'] = 'Non tracciare il completamento delle attività';
+$string['completionactivitydefault'] = 'Utilizza il default delle attività';
 $string['completiondefault'] = 'Default per il tracciamento del completamento';
 $string['completiondisabled'] = 'Disabilitato, non visualizzato nelle impostazioni attività';
 $string['completionduration'] = 'Iscrizione';
 $string['completionenabled'] = 'Abilitato, controllato nelle impostazioni di completamento delle attività';
 $string['completionexpected'] = 'Completamento atteso entro il';
+$string['completionexpected_help'] = 'Imposta la data in cui ci si aspetta il completamento dell\'attività.';
 $string['completionexpecteddesc'] = 'Completamento atteso il {$a}';
 $string['completionexpectedfor'] = '{$a->instancename} da completare';
-$string['completionexpected_help'] = 'Imposta la data in cui ci si aspetta il completamento dell\'attività.';
-$string['completion-fail'] = 'Completato (senza raggiungere la sufficienza)';
-$string['completion_help'] = 'Il completamento delle attività consente di tenere traccia delle attività svolte, sia manualmente sia automaticamente, al soddisfacimento delle condizioni impostate. E\' possibile impostare più condizioni, che dovranno essere tutte soddisfatte affinché l\'attività sia considerata completata.';
 $string['completionicons'] = 'Caselle di completamento';
 $string['completionicons_help'] = 'Accanto ai nomi delle attività possono  comparire delle caselle di spunta utili per visualizzare lo stato di completamento delle attività stesse.
 
 Se viene visualizzata una casella con il bordo tratteggiato, sarà visualizzato un segno di spunta quando l\'attività sarà stata completata secondo i criteri impostati dal docente.
 
 Se viene visualizzata una casella con il bordo continuo, è possibile fare click sulla casella per indicare l\'attività come completata. (In caso di ripensamenti, è possibile fare click nuovamente sulla casella per rimuovere il completamento).';
-$string['completion_manual'] = 'Gli studenti possono spuntare manualmente l\'attività per indicarla completata';
 $string['completionmenuitem'] = 'Completamento';
-$string['completion-n'] = 'Non completato';
-$string['completion_none'] = 'Non tracciare il completamento delle attività';
 $string['completionnotenabled'] = 'Il completamento non è abilitato';
 $string['completionnotenabledforcourse'] = 'Il completamento non è abilitato in questo corso';
 $string['completionnotenabledforsite'] = 'Il completamento non è abilitato in questo sito';
-$string['completion-n-override'] = 'Non completato: (impostato da {$a})';
 $string['completionondate'] = 'Data';
 $string['completionondatevalue'] = 'Data nella quale il corso sarà contrassegnato come completato';
-$string['completion-pass'] = 'Completato (raggiunta la sufficienza)';
 $string['completionsettingslocked'] = 'Impostazioni di completamento bloccate';
 $string['completionupdated'] = 'Il completamento dell\'attività <b>{$a}</b> è stato aggiornato';
 $string['completionusegrade'] = 'Ricevere una valutazione';
@@ -110,8 +112,6 @@ $string['completionusegrade_desc'] = 'Lo studente deve ricevere una valutazione 
 $string['completionusegrade_help'] = 'L\'attività dello studente sarà completata quando avrà ricevuto una valutazione. Impostando una sufficienza, saranno visualizzate icone di superamento o di non superamento.';
 $string['completionview'] = 'Visualizzazione';
 $string['completionview_desc'] = 'Lo studente deve accedere all\'attività per completarla.';
-$string['completion-y'] = 'Completato';
-$string['completion-y-override'] = 'Completato: (impostato da {$a})';
 $string['configcompletiondefault'] = 'Le impostazioni di default per il tracciamento del completamento quando si creano nuove attività.';
 $string['configenablecompletion'] = 'Consente di abilitare le funzionalità di tracciamento del completamento  nei corsi. Si consiglia di attivari i criteri di completamento affinché gli utenti possano visualizzare dati utili nella propria Dashboard.';
 $string['confirmselfcompletion'] = 'Conferma di completamento';
@@ -148,7 +148,7 @@ $string['err_noactivities'] = 'Il tracciamento delle attività completate non è
 $string['err_nocourses'] = 'Non è visualizzato nessun corso poiché non ci sono corsi con il completamento abilitato. E\' possibile abilitare il completamento nelle impostazioni dei corsi.';
 $string['err_nograde'] = 'In questo corso non è stata definita la sufficienza. Per usare questo criterio devi aggiungerla al corso.';
 $string['err_noroles'] = 'In questo corso non ci sono ruoli con il privilegio moodle/course:markcomplete\'.';
-$string['err_nousers'] = 'Nel corso o nel gruppo non ci sono utenti per i quali visualizzare il Report del completamento. (Di default questo Report viene visualizzato per gli studenti, tuttavia se il corso non ha studenti comparirà il presente messaggio. Gli amministratori possono modificare le impostazioni di visualizzazione.)';
+$string['err_nousers'] = 'Nel corso o nel gruppo non ci sono utenti per i quali visualizzare il Report del completamento. (Di default questo Report viene visualizzato per gli utenti che posseggono il privilegio \'Comparire nei report di completamento\', tuttavia se il corso non ha studenti comparirà il presente messaggio.)';
 $string['err_settingslocked'] = 'Uno o più studenti hanno già soddisfatto dei criteri di completamento, pertanto le impostazioni sono bloccate. Lo sblocco dei criteri di completamento eliminerà lo stato degli utenti e potrà creare confusione.';
 $string['err_system'] = 'Si è verificato un errore nel sottosistema di tracciamento delle attività completate. (L\'Amministratore può abilitare il debug per approfondire il problema)';
 $string['eventcoursecompleted'] = 'Completato corso';

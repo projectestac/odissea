@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'scorm', language 'nl', version '3.8'.
  *
- * @package   scorm
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     scorm
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -60,15 +60,15 @@ $string['attemptstatusmy'] = 'Enkel op Mijn startpagina';
 $string['attemptsx'] = '{$a} pogingen';
 $string['attr_error'] = 'Foute waarde voor attribuut ({$a->attr}) in tag {$a->tag}.';
 $string['autocommit'] = 'Automatisch insturen';
-$string['autocommitdesc'] = 'Automatisch SCORM-gegevens bewaren als het SCORM-pakket dat niet doet.';
 $string['autocommit_help'] = 'Indien ingeschakeld zullen SCORM-gegevens automatisch bewaard worden in de databank. Nuttig voor SCORM-objecten die hun data niet regelmatig bewaren.';
+$string['autocommitdesc'] = 'Automatisch SCORM-gegevens bewaren als het SCORM-pakket dat niet doet.';
 $string['autocontinue'] = 'Ga automatisch verder';
-$string['autocontinuedesc'] = 'Indien ingeschakeld worden opeenvolgende leerobjecten automatisch gestart. Anders moet de Ga verder-knop gebruikt worden.';
 $string['autocontinue_help'] = '<p><b>Automatisch verdergaan</b></p>
 
 <p>Als deze instelling op Ja staat, dan zal, wanneer een SCO en "close communication" methode aanroept, de volgende SCO automatisch starten.</p>
 
 <p>Als dit op Nee staat, moeten de gebruikers op de "Ga verder"-knop klikken om verder te gaan.</p>';
+$string['autocontinuedesc'] = 'Indien ingeschakeld worden opeenvolgende leerobjecten automatisch gestart. Anders moet de Ga verder-knop gebruikt worden.';
 $string['averageattempt'] = 'Gemiddelde van pogingen';
 $string['badarchive'] = 'Je moet een geldig zip-bestand geven';
 $string['badimsmanifestlocation'] = 'Er is een imsmanifest.xml-bestand gevonden, maar niet in de root van je zip-bestand. Hermaak je SCORM-pakket';
@@ -89,15 +89,15 @@ $string['collapsetocwinsizedesc'] = 'Deze instelling laat je de venstergrootte k
 $string['compatibilitysettings'] = 'Compatibiliteitsinstellingen';
 $string['completed'] = 'Volledig';
 $string['completionscorerequired'] = 'Vereiste minimumscore';
-$string['completionscorerequireddesc'] = 'Maximale score van {$a} vereist voor voltooiing.';
 $string['completionscorerequired_help'] = 'Het inschakelen van deze instelling zal er voor zorgen dat een gebruiker minstens de minimumscore moet behalen om deze SCORM-activiteit als voltooid te markeren, samen met eventuele andere vereisten voor Voltooide Activiteit.';
-$string['completionstatusallscos'] = 'Vereis alle scos om hun voltooiingsstatus te melden';
-$string['completionstatusallscos_help'] = 'Somige SCORM-pakketten bevatten meerdere onderdelen of "scos" - wanneer dit is ingeschakeld moeten alle scos in het pakket hun relevante lesson_status voor deze activiteit als voltooid markeren.';
+$string['completionscorerequireddesc'] = 'Maximale score van {$a} vereist voor voltooiing.';
 $string['completionstatus_completed'] = 'Voltooid';
 $string['completionstatus_passed'] = 'Geslaagd';
+$string['completionstatusallscos'] = 'Vereis alle scos om hun voltooiingsstatus te melden';
+$string['completionstatusallscos_help'] = 'Somige SCORM-pakketten bevatten meerdere onderdelen of "scos" - wanneer dit is ingeschakeld moeten alle scos in het pakket hun relevante lesson_status voor deze activiteit als voltooid markeren.';
 $string['completionstatusrequired'] = 'Vereist status';
-$string['completionstatusrequireddesc'] = 'Leerling moet minstens één van volgende statussen bereiken: {$a}';
 $string['completionstatusrequired_help'] = 'Het controleren van één of meerdere statussen zal er voor zorgen dat en gebruiker minstens één gecontroleerde status moet bereiken om deze SCORM-activiteit als voltooid te markeren, samen met eventuele andere vereisten voor Voltooide Activiteit.';
+$string['completionstatusrequireddesc'] = 'Leerling moet minstens één van volgende statussen bereiken: {$a}';
 $string['confirmloosetracks'] = 'WAARSCHUWING: Dit pakket is blijkbaar gewijzigd of aangepast. Als de pakketstructuur is gewijzigd, dan zou het afgelegde leerpad van sommige gebruikers zou kunnen verloren gegaan zijn tijdens het updateproces.';
 $string['contents'] = 'Inhoud';
 $string['coursepacket'] = 'Cursuspakket';
@@ -119,11 +119,11 @@ $string['display'] = 'Toon';
 $string['displayactivityname'] = 'Activiteitsnaam tonen';
 $string['displayactivityname_help'] = 'Al dan niet de activiteitsnaam boven de SCORM-speler tonen';
 $string['displayattemptstatus'] = 'Toon pogingstatus';
-$string['displayattemptstatusdesc'] = 'Of een samenvatting van de pogingen van de gebruiker getoond moeten worden op het cursusoverzichtsblok op Mijn startpagina en/of de startpagina van het SCORM-pakket.';
 $string['displayattemptstatus_help'] = 'Hiermee wordt een samenvatting van de pogingen van de gebruiker getoond in het cursusoverzichtsblok in Mijn startpagina en/of de SCORM ingangspagina.';
+$string['displayattemptstatusdesc'] = 'Of een samenvatting van de pogingen van de gebruiker getoond moeten worden op het cursusoverzichtsblok op Mijn startpagina en/of de startpagina van het SCORM-pakket.';
 $string['displaycoursestructure'] = 'Toon cursusstructuur op startpagina';
-$string['displaycoursestructuredesc'] = 'Deze instelling regelt de standaardinstelling voor het tonen van de inhoudsopgave op de startpagina van het SCORM-pakket.';
 $string['displaycoursestructure_help'] = 'Indien ingeschakeld zal de inhoudsopgave getoond worden op de SCORM beschrijvingspagina';
+$string['displaycoursestructuredesc'] = 'Deze instelling regelt de standaardinstelling voor het tonen van de inhoudsopgave op de startpagina van het SCORM-pakket.';
 $string['displaydesc'] = 'Of SCORM-pakketten in een nieuw venster getoond moeten worden.';
 $string['displaysettings'] = 'Scherminstellingen';
 $string['dnduploadscorm'] = 'Voeg een SCORM-pakket toe';
@@ -157,8 +157,8 @@ $string['floating'] = 'Zwevend';
 $string['forceattemptalways'] = 'Altijd';
 $string['forceattemptoncomplete'] = 'Wanneer vorige poging voltooid, geslaagd of niet geslaagd is';
 $string['forcecompleted'] = 'Verplichte poging voltooid';
-$string['forcecompleteddesc'] = 'Deze instelling regelt de standaard waarde voor het verplicht voltooien';
 $string['forcecompleted_help'] = 'Indien ingeschakeld wordt de status van de huidige poging naar voltooid gezet. (Deze instelling is enkel toepasbaar op SCORM 1.2-pakketten.)';
+$string['forcecompleteddesc'] = 'Deze instelling regelt de standaard waarde voor het verplicht voltooien';
 $string['forcejavascript'] = 'Verplicht gebruikers om JavaScript in te schakelen';
 $string['forcejavascript_desc'] = 'Indien ingeschakeld (aanbevolen) verhindert dit toegang tot SCORM-objecten wanneer JavaScript niet is ondersteund/ingeschakeld in de browser van een gebruiker.  Indien uitgeschakeld, dan kan de gebruiker de SCORM bekijken, maar de API-communicatie zal niet werken en er zal geen cijferinformatie bewaard worden.';
 $string['forcejavascriptmessage'] = 'JavaScript is vereist om dit object te kunnen bekijken. Schakel JavaScript in in je browser en probeer opnieuw.';
@@ -179,7 +179,6 @@ $string['gradeaverage'] = 'Gemiddeld cijfer';
 $string['gradeforattempt'] = 'Beoordeling van de poging';
 $string['gradehighest'] = 'Hoogste cijfer';
 $string['grademethod'] = 'Beoordelingsmethode';
-$string['grademethoddesc'] = 'De beoordelingsmethode definieert hoe het cijfer voor één enkele poging van de activiteit wordt bepaald.';
 $string['grademethod_help'] = 'De beoordelingsmethode legt vast hoe de score voor elke aparte poging van de activiteit wordt bepaald.
 
 Er zijn vier beoordelingsmethodes:
@@ -187,6 +186,7 @@ Er zijn vier beoordelingsmethodes:
 * Hoogste cijfer - De hoogste score behaald hebben op alle voorbije leerobjecten
 *Gemiddelde cijfer - Het gemiddelde van alle scores
 *Opgeteld cijfer - De som van alle scores';
+$string['grademethoddesc'] = 'De beoordelingsmethode definieert hoe het cijfer voor één enkele poging van de activiteit wordt bepaald.';
 $string['gradereported'] = 'Beoordeling gerapporteerd';
 $string['gradescoes'] = 'Leerobjecten';
 $string['gradesettings'] = 'Cijferinstellignen';
@@ -194,28 +194,28 @@ $string['gradesum'] = 'Totaalcijfer';
 $string['height'] = 'Hoogte';
 $string['hidden'] = 'Verborgen';
 $string['hidebrowse'] = 'Verberg voorproeven';
-$string['hidebrowsedesc'] = 'Met de voorbeeldmodus kan een leerling de activiteit bekijken voor hij die probeert.';
 $string['hidebrowse_help'] = '<p>Als deze optie op ja wordt gezet, dan zal de leerling niet de mogelijkheid hebben een SCORM/AICC pakket in voorproefmodus te bekijken.</p>
 
 <p>Als deze optie op nee wordt gezet, zal de leerling er voor kunnen kiezen om in voorproefmodus de activiteit te bekijken zonder registratie van zijn resultaten of de activiteit te starten met registratie.</p>
 
 <p>Wanneer een leerobject volledig is bekeken in voorproefmodus, dan wordt het gemarkeerd met een <img src="<?php echo $CFG->wwwroot.\'/mod/scorm/pix/browsed.gif\' ?>" alt="<?php print_string(\'browsed\',\'scorm\') ?>" title="<?php print_string(\'browsed\',\'scorm\') ?>" /> Activiteit bekeken-icoon.</p>';
+$string['hidebrowsedesc'] = 'Met de voorbeeldmodus kan een leerling de activiteit bekijken voor hij die probeert.';
 $string['hideexit'] = 'Verberg de uitgang-link';
 $string['hidereview'] = 'Verberg de knop voor herzien';
 $string['hidetoc'] = 'Weergave cursusstructuur';
-$string['hidetocdesc'] = 'Deze instelling regelt hoede inhoudsopgave in de SCORM-speler getoond wordt.';
 $string['hidetoc_help'] = 'Deze instelling bepaalt hoe de inhoudstabel getoond wordt in de SCORM-speler.';
+$string['hidetocdesc'] = 'Deze instelling regelt hoede inhoudsopgave in de SCORM-speler getoond wordt.';
 $string['highestattempt'] = 'Beste poging';
 $string['identifier'] = 'Vraagidentificatie';
 $string['incomplete'] = 'Onvolledig';
 $string['indicator:cognitivedepth'] = 'SCORM cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een SCORM activiteit.';
 $string['indicator:cognitivedepthdef'] = 'SCORM cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de SCORM-activiteiten bereikt tijdens dit analyse-interval (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een SCORM activiteit.';
 $string['indicator:socialbreadth'] = 'SCORM sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een SCORM activiteit.';
 $string['indicator:socialbreadthdef'] = 'SCORM sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de SCORM-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, alleen deelnemer)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een SCORM activiteit.';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interacties';
 $string['invalidactivity'] = 'Fout in SCORM-activiteit';
@@ -229,22 +229,22 @@ $string['last'] = 'Laatst bekeken op';
 $string['lastaccess'] = 'Laatst bekeken';
 $string['lastattempt'] = 'Laatste voltooide poging';
 $string['lastattemptlock'] = 'Blokkeer na laatste poging';
-$string['lastattemptlockdesc'] = 'Indien ingeschakeld kan een leerling de SCORM-speler niet starten nadat hij alle pogingen opgebruikt heeft.';
 $string['lastattemptlock_help'] = 'Indien dit is ingeschakeld, kan de leerling de SCORM-speler niet meer starten als het aantal toegestane pogingen bereikt is.';
+$string['lastattemptlockdesc'] = 'Indien ingeschakeld kan een leerling de SCORM-speler niet starten nadat hij alle pogingen opgebruikt heeft.';
 $string['location'] = 'Toon locatiebalk';
 $string['masteryoverride'] = 'Slaagscore overschrijvingsstatus';
-$string['masteryoverridedesc'] = 'Deze instelling zet de standaard voor de slaagscore overschrijvingsinstelling';
 $string['masteryoverride_help'] = 'Indien ingeschakeld en de slagscore is gegeven, wanneer LMSFinish wordt aangeroepen en een ruwe score gegeven is, dan zal de status herberekend worden door gebruik te maken van de ruwe score en de slaagscore. Dan zal elke status die de SCORM geeft (ook "niet klaar") overschreven worden.';
+$string['masteryoverridedesc'] = 'Deze instelling zet de standaard voor de slaagscore overschrijvingsinstelling';
 $string['max'] = 'Max score';
 $string['maximumattempts'] = 'Aantal pogingen';
-$string['maximumattemptsdesc'] = 'Deze instelling regelt het maximale aantal pogingen voor een activiteit';
 $string['maximumattempts_help'] = 'Deze instelling beperkt het aantal pogingen. Het werkt enkle voor SCORM 1.2 en AICC-pakketten';
+$string['maximumattemptsdesc'] = 'Deze instelling regelt het maximale aantal pogingen voor een activiteit';
 $string['maximumgradedesc'] = 'Deze instelling regelt het standaard maximumcijfer voor een activiteit';
 $string['menubar'] = 'Toon menubalk';
 $string['min'] = 'Minimumscore';
 $string['missing_attribute'] = 'Attribuut ontbreekt {$a->attr} in tag {$a->tag}';
-$string['missingparam'] = 'Een vereiste parameter ontbreekt of is fout';
 $string['missing_tag'] = 'Ontbrekende tag {$a->tag}';
+$string['missingparam'] = 'Een vereiste parameter ontbreekt of is fout';
 $string['mode'] = 'Modus';
 $string['modulename'] = 'SCORM-pakket';
 $string['modulename_help'] = 'Een SCORM-pakket is een verzameling bestanden die verpakt zijn volgens een afgesproken standaard voor leerobjecten. De SCORM-activiteit maakt het mogelijk om SCORM of AICC-pakketten te uploaden als zip-bestanden en aan een cursus toegevoegd te worden.
@@ -259,7 +259,6 @@ $string['modulenameplural'] = 'SCORM-pakketten';
 $string['myaiccsessions'] = 'Mijn AICC-sessies';
 $string['myattempts'] = 'Mijn pogingen';
 $string['nav'] = 'Toon navigatie';
-$string['navdesc'] = 'Deze instelling bepaalt of de navigatieknoppen en hun positie getoond worden.';
 $string['nav_help'] = 'Deze instelling bepaalt of navigatieknoppen al dan niet getoond moeten worden en hun positie.
 
 Er zijn 3 opties:
@@ -267,6 +266,7 @@ Er zijn 3 opties:
 * Nee - Toon geen navigatieknoppen.
 * Onder inhoud - Toon de navigatieknoppen onder de inhoud van je SCORM-pakket.
 * Zwevend - Navigatieknoppen worden zwevend getoond, met de positie van boven en van links bepaald door het pakket.';
+$string['navdesc'] = 'Deze instelling bepaalt of de navigatieknoppen en hun positie getoond worden.';
 $string['navigation'] = 'Navigatie';
 $string['navpositionleft'] = 'Positie van de navigatieknoppen in pixels van links';
 $string['navpositiontop'] = 'Positie van de navigatieknoppen in pixels van boven.';
@@ -274,19 +274,19 @@ $string['networkdropped'] = 'De SCORM-speler heeft bepaald dat je internetverbin
 Je kunt het beste de activiteit nu verlaten en terugkeren wanneer je een betrouwbare verbinding hebt.';
 $string['newattempt'] = 'Begin een nieuwe poging';
 $string['next'] = 'Volgende';
+$string['no_attributes'] = 'Tag {$a->tag} moet attributen hebben';
+$string['no_children'] = 'Tag {$a->tag} moet children hebben';
 $string['noactivity'] = 'Niets te melden';
 $string['noattemptsallowed'] = 'Aantal toegelaten pogingen';
 $string['noattemptsmade'] = 'Aantal pogingen die je gedaan hebt';
-$string['no_attributes'] = 'Tag {$a->tag} moet attributen hebben';
-$string['no_children'] = 'Tag {$a->tag} moet children hebben';
 $string['nolimit'] = 'Onbeperkt aantal pogingen';
 $string['nomanifest'] = 'Fout bestandspakket - ontbrekend imsmanifest.xml of AICC-structuur';
 $string['noprerequisites'] = 'Sorry, maar je hebt nog niet genoeg voltooid om toegang te krijgen tot dit leerobject';
 $string['noreports'] = 'Er is geen rapport om te tonen';
 $string['normal'] = 'Activiteit starten';
 $string['noscriptnoscorm'] = 'Je browser ondersteunt geen javascript of javascript staat uitgeschakeld. Dit SCORM-pakket zal niet juist afspelen en gegevens niet juist bewaren.';
-$string['notattempted'] = 'Niet geprobeerd';
 $string['not_corr_type'] = 'Typfout voor tag {$a->tag}';
+$string['notattempted'] = 'Niet geprobeerd';
 $string['notopenyet'] = 'Sorry, deze activiteit is niet beschikbaar tot {$a}';
 $string['objectives'] = 'Objectieven';
 $string['openafterclose'] = 'Je hebt een startdatum na de einddatum opgegeven';
@@ -300,9 +300,6 @@ $string['organization'] = 'Organisatie';
 $string['organizations'] = 'Organisaties';
 $string['othersettings'] = 'Bijkomende instellingen';
 $string['package'] = 'Verpakkingsbestand';
-$string['packagedir'] = 'Fout van het bestandssysteem: kan geen map voor het pakket maken';
-$string['packagefile'] = 'Je hebt geen bestand met een pakket gespecifieerd';
-$string['packagehdr'] = 'Pakket';
 $string['package_help'] = '<p><b>Pakketbestand</b></p>
 
 <p>Het pakket is een bestand met extentie <b>zip</b> (of pif) dat een reeks geldige AICC of SCORM vakdefinitiebestanden bevat.</p>
@@ -319,6 +316,9 @@ $string['package_help'] = '<p><b>Pakketbestand</b></p>
 	<li>PRE - Prerequisites file (optioneel)</li>
 	<li>CMP - Completition Requirements file (optioneel)</li>
    </ul>';
+$string['packagedir'] = 'Fout van het bestandssysteem: kan geen map voor het pakket maken';
+$string['packagefile'] = 'Je hebt geen bestand met een pakket gespecifieerd';
+$string['packagehdr'] = 'Pakket';
 $string['packageurl'] = 'URL';
 $string['packageurl_help'] = 'Met deze instelling kun je een URL voor een SCORM-pakket opgeven, eerder dan een bestand selecteren via de bestandskiezer.';
 $string['page-mod-scorm-x'] = 'Elke SCORM-module pagina';
@@ -368,28 +368,27 @@ $string['rightanswer'] = 'Juist antwood';
 $string['scoes'] = 'Leerobjecten';
 $string['score'] = 'Score';
 $string['scorm:addinstance'] = 'Voeg een nieuw SCORM-pakket toe';
-$string['scormclose'] = 'Beschikbaar tot';
-$string['scormcourse'] = 'Leercursus';
 $string['scorm:deleteownresponses'] = 'Eigen pogingen verwijderen';
 $string['scorm:deleteresponses'] = 'Verwijder SCORM pogingen';
+$string['scorm:savetrack'] = 'Bewaar spoor';
+$string['scorm:skipview'] = 'Overzicht overslaan';
+$string['scorm:viewreport'] = 'Bekijk rapporten';
+$string['scorm:viewscores'] = 'Bekijk resultaten';
+$string['scormclose'] = 'Beschikbaar tot';
+$string['scormcourse'] = 'Leercursus';
 $string['scormloggingoff'] = 'API loggen staat uit';
 $string['scormloggingon'] = 'API loggen staat aan';
 $string['scormopen'] = 'Beschikbaar van';
 $string['scormresponsedeleted'] = 'Verwijderde gebruikerspoging';
-$string['scorm:savetrack'] = 'Bewaar spoor';
-$string['scorm:skipview'] = 'Overzicht overslaan';
 $string['scormstandard'] = 'SCORM standaardmodus';
 $string['scormstandarddesc'] = 'Wanneer uitgeschakeld zal Moodle SCORM 1.2-pakketten toestaan om meer te bewaren dan de specificatie toestaat en zal de volledige naam instelling van Moodle gebruiken wanneer de gebruikersnaam doorgegeven wordt aan het SCORM-pakket.';
 $string['scormtype'] = 'Type';
-$string['scormtype_help'] = 'Deze instelling bepaalt hoe het pakket wordt opgenomen in de cursus. Er zijn vijf opties:
+$string['scormtype_help'] = 'Deze instelling bepaalt hoe het pakket wordt opgenomen in de cursus. Er zijn vier opties:
 
 * Upload van pakket - Staat toe om een SCORM pakket te kiezen via de file picker
 * Extern SCORM manifest - Staat toe om een imsmanifest.xml URL te specifiëren. Nota: Indien de URL een andere domeinnaam heeft dan jouw site, dan is \'Download van pakket\' een betere optie, want anders worden de beoordelingscijfers niet bewaard.
 * Download van pakket - Staat toe om een pakket URL te specifiëren. Dit pakket zal worden unzipped, lokaal bewaard, en bijgewerkt wanneer het externe SCORN pakket wordt bijgewerkt.
-* Lokale IMS content opslagruimte - Staat toe om een pakket te selecteren vanuit een IMS opslagruimte
 * Externe AICC URL - Deze URL is de lancerings URL voor één enkele AICC activiteit. Een pseudo pakket zal hierrond worden opgetrokken.';
-$string['scorm:viewreport'] = 'Bekijk rapporten';
-$string['scorm:viewscores'] = 'Bekijk resultaten';
 $string['scrollbars'] = 'Laat rollen door het venster toe';
 $string['search:activity'] = 'SCORM-pakket - activiteitsinformatie';
 $string['selectall'] = 'Selecteer alles';
@@ -397,7 +396,6 @@ $string['selectnone'] = 'Selecteer niets';
 $string['show'] = 'Toon';
 $string['sided'] = 'Aan de zijkant';
 $string['skipview'] = 'Leerlingen slaan inhoudspagina over';
-$string['skipviewdesc'] = 'Deze instelling bepaalt de standaard voor wanneer inhoudsstructuur van een pagina moet overgeslagen worden';
 $string['skipview_help'] = '<p>Als je een pakketje toevoegd met maar één leerobject er in, dan kun je er voor kiezen om automatisch de inhoudsopgave niet te tonen..</p>
 
 <p>Je kunt kiezen uit:
@@ -407,6 +405,7 @@ $string['skipview_help'] = '<p>Als je een pakketje toevoegd met maar één leero
        <li><strong>Always</strong> - de inhoudsopgave altijd overslaan</li>
    </ul>
 </p>';
+$string['skipviewdesc'] = 'Deze instelling bepaalt de standaard voor wanneer inhoudsstructuur van een pagina moet overgeslagen worden';
 $string['slashargs'] = 'WAARSCHUWING: slash arguments is uitgeschakeld op deze site. Daardoor kunnen sommige objecten niet werken zoals verwacht!';
 $string['stagesize'] = 'Frame- / venstergrootte';
 $string['stagesize_help'] = '<p>Deze twee instellingen bepalen hoe groot het venster zal zijn waarin het leerobject getoond wordt.</p>';
@@ -422,9 +421,9 @@ $string['tag_error'] = 'Onbekende tag ({$a->tag}) met deze inhoud: {$a->value}';
 $string['time'] = 'Tijd';
 $string['title'] = 'Titel';
 $string['toc'] = 'Inhoudsopgave';
-$string['toolbar'] = 'Toon knoppenbalk';
 $string['too_many_attributes'] = 'Tag {$a->tag} heeft te veel attributen';
 $string['too_many_children'] = 'Tag {$a->tag} heeft teveel children';
+$string['toolbar'] = 'Toon knoppenbalk';
 $string['totaltime'] = 'Totale tijd';
 $string['trackcorrectcount'] = 'Juist aantal';
 $string['trackcorrectcount_help'] = 'Aantal juiste resultaten voor de vraag';
@@ -461,9 +460,9 @@ $string['typelocalsync'] = 'Gedownload pakket';
 $string['undercontent'] = 'Onder inhoud';
 $string['unziperror'] = 'Er is een fout opgetreden bij het uitpakken van het pakket';
 $string['updatefreq'] = 'Frequentie automatisch updaten';
-$string['updatefreqdesc'] = 'Dze instelling bepaalt de standaard auto-updatefrequentie van een activiteit';
 $string['updatefreq_error'] = 'Automatisch aanpassen kan enkel ingeschakeld worden als het pakketbestand extern gehost wordt.';
 $string['updatefreq_help'] = 'Hiermee kan een extern pakket automatisch gedownload en geüpdated worden.';
+$string['updatefreqdesc'] = 'Dze instelling bepaalt de standaard auto-updatefrequentie van een activiteit';
 $string['validateascorm'] = 'Valideer een SCORM-pakket';
 $string['validation'] = 'Bevestigingsresultaat';
 $string['validationtype'] = 'Deze instelling maakt dat de DOMXML-bibliotheek gebruikt wordt voor de validatie van het SCORM MAnifest. Als je twijfelt laat dan de geselecteerde keuze staan.';
@@ -472,7 +471,6 @@ $string['versionwarning'] = 'De versie van het Manifest is ouder dan 1.3, waarsc
 $string['viewallreports'] = 'Bekijk de rapporten voor {$a} pogingen';
 $string['viewalluserreports'] = 'Bekijk de rapporten voor {$a} gebruikers';
 $string['whatgrade'] = 'Te beoordelen pogingen';
-$string['whatgradedesc'] = 'Of de hoogste, gemiddelde, eerste of laatste volledige poging in de cijferlijst bewaard wordt wanneer meerdere pogingen toegestaan zijn.';
 $string['whatgrade_help'] = 'Wanneer je meerdere pogingen toelaat, kun je via deze instelling specifiëren of de hoogste score, de gemiddelde score, of die van de eerste of laatste voltooide poging in de cijferlijst opgenomen zal worden. Met de laatste voltooide poging worden geen pogingen die opgenomen die de "niet geslaagd"-status hebben.
 
 Behandeling van meerdere pogingen
@@ -480,6 +478,7 @@ Behandeling van meerdere pogingen
 * De optie om een nieuwe poging op te starten, gebeurt via een aankruisvakje dat zich boven de Enter knop op de inhoudsstructuurpagina bevindt; zorg er dus voor dat toegang tot die pagina beschikbaar is indien je meer dan een poging wil toestaan.
 * Sommige scorm pakketten gaan intelligent om met nieuwe pogingen, vele andere niet. Dit betekent dat, wanneer de gebruiker een bestaande poging heropent en de scorm content  niet over een interne logica beschikt om te beletten dat ze wordt overschreven, de eerdere poging overschreven kan worden zelfs al was ze \'volledig\' of \'voorbij\'.
 * De instellingen "Forceer voltooiing", "Forceer nieuwe poging" en "Vergrendel na laatste poging" bieden verdere mogelijkheden tot management van meerdere pogingen.';
+$string['whatgradedesc'] = 'Of de hoogste, gemiddelde, eerste of laatste volledige poging in de cijferlijst bewaard wordt wanneer meerdere pogingen toegestaan zijn.';
 $string['width'] = 'Breedte';
 $string['window'] = 'Frame/venster';
 $string['youmustselectastatus'] = 'Je moet een vereiste status selecteren';

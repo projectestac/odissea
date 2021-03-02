@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'eu', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -71,7 +71,7 @@ $string['categories'] = 'Kategoriak';
 $string['category'] = 'Kategoria';
 $string['categorydeleted'] = 'Kategoria ezabatuta';
 $string['categoryview'] = 'Kategoriaren arabera bilatu';
-$string['changeto'] = '{$a}-(e)ra aldatu';
+$string['changeto'] = 'aldatu {$a}(e)ra';
 $string['cnfallowcomments'] = 'Zehaztu glosarioak sarreretan iruzkinak onartuko dituen ala ez';
 $string['cnfallowdupentries'] = 'Zehaztu glosarioak sarrera bikoiztuak onartuko dituen ala ez';
 $string['cnfapprovalstatus'] = 'Zehaztu ikasleek egindako sarreren egoera lehenetsia';
@@ -121,14 +121,6 @@ $string['destination'] = 'Inportatutako sarreren helmuga';
 $string['destination_help'] = 'Sarrerak inporta eta gehi daitezke oraingo glosariora edo glosario berri batera. Glosario berria XML fitxategian dagoen informazioan oinarrituta sortuko da.';
 $string['disapprove'] = 'Desegin onarpena';
 $string['displayformat'] = 'Erakusteko modua';
-$string['displayformatcontinuous'] = 'Jarraian eta egilerik gabe';
-$string['displayformatdefault'] = 'Erakusteko moduaren berdina (lehenetsia)';
-$string['displayformatdictionary'] = 'Arrunta, hiztegi erakoa';
-$string['displayformatencyclopedia'] = 'Entziklopedia';
-$string['displayformatentrylist'] = 'Sarrera-zerrenda';
-$string['displayformatfaq'] = 'FAQ';
-$string['displayformatfullwithauthor'] = 'Osorik, egilea eta guzti';
-$string['displayformatfullwithoutauthor'] = 'Osorik, egilerik gabe';
 $string['displayformat_help'] = 'Sarrerak erakusteko 7 formatu ditugu aukeran:
 
 * Arrunta, hiztegi erakoa - Ez da egilerik agertzen eta erantsitako fitxategiak esteka bezala agertzen dira.
@@ -138,6 +130,14 @@ $string['displayformat_help'] = 'Sarrerak erakusteko 7 formatu ditugu aukeran:
 * Entziklopedia - Osorik, egilea eta guzti\'ren antzekoa baina erantsitako irudiak on-line erakusten dira.
 * Sarrera-zerrenda - Kontzeptuak esteka gisa erakusten dira
 * FAQ - Maiz egiten diren Galderak aurkezteko erabilgarria. Automatikoki gaineratzen ditu Galdera eta Erantzuna hitzak kontzeptu eta definizioan.';
+$string['displayformatcontinuous'] = 'Jarraian eta egilerik gabe';
+$string['displayformatdefault'] = 'Erakusteko moduaren berdina (lehenetsia)';
+$string['displayformatdictionary'] = 'Arrunta, hiztegi erakoa';
+$string['displayformatencyclopedia'] = 'Entziklopedia';
+$string['displayformatentrylist'] = 'Sarrera-zerrenda';
+$string['displayformatfaq'] = 'FAQ';
+$string['displayformatfullwithauthor'] = 'Osorik, egilea eta guzti';
+$string['displayformatfullwithoutauthor'] = 'Osorik, egilerik gabe';
 $string['displayformats'] = 'Erakusteko moduak';
 $string['displayformatssetup'] = 'Aukeratu erakusteko modua';
 $string['duplicatecategory'] = 'Bikoiztu kategoria';
@@ -204,18 +204,18 @@ $string['glossary:export'] = 'Esportatu sarrerak';
 $string['glossary:exportentry'] = 'Esportatu sarrera bakarra';
 $string['glossary:exportownentry'] = 'Esportatu sarrera bakarra zureetatik';
 $string['glossary:import'] = 'Inportatu sarrerak';
-$string['glossaryleveldefaultsettings'] = 'Glosarioaren ezarpen lehenetsiak';
 $string['glossary:managecategories'] = 'Kudeatu kategoriak';
 $string['glossary:managecomments'] = 'Kudeatu iruzkinak';
 $string['glossary:manageentries'] = 'Kudeatu sarrerak';
 $string['glossary:rate'] = 'Kalifikatu sarrerak';
-$string['glossarytype'] = 'Glosario-mota';
-$string['glossarytype_help'] = 'Glosario nagusia bigarren mailako edozein glosarioren sarrerak inporta ditzakeen glosarioa da. Ikastaro batek glosario nagusi bakarra izan dezake. Glosarioetako sarrerak inportatzea beharrezkoa ez bada, glosario guztiak izan daitezke bigarren mailakoak.';
 $string['glossary:view'] = 'Ikusi glosarioa';
 $string['glossary:viewallratings'] = 'Ikusi erabiltzaileek emandako kalifikazio guztiak';
 $string['glossary:viewanyrating'] = 'Ikusi besteren batek denera jasotako kalifikazioak';
 $string['glossary:viewrating'] = 'Ikusi denera jasotako kalifikazioak';
 $string['glossary:write'] = 'Sortu sarrera berriak';
+$string['glossaryleveldefaultsettings'] = 'Glosarioaren ezarpen lehenetsiak';
+$string['glossarytype'] = 'Glosario-mota';
+$string['glossarytype_help'] = 'Glosario nagusia bigarren mailako edozein glosarioren sarrerak inporta ditzakeen glosarioa da. Ikastaro batek glosario nagusi bakarra izan dezake. Glosarioetako sarrerak inportatzea beharrezkoa ez bada, glosario guztiak izan daitezke bigarren mailakoak.';
 $string['guestnoedit'] = 'Bisitariek ez dute glosarioa editatzeko baimenik';
 $string['importcategories'] = 'Inportatu kategoriak';
 $string['importedcategories'] = 'Inportatutako kategoriak';
@@ -224,13 +224,13 @@ $string['importentries'] = 'Inportatu sarrerak';
 $string['importentriesfromxml'] = 'Inportatu sarrerak XML fitxategi batetik';
 $string['includegroupbreaks'] = 'Sartu banatutako taldeak';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa glosarioetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Glosarioa motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa glosarioetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Glosarioa jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da)';
-$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Glosarioa motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala glosarioetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Glosarioa motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala glosarioetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Glosarioa jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea)';
-$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Glosarioa motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['isglobal'] = 'Glosario orokorra al da hau?';
 $string['isglobal_help'] = 'Glosario orokorrak dituen sarrerak guneko edozein tokitatik estekatuak izan daitezke, eta ez soilik glosarioa duen ikastarotik. Soilik Kudeatzaileek ezar dezakete glosario bat orokor gisa.';
 $string['letter'] = 'letra';
@@ -295,7 +295,7 @@ $string['privacy:metadata:glossary_entries:timemodified'] = 'Erabiltzaileak glos
 $string['privacy:metadata:glossary_entries:userid'] = 'Glosario-sarrera gehitu zuen erabiltzailearen IDa';
 $string['question'] = 'Galdera';
 $string['rejectedentries'] = 'Onartu gabeko sarrerak';
-$string['rejectionrpt'] = 'Onartu gabeko txostena';
+$string['rejectionrpt'] = 'Onartu gabekoen txostena';
 $string['removeallglossarytags'] = 'Ezabatu glosarioko etiketa guztiak';
 $string['resetglossaries'] = 'Ezabatu sarrerak ondokotik';
 $string['resetglossariesall'] = 'Ezabatu glosario guztietako sarrerak';
@@ -310,7 +310,7 @@ $string['searchindefinition'] = 'Bilatu testu osoan';
 $string['secondaryglossary'] = 'Bigarren mailako glosarioa';
 $string['showall'] = 'Erakutsi "GUZTIAK" esteka';
 $string['showall_help'] = 'Gaituz gero, partaideek sarrera guztiak batera ikus ditzakete.';
-$string['showalphabet'] = 'Erakutsi alfabetoa';
+$string['showalphabet'] = 'Erakutsi alfabetoaren estekak';
 $string['showalphabet_help'] = 'Gaituz gero, partaideek glosarioa arakatu ahal dute alfabetoko letren arabera.';
 $string['showspecial'] = 'Erakutsi "Berezia" esteka';
 $string['showspecial_help'] = 'Gaituz gero, partaideek glosarioa araka dezakete karaktere bereziak erabilita, adibidez,  @ edo # .';

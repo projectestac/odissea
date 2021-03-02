@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'ko', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,12 +43,11 @@ $string['category_key'] = '범주';
 $string['contexts'] = 'LDAP 문맥';
 $string['couldnotfinduser'] = '사용자 \'{$a}\'를 찾을 수 없습니다, 건너뜁니다.';
 $string['course_fullname'] = '선택 사항: 전체이름을 위한 LDAP 필드';
-$string['course_fullname_key'] = '성명';
+$string['course_fullname_key'] = '강좌명';
 $string['course_fullname_updateonsync_key'] = '강좌 전체이름 업데이트';
 $string['course_idnumber'] = 'LDAP에서의 서로다른 식별자를 위한 맵, 대부분
 <em>cn</em>나 <em>uid</em>. 만일 자동 강좌 생성기능을 사용하면 값을 수정하지 못하도록 해 놓기 바랍니다.';
 $string['course_idnumber_key'] = 'ID 번호';
-$string['coursenotexistskip'] = '강좌 \'{$a}\' 가 없습니다. 자동 생성이 비활성화 되었습니다. 건너뜁니다.';
 $string['course_search_sub'] = '하위문맥에서 모둠 구성원 검색';
 $string['course_search_sub_key'] = '하위문맥 검색';
 $string['course_settings'] = '강좌 등록 설정';
@@ -58,6 +57,7 @@ $string['course_shortname_updateonsync_key'] = '강좌 짧은 이름 업데이�
 $string['course_summary'] = '선택 사항: 요약을 위한 LDAP 필드';
 $string['course_summary_key'] = '요약';
 $string['course_summary_updateonsync_key'] = '요약 업데이트';
+$string['coursenotexistskip'] = '강좌 \'{$a}\' 가 없습니다. 자동 생성이 비활성화 되었습니다. 건너뜁니다.';
 $string['createcourseextid'] = '존재하지 않는 강좌 \'{$a->courseextid}\'에 등록된 사용자 생성';
 $string['createnotcourseextid'] = '사용자가 존재하지 않는 강좌 \'{$a->courseextid}\'에 등록되었습니다.';
 $string['creatingcourse'] = '강좌 \'{$a}\' 를 만드는 중...';
@@ -80,9 +80,9 @@ $string['host_url'] = 'URL에 속한 LDAP 호스트 지정 - LDAP호스트 값�
 $string['host_url_key'] = '호스트 URL';
 $string['idnumber_attribute'] = '만일 모둠 구성원자격이 구별된 이름(dn)을 포함하고 있다면 LDAP 인증 설정에서 사용자 ID 넘버 매핑에 사용했던 같은 속성을 명시하십시요.';
 $string['idnumber_attribute_key'] = 'ID 번호 속성';
+$string['ldap:manage'] = 'LDAP 등록 인스턴스 관리';
 $string['ldap_encoding'] = 'LDAP서버에 사용되는 엔코딩을 명시하세요. 아마도 utf-8 일것입니다. MS AD v2 는cp1252, cp1250 와 같은 기본 플랫폼 엔코딩을 사용합니다.';
 $string['ldap_encoding_key'] = 'LDAP 인코딩';
-$string['ldap:manage'] = 'LDAP 등록 인스턴스 관리';
 $string['memberattribute'] = 'LDAP 구성원 속성';
 $string['memberattribute_isdn'] = '구성원 자격이 구별된 이름(dn)을 포함하고 있다면 여기에 명시하십시요. 만일 그렇다면 이 섹션의 나머지 설정을 구성해야 합니다.';
 $string['memberattribute_isdn_key'] = '구성원 속성은 dn 을 사용합니다.';

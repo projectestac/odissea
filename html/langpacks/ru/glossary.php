@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'ru', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -145,14 +145,6 @@ $string['destination_help'] = '<h2>Размещение импортирован
 </ul>';
 $string['disapprove'] = 'Отменить одобрение';
 $string['displayformat'] = 'Формат отображения';
-$string['displayformatcontinuous'] = 'Непрерывный, без автора';
-$string['displayformatdefault'] = 'Соответствует формату отображения';
-$string['displayformatdictionary'] = 'Простой, вроде словаря';
-$string['displayformatencyclopedia'] = 'Энциклопедия';
-$string['displayformatentrylist'] = 'Список записей';
-$string['displayformatfaq'] = 'ЧаВо';
-$string['displayformatfullwithauthor'] = 'Полный, с указанием автора';
-$string['displayformatfullwithoutauthor'] = 'Полный, без указания автора';
 $string['displayformat_help'] = 'Есть 7 форматов отображения:
 
 * Простой словарь - авторы записей не показываются, а вложения отображаются как ссылки.
@@ -162,6 +154,14 @@ $string['displayformat_help'] = 'Есть 7 форматов отображен�
 * Энциклопедия - подобен формату «Полный с автором», но вложения показываются сразу.
 * Список записей - понятия перечислены как ссылки
 * ЧаВо - слова ВОПРОС и ОТВЕТ добавляются к понятию и определению соответственно.';
+$string['displayformatcontinuous'] = 'Непрерывный, без автора';
+$string['displayformatdefault'] = 'Соответствует формату отображения';
+$string['displayformatdictionary'] = 'Простой, вроде словаря';
+$string['displayformatencyclopedia'] = 'Энциклопедия';
+$string['displayformatentrylist'] = 'Список записей';
+$string['displayformatfaq'] = 'ЧаВо';
+$string['displayformatfullwithauthor'] = 'Полный, с указанием автора';
+$string['displayformatfullwithoutauthor'] = 'Полный, без указания автора';
 $string['displayformats'] = 'Форматы отображения';
 $string['displayformatssetup'] = 'Настройка форматов отображения';
 $string['duplicatecategory'] = 'Дублировать категорию';
@@ -251,18 +251,18 @@ $string['glossary:export'] = 'Экспортировать записи';
 $string['glossary:exportentry'] = 'Экспортировать одиночную запись';
 $string['glossary:exportownentry'] = 'Экспортировать свою одиночную запись';
 $string['glossary:import'] = 'Импортировать записи';
-$string['glossaryleveldefaultsettings'] = 'Настройки уровня глоссария по умолчанию';
 $string['glossary:managecategories'] = 'Управлять категориями';
 $string['glossary:managecomments'] = 'Управлять комментариями';
 $string['glossary:manageentries'] = 'Управлять записями';
 $string['glossary:rate'] = 'Оценивать записи';
-$string['glossarytype'] = 'Тип глоссария';
-$string['glossarytype_help'] = 'В основной глоссарий можно импортировать записи из вторичных глоссариев. В курсе может быть только один основной глоссарий. Если импорт записей глоссария не требуется, все глоссарии в курсе могут быть вторичными.';
 $string['glossary:view'] = 'Просматривать глоссарий';
 $string['glossary:viewallratings'] = 'Видеть все предварительные оценки';
 $string['glossary:viewanyrating'] = 'Видеть итоговые оценки любого пользователя';
 $string['glossary:viewrating'] = 'Видеть свои итоговые оценки';
 $string['glossary:write'] = 'Создавать новые записи';
+$string['glossaryleveldefaultsettings'] = 'Настройки уровня глоссария по умолчанию';
+$string['glossarytype'] = 'Тип глоссария';
+$string['glossarytype_help'] = 'В основной глоссарий можно импортировать записи из вторичных глоссариев. В курсе может быть только один основной глоссарий. Если импорт записей глоссария не требуется, все глоссарии в курсе могут быть вторичными.';
 $string['guestnoedit'] = 'Гость не имеет права редактировать глоссарий';
 $string['importcategories'] = 'Импортировать категории';
 $string['importedcategories'] = 'Импортированные категории';
@@ -274,6 +274,8 @@ $string['indicator:cognitivedepth'] = 'Глоссарий: познавател�
 $string['indicator:cognitivedepth_help'] = 'Этот показатель основан на глубине познания, достигнутой студентом при работе с элементом курса «Глоссарий».';
 $string['indicator:socialbreadth'] = 'Глоссарий: социальный аспект';
 $string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с элементом Глоссарий.';
+$string['indicator:socialbreadthdef'] = 'Глоссарий: социальный аспект';
+$string['indicator:socialbreadthdef_help'] = 'Участник достиг этого процента социальной активности, предлагаемой элементами Глоссарий в течение этого интервала анализа (Уровни = нет участия, единственный участник)';
 $string['isglobal'] = 'Этот глоссарий глобальный?';
 $string['isglobal_help'] = '<h2>Определение глобального глоссария</h2>
 

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mathjaxloader', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filter_mathjaxloader', language 'ca', version '3.8'.
  *
- * @package   filter_mathjaxloader
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filter_mathjaxloader
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,11 +33,11 @@ $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'URL HTTPS de MathJax';
 $string['httpsurl_help'] = 'URL complet de la llibreria MathJax. S\'utilitza quan la pàgina es carrega mitjançant https (connexió segura).';
 $string['localinstall'] = 'Instal·lació local de MathJax';
-$string['localinstall_help'] = 'La configuració per defecte de MathJax utilitza la versió CDN de MathJax, però MathJax es pot instal·lar localment si cal.
+$string['localinstall_help'] = 'La configuració per defecte de MathJax utilitza la versió CDN de MathJax, però MathJax es pot instal·lar localment, si cal.
 
-Això pot ser útil per a estalviar ample de banda o per restriccions d\'un proxy local.
+Això pot ser útil per a estalviar amplada de banda o per restriccions d\'un <em>proxy</em> local.
 
-Per a utilitzar una instal·lació local de MathJax, baixeu primer la biblioteca MathJax completa des de http://www.mathjax.org/. Després instal·leu-la en un servidor web. Finalment, actualitzeu els paràmetres httpurl i/o httpsurl del filtre MathJax per a apuntar a l\'URL local de MathJax.js';
+Per utilitzar una instal·lació local de MathJax, baixeu primer la biblioteca MathJax completa des de http://www.mathjax.org/. Després, instal·leu-la en un servidor web. Finalment, actualitzeu els paràmetres httpurl i/o httpsurl del filtre MathJax per a apuntar a l\'URL local de MathJax.js';
 $string['mathjaxsettings'] = 'Configuració de MathJax';
 $string['mathjaxsettings_desc'] = 'La configuració per defecte de MathJax, hauria de resultar apropiada per a la majoria d\'usuaris, però MathJax és altament configurable i qualsevol de les opcions estàndard de configuració de MathJax es pot afegir aquí.';
 $string['texfiltercompatibility'] = 'Compatibilitat del filtre TeX';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability_group', language 'sv', version '3.8'.
  *
- * @package   availability_group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability_group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,9 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['anygroup'] = '(Vilken grupp som helst)';
 $string['description'] = 'Tillåt endast studenter som tillhör en specifik grupp, eller någon grupp.';
 $string['error_selectgroup'] = 'Du måste välja en grupp';
-$string['pluginname'] = 'Begränsning utifrån Grupp';
-$string['requires_anygroup'] = 'Du tillhör någon grupp';
-$string['requires_group'] = 'Du tillhör <strong>{$a}</strong>';
-$string['requires_notanygroup'] = 'Du tillhör inte någon grupp';
-$string['requires_notgroup'] = 'Du tillhör inte <strong>{$a}</strong>';
+$string['missing'] = '(Grupp saknas)';
+$string['pluginname'] = 'Begränsning via grupp';
+$string['privacy:metadata'] = 'Pluginmodulen Begränsning via grupp lagrar ingen personlig information.';
+$string['requires_anygroup'] = 'Du <strong>tillhör</strong> någon grupp';
+$string['requires_group'] = 'Du <strong>tillhör</strong> gruppen <strong>{$a}</strong>';
+$string['requires_notanygroup'] = 'Du <strong>tillhör inte</strong> någon grupp';
+$string['requires_notgroup'] = 'Du <strong>tillhör inte</strong> gruppen <strong>{$a}</strong>';
 $string['title'] = 'Grupp';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hub', language 'ca', version '3.8'.
  *
- * @package   hub
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hub
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,9 @@ $string['advertised'] = 'Anunciat';
 $string['advertiseon'] = 'Anuncia aquest curs en {$a}';
 $string['advertisepublication_help'] = 'Anunciar el vostre curs en la comunitat del concentrador permet a la gent trobar-lo i vindre per inscriure\'s.';
 $string['audience'] = 'Audiència';
+$string['audience_help'] = 'Selecciona l\'audiència prevista per al curs.';
 $string['audienceadmins'] = 'Administradors de Moodle';
 $string['audienceeducators'] = 'Educadors';
-$string['audience_help'] = 'Selecciona l\'audiència prevista per al curs.';
 $string['audiencestudents'] = 'Estudiants';
 $string['badgesnumber'] = 'Nombre d\'insígnies ({$a})';
 $string['communityremoved'] = 'Aquest enllaç al curs ha estat suprimit de la vostra llista';
@@ -124,7 +124,7 @@ $string['registeredsites'] = 'Llocs registrats';
 $string['registersite'] = 'Registrat amb {$a}';
 $string['registerwithmoodleorg'] = 'Registreu el vostre lloc a Moodle.org';
 $string['registrationconfirmed'] = 'Confirmat el registre del lloc';
-$string['registrationconfirmedon'] = 'Gràcies per registrar el vostre lloc {$a}. La informació del registre es mantindrà al dia mitjançant la tasca programada «Registre del lloc».';
+$string['registrationconfirmedon'] = 'Gràcies per registrar el vostre lloc. La informació del registre es mantindrà al dia mitjançant la tasca programada «Registre del lloc».';
 $string['registrationinfo'] = 'Informació de registre';
 $string['removefromhub'] = 'Treu del concentrador';
 $string['renewregistration'] = 'Renova el registre';
@@ -150,7 +150,7 @@ $string['sitecountry_help'] = 'El país de la vostra arganització és';
 $string['sitedesc'] = 'Descripció';
 $string['sitedesc_help'] = 'La descripció del vostre lloc es pot mostrar a la llista de llocs. Utilitzeu sols text net.';
 $string['siteemail'] = 'Adreça de correu electrònic';
-$string['siteemail_help'] = 'Us cal proporcionar un correu electrònic a l\'administrador del concentrador perquè contacti amb vós. Això no s\'utilitzarà per a cap altre propòsit. És recomanable introduir un correu que reflecteixi la vostra posició (ex.: adminlloc@exemple.com ) i no directament un de personal.';
+$string['siteemail_help'] = 'Us cal proporcionar una adreça electrònica a l\'administrador del concentrador perquè contacti amb vós. Això no s\'utilitzarà per a cap altre propòsit. És recomanable introduir una adreça electrònica que reflecteixi la vostra posició (ex.: adminlloc@exemple.com ) i no directament una de personal.';
 $string['sitegeolocation'] = 'Geolocalització';
 $string['sitegeolocation_help'] = 'En un futur podem proporcionar cerques basades en la geolocalització als concentradors. Si voleu especificar la localització del vostre lloc, utilitzeu la latitud/longitud aquí (p. ex.: -31.947884,115.871285). Una manera de trobar-la és utilitzar Google Maps.';
 $string['sitelang'] = 'Idioma';
@@ -180,7 +180,7 @@ $string['statusunpublished'] = 'No és a la llista';
 $string['subject'] = 'Tema';
 $string['subject_help'] = 'Selecciona el tema principal, que cobreix el curs.';
 $string['tags'] = 'Etiquetes';
-$string['tags_help'] = 'Les etiquetes ajuden a classificar encara més el vostre curs i l\'ajuden a trobar. Empreu paraules senzilles, significatives i separades amb una coma. Exemple:  matemàtiques, àlgebra, geometria';
+$string['tags_help'] = 'Les etiquetes ajuden a classificar encara més el vostre curs i ajuden a trobar-lo. Empreu paraules senzilles, significatives i separades amb una coma. Exemple:  matemàtiques, àlgebra, geometria';
 $string['type'] = 'Anunciats / Compartits';
 $string['unpublish'] = 'Defés la publicació';
 $string['unpublishalladvertisedcourses'] = 'Treu tots els cursos que actualment estiguin sent anunciats al concentrador';

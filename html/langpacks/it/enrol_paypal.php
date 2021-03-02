@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_paypal', language 'it', version '3.8'.
  *
- * @package   enrol_paypal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_paypal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,11 +52,11 @@ $string['mailstudents'] = 'Informa gli studenti';
 $string['mailteachers'] = 'Informa i docenti';
 $string['messageprovider:paypal_enrolment'] = 'Messaggi di iscrizione PaPal';
 $string['nocost'] = 'Questo corso non ha costo di iscrizione!';
-$string['paypalaccepted'] = 'Pagamenti Paypal accettati';
 $string['paypal:config'] = 'Configurare istanze plugin di iscrizione PayPal';
 $string['paypal:manage'] = 'Gestire utenti iscritti';
 $string['paypal:unenrol'] = 'Disiscrivere utenti dal corso';
 $string['paypal:unenrolself'] = 'Disiscriversi dal corso';
+$string['paypalaccepted'] = 'Pagamenti Paypal accettati';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'Il plugin di iscrizione PayPal consente impostare iscrizioni a pagamento. Se il costo di iscrizione è pari a zero, non sarà necessario pagare per iscriversi. E\' anche possibile impostare un costo a livello di sito che sarà usato come default per i corsi, nei quali sarà comunque possibile impostare costi differenti.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'Informazioni sulle transazioni PayPal relative alle iscrizioni PayPal.';

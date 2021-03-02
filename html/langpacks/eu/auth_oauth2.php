@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_oauth2', language 'eu', version '3.8'.
  *
- * @package   auth_oauth2
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_oauth2
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,12 +44,12 @@ Laguntza behar izanez gero, mesedez jarri harremanetan guneko kudeatzailearekin,
 
 Kontu-eskaera hau zuk egin ez baduzu, norbait zure kontuan sarbidea lortzeko saiakera egiten egon daiteke.
 Mesedez zure guneko kudeatzailearekin harremanetan jarri zaitez lehen bai lehen.';
-$string['confirmaccountemailsubject'] = '{$a}: kontuaren baieztatzea';
-$string['confirmationinvalid'] = 'Baieztatze-esteka baliogabea da edo iraungi da. Mesedez, hasi berriz sartzeko prozesua kontua baieztatze e-mail berri bat sortzeko.';
-$string['confirmationpending'] = 'Kontu hau posta elektroniko bidezko baiztapenaren zain dago.';
+$string['confirmaccountemailsubject'] = '{$a}: kontuaren berrespena';
+$string['confirmationinvalid'] = 'Berrespen-esteka baliogabea da edo iraungi da. Mesedez, hasi berriz sartzeko prozesua kontua berrespen e-mail berri bat sortzeko.';
+$string['confirmationpending'] = 'Kontu hau posta elektroniko bidezko berrespenaren zain dago.';
 $string['confirmlinkedloginemail'] = 'Kaixo, {$a->fullname}:
 
-Eskaera bat egin da {$a->issuername}-(e)ko {$a->linkedemail} helbidea zure helbide elektronikoa erabiliz zure \'{$a->sitename}\' guneko kontuarekin lotzeko.
+Eskaera bat egin da {$a->issuername}(e)ko {$a->linkedemail} helbidea zure helbide elektronikoa erabiliz zure \'{$a->sitename}\' guneko kontuarekin lotzeko.
 
 Eskaera hau baieztatu eta sarbide horiek lotzeko, mesedez sartu hurrengo helbidean:
 
@@ -62,7 +62,7 @@ Laguntza behar baduzu, mesedez jarri harremanetan zure guneko kudeatzailearekin,
 
 Kontu-eskaera hau zuk egin ez baduzu, norbait zure kontuan sarbidea lortzeko saiakera egiten egon daiteke.
 Mesedez zure guneko kudeatzailearekin harremanetan jarri zaitez lehen bai lehen.';
-$string['confirmlinkedloginemailsubject'] = '{$a}: lotutako sarbidearen baieztatzea';
+$string['confirmlinkedloginemailsubject'] = '{$a}: lotutako sarbidearen berrespena';
 $string['createaccountswarning'] = 'Autentifikazio-plugin honek zure gunean kontuak sortzea ahalbidetzen du. Ezarpen hau erabili nahi baduzu baliteke "authpreventaccountcreation" ezarpena gaitzea nahi izatea.';
 $string['createnewlinkedlogin'] = 'Estekatu beste kontu bat ({$a})';
 $string['emailconfirmlink'] = 'Estekatu zure kontuak';
@@ -99,8 +99,8 @@ $string['plugindescription'] = 'Autentifikazio-plugin honek konfiguratuta dauden
 $string['pluginname'] = 'OAuth 2';
 $string['privacy:metadata:auth_oauth2'] = 'OAuth2 autentifikazioa';
 $string['privacy:metadata:auth_oauth2:authsubsystem'] = 'Plugin hau autentifikazio-sistemarekin lotuta dago';
-$string['privacy:metadata:auth_oauth2:confirmtoken'] = 'Baieztatze-tokena';
-$string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'Baieztatze-tokena iraungitzen den unea.';
+$string['privacy:metadata:auth_oauth2:confirmtoken'] = 'Berrespen-tokena';
+$string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'Berrespen-tokena iraungitzen den unea.';
 $string['privacy:metadata:auth_oauth2:email'] = 'Kontu honekin lotutako kanpoko helbide elektronikoa.';
 $string['privacy:metadata:auth_oauth2:issuerid'] = 'OAuth 2 saio-hasiera honetako OAuth 2 emailearen IDa';
 $string['privacy:metadata:auth_oauth2:tableexplanation'] = 'Erabiltzailearen Moodle kontuarekin lotutako OAuth 2 kontuak.';

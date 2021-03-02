@@ -48,13 +48,12 @@ require_capability('moodle/restore:restoretargetimport', $context);
 // Check if alexandria import is enabled.
 $dbs = alexandria_get_databases();
 if (count($dbs) <= 0) {
-    return "";
-    die();
+    return '';
 }
+
 $data = $dbs[$dataid];
 if (!$data) {
-    return "";
-    die();
+    return '';
 }
 
 $found = search_in_alexandria($dataid, $search, $from);

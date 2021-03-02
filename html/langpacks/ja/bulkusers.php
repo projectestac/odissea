@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bulkusers', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'bulkusers', language 'ja', version '3.8'.
  *
- * @package   bulkusers
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     bulkusers
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,7 +41,7 @@ $string['selected'] = '選択済み';
 $string['selectedlist'] = '選択済みユーザリスト ...';
 $string['selectedlist_help'] = 'ユーザ名をクリックして適切なボタンをクリックすることでユーザは「選択済み」ユーザ一覧にユーザを追加またはユーザを削除することができます。CTRLキーを押したまま、またはAPPLEキーを押したままユーザ名をクリックすることで複数ユーザを選択することができます';
 $string['users'] = 'ユーザ';
-$string['usersfound'] = '{$a} 名のユーザが見つかりました。';
 $string['users_help'] = 'アクティブフィルタに合致したユーザすべてが利用可能ボックスに表示されます。フィルタを使用しない場合、サイトユーザすべてが表示されます。';
+$string['usersfound'] = '{$a} 名のユーザが見つかりました。';
 $string['usersinlist'] = 'ユーザリスト';
 $string['usersselected'] = '{$a} 名のユーザが選択されました。';

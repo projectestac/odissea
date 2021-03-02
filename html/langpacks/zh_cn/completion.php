@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'completion', language 'zh_cn', version '3.8'.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,7 +52,6 @@ $string['completedunlockedtext'] = '保存修改后，所有学生的完成状�
 $string['completedwarning'] = '完成选项已锁定';
 $string['completedwarningtext'] = '参与者{$a}已经标记这项活动为完成。改变完成选项会删除他们的完成状态记录，有可能导致混乱。因此，这些选项已被加锁。除非绝对必要，请不要解锁。';
 $string['completion'] = '进度跟踪';
-$string['completionactivitydefault'] = '用户活动默认设置';
 $string['completion-alt-auto-enabled'] = '系统根据条件“{$a}”标记此项为完成';
 $string['completion-alt-auto-fail'] = '已完成：{$a}（未及格）';
 $string['completion-alt-auto-n'] = '未完成：{$a}';
@@ -65,39 +64,40 @@ $string['completion-alt-manual-n'] = '未完成：{$a}。选择以标记为完�
 $string['completion-alt-manual-n-override'] = '未完成：{$a->modname} (由 {$a->overrideuser}设置)。选择以标记为完成。';
 $string['completion-alt-manual-y'] = '已完成：{$a}。选择以标记为未完成。';
 $string['completion-alt-manual-y-override'] = '已完成: {$a->modname} (由{$a->overrideuser}设置)。选择以标记为未完成。';
+$string['completion-fail'] = '已完成（未及格）';
+$string['completion-n'] = '未完成';
+$string['completion-pass'] = '已完成（及格）';
+$string['completion-y'] = '已完成';
 $string['completion_automatic'] = '当条件都满足时，将活动标为完成';
+$string['completion_help'] = '如果启用，将基于给定的条件，人工或自动跟踪活动的完成状态。如需要，可以设置多个条件，那么只有所有条件都满足时活动才被看作已完成。
+
+在课程页面，当活动已完成时，活动名后面会有一个标记。
+';
+$string['completion_manual'] = '学生可以手工标记此活动为完成';
+$string['completion_none'] = '不标示活动完成状态';
+$string['completionactivitydefault'] = '用户活动默认设置';
 $string['completiondefault'] = '完成进度跟踪默认设置';
 $string['completiondisabled'] = '禁用，不在活动设置页面显示';
 $string['completionduration'] = '环境';
 $string['completionenabled'] = '启用，通过进度和活动设置来控制';
 $string['completionexpected'] = '预期完成时间';
 $string['completionexpected_help'] = '此选项设置此活动预期的完成日期。这个日期只显示在活动进度报告中，不会显示给学生。';
-$string['completion-fail'] = '已完成（未及格）';
-$string['completion_help'] = '如果启用，将基于给定的条件，人工或自动跟踪活动的完成状态。如需要，可以设置多个条件，那么只有所有条件都满足时活动才被看作已完成。
-
-在课程页面，当活动已完成时，活动名后面会有一个标记。
-';
 $string['completionicons'] = '完成状态标记框';
 $string['completionicons_help'] = '当活动完成时，在活动名称边上有一个勾作为标记。
 当一个虚线框出现的时候，当你根据老师设定的条件完成了活动之后，勾会自动出现。
 当一个实线框出现的时候，如果你觉得你完成了任务，可以点击勾选。（如果改变主意了再点一次就可以去掉勾。）这个是可选的而且只是一种跟踪你课程进度的方式。';
-$string['completion_manual'] = '学生可以手工标记此活动为完成';
 $string['completionmenuitem'] = '进度';
-$string['completion-n'] = '未完成';
-$string['completion_none'] = '不标示活动完成状态';
 $string['completionnotenabled'] = '进度跟踪功能未启用';
 $string['completionnotenabledforcourse'] = '本课程未开启进度跟踪功能';
 $string['completionnotenabledforsite'] = '本站未开启进度跟踪功能';
 $string['completionondate'] = '日期';
 $string['completionondatevalue'] = '用户必须在此日期之前一直保持选课';
-$string['completion-pass'] = '已完成（及格）';
 $string['completionsettingslocked'] = '完成设置已锁定';
 $string['completionusegrade'] = '必须有成绩';
 $string['completionusegrade_desc'] = '学生必须获得成绩才能完成此活动';
 $string['completionusegrade_help'] = '如果激活，此活动在学生获得成绩时被标记为完成。如果活动设置了及格线，那么会显示及格或未及格图标。';
 $string['completionview'] = '必须浏览';
 $string['completionview_desc'] = '学生必须浏览此活动，才能完成它';
-$string['completion-y'] = '已完成';
 $string['configcompletiondefault'] = '当建立活动时，完成进度跟踪的默认设置';
 $string['configenablecompletion'] = '启用后，您就可以在课程级别使用进度跟踪功能。';
 $string['confirmselfcompletion'] = '确认自设完成';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'ca', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -61,10 +61,10 @@ $string['editgroupsettings'] = 'Edita paràmetres del grup';
 $string['enablemessaging'] = 'Missatgeria de grup';
 $string['enablemessaging_help'] = 'Si s\'habilita, els membres d\'un grup poden enviar missatges als altres membres del seu grup mitjançant el menú de missatges.';
 $string['enrolmentkey'] = 'Clau d\'inscripció';
-$string['enrolmentkeyalreadyinuse'] = 'Aquesta clau de matrícula ja l\'utilitza un altre grup.';
 $string['enrolmentkey_help'] = 'Una clau d\'inscripció obre l\'accés al curs, que queda restringit a les persones que la saben. Si s\'especifica una clau d\'inscripció, l\'usuari no només podrà inscriure\'s al curs, si la coneix, sinó que també esdevindrà automàticament membre del grup.
 
 Nota: Les claus d\'inscripció de grup s\'han d\'activar als paràmetres de l\'autoinscripció, i també s\'ha d\'especificar una clau d\'inscripció per al curs.';
+$string['enrolmentkeyalreadyinuse'] = 'Aquesta clau de matrícula ja l\'utilitza un altre grup.';
 $string['erroraddremoveuser'] = 'S\'ha produït un error en afegir l\'usuari {$a} o suprimir-lo del grup.';
 $string['erroreditgroup'] = 'S\'ha produït un error en crear o actualitzar el grup {$a}';
 $string['erroreditgrouping'] = 'S\'ha produït un error en crear o actualitzar l\'agrupament {$a}';
@@ -94,9 +94,9 @@ $string['groupinfo'] = 'Informació sobre el grup seleccionat';
 $string['groupinfomembers'] = 'Informació sobre els membres seleccionats';
 $string['groupinfopeople'] = 'Informació sobre les persones seleccionades';
 $string['grouping'] = 'Agrupament';
+$string['grouping_help'] = 'Un agrupament és una llista de grups dins d\'un curs. Si s\'ha seleccionat un agrupament, les persones assignades a l\'agrupament podran treballar conjuntament.';
 $string['groupingaddedsuccesfully'] = 'L\'agrupació {$a} s\'ha afegit amb èxit.';
 $string['groupingdescription'] = 'Descripció de l\'agrupament';
-$string['grouping_help'] = 'Un agrupament és una llista de grups dins d\'un curs. Si s\'ha seleccionat un agrupament, les persones assignades a l\'agrupament podran treballar conjuntament.';
 $string['groupingname'] = 'Nom de l\'agrupament';
 $string['groupingnameexists'] = 'El nom d\'agrupament \'{$a}\' ja existeix en aquest curs. Trieu-ne un altre.';
 $string['groupings'] = 'Agrupaments';
@@ -109,8 +109,6 @@ $string['groupmembers'] = 'Membres del grup';
 $string['groupmemberssee'] = 'Visualitza els membres del grup';
 $string['groupmembersselected'] = 'Membres del grup seleccionat';
 $string['groupmode'] = 'Mode de grups';
-$string['groupmodeforce'] = 'Imposa el mode de grup';
-$string['groupmodeforce_help'] = 'Si es força el mode de grups, el mode de grups del curs s\'aplica a cada activitat del curs. Aleshores els modes de grup de cada activitat no es tenen en compte.';
 $string['groupmode_help'] = 'Aquest paràmetre té 3 opcions:
 
 * Sense grups
@@ -118,6 +116,8 @@ $string['groupmode_help'] = 'Aquest paràmetre té 3 opcions:
 * Grups visibles: cada membre d\'un grup treballa dins del seu propi grup, però pot veure també els altres grups.
 
 El mode de grup definit a nivell de curs és el mode per defecte en totes les activitats del curs. Cada activitat que admeti grups pot definir també el seu propi mode de grup, encara que si s\'imposa el mode de grup a nivell de curs, s\'ignorarà el paràmetre de mode de grup de cada activitat.';
+$string['groupmodeforce'] = 'Imposa el mode de grup';
+$string['groupmodeforce_help'] = 'Si es força el mode de grups, el mode de grups del curs s\'aplica a cada activitat del curs. Aleshores els modes de grup de cada activitat no es tenen en compte.';
 $string['groupmy'] = 'El meu grup';
 $string['groupname'] = 'Nom del grup';
 $string['groupnameexists'] = 'Ja existeix un grup denominat \'{$a}\' en aquest curs. Trieu un altre nom.';
@@ -148,9 +148,9 @@ $string['members'] = 'Membres per grup';
 $string['membersofselectedgroup'] = 'Membres de:';
 $string['mygroups'] = 'Els meus grups';
 $string['namingscheme'] = 'Esquema de noms';
-$string['namingscheme_help'] = 'El símbol de l\'arrova (@) es pot fer servir per crear grups amb noms que contenen lletres. Per exemple Grup @ generarà grups anomentats Grup A, Grup B, Grup C, ...<br/>
+$string['namingscheme_help'] = 'El símbol de l\'arrova (@) es pot fer servir per crear grups amb noms que contenen lletres. Per exemple, Grup @ generarà grups anomentats Grup A, Grup B, Grup C, ...<br/>
 <br/>
-El símbol de l\'encoixinat (#) es pot fer servir per crear grups amb noms que contenen números. Per exemple Grup # generarà grups anomenats Grup 1, Grup 2, Grup 3, ...';
+El símbol del coixinet (#) es pot fer servir per crear grups amb noms que contenen números. Per exemple, Grup # generarà grups anomenats Grup 1, Grup 2, Grup 3, ...';
 $string['newgrouping'] = 'Nou agrupament';
 $string['newpicture'] = 'Imatge nova';
 $string['newpicture_help'] = 'Seleccioneu una imatge en format JPG o PNG. La imatge es retallarà com un quadre i es redimensionarà a 100x100 píxels.';
@@ -182,7 +182,7 @@ $string['removegroupsmembers'] = 'Treu tots els membres del grup';
 $string['removeselectedusers'] = 'Suprimeix els usuaris seleccionats';
 $string['selectfromgroup'] = 'Selecciona els membres des d\'un grup';
 $string['selectfromgrouping'] = 'Selecciona els membres de l\'agrupament';
-$string['selectfromrole'] = 'Rol d\'on seleccionar membres';
+$string['selectfromrole'] = 'Selecciona membres del rol';
 $string['showgroupsingrouping'] = 'Mostra grups de l\'agrupament';
 $string['showmembersforgroup'] = 'Mostra membres del grup';
 $string['toomanygroups'] = 'No hi ha prou usuaris per a poblar aquest nombre de grups. Només hi ha {$a} usuaris en el rol seleccionat.';

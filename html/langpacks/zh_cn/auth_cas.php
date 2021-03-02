@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_cas', language 'zh_cn', version '3.8'.
  *
- * @package   auth_cas
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_cas
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['CASform'] = '选择认证方式';
 $string['accesCAS'] = 'CAS 用户';
 $string['accesNOCAS'] = '其他用户';
 $string['auth_cas_auth_user_create'] = '创建外部用户';
@@ -42,15 +43,14 @@ $string['auth_cas_changepasswordurl'] = '更改密码 URL';
 $string['auth_cas_create_user'] = '如果您希望将 CAS 认证用户加入到 Moodle 数据库中，请选择是。否则只有已经存在于 Moodle 数据库中的用户可以登录。';
 $string['auth_cas_create_user_key'] = '创建用户';
 $string['auth_cas_curl_ssl_version'] = '会使用SSL版本(2或3)。默认PHP将会尝试自行决定，但在某些情况下必须手动设置。';
-$string['auth_cas_curl_ssl_version_default'] = '默认';
-$string['auth_cas_curl_ssl_version_key'] = 'cURL SSL 版本';
 $string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
 $string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
 $string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
 $string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
 $string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
 $string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
-$string['auth_casdescription'] = '这个方法使用 CAS 服务器(中央认证服务)，在单点登录(SSO)环境中认证用户。您也可以使用简单的 LDAP 认证。如果给定的用户名和密码在 CAS 中有效，Moodle 会在数据库中创建信用户账号，并从 LDAP 中取出需要的属性。在后续的登录中，只检查用户名和密码。';
+$string['auth_cas_curl_ssl_version_default'] = '默认';
+$string['auth_cas_curl_ssl_version_key'] = 'cURL SSL 版本';
 $string['auth_cas_enabled'] = '如果您希望使用 CAS 认证请开启此选项。';
 $string['auth_cas_hostname'] = 'CAS 服务器主机名<br />例如: host.domain.fr';
 $string['auth_cas_hostname_key'] = '主机名';
@@ -58,13 +58,12 @@ $string['auth_cas_invalidcaslogin'] = '很抱歉，您登录失败——无法�
 $string['auth_cas_language'] = '选择认证页面语言';
 $string['auth_cas_language_key'] = '语言';
 $string['auth_cas_logincas'] = '安全连接访问';
-$string['auth_cas_logoutcas'] = '如果您希望与Moodle断开连接时登出CAS ，请选“是”';
-$string['auth_cas_logoutcas_key'] = '登出CAS选项';
 $string['auth_cas_logout_return_url'] = '提供一个CAS用户注销后定向到的网址。<br />如为空，则用户将被定向到魔灯平台默认定向的位置';
 $string['auth_cas_logout_return_url_key'] = '备选的注销返回网址';
+$string['auth_cas_logoutcas'] = '如果您希望与Moodle断开连接时登出CAS ，请选“是”';
+$string['auth_cas_logoutcas_key'] = '登出CAS选项';
 $string['auth_cas_multiauth'] = '如果您想支持多种身份认证方式（CAS + 其他认证），请选“是”';
 $string['auth_cas_multiauth_key'] = '多种验证方式';
-$string['auth_casnotinstalled'] = '不能使用 CAS 认证方式，因为 PHP LDAP 模块没有安装。';
 $string['auth_cas_port'] = 'CAS 服务器端口';
 $string['auth_cas_port_key'] = '端口';
 $string['auth_cas_proxycas'] = '如果在代理模式下使用CAS，请选“是”';
@@ -73,7 +72,8 @@ $string['auth_cas_server_settings'] = 'CAS 服务配置';
 $string['auth_cas_text'] = '安全连接';
 $string['auth_cas_use_cas'] = '使用 CAS';
 $string['auth_cas_version'] = '使用哪个CAS协议版本';
-$string['CASform'] = '选择认证方式';
+$string['auth_casdescription'] = '这个方法使用 CAS 服务器(中央认证服务)，在单点登录(SSO)环境中认证用户。您也可以使用简单的 LDAP 认证。如果给定的用户名和密码在 CAS 中有效，Moodle 会在数据库中创建信用户账号，并从 LDAP 中取出需要的属性。在后续的登录中，只检查用户名和密码。';
+$string['auth_casnotinstalled'] = '不能使用 CAS 认证方式，因为 PHP LDAP 模块没有安装。';
 $string['noldapserver'] = 'CAS没有配置LDAP服务器！因此同步被禁用。';
 $string['pluginname'] = 'CAS 服务器(单点登录)';
 $string['privacy:metadata'] = 'CAS服务(SSO)认证插件不储存任何私人数据。';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'en', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,13 +34,15 @@ $string['calendarend'] = '{$a} closes';
 $string['calendarstart'] = '{$a} opens';
 $string['cannotsubmit'] = 'Sorry, there was a problem submitting your choice. Please try again.';
 $string['choice'] = 'Choice';
-$string['choiceactivityname'] = 'Choice: {$a}';
 $string['choice:addinstance'] = 'Add a new choice';
 $string['choice:choose'] = 'Record a choice';
-$string['choiceclose'] = 'Allow responses until';
-$string['choicecloseson'] = 'Choice closes on {$a}';
 $string['choice:deleteresponses'] = 'Modify and delete responses';
 $string['choice:downloadresponses'] = 'Download responses';
+$string['choice:readresponses'] = 'View responses';
+$string['choice:view'] = 'View choice activity';
+$string['choiceactivityname'] = 'Choice: {$a}';
+$string['choiceclose'] = 'Allow responses until';
+$string['choicecloseson'] = 'Choice closes on {$a}';
 $string['choicefull'] = 'One or more of the options you have selected have already been filled. Your response has not been saved. Please make another selection.';
 $string['choicename'] = 'Choice name';
 $string['choiceopen'] = 'Allow responses from';
@@ -48,10 +50,8 @@ $string['choiceoptions'] = 'Choice options';
 $string['choiceoptions_help'] = 'Here is where you specify the options that participants have to choose from.
 
 You can fill in any number of these. If you leave some of the options blank, they will not be displayed. If you need more than 8 options, click the "Add 3 fields to form" button.';
-$string['choice:readresponses'] = 'View responses';
 $string['choicesaved'] = 'Your choice has been saved';
 $string['choicetext'] = 'Choice text';
-$string['choice:view'] = 'View choice activity';
 $string['chooseaction'] = 'Choose an action ...';
 $string['chooseoption'] = 'Choose: {$a}';
 $string['closebeforeopen'] = 'You have specified a close date before the open date.';
@@ -72,15 +72,15 @@ $string['full'] = '(Full)';
 $string['havetologin'] = 'You have to log in before you can submit your choice';
 $string['includeinactive'] = 'Include responses from inactive/suspended users';
 $string['indicator:cognitivedepth'] = 'Choice cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Choice activity.';
 $string['indicator:cognitivedepthdef'] = 'Choice cognitive';
 $string['indicator:cognitivedepthdef_help'] = 'The participant has reached this percentage of the cognitive engagement offered by the Choice activities during this analysis interval (Levels = No view, View, Submit, View feedback)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
-$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Choice activity.';
 $string['indicator:socialbreadth'] = 'Choice social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Choice activity.';
 $string['indicator:socialbreadthdef'] = 'Choice social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the Choice activities during this analysis interval (Levels = No participation, Participant alone, Participant with others)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Choice activity.';
 $string['limit'] = 'Limit';
 $string['limitanswers'] = 'Limit the number of responses allowed';
 $string['limitanswers_help'] = 'This option allows you to limit the number of participants that can select each choice option. When the limit is reached then no-one else can select that option.

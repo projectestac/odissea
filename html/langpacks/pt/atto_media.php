@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_media', language 'pt', version '3.8'.
  *
- * @package   atto_media
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_media
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -69,7 +69,7 @@ $string['metadatasourcelabel'] = 'URL da faixa de metadados';
 $string['mute'] = 'Sem som';
 $string['pluginname'] = 'Inserir ou editar um ficheiro de áudio/vídeo';
 $string['poster'] = 'URL da miniatura';
-$string['privacy:metadata'] = 'O módulo atto_media não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo atto_media não armazena quaisquer dados pessoais.';
 $string['remove'] = 'Remover';
 $string['size'] = 'Tamanho';
 $string['srclang'] = 'Idioma';

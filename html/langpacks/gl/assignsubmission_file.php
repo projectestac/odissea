@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignsubmission_file', language 'gl', version '3.8'.
  *
- * @package   assignsubmission_file
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignsubmission_file
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,8 +30,8 @@ $string['acceptedfiletypes_help'] = 'Os tipos de ficheiro aceptados pódense res
 $string['configmaxbytes'] = 'Tamaño máximo do ficheiro';
 $string['countfiles'] = '{$a} ficheiros';
 $string['default'] = 'Activado de xeito predeterminado';
-$string['defaultacceptedfiletypes'] = 'Tipos predeterminados de ficheiros aceptados';
 $string['default_help'] = 'Se establece, este método de comentarios será activado como predeterminado para todas as novas tarefas.';
+$string['defaultacceptedfiletypes'] = 'Tipos predeterminados de ficheiros aceptados';
 $string['enabled'] = 'Entregas de ficheiros';
 $string['enabled_help'] = 'Se está activado, os alumnos serán quen de enviar un ou máis ficheiros como entrega.';
 $string['eventassessableuploaded'] = 'Foi enviado un ficheiro.';

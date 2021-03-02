@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,28 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_cohort', language 'sv', version '3.8'.
  *
- * @package   enrol_cohort
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_cohort
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Lägg till grupp';
 $string['assignrole'] = 'Tilldela roll';
-$string['cohort:config'] = 'Konfigurera kohorter';
-$string['instanceexists'] = 'Kohorten är redan redan kopplat till markerade rollen';
-$string['pluginname'] = 'Koppla kohort';
-$string['pluginname_desc'] = 'Registrering av kohort kopplar medlemmar i kohorten som kursdeltagare.';
+$string['cohort:config'] = 'Konfigurera kohortinstanser';
+$string['cohort:unenrol'] = 'Avregistrera avstängda användare';
+$string['creategroup'] = 'Ny grupp';
+$string['defaultgroupnametext'] = '{$a->name} kohort {$a->increment}';
+$string['enrolcohortsynctask'] = 'Synkronisera kohortregistreringar';
+$string['instanceexists'] = 'Kohorten är redan synkroniserad med vald roll';
+$string['pluginname'] = 'Kohortregistrering';
+$string['pluginname_desc'] = 'Pluginmodulen Kohortregistrering synkroniserar kohortmedlemmar med kursdeltagare.';
+$string['privacy:metadata:core_group'] = 'Pluginmodulen Kohortregistrering kan skapa en ny grupp eller använda en befintlig grupp för att lägga till alla medlemmar från kohorten.';
 $string['status'] = 'Aktiv';

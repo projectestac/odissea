@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'es', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -110,13 +110,19 @@ $string['backuptypesection'] = 'Sección';
 $string['backupversion'] = 'Copia de seguridad versión';
 $string['cannotfindassignablerole'] = 'El rol {$a} en el archivo de copia de seguridad no se puede mapear a ninguno de los roles que usted puede asignar.';
 $string['choosefilefromactivitybackup'] = 'Zona de actividad de la copia de seguridad';
-$string['choosefilefromactivitybackup_help'] = 'Cuando se realiza una copia de seguridad de las actividades utilizando los valores preestablecidos, los archivos de la copia se guardan aquí.';
+$string['choosefilefromactivitybackup_help'] = 'Las actividades de Respaldo efectuadas utilizando los valores preestablecidos se guardan aquí.';
 $string['choosefilefromautomatedbackup'] = 'Copias de seguridad automáticas';
 $string['choosefilefromautomatedbackup_help'] = 'Contiene las copias de seguridad automáticas';
 $string['choosefilefromcoursebackup'] = 'Zona de copia de seguridad de curso';
 $string['choosefilefromcoursebackup_help'] = 'Cuando se realiza una copia de seguridad de un curso utilizando los valores preestablecidos, los archivos de la copia se guardan aquí.';
 $string['choosefilefromuserbackup'] = 'Zona de copia de seguridad privada de usuario';
 $string['choosefilefromuserbackup_help'] = 'Cuando la copia de seguridad de los cursos tiene marcada la opción "Hacer anónima la información de usuario", los archivos de copia de seguridad se guardan aquí';
+$string['config_keep_groups_and_groupings'] = 'Por defecto conservar grupos y agrupamientos actuales.';
+$string['config_keep_roles_and_enrolments'] = 'Por defecto conservar roles e inscripciones actuales.';
+$string['config_overwrite_conf'] = 'Permite al usuario anular la configuración actual del curso';
+$string['config_overwrite_course_fullname'] = 'Por defecto sobrescribir el nombre completo del curso con el nombre completo del archivo de respaldo. Esto necesita que esté activado el "Sobrescribir configuración del curso" y que el usuario actual tenga la capacidad para cambiarle el nombre completo al curso (moodle/course:changefullname)';
+$string['config_overwrite_course_shortname'] = 'Por defecto sobrescribir el nombre corto del curso con el nombre completo del archivo de respaldo. Esto necesita que esté activado el "Sobrescribir configuración del curso" y que el usuario actual tenga la capacidad para cambiarle el nombre corto al curso (moodle/course:changeshortname)';
+$string['config_overwrite_course_startdate'] = 'Por defecto sobrescribir la fecha de inicio del curso con la fecha del archivo de respaldo. Esto necesita que esté activado el "Sobrescribir configuración del curso" y que el usuario actual tenga la capacidad para cambiar fechas del curso al restaurar (moodle/restore:rolldates)';
 $string['configgeneralactivities'] = 'Ajusta los valores por defecto para incluir actividades en una copia de seguridad.';
 $string['configgeneralanonymize'] = 'Si se activa, toda la información relativa a los usuarios será anónima por defecto.';
 $string['configgeneralbadges'] = 'Establece el valor por defecto para incluir las insignias en la copia de seguridad.';
@@ -128,17 +134,11 @@ $string['configgeneralfilters'] = 'Ajusta los valores por defecto para incluir f
 $string['configgeneralgroups'] = 'Establece el valor por defecto en la inclusión de grupos y agrupamientos en una copia de seguridad.';
 $string['configgeneralhistories'] = 'Ajusta los valores por defecto para incluir el historial del usuario dentro de una copia de seguridad.';
 $string['configgenerallogs'] = 'Si se activa, se incluirán por defecto registros en las copias de seguridad.';
-$string['configgeneralquestionbank'] = 'Si se habilita, el banco de preguntas se incluirá en las copias de seguridad de forma predeterminada. NOTA: la desactivación de esta opción desactivará la copia de seguridad de las actividades que utilizan el banco de preguntas, como es el caso del cuestionario.';
+$string['configgeneralquestionbank'] = 'Si está habilitado el banco de preguntas será incluido en las copias de seguridad de forma predeterminada. NOTA: Al desactivar esta opción deshabilitará la copia de seguridad de las actividades que utilizan el banco de preguntas, tales como el cuestionario.';
 $string['configgeneralroleassignments'] = 'Si se habilita, los roles asignados por defecto serán también copiados.';
 $string['configgeneralusers'] = 'Ajusta los valores por defecto para incluir a los usuarios en las copias de seguridad.';
 $string['configgeneraluserscompletion'] = 'Si se activa, la información del grado de avance de los usuarios se incluirá por defecto en las copias de seguridad.';
-$string['config_keep_groups_and_groupings'] = 'Por defecto conservar grupos y agrupamientos actuales.';
-$string['config_keep_roles_and_enrolments'] = 'Por defecto conservar roles e inscripciones actuales.';
 $string['configloglifetime'] = 'Especifica el periodo de tiempo durante el que desea mantener la información de los registros de copia de seguridad. Los registros más antiguos que el establecido se borrarán automáticamente. Se recomienda mantener este valor lo más bajo posible, ya que el volumen de la información sobre las  copias de seguridad puede llegar a se muy grande.';
-$string['config_overwrite_conf'] = 'Permite al usuario anular la configuración actual del curso';
-$string['config_overwrite_course_fullname'] = 'Por defecto sobrescribir el nombre completo del curso con el nombre completo del archivo de respaldo. Esto necesita que esté activado el "Sobrescribir configuración del curso" y que el usuario actual tenga la capacidad para cambiarle el nombre completo al curso (moodle/course:changefullname)';
-$string['config_overwrite_course_shortname'] = 'Por defecto sobrescribir el nombre corto del curso con el nombre completo del archivo de respaldo. Esto necesita que esté activado el "Sobrescribir configuración del curso" y que el usuario actual tenga la capacidad para cambiarle el nombre corto al curso (moodle/course:changeshortname)';
-$string['config_overwrite_course_startdate'] = 'Por defecto sobrescribir la fecha de inicio del curso con la fecha del archivo de respaldo. Esto necesita que esté activado el "Sobrescribir configuración del curso" y que el usuario actual tenga la capacidad para cambiar fechas del curso al restaurar (moodle/restore:rolldates)';
 $string['configrestoreactivities'] = 'Configurar el ajuste por defecto para restaurar actividades.';
 $string['configrestorebadges'] = 'Configurar el ajuste por defecto para restaurar insignias.';
 $string['configrestoreblocks'] = 'Configurar el ajuste por defecto para restaurar bloques.';
@@ -174,8 +174,8 @@ $string['currentstage8'] = 'Ejecutar copia de seguridad';
 $string['enableasyncbackup_help'] = 'Si se habilita, todas las operaciones de copia de seguridad y restauración se harán asincrónicamente. Esto no afecta a las importaciones y exportaciones. Las copias de seguridad y restauraciones asincrónicos les permiten a los usuarios el hacer otras operaciones mientras está en progreso una copia de seguridad o una restauración.';
 $string['enterasearch'] = 'Introduzca un criterio de búsqueda';
 $string['error_block_for_module_not_found'] = 'Encontrada instancia de bloque huérfano (id: {$a->bid}) para el módulo del curso (id: {$a->mid}) Este bloque no se copiará';
-$string['errorcopyingbackupfile'] = 'Fallo al copiar el fichero de copia de seguridad al directorio temporal antes de restaurar.';
 $string['error_course_module_not_found'] = 'Encontrado módulo de curso huérfano (id: {$a}). Este modulo no se copiará';
+$string['errorcopyingbackupfile'] = 'Fallo al copiar el fichero de copia de seguridad al directorio temporal antes de restaurar.';
 $string['errorfilenamemustbezip'] = 'El nombre que se introduzca debe ser un archivo ZIP y con la extensión MBZ';
 $string['errorfilenamerequired'] = 'Debe introducir un nombre de archivo válido para esta copia de seguridad';
 $string['errorfilenametoolong'] = 'El nombre de archivo debe tener menos de 255 caracteres de longitud.';
@@ -189,7 +189,7 @@ $string['filealiasesrestorefailures'] = 'Fallos en la restauración de alias';
 $string['filealiasesrestorefailures_help'] = 'Los alias son enlaces simbólicos a otros archivos, incluyendo aquellos almacenados en repositorios externos. En algunos casos, Moodle no puede restaurarlos - por ejemplo cuando se restaura una copia de seguridad en otro sitio o cuando el archivo al que se hace referencia no existe.';
 $string['filealiasesrestorefailuresinfo'] = 'Algunos alias incluidos en el archivo de copia de seguridad no pudieron restaurarse. La lista siguiente contiene su localización esperada y el archivo origen al que se estaban refiriendo en el sitio original.';
 $string['filename'] = 'Nombre de archivo';
-$string['filereferencesincluded'] = 'Las referencias de archivo a contenidos externos incluidos en el paquete de copia de seguridad, no funcionarán en otros sitios.';
+$string['filereferencesincluded'] = 'Las referencias de archivo a contenidos externos se han incluido en el paquete de copia de seguridad, no funcionarán en otros sitios.';
 $string['filereferencesnotsamesite'] = 'La copia de seguridad es de otro sitio, las referencias de archivo no se puede restaurar';
 $string['filereferencessamesite'] = 'La copia de seguridad es de este sitio, las referencias de archivo se puede restaurar';
 $string['generalactivities'] = 'Incluir actividades y recursos';
@@ -201,6 +201,7 @@ $string['generalcalendarevents'] = 'Incluir eventos de calendario';
 $string['generalcomments'] = 'Incluir comentarios';
 $string['generalcompetencies'] = 'Incluir competencias';
 $string['generalenrolments'] = 'Incluir métodos de matriculación';
+$string['generalfiles'] = 'Incluir archivos';
 $string['generalfilters'] = 'Incluir filtros';
 $string['generalgradehistories'] = 'Incluir historiales';
 $string['generalgroups'] = 'Incluir grupos y agrupamientos';
@@ -265,14 +266,14 @@ $string['pendingasyncerror'] = 'Copia de seguridad pendiente para este recurso';
 $string['preparingdata'] = 'Preparando datos';
 $string['preparingui'] = 'Preparando para visualizar página';
 $string['previousstage'] = 'Anterior';
+$string['privacy:metadata:backup:detailsofarchive'] = 'Este archivo puede contener varios datos del usuario relacionados con un curso, tales como calificaciones, matriculaciones de usuario y datos de actividades.';
+$string['privacy:metadata:backup:externalpurpose'] = 'El propósito de este archivo es almacenar información relacionada con un curso, la cual puede ser restaurada en el futuro.';
 $string['privacy:metadata:backup_controllers'] = 'La lista de operaciones de copias de seguridad';
 $string['privacy:metadata:backup_controllers:itemid'] = 'La ID del curso';
 $string['privacy:metadata:backup_controllers:operation'] = 'La operación que fue efectuada; por ejemplo, restaurar.';
 $string['privacy:metadata:backup_controllers:timecreated'] = 'El momento cuando la acción fue creada';
 $string['privacy:metadata:backup_controllers:timemodified'] = 'El momento cuando la acción fue modificada';
 $string['privacy:metadata:backup_controllers:type'] = 'El tipo de elemento sobre del cual se está operando; por ejemplo, actividad.';
-$string['privacy:metadata:backup:detailsofarchive'] = 'Este archivo puede contener varios datos del usuario relacionados con un curso, tales como calificaciones, matriculaciones de usuario y datos de actividades.';
-$string['privacy:metadata:backup:externalpurpose'] = 'El propósito de este archivo es almacenar información relacionada con un curso, la cual puede ser restaurada en el futuro.';
 $string['qcategory2coursefallback'] = 'La categoría de preguntas "{$a->name}", originalmente el contexto de categoría sistema/curso, serán creadas en el contexto curso al ser restauradas.';
 $string['qcategorycannotberestored'] = 'La categoría de preguntas "{$a-> name}" no puede ser creada por restauración';
 $string['question2coursefallback'] = 'La categoría de preguntas "{$a->name}", originalmente en la categoría de contesto sistema/curso dentro del archivo de copia de seguridad, se creará en el contexto del curso al ser restaurada';

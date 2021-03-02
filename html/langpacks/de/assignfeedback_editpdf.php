@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'de', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -98,12 +98,12 @@ $string['stamps'] = 'Stempel';
 $string['stampsdesc'] = 'Stempel müssen Bilddateien sein. Als Größe wird 40x40px empfohlen. Diese Bilder können mit dem Stempelwerkzeug benutzt werden, um Anmerkungen in das PDF einzufügen.';
 $string['test_doesnotexist'] = 'Der Ghostscript-Pfad zeigt auf eine nicht vorhandene Datei.';
 $string['test_empty'] = 'Der Ghostscript-Pfad ist leer.';
-$string['testgs'] = 'Ghostscript-Pfad prüfen';
 $string['test_isdir'] = 'Der Ghostscript-Pfad zeigt auf ein Verzeichnis. Ergänzen Sie den Pfad zum Ghostscript-Programm.';
 $string['test_notestfile'] = 'Die Test-PDF fehlt';
 $string['test_notexecutable'] = 'Der Ghostscript-Pfad zeigt auf eine nicht ausführbare Datei.';
 $string['test_ok'] = 'Der Ghostscript-Pfad scheint in Ordnung zu sein.
 Sie sollten nachfolgend ein Bild und eine Mitteilung sehen können.';
+$string['testgs'] = 'Ghostscript-Pfad prüfen';
 $string['tool'] = 'Werkzeug';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Kommentierte PDF anzeigen...';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_glossary_random', language 'es', version '3.8'.
  *
- * @package   block_glossary_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_glossary_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,7 +30,7 @@ $string['askaddentry'] = 'Cuando se permita a los usuarios agregar entradas al g
 $string['askinvisible'] = 'Cuando los usuarios no puedan editar o ver el glosario, mostrar este texto (sin enlace)';
 $string['askviewglossary'] = 'Cuando los usuarios puedan ver el glosario pero no agregar entradas, mostrar un enlace con este texto';
 $string['glossary_random:addinstance'] = 'Añadir un nuevo bloque de entrada aleatoria';
-$string['glossary_random:myaddinstance'] = 'Añadir un nuevo bloque de entrada aleatoria del glosario al Área personal';
+$string['glossary_random:myaddinstance'] = 'Añadir un nuevo bloque de entrada aleatoria del glosario al Área Personal';
 $string['intro'] = 'Asegúrese de que tiene al menos un glosario con una entrada. Entonces podrá determinar los siguientes ajustes';
 $string['invisible'] = '(continuará)';
 $string['lastmodified'] = 'Última entrada modificada';

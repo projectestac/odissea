@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'webservice', language 'de', version '3.8'.
  *
- * @package   webservice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     webservice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -87,11 +87,11 @@ $string['errornotemptydefaultparamarray'] = 'Der Webservice-Parameter \'{$a}\' h
 $string['erroroptionalparamarray'] = 'Der Webservice-Parameter \'{$a}\' hat eine Single- oder Multiple-Struktur. Er kann nicht als VALUE_OPTIONAL gesetzt werden. Prüfen Sie die Webservice-Beschreibung.';
 $string['eventwebservicefunctioncalled'] = 'Webservice-Funktion aufgerufen';
 $string['eventwebserviceloginfailed'] = 'Webservice-Login fehlgeschlagen';
-$string['eventwebserviceservicecreated'] = 'Webservice-Dienst angelegt';
-$string['eventwebserviceservicedeleted'] = 'Dienst für Webservice gelöscht';
-$string['eventwebserviceserviceupdated'] = 'Webservice-Dienst aktualisiert';
-$string['eventwebserviceserviceuseradded'] = 'Webservice-Dienstnutzer angelegt';
-$string['eventwebserviceserviceuserremoved'] = 'Webservice-Dienstnutzer entfernt';
+$string['eventwebserviceservicecreated'] = 'Webservice angelegt';
+$string['eventwebserviceservicedeleted'] = 'Webservice gelöscht';
+$string['eventwebserviceserviceupdated'] = 'Webservice aktualisiert';
+$string['eventwebserviceserviceuseradded'] = 'Webservice-Nutzer angelegt';
+$string['eventwebserviceserviceuserremoved'] = 'Webservice-Nutzer entfernt';
 $string['eventwebservicetokencreated'] = 'Webservice-Token angelegt';
 $string['eventwebservicetokensent'] = 'Webservice-Token gesendet';
 $string['execute'] = 'Ausführen';
@@ -118,7 +118,7 @@ $string['iprestriction'] = 'IP-Beschränkung';
 $string['iprestriction_help'] = 'Der Webservice kann nur von einer der gelisteten IP-Adressen aufgerufen werden.';
 $string['key'] = 'Schlüssel';
 $string['keyshelp'] = 'Die Schlüssel werden benutzt, um mit externen Programmen auf Ihr Moodlekonto zugreifen zu können';
-$string['loginrequired'] = 'Nur für eingeloggte Nutzer/innen';
+$string['loginrequired'] = 'Nur für angemeldete Nutzer/innen';
 $string['manageprotocols'] = 'Protokolle verwalten';
 $string['managetokens'] = 'Token verwalten';
 $string['missingcaps'] = 'Fehlende Rechte';
@@ -146,9 +146,9 @@ $string['postrestparam'] = 'PHP-Code für REST (POST request)';
 $string['potusers'] = 'Unberechtigte Personen';
 $string['potusersmatching'] = 'Passende unberechtigte Personen';
 $string['print'] = 'Alles drucken';
-$string['privacy:metadata:serviceusers'] = 'Liste von Nutzern, die bestimmten externen Service nutzen können';
+$string['privacy:metadata:serviceusers'] = 'Liste von Nutzer/innen, die einen bestimmten externen Dienst nutzen können';
 $string['privacy:metadata:serviceusers:iprestriction'] = 'IPs, die Service nicht nutzen dürfen';
-$string['privacy:metadata:serviceusers:timecreated'] = 'Datum an dem Datensatz erstellt wurde';
+$string['privacy:metadata:serviceusers:timecreated'] = 'Erstellungsdatum des Datensatzes';
 $string['privacy:metadata:serviceusers:userid'] = 'ID des Nutzers';
 $string['privacy:metadata:serviceusers:validuntil'] = 'Datum zu dem Autorisierung endet';
 $string['privacy:metadata:tokens'] = 'Aufzeichnung von Tokens zur Interaktion mit Moodle über Webservices oder Mobile-Apps.';
@@ -191,7 +191,7 @@ $string['service'] = 'Service';
 $string['servicehelpexplanation'] = 'Ein Webservice ist ein Set von Funktionen. Er kann von allen oder ausschließlich von speziell ausgewählten Nutzern verwendet werden. ';
 $string['servicename'] = 'Name des Service';
 $string['servicenotavailable'] = 'WebService ist nicht verfügbar (er existiert nicht oder ist gesperrt).';
-$string['servicerequireslogin'] = 'Web-Service ist nicht verfügbar. Sie wurden abgemeldet oder die Session ist abgelaufen.';
+$string['servicerequireslogin'] = 'Der Webservice ist nicht verfügbar. Die Session wurde ausgeloggt oder ist ungültig.';
 $string['servicesbuiltin'] = 'Integrierte Services';
 $string['servicescustom'] = 'Spezifische Services';
 $string['serviceusers'] = 'Berechtigte Personen';
@@ -221,7 +221,7 @@ $string['uploadfiles'] = 'Dateien hochladen';
 $string['uploadfiles_help'] = 'Wenn diese Option aktiviert ist, können alle Nutzer/innen Dateien unter Verwendung ihrer Sicherheitsschlüssel in \'Meine Dateien\' oder in einen Entwurfsbereich hochladen. Alle Dateiquotas gelten.';
 $string['userasclients'] = 'Nutzer als Clients mit Token';
 $string['userasclientsdescription'] = 'Die folgenden Schritte helfen Ihnen, den Webservice für Nutzer/innen als Clients zu konfigurieren. Dabei wird auch das Erzeugen des empfohlenen Sicherheitsschlüssels (Token) zur Authentifizierung gezeigt. Im Anwendungsfall erzeugen Nutzer/innen selber ihr persönliches Token über die Option \'Sicherheitsschlüssel\' auf ihrer Nutzerseite \'Einstellungen\'.';
-$string['usermissingcaps'] = 'Fehlende Fähigkeiten: {$a}';
+$string['usermissingcaps'] = 'Fehlende Rechte: {$a}';
 $string['usernameorid'] = 'Anmeldename/Nutzer-ID';
 $string['usernameorid_help'] = 'Anmeldename oder Nutzer-ID eingeben';
 $string['usernameoridnousererror'] = 'Es wurde kein Nutzerkonto mit diesem Anmeldenamen oder dieser Nutzer-ID gefunden.';

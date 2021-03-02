@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_activity_results', language 'nl', version '3.8'.
  *
- * @package   block_activity_results
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_activity_results
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,8 +43,8 @@ $string['config_no_activities_in_course'] = 'Er zijn nog geen activiteiten in de
 $string['config_select_activity'] = 'Van welke activiteit moet dit blok de resultaten tonen?';
 $string['config_show_best'] = 'Hoeveel van de hoogste cijfers moeten getoond worden (0 om uit te schakelen)?';
 $string['config_show_worst'] = 'Hoeveel van de laagste cijfers moeten getoond worden (0 om uit te schakelen)?';
-$string['configuredtoshownothing'] = 'Door de configuratie van dit blok kan het nu geen resultaten tonen.';
 $string['config_use_groups'] = 'Toon groepen in de plaats van leerlingen (enkel als de activiteit groepen ondersteunt)?';
+$string['configuredtoshownothing'] = 'Door de configuratie van dit blok kan het nu geen resultaten tonen.';
 $string['defaultdecimalplaces'] = 'Decimale plaatsten';
 $string['defaultdecimalplaces_desc'] = 'Standaard aantal te tonen decimale plaatsen';
 $string['defaultgradedisplay'] = 'Toon cijfers als';

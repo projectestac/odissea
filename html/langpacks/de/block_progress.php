@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_progress', language 'de', version '3.8'.
  *
- * @package   block_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,7 +44,7 @@ $string['certificate'] = 'Zertifikat';
 $string['chat'] = 'Chat';
 $string['choice'] = 'Abstimmung';
 $string['completed'] = 'beendet';
-$string['config_default_title'] = 'Fortschrittsbalken (alt)';
+$string['config_default_title'] = 'Fortschrittsbalken';
 $string['config_group'] = 'Nur sichtbar für Gruppe';
 $string['config_header_action'] = 'Aktion';
 $string['config_header_expected'] = 'Erwartet bis';
@@ -117,10 +117,10 @@ $string['no_blocks'] = 'Für Ihre Kurse sind keine Fortschrittsbalken-Blöcke ei
 $string['no_courses'] = 'Hier werden Fortschrittsbalken von Kursen, in denen Sie eingeschrieben sind, angezeigt. Sie sind aber in keinen Kurs eingeschrieben.';
 $string['no_events_config_message'] = 'Keine Aktivitäten oder Materialien, deren Fortschritt überwacht werden könnte. Fügen Sie  Aktivitäten oder Materialien hinzu und konfigurieren anschließend diesen Block.';
 $string['no_events_message'] = 'Die Aktivitäten oder Materialien werden nicht überwacht. Konfigurieren Sie diesen Block.';
+$string['no_visible_events_message'] = 'Die ausgewählten Ereignisse sind derzeit nicht sichtbar.';
 $string['notAttempted_colour'] = '#C71C22';
 $string['notattempted_colour_descr'] = 'HTML Farbcode für aktuelle Elemente, bei denen noch kein Versuch gestartet wurde';
 $string['notattempted_colour_title'] = 'Farbe für \'Kein Versuch\'';
-$string['no_visible_events_message'] = 'Die ausgewählten Ereignisse sind derzeit nicht sichtbar.';
 $string['now_indicator'] = 'JETZT';
 $string['ouwiki'] = 'OU Wiki';
 $string['overview'] = 'Teilnehmerübersicht';
@@ -129,14 +129,14 @@ $string['panopto'] = 'Panopto Video';
 $string['passed'] = 'bestanden';
 $string['passedby'] = 'Fälligkeit vorüber';
 $string['passedscorm'] = 'bestanden';
-$string['pluginname'] = 'Fortschrittsbalken (alt)';
+$string['pluginname'] = 'Fortschrittsbalken';
 $string['posted_to'] = 'gesendet an';
 $string['progress'] = 'Fortschritt';
-$string['progress:addinstance'] = 'Neuen Block \'Fortschrittsbalken (alt)\' hinzufügen';
-$string['progressbar'] = 'Fortschrittsbalken (alt)';
-$string['progress:myaddinstance'] = 'Neuen Block \'Fortschrittsbalken (alt)\' im Dashboard hinzufügen';
+$string['progress:addinstance'] = 'Neuen Block \'Fortschrittsbalken\' hinzufügen';
+$string['progress:myaddinstance'] = 'Neuen Block \'Fortschrittsbalken\' im Dashboard hinzufügen';
 $string['progress:overview'] = 'Kursübersicht mit Fortschrittsbalken für alle Teilnehmer/innen anzeigen';
 $string['progress:showbar'] = 'Fortschrittsbalken im Block anzeigen';
+$string['progressbar'] = 'Fortschrittsbalken (alt)';
 $string['questionnaire'] = 'Fragebogen';
 $string['quiz'] = 'Test';
 $string['recordingsbn'] = 'BBB Aufnahmen';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_pop3', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_pop3', language 'ja', version '3.8'.
  *
- * @package   auth_pop3
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_pop3
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,3 +37,4 @@ $string['auth_pop3port_key'] = 'ポート';
 $string['auth_pop3type'] = 'サーバタイプです。セキュリティ証明が必要な場合、pop3certを選択してください。';
 $string['auth_pop3type_key'] = 'タイプ';
 $string['pluginname'] = 'POP3サーバ';
+$string['privacy:metadata'] = 'POP3サーバ認証プラグインはどのような個人データも保存しません。';

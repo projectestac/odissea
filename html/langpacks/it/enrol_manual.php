@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'it', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -60,9 +60,9 @@ $string['expirymessageenrollersubject'] = 'Notifica di scadenza iscrizione';
 $string['manual:config'] = 'Configurare istanze plugin Iscrizioni manuali';
 $string['manual:enrol'] = 'Iscrivere utenti';
 $string['manual:manage'] = 'Gestire iscrizioni';
-$string['manualpluginnotinstalled'] = 'Il plugin "Iscrizione manuale" non è installato.';
 $string['manual:unenrol'] = 'Disiscrivere utenti dal corso';
 $string['manual:unenrolself'] = 'Disiscriversi dal corso';
+$string['manualpluginnotinstalled'] = 'Il plugin "Iscrizione manuale" non è installato.';
 $string['messageprovider:expiry_notification'] = 'Notifiche di scadenza iscrizioni manuali';
 $string['now'] = 'Adesso';
 $string['pluginname'] = 'Iscrizione manuale';
@@ -74,9 +74,9 @@ $string['selectusers'] = 'Seleziona utenti';
 $string['sendexpirynotificationstask'] = 'Invio notifiche scadenza delle iscrizioni manuali';
 $string['status'] = 'Abilita iscrizione manuale';
 $string['status_desc'] = 'Consente l\'accesso ai corsi da parte di utenti iscritti manualmente. Di norma deve rimanere abilitato.';
+$string['status_help'] = 'L\'impostazione stabilisce se gli utenti possono essere iscritti manualmente, sia tramite un link nella Amministrazione del corso, sia da parte di un utente in possesso dei privilegi necessari, come ad esempio un docente.';
 $string['statusdisabled'] = 'Disabilitato';
 $string['statusenabled'] = 'Abilitato';
-$string['status_help'] = 'L\'impostazione stabilisce se gli utenti possono essere iscritti manualmente, sia tramite un link nella Amministrazione del corso, sia da parte di un utente in possesso dei privilegi necessari, come ad esempio un docente.';
 $string['syncenrolmentstask'] = 'Sincronizzazione iscrizioni manuali';
 $string['unenrol'] = 'Cancella iscrizione utente';
 $string['unenrolselectedusers'] = 'Cancella iscrizioni degli utenti selezionti';

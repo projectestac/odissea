@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio_mahara', language 'pt', version '3.8'.
  *
- * @package   portfolio_mahara
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_mahara
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,12 +36,12 @@ $string['err_nomnethosts'] = 'Depende da Rede Moodle';
 $string['err_nomnethosts_help'] = 'O funcionamento deste módulo baseia-se nos pares da Rede Moodle com SSO IDP publicados, SSO SP subscritos, serviços de portefólio publicados <b>e</b> subscritos. Depende também do módulo de autenticação Rede Moodle. Enquanto estas condições não estiverem todas satisfeitas as instâncias deste módulo permanecerão ocultas, sendo depois necessário torná-las visíveis manualmente.';
 $string['failedtojump'] = 'Não foi possível estabelecer ligação com o servidor externo';
 $string['failedtoping'] = 'Não foi possível estabelecer ligação com o servidor externo: {$a}';
-$string['mnethost'] = 'Servidor da Rede Moodle';
 $string['mnet_nofile'] = 'Não foi encontrado o ficheiro no objeto de transferência (erro invulgar)';
 $string['mnet_nofilecontents'] = 'Foi encontrado o objeto de transferência, mas não foi possível aceder ao seu conteúdo (erro invulgar): {$a}';
 $string['mnet_noid'] = 'Não foi possível encontrar o registo de transferência referente a este token';
 $string['mnet_notoken'] = 'Não foi possível encontrar o token correspondente a esta transferência';
 $string['mnet_wronghost'] = 'O servidor indicado para esta transferência é token é inválido';
+$string['mnethost'] = 'Servidor da Rede Moodle';
 $string['pf_description'] = 'Permitir aos utilizadores o envio de conteúdo Moodle para este servidor.<br />Subscrever <b>e</b> publicar este serviço para permitir a utilizadores autenticados no site o envio de conteúdos para {$a}<br /><ul><li><em>Dependência</em>: É obrigatória a <strong>publicação</strong> do serviço de SSO (Identify Provider) para {$a}.</li><li><em>Dependência</em>: É obrigatória a <strong>subscrição</strong> do serviço SSO (Service Provider) em {$a}</li><li><em>Dependência</em>: É obrigatória a ativação do módulo de autenticação Rede Moodle.</li></ul><br />';
 $string['pf_name'] = 'Serviços portefólio';
 $string['pluginname'] = 'ePortefólio Mahara';

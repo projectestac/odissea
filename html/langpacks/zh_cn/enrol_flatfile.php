@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_flatfile', language 'zh_cn', version '3.8'.
  *
- * @package   enrol_flatfile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_flatfile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,10 +30,10 @@ $string['expiredaction'] = '选课到期行动';
 $string['expiredaction_help'] = '当用户选课终止后，选择要执行的操作。请注意：某些用户资料和设置会在撤销选课时清除';
 $string['filelockedmail'] = 'cron 进程无法删除您用于选课的文本文件({$a})。请设置好权限以便 Moodle 能删除这个文件，否则它将被重复处理。';
 $string['filelockedmailsubject'] = '严重错误：选课文件';
-$string['flatfileenrolments'] = '文本文件 (CSV)选课';
 $string['flatfile:manage'] = '手动管理用户选课';
-$string['flatfilesync'] = '以文本文件格式同步选课';
 $string['flatfile:unenrol'] = '手动将已选课用户移出课程';
+$string['flatfileenrolments'] = '文本文件 (CSV)选课';
+$string['flatfilesync'] = '以文本文件格式同步选课';
 $string['location'] = '文件位置';
 $string['location_desc'] = '指定选课文件完整路径。这个文件在处理之后会自动删除';
 $string['mapping'] = '文本文件映射';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'nl', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,19 +49,19 @@ $string['graded'] = '(beoordeeld)';
 $string['gradenextungraded'] = 'Beoordeel de volgende {$a} pogingen';
 $string['gradeungraded'] = 'Beoordeel alle {$a} pogingen';
 $string['grading'] = 'Manuele beoordeling';
+$string['grading:componentname'] = 'Rapport manueel beoordelen';
+$string['grading:viewidnumber'] = 'ID-nummers zichtbaar tijdens beoordelen';
+$string['grading:viewstudentnames'] = 'Leerlingnamen zichtbaar tijdens beoordelen';
 $string['gradingall'] = 'Alle {$a} pogingen voor deze vraag.';
 $string['gradingattempt'] = 'Pogingnummer {$a->attempt} voor {$a->fullname}.';
 $string['gradingattemptsxtoyofz'] = 'Pogingen beoordelen {$a->from} van {$a->of}';
 $string['gradingattemptwithidnumber'] = 'Poging nummer {$a->attempt} van {$a->fullname}{$a->idnumber}';
-$string['grading:componentname'] = 'Rapport manueel beoordelen';
 $string['gradingnextungraded'] = 'Volgende {$a} onbeoordeelde pogingen';
 $string['gradingnotallowed'] = 'Je hebt het recht niet om in deze test de antwoorden manueel te beoordelen';
 $string['gradingquestionx'] = 'Beoordelen voor {$a->number}: {$a->questionname}';
 $string['gradingreport'] = 'Manueel beoordelingsrapport';
 $string['gradingungraded'] = '{$a} onbeoordeelde pogingen';
 $string['gradinguser'] = 'Pogingen voor {$a}';
-$string['grading:viewidnumber'] = 'ID-nummers zichtbaar tijdens beoordelen';
-$string['grading:viewstudentnames'] = 'Leerlingnamen zichtbaar tijdens beoordelen';
 $string['hideautomaticallygraded'] = 'Verberg vragen die al automatisch beoordeeld zijn';
 $string['inprogress'] = 'Bezig';
 $string['invalidattemptid'] = 'Er bestaat geen poging met dit ID';

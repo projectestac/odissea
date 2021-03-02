@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'moodle', language 'ko', version '3.8'.
  *
- * @package   moodle
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     moodle
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,7 +34,7 @@ $string['activeusers'] = '활동중인 사용자들';
 $string['activities'] = '학습활동';
 $string['activities_help'] = '포럼, 퀴즈 및 위키 등 상호 작용이 가능한 활동을 강좌에 추가할 수 있음';
 $string['activity'] = '활동';
-$string['activityclipboard'] = '이 활동을 옮기기: <b>{$a}</b>';
+$string['activityclipboard'] = '이 활동 옮기기: {$a}';
 $string['activityiscurrentlyhidden'] = '아직 공개되지 않은 활동임';
 $string['activitymodule'] = '활동 모듈';
 $string['activitymodules'] = '활동 모듈';
@@ -121,6 +121,7 @@ $string['advancedsettings'] = '고급설정';
 $string['afterresource'] = '자원 "{$a}" 이후';
 $string['aftersection'] = '섹션 "{$a}" 이후';
 $string['again'] = '다시';
+$string['agelocationverification'] = '나이 및 지역 인증';
 $string['aimid'] = 'AIM 아이디';
 $string['ajaxuse'] = 'AJAX 및 자바';
 $string['all'] = '모두';
@@ -170,6 +171,7 @@ $string['availablecourses'] = '이용할 수 있는 강좌';
 $string['back'] = '뒤로';
 $string['backto'] = '{$a} 로 돌아가기';
 $string['backtocourselisting'] = '강좌 목록으로 돌아가기';
+$string['backtohome'] = '홈으로 돌아가기';
 $string['backtopageyouwereon'] = '예전 페이지으로 돌아감';
 $string['backtoparticipants'] = '참여자 목록으로 돌아가기';
 $string['backup'] = '백업';
@@ -214,8 +216,8 @@ $string['blocksediton'] = '블록 편집 켬';
 $string['blocksetup'] = '블록 테이블 설정';
 $string['blocksuccess'] = '{$a} 테이블 설치 완료';
 $string['brief'] = '간략한';
-$string['bulkactions'] = '대량 작업';
-$string['bulkactionselect'] = '{$a} 대량 작업 선택';
+$string['bulkactions'] = '묶음 작업';
+$string['bulkactionselect'] = '{$a} 의 묶음 작업 선택';
 $string['bulkmovecoursessuccess'] = '{$a->courses} 강좌를 {$a->category} 범주로 성공적으로 이동함';
 $string['bycourseorder'] = '강좌 순서로';
 $string['byname'] = '{$a} 순서로';
@@ -227,7 +229,7 @@ $string['categories'] = '강좌 범주';
 $string['categoriesandcourses'] = '강좌 범주와 강좌';
 $string['category'] = '범주';
 $string['categoryadded'] = '범주 \'{$a}\' 가 추가됨';
-$string['categorybulkaction'] = '선택한 범주에 대한 대량 작업';
+$string['categorybulkaction'] = '선택한 범주에 대한 묶음 작업';
 $string['categorycontents'] = '강좌 및 범주목록';
 $string['categorycurrentcontents'] = '{$a} 의 내용';
 $string['categorydeleted'] = '범주 \'{$a}\' 가 삭제됨';
@@ -247,7 +249,7 @@ $string['checkingbackup'] = '백업 점검';
 $string['checkingcourse'] = '강좌 점검';
 $string['checkingforbbexport'] = 'BlackBoard 내보내기 점검';
 $string['checkinginstances'] = '작동 점검';
-$string['checkingsections'] = '영역 점검';
+$string['checkingsections'] = '섹션 점검';
 $string['checklanguage'] = '언어 점검';
 $string['checknone'] = '점검하지 않음';
 $string['childcoursenotfound'] = '하위 과정을 찾을 수 없음!';
@@ -283,7 +285,7 @@ $string['completereport'] = '보고 완성';
 $string['configuration'] = '환경설정';
 $string['confirm'] = '확인';
 $string['confirmcheckfull'] = '정말 {$a} 를 승인해 주려고 합니까?';
-$string['confirmcoursemove'] = '이 강좌 ({$a->course})를  이 범주({$a->category})로 옮기시겠습니까?';
+$string['confirmcoursemove'] = '({$a->course}) 강좌를  ({$a->category}) 범주로 옮기시겠습니까?';
 $string['confirmdeletesection'] = '{$a} 의 모든 자료를 완전히 삭제하시겠습니까?';
 $string['confirmed'] = '등록 완료';
 $string['confirmednot'] = '등록 미확정!';
@@ -320,11 +322,11 @@ $string['courseapprovedsubject'] = '강좌가 승인되었습니다!';
 $string['courseavailable'] = '학생 이용 가능';
 $string['courseavailablenot'] = '학생 이용 불가능';
 $string['coursebackup'] = '강좌 백업';
-$string['coursebulkaction'] = '선택한 강좌에 대한 대량 작업';
+$string['coursebulkaction'] = '선택한 강좌에 대한 묶음 작업';
 $string['coursecategories'] = '강좌 목록';
 $string['coursecategory'] = '강좌 범주';
-$string['coursecategorydeleted'] = '삭제된 강좌 범주 {$a}';
 $string['coursecategory_help'] = '이 설정은 강좌가 강좌목록에 나타날 범주를 결정합니다.';
+$string['coursecategorydeleted'] = '삭제된 강좌 범주 {$a}';
 $string['coursecatmanagement'] = '강좌 및 범주 관리';
 $string['coursecompletion'] = '강좌이수완료';
 $string['coursecompletions'] = '강좌이수완료';
@@ -334,8 +336,9 @@ $string['coursedeleted'] = '강좌 {$a} 삭제됨';
 $string['coursedetails'] = '강좌 세부내용';
 $string['coursedisplay'] = '강좌 개요';
 $string['coursedisplay_help'] = '이 설정은 전체 과정을 한 화면 또는 여러 화면에 나타나게 할 것인가를 정하는 것입니다. 하지만 SCORM형식과 같은 특정 과정 형식에는 영향을 미치지 못합니다.';
-$string['coursedisplay_multi'] = '한 화면에 한 영역씩 보임';
+$string['coursedisplay_multi'] = '한 페이지에 한 섹션 보기';
 $string['coursedisplay_single'] = '한 화면에 모든 영역 보임';
+$string['courseduration'] = '강의 기간';
 $string['courseextendednamedisplay'] = '{$a->shortname} {$a->fullname}';
 $string['coursefiles'] = '예전 강좌 파일';
 $string['coursefilesedit'] = '예전 강좌 파일 편집';
@@ -349,10 +352,10 @@ $string['coursegrades'] = '강좌 성적';
 $string['coursehelpcategory'] = '학생들이 강좌를 쉽게 찾을 수 있도록 제시할 기본 범주';
 $string['coursehelpforce'] = '강좌 내 모든 활동을 강제 모둠으로 지정';
 $string['coursehelpformat'] = '강좌의 주 페이지가 이 형식으로 표식될 것입니다.';
-$string['coursehelphiddensections'] = '학생들에게 강좌내 비공개 영역을 어떻게 제시할 것인가를 설정';
+$string['coursehelphiddensections'] = '학생들에게 강좌내 비공개 섹션을 어떻게 제시할 것인가를 설정';
 $string['coursehelpmaximumupload'] = '사이트 설정값 한도내에서 강좌에서 업로드할 수 있는 파일의 최대 크기를 정의하십시요';
 $string['coursehelpnewsitemsnumber'] = '강좌 페이지의 최근 소식 블록에 표시될 항목의 갯수. (0은 최근 소식 블록이 아예 나타나지 않음)';
-$string['coursehelpnumberweeks'] = '강좌의 주 페이지에 표시될 주차/토픽의 갯수';
+$string['coursehelpnumberweeks'] = '강좌에서 섹션의 수 (특정 강좌 형식에만 적용됩니다)';
 $string['coursehelpshowgrades'] = '성적부 표시 활성화. 개별 활동 영역에서 성적이 표시되는 것을 막지는 않습니다';
 $string['coursehidden'] = '아직 학생들이 강좌를 이용할 수 없음';
 $string['courseinfo'] = '강좌 정보';
@@ -361,12 +364,12 @@ $string['courselegacyfiles_help'] = '강좌 파일 영역은 Moodle 1.9 이전 �
 
 강좌 파일을 저장하기 위해 이 영역을 사용하면 개인정보와 보안 문제들이 발생할 수 있으며 백업, 강좌 가져오기, 강좌가 공유되고 재사용 될 때, 파일이 빠질 수도 있습니다. 따라서 당신이 무엇을 하고 있는지 잘 모른다면, 이 영역을 사용하지 않는 것을 권장합니다.';
 $string['courselegacyfilesofcourse'] = '이전 강좌 파일들: {$a}';
-$string['coursemessage'] = '강좌 사용자에게 메세지 보내기';
+$string['coursemessage'] = '강좌 사용자에게 쪽지 보내기';
 $string['coursenotaccessible'] = '공개적 접속을 허용하지 않음';
 $string['courseoverview'] = '강좌 개요';
 $string['courseoverviewfiles'] = '강좌 요약 파일';
-$string['courseoverviewfilesext'] = '강좌 요약 파일 확장자들';
 $string['courseoverviewfiles_help'] = '이미지 등의 강좌 요약 파일이 강좌 요약과 함께 강좌 목록에 표시됩니다.';
+$string['courseoverviewfilesext'] = '강좌 요약 파일 확장자들';
 $string['courseoverviewfileslimit'] = '강좌 요약 파일 한계';
 $string['courseoverviewgraph'] = '강좌 개요표';
 $string['coursepreferences'] = '강좌 환경설정';
@@ -396,9 +399,9 @@ $string['coursesearch_help'] = '여러 개의 단어로 검색할 수 있습니�
 word : 텍스트안에 이 단어와 관련된 어떤 것이라도 검색<br />
 +word : 정확히 일치하는 것만 검색<br />
 -word : 이 단어를 포함하지 않는 것만 보여주기';
-$string['coursesectionsummaries'] = '강좌의 영역 개요';
+$string['coursesectionsummaries'] = '강좌 섹션 요약';
 $string['coursesectiontitle'] = '강좌: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
-$string['coursesettings'] = '표준강좌 설정';
+$string['coursesettings'] = '기본 설정';
 $string['coursesmovedout'] = '{$a} 에서 강좌 옮겨짐';
 $string['coursespending'] = '유보되었던 강좌 승인';
 $string['coursestart'] = '개강';
@@ -430,7 +433,7 @@ $string['creatinggroupings'] = '모둠무리 만들기';
 $string['creatinggroupingsgroups'] = '모둠무리에 모둠 추가';
 $string['creatinggroups'] = '모듬 만들기';
 $string['creatinglogentries'] = '로그 목록 만들기';
-$string['creatingmessagesinfo'] = '메시지 정보 만들기';
+$string['creatingmessagesinfo'] = '쪽지 정보 만들기';
 $string['creatingmodroles'] = '모듈 수준의 역할 부여 및 덮어쓰기 생성';
 $string['creatingnewcourse'] = '새로운 강좌 생성';
 $string['creatingrolesdefinitions'] = '역할 정의 생성';
@@ -522,19 +525,19 @@ $string['displayingfirst'] = '오직 첫째 {$a->count} {$a->things} 이 보여�
 $string['displayingrecords'] = '{$a} 레코드 보기';
 $string['displayingusers'] = '{$a->start} 에서 {$a->end} 까지 사용자 보기';
 $string['displayonpage'] = '페이지에 표시';
-$string['dndcourse'] = '정렬을 바꾸거나 다른 범주로 옮기기 위해 이 강좌를 끌어다 놓을 수 있습니다.';
+$string['dndcourse'] = '순서를 바꾸거나 다른 범주로 옮기기 위해 이 강좌를 끌어다 놓을 수 있습니다.';
 $string['dndenabled_inbox'] = '파일을 끌어다 놓아 추가할 수 있음';
 $string['dndnotsupported'] = '드래그 드롭 업로드가 지원되지 않습니다.';
 $string['dndnotsupported_help'] = '사용 중인 브라우저가 끌어다 놓기 업로드를 지원하지 않습니다<br />이 기능은 Internet Explorer 버전 10 이상을 비롯하여 Chrome, Firefox, Safari 최신 버전에서 사용할 수 있습니다.';
 $string['dndnotsupported_insentence'] = '드래그 드롭이 지원되지 않습니다.';
 $string['dnduploadwithoutcontent'] = '올린 것에 아무런 내용이 없음';
-$string['dndworkingfile'] = '파일을 올리려면 강좌 영역에 끌어다 놓을 것';
-$string['dndworkingfilelink'] = '파일이나 링크를 올리려면 강좌 영역에 끌어다 놓을 것';
-$string['dndworkingfiletext'] = '파일이나 문서를 올리려면 강좌 영역에 끌어다 놓을 것';
-$string['dndworkingfiletextlink'] = '파일이나 문서 혹은 링크를 올리려면 강좌 영역에 끌어다 놓을 것';
-$string['dndworkinglink'] = '링크를 올리려면 강좌 영역에 끌어다 놓을 것';
-$string['dndworkingtext'] = '문서를 올리려면 강좌 영역에 끌어다 놓을 것';
-$string['dndworkingtextlink'] = '문서나 링크를 올리려면 강좌 영역에 끌어다 놓을 것';
+$string['dndworkingfile'] = '파일을 올리려면 강좌 섹션에 끌어다 놓을 것';
+$string['dndworkingfilelink'] = '파일이나 링크를 올리려면 강좌 섹션에 끌어다 놓을 것';
+$string['dndworkingfiletext'] = '파일이나 문서를 올리려면 강좌 섹션에 끌어다 놓을 것';
+$string['dndworkingfiletextlink'] = '파일이나 문서 혹은 링크를 올리려면 강좌 섹션에 끌어다 놓을 것';
+$string['dndworkinglink'] = '링크를 올리려면 강좌 섹션에 끌어다 놓을 것';
+$string['dndworkingtext'] = '문서를 올리려면 강좌 섹션에 끌어다 놓을 것';
+$string['dndworkingtextlink'] = '문서나 링크를 올리려면 강좌 섹션에 끌어다 놓을 것';
 $string['documentation'] = '무들 문서';
 $string['dontsortcategories'] = '범주를 정렬하지 마십시요';
 $string['dontsortcourses'] = '강좌를 정렬하지 마십시요';
@@ -614,19 +617,19 @@ $string['emailconfirmationsubject'] = '{$a}: 계정 승인';
 $string['emailconfirmsent'] = '<p>당신의 이메일 주소인 <b>{$a}</b>로 메일이 갔습니다.</p>
 <p>등록을 마치기 위한 간단한 안내문이 포함되어 있습니다.</p>';
 $string['emaildigest'] = '이메일 요약 형식';
-$string['emaildigestcomplete'] = '전부다(모든 게시 내용에 대해 매일)';
-$string['emaildigest_help'] = '아래는 포럼에서 기본 값으로 사용할 일별 다이제스트 설정입니다.
+$string['emaildigest_help'] = '아래는 포럼에서 기본 값으로 사용할 일별 요약본 설정입니다.
 
-* 다이제스트 없음 - 포럼 게시글마다 하나의 이메일을 받습니다.
-* 다이제스트 - 모든 게시글 - 매일 각 포럼 게시글의 내용을 전부 담은 다이제스트 이메일을 한 통 받습니다.
-* 다이제스트 - 제목만 - 매일 각 포럼 게시글의 제목만 담은 다이제스트 이메일을 한 통 받습니다.';
+* 요약본 없음 - 포럼 게시글마다 하나의 이메일을 받습니다.
+* 요약본 - 모든 게시글 - 매일 각 포럼 게시글의 내용을 전부 담은 요약본 이메일을 한 통 받습니다.
+* 요약본 - 제목만 - 매일 각 포럼 게시글의 제목만 담은 요약본 이메일을 한 통 받습니다.';
+$string['emaildigestcomplete'] = '전부다(모든 게시 내용에 대해 매일)';
 $string['emaildigestoff'] = '요약하지 않음(포럼 게시물이 게시될 때만)';
 $string['emaildigestsubjects'] = '제목만(매일)';
 $string['emaildisable'] = '이메일 전송 금지';
 $string['emaildisableclick'] = '여기를 눌러 모든 이메일이 이 주소로 보내지는 것을 불가능하게 함';
 $string['emaildisplay'] = '이메일 공개';
 $string['emaildisplaycourse'] = '강좌 참여자에게만 공개';
-$string['emaildisplayhidden'] = '이메일 숨김';
+$string['emaildisplayhidden'] = '이메일 숨겨짐';
 $string['emaildisplayno'] = '모든 사람에게 비공개';
 $string['emaildisplayyes'] = '모든 사람에게 공개';
 $string['emailenable'] = '이메일 전송 허용';
@@ -675,7 +678,7 @@ $string['emailpasswordconfirmation'] = '안녕하세요 {$a->firstname},
 $string['emailpasswordconfirmationsubject'] = '{$a}: 비밀번호 변경 확인';
 $string['emailpasswordconfirmmaybesent'] = '<p>만약 사용자 ID나 이메일 주소가 정확하면 이메일이 발송될 것입니다.</p>
  <p>거기에는 암호변경을 완료하고 확인하기 위한 간단한 안내문이 포함되어 있습니다. 만일 지속적으로 어려움을 격는다면, 사이트 관리자에게 연락하기 바랍니다.</p>';
-$string['emailpasswordconfirmnoemail'] = '<p>지정한 사용자 계정에 기록된 이메일 주소가 없습니다.</p>
+$string['emailpasswordconfirmnoemail'] = '<p>지명한 사용자 계정의 이메일 주소가 없습니다.</p>
    <p>사이트 관리자에게 문의하시기 바랍니다.</p>';
 $string['emailpasswordconfirmnotsent'] = '<p>제공하신 사용자 세부 정보와 일치하는 사용자 계정을 찾을 수 없습니다.</p>
    <p>입력한 정보를 확인하고 다시 시도하십시오.
@@ -691,7 +694,7 @@ $string['emailresetconfirmation'] = '안녕하세요 {$a->firstname}님,
 
 {$a->sitename} 사이트의 \'{$a->username}\' 계정에 대해 암호 재설정이 요청되었습니다.
 
-이 요청을 확인하고 계정에 새로운 암호를 설정하려면 다음 웹 주소를 방문하십시오:
+이 요청을 인증하고 계정에 새로운 암호를 설정하려면, 다음 웹 주소를 방문하십시오:
 
 {$a->link}
 (이 링크는 재설정이 요청된 시점으로부터 {$a->resetminutes}분 동안 유효합니다)
@@ -703,7 +706,7 @@ $string['emailresetconfirmationsubject'] = '{$a}: 암호 재설정 요청';
 $string['emailresetconfirmsent'] = '<b>{$a}</b>에 있는 주소로 이메일을 보냈습니다.
 <br />거기에는 이 암호 변경을 확인하고 마치기 위한 간단한 지시 사항이 포함되어 있습니다. 문제가 계속되면 사이트 관리자에게 문의하십시오.';
 $string['emailtoprivatefiles'] = '파일을 이메일의 첨부파일로 개인 파일 저장소에 보낼 수 있습니다. 간단하게 파일을 이메일에 첨부한 후에 {$a}로 보내세요.';
-$string['emailtoprivatefilesdenied'] = '관리자가 개인 파일 업로드에 대한 옵션을 비활성화 했습니다.';
+$string['emailtoprivatefilesdenied'] = '관리자가 개인 파일 업로드 옵션을 비활성화 했습니다.';
 $string['emojicategoryfooddrink'] = '음식 & 음료';
 $string['emptydragdropregion'] = '빈 영역';
 $string['enable'] = '관리모드 활성';
@@ -790,9 +793,9 @@ $string['filters'] = '필터';
 $string['findmorecourses'] = '더 많은 강좌 보기...';
 $string['first'] = '처음';
 $string['firstaccess'] = '처음 접속';
-$string['firstname'] = '성';
+$string['firstname'] = '이름';
 $string['firstnamephonetic'] = '이름-음성학적';
-$string['firstsiteaccess'] = '사이트 최초 액세스';
+$string['firstsiteaccess'] = '사이트 첫번째 접속';
 $string['firsttime'] = '이곳에 처음 오셨나요?';
 $string['folder'] = '폴더';
 $string['folderclosed'] = '닫힌 경로';
@@ -804,8 +807,8 @@ $string['force'] = '강제지정';
 $string['forcelanguage'] = '지정 언어';
 $string['forceno'] = '지정하지 않음';
 $string['forcepasswordchange'] = '강제로 암호 변경';
-$string['forcepasswordchangecheckfull'] = '정말, 비밀번호를 {$a} 로 바꾸시겠습니까?';
 $string['forcepasswordchange_help'] = '다음번 로그인 할 때, 사용자에게 비밀번호를 바꿀 것을 요구';
+$string['forcepasswordchangecheckfull'] = '정말, 비밀번호를 {$a} 로 바꾸시겠습니까?';
 $string['forcepasswordchangenot'] = '비밀번호를 {$a} 로 바꿀 수 없음';
 $string['forcepasswordchangenotice'] = '계속하려면 비밀번호를 바꿔야만 함';
 $string['forcetheme'] = '지정된 테마';
@@ -843,7 +846,7 @@ $string['fulllistofcourses'] = '강좌목록';
 $string['fullname'] = '전체 이름';
 $string['fullnamecourse'] = '강좌 전체 이름';
 $string['fullnamecourse_help'] = '강좌의 전체 이름은 강좌 목록 및 강좌의 모든 페이지의 윗 쪽에 표시됩니다.';
-$string['fullnamedisplay'] = '{$a->firstname} {$a->lastname}';
+$string['fullnamedisplay'] = '{$a->lastname} {$a->firstname}';
 $string['fullnameuser'] = '사용자 성명';
 $string['fullprofile'] = '전체 개인정보';
 $string['fullsitename'] = '사이트 정식 명칭';
@@ -900,10 +903,10 @@ $string['helpprefix2'] = '{$a} 를 포함하는 도움말';
 $string['helpwiththis'] = '이것에 대한 도움말';
 $string['hiddenassign'] = '비공개 과제';
 $string['hiddenfromstudents'] = '학생에게 비공개';
-$string['hiddensections'] = '비공개 영역';
-$string['hiddensectionscollapsed'] = '비공개 영역은 제목만 보여짐';
+$string['hiddensections'] = '비공개 섹션';
 $string['hiddensections_help'] = '이 설정은 감춰진 섹션(주차별 형식인 강좌에서 공휴일을 나타내기 위해서 사용될 수 있음)이 축소된 형태로 학생들에게 표시될지 아주 감추어질지를 결정합니다.';
-$string['hiddensectionsinvisible'] = '비공개 영역은 완전히 볼수 없음';
+$string['hiddensectionscollapsed'] = '비공개 섹션은 제목만 보여짐';
+$string['hiddensectionsinvisible'] = '비공개 섹션은 완전히 볼수 없음';
 $string['hide'] = '감추기';
 $string['hideadvancedsettings'] = '고급 설정 숨기기';
 $string['hidechartdata'] = '도표 숨기기';
@@ -931,9 +934,9 @@ $string['icon'] = '아이콘';
 $string['icqnumber'] = 'icq 번호';
 $string['idnumber'] = 'id 번호';
 $string['idnumbercourse'] = '강좌 식별 번호';
+$string['idnumbercourse_help'] = '강좌의 ID 번호는 강좌를 외부 시스템과 매칭시킬 때만 사용되며 무들 사이트에서는 표시되지 않습니다. 만일 강좌가 공식적인 코드명을 갖고 있다면  이것이 입력 될수 있습니다. 그렇지 않다면, 이를 공백으로 둘 수 있습니다.';
 $string['idnumbercoursecategory'] = '범주 식별 번호';
 $string['idnumbercoursecategory_help'] = '강좌 범주의 식별번호는 단지 외부 시스템의 범주와 비교할 때 외에는 쓰이지 않고, 사이트의 그 어디에서도 드러나지 않습니다. 만일 범주가 공식적인 코드명을 가지고 있다면 입력할 필요가 있지만, 그 외에는 비어두어도 됩니다.';
-$string['idnumbercourse_help'] = '강좌의 ID 번호는 강좌를 외부 시스템과 매칭시킬 때만 사용되며 무들 사이트에서는 표시되지 않습니다. 만일 강좌가 공식적인 코드명을 갖고 있다면  이것이 입력 될수 있습니다. 그렇지 않다면, 이를 공백으로 둘 수 있습니다.';
 $string['idnumbergroup'] = '모둠 식별 번호';
 $string['idnumbergroup_help'] = '모둠모음의 식별번호는 단지 외부 시스템의 모둠모음과 비교할 때 외에는 쓰이지 않고, 사이트의 그 어디에서도 드러나지 않습니다. 만일 모둠모음이 공식적인 코드명을 가지고 있다면 입력할 필요가 있지만, 그 외에는 비어두어도 됩니다.';
 $string['idnumbergrouping'] = '모둠그룹핑 식별번호';
@@ -962,7 +965,7 @@ $string['includenoneusers'] = '사용자 없음 포함';
 $string['includeroleassignments'] = '역할 부여 포함';
 $string['includesitefiles'] = '이 강좌에서 사용된 사이트 파일 포함';
 $string['includeuserfiles'] = '사용자 파일 포함';
-$string['increasesections'] = '영역 번호 증가';
+$string['increasesections'] = '섹션수 증가';
 $string['indicator:nostudent'] = '학생 등록';
 $string['info'] = '정보';
 $string['institution'] = '기관';
@@ -985,14 +988,14 @@ $string['language'] = '언어';
 $string['languagegood'] = '언어팩이 업데이트되었습니다.';
 $string['last'] = '마지막';
 $string['lastaccess'] = '최근의 접속';
-$string['lastcourseaccess'] = '강좌 최종 액세스';
+$string['lastcourseaccess'] = '최근 강좌 접속';
 $string['lastedited'] = '마지막 수정됨';
 $string['lastip'] = '마지막 IP 주소';
 $string['lastlogin'] = '마지막 로그인';
 $string['lastmodified'] = '마지막 수정됨';
-$string['lastname'] = '이름';
+$string['lastname'] = '성';
 $string['lastnamephonetic'] = '성-음성학적';
-$string['lastsiteaccess'] = '사이트 최종 액세스';
+$string['lastsiteaccess'] = '최근 사이트 접속';
 $string['lastyear'] = '지난 해';
 $string['latestlanguagepack'] = 'moodle.org에서 최신의 언어 팩 확인하기';
 $string['layouttable'] = '배치표';
@@ -1017,11 +1020,11 @@ $string['loggedinas'] = '{$a} 계정으로 접속하셨습니다.';
 $string['loggedinasguest'] = '손님 계정으로 접속';
 $string['loggedinnot'] = '접속되지 않았습니다.';
 $string['login'] = '로그인';
+$string['login_failure_logs'] = '로그인 실패 기록';
 $string['loginactivity'] = '로그인 내역';
 $string['loginalready'] = '이미 로그인 되있습니다';
-$string['loginas'] = '..로 로그인';
+$string['loginas'] = '다음으로 로그인';
 $string['loginaspasswordexplain'] = '<p>본 기능을 이용하려면 지정한 "loginas password"를 입력해야 합니다.<br />잘 모르겠으면 서버 관리자에게 문의하기 바랍니다.</p>';
-$string['login_failure_logs'] = '로그인 실패 기록';
 $string['loginguest'] = '손님으로 로그인';
 $string['loginsite'] = '사이트에 로그인';
 $string['loginsteps'] = '이 사이트를 자유롭게 접근하기 위해서는, 계정을 생성해 주십시요.';
@@ -1029,7 +1032,7 @@ $string['loginstepsnone'] = '<p>안녕하세요!</p>
 <br /> 강좌를 제대로 이용하기 위해서는 계정을 생성하여야 합니다.
 <br /> 사용자 아이디와 비밀번호를 입력해야 합니다.
 <br /> 만약 입력한 아이디가 중복된다면 다른 아이디를 사용해야 합니다.';
-$string['loginto'] = '{$a} 에 로그인하기';
+$string['loginto'] = '{$a} 에 로그인';
 $string['logout'] = '로그아웃';
 $string['logoutconfirm'] = '로그아웃 하겠습니까?';
 $string['logs'] = '로그';
@@ -1055,7 +1058,7 @@ $string['manageroles'] = '역할과 권한';
 $string['markedthistopic'] = '이 주제는 현재의 주제로서 강조됩니다.';
 $string['markthistopic'] = '이 주제를 현재의 주제로 강조하기';
 $string['matchingsearchandrole'] = '\'{$a->search}\' {$a->role} 찾은 내용';
-$string['maxareabytesreached'] = '파일 크기(또는 여러 파일의 전체 크기)가 이 영역의 여유 공간보다 큽니다.';
+$string['maxareabytesreached'] = '파일 크기(또는 파일들의 총 크기)가 이 영역에 남아있는 공간보다 큽니다.';
 $string['maxfilesize'] = '새 파일 최대크기: {$a}';
 $string['maxfilesreached'] = '최대 {$a} 개의 파일을 첨부 가능';
 $string['maximumchars'] = '{$a} 문자의 최대치';
@@ -1066,7 +1069,7 @@ $string['maximumupload'] = '업로드 제한 용량';
 $string['maximumupload_help'] = '<p>이 설정은 사이트 관리자에 의해 설정된 크기 이내에서 학생들이 올릴 수 있는 파일의 최대 크기를 지정하는 것입니다.</p>
 
 <p>이것은 추후에 각 활동 모듈내에서 상황에 따라 더 제한할 수 있는 여지가 있게 됩니다.</p>';
-$string['maxnumberweeks'] = '주/주제의 최대 수';
+$string['maxnumberweeks'] = '섹션의 최대 수';
 $string['maxnumberweeks_desc'] = '강좌에 표시될 몇 주 혹은 주제의 최대수를 조정';
 $string['maxnumcoursesincombo'] = '<a href="{$a->link}">{$a->numberofcourses} 강좌</a>를 보여줌';
 $string['maxsize'] = '제한 용량: {$a}';
@@ -1074,8 +1077,8 @@ $string['maxsizeandareasize'] = '새 파일의 최대 크기 : {$a->size}, 전�
 $string['maxsizeandattachments'] = '파일의 최대 크기: {$a->size}, 최대 첨부 파일 갯수: {$a->attachments}';
 $string['maxsizeandattachmentsandareasize'] = '새 파일의 최대 크기: {$a->size}, 최대 첨부 개수: {$a->attachments}, 전체 한도: {$a->areasize}';
 $string['memberincourse'] = '강좌 동료';
-$string['messagebody'] = '메세지 내용';
-$string['messagedselectedusers'] = '선택한 사용자에게 메세지를 발송하고 수신인 목록을 초기화 합니다.';
+$string['messagebody'] = '쪽지 내용';
+$string['messagedselectedusers'] = '선택한 사용자에게 쪽지를 발송하고 수신인 목록을 초기화 합니다.';
 $string['messagedselectedusersfailed'] = '선택한 사용자에게 메세지를 보내는 중 오류 발생. 누군가는 이미 메일을 받았을 것임.';
 $string['messageprovider:availableupdate'] = '올리기 유의사항 표시';
 $string['messageprovider:backup'] = '백업 통지';
@@ -1086,12 +1089,12 @@ $string['messageprovider:courserequested'] = '강좌 생성 요청 통지';
 $string['messageprovider:courserequestrejected'] = '강좌 생성 요청 거절 통지';
 $string['messageprovider:errors'] = '사이트관련 주요 오류';
 $string['messageprovider:errors_help'] = '관리자가 꼭 알아야 할 심각한 오류가 있습니다.';
-$string['messageprovider:instantmessage'] = '사용자간 개인적 메세지';
-$string['messageprovider:instantmessage_help'] = '여기에서는 타 사용자가 여러분에게 직접 보내는 메시지를 어떻게 처리할 지를 설정합니다.';
+$string['messageprovider:instantmessage'] = '사용자간 개인적 쪽지';
+$string['messageprovider:instantmessage_help'] = '여기에서는 타 사용자가 여러분에게 직접 보내는 쪽지를 어떻게 처리할 지를 설정합니다.';
 $string['messageprovider:notices'] = '사소한 문제에 대한 유의점';
 $string['messageprovider:notices_help'] = '관리자가 주목해야 할  유의사항이 있습니다.';
-$string['messageselect'] = '이 사용자를 메일 수신자로 선택';
-$string['messageselectadd'] = '메세지 보내기';
+$string['messageselect'] = '이 사용자를 쪽지 수신자로 선택';
+$string['messageselectadd'] = '쪽지 보내기';
 $string['middlename'] = '모듈 이름';
 $string['migratinggrades'] = '성적 이관';
 $string['min'] = '분';
@@ -1105,7 +1108,7 @@ $string['missingemail'] = '빠짐: 이메일 주소';
 $string['missingfirstname'] = '빠짐: 성';
 $string['missingfromdisk'] = '디스크에 없음';
 $string['missingfullname'] = '빠짐: 성명';
-$string['missinglastname'] = '빠짐: 이름';
+$string['missinglastname'] = '성이 누락됨';
 $string['missingname'] = '빠짐: 이름';
 $string['missingnewpassword'] = '빠짐: 새로운 비밀번호';
 $string['missingpassword'] = '빠짐: 비밀번호';
@@ -1134,7 +1137,7 @@ $string['modvisiblehiddensection'] = '이용가능 상태';
 $string['modvisiblewithstealth'] = '이용가능 상태';
 $string['month'] = '개월';
 $string['months'] = '개월';
-$string['moodledocs'] = '문서 창고';
+$string['moodledocs'] = '무들 문서';
 $string['moodledocslink'] = '이 페이지를 위한 무들 문서';
 $string['moodlelogo'] = '무들 로고';
 $string['moodlerelease'] = '무들 판 공개';
@@ -1176,7 +1179,7 @@ $string['myfiles'] = '개인 파일';
 $string['myfilesmanage'] = '개인 파일 관리';
 $string['myhome'] = '내 홈페이지';
 $string['mymoodledashboard'] = '내 공부방 상황판';
-$string['myprofile'] = '내 개인정보';
+$string['myprofile'] = '내 마당';
 $string['name'] = '이름';
 $string['nameforlink'] = '이 연결고리 이름은?';
 $string['nameforpage'] = '이름';
@@ -1190,8 +1193,8 @@ $string['new'] = '새로운';
 $string['newaccount'] = '새 계정';
 $string['newcourse'] = '새 강좌';
 $string['newpassword'] = '새 비밀번호';
-$string['newpasswordfromlost'] = '<strong>주의:</strong> 잃어버린 암호 복구 과정으로 보내어지는 두 통의 이메일 중 <strong>두번째 </strong>이메일에 <<strong>현재 비밀번호</strong>가 전송될 것입니다. 진행하기 전에 교체된 비밀번호가 도착했는 지 확인하기 바랍니다.';
 $string['newpassword_help'] = '현재 비밀번호를 그대로 유지하려면 빈 칸으로 둠';
+$string['newpasswordfromlost'] = '<strong>주의:</strong> 잃어버린 암호 복구 과정으로 보내어지는 두 통의 이메일 중 <strong>두번째 </strong>이메일에 <<strong>현재 비밀번호</strong>가 전송될 것입니다. 진행하기 전에 교체된 비밀번호가 도착했는 지 확인하기 바랍니다.';
 $string['newpasswordtext'] = '{$a->firstname} 님 안녕하세요?
 
 \'{$a->sitename}\'에서의 계정이 변경되었습니다.
@@ -1210,7 +1213,7 @@ $string['newpicture_help'] = '새 사진을 추가하기 위해서는 (JPG나 PN
 $string['newsitem'] = '새 항목';
 $string['newsitems'] = '새 소식';
 $string['newsitemsnumber'] = '볼 새소식';
-$string['newsitemsnumber_help'] = '이 설정은 강좌 페이지의 최근 뉴스 블록에 얼마나 많은 최근 게시물이 표시되어야 하는지를 결정합니다. 만일 여기에 "0 뉴스 항목" 으로 설정하게 되면, 최신 뉴스 블록이 표시되지 않습니다.';
+$string['newsitemsnumber_help'] = '이 설정은 강좌 페이지의 최근 강좌 공지 블록에 얼마나 많은 최근 게시물이 표시되어야 하는지를 결정합니다. 만일 여기에 "0 뉴스 항목" 으로 설정하게 되면, 최근 강좌 블록이 표시되지 않습니다.';
 $string['newuser'] = '새로운 사용자';
 $string['newusernewpasswordsubj'] = '새 사용자 계정';
 $string['newusernewpasswordtext'] = '\'{$a->sitename}\'에 새 계정이 생성되었고 임시암호가 발급되었습니다.
@@ -1277,7 +1280,7 @@ $string['noteachersyet'] = '이 강좌에는 아직 선생님이 없음';
 $string['notenrolled'] = '{$a} 는 이 강좌에 등록되지 않았음';
 $string['notenrolledprofile'] = '이 사용자는 강좌의 구성원이 아니므로 개인정보를 볼 수 없습니다.';
 $string['noteusercannotrolldatesoncontext'] = '<strong>주의</strong> 요구되는 권한에 미치지 못하므로, 백업을 복구하는 동안 날짜 조정에 실패하였습니다.';
-$string['noteuserschangednonetocourse'] = '<strong>주의</strong> 사용자 자료(활동, 파일, 메시지 등)를 복구할 때는 강좌의 사용자가  복구되어야 합니다. 이 설정이 변경되었습니다.';
+$string['noteuserschangednonetocourse'] = '<strong>주의</strong> 사용자 자료(활동, 파일,  쪽지 등)를 복구할 때는 강좌의 사용자가  복구되어야 합니다. 이 설정이 변경되었습니다.';
 $string['nothingnew'] = '새로 바뀐 내용이 없음';
 $string['nothingtodisplay'] = '게시할 내용 없음';
 $string['notice'] = '알림';
@@ -1297,7 +1300,7 @@ $string['novalidcourses'] = '볼 수 있는 강좌가 없음';
 $string['now'] = '지금';
 $string['numattempts'] = '{$a} 실패한 로그인 시도(들)';
 $string['numberofcourses'] = '강좌의 수';
-$string['numberweeks'] = '주/토픽의 수';
+$string['numberweeks'] = '섹션 수';
 $string['numday'] = '{$a} 일';
 $string['numdays'] = '{$a} 일';
 $string['numhours'] = '{$a} 시';
@@ -1326,7 +1329,7 @@ $string['outlinereport'] = '요약 보고';
 $string['page'] = '페이지';
 $string['pagea'] = '페이지 {$a}';
 $string['pagedcontentnavigationitem'] = '{$a} 페이지로 가기';
-$string['pageheaderconfigablock'] = '블록을 %fullname% 으로 배열중';
+$string['pageheaderconfigablock'] = '{$a->fullname}에 있는 블록을 구성 중';
 $string['pagepath'] = '페이지 경로';
 $string['pageshouldredirect'] = '본 페이지는 자동적으로 재조정됨. 아무 변화가 없으면 하단의 계속 링크를 이용하시기 바랍니다.';
 $string['parentcategory'] = '상위 범주';
@@ -1422,7 +1425,7 @@ $string['recentactivityreport'] = '최근활동 상세보고';
 $string['recipientslist'] = '수신자 목록';
 $string['recreatedcategory'] = '재생성된 범주 {$a}';
 $string['redirect'] = '리다이랙트';
-$string['reducesections'] = '영역수 줄임';
+$string['reducesections'] = '섹션 수 줄임';
 $string['refresh'] = '새로고침';
 $string['refreshingevents'] = '일정 새로고침';
 $string['registration'] = '무들 등록하기';
@@ -1480,7 +1483,7 @@ $string['resourcedisplayframe'] = '프레임에서';
 $string['resourcedisplaynew'] = '새 창';
 $string['resourcedisplayopen'] = '열기';
 $string['resourcedisplaypopup'] = '팝업창으로';
-$string['resources'] = '참고자료';
+$string['resources'] = '학습자료';
 $string['resources_help'] = '학습자원 유형은  거의 모든 종류의 웹 콘텐츠가 강좌에 삽입되는 것을 가능하게 합니다.';
 $string['restore'] = '복구';
 $string['restorecancelled'] = '복구 취소됨';
@@ -1542,12 +1545,12 @@ $string['scalestip2'] = '맞춤 척도를 만들려면 강좌 관리자 메뉴�
 $string['schedule'] = '일정';
 $string['screenshot'] = '스크린샷';
 $string['search'] = '검색';
+$string['search_help'] = '문서의 어느 곳에서든지 하나 이상의 단어를 검색하고자 할 때에는 이들 단어를 쉼표로 분리해서 입력하면 된다. 모든 단어는 한 음절 이상이면 된다.
+좀 더 자세하게 검색하고자 할 때에는 검색란에 아무 것도 쓰지 않은 채, 상세검색을 누르면 자세한 검색 양식이 나타난다.';
 $string['searchagain'] = '다시 찾기';
 $string['searchbyemail'] = '이메일주소로 찾기';
 $string['searchbyusername'] = '사용자 아이디로 찾기';
 $string['searchcourses'] = '강좌 찾기';
-$string['search_help'] = '문서의 어느 곳에서든지 하나 이상의 단어를 검색하고자 할 때에는 이들 단어를 쉼표로 분리해서 입력하면 된다. 모든 단어는 한 음절 이상이면 된다.
-좀 더 자세하게 검색하고자 할 때에는 검색란에 아무 것도 쓰지 않은 채, 상세검색을 누르면 자세한 검색 양식이 나타난다.';
 $string['searchoptions'] = '검색 조건';
 $string['searchresults'] = '검색 결과';
 $string['sec'] = '초';
@@ -1562,9 +1565,9 @@ $string['secondstotime604800'] = '1 주일';
 $string['secondstotime86400'] = '하루';
 $string['secretalreadyused'] = '이미 비밀번호 변경 확인이 되었고, 그 후 비밀번호는 변경되지 않았습니다.';
 $string['secs'] = '초';
-$string['section'] = '영역';
-$string['sectionname'] = '영역명';
-$string['sections'] = '영역';
+$string['section'] = '섹션';
+$string['sectionname'] = '섹션 이름';
+$string['sections'] = '섹션';
 $string['seealsostats'] = '통계 보기';
 $string['selctauser'] = '이용자 선택';
 $string['select'] = '선택';
@@ -1574,9 +1577,10 @@ $string['selectacourse'] = '강좌 선택';
 $string['selectacoursesite'] = '강좌 혹은 사이트 선택';
 $string['selectagroup'] = '모둠 선택';
 $string['selectall'] = '모두 선택';
+$string['selectallusersonpage'] = '이 페이지의 모든 사용자 선택';
 $string['selectamodule'] = '활동 모듈을 선택하십시요.';
 $string['selectanaction'] = '활동 선택';
-$string['selectanoptions'] = '옵션 선택';
+$string['selectanoptions'] = '옵션을 선택하세요';
 $string['selectaregion'] = '지역 선택';
 $string['selectcategorysort'] = '정렬하려는 범주가 어떤 것입니까?';
 $string['selectcategorysortby'] = '범주 정렬 방식 선택';
@@ -1598,6 +1602,8 @@ $string['separateandconnectedinfo'] = '척도는 독립된 배움과 연결된 �
 <ul><li><strong>연결된 학습자</strong> 는 다른 사람에 더 민감합니다. 그들은 감정이입하는데 능력이 있고, 듣는 편이며, 그들이 연결되어 있으며 \'그들의 관점에서 이해\'한다고 느낄 때까지 질문합니다. 그들은 다른 사람들에게서 그들이 발견한 지식에 이르는 경험을 공유하려고 함에 의해서 배웁니다.</li></ul>';
 $string['servererror'] = '서버와 교신 중 오류 발생';
 $string['serverlocaltime'] = '서버의 지역시간';
+$string['sessionforceclean'] = '보안 상 , 이 세션 내에서는 사용자 생성 스크립트를 쓸 수 없습니다.';
+$string['sessiontimeoutsoon'] = '세션이 곧 중단됩니다. 현재 세션을 연장하시겠습니까?';
 $string['setcategorytheme'] = '범주 테마 설정';
 $string['setpassword'] = '암호 설정';
 $string['setpasswordinstructions'] = '아래에 있는 암호 및 암호 확인을 입력하고 "암호 설정"을 클릭하십시오. <br />새 암호가 저장된 후에 로그인 상태로 됩니다.';
@@ -1622,7 +1628,7 @@ $string['showcomments'] = '덧글 보기/감추기';
 $string['showcommentsnonjs'] = '덧글 보기';
 $string['showdescription'] = '강좌 화면에 설명 표시';
 $string['showdescription_help'] = '이를 활성화시키면, 위의 안내/소개가 활동/자료 링크 바로 하단 강좌 화면에 표시될 것입니다.';
-$string['showgrades'] = '성적 표시';
+$string['showgrades'] = '학생들에게 성적부 보여주기';
 $string['showgrades_help'] = '많은 활동들이 성적 설정을 허용하고 있습니다. 이 설정은 강좌 관리 블록의 성적 링크를 통하여 강좌의 모든 성적 목록을 볼 수 있을지를 결정합니다.
 
 ';
@@ -1722,7 +1728,7 @@ $string['statsteacheractivity'] = '선생님 활동';
 $string['statsteacherreads'] = '선생님 보기';
 $string['statsteacherwrites'] = '선생님 게시물';
 $string['statstimeperiod'] = '기간 - 마지막';
-$string['statsuniquelogins'] = '유일한 접속들';
+$string['statsuniquelogins'] = '고유 접속들';
 $string['statsuseractivity'] = '모든 활동들';
 $string['statsuserlogins'] = '접속';
 $string['statsuserreads'] = '조회수';
@@ -1758,7 +1764,7 @@ $string['targetrole'] = '변경될 역할';
 $string['teacheronly'] = '오직 {$a} 를 위한';
 $string['teacherroles'] = '{$a} 역할';
 $string['teachers'] = '선생님';
-$string['textediting'] = '내용을 수정할 때';
+$string['textediting'] = '편집기';
 $string['texteditor'] = '표준 웹 양식 사용하기';
 $string['textformat'] = '텍스트 포멧';
 $string['thanks'] = '감사합니다.';
@@ -1795,8 +1801,8 @@ $string['trackforums'] = '포럼 추적';
 $string['trackforumsno'] = '아니오: 내가 본 글들의 경로를 추적하지 마시오.';
 $string['trackforumsyes'] = '예: 새 글들은 강조해 주시오.';
 $string['trysearching'] = '대신 검색을 시도하라';
-$string['turneditingoff'] = '편집모드 끄기';
-$string['turneditingon'] = '편집모드 켜기';
+$string['turneditingoff'] = '편집 끄기';
+$string['turneditingon'] = '편집';
 $string['unauthorisedlogin'] = '사용자 계정 "{$a}" 이 현재 사이트에서 사용이 불가 합니다.';
 $string['undecided'] = '결정 않됨';
 $string['unfinished'] = '미완성';

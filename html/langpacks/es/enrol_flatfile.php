@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_flatfile', language 'es', version '3.8'.
  *
- * @package   enrol_flatfile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_flatfile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,15 +31,15 @@ $string['expiredaction_help'] = 'Seleccione la acción a realizar cuando finalic
 $string['filelockedmail'] = 'El fichero de texto empleado en matriculaciones basadas en archivo ({$a}) no puede ser eliminado por el proceso de \'cron\'. Esto generalmente significa que los permisos son erróneos. Por favor, corrija los permisos para que Moodle puede eliminar el archivo, de lo contrario, podría ser procesado en varias ocasiones.';
 $string['filelockedmailsubject'] = 'Error importante: Archivo de matriculación';
 $string['flatfile:manage'] = 'Gestionar manualmente la matriculación de usuario';
-$string['flatfilesync'] = 'Sincronización de fichero plano de matrículas';
 $string['flatfile:unenrol'] = 'Dar de baja usuarios del curso manualmente';
+$string['flatfilesync'] = 'Sincronización de fichero plano de matrículas';
 $string['location'] = 'Ubicación del archivo';
 $string['location_desc'] = 'Especifique la ruta completa al archivo de matriculaciones. El archivo se borra automáticamente después del proceso.';
 $string['mapping'] = 'Mapeo de archivos planos de rol';
 $string['messageprovider:flatfile_enrolment'] = 'Mensajes de archivos planos de matriculación';
 $string['notifyadmin'] = 'Notificar al administrador';
 $string['notifyenrolled'] = 'Notificar a los usuaruos matriculados';
-$string['notifyenroller'] = 'Notificar al usuario respñonsable de las matriculaciones.';
+$string['notifyenroller'] = 'Notificar al usuario responsable de las matriculaciones.';
 $string['pluginname'] = 'Archivo plano (CSV)';
 $string['pluginname_desc'] = 'Este método comprobará habitualmente y procesará un archivo de texto con un formato especial en la ubicación que usted especifique. El archivo es un archivo separado por comas que debe tener cuatro o seis campos por línea:
 

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grades', language 'gl', version '3.8'.
  *
- * @package   grades
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grades
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,8 +45,8 @@ $string['aggregatemedian'] = 'Mediana de cualificacións';
 $string['aggregatemin'] = 'Cualificación máis baixa';
 $string['aggregatemode'] = 'Moda de cualificacións';
 $string['aggregatenotonlygraded'] = 'Incluír as cualificacións baleiras';
-$string['aggregateonlygraded'] = 'Engadir só as cualificacións non baleiras';
-$string['aggregateonlygraded_help'] = 'Unha cualificación baleira é unha cualificación que non se atopa no libro de cualificacións. Pode ser desde unha entrega de tarefa que aínda non foi cualificada ou un exame que aínda non foi intentado, etc.
+$string['aggregateonlygraded'] = 'Excluír as cualificacións baleiras';
+$string['aggregateonlygraded_help'] = 'Unha cualificación baleira é unha cualificación que non se atopa no libro de cualificacións. Pode ser dende unha entrega de tarefa que aínda non foi cualificada ou un exame que aínda non foi intentado, etc.
 
 Este axuste determina cando as cualificacións baleiras non están incluídas na agregación ou se contabilizan como cualificacións mínimas, por exemplo 0 para unha tarefa cualificada entre 0 e 100.';
 $string['aggregateoutcomes'] = 'Incluír os resultados na agregación';
@@ -57,6 +57,15 @@ $string['aggregatesum'] = 'Suma de cualificacións';
 $string['aggregateweightedmean'] = 'Media ponderada de cualificacións';
 $string['aggregateweightedmean2'] = 'Media ponderada simple de cualificacións';
 $string['aggregation'] = 'Agregación';
+$string['aggregation_help'] = 'A agregación determina como se combinan as cualificacións nunha categoría, como
+
+* Media das cualificacións - a suma de todas as cualificacións dividida polo número total de cualificacións
+* Mediana das cualificacións - o valor do elemento medio cando as cualificacións se ordenan de menor a maior
+* Cualificación máis baixa
+* Cualificación máis alta
+* Moda das cualificacións - a cualificación que se produce con máis frecuencia
+* Suma das cualificacións - a suma de todas as cualificacións, ignorando os valores da escala estabelecida';
+$string['aggregation_link'] = 'grade/aggregation';
 $string['aggregationcoef'] = 'Coeficiente de agregación';
 $string['aggregationcoefextra'] = 'Puntos adicionais';
 $string['aggregationcoefextra_help'] = 'Se a agregación é a suma das cualificacións ou a media ponderada simple e está marcada a caixa de puntos adicionais, o elemento de cualificación de máxima cualificación non será sumado a cualificación máxima da categoría, resultando na posibilidade de acadar a cualificación máxima (ou cualificacións por riba da máxima, se está activado polo administrador do sitio) na categoría sen ter a cualificación máxima en todos os elementos de cualificación.
@@ -64,28 +73,19 @@ $string['aggregationcoefextra_help'] = 'Se a agregación é a suma das cualifica
 Se a agregación é a Media das cualificacións (con puntos adicionais) e o punto adicional estabelecese nun valor maior que cero, o punto adicional é o factor polo que se multiplica a cualificación antes de sumalo ao total despois do cálculo da media.';
 $string['aggregationcoefextra_link'] = 'grade/aggregation';
 $string['aggregationcoefextrasum'] = 'Puntos adicionais';
-$string['aggregationcoefextrasumabbr'] = '+';
 $string['aggregationcoefextrasum_help'] = 'Se está marcada a caixa de punto adicional, o elemento de cualificación máxima non se suma a cualificación máxima da categoría, dando lugar á posibilidade de acadar a cualificación máxima (ou cualificacións por riba da máxima, se está activado polo administrador do sitio) na categoría sen ter a cualificación máxima grado en todos os elementos de cualificación.';
 $string['aggregationcoefextrasum_link'] = 'grade/aggregation';
+$string['aggregationcoefextrasumabbr'] = '+';
 $string['aggregationcoefextraweight'] = 'Ponderación do punto adicional';
-$string['aggregationcoefextraweight_help'] = 'Se a ponderación do punto adicional estabelecese nun valor maior que cero, a cualificación actúa como crédito adicional durante a agregación. O número é o factor polo que se multiplica a cualificación antes de engadila ao total para o cálculo da media.';
+$string['aggregationcoefextraweight_help'] = 'Se a ponderación do punto adicional estabelecese nun valor maior que cero, a cualificación actúa como punto adicional durante a agregación. O número é o factor polo que se multiplica a cualificación antes de engadila ao total para o cálculo da media.';
 $string['aggregationcoefextraweight_link'] = 'grade/aggregation';
 $string['aggregationcoefweight'] = 'Ponderación do elemento';
 $string['aggregationcoefweight_help'] = 'A ponderación do elemento empregase na agregación de categorías para determinar a importancia da influencia do elemento comparado con outros elementos de cualificación na mesma categoría.';
 $string['aggregationcoefweight_link'] = 'grade/aggregation';
-$string['aggregation_help'] = 'A agregación determina como se combinan as cualificacións nunha categoría, como
-
- * Media das cualificacións - a suma de todas as cualificacións dividida polo número total de cualificacións
-* Mediana das cualificacións - o valor do elemento medio cando as cualificacións se ordenan de menor a maior
-* Cualificación máis baixa
-* Cualificación máis alta
-* Moda das cualificacións - a cualificación que se produce con máis frecuencia
-* Suma das cualificacións  - a suma de todas as cualificacións, ignorando os valores da escala establecida';
 $string['aggregationhintdropped'] = '( Omitida )';
 $string['aggregationhintexcluded'] = '( Excluída )';
 $string['aggregationhintextra'] = '( Puntos adicionais )';
 $string['aggregationhintnovalue'] = '( Baleira )';
-$string['aggregation_link'] = 'grade/aggregation';
 $string['aggregationofa'] = 'Agregación de {$a}';
 $string['aggregationposition'] = 'Posición da agregación';
 $string['aggregationposition_help'] = 'Este axuste determina se as columnas de totais das categorías e cursos preséntanse no principio ou na fin nos informes do libro de cualificacións.';
@@ -101,18 +101,18 @@ $string['averagesdecimalpoints'] = 'Núm. de decimais na columna de medias';
 $string['averagesdecimalpoints_help'] = 'Este axuste determina o número de decimais que presentar na media de cada columna ou se se emprega o axuste global de decimais para a categoría ou elemento de cualificación (herdanza).';
 $string['averagesdisplaytype'] = 'Tipo de presentación de columnas de medias';
 $string['averagesdisplaytype_help'] = 'Este axuste determina se a media presentase como cualificacións reais, porcentaxes ou letras ou se emprega o tipo de presentación pola categoría ou elemento de cualificación (herdanza).';
-$string['backupwithoutgradebook'] = 'A copia de seguranza non conten a configuración do Libro de cualificacións';
+$string['backupwithoutgradebook'] = 'A copia de seguranza non contén a configuración do Libro de cualificacións';
 $string['badgrade'] = 'A cualificación subministrada non é correcta';
 $string['badlyformattedscale'] = 'Escriba unha lista de valores separados por comas (requírense polo menos dous valores).';
 $string['baduser'] = 'O usuario subministrado non é correcto';
 $string['bonuspoints'] = 'Puntos de bonificación';
-$string['bulkcheckboxes'] = 'Caixas de selección masivas';
+$string['bulkcheckboxes'] = 'Caixas de verificación masivas';
 $string['calculatedgrade'] = 'Cualificación calculada';
 $string['calculation'] = 'Cálculo';
-$string['calculationadd'] = 'Engadir cálculo';
-$string['calculationedit'] = 'Editar cálculo';
 $string['calculation_help'] = 'Un cálculo de cualificacións é unha fórmula empregada para determinar as cualificacións. A debe comezar co signo igual (=) e pode empregar operadores matemáticos comúns tales como valor máximo, valor mínimo ou suma. De quererse, poden incluírse outros elementos de cualificación no cálculo escribindo os números ID encerrados entre corchetes dobres.';
 $string['calculation_link'] = 'grade/calculation';
+$string['calculationadd'] = 'Engadir cálculo';
+$string['calculationedit'] = 'Editar cálculo';
 $string['calculationsaved'] = 'Cálculo gardado';
 $string['calculationview'] = 'Ver o cálculo';
 $string['cannotaccessgroup'] = 'Non é posíbel acceder ás cualificacións do grupo seleccionado.';
@@ -130,7 +130,7 @@ $string['choosecategory'] = 'Escoller unha categoría';
 $string['collapsecriterion'] = 'Criterio de colapso';
 $string['combo'] = 'Tabuladores e menú despregábel';
 $string['compact'] = 'Compacto';
-$string['componentcontrolsvisibility'] = 'Se está agochado o elemento de cualificación é controlado pola configuración da actividade.';
+$string['componentcontrolsvisibility'] = 'Se está agochado o elemento de cualificación é controlado polos axustes da actividade.';
 $string['contract'] = 'Contraer categoría';
 $string['contributiontocoursetotal'] = 'Achega ao total do curso';
 $string['controls'] = 'Controis';
@@ -138,17 +138,17 @@ $string['courseavg'] = 'Media do curso';
 $string['coursegradecategory'] = 'Categoría de cualificación do curso';
 $string['coursegradedisplaytype'] = 'Tipo de presentación da cualificación do curso';
 $string['coursegradedisplayupdated'] = 'O tipo de presentación da cualificación do curso foi actualizado.';
-$string['coursegradesettings'] = 'Configuración da cualificación do curso';
+$string['coursegradesettings'] = 'Axustes da cualificación do curso';
 $string['coursename'] = 'Nome do curso';
 $string['coursescales'] = 'Escalas do curso';
 $string['coursesettings'] = 'Configuración do curso';
-$string['coursesettingsexplanation'] = 'A configuración do curso determina como aparece o libro de cualificacións para todos os participantes no curso.';
+$string['coursesettingsexplanation'] = 'Os axustes do curso determinan como aparece o libro de cualificacións para todos os participantes no curso.';
 $string['coursesiamtaking'] = 'Cursos que estou recibindo';
-$string['coursesiamteaching'] = 'Cursos no que son profesor';
+$string['coursesiamteaching'] = 'Cursos nos que son profesor';
 $string['coursetotal'] = 'Total do curso';
 $string['createcategory'] = 'Crear unha categoría';
-$string['createcategoryerror'] = 'Non foi posible crear unha nova categoría';
-$string['creatinggradebooksettings'] = 'Creando a configuración do libro de cualificacións';
+$string['createcategoryerror'] = 'Non foi posíbel crear unha nova categoría';
+$string['creatinggradebooksettings'] = 'Creando os axustes do libro de cualificacións';
 $string['csv'] = 'CSV';
 $string['currentparentaggregation'] = 'Agregación principal actual.';
 $string['curveto'] = 'Normalizar a';
@@ -160,14 +160,14 @@ $string['deletecategory'] = 'Eliminar categoría';
 $string['disablegradehistory'] = 'Desactivar o historial de cualificacións';
 $string['disablegradehistory_help'] = 'Desactivar seguimento do historial de cambios nas táboas de cualificación relacionadas. Isto pode axilizar algo o funcionamento do servidor e conservar espazo na base de datos.';
 $string['displaylettergrade'] = 'Presentar as cualificacións con letra';
-$string['displaypercent'] = 'Presentar porcentaxes';
+$string['displaypercent'] = 'Presentar porcentuais';
 $string['displaypoints'] = 'Presentar puntos';
 $string['displayweighted'] = 'Presentar as cualificacións ponderadas';
 $string['dropdown'] = 'Menú despregábel';
 $string['droplow'] = 'Descartar as máis baixas';
+$string['droplow_help'] = 'Este axuste permite excluír da agregación un número especificado das cualificacións máis baixas.';
 $string['droplowestvalue'] = 'Desbotar a cualificación máis baixa';
-$string['droplowestvalues'] = 'Omitir os {$a} valore máis baixos';
-$string['droplow_help'] = 'Este axuste especifica un número determinado de Esta configuración permite que un número determinado das cualificacións máis baixas sexan excluídas da agregación.';
+$string['droplowestvalues'] = 'Omitir os {$a} valores máis baixos';
 $string['dropped'] = 'Descartadas';
 $string['dropxlowest'] = 'Descartar X máis baixas';
 $string['dropxlowestwarning'] = 'Nota: se emprega «Descartar X máis baixas», a cualificación asume que todos os elementos da categoría teñen o mesmo valor en puntos. Se ditos valores difiren, o resultado será impredicíbel';
@@ -181,15 +181,15 @@ $string['editgradeletters'] = 'Editar letras de cualificación';
 $string['editoutcome'] = 'Editar o resultado';
 $string['editoutcomes'] = 'Editar os resultados';
 $string['editscale'] = 'Editar a escala';
-$string['edittree'] = 'Categorías e elementos';
+$string['edittree'] = 'Axustes';
 $string['editverbose'] = 'Editar {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['enableajax'] = 'Activar AJAX';
 $string['enableajax_help'] = 'Engade unha capa de funcionalidade AJAX ao informe do cualificador, simplificando e axilizando as operacións comúns. Depende de que Javascript estea activado no navegador do usuario.';
 $string['enableoutcomes'] = 'Activar os resultados';
-$string['enableoutcomes_help'] = 'Compatibilidade para resultados (tamén coñecido como «competencias», «obxectivos», «estándares» ou «criterios») significa que podemos cualificar empregando unha ou máis escalas que estean vencelladas as estados dos resultados. A activación dos resultados fai posíbel esta forma especial de cualificación en todo o sitio.';
+$string['enableoutcomes_help'] = 'Se está activado, os elementos de cualificación pódense cualificar utilizando unha ou máis escalas vinculadas aos estados dos resultados.';
 $string['encoding'] = 'Codificación';
-$string['encoding_help'] = 'Seleccione a codificación de caracteres usada para os datos. (A codificación estándar é UTF-8.) Se por erro selecciona unha codificación trabucada, notarase  ao facer unha vista previa dos datos a importar.';
-$string['errorcalculationbroken'] = 'Probabelmente unha referencia circular ou unha fórmula de cálculo rota';
+$string['encoding_help'] = 'Seleccione a codificación de caracteres usada para os datos. (A codificación estándar é UTF-8.) Se por erro selecciona unha codificación trabucada, notarase ao facer unha vista previa dos datos a importar.';
+$string['errorcalculationbroken'] = 'Probabelmente unha referencia circular ou unha fórmula de cálculo rachada';
 $string['errorcalculationnoequal'] = 'A fórmula debe comezar polo signo «igual» (=1+2)';
 $string['errorcalculationunknown'] = 'Fórmula incorrecta';
 $string['errorgradevaluenonnumeric'] = 'Recibiuse un valor non numérico para cualificación baixa ou alta para';
@@ -197,7 +197,7 @@ $string['errornocalculationallowed'] = 'Non se permiten cálculos para este elem
 $string['errornocategorisedid'] = 'Non foi posíbel obter un ID sen categorizar.';
 $string['errornocourse'] = 'Non foi posíbel obter información do curso';
 $string['errorreprintheadersnonnumeric'] = 'Recibiuse un valor non numérico para volver imprimir as cabeceiras';
-$string['errorsavegrade'] = 'Non foi posíbel cargar a cualificación.';
+$string['errorsavegrade'] = 'Non foi posíbel gardar a cualificación.';
 $string['errorsettinggrade'] = 'Produciuse un erro ao gardar a cualificación de «{$a->itemname}» para o usuario co ID de usuario {$a->userid}';
 $string['errorupdatinggradecategoryaggregateonlygraded'] = 'Produciuse un erro ao actualizar o axuste «Engadir só as cualificacións non baleiras» da categoría de cualificación co ID {$a->id}';
 $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Produciuse un erro ao actualizar o axuste «Incluír os resultados na agregación» da categoría de cualificación co ID {$a->id}';
@@ -214,7 +214,7 @@ $string['eventscalecreated'] = 'Creada a escala';
 $string['eventscaledeleted'] = 'Eliminada a escala';
 $string['eventscaleupdated'] = 'Actualizada a escala';
 $string['eventusergraded'] = 'usuario cualificado';
-$string['excluded'] = 'Excluída';
+$string['excluded'] = 'Excluídos';
 $string['excluded_help'] = 'Se esta marcado, a cualificación non será incluída en ningunha agregación.';
 $string['expand'] = 'Expandir a categoría';
 $string['expandcriterion'] = 'Ampliar o criterio';
@@ -226,18 +226,18 @@ $string['exportformatoptions'] = 'Opcións de formato de exportación';
 $string['exportonlyactive'] = 'Excluír os usuarios suspensos';
 $string['exportonlyactive_help'] = 'Incluír na exportación soamente os alumnos con matriculación activa e que non fosen suspendidos';
 $string['exportplugins'] = 'Engadidos de exportación';
-$string['exportsettings'] = 'Configuración da exportación';
+$string['exportsettings'] = 'Axustes da exportación';
 $string['exportto'] = 'Exportar a';
 $string['externalurl'] = 'URL externo';
 $string['externalurl_desc'] = 'De usarse un libro de cualificacións externo, debe especificar aquí o URL.';
-$string['extracreditvalue'] = 'Valor de crédito extra para {$a}';
+$string['extracreditvalue'] = 'Valor de punto extra para {$a}';
 $string['extracreditwarning'] = 'Nota: Axustando todos os elementos dunha categoría a punto adicional, retiraranse de xeito efectivo do cálculo da cualificación. Xa que non haberá total de puntos';
 $string['feedback'] = 'Comentarios';
+$string['feedback_help'] = 'Esta caixa activa que poida engadirse calquera comentario sobre a cualificación.';
 $string['feedbackadd'] = 'Engadir comentario';
 $string['feedbackedit'] = 'Editar comentario';
 $string['feedbackfiles'] = 'Ficheiros de comentarios';
 $string['feedbackforgradeitems'] = 'Comentario para {$a}';
-$string['feedback_help'] = 'Esta caixa activa que poida engadirse calquera comentario sobre a cualificación.';
 $string['feedbackhistoryfiles'] = 'Ficheiros de historial de comentarios';
 $string['feedbacks'] = 'Comentarios';
 $string['feedbacksaved'] = 'Comentarios gardados';
@@ -254,8 +254,9 @@ $string['forelementtypes'] = 'para {$a} seleccionado';
 $string['forstudents'] = 'Para os alumnos';
 $string['full'] = 'Completa';
 $string['fullmode'] = 'Vista completa';
-$string['generalsettings'] = 'Configuración xeral';
+$string['generalsettings'] = 'Axustes xerais';
 $string['grade'] = 'Cualificación';
+$string['grade_help'] = 'A cualificación para premiar o alumno polo seu traballo.';
 $string['gradeadministration'] = 'Administración das cualificacións';
 $string['gradealreadyupdated'] = '{$a} cualificacións non foron importadas, porque as cualificacións do ficheiro de importación son máis antigas que as do informe do cualificador. Para proceder aínda así coa importación de cualificacións, use a opción para forzar a importación.';
 $string['gradeanalysis'] = 'Análise das cualificacións';
@@ -274,21 +275,21 @@ $string['gradecategories'] = 'Categorías de cualificación';
 $string['gradecategory'] = 'Categoría de cualificación';
 $string['gradecategoryonmodform'] = 'Categoría de cualificación';
 $string['gradecategoryonmodform_help'] = 'Este axuste controla a categoría na que as cualificacións desta actividade están localizadas no libro de cualificacións.';
-$string['gradecategorysettings'] = 'Configuración de categoría de cualificación';
+$string['gradecategorysettings'] = 'Axustes de categoría de cualificación';
 $string['gradedisplay'] = 'Presentar a cualificación';
 $string['gradedisplaytype'] = 'Tipo de presentación da cualificación';
-$string['gradedisplaytype_help'] = 'Este axuste especifica como se presentaran as cualificacións no cualificador e nos informes de usuario.
+$string['gradedisplaytype_help'] = 'Este axuste especifica como se presentarán as cualificacións no cualificador e nos informes de usuario.
 
-* Real - cualificacións actuais
-* Porcentaxe
-* Letras - letras ou palabras que se empregan para representar un intervalo de cualificacións';
+* Letra - As letras ou palabras empréganse para representar un intervalo de cualificacións, como se define en «Letras» na configuración do caderno de cualificacións
+* Porcentaxe - Relativo os graos máximo e mínimo.
+* Real - Cualificacións reais ou escala de valores.';
 $string['gradedon'] = 'Cualificado: {$a}';
 $string['gradeexport'] = 'Exportar cualificacións';
 $string['gradeexportcolumntype'] = '{$a->name} ({$a->extra})';
 $string['gradeexportcustomprofilefields'] = 'Campos personalizados do perfil na exportación da cualificación';
 $string['gradeexportcustomprofilefields_desc'] = 'Incluír estes campos de perfil personalizados na exportación da cualificación, separados por comas.';
 $string['gradeexportdecimalpoints'] = 'Puntos decimais na exportación da cualificación';
-$string['gradeexportdecimalpoints_desc'] = 'Número de decimais que presentar para a exportación. Isto pode anularse durante a exportación.';
+$string['gradeexportdecimalpoints_desc'] = 'Número de decimais que presentar para a exportación. Isto pode anulalo durante a exportación.';
 $string['gradeexportdisplaytype'] = 'Tipo de presentación da exportación da cualificación';
 $string['gradeexportdisplaytype_desc'] = 'As cualificacións poden amosarse como cualificacións reais, como porcentaxes (en relación ás cualificacións mínima e máxima) ou como letras (A, B, C, etc.) durante a exportación. Isto pode anulalo durante a exportación.';
 $string['gradeexportdisplaytypes'] = 'Tipos de presentación da exportación da cualificación';
@@ -297,7 +298,6 @@ $string['gradeexportuserprofilefields_desc'] = 'Incluír estes campos de perfil 
 $string['gradeforstudent'] = '{$a->student}<br />{$a->item}{$a->feedback}';
 $string['gradegrademinmax'] = 'Cualificacións mín. e máx. iniciais';
 $string['gradehelp'] = 'Axuda sobre a cualificación';
-$string['grade_help'] = 'A cualificación para premiar o alumno polo seu traballo.';
 $string['gradehistorylifetime'] = 'Duración do historial da cualificación';
 $string['gradehistorylifetime_help'] = 'Isto especifica durante canto tempo quere manter o historial de cambios nas táboas de cualificación relacionadas. Recomendase mantelo o máximo de tempo posíbel. Se experimenta problemas de funcionamento ou ten un espazo limitado na base de datos, probe cun valor máis baixo.';
 $string['gradeimport'] = 'Importar cualificacións';
@@ -309,11 +309,11 @@ $string['gradeitemadvanced_help'] = 'Escolla todos os elementos que presentar ao
 $string['gradeitemislocked'] = 'Esta actividade está bloqueada no libro de cualificacións. Os cambios realizados nas cualificacións nesta actividade non serán copiadas no libro de cualificacións ata que non se desbloquee.';
 $string['gradeitemlocked'] = 'Cualificación bloqueada';
 $string['gradeitemmembersselected'] = 'Excluídos da cualificación';
-$string['gradeitemminmax'] = 'Cualificacións mín. e máx. iniciais como se especificaron nas configuración do elemento de cualificación';
+$string['gradeitemminmax'] = 'Cualificacións mín. e máx. iniciais como se especificaron nos axustes do elemento de cualificación';
 $string['gradeitemnonmembers'] = 'Incluídos na cualificación';
 $string['gradeitemremovemembers'] = 'Incluído na cualificación';
 $string['gradeitems'] = 'Elementos de cualificación';
-$string['gradeitemsettings'] = 'Configuración de elementos de cualificación';
+$string['gradeitemsettings'] = 'Axustes de elementos de cualificación';
 $string['gradeitemsinc'] = 'Elementos de cualificación para seren incluídos';
 $string['gradeletter'] = 'Letra de cualificación';
 $string['gradeletter_help'] = 'As letras de cualificación son letras, A, B, C, ..., ou palabras, por exemplo Distinción, Mérito, Aprobado, ..., que se empregan para representar unha gama de cualificacións.';
@@ -322,7 +322,7 @@ $string['gradeletteroverridden'] = 'A cualificación con letras actualmente est�
 $string['gradeletters'] = 'Letras de cualificación';
 $string['gradelocked'] = 'A cualificación está bloqueada';
 $string['gradelong'] = '{$a->grade} / {$a->max}';
-$string['grademax'] = 'Cualificación máxima';
+$string['grademax'] = 'Puntuación máxima';
 $string['grademax_help'] = 'Este axuste determina a cualificación máxima cando se usa «Valor» como «Tipo de cualificación». A cualificación máxima para unha cualificación baseada na actividade estabelecese na páxina de configuración da actividade.';
 $string['grademin'] = 'Cualificación mínima';
 $string['grademin_help'] = 'Este axuste determina a cualificación mínima cando se usa «Valor» como «Tipo de cualificación».';
@@ -332,14 +332,14 @@ $string['gradeoutcomeitem'] = 'Elemento de resultado de cualificación';
 $string['gradeoutcomes'] = 'Resultados';
 $string['gradeoutcomescourses'] = 'Resultados do curso';
 $string['gradepass'] = 'Cualificación para aprobar';
-$string['gradepassgreaterthangrade'] = 'A cualificación para aprobar non pode ser maior que a máxima cualificación posíbel {$a}';
 $string['gradepass_help'] = 'Este axuste determina a cualificación mínima requirida para aprobar. O valor empregase na actividade, no completado do curso e no libro de cualificacións, onde as cualificacións de aprobado resáltanse en verde e as de suspenso en vermello.';
+$string['gradepassgreaterthangrade'] = 'A cualificación para aprobar non pode ser maior que a máxima cualificación posíbel {$a}';
 $string['gradepointdefault'] = 'Puntuación predeterminada de cualificación';
-$string['gradepointdefault_help'] = 'Esta configuración determina o valor predeterminado para o valor del puntuación da cualificación nunha actividade.';
-$string['gradepointdefault_validateerror'] = 'Esta configuración debe ser un número enteiro entre 1 e o máximo de puntuación da cualificación.';
+$string['gradepointdefault_help'] = 'Este axuste determina o valor predeterminado para o valor del puntuación da cualificación nunha actividade.';
+$string['gradepointdefault_validateerror'] = 'Este axuste debe ser un número enteiro entre 1 e o máximo de puntuación da cualificación.';
 $string['gradepointmax'] = 'Puntuación máxima de cualificación';
-$string['gradepointmax_help'] = 'Esta configuración determina a puntuación máxima de cualificación dispoñíbel para unha actividade.';
-$string['gradepointmax_validateerror'] = 'Esta configuración debe ser un número enteiro entre 1 e 10000.';
+$string['gradepointmax_help'] = 'Este axuste determina a puntuación máxima de cualificación dispoñíbel para unha actividade.';
+$string['gradepointmax_validateerror'] = 'Este axuste debe ser un número enteiro entre 1 e 10000.';
 $string['gradepreferences'] = 'Preferencias de cualificación';
 $string['gradepreferenceshelp'] = 'Axuda sobre as preferencias de cualificación';
 $string['gradepublishing'] = 'Activar a publicación';
@@ -350,9 +350,9 @@ $string['graderreport'] = 'Informe do cualificador';
 $string['grades'] = 'Cualificacións';
 $string['gradesforuser'] = 'Cualificacións de {$a->user}';
 $string['gradesmoduledeletionpendingwarning'] = 'Aviso: eliminación de actividade en curso. Algunhas notas están a piques de eliminarse.';
-$string['gradesmoduledeletionprefix'] = '[Eliminación en curso]';
+$string['gradesmoduledeletionprefix'] = '[Eliminación en proceso]';
 $string['gradesonly'] = 'Só cualificacións';
-$string['gradessettings'] = 'Configuración da cualificación';
+$string['gradessettings'] = 'Axustes da cualificación';
 $string['gradetype'] = 'Tipo de cualificación';
 $string['gradetype_help'] = 'Hai 4 tipos de cualificación:
 
@@ -369,9 +369,9 @@ $string['gradeweighthelp'] = 'Axuda sobre a ponderación da cualificación';
 $string['gradingmodulename'] = 'Cualificar ({$a})';
 $string['groupavg'] = 'Media do grupo';
 $string['hidden'] = 'Agochado';
+$string['hidden_help'] = 'Se marca esta opción, as cualificacións van seren agochadas para os alumnos. Se lle parece oportuno, pode agochalas ata o día no que se fagan públicas as cualificacións unha vez completado o proceso.';
 $string['hiddenasdate'] = 'Amosar a data de entrega para as cualificacións agochadas';
 $string['hiddenasdate_help'] = 'Se o usuario non pode ver as cualificacións agochadas, amose a data de entrega no canto de «-».';
-$string['hidden_help'] = 'Se marca esta opción, as cualificacións van seren agochadas para os alumnos. Se lle parece oportuno, pode agochalas ata o día no que se fagan públicas as cualificacións unha vez completado o proceso.';
 $string['hiddenuntil'] = 'Agochadas ata';
 $string['hiddenuntildate'] = 'Agochadas ata: {$a}';
 $string['hideadvanced'] = 'Agochar as características avanzadas';
@@ -380,15 +380,15 @@ $string['hidecalculations'] = 'Agochar os cálculos';
 $string['hidecategory'] = 'Agochado';
 $string['hideeyecons'] = 'Agochar as iconas «Amosar/Agochar»';
 $string['hidefeedback'] = 'Agochar comentario';
-$string['hideforcedsettings'] = 'Agochar a configuración forzada';
-$string['hideforcedsettings_help'] = 'Non volver amosar a configuración forzada na interface de usuario de cualificacións.';
+$string['hideforcedsettings'] = 'Agochar os axustes forzados';
+$string['hideforcedsettings_help'] = 'Non volver amosar os axustes forzados na interface de usuario de cualificacións.';
 $string['hidegroups'] = 'Agochar os grupos';
 $string['hidelocks'] = 'Agochar os bloqueos';
 $string['hidenooutcomes'] = 'Amosar os resultados';
 $string['hidequickfeedback'] = 'Agochar o comentario rápido';
 $string['hideranges'] = 'Agochar os intervalos';
 $string['hidetotalifhiddenitems'] = 'Agochar os totais se conteñen elementos agochados?';
-$string['hidetotalifhiddenitems_help'] = 'Este axuste especifica se os totais que conteñen elementos de cualificación agochados son amosados  a os alumnos, ou se se substitúen por un guión (-). De amosarse, pode calcularse o total excluíndo ou incluíndo estes elementos.
+$string['hidetotalifhiddenitems_help'] = 'Este axuste especifica se os totais que conteñen elementos de cualificación agochados son amosados a os alumnos, ou se se substitúen por un guión (-). De amosarse, pode calcularse o total excluíndo ou incluíndo estes elementos.
 
 De excluírse os elementos agochados, o total será diferente ao que ve o profesor no informe do cualificador, xa que o profesor ve sempre os totais calculados con todos os elementos, agochados ou visíbeis. De incluírse os elementos agochados, os alumnos poderán calcular este elementos agochados.';
 $string['hidetotalshowexhiddenitems'] = 'Amosar os totais excluíndo os elementos agochados';
@@ -412,7 +412,7 @@ $string['importcsv_help'] = 'as cualificacións poden importarse mediante un fic
 Pode obterse un ficheiro no formato correcto ao exportar primeiramente algunhas cualificacións. Este ficheiro pode entón editarse e gardarse como un ficheiro CSV.';
 $string['importcsv_link'] = 'grade/import/csv/index';
 $string['importcustom'] = 'Importar como resultados personalizados (só este curso)';
-$string['importerror'] = 'produciuse un erro, este script non foi invocado coos parámetros correctos.';
+$string['importerror'] = 'produciuse un erro, este script non foi invocado cos parámetros correctos.';
 $string['importfailed'] = 'Non foi posíbel importar';
 $string['importfeedback'] = 'Importar comentarios';
 $string['importfile'] = 'Importar ficheiros';
@@ -425,7 +425,7 @@ $string['importoutcomes_link'] = 'grade/outcome';
 $string['importoutcomesuccess'] = 'Resultado importado «{$a->name}» co ID #{$a->id}';
 $string['importplugins'] = 'Engadidos de importación';
 $string['importpreview'] = 'Vista previa da importación';
-$string['importsettings'] = 'Configuración da importación';
+$string['importsettings'] = 'Axustes da importación';
 $string['importskippednomanagescale'] = 'Non ten permiso para engadir unha nova escala. O resultado «{$a}» foi omitido xa que require crear unha nova escala';
 $string['importskippedoutcome'] = 'Xa existe un resultado co nome curto «{$a}» neste contexto; o ficheiro importado foi omitido.';
 $string['importstandard'] = 'Importar como resultados estándar';
@@ -447,8 +447,8 @@ $string['itemnamehelp'] = 'O nome deste elemento, determinado polo módulo.';
 $string['items'] = 'Elementos';
 $string['itemsedit'] = 'Editar o elemento de cualificación';
 $string['keephigh'] = 'Manter as máis altas';
+$string['keephigh_help'] = 'Se está activada esta opción, só se conservarán as X cualificacións máis altas, sendo X o valor seleccionado nesta opción.';
 $string['keephighestvalues'] = 'Conservar os {$a} valores máis altos';
-$string['keephigh_help'] = 'Se está activada esta opción, só se  conservarán as X cualificacións máis altas, sendo X o valor seleccionado nesta opción.';
 $string['keymanager'] = 'Xestor de chaves';
 $string['lessthanmin'] = 'A cualificación outorgada en {$a->itemname} a {$a->username} é menor que o mínimo permitido';
 $string['letter'] = 'Letra';
@@ -463,18 +463,18 @@ $string['linktoactivity'] = 'Ligar coa actividade {$a->name}';
 $string['lock'] = 'Bloquear';
 $string['locked'] = 'Bloqueado';
 $string['locked_help'] = 'Se está marcada esta opción, as cualificacións xa non poderán seren actualizadas automaticamente pola actividade relacionada.';
-$string['locktime'] = 'Bloquear desde';
-$string['locktimedate'] = 'Bloqueada desde: {$a}';
+$string['locktime'] = 'Bloquear dende';
+$string['locktimedate'] = 'Bloqueada dende: {$a}';
 $string['lockverbose'] = 'Bloquear {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['lowest'] = 'Máis baixa';
 $string['lowgradeletter'] = 'Baixa';
 $string['manualitem'] = 'Elemento manual';
-$string['mapfrom'] = 'Asigna desde';
+$string['mapfrom'] = 'Asigna dende';
 $string['mapfrom_help'] = 'Seleccione a columna na folla de cálculo que conten os datos para identificar ao usuario, tales como nome de usuario, ID do usuario ou enderezo de correo.';
 $string['mappings'] = 'Asignación de elementos de cualificación';
 $string['mappings_help'] = 'Para cada columna de cualificacións na folla de cálculo, seleccione o elemento de cualificación correspondente ao que importar as cualificacións.';
 $string['mapto'] = 'Asignar a';
-$string['mapto_help'] = 'Seleccione os mesmos datos identificadores que os seleccionados para «Asignar desde».';
+$string['mapto_help'] = 'Seleccione os mesmos datos identificadores que os seleccionados para «Asignar dende».';
 $string['max'] = 'Máis alta';
 $string['maxgrade'] = 'Cualificación máxima';
 $string['meanall'] = 'Todas as cualificacións';
@@ -487,15 +487,16 @@ $string['minimum_show'] = 'Amosar a cualificación mínima';
 $string['minimum_show_help'] = 'A cualificación mínima usase para calcular cualificacións e ponderacións. Se non se amosa, a cualificación mínima será de cero como predeterminada e non pode ser editada.';
 $string['minmaxtouse'] = 'Cualificacións mín. e máx. usadas no cálculo';
 $string['minmaxtouse_desc'] = 'Esta configuración determina se se usan as cualificacións mínimas e máximas iniciais de cando se deu a cualificación, ou as cualificacións mínimas e máximas como se especificaron nas configuracións para o elemento de cualificación, ao calcular a cualificación amosada no libro de cualificacións. Recomendase que esta configuración sexa modificada fora das horas pico, porque todas as cualificacións serán recalculadas, o que podería resultar nunha carga moi alta do servidor.';
-$string['minmaxtouse_help'] = 'Esta configuración determina se se usan as cualificacións mínimas e máximas iniciais de cando se deu a cualificación, ou as cualificacións mínimas e máximas como se especificaron nas configuracións para o elemento de cualificación, ao calcular a cualificación amosada no libro de cualificacións.';
+$string['minmaxtouse_help'] = 'Este axuste determina se se usan as cualificacións mínimas e máximas iniciais de cando se deu a cualificación, ou as cualificacións mínimas e máximas como se especificaron nos axustes para o elemento de cualificación, ao calcular a cualificación amosada no libro de cualificacións.';
 $string['minmaxtouse_link'] = 'Cualificacións_min_max';
 $string['minmaxupgradedgrades'] = 'Nota: Algunhas cualificacións foron cambiadas para poder resolver unha inconsistencia no libro de cualificacións causada por un cambio nas cualificacións mínima e máxima usadas ao calcular a cualificación amosada. Recomendase revisar e aceptar os cambios';
 $string['minmaxupgradefixbutton'] = 'Solucionar inconsistencias';
 $string['minmaxupgradewarning'] = 'Nota: Detectouse unha inconsistencia nalgunhas cualificacións por mor dun cambio nas cualificacións mínima e máxima usadas ao calcular a cualificación amosada no libro de cualificacións. Recomendase que se corrixan os erros premendo no botón inferior, aínda que isto terá como consecuencia que algunhas cualificacións cambiarán.';
-$string['missingitemtypeoreid'] = 'Falta a chave da matriz (itemtype or eid) do 2do parámetro de grade_edit_tree_column_select::get_item_cell($item, $params)';
+$string['missingitemtypeoreid'] = 'Falta a chave da matriz (itemtype or eid) do 2º parámetro de grade_edit_tree_column_select::get_item_cell($item, $params)';
 $string['missingscale'] = 'Debe estar seleccionada a escala';
 $string['mode'] = 'Modo';
 $string['modgrade'] = 'Cualificación';
+$string['modgrade_help'] = 'Seleccione o tipo de cualificación usado para esta actividade. se elixe «escala», entón Vostede poderá escoller a escala dentro do menú despregábel. Se usa a cualificación por puntos entón poderá escribir a cualificación máxima dispoñíbel para esta actividade.';
 $string['modgradecantchangegradetype'] = 'Non pode cambiar o tipo, porque xa existen cualificacións para este elemento.';
 $string['modgradecantchangegradetypemsg'] = 'Xa foron outorgadas algunhas cualificacións, polo que xa non pode cambiarse o tipo de cualificación. Se quere cambiar a cualificación máxima, Primeiramente ten que escoller se volver escalar ou non as cualificacións existentes.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Xa foron outorgadas algunhas cualificacións, polo que xa non pode cambiarse nin o tipo nin a escala das cualificación.';
@@ -506,20 +507,19 @@ $string['modgradecategorycantchangegradetyporscalemsg'] = 'Esta categoría ten e
 $string['modgradecategoryrescalegrades'] = 'Volver escalar as cualificacións anuladas';
 $string['modgradecategoryrescalegrades_help'] = 'Ao cambiar as cualificacións máximas nun elemento do Libro de cualificacións, necesita especificar se isto fará que cambien tamén as cualificacións con porcentaxes.
 
-Se estabelece isto a  «Si», as cualificacións anuladas existentes volverán a ser escaladas de forma tal que a cualificación por porcentaxe permaneza igual.
+Se estabelece isto axuste «Si», as cualificacións anuladas existentes volverán a ser escaladas de forma tal que a cualificación por porcentaxe permaneza igual.
 
-Por exemplo, se esta opción se  estabelece a «Si», o cambio da cualificación máxima nun ítem de 10 a 20 faría que unha cualificación de 6/10 (60%) volva ser escalada a 12/20 (60%). Con esta opción configurada a «Non», a cualificación permanecera sen cambios e necesitaría axuste manual dos elementos de cualificación para asegurar puntuacións correctas.';
+Por exemplo, se esta opción se estabelece a «Si», o cambio da cualificación máxima nun ítem de 10 a 20 faría que unha cualificación de 6/10 (60%) volva ser escalada a 12/20 (60%). Con esta opción configurada a «Non», a cualificación permanecera sen cambios e necesitaría axuste manual dos elementos de cualificación para asegurar puntuacións correctas.';
 $string['modgradedonotmodify'] = 'Non modificar as cualificacións existentes';
 $string['modgradeerrorbadpoint'] = 'Valor de cualificación incorrecto. Isto debe ser un número enteiro entre 0 e {$a}';
 $string['modgradeerrorbadscale'] = 'A escala seleccionada non é válida. Asegúrese de seleccionar unha escala de entre as seleccións seguintes.';
-$string['modgrade_help'] = 'Seleccione o tipo de cualificación usado para esta actividade. se elixe «escala», entón Vostede poderá escoller a escala dentro  do menú desagregábel de «escala». Se usa a cualificación por «puntuación» entón poderá escribir a cualificación máxima dispoñíbel para esta actividade.';
 $string['modgrademaxgrade'] = 'Puntuación máxima';
 $string['modgraderescalegrades'] = 'Volver escalar as cualificacións existentes';
 $string['modgraderescalegrades_help'] = 'Ao cambiar as cualificacións máximas nun elemento do Libro de cualificacións, necesita especificar se isto fará que cambien tamén as cualificacións con porcentaxes.
 
-Se estabelece isto a  «Si», as cualificacións existentes volverán a ser escaladas de forma tal que a cualificación por porcentaxe permaneza igual.
+Se estabelece isto axuste «Si», as cualificacións existentes volverán a ser escaladas de forma tal que a cualificación por porcentaxe permaneza igual.
 
-Por exemplo, se esta opción se  estabelece a «Si», o cambio da cualificación máxima nun ítem de 10 a 20 faría que unha cualificación de 6/10 (60%) volva ser escalada a 12/20 (60%). Con esta opción configurada a «Non», a cualificación cambiará de 6/10 (60%) a 6/20 (30%), o que requiriría axuste manual dos elementos de cualificación para asegurar puntuacións correctas.';
+Por exemplo, se esta opción se estabelece a «Si», o cambio da cualificación máxima nun ítem de 10 a 20 faría que unha cualificación de 6/10 (60%) volva ser escalada a 12/20 (60%). Con esta opción configurada a «Non», a cualificación cambiará de 6/10 (60%) a 6/20 (30%), o que requiriría axuste manual dos elementos de cualificación para asegurar puntuacións correctas.';
 $string['modgradetype'] = 'Tipo';
 $string['modgradetypenone'] = 'Ningún';
 $string['modgradetypepoint'] = 'Punto';
@@ -532,7 +532,7 @@ $string['multfactor_help'] = 'O multiplicador é o factor polo que se multiplica
 $string['multfactorvalue'] = 'Multiplicator value for {$a}';
 $string['mustchooserescaleyesorno'] = 'Ten que escoller entre volver escalar as cualificacións existentes ou non.';
 $string['mygrades'] = 'Ligazón ás cualificacións no menú do usuario';
-$string['mygrades_desc'] = 'Esta configuración dispón a opción para ligar cara un libro de cualificacións externo desde o menú do usuario.';
+$string['mygrades_desc'] = 'Este axuste dispón a opción para ligar cara a un libro de cualificacións externo dende o menú do usuario.';
 $string['mypreferences'] = 'As miñas preferencias';
 $string['myreportpreferences'] = 'As miñas preferencias de informe';
 $string['navmethod'] = 'Método de navegación';
@@ -559,7 +559,7 @@ $string['nooutcomes'] = 'Os elementos de resultados deben estar ligados a un res
 $string['nopermissiontoresetweights'] = 'Sen permiso para reiniciar ponderacións';
 $string['nopublish'] = 'Non publicar';
 $string['noreports'] = 'Vostede non está matriculado, nin impartindo ningún curso neste sitio.';
-$string['norolesdefined'] = 'Non hai roles definidos en Administración > Cualificacións > Configuración xeral > Roles cualificados';
+$string['norolesdefined'] = 'Non hai roles definidos en Administración > Cualificacións > Axustes xerais > Roles cualificados';
 $string['noscales'] = 'Os resultados deben estar ligados a unha escala (de curso ou global), mais non existe ningunha. Quere engadir unha?';
 $string['noselectedcategories'] = 'non hai categorías seleccionados.';
 $string['noselecteditems'] = 'non hai elementos seleccionados.';
@@ -573,6 +573,7 @@ $string['operations'] = 'Operacións';
 $string['options'] = 'Opcións';
 $string['others'] = 'Outros';
 $string['outcome'] = 'Resultado';
+$string['outcome_help'] = 'Este axuste determina o resultado que este elemento de cualificación representará no libro de cualificacións.';
 $string['outcomeassigntocourse'] = 'Asignar outro resultado a este curso';
 $string['outcomecategory'] = 'Crear resultados en categoría';
 $string['outcomecategorynew'] = 'Nova categoría';
@@ -580,7 +581,6 @@ $string['outcomeconfirmdelete'] = 'Confirma que quere eliminar o resultado «{$a
 $string['outcomecreate'] = 'Engadir un novo resultado';
 $string['outcomedelete'] = 'Eliminar o resultado';
 $string['outcomefullname'] = 'Nome completo';
-$string['outcome_help'] = 'Este axuste determina o resultado que este elemento de cualificación representará no libro de cualificacións.';
 $string['outcomeitem'] = 'Elemento de resultado';
 $string['outcomeitemsedit'] = 'Editar elemento de resultado';
 $string['outcomereport'] = 'Informe do resultado';
@@ -602,7 +602,7 @@ $string['overridden_help'] = 'Se está marcado, xa non se poderá cambiar a cual
 Cando se edita unha cualificación no informe do cualificador, a caixa de «Anulado» está marcada automaticamente. Porén, pode ser desmarcada para permitir que a cualificación sexa cambiada mediante a actividade relacionada.';
 $string['overriddennotice'] = 'A súa cualificación final desta actividade foi axustada manualmente.';
 $string['overridecat'] = 'Permitir que as cualificación de categoría sexan anuladas manualmente';
-$string['overridecat_help'] = 'Desactivar esta configuración fai imposíbel que os usuarios poidan anular as cualificacións de categoría.';
+$string['overridecat_help'] = 'Desactivar este axuste fai imposíbel que os usuarios poidan anular as cualificacións de categoría.';
 $string['overridesitedefaultgradedisplaytype'] = 'Anular os valores predeterminados do sitio';
 $string['overridesitedefaultgradedisplaytype_help'] = 'Se está marcada, poden estabelecerse as letras de cualificación e os límites para o curso, no canto de empregar os valores predeterminados do sitio.';
 $string['overrideweightofa'] = 'Anular a ponderación de {$a}';
@@ -612,8 +612,8 @@ $string['percent'] = 'Porcentaxe';
 $string['percentage'] = 'Porcentaxe';
 $string['percentageletter'] = 'Porcentaxe (letra)';
 $string['percentagereal'] = 'Porcentaxe (real)';
-$string['percentascending'] = 'Ordenación ascendente por porcentaxe';
-$string['percentdescending'] = 'Ordenación descendente por porcentaxe';
+$string['percentascending'] = 'Ordenación porcentual ascendente';
+$string['percentdescending'] = 'Ordenación porcentual descendente';
 $string['percentshort'] = '%';
 $string['plusfactor'] = 'Compensación';
 $string['plusfactor_help'] = 'A compensación é un número que sumarase a cada cualificación deste elemento de cualificación, despois de ter aplicado o multiplicador.';
@@ -644,25 +644,25 @@ $string['privacy:metadata:grade_import_values:importonlyfeedback'] = 'Sinaliza s
 $string['privacy:metadata:grade_import_values:userid'] = 'Usuario cuxa cualificación foi importada';
 $string['privacy:metadata:grades'] = 'Un rexistro de cualificacións';
 $string['privacy:metadata:grades:aggregationstatus'] = 'O estado de agregación';
-$string['privacy:metadata:grades:aggregationweight'] = 'O peso na agregació';
+$string['privacy:metadata:grades:aggregationweight'] = 'O peso na agregación';
 $string['privacy:metadata:grades:feedback'] = 'O comentario';
 $string['privacy:metadata:grades:finalgrade'] = 'A cualificación';
-$string['privacy:metadata:gradeshistory'] = 'Un rexistro das cualificacións anteriores';
-$string['privacy:metadata:grades:information'] = 'Algunha información adicional';
+$string['privacy:metadata:grades:information'] = 'Información adicional sobre a cualificación.';
 $string['privacy:metadata:grades:timemodified'] = 'O momento no que a cualificación foi modificada por última vez';
 $string['privacy:metadata:grades:userid'] = 'O ID do usuario de quen é esta cualificación';
 $string['privacy:metadata:grades:usermodified'] = 'O ID do usuario que modificou o rexistro por última vez.';
+$string['privacy:metadata:gradeshistory'] = 'Un rexistro das cualificacións anteriores';
 $string['privacy:metadata:history:loggeduser'] = 'A identificación do usuario que había accedido cando se produciu o versionado';
 $string['privacy:metadata:history:timemodified'] = 'Momento no que se produciu o versionado';
 $string['privacy:metadata:itemshistory'] = 'Un rexistro de versións anteriores dos elementos de cualificación';
 $string['privacy:metadata:outcomes'] = 'Un rexistro de resultados';
-$string['privacy:metadata:outcomeshistory'] = 'Un rexistro de versións anteriores de resultados';
 $string['privacy:metadata:outcomes:timemodified'] = 'O momento no que o rexistro foi modificado';
 $string['privacy:metadata:outcomes:usermodified'] = 'O usuario que modificou o rexistro por última vez';
+$string['privacy:metadata:outcomeshistory'] = 'Un rexistro de versións anteriores de resultados';
 $string['privacy:metadata:scale'] = 'Un rexistro de escalas';
-$string['privacy:metadata:scalehistory'] = 'Un rexistro de versións anteriores das escalas';
 $string['privacy:metadata:scale:timemodified'] = 'O momento no que o rexistro foi modificado por última vez';
 $string['privacy:metadata:scale:userid'] = 'O usuario que modificou o rexistro por última vez';
+$string['privacy:metadata:scalehistory'] = 'Un rexistro de versións anteriores das escalas';
 $string['privacy:path:relatedtome'] = 'Relacionado comigo';
 $string['privacy:request:historyactiondelete'] = 'Eliminar';
 $string['privacy:request:historyactioninsert'] = 'Inserir';
@@ -675,7 +675,6 @@ $string['publishingoptions'] = 'Opcións de publicación da cualificación';
 $string['quickfeedback'] = 'Comentario rápido';
 $string['quickgrading'] = 'Cualificación rápida';
 $string['quickgrading_help'] = 'Se se activa, cando se activa a edición, aparece unha caixa de entrada de texto para cada cualificación, o que permite editar moitas cualificacións ao mesmo tempo. Os cambios gárdanse resáltanse cando se preme no botón de actualización.
-
 
 Teña en conta que cando se edita unha cualificación no informe do cualificador, establécese unha bandeira anulada, o que significa que a cualificación xa non se pode cambiar desde a actividade relacionada.';
 $string['range'] = 'Intervalo';
@@ -702,7 +701,7 @@ $string['removeallcourseitems_help'] = 'Se a marca, todas as categorías e eleme
 $string['report'] = 'Informe';
 $string['reportdefault'] = 'Informe predeterminado ({$a})';
 $string['reportplugins'] = 'Engadidos de informe';
-$string['reportsettings'] = 'Configuración de informe';
+$string['reportsettings'] = 'Axustes de informe';
 $string['reprintheaders'] = 'Volver imprimir as cabeceiras';
 $string['resetweights'] = 'Reiniciar a ponderación de {$a->itemname}';
 $string['resetweightsshort'] = 'Reiniciar a ponderación';
@@ -720,7 +719,7 @@ $string['selectauser'] = 'Escolla un usuario';
 $string['selectdestination'] = 'Escoller o destino de {$a}';
 $string['separator'] = 'Separador';
 $string['separator_help'] = 'Seleccione o separador que empregar no ficheiro CSV. (Normalmente empregase a coma)';
-$string['sepcolon'] = 'Coma';
+$string['sepcolon'] = 'Dous puntos';
 $string['sepcomma'] = 'Coma';
 $string['sepsemicolon'] = 'Punto e coma';
 $string['septab'] = 'Tabulador';
@@ -745,9 +744,9 @@ $string['showaverages_help'] = 'Se está activado, o informe do cualificador con
 $string['showcalculations'] = 'Amosar os cálculos';
 $string['showcalculations_help'] = 'Se está activado, cando se activa a edición, aparecerá unha icona para cada elemento de cualificación e categoría, con consellos sobre os elementos calculados e un indicador visual de que se está a calcular unha columna.';
 $string['showcontributiontocoursetotal'] = 'Amosar a achega ao total do curso';
-$string['showcontributiontocoursetotal_help'] = 'Determina se amosar ou non unha columna que indica canto achega cada elemento de cualificación cara a porcentaxe  total do curso do usuario (após aplicar a ponderación).';
+$string['showcontributiontocoursetotal_help'] = 'Determina se amosar ou non unha columna que indica canto achega cada elemento de cualificación cara a porcentaxe total do curso do usuario (após aplicar a ponderación).';
 $string['showeyecons'] = 'Amosar as iconas «Amosar/Agochar»';
-$string['showeyecons_help'] = 'Se está activado, cando se activa a edición, aparecerá unha icona Amosar/Agochar a carón de cada cualificación  para que o alumno controle a súa visibilidade.';
+$string['showeyecons_help'] = 'Se está activado, cando se activa a edición, aparecerá unha icona Amosar/Agochar a carón de cada cualificación para que o alumno controle a súa visibilidade.';
 $string['showfeedback'] = 'Amosar comentario';
 $string['showfeedback_help'] = 'Amosar a columna de comentarios?';
 $string['showgrade'] = 'Amosar as cualificacións';
@@ -766,7 +765,7 @@ $string['showinggradesonly'] = 'Amosando só as cualificacións';
 $string['showlettergrade'] = 'Amosar as cualificacións con letra';
 $string['showlettergrade_help'] = 'Amosar a columna de cualificacións con letra?';
 $string['showlocks'] = 'Amosar os bloqueos';
-$string['showlocks_help'] = 'Se está activado, cando se activa a edición está, aparece unha icona de Bloqueo/Desbloqueo a carón de cada cualificación para controlar se a cualificación pode ser ser actualizada automaticamente pola actividade relacionada.';
+$string['showlocks_help'] = 'Se está activado, cando se activa a edición está, aparece unha icona de Bloqueo/Desbloqueo a carón de cada cualificación para controlar se a cualificación pode ser actualizada automaticamente pola actividade relacionada.';
 $string['shownohidden'] = 'Non amosar';
 $string['shownooutcomes'] = 'Agochar os resultados';
 $string['shownumberofgrades'] = 'Amosar o número de cualificacións nas medias';
@@ -816,8 +815,8 @@ $string['topcategory'] = 'Supercategoría';
 $string['total'] = 'Total';
 $string['totalweight100'] = 'A ponderación total é igual a 100';
 $string['totalweightnot100'] = 'A ponderación total non é igual a 100';
-$string['turnfeedbackoff'] = 'Desactivar os comentarios';
-$string['turnfeedbackon'] = 'Activar os comentarios';
+$string['turnfeedbackoff'] = 'Activar os comentarios';
+$string['turnfeedbackon'] = 'Desactivar os comentarios';
 $string['typenone'] = 'Ningún';
 $string['typescale'] = 'Escala';
 $string['typescale_help'] = 'Este axuste determina a escala empregada cando se usa «Escala» como «Tipo de cualificación». A escala para unha cualificación baseada na actividade estabelecese na páxina de configuración da actividade.';
@@ -848,7 +847,7 @@ $string['userfields_show_help'] = 'Amosar os campos adicionais do usuario, como 
 $string['usergrade'] = 'Usuario {$a->fullname} ({$a->useridnumber}) no elemento {$a->gradeidnumber}';
 $string['userid'] = 'ID do usuario';
 $string['useridnumberwarning'] = 'Os usuarios sen un número ID son excluídos da exportación, por mor de non poder seren importados.';
-$string['usermappingerror'] = 'Produciuse un erro de asignación do usuario: Non foi posíbel atopar o usuario con {$a->field} de «{$a->value}»';
+$string['usermappingerror'] = 'Produciuse un erro de trazado do usuario: Non foi posíbel atopar o usuario con {$a->field} de «{$a->value}»';
 $string['usermappingerrorcurrentgroup'] = 'O usuario non é membro do grupo actual.';
 $string['usermappingerrormultipleusersfound'] = 'Produciuse un erro de trazado do usuario: Non foi posíbel atopar o usuario con {$a->field} de «{$a->value}»';
 $string['usermappingerrorusernotfound'] = 'Produciuse un erro de asignación do usuario. Non foi posíbel atopar o usuario.';
@@ -859,12 +858,12 @@ $string['verbosescales_help'] = 'Una escala detallada usa palabras en lugar de n
 $string['viewbygroup'] = 'Grupo';
 $string['viewgrades'] = 'Ver as cualificacións';
 $string['weight'] = 'ponderación';
-$string['weightcourse'] = 'Empregar cualificacións ponderadas para o curso';
-$string['weightedascending'] = 'Ordenación ascendente por porcentaxe de ponderación';
-$string['weighteddescending'] = 'Ordenación descendente por porcentaxe de ponderación';
-$string['weightedpct'] = '% ponderada';
-$string['weightedpctcontribution'] = '% colaboración ponderada';
 $string['weight_help'] = 'Un valor usado para determinar o valor relativo de múltiples elementos de cualificación dentro dunha categoría ou curso.';
+$string['weightcourse'] = 'Empregar cualificacións ponderadas para o curso';
+$string['weightedascending'] = 'Ordenación porcentual ascendente de ponderación';
+$string['weighteddescending'] = 'Ordenación porcentual descendente de ponderación';
+$string['weightedpct'] = '% ponderada';
+$string['weightedpctcontribution'] = '% achega ponderada';
 $string['weightofa'] = 'Ponderación de {$a}';
 $string['weightorextracredit'] = 'Ponderación ou punto adicional';
 $string['weightoverride'] = 'axuste da ponderación';
@@ -872,8 +871,8 @@ $string['weightoverride_help'] = 'Desmarque isto para reiniciar unha cualificaci
 $string['weights'] = 'Ponderacións';
 $string['weightsadjusted'] = 'A súa ponderación foi axustada para totalizar 100';
 $string['weightsedit'] = 'Editar as ponderacións e os puntos adicionais';
-$string['weightuc'] = 'Peso';
-$string['writinggradebookinfo'] = 'Escribindo a configuración do libro de cualificacións';
+$string['weightuc'] = 'Ponderación calculada';
+$string['writinggradebookinfo'] = 'Escribindo os axustes do libro de cualificacións';
 $string['xml'] = 'XML';
 $string['yes'] = 'Si';
 $string['yourgrade'] = 'A súa cualificación';

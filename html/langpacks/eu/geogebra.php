@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'geogebra', language 'eu', version '3.8'.
  *
- * @package   geogebra
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     geogebra
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -54,26 +54,27 @@ $string['extractedfromggb'] = 'ggb-tik ateratako fitxategiak';
 $string['filename'] = 'Fitxategiaren izena';
 $string['filenotfound'] = 'Zehaztutako fitxategia ez da existitzen';
 $string['filetype'] = 'Mota';
-$string['filetypeexternal'] = 'Kanpoko URLa';
 $string['filetype_help'] = 'Ezarpen honek zehazten du nola gehituko den GeoGebra jarduera ikastaroan. Bi aukera ditugu:
 
 * Kargatutako GeoGebra - ".ggb" pakete baliagarria aukeratzeko modua ematen du fitxategi-hautatzailearen bidez.
 * kanpoko URLa - GeoGebra jarduera baten URLa gehitzeko modua ematen du. Oharra: URLak http(s) edo www hasiera izan behar du eta ".ggb" fitxategi baliagarria eduki behar du.';
+$string['filetypeexternal'] = 'Kanpoko URLa';
 $string['filetypelocal'] = 'Igotako fitxategia';
 $string['firstattempt'] = 'Lehen saiakera';
 $string['for'] = 'norentzat';
 $string['functionalityoptionsgrp'] = 'Funtzionalitatea';
 $string['geogebra:addinstance'] = 'Gehitu GeoGebra';
-$string['geogebrafile'] = 'GeoGebra fitxategia';
-$string['geogebrafile_help'] = '.ggb fitxategia';
 $string['geogebra:grade'] = 'Kalifikatu GeoGebra';
 $string['geogebra:submit'] = 'Bidali GeoGebra';
+$string['geogebra:view'] = 'Ikusi GeoGebra';
+$string['geogebrafile'] = 'GeoGebra fitxategia';
+$string['geogebrafile_help'] = '.ggb fitxategia';
 $string['geogebraurl'] = 'URLa';
 $string['geogebraurl_help'] = 'Ezarpen honek GeoGebra jarduera zehazteko URL bat gaitzen du, fitxategia-hautatzailearen ordez.';
-$string['geogebra:view'] = 'Ikusi GeoGebra';
 $string['grade'] = 'Kalifikatu';
 $string['gradeit'] = 'Kalifikatu';
 $string['grademethod'] = 'Kalifikazio-metodoa';
+$string['header_geogebra'] = 'GeoGebra-ren ezarpenak';
 $string['height'] = 'Altuera';
 $string['highestattempt'] = 'Saiakera altuena';
 $string['httpnotallowed'] = 'Une honetan ez dago baimenduta kanpoko fitxategiak erabiltzea';
@@ -122,9 +123,9 @@ $string['settings'] = 'Ezarpenak';
 $string['showAlgebraInput'] = 'Erakusti sarrera-barra';
 $string['showMenuBar'] = 'Erakutsi menu-barra';
 $string['showResetIcon'] = 'Erakutsi eraikuntza berrabiarazteko ikonoa';
-$string['showsubmit'] = 'Erakutsi bidaltzeko botoia';
 $string['showToolBar'] = 'Erakutsi tresna-barra';
 $string['showToolBarHelp'] = 'Erakutsi tresna-barraren laguntza';
+$string['showsubmit'] = 'Erakutsi bidaltzeko botoia';
 $string['status'] = 'Egoera';
 $string['submitandfinish'] = 'Bidali eta amaitu';
 $string['timing'] = 'Denbora-tartea';
@@ -142,5 +143,5 @@ $string['viewattempt'] = 'Ikusi';
 $string['viewattempts'] = 'Ikusi saiakerak';
 $string['viewattempttab'] = 'Ikusi saiakera';
 $string['viewtab'] = 'Ikusi';
-$string['weight'] = 'Zabalera';
+$string['weight'] = 'Pisua';
 $string['width'] = 'Zabalera';

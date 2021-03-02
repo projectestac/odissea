@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multichoice', language 'nl', version '3.8'.
  *
- * @package   qtype_multichoice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multichoice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,11 +29,11 @@ $string['answerhowmany'] = 'Een of meer antwoorden?';
 $string['answerhowmany_desc'] = 'Moet de standaard één antwoord zijn (keuzerondjes) of meerdere antwoorden (selectievakjes)?';
 $string['answernumbering'] = 'Keuzes nummeren?';
 $string['answernumbering123'] = '1., 2., 3., ...';
-$string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
-$string['answernumbering_desc'] = 'De standaard nummersingsstijl.';
-$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
+$string['answernumbering_desc'] = 'De standaard nummersingsstijl.';
+$string['answernumberingabc'] = 'a., b., c., ...';
+$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingnone'] = 'Geen nummering';
 $string['answersingleno'] = 'Meerdere antwoorden toegelaten';
 $string['answersingleyes'] = 'Slechts één antwoord';
@@ -62,9 +62,9 @@ $string['partiallycorrectfeedback'] = 'Voor elk gedeeltelijk juist antwoord';
 $string['pleaseselectananswer'] = 'Kies een antwoord';
 $string['pleaseselectatleastoneanswer'] = 'Kies minstens één antwoord';
 $string['pluginname'] = 'Meerkeuze';
+$string['pluginname_help'] = 'Als antwoord op een vraag (waarin een afbeelding kan staan), kiest de respondent uit meerdere antwoorden. Een meerkeuzevraag kan één of meerdere juiste antwoorden hebben.';
 $string['pluginnameadding'] = 'Een meerkeuzevraag toevoegen';
 $string['pluginnameediting'] = 'Meerkeuzevraag bewerken';
-$string['pluginname_help'] = 'Als antwoord op een vraag (waarin een afbeelding kan staan), kiest de respondent uit meerdere antwoorden. Een meerkeuzevraag kan één of meerdere juiste antwoorden hebben.';
 $string['pluginnamesummary'] = 'Laat de keuze van één of meerdere antwoorden toe uit een vooraf opgestelde lijst.';
 $string['privacy:metadata'] = 'De meerkeuzevraagtype-plugin bewaart geen persoonlijke gegevens.';
 $string['selectmulti'] = 'Kies één of meer van de volgende antwoorden:';

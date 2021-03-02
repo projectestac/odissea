@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,57 +12,58 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'ar', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alldoneredirecting'] = 'تم تصحيح جميع المحاولات المُحدَّدة. عودة إلى قائمة الأسئلة.';
-$string['alreadygraded'] = 'مقيَّم سلفاً';
-$string['alsoshowautomaticallygraded'] = 'أيضاً أظهر الأسئلة التي تم تقييمها تلقائياً';
-$string['attemptstograde'] = 'المحاولات التي تحتاج للتصحيح';
+$string['alldoneredirecting'] = 'تم تقييم كل المحاولات المحددة. العودة إلى قائمة الأسئلة.';
+$string['alreadygraded'] = 'تم تقييمه';
+$string['alsoshowautomaticallygraded'] = 'أيضاً أظهر الأسئلة التي تقيّم تلقائياً';
+$string['attemptstograde'] = 'محاولات للتقييم';
 $string['automaticallygraded'] = 'مقيّم آلياً';
-$string['backtothelistofquestions'] = 'عودة إلى قائمة الأسئلة';
-$string['bydate'] = 'حسب التاريخ';
-$string['bystudentfirstname'] = 'حسب الاسم الأول للطالب';
-$string['bystudentidnumber'] = 'حسب مُعرَّف الطالب';
-$string['bystudentlastname'] = 'حسب اسم الطالب الأخير';
-$string['cannotgradethisattempt'] = 'لا يمكن تصحيح هذه المحاولة';
+$string['backtothelistofquestions'] = 'العودة إلى قائمة الأسئلة.';
+$string['bydate'] = 'بالتاريخ';
+$string['bystudentfirstname'] = 'بالاسم الأول للطالب';
+$string['bystudentidnumber'] = 'برقم الطالب';
+$string['bystudentlastname'] = 'بالاسم الأخير للطالب';
+$string['cannotgradethisattempt'] = 'لا يمكن تقييم هذه المحاولة.';
 $string['cannotloadquestioninfo'] = 'غير قادر على تحميل نوع السؤال من معلومات الأسئلة';
-$string['changeoptions'] = 'تغيير الخيارات';
-$string['essayonly'] = 'التصحيح اليدوي حتى الآن ممكن فقط للأسئلة المقاليه';
-$string['grade'] = 'العلامة';
-$string['gradeall'] = 'تصحيح الجميع';
-$string['gradeattemptsall'] = 'الجميع ({$a})';
-$string['gradeattemptsautograded'] = 'تلك التي تم تقييمها تلقائياً ({$a})';
+$string['changeoptions'] = 'غيّر الخيارات';
+$string['essayonly'] = 'الأسئلة التالية سيتم تقييمها يدوياً';
+$string['grade'] = 'قيّم';
+$string['gradeall'] = 'قيّم الكل';
+$string['gradeattemptsall'] = 'كل ({$a})';
+$string['gradeattemptsautograded'] = 'تلك التي تم تقييمها آلياً ({$a})';
 $string['gradeattemptsmanuallygraded'] = 'تلك التي تم تقييمها يدوياً ({$a})';
 $string['gradeattemptsneedsgrading'] = 'تلك التي تحتاج إلى تقييم ({$a})';
-$string['graded'] = '(مقيَّم)';
-$string['gradenextungraded'] = 'تقييم {$a} من المحاولات غير المقيمة الأخرى';
+$string['graded'] = '(مقيم)';
+$string['gradenextungraded'] = 'قيم التالي {$a} من المحاولات التي لم تقيّم';
 $string['gradeungraded'] = 'قيم كل {$a} من المحاولات التي لم تقيم';
-$string['grading'] = 'منح العلامات يدوياً';
+$string['grading'] = 'تقييم يدوي';
+$string['grading:componentname'] = 'تقرير التقييم اليدوي';
+$string['grading:viewidnumber'] = 'انظر رقم الطالب أثناء التقييم';
+$string['grading:viewstudentnames'] = 'شاهد أسماء الطلاب أثناء التقييم';
 $string['gradingall'] = 'كل {$a} محاولاته في هذا السؤال.';
 $string['gradingattempt'] = 'رقم المحاولة {$a->attempt} لــ {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'محاولات التقييم {$a->from}  لــ {$a->to}  من {$a->of}';
 $string['gradingattemptwithidnumber'] = 'عدد المحاولات {$a->attempt}  لـ {$a->fullname} ({$a->idnumber})';
-$string['grading:componentname'] = 'تقرير التقييم اليدوي';
 $string['gradingnextungraded'] = 'بعد {$a}  محاولات لم تقيم';
-$string['gradingnotallowed'] = 'ليست لديك صلاحية منح العلامات يدوياً في هذا الاختبار';
+$string['gradingnotallowed'] = 'لم يكن لديك إذن في التقييم يدويًا في هذا الاختبار';
 $string['gradingquestionx'] = 'تقييم السؤال  {$a->number}: {$a->questionname}';
 $string['gradingreport'] = 'تقرير التقييم اليدوي';
 $string['gradingungraded'] = '{$a}  محاولات لم تقيم';
 $string['gradinguser'] = 'محاولات لـ  {$a}';
-$string['grading:viewidnumber'] = 'مشاهدة مُعرَّف الطالب في أثناء التقييم';
-$string['grading:viewstudentnames'] = 'مشاهدة أسماء الطلاب أثناء التقييم';
-$string['hideautomaticallygraded'] = 'إخفاء الأسئلة التي تم تقييمها تلقائياً';
-$string['inprogress'] = 'قيد التنفيذ';
+$string['hideautomaticallygraded'] = 'أخف الأسئلة التي تم تقييمها آلياً';
+$string['inprogress'] = 'في تقدم';
 $string['invalidattemptid'] = 'لا توجد محاولات للرقم';
 $string['invalidquestionid'] = 'سؤال التقييم برقم {$a} غير موجود';
 $string['noquestionsfound'] = 'لا يوجد سؤال يقيّم يدوياً';
@@ -72,13 +72,13 @@ $string['options'] = 'الخيارات';
 $string['orderattempts'] = 'ترتيب المحاولات';
 $string['pluginname'] = 'التقييم اليدوي';
 $string['privacy:metadata'] = 'لا يخزن مكون  Quiz Manual grading  أي بيانات شخصية. يوفر واجهة للمستخدمين لتخزين البيانات دون تخزين أي بيانات في حد ذاتها.';
-$string['qno'] = 'س #';
+$string['qno'] = 'السؤال #';
 $string['questionname'] = 'اسم السؤال';
 $string['questionsperpage'] = 'أسئلة لكل صفحة';
 $string['questionsthatneedgrading'] = 'أسئلة تحتاج إلى تقييم';
 $string['questiontitle'] = 'سؤال {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} attempts {$a->openspan}graded{$a->closespan}).';
 $string['randomly'] = 'عشوائياً';
-$string['saveandnext'] = 'احفظ و انتقل للصفحة التالية';
+$string['saveandnext'] = 'احفظ وانتقل للصفحة التالية';
 $string['showstudentnames'] = 'أظهر اسم الطالب';
 $string['tograde'] = 'للتقييم';
 $string['total'] = 'الكل';

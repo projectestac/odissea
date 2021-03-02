@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'url', language 'zh_cn', version '3.8'.
  *
- * @package   url
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     url
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,6 @@ $string['contentheader'] = '内容';
 $string['createurl'] = '创建一个 URL';
 $string['displayoptions'] = '可用的显示选项';
 $string['displayselect'] = '显示';
-$string['displayselectexplain'] = '选择显示类型，但并不是所有类型都适合所有URL。';
 $string['displayselect_help'] = '此设置，URL文件的类型，及浏览器是否允许嵌入，一起决定如何显示文件。选项可能包括：
 
 * 自动 - 对类型可以自动选择的文件，这是最好的选项
@@ -46,16 +45,17 @@ $string['displayselect_help'] = '此设置，URL文件的类型，及浏览器�
 * 在框架中 - 在导航栏和文件描述下方的框架里显示文件
 * 新窗口 - 在有菜单和地址栏的新窗口中显示文件
 ';
+$string['displayselectexplain'] = '选择显示类型，但并不是所有类型都适合所有URL。';
 $string['externalurl'] = '外部URL';
 $string['framesize'] = '框架高度';
 $string['indicator:cognitivedepth'] = '网页地址资源认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 网页地址资源中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '网页地址资源认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与者已达到网页地址资源所提供的认知参与百分比(级别=未查看，查看)';
-$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 网页地址资源中所达到的认知深度。';
 $string['indicator:socialbreadth'] = '网页地址资源社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在网页地址资源中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '网页地址资源社会广度';
 $string['indicator:socialbreadthdef_help'] = '在这个分析间隔内，参与者已经达到了网页地址资源所提供的社会参与百分比(级别=没有参与，单独参与)';
-$string['indicator:socialbreadth_help'] = '这个指标是基于学生在网页地址资源中所达到的社会广度。';
 $string['invalidstoredurl'] = '不能显示此资源，URL 无效。';
 $string['invalidurl'] = '输入的 URL 无效';
 $string['modulename'] = '网页地址';

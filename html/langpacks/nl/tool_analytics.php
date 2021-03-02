@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'nl', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,15 +70,15 @@ $string['evaluate'] = 'Evalueren';
 $string['evaluatemodel'] = 'Model evalueren';
 $string['evaluationinbatches'] = 'De site-inhoud wordt berekend en bewaard in stukjes. Het evaluatieproces kan op elk moment gestopt worden. De volgende keer dat het gestart wordt, gaat het verder van het punt waar het gestopt was.';
 $string['evaluationmode'] = 'Evaluatiemodus';
-$string['evaluationmodecolconfiguration'] = 'Configuratie';
-$string['evaluationmodecoltrainedmodel'] = 'Getraind model';
-$string['evaluationmodeconfiguration'] = 'Evalueer de modelconfiguratie';
 $string['evaluationmode_help'] = 'Er zijn twee evaluatiemodi:
 
 * Getraind model - Locatiegegevens worden gebruikt als testgegevens om de nauwkeurigheid van het getrainde model te evalueren.
 * Configuratie - Sitegegevens worden opgesplitst in training- en testgegevens om zowel de nauwkeurigheid van de modelconfiguratie te trainen en te testen.
 
 Getraind model is alleen beschikbaar als een getraind model is geïmporteerd in de site en nog niet is getraind met behulp van sitegegevens.';
+$string['evaluationmodecolconfiguration'] = 'Configuratie';
+$string['evaluationmodecoltrainedmodel'] = 'Getraind model';
+$string['evaluationmodeconfiguration'] = 'Evalueer de modelconfiguratie';
 $string['evaluationmodeinfo'] = 'Dit model is geïmporteerd in de site. U kunt de prestaties van het model evalueren, of u kunt de prestaties van de modelconfiguratie evalueren met behulp van sitegegevens.';
 $string['evaluationmodetrainedmodel'] = 'Evalueer het getrainde model';
 $string['executescheduledanalysis'] = 'Voer geplande analyse uit';

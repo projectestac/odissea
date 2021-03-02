@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'admin', language 'zh_cn', version '3.8'.
  *
- * @package   admin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     admin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,11 +30,11 @@ $string['accounts'] = '帐号';
 $string['addcategory'] = '添加一个分类';
 $string['additionalhtml'] = '附加的HTML';
 $string['additionalhtml_desc'] = '您可以通过这些设置为每页指定HTML代码。可将HTML代码加入HEAD标签间，紧接在BODY开始标签之后或紧接在标签关闭之前。<br /> 这样您就可以自定义每个页面标题和页脚，或是轻松地把支持服务加入例如Google Analytics页不用考虑采用了什么主题风格。';
+$string['additionalhtml_heading'] = '向所有页面插入的HTML代码。';
 $string['additionalhtmlfooter'] = '在</body>之前添加';
 $string['additionalhtmlfooter_desc'] = '这些内容将被插入每个页面的</body>标签之前，也就是网页的最底部。';
 $string['additionalhtmlhead'] = '在HEAD内';
 $string['additionalhtmlhead_desc'] = '这些内容将做为HEAD标签的最后一条而被插入到每个页面。';
-$string['additionalhtml_heading'] = '向所有页面插入的HTML代码。';
 $string['additionalhtmltopofbody'] = '在<body>标签后面添加';
 $string['additionalhtmltopofbody_desc'] = '这些内容将被插入每个页面的<body>标签的后面，也就是网页内容的顶部';
 $string['admincategory'] = '类别：{$a}';
@@ -86,9 +86,9 @@ $string['autologinguests'] = '自动登录为访客';
 $string['availablelicenses'] = '可选的许可证';
 $string['availableto'] = '可用到';
 $string['backgroundcolour'] = '透明色';
-$string['backups'] = '备份';
 $string['backup_shortname'] = '在备份文件名中使用课程名';
 $string['backup_shortnamehelp'] = '备份文件名中包含课程名。';
+$string['backups'] = '备份';
 $string['badwordsconfig'] = '输入以逗号(英文半角)分割的禁用词语列表。';
 $string['badwordsdefault'] = '如果自定义列表为空，则使用语言包提供的缺省列表。';
 $string['badwordslist'] = '自定义禁用词语列表';
@@ -119,11 +119,11 @@ $string['cachesettings'] = '缓存设置';
 $string['cachetemplates'] = '缓存模板';
 $string['cachetemplates_help'] = '模板缓存将提高页面加载性能，强烈建议用于生产站点。开发人员可能希望禁用此功能。';
 $string['caching'] = '缓存';
+$string['calendar_weekend'] = '周末';
 $string['calendarexportsalt'] = '日历导出随机种子';
 $string['calendarsettings'] = '日历';
 $string['calendartype'] = '日历样式';
 $string['calendartype_desc'] = '为全站选择一个预设的日历样式。此设定可以被课程设定覆盖，也可以被用户在个人资料中的设定覆盖。';
-$string['calendar_weekend'] = '周末';
 $string['cannotdeletemodfilter'] = '您不能卸载“{$a->filter}”，因为它是“$a->module}”模块的一部分。';
 $string['cannotuninstall'] = '不能卸载{$a}。';
 $string['categoryemail'] = '电子邮件';
@@ -419,6 +419,7 @@ $string['contextlocking_desc'] = '此设置为指定的类别，课程，活动�
 $string['cookiehttponly'] = '只使用 http cookies';
 $string['cookiesecure'] = '只使用安全的 cookies';
 $string['country'] = '默认的国家/地区';
+$string['course_customfield'] = '课程自定义字段';
 $string['coursecolor'] = '颜色{$a}';
 $string['coursecolorheading_desc'] = '在“课程设置”中未设置课程图像的任何课程都将显示在仪表板上，并带有带图案的课程卡。图案中使用的颜色可在下面指定。';
 $string['coursecolorsettings'] = '课程卡颜色';
@@ -426,7 +427,6 @@ $string['coursecontact'] = '课程联系人';
 $string['coursecontact_desc'] = '此设置允许您控制谁会出现在课程描述中。用户必须至少是这些角色中的一个，才能被显示在该课程的课程描述中。';
 $string['coursecontactduplicates'] = '显示所有课程联系人角色';
 $string['coursecontactduplicates_desc'] = '如启用，具有多个所选课程联系人角色的用户将在课程描述中显示其每个角色。否则，它们将仅显示一个角色（在站点管理中的“定义角色”中列出最高者）。';
-$string['course_customfield'] = '课程自定义字段';
 $string['coursegraceperiodafter'] = '已完成课程的宽限期';
 $string['coursegraceperiodbefore'] = '将进行课程的宽限期';
 $string['courselistshortnames'] = '显示扩展课程名称';
@@ -443,10 +443,10 @@ $string['courseswithsummarieslimit'] = '带有大纲限制的课程';
 $string['creatornewroleid'] = '在新课程中课程创建者的角色';
 $string['creatornewroleid_help'] = '如果用户还没有获得管理这个新课程的权限，那么该用户就自动使用此角色选课。';
 $string['cron'] = '定时任务';
+$string['cron_help'] = 'cron.php维护脚本帮助某些Moodle模块执行定时或周期任务，例如用email发出讨论区新帖子。此脚本必须被定时调用，例如每分钟执行一次。';
 $string['cronclionly'] = 'Cron仅通过命令行执行';
 $string['cronerrorclionly'] = 'Sorry，访问这页的权限已经被管理员禁用！';
 $string['cronerrorpassword'] = 'Sorry，要访问该页，您必须输入一个密码！';
-$string['cron_help'] = 'cron.php维护脚本帮助某些Moodle模块执行定时或周期任务，例如用email发出讨论区新帖子。此脚本必须被定时调用，例如每分钟执行一次。';
 $string['croninfrequent'] = '最后两次后台维护脚本运行于{$a}秒前。推荐将其配置为更频繁地运行。';
 $string['cronremotepassword'] = '访问远程Cron的密码';
 $string['cronwarning'] = '已经有至少24个小时没运行<a href="{$a}">cron.php维护脚本</a>了。';
@@ -745,9 +745,9 @@ $string['loginpageautofocus'] = '登录页面焦点自动移到表单';
 $string['loginpageautofocus_help'] = '启用此选项可以让登录页面更方便，但自动移动焦点可能会给无障碍访问带来问题。';
 $string['loglifetime'] = '保留多久的日志';
 $string['logo'] = '图标';
+$string['logo_desc'] = '在某些主题样式中要用来装饰的完整商标。这图像必须是高解析度的，因为它会被按比例缩小(并被缓存已提高效率)，商标的宽度大于高度，效果会更好。图像格式必须是 PNG 或 JPG。';
 $string['logocompact'] = '小图标';
 $string['logocompact_desc'] = '上述商标的紧凑版本。图像虽小但必须要清晰，图像格式必须是： PNG 或 JPG。';
-$string['logo_desc'] = '在某些主题样式中要用来装饰的完整商标。这图像必须是高解析度的，因为它会被按比例缩小(并被缓存已提高效率)，商标的宽度大于高度，效果会更好。图像格式必须是 PNG 或 JPG。';
 $string['logossettings'] = '图标';
 $string['logstorenotrequired'] = '不要求日志存储';
 $string['logstoressupported'] = '日志存储支持这份报告';
@@ -933,8 +933,8 @@ $string['pluginschecktodo'] = '您必须先解决所有插件的需求，然后�
 $string['pluginsoverview'] = '插件概况';
 $string['pluginsoverviewsee'] = '点击 <a href="{$a->url}">插件预览</a>了解更多详细信息';
 $string['policysettings'] = '政策设置';
-$string['privacyandpolicies'] = '隐私和政策';
 $string['privacy:metadata'] = '管理插件不储存任何私人数据。';
+$string['privacyandpolicies'] = '隐私和政策';
 $string['privacysettings'] = '隐私设置';
 $string['profilecategory'] = '类别';
 $string['profilecategoryname'] = '类别名（必填）';
@@ -984,10 +984,10 @@ $string['profileshortnamenotunique'] = '简称已经使用';
 $string['profilesignup'] = '在注册页显示？';
 $string['profilespecificsettings'] = '细节设置';
 $string['profilevisible'] = '该字段对谁可见';
-$string['profilevisibleall'] = '对任何人可见';
 $string['profilevisible_help'] = '* 不可见 - 只有管理员能查看的私人数据
 * 用户可见 - 只有管理员和用户能查看的私人数据
 * 所有人可见';
+$string['profilevisibleall'] = '对任何人可见';
 $string['profilevisiblenone'] = '不可见';
 $string['profilevisibleprivate'] = '对注册用户可见';
 $string['profiling'] = '剖析';
@@ -1150,13 +1150,13 @@ $string['sitemaintenancewarning2'] = '您的网站目前处于维护模式（仅
 $string['sitemenubar'] = '网站导航';
 $string['sitepolicies'] = '网站安全设置';
 $string['sitepolicy'] = '网站协议URL';
+$string['sitepolicy_help'] = '如果您有一份网站使用协议，并且要求所有用户在使用此网站前阅读并同意，那么请在此指定它的URL，否则请留空。URL可以指向任何公开的地址。';
 $string['sitepolicyguest'] = '给访客的网站策略链接';
 $string['sitepolicyguest_help'] = '如果您有一份网站使用协议，并且需要所有访客在使用此网站前阅读并同意，那么请在此指定它的URL，否则请留空。URL可以指向任何公开的地址。注意：如果设置了强制登录，那么未登录用户的访问会被拒绝。';
 $string['sitepolicyhandler'] = '网站政策处理器';
-$string['sitepolicyhandlercore'] = '默认（核心）';
 $string['sitepolicyhandler_desc'] = '这决定了如何管理策略和用户协议。默认（核心）处理程序可启用网站策略URL及针对访客的网站策略URL。策略处理程序可以设置站点，隐私和其他策略。它还可以查看用户协议，并在必要时代表未成年人协议。';
+$string['sitepolicyhandlercore'] = '默认（核心）';
 $string['sitepolicyhandlerplugin'] = '{$a->name} ({$a->component})';
-$string['sitepolicy_help'] = '如果您有一份网站使用协议，并且要求所有用户在使用此网站前阅读并同意，那么请在此指定它的URL，否则请留空。URL可以指向任何公开的地址。';
 $string['sitesectionhelp'] = '如果选择了，那么网站首页会显示一个主题小节。';
 $string['sixtyfourbitswarning'] = '已检测到您的站点未使用64位PHP版本。建议您升级站点以确保未来的兼容性。';
 $string['slasharguments'] = '使用斜线参数';
@@ -1207,6 +1207,28 @@ $string['task_adhoc_concurrency_limit'] = '临时任务并发限制';
 $string['task_adhoc_concurrency_limit_desc'] = '允许并发运行的临时任务运行程序数。如果限制很高，那么当有很多临时任务时，计划任务可能不会定期运行。设置为0将完全禁用临时任务的处理。';
 $string['task_adhoc_max_runtime'] = '临时任务运行器生存期';
 $string['task_adhoc_max_runtime_desc'] = '临时任务运行器在被释放之前的时间。建议使用较短的持续时间，因为排队的临时任务数没有限制。如果此数字太高，并且您有一个较大的临时任务队列，则计划的任务可能不会定期运行。';
+$string['task_dbstats'] = '数据库';
+$string['task_duration'] = '持续时间';
+$string['task_logmode_all'] = '记录所有作业日志';
+$string['task_logmode_desc'] = '你可以选择何时进行任务日志记录。默认情况下，始终捕获日志。你可以完全禁用日志记录，或更改为仅记录失败的任务。';
+$string['task_logmode_failonly'] = '仅记录失败作业日志';
+$string['task_logmode_none'] = '不记录任何日志';
+$string['task_logretainruns'] = '保留运行';
+$string['task_logretainruns_desc'] = '要保留的每个任务的运行次数。此设置与“保留期”设置交互：以先达到者为准。';
+$string['task_logretention'] = '保留期';
+$string['task_logretention_desc'] = '应该保留日志的最大周期。此设置与“保留运行”设置交互：以先达到的为准';
+$string['task_logtostdout'] = '显示日志输出';
+$string['task_logtostdout_desc'] = '当作业正在运行并且捕获输出时，捕获的输出是否也应显示为任务运行。';
+$string['task_result'] = '结果';
+$string['task_result:failed'] = '失败';
+$string['task_scheduled_concurrency_limit'] = '计划任务并发限制';
+$string['task_scheduled_concurrency_limit_desc'] = '允许同时运行的计划任务运行程序数。如果限制很高，则服务器可能会遇到影响性能的高负载。设置为0将完全禁用对计划任务的处理。';
+$string['task_scheduled_max_runtime'] = '计划任务运行器生存期';
+$string['task_scheduled_max_runtime_desc'] = '计划任务运行器在释放之前的时间。';
+$string['task_starttime'] = '开始时间';
+$string['task_stats:dbreads'] = '{$a}读取';
+$string['task_stats:dbwrites'] = '{$a}写入';
+$string['task_type:scheduled'] = '日程';
 $string['taskadmintitle'] = '任务';
 $string['taskanalyticscleanup'] = '分析清理';
 $string['taskautomatedbackup'] = '自动备份';
@@ -1222,11 +1244,9 @@ $string['taskcompletiondaily'] = '完成标示为已开始';
 $string['taskcompletionregular'] = '计算正常完成的数据';
 $string['taskcontextcleanup'] = '清理上下文';
 $string['taskcreatecontexts'] = '创建丢失的文本';
-$string['task_dbstats'] = '数据库';
 $string['taskdeletecachetext'] = '删除旧文本cache记录';
 $string['taskdeleteincompleteusers'] = '删除不完整用户';
 $string['taskdeleteunconfirmedusers'] = '删除末确认用户';
-$string['task_duration'] = '持续时间';
 $string['taskeventscron'] = '对事件的背景处理';
 $string['taskfiletrashcleanup'] = '清除垃圾箱中的文件';
 $string['taskglobalsearchindex'] = '全局搜索索引';
@@ -1236,17 +1256,7 @@ $string['taskgradehistorycleanup'] = '后台处理等级历史表清理';
 $string['tasklegacycron'] = '对插件进行传统的计划任务处理';
 $string['tasklogcleanup'] = '清理任务日志';
 $string['tasklogging'] = '任务日志配置';
-$string['task_logmode_all'] = '记录所有作业日志';
-$string['task_logmode_desc'] = '你可以选择何时进行任务日志记录。默认情况下，始终捕获日志。你可以完全禁用日志记录，或更改为仅记录失败的任务。';
-$string['task_logmode_failonly'] = '仅记录失败作业日志';
-$string['task_logmode_none'] = '不记录任何日志';
-$string['task_logretainruns'] = '保留运行';
-$string['task_logretainruns_desc'] = '要保留的每个任务的运行次数。此设置与“保留期”设置交互：以先达到者为准。';
-$string['task_logretention'] = '保留期';
-$string['task_logretention_desc'] = '应该保留日志的最大周期。此设置与“保留运行”设置交互：以先达到的为准';
 $string['tasklogs'] = '任务日志';
-$string['task_logtostdout'] = '显示日志输出';
-$string['task_logtostdout_desc'] = '当作业正在运行并且捕获输出时，捕获的输出是否也应显示为任务运行。';
 $string['taskmessagingcleanup'] = '消息的背景处理';
 $string['taskpasswordresetcleanup'] = '清零密码重置尝试记录';
 $string['taskplagiarismcron'] = '抄袭插件的后台处理';
@@ -1256,22 +1266,12 @@ $string['taskquestioncron'] = '后台处理问题模块';
 $string['taskquestionstatscleanupcron'] = '后台处理问题统计缓存清理';
 $string['taskrefreshsystemtokens'] = '为服务帐号刷新 OAuth 凭证';
 $string['taskregistrationcron'] = '网站注册';
-$string['task_result'] = '结果';
-$string['task_result:failed'] = '失败';
-$string['task_scheduled_concurrency_limit'] = '计划任务并发限制';
-$string['task_scheduled_concurrency_limit_desc'] = '允许同时运行的计划任务运行程序数。如果限制很高，则服务器可能会遇到影响性能的高负载。设置为0将完全禁用对计划任务的处理。';
-$string['task_scheduled_max_runtime'] = '计划任务运行器生存期';
-$string['task_scheduled_max_runtime_desc'] = '计划任务运行器在释放之前的时间。';
 $string['tasksendfailedloginnotifications'] = '发送登陆失败通知';
 $string['tasksendnewuserpasswords'] = '发送新的用户密码';
 $string['tasksessioncleanup'] = '清除旧的会话';
-$string['task_starttime'] = '开始时间';
 $string['taskstatscron'] = '后台统计进程';
-$string['task_stats:dbreads'] = '{$a}读取';
-$string['task_stats:dbwrites'] = '{$a}写入';
 $string['tasktagcron'] = '后台分类进程';
 $string['tasktempfilecleanup'] = '删除临时文件';
-$string['task_type:scheduled'] = '日程';
 $string['tempdatafoldercleanup'] = '清除临时数据文件早于';
 $string['templates'] = '模板';
 $string['testoutgoingmailconf'] = '测试邮件发送的配置';
@@ -1328,16 +1328,16 @@ $string['updateaccounts'] = '更新已有帐户';
 $string['updateautocheck'] = '自动检查可用更新';
 $string['updateautocheck_desc'] = '如果启用，你的网站会自动检查 Moodle 代码和所有附加插件的可用更新。如果有新的更新可用，会发送给网站管理员一个通知。';
 $string['updateavailable'] = '有一个新版本的 Moodle 可用！';
+$string['updateavailable_moreinfo'] = '更多信息...';
+$string['updateavailable_release'] = 'Moodle {$a}';
+$string['updateavailable_version'] = '版本 {$a}';
 $string['updateavailabledetailslink'] = '去 {$a->url} 查看更多细节';
 $string['updateavailableforplugin'] = '您的一些插件有新版本可用！';
 $string['updateavailableinstall'] = '安装这一更新';
 $string['updateavailableinstallall'] = '安装用的更新({$a})';
 $string['updateavailableinstallallhead'] = '安装可用的更新';
-$string['updateavailable_moreinfo'] = '更多信息...';
 $string['updateavailablenot'] = '您的 Moodle 代码是最新的！';
 $string['updateavailablerecommendation'] = '强烈建议更新你的站点到最新版本，更新最近的安全和漏洞补丁。';
-$string['updateavailable_release'] = 'Moodle {$a}';
-$string['updateavailable_version'] = '版本 {$a}';
 $string['updatecomponent'] = '更新组件';
 $string['updateminmaturity'] = '代码成熟度需求';
 $string['updateminmaturity_desc'] = '只有当可用代码至少达到选定的成熟度时，才通知有可用更新。不论此设置如何，没有声明代码成熟度的插件总会被报告更新。';

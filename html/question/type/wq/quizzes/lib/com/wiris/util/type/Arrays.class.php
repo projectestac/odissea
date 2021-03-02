@@ -65,6 +65,18 @@ class com_wiris_util_type_Arrays {
 		}
 		return $result;
 	}
+	static function arrayIntToSystemArray($array) {
+		$vector = new _hx_array(array());
+		{
+			$_g1 = 0; $_g = $array->length;
+			while($_g1 < $_g) {
+				$i = $_g1++;
+				$vector[$i] = $array[$i];
+				unset($i);
+			}
+		}
+		return $vector;
+	}
 	static function contains($array, $element) {
 		return com_wiris_util_type_Arrays::indexOfElement($array, $element) >= 0;
 	}

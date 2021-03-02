@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshop', language 'pt', version '3.8'.
  *
- * @package   workshop
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshop
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -82,11 +82,11 @@ $string['calculatesubmissiongrades'] = 'Calcular notas dos trabalhos';
 $string['calculatesubmissiongradesdetails'] = 'esperados: {$a->expected}<br />calculados: {$a->calculated}';
 $string['chooseuser'] = 'Escolher utilizador…';
 $string['clearaggregatedgrades'] = 'Apagar todas as notas calculadas';
-$string['clearaggregatedgradesconfirm'] = 'Tem a certeza que pretende apagar notas calculadas para os trabalhos e avaliações?';
 $string['clearaggregatedgrades_help'] = 'As notas calculadas para os trabalhos e avaliações serão apagadas. Pode recalcular estas notas novamente na fase de avaliação.';
+$string['clearaggregatedgradesconfirm'] = 'Tem a certeza que pretende apagar notas calculadas para os trabalhos e avaliações?';
 $string['clearassessments'] = 'Limpar avaliações';
-$string['clearassessmentsconfirm'] = 'Tem a certeza de que pretende apagar todas notas das avaliações? Não consegurá reverter esta ação por si próprio pois os avaliadores terão de reavaliar os trabalhos alocados.';
 $string['clearassessments_help'] = 'As notas calculadas para os trabalhos e avaliações serão apagadas. As informações introduzidas nas grelhas de avaliação serão guardadas, mas todos os avaliadores devem abrir a grelha de avaliação e submeter a mesma novamente para que as notas sejam calculadas de novo.';
+$string['clearassessmentsconfirm'] = 'Tem a certeza de que pretende apagar todas notas das avaliações? Não consegurá reverter esta ação por si próprio pois os avaliadores terão de reavaliar os trabalhos alocados.';
 $string['conclusion'] = 'Conclusão';
 $string['conclusion_help'] = 'Conclusão é um texto apresentado aos participantes no final da atividade.';
 $string['configexamplesmode'] = 'Modelo predefinido de avaliação';
@@ -159,43 +159,43 @@ $string['formatpeergradeover'] = '<span class="grade">{$a->grade}</span> <span c
 $string['formatpeergradeoverweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span> @ <span class="weight">{$a->weight}</span>';
 $string['formatpeergradeweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span> @ <span class="weight">{$a->weight}</span>';
 $string['givengrades'] = 'Notas atribuídas';
+$string['grade_grading_name'] = 'Avaliação';
+$string['grade_submission_name'] = 'Submissão';
 $string['gradecalculated'] = 'Nota do trabalho';
 $string['gradedecimals'] = 'Casas decimais nas notas';
 $string['gradegivento'] = '&gt;';
-$string['grade_grading_name'] = 'Avaliação';
 $string['gradeinfo'] = 'Nota: {$a->received} em {$a->max}';
 $string['gradeitemassessment'] = '{$a->workshopname} (avaliação)';
 $string['gradeitemsubmission'] = '{$a->workshopname} (trabalho)';
 $string['gradeover'] = 'Substituir nota do trabalho';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'Relatório de notas do workshop';
-$string['grade_submission_name'] = 'Submissão';
 $string['gradetopassgrading'] = 'Nota de aprovação da avaliação';
 $string['gradetopasssubmission'] = 'Nota de aprovação da submissão';
 $string['gradinggrade'] = 'Nota máxima da avaliação';
-$string['gradinggradecalculated'] = 'Nota da avaliação';
 $string['gradinggrade_help'] = 'Esta configuração específica a nota máxima que se pode obter na avaliação dos trabalhos dos pares.';
+$string['gradinggradecalculated'] = 'Nota da avaliação';
 $string['gradinggradeof'] = 'Nota da avaliação (em {$a})';
 $string['gradinggradeover'] = 'Substituir nota da avaliação';
 $string['gradingsettings'] = 'Configurações de avaliação';
 $string['groupnoallowed'] = 'Não tem permissões para aceder a nenhum grupo neste workshop';
 $string['iamsure'] = 'Sim, tenho a certeza';
 $string['indicator:cognitivedepth'] = 'Compreensão do Workshop';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na profundidade cognitiva alcançada pelo aluno numa atividade de Workshop.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Workshop';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Workshop durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido, Visualizado feedback, Comentários ao feedback, Voltar a submeter após visualizar feedback)';
-$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na profundidade cognitiva alcançada pelo aluno numa atividade de Workshop.';
 $string['indicator:socialbreadth'] = 'Socialização do Workshop';
+$string['indicator:socialbreadth_help'] = 'Este indicador baseia-se na amplitude social alcançada pelo aluno numa atividade de Workshop.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Workshop';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Workshop durante esse intervalo de análise (Níveis = Sem participação, Participante individual, Participante com outros)';
-$string['indicator:socialbreadth_help'] = 'Este indicador baseia-se na amplitude social alcançada pelo aluno numa atividade de Workshop.';
 $string['info'] = 'Informação';
 $string['instructauthors'] = 'Instruções para envio do trabalho';
 $string['instructreviewers'] = 'Instruções para a avaliação';
 $string['introduction'] = 'Descrição';
 $string['latesubmissions'] = 'Submissões após data limite';
-$string['latesubmissionsallowed'] = 'O envio de trabalhos após data limite é permitido';
 $string['latesubmissions_desc'] = 'Permitir a submissão de trabalhos após a data limite especificada';
 $string['latesubmissions_help'] = 'Se ativar esta opção, o aluno pode enviar os seus trabalhos após a data limite ou durante a fase de avaliação. As submissões tardias de trabalhos não podem ser editadas.';
+$string['latesubmissionsallowed'] = 'O envio de trabalhos após data limite é permitido';
 $string['legacyallocationplugincron'] = 'Cron de retrocompatibildade da alocação do workshop';
 $string['maxbytes'] = 'Tamanho máximo do anexo da submissão';
 $string['modulename'] = 'Workshop';
@@ -311,13 +311,13 @@ $string['someuserswosubmission'] = 'Há pelo menos um aluno que ainda não subme
 $string['sortasc'] = 'Ordem ascendente';
 $string['sortdesc'] = 'Ordem descendente';
 $string['strategy'] = 'Tipo de grelha de avaliação';
-$string['strategyhaschanged'] = 'Desde que iniciou a edição, o tipo de grelha de avaliação foi alterado.';
 $string['strategy_help'] = 'O tipo de grelha de avaliação determina a configuração do formulário usado pelo professor e aluno para avaliar os trabalhos. Existem quatro opções:
 
 * Nota quantitativa - O avaliador atribui uma nota quantitativa a cada critério de avaliação definido, sendo possível juntar um comentário com justificação.
 * Escolha múltipla - O avaliador seleciona a opção que melhor traduz a sua avaliação para cada critério de avaliação definido.
 * Número de erros - O avaliador seleciona uma entre duas opções (Sim/Não, em geral) e junta um comentário relativos a um conjunto de proposições que o trabalho deve respeitar.
 * Comentários - O avaliador comenta qualitativamente cada aspeto a avaliar previsto, sem que tal se traduza numa nota.';
+$string['strategyhaschanged'] = 'Desde que iniciou a edição, o tipo de grelha de avaliação foi alterado.';
 $string['submission'] = 'Trabalho';
 $string['submissionattachment'] = 'Anexo';
 $string['submissionby'] = 'Submetido por {$a}';
@@ -395,10 +395,10 @@ $string['usepeerassessment_help'] = 'Se ativar esta opção, são atribuídos a 
 $string['userdatecreated'] = 'Enviado em <span>{$a}</span>';
 $string['userdatemodified'] = 'Modificado em <span>{$a}</span>';
 $string['userplan'] = 'Planificação do workshop';
+$string['userplan_help'] = 'A planificação do workshop mostra todas as fases da atividade e a lista de tarefas para cada fase. A fase atual é assinalada e a conclusão de cada tarefa é indicada com um visto.';
 $string['userplanaccessibilityskip'] = 'Saltar para tarefas atuais';
 $string['userplanaccessibilitytitle'] = 'Cronograma de workshop com {$a} fases';
 $string['userplancurrentphase'] = 'Fase atual';
-$string['userplan_help'] = 'A planificação do workshop mostra todas as fases da atividade e a lista de tarefas para cada fase. A fase atual é assinalada e a conclusão de cada tarefa é indicada com um visto.';
 $string['useselfassessment'] = 'Permitir autoavaliação';
 $string['useselfassessment_desc'] = 'Os alunos podem avaliar o seu próprio trabalho';
 $string['useselfassessment_help'] = 'Se ativar esta opção, pode ser atribuída a um aluno a avaliação do seu próprio trabalho e receberá uma nota pela sua avaliação para além da nota do seu trabalho.';
@@ -412,7 +412,6 @@ $string['workshop:editdimensions'] = 'Editar grelhas de avaliação';
 $string['workshop:exportsubmissions'] = 'Exportar submissões';
 $string['workshop:ignoredeadlines'] = 'Ignorar restrições de prazo';
 $string['workshop:manageexamples'] = 'Gerir trabalhos exemplo';
-$string['workshopname'] = 'Designação';
 $string['workshop:overridegrades'] = 'Substituir nota calculada';
 $string['workshop:peerassess'] = 'Avaliação entre pares';
 $string['workshop:publishsubmissions'] = 'Publicar trabalhos';
@@ -425,6 +424,7 @@ $string['workshop:viewauthornames'] = 'Ver nomes dos autores';
 $string['workshop:viewauthorpublished'] = 'Ver autores dos trabalhos submetidos';
 $string['workshop:viewpublishedsubmissions'] = 'Ver trabalhos publicados';
 $string['workshop:viewreviewernames'] = 'Ver nomes dos avaliadores';
+$string['workshopname'] = 'Designação';
 $string['yourassessmentfor'] = 'Avaliação para {$a}';
 $string['yourgrades'] = 'As suas notas';
 $string['yoursubmission'] = 'O seu trabalho';

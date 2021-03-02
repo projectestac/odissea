@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essay', language 'sv', version '3.8'.
  *
- * @package   qtype_essay
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essay
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,16 +28,33 @@ defined('MOODLE_INTERNAL') || die();
 $string['acceptedfiletypes'] = 'Accepterade filtyper';
 $string['acceptedfiletypes_help'] = 'Du kan begränsa vilja filtyper som kan lämnas in genom att skriva in respektive filtillägg (t.ex. ".doc"). Om detta fält lämnas tomt kommer alla filtyper att accepteras.';
 $string['allowattachments'] = 'Tillåt bilagor';
-$string['formateditor'] = 'HTML editor';
-$string['formateditorfilepicker'] = 'HTML editor med filväljare';
-$string['formatmonospaced'] = 'Oformaterad text, enkel font';
+$string['attachmentsoptional'] = 'Bilagor är valfria';
+$string['attachmentsrequired'] = 'Bilagor obligatoriska';
+$string['attachmentsrequired_help'] = 'Det här alternativet anger det minsta antalet bifogade filer som krävs för att ett svar ska anses vara bedömningsbart.';
+$string['formateditor'] = 'HTML';
+$string['formateditorfilepicker'] = 'HTML med filväljare';
+$string['formatmonospaced'] = 'Oformaterad text, fast teckenavstånd';
+$string['formatnoinline'] = 'Ingen onlinetext';
 $string['formatplain'] = 'Oformaterad text';
-$string['graderinfo'] = 'Information för rättare';
-$string['nlines'] = '{$a} linjer';
+$string['graderinfo'] = 'Information för bedömare';
+$string['graderinfoheader'] = 'Bedömarinformation';
+$string['mustattach'] = 'När "Ingen onlinetext" är markerad, eller när svar är valfria, måste du tillåta minst en bifogad fil.';
+$string['mustrequire'] = 'När "Ingen onlinetext" är markerad, eller när svar är valfria, måste du kräva minst en bifogad fil.';
+$string['mustrequirefewer'] = 'Du kan inte kräva fler bilagor än vad du tillåter.';
+$string['nlines'] = '{$a} rader';
+$string['nonexistentfiletypes'] = 'Följande filtyper kändes inte igen: {$a}';
 $string['pluginname'] = 'Uppsats';
+$string['pluginname_help'] = 'Som svar på en fråga kan den som svarar ladda upp en eller flera filer och/eller skriva in text online. En svarsmall kan tillhandahållas. Svaren måste bedömas manuellt.';
 $string['pluginnameadding'] = 'Lägg till en uppsatsfråga';
 $string['pluginnameediting'] = 'Redigera en uppsatsfråga';
-$string['pluginname_help'] = 'Som svar på en fråga (som kan innehålla en bild) skriver respondenten ett svar på ett stycke eller två. Svaret kommer inte att tilldelas ett betyg förrän den har granskats av en lärare och betygsatts manuellt.';
-$string['pluginnamesummary'] = 'Tillåter ett svar på några meningar eller stycken. Detta måste sedan klassificeras manuellt.';
+$string['pluginnamesummary'] = 'Tillåter ett svar i form av en filuppladdning och/eller onlinetext. Detta måste sedan betygsättas manuellt.';
+$string['privacy:metadata'] = 'Pluginmodulen Uppsatsfrågetyp lagrar ingen personlig information.';
 $string['responsefieldlines'] = 'Inmatningsrutans storlek';
 $string['responseformat'] = 'Svarsformat';
+$string['responseisrequired'] = 'Kräv att studenten anger text';
+$string['responsenotrequired'] = 'Svar är valfritt!';
+$string['responseoptions'] = 'Svarsalternativ';
+$string['responserequired'] = 'Text obligatorisk';
+$string['responsetemplate'] = 'Svarsmall';
+$string['responsetemplate_help'] = 'All text som anges här kommer att visas i rutan för svarsinmatning när ett nytt försök på frågan startar.';
+$string['responsetemplateheader'] = 'Svarsmall';

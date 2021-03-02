@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'analytics', language 'es', version '3.8'.
  *
- * @package   analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,12 +29,15 @@ $string['analysablenotused'] = 'Analizable {$a->analysableid} no usado: {$a->err
 $string['analysablenotvalidfortarget'] = 'Analizable {$a->analysableid} no es válido para este destino: {$a->result}';
 $string['analysisinprogress'] = 'Todavía está siendo analizado por una ejecución previa';
 $string['analytics'] = 'Analítica';
+$string['analyticsdisabled'] = 'Analítica está deshabilitada. Puede habilitarla en "Administración del sitio  > Características avanzadas".';
 $string['analyticslogstore'] = 'Almacén de bitácora usado para analítica';
 $string['analyticslogstore_help'] = 'El almacén de bitácora que será usado para la API de analítica para leer la actividad de los usuarios';
 $string['analyticssettings'] = 'Configuraciones de Analítica';
 $string['analyticssiteinfo'] = 'Información del sitio';
 $string['defaultpredictionsprocessor'] = 'Procesador de predicciones por defecto';
 $string['defaultpredictoroption'] = 'Procesador por defecto ({$a})';
+$string['defaulttimesplittingmethods'] = 'Métodos por defecto para división del tiempo para evaluación del modelo';
+$string['defaulttimesplittingmethods_help'] = 'El método de división del tiempo divide la duración del curso en partes; el motor de predicción se ejecutará al final de estas partes. El proceso de evaluación del modelo iterará por estos métodos de división del tiempo a menos que sea especificado un método específico para división del tiempo. (La habilidad para especificar un método para división del tiempo solamente está disponible cuando se evalúan modelos usando el script por línea de comando).';
 $string['disabledmodel'] = 'Modelo deshabilitado';
 $string['erroralreadypredict'] = 'El archivo {$a} ya ha sido usado para generar predicciones.';
 $string['errorcannotreaddataset'] = 'El archivo de datos {$a} no puede leerse';
@@ -48,6 +51,7 @@ $string['errorinvalidindicator'] = 'Indicador {$a} inválido';
 $string['errorinvalidtarget'] = 'Objetivo {$a} inválido';
 $string['errorinvalidtimesplitting'] = 'División del tiempo inválida; por favor asegúrese de que añadió el nombre de clase completamente calificado.';
 $string['errornoexportconfig'] = 'Hubo un  problema al exportar la configuración del modelo.';
+$string['errornoexportconfigrequirements'] = 'Solamente pueden ser exportados modelos no estáticos con métodos para división del tiempo.';
 $string['errornoindicators'] = 'Este modelo no tiene ningun indicador.';
 $string['errornopredictresults'] = 'No se obtuvieron resultados del procesador de predicciones. Revise los contenidos del directorio de salida para más información.';
 $string['errornoroles'] = 'No se han definido roles de estudiante o profesor. Defínalos en la página de configuraciones de analítica.';
@@ -103,7 +107,7 @@ $string['notrainingbasedassumptions'] = 'Los modelos basados en suposiciones no 
 $string['notuseful'] = 'No útil';
 $string['novaliddata'] = 'Sin datos válidos disponibles';
 $string['novalidsamples'] = 'Sin muestras válidas disponibles';
-$string['onlycli'] = 'Ejecución de los procesos de Analítica solamente vía línea de comando';
+$string['onlycli'] = 'Ejecución de los procesos analíticos solamente vía línea de comando';
 $string['onlycliinfo'] = 'Los procesos de Analítica, al igual que los modelos evaluativos, los algoritmos para entrenar aprendizaje de máquinas, o la obtención de predicciones, pueden tomar algun tiempo. Se ejecutarán como tareas del cron y pueden ser forzados mediante la línea de comandos. Deshabilite esta configuración si quiere que los administradores del sitio puedan ejecutar estos procesos manualmente mediante la interfaz web';
 $string['percentonline'] = 'Porcentaje en línea';
 $string['percentonline_help'] = 'Si su institución ofrece cursos mezclados o híbridos, ¿qué porcentaje del trabajo del estudiante es realizado en línea en Moodle? Introduzca un número entre 0 y 100.';
@@ -146,3 +150,4 @@ $string['viewdetails'] = 'Ver detalles';
 $string['viewinsight'] = 'Ver predicción';
 $string['viewinsightdetails'] = 'Ver detalles de predicción';
 $string['viewprediction'] = 'Ver detalles de predicción';
+$string['washelpful'] = '¿Te ha resultado útil esto?';

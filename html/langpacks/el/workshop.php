@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshop', language 'el', version '3.8'.
  *
- * @package   workshop
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshop
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -84,11 +84,11 @@ $string['calculatesubmissiongrades'] = 'Υπολογίστε τους βαθμο
 $string['calculatesubmissiongradesdetails'] = 'αναμενόμενο: {$a->expected}<br />υπολογιζόμενο: {$a->calculated}';
 $string['chooseuser'] = 'Επιλέξτε χρήστη...';
 $string['clearaggregatedgrades'] = 'Διαγράψτε όλους τους συναθροισμένους βαθμούς';
-$string['clearaggregatedgradesconfirm'] = 'Σίγουρα θέλετε να εκκαθαρίσετε τους υπολογισμένους βαθμούς για υποβολές και βαθμούς για αξιολόγηση;';
 $string['clearaggregatedgrades_help'] = 'Οι συναθροισμένοι βαθμοί υποβολής και οι βαθμοί αξιολόγησης θα επαναρχικοποιηθούν. Μπορείτε να υπολογίσετε εκ νέου αυτούς τους βαθμούς από την αρχή στη φάση αξιολόγησης της βαθμολόγησης ξανά.';
+$string['clearaggregatedgradesconfirm'] = 'Σίγουρα θέλετε να εκκαθαρίσετε τους υπολογισμένους βαθμούς για υποβολές και βαθμούς για αξιολόγηση;';
 $string['clearassessments'] = 'Καθαρισμός αξιολογήσεων';
-$string['clearassessmentsconfirm'] = 'Σίγουρα θέλετε να διαγράψετε όλους τους βαθμούς αξιολόγησης; Δεν θα έχετε τη δυνατότητα να επαναφέρετε τις πληροφορίες μόνοι σας. Οι εξεταστές θα πρέπει να επαναξιολογήσουν τις υποβολές που τους εκχωρήθηκαν.';
 $string['clearassessments_help'] = 'Οι υπολογισθείσες βαθμίδες υποβολής και βαθμοί αξιολόγησης θα επαναρυθμιστούν. Οι πληροφορίες σχετικά με τον τρόπο με τον οποίο πληρούνται τα έντυπα αξιολόγησης εξακολουθούν να τηρούνται, αλλά όλοι οι αναθεωρητές πρέπει να ανοίξουν ξανά τη φόρμα αξιολόγησης και να την αποθηκεύσουν ξανά για να ξαναφθάνουν τα αποτελέσματα.';
+$string['clearassessmentsconfirm'] = 'Σίγουρα θέλετε να διαγράψετε όλους τους βαθμούς αξιολόγησης; Δεν θα έχετε τη δυνατότητα να επαναφέρετε τις πληροφορίες μόνοι σας. Οι εξεταστές θα πρέπει να επαναξιολογήσουν τις υποβολές που τους εκχωρήθηκαν.';
 $string['conclusion'] = 'Κατάληξη';
 $string['conclusion_help'] = 'Το κείμενο κατάληξης εμφανίζεται στους συμμετέχοντες στο τέλος της δραστηριότητας.';
 $string['configexamplesmode'] = 'Προεπιλεγμένος τρόπος αξιολόγησης παραδειγμάτων στα εργαστήρια';
@@ -143,7 +143,7 @@ $string['exampleedit'] = 'Επεξεργασία παραδείγματος';
 $string['exampleediting'] = 'Επεξεργασία παραδείγματος...';
 $string['exampleneedassessed'] = 'Πρέπει πρώτα να αξιολογήσετε όλα τα παραδείγματα υποβολών';
 $string['exampleneedsubmission'] = 'Πρέπει πρώτα να υποβάλετε την εργασία σας και να αξιολογήσετε όλα τα παραδείγματα υποβολών';
-$string['examplesbeforeassessment'] = 'Τα παραδείγματα είναι διαθέσιμα μετά την δική μας υποβολή και πρέπει να αξιολογηθούν πριν την αξιολόγηση (ομότιμων) των υπολοίπων (εργασιών συμμαθητών)';
+$string['examplesbeforeassessment'] = 'Τα παραδείγματα είναι διαθέσιμα μετά την δική μας υποβολή και πρέπει να αξιολογηθούν πριν την αξιολόγηση (ομοτίμων) των υπολοίπων (εργασιών συμμαθητών)';
 $string['examplesbeforesubmission'] = 'Τα παραδείγματα πρέπει να αξιολογούνται πριν την δική μας υποβολή';
 $string['examplesmode'] = 'Τρόπος αξιολόγησης παραδειγμάτων';
 $string['examplesubmissions'] = 'Παραδείγματα υποβολών';
@@ -161,45 +161,45 @@ $string['formatpeergradeover'] = '<span class="grade">{$a->grade}</span> <span c
 $string['formatpeergradeoverweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span> @ <span class="weight">{$a->weight}</span>';
 $string['formatpeergradeweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span> @ <span class="weight">{$a->weight}</span>';
 $string['givengrades'] = 'Βαθμοί που δόθηκαν';
+$string['grade_grading_name'] = 'Αξιολόγηση';
+$string['grade_submission_name'] = 'Υποβολή';
 $string['gradecalculated'] = 'Υπολογισμός βαθμού για υποβολή';
 $string['gradedecimals'] = 'Θέσεις δεκαδικών στους βαθμούς';
 $string['gradegivento'] = '&gt;';
-$string['grade_grading_name'] = 'Αξιολόγηση';
 $string['gradeinfo'] = 'Βαθμός: {$a->received} από {$a->max}';
 $string['gradeitemassessment'] = '{$a->workshopname} (αξιολόγηση)';
 $string['gradeitemsubmission'] = '{$a->workshopname} (υποβολή)';
 $string['gradeover'] = 'Παράκαμψη βαθμού για υποβολή';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'Αναφορά βαθμών εργαστηρίου';
-$string['grade_submission_name'] = 'Υποβολή';
 $string['gradetopassgrading'] = 'Βαθμός επιτυχίας αξιολόγησης';
 $string['gradetopasssubmission'] = 'Βαθμός επιτυχίας υποβολής (περνάει)';
 $string['gradinggrade'] = 'Βαθμός για την αξιολόγηση';
-$string['gradinggradecalculated'] = 'Υπολογισμένος βαθμός για την αξιολόγηση';
 $string['gradinggrade_help'] = 'Αυτή η ρύθμιση καθορίζει τον μέγιστο βαθμό που μπορεί να ληφθεί για την αξιολόγηση υποβολής.';
+$string['gradinggradecalculated'] = 'Υπολογισμένος βαθμός για την αξιολόγηση';
 $string['gradinggradeof'] = 'Βαθμός για την αξιολόγηση (από {$a})';
 $string['gradinggradeover'] = 'Παράκαμψη βαθμού για εκτίμηση';
 $string['gradingsettings'] = 'Ρυθμίσεις βαθμολόγησης';
 $string['groupnoallowed'] = 'Δεν (σας) επιτρέπεται η πρόσβαση σε οποιαδήποτε ομάδα σε αυτό το εργαστήριο';
 $string['iamsure'] = 'Ναι, είμαι βέβαιος';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης Εργαστηρίου';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Εργαστηρίου.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης Εργαστηρίου';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες Εργαστηρίου κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση, Υποβολή, Εμφάνιση ανατροφοδότησης, Σχόλιο στην ανατροφοδότηση, Επανυποβολή μετά την εμφάνιση της ανατροφοδότησης)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Εργαστηρίου.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Εργαστηρίου';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Εργαστηρίου.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Εργαστηρίου';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Εργαστηρίου κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος, Συμμετέχων με άλλους)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Εργαστηρίου.';
 $string['info'] = 'Πληροφορίες';
 $string['instructauthors'] = 'Οδηγίες για την υποβολή';
 $string['instructreviewers'] = 'Οδηγίες για την αξιολόγηση';
 $string['introduction'] = 'Περιγραφή';
 $string['latesubmissions'] = 'Καθυστερημένες υποβολές';
-$string['latesubmissionsallowed'] = 'Επιτρέπονται καθυστερημένες υποβολές';
 $string['latesubmissions_desc'] = 'Επιτρέπονται υποβολές μετά την καταληκτική ημερομηνία';
 $string['latesubmissions_help'] = 'Εάν ενεργοποιηθεί, ένας συγγραφέας μπορεί να υποβάλει την δουλειά του μετά την προθεσμία υποβολών ή κατά τη διάρκεια της φάσης αξιολόγησης. Στις καθυστερημένες υποβολές όμως δεν μπορούν να γίνουν αλλαγές.';
+$string['latesubmissionsallowed'] = 'Επιτρέπονται καθυστερημένες υποβολές';
 $string['legacyallocationplugincron'] = 'Εκχώρηση εργαστηρίου παλαιότερου τύπου cron';
 $string['maxbytes'] = 'Μέγιστο μέγεθος συνημμένου υποβολής';
 $string['modulename'] = 'Εργαστήριο';
@@ -309,13 +309,13 @@ $string['someuserswosubmission'] = 'Υπάρχει ένας τουλάχιστο
 $string['sortasc'] = 'Αύξουσα ταξινόμηση';
 $string['sortdesc'] = 'Φθίνουσα ταξινόμηση';
 $string['strategy'] = 'Στρατηγική βαθμολόγησης';
-$string['strategyhaschanged'] = 'Η στρατηγική βαθμολόγησης των εργαστηρίων έχει αλλάξει μετά το άνοιγμα της φόρμας για επεξεργασία.';
 $string['strategy_help'] = 'Η στρατηγική βαθμολόγησης καθορίζει την μορφή αξιολόγησης που χρησιμοποιείται και τη μέθοδο βαθμολόγησης των υποβολών. Υπάρχουν 4 επιλογές:
 
 * Αθροιστική βαθμολόγηση - Δίνονται σχόλια και ένας βαθμός όσον αφορά καθορισμένες πτυχές.
 * Σχόλια - Δίνονται σχόλια σύμφωνα με τις καθορισμένες πτυχές αλλά δεν μπορεί να δοθεί βαθμός.
 * Αριθμός λαθών - Δίνονται σχόλια και μια αξιολόγηση τύπου ναι/όχι σύμφωνα με τους καθορισμένους ισχυρισμούς.
 * Ρουμπρίκα - Δίνεται μια αξιολόγηση επιπέδου, σύμφωνα με καθορισμένα κριτήρια (Κλίμακα Διαβαθμισμένων Κριτηρίων, rubric).';
+$string['strategyhaschanged'] = 'Η στρατηγική βαθμολόγησης των εργαστηρίων έχει αλλάξει μετά το άνοιγμα της φόρμας για επεξεργασία.';
 $string['submission'] = 'Υποβολή';
 $string['submissionattachment'] = 'Συνημμένο';
 $string['submissionby'] = 'Υποβολή από {$a}';
@@ -393,10 +393,10 @@ $string['usepeerassessment_help'] = 'Εάν ενεργοποιηθεί, σε έ�
 $string['userdatecreated'] = 'υποβλήθηκε σε <span>{$a}</span>';
 $string['userdatemodified'] = 'τροποποιήθηκε <span>{$a}</span>';
 $string['userplan'] = 'Σχεδιασμός εργαστηρίου';
+$string['userplan_help'] = 'Το χρονοδιάγραμμα εργαστηρίου παρουσιάζει όλες τις φάσεις της δραστηριότητας και λίστες με τις εργασίες για κάθε φάση. Η τρέχουσα φάση φωτο-επισημαίνεται και η ολοκλήρωση της εργασίας υποδηλώνεται με ένα τικ (&checkmark;, &check;).';
 $string['userplanaccessibilityskip'] = 'Μετάβαση στις τρέχουσες εργασίες';
 $string['userplanaccessibilitytitle'] = 'Χρονοδιάγραμμα εργαστηρίου με {$a} φάσεις';
 $string['userplancurrentphase'] = 'Τρέχουσα φάση';
-$string['userplan_help'] = 'Το χρονοδιάγραμμα εργαστηρίου παρουσιάζει όλες τις φάσεις της δραστηριότητας και λίστες με τις εργασίες για κάθε φάση. Η τρέχουσα φάση φωτο-επισημαίνεται και η ολοκλήρωση της εργασίας υποδηλώνεται με ένα τικ (&checkmark;, &check;).';
 $string['useselfassessment'] = 'Χρήση αυτο-αξιολόγησης';
 $string['useselfassessment_desc'] = 'Οι μαθητές μπορούν να αξιολογούν την δική τους δουλειά';
 $string['useselfassessment_help'] = 'Εάν ενεργοποιηθεί, σε ένα χρήστη μπορεί να εκχωρηθεί η δική του υποβολή για να την αξιολογήσει και θα λάβει ένα βαθμό για την αξιολόγηση, επιπλέον του βαθμού για την υποβολή του.';
@@ -410,7 +410,6 @@ $string['workshop:editdimensions'] = 'Επεξεργασία φορμών αξι
 $string['workshop:exportsubmissions'] = 'Εξαγωγή υποβολών';
 $string['workshop:ignoredeadlines'] = 'Αγνόησε τους περιορισμούς χρόνου';
 $string['workshop:manageexamples'] = 'Διαχείριση παραδειγμάτων υποβολών';
-$string['workshopname'] = 'Όνομα εργαστηρίου';
 $string['workshop:overridegrades'] = 'Παράκαμψη των υπολογισμένων βαθμολογιών';
 $string['workshop:peerassess'] = 'Συνεργατική αξιολόγηση';
 $string['workshop:publishsubmissions'] = 'Δημοσίευση υποβολών';
@@ -423,6 +422,7 @@ $string['workshop:viewauthornames'] = 'Εμφάνιση ονομάτων συγ�
 $string['workshop:viewauthorpublished'] = 'Εμφάνιση συγγραφέων που έχουν δημοσιεύσει υποβολές';
 $string['workshop:viewpublishedsubmissions'] = 'Εμφάνιση δημοσιευμένων υποβολών';
 $string['workshop:viewreviewernames'] = 'Εμφάνιση των ονομάτων των αξιολογητών';
+$string['workshopname'] = 'Όνομα εργαστηρίου';
 $string['yourassessmentfor'] = 'Η αξιολόγησή σας για {$a}';
 $string['yourgrades'] = 'Οι βαθμοί σας';
 $string['yoursubmission'] = 'Η υποβολή σας';

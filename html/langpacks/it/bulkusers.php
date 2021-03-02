@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bulkusers', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'bulkusers', language 'it', version '3.8'.
  *
- * @package   bulkusers
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     bulkusers
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,7 +41,7 @@ $string['selected'] = 'Selezionati';
 $string['selectedlist'] = 'Con gli utenti selezionati...';
 $string['selectedlist_help'] = 'Gli utenti possono essere aggiunti o rimossi dall\'elenco facendo click prima sul nome e poi sul pulsante corrispondente. E\' possibile selezionare più utenti contemporaneamente tenendo premuto il tasto Ctrl o Mela. ';
 $string['users'] = 'Utenti';
-$string['usersfound'] = '{$a} utenti trovati.';
 $string['users_help'] = 'Tutti gli utenti che soddisfano il filtraggio attivo sono elencati nei riquadri disponibili. Se non sono attivi filtri, sono elencati tutti gli utenti del sito.';
+$string['usersfound'] = '{$a} utenti trovati.';
 $string['usersinlist'] = 'Elenco utenti';
 $string['usersselected'] = '{$a} utenti selezionati.';

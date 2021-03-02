@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filters', language 'nl', version '3.8'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,10 +52,10 @@ $string['doesnotcontain'] = 'bevat niet';
 $string['endswith'] = 'eindigt op';
 $string['filterallwarning'] = 'Filters toepassen op inhoud en titels kan de belasting op je server gevoelig verhogen. Wees zuinig met deze instelling. Ze is het nuttigst voor de multilang-filter.';
 $string['filtersettings'] = 'Filter instellingen';
-$string['filtersettingsforin'] = 'Filter instellingen voor {$a->filter} in {$a->context}';
 $string['filtersettings_help'] = 'Met deze pagina kun je filters inschakelen of uitschakelen in een bepaald deel van de site.
 
 Voor sommige filters kun je ook lokale instellingen wijzigen. In dat geval zal er een link voor instellingen naast hun naam verschijnen.';
+$string['filtersettingsforin'] = 'Filter instellingen voor {$a->filter} in {$a->context}';
 $string['filtersettingsin'] = 'Filter instellingen in {$a}';
 $string['firstaccess'] = 'Eerste bezoek';
 $string['globalrolelabel'] = '{$a->label} is {$a->value}';

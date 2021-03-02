@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_numerical', language 'ca', version '3.8'.
  *
- * @package   qtype_numerical
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_numerical
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,9 +64,9 @@ $string['onlynumerical'] = 'No s\'utilitzen per a res les unitats. Només es qua
 $string['pleaseenterananswer'] = 'Introduïu una resposta.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Introduïu una resposta sense utilitzar el separador de milers ({$a}).';
 $string['pluginname'] = 'Numèrica';
+$string['pluginname_help'] = 'Des del punt de vista de l\'estudiant, una pregunta numèrica és com una pregunta de resposta breu. La diferència és que les respostes numèriques poden permetre un cert marge d\'error. Això permet considerar  un interval de respostes com a una resposta única. Per exemple, si la resposta és 10 amb un error acceptat de 2, aleshores s\'acceptarà com a correcte qualsevol nombre entre 8 i 12.';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta numèrica';
 $string['pluginnameediting'] = 'S\'està editant una pregunta numèrica';
-$string['pluginname_help'] = 'Des del punt de vista de l\'estudiant, una pregunta numèrica és com una pregunta de resposta breu. La diferència és que les respostes numèriques poden permetre un cert marge d\'error. Això permet considerar  un interval de respostes com a una resposta única. Per exemple, si la resposta és 10 amb un error acceptat de 2, aleshores s\'acceptarà com a correcte qualsevol nombre entre 8 i 12.';
 $string['pluginnamesummary'] = 'Permet una resposta numèrica, possiblement acompanyada d\'unitats, que es qualifica comparant-la amb diversos models de resposta, possiblement amb toleràncies.';
 $string['relative'] = 'Relativa';
 $string['rightexample'] = 'DRETA com a 1,00cm o 1,00km';

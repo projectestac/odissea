@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz', language 'zh_cn', version '3.8'.
  *
- * @package   quiz
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -103,11 +103,11 @@ $string['attemptquiznow'] = '现在试答';
 $string['attemptreviewtitle'] = '{$a}：试答回顾';
 $string['attemptreviewtitlepaged'] = '{$a->name}：试答回顾 (页 {$a->currentpage} /{$a->totalpages})';
 $string['attempts'] = '试答';
+$string['attempts_help'] = '允许试答的总次数(不是额外的试答次数)。';
 $string['attemptsallowed'] = '允许试答';
 $string['attemptsdeleted'] = '删除的试答';
 $string['attemptselection'] = '选择分析每个用户的哪次试答：';
 $string['attemptsexist'] = '您不能再添加或移除试题。';
-$string['attempts_help'] = '允许试答的总次数(不是额外的试答次数)。';
 $string['attemptsnum'] = '试答：{$a}';
 $string['attemptsnumthisgroup'] = '试答：{$a->total}次（组内{$a->group}次）';
 $string['attemptsnumyourgroups'] = '试答：{$a->total}次（您同组内{$a->group}次）';
@@ -182,11 +182,11 @@ $string['commentorgrade'] = '发表评论或者覆盖成绩';
 $string['comments'] = '评论';
 $string['completedon'] = '完成于';
 $string['completionattemptsexhausted'] = '或所有可用的试答已用尽';
-$string['completionattemptsexhausteddesc'] = '如果所有可用的试答已用尽，则完成';
 $string['completionattemptsexhausted_help'] = '当学生用尽所有的试答次数时，标记测验完成。';
+$string['completionattemptsexhausteddesc'] = '如果所有可用的试答已用尽，则完成';
 $string['completionpass'] = '需要及格成绩';
-$string['completionpassdesc'] = '学生必须获得及格成绩才能完成此活动';
 $string['completionpass_help'] = '如果启用，则当学生获得及格成绩(在测验设置的成绩部分指定)或更高成绩时，此活动视为完成。';
+$string['completionpassdesc'] = '学生必须获得及格成绩才能完成此活动';
 $string['configadaptive'] = '如果您选择“是”，那么允许学生在同一次试答中多次回答一道题。';
 $string['configattemptsallowed'] = '限制学生在测验中允许试答的次数';
 $string['configdecimaldigits'] = '显示分数的小数位数';
@@ -417,16 +417,16 @@ $string['hidereordertool'] = '隐藏重新排序工具';
 $string['history'] = '回答历史记录：';
 $string['howquestionsbehave_desc'] = '测验中试题行为的默认设置。';
 $string['imagedisplay'] = '要显示的图片';
-$string['importcategory'] = '导入类别';
-$string['importerror'] = '导入过程中发生错误';
-$string['importfilearea'] = '从已有的课程文件中导入...';
-$string['importfileupload'] = '从上传的文件导入…';
-$string['importfromthisfile'] = '从该文件导入';
 $string['import_help'] = '您可以用此功能导入外部文本文件中的试题。
 
 如果您的文件包含非 ascii 字符，那么它必须使用 UTF-8 编码。要特别小心 Microsoft Office 生成的文件，它们常常使用不能被正确处理的特殊编码。
 
 导入和导出格式是插件式的。其它可选格式在模块和插件数据库中可以找到。';
+$string['importcategory'] = '导入类别';
+$string['importerror'] = '导入过程中发生错误';
+$string['importfilearea'] = '从已有的课程文件中导入...';
+$string['importfileupload'] = '从上传的文件导入…';
+$string['importfromthisfile'] = '从该文件导入';
 $string['importingquestions'] = '从文件导入 {$a} 道题';
 $string['importmax10error'] = '此试题有一个错误。不能有超过10个答案。';
 $string['importmaxerror'] = '此试题有一个错误。答案太多了。';
@@ -434,13 +434,13 @@ $string['importquestions'] = '从文件导入试题';
 $string['inactiveoverridehelp'] = '* 此覆盖无效，用户对活动的访问受到限制。这可能是因为小组或角色分配、其他访问限制或活动被隐藏。';
 $string['incorrect'] = '错误';
 $string['indicator:cognitivedepth'] = '测验认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在测验活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '测验认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与人已经达到了测验活动所提供的认知参与度(水平=没有查看、查看、提交、查看反馈、评论反馈、查看反馈后重新提交)';
-$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在测验活动中所达到的认知深度。';
 $string['indicator:socialbreadth'] = '测验社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在测验活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '测验社会广度';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔内，参与人已经达到了测验活动所提供的社会参与度(水平=没有参与，单独参与，和其他人一起参与)';
-$string['indicator:socialbreadth_help'] = '这个指标是基于学生在测验活动中所达到的社会广度。';
 $string['indivresp'] = '个人对每个项目的回答';
 $string['info'] = '信息';
 $string['infoshort'] = '信息';
@@ -521,8 +521,8 @@ $string['neverallononepage'] = '不，所有试题在一个页面上';
 $string['newattemptfail'] = '错误：此测验无法开始新的试答。';
 $string['newcategory'] = '新类别';
 $string['newpage'] = '新页面';
-$string['newpageevery'] = '自动开始一个新页面';
 $string['newpage_help'] = '对于试题较多的测验，通过限制每页试题的数量来将测验延长几页是有意义的。当向测验添加试题时，分页符将根据此设置自动插入。当然，分页符稍后也可以在编辑页面上手动移动。';
+$string['newpageevery'] = '自动开始一个新页面';
 $string['newsectionheading'] = '新标题';
 $string['noanswers'] = '没有选择答案!';
 $string['noattempts'] = '此测验还没有人试答';
@@ -591,11 +591,11 @@ $string['overallfeedback'] = '总体反馈';
 $string['overallfeedback_help'] = '总体反馈是试答后显示的文本。如果额外指定了成绩范围（可以是百分比或数字），会根据学生的成绩显示不同的文本。';
 $string['overdue'] = '过期';
 $string['overduehandling'] = '当时限终止时';
+$string['overduehandling_desc'] = '如果学生没有在时限终止前提交测验，默认情况下会发生什么?';
+$string['overduehandling_help'] = '这个设置控制了如果学生在测验时限终止之前没有提交他们的试答会发生什么。如果学生当时正在积极地作答，那么倒计时计时器将总是自动为他们提交试答，但是如果他们已经退出，那么此设置会控制怎么做。';
 $string['overduehandlingautoabandon'] = '试答必须在时限终止之前提交，否则不计成绩';
 $string['overduehandlingautosubmit'] = '自动提交打开的试答';
-$string['overduehandling_desc'] = '如果学生没有在时限终止前提交测验，默认情况下会发生什么?';
 $string['overduehandlinggraceperiod'] = '在宽限期内，打开的试答可以提交，但不能再作答了';
-$string['overduehandling_help'] = '这个设置控制了如果学生在测验时限终止之前没有提交他们的试答会发生什么。如果学生当时正在积极地作答，那么倒计时计时器将总是自动为他们提交试答，但是如果他们已经退出，那么此设置会控制怎么做。';
 $string['overduemustbesubmittedby'] = '此试答现已过期。它应该早已提交。如果您想要此测验被评分，您必须在{$a}之前提交它。如果您那时未提交，此试答将不会计分。';
 $string['override'] = '覆盖';
 $string['overridedeletegroupsure'] = '您确定要删除小组 {$a} 的覆盖？';
@@ -636,7 +636,6 @@ $string['previewquiznow'] = '现在预览测验';
 $string['previous'] = '先前的状态';
 $string['privacy:metadata:core_question'] = '测验活动将试题使用信息存储在核心_试题子系统中。';
 $string['privacy:metadata:quiz'] = '测验活动使用测验报表。';
-$string['privacy:metadata:quizaccess'] = '测验活动使用测验访问规则。';
 $string['privacy:metadata:quiz_attempts'] = '测验中每次试答的详情。';
 $string['privacy:metadata:quiz_attempts:attempt'] = '试答数量。';
 $string['privacy:metadata:quiz_attempts:currentpage'] = '用户当前所在的页面。';
@@ -659,6 +658,7 @@ $string['privacy:metadata:quiz_overrides:timeclose'] = '测验新的关闭时间
 $string['privacy:metadata:quiz_overrides:timelimit'] = '测验新的时间限制。';
 $string['privacy:metadata:quiz_overrides:timeopen'] = '测验新的开启时间。';
 $string['privacy:metadata:quiz_overrides:userid'] = '被覆盖的用户';
+$string['privacy:metadata:quizaccess'] = '测验活动使用测验访问规则。';
 $string['publish'] = '公布';
 $string['publishedit'] = '您必须具有公布课程的权限才能添加或编辑此类别中的试题';
 $string['qbrief'] = '题. {$a}';
@@ -697,25 +697,30 @@ $string['questiontype'] = '试题类型 {$a}';
 $string['questiontypesetupoptions'] = '试题类型的设置选项：';
 $string['quiz:addinstance'] = '添加新测验';
 $string['quiz:attempt'] = '试答测验';
+$string['quiz:deleteattempts'] = '删除试答';
+$string['quiz:emailconfirmsubmission'] = '提交时获得确认消息';
+$string['quiz:emailnotifysubmission'] = '试答提交时获得通知消息';
+$string['quiz:emailwarnoverdue'] = '试答将要过期并需要提交时，获取通知消息。';
+$string['quiz:grade'] = '手动评分测验';
+$string['quiz:ignoretimelimits'] = '忽略测验时间限制';
+$string['quiz:manage'] = '管理测验';
+$string['quiz:manageoverrides'] = '管理测验覆盖';
+$string['quiz:preview'] = '预览测验';
+$string['quiz:regrade'] = '重新评分试答';
+$string['quiz:reviewmyattempts'] = '回顾您自己的试答';
+$string['quiz:view'] = '查看测验信息';
+$string['quiz:viewreports'] = '查看测验报表';
 $string['quizavailable'] = '此测验可用，直到：{$a}';
 $string['quizclose'] = '关闭测验';
 $string['quizclosed'] = '此测验关闭于 {$a}';
 $string['quizcloses'] = '测验关闭';
 $string['quizcloseson'] = '此测验将关闭于{$a}。';
-$string['quiz:deleteattempts'] = '删除试答';
-$string['quiz:emailconfirmsubmission'] = '提交时获得确认消息';
-$string['quiz:emailnotifysubmission'] = '试答提交时获得通知消息';
-$string['quiz:emailwarnoverdue'] = '试答将要过期并需要提交时，获取通知消息。';
 $string['quizeventcloses'] = '{$a} 关闭';
 $string['quizeventopens'] = '{$a} 开启';
-$string['quiz:grade'] = '手动评分测验';
-$string['quiz:ignoretimelimits'] = '忽略测验时间限制';
 $string['quizisclosed'] = '此测验已关闭';
 $string['quizisclosedwillopen'] = '测验已关闭（{$a}开启）';
 $string['quizisopen'] = '此测验已开启';
 $string['quizisopenwillclose'] = '测验开启 ( {$a}关闭)';
-$string['quiz:manage'] = '管理测验';
-$string['quiz:manageoverrides'] = '管理测验覆盖';
 $string['quiznavigation'] = '测验导航';
 $string['quizopen'] = '开启测验';
 $string['quizopenclose'] = '开启和关闭日期';
@@ -726,13 +731,8 @@ $string['quizopens'] = '测验开启';
 $string['quizopenwillclose'] = '此测验已开启，将于{$a}关闭';
 $string['quizordernotrandom'] = '测验顺序没有打乱';
 $string['quizorderrandom'] = '*测验顺序已打乱';
-$string['quiz:preview'] = '预览测验';
-$string['quiz:regrade'] = '重新评分试答';
-$string['quiz:reviewmyattempts'] = '回顾您自己的试答';
 $string['quizsettings'] = '测验设置';
 $string['quiztimer'] = '测验计时器';
-$string['quiz:view'] = '查看测验信息';
-$string['quiz:viewreports'] = '查看测验报表';
 $string['quizwillopen'] = '此测验将开启{$a}';
 $string['random'] = '随机题';
 $string['randomcreate'] = '创建随机题';
@@ -932,9 +932,9 @@ $string['submitallandfinish'] = '全部提交并结束';
 $string['subneterror'] = '很抱歉，本测验被锁定为只能从特定地点登录。目前，您的计算机不在允许的范围内。';
 $string['subnetnotice'] = '很抱歉，本测验被锁定为只能从特定地点登录。目前，您的计算机不在允许的子网范围内。但作为教师，您可以预览测验。';
 $string['subplugintype_quiz'] = '报表';
+$string['subplugintype_quiz_plural'] = '报表';
 $string['subplugintype_quizaccess'] = '访问规则';
 $string['subplugintype_quizaccess_plural'] = '访问规则';
-$string['subplugintype_quiz_plural'] = '报表';
 $string['substitutedby'] = '将被替换为';
 $string['summaryofattempt'] = '试答概要';
 $string['summaryofattempts'] = '您先前试答的概要';
@@ -946,8 +946,8 @@ $string['timecompleted'] = '完成';
 $string['timedelay'] = '不允许进行测验，因为您还没有通过试答时间间隔。';
 $string['timeleft'] = '剩余时间';
 $string['timelimit'] = '时间限制';
-$string['timelimitexeeded'] = '很抱歉！测验时间限制已到！';
 $string['timelimit_help'] = '如果启用，时间限制将在测验的初始页面上显示，并在测验导航版块中显示倒计时。';
+$string['timelimitexeeded'] = '很抱歉！测验时间限制已到！';
 $string['timestr'] = '%y 年 %m 月 %d 日的 %H:%M:%S';
 $string['timesup'] = '时间到！';
 $string['timetaken'] = '用时';

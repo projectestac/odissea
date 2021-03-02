@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'antivirus', language 'ar', version '3.8'.
  *
- * @package   antivirus
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     antivirus
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,6 +31,6 @@ $string['antivirussettings'] = 'إدارة برامج مضادات الفيرو�
 $string['configantivirusplugins'] = 'الرجاء اختيار برامج مكافحة الفيروسات التي ترغب في استخدامها وترتيبها ليتم تطبيقها.';
 $string['datastream'] = 'البيانات';
 $string['emailsubject'] = '{$a}:: إشعار مضاد الفيروسات';
-$string['privacy:metadata'] = 'نظام مضاد الفيروسات لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'نظام مكافح الفيروسات لا يخزن أي بيانات شخصية.';
 $string['virusfound'] = 'تم فحص {$a->item} بواسطة مدقق الفيروسات ووجد مصاباً!';
-$string['virusfounduser'] = 'تم اكتشاف أن الملف الذي قمت بتحميله، {$a->filename}، يحتوي على فيروس! لذا لم يتم تحميل ملفك إلى المجلد المحدد.';
+$string['virusfounduser'] = 'تم اكتشاف أن الملف الذي قمت بتحميله، {$a->filename}، يحتوي على فيروس! لذا لم يتم تحميل ملفك.';

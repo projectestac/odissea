@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_self', language 'ko', version '3.8'.
  *
- * @package   enrol_self
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_self
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,8 +34,8 @@ $string['enrolenddate'] = '등록 마감 날짜';
 $string['enrolenddate_help'] = '활성화되면 사용자들은 이 날까지만 스스로 등록할 수 있습니다.';
 $string['enrolenddaterror'] = '등록기간의 마감날짜는 시작날짜보다 먼저일 수 없음';
 $string['enrolme'] = '등록 요청';
-$string['enrolperiod'] = '재적 기간';
-$string['enrolperiod_desc'] = '(초로 표시한) 기본 재적 기간';
+$string['enrolperiod'] = '등록 기간';
+$string['enrolperiod_desc'] = '등록이 유효한 기본 기간. 0으로 설정되면 등록기간은 기본으로 제한이 없습니다.';
 $string['enrolperiod_help'] = '*.swf 확장자 파일. 보안상의 이유로 이 필터는 신뢰된 문장들에서만 사용됩니다.';
 $string['enrolstartdate'] = '등록 시작 날짜';
 $string['enrolstartdate_help'] = '활성화되면 사용자들은 이 날 이후로만 등록할 수 있습니다.';
@@ -72,7 +72,7 @@ $string['pluginname'] = '스스로 등록';
 $string['pluginname_desc'] = '자체 등록 플러그인은 사용자들이 참가하고자 하는 강좌를 선택하게 해 줍니다. 강좌들은 등록키로 보호될 수도 있습니다. 내부적으로 등록은 같은 강좌에서 활성화되어야 하는 수동 등록 플러그인에 의해 이루어 집니다.';
 $string['requirepassword'] = '등록키 필수';
 $string['requirepassword_desc'] = '새 강좌에서 등록키를 요구하며 기존 강좌에서 등록키를 제거하는 것을 방지합니다.';
-$string['role'] = '역할 부여';
+$string['role'] = '기본 부여 역할';
 $string['self:config'] = '스스로 등록 과정 설정';
 $string['self:manage'] = '등록자 관리';
 $string['self:unenrol'] = '강좌에서 제명';
@@ -82,8 +82,8 @@ $string['sendcoursewelcomemessage_help'] = '이를 활성화해 놓으면 사용
 $string['showhint'] = '힌트 보임';
 $string['showhint_desc'] = '손님용 접속키의 첫 글자를 보여 줌';
 $string['status'] = '기존 등록 허용';
-$string['status_desc'] = '기본적으로 사용자 개개인이 강좌에 등록할 수 있게 허용';
-$string['status_help'] = '이 설정은 사용자가 강좌에 스스로 등록할 수 있는(적절한 권한이 있다면 등록 취소도할 수 있는)지를 결정합니다.';
+$string['status_desc'] = '새 강좌에서 스스로 등록 허용';
+$string['status_help'] = '비활성화 되면 기존에 스스로 등록된 것은 유보되며 새로운 사용자들은 등록할 수 없습니다.';
 $string['unenrol'] = '사용자 등록 해지';
 $string['unenrolselfconfirm'] = '정말, "{$a}" 강좌에서 탈퇴하겠습니까?';
 $string['unenroluser'] = '강좌 "{$a->course}" 에서 "{$a->user}" 를 등록해지하고자 합니까?';

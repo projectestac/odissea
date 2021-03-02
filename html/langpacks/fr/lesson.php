@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'fr', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -266,15 +266,15 @@ $string['hightime'] = 'Plus longue durée';
 $string['importcount'] = 'Importation de {$a} questions';
 $string['importquestions'] = 'Importer des questions';
 $string['importquestions_help'] = 'Cette fonctionnalité permet d\'importer des questions de divers formats à partir de fichiers texte.';
-$string['inactiveoverridehelp'] = '* Cette exception est inactive, car l\'accès de l\'utilisateur à l\'activité est restreinte. Ceci peut être dû à des attributions de groupe ou de rôles, à d\'autres restrictions d\'accès ou au fait que l\'activité est cachée.';
+$string['inactiveoverridehelp'] = '* Cette dérogation est inactive, car l\'accès de l\'utilisateur à l\'activité est restreinte. Ceci peut être dû à des attributions de groupe ou de rôles, à d\'autres restrictions d\'accès ou au fait que l\'activité est cachée.';
 $string['indicator:cognitivedepth'] = 'Leçon : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Leçon.';
 $string['indicator:cognitivedepthdef'] = 'Leçon : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Leçon » (niveaux : pas de vue, vue, envoi, vue du feedback, commentaire du feedback, nouvel envoi après vue du feedback).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Leçon.';
 $string['indicator:socialbreadth'] = 'Leçon : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Leçon.';
 $string['indicator:socialbreadthdef'] = 'Leçon : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Leçon » (niveaux : pas de participation, participant seul, participant avec d\'autres).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Leçon.';
 $string['insertedpage'] = 'Page insérée';
 $string['invalidfile'] = 'Fichier non valide';
 $string['invalidid'] = 'Aucun identifiant de cours ou de leçon n\'a été fourni';
@@ -289,16 +289,18 @@ $string['leftduringtimed'] = 'Vous avez quitté une leçon à durée limitée.<b
 $string['leftduringtimednoretake'] = 'Vous avez quitté une leçon à durée limitée et vous n\'êtes<br />pas autorisé à la recommencer ou la continuer.';
 $string['leftduringtimedsession'] = 'Vous avez interrompu une leçon chronométrée.';
 $string['lesson:addinstance'] = 'Ajouter une leçon';
-$string['lessonclosed'] = 'Cette leçon n\'est plus disponible depuis {$a}.';
-$string['lessoncloses'] = 'La leçon se termine';
-$string['lessoncloseson'] = 'La leçon se termine le {$a}';
 $string['lesson:edit'] = 'Modifier les activités leçon';
-$string['lessoneventcloses'] = '{$a} se termine';
-$string['lessoneventopens'] = '{$a} s\'ouvre';
-$string['lessonformating'] = 'Format de la leçon';
 $string['lesson:grade'] = 'Évaluer les questions de composition de leçons';
 $string['lesson:manage'] = 'Gérer les activités leçon';
 $string['lesson:manageoverrides'] = 'Gérer les dérogations de leçon';
+$string['lesson:view'] = 'Consulter les activités leçon';
+$string['lesson:viewreports'] = 'Consulter les rapports des leçons';
+$string['lessonclosed'] = 'Cette leçon n\'est plus disponible depuis {$a}.';
+$string['lessoncloses'] = 'La leçon se termine';
+$string['lessoncloseson'] = 'La leçon se termine le {$a}';
+$string['lessoneventcloses'] = '{$a} se termine';
+$string['lessoneventopens'] = '{$a} s\'ouvre';
+$string['lessonformating'] = 'Format de la leçon';
 $string['lessonmenu'] = 'Menu leçon';
 $string['lessonname'] = 'Leçon : {$a}';
 $string['lessonnotready'] = 'Cette leçon n\'est pas encore prête. Veuillez contacter votre {$a}.';
@@ -307,8 +309,6 @@ $string['lessonopen'] = 'Cette leçon sera ouverte le {$a}.';
 $string['lessonopens'] = 'La leçon s\'ouvre';
 $string['lessonpagelinkingbroken'] = 'La première page n\'a pas été trouvée. Les liens de la leçon sont vraisemblablement cassés. Veuillez contacter un administrateur.';
 $string['lessonstats'] = 'Statistiques de la leçon';
-$string['lesson:view'] = 'Consulter les activités leçon';
-$string['lesson:viewreports'] = 'Consulter les rapports des leçons';
 $string['linkedmedia'] = 'Médias liés';
 $string['loginfail'] = 'Connexion échouée, veuillez réessayer…';
 $string['lowscore'] = 'Note la plus basse';
@@ -407,8 +407,8 @@ $string['numericanswer'] = 'Réponse numérique';
 $string['numericanswer_help'] = 'Vous pouvez indiquer un simple nombre ou un intervalle de nombres au moyen d\'un caractère « deux-points ». Par exemple, 2:5 signifie que n\'importe quelle réponse entre 2 et 5 (y compris) est correcte.';
 $string['offlinedatamessage'] = 'Vous avez travaillé à cette tentative à l\'aide d\'un appareil mobile. Les données ont été enregistrées sur ce site il y a {$a}. Veuillez vérifier que vous n\'avez pas de données non enregistrées.';
 $string['ongoing'] = 'Afficher le score actuel';
-$string['ongoingcustom'] = 'Vous avez jusqu\'ici reçu {$a->score} sur un maximum de {$a->currenthigh} point(s).';
 $string['ongoing_help'] = 'Si ce réglage est activé, l\'étudiant verra sur chaque page, le nombre des points qu\'il a obtenu par rapport au total possible jusqu\'ici.';
+$string['ongoingcustom'] = 'Vous avez jusqu\'ici reçu {$a->score} sur un maximum de {$a->currenthigh} point(s).';
 $string['ongoingnormal'] = 'Vous avez répondu correctement à {$a->correct} tentatives sur {$a->viewed}.';
 $string['onpostperpage'] = 'Seulement un message par note';
 $string['openafterclose'] = 'Vous avez indiqué une date d\'ouverture postérieure à la date de fermeture.';
@@ -429,11 +429,11 @@ $string['overview'] = 'Vue d\'ensemble';
 $string['overview_help'] = 'Une leçon est constituée de plusieurs pages et éventuellement de pages de contenu.
 Une page contient des données et se termine souvent par une question. Un lien est associé à chaque réponse. Ce lien peut être relatif, comme cette page ou page suivante, ou absolue, en spécifiant une des pages de la leçon. Une page de contenu est une page qui contient des liens vers d\'autres pages de la leçon, comme une table des matières.';
 $string['page'] = 'Page : {$a}';
-$string['pageanswers'] = 'Page réponses';
-$string['pagecontents'] = 'Contenu de la page';
 $string['page-mod-lesson-edit'] = 'Modifier page de leçon';
 $string['page-mod-lesson-view'] = 'Afficher ou prévisualiser une page leçon';
 $string['page-mod-lesson-x'] = 'Toute page de leçon';
+$string['pageanswers'] = 'Page réponses';
+$string['pagecontents'] = 'Contenu de la page';
 $string['pageresponses'] = 'Page réponses attendues';
 $string['pages'] = 'Pages';
 $string['pagetitle'] = 'Titre de la page';
@@ -545,9 +545,9 @@ $string['showanunseenpage'] = 'Afficher une page non vue';
 $string['singleanswer'] = 'Réponse simple';
 $string['skip'] = 'Passer la navigation';
 $string['slideshow'] = 'Diaporama';
+$string['slideshow_help'] = 'Si ce réglage est activé, la leçon sera affichée à la manière d\'une présentation (diaporama), avec une largeur et une hauteur déterminées.';
 $string['slideshowbgcolor'] = 'Couleur de fond du diaporama';
 $string['slideshowheight'] = 'Hauteur du diaporama';
-$string['slideshow_help'] = 'Si ce réglage est activé, la leçon sera affichée à la manière d\'une présentation (diaporama), avec une largeur et une hauteur déterminées.';
 $string['slideshowwidth'] = 'Largeur du diaporama';
 $string['startlesson'] = 'Commencer la leçon';
 $string['studentattemptlesson'] = 'Tentative numéro {$a->attempt} de {$a->firstname} {$a->lastname}';

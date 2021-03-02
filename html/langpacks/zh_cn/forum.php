@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'forum', language 'zh_cn', version '3.8'.
  *
- * @package   forum
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     forum
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,8 +58,8 @@ $string['availability'] = '可用性';
 $string['blockafter'] = '发帖阻止阈值';
 $string['blockafter_help'] = '此设置指定用户在给定周期内可以发布的最大帖子数。具有mod/forum:postwithththrottling权限的用户不受此限制。';
 $string['blockperiod'] = '阻止周期';
-$string['blockperioddisabled'] = '不阻止';
 $string['blockperiod_help'] = '在给定的周期内，学生被阻止发布超过给定数量的帖子。具有mod /forum:postwithththrottling权限的用户不受此限制。';
+$string['blockperioddisabled'] = '不阻止';
 $string['blogforum'] = '博客形式的标准讨论区';
 $string['bynameondate'] = '{$a->name} - {$a->date}';
 $string['cachedef_forum_is_tracked'] = '用户讨论区跟踪状态‎‎';
@@ -208,13 +208,13 @@ $string['discussionunsubscribed'] = '‎您现在已退订了此话题。 ‎';
 $string['discussthistopic'] = '讨论此话题';
 $string['discusstopicname'] = '讨论话题：{$a}';
 $string['displayend'] = '显示结束';
-$string['displayenddate'] = '显示结束：{$a}。';
 $string['displayend_help'] = '此设置指定是否应在特定日期后隐藏讨论区帖子。请注意，管理员始终可以查看讨论区帖子。';
+$string['displayenddate'] = '显示结束：{$a}。';
 $string['displaymode'] = '显示模式';
 $string['displayperiod'] = '显示周期';
 $string['displaystart'] = '显示开始';
-$string['displaystartdate'] = '显示开始：{$a}。';
 $string['displaystart_help'] = '此设置指定是否应从某个日期开始显示讨论区帖子。请注意，管理员始终可以查看讨论区帖子。';
+$string['displaystartdate'] = '显示开始：{$a}。';
 $string['displaywordcount'] = '显示字数';
 $string['displaywordcount_help'] = '此设置指定是否显示每个帖子的字数。';
 $string['duedate'] = '到期日期';
@@ -287,10 +287,6 @@ $string['forum:addinstance'] = '添加新讨论区';
 $string['forum:addnews'] = '添加新闻通告';
 $string['forum:addquestion'] = '添加问题';
 $string['forum:allowforcesubscribe'] = '允许强制订阅';
-$string['forumauthorhidden'] = '作者(隐藏)';
-$string['forumblockingalmosttoomanyposts'] = '您即将达到发帖阈值。您在最近的{$a->blockperiod}发了{$a-> numposts}帖，限制为{$a->blockafter}帖。';
-$string['forumbodydeleted'] = '本讨论区帖子的内容已移除，无法再访问。';
-$string['forumbodyhidden'] = '您不能查看此帖，可能是因为您尚未在话题中发帖，尚未经过最大编辑时间，话题尚未开始或话题已过期。';
 $string['forum:canoverridecutoff'] = '截止日期后发帖到讨论区';
 $string['forum:canoverridediscussionlock'] = '回复锁定的话题';
 $string['forum:canposttomygroups'] = '发布到您有权访问的所有组';
@@ -304,24 +300,35 @@ $string['forum:exportforum'] = '导出讨论区';
 $string['forum:exportownpost'] = '导出自己的帖子';
 $string['forum:exportpost'] = '导出帖子';
 $string['forum:grade'] = '评分讨论区';
-$string['forumgrader'] = '讨论区评分人';
-$string['forumgradingnavigation'] = '讨论区评分导航';
-$string['forumgradingpanel'] = '讨论区评分面板';
-$string['forumintro'] = '描述';
 $string['forum:managesubscriptions'] = '管理订阅';
 $string['forum:movediscussions'] = '移动话题';
-$string['forumname'] = '讨论区名称';
 $string['forum:pindiscussions'] = '置顶话题';
 $string['forum:postprivatereply'] = '私下回复帖子';
-$string['forumposts'] = '讨论区帖子';
 $string['forum:postwithoutthrottling'] = '不受发帖阈值限制';
 $string['forum:rate'] = '评价帖子';
 $string['forum:readprivatereplies'] = '查看私人回复';
 $string['forum:replynews'] = '回复新闻通告';
 $string['forum:replypost'] = '回复帖子';
-$string['forums'] = '讨论区';
 $string['forum:splitdiscussions'] = '分割话题';
 $string['forum:startdiscussion'] = '发起新话题';
+$string['forum:viewallratings'] = '查看个人提供的所有原始评价';
+$string['forum:viewanyrating'] = '查看任何人收到的总评价';
+$string['forum:viewdiscussion'] = '查看话题';
+$string['forum:viewhiddentimedposts'] = '阅读隐藏的定时帖';
+$string['forum:viewqandawithoutposting'] = '始终可看提问帖与解答帖';
+$string['forum:viewrating'] = '查看您收到的总评价';
+$string['forum:viewsubscribers'] = '查看订阅';
+$string['forumauthorhidden'] = '作者(隐藏)';
+$string['forumblockingalmosttoomanyposts'] = '您即将达到发帖阈值。您在最近的{$a->blockperiod}发了{$a-> numposts}帖，限制为{$a->blockafter}帖。';
+$string['forumbodydeleted'] = '本讨论区帖子的内容已移除，无法再访问。';
+$string['forumbodyhidden'] = '您不能查看此帖，可能是因为您尚未在话题中发帖，尚未经过最大编辑时间，话题尚未开始或话题已过期。';
+$string['forumgrader'] = '讨论区评分人';
+$string['forumgradingnavigation'] = '讨论区评分导航';
+$string['forumgradingpanel'] = '讨论区评分面板';
+$string['forumintro'] = '描述';
+$string['forumname'] = '讨论区名称';
+$string['forumposts'] = '讨论区帖子';
+$string['forums'] = '讨论区';
 $string['forumsubjectdeleted'] = '本讨论区帖子已移除';
 $string['forumsubjecthidden'] = '主题(隐藏)';
 $string['forumtracked'] = '跟踪未读帖子';
@@ -334,27 +341,20 @@ $string['forumtype_help'] = '有5种讨论区类型：
 * 提问与解答讨论区 - 学生必须先发表他的观点，才能看到别人的帖子。
 * 博客形式的标准讨论区 - 一个开放的讨论区，任何人在任何时间都可以发起一个新话题。所有话题都显示在一个页面中。每个话题都有一个“讨论此话题”的链接
 * 一般用途的标准讨论区 - 一个开放的讨论区，任何人在任何时间都可以发起一个新话题。';
-$string['forum:viewallratings'] = '查看个人提供的所有原始评价';
-$string['forum:viewanyrating'] = '查看任何人收到的总评价';
-$string['forum:viewdiscussion'] = '查看话题';
-$string['forum:viewhiddentimedposts'] = '阅读隐藏的定时帖';
-$string['forum:viewqandawithoutposting'] = '始终可看提问帖与解答帖';
-$string['forum:viewrating'] = '查看您收到的总评价';
-$string['forum:viewsubscribers'] = '查看订阅';
 $string['generalforum'] = '一般用途的标准讨论区';
 $string['generalforums'] = '普通讨论区';
-$string['graded'] = '已评分';
-$string['gradeforrating'] = '评价成绩：{$a->str_long_grade}';
-$string['gradeforratinghidden'] = '隐藏的评价成绩';
 $string['grade_forum_header'] = '整个讨论区评分';
 $string['grade_forum_name'] = '整个讨论区';
 $string['grade_forum_title'] = '成绩';
+$string['grade_rating_name'] = '评价';
+$string['graded'] = '已评分';
+$string['gradeforrating'] = '评价成绩：{$a->str_long_grade}';
+$string['gradeforratinghidden'] = '隐藏的评价成绩';
 $string['gradeforwholeforum'] = '讨论区成绩：{$a->str_long_grade}';
 $string['gradeforwholeforumhidden'] = '隐藏的讨论区成绩';
 $string['gradeitem:forum'] = '讨论区';
 $string['gradeitemnameforrating'] = '{$a->name}的评价成绩';
 $string['gradeitemnameforwholeforum'] = '{$a->name}的整个讨论区成绩';
-$string['grade_rating_name'] = '评价';
 $string['grades:gradesavedfor'] = '{$a->fullname}保存的成绩';
 $string['grades:gradesavefailed'] = '不能保存{$a->fullname}的成绩：{$a->error}';
 $string['gradeusers'] = '给用户评分';
@@ -366,13 +366,13 @@ $string['hidepreviousrepliescount'] = '隐藏先前的回复({$a})';
 $string['hideusersearch'] = '隐藏用户搜索';
 $string['indexoutoftotal'] = '{$a->index}/{$a->total}';
 $string['indicator:cognitivedepth'] = '讨论区认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在讨论区活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '讨论区认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与人已达到讨论区活动所提供的认知参与度(级别=未查看、查看、提交、查看反馈、评论反馈、查看反馈后重新提交)';
-$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在讨论区活动中所达到的认知深度。';
 $string['indicator:socialbreadth'] = '讨论区社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在讨论区活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '讨论区社会广度';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔内，参与人已达到讨论区活动所提供的社会参与度(级别=没有参与，单独参与，和他人一起参与)';
-$string['indicator:socialbreadth_help'] = '这个指标是基于学生在讨论区活动中所达到的社会广度。';
 $string['inforum'] = '在 {$a} 里';
 $string['inpagereplysubject'] = '回复: {$a}';
 $string['inreplyto'] = '回复{$a}';
@@ -560,14 +560,14 @@ $string['privacy:metadata:forum_digests'] = '关于每个讨论区的摘要偏�
 $string['privacy:metadata:forum_digests:forum'] = '此论讨论区已订阅。';
 $string['privacy:metadata:forum_digests:maildigest'] = '摘要偏好。';
 $string['privacy:metadata:forum_digests:userid'] = '具有此摘要偏好的用户的 ID。';
-$string['privacy:metadata:forum_discussions'] = '有关用户创建的各个讨论区话题的信息';
-$string['privacy:metadata:forum_discussions:assessed'] = 'TODOD—这个字段存储什么';
-$string['privacy:metadata:forum_discussions:name'] = '话题的名称，由作者选择。';
-$string['privacy:metadata:forum_discussions:timemodified'] = '话题的最后修改时间。';
 $string['privacy:metadata:forum_discussion_subs'] = '有关订阅各个讨论区话题的信息';
 $string['privacy:metadata:forum_discussion_subs:discussionid'] = '订阅的话题的 ID。';
 $string['privacy:metadata:forum_discussion_subs:preference'] = '此订阅的开始时间。';
 $string['privacy:metadata:forum_discussion_subs:userid'] = '具有话题订阅的用户的 ID。';
+$string['privacy:metadata:forum_discussions'] = '有关用户创建的各个讨论区话题的信息';
+$string['privacy:metadata:forum_discussions:assessed'] = 'TODOD—这个字段存储什么';
+$string['privacy:metadata:forum_discussions:name'] = '话题的名称，由作者选择。';
+$string['privacy:metadata:forum_discussions:timemodified'] = '话题的最后修改时间。';
 $string['privacy:metadata:forum_discussions:userid'] = '开启此话题的用户的 ID';
 $string['privacy:metadata:forum_discussions:usermodified'] = '以某种方式最后修改话题的用户的 ID。';
 $string['privacy:metadata:forum_grades'] = '讨论区成绩数据';
@@ -629,10 +629,10 @@ $string['replies'] = '回帖';
 $string['repliesmany'] = '迄今有 {$a} 个回帖';
 $string['repliesone'] = '迄今有 {$a} 个回帖';
 $string['reply'] = '回复';
-$string['replyauthorself'] = '{$a} (您)';
-$string['replyforum'] = '回复讨论区';
 $string['reply_handler'] = '通过电子邮件回复帖子';
 $string['reply_handler_name'] = '回复帖子';
+$string['replyauthorself'] = '{$a} (您)';
+$string['replyforum'] = '回复讨论区';
 $string['replyingtoauthor'] = '回复{$a}...';
 $string['replyplaceholder'] = '写您的回复...';
 $string['replytopostbyemail'] = '您可以通过电子邮件回复。';
@@ -647,10 +647,11 @@ $string['rssarticles_help'] = '此设置指定要包含在 RSS feed 中的文章
 $string['rsssubscriberssdiscussions'] = '话题的 RSS feed';
 $string['rsssubscriberssposts'] = '帖子的 RSS feed';
 $string['rsstype'] = '此活动的 RSS feed';
-$string['rsstypedefault'] = 'RSS feed 类型';
 $string['rsstype_help'] = '若要为此活动启用RSS feed，请选择要包含在 feed 中的话题或帖子。';
+$string['rsstypedefault'] = 'RSS feed 类型';
 $string['search'] = '搜索';
 $string['search:activity'] = '讨论区 - 活动信息';
+$string['search:post'] = '讨论区 - 帖子';
 $string['searchdatefrom'] = '帖子必须在此时间之后发布';
 $string['searchdateto'] = '帖子必须在此时间之前发布';
 $string['searchforumintro'] = '请在以下一个或多个字段中输入搜索词：';
@@ -659,7 +660,6 @@ $string['searchfullwords'] = '这些词应当作为整词出现';
 $string['searchnotwords'] = '不应包含这些字';
 $string['searcholderposts'] = '搜索旧帖子...';
 $string['searchphrase'] = '这个词组必须出现在帖子中';
-$string['search:post'] = '讨论区 - 帖子';
 $string['searchresults'] = '搜索结果';
 $string['searchsubject'] = '这些字应该在主题中';
 $string['searchtags'] = '被标以';
@@ -669,10 +669,8 @@ $string['searchusers'] = '搜索用户';
 $string['searchwhichforums'] = '选择搜索哪个讨论区';
 $string['searchwords'] = '这些字可以出现在帖子的任何位置';
 $string['seeallposts'] = '查看此用户发表的所有帖子';
-$string['sendstudentnotifications'] = '通知学生';
 $string['sendstudentnotificationsdefault'] = '“通知学生”的默认设置';
 $string['sendstudentnotificationsdefault_help'] = '为评分表单上的“通知学生”复选框设置默认值。';
-$string['sendstudentnotifications_help'] = '若启用，学生会收到有关成绩或反馈修改的简讯。';
 $string['sendstudentnotificationsno'] = '否';
 $string['sendstudentnotificationsyes'] = '是，发送通知给学生';
 $string['settings'] = '设置';
@@ -700,11 +698,11 @@ $string['subscriberstowithcount'] = '订阅者“{$a->name}”（共{$a->count}�
 $string['subscribestart'] = '此讨论区有新帖时，通知我';
 $string['subscribestop'] = '此讨论区有新帖时，不要通知我';
 $string['subscription'] = '订阅';
+$string['subscription_help'] = '如果您订阅了一个讨论区，则意味着您将收到有关新讨论区帖子的通知。通常，您可以选择是否订阅，不过有时会强制订阅，以便每个人都可以收到通知。';
 $string['subscriptionandtracking'] = '订阅和跟踪';
 $string['subscriptionauto'] = '自动订阅';
 $string['subscriptiondisabled'] = '禁止订阅';
 $string['subscriptionforced'] = '强制订阅';
-$string['subscription_help'] = '如果您订阅了一个讨论区，则意味着您将收到有关新讨论区帖子的通知。通常，您可以选择是否订阅，不过有时会强制订阅，以便每个人都可以收到通知。';
 $string['subscriptionmode'] = '订阅模式';
 $string['subscriptionmode_help'] = '当用户订阅了讨论区时，他们将会收到讨论区帖子通知。 有四种订阅模式选项：
 

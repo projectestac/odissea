@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'search', language 'ru', version '3.8'.
  *
- * @package   search
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     search
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,6 +43,11 @@ $string['confirm_delete'] = 'Вы уверены, что хотите удали
 $string['confirm_deleteall'] = 'Вы уверены, что хотите сейчас удалить всё проиндексированное содержимое? Пока сайт не будет снова проиндексирован, пользователи не смогут получить результаты поиска.';
 $string['confirm_indexall'] = 'Вы уверены, что хотите сейчас обновить всё проиндексированное содержимое? Если нужно индексировать большой объем контента, это может занять длительное время. Для рабочих серверов обычно Вы должны оставлять индексирование запланированной задаче «Построение глобального поискового индекса».';
 $string['confirm_reindexall'] = 'Вы уверены, что хотите сейчас переиндексировать всё содержимое сайта? Если Ваш сайт содержит большой объем контента, это может занять длительное время и пользователи не будут получать полные результаты поиска до завершения переиндексации.';
+$string['core-all'] = 'Все';
+$string['core-course-content'] = 'Содержимое курса';
+$string['core-courses'] = 'Курсы';
+$string['core-other'] = 'Другое';
+$string['core-users'] = 'Пользователи';
 $string['createanindex'] = 'создать индекс';
 $string['createdon'] = 'Создан';
 $string['database'] = 'База данных';
@@ -64,8 +69,8 @@ $string['enginenotinstalled'] = 'Поисковая машина «{$a}» не �
 $string['enginenotselected'] = 'Вы не выбрали ни одну поисковую систему.';
 $string['engineserverstatus'] = 'Поисковая машина не доступна. Пожалуйста, свяжитесь с вашим администратором.';
 $string['enteryoursearchquery'] = 'Введите ваш поисковый запрос';
-$string['errorareanotavailable'] = 'Область поиска «{$a}» не доступна.';
 $string['error_indexing'] = 'Во время индексации произошла ошибка';
+$string['errorareanotavailable'] = 'Область поиска «{$a}» не доступна.';
 $string['errors'] = 'Ошибки';
 $string['everywhere'] = 'В любом месте, куда у вас есть доступ';
 $string['filesinindexdirectory'] = 'Файлы в индексной папке';
@@ -82,6 +87,7 @@ $string['invalidindexerror'] = 'Папка индекса содержит не 
 $string['ittook'] = 'Принято';
 $string['matchingfile'] = 'Совпадения из файла <span class="filename">{$a}</span>';
 $string['matchingfiles'] = 'Совпадения из файлов:';
+$string['mycoursesonly'] = 'Только мои курсы';
 $string['next'] = 'Следующий';
 $string['noindexmessage'] = 'Администратор: Здесь нет поисковых индексов.';
 $string['noresults'] = 'Нет результатов';
@@ -106,16 +112,17 @@ $string['schemanotupdated'] = 'Схема поиска устарела.';
 $string['schemaversionunknown'] = 'Поисковая машина не знает о текущей версии схемы.';
 $string['score'] = 'Очки';
 $string['search'] = 'Поиск';
-$string['searcharea'] = 'Область поиска';
+$string['search:course'] = 'Курсы';
 $string['search:customfield'] = 'Пользовательские поля курса';
-$string['searching'] = 'Поиск в...';
 $string['search:message_received'] = 'Полученные сообщения';
 $string['search:message_sent'] = 'Отправленные сообщения';
 $string['search:mycourse'] = 'Мои курсы';
-$string['searchnotpermitted'] = 'Вам не разрешено использовать поиск';
 $string['search:section'] = 'Разделы курса';
-$string['searchsetupdescription'] = 'Следующие шаги помогут Вам настроить глобальный поиск в Moodle.';
 $string['search:user'] = 'Пользователи';
+$string['searcharea'] = 'Область поиска';
+$string['searching'] = 'Поиск в...';
+$string['searchnotpermitted'] = 'Вам не разрешено использовать поиск';
+$string['searchsetupdescription'] = 'Следующие шаги помогут Вам настроить глобальный поиск в Moodle.';
 $string['searchwithin'] = 'Искать в';
 $string['seconds'] = 'секунд';
 $string['solutions'] = 'Решения';

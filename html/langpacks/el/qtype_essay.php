@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essay', language 'el', version '3.8'.
  *
- * @package   qtype_essay
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essay
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,10 +44,10 @@ $string['mustrequirefewer'] = 'Δεν μπορείτε να απαιτήσετε
 $string['nlines'] = '{$a} γραμμές';
 $string['nonexistentfiletypes'] = 'Οι ακόλουθοι τύποι αρχείων δεν αναγνωρίστηκαν: {$a}';
 $string['pluginname'] = 'Έκθεση';
-$string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης τύπου Έκθεσης';
-$string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης τύπου Έκθεσης';
 $string['pluginname_help'] = 'Σε απάντηση μιας ερώτησης, αυτός που απαντά μπορεί να ανεβάσει ένα ή περισσότερα αρχεία και/ή να εισάγει κείμενο εντός σύνδεσης. Μπορεί να παρέχεται ένα υπόδειγμα απόκρισης. Οι αποκρίσεις πρέπει να βαθμολογηθούν χειροκίνητα.';
 $string['pluginname_link'] = 'ερώτηση/τύπος/έκθεση';
+$string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης τύπου Έκθεσης';
+$string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης τύπου Έκθεσης';
 $string['pluginnamesummary'] = 'Επιτρέπει ως απόκριση το ανέβασμα ενός αρχείου και/ή κείμενο εντός σύνδεσης. Η απόκριση θα πρέπει έπειτα να βαθμολογηθεί χειροκίνητα.';
 $string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις τύπου έκθεσης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['responsefieldlines'] = 'Μέγεθος πλαισίου καταχώρησης';
@@ -57,5 +57,5 @@ $string['responsenotrequired'] = 'Η εισαγωγή κειμένου είνα�
 $string['responseoptions'] = 'Επιλογές Απόκρισης';
 $string['responserequired'] = 'Απαιτείται κείμενο';
 $string['responsetemplate'] = 'Υπόδειγμα απόκρισης';
-$string['responsetemplateheader'] = 'Υπόδειγμα Απόκρισης';
 $string['responsetemplate_help'] = 'Κάθε κείμενο που εισάγεται εδώ θα εμφανιστεί στο πλαίσιο εισαγωγής απόκρισης όταν ξεκινήσει μια νέα προσπάθεια για την ερώτηση.';
+$string['responsetemplateheader'] = 'Υπόδειγμα Απόκρισης';

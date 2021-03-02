@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshop', language 'es', version '3.8'.
  *
- * @package   workshop
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshop
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['aggregategrades'] = 'Recalcular las calificaciones';
 $string['aggregation'] = 'Agregación de calificaciones';
 $string['allocate'] = 'Asignar envíos';
-$string['allocatedetails'] = 'esperado: {$a->expected}<br />presentado: {$a->submitted}<br />to asignado: {$a->allocate}';
+$string['allocatedetails'] = 'esperado: {$a->expected}<br />presentado: {$a->submitted}<br />para asignar: {$a->allocate}';
 $string['allocation'] = 'Asignación de envíos';
 $string['allocationconfigured'] = 'Asignación configurada';
 $string['allocationdone'] = 'Asignación hecha';
 $string['allocationerror'] = 'Error de asignación';
-$string['allowedfiletypesforoverallfeedback'] = 'Formatos de ficheros permitidos para la retroalimentación';
+$string['allowedfiletypesforoverallfeedback'] = 'Formatos de archivo permitidos para la retroalimentación';
 $string['allowedfiletypesforoverallfeedback_help'] = 'Los formatos de ficheros permitidos para la retroalimentación entregar pueden ser restringidos mediante una lista separada por coma de sus extensiones, por ejemplo \'mp4, mp3, png, jpg\'. Si el campo se deja vacío, se permitirá entregar cualquier tipo de archivo.';
 $string['allowedfiletypesforsubmission'] = 'Formatos de ficheros que se permiten entregar';
 $string['allowedfiletypesforsubmission_help'] = 'Los formatos de ficheros que se permiten entregar pueden ser restringidos mediante una lista separada por coma de sus extensiones, por ejemplo \'mp4, mp3, png, jpg\'. Si el campo se deja vacío, se permitirá entregar cualquier tipo de archivo.';
@@ -82,11 +82,11 @@ $string['calculatesubmissiongrades'] = 'Calcular calificaciones de envíos';
 $string['calculatesubmissiongradesdetails'] = 'esperadas: {$a->expected}<br />calculadas: {$a->calculated}';
 $string['chooseuser'] = 'Seleccionar un usuario...';
 $string['clearaggregatedgrades'] = 'Borrar todas las calificaciones agrupadas';
-$string['clearaggregatedgradesconfirm'] = '¿Está seguro de que desea borrar las calificaciones calculadas para los envíos y las calificaciones de la evaluación?';
 $string['clearaggregatedgrades_help'] = 'Las calificaciones agregadas por el envío y las calificaciones de evaluación se restablecerán. Puede volver a calcular estas calificaciones desde el principio en la Fase de Calificación de evaluaciones.';
+$string['clearaggregatedgradesconfirm'] = '¿Está seguro de que desea borrar las calificaciones calculadas para los envíos y las calificaciones de la evaluación?';
 $string['clearassessments'] = 'Borrar evaluaciones';
-$string['clearassessmentsconfirm'] = '¿Está seguro que desea borrar todas las calificaciones de evaluación?. No podrá obtener de nuevo la información por si mismo, los evaluadores tendrán que volver a evaluar las entregas asignadas.';
 $string['clearassessments_help'] = 'Las calificaciones calculadas para los envíos y las calificaciones de evaluación se restablecerán. La información sobre cómo llenar los formatos de evaluación se conserva, pero todos los evaluadores deberán abrir el formato de evaluación de nuevo y volver a guardarlo, para que se vuelvan a calcular las calificaciones de nuevo.';
+$string['clearassessmentsconfirm'] = '¿Está seguro que desea borrar todas las calificaciones de evaluación?. No podrá obtener de nuevo la información por si mismo, los evaluadores tendrán que volver a evaluar las entregas asignadas.';
 $string['conclusion'] = 'Conclusión';
 $string['conclusion_help'] = 'El texto de conclusión se muestra a los participantes al final de la actividad.';
 $string['configexamplesmode'] = 'Modo por defecto en los ejemplos de evaluación en los talleres';
@@ -95,7 +95,7 @@ $string['configgradedecimals'] = 'Por defecto, número de dígitos que deben fig
 $string['configgradinggrade'] = 'Por defecto, calificación máxima en la evaluación de los talleres';
 $string['configmaxbytes'] = 'Por defecto, tamaño máximo del archivo enviado en todos los talleres del sitio (sujeto a las limitaciones del curso y a otros parámetros locales)';
 $string['configstrategy'] = 'Estrategia de calificación predeterminada para los talleres';
-$string['createsubmission'] = 'Empiece a preparar su envío';
+$string['createsubmission'] = 'Adicionar envio';
 $string['daysago'] = 'hace {$a} días';
 $string['daysleft'] = 'quedan {$a} días';
 $string['daystoday'] = 'hoy';
@@ -158,22 +158,22 @@ $string['formatpeergradeover'] = '<span class="grade">{$a->grade}</span> <span c
 $string['formatpeergradeoverweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span> @ <span class="weight">{$a->weight}</span>';
 $string['formatpeergradeweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span> @ <span class="weight">{$a->weight}</span>';
 $string['givengrades'] = 'Calificaciones otorgadas';
+$string['grade_grading_name'] = 'Evaluación';
+$string['grade_submission_name'] = 'Envío';
 $string['gradecalculated'] = 'Calificación calculada para el envío';
 $string['gradedecimals'] = 'Decimales en las calificaciones';
 $string['gradegivento'] = '&gt;';
-$string['grade_grading_name'] = 'Evaluación';
 $string['gradeinfo'] = 'Calificación: {$a->received} of {$a->max}';
 $string['gradeitemassessment'] = '{$a->workshopname} (evaluación)';
 $string['gradeitemsubmission'] = '{$a->workshopname} (envío)';
 $string['gradeover'] = 'Pasar por alto calificación del envío';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'Informe de calificaciones del Taller';
-$string['grade_submission_name'] = 'Envío';
 $string['gradetopassgrading'] = 'Calificación para aprobar la evaluación';
 $string['gradetopasssubmission'] = 'Calificación para aprobar la entrega';
 $string['gradinggrade'] = 'Calificación de la evaluación';
-$string['gradinggradecalculated'] = 'Calificación calculada de la evaluación';
 $string['gradinggrade_help'] = 'Este ajuste especifica la calificación máxima que puede obtenerse al evaluar un envío.';
+$string['gradinggradecalculated'] = 'Calificación calculada de la evaluación';
 $string['gradinggradeof'] = 'Calificación de la evaluación (de {$a})';
 $string['gradinggradeover'] = 'Pasar por alto calificación de la evaluación';
 $string['gradingsettings'] = 'Ajustes de calificación';
@@ -182,16 +182,16 @@ $string['iamsure'] = 'Sí, estoy seguro';
 $string['indicator:cognitivedepth'] = 'Taller cognitivo';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad de Taller.';
 $string['indicator:socialbreadth'] = 'Taller social';
-$string['indicator:socialbreadthdef'] = 'Taller social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad de Taller.';
+$string['indicator:socialbreadthdef'] = 'Taller social';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Instrucciones para el envío';
 $string['instructreviewers'] = 'Instrucciones para la evaluación';
 $string['introduction'] = 'Descripción';
 $string['latesubmissions'] = 'Envíos de última hora';
-$string['latesubmissionsallowed'] = 'Se permiten envíos de última hora';
 $string['latesubmissions_desc'] = 'Permitir envíos fuera de plazo';
 $string['latesubmissions_help'] = 'Si está activada esta opción, un autor puede enviar su trabajo fuera de plazo o durante la fase de evaluación. Sin embargo, los envíos de última hora no se pueden editar.';
+$string['latesubmissionsallowed'] = 'Se permiten envíos de última hora';
 $string['maxbytes'] = 'Tamaño máximo del archivo de entrega';
 $string['modulename'] = 'Taller';
 $string['modulename_help'] = 'El módulo de actividad taller permite la recopilación, revisión y evaluación por pares del trabajo de los estudiantes.
@@ -270,7 +270,6 @@ $string['someuserswosubmission'] = 'Al menos un autor aún no ha enviado su trab
 $string['sortasc'] = 'Clasificacion ascendente';
 $string['sortdesc'] = 'Clasificación descendente';
 $string['strategy'] = 'Estrategia de calificación';
-$string['strategyhaschanged'] = 'La estrategia de calificación del taller ha cambiado desde que el formulario fue abierto para editarlo.';
 $string['strategy_help'] = 'La estrategia de calificación determina la forma de evaluación utilizada y el método de calificación de los envíos. Hay 4 opciones:
 
  * Calificación acumulativa - Se realizan comentarios y calificaciones sobre los aspectos especificados.
@@ -280,6 +279,7 @@ $string['strategy_help'] = 'La estrategia de calificación determina la forma de
  * Número de errores - Se realizan comentarios y una calificación tipo sí/no sobre las afirmaciones realizadas.
 
  * Rúbrica - Se realiza una evaluación de nivel respecto a los criterios especificados';
+$string['strategyhaschanged'] = 'La estrategia de calificación del taller ha cambiado desde que el formulario fue abierto para editarlo.';
 $string['submission'] = 'Envío';
 $string['submissionattachment'] = 'Adjunto';
 $string['submissionby'] = 'Envío por {$a}';
@@ -322,7 +322,7 @@ $string['subplugintype_workshopform_plural'] = 'Estrategias de calificación';
 $string['switchingphase'] = 'Cambiando de fase';
 $string['switchphase'] = 'Cambiar fase';
 $string['switchphase10'] = 'Cambiar a la fase de configuración';
-$string['switchphase10info'] = 'Está a punto de entrar a la <strong>Fase de instalación </ strong> del taller. En esta fase, los usuarios no pueden modificar su envío o sus evaluaciones. Los profesores pueden usar esta fase para cambiar la configuración del taller y modificar la estrategia de calificación de las formas de evaluación.';
+$string['switchphase10info'] = 'Está a punto de entrar a la <strong>Fase de instalación </strong> del taller. En esta fase, los usuarios no pueden modificar sus envíos o evaluaciones. Los profesores pueden usar esta fase para cambiar la configuración del taller, modificar la estrategia de calificación o retocar los formularios de evaluación.';
 $string['switchphase20'] = 'Cambiar a la fase de envío';
 $string['switchphase20info'] = 'Está a punto de cambiar a la <strong>Fase de envíos </strong> del taller. En esta fase, los estudiantes pueden enviar sus trabajos (dentro de los plazos de control de acceso existentes). Los profesores pueden asignar los envíos para ser revisados por pares.';
 $string['switchphase30'] = 'Cambiar a la fase de evaluación';
@@ -357,10 +357,10 @@ $string['usepeerassessment_help'] = 'Si está activado, un usuario puede recibir
 $string['userdatecreated'] = 'enviado en <span>{$a}</span>';
 $string['userdatemodified'] = 'modificado en <span>{$a}</span>';
 $string['userplan'] = 'Planificador de taller';
+$string['userplan_help'] = 'El planificador del taller muestra todas las fases de la actividad y la lista de las tareas de cada fase. La fase actual se ve resaltada y se indican las tareas finalizadas con una marca de verificación';
 $string['userplanaccessibilityskip'] = 'Saltar a las Tareas actuales';
 $string['userplanaccessibilitytitle'] = 'Cronograma de Taller con {$a} fases';
 $string['userplancurrentphase'] = 'Fase actual';
-$string['userplan_help'] = 'El planificador del taller muestra todas las fases de la actividad y la lista de las tareas de cada fase. La fase actual se ve resaltada y se indican las tareas finalizadas con una marca de verificación';
 $string['useselfassessment'] = 'Usar auto-evaluación';
 $string['useselfassessment_desc'] = 'Los estudiantes pueden evaluar su propio trabajo';
 $string['useselfassessment_help'] = 'Si está activado, un usuario puede ser asignado a su propia presentación para evaluarla. Recibirá una calificación por la evaluación, además de una calificación por su propia presentación.';
@@ -374,7 +374,6 @@ $string['workshop:editdimensions'] = 'Editar formulario de evaluación';
 $string['workshop:exportsubmissions'] = 'Exportar envíos';
 $string['workshop:ignoredeadlines'] = 'Ignorar restricciones de tiempo';
 $string['workshop:manageexamples'] = 'Administrar los envíos de ejemplo';
-$string['workshopname'] = 'Nombre del taller';
 $string['workshop:overridegrades'] = 'Sobrescribir calificaciones calculadas';
 $string['workshop:peerassess'] = 'Evaluar por pares';
 $string['workshop:publishsubmissions'] = 'Publicar envíos';
@@ -387,6 +386,7 @@ $string['workshop:viewauthornames'] = 'Ver el nombre de los autores';
 $string['workshop:viewauthorpublished'] = 'Ver los autores de los envíos publicados';
 $string['workshop:viewpublishedsubmissions'] = 'Ver los envíos publicados';
 $string['workshop:viewreviewernames'] = 'Ver los nombres de los evaluadores';
+$string['workshopname'] = 'Nombre del taller';
 $string['yourassessmentfor'] = 'Su valoración para {$a}';
 $string['yourgrades'] = 'Sus calificaciones';
 $string['yoursubmission'] = 'Su envío';

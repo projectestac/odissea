@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ordering', language 'el', version '3.8'.
  *
- * @package   qtype_ordering
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ordering
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,9 @@ $string['longestorderedsubset'] = 'Μεγαλύτερο ταξινομημένο
 $string['noresponsedetails'] = 'Λυπούμαστε, δεν υπάρχουν διαθέσιμες λεπτομέρειες για την απόκριση σε αυτή την ερώτηση.';
 $string['noscore'] = 'Δεν υπάρχει βαθμός';
 $string['notenoughanswers'] = 'Οι ερωτήσεις ordering πρέπει να έχουν περισσότερες από {$a} απαντήσεις.';
+$string['pluginname_help'] = 'Αρκετά αντικείμενα εμφανίζονται με μπερδεμένη σειρά. Τα αντικείμενα μπορούν να συρθούν σε μία σειρά που βγάζει νόημα.';
 $string['pluginnameadding'] = 'Προσθήκη μίας ερώτησης Ordering';
 $string['pluginnameediting'] = 'Επεξεργασία μίας ερώτησης Ordering';
-$string['pluginname_help'] = 'Αρκετά αντικείμενα εμφανίζονται με μπερδεμένη σειρά. Τα αντικείμενα μπορούν να συρθούν σε μία σειρά που βγάζει νόημα.';
 $string['pluginnamesummary'] = 'Τοποθετήστε τα μπερδεμένα αντικείμενα σε μία σειρά που βγάζει νόημα.';
 $string['relativeallpreviousandnext'] = 'Σχετικό με ΟΛΑ τα προηγούμενα και επόμενα αντικείμενα';
 $string['relativenextexcludelast'] = 'Σχετικό με το επόμενο αντικείμενο (εξαιρουμένου του τελευταίου)';

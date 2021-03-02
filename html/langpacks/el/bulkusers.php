@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bulkusers', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'bulkusers', language 'el', version '3.8'.
  *
- * @package   bulkusers
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     bulkusers
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,11 +41,11 @@ $string['selected'] = 'Επιλεγμένοι';
 $string['selectedlist'] = 'Λίστα επιλεγμένων χρηστών...';
 $string['selectedlist_help'] = 'Χρήστες μπορούν να προστεθούν ή να αφαιρεθούν από τη λίστα των επιλεγμένων χρηστών κάνοντας κλικ στα ονόματα των χρηστών και μετά κάνοντας κλικ σε ένα κατάλληλο κουμπί. Μπορούν να επιλεγούν πολλοί χρήστες κάνοντας κλικ στα ονόματά τους κρατώντας πατημένο το πλήκτρο Apple ή Ctrl.';
 $string['users'] = 'Χρήστες';
-$string['usersfound'] = 'Βρέθηκαν {$a} χρήστες.';
 $string['users_help'] = '<h2>Λίστες χρηστών</h2>
 
 <p>Η λίστα <strong>Διαθέσιμοι</strong> συμπεριλαμβάνει τους χρήστες που ταιριάζουν στα τρέχοντα κριτήρια αναζήτησης. Για παράδειγμα, αν υπάρχει μόνο ένα ενεργό κριτήριο αναζήτησης για χρήστες των οποίων η χώρα είναι η Ρουμανία, τότε η λίστα Διαθέσιμοι θα περιλαμβάνει μόνο όσους χρήστες έχουν επιλέξει τη Ρουμανία σαν χώρα διαμονής από το προφίλ τους.</p>
 
 <p>Η λίστα <strong>Επιλεγμένοι</strong> συμπεριλαμβάνει τους χρήστες που έχουν προστεθεί σε αυτή από εσάς, με τη χρήση των επιλογών από το μενού <em>Λίστα επιλεγμένων χρηστών...</em>. Όταν πατηθεί το κουμπί <em>Εκτέλεση</em> από την περιοχή <em>Με τους επιλεγμένους χρήστες...</em>, η λειτουργία που επιλέξατε στην περιοχή αυτή θα διενεργηθεί σε όλους τους χρήστες που βρίσκονται σε αυτή τη λίστα.</p>';
+$string['usersfound'] = 'Βρέθηκαν {$a} χρήστες.';
 $string['usersinlist'] = 'Χρήστες στη λίστα';
 $string['usersselected'] = 'Επιλέχθηκαν {$a} χρήστες.';

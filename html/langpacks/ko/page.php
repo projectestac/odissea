@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'page', language 'ko', version '3.8'.
  *
- * @package   page
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     page
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,15 +39,17 @@ $string['modulename'] = '웹페이지';
 $string['modulename_help'] = '강좌 내에서 표시되고 수정될 수 있는 웹 페이지를 만들 수 있다.';
 $string['modulenameplural'] = '웹페이지';
 $string['optionsheader'] = '표시 옵션';
-$string['page:addinstance'] = '새 페이지 자원 추가';
 $string['page-mod-page-x'] = '모든 페이지 모듈 페이지';
+$string['page:addinstance'] = '새 페이지 자원 추가';
 $string['page:view'] = '페이지 내용 보기';
 $string['pluginadministration'] = '웹페이지 모듈 관리';
 $string['pluginname'] = '웹페이지';
 $string['popupheight'] = '팝업창 높이(픽셀)';
 $string['popupheightexplain'] = '팝업창의 기본 높이를 지정';
-$string['popupwidth'] = '팝업창 너비(픽셀)';
+$string['popupwidth'] = '팝업창 폭(픽셀)';
 $string['popupwidthexplain'] = '팝업창의 기본 너비를 지정';
+$string['printheading'] = '웹페이지 이름 표시';
+$string['printheadingexplain'] = '내용 상단에 웹페이지 이름을 표시할 것인가?';
 $string['printintro'] = '웹 페이지 설명 표시';
 $string['printintroexplain'] = '내용 상단에 웹페이지에 대한 설명을 표시할 것인가?';
 $string['search:activity'] = '웹페이지';

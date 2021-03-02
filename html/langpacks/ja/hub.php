@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hub', language 'ja', version '3.8'.
  *
- * @package   hub
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hub
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,9 +35,9 @@ $string['analyticsactionsnotuseful'] = '予測に有用ではないとマーク�
 $string['analyticsenabledmodels'] = '有効にされた予測モデル数 ({$a})';
 $string['analyticspredictions'] = '生成済み予測数 ({$a})';
 $string['audience'] = 'オーディエンス';
+$string['audience_help'] = 'コースが対象とするオーディエンスを選択してください。';
 $string['audienceadmins'] = 'Moodle管理者';
 $string['audienceeducators'] = '教育者';
-$string['audience_help'] = 'コースが対象とするオーディエンスを選択してください。';
 $string['audiencestudents'] = '学生';
 $string['badgesnumber'] = 'バッジ数 ({$a})';
 $string['communityremoved'] = 'あなたのリストからコースリンクが削除されました。';
@@ -154,7 +154,7 @@ $string['registerwithmoodleorginfostats'] = 'Moodle統計';
 $string['registerwithmoodleorgremove'] = 'あなたはあなたのサイトを登録解除しようとしています。続ける場合、あなたは重要な通知およびセキュリティ警告にアクセスできなくなります。あなたのユーザはMoodleモバイルアプリからプッシュ通知を受信できなくなります。本当にあなたのサイトを登録解除してもよろしいですか?';
 $string['registerwithmoodleorgupdate'] = 'あなたのサイト登録を更新する';
 $string['registrationconfirmed'] = 'サイト登録承認';
-$string['registrationconfirmedon'] = 'あなたのサイトをご登録いただきまして、ありがとうございます。「サイト登録」スケジュールタスクにより、登録情報は最新に保たれます。';
+$string['registrationconfirmedon'] = 'あなたのサイトを登録していただきまして、ありがとうございます。';
 $string['registrationinfo'] = '登録情報';
 $string['removefromhub'] = 'Moodle.netから登録解除する';
 $string['renewregistration'] = '登録を更新する';

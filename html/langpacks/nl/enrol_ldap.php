@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'nl', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -50,7 +50,6 @@ $string['course_fullname_updateonsync'] = 'Update volledige naam tijdens synchro
 $string['course_fullname_updateonsync_key'] = 'Update volledige naam';
 $string['course_idnumber'] = 'Pad naar de unique identifier in LDAP, gewoonlijk  <em>cn</em> of <em>uid</em>. Het is aangewezen de waarde vast te zetten als je automatisch aanmaken van cursussenn gebruikt.';
 $string['course_idnumber_key'] = 'ID nummer';
-$string['coursenotexistskip'] = 'Cursus {$a} bestaat niet en autocreatie is uitgeschakeld, overgeslagen';
 $string['course_search_sub'] = 'Zoek groepslidmaatschap in subcontexts';
 $string['course_search_sub_key'] = 'Doorzoek subcontexts';
 $string['course_settings'] = 'Instellingen voor het aanmelden bij cursussen';
@@ -62,6 +61,7 @@ $string['course_summary'] = 'Optioneel: LDAP-veld om de beschrijving uit te hale
 $string['course_summary_key'] = 'Samenvatting';
 $string['course_summary_updateonsync'] = 'Update samenvatting tijdens synchronisatiescript';
 $string['course_summary_updateonsync_key'] = 'Update samenvatting';
+$string['coursenotexistskip'] = 'Cursus {$a} bestaat niet en autocreatie is uitgeschakeld, overgeslagen';
 $string['courseupdated'] = 'Aanpassen cursus met IDnummer \'{$a->idnumber}\'  is gelukt.';
 $string['courseupdateskipped'] = 'Cursus met IDnummer \'{$a->idnumber}\' moet niet aangepast worden. Sla over...';
 $string['createcourseextid'] = 'CREATE gebruiker aangemeld in een onbestaande cursus \'{$a->courseextid}\'';
@@ -88,9 +88,9 @@ of \'ldaps://ldap.myorg.com/\'';
 $string['host_url_key'] = 'Host URL';
 $string['idnumber_attribute'] = 'Als het groepslidmaatschap distiguised names bevat, geef dan hetzelfde attribuut dat je gebruikt hebt voor de mapping van het gebruiker \'ID nummer\' in de LDAP authenticatieinstellingen.';
 $string['idnumber_attribute_key'] = 'ID nummer attribuut';
+$string['ldap:manage'] = 'Beheer LDAP aanmeldingsexemplaren';
 $string['ldap_encoding'] = 'Geef de encoding die de LDAP-server gebruikt. Waarschijnlijk is het utf-8, MS AD v2 gebruikt standaard platform encodering, zoals cp1252, cp 1250 enz.';
 $string['ldap_encoding_key'] = 'LDAP-encoding';
-$string['ldap:manage'] = 'Beheer LDAP aanmeldingsexemplaren';
 $string['memberattribute'] = 'LDAP member attribute';
 $string['memberattribute_isdn'] = 'Als het groepslidmaatschap distinguised names bevat, dan moet je dat hier opgeven. Als het dat doet, dan moet je de overgebleven instellingen van deze sectie configureren.';
 $string['memberattribute_isdn_key'] = 'Lidmaatschapsattribuut gebruikt dn';

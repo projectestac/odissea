@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'zh_cn', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,7 +48,6 @@ $string['course_fullname_key'] = '全名';
 $string['course_fullname_updateonsync'] = '使用同步化脚本更新课程全称';
 $string['course_idnumber'] = 'LDAP属性中的课程编号。常是“cn”或“uid”。';
 $string['course_idnumber_key'] = 'ID号';
-$string['coursenotexistskip'] = '课程 \'{$a}\' 不存在并且自动创建被禁止，正在跳过中';
 $string['course_search_sub'] = '在子场景中搜索组成员';
 $string['course_search_sub_key'] = '搜索子场景';
 $string['course_settings'] = '选课设置';
@@ -59,6 +58,7 @@ $string['course_summary'] = '可选：从哪个LDAP属性中获取简介';
 $string['course_summary_key'] = '简介';
 $string['course_summary_updateonsync'] = '使用同步化脚本更新课程摘要';
 $string['course_summary_updateonsync_key'] = '更新摘要';
+$string['coursenotexistskip'] = '课程 \'{$a}\' 不存在并且自动创建被禁止，正在跳过中';
 $string['createcourseextid'] = '创建用户选的一个不存在的课程“{$a->courseextid}”';
 $string['createnotcourseextid'] = '用户选了一个不存在的课程“{$a->courseextid}”';
 $string['creatingcourse'] = '正在创建课程 \'{$a}\'...';
@@ -80,9 +80,9 @@ $string['host_url'] = '以URL的形式指定LDAP主机，如“ldap://ldap.myorg
 $string['host_url_key'] = '主机网页地址';
 $string['idnumber_attribute'] = '如果组成员包含识别名，请使用您在LDAP认证设置中映射到用户“学号”的属性';
 $string['idnumber_attribute_key'] = '学号属性';
+$string['ldap:manage'] = '管理LDAP选课实例';
 $string['ldap_encoding'] = '指定LDAP服务器使用的编码。大多都是utf-8，但MS AD v2使用平台缺省编码，如cp1252、p1250等。';
 $string['ldap_encoding_key'] = 'LDAP编码';
-$string['ldap:manage'] = '管理LDAP选课实例';
 $string['memberattribute'] = 'LDAP用户属性';
 $string['memberattribute_isdn'] = '如果组成员包含识别名，您需要在此指定。如果包含，您还需要配置本节中的其余设置';
 $string['memberattribute_isdn_key'] = '成员属性使用dn';

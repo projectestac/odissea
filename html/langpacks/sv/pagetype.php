@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,26 +12,35 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'pagetype', language 'sv', version '3.8'.
  *
- * @package   pagetype
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     pagetype
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['page-course-report-x'] = 'Vilken kursrapport som helst';
-$string['page-course-view-x'] = 'Vilken typ av ingångssida (för kurs) som helst';
-$string['page-course-x'] = 'Vilken kurssida som helst';
-$string['page-mod-x'] = 'Vilken sida som helst för aktivitetsmodul';
+$string['page-admin-current'] = 'Nuvarande sida för webbplatsadministration';
+$string['page-admin-x'] = 'Valfri sida för webbplatsadministration';
+$string['page-course-index'] = 'Visningssida för översta kategorin';
+$string['page-course-index-category'] = 'Nuvarande sida för visning av kategorier';
+$string['page-course-index-x'] = 'Valfri sida för visning av kategorier';
+$string['page-course-report-x'] = 'Valfri kursrapport';
+$string['page-course-search'] = 'Söksida för kurser';
+$string['page-course-view-x'] = 'Vilken typ av kurs-startsida som helst';
+$string['page-course-x'] = 'Valfri kurssida';
+$string['page-mod-x'] = 'Valfri sida i aktivitetsmodul';
 $string['page-mod-x-view'] = 'Vilken ingångssida som helst för aktivitetsmodul';
-$string['page-my-index'] = 'Användarnas *Min ingångssida\'';
+$string['page-my-index'] = 'Användarnas *Min hem\' sida';
+$string['page-report-x'] = 'Valfri rapportsida';
 $string['page-site-index'] = 'Endast ingångssidan';
-$string['page-site-x'] = 'Vilken sida som helst på toppnivå på webbplatsen';
-$string['page-user-view'] = 'Endast sidor med användarnas profiler';
-$string['page-user-x'] = 'Alla sidor för användare';
-$string['page-x'] = 'Vilken sida som helst';
+$string['page-site-x'] = 'Valfri toppnivåsida på webbplatsen';
+$string['page-user-profile'] = 'Endast användarprofilsidor';
+$string['page-user-view'] = 'Endast användarprofilsidor';
+$string['page-user-x'] = 'Alla användarsidor';
+$string['page-x'] = 'Valfri sida';

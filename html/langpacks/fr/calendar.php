@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'fr', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -196,9 +196,6 @@ $string['noupcomingevents'] = 'Aucun événement à venir';
 $string['oneevent'] = '1 événement';
 $string['pollinterval'] = 'Intervalle de mise à jour';
 $string['pollinterval_help'] = 'Fréquence de mise à jour de votre calendrier';
-$string['preferences'] = 'Réglages';
-$string['preferences_available'] = 'Vos réglages personnels';
-$string['preferredcalendar'] = 'Calendrier préféré';
 $string['pref_lookahead'] = 'Événements à venir';
 $string['pref_lookahead_help'] = 'Ce paramètre détermine le nombre (maximum) de jours avant le début effectif d\'un événement pour que celui-ci soit annoncé comme événement à venir. Il n\'y a <strong>aucune garantie</strong> que tous les événements dans ce laps de temps soeint affichés : si le nombre d\'événements à venir dépasse le nombre maximal défini par le réglage « Nombre maximal d\'événements à venir »), les événements les plus récents ne seront pas affichés.';
 $string['pref_maxevents'] = 'Nombre maximal d\'événements à venir';
@@ -209,16 +206,19 @@ $string['pref_startwday'] = 'Premier jour de la semaine';
 $string['pref_startwday_help'] = 'Ce réglage définit le premier jour de la semaine et détermine la façon dont les calendriers mensuels sont affichés.';
 $string['pref_timeformat'] = 'Format d\'affichage des heures';
 $string['pref_timeformat_help'] = 'Ce réglage définit l\'affichage des heures dans le calendrier. Vous pouvez choisir le format 12 heures ou 24 heures. Si vous choisissez « Valeur par défaut », le format sera celui défini par la langue que vous utilisez dans le site.';
+$string['preferences'] = 'Réglages';
+$string['preferences_available'] = 'Vos réglages personnels';
+$string['preferredcalendar'] = 'Calendrier préféré';
 $string['privacy:metadata:calendar:event'] = 'Le composant Calendrier peut enregistrer dans le sous-système cœur des informations sur les événements de calendrier des utilisateurs.';
 $string['privacy:metadata:calendar:event:description'] = 'La description de l\'événement de calendrier.';
 $string['privacy:metadata:calendar:event:eventtype'] = 'Le type de l\'événement de calendrier.';
 $string['privacy:metadata:calendar:event:name'] = 'Le nom de l\'événement de calendrier.';
+$string['privacy:metadata:calendar:event:timeduration'] = 'La durée de l\'événement de calendrier.';
+$string['privacy:metadata:calendar:event:timestart'] = 'Le début de l\'événement de calendrier.';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'Le composant Calendrier peut enregistrer dans le sous-système cœur des informations sur les abonnements de calendrier des utilisateurs.';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'Le type d\'événement de l\'abonnement de calendrier.';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'Le nom de l\'abonnement de calendrier.';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'L\'URL de l\'abonnement de calendrier.';
-$string['privacy:metadata:calendar:event:timeduration'] = 'L\'URL de l\'abonnement de calendrier.';
-$string['privacy:metadata:calendar:event:timestart'] = 'La durée de l\'événement de calendrier.';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'La préférence de l\'utilisateur concernant l\'affichage du type d\'événement de calendrier.';
 $string['recentupcoming'] = 'Les 60 prochains jours';
 $string['repeatedevents'] = 'Événements répétés';

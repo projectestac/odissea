@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_picasa', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio_picasa', language 'gl', version '3.8'.
  *
- * @package   portfolio_picasa
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_picasa
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,9 +29,9 @@ $string['clientid'] = 'ID do cliente';
 $string['noauthtoken'] = 'Non se recibiu unha credencial de autenticación Google. Asegúrese de terlle permitido a Moodle que acceda á súa conta de Google.';
 $string['nooauthcredentials'] = 'Requírense credenciais OAuth.';
 $string['nooauthcredentials_help'] = 'Para usar o engadido do portafolios de Picasa, Ten que configurar as credenciais de OAuth nos axustes do portafolios.';
-$string['oauthinfo'] = '<p>Para usar este engadido, ten que rexistrar este sitio en Google, tal e como se describe na documentación <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do proceso de rexistro, deberá introducir o seguinte URL como «URL de redireccionamento autorizada» (Authorized Redirect URIs):</p><p>{$a->callbackurl}</p>Unha vez rexistrado, forneceráselle un ID de cliente e un segredo que poderá entón empregar para configurar todos os engadidos de Google Drive e Picasa.</p>';
+$string['oauthinfo'] = '<p>Para usar este engadido, ten que rexistrar este sitio en Google, tal e como se describe na documentación <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do proceso de rexistro, deberá introducir o seguinte URL como «URL de redireccionamento autorizada» (Authorized Redirect URIs):</p><p>{$a->callbackurl}</p>Unha vez rexistrado, forneceráselle un ID de cliente e un secreto que poderá entón empregar para configurar todos os engadidos de Google Drive e Picasa.</p>';
 $string['pluginname'] = 'Picasa';
 $string['privacy:metadata'] = 'Este engadido envía datos externamente a unha conta de Picasa ligada. Non almacena datos localmente.';
 $string['privacy:metadata:data'] = 'Datos persoais pasados a mediante o subsistema portafolios.';
-$string['secret'] = 'Segredo';
+$string['secret'] = 'Secreto';
 $string['sendfailed'] = 'Non foi posíbel transferir o ficheiro {$a} a Picasa';

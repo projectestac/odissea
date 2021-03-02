@@ -41,11 +41,22 @@ $courses = clickedu_get_courses();
 
 if ($courses) {
     if (optional_param('confirm', false, PARAM_BOOL)) {
+        $config = get_config('local_clickedu');
+
         require_sesskey();
+        //##
+        if ($config->advdebug){
+            local_clickedu_add_debug('debug:timelimit', 'local_clickedu');
+        }
+
         set_time_limit(0);
         echo html_writer::start_div('clickedu-progressbar');
         $progressbar = new progress_bar();
         $progressbar->create();
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:syncoursesinit', 'local_clickedu', count($courses));
+        }
         clickedu_sync_courses($courses, $progressbar);
         echo html_writer::end_div();
         $text = get_string('coursessynced', 'local_clickedu');

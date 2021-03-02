@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block', language 'ru', version '3.8'.
  *
- * @package   block
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -65,12 +65,12 @@ $string['privacy:metadata:userpref:hiddenblock'] = 'Записывает, ког
 $string['privacy:request:blockisdocked'] = 'Показывает, был ли блок помещен в док';
 $string['privacy:request:blockishidden'] = 'Показывает, был ли блок скрыт/свернут';
 $string['region'] = 'Область';
-$string['restrictpagetypes'] = 'Ограничить этими типами страниц:';
+$string['restrictpagetypes'] = 'Ограничить этими типами страниц';
 $string['showblock'] = 'Показать блок «{$a}»';
 $string['showoncontextandsubs'] = 'Показывать на «{$a}» и любых подстраницах';
 $string['showoncontextonly'] = 'Показывать только на странице «{$a}»';
-$string['showonentiresite'] = 'Отображать на всём сайте';
-$string['showonfrontpageandsubs'] = 'Отображать на главной странице и на всех страницах, добавленных к главной';
+$string['showonentiresite'] = 'Отображать на всем сайте';
+$string['showonfrontpageandsubs'] = 'Показывать на главной странице и на всех страницах, добавленных к главной';
 $string['showonfrontpageonly'] = 'Отображать только на главной странице';
 $string['subpages'] = 'Выберите страницы';
 $string['thisspecificpage'] = 'Эта конкретная страница';

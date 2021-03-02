@@ -41,6 +41,8 @@ $PAGE->set_heading($COURSE->fullname);
 
 clickedu_require_token();
 
+$config = get_config('local_clickedu');
+
 echo $OUTPUT->header();
 
 $contents = clickedu_get_contents($PAGE->course);
@@ -52,6 +54,11 @@ if ($contents) {
         echo html_writer::start_div('clickedu-progressbar');
         $progressbar = new progress_bar();
         $progressbar->create();
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentbegin', 'local_clickedu', $PAGE->course);
+        }
+
         clickedu_sync_contents($PAGE->course, $contents, $progressbar);
         echo html_writer::end_div();
         $text = get_string('contentssynced', 'local_clickedu');

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'ar', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,15 +30,15 @@ $string['activemethodinfonone'] = 'لم يتم اختيار الطريقة ال�
 $string['changeactivemethod'] = 'غيِّر الطريقة النشطة لمنح العلامات إلى';
 $string['clicktoclose'] = 'انقر للإغلاق';
 $string['error:notinrange'] = 'علامة غير صحيحة \'{$a->grade}\' تم تقديمها. العلامات ينبغي أن تتراوح ما بين 0 و {$a->maxgrade}.';
-$string['exc_gradingformelement'] = 'غير قادر على إنشاء نموذج العلامات';
+$string['exc_gradingformelement'] = 'غير قادر على إنشاء نموذج الدرجات';
 $string['formnotavailable'] = 'تم اختيار طريقة التقييم المتقدم لاستخدامها ولكن نموذج التقييم غير مُتاح حتى الان. تحتاج إلى تعريف النموذج أولاً من خلال الرابط الموجود في كتلة الإعدادات';
 $string['gradingformunavailable'] = 'الرجاء الانتباه: نموذج التقييم المُتقدم غيرجاهز حتى الان.سيتم استخدام طريقة التقييم البسيطة حتى يكون النموذج جاهز.';
 $string['gradingmanagement'] = 'تقييم متقدم';
 $string['gradingmanagementtitle'] = 'منح العلامات المتقدم: {$a->component} ({$a->area})';
 $string['gradingmethod'] = 'طريقة التقييم';
-$string['gradingmethod_help'] = 'إختر طريقة التقييم المتقدمة التي ستستخدم لاحتساب العلامات في هذا السياق.
+$string['gradingmethod_help'] = 'اختر طريقة التقييم المتقدمة التي ستستخدم لاحتساب العلامات في هذا السياق.
 
-لإلغاء التقييم المتقدم والعودة إلى طريقة التقييم الافتراضية، إختر \'تقييم بسيط ومباشر\'.';
+لإلغاء التقييم المتقدم والعودة لطريقة التقييم الافتراضية، اختر "تقييم بسيط ومباشر".';
 $string['gradingmethodnone'] = 'تقييم بسيط ومباشر';
 $string['gradingmethods'] = 'طرق التقييم';
 $string['manageactionclone'] = 'إنشاء نموذج تقييم جديد من القالب';
@@ -58,10 +58,10 @@ $string['manageactionshareconfirm'] = 'أنت بصدد حفظ نسخة من نم
 $string['manageactionsharedone'] = 'تم حفظ النموذج بنجاح كقالب';
 $string['noitemid'] = 'التقييم غير ممكن. عنصر التقييم غير موجود';
 $string['nosharedformfound'] = 'لم يتم إيجاد القالب';
-$string['privacy:metadata:grading_definitions'] = 'معلومات أساسية عن نموذج منح علامات متقدم والمعرفة في منطقة قابلة لمنح العلامات';
-$string['privacy:metadata:grading_definitions:areaid'] = 'مُعرَّف المنطقة التي تم فيها تعريف نموذج منح العلامات المتقدم';
-$string['privacy:metadata:grading_definitions:copiedfromid'] = 'مُعرَّف تعريف منح العلامات من حيث تم نسخ هذا';
-$string['privacy:metadata:grading_definitions:description'] = 'وصف طريقة منح العلامات المتقدمة';
+$string['privacy:metadata:grading_definitions'] = 'معلومات أساسية عن نموذج منح علامات متقدم والمعرفة في منطقة قابلة لمنح العلامات.';
+$string['privacy:metadata:grading_definitions:areaid'] = 'مُعرَّف المنطقة التي تم فيها تعريف نموذج منح العلامات المتقدم.';
+$string['privacy:metadata:grading_definitions:copiedfromid'] = 'مُعرَّف تعريف منح العلامات من حيث تم نسخ هذا.';
+$string['privacy:metadata:grading_definitions:description'] = 'وصف طريقة منح العلامات المتقدمة.';
 $string['privacy:metadata:grading_definitions:method'] = 'طريقة منح العلامات المسؤولة عن التعريف';
 $string['privacy:metadata:grading_definitions:name'] = 'اسم تعريف طريقة منح العلامات المتقدمة';
 $string['privacy:metadata:grading_definitions:options'] = 'بعض إعدادت تعريف منح العلامات هذا';
@@ -71,7 +71,6 @@ $string['privacy:metadata:grading_definitions:timecreated'] = 'وقت إنشاء
 $string['privacy:metadata:grading_definitions:timemodified'] = 'وقت التعديل الأخير لتعريف منح العلامات';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'مُعرَّف المستخدم الذي أنشأ تعريف منح العلامات';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'مُعرَّف المستخدم الذي أجرى آخر تعديل على تعريف منح العلامات';
-$string['privacy:metadata:gradingformpluginsummary'] = 'بيانات لطريقة منح العلامات';
 $string['privacy:metadata:grading_instances'] = 'سجل التقييم لفقرة واحدة قابلة لمنح العلامة والمُقيَّمة من قبل مُقيِّم واحد';
 $string['privacy:metadata:grading_instances:feedback'] = 'الإفادة المقدمة من قبل المستخدم';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'تنسيق النص للإفادة المقدمة من قبل المستخدم';
@@ -79,6 +78,7 @@ $string['privacy:metadata:grading_instances:raterid'] = 'مُعرَّف المس
 $string['privacy:metadata:grading_instances:rawgrade'] = 'علامة عينة منح العلامة';
 $string['privacy:metadata:grading_instances:status'] = 'حالة عينة منح العلامة هذه';
 $string['privacy:metadata:grading_instances:timemodified'] = 'وقت آخر تعديل على عينة منح العلامة';
+$string['privacy:metadata:gradingformpluginsummary'] = 'بيانات لطريقة منح العلامات';
 $string['searchownforms'] = 'ضمِّن نماذجي الخاصة';
 $string['searchtemplate'] = 'البحث في نماذج التقييم';
 $string['searchtemplate_help'] = 'يمكنك البحث عن نموذج منح العلامات واستعماله بمثابة قالب لنموذج منح العلامات الجديد هنا. ببساطة، أدخل الكلمات التي تتوقع وجودها في تسمية النموذج، وصفه، أو متن النموذج نفسه. للبحث عن عبارة كاملة كما هي، ضع كلماتها بين علامتي اقتباس مزدوج.

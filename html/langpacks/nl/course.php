@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'course', language 'nl', version '3.8'.
  *
- * @package   course
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     course
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,18 +30,18 @@ $string['aria:courseimage'] = 'Cursusafbeelding';
 $string['aria:coursename'] = 'Cursusnaam';
 $string['aria:courseshortname'] = 'Cursus korte naam';
 $string['aria:favourite'] = 'Cursus heeft ster';
-$string['coursealreadyfinished'] = 'De cursus is al afgelopen';
-$string['coursenotyetfinished'] = 'De cursus is nog niet afgelopen';
+$string['coursealreadyfinished'] = 'Cursus reeds geëindigd';
+$string['coursenotyetfinished'] = 'De cursus is nog niet geëindigd';
 $string['coursenotyetstarted'] = 'De cursus is nog niet begonnen';
 $string['coursetoolong'] = 'De cursus is te lang';
 $string['customfield_islocked'] = 'Vergrendeld';
 $string['customfield_islocked_help'] = 'Als het veld is vergrendeld, kunnen alleen gebruikers met de mogelijkheid om vergrendelde aangepaste velden te wijzigen (standaard gebruikers met alleen de standaardrol van manager) dit in de cursusinstellingen wijzigen.';
 $string['customfield_notvisible'] = 'Niemand';
-$string['customfieldsettings'] = 'Gemeenschappelijke cursusinstellingen voor aangepaste velden';
 $string['customfield_visibility'] = 'Zichtbaar voor';
 $string['customfield_visibility_help'] = 'Deze instelling bepaalt wie de aangepaste veldnaam en -waarden kan zien in de lijst met cursussen of in de aangepaste veldenfilter of op de startpagina.';
 $string['customfield_visibletoall'] = 'Iedereen';
-$string['customfield_visibletoteachers'] = 'Docenten';
+$string['customfield_visibletoteachers'] = 'Leraren';
+$string['customfieldsettings'] = 'Gemeenschappelijke cursusinstellingen voor aangepaste velden';
 $string['errorendbeforestart'] = 'De einddatum ({$a}) is vóór de startdatum van de cursus.';
 $string['favourite'] = 'Favoriete cursus';
 $string['gradetopassnotset'] = 'Deze cursus heeft geen cijfer om te slagen ingesteld. Het kan worden ingesteld in het cijfer van de cursus (cijferlijst-instelling).';
@@ -75,6 +75,15 @@ $string['target:coursedropout'] = 'Leerlingen die het risico lopen om te stoppen
 $string['target:coursedropout_help'] = 'Dit doel beschrijft of de leerling het risico loopt om met de cursus te stoppen.';
 $string['target:coursegradetopass'] = 'Leerlingen die het risico lopen het minimumcijfer voor de cursus niet te behalen';
 $string['target:coursegradetopass_help'] = 'Dit doel beschrijft of de leerling het risico loopt het minimumcijfer voor de cursus niet te behalen.';
+$string['target:noaccesssincecoursestart'] = 'Leerlingen die nog geen toegang hebben gehad tot de cursus';
+$string['target:noaccesssincecoursestart_help'] = 'Dit doel beschrijft leerlingen die nooit toegang hebben gehad tot een cursus waarvoor ze zijn ingeschreven.';
+$string['target:noaccesssincecoursestartinfo'] = 'Volgende leerlingen zijn aangemeld in een cursus die begonnen is, maar ze hebben de cursus nog nooit bezocht.';
+$string['target:norecentaccesses'] = 'Leerlingen die recent geen toegang hebben gehad tot de cursus';
+$string['target:norecentaccesses_help'] = 'Dit doel beschrijft leerlingen die aangemeld zijn in een cursus maar die de cursus niet bezocht hebben binnen het analyse-interval (standaard afgelopen maand).';
+$string['target:norecentaccessesinfo'] = 'Volgende leerlingen die aangemeld zijn in een cursus hebben die cursus niet bezocht binnen het analyse-interval (standaard afgelopen maand).';
+$string['target:noteachingactivity'] = 'Cursussen die waarschijnlijk niet zullen starten';
+$string['target:noteachingactivity_help'] = 'Dit doel beschrijft of cursussen die in de komende week starten, lesactiviteiten zullen hebben.';
+$string['target:noteachingactivityinfo'] = 'Volgende cursussen die de komende dagen zullen starten hebben een probleem want er zijn geen leerlingen of leraren in aangemeld';
 $string['targetlabelstudentcompetenciesno'] = 'Leerling die waarschijnlijk de competenties behaalt die aan een cursus zijn toegewezen';
 $string['targetlabelstudentcompetenciesyes'] = 'Leerling die het risico loopt  de competenties die aan een cursus zijn toegewezen niet te behalen';
 $string['targetlabelstudentcompletionno'] = 'Leerling die waarschijnlijk voldoet aan de voorwaarden voor het voltooien van de cursus';
@@ -85,12 +94,3 @@ $string['targetlabelstudentgradetopassno'] = 'Leerling die waarschijnlijk het mi
 $string['targetlabelstudentgradetopassyes'] = 'Leerling loopt het risico om het minimumcijfer om te slagen voor de cursus niet te halen.';
 $string['targetlabelteachingno'] = 'Cursussen die waarschijnlijk niet zullen starten';
 $string['targetlabelteachingyes'] = 'Gebruikers met onderwijsmogelijkheden die toegang hebben tot de cursus';
-$string['target:noaccesssincecoursestart'] = 'Leerlingen die nog geen toegang hebben gehad tot de cursus';
-$string['target:noaccesssincecoursestart_help'] = 'Dit doel beschrijft leerlingen die nooit toegang hebben gehad tot een cursus waarvoor ze zijn ingeschreven.';
-$string['target:noaccesssincecoursestartinfo'] = 'Volgende leerlingen zijn aangemeld in een cursus die begonnen is, maar ze hebben de cursus nog nooit bezocht.';
-$string['target:norecentaccesses'] = 'Leerlingen die recent geen toegang hebben gehad tot de cursus';
-$string['target:norecentaccesses_help'] = 'Dit doel beschrijft leerlingen die aangemeld zijn in een cursus maar die de cursus niet bezocht hebben binnen het analyse-interval (standaard afgelopen maand).';
-$string['target:norecentaccessesinfo'] = 'Volgende leerlingen die aangemeld zijn in een cursus hebben die cursus niet bezocht binnen het analyse-interval (standaard afgelopen maand).';
-$string['target:noteachingactivity'] = 'Cursussen die waarschijnlijk niet zullen starten';
-$string['target:noteachingactivity_help'] = 'Dit doel beschrijft of cursussen die in de komende week starten, lesactiviteiten zullen hebben.';
-$string['target:noteachingactivityinfo'] = 'Volgende cursussen die de komende dagen zullen starten hebben een probleem want er zijn geen leerlingen of leraren in aangemeld';

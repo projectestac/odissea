@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_navigation', language 'ru', version '3.8'.
  *
- * @package   block_navigation
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_navigation
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['courseactivities'] = 'Категории, курсы и элементы курсов';
-$string['courses'] = 'категорий и курсов';
-$string['coursestructures'] = 'категорий, курсов и разделов курсов';
+$string['courses'] = 'Категории и курсы';
+$string['coursestructures'] = 'Категории, курсы и структура курсов';
 $string['enabledockdesc'] = 'Разрешить пользователям перемещать этот блок в док';
 $string['everything'] = 'всего';
 $string['expansionlimit'] = 'Создавать элементы навигации для';
@@ -36,7 +36,7 @@ $string['navigation:addinstance'] = 'Добавлять новый блок «Н
 $string['navigation:myaddinstance'] = 'Добавлять новый блок «Навигация» на страницу «Личный кабинет»';
 $string['pluginname'] = 'Навигация';
 $string['privacy:metadata'] = 'Блок «Навигация» только показывает данные, хранящиеся в других местах.';
-$string['trimlength'] = 'До скольки символов обрезать строки';
+$string['trimlength'] = 'До скольких символов обрезать строки';
 $string['trimmode'] = 'Режим обрезки строк';
 $string['trimmodecenter'] = 'Вырезать из середины строки';
 $string['trimmodeleft'] = 'Обрезать символы слева';

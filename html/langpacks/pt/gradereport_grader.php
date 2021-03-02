@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradereport_grader', language 'pt', version '3.8'.
  *
- * @package   gradereport_grader
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradereport_grader
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,8 +34,8 @@ $string['eventgradereportviewed'] = 'Relatório de avaliador visualizado';
 $string['grader:manage'] = 'Gerir relatório de avaliação';
 $string['grader:view'] = 'Ver o relatório de avaliação';
 $string['overriddengrade'] = 'Nota ajustada';
-$string['pluginname'] = 'Relatório do avaliador';
-$string['preferences'] = 'Preferências do relatório do avaliador';
+$string['pluginname'] = 'Pauta do avaliador';
+$string['preferences'] = 'Preferências da pauta do avaliador';
 $string['privacy:metadata:preference:grade_report_aggregationposition'] = 'Se as colunas total da categoria e a disciplina são exibidas em primeiro ou último lugar na pauta';
 $string['privacy:metadata:preference:grade_report_averagesdecimalpoints'] = 'O número de casas decimais a mostrar em cada média ou se é usado o total de casas decimais configurado para a categoria ou item da pauta (herdar)';
 $string['privacy:metadata:preference:grade_report_averagesdisplaytype'] = 'Se a média (média) é exibida como nota simples, percentagem ou letras, ou se é usado o tipo de exibição configurado para a categoria ou item da pauta (herdar)';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_messageinbound', language 'ca', version '3.8'.
  *
- * @package   tool_messageinbound
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_messageinbound
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,15 +43,15 @@ $string['handlerdisabled'] = 'S\'ha inhabilitat el gestor de correu amb el qual 
 $string['incomingmailconfiguration'] = 'Configuració del correu electrònic entrant';
 $string['incomingmailserversettings'] = 'Paràmetres del servidor del correu electrònic entrant';
 $string['incomingmailserversettings_desc'] = 'Moodle té la capacitat de connectar-se a servidors IMAP configurats de manera apropiada. Podeu especificar els paràmetres que heu utilitzat per connectar-vos al vostre servidor IMAP aquí.';
-$string['invalidrecipientdescription'] = 'El missatge «{$a->subject}» no s\'ha pogut autenticar, ja que fou enviat des d\'una adreça de correu diferent a la del perfil de l\'usuari. Per tal que el missatge es pugui autenticar us cal respondre a aquest missatge.';
-$string['invalidrecipientdescriptionhtml'] = 'El missatge «{$a->subject}» no s\'ha pogut autenticar, ja que fou enviat des d\'una adreça de correu diferent a la del perfil de l\'usuari. Per tal que el missatge es pugui autenticar us cal respondre a aquest missatge.';
-$string['invalidrecipientfinal'] = 'El missatge «{$a->subject}» no s\'ha pogut autenticar. Comproveu que esteu enviant el vostre missatge des de la mateixa adreça de correu que teniu al vostre perfil.';
 $string['invalid_recipient_handler'] = 'Si es rep un missatge vàlid, però el remitent no pot ser autenticat, aquest missatge s\'emmagatzema al servidor de correu, i es contacta amb l\'usuari emprant l\'adreça electrònica del seu perfil d\'usuari. Es dóna a l\'usuari l\'oportunitat de respondre per confirmar l\'autenticitat del missatge original.
 
 Aquest gestor processa aquestes respostes.
 
 No es pot inhabilitar la verificació del remitent d\'aquest gestor, perquè és possible que l\'usuari respongui des d\'una adreça electrònica incorrecta, si el seu client de configuració és incorrecte.';
 $string['invalid_recipient_handler_name'] = 'Gestor de destinatari invàlid';
+$string['invalidrecipientdescription'] = 'El missatge «{$a->subject}» no s\'ha pogut autenticar, ja que fou enviat des d\'una adreça de correu diferent a la del perfil de l\'usuari. Per tal que el missatge es pugui autenticar us cal respondre a aquest missatge.';
+$string['invalidrecipientdescriptionhtml'] = 'El missatge «{$a->subject}» no s\'ha pogut autenticar, ja que fou enviat des d\'una adreça de correu diferent a la del perfil de l\'usuari. Per tal que el missatge es pugui autenticar us cal respondre a aquest missatge.';
+$string['invalidrecipientfinal'] = 'El missatge «{$a->subject}» no s\'ha pogut autenticar. Comproveu que esteu enviant el vostre missatge des de la mateixa adreça de correu que teniu al vostre perfil.';
 $string['mailbox'] = 'Nom de la bústia';
 $string['mailboxconfiguration'] = 'Configuració de la bústia';
 $string['mailboxdescription'] = '[bústia]+subadreça@[domini]';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'pt', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,16 +33,16 @@ $string['backtomainview'] = 'Voltar à página principal XMLDB';
 $string['cannotuseidfield'] = 'Não é possível inserir o campo "ID". É uma coluna autonumerada';
 $string['change'] = 'Alterar';
 $string['charincorrectlength'] = 'Tamanho incorreto para o campo de texto';
-$string['checkbigints'] = 'Verificar inteiros';
 $string['check_bigints'] = 'Procurar inteiros incorretos na BD';
-$string['checkdefaults'] = 'Verificar predefinições';
 $string['check_defaults'] = 'Procurar valores predefinidos inconsistentes';
-$string['checkforeignkeys'] = 'Verificar chaves estrangeiras';
 $string['check_foreign_keys'] = 'Procurar violações de chaves estrangeiras';
-$string['checkindexes'] = 'Verificar índices';
 $string['check_indexes'] = 'Procurar indíces da BD em falta';
-$string['checkoraclesemantics'] = 'Verificar semântica';
 $string['check_oracle_semantics'] = 'Procurar por semânticas de comprimento errado';
+$string['checkbigints'] = 'Verificar inteiros';
+$string['checkdefaults'] = 'Verificar predefinições';
+$string['checkforeignkeys'] = 'Verificar chaves estrangeiras';
+$string['checkindexes'] = 'Verificar índices';
+$string['checkoraclesemantics'] = 'Verificar semântica';
 $string['completelogbelow'] = '(ver abaixo o registo completo da pesquisa)';
 $string['confirmcheckbigints'] = 'Esta funcionalidade vai procurar <a href="https://tracker.moodle.org/browse/MDL-11038">campos inteiros potencialmente errados</a> no seu servidor Moodle, gerando (mas não executando!) automaticamente os comandos SQL necessários para ter todos os campos inteiros da sua BD definidos corretamente.
 
@@ -152,12 +152,12 @@ $string['missingindexes'] = 'Encontrados índices em falta';
 $string['mustselectonefield'] = 'Deve selecionar um campo para ver as ações relacionadas!';
 $string['mustselectoneindex'] = 'Deve selecionar um índice para ver as ações relacionadas!';
 $string['mustselectonekey'] = 'Deve selecionar uma chave para ver as ações relacionadas!';
+$string['new_table_from_mysql'] = 'Nova tabela do MySQL';
 $string['newfield'] = 'Novo campo';
 $string['newindex'] = 'Novo índice';
 $string['newkey'] = 'Nova chave';
 $string['newtable'] = 'Nova tabela';
 $string['newtablefrommysql'] = 'Nova tabela do MySQL';
-$string['new_table_from_mysql'] = 'Nova tabela do MySQL';
 $string['nofieldsspecified'] = 'Não foram especificados campos';
 $string['nomasterprimaryuniquefound'] = 'A(s) coluna(s) que a chave externa referencia devem estar incluídas numa chave primária ou única na tabela referenciada. Tenha em atenção que, a coluna estar num índice único não é suficiente.';
 $string['nomissingindexesfound'] = 'Não foram encontrados índices em falta, a sua BD não necessita de ações subsequentes.';
@@ -166,14 +166,14 @@ $string['noreftablespecified'] = 'Tabela de referência especificada não encont
 $string['noviolatedforeignkeysfound'] = 'Não foram encontradas violações de chaves estrangeiras';
 $string['nowrongdefaultsfound'] = 'Não foram encontradas predefinições inconsistentes. A sua BD não necessita de ações subsequentes.';
 $string['nowrongintsfound'] = 'Não foram encontrados inteiros errados. A sua BD não necessita de ações subsequentes.';
-$string['nowrongoraclesemanticsfound'] = 'Não foram encontradas colunas Oracle usando semânticas BYTE. A sua BD não necessita de ações subsequentes.';
+$string['nowrongoraclesemanticsfound'] = 'Não foram encontradas colunas Oracle usando semânticas BYTE, a sua BD não necessita de ações subsequentes.';
 $string['numberincorrectdecimals'] = 'Número incorreto de decimais para campo numérico';
 $string['numberincorrectlength'] = 'Tamanho incorreto para campo numérico';
 $string['numberincorrectwholepart'] = 'Parte de número inteiro muito grande para o campo de número';
 $string['pendingchanges'] = 'Nota: Fez alterações a este ficheiro. Estas podem ser guardadas a qualquer momento.';
 $string['pendingchangescannotbesaved'] = 'Existem alterações a este ficheiro mas não podem ser guardadas! Verifique que tanto a diretoria como o ficheiro "install.xml" têm permissões de escrita para o servidor web.';
 $string['pendingchangescannotbesavedreload'] = 'Existem alterações a este ficheiro mas não podem ser guardadas! Verifique que tanto a diretoria como o ficheiro "install.xml" têm permissões de escrita para o servidor web. Em seguida, atualize/recarregue esta página e deverá estar em condições de poder guardar as alterações.';
-$string['persistentfieldscomplete'] = 'Foram adicionados os campos seguintes:';
+$string['persistentfieldscomplete'] = 'Foram adicionados os seguintes campos:';
 $string['persistentfieldsconfirm'] = 'Pretende adicionar os seguintes campos:';
 $string['persistentfieldsexist'] = 'Já existem os campos seguintes:';
 $string['pluginname'] = 'Editor XMLDB';
@@ -199,15 +199,15 @@ $string['unknowntable'] = 'Refere-se a uma tabela desconhecida';
 $string['unload'] = 'Anular carregamento';
 $string['up'] = 'Para cima';
 $string['view'] = 'Ver';
-$string['viewedited'] = 'Ver editado';
-$string['vieworiginal'] = 'Ver original';
-$string['viewphpcode'] = 'Ver código PHP';
 $string['view_reserved_words'] = 'Ver palavras reservadas';
-$string['viewsqlcode'] = 'Ver código SQL';
 $string['view_structure_php'] = 'Ver estrutura PHP';
 $string['view_structure_sql'] = 'Ver estrutura SQL';
 $string['view_table_php'] = 'Ver tabela PHP';
 $string['view_table_sql'] = 'Ver tabela SQL';
+$string['viewedited'] = 'Ver editado';
+$string['vieworiginal'] = 'Ver original';
+$string['viewphpcode'] = 'Ver código PHP';
+$string['viewsqlcode'] = 'Ver código SQL';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Chaves estrangeiras violadas';
 $string['violatedforeignkeysfound'] = 'Chaves estrangeiras violadas encontradas';

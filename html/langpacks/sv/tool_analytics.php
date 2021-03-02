@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'sv', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -71,15 +71,15 @@ $string['evaluatemodel'] = 'Utvärdera modell';
 $string['evaluationinbatches'] = 'Webbplatsinnehållet beräknas och lagras i batchar. Utvärderingsprocessen kan avbrytas
  när som helst. Nästa gång den körs fortsätter den från den punkt då den stoppades.';
 $string['evaluationmode'] = 'Utvärderingsläge';
-$string['evaluationmodecolconfiguration'] = 'Konfiguration';
-$string['evaluationmodecoltrainedmodel'] = 'Tränad modell';
-$string['evaluationmodeconfiguration'] = 'Utvärderar modellkonfigurationen';
 $string['evaluationmode_help'] = 'Det finns två utvärderingslägen:
 
 * Tränad modell - Webbplatsdata används som testdata för att utvärdera den tränade modellens riktighet.
 * Konfiguration - Webbplatsdata delas upp i tränings- och testdata, för att både träna och testa korrektheten i modellkonfigurationen.
 
 Tränad modell är endast tillgänglig om en tränad modell har importerats till webbplatsen, och ännu inte har tränats på nytt med hjälp av webbplatsdata.';
+$string['evaluationmodecolconfiguration'] = 'Konfiguration';
+$string['evaluationmodecoltrainedmodel'] = 'Tränad modell';
+$string['evaluationmodeconfiguration'] = 'Utvärderar modellkonfigurationen';
 $string['evaluationmodeinfo'] = 'Den här modellen har importerats till webbplatsen. Du kan antingen utvärdera modellens prestanda eller utvärdera prestandan för modellkonfigurationen med hjälp av webbplatsdata.';
 $string['evaluationmodetrainedmodel'] = 'Utvärdera den tränade modellen';
 $string['executescheduledanalysis'] = 'Utför schemalagd analys';
@@ -104,8 +104,11 @@ $string['insightsreport'] = 'Insiktsrapport';
 $string['invalidanalysables'] = 'Ogiltiga webbplatselement';
 $string['invalidanalysablesinfo'] = 'Den här sidan listar analysbara element som inte kan användas av den här förutsägelsemodellen. De listade elementen kan varken användas för att träna förutsägelsemodellen eller erhålla förutsägelser för dem.';
 $string['invalidanalysablestable'] = 'Tabellen över ogiltig alyserbara element för webbplatsen';
+$string['invalidcurrenttimesplitting'] = 'Nuvarande analysintervall är ogiltigt för målet för denna modell. Vänligen välj ett annat intervall.';
 $string['invalidindicatorsremoved'] = 'En ny modell har lagts till. De indikatorer som inte fungerar för det valda målet har tagits bort.';
 $string['invalidprediction'] = 'Ogiltig för att hämta förutsägelser';
+$string['invalidtimesplitting'] = 'Det valda analysintervallet är ogiltigt för det valda målet.';
+$string['invalidtimesplittinginmodels'] = 'Analysintervallet som används för några av modellerna är ogiltigt. Vänligen välj ett annat intervall för följande modeller: {$a}';
 $string['invalidtraining'] = 'Ogiltig för att tgräna modellen';
 $string['loginfo'] = 'Logga extra info';
 $string['missingmoodleversion'] = 'Importerad fil specificerar inte ett versionsnummer';
@@ -113,6 +116,7 @@ $string['modelid'] = 'Modell-ID';
 $string['modelinvalidanalysables'] = 'Ogiltiga analysbara element för "{$a}"-modellen';
 $string['modelname'] = 'Modellnamn';
 $string['modelresults'] = '{$a}-resultat';
+$string['modeltimesplitting'] = 'Analysintervall';
 $string['newmodel'] = 'Ny modell';
 $string['nextpage'] = 'Nästa sida';
 $string['noactionsfound'] = 'Användare har inte utfört några åtgärder på de genererade insikterna.';

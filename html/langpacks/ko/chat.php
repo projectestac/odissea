@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'chat', language 'ko', version '3.8'.
  *
- * @package   chat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     chat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = '대화방 일정이 다가오고 있습니다.';
 $string['ajax'] = 'Ajax 사용판';
 $string['autoscroll'] = '자동 스크롤';
-$string['beep'] = '호출';
+$string['beep'] = '빕~';
 $string['bubble'] = '버블';
 $string['cantlogin'] = '대화방에 입장할 수 없음!!';
 $string['chat:addinstance'] = '새 대화방 추가';
@@ -36,11 +36,11 @@ $string['chat:chat'] = '대화방 입실';
 $string['chat:deletelog'] = '대화 기록 삭제';
 $string['chat:exportparticipatedsession'] = '참여한 대화방 세션 내보내기';
 $string['chat:exportsession'] = '모든 대화방 세션 내보내기';
-$string['chatintro'] = '머리말';
-$string['chatname'] = '대화방 이름';
 $string['chat:readlog'] = '대화 기록 읽기';
-$string['chatreport'] = '대화방 보고서';
 $string['chat:talk'] = '대화하기';
+$string['chatintro'] = '설명';
+$string['chatname'] = '대화방 이름';
+$string['chatreport'] = '대화방 보고서';
 $string['chattime'] = '다음 대화 시각';
 $string['compact'] = '컴팩트';
 $string['composemessage'] = '메세지 작성';
@@ -78,7 +78,7 @@ $string['messagebeepseveryone'] = '{$a}가 모든 사람을 호출했음!';
 $string['messagebeepsyou'] = '{$a}가 나를 호출했음!';
 $string['messageenter'] = '{$a} 대화방에 들어옴';
 $string['messageexit'] = '{$a} 대화방을 나감';
-$string['messages'] = '메시지';
+$string['messages'] = '쪽지';
 $string['messageyoubeep'] = '{$a}를 호출';
 $string['method'] = '채팅 방법';
 $string['methodajax'] = 'Ajax 사용';
@@ -87,17 +87,17 @@ $string['methodnormal'] = '일반 방법';
 $string['modulename'] = '대화방';
 $string['modulename_help'] = '대화방 모률은 참석자들이 온라인 상에서 실시간으로 토론을 할 수 있게 합니다. 이는 비 실시간으로 제공되는 포럼과는 달리, 대화방을 이용하여 논제를 토론하고 서로간의 이해를 증진시키는 데 유용합니다. ';
 $string['modulenameplural'] = '대화모음';
-$string['neverdeletemessages'] = '메시지 삭제 금지';
+$string['neverdeletemessages'] = '쪽지 삭제 금지';
 $string['nextsession'] = '다음번 예정된 대화';
-$string['nochat'] = '대화방 없음';
 $string['no_complete_sessions_found'] = '완료된 대화 없음';
+$string['nochat'] = '대화방 없음';
 $string['noguests'] = '손님은 이용권한 없음';
-$string['nomessages'] = '아직 메시지 없음';
+$string['nomessages'] = '아직 쪽지 없음';
 $string['nopermissiontoseethechatlog'] = '대화 기록을 볼 수 있는 권한이 없음';
 $string['normalkeepalive'] = '연결유지';
 $string['normalstream'] = '스트림';
 $string['noscheduledsession'] = '예정된 대화방 없음';
-$string['notallowenter'] = '대화방 입장이 허용되지 않음';
+$string['notallowenter'] = '대화방 입장이 허용되지 않습니다';
 $string['notlogged'] = '아직 로그인하지 않았습니다.';
 $string['oldping'] = '연결 해제 한계값';
 $string['page-mod-chat-x'] = '모든 대화방 모듈 페이지';
@@ -106,7 +106,7 @@ $string['pluginadministration'] = '대화방 관리';
 $string['pluginname'] = '대화방';
 $string['refreshroom'] = '대화방 새로 고침';
 $string['refreshuserlist'] = '사용자 새로 고침';
-$string['removemessages'] = '모든 메시지 삭제';
+$string['removemessages'] = '모든 쪽지 삭제';
 $string['repeatdaily'] = '매일 같은 시간에';
 $string['repeatnone'] = '반복 없이 지정된 시간에만 공개';
 $string['repeattimes'] = '세션 반복/게시 횟수';
@@ -121,7 +121,7 @@ $string['serverip'] = '서버 아이피';
 $string['servermax'] = '최대 참여자';
 $string['serverport'] = '서버 포트';
 $string['sessions'] = '대화 세션';
-$string['sessionstart'] = '대화방 세션이 {$a} 에 시작할 것입니다.';
+$string['sessionstart'] = '대화방 세션이 {$a->date}에 시작됩니다, (지금부터 {$a->fromnow})';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = '종료된 대화 공개 여부';
 $string['studentseereports_help'] = '아니오로 설정해 놓으면, 사용자 중 mod/chat:readlog 능력을 지닌 사람들만 대화 기록을 볼 수 있게 된다.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,26 +12,27 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignment', language 'en', version '3.8'.
  *
- * @package   assignment
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignment
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignment:addinstance'] = 'Add a new assignment';
-$string['assignmentdisabled'] = 'The legacy "Assignment 2.2" activity is disabled.';
 $string['assignment:exportownsubmission'] = 'Export own submission';
 $string['assignment:exportsubmission'] = 'Export submission';
 $string['assignment:grade'] = 'Grade assignment';
-$string['assignmentneedsupgrade'] = 'The legacy "Assignment 2.2" activity has been removed.';
 $string['assignment:submit'] = 'Submit assignment';
 $string['assignment:view'] = 'View assignment';
+$string['assignmentdisabled'] = 'The legacy "Assignment 2.2" activity is disabled.';
+$string['assignmentneedsupgrade'] = 'The legacy "Assignment 2.2" activity has been removed.';
 $string['messageprovider:assignment_updates'] = 'Assignment (2.2) notifications';
 $string['modulename'] = 'Assignment 2.2 (Disabled)';
 $string['modulename_help'] = 'Legacy activity module that has been removed from Moodle.';
@@ -43,10 +43,6 @@ $string['page-mod-assignment-x'] = 'Any assignment module page';
 $string['pluginadministration'] = 'Assignment 2.2 (Disabled) administration';
 $string['pluginname'] = 'Assignment 2.2 (Disabled)';
 $string['privacy:markedsubmissionspath'] = 'markedsubmissions';
-$string['privacy:metadata:assignmentfilter'] = 'Filter preference of assignment submissions.';
-$string['privacy:metadata:assignmentmailinfo'] = 'Mail info preference for assignment submissions.';
-$string['privacy:metadata:assignmentperpage'] = 'Number of assignment submissions shown per page preference.';
-$string['privacy:metadata:assignmentquickgrade'] = 'Quick grading preference for assignment submissions.';
 $string['privacy:metadata:assignment_submissions'] = 'Assignment submissions associated with an assignment.';
 $string['privacy:metadata:assignment_submissions:data1'] = 'The onlinetext submitted for the assignment submission.';
 $string['privacy:metadata:assignment_submissions:data2'] = 'The tracked status for the assignment submission.';
@@ -59,5 +55,9 @@ $string['privacy:metadata:assignment_submissions:timecreated'] = 'The creation d
 $string['privacy:metadata:assignment_submissions:timemarked'] = 'The marking date/time of the assignment submission.';
 $string['privacy:metadata:assignment_submissions:timemodified'] = 'The modification date/time of the assignment submission.';
 $string['privacy:metadata:assignment_submissions:userid'] = 'The user ID submitting the assignment submission.';
+$string['privacy:metadata:assignmentfilter'] = 'Filter preference of assignment submissions.';
+$string['privacy:metadata:assignmentmailinfo'] = 'Mail info preference for assignment submissions.';
+$string['privacy:metadata:assignmentperpage'] = 'Number of assignment submissions shown per page preference.';
+$string['privacy:metadata:assignmentquickgrade'] = 'Quick grading preference for assignment submissions.';
 $string['privacy:submissionpath'] = 'submission';
 $string['upgradenotification'] = 'This activity is based on an older assignment module.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'wiki', language 'eu', version '3.8'.
  *
- * @package   wiki
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     wiki
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,7 +34,7 @@ $string['attachmentattach'] = 'Gehitu eranskin gisa';
 $string['attachmentimage'] = 'Gehitu irudi gisa';
 $string['attachmentlink'] = 'Gehitu esteka gisa';
 $string['attachments'] = 'Eranskinak';
-$string['backcomments'] = 'Itzuli Iruzkinetara';
+$string['backcomments'] = 'Itzuli iruzkinetara';
 $string['backhistory'] = 'Itzuli historiara';
 $string['backoldversion'] = 'Itzuli bertsio zaharrera';
 $string['backpage'] = 'Itzuli orrira';
@@ -97,20 +97,20 @@ $string['filtername'] = 'Wikiaren auto-estekak';
 $string['firstpagetitle'] = 'Lehen orriaren izena';
 $string['firstpagetitle_help'] = 'Wikiaren hasiera-orriaren izenburua. Behin wikia sortu dela, ezin da titulua aldatu.';
 $string['forceformat'] = 'Behartu formatua';
-$string['forceformat_help'] = 'Formatua behartzen bada (laukitxoa markatuta) ezin da formatua aukeratua wiki-orria editatzean.';
+$string['forceformat_help'] = 'Formatua behartzen bada (laukitxoa markatuta) ezin da formatua aukeratu wiki-orria editatzean.';
 $string['format'] = 'Formatua';
-$string['formatcreole'] = 'Creole Formatua';
-$string['formatcreole_help'] = 'Creole wiki-marken hizkuntza arrunta da, ediziorako erreminta-barra batekin marka egokiak gehitzeko.
-
-Orri berria sortzeko, idatzi orri berriaren izena bi kortxeteren artean, esaterako [[2 Orria]].';
 $string['format_help'] = '* HTML - HTML editorea eskuragarri dago
 * Creole - wiki-markak dituen hizkuntza, ediziorako tresna-barra txiki bat duena
 * Nwiki - Mediawiki-ren antzerako marka-hizkuntza, Nwiki moduluan erabiltzen dena';
+$string['formatcreole'] = 'Creole formatua';
+$string['formatcreole_help'] = 'Creole wiki-marken hizkuntza arrunta da, ediziorako erreminta-barra batekin marka egokiak gehitzeko.
+
+Orri berria sortzeko, idatzi orri berriaren izena bi kortxeteren artean, esaterako [[2 Orria]].';
 $string['formathtml'] = 'HTML formatua';
 $string['formathtml_help'] = 'HTML editorea edukiei formatua emateko erabil daiteke.
 
 Orri berria sortzeko, idatzi orri berriaren izena bi kortxeteren artean, esaterako [[2 Orria]].';
-$string['formatnwiki'] = 'NWiki Formatua';
+$string['formatnwiki'] = 'NWiki formatua';
 $string['formatnwiki_help'] = 'Nwiki Mediawiki-ren antzerako marka-hizkuntza da, Nwiki moduluan erabiltzen dena.
 
 Orri berria sortzeko, idatzi orri berriaren izena bi kortxeteren artean, esaterako [[2 Orria]].';
@@ -122,13 +122,13 @@ $string['incorrectpageid'] = 'Orriaren IDa ez da egokia.';
 $string['incorrectsubwikiid'] = 'Azpiwikiaren IDa ez da egokia.';
 $string['incorrectwikiid'] = 'Wikiaren IDa ez da egokia.';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa wikietan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Wikia motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa wikietan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Wikia jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da)';
-$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Wikia motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala wikietan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Wikia motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala wikietan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Wikia jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan';
-$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Wikia motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['individualpagedoesnotexist'] = 'Norberaren wiki-orria ez da existitzen';
 $string['insertcomment'] = 'Txertatu iruzkina';
 $string['insertimage'] = 'Txertatu irudi bat...';
@@ -199,17 +199,17 @@ $string['orphaned'] = 'Orri umezurtzak';
 $string['orphaned_help'] = 'Beste orri batetik estekatu gabe dauden orrien zerrenda';
 $string['overridelocks'] = 'Baliogabetu blokeoak';
 $string['overridinglocks'] = 'Blokeoak baliogabetzen...';
+$string['page-mod-wiki-comments'] = 'Wiki moduluaren iruzkin-orria';
+$string['page-mod-wiki-history'] = 'Wikiaren historia-orria';
+$string['page-mod-wiki-map'] = 'Wikiarem mapa-orria';
+$string['page-mod-wiki-view'] = 'Wiki moduluaren edozein orri';
+$string['page-mod-wiki-x'] = 'Wiki moduluaren edozein orri';
 $string['pageexists'] = 'Orri hau badago dagoeneko.';
 $string['pageindex'] = 'Orri-aurkibidea';
 $string['pageindex_help'] = 'Wiki-orri honen zuhaitza';
 $string['pageislocked'] = 'Norbait ari da orri hau editatzen. Saiatu minutu batzuk barru editatzen.';
 $string['pagelist'] = 'Orri-zerrenda';
 $string['pagelist_help'] = 'Ordena alfabetikoaren arabera kategorizatutako orri-zerrenda';
-$string['page-mod-wiki-comments'] = 'Wiki moduluaren iruzkin-orria';
-$string['page-mod-wiki-history'] = 'Wikiaren historia-orria';
-$string['page-mod-wiki-map'] = 'Wikiarem mapa-orria';
-$string['page-mod-wiki-view'] = 'Wiki moduluaren edozein orri';
-$string['page-mod-wiki-x'] = 'Wiki moduluaren edozein orri';
 $string['pagename'] = 'Orriaren izena';
 $string['peerreview'] = 'Parekoen artean berrikusi';
 $string['pluginadministration'] = 'Wikiaren kudeaketa';
@@ -227,7 +227,7 @@ $string['privacy:metadata:wiki_locks:userid'] = 'Orria blokeatu zuen erabiltzail
 $string['privacy:metadata:wiki_pages'] = 'Wiki-orrien inguruko informazioa';
 $string['privacy:metadata:wiki_pages:cachedcontent'] = 'HTML formatuan cacheatutako edukiak';
 $string['privacy:metadata:wiki_pages:pageviews'] = 'Orria ikusi den aldi kopurua';
-$string['privacy:metadata:wiki_pages:readonly'] = 'Orria soilik-irakurtzekoa den edo ez';
+$string['privacy:metadata:wiki_pages:readonly'] = 'Orria irakurtzekoa-bakarrik den edo ez';
 $string['privacy:metadata:wiki_pages:timecreated'] = 'Orria sortu zeneko unea';
 $string['privacy:metadata:wiki_pages:timemodified'] = 'Orria azkenengoz eguneratu zeneko unea';
 $string['privacy:metadata:wiki_pages:timerendered'] = 'Orria azkenengoz erakutsi zeneko unea';
@@ -289,11 +289,17 @@ $string['viewperpage'] = 'Erakutsi orriko {$a} bertsio';
 $string['viewversion'] = 'Orriaren {$a}. bertsioa ikusten';
 $string['wiki'] = 'Wikia';
 $string['wiki:addinstance'] = 'Gehitu wiki berria';
-$string['wikiattachments'] = 'Wiki-eranskinak';
-$string['wikiboldtext'] = 'Testu lodia';
 $string['wiki:createpage'] = 'Sortu wiki-orri berriak';
 $string['wiki:editcomment'] = 'Gehitu iruzkinak orriei';
 $string['wiki:editpage'] = 'Gorde wiki-orriak';
+$string['wiki:managecomment'] = 'Kudeatu wikiaren iruzkinak';
+$string['wiki:managefiles'] = 'Kudeatu wikiaren fitxategiak';
+$string['wiki:managewiki'] = 'Kudeatu wikiaren ezarpenak';
+$string['wiki:overridelock'] = 'Baliogabetu wikiaren blokeoak';
+$string['wiki:viewcomment'] = 'Ikusi orriaren iruzkinak';
+$string['wiki:viewpage'] = 'Ikusi wikiaren orriak';
+$string['wikiattachments'] = 'Wiki-eranskinak';
+$string['wikiboldtext'] = 'Testu lodia';
 $string['wikiexternalurl'] = 'Kanpoko URLa';
 $string['wikifiles'] = 'Wikiaren fitxategiak';
 $string['wikifiletable'] = 'Igotako fitxategi-zerrenda';
@@ -304,21 +310,15 @@ $string['wikiinternalurl'] = 'Barruko esteka';
 $string['wikiintro'] = 'Deskribapena';
 $string['wikiitalictext'] = 'Etzana';
 $string['wikilockingsettings'] = 'Denbora-mugak blokeatu eta berraztertzen';
-$string['wiki:managecomment'] = 'Kudeatu wikiaren iruzkinak';
-$string['wiki:managefiles'] = 'Kudeatu wikiaren fitxategiak';
-$string['wiki:managewiki'] = 'Kudeatu wikiaren ezarpenak';
 $string['wikimode'] = 'Wiki modua';
-$string['wikimodecollaborative'] = 'Elkarlanerako wikia';
 $string['wikimode_help'] = 'Wiki moduak zehazten du ea edozeinek editatu ahal duen wikia (elkarlanerako wikia) ala nork bere wikia baino ezin duen editatu (banakako wikia).';
+$string['wikimodecollaborative'] = 'Elkarlanerako wikia';
 $string['wikimodeindividual'] = 'Norbanakoaren wikia';
 $string['wikiname'] = 'Wikiaren izena';
 $string['wikinowikitext'] = 'Wiki-testurik ez';
 $string['wikiorderedlist'] = 'Ordenatutako zerrenda';
-$string['wiki:overridelock'] = 'Blokeatutakoei jaramonik ez';
 $string['wikipages'] = 'Wiki-orriak';
 $string['wikisettings'] = 'Wikiaren ezarpenak';
 $string['wikiunorderedlist'] = 'Ordenatu gabeko zerrenda';
-$string['wiki:viewcomment'] = 'Ikusi orriaren iruzkinak';
-$string['wiki:viewpage'] = 'Ikusi wikiaren orriak';
 $string['wrongversionlock'] = 'Beste erabiltzaile batek editatu du orri hau zeu editatzen ari zinen bitartean: zeure edukia zaharkituta dago.';
 $string['wrongversionsave'] = 'Beste erabiltzaile batek bertsio bat sortu du zeu editatzen ari zinen bitartean eta bere aldaketak gainidatzi dituzu: egiazta ezazu orriaren historia.';

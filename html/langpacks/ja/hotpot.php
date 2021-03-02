@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hotpot', language 'ja', version '3.8'.
  *
- * @package   hotpot
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hotpot
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,6 +36,7 @@ $string['clickreporting_help'] = '有効にした場合、「ヒント」「ク�
 $string['clues'] = 'クルー';
 $string['completed'] = '完了';
 $string['correct'] = '正解';
+$string['deleteallattempts'] = 'すべての受験を削除する';
 $string['exit_course'] = 'コース';
 $string['feedbackformmail'] = 'フィードバックフォーム';
 $string['feedbackmoodleforum'] = 'Moodleフォーラム';
@@ -51,6 +52,7 @@ $string['hotpot:view'] = 'クイズを使用する';
 $string['ignored'] = '無視';
 $string['inprogress'] = '進行中';
 $string['modulename'] = 'HotPot';
+$string['modulename_help'] = 'HotPotモジュールでは教師がMoodleコース内にHot Potatoesクイズを追加することができます。それぞれの受験は自動評定されます。また、個々の問題がどのように答えられたのか等、評点における統計的なトレンドを表示するいくつかのレポートを利用することができます。 ';
 $string['modulenameplural'] = 'HotPot';
 $string['navigation'] = 'ナビゲーション';
 $string['navigation_frame'] = 'Moodleナビケーションフレーム';

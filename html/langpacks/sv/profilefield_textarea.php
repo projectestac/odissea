@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,16 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_textarea', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'profilefield_textarea', language 'sv', version '3.8'.
  *
- * @package   profilefield_textarea
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     profilefield_textarea
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Textyta';
+$string['pluginname'] = 'Textområde';
+$string['privacy:metadata:profile_field_textarea:data'] = 'Profilfält-användardata för textområde';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = 'Formatet på användardata i textområdet';
+$string['privacy:metadata:profile_field_textarea:fieldid'] = 'ID för profilfältet';
+$string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Ytterligare profildata';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'ID för användare vars data är lagrad i textområdesfältet';

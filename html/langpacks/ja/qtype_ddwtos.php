@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddwtos', language 'ja', version '3.8'.
  *
- * @package   qtype_ddwtos
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddwtos
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,8 +32,8 @@ $string['correctansweris'] = '正解: {$a}';
 $string['infinite'] = '無制限';
 $string['pleaseputananswerineachbox'] = 'それぞれのテキストボックスに答えを入力してください。';
 $string['pluginname'] = 'ドラッグ＆ドロップテキスト';
+$string['pluginname_help'] = 'ドラッグ＆ドロップテキストは問題テキスト内の正しい空白部分に単語またはフレーズをドラッグするためのレスポンデントを必要とします。1、2、3 ... と指定された正解の選択肢に対して[[1]]、[[2]]、[[3]] ... は問題テキスト内でそれぞれのプレースホルダとして使用されます。正解の選択肢は特定のグループ内の答えすべてを問題テキスト内の空白部分で同じ色にするためグループ分けすることができます。無制限にマークされた答えの選択肢は2つの以上の空白部分で使用することができます。';
 $string['pluginnameadding'] = 'ドラッグ＆ドロップテキストの追加';
 $string['pluginnameediting'] = 'ドラッグ＆ドロップテキストの編集';
-$string['pluginname_help'] = 'ドラッグ＆ドロップテキストは問題テキスト内の正しい空白部分に単語またはフレーズをドラッグするためのレスポンデントを必要とします。1、2、3 ... と指定された正解の選択肢に対して[[1]]、[[2]]、[[3]] ... は問題テキスト内でそれぞれのプレースホルダとして使用されます。正解の選択肢は特定のグループ内の答えすべてを問題テキスト内の空白部分で同じ色にするためグループ分けすることができます。無制限にマークされた答えの選択肢は2つの以上の空白部分で使用することができます。';
 $string['pluginnamesummary'] = 'ドロップダウンメニューを使用して問題テキスト内の足りない言葉を埋めます。';
 $string['privacy:metadata'] = 'ドラッグ＆ドロップテキスト問題タイププラグインはいかなる個人データも保存しません。';

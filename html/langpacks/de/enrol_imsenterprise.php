@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'de', version '3.8'.
  *
- * @package   enrol_imsenterprise
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_imsenterprise
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'Nachdem Sie die Einstellungen gespeichert haben, können Sie folgendes tun:';
-$string['allowunenrol'] = 'IMS-Datei das <strong>Löschen</string> von Teilnehmer/innen bzw. Trainer/innen erlauben';
+$string['allowunenrol'] = 'IMS-Datei erlauben, Teilnehmer/innen bzw. Trainer/innen abzumelden';
 $string['allowunenrol_desc'] = 'Wenn diese Option aktiviert ist, werden Kurseineinschreibungen aufgehoben, wenn dies in der IMS-Enterprise-Datei eingetragen ist. ';
 $string['basicsettings'] = 'Grundeinstellungen';
 $string['categoryidnumber'] = 'Kategorie-ID-Nummer zulassen';
@@ -35,7 +35,7 @@ $string['categoryseparator'] = 'Trennzeichen für Kategorien';
 $string['categoryseparator_desc'] = 'Erforderlich, falls "Kategorie-ID-Nummer" aktiviert ist. Zeichen zum Trennen des Kategorienamens und der ID-Nummer.';
 $string['coursesettings'] = 'Kurseinstellungen';
 $string['createnewcategories'] = 'Neue (verborgene) Kurskategorien anlegen, wenn nicht in Moodle gefunden';
-$string['createnewcategories_desc'] = 'Wenn das <org><orgunit> Element in der importierten Datei enthalten ist, wird es benutzt um einen Kurs einer Kurskategorie zuzuordnen, sofern der Kurs neu angelegt wird. Bereits bestehende Kurse werden dadurch NICHT verschoben.
+$string['createnewcategories_desc'] = 'Wenn das &lt;org&gt;&lt;orgunit&gt;-Element in der importierten Datei enthalten ist, wird es benutzt um einen Kurs einer Kurskategorie zuzuordnen, sofern der Kurs neu angelegt wird. Bereits bestehende Kurse werden dadurch NICHT verschoben.
 Wenn keine Kategorie mit dem Namen existiert, wird diese neu als verborgene Kategorie angelegt.';
 $string['createnewcourses'] = 'Erstelle neue (verborgene) Kurse, wenn nicht in Moodle gefunden';
 $string['createnewcourses_desc'] = 'Funktion: Das IMS-Einschreibungsplugin kann neue Kurse anlegen wenn es diese in der IMS Datei, nicht aber in der Moodle-Datenbank findet. Jeder neue Kurs wird so angelegt, dasser für Teilnehmer nicht verfügbar ist. ';
@@ -78,18 +78,18 @@ $string['settingfullnamedescription'] = 'Der Langtitel des Kurses ist ein Pflich
 $string['settingshortname'] = 'IMS Beschreibungs-Tag für den kurzen Kursnamen';
 $string['settingshortnamedescription'] = 'Der Kurztitel des Kurses ist ein Pflichtfeld. Das diesen enthaltende Beschreibungsfeld inder IMS Enterprise-Datei ist festzulegen.';
 $string['settingsummary'] = 'IMS Beschreibungs-Tag für die Kursbeschreibung';
-$string['settingsummarydescription'] = 'Dies ist ein optionales Feld. Es kann auf Wunsch leer bleiben.';
-$string['sourcedidfallback'] = '"sourcedid" statt "userid" für die Nutzer-ID verwenden, wenn das Feld "userid" nicht gefunden wird';
+$string['settingsummarydescription'] = 'Dies ist ein optionales Feld. Es kann auf Wunsch leer bleiben, wenn Sie keine Kursbeschreibung angeben möchten.';
+$string['sourcedidfallback'] = '"sourcedid" für die Nutzer-ID verwenden, wenn das Feld "userid" nicht gefunden wird';
 $string['sourcedidfallback_desc'] = 'Im IMS Datensatz wird im <sourceid>-Feld die dauerhafte persönliche ID-Bezeichnung des Nutzers aus dem Ursprungssystem hinterlegt.  Das <userid>-Feld ist ein zusätzliches Feld und enthält einen ID-Code, mit dem der Nutzer sich einloggen kann. Manchmal – jedoch nicht immer – sind die Einträge identisch.
 
 Einige Nutzerverwaltungssysteme haben Probleme beim Export des <userid>-Feldes. In solch einem Fall aktivieren Sie diese Einstellung, damit Moodle den Inhalt des Feldes <sourceid> als Moodle-Nutzer-ID verwendet. Ist das nicht der Fall, lassen Sie die Funktion deaktiviert.';
 $string['truncatecoursecodes'] = 'Kurscode nach dieser Zeichenzahl abschneiden';
 $string['truncatecoursecodes_desc'] = 'Manchmal ist es gewünscht, die Länge des Kurscodes zu verkürzen. Geben Sie dazu hier einen Wert ein, der die maximale Länge des Kurscodes bestimmt. Andernfalls lassen Sie das Feld leer.';
 $string['updatecourses'] = 'Kurs aktualisieren';
-$string['updatecourses_desc'] = 'Bei Aktivierung kann das IMS Enterprise Einschreibungs-Plugin die vollständigen und kurzen Namen aktualisieren (wenn die "recstatus"-Markierung durch \'2\' ein Update signalisiert).';
+$string['updatecourses_desc'] = 'Bei Aktivierung kann das IMS Enterprise Einschreibungs-Plugin die vollständigen und kurzen Namen aktualisieren (wenn die "recstatus"-Markierung auf 2 steht, was ein Update signalisiert).';
 $string['updateusers'] = 'Nutzeraccounts aktualisieren, falls dies in IMS Daten festgelegt ist';
 $string['updateusers_desc'] = 'Bei Aktivierung können IMS Enterprise Enschreibungs-Daten Veränderungen in Nutzer Accounts festlegen (wenn die "recstatus"-Markierung durch \'2\' ein Update signalisiert).';
-$string['usecapitafix'] = 'Box anklicken, wenn "Großbuchstaben" verwendet werden (XML-Format ist fehlerhaft)';
+$string['usecapitafix'] = 'Haken setzen, wenn "Großbuchstaben" verwendet werden (XML-Format ist fehlerhaft)';
 $string['usecapitafix_desc'] = 'Nur für Nutzer des Teilnehmerverwaltungssystem CAPITA: Der XML Output von Capita enthält einen Fehler. Bei Verwendung von Capita sollte diese Einstellung deaktiviert sein.';
 $string['usersettings'] = 'Nutzerdateneinstellungen';
 $string['zeroisnotruncation'] = '0 bedeutet nicht abschneiden';

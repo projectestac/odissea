@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'rating', language 'it', version '3.8'.
  *
- * @package   rating
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     rating
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,7 +45,6 @@ $string['allowratings'] = 'Consenti la valutazione degli elementi';
 $string['allratingsforitem'] = 'Tutte le valutazioni inviate';
 $string['capabilitychecknotavailable'] = 'La verifica delle autorizzazioni non sarà disponibile fino a quando l\'attività non sarà salvata';
 $string['couldnotdeleteratings'] = 'Spiacente, non è possibile eliminarlo poiché alcuni partecipanti hanno già dato le loro valutazione';
-$string['grade_rating_name'] = 'Valutazione';
 $string['norate'] = 'La valutazione degli elementi non è consentita!';
 $string['noratings'] = 'Nessuna valutazione inviata';
 $string['noviewanyrate'] = 'Puoi solamente guardare i risultati dei tuoi inserimenti';

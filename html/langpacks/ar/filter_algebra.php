@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,19 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_algebra', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filter_algebra', language 'ar', version '3.8'.
  *
- * @package   filter_algebra
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filter_algebra
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = 'التعبير الجبري';
 $string['filtername'] = 'الترميز الجبري';
-$string['privacy:metadata'] = 'إن ملحق رموز الجبر لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'البرنامج المساعد Algebra notation  لا يخزن أي بيانات شخصية.';

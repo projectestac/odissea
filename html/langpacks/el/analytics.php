@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'analytics', language 'el', version '3.8'.
  *
- * @package   analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -96,6 +96,7 @@ $string['modeinstructionfacetoface'] = 'Πρόσωπο με πρόσωπο';
 $string['modeinstructionfullyonline'] = 'Πλήρως εντός σύνδεσης';
 $string['modeloutputdir'] = 'Φάκελος εξόδου μοντέλων';
 $string['modeloutputdirinfo'] = 'Φάκελος όπου οι επεξεργαστές προβλέψεων αποθηκεύουν όλες τις πληροφορίες αξιολόγησης. Χρήσιμο για αποσφαλμάτωση και έρευνα.';
+$string['modeloutputdirwithdefaultinfo'] = 'Κατάλογος όπου οι επεξεργαστές πρόβλεψης αποθηκεύουν όλες τις πληροφορίες αξιολόγησης. Χρήσιμο για εντοπισμό σφαλμάτων και έρευνα. Εάν είναι κενό, τότε το «<strong>{$a}</strong>» θα χρησιμοποιηθεί ως προεπιλογή.';
 $string['modeltimelimit'] = 'Όριο χρόνου ανάλυσης ανά μοντέλο';
 $string['modeltimelimitinfo'] = 'Η ρύθμιση αυτή περιορίζει τον χρόνο ανάλυσης των περιεχομένων του ιστοτόπου από κάθε μοντέλο.';
 $string['neutral'] = 'Ουδέτερο';

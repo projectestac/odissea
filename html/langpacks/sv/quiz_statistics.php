@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_statistics', language 'sv', version '3.8'.
  *
- * @package   quiz_statistics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_statistics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,7 @@ $string['coursename'] = 'Kursnamn';
 $string['detailedanalysis'] = 'Mer detaljerad analys av svaren på den här frågan';
 $string['discrimination_index'] = 'Diskriminerings index';
 $string['discriminative_efficiency'] = 'Diskriminierings effektivitet';
-$string['downloadeverything'] = 'Ladda ner full rapport som {$a->formatsmenu} {$a->downloadbutton}';
+$string['downloadeverything'] = 'Ladda ned full rapport som';
 $string['duration'] = 'Öppen för';
 $string['effective_weight'] = 'Effektiv vikt';
 $string['errorratio'] = 'Felkvot ({$a})';
@@ -66,14 +66,17 @@ $string['questiontype'] = 'Frågetyp';
 $string['quizinformation'] = 'Information om test';
 $string['quizname'] = 'Test';
 $string['quizoverallstatistics'] = 'Statistik för testet';
+$string['quizstatisticscleanuptask'] = 'Städa upp gamla cacheposter för quiz';
 $string['quizstructureanalysis'] = 'Analys av test';
 $string['recalculatenow'] = 'Beräkna om';
+$string['reportsettings'] = 'Inställningar för statistikberäkning';
 $string['response'] = 'Svar';
 $string['skewness'] = 'Snedfördelning ({$a})';
 $string['standarddeviation'] = 'Standaravvikelse ({$a})';
 $string['standarddeviationq'] = 'Standaravvikelse';
 $string['standarderror'] = 'Medelfel ({$a})';
 $string['statistics'] = 'Statistik';
-$string['statisticsreport'] = 'Statistikrapport';
+$string['statistics:componentname'] = 'Statistikrapport för test';
 $string['statistics:view'] = 'Visa statistikrapport';
+$string['statisticsreport'] = 'Statistikrapport';
 $string['statsfor'] = 'Statistik för test ({$a})';

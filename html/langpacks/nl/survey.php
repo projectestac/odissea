@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'nl', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -203,18 +203,18 @@ $string['errorunabletosavenotes'] = 'Er is een fout opgetreden bij het bewaren v
 $string['eventreportdownloaded'] = 'Onderzoekrapport gedownloaded';
 $string['eventreportviewed'] = 'Onderzoeksrapport bekeken';
 $string['eventresponsesubmitted'] = 'Onderzoeksantwoord ingestuurd';
-$string['guestsnotallowed'] = 'Gasten mogen geen onderzoeken posten';
+$string['guestsnotallowed'] = 'Enkel aangemelde gebruikers mogen onderzoeken posten';
 $string['howlong'] = 'Hoe lang heb je er over gedaan om dit onderzoek in te vullen?';
 $string['howlongoptions'] = 'minder dan 1 min,1-2 min,2-3 min,3-4 min,4-5 min,5-10 min,meer dan 10 min';
 $string['ifoundthat'] = 'Ik vond dat';
 $string['indicator:cognitivedepth'] = 'Onderzoek cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Onderzoek activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Onderzoek cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de enquêteactiviteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Onderzoek activiteit.';
 $string['indicator:socialbreadth'] = 'Onderzoek sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Onderzoek activiteit.';
 $string['indicator:socialbreadthdef'] = 'Onderzoek sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de maatschappelijke betrokkenheid van de enquêteactiviteiten tijdens dit analyse-interval bereikt (niveaus = geen deelname, alleen deelnemer)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Onderzoek activiteit.';
 $string['introtext'] = 'Inleidende tekst';
 $string['invalidsurveyid'] = 'Onderzoeks ID was fout';
 $string['invalidtmptid'] = 'Fout sjabloon ID';
@@ -262,13 +262,13 @@ $string['seemoredetail'] = 'Klik hier om meer details te zien';
 $string['selectedquestions'] = 'Geselecteerde vragen van een schaal, alle leerlingen';
 $string['summary'] = 'Beschrijving';
 $string['survey:addinstance'] = 'Voeg een nieuw onderzoek toe';
-$string['surveycompleted'] = 'Je bent klaar met het invullen van dit onderzoek. De grafiek hieronder laat een samenvatting zien van jouw resultaten vergeleken met het klasseresultaat.';
-$string['surveycompletednograph'] = 'Je hebt dit onderzoek afgerond.';
 $string['survey:download'] = 'Download antwoorden';
-$string['surveygraph'] = 'Onderzoeksgrafiek';
-$string['surveyname'] = 'De naam van het onderzoek';
 $string['survey:participate'] = 'Deelnemen aan onderzoek';
 $string['survey:readresponses'] = 'Antwoorden zien';
+$string['surveycompleted'] = 'Je bent klaar met het invullen van dit onderzoek. De grafiek hieronder laat een samenvatting zien van jouw resultaten vergeleken met het klasseresultaat.';
+$string['surveycompletednograph'] = 'Je hebt dit onderzoek afgerond.';
+$string['surveygraph'] = 'Onderzoeksgrafiek';
+$string['surveyname'] = 'De naam van het onderzoek';
 $string['surveysaved'] = 'Het onderzoek is bewaard';
 $string['surveytype'] = 'Soort onderzoek';
 $string['surveytype_help'] = 'Er zijn drie types van onderzoek beschikbaar:

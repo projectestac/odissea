@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'gl', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,19 +49,19 @@ $string['graded'] = '(cualificado)';
 $string['gradenextungraded'] = 'Cualificar o(s) seguinte(s) {$a} intento(s) sen cualificar';
 $string['gradeungraded'] = 'Cualificar todos os {$a} intentos sen cualificar';
 $string['grading'] = 'Cualificación manual';
+$string['grading:componentname'] = 'Informe da cualificación manual';
+$string['grading:viewidnumber'] = 'Ver os números ID dos alumnos mentres son cualificados';
+$string['grading:viewstudentnames'] = 'Ver os nomes dos alumnos mentres son cualificados';
 $string['gradingall'] = 'Todos {$a} os intentos nesta pregunta.';
 $string['gradingattempt'] = 'Intento número {$a->attempt} de {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Cualificación de intentos de {$a->from} a {$a->to} de {$a->of}';
 $string['gradingattemptwithidnumber'] = 'Intento número {$a->attempt} de {$a->fullname} ({$a->idnumber})';
-$string['grading:componentname'] = 'Informe da cualificación manual';
 $string['gradingnextungraded'] = 'Seguinte(s) {$a} intentos sen cualificar';
 $string['gradingnotallowed'] = 'Non ten permiso para cualificar manualmente as respostas neste exame';
 $string['gradingquestionx'] = 'Cualificando a pregunta {$a->number}: {$a->questionname}';
 $string['gradingreport'] = 'Informe de cualificación manual';
 $string['gradingungraded'] = '{$a} intentos sen cualificar';
 $string['gradinguser'] = 'Intentos de {$a}';
-$string['grading:viewidnumber'] = 'Ver os números ID dos alumnos mentres son cualificados';
-$string['grading:viewstudentnames'] = 'Ver os nomes dos alumnos mentres son cualificados';
 $string['hideautomaticallygraded'] = 'Agochar as preguntas que se cualificaron automaticamente';
 $string['inprogress'] = 'Avanzando';
 $string['invalidattemptid'] = 'Non existe tal ID de intento';

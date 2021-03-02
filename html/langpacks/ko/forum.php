@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'forum', language 'ko', version '3.8'.
  *
- * @package   forum
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     forum
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -51,8 +51,8 @@ $string['availability'] = '사용가능성';
 $string['blockafter'] = '차단하기 전 게시 한도';
 $string['blockafter_help'] = '이 설정은 사용자가 주어진 기간안에 게시할 수 있는 최대 글의 갯수를 명시합니다. mod/forum:postwithoutthrottling 권한이 있는 사용자는 게시한계에서 제외됩니다.';
 $string['blockperiod'] = '차단 시간';
-$string['blockperioddisabled'] = '차단하지 않음';
 $string['blockperiod_help'] = '학생은 주어진 기간안에 게시할 수 있는 최대 글의 갯수보다 많은 글을 게시하지 못합니다. mod/forum:postwithoutthrottling 능력이 있는 사용자는 게시한계에서 제외됩니다.';
+$string['blockperioddisabled'] = '차단하지 않음';
 $string['blogforum'] = '블로그 형식의 표준 포럼';
 $string['bynameondate'] = '{$a->date} 에 {$a->name} 씀';
 $string['cannotadd'] = '포럼에 토론을 추가할 수 없음';
@@ -113,6 +113,7 @@ $string['couldnotadd'] = '알 수 없는 오류로 인해 게시할 수 없음';
 $string['couldnotdeletereplies'] = '죄송, 사람들이 벌써 답변하였기에 지울 수 없음';
 $string['couldnotupdate'] = '알 수 없는 오류로 인해 업데이트 할 수 없음';
 $string['cutoffdate'] = '최종 마감일';
+$string['cutoffdatereached'] = '게시 시한이 지나 이 포럼에 올릴 수 없습니다.';
 $string['cutoffdatevalidation'] = '최종 마감일은 마감일 보다 먼저일 수 없습니다.';
 $string['delete'] = '삭제';
 $string['deleteddiscussion'] = '토론 주제가 삭제되었음';
@@ -190,9 +191,6 @@ $string['forum:addinstance'] = '새 포럼 추가';
 $string['forum:addnews'] = '새소식 추가';
 $string['forum:addquestion'] = '질문 추가';
 $string['forum:allowforcesubscribe'] = '강제 구독 허용';
-$string['forumauthorhidden'] = '작성자(비공개)';
-$string['forumblockingalmosttoomanyposts'] = '게시 한계에 도달하려 합니다. 지난 {$a->blockperiod} 동안 {$a->numposts} 번 게시물을 게시하였으며 게시 한계는 {$a->blockafter} 번 입니다.';
-$string['forumbodyhidden'] = '이 게시물은 볼 수 없습니다. 아마 한 번도 토론에 참여한 적이 없었기 때문일 수도 있습니다.';
 $string['forum:createattachment'] = '첨부물 생성';
 $string['forum:deleteanypost'] = '(언제든) 어떤 게시물이든 삭제';
 $string['forum:deleteownpost'] = '자신의 게시물 삭제(시한 내)';
@@ -200,33 +198,14 @@ $string['forum:editanypost'] = '게시물 편집';
 $string['forum:exportdiscussion'] = '전체 토론 내보내기';
 $string['forum:exportownpost'] = '내 게시물 내보내기';
 $string['forum:exportpost'] = '게시내용 내보내기';
-$string['forumintro'] = '포럼 소개';
 $string['forum:managesubscriptions'] = '구독 관리';
 $string['forum:movediscussions'] = '토론내용 이동';
-$string['forumname'] = '포럼 이름';
-$string['forumposts'] = '포럼 게시글';
 $string['forum:postwithoutthrottling'] = '게시 한계에서 제외';
 $string['forum:rate'] = '게시물 순위 산출';
 $string['forum:replynews'] = '새소식에 답장';
 $string['forum:replypost'] = '게시물에 답장';
-$string['forums'] = '포럼들';
 $string['forum:splitdiscussions'] = '토론주제 분리';
 $string['forum:startdiscussion'] = '새로운 토론 시작';
-$string['forumsubjecthidden'] = '제목(비공개)';
-$string['forumtracked'] = '읽지않은 게시물을 추적함';
-$string['forumtrackednot'] = '읽지않은 게시물 추적하지 않음';
-$string['forumtype'] = '포럼 유형';
-$string['forumtype_help'] = '5가지 포럼 유형이 있습니다
-
-* 하나의 간단한 토론 - 모든 사람이 응답할 수 있는 한 토론 주제.
-
-* 일인 한개 토론 - 학생마다 모든 사람들이 응답할 수 있는  한개의 토론 주제만 게시할 수 있습니다
-
-* 질의 응답식 포럼 - 다른 학생들의 게시물을 보기 전에 자신들의 견해를 미리 게시해야 합니다.
-
-* 블로그 형식으로 표시된 표준 포럼 - 누구던지 아무때나 새로운 토론 주제를 게시할 수 있는 열린 포럼. 토론 주제들은 한 페이지에  "이 주제 토론" 링크와 함께 표시됩니다.
-
-* 일반적 용도의 표준 포럼  - 언제, 누구라도 새로운 주제를 게시할 수 있는 열린 포럼';
 $string['forum:viewallratings'] = '원점수 보기';
 $string['forum:viewanyrating'] = '전체 순위 보기';
 $string['forum:viewdiscussion'] = '토론 보기';
@@ -234,6 +213,28 @@ $string['forum:viewhiddentimedposts'] = '한시적 비공개 게시물 보기';
 $string['forum:viewqandawithoutposting'] = '질답란 게시물 보기';
 $string['forum:viewrating'] = '내 순위 보기';
 $string['forum:viewsubscribers'] = '구독자 보기';
+$string['forumauthorhidden'] = '작성자(비공개)';
+$string['forumblockingalmosttoomanyposts'] = '게시 한계에 도달하려 합니다. 지난 {$a->blockperiod} 동안 {$a->numposts} 번 게시물을 게시하였으며 게시 한계는 {$a->blockafter} 번 입니다.';
+$string['forumbodyhidden'] = '이 게시물은 볼 수 없습니다. 아마 토론에 글을 게시하지 않았거나 최대 편집 시간이 아직 지나지 않았기 때문일 수도 있습니다.';
+$string['forumintro'] = '설명';
+$string['forumname'] = '포럼 이름';
+$string['forumposts'] = '포럼 게시글';
+$string['forums'] = '포럼들';
+$string['forumsubjecthidden'] = '제목(비공개)';
+$string['forumtracked'] = '읽지않은 게시물을 추적함';
+$string['forumtrackednot'] = '읽지않은 게시물 추적하지 않음';
+$string['forumtype'] = '포럼 유형';
+$string['forumtype_help'] = '5가지 포럼 유형이 있습니다
+
+* 하나의 간단한 토론 - 모든 사람이 답글을 게시할 수 있는 한 토론 주제.(분리된 모둠을 적용할 수 없음)
+
+* 1인 1 토론 - 학생들은 오직 한개의 토론 주제를 게시할 수 있습니다. 여기에 모든 사람들이 답글을 게시할 수 있습니다
+
+* 질의 응답 포럼 - 다른 학생들의 게시물을 보기 전에 자신들의 견해를 미리 게시해야 합니다.
+
+* 블로그 형식으로 표시된 표준 포럼 - 누구던지 아무때나 새로운 토론 주제를 게시할 수 있는 열린 포럼. 토론 주제들은 한 페이지에  "이 주제 토론" 링크와 함께 표시됩니다.
+
+* 일반적 용도의 표준 포럼  - 언제, 누구라도 새로운 주제를 게시할 수 있는 열린 포럼';
 $string['generalforum'] = '일반 용도의 표준 포럼';
 $string['generalforums'] = '일반 포럼들';
 $string['hiddenforumpost'] = '감춰진 포럼 게시글';
@@ -276,7 +277,7 @@ $string['modeflatoldestfirst'] = '옛 답글부터 내용 보기';
 $string['modenested'] = '주제 중심으로 답글 보기';
 $string['modethreaded'] = '글타래 형태로 목록 보기';
 $string['modulename'] = '포럼';
-$string['modulename_help'] = '<p><img alt="" src="<?php echo $CFG->wwwroot?>/mod/forum/icon.gif" />&nbsp;<b> 포 럼 </b></p>
+$string['modulename_help'] = '<p><img alt="" src="<?php echo $CFG->wwwroot?>/mod/forum/icon.gif" /> <b> 포 럼 </b></p>
 <div class="indent">
 이 활동은 가장 중요할 것으로 여겨진다 - 이 활동을 통해 토론의 대부분이 이루어지게 된다.
 포럼은 다양한 방법으로 구성될 수 있으며, 개개인이 올린 문서에 대해 또래 평가를 하게 할 수도 있다.
@@ -297,9 +298,10 @@ $string['nameteacher'] = '선생님 포럼';
 $string['newforumposts'] = '새로운 게시물';
 $string['noattachments'] = '이 게시물에는 첨부물이 없음';
 $string['nodiscussions'] = '아직 토론 주제가 제시되지 않았음';
-$string['nodiscussionsstartedby'] = '이 사용자는 토론을 시작할 수 없음';
+$string['nodiscussionsstartedby'] = '{$a} 는 어떤 토론도 시작하지 않았습니다.';
 $string['nodiscussionsstartedbyyou'] = '아직 토론을 시작하지 않았습니다.';
 $string['noguestpost'] = '죄송하지만, 손님 계정으로는 글을 올릴 수 없습니다.';
+$string['noguestsubscribe'] = '죄송합니다만, 손님은 이메일을 통해 포럼을 구독하거나 받아볼 수 없습니다.';
 $string['noguesttracking'] = '죄송합니다만, 손님은 경로 추적이 허용되지 않습니다.';
 $string['nomorepostscontaining'] = '더이상 \'{$a}\'를 포함한 글이 없음';
 $string['nonews'] = '아직 뉴스가 게시되지 않았음';
@@ -321,16 +323,16 @@ $string['notrackforum'] = '게시물 추적 안함';
 $string['noviewdiscussionspermission'] = '이 포럼의 토론을 볼 수 있는 권한이 없음';
 $string['nowallsubscribed'] = '{$a}에 있는 모든 포럼을 구독합니다.';
 $string['nowallunsubscribed'] = '{$a}에 있는 모든 포럼을 구독해지합니다.';
-$string['nownotsubscribed'] = '{$a->name} 는 이메일로 \'{$a->forum}\'의 사본을 받을 수 없게 됩니다.';
+$string['nownotsubscribed'] = '{$a->name} 는 포럼  \'{$a->forum}\'에 있는 새로운 게시물에 대해 통지가 되지 않을 것입니다.';
 $string['nownottracking'] = '{$a->name} 은 더이상 \'{$a->forum}\'의 경로를 추적을 하지 않습니다.';
-$string['nowsubscribed'] = '{$a->name} 는 \'{$a->forum}\'의 글을 이메일로 받아 볼 수 있습니다.';
+$string['nowsubscribed'] = '{$a->name} 는 포럼  \'{$a->forum}\'에 있는 새로운 게시물에 대해 통지가 될 것입니다.';
 $string['nowtracking'] = '{$a->name} 이 \'{$a->forum}\'경로를 추적 중입니다.';
 $string['numposts'] = '{$a} 게시물';
 $string['olderdiscussions'] = '오래된 토론들';
 $string['oldertopics'] = '오래된 주제들';
 $string['oldpostdays'] = '지난 기사 읽음 처리';
-$string['overviewnumpostssince'] = '마지막 접속 후 게시물 수 : {$a}';
-$string['overviewnumunread'] = '읽지 않은 수 : {$a}';
+$string['overviewnumpostssince'] = '마지막 로그인 후 게시물 수 : {$a}';
+$string['overviewnumunread'] = '{$a}개 읽지 않음';
 $string['page-mod-forum-discuss'] = '포럼 모듈 토론 쓰레드 페이지';
 $string['page-mod-forum-view'] = '포럼 모듈 메인 페이지';
 $string['page-mod-forum-x'] = '모든 포럼 모듈 페이지';
@@ -338,9 +340,9 @@ $string['parent'] = '앞글 보기';
 $string['parentofthispost'] = '이 글의 앞글';
 $string['pluginadministration'] = '포럼 관리';
 $string['pluginname'] = '포럼';
-$string['postadded'] = '<p> 성공적으로 글이 추가되었습니다.</p> <p> {$a} 분 내에는 글을 수정할 수 있습니다.</p>';
+$string['postadded'] = '<p> 성공적으로 글이 추가되었습니다.</p> <p> {$a} 내에는 글을 수정할 수 있습니다.</p>';
 $string['postaddedsuccess'] = '성공적으로 글이 추가되었습니다.';
-$string['postaddedtimeleft'] = '{$a} 분 내에는 글을 수정할 수 있습니다.';
+$string['postaddedtimeleft'] = '{$a} 내에는 글을 수정할 수 있습니다.';
 $string['postincontext'] = '문맥에서 이 글 보기';
 $string['postmailnow'] = '<p>모든 포럼 사용자들에게 이 게시물이 즉시 발송될 것입니다.</p>';
 $string['postrating1'] = '대부분 분리된 배움';
@@ -403,7 +405,6 @@ $string['searchuserid'] = '글쓴이 아이디';
 $string['searchwhichforums'] = '검색할 포럼';
 $string['searchwords'] = '다음 단어들을 포함한 게시물';
 $string['seeallposts'] = '다음 사용자가 쓴 모든 글 보기';
-$string['sendstudentnotifications'] = '학습자들에게 통지';
 $string['shortpost'] = '간단한 게시';
 $string['showsubscribers'] = '구독자 보기/고치기';
 $string['singleforum'] = '하나의 간단한 토론';
@@ -413,17 +414,17 @@ $string['subject'] = '제목';
 $string['subscribe'] = '이 포럼을 이메일로 받기';
 $string['subscribeall'] = '이 포럼을 모두에게 이메일로 보내기';
 $string['subscribed'] = '구독함';
-$string['subscribeenrolledonly'] = '죄송합니다. 등록된 사용자만이 포럼 게시물을 이메일로 구독할 수 있습니다.';
+$string['subscribeenrolledonly'] = '죄송합니다. 등록된 사용자만 포럼 게시물 통자를 구독할 수 있습니다.';
 $string['subscribenone'] = '아무에게도 이메일 보내지 않기';
 $string['subscribers'] = '구독자';
 $string['subscribestart'] = '이곳 게시물들은 계속 구독하겠음';
 $string['subscribestop'] = '이곳 게시물들은 구독하지 않음.';
 $string['subscription'] = '이메일로 구독';
+$string['subscription_help'] = '포럼을 구독하면 포럼 게시글에 대한 이메일 사본을 받게 됩니다. 보통 구독을 선택할 수 있지만 포럼 게시글에 대해 모든 사람들이 이메일 사본을 받도록 강제적으로 구독하게 할 수 있습니다.';
 $string['subscriptionandtracking'] = '구독 및 추적';
 $string['subscriptionauto'] = '자동 구독';
 $string['subscriptiondisabled'] = '구독 불가능';
 $string['subscriptionforced'] = '강제 구독';
-$string['subscription_help'] = '포럼을 구독하면 포럼 게시글에 대한 이메일 사본을 받게 됩니다. 보통 구독을 선택할 수 있지만 포럼 게시글에 대해 모든 사람들이 이메일 사본을 받도록 강제적으로 구독하게 할 수 있습니다.';
 $string['subscriptionmode'] = '구독 옵션';
 $string['subscriptionmode_help'] = '참여자가 포럼을 구독하면 포럼에 게시된 글의 사본을 이메일로 받겠다는 것을 의미합니다.
 
@@ -444,9 +445,9 @@ $string['timestartenderror'] = '게시 종료일이 시작일보다 먼저일 �
 $string['trackforum'] = '읽지 않은 글 추적';
 $string['tracking'] = '추적';
 $string['trackingoff'] = '추적않기';
-$string['trackingon'] = '추적하기';
+$string['trackingon'] = '강제';
 $string['trackingoptional'] = '선택적';
-$string['trackingtype'] = '읽지 않은 글 추적';
+$string['trackingtype'] = '읽기 추적';
 $string['trackingtype_help'] = '활성화하면 참여자들은 포럼 혹은 토론 내에서 이미 읽었거나 읽지 않은 메세지를 추적할 수 있습니다.
 
 세 가지 옵션이 있습니다:

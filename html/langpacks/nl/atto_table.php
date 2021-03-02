@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_table', language 'nl', version '3.8'.
  *
- * @package   atto_table
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_table
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,7 +29,7 @@ $string['addcolumnafter'] = 'Kolom hierna invoegen';
 $string['addrowafter'] = 'Rij hierna invoegen';
 $string['all'] = 'Rond elke cel';
 $string['allowbackgroundcolour'] = 'Achtergrondkleur toestaan';
-$string['allowborder'] = 'Randen toestaan';
+$string['allowborder'] = 'Randstijlen toestaan';
 $string['allowborder_desc'] = 'Indien ingeschakeld kunnen celranden aangepast worden.';
 $string['allowwidth'] = 'Breedte toestaan';
 $string['appearance'] = 'Uiterlijk';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_messageinbound', language 'de', version '3.8'.
  *
- * @package   tool_messageinbound
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_messageinbound
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,15 +43,15 @@ $string['handlerdisabled'] = 'Der E-Mail-Prozess, den Sie aufgerufen haben, wurd
 $string['incomingmailconfiguration'] = 'Eingehende E-Mails';
 $string['incomingmailserversettings'] = 'Einstellungen für den eingehenden E-Mail-Server';
 $string['incomingmailserversettings_desc'] = 'Moodle ist in der Lage entsprechend konfigurierte IMAP-Server aufzurufen. Hier können Sie die dafür erforderlichen Einstellungen vornehmen.';
-$string['invalidrecipientdescription'] = 'Die Mitteilung \'{$a->subject}\' konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt. Um Ihre Mitteilung authentifizieren zu können, müssen Sie auf diese Mitteilung antworten.';
-$string['invalidrecipientdescriptionhtml'] = 'Die Mitteilung \'{$a->subject}\' konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt. Um Ihre Mitteilung authentifizieren zu können, müssen Sie auf diese Mitteilung antworten.';
-$string['invalidrecipientfinal'] = 'Die Mitteilung \'{$a->subject}\' konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt.';
 $string['invalid_recipient_handler'] = 'Wenn eine Mitteilung empfangen wird, der Sender aber nicht identifiziert werden kann, verbleibt die Mitteilung auf dem E-Mail-Server. Der Nutzer wird anhand der E-Mail-Adresse im Nutzerprofil benachrichtigt. Er wird damit aufgefordert, die Authentizität der E-Mail zu bestätigen.
 
 Diese Funktion verarbeitet solche Antworten.
 
 Es ist nicht möglich, die Absender-Prüfung abzuschalten, da es möglich ist, dass der Nutzer mit einer falschen E-Mail-Absenderadresse antwortet, weil sein Mail-Client falsch eingerichtet ist.';
 $string['invalid_recipient_handler_name'] = 'Ungültige Senderverarbeitung';
+$string['invalidrecipientdescription'] = 'Die Mitteilung \'{$a->subject}\' konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt. Um Ihre Mitteilung authentifizieren zu können, müssen Sie auf diese Mitteilung antworten.';
+$string['invalidrecipientdescriptionhtml'] = 'Die Mitteilung \'{$a->subject}\' konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt. Um Ihre Mitteilung authentifizieren zu können, müssen Sie auf diese Mitteilung antworten.';
+$string['invalidrecipientfinal'] = 'Die Mitteilung \'{$a->subject}\' konnte nicht authentifiziert werden. Sie wurde von einer anderen E-Mail-Adresse versandt als in Ihrem Profil hinterlegt.';
 $string['mailbox'] = 'Name des E-Mail-Kontos';
 $string['mailboxconfiguration'] = 'Einstellungen des E-Mail-Kontos';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';

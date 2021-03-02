@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'course', language 'ja', version '3.8'.
  *
- * @package   course
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     course
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,11 +37,11 @@ $string['coursetoolong'] = 'コースが長すぎます。';
 $string['customfield_islocked'] = 'ロック';
 $string['customfield_islocked_help'] = 'フィールドがロックされた場合、ケイパビリティ「ロック済みカスタムフィールドを修正する」のあるユーザ (デフォルトではマネージャのデフォルトロールのユーザのみ) のみコース設定で変更することができます。';
 $string['customfield_notvisible'] = 'なし';
-$string['customfieldsettings'] = '一般コースカスタムフィールド設定';
 $string['customfield_visibility'] = '表示対象';
 $string['customfield_visibility_help'] = 'この設定はコース一覧またはダッシュボードの利用可能なカスタムフィールドフィルタで誰がカスタムフィールド名および値を閲覧できるか指定します。';
 $string['customfield_visibletoall'] = '全員';
 $string['customfield_visibletoteachers'] = '教師';
+$string['customfieldsettings'] = '一般コースカスタムフィールド設定';
 $string['errorendbeforestart'] = '終了日 ({$a}) は開始日の前にしてください。';
 $string['favourite'] = '星付きコース';
 $string['gradetopassnotset'] = 'このコースには合格点が設定されていません。合格点はコースの評定アイテム (評定表セットアップ) で設定できます。';
@@ -75,6 +75,15 @@ $string['target:coursedropout'] = '脱落リスクのある学生';
 $string['target:coursedropout_help'] = 'このターゲットは学生に脱落するリスクがあると考えられているかどうか説明します。';
 $string['target:coursegradetopass'] = 'コースに合格するための最小評点に到達できないリスクのある学生';
 $string['target:coursegradetopass_help'] = 'このターゲットは学生がコースに合格するための最小評点に到達できないリスクがあるかどうか説明します。';
+$string['target:noaccesssincecoursestart'] = 'まだコースにアクセスしていない学生';
+$string['target:noaccesssincecoursestart_help'] = 'このタグは登録したコースにまだアクセスしたことのない学生を表します。';
+$string['target:noaccesssincecoursestartinfo'] = '次の学生は開始したコースに登録されていますが、コースにアクセスしたことはありません。';
+$string['target:norecentaccesses'] = '最近コースにアクセスしていない学生';
+$string['target:norecentaccesses_help'] = 'このターゲットでは設定されたアナリティクスの間隔 (デフォルトでは過去1ヶ月) で登録済みのコースにアクセスしていない学生を割り出します。';
+$string['target:norecentaccessesinfo'] = '次の学生は設定された分析期間中 (デフォルトでは1ヶ月)、登録したコースにアクセスしていません。';
+$string['target:noteachingactivity'] = 'リスクのあるコース未開始';
+$string['target:noteachingactivity_help'] = 'このターゲットは次週開始する予定のコースに教育活動があるかどうか説明します。';
+$string['target:noteachingactivityinfo'] = '数日で開始される予定の次のコースには教師または学生が登録されていないため、開始しないリスクがあります。';
 $string['targetlabelstudentcompetenciesno'] = 'コースに割り当てられたコンピテンシーに到達できる可能性のある学生';
 $string['targetlabelstudentcompetenciesyes'] = 'コースに割り当てられたコンピテンシーに到達できないリスクのある学生';
 $string['targetlabelstudentcompletionno'] = 'コース完了条件に合致する可能性のある学生';
@@ -85,12 +94,3 @@ $string['targetlabelstudentgradetopassno'] = 'コースに合格するための�
 $string['targetlabelstudentgradetopassyes'] = 'コースに合格するための最小評点を取得できないリスクのある学生です。';
 $string['targetlabelteachingno'] = 'リスクのあるコース未開始';
 $string['targetlabelteachingyes'] = '教育ケイパビリティのあるユーザはコースにアクセスできます。';
-$string['target:noaccesssincecoursestart'] = 'まだコースにアクセスしていない学生';
-$string['target:noaccesssincecoursestart_help'] = 'このタグは登録したコースにまだアクセスしたことのない学生を表します。';
-$string['target:noaccesssincecoursestartinfo'] = '次の学生は開始したコースに登録されていますが、コースにアクセスしたことはありません。';
-$string['target:norecentaccesses'] = '最近コースにアクセスしていない学生';
-$string['target:norecentaccesses_help'] = 'このターゲットでは設定されたアナリティクスの間隔 (デフォルトでは過去1ヶ月) で登録済みのコースにアクセスしていない学生を割り出します。';
-$string['target:norecentaccessesinfo'] = '次の学生は設定された分析期間中 (デフォルトでは1ヶ月)、登録したコースにアクセスしていません。';
-$string['target:noteachingactivity'] = 'リスクのあるコース未開始';
-$string['target:noteachingactivity_help'] = 'このターゲットは次週開始する予定のコースに教育活動があるかどうか説明します。';
-$string['target:noteachingactivityinfo'] = '数日で開始される予定の次のコースには教師または学生が登録されていないため、開始しないリスクがあります。';

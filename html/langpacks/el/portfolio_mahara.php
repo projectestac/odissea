@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio_mahara', language 'el', version '3.8'.
  *
- * @package   portfolio_mahara
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_mahara
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,12 +36,12 @@ $string['err_nomnethosts'] = 'Βασίζεται στο MNet';
 $string['err_nomnethosts_help'] = 'Αυτό το πρόσθετο βασίζεται σε MNet ομότιμους με δημοσιευμένο SSO IDP, που έχουν εγγραφεί σε SSO SP, δημοσιευμένες <b>και</b> εγγεγραμμένες υπηρεσίες χαρτοφυλακίου καθώς και το πρόσθετο αυθεντικοποίησης MNet. Οποιαδήποτε στιγμιότυπα αυτού του πρόσθετου είναι σε απόκρυψη μέχρι να πληρούνται αυτές οι συνθήκες. Μετά θα χρειαστεί χειροκίνητα να ρυθμιστούν πάλι σε ορατά.';
 $string['failedtojump'] = 'Αποτυχία εκκίνησης επικοινωνίας με τον απομακρυσμένο εξυπηρετητή';
 $string['failedtoping'] = 'Αποτυχία εκκίνησης επικοινωνίας με τον απομακρυσμένο εξυπηρετητή: {$a}';
-$string['mnethost'] = 'Κόμβος Η/Υ του MNet';
 $string['mnet_nofile'] = 'Αποτυχία εύρεσης του αρχείου στο αντικείμενο μεταφοράς - περίεργο σφάλμα';
 $string['mnet_nofilecontents'] = 'Το αρχείο βρέθηκε στο αντικείμενο μεταφοράς, αλλά δεν ήταν δυνατόν να ληφθεί το περιεχόμενο - περίεργο σφάλμα: {$a}';
 $string['mnet_noid'] = 'Δεν ήταν δυνατή η εύρεση του αντίστοιχου ιστορικού μεταφοράς για αυτό το κουπόνι';
 $string['mnet_notoken'] = 'Δεν ήταν δυνατή η εύρεση κουπονιού που να ταιριάζει σε αυτή τη μεταφορά';
 $string['mnet_wronghost'] = 'Ο απομακρυσμένος κεντρικός Η/Υ δεν ταιριάζει με το ιστορικό μεταφοράς για αυτό το κουπόνι';
+$string['mnethost'] = 'Κόμβος Η/Υ του MNet';
 $string['pf_description'] = 'Να επιτρέπεται σε χρήστες να προωθούν περιεχόμενο του Moodle σε αυτό τον κεντρικό υπολογιστή <br />
 Εγγραφείτε σε <b>και</b> δημοσιεύστε αυτή την υπηρεσία ώστε να επιτρέψετε στους αυθεντικοποιημένους χρήστες στον ιστότοπό σας να προωθούν περιεχόμενο σε {$a}<br /><ul><li><em>
 Εξάρτηση</em>: Πρέπει επίσης να <strong>δημοσιεύσετε</strong> την SSO (Ορίστε Πάροχο) υπηρεσία σε {$a}.</li><li><em>

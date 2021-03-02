@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_dataprivacy', language 'gl', version '3.8'.
  *
- * @package   tool_dataprivacy
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_dataprivacy
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,10 +45,10 @@ $string['cannotreset'] = 'No é posíbel reiniciar esta solicitude. Soamente pod
 $string['categories'] = 'Categorías';
 $string['categorieslist'] = 'Lista de categorías de datos';
 $string['category'] = 'Categoría';
+$string['category_help'] = 'Unha categoría no rexistro de datos describe un tipo de datos. Pode engadirse unha nova categoría, ou se se selecciona «herdado», aplícase a categoría de datos dun contexto máis elevado. Os contexto son (de baixo a alto): Bloques > Módulos de actividade > Cursos > Categorías de curso > Sitio.';
 $string['categorycreated'] = 'Creada a categoría';
 $string['categorydefault'] = 'Categoría predeterminada';
 $string['categorydefault_help'] = 'A categoría predeterminada é a categoría de datos aplicada a todas as novas instancias. Se se selecciona «herdado», aplícase a categoría de datos dun contexto máis elevado. Os contexto son (de baixo a alto): Bloques > Módulos de actividade > Cursos > Categorías de curso > Usuario > Sitio.';
-$string['category_help'] = 'Unha categoría no rexistro de datos describe un tipo de datos. Pode engadirse unha nova categoría, ou se se selecciona «herdado», aplícase a categoría de datos dun contexto máis elevado. Os contexto son (de baixo a alto): Bloques > Módulos de actividade > Cursos > Categorías de curso > Sitio.';
 $string['categoryupdated'] = 'Actualizada a categoría';
 $string['close'] = 'Pechar';
 $string['compliant'] = 'Conforme';
@@ -91,7 +91,7 @@ $string['datarequestcreatedforuser'] = 'Solicitude de datos creada para {$a}';
 $string['datarequestcreatedfromscheduledtask'] = 'Creado automaticamente dende unha tarefa programada (usuario preexistente eliminado).';
 $string['datarequestcreatedupondelete'] = 'Creada automaticamente ao eliminar o usuario.';
 $string['datarequestemailsubject'] = 'Solicitude de datos: {$a}';
-$string['datarequests'] = 'Solicitude de datos';
+$string['datarequests'] = 'Solicitudes de datos';
 $string['dataretentionexplanation'] = 'Este resumo amosa os propósitos e as categorías predeterminadas para reter datos do usuario. Certas áreas puideran ter propósitos e categorías máis específicas que as aquí relacionadas.';
 $string['dataretentionsummary'] = 'Resumen da retención de datos';
 $string['datecomment'] = '[{$a->date}]:
@@ -110,7 +110,7 @@ $string['defaultunexpiredwithexceptions'] = 'Só datos para usuarios que teñan 
 {$a->expired}
  A menos que tamén teñan algún dos seguintes roles:<br>
 {$a->unexpired}';
-$string['deletecategory'] = 'Eliminar a categoría';
+$string['deletecategory'] = 'Eliminar categoría';
 $string['deletecategorytext'] = 'Confirma que quere eliminar a categoría «{$a}»?';
 $string['deletedefaults'] = 'Eliminar valores predeterminados: {$a}';
 $string['deletedefaultsconfirmation'] = 'Confirma que quere eliminar a categoría e propósito predeterminados dos módulos {$a}?';
@@ -135,9 +135,9 @@ $string['editdefaults'] = 'Editar valores predeterminados: {$a}';
 $string['editmoduledefaults'] = 'Editar os valores predeterminados do módulo';
 $string['editpurpose'] = 'Editar propósito';
 $string['editpurposes'] = 'Editar propósitos';
-$string['effectiveretentionperiodcourse'] = '{$a} (após a data de finalización do curso)';
-$string['effectiveretentionperioduser'] = '{$a} (desde a última vez que o usuario accedeu ao sitio)';
-$string['emailsalutation'] = 'Aprezado/a {$a}';
+$string['effectiveretentionperiodcourse'] = '{$a} (após a data de remate do curso)';
+$string['effectiveretentionperioduser'] = '{$a} (dende a última vez que o usuario accedeu ao sitio)';
+$string['emailsalutation'] = 'Prezado/a {$a}';
 $string['errorcannotrequestdeleteforother'] = 'Non ten permiso para crear unha solicitude de eliminación para este usuario.';
 $string['errorcannotrequestdeleteforself'] = 'Non ten permiso para crear unha solicitude de eliminación para vostede mesmo.';
 $string['errorcontexthasunexpiredchildren'] = 'O contexto «{$a}» aínda ten subcontextos que aínda non caducaron. Non se marcou ningún contexto para eliminar.';
@@ -146,7 +146,7 @@ $string['errorinvalidrequeststatus'] = 'Estado de solicitude non válido';
 $string['errorinvalidrequesttype'] = 'Tipo de solicitude non válido!';
 $string['errornocapabilitytorequestforothers'] = 'O usuario {$a->requestedby} non ten a capacidade de facer unha solicitude de datos en nome do usuario {$a->userid}';
 $string['errornoexpiredcontexts'] = 'Non hai contextos caducados para procesar';
-$string['errorrequestalreadyexists'] = 'Xa ten unha solicitude en curso.';
+$string['errorrequestalreadyexists'] = 'Xa ten unha solicitude en proceso.';
 $string['errorrequestnotfound'] = 'Non se atopou a solicitude';
 $string['errorrequestnotwaitingforapproval'] = 'A solicitude non está agardando a aprobación. Ou aínda non está preparada ou xa foi procesada.';
 $string['errorsendingmessagetodpo'] = 'Produciuse un erro ao tentar enviar unha mensaxe a {$a}.';
@@ -166,7 +166,7 @@ $string['filteroption'] = '{$a->category}: {$a->name}';
 $string['frontpagecourse'] = 'Curso na páxina de portada';
 $string['gdpr_art_6_1_a_description'] = 'O interesado deu o seu consentimento para o tratamento dos seus datos persoais para un ou máis fins específicos';
 $string['gdpr_art_6_1_a_name'] = 'Consentimento (RXPD Art. 6.1(a))';
-$string['gdpr_art_6_1_b_description'] = 'O tratamento é necesario para a realización dun contrato no que o interesado sexa parte ou para tomar medidas a petición do interesado antes de concertar un contrato.';
+$string['gdpr_art_6_1_b_description'] = 'O tratamento é necesario para a realización dun contrato no que o interesado sexa parte ou para tomar medidas a pedimento do interesado antes de concertar un contrato.';
 $string['gdpr_art_6_1_b_name'] = 'Contrato (RXPD Art. 6.1(b))';
 $string['gdpr_art_6_1_c_description'] = 'O tratamento é necesario para o cumprimento dunha obriga legal á que está suxeito o controlador';
 $string['gdpr_art_6_1_c_name'] = 'Obriga legal (RXPD Art 6.1(c))';
@@ -199,7 +199,7 @@ $string['gdpr_art_9_2_j_name'] = 'Interese público, ou investigación científi
 $string['hide'] = 'Contraer todo';
 $string['httpwarning'] = 'Non é posíbel cifrar os datos descargados deste sitio. Póñase en contacto co administrador do sistema e solicite que instalen SSL neste sitio.';
 $string['inherit'] = 'Herdanza';
-$string['lawfulbases'] = 'Bases legais';
+$string['lawfulbases'] = 'Bases legales';
 $string['lawfulbases_help'] = 'Seleccione polo menos unha opción que servirá de base legal para procesar datos persoais. Para obter máis detalles sobre estas bases legais, consulte <a href="https://gdpr-info.eu/art-6-gdpr/" target="_blank">RXPD Art. 6.1 (en inglés)</a>';
 $string['markcomplete'] = 'Marcar como completado';
 $string['markedcomplete'] = 'A súa consulta foi marcada como completa polo responsábel da privacidade.';
@@ -248,10 +248,10 @@ $string['privacyrequestexpiry_desc'] = 'O tempo durante o que as solicitudes de 
 $string['protected'] = 'Protexido';
 $string['protectedlabel'] = 'A retención destes datos ten un precedente legal superior sobre a solicitude dun usuario para ser esquecido. Os datos só se eliminarán após que o período de retención caduque.';
 $string['purpose'] = 'Propósito';
+$string['purpose_help'] = 'O propósito describe o motivo do tratamento dos datos. Pode engadirse un novo propósito, ou se se selecciona «herdado», aplícase o propósito dun contexto máis elevado. Os contexto son (de baixo a alto): Bloques > Módulos de actividade > Cursos > Categorías de curso > Usuario > Sitio.';
 $string['purposecreated'] = 'Creado o propósito';
 $string['purposedefault'] = 'Propósito predeterminado';
 $string['purposedefault_help'] = 'O propósito predeterminado é o propósito que se aplica a todas as novas instancias. Se se selecciona «herdado», aplícase o propósito dun contexto máis elevado. Os contexto son (de baixo a alto): Bloques > Módulos de actividade > Cursos > Categorías de curso > Usuario > Sitio.';
-$string['purpose_help'] = 'O propósito describe o motivo do tratamento dos datos. Pode engadirse un novo propósito, ou se se selecciona «herdado», aplícase o propósito dun contexto máis elevado. Os contexto son (de baixo a alto): Bloques > Módulos de actividade > Cursos > Categorías de curso > Usuario > Sitio.';
 $string['purposeoverview'] = 'Un propósito describe o uso ao que está destinado e a política de retención para datos almacenados. A base para almacenar e reter eses datos está tamén descrita no propósito.';
 $string['purposes'] = 'Propósitos';
 $string['purposeslist'] = 'Lista de propósitos de datos';
@@ -266,7 +266,7 @@ $string['requestcomments_help'] = 'Esta caixa permítelle introducir máis detal
 $string['requestcreation'] = 'Creación';
 $string['requestdenied'] = 'A solicitude foi denegada';
 $string['requestemailintro'] = 'Recibiu unha solicitude de datos:';
-$string['requestfor'] = 'Solicitando para';
+$string['requestfor'] = 'Usuario';
 $string['requestmarkedcomplete'] = 'A solicitude foi marcada como completada';
 $string['requestorigin'] = 'Sitio';
 $string['requestsapproved'] = 'As solicitudes foron aprobadas';
@@ -274,11 +274,11 @@ $string['requestsdenied'] = 'As solicitudes foron denegadas';
 $string['requeststatus'] = 'Estado';
 $string['requestsubmitted'] = 'A súa solicitude foi enviada ao responsábel da privacidade';
 $string['requesttype'] = 'Tipo';
+$string['requesttype_help'] = 'Seleccione o motivo polo que quere contactar co responsábel da privacidade';
 $string['requesttypedelete'] = 'Eliminar todos os meus datos persoais';
 $string['requesttypedeleteshort'] = 'Eliminar';
 $string['requesttypeexport'] = 'Exportar todos os meus datos persoais';
 $string['requesttypeexportshort'] = 'Exportar';
-$string['requesttype_help'] = 'Seleccione o motivo polo que quere contactar co responsábel da privacidade';
 $string['requesttypeothers'] = 'Investigación xeral';
 $string['requesttypeothersshort'] = 'Mensaxe';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';
@@ -297,7 +297,7 @@ $string['resubmitrequest'] = 'Reenviar a solicitude {$a->type} para {$a->usernam
 $string['resubmitrequestasnew'] = 'Reenviar como solicitude nova';
 $string['resubmittedrequest'] = 'A solicitude actual {$a->type} para {$a->username} foi cancelada e reenviada';
 $string['resultdeleted'] = 'Recentemente solicitou que se eliminase a súa conta e datos persoais en {$a}. Este proceso foi completado e xa non poderá iniciar sesión.';
-$string['resultdownloadready'] = 'A copia dos seus datos persoais en {$a} que solicitou recentemente xa está dispoñíbel para a súa descarga. Prema na seguinte ligazón para ir á páxina de descarga.';
+$string['resultdownloadready'] = 'A súa copia dos seus datos persoais de {$a} que solicitou recentemente, está dispoñíbel para descargar dende a seguinte ligazón.';
 $string['retentionperiod'] = 'Período de retención';
 $string['retentionperiod_help'] = 'O período de retención especifica o período de tempo que deben conservarse. Cando o período de retención caduque, os datos serán marcados e listados para eliminalos, agardando a confirmación do administrador.';
 $string['retentionperiodnotdefined'] = 'Non se definiu un período de retención';

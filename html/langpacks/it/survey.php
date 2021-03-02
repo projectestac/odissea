@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'it', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -159,7 +159,7 @@ Grazie.';
 $string['collesaname'] = 'COLLES (Reale)';
 $string['collesapintro'] = 'L\'obiettivo di questo sondaggio è di aiutarci a comprendere come lo svolgimento online di questa unità ti sia stato utile nell\'apprendimento.
 
-Ciascuna delle seguenti 24 domande ti chiede di confrontare l\'esperienza <b>ideale</b> e quella <b>reale</b> in questa unità.
+Ciascuna delle seguenti 24 domande ti chiede di confrontare l\'esperienza <b>ideale</b> e quella <b>reale</b> vissuta in questa unità.
 
 Non ci sono risposte \'giuste\' o risposte \'errate\'; ci interessa solo la tua opinione. Garantiamo che le tue risposte saranno trattate con il massimo grado di riservatezza e non influenzeranno la tua valutazione.
 
@@ -173,10 +173,10 @@ $string['collesm2'] = 'Senso critico';
 $string['collesm2short'] = 'Senso critico';
 $string['collesm3'] = 'Interattività';
 $string['collesm3short'] = 'Interattività';
-$string['collesm4'] = 'Supporto da parte del docente';
-$string['collesm4short'] = 'Supporto dal docente';
-$string['collesm5'] = 'Supporto da parte degli altri studenti';
-$string['collesm5short'] = 'Supporto dagli studenti';
+$string['collesm4'] = 'Supporto del docente';
+$string['collesm4short'] = 'Supporto del docente';
+$string['collesm5'] = 'Supporto tra pari';
+$string['collesm5short'] = 'Supporto tra pari';
 $string['collesm6'] = 'Comunicazione';
 $string['collesm6short'] = 'Cumunicazione';
 $string['collesmintro'] = 'In questa unità online...';
@@ -210,13 +210,13 @@ $string['howlong'] = 'Quanto tempo hai impiegato a completare questo sondaggio?'
 $string['howlongoptions'] = 'meno di 1 min,1-2 min,2-3 min,3-4 min,4-5-min,5-10 min,più di 10 min';
 $string['ifoundthat'] = 'Realmente';
 $string['indicator:cognitivedepth'] = 'Sondaggio cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Sondaggio.';
 $string['indicator:cognitivedepthdef'] = 'Sondaggio cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Sondaggio (Livelli: Nessuna visualizzazione, Visualizzazione, Invio)';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Sondaggio.';
 $string['indicator:socialbreadth'] = 'Sondaggio sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Sondaggio.';
 $string['indicator:socialbreadthdef'] = 'Sondaggio sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Sondaggio (Livelli: Nessuna partecipazione, Partecipazione da solo)';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Sondaggio.';
 $string['introtext'] = 'Testo di introduzione';
 $string['invalidsurveyid'] = 'ID Sondaggio errata';
 $string['invalidtmptid'] = 'ID template errata';
@@ -264,13 +264,13 @@ $string['seemoredetail'] = 'Clicca qui per ulteriori dettagli';
 $string['selectedquestions'] = 'Domande selezionate da una scala, tutti gli studenti';
 $string['summary'] = 'Riepilogo';
 $string['survey:addinstance'] = 'Aggiungere sondaggi';
-$string['surveycompleted'] = 'Hai completato questo sondaggio. Il grafico sotto riportato visualizza una sintesi comparata dei tuoi risultati con le medie della classe.';
-$string['surveycompletednograph'] = 'Hai completato il sondaggio.';
 $string['survey:download'] = 'Scaricare risposte';
-$string['surveygraph'] = 'Grafico del sondaggio';
-$string['surveyname'] = 'Nome del sondaggio';
 $string['survey:participate'] = 'Rispondere al sondaggio';
 $string['survey:readresponses'] = 'Visualizzare risposte';
+$string['surveycompleted'] = 'Hai completato questo sondaggio. Il grafico sotto riportato visualizza una sintesi comparata dei tuoi risultati con le medie della classe.';
+$string['surveycompletednograph'] = 'Hai completato il sondaggio.';
+$string['surveygraph'] = 'Grafico del sondaggio';
+$string['surveyname'] = 'Nome del sondaggio';
 $string['surveysaved'] = 'Sondaggio salvato';
 $string['surveytype'] = 'Tipo di sondaggio';
 $string['surveytype_help'] = 'Sono disponibili 3 tipi di sondaggio:

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_lp', language 'eu', version '3.8'.
  *
- * @package   tool_lp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_lp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['addcohortstosync'] = 'Gehitu kohorteak sinkronizatzeko';
 $string['addcompetency'] = 'Gehitu konpetentzia';
 $string['addcoursecompetencies'] = 'Gehitu konpetentziak ikastarora';
 $string['addcrossreferencedcompetency'] = 'Gehitu erreferentzia gurutzatuko konpetentzia';
-$string['addingcompetencywillresetparentrule'] = 'Konpetentzia berri bat gehitzeak  \'{$a}\'-(e)an zehaztutako araua ezabatuko du. Jarraitu nahi duzu?';
+$string['addingcompetencywillresetparentrule'] = 'Konpetentzia berri bat gehitzeak  \'{$a}\'(e)an zehaztutako araua ezabatuko du. Jarraitu nahi duzu?';
 $string['addnewcompetency'] = 'Gehitu beste konpetentzia bat';
 $string['addnewcompetencyframework'] = 'Gehitu beste konpetentzia-marko bat';
 $string['addnewplan'] = 'Gehitu beste ikasketa-plan bat';
@@ -78,7 +78,7 @@ $string['configurescale'] = 'Konfiguratu eskalak';
 $string['coursecompetencies'] = 'Ikastaroko konpetentziak';
 $string['coursecompetencyratingsarenotpushedtouserplans'] = 'Ikastaro honetako konpetentzien kalifikazioek ez dute ikasketa-planean eragiten.';
 $string['coursecompetencyratingsarepushedtouserplans'] = 'Ikastaro honetan konpetentzien kalifikazioek ikasketa-planak berehala eguneratzen dituzte.';
-$string['coursecompetencyratingsquestion'] = 'Konpetentzia bat kalifikatzen denean, kalifikazioak ikasketa-planeko konpetentzia eguneratzen du edo soilik ikastaroan dauka eragina?';
+$string['coursecompetencyratingsquestion'] = 'Konpetentzia bat kalifikatzen denean, kalifikazioak ikasketa-planeko konpetentzia eguneratzen du edo ikastaroan bakarrik dauka eragina?';
 $string['coursesusingthiscompetency'] = 'Konpetentzia honetara estekatutako ikastaroak';
 $string['coveragesummary'] = '{$a->competenciescount} konpetentziatik {$a->competenciescoveredcount} lantzen dira (% {$a->coveragepercentage})';
 $string['createlearningplans'] = 'Sortu ikasketa-planak';
@@ -138,8 +138,8 @@ $string['move'] = 'Mugitu';
 $string['movecompetency'] = 'Mugitu konpetentzia';
 $string['movecompetencyafter'] = 'Mugitu konpetentzia \'{$a}\'-(r)en ondorengora.';
 $string['movecompetencyframework'] = 'Mugitu konpetentzia-markoa';
-$string['movecompetencytochildofselfwillresetrules'] = 'Konpetentzia mugitzeak bere baitako arauak ezabatuko ditu, baita goragoko eta helmugakoak ere. Jarraitu nahi duzu?';
-$string['movecompetencywillresetrules'] = 'Konpetentzia mugitzeak goragoko eta helmugako arauak ezabatuko ditu. Jarraitu nahi duzu?';
+$string['movecompetencytochildofselfwillresetrules'] = 'Konpetentzia mugitzeak bere baitako arauak ezabatuko ditu, baita goragoko eta helburukoak ere. Jarraitu nahi duzu?';
+$string['movecompetencywillresetrules'] = 'Konpetentzia mugitzeak goragoko eta helburuko arauak ezabatuko ditu. Jarraitu nahi duzu?';
 $string['moveframeworkafter'] = 'Mugitu konpetentzia-markoa \'{$a}\'-(r)en ondorengora.';
 $string['movetonewparent'] = 'Mugitu';
 $string['myplans'] = 'Nire ikasketa-planak';
@@ -190,7 +190,7 @@ $string['ratecomment'] = 'Ebidentzien oharrak';
 $string['rating'] = 'Puntuazioa';
 $string['ratingaffectsonlycourse'] = 'Konpetentzia bat kalifikatzeak ikastaroko konpetentzia baino ez du eguneratzen.';
 $string['ratingaffectsuserplans'] = 'Konpetentzia bat kalifikatzeak konpetentziak ikasketa-plan guztietan duen kalifikazioa eguneratzen du.';
-$string['reopenplan'] = 'Zabaldu berriz ikasketa-plan hau';
+$string['reopenplan'] = 'Ireki berriz ikasketa-plan hau';
 $string['reopenplanconfirm'] = 'Berriro ireki \'{$a}\' ikasketa-plana? Honek ikasketa-plana osatu zenean erabiltzaileen konpetentzietan gordetako egoera ezabatuko du, eta plana berriz aktibatuko du.';
 $string['requestreview'] = 'Eskatu berrikuspena';
 $string['reviewer'] = 'Berrikuslea';

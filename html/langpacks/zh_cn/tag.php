@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'zh_cn', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -102,16 +102,16 @@ $string['prevpage'] = '返回';
 $string['privacy:metadata:tag'] = '每个唯一标签的详细信息与其描述和其他相关信息一起存储';
 $string['privacy:metadata:tag:description'] = '标签的描述。';
 $string['privacy:metadata:tag:flag'] = '标签是否已被标记为不合适。';
+$string['privacy:metadata:tag:name'] = '标签名称 - 这是名称的规范化版本。';
+$string['privacy:metadata:tag:rawname'] = '标签的名称-这是显示名称。';
+$string['privacy:metadata:tag:timemodified'] = '标签上次修改的时间。';
+$string['privacy:metadata:tag:userid'] = '创建此标签的用户ID。';
 $string['privacy:metadata:taginstance'] = '每个标签之间的链接及其使用位置。';
 $string['privacy:metadata:taginstance:ordering'] = '此标签的相对顺序。';
 $string['privacy:metadata:taginstance:tagid'] = '指向标签的链接。';
 $string['privacy:metadata:taginstance:timecreated'] = '此标签链接到目标的时间。';
 $string['privacy:metadata:taginstance:timemodified'] = '此标签修改链接到目标的时间。';
 $string['privacy:metadata:taginstance:tiuserid'] = '如果用户可以单独标记共享内容, 标签实例的所有者将被保存。';
-$string['privacy:metadata:tag:name'] = '标签名称 - 这是名称的规范化版本。';
-$string['privacy:metadata:tag:rawname'] = '标签的名称-这是显示名称。';
-$string['privacy:metadata:tag:timemodified'] = '标签上次修改的时间。';
-$string['privacy:metadata:tag:userid'] = '创建此标签的用户ID。';
 $string['ptags'] = '用户自定义标签(英文半角逗号分隔)';
 $string['relatedblogs'] = '最近发表的博客';
 $string['relatedtags'] = '相关标签';
@@ -147,11 +147,11 @@ $string['tag'] = '标签';
 $string['tagarea_blog_external'] = '外部博客帖子';
 $string['tagarea_course'] = '课程';
 $string['tagarea_course_modules'] = '活动和资源';
+$string['tagarea_post'] = '博客帖子';
+$string['tagarea_user'] = '用户兴趣';
 $string['tagareaenabled'] = '启用';
 $string['tagareaname'] = '名字';
-$string['tagarea_post'] = '博客帖子';
 $string['tagareas'] = '标签区域';
-$string['tagarea_user'] = '用户兴趣';
 $string['tagcollection'] = '标签集';
 $string['tagcollection_help'] = '标签集是用于不同区域的一系列标签。 例如，标准标签集可以用于标记课程，同时用户兴趣和博客帖子标签保持在单独的集合中。 当用户点击标签时，标签页仅在同一集合中显示具有该标签的项目。 标签可以根据标记的区域自动添加到集合中，也可以作为标准标签手动添加。';
 $string['tagcollections'] = '标签集';

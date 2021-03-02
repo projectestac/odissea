@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_overview', language 'ko', version '3.8'.
  *
- * @package   quiz_overview
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_overview
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -67,9 +67,9 @@ $string['regradecomplete'] = '재채점이 성공적으로 완료되었습니다
 $string['regradeheader'] = '재채점';
 $string['regradeselected'] = '선택된 시도 재채점';
 $string['regradingattemptxofy'] = '시도 재채점 ({$a->done}/{$a->count})';
-$string['show'] = '포함';
-$string['showattempts'] = '시도 포함';
-$string['showdetailedmarks'] = '각 질문에 대한 채점';
+$string['show'] = '보기/ 다운로드';
+$string['showattempts'] = '시도 보기/다운로드만';
+$string['showdetailedmarks'] = '각 질문에 대한 점수';
 $string['showinggraded'] = '각 사용자에 대해 시도한 점수만 제시';
 $string['showinggradedandungraded'] = '사용자의 모든 시도를 제시. 채점이 된 시도는 강조됨. 퀴즈의 채점 방법은 {$a} 임.';
 $string['studentingroup'] = '\'{$a->groupname}\' 모둠의 \'{$a->coursestudent}\'';

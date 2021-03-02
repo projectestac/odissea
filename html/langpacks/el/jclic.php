@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'jclic', language 'el', branch 'MOODLE_37_STABLE'
+ * Strings for component 'jclic', language 'el', version '3.8'.
  *
- * @package   jclic
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     jclic
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -51,16 +51,16 @@ $string['invalidjclicfile'] = 'Καθορίστηκε μη έγκυρο JClic. �
 $string['invalidurl'] = 'Μη έγκυρη διεύθυνση URL. Πρέπει να αρχίζει με http ή https και πρέπει να είναι ένα έγκυρο αρχείο JClic';
 $string['jclic'] = 'JClic';
 $string['jclic:addinstance'] = 'Προσθήκη JClic';
+$string['jclic:grade'] = 'Βαθμολόγηση JClic';
+$string['jclic:submit'] = 'Υποβολή JClic';
+$string['jclic:view'] = 'Εμφάνιση JClic';
 $string['jclicfile'] = 'Αρχείο JClic';
 $string['jclicfile_help'] = 'Το αρχείο .jclic που περιέχει τα αρχεία JClic.';
-$string['jclic:grade'] = 'Βαθμολόγηση JClic';
 $string['jclicjarbase'] = 'Βάση Jar';
 $string['jclicjarbase_help'] = 'Διεύθυνση ιστού όπου βρίσκονται όλα τα jar αρχεία JClick';
 $string['jclicjs'] = 'Διεύθυνση URL αρχείου jclic.js';
 $string['jclicjs_help'] = 'Διεύθυνση URL στην οποία βρίσκεται το αρχείο jclic.js που απαιτείται για τον μη-Java αναπαραγωγό.';
-$string['jclic:submit'] = 'Υποβολή JClic';
 $string['jclicurl'] = 'Διεύθυνση URL';
-$string['jclic:view'] = 'Εμφάνιση JClic';
 $string['lang'] = 'Γλώσσα';
 $string['lap_help'] = 'Χρόνος μεταξύ συναλλαγών πελάτη-εξυπηρετητή (σε δευτερόλεπτα)';
 $string['lastaccess'] = 'Τελευταία επίσκεψη';

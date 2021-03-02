@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_guest', language 'zh_cn', version '3.8'.
  *
- * @package   enrol_guest
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_guest
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowguests'] = '该课程允许访客进入';
+$string['guest:config'] = '配置访客访问实例';
 $string['guestaccess_withoutpassword'] = '访客可访问';
 $string['guestaccess_withpassword'] = '访客可凭密码访问';
-$string['guest:config'] = '配置访客访问实例';
 $string['password'] = '密码';
 $string['password_help'] = '设定密码可以限定只有知道密码的访客才能访问课程。访客每次访问此课程都会被要求输入密码。';
 $string['passwordinvalid'] = '密码不正确，请重试';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'moodle', language 'de', version '3.8'.
  *
- * @package   moodle
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     moodle
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -246,7 +246,7 @@ $string['categorysubcategoryof'] = '{$a->category} - Unterkategorie von {$a->par
 $string['categoryupdated'] = 'Der Kursbereich \'{$a}\' wurde aktualisiert.';
 $string['changedpassword'] = 'Kennwort geändert';
 $string['changepassword'] = 'Kennwort ändern';
-$string['changesmadereallygoaway'] = 'Sie haben etwas verändert. Möchten Sie die Seite wirklich verlassen, ohne die Änderungen vorher zu speichern?';
+$string['changesmadereallygoaway'] = 'Sie haben etwas verändert. Möchten Sie die Seite wirklich verlassen, ohne die Änderungen zu speichern?';
 $string['changessaved'] = 'Änderungen gespeichert';
 $string['check'] = 'Prüfen';
 $string['checkall'] = 'Alles prüfen';
@@ -304,7 +304,7 @@ $string['cookiesenabled_help'] = 'Moodle verwendet zwei Cookies:
 
 Das wichtige Cookie heißt <b>MoodleSession</b>. Dieses Cookie muss erlaubt sein, damit Sie beim Wechsel von Seite zu Seite angemeldet bleiben. Beim Abmelden oder beim Beenden des Webbrowsers wird das Cookie automatisch gelöscht.
 
-Das andere Cookie dient der Bequemlichkeit und heißt <b>MoodleID</b>. Dieses Cookie speichert Ihren Anmeldenamen im Webbrowser und bleibt auch nach dem Abmelden erhalten. Beim nächsten Besuch der Website ist Ihr Anmeldename dann bereits für die Anmeldung eingetragen. Dieses Cookie können Sie verbieten, müssen dann aber Ihren Anmeldenamen immer neu eingeben.';
+Das andere Cookie dient der Bequemlichkeit und heißt standardmäßig <b>MoodleID</b>. Dieses Cookie speichert Ihren Anmeldenamen im Webbrowser und bleibt auch nach dem Abmelden erhalten. Beim nächsten Besuch der Website ist Ihr Anmeldename dann bereits für die Anmeldung eingetragen. Dieses Cookie können Sie verbieten, müssen dann aber Ihren Anmeldenamen immer neu eingeben.';
 $string['cookiesenabledonlysession'] = 'Cookies müssen aktiviert sein!';
 $string['cookiesenabledonlysession_help'] = 'Diese Seite verwendet ein Cookie namens \'MoodleSession\'. Sie müssen dieses Cookie zulassen, um die einzelnen Unterseiten aufrufen zu können. Wenn Sie sich abmelden oder Ihren Webbrowser schließen, wird das Cookie automatisch gelöscht.';
 $string['cookiesnotenabled'] = 'Cookies sind in Ihrem Browser leider deaktiviert.';
@@ -315,7 +315,7 @@ $string['copyingsitefiles'] = 'Im Kurs benutzte Dateien der Website werden kopie
 $string['copyinguserfiles'] = 'Nutzerdateien kopieren';
 $string['copyingzipfile'] = 'ZIP-Datei kopieren';
 $string['copyrightnotice'] = 'Urheberrechtshinweis';
-$string['coresystem'] = 'Kernsystem';
+$string['coresystem'] = 'System';
 $string['cost'] = 'Entgelt';
 $string['costdefault'] = 'Entgeltvoreinstellung';
 $string['counteditems'] = '{$a->count} {$a->items}';
@@ -332,8 +332,8 @@ $string['coursebackup'] = 'Kurssicherung';
 $string['coursebulkaction'] = 'Bulk-Aktionen für ausgewählte Kurse';
 $string['coursecategories'] = 'Kursbereiche';
 $string['coursecategory'] = 'Kursbereich';
-$string['coursecategorydeleted'] = 'Kursbereich {$a} gelöscht';
 $string['coursecategory_help'] = 'Diese Option legt fest, in welchem Kursbereich der Kurs abgelegt wird.';
+$string['coursecategorydeleted'] = 'Kursbereich {$a} gelöscht';
 $string['coursecatmanagement'] = 'Kurse und Kursbereiche verwalten';
 $string['coursecompletion'] = 'Kursabschluss';
 $string['coursecompletions'] = 'Kursabschlüsse';
@@ -378,8 +378,8 @@ $string['coursemessage'] = 'Mitteilung an Teilnehmer/innen';
 $string['coursenotaccessible'] = 'Dieser Kurs ist nicht öffentlich zugänglich.';
 $string['courseoverview'] = 'Kursbeschreibung';
 $string['courseoverviewfiles'] = 'Kursbild';
-$string['courseoverviewfilesext'] = 'Dateitypen für Kursbild';
 $string['courseoverviewfiles_help'] = 'Das Kursbild wird in der Kursübersicht im Dashboard angezeigt. Weitere Dateitypen und zusätzliche Dateien können von Administrator/innen der Website aktiviert werden. Wenn weitere Dateien hochgeladen sind, werden sie neben der Kursbeschreibung in der Kursübersicht angezeigt.';
+$string['courseoverviewfilesext'] = 'Dateitypen für Kursbild';
 $string['courseoverviewfileslimit'] = 'Max. Anzahl von Kursbildern';
 $string['courseoverviewgraph'] = 'Kursübersichtsgrafik';
 $string['coursepreferences'] = 'Kurseinstellungen';
@@ -414,13 +414,13 @@ $string['coursesearch_help'] = 'Sie können nach mehreren Begriffen gleichzeitig
 $string['coursesectionsummaries'] = 'Beschreibung zu Kursabschnitten';
 $string['coursesectiontitle'] = 'Kurs: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
 $string['coursesettings'] = 'Grundeinstellungen';
-$string['coursesmovedout'] = 'Kurse aus {$a} hinaus bewegt';
+$string['coursesmovedout'] = 'Kurse aus {$a} verschoben';
 $string['coursespending'] = 'Kursanträge bearbeiten';
 $string['coursestart'] = 'Kursbeginn';
 $string['coursesummary'] = 'Kursbeschreibung';
 $string['coursesummary_help'] = 'Die Kursbeschreibung wird in der Kursübersicht angezeigt. Bei einer Kurssuche werden zusätzlich zu den Kursnamen auch die Kursbeschreibungen durchsucht.';
 $string['coursetitle'] = 'Kurs: {$a->course}';
-$string['courseupdates'] = 'Neues im Kurs';
+$string['courseupdates'] = 'Kursaktualisierungen';
 $string['coursevisibility'] = 'Kurssichtbarkeit';
 $string['coursevisibility_help'] = 'Diese Einstellung legt fest, ob der Kurs in der Kursliste angezeigt wird und ob Teilnehmer/innen darauf zugreifen können. Wenn die Einstellung auf \'Verbergen\' gesetzt ist, wird der Zugriff auf Nutzer/innen mit der Fähigkeit eingeschränkt, verborgene Kurse  sehen zu können (z.B. Trainer/innen des Kurses oder Manager/innen).';
 $string['create'] = 'Erstellen';
@@ -492,7 +492,7 @@ $string['defaultcompetencescaleproficient'] = 'Kompetenz vorhanden';
 $string['defaultcoursestudent'] = 'Teilnehmer/in';
 $string['defaultcoursestudentdescription'] = 'Teilnehmer/innen haben grundsätzlich weniger Rechte in einem Kurs.';
 $string['defaultcoursestudents'] = 'Teilnehmer/innen';
-$string['defaultcoursesummary'] = 'Beschreiben Sie kurz, worum es in diesem Kurs geht.';
+$string['defaultcoursesummary'] = 'Beschreiben Sie kurz, worum es inhaltlich in diesem Kurs geht.';
 $string['defaultcourseteacher'] = 'Trainer/in';
 $string['defaultcourseteacherdescription'] = 'Trainer/innen dürfen einem Kurs verwalten, Ressourcen hinzufügen, Aktivitäten bearbeiten und Teilnehmer/innen beurteilen.';
 $string['defaultcourseteachers'] = 'Trainer/innen';
@@ -626,12 +626,12 @@ $string['emailactive'] = 'E-Mail aktiviert';
 $string['emailagain'] = 'E-Mail-Adresse (wiederholen)';
 $string['emailalreadysent'] = 'Eine E-Mail zur Kennwortrücksetzung wurde bereits versendet. Schauen Sie in Ihre E-Mails.';
 $string['emailcharset'] = 'E-Mail-Zeichensatz';
-$string['emailconfirm'] = 'Bestätigen Sie Ihren Zugang.';
+$string['emailconfirm'] = 'Bestätigen Sie Ihren Zugang';
 $string['emailconfirmation'] = 'Guten Tag {$a->firstname},
 
 mit Ihrer E-Mail-Adresse wurde ein neues Nutzerkonto für \'{$a->sitename}\' angefordert.
 
-Um das Nutzerkonto zu bestätigen gehen Sie bitte zur folgenden Webadresse:
+Um das Nutzerkonto zu bestätigen, müssen Sie zur folgenden Webadresse gehen:
 
 {$a->link}
 
@@ -650,23 +650,23 @@ $string['emailconfirmationsubject'] = '{$a}: Zugangsbestätigung';
 $string['emailconfirmsent'] = '<p>Um sicherzugehen, dass sich niemand unberechtigt über die von Ihnen angegebene E-Mail anmeldet, wird eine automatische Benachrichtigung an diese Adresse <b>{$a}</b> gesendet. Je nach Netzlast trifft sie sofort oder auch etwas später bei Ihnen ein.</p>
 <p>Die Benachrichtigung enthält eine Anleitung, wie Sie Ihre Registrierung bestätigen.
 Danach sind Sie auf dieser Moodle-Seite registriert und können sofort loslegen.</p>
-<p>Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website.</p>';
+<p>Bei Problemen wenden Sie sich an die Administrator/innen der Website.</p>';
 $string['emailconfirmsentfailure'] = 'Fehler beim Senden der Bestätigungsmitteilung';
 $string['emailconfirmsentsuccess'] = 'Die Bestätigungsmitteilung wurde erfolgreich versendet.';
 $string['emaildigest'] = 'E-Mail-Zusammenfassung';
-$string['emaildigestcomplete'] = 'Vollständig (tägliche E-Mail mit allen Forumsbeiträgen)';
 $string['emaildigest_help'] = 'Diese Einstellung zur Zusammenfassung von Beiträgen wird von neuen Foren benutzt:
 
 * Einzeln - keine Zusammenfassung, d. h. pro neuem Forumsbeitrag wird eine E-Mail versandt
 * Vollständig - Zusammenfassung der vollständigen Beiträge, d.h. pro Tag wird eine Zusammenfassung mit den neuen Beiträgen aller abonnierten Foren versandt
 * Themen - Zusammenfassung nur Themen, d.h. pro Tag wird eine E-Mail mit den Themen der neuen Beiträge des Forums versandt';
+$string['emaildigestcomplete'] = 'Vollständig (tägliche E-Mail mit allen Forumsbeiträgen)';
 $string['emaildigestoff'] = 'Einzeln (alle Forumsbeiträge einzeln als E-Mail)';
 $string['emaildigestsubjects'] = 'Themen (tägliche E-Mail mit den Themen aller Forumsbeiträge)';
 $string['emaildisable'] = 'E-Mail-Adresse ist deaktiviert';
 $string['emaildisableclick'] = 'Klicken Sie hier, um den E-Mail-Versand an diese Adresse zu deaktivieren.';
 $string['emaildisplay'] = 'E-Mail-Adresse anzeigen';
-$string['emaildisplaycourse'] = 'E-Mail-Adresse für Kursteilnehmer/innen anzeigen';
 $string['emaildisplay_help'] = 'Privilegierte Personen (z.B. Trainer/innen, Manager/innen, Administrator/innen) sehen die E-Mail-Adresse immer.';
+$string['emaildisplaycourse'] = 'E-Mail-Adresse für Kursteilnehmer/innen anzeigen';
 $string['emaildisplayhidden'] = 'E-Mail-Adresse verborgen';
 $string['emaildisplayno'] = 'E-Mail-Adresse nur für privilegierte Personen sichtbar';
 $string['emaildisplayyes'] = 'Ja, für alle sichtbar';
@@ -674,15 +674,15 @@ $string['emailenable'] = 'E-Mail-Adresse ist aktiviert';
 $string['emailenableclick'] = 'Klicken Sie hier, um den E-Mail-Versand an diese Adresse zu reaktivieren.';
 $string['emailexists'] = 'Diese E-Mail-Adresse ist bereits registriert.';
 $string['emailexistshintlink'] = 'Anmeldename oder Kennwort vergessen?';
-$string['emailexistssignuphint'] = 'Haben Sie möglicherweise in der Vergangenheit bereits einen Account erstellt? {$a}';
+$string['emailexistssignuphint'] = 'Haben Sie vor einiger Zeit bereits einen Account erstellt? {$a}';
 $string['emailformat'] = 'E-Mail-Format';
 $string['emailmustbereal'] = 'Wichtig: Geben Sie eine gültige E-Mail-Adresse an. Sie erhalten per E-Mail eine Bestätigung Ihrer Anmeldung.';
 $string['emailnotallowed'] = 'E-Mail-Adressen mit folgenden Domains sind nicht erlaubt: {$a}';
 $string['emailnotfound'] = 'Die E-Mail-Adresse wurde in der Datenbank nicht gefunden.';
-$string['emailonlyallowed'] = 'Diese E-Mail-Adresse ({$a}) kann nicht verwendet werden. Bitte wenden Sie sich bei Fragen an die Administrator/innen.';
-$string['emailpasswordchangeinfo'] = 'Guten Tag {$a->firstname} {$a->lastname},
+$string['emailonlyallowed'] = 'Diese E-Mail-Adresse ({$a}) kann nicht verwendet werden. Wenden Sie sich bei Fragen an die Administrator/innen.';
+$string['emailpasswordchangeinfo'] = 'Guten Tag {$a->firstname},
 
-jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihren Zugang auf \'{$a->sitename}\' angefordert.
+jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihren Zugang \'{$a->username}\' auf \'{$a->sitename}\' angefordert.
 
 Um das Kennwort zu ändern, gehen Sie bitte auf folgende Webseite:
 
@@ -696,7 +696,7 @@ Viel Erfolg!
 {$a->admin}
 
 Ihr E-Learning-Team';
-$string['emailpasswordchangeinfodisabled'] = 'Guten Tag {$a->firstname} {$a->lastname},
+$string['emailpasswordchangeinfodisabled'] = 'Guten Tag {$a->firstname},
 
 jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihren Zugang auf \'{$a->sitename}\' angefordert.
 
@@ -705,7 +705,7 @@ Leider ist Ihr Zugang zu dieser Website deaktiviert und kann nicht automatisch z
 {$a->admin}
 
 Ihr E-Learning-Team';
-$string['emailpasswordchangeinfofail'] = 'Guten Tag {$a->firstname} {$a->lastname},
+$string['emailpasswordchangeinfofail'] = 'Guten Tag {$a->firstname},
 
 jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihren Zugang auf \'{$a->sitename}\' angefordert.
 
@@ -735,8 +735,8 @@ Viel Erfolg!
 Ihr E-Learning-Team';
 $string['emailpasswordconfirmationsubject'] = '{$a}: Kennwort-Änderung bestätigen';
 $string['emailpasswordconfirmmaybesent'] = '<p>Wenn Sie Ihren Anmeldenamen bzw. Ihre E-Mail-Adresse richtig angegeben haben, wird eine automatische E-Mail an Sie gesendet.</p><p>Die Mitteilung enthält eine Anleitung, wie Sie das Zurücksetzen des Kennwortes abschließen.</p>';
-$string['emailpasswordconfirmnoemail'] = 'Das angegebene Nutzerkonto hat keine eingetragene E-Mail-Adresse. Wenden Sie sich bitte an eine/n Administrator/in.';
-$string['emailpasswordconfirmnotsent'] = 'Die Eingabe passt zu keinem vorhandenen Nutzerkonto. Prüfen Sie die Eingabe und versuchen Sie es noch einmal. Wenn Sie Schwierigkeiten haben, wenden Sie sich bitte an eine/n Administrator/in.';
+$string['emailpasswordconfirmnoemail'] = 'Das angegebene Nutzerkonto hat keine eingetragene E-Mail-Adresse. Wenden Sie sich bitte an den Administrator.';
+$string['emailpasswordconfirmnotsent'] = 'Die Eingabe passt zu keinem vorhandenen Nutzerkonto. Prüfen Sie die Eingabe und versuchen Sie es noch einmal. Wenn Sie Schwierigkeiten haben, wenden Sie sich bitte an den Administrator.';
 $string['emailpasswordconfirmsent'] = 'Eine E-Mail zur Bestätigung der Kennwortänderung wurde an Ihre Adresse <b>{$a}</b> gesendet. <br />Die E-Mail enthält eine Anleitung, wie Sie Ihre Kennwortänderung bestätigen und abschließen.';
 $string['emailpasswordsent'] = 'Danke für die Bestätigung der Kennwortänderung.
 Eine E-Mail mit Ihrem neuen Kennwort wurde an Ihre Adresse <b>{$a->email}</b> gesendet.
@@ -785,7 +785,7 @@ $string['english'] = 'Englisch';
 $string['enrolmentmethods'] = 'Einschreibemethoden';
 $string['entercourse'] = 'Hier klicken, um den Kurs zu betreten';
 $string['enteremail'] = 'E-Mail-Adresse eingeben';
-$string['enteremailaddress'] = 'Geben Sie hier Ihre E-Mail-Adresse ein, um Ihr Kennwort zurückzusetzen. Sie erhalten ein neues Kennwort per E-Mail zugesandt.';
+$string['enteremailaddress'] = 'Geben Sie hier Ihre E-Mail-Adresse ein, um Ihr Kennwort zurückzusetzen. Das neue Kennwort wird Ihnen per E-Mail gesendet.';
 $string['enterusername'] = 'Anmeldenamen eingeben';
 $string['entries'] = 'Einträge';
 $string['error'] = 'Fehler';
@@ -863,7 +863,7 @@ $string['explanation'] = 'Erläuterung';
 $string['explanationdigitalminor'] = 'Diese Informationen sind notwendig um festzustellen, ob Sie sich selber registrieren dürfen. Nur wenn Sie alt genug sind, können Sie selber den Richtlinien und Nutzungsbedingungen zustimmen. Andernfalls müssen dies Ihre Erziehungsberechtigten tun.';
 $string['extendperiod'] = 'Verlängerter Zeitraum';
 $string['extendsession'] = 'Aktuelle Sitzung verlängern';
-$string['failedloginattempts'] = '{$a->attempts} erfolglose Anmeldeversuche';
+$string['failedloginattempts'] = '{$a->attempts} erfolglose Anmeldeversuche seit Ihrem letzten Login';
 $string['favourites'] = 'Favoriten';
 $string['feedback'] = 'Rückmeldung';
 $string['file'] = 'Datei';
@@ -896,14 +896,14 @@ $string['force'] = 'Vorgeben';
 $string['forcelanguage'] = 'Sprache erzwingen';
 $string['forceno'] = 'Nicht festlegen';
 $string['forcepasswordchange'] = 'Kennwortänderung fordern';
-$string['forcepasswordchangecheckfull'] = 'Möchten Sie wirklich eine Kennwortänderung einfordern von {$a}?';
 $string['forcepasswordchange_help'] = 'Wenn diese Option aktiviert ist, muss das Kennwort beim nächsten Login geändert werden';
+$string['forcepasswordchangecheckfull'] = 'Möchten Sie wirklich eine Kennwortänderung einfordern von {$a}?';
 $string['forcepasswordchangenot'] = 'Die Kennwortänderung konnte nicht eingefordert werden von {$a}';
 $string['forcepasswordchangenotice'] = 'Ändern Sie Ihr Kennwort, bevor Sie weiterarbeiten.';
 $string['forcetheme'] = 'Design festlegen';
 $string['forgotaccount'] = 'Kennwort vergessen?';
 $string['forgotten'] = 'Kennwort vergessen?';
-$string['forgottenduplicate'] = 'Diese E-Mail-Adresse wird von mehreren Nutzern verwandt. Geben Sie daher bitte den Anmeldenamen ein.';
+$string['forgottenduplicate'] = 'Diese E-Mail-Adresse wird mehrfach benutzt. Geben Sie deswegen Ihren Anmeldenamen ein.';
 $string['forgotteninvalidurl'] = 'Ungültige URL zum Kennwort-Rücksetzen';
 $string['format'] = 'Format';
 $string['format_help'] = 'Die Kursformate legen das Layout der Kursseite fest.
@@ -1000,8 +1000,8 @@ $string['hiddenassign'] = 'Verborgene Zuweisung';
 $string['hiddenfromstudents'] = 'Für Teilnehmer/innen verborgen';
 $string['hiddenoncoursepage'] = 'Verfügbar, aber auf der Kursseite verborgen';
 $string['hiddensections'] = 'Verborgene Abschnitte';
+$string['hiddensections_help'] = 'Diese Einstellung legt fest, ob verborgene Bereiche in der Kursübersicht angezeigt werden (z. B. für einen Kurs im Wochenformat, um Ferien darzustellen) oder ob sie vollständig ausgeblendet sind.';
 $string['hiddensectionscollapsed'] = 'Hinweis anzeigen';
-$string['hiddensections_help'] = 'Diese Einstellung legt fest, ob verborgene Bereiche in der Kursübersicht angezeigt werden (z.B. für einen Kurs im Wochenformat, um Ferien darzustellen) oder ob sie vollständig ausgeblendet sind.';
 $string['hiddensectionsinvisible'] = 'Vollständig unsichtbar';
 $string['hiddenwithbrackets'] = '(Verborgen)';
 $string['hide'] = 'Verbergen';
@@ -1035,9 +1035,9 @@ $string['icon'] = 'Icon
 $string['icqnumber'] = 'ICQ';
 $string['idnumber'] = 'ID-Nummer';
 $string['idnumbercourse'] = 'Kurs-ID';
+$string['idnumbercourse_help'] = 'Die Kurs-ID-Nummer wird lediglich zum Abgleich von Kursdaten durch externe Datenbanken benötigt. In Moodle selbst wird die Nummer nicht weiter benötigt bzw. angezeigt. Wenn Sie eine offizielle Kursnummer haben, können Sie diese hier eintragen, andernfalls lassen Sie das Feld leer.';
 $string['idnumbercoursecategory'] = 'Kursbereichs-ID';
 $string['idnumbercoursecategory_help'] = 'Die ID des Kursbereichs wird nur verwendet, wenn der Kursbereich mit externen Systemen verbunden ist und nicht auf der Webseite gezeigt wird. Falls der Kursbereich eine offizielle Namenscodierung hat, kann diese hier eingetragen werden, andernfalls kann das Feld leer bleiben.';
-$string['idnumbercourse_help'] = 'Die Kurs-ID-Nummer wird lediglich zum Abgleich von Kursdaten durch externe Datenbanken benötigt. In Moodle selbst wird die Nummer nicht weiter benötigt bzw. angezeigt. Wenn Sie eine offizielle Kursnummer haben, können Sie diese hier eintragen, andernfalls lassen Sie das Feld leer.';
 $string['idnumbergroup'] = 'Gruppen-ID';
 $string['idnumbergroup_help'] = 'Die ID Nummer einer Gruppe wird nur zum Abgleich mit externen Systemen verwandt. Sie wird nicht an anderen Orten angezeigt. Wenn die Gruppe eine offizielle Code-Bezeichnung hat, kann diese hier eingetragen werden. Andernfalls kann das Feld leer bleiben.';
 $string['idnumbergrouping'] = 'Gruppierungs-ID';
@@ -1068,10 +1068,10 @@ $string['includeroleassignments'] = 'Rollenzuordnungen einbeziehen';
 $string['includesitefiles'] = 'Im Kurs benutzte Dateien der Website einbeziehen';
 $string['includeuserfiles'] = 'Nutzerdateien einbeziehen';
 $string['increasesections'] = 'Anzahl der Abschnitte vergrößern';
-$string['indicator:accessesafterend'] = 'Zugriffe nach dem Enddatum';
-$string['indicator:accessesafterend_help'] = 'Dieser Indikator zeigt die Zugriffe des Teilnehmers nach dem Enddatum des Kurses an.';
-$string['indicator:accessesbeforestart'] = 'Zugriffe vor dem Anfangsdatum';
-$string['indicator:accessesbeforestart_help'] = 'Dieser Indikator zeigt die Zugriffe des Teilnehmers vor dem Startdatum des Kurses an.';
+$string['indicator:accessesafterend'] = 'Zugriffe nach dem Kursende';
+$string['indicator:accessesafterend_help'] = 'Dieser Indikator zeigt die Teilnehmerzugriffe nach dem Kursende an.';
+$string['indicator:accessesbeforestart'] = 'Zugriffe vor dem Kursbeginn';
+$string['indicator:accessesbeforestart_help'] = 'Dieser Indikator zeigt die Teilnehmerzugriffe nach dem Kursbeginn an.';
 $string['indicator:activitiesdue'] = 'Fälligkeitsdatum';
 $string['indicator:activitiesdue_help'] = 'Die Person hat fällige Aktivitäten.';
 $string['indicator:anycourseaccess'] = 'Jeder Kurszugriff';
@@ -1081,9 +1081,9 @@ $string['indicator:anywrite_help'] = 'Dieser Indikator stellt jede Schreib- (Ein
 $string['indicator:anywriteincourse'] = 'Irgendeine Schreibaktivität im Kurs';
 $string['indicator:anywriteincourse_help'] = 'Der Indikator steht für irgendeine Aktivität bei der Teilnehmende eine Lösung einreichen / erstellen sollen.';
 $string['indicator:completeduserprofile'] = 'Nutzerprofil ist ausgefüllt';
+$string['indicator:completeduserprofile_help'] = 'Dieser Indikator zeigt an, dass der Teilnehmer sein Nutzerprofil vervollständigt hat.';
 $string['indicator:completeduserprofiledef'] = 'Das Nutzerprofil ist vervollständigt';
 $string['indicator:completeduserprofiledef_help'] = 'Die Richtlinien der Website wurden akzeptiert und der/die Nutzer/in hat die folgenden Felder ausgefüllt: Institution, Abteilung, Adresse, Stadt, Land, Webseite.';
-$string['indicator:completeduserprofile_help'] = 'Dieser Indikator zeigt an, dass der Teilnehmer sein Nutzerprofil vervollständigt hat.';
 $string['indicator:completionenabled'] = 'Abschluss aktiviert';
 $string['indicator:completionenabled_help'] = 'Dieser Indikator zeigt an, dass die Abschlussverfolgung für diesen Kurs aktiviert wurde.';
 $string['indicator:nostudent'] = 'Teilnehmereinschreibungen';
@@ -1091,13 +1091,13 @@ $string['indicator:nostudent_help'] = 'Der Indikator zeigt die Verfügbarkeit vo
 $string['indicator:noteacher'] = 'Trainerverfügbarkeit';
 $string['indicator:noteacher_help'] = 'Der Indikator zeigt die Verfügbarkeit von Trainer/innen im Kurs.';
 $string['indicator:potentialcognitive'] = 'Potentielle kognitive Tiefe';
+$string['indicator:potentialcognitive_help'] = 'Dieser Indikator basiert auf der potentiellen kognitiven Tiefe, die eine Person in dieser Aktivität erreichen konnte.';
 $string['indicator:potentialcognitivedef'] = 'Potentielle kognitive Tiefe';
 $string['indicator:potentialcognitivedef_help'] = 'Der Grad, in dem der Kurs "tiefes" kognitives Engagement bietet, z.B. das Einreichen von Arbeiten zur Bewertung, die Option zur Beurteilung durch andere sowie die Möglichkeit zur Änderung und erneuten Einreichung.';
-$string['indicator:potentialcognitive_help'] = 'Dieser Indikator basiert auf der potentiellen kognitiven Tiefe, die eine Person in dieser Aktivität erreichen konnte.';
 $string['indicator:potentialsocial'] = 'Potentielle soziale Breite';
+$string['indicator:potentialsocial_help'] = 'Dieser Indikator basiert auf der potentiellen sozialen Breite, die eine Person in dieser Aktivität erreichen konnte.';
 $string['indicator:potentialsocialdef'] = 'Potentielle soziale Breite';
 $string['indicator:potentialsocialdef_help'] = 'Der Grad, in dem der Kurs ein "breites" soziales Engagement bietet, das mit anderen Teilnehmer/innen und der Praxis-Community außerhalb des Kurses interagiert.';
-$string['indicator:potentialsocial_help'] = 'Dieser Indikator basiert auf der potentiellen sozialen Breite, die eine Person in dieser Aktivität erreichen konnte.';
 $string['indicator:readactions'] = 'Umfang der Leseaktionen';
 $string['indicator:readactions_help'] = 'Dieser Indikator repräsentiert die Anzahl der vom Teilnehmer aufgenommenen Lese- (Ansichts-) Aktionen.';
 $string['indicator:userforumstracking'] = 'Nutzer/in verfolgt Foren';
@@ -1110,15 +1110,15 @@ $string['interestslist'] = 'Persönliche Interessen';
 $string['interestslist_help'] = 'Geben Sie Ihre Interessen einzeln an, die auf Ihrer Profilseite als Tags angezeigt werden sollen.';
 $string['invalidemail'] = 'Ungültige E-Mail-Adresse';
 $string['invalidlogin'] = 'Ungültige Anmeldedaten. Versuchen Sie es noch einmal!';
-$string['invalidusername'] = 'Der Anmeldename darf nur Kleinbuchstaben und Ziffern enthalten, außerdem die Zeichen Unterstrich (_), Bindestrich (-), Punkt (.) sowie das Zeichen @.';
+$string['invalidusername'] = 'Der Anmeldename darf nur Kleinbuchstaben und Ziffern enthalten, außerdem die Zeichen Unterstrich _ , Bindestrich - , Punkt . sowie das Zeichen @.';
 $string['invalidusernameupload'] = 'Ungültiger Anmeldename';
 $string['ip_address'] = 'IP-Adresse';
 $string['jump'] = 'Sprung';
 $string['jumpto'] = 'Direkt zu:';
 $string['keep'] = 'Behalten';
 $string['keepsearching'] = 'Weiter suchen';
-$string['langltr'] = 'Leserichtung von links nach rechts';
-$string['langrtl'] = 'Leserichtung von rechts nach links';
+$string['langltr'] = 'Schrift von links nach rechts';
+$string['langrtl'] = 'Schrift von rechts nach links';
 $string['language'] = 'Sprache';
 $string['languagegood'] = 'Das Sprachpaket ist aktuell.   :-)';
 $string['last'] = 'Letzter';
@@ -1157,11 +1157,11 @@ $string['loggedinas'] = 'Sie sind angemeldet als {$a}';
 $string['loggedinasguest'] = 'Sie sind als Gast angemeldet';
 $string['loggedinnot'] = 'Sie sind nicht angemeldet.';
 $string['login'] = 'Login';
+$string['login_failure_logs'] = 'Login-Fehlerdaten';
 $string['loginactivity'] = 'Login-Aktivität';
 $string['loginalready'] = 'Sie sind bereits angemeldet.';
 $string['loginas'] = 'Anmelden als';
 $string['loginaspasswordexplain'] = '<p>Sie müssen das spezielle \'Login als\'-Kennwort für diese Funktion verwenden. <br />Falls Ihnen dieses Kennwort nicht bekannt ist, wenden Sie sich an die Administrator/innen Ihrer Website.</p>';
-$string['login_failure_logs'] = 'Login-Fehlerdaten';
 $string['loginguest'] = 'Anmelden als Gast';
 $string['loginsite'] = 'Hier können Sie sich anmelden';
 $string['loginsteps'] = 'Für den vollen Zugriff auf die Website brauchen Sie ein Nutzerkonto.';
@@ -1244,7 +1244,7 @@ $string['messageprovider:instantmessage_help'] = 'In diesem Bereich wird festgel
 $string['messageprovider:messagecontactrequests'] = 'Kontaktanfrage für Mitteilungen';
 $string['messageprovider:notices'] = 'Systemnachrichten zu kleinen Problemen';
 $string['messageprovider:notices_help'] = 'Es gibt Hinweise, die Administrator/innen sehen sollten.';
-$string['messageselect'] = 'Wählen Sie diese Nutzer/in zum E-Mail-Versand aus';
+$string['messageselect'] = 'Wählen Sie diese Person zum E-Mail-Versand aus';
 $string['messageselectadd'] = 'Mitteilung senden';
 $string['middlename'] = 'Mittlerer Name';
 $string['migratinggrades'] = 'Bewertungen migrieren';
@@ -1334,7 +1334,7 @@ $string['movetoanotherfolder'] = 'In ein anderes Verzeichnis schieben';
 $string['moveup'] = 'Nach oben schieben';
 $string['msnid'] = 'MSN';
 $string['mustchangepassword'] = 'Das neue Kennwort darf nicht mit dem alten Kennwort identisch sein.';
-$string['mustconfirm'] = 'Sie müssen Ihren Zugang bestätigen';
+$string['mustconfirm'] = 'Sie müssen Ihr Nutzerkonto bestätigen';
 $string['mycourses'] = 'Meine Kurse';
 $string['myfiles'] = 'Meine Dateien';
 $string['myfilesmanage'] = 'Meine Dateien';
@@ -1355,8 +1355,8 @@ $string['newaccount'] = 'Neues Nutzerkonto';
 $string['newactivityname'] = 'Neuer Name für Aktivität {$a}';
 $string['newcourse'] = 'Neuer Kurs';
 $string['newpassword'] = 'Neues Kennwort';
-$string['newpasswordfromlost'] = '<strong>Hinweis:</strong> Ihr <strong> Ersatzkennwort </strong> wurde Ihnen mit einer <strong>zweiten E-Mail</strong> zugeschickt. Sie können sich jetzt nur noch mit dem neuen Ersatzkennwort einloggen.';
 $string['newpassword_help'] = 'Lassen Sie dieses Feld leer, um das bisherige Kennwort zu behalten.';
+$string['newpasswordfromlost'] = '<strong>Hinweis:</strong> Ihr <strong> Ersatzkennwort </strong> wurde Ihnen mit einer <strong>zweiten E-Mail</strong> zugeschickt. Sie können sich jetzt nur noch mit dem neuen Ersatzkennwort einloggen.';
 $string['newpasswordtext'] = 'Guten Tag {$a->firstname} {$a->lastname},
 
 Ihr Kennwort auf \'{$a->sitename}\' wurde zurückgesetzt. Ihnen ist ein neues, temporäres Kennwort zugewiesen worden.
@@ -1549,7 +1549,7 @@ $string['payments'] = 'Zahlungen';
 $string['paymentsorry'] = 'Danke für Ihre Zahlung. Der Zahlvorgang wurde jedoch noch nicht vollständig abgeschlossen. Sie sind noch nicht als Teilnehmer/in im Kurs "{$a->fullname}" eingeschrieben. Bitte versuchen Sie es in einigen Minuten noch einmal. Wenn weiterhin Probleme auftauchen, wenden Sie sich bitte an die Trainer/innen ({$a->teacher}) oder die Administrator/innen der Website.';
 $string['paymentthanks'] = 'Danke für Ihre Zahlung. Sie sind nun im Kurs "{$a}" eingeschrieben.';
 $string['pendingrequests'] = 'Ausstehende Kursanfragen';
-$string['percents'] = '{$a} %';
+$string['percents'] = '{$a}%';
 $string['periodending'] = 'Ende des Zeitraums ({$a})';
 $string['perpage'] = 'Pro Seite';
 $string['perpagea'] = 'Pro Seite: {$a}';
@@ -1633,13 +1633,13 @@ $string['privacy:metadata:upgrade_log:timemodified'] = 'Die Zeit, zu der die Akt
 $string['privacy:metadata:upgrade_log:type'] = 'Der Typ des Logdaten-Eintrags.';
 $string['privacy:metadata:upgrade_log:userid'] = 'Die ID der Person, die die Aktualisierung ausgeführt hat.';
 $string['privacy:metadata:upgrade_log:version'] = 'Die alte Version des Plugins.';
-$string['privatefiles'] = 'Meine Dateien';
 $string['private_files_handler'] = 'Option zum Speichern von als E-Mail-Anhang versandten Dateien im Bereich \'Meine Dateien\'';
 $string['private_files_handler_name'] = 'E-Mail in \'Meine Dateien\'';
+$string['privatefiles'] = 'Meine Dateien';
 $string['privatefilesmanage'] = 'Meine Dateien verwalten';
 $string['proceed'] = 'Weitermachen';
 $string['profile'] = 'Profil';
-$string['profilenotshown'] = 'Diese Profilbeschreibung wird nicht angezeigt, bis diese Person nicht mindestens in einem Kurs eingeschrieben ist.';
+$string['profilenotshown'] = 'Das Nutzerprofil wird erst angezeigt, wenn die Person in mindestens einem Kurs eingeschrieben ist.';
 $string['publicprofile'] = 'Öffentliches Profil';
 $string['publicsitefileswarning'] = 'Achtung: Jeder könnte die hier befindlichen Dateien herunterladen. <br />Diese Dateien sind nicht vor unberechtigten Zugriffen geschützt.';
 $string['publicsitefileswarning2'] = 'Achtung: Jeder könnte die hier befindlichen Dateien herunterladen, der die URL kennt (oder erraten kann). Aus Sicherheitsgründen sollten alle hochgeladenen Kurssicherungen sofort nach der Wiederherstellung gelöscht werden.';
@@ -1681,7 +1681,7 @@ WARNUNG: Dies ist eine experimentelle Funktion, die möglicherweise nicht von al
 $string['relativedatesmode_warning'] = '<b>Warnung:</b> Der relative Datumsmodus kann nach dem Anlegen des Kurses nicht mehr geändert werden.';
 $string['reload'] = 'Neu laden';
 $string['remoteappuser'] = 'Fernnutzer {$a}';
-$string['remove'] = 'Löschen';
+$string['remove'] = 'Entfernen';
 $string['removeadmin'] = 'Administrator/in löschen';
 $string['removecreator'] = 'Kursersteller/in löschen';
 $string['removestudent'] = 'Teilnehmer/in löschen';
@@ -1690,7 +1690,7 @@ $string['rename'] = 'Umbenennen';
 $string['renamefileto'] = '<b>{$a}</b> umbenennen in';
 $string['report'] = 'Bericht';
 $string['reports'] = 'Berichte';
-$string['repositories'] = 'Speicherorte';
+$string['repositories'] = 'Dateiverwaltungssysteme';
 $string['requestcourse'] = 'Kurs beantragen';
 $string['requestedby'] = 'Antrag von';
 $string['requestedcourses'] = 'Beantragte Kurse';
@@ -1752,7 +1752,7 @@ $string['role'] = 'Rolle';
 $string['roleassignments'] = 'Rollenzuweisungen';
 $string['rolemappings'] = 'Rollenplanungen';
 $string['rolerenaming'] = 'Umbenennen der Rolle';
-$string['rolerenaming_help'] = 'Mit dieser Option können die Namen der Rollen in Ihrem Kurs umbenannt werden. Wenn Sie z.B. \'Trainer/in\' in \'Dozent/in\' für den aktuellen Kurs umbenennen wollen, tragen Sie dies hier ein. Die Rollenberechtigungen werden durch das Umbenennen nicht verändert. Die geänderten Rollenbezeichnungen sind in der Nutzerliste und an anderen Stellen des Kurses zu sehen. Ist die umbenannte Rolle eine Kursverwalterrolle, dann wird der neue Rollenname ebenso in der Kursliste angezeigt.';
+$string['rolerenaming_help'] = 'Mit dieser Option können die Namen der Rollen in Ihrem Kurs umbenannt werden. Wenn Sie z. B. \'Trainer/in\' in \'Dozent/in\' für den aktuellen Kurs umbenennen wollen, tragen Sie dies hier ein. Die Rollenberechtigungen werden durch das Umbenennen nicht verändert. Die geänderten Rollenbezeichnungen sind in der Nutzerliste und an anderen Stellen des Kurses zu sehen. Ist die umbenannte Rolle eine Kursverwalterrolle, dann wird der neue Rollenname ebenso in der Kursliste angezeigt.';
 $string['roles'] = 'Rollen';
 $string['rss'] = 'RSS-Feeds';
 $string['rssarticles'] = 'Zahl neuer RSS-Artikel';
@@ -1801,11 +1801,12 @@ $string['scalestip2'] = 'Zur Erstellung eigener Bewertungsskalen wählen Sie im 
 $string['schedule'] = 'Planung';
 $string['screenshot'] = 'Bildschirmfoto';
 $string['search'] = 'Suchen';
+$string['search_help'] = 'Einfache Suche von einem oder mehreren Wörtern, die im Text vorkommen. Zwischen den Suchwörtern bitte Leerzeichen eingeben. Gesuchte Begriffe müssen mindestens drei Zeichen lang sein. ';
 $string['searchagain'] = 'Erneut suchen';
 $string['searchbyemail'] = 'Über die E-Mail-Adresse suchen';
 $string['searchbyusername'] = 'Über den Anmeldenamen suchen';
+$string['searchcoursecategories'] = 'Kursbereiche suchen';
 $string['searchcourses'] = 'Kurse suchen';
-$string['search_help'] = 'Einfache Suche von einem oder mehreren Wörtern, die im Text vorkommen. Zwischen den Suchwörtern bitte Leerzeichen eingeben. Gesuchte Begriffe müssen mindestens drei Zeichen lang sein. ';
 $string['searchoptions'] = 'Suchoptionen';
 $string['searchresults'] = 'Suchergebnisse';
 $string['sec'] = 'Sekunde';
@@ -1869,7 +1870,7 @@ $string['shortname'] = 'Kurzbezeichnung';
 $string['shortnamecollisionwarning'] = '[*] = Diese Kurzbezeichnung wird bereits für einen anderen Kurs genutzt. Bitte ändern Sie den Eintrag.';
 $string['shortnamecourse'] = 'Kurzer Kursname';
 $string['shortnamecourse_help'] = 'Der kurze Kursname wird an verschiedenen Stellen genutzt, an denen der vollständige Kursname nicht passen würde (z.B. in der Navigation oder in der Betreffzeile von E-Mails).';
-$string['shortnametaken'] = 'Die Kurzbezeichnung wird bereits für einen anderen Kurs ({$a}) verwendet.';
+$string['shortnametaken'] = 'Diese Kurzbezeichnung wird bereits für einen anderen Kurs ({$a}) verwendet.';
 $string['shortnameuser'] = 'Nutzername (kurz)';
 $string['shortsitename'] = 'Kurzbezeichnung';
 $string['show'] = 'Anzeigen';
@@ -2018,7 +2019,7 @@ $string['switchrolereturn'] = 'Zurück zur Ausgangsrolle';
 $string['switchroleto'] = 'Rolle wechseln …';
 $string['switchroleto_help'] = 'Wählen Sie eine Rolle um eine Vorstellung davon zu bekommen, wie jemand mit dieser Rolle diesen Kurs sehen wird.
 
-Beachten Sie, dass diese Ansicht nicht immer perfekt ist. (<a href="https://docs.moodle.org/en/Switch_roles">Details anzeigen</a>)';
+Beachten Sie, dass diese Ansicht nicht immer perfekt ist. (<a href="https://docs.moodle.org/de/Rollen_wechseln">Details anzeigen</a>)';
 $string['tag'] = 'Tag';
 $string['tagalready'] = 'Dieser Tag gibt es bereits';
 $string['tagmanagement'] = 'Tags hinzufügen/löschen ...';
@@ -2046,9 +2047,9 @@ $string['thiscategorycontains'] = 'Dieser Kursbereich enthält';
 $string['time'] = 'Zeit';
 $string['timecreatedcourse'] = 'Kurszeit erstellt';
 $string['timesplitting:deciles'] = 'Letztes Zehntel';
+$string['timesplitting:deciles_help'] = 'Dieses Analyseintervall unterteilt den Kurs in Zehntel (10 gleiche Teile), wobei jede Vorhersage nur auf den Daten des letzten Zehntels basiert.';
 $string['timesplitting:decilesaccum'] = 'Bisherige Zehntel';
 $string['timesplitting:decilesaccum_help'] = 'Dieses Analyseintervall unterteilt den Kurs in Zehntel (10 gleiche Teile), wobei jede Vorhersage auf den Daten aller bisherigen Zehntel basiert.';
-$string['timesplitting:deciles_help'] = 'Dieses Analyseintervall unterteilt den Kurs in Zehntel (10 gleiche Teile), wobei jede Vorhersage nur auf den Daten des letzten Zehntels basiert.';
 $string['timesplitting:nosplitting'] = 'Kein Zeitlimit';
 $string['timesplitting:nosplitting_help'] = 'Für dieses Modell wurde kein Analyseintervall definiert.';
 $string['timesplitting:onemonthafterstart'] = 'Ein Monat nach Beginn';
@@ -2062,9 +2063,9 @@ $string['timesplitting:pastmonth_help'] = 'Dieses Analyseintervall generiert Vor
 $string['timesplitting:pastweek'] = 'Vergangene Woche';
 $string['timesplitting:pastweek_help'] = 'Dieses Analyseintervall generiert Vorhersagen jede Woche. Die Berechnung der Indikatoren basiert auf der letzten Woche.';
 $string['timesplitting:quarters'] = 'Letztes Viertel';
+$string['timesplitting:quarters_help'] = 'Dieses Analyseintervall unterteilt den Kurs in Viertel (4 gleiche Teile), wobei jede Vorhersage auf den Daten des letzten Viertels basiert.';
 $string['timesplitting:quartersaccum'] = 'Bisherige Viertel akkumuliert';
 $string['timesplitting:quartersaccum_help'] = 'Dieses Analyseintervall unterteilt den Kurs in Viertel (4 gleiche Teile), wobei jede Vorhersage auf den Daten aller bisherigen Viertel basiert.';
-$string['timesplitting:quarters_help'] = 'Dieses Analyseintervall unterteilt den Kurs in Viertel (4 gleiche Teile), wobei jede Vorhersage auf den Daten des letzten Viertels basiert.';
 $string['timesplitting:singlerange'] = 'Von Beginn bis Ende';
 $string['timesplitting:singlerange_help'] = 'Dieses Analyseintervall berücksichtigt den gesamten Kurs als einzige Zeitspanne.';
 $string['timesplitting:tenpercentafterstart'] = '10% nach Beginn';
@@ -2092,7 +2093,7 @@ $string['toonly'] = 'Nur für {$a}';
 $string['top'] = 'Oberste Ebene (top level)';
 $string['topic'] = 'Thema';
 $string['topichide'] = 'Abschnitt verbergen für {$a}';
-$string['topicoutline'] = 'Themen dieses Kurses';
+$string['topicoutline'] = 'Kursthemen';
 $string['topicshow'] = 'Abschnitt anzeigen für {$a}';
 $string['toplevelcategory'] = 'Kursbereich auf oberster Ebene (top level)';
 $string['total'] = 'Insgesamt';
@@ -2113,7 +2114,7 @@ $string['unlimited'] = 'Unbegrenzt';
 $string['unpacking'] = 'Entpacke {$a}';
 $string['unsafepassword'] = 'Unsicheres Kennwort - wählen Sie ein anderes!';
 $string['untilcomplete'] = 'Bis zum Abschluss des Prozesses';
-$string['unusedaccounts'] = 'Kurszugänge werden automatisch gelöscht, wenn sie mehr als {$a} Tage lang nicht benutzt wurden.';
+$string['unusedaccounts'] = 'Kurseinschreibungen werden automatisch abgemeldet, sobald sie mehr als {$a} Tage nicht benutzt wurden.';
 $string['unzip'] = 'Entpacken';
 $string['unzippingbackup'] = 'Sicherung entpacken';
 $string['up'] = 'Aufwärts';
@@ -2126,7 +2127,7 @@ $string['updatesevery'] = 'Alle {$a} Sekunden aktualisieren';
 $string['updatethis'] = '{$a} aktualisieren';
 $string['updatethiscourse'] = 'Diesen Kurs aktualisieren';
 $string['updatinga'] = '{$a} bearbeiten';
-$string['updatingain'] = 'Bearbeite {$a->what} in {$a->in}';
+$string['updatingain'] = '{$a->what} in {$a->in} bearbeiten';
 $string['upload'] = 'Hochladen';
 $string['uploadafile'] = 'Datei hochladen';
 $string['uploadcantwrite'] = 'Das Schreiben der Datei ist fehlgeschlagen';
@@ -2150,7 +2151,7 @@ $string['uploadproblem'] = 'Ein unbekanntes Problem ist beim Hochladen der Datei
 $string['uploadrenamedchars'] = 'Die Datei wurde von {$a->oldname} nach {$a->newname} umbenannt, weil der Dateiname ungültige Zeichen enthielt.';
 $string['uploadrenamedcollision'] = 'Die Datei wurde von {$a->oldname} nach {$a->newname} umbenannt, weil bereits eine andere Datei mit dem gleichen Dateinamen existierte.';
 $string['uploadserverlimit'] = 'Die hochzuladene Datei ist größer als vom Server zugelassen';
-$string['uploadthisfile'] = 'Diese Datei hochladen';
+$string['uploadthisfile'] = 'Datei hochladen';
 $string['url'] = 'URL';
 $string['used'] = 'Verwendet';
 $string['usedinnplaces'] = 'An {$a} Stellen verwendet';
@@ -2208,7 +2209,7 @@ $string['warningdeleteresource'] = 'Hinweis: Auf {$a} wird in einem Arbeitsmater
 $string['webpage'] = 'Webseite';
 $string['week'] = 'Woche';
 $string['weekhide'] = 'Diese Woche verbergen für {$a}';
-$string['weeklyoutline'] = 'Themen für jede Woche';
+$string['weeklyoutline'] = 'Kursthemen';
 $string['weeks'] = 'Wochen';
 $string['weekshow'] = 'Diese Woche für {$a} anzeigen';
 $string['welcometocourse'] = 'Willkommen zu {$a}';

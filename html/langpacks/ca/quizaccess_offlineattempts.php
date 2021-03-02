@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_offlineattempts', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quizaccess_offlineattempts', language 'ca', version '3.8'.
  *
- * @package   quizaccess_offlineattempts
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quizaccess_offlineattempts
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,5 +29,9 @@ $string['allowofflineattempts'] = 'Permet contestar el qüestionari fora de lín
 $string['allowofflineattempts_help'] = 'Si s’habilita, un usuari de l’app mòbil pot descarregar el qüestionari i contestar-lo fora de línia.
 
 Nota: No és possible contestar fora de línia un qüestionari que tingui un límit de temps, o que necessiti una adreça de xarxa, o que empri comportaments de pregunta diferents de la retroacció diferida (amb QBC o sense).';
+$string['confirmdatasaved'] = 'Confirmo que no tinc feina sense desar als meus dispositius mòbils abans de continuar aquest intent.';
 $string['mobileapp'] = 'Aplicació mòbil';
+$string['offlineattemptserror'] = 'Els qüestionaris fora de línia no són compatibles amb qüestionaris que fan servir temporitzadors, restricció d\'accés per contrasenya o subxarxa i qüestionaris amb retroalimentació diferida amb o sense PBC (Puntuació Basada en la Certesa)';
+$string['offlinedatamessage'] = 'Heu treballat en aquest intent en un dispositiu mòbil i les dades es van desar per darrera vegada fa {$a}.';
+$string['pleaseconfirm'] = 'Confirmeu que no teniu feina sense desar als vostres dispositius';
 $string['pluginname'] = 'Regla d\'accés als intents fora de línia';

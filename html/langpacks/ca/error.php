@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'error', language 'ca', version '3.8'.
  *
- * @package   error
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     error
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['TODO'] = 'Per fer';
 $string['activityisscheduledfordeletion'] = 'Eliminació de l\'activitat en curs...';
-$string['alreadyloggedin'] = 'Ja heu iniciat la sessió com a {$a}; heu de finalitzar la sessió abans d\'identificar-vos com un altre usuari.';
+$string['alreadyloggedin'] = 'Ja heu iniciat sessió com a {$a}; heu de finalitzar la sessió abans d\'identificar-vos com un altre usuari.';
 $string['authnotexisting'] = 'No existeix el connector d\'autorització.';
 $string['backupcontainexternal'] = 'Aquest fitxer de còpia de seguretat conté hostes en xarxa de Moodle externs que no han estat configurats localment.';
 $string['backuptablefail'] = 'No s\'han pogut configurar correctament les taules de la còpia de seguretat.';
@@ -228,6 +229,7 @@ $string['duplicateusername'] = 'Nom d\'usuari duplicat - s\'ha omès aquest regi
 $string['emailfail'] = 'S\'ha produït un error en enviar el correu.';
 $string['enddatebeforestartdate'] = 'La data de finalització del curs ha de ser posterior a la data d\'inici.';
 $string['error'] = 'S\'ha produït un error';
+$string['error_question_answers_missing_in_db'] = 'No s\'ha pogut trobar una resposta concordant amb "{$a->answer}" a la taula preguntes_respostes de la de base de dades. Això ha ocorregut mentre es restaurava la pregunta amb id  {$a->filequestionid} del fitxer de copia de seguretat, que ha coincidit amb la pregunta amb id  {$a->dbquestionid} existent a la base de dades.';
 $string['errorcleaningdirectory'] = 'S\'ha produït un error en netejar el directori "{$a}"';
 $string['errorcopyingfiles'] = 'S\'ha produït un error en copiar els fitxers';
 $string['errorcreatingdirectory'] = 'S\'ha produït un error en crear el directori "{$a}"';
@@ -238,7 +240,6 @@ $string['erroronline'] = 'S\'ha produït un error a la línia {$a}';
 $string['erroroutput'] = 'La redirecció automàtica s\'ha inhabilitat a causa dels missatges d\'error.';
 $string['errorparsingxml'] = 'S\'ha produït un error en analitzar l\'XML: {$a->errorstring} a la línia {$a->errorline}, caràcter {$a->errorchar}';
 $string['errorprocessingarchive'] = 'Error mentre es processava el fitxer de l\'arxiu';
-$string['error_question_answers_missing_in_db'] = 'No s\'ha pogut trobar una resposta concordant amb "{$a->answer}" a la taula preguntes_respostes de la de base de dades. Això ha ocorregut mentre es restaurava la pregunta amb id  {$a->filequestionid} del fitxer de copia de seguretat, que ha coincidit amb la pregunta amb id  {$a->dbquestionid} existent a la base de dades.';
 $string['errorreadingfile'] = 'S\'ha produït un error en llegir el fitxer "{$a}"';
 $string['errorsavingrequest'] = 'S\'ha produït un error quan s\'intentava desar la vostra sol·licitud.';
 $string['errorsettinguserpref'] = 'S\'ha produït un error en establir les preferències de l\'usuari';
@@ -379,9 +380,9 @@ $string['maxbytesfile'] = 'El fitxer {$a->file} és massa gran. La mida màxima 
 $string['messagingdisable'] = 'La missatgeria d\'aquest lloc està desactivada.';
 $string['mimetexisnotexist'] = 'El vostre sistema no està configurat per executar mimeTeX. Cal que descarregueu l\'executable corresponent a la vostra plataforma PHP_OS de <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, o obtenir les fonts de C de <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, compilar-les i posar l\'executable al vostre directori moodle/filter/tex/';
 $string['mimetexnotexecutable'] = 'El mimeTeX instal·lat no és executable';
+$string['missing_moodle_backup_xml_file'] = 'Falta el fitxer XML {$a} de la còpia de seguretat.';
 $string['missingfield'] = 'Falta el camp «{$a}»';
 $string['missingkeyinsql'] = 'S\'ha produït un error a causa del paràmetre perdut "{$a}" a la consulta.';
-$string['missing_moodle_backup_xml_file'] = 'Falta el fitxer XML {$a} de la còpia de seguretat.';
 $string['missingparam'] = 'Falta el paràmetre obligatori ({$a})';
 $string['missingparameter'] = 'Falta un paràmetre';
 $string['missingrequiredfield'] = 'Falta algun camp necessari';
@@ -401,7 +402,7 @@ $string['movecategoryparentconflict'] = 'No podeu convertir la categoria \'{$a}\
 $string['mssqlrcsmodemissing'] = 'La base de dades no està usant el mode  «READ_COMMITTED_SNAPSHOT», el qual pot donar resultats dolents, especialment, en escenaris d\'alta concurrència. Habiliteu-lo per tenir un comportament correcte. Per trobar més informació, vegeu la documentació següent: <em><a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP">Installing MSSQL for PHP</a></em>.';
 $string['multiplerecordsfound'] = 'S\'han trobat diferents registres, però se n\'esperava un de sol.';
 $string['multiplerestorenotallow'] = 'No està permesa l\'execució de diferents restauracions.';
-$string['mustbeloggedin'] = 'Heu d\'estar registrat per poder fer això';
+$string['mustbeloggedin'] = 'Heu d\'iniciar sessió per poder-ho fer';
 $string['mustbeteacher'] = 'Cal ser professor/a per veure aquesta pàgina';
 $string['myisamproblem'] = 'Les taules de la base de dades estan utilitzant el motor MyISAM. Es recomana utilitzar un motor de compilació ACID amb suport total a les transaccions, com ara InnoDB.';
 $string['needcopy'] = 'Cal que primer copieu alguna cosa.';
@@ -473,9 +474,9 @@ $string['remotedownloadnotallowed'] = 'El vostre servidor no permet baixar compo
 $string['reportnotavailable'] = 'Aquest tipus d\'informe només es pot trobar al curs del lloc.';
 $string['requirecorrectaccess'] = 'L\'URL o el port no són vàlids.';
 $string['requireloginerror'] = 'No es pot accedir al curs o l\'activitat.';
-$string['restorechecksumfailed'] = 'S\'ha produït un problema amb la informació de la restauració desada en la vostra sessió. Comproveu els límits de la mida de la memòria PHP/Base de dades. S\'ha aturat la restauració.';
 $string['restore_path_element_missingmethod'] = 'No existeix el mètode de restauració {$a}. Cal que un desenvolupador el defineixi.';
 $string['restore_path_element_noobject'] = 'L\'objecte de restauració {$a} no és un objecte.';
+$string['restorechecksumfailed'] = 'S\'ha produït un problema amb la informació de la restauració desada en la vostra sessió. Comproveu els límits de la mida de la memòria PHP/Base de dades. S\'ha aturat la restauració.';
 $string['restrictedcontextexception'] = 'L\'execució de funcions externes viola les restriccions del context';
 $string['restricteduser'] = 'Al vostre compte «{$a}» no li és permès de fer això';
 $string['reverseproxyabused'] = 'S\'ha habilitat el servidor intermediari (<em>proxy</em>) invers,  no es pot accedir al servidor directament.<br />Contacteu amb l\'administrador del servidor.';
@@ -513,7 +514,6 @@ $string['tagnotfound'] = 'L\'etiqueta especificada no s\'ha pogut trobar a la ba
 $string['targetdatabasenotempty'] = 'La base de dades de destí no està buida. S\'ha aturat la transferència per raons de seguretat.';
 $string['textconditionsnotallowed'] = 'No estan permeses les comparacions de les condicions de la columna de text. Utilitzeu sql_compare_text() a la vostra consulta.';
 $string['themenotinstall'] = 'Aquest tema no està instal·lat';
-$string['TODO'] = 'Per fer';
 $string['tokengenerationfailed'] = 'No s\'ha pogut generar un testimoni nou.';
 $string['transactionvoid'] = 'La transacció no pot ser anul·lada pel fet que ja havia estat anul·lada.';
 $string['unenrolerror'] = 'S\'ha produït un error mentre s\'estava donant de baixa aquesta persona.';

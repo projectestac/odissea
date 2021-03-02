@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_random', language 'ja', version '3.8'.
  *
- * @package   qtype_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['configselectmanualquestions'] = 'カテゴリから問題をランダムに選択する場合、ランダム問題タイプは手動評定問題を選択できますか?';
 $string['includingsubcategories'] = 'サブカテゴリを含む';
 $string['pluginname'] = 'ランダム問題';
-$string['pluginnameediting'] = 'ランダム問題の編集';
 $string['pluginname_help'] = 'ランダム問題は通常の問題タイプではありませんが特定のカテゴリよりランダムに選択された問題を活動に追加することができます。';
+$string['pluginnameediting'] = 'ランダム問題の編集';
 $string['privacy:metadata'] = 'ランダム問題タイププラグインはいかなる個人データも保存しません。';
 $string['randomqname'] = 'ランダム ({$a})';
 $string['randomqnamefromtop'] = '不完全なランダム問題です! この問題を削除してください。';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'eu', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,15 +70,15 @@ $string['evaluate'] = 'Ebaluatu';
 $string['evaluatemodel'] = 'Ebaluatu eredua';
 $string['evaluationinbatches'] = 'Gunearen edukiak kalkulatu eta sortatan gordetzen dira. Ebaluatze-prozesua edozein unetan geratu daiteke. Exekutatzen den hurrengo aldian geratu zen lekutik jarraituko du.';
 $string['evaluationmode'] = 'Ebaluazio-modua';
-$string['evaluationmodecolconfiguration'] = 'Konfiguratutakoa';
-$string['evaluationmodecoltrainedmodel'] = 'Trebatutako eredua';
-$string['evaluationmodeconfiguration'] = 'Ebaluatu ereduaren konfigurazioa';
 $string['evaluationmode_help'] = 'Bi ebaluazio-modu daude:
 
 * Trebatutako eredua - Guneko datuak erabiltzen dira probetarako datu gisa trebatutako ereduaren zehaztasuna neurtzeko.
 * Konfiguratutakoa - Guneko datuak trebakuntzarako eta probetarako datuetan banatzen dira, ereduaren konfigurazioaren trebakuntza eta proben zehaztasuna neurtzeko.
 
 Trebatutako eredua soilik dago eskuragarri gunera lehendik trebatutako eredua inportatu bada eta oraindik guneko datuak erabilita berriz trebatu ez bada.';
+$string['evaluationmodecolconfiguration'] = 'Konfiguratutakoa';
+$string['evaluationmodecoltrainedmodel'] = 'Trebatutako eredua';
+$string['evaluationmodeconfiguration'] = 'Ebaluatu ereduaren konfigurazioa';
 $string['evaluationmodeinfo'] = 'Eredu hau gunera inportatu da. Ereduaren errendimendua ebaluatu dezakezu, edo ereduaren konfigurazioaren errendimendua guneko datuak erabilita ebaluatu dezakezu.';
 $string['evaluationmodetrainedmodel'] = 'Ebaluatu trebatutako eredua';
 $string['executescheduledanalysis'] = 'Exekutatu programatutako analisia';
@@ -101,7 +101,7 @@ $string['info'] = 'Informazioa';
 $string['insights'] = 'Pertzepzioak';
 $string['insightsreport'] = 'Pertzepzioen txostena';
 $string['invalidanalysables'] = 'Guneko elementu baliogabeak';
-$string['invalidanalysablesinfo'] = 'Orri hauek zerrendatzen dute gune honetan analizatu daitezkeen baina aurreikuspen-eredu honetan erabili ezin daitezkeen elementuak. Zerrendako elementuak ezin dira eredua trebatzeko erabili, ezta eredua bertatik aurreikuspenak lortu ere.';
+$string['invalidanalysablesinfo'] = 'Orri honek zerrendatzen du gune honetan analizatu daitezkeen baina aurreikuspen-eredu honetan erabili ezin daitezkeen elementuak. Zerrendako elementuak ezin dira eredua trebatzeko erabili, ezta eredua bertatik aurreikuspenak lortu ere.';
 $string['invalidanalysablestable'] = 'Gunean analizatu daitezkeen elementu baliogabeen taula';
 $string['invalidcurrenttimesplitting'] = 'Oraingo analisi-tartea ez da baliagarria eredu honen helbururako. Aukeratu ezazu mesedez beste tarte bat.';
 $string['invalidindicatorsremoved'] = 'Eredu berri bat gehitu da. Aukeratutako helburuarekin funtzionatzen ez duten adierazleak automatikoki kendu dira.';
@@ -120,8 +120,8 @@ $string['newmodel'] = 'Eredu berria';
 $string['nextpage'] = 'Hurrengo orria';
 $string['noactionsfound'] = 'Erabiltzaileek ez dute ekintzarik exekutatu sortutako pertzepzioetan.';
 $string['nodatatoevaluate'] = 'Ez dago eredua ebaluatzeko daturik';
-$string['nodatatopredict'] = 'Ez dago aurreikuspenak lortzeko elementu berririk';
-$string['nodatatotrain'] = 'Ez dago trebatzean erabiltzeko moduko datu berririk';
+$string['nodatatopredict'] = 'Ez dago aurreikuspenak lortzeko elementu berririk.';
+$string['nodatatotrain'] = 'Ez dago trebatzean erabiltzeko moduko datu berririk.';
 $string['noinvalidanalysables'] = 'Gune honek ez du analiza daitekeen elementu baliogaberik.';
 $string['notdefined'] = 'Oraindik zehaztu gabe';
 $string['pluginname'] = 'Analisi-ereduak';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'gl', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,7 +57,7 @@ $string['editsearchable'] = 'Cambiar buscábel';
 $string['edittag'] = 'Editar esta etiqueta';
 $string['edittagcoll'] = 'Editar a colección de etiquetas {$a}';
 $string['edittagcollection'] = 'Cambiar a colección de etiquetas';
-$string['entertags'] = 'Escriba as etiquetas separadas por comas';
+$string['entertags'] = 'Introduza etiquetas ...';
 $string['errortagfrontpage'] = 'Non está permitido etiquetar a páxina principal do sitio.';
 $string['errorupdatingrecord'] = 'Produciuse un erro ao actualizar o rexistro da etiqueta';
 $string['eventtagadded'] = 'Etiqueta engadida a un elemento';
@@ -70,8 +70,8 @@ $string['eventtagflagged'] = 'Marcouse cun sinalador a etiqueta';
 $string['eventtagremoved'] = 'Etiqueta retirada dun elemento';
 $string['eventtagunflagged'] = 'Retiróuselle o sinalador á etiqueta';
 $string['eventtagupdated'] = 'Actualizouse a etiqueta';
-$string['exclusivemode'] = 'Amosar soamente o etiquetada {$a->tagarea}';
-$string['flag'] = 'Indicador';
+$string['exclusivemode'] = 'Amosar soamente o etiquetado {$a->tagarea}';
+$string['flag'] = 'Sinalador';
 $string['flagasinappropriate'] = 'Sinalar como inapropiadas';
 $string['flagged'] = 'Marcouse cun sinalador a etiqueta';
 $string['helprelatedtags'] = 'Etiquetas relacionadas separadas por comas';
@@ -89,36 +89,36 @@ $string['namesalreadybeeingused'] = 'Estes nomes de etiqueta xa están empregado
 $string['nameuseddocombine'] = 'Este nome de etiqueta xa foi usado, quere combinar estas etiquetas?';
 $string['newcollnamefor'] = 'Nome novo para a colección de etiquetas {$a}';
 $string['newnamefor'] = 'Novo nome para a etiqueta {$a}';
-$string['nextpage'] = 'Máis';
+$string['nextpage'] = 'More';
 $string['noresultsfor'] = 'Ningún resultado para «{$a}»';
 $string['notagsfound'] = 'Non se atoparon etiquetas que coincidan con «{$a}»';
 $string['nothingtoupdate'] = 'Nada para actualizar';
 $string['owner'] = 'Propietario';
-$string['page-tag-index'] = 'Páxina de sinalador único';
-$string['page-tag-manage'] = 'Páxina para administrar sinaladores';
-$string['page-tag-search'] = 'Páxina de busca de sinaladores';
-$string['page-tag-x'] = 'Todas as páxinas etiquetadas';
+$string['page-tag-index'] = 'Páxina cunha soa etiqueta';
+$string['page-tag-manage'] = 'Páxina de administración de etiquetas';
+$string['page-tag-search'] = 'Páxina de busca de etiquetas';
+$string['page-tag-x'] = 'Todas as páxinas de etiquetas';
 $string['prevpage'] = 'Atrás';
 $string['privacy:metadata:tag'] = 'Os datos de cada etiqueta única almacenáronse xunto coa súa descrición e outras informacións relacionadas';
 $string['privacy:metadata:tag:description'] = 'A descrición da etiqueta.';
 $string['privacy:metadata:tag:flag'] = 'Indica se unha etiqueta foi sinalada como inadecuada.';
+$string['privacy:metadata:tag:name'] = 'O nome da etiqueta; esta é a versión normalizada do nome.';
+$string['privacy:metadata:tag:rawname'] = 'O nome da etiqueta; este é o nome que se amosa.';
+$string['privacy:metadata:tag:timemodified'] = 'O momento no que se modificou a etiqueta por última vez';
+$string['privacy:metadata:tag:userid'] = 'O ID do usuario que creou a etiqueta.';
 $string['privacy:metadata:taginstance'] = 'A ligazón entre cada etiqueta e onde se usa.';
 $string['privacy:metadata:taginstance:ordering'] = 'A orde relativa desta etiqueta.';
 $string['privacy:metadata:taginstance:tagid'] = 'A ligazón á etiqueta.';
 $string['privacy:metadata:taginstance:timecreated'] = 'O momento no que esta etiqueta foi ligada ao destino.';
 $string['privacy:metadata:taginstance:timemodified'] = 'O momento no que se modificou esta etiqueta para o destino.';
 $string['privacy:metadata:taginstance:tiuserid'] = 'Cando o contido compartido poida ser marcado individualmente por usuarios, almacenase o propietario da instancia de etiqueta.';
-$string['privacy:metadata:tag:name'] = 'O nome da etiqueta; esta é a versión normalizada do nome.';
-$string['privacy:metadata:tag:rawname'] = 'O nome da etiqueta; este é o nome que se amosa.';
-$string['privacy:metadata:tag:timemodified'] = 'O momento no que se modificou a etiqueta por última vez';
-$string['privacy:metadata:tag:userid'] = 'O ID do usuario que creou a etiqueta.';
 $string['ptags'] = 'Etiquetas definidas polo usuario (separadas por comas)';
 $string['relatedblogs'] = 'Artigos máis recentes do blog';
 $string['relatedtags'] = 'Etiquetas relacionadas';
 $string['removetagfrommyinterests'] = 'Retirar «{$a}» como do meu interese';
 $string['reset'] = 'Restabelecer';
 $string['resetfilter'] = 'Reiniciar o filtro';
-$string['resetflag'] = 'Restabelecer indicador';
+$string['resetflag'] = 'Restabelecer o indicador';
 $string['responsiblewillbenotified'] = 'A persoa responsábel será notificada';
 $string['rssdesc'] = 'Esta fonte RSS foi xerada automaticamente por Moodle e contén etiquetas xeradas polo usuario para os cursos.';
 $string['rsstitle'] = 'Fonte RSS de etiquetas de curso para usuario: {$a}';
@@ -147,19 +147,19 @@ $string['tag'] = 'Etiqueta';
 $string['tagarea_blog_external'] = 'Artigos de blogs externos';
 $string['tagarea_course'] = 'Cursos';
 $string['tagarea_course_modules'] = 'Actividades e recursos';
+$string['tagarea_post'] = 'Artigos de blog';
+$string['tagarea_user'] = 'Intereses do usuario';
 $string['tagareaenabled'] = 'Activado';
 $string['tagareaname'] = 'Nome';
-$string['tagarea_post'] = 'Artigos de blog';
 $string['tagareas'] = 'Áreas de etiquetas';
-$string['tagarea_user'] = 'Intereses do usuario';
 $string['tagcollection'] = 'Colección de etiquetas';
-$string['tagcollection_help'] = 'As colecciones de etiquetas son conxuntos de etiquetas para diferentes áreas. Por exemplo, unha colección de etiquetas estándar pode usarse para etiquetar cursos coas etiquetas dos intereses do usuario e as etiquetas de publicacións en foros mantidas nunha colección separada. Cando un usuario preme sobre unha etiqueta, a páxina de marcas amosa so  elementos coa  mesma etiqueta dentro da mesma colección. As etiquetas poden engadirse automaticamente a unha colección conforme á área etiquetada, ou poden engadirse manualmente como etiquetas estándar.';
+$string['tagcollection_help'] = 'As coleccións de etiquetas son conxuntos de etiquetas para diferentes áreas. Por exemplo, unha colección de etiquetas estándar pode usarse para etiquetar cursos coas etiquetas dos intereses do usuario e as etiquetas de publicacións en foros mantidas nunha colección separada. Cando un usuario preme sobre unha etiqueta, a páxina de marcas amosa so elementos coa mesma etiqueta dentro da mesma colección. As etiquetas poden engadirse automaticamente a unha colección conforme á área etiquetada, ou poden engadirse manualmente como etiquetas estándar.';
 $string['tagcollections'] = 'Coleccións de etiquetas';
 $string['tagdescription'] = 'Descrición da etiqueta';
 $string['tags'] = 'Etiquetas';
 $string['tagsaredisabled'] = 'As etiquetas están desactivadas';
 $string['thingstaggedwith'] = '«{$a->name}» empregouse {$a->count} veces';
-$string['thingtaggedwith'] = '«{$a->name}« empregouse unha vez';
+$string['thingtaggedwith'] = '«{$a->name}» empregouse unha vez';
 $string['timemodified'] = 'Modificado';
 $string['typechanged'] = 'Cambiouse o tipo da etiqueta';
 $string['updatetag'] = 'Actualizar';

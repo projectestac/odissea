@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_progress', language 'nl', version '3.8'.
  *
- * @package   block_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -68,8 +68,8 @@ $string['marked'] = 'beoordeeld';
 $string['mouse_over_prompt'] = 'Laat uw muisaanwijzer over een blok zweven voor informatie.';
 $string['no_events_config_message'] = 'Er zijn geen activiteiten of bronnen om de vooruitgang van op te volgen. Creëer activiteiten en/of bronnen en configureer daarna dit blok.';
 $string['no_events_message'] = 'Er worden geen activiteiten of bronnen opgevolgd. Gebruik config om lesonderdelen toe te voegen.';
-$string['notAttempted_colour'] = '#FF3300';
 $string['no_visible_events_message'] = 'Geen van de geselecteerde lesonderdelen zijn zichtbaar.';
+$string['notAttempted_colour'] = '#FF3300';
 $string['now_indicator'] = 'NU';
 $string['overview'] = 'Overzicht van leerlingen';
 $string['page'] = 'Pagina';
@@ -77,8 +77,8 @@ $string['passed'] = 'voorbij';
 $string['pluginname'] = 'Voortgangsbalk';
 $string['posted_to'] = 'gepost naar';
 $string['progress'] = 'Vooruitgang';
-$string['progressbar'] = 'Vooruitgangsbalk';
 $string['progress:overview'] = 'Bekijk het cursusoverzicht met vooruitgangsbalken voor alle leerlingen';
+$string['progressbar'] = 'Vooruitgangsbalk';
 $string['questionnaire'] = 'Enquête';
 $string['quiz'] = 'Test';
 $string['resource'] = 'Bestand';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'es', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,10 @@ $string['char_limitui_parenthesis_start'] = '⦗';
 $string['choice'] = 'Elección';
 $string['choicegroup:addinstance'] = 'Agregar una nueva actividad de elección de grupo.';
 $string['choicegroup:choose'] = 'Grabar una elección.';
-$string['choicegroupclose'] = 'Hasta';
 $string['choicegroup:deleteresponses'] = 'Eliminar respuestas';
 $string['choicegroup:downloadresponses'] = 'Descargar respuestas';
+$string['choicegroup:readresponses'] = 'Leer las respuestas.';
+$string['choicegroupclose'] = 'Hasta';
 $string['choicegroupfull'] = 'Este grupo está completo y no es posible añadiir más usuarios al mismo.';
 $string['choicegroupname'] = 'Título de la actividad';
 $string['choicegroupopen'] = 'Abierto';
@@ -55,7 +56,6 @@ $string['choicegroupoptions'] = 'Opciones de elección.';
 $string['choicegroupoptions_help'] = 'Aquí es donde se especifica las opciones entra las que los participantes podrán escoger.
 
 Puede rellenar cualquier número de estas. Si deja en blanco algunas de las opciones disponibles, éstas no se mostrarán. Si necesita añadir más, haga clic en el botón "Añadir 3 campos al formulario".';
-$string['choicegroup:readresponses'] = 'Leer las respuestas.';
 $string['choicegroupsaved'] = 'Su selección se ha guardado.';
 $string['choicetext'] = 'Texto de la selección';
 $string['chooseaction'] = 'Elija una acción...';
@@ -70,8 +70,8 @@ $string['del_groups'] = 'Quitar grupos';
 $string['displayhorizontal'] = 'Mostrar horizontalmente';
 $string['displaymode'] = 'Modo de visualización.';
 $string['displayvertical'] = 'Mostrar verticalmente';
-$string['double_click_grouping_legend'] = 'Hacer doble click en un agrupamiento para expandir o colapsar individualmente.';
 $string['double_click_group_legend'] = 'Hacer doble click en un grupo para añadirlo.';
+$string['double_click_grouping_legend'] = 'Hacer doble click en un agrupamiento para expandir o colapsar individualmente.';
 $string['event:answered'] = 'Elección efectuada';
 $string['event:answered_desc'] = 'El usuario con id \'{$a->userid}\' ha seleccionado un grupo en la selección de grupo con la id del módulo del curso \'{$a->contextinstanceid}\'.';
 $string['event:removed'] = 'Elección quitada';

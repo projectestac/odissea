@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'nl', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,16 +33,16 @@ $string['backtomainview'] = 'Terug naar Hoofd';
 $string['cannotuseidfield'] = 'Kan het "id"-veld niet invullen: dit is een autonummeringskolom';
 $string['change'] = 'Wijzig';
 $string['charincorrectlength'] = 'Foute lengte voor char veld';
-$string['checkbigints'] = 'Controleer integers';
 $string['check_bigints'] = 'Zoek foute DB integers';
-$string['checkdefaults'] = 'Controleer standaardwaarden';
 $string['check_defaults'] = 'Zoek naar onconsistente standaardwaarden';
-$string['checkforeignkeys'] = 'Controleer foreign keys';
 $string['check_foreign_keys'] = 'Zoek foreign key schendingen';
-$string['checkindexes'] = 'Controleer indexen';
 $string['check_indexes'] = 'Zoek ontbrekende DB indexen';
-$string['checkoraclesemantics'] = 'Controleer semantics';
 $string['check_oracle_semantics'] = 'Controleer op semantics met de foute lengte';
+$string['checkbigints'] = 'Controleer integers';
+$string['checkdefaults'] = 'Controleer standaardwaarden';
+$string['checkforeignkeys'] = 'Controleer foreign keys';
+$string['checkindexes'] = 'Controleer indexen';
+$string['checkoraclesemantics'] = 'Controleer semantics';
 $string['completelogbelow'] = '(complete log van zoeken onderaan)';
 $string['confirmcheckbigints'] = 'Deze functie zal zoeken naar <a href="http://tracker.moodle.org/browse/MDL-11038"> mogelijk foute integer velden</a> op je Moodle server, en hierbij automatisch de nodige SQL-statements genereren (maar niet uitvoeren!) om alle integer velden in je DB juist te zetten.
 
@@ -151,12 +151,12 @@ $string['missingindexes'] = 'Ontbrekende indexen gevonden';
 $string['mustselectonefield'] = 'Je moet één veld selecteren om de gerelateerde acties te kunnen zien!';
 $string['mustselectoneindex'] = 'Je moet één index selecteren om de gerelateerde acties te kunnen zien!';
 $string['mustselectonekey'] = 'Je moet één sleutel selecteren om de gerelateerde acties te kunnen zien!';
+$string['new_table_from_mysql'] = 'Nieuwe tabel van MySQL';
 $string['newfield'] = 'Nieuw veld';
 $string['newindex'] = 'Nieuwe index';
 $string['newkey'] = 'Nieuwe sleutel';
 $string['newtable'] = 'Nieuwe tabel';
 $string['newtablefrommysql'] = 'Nieuwe tabel van MySQL';
-$string['new_table_from_mysql'] = 'Nieuwe tabel van MySQL';
 $string['nofieldsspecified'] = 'Geen velden opgegeven';
 $string['nomasterprimaryuniquefound'] = 'De kolom(men) waarnaar jouw foreign key refereert moet inbegrepen zijn in een primary key of een unique key in de gerefereerde tabel. Merk op: het is niet goed genoeg als de kolom in een UNIQUE INDEX is.';
 $string['nomissingindexesfound'] = 'Er zijn geen ontbrekende indexen gevonden, er moet niets aan je databank gewijzigd worden.';
@@ -198,15 +198,15 @@ $string['unknowntable'] = 'Referentie naar een onbekende tabel';
 $string['unload'] = 'Laad niet';
 $string['up'] = 'Omhoog';
 $string['view'] = 'Bekijk';
-$string['viewedited'] = 'Bekijk bewerkt';
-$string['vieworiginal'] = 'Bekijk origineel';
-$string['viewphpcode'] = 'Bekijk PHP code';
 $string['view_reserved_words'] = 'Bekijk gereserveerde woorden';
-$string['viewsqlcode'] = 'Bekijk SQL code';
 $string['view_structure_php'] = 'Bekijk PHP-structuur';
 $string['view_structure_sql'] = 'Bekijk SQL-struktuur';
 $string['view_table_php'] = 'Bekijk tabel PHP';
 $string['view_table_sql'] = 'Bekijk tabel SQL';
+$string['viewedited'] = 'Bekijk bewerkt';
+$string['vieworiginal'] = 'Bekijk origineel';
+$string['viewphpcode'] = 'Bekijk PHP code';
+$string['viewsqlcode'] = 'Bekijk SQL code';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Geschonden foreign keys';
 $string['violatedforeignkeysfound'] = 'Geschonden foreign keys gevonden';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'ru', version '3.8'.
  *
- * @package   qbehaviour_deferredcbm
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qbehaviour_deferredcbm
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,8 +38,8 @@ $string['cbmgrades_help'] = 'При оценивании с учетом уве�
 **Точность** - это % "правильности" без учета уверенности, но с учетом веса для максимального балла каждого вопроса. Правильное различие более или менее надежных ответов дает более высокую оценку, чем выбор той же самой уверенности для каждого вопроса. Это учитывается **Бонусом за уверенность**. **Точность** + **Бонус за уверенность** является более правильным показателем знаний, чем только **Точность**. Заблуждения могут привести к отрицательным бонусам. Предупреждение - учитывайте, что Вам знакомо и что не известно.';
 $string['cbmmark'] = 'Оценка с учетом уверенности - {$a}';
 $string['certainty'] = 'Уверенность';
-$string['certainty1'] = 'С=1 (Не уверен: <67%)';
 $string['certainty-1'] = 'Не знаю';
+$string['certainty1'] = 'С=1 (Не уверен: <67%)';
 $string['certainty2'] = 'C=2 (Промежуточный: >67%)';
 $string['certainty3'] = 'C=3 (Совершенно уверен: >80%)';
 $string['certainty_help'] = 'Для оценивания с учетом уверенности необходимо указать, насколько Вы уверены в правильности ответа.
@@ -53,8 +53,8 @@ $string['certainty_help'] = 'Для оценивания с учетом уве�
 Вероятность верного | <67% | 67-80% | >80%
 
 Лучшие баллы можно получить и выражая неуверенность. Например, если Вы считаете, что есть более 1 шанса из 3 ошибиться, то должны ввести С = 1 и избежать риска отрицательного балла.';
-$string['certaintyshort1'] = 'C=1';
 $string['certaintyshort-1'] = 'Не знаю';
+$string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';
 $string['certaintyshort3'] = 'C=3';
 $string['dontknow'] = 'Не знаю';

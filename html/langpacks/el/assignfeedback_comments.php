@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'el', version '3.8'.
  *
- * @package   assignfeedback_comments
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_comments
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['commentinline'] = 'Σχολιασμός στις ίδιες γραμμές';
+$string['commentinline_help'] = 'Αν ενεργοποιηθεί, το κείμενο υποβολής θα αντιγραφεί στο πεδίο σχολίου της ανατροφοδότησης κατά τη βαθμολόγηση, κάνοντας ευκολότερο τον σχολιασμό μέσα στις ίδιες γραμμές (χρησιμοποιώντας διαφορετικό χρώμα, ίσως) ή την επεξεργασία του αρχικού κειμένου.';
 $string['commentinlinedefault'] = 'Σχολιασμός στις ίδιες γραμμές από προεπιλογή';
 $string['commentinlinedefault_help'] = 'Εάν οριστεί, αυτή τη λειτουργία σχολιασμού στις ίδιες γραμμές θα ενεργοποιηθεί από προεπιλογή για όλες τις νέες αναθέσεις εργασιών.';
-$string['commentinline_help'] = 'Αν ενεργοποιηθεί, το κείμενο υποβολής θα αντιγραφεί στο πεδίο σχολίου της ανατροφοδότησης κατά τη βαθμολόγηση, κάνοντας ευκολότερο τον σχολιασμό μέσα στις ίδιες γραμμές (χρησιμοποιώντας διαφορετικό χρώμα, ίσως) ή την επεξεργασία του αρχικού κειμένου.';
 $string['default'] = 'Ενεργοποιημένο από προεπιλογή';
 $string['default_help'] = 'Αν ενεργοποιηθεί, αυτή η μέθοδος ανατροφοδότησης θα οριστεί ως προεπιλογή για όλες τις νέες αναθέσεις εργασιών.';
 $string['enabled'] = 'Σχόλια ανατροφοδότησης';

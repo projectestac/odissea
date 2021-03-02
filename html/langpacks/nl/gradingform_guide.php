@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradingform_guide', language 'nl', version '3.8'.
  *
- * @package   gradingform_guide
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradingform_guide
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -81,13 +81,13 @@ $string['needregrademessage'] = 'De beoordelingshulp is gewijzigd nadat deze lee
 $string['outof'] = 'Cijfer van de {$a}';
 $string['pluginname'] = 'Beoordelingshulp';
 $string['previewmarkingguide'] = 'Voorbeeld beoordelingshulp';
-$string['privacy:metadata:criterionid'] = 'Een identificatie voor een criterium voor geavanceerde markering.';
+$string['privacy:metadata:criterionid'] = 'Een identifier voor een criterium voor geavanceerde markering.';
 $string['privacy:metadata:fillingssummary'] = 'Bewaart informatie over het cijfer van een gebruiker en feedback voor de markeringsgids.';
-$string['privacy:metadata:instanceid'] = 'Een identificatie voor een cijfer dat door een activiteit wordt gebruikt.';
+$string['privacy:metadata:instanceid'] = 'Een identifier voor een cijfer dat door een activiteit wordt gebruikt.';
 $string['privacy:metadata:preference:showmarkerdesc'] = 'Of beschrijvingscriteria worden weergegeven';
 $string['privacy:metadata:preference:showstudentdesc'] = 'Of beschrijvingen van leerlingencriteria moeten worden getoond';
 $string['privacy:metadata:remark'] = 'Opmerkingen met betrekking tot dit cijfercriterium.';
-$string['privacy:metadata:score'] = 'Een score voor dit cijfer criterium.';
+$string['privacy:metadata:score'] = 'Een score voor dit cijfercriterium.';
 $string['regrademessage1'] = 'Je gaat wijzigingen aanbrengen in een boordelingshulp die al gebruikt geweest is om te beoordelen. Geef aan of bestaande cijfers moeten nagekeken worden. Als je dit inschakelt, dan zal de beoordelingshulp verborgen worden tot het werk van de leerling opnieuw nagekeken is.';
 $string['regrademessage5'] = 'Je gaat grote wijzigingen aanbrengen aan een beoordelingshulp die al gebruikt geweest is om mee te beoordelen. Het cijfer in de cijferlijst zal niet wijzigen, maar de beoordelingshulp zal voor de leerlingen verborgen blijven tot hun werk opnieuw nagekeken is.';
 $string['regradeoption0'] = 'Niet markeren voor opnieuw beoordelen';
@@ -97,8 +97,8 @@ $string['save'] = 'Bewaar';
 $string['saveguide'] = 'Bewaar de beoordelingshulp en maak die klaar voor gebruik';
 $string['saveguidedraft'] = 'Bewaar als klad';
 $string['score'] = 'cijfer';
-$string['scoreforcriterion'] = '{$a} score';
 $string['score_help'] = 'Voer een score in voor {$a->criterion} tussen 0 en {$a->maxscore}.';
+$string['scoreforcriterion'] = '{$a} score';
 $string['showmarkerdesc'] = 'Toon beoordeler de criterium beschrijvingen';
 $string['showmarkspercriterionstudents'] = 'Toon cijfers per criterium aan leerlingen';
 $string['showstudentdesc'] = 'Toon leerling criterium beschrijvingen';

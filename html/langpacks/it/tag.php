@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'it', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -102,16 +102,16 @@ $string['prevpage'] = 'Indietro';
 $string['privacy:metadata:tag'] = 'I dettagli di ogni singolo tag sono memorizzati insieme alla descrizione del tag e ad altre informazioni ad esso correlate.';
 $string['privacy:metadata:tag:description'] = 'La descrizione del tag.';
 $string['privacy:metadata:tag:flag'] = 'Il tag è stato contrassegnato come inappropriato.';
+$string['privacy:metadata:tag:name'] = 'Il nome del tag, in questo caso la versione normalizzata del nome.';
+$string['privacy:metadata:tag:rawname'] = 'Il nome del tag, ossia il nome visualizzato.';
+$string['privacy:metadata:tag:timemodified'] = 'Orario della modifica più recente effettuata sul tag.';
+$string['privacy:metadata:tag:userid'] = 'Utente che ha creato il tag.';
 $string['privacy:metadata:taginstance'] = 'Il collegamento tra tag e dove viene utilizzato.';
 $string['privacy:metadata:taginstance:ordering'] = 'L\'ordinamento relativo del tag.';
 $string['privacy:metadata:taginstance:tagid'] = 'Il link al tag.';
 $string['privacy:metadata:taginstance:timecreated'] = 'L\'orario nel quale il tag è stato collegato alla destinazione.';
 $string['privacy:metadata:taginstance:timemodified'] = 'L\'orario nel quale è stata modificata la destinazione del tag.';
 $string['privacy:metadata:taginstance:tiuserid'] = 'Laddove i contenuti condivisi possano essere taggati dai singoli utenti, il creatore del tag viene memorizzato.';
-$string['privacy:metadata:tag:name'] = 'Il nome del tag, in questo caso la versione normalizzata del nome.';
-$string['privacy:metadata:tag:rawname'] = 'Il nome del tag, ossia il nome visualizzato.';
-$string['privacy:metadata:tag:timemodified'] = 'Orario della modifica più recente effettuata sul tag.';
-$string['privacy:metadata:tag:userid'] = 'Utente che ha creato il tag.';
 $string['ptags'] = 'Tag definiti dall\'utente (separati da virgole)';
 $string['relatedblogs'] = 'Interventi blog più recenti';
 $string['relatedtags'] = 'Tag correlati';
@@ -147,11 +147,11 @@ $string['tag'] = 'Tag';
 $string['tagarea_blog_external'] = 'Intervento blog esterno';
 $string['tagarea_course'] = 'Corsi';
 $string['tagarea_course_modules'] = 'Attività e risorse';
+$string['tagarea_post'] = 'Intervento blog';
+$string['tagarea_user'] = 'Interessi dell\'utente';
 $string['tagareaenabled'] = 'Abilitato';
 $string['tagareaname'] = 'Nome';
-$string['tagarea_post'] = 'Intervento blog';
 $string['tagareas'] = 'Aree di tag';
-$string['tagarea_user'] = 'Interessi dell\'utente';
 $string['tagcollection'] = 'Raccolta di tag';
 $string['tagcollection_help'] = 'Le raccolte di tag sono insiemi di tag rivolti ad aree diverse. Ad esempio, una raccolta di tag standard può essere utilizzata per associare tag ai corsi, mentre gli interessi degli utenti e gli interventi blog possono utilizzare altre raccolte. Quando un utente clicca su un tag, la pagina dei tag visualizzerà solamente gli elementi associati al tag presenti nella stessa raccolta. E\' possibile sia inserire i tag nelle raccolte in modo automatico in funzione dell\'area associata al tag, sia inserire i tag manualmente come tag standard.';
 $string['tagcollections'] = 'Raccolte di tag';

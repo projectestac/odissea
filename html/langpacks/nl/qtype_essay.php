@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essay', language 'nl', version '3.8'.
  *
- * @package   qtype_essay
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essay
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,10 +44,10 @@ $string['mustrequirefewer'] = 'Je kunt niet meer bijlagen eisen dan je toestaat.
 $string['nlines'] = '{$a} lijnen';
 $string['nonexistentfiletypes'] = 'De volgende bestandstypes werden niet herkend: {$a}';
 $string['pluginname'] = 'Open vraag';
-$string['pluginnameadding'] = 'Open vraag toevoegen';
-$string['pluginnameediting'] = 'Open vraag bewerken';
 $string['pluginname_help'] = 'Als antwoord op de vraag kan de respondent één of meer bestanden uploaden en/of een antwoord online noteren. Er kan een antwoordsjabloon voorzien worden.
 De antwoorden moeten manueel beoordeeld worden.';
+$string['pluginnameadding'] = 'Open vraag toevoegen';
+$string['pluginnameediting'] = 'Open vraag bewerken';
 $string['pluginnamesummary'] = 'Hiermee kun je een antwoord laten geven dat bestaat uit enkele zinnen of paragrafen. Deze antwoorden moeten manueel beoordeeld worden.';
 $string['privacy:metadata'] = 'Het vraagtype Open vraag bewaart geen persoonlijke gegevens.';
 $string['responsefieldlines'] = 'Grootte invoerveld';
@@ -57,5 +57,5 @@ $string['responsenotrequired'] = 'Tekst invoeren is optioneel';
 $string['responseoptions'] = 'Antwoordopties';
 $string['responserequired'] = 'Tekst vereist';
 $string['responsetemplate'] = 'Antwoordsjabloon';
-$string['responsetemplateheader'] = 'Antwoordsjabloon';
 $string['responsetemplate_help'] = 'Alle tekst die hier gezet wordt, zal getoond worden in de antwoordbox wanneer een nieuwe poging voor het beantwoorden van de vraag begint.';
+$string['responsetemplateheader'] = 'Antwoordsjabloon';

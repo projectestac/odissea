@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'fr', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,10 @@ $string['char_limitui_parenthesis_start'] = '(';
 $string['choice'] = 'Choix';
 $string['choicegroup:addinstance'] = 'Ajouter un nouveau choix de groupe';
 $string['choicegroup:choose'] = 'Enregistrer un choix';
-$string['choicegroupclose'] = 'Jusqu\'à';
 $string['choicegroup:deleteresponses'] = 'Supprimer les réponses';
 $string['choicegroup:downloadresponses'] = 'Télécharger les réponses';
+$string['choicegroup:readresponses'] = 'Lire les réponses';
+$string['choicegroupclose'] = 'Jusqu\'à';
 $string['choicegroupfull'] = 'Ce choix est complet et il n\'y a plus de places disponibles.';
 $string['choicegroupname'] = 'Nom du choix de groupe';
 $string['choicegroupopen'] = 'Ouvert';
@@ -59,7 +60,6 @@ La liste à gauche affiche tous les groupes et groupements disponibles. Pour ajo
 Les groupes sélectionnés apparaissent sur la liste à droite.
 
 Pour supprimer des groupes de la sélection, sélectionnez-les dans la liste à droite et cliquez sur « Supprimer ».';
-$string['choicegroup:readresponses'] = 'Lire les réponses';
 $string['choicegroupsaved'] = 'Votre choix a été enregistré';
 $string['choicetext'] = 'Texte';
 $string['chooseaction'] = 'Choisir une action…';
@@ -74,8 +74,8 @@ $string['del_groups'] = 'Supprimer les groupes';
 $string['displayhorizontal'] = 'Afficher horizontalement';
 $string['displaymode'] = 'Mode d\'affichage';
 $string['displayvertical'] = 'Afficher verticalement';
-$string['double_click_grouping_legend'] = 'Double-clic sur groupement pour le développer/réduire.';
 $string['double_click_group_legend'] = 'Double-clic sur groupe pour l\'ajouter.';
+$string['double_click_grouping_legend'] = 'Double-clic sur groupement pour le développer/réduire.';
 $string['event:answered'] = 'Choix effectué';
 $string['event:answered_desc'] = 'L\'utilisateur ID « {$a->userid} » a choisi un groupe dans l\'activité choix de groupe avec numéro de module « {$a->contextinstanceid} ».';
 $string['event:removed'] = 'Choix supprimé';
@@ -120,7 +120,7 @@ $string['numberofuser'] = 'Nombre d\'utilisateurs';
 $string['option'] = 'Groupe';
 $string['page-mod-choice-x'] = 'Toutes les pages du module Choix du groupe';
 $string['pleaseselectonegroup'] = 'Veuillez sélectionner au moins un groupe comme choix pour les utilisateurs.';
-$string['pleasesetgroups'] = 'Veuillez créer au moins deux groupes dans ce cours.';
+$string['pleasesetgroups'] = 'Veuillez créer au moins un groupe dans ce cours.';
 $string['pleasesetonegroupor'] = 'Veuillez créer au moins un groupe dans ce cours.<br /><br />
 <ul>
 <li><a href="{$a->linkgroups}">gérer les groupes</a></li>

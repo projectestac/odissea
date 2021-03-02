@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_navigation', language 'ar', version '3.8'.
  *
- * @package   block_navigation
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_navigation
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['courseactivities'] = 'التصنيفات، المساقات، وأنشطة المساقات';
+$string['courseactivities'] = 'التصنيفات، المقررات الدراسية، وأنشطة المقررات الدراسية';
 $string['courses'] = 'الفئات، المقررات الدراسية';
 $string['coursestructures'] = 'الفئات، المقررات الدراسية، وتراكيب المقرر الدراسي';
 $string['enabledockdesc'] = 'إسمح للمستخدم بإرساء هذه الكتلة';
@@ -33,7 +33,7 @@ $string['everything'] = 'كُلّ شيء';
 $string['expansionlimit'] = 'التنقل العام لما يأتي';
 $string['linkcategoriesdesc'] = 'أعرض التصنيفات كروابط';
 $string['navigation:addinstance'] = 'إضافة كتلة جديدة للتنقل';
-$string['navigation:myaddinstance'] = 'إضافة كتلة جديدة للتنقل إلى دفة القيادة';
+$string['navigation:myaddinstance'] = 'إضافة كتلة جديدة للتنقل إلى لوحة التحكم';
 $string['pluginname'] = 'التنقل';
 $string['privacy:metadata'] = 'كتلة التنقل تعرض فقط البيانات المخزونة في مواضع أخرى.';
 $string['trimlength'] = 'عدد الحروف الذي يتم القطع عنده';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_flatfile', language 'ja', version '3.8'.
  *
- * @package   enrol_flatfile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_flatfile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,10 +30,10 @@ $string['expiredaction'] = '登録期限切れ処理';
 $string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除中に一部のユーザデータおよび設定がコースから削除されてしまうことに留意してください。';
 $string['filelockedmail'] = 'ファイルベースのユーザ登録で使用しているテキストファイル ({$a}) はcron処理により削除することができません。通常、これはファイルパーミッションが正しくないことを意味します。Moodleが削除できるようファイルのパーミッションを変更してください。変更しない場合、この処理が繰り返し実行されます。';
 $string['filelockedmailsubject'] = '重大なエラー: 登録ファイル';
-$string['flatfileenrolments'] = 'フラットファイル (CSV) 登録です。';
 $string['flatfile:manage'] = 'ユーザ登録を手動で管理する';
-$string['flatfilesync'] = 'フラットファイル登録同期';
 $string['flatfile:unenrol'] = 'ユーザをコースから手動で登録解除する';
+$string['flatfileenrolments'] = 'フラットファイル (CSV) 登録です。';
+$string['flatfilesync'] = 'フラットファイル登録同期';
 $string['location'] = 'ファイルロケーション';
 $string['location_desc'] = '登録ファイルのフルパスを指定してください。処理の後、ファイルは自動的に削除されます。';
 $string['mapping'] = 'フラットファイルロールマッピング';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'zh_cn', version '3.8'.
  *
- * @package   tool_uploadcourse
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploadcourse
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -114,8 +114,8 @@ $string['templatefile_help'] = '选择一个文件作为模板，用来建立所
 $string['unknownimportmode'] = '未知导入模式';
 $string['updatemissing'] = '用CSV文档资料和默认值来填充缺失的项目';
 $string['updatemode'] = '更新模式';
-$string['updatemodedoessettonothing'] = '更新模式不允许任何东西被更新';
 $string['updatemode_help'] = '如果你允许课程被更新，你需要告诉本工具课程需要更新成什么。';
+$string['updatemodedoessettonothing'] = '更新模式不允许任何东西被更新';
 $string['updateonly'] = '仅更新已存在的课程';
 $string['updatewithdataonly'] = '只以CSV文档资料来更新';
 $string['updatewithdataordefaults'] = '以CSV文档资料和默认值来更新';

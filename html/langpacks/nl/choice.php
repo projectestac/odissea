@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'nl', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,13 +34,15 @@ $string['calendarend'] = '{$a} zal sluiten';
 $string['calendarstart'] = '{$a} zal openen';
 $string['cannotsubmit'] = 'Er was een probleem bij het insturen van je keuze. Probeer opnieuw';
 $string['choice'] = 'Keuze';
-$string['choiceactivityname'] = 'Keuze: {$a}';
 $string['choice:addinstance'] = 'Voeg een nieuwe keuze toe';
 $string['choice:choose'] = 'Bewaar een keuze';
-$string['choiceclose'] = 'Sta reacties toe tot';
-$string['choicecloseson'] = 'Keuze sluit op {$a}';
 $string['choice:deleteresponses'] = 'Wijzig en verwijder antwoorden';
 $string['choice:downloadresponses'] = 'Download antwoorden';
+$string['choice:readresponses'] = 'Bekijk antwoorden';
+$string['choice:view'] = 'Bekijk keuze-activiteit';
+$string['choiceactivityname'] = 'Keuze: {$a}';
+$string['choiceclose'] = 'Sta reacties toe tot';
+$string['choicecloseson'] = 'Keuze sluit op {$a}';
 $string['choicefull'] = 'Een of meer opties die je hebt geselecteerd zijn al vol. Jouw antwoord werd niet bewaard. Maak een nieuwe keuze.';
 $string['choicename'] = 'Naam keuze';
 $string['choiceopen'] = 'Sta reacties toe vanaf';
@@ -48,10 +50,8 @@ $string['choiceoptions'] = 'Keuze-opties';
 $string['choiceoptions_help'] = '<p>Hier kun je ingeven welke keuzemogelijkheden de leerlingen aangeboden krijgen.</p>
 
 <p>Je hoeft ze niet allemaal in te vullen: je mag er een aantal blanco laten. Alleen de ingevulde velden zullen getoond worden.</p>';
-$string['choice:readresponses'] = 'Bekijk antwoorden';
 $string['choicesaved'] = 'Je keuze is bewaard';
 $string['choicetext'] = 'Keuzetekst';
-$string['choice:view'] = 'Bekijk keuze-activiteit';
 $string['chooseaction'] = 'Kies een actie...';
 $string['chooseoption'] = 'Kies: {$a}';
 $string['closebeforeopen'] = 'Je hebt een afsluitdatum opgegeven die vroeger ligt dan de openingsdatum.';
@@ -72,13 +72,13 @@ $string['full'] = '(volledig)';
 $string['havetologin'] = 'Je moet aangemeld zijn voor je je keuze kunt insturen';
 $string['includeinactive'] = 'Antwoorden opnemen van niet actieve/geschorste gebruikers';
 $string['indicator:cognitivedepth'] = 'Keuze cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Keuze activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Keuze cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de Choice-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Keuze activiteit.';
 $string['indicator:socialbreadth'] = 'Keuze sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Keuze activiteit.';
 $string['indicator:socialbreadthdef'] = 'Keuze sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de maatschappelijke betrokkenheid van de Choice-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, Alleen deelnemer, Deelnemer met anderen)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Keuze activiteit.';
 $string['limit'] = 'Beperk';
 $string['limitanswers'] = 'Beperk het aantal toegelaten antwoorden';
 $string['limitanswers_help'] = 'Met deze optie is het mogelijk om het aantal deelnemers dat elke optie kan kiezen te beperken.

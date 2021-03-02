@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customfield', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'customfield', language 'eu', version '3.8'.
  *
- * @package   customfield
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     customfield
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,7 +41,7 @@ $string['customfielddata'] = 'Eremu pertsonalizatuetako datuak';
 $string['customfields'] = 'Eremu pertsonalizatuak';
 $string['defaultvalue'] = 'Balore lehenetsia';
 $string['description'] = 'Deskribapena';
-$string['description_help'] = 'Deskribapena eremuaren barruko inprimakian erakutsiko da';
+$string['description_help'] = 'Deskribapena eremuaren azpiko formularioan erakutsiko da.';
 $string['edit'] = 'Editatu';
 $string['editcategoryname'] = 'Editatu kategoriaren izena';
 $string['editingfield'] = '{$a} eguneratzen';
@@ -94,5 +94,5 @@ $string['specificsettings'] = 'Ezarpen zehatzak';
 $string['therearenofields'] = 'Kategoria honetan ez dago eremurik';
 $string['totopofcategory'] = '{$a} kategoriaren goialdera';
 $string['type'] = 'Mota';
-$string['unknownhandler'] = 'Ezin da aurkitu {$a->component} osagarri eta {$a->area} arearako eremu pertsonalizatuen arduraduna.';
+$string['unknownhandler'] = 'Ezin da aurkitu {$a->component} osagarri eta {$a->area} arearako eremu pertsonalizatuen kudeatzailea.';
 $string['yes'] = 'Bai';

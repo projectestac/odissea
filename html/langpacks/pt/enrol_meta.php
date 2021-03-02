@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_meta', language 'pt', version '3.8'.
  *
- * @package   enrol_meta
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_meta
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,12 +32,12 @@ $string['creategroup'] = 'Criar um novo grupo';
 $string['defaultgroupnametext'] = '{$a->increment} disciplina {$a->name}';
 $string['enrolmetasynctask'] = 'Tarefa de sincronização de inscrições com disciplina';
 $string['linkedcourse'] = 'Sincronizar inscrições com';
-$string['meta:config'] = 'Configurar instâncias de Sincronização com Disciplina';
-$string['meta:selectaslinked'] = 'Selecionar disciplina a sincronizar inscrições';
+$string['meta:config'] = 'Configurar instâncias de Sincronização com disciplina';
+$string['meta:selectaslinked'] = 'Selecionar a disciplina para sincronizar inscrições';
 $string['meta:unenrol'] = 'Desinscrever utilizadores suspensos';
 $string['nosyncroleids'] = 'Papéis que não são sincronizados';
 $string['nosyncroleids_desc'] = 'Por predefinição todas as atribuições de papéis feitas ao nível da disciplina são sincronizadas. Os papéis aqui indicados não serão sincronizados. Os papéis atuais serão atualizados durante a próxima execução do cron.';
-$string['pluginname'] = 'Sincronização com Disciplina';
+$string['pluginname'] = 'Sincronização com disciplina';
 $string['pluginname_desc'] = 'Este módulo de inscrição permite sincronizar inscrições e atribuições de papéis entre duas disciplinas.';
 $string['privacy:metadata:core_group'] = 'O módulo de inscrição por sincronização pode criar um novo grupo ou usar um grupo existente para adicionar todos os participantes da disciplina vinculada.';
 $string['syncall'] = 'Sincronizar todos os utilizadores inscritos';

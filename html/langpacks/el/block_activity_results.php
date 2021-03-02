@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_activity_results', language 'el', version '3.8'.
  *
- * @package   block_activity_results
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_activity_results
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,8 +43,8 @@ $string['config_no_activities_in_course'] = 'Δεν υπάρχουν ακόμη 
 $string['config_select_activity'] = 'Από ποια δραστηριότητα θα εμφανίζει αποτελέσματα αυτό το μπλοκ;';
 $string['config_show_best'] = 'Πόσοι από τους υψηλότερους βαθμούς να εμφανίζονται (0 για απενεργοποίηση);';
 $string['config_show_worst'] = 'Πόσοι από τους χαμηλότερους βαθμούς να εμφανίζονται (0 για απενεργοποίηση);';
-$string['configuredtoshownothing'] = 'Αυτή τη στιγμή, οι ρυθμίσεις αυτού του μπλοκ δεν επιτρέπουν την εμφάνιση οποιωνδήποτε αποτελεσμάτων.';
 $string['config_use_groups'] = 'Εμφάνιση ομάδων αντί για μαθητές (μόνο αν η δραστηριότητα υποστηρίζει ομάδες);';
+$string['configuredtoshownothing'] = 'Αυτή τη στιγμή, οι ρυθμίσεις αυτού του μπλοκ δεν επιτρέπουν την εμφάνιση οποιωνδήποτε αποτελεσμάτων.';
 $string['defaultdecimalplaces'] = 'Δεκαδικές θέσεις';
 $string['defaultdecimalplaces_desc'] = 'Αριθμός δεκαδικών θέσεων για εμφάνιση από προεπιλογή';
 $string['defaultgradedisplay'] = 'Εμφάνιση βαθμών ως';

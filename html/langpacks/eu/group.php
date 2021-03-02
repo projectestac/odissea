@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'eu', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,7 @@ $string['createautomaticgrouping'] = 'Sortu talde-multzo automatikoa';
 $string['creategroup'] = 'Sortu taldea';
 $string['creategrouping'] = 'Sortu talde-multzoa';
 $string['creategroupinselectedgrouping'] = 'Sortu taldea aukeratutako talde-multzoan';
-$string['createingrouping'] = 'Automatikoki sortutako taldeen talde-multzoa';
+$string['createingrouping'] = 'Automatikoki sortutako taldeen taldekatzea';
 $string['createorphangroup'] = 'Sortu talde umezurtza';
 $string['csvdelimiter'] = 'CSV bereizlea';
 $string['databaseupgradegroups'] = '{$a} da orain taldeen bertsioa';
@@ -60,14 +60,14 @@ $string['deleteselectedgroup'] = 'Ezabatu aukeratutako taldea';
 $string['editgroupingsettings'] = 'Editatu talde-multzoaren ezarpenak';
 $string['editgroupsettings'] = 'Editatu taldearen ezarpenak';
 $string['editusersgroupsa'] = 'Editatu taldeak "{$a}"-(r)entzat';
-$string['enablemessaging'] = 'Taldeko mezuak';
+$string['enablemessaging'] = 'Taldeko mezularitza';
 $string['enablemessaging_help'] = 'Gaituz gero, taldekideek mezuen nabigazio-kutxatik mezuak elkarri bidal diezazkiekete.';
 $string['encoding'] = 'Kodifikazioa';
 $string['enrolmentkey'] = 'Matrikulazio-giltza';
-$string['enrolmentkeyalreadyinuse'] = 'Matrikulazio-giltza hau beste talde baterako erabiltzen ari da jada.';
 $string['enrolmentkey_help'] = 'Matrikulazio-giltzek talde baterako sarbidea pasahitza ezagutzen dutenei mugatzeko aukera ematen dute. Matrikulazio-giltza bat zehaztuz gero, giltza sartuz gero erabiltzailea ikastaroan sartzeaz gain, talde horretako kide ere bihurtuko du.
 
 Oharra: Taldeen matrikulazio-giltzak matrikulazio automatikoko ezarpenetan gaitu behar dira eta ikastarorako matrikulazio-giltza ere zehaztu beharko da.';
+$string['enrolmentkeyalreadyinuse'] = 'Matrikulazio-giltza hau beste talde baterako erabiltzen ari da jada.';
 $string['erroraddremoveuser'] = 'Errorea {$a} erabiltzailea taldera gehitzean/taldetik kentzean';
 $string['erroreditgroup'] = 'Errorea {$a} taldea sortzean/eguneratzean';
 $string['erroreditgrouping'] = 'Errorea {$a} talde-multzoa sortzean/eguneratzean';
@@ -97,30 +97,30 @@ $string['groupinfo'] = 'Aukeratutako taldeari buruzko informazioa';
 $string['groupinfomembers'] = 'Aukeratutako partaideei buruzko informazioa';
 $string['groupinfopeople'] = 'Aukeratutako pertsonei buruzko informazioa';
 $string['grouping'] = 'Talde-multzoa';
+$string['grouping_help'] = 'Talde-multzoa ikastaro bateko talde-multzoa. Talde-multzoa aukeratuz gero, talde-multzo baten barruko taldeetara esleitutako ikasleek elkarrekin lan egiteko aukera izango dute.';
 $string['groupingaddedsuccesfully'] = '{$a} talde-multzoa ondo gehitu da';
 $string['groupingdescription'] = 'Talde-multzoaren deskribapena';
-$string['grouping_help'] = 'Talde-multzoa ikastaro bateko talde-multzoa. Talde-multzoa aukeratuz gero, talde-multzo baten barruko taldeetara esleitutako ikasleek elkarrekin lan egiteko aukera izango dute.';
 $string['groupingname'] = 'Talde-multzoaren izena';
 $string['groupingnameexists'] = 'Dagoeneko badago ikastaro honetan \'{$a}\' izeneko talde-multzoa; mesedez, aukeratu beste bat.';
 $string['groupings'] = 'Talde-multzoak';
 $string['groupingsection'] = 'Talde-multzoetarako sarbidea';
 $string['groupingsection_help'] = 'Talde-multzoa ikastaro bateko talde-multzoa da. Hemen talde-multzo bat aukeratuta, soilik talde-multzo horretako taldeetako ikasleek izango dute eskuragarri atala.';
 $string['groupingsonly'] = 'Talde-multzoak baino ez';
-$string['groupmember'] = 'Taldekidea';
+$string['groupmember'] = 'Taldeko kidea';
 $string['groupmemberdesc'] = 'Talde bateko kideen rol estandarra';
 $string['groupmembers'] = 'Taldekideak';
 $string['groupmemberssee'] = 'Ikusi taldekideak';
 $string['groupmembersselected'] = 'Aukeratutako taldeko kideak';
 $string['groupmode'] = 'Talde-modua';
-$string['groupmodeforce'] = 'Behartu talde-modua';
-$string['groupmodeforce_help'] = 'Talde-modua behartuta badago, ikastaroko talde-modua aplikatuko zaio ikastaroko edozein jarduerari. Jarduera bakoitzeko talde-modua ezarpenari ez zaio jaramonik egingo.';
 $string['groupmode_help'] = 'Hiru aukera dago:
 
 * Talderik ez
 * Taldeek ezin elkar ikusi - taldekide bakoitzak bere taldea baino ezin du ikusi; gainerakoak ezin ditu ikusi
 * Taldeek elkar ikusten dute - taldekide bakoitzak bere taldean egiten du lan baina gainerakoak ere ikusten ditu
 
-Ikastaro mailan definitutako talde-modua izango da lehenetsitako modua ikastaroko jarduera guztietan. Taldeak onartzen dituen jarduera bakoitzean ere talde-modua ezarri daiteke, baina ikastaro mailan talde-modua behartzen bada, ez zaio jaramonik egingo jarduera bakoitzaren talde-modua ezarpenari.';
+Ikastaro mailan definitutako taldea modua izango da lehenetsitako modua ikastaroko jarduera guztietan. Taldeak onartzen dituen jarduera bakoitzean ere taldea modua ezarri daiteke, baina ikastaro mailan taldea modua behartzen bada, ez zaio jaramonik egingo jarduera bakoitzaren taldea modua ezarpenari.';
+$string['groupmodeforce'] = 'Behartu talde-modua';
+$string['groupmodeforce_help'] = 'Talde-modua behartuta badago, ikastaroko talde-modua aplikatuko zaio ikastaroko edozein jarduerari. Jarduera bakoitzeko talde-modua ezarpenari ez zaio jaramonik egingo.';
 $string['groupmy'] = 'Neure taldea';
 $string['groupname'] = 'Taldearen izena';
 $string['groupnameexists'] = 'Dagoeneko bada ikastaro honetan \'{$a}\' izeneko taldea; mesedez, aukeratu beste bat.';
@@ -128,7 +128,7 @@ $string['groupnotamember'] = 'Sentitzen dugu, ez zara talde honetako kide';
 $string['groups'] = 'Taldeak';
 $string['groupscount'] = '({$a}) taldeak';
 $string['groupsettingsheader'] = 'Taldeak';
-$string['groupsgroupings'] = 'Taldeak eta talde-multzoak';
+$string['groupsgroupings'] = 'Taldeak eta taldekatzeak';
 $string['groupsinselectedgrouping'] = 'Aukeratutako talde-multzoan dauden taldeak:';
 $string['groupsnone'] = 'Talderik ez';
 $string['groupsonly'] = 'Taldeak baino ez';
@@ -162,13 +162,13 @@ $string['newpicture_help'] = 'Aukeratu JPG edo PNG formatuko irudi bat. Irudia m
 $string['noallocation'] = 'Esleitu gabe';
 $string['nogroup'] = 'Talderik ez';
 $string['nogrouping'] = 'Talde-multzorik ez';
-$string['nogroups'] = 'Ikastaro honetan ez dago talderik ezarrita';
+$string['nogroups'] = 'Ikastaro honetan oraindik ez dago talderik';
 $string['nogroupsassigned'] = 'Ez dago esleitutako talderik';
-$string['nopermissionforcreation'] = 'Ezin da "{$a}" taldea sortu: ez duzu horretarako baimenik.';
+$string['nopermissionforcreation'] = 'Ezin da "{$a}" taldea sortu ez duzulako horretarako baimenik.';
 $string['nosmallgroups'] = 'Saihestu azken talde txikia';
 $string['notingroup'] = 'Taldeetan dauden erabiltzaileak ez hartu kontuan';
-$string['notingrouping'] = '[Talde-multzotik kanpo]';
-$string['notingrouplist'] = '[Talderik gabe]';
+$string['notingrouping'] = 'Talde-multzotik kanpo';
+$string['notingrouplist'] = 'Talderik gabe';
 $string['nousersinrole'] = 'Ez dago erabiltzaile egokirik aukeratutako rolean';
 $string['number'] = 'Talde-kopurua edo kide-kopurua taldeko';
 $string['numgroups'] = 'Talde-kopurua';

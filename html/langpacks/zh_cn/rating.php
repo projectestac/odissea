@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'rating', language 'zh_cn', version '3.8'.
  *
- * @package   rating
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     rating
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,7 +45,6 @@ $string['allowratings'] = '可以给项目评分吗？';
 $string['allratingsforitem'] = '所有已提交的评分';
 $string['capabilitychecknotavailable'] = '在保存活动之前，能力检查不可用';
 $string['couldnotdeleteratings'] = '抱歉，无法删除，因为有人已经对其进行了评分';
-$string['grade_rating_name'] = '评分';
 $string['norate'] = '不允许对项目评分！';
 $string['noratings'] = '没有提交评分';
 $string['noviewanyrate'] = '您只能查看您自己的项目的结果';

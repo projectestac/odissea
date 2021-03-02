@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'eu', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,16 +33,16 @@ $string['backtomainview'] = 'Itzuli orri nagusira';
 $string['cannotuseidfield'] = 'Ezin da "id" eremua sartu. Zutabe auto-zenbakitua da.';
 $string['change'] = 'Aldatu';
 $string['charincorrectlength'] = 'Char eremuaren luzera ezegokia';
-$string['checkbigints'] = 'Egiaztatu zenbaki osoak';
 $string['check_bigints'] = 'Bilatu egokiak ez diren datu-baseko zenbakiak';
-$string['checkdefaults'] = 'Egiaztatu lehenetsitako balioak';
 $string['check_defaults'] = 'Bilatu sendotasunik gabeko lehenetsitako balioak';
-$string['checkforeignkeys'] = 'Egiaztatu kanpoko gakoak';
 $string['check_foreign_keys'] = 'Bilatu urratutako kanpoko gakoak';
-$string['checkindexes'] = 'Egiaztatu indizeak';
 $string['check_indexes'] = 'Bilatu falta diren datu-baseko indizeak';
-$string['checkoraclesemantics'] = 'Egiaztatu semantika';
 $string['check_oracle_semantics'] = 'Bilatu luzera ezegokiko semantika';
+$string['checkbigints'] = 'Egiaztatu zenbaki osoak';
+$string['checkdefaults'] = 'Egiaztatu lehenetsitako balioak';
+$string['checkforeignkeys'] = 'Egiaztatu kanpoko gakoak';
+$string['checkindexes'] = 'Egiaztatu indizeak';
+$string['checkoraclesemantics'] = 'Egiaztatu semantika';
 $string['completelogbelow'] = '(ikusi behean bilaketaren erregistro osoa)';
 $string['confirmcheckbigints'] = 'Funtzionalitate honek <a href="https://tracker.moodle.org/browse/MDL-11038">zenbaki oso ezegokiak izan ditzaketen eremuak</a> bilatuko ditu zure Moodle zerbitzarian, eta sortuko ditu (exekutatu gabe!) zenbaki osoak zure datu-basean modu egokian definituta izateko beharrezkoak diren SQL adierazpenak.
 
@@ -152,12 +152,12 @@ $string['missingindexes'] = 'Falta diren indizeak atzeman dira';
 $string['mustselectonefield'] = 'Eremu bat aukeratu behar duzu horrekin lotutako ekintzak ikusteko!';
 $string['mustselectoneindex'] = 'Indize bat aukeratu behar duzu horrekin lotutako ekintzak ikusteko!';
 $string['mustselectonekey'] = 'Gako bat aukeratu behar duzu horrekin lotutako ekintzak ikusteko!';
+$string['new_table_from_mysql'] = 'Taula berria MySQL-etik';
 $string['newfield'] = 'Eremu berria';
 $string['newindex'] = 'Indize berria';
 $string['newkey'] = 'Gako berria';
 $string['newtable'] = 'Taula berria';
 $string['newtablefrommysql'] = 'Taula berria MySQL-etik';
-$string['new_table_from_mysql'] = 'Taula berria MySQL-etik';
 $string['nofieldsspecified'] = 'Ez da eremurik zehaztu';
 $string['nomasterprimaryuniquefound'] = 'Zure kanpoko gakoak erakusten dituen zutabeak aipatzen den taularen gako nagusian (PRIMARY KEY) edo gako bakar batean (UNIQUE KEY) egon behar dira. Kontuan izan zutabea UNIQUE INDEX batean egotea ez dela nahikoa.';
 $string['nomissingindexesfound'] = 'Ez da antzeman falta den indizerik, zure datu-baseak ez du bestelako ekintzarik behar.';
@@ -167,7 +167,7 @@ $string['noviolatedforeignkeysfound'] = 'Ez da urratutako kanpoko gakorik aurkit
 $string['nowrongdefaultsfound'] = 'Ez da aurkitu sendotasunik gabeko lehenetsitako baliorik, zure datu-baseak ez du bestelako ekintzarik behar.';
 $string['nowrongintsfound'] = 'Ez da zenbaki oso ezegokirik aurkitu, zure datu-baseak ez du bestelako ekintzarik behar.';
 $string['nowrongoraclesemanticsfound'] = 'Ez da BYTE semantika erabiltzen duten Oracle zutaberik aurkitu, zure datu-baseak ez du bestelako ekintzarik behar.';
-$string['numberincorrectdecimals'] = 'Hamartarren kopuru ezegokia zenbakizko eremuan';
+$string['numberincorrectdecimals'] = 'Hamartar-kopuru ezegokia zenbakizko eremuan';
 $string['numberincorrectlength'] = 'Zenbakizko eremuaren luzera ezegokia';
 $string['numberincorrectwholepart'] = 'Zenbakizko eremuaren zenbaki-atal handiegia.';
 $string['pendingchanges'] = 'Oharra: Fitxategi honi aldaketak egin dizkiozu. Edozein unetan gorde daitezke.';
@@ -199,15 +199,15 @@ $string['unknowntable'] = 'Taula ezezagun bat erakusten du';
 $string['unload'] = 'Jaitsi';
 $string['up'] = 'Gora';
 $string['view'] = 'Ikusi';
-$string['viewedited'] = 'Ikusi editatutakoa';
-$string['vieworiginal'] = 'Ikusi jatorrizkoa';
-$string['viewphpcode'] = 'Ikusi PHP kodea';
 $string['view_reserved_words'] = 'Ikusi hitz erreserbatuak';
-$string['viewsqlcode'] = 'Ikusi SQL kodea';
 $string['view_structure_php'] = 'Ikusi PHP egitura';
 $string['view_structure_sql'] = 'Ikusi SQL egitura';
 $string['view_table_php'] = 'Ikusi PHP taula';
 $string['view_table_sql'] = 'Ikusi SQL taula';
+$string['viewedited'] = 'Ikusi editatutakoa';
+$string['vieworiginal'] = 'Ikusi jatorrizkoa';
+$string['viewphpcode'] = 'Ikusi PHP kodea';
+$string['viewsqlcode'] = 'Ikusi SQL kodea';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Urratutako kanpoko gakoak';
 $string['violatedforeignkeysfound'] = 'Urratutako kanpoko gakoak aurkitu dira';
@@ -219,10 +219,10 @@ $string['wronglengthforenum'] = 'Enum eremuaren luzera ez da egokia';
 $string['wrongnumberofreffields'] = 'Zenbaki ezegokia erakutsitako eremuan';
 $string['wrongoraclesemantics'] = 'Oracle-ko BYTE semantika ezegokia aurkitu da';
 $string['wrongreservedwords'] = 'Une honetan erabilitako Hitz Erreserbatuak<br />(kontuan izan taularen izenak ez direla garrantzizkoak $CFG->prefix erabiltzen bada)';
-$string['yesmissingindexesfound'] = '<p>Zure datu-basean hainbat indize falta direla atzeman da. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaz gogokoenean exekutatu behar diren SQL adierazpenak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
+$string['yesmissingindexesfound'] = '<p>Zure datu-basean hainbat indize falta direla atzeman da. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaz gogokoenean exekutatu behar diren SQL komandoak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
 <p>Behin hori egindakoan, funtzio hau berriz ere exekutatzea gomendatzen da indize gehiagorik ez dela falta egiaztatzeko.</p>';
-$string['yeswrongdefaultsfound'] = '<p>Zure datu-basean sendotasunik gabeko lehenetsitako balio batzuk aurkitu dira. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaze gogokoenean exekutatu behar diren SQL adierazpenak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
-<p>Behin hori egindakoan, funtzio hau berriz ere exekutatzea gomendatzen da arazoak sortzen dituen lehenetsitako beste baliorik ez dagoela ziurtatzeko.</p>';
+$string['yeswrongdefaultsfound'] = '<p>Zure datu-basean sendotasunik gabeko berezko balio batzuk aurkitu dira. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaze gogokoenean exekutatu behar diren SQL komandoak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
+<p>Behin hori egindakoan, funtzio hau berriz ere exekutatzea gomendatzen da arazoak sortzen duen berezko beste baliorik ez dagoela ziurtatzeko.</p>';
 $string['yeswrongintsfound'] = '<p>Zure datu-basean hainbat integer oker aurkitu dira. Hemen dituzu horien xehetasunak eta arazoa konpontzeko zure SQL interfaz gogokoenean exekutatu behar diren SQL adierazpenak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>
 <p>Arazoak konpondu ondoren, funtzio hau berriz ere exekutatzea gomendatzen da beste zenbaki okerrik ez dagoela ziurtatzeko.</p>';
 $string['yeswrongoraclesemanticsfound'] = '<p>Zure datu-basean BYTE semantika erabiltzen duten Oracle zutabeak aurkitu dira. Hemen dituzu horien zehaztasunak eta zutabeak eraldatzeko zure SQL interfaz gogokoenean exekutatu behar diren SQL adierazpenak. Gogoratu aurretik zure datuen segurtasun-kopia bat egitea!</p>

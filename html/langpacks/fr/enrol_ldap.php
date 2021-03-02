@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'fr', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -50,7 +50,6 @@ $string['course_fullname_updateonsync'] = 'Mise à jour du nom complet lors de l
 $string['course_fullname_updateonsync_key'] = 'Mise à jour du nom complet';
 $string['course_idnumber'] = 'Champ correspondant avec l\'identificateur unique LDAP. D\'habitude <em>cn</em> ou <em>uid</em>. On recommande de verrouiller cette valeur lors de l\'utilisation de la création automatique de cours.';
 $string['course_idnumber_key'] = 'Identifiant du cours';
-$string['coursenotexistskip'] = 'Le cours « {$a} » n\'existe pas et l\'auto-création des cours est désactivée, ignoré';
 $string['course_search_sub'] = 'Rechercher les affiliations à des groupes dans les sous-contextes';
 $string['course_search_sub_key'] = 'Rechercher dans les sous-contextes';
 $string['course_settings'] = 'Réglages de l\'inscription aux cours';
@@ -62,6 +61,7 @@ $string['course_summary'] = 'Facultatif : champ LDAP d\'où tirer le résumé d
 $string['course_summary_key'] = 'Résumé';
 $string['course_summary_updateonsync'] = 'Mise à jour du résumé lors de la synchronisation';
 $string['course_summary_updateonsync_key'] = 'Mise à jour du résumé';
+$string['coursenotexistskip'] = 'Le cours « {$a} » n\'existe pas et l\'auto-création des cours est désactivée, ignoré';
 $string['courseupdated'] = 'Le cours d\'identifiant « {$a->idnumber} » a été correctement mis à jour.';
 $string['courseupdateskipped'] = 'Le cours d\'identifiant « {$a->idnumber} » ne nécessite pas de mise à jour. Il a été sauté.';
 $string['createcourseextid'] = 'CREATE Utilisateur inscrit dans un cours inexistant « {$a->courseextid} »';
@@ -86,9 +86,9 @@ $string['host_url'] = 'Indiquez l\'hôte LDAP en format URL, par exemple « lda
 $string['host_url_key'] = 'URL du serveur';
 $string['idnumber_attribute'] = 'Si l\'affiliation à un groupe contient des noms distingués, indiquez le même attribut que vous avez utilisé pour la correspondance de l\'« ID Number » de l\'utilisateur dans les réglages d\'authentification LDAP.';
 $string['idnumber_attribute_key'] = 'Attribut « ID Number »';
+$string['ldap:manage'] = 'Gérer les instances d\'inscription LDAP';
 $string['ldap_encoding'] = 'Indiquez l\'encodage utilisé par le serveur LDAP. Il s\'agit le plus probablement de utf-8. MS Active Directory utilise l\'encodage par défaut de la plateforme, comme cp1252, cp1250, etc.';
 $string['ldap_encoding_key'] = 'Encodage LDAP';
-$string['ldap:manage'] = 'Gérer les instances d\'inscription LDAP';
 $string['memberattribute'] = 'Attribut appartenance LDAP';
 $string['memberattribute_isdn'] = 'Si l\'affiliation à un groupe contient des noms distingués, vous devez les spécifier ici. Dans ce cas, vous devez également configurer les réglages restants de cette section.';
 $string['memberattribute_isdn_key'] = 'L\'attribut « membre » utilise dn';

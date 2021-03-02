@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'page', language 'fr', version '3.8'.
  *
- * @package   page
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     page
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,13 +33,13 @@ $string['displayoptions'] = 'Options d\'affichage disponibles';
 $string['displayselect'] = 'Affichage';
 $string['displayselectexplain'] = 'Sélectionner le type d\'affichage.';
 $string['indicator:cognitivedepth'] = 'Page : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Page.';
 $string['indicator:cognitivedepthdef'] = 'Page : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « Page » (niveaux : pas de vue, vue).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Page.';
 $string['indicator:socialbreadth'] = 'Page : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Page.';
 $string['indicator:socialbreadthdef'] = 'Page : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « Page » (niveaux : pas de participation, participant seul).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Page.';
 $string['legacyfiles'] = 'Migration d\'un ancien fichier de cours';
 $string['legacyfilesactive'] = 'Actif';
 $string['legacyfilesdone'] = 'Terminé';
@@ -56,8 +56,8 @@ Une page peut être utilisée pour :
 * intégrer plusieurs vidéos ou sons avec des textes explicatifs';
 $string['modulenameplural'] = 'Pages';
 $string['optionsheader'] = 'Afficher les options';
-$string['page:addinstance'] = 'Ajouter une ressource page';
 $string['page-mod-page-x'] = 'Toute page de module';
+$string['page:addinstance'] = 'Ajouter une ressource page';
 $string['page:view'] = 'Voir le contenu des pages';
 $string['pluginadministration'] = 'Administration page';
 $string['pluginname'] = 'Page';

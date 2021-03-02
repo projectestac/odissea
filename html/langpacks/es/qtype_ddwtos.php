@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddwtos', language 'es', version '3.8'.
  *
- * @package   qtype_ddwtos
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddwtos
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,5 +32,7 @@ $string['correctansweris'] = 'La respuesta correcta es: {$a}';
 $string['infinite'] = 'Ilimitado';
 $string['pleaseputananswerineachbox'] = 'Por favor, ponga una respuesta en cada caja.';
 $string['pluginname'] = 'Arrastrar y soltar sobre texto';
+$string['pluginname_help'] = 'Escriba alguna pregunta del tipo "The [[1]] jumped over the [[2]]", luego las posibles palabras en los espacios 1 y 2.';
 $string['pluginnameadding'] = 'Añadiendo arrastrar y soltar sobre texto';
 $string['pluginnameediting'] = 'Editando arrastrar y soltar sobre texto';
+$string['pluginnamesummary'] = 'Las palabras que faltan en un texto se rellenan usando arrastrar y soltar.';

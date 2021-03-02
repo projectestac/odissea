@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'fr', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,7 +42,7 @@ $string['check_defaultuserrole_details'] = '<p>Tous les utilisateurs connectés 
 $string['check_defaultuserrole_error'] = 'Rôle par défaut des utilisateurs « {$a} » incorrectement défini !';
 $string['check_defaultuserrole_name'] = 'Rôle par défaut des utilisateurs';
 $string['check_defaultuserrole_notset'] = 'Le rôle par défaut n\'est pas défini.';
-$string['check_defaultuserrole_ok'] = 'Définition correcte du rôle par défaut des utilisateurs.';
+$string['check_defaultuserrole_ok'] = 'Définition adéquate du rôle par défaut des utilisateurs.';
 $string['check_displayerrors_details'] = '<p>L\'activation du réglage PHP <code>display_errors</code> n\'est pas recommandée sur les sites en production, car les messages d\'erreur peuvent révéler des informations sensibles au sujet de votre serveur.</p>';
 $string['check_displayerrors_error'] = 'Le réglage PHP permettant l\'affichage des erreurs est activé. Il est recommandé de le désactiver.';
 $string['check_displayerrors_name'] = 'Affichage des erreurs PHP';
@@ -60,7 +60,7 @@ $string['check_frontpagerole_details'] = '<p>Le rôle par défaut de la page d\'
 $string['check_frontpagerole_error'] = 'Rôle de la page d\'accueil « {$a} » incorrectement défini !';
 $string['check_frontpagerole_name'] = 'Rôle de la page d\'accueil';
 $string['check_frontpagerole_notset'] = 'Le rôle de la page d\'accueil n\'est pas défini.';
-$string['check_frontpagerole_ok'] = 'Définition correcte du rôle de la page d\'accueil';
+$string['check_frontpagerole_ok'] = 'Définition adéquate du rôle de la page d\'accueil';
 $string['check_guestrole_details'] = '<p>Un rôle de visiteur anonyme est utilisé pour l\'accès temporaire aux cours pour les utilisateurs anonymes. Veuillez vous assurer qu\'aucune capacité comportant des risques n\'est autorisée pour ce rôle.</p><p>Le seul type de rôle historique supporté pour un tel rôle est le rôle <em>Visiteur anonyme</em>.</p>';
 $string['check_guestrole_error'] = 'Rôle de visiteur anonyme « {$a} » incorrectement défini !';
 $string['check_guestrole_name'] = 'Rôle de visiteur anonyme';
@@ -95,17 +95,17 @@ $string['check_riskadmin_name'] = 'Administrateurs';
 $string['check_riskadmin_ok'] = '{$a} administrateur(s) Moodle trouvé(s).';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">Vérification de l\'attribution du rôle de {$a->fullname} ({$a->email})</a>';
 $string['check_riskadmin_warning'] = '{$a->admincount} administrateurs et {$a->unsupcount} attributions du rôle d\'administrateur trouvés.';
-$string['check_riskbackup_detailsok'] = 'Aucun rôle ne permet explicitement la sauvegarde des données des utilisateurs. Toutefois, les administrateurs ayant la capacité « doanything » peuvent malgré tout le faire.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Ces dérogations permettent d\'inclure les données des utilisateurs dans les sauvegardes. Veuillez vous assurer que cette permission est nécessaire.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Les rôles ci-dessous permettent d\'inclure les données des utilisateurs dans les sauvegardes. Veuillez vous assurer que cette permission est nécessaire.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>À cause des rôles ou des dérogations locales ci-dessus, les utilisateurs ci-dessous ont les permissions requises pour inclure dans les sauvegardes les données privées de n\'importe quel utilisateur inscrit dans leur cours. Veuillez vous assurer que ces utilisateurs sont fiables et que le compte est protégé par un mot de passe fort.</p> {$a}';
+$string['check_riskbackup_detailsok'] = 'Aucun rôle ne permet explicitement la sauvegarde des données des utilisateurs. Toutefois, les administrateurs ayant la capacité « doanything » peuvent malgré tout le faire.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} dans {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Sauvegarde des données des utilisateurs.';
 $string['check_riskbackup_ok'] = 'Aucun rôle ne permet explicitement la sauvegarde des données des utilisateurs.';
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) dans {$a->contextname}</a>';
 $string['check_riskbackup_warning'] = '{$a->rolecount} rôles, {$a->overridecount} dérogations et {$a->usercount} utilisateurs ont la capacité de sauvegarder les données des utilisateurs.';
-$string['check_riskxss_details'] = '<p>Le terme RISK_XSS assortit toutes les capacités dangereuses qui ne devraient être autorisées que par des utilisateurs fiables.</p><p>Veuillez vérifier la liste d\'utilisateurs ci-dessous et vous assurer que vous leur faites totalement confiance sur ce site :</p><p>{$a}</p>';
+$string['check_riskxss_details'] = '<p>Le terme RISK_XSS assortit toutes les capacités dangereuses qui ne doivent être autorisées que par des utilisateurs fiables.</p><p>Veuillez vérifier la liste d\'utilisateurs ci-dessous et vous assurer que vous leur faites totalement confiance sur ce site :</p><p>{$a}</p>';
 $string['check_riskxss_name'] = 'Utilisateurs XSS fiables';
 $string['check_riskxss_warning'] = 'RISK_XSS, {$a} utilisateurs dont vous devez être sûr.';
 $string['check_unsecuredataroot_details'] = '<p>Le dossier de données ne doit pas être accessible via le web. La meilleure façon de s\'assurer que ce dossier n\'est pas accessible est de le placer en dehors du dossier web public.</p><p>Si vous déplacez ce dossier, vous devrez modifier en conséquence la variable <code>$CFG->dataroot</code> dans votre fichier <code>config.php</code>.</p>';

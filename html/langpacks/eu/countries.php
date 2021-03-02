@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'countries', language 'eu', version '3.8'.
  *
- * @package   countries
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     countries
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -80,7 +80,7 @@ $string['CV'] = 'Cabo Verde';
 $string['CW'] = 'Curaçao';
 $string['CX'] = 'Christmas Uharteak';
 $string['CY'] = 'Zipre';
-$string['CZ'] = 'Txekia';
+$string['CZ'] = 'Txekiar Errepublika';
 $string['DE'] = 'Alemania';
 $string['DJ'] = 'Djibouti';
 $string['DK'] = 'Danimarka';
@@ -204,7 +204,7 @@ $string['PG'] = 'Papua Ginea Berria';
 $string['PH'] = 'Filipinak';
 $string['PK'] = 'Pakistan';
 $string['PL'] = 'Polonia';
-$string['PM'] = 'St. Pierre eta Miquelon';
+$string['PM'] = 'Saint-Pierre eta Mikelune';
 $string['PN'] = 'Pitcairn';
 $string['PR'] = 'Puerto Rico';
 $string['PS'] = 'Palestinako estatua';
@@ -212,7 +212,7 @@ $string['PT'] = 'Portugal';
 $string['PW'] = 'Palau';
 $string['PY'] = 'Paraguai';
 $string['QA'] = 'Qatar';
-$string['RE'] = 'Reunion';
+$string['RE'] = 'Réunion';
 $string['RO'] = 'Errumania';
 $string['RS'] = 'Serbia';
 $string['RU'] = 'Errusia';
@@ -238,7 +238,7 @@ $string['SV'] = 'El Salvador';
 $string['SX'] = 'Sint Maarten (Herbeheretako zatia)';
 $string['SY'] = 'Siria';
 $string['SZ'] = 'Eswatini';
-$string['TC'] = 'Turks eta Caicos Uharteak';
+$string['TC'] = 'Turk eta Caico uharteak';
 $string['TD'] = 'Txad';
 $string['TF'] = 'Frantziako Hego Lurraldeak';
 $string['TG'] = 'Togo';
@@ -261,10 +261,10 @@ $string['US'] = 'Ameriketako Estatu Batuak';
 $string['UY'] = 'Uruguai';
 $string['UZ'] = 'Uzbekistan';
 $string['VA'] = 'Vatikano Hiria';
-$string['VC'] = 'Saint Vicent eta Grenadinak';
+$string['VC'] = 'Saint Vincent eta Grenadinak';
 $string['VE'] = 'Venezuelako Bolibartar Errepublika';
-$string['VG'] = 'Virgin Uharteak (Britaniarrak)';
-$string['VI'] = 'Virgin Uharteak (AEB)';
+$string['VG'] = 'Birjina britainiar uharteak';
+$string['VI'] = 'Birjina Uharte Estatubatuarrak';
 $string['VN'] = 'Vietnam';
 $string['VU'] = 'Vanuatu';
 $string['WF'] = 'Wallis eta Futuna';

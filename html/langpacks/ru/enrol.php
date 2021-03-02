@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol', language 'ru', version '3.8'.
  *
- * @package   enrol
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,6 +30,7 @@ $string['addinstance'] = 'Добавить способ';
 $string['addinstanceanother'] = 'Добавить метод и создать новый';
 $string['ajaxnext25'] = 'Следующие 25 ...';
 $string['ajaxoneuserfound'] = 'Найден 1 пользователь';
+$string['ajaxxmoreusersfound'] = 'Найдено пользователей: более {$a}';
 $string['ajaxxusersfound'] = 'Найдено пользователей: {$a}';
 $string['assignnotpermitted'] = 'Вы не можете назначать роли в этом курсе.';
 $string['bulkuseroperation'] = 'Действия над несколькими пользователями';
@@ -86,9 +87,9 @@ $string['eventuserenrolmentcreated'] = 'Пользователь зачисле�
 $string['eventuserenrolmentdeleted'] = 'Пользователь отчислен из курса';
 $string['eventuserenrolmentupdated'] = 'Зачисление пользователя на курс обновлена';
 $string['expirynotify'] = 'Уведомлять об истечении срока обучения';
+$string['expirynotify_help'] = 'Этот параметр определяет, будет ли посылаться уведомление об истечении срока обучения.';
 $string['expirynotifyall'] = 'Преподавателя и учащегося';
 $string['expirynotifyenroller'] = 'Только преподавателя';
-$string['expirynotify_help'] = 'Этот параметр определяет, будет ли посылаться уведомление об истечении срока обучения.';
 $string['expirynotifyhour'] = 'Время отправки уведомления об истечении срока обучения';
 $string['expirythreshold'] = 'Порог уведомления';
 $string['expirythreshold_help'] = 'За сколько уведомлять пользователей об истечении срока их обучения?';
@@ -103,6 +104,7 @@ $string['foundxcohorts'] = 'Найдено глобальных групп: {$a}
 $string['instanceadded'] = 'Метод добавлен';
 $string['instanceeditselfwarning'] = 'Предупреждение:';
 $string['instanceeditselfwarningtext'] = 'Вы зачислены в курс при помощи этого способа записи, изменения могут повлиять на Ваш доступ к этому курсу.';
+$string['invalidenrolduration'] = 'Неверная продолжительность обучения';
 $string['invalidenrolinstance'] = 'Неправильный способ записи';
 $string['invalidrequest'] = 'Неверный запрос';
 $string['invalidrole'] = 'Неправильная роль';
@@ -150,6 +152,7 @@ $string['testsettings'] = 'Проверка настроек';
 $string['testsettingsheading'] = 'Тест настроек зачисления - {$a}';
 $string['totalenrolledusers'] = 'На курс записано пользователей: {$a}';
 $string['totalotherusers'] = 'Других пользователей: {$a}';
+$string['totalunenrolledusers'] = 'Отчислено пользователей: {$a}';
 $string['unassignnotpermitted'] = 'Вы не можете отменить назначение ролей в этом курсе';
 $string['unenrol'] = 'Исключить';
 $string['unenrolconfirm'] = 'Вы действительно хотите исключить пользователя «{$a->user}» (ранее зачисленного посредством «{$a->enrolinstancename}») из курса «{$a->course}»?';
@@ -163,3 +166,4 @@ $string['userremovedfromselectiona'] = 'Пользователь «{$a}» уда
 $string['usersearch'] = 'Поиск';
 $string['withselectedusers'] = 'С выбранными пользователями';
 $string['youenrolledincourse'] = 'Вы записаны на курс.';
+$string['youunenrolledfromcourse'] = 'Вы отчислены из курса «{$a}».';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'zh_cn', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,15 +70,15 @@ $string['evaluate'] = '评估';
 $string['evaluatemodel'] = '评估模型';
 $string['evaluationinbatches'] = '计算网站内容并分批存储。评估过程可以随时停止。下次运行时，它将从停止点开始继续运行。';
 $string['evaluationmode'] = '评估模型';
-$string['evaluationmodecolconfiguration'] = '配置';
-$string['evaluationmodecoltrainedmodel'] = '已训练的模型';
-$string['evaluationmodeconfiguration'] = '评估模型配置';
 $string['evaluationmode_help'] = '"有两组评估模型：
 
 * 训练后的模型 - 网站数据用作测试数据，以评估训练后模型的准确性。
 * 组态 - 为了训练和测试模型配置的准确性，网站数据分为训练和测试资料。
 
 当已将训练模型汇入到网站点中并且尚未使用网站数据对其进行训练时，训练模型才可使用。';
+$string['evaluationmodecolconfiguration'] = '配置';
+$string['evaluationmodecoltrainedmodel'] = '已训练的模型';
+$string['evaluationmodeconfiguration'] = '评估模型配置';
 $string['evaluationmodeinfo'] = '该模型已导入网站。您可以评估模型的效能，也可以使用网站数据评估模型配置的效能。';
 $string['evaluationmodetrainedmodel'] = '评估已训练的模型';
 $string['executescheduledanalysis'] = '执行计划的分析';

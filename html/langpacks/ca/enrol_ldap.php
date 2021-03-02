@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'ca', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -51,7 +51,6 @@ $string['course_fullname_updateonsync'] = 'Actualitza el nom complet durant l\'e
 $string['course_fullname_updateonsync_key'] = 'Actualitza el nom complet';
 $string['course_idnumber'] = 'Identificador únic en el LDAP, generalment <em>cn</em> o <em>uid</em>. Es recomana blocar aquest valor si utilitzeu la creació automàtica de cursos.';
 $string['course_idnumber_key'] = 'Nombre d\'identificació';
-$string['coursenotexistskip'] = 'El curs «{$a}» no existeix, i la creació automàtica està inhabilitada. S\'ha omès.';
 $string['course_search_sub'] = 'Cerca membres del grup al subcontext';
 $string['course_search_sub_key'] = 'Cerca subcontexts';
 $string['course_settings'] = 'Paràmetres d\'inscripció de cursos';
@@ -63,6 +62,7 @@ $string['course_summary'] = 'Opcional: camp del LDAP d\'on es pot treure el resu
 $string['course_summary_key'] = 'Resum';
 $string['course_summary_updateonsync'] = 'Actualitza el resum durant l\'execució de l\'script de sincronització';
 $string['course_summary_updateonsync_key'] = 'Actualitza el resum';
+$string['coursenotexistskip'] = 'El curs «{$a}» no existeix, i la creació automàtica està inhabilitada. S\'ha omès.';
 $string['courseupdated'] = 'S\'ha actualitzat amb èxit el curs amb número ID \'{$a->idnumber}\'';
 $string['courseupdateskipped'] = 'No cal actualitzar el curs amb número ID \'{$a->idnumber}\'. S\'ha omès.';
 $string['createcourseextid'] = 'CREA l\'usuari inscrit en un curs que no existeix «{$a->courseextid}»';
@@ -87,9 +87,9 @@ $string['host_url'] = 'Especifiqueu el servidor LDAP en forma d\'URL, p. ex. \'l
 $string['host_url_key'] = 'URL del servidor';
 $string['idnumber_attribute'] = 'Si els membres del grup contenen noms distingits , especifiqueu el mateix atribut que heu utilitzat per al mapat  de l\'usuari «Nombre d\'identificació » als paràmetres d\'autenticació LDAP.';
 $string['idnumber_attribute_key'] = 'Atribut amb nombre ID';
+$string['ldap:manage'] = 'Gestiona les instàncies d\'inscripció LDAP';
 $string['ldap_encoding'] = 'Especifica la codificació utilitzada pel servidor LDAP. Molt probablement sigui utf-8, MS AD v2 utilitza la codificació per defecte de la plataforma, això és, cp1252, cp1250, etc.';
 $string['ldap_encoding_key'] = 'Codificació LDAP';
-$string['ldap:manage'] = 'Gestiona les instàncies d\'inscripció LDAP';
 $string['memberattribute'] = 'Atribut de membre LDAP';
 $string['memberattribute_isdn'] = 'Si el membre del grup conté noms distingits cal que ho especifiqueu aquí. Si això és així, us caldrà configurar els paràmetres que quedin en aquesta secció.';
 $string['memberattribute_isdn_key'] = 'L\'atribut del membre utilitza nom distingit';
@@ -126,7 +126,7 @@ $string['unassignroleid'] = 'S\'està suprimint l\'assignació del rol id \'{$a-
 $string['updatelocal'] = 'Actualitza dades locals';
 $string['user_attribute'] = 'Si el membre del grup conté noms distingits, especifiqueu l\'atribut utilitzat en nom/cerca d\'usuaris. Si esteu utilitzant autenticació LDAP, aquest valor sol trobar l\'atribut especificat al mapatge \'Nombre ID\' al connector d\'autenticació de LDAP.';
 $string['user_attribute_key'] = 'Atribut del número ID';
-$string['user_contexts'] = 'Si el membre del grup conté noms distingits , especifiqueu la llista de contexts on els usuaris seran situats. Separeu els diferents contexts amb \';\'. Per exemple: \'ou=usuaris,o=org; ou=altres,o=org\'';
+$string['user_contexts'] = 'Si el membre del grup conté noms distingits, especifiqueu la llista de contexts on els usuaris seran situats. Separeu els diferents contexts amb \';\'. Per exemple: \'ou=usuaris,o=org; ou=altres,o=org\'';
 $string['user_contexts_key'] = 'Contexts';
 $string['user_search_sub'] = 'Si el membre del grup conté noms distingits, especifiqueu si la cerca dels usuaris també es fa en subcontexts';
 $string['user_search_sub_key'] = 'Subcontexts de cerca';

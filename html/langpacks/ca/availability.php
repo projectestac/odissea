@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability', language 'ca', version '3.8'.
  *
- * @package   availability
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,12 +38,18 @@ $string['hidden_individual'] = 'Completament ocult si l\'usuari no compleix aque
 $string['hidden_marker'] = '(altrament queda ocult)';
 $string['hide_verb'] = 'Clica per a ocultar';
 $string['invalid'] = 'Definiu';
-$string['itemheading'] = 'Restricció {$a->number} {$a->type}';
 $string['item_unknowntype'] = 'Aquestes restriccions utilitzen un complement que ja no està disponible (si es pot eliminar aquesta restricció, esborreu-la al dessota)';
+$string['itemheading'] = 'Restricció {$a->number} {$a->type}';
 $string['label_multi'] = 'Restriccions necessàries';
 $string['label_sign'] = 'Tipus de restricció';
 $string['list_and'] = 'Totes:';
 $string['list_and_hidden'] = 'Totes (altrament queda ocult):';
+$string['list_or'] = 'Qualsevol:';
+$string['list_or_hidden'] = 'Qualsevol (altrament queda ocult):';
+$string['list_root_and'] = 'No disponible llevat que:';
+$string['list_root_and_hidden'] = 'No disponible (ocult) llevat que:';
+$string['list_root_or'] = 'No disponible llevat que qualsevol de:';
+$string['list_root_or_hidden'] = 'No disponible (ocult) llevat que qualsevol de:';
 $string['listheader_multi_after'] = 'les següents';
 $string['listheader_multi_and'] = 'totes';
 $string['listheader_multi_before'] = 'concordi amb';
@@ -52,19 +58,13 @@ $string['listheader_sign_before'] = 'Estudiant';
 $string['listheader_sign_neg'] = 'cal que no';
 $string['listheader_sign_pos'] = 'cal que';
 $string['listheader_single'] = 'concordi amb el/la següent';
-$string['list_or'] = 'Qualsevol:';
-$string['list_or_hidden'] = 'Qualsevol (altrament queda ocult):';
-$string['list_root_and'] = 'No disponible llevat que:';
-$string['list_root_and_hidden'] = 'No disponible (ocult) llevat que:';
-$string['list_root_or'] = 'No disponible llevat que qualsevol de:';
-$string['list_root_or_hidden'] = 'No disponible (ocult) llevat que qualsevol de:';
 $string['manageplugins'] = 'Gestiona les restriccions';
 $string['missingplugin'] = 'No es troba el connector de restriccions';
 $string['or'] = 'o';
 $string['restrictaccess'] = 'Restriccions d\'accés';
 $string['restrictbygroup'] = 'Afegeix una restricció d\'accés al grup / a l\'agrupament';
 $string['setheading'] = '{$a->number} conjunt de {$a->count} restriccions';
+$string['show_verb'] = 'Clica per mostrar';
 $string['shown_all'] = 'Es mostra en gris si l\'usuari no compleix les condicions';
 $string['shown_individual'] = 'Es mostra en gris si l\'usuari no compleix la condició';
-$string['show_verb'] = 'Clica per mostrar';
 $string['unknowncondition'] = 'Condició desconeguda (el connector de condició s\'ha suprimit)';

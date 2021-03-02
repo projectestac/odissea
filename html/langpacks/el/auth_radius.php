@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,30 +12,31 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_radius', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_radius', language 'el', version '3.8'.
  *
- * @package   auth_radius
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_radius
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_radiuschangepasswordurl_key'] = 'Password-change URL';
-$string['auth_radiusdescription'] = 'Αυτή η μέθοδος χρησιμοποιεί <a href="http://en.wikipedia.org/wiki/RADIUS" target="_blank">RADIUS</a> server για να ελέγξει εάν το όνομα χρήστη και ο κωδικός που δίνονται είναι έγκυρα.';
-$string['auth_radiushost'] = 'Διεύθυνση του RADIUS server';
-$string['auth_radiushost_key'] = 'Host';
+$string['auth_radiuschangepasswordurl_key'] = 'Διεύθυνση URL αλλαγής κωδικού πρόσβασης';
+$string['auth_radiusdescription'] = 'Αυτή η μέθοδος χρησιμοποιεί έναν εξυπηρετητή <a href="http://en.wikipedia.org/wiki/RADIUS" target="_blank">RADIUS</a> για να ελέγχει εάν το όνομα χρήστη και ο κωδικός πρόσβασης που δίνονται είναι έγκυρα.';
+$string['auth_radiushost'] = 'Διεύθυνση του εξυπηρετητή RADIUS';
+$string['auth_radiushost_key'] = 'Διεύθυνση ιστού του Η/Υ (host)';
 $string['auth_radiusnasport'] = 'Θύρα στην οποία να συνδεθεί';
-$string['auth_radiusnasport_key'] = 'Port';
-$string['auth_radiussecret'] = 'Διαμοιραζόμενο μυστικό';
-$string['auth_radiussecret_key'] = 'Secret';
-$string['auth_radiustype'] = 'Choose an authentication scheme to use with the RADIUS server.';
+$string['auth_radiusnasport_key'] = 'Θύρα';
+$string['auth_radiussecret'] = 'Κοινόχρηστο μυστικό';
+$string['auth_radiussecret_key'] = 'Μυστικό';
+$string['auth_radiustype'] = 'Επιλογή ενός σχήματος αυθεντικοποίησης προς χρήση με τον εξυπηρετητή RADIUS.';
+$string['auth_radiustype_key'] = 'Αυθεντικοποίηση';
 $string['auth_radiustypechapmd5'] = 'CHAP MD5';
-$string['auth_radiustype_key'] = 'Authentication';
-$string['auth_radiustypemschapv1'] = 'Microsoft CHAP version 1';
-$string['auth_radiustypemschapv2'] = 'Microsoft CHAP version 2';
+$string['auth_radiustypemschapv1'] = 'Microsoft CHAP έκδοση 1';
+$string['auth_radiustypemschapv2'] = 'Microsoft CHAP έκδοση 2';
 $string['auth_radiustypepap'] = 'PAP';
-$string['pluginname'] = 'Χρήση ενός RADIUS server';
+$string['pluginname'] = 'Εξυπηρετητής RADIUS';

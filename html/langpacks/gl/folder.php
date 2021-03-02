@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'folder', language 'gl', version '3.8'.
  *
- * @package   folder
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     folder
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,19 +38,19 @@ $string['downloadfolder'] = 'Descargar cartafol';
 $string['eventallfilesdownloaded'] = 'Descargado o arquivo ZIP do cartafol';
 $string['eventfolderupdated'] = 'Cartafol actualizado';
 $string['folder:addinstance'] = 'Engadir un novo cartafol';
-$string['foldercontent'] = 'Ficheiros e subcartafoles';
 $string['folder:managefiles'] = 'Xestionar ficheiros no módulo de cartafol';
 $string['folder:view'] = 'Ver o contido do cartafol';
+$string['foldercontent'] = 'Ficheiros e subcartafoles';
 $string['indicator:cognitivedepth'] = 'Cartafol cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso cartafol.';
 $string['indicator:cognitivedepthdef'] = 'Cartafol cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo que ofrecen os recursos de Cartafol durante este intervalo de análise (Niveis = Sen vista, Ver)';
 $string['indicator:cognitivedepthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Profundidade_cognitiva';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso cartafol.';
 $string['indicator:socialbreadth'] = 'Cartafol social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso cartafol.';
 $string['indicator:socialbreadthdef'] = 'Cartafol social';
 $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen os recursos de Cartafol durante este intervalo de análise (Niveis = Sen participación, Participante en solitario)';
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
-$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso cartafol.';
 $string['maxsizetodownload'] = 'Tamaño máximo (MB) do cartafol a descargar';
 $string['maxsizetodownload_help'] = 'O tamaño máximo do cartafol que é posíbel descargar como un arquivo ZIP. Se o estabelece a cero o tamaño do cartafol é ilimitado.';
 $string['modulename'] = 'Cartafol';

@@ -1,18 +1,20 @@
 <?php
 
+// Course quotas
 $string['pluginname'] = 'Disk usage';
 $string['coursequotas'] = 'Disk usage';
 $string['total_noquota_description'] = 'Disk usage';
 $string['coursequotas:view'] = 'View disk usage quotas';
 $string['total_data'] = 'Total';
-$string['disk_used'] = 'Busy disk';
-$string['disk_used_other'] = 'Busy disk (misc)';
-$string['disk_used_course'] = 'Busy disk (course)';
-$string['disk_used_backup'] = 'Busy disk (backup)';
-$string['disk_used_temp'] = 'Busy disk (temp)';
-$string['disk_used_trash'] = 'Busy disk (trash)';
-$string['disk_used_repository'] = 'Busy disk (repository)';
-$string['disk_used_user'] = 'Busy disk (user)';
+$string['disk_used'] = 'Used disk';
+$string['disk_used_other'] = 'Other';
+$string['disk_used_course'] = 'Course';
+$string['disk_used_backup'] = 'Backups';
+$string['disk_used_temp'] = 'Temporary files';
+$string['disk_used_trash'] = 'Trash';
+$string['disk_used_repository'] = 'Repository';
+$string['disk_used_user'] = 'User files';
+$string['disk_used_h5plib'] = 'H5P libraries';
 $string['disk_free'] = 'Free disk';
 $string['category_data'] = 'Categories';
 $string['larger_courses'] = 'Courses';
@@ -31,7 +33,14 @@ $string['disk_consume_trash'] = '<strong>{$a->number} {$a->unit}</strong> used i
 $string['total_description'] = 'Percentage of used disk versus the total disk space';
 $string['category_description'] = 'Courses of each category with the total size of its files';
 $string['courses_description'] = 'All courses with its category and the size of its files ordered decreasing';
+$string['manage_backup_files'] = 'If you want to make free space, backups can be deleted from <a href="{$a}">this page</a>';
+$string['quotas_updated'] = 'Usage information has been successfully updated';
+$string['lastest_update'] = 'Lastest update';
+$string['update_long_time'] = 'Shown data might be outdated. Click the following button to update it now, but keep in mind that it could take a long time:';
+$string['update_now'] = 'Update now';
+$string['disk_quota_missing'] = 'The are {$a} MB not located';
 
+// File manager
 $string['filemanager'] = 'File manager';
 $string['manage'] = 'Manage files';
 $string['filearea'] = 'File Area';
@@ -49,9 +58,6 @@ $string['allcomponents'] = 'All components';
 $string['more_than'] = 'More than';
 $string['less_than'] = 'Less than';
 $string['showonlybackups'] = 'Show only backup files';
-$string['hidesamehash'] = 'Hide files with the same <i>contenthash</i> (Expert mode)';
+$string['hidesamehash'] = 'Hide files with the same <em>contenthash</em> (Expert mode)';
 $string['viewsimilarfiles'] = 'View similar files';
-$string['manage_backup_files'] = 'If you want to make free space, backups can be deleted from <a href="{$a}">this page</a>';
 $string['coursequotas:manage'] = 'Manage quota';
-
-

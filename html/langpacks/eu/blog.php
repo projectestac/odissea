@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'eu', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['addnewentry'] = 'Gehitu sarrera berria';
 $string['addnewexternalblog'] = 'Erregistratu kanpoko blog bat';
 $string['assocdescription'] = 'Ikastaro edota jarduera-modulu bati buruz idazten ari bazara, aukera ezazu hemen.';
-$string['associated'] = '{$a}-ri lotua';
+$string['associated'] = '{$a}(r)i lotua';
 $string['associatewithcourse'] = '{$a->coursename} ikastaroari buruzko blog-a.';
 $string['associatewithmodule'] = '{$a->modtype}: {$a->modname} -ri buruzko bloga';
 $string['association'] = 'Lotura';
 $string['associations'] = 'Loturak';
-$string['associationunviewable'] = 'Sarrera hau ezin dute besteek ikusi ikastaro batekin lotu arte edo "Norentzat argitaratu" eramua aldatu arte';
+$string['associationunviewable'] = 'Besteek ezin dute sarrera hau ikusi ikastaro batekin lotu arte edo "Norentzat argitaratu" eremua aldatu arte.';
 $string['autotags'] = 'Gehitu etiketa hauek';
 $string['autotags_help'] = 'Idatzi etiketa lokal bat edo gehiago (komaz banatuta) kanpoko blogetik zure blog lokalera kopiatutako blog-sarrera bakoitzari automatikoki gehitzea nahi baduzu.';
 $string['backupblogshelp'] = 'Gaituz gero, blogak ere GUNEAren segurtasun-kopia automatizatuetan sartuko dira';
@@ -146,11 +146,11 @@ $string['privacy:metadata:external:timemodified'] = 'Lotura azkenengoz aldatu ze
 $string['privacy:metadata:external:url'] = 'Jarioaren URLa';
 $string['privacy:metadata:external:userid'] = 'Kanpoko blog-sarrera gehitu zuen erabiltzailearen IDa';
 $string['privacy:metadata:post'] = 'Blog-sarrerekin lotutako informazioa';
-$string['privacy:metadata:post:content'] = 'Kanpoko blog-sarreraren edukia';
+$string['privacy:metadata:post:content'] = 'Kanpoko blog-sarrera baten edukia';
 $string['privacy:metadata:post:created'] = 'Blog-sarrera sortu zeneko data';
 $string['privacy:metadata:post:lastmodified'] = 'Blog-sarrera azkenengoz aldatu zeneko data';
 $string['privacy:metadata:post:publishstate'] = 'Sarrera besteentzat ikusgai dagoen edo ez';
-$string['privacy:metadata:post:subject'] = 'Blog-sarreraren izenburua.';
+$string['privacy:metadata:post:subject'] = 'Blog-sarreraren izenburua';
 $string['privacy:metadata:post:summary'] = 'Blog-sarreraren testua';
 $string['privacy:metadata:post:uniquehash'] = 'Kanpoko-sarrera bateko identifikatzaile-bakarra, normalean URL bat';
 $string['privacy:metadata:post:userid'] = 'Blog-sarrera gehitu zuen erabiltzailearen IDa';
@@ -158,17 +158,17 @@ $string['privacy:metadata:post:usermodified'] = 'Sarrera azkenengoz aldatu zuen 
 $string['privacy:path:blogassociations'] = 'Lotutako blog-sarrerak';
 $string['privacy:unknown'] = 'Ezezaguna';
 $string['publishto'] = 'Norentzat argitaratu';
+$string['publishto_help'] = 'Hiru aukera posible ditugu:
+
+* Zuretzat soilik (zirriborroa) - Kudeatzaileak baino ezin ditu zure mezuak irakurri.
+* Gune honetako guztientzat - Gunean alta emanda dauden erabiltzaileek baino ezin dituzte irakurri mezuak.
+* Guztientzat - Mundu guztiak irakur ditzake, baita bisitariek ere.';
 $string['publishtocourse'] = 'Zurekin ikastaroa konpartitzen duten erabiltzaileak';
 $string['publishtocourseassoc'] = 'Lotutako ikastaroko kideak';
 $string['publishtocourseassocparam'] = '{$a}-ko kideak';
 $string['publishtogroup'] = 'Zurekin taldea konpartitzen duten erabiltzaileak';
 $string['publishtogroupassoc'] = 'Zure taldekideak lotutako ikastaroan';
 $string['publishtogroupassocparam'] = 'Zure taldekiak {$a}-n';
-$string['publishto_help'] = 'Hiru aukera posible ditugu:
-
-* Zuretzat soilik (zirriborroa) - Kudeatzaileak baino ezin ditu zure mezuak irakurri.
-* Gune honetako guztientzat - Gunean alta emanda dauden erabiltzaileek baino ezin dituzte irakurri mezuak.
-* Guztientzat - Mundu guztiak irakur ditzake, baita bisitariek ere.';
 $string['publishtonoone'] = 'Zuretzat soilik (zirriborroa)';
 $string['publishtosite'] = 'Gune honetako guztientzat';
 $string['publishtoworld'] = 'Mundu osoarentzat';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_equation', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_equation', language 'ar', version '3.8'.
  *
- * @package   atto_equation
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_equation
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,7 +37,7 @@ $string['librarygroup4'] = 'متقدم';
 $string['librarygroup4_desc'] = 'أوامر TeX المدرجة في علامة التبويب المتقدمة.';
 $string['pluginname'] = 'محرر المعادلات الرياضية';
 $string['preview'] = 'عرض المعادلة';
-$string['privacy:metadata'] = 'إن ملحق atto_equation لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'هذه الاضافة لا تخزن أي بيانات شخصية.';
 $string['saveequation'] = 'حفظ المعادلة';
 $string['settings'] = 'إعدادات محرر المعادلات';
 $string['update'] = 'تحديث';

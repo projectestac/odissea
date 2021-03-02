@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol', language 'eu', version '3.8'.
  *
- * @package   enrol
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -77,7 +77,7 @@ $string['errajaxsearch'] = 'Errorea erabiltzaileak bilatzean';
 $string['erroreditenrolment'] = 'Errorea gertatu da erabiltzaile-matrikula aldatzean';
 $string['errorenrolcohort'] = 'Errorea kohorteen matrikulazariorako sync instantzia sortzean ikastaro honetan.';
 $string['errorenrolcohortusers'] = 'Errorea kohorte-kideak ikastaro honetan matrikulatzean.';
-$string['errorthresholdlow'] = 'Jakinarazpenen atariak gutxienez egun betekoa izan behar du.';
+$string['errorthresholdlow'] = 'Jakinarazpenen atalasea gutxienez egun betekoa izan behar du.';
 $string['errorwithbulkoperation'] = 'Errorea gertatu da matrikulazio-aldaketa masiboak prozesatu bitartean.';
 $string['eventenrolinstancecreated'] = 'Matrikulaziorako instantzia sortuta';
 $string['eventenrolinstancedeleted'] = 'Matrikulaziorako instantzia ezabatuta';
@@ -86,11 +86,11 @@ $string['eventuserenrolmentcreated'] = 'Erabiltzailea ikastaroan matrikulatu da'
 $string['eventuserenrolmentdeleted'] = 'Erabiltzailea ikastarotik  desmatrikulatu da';
 $string['eventuserenrolmentupdated'] = 'Erabiltzaile-desmatrikulazioa eguneratuta';
 $string['expirynotify'] = 'Jakinarazi matrikula iraungi aurretik';
+$string['expirynotify_help'] = 'Ezarpen honek zehazten du noiz bidaltzen diren matrikula amaituko dela jakinarazteko abisuak.';
 $string['expirynotifyall'] = 'Matrikulatzailea eta matrikulatutako erabiltzailea';
 $string['expirynotifyenroller'] = 'Matrikulatzailea baino ez';
-$string['expirynotify_help'] = 'Ezarpen honek zehazten du noiz bidaltzen diren matrikula amaituko dela jakinarazteko abisuak.';
 $string['expirynotifyhour'] = 'Matrikula amaituko dela jakinarazteko abisuen bidalketa-ordua';
-$string['expirythreshold'] = 'Jakinarazpenen ataria';
+$string['expirythreshold'] = 'Jakinarazpenen atalasea';
 $string['expirythreshold_help'] = 'Zenbat egun lehenago bidali behar zaie abisua erabiltzaileei, matrikula amaitu aurretik?';
 $string['extremovedaction'] = 'Kanpoko desmatrikulazio-ekintza';
 $string['extremovedaction_help'] = 'Aukeratu ekintza bat kanpoko matrikulazioa erabiltzaileak matrikulatzeko iturri gisa desagertzen denerako. Kontuan izan erabiltzaileen hainbat datu eta ezarpen galdu egiten direla ikastarotik desmatrikulatzean.';

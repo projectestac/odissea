@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,26 +12,27 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignment', language 'nl', version '3.8'.
  *
- * @package   assignment
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignment
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignment:addinstance'] = 'Voeg een nieuwe opdracht toe';
-$string['assignmentdisabled'] = 'De verouderde "Opdracht 2.2" is uitgeschakeld.';
 $string['assignment:exportownsubmission'] = 'Exporteer je opdracht';
 $string['assignment:exportsubmission'] = 'Exporteer inzending';
 $string['assignment:grade'] = 'Beoordeel opdracht';
-$string['assignmentneedsupgrade'] = 'De verouderde "Opdracht 2.2" is verwijderd.';
 $string['assignment:submit'] = 'Stuur opdracht in';
 $string['assignment:view'] = 'Bekijk opdracht';
+$string['assignmentdisabled'] = 'De verouderde "Opdracht 2.2" is uitgeschakeld.';
+$string['assignmentneedsupgrade'] = 'De verouderde "Opdracht 2.2" is verwijderd.';
 $string['messageprovider:assignment_updates'] = 'Opdracht (2.2) meldingen';
 $string['modulename'] = 'Opdracht 2.2 (uitgeschakeld)';
 $string['modulename_help'] = 'Verouderde activiteitsmodule die uit Moodle verwijderd is.';
@@ -43,10 +43,6 @@ $string['page-mod-assignment-x'] = 'Elke opdracht module pagina';
 $string['pluginadministration'] = 'Opdrachten 2.2 (uitgeschakeld) beheer';
 $string['pluginname'] = 'Opdracht 2.2 (uitgeschakeld)';
 $string['privacy:markedsubmissionspath'] = 'beoordeelde inzendingen';
-$string['privacy:metadata:assignmentfilter'] = 'Filtervoorkeur voor de inzendingen van de opdracht.';
-$string['privacy:metadata:assignmentmailinfo'] = 'Voorkeur voor het versturen van informatie-email over ingestuurde opdrachten.';
-$string['privacy:metadata:assignmentperpage'] = 'Voorkeur voor het getoonde aantal ingestuurde opdrachten per pagina.';
-$string['privacy:metadata:assignmentquickgrade'] = 'Voorkeur voor snel beoordelen van ingestuurde opdrachten.';
 $string['privacy:metadata:assignment_submissions'] = 'Ingestuurde opdrachten geassocieerd met een opdracht.';
 $string['privacy:metadata:assignment_submissions:data1'] = 'De online tekst ingestuurd als opdracht.';
 $string['privacy:metadata:assignment_submissions:data2'] = 'De gevolgde status voor de ingezonden opdracht.';
@@ -59,5 +55,9 @@ $string['privacy:metadata:assignment_submissions:timecreated'] = 'De aanmaakdatu
 $string['privacy:metadata:assignment_submissions:timemarked'] = 'De beoordelingsdatum/tijd van de ingestuurde opdracht.';
 $string['privacy:metadata:assignment_submissions:timemodified'] = 'De wijzigingsdatum/tijd van de ingestuurde opdracht.';
 $string['privacy:metadata:assignment_submissions:userid'] = 'De gebruikerID van wie de opdracht instuurde.';
+$string['privacy:metadata:assignmentfilter'] = 'Filtervoorkeur voor de inzendingen van de opdracht.';
+$string['privacy:metadata:assignmentmailinfo'] = 'Voorkeur voor het versturen van informatie-email over ingestuurde opdrachten.';
+$string['privacy:metadata:assignmentperpage'] = 'Voorkeur voor het getoonde aantal ingestuurde opdrachten per pagina.';
+$string['privacy:metadata:assignmentquickgrade'] = 'Voorkeur voor snel beoordelen van ingestuurde opdrachten.';
 $string['privacy:submissionpath'] = 'ingestuurde opdracht';
 $string['upgradenotification'] = 'Deze opdracht is gebaseerd op een oudere opdrachtmodule';

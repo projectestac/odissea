@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,30 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_configlog', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_configlog', language 'pt', version '3.8'.
  *
- * @package   report_configlog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_configlog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['configlog'] = 'Alterações da configuração';
-$string['datefrom'] = 'Desde';
-$string['dateto'] = 'Até';
 $string['oldvalue'] = 'Valor original';
 $string['plugin'] = 'Módulo';
 $string['pluginname'] = 'Alterações da configuração';
 $string['privacy:metadata'] = 'O módulo Alterações da configuração não armazena dados pessoais.';
 $string['setting'] = 'Configuração';
 $string['timemodified'] = 'Data';
-$string['user'] = 'Utilizador';
-$string['user_help'] = 'Pesquisar pelo nome ou pelo apelido do utilizador';
 $string['value'] = 'Valor';
-$string['value_help'] = 'Pesquisar pelo valor novo ou pelo valor original da configuração';
-$string['valuenew'] = 'Novo valor';
-$string['valueold'] = 'Valor original';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_installaddon', language 'sv', version '3.8'.
  *
- * @package   tool_installaddon
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_installaddon
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,9 +33,9 @@ $string['installaddons'] = 'Installera plugin-moduler';
 $string['installfromrepo'] = 'Installera plugin-moduler från Moodles pluginkatalog';
 $string['installfromrepo_help'] = 'Du kommer att omdirigeras till Moodles pluginkatalog för att söka efter och installera en plugin. Observera att din webbplats fullständigt namn, URL och Moodle version också kommer att skickas med, för att göra installationsprocessen lättare för dig.';
 $string['installfromzip'] = 'Installera plugin från ZIP-fil';
+$string['installfromzip_help'] = 'Ett alternativ till att installera en plugin direkt från Moodles plugin-katalog är att ladda upp ett ZIP-paket med plugin-modulen. ZIP-paketet ska ha samma struktur som ett paket som laddas ner från Moodles plugin-katalog.';
 $string['installfromzipfile'] = 'ZIP-paket';
 $string['installfromzipfile_help'] = 'Plugin ZIP-paketet måste innehålla bara en katalog, med ett namn som överensstämmer med pluginnamnet. ZIP-paketet kommer att extraheras till en lämplig plats för plugin-typen. Om paketet har laddats ner från Moodles pluginkatalog så kommer det att ha denna struktur.';
-$string['installfromzip_help'] = 'Ett alternativ till att installera en plugin direkt från Moodles plugin-katalog är att ladda upp ett ZIP-paket med plugin-modulen. ZIP-paketet ska ha samma struktur som ett paket som laddas ner från Moodles plugin-katalog.';
 $string['installfromzipinvalid'] = 'Plugin ZIP-paketet måste innehålla bara en katalog, som har ett namn som överensstämmer med plugin-namnet. Filen som tillhandahålls är inte ett giltigt plugin ZIP-paket.';
 $string['installfromziprootdir'] = 'Döp om rotkatalogen';
 $string['installfromziprootdir_help'] = 'Vissa ZIP-paket, till exempel de som genereras av Github, kan innehålla ett felaktigt rotkatalognamn. Om så är fallet, kan det korrekta namnet anges här.';

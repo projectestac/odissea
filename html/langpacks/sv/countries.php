@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'countries', language 'sv', version '3.8'.
  *
- * @package   countries
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     countries
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,17 +40,17 @@ $string['AT'] = 'Österrike';
 $string['AU'] = 'Australien';
 $string['AW'] = 'Aruba';
 $string['AX'] = 'Åland';
-$string['AZ'] = 'Azerbadjan';
+$string['AZ'] = 'Azerbajdzjan';
 $string['BA'] = 'Bosnien och Herzegovina';
 $string['BB'] = 'Barbados';
 $string['BD'] = 'Bangladesh';
 $string['BE'] = 'Belgien';
 $string['BF'] = 'Burkina Faso';
 $string['BG'] = 'Bulgarien';
-$string['BH'] = 'Bahrein';
+$string['BH'] = 'Bahrain';
 $string['BI'] = 'Burundi';
 $string['BJ'] = 'Benin';
-$string['BL'] = 'Saint Barthélemy';
+$string['BL'] = 'Saint-Barthélemy';
 $string['BM'] = 'Bermudas';
 $string['BN'] = 'Brunei Darussalam';
 $string['BO'] = 'Bolivia';
@@ -132,7 +132,7 @@ $string['IM'] = 'Isle of Man';
 $string['IN'] = 'Indien';
 $string['IO'] = 'Brittiska territoriet i Indiska oceanen (BIOT)';
 $string['IQ'] = 'Irak';
-$string['IR'] = 'Iran';
+$string['IR'] = 'Islamiska republiken Iran';
 $string['IS'] = 'Island';
 $string['IT'] = 'Italien';
 $string['JE'] = 'Jersey';
@@ -201,7 +201,7 @@ $string['PA'] = 'Panama';
 $string['PE'] = 'Peru';
 $string['PF'] = 'French Polynesia';
 $string['PG'] = 'Papua Nya Guinea';
-$string['PH'] = 'Filipinerna';
+$string['PH'] = 'Filippinerna';
 $string['PK'] = 'Pakistan';
 $string['PL'] = 'Polen';
 $string['PM'] = 'Saint Pierre And Miquelon';

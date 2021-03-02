@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'es', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['added'] = 'Etiqueta(s) oficial(es) añadida(s)';
 $string['addotags'] = 'Añadir marcas estándar.';
 $string['addtagcoll'] = 'Agregar colección de marcas';
 $string['addtagtomyinterests'] = 'Agregar "{$a}" a mis intereses';
@@ -38,13 +39,13 @@ $string['count'] = 'Contar';
 $string['coursetags'] = 'Etiquetas de curso';
 $string['defautltagcoll'] = 'Colección por defecto';
 $string['delete'] = 'Eliminar';
-$string['deleted'] = 'Eliminado';
-$string['deletedcoursetags'] = 'Eliminado - marcas del curso';
+$string['deleted'] = 'Etiqueta(s) eliminada(s)';
+$string['deletedcoursetags'] = 'Eliminado - etiquetas del curso';
 $string['deleteselected'] = 'Opción "eliminar" seleccionada';
 $string['description'] = 'Descripción';
 $string['editname'] = 'Editar nombre de etiqueta';
 $string['edittag'] = 'Editar esta marca';
-$string['entertags'] = 'Escriba las marcas separadas por comas';
+$string['entertags'] = 'Introduzca etiquetas...';
 $string['errortagfrontpage'] = 'No se permite marcar la página principal del sitio';
 $string['errorupdatingrecord'] = 'Error al actualizar el registro de marcas';
 $string['eventtagadded'] = 'Marca añadida a un item';
@@ -81,7 +82,7 @@ $string['ptags'] = 'Marcas definidas por el usuario (separadas por comas)';
 $string['relatedblogs'] = 'Entradas de blog más recientes';
 $string['relatedtags'] = 'Marcas relacionadas';
 $string['removetagfrommyinterests'] = 'Eliminar "{$a}" de mis intereses';
-$string['reset'] = 'Reiniciar';
+$string['reset'] = 'Restablecer selección de etiqueta';
 $string['resetfilter'] = 'Reiniciar filtro';
 $string['resetflag'] = 'Reiniciar señal';
 $string['responsiblewillbenotified'] = 'Se notificará a la persona responsable';
@@ -108,11 +109,11 @@ $string['tag'] = 'Marca';
 $string['tagarea_blog_external'] = 'Publicaciones de blogs externos';
 $string['tagarea_course'] = 'Cursos';
 $string['tagarea_course_modules'] = 'Actividades y recursos';
+$string['tagarea_post'] = 'Publicaciones de blog';
+$string['tagarea_user'] = 'Intereses del usuario';
 $string['tagareaenabled'] = 'Habilitada';
 $string['tagareaname'] = 'Nombre';
-$string['tagarea_post'] = 'Publicaciones de blog';
 $string['tagareas'] = 'Áreas de marcas';
-$string['tagarea_user'] = 'Intereses del usuario';
 $string['tagcollection'] = 'Colección de marcas';
 $string['tagcollections'] = 'Colecciones de marcas';
 $string['tagdescription'] = 'Descripción de la marca';

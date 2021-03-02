@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'data', language 'it', version '3.8'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -186,7 +186,7 @@ $string['fieldwidthsingleview'] = 'Larghezza nella visualizzazione "Dettagli"';
 $string['file'] = 'File';
 $string['fileencoding'] = 'Codifica';
 $string['filesnotgenerated'] = 'Non tutti i file sono stati generati: {$a}';
-$string['filtername'] = 'Auto link al Database';
+$string['filtername'] = 'Auto collegamento al Database';
 $string['footer'] = 'Piè di pagina';
 $string['forcelinkname'] = 'Nome forzato del link';
 $string['foundnorecords'] = 'Non è stato trovato nessun record (<a href="{$a->reseturl}">Reset filtri</a>)';
@@ -195,8 +195,8 @@ $string['fromfile'] = 'Importa da file .zip';
 $string['fromfile_help'] = 'E\' possibile caricare un file in formato .zip contenente preimpostazioni del Database.';
 $string['generateerror'] = 'Non tutti i file sono stati generati!';
 $string['header'] = 'Intestazione';
-$string['headeraddtemplate'] = 'Impostazione dell\'interfaccia per l\'inserimento o la modifica dei record.';
-$string['headerasearchtemplate'] = 'Impostazione dell\'interfaccia per la Ricerca avanzata';
+$string['headeraddtemplate'] = 'Impostazione dell\'interfaccia di inserimento o modifica dei record.';
+$string['headerasearchtemplate'] = 'Impostazione dell\'interfaccia della Ricerca avanzata';
 $string['headercsstemplate'] = 'Foglio di stile CSS da associare ai Modelli di visualizzazione';
 $string['headerjstemplate'] = 'Codice Javascript da usare nei Modelli di visualizzazione';
 $string['headerlisttemplate'] = 'Impostazione dell\'interfaccia per la visualizzazione Elenco';
@@ -209,13 +209,13 @@ $string['includetags'] = 'Includi tag';
 $string['includetime'] = 'Includi data di inserimento/modifica';
 $string['includeuserdetails'] = 'Includi dettagli utente';
 $string['indicator:cognitivedepth'] = 'Database cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Database.';
 $string['indicator:cognitivedepthdef'] = 'Database cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Database (Livelli: Nessuna visualizzazione, Visualizzazione, Invio)';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Database.';
 $string['indicator:socialbreadth'] = 'Database sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Database.';
 $string['indicator:socialbreadthdef'] = 'Database sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Database (Livelli: Nessuna partecipazione, Partecipazione da solo)';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Database.';
 $string['insufficiententries'] = 'è necessario inserire un maggior numero di record prima di poter visualizzare questo Database';
 $string['intro'] = 'Descrizione';
 $string['invalidaccess'] = 'Questa pagina non è stata acceduta correttamente';
@@ -316,13 +316,13 @@ $string['privacy:metadata:data_content:content2'] = 'Contenuto aggiuntivo 2';
 $string['privacy:metadata:data_content:content3'] = 'Contenuto aggiuntivo 3';
 $string['privacy:metadata:data_content:content4'] = 'Contenuto aggiuntivo 4';
 $string['privacy:metadata:data_content:fieldid'] = 'ID della definizione del campo.';
-$string['privacy:metadata:datafieldnpluginsummary'] = 'Campi del modulo attività del database.';
 $string['privacy:metadata:data_records'] = 'Record nel modulo attività del database.';
 $string['privacy:metadata:data_records:approved'] = 'Stato dell\'approvazione';
 $string['privacy:metadata:data_records:groupid'] = 'Gruppo';
 $string['privacy:metadata:data_records:timecreated'] = 'Orario di creazione del record';
 $string['privacy:metadata:data_records:timemodified'] = 'Orario di modifica più recente del record';
 $string['privacy:metadata:data_records:userid'] = 'Orario di creazione del record';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Campi del modulo attività del database.';
 $string['privacy:metadata:filepurpose'] = 'File allegato al record del database';
 $string['privacy:metadata:ratingpurpose'] = 'Valutazioni del record del database';
 $string['privacy:metadata:tagpurpose'] = 'Tag del record del database';
@@ -398,7 +398,7 @@ $string['url'] = 'URL';
 $string['usedate'] = 'Includi nella ricerca.';
 $string['usestandard'] = 'Utilizza preimpostazione';
 $string['usestandard_help'] = 'Consente la scelta di un Modello di visualizzazione preimpostato tra quelli disponibili nel sito. (Se è stato già salvato un Modello di visualizzazione, è possibile anche eliminarlo.)';
-$string['viewfromdate'] = 'Solo visualizzazione dal';
-$string['viewtodate'] = 'fino al';
-$string['viewtodatevalidation'] = 'La data di Solo visualizzazione \'Fino al\' non può essere antecedente alla data \'Dal\'';
+$string['viewfromdate'] = 'Solo lettura dal';
+$string['viewtodate'] = 'Fino al';
+$string['viewtodatevalidation'] = 'La data di solo lettura \'Fino al\' non può essere antecedente alla data \'Dal\'';
 $string['wrongdataid'] = 'E\' stato fornito un id errato';

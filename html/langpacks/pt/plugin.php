@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'plugin', language 'pt', version '3.8'.
  *
- * @package   plugin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     plugin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -82,14 +82,14 @@ $string['packagesvalidatingok'] = 'Validação bem sucedida! A instalação pode
 $string['plugincheckall'] = 'Todos os módulos';
 $string['plugincheckattention'] = 'Módulos que requerem atenção';
 $string['pluginchecknone'] = 'De momento, nenhum módulo necessita de atenção';
-$string['pluginchecknotice'] = 'Esta página exibe os módulos que podem exigir a sua atenção durante a atualização, tais como novos módulos que estão prestes a ser instalados, os módulos que estão prestes a ser atualizados e quaisquer módulos em falta. Os módulos adicionais serão exibidos se houver uma atualização disponível para eles. É recomendado que verifique se existem versões mais recentes dos módulos instalados e atualize o seu código-fonte antes de continuar com esta atualização do Moodle.';
+$string['pluginchecknotice'] = 'Esta página exibe os módulos que podem exigir a sua atenção durante a atualização, tais como, novos módulos que estão prestes a ser instalados, módulos que estão prestes a ser atualizados e quaisquer módulos em falta. Os módulos adicionais serão exibidos se houver uma atualização disponível para eles. É recomendado que verifique se existem versões mais recentes dos módulos instalados e, em caso afirmativo, atualizar o respetivo código-fonte antes de continuar com esta atualização do Moodle.';
 $string['plugindisable'] = 'Desativar';
 $string['plugindisabled'] = 'Desativado';
 $string['pluginenable'] = 'Ativar';
 $string['pluginenabled'] = 'Ativado';
 $string['release'] = 'Lançamento';
 $string['requiredby'] = 'Pedido por: {$a}';
-$string['requires'] = 'Requer';
+$string['requires'] = 'Requisitos';
 $string['rootdir'] = 'Diretoria';
 $string['settings'] = 'Configurações';
 $string['source'] = 'Origem';
@@ -131,8 +131,8 @@ $string['type_editor_plural'] = 'Editores';
 $string['type_enrol'] = 'Método de inscrição';
 $string['type_enrol_plural'] = 'Métodos de inscrição';
 $string['type_fileconverter'] = 'Conversor de documento';
-$string['type_fileconvertermanage'] = 'Gerir conversores de documentos';
 $string['type_fileconverter_plural'] = 'Conversores de documentos';
+$string['type_fileconvertermanage'] = 'Gerir conversores de documentos';
 $string['type_filter'] = 'Filtro';
 $string['type_filter_plural'] = 'Filtros de texto';
 $string['type_format'] = 'Formato da disciplina';
@@ -179,8 +179,8 @@ $string['type_theme'] = 'Tema';
 $string['type_theme_plural'] = 'Temas';
 $string['type_tool'] = 'Ferramenta do admin';
 $string['type_tool_plural'] = 'Ferramentas de administração';
-$string['type_webservice'] = 'Protocolo do web service';
-$string['type_webservice_plural'] = 'Protocolos do web service';
+$string['type_webservice'] = 'Protocolo Web service';
+$string['type_webservice_plural'] = 'Protocolos Web service';
 $string['uninstall'] = 'Desinstalar';
 $string['uninstallconfirm'] = 'Está prestes a desinstalar o módulo \'<strong>{$a->name}</strong>\'. Isto irá apagar completamente tudo o que existe na base de dados associado a este módulo, incluindo a sua configuração, registos de atividade, ficheiros do utilizador geridos pelo módulo, etc. Esta operação é irreversível e o Moodle não cria qualquer cópia de segurança para recuperação. Tem a certeza de que pretende continuar?';
 $string['uninstalldelete'] = 'Todos os dados associados ao módulo \'<strong>{$a->name}</strong>\' foram eliminados da base de dados. Para evitar que o módulo se reinstale, a respetiva pasta [<em>{$a->rootdir}</em>] deve ser agora removida manualmente do seu servidor. O Moodle por si só não pode remover a pasta devido a permissões de escrita.';
@@ -190,7 +190,7 @@ $string['uninstallextraconfirmblock'] = 'Existem {$a->instances} instâncias des
 $string['uninstallextraconfirmenrol'] = 'Existem {$a->enrolments} inscrições do utilizador.';
 $string['uninstallextraconfirmmod'] = 'Existem {$a->instances} instâncias deste módulo em {$a->courses} disciplinas.';
 $string['uninstalling'] = 'A desinstalar \'{$a->name}\'';
-$string['updateavailable'] = 'Existe uma nova versão \'{$a}\' disponível!';
+$string['updateavailable'] = 'Existe uma nova versão disponível: {$a}';
 $string['updateavailable_moreinfo'] = 'Mais informação...';
 $string['updateavailable_release'] = 'Lançamento {$a}';
 $string['updatepluginconfirm'] = 'Confirmação da atualização do módulo';
@@ -208,10 +208,6 @@ $string['validationmsg_filesnumber'] = 'Não foram encontrados ficheiros suficie
 $string['validationmsg_filestatus'] = 'Não é possível extrair todos os ficheiros';
 $string['validationmsg_filestatus_info'] = 'A tentativa de extração do ficheiro {$a->file} resultou num erro \'{$a->status}.';
 $string['validationmsg_foundlangfile'] = 'Ficheiro de idioma encontrado';
-$string['validationmsglevel_debug'] = 'Depurar';
-$string['validationmsglevel_error'] = 'Erro';
-$string['validationmsglevel_info'] = 'OK';
-$string['validationmsglevel_warning'] = 'Aviso';
 $string['validationmsg_maturity'] = 'Nível de maturidade declarado';
 $string['validationmsg_maturity_help'] = 'O módulo pode declarar o seu nível de maturidade. Se o responsável pela manutenção do módulo o considerar estável, o nível de maturidade declarado será MATURIDADE_ESTÁVEL. Todos os outros níveis de maturidade (tais como alfa ou beta) devem ser considerados instáveis e é gerado um aviso.';
 $string['validationmsg_missingcomponent'] = 'O módulo não indica o seu nome de componente';
@@ -239,6 +235,10 @@ $string['validationmsg_targetexists_help'] = 'A diretoria em que o módulo será
 $string['validationmsg_targetnotdir'] = 'O local de destino está ocupado por um ficheiro';
 $string['validationmsg_unknowntype'] = 'Tipo de módulo inválido';
 $string['validationmsg_versionphpsyntax'] = 'Foram detectados erros de sintaxe no ficheiro version.php';
+$string['validationmsglevel_debug'] = 'Depurar';
+$string['validationmsglevel_error'] = 'Erro';
+$string['validationmsglevel_info'] = 'OK';
+$string['validationmsglevel_warning'] = 'Aviso';
 $string['version'] = 'Versão';
 $string['versiondb'] = 'Versão atual';
 $string['versiondisk'] = 'Nova versão';

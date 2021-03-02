@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'journal', language 'en', version '3.8'.
  *
- * @package   journal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     journal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,6 +45,7 @@ $string['feedbackupdated'] = 'Feedback updated for {$a} entries';
 $string['gradeingradebook'] = 'Current grade in gradebook';
 $string['journal:addentries'] = 'Add journal entries';
 $string['journal:addinstance'] = 'Add a new journal';
+$string['journal:manageentries'] = 'Manage journal entries';
 $string['journalmail'] = '{$a->teacher} has posted some feedback on your
 journal entry for \'{$a->journal}\'
 
@@ -54,7 +55,6 @@ You can see it appended to your journal entry:
 $string['journalmailhtml'] = '{$a->teacher} has posted some feedback on your
 journal entry for \'<i>{$a->journal}</i>\'<br /><br />
 You can see it appended to your <a href="{$a->url}">journal entry</a>.';
-$string['journal:manageentries'] = 'Manage journal entries';
 $string['journalname'] = 'Journal name';
 $string['journalquestion'] = 'Journal question';
 $string['mailsubject'] = 'Journal feedback';

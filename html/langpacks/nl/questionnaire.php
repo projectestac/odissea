@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'questionnaire', language 'nl', version '3.8'.
  *
- * @package   questionnaire
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     questionnaire
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -81,10 +81,9 @@ $string['checkbreaksremoved'] = '{$a} extra pagina-einde(s) verwijderd.';
 $string['checknotstarted'] = 'Selecteer niet gestart';
 $string['checkstarted'] = 'Selecteer gestart';
 $string['clicktoswitch'] = '(klik om te switchen)';
+$string['closebeforeopen'] = 'Je hebt een sluitingsdatum voor de open datum opgegeven.';
 $string['closed'] = 'De vragenlijst is gesloten op {$a}. Dank je.';
 $string['closedate'] = 'Gebruik een einddatum';
-$string['closedate_help'] = 'Je kunt hier een datum specificeren waarop de enquête sluit. Vink het vakje aan en selecteer de datum en tijd die je wilt.
-Gebruikers zullen de enquête na deze datum niet kunnen invullen. Als dit niet geselecteerd is, zal de enquête nooit sluiten.';
 $string['closeson'] = 'Vragenlijst sluit op {$a}';
 $string['completionsubmit'] = 'Leerling moet deze enquête insturen om hem te voltooien';
 $string['condition'] = 'Voorwaarde';
@@ -103,9 +102,9 @@ $string['confirmdelquestionresps'] = 'Hierdoor zullen ook de {$a} antwoord(en) o
 $string['confirmdelresp'] = 'Weet je zeker dat je het antwoord wilt verwijderen door&nbsp;{$a}&nbsp;?';
 $string['confirmremovequestion'] = 'Weet je zeker dat je de vraag "{$a->qname}" uit sectie "{$a->sname}" wilt verwijderen?';
 $string['confpage'] = 'Tekst voor kop';
-$string['confpagedesc'] = 'Kop (vetgedrukt) en body tekst voor "Bevestigingspagina" nadat een gebruiker deze enquête voltooit. (URL, indien aanwezig, heeft voorrang boven bevestigingstekst.)';
 $string['confpage_help'] = 'Kop (vetgedrukt) en body tekst voor "Bevestigingspagina" nadat een gebruiker deze enquête voltooit. (URL, indien aanwezig, heeft voorrang boven bevestigingstekst.)
 Als dit veld wordt leeg gelaten, wordt er een standaardbericht getoond na voltooiing van de enquête (Bedankt voor het voltooien van deze Enquête).';
+$string['confpagedesc'] = 'Kop (vetgedrukt) en body tekst voor "Bevestigingspagina" nadat een gebruiker deze enquête voltooit. (URL, indien aanwezig, heeft voorrang boven bevestigingstekst.)';
 $string['contentoptions'] = 'Inhoudopties';
 $string['couldnotcreatenewsurvey'] = 'Kon geen nieuwe enquête maken!';
 $string['couldnotdelresp'] = 'Kon antwoord niet verwijderen';
@@ -114,8 +113,8 @@ $string['createcontent_help'] = 'Selecteer een van de opties voor keuzerondjes. 
 $string['createnew'] = 'Maak nieuwe';
 $string['crontask'] = 'Enquête opruimtaak';
 $string['date'] = 'Datum';
-$string['dateformatting'] = 'Gebruik het dag/maand/jaar format, bijv. voor 14 maart 1945:&nbsp;<strong>14/3/1945</strong>';
 $string['date_help'] = 'Gebruik dit vraagtype als je verwacht dat het antwoord een correct geformatteerde datum is.';
+$string['dateformatting'] = 'Gebruik het dag/maand/jaar format, bijv. voor 14 maart 1945:&nbsp;<strong>14/3/1945</strong>';
 $string['deleteallresponses'] = 'Verwijder ALLE antwoorden';
 $string['deletecurrentquestion'] = 'Verwijder vraag {$a}';
 $string['deletedallgroupresp'] = 'Verwijder ALLE antwoorden in groep {$a}';
@@ -170,6 +169,7 @@ $string['event_resumed'] = 'Poging hervat';
 $string['event_saved'] = 'Antwoorden opgeslagen';
 $string['event_submitted'] = 'Antwoorden ingestuurd';
 $string['feedback'] = 'Feedback';
+$string['feedback_help'] = 'Hulp bij Feedback';
 $string['feedbackaddmorefeedbacks'] = 'Voeg {no} feedbackvelden toe';
 $string['feedbackbysection'] = 'Categorie feedback';
 $string['feedbackdefaultlabel'] = '[Nieuwe sectie]';
@@ -189,7 +189,6 @@ $string['feedbackglobalmessages'] = 'Globale feedbackberichten';
 $string['feedbackhdr'] = 'Feedback';
 $string['feedbackheading'] = 'Kop feedback';
 $string['feedbackheading_help'] = 'In het veld Kop feedback kun je 2 variabelen gebruiken: $scorepercent en $oppositescorepercent.';
-$string['feedback_help'] = 'Hulp bij Feedback';
 $string['feedbackmessages'] = 'Feedback bericht voor categorie {$a}';
 $string['feedbacknextsection'] = 'Volgende categorie {$a}';
 $string['feedbacknone'] = 'Geen feedbackberichten';
@@ -234,6 +233,7 @@ $string['id'] = 'ID';
 $string['includechoicecodes'] = 'Keuzecodes opnemen';
 $string['includechoicetext'] = 'Keuzetekst opnemen';
 $string['includeincomplete'] = 'Onvolledige inzendingen mee opnemen';
+$string['includerankaverages'] = 'Neem het gemiddelde van de rangvragen op';
 $string['incorrectcourseid'] = 'Incorrecte Cursus ID';
 $string['incorrectmodule'] = 'Cursusmodule ID was onjuist';
 $string['incorrectquestionnaire'] = 'Enquête is onjuist';
@@ -287,12 +287,13 @@ $string['noattempts'] = 'Er zijn nog geen pogingen voor deze enquête';
 $string['nodata'] = 'Er zijn geen gegevens opgeslagen.';
 $string['noduplicates'] = 'Geen duplicaat keuzes';
 $string['noduplicateschoiceserror'] = 'Je moet ten minste 2 mogelijke antwoorden invoeren voor de "Geen duplicaat keuzes" optie!';
-$string['noneinuse'] = 'Deze enquête bevat nog geen vragen.';
 $string['non_respondents'] = 'Gebruikers die hun antwoorden nog niet hebben ingestuurd voor deze enquête';
+$string['noneinuse'] = 'Deze enquête bevat nog geen vragen.';
 $string['nopublicsurveys'] = 'Geen openbare enquêtes';
 $string['noresponsedata'] = 'Geen antwoorden voor deze vraag.';
 $string['noresponses'] = 'Geen antwoorden';
 $string['normal'] = 'Normaal';
+$string['not_started'] = 'niet begonnen';
 $string['notanumber'] = '<strong>{$a}</strong> is geen geaccepteerd getalformat.';
 $string['notapplicable'] = 'N.v.t.';
 $string['notapplicablecolumn'] = 'N.v.t. kolom';
@@ -307,7 +308,6 @@ $string['notificationsimple'] = 'Alleen melding';
 $string['notopen'] = 'Deze enquête start pas op {$a}.';
 $string['notrequired'] = 'Antwoord is niet vereist';
 $string['notset'] = 'niet ingesteld';
-$string['not_started'] = 'niet begonnen';
 $string['nousersselected'] = 'Geen gebruikers geselecteerd';
 $string['num'] = '#';
 $string['numattemptsmade'] = '{$a} pogingen voor deze enquête';
@@ -319,9 +319,8 @@ $string['numberscaleitems_help'] = 'Aantal items in schaal is het te gebruiken *
 $string['numeric'] = 'Nummeriek';
 $string['numeric_help'] = 'Gebruik dit vraagtype wanneer je verwacht dat het antwoord een correct geformatteerd getal is.';
 $string['of'] = 'van';
+$string['openafterclose'] = 'Je hebt een sluitingsdatum voor de open datum opgegeven.';
 $string['opendate'] = 'Gebruik startdatum';
-$string['opendate_help'] = 'Je kunt hier een datum specificeren om de enquête te openen. Vink dit aan en selecteer de datum en tijd die je wilt.
-Gebruikers zullen niet in staat zijn de enquête voor die datum in te vullen. Als dit niet geselecteerd is, zal de enquête direct open zijn.';
 $string['option'] = 'optie  {$a}';
 $string['optional'] = 'Optioneel - Ten minste één van deze afhankelijkheden moet worden voldaan.';
 $string['optionalname'] = 'Vraagnaam';
@@ -358,9 +357,9 @@ $string['pluginname'] = 'Enquête';
 $string['position'] = 'positie';
 $string['possibleanswers'] = 'Mogelijke antwoorden';
 $string['posteddata'] = 'Pagina bereikt met geplaatste gegevens:';
-$string['previewing'] = 'Enquête voorvertonen';
 $string['preview_label'] = 'Voorvertoning';
 $string['preview_questionnaire'] = 'Voorvertoning enquête';
+$string['previewing'] = 'Enquête voorvertonen';
 $string['previous'] = 'Vorige';
 $string['previouspage'] = 'Vorige pagina';
 $string['print'] = 'Dit antwoord afdrukken';
@@ -370,19 +369,20 @@ $string['printtooltip'] = 'Opent printervriendelijk venster met huidig Antwoord'
 $string['privacy:metadata:questionnaire_resp_multiple'] = 'Een antwoord op een meerkeuzevraag.';
 $string['privacy:metadata:questionnaire_response_bool'] = 'Een antwoord op een boolean (ja/nee) vraag.';
 $string['private'] = 'Privaat';
+$string['progressbar'] = 'Toon voortgangsbalk';
+$string['progressbar_info'] = 'Enquête {$a} voltooid.';
+$string['progresshelp'] = 'Voortgangsbalk';
 $string['public'] = 'Publiek';
 $string['publiccopy'] = 'Kopie:';
 $string['publicoriginal'] = 'Origineel:';
 $string['qtype'] = 'Type';
-$string['qtypedaily'] = 'dagelijks beantwoorden';
 $string['qtype_help'] = 'Selecteer of gebruikers één keer, dagelijks, wekelijks, maandelijks of een onbeperkt aantal (veel) keren mogen antwoorden.';
+$string['qtypedaily'] = 'dagelijks beantwoorden';
 $string['qtypemonthly'] = 'maandelijks beantwoorden';
 $string['qtypeonce'] = 'antwoord één keer';
 $string['qtypeunlimited'] = 'meerdere keren antwoorden';
 $string['qtypeweekly'] = 'wekelijks beantwoorden';
 $string['questionnaire:addinstance'] = 'Voeg een nieuwe enquête toe';
-$string['questionnaireadministration'] = 'Enquêtebeheer';
-$string['questionnairecloses'] = 'Enquête sluit';
 $string['questionnaire:copysurveys'] = 'Kopieer sjabloon- en private enquêtes';
 $string['questionnaire:createpublic'] = 'Creëer openbare enquêtes';
 $string['questionnaire:createtemplates'] = 'Creëer sjabloonenquêtes';
@@ -391,17 +391,19 @@ $string['questionnaire:downloadresponses'] = 'Download antwoorden in een CSV bes
 $string['questionnaire:editquestions'] = 'Creëer en bewerk enquêtevragen';
 $string['questionnaire:manage'] = 'Creëer en bewerk enquêtes';
 $string['questionnaire:message'] = 'Een bericht naar non-respondenten sturen';
-$string['questionnaireopens'] = 'Enquête wordt geopend';
 $string['questionnaire:preview'] = 'Enquêtes voorvertonen';
 $string['questionnaire:printblank'] = 'Blanco enquête afdrukken';
 $string['questionnaire:readallresponseanytime'] = 'Alle antwoorden altijd bekijken';
 $string['questionnaire:readallresponses'] = 'Antwoordsamenvattingen lezen, afhankelijk van openstellingstijden';
 $string['questionnaire:readownresponses'] = 'Eigen antwoorden lezen';
-$string['questionnairereport'] = 'Enquête rapportage';
 $string['questionnaire:submissionnotification'] = 'Ontvang een melding voor iedere inzending';
 $string['questionnaire:submit'] = 'Een enquête voltooien en insturen';
 $string['questionnaire:view'] = 'Een enquête bekijken';
 $string['questionnaire:viewsingleresponse'] = 'Volledige individuele antwoorden bekijken';
+$string['questionnaireadministration'] = 'Enquêtebeheer';
+$string['questionnairecloses'] = 'Enquête sluit';
+$string['questionnaireopens'] = 'Enquête wordt geopend';
+$string['questionnairereport'] = 'Enquête rapportage';
 $string['questionnum'] = 'Vraag #';
 $string['questions'] = 'Vragen';
 $string['questionsinsection'] = 'Vragen in deze sectie:';
@@ -432,9 +434,9 @@ $string['respondenteligiblestudents'] = 'enkel leerlingen';
 $string['respondenteligibleteachers'] = 'enkel leraren';
 $string['respondents'] = 'Respondenten';
 $string['respondenttype'] = 'Type respondent';
+$string['respondenttype_help'] = 'Je kunt de volledige naam van je gebruikers tonen bij ieder antwoord door dit in te stellen op "volledige naam". Je kunt de identiteit van je gebruikers verbergen door dit in te stellen op "anoniem".';
 $string['respondenttypeanonymous'] = 'anoniem';
 $string['respondenttypefullname'] = 'volledige naam';
-$string['respondenttype_help'] = 'Je kunt de volledige naam van je gebruikers tonen bij ieder antwoord door dit in te stellen op "volledige naam". Je kunt de identiteit van je gebruikers verbergen door dit in te stellen op "anoniem".';
 $string['response'] = 'Antwoord';
 $string['responsefieldlines'] = 'Afmetingen invoervak';
 $string['responseformat'] = 'Antwoordformat';
@@ -468,12 +470,12 @@ $string['sectiontext'] = 'Label';
 $string['sectiontext_help'] = 'Dit is geen vraag maar een korte tekst die wordt getoond om een reeks vragen in te leiden.';
 $string['selecttheme'] = 'Selecteer een thema (css) om met deze enquête te gebruiken.';
 $string['send'] = 'Verzenden';
+$string['send_message'] = 'Bericht verzenden aan geselecteerde gebruikers';
+$string['send_message_to'] = 'Bericht verzenden aan:';
 $string['sendemail'] = 'E-mail verzenden';
 $string['sendemail_help'] = 'Verstuurt een kopie van elke inzending naar een opgegeven mailadres of mailadressen. Je kunt meer dan één adres invoeren door deze met een komma te scheiden.
 Laat het veld leeg voor géén e-mail back-up.
 \'allowemailreporting\' moet aanstaan in de module instelling om deze functie te gebruiken.';
-$string['send_message'] = 'Bericht verzenden aan geselecteerde gebruikers';
-$string['send_message_to'] = 'Bericht verzenden aan:';
 $string['set'] = 'ingesteld';
 $string['settings'] = 'Instellingen';
 $string['settingssaved'] = 'Instellingen opgeslagen';
@@ -484,10 +486,10 @@ $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
 $string['strictdateformatting'] = 'Gebruik de jaar-maand-dag format, bijvoorbeeld voor 4 maart 1945 <strong>1945-03-04</strong>';
 $string['subject'] = 'Onderwerp';
 $string['submissionnotificationhtmlanon'] = 'Er is een nieuwe  <a href="{$a->submissionurl}">inzending</a> in de "{$a->name}" enquête.';
-$string['submissionnotificationhtmluser'] = 'Er is een nieuwe <a href="{$a->submissionurl}">inzending</a> in de "{$a->name}" enquête van "<a href="{$a->profileurl}">{$a->username}</a>".';
+$string['submissionnotificationhtmluser'] = '<a href="{$a->profileurl}">{$a->username}</a> heeft een nieuwe <a href="{$a->submissionurl}">inzending</a> in de "{$a->name}" enquête van cursus "{$a->coursename}".';
 $string['submissionnotificationsubject'] = 'Nieuwe inzending enquête';
 $string['submissionnotificationtextanon'] = 'Er is een nieuwe inzending ({$a->submissionurl}) in de "{$a->name}" enquête.';
-$string['submissionnotificationtextuser'] = 'Er is een nieuwe inzending ({$a->submissionurl}) in de "{$a->name}" enquête van "{$a->username}" ({$a->profileurl}).';
+$string['submissionnotificationtextuser'] = '{$a->username} ({$a->profileurl}) heeft een nieuwe inzending ({$a->submissionurl}) in de "{$a->name}" enquête van cursus "{$a->coursename}".';
 $string['submitoptions'] = 'Instuuropties';
 $string['submitpreview'] = 'Voorvertoning insturen';
 $string['submitpreviewcorrect'] = 'Deze inzending zou geaccepteerd worden als correct ingevuld.';

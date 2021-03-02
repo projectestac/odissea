@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,31 +12,32 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_standard', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'logstore_standard', language 'ar', version '3.8'.
  *
- * @package   logstore_standard
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     logstore_standard
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['buffersize'] = 'أكتب حجم المخزن الوسيط';
+$string['buffersize'] = 'اكتب حجم المخزن المؤقت';
 $string['jsonformat'] = 'تنسيق JSON';
 $string['jsonformat_desc'] = 'استخدم تنسيق JSON القياسي بدلاً من البيانات التسلسلية لـ PHP في حقل قاعدة البيانات "الآخر".';
-$string['pluginname'] = 'السجل القياسي';
-$string['pluginname_desc'] = 'ملحق سجل الوقوعات يخزن إدخالات السجل في جدول من قاعدة بيانات مودل.';
+$string['pluginname'] = 'سجل قياسي';
+$string['pluginname_desc'] = 'يخزن المكون الإضافي للسجل إدخالات السجل في جدول قاعدة بيانات Moodle.';
 $string['privacy:metadata:log'] = 'مجموعة من الأحداث الماضية';
 $string['privacy:metadata:log:anonymous'] = 'ما إذا كان قد تم الإبلاغ عن الحدث على أنه مجهول';
 $string['privacy:metadata:log:eventname'] = 'اسم الحدث';
 $string['privacy:metadata:log:ip'] = 'عنوان IP المستخدم في وقت الحدث';
 $string['privacy:metadata:log:origin'] = 'أصل الحدث';
 $string['privacy:metadata:log:other'] = 'معلومات إضافية حول الحدث';
-$string['privacy:metadata:log:realuserid'] = 'معرف المستخدم الحقيقي وراء الحدث، عند تنكر المستخدم';
+$string['privacy:metadata:log:realuserid'] = 'معرف المستخدم الحقيقي وراء الحدث ، عند تنكر المستخدم.';
 $string['privacy:metadata:log:relateduserid'] = 'معرف المستخدم المتعلق بهذا الحدث';
 $string['privacy:metadata:log:timecreated'] = 'الوقت الذي وقع فيه الحدث';
 $string['privacy:metadata:log:userid'] = 'معرف المستخدم الذي قام بتشغيل هذا الحدث';
-$string['taskcleanup'] = 'تنظيف سجل وقوعات الجدول';
+$string['taskcleanup'] = 'تنظيف سجل الجدول';

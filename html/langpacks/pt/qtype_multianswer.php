@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multianswer', language 'pt', version '3.8'.
  *
- * @package   qtype_multianswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multianswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,19 +42,19 @@ $string['nooptionsforsubquestion'] = 'Não foi possível obter as opções para 
 $string['noquestions'] = 'A pergunta de escolha múltipla incorporada "<strong>{$a}</strong>" não possui nenhuma pergunta.';
 $string['pleaseananswerallparts'] = 'Por favor, responda a todas as partes da pergunta.';
 $string['pluginname'] = 'Respostas incorporadas (cloze)';
-$string['pluginnameadding'] = 'A adicionar uma pergunta de respostas incorporadas (cloze)';
-$string['pluginnameediting'] = 'A editar uma pergunta de respostas incorporadas (cloze)';
 $string['pluginname_help'] = 'A pergunta de respostas incorporadas (cloze) consiste numa passagem de texto com perguntas de escolha múltipla e resposta curta incorporadas.';
 $string['pluginname_link'] = 'pergunta/tipo/incorporadas';
+$string['pluginnameadding'] = 'A adicionar uma pergunta de respostas incorporadas (cloze)';
+$string['pluginnameediting'] = 'A editar uma pergunta de respostas incorporadas (cloze)';
 $string['pluginnamesummary'] = 'Este tipo de perguntas é muito flexível, mas apenas podem ser criadas com a inserção de códigos especiais que criam perguntas de escolha múltipla, resposta curta e numérica incorporadas no meio de uma frase ou texto.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Respostas incorporadas não armazena dados pessoais.';
 $string['qtypenotrecognized'] = 'tipo de pergunta {$a} não reconhecido';
 $string['questiondefinition'] = 'Definição da pergunta';
 $string['questiondeleted'] = 'Pergunta apagada';
 $string['questioninquiz'] = '<ul>
-  <li>adicionar ou apagar perguntas</li>
-  <li>alterar a ordem das perguntas no texto</li>
-  <li>alterar o tipo de pergunta (numérica, resposta curta, escolha múltipla)</li></ul>';
+  <li>adicionar ou apagar perguntas, </li>
+  <li>alterar a ordem das perguntas no texto,</li>
+  <li>alterar o tipo de pergunta (numérica, resposta curta, escolha múltipla). </li></ul>';
 $string['questionnotfound'] = 'Não foi possível encontrar a pergunta da parte da pergunta #{$a}';
 $string['questionsadded'] = 'Pergunta adicionada';
 $string['questionsaveasedited'] = 'A pergunta será guardada como está';
@@ -63,7 +63,7 @@ $string['questionsmissing'] = 'Não existem perguntas válidas, crie pelo menos 
 $string['questionsmore'] = 'Mais {$a} pergunta(s) do que a pergunta de escolha múltipla guardada na base de dados';
 $string['questiontypechanged'] = 'Tipo de pergunta alterado';
 $string['questiontypechangedcomment'] = 'Pelo menos um tipo de pergunta foi alterado.<br />Adicionou, moveu ou apagou uma pergunta?<br />Veja em seguida.';
-$string['questionusedinquiz'] = 'Pergunta usada em {$a->nb_of_quiz} teste(s). Total de tentativas: {$a->nb_of_attempts}';
+$string['questionusedinquiz'] = 'Pergunta usada em {$a->nb_of_quiz} Teste(s), total de tentativas: {$a->nb_of_attempts}';
 $string['storedqtype'] = 'Tipo de pergunta {$a} restaurada';
 $string['subqresponse'] = 'parte {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Tipo de pergunta desconhecido: {$a->type} da parte da pergunta # {$a->sub}';

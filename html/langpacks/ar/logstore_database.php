@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,24 +12,25 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_database', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'logstore_database', language 'ar', version '3.8'.
  *
- * @package   logstore_database
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     logstore_database
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['buffersize'] = 'حجم المخزن الوسيط';
-$string['buffersize_help'] = 'عدد إدخالات سجل الوقوعات المُدخلة دفعة واحدة في قاعدة البيانات، مما يحسن الأداء.';
+$string['buffersize'] = 'حجم المخزن المؤقت';
+$string['buffersize_help'] = 'عدد إدخالات السجل التي يتم إدخالها في عملية قاعدة بيانات دُفعية واحدة ، مما يحسن الأداء.';
 $string['conectexception'] = 'لا يمكن الاتصال بقاعدة البيانات.';
 $string['create'] = 'إنشاء';
-$string['databasecollation'] = 'تجميع قاعدة البيانات';
-$string['databasehandlesoptions'] = 'قاعدة البيانات تعالج الخيارات';
+$string['databasecollation'] = 'ترتيب قاعدة البيانات';
+$string['databasehandlesoptions'] = 'قاعدة بيانات تعالج الخيارات';
 $string['databasehandlesoptions_help'] = 'هل تعالج قاعدة البيانات عن بعد خياراتها الخاصة.';
 $string['databasepersist'] = 'اتصالات قاعدة البيانات المستمرة';
 $string['databaseschema'] = 'مخطط قاعدة البيانات';
@@ -39,12 +39,12 @@ $string['databasesettings_help'] = 'تفاصيل الاتصال لقاعدة ب�
 $string['databasetable'] = 'جدول قاعدة البيانات';
 $string['databasetable_help'] = 'اسم الجدول حيث سيتم تخزين السجلات. يجب أن يحتوي هذا الجدول على بنية مماثلة لتلك المستخدمة من قبل logstore_standard (mdl_logstore_standard_log).';
 $string['filters'] = 'تصفية السجلات';
-$string['filters_help'] = 'تمكين المنقحات التي تستبعد بعض الإجراءات من التسجيل.';
-$string['includeactions'] = 'شمول الإجراءات التي بهذه الأنواع';
-$string['includelevels'] = 'شمول إجراءات هذه المستويات التعليمية';
+$string['filters_help'] = 'تمكين عوامل التصفية التي تستبعد بعض الإجراءات من التسجيل.';
+$string['includeactions'] = 'تشمل الإجراءات من هذه الأنواع';
+$string['includelevels'] = 'تشمل الإجراءات مع هذه المستويات التعليمية';
 $string['jsonformat'] = 'تنسيق JSON';
 $string['jsonformat_desc'] = 'استخدم تنسيق JSON القياسي بدلاً من البيانات التسلسلية لـ PHP في حقل قاعدة البيانات "الآخر".';
-$string['logguests'] = 'توثيق إجراءات الضيف';
+$string['logguests'] = 'تسجيل إجراءات الضيف';
 $string['other'] = 'آخر';
 $string['participating'] = 'المشاركة';
 $string['pluginname'] = 'سجل قاعدة البيانات الخارجية';
@@ -55,13 +55,13 @@ $string['privacy:metadata:log:eventname'] = 'اسم الحدث';
 $string['privacy:metadata:log:ip'] = 'عنوان IP المستخدم في وقت الحدث';
 $string['privacy:metadata:log:origin'] = 'أصل الحدث';
 $string['privacy:metadata:log:other'] = 'معلومات إضافية حول الحدث';
-$string['privacy:metadata:log:realuserid'] = 'معرف المستخدم الحقيقي وراء الحدث، عند تنكر المستخدم';
+$string['privacy:metadata:log:realuserid'] = 'معرف المستخدم الحقيقي وراء الحدث ، عند التنكر للمستخدم.';
 $string['privacy:metadata:log:relateduserid'] = 'معرف المستخدم المتعلق بهذا الحدث';
 $string['privacy:metadata:log:timecreated'] = 'الوقت الذي وقع فيه الحدث';
 $string['privacy:metadata:log:userid'] = 'معرف المستخدم الذي قام بتشغيل هذا الحدث';
-$string['read'] = 'قراءة';
+$string['read'] = 'اقرأ';
 $string['tablenotfound'] = 'لم يتم العثور على جدول محدد';
-$string['teaching'] = 'التدريس';
+$string['teaching'] = 'تعليم';
 $string['testingsettings'] = 'اختبار إعدادات قاعدة البيانات ...';
 $string['testsettings'] = 'اختبار الاتصال';
 $string['update'] = 'تحديث';

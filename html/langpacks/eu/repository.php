@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository', language 'eu', version '3.8'.
  *
- * @package   repository
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,6 +57,7 @@ $string['cannotdownload'] = 'Ezin da fitxategi hau jaitsi';
 $string['cannotdownloaddir'] = 'Ezin da karpeta hau jaitsi';
 $string['cannotinitplugin'] = 'Errorea plugin_init-era deia egitean';
 $string['cannotunzipcontentunreadable'] = 'Ezin da fitxategi hau erauzi bere edukiak ezin direlako irakurri.';
+$string['cannotunzipextractfileerror'] = 'Ezin da fitxategia deskonprimatu fitxategiren bat ezin delako irakurri.';
 $string['cannotunzipquotaexceeded'] = 'Ezin da fitxategia erauzi eremu honetako gehienezko tamaina gaindituko litzatekeelako.';
 $string['choosealink'] = 'Aukeratu esteka bat...';
 $string['chooselicense'] = 'Aukeratu lizentzia';
@@ -65,15 +66,15 @@ $string['close'] = 'Itxi';
 $string['commonrepositorysettings'] = 'Biltegien ezarpen komunak';
 $string['configallowexternallinks'] = 'Aukera honek erabiltzaile guztiei kanpoko multimedia Moodlera kopiatu nahi duen edo ez erabakitzeko aukera ematen die. Aukera desgaituta badago multimedia fitxategiak beti Moodlera kopiatzen dira (datu-osotasuna eta segurtasun aldetik hau da normalean aukerarik onena). Aukera gaituz gero erabiltzaileak multimedia fitxategiak gehitzen dituen bakoitzean aukeratu ahal izango du.';
 $string['configcacheexpire'] = 'Fitxategi-zerrendak lokalki cacheatuta mantenduko diren denbora (segundoetan) kanpo-biltegietan nabigatzean.';
-$string['configgetfiletimeout'] = 'Kanpoko fitxategi bat Moodlera jaistean erabili beharreko gehienezko denbora (segundoetan).';
+$string['configgetfiletimeout'] = 'Kanpoko fitxategi bat Moodle-ra jaistean erabili beharreko gehienezko denbora (segundoetan).';
 $string['configsaved'] = 'Ezarpenak gordeta!';
 $string['configsyncfiletimeout'] = 'Kanpoko fitxategi baten tamaina sinkronizatzeko gehienezko denbora (segundoetan).';
 $string['configsyncimagetimeout'] = 'Kanpoko fitxategi baten irudia kanpo-biltegitik jaisteko gehienezko denbora (segundoetan)sinkronizazioa egiten denean.';
-$string['confirmdelete'] = 'Ziur zaude {$a} biltegia ezabatu nahi duzula? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodlera jaitsiko dira, baina hori egiteko denbora luzea eraman dezake.';
+$string['confirmdelete'] = 'Ziur zaude {$a} biltegia ezabatu nahi duzula? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodle-ra jaitsiko dira, baina hori egiteko denbora luzea eraman dezake.';
 $string['confirmdeletefile'] = 'Ziur zaude fitxategi hau ezabatu nahi duzula?';
 $string['confirmdeletefilewithhref'] = 'Ziur zaude fitxategi hau ezabatu nahi duzula? {$a} ezizen/esteka daude fitxategi hau jatorritzat dutenak. Jarraituz gero esteka horiek benetako kopiak bihurtuko dira.';
 $string['confirmdeletefolder'] = 'Ziur zaude karpeta hau ezabatu nahi duzula? Fitxategi eta azpikarpeta guztiak ere ezabatuko dira.';
-$string['confirmremove'] = 'Ziur zaude biltegi-plugin hau ezabatu nahi duzula, aukerak eta <strong>instantzia guztiak</strong> barne - {$a}? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodlera jaitsiko dira. Lan honek denbora luzea eraman dezake.';
+$string['confirmremove'] = 'Ziur zaude biltegi-plugin hau ezabatu nahi duzula, aukerak eta <strong>instantzia guztiak</strong> barne - {$a}? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodle-ra jaitsiko dira. Lan honek denbora luzea eraman dezake.';
 $string['confirmrenamefile'] = 'Ziur zaude fitxategi hau berrizendatu/mugitu nahi duzula? {$a} ezizen/esteka daude fitxategi hau jatorritzat dutenak. Jarraituz gero esteka horiek benetako kopiak bihurtuko dira.';
 $string['confirmrenamefolder'] = 'Ziur zaude karpeta hau mugitu/berrizendatu nahi duzula? Karpeta horretan dagoen edozein ezizen/esteka benetako kopia bihurtuko da.';
 $string['continueuninstall'] = 'Jarraitu';
@@ -107,7 +108,7 @@ $string['downloadsucc'] = 'Fitxategia ondo jaitsi da';
 $string['draftareanofiles'] = 'Ezin da jaitsi zeren ez baitago erantsitako fitxategirik';
 $string['editrepositoryinstance'] = 'Editatu biltegi-instantzia';
 $string['emptylist'] = 'Zerrenda hutsik dago';
-$string['emptytype'] = 'Ezin da bltegi-mota sortu: motaren zena hutsik dago';
+$string['emptytype'] = 'Ezin da bltegi mota sortu: motaren zena hutsik dago';
 $string['enablecourseinstances'] = 'Baimendu erabiltzaileei biltegiko elementu bat ikastaroan gehitzea';
 $string['enableuserinstances'] = 'Baimendu erabiltzaileei biltegiko elementu bat erabiltzailearen testuinguruan gehitzea';
 $string['enter'] = 'Sartu';
@@ -145,10 +146,10 @@ $string['instances'] = 'Biltegi-instantziak';
 $string['instancesforcourses'] = 'Ikastaroetarako {$a} instantzia komun';
 $string['instancesforsite'] = 'Gune osorako {$a} instantzia komun';
 $string['instancesforusers'] = 'Erabiltzaileen {$a} instantzia pribatu';
-$string['invalidfiletype'] = '{$a} fitxategi-mota ezin da onartu.';
+$string['invalidfiletype'] = '{$a} fitxategi mota ezin da onartu.';
 $string['invalidjson'] = 'JSON katea ez da baliagarria';
 $string['invalidparams'] = 'Parametro baliogabeak';
-$string['invalidplugin'] = '{$a} biltegi-gehigarri baliogabea';
+$string['invalidplugin'] = '{$a} biltegi-plugin baliogabea';
 $string['invalidrepositoryid'] = 'Biltegiaren IDa ez da baliagarria';
 $string['isactive'] = 'Aktiboa?';
 $string['keyword'] = 'Gakoa';
@@ -199,7 +200,7 @@ $string['pluginnamehelp'] = 'Hau hutsik utziz gero, lehenetsitako izena erabilik
 $string['popup'] = 'Egin klik "Sartu" botoian saioa hasteko';
 $string['popupblockeddownload'] = 'Deskargarako leihoa blokeatuta dago, mesedez baimendu popup leihoa eta saiatu berriz ere.';
 $string['preview'] = 'Aurreikusi';
-$string['privacy:metadata:repository'] = 'Biltegien osagaiak sistemako biltegi-motak gordetzen ditu.';
+$string['privacy:metadata:repository'] = 'Biltegien osagaiak sistemako biltegi motak gordetzen ditu.';
 $string['privacy:metadata:repository_instances'] = 'Biltegien pluginen osagaiak sistemako erabiltzaileen biltegien instantziak gordetzen ditu.';
 $string['privacy:metadata:repository_instances:name'] = 'Biltegi-instantziaren izen pertsonalitzatua.';
 $string['privacy:metadata:repository_instances:password'] = 'Biltegi-instantziarentzako konfiguratutako pasahitza (aukerazkoa).';

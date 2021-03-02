@@ -1,7 +1,47 @@
-Release notes for Agora-Moodle2 (http://agora.xtec.cat)
+Release notes for Agora-Moodle2 (https://agora.xtec.cat)
 
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
+
+
+Changes 21.03.01
+---------------------------------------------------------------------------------------
+- Updated language packages
+
+
+Changes 21.02.09
+---------------------------------------------------------------------------------------
+- Upgraded Moodle from v3.8.6 to v3.8.7
+- Updated language packages
+- Upgraded all wiris plugins
+- Upgraded block completion_progress
+- Upgraded atto plugin cloze
+- Upgraded module choicegroup
+- Theme xtec2020: Fixed preference of uploaded logo before default logo
+- Theme xtec2020: Internal improvements to code
+- rcontent: FIX user_picture object evaluation
+- Local Agora: Improvements to code quality. Added script to calculate course quotas
+- Alexandria importer: Fixed error in development mode. Removed reference to non-existing node
+- Coursequotas: Added tables to cache quota usage by course and category and load data from cache tables
+- Backported MDL-47750 to allow copy & paste images from clipboard to the atto editor
+
+
+Changes 20.12.10
+---------------------------------------------------------------------------------------
+- Upgraded Moodle from v3.8.5 to v3.8.6
+- Updated language packages
+- Upgraded module clickedu
+- Upgraded all wiris plugins
+- Upgraded module jclic
+- Upgraded block completion_progress
+- Upgraded atto plugin Cloze
+- Theme xtec2020: Added colorset PEDC and reworked general design
+- Theme xtec2020: Replaced specific xtecadmin check by generic access function, compatible with Odissea and Alexandria
+- User bulk capitalize: Fixed functionality
+- Local Agora: Updated cache definitions
+- Local Agora: Fixed loading colorset from Nodes
+- Reduced minimum time between cron executions to 8 minutes
+
 
 Changes 20.10.26
 ---------------------------------------------------------------------------------------

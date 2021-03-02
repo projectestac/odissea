@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'ja', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -119,14 +119,6 @@ $string['destination'] = 'インポート先';
 $string['destination_help'] = 'エントリは現在の用語集または新しい用語集にインポートおよび追加することができます。この場合、新しい用語集はXMLファイルの情報に基づき作成されます。';
 $string['disapprove'] = '承認を取り消す';
 $string['displayformat'] = '表示フォーマット';
-$string['displayformatcontinuous'] = '連続 - 著者なし';
-$string['displayformatdefault'] = '表示フォーマットと同じデフォルトにする';
-$string['displayformatdictionary'] = 'シンプル - 辞書スタイル';
-$string['displayformatencyclopedia'] = '百科事典';
-$string['displayformatentrylist'] = 'エントリリスト';
-$string['displayformatfaq'] = 'FAQ';
-$string['displayformatfullwithauthor'] = 'フル - 著者あり';
-$string['displayformatfullwithoutauthor'] = 'フル - 著者なし';
 $string['displayformat_help'] = '用語集には以下7つの表示フォーマットがあります:
 
 *シンプル、辞書スタイル - 著者は表示されず、添付はリンクとして表示されます。
@@ -136,6 +128,14 @@ $string['displayformat_help'] = '用語集には以下7つの表示フォーマ�
 *百科辞書 - 「フル、著者有り」のように表示されます。イメージは用語集の内部に表示されます。
 *エントリリスト - 用語をリンクとして一覧表示します。
 *FAQ - それぞれの「用語」および「定義」に対して、自動的に「質問」および「答え」の文字が追加されます。';
+$string['displayformatcontinuous'] = '連続 - 著者なし';
+$string['displayformatdefault'] = '表示フォーマットと同じデフォルトにする';
+$string['displayformatdictionary'] = 'シンプル - 辞書スタイル';
+$string['displayformatencyclopedia'] = '百科事典';
+$string['displayformatentrylist'] = 'エントリリスト';
+$string['displayformatfaq'] = 'FAQ';
+$string['displayformatfullwithauthor'] = 'フル - 著者あり';
+$string['displayformatfullwithoutauthor'] = 'フル - 著者なし';
 $string['displayformats'] = '表示フォーマット';
 $string['displayformatssetup'] = '表示フォーマット設定';
 $string['duplicatecategory'] = '重複カテゴリ';
@@ -202,18 +202,18 @@ $string['glossary:export'] = 'エントリをエクスポートする';
 $string['glossary:exportentry'] = '単一エントリをエクスポートする';
 $string['glossary:exportownentry'] = 'あなたの単一エントリをエクスポートする';
 $string['glossary:import'] = 'エントリをインポートする';
-$string['glossaryleveldefaultsettings'] = '用語集レベルのデフォルト設定';
 $string['glossary:managecategories'] = 'カテゴリを管理する';
 $string['glossary:managecomments'] = 'コメントを管理する';
 $string['glossary:manageentries'] = 'エントリを管理する';
 $string['glossary:rate'] = 'エントリを評価する';
-$string['glossarytype'] = '用語集タイプ';
-$string['glossarytype_help'] = 'メイン用語集はサブ用語集からエントリをインポートできる用語集です。コース内でのメイン用語集は1つのみ存在することができます。用語集エントリのインポートが必須ではない場合、コース内の用語集すべてをサブ用語集にすることができます。';
 $string['glossary:view'] = '用語集を表示する';
 $string['glossary:viewallratings'] = '個別のユーザから与えられた実評価すべてを表示する';
 $string['glossary:viewanyrating'] = 'すべてのユーザが受けた評価合計を表示する';
 $string['glossary:viewrating'] = 'あなたが受けた評価合計を表示する';
 $string['glossary:write'] = '新しいエントリを作成する';
+$string['glossaryleveldefaultsettings'] = '用語集レベルのデフォルト設定';
+$string['glossarytype'] = '用語集タイプ';
+$string['glossarytype_help'] = 'メイン用語集はサブ用語集からエントリをインポートできる用語集です。コース内でのメイン用語集は1つのみ存在することができます。用語集エントリのインポートが必須ではない場合、コース内の用語集すべてをサブ用語集にすることができます。';
 $string['guestnoedit'] = 'ゲストは用語集を編集できません。';
 $string['importcategories'] = 'カテゴリをインポートする';
 $string['importedcategories'] = 'インポート済みカテゴリ';
@@ -222,13 +222,13 @@ $string['importentries'] = 'エントリをインポートする';
 $string['importentriesfromxml'] = 'エントリをXMLファイルからインポートする';
 $string['includegroupbreaks'] = 'グループ区切りを含む';
 $string['indicator:cognitivedepth'] = '用語集認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標は用語集活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = '用語集認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者が用語集活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信)。';
-$string['indicator:cognitivedepth_help'] = 'この指標は用語集活動で学生が到達した認識深度に基づきます。';
 $string['indicator:socialbreadth'] = '用語集社会的';
+$string['indicator:socialbreadth_help'] = 'この指標は用語集活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = '用語集社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者が用語集活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
-$string['indicator:socialbreadth_help'] = 'この指標は用語集活動で学生が到達した社会的広がりに基づきます。';
 $string['isglobal'] = 'これはグローバル用語集ですか?';
 $string['isglobal_help'] = '用語集エントリがコース内でのみリンクされるのに対してグローバル用語集はサイト全体からリンクされるエントリを持つことができます。管理者のみ用語集をグローバルに設定することができます。';
 $string['letter'] = 'アルファベット';

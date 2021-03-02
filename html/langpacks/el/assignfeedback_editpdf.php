@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'el', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -74,7 +74,7 @@ $string['oval'] = 'Οβάλ';
 $string['pagenumber'] = 'Σελίδα {$a}';
 $string['pagexofy'] = 'Σελίδα {$a->page} από {$a->total}';
 $string['partialwarning'] = 'Ορισμένα από τα αρχεία αυτής της υποβολής μπορούν να προσπελαστούν μόνο με άμεση λήψη.';
-$string['pathtogspathdesc'] = 'Παρακαλούμε έχετε υπόψη ότι για επισημειώσεις PDF απαιτείται το μονοπάτι του ghostscript να τίθεται σε {$a}.';
+$string['pathtogspathdesc'] = 'Παρακαλούμε έχετε υπόψη ότι για επισημειώσεις PDF απαιτείται η διαδρομή του ghostscript να τίθεται σε {$a}.';
 $string['pen'] = 'Πένα';
 $string['pluginname'] = 'Επισημείωση PDF';
 $string['preparesubmissionsforannotation'] = 'Προετοιμασία υποβολών για επισημειώσεις';
@@ -95,14 +95,14 @@ $string['select'] = 'Επιλογή';
 $string['stamp'] = 'Στάμπα';
 $string['stamppicker'] = 'Επιλογέας στάμπας';
 $string['stamps'] = 'Στάμπες';
-$string['stampsdesc'] = 'Οι σφραγίδες πρέπει να είναι αρχεία εικόνας (συνιστώμενο μέγεθος: 40x40). Αυτές οι εικόνες μπορούν να χρησιμοποιηθούν με το εργαλείο σφραγίδας για επισημειώσεις πάνω στο PDF.';
+$string['stampsdesc'] = 'Οι σφραγίδες πρέπει να είναι αρχεία εικόνας (προτεινόμενο μέγεθος: 40x40). Αυτές οι εικόνες μπορούν να χρησιμοποιηθούν με το εργαλείο σφραγίδας για επισημειώσεις πάνω στο PDF.';
 $string['test_doesnotexist'] = 'Το μονοπάτι του ghostscript οδηγεί σε ένα ανύπαρκτο αρχείο';
 $string['test_empty'] = 'Το μονοπάτι του ghostscript είναι κενό. Παρακαλούμε, δώστε το σωστό μονοπάτι.';
-$string['testgs'] = 'Δοκιμή διαδρομής ghostscript';
 $string['test_isdir'] = 'Το μονοπάτι του ghostscript οδηγεί σε ένα φάκελο. Παρακαλούμε, στο μονοπάτι που καθορίζετε, να συμπεριλάβετε και το αρχείο του προγράμματος ghostscript.';
 $string['test_notestfile'] = 'Το δοκιμαστικό PDF λείπει';
 $string['test_notexecutable'] = 'Το ghostscript δείχνει σε ένα αρχείο που δεν είναι εκτελέσιμο';
 $string['test_ok'] = 'Το μονοπάτι του ghostscript φαίνεται να είναι ΟΚ - παρακαλούμε ελέγξτε αν μπορείτε να δείτε το μήνυμα στην παρακάτω εικόνα';
+$string['testgs'] = 'Δοκιμή διαδρομής ghostscript';
 $string['tool'] = 'Εργαλείο';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Εμφάνιση επισημειωμένου PDF...';

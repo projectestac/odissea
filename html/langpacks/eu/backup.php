@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'eu', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -119,13 +119,19 @@ $string['choosefilefromcoursebackup'] = 'Ikastaroaren segurtasun-kopien eremua';
 $string['choosefilefromcoursebackup_help'] = 'Ikastaro baten segurtasun-kopia ezarpen lehenetsiak erabiliz egiten denean, kopiaren fitxategiak hemen gordeko dira.';
 $string['choosefilefromuserbackup'] = 'Erabiltzailearen segurtasun-kopietarako eremu pribatua';
 $string['choosefilefromuserbackup_help'] = 'Ikastaroen segurtasun-kopiak anonimo bihurtutako erabiltzaileen informazioa duenean, segurtasun-kopien fitxategiak hemen gordeko dira.';
+$string['config_keep_groups_and_groupings'] = 'Mantendu uneko taldeak eta talde-multzoak modu lehenetsian.';
+$string['config_keep_roles_and_enrolments'] = 'Mantendu uneko rolak eta matrikulazioak modu lehenetsian.';
+$string['config_overwrite_conf'] = 'Baimendu erabiltzaileak uneko ikastaroaren ezarpenak gainidaztea';
+$string['config_overwrite_course_fullname'] = 'Gainidatzi ikastaroaren izen osoa segurtasun-kopian dagoenarekin modu lehenetsian. Ezarpen honek "Ikastaroaren ezarpenak gainidatzi" markatuta egotea eta uneko erabiltzaileak ikastaroaren izen osoa aldatzeko gaitasuna (moodle/course:changefullname) izatea behar du.';
+$string['config_overwrite_course_shortname'] = 'Gainidatzi ikastaroaren izen laburra segurtasun-kopian dagoenarekin modu lehenetsian. Ezarpen honek "Ikastaroaren ezarpenak gainidatzi" markatuta egotea eta uneko erabiltzaileak ikastaroaren izen laburra aldatzeko gaitasuna (moodle/course:changeshortname) izatea behar du.';
+$string['config_overwrite_course_startdate'] = 'Gainidatzi ikastaroaren hasiera- eta amaiera-data segurtasun-kopian dagoenarekin modu lehenetsian. Ezarpen honek "Ikastaroaren ezarpenak gainidatzi" markatuta egotea eta uneko erabiltzaileak berreskuratzean ikastaroaren datak aldatzeko gaitasuna (moodle/restore:rolldates) izatea behar du.';
 $string['configgeneralactivities'] = 'Jarduerak segurtasun-kopietan sartzeko lehenetsitako balioa zehazten du.';
 $string['configgeneralanonymize'] = 'Gaituz gero modu lehenetsian erabiltzaileei buruzko informazio guztia anonimo bihurtuko da.';
 $string['configgeneralbadges'] = 'Dominak segurtasun-kopietan sartzeko lehenetsitako balioa zehazten du.';
 $string['configgeneralblocks'] = 'Blokeak segurtasun-kopia batean sartzeko lehenetsitako balioa zehazten du.';
 $string['configgeneralcalendarevents'] = 'Egutegiko ekitaldiak segurtasun-kopietan sartzeko lehenetsitako balioa zehazten du.';
 $string['configgeneralcomments'] = 'Iruzkinak segurtasun-kopia batean sartzeko lehenetsitako balioa zehazten du.';
-$string['configgeneralcompetencies'] = 'Konpetentziak segurtasun-kopietan sartzeko lehenetsitako balioa zehazten du.';
+$string['configgeneralcompetencies'] = 'Ezarri konpetentziak segurtasun-kopietan sartzeko lehenetsitako balioak.';
 $string['configgeneralfiles'] = 'Segurtasun-kopian fitxategiak modu lehenetsian sartzeko ezarpena. Mesedez kontuan izan hurrengoa: ezarpen hau desgaitzearen emaitza fitxategietarako erreferentziak baino ez dituen segurtasun-kopia bat izango da. Hau ez da arazo bat izango segurtasun-kopia gune berean berreskuratzen bada eta bitartean fitxategiak ez badira ezabatu \'Garbitu zakarrontziko fitxategiak\' (filescleanupperiod) ezarpenaren arabera.';
 $string['configgeneralfilters'] = 'Iragazkiak segurtasun-kopia batean sartzeko lehenetsitako balioa zehazten du.';
 $string['configgeneralgroups'] = 'Taldeak eta talde-multzoak segurtasun-kopietan sartzeko lehenetsitako balioa zehazten du.';
@@ -135,13 +141,7 @@ $string['configgeneralquestionbank'] = 'Gaituz gero galdera-bankua modu lehenets
 $string['configgeneralroleassignments'] = 'Gaituz gero, rol-esleipenak modu lehenetsian sartuko dira segurtasun-kopietan.';
 $string['configgeneralusers'] = 'Erabiltzaileak segurtasun-kopietan sartzeko lehenetsitako balioa zehazten du.';
 $string['configgeneraluserscompletion'] = 'Gaituz gero, erabiltzaileen osaketa-informazioa modu lehenetsian sartuko da segurtasun-kopietan.';
-$string['config_keep_groups_and_groupings'] = 'Mantendu uneko taldeak eta talde-multzoak modu lehenetsian.';
-$string['config_keep_roles_and_enrolments'] = 'Mantendu uneko rolak eta matrikulazioak modu lehenetsian.';
 $string['configloglifetime'] = 'Honek agerraldian mantendu beharreko erregistroen gehienezko epea zehazten du. Epe hau baino zaharragoak diren erregistroak automatikoki ezabatuko dira. Hemen balio txikia mantentzea gomendatzen da, agerraldietako informazioaren segurtasun-kopiak erraldoiak izan daitezkeelako.';
-$string['config_overwrite_conf'] = 'Baimendu erabiltzaileak uneko ikastaroaren ezarpenak gainidaztea';
-$string['config_overwrite_course_fullname'] = 'Gainidatzi ikastaroaren izen osoa segurtasun-kopian dagoenarekin modu lehenetsian. Ezarpen honek "Ikastaroaren ezarpenak gainidatzi" markatuta egotea eta uneko erabiltzaileak ikastaroaren izen osoa aldatzeko gaitasuna (moodle/course:changefullname) izatea behar du.';
-$string['config_overwrite_course_shortname'] = 'Gainidatzi ikastaroaren izen laburra segurtasun-kopian dagoenarekin modu lehenetsian. Ezarpen honek "Ikastaroaren ezarpenak gainidatzi" markatuta egotea eta uneko erabiltzaileak ikastaroaren izen laburra aldatzeko gaitasuna (moodle/course:changeshortname) izatea behar du.';
-$string['config_overwrite_course_startdate'] = 'Gainidatzi ikastaroaren hasiera- eta amaiera-data segurtasun-kopian dagoenarekin modu lehenetsian. Ezarpen honek "Ikastaroaren ezarpenak gainidatzi" markatuta egotea eta uneko erabiltzaileak berreskuratzean ikastaroaren datak aldatzeko gaitasuna (moodle/restore:rolldates) izatea behar du.';
 $string['configrestoreactivities'] = 'Jarduerak berreskuratzeko lehenetsitako balioa zehazten du.';
 $string['configrestorebadges'] = 'Dominak berreskuratzeko lehenetsitako balioa zehazten du.';
 $string['configrestoreblocks'] = 'Blokeak berreskuratzeko lehenetsitako balioa zehazten du.';
@@ -174,11 +174,11 @@ $string['currentstage2'] = 'Egituraren ezarpenak';
 $string['currentstage4'] = 'Egiaztatu eta berrikusi';
 $string['currentstage8'] = 'Egin segurtasun-kopia';
 $string['enableasyncbackup'] = 'Gaitu segurtasun-kopia asinkronoak';
-$string['enableasyncbackup_help'] = 'Gaituz gero, segurtasun-kopia eta berreskuratze-lan guztiak era asinkronoan egingo dira. Horrek ez du eraginik inportazio eta esportazioetan. Segurtasun-kopia eta berreskuratze asinkronoek ahalbidetzen dute erabiltzaileek beste eragiketak egin ditzaten, segurtasun-kopiak eta berreskuratzeak atzeko planoan egiten ari diren bitartean.';
+$string['enableasyncbackup_help'] = 'Gaituz gero, segurtasun-kopia eta berreskuratze-lan guztiak era asinkronoan egingo dira. Horrek ez du eraginik inportazio eta esportazioetan. Segurtasun-kopia eta berreskuratze asinkronoek erabiltzaileek, segurtasun-kopiak eta berreskuratzeak atzeko planoan egiten ari diren bitartean, beste eragiketak egin ditzaten ahalbidetzen dute.';
 $string['enterasearch'] = 'Idatzi bilaketa bat';
 $string['error_block_for_module_not_found'] = 'Bloke-instantzia umezurtza (id: {$a->bid}) aurkitu da (id: {$a->mid}) ikastaro-modulurako. Bloke hau ez da berreskuratuko';
-$string['errorcopyingbackupfile'] = 'Errorea gertatu da segurtasun-kopia fitxategia aldi baterako karpetara kopiatzean berreskuratzea hasi aurretik.';
 $string['error_course_module_not_found'] = 'Ikastaro-modulu umezurtza (id: {$a})  aurkitu da. Modulu hau ez da segurtausn-kopian gehituko.';
+$string['errorcopyingbackupfile'] = 'Errorea gertatu da segurtasun-kopia fitxategia aldi baterako karpetara kopiatzean berreskuratzea hasi aurretik.';
 $string['errorfilenamemustbezip'] = 'Sartzen duzun fitxategiak ZIP motakoa izan behar du eta .mbz luzapena behar du izan';
 $string['errorfilenamerequired'] = 'Fitxategi-izen egokia zehaztu behar duzu segurtasun-kopia honetarako';
 $string['errorfilenametoolong'] = 'Fitxategi-izenaren luzera gehienez 255 karakterekoa izan behar da.';
@@ -219,7 +219,7 @@ $string['generalroleassignments'] = 'Rol-esleipenak barne ditu';
 $string['generalsettings'] = 'Segurtasun-kopia orokorren ezarpenak';
 $string['generalusers'] = 'Erabiltzaileak barne ditu';
 $string['generaluserscompletion'] = 'Erabiltzaileen osaketa-informazioa barne du';
-$string['hidetypes'] = 'Ezkutatu aukera-motak';
+$string['hidetypes'] = 'Ezkutatu aukera motak';
 $string['importbackupstage16action'] = 'Jarraitu';
 $string['importbackupstage1action'] = 'Hurrengoa';
 $string['importbackupstage2action'] = 'Hurrengoa';
@@ -272,14 +272,14 @@ $string['pendingasyncerror'] = 'Baliabide honetarako segurtasun-kopiaren zain';
 $string['preparingdata'] = 'Datuak prestatzen';
 $string['preparingui'] = 'Orria erakusteko prestatzen';
 $string['previousstage'] = 'Aurrekoa';
+$string['privacy:metadata:backup:detailsofarchive'] = 'Artxibo honek erabiltzaileekin lotutako datuak izan ditzake, hala nola kalifikazioak, erabiltzaile-matrikulazioak eta jardueretako datuak.';
+$string['privacy:metadata:backup:externalpurpose'] = 'Artxibo honen helburua ikastaro batekin lotutako informazioa gordetzea da, etorkizunean berreskuratu ahal dena.';
 $string['privacy:metadata:backup_controllers'] = 'Segurtasun-kopietarako eragiketen zerrenda';
 $string['privacy:metadata:backup_controllers:itemid'] = 'Ikastaroaren IDa';
 $string['privacy:metadata:backup_controllers:operation'] = 'Egindako ekintza, adibidez berreskuratu.';
 $string['privacy:metadata:backup_controllers:timecreated'] = 'Ekintza sortu zeneko unea';
 $string['privacy:metadata:backup_controllers:timemodified'] = 'Ekintza aldatu zeneko unea';
-$string['privacy:metadata:backup_controllers:type'] = 'Maneiatutako elementu-mota, adibidez jarduera.';
-$string['privacy:metadata:backup:detailsofarchive'] = 'Artxibo honek erabiltzaileekin lotutako datuak izan ditzake, hala nola kalifikazioak, erabiltzaile-matrikulazioak eta jardueretako datuak.';
-$string['privacy:metadata:backup:externalpurpose'] = 'Artxibo honen helburua ikastaro batekin lotutako informazioa gordetzea da, etorkizunean berreskuratu ahal dena.';
+$string['privacy:metadata:backup_controllers:type'] = 'Maneiatutako elementu mota, adibidez jarduera.';
 $string['qcategory2coursefallback'] = '"{$a->name}" izeneko galdera-kategoriak, jatorrian sistema/ikastaro-kategoria testuinguruan segurtasun-kopian, berreskuratzean ikastaro testuinguruan sortuko da.';
 $string['qcategorycannotberestored'] = '"{$a->name}"  galdera-kategoria ezin da sortu berreskuratuta';
 $string['question2coursefallback'] = '"{$a->name}" izeneko galdera-kategoriak, jatorrian sistema/ikastaro-kategoria testuinguruan segurtasun-kopian, berreskuratzean ikastaro testuinguruan sortuko da.';
@@ -362,7 +362,7 @@ $string['setting_overwrite_conf'] = 'Gainidatzi ikastaroaren ezarpenak';
 $string['setting_overwrite_course_fullname'] = 'Gainidatzi ikastaroaren izen osoa';
 $string['setting_overwrite_course_shortname'] = 'Gainidatzi ikastaroaren izen laburra';
 $string['setting_overwrite_course_startdate'] = 'Gainidatzi ikastaroaren hasiera-data';
-$string['showtypes'] = 'Erakutsi aukera-motak';
+$string['showtypes'] = 'Erakutsi aukera motak';
 $string['sitecourseformatwarning'] = 'Hau hasiera-orriko segurtasun-kopia bat da, kontuan izan soilik hasiera-orrian berreskura daitekeela.';
 $string['skiphidden'] = 'Utzi alde batera ezkutuan dauden ikastaroak';
 $string['skiphiddenhelp'] = 'Aukeratu ezkutuan dauden ikastaroak alde batera uztea edo ez';

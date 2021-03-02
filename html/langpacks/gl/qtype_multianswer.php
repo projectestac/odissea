@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multianswer', language 'gl', version '3.8'.
  *
- * @package   qtype_multianswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multianswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,19 +33,19 @@ $string['decodeverifyquestiontext'] = 'Decodificar e comprobar o texto da pregun
 $string['invalidmultianswerquestion'] = 'Pregunta de respostas incrustadas (Cloze) non válida({$a}).';
 $string['layout'] = 'Deseño';
 $string['layouthorizontal'] = 'Fila horizontal de botóns de opción';
-$string['layoutmultiple_horizontal'] = 'Fila horizontal de caixas de selección';
-$string['layoutmultiple_vertical'] = 'Fila vertical de caixas de selección';
-$string['layoutselectinline'] = 'Menú despregábel a continuación do texto';
+$string['layoutmultiple_horizontal'] = 'Fila horizontal de caixas de verificación';
+$string['layoutmultiple_vertical'] = 'Fila vertical de caixas de verificación';
+$string['layoutselectinline'] = 'Menú despregábel en liña no texto';
 $string['layoutundefined'] = 'Deseño sen definir';
 $string['layoutvertical'] = 'Columna vertical de botóns de opción';
 $string['nooptionsforsubquestion'] = 'Non foi posíbel obter as opcións para a pregunta part # {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'A pregunta Cloze(multiresposta) «<strong>{$a}</strong>» non contén ningunha pregunta';
 $string['pleaseananswerallparts'] = 'Responda a todas as partes da pregunta.';
 $string['pluginname'] = 'Respostas incorporadas (Cloze)';
+$string['pluginname_help'] = 'As respostas incorporadas (Cloze) a preguntas consisten nunha pasaxe de texto con preguntas como as de multiescolla e resposta curta incorporadas dentro';
+$string['pluginname_link'] = 'pregunta/tipo/multiresposta';
 $string['pluginnameadding'] = 'Engadindo respostas incorporadas (Cloze) a unha pregunta';
 $string['pluginnameediting'] = 'Editando unha resposta incorporada (Cloze) a unha pregunta';
-$string['pluginname_help'] = 'As respostas incorporadas (Cloze) a preguntas consisten nunha pasaxe de texto con preguntas  como as de multiescolla e resposta curta incorporadas dentro';
-$string['pluginname_link'] = 'pregunta/tipo/multiresposta';
 $string['pluginnamesummary'] = 'As preguntas deste tipo son moi flexíbeis pero soamente poden crearse introducindo texto que contén códigos especiais para crear multiescolla incorporada, respostas curtas e preguntas numéricas.';
 $string['privacy:metadata'] = 'O engadido de pregunta de respostas incrustadas (CLOZE) non almacena ningún dato persoal.';
 $string['qtypenotrecognized'] = 'Non se recoñece o tipo e pregunta {$a}';

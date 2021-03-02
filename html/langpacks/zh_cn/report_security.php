@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'zh_cn', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -94,10 +94,10 @@ $string['check_riskadmin_name'] = '管理员';
 $string['check_riskadmin_ok'] = '找到了 {$a} 个服务器管理员。';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} （{$a->email}）评估角色分配</a>';
 $string['check_riskadmin_warning'] = '找到 {$a->admincount} 个服务器管理员和 {$a->unsupcount} 个不支持的管理员角色分配。';
-$string['check_riskbackup_detailsok'] = '没有被明确允许备份用户数据的角色。但是，请注意，有“doanything”权限的管理员仍然可以这么做。';
 $string['check_riskbackup_details_overriddenroles'] = '<p>这些有效的角色覆盖使用户获得在备份中包含其它用户数据的权限。请确认此权限是必须的。</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>下列系统角色有在备份中包含用户数据的权限。请确认此权限是必须的。</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>因为上面的角色或局部覆盖，下列用户现在可以在备份中包含选修他们课程的所有用户的隐私数据。请确认他们是可信任的，且他们的密码足够强壮：</p> {$a}';
+$string['check_riskbackup_detailsok'] = '没有被明确允许备份用户数据的角色。但是，请注意，有“doanything”权限的管理员仍然可以这么做。';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name}在{$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = '备份用户数据';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_db', language 'eu', version '3.8'.
  *
- * @package   auth_db
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_db
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -66,8 +66,8 @@ $string['auth_dbsybasequoting'] = 'Erabili sybase kakotxak (quotes)';
 $string['auth_dbsybasequotinghelp'] = 'Sybase motako kakotx sinpleen ihesbidea - beharrezkoa Oracle, MS SQL eta beste datu-base batzuetan. Ez erabil MySQL-rentzat!';
 $string['auth_dbsyncuserstask'] = 'Sinkronizatu erabiltzaileak ataza';
 $string['auth_dbtable'] = 'Taularen izena datu-basean';
-$string['auth_dbtableempty'] = 'Kanpoko taula hutsik dago.';
 $string['auth_dbtable_key'] = 'Taula';
+$string['auth_dbtableempty'] = 'Kanpoko taula hutsik dago.';
 $string['auth_dbtype'] = 'Datu-base mota (ikusi dokumentazioa <a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - Database Abstraction Layer for PHP</a> zehaztasun gehiagorako).';
 $string['auth_dbtype_key'] = 'Datu-basea';
 $string['auth_dbupdateerror'] = 'Errorea kanpoko datu-basea eguneratzean.';

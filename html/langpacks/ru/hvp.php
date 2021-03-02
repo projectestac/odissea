@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hvp', language 'ru', version '3.8'.
  *
- * @package   hvp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hvp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -214,12 +214,12 @@ $string['licenseCC20'] = '2.0 Общая';
 $string['licenseCC25'] = '2.5 Общая';
 $string['licenseCC30'] = '3.0 Непортированная';
 $string['licenseCC40'] = '4.0 Всемирная';
-$string['licensee'] = 'Владелец лицензии';
-$string['licenseextras'] = 'Дополнения к лицензии';
 $string['licenseGPL'] = 'Открытое лицензионное соглашение';
 $string['licenseV1'] = 'Версия 1';
 $string['licenseV2'] = 'Версия 2';
 $string['licenseV3'] = 'Версия 3';
+$string['licensee'] = 'Владелец лицензии';
+$string['licenseextras'] = 'Дополнения к лицензии';
 $string['licenseversion'] = 'Версия лицензии';
 $string['loadingdata'] = 'Загрузка данных.';
 $string['lookforupdates'] = 'Искать обновления H5P';

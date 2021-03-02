@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_insights', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_insights', language 'eu', version '3.8'.
  *
- * @package   report_insights
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_insights
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actionsaved'] = '\'{$a}\'-(e)rako zure feedback-a gorde da.';
+$string['actionsaved'] = '\'{$a}\'(e)rako zure feedback-a gorde da.';
 $string['confirmbulkaction'] = 'Ziur zaude aukeratutako {$a->nitems} aurreikuspenak {$a->action} gisa markatu nahi dituzula?';
 $string['disabledmodel'] = 'Kudeatzaile batek eredu hau desgaitu du.';
 $string['indicators'] = 'Adierazleak';
@@ -48,4 +48,4 @@ $string['selectotherinsights'] = 'Aukeratu beste pertzepzio batzuk...';
 $string['selectprediction'] = 'Aukeratu {$a} ekintza masiborako';
 $string['timecreated'] = 'Aurreikusitako denbora';
 $string['timerange'] = 'Analisi-tartea';
-$string['timerangewithdata'] = '{$a->timestart}-(e)tatik {$a->timeend}-(e)tara';
+$string['timerangewithdata'] = '{$a->timestart}(e)tatik {$a->timeend}(e)tara';

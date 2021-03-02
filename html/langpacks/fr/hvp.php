@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hvp', language 'fr', version '3.8'.
  *
- * @package   hvp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hvp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,8 +64,8 @@ $string['changelog'] = 'Journal des modifications';
 $string['changeplaceholder'] = 'Photo recadrée, texte modifié, etc.';
 $string['close'] = 'Fermer';
 $string['completionpass'] = 'Requiert la note de passage';
-$string['completionpassdesc'] = 'Les étudiants doivent obtenir une note minimale pour valider cette activité.';
 $string['completionpass_help'] = 'Si ce réglage est activé, l\'étudiant devra obtenir la note minimale de passage (ou plus) pour pouvoir valider l\'activité comme terminée (telle que spécifiée dans la rubrique Notes des réglages de l\'activité H5P).';
+$string['completionpassdesc'] = 'Les étudiants doivent obtenir une note minimale pour valider cette activité.';
 $string['confirmdialogbody'] = 'Merci de confirmer que vous voulez continuer. Cette action est irréversible.';
 $string['confirmdialogheader'] = 'Confirmer l\'action';
 $string['confirmlabel'] = 'Confirmer';
@@ -230,12 +230,12 @@ $string['licenseCC20'] = '2.0 Générique';
 $string['licenseCC25'] = '2.5 Générique';
 $string['licenseCC30'] = '3.0 non transposé';
 $string['licenseCC40'] = '4.0 International';
-$string['licensee'] = 'Titulaire de la licence';
-$string['licenseextras'] = 'Suppléments de licence';
 $string['licenseGPL'] = 'Licence publique générale';
 $string['licenseV1'] = 'Version 1';
 $string['licenseV2'] = 'Version 2';
 $string['licenseV3'] = 'Version 3';
+$string['licensee'] = 'Titulaire de la licence';
+$string['licenseextras'] = 'Suppléments de licence';
 $string['licenseversion'] = 'Version de la licence';
 $string['loadingdata'] = 'Chargement des données.';
 $string['lookforupdates'] = 'Rechercher des mises à jour';

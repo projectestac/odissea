@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,23 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradereport_user', language 'ar', version '3.8'.
  *
- * @package   gradereport_user
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradereport_user
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventgradereportviewed'] = 'تمت معاينة تقرير علامات المُستخدم';
+$string['eventgradereportviewed'] = 'تم استعراض تقريردرجات المُستخدم';
 $string['myself'] = 'نفسي';
 $string['otheruser'] = 'المستخدم';
 $string['pluginname'] = 'تقرير المستخدم';
-$string['privacy:metadata:preference:gradereport_user_view_user'] = 'فيما إذا كان عرض التقرير هو للمستخدم الحالي أو لمستخدم آخر في سجل العلامات';
-$string['tablesummary'] = 'يتم ترتيب الجدول كقائمة من مفردات التقييم متضمنة تصنيفات تلك المفردات. إذا كانت أي مفردة تقييم تنتمي إلى تصنيف، ستتم الإشارة لذلك.';
-$string['user:view'] = 'معاينة تقرير علاماته';
+$string['privacy:metadata:preference:gradereport_user_view_user'] = 'فيما إذا كان عرض التقرير هو للمستخدم الحالي أو لمستخدم آخر في سجل التقديرات';
+$string['tablesummary'] = 'يتم ترتيب الجدول كقائمة من عناصرأو بنود الدرجات بما في ذلك التصنيفات لتلك البنود. إذا كان أي من البنود تنتمي إلى تصنيف سيتم الإشارة لذلك.';
+$string['user:view'] = 'استعرض تقرير درجاتك';
 $string['viewas'] = 'معاينة التقرير بمثابة';

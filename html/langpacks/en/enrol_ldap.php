@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'en', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -50,7 +50,6 @@ $string['course_fullname_updateonsync'] = 'Update full name during synchronisati
 $string['course_fullname_updateonsync_key'] = 'Update full name';
 $string['course_idnumber'] = 'LDAP attribute to get the course ID number from. Usually \'cn\' or \'uid\'.';
 $string['course_idnumber_key'] = 'ID number';
-$string['coursenotexistskip'] = 'Course \'{$a}\' does not exist and autocreation disabled, skipping';
 $string['course_search_sub'] = 'Search group memberships from subcontexts';
 $string['course_search_sub_key'] = 'Search subcontexts';
 $string['course_settings'] = 'Course enrolment settings';
@@ -62,6 +61,7 @@ $string['course_summary'] = 'Optional: LDAP attribute to get the summary from';
 $string['course_summary_key'] = 'Summary';
 $string['course_summary_updateonsync'] = 'Update summary during synchronisation script';
 $string['course_summary_updateonsync_key'] = 'Update summary';
+$string['coursenotexistskip'] = 'Course \'{$a}\' does not exist and autocreation disabled, skipping';
 $string['courseupdated'] = 'Course with idnumber \'{$a->idnumber}\' was successfully updated.';
 $string['courseupdateskipped'] = 'Course with idnumber \'{$a->idnumber}\' does not require updating. Skipping...';
 $string['createcourseextid'] = 'CREATE User enrolled to a non-existing course \'{$a->courseextid}\'';
@@ -86,9 +86,9 @@ $string['host_url'] = 'Specify LDAP host in URL-form like \'ldap://ldap.myorg.co
 $string['host_url_key'] = 'Host URL';
 $string['idnumber_attribute'] = 'If the group membership contains distinguished names, specify the same attribute you have used for the user \'ID Number\' mapping in the LDAP authentication settings.';
 $string['idnumber_attribute_key'] = 'ID number attribute';
+$string['ldap:manage'] = 'Manage LDAP enrol instances';
 $string['ldap_encoding'] = 'Specify encoding used by LDAP server. Most probably utf-8, MS AD v2 uses default platform encoding such as cp1252, cp1250, etc.';
 $string['ldap_encoding_key'] = 'LDAP encoding';
-$string['ldap:manage'] = 'Manage LDAP enrol instances';
 $string['memberattribute'] = 'LDAP member attribute';
 $string['memberattribute_isdn'] = 'If the group membership contains distinguished names, you need to specify them here. If so, you also need to configure the remaining settings in this section.';
 $string['memberattribute_isdn_key'] = 'Member attribute uses dn';

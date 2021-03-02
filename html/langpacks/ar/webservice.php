@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'webservice', language 'ar', version '3.8'.
  *
- * @package   webservice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     webservice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,7 +44,7 @@ $string['arguments'] = 'العوامل';
 $string['authmethod'] = 'طريقة المصادقة';
 $string['callablefromajax'] = 'قابل للاستدعاء من AJAX';
 $string['cannotcreatetoken'] = 'لا صلاحية لإنشاء ترميز خدمة الويب للخدمة {$a}.';
-$string['cannotgetcoursecontents'] = 'يتعذر الحصول على محتويات المساق';
+$string['cannotgetcoursecontents'] = 'يتعذر الحصول على محتويات المقرر الدراسي';
 $string['checkusercapability'] = 'تحقق من إمكانية المستخدم';
 $string['checkusercapabilitydescription'] = 'ينبغي أن يكون للمستخدم الإمكانيات المناسبة حسب البروتوكولات المستعملة، على سبيل المثال webservice/rest:use، webservice/soap:use. لتحقيق ذلك، أنشئ دوراً لخدمة الويب مع الإمكانيات المناسبة وقم بتعيينه إلى مستخدم خدمات الويب بمثابة دور على مستوى النظام.';
 $string['configwebserviceplugins'] = 'لدواعي الأمان، ينبغي الاقتصار على تمكين البروتوكولات التي هي قيد الاستعمال فقط.';
@@ -81,7 +81,7 @@ $string['entertoken'] = 'أدخل مفتاح/ترميز الأمان:';
 $string['error'] = 'خطأ: {$a}';
 $string['errorcatcontextnotvalid'] = 'لا يمكنك تنفيذ الوظائف في سياق التصنيف (مُعرَّف التصنيف :{$a->catid}). رسالة الخطأ في السياق كانت: {$a->message}';
 $string['errorcodes'] = 'رسالة الخطأ';
-$string['errorcoursecontextnotvalid'] = 'لا يمكنك تنفيذ الوظائف في سياق المساق (مُعرَّف المساق: {$a->courseid}). رسالة الخطأ في السياق كانت: {$a->message}';
+$string['errorcoursecontextnotvalid'] = 'لا يمكنك تنفيذ الوظائف في سياق المقرر (مُعرَّف المقرر الدراسي: {$a->courseid}). رسالة الخطأ في السياق كانت: {$a->message}';
 $string['errorinvalidparam'] = 'المعامل "{$a}" غير صحيح.';
 $string['errornotemptydefaultparamarray'] = 'معامل وصف خدمة الويب المسمى \'{$a}\' هو في بنية مفردة أو متعددة. الافتراضي يمكن فقط أن يكون مصفوفة فارغة. تحقق من وصف خدمة الويب.';
 $string['erroroptionalparamarray'] = 'معامل وصف خدمة الويب المسمى \'{$a}\' هو في بنية مفردة أو متعددة. لا يمكن ضبطه ليكون بمثابة VALUE_OPTIONAL. تحقق من وصف خدمة الويب.';
@@ -227,14 +227,14 @@ $string['usersettingssaved'] = 'تم حفظ إعدادات المستخدم';
 $string['validuntil'] = 'صالحة حتى';
 $string['validuntil_help'] = 'عند تأشيره، سيتم إبطال الخدمة بعد هذا التاريخ لهذا المستخدم.';
 $string['webservice'] = 'خدمة الويب';
-$string['webservices'] = 'خدمات الويب';
+$string['webservices'] = 'خدمات الوب';
 $string['webservicesoverview'] = 'نظرة عامة';
 $string['webservicetokens'] = 'ترميزات خدمة الويب';
 $string['wrongusernamepassword'] = 'اسم مستخدم أو كلمة مرور خاطئة';
 $string['wsaccessuserdeleted'] = 'الوصول المرفوض لخدمة ويب لحساب مستخدم محذوف: {$a}';
 $string['wsaccessuserexpired'] = 'الوصول المرفوض لخدمة ويب لحساب مستخدم ذي كلمة مرور منتهية الصلاحية: {$a}';
 $string['wsaccessusernologin'] = 'الوصول المرفوض لخدمة ويب لحساب مستخدم بلا مصادقة دخول: {$a}';
-$string['wsaccessusersuspended'] = 'تم رفض الدخول لخدمة الويب للمستخدم المعلق: {$a}';
+$string['wsaccessusersuspended'] = 'تم رفض الدخول لخدمة الوب للمستخدم المعلق: {$a}';
 $string['wsaccessuserunconfirmed'] = 'الوصول المرفوض لخدمة ويب لحساب مستخدم غير مؤكد: {$a}';
 $string['wsclientdoc'] = 'توثيقات مودل لوكيل خدمة الويب';
 $string['wsdocapi'] = 'توثيقات واجهة برمجة التطبيق';

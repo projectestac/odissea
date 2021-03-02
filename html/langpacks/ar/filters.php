@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filters', language 'ar', version '3.8'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actfilterhdr'] = 'المرشحات المفعلة';
-$string['addfilter'] = 'إضافة المرشح';
+$string['actfilterhdr'] = 'المرشحات الفعّالة';
+$string['addfilter'] = 'إضافة مرشح';
 $string['anycategory'] = 'أي تصنيف';
 $string['anycourse'] = 'أي مقرر دراسي';
 $string['anycourses'] = 'منضم إلى أي مساق';
@@ -39,7 +39,7 @@ $string['contains'] = 'يحتوي';
 $string['content'] = 'المحتوى';
 $string['contentandheadings'] = 'المحتوى والعناوين';
 $string['coursecategory'] = 'تصنيف المساق';
-$string['courserole'] = 'دور المساق';
+$string['courserole'] = 'دور المقرر الدراسي';
 $string['courserolelabel'] = '{$a->label} is {$a->rolename} in {$a->coursename} from {$a->categoryname}';
 $string['courserolelabelerror'] = 'خطأ {$a->label}: المساق {$a->coursename} ليس له وجود';
 $string['coursevalue'] = 'قيمة المساق';
@@ -50,12 +50,12 @@ $string['defaultx'] = 'الافتراضي ({$a})';
 $string['disabled'] = 'معطل';
 $string['doesnotcontain'] = 'لا يحتوي';
 $string['endswith'] = 'ينتهي بـ';
-$string['filterallwarning'] = 'تطبيق المرشحات على العناوين فضلاً عن المحتويات يمكنه زيادة الحمل على مخدمك إلى حد كبير. لطفاً، استعمل إعدادات \'التطبيق على\' بشكل متحفظ. الاستعمال الرئيسي هو مع مرشح تعدد اللغات.';
+$string['filterallwarning'] = 'تطبيق المرشحات على رؤوس الصفحات فضلاً عن محتوياتها يمكنه زيادة الحمل على مخدمك إلى حد كبير. لطفاً، استعمل إعدادات "التطبيق على" بشكل متحفظ. الاستعمال الرئيسي هو مع مرشح تعدد اللغات.';
 $string['filtersettings'] = 'إعدادات المنقح';
-$string['filtersettingsforin'] = 'إعدادات المرشح لـ {$a->filter} في {$a->context}';
 $string['filtersettings_help'] = 'هذه الصفحة تتيح لك تفعيل المرشحات وتعطيلها في أجزاء معينة من الموقع.
 
 بعض المرشحات قد تسمح لك أيضاً بضبط إعدادات محلية، وفي تلك الحالة، سيظهر لك رابط لإجراء الضبط مجاوراً لأسمائها.';
+$string['filtersettingsforin'] = 'إعدادات المرشح لـ {$a->filter} في {$a->context}';
 $string['filtersettingsin'] = 'إعدادات المنقح في {$a}';
 $string['firstaccess'] = 'أول دخول';
 $string['globalrolelabel'] = '{$a->label} is {$a->value}';
@@ -69,7 +69,7 @@ $string['isequalto'] = 'يساوي';
 $string['isnotdefined'] = 'غير معرف';
 $string['isnotequalto'] = 'لا يساوي';
 $string['limiterfor'] = 'محدد حقل {$a}';
-$string['neveraccessed'] = 'لم يصل أبداً';
+$string['neveraccessed'] = 'لم يتم استخدامه';
 $string['nevermodified'] = 'لم يتم تعديله';
 $string['newfilter'] = 'مرشح جديد';
 $string['nofiltersenabled'] = 'لم يتم تمكين موصلات أي منقح في هذا الموقع';
@@ -81,7 +81,7 @@ $string['profilefilterfield'] = 'اسم الحقل الشخصي';
 $string['profilefilterlimiter'] = 'عامل الحقل الشخصي';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
-$string['removeall'] = 'إزالة كل المنقحات';
+$string['removeall'] = 'إزالة كل المرشحات';
 $string['removeselected'] = 'استبعد كل ما تم اختياره';
 $string['selectlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['startswith'] = 'يبدأ بـ';

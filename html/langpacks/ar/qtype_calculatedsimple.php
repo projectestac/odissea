@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'ar', version '3.8'.
  *
- * @package   qtype_calculatedsimple
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculatedsimple
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,21 +30,21 @@ $string['converttocalculated'] = 'احفظ في شكل سؤال حسابي عا�
 $string['findwildcards'] = 'العثور على البطاقات البديلة {x..} موجودة في صيغ الإجابة الصحيحة';
 $string['generatenewitemsset'] = 'توليد';
 $string['newsetwildcardvalues'] = 'مجموعة جديدة من قيم البطاقات البديلة';
-$string['pluginname'] = 'حسابي بسيط';
+$string['pluginname'] = 'حسابية بسيطة';
+$string['pluginname_help'] = 'أسئلة حسابية بسيطة .. تمكن الأسئلة العددية الفردية المراد إنشاؤها باستخدام البطاقات البديلة التي يتم استبدالها مع القيم الفردية عندما يتم أخذ هذا الاختبار. أسئلة حسابية بسيطة تقدم الميزات الأكثر استخداماً في هذه المسألة الحسابية و إنشاء بواجهة أبسط.';
 $string['pluginnameadding'] = 'إضافة سؤال حسابي بسيط';
 $string['pluginnameediting'] = 'تحرير سؤال حسابي بسيط';
-$string['pluginname_help'] = 'الأسئلة الحسابية البسيطة تُمكن من إنشاء الأسئلة العددية الفردية باستعمال الرموز البديلة، تلك التي يتم استبدالها مع القيم الفردية عندما يتم أخذ الاختبار. الأسئلة الحسابية البسيطة تقدم الميزات الأكثر استعمالاً في المسألة الحسابية مع واجهة إنشاء أبسط.';
-$string['pluginnamesummary'] = 'صيغة أبسط من الأسئلة التي هي حسابية مثل الأسئلة العددية المستخدمة .. و لكن مع تحديد الأرقام عشوائياً من مجموعة أرقام عندما يتم أخذ هذا الاختبار.';
-$string['privacy:metadata'] = 'إن ملحق نوع السؤال، المحسوب البسيط لا يخزن أي بيانات شخصية.';
+$string['pluginnamesummary'] = 'صيغة أبسط من الأسئلة الحسابية التي هي مثل الأسئلة العددية، ولكن مع كون الأرقام المستعملة منتخبة عشوائياً من مجموعة أرقام عندما يتم أخذ الاختبار.';
+$string['privacy:metadata'] = 'البرنامج المساعد  Calculated simple question type لا يخزن أي بيانات شخصية.';
 $string['setno'] = 'المجموعة {$a}';
 $string['setwildcardvalues'] = 'قيم مجموعة البطاقات البديلة';
 $string['showitems'] = 'عرض';
 $string['updatewildcardvalues'] = 'تحديث بطاقات القيم البديلة';
-$string['useadvance'] = 'استعمل زر المتقدم لرؤية الأخطاء';
+$string['useadvance'] = 'استخدم زر متقدم لرؤية الأخطاء';
 $string['wildcard'] = 'بطاقة بديلة {<strong>{$a}</strong>}';
 $string['wildcardparam'] = 'معايير البطاقات البديلة المستخدمة لتوليد القيم';
 $string['wildcardrole'] = 'البطاقات البديلة <strong>{x..}</strong> سيتم الاستعاضة عن قيمة رقمية من القيم المولدة';
 $string['wildcardvalues'] = 'قيم البطاقات البديلة';
 $string['wildcardvaluesgenerated'] = 'توليد قيم البطاقات البديلة';
 $string['willconverttocalculated'] = 'إذا تم و<strong> حفظ كسؤال جديد </strong> ما سيوفر سؤال حسابي جديد';
-$string['youmustaddatleastonevalue'] = 'يجب إضافة مجموعة واحدة على الأقل من بطاقات القيم البديلة قبل أن تتمكن من حفظ هذا السؤال.';
+$string['youmustaddatleastonevalue'] = 'يجب إضافة مجموعة واحدة على الأقل من بطاقات القيم البديلة قبل أن تتمكن من حفظ هذه المسألة.';

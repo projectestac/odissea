@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'format_singleactivity', language 'eu', version '3.8'.
  *
- * @package   format_singleactivity
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     format_singleactivity
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activitytype'] = 'Jarduera-mota';
-$string['activitytype_help'] = 'Aukeratu ikastaroan erabili nahi duzun baliabide edo jarduera-mota';
+$string['activitytype'] = 'Jarduera mota';
+$string['activitytype_help'] = 'Aukeratu ikastaroan erabili nahi duzun baliabide edo jarduera mota';
 $string['defactivitytype'] = 'Lehenetsitako jarduera-mota';
 $string['defactivitytypedesc'] = 'Zehaztu ikastaro berria sortzean modu lehenetsian zein jarduera mota aukeratuko den.';
 $string['erroractivitytype'] = 'Jarduera mota ez da ezarri Ikastaroaren ezarpenetan';

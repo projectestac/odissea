@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,29 +12,30 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_guest', language 'it', version '3.8'.
  *
- * @package   enrol_guest
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_guest
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowguests'] = 'Questo corso consente l\'accesso ad utenti ospiti';
+$string['guest:config'] = 'Configurare istanze plugin Accesso ospiti';
 $string['guestaccess_withoutpassword'] = 'Accesso ospiti';
 $string['guestaccess_withpassword'] = 'Accesso ospiti';
-$string['guest:config'] = 'Configurare istanze plugin Accesso ospiti';
 $string['password'] = 'Chiave';
 $string['password_help'] = 'Una chiave limita l\'accesso ai soli ospiti che ne sono in possesso. Gli ospiti dovranno inserire la chiave ogni volta che accederanno al corso.';
 $string['passwordinvalid'] = 'Chiave errata, per favore riprova';
 $string['passwordinvalidhint'] = 'La chiave di accesso è errata, per favore riprova.<br /> (Suggerimento: la chiave comincia con \'{$a}\')';
 $string['pluginname'] = 'Accesso ospiti';
 $string['pluginname_desc'] = 'Il plugin Acesso ospiti consente l\'accesso temporaneo ai corsi senza effettuare iscrizioni reali.';
-$string['privacy:metadata'] = 'Il plugin di iscrizione "Accesso ospiti" non memorizza dati personali.';
+$string['privacy:metadata'] = 'Il plugin di iscrizione Accesso ospiti non memorizza dati personali.';
 $string['requirepassword'] = 'Chiave di accesso ospiti obbligatoria';
 $string['requirepassword_desc'] = 'Rende obbligatoria la chiave di accesso per gli ospiti nei nuovi corsi ed evita l\'eliminazione di chiavi d\'accesso già esistenti.';
 $string['showhint'] = 'Visualizza suggerimento';

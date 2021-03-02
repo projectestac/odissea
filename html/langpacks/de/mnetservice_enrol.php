@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'mnetservice_enrol', language 'de', version '3.8'.
  *
- * @package   mnetservice_enrol
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mnetservice_enrol
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['availablecourseson'] = 'Verfügbare Kurse in {$a}';
 $string['availablecoursesonnone'] = 'Externer Host <a href="{$a->hosturl}">{$a->hostname}</a> bietet unseren Nutzern keine Kurse an';
 $string['clientname'] = 'Client für externe Einschreibungen ';
-$string['clientname_help'] = 'An- und Abmelden von Nutzern Ihrer Moodle-Instanz bei anderen Moodle-Servern, die dies über das Anmelde-Plugin für das Moodle-Netzwerk zulassen.';
+$string['clientname_help'] = 'Einschreiben und Abmelden von Nutzer/innen Ihrer Website bei anderen Remote-Servern, die dies über die \'Externe MNET-Einschreibung\' zulassen.';
 $string['editenrolments'] = 'Rollen bearbeiten';
 $string['hostappname'] = 'Anwendung';
 $string['hostname'] = 'Rechner-Name';
@@ -39,10 +39,10 @@ $string['otherenrolledusers'] = 'Weitere eingetragene Nutzer/innen';
 $string['pluginname'] = 'Service für externe Einschreibungen ';
 $string['privacy:metadata:mnetservice_enrol_enrolments'] = 'Externer Einschreibedienst';
 $string['privacy:metadata:mnetservice_enrol_enrolments:enroltime'] = 'Zeitpunkt, zu dem die Einschreibung geändert wurde';
-$string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = 'Name des Einschreibeplugins des externen Dienstes, die für die Einschreibung in den Kurs genutzt wurde';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = 'Einschreibemethode auf dem Remote-Server, die für die Einschreibung genutzt wurde';
 $string['privacy:metadata:mnetservice_enrol_enrolments:hostid'] = 'ID des externen MNet-Hosts';
-$string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'ID des Kurses auf dem Externen Server';
-$string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'Name der Rolle auf dem Externen Server';
-$string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'Die Tabelle speichert Informationen über Einschreibungen der Nutzer durch Externe Server';
-$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'ID des lokalen Nutzerkontos auf diesem Server';
+$string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'Kurs-ID auf dem Remote-Server';
+$string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'Rollenname auf dem Remote-Server';
+$string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'Die Tabelle speichert Informationen über Einschreibungen von lokalen Nutzer/innen auf Remote-Servern';
+$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'Lokale Nutzer-ID auf diesem Server';
 $string['refetch'] = 'Status für externe Hosts zurücksetzen';

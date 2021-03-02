@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'pt', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['clicktoclose'] = 'clique para fechar';
 $string['error:notinrange'] = 'Nota atribuída inválida: {$a->grade}. As notas devem ser entre 0 e {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Não é possível instanciar o elemento da grelha de avaliação';
 $string['formnotavailable'] = 'Foi selecionado um método de avaliação avançado para ser usado mas a grelha de avaliação ainda não está disponível. Poderá ser necessário criá-la primeiro a partir da hiperligação no menu de ações ou no bloco de administração.';
-$string['gradingformunavailable'] = '<b>Atenção</b>: A grelha de avaliação ainda não está configurada. Será usado o método de avaliação simples direta até que a grelha esteja configurada.';
+$string['gradingformunavailable'] = '<b>Atenção</b>: A grelha de avaliação ainda não está configurada. Será usado o método de \'Avaliação simples direta\' até que a grelha esteja configurada.';
 $string['gradingmanagement'] = 'Método de avaliação avançado';
 $string['gradingmanagementtitle'] = 'Método de avaliação avançado: {$a->component} ({$a->area})';
 $string['gradingmethod'] = 'Método de avaliação';
@@ -71,7 +71,6 @@ $string['privacy:metadata:grading_definitions:timecreated'] = 'A hora a que a de
 $string['privacy:metadata:grading_definitions:timemodified'] = 'A hora a que a definição da avaliação foi modificada.';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'O ID do utilizador que criou a definição de avaliação.';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'O ID do utilizador que modificou a definição de avaliação pela última vez.';
-$string['privacy:metadata:gradingformpluginsummary'] = 'Dados do método de avaliação.';
 $string['privacy:metadata:grading_instances'] = 'registo da avaliação para um item avaliado por um avaliador.';
 $string['privacy:metadata:grading_instances:feedback'] = 'O feedback atribuído pelo utilizador.';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'O formato de texto do feedback atribuído pelo utilizador.';
@@ -79,7 +78,8 @@ $string['privacy:metadata:grading_instances:raterid'] = 'O ID do utilizador que 
 $string['privacy:metadata:grading_instances:rawgrade'] = 'A avaliação para a instância de avaliação.';
 $string['privacy:metadata:grading_instances:status'] = 'O estado desta instância de avaliação';
 $string['privacy:metadata:grading_instances:timemodified'] = 'A hora em que a instância de avaliação foi modificada pela última vez.';
-$string['searchownforms'] = 'Incluir as minhas grelhas&nbsp;';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Dados do método de avaliação.';
+$string['searchownforms'] = 'incluir as minhas grelhas';
 $string['searchtemplate'] = 'Pesquisar grelhas de avaliação';
 $string['searchtemplate_help'] = 'Pode pesquisar por uma grelha de avaliação e usá-la aqui como modelo a partir da nova grelha de avaliação. Basta inserir as palavras que devem aparecer em algum lugar no nome da grelha, na sua descrição ou no próprio corpo da grelha. Para pesquisar uma frase, insira a expressão inteira entre aspas.
 

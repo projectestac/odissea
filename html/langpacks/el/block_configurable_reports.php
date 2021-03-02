@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_configurable_reports', language 'el', version '3.8'.
  *
- * @package   block_configurable_reports
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_configurable_reports
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -56,15 +56,15 @@ $string['comp_columns'] = 'Στήλες';
 $string['comp_conditions'] = 'Συνθήκες';
 $string['comp_customsql'] = 'Προσαρμοσμένη SQL';
 $string['comp_filters'] = 'Φίλτρα';
-$string['componenthelp'] = 'Βοήθεια στοιχείου';
 $string['comp_ordering'] = 'Ταξινόμηση';
 $string['comp_permissions'] = 'Δικαιώματα';
 $string['comp_plot'] = 'Σχεδίαση';
 $string['comp_template'] = 'Υποδείγματα';
+$string['componenthelp'] = 'Βοήθεια στοιχείου';
 $string['conditionexpr'] = 'Συνθήκη';
 $string['conditionexpr_conditions'] = 'Συνθήκη';
-$string['conditionexprhelp'] = 'Δώστε μια έγκυρη συνθήκη, π.χ.: (c1 και c2) ή (c4 και c3)';
 $string['conditionexpr_permissions'] = 'Συνθήκη';
+$string['conditionexprhelp'] = 'Δώστε μια έγκυρη συνθήκη, π.χ.: (c1 και c2) ή (c4 και c3)';
 $string['conditions'] = 'Συνθήκες';
 $string['configurable_reports:addinstance'] = 'Προσθήκη ενός νέου διαμορφώσιμου μπλοκ αναφορών';
 $string['configurable_reports:manageownreports'] = 'Διαχείριση αναφορών σας';
@@ -75,9 +75,12 @@ $string['configurable_reports:viewreports'] = 'Εμφάνιση αναφορών
 $string['confirmdeletereport'] = 'Σίγουρα θέλετε να διαγραφεί αυτή η αναφορά;';
 $string['coursecategories'] = 'Φίλτρο κατηγορίας μαθήματος';
 $string['coursecategory'] = 'Μάθημα σε κατηγορία';
+$string['coursechild'] = 'Μαθήματα που είναι απόγονοι του';
+$string['coursededicationtime'] = 'Χρόνος αφοσίωσης σε μάθημα';
 $string['coursefield'] = 'Πεδίο μαθήματος';
 $string['coursefieldorder'] = 'Σειρά πεδίων μαθήματος';
 $string['coursemodules'] = 'Άρθρωμα μαθήματος';
+$string['courseparent'] = 'Μαθήματα των οποίων γονικό είναι το';
 $string['courses'] = 'Μαθήματα';
 $string['coursestats'] = 'Στατιστικά μαθήματος';
 $string['cron'] = 'Αυτόματη εκτέλεση ημερησίως';
@@ -85,11 +88,11 @@ $string['crrepository'] = 'Αποθετήριο αναφορών';
 $string['currentreportcourse'] = 'Μάθημα τρέχουσας αναφοράς';
 $string['currentreportcourse_summary'] = 'Το μάθημα στο οποίο δημιουργήθηκε η αναφορά';
 $string['currentuser'] = 'Τρέχων χρήστης';
+$string['currentuser_summary'] = 'Ο χρήστης που βλέπει την αναφορά';
 $string['currentusercourses'] = 'Μαθήματα με εγγραφή του τρέχοντος χρήστη';
 $string['currentusercourses_summary'] = 'Μια λίστα των μαθημάτων τρέχοντος χρήστη (μόνο ορατά μαθήματα)';
 $string['currentuserfinalgrade'] = 'Τελικός βαθμός σε μάθημα, τρέχοντος χρήστη';
 $string['currentuserfinalgrade_summary'] = 'Αυτή η στήλη εμφανίζει τον τελικό βαθμό του τρέχοντος χρήστη στην γραμμή μαθήματος';
-$string['currentuser_summary'] = 'Ο χρήστης που βλέπει την αναφορά';
 $string['cuserfield'] = 'Συνθήκη πεδίου χρήστη';
 $string['custom'] = 'Προσαρμοσμένη';
 $string['customdateformat'] = 'Προσαρμοσμένος μορφότυπος ημερομηνίας';
@@ -135,14 +138,16 @@ $string['executeat'] = 'Εκτέλεση στις';
 $string['export_csv'] = 'Εξαγωγή σε μορφότυπο CSV';
 $string['export_json'] = 'Εξαγωγή σε μορφότυπο JSON';
 $string['export_ods'] = 'Εξαγωγή σε μορφότυπο ODS';
+$string['export_xls'] = 'Εξαγωγή σε μορφότυπο XLS';
 $string['exportoptions'] = 'Επιλογές εξαγωγής';
 $string['exportreport'] = 'Εξαγωγή αναφοράς';
-$string['export_xls'] = 'Εξαγωγή σε μορφότυπο XLS';
 $string['fcoursefield'] = 'Φίλτρο πεδίου μαθήματος';
 $string['field'] = 'Πεδίο';
 $string['filter'] = 'Φίλτρο';
 $string['filter_all'] = 'Όλα';
 $string['filter_apply'] = 'Εφαρμογή';
+$string['filter_searchtext'] = 'Κείμενο αναζήτησης';
+$string['filter_searchtext_summary'] = 'Φίλτρο ελεύθερου κειμένου';
 $string['filtercategories'] = 'Κατηγορίες φίλτρων';
 $string['filtercategories_summary'] = 'Προς φιλτράρισμα κατά κατηγορία';
 $string['filtercoursecategories'] = 'Φίλτρο κατηγορίας μαθήματος';
@@ -155,8 +160,6 @@ $string['filterenrolledstudents'] = 'Εγγεγραμμένοι σε μάθημ�
 $string['filterrole'] = 'ρόλος';
 $string['filterrole_summary'] = 'Φιλτράρισμα ρόλων συστήματος (Διδάσκων, Μαθητής, ...)';
 $string['filters'] = 'Φίλτρα';
-$string['filter_searchtext'] = 'Κείμενο αναζήτησης';
-$string['filter_searchtext_summary'] = 'Φίλτρο ελεύθερου κειμένου';
 $string['filtersemester'] = 'Εξάμηνο (Εβραϊκό)';
 $string['filterstartendtime_summary'] = 'Φίλτρο ημερομηνίας έναρξης/λήξης';
 $string['filtersubcategories'] = 'Κατηγορία (με υποκατηγορίες)';
@@ -176,12 +179,13 @@ $string['fuserfield'] = 'Φίλτρο πεδίου χρήστη';
 $string['global'] = 'Καθολική αναφορά';
 $string['head_color'] = 'Χρώμα υπόβαθρου γραφήματος';
 $string['head_data'] = 'Δεδομένα γραφήματος';
-$string['header'] = 'Επικεφαλίδα';
 $string['head_size'] = 'Μέγεθος γραφήματος';
+$string['header'] = 'Επικεφαλίδα';
 $string['height'] = 'Ύψος';
 $string['importfromrepository'] = 'Εισαγωγή αναφοράς από αποθετήριο';
 $string['importreport'] = 'Εισαγωγή αναφοράς';
 $string['includesubcats'] = 'Συμπερίληψη υποκατηγοριών';
+$string['jsordering'] = 'Ταξινόμηση JavaScript';
 $string['label_field'] = 'Πεδίο ταμπέλας';
 $string['label_field_help'] = 'Το πεδίο που παρέχει ονόματα για τα στοιχεία που αναπαρίστανται στο γράφημα';
 $string['lastexecutiontime'] = 'Χρόνος εκτέλεσης = {$a} (Sec)';
@@ -237,22 +241,22 @@ $string['privacy:metadata:block_configurable_reports:type'] = 'Ο τύπος τ�
 $string['puserfield'] = 'Τιμή πεδίου χρήστη';
 $string['querysql'] = 'Ερώτημα SQL';
 $string['remote'] = 'Εκτέλεση σε απομακρυσμένη βάση δεδομένων';
-$string['remotedescription'] = 'Θέλετε να εκτελεστεί αυτό το ερώτημα στην απομακρυσμένη βάση δεδομένων;';
 $string['remote_help'] = 'Θέλετε να τρέξει αυτό το ερώτημα στην απομακρυσμένη βάση δεδομένων;';
+$string['remotedescription'] = 'Θέλετε να εκτελεστεί αυτό το ερώτημα στην απομακρυσμένη βάση δεδομένων;';
 $string['remotequerysql'] = 'Ερώτημα SQL';
 $string['report'] = 'Αναφορά';
 $string['report_categories'] = 'Αναφορά κατηγοριών';
-$string['reportcolumn'] = 'Άλλη στήλη αναφοράς';
 $string['report_courses'] = 'Αναφορά μαθημάτων';
+$string['report_sql'] = 'Αναφορά SQL';
+$string['report_timeline'] = 'Αναφορά χρονολογίου';
+$string['report_users'] = 'Αναφορά χρηστών';
+$string['reportcolumn'] = 'Άλλη στήλη αναφοράς';
 $string['reportcreated'] = 'Η αναφορά δημιουργήθηκε με επιτυχία';
 $string['reportlimit'] = 'Όριο γραμμών αναφοράς';
 $string['reports'] = 'Αναφορά';
 $string['reportscapabilities'] = 'Δυνατότητες αναφοράς';
 $string['reportsincategory'] = '2) Επιλογή μιας αναφοράς από τη λίστα';
-$string['report_sql'] = 'Αναφορά SQL';
 $string['reporttable'] = 'Πίνακας αναφοράς';
-$string['report_timeline'] = 'Αναφορά χρονολογίου';
-$string['report_users'] = 'Αναφορά χρηστών';
 $string['repository'] = 'Αποθετήριο αναφορών';
 $string['role'] = 'Ρόλος';
 $string['roleusersn'] = 'Αριθμός χρηστών με ρόλο...';
@@ -272,6 +276,8 @@ $string['statstotalenrolments'] = 'Συνολικές εγγραφές';
 $string['student'] = 'Μαθητής';
 $string['sum'] = 'Άθροισμα';
 $string['tablealign'] = 'Στοίχιση πίνακα';
+$string['tablecellpadding'] = 'Γέμισμα κελιού πίνακα';
+$string['tablecellspacing'] = 'Κενό κελιού πίνακα';
 $string['tableclass'] = 'Κλάση πίνακα';
 $string['tablewidth'] = 'Πλάτος πίνακα';
 $string['template'] = 'Υπόδειγμα';

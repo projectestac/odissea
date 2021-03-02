@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'rating', language 'gl', version '3.8'.
  *
- * @package   rating
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     rating
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,7 @@ $string['aggregatemax'] = 'Puntuación máxima';
 $string['aggregatemin'] = 'Puntuación mínima';
 $string['aggregatenone'] = 'Sen puntuacións';
 $string['aggregatesum'] = 'Suma de puntuacións';
-$string['aggregatetype'] = 'Tipo agragado';
+$string['aggregatetype'] = 'Tipo agregado';
 $string['aggregatetype_help'] = 'O tipo de agregación define como se combinan as puntuacións para formar a cualificación final no libro de cualificacións.
 
 * Media de puntuacións - A media de todas as puntuacións.
@@ -45,22 +45,21 @@ $string['allowratings'] = 'Permitir que os elementos sexan puntuados?';
 $string['allratingsforitem'] = 'Todas as puntuacións entregadas';
 $string['capabilitychecknotavailable'] = 'A comprobación da funcionalidade non está dispoñíbel ata que se garde a actividade';
 $string['couldnotdeleteratings'] = 'Desculpe, non pode eliminarse xa que alguén xa o puntuou';
-$string['grade_rating_name'] = 'Puntuación';
 $string['norate'] = 'Non está permitida a puntuación de elementos!';
 $string['noratings'] = 'Non se entregaron puntuacións';
 $string['noviewanyrate'] = 'Só pode ver os resultados dos elementos que fixo vostede';
 $string['noviewrate'] = 'Non ten a funcionalidade para ver as puntuacións dos elementos';
 $string['privacy:metadata:rating'] = 'A puntuación introducida polo usuario almacénase xunto cunha asignación do elemento que foi puntuado.';
 $string['privacy:metadata:rating:rating'] = 'A puntuación numérica que introduciu o usuario.';
-$string['privacy:metadata:rating:timecreated'] = 'O momento que se realizou a puntuación por primeira vez';
-$string['privacy:metadata:rating:timemodified'] = 'O momento que se actualizou a puntuación por última vez';
-$string['privacy:metadata:rating:userid'] = 'O usuario que fixo a puntuación..';
-$string['rate'] = 'Puntuar';
-$string['ratepermissiondenied'] = 'Non ten permiso para puntuar este elemento';
+$string['privacy:metadata:rating:timecreated'] = 'O momento no que se realizou a puntuación por primeira vez';
+$string['privacy:metadata:rating:timemodified'] = 'O momento no que se actualizou a puntuación por última vez';
+$string['privacy:metadata:rating:userid'] = 'O usuario que fixo a puntuación.';
+$string['rate'] = 'Cualificar';
+$string['ratepermissiondenied'] = 'Non ten permiso para cualificar este elemento';
 $string['rating'] = 'Puntuación';
 $string['ratinginvalid'] = 'A puntuación é incorrecta';
 $string['ratings'] = 'Puntuacións';
 $string['ratingtime'] = 'Limitar as puntuacións aos elementos con datas neste intervalo:';
-$string['rolewarning'] = 'Roles con permiso para puntuar';
+$string['rolewarning'] = 'Roles con permiso para cualificar';
 $string['rolewarning_help'] = 'Para entregar puntuacións dos usuarios requírese a funcionalidade moodle/rating:rate e calquera módulo específico sobre capacidades. Os usuarios cos seguintes roles asignados deberían quen de puntuar ítems. A lista de roles pode engadirse por medio da ligazón de permisos no bloque de administración.';
-$string['scaleselectionrequired'] = 'Ao seleccionar un tipo de agregación de puntuacións Vostede debe  seleccionar tamén o uso dunha escala ou estabelecer unha puntuación máxima.';
+$string['scaleselectionrequired'] = 'Ao seleccionar un tipo de agregación de puntuacións Vostede debe seleccionar tamén o uso dunha escala ou estabelecer unha puntuación máxima.';

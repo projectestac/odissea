@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_imap', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_imap', language 'ja', version '3.8'.
  *
- * @package   auth_imap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_imap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,3 +35,4 @@ $string['auth_imapport_key'] = 'ポート';
 $string['auth_imaptype'] = 'IMAPサーバタイプです。IMAPサーバでは異なるタイプの認証およびネゴシエーションを使用することができます。';
 $string['auth_imaptype_key'] = 'タイプ';
 $string['pluginname'] = 'IMAPサーバ';
+$string['privacy:metadata'] = 'IMAPサーバ認証プラグインはどのような個人データも保存しません。';

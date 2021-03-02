@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'en', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -117,6 +117,12 @@ $string['choosefilefromcoursebackup'] = 'Course backup area';
 $string['choosefilefromcoursebackup_help'] = 'Course backups made using default settings are stored here.';
 $string['choosefilefromuserbackup'] = 'User private backup area';
 $string['choosefilefromuserbackup_help'] = 'Backup files with anonymized user information are stored here.';
+$string['config_keep_groups_and_groupings'] = 'By default keep current groups and groupings.';
+$string['config_keep_roles_and_enrolments'] = 'By default keep current roles and enrolments.';
+$string['config_overwrite_conf'] = 'Allows user to overwrite the current course configuration';
+$string['config_overwrite_course_fullname'] = 'By default overwrite course full name with the one from the backup file. This requires "Overwrite course configuration" to be checked and current user to have the capability to change course full name (moodle/course:changefullname)';
+$string['config_overwrite_course_shortname'] = 'By default overwrite course short name with the one from the backup file. This requires "Overwrite course configuration" to be checked and current user to have the capability to change course short name (moodle/course:changeshortname)';
+$string['config_overwrite_course_startdate'] = 'By default overwrite course start date with the one from the backup file. This requires "Overwrite course configuration" to be checked and current user to have the capability to roll course dates on restore (moodle/restore:rolldates)';
 $string['configgeneralactivities'] = 'Sets the default for including activities in a backup.';
 $string['configgeneralanonymize'] = 'If enabled all information pertaining to users will be anonymised by default.';
 $string['configgeneralbadges'] = 'Sets the default for including badges in a backup.';
@@ -133,13 +139,7 @@ $string['configgeneralquestionbank'] = 'If enabled the question bank will be inc
 $string['configgeneralroleassignments'] = 'If enabled by default roles assignments will also be backed up.';
 $string['configgeneralusers'] = 'Sets the default for whether to include users in backups.';
 $string['configgeneraluserscompletion'] = 'If enabled user completion information will be included in backups by default.';
-$string['config_keep_groups_and_groupings'] = 'By default keep current groups and groupings.';
-$string['config_keep_roles_and_enrolments'] = 'By default keep current roles and enrolments.';
 $string['configloglifetime'] = 'This specifies the length of time you want to keep backup logs information. Logs that are older than this age are automatically deleted. It is recommended to keep this value small, because backup logged information can be huge.';
-$string['config_overwrite_conf'] = 'Allows user to overwrite the current course configuration';
-$string['config_overwrite_course_fullname'] = 'By default overwrite course full name with the one from the backup file. This requires "Overwrite course configuration" to be checked and current user to have the capability to change course full name (moodle/course:changefullname)';
-$string['config_overwrite_course_shortname'] = 'By default overwrite course short name with the one from the backup file. This requires "Overwrite course configuration" to be checked and current user to have the capability to change course short name (moodle/course:changeshortname)';
-$string['config_overwrite_course_startdate'] = 'By default overwrite course start date with the one from the backup file. This requires "Overwrite course configuration" to be checked and current user to have the capability to roll course dates on restore (moodle/restore:rolldates)';
 $string['configrestoreactivities'] = 'Sets the default for restoring activities.';
 $string['configrestorebadges'] = 'Sets the default for restoring badges.';
 $string['configrestoreblocks'] = 'Sets the default for restoring blocks.';
@@ -176,8 +176,8 @@ $string['enableasyncbackup'] = 'Enable asynchronous backups';
 $string['enableasyncbackup_help'] = 'If enabled, all backup and restore operations will be done asynchronously. This does not affect imports and exports. Asynchronous backups and restores allow users to do other operations while a backup or restore is in progress.';
 $string['enterasearch'] = 'Enter a search';
 $string['error_block_for_module_not_found'] = 'Orphan block instance (id: {$a->bid}) for course module (id: {$a->mid}) found. This block will not be backed up';
-$string['errorcopyingbackupfile'] = 'Failed to copy the backup file to the temporary folder before restoring.';
 $string['error_course_module_not_found'] = 'Orphan course module (id: {$a}) found. This module will not be backed up.';
+$string['errorcopyingbackupfile'] = 'Failed to copy the backup file to the temporary folder before restoring.';
 $string['errorfilenamemustbezip'] = 'The filename you enter must be a ZIP file and have the .mbz extension';
 $string['errorfilenamerequired'] = 'You must enter a valid filename for this backup';
 $string['errorfilenametoolong'] = 'The filename must be less than 255 characters in length.';
@@ -191,8 +191,8 @@ $string['filealiasesrestorefailures'] = 'Aliases restore failures';
 $string['filealiasesrestorefailures_help'] = 'Aliases are symbolic links to other files, including those stored in external repositories. In some cases, Moodle cannot restore them - for example when restoring the backup at another site or when the referenced file does not exist.
 
 More details and the actual reason of the failure can be found in the restore log file.';
-$string['filealiasesrestorefailuresinfo'] = 'Some aliases included in the backup file could not be restored. The following list contains their expected location and the source file they were referring to at the original site.';
 $string['filealiasesrestorefailures_link'] = 'restore/filealiases';
+$string['filealiasesrestorefailuresinfo'] = 'Some aliases included in the backup file could not be restored. The following list contains their expected location and the source file they were referring to at the original site.';
 $string['filename'] = 'Filename';
 $string['filereferencesincluded'] = 'File references to external contents are included in the backup file. These won\'t work if the backup is restored on a different site.';
 $string['filereferencesnotsamesite'] = 'The backup file is from a different site, and so file references cannot be restored.';
@@ -271,14 +271,14 @@ $string['pendingasyncerror'] = 'Backup pending for this resource';
 $string['preparingdata'] = 'Preparing data';
 $string['preparingui'] = 'Preparing to display page';
 $string['previousstage'] = 'Previous';
+$string['privacy:metadata:backup:detailsofarchive'] = 'This archive can contain various user data related to a course, such as grades, user enrolments and activity data.';
+$string['privacy:metadata:backup:externalpurpose'] = 'The purpose of this archive is to store information related to a course, which may be restored in the future.';
 $string['privacy:metadata:backup_controllers'] = 'The list of backup operations';
 $string['privacy:metadata:backup_controllers:itemid'] = 'The ID of the course';
 $string['privacy:metadata:backup_controllers:operation'] = 'The operation that was performed, eg. restore.';
 $string['privacy:metadata:backup_controllers:timecreated'] = 'The time when the action was created';
 $string['privacy:metadata:backup_controllers:timemodified'] = 'The time when the action was modified';
 $string['privacy:metadata:backup_controllers:type'] = 'The type of the item being operated on, eg. activity.';
-$string['privacy:metadata:backup:detailsofarchive'] = 'This archive can contain various user data related to a course, such as grades, user enrolments and activity data.';
-$string['privacy:metadata:backup:externalpurpose'] = 'The purpose of this archive is to store information related to a course, which may be restored in the future.';
 $string['qcategory2coursefallback'] = 'The questions category "{$a->name}", originally at system/course category context in backup file, will be created at course context by restore';
 $string['qcategorycannotberestored'] = 'The questions category "{$a->name}" cannot be created by restore';
 $string['question2coursefallback'] = 'The questions category "{$a->name}", originally at system/course category context in backup file, will be created at course context by restore';

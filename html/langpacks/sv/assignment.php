@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignment', language 'sv', version '3.8'.
  *
- * @package   assignment
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignment
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,26 +31,17 @@ $string['assignment:exportsubmission'] = 'Exportera inskickade bidrag';
 $string['assignment:grade'] = 'Betygssätt uppgift';
 $string['assignment:submit'] = 'Skicka in uppgift';
 $string['assignment:view'] = 'Visa uppgift';
-$string['messageprovider:assignment_updates'] = 'Anteckningar om uppgifter';
+$string['assignmentdisabled'] = 'Den äldre "Uppgift 2.2"-aktiviteten är inaktiverad.';
+$string['assignmentneedsupgrade'] = 'Den äldre "Uppgift 2.2"-aktiviteten har tagits bort.';
+$string['messageprovider:assignment_updates'] = 'Uppgift (2.2) meddelanden';
 $string['modulename'] = 'Uppgift (2.2)';
-$string['modulename_help'] = '<p><img src="<?php echo $CFG->wwwroot?>/mod/assignment/icon.gif" alt="" />&nbsp;<b>Uppgifter</b></p>
-<ul>
-<li>Uppgifter till&aring;ter distansl&auml;raren att formulera en uppgift som
-inneb&auml;r att de l&auml;rande ska g&ouml;ra iordning digitalt inneh&aring;ll
-(i valfritt format) och skicka in det till servern.</li>
-</ul>
-<ul>
-<li>Ess&auml;er, projekt, rapporter
-osv. &auml;r exempel p&aring; typiska uppgifter.</li>
-</ul>
-<ul>
-<li>Den h&auml;r modulen till&aring;ter
-bed&ouml;mning/v&auml;rdering/betygss&auml;ttning.</li>
-</ul>';
-$string['modulenameplural'] = 'Uppgifter';
+$string['modulename_help'] = 'Inlämingsuppgifter tillåter distansläraren att formulera en uppgift som är antingen online eller offline och som sedan kan betygsättas.';
+$string['modulenameplural'] = 'Uppgifter 2.2 (inaktiverad)';
 $string['page-mod-assignment-submissions'] = 'Uppgiftsmodulens inlämningssida';
 $string['page-mod-assignment-view'] = 'Uppgiftsmodulens huvudsida';
 $string['page-mod-assignment-x'] = 'Varje uppgiftsmodulsida';
-$string['pluginadministration'] = 'Administration av uppgift';
-$string['pluginname'] = 'Uppgift (2.2)';
+$string['pluginadministration'] = 'Administration av Uppgift 2.2 (inaktiverad)';
+$string['pluginname'] = 'Uppgift 2.2 (avaktiverad)';
+$string['privacy:markedsubmissionspath'] = 'poängsattainlämningar';
+$string['privacy:submissionpath'] = 'inlämning';
 $string['upgradenotification'] = 'Denna aktivitet är baserad på en äldre uppgiftsmodul.';

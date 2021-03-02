@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ru', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -98,11 +98,11 @@ $string['stamps'] = 'Штампы';
 $string['stampsdesc'] = 'Штампы должны быть файлами изображений (рекомендованный размер: 40x40). Эти изображения могут быть использованы с инструментом Штамп для аннотации PDF.';
 $string['test_doesnotexist'] = 'Путь к ghostscript указывает на несуществующий файл';
 $string['test_empty'] = 'Путь к ghostscript пуст - введите корректный путь';
-$string['testgs'] = 'Тест пути к ghostscript';
 $string['test_isdir'] = 'Путь к ghostscript ведет к папке, укажите программу ghostscript в заданном пути';
 $string['test_notestfile'] = 'Тестовый PDF-файл отсутствует';
 $string['test_notexecutable'] = 'Путь к ghostscript ведет к не исполняемому файлу';
 $string['test_ok'] = 'Похоже, что путь к Ghostscript указан верно. Пожалуйста, убедитесь, что вы можете прочитать сообщение на изображении ниже.';
+$string['testgs'] = 'Тест пути к ghostscript';
 $string['tool'] = 'Инструмент';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Просмотреть аннотированный PDF-файл...';

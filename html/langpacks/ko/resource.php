@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'ko', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,6 @@ $string['configpopupwidth'] = '새 팝업창의 기본 폭이 얼마나 되게 �
 $string['contentheader'] = '내용';
 $string['displayoptions'] = '가능한 표시 옵션';
 $string['displayselect'] = '표시';
-$string['displayselectexplain'] = '표시 유형을 지정해 놓으면, 어떤 경우에는 표시되지 않을 수도 있음';
 $string['displayselect_help'] = '이 설정은 파일 형식 및 브라우저가 엠베딩을 허용하는지와 함께 파일이 어떻게 표시될지를 결정합니다.
 
 옵션은 다음과 같습니다.
@@ -56,6 +55,7 @@ $string['displayselect_help'] = '이 설정은 파일 형식 및 브라우저가
 * 프레임안에 - 파일이 누비기 막대 및 파일 설명 아래 프레임안에 표시됩니다.
 * 새 창 - 파일이 메뉴와 주소 막대와 함께 새 브라우저 창에 표시됩니다.
 ';
+$string['displayselectexplain'] = '표시 유형을 지정해 놓으면, 어떤 경우에는 표시되지 않을 수도 있음';
 $string['dnduploadresource'] = '파일 자원 만들기';
 $string['encryptedcode'] = '암호화된 코드';
 $string['filenotfound'] = '파일 없음';
@@ -83,10 +83,10 @@ $string['popupwidthexplain'] = '팝업창의 기본 너비를 지정';
 $string['printintro'] = '자료 설명 표시';
 $string['printintroexplain'] = '내용 하단에 자료 설명 표시. 어떤 자료 설명은 활성화 시켰음에도 불구하고 표시되지 않는 경우도 있다.';
 $string['resource:addinstance'] = '새 자원 추가';
-$string['resourcecontent'] = '파일 및 하위폴더';
-$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resource:exportresource'] = '학습자원 내보내기';
 $string['resource:view'] = '학습자원 보기';
+$string['resourcecontent'] = '파일 및 하위폴더';
+$string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['search:activity'] = '파일';
 $string['selectmainfile'] = '파일명 옆의 아이콘을 클릭하여 선택하세요';
 $string['showsize'] = '크기 보기';

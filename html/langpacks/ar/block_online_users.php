@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_online_users', language 'ar', version '3.8'.
  *
- * @package   block_online_users
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_online_users
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,14 +29,14 @@ $string['configtimetosee'] = 'عدد الدقائق التي تحدد فترة �
 $string['nouser'] = 'لا مستخدمين متصلين';
 $string['numuser'] = '{$a} مستخدم متصل';
 $string['numusers'] = '{$a} مستخدمين متصلين';
-$string['online_status:hide'] = 'إخفاء حالة اتصالي عن باقي المستخدمين';
+$string['online_status:hide'] = 'قم بإخفاء حالة اتصالي عن باقي المستخدمين';
+$string['online_status:show'] = 'أظهر حالة اتصالي لباقي المستخدمين';
+$string['online_users:addinstance'] = 'أضف كتلة جديدة للمستخدمين المتصلين';
+$string['online_users:myaddinstance'] = 'إضافة كتلة جديدة للمستخدمين المتصلين إلى دفة القيادة';
+$string['online_users:viewlist'] = 'معاينة قائمة المستخدمين الموجودين على الموقع الآن';
 $string['onlinestatushiding'] = 'إخفاء حالة الاتصال';
 $string['onlinestatushiding_desc'] = 'عند تمكينه، سيكون للمستخدمين خيار إخفاء حالة اتصالهم عن باقي المستخدمين.';
-$string['online_status:show'] = 'أظهر حالة اتصالي لباقي المستخدمين';
-$string['online_users:addinstance'] = 'إضافة كتلة جديدة للمستخدمين المتصلين';
-$string['online_users:myaddinstance'] = 'إضافة كتلة جديدة للمستخدمين المتصلين إلى دفة القيادة';
-$string['online_users:viewlist'] = 'معاينة قائمة المستخدمين الموجدين على الموقع الآن';
 $string['periodnminutes'] = 'الدقائق الاخيرة {$a} ';
-$string['pluginname'] = 'المستخدمين الموجدين على الموقع الآن';
+$string['pluginname'] = 'المستخدمين الموجودين على الموقع الآن';
 $string['privacy:metadata:preference:uservisibility'] = 'حالة الاتصال مرئية للمستخدمين الآخرين في كتلة المستخدمين المتصلين';
 $string['timetosee'] = 'أزل بعد فترة الخمول (بالدقائق)';

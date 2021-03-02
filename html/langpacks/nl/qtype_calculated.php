@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculated', language 'nl', version '3.8'.
  *
- * @package   qtype_calculated
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculated
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -110,9 +110,9 @@ $string['oneanswertrueansweroutsidelimits'] = 'Minstens één juist antwoord bui
 $string['param'] = 'Param {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Voor elk gedeeltelijk juist antwoord';
 $string['pluginname'] = 'Berekend';
+$string['pluginname_help'] = 'Met berekende vragen kun je unieke numerieke vragen maken door jokers tussen accolades te vervangen door getallen wanneer de test wordt afgenomen. Bijvoorbeeld de vraag: "Wat is de oppervlakte van een rechthoek met lengten {l} en breedte {b}?" heeft als juist antwoord de formule "{l}*{b}" (met * als vermenigvuldigingsteken).';
 $string['pluginnameadding'] = 'Berekende vraag toevoegen';
 $string['pluginnameediting'] = 'Berekende vraag bewerken';
-$string['pluginname_help'] = 'Met berekende vragen kun je unieke numerieke vragen maken door jokers tussen accolades te vervangen door getallen wanneer de test wordt afgenomen. Bijvoorbeeld de vraag: "Wat is de oppervlakte van een rechthoek met lengten {l} en breedte {b}?" heeft als juist antwoord de formule "{l}*{b}" (met * als vermenigvuldigingsteken).';
 $string['pluginnamesummary'] = 'Berekende vragen zijn als numerieke vragen, maar met de getallen tijdens de test willekeurig gekozen uit een vooraf opgestelde set.';
 $string['possiblehdr'] = 'Mogelijke jokertekens enkel in de vraagtekst aanwezig.';
 $string['privacy:metadata'] = 'De plug-in Calculated question type slaat geen persoonlijke gegevens op.';

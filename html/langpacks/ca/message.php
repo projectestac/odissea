@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'ca', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -69,7 +69,7 @@ $string['disableall'] = 'Inhabilita les notificacions';
 $string['disabled'] = 'La missatgeria està inhabilitada en aquest lloc';
 $string['disallowed'] = 'Inhabilitat';
 $string['editmessages'] = 'Edita els missatges';
-$string['emailtagline'] = 'Això és una còpia d\'un missatge que us han enviat a "{$a->sitename}". Aneu a {$a->url} per respondre.';
+$string['emailtagline'] = 'Aquest correu és una còpia d\'un missatge que se us ha enviat des de "{$a->sitename}". Aneu a {$a->url} per a contestar.';
 $string['enabled'] = 'Habilitat';
 $string['errorcallingprocessor'] = 'S\'ha produït un error en cridar a la sortida definida';
 $string['errorconversationdoesnotexist'] = 'La conversa no existeix';
@@ -98,12 +98,12 @@ $string['info'] = 'Informació de l\'usuari';
 $string['isnotinyourcontacts'] = '{$a} no és a la vostra llista de contactes';
 $string['loadmore'] = 'Carrega\'n més';
 $string['loggedin'] = 'En línia';
-$string['loggedindescription'] = 'Quan estic connectat';
 $string['loggedin_help'] = 'Configureu com voleu rebre notificacions quan esteu connectat a Moodle';
+$string['loggedindescription'] = 'Quan esteu connectat a Moodle';
 $string['loggedoff'] = 'Fora de línia';
-$string['loggedoffdescription'] = 'Quan estic fora de línia';
 $string['loggedoff_help'] = 'Configureu com voleu rebre notificacions quan no esteu connectat a Moodle';
-$string['managemessageoutputs'] = 'Gestiona les sortides dels missatges';
+$string['loggedoffdescription'] = 'Quan no esteu connectat a Moodle';
+$string['managemessageoutputs'] = 'Preferències de notificació per defecte';
 $string['message'] = 'Missatge';
 $string['messagecontactrequestsnotification'] = '{$a} sol·licita ésser afegit com a contacte.';
 $string['messagecontactrequestsnotificationsubject'] = 'Sol·licitud de contacte de {$a}';
@@ -131,7 +131,7 @@ $string['nofavourites'] = 'No teniu converses destacades';
 $string['noframesjs'] = 'Utilitza una versió més accessible';
 $string['nogroupconversations'] = 'No teniu converses de grup';
 $string['noindividualconversations'] = 'No teniu converses privades';
-$string['nomessages'] = 'No teniu missatges pendents';
+$string['nomessages'] = 'No teniu missatges';
 $string['nomessagesfound'] = 'No s\'han trobat missatges';
 $string['noncontacts'] = 'No contactes';
 $string['nonotifications'] = 'No teniu cap notificació';
@@ -159,7 +159,6 @@ $string['participants'] = 'Participants';
 $string['pendingcontactrequests'] = 'Hi ha {$a} sol·licituds de contacte pendents';
 $string['permitted'] = 'Permès';
 $string['privacy'] = 'Privacitat';
-$string['privacy_desc'] = 'Podeu definir qui us pot enviar missatges';
 $string['privacy:export:conversationprefix'] = 'Conversa:';
 $string['privacy:metadata:core_favourites'] = 'Les converses destacades per l\'usuari';
 $string['privacy:metadata:message_contact_requests'] = 'La llista de sol·licituds de contacte';
@@ -179,6 +178,7 @@ $string['privacy:metadata:message_conversation_members'] = 'La llista d\'usuaris
 $string['privacy:metadata:message_conversation_members:conversationid'] = 'L\'ID de la conversa';
 $string['privacy:metadata:message_conversation_members:timecreated'] = 'El moment en què es va crear el membre';
 $string['privacy:metadata:message_conversation_members:userid'] = 'L\'ID de l\'usuari en una conversa';
+$string['privacy:metadata:message_user_actions:action'] = 'L\'acció realitzada';
 $string['privacy:metadata:messages'] = 'Missatges';
 $string['privacy:metadata:messages:conversationid'] = 'L\'ID de la conversa';
 $string['privacy:metadata:messages:fullmessage'] = 'El missatge complet';
@@ -188,9 +188,9 @@ $string['privacy:metadata:messages:smallmessage'] = 'Una versió reduïda del mi
 $string['privacy:metadata:messages:subject'] = 'L\'assumpte del missatge';
 $string['privacy:metadata:messages:timecreated'] = 'El moment en què es va crear el missatge';
 $string['privacy:metadata:messages:useridfrom'] = 'L\'ID de l\'usuari que va enviar el missatge';
-$string['privacy:metadata:message_user_actions:action'] = 'L\'acció realitzada';
 $string['privacy:metadata:preference:core_message_settings'] = 'Paràmetres relacionats amb la missatgeria';
 $string['privacy:request:preference:set'] = 'El valor del paràmetre \'{$a->name}\' era \'{$a->value}\'';
+$string['privacy_desc'] = 'Podeu definir qui us pot enviar missatges';
 $string['processorsettings'] = 'Paràmetres del processador';
 $string['removecontact'] = 'Suprimeix contacte';
 $string['removecontactconfirm'] = 'Esteu segur que voleu suprimir {$a} dels vostres contactes?';
@@ -244,7 +244,7 @@ $string['unreadnotification'] = 'Notificació sense llegir: {$a}';
 $string['unreadnotifications'] = 'Hi ha {$a} notificacions sense llegir';
 $string['useentertosend'] = 'Prem la tecla de retorn per enviar';
 $string['usercantbemessaged'] = 'No podeu enviar cap missatge a {$a} degut a les seves preferències de missatge. Proveu d\'afegir-lo com a contacte.';
-$string['userisblockingyou'] = 'Aquest usuari us ha blocat; no podeu enviar-li missatges';
+$string['userisblockingyou'] = 'Aquest usuari us ha blocat; no podeu enviar-li missatges.';
 $string['userisblockingyounoncontact'] = '{$a} només accepta missatges de persones que siguin a la seva llista de contactes.';
 $string['userwouldliketocontactyou'] = '{$a} vol contactar-vos';
 $string['viewfullnotification'] = 'Visualitza la notificació completa';
@@ -254,5 +254,5 @@ $string['viewunreadmessageswith'] = 'Mostra els missatges sense llegir amb {$a}'
 $string['wouldliketocontactyou'] = 'Vol contactar-vos';
 $string['writeamessage'] = 'Escriu un missatge...';
 $string['you'] = 'Vós:';
-$string['youhaveblockeduser'] = 'Heu bloquejat aquest usuari en el passat.';
+$string['youhaveblockeduser'] = 'Heu blocat aquest usuari.';
 $string['yourcontactrequestpending'] = 'La vostra sol·licitud de contacte amb {$a} està pendent';

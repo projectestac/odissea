@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'label', language 'fr', version '3.8'.
  *
- * @package   label
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     label
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,16 +34,16 @@ $string['dndresizewidth'] = 'Largeur de redimensionnement par glisser-déposer';
 $string['dnduploadlabel'] = 'Ajouter un média à la page de cours';
 $string['dnduploadlabeltext'] = 'Ajouter une étiquette sur la page du cours';
 $string['indicator:cognitivedepth'] = 'Étiquette : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Étiquette.';
 $string['indicator:cognitivedepthdef'] = 'Étiquette : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « Étiquette » (niveaux : pas de vue, vue).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Étiquette.';
 $string['indicator:socialbreadth'] = 'Étiquette : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Étiquette.';
 $string['indicator:socialbreadthdef'] = 'Étiquette : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « Étiquette » (niveaux : pas de participation, participant seul).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Étiquette.';
 $string['label:addinstance'] = 'Ajouter une étiquette';
-$string['labeltext'] = 'Contenu de l\'étiquette';
 $string['label:view'] = 'Consulter des étiquettes';
+$string['labeltext'] = 'Contenu de l\'étiquette';
 $string['modulename'] = 'Étiquette';
 $string['modulename_help'] = 'Le module étiquette permet d\'insérer du texte ou des contenus multimédias dans la page du cours, entre les liens vers d\'autres ressources ou activités. Les étiquettes sont très polyvalentes et permettent d\'améliorer considérablement l\'aspect d\'un cours, lorsqu\'elles sont utilisées de façon adéquate.
 

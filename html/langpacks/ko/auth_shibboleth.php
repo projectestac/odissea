@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,28 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_shibboleth', language 'ko', version '3.8'.
  *
- * @package   auth_shibboleth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_shibboleth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_shib_auth_method'] = '인증 방법 이름';
 $string['auth_shib_auth_method_description'] = '사용자들이 익숙하게 쓸 수 있는 Shibboleth 인증 명칭을 제시. 이는 <tt>SWITCHaai Login</tt> 혹은 <tt>InCommon Login</tt>처럼 여러분의 Shibboleth 연맹의 명칭으로 여겨집니다.';
-$string['auth_shibbolethdescription'] = '이 방법을 사용하는 사용자는 <a href="http://shibboleth.internet2.edu/" target="_blank">Shibboleth</a>에 의해 생성되고 인증을 받은 사람들이다.
-<br>Shibboleth를 이용하여 무들을 설정하는 방법은 <a href="../auth/shibboleth/README.txt" target="_blank">README</a>를 읽어보기 바란다.';
-$string['auth_shibboleth_errormsg'] = '다음에서 자신이 소속되어 있는 기관을 선택하라!';
-$string['auth_shibboleth_login'] = 'Shibboleth 로그인';
-$string['auth_shibboleth_login_long'] = 'Shibboleth를 통한 무들 로그인';
-$string['auth_shibboleth_manual_login'] = '수동 로그인';
-$string['auth_shibboleth_select_member'] = '내 소속 기관은 ...';
-$string['auth_shibboleth_select_organization'] = 'Shibboleth로 인증을 받으려면 다음 펼침목록에서 소속 기관을 선택하라:';
 $string['auth_shib_changepasswordurl'] = '암호 변경 URL';
 $string['auth_shib_convert_data'] = '자료 변경 API';
 $string['auth_shib_convert_data_description'] = '추후 암호에 의해 제공된 데이터를 변경하기 위해 이 API를 사용할 수 있다. 좀 더 많은 규정을 위해
@@ -54,6 +46,14 @@ $string['auth_shib_no_organizations_warning'] = '통합된 WAYF 서비스를 이
 $string['auth_shib_only'] = 'Shibboleth만';
 $string['auth_shib_only_description'] = '만약 Shibboleth 인증이 강요된다면 이 옵션을 체크하십시오.';
 $string['auth_shib_username_description'] = '모듈 사용자 이름으로 사용되어야 하는 다양한 웹서버 암호 환경의 이름을 지어라.';
+$string['auth_shibboleth_errormsg'] = '다음에서 자신이 소속되어 있는 기관을 선택하라!';
+$string['auth_shibboleth_login'] = 'Shibboleth 로그인';
+$string['auth_shibboleth_login_long'] = 'Shibboleth를 통한 무들 로그인';
+$string['auth_shibboleth_manual_login'] = '수동 로그인';
+$string['auth_shibboleth_select_member'] = '내 소속 기관은 ...';
+$string['auth_shibboleth_select_organization'] = 'Shibboleth로 인증을 받으려면 다음 펼침목록에서 소속 기관을 선택하라:';
+$string['auth_shibbolethdescription'] = '이 방법을 사용하는 사용자는 <a href="http://shibboleth.internet2.edu/" target="_blank">Shibboleth</a>에 의해 생성되고 인증을 받은 사람들이다.
+<br>Shibboleth를 이용하여 무들을 설정하는 방법은 <a href="../auth/shibboleth/README.txt" target="_blank">README</a>를 읽어보기 바란다.';
 $string['pluginname'] = 'Shibboleth';
 $string['shib_no_attributes_error'] = 'Shibboleth인증을 쓰는 것 같습니다만, 무들은 사용자 속성을 전달받지 못했습니다. 필요한 속성({$a})을 무들 서비스 제공자 혹은 이 서버의 웹관리자에게 전달하였는지를 점검하여 주시기 바랍니다.';
 $string['shib_not_all_attributes_error'] = '무들은 당신의 경우와 같은 사례를 처리하기 위해서 다음과 같은 Shibboleth 속성이 필요합니다. {$a} <br />웹관리자나 인증제공자에게 문의하시기 바랍니다.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'it', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,7 +33,7 @@ moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:chang
 $string['autocreate_key'] = 'Creazione automatica corsi';
 $string['autocreation_settings'] = 'Impostazioni per la creazione automatica dei corsi';
 $string['autoupdate_settings'] = 'Impostazioni aggiornamento automatico corsi';
-$string['autoupdate_settings_desc'] = '<p>Selezionare il campi da aggiornare durante l\'elaborazione dello script di sincronizzazione (enrol/ldap/cli/sync.php).</p><p>L\'aggiornamento avrà luogo selezionando almeno un campo.</p>';
+$string['autoupdate_settings_desc'] = '<p>Selezionare il campi da aggiornare durante l\'elaborazione dello script di sincronizzazione.</p><p>L\'aggiornamento avrà luogo selezionando almeno un campo.</p>';
 $string['bind_dn'] = 'Distinguished Name (dn) dell\'utente bind da utilizzare, ad esempio \'cn=ldapuser,ou=public,o=org\'';
 $string['bind_dn_key'] = 'Distinguished name utente bind';
 $string['bind_pw'] = 'Password per l\'utente bind';
@@ -53,7 +53,6 @@ $string['course_fullname_updateonsync'] = 'Aggiorna il titolo tramite script di 
 $string['course_fullname_updateonsync_key'] = 'Aggiorna titolo';
 $string['course_idnumber'] = 'Attributo LDAP che contiene il codice identificativo del corso, ad esmepio \'cn\' o \'uid\'.';
 $string['course_idnumber_key'] = 'Codice identificativo';
-$string['coursenotexistskip'] = 'Il corso \'{$a}\'  non esiste e la creazione automatica è disabilitata; dati ignorati.';
 $string['course_search_sub'] = 'Cerca l\'appartenenza al gruppo anche nei sotto contesti.';
 $string['course_search_sub_key'] = 'Cerca nei sotto contesti';
 $string['course_settings'] = 'Impostazioni iscrizione corsi';
@@ -65,6 +64,7 @@ $string['course_summary'] = 'Opzionale: attributo LDAP che contiene la descrizio
 $string['course_summary_key'] = 'Descrizione';
 $string['course_summary_updateonsync'] = 'Aggiorna la descrizione tramite script di sincronizzazione';
 $string['course_summary_updateonsync_key'] = 'Aggiorna descrizione';
+$string['coursenotexistskip'] = 'Il corso \'{$a}\'  non esiste e la creazione automatica è disabilitata; dati ignorati.';
 $string['courseupdated'] = 'Il corso con codice identificativo  \'{$a->idnumber}\' è stato aggiornato correttamente.';
 $string['courseupdateskipped'] = 'Il corso con codice identificativo  \'{$a->idnumber}\' non richiede aggiornamento. Saltato...';
 $string['createcourseextid'] = 'L\'utente CREATE è iscritto ad un corso che non esiste \'{$a->courseextid}\'';
@@ -89,9 +89,9 @@ $string['host_url'] = 'URL dell\'Host LDAP (es. \'ldap://ldap.miosito.com/\' opp
 $string['host_url_key'] = 'Host URL';
 $string['idnumber_attribute'] = 'Se l\'appartenenza al gruppo contiene <i>distinguised name</i>, specificare lo stesso attributo configurato nella mappatura dati per il \'Codice identificativo\' nel plugin di autenticazione LDAP';
 $string['idnumber_attribute_key'] = 'Attributo Codice identificativo';
+$string['ldap:manage'] = 'Gestire istanze iscrizione LDAP';
 $string['ldap_encoding'] = 'Indicare la codifica utilizzata da LDAP. Spesso la codifica è UTF-8, MS AD usa codifiche di default come cp1252, cp1250, eccetera.';
 $string['ldap_encoding_key'] = 'Codifica LDAP';
-$string['ldap:manage'] = 'Gestire istanze iscrizione LDAP';
 $string['memberattribute'] = 'Identificativo univoco  LDAP degli utenti';
 $string['memberattribute_isdn'] = 'Se l\'appartenenza al gruppo contiene <i>distinguished names</i>, specificarlo in questo campo e configurare anche le altre impostazioni della sezione.';
 $string['memberattribute_isdn_key'] = 'L\'attributo member usa dn';
@@ -116,7 +116,7 @@ avere un campo \'idnumber\' valido. I gruppi LDAP devono avere questo idnumber n
 <p>Questo plugin può anche creare  automaticamente nuovi corsi in presenza di nuovi gruppi in LDAP.</p>';
 $string['pluginnotenabled'] = 'Il plugin non è abilitato!';
 $string['privacy:metadata'] = 'Il plugin di iscrizione "iscrizioni LDAP" non memorizza dati personali.';
-$string['role_mapping'] = '<p>Per ciascun ruolo che desideri assegnare tramite LDAP, devi specificare l\'elenco dei contesti dove si trovano i gruppi di corsi. Puoi separare contesti diversi con \';\'.</p><p>Devi anche specificare l\'attributo LDAP contenente i membri del gruppo, ad esempio \'member\' oppure \'memberUid\'</p>';
+$string['role_mapping'] = '<p>Per ciascun ruolo che si desidera assegnare tramite LDAP, si deve specificare l\'elenco dei contesti dove si trovano i gruppi di corsi. E\' possibile separare contesti diversi con \';\'.</p><p>Si deve anche specificare l\'attributo LDAP contenente i membri del gruppo, ad esempio \'member\' oppure \'memberUid\'</p>';
 $string['role_mapping_attribute'] = 'Attributo LDAP member per {$a}';
 $string['role_mapping_context'] = 'Contesti LDAP per {$a}';
 $string['role_mapping_key'] = 'Mappa ruoli da LDAP';

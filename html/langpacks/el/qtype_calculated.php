@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculated', language 'el', version '3.8'.
  *
- * @package   qtype_calculated
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculated
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -112,10 +112,10 @@ $string['oneanswertrueansweroutsidelimits'] = 'Τουλάχιστον μία σ�
 $string['param'] = 'Παράμετρος {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Για κάθε μερικώς σωστή απόκριση';
 $string['pluginname'] = 'Τύπος υπολογισμού';
-$string['pluginnameadding'] = 'Προσθήκη μιας υπολογισμένης ερώτησης';
-$string['pluginnameediting'] = 'Τροποποίηση μιας υπολογισμένης ερώτησης';
 $string['pluginname_help'] = 'Οι υπολογιζόμενες ερωτήσεις επιτρέπουν τη δημιουργία μεμονωμένων αριθμητικών ερωτήσεων με τη χρήση μπαλαντέρ σε άγκιστρα, οι οποίες αντικαθίστανται με μεμονωμένες τιμές κατά τη λήψη του κουίζ. Για παράδειγμα, η ερώτηση «Ποιό είναι το εμβαδόν ενός ορθογωνίου μήκους {l} και πλάτους {w};» θα είχε τη σωστή φόρμουλα/τύπο απάντησης «{l}*{w}» (όπου * δηλώνει τον πολλαπλασιασμό).';
 $string['pluginname_link'] = 'ερώτηση/τύπος/υπολογισμού';
+$string['pluginnameadding'] = 'Προσθήκη μιας υπολογισμένης ερώτησης';
+$string['pluginnameediting'] = 'Τροποποίηση μιας υπολογισμένης ερώτησης';
 $string['pluginnamesummary'] = 'Οι υπολογισμένες ερωτήσεις είναι σαν τις αριθμητικές ερωτήσεις αλλά οι αριθμοί που χρησιμοποιούνται διαλέγονται τυχαία από ένα σύνολο όταν διεξάγεται το κουίζ.';
 $string['possiblehdr'] = 'Πιθανοί χαρακτήρες μπαλαντέρ παρουσιάζονται μόνο στο κείμενο της ερώτησης';
 $string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις υπολογιστικού τύπου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
@@ -128,7 +128,7 @@ $string['setno'] = 'Σύνολο {$a}';
 $string['setwildcardvalues'] = 'σύνολο(α) τιμών μπαλαντέρ';
 $string['sharedwildcard'] = 'Διαμοιραζόμενο μπαλαντέρ {<strong>{$a}</strong>}';
 $string['sharedwildcardname'] = 'Κοινόχρηστο μπαλαντέρ';
-$string['sharedwildcards'] = 'Κοινόχρηστα μπαλαντέρ';
+$string['sharedwildcards'] = 'Διαμοιραζόμενα μπαλαντέρ';
 $string['showitems'] = 'Εμφάνιση';
 $string['significantfigures'] = 'με {$a}';
 $string['significantfiguresformat'] = 'σημαντικά ψηφία';

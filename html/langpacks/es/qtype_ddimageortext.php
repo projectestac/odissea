@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'es', version '3.8'.
  *
- * @package   qtype_ddimageortext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddimageortext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -47,9 +47,9 @@ $string['formerror_notintytop'] = 'La coordenada y debe ser un entero';
 $string['infinite'] = 'Ilimitado';
 $string['label'] = 'Texto';
 $string['pluginname'] = 'Arrastrar y soltar sobre una imagen';
+$string['pluginname_help'] = 'Las preguntas de arrastrar y soltar en imagen requieren que el usuario arrastre imágenes o etiquetas de texto y las suelte dentro de zonas para soltar definidas sobre de una imagen de fondo. Los ítems arrastrables pueden agruparse de forma tal que todos los ítems en un grupo particular estén coloreados igual que las zonas para soltarlos. Los ítem arrastrables marcados como ilimitados pueden soltarse adentro de más de una zona.';
 $string['pluginnameadding'] = 'Añadir arrastrar y soltar sobre una imagen';
 $string['pluginnameediting'] = 'Editar arrastrar y soltar sobre una imagen';
-$string['pluginname_help'] = 'Las preguntas de arrastrar y soltar en imagen requieren que el usuario arrastre imágenes o etiquetas de texto y las suelte dentro de zonas para soltar definidas sobre de una imagen de fondo. Los ítems arrastrables pueden agruparse de forma tal que todos los ítems en un grupo particular estén coloreados igual que las zonas para soltarlos. Los ítem arrastrables marcados como ilimitados pueden soltarse adentro de más de una zona.';
 $string['pluginnamesummary'] = 'Las imágenes o etiquetas de texto son arrastradas y soltadas dentro de zonas para soltar sobre una imagen de fondo.';
 $string['previewareaheader'] = 'Vista Previa';
 $string['previewareamessage'] = 'Seleccione una imagen de fondo, especifique los elementos que se pueden arrastrar y defina las zonas de colocación sobre las que deben ser arrastrados.';

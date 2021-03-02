@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'feedback', language 'ja', version '3.8'.
  *
- * @package   feedback
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     feedback
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,15 +48,15 @@ $string['cannotsavetempl'] = 'テンプレートの保存は許可されてい�
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captchaが設定されていません。';
 $string['check'] = '多肢選択 - 複数回答';
-$string['checkbox'] = '多肢選択 - 複数回答 (チェックボックス)';
 $string['check_values'] = '考えられる回答';
+$string['checkbox'] = '多肢選択 - 複数回答 (チェックボックス)';
 $string['choosefile'] = 'ファイルを選択する';
 $string['chosen_feedback_response'] = '選択されたフィードバックの回答';
 $string['closebeforeopen'] = 'あなたは開始日時の前に終了日時を指定しました。';
+$string['complete_the_form'] = '質問に回答する';
 $string['completed'] = '完了';
 $string['completed_feedbacks'] = '送信済み回答';
 $string['completedon'] = '終了日時: {$a}';
-$string['complete_the_form'] = '質問に回答する';
 $string['completionsubmit'] = 'フィードバックが送信された場合、完了として表示する';
 $string['configallowfullanonymous'] = 'この設定を有効にした場合、ログインを要求されせずにフィードバックを完了することができます。';
 $string['confirmdeleteentry'] = '本当にこのエントリを削除してもよろしいですか?';
@@ -70,7 +70,7 @@ $string['creating_templates'] = 'これらの質問を新しいテンプレー�
 $string['delete_entry'] = 'エントリを削除する';
 $string['delete_item'] = '質問を削除する';
 $string['delete_old_items'] = '古いアイテムを削除する';
-$string['delete_pagebreak'] = '改行を削除する';
+$string['delete_pagebreak'] = '改ページを削除する';
 $string['delete_template'] = 'テンプレートを削除する';
 $string['delete_templates'] = 'テンプレートを削除する ...';
 $string['depending'] = '依存関係';
@@ -101,11 +101,11 @@ $string['dependvalue'] = '値に依存する';
 $string['description'] = '説明';
 $string['do_not_analyse_empty_submits'] = '空の送信を分析しない';
 $string['downloadresponseas'] = 'すべての回答をダウンロードする:';
+$string['drop_feedback'] = 'このコースから削除する';
 $string['dropdown'] = '多肢選択 - 単一回答 (ドロップダウンメニュー)';
+$string['dropdown_values'] = '回答';
 $string['dropdownlist'] = '多肢選択 - 単一回答 (ドロップダウンメニュー)';
 $string['dropdownrated'] = 'ドロップダウンメニュー (評定)';
-$string['dropdown_values'] = '回答';
-$string['drop_feedback'] = 'このコースから削除する';
 $string['edit_item'] = '質問を編集する';
 $string['edit_items'] = '質問を編集する';
 $string['email_notification'] = '送信通知を有効にする';
@@ -123,39 +123,39 @@ $string['eventresponsesubmitted'] = '回答が送信されました。';
 $string['export_questions'] = '質問をエクスポートする';
 $string['export_to_excel'] = 'Excelにエクスポートする';
 $string['feedback:addinstance'] = '新しいフィードバックを追加する';
-$string['feedbackclose'] = 'フィードバック終了日時';
 $string['feedback:complete'] = 'フィードバックを完了する';
-$string['feedbackcompleted'] = '{$a->username} が {$a->feedbackname} を完了しました。';
 $string['feedback:createprivatetemplate'] = 'プライベートテンプレートを作成する';
 $string['feedback:createpublictemplate'] = 'パブリックテンプレートを作成する';
 $string['feedback:deletesubmissions'] = '完了した送信を削除する';
 $string['feedback:deletetemplate'] = 'テンプレートを削除する';
 $string['feedback:edititems'] = 'アイテムを編集する';
-$string['feedback_is_not_for_anonymous'] = '匿名ユーザはフィードバックを利用できません。';
-$string['feedback_is_not_open'] = 'フィードバックは利用できません。';
 $string['feedback:mapcourse'] = 'コースをグローバルフィードバックにマップする';
-$string['feedbackopen'] = 'フィードバック開始日時';
 $string['feedback:receivemail'] = 'メール通知を受信する';
 $string['feedback:view'] = 'フィードバックを表示する';
 $string['feedback:viewanalysepage'] = '回答送信後、分析ページを表示する';
 $string['feedback:viewreports'] = 'レポートを表示する';
+$string['feedback_is_not_for_anonymous'] = '匿名ユーザはフィードバックを利用できません。';
+$string['feedback_is_not_open'] = 'フィードバックは利用できません。';
+$string['feedbackclose'] = 'フィードバック終了日時';
+$string['feedbackcompleted'] = '{$a->username} が {$a->feedbackname} を完了しました。';
+$string['feedbackopen'] = 'フィードバック開始日時';
 $string['file'] = 'ファイル';
 $string['filter_by_course'] = 'コースでフィルタする';
 $string['handling_error'] = 'フィードバックモジュール処理中にエラーが発生しました。';
 $string['hide_no_select_option'] = '「未選択」オプションを隠す';
 $string['horizontal'] = '水平';
-$string['importfromthisfile'] = 'このファイルからインポートする';
 $string['import_questions'] = '質問をインポートする';
 $string['import_successfully'] = '正常にインポートされました。';
+$string['importfromthisfile'] = 'このファイルからインポートする';
 $string['includeuserinrecipientslist'] = '{$a} を受信者リストに含む';
 $string['indicator:cognitivedepth'] = 'フィードバック認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はフィードバック活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'フィードバック認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がフィードバック活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信)。';
-$string['indicator:cognitivedepth_help'] = 'この指標はフィードバック活動で学生が到達した認識深度に基づきます。';
 $string['indicator:socialbreadth'] = 'フィードバック社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はフィードバック活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'フィードバック社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がフィードバック活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
-$string['indicator:socialbreadth_help'] = 'この指標はフィードバック活動で学生が到達した社会的広がりに基づきます。';
 $string['info'] = '情報';
 $string['infotype'] = '情報タイプ';
 $string['insufficient_responses'] = '不十分な回答';
@@ -191,25 +191,25 @@ $string['modulename_help'] = 'フィードバック活動モジュールにお�
 $string['modulenameplural'] = 'フィードバック';
 $string['move_item'] = 'この質問を移動する';
 $string['multichoice'] = '多肢選択';
+$string['multichoice_values'] = '多肢選択値';
 $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->name}';
 $string['multichoicerated'] = '多肢選択 (評定)';
 $string['multichoicetype'] = '多肢選択タイプ';
-$string['multichoice_values'] = '多肢選択値';
 $string['multiplesubmit'] = '複数回答を許可する';
 $string['multiplesubmit_help'] = '匿名調査を有効にした場合、ユーザは無制限でフィードバックを送信することができます。';
 $string['name'] = '名称';
-$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['name_required'] = '名称を入力してください。';
+$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['next_page'] = '次のページ';
 $string['no_handler'] = 'アクションハンドラがありません:';
 $string['no_itemlabel'] = 'ラベルなし';
 $string['no_itemname'] = '無題';
 $string['no_items_available_yet'] = '質問はまだ設定されていません。';
+$string['no_templates_available_yet'] = 'テンプレートはまだ利用できません。';
 $string['non_anonymous'] = 'ユーザ名を記録して回答と共に表示する';
 $string['non_anonymous_entries'] = '非匿名エントリ ({$a})';
 $string['non_respondents_students'] = '未回答の学生 ({$a})';
 $string['not_completed_yet'] = 'まだ完了していません。';
-$string['no_templates_available_yet'] = 'テンプレートはまだ利用できません。';
 $string['not_selected'] = '未選択';
 $string['not_started'] = '未開始';
 $string['numberoutofrange'] = '数字が範囲を超えています。';
@@ -223,9 +223,9 @@ $string['only_one_captcha_allowed'] = '1フィードバックあたり1つのCAP
 $string['openafterclose'] = 'あなたは終了日の後に開始日を指定しました。';
 $string['overview'] = '概要';
 $string['page'] = 'ページ';
+$string['page-mod-feedback-x'] = 'すべてのフィードバックモジュールページ';
 $string['page_after_submit'] = '完了メッセージ';
 $string['pagebreak'] = '改ページ';
-$string['page-mod-feedback-x'] = 'すべてのフィードバックモジュールページ';
 $string['pluginadministration'] = 'フィードバック管理';
 $string['pluginname'] = 'フィードバック';
 $string['position'] = 'ポジション';
@@ -233,11 +233,11 @@ $string['previous_page'] = '前のページ';
 $string['privacy:metadata:completed'] = 'フィードバックへの送信のレコードです。';
 $string['privacy:metadata:completed:anonymousresponse'] = '送信が匿名で使用されるかどうか決定します。';
 $string['privacy:metadata:completed:timemodified'] = '送信の最終修正時間です。';
-$string['privacy:metadata:completedtmp'] = '進行中の送信のレコードです。';
 $string['privacy:metadata:completed:userid'] = 'フィードバック活動を完了したユーザのIDです。';
+$string['privacy:metadata:completedtmp'] = '進行中の送信のレコードです。';
 $string['privacy:metadata:value'] = '質問への回答のレコードです。';
-$string['privacy:metadata:valuetmp'] = '進行中のサブシステムの質問に対する回答のレコードです。';
 $string['privacy:metadata:value:value'] = '選択された回答です。';
+$string['privacy:metadata:valuetmp'] = '進行中のサブシステムの質問に対する回答のレコードです。';
 $string['public'] = '公開';
 $string['question'] = '質問';
 $string['questionandsubmission'] = '質問および回答設定';
@@ -278,8 +278,8 @@ $string['switch_item_to_not_required'] = '非必須に設定する';
 $string['switch_item_to_required'] = '必須に設定する';
 $string['template'] = 'テンプレート';
 $string['template_deleted'] = 'テンプレートが削除されました。';
-$string['templates'] = 'テンプレート';
 $string['template_saved'] = 'テンプレートが保存されました。';
+$string['templates'] = 'テンプレート';
 $string['textarea'] = '長文回答';
 $string['textarea_height'] = '行数';
 $string['textarea_width'] = '幅';

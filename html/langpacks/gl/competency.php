@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'competency', language 'gl', version '3.8'.
  *
- * @package   competency
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     competency
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -110,12 +110,12 @@ $string['invalidtaxonomy'] = 'Taxonomía incorrecta: {$a}';
 $string['invalidurl'] = 'O URL non é válido. Asegúrese de que comeza con «http://» ou «https://».';
 $string['nouserplanswithcompetency'] = 'Non hai ningún plan de aprendizaxe que conteña esta competencia.';
 $string['planstatusactive'] = 'Activo';
-$string['planstatuscomplete'] = 'Completo';
+$string['planstatuscomplete'] = 'Completa';
 $string['planstatusdraft'] = 'Versión preliminar';
 $string['planstatusinreview'] = 'En revisión';
 $string['planstatuswaitingforreview'] = 'Agardando pola revisión';
 $string['pointsrequiredaremet'] = 'Cumpríronse os puntos requiridos';
-$string['privacy:evidence:action:complete'] = 'Completar a competencia se está sen puntuar';
+$string['privacy:evidence:action:complete'] = 'Completar a competencia se está sen cualificar';
 $string['privacy:evidence:action:log'] = 'Rexistro da acción';
 $string['privacy:evidence:action:override'] = 'Anular a puntuación de competencia';
 $string['privacy:metadata:competency'] = 'Un rexistro das competencias';
@@ -166,7 +166,7 @@ $string['privacy:path:relatedtome'] = 'Relacionado comigo';
 $string['privacy:path:userevidence'] = 'Evidencia de aprendizaxe previo';
 $string['pushcourseratingstouserplans'] = 'Enviar as puntuacións do curso aos plans de aprendizaxe individuais';
 $string['pushcourseratingstouserplans_desc'] = 'Valor predeterminado para o axuste do curso para actualizar plans individuais de aprendizaxe cando se puntúan as competencias do curso.';
-$string['syncplanscohorts'] = 'Sincronizar plans desde modelos de círculos de plan de aprendizaxe';
+$string['syncplanscohorts'] = 'Sincronizar plans dende modelos de círculos de plan de aprendizaxe';
 $string['taxonomy_behaviour'] = 'Comportamento';
 $string['taxonomy_competency'] = 'Competencia';
 $string['taxonomy_concept'] = 'Concepto';
@@ -186,7 +186,7 @@ See: {$a->url}';
 $string['usercommentedonacompetencyhtml'] = '<p>{$a->fullname} comentou na competencia "{$a->competency}":</p>
 <div>{$a->comment}</div>
 <p>Ver: <a href="{$a->url}">{$a->urlname}</a>.</p>';
-$string['usercommentedonacompetencysmall'] = '{$a->fullname} comentou na competencia "{$a->competency}".';
+$string['usercommentedonacompetencysmall'] = '{$a->fullname} comentou na competencia «{$a->competency}».';
 $string['usercommentedonacompetencysubject'] = '{$a} comentou nunha competencia.';
 $string['usercommentedonaplan'] = '{$a->fullname} comentou no plan de aprendizaxe "{$a->plan}":
 
@@ -196,7 +196,7 @@ Ver: {$a->url}';
 $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} comentou no plan de aprendizaxe "{$a->plan}":</p>
 <div>{$a->comment}</div>
 <p>Ver: <a href="{$a->url}">{$a->urlname}</a>.</p>';
-$string['usercommentedonaplansmall'] = '{$a->fullname} comentou no plan de aprendizaxe "{$a->plan}".';
+$string['usercommentedonaplansmall'] = '{$a->fullname} comentou no plan de aprendizaxe «{$a->plan}».';
 $string['usercommentedonaplansubject'] = '{$a} comentou un plan de aprendizaxe.';
 $string['usercompetencystatus_idle'] = 'Inactivo';
 $string['usercompetencystatus_inreview'] = 'En revisión';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'es', version '3.8'.
  *
- * @package   qtype_ddmarker
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddmarker
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,9 +49,9 @@ $string['markers'] = 'Marcadores';
 $string['noofdrags'] = 'Número';
 $string['pleasedragatleastonemarker'] = 'Su respuesta no es completa; debe situar al menos un marcador en la imagen.';
 $string['pluginname'] = 'Arrastrar y soltar marcadores';
+$string['pluginname_help'] = 'Arrastrar y soltar marcadores requiere que el usuario arrastre etiquetas de texto y las suelte dentro de zonas de descarga definidas sobre de una imagen de fondo.';
 $string['pluginnameadding'] = 'Añadiendo arrastrar y soltar marcadores';
 $string['pluginnameediting'] = 'Editando arrastrar y soltar marcadores';
-$string['pluginname_help'] = 'Arrastrar y soltar marcadores requiere que el usuario arrastre etiquetas de texto y las suelte dentro de zonas de descarga definidas sobre de una imagen de fondo.';
 $string['pluginnamesummary'] = 'Los marcadores se arrastran y sueltan sobre una imagen de fondo.';
 $string['previewareaheader'] = 'Previsualizar';
 $string['previewareamessage'] = 'Elija un archivo de imagen de fondo, escriba etiquetas de texto para los marcadores y defina las zonas para soltar sobre la imagen de fondo en donde deberán arrastrarse.';

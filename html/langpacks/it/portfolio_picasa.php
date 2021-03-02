@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_picasa', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio_picasa', language 'it', version '3.8'.
  *
- * @package   portfolio_picasa
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_picasa
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'Client ID';
-$string['noauthtoken'] = 'Google non ha fornito un token di autenticazione. Accertati che Moodle sia autorizzato ad accedere al tuo account Google';
+$string['noauthtoken'] = 'Google non ha fornito un token di autenticazione. Accertarsi che Moodle sia autorizzato ad accedere al tuo account Google';
 $string['nooauthcredentials'] = 'Sono necessarie le credenziali OAuth';
 $string['nooauthcredentials_help'] = 'Per usare il plugin portfolio Picasa devi configurare le credenziali OAuth nelle impostazioni del plugin.';
 $string['oauthinfo'] = '<p>Per usare questo plugin devi essere registrato su Google. Trovi le istruzioni per la registrazione nella documentazione <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Durante il processo di registrazione dovrai inserire il seguente URL nel campo \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p>Al termine della registrazione riceverai un Client ID ed uno Shared secret che possono essere utilizzati per configurare sia i plugin Google Drive sia i plugin Picasa.</p>';

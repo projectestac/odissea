@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol', language 'nl', version '3.8'.
  *
- * @package   enrol
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -50,14 +50,14 @@ $string['edituserenrolment'] = 'Bewerk aanmelding van {$a}';
 $string['enrol'] = 'Meld aan';
 $string['enrolcandidates'] = 'Niet aangemelde gebruikers';
 $string['enrolcandidatesmatching'] = 'Mogelijke niet aangemelde gebruikers';
-$string['enrolcohort'] = 'Site groep aanmelden';
+$string['enrolcohort'] = 'Site-groep aanmelden';
 $string['enrolcohortusers'] = 'Gebruikers aanmelden';
 $string['enroldetails'] = 'Aanmeldingsdetails';
 $string['enrollednewusers'] = 'Met succes {$a} nieuwe gebruikers aangemeld';
 $string['enrolledusers'] = 'Aangemelde gebruikers';
 $string['enrolledusersmatching'] = 'Aangemelde gebruikers';
 $string['enrolme'] = 'Meld me aan bij deze cursus';
-$string['enrolmentinstances'] = 'Aanmeldingsmethodes';
+$string['enrolmentinstances'] = 'Aanmeldingsbeheer';
 $string['enrolmentmethod'] = 'Aanmeldingsmethode';
 $string['enrolmentnew'] = 'Nieuwe aanmelding in {$a}';
 $string['enrolmentnewuser'] = '{$a->user} is aangemeld bij de cursus "{$a->course}"';
@@ -75,8 +75,8 @@ $string['enrolxusers'] = '{$a} gebruikers aanmelden';
 $string['errajaxfailedenrol'] = 'Aanmelden gebruiker mislukt';
 $string['errajaxsearch'] = 'Fout bij het zoeken naar gebruikers';
 $string['erroreditenrolment'] = 'Er is een fout opgetreden bij het bewerken van de aanmelding van een gebruiker';
-$string['errorenrolcohort'] = 'Fout bij het maken van een site groep sync aanmelding in deze cursus.';
-$string['errorenrolcohortusers'] = 'Fout bij het aanmelden van site groepsleden in deze cursus';
+$string['errorenrolcohort'] = 'Fout bij het maken van een site-groep sync-aanmelding in deze cursus.';
+$string['errorenrolcohortusers'] = 'Fout bij het aanmelden van site-groepsleden in deze cursus';
 $string['errorthresholdlow'] = 'De notificatietijd moet minstens 1 dag zijn.';
 $string['errorwithbulkoperation'] = 'Er is een fout opgetreden bij het in bulk bewerken van aanmeldingswijzigingen.';
 $string['eventenrolinstancecreated'] = 'Aanmeldingsinstantie aangemaakt';
@@ -86,9 +86,9 @@ $string['eventuserenrolmentcreated'] = 'Gebruiker aangemeld in cursus';
 $string['eventuserenrolmentdeleted'] = 'Gebruiker afgemeld uit cursus';
 $string['eventuserenrolmentupdated'] = 'Gebruiker afmelden aangepast';
 $string['expirynotify'] = 'Melden voor het vervallen van de aanmelding';
+$string['expirynotify_help'] = 'Deze instelling bepaalt of meldingen voor het vervallen van aanmeldingen al dan niet verzonden worden.';
 $string['expirynotifyall'] = 'Aanmelder en aangemelde gebruiker';
 $string['expirynotifyenroller'] = 'Enkel aanmelder';
-$string['expirynotify_help'] = 'Deze instelling bepaalt of meldingen voor het vervallen van aanmeldingen al dan niet verzonden worden.';
 $string['expirynotifyhour'] = 'Om welk uur moeten meldingen voor het vervallen van de aanmelding verstuurd worden?';
 $string['expirythreshold'] = 'Tijd op voorhand';
 $string['expirythreshold_help'] = 'Hoe lang voor het vervallen van de aanmelding moeten gebruikers gewaarschuwd worden?';

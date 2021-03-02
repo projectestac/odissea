@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'ko', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,11 +38,11 @@ $string['allowroletoswitch'] = '{$a->fromrole} 역할을 지닌 사용자에게 
 $string['allowswitch'] = '역활 교환 허용';
 $string['allsiteusers'] = '사이트의 모든 사용자';
 $string['archetype'] = '역할 원형';
+$string['archetype_help'] = '역할 원형은 역할을 기본으로 되돌릴 때 사용권한를 결정합니다. 또한 사이트가 업그레이드 될 때 새로운 사용 권한을 결정합니다.';
 $string['archetypecoursecreator'] = '원형: 강좌 생성자';
 $string['archetypeeditingteacher'] = '원형: 선생님';
 $string['archetypefrontpage'] = '원형: 시작 페이지 인증 사용자';
 $string['archetypeguest'] = '원형: 방문객';
-$string['archetype_help'] = '역할 원형은 역할을 기본으로 되돌릴 때 사용권한를 결정합니다. 또한 사이트가 업그레이드 될 때 새로운 사용 권한을 결정합니다.';
 $string['archetypemanager'] = '원형: 관리자';
 $string['archetypestudent'] = '원형: 학생';
 $string['archetypeteacher'] = '원형: 선생님(편집권한 없는)';
@@ -66,7 +66,7 @@ $string['backtoallroles'] = '역할 목록으로 되돌아 가기';
 $string['backup:anonymise'] = '백업시 사용자 데이터 익명화';
 $string['backup:backupactivity'] = '활동 백업';
 $string['backup:backupcourse'] = '강좌 백업';
-$string['backup:backupsection'] = '영역 백업';
+$string['backup:backupsection'] = '섹션 백업';
 $string['backup:backuptargetimport'] = '목적지 백업';
 $string['backup:configure'] = '백업 설정';
 $string['backup:downloadfile'] = '백업 영역에서 파일 내려받기';
@@ -89,9 +89,9 @@ $string['blog:manageexternal'] = '외부 블로그 편집 및 관리';
 $string['blog:search'] = '블로그 검색';
 $string['blog:view'] = '블로그 보기';
 $string['blog:viewdrafts'] = '블로그 초안 보기';
-$string['calendar:manageentries'] = '일정 관리';
-$string['calendar:managegroupentries'] = '모둠일정 관리';
-$string['calendar:manageownentries'] = '개인 일정 관리';
+$string['calendar:manageentries'] = '달력 항목 관리';
+$string['calendar:managegroupentries'] = '모둠 달력 일정 관리';
+$string['calendar:manageownentries'] = '개인 달력 일정 관리';
 $string['capabilities'] = '권한';
 $string['capability'] = '능력';
 $string['category:create'] = '범주 만들기';
@@ -122,7 +122,7 @@ $string['confirmunassigntitle'] = '역할 변경 학인';
 $string['confirmunassignyes'] = '제거';
 $string['context'] = '문맥';
 $string['course:activityvisibility'] = '활동 공개/비공개';
-$string['course:bulkmessaging'] = '여러 사람에게 메시지 발송';
+$string['course:bulkmessaging'] = '많은 사람에게 쪽지 발송';
 $string['course:changecategory'] = '강좌 범주 변경';
 $string['course:changefullname'] = '강좌명 변경';
 $string['course:changeidnumber'] = '강좌 식별번호 변경';
@@ -141,19 +141,19 @@ $string['course:markcomplete'] = '강좌이수완료에 사용자를 완료한 �
 $string['course:movesections'] = '섹션 이동';
 $string['course:request'] = '강좌 개설 요청';
 $string['course:reset'] = '강좌 초기화';
-$string['course:sectionvisibility'] = '영역 보기 조정';
-$string['course:setcurrentsection'] = '현재 영역 설정';
+$string['course:sectionvisibility'] = '섹션 보기 조정';
+$string['course:setcurrentsection'] = '현재 섹션 설정';
 $string['course:update'] = '강좌 설정 업데이트';
 $string['course:useremail'] = '이메일 활성화';
 $string['course:view'] = '참여하지 않고 강좌 보기';
 $string['course:viewcoursegrades'] = '강좌 성적 보기';
 $string['course:viewhiddenactivities'] = '비공개 활동 보기';
 $string['course:viewhiddencourses'] = '비공개 강좌 보기';
-$string['course:viewhiddensections'] = '비공개 영역 보기';
+$string['course:viewhiddensections'] = '비공개 섹션 보기';
 $string['course:viewhiddenuserfields'] = '비공개 사용자항목 보기';
 $string['course:viewparticipants'] = '참여자 보기';
 $string['course:viewscales'] = '척도 보기';
-$string['course:viewsuspendedusers'] = '유보된 사용자들을 볼 수 있습니다.';
+$string['course:viewsuspendedusers'] = '유보된 사용자들 보기';
 $string['course:visibility'] = '강좌 공개/비공개';
 $string['createrolebycopying'] = '{$a} 를 복사하여 새 역할 생성';
 $string['createthisrole'] = '역할 생성';
@@ -213,7 +213,7 @@ $string['grade:unlock'] = '성적 혹은 항목 잠금해제';
 $string['grade:view'] = '내 성적 보기';
 $string['grade:viewall'] = '다른 사람 성적 보기';
 $string['grade:viewhidden'] = '숨겨진 성적 보기';
-$string['highlightedcellsshowdefault'] = '아래 표의 강조된 칸은 \'정규 역할 유형\'에 기반한 표준 권한을 보여줍니다.';
+$string['highlightedcellsshowdefault'] = '아래 표에서 강조된 허가는 위에서 선택된 역할 원형에 대한 기본값들입니다.';
 $string['highlightedcellsshowinherit'] = '아래 표의 강조된 칸은 상속될 수 있는 권한을 보여줍니다. 실제 변경하고자 하는 권한과는 별개로, 모든 것을 상속으로 두어야 합니다.';
 $string['inactiveformorethan'] = '{$a->timeperiod} 이상 비활동';
 $string['ingroup'] = '모둠 "{$a->group}" 속';
@@ -224,8 +224,8 @@ $string['legacy:editingteacher'] = '정규 역할 : 선생님(편집가능)';
 $string['legacy:guest'] = '정규 역할 : 손님';
 $string['legacy:student'] = '정규 역할 : 학생';
 $string['legacy:teacher'] = '정규 역할 : 선생님(편집기능 없음)';
-$string['legacytype'] = '정규 역할 유형';
 $string['legacy:user'] = '정규 역할 : 인증된 사용자';
+$string['legacytype'] = '정규 역할 유형';
 $string['listallroles'] = '역할 목록';
 $string['localroles'] = '영역 역할';
 $string['mainadmin'] = '주 관리자';
@@ -237,8 +237,8 @@ $string['manageroles'] = '역할 관리';
 $string['maybeassignedin'] = '이 역할을 부여받을 수 있는 문맥 유형';
 $string['morethan'] = '{$a} 보다 많이';
 $string['multipleroles'] = '복수 역할';
-$string['my:configsyspages'] = '내 공부방 페이지를 위한 시스템 템플릿 구성';
-$string['my:manageblocks'] = '내 공부방 블록 관리';
+$string['my:configsyspages'] = '내 홈 페이지를 위한 시스템 템플릿 구성';
+$string['my:manageblocks'] = '내 홈 페이지 블록 관리';
 $string['neededroles'] = '권한을 가진 역할';
 $string['nocapabilitiesincontext'] = '이 문맥에서는 아무 권한이 없음';
 $string['noneinthisx'] = '이 {$a} 에는 아무것도 없음';
@@ -254,8 +254,8 @@ $string['notset'] = '상속';
 $string['overrideanotherrole'] = '다른 역할 덮어쓰기';
 $string['overridecontext'] = '문맥 덮어쓰기';
 $string['overridepermissions'] = '권한 덮어쓰기';
-$string['overridepermissionsforrole'] = '{$a->context} 의 \'{$a->role}\' 역할에 대한 권한 덮어쓰기';
 $string['overridepermissions_help'] = '권한 덮어쓰기는 특정 문맥 영역에서  선택된 능력들이 허용되거나 방지될 수 있게 합니다.';
+$string['overridepermissionsforrole'] = '{$a->context} 의 \'{$a->role}\' 역할에 대한 권한 덮어쓰기';
 $string['overridepermissionsin'] = '{$a} 에서 권한 덮어쓰기';
 $string['overrideroles'] = '역할 덮어쓰기';
 $string['overriderolesin'] = '{$a} 에서 역할 덮어쓰기';
@@ -300,34 +300,34 @@ $string['restore:configure'] = '복구 설정';
 $string['restore:createuser'] = '복구시 사용자 생성';
 $string['restore:restoreactivity'] = '활동 복구';
 $string['restore:restorecourse'] = '강좌 복구';
-$string['restore:restoresection'] = '영역 복구';
+$string['restore:restoresection'] = '섹션 복구';
 $string['restore:restoretargetimport'] = '목적지에서 파일 복구';
 $string['restore:rolldates'] = '복원시에 활동 구성 일자를 회전 하는 것을 허용';
 $string['restore:uploadfile'] = '백업 영역에서 파일 올리기';
 $string['restore:userinfo'] = '사용자 정보 복구';
 $string['restore:viewautomatedfilearea'] = '자동 백업으로부터 강좌 복구';
 $string['risks'] = '위험부담';
+$string['role:assign'] = '사용자에게 역할 부여';
+$string['role:manage'] = '역할을 생성하고 관리';
+$string['role:override'] = '타인에 대한 권한 덮어쓰기';
+$string['role:review'] = '다른 사람에 대한 권한 검토';
+$string['role:safeoverride'] = '타인에 대한 안전한 권한 덮어쓰기';
+$string['role:switchroles'] = '다른 역할과 맞바꿈';
 $string['roleallowheader'] = '허용 역할:';
 $string['roleallowinfo'] = '문맥 {$a->context}, 능력 {$a->cap} 에서 허용된 역할 목록에 추가될 역할을 선택하십시요.';
-$string['role:assign'] = '사용자에게 역할 부여';
 $string['roleassignments'] = '역할 부여';
 $string['roledefinitions'] = '역할 정의';
 $string['rolefullname'] = '이름';
 $string['roleincontext'] = '{$a->context}에서 {$a->role}';
-$string['role:manage'] = '역할을 생성하고 관리';
-$string['role:override'] = '타인에 대한 권한 덮어쓰기';
 $string['roleprohibitheader'] = '금지 역할';
 $string['roleprohibitinfo'] = '문맥 {$a->context}, 능력 {$a->cap} 에서 금지된 역할 목록에 추가될 역할을 선택하십시요.';
-$string['role:review'] = '다른 사람에 대한 권한 검토';
 $string['rolerisks'] = '역할 위험';
 $string['roles'] = '역할들';
-$string['role:safeoverride'] = '타인에 대한 안전한 권한 덮어쓰기';
-$string['roleselect'] = '역할 선택';
-$string['rolesforuser'] = '사용자 {$a}에 대한 역할';
 $string['roles_help'] = '역할은 특정 문맥에서 특정 사용자에게 부여할 수 있는 사이트 전체에 대하여 정의된 권한의 모음입니다.
 ';
+$string['roleselect'] = '역할 선택';
+$string['rolesforuser'] = '사용자 {$a}에 대한 역할';
 $string['roleshortname'] = '짧은 이름';
-$string['role:switchroles'] = '다른 역할과 맞바꿈';
 $string['roletoassign'] = '부여할 역할';
 $string['roletooverride'] = '덮어쓰기 할 역할';
 $string['safeoverridenotice'] = '노트: 당신은 안전한 능력을 덮어쓰기 하도록 허용받았으므로 위험이 큰 능력은 잠겨있습니다.';
@@ -337,7 +337,6 @@ $string['selectrole'] = '역할 선택';
 $string['showallroles'] = '모든 역할 보이기';
 $string['showthisuserspermissions'] = '이 사용자의 권한 보이기';
 $string['site:accessallgroups'] = '모든 모둠에 접속 기능';
-$string['siteadministrators'] = '사이트 관리자';
 $string['site:approvecourse'] = '강좌 만들기 승인';
 $string['site:backup'] = '강좌 백업';
 $string['site:config'] = '사이트 설정을 변경';
@@ -347,20 +346,21 @@ $string['site:import'] = '다른 강좌를 가져옴';
 $string['site:manageblocks'] = '한 페이지에서 블록 관리';
 $string['site:mnetloginfromremote'] = 'MNET으로 원격 어플리케이션에서 로그인';
 $string['site:mnetlogintoremote'] = 'MNET으로 원격 어플리케이션으로 로밍';
-$string['site:readallmessages'] = '사이트의 모든 메세지 읽음';
+$string['site:readallmessages'] = '사이트의 모든 쪽지 읽음';
 $string['site:restore'] = '강좌 복구';
-$string['site:sendmessage'] = '어떤 사용자에게든 메세지 보냄';
+$string['site:sendmessage'] = '어떤 사용자에게든 쪽지 보냄';
 $string['site:trustcontent'] = '내용 안전성 인증';
 $string['site:uploadusers'] = '파일로 새 사용자 올림';
 $string['site:viewfullnames'] = '언제나 사용자의 성명을 볼 수 있음';
 $string['site:viewparticipants'] = '참여자 보기';
 $string['site:viewreports'] = '보고서 보기';
 $string['site:viewuseridentity'] = '전체 사용자 아이덴티티를 목록으로 봄';
+$string['siteadministrators'] = '사이트 관리자';
 $string['tag:edit'] = '기존 태그 수정';
 $string['tag:editblocks'] = '태그 페이지에서 블록 편집';
 $string['tag:flag'] = '태그를 부적절한 것으로 표식';
 $string['tag:manage'] = '태그 관리';
-$string['thisusersroles'] = '당사자의 역할';
+$string['thisusersroles'] = '이 사용자의 역할 부여';
 $string['unassignarole'] = '역할 {$a}을 해지';
 $string['unassignconfirm'] = '정말 {$a->user} 사용자로부터 {$a->role} 역할을 해지하고자 합니까?';
 $string['unassignerror'] = '{$a->user} 사용자로부터 {$a->role} 역할을  해지하는 중 오류';
@@ -379,18 +379,18 @@ $string['user:manageownfiles'] = '개인 파일 관리';
 $string['user:managesyspages'] = '공용 사용자 개인정보 페이지 레이아웃 설정';
 $string['user:readuserblogs'] = '사용자 블로그 보기';
 $string['user:readuserposts'] = '모든 게시물 보기';
-$string['usersfrom'] = '{$a} 사용자들';
-$string['usersfrommatching'] = '{$a->contextname} 중 \'{$a->search}\' 와 일치하는 사용자';
-$string['usersinthisx'] = '{$a} 사용자들';
-$string['usersinthisxmatching'] = '{$a->contexttype} 에서 \'{$a->search}\' 와 일치하는 사용자';
-$string['userswithrole'] = '역할을 지닌 모든 사용자';
-$string['userswiththisrole'] = '본 역할을 소지한 사용자들';
 $string['user:update'] = '사용자 개인정보 새로고침';
 $string['user:viewalldetails'] = '사용자의 전체 정보 보기';
 $string['user:viewdetails'] = '사용자 개인정보를 봄';
 $string['user:viewhiddendetails'] = '사용자의 비공개 세부사항 보기';
 $string['user:viewuseractivitiesreport'] = '활동 보고서 보기';
 $string['user:viewusergrades'] = '사용자 성적 보기';
+$string['usersfrom'] = '{$a} 사용자들';
+$string['usersfrommatching'] = '{$a->contextname} 중 \'{$a->search}\' 와 일치하는 사용자';
+$string['usersinthisx'] = '{$a} 사용자들';
+$string['usersinthisxmatching'] = '{$a->contexttype} 에서 \'{$a->search}\' 와 일치하는 사용자';
+$string['userswithrole'] = '역할을 지닌 모든 사용자';
+$string['userswiththisrole'] = '본 역할을 소지한 사용자들';
 $string['useshowadvancedtochange'] = '변경하려면 \'고급 보기\'를 사용';
 $string['viewingdefinitionofrolex'] = '\'{$a}\' 역할 정의 보기';
 $string['viewrole'] = '역할 자세히 보기';

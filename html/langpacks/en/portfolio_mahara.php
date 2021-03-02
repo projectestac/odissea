@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio_mahara', language 'en', version '3.8'.
  *
- * @package   portfolio_mahara
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_mahara
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,12 +36,12 @@ $string['err_nomnethosts'] = 'Relies on MNet';
 $string['err_nomnethosts_help'] = 'This plugin relies on MNet peers with SSO IDP published, SSO SP subscribed, portfolio services published <b>and</b> subscribed as well as the MNet authentication plugin.  Any instances of this plugin have been hidden until these conditions are met. They will then manually need setting to visible again.';
 $string['failedtojump'] = 'Failed to start communication with remote server';
 $string['failedtoping'] = 'Failed to start communication with remote server: {$a}';
-$string['mnethost'] = 'MNet host';
 $string['mnet_nofile'] = 'Could not find file in transfer object - weird error';
 $string['mnet_nofilecontents'] = 'Found file in transfer object, but could not get contents - weird error: {$a}';
 $string['mnet_noid'] = 'Could not find the matching transfer record for this token';
 $string['mnet_notoken'] = 'Could not find token matching this transfer';
 $string['mnet_wronghost'] = 'Remote host did not match the transfer record for this token';
+$string['mnethost'] = 'MNet host';
 $string['pf_description'] = 'Allow users to push Moodle content to this host<br />Subscribe to <b>and</b> publish this service to allow authenticated users in your site to push content to {$a}<br /><ul><li><em>Dependency</em>: You must also <strong>publish</strong> the SSO (Identify Provider) service to {$a}.</li><li><em>Dependency</em>: You must also <strong>subscribe</strong> to the SSO (Service Provider) service on {$a}</li><li><em>Dependency</em>: You must also enable the MNet authentication plugin.</li></ul><br />';
 $string['pf_name'] = 'Portfolio services';
 $string['pluginname'] = 'Mahara ePortfolio';

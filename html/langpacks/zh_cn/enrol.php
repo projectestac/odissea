@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol', language 'zh_cn', version '3.8'.
  *
- * @package   enrol
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -85,9 +85,9 @@ $string['eventuserenrolmentcreated'] = '用户报名课程';
 $string['eventuserenrolmentdeleted'] = '用户取消报名课程';
 $string['eventuserenrolmentupdated'] = '用户取消报名更新';
 $string['expirynotify'] = '选课过期前进行通知';
+$string['expirynotify_help'] = '这个设置用于确定在课过期的消息是否发送。';
 $string['expirynotifyall'] = '选课人和被选用户';
 $string['expirynotifyenroller'] = '选课人';
-$string['expirynotify_help'] = '这个设置用于确定在课过期的消息是否发送。';
 $string['expirynotifyhour'] = '在一天的哪一小时发出选课过期的通知';
 $string['expirythreshold'] = '选课过期通知时限';
 $string['expirythreshold_help'] = '在选课过期前多久用户应该被通知到？';

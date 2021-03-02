@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'geogebra', language 'el', version '3.8'.
  *
- * @package   geogebra
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     geogebra
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -59,12 +59,12 @@ $string['firstattempt'] = 'Πρώτη προσπάθεια';
 $string['for'] = 'για';
 $string['functionalityoptionsgrp'] = 'Λειτουργικότητα';
 $string['geogebra:addinstance'] = 'Προσθήκη GeoGebra';
-$string['geogebrafile'] = 'Αρχείο GeoGebra';
-$string['geogebrafile_help'] = 'Το αρχείο .ggb';
 $string['geogebra:grade'] = 'Βαθμολόγηση GeoGebra';
 $string['geogebra:submit'] = 'Υποβολή GeoGebra';
-$string['geogebraurl'] = 'Διεύθυνση URL';
 $string['geogebra:view'] = 'Εμφάνιση GeoGebra';
+$string['geogebrafile'] = 'Αρχείο GeoGebra';
+$string['geogebrafile_help'] = 'Το αρχείο .ggb';
+$string['geogebraurl'] = 'Διεύθυνση URL';
 $string['grade'] = 'Βαθμός';
 $string['gradeit'] = 'Βαθμός';
 $string['grademethod'] = 'Μέθοδος βαθμολόγησης';
@@ -115,9 +115,9 @@ $string['save'] = 'Αποθήκευση';
 $string['savechanges'] = 'Αποθήκευση αλλαγών';
 $string['savewithoutsubmitting'] = 'Αποθήκευση χωρίς υποβολή';
 $string['settings'] = 'Ρυθμίσεις';
-$string['showsubmit'] = 'Εμφάνιση πλήκτρου υποβολής';
 $string['showToolBar'] = 'Εμφάνιση της γραμμής εργαλείων';
 $string['showToolBarHelp'] = 'Εμφάνιση της βοήθειας της γραμμής εργαλείων';
+$string['showsubmit'] = 'Εμφάνιση πλήκτρου υποβολής';
 $string['submitandfinish'] = 'Υποβολή και τέλος';
 $string['timing'] = 'Χρονομέτρηση';
 $string['total'] = 'Σύνολο';
@@ -125,6 +125,8 @@ $string['unfinished'] = 'Ανολοκλήρωτη';
 $string['ungraded'] = 'Αβαθμολόγητη';
 $string['unlimitedattempts'] = 'Απεριόριστες προσπάθειες για αυτή την δραστηριότητα';
 $string['urledit'] = 'Αρχείο GeoGebra';
+$string['useBrowserForJS'] = 'Χρήση JavaScript από:';
+$string['useBrowserForJS_html'] = 'HTML (αληθής)';
 $string['view'] = 'Προβολή';
 $string['viewattempt'] = 'Προβολή';
 $string['viewtab'] = 'Προβολή';

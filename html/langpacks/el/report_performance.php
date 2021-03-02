@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_performance', language 'el', version '3.8'.
  *
- * @package   report_performance
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_performance
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,8 +41,8 @@ $string['check_enablestats_comment_enable'] = 'Η απόδοση μπορεί ν
 $string['check_enablestats_details'] = 'Αν ενεργοποιηθεί, θα γίνει επεξεργασία των καταγραφών στην χρονο-προγραμματισμένη μέσω της εντολής cron εργασία
 και θα συγκεντρωθούν κάποια στατιστικά. Ανάλογα με το φορτίο του ιστοτόπου, αυτό μπορεί να διαρκέσει αρκετά.
 <p>Κατά τη διάρκεια αυτής της διαδικασίας, θα απαιτηθούν περισσότεροι πόροι του εξυπηρετητή και ίσως επηρεαστεί η απόδοση.</p>';
-$string['check_themedesignermode_comment_disable'] = 'Εάν ενεργοποιηθεί, οι εικόνες και τα φύλλα στυλ δεν θα αποθηκεύονται προσωρινά, με αποτέλεσμα σημαντική υποβάθμιση της απόδοσης.';
-$string['check_themedesignermode_comment_enable'] = 'Αν απενεργοποιηθεί, οι εικόνες και τα φύλλα στυλ θα αποθηκεύονται προσωρινά, με αποτέλεσμα σημαντικές βελτιώσεις στην απόδοση.';
+$string['check_themedesignermode_comment_disable'] = 'Εάν ενεργοποιηθεί, οι εικόνες και τα φύλλα στυλ δεν θα αποθηκεύονται σε κρυφή μνήμη, με αποτέλεσμα σημαντική υποβάθμιση της απόδοσης.';
+$string['check_themedesignermode_comment_enable'] = 'Αν απενεργοποιηθεί, οι εικόνες και τα φύλλα στυλ θα αποθηκεύονται σε κρυφή μνήμη, με αποτέλεσμα σημαντικές βελτιώσεις στην απόδοση.';
 $string['check_themedesignermode_details'] = 'Αυτή είναι συχνά η αιτία αργών ιστοτόπων Moodle. <p>Κατά μέσο όρο μπορεί να χρειαστεί τουλάχιστον διπλάσιος χρόνος επεξεργαστή (CPU) για την επεξεργασία ενός ιστοτόπου Moodle με ενεργοποιημένη τη λειτουργία σχεδιασμού αισθητικού θέματος.</p>';
 $string['comments'] = 'Σχόλια';
 $string['disabled'] = 'Ενεργοποιημένη';
@@ -50,8 +50,8 @@ $string['edit'] = 'Επεξεργασία';
 $string['enabled'] = 'Ενεργοποιημένο';
 $string['issue'] = 'Ζήτημα';
 $string['morehelp'] = 'περισσότερη βοήθεια';
-$string['performancereportdesc'] = 'Αυτή η αναφορά παραθέτει ζητήματα τα οποία ενδέχεται να επηρεάζουν την απόδοση του ιστοτόπου {$a}';
 $string['performance:view'] = 'Εμφάνιση αναφοράς απόδοσης';
+$string['performancereportdesc'] = 'Αυτή η αναφορά παραθέτει ζητήματα τα οποία ενδέχεται να επηρεάζουν την απόδοση του ιστοτόπου {$a}';
 $string['pluginname'] = 'Επισκόπηση απόδοσης';
 $string['privacy:metadata'] = 'Το πρόσθετο «Επισκόπηση επιδόσεων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['value'] = 'Τιμή';

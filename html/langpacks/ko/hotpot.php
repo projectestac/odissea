@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hotpot', language 'ko', version '3.8'.
  *
- * @package   hotpot
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hotpot
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -66,6 +66,7 @@ $string['confirmdeleteattempts'] = '이 시도들을 삭제하기를 원하십�
 $string['confirmstop'] = '이 페이지에서 벗어나기를 원하십니까?';
 $string['correct'] = '정답';
 $string['couldnotinsertsubmissionform'] = '제출 양식을 삽입할 수 없었습니다.';
+$string['d_index'] = '차별 인덱스';
 $string['delay1'] = '지연 1';
 $string['delay1_help'] = '1차시도와 2차 시도사이 최소 시간 지연';
 $string['delay1summary'] = '1차시도와 2차 시도사이 시간 지연';
@@ -78,9 +79,9 @@ $string['delay3disable'] = '자동으로 계속하지 마십시요.';
 $string['delay3specific'] = '(초단위로) 특정 시간을 사용';
 $string['delay3summary'] = '퀴즈 끝에서 시간 지연';
 $string['delay3template'] = '소스/템플릿 파일에 있는 설정사용';
+$string['deleteallattempts'] = '모든 시도 삭제';
 $string['deleteattempts'] = '시도 삭제';
 $string['detailsrecords'] = 'HotPot  세부사항 레코드';
-$string['d_index'] = '차별 인덱스';
 $string['duration'] = '기간';
 $string['enablecache'] = 'HotPot 캐시 활성화';
 $string['enablecron'] = 'HotPot  크론 활성화';
@@ -88,8 +89,10 @@ $string['enablemymoodle'] = '내 무들에 HotPots  표시';
 $string['enableobfuscate'] = '미디어플레이어 코드 난독화 활성화';
 $string['enableswf'] = 'HotPot 활동에서 SWF  파일삽입 허용';
 $string['entry_attempts'] = '시도';
+$string['entry_dates'] = '날짜';
+$string['entry_grading'] = '채점';
+$string['entry_title'] = '유닛 이름을 제목으로';
 $string['entrycm'] = '이전활동';
-$string['entrycmcourse'] = '이 강좌에서 이전 활동';
 $string['entrycm_help'] = '이 설정은 이 QuizPort 를 시도하기 전에 성취해야 할 무들 활동과  활동에 대핸 최소 점수를 명시합니다.
 
 선생님은 특정 활동 혹은 다음의 일반적인 설정 중 하나를 선택할 수 있습니다.
@@ -98,23 +101,46 @@ $string['entrycm_help'] = '이 설정은 이 QuizPort 를 시도하기 전에 �
 * 이 섹션에서 이전 활동
 * 이 강좌에서 이전 HotPot
 * 이 섹션에서 이전 HotPot';
+$string['entrycmcourse'] = '이 강좌에서 이전 활동';
 $string['entrycmsection'] = '이 강좌 섹션에서 이전 활동';
 $string['entrycompletionwarning'] = '이 활동을 시작하기전에 {$a} 를 보아야 합니다.';
-$string['entry_dates'] = '날짜';
 $string['entrygrade'] = '이전 활동 성적';
 $string['entrygradewarning'] = '{$a->entryactivity}에서  {$a->entrygrade}% 성적을 받지 못하면 이 활동을 시작할 수 없습니다. 현재 성적은 {$a->usergrade}% 입니다.';
-$string['entry_grading'] = '채점';
 $string['entryhotpotcourse'] = '이 강좌에서 이전 HotPot';
 $string['entryhotpotsection'] = '이 강좌 섹션에서 이전 HotPot';
 $string['entryoptions'] = '시작 페이지 옵션';
 $string['entrypage'] = '시작 페이지 표시';
 $string['entrypagehdr'] = '시작 페이지';
 $string['entrytext'] = '시작 페이지 문장';
-$string['entry_title'] = '유닛 이름을 제목으로';
 $string['exit_areyouok'] = '안녕하세요? 아직 그 곳에 있나요?';
 $string['exit_attemptscore'] = '그 시도에 대한 성적은 {$a} 였습니다.';
+$string['exit_course'] = '강좌';
+$string['exit_course_text'] = '메인 강좌 페이지로 돌아가기';
+$string['exit_encouragement'] = '격려';
+$string['exit_excellent'] = '훌륭합니다.';
+$string['exit_feedback'] = '종료 페이지 피드백';
+$string['exit_goodtry'] = '좋은 시도입니다.';
+$string['exit_grades'] = '성적';
+$string['exit_grades_text'] = '지금까지 이 강좌에 대한 성적을 보십시요';
+$string['exit_hotpotgrade'] = '이 활동에 대한 성적은 {$a} 입니다.';
+$string['exit_hotpotgrade_average'] = '이 활동에 대한 당신의 평균 성적은 {$a} 입니다.';
+$string['exit_hotpotgrade_highest'] = '이 활동에 대한 당신의 최고 성적은 {$a} 입니다.';
+$string['exit_hotpotgrade_highest_equal'] = '이 활동에 대한 이전이 최고 점수와 같습니다.';
+$string['exit_hotpotgrade_highest_previous'] = '이 활동에 대한 이전의 가장 높은 점수는 {$a} 였습니다.';
+$string['exit_hotpotgrade_highest_zero'] = '이 활동에 대해 {$a}보다 높은 점수를 아직 받지 않았습니다';
+$string['exit_index'] = '인덱스';
+$string['exit_index_text'] = '활동 인덱스로 가기';
+$string['exit_links'] = '종료 페이지 링크';
+$string['exit_next'] = '다음';
+$string['exit_next_text'] = '다음 활동을 해 보십시요.';
+$string['exit_noscore'] = '이 활동을 성공적으로 완료하였습니다.';
+$string['exit_retry'] = '재시도';
+$string['exit_retry_text'] = '이 활동을 재시도';
+$string['exit_welldone'] = '잘 했습니다.';
+$string['exit_whatnext_0'] = '다음에 무엇을 하고 싶습니까?';
+$string['exit_whatnext_1'] = '목적지를 선택하십시요.';
+$string['exit_whatnext_default'] = '다음 중 하나를 선택하십시요.';
 $string['exitcm'] = '다음 활동';
-$string['exitcmcourse'] = '이 강좌에서 다음 활동';
 $string['exitcm_help'] = '이 설정은 이 QuizPort 를 완료한 후 수행 할 무들 활동을 명시합니다.
 
 선생님은 특정 활동 혹은 다음의 일반적인 설정 중 하나를 선택할 수 있습니다.
@@ -125,39 +151,14 @@ $string['exitcm_help'] = '이 설정은 이 QuizPort 를 완료한 후 수행 �
 * 이 섹션에서 다음 HotPot
 
 다른 빠져나가기 페이지 옵션이 비활성화되어 있으면 학습자들은 다음 활동으로 가게 됩니다. 그렇지 않으면 학습자들이 준비되었을때 다음 활동으로 가게하는 링크가 보여질 것입니다.';
+$string['exitcmcourse'] = '이 강좌에서 다음 활동';
 $string['exitcmsection'] = '이 강좌 섹션에서 다음 활동';
-$string['exit_course'] = '강좌';
-$string['exit_course_text'] = '메인 강좌 페이지로 돌아가기';
-$string['exit_encouragement'] = '격려';
-$string['exit_excellent'] = '훌륭합니다.';
-$string['exit_feedback'] = '종료 페이지 피드백';
-$string['exit_goodtry'] = '좋은 시도입니다.';
-$string['exit_grades'] = '성적';
-$string['exit_grades_text'] = '지금까지 이 강좌에 대한 성적을 보십시요';
 $string['exithotpotcourse'] = '이 강좌에서 다음 HotPot';
-$string['exit_hotpotgrade'] = '이 활동에 대한 성적은 {$a} 입니다.';
-$string['exit_hotpotgrade_average'] = '이 활동에 대한 당신의 평균 성적은 {$a} 입니다.';
-$string['exit_hotpotgrade_highest'] = '이 활동에 대한 당신의 최고 성적은 {$a} 입니다.';
-$string['exit_hotpotgrade_highest_equal'] = '이 활동에 대한 이전이 최고 점수와 같습니다.';
-$string['exit_hotpotgrade_highest_previous'] = '이 활동에 대한 이전의 가장 높은 점수는 {$a} 였습니다.';
-$string['exit_hotpotgrade_highest_zero'] = '이 활동에 대해 {$a}보다 높은 점수를 아직 받지 않았습니다';
 $string['exithotpotsection'] = '이 강좌 섹션에서 다음 HotPot';
-$string['exit_index'] = '인덱스';
-$string['exit_index_text'] = '활동 인덱스로 가기';
-$string['exit_links'] = '종료 페이지 링크';
-$string['exit_next'] = '다음';
-$string['exit_next_text'] = '다음 활동을 해 보십시요.';
-$string['exit_noscore'] = '이 활동을 성공적으로 완료하였습니다.';
 $string['exitoptions'] = '종료 페이지 옵션';
 $string['exitpage'] = '종료 페이지 보기';
 $string['exitpagehdr'] = '종료 페이지';
-$string['exit_retry'] = '재시도';
-$string['exit_retry_text'] = '이 활동을 재시도';
 $string['exittext'] = '종료 페이지 문장';
-$string['exit_welldone'] = '잘 했습니다.';
-$string['exit_whatnext_0'] = '다음에 무엇을 하고 싶습니까?';
-$string['exit_whatnext_1'] = '목적지를 선택하십시요.';
-$string['exit_whatnext_default'] = '다음 중 하나를 선택하십시요.';
 $string['feedbackdiscuss'] = '포럼에서 이 퀴즈에 대해 논의';
 $string['feedbackformmail'] = '피드백 서식';
 $string['feedbackmoodleforum'] = '무들 포럼';
@@ -180,11 +181,11 @@ $string['hotpot:deleteallattempts'] = 'HotPot 활동에 대해 모든 사용자�
 $string['hotpot:deletemyattempts'] = 'HotPot 활동에 대해 자신의 시도 삭제';
 $string['hotpot:ignoretimelimits'] = 'HotPot 활동에서 시간 제한 무시';
 $string['hotpot:manage'] = 'HotPot 활동의 설경 변경';
-$string['hotpotname'] = 'HotPot 활동 이름';
 $string['hotpot:preview'] = 'HotPot 활동 미리보기';
 $string['hotpot:reviewallattempts'] = 'HotPot 활동에서 모든 사용자 시도 보기';
 $string['hotpot:reviewmyattempts'] = 'HotPot 활동에서 자신의 시도 보기';
 $string['hotpot:view'] = 'HotPot 활동의 시작 페이지 보기';
+$string['hotpotname'] = 'HotPot 활동 이름';
 $string['ignored'] = '무시됨';
 $string['inprogress'] = '진행중';
 $string['isgreaterthan'] = '는 다음보다 크다:';
@@ -198,6 +199,7 @@ $string['mediafilter_moodle'] = '무들 표준 미디어 필터';
 $string['migratingfiles'] = '핫포테이토 퀴즈 파일 변환';
 $string['missingsourcetype'] = 'HotPot 레코드에 소스타입이 없습니다.';
 $string['modulename'] = 'HotPot';
+$string['modulename_help'] = 'HoptPot 모듈은 선생님이 핫 포테이토 퀴즈를 강좌에 포함시키는 것을 가능하게 합니다. 매번 시도는 자동으로 채점되며 개별 질문이 어떻게 답해졌는지와 점수에서 통계적 경향을 보여주는 보고서를 볼 수 있습니다.';
 $string['modulenameplural'] = 'HotPot';
 $string['nameadd'] = '이름';
 $string['nameedit'] = '이름';
@@ -235,6 +237,11 @@ $string['outputformat_help'] = '이 설정은 퀴즈를 표시하기 위한 포�
 * v6+ -  v6+ 브라우저에서 드래그/드롭 포맷
 * v6 -  v6 브라우저를 위한 포맷';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze HP6 html: 표준';
+$string['outputformat_hp_6_jcloze_html_dropdown'] = 'JCloze HP6 html: Rottmeier 드롭다운';
+$string['outputformat_hp_6_jcloze_html_findit_a'] = 'JCloze HP6 html: Rottmeier FindIt (a)';
+$string['outputformat_hp_6_jcloze_html_findit_b'] = '	
+JCloze HP6 html: Rottmeier FindIt (b)';
+$string['outputformat_hp_6_jcloze_html_jgloss'] = 'JCloze HP6 html: Rottmeier JGloss';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze from HP6 xml: ANCT-Scan';
 $string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze from HP6 xml: Rottmeier 드롭다운';
 $string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze from HP6 xml: Rottmeier FindIt (a)';

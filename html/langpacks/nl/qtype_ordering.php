@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ordering', language 'nl', version '3.8'.
  *
- * @package   qtype_ordering
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ordering
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,17 +48,17 @@ $string['noscore'] = 'Geen score';
 $string['notenoughanswers'] = 'Vragen van het type Rangschikken moeten meer dan {$a} antwoorden bevatten.';
 $string['numberingstyle'] = 'Keuzes nummeren?';
 $string['numberingstyle123'] = '1., 2., 3., ...';
-$string['numberingstyleabc'] = 'a., b., c., ...';
 $string['numberingstyleABCD'] = 'A., B., C., ...';
+$string['numberingstyleIIII'] = 'I., II., III., ...';
 $string['numberingstyle_desc'] = 'De standaardstijl voor nummering.';
 $string['numberingstyle_help'] = 'Kies de stijl voor nummering van versleepbare items in deze vraag.';
+$string['numberingstyleabc'] = 'a., b., c., ...';
 $string['numberingstyleiii'] = 'i., ii., iii., ...';
-$string['numberingstyleIIII'] = 'I., II., III., ...';
 $string['numberingstylenone'] = 'Geen nummering';
 $string['pluginname'] = 'Rangschikken';
+$string['pluginname_help'] = 'Er worden verscheidene items getoond in een willekeurige volgorde. De items kunnen door slepen in een betekenisvolle volgorde gezet worden.';
 $string['pluginnameadding'] = 'Een vraag van het type Rangschikken toevoegen';
 $string['pluginnameediting'] = 'Een vraag van het type Rangschikken bewerken';
-$string['pluginname_help'] = 'Er worden verscheidene items getoond in een willekeurige volgorde. De items kunnen door slepen in een betekenisvolle volgorde gezet worden.';
 $string['pluginnamesummary'] = 'Zet geschudde items in een betekenisvolle volgorde.';
 $string['positionx'] = 'Positie {$s}';
 $string['privacy:metadata'] = 'Het vraagtype Rangschikken bewaart geen persoonlijke gegevens.';

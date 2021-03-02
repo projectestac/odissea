@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'sv', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,6 +36,8 @@ $string['command'] = 'Kommando:';
 $string['comment'] = 'Kommentarer';
 $string['commentcolour'] = 'Kommentarfärg';
 $string['commentcontextmenu'] = 'Kommentera snabbmenyn';
+$string['commentindex'] = 'Index för kommentar';
+$string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Det gick inte att spara sidan {$a}';
 $string['currentstamp'] = 'Stämpel';
 $string['default'] = 'Aktiverat som standard';
@@ -59,18 +61,20 @@ $string['generatefeedback'] = 'Skapa återkopplings PDF';
 $string['generatingpdf'] = 'Skapar PDF ...';
 $string['gotopage'] = 'Gå till sidan';
 $string['green'] = 'Grön';
+$string['gsimage'] = 'Testbild för Ghostscript';
 $string['highlight'] = 'Markera';
 $string['jsrequired'] = 'JavaScript krävs för att kommentera en PDF. Vänligen aktivera JavaScript i din webbläsare för att använda den här funktionen';
 $string['launcheditor'] = 'Starta PDF editor ...';
 $string['line'] = 'Linje';
 $string['loadingeditor'] = 'Laddar PDF editor';
-$string['navigatenext'] = 'Nästa sida';
-$string['navigateprevious'] = 'Föregående sida';
+$string['navigatenext'] = 'Nästa sida (Alt/Shift-Alt/Ctrl-Option + {$a})';
+$string['navigateprevious'] = 'Föregående sida (Alt/Shift-Alt/Ctrl-Option + {$a})';
 $string['output'] = 'Utdata:';
 $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Sida {$a}';
 $string['pagexofy'] = 'Sida {$a->page} av {$a->total}';
 $string['partialwarning'] = 'Några filer i denna inlämningsuppgift behöver laddas ned för åtkomst.';
+$string['pathtogspathdesc'] = 'Observera att Kommentera PDF kräver att sökvägen till ghostscript angivits i {$a}.';
 $string['pen'] = 'Penna';
 $string['pluginname'] = 'Kommentera PDF';
 $string['preparesubmissionsforannotation'] = 'Förbered inlämningar för annotering';
@@ -78,6 +82,8 @@ $string['privacy:metadata:colourpurpose'] = 'Kommentarens eller annoteringens f�
 $string['privacy:metadata:conversionpurpose'] = 'Filerna konverteras till PDF för att möjliggöra annotering';
 $string['privacy:metadata:filepurpose'] = 'Lagrar en annoterad PDF med återkoppling till användaren';
 $string['privacy:metadata:rawtextpurpose'] = '';
+$string['privacy:metadata:tablepurpose'] = 'Lagrar kommentarer från lärarens snabblista';
+$string['privacy:metadata:userid'] = 'Användar-ID:t';
 $string['privacy:path'] = 'PDF-återkoppling';
 $string['rectangle'] = 'Rektangel';
 $string['red'] = 'Röd';
@@ -87,16 +93,16 @@ $string['rotateright'] = 'Rotera 90 grader åt höger';
 $string['searchcomments'] = 'Sök kommentarer';
 $string['select'] = 'Välj';
 $string['stamp'] = 'Stämpel';
-$string['stamppicker'] = 'Stämpel väljare';
+$string['stamppicker'] = 'Stämpelväljare';
 $string['stamps'] = 'Stämplar';
 $string['stampsdesc'] = 'Stämplar måste vara bildfiler (rekommenderas storlek: 40x40). Dessa bilder kan användas med stämpelverktyget för att kommentera PDF.';
 $string['test_doesnotexist'] = 'Ghostscript sökvägen pekar på en icke-existerande fil';
 $string['test_empty'] = 'Ghostscript sökvägen är tom - ange rätt sökväg';
-$string['testgs'] = 'Testa ghostscript sökväg';
 $string['test_isdir'] = 'Ghostscript sökväg pekar till en mapp, var vänlig och inkludera det ghostscript-programmet i sökvägen du anger';
 $string['test_notestfile'] = 'Test PDF saknas';
 $string['test_notexecutable'] = 'Ghostscript pekar på en fil som inte är körbar';
 $string['test_ok'] = 'Ghostscript sökvägen verkar vara OK - kontrollera att du kan se meddelandet i bilden nedan';
+$string['testgs'] = 'Testa ghostscript sökväg';
 $string['tool'] = 'Verktyg';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Visa kommenterad PDF ...';

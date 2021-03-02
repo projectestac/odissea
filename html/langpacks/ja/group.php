@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'ja', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,10 +64,10 @@ $string['enablemessaging'] = 'グループメッセージング';
 $string['enablemessaging_help'] = 'この設定を有効にした場合、グループメンバーはメッセージングドロワを使用してグループ内の他の人にメッセージを送信することができます。';
 $string['encoding'] = 'エンコーディング';
 $string['enrolmentkey'] = '登録キー';
-$string['enrolmentkeyalreadyinuse'] = 'この登録キーはすでに別のグループで使用されています。';
 $string['enrolmentkey_help'] = '登録キーによりキーを知っているユーザにのみ限定してコースへのアクセスを許可することができます。グループ登録キーが指定された場合、そのキーによりユーザがコースに入ることができるようになるだけではなく、自動的にこのグループのメンバーとして登録されます。
 
 注意: 自己登録設定において、グループ登録キーを有効にする必要があります。同時にコース登録キーも指定する必要があります。';
+$string['enrolmentkeyalreadyinuse'] = 'この登録キーはすでに別のグループで使用されています。';
 $string['erroraddremoveuser'] = 'ユーザ {$a} のグループ登録/削除中にエラーが発生しました。';
 $string['erroreditgroup'] = 'グループ {$a} の作成/更新中にエラーが発生しました。';
 $string['erroreditgrouping'] = 'グルーピング {$a} の作成/更新中にエラーが発生しました。';
@@ -97,9 +97,9 @@ $string['groupinfo'] = '選択したグループの情報';
 $string['groupinfomembers'] = '選択したメンバーの情報';
 $string['groupinfopeople'] = '選択した人の情報';
 $string['grouping'] = 'グルーピング';
+$string['grouping_help'] = 'グルーピングはコース内のグループ群です。グルーピングが選択された場合、グルーピング内のグループに割り当てられた学生は共同で作業することができます。';
 $string['groupingaddedsuccesfully'] = 'グルーピング「 {$a} 」が正常に追加されました。';
 $string['groupingdescription'] = 'グルーピング説明';
-$string['grouping_help'] = 'グルーピングはコース内のグループ群です。グルーピングが選択された場合、グルーピング内のグループに割り当てられた学生は共同で作業することができます。';
 $string['groupingname'] = 'グルーピング名';
 $string['groupingnameexists'] = 'グルーピング名「 {$a} 」はすでにこのコースで使用されています。他のグルーピング名を使用してください。';
 $string['groupings'] = 'グルーピング';
@@ -112,8 +112,6 @@ $string['groupmembers'] = 'グループメンバー';
 $string['groupmemberssee'] = 'グループメンバーを表示する';
 $string['groupmembersselected'] = '選択したグループのメンバー';
 $string['groupmode'] = 'グループモード';
-$string['groupmodeforce'] = 'グループモードを強制する';
-$string['groupmodeforce_help'] = 'グループモードが強制された場合、コース内すべての活動にコースグループモードが適用されます。そのため、それぞれの活動のグループモード設定は無視されます。';
 $string['groupmode_help'] = 'この設定には以下3つのオプションがあります:
 
 * グループなし
@@ -121,6 +119,8 @@ $string['groupmode_help'] = 'この設定には以下3つのオプションが�
 * 可視グループ - それぞれのグループメンバーはそのグループ内で作業しますが、他のグループを閲覧することもできます。
 
 コースレベルで設定されたグループモードはコース内活動すべてのデフォルトモードとなります。グループに対応している活動ではそれぞれ独自のグループモードを設定することもできます。しかし、コースレベルで強制グループモードが設定された場合、活動ごとに設定したグループモードは無視されます。';
+$string['groupmodeforce'] = 'グループモードを強制する';
+$string['groupmodeforce_help'] = 'グループモードが強制された場合、コース内すべての活動にコースグループモードが適用されます。そのため、それぞれの活動のグループモード設定は無視されます。';
 $string['groupmy'] = 'マイグループ';
 $string['groupname'] = 'グループ名';
 $string['groupnameexists'] = 'グループ名「 {$a} 」はすでにこのコースで使用されています。他のグループ名を使用してください。';
@@ -167,8 +167,8 @@ $string['nogroupsassigned'] = 'グループが割り当てられていません�
 $string['nopermissionforcreation'] = 'あなたには必要なパーミッションがないため、グループ「 {$a} 」を作成することはできません。';
 $string['nosmallgroups'] = '最後の小グループを抑制する';
 $string['notingroup'] = 'グループ内のユーザを無視する';
-$string['notingrouping'] = '[グルーピング未登録]';
-$string['notingrouplist'] = '[グループ外]';
+$string['notingrouping'] = 'グルーピング未登録';
+$string['notingrouplist'] = 'グループ外';
 $string['nousersinrole'] = '選択したロールに適合するユーザがいません。';
 $string['number'] = 'グループ/メンバー数';
 $string['numgroups'] = 'グループ数';

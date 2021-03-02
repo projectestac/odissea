@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_database', language 'gl', version '3.8'.
  *
- * @package   enrol_database
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_database
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,9 +49,9 @@ $string['defaultrole_desc'] = 'O rol que se lle asignará de modo predeterminado
 $string['ignorehiddencourses'] = 'Ignorar cursos agochados';
 $string['ignorehiddencourses_desc'] = 'De estar activado, os usuarios non se poderán matricular en cursos que se confirguren para non estaren dispoñíbeis aos alumnos.';
 $string['localcategoryfield'] = 'Campo de categoría local';
-$string['localcoursefield'] = 'Nome do campo na táboa de cursos que se emprega para emparellar as entradas na base de datos remota (ex., número ID).';
-$string['localrolefield'] = 'Nome do campo na táboa de roles que se emprega para emparellar as entradas na base de datos remota (ex., nome curto).';
-$string['localuserfield'] = 'Nome do campo na táboa de usuarios que se emprega para emparellar as entradas na base de datos remota (ex., número ID).';
+$string['localcoursefield'] = 'Campo de curso local';
+$string['localrolefield'] = 'Campo de rol local';
+$string['localuserfield'] = 'Campo de usuario local.';
 $string['newcoursecategory'] = 'Campo de categoría do novo curso';
 $string['newcoursefullname'] = 'Nome completo do campo do novo curso';
 $string['newcourseidnumber'] = 'Campo do número de ID do novo curso';
@@ -66,7 +66,7 @@ $string['remotecoursefield_desc'] = 'O nome do campo na táboa remota que estamo
 $string['remoteenroltable'] = 'Táboa de matrícula de usuarios remota';
 $string['remoteenroltable_desc'] = 'Especifique o nome da táboa que contén a lista de matrícula de usuarios. De estar baleira, significa que non se sincroniza a matrícula de usuarios.';
 $string['remoteotheruserfield'] = 'Campo de outro usuario remoto';
-$string['remoteotheruserfield_desc'] = 'O nome do campo na táboa remota que se está a usar para sinalar as asignacións de rol «doutro usuario».';
+$string['remoteotheruserfield_desc'] = 'O nome do campo na táboa remota que se está a usar para sinalar as asignacións de roles «Outro usuario».';
 $string['remoterolefield'] = 'Campo de rol remoto';
 $string['remoterolefield_desc'] = 'O nome do campo na táboa remota que se está a usar para casar entradas na táboa de roles.';
 $string['remoteuserfield'] = 'Campo de usuario remoto';

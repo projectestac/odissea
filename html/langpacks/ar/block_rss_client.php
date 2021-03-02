@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_rss_client', language 'ar', version '3.8'.
  *
- * @package   block_rss_client
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_rss_client
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,12 +40,12 @@ $string['couldnotfindfeed'] = 'لم يتم العثور على تغذية بتع
 $string['couldnotfindloadrssfeed'] = 'تعذر العثور على مغذي الأخبار أو تحميله.';
 $string['customtitlelabel'] = 'عنوان مخصص (أتركه فارغاً لاستعمال العنوان المزود من قبل التغذية):';
 $string['deletefeedconfirm'] = 'هل ترغب فعلا حذف هذه التغذية؟';
-$string['disabledrssfeeds'] = 'تم تعطيل التغذية';
+$string['disabledrssfeeds'] = 'تم تعطيل تغذية الأخبار';
 $string['displaydescriptionlabel'] = 'هل ستم عرض وصف كل رابط؟';
 $string['editafeed'] = 'تحرير التغذية';
-$string['editfeeds'] = 'حرر، اشتراك أو انسحاب من خدمة تغذية الاخبار/ اتوم تغذية الاخبار.';
+$string['editfeeds'] = 'التحرر، الاشتراك أو الانسحاب من خدمة تغذية الأخبار/أتوم.';
 $string['editnewsfeeds'] = 'حرر تغذية الاخبار.';
-$string['editrssblock'] = 'حرر عنوان كتلة  خدمة تغذية الاخبار.';
+$string['editrssblock'] = 'تحرير عنوان كتلة  خدمة تغذية الأخبار.';
 $string['enableautodiscovery'] = 'تمكين الاكتشاف الآلي الخاص بالتغذيات؟';
 $string['enableautodiscovery_help'] = 'عند تمكينه، سيتم العثور تلقائياً على مغذيات الأخبار في صفحات الويب. على سبيل المثال، إذا تم إدخال https://docs.moodle.org، فسيتم العثور على
 https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss';
@@ -60,33 +60,33 @@ $string['feedsconfigurenewinstance'] = 'أنقر هناء لإعداد هذه ا
 $string['feedsconfigurenewinstance2'] = 'أنقر أيقونة التحرير أعلاه لتهيئة هذه الكتلة لعرض مغذيات الأخبار.';
 $string['feedupdated'] = 'تم تحديث تغذية الاخبار.';
 $string['feedurl'] = 'عنوان تغذية';
-$string['findmorefeeds'] = 'أبحث عن ابحث عن المزيد من التغذيات الاخبارية.';
+$string['findmorefeeds'] = 'البحث عن المزيد من التغذيات الإخبارية';
 $string['managefeeds'] = 'ادر كل التغذيات الخاصة بي.';
 $string['nofeeds'] = 'لا توجد تغذيات إخبارية معرفة لهذا الموقع.';
 $string['numentries'] = 'مدخلات لكل تغذية';
 $string['pickfeed'] = 'انتقي مغذى اخبار.';
-$string['pluginname'] = 'مستحدم خدمة تغذية الاخبار';
-$string['privacy:metadata:block_rss_client:description'] = 'وصف مغذي الأخبار';
-$string['privacy:metadata:block_rss_client:preferredtitle'] = 'العنوان المفضل (المخصص) لمغذي الأخبار';
-$string['privacy:metadata:block_rss_client:shared'] = 'فيما إذا كان مغذي الأخبار متاح في كل المساقات';
-$string['privacy:metadata:block_rss_client:skiptime'] = 'الوقت المحدد بالثواني الذي سينتظره مجدول المهام ما بين محاولات استقدام الأخبار من مغذيات الأخبار الفاشلة';
-$string['privacy:metadata:block_rss_client:skipuntil'] = 'أقصى وقت محدد لمجدول المهام ليصرفه على محاولات استقدام الأخبار من مغذيات الأخبار الفاشلة';
-$string['privacy:metadata:block_rss_client:tableexplanation'] = 'معلومات كتلة مغذي الأخبار تُخزن هنا';
-$string['privacy:metadata:block_rss_client:title'] = 'عنوان مغذي الأخبار';
-$string['privacy:metadata:block_rss_client:url'] = 'رابط مغذي الأخبار';
-$string['privacy:metadata:block_rss_client:userid'] = 'مُعرَّف المستخدم الذي أضاف مغذي الأخبار';
+$string['pluginname'] = 'خدمة تغذية الاخبار عن بعد';
+$string['privacy:metadata:block_rss_client:description'] = 'وصف مغذي الأخبار.';
+$string['privacy:metadata:block_rss_client:preferredtitle'] = 'العنوان المفضل (المخصص) لمغذي الأخبار.';
+$string['privacy:metadata:block_rss_client:shared'] = 'فيما إذا كان مغذي الأخبار متوافر في كل المساقات.';
+$string['privacy:metadata:block_rss_client:skiptime'] = 'الوقت المحدد بالثواني الذي سينتظره مجدول المهام ما بين محاولات استقدام الأخبار من مغذيات الأخبار الفاشلة.';
+$string['privacy:metadata:block_rss_client:skipuntil'] = 'أقصى وقت محدد لمجدول المهام ليصرفه على محاولات استقدام الأخبار من مغذيات الأخبار الفاشلة.';
+$string['privacy:metadata:block_rss_client:tableexplanation'] = 'معلومات كتلة مغذي الأخبار تُخزن هنا.';
+$string['privacy:metadata:block_rss_client:title'] = 'عنوان مغذي الأخبار.';
+$string['privacy:metadata:block_rss_client:url'] = 'رابط مغذي الأخبار.';
+$string['privacy:metadata:block_rss_client:userid'] = 'مُعرَّف المستخدم الذي أضاف مغذي الأخبار.';
 $string['refreshfeedstask'] = 'تنشيط مهمة مغذيات الأخبار';
 $string['remotenewsfeed'] = 'مغذي أخبار البعيد.';
-$string['rss_client:addinstance'] = 'إضافة كتلة جديدة لمغذي الأخبار عن بعد';
-$string['rss_client:createprivatefeeds'] = 'أنشاء خدمة تغذية الأخبارية  خاصة';
-$string['rss_client:createsharedfeeds'] = 'إنشاء خدمة التغذية الاخبارية المشتركة';
+$string['rss_client:addinstance'] = 'أضف كتلة جديدة لمغذي الأخبار عن بعد';
+$string['rss_client:createprivatefeeds'] = 'إنشاء خدمة التغذية الإخبارية الخاصة';
+$string['rss_client:createsharedfeeds'] = 'إنشاء خدمة التغذية الإخبارية الخاصة';
 $string['rss_client:manageanyfeeds'] = 'إدارة أي خدمة تغذية إخبارية';
 $string['rss_client:manageownfeeds'] = 'إدارة خدمة تغذية إخبارية الخاصة بك';
-$string['rss_client:myaddinstance'] = 'إضافة كتلة جديدة لمغذي الأخبار عن بعد إلى دفة القيادة';
+$string['rss_client:myaddinstance'] = 'أضف كتلة جديدة لمغذي الأخبار عن بعد إلى دفة القيادة';
 $string['seeallfeeds'] = 'شاهد كل التغذيات';
 $string['sharedfeed'] = 'تغذية مشتركة';
 $string['shownumentrieslabel'] = 'الحد الاقصى لعدد المدخلات المغروضة في كل كتلة';
-$string['submitters'] = 'لمن سيسمح بتعريف الاخبار الجديدة؟ التغذيات المعرف ستكون متاحة لاي صفحة في موقعك.';
+$string['submitters'] = 'من الذي سيسمح له بتعريف تغذيات إخبار جديدة؟ التغذيات المُعرف ستكون متاحة لأي صفحة في موقعك.';
 $string['submitters2'] = 'مقدمي';
 $string['timeout'] = 'وقت بقاء مُدخل خدمة مغذي الأخبار في الخبء قبل إزالته، مقاساً بالدقائق. لاحظ أن هذا الوقت يمثل الحد الأدنى للبقاء قبل انتهاء الصلاحية؛ حيث سيتم تنشيط وضع المغذي في الخبء عند التنفيذ اللاحق لمشغل الوظائف الدورية بعد انتهاء الصلاحية. القيمة الموصى بها هي 30 دقيقة أو أكثر.';
 $string['timeout2'] = 'المهلة الزمنية';

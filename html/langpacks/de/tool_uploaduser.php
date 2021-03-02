@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'de', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,12 +57,13 @@ $string['uploadpicture_cannotsave'] = 'Das Nutzerbild für {$a} kann nicht gespe
 $string['uploadpicture_cannotunzip'] = 'Die Bilddateien können nicht entpackt werden.';
 $string['uploadpicture_invalidfilename'] = 'Die Bilddatei {$a} enthält ungültige Zeichen im Namen und wird nicht benutzt.';
 $string['uploadpicture_overwrite'] = 'Vorhandene Nutzerbilder überschreiben?';
-$string['uploadpictures'] = 'Nutzerbilder hochladen';
-$string['uploadpictures_help'] = 'Nutzerbilder können als ZIP-Paket mit mehreren Bilddateien hochgeladen werden. Moodle ordnet die enthaltenen Dateien den Nutzerkonten als Portrait zu, wenn die Bilddateien geeignet benannt sind. Wenn Sie als Nutzerattribut den Nutzernamen gewählt haben, wird die Bilddatei nutzer1234.jpg für das Nutzerkonto nutzer1234 verwendet. Zulässige Bilddateitypen sind gif, jpg und png.';
 $string['uploadpicture_userfield'] = 'Nutzermerkmal für die Zuordnung der Nutzerbilder:';
 $string['uploadpicture_usernotfound'] = 'Nutzer/in mit \'{$a->userfield}\'-Wert von \'{$a->uservalue}\' existiert nicht. Wird übersprungen.';
 $string['uploadpicture_userskipped'] = 'Nutzerbild {$a} exitiert bereits und wird nicht überschrieben.';
 $string['uploadpicture_userupdated'] = 'Nutzerbild {$a} aktualisiert';
+$string['uploadpictures'] = 'Nutzerbilder hochladen';
+$string['uploadpictures_help'] = 'Nutzerbilder können als ZIP-Paket mit mehreren Bilddateien hochgeladen werden. Moodle ordnet die enthaltenen Dateien den Nutzerkonten als Portrait zu, wenn die Bilddateien geeignet benannt sind. Wenn Sie als Nutzerattribut den Nutzernamen gewählt haben, wird die Bilddatei nutzer1234.jpg für das Nutzerkonto nutzer1234 verwendet. Zulässige Bilddateitypen sind gif, jpg und png.';
+$string['uploaduser:uploaduserpictures'] = 'Nutzerbilder hochladen';
 $string['uploadusers'] = 'Nutzerliste hochladen';
 $string['uploadusers_help'] = 'Nutzer/innen können als Textdatei hochgeladen (und optional auch in Kurse eingeschrieben) werden. Das Format der Textdatei sollte folgendermaßen aussehen:
 
@@ -72,7 +73,6 @@ $string['uploadusers_help'] = 'Nutzer/innen können als Textdatei hochgeladen (u
 * Notwendige Feldnamen sind username, password, firstname, lastname, email';
 $string['uploaduserspreview'] = 'Vorschau Nutzer-Upload';
 $string['uploadusersresult'] = 'Ergebnisse Nutzer-Upload';
-$string['uploaduser:uploaduserpictures'] = 'Nutzerbilder hochladen';
 $string['useraccountupdated'] = 'Nutzer/in aktualisiert';
 $string['useraccountuptodate'] = 'Nutzer/in aktuell';
 $string['userdeleted'] = 'Nutzer/in gelöscht';

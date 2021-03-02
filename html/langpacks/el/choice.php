@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'el', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,22 +34,22 @@ $string['calendarend'] = '{$a} κλείνει';
 $string['calendarstart'] = '{$a} ανοίγει';
 $string['cannotsubmit'] = 'Λυπούμαστε, υπήρξε πρόβλημα κατά την υποβολή της επιλογής σας. Παρακαλώ προσπαθήστε ξανά.';
 $string['choice'] = 'Επιλογή';
-$string['choiceactivityname'] = 'Επιλογή: {$a}';
 $string['choice:addinstance'] = 'Προσθέστε μια νέα επιλογή';
 $string['choice:choose'] = 'Καταγραφή επιλογής';
-$string['choiceclose'] = 'Επιτρέπονται αποκρίσεις μέχρι';
-$string['choicecloseson'] = 'Η επιλογή κλείνει στις {$a}';
 $string['choice:deleteresponses'] = 'Τροποποίηση και διαγραφή αποκρίσεων';
 $string['choice:downloadresponses'] = 'Λήψη αποκρίσεων';
+$string['choice:readresponses'] = 'Εμφάνιση αποκρίσεων';
+$string['choice:view'] = 'Δείτε τη δραστηριότητα επιλογής';
+$string['choiceactivityname'] = 'Επιλογή: {$a}';
+$string['choiceclose'] = 'Επιτρέπονται αποκρίσεις μέχρι';
+$string['choicecloseson'] = 'Η επιλογή κλείνει στις {$a}';
 $string['choicefull'] = 'Μία ή περισσότερες από τις επιλογές που έχετε επιλέξει έχουν ήδη συμπληρωθεί. Η απόκρισή σας δεν έχει αποθηκευτεί. Παρακαλούμε, κάντε άλλη επιλογή.';
 $string['choicename'] = 'Όνομα επιλογής';
 $string['choiceopen'] = 'Να επιτρέπονται αποκρίσεις από';
 $string['choiceoptions'] = 'Επιλογές επιλογής';
 $string['choiceoptions_help'] = 'Εδώ καθορίζετε τις επιλογές από τις οποίες πρέπει να επιλέξουν οι συμμετέχοντες. Μπορείτε να επιλέξετε οποιονδήποτε αριθμό αυτών. Εάν αφήσετε μερικές από τις επιλογές κενές, δεν θα εμφανιστούν. Αν χρειάζεστε περισσότερες από 8 επιλογές, κάντε κλικ στο κουμπί «Προσθήκη 3 πεδίων στην φόρμα».';
-$string['choice:readresponses'] = 'Εμφάνιση αποκρίσεων';
 $string['choicesaved'] = 'Η επιλογή σας καταγράφηκε';
 $string['choicetext'] = 'Κείμενο επιλογής';
-$string['choice:view'] = 'Δείτε τη δραστηριότητα επιλογής';
 $string['chooseaction'] = 'Επιλέξτε μία ενέργεια...';
 $string['chooseoption'] = 'Επιλογή: {$a}';
 $string['closebeforeopen'] = 'Έχετε ορίσει μια ημερομηνία κλεισίματος πριν από την ημερομηνία ανοίγματος χρήσης.';
@@ -70,15 +70,15 @@ $string['full'] = '(Πλήρες)';
 $string['havetologin'] = 'Πρέπει να συνδεθείτε για να μπορείτε να υποβάλετε την επιλογή σας';
 $string['includeinactive'] = 'Συμπερίληψη αποκρίσεων από ανενεργούς/σε αναστολή χρήστες';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης Επιλογής';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Επιλογής.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης Επιλογής';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες Επιλογής κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση, Υποβολή, Εμφάνιση ανατροφοδότησης)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Επιλογής.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Επιλογής';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Επιλογής.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Επιλογής';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Επιλογής κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία αφοσίωση, Συμμετέχων μόνος, Συμμετέχων με άλλους)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Επιλογής.';
 $string['limit'] = 'Όριο';
 $string['limitanswers'] = 'Περιόρισε το πλήθος των επιτρεπόμενων αποκρίσεων';
 $string['limitanswers_help'] = 'Αυτή η επιλογή σας επιτρέπει να περιορίσετε τον αριθμό των συμμετεχόντων που μπορούν να επιλέξουν κάθε επιλογή μεταξύ πολλών. Όταν επιτευχθεί το όριο τότε κανείς άλλος δεν μπορεί να επιλέξει αυτή την επιλογή.

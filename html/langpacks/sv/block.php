@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,59 +12,67 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block', language 'sv', version '3.8'.
  *
- * @package   block
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtodock'] = 'Flytta det här till dockan';
-$string['anypagematchingtheabove'] = 'Alla sidor som matchar den ovanstående';
-$string['appearsinsubcontexts'] = 'Förekommer i underliggande sammanhang';
+$string['anypagematchingtheabove'] = 'Alla sidor matchar den ovanstående';
+$string['appearsinsubcontexts'] = 'Visas i underliggande sammanhang';
 $string['assignrolesinblock'] = 'Tilldela roller i {$a} block';
+$string['blocksdrawertoggle'] = 'Dölj/visa blocklåda';
 $string['blocksettings'] = 'Inställningar för block';
-$string['bracketfirst'] = '{$a} (första)';
-$string['bracketlast'] = '{$a} (sista)';
+$string['bracketfirst'] = '{$a} (överst)';
+$string['bracketlast'] = '{$a} (nederst)';
 $string['configureblock'] = 'Konfigurera {$a} block';
 $string['contexts'] = 'Sammanhang för sida';
+$string['contexts_help'] = 'Kontexter är mer specifika typer av sidor där det här blocket kan visas inom den ursprungliga blockplatsen. Du kommer att ha olika alternativ här beroende på den ursprungliga blockplatsen och din nuvarande plats. Till exempel kan du begränsa ett block till att endast visas på forumsidor i en kurs genom att lägga till blocket till kursen (vilket även gör att det visas på alla undersidor) och sedan gå in i ett forum och redigera blockinställningarna igen för att begränsa visning till bara forumsidor.';
 $string['createdat'] = 'Original block plats';
 $string['createdat_help'] = 'Den ursprungliga platsen där blocket skapades. Block inställningar kan göra att ett block syns på andra platser (sammanhang) inom den ursprungliga platsen. Till exempel kan ett block som skapades i en kurs visas även inom  kursen t.ex ett tema. Ett block som skapats på förstasidan kan visas på hela webbplatsen.';
 $string['defaultregion'] = 'Standardinställd region';
-$string['defaultregion_help'] = 'Teman kan definiera en eller flera blockregioner där blocken visas. Denna inställning bestämmer i vilken av dessa du vill att blocket visas som förinställning. Detta kan överskridas av andra block på vissa sidor.';
+$string['defaultregion_help'] = 'Teman kan definiera en eller flera blockregioner där blocken visas. Denna inställning bestämmer i vilken av dessa du vill att blocket visas som standard. Detta kan åsidosättas på vissa sidor om det krävs.';
 $string['defaultweight'] = 'Standardinställd vikt';
-$string['defaultweight_help'] = 'Den förinställda viktningen låter dig grovt bestämma var blocket ska visas i den valda regionen/placeringen, högst upp eller längst ned. Den slutliga placeringen beräknas mellan alla block i den regionen. (Exempelvis kan ju bara ett block visas överst. Detta värde kan överskridas på vissa sidor om det behövs.';
+$string['defaultweight_help'] = 'Med en standardviktning kan du välja ungefär var du vill att blocket ska visas i den valda regionen; antingen överst eller längst ned. Den slutliga platsen beräknas utifrån alla block i den regionen (till exempel kan endast ett block faktiskt vara överst). Det här värdet kan åsidosättas på specifika sidor om det behövs.';
 $string['deleteblock'] = 'Ta bort {$a} block';
-$string['deleteblockcheck'] = 'Är du säker att du vill radera denna block med namnet {$a}?';
+$string['deleteblockcheck'] = 'Är du säker att du vill ta bort "{$a}"-blocket?';
 $string['deleteblockwarning'] = '<p> Du håller på att radera ett block som finns någon annanstans. </p><p> Original blocket plats: {$a->location} <br /> Visning på sidtyper: {$a->pagetype} </p><p> Är du säker på att du vill fortsätta? </p>';
 $string['deletecheck'] = 'Ta bort {$a} block?';
 $string['dockblock'] = 'Docka {$a} blocket';
-$string['hideblock'] = 'Göm {$a} block';
-$string['hidedockpanel'] = 'Göm dockpanelen';
-$string['hidepanel'] = 'Göm panel';
+$string['hideblock'] = 'Dölj {$a} block';
+$string['hidedockpanel'] = 'Dölj dockpanelen';
+$string['hidepanel'] = 'Dölj panel';
 $string['moveblock'] = 'Flytta {$a} block';
 $string['moveblockafter'] = 'Flytta blocket efter {$a} blocket';
 $string['moveblockbefore'] = 'Flytta blocket framför {$a} blocket';
+$string['moveblockinregion'] = 'Flytta blocket till {$a}-området';
 $string['movingthisblockcancel'] = 'Flyttar det här blocket ({$a})';
 $string['myblocks'] = 'Mina block';
 $string['onthispage'] = 'På den här sidan';
 $string['pagetypes'] = 'Typer av sidor';
 $string['pagetypewarning'] = 'Den tidigare angivna sidtypen är inte längre valbar. Välj den lämpligaste sidtypen nedan.';
+$string['privacy:metadata:userpref:dockedinstance'] = 'Poster när användaren dockade ett block';
+$string['privacy:metadata:userpref:hiddenblock'] = 'Registrerar när användaren komprimerade/dolde ett block';
+$string['privacy:request:blockisdocked'] = 'Indikerar om blocket dockades';
+$string['privacy:request:blockishidden'] = 'Visar om blocket doldes/komprimerades';
 $string['region'] = 'Region';
-$string['restrictpagetypes'] = 'Begränsa till den här typen av sidor';
+$string['restrictpagetypes'] = 'Visa på sidor av typern';
 $string['showblock'] = 'Visa {$a} block';
 $string['showoncontextandsubs'] = 'Visa på \'{$a}\' och alla sidor inom den';
 $string['showoncontextonly'] = 'Visa bara på \'{$a}\' ';
 $string['showonentiresite'] = 'Visa över hela webbplatsen';
 $string['showonfrontpageandsubs'] = 'Visa på hemsidan och på alla sidor som läggs till ingångssidan';
 $string['showonfrontpageonly'] = 'Visa bara på ingångssidan';
-$string['subpages'] = 'Specifik underliggande sida';
-$string['thisspecificpage'] = 'Den här specifika sidan (sida {$a})';
+$string['subpages'] = 'Välj sidor';
+$string['thisspecificpage'] = 'Den här specifika sidan';
 $string['undockall'] = 'Frigör samtliga från dockning';
 $string['undockblock'] = 'Docka av {$a} blocket';
 $string['undockitem'] = 'Frigör den här komponenten från dockning';

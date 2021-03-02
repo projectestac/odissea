@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'el', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,15 +70,15 @@ $string['evaluate'] = 'Αξιολόγηση';
 $string['evaluatemodel'] = 'Αξιολόγηση μοντέλου';
 $string['evaluationinbatches'] = 'Τα περιεχόμενα του ιστοτόπου υπολογίζονται και αποθηκεύονται σε δέσμες. Η διαδικασία αξιολόγησης μπορεί να διακοπεί ανά πάσα στιγμή. Την επόμενη φορά που θα εκτελεστεί, θα συνεχιστεί από το σημείο που σταμάτησε.';
 $string['evaluationmode'] = 'Κατάσταση λειτουργίας αξιολόγησης';
-$string['evaluationmodecolconfiguration'] = 'Ρυθμίσεις';
-$string['evaluationmodecoltrainedmodel'] = 'Εκπαιδευμένο μοντέλο';
-$string['evaluationmodeconfiguration'] = 'Αξιολόγηση των ρυθμίσεων του μοντέλου';
 $string['evaluationmode_help'] = 'Υπάρχουν δύο καταστάσεις λειτουργίας αξιολόγησης:
 
 * Εκπαιδευμένο μοντέλο - Τα δεδομένα ιστοτόπου χρησιμοποιούνται ως δεδομένα δοκιμών για την αξιολόγηση της ακρίβειας του εκπαιδευμένου μοντέλου.
 * Διαμόρφωση - Τα δεδομένα της τοποθεσίας χωρίζονται σε δεδομένα εκπαίδευσης και δοκιμών, τόσο για την εκπαίδευση όσο και για τη δοκιμή της ακρίβειας της διαμόρφωσης του μοντέλου.
 
 Το εκπαιδευμένο μοντέλο είναι διαθέσιμο μόνο αν έχει εισαχθεί στον ιστότοπο ένα εκπαιδευμένο μοντέλο και δεν έχει ακόμα εκπαιδευτεί με χρήση δεδομένων ιστοτόπου.';
+$string['evaluationmodecolconfiguration'] = 'Ρυθμίσεις';
+$string['evaluationmodecoltrainedmodel'] = 'Εκπαιδευμένο μοντέλο';
+$string['evaluationmodeconfiguration'] = 'Αξιολόγηση των ρυθμίσεων του μοντέλου';
 $string['evaluationmodeinfo'] = 'Αυτό το μοντέλο έχει εισαχθεί στον ιστότοπο. Μπορείτε είτε να αξιολογήσετε την απόδοση του μοντέλου, είτε να αξιολογήσετε την απόδοση των ρυθμίσεων του μοντέλου χρησιμοποιώντας δεδομένα ιστοτόπου.';
 $string['evaluationmodetrainedmodel'] = 'Αξιολόγηση του εκπαιδευμένου μοντέλου';
 $string['executescheduledanalysis'] = 'Εκτέλεση προγραμματισμένης ανάλυσης';

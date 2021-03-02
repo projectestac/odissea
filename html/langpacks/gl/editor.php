@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'editor', language 'gl', version '3.8'.
  *
- * @package   editor
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     editor
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['alternatetext'] = 'Texto alternativo';
 $string['anchorhelp'] = 'Esta acción só crea unha ancora. Deberá crear manualmente unha ligazón.';
 $string['anchorname'] = 'Nome da ancora';
 $string['anchors'] = 'Ancoras';
-$string['baseline'] = 'Liña de base';
+$string['baseline'] = 'Liña base';
 $string['bold'] = 'Negra';
 $string['borderthickness'] = 'Grosor dos bordos';
 $string['bottom'] = 'Abaixo';
@@ -46,7 +46,7 @@ $string['cellspacing'] = 'Espazado da cela';
 $string['choosechar'] = 'Escolla o carácter';
 $string['chooseicon'] = 'Escolla unha icona para inserir';
 $string['close'] = 'Pechar';
-$string['closeafterreplace'] = 'Pechar despois de substituír';
+$string['closeafterreplace'] = 'Pechar após substituír';
 $string['cols'] = 'Columnas';
 $string['configeditorplugins'] = 'Escolla os engadidos do editor que quere empregar e dispóñaos na orde recomendada.';
 $string['copy'] = 'Copiar a selección';
@@ -59,15 +59,15 @@ $string['delete'] = 'Eliminar';
 $string['editors'] = 'Editores de texto';
 $string['editorsettings'] = 'Administrar os editores';
 $string['enterurlfirst'] = 'Debe introducir antes un URL';
-$string['filebrowser'] = 'Navegador de archivos';
-$string['findwhat'] = 'Atopar';
+$string['filebrowser'] = 'Navegador de ficheiros';
+$string['findwhat'] = 'Buscar';
 $string['fontname'] = 'Nome do tipo de letra';
 $string['fontsize'] = 'Tamaño da letra';
 $string['forecolor'] = 'Cor da letra';
 $string['formatblock'] = 'Formato';
 $string['fullscreen'] = 'Editor a pantalla completa';
 $string['heading'] = 'Cabeceira';
-$string['height'] = 'Altura';
+$string['height'] = 'Alto';
 $string['hilitecolor'] = 'Cor do fondo';
 $string['horizontal'] = 'Horizontal';
 $string['horizontalrule'] = 'Regra horizontal';
@@ -80,7 +80,7 @@ $string['insertlink'] = 'Inserir unha ligazón';
 $string['insertsmile'] = 'Inserir unha emoticona';
 $string['inserttable'] = 'Inserir unha táboa';
 $string['italic'] = 'Cursiva';
-$string['itemsreplaced'] = 'items substituídos';
+$string['itemsreplaced'] = 'elementos substituídos';
 $string['justifycenter'] = 'Xustificado no centro';
 $string['justifyfull'] = 'Xustificación total';
 $string['justifyleft'] = 'Xustificación esquerda';
@@ -99,7 +99,7 @@ $string['linktargettop'] = 'A mesma xanela';
 $string['linktitle'] = 'Título';
 $string['linkurl'] = 'URL';
 $string['matchcase'] = 'Coincidir con capitalización';
-$string['middle'] = 'Centrado';
+$string['middle'] = 'Medio';
 $string['minimize'] = 'Minimizar o editor';
 $string['move'] = 'Mover';
 $string['multi'] = 'Múltiple';
@@ -112,9 +112,9 @@ $string['ok'] = 'Aceptar';
 $string['options'] = 'Opcións';
 $string['orderedlist'] = 'Lista ordenada';
 $string['outdent'] = 'Diminuír a sangría';
-$string['paste'] = 'Pegar desde o portapapeis';
+$string['paste'] = 'Pegar dende o portapapeis';
 $string['path'] = 'Ruta';
-$string['percent'] = 'Porcentaxe';
+$string['percent'] = 'Porcentual';
 $string['pixels'] = 'Píxeles';
 $string['pleaseenteralt'] = 'Escriba o texto alternativo';
 $string['popupeditor'] = 'Agrandar o editor';
@@ -152,6 +152,6 @@ $string['undo'] = 'Desfacer a última acción';
 $string['unorderedlist'] = 'Lista con viñetas';
 $string['upload'] = 'Enviar';
 $string['vertical'] = 'Vertical';
-$string['width'] = 'Largura';
+$string['width'] = 'Largo';
 $string['wordclean'] = 'Limpar HTML de Word';
 $string['zip'] = 'Zip';

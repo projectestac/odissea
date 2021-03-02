@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'en', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -268,15 +268,15 @@ $string['importquestions'] = 'Import questions';
 $string['importquestions_help'] = 'This feature enables questions in a variety of formats to be imported via text file.';
 $string['inactiveoverridehelp'] = '* This override is inactive because the user\'s access to the activity is restricted. This can be due to group or role assignments, other access restrictions, or the activity being hidden.';
 $string['indicator:cognitivedepth'] = 'Lesson cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Lesson activity.';
 $string['indicator:cognitivedepthdef'] = 'Lesson cognitive';
 $string['indicator:cognitivedepthdef_help'] = 'The participant has reached this percentage of the cognitive engagement offered by the Lesson activities during this analysis interval (Levels = No view, View, Submit, View feedback, Comment on feedback, Resubmit after viewing feedback)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
-$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Lesson activity.';
 $string['indicator:socialbreadth'] = 'Lesson social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Lesson activity.';
 $string['indicator:socialbreadthdef'] = 'Lesson social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the Lesson activities during this analysis interval (Levels = No participation, Participant alone, Participant with others)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Lesson activity.';
 $string['insertedpage'] = 'Inserted page';
 $string['invalidfile'] = 'Invalid file';
 $string['invalidid'] = 'No course module ID or lesson ID were passed';
@@ -291,16 +291,18 @@ $string['leftduringtimed'] = 'You have left during a timed lesson.<br />Please c
 $string['leftduringtimednoretake'] = 'You have left during a timed lesson and you are<br />not allowed to retake or continue the lesson.';
 $string['leftduringtimedsession'] = 'You have left during a timed lesson.';
 $string['lesson:addinstance'] = 'Add a new lesson';
-$string['lessonclosed'] = 'This lesson closed on {$a}.';
-$string['lessoncloses'] = 'Lesson closes';
-$string['lessoncloseson'] = 'Lesson closes on {$a}';
 $string['lesson:edit'] = 'Edit a lesson activity';
-$string['lessoneventcloses'] = '{$a} closes';
-$string['lessoneventopens'] = '{$a} opens';
-$string['lessonformating'] = 'Lesson formatting';
 $string['lesson:grade'] = 'Grade lesson essay questions';
 $string['lesson:manage'] = 'Manage a lesson activity';
 $string['lesson:manageoverrides'] = 'Manage lesson overrides';
+$string['lesson:view'] = 'View lesson activity';
+$string['lesson:viewreports'] = 'View lesson reports';
+$string['lessonclosed'] = 'This lesson closed on {$a}.';
+$string['lessoncloses'] = 'Lesson closes';
+$string['lessoncloseson'] = 'Lesson closes on {$a}';
+$string['lessoneventcloses'] = '{$a} closes';
+$string['lessoneventopens'] = '{$a} opens';
+$string['lessonformating'] = 'Lesson formatting';
 $string['lessonmenu'] = 'Lesson menu';
 $string['lessonname'] = 'Lesson: {$a}';
 $string['lessonnotready'] = 'This lesson is not ready to be taken.  Please contact your {$a}.';
@@ -309,8 +311,6 @@ $string['lessonopen'] = 'This lesson will be open on {$a}.';
 $string['lessonopens'] = 'Lesson opens';
 $string['lessonpagelinkingbroken'] = 'First page not found.  Lesson page linking must be broken.  Please contact an admin.';
 $string['lessonstats'] = 'Lesson statistics';
-$string['lesson:view'] = 'View lesson activity';
-$string['lesson:viewreports'] = 'View lesson reports';
 $string['linkedmedia'] = 'Linked media';
 $string['loginfail'] = 'Login failed, please try again...';
 $string['lowscore'] = 'Low score';
@@ -408,8 +408,8 @@ $string['numericanswer'] = 'Numeric answer';
 $string['numericanswer_help'] = 'You can specify a single number, or a range of numbers by using colon. For example 2:5 means any answer between 2 and 5 and including 2 and 5 is correct.';
 $string['offlinedatamessage'] = 'You have worked on this attempt using a mobile device. Data was last saved to this site {$a} ago. Please check that you do not have any unsaved work.';
 $string['ongoing'] = 'Display ongoing score';
-$string['ongoingcustom'] = 'You have earned {$a->score} point(s) out of {$a->currenthigh} point(s) thus far.';
 $string['ongoing_help'] = 'If enabled, each page will display the student\'s current points earned out of the total possible thus far.';
+$string['ongoingcustom'] = 'You have earned {$a->score} point(s) out of {$a->currenthigh} point(s) thus far.';
 $string['ongoingnormal'] = 'You have answered {$a->correct} correctly out of {$a->viewed} attempts.';
 $string['onpostperpage'] = 'Only one posting per grade';
 $string['openafterclose'] = 'You have specified an open date after the close date';
@@ -429,11 +429,11 @@ $string['overrideusereventname'] = '{$a->lesson} - Override';
 $string['overview'] = 'Overview';
 $string['overview_help'] = 'A lesson is made up of a number of pages and optionally content pages. A page contains some content and usually ends with a question. Associated with each answer to the question is a jump. The jump can be relative, such as this page or next page, or absolute, specifying any one of the pages in the lesson. A content page is a page containing a set of links to other pages in the lesson, for example a Table of Contents.';
 $string['page'] = 'Page: {$a}';
-$string['pageanswers'] = 'Page answers';
-$string['pagecontents'] = 'Page contents';
 $string['page-mod-lesson-edit'] = 'Edit lesson page';
 $string['page-mod-lesson-view'] = 'View or preview lesson page';
 $string['page-mod-lesson-x'] = 'Any lesson page';
+$string['pageanswers'] = 'Page answers';
+$string['pagecontents'] = 'Page contents';
 $string['pageresponses'] = 'Page responses';
 $string['pages'] = 'Pages';
 $string['pagetitle'] = 'Page title';
@@ -545,9 +545,9 @@ $string['showanunseenpage'] = 'Show an unseen page';
 $string['singleanswer'] = 'Single answer';
 $string['skip'] = 'Skip navigation';
 $string['slideshow'] = 'Slideshow';
+$string['slideshow_help'] = 'If enabled, the lesson is displayed as a slideshow, with a fixed width and height.';
 $string['slideshowbgcolor'] = 'Slideshow background colour';
 $string['slideshowheight'] = 'Slideshow height';
-$string['slideshow_help'] = 'If enabled, the lesson is displayed as a slideshow, with a fixed width and height.';
 $string['slideshowwidth'] = 'Slideshow width';
 $string['startlesson'] = 'Start lesson';
 $string['studentattemptlesson'] = '{$a->lastname}, {$a->firstname}\'s attempt number {$a->attempt}';

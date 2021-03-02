@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradingform_guide', language 'pt', version '3.8'.
  *
- * @package   gradingform_guide
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradingform_guide
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -83,7 +83,7 @@ $string['pluginname'] = 'Grelha quantitativa';
 $string['previewmarkingguide'] = 'Pré-visualizar grelha quantitativa';
 $string['privacy:metadata:criterionid'] = 'Um identificador do critério de avaliação avançada.';
 $string['privacy:metadata:fillingssummary'] = 'Armazena informações sobre a nota e o feedback de um utilizador para a grelha de avaliação.';
-$string['privacy:metadata:instanceid'] = 'Um identificador para uma nota usada por uma atividade.';
+$string['privacy:metadata:instanceid'] = 'Um identificador para a nota usada por uma atividade.';
 $string['privacy:metadata:preference:showmarkerdesc'] = 'Se deve mostrar a descrição dos critérios de marcadores';
 $string['privacy:metadata:preference:showstudentdesc'] = 'Se deve mostrar ao aluno a descrição dos critérios';
 $string['privacy:metadata:remark'] = 'Observações relacionadas com este critério de avaliação.';
@@ -97,8 +97,8 @@ $string['save'] = 'Guardar';
 $string['saveguide'] = 'Guardar grelha';
 $string['saveguidedraft'] = 'Guardar como rascunho';
 $string['score'] = 'nota';
-$string['scoreforcriterion'] = 'Pontuação de {$a}';
 $string['score_help'] = 'Insira uma pontuação para {$a->criterion} entre 0 e {$a->maxscore}.';
+$string['scoreforcriterion'] = 'Pontuação de {$a}';
 $string['showmarkerdesc'] = 'Mostrar descrição dos critérios ao professor';
 $string['showmarkspercriterionstudents'] = 'Mostrar os pontos por critério aos alunos';
 $string['showstudentdesc'] = 'Mostrar descrição dos critérios aos alunos';

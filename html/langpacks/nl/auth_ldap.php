@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_ldap', language 'nl', version '3.8'.
  *
- * @package   auth_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,15 +40,12 @@ $string['auth_ldap_contexts_key'] = 'Contexten';
 $string['auth_ldap_create_context'] = 'Als je het aanmaken van gebruikers met e-mailbevestiging aanzet, moet je de context aangeven waarin gebruikers worden aangemaakt. Deze context moet verschillen van andere contexten om beveiligingsproblemen te vermijden. Deze context hoef je niet toe te voegen aan ldap_context_variable. Moodle zoekt automatisch de gebruikers uit deze context.<br /><b>Merk op!</b> Je moet de functie auth_user_create() in het bestand auth/ldap/lib.php wijzigen om er voor te zorgen dat het aanmaken van gebruikers werkt.';
 $string['auth_ldap_create_context_key'] = 'Context voor nieuwe gebruikers';
 $string['auth_ldap_create_error'] = 'Fout bij het aanmaken van de gebruiker in LDAP';
-$string['auth_ldapdescription'] = 'Deze methode levert authenticatie door middel van een externe LDAP-server.
-Als de gebruikersnaam en wachtwoord geldig zijn, maakt Moodle een nieuwe gebruiker aan in zijn database. Deze plugin kan gebruikerseigenschappen vanuit LDAP lezen en bepaalde velden in Moodle alvast invullen. Bij latere aanmeldingen worden alleen de gebruikersnaam en het wachtwoord gecontroleerd.';
 $string['auth_ldap_expiration_desc'] = 'Kies  \'{$a->no}\' om de controle op vervallen wachtwoorden uit te schakelen of  \'{$a->ldapserver}\' de geldigheidsduur van de wachtwoorden rechtstreeks uit LDAP te laten lezen.';
 $string['auth_ldap_expiration_key'] = 'Verstrijken';
 $string['auth_ldap_expiration_warning_desc'] = 'Aantal dagen op voorhand dat er een waarschuwing voor het vervallen van het wachtwoord gegeven wordt.';
 $string['auth_ldap_expiration_warning_key'] = 'Waarschuwing vervallen wachtwoord';
 $string['auth_ldap_expireattr_desc'] = 'Optioneel: gaat voor op het LDAP-attribuut dat de vervaltijd van het wachtwoord bewaart.';
 $string['auth_ldap_expireattr_key'] = 'Attribuut vervallen wachtwoord';
-$string['auth_ldapextrafields'] = 'Deze velden zijn niet verplicht. Je kunt ervoor kiezen om sommige Moodle-gebruikersvelden van te voren in te vullen met informatie uit de <b>LDAP-velden</b> die je hier kunt aangeven. <p>Als je deze velden leeg laat zal er niets vanuit LDAP worden overgebracht en worden de standaardwaarden van Moodle gebruikt.<p> In beide gevallen kan de gebruiker al deze velden wijzigingen zodra hij/zij ingelogd is.</p>';
 $string['auth_ldap_graceattr_desc'] = 'Optioneel: gaat voor op het gracelogin-attribuut';
 $string['auth_ldap_gracelogin_key'] = 'Grace login attribuut';
 $string['auth_ldap_gracelogins_desc'] = 'Schakel de gracelogin-ondersteuning voor LDAP in. Nadat een wachtwoord is verlopen kan een gebruiker nog aanmelden tot de teller van gracelogin 0 is geworden. Door deze instelling  in te schakelen, wordt de gracelogin-boodschap getoond als het wachtwoord verlopen is.';
@@ -64,11 +61,10 @@ $string['auth_ldap_memberattribute'] = 'Geef gebruiker lid attribuut, voor als g
 $string['auth_ldap_memberattribute_isdn'] = 'Overschrijft de behandeling van lidmaatschapsattribuutwaarden';
 $string['auth_ldap_memberattribute_isdn_key'] = 'Lidmaatschapsattribuut gebruikt dn';
 $string['auth_ldap_memberattribute_key'] = 'Lidmaatschapsattribuut';
+$string['auth_ldap_no_mbstring'] = 'Je hebt de mbstring-extentie nodig in Active Directory om gebruikers te kunnen aanmaken.';
 $string['auth_ldap_noconnect'] = 'LDAP-module kan niet met de server verbinden: {$a}';
 $string['auth_ldap_noconnect_all'] = 'LDAP-module kan met geen enkele server verbinden: {$a}';
 $string['auth_ldap_noextension'] = 'Waarschuwing: De PHP LDAP module is blijkbaar niet geïnstalleerd. Zorg er voor dat ze geïnstalleerd en ingeschakeld is.';
-$string['auth_ldap_no_mbstring'] = 'Je hebt de mbstring-extentie nodig in Active Directory om gebruikers te kunnen aanmaken.';
-$string['auth_ldapnotinstalled'] = 'Kan de LDAP-authenticatie niet gebruiken. De PHP LDAP module is niet geïnstalleerd';
 $string['auth_ldap_objectclass'] = 'Optioneel: Overschrijft objectClass, gebruikt om gebruikers te noemen/zoeken op ldap_user_type. Gewoonlijk moet je dit niet wijzigen.';
 $string['auth_ldap_objectclass_key'] = 'Object klasse';
 $string['auth_ldap_opt_deref'] = 'Bepaalt hoe aliassen tijdens het zoeken behandeld worden. Kies één van volgende waarden: "Nee" (LDAP_DEREF_NEVER) of "Ja" (LDAP_DEREF_ALWAYS)';
@@ -98,6 +94,10 @@ $string['auth_ldap_usertypeundefined'] = 'config.user_type is niet gedefinieerd 
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type is niet gedefinieerd of de functie ldap_expirationtime ondersteunt het geselecteerde type niet!';
 $string['auth_ldap_version'] = 'De versie van het LDAP-protocol die jouw server gebruikt.';
 $string['auth_ldap_version_key'] = 'Versie';
+$string['auth_ldapdescription'] = 'Deze methode levert authenticatie door middel van een externe LDAP-server.
+Als de gebruikersnaam en wachtwoord geldig zijn, maakt Moodle een nieuwe gebruiker aan in zijn database. Deze plugin kan gebruikerseigenschappen vanuit LDAP lezen en bepaalde velden in Moodle alvast invullen. Bij latere aanmeldingen worden alleen de gebruikersnaam en het wachtwoord gecontroleerd.';
+$string['auth_ldapextrafields'] = 'Deze velden zijn niet verplicht. Je kunt ervoor kiezen om sommige Moodle-gebruikersvelden van te voren in te vullen met informatie uit de <b>LDAP-velden</b> die je hier kunt aangeven. <p>Als je deze velden leeg laat zal er niets vanuit LDAP worden overgebracht en worden de standaardwaarden van Moodle gebruikt.<p> In beide gevallen kan de gebruiker al deze velden wijzigingen zodra hij/zij ingelogd is.</p>';
+$string['auth_ldapnotinstalled'] = 'Kan de LDAP-authenticatie niet gebruiken. De PHP LDAP module is niet geïnstalleerd';
 $string['auth_ntlmsso'] = 'NTLM SSO';
 $string['auth_ntlmsso_enabled'] = 'Zet dit op Ja om Single-sign-on met het NTLM-domein te verkrijgen. Merk op dat dit bijkomende instellingen op de webserver vereist. Zie <a href="https://docs.moodle.org/nl/NTLM_authenticatie">https://docs.moodle.org/nl/NTLM_authenticatie</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Inschakelen';
@@ -108,8 +108,8 @@ $string['auth_ntlmsso_ie_fastpath_yesattempt'] = 'Ja, probeer NTLM met alle brow
 $string['auth_ntlmsso_ie_fastpath_yesform'] = 'Ja, alle andere browsers gebruiken een standaard loginformulier';
 $string['auth_ntlmsso_maybeinvalidformat'] = 'Kon de gebruikersnaam niet uit de REMOTE_USER header halen. Is de geconfigureerde format correct?';
 $string['auth_ntlmsso_missing_username'] = 'Je moet minstens %username% gebruiken in externe gebruikersnaam format.';
-$string['auth_ntlmsso_remoteuserformat'] = 'Als je \'NTLM\' in \'Authenticatietype\' gekozen hebt, dan kun je hier de opmaak van de externe gebruikersnaam opgeven. Als je dit leeg laat, dan zal de standaard DOMAINusername opmaak gebruikt worden. Je kunt de optionele <b>%domain%</b> plaatshouder gebruiken om op te geven waar de gebruikersnaam komt en de verplichte <b>%username%</b> plaatshouder om te tonen waar de gebruikersnaam komt. <br /><br />Enkele voorbeelden van veelgebruikte opmaak zijn
-<tt>%domain%%username%</tt> (MS Windows standaard), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> of gewoon <tt>%username%</tt> (als er geen domeindeel is)';
+$string['auth_ntlmsso_remoteuserformat'] = 'Als je \'NTLM\' in \'Authenticatietype\' gekozen hebt, dan kun je hier de opmaak van de externe gebruikersnaam opgeven. Als je dit leeg laat, dan zal de standaard DOMEIN\\gebruikersnaam opmaak gebruikt worden. Je kunt de optionele <b>%domain%</b> plaatshouder gebruiken om op te geven waar de gebruikersnaam komt en de verplichte <b>%username%</b> plaatshouder om te tonen waar de gebruikersnaam komt. <br /><br />Enkele voorbeelden van veelgebruikte opmaak zijn
+<tt>%domain%\\%username%</tt> (MS Windows standaard), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> of gewoon <tt>%username%</tt> (als er geen domeindeel is)';
 $string['auth_ntlmsso_remoteuserformat_key'] = 'Format externe gebruikersnaam';
 $string['auth_ntlmsso_subnet'] = 'Indien ingeschakeld, zal alleen SSO geprobeerd worden met clients in dit subnet. Opmaak: xxx.xxx.xxx.xxx/bitmask. Verschillende subnets worden gescheiden met een \',\' (komma).';
 $string['auth_ntlmsso_subnet_key'] = 'Subnet';
@@ -162,9 +162,9 @@ $string['updateremfail'] = 'Fout updaten LDAP-record  Foutcode: {$a->errno}; Fou
 $string['updateremfailamb'] = 'LDAP updaten met abigu veld {$a->key} mislukt; oude Moodle waarde: \'{$a->ouvalue}\', nieuwe waarde: \'{$a->nuvalue}\'';
 $string['updateremfailfield'] = 'Het updaten van  LDAP met onbestaand veld (\'{$a->ldapkey}\') is mislukt. Sleutel ({$a->key}) - oude moodle-waarde: \'{$a->ouvalue}\' nieuwe waarde: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Kon gebruiker niet vinden tijdens extern updaten. Details volgen: zoek base: \'{$a->userdn}\'; zoek filter: \'(objectClass=*)\'; zoek attributen: {$a->attribs}';
-$string['useracctctrlerror'] = 'Fout bij het verkrijgen van userAccountControl voor {$a}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() ondersteunt het gekozen gebruikerstype niet: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() ondersteunt het gekozen gebruikerstype niet: {$a}';
+$string['useracctctrlerror'] = 'Fout bij het verkrijgen van userAccountControl voor {$a}';
 $string['userentriestoadd'] = 'Toe te voegen gebruikers: {$a}';
 $string['userentriestoremove'] = 'Te verwijderen gebruikers: {$a}';
 $string['userentriestorevive'] = 'Te activeren gebruikers: {$a}';

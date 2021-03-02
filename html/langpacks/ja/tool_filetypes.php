@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'ja', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,8 +30,8 @@ $string['corestring'] = '代替言語ストリング';
 $string['corestring_help'] = 'この設定はmimetypes.php言語ファイルから異なる言語ストリングを選択するため使用することができます。通常は空白にしてください。カスタムタイプの場合、説明フィールドを使用してください。';
 $string['defaulticon'] = 'MIMEタイプのデフォルトアイコン';
 $string['defaulticon_help'] = '同一MIMEタイプに複数のファイル拡張子がある場合、MIMEタイプからアイコンを決定できるよう拡張子の1つでこのオプションを選択してください。';
-$string['deletea'] = '{$a} を削除する';
 $string['delete_confirmation'] = '本当に <strong>.{$a}</strong> を削除してもよろしいですか?';
+$string['deletea'] = '{$a} を削除する';
 $string['deletefiletypes'] = 'ファイルタイプを削除する';
 $string['description'] = 'カスタム説明';
 $string['description_help'] = 'シンプルなファイルタイプ説明 例) 「Kindle ebook」。あなたのサイトが複数言語をサポートしてmulti-languageフィルタを使用している場合、異なる言語で説明を提供するためこのフィールドにmulti-languageタグを入力することができます。';

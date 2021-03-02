@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'fr', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,12 +57,13 @@ $string['uploadpicture_cannotsave'] = 'Impossible d\'enregistrer l\'avatar pour 
 $string['uploadpicture_cannotunzip'] = 'Impossible de décompresser le fichier d\'avatars.';
 $string['uploadpicture_invalidfilename'] = 'Le nom du fichier image {$a} a des caractères non valides. Il sera ignoré.';
 $string['uploadpicture_overwrite'] = 'Écraser les avatars déjà existants ?';
-$string['uploadpictures'] = 'Déposer des avatars';
-$string['uploadpictures_help'] = 'Les avatars des utilisateurs peuvent être déposés sous la forme d\'un fichier compressé (zip) de fichiers images. Le nom des fichiers images doit être de la forme <i>attribut-choisi.extension</i>. Par exemple, si vous choisissez pour la correspondance des images l\'attribut « nom d\'utilisateur » et que le nom d\'utilisateur de l\'utilisateur concerné est « user1234 », le nom de fichier devrait être « user1234.jpg ».';
 $string['uploadpicture_userfield'] = 'Attribut utilisateur à utiliser pour la correspondance des avatars :';
 $string['uploadpicture_usernotfound'] = 'Il n\'y a pas d\'utilisateur dont l\'attribut « {$a->userfield} » a la valeur « {$a->uservalue} ». Il sera ignoré.';
 $string['uploadpicture_userskipped'] = 'Utilisateur {$a} ignoré (il possède déjà un avatar).';
 $string['uploadpicture_userupdated'] = 'Avatar de l\'utilisateur {$a} modifié.';
+$string['uploadpictures'] = 'Déposer des avatars';
+$string['uploadpictures_help'] = 'Les avatars des utilisateurs peuvent être déposés sous la forme d\'un fichier compressé (zip) de fichiers images. Le nom des fichiers images doit être de la forme <i>attribut-choisi.extension</i>. Par exemple, si vous choisissez pour la correspondance des images l\'attribut « nom d\'utilisateur » et que le nom d\'utilisateur de l\'utilisateur concerné est « user1234 », le nom de fichier devrait être « user1234.jpg ».';
+$string['uploaduser:uploaduserpictures'] = 'Déposer des avatars';
 $string['uploadusers'] = 'Importation d\'utilisateurs';
 $string['uploadusers_help'] = 'Il est possible d\'importer manuellement des comptes utilisateurs (et optionnellement inscrits à des cours) à partir d\'un fichier texte, ce fichier doit être formaté de la façon suivante :
 
@@ -74,7 +75,6 @@ $string['uploadusers_help'] = 'Il est possible d\'importer manuellement des comp
 <a href="https://docs.moodle.org/fr/Importer_des_utilisateurs" target="_blank">Plus d\'aide à ce sujet</a>';
 $string['uploaduserspreview'] = 'Prévisualisation de la création d\'utilisateurs';
 $string['uploadusersresult'] = 'Résultats de la création d\'utilisateurs';
-$string['uploaduser:uploaduserpictures'] = 'Déposer des avatars';
 $string['useraccountupdated'] = 'Utilisateur modifié';
 $string['useraccountuptodate'] = 'Utilisateur à jour';
 $string['userdeleted'] = 'Utilisateur supprimé';

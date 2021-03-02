@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculated', language 'ca', version '3.8'.
  *
- * @package   qtype_calculated
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculated
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -112,9 +112,9 @@ Modifiqueu el paràmetre de tolerància de les respostes que trobareu a Paràmet
 $string['param'] = 'Parametre {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Per qualsevol resposta parcialment correcta';
 $string['pluginname'] = 'Calculada';
+$string['pluginname_help'] = 'Les preguntes calculades permeten crear preguntes numèriques individuals utilitzant comodins entre claudàtors, els quals se substitueixen amb valors concrets en respondre el qüestionari. Per exemple, la pregunta «Quina és l\'àrea del rectangle de base {b} i alçada {a}?» tindria una fórmula de resposta correcta «{a}*{b}» (on * denota la multiplicació).';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta calculada';
 $string['pluginnameediting'] = 'S\'està editant una pregunta calculada';
-$string['pluginname_help'] = 'Les preguntes calculades permeten crear preguntes numèriques individuals utilitzant comodins entre claudàtors, els quals se substitueixen amb valors concrets en respondre el qüestionari. Per exemple, la pregunta «Quina és l\'àrea del rectangle de base {b} i alçada {a}?» tindria una fórmula de resposta correcta «{a}*{b}» (on * denota la multiplicació).';
 $string['pluginnamesummary'] = 'Les preguntes calculades són com les numèriques, però amb els valors numèrics escollits aleatòriament d\'un conjunt en el moment de respondre el qüestionari.';
 $string['possiblehdr'] = 'Comodins possibles presents només en l\'enunciat';
 $string['questiondatasets'] = 'Conjunts de dades de la pregunta';

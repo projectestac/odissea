@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'es', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,6 @@ $string['configpopupwidth'] = '¿Qué ancho deben tener por defecto las ventanas
 $string['contentheader'] = 'Contenido';
 $string['displayoptions'] = 'Opciones para mostrar disponibles';
 $string['displayselect'] = 'Mostrar';
-$string['displayselectexplain'] = 'Elegir tipo (desafortunadamente no todos los tipos funcionan en todos los archivos).';
 $string['displayselect_help'] = 'Este ajuste, junto con el tipo de archivo, y siempre que el navegador permita incrustar código, determina cómo se muestra el archivo.
 Las opciones pueden incluir:
 
@@ -52,6 +51,7 @@ Las opciones pueden incluir:
 * Forzar descarga - Se le pregunta al usuario si desea descargar el fichero
 * Abrir - Sólo se muestra la dirección en la ventana del navegador
 * En ventana emergente - La URL se muestra en una ventana nueva del navegador sin menús y sin barra de direcciones';
+$string['displayselectexplain'] = 'Elegir tipo (desafortunadamente no todos los tipos funcionan en todos los archivos).';
 $string['dnduploadresource'] = 'Crear recurso archivo';
 $string['encryptedcode'] = 'Código encriptado';
 $string['filenotfound'] = 'Lo sentimos, el archivo no se ha encontrado.';
@@ -93,13 +93,13 @@ $string['popupwidthexplain'] = 'Especifica la anchura por defecto de las ventana
 $string['printintro'] = 'Mostrar descripción del recurso';
 $string['printintroexplain'] = '¿Mostrar la descripción del recurso debajo del contenido? Algunos tipos de visualización pueden no mostrar la descripción incluso aunque esté activada esa opción.';
 $string['resource:addinstance'] = 'Añadir un nuevo recurso';
+$string['resource:exportresource'] = 'Exportar recurso';
+$string['resource:view'] = 'Ver recurso';
 $string['resourcecontent'] = 'Archivos y subcarpetas';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'Exportar recurso';
-$string['resource:view'] = 'Ver recurso';
 $string['search:activity'] = 'Archivo';
 $string['selectmainfile'] = 'Por favor, seleccione el archivo principal haciendo clic en el icono junto a su nombre.';
 $string['showdate'] = 'Mostrar la fecha de subida/modificación';

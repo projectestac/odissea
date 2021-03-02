@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,16 +12,32 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_equation', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_equation', language 'sv', version '3.8'.
  *
- * @package   atto_equation
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_equation
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cursorinfo'] = 'En pil anger den position som nya element från elementbiblioteket kommer att infogas på.';
+$string['editequation'] = 'Använd <a href="{$a}" target="_blank">TeX</a> för att redigera ekvationen.';
+$string['librarygroup1'] = 'Operatorer';
+$string['librarygroup1_desc'] = 'TeX-kommandon på Operatorer-fliken.';
+$string['librarygroup2'] = 'Pilar';
+$string['librarygroup2_desc'] = 'TeX-kommandon på Pilar-fliken.';
+$string['librarygroup3'] = 'Grekiska symboler';
+$string['librarygroup3_desc'] = 'TeX-kommandon på Grekiska symboler-fliken.';
+$string['librarygroup4'] = 'Avancerat';
+$string['librarygroup4_desc'] = 'TeX-kommandon på avancerat-fliken.';
+$string['pluginname'] = 'Ekvationsredigerare';
+$string['preview'] = 'Förhandsgranska ekvation';
+$string['privacy:metadata'] = 'Plugin-modulen atto_equation lagrar ingen personlig information.';
 $string['saveequation'] = 'Spara ekvationen';
+$string['settings'] = 'Inställningar för ekvationsredigeraren';
+$string['update'] = 'Uppdatera';

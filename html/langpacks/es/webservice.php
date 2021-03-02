@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'webservice', language 'es', version '3.8'.
  *
- * @package   webservice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     webservice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -51,9 +51,9 @@ $string['configwebserviceplugins'] = 'Por razones de seguridad, solo se habilita
 $string['context'] = 'Contexto';
 $string['createservicedescription'] = 'Un servicio es un conjunto de funciones de \'servicios web\'. Permitirá acceder al usuario a un nuevo servicio. En la página "Añadir servicio" marque las opciones  \'Habilitado\' y \'Usuario autorizado\'. Seleccione \'No se requiere permiso\'.';
 $string['createserviceforusersdescription'] = 'Un servicio es un conjunto de funciones de \'servicios web\'. Permitirá acceder al usuario a un nuevo servicio. En la página "Añadir servicio" marque la opción  \'Habilitado\' y desmarque \'Usuario autorizado\'. Seleccione \'No se requiere permiso\'.';
-$string['createtoken'] = 'Crear ficha';
-$string['createtokenforuser'] = 'Crear ficha para un usuario';
-$string['createtokenforuserdescription'] = 'Crear ficha para usuario de servicios web.';
+$string['createtoken'] = 'Crear ficha (token)';
+$string['createtokenforuser'] = 'Crear ficha (token) para un usuario';
+$string['createtokenforuserdescription'] = 'Crear ficha (token) para usuario de servicios web.';
 $string['createuser'] = 'Crear un usuario específico';
 $string['createuserdescription'] = 'Se necesita un usuario de servicios web  para representar el sistema que controla Moodle.';
 $string['criteriaerror'] = 'Faltan permisos para buscar sobre un criterio.';
@@ -111,7 +111,7 @@ $string['installexistingserviceshortnameerror'] = 'Un servicio web con el nombre
 $string['installserviceshortnameerror'] = 'Error de programación: el nombre corto de servicio "{$a}" únicamente puede contener números, letras y los caracteres _-.';
 $string['invalidextparam'] = 'Parámetro api externo inválido: {$a}';
 $string['invalidextresponse'] = 'Respuesta api externa inválida: {$a}';
-$string['invalidiptoken'] = 'Ficha no válida - su IP no es admitida';
+$string['invalidiptoken'] = 'Ficha (token) no válida - su IP no es admitida';
 $string['invalidtimedtoken'] = 'Ficha (token) no válida - ficha caduca';
 $string['invalidtoken'] = 'Ficha (token) no válida - ficha no encontrada';
 $string['iprestriction'] = 'Restricción de IP';
@@ -120,7 +120,7 @@ $string['key'] = 'Clave';
 $string['keyshelp'] = 'Las claves son empleadas para acceder a su cuenta Moodle desde aplicaciones externas.';
 $string['loginrequired'] = 'Restringido a usuarios logeados';
 $string['manageprotocols'] = 'Administrar protocolos';
-$string['managetokens'] = 'Administrar tokens';
+$string['managetokens'] = 'Administrar fichas (tokens)';
 $string['missingcaps'] = 'Permisos faltantes';
 $string['missingcaps_help'] = 'Lista de permisos requeridas para el servicio que no posee el usuario seleccionado. Los permisos faltantes deben añadirse al rol del usuario para poder emplear este servicio.';
 $string['missingpassword'] = 'Falta la contraseña';
@@ -198,15 +198,15 @@ $string['serviceusersmatching'] = 'Usuarios autorizados concordantes';
 $string['serviceuserssettings'] = 'Cambiar ajustes para usuarios autorizados';
 $string['shortnametaken'] = 'Nombre corto ya usado por otro servicio ({$a})';
 $string['simpleauthlog'] = 'Acceso por identificación simple';
-$string['step'] = 'Pasos';
+$string['step'] = 'Paso';
 $string['supplyinfo'] = 'Más detalles';
-$string['testauserwithtestclientdescription'] = 'Simular el acceso externo al servicio empleando el servicio web de prueba del cliente. Antes de hacerlo, acceda como usuario con el permiso moodle/webservice:createtoken y obtenga la clave de seguridad (token) vía las configuraciones de Mi perfil. Usted empleará esta ficha (token) en el cliente de prueba. En el cliente de prueba, también seleccione un protocolo habilitado con autenticación por ficha (token). <strong>ADVERTENCIA: ¡Las funciones que usted pruebe SERÁN EJECUTADAS para este usuario, por lo que debe ser cauteloso con lo que decida probar!</strong>';
+$string['testauserwithtestclientdescription'] = 'Simular el acceso externo al servicio empleando el servicio web de prueba del cliente. Antes de hacerlo, acceda como usuario con el permiso moodle/webservice:createtoken y obtenga la clave de seguridad (token) vía las configuraciones de Mi perfil. Usted empleará esta ficha (token) en el cliente de prueba. En el cliente de prueba,  seleccione también un protocolo habilitado con autentificación por ficha (token). <strong>ADVERTENCIA: ¡Las funciones que usted pruebe SERÁN EJECUTADAS para este usuario, por lo que debe tener cuidado con lo que decida probar!</strong>';
 $string['testclient'] = 'Cliente de prueba de servicio web';
 $string['testclientdescription'] = '* El cliente de prueba de servicios web <strong>ejecuta</strong> las funciones <strong>REALMENTE</strong>. No pruebe funciones que no conozca. <br />* Aún no se han implementado todas las funciones de servicios web en el cliente de prueba <br />* Para revisar que un usuario no puede acccesar algunas funciones, Usted puede probar algunas funciones que Usted no permitió.<br />* Para ver mensajes de error más claros, configure debugging a <strong>{$a->mode}</strong> dentro de {$a->atag}<br />* Accese el {$a->amfatag}.';
 $string['testwithtestclient'] = 'Comprobar el servicio';
 $string['testwithtestclientdescription'] = 'Simula el acceso externo al servicio usando el cliente de prueba de servicio web. Use un protocolo permitido con autenticación por ficha (token). <strong>ADVERTENCIA: ¡Las funciones que usted pruebe SERÁN EJECUTADAS para este usuario, por lo que debe ser cauteloso con lo que decida probar!</strong>';
 $string['token'] = 'Ficha';
-$string['tokenauthlog'] = 'Identificacón mediante ficha';
+$string['tokenauthlog'] = 'Autenticación mediante ficha (token)';
 $string['tokencreatedbyadmin'] = 'Únicamente puede ser restablecido por el administrador (*)';
 $string['tokencreator'] = 'Creador';
 $string['unknownoptionkey'] = 'Clave de opción desconocida ({$a})';
@@ -215,7 +215,7 @@ $string['updateusersettings'] = 'Actualizar';
 $string['uploadfiles'] = 'Puede subir ficheros';
 $string['uploadfiles_help'] = 'Si se activa, cualquier usuario puede subir archivos con sus claves de seguridad a su propia zona de archivos privados o a la zona de borradores. Las cuotas de archivos se aplican a los usuarios.';
 $string['userasclients'] = 'Usuarios como clientes con ficha';
-$string['userasclientsdescription'] = 'Los siguientes pasos pueden ayudarle a configurar el servicio web Moodle para usuarios como clientes. Estos pasos también le ayudarán a configurar el método de autenticación basado en la ficha (token) recomendada (claves de seguridad) . En este caso, el usuario generará su ficha (token) a partir de la página de claves de seguridad via la configuración de Mi perfil.';
+$string['userasclientsdescription'] = 'Los siguientes pasos pueden ayudarle a configurar el servicio web Moodle para usuarios como clientes. Estos pasos también le ayudarán a configurar el método de autentificación basado en la ficha (token) recomendada (claves de seguridad) . En este caso, el usuario generará su ficha (token) a partir de la página de claves de seguridad via la configuración de Mi perfil.';
 $string['usermissingcaps'] = 'Permisos ausentes: {$a}';
 $string['usernameorid'] = 'Nombre de usuario / ID de Usuario';
 $string['usernameorid_help'] = 'Introduzca el nombre de usuario o la ID de usuario.';
@@ -229,7 +229,7 @@ $string['validuntil_help'] = 'Si se activa la opción, el servicio se desactivar
 $string['webservice'] = 'Servicio Web';
 $string['webservices'] = 'Servicios Web';
 $string['webservicesoverview'] = 'Vista general';
-$string['webservicetokens'] = 'Fichas de servicios Web';
+$string['webservicetokens'] = 'Fichas (tokens) de servicios Web';
 $string['wrongusernamepassword'] = 'Nombre de usuario o contraseña erróneos';
 $string['wsaccessuserdeleted'] = 'Se rechazó el acceso a servicio web para el nombre de usuario eliminado: {$a}';
 $string['wsaccessuserexpired'] = 'Se rechazó el acceso a servicio web para el nombre de usuario con contraseña caduca: {$a}';

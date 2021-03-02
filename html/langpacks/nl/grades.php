@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grades', language 'nl', version '3.8'.
  *
- * @package   grades
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grades
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,20 +48,27 @@ $string['aggregatenotonlygraded'] = 'Lege cijfers mee opnemen';
 $string['aggregateonlygraded'] = 'Lege cijfers uitsluiten';
 $string['aggregateonlygraded_help'] = '<p>Nietbestaande cijfers kunnen beschouwd worden als minimumcijfers of als niet begrepen in de aggregatie.</p>';
 $string['aggregateoutcomes'] = 'Resultaten in aggregatie opnemen';
-$string['aggregateoutcomes_help'] = '<p>Het opnemen van competenties in aggregatie kan een vreemd totaalcijfer geven. Daarom heb je hier de optie om de competenties op te nemen of niet op te nemen.</p>';
+$string['aggregateoutcomes_help'] = '<p>Het opnemen van resultaten in aggregatie kan een vreemd totaalcijfer geven. Daarom heb je hier de optie om de competenties op te nemen of niet op te nemen.</p>';
 $string['aggregatesonly'] = 'Wijzig naar enkel geaggregeerden';
 $string['aggregatesubcatsupgradedgrades'] = 'Opmerking: de aggregatie-instelling "Aggregatie inclusief subcategorieën" is verwijderd als deel van de site-upgrade. Vermits "Aggregatie inclusief subcategorieën" voorheen gebruikt werd in deze cursus, is het aangewezen om deze wijziging eens na te kijken in de cijferlijst.';
 $string['aggregatesum'] = 'Natuurlijk';
 $string['aggregateweightedmean'] = 'Gewogen gemiddelde';
 $string['aggregateweightedmean2'] = 'Eenvoudig gewogen cijfergemiddelde';
 $string['aggregation'] = 'Aggregatie';
+$string['aggregation_help'] = 'De aggregatie bepaalt hoe cijfers in een categorie gecombineerd worden, zoals
+
+* Gemiddelde van cijfers - de som van alle punten wordt gedeeld door het totaal aantal punten
+* Mediaan van cijfers - het middelste cijfer wanneer alle cijfers in volgorde van grootte worden gezet
+* Laagste cijfer
+* Hoogste cijfer
+* Modus van cijfers - het cijfer dat het meest voorkomt
+* Natuurlijk - de som van alle cijferwaardes geschaald door weging';
 $string['aggregationcoef'] = 'Aggregatiecoëfficiënt';
 $string['aggregationcoefextra'] = 'Bonus';
 $string['aggregationcoefextra_help'] = 'Wanneer de aggregatiestrategie "Natuurlijk" of "Eenvoudig gewogen gemiddelde" en het bonus vinkje is aangevinkt, dan wordt het maximumcijfer niet toegevoegd bij het maximale cijfer van de categorie. Dit heeft als resultaat de mogelijkheid om het om het maximale cijfer te behalen in de categorie zonder het maximale cijfer te behalen in alle beoordelingsitems.
 
 Wanneer als aggregatiestrategie "Het gemiddelde van cijfers (met bonuspunten)" is gekozen en het bonuspunt is ingesteld met een waarde groter dan nul, dan is het bonuspunt de factor waarmee het cijfer wordt vermenigvuldigd voor het aan het het totaal wordt toegevoegd na de berekening van het gemiddelde.';
 $string['aggregationcoefextrasum'] = 'Bonus';
-$string['aggregationcoefextrasumabbr'] = '+';
 $string['aggregationcoefextrasum_help'] = '<p>Wanneer de "som van cijfers" aggregatiestrategie wordt gebruikt, dan kan een beoordelingsitem ingesteld worden als bonusitem voor de categorie. Dit betekent dat het maximumcijfer voor dit item niet toegevoegd zal worden aan het maximumcijfer van de categorie, maar het cijfer van het beoordelingsitem zal wel meegerekend worden. Voorbeeld:</p>
 
 <ul>
@@ -73,6 +80,7 @@ $string['aggregationcoefextrasum_help'] = '<p>Wanneer de "som van cijfers" aggre
     <li>Een leerling krijgt als beoordelingen 20 voor item 1 en 70 voor item 2</li>
     <li>Het totaal van de leerling voor categorie 1 zal 75/75 zijn (20+70 = 90, maar item 1 geldt als bonus en brengt zo het totaal tot het maximumcijfer voor de categorie)</li>
 </ul>';
+$string['aggregationcoefextrasumabbr'] = '+';
 $string['aggregationcoefextraweight'] = 'Bonus weging';
 $string['aggregationcoefextraweight_help'] = '<p>Een waarde hoger dan 0 zorgt ervoor dat dit beoordelingsitem als bonus behandeld wordt tijdens aggregatie. Het getal is een factor waarmee dit cijfer wordt vermenigvuldigd voor het opgeteld wordt bij alle andere cijfers, maar het item zelf zal niet inbegrepen worden in de deling. Bijvoorbeeld:</p>
 
@@ -86,14 +94,6 @@ $string['aggregationcoefextraweight_help'] = '<p>Een waarde hoger dan 0 zorgt er
 </ul>';
 $string['aggregationcoefweight'] = 'Weging beoordelingsitem';
 $string['aggregationcoefweight_help'] = '<p>Weging toegepast op alle cijfers in dit beoordelingsitem wanneer dit geaggregeerd wordt met andere beoordelingsitems.</p>';
-$string['aggregation_help'] = 'De aggregatie bepaalt hoe cijfers in een categorie gecombineerd worden, zoals
-
-* Gemiddelde van cijfers - de som van alle punten wordt gedeeld door het totaal aantal punten
-* Mediaan van cijfers - het middelste cijfer wanneer alle cijfers in volgorde van grootte worden gezet
-* Laagste cijfer
-* Hoogste cijfer
-* Modus van cijfers - het cijfer dat het meest voorkomt
-* Natuurlijk - de som van alle cijferwaardes geschaald door weging';
 $string['aggregationhintdropped'] = '(Weggevallen)';
 $string['aggregationhintexcluded'] = '(Uitgesloten)';
 $string['aggregationhintextra'] = '(Bonus)';
@@ -121,9 +121,9 @@ $string['bonuspoints'] = 'Bonuspunten';
 $string['bulkcheckboxes'] = 'Selectievakjes voor bulkoperaties';
 $string['calculatedgrade'] = 'Berekend cijfer';
 $string['calculation'] = 'Berekening';
+$string['calculation_help'] = 'Een cijferberekening is een formule die gebruikt wordt om cijfers te bepalen. De formule moet beginnen met een gelijkheidsteken (=) en mag algemene wiskundige operators bevatten, zoals min, max, sum. Indien gewenst kunnen andere cijferelementen in de berekening betrokken worden door hun ID-nummer tussen dubbele vierkante haken op te nemen.';
 $string['calculationadd'] = 'Berekening toevoegen';
 $string['calculationedit'] = 'Berekening bewerken';
-$string['calculation_help'] = 'Een cijferberekening is een formule die gebruikt wordt om cijfers te bepalen. De formule moet beginnen met een gelijkheidsteken (=) en mag algemene wiskundige operators bevatten, zoals min, max, sum. Indien gewenst kunnen andere cijferelementen in de berekening betrokken worden door hun ID-nummer tussen dubbele vierkante haken op te nemen.';
 $string['calculationsaved'] = 'Berekening bewaard';
 $string['calculationview'] = 'Bekijk berekening';
 $string['cannotaccessgroup'] = 'Geen toegang tot de cijfers van de geselecteerde groep.';
@@ -176,9 +176,9 @@ $string['displaypoints'] = 'Toon punten';
 $string['displayweighted'] = 'Toon een gewogen cijfer';
 $string['dropdown'] = 'Rolmenu';
 $string['droplow'] = 'Laagste weglaten';
+$string['droplow_help'] = '<p>Indien ingesteld zal deze optie de X laagste cijfers negeren, waarbij X de ingestelde waarde voor deze optie is.</p>';
 $string['droplowestvalue'] = 'Laat laagste cijferwaarde vallen';
 $string['droplowestvalues'] = 'Laat de {$a} laagste waarden vallen';
-$string['droplow_help'] = '<p>Indien ingesteld zal deze optie de X laagste cijfers negeren, waarbij X de ingestelde waarde voor deze optie is.</p>';
 $string['dropped'] = 'Weggelaten';
 $string['dropxlowest'] = 'Laat de X laagste weg';
 $string['dropxlowestwarning'] = 'Opmerking: als je \'Laat de X laagste weg\' gebruikt, dan gaat het cijferlijst er van uit dat alle items in de categorie dezelfde puntenwaarde hebben. Als de puntenwaarden verschillen, dan zullen de resultaten onvoorspelbaar zijn.';
@@ -190,13 +190,13 @@ $string['editfeedback'] = 'Bewerk feedback';
 $string['editgrade'] = 'Bewerk beoordeling';
 $string['editgradeletters'] = 'Bewerk beoordelingsletters';
 $string['editoutcome'] = 'Bewerk competentie';
-$string['editoutcomes'] = 'Bewerk competenties';
+$string['editoutcomes'] = 'Bewerk resultaten';
 $string['editscale'] = 'Bewerk schaal';
 $string['edittree'] = 'Instellingen';
 $string['editverbose'] = 'Bewerk {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['enableajax'] = 'AJAX inschakelen';
 $string['enableajax_help'] = 'Voegt een laagje AJAX functionaliteit toe aan het rapport, wat het bewerken ervan vereenvoudigd en versneld. Dit werkt alleen als Javascript is ingeschakeld in de browser van de gebruiker.';
-$string['enableoutcomes'] = 'Competenties inschakelen';
+$string['enableoutcomes'] = 'Resultaten inschakelen';
 $string['enableoutcomes_help'] = 'Indien ingeschakeld kunnen beoordelingsitems beoordeeld worden door gebruik te maken van één of meer schalen die aan competenties gekoppeld zijn.';
 $string['encoding'] = 'Codering';
 $string['encoding_help'] = 'Selecteer de teken-encodering voor de gegevens. (De standaard-encodering is UTF-8. Als de verkeerde encodering geselecteerd wordt, dan kun je dat zien wanneer je de gegevens bekijkt tijdens het importeren.';
@@ -211,7 +211,7 @@ $string['errorreprintheadersnonnumeric'] = 'Niet-numerieke waarde ontvangen voor
 $string['errorsavegrade'] = 'Kon cijfer niet bewaren.';
 $string['errorsettinggrade'] = 'Fout bij het bewaren van het cijfer voor "{$a->itemname}" voor gebruikersid {$a->userid}';
 $string['errorupdatinggradecategoryaggregateonlygraded'] = 'Fout bij het updaten van de "Aggregeer alleen beoordeelde items"-instelling van cijfercategorie ID {$a->id}';
-$string['errorupdatinggradecategoryaggregateoutcomes'] = 'Fout bij het updaten van de "Aggregeer competenties"-instelling van de cijfercategorie ID {$a->id}';
+$string['errorupdatinggradecategoryaggregateoutcomes'] = 'Fout bij het updaten van de "Aggregeer resultaten"-instelling van de cijfercategorie ID {$a->id}';
 $string['errorupdatinggradecategoryaggregation'] = 'Fout bij het aanpassen van het aggregatietype van cijfercategorie ID {$a->id}';
 $string['errorupdatinggradeitemaggregationcoef'] = 'Fout bij het updaten van de aggregatiecoëfficiënt (weging of bonus) van beoordelingsitem ID {$a->id}';
 $string['eventgradedeleted'] = 'Cijfer verwijderd';
@@ -230,7 +230,7 @@ $string['excluded_help'] = '<p>Als -uitgesloten- is ingesloten, dan zal dit cijf
 $string['expand'] = 'Categorie uitbreiden';
 $string['expandcriterion'] = 'Criterium uitvouwen';
 $string['export'] = 'Exporteer';
-$string['exportalloutcomes'] = 'Exporteer alle competenties';
+$string['exportalloutcomes'] = 'Exporteer alle restultaten';
 $string['exportfeedback'] = 'Feedback opnemen in export';
 $string['exportfeedback_desc'] = 'Dit kan overschreven worden tijdens het exporteren.';
 $string['exportformatoptions'] = 'Opties exportformaat';
@@ -244,11 +244,11 @@ $string['externalurl_desc'] = 'Als je een extern cijferlijst gebruikt, kun je hi
 $string['extracreditvalue'] = 'Extra bonus voor {$a}';
 $string['extracreditwarning'] = 'Opmerking: als je alle items van een categorie als \'Extra krediet\' instelt, haal je ze uit de berekening van de cijfers omdat er geen puntentotaal meer is';
 $string['feedback'] = 'Feedback';
+$string['feedback_help'] = '<p>Notities die de leraar kan maken om bij de beoordelingen te voegen. Dit kan uitgebreide, gepersonaliseerde feedback zijn of een eenvoudige code die verwijst naar een intern systeem of feedback.</p>';
 $string['feedbackadd'] = 'Voeg feedback toe';
 $string['feedbackedit'] = 'Bewerk feedback';
 $string['feedbackfiles'] = 'Feedbackbestanden';
 $string['feedbackforgradeitems'] = 'Feedback voor {$a}';
-$string['feedback_help'] = '<p>Notities die de leraar kan maken om bij de beoordelingen te voegen. Dit kan uitgebreide, gepersonaliseerde feedback zijn of een eenvoudige code die verwijst naar een intern systeem of feedback.</p>';
 $string['feedbackhistoryfiles'] = 'Feedback geschiedenis bestanden';
 $string['feedbacks'] = 'Feedback';
 $string['feedbacksaved'] = 'Feedback bewaard';
@@ -267,6 +267,7 @@ $string['full'] = 'Volledig';
 $string['fullmode'] = 'Wijzig naar volledig overzicht';
 $string['generalsettings'] = 'Algemene instellingen';
 $string['grade'] = 'Beoordeling';
+$string['grade_help'] = 'Het cijfer dat aan de leerling toegekend wordt voor zijn werk.';
 $string['gradeadministration'] = 'Cijferbeheer';
 $string['gradealreadyupdated'] = '{$a} cijfers zijn niet geïmporteerd omdat de cijfers in het importbestand ouder zijn dan in het beoordelingsrapport. Gebruik de optie "Verplicht import" om toch verder te gaan met het importeren van cijfers.';
 $string['gradeanalysis'] = 'Cijferanalyse';
@@ -308,7 +309,6 @@ $string['gradeexportuserprofilefields_desc'] = 'Geef deze profielvelden mee in d
 $string['gradeforstudent'] = '{$a->student}<br />{$a->item}{$a->feedback}';
 $string['gradegrademinmax'] = 'initiële min- en max-cijfers';
 $string['gradehelp'] = 'Hulp bij cijfers';
-$string['grade_help'] = 'Het cijfer dat aan de leerling toegekend wordt voor zijn werk.';
 $string['gradehistorylifetime'] = 'Levensduur van de cijfergeschiedenis';
 $string['gradehistorylifetime_help'] = 'Met deze instelling bepaal je hoelang je de geschiedenis van de wijzigingen aan de cijfertabellen wil bijhouden. Het is aangewezen dit zo lang mogelijk te doen. Als je performantieproblemen ondervindt of je hebt maar beperkte databaseruimte, dan kun je hier een lagere waarde instellen.';
 $string['gradeimport'] = 'Import beoordeling';
@@ -340,11 +340,11 @@ $string['grademin_help'] = 'Deze instelling bepaalt het minimumcijfer wanneer je
 $string['gradenotificationmessage'] = 'Je hebt nieuwe feedback over je werk voor "{$a}"';
 $string['gradenotificationsubject'] = 'Je bent beoordeeld';
 $string['gradeoutcomeitem'] = 'Item voor beoordeling competentie';
-$string['gradeoutcomes'] = 'Competenties';
-$string['gradeoutcomescourses'] = 'Cursuscompetenties';
+$string['gradeoutcomes'] = 'Resultaten';
+$string['gradeoutcomescourses'] = 'Cursusresultaten';
 $string['gradepass'] = 'Cijfer om te slagen';
-$string['gradepassgreaterthangrade'] = 'Het slaagcijfer kan niet hoger zijn dan het maximaal mogelijke cijfer {$a}';
 $string['gradepass_help'] = 'Deze instelling bepaalt het minimumcijfer dat vereist is om te slagen. De waarde wordt gebruikt in activiteits- en cursusvoltooiing en in de cijferlijst, waar geslaagde cijfers in groen en niet geslaagd in rood wordt weergegeven.';
+$string['gradepassgreaterthangrade'] = 'Het slaagcijfer kan niet hoger zijn dan het maximaal mogelijke cijfer {$a}';
 $string['gradepointdefault'] = 'Standaardcijfer';
 $string['gradepointdefault_help'] = 'Deze instelling bepaalt de standaardwaarde voor het cijfer in dit beoordelingsitem.';
 $string['gradepointdefault_validateerror'] = 'Deze instelling moet een geheel getal zijn tussen 1 en het maximumcijfer.';
@@ -380,9 +380,9 @@ $string['gradeweighthelp'] = 'Help bij gewogen beoordelingen';
 $string['gradingmodulename'] = 'Beoordelen {$a})';
 $string['groupavg'] = 'Groepsgemiddelde';
 $string['hidden'] = 'Verborgen';
+$string['hidden_help'] = 'Beoordelingen worden verborgen voor leerlingen indien geselecteerd. Een verborgen tot-datum kan ingesteld worden indien gewenst. De cijfers worden pas getoond nadat het beoordelen klaar is.';
 $string['hiddenasdate'] = 'Toon de datum voor verborgen beoordelingen';
 $string['hiddenasdate_help'] = 'Als een gebruiker verborgen cijfers niet kan zien, toon dan de datum in de plaats van een \'-\'.';
-$string['hidden_help'] = 'Beoordelingen worden verborgen voor leerlingen indien geselecteerd. Een verborgen tot-datum kan ingesteld worden indien gewenst. De cijfers worden pas getoond nadat het beoordelen klaar is.';
 $string['hiddenuntil'] = 'Verborgen tot';
 $string['hiddenuntildate'] = 'Verborgen tot: {$a}';
 $string['hideadvanced'] = 'Verberg geavanceerde mogelijkheden';
@@ -395,7 +395,7 @@ $string['hideforcedsettings'] = 'Verberg opgelegde instellingen';
 $string['hideforcedsettings_help'] = 'Toon geen geforceerde instellingen in de beoordelingsgebruikerinterface';
 $string['hidegroups'] = 'Verberg groepen';
 $string['hidelocks'] = 'Verberg blokkering';
-$string['hidenooutcomes'] = 'Toon competenties';
+$string['hidenooutcomes'] = 'Toon resultaten';
 $string['hidequickfeedback'] = 'Verberg snelle feedback';
 $string['hideranges'] = 'Verberg marges';
 $string['hidetotalifhiddenitems'] = 'Totalen verbergen als ze verborgen items bevatten?';
@@ -421,7 +421,7 @@ $string['importcsv_help'] = 'Cijfers kunnen als volgt via een CSV-bestand geïmp
 * een veldnaam die de gebruikersidentiteit bevat is vereist - ofwel username, ID number of email address
 
 Je kunt een bestand verkrijgen met de juiste opmaak door eerst wat cijfers te exporteren. Dat bestand kan dan bewerkt en bewaard worden als CSV-bestand.';
-$string['importcustom'] = 'Importeer als aangepaste competenties (enkel deze cursus)';
+$string['importcustom'] = 'Importeer als aangepaste resultaten (enkel deze cursus)';
 $string['importerror'] = 'Er is een fout opgetreden. Dit script is niet aangeroepen met de juiste parameters.';
 $string['importfailed'] = 'Importeren mislukt. Er zijn geen gegevens geïmporteerd.';
 $string['importfeedback'] = 'Importeer feedback';
@@ -429,15 +429,15 @@ $string['importfile'] = 'Importeer bestand';
 $string['importfilemissing'] = 'Geen bestand ontvangen, ga terug naar het formulier en upload een geldig bestand.';
 $string['importfrom'] = 'Importeer van';
 $string['importoutcomenofile'] = 'Het geüploade bestand is leeg of corrupt. Controleer de geldigheid van je bestand. Het probleem is gevonden op lijn {$a}; De oorzaak is dat de data lijn niet evenveel kolommen telt als de eerste lijn (de lijn met veldnamen) of er ontbreken veldnamen op de eerste lijn. Kijk naar een geëxporteerd bestand als voorbeeld van een bestand met een geldige eerste lijn.';
-$string['importoutcomes'] = 'Importeer competenties';
-$string['importoutcomes_help'] = 'Competenties kunnen geïmporteerd worden via een CSV-bestand met dezelfde opmaak als het export CSV-bestand';
+$string['importoutcomes'] = 'Importeer resultaten';
+$string['importoutcomes_help'] = 'Resultaten kunnen geïmporteerd worden via een CSV-bestand met dezelfde opmaak als het export CSV-bestand.';
 $string['importoutcomesuccess'] = 'Geïmporteerde competentie "{$a->name}" met ID #{$a->id}';
 $string['importplugins'] = 'Importeer plugins';
 $string['importpreview'] = 'Importeervoorbeeld';
 $string['importsettings'] = 'Importeerinstellingen';
 $string['importskippednomanagescale'] = 'Je hebt het recht niet om een nieuwe schaal toe te voegen, dus competentie "{$a}" is overgeslagen omdat daarvoor een nieuwe schaal aangemaakt moest worden.';
 $string['importskippedoutcome'] = 'Een competentie met de korte naam "{$a}" bestaat al in deze context. Degene die in het geïmporteerde bestand zat is overgeslagen.';
-$string['importstandard'] = 'Importeer als standaard competenties';
+$string['importstandard'] = 'Importeer als standaard resultaten';
 $string['importsuccess'] = 'Beoordelingen importeren gelukt';
 $string['importxml'] = 'Importeer XML';
 $string['includescalesinaggregation'] = 'Gebruik ook schalen in aggregatie';
@@ -457,8 +457,8 @@ $string['itemnamehelp'] = 'De naam van dit item, doorgegeven vanuit de module.';
 $string['items'] = 'Items';
 $string['itemsedit'] = 'Bewerk beoordelingsitem';
 $string['keephigh'] = 'Behoud hoogste';
-$string['keephighestvalues'] = 'Behoud de {$a} hoogste waarden';
 $string['keephigh_help'] = 'Indien ingesteld, zal deze optie enkel de X hoogst cijfers behouden, waarbij X de geselecteerde waarde is voor deze optie.';
+$string['keephighestvalues'] = 'Behoud de {$a} hoogste waarden';
 $string['keymanager'] = 'Sleutelbeheerder';
 $string['lessthanmin'] = 'Het cijfer, ingegeven voor {$a->itemname} voor {$a->username} is minder dan het minimaal toegelaten';
 $string['letter'] = 'Letter';
@@ -505,6 +505,7 @@ $string['missingitemtypeoreid'] = 'Array key (itemtype of eid) ontbreekt van 2de
 $string['missingscale'] = 'Je moet een schaal selecteren';
 $string['mode'] = 'Modus';
 $string['modgrade'] = 'Cijfer';
+$string['modgrade_help'] = 'Selecteer het type beoordeling dat wordt gebruikt voor deze activiteit. Als "schaal" wordt gekozen, kun je vervolgens de schaal kiezen uit een rolmenu. Als je punt-beoordeling kiest, dan kun je het maximale cijfer invoeren dat bij deze activiteit behaald kan worden.';
 $string['modgradecantchangegradetype'] = 'Je kunt het type niet wijzigen omdat er al cijfers voor dit item bestaan.';
 $string['modgradecantchangegradetypemsg'] = 'Sommige cijfers zijn al toegekend, dus het beoordelingstype kan niet meer gewijzigd worden. Als je het maximumcijfer wilt wijzigen, moet je eerste kiezen of je al dan niet de bestaande cijfers wil herschalen.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Sommige cijfers zijn al toegekend, dus je kan het beoordelingstype en de schaal niet meer wijzigen.';
@@ -521,7 +522,6 @@ Bijvoorbeeld, als deze optie op \'ja\' gezet is, dan zal het wijzigen van het ma
 $string['modgradedonotmodify'] = 'Wijzig bestaande cijfers niet';
 $string['modgradeerrorbadpoint'] = 'Ongeldige cijferwaarde. Dit moet een natuurlijk getal zijn tussen 1 en {$a}';
 $string['modgradeerrorbadscale'] = 'Ongeldige schaal geselecteerd. Kies een schaal uit onderstaande selectie.';
-$string['modgrade_help'] = 'Selecteer het type beoordeling dat wordt gebruikt voor deze activiteit. Als "schaal" wordt gekozen, kun je vervolgens de schaal kiezen uit een rolmenu. Als je punt-beoordeling kiest, dan kun je het maximale cijfer invoeren dat bij deze activiteit behaald kan worden.';
 $string['modgrademaxgrade'] = 'Maximum cijfer';
 $string['modgraderescalegrades'] = 'Herschaal bestaande cijfers';
 $string['modgraderescalegrades_help'] = 'Wanneer je de maximumcijfers van een item in het cijferlijst wijzigt, moet je specificeren of dit al dan niet bestaande percentages moet wijzigen.
@@ -564,12 +564,12 @@ $string['nonnumericweight'] = 'Een niet-numerieke waarde ontvangen voor';
 $string['nonunlockableverbose'] = 'Dit cijfer kan niet gedeblokkeerd worden tot {$a->itemname} gedeblokkeerd is.';
 $string['nonweightedpct'] = '% zonder weging';
 $string['nooutcome'] = 'Geen competentie';
-$string['nooutcomes'] = 'Competentie-items moeten gelinkt zijn aan een cursuscompetentie, maar er zijn geen competenties in deze cursus. Wil je er toevoegen?';
+$string['nooutcomes'] = 'Resultaten-items moeten gelinkt zijn aan een cursusresultaat, maar er zijn geen resultaten in deze cursus. Wil je er toevoegen?';
 $string['nopermissiontoresetweights'] = 'Geen rechten om de wegingen opnieuw in te stellen';
 $string['nopublish'] = 'Niet publiceren';
 $string['noreports'] = 'Je bent in geen enkele cursus van deze site aangemeld als leerling of leraar.';
 $string['norolesdefined'] = 'Geen rollen gedefiniëerd in Beheer -> Algemene instellingen -> Beoordelingsrollen';
-$string['noscales'] = 'Competenties moeten gelinkt zijn aan een cursusschaal of een globale schaal, maar er zijn er geen. Wil je er toevoegen?';
+$string['noscales'] = 'Resultaten moeten gelinkt zijn aan een cursusschaal of een globale schaal, maar er zijn er geen. Wil je er toevoegen?';
 $string['noselectedcategories'] = 'Je hebt geen categorieën geselecteerd';
 $string['noselecteditems'] = 'Je hebt geen items geselecteerd';
 $string['notenrolled'] = 'Je bent in geen enkele cursus aangemeld.';
@@ -582,26 +582,26 @@ $string['operations'] = 'Operatie';
 $string['options'] = 'Opties';
 $string['others'] = 'Anderen';
 $string['outcome'] = 'Competentie';
+$string['outcome_help'] = 'De competentie waarvoor dit beoordelingsitem staat.';
 $string['outcomeassigntocourse'] = 'Wijs nog een competentie toe aan deze cursus';
-$string['outcomecategory'] = 'Maak competenties in categorie';
+$string['outcomecategory'] = 'Maak resultaten in categorie';
 $string['outcomecategorynew'] = 'Nieuwe categorie';
 $string['outcomeconfirmdelete'] = 'Ben je zeker dat je competentie "{$a}" wil verwijderen?';
 $string['outcomecreate'] = 'Voeg een nieuwe competentie toe';
 $string['outcomedelete'] = 'Verwijder competentie';
 $string['outcomefullname'] = 'Volledige naam';
-$string['outcome_help'] = 'De competentie waarvoor dit beoordelingsitem staat.';
 $string['outcomeitem'] = 'Competentie-item';
 $string['outcomeitemsedit'] = 'Bewerk competentie-item';
 $string['outcomereport'] = 'Rapport competentie';
-$string['outcomes'] = 'Competenties';
-$string['outcomescourse'] = 'Competenties gebruikt in deze cursus';
+$string['outcomes'] = 'Resultaten';
+$string['outcomescourse'] = 'Resultaten gebruikt in deze cursus';
 $string['outcomescoursecustom'] = 'Eigen gebruikt (niet verwijderen)';
 $string['outcomescoursenotused'] = 'Standaard niet gebruikt';
 $string['outcomescourseused'] = 'Standaard gebruikt (niet verwijderen)';
-$string['outcomescustom'] = 'Eigen competenties';
+$string['outcomescustom'] = 'Eigen resultaten';
 $string['outcomeshortname'] = 'Korte naam';
-$string['outcomesstandard'] = 'Standaardcompetenties';
-$string['outcomesstandardavailable'] = 'Beschikbare standaardcompetenties';
+$string['outcomesstandard'] = 'Standaardresultaten';
+$string['outcomesstandardavailable'] = 'Beschikbare standaardresultaten';
 $string['outcomestandard'] = 'Standaardcompetentie';
 $string['outcomestandard_help'] = '<p>Een standaardcompetentie is voor de hele site beschikbaar, voor alle cursussen.</p>';
 $string['overallaverage'] = 'Algemeen gemiddelde';
@@ -654,22 +654,22 @@ $string['privacy:metadata:grades:aggregationstatus'] = 'De aggregatiestatus';
 $string['privacy:metadata:grades:aggregationweight'] = 'De weging in de aggregatie';
 $string['privacy:metadata:grades:feedback'] = 'De feedback';
 $string['privacy:metadata:grades:finalgrade'] = 'Het cijfer';
-$string['privacy:metadata:gradeshistory'] = 'Een record met de vorige cijfers';
 $string['privacy:metadata:grades:information'] = 'Bijkomende informatie over het cijfer';
 $string['privacy:metadata:grades:timemodified'] = 'Tijdstip waarop het cijfer laatst werd gewijzigd';
 $string['privacy:metadata:grades:userid'] = 'De ID van de eigenaar van het cijfer';
 $string['privacy:metadata:grades:usermodified'] = 'De ID van wie de record het laatst gewijzigd heeft';
+$string['privacy:metadata:gradeshistory'] = 'Een record met de vorige cijfers';
 $string['privacy:metadata:history:loggeduser'] = 'De ID van de gebruiker die aangemeld was wanneer de versie gemaakt werd';
 $string['privacy:metadata:history:timemodified'] = 'Tijdstip waarop de cijferversie gemaakt werd';
 $string['privacy:metadata:itemshistory'] = 'Een record met vorige versies van cijfers';
 $string['privacy:metadata:outcomes'] = 'Een record met competenties';
-$string['privacy:metadata:outcomeshistory'] = 'Een record met vorige versies van competenties';
 $string['privacy:metadata:outcomes:timemodified'] = 'Tijdstip waarop het record gewijzigd werd';
 $string['privacy:metadata:outcomes:usermodified'] = 'De gebruiker die de record het laatst gewijzgd heeft';
+$string['privacy:metadata:outcomeshistory'] = 'Een record met vorige versies van competenties';
 $string['privacy:metadata:scale'] = 'Een record met schalen';
-$string['privacy:metadata:scalehistory'] = 'Een record met vorige versies van schalen';
 $string['privacy:metadata:scale:timemodified'] = 'Tijdstip wanneer de record laatst werd gewijzigd';
 $string['privacy:metadata:scale:userid'] = 'De gebruiker die de record het laatst gewijzigd heeft';
+$string['privacy:metadata:scalehistory'] = 'Een record met vorige versies van schalen';
 $string['privacy:path:relatedtome'] = 'Houdt verband met mij';
 $string['privacy:request:historyactiondelete'] = 'Verwijder';
 $string['privacy:request:historyactioninsert'] = 'Voeg in';
@@ -743,7 +743,7 @@ $string['showanalysisicon'] = 'Toon cijferanalyse icoontje';
 $string['showanalysisicon_desc'] = 'Toon standaard het icoontje voor cijferanalyse. Als de activiteitsmodule dit ondersteund, dan zal het cijferanalyse icoontje linken naar een pagina met meer gedetailleerde informatie over het cijfer en hoe dat verkregen is.';
 $string['showanalysisicon_help'] = 'Als de activiteitsmodule het ondersteunt, dan zal het cijferanalyse icoontje naar een pagina linken die meer informatie geeft over het cijfer en hoe het verkregen is.';
 $string['showaverage'] = 'Toon gemiddelde';
-$string['showaverage_help'] = 'Toon gemiddelde kolom? Leerlingen kunnen de cijfers van andere leerlingen schatten als het gemiddelde uit een klein aantal cijfers berekend wordt. Voor performantieredenen is het gemiddelde benarderd als het afhankelijk is van verborgen items.';
+$string['showaverage_help'] = 'Of een kolom met gemiddelden getoond moet worden. Merk op dat leerlingen de cijfers van andere leerlingen kunnen schatten als het gemiddelde uit een klein aantal cijfers berekend wordt. Om performantie-redenen is het gemiddelde benaderd als het afhankelijk is van verborgen items.';
 $string['showaverages'] = 'Toon kolomgemiddelden';
 $string['showaverages_help'] = 'Toon kolomgemiddeldes op het rapport';
 $string['showcalculations'] = 'Toon berekeningen';
@@ -772,7 +772,7 @@ $string['showlettergrade_help'] = 'Toon de letterbeoordelingskolom?';
 $string['showlocks'] = 'Toon blokkeringen';
 $string['showlocks_help'] = 'Of er een blokkeer/vrijgeven icoontje getoond moet worden naast elke beoordeling.';
 $string['shownohidden'] = 'Niet tonen';
-$string['shownooutcomes'] = 'Verberg competenties';
+$string['shownooutcomes'] = 'Verberg resultaten';
 $string['shownumberofgrades'] = 'Toon het aantal cijfers in gemiddelden';
 $string['shownumberofgrades_help'] = 'Toont het aantal cijfers dat geaggregeerd wordt tussen haakjes naast elk gemiddelde. Voorbeeld 45(34)';
 $string['showonlyactiveenrol'] = 'Toon enkel actieve aanmeldingen';
@@ -782,7 +782,7 @@ $string['showpercentage_help'] = 'Het percentage van elk beoordelingsitem tonen?
 $string['showquickfeedback'] = 'Toon formulier voor snelle feedback';
 $string['showquickfeedback_help'] = 'Snelle feedback voegt een element voor tekstinvoer toe aan elke cel op het rapportagescherm, waardoor je snel de feedback kunt wijzigen voor veel cijfers tegelijk. Je kunt dan op de Update-knop klikken om al deze wijzigingen in één keer door te voeren.';
 $string['showrange'] = 'Toon bereik';
-$string['showrange_help'] = 'Toon de bereik kolom?';
+$string['showrange_help'] = 'Toon een kolom voor het bereik?';
 $string['showranges'] = 'Toon marges';
 $string['showranges_help'] = 'Toon een rij met de mogelijke marges voor elk beoordelingsitem in het rapport.';
 $string['showrank'] = 'Toon ranglijst';
@@ -791,7 +791,7 @@ $string['showuserimage'] = 'Toon gebruikersprofielafbeeldingen';
 $string['showuserimage_help'] = 'Of de afbeelding van het gebruikersprofiel naast de naam moet getoond worden op het rapport.';
 $string['showverbose'] = 'Toon {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['showweight'] = 'Toon wegingen';
-$string['showweight_help'] = 'Toon de cijfer wegingskolom?';
+$string['showweight_help'] = 'Toon een kolom voor de weging van het cijfer?';
 $string['simpleview'] = 'Enkelvoudig overzicht';
 $string['singleview'] = 'Alleen bekijken voor {$a}';
 $string['sitewide'] = 'Voor heel de site';
@@ -861,12 +861,12 @@ $string['verbosescales_help'] = 'Een schaal met woorden gebruikt woorden in plaa
 $string['viewbygroup'] = 'Groep';
 $string['viewgrades'] = 'Bekijk cijfers';
 $string['weight'] = 'Weging';
+$string['weight_help'] = 'Een waarde die gebruikt wordt om de relatieve waarde te bepalen van meerdere beoordelingsitems in een categorie of cursus.';
 $string['weightcourse'] = 'Gebruik gewogen cijfers voor de cursus';
 $string['weightedascending'] = 'Sorteer oplopend gewogen procent';
 $string['weighteddescending'] = 'Sorteer aflopend gewogen procent';
 $string['weightedpct'] = 'gewogen %';
 $string['weightedpctcontribution'] = 'gewogen % bijdrage';
-$string['weight_help'] = 'Een waarde die gebruikt wordt om de relatieve waarde te bepalen van meerdere beoordelingsitems in een categorie of cursus.';
 $string['weightofa'] = 'Weging van {$a}';
 $string['weightorextracredit'] = 'Weging of bonus';
 $string['weightoverride'] = 'wegingsaanpassing';

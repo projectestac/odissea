@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'it', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,8 +30,8 @@ $string['corestring'] = 'Stringa di lingua alternativa';
 $string['corestring_help'] = 'Consente di utilizzare una stringa di lingua diversa da quella fornita dal file di lingua mimetypes.php. Di solito può non è necessario impostarla. Per i tipi personalizzati, utilizzare i campo descrizione.';
 $string['defaulticon'] = 'Icona di default per il tipo MIME';
 $string['defaulticon_help'] = 'Se sono presenti più estensioni con lo stesso tipo MIME, selezionare questa opzione per una delle estensioni affinché l\'icona associata venga utilizzata come icona del tipo MIME';
-$string['deletea'] = 'Elimina {$a}';
 $string['delete_confirmation'] = 'Sei sicuro di rimuovere <strong>.{$a}</strong>?';
+$string['deletea'] = 'Elimina {$a}';
 $string['deletefiletypes'] = 'Elimina un tipo di file';
 $string['description'] = 'Descrizione personalizzata';
 $string['description_help'] = 'Una descrizione breve del tipo di file, ad esempio ‘Kindle ebook’. Se il sito supporta più lingue ed utilizza il filtro multilingua, è possibile inserire nel campo dei tag multilingua per ottenere la descrizione in diverse lingue.';

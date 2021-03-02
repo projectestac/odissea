@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'data', language 'ko', version '3.8'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -221,7 +221,7 @@ $string['includeapproval'] = '승인 상태 포함';
 $string['includetime'] = '추가/변경된 시간 포함';
 $string['includeuserdetails'] = '사용자 세부정보 포함';
 $string['insufficiententries'] = '이 데이터베이스를 보기 위해서는 입력항목이 더 필요함';
-$string['intro'] = '소개';
+$string['intro'] = '설명';
 $string['invalidaccess'] = '이 페이지는 제대로 접속되지 않았습니다.';
 $string['invalidfieldid'] = '필드 ID가 틀렸음';
 $string['invalidfieldname'] = '이 필드에 대한 다른 이름을 선택하시오.';
@@ -306,7 +306,7 @@ $string['recordsnotsaved'] = '게시물이 저장되지 않음. 올린 파일의
 $string['recordssaved'] = '게시물이 저장됨';
 $string['requireapproval'] = '승인이 필요합니다';
 $string['requireapproval_help'] = '활성화되면 입력항목이 모든 사람들에게 보여지기 전에 선생님의 승인이 필요합니다.';
-$string['requiredentries'] = '필요한 게시물';
+$string['requiredentries'] = '완료에 필요한 항목들';
 $string['requiredentries_help'] = '<p align="center"><strong>요구된 항목수</strong></p>
 
 <p>참여자들에게 제출하도록 요구된 입력 항목의 수. 참여자들이 요구된 항목수를 채우지 않고 내용을 보려고 할 때는 기억할 수 있는 메시지를 보여준다.</p>

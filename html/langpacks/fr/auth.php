@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth', language 'fr', version '3.8'.
  *
- * @package   auth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,17 +37,13 @@ $string['auth_changepasswordurl_expl'] = 'Indiquez l\'adresse URL vers laquelle 
 $string['auth_changingemailaddress'] = 'Vous avez demandé la modification de votre adresse de courriel, de {$a->oldemail} à {$a->newemail}. Pour des raisons de sécurité, un message de confirmation vous est envoyé à la nouvelle adresse afin de confirmer qu\'elle vous appartient. Votre adresse de courriel sera modifiée dès que vous aurez cliqué sur l\'URL indiquée dans le message envoyé.';
 $string['auth_common_settings'] = 'Réglages partagés';
 $string['auth_data_mapping'] = 'Appariement des données';
-$string['authenticationoptions'] = 'Options d\'authentification';
 $string['auth_fieldlock'] = 'Verrouillage';
 $string['auth_fieldlock_expl'] = '<p><strong>Verrouiller cette valeur :</strong> si cette option est activée, elle empêchera les utilisateurs et les administrateurs de modifier le champ directement. Utilisez cette option si vous maintenez ces données dans le système d\'authentification externe.</p>';
 $string['auth_fieldlockfield'] = 'Verrouiller la valeur ({$a})';
 $string['auth_fieldlocks'] = 'Verrouiller les champs utilisateur';
 $string['auth_fieldlocks_help'] = '<p>Vous pouvez verrouiller des champs utilisateurs. Ceci est utile sur les sites où les données des utilisateurs sont gérées manuellement par les administrateurs (en modifiant manuellement les enregistrements des utilisateurs) ou en utilisant l\'option « Importer des utilisateurs ». Si vous verrouillez des champs requis par Moodle, assurez-vous que vous fournissez les données en question lors de la création des comptes, sans quoi ceux-ci seront inutilisables.</p><p>Pour éviter ce problème, vous pouvez choisir comme mode de verrouillage « Déverrouillé si vide ».</p>';
 $string['auth_fieldmapping'] = 'Correspondance de données ({$a})';
-$string['authinstructions'] = 'Laisser vide pour les instructions de connexion par défaut. Si vous voulez indiquer des instructions de connexion propres à votre institution, saisissez-les ici.';
 $string['auth_invalidnewemailkey'] = 'Erreur : si vous avez tenté de confirmer la modification de votre adresse de courriel, il se peut que vous ayez fait une erreur lors de la copie de l\'URL qui vous a été envoyée. Veuillez essayer à nouveau.';
-$string['authloginviaemail'] = 'Permettre la connexion au moyen de l\'adresse de courriel';
-$string['authloginviaemail_desc'] = 'Permettre aux utilisateurs de se connecter soit avec le nom d\'utilisateur, soit avec l\'adresse de courriel (si elle est unique).';
 $string['auth_multiplehosts'] = 'Vous pouvez indiquer ici plusieurs hôtes ou adresses IP (par exemple host1.com;host2.com;host3.com ou 192.168.1.100;172.23.92.1)';
 $string['auth_notconfigured'] = 'La méthode d\'authentification {$a} n\'est pas configurée.';
 $string['auth_outofnewemailupdateattempts'] = 'Le nombre de tentatives permises pour modifier votre adresse de courriel est dépassé. Votre demande de modification a été annulée.';
@@ -62,16 +58,20 @@ $string['auth_sync_script'] = 'Synchronisation des comptes utilisateur';
 $string['auth_sync_suspended'] = 'Si ce réglage est activé, l\'attribut de suspension sera utilisé pour modifier l\'état de suspension local du compte utilisateur.';
 $string['auth_sync_suspended_key'] = 'Synchroniser l\'état de suspension local de l\'utilisateur';
 $string['auth_updatelocal'] = 'Mise à jour des données locales';
-$string['auth_updatelocal_expl'] = '<p><strong>Mise à jour des données locales :</strong> lorsque cette option est activée, le champ est mis à jour (depuis la source externe) chaque fois que l\'utilisateur se connecte ou qu\'une synchronisation a lieu. Les champs destinés à être mis à jour ainsi devraient être verrouillés.</p>';
+$string['auth_updatelocal_expl'] = '<p><strong>Mise à jour des données locales :</strong> lorsque cette option est activée, le champ est mis à jour (depuis la source externe) chaque fois que l\'utilisateur se connecte ou qu\'une synchronisation a lieu. Les champs destinés à être mis à jour ainsi doivent être verrouillés.</p>';
 $string['auth_updatelocalfield'] = 'Modifier la valeur locale ({$a})';
 $string['auth_updateremote'] = 'Mise à jour des données externes';
-$string['auth_updateremote_expl'] = '<p><strong>Mise à jour des données externes :</strong> lorsque cette option est activée, la source d\'authentification externe est mise à jour chaque fois que les données de l\'utilisateur le sont. Pour permettre leur modification, les champs devraient être déverrouillés.</p>';
-$string['auth_updateremotefield'] = 'Modifier la valeur externe ({$a})';
+$string['auth_updateremote_expl'] = '<p><strong>Mise à jour des données externes :</strong> lorsque cette option est activée, la source d\'authentification externe est mise à jour chaque fois que les données de l\'utilisateur le sont. Pour permettre leur modification, les champs doivent être déverrouillés.</p>';
 $string['auth_updateremote_ldap'] = '<p><strong>Remarque :</strong> la mise à jour externe des données LDAP nécessite de fixer pour tous les enregistrements les valeurs binddn et bindpw à un utilisateur-lien avec des privilèges de modification. Elle ne conserve pas les attributs à plusieurs valeurs et supprimera les valeurs en trop lors des mises à jour.</p>';
+$string['auth_updateremotefield'] = 'Modifier la valeur externe ({$a})';
 $string['auth_user_create'] = 'Activer la création des utilisateurs';
 $string['auth_user_creation'] = 'Les nouveaux utilisateurs (anonymes) peuvent créer des comptes sur la source d\'authentification externe, avec confirmation par courriel. Ne pas oublier de configurer les éventuelles options dans les différents modules lors de l\'activation de cette possibilité.';
 $string['auth_usernameexists'] = 'Ce nom d\'utilisateur existe déjà. Veuillez en choisir un autre.';
 $string['auth_usernotexist'] = 'Impossible de modifier l\'utilisateur {$a}, qui n\'existe pas';
+$string['authenticationoptions'] = 'Options d\'authentification';
+$string['authinstructions'] = 'Laisser vide pour les instructions de connexion par défaut. Si vous voulez indiquer des instructions de connexion propres à votre institution, saisissez-les ici.';
+$string['authloginviaemail'] = 'Permettre la connexion au moyen de l\'adresse de courriel';
+$string['authloginviaemail_desc'] = 'Permettre aux utilisateurs de se connecter soit avec le nom d\'utilisateur, soit avec l\'adresse de courriel (si elle est unique).';
 $string['auto_add_remote_users'] = 'Ajouter automatiquement les utilisateurs distants';
 $string['cannotmapfield'] = 'Le champ « {$a->fieldname} » ne peut pas être mis en correspondance, car son nom abrégé « {$a->shortname} » est trop long. Réduisez la longueur du nom abrégé du champ de profil à {$a->charlimit} caractères. <a href="{$a->link}">Modifier les champs de profil utilisateur</a>';
 $string['changepassword'] = 'URL de la page de changement du mot de passe';
@@ -105,8 +105,8 @@ $string['eventuserloggedin'] = 'Utilisateur connecté';
 $string['eventuserloggedinas'] = 'Utilisateur connecté sous le nom d\'un autre utilisateur';
 $string['eventuserloginfailed'] = 'Connexion utilisateur échouée';
 $string['forcechangepassword'] = 'Imposer le changement du mot de passe';
-$string['forcechangepasswordfirst_help'] = 'Impose aux utilisateurs de changer leur mot de passe lors de leur prochaine connexion à Moodle.';
 $string['forcechangepassword_help'] = 'Impose aux utilisateurs de changer leur mot de passe lors de leur première connexion à Moodle.';
+$string['forcechangepasswordfirst_help'] = 'Impose aux utilisateurs de changer leur mot de passe lors de leur prochaine connexion à Moodle.';
 $string['forgottenpassword'] = 'Si vous tapez une URL dans ce champ, elle sera utilisée comme page permettant de récupérer le mot de passe pour ce site. Ce réglage est prévu pour les sites où la gestion des mots de passe est entièrement effectuée en dehors de Moodle. Laissez ce champ vide pour utiliser le mécanisme de récupération de mot de passe de Moodle.';
 $string['forgottenpasswordurl'] = 'URL de récupération de mot de passe';
 $string['getrecaptchaapi'] = 'L\'utilisation de reCAPTCHA nécessite l\'obtention d\'une clef d\'API de <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
@@ -146,9 +146,9 @@ $string['privacy:metadata:userpref:loginlockout'] = 'Indique si le compte de l\'
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Indique que le compte d\'un utilisateur ne doit jamais être verrouillé';
 $string['privacy:metadata:userpref:loginlockoutsecret'] = 'Si son compte est bloqué, le secret que doit utiliser l\'utilisateur pour déverrouiller son compte';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'Un CAPTCHA est un programme permettant d\'éviter les abus de programmes automatiques. Suivez les instructions destinées à vérifier que vous êtes une personne. Ce pourrait être une case à cocher, des caractères à saisir, présentés dans une image ou plusieurs images à sélectionner.
+$string['recaptcha_help'] = 'Un CAPTCHA permet d\'éviter les abus de programmes automatiques pour faire du spam. Suivez les instructions pour vérifier que vous êtes un humain : une case à cocher, des caractères à lire sur une image et à saisir ou une série d\'images à sélectionner.
 
-Si vous n\'êtes pas sûr des images, vous pouvez obtenir un nouveau CAPTCHA ou un CAPTCHA audio.';
+Si vous n\'arrivez pas à déchiffrer l\'image, essayez d\'obtenir un nouveau CAPTCHA un CAPTCHA audio.';
 $string['security_question'] = 'Question de sécurité';
 $string['selfregistration'] = 'Auto-enregistrement';
 $string['selfregistration_help'] = 'Si vous choisissez un plugin d\'authentification gérant l\'auto-enregistrement, par exemple par courriel, vous permettez aux utilisateurs potentiels de créer des comptes pour eux-mêmes. Il est par conséquent possible que des spammeurs créent des comptes dans le but d\'écrire du spam dans des messages dans les forums, des articles de blog, etc. Si vous voulez éviter ce risque, vous devez désactiver l\'auto-enregistrement ou au moins le limiter en utilisant le réglage <em> Domaines courriel autorisés</em>.';

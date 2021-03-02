@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'zh_cn', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,11 +42,11 @@ $string['allsiteusers'] = '所有用户';
 $string['analytics:listinsights'] = '列出洞察力';
 $string['analytics:managemodels'] = '管理模型';
 $string['archetype'] = '角色原型';
+$string['archetype_help'] = '角色原型决定一个角色被重置到缺省时的权限。它还决定网站升级时为角色创建哪些新权限。';
 $string['archetypecoursecreator'] = '原型：课程创建者';
 $string['archetypeeditingteacher'] = '原型：有编辑权教师';
 $string['archetypefrontpage'] = '原型：首页的已认证用户';
 $string['archetypeguest'] = '原型：访客';
-$string['archetype_help'] = '角色原型决定一个角色被重置到缺省时的权限。它还决定网站升级时为角色创建哪些新权限。';
 $string['archetypemanager'] = '原型：管理员';
 $string['archetypestudent'] = '原型：学生';
 $string['archetypeteacher'] = '原型：无编辑权教师';
@@ -273,8 +273,8 @@ $string['legacy:editingteacher'] = '旧版角色：教师（有编辑权）';
 $string['legacy:guest'] = '旧版角色：访客';
 $string['legacy:student'] = '旧版角色：学生';
 $string['legacy:teacher'] = '旧版角色：教师（无编辑权）';
-$string['legacytype'] = '旧版角色类型';
 $string['legacy:user'] = '旧版角色：已验证用户';
+$string['legacytype'] = '旧版角色类型';
 $string['listallroles'] = '列出全部角色';
 $string['localroles'] = '局部分配的角色';
 $string['mainadmin'] = '主管理员';
@@ -304,8 +304,8 @@ $string['novisibleroles'] = '无角色';
 $string['overrideanotherrole'] = '修改另一个角色';
 $string['overridecontext'] = '修改场景';
 $string['overridepermissions'] = '修改权限';
-$string['overridepermissionsforrole'] = '修改角色“{$a->role}”在{$a->context}中的权限';
 $string['overridepermissions_help'] = '通过修改权限可以在指定的场景中允许或阻止做某件事情。';
+$string['overridepermissionsforrole'] = '修改角色“{$a->role}”在{$a->context}中的权限';
 $string['overridepermissionsin'] = '覆盖{$a}的权限设置';
 $string['overrideroles'] = '修改角色';
 $string['overriderolesin'] = '在{$a}中覆盖角色';
@@ -365,30 +365,30 @@ $string['restore:uploadfile'] = '上传文件到备份区';
 $string['restore:userinfo'] = '恢复用户数据';
 $string['restore:viewautomatedfilearea'] = '查看自动备份区域';
 $string['risks'] = '风险';
+$string['role:assign'] = '分配角色给用户';
+$string['role:manage'] = '新建和管理角色';
+$string['role:override'] = '修改其他角色的权限';
+$string['role:review'] = '检查其他人的权限';
+$string['role:safeoverride'] = '修改其它用户的安全的权限';
+$string['role:switchroles'] = '切换到其他角色';
 $string['roleallowheader'] = '允许角色：';
 $string['roleallowinfo'] = '选择一个角色，将其加入到允许在场景 “{$a->context}” 使用 “{$a->cap}” 权限的角色列表中：';
-$string['role:assign'] = '分配角色给用户';
 $string['roleassignments'] = '角色分配';
 $string['roledefinitions'] = '角色定义';
 $string['rolefullname'] = '名称';
 $string['roleincontext'] = '{$a->context}中的{$a->role}';
-$string['role:manage'] = '新建和管理角色';
-$string['role:override'] = '修改其他角色的权限';
 $string['roleprohibitheader'] = '禁止角色';
 $string['roleprohibitinfo'] = '选择一个角色，将其加入到禁止在场景 “{$a->context}” 使用 “{$a->cap}” 权限的角色列表中：';
 $string['rolerepreset'] = '使用角色设置';
 $string['roleresetdefaults'] = '缺省';
 $string['roleresetrole'] = '使用角色或原型';
-$string['role:review'] = '检查其他人的权限';
 $string['rolerisks'] = '角色风险';
 $string['roles'] = '角色';
-$string['role:safeoverride'] = '修改其它用户的安全的权限';
+$string['roles_help'] = '角色是系统权限的集合，通过角色可以将特定情境下的一组权限指派给一组特定的用户。';
 $string['roleselect'] = '选择角色';
 $string['rolesforuser'] = '用户{$a}的角色';
-$string['roles_help'] = '角色是系统权限的集合，通过角色可以将特定情境下的一组权限指派给一组特定的用户。';
 $string['roleshortname'] = '简称';
 $string['roleshortname_help'] = '角色简称是一种简易辨识方式，只可以使用ASCII字母数字。不要更改标准角色的简称。';
-$string['role:switchroles'] = '切换到其他角色';
 $string['roletoassign'] = '被分配的角色';
 $string['roletooverride'] = '被替换的角色';
 $string['safeoverridenotice'] = '警告：因您只能修改安全的权限，高危权限已被锁定。';
@@ -399,7 +399,6 @@ $string['selectrole'] = '选择角色';
 $string['showallroles'] = '显示全部角色';
 $string['showthisuserspermissions'] = '显示该用户的权限';
 $string['site:accessallgroups'] = '访问所有组';
-$string['siteadministrators'] = '网站管理员';
 $string['site:approvecourse'] = '核准建课请求';
 $string['site:backup'] = '备份课程';
 $string['site:config'] = '修改网站配置';
@@ -421,6 +420,7 @@ $string['site:viewfullnames'] = '始终可看用户的全名';
 $string['site:viewparticipants'] = '浏览成员';
 $string['site:viewreports'] = '浏览报表';
 $string['site:viewuseridentity'] = '在列表中查看全部用户身份';
+$string['siteadministrators'] = '网站管理员';
 $string['tag:edit'] = '编辑标签';
 $string['tag:editblocks'] = '在标签页中编辑版块';
 $string['tag:flag'] = '标记为不恰当';
@@ -445,12 +445,6 @@ $string['user:manageownfiles'] = '在私人文件区管理文件';
 $string['user:managesyspages'] = '配置公开个人资料页的缺省布局';
 $string['user:readuserblogs'] = '查看用户所有博客';
 $string['user:readuserposts'] = '查看用户所有帖子';
-$string['usersfrom'] = '来自{$a}的用户';
-$string['usersfrommatching'] = '来自{$a->contextname}与“{$a->search}”匹配的用户';
-$string['usersinthisx'] = '此{$a}中的用户';
-$string['usersinthisxmatching'] = '在{$a->contexttype}中匹配“{$a->search}”的用户';
-$string['userswithrole'] = '全站某角色用户';
-$string['userswiththisrole'] = '属于此角色的用户';
 $string['user:update'] = '更新用户资料';
 $string['user:viewalldetails'] = '查看用户详细信息';
 $string['user:viewdetails'] = '浏览用户资料';
@@ -458,6 +452,12 @@ $string['user:viewhiddendetails'] = '浏览用户隐藏的个人信息';
 $string['user:viewlastip'] = '查看用户最近一次IP地址';
 $string['user:viewuseractivitiesreport'] = '查看用户活动报表';
 $string['user:viewusergrades'] = '浏览用户成绩';
+$string['usersfrom'] = '来自{$a}的用户';
+$string['usersfrommatching'] = '来自{$a->contextname}与“{$a->search}”匹配的用户';
+$string['usersinthisx'] = '此{$a}中的用户';
+$string['usersinthisxmatching'] = '在{$a->contexttype}中匹配“{$a->search}”的用户';
+$string['userswithrole'] = '全站某角色用户';
+$string['userswiththisrole'] = '属于此角色的用户';
 $string['useshowadvancedtochange'] = '用“显示高级选项”修改';
 $string['viewingdefinitionofrolex'] = '查看角色“{$a}”的定义';
 $string['viewrole'] = '浏览角色详细信息';

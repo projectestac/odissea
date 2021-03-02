@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'folder', language 'ko', version '3.8'.
  *
- * @package   folder
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     folder
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,9 @@ $string['displayinline'] = '강좌 페이지에 인라인으로';
 $string['displaypage'] = '별도의 페이지에';
 $string['dnduploadmakefolder'] = '파일 압축해제 및 폴더 생성';
 $string['folder:addinstance'] = '새로운 폴더 추가';
-$string['foldercontent'] = '파일 및 하위 폴더';
 $string['folder:managefiles'] = '폴더 모듈에서 파일관리';
 $string['folder:view'] = '폴더 콘텐츠 보기';
+$string['foldercontent'] = '파일 및 하위 폴더';
 $string['modulename'] = '폴더';
 $string['modulenameplural'] = '폴더';
 $string['page-mod-folder-view'] = '폴더 모듈 주 페이지';

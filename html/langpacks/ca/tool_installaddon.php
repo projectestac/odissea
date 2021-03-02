@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_installaddon', language 'ca', version '3.8'.
  *
- * @package   tool_installaddon
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_installaddon
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,9 +33,9 @@ $string['installaddons'] = 'Instal·la complements!';
 $string['installfromrepo'] = 'Instal·la complements des del directori de connectors de Moodle';
 $string['installfromrepo_help'] = 'Sereu redirigits al directori de connectors de Moodle per cercar i instal·lar un complement. Fixeu-vos que s\'enviarà el nom complet del vostre lloc, l\'URL i la versió de Moodle per facilitar-vos-en la instal·lació.';
 $string['installfromzip'] = 'Instal·la un complement des d\'un fitxer ZIP';
+$string['installfromzip_help'] = 'Una alternativa per instal·lar complements directament des del directori de complements de Moodle és carregar un paquet ZIP del complement. L\'estructura ZIP ha de tenir la mateixa estructura que el paquet baixat des del directori de connectors de Moodle.';
 $string['installfromzipfile'] = 'Paquet ZIP';
 $string['installfromzipfile_help'] = 'El paquet ZIP del connector ha de contenir un directori anomenat amb el nom del connector. El fitxer ZIP s\'extraurà en la localització adequada per al tipus de connector. Si el paquet ha estat baixat des del directori de connectors de Moodle tindrà aquesta estructura.';
-$string['installfromzip_help'] = 'Una alternativa per instal·lar complements directament des del directori de complements de Moodle és carregar un paquet ZIP del complement. L\'estructura ZIP ha de tenir la mateixa estructura que el paquet baixat des del directori de connectors de Moodle.';
 $string['installfromzipinvalid'] = 'El paquet ZIP del complement ha de tindre sols un directori anomenat amb el nom del complement. El fitxer proporcionat no és vàlid com a paquet ZIP de complement.';
 $string['installfromziprootdir'] = 'Canvia el nom del directori arrel';
 $string['installfromziprootdir_help'] = 'Alguns paquets ZIP, com els generats per GitHub, poden contenir un nom incorrecte per al directori arrel. Si passa això, podeu introduir-ne el nom correcte aquí.';

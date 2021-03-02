@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_numerical', language 'en', version '3.8'.
  *
- * @package   qtype_numerical
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_numerical
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,10 +64,10 @@ $string['onlynumerical'] = 'Units are not used at all. Only the numerical value 
 $string['pleaseenterananswer'] = 'Please enter an answer.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Please enter your answer without using the thousand separator ({$a}).';
 $string['pluginname'] = 'Numerical';
-$string['pluginnameadding'] = 'Adding a Numerical question';
-$string['pluginnameediting'] = 'Editing a Numerical question';
 $string['pluginname_help'] = 'From the student perspective, a numerical question looks just like a short-answer question. The difference is that numerical answers are allowed to have an accepted error. This allows a fixed range of answers to be evaluated as one answer. For example, if the answer is 10 with an accepted error of 2, then any number between 8 and 12 will be accepted as correct.';
 $string['pluginname_link'] = 'question/type/numerical';
+$string['pluginnameadding'] = 'Adding a Numerical question';
+$string['pluginnameediting'] = 'Editing a Numerical question';
 $string['pluginnamesummary'] = 'Allows a numerical response, possibly with units, that is graded by comparing against various model answers, possibly with tolerances.';
 $string['privacy:metadata'] = 'The Numerical question type plugin does not store any personal data.';
 $string['relative'] = 'Relative';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshop', language 'ko', version '3.8'.
  *
- * @package   workshop
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshop
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,7 +33,7 @@ $string['allocation'] = '할당';
 $string['allocationconfigured'] = '할당 구성';
 $string['allocationdone'] = '할당 완료';
 $string['allocationerror'] = '배당 오류';
-$string['allsubmissions'] = '모든 제출';
+$string['allsubmissions'] = '모든 제출 ({$a})';
 $string['alreadygraded'] = '이미 채점되었습니다.';
 $string['areaconclusion'] = '결론 문장';
 $string['areainstructauthors'] = '제출 요령';
@@ -49,8 +49,8 @@ $string['assessingexample'] = '예제 평가';
 $string['assessingsubmission'] = '제출물 평가';
 $string['assessment'] = '평가';
 $string['assessmentby'] = '평가자: <a href="{$a->url}">{$a->name}</a>';
-$string['assessmentbyfullname'] = '{$a} 에 근거한 평가';
-$string['assessmentbyyourself'] = '자체 평가';
+$string['assessmentbyfullname'] = '{$a} 에 의한 평가';
+$string['assessmentbyyourself'] = '당신의 평가';
 $string['assessmentdeleted'] = '제외된 평가';
 $string['assessmentend'] = '평가 마감일';
 $string['assessmentendbeforestart'] = '평가 마감일을 평가 개시일 이전으로 지정할 수 없습니다.';
@@ -61,6 +61,7 @@ $string['assessmentofsubmission'] = '<a href="{$a->submissionurl}">{$a->submissi
 $string['assessmentreference'] = '평가 준거';
 $string['assessmentreferenceconflict'] = '참조 평가로 제공한 예제 제출을 평가하는 것은 가능하지 않습니다.';
 $string['assessmentreferenceneeded'] = '평가 준거를 만들기 위해서는 이 예제 제출물을 평가해야만 합니다. 제출물을 평가하려면 "계속"버튼을 누르세요.';
+$string['assessments'] = '평가';
 $string['assessmentsettings'] = '평가 설정';
 $string['assessmentstart'] = '평가의 시작';
 $string['assessmentstartdatetime'] = '평가의 시작: {$a->daydatetime} ({$a->distanceday})';
@@ -76,20 +77,20 @@ $string['calculatesubmissiongrades'] = '제출 성적 계산';
 $string['calculatesubmissiongradesdetails'] = '예상치: {$a->expected}<br />계산결과: {$a->calculated}';
 $string['chooseuser'] = '사용자 선택...';
 $string['clearaggregatedgrades'] = '모든 집계 성적 지우기';
-$string['clearaggregatedgradesconfirm'] = '정말, 평가 점수 및 집계된 제출에 대한 점수를 초기화하겠습니까?';
 $string['clearaggregatedgrades_help'] = '평가 점수 및 제출에 대한 점수 집계가 초기화될 것입니다. 채점 평가 단계부터 다시 시작해서 점수들을 재 계산할 수 있습니다. ';
+$string['clearaggregatedgradesconfirm'] = '정말, 평가 점수 및 집계된 제출에 대한 점수를 초기화하겠습니까?';
 $string['clearassessments'] = '평가 초기화';
-$string['clearassessmentsconfirm'] = '정말, 모든 평가 점수를 초기화하겠습니까? 자기 자신에 대한 정보를 얻을 수 없을뿐만 아니라, 검토자들 역시 배당된 제출물을 다시 평가해야 합니다.';
 $string['clearassessments_help'] = '평가 점수 및 집계된 제출애 대한 점수가 초기화될 것입니다. 채워넣은 평가 양식의 정보는 유지되지만, 모든 검토자는 평가양식을 열고 다시 저장해야만, 그동안 얻은 점수를 확보할 수 있습니다. ';
+$string['clearassessmentsconfirm'] = '정말, 모든 평가 점수를 초기화하겠습니까? 자기 자신에 대한 정보를 얻을 수 없을뿐만 아니라, 검토자들 역시 배당된 제출물을 다시 평가해야 합니다.';
 $string['conclusion'] = '결론';
 $string['conclusion_help'] = '결론 텍스트는 활동의 끝에서 참가자에게 표시됩니다.';
 $string['configexamplesmode'] = '예제 평가 기본 모드';
-$string['configgrade'] = '상호 평가에서 기본 제출 최대 성적';
+$string['configgrade'] = '상호 평가에서 기본 최대 제출 성적';
 $string['configgradedecimals'] = '점수를 표시할 때 표시할 기본 소숫점 자리 수';
-$string['configgradinggrade'] = '기본 평가 최대 성적';
+$string['configgradinggrade'] = '기본 최대 평가 성적';
 $string['configmaxbytes'] = '사이트에서 상호평가에 할당된 제출물 파일 최대 용량 (강좌나 지역 설정에 준함)';
 $string['configstrategy'] = '기본 채점 전략';
-$string['createsubmission'] = '제출';
+$string['createsubmission'] = '제출 준비 시작';
 $string['daysago'] = '{$a} 일 전';
 $string['daysleft'] = '{$a} 일 남음';
 $string['daystoday'] = '오늘';
@@ -107,7 +108,7 @@ $string['err_removegrademappings'] = '사용하지 않은 점수 배치는 제�
 $string['evaluategradeswait'] = '평가가 검증되고 점수가 계산될 때까지 기다리세요';
 $string['evaluation'] = '채점 평가';
 $string['evaluationmethod'] = '채점 평가 방법';
-$string['evaluationmethod_help'] = '성적 평가 방법은 평가 성적이 어떻게 계산되느냐를 결정합니다. 현재는 최선의 평가와 비교하는 옵션이 있습니다.';
+$string['evaluationmethod_help'] = '성적 평가 방법은 평가 성적이 어떻게 계산되느냐를 결정합니다. 다른 설정으로 만족할 수 있을때 까지 성적을 다시 계산할 수 있습니다.';
 $string['evaluationsettings'] = '평가능력 채점 설정';
 $string['eventassessableuploaded'] = '제출이 업로드 되었습니다.';
 $string['example'] = '예제 제출';
@@ -140,7 +141,7 @@ $string['formatpeergradeover'] = '<span class="grade">{$a->grade}</span> <span c
 $string['formatpeergradeoverweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span> @ <span class="weight">{$a->weight}</span>';
 $string['formatpeergradeweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span> @ <span class="weight">{$a->weight}</span>';
 $string['givengrades'] = '부여된 성적';
-$string['gradecalculated'] = '제출물 성적';
+$string['gradecalculated'] = '계산된 제출 성적';
 $string['gradedecimals'] = '성적에서 소숫점 자리 수';
 $string['gradegivento'] = '&gt;';
 $string['gradeinfo'] = '성적 : {$a->max} 중 {$a->received} ';
@@ -150,9 +151,9 @@ $string['gradeover'] = '제출 성적 덮어쓰기';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = '상호평가 성적 보고서';
 $string['gradinggrade'] = '평가 성적';
-$string['gradinggradecalculated'] = '계산완료된 자기평가 성적';
 $string['gradinggrade_help'] = '제출물 평가에서 얻을 수 있는 최대 성적 설정';
-$string['gradinggradeof'] = '자기평가 성적 ({$a}) ';
+$string['gradinggradecalculated'] = '계산된 평가 성적';
+$string['gradinggradeof'] = '평가 성적 ({$a})';
 $string['gradinggradeover'] = '평가 성적 덮어쓰기';
 $string['gradingsettings'] = '점수화 설정';
 $string['groupnoallowed'] = '이 워크샵에서 모둠에 접근하는 것이 허용되지 않습니다.';
@@ -160,11 +161,11 @@ $string['iamsure'] = '예, 확실합니다';
 $string['info'] = '정보';
 $string['instructauthors'] = '제출 요령';
 $string['instructreviewers'] = '평가 요령';
-$string['introduction'] = '소개';
+$string['introduction'] = '설명';
 $string['latesubmissions'] = '최근 제출물';
-$string['latesubmissionsallowed'] = '늦게 제출하는 것이 허용됨';
 $string['latesubmissions_desc'] = '마감일 이후 제출 허용';
 $string['latesubmissions_help'] = '활성화되면 저자는 제출 마감일후에 혹은 평가 단계에 자신의 일을 제출할 수도 있습니다. 하지만 늦는 제출은 편집할 수 없습니다.';
+$string['latesubmissionsallowed'] = '늦게 제출하는 것이 허용됨';
 $string['maxbytes'] = '최대 제출 첨부 크기';
 $string['modulename'] = '상호평가';
 $string['modulenameplural'] = '상호평가';
@@ -184,7 +185,7 @@ $string['nullgrade'] = '
 -';
 $string['overallfeedback'] = '전반적인 피드백';
 $string['overallfeedbackfiles'] = '전반적인 피드백에서의 첨부 파일의 최대 수';
-$string['overallfeedbackmaxbytes'] = '파일의 최대 용량';
+$string['overallfeedbackmaxbytes'] = '전반적인 피드백에서의 첨부 파일의 최대 크기';
 $string['overallfeedbackmode'] = '전반적인 피드백';
 $string['overallfeedbackmode_0'] = '비활성화 됨';
 $string['overallfeedbackmode_1'] = '활성화되고 선택적인';
@@ -221,13 +222,13 @@ $string['someuserswosubmission'] = '과제를 제출하지 못한 사람이 적�
 $string['sortasc'] = '오름차순';
 $string['sortdesc'] = '내림차순';
 $string['strategy'] = '채점 전략';
-$string['strategyhaschanged'] = '양식의 수정으로 상호평가의 채점 전략이 변경되었습니다.';
 $string['strategy_help'] = '채점 전략은 사용되는 평가 양식과 제출물을 채점하는 방법을 결정합니다. 4가지 옵션이 있습니다.
 
 * 누적 성적 - 코멘트와 성적이 지정된 관점에 따라 주어짐
 * 코멘트 - 코멘트가 지정된 관점에 따라 주어지만 성적은 주어지지 않음
 * 오류수-코멘트와 예/아니오 평가가 지정된 주장에 따라 주어짐
 * 루브릭 - 지정된 기준에 따라 수준별 평가가 주어짐';
+$string['strategyhaschanged'] = '양식의 수정으로 상호평가의 채점 전략이 변경되었습니다.';
 $string['submission'] = '제출';
 $string['submissionattachment'] = '첨부';
 $string['submissionby'] = '{$a}의 제출';
@@ -265,7 +266,7 @@ $string['taskassessself'] = '자기평가';
 $string['taskconclusion'] = '활동의 결론을 제공하세요.';
 $string['taskinstructauthors'] = '제출 안내 제공';
 $string['taskinstructreviewers'] = '평가 안내 제공';
-$string['taskintro'] = '상호평가 소개 설정';
+$string['taskintro'] = '상호평가 설명 설정';
 $string['tasksubmit'] = '과제 제출';
 $string['toolbox'] = '상호평가 도구상자';
 $string['undersetup'] = '상호평가 활동이 대기 중 입니다. 다음 단계로 넘어갈 때까지 기다려주시기 바랍니다.';
@@ -289,7 +290,6 @@ $string['workshop:allocate'] = '검토를 위한 제출물 배당';
 $string['workshop:editdimensions'] = '평가양식 편집';
 $string['workshop:ignoredeadlines'] = '시간 제한 무시';
 $string['workshop:manageexamples'] = '예제 제출물 관리';
-$string['workshopname'] = '상호평가 명칭';
 $string['workshop:overridegrades'] = '계산된 성적 덮어쓰기';
 $string['workshop:peerassess'] = '동료 평가';
 $string['workshop:publishsubmissions'] = '제출물 공개';
@@ -302,5 +302,6 @@ $string['workshop:viewauthornames'] = '제출자 보기';
 $string['workshop:viewauthorpublished'] = '공개된 제출물들의 저자 보기';
 $string['workshop:viewpublishedsubmissions'] = '공개된 제출물 보기';
 $string['workshop:viewreviewernames'] = '검토자 보기';
+$string['workshopname'] = '상호평가 명칭';
 $string['yourgrades'] = '성적';
 $string['yoursubmission'] = '내 제출물';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'question', language 'ja', version '3.8'.
  *
- * @package   question
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     question
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -268,11 +268,11 @@ $string['markedoutofmax'] = '最大評点 {$a}';
 $string['markoutofmax'] = '{$a->mark} / {$a->max}';
 $string['marks'] = '評点';
 $string['matchgrades'] = '評点の合致';
-$string['matchgradeserror'] = '評点が一覧にない場合、エラーにする';
 $string['matchgrades_help'] = 'インポートされた評点は次の有効な評点一覧に合致する必要があります - 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0 (マイナス値も使用することができます)。そうでない場合、2つのオプションがあります:
 
 * 評点が一覧にない場合、エラーにする - 一覧にない評点が問題に含まれている場合、エラーが表示され、その問題はインポートされません。
 * 評点が一覧にない場合、最も近い評点を使用する - 一覧にない評点が問題に含まれている場合、評点は一覧の中で一番近い値に変更されます。';
+$string['matchgradeserror'] = '評点が一覧にない場合、エラーにする';
 $string['matchgradesnearest'] = '評点が一覧にない場合、最も近い評点を使用する';
 $string['missingcourseorcmid'] = 'print_questionに対して、コースIDまたはコースモジュールIDを提供する必要があります。';
 $string['missingcourseorcmidtolink'] = 'get_question_edit_linkに対して、コースIDまたはコースモジュールIDを提供する必要があります。';
@@ -346,9 +346,13 @@ $string['permissionsaveasnew'] = 'この問題を新しい問題として保存�
 $string['permissionto'] = 'あなたには以下のパーミッションがあります:';
 $string['previewquestion'] = '問題をプレビューする: {$a}';
 $string['privacy:metadata:database:question'] = '特定の問題に関する詳細です。';
-$string['privacy:metadata:database:question_attempts'] = '特定の問題の受験に関する情報です。';
-$string['privacy:metadata:database:question_attempts:flagged'] = '受験内でユーザがこの問題にフラグした時のIDです。';
-$string['privacy:metadata:database:question_attempts:responsesummary'] = '問題解答の概要です。';
+$string['privacy:metadata:database:question:createdby'] = '問題を作成した人です。';
+$string['privacy:metadata:database:question:generalfeedback'] = 'この問題の一般フィードバックです。';
+$string['privacy:metadata:database:question:modifiedby'] = '最後に問題を更新した人です。';
+$string['privacy:metadata:database:question:name'] = '問題名です。';
+$string['privacy:metadata:database:question:questiontext'] = '問題テキストです。';
+$string['privacy:metadata:database:question:timecreated'] = 'この問題の作成日時です。';
+$string['privacy:metadata:database:question:timemodified'] = 'この問題の更新日時です。';
 $string['privacy:metadata:database:question_attempt_step_data'] = '問題受験ステップではステップに関する追加情報を持つことができます。データはstep_dataテーブルに保存されます。';
 $string['privacy:metadata:database:question_attempt_step_data:name'] = 'データアイテムの名称です。';
 $string['privacy:metadata:database:question_attempt_step_data:value'] = 'データアイテムの値です。';
@@ -357,14 +361,10 @@ $string['privacy:metadata:database:question_attempt_steps:fraction'] = 'この�
 $string['privacy:metadata:database:question_attempt_steps:state'] = 'ステップ移行終了時のこの問題の受験ステップの状態です。';
 $string['privacy:metadata:database:question_attempt_steps:timecreated'] = 'このステップ移行が始まった日時です。';
 $string['privacy:metadata:database:question_attempt_steps:userid'] = 'このステップ移行を実行したユーザです。';
+$string['privacy:metadata:database:question_attempts'] = '特定の問題の受験に関する情報です。';
+$string['privacy:metadata:database:question_attempts:flagged'] = '受験内でユーザがこの問題にフラグした時のIDです。';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = '問題解答の概要です。';
 $string['privacy:metadata:database:question_attempts:timemodified'] = '問題受験が更新された日時です。';
-$string['privacy:metadata:database:question:createdby'] = '問題を作成した人です。';
-$string['privacy:metadata:database:question:generalfeedback'] = 'この問題の一般フィードバックです。';
-$string['privacy:metadata:database:question:modifiedby'] = '最後に問題を更新した人です。';
-$string['privacy:metadata:database:question:name'] = '問題名です。';
-$string['privacy:metadata:database:question:questiontext'] = '問題テキストです。';
-$string['privacy:metadata:database:question:timecreated'] = 'この問題の作成日時です。';
-$string['privacy:metadata:database:question:timemodified'] = 'この問題の更新日時です。';
 $string['privacy:metadata:link:qbehaviour'] = '問題サブシステムは問題行動プラグインタイプを使用します。';
 $string['privacy:metadata:link:qformat'] = '問題サブシステムは異なるフォーマットで問題をインポートおよびエクスポートする目的で問題フォーマットプラグインタイプを使用します。';
 $string['privacy:metadata:link:qtype'] = '小テストサブシステムは異なるタイプの問題を含む問題タイププラグインと相互連携します。';

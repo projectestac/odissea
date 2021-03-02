@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilitychecker', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_accessibilitychecker', language 'pt', version '3.8'.
  *
- * @package   atto_accessibilitychecker
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_accessibilitychecker
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['needsmorecontrast'] = 'As cores de primeiro plano e do texto de fundo n
 $string['needsmoreheadings'] = 'Existe uma grande quantidade de texto sem títulos. Os títulos irão permitir aos utilizadores do Leitor de Ecrã navegar facilmente através das páginas, tornando-as mais acessíveis para todos.';
 $string['nowarnings'] = 'Parabéns, não foram encontrados problemas de acessibilidade!';
 $string['pluginname'] = 'Verificador de acessibilidade';
-$string['privacy:metadata'] = 'O módulo atto_accessibilitychecker não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo atto_accessibilitychecker não armazena quaisquer dados pessoais.';
 $string['report'] = 'Relatório de acessibilidade:';
 $string['tablesmissingcaption'] = 'As tabelas devem ter legendas. Embora não seja necessário que cada tabela tenha uma legenda, uma legenda é geralmente muito útil.';
 $string['tablesmissingheaders'] = 'As tabelas devem usar cabeçalhos de linhas e/ou colunas.';

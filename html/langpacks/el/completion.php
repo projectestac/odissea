@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'completion', language 'el', version '3.8'.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -61,7 +61,6 @@ $string['completedunlockedtext'] = 'Όταν αποθηκεύσετε τις α�
 $string['completedwarning'] = 'Οι επιλογές ολοκλήρωσης κλειδώθηκαν';
 $string['completedwarningtext'] = 'Αυτή η δραστηριότητα έχει ήδη επισημανθεί ως ολοκληρωμένη για {$a} συμμετέχοντες. Η αλλαγή των επιλογών ολοκλήρωσης θα διαγράψει την κατάσταση ολοκλήρωσής τους και μπορεί να προκαλέσει σύγχυση. Έτσι, οι επιλογές έχουν κλειδωθεί και δεν θα πρέπει να ξεκλειδωθούν εκτός αν είναι απολύτως απαραίτητο.';
 $string['completion'] = 'Παρακολούθηση ολοκλήρωσης';
-$string['completionactivitydefault'] = 'Χρήση προεπιλογής δραστηριότητας';
 $string['completion-alt-auto-enabled'] = 'Το σύστημα επισημαίνει αυτόματα, το στοιχείο αυτό ως ολοκληρωμένο, υπό συνθήκες: {$a}';
 $string['completion-alt-auto-fail'] = 'Ολοκληρωμένο: {$a} (με βαθμό κάτω της βάσης)';
 $string['completion-alt-auto-n'] = 'Μη ολοκληρωμένο: {$a}';
@@ -74,31 +73,34 @@ $string['completion-alt-manual-n'] = 'Δεν ολοκληρώθηκε: {$a}. Ε�
 $string['completion-alt-manual-n-override'] = 'Δεν ολοκληρώθηκε: {$a->modname} (καθορίστηκε από τον/την {$a->overrideuser}). Επιλέξτε για να την επισημάνετε ως ολοκληρωμένη.';
 $string['completion-alt-manual-y'] = 'Ολοκληρώθηκε: {$a}. Επιλέξτε για επισήμανση μη ολοκλήρωσης.';
 $string['completion-alt-manual-y-override'] = 'Ολοκληρώθηκε: {$a->modname} (καθορίστηκε από τον/την {$a->overrideuser}). Δεν ολοκληρώθηκε: {$a->modname} (καθορίστηκε από τον/την {$a->overrideuser}). Επιλέξτε για να την επισημάνετε ως μη ολοκληρωμένη.';
+$string['completion-fail'] = 'Ολοκληρωμένο (με βαθμό κάτω της βάσης)';
+$string['completion-n'] = 'Δεν ολοκληρώθηκε';
+$string['completion-n-override'] = 'Δεν ολοκληρώθηκε (τέθηκε από τον/την {$a})';
+$string['completion-pass'] = 'Ολοκληρωμένο (με βαθμό άνω της βάσης)';
+$string['completion-y'] = 'Ολοκληρωμένο';
+$string['completion-y-override'] = 'Ολοκληρώθηκε (τέθηκε από {$a})';
 $string['completion_automatic'] = 'Η δραστηριότητα σημειώνεται ολοκληρωμένη όταν ικανοποιηθούν κάποιες συνθήκες';
+$string['completion_help'] = 'Εάν ενεργοποιηθεί, η ολοκλήρωση δραστηριότητας παρακολουθείται, είτε με το χέρι είτε αυτόματα, με βάση συγκεκριμένες συνθήκες. Μπορούν να ρυθμιστούν πολλαπλές συνθήκες αν είναι επιθυμητό. Αν ναι, η δραστηριότητα θα θεωρείται ολοκληρωμένη μόνο όταν καλύπτονται όλες οι συνθήκες. Μια επισήμανση (σημαδάκι ν) δίπλα στο όνομα της δραστηριότητας στη σελίδα του μαθήματος υποδεικνύει πότε έχει ολοκληρωθεί η δραστηριότητα.';
+$string['completion_link'] = 'δραστηριότητα/ολοκλήρωση';
+$string['completion_manual'] = 'Οι μαθητές μπορούν να επισημάνουν χειροκίνητα τη δραστηριότητα ως ολοκληρωμένη';
+$string['completion_none'] = 'Να μην υποδεικνύετε ολοκλήρωση της δραστηριότητας';
+$string['completionactivitydefault'] = 'Χρήση προεπιλογής δραστηριότητας';
 $string['completiondefault'] = 'Προεπιλεγμένη παρακολούθηση ολοκλήρωσης';
 $string['completiondisabled'] = 'Απενεργοποιημένο, δε συμπεριλαμβάνεται στις ρυθμίσεις των δραστηριοτήτων';
 $string['completionduration'] = 'Εγγραφή';
 $string['completionenabled'] = 'Ενεργοποιημένο, έλεγχος μέσω των ρυθμίσεων ολοκλήρωσης και δραστηριότητας';
 $string['completionexpected'] = 'Αναμένεται ολοκλήρωση στις';
+$string['completionexpected_help'] = 'Αυτή η ρύθμιση καθορίζει την ημερομηνία κατά την οποία αναμένεται να ολοκληρωθεί η δραστηριότητα.';
 $string['completionexpecteddesc'] = 'Η ολοκλήρωση αναμένεται στις {$a}';
 $string['completionexpectedfor'] = '(Το στιγμιότυπο) {$a->instancename} πρέπει να ολοκληρωθεί';
-$string['completionexpected_help'] = 'Αυτή η ρύθμιση καθορίζει την ημερομηνία κατά την οποία αναμένεται να ολοκληρωθεί η δραστηριότητα.';
-$string['completion-fail'] = 'Ολοκληρωμένο (με βαθμό κάτω της βάσης)';
-$string['completion_help'] = 'Εάν ενεργοποιηθεί, η ολοκλήρωση δραστηριότητας παρακολουθείται, είτε με το χέρι είτε αυτόματα, με βάση συγκεκριμένες συνθήκες. Μπορούν να ρυθμιστούν πολλαπλές συνθήκες αν είναι επιθυμητό. Αν ναι, η δραστηριότητα θα θεωρείται ολοκληρωμένη μόνο όταν καλύπτονται όλες οι συνθήκες. Μια επισήμανση (σημαδάκι &#10004;) δίπλα στο όνομα της δραστηριότητας στη σελίδα του μαθήματος δείχνει πότε έχει ολοκληρωθεί η δραστηριότητα.';
-$string['completionicons'] = 'Πλαίσια ελέγχου ολοκλήρωσης';
+$string['completionicons'] = 'πλαίσια ελέγχου ολοκλήρωσης';
 $string['completionicons_help'] = 'Ένα σημαδάκι ν (&#10004;) στο τετραγωνίδιο δίπλα σε ένα όνομα δραστηριότητας μπορεί να χρησιμοποιηθεί για να δείχνει πότε η δραστηριότητα είναι ολοκληρωμένη. Εάν εμφανιστεί ένα τετραγωνίδιο με διάστικτα περιγράμματα, θα εμφανιστεί αυτόματα ένα σημαδάκι &#10004; στο τετραγωνίδιο όταν ολοκληρώσετε τη δραστηριότητα σύμφωνα με τις προϋποθέσεις που ορίζει ο διδάσκων. Εάν εμφανιστεί ένα τετραγωνίδιο με ένα συμπαγές περίγραμμα, μπορείτε να κάνετε κλικ σε αυτό για να επιλέξετε το τετραγωνίδιο όταν εσείς νομίζετε ότι έχετε ολοκληρώσει τη δραστηριότητα. (Κάνοντας κλικ σε αυτό ξανά, αφαιρείται πάλι το &#10004;, αν αλλάξετε γνώμη.)';
-$string['completion_link'] = 'δραστηριότητα/ολοκλήρωση';
-$string['completion_manual'] = 'Οι μαθητές μπορούν να επισημάνουν χειροκίνητα τη δραστηριότητα ως ολοκληρωμένη';
 $string['completionmenuitem'] = 'Ολοκλήρωση';
-$string['completion-n'] = 'Δεν ολοκληρώθηκε';
-$string['completion_none'] = 'Να μην φαίνεται η ολοκλήρωση της δραστηριότητας';
 $string['completionnotenabled'] = 'Η ολοκλήρωση δεν είναι ενεργοποιημένη';
 $string['completionnotenabledforcourse'] = 'Η ολοκλήρωση δεν είναι ενεργοποιημένη για αυτό το μάθημα';
 $string['completionnotenabledforsite'] = 'Η ολοκλήρωση δεν είναι ενεργοποιημένη για αυτό τον ιστότοπο';
-$string['completion-n-override'] = 'Δεν ολοκληρώθηκε (τέθηκε από τον/την {$a})';
 $string['completionondate'] = 'Ημερομηνία';
 $string['completionondatevalue'] = 'Ημερομηνία κατά την οποία το μάθημα θα επισημανθεί ως ολοκληρωμένο';
-$string['completion-pass'] = 'Ολοκληρωμένο (με βαθμό άνω της βάσης)';
 $string['completionsettingslocked'] = 'Οι ρυθμίσεις ολοκλήρωσης είναι κλειδωμένες';
 $string['completionupdated'] = 'Ενημερώθηκε η ολοκλήρωση της δραστηριότητας <b>{$a}</b>';
 $string['completionusegrade'] = 'Απαιτείται βαθμός';
@@ -106,8 +108,6 @@ $string['completionusegrade_desc'] = 'Ο μαθητής πρέπει να λάβ
 $string['completionusegrade_help'] = 'Αν ενεργοποιηθεί, η δραστηριότητα θεωρείται ολοκληρωμένη όταν ένας μαθητής λαμβάνει μια βαθμολογία. Τα εικονίδια επιτυχίας και αποτυχίας μπορούν να εμφανίζονται εάν έχει οριστεί βαθμός επιτυχίας για τη δραστηριότητα.';
 $string['completionview'] = 'Απαιτείται προβολή';
 $string['completionview_desc'] = 'Ο μαθητής πρέπει να δει τη δραστηριότητα για να την ολοκληρώσει';
-$string['completion-y'] = 'Ολοκληρωμένο';
-$string['completion-y-override'] = 'Ολοκληρώθηκε (τέθηκε από {$a})';
 $string['configcompletiondefault'] = 'Η προεπιλεγμένη ρύθμιση για την παρακολούθηση ολοκλήρωσης κατά τη δημιουργία νέων δραστηριοτήτων.';
 $string['configenablecompletion'] = 'Εάν ενεργοποιηθεί, σας επιτρέπει να ορίσετε συνθήκες ολοκλήρωσης μαθημάτων και δραστηριοτήτων. Ο καθορισμός συνθηκών ολοκλήρωσης δραστηριοτήτων συνιστάται, ώστε να εμφανίζονται σημαντικά δεδομένα για τους χρήστες στην επισκόπηση μαθημάτων τους στο Ταμπλό.';
 $string['confirmselfcompletion'] = 'Επιβεβαίωση ολοκλήρωσης από τον ίδιο';
@@ -160,8 +160,8 @@ $string['inprogress'] = 'Σε εξέλιξη';
 $string['manual'] = 'Χειροκίνητα';
 $string['manualcompletionby'] = 'Χειροκίνητη ολοκλήρωση από άλλους';
 $string['manualcompletionbynote'] = 'Σημείωση: Πρέπει να επιτρέπεται η δυνατότητα moodle/course:markcomplete για να εμφανιστεί ένας ρόλος στη λίστα.';
-$string['manualselfcompletion'] = 'Χειροκίνητη αυτο-ολοκλήρωση';
-$string['manualselfcompletionnote'] = 'Σημείωση: Το μπλοκ αυτο-ολοκλήρωσης θα πρέπει να προστεθεί στο μάθημα αν είναι ενεργοποιημένη η χειροκίνητη αυτο-ολοκλήρωση.';
+$string['manualselfcompletion'] = 'Χειροκίνητη αυτo-ολοκλήρωση';
+$string['manualselfcompletionnote'] = 'Σημείωση: Το μπλοκ αυτo-ολοκλήρωσης θα πρέπει να προστεθεί στο μάθημα αν είναι ενεργοποιημένη η χειροκίνητη αυτο-ολοκλήρωση.';
 $string['markcomplete'] = 'Επισήμανση ολοκλήρωσης';
 $string['markedcompleteby'] = 'Επισήμανση ολοκλήρωσης από {$a}';
 $string['markingyourselfcomplete'] = 'Επισήμανση αυτο-ολοκλήρωσης';
@@ -212,7 +212,7 @@ $string['saved'] = 'Αποθηκεύτηκαν';
 $string['seedetails'] = 'Δείτε λεπτομέρειες';
 $string['select'] = 'Επιλογή';
 $string['self'] = 'Ο ίδιος';
-$string['selfcompletion'] = 'Αυτο-ολοκλήρωση';
+$string['selfcompletion'] = 'Αυτo-ολοκλήρωση';
 $string['showinguser'] = 'Εμφάνιση χρήστη';
 $string['unenrolingfromcourse'] = 'Ακύρωση εγγραφής σε μάθημα';
 $string['unenrolment'] = 'Ακύρωση εγγραφής';
@@ -221,7 +221,7 @@ $string['unlockcompletion'] = 'Ξεκλείδωμα επιλογών ολοκλ�
 $string['unlockcompletiondelete'] = 'Ξεκλείδωμα επιλογών ολοκλήρωσης και διαγραφή δεδομένων ολοκλήρωσης χρήστη';
 $string['updateactivities'] = 'Ενημέρωση της κατάστασης ολοκλήρωσης των δραστηριοτήτων που ελέγχθηκαν';
 $string['usealternateselector'] = 'Χρήση εναλλακτικού επιλογέα μαθήματος';
-$string['usernotenroled'] = 'Ο χρήστης δεν είναι εγγεγραμμένος σε αυτό το μάθημα';
+$string['usernotenroled'] = 'Ο χρήστης δεν είνει εγγεγραμμένος σε αυτό το μάθημα';
 $string['viewcoursereport'] = 'Εμφάνιση αναφοράς μαθήματος';
 $string['viewingactivity'] = 'Εμφάνιση {$a}';
 $string['withconditions'] = 'Υπό συνθήκες';

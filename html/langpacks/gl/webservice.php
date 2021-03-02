@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'webservice', language 'gl', version '3.8'.
  *
- * @package   webservice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     webservice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,17 +37,17 @@ $string['addfunctionsdescription'] = 'Seleccione as funcións requiridas para o 
 $string['addrequiredcapability'] = 'Asignar/Desasignar as funcionalidades requiridas';
 $string['addservice'] = 'Engadir un novo servizo: {$a->name} (ID: {$a->id})';
 $string['addservicefunction'] = 'Engadir funcións ao servizo «{$a}»';
-$string['allusers'] = 'Tódolos usuarios';
+$string['allusers'] = 'Todos os usuarios';
 $string['apiexplorer'] = 'Explorador API';
 $string['apiexplorernotavalaible'] = 'O explorador API aínda non está dispoñíbel.';
 $string['arguments'] = 'Argumentos';
 $string['authmethod'] = 'Método de autenticación';
-$string['callablefromajax'] = 'Chamábel desde AJAX';
+$string['callablefromajax'] = 'Chamábel dende AJAX';
 $string['cannotcreatetoken'] = 'Non ten permisos para crear a credencial de servizo web para o servizo {$a}.';
 $string['cannotgetcoursecontents'] = 'Non e posíbel obter os contidos do curso';
 $string['checkusercapability'] = 'Comprobar a funcionalidade do usuario';
 $string['checkusercapabilitydescription'] = 'O usuario debe ter os permisos axeitados conforme ao protocolo empregado, por exemplo webservice/rest:use, webservice/soap:use. Para lograr isto, defina un rol de servizos web cos permisos do protocolo activados e asígnello ao usuario dos servizos web como un rol do sistema.';
-$string['configwebserviceplugins'] = 'Por razóns de seguridade, só se activarán os protocolos que vaian a ser utilizados.';
+$string['configwebserviceplugins'] = 'Por razóns de seguridade, só se activarán os protocolos que vaian ser empregados.';
 $string['context'] = 'Contexto';
 $string['createservicedescription'] = 'Un servizo é un conxunto de funcións de «servizos web». Permitiralle ao usuario acceder a un novo servizo. Na páxina <strong>Engadir servizo</strong> marque as opcións «Activado» e «Usuarios autorizados». Seleccione «No se require ningunha funcionalidade».';
 $string['createserviceforusersdescription'] = 'Un servizo é un conxunto de funcións de «servizos web». Permitiralle aos usuarios acceder a un novo servizo. Na páxina <strong>Engadir servizo</strong> marque as opcións «Activado» e desmarque «Usuarios autorizados». Seleccione «No se require ningunha funcionalidade».';
@@ -55,7 +55,7 @@ $string['createtoken'] = 'Crear unha credencial';
 $string['createtokenforuser'] = 'Crear unha credencial para un usuario';
 $string['createtokenforuserdescription'] = 'Crear unha credencial para o usuario dos servizos web.';
 $string['createuser'] = 'Crear un usuario específico';
-$string['createuserdescription'] = 'Requírese un usuario de servizos web  para representar o sistema que controla Moodle.';
+$string['createuserdescription'] = 'Requírese un usuario de servizos web para representar o sistema que controla Moodle.';
 $string['criteriaerror'] = 'Faltan os permisos para buscar sobre un criterio.';
 $string['default'] = 'Predeterminado para «{$a}»';
 $string['deleteaservice'] = 'Eliminar o servizo';
@@ -74,7 +74,7 @@ $string['enabled'] = 'Activado';
 $string['enabledocumentation'] = 'Activar a documentación do desenvolvedor';
 $string['enabledocumentationdescription'] = 'Está dispoñíbel, para os protocolos activados, unha documentación detallada sobre os servizos web.';
 $string['enableprotocols'] = 'Activar os protocolos';
-$string['enableprotocolsdescription'] = 'Ten que estar activado, cando menos, un protocolo. Por razóns de seguridade, os protocolos que se van a utilizar deben estar activados.';
+$string['enableprotocolsdescription'] = 'Ten que estar activado, cando menos, un protocolo. Por razóns de seguridade, os protocolos que se van empregar deben estar activados.';
 $string['enablews'] = 'Activar os servizos web';
 $string['enablewsdescription'] = 'Os servizos web deben estar activados nas «Características avanzadas».';
 $string['entertoken'] = 'Escriba unha chave/credencial de seguridade:';
@@ -102,22 +102,22 @@ $string['externalservices'] = 'Servizos externos';
 $string['externalserviceusers'] = 'Usuarios do servizo externo';
 $string['failedtolog'] = 'Produciuse un erro ao iniciar sesión';
 $string['filenameexist'] = 'Xa existe ese nome de ficheiro: {$a}';
-$string['forbiddenwsuser'] = 'Non é posíbel crear unha credencial para un usuario sen confirmar, borrado, suspendido ou convidado.';
+$string['forbiddenwsuser'] = 'Non é posíbel crear unha credencial para un usuario sen confirmar, eliminado, suspendido ou convidado.';
 $string['function'] = 'Función';
 $string['functions'] = 'Funcións';
 $string['generalstructure'] = 'Estrutura xeral';
 $string['information'] = 'Información';
 $string['installexistingserviceshortnameerror'] = 'Xa existe un servizo web con nome curto «{$a}». Non é posíbel instalar/actualizar un servizo web diferente con este nome curto.';
-$string['installserviceshortnameerror'] = 'Erro de programación: o nome curto de servizo «{$a}» unicamente pode conter números, letras e os caracteres _-.';
+$string['installserviceshortnameerror'] = 'Erro de programación: o nome curto de servizo «{$a}» unicamente pode conter caracteres alfanuméricos (letras e números), guión baixo (_), guión (-) ou punto (.)';
 $string['invalidextparam'] = 'Parámetro API externa incorrecto: {$a}';
 $string['invalidextresponse'] = 'Resposta API externa incorrecta: {$a}';
 $string['invalidiptoken'] = 'Credencial incorrecta, o seu IP non está admitido';
 $string['invalidtimedtoken'] = 'Credencial incorrecta, a credencial caducou';
 $string['invalidtoken'] = 'Credencial incorrecta, non se atopou a credencial';
 $string['iprestriction'] = 'Restrición IP';
-$string['iprestriction_help'] = 'O usuario poderá facer uso dos servizos web se se conecta desde os enderezos IP listados a seguir (separados por comas).';
+$string['iprestriction_help'] = 'O usuario poderá facer uso dos servizos web se se conecta dende os enderezos IP listados a seguir (separados por comas).';
 $string['key'] = 'Chave';
-$string['keyshelp'] = 'As chaves empréganse para acceder a súa conta no Moodle desde aplicacións externas.';
+$string['keyshelp'] = 'As chaves empréganse para acceder a súa conta no Moodle dende aplicacións externas.';
 $string['loginrequired'] = 'Restrinxido a usuarios autenticados';
 $string['manageprotocols'] = 'Xestionar os protocolos';
 $string['managetokens'] = 'Xestionar as credenciais';
@@ -134,7 +134,7 @@ $string['norequiredcapability'] = 'Non se requiren funcionalidades';
 $string['notoken'] = 'A lista de credenciais está baleira.';
 $string['onesystemcontrolling'] = 'Permitir un sistema externo para controlar o Moodle';
 $string['onesystemcontrollingdescription'] = 'Os pasos seguintes axudaranlle a crear un servizo web para que un sistema externo interactue con Moodle. Inclúe a configuración do método de identificación por credencial (chave de seguridade).';
-$string['onlyseecreatedtokens'] = 'É posible eliminar calquera credencial, aínda que só pode ver as credenciais que creou.';
+$string['onlyseecreatedtokens'] = 'É posíbel eliminar calquera credencial, aínda que só se poden ver as credenciais que creou.';
 $string['operation'] = 'Operación';
 $string['optional'] = 'Opcional';
 $string['passwordisexpired'] = 'O contrasinal caducou.';
@@ -153,7 +153,7 @@ $string['privacy:metadata:tokens'] = 'Un rexistro de credenciais para interactua
 $string['privacy:metadata:tokens:creatorid'] = 'O ID do usuario que creou a credencial';
 $string['privacy:metadata:tokens:iprestriction'] = 'IP restrinxido para usar esta credencial';
 $string['privacy:metadata:tokens:lastaccess'] = 'A data en que se usou a credencial por última vez';
-$string['privacy:metadata:tokens:privatetoken'] = 'Unha credencial máis privada usada ocasionalmente para validar certas operacións, como o SSO (Single Sign-On =Ingreso único )';
+$string['privacy:metadata:tokens:privatetoken'] = 'Unha credencial máis privada usada ocasionalmente para validar certas operacións, como o SSO (Single Sign-On =Ingreso único)';
 $string['privacy:metadata:tokens:timecreated'] = 'A data na que se creou a credencial';
 $string['privacy:metadata:tokens:token'] = 'A credencial do usuario';
 $string['privacy:metadata:tokens:tokentype'] = 'O tipo de credencial';
@@ -176,7 +176,7 @@ $string['restexception'] = 'REST';
 $string['restoredaccountresetpassword'] = 'A conta restaurada necesita reiniciar o contrasinal antes de obter una credencial.';
 $string['restparam'] = 'REST (parámetros POST)';
 $string['restrictedusers'] = 'Só usuarios autorizados';
-$string['restrictedusers_help'] = 'Esta configuración determina se todos os usuarios con permiso para crear una credencial de servizos web poden xerar esa credencial mediante as súas páxinas de chaves de seguridade o se só poderán facelo os usuarios autorizados.';
+$string['restrictedusers_help'] = 'Este axuste determina se todos os usuarios con permiso para crear una credencial de servizos web poden xerar esa credencial mediante as súas páxinas de chaves de seguridade o se só poderán facelo os usuarios autorizados.';
 $string['securitykey'] = 'Chave de seguridade (credencial)';
 $string['securitykeys'] = 'Chaves de seguridade';
 $string['selectauthorisedusers'] = 'Seleccione os usuarios autorizados';

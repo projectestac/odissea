@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol', language 'ca', version '3.8'.
  *
- * @package   enrol
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,11 +37,11 @@ $string['configenrolplugins'] = 'Seleccioneu tots els mòduls requerits i organi
 $string['custominstancename'] = 'Nom de la instància personalitzat';
 $string['defaultenrol'] = 'Afegeix instància als nous cursos';
 $string['defaultenrol_desc'] = 'És possible afegir aquest mòdul a tots els nous cursos per defecte.';
-$string['deleteinstanceconfirm'] = 'Esteu a punt de suprimir el mètode d\'inscripció "{$a->name}". Les inscripcions de tots els {$a->users} usuaris inscrits mitjançant aquest mètode seran cancel·lades i se suprimiran totes les seves dades relatives a aquests cursos, com ara qualificacions, pertinença a grups o subscripcions a fòrums.
+$string['deleteinstanceconfirm'] = 'Ara suprimireu el mètode d\'inscripció «{$a->name}». Les inscripcions de tots els {$a->users} usuaris inscrits mitjançant aquest mètode seran cancel·lades i se suprimiran totes les seves dades relatives a aquests cursos, com ara qualificacions, pertinença a grups o subscripcions a fòrums.
 
 Esteu segur que voleu continuar?';
 $string['deleteinstanceconfirmself'] = 'Esteu segur que voleu suprimir la instància "{$a->name}" que us dona accés a aquest curs? És possible que no pugueu tornar a entrar al curs si continueu.';
-$string['deleteinstancenousersconfirm'] = 'Esteu a punt de suprimir el mètode d\'inscripció "{$a->name}".
+$string['deleteinstancenousersconfirm'] = 'Ara suprimireu el mètode d\'inscripció «{$a->name}».
 
 Esteu segur que voleu continuar?';
 $string['disableinstanceconfirmself'] = 'Esteu segur que voleu inhabilitar la instància «{$a->name}» que us dóna accés a aquest curs? És possible que no pugueu tornar a accedir al curs si continueu.';
@@ -83,9 +83,9 @@ $string['eventuserenrolmentcreated'] = 'Usuari inscrit al curs';
 $string['eventuserenrolmentdeleted'] = 'Cancel·lada la inscripció de l\'usuari al curs';
 $string['eventuserenrolmentupdated'] = 'Actualizada la cancel·lació d\'inscripció de l\'usuari';
 $string['expirynotify'] = 'Notifica abans que venci la inscripció';
+$string['expirynotify_help'] = 'Aquest paràmetre determina l\'enviament de missatges per a notificar el venciment de la inscripció.';
 $string['expirynotifyall'] = 'A l\'usuari inscrit i a qui fa les inscripcions';
 $string['expirynotifyenroller'] = 'Només a l\'usuari que fa les inscripcions';
-$string['expirynotify_help'] = 'Aquest paràmetre determina l\'enviament de missatges per a notificar el venciment de la inscripció.';
 $string['expirynotifyhour'] = 'Hora per enviar notificacions de venciment d\'inscripció';
 $string['expirythreshold'] = 'Llindar de notificació';
 $string['expirythreshold_help'] = 'Quant de temps abans del venciment cal notificar-ho als usuaris?';

@@ -1,8 +1,9 @@
 
 // Global variables
-var colorset;
-var maincolor, fontcolor, linkscolor;
-var nodescolor, nodeslogocolor;
+let colorset;
+let maincolor, fontcolor, linkscolor;
+let nodescolor, nodeslogocolor;
+let PEDC = {};
 
 function init_nodes_colors(color, logocolor) {
     nodescolor = color;
@@ -12,7 +13,12 @@ function init_nodes_colors(color, logocolor) {
 function changeColors() {
     colorProfile = colorset.value;
 
-    if(colorProfile == 'grana') {
+    if(colorProfile == 'PEDC') {
+        maincolor.value = PEDC.MAINCOLOR || '#FF494E';
+        fontcolor.value = PEDC.FONTCOLOR || '#007377';
+        linkscolor.value = PEDC.LINKSCOLOR || '#910048';
+    }
+    else if(colorProfile == 'grana') {
         maincolor.value = '#AC2013';
         fontcolor.value = '#303030';
         linkscolor.value = '#AC2013';
@@ -36,13 +42,13 @@ function changeColors() {
         fontcolor.value = nodescolor;
         linkscolor.value = nodescolor;
         logocolor.value = nodeslogocolor;
-        var logocolorpick = logocolor.parentNode.getElementsByClassName("currentcolour")[0];
+        const logocolorpick = logocolor.parentNode.getElementsByClassName("currentcolour")[0];
         logocolorpick.style.backgroundColor = logocolor.value;
     }
 
-    var maincolorpick = maincolor.parentNode.getElementsByClassName("currentcolour")[0];
-    var fontcolorpick = fontcolor.parentNode.getElementsByClassName("currentcolour")[0];
-    var linkscolorpick = linkscolor.parentNode.getElementsByClassName("currentcolour")[0];
+    const maincolorpick = maincolor.parentNode.getElementsByClassName("currentcolour")[0];
+    const fontcolorpick = fontcolor.parentNode.getElementsByClassName("currentcolour")[0];
+    const linkscolorpick = linkscolor.parentNode.getElementsByClassName("currentcolour")[0];
 
     maincolorpick.style.backgroundColor = maincolor.value;
     fontcolorpick.style.backgroundColor = fontcolor.value;
@@ -58,7 +64,9 @@ function changeToPersonalized() {
 }
 
 
-function xtec2020_theme_onload() {
+function xtec2020_theme_onload( defaultColors = {}) {
+
+    PEDC = defaultColors;
 
     colorset = document.getElementById('id_s_theme_xtec2020_colorset');
 

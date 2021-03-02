@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'ca', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,9 +58,9 @@ $string['expirymessageenrollersubject'] = 'Notificació de venciment d\'inscripc
 $string['manual:config'] = 'Configura les instàncies d\'inscripció manual';
 $string['manual:enrol'] = 'Inscriviu usuaris';
 $string['manual:manage'] = 'Gestioneu la inscripció de l\'usuari';
-$string['manualpluginnotinstalled'] = 'El connector «Manual» no ha estat instal·lat';
 $string['manual:unenrol'] = 'Cancel·la la inscripció d\'usuaris del curs';
 $string['manual:unenrolself'] = 'Cancel·la la meva inscripció en aquest curs';
+$string['manualpluginnotinstalled'] = 'El connector «Manual» no ha estat instal·lat';
 $string['messageprovider:expiry_notification'] = 'Notificacions de venciment d\'inscripció manual';
 $string['now'] = 'Ara';
 $string['pluginname'] = 'Inscripcions manuals';
@@ -69,9 +69,9 @@ $string['selectcohorts'] = 'Seleccioneu cohorts';
 $string['selectusers'] = 'Seleccioneu usuaris';
 $string['status'] = 'Habiliteu les inscripcions manuals';
 $string['status_desc'] = 'Permet l\'accés a cursos d\'usuaris inscrits internament. Això s\'hauria de permetre en molts casos.';
+$string['status_help'] = 'Aquest paràmetre determina si un usuari amb els permisos adequats, com ara un professor, pot inscriure usuaris manualment, mitjançant l\'enllaç als paràmetres de configuració del curs.';
 $string['statusdisabled'] = 'Inhabilitat';
 $string['statusenabled'] = 'Habilitat';
-$string['status_help'] = 'Aquest paràmetre determina si un usuari amb els permisos adequats, com ara un professor, pot inscriure usuaris manualment, mitjançant l\'enllaç als paràmetres de configuració del curs.';
 $string['unenrol'] = 'Cancel·la la inscripció de l\'usuari';
 $string['unenrolselectedusers'] = 'Cancel·la la inscripció dels usuaris seleccionats';
 $string['unenrolselfconfirm'] = 'De veritat voleu cancel·lar la vostra inscripció al curs "{$a}"?';

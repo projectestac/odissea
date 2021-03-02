@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'eu', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,11 +43,11 @@ $string['analytics:listinsights'] = 'Pertzepzioen zerrenda';
 $string['analytics:listowninsights'] = 'Zerrendatu pertzepzio propioak';
 $string['analytics:managemodels'] = 'Kudeatu modeloak';
 $string['archetype'] = 'Rol arketipoa';
+$string['archetype_help'] = 'Rol arketipoak rol bati modu lehenetsian ematen zaizkion baimenak zehazten ditu, baita gunea eguneratzen denean ematen diren baimen berriak ere.';
 $string['archetypecoursecreator'] = 'ARKETIPOA: Ikastaro-sortzailea';
 $string['archetypeeditingteacher'] = 'ARKETIPOA: Irakaslea (edizio-baimenduna)';
 $string['archetypefrontpage'] = 'ARKETIPOA: Autentifikatutako erabiltzailea hasiera-orrian';
 $string['archetypeguest'] = 'ARKETIPOA: Bisitaria';
-$string['archetype_help'] = 'Rol arketipoak rol bati modu lehenetsian ematen zaizkion baimenak zehazten ditu, baita gunea eguneratzen denean ematen diren baimen berriak ere.';
 $string['archetypemanager'] = 'ARKETIPOA: Kudeatzailea';
 $string['archetypestudent'] = 'ARKETIPOA: Ikaslea';
 $string['archetypeteacher'] = 'ARKETIPOA: Irakaslea (edizio-baimenik gabea)';
@@ -55,15 +55,15 @@ $string['archetypeuser'] = 'ARKETIPOA: Autentifikatutako erabiltzailea';
 $string['assignanotherrole'] = 'Esleitu beste rol bat';
 $string['assignedroles'] = 'Esleitutako rolak';
 $string['assignerror'] = 'Errorea {$a->user} erabiltzaileari {$a->role} rola ezartzean.';
-$string['assignglobalroles'] = 'Esleitu rol globalak';
+$string['assignglobalroles'] = 'Esleitu sistemako rolak';
 $string['assignmentcontext'] = 'Esleipenaren testuingurua';
 $string['assignmentoptions'] = 'Esleipenaren aukerak';
 $string['assignrole'] = 'Esleitu rola';
 $string['assignrolenameincontext'] = 'Esleitu {$a->role} rola {$a->context} testuinguruan';
 $string['assignroles'] = 'Esleitu rolak';
 $string['assignroles_help'] = 'Erabiltzaile bati testuinguru batean rol bat esleituta rol horren baimenak ematen dizkiozu testuinguru horretarako eta hortik beherakoetarako. Adibidez, erabiltzaile bati ikastaroan ikaslea rola esleitzen badiozu, ikaslea rola izango du ikastaroko jarduera eta bloke guztietarako.';
-$string['assignrolesin'] = 'Esleitu rolak hemen: {$a}';
 $string['assignroles_link'] = 'admin/roles/assign';
+$string['assignrolesin'] = 'Esleitu rolak hemen: {$a}';
 $string['assignrolesrelativetothisuser'] = 'Esleitu rol erlatiboak erabiltzaile honi';
 $string['backtoallroles'] = 'Itzuli rol guztien zerrendara';
 $string['backup:anonymise'] = 'Segurtasun-kopian erabiltzaileen datuak anonimo bihurtu';
@@ -251,7 +251,7 @@ $string['extusersmatching'] = '\'{$a}\'-(r)ekin bat etortzen diren erabiltzailea
 $string['filter:manage'] = 'Kudeatu iragazki lokalen ezarpenak';
 $string['frontpageuser'] = 'Autentifikatutako erabiltzailea hasiera-orrian';
 $string['frontpageuserdescription'] = 'Hasiera-orriko ikastaroan saioa hasitako erabiltzaile guztiak';
-$string['globalrole'] = 'Rol globala';
+$string['globalrole'] = 'Sistemako rola';
 $string['globalroleswarning'] = 'KONTUZ! Orri honetatik esleitzen dituzun rol guztiak aukeratutako erabiltzaile guztiei emango zaizkie sisteman, ikastaro guztietan eta hasiera-orrian barne.';
 $string['gotoassignroles'] = 'Joan rolak ezartzera testuinguru honetan: {$a->contextlevel}';
 $string['gotoassignsystemroles'] = 'Joan sistemako rolak ezartzera';
@@ -276,7 +276,7 @@ $string['h5p:setdisplayoptions'] = 'Zehaztu H5P erakusteko aukerak';
 $string['h5p:updatelibraries'] = 'Kudeatu H5P eduki-motak';
 $string['highlightedcellsshowdefault'] = 'Beheko taulan nabarmendutako baimenak goian aukeratutako rol arketipoaren lehenetsitako balioak dira.';
 $string['highlightedcellsshowinherit'] = 'Beheko taulan nabarmendutako gelaxkek heredatuko diren gaitasunak erakusten dituzte (egotekotan). Aldatu nahi dituzun gaitasunak kenduta, beste guztia Heredatu gisa utzi beharko zenuke.';
-$string['inactiveformorethan'] = '{$a->timeperiod} baino gehiagoz parte hartu gabe';
+$string['inactiveformorethan'] = 'ez-aktibo {$a->timeperiod} baino gehiagoz';
 $string['ingroup'] = 'talde honetan: "{$a->group}"';
 $string['inherit'] = 'Heredatutakoa';
 $string['invalidpresetfile'] = 'Rol-definiziozko fitxategi baliogabea';
@@ -286,17 +286,17 @@ $string['legacy:editingteacher'] = 'HEREDATUTAKO ROLA: Irakaslea (edizio baimend
 $string['legacy:guest'] = 'HEREDATUTAKO ROLA: Bisitaria';
 $string['legacy:student'] = 'HEREDATUTAKO ROLA: Ikaslea';
 $string['legacy:teacher'] = 'HEREDATUTAKO ROLA: Irakaslea (editatzeko baimenik gabea)';
-$string['legacytype'] = 'Heredatutako rol-mota';
 $string['legacy:user'] = 'HEREDATUTAKO ROLA: Autentifikatutako erabiltzailea';
-$string['listallroles'] = 'Rol guztiak zerrendatu';
+$string['legacytype'] = 'Heredatutako rol mota';
+$string['listallroles'] = 'Zerrendatu rol guztiak';
 $string['localroles'] = 'Jarduera honi esleitutako rolak';
 $string['mainadmin'] = 'Kudeatzaile nagusia';
 $string['mainadminset'] = 'Ezarri kudeatzaile nagusia';
 $string['manageadmins'] = 'Kudeatu guneko kudeatzaileak';
 $string['manager'] = 'Kudeatzailea';
-$string['managerdescription'] = 'Kudeatzaileak ikastaroan sartu daitezke eta edukiak aldatu ditzakete baina normalean ez du ikastaroetan parte hartzen.';
+$string['managerdescription'] = 'Kudeatzaileak ikastaroetan sartu daitezke eta edukiak aldatu ditzakete, baina normalean ez du ikastaroetan parte hartzen.';
 $string['manageroles'] = 'Kudeatu rolak';
-$string['maybeassignedin'] = 'Rol hau eslei daitekeen testuinguru-motak';
+$string['maybeassignedin'] = 'Rol hau eslei daitekeen testuinguru motak';
 $string['morethan'] = '{$a} baino gehiago';
 $string['multipleroles'] = 'Hainbat rol';
 $string['my:configsyspages'] = 'Konfiguratu Aginte-panelerako sistemaren txantiloiak';
@@ -317,14 +317,14 @@ $string['novisibleroles'] = 'Rolik ez';
 $string['overrideanotherrole'] = 'Baliogabetu beste rol bat';
 $string['overridecontext'] = 'Baliogabetu testuingurua';
 $string['overridepermissions'] = 'Baliogabetu baimenak';
-$string['overridepermissionsforrole'] = 'Baliogabetu baimenak \'{$a->role}\' rolarentzat {$a->context} testuinguruan';
 $string['overridepermissions_help'] = 'Baimenen baliogabetzeak aukeratutako gaitasunak testuinguru zehatzetan baimendu edo ukatzen dituzte.';
-$string['overridepermissionsin'] = 'Baliogabetu baimenak hemen: {$a}';
 $string['overridepermissions_link'] = 'admin/roles/override';
+$string['overridepermissionsforrole'] = 'Baliogabetu baimenak \'{$a->role}\' rolarentzat {$a->context} testuinguruan';
+$string['overridepermissionsin'] = 'Baliogabetu baimenak hemen: {$a}';
 $string['overrideroles'] = 'Baliogabetu rolak';
 $string['overriderolesin'] = 'Baliogabetu rolak hemen: {$a}';
-$string['overrides'] = 'Baliogabetu';
-$string['overridesbycontext'] = 'Baliogabetu (testuinguruaren arabera)';
+$string['overrides'] = 'Baliogabetzeak';
+$string['overridesbycontext'] = 'Baliogabetzeak (testuinguruaren arabera)';
 $string['permission'] = 'Baimena';
 $string['permission_help'] = 'Baimenak gaitasun jakinetarako ezarpenak dira. 4 aukera daude:
 
@@ -390,31 +390,31 @@ $string['restore:uploadfile'] = 'Igo fitxategiak segurtasun-kopien eremura';
 $string['restore:userinfo'] = 'Berreskuratu erabiltzailearen datuak';
 $string['restore:viewautomatedfilearea'] = 'Berreskuratu ikastaroak segurtasun-kopia automatizatuetatik';
 $string['risks'] = 'Arriskuak';
+$string['role:assign'] = 'Erabiltzaileei rolak ezarri';
+$string['role:manage'] = 'Sortu eta kudeatu rolak';
+$string['role:override'] = 'Besteentzako baimenak baliogabetu';
+$string['role:review'] = 'Berrikusi besteentzako baimenak';
+$string['role:safeoverride'] = 'Besteentzako baimen seguruak baliogabetu';
+$string['role:switchroles'] = 'Hartu beste rol bat';
 $string['roleallowheader'] = 'Baimendu rola:';
 $string['roleallowinfo'] = 'Aukeratu "{$a->context}" testuinguruan, "{$a->cap}" gaitasuna, baimendutako rolen zerrendan gehitzeko rol bat:';
-$string['role:assign'] = 'Erabiltzaileei rolak ezarri';
 $string['roleassignments'] = 'Rol ezarpenak';
 $string['roledefinitions'] = 'Rolaren definizioak';
 $string['rolefullname'] = 'Izena';
 $string['roleincontext'] = '{$a->role} hemen: {$a->context}';
-$string['role:manage'] = 'Sortu eta kudeatu rolak';
-$string['role:override'] = 'Besteentzako baimenak baliogabetu';
 $string['roleprohibitheader'] = 'Debekatu rola';
 $string['roleprohibitinfo'] = 'Aukeratu rol bat debekatutako rol-zerrendara gehitzeko "{$a->context}" testuinguruan,  "{$a->cap}" gaitasunean:';
 $string['rolerepreset'] = 'Erabili rolen aurretiko ezarpena';
 $string['roleresetdefaults'] = 'Lehenetsitakoak';
 $string['roleresetrole'] = 'Erabili rola edo arketipoa';
-$string['role:review'] = 'Berrikusi besteentzako baimenak';
 $string['rolerisks'] = 'Rolaren arriskuak';
 $string['roles'] = 'Rolak';
-$string['role:safeoverride'] = 'Besteentzako baimen seguruak baliogabetu';
+$string['roles_help'] = 'Rola testuinguru jakinetan erabiltzaileei eslei dakiekeen sistemak definitutako baimen-multzoa da';
+$string['roles_link'] = 'rolak';
 $string['roleselect'] = 'Aukeratu rola';
 $string['rolesforuser'] = '{$a} erabiltzailearen rolak';
-$string['roles_help'] = 'Rola testuinguru jakinetan erabiltzaileei eslei dakiekeen sistemak definitutako baimen-multzoa da';
 $string['roleshortname'] = 'Izen laburra';
 $string['roleshortname_help'] = 'Rolaren izen laburra maila baxuko rol-identifikatzailea da eta bertan ASCII karaktere alfanumerikoak baino ez dira onartzen. Ez aldatu rol estandarren izen laburrak.';
-$string['roles_link'] = 'rolak';
-$string['role:switchroles'] = 'Hartu beste rol bat';
 $string['roletoassign'] = 'Ezarri beharreko rola';
 $string['roletooverride'] = 'Baliogabetu beharreko rola';
 $string['safeoverridenotice'] = 'Oharra: Arrisku gehien dituzten gaitasunak blokeatuta daude zeuk baino ezin baitituzu gaitasun seguruak baliogabetu';
@@ -425,7 +425,6 @@ $string['selectrole'] = 'Aukeratu rol bat';
 $string['showallroles'] = 'Erakutsi rol guztiak';
 $string['showthisuserspermissions'] = 'Erakutsi erabiltzaile honen baimenak';
 $string['site:accessallgroups'] = 'Talde guztietarako sarbidea';
-$string['siteadministrators'] = 'Guneko kudeatzaileak';
 $string['site:approvecourse'] = 'Ikastaroak sortzeko baimena eman';
 $string['site:backup'] = 'Egin ikastaroen segurtasun-kopiak';
 $string['site:config'] = 'Aldatu gunearen konfigurazioa';
@@ -452,6 +451,7 @@ $string['site:viewfullnames'] = 'Erabiltzaileen izen osoak ikusi beti';
 $string['site:viewparticipants'] = 'Ikusi partaideak';
 $string['site:viewreports'] = 'Ikusi txostenak';
 $string['site:viewuseridentity'] = 'Ikusi erabiltzailearen nortasun osoa zerrendetan';
+$string['siteadministrators'] = 'Guneko kudeatzaileak';
 $string['tag:edit'] = 'Editatu dauden etiketak';
 $string['tag:editblocks'] = 'Editatu blokeak etiketa-orrietan';
 $string['tag:flag'] = 'Markatu etiketak ezegoki gisa';
@@ -476,12 +476,6 @@ $string['user:manageownfiles'] = 'Kudeatu fitxategi pribatuan eremuan fitxategia
 $string['user:managesyspages'] = 'Konfiguratu erabiltzaile-profil publikoetarako lehenetsitako orri-diseinua';
 $string['user:readuserblogs'] = 'Ikusi erabiltzaileen blog guztiak';
 $string['user:readuserposts'] = 'Ikusi erabiltzaileen foro-mezu guztiak';
-$string['usersfrom'] = 'Erabiltzaileak hemendik: {$a}';
-$string['usersfrommatching'] = '{$a->search}\'-(r)ekin bat datozen {$a->contextname}-(e)ko erabiltzaileak';
-$string['usersinthisx'] = 'Erabiltzaileak {$a} honetan';
-$string['usersinthisxmatching'] = '{$a->contexttype} honetan {$a->search}\'-(r)ekin bat datozen erabiltzaileak';
-$string['userswithrole'] = 'Rol hau duten erabiltzaile guztiak';
-$string['userswiththisrole'] = 'Rol hau duten erabiltzaileak';
 $string['user:update'] = 'Eguneratu erabiltzaileen profilak';
 $string['user:viewalldetails'] = 'Ikusi erabiltzaileen informazio osoa';
 $string['user:viewdetails'] = 'Ikusi erabiltzailearen profila';
@@ -489,6 +483,12 @@ $string['user:viewhiddendetails'] = 'Ikusi erabiltzaileen ezkutuko xehetasunak';
 $string['user:viewlastip'] = 'Ikusi erabiltzailearen azken IP helbidea';
 $string['user:viewuseractivitiesreport'] = 'Ikusi erabiltzaileen jarduera-txostenak';
 $string['user:viewusergrades'] = 'Ikusi erabiltzaileen kalifikazioak';
+$string['usersfrom'] = 'Erabiltzaileak hemendik: {$a}';
+$string['usersfrommatching'] = '{$a->search}\'-(r)ekin bat datozen {$a->contextname}(e)ko erabiltzaileak';
+$string['usersinthisx'] = 'Erabiltzaileak {$a} honetan';
+$string['usersinthisxmatching'] = '{$a->contexttype} honetan {$a->search}\'-(r)ekin bat datozen erabiltzaileak';
+$string['userswithrole'] = 'Rol hau duten erabiltzaile guztiak';
+$string['userswiththisrole'] = 'Rol hau duten erabiltzaileak';
 $string['useshowadvancedtochange'] = 'Erabili \'Erakutsi aurreratuak\' aldatzeko';
 $string['viewingdefinitionofrolex'] = '\'{$a}\' rolaren definizioa ikusten';
 $string['viewrole'] = 'Ikusi rolaren xehetasunak';

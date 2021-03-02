@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'en', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -98,11 +98,11 @@ $string['stamps'] = 'Stamps';
 $string['stampsdesc'] = 'Stamps must be image files (recommended size: 40x40). These images can be used with the stamp tool to annotate the PDF.';
 $string['test_doesnotexist'] = 'The ghostscript path points to a non-existent file';
 $string['test_empty'] = 'The ghostscript path is empty - please enter the correct path';
-$string['testgs'] = 'Test ghostscript path';
 $string['test_isdir'] = 'The ghostscript path points to a folder, please include the ghostscript program in the path you specify';
 $string['test_notestfile'] = 'The test PDF is missing';
 $string['test_notexecutable'] = 'The ghostscript points to a file that is not executable';
 $string['test_ok'] = 'The ghostscript path appears to be OK - please check you can see the message in the image below';
+$string['testgs'] = 'Test ghostscript path';
 $string['tool'] = 'Tool';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'View annotated PDF...';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'user', language 'it', version '3.8'.
  *
- * @package   user
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     user
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:courserequestpath'] = 'Corsi richiesti';
+$string['privacy:descriptionpath'] = 'Descrizione del profilo';
 $string['privacy:devicespath'] = 'Dispostivi dell\'utente';
 $string['privacy:draftfilespath'] = 'File in booza';
 $string['privacy:lastaccesspath'] = 'Ultimo accesso ai corsi';
@@ -79,6 +81,7 @@ $string['privacy:metadata:msn'] = 'Identificatore MSN dell\'utente.';
 $string['privacy:metadata:my_pages'] = 'Pagine dell\'utente - dashboard e profilo. Questa tabella non contiene dati personali, viene utilizzata solamente per collegare i blocchi della dashboard agli utenti.';
 $string['privacy:metadata:my_pages:name'] = 'Titolo della pagina.';
 $string['privacy:metadata:my_pages:private'] = 'Scelta di rendere la pagina privata (dashboard) o pubblica (profilo).';
+$string['privacy:metadata:my_pages:userid'] = 'Utente proprietario della pagina, 0 per i default di sistema';
 $string['privacy:metadata:password'] = 'Password dell\'utente per accedere al sistema.';
 $string['privacy:metadata:passwordresettablesummary'] = 'Tabella di tracciamento dei token di conferma reimpostazione password.';
 $string['privacy:metadata:passwordtablesummary'] = 'Log a rotazione degli hash delle password usate in precedenza dall\'utente.';
@@ -110,12 +113,12 @@ $string['privacy:metadata:token'] = 'Secret impostato e inviato all\'utente tram
 $string['privacy:metadata:trackforums'] = 'Preferenza sul tracciamento dei forum.';
 $string['privacy:metadata:trustbitmask'] = 'Bit mask di fiducia';
 $string['privacy:metadata:url'] = 'URL relativo all\'utente.';
-$string['privacy:metadata:userid'] = 'ID dell\'utente collegato alla tabella.';
-$string['privacy:metadata:username'] = 'Username dell\'utente.';
 $string['privacy:metadata:user_preferences'] = 'Preferenze associate a un determinato utente.';
 $string['privacy:metadata:user_preferences:name'] = 'Nome della preferenza.';
 $string['privacy:metadata:user_preferences:userid'] = 'ID dell\'utente';
 $string['privacy:metadata:user_preferences:value'] = 'Valore della preferenza.';
+$string['privacy:metadata:userid'] = 'ID dell\'utente collegato alla tabella.';
+$string['privacy:metadata:username'] = 'Username dell\'utente.';
 $string['privacy:metadata:usertablesummary'] = 'Questa tabella memorizza i dati personali principali dell\'utente.';
 $string['privacy:metadata:uuid'] = 'UUID del dispositivo.';
 $string['privacy:metadata:version'] = 'Versione del dispositivo (6.1.2, 4.2.2, ecc)';
@@ -125,4 +128,6 @@ $string['privacy:passwordresetpath'] = 'Reimpostazioni password';
 $string['privacy:privatefilespath'] = 'File privati';
 $string['privacy:profileimagespath'] = 'Immagini del profilo';
 $string['privacy:sessionpath'] = 'Dati della sessione';
-$string['target:upcomingactivitiesdue_help'] = 'L\'obiettivo genera promemoria per le scadenze delle prossime attività.';
+$string['target:upcomingactivitiesdue'] = 'Prossime attività da svolgere';
+$string['target:upcomingactivitiesdue_help'] = 'L\'obiettivo genera promemoria per prossime attività da svolgere.';
+$string['target:upcomingactivitiesdueinfo'] = 'Di seguito sono elencate tutte le considerazioni relative alle prossime attività da svolgere. Gli studenti hanno ricevuto le considerazioni direttamente.';

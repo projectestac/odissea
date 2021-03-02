@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'editor_atto', language 'ar', version '3.8'.
  *
- * @package   editor_atto
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     editor_atto
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,17 +39,17 @@ $string['errorpluginisusedtwice'] = 'تم استعمال الملحق \'{$a}\' �
 $string['errorpluginnotfound'] = 'تعذر استعمال الملحق \'{$a}\'؛ لا يبدو أنه منصب.';
 $string['errortextrecovery'] = 'للأسف، تعذر استرجاع النسخة المسودة.';
 $string['infostatus'] = 'المعلومات';
-$string['pluginname'] = 'محرر Atto HTML';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
-$string['privacy:metadata:database:atto_autosave'] = 'مسودات محرر النصوص المحفوظة تلقائياً';
-$string['privacy:metadata:database:atto_autosave:drafttext'] = 'النص الذي تم حفظه';
-$string['privacy:metadata:database:atto_autosave:timemodified'] = 'وقت تعديل هذا المحتوى';
-$string['privacy:metadata:database:atto_autosave:userid'] = 'مُعرَّف المستخدم الذي تم حفظ بياناته';
+$string['pluginname'] = 'محرر Atto HTML';
+$string['privacy:metadata:database:atto_autosave'] = 'مسودات محرر النصوص المحفوظة تلقائياً.';
+$string['privacy:metadata:database:atto_autosave:drafttext'] = 'النص الذي تم حفظه.';
+$string['privacy:metadata:database:atto_autosave:timemodified'] = 'وقت تعديل هذا المحتوى.';
+$string['privacy:metadata:database:atto_autosave:userid'] = 'مُعرَّف المستخدم الذي تم حفظ بياناته.';
 $string['recover'] = 'استعد';
 $string['settings'] = 'إعدادات شريط أدوات Atto';
 $string['subplugintype_atto'] = 'ملحق Atto';
 $string['subplugintype_atto_plural'] = 'ملاحق Atto';
-$string['taskautosavecleanup'] = 'حذف مسودات الحفظ التلقائي منتهية الصلاحية';
+$string['taskautosavecleanup'] = 'إحذف مسودات الحفظ التلقائي منتهية الصلاحية';
 $string['textrecovered'] = 'تمت الاستعادة التلقائية لهذا النص من نسخة مسودة.';
 $string['toolbarconfig'] = 'تهيئة شريط الأدوات';
 $string['toolbarconfig_desc'] = 'يمكن تهيئة قائمة الملاحق والترتيب الذي تظهر به هنا. التهيئة تتضمن مجموعات (واحدة لكل سطر) متبوعة بقائمة مرتبة من الملاحق لتلك المجموعة. المجموعة مفصولة عن الملاحق بعلامة المساواة والملاحق مفصولة بعضها عن بعض بفوارز. أسماء المجموعات ينبغي أن تكون فريدة وعليها أن تشير إلى أزرار بوظائف ذات صلة. لا ينبغي تكرار أسماء الأزرار والمجموعات، ويمكن أن تحتوي الأسماء فقط على حروف وأرقام لاتينية.';

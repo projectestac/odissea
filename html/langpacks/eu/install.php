@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,23 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'install', language 'eu', version '3.8'.
  *
- * @package   install
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     install
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['admindirerror'] = 'Kudeaketarako zehaztu den direktorioa ez da egokia';
 $string['admindirname'] = 'Admin direktorioa';
-$string['admindirsetting'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodleren kudeaketa-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin direktorioa berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodleko admin estekak konponduko du.';
+$string['admindirsetting'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodle-ren kudeaketa-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin karpeta berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodle-ko admin estekak konponduko du.';
 $string['admindirsettinghead'] = 'Ezarri Admin direktorioa...';
-$string['admindirsettingsub'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodleren kudeaketa-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin direktorioa berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodleko admin estekak konponduko du.';
+$string['admindirsettingsub'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodle-ren kudeaketa-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin karpeta berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodle-ko admin estekak konponduko du.';
 $string['availablelangs'] = 'Hizkuntza-pakete eskuragarriak';
 $string['caution'] = 'Kontuz';
 $string['chooselanguage'] = 'Aukeratu hizkuntza bat';
@@ -44,7 +44,7 @@ $string['cliinstallfinished'] = 'Instalazioa ondo burutu da.';
 $string['cliinstallheader'] = 'Moodle {$a} komando-lerro bidezko instalaziorako programa';
 $string['climustagreelicense'] = 'Modu ez-interaktiboan lizentzia onartu behar duzu --agree-license aukera zehaztuz';
 $string['cliskipdatabase'] = 'Alde batera uzten datu-basearen instalazioa.';
-$string['clitablesexist'] = 'Datu-base taulak dagoeneko existitzen dira, CLI instalazioak ezin du jarraitu.';
+$string['clitablesexist'] = 'Datu-base taulak dagoeneko existitzen dira. CLI instalazioak ezin du jarraitu.';
 $string['compatibilitysettings'] = 'Zure PHP ezarpenak egiaztatzen...';
 $string['compatibilitysettingshead'] = 'Zure PHP ezarpenak egiaztatzen...';
 $string['compatibilitysettingssub'] = 'Zure zerbitzariak baldintza hauek guztiak bete beharko ditu Moodle bertan ondo funtzionatzeko.';
@@ -63,8 +63,8 @@ $string['databasesocket'] = 'Unix socket-a';
 $string['databasetypehead'] = 'Aukeratu datu-base kontrolatzailea';
 $string['databasetypesub'] = 'Moodlek hainbat motatako datu-base zerbitzariak onartzen ditu. Mesedez, jarri harremanetan zerbitzariaren kudeatzailearekin ez badakizu zein mota erabili.';
 $string['databaseuser'] = 'Datu-basearen erabiltzailea';
-$string['dataroot'] = 'Datu-direktorioa';
-$string['datarooterror'] = '\'Datu-direktorioa\' ezin izan da sortu edo aurkitu. Adierazi zuzen bidea edo direktorioa eskuz sortu.';
+$string['dataroot'] = 'Datuen karpeta';
+$string['datarooterror'] = '\'Datuen karpeta\' ezin izan da sortu edo aurkitu. Adierazi zuzen bidea edo karpeta eskuz sortu.';
 $string['datarootpermission'] = 'Datu-direktorioen baimena';
 $string['datarootpublicerror'] = 'Zehaztutako \'Datu-direktoriora\' web bidez eskuragarri dago, beste direktorio bat erabili behar duzu.';
 $string['dbconnectionerror'] = 'Ezin izan da zehaztutako datu-basearekin konektatu. Mesedez, datu-basearen ezarpenak egiaztatu.';
@@ -86,7 +86,7 @@ Kokapen honetarako bide osoa zehaztu.
 Ziurtatu ezazu maiuskulak eta minuskulak ondo daudela.</p>
 
 <p><b>Datu-direktorioa:</b>
-Moodlek igotako fitxategiak gordeko ditueneko tokia behar duzu.
+Moodle-k igotako fitxategiak gordeko ditueneko tokia behar duzu.
 Direktorio horretan web zerbitzariko erabiltzaileek irakurri eta IDATZI
 ahal izango dute (normalean \'nobody\' edo \'apache\'), baina ez da
 komenigarria web-etik zuzenean sartu ahal izatea. Existitzen ez bada
@@ -104,13 +104,13 @@ Ziurtatu ezazu maiuskulak eta minuskulak ondo daudela.
 <br />
 <br />
 <b>Datu-direktorioa:</b>
-Moodlek igotako fitxategiak gordeko ditueneko tokia behar duzu.
+Moodle-k igotako fitxategiak gordeko ditueneko tokia behar duzu.
 Direktorio horretan web zerbitzariko erabiltzaileek irakurri eta IDATZI
 ahal izango dute (normalean \'nobody\' edo \'apache\'), baina ez da
 komenigarria web-etik zuzenean sartu ahal izatea. Existitzen ez bada
 instalatzailea sortzen saiatuko da.';
 $string['dirroot'] = 'Moodle direktorioa';
-$string['dirrooterror'] = '\'Moodleren direktorioa\' ezarpena egokia ez dela dirudi - ezin izan da Moodleren instalaziorik aurkitu bertan. Jatorrizko balioa berrezarri da.';
+$string['dirrooterror'] = '\'Moodle-ren direktorioa\' ezarpena egokia ez dela dirudi - ezin izan da Moodle-ren instalaziorik aurkitu bertan. Jatorrizko balioa berrezarri da.';
 $string['download'] = 'Jaitsi';
 $string['downloadlanguagebutton'] = 'Jaitsi "{$a}" hizkuntza-paketea';
 $string['downloadlanguagehead'] = 'Jaitsi hizkuntza-paketea';
@@ -132,7 +132,7 @@ ezta erabiltzaileen irudirik ere, ikastaroetara igo.</p>
 <p>Fitxategien igoera ahalbidetzeko, zuk (edo sistemaren kudeatzaileak)
 jatorrizko php.ini fitxategia editatu eta <b>file_uploads</b> ezarpena
 \'1\'era aldatu behar duzu.</p>';
-$string['inputdatadirectory'] = 'Datu-direktorioa:';
+$string['inputdatadirectory'] = 'Datuen karpeta:';
 $string['inputwebadress'] = 'Web helbidea:';
 $string['inputwebdirectory'] = 'Moodle direktorioa:';
 $string['installation'] = 'Instalazioa';
@@ -143,7 +143,7 @@ $string['memorylimit'] = 'Memoriaren muga';
 $string['memorylimiterror'] = 'PHP memoriaren muga baxuegia da... Beranduago arazoak izan ditzakezu.';
 $string['memorylimithelp'] = '<p>Zure zerbitzarian PHP memoria-muga {$a} da une honetan.</p>
 
-<p>Aurrerago honek Moodleri arazoak sor diezaizkioke,
+<p>Aurrerago honek Moodle-ri arazoak sor diezaizkioke,
 bereziki modulu edo/eta erabiltzaile asko badituzu.</p>
 
 <p>PHP memoria-muga ahal bezain altu konfiguratzea aholkatzen dizugu, ad. 40M.
@@ -184,10 +184,10 @@ $string['nativesqlsrvnodriver'] = 'PHP-rako Microsoft-eko SQL Server-erako Kontr
 $string['ociextensionisnotpresentinphp'] = 'PHP ez da ondo konfiguratu OCI8 hedapenaren bidez Oracle-rekin komunikatzeko. Mesedez konprobatu zure php.ini fitxategia edo PHP berriz konpilatu.';
 $string['pass'] = 'Zuzena';
 $string['paths'] = 'Bideak';
-$string['pathserrcreatedataroot'] = 'Instalatzaileak ezin du datu-direktorioa ({$a->dataroot}) sortu.';
+$string['pathserrcreatedataroot'] = 'Instalatzaileak ezin du datu-karpeta ({$a->dataroot}) sortu.';
 $string['pathshead'] = 'Egiaztatu bideak';
 $string['pathsrodataroot'] = 'Dataroot direktorioa ez da idazteko modukoa.';
-$string['pathsroparentdataroot'] = 'Goragoko direktorioa ({$a->parent}) ez da idazteko modukoa. Instalatzaileak ezin du datu-direktorioa ({$a->dataroot}) sortu.';
+$string['pathsroparentdataroot'] = 'Goragoko karpeta ({$a->parent}) ez da idazteko modukoa. Instalatzaileak ezin du datu-karpeta ({$a->dataroot}) sortu.';
 $string['pathssubadmindir'] = 'Web ostalari gutxi batzuk /admin URL berezi gisa erabiltzen dute kontrol-panel edo antzekora sarbidea emateko. Zoritxarrez, honek Moodleren kudeatze-orrien lehenetsitako kokapenarekin gatazka sortzen du. Hau konpondu dezakezu zure instalazioko admin direktorioa berrizendatuz, eta izen berria hemen sartuta. Adibidez <em>moodleadmin</em>. Honek Moodleko admin estekak konponduko du.';
 $string['pathssubdataroot'] = '<p>Moodlek erabiltzaileek igotako fitxategien edukiak bilduko dituen direktorio bat.</p>
 <p>Direktorio honetan web-zerbitzariaren erabiltzaileak irakurtzeko eta idazteko baimena izan beharko ditu (normalean \'www-data\', \'nobody\', edo \'apache\').</p>
@@ -204,14 +204,16 @@ $string['pgsqlextensionisnotpresentinphp'] = 'PHP ez da ondo konfiguratu PGSQL h
 $string['phpextension'] = '{$a} PHP hedapena';
 $string['phpversion'] = 'PHP bertsioa';
 $string['phpversionhelp'] = '<p>Moodlek PHP 5.6.5 edo 7.1 bertsioetako bat behar du (7.0.x bertsioek muga batzuk dituzte). </p>
-<p>Zure bertsioa: {$a}</p>
+<p>Zure une honetako bertsioa {$a} da.</p>
 <p>PHP eguneratu edo PHP bertsio berriagoa duen zerbitzari batera jo.</p>';
-$string['releasenoteslink'] = 'Moodleren bertsio honi buruzko informazio gehiagorako, mesedez ikus itzazu Bertsio-kaleratze oharrak hemen: {$a}';
+$string['releasenoteslink'] = 'Moodle-ren bertsio honi buruzko informazio gehiagorako, mesedez ikus itzazu bertsio-oharrak hemen: {$a}';
 $string['safemode'] = 'Modu segurua';
 $string['safemodeerror'] = 'Moodlek arazoak izan ditzake \'modu segurua\' ezarriz gero';
-$string['safemodehelp'] = '<p>Moodlek arazo ezberdinak izan ditzake \'modu segurua\' ezarriz gero, eta baliteke fitxategi berriak ezin sortu izana.</p>
+$string['safemodehelp'] = '<p>Moodle-k arazo ezberdinak izan ditzake \'modu segurua\' ezarriz gero,
+eta baliteke fitxategi berriak ezin sortu izana.</p>
 
-<p>Normalean \'modu segurua\' web zerbitzari publiko paranoideek soilik aktibatzen dute. Hori dela eta, zure Moodle webgunerako beste enpresa bilatu beharko duzu.</p>
+<p>Normalean \'modu segurua\' web zerbitzari publiko paranoideek soilik aktibatzen dute.
+Hori dela eta, zure Moodle webgunerako beste enpresa bilatu beharko duzu.</p>
 
 <p>Nahi izanez gero, zure instalazioarekin jarrai dezakezu, baina aurrerago arazoak izango dituzu.</p>';
 $string['sessionautostart'] = 'Saioaren hasiera automatikoa';
@@ -230,4 +232,4 @@ $string['welcomep50'] = 'Paketeko aplikazio guztien erabilpena dagozkien lizentz
 $string['welcomep60'] = 'Datozen orriek urrats erraz batzuen bidez gidatuko zaituzte <strong>Moodle</strong> zure ordenagailuan instalatu eta konfiguratzeko. Aholkatzen diren lehenetsitako balioak mantendu edo, nahi izanez gero, alda ditzakezu zure beharrei erantzun diezaieten.';
 $string['welcomep70'] = 'Egin klik "Hurrengoa" botoian <strong>Moodle</strong>ren konfigurazioarekin jarraitzeko.';
 $string['wwwroot'] = 'Web helbidea';
-$string['wwwrooterror'] = '\'Web helbidea\' zuzena ez dela dirudi. Ezin izan da Moodleren instalazioa aurkitu. Jatorrizko balioa berrezarri da.';
+$string['wwwrooterror'] = '\'Web helbidea\' zuzena ez dela dirudi. Ezin izan da Moodle-ren instalazioa aurkitu. Jatorrizko balioa berrezarri da.';

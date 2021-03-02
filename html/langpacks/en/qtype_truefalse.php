@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_truefalse', language 'en', version '3.8'.
  *
- * @package   qtype_truefalse
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_truefalse
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,10 +33,10 @@ $string['feedbackfalse'] = 'Feedback for the response \'False\'.';
 $string['feedbacktrue'] = 'Feedback for the response \'True\'.';
 $string['pleaseselectananswer'] = 'Please select an answer.';
 $string['pluginname'] = 'True/False';
-$string['pluginnameadding'] = 'Adding a True/False question';
-$string['pluginnameediting'] = 'Editing a True/False question';
 $string['pluginname_help'] = 'In response to a question (that may include an image) the respondent chooses from true or false.';
 $string['pluginname_link'] = 'question/type/truefalse';
+$string['pluginnameadding'] = 'Adding a True/False question';
+$string['pluginnameediting'] = 'Editing a True/False question';
 $string['pluginnamesummary'] = 'A simple form of multiple choice question with just the two choices \'True\' and \'False\'.';
 $string['privacy:metadata'] = 'The True/False question type plugin does not store any personal data.';
 $string['selectone'] = 'Select one:';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'ru', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,8 +30,8 @@ $string['corestring'] = 'Строка альтернативного языка'
 $string['corestring_help'] = 'Этот параметр может быть использован для выбора строки другого языка из базового языкового файла mimetypes.php. Обычно должен быть пустым. Для пользовательских типов заполняйте поле описания.';
 $string['defaulticon'] = 'Значок по умолчанию для MIME-типа';
 $string['defaulticon_help'] = 'Если есть несколько расширений файлов с одинаковым MIME-типом, выберите этот параметр для одного из расширений, чтобы его значок использовался при определении значка по MIME-типу.';
-$string['deletea'] = 'Удалить {$a}';
 $string['delete_confirmation'] = 'Вы абсолютно уверены, что хотите удалить <strong>.{$a}</strong>?';
+$string['deletea'] = 'Удалить {$a}';
 $string['deletefiletypes'] = 'Удалить тип файла';
 $string['description'] = 'Пользовательское описание';
 $string['description_help'] = 'Простое описание типа файла, например, «электронная книга Kindle». Если ваш сайт поддерживает несколько языков и использует фильтр «Многоязыковое содержимое», Вы можете ввести в это поле мультиязычные теги, чтобы задать описание на разных языках.';

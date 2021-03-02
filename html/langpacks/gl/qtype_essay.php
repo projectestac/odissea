@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essay', language 'gl', version '3.8'.
  *
- * @package   qtype_essay
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essay
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,10 +44,10 @@ $string['mustrequirefewer'] = 'Non pode requirir máis anexos dos que permite.';
 $string['nlines'] = '{$a} liñas';
 $string['nonexistentfiletypes'] = 'Non se recoñeceron os seguintes tipos de ficheiro: {$a}';
 $string['pluginname'] = 'Ensaio';
-$string['pluginnameadding'] = 'Engadir unha pregunta de ensaio';
-$string['pluginnameediting'] = 'Engadir unha pregunta de ensaio';
 $string['pluginname_help'] = 'En resposta a unha pregunta (que pode incluír unha imaxe) o que responde escribe unha resposta dun parágrafo ou dous. A pregunta de ensaio non terá unha cualificación asignada ata que sexa revisada por un profesor e manualmente cualificada.';
 $string['pluginname_link'] = 'question/type/essay';
+$string['pluginnameadding'] = 'Engadir unha pregunta de ensaio';
+$string['pluginnameediting'] = 'Engadir unha pregunta de ensaio';
 $string['pluginnamesummary'] = 'Permitir unha resposta dunhas poucas frases ou parágrafos. Daquela debe ser cualificada manualmente.';
 $string['privacy:metadata'] = 'O engadido de pregunta de ensaio non almacena ningún dato persoal.';
 $string['responsefieldlines'] = 'Tamaño da caixa de entrada';
@@ -57,5 +57,5 @@ $string['responsenotrequired'] = 'A escritura de texto é opcional';
 $string['responseoptions'] = 'Opcións de resposta';
 $string['responserequired'] = 'Requirir texto';
 $string['responsetemplate'] = 'Modelo da resposta';
-$string['responsetemplateheader'] = 'Modelo da resposta';
 $string['responsetemplate_help'] = 'Calquera texto introducido aquí presentarase na caixa de entrada da resposta cando comece un novo intento de resposta.';
+$string['responsetemplateheader'] = 'Modelo da resposta';

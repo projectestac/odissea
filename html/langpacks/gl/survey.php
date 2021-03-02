@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'gl', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,7 +34,7 @@ $string['allscales'] = 'Todas as escalas, todos os alumnos';
 $string['alreadysubmitted'] = 'Xa enviou esta enquisa';
 $string['analysisof'] = 'Análise de {$a}';
 $string['answers'] = 'Respostas';
-$string['attls1'] = 'Ao avaliar o que di alguén, céntrome na calidade do seu argumento, non na persoa no o presenta.';
+$string['attls1'] = 'Ao avaliar o que di alguén, céntrome na calidade do seu argumento, non na persoa que o presenta.';
 $string['attls10'] = 'Para min é importante manterme o máis obxectivo posíbel cando analizo algo.';
 $string['attls10short'] = 'sexa obxectivo';
 $string['attls11'] = 'Tento pensar coas persoas no canto de contra elas.';
@@ -47,7 +47,7 @@ $string['attls14'] = 'Tento sinalar as debilidades na maneira de pensar dos dema
 $string['attls14short'] = 'sinale os puntos débiles';
 $string['attls15'] = 'Tento poñerme no lugar das outras persoas cando se fala de temas controvertidos, a ver que pensan e de que maneira o fan.';
 $string['attls15short'] = 'póñase no lugar dos outros';
-$string['attls16'] = 'Alguén podería chamarlle á miña maneira de analizar as cosas «poñelas a proba» xa que teño en conta coidadosamente todas as evidencias.';
+$string['attls16'] = 'Alguén podería chamarlle á miña maneira de analizar as cousas «poñelas a proba» xa que teño en conta coidadosamente todas as evidencias.';
 $string['attls16short'] = 'poñer a proba';
 $string['attls17'] = 'Cando se trata de resolver problemas, valoro o uso da lóxica e da razón por enriba dos meus propios intereses.';
 $string['attls17short'] = 'valoro sobre todo a lóxica';
@@ -66,7 +66,7 @@ $string['attls4'] = 'A parte máis importante da miña educación foi ter aprend
 $string['attls4short'] = 'entender as persoas diferentes';
 $string['attls5'] = 'Sinto que a mellor maneira de conseguir a miña propia identidade é interactuar con persoas diferentes.';
 $string['attls5short'] = 'interactuar coa diversidade';
-$string['attls6'] = 'Gozo ao escoitar as opinións das persoas que veñen de contornos diferentes ao meu; axúdame a entender como cosas iguais poden ser vistas de maneiras diferentes.';
+$string['attls6'] = 'Gozo ao escoitar as opinións das persoas que veñen de contornos diferentes ao meu; axúdame a entender como cousas iguais poden ser vistas de maneiras diferentes.';
 $string['attls6short'] = 'gozar escoitando opinións';
 $string['attls7'] = 'Vexo que podo fortalecer a miña propia posición debatendo con persoas que discrepa comigo.';
 $string['attls7short'] = 'fortalecer a través do debate';
@@ -106,13 +106,13 @@ $string['colles11'] = 'outros alumnos pídenme que lles que explique as miñas i
 $string['colles11short'] = 'Pídeseme que me explique';
 $string['colles12'] = 'outros alumnos responden á miñas ideas.';
 $string['colles12short'] = 'Os alumnos respóndenme';
-$string['colles13'] = 'o tutor estimulame a reflexionar.';
-$string['colles13short'] = 'o tutor estimula a reflexión';
-$string['colles14'] = 'o tutor anímame a participar.';
-$string['colles14short'] = 'o tutor anímame';
-$string['colles15'] = 'o tutor exemplifica as boas disertacións.';
-$string['colles15short'] = 'o tutor exemplifica as disertacións';
-$string['colles16'] = 'o tutor exemplifica a auto reflexión crítica.';
+$string['colles13'] = 'o titor estimulame a reflexionar.';
+$string['colles13short'] = 'o titor estimula a reflexión';
+$string['colles14'] = 'o titor anímame a participar.';
+$string['colles14short'] = 'o titor anímame';
+$string['colles15'] = 'o titor exemplifica as boas disertacións.';
+$string['colles15short'] = 'o titor exemplifica as disertacións';
+$string['colles16'] = 'o titor exemplifica a auto reflexión crítica.';
 $string['colles16short'] = 'o tutor exemplifica a auto reflexión';
 $string['colles17'] = 'outros alumnos anímanme a participar.';
 $string['colles17short'] = 'os alumnos anímanme';
@@ -128,10 +128,10 @@ $string['colles21'] = 'entendo ben as mensaxes doutros alumnos.';
 $string['colles21short'] = 'Entendo aos outros alumnos';
 $string['colles22'] = 'os outros alumnos entenden ben as miñas mensaxes.';
 $string['colles22short'] = 'os alumnos entendenme';
-$string['colles23'] = 'entendo ben as mensaxes do o tutor.';
-$string['colles23short'] = 'Entendo ao tutor';
-$string['colles24'] = 'o tutor entende ben as miñas mensaxes.';
-$string['colles24short'] = 'o tutor enténdeme';
+$string['colles23'] = 'entendo ben as mensaxes do o titor.';
+$string['colles23short'] = 'Entendo ao titor';
+$string['colles24'] = 'o titor entende ben as miñas mensaxes.';
+$string['colles24short'] = 'o titor enténdeme';
 $string['colles2short'] = 'importante para a miña práctica';
 $string['colles3'] = 'aprendo como mellorar a miña práctica profesional.';
 $string['colles3short'] = 'melloro a miña práctica';
@@ -173,8 +173,8 @@ $string['collesm2'] = 'Pensamento reflexivo';
 $string['collesm2short'] = 'Pensamento reflexivo';
 $string['collesm3'] = 'Interactividade';
 $string['collesm3short'] = 'Interactividade';
-$string['collesm4'] = 'Apoio do tutor';
-$string['collesm4short'] = 'Apoio do tutor';
+$string['collesm4'] = 'Apoio do titor';
+$string['collesm4short'] = 'Apoio do titor';
 $string['collesm5'] = 'Apoio de compañeiros';
 $string['collesm5short'] = 'Apoio de compañeiros';
 $string['collesm6'] = 'Interpretación';
@@ -210,15 +210,15 @@ $string['howlong'] = 'Canto tempo lle levou completar esta enquisa?';
 $string['howlongoptions'] = 'sobre 1 min,1-2 min,2-3 min,3-4 min,4-5-min,5-10 min,máis de 10';
 $string['ifoundthat'] = 'Atopei isto';
 $string['indicator:cognitivedepth'] = 'Enquisa cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de enquisa.';
 $string['indicator:cognitivedepthdef'] = 'Enquisa cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo que ofrecen as actividades de Enquisa durante este intervalo de análise (Niveis = Sen vista, Ver)';
 $string['indicator:cognitivedepthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Profundidade_cognitiva';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de enquisa.';
 $string['indicator:socialbreadth'] = 'Enquisa social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nunha actividade de enquisa.';
 $string['indicator:socialbreadthdef'] = 'Enquisa social';
 $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen as actividades de Enquisa durante este intervalo de análise (Niveis = Sen participación, Participante en solitario)';
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
-$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nunha actividade de enquisa.';
 $string['introtext'] = 'Texto de introdución';
 $string['invalidsurveyid'] = 'O ID da enquisa é incorrecto';
 $string['invalidtmptid'] = 'O ID do modelo é incorrecto';
@@ -267,13 +267,13 @@ $string['seemoredetail'] = 'Prema aquí para ver máis detalles';
 $string['selectedquestions'] = 'Preguntas seleccionadas dunha escala, todos os alumnos';
 $string['summary'] = 'Resumo';
 $string['survey:addinstance'] = 'Engadir unha nova enquisa';
-$string['surveycompleted'] = 'Vostede completou a enquisa. A gráfica seguinte amosa os seus resultados comparados coa media da clase.';
-$string['surveycompletednograph'] = 'Vostede completou esta enquisa';
 $string['survey:download'] = 'Descargar respostas';
-$string['surveygraph'] = 'Gráfico da enquisa';
-$string['surveyname'] = 'Nome da enquisa';
 $string['survey:participate'] = 'Responder á enquisa';
 $string['survey:readresponses'] = 'Ver respostas';
+$string['surveycompleted'] = 'Vostede completou a enquisa. A gráfica seguinte amosa os seus resultados comparados coa media da clase.';
+$string['surveycompletednograph'] = 'Vostede completou esta enquisa';
+$string['surveygraph'] = 'Gráfico da enquisa';
+$string['surveyname'] = 'Nome da enquisa';
 $string['surveysaved'] = 'Enquisa gardada';
 $string['surveytype'] = 'Tipo de enquisa';
 $string['surveytype_help'] = 'Hai dispoñíbeis tres tipos de enquisa diferentes:

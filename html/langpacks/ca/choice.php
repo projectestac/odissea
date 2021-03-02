@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'ca', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,13 +34,15 @@ $string['calendarend'] = 'La consulta {$a} es tanca';
 $string['calendarstart'] = 'La consulta s\'obre el {$a}';
 $string['cannotsubmit'] = 'Hi ha hagut un problema en la tramesa de la vostra resposta. Torneu-ho a intentar.';
 $string['choice'] = 'Consulta';
-$string['choiceactivityname'] = 'Consulta: {$a}';
 $string['choice:addinstance'] = 'Afegeix una consulta nova';
 $string['choice:choose'] = 'Grava una consulta';
-$string['choiceclose'] = 'Permet respostes fins a';
-$string['choicecloseson'] = 'Tanca la consulta en {$a}';
 $string['choice:deleteresponses'] = 'Modifica i suprimeix les respostes';
 $string['choice:downloadresponses'] = 'Baixa les respostes';
+$string['choice:readresponses'] = 'Mostra les respostes';
+$string['choice:view'] = 'Visualitza l\'activitat consulta';
+$string['choiceactivityname'] = 'Consulta: {$a}';
+$string['choiceclose'] = 'Permet respostes fins a';
+$string['choicecloseson'] = 'Tanca la consulta en {$a}';
 $string['choicefull'] = 'Una o més opcions de les que heu triat estan completes. La vostra resposta no s\'ha desat. Feu una altra selecció.';
 $string['choicename'] = 'Títol de la consulta';
 $string['choiceopen'] = 'Permet respostes des de';
@@ -48,10 +50,8 @@ $string['choiceoptions'] = 'Opcions de la tria';
 $string['choiceoptions_help'] = 'Aquí és on especifiqueu les opcions que els participants han de triar.
 
 Podeu emplenar les que vulgueu: en podeu deixar en blanc si no necessiteu les sis.';
-$string['choice:readresponses'] = 'Mostra les respostes';
 $string['choicesaved'] = 'S\'ha desat la consulta';
 $string['choicetext'] = 'Text de la consulta';
-$string['choice:view'] = 'Visualitza l\'activitat consulta';
 $string['chooseaction'] = 'Tria una acció...';
 $string['chooseoption'] = 'Tria: {$a}';
 $string['closebeforeopen'] = 'Heu especificat una data de tancament anterior a la data d\'obertura.';

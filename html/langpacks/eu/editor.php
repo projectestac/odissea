@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'editor', language 'eu', version '3.8'.
  *
- * @package   editor
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     editor
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -69,7 +69,7 @@ $string['formatblock'] = 'Formatua';
 $string['fullscreen'] = 'Pantaila osoko editorea';
 $string['heading'] = 'Izenburua';
 $string['height'] = 'Garaiera';
-$string['hilitecolor'] = 'Atzeko kolorea';
+$string['hilitecolor'] = 'Atzeko planoko kolorea';
 $string['horizontal'] = 'Horizontala';
 $string['horizontalrule'] = 'Marra horizontala';
 $string['htmlmode'] = 'Aldatu HTML iturburua';
@@ -104,7 +104,7 @@ $string['middle'] = 'Erdian';
 $string['minimize'] = 'Minimizatu editorea';
 $string['move'] = 'Mugitu';
 $string['multi'] = 'Multi';
-$string['mustenterurl'] = 'URLa zehaztu behar duzu';
+$string['mustenterurl'] = 'URLa jarri behar duzu';
 $string['nolink'] = 'Galarazi estekatze automatikoa';
 $string['normal'] = 'Normala';
 $string['notimage'] = 'Hautatutako artxiboa ez da irudi bat. Mesedez, aukeratu ezazu irudi bat!';

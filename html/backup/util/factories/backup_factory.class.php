@@ -105,7 +105,7 @@ abstract class backup_factory {
         }
         //XTEC ************ AFEGIT - Only enabled modules has to be backup
         //2015.07.01  @pferre22
-        if (!is_enabled_in_agora($coursemodule->modname) ){
+        if (function_exists('is_enabled_in_agora') && !is_enabled_in_agora($coursemodule->modname) ){
             throw new backup_task_exception('activity_task_coursemodule_not_found', $moduleid);
         }
         //************ FI

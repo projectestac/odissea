@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository', language 'it', version '3.8'.
  *
- * @package   repository
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,6 +57,7 @@ $string['cannotdownload'] = 'Non è possibile scaricare il file';
 $string['cannotdownloaddir'] = 'Non è possibile scaricare il folder';
 $string['cannotinitplugin'] = 'La chiamata plugin_init non è andata a buon fine';
 $string['cannotunzipcontentunreadable'] = 'Non è possibile decomprimere il file poiché non è stato possibile leggere il contenuto.';
+$string['cannotunzipquotaexceeded'] = 'Non è possibile decomprimere il file poiché supererebbero la dimensione massima di questa area bozze.';
 $string['choosealink'] = 'Scegli link...';
 $string['chooselicense'] = 'Tipo di licenza';
 $string['cleancache'] = 'Elimina i miei file dalla cache';
@@ -70,7 +71,7 @@ $string['configsyncfiletimeout'] = 'Il timeout in secondi per la sincronizzazion
 $string['configsyncimagetimeout'] = 'Il timeout in secondi per lo scaricamento di immagini da repository esterni durante la sincronizzazione.';
 $string['confirmdelete'] = 'Sei sicuro di eliminare il repository {$a} ?
 Se scegli "Prosegui e scarica", i file esterni collegati saranno copiati in Moodle. Tieni presente che il processo può durare molto tempo.';
-$string['confirmdeletefile'] = 'Sei sicuro di voler eliminare questo file?';
+$string['confirmdeletefile'] = 'Sei sicuro di eliminare questo file?';
 $string['confirmdeletefilewithhref'] = 'Sei sicuro di voler eliminare questo file? Sono presenti {$a} alias/scorciatoie che utilizzano il file. Proseguendo, gli alias saranno convertiti in copie del file.';
 $string['confirmdeletefolder'] = 'Sei sicuro di voler eliminare questa cartella? Saranno eliminati anche i file e le cartelle ivi contenute.';
 $string['confirmremove'] = 'Sei sicuro di voler eliminare questo repository plugin, le sue opzioni e <strong style=color:red>tutte le sue istanze</strong> - {$a}? Se scegli "Prosegui e scarica", i file esterni collegati saranno copiati in Moodle. Tieni presente che il processo può durare molto tempo.';

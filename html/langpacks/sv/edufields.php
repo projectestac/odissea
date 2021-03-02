@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'edufields', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'edufields', language 'sv', version '3.8'.
  *
- * @package   edufields
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     edufields
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,27 +37,27 @@ $string['field10105'] = 'Kemi (vetenskaper)';
 $string['field1010501'] = 'Organisk kemi';
 $string['field1010503'] = 'Oorganisk kemi';
 $string['field1010599'] = 'Kemi (vetenskaper, övriga)';
-$string['field10107'] = 'Jorden (vetenskaper)';
+$string['field10107'] = 'Geovetenskap';
 $string['field1010701'] = 'Atmosfären (vetenskaper)';
 $string['field1010703'] = 'Geologi';
 $string['field1010705'] = 'Geofysik';
 $string['field1010707'] = 'Geokemi';
-$string['field1010709'] = 'Jord (vetenskaper)';
+$string['field1010709'] = 'Markvetenskap';
 $string['field1010711'] = 'Hydrologi';
 $string['field1010713'] = 'Oceanografi';
-$string['field1010799'] = 'Jorden (vetenskaper, övriga)';
+$string['field1010799'] = 'Geovetenskap (övrigt)';
 $string['field10109'] = 'Biologi';
 $string['field1010901'] = 'Biokemi och cellbiologi';
 $string['field1010903'] = 'Botanik';
 $string['field1010905'] = 'Ekologi och evolution';
 $string['field1010907'] = 'Marin vetenskap';
-$string['field1010909'] = 'Gemetik';
+$string['field1010909'] = 'Genetik';
 $string['field1010911'] = 'Mikrobiologi';
-$string['field1010913'] = 'Biologi (människan)';
+$string['field1010913'] = 'Humanbiologi';
 $string['field1010915'] = 'Zoologi';
 $string['field1010999'] = 'Biologi (vetenskaper, övriga)';
 $string['field10199'] = 'Andra naturvetenskaper och fysik';
-$string['field1019901'] = 'Medicin (vetenskaper)';
+$string['field1019901'] = 'Medicin';
 $string['field1019903'] = 'Forensisk vetenskap';
 $string['field1019905'] = 'Mat (vetenskap) bioteknologi';
 $string['field1019907'] = 'Farmakologi';
@@ -72,7 +72,7 @@ $string['field1020107'] = 'Konstruktion av kompilatorer';
 $string['field1020109'] = 'Algoritmer';
 $string['field1020111'] = 'Datastrukturer';
 $string['field1020113'] = 'Nätverk och kommunikation';
-$string['field1020115'] = 'Datagrafik';
+$string['field1020115'] = 'Datorgrafik';
 $string['field1020117'] = 'Operativsystem';
 $string['field1020119'] = 'Artificiell intelligens';
 $string['field1020199'] = 'Datavetenskap (övriga)';
@@ -80,15 +80,49 @@ $string['field10203'] = 'Informationssystem (Systemvetenskap)';
 $string['field1020301'] = 'Konceptuell modellering';
 $string['field1020303'] = 'Administration av databaser';
 $string['field1020305'] = 'Systemanalys och design';
-$string['field1020307'] = 'System för beslutsstöd';
+$string['field1020307'] = 'Beslutsstödssystem';
 $string['field1020399'] = 'Informationssystem (övriga)';
 $string['field10299'] = 'Övrig informationsteknologi';
 $string['field1029901'] = 'Säkerhet (vetenskaper)';
 $string['field1029999'] = 'Informationsteknologi (övriga)';
 $string['field103'] = 'Ingeniörsvetenskap och relaterade teknologier';
 $string['field1030103'] = 'Tryck';
+$string['field1030105'] = 'Textiltillverkning';
+$string['field1030109'] = 'Skotillverkning';
+$string['field1030117'] = 'Möbelpolering';
+$string['field1030301'] = 'Kemiteknik';
+$string['field1030303'] = 'Gruvteknik';
+$string['field1030305'] = 'Materialteknik';
+$string['field1030307'] = 'Livsmedelsteknik';
 $string['field1030503'] = 'Fordonsmekanik';
-$string['field1030703'] = 'Industriell ingeniörskonst';
+$string['field1030703'] = 'Industriell ekonomi';
+$string['field1030705'] = 'Verktygstillverkning';
+$string['field10309'] = 'Civilingenjör';
+$string['field1030901'] = 'Byggnadsteknik';
+$string['field1030911'] = 'Geoteknik';
+$string['field1031101'] = 'Undersökningar';
+$string['field1031103'] = 'Kartvetenskap';
+$string['field1031301'] = 'Elteknik';
+$string['field1031303'] = 'Elektroteknik';
+$string['field1031305'] = '';
+$string['field1031307'] = 'Kommunikationsteknologier';
+$string['field1031315'] = 'Kylteknik';
+$string['field1031501'] = 'Rymdteknik';
+$string['field1031507'] = 'Flygledare';
+$string['field1039901'] = 'Miljöteknik';
+$string['field1039903'] = 'Biomedicinsk teknik';
+$string['field1039909'] = 'Rengöring';
+$string['field1040101'] = 'Arkitektur';
+$string['field1040105'] = 'Landskapsarkitektur';
+$string['field1040301'] = 'Byggnadsteknik';
+$string['field1040327'] = 'Rörmokeri';
+$string['field10501'] = 'Jordbruk';
+$string['field1050101'] = 'Lantbruksvetenskap';
+$string['field1050105'] = 'Djurhushållning';
+$string['field1050199'] = 'Jordbruk (Övrigt)';
+$string['field1050301'] = 'Hortikultur';
+$string['field1050303'] = 'Vinodling';
+$string['field1050701'] = 'Akvakultur';
 $string['field106'] = 'Hälsa';
 $string['field10601'] = 'Medicinska studier';
 $string['field1060101'] = 'Allmän medicin';
@@ -113,6 +147,7 @@ $string['field1060313'] = 'Palliativ Omvårdnad';
 $string['field1060399'] = 'Omvårdnad (övrigt)';
 $string['field10605'] = 'Farmakologi';
 $string['field1060501'] = 'Farmakologi';
+$string['field10607'] = 'Tandläkarstudier';
 $string['field1060701'] = 'Tandvård';
 $string['field1060799'] = 'Studier inom tandvård (övriga)';
 $string['field10609'] = 'Oftalmologi';
@@ -129,12 +164,17 @@ $string['field1061303'] = 'Miljömedicin';
 $string['field1061309'] = 'Sämhällsmedicin';
 $string['field1061311'] = 'Epidemiologi';
 $string['field1061399'] = 'Folkhälsovetenskap';
+$string['field10615'] = 'Röntgen';
+$string['field1061501'] = 'Röntgen';
 $string['field10617'] = 'Rehabilitation Therapi';
 $string['field1061701'] = 'Sjukgymnastik';
 $string['field1061703'] = 'Arbetsterapi';
 $string['field1061705'] = 'Kiropraktik och Osteopati';
 $string['field1061707'] = 'Logopedi';
 $string['field1061709'] = 'Audiologi';
+$string['field1061711'] = 'Massageterapi';
+$string['field1061713'] = 'Podiatri';
+$string['field1061901'] = 'Naturopatisk medicin';
 $string['field1061903'] = 'Akupunktur';
 $string['field1061905'] = 'Traditionell kinesisk medicin';
 $string['field10699'] = 'Övrigt hälsa';
@@ -144,6 +184,7 @@ $string['field1069907'] = 'Första hjälpen';
 $string['field1069999'] = 'Hälsa (Övrigt)';
 $string['field107'] = 'Utbildning';
 $string['field10701'] = 'Lärarutbildning';
+$string['field10799'] = 'Övrig utbildning';
 $string['field1079999'] = 'Utbildning (Annat)';
 $string['field108'] = 'Redovisning';
 $string['field10801'] = 'Redovisning';
@@ -151,9 +192,43 @@ $string['field1080301'] = 'Företagsledning';
 $string['field1080313'] = 'Offentlig och Hälso- och sjukvårdsadministration';
 $string['field1080315'] = '';
 $string['field1080317'] = 'Kvalitetsmanagament';
+$string['field1080501'] = 'Försäljning';
+$string['field1080503'] = 'Fastigheter';
+$string['field1080505'] = 'Marknadsföring';
+$string['field1080507'] = 'Reklam';
+$string['field10807'] = 'Turism';
+$string['field1080701'] = 'Turism';
+$string['field1081101'] = 'Bank och finans';
+$string['field1081103'] = 'Försäkringsvetenskap';
+$string['field1089903'] = 'Värdering';
+$string['field109'] = 'Samhälle och kultur';
+$string['field10901'] = 'Statsvetenskap och politiska studier';
+$string['field1090101'] = 'Statsvetenskap';
+$string['field1090103'] = 'Politiska studier';
+$string['field1090301'] = 'Sociologi';
+$string['field1090303'] = 'Antropologi';
+$string['field1090305'] = 'Historia';
+$string['field1090307'] = 'Arkeologi';
+$string['field1090309'] = 'Humangeografi';
+$string['field1090311'] = 'Minoritetsstudier';
+$string['field1090313'] = 'Genusstudier';
+$string['field1090501'] = 'Socialt arbete';
+$string['field1090503'] = 'Barnomsorg';
+$string['field1090505'] = 'Ungdomsarbete';
+$string['field1090507'] = 'Äldreomsorg';
 $string['field1090513'] = 'Rådgivning';
+$string['field1090515'] = 'Välfärdsstudier';
 $string['field10907'] = 'Beteendevetenskap';
 $string['field1090701'] = 'Psykologi';
+$string['field1090799'] = 'Beteendevetenskap (Övrigt)';
+$string['field10909'] = 'Juridik';
+$string['field1090903'] = 'Statsrätt';
+$string['field1090905'] = 'Straffrätt';
+$string['field1090907'] = 'Familjerätt';
+$string['field1090909'] = 'Internationell rätt';
+$string['field1090911'] = 'Skatterätt';
+$string['field1091105'] = 'Polisutbildning';
+$string['field1091303'] = 'Kuratoriska studier';
 $string['field10915'] = 'Språk och litteratur';
 $string['field1091501'] = 'Engelska språket';
 $string['field1091503'] = 'Nordeuropeiska språk';
@@ -161,6 +236,7 @@ $string['field1091505'] = 'Sydeuropeiska språk';
 $string['field1091507'] = 'Östeuropeiska språk';
 $string['field1091511'] = 'Sydasiatiska språk';
 $string['field1091513'] = 'Sydostasiatiska språk';
+$string['field1091515'] = 'Östasiatiska språk';
 $string['field1091519'] = 'Översättning och tolkning';
 $string['field1091521'] = 'Lingvistik';
 $string['field1091523'] = 'Litteratur';
@@ -168,13 +244,29 @@ $string['field1091599'] = 'Språk och litteratur (Övrigt)';
 $string['field10917'] = 'Filosofi och Religionsvetenskap';
 $string['field1091701'] = 'Filosofi';
 $string['field1091703'] = 'Religionsvetenskap';
+$string['field10919'] = 'Ekonomi och ekonometri';
 $string['field1091901'] = 'Ekonomi';
+$string['field1091903'] = 'Ekonometri';
 $string['field10921'] = 'Sport och fritid';
 $string['field1092101'] = 'Sport och fritidsaktiviteter';
 $string['field1092199'] = 'Sport och fritid (Övrigt)';
 $string['field1099903'] = 'Kriminologi';
+$string['field1099905'] = 'Säkerhetstjänster';
+$string['field110'] = 'Konst';
+$string['field11001'] = 'Scenkonst';
 $string['field1100101'] = 'Musik';
 $string['field1100105'] = 'Dans';
+$string['field1100199'] = 'Scenkonst (Övrigt)';
+$string['field1100301'] = 'De sköna konsterna';
 $string['field1100303'] = 'Fotografi';
 $string['field1100305'] = 'Konsthantverk';
 $string['field1100307'] = 'Smycketillverkning';
+$string['field1100309'] = 'Florist';
+$string['field1100503'] = 'Textildesign';
+$string['field1100505'] = 'Modedesign';
+$string['field1100703'] = 'Journalism';
+$string['field1100707'] = 'Verbal kommunikation';
+$string['field11099'] = 'Övrig konst';
+$string['field1110111'] = 'Livsmedelshygien';
+$string['field1110301'] = 'Skönhetsterapi';
+$string['field1110303'] = 'Hårfrisering';

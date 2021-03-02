@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assign', language 'zh_cn', version '3.8'.
  *
- * @package   assign
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assign
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = '您有需要留意的作业';
 $string['addattempt'] = '允许重做';
 $string['addnewattempt'] = '添加新尝试';
+$string['addnewattempt_help'] = '这将创建一个新的空白作业供您使用。';
 $string['addnewattemptfromprevious'] = '基于先前提交的作业添加新尝试';
 $string['addnewattemptfromprevious_help'] = '这会将您先前提交的作业复制到新作业中，以供您使用。';
-$string['addnewattempt_help'] = '这将创建一个新的空白作业供您使用。';
 $string['addnewgroupoverride'] = '添加组覆盖';
 $string['addnewuseroverride'] = '添加用户覆盖';
 $string['addsubmission'] = '添加作业';
@@ -49,13 +49,22 @@ $string['applytoteam'] = '将成绩和反馈应用到整个小组';
 $string['assign:addinstance'] = '添加新作业';
 $string['assign:editothersubmission'] = '编辑其他学生的作业';
 $string['assign:exportownsubmission'] = '导出自己的作业';
-$string['assignfeedback'] = '反馈插件';
-$string['assignfeedbackpluginname'] = '反馈插件';
 $string['assign:grade'] = '评分作业';
 $string['assign:grantextension'] = '准许延期';
 $string['assign:manageallocations'] = '管理分配了作业的批改人';
 $string['assign:managegrades'] = '检查并公布成绩';
 $string['assign:manageoverrides'] = '管理作业覆盖';
+$string['assign:receivegradernotifications'] = '接收作业评分提醒';
+$string['assign:releasegrades'] = '公布成绩';
+$string['assign:revealidentities'] = '公开学生身份';
+$string['assign:reviewgrades'] = '检查成绩';
+$string['assign:showhiddengrader'] = '看见隐藏的评分人的身份';
+$string['assign:submit'] = '提交作业';
+$string['assign:view'] = '查看作业';
+$string['assign:viewblinddetails'] = '启用盲批时查看学生身份';
+$string['assign:viewgrades'] = '查看成绩';
+$string['assignfeedback'] = '反馈插件';
+$string['assignfeedbackpluginname'] = '反馈插件';
 $string['assignmentisdue'] = '作业到期';
 $string['assignmentmail'] = '{$a->grader}已经给您的作业“{$a->assignment}”提供了一些反馈
 
@@ -67,17 +76,8 @@ $string['assignmentmailsmall'] = '{$a->grader}已经给您的作业“{$a->assig
 $string['assignmentname'] = '作业名称';
 $string['assignmentplugins'] = '作业插件';
 $string['assignmentsperpage'] = '每页作业数';
-$string['assign:receivegradernotifications'] = '接收作业评分提醒';
-$string['assign:releasegrades'] = '公布成绩';
-$string['assign:revealidentities'] = '公开学生身份';
-$string['assign:reviewgrades'] = '检查成绩';
-$string['assign:showhiddengrader'] = '看见隐藏的评分人的身份';
 $string['assignsubmission'] = '提交插件';
 $string['assignsubmissionpluginname'] = '提交插件';
-$string['assign:submit'] = '提交作业';
-$string['assign:view'] = '查看作业';
-$string['assign:viewblinddetails'] = '启用盲批时查看学生身份';
-$string['assign:viewgrades'] = '查看成绩';
 $string['attemptheading'] = '尝试 {$a->attemptnumber}：{$a->submissionsummary}';
 $string['attempthistory'] = '先前的尝试';
 $string['attemptnumber'] = '尝试数';
@@ -109,8 +109,8 @@ $string['batchoperationunlock'] = '解锁作业';
 $string['batchsetallocatedmarker'] = '为{$a}位选定的用户分配批改人。';
 $string['batchsetmarkingworkflowstateforusers'] = '为{$a}位选定的用户设置批改工作流程状态。';
 $string['blindmarking'] = '盲批';
-$string['blindmarkingenabledwarning'] = '此活动已启用盲批。';
 $string['blindmarking_help'] = '盲批，批改人看不到学生的身份信息。一旦完成了与该作业相关的提交或评分，盲批设置将被锁定。';
+$string['blindmarkingenabledwarning'] = '此活动已启用盲批。';
 $string['calendardue'] = '{$a} 已到期';
 $string['calendargradingdue'] = '{$a} 等待评分中';
 $string['changefilters'] = '变更过滤器';
@@ -139,9 +139,9 @@ $string['currentattempt'] = '这是第{$a}次尝试。';
 $string['currentattemptof'] = '这是第{$a->attemptnumber}次尝试(允许尝试{$a->maxattempts}次)';
 $string['currentgrade'] = '成绩册中的当前成绩';
 $string['cutoffdate'] = '截止日期';
+$string['cutoffdate_help'] = '如果设置，则该作业将在此日期之后不接受任何未获延期的提交。';
 $string['cutoffdatecolon'] = '截止日期：{$a}';
 $string['cutoffdatefromdatevalidation'] = '截止日期不能早于允许提交日期。';
-$string['cutoffdate_help'] = '如果设置，则该作业将在此日期之后不接受任何未获延期的提交。';
 $string['cutoffdatevalidation'] = '截止日期不能早于到期日期。';
 $string['defaultlayout'] = '恢复默认的布局';
 $string['defaultsettings'] = '默认的作业设置';
@@ -155,8 +155,8 @@ $string['downloadasfolders'] = '以文件夹下载作业';
 $string['downloadasfolders_help'] = '作业可以以文件夹下载。然后将每个作业放到一个单独的文件夹中，保留所有子文件夹的结构，文件没有重命名。';
 $string['downloadselectedsubmissions'] = '下载选定的作业';
 $string['duedate'] = '到期日期';
-$string['duedatecolon'] = '到期日期：{$a}';
 $string['duedate_help'] = '这是作业什么时候到期。到期后仍然允许学生提交作业，但所交作业会被标记为迟交。如果想在某个日期后阻止学生提交作业，则可以设置作业截止日期。';
+$string['duedatecolon'] = '到期日期：{$a}';
 $string['duedateno'] = '没有到期日期';
 $string['duedatereached'] = '此作业的到期日期现已过去';
 $string['duedatevalidation'] = '到期日期不能早于允许提交日期';
@@ -280,13 +280,13 @@ $string['hidegrader_help'] = '如果启用，则不会显示任何为作业评�
 $string['hideshow'] = '隐藏 / 显示';
 $string['inactiveoverridehelp'] = '* 由于用户对活动的访问受到限制，因此该覆盖无效。这可能是由于小组或角色分配，其他访问限制或活动被隐藏。';
 $string['indicator:cognitivedepth'] = '作业认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在作业活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '作业认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与人已经达到了作业活动所提供的认知参与度(级别=未查看、查看、提交、查看反馈、评论反馈、查看反馈后重新提交)';
-$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在作业活动中所达到的认知深度。';
 $string['indicator:socialbreadth'] = '作业社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在作业活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '作业社会广度';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔内，参与人达到了作业活动所提供的社会参与度(级别=没有参与，单独参与，和他人一起参与)';
-$string['indicator:socialbreadth_help'] = '这个指标是基于学生在作业活动中所达到的社会广度。';
 $string['instructionfiles'] = '说明文件';
 $string['introattachments'] = '附加文件';
 $string['introattachments_help'] = '可以添加在作业中使用的附加文件，例如答案模板，可以下载。文件的下载链接将显示在作业页面描述的下面。';
@@ -423,8 +423,8 @@ $string['privacy:metadata:userid'] = '用户 ID';
 $string['privacy:studentpath'] = '学生作业';
 $string['privacy:submissionpath'] = '作业';
 $string['quickgrading'] = '快速评分';
-$string['quickgradingchangessaved'] = '成绩更改已保存';
 $string['quickgrading_help'] = '快速评分允许您直接在作业表里分配评分（和成果）。快速评分与高级评分不兼容，当有多个批改人时，不推荐使用此评分方法。';
+$string['quickgradingchangessaved'] = '成绩更改已保存';
 $string['quickgradingresult'] = '快速评分';
 $string['recordid'] = '标识符';
 $string['relativedatessubmissionduedateafter'] = '课程开始后的{$a->datediffstr}';
@@ -466,9 +466,9 @@ $string['sendlatenotifications_help'] = '如果启用，评分人（通常就是
 $string['sendnotifications'] = '提交作业时通知评分人';
 $string['sendnotifications_help'] = '如果启用，则评分人（通常是老师）会在学生提交作业时收到一条通知消息，不管是提前、按时，还是迟交均会收到。消息的发送方式可配置。';
 $string['sendstudentnotifications'] = '通知学生';
+$string['sendstudentnotifications_help'] = '如果启用，学生将收到关于成绩或反馈更新的消息。如果在该作业中启用了批改工作流程，在成绩“已公布”之前不会发送通知。';
 $string['sendstudentnotificationsdefault'] = '"通知学生"的默认设置';
 $string['sendstudentnotificationsdefault_help'] = '为评分表单上“通知学生”复选框设置默认值。';
-$string['sendstudentnotifications_help'] = '如果启用，学生将收到关于成绩或反馈更新的消息。如果在该作业中启用了批改工作流程，在成绩“已公布”之前不会发送通知。';
 $string['sendsubmissionreceipts'] = '发送作业收据给学生';
 $string['sendsubmissionreceipts_help'] = '此开关为学生启用作业收据。学生每次成功提交作业都会收到通知。';
 $string['setmarkerallocationforlog'] = '设置批改分配： (ID={$a->id}，姓名={$a->fullname}，批改人={$a->marker})。';
@@ -512,23 +512,23 @@ $string['submissionslocked'] = '此作业不接受提交';
 $string['submissionslockedshort'] = '不允许更改作业';
 $string['submissionsnotgraded'] = '未评分的作业：{$a}';
 $string['submissionstatement'] = '作业声明';
+$string['submissionstatement_help'] = '作业声明，每个学生必须接受才能提交他们的作业。';
 $string['submissionstatementacceptedlog'] = '用户{$a}接受了作业声明';
 $string['submissionstatementdefault'] = '此作业是我自己的作品，除非我承认使用了他人的作品。';
-$string['submissionstatement_help'] = '作业声明，每个学生必须接受才能提交他们的作业。';
 $string['submissionstatementteamsubmission'] = '小组作业声明';
-$string['submissionstatementteamsubmissionallsubmit'] = '所有小组成员都提交的小组作业声明';
-$string['submissionstatementteamsubmissionallsubmitdefault'] = '此作业是我作为小组成员自己的作品，除非我承认使用了他人的作品。';
-$string['submissionstatementteamsubmissionallsubmit_help'] = '作业声明，每个学生必须接受才能以小组成员的身份提交他们的作业。';
-$string['submissionstatementteamsubmissiondefault'] = '此作业是我们小组的作品，除非我们承认使用了他人的作品。';
 $string['submissionstatementteamsubmission_help'] = '作业声明，每个学生必须接受才能提交他们小组的作业。';
+$string['submissionstatementteamsubmissionallsubmit'] = '所有小组成员都提交的小组作业声明';
+$string['submissionstatementteamsubmissionallsubmit_help'] = '作业声明，每个学生必须接受才能以小组成员的身份提交他们的作业。';
+$string['submissionstatementteamsubmissionallsubmitdefault'] = '此作业是我作为小组成员自己的作品，除非我承认使用了他人的作品。';
+$string['submissionstatementteamsubmissiondefault'] = '此作业是我们小组的作品，除非我们承认使用了他人的作品。';
 $string['submissionstatus'] = '作业状态';
 $string['submissionstatus_'] = '没有作业';
 $string['submissionstatus_draft'] = '草稿（未提交）';
-$string['submissionstatusheading'] = '作业状态';
 $string['submissionstatus_marked'] = '已评分';
 $string['submissionstatus_new'] = '没有作业';
 $string['submissionstatus_reopened'] = '重新开启';
 $string['submissionstatus_submitted'] = '已提交请评分';
+$string['submissionstatusheading'] = '作业状态';
 $string['submissionsummary'] = '{$a->status}。最后修改时间： {$a->timemodified}';
 $string['submissionteam'] = '小组';
 $string['submissiontypes'] = '作业类型';
@@ -547,9 +547,9 @@ $string['subplugintype_assignsubmission'] = '提交插件';
 $string['subplugintype_assignsubmission_plural'] = '提交插件';
 $string['teamname'] = '团队：{$a}';
 $string['teamsubmission'] = '学生小组提交';
+$string['teamsubmission_help'] = '如果启用，则将根据默认小组或自定义大组将学生分为几个小组。小组作业将在小组成员之间共享，小组中的所有成员都将看到彼此对作业所做的更改。';
 $string['teamsubmissiongroupingid'] = '学生小组的大组';
 $string['teamsubmissiongroupingid_help'] = '这是作业将用于为学生小组找到小组的大组。如果没有设置，将使用小组的默认设置。';
-$string['teamsubmission_help'] = '如果启用，则将根据默认小组或自定义大组将学生分为几个小组。小组作业将在小组成员之间共享，小组中的所有成员都将看到彼此对作业所做的更改。';
 $string['textinstructions'] = '作业说明';
 $string['timemodified'] = '最后修改';
 $string['timeremaining'] = '剩余时间';

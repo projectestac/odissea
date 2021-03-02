@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_numerical', language 'zh_cn', version '3.8'.
  *
- * @package   qtype_numerical
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_numerical
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,9 +64,9 @@ $string['onlynumerical'] = '完全不使用单位。只对数值评分。';
 $string['pleaseenterananswer'] = '请输入一个答案。';
 $string['pleaseenteranswerwithoutthousandssep'] = '输入的答案不要包含千位分隔符（{$a}）。';
 $string['pluginname'] = '数字题';
+$string['pluginname_help'] = '从学生角度看，数字题很像填空题。区别是，数字题可以设置可接受的误差范围，这样若干个不同的答案都可被看做是一个答案。例如，如果答案是10，可接受的误差是2，那么所有8到12之间的数字都被认为是正确的。';
 $string['pluginnameadding'] = '添加一道数字题';
 $string['pluginnameediting'] = '编辑一道数字题';
-$string['pluginname_help'] = '从学生角度看，数字题很像填空题。区别是，数字题可以设置可接受的误差范围，这样若干个不同的答案都可被看做是一个答案。例如，如果答案是10，可接受的误差是2，那么所有8到12之间的数字都被认为是正确的。';
 $string['pluginnamesummary'] = '答案为数字，可以包含单位。通过和多种标准答案比较来自动评分，有一定的容错能力。';
 $string['relative'] = '相对';
 $string['rightexample'] = '在右侧，例如 1.00 厘米或 1.00 公里';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'it', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,7 +70,7 @@ $string['check_guestrole_details'] = '<p>Il Ruolo ospite è utilizzato per gli o
 $string['check_guestrole_error'] = 'Il Ruolo di default per gli ospiti, "{$a}", non è definito in modo corretto.';
 $string['check_guestrole_name'] = 'Ruolo per gli ospiti';
 $string['check_guestrole_notset'] = 'Il Ruolo per gli ospiti non è impostato.';
-$string['check_guestrole_ok'] = 'Definizione del Ruolo per gli ospiti OK.';
+$string['check_guestrole_ok'] = 'Definizione del Ruolo ospite OK.';
 $string['check_mediafilterswf_details'] = '<p>L\'inserimento automatico di file swf è molto pericoloso. Un qualsiasi utente autenticato potrebbe lanciare un attacco XSS contro altri utenti nello stesso server. Questa impostazione deve essere disabilitata nei server in produzione.</p>';
 $string['check_mediafilterswf_error'] = 'Il filtro Plugin multimediali per file .swf è abilitato - impostazione molto pericolosa su qualsiasi server.';
 $string['check_mediafilterswf_name'] = 'Abilitazione filtro .swf';
@@ -79,6 +79,7 @@ $string['check_noauth_details'] = '<p>Il plugin <em>Senza autenticazione</em> no
 $string['check_noauth_error'] = 'Il plugin Senza autenticazione non deve essere usato su siti in produzione.';
 $string['check_noauth_name'] = 'Senza autenticazione';
 $string['check_noauth_ok'] = 'Il plugin Senza autenticazione è disabilitato.';
+$string['check_nodemodules_details'] = '<p>La cartella <em>{$a->path}</em> contiene i moduli Node.js e le relative dipendenze, generalmente installate dall\'utilià NPM. Possono essere essere necessari per lo sviluppo. La cartella non è necessario per siti in produzione e può anche contenere codice potenzialmente pericoloso esponendo il sito ad attacchi da remoto.</p><p>Si raccomanda caldamente di rimuovere la cartella qualora il sito sia accessibile pubblicamente oppure di impedirne l\'accesso pubblico.</p>';
 $string['check_nodemodules_info'] = 'La cartella node_modules non deve essere presente siti pubblici.';
 $string['check_nodemodules_name'] = 'Cartella del modulo Node.js';
 $string['check_openprofiles_details'] = '<p>I profili utente visibili senza login possono essere utilizzati dagli spammer. Si raccomanda di abilitare <code>Imponi il login per i profili</code> oppure <code>Imponi il login</code>.</p>';
@@ -101,10 +102,10 @@ $string['check_riskadmin_name'] = 'Amministratori';
 $string['check_riskadmin_ok'] = 'Sono stati individuati {$a} amministratore(i) del server.';
 $string['check_riskadmin_unassign'] = 'Controllare l\'attribuzione di ruolo <a href="{$a->url}">{$a->fullname} ({$a->email})';
 $string['check_riskadmin_warning'] = 'Sono stati individuati {$a->admincount} amministratori del server e {$a->unsupcount} assegnazioni non supportate del ruolo amministratore.';
-$string['check_riskbackup_detailsok'] = 'Nessun ruolo possiede il privilegio di eseguire backup con dati utente. Ciononostante, gli amministratori con il privilegio "doanything" potrebbero riuscire comunque ad effettuare backup con dati utente.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Queste modifiche ai ruoli danno agli utenti il privilegio di effettuare backup con dati utente. Accertati che tale privilegio sia realmente necessario.</p>{$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>I ruoli sotto elencati hanno il privilegio di eseguire backup con dati utente. Accertati che il privilegio sia realmente necessario.</p>{$a}';
 $string['check_riskbackup_details_users'] = '<p>Come conseguenza dei privilegi assegnati ai ruoli sopra elencati, i seguenti account dispongono del privilegio di effettuare backup con dati utente. Accertati che (a) siano utenti affidabili e che (b) le loro credenziali siano protette con password forti.</p>{$a}';
+$string['check_riskbackup_detailsok'] = 'Nessun ruolo possiede il privilegio di eseguire backup con dati utente. Ciononostante, gli amministratori con il privilegio "doanything" potrebbero riuscire comunque ad effettuare backup con dati utente.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} in {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Backup di dati utente';
@@ -121,6 +122,7 @@ $string['check_unsecuredataroot_error'] = 'La cartella dataroot <code>{$a}</code
 $string['check_unsecuredataroot_name'] = 'Dataroot non sicura';
 $string['check_unsecuredataroot_ok'] = 'La Dataroot non deve essere accessibile via web.';
 $string['check_unsecuredataroot_warning'] = 'La cartella dataroot <code>{$a}</code> si trova in una posizione errata e potrebbe essere esposta pubblicamente sul web!';
+$string['check_vendordir_details'] = '<p>La cartella fornitori <em>{$a->path}</em> contiene diverse librerie di terze parti e le relative dipendenze, generalmente installate da PHP Composer. Può essere necessaria per lo sviluppo locale oppure per la installazione di framework PHPUnit. La cartella può anche contenere codice potenzialmente pericoloso esponendo il sito ad attacchi da remoto.</p><p>Si raccomanda caldamente di rimuovere la cartella qualora il sito sia accessibile pubblicamente oppure di impedirne l\'accesso pubblico.</p>';
 $string['check_vendordir_info'] = 'La cartella fornitori non deve essere presente in siti pubblici';
 $string['check_vendordir_name'] = 'Cartella fornitori';
 $string['check_webcron_details'] = '<p>Lanciare il cron via web può rivelare informazioni sensibili ad utenti anonimi. Si raccomanda di lanciare il corn solo via linea di comando oppure di impostare una password per l\'elaborazione del cron via web</p>';

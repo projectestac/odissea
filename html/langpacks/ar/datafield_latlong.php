@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,19 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_latlong', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'datafield_latlong', language 'ar', version '3.8'.
  *
- * @package   datafield_latlong
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     datafield_latlong
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'حقل خطّ العرض/خط الطول';
-$string['pluginname'] = 'خط الطول و العرض';
-$string['privacy:metadata'] = 'إن مكون حقل خطي الطول والعرض لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل جداول معرفة في mod_data.';
+$string['fieldtypelabel'] = 'حقل خط الطول/العرض';
+$string['pluginname'] = 'خط الطول والعرض';
+$string['privacy:metadata'] = 'لا يخزن Latitude/longitude field  أي بيانات شخصية ، بل يستخدم جداول معرفة في mod_data.';

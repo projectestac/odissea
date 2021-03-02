@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,24 +12,25 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'gl', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Accións';
 $string['addinstance'] = 'Engadir instancia';
-$string['addlocksuccess'] = 'Engadido satisfactoriamente un novo bloqueo de instancia';
+$string['addlocksuccess'] = 'Engadiuse satisfactoriamente un novo bloqueo de instancia';
 $string['addnewlockinstance'] = 'Engadir un novo bloqueo de instancia';
 $string['addstore'] = 'Engadir almacén {$a}';
-$string['addstoresuccess'] = 'Engadido satisfactoriamente un novo almacén {$a}';
+$string['addstoresuccess'] = 'Engadiuse satisfactoriamente un novo almacén {$a}';
 $string['area'] = 'Área';
 $string['cacheadmin'] = 'Administración da caché';
 $string['cacheconfig'] = 'Configuración';
@@ -41,13 +41,13 @@ $string['cachedef_capabilities'] = 'Listado de prestacións do sistema';
 $string['cachedef_completion'] = 'Estado do completado da actividade';
 $string['cachedef_config'] = 'Axustes de configuración';
 $string['cachedef_contextwithinsights'] = 'Contexto con ideas';
+$string['cachedef_course_user_dates'] = 'As datas do usuario dos cursos definidas no modo de datas relativas';
 $string['cachedef_coursecat'] = 'Listas de categorías de cursos para un usuario en particular';
 $string['cachedef_coursecatrecords'] = 'Rexistros de categorías de cursos';
 $string['cachedef_coursecattree'] = 'Árbore de categorías de cursos';
 $string['cachedef_coursecompletion'] = 'Estado do completado do curso';
 $string['cachedef_coursecontacts'] = 'Lista de contactos do curso';
 $string['cachedef_coursemodinfo'] = 'Información acumulada sobre os módulos e seccións para cada curso';
-$string['cachedef_course_user_dates'] = 'As datas do usuario dos cursos definidas no modo de datas relativas';
 $string['cachedef_databasemeta'] = 'Meta Información da base de datos';
 $string['cachedef_eventinvalidation'] = 'Invalidación de evento';
 $string['cachedef_externalbadges'] = 'Insignias externas dun usuario concreto';
@@ -60,7 +60,7 @@ $string['cachedef_locking'] = 'Bloqueo';
 $string['cachedef_message_processors_enabled'] = 'Estado activado dos procesadores de mensaxes';
 $string['cachedef_message_time_last_message_between_users'] = 'Momento de creación para a mensaxe máis recente entre os usuarios';
 $string['cachedef_modelfirstanalyses'] = 'Primeira análise por modelo e analizábel';
-$string['cachedef_navigation_expandcourse'] = 'Cursos expansibles na navegación';
+$string['cachedef_navigation_expandcourse'] = 'Cursos expansíbeis na navegación';
 $string['cachedef_observers'] = 'Observadores do evento';
 $string['cachedef_plugin_functions'] = 'Chamadas de retorno de engadidos dispoñíbeis';
 $string['cachedef_plugin_manager'] = 'Xestor de información de engadido';
@@ -86,10 +86,10 @@ $string['component'] = 'Compoñente';
 $string['confirmlockdeletion'] = 'Confirmar a eliminación do bloqueo';
 $string['confirmstoredeletion'] = 'Confirmar a eliminación do almacén';
 $string['default_application'] = 'Almacén predeterminado de aplicacións';
-$string['defaultmappings'] = 'Almacéns usados cando non hai unha asignación presente';
-$string['defaultmappings_help'] = 'Estes son os almacéns predeterminados que serán usados se non asigna un ou máis almacéns para a definición da caché';
 $string['default_request'] = 'Almacén predeterminado de solicitude';
 $string['default_session'] = 'Almacén predeterminado de sesión';
+$string['defaultmappings'] = 'Almacéns usados cando non hai unha asignación presente';
+$string['defaultmappings_help'] = 'Estes son os almacéns predeterminados que serán usados se non asigna un ou máis almacéns para a definición da caché';
 $string['defaultstoreactions'] = 'Os almacéns predeterminados non poden modificarse';
 $string['definition'] = 'Definición';
 $string['definitionsummaries'] = 'Definicións de caché coñecidas';
@@ -103,7 +103,7 @@ $string['deletestoreconfirmation'] = 'Confirma que quere eliminar o almacén «{
 $string['deletestorehasmappings'] = 'Non pode eliminar este almacén porque ten asignacións. Elimine todas as asignacións antes de eliminar o almacén.';
 $string['deletestoresuccess'] = 'Eliminouse satisfactoriamente o bloqueo do almacén da caché.';
 $string['editdefinitionmappings'] = 'Asignación de almacén de definicións {$a}';
-$string['editdefinitionsharing'] = 'Editar a compartición de definición para {$a}';
+$string['editdefinitionsharing'] = 'Editar a definición da compartición para {$a}';
 $string['editmappings'] = 'Editar asignacións';
 $string['editsharing'] = 'Editar a compartición';
 $string['editstore'] = 'Editar o almacén';
@@ -118,12 +118,12 @@ $string['inadequatestoreformapping'] = 'Este almacén non cumpre cos requiriment
 $string['invalidlock'] = 'Bloqueo incorrecto';
 $string['invalidplugin'] = 'Engadido incorrecto';
 $string['invalidstore'] = 'O almacén de caché fornecido é incorrecto';
-$string['localstorenotification'] = 'Esta caché pode ser asignada con seguridade cara un almacén que sexa local para cada servidor web';
+$string['localstorenotification'] = 'Esta caché pode ser asignada con seguridade cara a un almacén que sexa local para cada servidor web';
 $string['lockdefault'] = 'Predeterminado';
 $string['locking'] = 'Bloqueo';
 $string['locking_help'] = 'O bloqueo é un mecanismo que restrinxe o acceso aos datos na caché a un proceso de vez, para impedir que os datos se sobrescriban. O método de bloqueo determina como se obtén o bloqueo e como se revisa.';
 $string['lockname'] = 'Nome';
-$string['locknamedesc'] = 'O nome debe ser único e soamente pode consistir dos seguintes caracteres: a-z A-Z _';
+$string['locknamedesc'] = 'O nome debe ser único e soamente pode consistir dos seguintes caracteres: a-zA-Z_';
 $string['locknamenotunique'] = 'O nome seleccionado non é único. Seleccione un nome único.';
 $string['locksummary'] = 'Resumo de instancias de bloqueo de caché';
 $string['locktype'] = 'Tipo';
@@ -152,25 +152,25 @@ $string['requestcount'] = 'Probar con {$a} solicitudes';
 $string['rescandefinitions'] = 'Volver revisar as definicións';
 $string['result'] = 'Resultado';
 $string['set'] = 'Estabelecer';
-$string['sharedstorenotification'] = 'Esta caché pode ser asignada cara un almacén que estea compartido por todos os servidores web';
+$string['sharedstorenotification'] = 'Esta caché pode ser asignada cara a un almacén que estea compartido por todos os servidores web';
 $string['sharing'] = 'Compartir';
 $string['sharing_all'] = 'Todos.';
 $string['sharing_help'] = 'Este axuste permítelle determinar como se poden os datos da caché se ten unha configuración en clúster, ou se ten varios sitios configurados para o mesmo almacén e quere compartir os datos. Esta é unha opción avanzada, asegúrese de que entende o seu propósito antes de cambiala.';
 $string['sharing_input'] = 'Chave personalizada (escribir embaixo)';
+$string['sharing_siteid'] = 'Sitios co mesmo ID de sitio.';
+$string['sharing_version'] = 'Sitios que executan a mesma versión.';
 $string['sharingrequired'] = 'Debe seleccionar cando menos unha compartición.';
 $string['sharingselected_all'] = 'Todos';
 $string['sharingselected_input'] = 'Chave personalizada';
 $string['sharingselected_siteid'] = 'Identificador do sitio';
 $string['sharingselected_version'] = 'Versión';
-$string['sharing_siteid'] = 'Sitios co mesmo ID de sitio.';
-$string['sharing_version'] = 'Sitios que executan a mesma versión.';
-$string['storeconfiguration'] = 'Configuración do almacén';
 $string['store_default_application'] = 'Almacén predeterminado de ficheiro para as cachés de aplicación';
 $string['store_default_request'] = 'Almacén estático predeterminado para as cachés de solicitudes';
 $string['store_default_session'] = 'Almacén predeterminado de sesión para as cachés de sesión';
+$string['storeconfiguration'] = 'Configuración do almacén';
 $string['storename'] = 'Nome do almacén';
-$string['storenamealreadyused'] = 'Ten que escoller un nome único para este almacén.';
 $string['storename_help'] = 'Isto estabelece o nome do almacén. Usase para identificar o almacén dentro do sistema e só pode consistir en caracteres a-z A-Z 0-9 -_ e espazos. Tamén ten que ser único. Se tenta usar un nome que xa teña sido usado, recibirá unha mensaxe de erro.';
+$string['storenamealreadyused'] = 'Ten que escoller un nome único para este almacén.';
 $string['storenameinvalid'] = 'Nome de almacén incorrecto. Só pode empregar a-z A-Z 0-9 - _ e espazos.';
 $string['storenotready'] = 'Almacenamento sen preparar';
 $string['storeperformance'] = 'Informe sobre o rendemento do almacén de caché - {$a} solicitudes únicas por operación.';

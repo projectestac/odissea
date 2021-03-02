@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'mimetypes', language 'fr', version '3.8'.
  *
- * @package   mimetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mimetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,7 +44,6 @@ $string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'
 $string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Feuille de calcul Excel 2007';
 $string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Modèle Excel 2007';
 $string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Document Word 2007';
-$string['application/xhtml_xml'] = 'Document XHTML';
 $string['application/x-iwork-keynote-sffkey'] = 'Présentation iWork Keynote';
 $string['application/x-iwork-numbers-sffnumbers'] = 'Feuille de calcul iWork Numbers';
 $string['application/x-iwork-pages-sffpages'] = 'Document iWork Pages';
@@ -52,6 +51,7 @@ $string['application/x-javascript'] = 'Source JavaScript';
 $string['application/x-mpegURL'] = 'Flux HTTP direct (HLS)';
 $string['application/x-mspublisher'] = 'Documents Publisher';
 $string['application/x-shockwave-flash'] = 'Animation flash';
+$string['application/xhtml_xml'] = 'Document XHTML';
 $string['archive'] = 'Archive ({$a->EXT})';
 $string['audio'] = 'Fichier audio ({$a->EXT})';
 $string['default'] = '{$a->mimetype}';

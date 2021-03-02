@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'ko', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,7 +40,7 @@ $string['cannotloadquestioninfo'] = '특정 질문 유형의 질문 정보를 �
 $string['changeoptions'] = '옵션 변경';
 $string['essayonly'] = '다음 질문은 수동으로 채점해야 합니다.';
 $string['grade'] = '성적';
-$string['gradeall'] = '모든 {$a} 시도 채점';
+$string['gradeall'] = '모두 채점';
 $string['gradeattemptsall'] = '모두 ({$a})';
 $string['gradeattemptsautograded'] = '자동으로 채점된 것들  ({$a}).';
 $string['gradeattemptsmanuallygraded'] = '이전에 수동으로 채점된 것들  ({$a}).';
@@ -49,6 +49,9 @@ $string['graded'] = '(채점됨)';
 $string['gradenextungraded'] = '미채점 {$a} 시도 채점';
 $string['gradeungraded'] = '미채점 {$a} 시도 모두 채점';
 $string['grading'] = '수동 채점';
+$string['grading:componentname'] = '수동 채점 보고서';
+$string['grading:viewidnumber'] = '채점시 학생 아이디 보기';
+$string['grading:viewstudentnames'] = '채점시 학생 이름 보기';
 $string['gradingall'] = '이 질문에는 모두 {$a} 시도가 있습니다.';
 $string['gradingattempt'] = '{$a->fullname} 의 {$a->attempt} 번째 시도';
 $string['gradingattemptsxtoyofz'] = '시도 채점 {$a->from} 부터  {$a->of}의 {$a->to} 까지';
@@ -59,8 +62,6 @@ $string['gradingquestionx'] = '질문 채점 {$a->number}: {$a->questionname}';
 $string['gradingreport'] = '수동 채점 보고서';
 $string['gradingungraded'] = '{$a} 미채점 시도';
 $string['gradinguser'] = '{$a} 에 대한 시도';
-$string['grading:viewidnumber'] = '채점시 학생 아이디 보기';
-$string['grading:viewstudentnames'] = '채점시 학생 이름 보기';
 $string['hideautomaticallygraded'] = '자동으로 채점된 질문 감추기';
 $string['inprogress'] = '진행 중';
 $string['invalidattemptid'] = '찾는 시도 ID가 없음';

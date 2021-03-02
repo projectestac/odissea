@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculated', language 'pt', version '3.8'.
  *
- * @package   qtype_calculated
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculated
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -111,10 +111,10 @@ $string['oneanswertrueansweroutsidelimits'] = 'Pelo menos uma resposta correta e
 $string['param'] = 'Variável {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Para qualquer resposta parcialmente correta';
 $string['pluginname'] = 'Numérica com variáveis';
-$string['pluginnameadding'] = 'A adicionar pergunta numérica com variáveis';
-$string['pluginnameediting'] = 'A editar pergunta numérica com variáveis';
 $string['pluginname_help'] = 'A pergunta Numérica com variáveis permite criar perguntas numéricas com variáveis <strong>{x..}</strong> que são substituídas por diferentes valores em cada nova tentativa de resolução. Por exemplo, a pergunta "Qual a área do retângulo de comprimento {l} e largura {w}?" teria como fórmula correta de resposta "{l}*{w}" (onde * é o símbolo de multiplicação).';
 $string['pluginname_link'] = 'pergunta/tipo/numericacomvariaveis';
+$string['pluginnameadding'] = 'A adicionar pergunta numérica com variáveis';
+$string['pluginnameediting'] = 'A editar pergunta numérica com variáveis';
 $string['pluginnamesummary'] = 'As perguntas numéricas com variáveis são idênticas às perguntas numéricas mas em que os números apresentados são selecionados aleatoriamente de uma série de conjuntos de valores definida previamente.';
 $string['possiblehdr'] = 'Possíveis variáveis presentes apenas no texto da pergunta';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo numérica com variáveis não armazena dados pessoais.';

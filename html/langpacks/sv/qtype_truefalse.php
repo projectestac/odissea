@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,30 +12,31 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_truefalse', language 'sv', version '3.8'.
  *
- * @package   qtype_truefalse
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_truefalse
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['correctanswer'] = 'Korrekt svar';
-$string['correctanswerfalse'] = 'Rätt svar är "Falskt".';
-$string['correctanswertrue'] = 'Rätt svar är "Sant".';
+$string['correctanswer'] = 'Det rätta svaret är';
+$string['correctanswerfalse'] = 'Det rätta svaret är "Falskt".';
+$string['correctanswertrue'] = 'Det rätta svaret är "Sant".';
 $string['false'] = 'Falskt';
-$string['feedbackfalse'] = 'Återkoppling (falskt)';
-$string['feedbacktrue'] = 'Återkoppling (sant)';
+$string['feedbackfalse'] = 'Återkoppling (Falskt)';
+$string['feedbacktrue'] = 'Återkoppling (Sant)';
 $string['pleaseselectananswer'] = 'Välj ett svar.';
 $string['pluginname'] = 'Sant/Falskt';
-$string['pluginnameadding'] = 'Lägger till en fråga av typen Sant/Falskt';
-$string['pluginnameediting'] = 'Redigerar en sant/falskt-fråga';
-$string['pluginname_help'] = 'Som svar på en fråga (som kan innehålla en bild) väljer den som svarar från sant eller falskt.';
-$string['pluginnamesummary'] = 'En enkel form av flervalsfråga med bara två val \'Sant\' och \'Falskt\'.';
+$string['pluginname_help'] = 'Som svar på en fråga (som kan innehålla en bild) väljer den som svarar mellan alternativen <code>Sant</code> eller <code>Falskt</code>.';
+$string['pluginnameadding'] = 'Lägger till en Sant/Falskt-fråga';
+$string['pluginnameediting'] = 'Redigerar en Sant/Falskt-fråga';
+$string['pluginnamesummary'] = 'En enkel form av flervalsfråga med bara de två valen "Sant" och "Falskt".';
 $string['privacy:metadata'] = 'Pluginmodulen för Sant/Falskt-frågetypen lagrar ingen personinformation.';
-$string['selectone'] = 'Välj en:';
+$string['selectone'] = 'Välj ett av alternativen:';
 $string['true'] = 'Sant';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'mnet', language 'pt', version '3.8'.
  *
- * @package   mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (auto-assinado)';
+$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (assinado)';
+$string['RPC_HTTP_PLAINTEXT'] = 'HTTP não encriptado';
+$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (auto-assinado)';
+$string['RPC_HTTP_VERIFIED'] = 'HTTP (assinado)';
 $string['aboutyourhost'] = 'Informação do servidor';
 $string['accesslevel'] = 'Nível de acesso';
 $string['addhost'] = 'Adicionar servidor';
@@ -45,8 +50,8 @@ $string['couldnotgetcert'] = 'Não foi encontrado nenhum certificado em <br />{$
 $string['couldnotmatchcert'] = 'Isto não coincide com o certificado atualmente publicado pelo servidor web.';
 $string['courses'] = 'disciplinas';
 $string['courseson'] = 'disciplinas em';
-$string['currentkey'] = 'Chave pública atual';
 $string['current_transport'] = 'Transporte atual';
+$string['currentkey'] = 'Chave pública atual';
 $string['databaseerror'] = 'Não foi possível escrever os detalhes na base de dados.';
 $string['deleteaserver'] = 'A eliminar um servidor';
 $string['deletedhostinfo'] = 'O servidor foi apagado. Se deseja anular a operação, altere o estado da eliminação para \'Não\'.';
@@ -62,8 +67,8 @@ $string['duplicate_usernames'] = 'Não foi possível criar um índice nas coluna
 $string['enabled_for_all'] = '(Este serviço foi ativado para todos os servidores).';
 $string['enterausername'] = 'Introduza um nome de utilizador, ou uma lista de nomes do utilizador, separados por vírgulas.';
 $string['error7020'] = 'Este erro ocorre normalmente quando o site externo criou um registo para o seu site com o wwwroot errado; por exemplo, https://oseusite.com em vez de http://www.oseusite.com. Contacte o administrador do site externo, com o wwwroot correto (está definido em config.php) e peça-lhe para atualizar o registo do seu site.';
-$string['error7022'] = 'A mensagem que enviou para o site remoto está devidamente encriptada, mas não está assinada, o que é muito surpreendente. Recomenda-se que submeta um ficheiro com informação do bug se tal voltar a acontecer (forneça o máximo de informação possível sobre as versões Moodle em questão, etc.)';
-$string['error7023'] = 'O site externo tentou descodificar a sua mensagem recorrendo a todas as chaves que tem registadas para o seu site. Todas elas falharam. Pode tentar resolver este problema, redefinindo as chaves com o site remoto, manualmente. Este problema não deve acontecer exceto se esteve sem comunicar com o site externo durante alguns meses.';
+$string['error7022'] = 'A mensagem que enviou para o site remoto está devidamente encriptada mas não está assinada. Isto não é previsto acontecer. É recomendável que submeta um ficheiro com a informação do bug, se tal voltar a acontecer (forneça o máximo de informação possível sobre as versões em questão, etc)';
+$string['error7023'] = 'O site externo tentou descodificar a sua mensagem recorrendo a todas as chaves que tem registadas para o seu site. Todas elas falharam. Pode tentar resolver este problema, redefinindo as chaves com o site remoto, manualmente. Este problema não deve acontecer excepto se esteve sem comunicar com o site externo durante alguns meses.';
 $string['error7024'] = 'Enviou uma mensagem não encriptada para o site remoto, mas este não aceita mensagens não encriptadas do seu site, o que é surpreendente. Recomenda-se que submeta um ficheiro com informação do bug se tal voltar a acontecer (forneça o máximo de informação possível sobre as versões Moodle em questão, etc.)';
 $string['error7026'] = 'A chave utilizada para assinar a sua mensagem é diferente da chave que o servidor remoto tem registada para o seu site. Além disso, o servidor remoto tentou obter a sua chave atual e não conseguiu. Redefina as chaves com o servidor remoto, manualmente, e tente de novo.';
 $string['error709'] = 'O site externo falhou na tentativa de obter uma chave SSL do seu site.';
@@ -92,9 +97,9 @@ $string['hostnamehelp'] = 'O nome completo e qualificado do domínio do servidor
 $string['hostnotconfiguredforsso'] = 'Este hub remoto do Moodle não está configurado para autenticação remota.';
 $string['hostsettings'] = 'Configurações do servidor';
 $string['http_self_signed_help'] = 'Permitir ligações usando um certificado auto-assinado DIY SSL no servidor remoto.';
+$string['http_verified_help'] = 'Permitir ligações usando um certificado SSL verificado no PHP no servidor remoto, mas sobre http (não https).';
 $string['https_self_signed_help'] = 'Permitir ligações usando DIY SSL auto-assinado, no PHP no servidor remoto sobre http.';
 $string['https_verified_help'] = 'Permitir ligações usando um certificado SSL verificado no servidor remoto.';
-$string['http_verified_help'] = 'Permitir ligações usando um certificado SSL verificado no PHP no servidor remoto, mas sobre http (não https).';
 $string['id'] = 'ID';
 $string['idhelp'] = 'Este valor é automaticamente atribuído e não pode ser alterado.';
 $string['importfields'] = 'Campos a importar';
@@ -129,6 +134,7 @@ $string['methodsavailableonhostinservice'] = 'Métodos disponíveis para {$a->se
 $string['methodsignature'] = 'Assinatura do método para {$a}';
 $string['mnet'] = 'Rede Moodle';
 $string['mnet_concatenate_strings'] = 'Concatenar (até) 3 strings e devolver o resultado';
+$string['mnet_session_prohibited'] = 'Utilizadores do seu servidor doméstico não têm permissão para navegar para {$a}.';
 $string['mnetdisabled'] = 'A Rede Moodle está <strong>desativada</strong>.';
 $string['mnetidprovider'] = 'Fornecedor de identidade para a Rede Moodle';
 $string['mnetidproviderdesc'] = 'Pode utilizar esta funcionalidade para obter uma hiperligação para iniciar sessão. Para isso, deverá indicar o e-mail que corresponda aos dados de acesso que utilizou para se autenticar.';
@@ -136,7 +142,6 @@ $string['mnetidprovidermsg'] = 'Deverá poder autenticar-se no seu fornecedor {$
 $string['mnetidprovidernotfound'] = 'Não foi possível encontrar mais informação.';
 $string['mnetpeers'] = 'Pares';
 $string['mnetservices'] = 'Serviços';
-$string['mnet_session_prohibited'] = 'Utilizadores do seu servidor doméstico não têm permissão para navegar para {$a}.';
 $string['mnetsettings'] = 'Configurações da Rede Moodle';
 $string['moodle_home_help'] = 'O caminho para a página principal do Moodle no servidor externo. Exemplo: /moodle/';
 $string['name'] = 'Nome';
@@ -159,11 +164,11 @@ $string['nosuchpublickey'] = 'Não é possível obter a chave pública para veri
 $string['nosuchservice'] = 'O serviço RPC não está a correr neste servidor.';
 $string['nosuchtransport'] = 'Não existe nenhum transporte com esse ID.';
 $string['notBASE64'] = 'Esta string não está com formato de codificação Base64. Não pode ser uma chave válida.';
-$string['notenoughidpinfo'] = 'O seu fornecedor de identidade não está a fornecer informação suficiente para que seja possível criar a sua conta localmente.';
+$string['notPEM'] = 'Esta chave não pode ser utilizada porque não está em formato PEM.';
 $string['not_in_range'] = 'O endereço de IP &nbsp;<code>{$a}</code>&nbsp; não representa um servidor válido de confiança.';
+$string['notenoughidpinfo'] = 'O seu fornecedor de identidade não está a fornecer informação suficiente para que seja possível criar a sua conta localmente.';
 $string['notinxmlrpcserver'] = 'Tentar aceder ao cliente externo da Rede Moodle, mas não durante a execução XMLRPC do servidor';
 $string['notmoodleapplication'] = 'AVISO: Esta não é uma Aplicação móvel Moodle, pelo que alguns métodos de inspeção podem não funcionar corretamente.';
-$string['notPEM'] = 'Esta chave não pode ser utilizada porque não está em formato PEM.';
 $string['notpermittedtojump'] = 'Não tem permissão para começar uma sessão remota a partir deste hub Moodle.';
 $string['notpermittedtojumpas'] = 'Não pode começar uma sessão remota enquanto estiver autenticado como outro utilizador.';
 $string['notpermittedtoland'] = 'Não tem permissão para começar uma sessão remota.';
@@ -205,11 +210,6 @@ $string['restore'] = 'Restaurar';
 $string['returnvalue'] = 'Valor de retorno';
 $string['reviewhostdetails'] = 'Rever detalhes do servidor';
 $string['reviewhostservices'] = 'Rever serviços do servidor';
-$string['RPC_HTTP_PLAINTEXT'] = 'HTTP não encriptado';
-$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (auto-assinado)';
-$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (auto-assinado)';
-$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (assinado)';
-$string['RPC_HTTP_VERIFIED'] = 'HTTP (assinado)';
 $string['selectaccesslevel'] = 'Selecione um nível de acesso na lista.';
 $string['selectahost'] = 'Selecione um servidor Moodle remoto.';
 $string['service'] = 'Nome do serviço';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'page', language 'gl', version '3.8'.
  *
- * @package   page
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     page
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,15 +33,15 @@ $string['displayoptions'] = 'Opcións dispoñíbeis de presentación';
 $string['displayselect'] = 'Presentar';
 $string['displayselectexplain'] = 'Seleccionar tipo de presentación.';
 $string['indicator:cognitivedepth'] = 'Páxina cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso páxina.';
 $string['indicator:cognitivedepthdef'] = 'Páxina cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo que ofrecen os recursos de Páxina durante este intervalo de análise (Niveis = Sen vista, Ver)';
 $string['indicator:cognitivedepthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Profundidade_cognitiva';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso páxina.';
 $string['indicator:socialbreadth'] = 'Páxina social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso páxina.';
 $string['indicator:socialbreadthdef'] = 'Páxina social';
 $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen os recursos de Páxina durante este intervalo de análise (Niveis = Sen participación, Participante en solitario)';
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
-$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso páxina.';
 $string['legacyfiles'] = 'Migración de ficheiros antigos de curso';
 $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Finalizada';
@@ -58,9 +58,9 @@ Unha páxina pode empregarse
 * Para incluír varios vídeos ou ficheiros de son xunto cun texto explicativo';
 $string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Páxinas';
-$string['optionsheader'] = 'Opcións';
-$string['page:addinstance'] = 'Engadir un novo recurso de páxina';
+$string['optionsheader'] = 'Presentar as opcións';
 $string['page-mod-page-x'] = 'Calquera páxina do módulo páxina';
+$string['page:addinstance'] = 'Engadir un novo recurso de páxina';
 $string['page:view'] = 'Ver contido da páxina';
 $string['pluginadministration'] = 'Administración do módulo páxina';
 $string['pluginname'] = 'Páxina';

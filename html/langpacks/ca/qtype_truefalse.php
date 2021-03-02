@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_truefalse', language 'ca', version '3.8'.
  *
- * @package   qtype_truefalse
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_truefalse
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,9 +33,9 @@ $string['feedbackfalse'] = 'Retroacció per la resposta \'Fals\'.';
 $string['feedbacktrue'] = 'Retroacció per la resposta \'Vertader\'.';
 $string['pleaseselectananswer'] = 'Trieu una resposta.';
 $string['pluginname'] = 'Vertader/Fals';
+$string['pluginname_help'] = 'En resposta a una pregunta (que pot incloure una imatge), l\'estudiant ha d\'escollir entre vertader i fals.';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de vertader/fals';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de vertader/fals';
-$string['pluginname_help'] = 'En resposta a una pregunta (que pot incloure una imatge), l\'estudiant ha d\'escollir entre vertader i fals.';
 $string['pluginnamesummary'] = 'Un senzill formulari equivalent a una pregunta d\'opció múltiple únicament amb les opcions «Vertader» i «Fals»';
 $string['selectone'] = 'Trieu-ne una:';
 $string['true'] = 'Vertader';

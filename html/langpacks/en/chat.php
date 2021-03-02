@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'chat', language 'en', version '3.8'.
  *
- * @package   chat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     chat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,13 +36,13 @@ $string['chat:chat'] = 'Access a chat room';
 $string['chat:deletelog'] = 'Delete chat logs';
 $string['chat:exportparticipatedsession'] = 'Export chat session which you took part in';
 $string['chat:exportsession'] = 'Export any chat session';
+$string['chat:readlog'] = 'View chat logs';
+$string['chat:talk'] = 'Talk in a chat';
+$string['chat:view'] = 'View chat activity';
 $string['chatintro'] = 'Description';
 $string['chatname'] = 'Name of this chat room';
-$string['chat:readlog'] = 'View chat logs';
 $string['chatreport'] = 'Chat sessions';
-$string['chat:talk'] = 'Talk in a chat';
 $string['chattime'] = 'Next chat time';
-$string['chat:view'] = 'View chat activity';
 $string['compact'] = 'Compact';
 $string['composemessage'] = 'Compose a message';
 $string['configmethod'] = 'The AJAX chat method provide an AJAX-based chat interface which contacts the server regularly for updates. The normal chat method involves clients regularly contacting the server for updates. It requires no configuration and works everywhere, but can create a large load on the server if many users are chatting.  Using a server daemon requires shell access to Unix, but it results in a fast scalable chat environment.';
@@ -72,15 +72,15 @@ $string['explainmethodnormal'] = 'These settings only have an effect if Normal i
 $string['generalconfig'] = 'General configuration';
 $string['idle'] = 'Idle';
 $string['indicator:cognitivedepth'] = 'Chat cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Chat activity.';
 $string['indicator:cognitivedepthdef'] = 'Chat cognitive';
 $string['indicator:cognitivedepthdef_help'] = 'The participant has reached this percentage of the cognitive engagement offered by the Chat activities during this analysis interval (Levels = No view, View, Submit, View feedback, Comment on feedback)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
-$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Chat activity.';
 $string['indicator:socialbreadth'] = 'Chat social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Chat activity.';
 $string['indicator:socialbreadthdef'] = 'Chat social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the Chat activities during this analysis interval (Levels = No participation, Participant alone, Participant with others)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Chat activity.';
 $string['inputarea'] = 'Input area';
 $string['invalidid'] = 'Could not find that chat room!';
 $string['list_all_sessions'] = 'List all sessions.';
@@ -113,8 +113,8 @@ $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Never delete messages';
 $string['nextsession'] = 'Next scheduled session';
-$string['nochat'] = 'No chat found';
 $string['no_complete_sessions_found'] = 'No complete sessions found.';
+$string['nochat'] = 'No chat found';
 $string['noguests'] = 'The chat is not open to guests';
 $string['nomessages'] = 'No messages yet';
 $string['nopermissiontoseethechatlog'] = 'You don\'t have permission to see the chat logs.';

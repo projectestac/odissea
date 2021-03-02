@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'iso6392', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'iso6392', language 'gl', version '3.8'.
  *
- * @package   iso6392
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     iso6392
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -72,7 +72,7 @@ $string['bej'] = 'Beja; Bedawiyet';
 $string['bel'] = 'Bieloruso';
 $string['bem'] = 'Bemba';
 $string['ben'] = 'Bengalí';
-$string['ber'] = 'Linguar bereber';
+$string['ber'] = 'Linguas bereberes';
 $string['bho'] = 'Bhojpuri';
 $string['bih'] = 'Linguas Bihari';
 $string['bik'] = 'Bikol';
@@ -145,7 +145,7 @@ $string['egy'] = 'Exipcio Antigo';
 $string['eka'] = 'Ekajuk';
 $string['ell'] = 'Grego Moderno (1453-)';
 $string['elx'] = 'Elamite';
-$string['eng'] = 'Inglés';
+$string['eng'] = 'Galego';
 $string['enm'] = 'Anglo Saxón Medio (1100-1500)';
 $string['epo'] = 'Esperanto';
 $string['est'] = 'Estonio';
@@ -191,7 +191,7 @@ $string['gsw'] = 'Suízo alemán; Alemánico; Alsaciano';
 $string['guj'] = 'Guxaratí';
 $string['gwi'] = 'Gwich\'in';
 $string['hai'] = 'Haida';
-$string['hat'] = 'haitiano; Crioulo haitiano';
+$string['hat'] = 'Haitiano; Crioulo haitiano';
 $string['hau'] = 'Hausa';
 $string['haw'] = 'Hawaiiano';
 $string['heb'] = 'Hebreo';
@@ -217,7 +217,7 @@ $string['ile'] = 'Interlingua; Occidental';
 $string['ilo'] = 'Iloko';
 $string['ina'] = 'Interlingua (IALA)';
 $string['inc'] = 'Linguas Índicas';
-$string['ind'] = 'indonesio';
+$string['ind'] = 'Indonesio';
 $string['ine'] = 'Linguas Indo-europeas';
 $string['inh'] = 'Ingush';
 $string['ipk'] = 'Inupiaq';

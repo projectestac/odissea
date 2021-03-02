@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'nl', version '3.8'.
  *
- * @package   assignsubmission_onlinetext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignsubmission_onlinetext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,5 +45,5 @@ $string['privacy:metadata:tablepurpose'] = 'Bewaart de ingezonden tekst voor elk
 $string['privacy:metadata:textpurpose'] = 'De eigenlijke tekst die ingestuurd is voor deze poging van de opdracht.';
 $string['privacy:path'] = 'Ingezonden tekst.';
 $string['wordlimit'] = 'Woordenlimiet';
-$string['wordlimitexceeded'] = 'Het aantal woorden voor deze opdracht is beperkt tot  {$a->limit} woorden en je probeert een opdracht met {$a->count} woorden in te sturen. Herbekijk je werk en probeer opnieuw.';
 $string['wordlimit_help'] = 'Als online tekst insturen is ingeschakeld, dan is dit het maximum aantal woorden dat elke leerling mag insturen.';
+$string['wordlimitexceeded'] = 'Het aantal woorden voor deze opdracht is beperkt tot  {$a->limit} woorden en je probeert een opdracht met {$a->count} woorden in te sturen. Herbekijk je werk en probeer opnieuw.';

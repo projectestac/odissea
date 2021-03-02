@@ -563,7 +563,7 @@ function get_module_types_names($plural = false) {
             foreach ($allmods as $mod) {
                 //XTEC ************ MODIFICAT - Added function to check which modules can appear in the list
                 //2012.11.06  @sarjona
-                if (is_enabled_in_agora($mod->name) && file_exists("$CFG->dirroot/mod/$mod->name/lib.php") && $mod->visible) {
+                if (function_exists('is_enabled_in_agora') && is_enabled_in_agora($mod->name) && file_exists("$CFG->dirroot/mod/$mod->name/lib.php") && $mod->visible) {
                 //************ ORIGINAL 
                 /*
                 if (file_exists("$CFG->dirroot/mod/$mod->name/lib.php") && $mod->visible) {

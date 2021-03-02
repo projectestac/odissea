@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'user', language 'pt', version '3.8'.
  *
- * @package   user
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     user
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -113,12 +113,12 @@ $string['privacy:metadata:token'] = 'Secretamente configurado e enviado ao utili
 $string['privacy:metadata:trackforums'] = 'Preferência para fóruns e sinalização de mensagens não lidas.';
 $string['privacy:metadata:trustbitmask'] = 'The trust bit mask';
 $string['privacy:metadata:url'] = 'O URL relacionado com este utilizador';
-$string['privacy:metadata:userid'] = 'O ID de utilizador hiperligado a esta tabela.';
-$string['privacy:metadata:username'] = 'O nome de utilizador para este utilizador.';
 $string['privacy:metadata:user_preferences'] = 'Preferência associados a determinado utilizador';
 $string['privacy:metadata:user_preferences:name'] = 'Nome de preferência';
 $string['privacy:metadata:user_preferences:userid'] = 'ID do utilizador';
 $string['privacy:metadata:user_preferences:value'] = 'Valor de preferência';
+$string['privacy:metadata:userid'] = 'O ID de utilizador hiperligado a esta tabela.';
+$string['privacy:metadata:username'] = 'O nome de utilizador para este utilizador.';
 $string['privacy:metadata:usertablesummary'] = 'Esta tabela armazena os dados pessoais principais sobre o utilizador.';
 $string['privacy:metadata:uuid'] = 'O fornecedor do dispositivo UUID';
 $string['privacy:metadata:version'] = 'A versão do dispositivo, 6.1.2, 4.2.2, etc...';

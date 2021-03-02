@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_missingtype', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_missingtype', language 'sv', version '3.8'.
  *
- * @package   qtype_missingtype
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_missingtype
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,4 +34,4 @@ $string['missingqtypewarning'] = 'Frågan är av en typ som för närvarande int
 $string['pluginname'] = 'Saknad typ';
 $string['pluginnameadding'] = 'Lägger till en fråga av en typ som inte finns installerad på det här systemet';
 $string['pluginnameediting'] = 'Redigera en fråga av en typ som inte finns installerad på det här systemet';
-$string['warningmissingtype'] = '<b>Den här frågan är av en typ som inte har installerats på ditt moodle än< br />Vänligen meddela din Moodle administratör. </b>';
+$string['warningmissingtype'] = '<b>Den här frågan är av en typ som inte har installerats på ditt Moodle än< br />Vänligen meddela din Moodle administratör. </b>';

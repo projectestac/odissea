@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'journal', language 'sv', version '3.8'.
  *
- * @package   journal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     journal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,6 +45,7 @@ $string['feedbackupdated'] = 'Återkoppling för {$a} inlägg har uppdaterats';
 $string['gradeingradebook'] = 'Aktuellt betyg i Betygsboken';
 $string['journal:addentries'] = 'Lägg till inlägg i journalen';
 $string['journal:addinstance'] = 'Lägg till instanser i journalen';
+$string['journal:manageentries'] = 'Hantera journalinlägg';
 $string['journalmail'] = '{$a->teacher} har gett återkoppling på ditt inlägg i journalen \'{$a->journal}\'
 
 Du kan se det i anslutning till ditt journalinlägg:
@@ -52,18 +53,21 @@ Du kan se det i anslutning till ditt journalinlägg:
 {$a->url}';
 $string['journalmailhtml'] = '{$a->teacher} har gett återkoppling på ditt inlägg i journalen \'<i>{$a->journal}</i>\'<br /><br />
 Du kan se det i anslutning till ditt <a href="{$a->url}">journalinlägg</a>.';
-$string['journal:manageentries'] = 'Hantera journalinlägg';
 $string['journalname'] = 'Namn på journal';
 $string['journalquestion'] = 'Journalfråga';
 $string['mailsubject'] = 'Återkoppling på journalen';
+$string['modulename'] = 'Utvecklingskontakt';
 $string['modulenameplural'] = 'Journaler';
 $string['needsregrade'] = 'Inlägget har ändrats sedan den senaste återkopplingen sparades.';
 $string['newjournalentries'] = 'Nya inlägg i journalen';
 $string['nodeadline'] = 'Alltid öppen';
 $string['noentriesmanagers'] = 'Det finns inga lärare';
 $string['noentry'] = 'Inget inlägg';
+$string['noratinggiven'] = 'Ingen betyg/omdöme avgivet';
 $string['notopenuntil'] = 'Denna journal öppnas först';
 $string['notstarted'] = 'Du har inte påbörjat denna journal än';
+$string['overallrating'] = 'Översiktligt om  betyg/omdömen';
+$string['rate'] = 'Värdera';
 $string['removeentries'] = 'Ta bort alla inlägg';
 $string['removemessages'] = 'Ta bort alla journalinlägg';
 $string['saveallfeedback'] = 'Spara all min återkoppling';

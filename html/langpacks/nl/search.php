@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'search', language 'nl', version '3.8'.
  *
- * @package   search
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     search
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -69,8 +69,8 @@ $string['enginenotinstalled'] = '{$a} niet geïnstalleerd.';
 $string['enginenotselected'] = 'U heeft geen zoekmachine gekozen.';
 $string['engineserverstatus'] = 'De zoekmachine is niet beschikbaar. Neem contact op met je beheerder.';
 $string['enteryoursearchquery'] = 'Geef je zoekopdracht';
-$string['errorareanotavailable'] = 'Zoekzone {$a} is niet beschikbaar.';
 $string['error_indexing'] = 'Er is een fout opgetreden bij het indexeren';
+$string['errorareanotavailable'] = 'Zoekzone {$a} is niet beschikbaar.';
 $string['errors'] = 'Fouten';
 $string['everywhere'] = 'Overal waar je toegang hebt';
 $string['filesinindexdirectory'] = 'Bestanden in indexmap';
@@ -90,7 +90,7 @@ $string['ittook'] = 'Het duurde';
 $string['matchingfile'] = 'Overeenkomst van bestand <span class="filename">{$a}</span';
 $string['matchingfiles'] = 'Overeenkomst van bestanden:';
 $string['mycoursesonly'] = 'Alleen mijn cursussen';
-$string['next'] = 'VolgendeAdm';
+$string['next'] = 'Volgende';
 $string['noindexmessage'] = 'Beheer: zo\'n index bestaat niet.';
 $string['noresults'] = 'Geen resultaat';
 $string['normalsearch'] = 'Normaal zoeken';
@@ -114,18 +114,18 @@ $string['schemanotupdated'] = 'Het zoekschema is verouderd.';
 $string['schemaversionunknown'] = 'De zoekrobot heeft geen weet van het de huidige schema-versie.';
 $string['score'] = 'Score';
 $string['search'] = 'Zoek';
-$string['searcharea'] = 'Zoekzone';
-$string['searchareacategories'] = 'Zoek gebied categorieën';
 $string['search:course'] = 'Cursussen';
 $string['search:customfield'] = 'Aangepaste velden voor cursussen';
-$string['searching'] = 'Zoeken in ...';
 $string['search:message_received'] = 'Berichten - ontvangen';
 $string['search:message_sent'] = 'Berichten - verzonden';
 $string['search:mycourse'] = 'Mijn cursussen';
-$string['searchnotpermitted'] = 'Je hebt het recht niet om te zoeken';
 $string['search:section'] = 'Cursussecties';
-$string['searchsetupdescription'] = 'Volgende stappen helpen je om Moodle globaal zoeken in te stellen.';
 $string['search:user'] = 'Gebruikers';
+$string['searcharea'] = 'Zoekzone';
+$string['searchareacategories'] = 'Zoek gebied categorieën';
+$string['searching'] = 'Zoeken in ...';
+$string['searchnotpermitted'] = 'Je hebt het recht niet om te zoeken';
+$string['searchsetupdescription'] = 'Volgende stappen helpen je om Moodle globaal zoeken in te stellen.';
 $string['searchwithin'] = 'Zoeken in';
 $string['seconds'] = 'seconden';
 $string['solutions'] = 'Oplossingen';

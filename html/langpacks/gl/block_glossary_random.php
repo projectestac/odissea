@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_glossary_random', language 'gl', version '3.8'.
  *
- * @package   block_glossary_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_glossary_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,7 +30,7 @@ $string['askaddentry'] = 'Cando se lle permita aos usuarios engadir entradas ao 
 $string['askinvisible'] = 'Cando os usuarios non poidan editar ou ver o glosario, amosar este texto (sen ligazón)';
 $string['askviewglossary'] = 'Cando os usuarios poidan ver o glosario nais non engadir entradas, amosar unha ligazón con este texto';
 $string['glossary_random:addinstance'] = 'Engadir un bloque de entrada aleatoria do glosario';
-$string['glossary_random:myaddinstance'] = 'Engadir un novo bloque de entrada aleatoria do glosario ao meu cartafol';
+$string['glossary_random:myaddinstance'] = 'Engadir un novo bloque de entrada aleatoria do glosario ao Taboleiro';
 $string['intro'] = 'Asegúrese de que ten polo menos un glosario cunha entrada. Entón poderá determinar a seguinte configuración';
 $string['invisible'] = '(continuará)';
 $string['lastmodified'] = 'Última entrada modificada';

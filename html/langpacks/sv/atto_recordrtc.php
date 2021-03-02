@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_recordrtc', language 'sv', version '3.8'.
  *
- * @package   atto_recordrtc
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_recordrtc
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowedtypes'] = 'Godkända typer';
-$string['allowedtypes_desc'] = 'Vilka inspelningsknappar ska visas i Atto';
+$string['allowedtypes_desc'] = 'Vilka inspelningsknappar som ska visas i Atto. Förutom den här inställningen finns det också funktioner som kan styra åtkomsten till knapparna till särskilda användare i särskilda sammanhang.';
 $string['attachrecording'] = 'Bifoga inspelning';
 $string['audioandvideo'] = 'Audio och video';
+$string['audiobitrate'] = 'Strömningshastighet - Ljud';
 $string['audiobitrate_desc'] = 'Ljudinspelningskvalitet (högre siffra innebär bättre kvalitet)';
 $string['audiortc'] = 'Spela in ljud';
 $string['gumabort'] = 'Något konstigt hände och webbkameran/mikrofonen kunde inte användas';
@@ -66,5 +67,6 @@ $string['uploadaborted'] = 'Uppladdning avbröts:';
 $string['uploadfailed'] = 'Fel vid uppladdning:';
 $string['uploadfailed404'] = 'Fel vid uppladdning: filen är för stor';
 $string['uploadprogress'] = 'Uppladdning färdig';
+$string['videobitrate'] = 'Strömningshastighet - Video';
 $string['videobitrate_desc'] = 'Videoinspelningskvalitet (högre siffra innebär bättre kvalitet)';
 $string['videortc'] = 'Spela in video';

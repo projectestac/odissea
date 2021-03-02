@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'el', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -67,12 +67,13 @@ $string['deleteselectedmessagesconfirm'] = 'Είστε βέβαιοι ότι θ�
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Σίγουρα θέλετε να διαγράψετε τα επιλεγμένα προσωπικά μηνύματα;';
 $string['disableall'] = 'Απενεργοποίηση ειδοποιήσεων';
 $string['disabled'] = 'Η ανταλλαγή μηνυμάτων έχει απενεργοποιηθεί σε αυτό τον ιστότοπο';
-$string['disallowed'] = 'Απαγορεύεται';
+$string['disallowed'] = 'Απογορεύεται';
 $string['editmessages'] = 'Επεξεργασία μηνυμάτων';
 $string['emailtagline'] = 'Αυτό είναι ένα αντίγραφο ενός μηνύματος που σας στάλθηκε στον ιστότοπο «{$a->sitename}». Μπορείτε να απαντήσετε στη διεύθυνση {$a->url}.';
 $string['enabled'] = 'Ενεργοποιημένο';
 $string['errorcallingprocessor'] = 'Σφάλμα κατά την κλήση του ορισμένου μέσου ειδοποίησης';
 $string['errorconversationdoesnotexist'] = 'Η συζήτηση δεν υπάρχει';
+$string['errormessagetoolong'] = 'Το μήνυμα είναι μεγαλύτερο από το μέγιστο επιτρεπόμενο.';
 $string['errortranslatingdefault'] = 'Σφάλμα μετάφρασης της προεπιλεγμένης ρύθμισης που παρέχεται από το πρόσθετο. Αντ\' αυτού γίνεται χρήση της προεπιλογής του συστήματος.';
 $string['eventgroupmessagesent'] = 'Το ομαδικό μήνυμα στάλθηκε';
 $string['eventmessagecontactadded'] = 'Η επαφή μηνυμάτων προστέθηκε';
@@ -98,11 +99,11 @@ $string['info'] = 'Πληροφορίες χρήστη';
 $string['isnotinyourcontacts'] = 'Ο/Η {$a} δεν βρίσκεται στις επαφές σας';
 $string['loadmore'] = 'Φόρτωσε περισσότερα';
 $string['loggedin'] = 'Εντός σύνδεσης';
-$string['loggedindescription'] = 'Όταν έχετε συνδεθεί στο Moodle';
 $string['loggedin_help'] = 'Προσαρμόστε το πώς επιθυμείτε να λαμβάνετε ειδοποιήσεις όταν έχετε συνδεθεί στη πλατφόρμα';
+$string['loggedindescription'] = 'Όταν έχετε συνδεθεί στο Moodle';
 $string['loggedoff'] = 'Εκτός σύνδεσης';
-$string['loggedoffdescription'] = 'Όταν δεν έχετε συνδεθεί στο Moodle';
 $string['loggedoff_help'] = 'Προσαρμόστε το πώς επιθυμείτε να λαμβάνετε ειδοποιήσεις όταν δεν έχετε συνδεθεί στο Moodle';
+$string['loggedoffdescription'] = 'Όταν δεν έχετε συνδεθεί στο Moodle';
 $string['managemessageoutputs'] = 'Προεπιλεγμένες προτιμήσεις ειδοποιήσεων';
 $string['message'] = 'Μήνυμα';
 $string['messagecontactrequestsnotification'] = 'Ο/Η {$a} ζητά να προστεθεί ως επαφή';
@@ -123,7 +124,7 @@ $string['messagepreferences'] = 'Προτιμήσεις μηνυμάτων';
 $string['messages'] = 'Μηνύματα';
 $string['messagesselected:'] = 'Επιλεγμένα μηνύματα:';
 $string['messagingdatahasnotbeenmigrated'] = 'Τα μηνύματά σας είναι προσωρινά μη διαθέσιμα λόγω αναβαθμίσεων στην υποδομή ανταλλαγής μηνυμάτων. Παρακαλούμε, περιμένετε να μετεγκατασταθούν (μεταφορά/μετατροπή).';
-$string['messagingdisabled'] = 'Η ανταλλαγή μηνυμάτων έχει απενεργοποιηθεί σε αυτό τον ιστότοπο. Αντί αυτών θα σταλούν μηνύματα ηλε.ταχυδρομείου.';
+$string['messagingdisabled'] = 'Η ανταλλαγή μηνυμάτων έχει απενεργοποιηθεί σε αυτό τον ιστότοπο. Aντί αυτών θα σταλούν μηνύματα ηλε.ταχυδρομείου';
 $string['muteconversation'] = 'Σίγαση';
 $string['mutedconversation'] = 'Συζήτηση σε σίγαση';
 $string['newmessage'] = 'Νέο μήνυμα';
@@ -164,7 +165,6 @@ $string['participants'] = 'Συμμετέχοντες';
 $string['pendingcontactrequests'] = 'Υπάρχουν {$a} αιτήματα επικοινωνίας σε εκκρεμότητα';
 $string['permitted'] = 'Επιτρέπεται';
 $string['privacy'] = 'Ιδιωτικότητα';
-$string['privacy_desc'] = 'Μπορείτε να περιορίσετε ποιος μπορεί να σας στείλει μήνυμα';
 $string['privacy:export:conversationprefix'] = 'Συζήτηση:';
 $string['privacy:metadata:core_favourites'] = 'Οι συνομιλίες που επισημάνθηκαν με αστερίσκο από το χρήστη';
 $string['privacy:metadata:message_contact_requests'] = 'Η λίστα των αιτημάτων επικοινωνίας';
@@ -184,6 +184,15 @@ $string['privacy:metadata:message_conversation_members'] = 'Η λίστα των
 $string['privacy:metadata:message_conversation_members:conversationid'] = 'Το αναγνωριστικό της συζήτησης';
 $string['privacy:metadata:message_conversation_members:timecreated'] = 'Πότε δημιουργήθηκε/εντάχθηκε το μέλος';
 $string['privacy:metadata:message_conversation_members:userid'] = 'Το αναγνωριστικό ενός χρήστη σε μια συζήτηση';
+$string['privacy:metadata:message_user_actions'] = 'Η λίστα των ενεργειών χρηστών για μηνύματα';
+$string['privacy:metadata:message_user_actions:action'] = 'Η ενέργεια που πραγματοποιήθηκε';
+$string['privacy:metadata:message_user_actions:messageid'] = 'Το αναγνωριστικό του μηνύματος στο οποίο αυτή η ενέργεια ανήκει';
+$string['privacy:metadata:message_user_actions:timecreated'] = 'Πότε δημιουργήθηκε η ενέργεια';
+$string['privacy:metadata:message_user_actions:userid'] = 'Το αναγνωριστικό του χρήστη που εκτέλεσε αυτή την ενέργεια';
+$string['privacy:metadata:message_users_blocked'] = 'Η λίστα των αποκλεισμένων χρηστών';
+$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'Το αναγνωριστικό του χρήστη που αποκλείστηκε';
+$string['privacy:metadata:message_users_blocked:timecreated'] = 'Η ώρα δημιουργίας της ενέργειας αποκλεισμού';
+$string['privacy:metadata:message_users_blocked:userid'] = 'Το αναγνωριστικό του χρήστη που πραγματοποίησε την ενέργεια αποκλεισμού';
 $string['privacy:metadata:messages'] = 'Μηνύματα';
 $string['privacy:metadata:messages:conversationid'] = 'Το αναγνωριστικό της συνομιλίας';
 $string['privacy:metadata:messages:customdata'] = 'Προσαρμοσμένα δεδομένα, που συνήθως περιέχουν εσωτερικά αναγνωριστικά και μια δημόσια διεύθυνση URL της εικόνας του αποστολέα (χρήστης ή ομάδα)';
@@ -194,15 +203,6 @@ $string['privacy:metadata:messages:smallmessage'] = 'Μια μικρή έκδο�
 $string['privacy:metadata:messages:subject'] = 'Το θέμα του μηνύματος';
 $string['privacy:metadata:messages:timecreated'] = 'Η ώρα δημιουργίας του μηνύματος';
 $string['privacy:metadata:messages:useridfrom'] = 'Το αναγνωριστικό του χρήστη που έστειλε το μήνυμα';
-$string['privacy:metadata:message_user_actions'] = 'Η λίστα των ενεργειών χρηστών για μηνύματα';
-$string['privacy:metadata:message_user_actions:action'] = 'Η ενέργεια που πραγματοποιήθηκε';
-$string['privacy:metadata:message_user_actions:messageid'] = 'Το αναγνωριστικό του μηνύματος στο οποίο αυτή η ενέργεια ανήκει';
-$string['privacy:metadata:message_user_actions:timecreated'] = 'Πότε δημιουργήθηκε η ενέργεια';
-$string['privacy:metadata:message_user_actions:userid'] = 'Το αναγνωριστικό του χρήστη που εκτέλεσε αυτή την ενέργεια';
-$string['privacy:metadata:message_users_blocked'] = 'Η λίστα των αποκλεισμένων χρηστών';
-$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'Το αναγνωριστικό του χρήστη που αποκλείστηκε';
-$string['privacy:metadata:message_users_blocked:timecreated'] = 'Η ώρα δημιουργίας της ενέργειας αποκλεισμού';
-$string['privacy:metadata:message_users_blocked:userid'] = 'Το αναγνωριστικό του χρήστη που πραγματοποίησε την ενέργεια αποκλεισμού';
 $string['privacy:metadata:notifications'] = 'Ειδοποιήσεις';
 $string['privacy:metadata:notifications:component'] = 'Το στοιχείο λογισμικού που είναι υπεύθυνο για την αποστολή της ειδοποίησης';
 $string['privacy:metadata:notifications:contexturl'] = 'Η διεύθυνση URL που σχετίζεται με αυτή την ειδοποίηση';
@@ -220,6 +220,7 @@ $string['privacy:metadata:notifications:useridfrom'] = 'Το αναγνωρισ�
 $string['privacy:metadata:notifications:useridto'] = 'Το αναγνωριστικό του χρήστη που έλαβε την ειδοποίηση';
 $string['privacy:metadata:preference:core_message_settings'] = 'Ρυθμίσεις σχετικές με την ανταλλαγή μηνυμάτων';
 $string['privacy:request:preference:set'] = 'Η τιμή των ρυθμίσεων «{$a->name}» ήταν «{$a->value}»';
+$string['privacy_desc'] = 'Μπορείτε να περιορίσετε ποιος μπορεί να σας στείλει μήνυμα';
 $string['processorsettings'] = 'Ρυθμίσεις επεξεργαστή';
 $string['removecontact'] = 'Αφαίρεση επαφής';
 $string['removecontactconfirm'] = 'Είστε βέβαιοι ότι θέλετε να καταργήσετε τον/την {$a} από τις επαφές σας;';

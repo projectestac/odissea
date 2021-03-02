@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_mobile', language 'el', version '3.8'.
  *
- * @package   tool_mobile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_mobile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -67,7 +67,7 @@ $string['displayerrorswarning'] = 'Η εμφάνιση μηνυμάτων εντ
 $string['downloadcourse'] = 'Λήψη μαθήματος';
 $string['downloadcourses'] = 'Λήψη μαθημάτων';
 $string['enablesmartappbanners'] = 'Ενεργοποίηση πανό εφαρμογής κινητού';
-$string['enablesmartappbanners_desc'] = 'Αν ενεργοποιηθεί, ένα πανό προώθησης της εφαρμογής κινητού θα εμφανιστεί όταν αποκτάτε πρόσβαση στον ιστότοπο μέσω περιηγητή κινητού.';
+$string['enablesmartappbanners_desc'] = 'Αν ενεργοποιηθεί, μια εικόνα προώθησης της εφαρμογής κινητού θα εμφανιστεί όταν αποκτάτε πρόσβαση στον ιστότοπο μέσω περιηγητή κινητού.';
 $string['forcedurlscheme'] = 'Αν θέλετε να επιτρέπετε μόνο στην δική σας εφαρμογή κινητού να ανοίγει μέσω ενός παραθύρου περιηγητή, τότε καθορίστε το σχήμα της URL διεύθυνσής της εδώ. Αν θέλετε να επιτρέψετε μόνο την επίσημη εφαρμογή, τότε δώστε την προεπιλεγμένη τιμή. Αφήστε το πεδίο κενό αν θέλετε να επιτρέπεται οποιαδήποτε εφαρμογή κινητού.';
 $string['forcedurlscheme_key'] = 'Διεύθυνση URL σχήματος';
 $string['forcelogout'] = 'Υποχρεωτική αποσύνδεση';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_ldap', language 'en', version '3.8'.
  *
- * @package   auth_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,14 +40,12 @@ $string['auth_ldap_contexts_key'] = 'Contexts';
 $string['auth_ldap_create_context'] = 'If you enable user creation with email confirmation, specify the context where users are created. This context should be different from other users to prevent security issues. You don\'t need to add this context to ldap_context-variable, Moodle will search for users from this context automatically.<br /><b>Note!</b> You have to modify the method user_create() in file auth/ldap/auth.php to make user creation work';
 $string['auth_ldap_create_context_key'] = 'Context for new users';
 $string['auth_ldap_create_error'] = 'Error creating user in LDAP.';
-$string['auth_ldapdescription'] = 'This method provides authentication against an external LDAP server. If the given username and password are valid, Moodle creates a new user entry in its database. This plugin can read user attributes from LDAP and prefill wanted fields in Moodle. For following logins only the username and password are checked.';
 $string['auth_ldap_expiration_desc'] = 'Select \'{$a->no}\' to disable expired password checking or \'{$a->ldapserver}\' to read the password expiry time directly from the LDAP server.';
 $string['auth_ldap_expiration_key'] = 'Expiry';
 $string['auth_ldap_expiration_warning_desc'] = 'Number of days before password expiry warning is issued.';
 $string['auth_ldap_expiration_warning_key'] = 'Expiry warning';
 $string['auth_ldap_expireattr_desc'] = 'Optional: Overrides the LDAP attribute that stores password expiry time.';
 $string['auth_ldap_expireattr_key'] = 'Expiry attribute';
-$string['auth_ldapextrafields'] = 'These fields are optional.  You can choose to pre-fill some Moodle user fields with information from the <b>LDAP fields</b> that you specify here. <p>If you leave these fields blank, then nothing will be transferred from LDAP and Moodle defaults will be used instead.</p><p>In either case, the user will be able to edit all of these fields after they log in.</p>';
 $string['auth_ldap_graceattr_desc'] = 'Optional: Overrides grace login attribute';
 $string['auth_ldap_gracelogin_key'] = 'Grace login attribute';
 $string['auth_ldap_gracelogins_desc'] = 'Enable LDAP grace login support. After password has expired, user can log in until grace login count is 0. Enabling this setting displays grace login message if password has expired.';
@@ -63,11 +61,10 @@ $string['auth_ldap_memberattribute'] = 'Optional: Overrides user member attribut
 $string['auth_ldap_memberattribute_isdn'] = 'Overrides handling of member attribute values';
 $string['auth_ldap_memberattribute_isdn_key'] = 'Member attribute uses dn';
 $string['auth_ldap_memberattribute_key'] = 'Member attribute';
+$string['auth_ldap_no_mbstring'] = 'You need the mbstring extension to create users in Active Directory.';
 $string['auth_ldap_noconnect'] = 'LDAP-module cannot connect to server: {$a}';
 $string['auth_ldap_noconnect_all'] = 'LDAP-module cannot connect to any servers: {$a}';
 $string['auth_ldap_noextension'] = '<em>The PHP LDAP module does not seem to be present. Please ensure it is installed and enabled if you want to use this authentication plugin.</em>';
-$string['auth_ldap_no_mbstring'] = 'You need the mbstring extension to create users in Active Directory.';
-$string['auth_ldapnotinstalled'] = 'Cannot use LDAP authentication. The PHP LDAP module is not installed.';
 $string['auth_ldap_objectclass'] = 'Optional: Overrides objectClass used to name/search users on ldap_user_type. Usually you don\'t need to change this.';
 $string['auth_ldap_objectclass_key'] = 'Object class';
 $string['auth_ldap_opt_deref'] = 'Determines how aliases are handled during search. Select one of the following values: "No" (LDAP_DEREF_NEVER) or "Yes" (LDAP_DEREF_ALWAYS)';
@@ -96,6 +93,9 @@ $string['auth_ldap_usertypeundefined'] = 'config.user_type not defined or functi
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type not defined or function ldap_unixi2expirationtime does not support selected type!';
 $string['auth_ldap_version'] = 'The version of the LDAP protocol your server is using.';
 $string['auth_ldap_version_key'] = 'Version';
+$string['auth_ldapdescription'] = 'This method provides authentication against an external LDAP server. If the given username and password are valid, Moodle creates a new user entry in its database. This plugin can read user attributes from LDAP and prefill wanted fields in Moodle. For following logins only the username and password are checked.';
+$string['auth_ldapextrafields'] = 'These fields are optional.  You can choose to pre-fill some Moodle user fields with information from the <b>LDAP fields</b> that you specify here. <p>If you leave these fields blank, then nothing will be transferred from LDAP and Moodle defaults will be used instead.</p><p>In either case, the user will be able to edit all of these fields after they log in.</p>';
+$string['auth_ldapnotinstalled'] = 'Cannot use LDAP authentication. The PHP LDAP module is not installed.';
 $string['auth_ntlmsso'] = 'NTLM SSO';
 $string['auth_ntlmsso_enabled'] = 'Set to yes to attempt Single Sign On with the NTLM domain. Note that this requires additional setup on the server to work. For further details, see the documentation <a href="https://docs.moodle.org/en/NTLM_authentication">NTLM authentication</a>.';
 $string['auth_ntlmsso_enabled_key'] = 'Enable';
@@ -159,9 +159,9 @@ $string['updateremfail'] = 'Error updating LDAP record. Error code: {$a->errno};
 $string['updateremfailamb'] = 'Failed to update LDAP with ambiguous field {$a->key}; old moodle value: \'{$a->ouvalue}\', new value: \'{$a->nuvalue}\'';
 $string['updateremfailfield'] = 'Failed to update LDAP with non-existent field (\'{$a->ldapkey}\'). Key ({$a->key}) - old Moodle value: \'{$a->ouvalue}\' new value: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Could not find user while updating externally. Details follow: search base: \'{$a->userdn}\'; search filter: \'(objectClass=*)\'; search attributes: {$a->attribs}';
-$string['useracctctrlerror'] = 'Error getting userAccountControl for {$a}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() does not support selected usertype: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() does not support selected usertype: {$a}';
+$string['useracctctrlerror'] = 'Error getting userAccountControl for {$a}';
 $string['userentriestoadd'] = 'User entries to be added: {$a}';
 $string['userentriestoremove'] = 'User entries to be removed: {$a}';
 $string['userentriestorevive'] = 'User entries to be revived: {$a}';

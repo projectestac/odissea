@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hotpot', language 'fr', version '3.8'.
  *
- * @package   hotpot
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hotpot
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -97,6 +97,7 @@ $string['confirmdeleteattempts'] = 'Voulez-vous vraiment supprimer ces tentative
 $string['confirmstop'] = 'Voulez-vous vraiment quitter cette page ?';
 $string['correct'] = 'Correct';
 $string['couldnotinsertsubmissionform'] = 'Impossible d\'insérer le formulaire d\'envoi';
+$string['d_index'] = 'Index de discrimination';
 $string['delay1'] = 'Délai 1';
 $string['delay1_help'] = 'Le délai minimm entre la première et la seconde tentative.';
 $string['delay1summary'] = 'Délai entre la première et la seconde tentative.';
@@ -104,8 +105,6 @@ $string['delay2'] = 'Délai 2';
 $string['delay2_help'] = 'Le délai minimum entre les tentatives après la seconde tentative.';
 $string['delay2summary'] = 'Délai entre les tentatives après la seconde tentative.';
 $string['delay3'] = 'Délai 3';
-$string['delay3afterok'] = 'Attendre que les participants cliquent sur OK';
-$string['delay3disable'] = 'Ne pas continuer automatiquement';
 $string['delay3_help'] = 'Ce paramètre définit le délai entre la fin du test et le retour à Moodle.
 
 ** Utiliser un temps défini (en secondes) **
@@ -121,13 +120,14 @@ $string['delay3_help'] = 'Ce paramètre définit le délai entre la fin du test 
 : Le retour à Moodle ne sera pas automatique. Le participant pourra aller où bon lui semble.
 
 Dans tous les cas, le résultat du test est envoyé immédiatement après la fin du test ou à l\'abandon du test, indépendamment de ce paramètre.';
+$string['delay3afterok'] = 'Attendre que les participants cliquent sur OK';
+$string['delay3disable'] = 'Ne pas continuer automatiquement';
 $string['delay3specific'] = 'Utiliser une durée spécifique (en secondes)';
 $string['delay3summary'] = 'Délai à la fin du test';
 $string['delay3template'] = 'Utiliser les réglages du fichier source/modèle';
 $string['deleteallattempts'] = 'Supprimer toutes les tentatives';
 $string['deleteattempts'] = 'Suppression des tentatives';
 $string['detailsrecords'] = 'Enregistrements des détails de HotPotatoes';
-$string['d_index'] = 'Index de discrimination';
 $string['duration'] = 'Durée';
 $string['enablecache'] = 'Activer le cache HotPotatoes';
 $string['enablecron'] = 'Activer le cron HotPotatoes';
@@ -135,8 +135,10 @@ $string['enablemymoodle'] = 'Afficher HotPotatoes dans le Tableau de bord';
 $string['enableobfuscate'] = 'Activer la dissimulation du code du lecteur multimédia';
 $string['enableswf'] = 'Autoriser l\'intégration de fichiers SWF dans les activités HotPotatoes';
 $string['entry_attempts'] = 'Tentatives';
+$string['entry_dates'] = 'Dates';
+$string['entry_grading'] = 'Évaluation';
+$string['entry_title'] = 'Nom de l\'unité en tant que titre';
 $string['entrycm'] = 'Activité précédente';
-$string['entrycmcourse'] = 'Activité précédente dans ce cours';
 $string['entrycm_help'] = 'Ce paramètre définit une activité Moodle et une note minimale à atteindre pour une activité nécessaire avant la tentative de ce test.
 
 L\'enseignant peut spécifier une activité bien précise ou l\'un de ces choix :
@@ -145,12 +147,11 @@ L\'enseignant peut spécifier une activité bien précise ou l\'un de ces choix�
 * activité précédente de cette section de cours
 * activité HotPotatoes précédente de ce cours
 * activité HotPotatoes précédente de cette section de cours';
+$string['entrycmcourse'] = 'Activité précédente dans ce cours';
 $string['entrycmsection'] = 'Activité précédente dans cette section de cours';
 $string['entrycompletionwarning'] = 'Avant de commencer cette activité, vous devez consulter {$a}';
-$string['entry_dates'] = 'Dates';
 $string['entrygrade'] = 'Note de l\'activité récédente';
 $string['entrygradewarning'] = 'Vous ne pouvez pas commencer cette activité tant que votre score ne dépasse pas {$a->entrygrade}% sur {$a->entryactivity}. Pour l\'instant, votre note pour cette activité est {$a->usergrade} % ';
-$string['entry_grading'] = 'Évaluation';
 $string['entryhotpotcourse'] = 'Activité HotPotatoes précédente dans ce cours';
 $string['entryhotpotsection'] = 'Activité HotPotatoes précédente dans cette section de cours';
 $string['entryoptions'] = 'Options de la page initiale';
@@ -168,7 +169,6 @@ $string['entryoptions_help'] = 'Ces cases à cocher activent ou désactivent l\'
 ** Tentatives **
 : Si coché, un tableau détaillant les tentatives précédentes du participants sera affiché sur la page initiale. Les tentatives qui peuvent être continuées auront un bouton correspondant affiché dans la colonne de droite.';
 $string['entrypage'] = 'Afficher la page initiale';
-$string['entrypagehdr'] = 'Page initiale';
 $string['entrypage_help'] = 'Est-ce que les participants doivent voir la page initiale avant de commencer l\'activité HotPotatoes ?
 
 ** Oui **
@@ -176,8 +176,8 @@ $string['entrypage_help'] = 'Est-ce que les participants doivent voir la page in
 
 **Non**
 : La page initiale ne s\'affichera pas et les participants commenceront le test immédiatement.';
+$string['entrypagehdr'] = 'Page initiale';
 $string['entrytext'] = 'Texte de la page initiale';
-$string['entry_title'] = 'Nom de l\'unité en tant que titre';
 $string['event_attempt_reviewed'] = 'Tentative HotPot révisée';
 $string['event_attempt_reviewed_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a révisé une tentative dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
 $string['event_attempt_reviewed_explanation'] = 'Un utilisateur a révisé une tentative dans une activité HotPot';
@@ -195,19 +195,6 @@ $string['event_report_viewed_description'] = 'L\'utilisateur ayant l\'identifian
 $string['event_report_viewed_explanation'] = 'Un utilisateur vient juste de consulter un rapport à propos de tentatives dans une activité HotPot';
 $string['exit_areyouok'] = 'Coucou, vous êtes encore là ?';
 $string['exit_attemptscore'] = 'Votre score pour cette tentative est {$a}';
-$string['exitcm'] = 'Activité suivante';
-$string['exitcmcourse'] = 'Activité suivante de ce cours';
-$string['exitcm_help'] = 'Ce paramètre définit une activité Moodle qui doit être effectuée après que le test est terminé.
-
-L\'enseignant peut spécifier une activité bien précise ou l\'un de ces choix :
-
-* activité suivante de ce cours
-* activité suivante de cette section de cours
-* activité HotPotatoes suivante de ce cours
-* activité HotPotatoes suivante de cette section de cours
-
-Si d\'autres options de page de sortie sont désactivées, le participant ira à la prochaine activité. Sinon, il verra un lien pour l\'emmener vers la prochaine activité.';
-$string['exitcmsection'] = 'Activité suivante de cette section de cours';
 $string['exit_course'] = 'Cours';
 $string['exit_course_text'] = 'Retour à la page principale du cours';
 $string['exit_encouragement'] = 'Encouragement';
@@ -233,17 +220,14 @@ $string['exit_feedback_help'] = 'Cette option active ou désactive l\'affichage 
 
 De plus, si la note de la tentative est plus grande que lors des tentatives précédentes, un message s\'affichera pour le signaler.';
 $string['exit_goodtry'] = 'Bien essayé !';
-$string['exitgrade'] = 'Niveau d\'activité suivant';
 $string['exit_grades'] = 'Notes';
 $string['exit_grades_text'] = 'Voir vos notes actuelles pour ce cours';
-$string['exithotpotcourse'] = 'Activité HotPotatoes suivante de ce cours';
 $string['exit_hotpotgrade'] = 'Votre note pour cette activité est {$a}';
 $string['exit_hotpotgrade_average'] = 'Votre moyenne jusqu\'à maintenant pour cette activité est {$a}';
 $string['exit_hotpotgrade_highest'] = 'Votre plus haute note jusqu\'à maintenant pour cette activité est {$a}';
 $string['exit_hotpotgrade_highest_equal'] = 'Vous avez égalisé votre meilleur résultat pour cette activité !';
 $string['exit_hotpotgrade_highest_previous'] = 'Votre plus haute note précédente pour cette activité était {$a}';
 $string['exit_hotpotgrade_highest_zero'] = 'Vous n\'avez pas dépassé {$a} pour cette activité';
-$string['exithotpotsection'] = 'Activité HopPotatoes suivante dans cette section de cours';
 $string['exit_index'] = 'Index';
 $string['exit_index_text'] = 'Aller à l\'index des activités';
 $string['exit_links'] = 'Quitter la page de lien';
@@ -263,9 +247,30 @@ $string['exit_links_help'] = 'Ces options activent ou désactivent l\'affichage 
 $string['exit_next'] = 'Suivant';
 $string['exit_next_text'] = 'Essayer l\'activité suivante';
 $string['exit_noscore'] = 'Vous avez terminé cette activité avec succès !';
+$string['exit_retry'] = 'Ré-essayer';
+$string['exit_retry_text'] = 'Ré-essayer cette activité';
+$string['exit_welldone'] = 'Bien joué !';
+$string['exit_whatnext_0'] = 'Que voulez vous faire ensuite ?';
+$string['exit_whatnext_1'] = 'Choisissez votre destinée…';
+$string['exit_whatnext_default'] = 'Veuillez choisir l\'une des options suivantes :';
+$string['exitcm'] = 'Activité suivante';
+$string['exitcm_help'] = 'Ce paramètre définit une activité Moodle qui doit être effectuée après que le test est terminé.
+
+L\'enseignant peut spécifier une activité bien précise ou l\'un de ces choix :
+
+* activité suivante de ce cours
+* activité suivante de cette section de cours
+* activité HotPotatoes suivante de ce cours
+* activité HotPotatoes suivante de cette section de cours
+
+Si d\'autres options de page de sortie sont désactivées, le participant ira à la prochaine activité. Sinon, il verra un lien pour l\'emmener vers la prochaine activité.';
+$string['exitcmcourse'] = 'Activité suivante de ce cours';
+$string['exitcmsection'] = 'Activité suivante de cette section de cours';
+$string['exitgrade'] = 'Niveau d\'activité suivant';
+$string['exithotpotcourse'] = 'Activité HotPotatoes suivante de ce cours';
+$string['exithotpotsection'] = 'Activité HopPotatoes suivante dans cette section de cours';
 $string['exitoptions'] = 'Quitter la page d\'options';
 $string['exitpage'] = 'Afficher la page de sortie';
-$string['exitpagehdr'] = 'Page de sortie';
 $string['exitpage_help'] = 'Détermine si une page de sortie doit être affichée après avoir effectué le test.
 
 **Oui**
@@ -273,13 +278,8 @@ $string['exitpage_help'] = 'Détermine si une page de sortie doit être affiché
 
 **Non**
 : Le participant ne verra pas de page de sortie. À la place, il sera dirigé tout de suite vers la prochaine activité ou vers la page principale du cours Moodle.';
-$string['exit_retry'] = 'Ré-essayer';
-$string['exit_retry_text'] = 'Ré-essayer cette activité';
+$string['exitpagehdr'] = 'Page de sortie';
 $string['exittext'] = 'Quitter la page de texte';
-$string['exit_welldone'] = 'Bien joué !';
-$string['exit_whatnext_0'] = 'Que voulez vous faire ensuite ?';
-$string['exit_whatnext_1'] = 'Choisissez votre destinée…';
-$string['exit_whatnext_default'] = 'Veuillez choisir l\'une des options suivantes :';
 $string['feedbackdiscuss'] = 'Discuter de ce test dans un forum';
 $string['feedbackformmail'] = 'Formulaire de feedback';
 $string['feedbackmoodleforum'] = 'Forum Moodle';
@@ -316,11 +316,11 @@ $string['hotpot:deleteallattempts'] = 'Supprimer toutes les tentatives d\'une ac
 $string['hotpot:deletemyattempts'] = 'Supprimer ses propres tentatives d\'une activité HotPotatoes';
 $string['hotpot:ignoretimelimits'] = 'Ignorer les limites de temps sur une activité HotPotatoes';
 $string['hotpot:manage'] = 'Modifier les paramètres d\'une activité HotPotatoes';
-$string['hotpotname'] = 'Nom de l\'activité HotPotatoes';
 $string['hotpot:preview'] = 'Prévisualiser une activité HotPotatoes';
 $string['hotpot:reviewallattempts'] = 'Voir toutes les tentatives d\'une activité HotPotatoes';
 $string['hotpot:reviewmyattempts'] = 'Voir ses propres tentatives d\'une activité HotPotatoes';
 $string['hotpot:view'] = 'Afficher la première page d\'un Hot Potatoes';
+$string['hotpotname'] = 'Nom de l\'activité HotPotatoes';
 $string['ignored'] = 'Ignoré';
 $string['inprogress'] = 'En cours';
 $string['isgreaterthan'] = 'est plus grand que';
@@ -408,8 +408,10 @@ Les formats de sortie disponibles dépendent du type de fichier source. Certains
 
 Le paramètre « meilleur » affichera le contenu en optimisant le format de sortie en fonction du navigateur du participant.';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze HP6 html: Standard';
+$string['outputformat_hp_6_jcloze_html_dropdown'] = 'JCloze HP6 html: Rottmeier DropDown';
 $string['outputformat_hp_6_jcloze_html_findit_a'] = 'Html à partir d\'une source HP6 : Rottmeier FindIt (a)';
 $string['outputformat_hp_6_jcloze_html_findit_b'] = 'Html à partir d\'une source HP6 : Rottmeier FindIt (b)';
+$string['outputformat_hp_6_jcloze_html_jgloss'] = 'JCloze HP6 html: Rottmeier JGloss';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze à partir d\'une source HP6 xml: ANCT-Scan';
 $string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze à partir d\'une source HP6 xml: Rottmeier DropDown';
 $string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze à partir d\'une source HP6 xml: Rottmeier FindIt (a)';
@@ -520,7 +522,6 @@ $string['textsourcespecific'] = 'Texte spécifique';
 $string['timeclose'] = 'Disponible jusqu\'au';
 $string['timedout'] = 'En pause';
 $string['timelimit'] = 'Limite de temps';
-$string['timelimitexpired'] = 'La limite de temps pour cette tentative est échue';
 $string['timelimit_help'] = 'Ce paramètre spécifie la durée maximale d\'une tentative.
 
 ** Utilisez les paramètres du fichier source / modèle**
@@ -533,6 +534,7 @@ $string['timelimit_help'] = 'Ce paramètre spécifie la durée maximale d\'une t
 : Aucune limite de temps ne sera définie pour les tentatives de ce test.
 
 Si une tentative est reprise, le compteur continue à partir du moment où la tentative a été mise en pause.';
+$string['timelimitexpired'] = 'La limite de temps pour cette tentative est échue';
 $string['timelimitspecific'] = 'Utiliser un temps spécifique';
 $string['timelimitsummary'] = 'Limite de temps pour une tentative';
 $string['timelimittemplate'] = 'Utiliser les paramètres du fichier source/modèle';

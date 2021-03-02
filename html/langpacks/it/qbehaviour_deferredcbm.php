@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'it', version '3.8'.
  *
- * @package   qbehaviour_deferredcbm
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qbehaviour_deferredcbm
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,8 +40,8 @@ Le risposte sbagliate con elevato livello di confidenza abbassano la valutazione
 **Accuratezza** è la percentuale di risposte esatte senza la confidenza ma pesata sul punteggio massimo di ciascuna domanda. Distinguere correttamente le risposte più o meno corrette fornisce una valutazione più alta rispetto a scegliere lo stesso livello di confidenza per tutte le domande, cosa che si riflette nel **CBM Bonus**.  **Accuratezza** + **CBM Bonus** fornisce una misura della conoscenza più accurata rispetto a **Accuratezza**. Le risposte sbagliate con elevato livello di confidenza possono produrre bonus negativi, un richiamo a rivedere attentamente ciò che realmente si sa e cosa non si sa.';
 $string['cbmmark'] = 'Punteggio CBM {$a}';
 $string['certainty'] = 'Confidenza';
-$string['certainty1'] = 'C=1 (Poco sicuro: <67%)';
 $string['certainty-1'] = 'Nessuna idea';
+$string['certainty1'] = 'C=1 (Poco sicuro: <67%)';
 $string['certainty2'] = 'C=2 (Medio: >67%)';
 $string['certainty3'] = 'C=3 (Abbastanza sicuro: >80%)';
 $string['certainty_help'] = 'La valutazione basata sul livello di confidenza richiede di specificare quanto si ritinga affidabile la propria risposta. I livelli disponibili sono:
@@ -53,8 +53,8 @@ Punteggio se sbagliata | 0 | -2 | -6
 Probabilità se corretta | <67% | 67-80% | >80%
 
 I punteggi migliori si ottengono riconoscendo poca confidenza. Ad esempio se si pensa di avere più di una probabilità su tre di essere in errore, si dovrebbe inserire C=1 per evitare il rischio di punteggi negativi.';
-$string['certaintyshort1'] = 'C=1';
 $string['certaintyshort-1'] = 'Nessuna idea';
+$string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';
 $string['certaintyshort3'] = 'C=3';
 $string['dontknow'] = 'Nessuna idea';

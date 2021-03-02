@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'currencies', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'currencies', language 'ru', version '3.8'.
  *
- * @package   currencies
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     currencies
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,7 +29,7 @@ $string['AED'] = 'ОАЭ дирхам ';
 $string['AFN'] = 'Афганский афгани';
 $string['ALL'] = 'Албанский лек';
 $string['AMD'] = 'Армянский драм';
-$string['ANG'] = 'Голландский гульден антильских островов';
+$string['ANG'] = 'Голландский антильский гульден';
 $string['AOA'] = 'Ангольская кванза';
 $string['ARS'] = 'Аргентинский песо';
 $string['AUD'] = 'Австралийский доллар';
@@ -137,7 +137,7 @@ $string['PEN'] = 'Перуанский соль';
 $string['PGK'] = 'Папуа-Новой Гвинеи кина';
 $string['PHP'] = 'Филиппинский песо';
 $string['PKR'] = 'Пакистанская рупия';
-$string['PLN'] = 'Польские злотые';
+$string['PLN'] = 'Польский злотый';
 $string['PYG'] = 'Парагвайский гуарани';
 $string['QAR'] = 'Катарский риал';
 $string['RON'] = 'Румынский лей';

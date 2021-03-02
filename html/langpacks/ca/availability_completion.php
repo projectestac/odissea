@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability_completion', language 'ca', version '3.8'.
  *
- * @package   availability_completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability_completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,11 +36,10 @@ $string['option_fail'] = 'ha d\'estar completada amb qualificació suspesa';
 $string['option_incomplete'] = 'no ha d\'estar marcada com a completada';
 $string['option_pass'] = 'ha d\'estar completada amb qualificació aprovada';
 $string['pluginname'] = 'Restricció per compleció d\'activitat';
-$string['requires_complete'] = 'L\'activitat <strong>{$a}</strong>
-estigui marcada com a completada';
-$string['requires_complete_fail'] = 'L\'activitat <strong>{$a}</strong> estigui completada i suspesa';
-$string['requires_complete_pass'] = 'L\'activitat <strong>{$a}</strong> estigui completada i aprovada';
-$string['requires_incomplete'] = 'L\'activitat <strong>{$a}</strong> estigui incompleta';
-$string['requires_not_complete_fail'] = 'L\'activitat <strong>{$a}</strong> estigui incompleta i suspesa';
-$string['requires_not_complete_pass'] = 'L\'activitat <strong>{$a}</strong> estigui incompleta però aprovada';
+$string['requires_complete'] = 'L\'activitat <strong>{$a}</strong> està marcada com a completada';
+$string['requires_complete_fail'] = 'L\'activitat <strong>{$a}</strong> està completada i suspesa';
+$string['requires_complete_pass'] = 'L\'activitat <strong>{$a}</strong> està completada i aprovada';
+$string['requires_incomplete'] = 'L\'activitat <strong>{$a}</strong> està incompleta';
+$string['requires_not_complete_fail'] = 'L\'activitat <strong>{$a}</strong> no està completa i està suspesa';
+$string['requires_not_complete_pass'] = 'L\'activitat <strong>{$a}</strong>  no està completa però està aprovada';
 $string['title'] = 'Compleció de l\'activitat';

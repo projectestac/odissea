@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth', language 'ca', version '3.8'.
  *
- * @package   auth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['actauthhdr'] = 'Connectors d\'autenticació disponibles';
 $string['allowaccountssameemail'] = 'Permet comptes amb el mateix correu';
-$string['allowaccountssameemail_desc'] = 'Si s\'habilita, diversos comptes d\'usuari podran tenir el mateix correu electrònic. Això pot donar lloc a problemes de seguretat o privacitat, per exemple, amb el correu electrònic de confirmació de canvi de contrasenya.';
+$string['allowaccountssameemail_desc'] = 'Si s\'habilita, diversos comptes d\'usuari podran tenir la mateixa adreça electrònica. Això pot donar lloc a problemes de seguretat o privacitat, per exemple, amb el correu electrònic de confirmació de canvi de contrasenya.';
 $string['alternatelogin'] = 'Si introduïu un URL aquí, s\'utilitzarà com a pàgina d\'inici de sessió d\'aquest lloc. Aquesta pàgina hauria de contenir un formulari, amb la propietat «action» igual a <strong>{$a}</strong> i els camps de retorn <strong>username</strong> i <strong>password</strong>.<br />Tingueu cura de no escriure un URL incorrecte, ja que podríeu impedir l\'entrada dels usuaris en aquest lloc.<br />Si deixeu en blanc aquest paràmetre s\'utilitzarà la pàgina d\'inici de sessió per defecte.';
 $string['alternateloginurl'] = 'URL d\'inici de sessió alternatiu';
 $string['auth_changepasswordhelp'] = 'Ajuda de canvi de contrasenya';
@@ -37,17 +37,13 @@ $string['auth_changepasswordurl_expl'] = 'Especifiqueu l\'URL on cal enviar els 
 $string['auth_changingemailaddress'] = 'Heu sol·licitat un canvi d\'adreça de correu de {$a->oldemail} a {$a->newemail}. Per raons de seguretat, us enviarem un missatge de correu a l\'adreça nova, de manera que puguem confirmar que us pertany. El canvi d\'adreça de correu es farà efectiu tan bon punt obriu l\'enllaç que figura en aquell missatge.';
 $string['auth_common_settings'] = 'Paràmetres comuns';
 $string['auth_data_mapping'] = 'Mapatge de dades';
-$string['authenticationoptions'] = 'Opcions d\'autenticació';
 $string['auth_fieldlock'] = 'Bloca valor';
 $string['auth_fieldlock_expl'] = '<p><b>Bloca valor:</b> si l\'habiliteu, impedirà que els usuaris i administradors de Moodle editin el camp directament. Utilitzeu aquesta opció quan aquestes es mantinguin en un sistema d\'autenticació extern.';
 $string['auth_fieldlockfield'] = 'Valor blocat ({$a})';
 $string['auth_fieldlocks'] = 'Bloca camps d\'usuari';
 $string['auth_fieldlocks_help'] = '<p>Podeu blocar els camps de dades d\'usuari. Això és útil en llocs on els administradors mantenen manualment les dades dels usuaris tot editant els registres d\'usuari o per mitjà de l\'opció de càrrega d\'usuaris. Si bloqueu camps requerits per Moodle, assegureu-vos que aquestes dades s\'introdueixen en crear els comptes d\'usuari, o en cas contrari no es podran utilitzar els comptes.</p><p>Considereu la possibilitat d\'utilitzar el mode «Desblocat si està buit» per evitar aquest problema.</p>';
 $string['auth_fieldmapping'] = 'Mapatge de dades ({$a})';
-$string['authinstructions'] = 'Deixeu aquest camp en blanc si voleu mostrar les instruccions d\'inici de sessió per defecte a la pàgina d\'inici de sessió. Si voleu proporcionar instruccions alternatives, introduïu-les aquí.';
 $string['auth_invalidnewemailkey'] = 'Error: si intenteu confirmar un canvi d\'adreça de correu electrònic, probablement heu copiat malament l\'enllaç que us hem enviat. Copieu l\'enllaç complet i torneu a intentar-ho.';
-$string['authloginviaemail'] = 'Permet l\'inici de sessió mitjançant el correu electrònic';
-$string['authloginviaemail_desc'] = 'Permet als usuaris utilitzar indistintament el nom d\'usuari i l\'adreça electrònica (mentre sigui única) per iniciar la sessió.';
 $string['auth_multiplehosts'] = 'Podeu especificar diversos ordinadors (p. e.: host1.com; host2.com; host3.com)';
 $string['auth_notconfigured'] = 'El mètode d\'autenticació {$a} no està configurat.';
 $string['auth_outofnewemailupdateattempts'] = 'Heu esgotat els intents d\'actualització de la vostra adreça de correu electrònic. La vostra sol·licitud s\'ha cancel·lat.';
@@ -66,12 +62,16 @@ $string['auth_updatelocal_expl'] = '<p><b>Actualitza dades locals:</b> si habili
 $string['auth_updatelocalfield'] = 'Actualitza les dades locals ({$a})';
 $string['auth_updateremote'] = 'Actualitza dades externes';
 $string['auth_updateremote_expl'] = '<p>Actualitza dades externes:</b> si habiliteu aquesta opció, les dades externes d\'autenticació s\'actualitzaran quan s\'actualitzi el registre de l\'usuari. Els camps s\'haurien de desblocar per permetre l\'edició.</p>';
-$string['auth_updateremotefield'] = 'Actualitza les dades externes ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Nota:</b> actualitzar dades LDAP externes requreix definir binddn i dindpw amb un bind-user que tingui privilegis d\'edició en tots els registres d\'usuari. Actualment no preserva valors múltiples en els atributs i suprimeix els valors extra quan es fa l\'actualització.</p>';
+$string['auth_updateremotefield'] = 'Actualitza les dades externes ({$a})';
 $string['auth_user_create'] = 'Habilita la creació d\'usuaris';
 $string['auth_user_creation'] = 'Els nous usuaris (anònims) poden crear comptes d\'usuari en la font d\'autenticació externa i confirmar-los via correu electrònic. Si habiliteu aquesta opció, recordeu de configurar també opcions específiques del mòdul per a la creació d\'usuaris.';
 $string['auth_usernameexists'] = 'El nom d\'usuari elegit ja existeix. Trieu-ne un altre.';
 $string['auth_usernotexist'] = 'No es pot actualitzar un usuari no existent: {$a}';
+$string['authenticationoptions'] = 'Opcions d\'autenticació';
+$string['authinstructions'] = 'Deixeu aquest camp en blanc si voleu mostrar les instruccions d\'inici de sessió per defecte a la pàgina d\'inici de sessió. Si voleu proporcionar instruccions alternatives, introduïu-les aquí.';
+$string['authloginviaemail'] = 'Permet l\'inici de sessió mitjançant el correu electrònic';
+$string['authloginviaemail_desc'] = 'Permet als usuaris utilitzar indistintament el nom d\'usuari i l\'adreça electrònica (mentre sigui única) per iniciar la sessió.';
 $string['auto_add_remote_users'] = 'Afegeix automàticament usuaris remots';
 $string['cannotmapfield'] = 'El camp «{$a->fieldname}» no pot ser mapat, perquè el nom curt «{$a->shortname}» és massa llarg. Per habilitar el mapatge cal reduir el nom curt del camp del perfil fins a {$a->charlimit} caràcters. <a href="{$a->link}">Edita els camps de perfil de l\'usuari</a>';
 $string['changepassword'] = 'URL de canvi de contrasenya';
@@ -99,12 +99,12 @@ $string['errorminpasswordnonalphanum'] = 'La contrasenya ha de contenir almenys 
 $string['errorminpasswordupper'] = 'La contrasenya ha de contenir almenys {$a} majúscula/es.';
 $string['errorpasswordreused'] = 'La contrasenya ha estat utilitzada abans, i no es permet reutilitzar-la.';
 $string['errorpasswordupdate'] = 'No s\'ha pogut canviar la contrasenya. S\'ha produït un error.';
-$string['eventuserloggedin'] = 'L\'usuari ha entrat';
+$string['eventuserloggedin'] = 'L\'usuari ha iniciat sessió';
 $string['eventuserloggedinas'] = 'L\'usuari ha iniciat sessió com un altre usuari';
 $string['eventuserloginfailed'] = 'Ha fallat l\'inici de sessió';
 $string['forcechangepassword'] = 'Imposa un canvi de contrasenya';
-$string['forcechangepasswordfirst_help'] = 'Obliga els usuaris a canviar la contrasenya la primera vegada que iniciïn la sessió a Moodle.';
 $string['forcechangepassword_help'] = 'Obliga els usuaris a canviar la contrasenya la propera vegada que iniciïn la sessió a Moodle.';
+$string['forcechangepasswordfirst_help'] = 'Obliga els usuaris a canviar la contrasenya la primera vegada que iniciïn la sessió a Moodle.';
 $string['forgottenpassword'] = 'Si introduïu un URL aquí, s\'utilitzarà com a pàgina de recuperació de contrasenyes d\'aquest lloc. Aquest paràmetre està pensat per als casos en què les contrasenyes es gestionen totalment fora de Moodle. Deixeu el camp en blanc per utilitzar el mecanisme per defecte de recuperació de contrasenyes.';
 $string['forgottenpasswordurl'] = 'URL de recuperació de contrasenyes';
 $string['guestloginbutton'] = 'Botó d\'inici de sessió de visitants';

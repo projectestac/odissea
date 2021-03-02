@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cachestore_memcached', language 'en', version '3.8'.
  *
- * @package   cachestore_memcached
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_memcached
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['bufferwrites'] = 'Buffer writes';
 $string['bufferwrites_help'] = 'Enables or disables buffered I/O. Enabling buffered I/O causes storage commands to "buffer" instead of being sent. Any action that retrieves data causes this buffer to be sent to the remote connection. Quitting the connection or closing down the connection will also cause the buffered data to be pushed to the remote connection.';
 $string['clustered'] = 'Enable clustered servers';
-$string['clusteredheader'] = 'Split servers';
 $string['clustered_help'] = 'This is used to allow read-one, set-multi functionality.
 
 The intended use case is to create an improved store for load-balanced configurations. The store will fetch from one server (usually localhost), but set to many (all the servers in the load-balance pool). For caches with very high read to set ratios, this saves a significant amount of network overhead.
 
 When this setting is enabled, the server listed above will be used for fetching.';
+$string['clusteredheader'] = 'Split servers';
 $string['hash'] = 'Hash method';
 $string['hash_crc'] = 'CRC';
 $string['hash_default'] = 'Default (one-at-a-time)';
@@ -61,7 +61,6 @@ $string['serialiser_igbinary'] = 'The igbinary serializer.';
 $string['serialiser_json'] = 'The JSON serializer.';
 $string['serialiser_php'] = 'The default PHP serializer.';
 $string['servers'] = 'Servers';
-$string['serversclusterinvalid'] = 'Exactly one server is required when clustering is enabled.';
 $string['servers_help'] = 'This sets the servers that should be utilised by this memcached adapter.
 Servers should be defined one per line and consist of a server address and optionally a port and weight.
 If no port is provided then the default port (11211) is used.
@@ -74,6 +73,7 @@ servername:port:weight
 </pre>
 
 If *Enable clustered servers* is enabled below, there must be only one server listed here. This would usually be a name that always resolves to the local machine, like 127.0.0.1 or localhost.';
+$string['serversclusterinvalid'] = 'Exactly one server is required when clustering is enabled.';
 $string['sessionhandlerconflict'] = 'Warning: A memcached instance ({$a}) has being configured to use the same memcached server as sessions. Purging all caches will lead to sessions also being purged.';
 $string['setservers'] = 'Set Servers';
 $string['setservers_help'] = 'This is the list of servers that will be updated when data is modified in the cache. Generally the fully qualified name of each server in the pool.

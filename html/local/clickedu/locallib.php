@@ -34,6 +34,7 @@ require_once("$CFG->libdir/csvlib.class.php");
 require_once("$CFG->libdir/formslib.php");
 require_once("$CFG->libdir/resourcelib.php");
 
+
 // Clave de la aplicación proporcionado por ClickArt
 define('CLICKEDU_CONS_KEY', '1f76180abe3159af54cca4cfa387ec');
 define('CLICKEDU_CONS_SECRET', '050a5cc249');
@@ -432,29 +433,74 @@ function clickedu_login($username, $password) {
 function clickedu_get_contents($course) {
     global $CFG;
 
+    $config = get_config('local_clickedu');
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentget', 'local_clickedu', $course->id);
+    }
+
     if ($course->id == SITEID) {
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentgetnull', 'local_clickedu', $course->id);
+        }
         return null;
     }
 
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentwsconf', 'local_clickedu');
+    }
     $webserviceurl = get_config('local_clickedu', 'webserviceurl');
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentwscall', 'local_clickedu', $course->idnumber);
+    }
 
     $result = clickedu_webservice_query('/moodle/contents.users', array('cgap' => $course->idnumber));
 
     if (!isset($result[0]['continguts']) or !is_array($result[0]['continguts'])) {
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentnocontinguts', 'local_clickedu', $course->idnumber);
+        }
         return null;
     }
 
     $sections = array();
 
+    //##
+    if ($config->advdebug) {
+
+        local_clickedu_add_debug('debug:synccontentsections', 'local_clickedu', $course->idnumber);
+    }
+
     foreach ($result[0]['continguts'] as $contentid => $content) {
+
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentplacemain', 'local_clickedu', ['contid' => $contentid, 'nom' => $content['nom']]);
+        }
+
         if (empty($content['ordre'])) {
             continue;
+        }
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentplacemainsection', 'local_clickedu', ['contid' => $contentid, 'nom' => $content['nom']]);
         }
         $section = array(
             'name' => isset($content['nom']) ? $content['nom'] : null,
             'summary' => isset($content['continguts_alumnes']) ? $content['continguts_alumnes'] : '',
             'summaryformat' => FORMAT_PLAIN,
         );
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentplacemainmod', 'local_clickedu', ['contid' => $contentid, 'nom' => $content['nom']]);
+        }
+
         $mods = array();
         if (!empty($content['continguts'])) {
             $mods["contingut-$contentid-0"] = array(
@@ -465,16 +511,31 @@ function clickedu_get_contents($course) {
                 'visible' => false,
             );
         }
+
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentplacemaintext', 'local_clickedu', ['contid' => $contentid, 'nom' => $content['nom']]);
+        }
+
         for ($i = 1; $i <= 12; $i++) {
             if (isset($content["contingut$i"]) and $mod = clickedu_get_contents_text($content["contingut$i"])) {
                 $mods["contingut-$contentid-0-$i"] = $mod;
             }
         }
 
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentplacemainvincles', 'local_clickedu', ['contid' => $contentid, 'nom' => $content['nom']]);
+        }
+
         if (isset($content['vincles']) and is_array($content['vincles'])) {
             $mods = array_merge($mods, clickedu_get_contents_vincles($content['vincles']));
         }
 
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentplacemainarxius', 'local_clickedu', ['contid' => $contentid, 'nom' => $content['nom']]);
+        }
         if (isset($content['arxius']) and is_array($content['arxius'])) {
             $mods = array_merge($mods, clickedu_get_contents_arxius($content['arxius']));
         }
@@ -488,6 +549,11 @@ function clickedu_get_contents($course) {
                 'introformat' => FORMAT_HTML,
                 'visible' => true,
             );
+
+            //##
+            if ($config->advdebug) {
+                local_clickedu_add_debug('debug:synccontentplacemainsessions', 'local_clickedu', ['contid' => $contentid, 'nom' => $content['nom'], 'sessions' => $content['num_sessions']]);
+            }
 
             for ($s = 1; $s <= $content['num_sessions']; $s++) {
                 if (!isset($content['sessions'][$s]) or !is_array($content['sessions'][$s])) {
@@ -596,12 +662,19 @@ function clickedu_get_contents_text($text) {
 function clickedu_sync_contents(stdClass $course, array $contents, progress_bar $progress) {
     global $CFG, $DB;
 
+    $config = get_config('local_clickedu');
+
     $msg = get_string('syncingcontents', 'local_clickedu');
 
     $total = 3;
     foreach ($contents as $sectionnum => $section) {
         $total += 1 + count($section['modules']);
     }
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentsecmod', 'local_clickedu', $total);
+    }
+
     $progress->update(0, $total, $msg);
     $cur = 1;
 
@@ -609,6 +682,11 @@ function clickedu_sync_contents(stdClass $course, array $contents, progress_bar 
     $course->format = 'topics';
     $course->numsections = count($contents);
     $course->coursedisplay = COURSE_DISPLAY_MULTIPAGE;
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentupdcourse', 'local_clickedu', count($contents));
+    }
+
     update_course($course);
     $progress->update($cur++, $total, $msg);
 
@@ -631,9 +709,16 @@ function clickedu_sync_contents(stdClass $course, array $contents, progress_bar 
         // Lista de mòdulos actuales de la sección
         $cms = array();
         foreach (explode(',', $section->sequence) as $cmid) {
-            $cms[$cmid] = $DB->get_record('course_modules', array('id' => $cmid));
+            if (!empty($cmid)) {
+                $cms[$cmid] = $DB->get_record('course_modules', array('id' => $cmid));
+            }
         }
         $cm = reset($cms);
+
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentupdcourseres', 'local_clickedu', count($sectioncontents['modules']));
+        }
 
         // Creación / actualización de recursos
         foreach ($sectioncontents['modules'] as $idnumber => $modulecontents) {
@@ -651,11 +736,21 @@ function clickedu_sync_contents(stdClass $course, array $contents, progress_bar 
                 }
             }
 
+            //##
+            if ($config->advdebug) {
+                $dbgparams = ['section' => $section, 'cmidnumber' => $cm->idnumber];
+                local_clickedu_add_debug('debug:synccontentupdcmod', 'local_clickedu', $dbgparams);
+            }
             clickedu_sync_contents_module($course, $section, $idnumber, $modulecontents, $cm);
 
             $processedmods[$idnumber] = true;
             $progress->update($cur++, $total, $msg);
         }
+    }
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentremoveclkedu', 'local_clickedu');
     }
 
     // Eliminación de recursos que ya no existen en Clickedu
@@ -665,14 +760,26 @@ function clickedu_sync_contents(stdClass $course, array $contents, progress_bar 
             continue;
         }
         if (preg_match('/(contingut|arxiu|vincle)-/', $cm->idnumber)) {
+            //##
+            if ($config->advdebug) {
+                local_clickedu_add_debug('debug:synccontentremovemod', 'local_clickedu', $cm->idnumber);
+            }
             course_delete_module($cm->id);
         }
     }
 
     $progress->update($cur++, $total, $msg);
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentrebuild', 'local_clickedu');
+    }
     rebuild_course_cache();
     $progress->update($total, $total, $msg);
 
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentevent', 'local_clickedu');
+    }
     $event = \local_clickedu\event\contents_synced::create_from_course($course->id);
     $event->trigger();
 }
@@ -680,7 +787,14 @@ function clickedu_sync_contents(stdClass $course, array $contents, progress_bar 
 function clickedu_sync_contents_module($course, $section, $idnumber, $modulecontents, $beforemod=null) {
     global $DB;
 
+    $config = get_config('local_clickedu');
+
     $module = $DB->get_record('modules', array('name' => $modulecontents['modulename']), '*', MUST_EXIST);
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentmodinit', 'local_clickedu', $modulecontents['modulename']);
+    }
 
     $conditions = array('course' => $course->id, 'idnumber' => $idnumber);
     $cm = $DB->get_record('course_modules', $conditions);
@@ -711,9 +825,21 @@ function clickedu_sync_contents_module($course, $section, $idnumber, $modulecont
         $cm->modname = $moduleinfo->modulename;
         $cm->name = $moduleinfo->name;
         update_moduleinfo($cm, $moduleinfo, $course);
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentmodupd', 'local_clickedu', $modulecontents['modulename']);
+        }
     } else {
         $moduleinfo = add_moduleinfo($moduleinfo, $course);
         $cm = $DB->get_record('course_modules', array('id' => $moduleinfo->coursemodule));
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentmodadd', 'local_clickedu', $modulecontents['modulename']);
+        }
+    }
+
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentmodmove', 'local_clickedu');
     }
 
     moveto_module($cm, $section, $beforemod);
@@ -722,6 +848,8 @@ function clickedu_sync_contents_module($course, $section, $idnumber, $modulecont
 function clickedu_sync_courses(array $courses, progress_bar $progress) {
     global $CFG, $DB;
 
+    $config = get_config('local_clickedu');
+
     $msg = get_string('syncingcourses', 'local_clickedu');
     $total = 1;
     foreach ($courses as $course) {
@@ -729,10 +857,27 @@ function clickedu_sync_courses(array $courses, progress_bar $progress) {
             $total++; // create course
         }
         $total += count(array_diff($course->newteachers, $course->oldteachers)); // enrolled teachers
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:enrolledteachers', 'local_clickedu', count(array_diff($course->newteachers, $course->oldteachers)));
+        }
         $total += count(array_diff($course->oldteachers, $course->newteachers)); // unenrolled teachersx
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:unenrolledteachersx', 'local_clickedu', count(array_diff($course->oldteachers, $course->newteachers)));
+        }
         $total += count(array_diff($course->newstudents, $course->oldstudents)); // enrolled students
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:enrolledstudents', 'local_clickedu', count(array_diff($course->newstudents, $course->oldstudents)));
+        }
         $total += count(array_diff($course->oldstudents, $course->newstudents)); // unenrolled students
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:unenrolledstudents', 'local_clickedu', count(array_diff($course->oldstudents, $course->newstudents)));
+        }
     }
+
     $progress->update(0, $total, $msg);
     $cur = 1;
 
@@ -741,58 +886,107 @@ function clickedu_sync_courses(array $courses, progress_bar $progress) {
     $studentroleid = get_config('local_clickedu', 'studentrole');
     $categoryid = get_config('local_clickedu', 'coursecat');
     $category = core_course_category::get($categoryid, IGNORE_MISSING, true);
+
     if (!$category or !$category->id) {
         $category = core_course_category::get_default();
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:setdefaultcat', 'local_clickedu', $category->id);
+        }
         set_config('coursecat', $category->id, 'local_clickedu');
+    }
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:initcourseprocessing', 'local_clickedu', count($courses));
     }
 
     foreach ($courses as $course) {
         if (!$course->id) {
+            if ($config->advdebug) {
+                local_clickedu_add_debug('debug:coursenoid', 'local_clickedu');
+            }
             $course->category = $category->id;
             $course->startdate = time();
             $course->id = create_course($course)->id;
+            if ($config->advdebug) {
+                local_clickedu_add_debug('debug:coursenoidcreated', 'local_clickedu', $course->id);
+            }
             $progress->update($cur++, $total, $msg);
         }
 
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:checkenrolinstance', 'local_clickedu', $course->id);
+        }
         $instance = null;
         foreach (enrol_get_instances($course->id, true) as $i) {
             if ($i->enrol == 'manual') {
+                if ($config->advdebug) {
+                    local_clickedu_add_debug('debug:checkenrolinstanceok', 'local_clickedu', $course->id);
+                }
                 $instance = $i;
                 break;
             }
         }
 
         if (!$instance) {
+            if ($config->advdebug) {
+                local_clickedu_add_debug('debug:checkenrolinstanceko', 'local_clickedu', $course->id);
+            }
             continue;
+        }
+
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:enroltasks', 'local_clickedu');
         }
 
         // unenrol teachers
         foreach (array_diff($course->oldteachers, $course->newteachers) as $userid) {
+            if ($config->advdebug) {
+                local_clickedu_add_debug('debug:unenrolteacher', 'local_clickedu', ['id' => $instance->id, 'userid' => $userid ]);
+            }
             $enrolplugin->unenrol_user($instance, $userid);
             $progress->update($cur++, $total, $msg);
         }
 
         // unenrol students
         foreach (array_diff($course->oldstudents, $course->newstudents) as $userid) {
+            if ($config->advdebug) {
+                local_clickedu_add_debug('debug:unenrolstudent', 'local_clickedu', ['id' => $instance->id, 'userid' => $userid ]);
+            }
             $enrolplugin->unenrol_user($instance, $userid);
             $progress->update($cur++, $total, $msg);
         }
 
         // enrol teachers
         foreach (array_diff($course->newteachers, $course->oldteachers) as $userid) {
+            if ($config->advdebug) {
+                local_clickedu_add_debug('debug:enrolteacher', 'local_clickedu', ['id' => $instance->id, 'userid' => $userid ]);
+            }
             $enrolplugin->enrol_user($instance, $userid, $teacherroleid);
             $progress->update($cur++, $total, $msg);
         }
 
         // enrol students
         foreach (array_diff($course->newstudents, $course->oldstudents) as $userid) {
+            if ($config->advdebug) {
+                local_clickedu_add_debug('debug:enrolstudent', 'local_clickedu', ['id' => $instance->id, 'userid' => $userid ]);
+            }
             $enrolplugin->enrol_user($instance, $userid, $studentroleid);
             $progress->update($cur++, $total, $msg);
         }
     }
 
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:triggersyncevent', 'localclickedu',count($courses) );
+    }
+
     $event = \local_clickedu\event\courses_synced::create_from_count(count($courses));
     $event->trigger();
+
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:coursesyncended', 'localclickedu');
+    }
 
     $progress->update($total, $total, $msg);
 }
@@ -811,9 +1005,25 @@ function clickedu_moodle_webservice_token() {
 }
 
 function clickedu_webservice_call($path, array $params) {
+    $config = get_config('local_clickedu');
+
     $webserviceurl = get_config('local_clickedu', 'webserviceurl');
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentwsurl', 'local_clickedu', $webserviceurl);
+    }
+
     if (!$webserviceurl) {
         throw new moodle_exception('notconfigured', 'local_clickedu');
+    }
+
+
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentwscurl', 'local_clickedu', implode('#', $params));
+        local_clickedu_add_debug('debug:synccontentwscurl', 'local_clickedu', $webserviceurl . $path);
     }
 
     $ch = curl_init();
@@ -825,7 +1035,15 @@ function clickedu_webservice_call($path, array $params) {
     curl_setopt($ch, CURLOPT_POSTFIELDS, clickedu_webservice_params($params));
     $response = curl_exec($ch);
     $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    //print_r(curl_getinfo($ch));
     curl_close($ch);
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentwscurlstatus', 'local_clickedu', $status);
+    }
+
+
 
     if ($status != 200) {
         throw new moodle_exception('connectionerror', 'local_clickedu');
@@ -835,10 +1053,31 @@ function clickedu_webservice_call($path, array $params) {
         throw new clickedu_invalid_response($path, $params, $response);
     }
 
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentwsjsondecode', 'local_clickedu');
+    }
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_object_debug($response);
+    }
+
+
     $result = json_decode($response, true);
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_object_debug($result);
+    }
 
     if (!is_array($result)) {
         throw new clickedu_invalid_response($path, $params, $response);
+    }
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:synccontentwsresult', 'local_clickedu', print_r($result, 1));
     }
 
     return $result;
@@ -864,6 +1103,8 @@ function clickedu_webservice_params(array $params, $parentkey='') {
 function clickedu_webservice_query($function, array $extraparams=null) {
     global $CFG;
 
+    $config = get_config('local_clickedu');
+
     $token = get_user_preferences('clickedu_token');
     $secret = get_user_preferences('clickedu_secret');
     $id = get_user_preferences('clickedu_id');
@@ -878,7 +1119,18 @@ function clickedu_webservice_query($function, array $extraparams=null) {
         'auth_secret' => $secret,
     );
 
+    //##
+    if ($config->advdebug) {
+        $dbgparams = ['token' => $token, 'secret' => $secret, 'id' => $id, 'query' => $function, 'cons_key' => CLICKEDU_CONS_KEY, 'cons_secret' => CLICKEDU_CONS_SECRET];
+        local_clickedu_add_debug('debug:synccontentwsparam', 'local_clickedu', $dbgparams);
+    }
+
+
     if ($extraparams) {
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:synccontentwsxtparam', 'local_clickedu', implode('#', $extraparams));
+        }
         $params = array_merge($params, $extraparams);
     }
 
@@ -888,26 +1140,55 @@ function clickedu_webservice_query($function, array $extraparams=null) {
 function clickedu_create_users(array $users, progress_bar $progress) {
     global $CFG, $DB;
 
+    $config = get_config('local_clickedu');
+
     $msg = get_string('syncingusers', 'local_clickedu');
     $total = count($users) + 1;
     $progress->update(0, $total, $msg);
     $cur = 1;
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncuserscreate', 'local_clickedu', count($users));
+    }
 
     foreach ($users as $user) {
         $user->mnethostid = $CFG->mnet_localhost_id;
         $user->confirmed = true;
         $user->password = generate_password();
         $id = user_create_user(clone($user), true);
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:syncuserscreateuser', 'local_clickedu', $id);
+            local_clickedu_add_debug('debug:syncuserspsetpref', 'local_clickedu', $id);
+        }
         set_user_preference('auth_forcepasswordchange', 1, $id);
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:syncusersemail', 'local_clickedu', $id);
+        }
         if (!empty($user->email)) {
             $record = $DB->get_record('user', array('id' => $id));
+            //##
+            if ($config->advdebug) {
+                local_clickedu_add_debug('debug:syncuserssendemail', 'local_clickedu', $id);
+            }
             clickedu_send_password($record, $user->password);
         }
         $progress->update($cur, $total, $msg);
         $cur++;
     }
 
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncuserscsv', 'local_clickedu', count($users));
+    }
     clickedu_send_users_csv($users);
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncuserstrigger', 'local_clickedu', count($users));
+    }
 
     $event = \local_clickedu\event\users_synced::create_from_count(count($users));
     $event->trigger();
@@ -918,7 +1199,14 @@ function clickedu_create_users(array $users, progress_bar $progress) {
 function clickedu_send_password($user, $password) {
     global $CFG, $SITE;
 
+    $config = get_config('local_clickedu');
+
     $supportuser = core_user::get_support_user();
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncusersemailsupport', 'local_clickedu', $supportuser->id);
+    }
 
     $a = new stdClass();
     $a->firstname   = fullname($user);
@@ -930,12 +1218,27 @@ function clickedu_send_password($user, $password) {
 
     $message = get_string('newusernewpasswordtext', '', $a);
     $subject = format_string($SITE->fullname) . ': ' . get_string('newusernewpasswordsubj', '', $a);
-
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncusersemailsending', 'local_clickedu', $user->id);
+    }
     email_to_user($user, $supportuser, $subject, $message);
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncusersemailsent', 'local_clickedu', $user->id);
+    }
 }
 
 function clickedu_send_users_csv($users) {
     global $SITE, $USER;
+
+    $config = get_config('local_clickedu');
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncuserscsvexport', 'local_clickedu', count($users));
+    }
 
     $cew = new csv_export_writer();
     $cew->add_data(array(
@@ -945,7 +1248,16 @@ function clickedu_send_users_csv($users) {
         get_string('password'),
         get_string('email'),
     ));
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncuserscsvexportdata', 'local_clickedu');
+    }
     foreach ($users as $user) {
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:syncuserscsvexportdatarow', 'local_clickedu', ['id' => $user->id, 'username' => $user->username]);
+        }
         $cew->add_data(array(
             $user->firstname,
             $user->lastname,
@@ -958,6 +1270,11 @@ function clickedu_send_users_csv($users) {
     $supportuser = core_user::get_support_user();
     $attachname = 'Moodle_' . get_string('users') . '_' . gmdate("Ymd_Hi") . '.csv';
 
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncuserscsvemail', 'local_clickedu', $attachname);
+    }
+
     $a = new stdClass();
     $a->firstname  = fullname($USER);
     $a->sitename   = format_string($SITE->fullname);
@@ -968,7 +1285,16 @@ function clickedu_send_users_csv($users) {
     $message = get_string('newusersemail', 'local_clickedu', $a);
     $subject = format_string($SITE->fullname) . ': ' . get_string('newusers');
 
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncuserscsvemailsending', 'local_clickedu', ['userid' => $USER->id,  'username' => $USER->username]);
+    }
     email_to_user($USER, $supportuser, $subject, $message, '', $cew->path, $attachname);
+
+    //##
+    if ($config->advdebug) {
+        local_clickedu_add_debug('debug:syncuserscsvemailsent', 'local_clickedu', ['userid' => $USER->id, 'username' => $USER->username]);
+    }
 }
 
 function clickedu_require_token() {
@@ -1096,4 +1422,20 @@ function clickedu_moodle_webservice_configured() {
     }
 
     return true;
+}
+
+
+function local_clickedu_add_debug($identifier, $component = '', $a = null, $lazyload = false) {
+    local_clickedu_add_line_debug(get_string($identifier, $component, $a, $lazyload));
+}
+function local_clickedu_add_object_debug($object) {
+    local_clickedu_add_line_debug(print_r($object, true));
+}
+function local_clickedu_add_line_debug($line) {
+    global $SESSION;
+
+    if (!isset($SESSION->clickedu_logs)) {
+        $SESSION->clickedu_logs = [];
+    }
+    $SESSION->clickedu_logs[] = $line;
 }

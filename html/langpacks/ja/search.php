@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'search', language 'ja', version '3.8'.
  *
- * @package   search
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     search
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -69,8 +69,8 @@ $string['enginenotinstalled'] = 'エンジン {$a} がインストールされ�
 $string['enginenotselected'] = 'あなたはサーチエンジンを選択していません。';
 $string['engineserverstatus'] = '検索エンジンを利用できません。あなたの管理者にご連絡ください。';
 $string['enteryoursearchquery'] = 'あなたの検索クエリを入力してください。';
-$string['errorareanotavailable'] = '{$a} 検索エリアは利用できません。';
 $string['error_indexing'] = 'インデックス化中にエラーが発生しました。';
+$string['errorareanotavailable'] = '{$a} 検索エリアは利用できません。';
 $string['errors'] = 'エラー';
 $string['everywhere'] = 'あなたがアクセスできるすべての場所';
 $string['filesinindexdirectory'] = 'インデックスディレクトリのファイル';
@@ -114,18 +114,18 @@ $string['schemanotupdated'] = '検索スキーマが新しくありません。'
 $string['schemaversionunknown'] = '検索エンジンが現在のスキーマバージョンを理解できません。';
 $string['score'] = 'スコア';
 $string['search'] = '検索';
-$string['searcharea'] = '検索エリア';
-$string['searchareacategories'] = '検索エリアカテゴリ';
 $string['search:course'] = 'コース';
 $string['search:customfield'] = 'コースカスタムフィールド';
-$string['searching'] = '検索 ...';
 $string['search:message_received'] = 'メッセージ - 受信';
 $string['search:message_sent'] = 'メッセージ - 送信';
 $string['search:mycourse'] = 'マイコース';
-$string['searchnotpermitted'] = 'あなたは検索を許可されていません。';
 $string['search:section'] = 'コースセクション';
-$string['searchsetupdescription'] = '次のステップではあなたのMoodleグローバル検索の設定を支援します。';
 $string['search:user'] = 'ユーザ';
+$string['searcharea'] = '検索エリア';
+$string['searchareacategories'] = '検索エリアカテゴリ';
+$string['searching'] = '検索 ...';
+$string['searchnotpermitted'] = 'あなたは検索を許可されていません。';
+$string['searchsetupdescription'] = '次のステップではあなたのMoodleグローバル検索の設定を支援します。';
 $string['searchwithin'] = '検索対象';
 $string['seconds'] = '秒';
 $string['solutions'] = 'ソリューション';

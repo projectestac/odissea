@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_match', language 'de', version '3.8'.
  *
- * @package   qtype_match
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_match
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,9 +38,9 @@ $string['notenoughqsandas'] = 'Sie müssen mindestens {$a->q} Fragen und {$a->a}
 $string['notenoughquestions'] = 'Sie müssen mindestens {$a} Paare mit Frage und Antwort anbieten.';
 $string['pleaseananswerallparts'] = 'Bitte beantworten Sie alle Teile der Frage';
 $string['pluginname'] = 'Zuordnung';
+$string['pluginname_help'] = 'Zuordnungsfragen fordern dazu auf, Begriffe, Aussagen oder Fragen jeweils anderen Begriffen, Aussagen oder Fragen zuzuordnen.';
 $string['pluginnameadding'] = 'Zuordnungsfrage hinzufügen';
 $string['pluginnameediting'] = 'Zuordnungsfrage bearbeiten';
-$string['pluginname_help'] = 'Zuordnungsfragen fordern dazu auf, Begriffe, Aussagen oder Fragen jeweils anderen Begriffen, Aussagen oder Fragen zuzuordnen.';
 $string['pluginnamesummary'] = 'Die Antwort auf jede der Unterfragen muss aus einer Liste von Möglichkeiten ausgewählt werden.';
 $string['privacy:metadata'] = 'Der Fragentyp \'Zuordnungsfrage\' speichert keine personenbezogenen Daten.';
 $string['shuffle'] = 'Mischen';

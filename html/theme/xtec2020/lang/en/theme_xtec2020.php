@@ -65,7 +65,8 @@ $string['colorset'] = 'Color set';
 $string['colorsetdesc'] = 'Choose the color set to use in the theme. You can modify the colors predefined.';
 
 $string['custom'] = 'Custom'; //Personalitzat
-$string['grana'] = 'Garnet (default)'; //'Grana (predefinit)'
+$string['PEDC'] = 'PEDC (default)'; //'PEDC (predefinit)'
+$string['grana'] = 'Garnet'; //'Grana'
 $string['coral'] = 'Coral Reef';//'Escull de coral'
 $string['kellygreen'] = 'Kelly Green';//'Kelly Green'
 $string['colourful'] = 'Colourful';//'Coloraines'
@@ -116,3 +117,12 @@ $string['alert_end_desc'] = 'Leave empty if you want to show it forever. Format 
 $string['agora_alert_message_desc'] = 'Shows a message on the top of the block area for everybody';
 $string['admin_alert_message_desc'] = 'Shows a message on the top of the block area only for admins';
 $string['show_admins'] = 'This message is only shown to site administrators';
+
+// XTEC service type
+$string['xtec_type_heading'] = 'Type of XTEC service';
+$string['xtec_type'] = 'XTEC service';
+$string['xtec_type_desc'] = 'Select the type of XTEC service';
+$string['xtectypedesc1'] = "Àgora/Eix";
+$string['xtectypedesc2'] = "Àgora/EOI";
+$string['xtectypedesc3'] = "Alexandria";
+$string['xtectypedesc4'] = "Odissea";

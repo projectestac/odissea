@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'wiki', language 'el', version '3.8'.
  *
- * @package   wiki
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     wiki
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -99,12 +99,12 @@ $string['firstpagetitle_help'] = 'Τίτλος της πρώτης σελίδα�
 $string['forceformat'] = 'Υποχρεωτικός μορφότυπος';
 $string['forceformat_help'] = 'Αν ο μορφότυπος είναι υποχρεωτικός (πλαίσιο ελέγχου επιλεγμένο), τότε δεν υπάρχει καμία επιλογή για να διαλέξετε μορφότυπο κατά την επεξεργασία μιας σελίδας wiki.';
 $string['format'] = 'Μορφότυπος';
-$string['formatcreole'] = 'Μορφότυπος Creole';
-$string['formatcreole_help'] = 'Η Creole (μιγάς, με μικτή καταγωγή) είναι μια κοινή γλώσσα σήμανσης wiki με μια γραμμή εργαλείων επεξεργασίας για την εισαγωγή κατάλληλης σήμανσης. Για να δημιουργήσετε μια νέα σελίδα, πληκτρολογήστε το νέο όνομα σελίδας ανάμεσα σε διπλές αγκύλες, για παράδειγμα [[Σελίδα 2]].';
-$string['formatcreole_link'] = 'άρθρωμα/wiki/creole';
 $string['format_help'] = '* HTML - Ο επεξεργαστής HTML είναι διαθέσιμος
 * Creole - Μια κοινή γλώσσα σήμανσης wiki για την οποία είναι διαθέσιμη μια μικρή γραμμή εργαλείων επεξεργασίας
 * Nwiki - Γλώσσα σήμανσης που μοιάζει με Mediawiki που χρησιμοποιείται στο συνεισφερόμενο άρθρωμα Nwiki';
+$string['formatcreole'] = 'Μορφότυπος Creole';
+$string['formatcreole_help'] = 'Η Creole (μιγάς, με μικτή καταγωγή) είναι μια κοινή γλώσσα σήμανσης wiki με μια γραμμή εργαλείων επεξεργασίας για την εισαγωγή κατάλληλης σήμανσης. Για να δημιουργήσετε μια νέα σελίδα, πληκτρολογήστε το νέο όνομα σελίδας ανάμεσα σε διπλές αγκύλες, για παράδειγμα [[Σελίδα 2]].';
+$string['formatcreole_link'] = 'άρθρωμα/wiki/creole';
 $string['formathtml'] = 'Μορφότυπος HTML';
 $string['formathtml_help'] = 'Ο επεξεργαστής HTML μπορεί να χρησιμοποιηθεί για μορφοποίηση περιεχομένου. Για να δημιουργήσετε μια νέα σελίδα, πληκτρολογήστε το νέο όνομα σελίδας ανάμεσα σε διπλές αγκύλες, για παράδειγμα [[Σελίδα 2]].';
 $string['formatnwiki'] = 'Μορφότυπος NWiki';
@@ -118,15 +118,15 @@ $string['incorrectpageid'] = 'Το αναγνωριστικό σελίδας ε�
 $string['incorrectsubwikiid'] = 'Το αναγνωριστικό του υπο-wiki είναι εσφαλμένο.';
 $string['incorrectwikiid'] = 'Το αναγνωριστικό του wiki είναι εσφαλμένο.';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης Wiki';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Wiki.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης Wiki';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες Wiki κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση, Υποβολή)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Wiki.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Wiki';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Wiki.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Wiki';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Wiki κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος, Συμμετέχων με άλλους)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Wiki.';
 $string['individualpagedoesnotexist'] = 'Η μεμονωμένη σελίδα wiki δεν υπάρχει';
 $string['insertcomment'] = 'Εισαγωγή σχολίου';
 $string['insertimage'] = 'Εισαγωγή μιας εικόνας...';
@@ -194,17 +194,17 @@ $string['orphaned'] = 'Ορφανές σελίδες';
 $string['orphaned_help'] = 'Λίστα σελίδων χωρίς σύνδεσμο από καμία άλλη σελίδα.';
 $string['overridelocks'] = 'Παράκαμψη κλειδωμάτων';
 $string['overridinglocks'] = 'Παράκαμψη κλειδωμάτων...';
+$string['page-mod-wiki-comments'] = 'Σελίδα σχολίων του αρθρώματος wiki';
+$string['page-mod-wiki-history'] = 'Σελίδα ιστορικού';
+$string['page-mod-wiki-map'] = 'Χάρτης σελίδων wiki';
+$string['page-mod-wiki-view'] = 'Κύρια σελίδα του αρθρώματος wiki';
+$string['page-mod-wiki-x'] = 'Οποιαδήποτε σελίδα αρθρώματος wiki';
 $string['pageexists'] = 'Αυτή η σελίδα υπάρχει ήδη.';
 $string['pageindex'] = 'Ευρετήριο σελίδων';
 $string['pageindex_help'] = 'Το δέντρο σελίδων αυτού του wiki';
 $string['pageislocked'] = 'Κάποιος επεξεργάζεται αυτήν την σελίδα αυτήν την στιγμή. Προσπαθήστε να την επεξεργαστείτε σε λίγα λεπτά.';
 $string['pagelist'] = 'Λίστα σελίδων';
 $string['pagelist_help'] = 'Η λίστα σελίδων κατηγοριοποιήθηκε με αλφαβητική σειρά';
-$string['page-mod-wiki-comments'] = 'Σελίδα σχολίων του αρθρώματος wiki';
-$string['page-mod-wiki-history'] = 'Σελίδα ιστορικού';
-$string['page-mod-wiki-map'] = 'Χάρτης σελίδων wiki';
-$string['page-mod-wiki-view'] = 'Κύρια σελίδα του αρθρώματος wiki';
-$string['page-mod-wiki-x'] = 'Οποιαδήποτε σελίδα αρθρώματος wiki';
 $string['pagename'] = 'Όνομα σελίδας';
 $string['peerreview'] = 'Αξιολόγηση από ομότιμους';
 $string['pluginadministration'] = 'Διαχείριση του Wiki';
@@ -284,11 +284,17 @@ $string['viewperpage'] = 'Εμφάνιση {$a} εκδόσεων ανά σελί
 $string['viewversion'] = 'Προβολή σελίδας έκδοσης #{$a}';
 $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Προσθήκη νέου wiki';
-$string['wikiattachments'] = 'Συνημμένα Wiki';
-$string['wikiboldtext'] = 'Έντονο Κείμενο';
 $string['wiki:createpage'] = 'Δημιουργία νέων σελίδων wiki';
 $string['wiki:editcomment'] = 'Προσθήκη σχολίων στις σελίδες';
 $string['wiki:editpage'] = 'Αποθήκευση σελίδων wiki';
+$string['wiki:managecomment'] = 'Διαχείριση σχολίων wiki';
+$string['wiki:managefiles'] = 'Διαχείριση αρχείων wiki';
+$string['wiki:managewiki'] = 'Διαχείριση ρυθμίσεων wiki';
+$string['wiki:overridelock'] = 'Παράκαμψη κλειδωμάτων wiki';
+$string['wiki:viewcomment'] = 'Εμφάνιση σχολίων σελίδας';
+$string['wiki:viewpage'] = 'Εμφάνιση σελίδων wiki';
+$string['wikiattachments'] = 'Συνημμένα Wiki';
+$string['wikiboldtext'] = 'Έντονο Κείμενο';
 $string['wikiexternalurl'] = 'Εξωτερικό URL';
 $string['wikifiles'] = 'Αρχεία wiki';
 $string['wikifiletable'] = 'Λίστα ανεβασμένων αρχείων';
@@ -299,21 +305,15 @@ $string['wikiinternalurl'] = 'Εσωτερική σύνδεση';
 $string['wikiintro'] = 'Περιγραφή';
 $string['wikiitalictext'] = 'Πλάγιο κείμενο';
 $string['wikilockingsettings'] = 'Κλείδωμα και επαναφορά χρονικών ορίων';
-$string['wiki:managecomment'] = 'Διαχείριση σχολίων wiki';
-$string['wiki:managefiles'] = 'Διαχείριση αρχείων wiki';
-$string['wiki:managewiki'] = 'Διαχείριση ρυθμίσεων wiki';
 $string['wikimode'] = 'Κατάσταση wiki';
-$string['wikimodecollaborative'] = 'Συνεργατικό wiki';
 $string['wikimode_help'] = 'Η κατάσταση του wiki καθορίζει αν ο καθένας μπορεί να επεξεργαστεί το wiki - συνεργατικό wiki - ή αν ο καθένας έχει το δικό του wiki, το οποίο μόνο αυτός μπορεί να επεξεργαστεί - ατομικό wiki.';
+$string['wikimodecollaborative'] = 'Συνεργατικό wiki';
 $string['wikimodeindividual'] = 'Ατομικό wiki';
 $string['wikiname'] = 'Όνομα wiki';
 $string['wikinowikitext'] = 'Δεν υπάρχει κείμενο wiki';
 $string['wikiorderedlist'] = 'Αριθμημένη λίστα';
-$string['wiki:overridelock'] = 'Παράκαμψη κλειδωμάτων wiki';
 $string['wikipages'] = 'Σελίδες wiki';
 $string['wikisettings'] = 'Ρυθμίσεις wiki';
 $string['wikiunorderedlist'] = 'Μη αριθμημένη λίστα';
-$string['wiki:viewcomment'] = 'Εμφάνιση σχολίων σελίδας';
-$string['wiki:viewpage'] = 'Εμφάνιση σελίδων wiki';
 $string['wrongversionlock'] = 'Ένας άλλος χρήστης έχει επεξεργαστεί αυτήν τη σελίδα ενώ την επεξεργάζεστε και το περιεχόμενό σας είναι ξεπερασμένο.';
 $string['wrongversionsave'] = 'Ένας άλλος χρήστης έχει δημιουργήσει μια έκδοση ενώ κάνατε επεξεργασία και έχετε χάσει τις αλλαγές του. Ελέγξτε το ιστορικό της σελίδας.';

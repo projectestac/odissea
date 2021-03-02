@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dbtransfer', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'dbtransfer', language 'eu', version '3.8'.
  *
- * @package   dbtransfer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     dbtransfer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['differenttableexception'] = 'Taularen {$a} egitura ez dator bat';
 $string['done'] = 'Eginda';
 $string['exportschemaexception'] = 'Oraingo datu-basearen egitura ez dator bat install.xml fitxategi guztiekin. <br /> {$a}';
 $string['importschemaexception'] = 'Oraingo datu-basearen egitura ez dator bat install.xml fitxategi guztiekin. <br /> {$a}';
-$string['importversionmismatchexception'] = 'Oraingo bertsioa {$a->currentver} ez dator bat esportatutako bertsioarekin {$a->schemaver}.';
+$string['importversionmismatchexception'] = 'Oraingo {$a->currentver} bertsioa ez dator bat esportatutako {$a->schemaver} bertsioarekin.';
 $string['malformedxmlexception'] = 'Aurkitutako XML-a ez da egokia, ezin da jarraitu.';
 $string['tablex'] = '{$a} taula:';
 $string['unknowntableexception'] = 'Esportatutako fitxategian {$a} taula ezezaguna aurkitu da.';

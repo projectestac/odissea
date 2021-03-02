@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essay', language 'zh_cn', version '3.8'.
  *
- * @package   qtype_essay
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essay
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,9 +42,9 @@ $string['mustrequire'] = '当“无内嵌文本”被选择，或响应是可选
 $string['mustrequirefewer'] = '你不能要求超过你允许的附件数。';
 $string['nlines'] = '{$a} 行';
 $string['pluginname'] = '简答题';
+$string['pluginname_help'] = '通过一段或两段文字来回答一道题，题目里可以包含图片。简答题只有在被教师审阅并人工评分后才有成绩。';
 $string['pluginnameadding'] = '添加一道简答题';
 $string['pluginnameediting'] = '编辑一道简答题';
-$string['pluginname_help'] = '通过一段或两段文字来回答一道题，题目里可以包含图片。简答题只有在被教师审阅并人工评分后才有成绩。';
 $string['pluginnamesummary'] = '可以回答几句或几段话，然后人工评分';
 $string['responsefieldlines'] = '输入框大小';
 $string['responseformat'] = '回复格式';

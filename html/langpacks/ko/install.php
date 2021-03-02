@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'install', language 'ko', version '3.8'.
  *
- * @package   install
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     install
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,7 +30,7 @@ $string['admindirname'] = '관리 디렉토리';
 $string['admindirsetting'] = '간혹 어떤 웹호스트 업체는 제어판 등을 제공하는 특별한 URL으로서 /admin을 사용합니다. 불행하게도 이것은 무들 관리페이지를 위한 표준 위치와 충돌을 일으킵니다. 설치과정에서 관리 디렉토리의 이름을 바꿈으로서 이 문제를 고칠수 있는 데, 다음의 예와 같이 새이름을 여기에 넣으면 됩니다. 예: <br /> <br /><b>moodleadmin</b><br /> <br /> 이렇게 하면 무들에서 관리자 링크문제가 해결됩니다.';
 $string['admindirsettinghead'] = '관리자 디렉토리 설정 ...';
 $string['admindirsettingsub'] = '간혹 어떤 웹호스트 업체는 제어판 등을 제공하는 특별한 URL으로서 /admin을 사용합니다. 불행하게도 이것은 무들 관리페이지를 위한 표준 위치와 충돌을 일으킵니다. 설치과정에서 관리 디렉토리의 이름을 바꿈으로서 이 문제를 고칠수 있는 데, 다음의 예와 같이 새이름을 여기에 넣으면 됩니다. 예: <br /> <br /><b>moodleadmin</b><br /> <br /> 이렇게 하면 무들에서 관리자 링크문제가 해결됩니다.';
-$string['availablelangs'] = '가능한 언어 목록';
+$string['availablelangs'] = '사용 가능한 언어 팩';
 $string['caution'] = '주의';
 $string['chooselanguage'] = '언어를 선택하시오';
 $string['chooselanguagehead'] = '언어를 선택하시오';
@@ -170,7 +170,7 @@ $string['releasenoteslink'] = '본 무들판에 대한 정보는 {$a} 에 있는
 $string['safemode'] = '안전모드';
 $string['safemodeerror'] = '아마 안전모드(Safe Mode)가 작동되어서 문제가 생겼을 것입니다.';
 $string['safemodehelp'] = '<p>무들은 safe mode on 상태에서는 작동이 원활하지 않을 텐데, 아마 그 중 하나가 새로운 파일을 못 만들게 하는 문제일 것입니다.</p>
-<p>Safe mode는 일단의 보안 편집증적인 웹호스트에서 이를 켜 놓을 것인데, 무들 사이트를 원활히 운용하기 위해서는 새로운 웹호스트를 찾아보시는 편이 나을 겁니다.</p>
+<p>Safe mode는 일부 웹호스트에서 이를 켜 놓을 수 있는데, 무들 사이트를 원활히 운용하기 위해서는 새로운 웹호스트를 찾아보시는 편이 나을 겁니다.</p>
 <p>원한다면 설치는 계속할 수는 있는데, 나중에 문제에 봉착할 것이라는 점을 염두에 두기 바랍니다.</p>';
 $string['sessionautostart'] = '세션 자동 시작';
 $string['sessionautostarterror'] = '이것은 꺼져 있어야(Off) 합니다.';
@@ -179,7 +179,7 @@ $string['sessionautostarthelp'] = '<p>무들은 세션의 지원이 필요하고
 $string['sqliteextensionisnotpresentinphp'] = 'PHP가 SQLite 확장에 걸맞게 설정되지 않았습니다. php.ini 파일을 점검해 보거나 PHP를 다시 컴파일 하시기 바랍니다.';
 $string['upgradingqtypeplugin'] = '질문/유형 플러그인 업그레이드';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
-$string['welcomep20'] = '당신의 컴퓨터에 <strong>{$a->packname} {$a->packversion}</strong> 패키지를 성공적으로 설치한 것을 축하합니다!';
+$string['welcomep20'] = '컴퓨터에 <strong>{$a->packname} {$a->packversion}</strong> 패키지를 성공적으로 설치하고 기동하였습니다. 축하합니다!';
 $string['welcomep30'] = '<strong>{$a->installername}</strong> 판본은 <strong>무들</strong>이 동작하는 환경을 생성하기 위한 어플리케이션을 포함하고 있습니다.';
 $string['welcomep40'] = '이 패키지는 <strong>무들 {$a->moodlerelease} ({$a->moodleversion})</strong> 을 포함하고 있습니다.';
 $string['welcomep50'] = '이 패키지에 있는 모든 어플리케이션을 사용하는 것은 각각의 라이센스에의해 지배받습니다. 완전한<strong>{$a->installername}</strong> 패키지는

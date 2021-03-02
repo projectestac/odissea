@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filters', language 'ko', version '3.8'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,10 +49,10 @@ $string['doesnotcontain'] = '제외';
 $string['endswith'] = '끝말';
 $string['filterallwarning'] = '내용과 함께 표제에 필터를 적용하는 것은 서버에 굉장한 부하를 줄 수 있습니다. \'적용\'을 신중히 사용하기 바랍니다. 이 기능은 주로 다국어언어 필터와 함께 사용합니다.';
 $string['filtersettings'] = '필터 설정';
-$string['filtersettingsforin'] = '{$a->context} 의 {$a->filter} 필터 설정';
 $string['filtersettings_help'] = '본 페이지에서는 사이트의 특정 부분의 필터를 켜거나 끌 수 있게 해 줍니다.
 다만, 여기에서는 관리자가 활성화해 놓은 필터들에 대해서만 접속할 수 있습니다.
 어떤 필터는 여러분들이 직접 설정할 수 있게 해 놓았는데, 이 경우 그들의 이름 뒤에 \'설정\' 링크가 표시되 있을 것입니다.';
+$string['filtersettingsforin'] = '{$a->context} 의 {$a->filter} 필터 설정';
 $string['filtersettingsin'] = '{$a} 의 필터 설정';
 $string['firstaccess'] = '첫번째 접속';
 $string['globalrolelabel'] = '{$a->label} 은 {$a->value} 임';

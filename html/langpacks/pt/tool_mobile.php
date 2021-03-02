@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_mobile', language 'pt', version '3.8'.
  *
- * @package   tool_mobile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_mobile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,12 +37,12 @@ $string['cachedef_plugininfo'] = 'Armazena a lista de módulos com suplementos m
 $string['clickheretolaunchtheapp'] = 'Clique aqui se a aplicação não abrir automaticamente.';
 $string['configmobilecssurl'] = 'Um ficheiro CSS para personalizar a interface da sua Aplicação móvel.';
 $string['customlangstrings'] = 'Strings de idioma personalizadas';
-$string['customlangstrings_desc'] = 'Palavras e frases mostradas na aplicação podem ser personalizadas aqui. Digite cada string de idioma personalizado numa nova linha no formato: string identifier, custom language string e language code, separados por uma barra vertical. Por exemplo:
+$string['customlangstrings_desc'] = 'As palavras e as frases mostradas na aplicação podem ser personalizadas aqui. Digite cada string de idioma personalizada numa nova linha no formato: identificador da string, string do idioma personalizada e código do idioma, separados por uma barra vertical. Por exemplo:
 <pre>
 mm.user.student|Learner|en
 mm.user.student|Aluno|pt
 </pre>
-Para obter uma lista completa de identificadores de string, consulte a documentação.';
+Para obter a lista completa de identificadores de string, consulte a documentação.';
 $string['custommenuitems'] = 'Itens de menu personalizados';
 $string['custommenuitems_desc'] = 'Itens adicionais podem ser adicionados ao menu principal da aplicação, especificando-os aqui. Digite cada item de menu personalizado numa nova linha no formato: texto do item, URL, método de abertura da hiperligação e o código do idioma (opcional, para mostrar o item apenas aos utilizadores do idioma especificado), separados por barras verticais.
 

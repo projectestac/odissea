@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'forum', language 'ja', version '3.8'.
  *
- * @package   forum
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     forum
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,8 +58,8 @@ $string['availability'] = '利用';
 $string['blockafter'] = 'ブロッキングまでの投稿閾値';
 $string['blockafter_help'] = 'この設定では指定された時間内にユーザが投稿できる投稿数を指定します。ケイパビリティ「mod/forum:postwithoutthrottling」が割り当てられたユーザは投稿制限から除外されます。';
 $string['blockperiod'] = 'ブロッキング期間';
-$string['blockperioddisabled'] = 'ブロックしない';
 $string['blockperiod_help'] = '指定された時間内に指定された投稿数以上を投稿した場合、学生の投稿を拒否することができます。ケイパビリティ「mod/forum:postwithoutthrottling」が割り当てられたユーザは投稿制限から除外されます。';
+$string['blockperioddisabled'] = 'ブロックしない';
 $string['blogforum'] = 'ブログフォーマットで表示される標準フォーラム';
 $string['bynameondate'] = '{$a->date} - {$a->name} の投稿';
 $string['cachedef_forum_is_tracked'] = 'ユーザのフォーラムトラッキングステータス';
@@ -208,13 +208,13 @@ $string['discussionunsubscribed'] = 'あなたはこのディスカッション�
 $string['discussthistopic'] = 'このトピックを読む';
 $string['discusstopicname'] = 'ディスカッショントピック: {$a}';
 $string['displayend'] = '表示終了';
-$string['displayenddate'] = '表示終了: {$a}';
 $string['displayend_help'] = 'この設定では特定の日付の後にフォーラム投稿を非表示にするかどうか指定します。管理者は常にフォーラム投稿を閲覧できることに留意してください。';
+$string['displayenddate'] = '表示終了: {$a}';
 $string['displaymode'] = '表示モード';
 $string['displayperiod'] = '表示期間';
 $string['displaystart'] = '表示開始';
-$string['displaystartdate'] = '表示開始: {$a}';
 $string['displaystart_help'] = 'この設定では特定の日付からフォーラム投稿を表示するかどうか指定します。管理者は常にフォーラム投稿を閲覧できることに留意してください。';
+$string['displaystartdate'] = '表示開始: {$a}';
 $string['displaywordcount'] = '総単語数を表示する';
 $string['displaywordcount_help'] = 'この設定ではそれぞれの投稿の総単語数を表示するかどうか指定します。';
 $string['duedate'] = '終了日時';
@@ -287,10 +287,6 @@ $string['forum:addinstance'] = '新しいフォーラムを追加する';
 $string['forum:addnews'] = 'アナウンスメントを追加する';
 $string['forum:addquestion'] = '質問を追加する';
 $string['forum:allowforcesubscribe'] = '強制購読を許可する';
-$string['forumauthorhidden'] = '投稿者 (非表示)';
-$string['forumblockingalmosttoomanyposts'] = 'あなたは投稿数の上限に近づきつつあります。あなたは直近の {$a->blockperiod} に {$a->numposts} 回投稿しています。投稿数の上限は {$a->blockafter} 回です。';
-$string['forumbodydeleted'] = 'このフォーラム投稿のコンテンツは削除されたため現在アクセスすることはできません。';
-$string['forumbodyhidden'] = 'あなたはこの投稿を閲覧できません。恐らく、あなたがまだディスカッションに投稿していない、最大編集時間を経過していない、ディスカッションが開始されていない、またはディスカッションの有効期限が切れています。';
 $string['forum:canoverridecutoff'] = '遮断日以降にフォーラムに投稿する';
 $string['forum:canoverridediscussionlock'] = 'ロックされたディスカッションに返信する';
 $string['forum:canposttomygroups'] = 'あなたがアクセスできるグループすべてに投稿する';
@@ -304,24 +300,35 @@ $string['forum:exportforum'] = 'フォーラムをエクスポートする';
 $string['forum:exportownpost'] = '自分の投稿をエクスポートする';
 $string['forum:exportpost'] = '投稿をエクスポートする';
 $string['forum:grade'] = 'フォーラムを評定する';
-$string['forumgrader'] = 'フォーラム評定者';
-$string['forumgradingnavigation'] = 'フォーラム評定ナビゲーション';
-$string['forumgradingpanel'] = 'フォーラム評定パネル';
-$string['forumintro'] = '説明';
 $string['forum:managesubscriptions'] = '購読者を管理する';
 $string['forum:movediscussions'] = 'ディスカッションを移動する';
-$string['forumname'] = 'フォーラム名';
 $string['forum:pindiscussions'] = 'ディスカッションをピン留めする';
 $string['forum:postprivatereply'] = '投稿にプライベートに返信する';
-$string['forumposts'] = 'フォーラム投稿';
 $string['forum:postwithoutthrottling'] = '投稿閾値を適用しない';
 $string['forum:rate'] = '投稿を評価する';
 $string['forum:readprivatereplies'] = 'プライベート返信を表示する';
 $string['forum:replynews'] = 'アナウンスメントに返信する';
 $string['forum:replypost'] = '投稿に返信する';
-$string['forums'] = 'フォーラム';
 $string['forum:splitdiscussions'] = 'ディスカッションを分割する';
 $string['forum:startdiscussion'] = '新しいディスカッションを開始する';
+$string['forum:viewallratings'] = '個別のユーザから与えられた実評価すべてを表示する';
+$string['forum:viewanyrating'] = 'すべてのユーザが受けた評価合計を表示する';
+$string['forum:viewdiscussion'] = 'ディスカッションを表示する';
+$string['forum:viewhiddentimedposts'] = '非表示の時間制限投稿を表示する';
+$string['forum:viewqandawithoutposting'] = 'Q&A投稿を常に表示する';
+$string['forum:viewrating'] = 'あなたが受けた評価合計を表示する';
+$string['forum:viewsubscribers'] = '購読者を表示する';
+$string['forumauthorhidden'] = '投稿者 (非表示)';
+$string['forumblockingalmosttoomanyposts'] = 'あなたは投稿数の上限に近づきつつあります。あなたは直近の {$a->blockperiod} に {$a->numposts} 回投稿しています。投稿数の上限は {$a->blockafter} 回です。';
+$string['forumbodydeleted'] = 'このフォーラム投稿のコンテンツは削除されたため現在アクセスすることはできません。';
+$string['forumbodyhidden'] = 'あなたはこの投稿を閲覧できません。恐らく、あなたがまだディスカッションに投稿していない、最大編集時間を経過していない、ディスカッションが開始されていない、またはディスカッションの有効期限が切れています。';
+$string['forumgrader'] = 'フォーラム評定者';
+$string['forumgradingnavigation'] = 'フォーラム評定ナビゲーション';
+$string['forumgradingpanel'] = 'フォーラム評定パネル';
+$string['forumintro'] = '説明';
+$string['forumname'] = 'フォーラム名';
+$string['forumposts'] = 'フォーラム投稿';
+$string['forums'] = 'フォーラム';
 $string['forumsubjectdeleted'] = 'このフォーラム投稿は削除されました。';
 $string['forumsubjecthidden'] = '件名 (非表示)';
 $string['forumtracked'] = '投稿は未読管理されています。';
@@ -334,27 +341,20 @@ $string['forumtype_help'] = 'フォーラムには5つのタイプあります:
 * Q&Aフォーラム - 学生は他の学生の投稿を読む前に自分の考え方を投稿する必要があります。
 * ブログフォーマットで表示される標準フォーラム - 誰でも常に新しいトピックを開始できる開かれたフォーラムです。ディスカッショントピックは1つのページに「このトピックを読む」リンクとして表示されます。
 * 一般利用のための標準フォーラム - 誰でも常に新しいトピックを開始できる開かれたフォーラムです。';
-$string['forum:viewallratings'] = '個別のユーザから与えられた実評価すべてを表示する';
-$string['forum:viewanyrating'] = 'すべてのユーザが受けた評価合計を表示する';
-$string['forum:viewdiscussion'] = 'ディスカッションを表示する';
-$string['forum:viewhiddentimedposts'] = '非表示の時間制限投稿を表示する';
-$string['forum:viewqandawithoutposting'] = 'Q&A投稿を常に表示する';
-$string['forum:viewrating'] = 'あなたが受けた評価合計を表示する';
-$string['forum:viewsubscribers'] = '購読者を表示する';
 $string['generalforum'] = '一般利用のための標準フォーラム';
 $string['generalforums'] = '一般フォーラム';
-$string['graded'] = '評定済み';
-$string['gradeforrating'] = 'レーティングの評点: {$a->str_long_grade}';
-$string['gradeforratinghidden'] = '非表示レーティングの評点';
 $string['grade_forum_header'] = 'フォーラム全体の評定';
 $string['grade_forum_name'] = 'フォーラム全体';
 $string['grade_forum_title'] = '評定';
+$string['grade_rating_name'] = 'レーティング';
+$string['graded'] = '評定済み';
+$string['gradeforrating'] = 'レーティングの評点: {$a->str_long_grade}';
+$string['gradeforratinghidden'] = '非表示レーティングの評点';
 $string['gradeforwholeforum'] = 'フォーラムの評定: {$a->str_long_grade}';
 $string['gradeforwholeforumhidden'] = '非表示フォーラムの評定';
 $string['gradeitem:forum'] = 'フォーラム';
 $string['gradeitemnameforrating'] = '{$a->name} の評定レーティング';
 $string['gradeitemnameforwholeforum'] = '{$a->name} のフォーラム全体の評定';
-$string['grade_rating_name'] = 'レーティング';
 $string['grades:gradesavedfor'] = '{$a->fullname} の評定が保存されました。';
 $string['grades:gradesavefailed'] = '{$a->fullname} の評定を保存できません: {$a->error}';
 $string['gradeusers'] = 'ユーザを評定する';
@@ -366,13 +366,13 @@ $string['hidepreviousrepliescount'] = 'まえの返信を隠す ({$a})';
 $string['hideusersearch'] = 'ユーザ検索を隠す';
 $string['indexoutoftotal'] = '{$a->index} / {$a->total}';
 $string['indicator:cognitivedepth'] = 'フォーラム認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はフォーラム活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'フォーラム認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がフォーラム活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信, フィードバックの閲覧, フィードバックへのコメント, フィードバック閲覧後の再送信)。';
-$string['indicator:cognitivedepth_help'] = 'この指標はフォーラム活動で学生が到達した認識深度に基づきます。';
 $string['indicator:socialbreadth'] = 'フォーラム社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はフォーラム活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'フォーラム社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がフォーラム活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
-$string['indicator:socialbreadth_help'] = 'この指標はフォーラム活動で学生が到達した社会的広がりに基づきます。';
 $string['inforum'] = '{$a}';
 $string['inpagereplysubject'] = 'Re: {$a}';
 $string['inreplyto'] = '{$a} への返信';
@@ -560,14 +560,14 @@ $string['privacy:metadata:forum_digests'] = 'それぞれのフォーラムの�
 $string['privacy:metadata:forum_digests:forum'] = '購読しているフォーラムです。';
 $string['privacy:metadata:forum_digests:maildigest'] = 'ダイジェストプリファレンスです。';
 $string['privacy:metadata:forum_digests:userid'] = 'ダイジェストプリファレンスのユーザのIDです。';
-$string['privacy:metadata:forum_discussions'] = 'ユーザが作成した個別のフォーラムディスカッションに関する情報です。';
-$string['privacy:metadata:forum_discussions:assessed'] = 'TODOD - このフィールドに保存されるものです。';
-$string['privacy:metadata:forum_discussions:name'] = '投稿者によって選択されたディスカッション名です。';
-$string['privacy:metadata:forum_discussions:timemodified'] = 'ディスカッションの最終更新日時です。';
 $string['privacy:metadata:forum_discussion_subs'] = '個別のフォーラムディスカッションの購読に関する情報です。';
 $string['privacy:metadata:forum_discussion_subs:discussionid'] = '購読されたディスカッションのIDです。';
 $string['privacy:metadata:forum_discussion_subs:preference'] = '購読の開始日時です。';
 $string['privacy:metadata:forum_discussion_subs:userid'] = 'ディスカッション購読のユーザのIDです。';
+$string['privacy:metadata:forum_discussions'] = 'ユーザが作成した個別のフォーラムディスカッションに関する情報です。';
+$string['privacy:metadata:forum_discussions:assessed'] = 'TODOD - このフィールドに保存されるものです。';
+$string['privacy:metadata:forum_discussions:name'] = '投稿者によって選択されたディスカッション名です。';
+$string['privacy:metadata:forum_discussions:timemodified'] = 'ディスカッションの最終更新日時です。';
 $string['privacy:metadata:forum_discussions:userid'] = 'ディスカッションを作成したユーザのIDです。';
 $string['privacy:metadata:forum_discussions:usermodified'] = '何らかの方法により最後にディスカッションを更新したユーザのIDです。';
 $string['privacy:metadata:forum_grades'] = 'フォーラムの評定データ';
@@ -629,10 +629,10 @@ $string['replies'] = '返信';
 $string['repliesmany'] = '現在の返信数: {$a}';
 $string['repliesone'] = '現在の返信数: {$a}';
 $string['reply'] = '返信';
-$string['replyauthorself'] = '{$a} (あなた)';
-$string['replyforum'] = 'フォーラムに返信する';
 $string['reply_handler'] = 'フォーラム投稿にメールで返信します。';
 $string['reply_handler_name'] = 'フォーラム投稿に返信する';
+$string['replyauthorself'] = '{$a} (あなた)';
+$string['replyforum'] = 'フォーラムに返信する';
 $string['replyingtoauthor'] = '{$a} に返信する ...';
 $string['replyplaceholder'] = 'あなたの返信を記述する ...';
 $string['replytopostbyemail'] = 'あなたはこのフォーラム投稿にメールで返信することができます。';
@@ -647,10 +647,11 @@ $string['rssarticles_help'] = 'この設定ではRSSフィードに含まれる�
 $string['rsssubscriberssdiscussions'] = 'ディスカッションのRSSフィード';
 $string['rsssubscriberssposts'] = '投稿のRSSフィード';
 $string['rsstype'] = 'この活動のRSSフィード';
-$string['rsstypedefault'] = 'RSSフィードタイプ';
 $string['rsstype_help'] = 'この活動のRSSフィードを有効にするにはフィードに含まれるディスカッションまたは投稿を選択してください。';
+$string['rsstypedefault'] = 'RSSフィードタイプ';
 $string['search'] = '検索';
 $string['search:activity'] = 'フォーラム - 活動情報';
+$string['search:post'] = 'フォーラム - 投稿';
 $string['searchdatefrom'] = '投稿がこの日付よりも新しい';
 $string['searchdateto'] = '投稿がこの日付よりも古い';
 $string['searchforumintro'] = '以下のフィールドの少なくとも1つに検索語句を入力してください:';
@@ -659,7 +660,6 @@ $string['searchfullwords'] = 'これらの語を完全に含む';
 $string['searchnotwords'] = 'これらの語を含まない';
 $string['searcholderposts'] = '過去の投稿を検索する ...';
 $string['searchphrase'] = 'このフレーズが正確に投稿に含まれる';
-$string['search:post'] = 'フォーラム - 投稿';
 $string['searchresults'] = '検索結果';
 $string['searchsubject'] = 'これらの語が件名に含まれる';
 $string['searchtags'] = 'タグ付け';
@@ -669,10 +669,8 @@ $string['searchusers'] = 'ユーザを検索する';
 $string['searchwhichforums'] = '検索するフォーラムを選択してください';
 $string['searchwords'] = 'これらの語が投稿のどこかに含まれる';
 $string['seeallposts'] = 'このユーザによるすべての投稿を表示する';
-$string['sendstudentnotifications'] = '学生に通知する';
 $string['sendstudentnotificationsdefault'] = '「学生に通知する」のデフォルト設定';
 $string['sendstudentnotificationsdefault_help'] = '評定フォームの「学生に通知する」チェックボックスのデフォルト値を設定します。';
-$string['sendstudentnotifications_help'] = 'この設定を有効にした場合、評定の更新またはフィードバックに関して学生にメッセージが送信されます。この課題で採点ワークフローが有効にされた場合、評定が「リリース」されるまで通知は送信されません。';
 $string['sendstudentnotificationsno'] = 'No';
 $string['sendstudentnotificationsyes'] = 'Yes, 学生に通知を送信する';
 $string['settings'] = '設定';
@@ -700,11 +698,11 @@ $string['subscriberstowithcount'] = '「 {$a->name} 」 ({$a->count}) の購読�
 $string['subscribestart'] = 'このフォーラムの新しい投稿を私にメール通知してください';
 $string['subscribestop'] = 'このフォーラムの新しい投稿を私にメール通知しないでください';
 $string['subscription'] = '購読';
+$string['subscription_help'] = 'フォーラムを購読した場合、あなたが新しいフォーラム投稿の通知を受信することを意味します。通常、あなたは購読するかどうか選択することができますが、すべての人が通知を受信するよう購読が強制される場合もあります。';
 $string['subscriptionandtracking'] = '購読および未読管理';
 $string['subscriptionauto'] = '自動購読';
 $string['subscriptiondisabled'] = '購読停止';
 $string['subscriptionforced'] = '強制購読';
-$string['subscription_help'] = 'フォーラムを購読した場合、あなたが新しいフォーラム投稿の通知を受信することを意味します。通常、あなたは購読するかどうか選択することができますが、すべての人が通知を受信するよう購読が強制される場合もあります。';
 $string['subscriptionmode'] = '購読モード';
 $string['subscriptionmode_help'] = '参加者がフォーラムを購読する場合、フォーラムの投稿内容のコピーをメール受信することを意味します。
 

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_upload', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_upload', language 'nl', version '3.8'.
  *
- * @package   repository_upload
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_upload
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,6 +29,7 @@ $string['configplugin'] = 'Instellingen voor uploadplugin';
 $string['pluginname'] = 'Upload een bestand';
 $string['pluginname_help'] = 'Upload een bestand naar Moodle';
 $string['privacy:metadata'] = 'De Upload een bestand opslagruimte-plugin bewaart geen persoonlijke gegevens.';
+$string['upload:view'] = 'Gebruik uploaden in de file picker';
 $string['upload_error_cant_write'] = 'Kon bestand niet op schijf bewaren';
 $string['upload_error_extension'] = 'Een PHP-extentie heeft de bestandsupload gestopt.';
 $string['upload_error_form_size'] = 'Het geüploade bestand is groter dan de MAX_FILE_SIZE instelling die in het HTML-formulier was opgegeven.';
@@ -37,4 +38,3 @@ $string['upload_error_invalid_file'] = 'Het bestand \'{$a}\' is leeg of is een m
 $string['upload_error_no_file'] = 'Geen bestand geüploaded.';
 $string['upload_error_no_tmp_dir'] = 'PHP heeft geen tijdelijke map';
 $string['upload_error_partial'] = 'Het geüploade bestand is slechts gedeeltelijk geüploaded.';
-$string['upload:view'] = 'Gebruik uploaden in de file picker';

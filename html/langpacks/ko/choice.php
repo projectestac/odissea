@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'ko', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,9 +32,10 @@ $string['atleastoneoption'] = '최소 한개 이상의 답을 해야 합니다.'
 $string['choice'] = '선택문';
 $string['choice:addinstance'] = '새 간편선택 추가';
 $string['choice:choose'] = '설문 기록';
-$string['choiceclose'] = '까지';
 $string['choice:deleteresponses'] = '설문 응답 삭제';
 $string['choice:downloadresponses'] = '응답내용 내려받기';
+$string['choice:readresponses'] = '응답내용 보기';
+$string['choiceclose'] = '까지';
 $string['choicefull'] = '더 이상 이 항목을 선택할 수 없습니다.';
 $string['choicename'] = '설문 명칭';
 $string['choiceopen'] = '부터';
@@ -42,7 +43,6 @@ $string['choiceoptions'] = '설문 요건';
 $string['choiceoptions_help'] = '<p>참여자가 선택을 해야 하는 내용을 기재하는 곳입니다.</p>
 
 <p>선택문이 몇 개 던 갯수의 제한은 없습니다. 또 주어진 모든 칸을 다 채울 필요도 없습니다.</p>';
-$string['choice:readresponses'] = '응답내용 보기';
 $string['choicesaved'] = '저장됨';
 $string['choicetext'] = '설문 내용';
 $string['chooseaction'] = '활동을 선택하십시요...';
@@ -77,8 +77,8 @@ $string['noresultsviewable'] = '지금은 결과를 볼 수 없습니다.';
 $string['notanswered'] = '아직 응답하지 않았습니다';
 $string['notenrolledchoose'] = '좌송합니다만, 등록된 사용자만 설문에 응할 수 있습니다.';
 $string['notopenyet'] = '죄송합니다만, {$a} 까지는 이용할 수 없습니다.';
-$string['numberofuser'] = '사용자';
-$string['numberofuserinpercentage'] = '백분율로 환산한 사용자 수';
+$string['numberofuser'] = '참가자 수';
+$string['numberofuserinpercentage'] = '참가자 퍼센트';
 $string['option'] = '선택사항';
 $string['optionno'] = '옵션 {no}';
 $string['options'] = '옵션';

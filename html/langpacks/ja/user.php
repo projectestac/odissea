@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'user', language 'ja', version '3.8'.
  *
- * @package   user
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     user
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -113,12 +113,12 @@ $string['privacy:metadata:token'] = '秘密鍵が設定されてユーザに送�
 $string['privacy:metadata:trackforums'] = 'フォーラムおよび未読管理のプリファレンスです。';
 $string['privacy:metadata:trustbitmask'] = 'トラストビットマスクです。';
 $string['privacy:metadata:url'] = 'このユーザに関連するURLです。';
-$string['privacy:metadata:userid'] = 'このテーブルにリンクされたユーザIDです。';
-$string['privacy:metadata:username'] = 'このユーザのユーザ名です。';
 $string['privacy:metadata:user_preferences'] = '所与のユーザに関連するプリファレンスです。';
 $string['privacy:metadata:user_preferences:name'] = 'プリファレンス名です。';
 $string['privacy:metadata:user_preferences:userid'] = 'ユーザDです。';
 $string['privacy:metadata:user_preferences:value'] = 'プリファレンス値です。';
+$string['privacy:metadata:userid'] = 'このテーブルにリンクされたユーザIDです。';
+$string['privacy:metadata:username'] = 'このユーザのユーザ名です。';
 $string['privacy:metadata:usertablesummary'] = 'ユーザに関する主個人データを保存するテーブルです。';
 $string['privacy:metadata:uuid'] = 'デバイスベンダUUIDです。';
 $string['privacy:metadata:version'] = '6.1.2、4.2.2のようなデバイスバージョンです。';

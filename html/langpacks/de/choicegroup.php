@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'de', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,16 +45,16 @@ $string['char_limitui_parenthesis_start'] = '(';
 $string['choice'] = 'Gruppenwahl';
 $string['choicegroup:addinstance'] = 'Neue Gruppenwahl hinzufügen';
 $string['choicegroup:choose'] = 'Gruppenwahl durchführen';
-$string['choicegroupclose'] = 'Bis';
 $string['choicegroup:deleteresponses'] = 'Antworten löschen';
 $string['choicegroup:downloadresponses'] = 'Antworten herunterladen';
+$string['choicegroup:readresponses'] = 'Antworten sehen';
+$string['choicegroupclose'] = 'Bis';
 $string['choicegroupfull'] = 'Diese Gruppe ist voll und es gibt keine verfügbaren Plätze mehr.';
 $string['choicegroupname'] = 'Name der Gruppenwahl';
 $string['choicegroupopen'] = 'Verfügbar';
 $string['choicegroupoptions'] = 'Wahloptionen';
 $string['choicegroupoptions_help'] = 'Tragen Sie hier die einzelnen Optionen ein, zwischen denen sich die Teilnehmer/innen entscheiden können.
 Sie können jedes der vorhandenen Felder ausfüllen, Sie dürfen aber auch nicht benötigte Felder leer lassen, die dann in der Abstimmung nicht angezeigt werden. Benötigen Sie weitere Optionen, so klicken Sie auf den Knopf "Weitere Optionen hinzufügen".';
-$string['choicegroup:readresponses'] = 'Antworten sehen';
 $string['choicegroupsaved'] = 'Ihre Wahl wurde gespeichert';
 $string['choicetext'] = 'Auswahltext';
 $string['chooseaction'] = 'Aktion auswählen...';
@@ -69,8 +69,8 @@ $string['del_groups'] = 'Gruppen entfernen';
 $string['displayhorizontal'] = 'Horizontal';
 $string['displaymode'] = 'Anzeigemodus';
 $string['displayvertical'] = 'Senkrecht';
-$string['double_click_grouping_legend'] = 'Zum Auf- und Einklappen auf eine Gruppierung doppelklicken.';
 $string['double_click_group_legend'] = 'Zum Hinzufügen eine Gruppe doppelklicken.';
+$string['double_click_grouping_legend'] = 'Zum Auf- und Einklappen auf eine Gruppierung doppelklicken.';
 $string['event:answered'] = 'Wahl durchgeführt';
 $string['event:answered_desc'] = 'Der Nutzer \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid}\' eine Gruppe auswählt.';
 $string['event:removed'] = 'Wahl entfernt';

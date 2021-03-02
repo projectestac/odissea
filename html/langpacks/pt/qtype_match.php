@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_match', language 'pt', version '3.8'.
  *
- * @package   qtype_match
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_match
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,10 +38,10 @@ $string['notenoughqsandas'] = 'Tem que inserir no mínimo {$a->q} perguntas e {$
 $string['notenoughquestions'] = 'Tem que inserir no mínimo {$a} pares pergunta-resposta';
 $string['pleaseananswerallparts'] = 'Por favor, responda a todas as partes da pergunta.';
 $string['pluginname'] = 'Correspondência';
-$string['pluginnameadding'] = 'A adicionar pergunta de correspondência';
-$string['pluginnameediting'] = 'A editar pergunta de correspondência';
 $string['pluginname_help'] = 'Nas perguntas de correspondência o aluno tem de realizar a ligação correta entre uma lista de nomes ou frases (perguntas) e outra listagem (respostas).';
 $string['pluginname_link'] = 'pergunta/tipo/correspondência';
+$string['pluginnameadding'] = 'A adicionar pergunta de correspondência';
+$string['pluginnameediting'] = 'A editar pergunta de correspondência';
 $string['pluginnamesummary'] = 'A resposta consiste na correspondência entre termos.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Correspondência não armazena quaisquer dados pessoais.';
 $string['shuffle'] = 'Baralhar';

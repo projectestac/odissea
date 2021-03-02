@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,59 +12,77 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'form', language 'sv', version '3.8'.
  *
- * @package   form
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     form
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addfields'] = 'Lägg till {$a} fält till formuläret';
-$string['advancedelement'] = 'Avancerad komponent';
+$string['advancedelement'] = 'Avancerat element';
 $string['close'] = 'Stäng';
+$string['custom'] = 'Anpassat';
 $string['day'] = 'Dag';
+$string['default'] = 'Standard';
 $string['display'] = 'Visa';
 $string['err_alphanumeric'] = 'Du får bara mata in bokstäver och siffror här.';
 $string['err_email'] = 'Du måste mata in en giltig e-postadress här.';
 $string['err_lettersonly'] = 'Du får bara mata in bokstäver här.';
 $string['err_maxfiles'] = 'Du får inte bifoga mer än {$a} filer här.';
-$string['err_maxlength'] = 'Du får bara mata in tecken som är i {$a->format} här.';
-$string['err_minlength'] = 'Du måste mata in tecken av åtminstone {$a->format} här.';
+$string['err_maxlength'] = 'Du kan ange max {$a->format} tecken här.';
+$string['err_minlength'] = 'Du behöver ange minst {$a->format} tecken här.';
 $string['err_nonzero'] = 'Du måste mata in ett tal som inte inleds med 0 här.';
 $string['err_nopunctuation'] = 'Du får inte mata in några stora skiljetecken (. ! ? etc) här.';
-$string['err_numeric'] = 'Du måste mata in ett tal här.';
-$string['err_rangelength'] = 'Du måste mata in tecken mellan  {$a->format[0]} och {$a->format[1]} här.';
-$string['err_required'] = 'Du måste mata in ett värde här.';
+$string['err_numeric'] = 'Du måste ange ett tal här.';
+$string['err_rangelength'] = 'Du måste mata in mellan {$a->format[0]} och {$a->format[1]} tecken här.';
+$string['err_required'] = 'Du måste ange ett värde här.';
+$string['err_wrappingwhitespace'] = 'Värdet får inte börja eller sluta med blanksteg eller radmatning';
 $string['filesofthesetypes'] = 'Accepterade filtyper:';
+$string['filetypesany'] = 'Alla filtyper';
+$string['filetypesnotall'] = 'Det är inte tillåtet att välja \'Alla filtyper\' här';
+$string['filetypesnotwhitelisted'] = 'Dessa filtyper är inte tillåtna här: {$a}';
+$string['filetypesothers'] = 'Övriga filer';
+$string['filetypesunknown'] = 'Okända filtyper: {$a}';
 $string['general'] = 'Allmänna data';
 $string['hideadvanced'] = 'Dölj avancerade egenskaper';
 $string['hour'] = 'Timme';
 $string['minute'] = 'Minut';
 $string['miscellaneoussettings'] = 'Övriga inställningar';
-$string['modstandardels'] = 'Vanliga inställningar för modul';
+$string['modstandardels'] = 'Övergripande inställningar';
 $string['month'] = 'Månad';
-$string['nomethodforaddinghelpbutton'] = 'Det finns ingen metod för att lägga till en hjälpknapp till en komponent i ett formulär {$a->name} (class {$a->classname})';
-$string['nonexistentformelements'] = 'Försöker att lägga till en hjälpknapp till en komponent till ett formulär som inte finns : {$a}';
-$string['noselection'] = 'Inga valda';
-$string['novalueclicktoset'] = 'Klicka och skriv in nytt lösenord';
+$string['mustbeoverriden'] = 'Den abstrakta <code>form_definition()</code>-metoden i klassen <code>{$a}</code> måste överlagras. Vänligen rätta till koden.';
+$string['newvaluefor'] = 'Nytt värde för {$a}';
+$string['nomethodforaddinghelpbutton'] = 'Det finns ingen metod för att lägga till en hjälpknapp till en komponent i ett formulär {$a->name} (klass {$a->classname})';
+$string['nonexistentformelements'] = 'Försöker lägga till hjälpknappar till icke-existerande formulärelement: {$a}';
+$string['noselection'] = 'Inga val gjorda';
+$string['nosuggestions'] = 'Inga förslag';
+$string['novalue'] = 'Inget angivet';
+$string['novalueclicktoset'] = 'Klicka för att ange text';
 $string['optional'] = 'Valfri';
-$string['othersettings'] = 'Andra inställningar';
-$string['passwordunmaskrevealhint'] = 'Avslöja';
+$string['othersettings'] = 'Övriga inställningar';
+$string['passwordunmaskedithint'] = 'Redigera lösenord';
+$string['passwordunmaskinstructions'] = 'Tryck på retur för att spara ändringarna';
+$string['passwordunmaskrevealhint'] = 'Visa';
+$string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Senast valt visningsläge för filväljarelementet.';
+$string['privacy:preference:filemanager_recentviewmode'] = 'Ditt förvalda visningsläge för filväljaren: {$a}';
 $string['requiredelement'] = 'Obligatoriskt fält';
 $string['security'] = 'Säkerhet';
 $string['selectallornone'] = 'Välj alla/ingen';
 $string['selected'] = 'Vald';
+$string['selecteditems'] = 'Valda objekt:';
 $string['showadvanced'] = 'Visa avancerad';
-$string['showless'] = 'Visa färre...';
+$string['showless'] = 'Visa mindre...';
 $string['showmore'] = 'Visa mer...';
-$string['somefieldsrequired'] = 'Det finns obligatoriska fält i det här formuläret marked{$a}.';
+$string['somefieldsrequired'] = '{$a} = obligatoriskt fält';
 $string['time'] = 'Tid ';
-$string['timeunit'] = 'Tid enhet';
-$string['timing'] = 'Tidsanpassning';
-$string['unmaskpassword'] = 'Avmaska';
+$string['timeunit'] = 'Tidsenhet';
+$string['timing'] = 'Timing';
+$string['unmaskpassword'] = 'Visa i klartext';
 $string['year'] = 'År';

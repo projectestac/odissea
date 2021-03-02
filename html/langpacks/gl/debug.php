@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'debug', language 'gl', version '3.8'.
  *
- * @package   debug
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     debug
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['authpluginnotfound'] = 'O engadido de autenticación «{$a}» non está activado.';
 $string['blocknotexist'] = 'O bloque {$a} non existe';
 $string['cannotbenull'] = '{$a} non pode ser NULO.';
-$string['cannotdowngrade'] = 'Non é posíbel reverter {$a->plugin} desde {$a->oldversion} cara {$a->newversion}.';
+$string['cannotdowngrade'] = 'Non é posíbel reverter {$a->plugin} dende {$a->oldversion} cara {$a->newversion}.';
 $string['cannotfindadmin'] = 'Non foi posíbel atopar un usuario administrador.';
 $string['cannotinitpage'] = 'Non é posíbel inicializar de forma completa a paxina: incorrecta {$a->name} ID {$a->id}';
 $string['cannotsetuptable'] = 'As táboas {$a} NON foi posíbel estabelecelas satisfactoriamente.';
@@ -37,7 +37,7 @@ $string['configmoodle'] = 'Este Moodle non está ben configurado. Debe editar pr
 $string['debuginfo'] = 'Información da depuración';
 $string['erroroccur'] = 'Produciuse un erro durante este proceso';
 $string['invalidarraysize'] = 'Tamaño incorrecto das matrices nos parámetros de {$a}';
-$string['invalideventdata'] = 'Enviáronse datos incorrectos desde «eventdata»: {$a}';
+$string['invalideventdata'] = 'Enviáronse datos incorrectos dende «eventdata»: {$a}';
 $string['invalidparameter'] = 'Detectouse un valor incorrecto de parámetro';
 $string['invalidresponse'] = 'Detectouse un valor incorrecto de resposta';
 $string['line'] = 'Liña';

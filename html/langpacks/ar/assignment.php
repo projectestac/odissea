@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,55 +12,52 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignment', language 'ar', version '3.8'.
  *
- * @package   assignment
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignment
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['assignment:addinstance'] = 'إضافة مهمة جديدة';
-$string['assignmentdisabled'] = 'تم تعطيل نشاط "الواجب 2.2" القديم.';
-$string['assignment:exportownsubmission'] = 'تصدير تسليمه';
-$string['assignment:exportsubmission'] = 'صدر تسليم';
-$string['assignment:grade'] = 'وضع العلامة للمهمة';
+$string['assignment:addinstance'] = 'أضف  تكليف( مهمة) جديد';
+$string['assignment:exportownsubmission'] = 'تصدير تسليم التكليف الخاص بك';
+$string['assignment:exportsubmission'] = 'صدر التسليم';
+$string['assignment:grade'] = 'وضع درجة على التكليف /المهمة';
+$string['assignment:submit'] = 'إرسال التكليف / المهمة';
+$string['assignment:view'] = 'معاينة المهمة';
+$string['assignmentdisabled'] = 'تم تعطيل نشاط "تكاليف 2.2" القديم';
 $string['assignmentneedsupgrade'] = 'نشاط "الواجب 2.2" ذو الإصدار القديم تمت إزالته.';
-$string['assignment:submit'] = 'تسليم الواجب';
-$string['assignment:view'] = 'معاينة الواجب';
-$string['messageprovider:assignment_updates'] = 'إشعارات الواجبات (2.2)';
-$string['modulename'] = 'واجب 2.2 (مُعطل)';
-$string['modulename_help'] = '<p><img alt=""  src="<?php echo $CFG->wwwroot?>/mod/assignment/icon.gif" />&nbsp;<b>الوجبات</b></p>
-<p><b>يستطع المدرس من خلال الواجبات تحديد الواجب المطلوب من الطلاب
-تحضيره بمحتوى رقمي (في اي هيئة) والقيام بتسليمه بواسطة تحميل الملف في الخادم.
-نماذج الواجبات تضمن المقالات، المشاريع التعليمية، التقارير، إلخ. هذه الوحده
-تحتوي على إمكانيات تصحيح الواجبات وإعطائها الدرجات المستحقة.</b></p>';
-$string['modulenameplural'] = 'واجبات 2.2 (مُعطلة)';
-$string['page-mod-assignment-submissions'] = 'صفحة التسليم لوحدة الواجب';
-$string['page-mod-assignment-view'] = 'الصفحة الأساسية لوحدة الواجب';
-$string['page-mod-assignment-x'] = 'أي صفحة لوحدة الواجب';
-$string['pluginadministration'] = 'إدارة المهمات';
-$string['pluginname'] = 'الواجب 2.2 (مُعطل)';
+$string['messageprovider:assignment_updates'] = 'إشعارات تكاليف (2.2)';
+$string['modulename'] = 'مهمة /تكليف 2.2  (مُعطَّل)';
+$string['modulename_help'] = 'وحدة النشاط القديمة التي تمت إزالتها من المودل.';
+$string['modulenameplural'] = 'تكليف/ مهام  2.2  (مُعطَّلة)';
+$string['page-mod-assignment-submissions'] = 'صفحة التسليم لوحدة التكليف / المهمة';
+$string['page-mod-assignment-view'] = 'الصفحة الأساسية لوحدة التكليف / المهمة';
+$string['page-mod-assignment-x'] = 'أي صفحة لوحدة المهمة /التكليف';
+$string['pluginadministration'] = 'إدارة المهمات/التكاليف 2.2 (مُعطَّل)';
+$string['pluginname'] = 'تكاليف/مهام 2.2 (مُعطَّل)';
 $string['privacy:markedsubmissionspath'] = 'التسليمات المصححة';
-$string['privacy:metadata:assignmentfilter'] = 'تفضيل المرشح لتسليمات الواجب';
-$string['privacy:metadata:assignmentmailinfo'] = 'تفضيل معلومات البريد لتسليمات الواجب';
-$string['privacy:metadata:assignmentperpage'] = 'التفضيل الخاص بعدد تسليمات الواجب الظاهر في الصفحة';
-$string['privacy:metadata:assignmentquickgrade'] = 'تفضيل التقييم السريع لتسليمات الواجب';
-$string['privacy:metadata:assignment_submissions'] = 'التسليمات المتعلقة بالواجب';
-$string['privacy:metadata:assignment_submissions:data1'] = 'النصوص المقدمة مباشرة عبر الإنترنت كتسليمات للمهمة';
-$string['privacy:metadata:assignment_submissions:data2'] = 'الحالة المتَعَقَّبة لتسليم الواجب';
-$string['privacy:metadata:assignment_submissions:grade'] = 'قيمة العلامة الممنوحة لتسليم الواجب';
-$string['privacy:metadata:assignment_submissions:mailed'] = 'حالة الإشعار البريدي لتسليم الواجب';
-$string['privacy:metadata:assignment_submissions:numfiles'] = 'أقصى عدد مسموح به من الملفات لتسليم الواجب';
-$string['privacy:metadata:assignment_submissions:submissioncomment'] = 'تعليق التسليم المصاحب لتسليم الواجب';
-$string['privacy:metadata:assignment_submissions:teacher'] = 'مُعرَّف المستخدم للمعلم الذي وضع التقييم لتسليم الواجب';
-$string['privacy:metadata:assignment_submissions:timecreated'] = 'تاريخ ووقت إنشاء تسليم الواجب';
-$string['privacy:metadata:assignment_submissions:timemarked'] = 'تاريخ ووقت تصحيح تسليم الواجب';
-$string['privacy:metadata:assignment_submissions:timemodified'] = 'تاريخ ووقت تعديل تسليم الواجب';
-$string['privacy:metadata:assignment_submissions:userid'] = 'مُعرَّف المستخدم الذي قام بتسليم الواجب';
+$string['privacy:metadata:assignment_submissions'] = 'التسليمات المتعلقة بالمهمة.';
+$string['privacy:metadata:assignment_submissions:data1'] = 'النصوص المقدمة مباشرة عبر الإنترنت كتسليمات للمهمة.';
+$string['privacy:metadata:assignment_submissions:data2'] = 'الحالة المتَعَقَّبة لتسليم المهمة.';
+$string['privacy:metadata:assignment_submissions:grade'] = 'قيمة العلامة الممنوحة لتسليم المهمة.';
+$string['privacy:metadata:assignment_submissions:mailed'] = 'حالة الإشعار البريدي لتسليم المهمة.';
+$string['privacy:metadata:assignment_submissions:numfiles'] = 'أقصى عدد مسموح به من الملفات لتسليم المهمة.';
+$string['privacy:metadata:assignment_submissions:submissioncomment'] = 'تعليق التسليم المصاحب لتسليم المهمة.';
+$string['privacy:metadata:assignment_submissions:teacher'] = 'مُعرَّف المستخدم للمعلم الذي وضع التقييم لتسليم المهمة.';
+$string['privacy:metadata:assignment_submissions:timecreated'] = 'تاريخ ووقت إنشاء تسليم المهمة.';
+$string['privacy:metadata:assignment_submissions:timemarked'] = 'تاريخ ووقت تصحيح تسليم المهمة.';
+$string['privacy:metadata:assignment_submissions:timemodified'] = 'تاريخ ووقت تعديل تسليم المهمة.';
+$string['privacy:metadata:assignment_submissions:userid'] = 'مُعرَّف المستخدم الذي قام بتسليم المهمة.';
+$string['privacy:metadata:assignmentfilter'] = 'تفضيل المرشح لتسليمات المهمة.';
+$string['privacy:metadata:assignmentmailinfo'] = 'تفضيل معلومات البريد لتسليمات المهمة.';
+$string['privacy:metadata:assignmentperpage'] = 'التفضيل الخاص بعدد تسليمات المهمة الظاهر في الصفحة.';
+$string['privacy:metadata:assignmentquickgrade'] = 'تفضيل التقييم السريع لتسليمات المهمة.';
 $string['privacy:submissionpath'] = 'التسليم';
-$string['upgradenotification'] = 'يستند هذا النشاط على إصدار قديم لوحدة الواجب';
+$string['upgradenotification'] = 'يستند هذا النشاط على إصدار قديم لوحدة التكليف';

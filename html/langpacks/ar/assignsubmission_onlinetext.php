@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'ar', version '3.8'.
  *
- * @package   assignsubmission_onlinetext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignsubmission_onlinetext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,20 +30,20 @@ $string['default'] = 'ممكّن بشكل افتراضي';
 $string['default_help'] = 'إذا اخترتها، سيتم تمكين هذه الطريقة في التقديم بشكل افتراضي لتقديم كافة الواجبات الجديدة.';
 $string['enabled'] = 'نص في وضع متصل.';
 $string['enabled_help'] = 'إذا مكّن .. يكون الطلاب قادرين على الطباعة النصية مباشرة في حقل التسليم ..';
-$string['eventassessableuploaded'] = 'تم رفع نص عبر الإنترنت.';
+$string['eventassessableuploaded'] = 'تم تحميل نص عبر الإنترنت.';
 $string['nosubmission'] = 'لا يوجد شيء تم تقديمه في هذا الواجب ..!';
 $string['numwords'] = '({$a} كلمات )';
 $string['numwordsforlog'] = 'عدد كلمات التقديم: {$a} كلمة';
 $string['onlinetext'] = 'نص في وضع متصل.';
 $string['onlinetextfilename'] = 'نص في وضع متصل بصيغة هيتمل';
 $string['onlinetextsubmission'] = 'اسمح بالتقديم النصي عبر الإنترنت';
-$string['pluginname'] = 'التسليمات نصية عبر الإنترنت';
+$string['pluginname'] = 'تقديم نصي عبر الإنترنت ..';
 $string['privacy:metadata:assignmentid'] = 'معرف الواجب';
-$string['privacy:metadata:filepurpose'] = 'الملفات المضمنة في تقديم النص';
-$string['privacy:metadata:submissionpurpose'] = 'معرف الإرسال الذي يرتبط بالإرسالات للمستخدم';
-$string['privacy:metadata:tablepurpose'] = 'يخزن إرسال النص لكل محاولة';
-$string['privacy:metadata:textpurpose'] = 'النص الفعلي المقدم لمحاولة التعيين هذه';
+$string['privacy:metadata:filepurpose'] = 'الملفات المضمنة في تقديم النص.';
+$string['privacy:metadata:submissionpurpose'] = 'معرف الإرسال الذي يرتبط بالإرسالات للمستخدم.';
+$string['privacy:metadata:tablepurpose'] = 'يخزن إرسال النص لكل محاولة.';
+$string['privacy:metadata:textpurpose'] = 'النص الفعلي المقدم لمحاولة التعيين هذه.';
 $string['privacy:path'] = 'تقديم النص';
 $string['wordlimit'] = 'كلمة الحد';
-$string['wordlimitexceeded'] = 'حد الكلمات لهذا الواجب هو {$a->limit} الكلمات وتحاول إرسال الكلمات {$a->count}. يرجى مراجعة التقديم و المحاولة مرة أخرى.';
-$string['wordlimit_help'] = 'إذا تم تمكين عمليات الإرسال النصية عبر الإنترنت ، فإن هذا هو الحد الأقصى لعدد الكلمات التي سيسمح لكل طالب بإرسالها.';
+$string['wordlimit_help'] = 'إذا تم تمكين عمليات التسليم النصية عبر الإنترنت، فإن هذا هو الحد الأقصى لعدد الكلمات التي سيسمح لكل طالب بإرسالها.';
+$string['wordlimitexceeded'] = 'حد الكلمات لهذا الواجب هو {$a->limit} من الكلمات وأنت تحاول إرسال {$a->count} من الكلمات. يرجى مراجعة تسليمك والمحاولة مرة أخرى.';

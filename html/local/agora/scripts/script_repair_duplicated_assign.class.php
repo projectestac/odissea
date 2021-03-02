@@ -489,7 +489,7 @@ class script_repair_duplicated_assign extends agora_script_base{
 		$feedback_file = $DB->get_record('assignfeedback_file',array('grade'=>$grade->id));
 		if($original_file || $feedback_file){
 			mtrace("------> Merging assignfeedback_file", '<br/>');
-			if($original_file->numfiles == $original_file->numfiles){
+			if($original_file->numfiles == $feedback_file->numfiles){
 				//Files: 'assignfeedback_file'=>'feedback_files'
 				if($this->merge_files('assignfeedback_file', 'feedback_files', $original_contextid, $contextid, $original_grade->id, $grade->id, $execute)){
 					//$DB->delete_records('assignfeedback_file',array('grade'=>$grade->id));

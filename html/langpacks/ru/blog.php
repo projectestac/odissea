@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'ru', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -158,17 +158,17 @@ $string['privacy:metadata:post:usermodified'] = 'Пользователь, ко�
 $string['privacy:path:blogassociations'] = 'Связанные записи блога';
 $string['privacy:unknown'] = 'Неизвестно';
 $string['publishto'] = 'Опубликовать';
+$string['publishto_help'] = 'Есть 3 варианта:
+
+* для себя (черновик) - Только Вы и администратор смогут видеть эту запись.
+* для всех пользователей сайта - Каждый зарегистрированный пользователь на сайте сможет прочесть эту запись.
+* для всех в мире - Кто угодно, даже гость, сможет прочесть эту запись.';
 $string['publishtocourse'] = 'Участники моего курса';
 $string['publishtocourseassoc'] = 'Участники связанного курса';
 $string['publishtocourseassocparam'] = 'Участники {$a}';
 $string['publishtogroup'] = 'Участники моей группы';
 $string['publishtogroupassoc'] = 'Участники Вашей группы в связанном курсе';
 $string['publishtogroupassocparam'] = 'Участники моей группы в {$a}';
-$string['publishto_help'] = 'Есть 3 варианта:
-
-* для себя (черновик) - Только Вы и администратор смогут видеть эту запись.
-* для всех пользователей сайта - Каждый зарегистрированный пользователь на сайте сможет прочесть эту запись.
-* для всех в мире - Кто угодно, даже гость, сможет прочесть эту запись.';
 $string['publishtonoone'] = 'для себя (черновик)';
 $string['publishtosite'] = 'для всех пользователей сайта';
 $string['publishtoworld'] = 'для всего мира';

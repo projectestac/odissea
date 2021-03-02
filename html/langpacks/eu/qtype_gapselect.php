@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_gapselect', language 'eu', version '3.8'.
  *
- * @package   qtype_gapselect
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_gapselect
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,11 +39,11 @@ $string['errorquestiontextblank'] = 'Galderaren testua zehaztu behar duzu.';
 $string['group'] = 'Taldea';
 $string['pleaseputananswerineachbox'] = 'Mesedez, jarri erantzun bat kaxa bakoitzean.';
 $string['pluginname'] = 'Aukeratu falta diren hitzak';
+$string['pluginname_help'] = 'Aukeratu falta diren hitzak motako galderak eskatzen du erantzun zuzenak aukeratzea zabaltzen den menutik. Galderaren testuan [[1]], [[2]], [[3]], ... erabili behar dira gako gisa. Horiek hurrenez hurren 1, 2, 3,... bezala zehaztutako aukera zuzenekin bat etorri behar dute. Galdera zailago egiteko, erantzun posible gehiago gehi daitezke. Aukeren erantzunak taldeka daitezke zabaltzen den menu bakoitzean eskuragarri izango diren erantzunak mugatzeko.';
 $string['pluginnameadding'] = 'Aukeratu falta diren hitzak motako galdera bat gehitzen';
 $string['pluginnameediting'] = 'Aukeratu falta diren hitzak motako galdera bat editatzen';
-$string['pluginname_help'] = 'Aukeratu falta diren hitzak motako galderak eskatzen du erantzun zuzenak aukeratzea zabaltzen den menutik. Galderaren testuan [[1]], [[2]], [[3]], ... erabili behar dira gako gisa. Horiek hurrenez hurren 1, 2, 3,... bezala zehaztutako aukera zuzenekin bat etorri behar dute. Galdera zailago egiteko, erantzun posible gehiago gehi daitezke. Aukeren erantzunak taldeka daitezke zabaltzen den menu bakoitzean eskuragarri izango diren erantzunak mugatzeko.';
 $string['pluginnamesummary'] = 'Galderaren testuan falta diren hitzak zabaltzen diren menuetan betetzen dira.';
-$string['privacy:metadata'] = 'Aukeratu falta diren hitzak galdera-mota pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Aukeratu falta diren hitzak galdera mota pluginak ez du datu pertsonalik biltzen.';
 $string['shuffle'] = 'Nahastu';
 $string['tagsnotallowed'] = '{$a->tag} ez dago baimenduta. ({$a->tag} soilik dago baimenduta.)';
 $string['tagsnotallowedatall'] = '{$a->tag} ez dago baimenduta. (Ezin da HTML kodea erabili hemen.)';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'de', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,7 +33,7 @@ $string['autocreation_settings'] = 'Einstellungen für automatisch angelegte Kur
 $string['autoupdate_settings'] = 'Einstellungen für automatisch aktualisierte Kurse';
 $string['autoupdate_settings_desc'] = '<p>Wählen Sie die Felder aus, die aktualisiert werden sollen, wenn die geplante Aufgabe "LDAP-Einschreibungen synchronisieren" ausgeführt wird.</p>
 <p>Wenn mindestens ein Feld ausgewählt ist, erfolgt die Aktualisierung.</p>';
-$string['bind_dn'] = 'Wenn Sie einen sog. bind-user für die LDAP-Suche nach Nutzer/innen verwenden wollen, geben Sie diesen  hier an, z.B. \'cn=ldapuser,ou=public,o=org\'.';
+$string['bind_dn'] = 'Wenn Sie einen sog. bind-user für die LDAP-Suche nach Nutzer/innen verwenden wollen, geben Sie diesen hier an, z.B. \'cn=ldapuser,ou=public,o=org\'';
 $string['bind_dn_key'] = 'Anmeldename des Bind Users';
 $string['bind_pw'] = 'Kennwort für den Bind-User';
 $string['bind_pw_key'] = 'Kennwort';
@@ -51,7 +51,6 @@ $string['course_fullname_updateonsync'] = 'Vollständigen Namen bei der Synchron
 $string['course_fullname_updateonsync_key'] = 'Vollständigen Kursnamen aktualisieren';
 $string['course_idnumber'] = 'Bezeichner zur eindeutigen Identifizierung in LDAP, normalerweise <em>cn</em> oder <em>uid</em>. Es wird empfohlen, den Wert zu sperren, wenn Sie Kurse automatisiert anlegen wollen.';
 $string['course_idnumber_key'] = 'ID-Nummer';
-$string['coursenotexistskip'] = 'Der Kurs \'{$a}\' existiert nicht und die Autocreation ist deaktiviert, überspringen';
 $string['course_search_sub'] = 'Gruppenzugehörigkeiten in Subkontexten suchen';
 $string['course_search_sub_key'] = 'Subkontexte';
 $string['course_settings'] = 'Einstellungen für Kurse';
@@ -63,6 +62,7 @@ $string['course_summary'] = 'Optional: LDAP-Feld für die Beschreibung des Kurse
 $string['course_summary_key'] = 'Zusammenfassung';
 $string['course_summary_updateonsync'] = 'Zusammenfassung bei der Synchronisierung aktualisieren';
 $string['course_summary_updateonsync_key'] = 'Beschreibung aktualisieren';
+$string['coursenotexistskip'] = 'Der Kurs \'{$a}\' existiert nicht und die Autocreation ist deaktiviert, überspringen';
 $string['courseupdated'] = 'Kurs mit der Kurs-ID \'{$a->idnumber}\' wurde erfolgreich aktualisiert.';
 $string['courseupdateskipped'] = 'Kurs mit der Kurs-ID \'{$a->idnumber}\' braucht keine Aktualisierung und wird übersprungen...';
 $string['createcourseextid'] = 'CREATE Nutzer ist in einen nicht bestehenden Kurs \'{$a->courseextid}\' eingeschrieben';
@@ -78,7 +78,7 @@ $string['explodegroupusertypenotsupported'] = 'ldap_explode_group() unterstützt
 $string['extcourseidinvalid'] = 'Ungültige externe Kurs-ID! ';
 $string['extremovedsuspend'] = 'Deaktivierte Einschreibung von Nutzer/in \'{$a->user_username}\' in den Kurs \'{$a->course_shortname}\' (ID {$a->course_id})';
 $string['extremovedsuspendnoroles'] = 'Deaktivierte Einschreibung und entfernte Rollen von Nutzer/in \'{$a->user_username}\' in den Kurs \'{$a->course_shortname}\' (ID {$a->course_id})';
-$string['extremovedunenrol'] = 'Nutzer/in \'{$a->user_username}\' aus dem Kurs \'{$a->course_shortname}\' (id {$a->course_id}) abmelden';
+$string['extremovedunenrol'] = 'Nutzer/in \'{$a->user_username}\' vom Kurs \'{$a->course_shortname}\' (id {$a->course_id}) abmelden';
 $string['failed'] = 'Fehlgeschlagen!';
 $string['general_options'] = 'Allgemeines';
 $string['group_memberofattribute'] = 'Name des Attribut, das die Zugehörigkeit eines Nutzers zu einer Gruppe festlegt (z.B. memberOf, groupMembership, etc)';
@@ -87,9 +87,9 @@ $string['host_url'] = 'URL des LDAP-Servers, z.B. \'ldap://ldap.meinserver.de\' 
 $string['host_url_key'] = 'Host-URL';
 $string['idnumber_attribute'] = 'Wenn die Gruppenzugehörigkeit bevorzugte Namen enthält, geben Sie hier das gleiche Attribut ein, das Sie für die Zuordnung der \'ID-Nummer\' in den Einstellungen zur LDAP-Authentifizierung angegeben haben.';
 $string['idnumber_attribute_key'] = 'ID-Nummer';
+$string['ldap:manage'] = 'LDAP-Einschreibevorgänge verwalten';
 $string['ldap_encoding'] = 'Geben Sie die Codierung an, die der LDAP-Server benutzt. Üblich ist utf-8, aber Microsoft AD v2 nutzt meist cp1252, cp1250, usw.';
 $string['ldap_encoding_key'] = 'LDAP-Codierung';
-$string['ldap:manage'] = 'LDAP-Einschreibevorgänge verwalten';
 $string['memberattribute'] = 'LDAP-Mitgliedsattribut';
 $string['memberattribute_isdn'] = 'Wenn die Gruppenzugehörigkeit bevorzugte Namen enthält, müssen Sie dies hier angeben und auch alle nachfolgenden Einstellungen dieses Abschnitts vornehmen.';
 $string['memberattribute_isdn_key'] = 'Mitgliedsattribut ist dn';
@@ -97,7 +97,7 @@ $string['nested_groups'] = 'Möchten Sie enthaltene Gruppen (Gruppen innerhalb v
 $string['nested_groups_key'] = 'Enthaltene Gruppen';
 $string['nested_groups_settings'] = 'Einstellungen für enthaltene Gruppen';
 $string['nosuchrole'] = 'Diese Rolle ist nicht vorhanden: \'{$a}\'';
-$string['objectclass'] = 'objectClass für Kurssuche in LDAP, normalerweise \'posixGroup\'.';
+$string['objectclass'] = 'objectClass für Kurssuche in LDAP, normalerweise \'group\' oder \'posixGroup\'';
 $string['objectclass_key'] = 'Object Class';
 $string['ok'] = 'OK';
 $string['opt_deref'] = 'Wenn die Gruppenzugehörigkeit bevorzugte Namen enthält, legen Sie fest, wie Aliase bei der Suche behandelt werden. Wählen Sie einen der folgenden Werte aus: \'Nein\' (LDAP_DEREF_NEVER) oder \'Ja\' (LDAP_DEREF_ALWAYS)';

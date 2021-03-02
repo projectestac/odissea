@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'book', language 'el', version '3.8'.
  *
- * @package   book
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     book
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -50,15 +50,15 @@ $string['eventchapterupdated'] = 'Το κεφάλαιο ενημερώθηκε';
 $string['eventchapterviewed'] = 'Το κεφάλαιο προβλήθηκε';
 $string['hidechapter'] = 'Απόκρυψη κεφαλαίου «{$a}»';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης Βιβλίου';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Βιβλίου.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης Βιβλίου';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες βιβλίου κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Βιβλίου.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Μπλοκ';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Βιβλίου.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Μπλοκ';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες βιβλίου κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία αφοσίωση, Συμμετέχων μόνος)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Βιβλίου.';
 $string['modulename'] = 'Βιβλίο';
 $string['modulename_help'] = 'Το άρθρωμα βιβλίου δίνει τη δυνατότητα σε έναν διδάσκοντα να δημιουργήσει έναν πόρο πολλών σελίδων σε μορφή βιβλίου, με κεφάλαια και υποκεφάλαια. Τα βιβλία μπορούν να περιέχουν αρχεία πολυμέσων καθώς και κείμενο και είναι χρήσιμα για την εμφάνιση μακρών αποσπασμάτων πληροφοριών που μπορούν να αναλυθούν σε τμήματα. Ένα βιβλίο μπορεί να χρησιμοποιηθεί:
 
@@ -99,7 +99,7 @@ $string['pluginadministration'] = 'Διαχείριση βιβλίου';
 $string['pluginname'] = 'Βιβλίο';
 $string['previouschapter'] = 'Προηγούμενο κεφάλαιο';
 $string['privacy:metadata'] = 'Το άρθρωμα «Δραστηριότητα βιβλίου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
-$string['removeallbooktags'] = 'Διαγραφή όλων των ετικετών βιβλίου';
+$string['removeallbooktags'] = 'Διαγραφή όλων των εττικετών βιβλίου';
 $string['search:activity'] = 'Βιβλίο - πληροφορίες πόρου';
 $string['search:chapter'] = 'Βιβλίο - κεφάλαια';
 $string['showchapter'] = 'Εμφάνιση κεφαλαίου «{$a}»';
@@ -108,6 +108,6 @@ $string['subchapternotice'] = '(Διατίθεται μόνο όταν έχει 
 $string['subplugintype_booktool'] = 'Εργαλείο βιβλίου';
 $string['subplugintype_booktool_plural'] = 'Εργαλεία βιβλίου';
 $string['tagarea_book_chapters'] = 'Κεφάλαια βιβλίου';
-$string['tagsdeleted'] = 'Οι ετικέτες βιβλίου διαγράφηκαν';
+$string['tagsdeleted'] = 'Οι εττικέτες βιβλίου διαγράφηκαν';
 $string['toc'] = 'Πίνακας περιεχομένων';
 $string['top'] = 'κορυφή';

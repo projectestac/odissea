@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'zh_cn', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -140,17 +140,17 @@ $string['privacy:metadata:external:timefetched'] = '上一次获取订阅的时�
 $string['privacy:metadata:external:timemodified'] = '上一次修改订阅的时间';
 $string['privacy:metadata:external:url'] = '订阅的地址';
 $string['publishto'] = '发布给';
+$string['publishto_help'] = '有三个选择：
+
+* 自己（草稿）——只有您和管理员能查看此博客
+* 网站里的所有人——所有在此网站注册的人都能阅读此博客
+* 世界上的任何人——任何人，包括访客，都能阅读此博客';
 $string['publishtocourse'] = '用户和你分享一个课程';
 $string['publishtocourseassoc'] = '相关课程成员';
 $string['publishtocourseassocparam'] = '{$a}的成员';
 $string['publishtogroup'] = '用户与你分享一个小组';
 $string['publishtogroupassoc'] = '你在相关课程里的小组成员';
 $string['publishtogroupassocparam'] = '在{$a}的组员';
-$string['publishto_help'] = '有三个选择：
-
-* 自己（草稿）——只有您和管理员能查看此博客
-* 网站里的所有人——所有在此网站注册的人都能阅读此博客
-* 世界上的任何人——任何人，包括访客，都能阅读此博客';
 $string['publishtonoone'] = '您自己(草稿)';
 $string['publishtosite'] = '站点上的任何人';
 $string['publishtoworld'] = '世界上的任何人';

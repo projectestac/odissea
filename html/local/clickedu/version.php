@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_clickedu';
-$plugin->version = 20190724000; // Té un dígit de més per error, el mantenim per compatibilitat.
+$plugin->version = 20201031001; // Té un dígit de més per error, el mantenim per compatibilitat.
 $plugin->requires = 2018120300; // Moodle 3.6

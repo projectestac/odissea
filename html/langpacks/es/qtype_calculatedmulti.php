@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculatedmulti', language 'es', version '3.8'.
  *
- * @package   qtype_calculatedmulti
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculatedmulti
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['answeroptions'] = 'Selección de opciones';
 $string['answeroptions_help'] = 'La fórmula de elección sugerida es ...<strong>{={x}+..}</strong>...';
 $string['pluginname'] = 'Calculada opción múltiple';
+$string['pluginname_help'] = 'Las preguntas calculadas de opción múltiple son similares a las preguntas de opción múltiple, en cuyos elementos a elegir pueden incluirse resultados de aplicar una fórmula a variables (comodines) entre llaves que son sustituídas con valores cuando se formula la pregunta. Por ejemplo, en la pregunta "¿Cual es el área de un rectangulo de longitud {l} y ancho {w}?, una de las opciones es {={l}*{w}} (donde * indica multiplicación)';
 $string['pluginnameadding'] = 'Añadir una pregunta calculada de opción múltiple';
 $string['pluginnameediting'] = 'Editar una pregunta calculada de opción múltiple ';
-$string['pluginname_help'] = 'Las preguntas calculadas de opción múltiple son similares a las preguntas de opción múltiple, en cuyos elementos a elegir pueden incluirse resultados de aplicar una fórmula a variables (comodines) entre llaves que son sustituídas con valores cuando se formula la pregunta. Por ejemplo, en la pregunta "¿Cual es el área de un rectangulo de longitud {l} y ancho {w}?, una de las opciones es {={l}*{w}} (donde * indica multiplicación)';
 $string['pluginnamesummary'] = 'Las preguntas calculadas de opción múltiple son similares a las preguntas de opción múltiple, en cuyos  elementos a elegir pueden incluirse resultados obtenidos al aplicar una fórmula a valores numéricos seleccionados aleatoriamente de un grupo de valores cuando se formula la pregunta. ';
 $string['privacy:metadata'] = 'El plugin del tipo de pregunta calculada de opción múltiple no almacena ningún dato personal.';

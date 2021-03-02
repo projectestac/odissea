@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_configurable_reports', language 'eu', version '3.8'.
  *
- * @package   block_configurable_reports
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_configurable_reports
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -56,15 +56,15 @@ $string['comp_columns'] = 'Zutabeak';
 $string['comp_conditions'] = 'Baldintzak';
 $string['comp_customsql'] = 'Neurrira egindako SQLa';
 $string['comp_filters'] = 'Iragazkiak';
-$string['componenthelp'] = 'Osagaiaren laguntza';
 $string['comp_ordering'] = 'Ordena';
 $string['comp_permissions'] = 'Baimenak';
 $string['comp_plot'] = 'Marraztu';
 $string['comp_template'] = 'Txantiloia';
+$string['componenthelp'] = 'Osagaiaren laguntza';
 $string['conditionexpr'] = 'Baldintza';
 $string['conditionexpr_conditions'] = 'Baldintza';
-$string['conditionexprhelp'] = 'Idatzi baldintza baliagarri bat, esaterako hurrengoa: (c1 and c2) or (c4 and c3)';
 $string['conditionexpr_permissions'] = 'Baldintza';
+$string['conditionexprhelp'] = 'Idatzi baldintza baliagarri bat, esaterako hurrengoa: (c1 and c2) or (c4 and c3)';
 $string['conditions'] = 'Baldintzak';
 $string['configurable_reports:addinstance'] = 'Gehitu neurrira egindako txosten berria';
 $string['configurable_reports:manageownreports'] = 'Kudeatu nire txostenak';
@@ -84,18 +84,18 @@ $string['courseparent'] = 'Ikastaroak ondokoaren goragokoak dira:';
 $string['courses'] = 'Ikastaroak';
 $string['coursestats'] = 'Ikastaroaren estatistikak';
 $string['cron'] = 'Exekutatu egunero automatikoki';
-$string['crondescription'] = 'Programatu kontsulta hau egunero exekutatzeko (gauean)';
 $string['cron_help'] = 'Programatu kontsulta hau egunero exekutatzeko (gauean)';
+$string['crondescription'] = 'Programatu kontsulta hau egunero exekutatzeko (gauean)';
 $string['crrepository'] = 'Txostenen biltegia';
 $string['crrepositoryinfo'] = 'Urruneko biltegi partekatua erabili daitezkeen adibidezko txostenekin (GitHub kontuaren jabearen izena + barra + biltegiaren izena)';
 $string['currentreportcourse'] = 'Oraingo txostenaren ikastaroa';
 $string['currentreportcourse_summary'] = 'Txostena sortu zeneko ikastaroa';
 $string['currentuser'] = 'Oraingo erabiltzailea';
+$string['currentuser_summary'] = 'Txostena ikusten ari den erabiltzailea';
 $string['currentusercourses'] = 'Oraingo erabiltzailearen ikastaroak';
 $string['currentusercourses_summary'] = 'Oraingo erabiltzailearen ikastaro zerrenda (soilik ikusgai daudenak)';
 $string['currentuserfinalgrade'] = 'Oraingo erabiltzailearen ikastaroko guztirako kalifikazioa';
 $string['currentuserfinalgrade_summary'] = 'Zutabe honek oraingo erabiltzailearen errenkada horretako ikastaroko guztirako kalifikazioa erakusten du';
-$string['currentuser_summary'] = 'Txostena ikusten ari den erabiltzailea';
 $string['cuserfield'] = 'Erabiltzaile eremuaren baldintza';
 $string['custom'] = 'Neurrira';
 $string['customdateformat'] = 'Neurrira egindako data-formatua';
@@ -103,7 +103,6 @@ $string['customsql'] = 'Neurrira egindako SQLa';
 $string['datatables'] = 'Gaitu DataTables JS liburutegia';
 $string['datatables_emptytable'] = 'Taulan ez dago daturik eskuragarri';
 $string['datatables_first'] = 'Lehena';
-$string['datatablesinfo'] = 'DataTables JS liburutegia (zutabe-ordenatzea, finkatutako goiburua, bilatzea, orrikatzea...)';
 $string['datatables_info'] = '_START_ - _END_ tarteko sarrerak erakusten guztira dauden _TOTAL_ sarreretatik';
 $string['datatables_infoempty'] = '0 - 0 tarteko sarrerak erakusten guztira dauden 0 sarreratik';
 $string['datatables_infofiltered'] = '(guztira dauden _MAX_ sarreretatik iragazita)';
@@ -115,6 +114,7 @@ $string['datatables_previous'] = 'Aurrekoa';
 $string['datatables_processing'] = 'Prozesatzen...';
 $string['datatables_search'] = 'Bilatu:';
 $string['datatables_zerorecords'] = 'Ez da aurkitu bilaketarekin bat datorren erregistrorik';
+$string['datatablesinfo'] = 'DataTables JS liburutegia (zutabe-ordenatzea, finkatutako goiburua, bilatzea, orrikatzea...)';
 $string['date'] = 'Data';
 $string['dateformat'] = 'Data formatua';
 $string['dbhost'] = 'DB ostalaria';
@@ -151,14 +151,16 @@ $string['executeatinfo'] = 'Moodleko CRON-ak programatutako SQL kontsultak zehaz
 $string['export_csv'] = 'Esportatu CSV formatuan';
 $string['export_json'] = 'Esportatu JSON formatuan';
 $string['export_ods'] = 'Esportatu ODS formatuan';
+$string['export_xls'] = 'Esportatu XLS formatuan';
 $string['exportoptions'] = 'Esportatze-aukerak';
 $string['exportreport'] = 'Esportatu txostena';
-$string['export_xls'] = 'Esportatu XLS formatuan';
 $string['fcoursefield'] = 'Ikastaro eremuen iragazkia';
 $string['field'] = 'Eremua';
 $string['filter'] = 'Iragazkia';
 $string['filter_all'] = 'Denak';
 $string['filter_apply'] = 'Aplikatu';
+$string['filter_searchtext'] = 'Bilatu testua';
+$string['filter_searchtext_summary'] = 'Testu libreko iragazkia';
 $string['filtercategories'] = 'Iragazi kategoriak';
 $string['filtercategories_summary'] = 'Kategoriaka iragazteko';
 $string['filtercoursecategories'] = 'Ikastaro-kategorien iragazkia';
@@ -172,8 +174,6 @@ $string['filterenrolledstudents_summary'] = 'Iragazi matrikulatutako ikasleak er
 $string['filterrole'] = 'rola';
 $string['filterrole_summary'] = 'Iragazi sistema mailako rolak (Irakaslea, Ikaslea...)';
 $string['filters'] = 'Iragazkiak';
-$string['filter_searchtext'] = 'Bilatu testua';
-$string['filter_searchtext_summary'] = 'Testu libreko iragazkia';
 $string['filtersemester'] = 'Seihilekoa (Hebreera)';
 $string['filtersemester_list'] = 'סמסטר א,סמסטר ב,סמסטר ג,סמינריון';
 $string['filtersemester_summary'] = 'מאפשר סינון לפני סמסטרים (בעברית, למשל: סמסטר א,סמסטר ב)';
@@ -181,9 +181,9 @@ $string['filterstartendtime_summary'] = 'Hasiera / amaiera-dataren gaineko iraga
 $string['filtersubcategories'] = 'Kategoria (azpikategoriak barne)';
 $string['filtersubcategories_summary'] = 'Erabili hurrengoa: %%FILTER_SUBCATEGORIES:mdl_course_category.path%%';
 $string['filteruser'] = 'Oraingo ikastaroko erabiltzailea';
+$string['filteruser_summary'] = 'Iragazi erabiltzailearen IDa oraingo ikastaroko erabiltzailearen zerrendatik';
 $string['filterusers'] = 'Sistemako erabiltzailea';
 $string['filterusers_summary'] = 'Iragazi erabiltzailearen IDa sistemako erabiltzailearen zerrendatik';
-$string['filteruser_summary'] = 'Iragazi erabiltzailearen IDa oraingo ikastaroko erabiltzailearen zerrendatik';
 $string['filteryearhebrew'] = 'Urtea (hebreera)';
 $string['filteryearhebrew_list'] = 'תשע,תשעא,תשעב,תשעג,תשעד,תשעה';
 $string['filteryearhebrew_summary'] = 'Iragazkiak hebreerazko urteak erabiltzen ari da (תשעג,...)';
@@ -205,8 +205,8 @@ $string['groupseries'] = 'Taldekatu segidak';
 $string['groupvalues'] = 'Taldekatu berdinak diren balioak (batuketaren bidez)';
 $string['head_color'] = 'Grafikoaren atzeko planoaren kolorea';
 $string['head_data'] = 'Grafikoaren datuak';
-$string['header'] = 'Goiburua';
 $string['head_size'] = 'Grafikoaren tamaina';
+$string['header'] = 'Goiburua';
 $string['height'] = 'Altuera';
 $string['importfromrepository'] = 'Inportatu txostena biltegitik';
 $string['importreport'] = 'Inportatu txostena';
@@ -265,14 +265,17 @@ $string['puserfield_summary'] = 'Erabiltzaile-profileko eremu batean aukeratutak
 $string['queryfailed'] = 'Kontsultak huts egin du <code><pre>{$a}</pre></code>';
 $string['querysql'] = 'SQL kontsulta';
 $string['remote'] = 'Exekutatu urruneko datu-base batean';
-$string['remotedescription'] = 'Kontsulta hau urruneko datu-base batean exekutatu nahi duzu?';
 $string['remote_help'] = 'Kontsulta hau urruneko datu-base batean exekutatu nahi duzu?';
+$string['remotedescription'] = 'Kontsulta hau urruneko datu-base batean exekutatu nahi duzu?';
 $string['remotequerysql'] = 'SQL kontsulta';
 $string['report'] = 'Txostena';
-$string['reportcategories'] = '1) Aukeratu urruneko txosten-kategoriak';
 $string['report_categories'] = 'Kategorien txostena';
-$string['reportcolumn'] = 'Beste txostenen zutabea';
 $string['report_courses'] = 'Ikastaroen txostena';
+$string['report_sql'] = 'SQL txostena';
+$string['report_timeline'] = 'Denbora tarte bati buruzko txostena';
+$string['report_users'] = 'Erabiltzaileen txostena';
+$string['reportcategories'] = '1) Aukeratu urruneko txosten-kategoriak';
+$string['reportcolumn'] = 'Beste txostenen zutabea';
 $string['reportcreated'] = 'Txostena ondo sortu da';
 $string['reportlimit'] = 'Txostenaren errenkada-muga';
 $string['reportlimitinfo'] = 'Mugatu txostenaren taulan erakusten diren errenkada-kopurua. Modu lehenetsian 5000 errenkada dira; limiteren bat izatea komeni da, erabiltzaileek ez dezaten datu-base motorra gainkargatu.';
@@ -280,12 +283,9 @@ $string['reports'] = 'Txostenak';
 $string['reportscapabilities'] = 'Txostenak ikusteko baimenak';
 $string['reportscapabilities_summary'] = 'moodle/site:viewreports baimena gaituta duten erabiltzaileak';
 $string['reportsincategory'] = '2) Aukeratu txosten bat zerrendatik';
-$string['report_sql'] = 'SQL txostena';
 $string['reporttable'] = 'Txostenaren taula';
 $string['reporttableui'] = 'Txosten-taularen interfazea';
 $string['reporttableuiinfo'] = 'Erakutsi txosten-taula honela: HTML taula sinplea korritze-barrarekin, jQuery zutabe-ordenatzearekin edo DataTables JS liburutegia (zutabe-ordenatzea, finkatutako goiburua, bilatzea, orrikatzea...)';
-$string['report_timeline'] = 'Denbora tarte bati buruzko txostena';
-$string['report_users'] = 'Erabiltzaileen txostena';
 $string['repository'] = 'Txostenen biltegia';
 $string['role'] = 'Rola';
 $string['roleincourse'] = 'Aukeratutako rola/k txostenaren ikastaroan duen/dituen erabiltzailea';

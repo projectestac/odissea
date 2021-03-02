@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'de', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,6 @@ $string['configpopupwidth'] = 'Welche Breite sollen Popup-Fenster  haben?';
 $string['contentheader'] = 'Inhalt';
 $string['displayoptions'] = 'Mögliche Anzeigeoptionen';
 $string['displayselect'] = 'Anzeigen';
-$string['displayselectexplain'] = 'Wählen Sie die Anzeigeart, aber nicht alle Arten sind für alle Dateien sinnvoll';
 $string['displayselect_help'] = 'Die Darstellung des verlinkten Inhalts hängt von verschiedenen Faktoren ab:
 * gewählte Einstellung
 * Dateityp auf den verlinkt wird
@@ -58,6 +57,7 @@ Folgende Einstelloptionen sind möglich:
 * Als Popup - Die Datei wird in einem Popup-Fenster ohne Menüs und ohne Adressleiste angezeigt
 * Im Frame - Die Datei wird in einem Frame unterhalb der Navigationsleiste angezeigt, zusammen mit der Dateibeschreibung
 * Neues Fenster - Die Datei wird in einem neuen Browserfenster mit Menüs und mit Adressleiste angezeigt';
+$string['displayselectexplain'] = 'Wählen Sie die Anzeigeart, aber nicht alle Arten sind für alle Dateien sinnvoll';
 $string['dnduploadresource'] = 'Als Datei einbinden';
 $string['encryptedcode'] = 'Verschlüsselter Code';
 $string['filenotfound'] = 'Datei nicht gefunden';
@@ -67,13 +67,13 @@ $string['filtername'] = 'Autoverlinkung zu Materialnamen';
 $string['forcedownload'] = 'Download erzwingen';
 $string['framesize'] = 'Framegröße';
 $string['indicator:cognitivedepth'] = 'Datei kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einer Datei erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Datei kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Dateiaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einer Datei erreicht hat.';
 $string['indicator:socialbreadth'] = 'Datei sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einer Datei erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Datei sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Datei-Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einer Datei erreicht hat.';
 $string['legacyfiles'] = 'Migration einer alten Kursdatei';
 $string['legacyfilesactive'] = 'Aktiv';
 $string['legacyfilesdone'] = 'Beendet';
@@ -89,7 +89,7 @@ Eine Datei kann verwendet werden, um
  * eine Mini-Website als Kursressource einzubinden
  * Entwurfsdateien bereitzustellen, damit die Teilnehmer/innen diese bearbeiten und zur Bewertung einreichen können.';
 $string['modulenameplural'] = 'Dateien';
-$string['notmigrated'] = 'Dieser Materialtyp ({$a}) wurde bisher noch nicht migriert';
+$string['notmigrated'] = 'Dieser ältere Materialtyp ({$a}) wurde bisher noch nicht migriert';
 $string['optionsheader'] = 'Optionen';
 $string['page-mod-resource-x'] = 'Jede Dateiseite';
 $string['pluginadministration'] = 'Datei-Administration';
@@ -102,15 +102,15 @@ $string['popupwidth'] = 'Breite des Popups (Pixel)';
 $string['popupwidthexplain'] = 'Standardbreite von Popup-Fenstern festlegen';
 $string['printintro'] = 'Beschreibung anzeigen';
 $string['printintroexplain'] = 'Beschreibung unterhalb des Inhalts anzeigen? Einige Anzeigetypen können die Beschreibung nicht anzeigen, selbst wenn diese Option aktiviert ist.';
-$string['privacy:metadata'] = 'Das Plugin Datei speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin \'Datei\' speichert keine personenbezogenen Daten.';
 $string['resource:addinstance'] = 'Neue Datei hinzufügen';
+$string['resource:exportresource'] = 'Material exportieren';
+$string['resource:view'] = 'Material sehen';
 $string['resourcecontent'] = 'Dateien und Verzeichnisse';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'Material exportieren';
-$string['resource:view'] = 'Material sehen';
 $string['search:activity'] = 'Datei';
 $string['selectmainfile'] = 'Bitte wählen Sie die Datei durch einen Klick auf das Icon neben dem Dateinamen aus';
 $string['showdate'] = 'Datum anzeigen';

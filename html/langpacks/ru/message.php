@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'ru', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -51,8 +51,8 @@ $string['contactrequests'] = 'Запросы на добавление в кон
 $string['contactrequestsent'] = 'Запрос на добавление в контакты отправлен';
 $string['contacts'] = 'Собеседники';
 $string['decline'] = 'Отказаться';
-$string['defaultmessageoutputs'] = 'Настройки значений по умолчанию для способов доставки сообщений';
-$string['defaults'] = 'Значения по умолчанию';
+$string['defaultmessageoutputs'] = 'Способ доставки сообщений по умолчанию';
+$string['defaults'] = 'По умолчанию';
 $string['deleteallconfirm'] = 'Вы уверены, что хотите удалить всю эту беседу ? Это не удалит её для других участников разговора.';
 $string['deleteallmessages'] = 'Удалить все сообщения';
 $string['deleteallselfconfirm'] = 'Вы уверены, что хотите удалить всю эту личную беседу?';
@@ -63,7 +63,7 @@ $string['deleteselectedmessagesconfirm'] = 'Вы уверены, что хоти
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Вы уверены, что хотите удалить выбранные личные сообщения?';
 $string['disableall'] = 'Отключить уведомления';
 $string['disabled'] = 'На этом сайте отключена система обмена сообщениями.';
-$string['disallowed'] = 'Запрещено';
+$string['disallowed'] = 'Не разрешено';
 $string['editmessages'] = 'Редактировать сообщения';
 $string['emailtagline'] = 'Это письмо - копия сообщения, отправленного Вам на сайте «{$a->sitename}». Для ответа пройдите по ссылке {$a->url}.';
 $string['enabled'] = 'Включено';
@@ -94,11 +94,11 @@ $string['info'] = 'Информация';
 $string['isnotinyourcontacts'] = '{$a} нет в ваших контактах';
 $string['loadmore'] = 'Загрузить больше';
 $string['loggedin'] = 'На сайте';
-$string['loggedindescription'] = 'Когда Вы на сайте';
 $string['loggedin_help'] = 'Настройте, как вы хотите получать уведомления после входа в Moodle';
+$string['loggedindescription'] = 'Когда Вы на сайте';
 $string['loggedoff'] = 'Не в сети';
-$string['loggedoffdescription'] = 'Когда Вы вне сайта';
 $string['loggedoff_help'] = 'Настройте, как Вы хотите получать уведомления, когда Вы не находитесь на сайте Moodle';
+$string['loggedoffdescription'] = 'Когда Вы вне сайта';
 $string['managemessageoutputs'] = 'Управление способами доставки сообщений';
 $string['message'] = 'Сообщение';
 $string['messagecontactrequestsnotification'] = '{$a} хочет быть добавлен в контакты';
@@ -142,15 +142,14 @@ $string['offline'] = 'Вне сайта';
 $string['on'] = 'Вкл.';
 $string['online'] = 'На сайте';
 $string['otherparticipants'] = 'Другие участники';
-$string['outputdisabled'] = 'Способ доставки выключен';
-$string['outputdoesnotexist'] = 'Способ доставки сообщения не существует';
-$string['outputenabled'] = 'Способ доставки включен';
+$string['outputdisabled'] = 'Вывод отключен';
+$string['outputdoesnotexist'] = 'Место для вывода сообщений не создано';
+$string['outputenabled'] = 'Вывод включен';
 $string['outputnotavailable'] = 'Недоступно';
 $string['outputnotconfigured'] = 'Не настроено';
 $string['participants'] = 'Участники';
 $string['permitted'] = 'Разрешено';
 $string['privacy'] = 'Приватность';
-$string['privacy_desc'] = 'Вы можете ограничить круг лиц, которые могут отправлять вам сообщения';
 $string['privacy:metadata:core_favourites'] = 'Разговоры, помеченные пользователем';
 $string['privacy:metadata:message_contact_requests'] = 'Список запросов контактов';
 $string['privacy:metadata:message_contact_requests:requesteduserid'] = 'ID пользователя, получившего запрос на контакт';
@@ -162,15 +161,6 @@ $string['privacy:metadata:message_conversation_members'] = 'Список пол�
 $string['privacy:metadata:message_conversation_members:conversationid'] = 'ID обсуждения';
 $string['privacy:metadata:message_conversation_members:timecreated'] = 'Дата создания пользователя';
 $string['privacy:metadata:message_conversation_members:userid'] = 'ID пользователя в обсуждении';
-$string['privacy:metadata:messages'] = 'Сообщения';
-$string['privacy:metadata:messages:conversationid'] = 'ID обсуждения';
-$string['privacy:metadata:messages:fullmessage'] = 'Полное сообщение';
-$string['privacy:metadata:messages:fullmessageformat'] = 'Формат полного сообщения';
-$string['privacy:metadata:messages:fullmessagehtml'] = 'HTML-формат полного сообщения';
-$string['privacy:metadata:messages:smallmessage'] = 'Уменьшенная версия сообщения';
-$string['privacy:metadata:messages:subject'] = 'Тема сообщения';
-$string['privacy:metadata:messages:timecreated'] = 'Дата создания сообщения';
-$string['privacy:metadata:messages:useridfrom'] = 'ID пользователя, отправившего сообщение';
 $string['privacy:metadata:message_user_actions'] = 'Список действий с сообщениями пользователя';
 $string['privacy:metadata:message_user_actions:action'] = 'Действие, которое было выполнено';
 $string['privacy:metadata:message_user_actions:messageid'] = 'ID сообщения, к которому относится это действие';
@@ -180,6 +170,15 @@ $string['privacy:metadata:message_users_blocked'] = 'Список заблоки
 $string['privacy:metadata:message_users_blocked:blockeduserid'] = 'ID пользователя, который был заблокирован';
 $string['privacy:metadata:message_users_blocked:timecreated'] = 'Время, когда пользователь был заблокирован';
 $string['privacy:metadata:message_users_blocked:userid'] = 'ID пользователя, который заблокировал пользователя';
+$string['privacy:metadata:messages'] = 'Сообщения';
+$string['privacy:metadata:messages:conversationid'] = 'ID обсуждения';
+$string['privacy:metadata:messages:fullmessage'] = 'Полное сообщение';
+$string['privacy:metadata:messages:fullmessageformat'] = 'Формат полного сообщения';
+$string['privacy:metadata:messages:fullmessagehtml'] = 'HTML-формат полного сообщения';
+$string['privacy:metadata:messages:smallmessage'] = 'Уменьшенная версия сообщения';
+$string['privacy:metadata:messages:subject'] = 'Тема сообщения';
+$string['privacy:metadata:messages:timecreated'] = 'Дата создания сообщения';
+$string['privacy:metadata:messages:useridfrom'] = 'ID пользователя, отправившего сообщение';
 $string['privacy:metadata:notifications'] = 'Уведомления';
 $string['privacy:metadata:notifications:component'] = 'Компонент, отвечающий за отправку уведомления';
 $string['privacy:metadata:notifications:contexturl'] = 'URL, связанный с этим уведомлением';
@@ -196,6 +195,7 @@ $string['privacy:metadata:notifications:useridfrom'] = 'ID пользовате�
 $string['privacy:metadata:notifications:useridto'] = 'ID пользователя, получившего уведомление';
 $string['privacy:metadata:preference:core_message_settings'] = 'Параметры, связанные со службой обмена сообщениями';
 $string['privacy:request:preference:set'] = 'Значение параметра «{$a->name}» было «{$a->value}»';
+$string['privacy_desc'] = 'Вы можете ограничить круг лиц, которые могут отправлять вам сообщения';
 $string['processorsettings'] = 'Настройки способа доставки сообщений';
 $string['removecontact'] = 'Удалить собеседника из моего списка';
 $string['removecontactconfirm'] = 'Вы уверены, что хотите удалить {$a} из своих контактов?';
@@ -232,13 +232,14 @@ $string['shownotificationwindownonew'] = 'Показать окно без но�
 $string['shownotificationwindowwithcount'] = 'Показать окно с новыми уведомлениями ({$a})';
 $string['togglemessagemenu'] = 'Переключить меню сообщений';
 $string['togglenotificationmenu'] = 'Переключить меню уведомлений';
-$string['touserdoesntexist'] = 'Вы не можете отправить сообщение несуществующему пользователю (id {$a}).';
+$string['touserdoesntexist'] = 'Вы не можете отправить сообщение пользователю с id ({$a}) - пользователь не существует';
 $string['unabletomessage'] = 'Вы не можете отправить сообщение этому пользователю';
 $string['unblock'] = 'Разблокировать';
 $string['unblockcontact'] = 'Разблокировать сообщения от этого собеседника';
 $string['unblockuser'] = 'Разблокировать пользователя';
 $string['unblockuserconfirm'] = 'Вы уверены, что хотите разблокировать {$a}?';
 $string['unknownuser'] = 'Неизвестный пользователь';
+$string['unreadmessages'] = 'Непрочитанных сообщений: {$a}';
 $string['unreadnewgroupconversationmessage'] = 'Новое сообщение от {$a->name} в {$a->conversationname}';
 $string['unreadnewmessage'] = 'Новое сообщение от пользователя {$a}';
 $string['unreadnotification'] = 'Непрочитанное уведомление: {$a}';

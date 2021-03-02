@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability', language 'pt', version '3.8'.
  *
- * @package   availability
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,12 +38,18 @@ $string['hidden_individual'] = 'Completamente oculta se o utilizador não reunir
 $string['hidden_marker'] = '(oculto)';
 $string['hide_verb'] = 'Clique para ocultar';
 $string['invalid'] = 'Por favor, configure';
-$string['itemheading'] = 'Condição {$a->number} {$a->type}';
 $string['item_unknowntype'] = 'Estas condições de acesso utilizam um módulo que já não está disponível (se não houver nenhum inconveniente em remover esta restrição, elimine-a abaixo)';
+$string['itemheading'] = 'Condição {$a->number} {$a->type}';
 $string['label_multi'] = 'Condições requeridas';
 $string['label_sign'] = 'Tipo de condição de acesso';
-$string['list_and'] = 'Todas as:';
+$string['list_and'] = 'Verifica todas as seguintes condições:';
 $string['list_and_hidden'] = 'Todas as (oculto):';
+$string['list_or'] = 'Qualquer uma:';
+$string['list_or_hidden'] = 'Qualquer uma (oculto):';
+$string['list_root_and'] = 'Disponível se:';
+$string['list_root_and_hidden'] = 'Disponível se (oculto):';
+$string['list_root_or'] = 'Disponível se cumprir qualquer condição:';
+$string['list_root_or_hidden'] = 'Disponível se cumprir qualquer uma (oculto):';
 $string['listheader_multi_after'] = 'seguintes condições:';
 $string['listheader_multi_and'] = 'todas as';
 $string['listheader_multi_before'] = 'cumprir';
@@ -52,12 +58,6 @@ $string['listheader_sign_before'] = 'Aluno';
 $string['listheader_sign_neg'] = 'não deve';
 $string['listheader_sign_pos'] = 'deve';
 $string['listheader_single'] = 'cumprir a seguinte condição:';
-$string['list_or'] = 'Qualquer uma:';
-$string['list_or_hidden'] = 'Qualquer uma (oculto):';
-$string['list_root_and'] = 'Disponível se:';
-$string['list_root_and_hidden'] = 'Disponível se (oculto):';
-$string['list_root_or'] = 'Disponível se cumprir qualquer condição:';
-$string['list_root_or_hidden'] = 'Disponível se cumprir qualquer uma (oculto):';
 $string['manageplugins'] = 'Gerir condições de acesso';
 $string['missingplugin'] = 'Falta módulo de Condição de acesso';
 $string['or'] = 'ou';
@@ -65,7 +65,7 @@ $string['privacy:metadata'] = 'O subsistema Condições de acesso não armazena 
 $string['restrictaccess'] = 'Condições de acesso';
 $string['restrictbygroup'] = 'Adicionar condição de acesso de grupos/agrupamentos';
 $string['setheading'] = '{$a->number} conjunto(s) de {$a->count} condição(ões)';
-$string['shown_all'] = 'Mostrar em cor acinzentada se o utilizador não reunir as condições';
-$string['shown_individual'] = 'Mostrar em cor acinzentada se o utilizador não reunir esta condição';
 $string['show_verb'] = 'Clique para mostrar em cor cinza';
+$string['shown_all'] = 'Mostrar em cor acinzentada se o utilizador não cumprir as condições';
+$string['shown_individual'] = 'Mostrar em cor acinzentada se o utilizador não cumprir esta condição';
 $string['unknowncondition'] = 'Condição desconhecida (módulo de condição eliminado)';

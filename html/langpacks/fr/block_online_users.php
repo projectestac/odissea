@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_online_users', language 'fr', version '3.8'.
  *
- * @package   block_online_users
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_online_users
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,12 +30,12 @@ $string['nouser'] = 'Aucun utilisateur en ligne';
 $string['numuser'] = '{$a} utilisateur en ligne';
 $string['numusers'] = '{$a} utilisateurs en ligne';
 $string['online_status:hide'] = 'Cacher mon statut en ligne des autres utilisateurs';
-$string['onlinestatushiding'] = 'Masquage du statut de connexion';
-$string['onlinestatushiding_desc'] = 'Si ce réglage est activé, les utilisateurs peuvent choisir de cacher leur statut de connexion.';
 $string['online_status:show'] = 'Afficher mon statut en ligne aux autres utilisateurs';
 $string['online_users:addinstance'] = 'Ajouter un bloc utilisateurs en ligne';
 $string['online_users:myaddinstance'] = 'Ajouter un bloc utilisateurs connecté au tableau de bord';
 $string['online_users:viewlist'] = 'Accéder à la liste des utilisateurs connectés';
+$string['onlinestatushiding'] = 'Masquage du statut de connexion';
+$string['onlinestatushiding_desc'] = 'Si ce réglage est activé, les utilisateurs peuvent choisir de cacher leur statut de connexion.';
 $string['periodnminutes'] = '{$a} dernières minutes';
 $string['pluginname'] = 'Utilisateurs en ligne';
 $string['privacy:metadata:preference:uservisibility'] = 'Statut en ligne visible des autres utilisateurs sans le bloc Utilisateurs en ligne.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'ja', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,7 +52,6 @@ $string['course_fullname_updateonsync'] = '同期スクリプトでフルネー�
 $string['course_fullname_updateonsync_key'] = 'フルネームを更新する';
 $string['course_idnumber'] = 'コースIDナンバーを取得するLDAP属性です。通常、「cn」または「uid」です。';
 $string['course_idnumber_key'] = 'IDナンバー';
-$string['coursenotexistskip'] = 'コース「 {$a} 」が存在しないか、自動作成が無効にされています。スキップします。';
 $string['course_search_sub'] = 'サブコンテクストよりグループメンバーシップを検索する';
 $string['course_search_sub_key'] = 'サブコンテクストを検索する';
 $string['course_settings'] = 'コース登録設定';
@@ -64,6 +63,7 @@ $string['course_summary'] = '任意: 「概要」を取得するLDAPフィール
 $string['course_summary_key'] = '概要';
 $string['course_summary_updateonsync'] = '同期スクリプトで概要を更新する';
 $string['course_summary_updateonsync_key'] = '概要を更新する';
+$string['coursenotexistskip'] = 'コース「 {$a} 」が存在しないか、自動作成が無効にされています。スキップします。';
 $string['courseupdated'] = 'IDナンバー「 {$a->idnumber} 」のコースが正常に更新されました。';
 $string['courseupdateskipped'] = 'IDナンバー「 {$a->idnumber} 」のコースは更新を必要としません。スキップします ...';
 $string['createcourseextid'] = '存在しないコース「 {$a->courseextid} 」に登録するユーザを作成します。';
@@ -88,9 +88,9 @@ $string['host_url'] = '「ldap://ldap.myorg.com/」または「ldaps://ldap.myor
 $string['host_url_key'] = 'ホストURL';
 $string['idnumber_attribute'] = 'グループメンバーシップに識別名が含まれている場合、LDAP認証設定のユーザ「IDナンバー」マッピングで指定されている属性と同じ属性を指定してください。';
 $string['idnumber_attribute_key'] = 'IDナンバー属性';
+$string['ldap:manage'] = 'LDAP登録インスタンスを管理する';
 $string['ldap_encoding'] = 'LDAPサーバで使用するエンコーディングを指定してください。ほとんどの場合、UTF-8ですが、MS AD v2ユーザデフォルトプラットフォームのエンコーディングではcp1252、cp1250等のようになります。';
 $string['ldap_encoding_key'] = 'LDAPエンコーディング';
-$string['ldap:manage'] = 'LDAP登録インスタンスを管理する';
 $string['memberattribute'] = 'LDAPメンバー属性';
 $string['memberattribute_isdn'] = 'グループメンバーシップに識別名が含まれている場合、あなたはここで指定する必要があります。その場合、このセクションの残りの項目も設定する必要があります。';
 $string['memberattribute_isdn_key'] = 'ユーザDNのメンバー属性';

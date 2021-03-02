@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradereport_history', language 'nl', version '3.8'.
  *
- * @package   gradereport_history
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradereport_history
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,9 +42,9 @@ $string['foundoneuser'] = '1 gebruiker gevonden';
 $string['gradenew'] = 'Aangepast cijfer';
 $string['gradeold'] = 'Oorspronkelijk cijfer';
 $string['grader'] = 'Beoordeler';
+$string['history:view'] = 'Bekijk cijfergeschiedenis';
 $string['historyperpage'] = 'Geschiedenisitems per pagina';
 $string['historyperpage_help'] = 'Deze instelling bepaalt het aantal geschiedenisitems per pagina in het rapport van de cijfergeschiedenis.';
-$string['history:view'] = 'Bekijk cijfergeschiedenis';
 $string['loadmoreusers'] = 'Laad meer gebruikers...';
 $string['pluginname'] = 'Cijfergeschiedenis';
 $string['preferences'] = 'Voorkeuren cijfergeschiedenis';

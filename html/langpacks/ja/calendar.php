@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'ja', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -196,9 +196,6 @@ $string['noupcomingevents'] = '直近のイベントはありません。';
 $string['oneevent'] = '1 イベント';
 $string['pollinterval'] = '更新間隔';
 $string['pollinterval_help'] = 'あなたが新しいイベントに関して、カレンダーを更新したい間隔です。';
-$string['preferences'] = 'プリファレンス';
-$string['preferences_available'] = 'あなたのパーソナルプリファレンス';
-$string['preferredcalendar'] = '推奨カレンダー';
 $string['pref_lookahead'] = '直近イベントの日数範囲';
 $string['pref_lookahead_help'] = 'この設定では直近イベントとしてイベントを表示するための将来的な日数の範囲を指定します。この日数を超えるイベントは直近イベントとして表示されることはありません。この日数範囲内のすべてのイベントが表示されるという<strong>保証はありません</strong>。多くの直近イベント (「直近イベントの最大表示件数」プリファレンス以上) が登録されている場合、最も時間の離れたイベントは表示されません。';
 $string['pref_maxevents'] = '直近イベントの最大表示件数';
@@ -209,16 +206,19 @@ $string['pref_startwday'] = '週の初め';
 $string['pref_startwday_help'] = 'あなたがここで選択した曜日を週の初めとして、カレンダー週が表示されます。';
 $string['pref_timeformat'] = '時間フォーマット';
 $string['pref_timeformat_help'] = 'あなたは時間表示に関して、12時間または24時間フォーマットを選択することができます。「デフォルト」を選択した場合、あなたのサイトの言語設定に基づき自動的に時間フォーマットが選択されます。';
+$string['preferences'] = 'プリファレンス';
+$string['preferences_available'] = 'あなたのパーソナルプリファレンス';
+$string['preferredcalendar'] = '推奨カレンダー';
 $string['privacy:metadata:calendar:event'] = 'カレンダーコンポーネントはコアサブシステム内のユーザカレンダーイベント詳細を保存することができます。';
 $string['privacy:metadata:calendar:event:description'] = 'カレンダーイベントの説明です。';
 $string['privacy:metadata:calendar:event:eventtype'] = 'カレンダーイベントのイベントタイプです。';
 $string['privacy:metadata:calendar:event:name'] = 'カレンダーイベントの名称です。';
+$string['privacy:metadata:calendar:event:timeduration'] = 'カレンダーイベントの継続時間です。';
+$string['privacy:metadata:calendar:event:timestart'] = 'カレンダーイベントの開始日時です。';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'カレンダーコンポーネントはコアサブシステム内のユーザカレンダー購読詳細を保存することができます。';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'カレンダー購読のイベントタイプです。';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'カレンダー購読の名称です。';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'カレンダー購読のURLです。';
-$string['privacy:metadata:calendar:event:timeduration'] = 'カレンダーイベントの継続時間です。';
-$string['privacy:metadata:calendar:event:timestart'] = 'カレンダーイベントの開始日時です。';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'ユーザプリファレンスに表示される設定済みカレンダーイベントのタイプです。';
 $string['recentupcoming'] = '最近および次の60日間';
 $string['repeatedevents'] = '繰り返しイベント';

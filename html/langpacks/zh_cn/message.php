@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'zh_cn', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -97,11 +97,11 @@ $string['info'] = '用户信息';
 $string['isnotinyourcontacts'] = '{$a}不是您的联系人';
 $string['loadmore'] = '加载更多';
 $string['loggedin'] = '在线';
-$string['loggedindescription'] = '当我在线时';
 $string['loggedin_help'] = '配置当你登录到Moodle时怎么接收消息';
+$string['loggedindescription'] = '当我在线时';
 $string['loggedoff'] = '离线';
-$string['loggedoffdescription'] = '当我离线时';
 $string['loggedoff_help'] = '配置当你没有登录到Moodle时怎么接收消息';
+$string['loggedoffdescription'] = '当我离线时';
 $string['managemessageoutputs'] = '管理消息输出';
 $string['message'] = '消息';
 $string['messagecontactrequestsnotification'] = '{$a}请求加为联系人';
@@ -152,7 +152,6 @@ $string['outputnotavailable'] = '不可用';
 $string['outputnotconfigured'] = '未配置';
 $string['permitted'] = '允许';
 $string['privacy'] = '隐私';
-$string['privacy_desc'] = '允许给我发送消息';
 $string['privacy:export:conversationprefix'] = '会话：';
 $string['privacy:metadata:core_favourites'] = '用户用星号标记的会话';
 $string['privacy:metadata:message_contact_requests'] = '联系人请求列表';
@@ -161,12 +160,13 @@ $string['privacy:metadata:message_contact_requests:timecreated'] = '联系请求
 $string['privacy:metadata:message_contact_requests:userid'] = '发送联系请求的用户ID';
 $string['privacy:metadata:message_contacts'] = '联系人列表';
 $string['privacy:metadata:messages'] = '消息';
+$string['privacy_desc'] = '允许给我发送消息';
 $string['removecontact'] = '移除联系人';
 $string['removecontactconfirm'] = '您确定要从联系人中移除{$a}吗?';
 $string['removefromfavourites'] = '取消标星对话';
 $string['removefromyourcontacts'] = '移除联系人';
 $string['requirecontacttomessage'] = '您需要请求{$a}将您添加为联系人，才能给他们发消息。';
-$string['searchcombined'] = '搜索人员和消息';
+$string['searchcombined'] = '搜索用户和消息';
 $string['searchforuserorcourse'] = '搜索用户或课程';
 $string['searchmessages'] = '搜索消息';
 $string['seeall'] = '查看所有';
@@ -196,6 +196,7 @@ $string['unblockcontact'] = '对联系人解除屏蔽';
 $string['unblockuser'] = '取消屏蔽用户';
 $string['unblockuserconfirm'] = '您确定要取消屏蔽{$a}吗？';
 $string['unmuteconversation'] = '取消静音';
+$string['unreadmessages'] = '未读消息（{$a}）';
 $string['unreadnewmessage'] = '来自{$a}的新消息';
 $string['useentertosend'] = '按回车键发送';
 $string['usercantbemessaged'] = '由于消息偏好设置你不能给{$a}发消息。请尝试加为联系人。';

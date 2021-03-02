@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_lp', language 'el', version '3.8'.
  *
- * @package   tool_lp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_lp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Ενέργειες';
 $string['activities'] = 'Δραστηριότητες';
-$string['addcohorts'] = 'Προσθήκη ομάδας χρηστών';
-$string['addcohortstosync'] = 'Προσθήκη ομάδων χρηστών για συγχρονισμό';
+$string['addcohorts'] = 'Προσθήκη συνόλου χρηστών';
+$string['addcohortstosync'] = 'Προσθήκη συνόλων χρηστών για συγχρονισμό';
 $string['addcompetency'] = 'Προσθήκη προσόντος';
 $string['addcoursecompetencies'] = 'Προσθήκη προσόντων στο μάθημα';
 $string['addcrossreferencedcompetency'] = 'Προσθήκη αναφερόμενου (υπο)προσόντος';
@@ -36,13 +36,13 @@ $string['addingcompetencywillresetparentrule'] = 'Η προσθήκη νέου �
 $string['addnewcompetency'] = 'Προσθήκη νέου προσόντος';
 $string['addnewcompetencyframework'] = 'Προσθήκη νέου πλαισίου προσόντων';
 $string['addnewplan'] = 'Προσθήκη νέου σχεδίου μάθησης';
-$string['addnewtemplate'] = 'Προσθήκη νέου υποδείγματος σχεδίου μάθησης';
+$string['addnewtemplate'] = 'Προσθήκη νέου προτύπου σχεδίου μάθησης';
 $string['addnewuserevidence'] = 'Προσθήκη νέου αποδεικτικού';
-$string['addtemplatecompetencies'] = 'Προσθήκη προσόντων στο υπόδειγμα σχεδίου μάθησης';
+$string['addtemplatecompetencies'] = 'Προσθήκη προσόντων στο πρότυπο σχεδίου μάθησης';
 $string['aisrequired'] = '«{$a}» απαιτείται';
 $string['aplanswerecreated'] = 'Δημιουργήθηκαν {$a} σχέδια μάθησης.';
 $string['aplanswerecreatedmoremayrequiresync'] = 'Δημιουργήθηκαν {$a} σχέδια μάθησης· περισσότερα θα δημιουργηθούν κατά τον επόμενο συγχρονισμό.';
-$string['assigncohorts'] = 'Ανάθεση ομάδων χρηστών';
+$string['assigncohorts'] = 'Ανάθεση συνόλων χρηστών';
 $string['averageproficiencyrate'] = 'Το μέσο ποσοστό επάρκειας (επαγγελματικού επιπέδου) για ολοκληρωμένα σχέδια μάθησης βασισμένα σε αυτό το υπόδειγμα είναι {$a}%.';
 $string['cancelreviewrequest'] = 'Ακύρωση αιτήματος εξέτασης';
 $string['cannotaddrules'] = 'Αυτό το προσόν δεν μπορεί να ρυθμιστεί.';
@@ -50,7 +50,7 @@ $string['cannotcreateuserplanswhentemplateduedateispassed'] = 'Δεν μπορο
 $string['cannotcreateuserplanswhentemplatehidden'] = 'Δεν μπορούν να δημιουργηθούν νέα σχέδια μάθησης όσο αυτό το υπόδειγμα είναι κρυμμένο.';
 $string['category'] = 'Κατηγορία';
 $string['chooserating'] = 'Επιλέξτε μια βαθμολογία...';
-$string['cohortssyncedtotemplate'] = 'Οι ομάδες χρηστών συγχρονίστηκαν με αυτό το υπόδειγμα σχεδίου μάθησης';
+$string['cohortssyncedtotemplate'] = 'Τα σύνολα χρηστών συγχρονίστηκαν με αυτό το πρότυπο σχεδίου μάθησης';
 $string['competenciesforframework'] = 'Προσόντα για {$a}';
 $string['competenciesmostoftennotproficient'] = 'Προσόντα συνηθέστερα όχι άριστα σε ολοκληρωμένα σχέδια μάθησης';
 $string['competenciesmostoftennotproficientincourse'] = 'Προσόντα συνηθέστερα όχι άριστα σε αυτό το μάθημα';
@@ -115,7 +115,7 @@ $string['hiddenhint'] = '(απόκρυψη)';
 $string['idnumber'] = 'Αναγνωριστικός αριθμός';
 $string['inheritfromframework'] = 'Κληρονόμησε από γονικό πλαίσιο προσόντων (προεπιλογή)';
 $string['itemstoadd'] = 'Στοιχεία για προσθήκη';
-$string['jumptocompetency'] = 'Μεταπήδηση στο προσόν';
+$string['jumptocompetency'] = 'Μετάβαση στο προσόν';
 $string['jumptouser'] = 'Μεταπήδηση στο χρήστη';
 $string['learningplancompetencies'] = 'Προσόντα σχεδίου μάθησης';
 $string['learningplans'] = 'Σχέδια μάθησης';
@@ -151,7 +151,7 @@ $string['nocompetenciesincourse'] = 'Δεν συνδέθηκαν καθόλου 
 $string['nocompetenciesinevidence'] = 'Δεν συνδέθηκαν καθόλου προσόντα με αυτό το αποδεικτικό.';
 $string['nocompetenciesinlearningplan'] = 'Δεν συνδέθηκαν καθόλου προσόντα σε αυτό το σχέδιο μάθησης.';
 $string['nocompetenciesinlist'] = 'Δεν έχουν επιλεγεί προσόντα.';
-$string['nocompetenciesintemplate'] = 'Δεν συνδέθηκαν καθόλου προσόντα με αυτό το υπόδειγμα σχεδίου μάθησης.';
+$string['nocompetenciesintemplate'] = 'Δεν συνδέθηκαν καθόλου προσόντα με αυτό το πρότυπο σχεδίου μάθησης.';
 $string['nocompetencyframeworks'] = 'Δεν δημιουργήθηκαν πλαίσια προσόντων ακόμη.';
 $string['nocompetencyselected'] = 'Δεν επιλέχθηκε προσόν';
 $string['nocrossreferencedcompetencies'] = 'Κανένα άλλο (υπο)προσόν δεν έχει αναφερθεί σε αυτό το προσόν.';
@@ -176,7 +176,7 @@ $string['plancreated'] = 'Το σχέδιο μάθησης δημιουργήθ�
 $string['plandescription'] = 'Περιγραφή';
 $string['planname'] = 'Όνομα';
 $string['plantemplate'] = 'Επιλέξτε υπόδειγμα σχεδίου μάθησης';
-$string['plantemplate_help'] = 'Ένα σχέδιο μάθησης που δημιουργείται από ένα υπόδειγμα θα περιέχει μια λίστα από προσόντα που ταιριάζουν στο υπόδειγμα. Ενημερώσεις στο υπόδειγμα θα αντανακλώνται σε οποιοδήποτε σχέδιο δημιουργήθηκε με αυτό το υπόδειγμα.';
+$string['plantemplate_help'] = 'Ένα σχέδιο μάθησης που δημιουργείται από ένα πρότυπο θα περιέχει μια λίστα από προσόντα που ταιριάζουν στο πρότυπο. Ενημερώσεις στο πρότυπο θα αντανακλώνται σε οποιοδήποτε σχέδιο δημιουργήθηκε με αυτό το πρότυπο.';
 $string['planunapprove'] = 'Επιστροφή σε προσχέδιο';
 $string['planupdated'] = 'Το σχέδιο μάθησης ενημερώθηκε';
 $string['pluginname'] = 'Σχέδια μάθησης';
@@ -200,10 +200,10 @@ $string['scale'] = 'Κλίμακα';
 $string['scale_help'] = 'Μια κλίμακα καθορίζει πως γίνεται η μέτρηση της επάρκειας σε ένα προσόν. Αφού επιλεγεί μια κλίμακα, πρέπει να διαμορφωθεί.
 
 * Το στοιχείο που θα επιλεγεί ως «Προεπιλογή» είναι η αξιολόγηση που δίνεται όταν το προσόν ολοκληρωθεί αυτόματα.
-* Το ή τα στοιχεία που θα επιλεγούν ως «Επάρκεια» δείχνουν ποιές τιμές θα κρίνουν τα προσόντα ως επαρκή κατά την αξιολόγηση.';
+* Το/Τα στοιχείο(-α) που θα επιλεγεί(-ούν) ως «Επάρκεια» δείχνει(-ουν) ποιά(-ές) τιμή(-ές) θα κρίνει(-ουν) τα προσόντα ως επαρκή κατά την αξιολόγηση.';
 $string['scalevalue'] = 'Τιμή κλίμακας';
 $string['search'] = 'Αναζήτηση...';
-$string['selectcohortstosync'] = 'Επιλογή ομάδων χρηστών για συγχρονισμό';
+$string['selectcohortstosync'] = 'Επιλογή συνόλων χρηστών για συγχρονισμό';
 $string['selectcompetencymovetarget'] = 'Επιλέξτε τοποθεσία για μεταφορά αυτού του προσόντος:';
 $string['selectedcompetency'] = 'Επιλεγμένο προσόν';
 $string['selectuserstocreateplansfor'] = 'Επιλέξτε χρήστες για τους οποίους θα δημιουργήσετε σχέδια μάθησης';
@@ -215,7 +215,7 @@ $string['startreview'] = 'Ξεκινήστε την εξέταση';
 $string['state'] = 'Κατάσταση';
 $string['status'] = 'Κατάσταση';
 $string['stopreview'] = 'Ολοκλήρωση εξέτασης';
-$string['stopsyncingcohort'] = 'Τερματισμός συγχρονισμού ομάδας χρηστών';
+$string['stopsyncingcohort'] = 'Τερματισμός συγχρονισμού συνόλου χρηστών';
 $string['taxonomies'] = 'Ταξινομία/Κατάταξη';
 $string['taxonomy_add_behaviour'] = 'Προσθήκη συμπεριφοράς';
 $string['taxonomy_add_competency'] = 'Προσθήκη προσόντος';
@@ -263,9 +263,9 @@ $string['taxonomy_selected_skill'] = 'Επιλεγμένη ικανότητα';
 $string['taxonomy_selected_value'] = 'Επιλεγμένη τιμή';
 $string['template'] = 'Υπόδειγμα σχεδίου μάθησης';
 $string['templatebased'] = 'Βασισμένο σε φόρμα';
-$string['templatecohortnotsyncedwhileduedateispassed'] = 'Τα σύνολα χρηστών δεν θα συγχρονιστούν, αν έχει περάσει η ημερομηνία λήξης του υποδείγματος.';
-$string['templatecohortnotsyncedwhilehidden'] = 'Τα σύνολα χρηστών δεν θα συγχρονιστούν όσο το υπόδειγμα είναι κρυμμένο.';
-$string['templatecompetencies'] = 'Προσόντα υποδείγματος σχεδίου μάθησης';
+$string['templatecohortnotsyncedwhileduedateispassed'] = 'Οι ομάδες χρηστών δεν θα συγχρονιστούν, αν έχει περάσει η οφειλόμενη ημερομηνία του προτύπου.';
+$string['templatecohortnotsyncedwhilehidden'] = 'Τα σύνολα χρηστών δεν θα συγχρονιστούν όσο το πρότυπο είναι κρυμμένο.';
+$string['templatecompetencies'] = 'Προσόντα προτύπου σχεδίου μάθησης';
 $string['templatecreated'] = 'Το υπόδειγμα σχεδίου μάθησης δημιουργήθηκε';
 $string['templatename'] = 'Όνομα';
 $string['templates'] = 'Υποδείγματα σχεδίων μάθησης';
@@ -273,7 +273,7 @@ $string['templateupdated'] = 'Το υπόδειγμα σχεδίου μάθησ�
 $string['totalrequiredtocomplete'] = 'Σύνολο που απαιτείται για ολοκλήρωση';
 $string['unlinkcompetencycourse'] = 'Αποσύνδεση του προσόντος «{$a}» από το μάθημα;';
 $string['unlinkcompetencyplan'] = 'Αποσύνδεση του προσόντος «{$a}» από το σχέδιο μάθησης;';
-$string['unlinkcompetencytemplate'] = 'Αποσύνδεση του προσόντος «{$a}» από το υπόδειγμα σχεδίου μάθησης;';
+$string['unlinkcompetencytemplate'] = 'Αποσύνδεση του προσόντος «{$a}» από το πρότυπο σχεδίου μάθησης;';
 $string['unlinkplanstemplate'] = 'Αποσύνδεση των σχεδίων μάθησης από το υπόδειγμά τους';
 $string['unlinkplantemplate'] = 'Αποσύνδεση από το υπόδειγμα σχεδίου μάθησης';
 $string['unlinkplantemplateconfirm'] = 'Αποσύνδεση του σχεδίου μάθησης «{$a}» από το υπόδειγμά του; Οποιαδήποτε αλλαγή γίνει στο υπόδειγμα δεν θα εφαρμόζεται πια στο σχέδιο. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.';

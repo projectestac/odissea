@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'it', version '3.8'.
  *
- * @package   qtype_ddmarker
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddmarker
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,28 +49,30 @@ $string['dropzones_help'] = 'Le aree di rilascio vengono definite inserendo le c
 $string['followingarewrong'] = 'I seguenti indicatori sono stati posizionati in un\'area sbagliata: {$a}.';
 $string['followingarewrongandhighlighted'] = 'I seguenti indicatori non sono stati posizionati correttamente: {$a}. Gli indicatori evidenziati sono ora visualizzati nelle posizioni corrette.<br />Fai click su un marker per evidenziare l\'area corrispondente.';
 $string['formerror_nobgimage'] = 'Devi selezionare l\'immagine da utilizzare come sfondo per l\'area dove trascinare e rilasciare.';
-$string['formerror_noitemselected'] = 'Hai definito un\'area di rilascio ma non hai selezionato l\'indicatore da trascinarci.';
+$string['formerror_noitemselected'] = 'E\' stata definita un\'area di rilascio ma non è stato selezionato l\'indicatore da trascinarci.';
 $string['formerror_nosemicolons'] = 'Nelle coordinate inserite non sono presenti punti e virgola. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
-$string['formerror_onlysometagsallowed'] = 'Nell\'etichetta di un indicatore è consentito solamente il tag "{$a}"';
-$string['formerror_onlyusewholepositivenumbers'] = 'Per definire coordinate x/y e/o altezze/larghezze delle forme possono essere utilizzati solamente numeri interi positivi. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
+$string['formerror_onlysometagsallowed'] = 'Nell\'etichetta di un indicatore è consentito solamente il tag "{$a}".';
+$string['formerror_onlyusewholepositivenumbers'] = 'Per definire coordinate x/y e/o altezze/larghezze delle forme possono essere utilizzati solamente numeri interi positivi. Le coordinate della forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
 $string['formerror_polygonmusthaveatleastthreepoints'] = 'La forma poligono richiede la definizione di almeno tre punti. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
-$string['formerror_repeatedpoint'] = 'Hai inserito le stesse coordinate due volte, per favore elimina la duplicazione. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
-$string['formerror_shapeoutsideboundsofbgimage'] = 'Hai definito una forma che eccede le dimensioni dell\'immagine';
+$string['formerror_repeatedpoint'] = 'Sono state inserite due volte le stesse coordinate, per favore eliminare la duplicazione. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
+$string['formerror_shapeoutsideboundsofbgimage'] = 'E\' stata definita una forma che eccede le dimensioni dell\'immagine';
 $string['formerror_toomanysemicolons'] = 'Nelle coordinate inserite sono presenti troppi punti e virgola. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
-$string['formerror_unrecognisedwidthheightpart'] = 'Non è possibile individuare la larghezza l\'altezza. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
-$string['formerror_unrecognisedxypart'] = 'Non è possibile individuare le coordinate x,y. Le coordinate per la forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
+$string['formerror_unrecognisedwidthheightpart'] = 'Non è possibile individuare la larghezza l\'altezza. Le coordinate della forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
+$string['formerror_unrecognisedxypart'] = 'Non è possibile individuare le coordinate x,y. Le coordinate della forma {$a->shape} devono essere inserite nel seguente modo: {$a->coordsstring}.';
 $string['infinite'] = 'Illimitato';
 $string['marker'] = 'Indicatore';
 $string['marker_n'] = 'Indicatore {no}';
 $string['markers'] = 'Indicatori';
 $string['nolabel'] = 'Senza etichetta di testo';
 $string['noofdrags'] = 'Numero';
-$string['pleasedragatleastonemarker'] = 'La tua risposta non è completa, devi posizionare almeno un indicatore sull\'immagine.';
+$string['pleasedragatleastonemarker'] = 'La risposta non è completa, devi posizionare almeno un indicatore sull\'immagine.';
 $string['pluginname'] = 'Trascina e rilascia indicatori';
+$string['pluginname_help'] = 'Seleziona un\'immagine di sfondo, inserisci le etichette di testo per gli indicatori e definisci  sull\'immagine di sfondo le zone di rilascio degli indicatori.';
 $string['pluginnameadding'] = 'Inserimento domanda Trascina e rilascia indicatori';
 $string['pluginnameediting'] = 'Inserimento domanda Trascina e rilascia indicatori';
-$string['pluginname_help'] = 'Seleziona un\'immagine di sfondo, inserisci le etichette di testo per gli indicatori e definisci  sull\'immagine di sfondo le zone di rilascio degli indicatori.';
-$string['pluginnamesummary'] = 'Gli indicatori sono trascinati e rilasciati su un\'immagine di sfondo.';
+$string['pluginnamesummary'] = 'Gli indicatori verranno trascinati e rilasciati su un\'immagine di sfondo.
+
+Da notare che questo tipo di domanda non è accessibile.';
 $string['previewareaheader'] = 'Anteprima';
 $string['previewareamessage'] = 'Seleziona un\'immagine di sfondo, inserisci le etichette di testo per gli indicatori e definisci  sull\'immagine di sfondo le zone di rilascio degli indicatori.';
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Trascina e rilascia indicatori\' non memorizza dati personali.';
@@ -80,7 +82,7 @@ $string['shape_circle'] = 'Cerchio';
 $string['shape_circle_coords'] = 'x,y;r (dove x,y sono le coordinate xy del centro del cerchio ed r il raggio)';
 $string['shape_circle_lowercase'] = 'cerchio';
 $string['shape_polygon'] = 'Poligono';
-$string['shape_polygon_coords'] = 'x1,y1;x2,y2;x3,y3;x4,y4....(dove x1, y1 sono le coordinate x,y del primo vertice, x2, y2 sono le coordinate x,y del secondo, ecc.  Per chiudere il poligono non occorre ripetere le coordinate delle primo vertice)';
+$string['shape_polygon_coords'] = 'x1,y1;x2,y2;x3,y3;x4,y4....(dove x1, y1 sono le coordinate x,y del primo vertice, x2, y2 sono le coordinate x,y del secondo, ecc.  Per chiudere il poligono non occorre ripetere le coordinate delle primo vertice.)';
 $string['shape_polygon_lowercase'] = 'poligono';
 $string['shape_rectangle'] = 'Rettangolo';
 $string['shape_rectangle_coords'] = 'x,y;w,h (dove x,y sono le coordinate xy dell\'angolo superiore sinistro del rettangolo, w e h sono la larghezza e l\'altezza del rettangolo)';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,26 +12,29 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_capability', language 'sv', version '3.8'.
  *
- * @package   tool_capability
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_capability
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['capabilitylabel'] = 'Förmåga:';
-$string['capabilityreport'] = 'Förmågeöversikt:';
-$string['changeoverrides'] = 'Ändringsöverskridanden i denna kontext:';
+$string['capabilitylabel'] = 'Funktionsbehörighet:';
+$string['capabilityreport'] = 'Funktionsbehörigheter';
+$string['changeoverrides'] = 'Ändra åsidosättanden i detta kontext';
 $string['changeroles'] = 'Ändra rolldefinitioner';
+$string['eventreportviewed'] = 'Rapport visad';
 $string['forroles'] = 'För roller {$a}';
 $string['getreport'] = 'Hämta översikten';
-$string['intro'] = 'Denna rapport visar, för en särskild förmåga, vilka rättigheter den förmågan har i definitionen för varje roll (eller ett urval av roller), samt överallt på webbplatsen där denna förmåga är överriden.';
-$string['pluginname'] = 'Förmågeöversikt';
-$string['reportforcapability'] = 'Rapport för förmåga \'{$a}\'';
+$string['intro'] = 'Denna rapport visar, för en särskild funktion, vilka rättigheter den funktionen har i definitionen för varje roll (eller ett urval av roller), samt överallt på webbplatsen där denna funktionsbehörighet är åsidosatt.';
+$string['pluginname'] = 'Översikt av funktionsbehörigheter';
+$string['privacy:metadata'] = 'Plugin-modulen för funktionsbehörigheter lagrar ingen användarinformation.';
+$string['reportforcapability'] = 'Rapport för funktion \'{$a}\'';
 $string['reportsettings'] = 'Rapportinställningar';
 $string['roleslabel'] = 'Roller:';

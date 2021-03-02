@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'ca', version '3.8'.
  *
- * @package   qbehaviour_deferredcbm
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qbehaviour_deferredcbm
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,8 +41,8 @@ $string['cbmgrades_help'] = 'Amb Qualificació Basada en la Certesa (Certainty B
 **Precisió** + **Bonificació QBC** és una millor mesura del coneixement que **Precisió**. Els errors conceptuals poden portar a bonificacions negatives, una advertència per tal de fixar-se amb cura en allò que se sap i allò que no.';
 $string['cbmmark'] = 'Puntuació QBC (CBM) {$a}';
 $string['certainty'] = 'Certesa';
-$string['certainty1'] = 'C=1 (Indecís: <67% )';
 $string['certainty-1'] = 'Ni idea';
+$string['certainty1'] = 'C=1 (Indecís: <67% )';
 $string['certainty2'] = 'C=2 (Mitjà: > 67%)';
 $string['certainty3'] = 'C=3 (Força segur: > 80%)';
 $string['certainty_help'] = 'L\'avaluació basada en la certesa requereix que indiqueu el grau de confiança que teniu en la vostra resposta. Els nivells disponibles són:
@@ -54,8 +54,8 @@ Puntuació si és errònia          |      0         |     -2      |       -6
 Probabilitat que sigui correcta  |     <67%       |   67%-80%   |      >80%
 
 Les millors qualificacions s\'aconsegueixen reconeixent la incertesa. Per exemple, si us sembla que la probabilitat d\'equivocar-vos és més alta d\'1 entre 3, heu d\'introduir C = 1 i evitar així el risc d\'una qualificació negativa.';
-$string['certaintyshort1'] = 'C=1';
 $string['certaintyshort-1'] = 'Ni idea';
+$string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';
 $string['certaintyshort3'] = 'C=3';
 $string['dontknow'] = 'Ni idea';

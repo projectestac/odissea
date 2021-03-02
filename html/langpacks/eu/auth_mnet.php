@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,33 +12,34 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_mnet', language 'eu', version '3.8'.
  *
- * @package   auth_mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_mnet_auto_add_remote_users'] = 'Bai aukeratuz gero, urrutiko erabiltzailea lehen aldiz sartzen denean erabiltzaile lokalaren erregistroa automatikoki sortzen da.';
-$string['auth_mnetdescription'] = 'Zure Moodle Sarearen ezarpenetan definitutako web-konfiantzaren arabera autentifikatuko dira erabiltzaileak.';
 $string['auth_mnet_roamin'] = 'Ostalari honetako erabiltzaileak zure gunean ibil daitezke';
 $string['auth_mnet_roamout'] = 'Zure erabiltzaileak ostalari honetan ibil daitezke';
 $string['auth_mnet_rpc_negotiation_timeout'] = 'XMLRCP-ren bidez autentifikatzeko gehienezko denbora (segundoetan).';
+$string['auth_mnetdescription'] = 'Zure Moodle Sarearen ezarpenetan definitutako web-konfiantzaren arabera autentifikatuko dira erabiltzaileak.';
 $string['auto_add_remote_users'] = 'Gehitu automatikoki urrutiko erabiltzaileak';
 $string['crontask'] = 'MNET autentifikazioaren atzeko planoko prozesatzea';
-$string['pluginname'] = 'Moodle Sarea autentifikazioa';
+$string['pluginname'] = 'MNet autentifikazioa';
 $string['privacy:metadata:external:mahara'] = 'Plugin honek lotutako kanpoko Mahara aplikazio batera datuak bidal ditzake.';
 $string['privacy:metadata:external:moodle'] = 'Plugin honek lotutako kanpoko Moodle aplikazio batera datuak bidal ditzake.';
 $string['privacy:metadata:mnet_external:address'] = 'Erabiltzailearen helbidea';
 $string['privacy:metadata:mnet_external:aim'] = 'Erabiltzailearen AIM identifikatzailea';
 $string['privacy:metadata:mnet_external:alternatename'] = 'Erabiltzailearentzako ordezko izena.';
 $string['privacy:metadata:mnet_external:autosubscribe'] = 'Erabiltzaileak idazten duen foroetara automatikoki harpidetu behar den zehazteko hobespena.';
-$string['privacy:metadata:mnet_external:calendartype'] = 'Erabili beharreko egutegi-motaren erabiltzaile-hobespena.';
+$string['privacy:metadata:mnet_external:calendartype'] = 'Erabili beharreko egutegi motaren erabiltzaile-hobespena.';
 $string['privacy:metadata:mnet_external:city'] = 'Erabiltzailearen hiria';
 $string['privacy:metadata:mnet_external:country'] = 'Erabiltzailea dagoen herrialdea.';
 $string['privacy:metadata:mnet_external:currentlogin'] = 'Erabiltzaile honen uneko saio-hasiera.';
@@ -60,7 +60,7 @@ $string['privacy:metadata:mnet_external:lastaccess'] = 'Erabiltzailea gunean azk
 $string['privacy:metadata:mnet_external:lastlogin'] = 'Erabiltzaile honen azken saio-hasiera.';
 $string['privacy:metadata:mnet_external:lastname'] = 'Erabiltzailearen abizena.';
 $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Erabiltzailearen abizenaren inguruko xehetasun fonetikoak.';
-$string['privacy:metadata:mnet_external:maildigest'] = 'Erabiltzaile honentzako posta elektroniko bidezko laburpen-motarentzako ezarpena.';
+$string['privacy:metadata:mnet_external:maildigest'] = 'Erabiltzaile honentzako posta elektroniko bidezko banaketa-aukeraren ezarpena.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'Erabiltzailearen helbide elektronikoa beste erabiltzaileei erakustekoaren inguruko hobespena.';
 $string['privacy:metadata:mnet_external:middlename'] = 'Erabiltzailearen bigarren izena';
 $string['privacy:metadata:mnet_external:msn'] = 'Erabiltzailearen MSN identifikatzailea';

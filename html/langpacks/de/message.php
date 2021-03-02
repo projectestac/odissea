@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'de', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -73,6 +73,7 @@ $string['emailtagline'] = 'Dies ist die Kopie einer Mitteilung von \'{$a->sitena
 $string['enabled'] = 'Aktiviert';
 $string['errorcallingprocessor'] = 'Fehler bei der angegebenen Ausgabe';
 $string['errorconversationdoesnotexist'] = 'Diese Kommunikation gibt es nicht.';
+$string['errormessagetoolong'] = 'Die Mitteilung ist länger als erlaubt.';
 $string['errortranslatingdefault'] = 'Fehler in der Plugin-Einstellung. Es werden die Standardeinstellungen benutzt.';
 $string['eventgroupmessagesent'] = 'Gruppenmitteilung gesendet';
 $string['eventmessagecontactadded'] = 'Kontakt hinzugefügt';
@@ -98,11 +99,11 @@ $string['info'] = 'Nutzerinformationen';
 $string['isnotinyourcontacts'] = '{$a} gehört nicht zu Ihren Kontakten';
 $string['loadmore'] = 'Mehr laden';
 $string['loggedin'] = 'Online';
-$string['loggedindescription'] = 'Wenn Sie in Moodle angemeldet sind.';
 $string['loggedin_help'] = 'Konfigurieren Sie, wie Sie Systemnachrichten empfangen wollen, wenn Sie angemeldet sind.';
+$string['loggedindescription'] = 'Wenn Sie in Moodle angemeldet sind';
 $string['loggedoff'] = 'Offline';
-$string['loggedoffdescription'] = 'Wenn Sie nicht in Moodle angemeldet sind';
 $string['loggedoff_help'] = 'Konfigurieren Sie, wie Sie Systemnachrichten empfangen möchten, wenn Sie nicht angemeldet sind.';
+$string['loggedoffdescription'] = 'Wenn Sie nicht in Moodle angemeldet sind';
 $string['managemessageoutputs'] = 'Standardeinstellungen für Systemnachrichten';
 $string['message'] = 'Mitteilung';
 $string['messagecontactrequestsnotification'] = '{$a} möchte als Kontakt hinzugefügt werden.';
@@ -127,7 +128,7 @@ $string['messagingdisabled'] = 'Mitteilungen sind für diese Website deaktiviert
 $string['muteconversation'] = 'Stummschalten';
 $string['mutedconversation'] = 'Stummgeschaltete Kommunikation';
 $string['newmessage'] = 'Neue Mitteilung';
-$string['newmessagesearch'] = 'Kontakt auswählen, um eine neue Mitteilung zu versenden.';
+$string['newmessagesearch'] = 'Wählen Sie einen Kontakt, um eine neue Mitteilung zu versenden.';
 $string['newonlymsg'] = 'Nur neue anzeigen';
 $string['nocontactrequests'] = 'Keine Kontaktanfragen';
 $string['nocontacts'] = 'Keine Kontakte';
@@ -141,7 +142,7 @@ $string['nomessagesfound'] = 'Keine Mitteilungen gefunden';
 $string['noncontacts'] = 'Weitere Personen';
 $string['nonotifications'] = 'Keine Systemnachrichten';
 $string['noparticipants'] = 'Keine Teilnehmer/innen';
-$string['noreply'] = 'Antworten Sie nicht auf diese Mitteilung!';
+$string['noreply'] = 'Antworten Sie nicht auf diese Mitteilung.';
 $string['notificationdatahasnotbeenmigrated'] = 'Ihre Systemnachrichten sind aufgrund von Upgrades der Infrastruktur nicht verfügbar. Warten Sie bitte und versuchen Sie es zu einem späteren Zeitpunkt erneut.';
 $string['notificationimage'] = 'Bild für Mitteilungen';
 $string['notificationpreferences'] = 'Systemnachrichten';
@@ -164,7 +165,6 @@ $string['participants'] = 'Teilnehmer/innen';
 $string['pendingcontactrequests'] = 'Es gibt {$a} anstehende Kontaktanfragen.';
 $string['permitted'] = 'Aktiviert';
 $string['privacy'] = 'Datenschutz';
-$string['privacy_desc'] = 'Sie können einschränken, welche Person Ihnen eine Mitteilung senden kann.';
 $string['privacy:export:conversationprefix'] = 'Kommunikation:';
 $string['privacy:metadata:core_favourites'] = 'Diese Kommunikationen wurden von der Person als Favorit markiert';
 $string['privacy:metadata:message_contact_requests'] = 'Liste mit Kontaktanfragen';
@@ -184,6 +184,15 @@ $string['privacy:metadata:message_conversation_members'] = 'Liste von Nutzern in
 $string['privacy:metadata:message_conversation_members:conversationid'] = 'ID des Gesprächs';
 $string['privacy:metadata:message_conversation_members:timecreated'] = 'Zeitpunkt an dem das Mitglied erstellt wurde';
 $string['privacy:metadata:message_conversation_members:userid'] = 'ID des Nutzers in Gespräch';
+$string['privacy:metadata:message_user_actions'] = 'Liste der Mitteilungen eines Nutzers';
+$string['privacy:metadata:message_user_actions:action'] = 'Ausgeführte Aktion';
+$string['privacy:metadata:message_user_actions:messageid'] = 'ID der zugeordneten Mitteilung';
+$string['privacy:metadata:message_user_actions:timecreated'] = 'Zeitpunkt an dem Aktion erstellt wurde';
+$string['privacy:metadata:message_user_actions:userid'] = 'ID des Nutzers, de rdie Aktion ausführte';
+$string['privacy:metadata:message_users_blocked'] = 'Liste blockierter Personen';
+$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'ID der blockierten Person';
+$string['privacy:metadata:message_users_blocked:timecreated'] = 'Zeitpunkt, an dem die Blockierung stattgefunden hat';
+$string['privacy:metadata:message_users_blocked:userid'] = 'ID der Person, die die Blockierung vorgenommen hat';
 $string['privacy:metadata:messages'] = 'Mitteilungen';
 $string['privacy:metadata:messages:conversationid'] = 'ID des Gesprächs';
 $string['privacy:metadata:messages:customdata'] = 'Benutzerdefinierte Daten, die in der Regel interne IDs und eine öffentliche URL des Absenderbildes (Benutzer oder Gruppe) enthalten';
@@ -194,15 +203,6 @@ $string['privacy:metadata:messages:smallmessage'] = 'Kurzversion der Mitteilung'
 $string['privacy:metadata:messages:subject'] = 'Thema der Mitteilung';
 $string['privacy:metadata:messages:timecreated'] = 'Zeitpunkt an dem Mitteilung erstellt wurd';
 $string['privacy:metadata:messages:useridfrom'] = 'ID des Nutzers, der die Mitteilung gesendet hat';
-$string['privacy:metadata:message_user_actions'] = 'Liste der Mitteilungen eines Nutzers';
-$string['privacy:metadata:message_user_actions:action'] = 'Ausgeführte Aktion';
-$string['privacy:metadata:message_user_actions:messageid'] = 'ID der zugeordneten Mitteilung';
-$string['privacy:metadata:message_user_actions:timecreated'] = 'Zeitpunkt an dem Aktion erstellt wurde';
-$string['privacy:metadata:message_user_actions:userid'] = 'ID des Nutzers, de rdie Aktion ausführte';
-$string['privacy:metadata:message_users_blocked'] = 'Liste blockierter Personen';
-$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'ID der blockierten Person';
-$string['privacy:metadata:message_users_blocked:timecreated'] = 'Zeitpunkt, an dem die Blockierung stattgefunden hat';
-$string['privacy:metadata:message_users_blocked:userid'] = 'ID der Person, die die Blockierung vorgenommen hat';
 $string['privacy:metadata:notifications'] = 'Systemnachrichten';
 $string['privacy:metadata:notifications:component'] = 'Komponente, die Mitteilungen ausführte';
 $string['privacy:metadata:notifications:contexturl'] = 'URL der Mitteilungen';
@@ -219,7 +219,8 @@ $string['privacy:metadata:notifications:timeread'] = 'Zeitpunkt zu dem Mitteilun
 $string['privacy:metadata:notifications:useridfrom'] = 'ID des Nutzers, der die Mitteilung gesendet hat';
 $string['privacy:metadata:notifications:useridto'] = 'ID des Empfängers der Mitteilung';
 $string['privacy:metadata:preference:core_message_settings'] = 'Einstellungen zu Mitteilungen';
-$string['privacy:request:preference:set'] = 'Wert der Einstellung  \'{$a->name}\' war \'{$a->value}\'';
+$string['privacy:request:preference:set'] = 'Der Wert der Einstellung \'{$a->name}\' war \'{$a->value}\'';
+$string['privacy_desc'] = 'Sie können einschränken, welche Person Ihnen eine Mitteilung senden kann.';
 $string['processorsettings'] = 'Einstellungen';
 $string['removecontact'] = 'Kontakt entfernen';
 $string['removecontactconfirm'] = 'Möchten Sie wirklich {$a} aus Ihren Kontakten entfernen?';
@@ -257,7 +258,7 @@ $string['shownotificationwindowwithcount'] = 'Mitteilungsfenster mit {$a} neuen 
 $string['togglemessagemenu'] = 'Mitteilungen';
 $string['togglenotificationmenu'] = 'Systemnachrichten';
 $string['totalconversations'] = 'Insgesamt {$a} Kommunikationen';
-$string['touserdoesntexist'] = 'Sie können keine Mitteilung an die Nutzer-ID ({$a}) senden, da diese nicht existiert';
+$string['touserdoesntexist'] = 'Sie können keine Mitteilung an eine nicht existierende Nutzer-ID ({$a}) senden.';
 $string['unabletomessage'] = 'Sie können dieser Person keine Mitteilung senden.';
 $string['unblock'] = 'Blockierung aufheben';
 $string['unblockcontact'] = 'Blockierung für Kontakt aufheben';
@@ -282,6 +283,6 @@ $string['viewnotificationresource'] = 'Zu: {$a}';
 $string['viewunreadmessageswith'] = 'Ungelesene Mitteilungen mit {$a} anzeigen';
 $string['wouldliketocontactyou'] = 'Ich möchte Sie kontaktieren';
 $string['writeamessage'] = 'Mitteilung schreiben...';
-$string['you'] = 'Sie:';
+$string['you'] = 'Ich:';
 $string['youhaveblockeduser'] = 'Sie haben diese Person blockiert.';
 $string['yourcontactrequestpending'] = 'Ihre Kontaktanfrage an {$a} ist noch offen';

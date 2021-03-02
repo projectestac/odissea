@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_self', language 'gl', version '3.8'.
  *
- * @package   enrol_self
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_self
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['canntenrol'] = 'A matriculación esta desactivada ou inactiva';
+$string['canntenrol'] = 'A matriculación está desactivada ou inactiva';
 $string['canntenrolearly'] = 'Aínda non pode matricularse; a matriculación comeza o {$a}.';
 $string['canntenrollate'] = 'Xa non pode matricularse, a matriculación rematou o  {$a}.';
 $string['cohortnonmemberinfo'] = 'Soamente os membros do círculo «{$a}» poden automatricularse.';
@@ -62,7 +62,7 @@ Esta é unha notificación de que a súa matriculación no curso «{$a->course}�
 
 Se necesita axuda, contacte con {$a->enroller}.';
 $string['expirymessageenrolledsubject'] = 'Notificación da expiración da automatrícula';
-$string['expirymessageenrollerbody'] = 'A matriculación no curso «{$a->course}» expirará no seguinte {$a->threshold} no caso dos seguintes usuarios:
+$string['expirymessageenrollerbody'] = 'A automatriculación no curso «{$a->course}» expirará no seguinte {$a->threshold} no caso dos seguintes usuarios:
 
 {$a->users}
 
@@ -84,7 +84,7 @@ $string['maxenrolledreached'] = 'Xa se acadou o número máximo de usuarios aos 
 $string['messageprovider:expiry_notification'] = 'Notificacións de expiración da automatrículación';
 $string['newenrols'] = 'Permitir novas matriculacións';
 $string['newenrols_desc'] = 'Permitirlles aos usuarios matricularse por si mesmos en novos cursos de forma predeterminada.';
-$string['newenrols_help'] = 'Esta configuración determina cando un usuario se pode matricular neste curso.';
+$string['newenrols_help'] = 'Este axuste determina cando un usuario se pode matricular neste curso.';
 $string['nopassword'] = 'Non se require chave de matriculación.';
 $string['password'] = 'Chave de matriculación';
 $string['password_help'] = 'Unha chave para matriculación permite que o acceso ao curso se restrinxa só para aqueles que coñecen a chave.
@@ -94,7 +94,7 @@ Se o campo está en branco, calquera usuario pode matricularse no curso.
 De se especificar unha chave, a calquera usuario que tente matricularse no curso pediráselle que forneza a chave. Vexa que un usuario soamente necesita fornecer a chave UNHA vez, ao matricularse no curso.';
 $string['passwordinvalid'] = 'Chave para matriculación incorrecta, ténteo outra vez';
 $string['passwordinvalidhint'] = 'A chave utilizada é incorrecta, ténteo outra vez<br />
-(Pista: Comeza por «{$a}»)';
+(Consello: Comeza por «{$a}»)';
 $string['pluginname'] = 'Automatriculación';
 $string['pluginname_desc'] = 'O engadido de automatriculación permítelle aos usuarios escoller en que cursos queren participar. Os cursos poden estar protexidos por unha chave de matriculación. Internamente a matriculación faise por medio do engadido de matriculación manual que ten que estar activado en tal curso.';
 $string['privacy:metadata'] = 'O engadido de automatriculación non almacena ningún dato persoal.';
@@ -114,7 +114,7 @@ $string['showhint_desc'] = 'Amosar a primeira letra da chave de acceso como conv
 $string['status'] = 'Activar as matriculacións existentes';
 $string['status_desc'] = 'Activar o método de automatriculación nos novos cursos.';
 $string['status_help'] = 'Se está activado xunto con «Permitir novas matriculacións» desactivado, só os usuarios que se inscribiron previamente poden acceder ao curso. Se está desactivado, este método de automatriculación está efectivamente desactivado, xa que todas as automatriculacións existentes están suspendidas e os novos usuarios non poden matricularse.';
-$string['syncenrolmentstask'] = 'A automatriculación sincroniza a tarefa de inscrición';
+$string['syncenrolmentstask'] = 'Sincronizar a tarefa de automatriculación';
 $string['unenrol'] = 'Desmatricular o usuario';
 $string['unenrolselfconfirm'] = 'Confirma que quere desmatricularse a si mesmo do curso «{$a}»?';
 $string['unenroluser'] = 'Confirma que quere desmatricular a «{$a->user}» do curso «{$a->course}»?';

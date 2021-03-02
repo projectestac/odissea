@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio', language 'eu', version '3.8'.
  *
- * @package   portfolio
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -132,7 +132,7 @@ $string['leap2a_invalidentryfield'] = 'Existitzen ez den sarrera-eremu bat ezart
 $string['leap2a_invalidentryid'] = 'Sarrera batera existitzen ez den ID baten bidez sartzen saiatu zara ({$a})';
 $string['leap2a_missingfield'] = 'Beharrezkoa den {$a} Leap2A sarrera-eremua falta da';
 $string['leap2a_nonexistantlink'] = 'Leap2A sarre bat ({$a->from}) existitzen ez den ({$a->to}) sarrera bat estekatzen saiatu da {$a->rel}';
-$string['leap2a_overwritingselection'] = '({$a}) sarrera baten jatorrizko sarrera-mota selection-ra baliogabetzen make_selection-en';
+$string['leap2a_overwritingselection'] = '({$a}) sarrera baten jatorrizko sarrera mota selection-ra baliogabetzen make_selection-en';
 $string['leap2a_selflink'] = 'Leap2A sarrera bat  ({$a->id})  bera estekatzen saiatu da {$a->rel} erlazioarekin';
 $string['logs'] = 'Transferitu erregistroak';
 $string['logsummary'] = 'Aurreko transferentziak ondo egin dira';
@@ -157,7 +157,7 @@ $string['nologs'] = 'Ez dago erakusteko erregistrorik!';
 $string['nomultipleexports'] = 'Sentitzen dugu, baina portfolioaren helmugak ({$a->plugin}) ez ditu aldi bereko esportazioak onartzen. Mesedez <a href="{$a->link}">amaitu martxan dagoena</a> eta ondoren saiatu berriz ere';
 $string['nonprimative'] = 'Jatorrizkoa ez den balio bat callback argumentu gisa bidali da portfolio_add_button-ra. Jarraitzea ukatu da. Giltza {$a->key} zen eta balioa {$a->value} zen';
 $string['nopermissions'] = 'Sentitzen dugu baina ez dituzu beharrezko baimenak eremu honetatik fitxategiak esportatzeko';
-$string['notexportable'] = 'Sentitzen dugu, baina esportatu nahi duzun eduki-mota ez da esportatzeko modukoa';
+$string['notexportable'] = 'Sentitzen dugu, baina esportatu nahi duzun eduki mota ez da esportatzeko modukoa';
 $string['notimplemented'] = 'Sentitzen dugu, baina oraindik inplementatu gabeko formatuko edukiak esportatzen saiatzen ari zara ({$a})';
 $string['notyetselected'] = 'Aukeratu gabe';
 $string['notyours'] = 'Zurea ez den portfolio-esportatze batekin jarraitzen saiatzen ari zara!';

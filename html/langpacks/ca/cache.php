@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'ca', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -78,10 +78,10 @@ $string['component'] = 'Component';
 $string['confirmlockdeletion'] = 'Confirma la supressió del bloqueig';
 $string['confirmstoredeletion'] = 'Confirma la supressió del magatzem';
 $string['default_application'] = 'Magatzem d\'aplicació per defecte';
-$string['defaultmappings'] = 'Magatzems utilitzats quan no existeix mapatge';
-$string['defaultmappings_help'] = 'Aquests són els magatzems per defecte que s\'utilitzaran si no mapeu un o més magatzems a la definició de la memòria cau.';
 $string['default_request'] = 'Magatzem de sol·licituds per defecte';
 $string['default_session'] = 'Magatzem de sessions per defecte';
+$string['defaultmappings'] = 'Magatzems utilitzats quan no existeix mapatge';
+$string['defaultmappings_help'] = 'Aquests són els magatzems per defecte que s\'utilitzaran si no mapeu un o més magatzems a la definició de la memòria cau.';
 $string['defaultstoreactions'] = 'Els magatzems per defecte no es poden modificar';
 $string['definition'] = 'Definició';
 $string['definitionsummaries'] = 'Definicions conegudes de la memòria cau';
@@ -145,20 +145,20 @@ $string['sharing'] = 'S\'està compartint';
 $string['sharing_all'] = 'Tothom.';
 $string['sharing_help'] = 'Això us permet determinar la manera com les dades de la memòria cau es poden compartir si teniu una configuració en clúster, o si teniu múltiples llocs configurats amb el mateix magatzem i voleu compartir les dades. Aquesta és una opció avançada; assegureu-vos que enteneu el seu propòsit abans de canviar-la.';
 $string['sharing_input'] = 'Clau personalitzada (introduïda a continuació)';
+$string['sharing_siteid'] = 'Llocs amb la mateixa identificació de lloc.';
+$string['sharing_version'] = 'Llocs executant la mateixa versió.';
 $string['sharingrequired'] = 'Cal que seleccioneu almenys una opció de compartició.';
 $string['sharingselected_all'] = 'Tothom';
 $string['sharingselected_input'] = 'Clau personalitzada';
 $string['sharingselected_siteid'] = 'Identificador de lloc';
 $string['sharingselected_version'] = 'Versió';
-$string['sharing_siteid'] = 'Llocs amb la mateixa identificació de lloc.';
-$string['sharing_version'] = 'Llocs executant la mateixa versió.';
-$string['storeconfiguration'] = 'Configuració del magatzem';
 $string['store_default_application'] = 'Magatzem de fitxers per defecte per a la memòria cau d\'aplicacions';
 $string['store_default_request'] = 'Magatzem estàtic per defecte per a la memòria cau de sol·licituds';
 $string['store_default_session'] = 'Magatzem de sessions per defecte per a la memòria cau de sessions';
+$string['storeconfiguration'] = 'Configuració del magatzem';
 $string['storename'] = 'Nom del magatzem';
-$string['storenamealreadyused'] = 'Heu de triar un nom únic per a aquest magatzem.';
 $string['storename_help'] = 'Això defineix el nom del magatzem. S\'utilitza per a identificar el magatzem dins del sistema i pot constar únicament dels caràcters a-z A-Z 0-9 - _ i espais. Ha de ser únic, també. Si intenteu utilitzar un nom que ja ha estat utilitzat obtindreu un error.';
+$string['storenamealreadyused'] = 'Heu de triar un nom únic per a aquest magatzem.';
 $string['storenameinvalid'] = 'Nom de magatzem invàlid. Només podeu utilitzar a-z A-Z 0-9 - _ i espais.';
 $string['storenotready'] = 'El magatzem no està a punt';
 $string['storeperformance'] = 'Informes de rendiment del magatzem de memòria cau. {$a} sol·licituds úniques per operació.';

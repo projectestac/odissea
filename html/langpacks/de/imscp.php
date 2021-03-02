@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'imscp', language 'de', version '3.8'.
  *
- * @package   imscp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     imscp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,13 +32,13 @@ $string['deploymenterror'] = 'Fehler im IMS-Content!';
 $string['imscp:addinstance'] = 'Neuen IMS-Content hinzufügen';
 $string['imscp:view'] = 'IMS-Content sehen';
 $string['indicator:cognitivedepth'] = 'IMS Paket kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer IMS Content Package Ressource erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'IMS Paket kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die IMS Content Package Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer IMS Content Package Ressource erreicht hat.';
 $string['indicator:socialbreadth'] = 'IMS Paket sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer IMS-Paket-Ressource erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'IMS Paket sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die IMS-Paket-Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer IMS-Paket-Ressource erreicht hat.';
 $string['keepold'] = 'Pakete archivieren';
 $string['keepoldexplain'] = 'Wie viele Pakete sollen archiviert werden?';
 $string['modulename'] = 'IMS-Content';

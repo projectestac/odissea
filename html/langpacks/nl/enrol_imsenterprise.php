@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,31 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'nl', version '3.8'.
  *
- * @package   enrol_imsenterprise
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_imsenterprise
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'Als je instellingen bewaard zijn, wil je misschien';
 $string['allowunenrol'] = 'Laat IMS data toe om leraars en leerlingen <strong>af te melden</strong>';
-$string['allowunenrol_desc'] = '<p>Met de Enterprise data kun je zowel aanmeldingen toevoegen als verwijderen, zowel voor leerlingen als leraren. Als deze functie is ingeschakeld, dan kan Moodle zowel aanmelden als afmelden wanneer dit nodig is volgens het databestand.</p>
-
-<p>Met IMS data zijn er drie manieren om leerlingen af te melden bij een cursus:</p>
-
-<ul><li>Een &lt;member&gt; element die de leerling en cursus specifiëert, en met het "recstatus" attribute van het &lt;role&gt; element op 3 gezet (wat "verwijder" betekent). DIT WERKT NOG NIET IN MOODLE.</li>
-
-<li> Een &lt;member&gt; element dat de leerling en cursus specifieëert en met het  &lt;status&gt; element op 0 gezet (wat "niet actief" betekent).</li></ul>
-
-<p>De derde methode is lichtjes anders. Het activeren van deze config-instellingen is er niet voor nodig en kan op voorhand ingesteld worden met een datum voor afmelden bij de cursus:</p>
-
-<ul><li>Een &lt;member&gt; element dat een &lt;timeframe&gt; specifieëert voor de aanmelding kan begin- en/of einddata krijgen voor de aanmelding van deze leerling Deze data worden geladen in de enrolment data tabel van Moodle als die geïnstalleerd is, en zo zal een leerling na de einddatum niet langer een bepaalde cursus kunnen gebruiken.</li></ul>';
+$string['allowunenrol_desc'] = 'Indien ingeschakeld, zullen aanmeldingen in cursussen verwijderd worden wanneer dit opgegeven is in de Enterprise Data';
 $string['basicsettings'] = 'Basisinstellingen';
 $string['categoryidnumber'] = 'Categorie ID-nummer toestaan';
 $string['categoryidnumber_desc'] = 'Indien ingeschakeld zal IMS Enterprice een categorie maken met een ID-nummer';

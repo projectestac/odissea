@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'pt', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -46,7 +46,7 @@ $string['clievaluationandpredictions'] = 'Uma tarefa agendada interage através 
 $string['clievaluationandpredictionsnoadmin'] = 'Uma tarefa agendada interage através de modelos ativos e obtém previsões. A avaliação de modelos através da interface web está desativada. Pode ser ativada por um administrador do site.';
 $string['component'] = 'Componente';
 $string['componentcore'] = 'Core';
-$string['componentselect'] = 'Selecionar todos os modelos fornecidos pelo componente \'{$a}\'';
+$string['componentselect'] = 'Selecionar todos os modelos fornecidos pela componente \'{$a}\'';
 $string['componentselectnone'] = 'Desselecionar todos';
 $string['contexts'] = 'Contextos';
 $string['contexts_help'] = 'O modelo será limitado a este conjunto de contextos. Nenhuma restrição de contexto será aplicada se nenhum contexto for selecionado.';
@@ -70,16 +70,16 @@ $string['evaluate'] = 'Avaliação';
 $string['evaluatemodel'] = 'Modelo de avaliação';
 $string['evaluationinbatches'] = 'O conteúdo do site é calculado e armazenado em lotes. O processo de avaliação pode ser interrompido a qualquer momento. Na próxima vez que for executado, continuará a partir do ponto em que foi interrompido.';
 $string['evaluationmode'] = 'Modo experimental';
-$string['evaluationmodecolconfiguration'] = 'Configuração';
-$string['evaluationmodecoltrainedmodel'] = 'Modelo experimentado';
-$string['evaluationmodeconfiguration'] = 'Configuração da avaliação do modelo';
 $string['evaluationmode_help'] = 'Existem dois modos de avaliação:
 
 * Modelo experimentado - Os dados do site são usados como dados de teste para avaliar a precisão do modelo.
 * Configuração - Os dados do site são divididos em dados de treino e de teste, para treinar e testar a precisão da configuração do modelo.
 
 A opção \'modelo experimentado\' só está disponível se um modelo experimentado foi importado para o site mas ainda não foi treinado com dados do site.';
-$string['evaluationmodeinfo'] = 'Este modelo foi importado para o site. Pode avaliar o desempenho do modelo ou avaliar o desempenho da configuração do modelo usando dados do site.';
+$string['evaluationmodecolconfiguration'] = 'Configuração';
+$string['evaluationmodecoltrainedmodel'] = 'Modelo experimentado';
+$string['evaluationmodeconfiguration'] = 'Configuração da avaliação do modelo';
+$string['evaluationmodeinfo'] = 'Este modelo foi importado para este site. Pode avaliar o desempenho do modelo ou avaliar o desempenho da configuração do modelo usando dados do site.';
 $string['evaluationmodetrainedmodel'] = 'Avaliar o modelo experimentado';
 $string['executescheduledanalysis'] = 'Executar análises agendadas';
 $string['export'] = 'Exportar';
@@ -91,7 +91,7 @@ $string['generalerror'] = 'Erro na avaliação. Código de estado {$a}';
 $string['getpredictions'] = 'Obter previsões';
 $string['goodmodel'] = 'Este é um bom modelo para obter previsões. Ative-o para começar a obter previsões.';
 $string['ignoreversionmismatches'] = 'Ignorar versões incompatíveis';
-$string['ignoreversionmismatchescheckbox'] = 'Ignorar as diferenças entre esta versão do site e a versão original do site.';
+$string['ignoreversionmismatchescheckbox'] = 'Ignorar as diferenças entre esta versão e a versão original do site.';
 $string['importedsuccessfully'] = 'O modelo foi importado com sucesso.';
 $string['importmodel'] = 'Importar modelo';
 $string['indicators'] = 'Indicadores';
@@ -150,7 +150,7 @@ $string['trainandpredictmodel'] = 'A experimentar o modelo e a calcular previsõ
 $string['trainingprocessfinished'] = 'Processo de treino finalizado';
 $string['trainingresults'] = 'Resultados do treino';
 $string['trainmodels'] = 'Modelos de treino';
-$string['versionnotsame'] = 'O ficheiro importado era de uma versão do Moodle ({$a->importedversion}) diferente da atual ({$a->version})';
+$string['versionnotsame'] = 'O ficheiro importado era de uma versão diferente ({$a->importedversion}) da atual ({$a->version})';
 $string['viewlog'] = 'Registo da avaliação';
 $string['weeksenddateautomaticallyset'] = 'Data de fim definida automaticamente com base na data de início e no número de seções';
 $string['weeksenddatedefault'] = 'Data de fim calculada automaticamente a partir da data de início da disciplina.';

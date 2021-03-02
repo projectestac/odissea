@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_gapselect', language 'pt', version '3.8'.
  *
- * @package   qtype_gapselect
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_gapselect
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,9 +39,9 @@ $string['errorquestiontextblank'] = 'Deverá inserir algum texto da pergunta.';
 $string['group'] = 'Grupo';
 $string['pleaseputananswerineachbox'] = 'Por favor, coloque uma resposta em cada caixa.';
 $string['pluginname'] = 'Selecionar palavras em falta';
+$string['pluginname_help'] = 'As perguntas do tipo Selecionar palavras em falta exige que os alunos selecionem opções a partir de listas pendentes. [[1]], [[2]], [[3]], ... são utilizados como espaços reservados no texto da pergunta, com as respostas corretas especificadas como opções de resposta 1, 2, 3, ... respetivamente. Caso pretenda aumentar o grau de dificuldade da pergunta deverá adicionar opções de resposta extra. As opções de resposta poderão ser agrupadas para restringir as opções disponíveis em cada lista pendente de seleção.';
 $string['pluginnameadding'] = 'Adicionar pergunta do tipo selecionar palavras em falta';
 $string['pluginnameediting'] = 'Editar pergunta do tipo selecionar palavras em falta';
-$string['pluginname_help'] = 'As perguntas do tipo Selecionar palavras em falta exige que os alunos selecionem opções a partir de listas pendentes. [[1]], [[2]], [[3]], ... são utilizados como espaços reservados no texto da pergunta, com as respostas corretas especificadas como opções de resposta 1, 2, 3, ... respetivamente. Caso pretenda aumentar o grau de dificuldade da pergunta deverá adicionar opções de resposta extra. As opções de resposta poderão ser agrupadas para restringir as opções disponíveis em cada lista pendente de seleção.';
 $string['pluginnamesummary'] = 'As palavras em falta no texto de uma pergunta são preenchidas através de listas pendentes.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Selecionar palavras em falta não armazena dados pessoais.';
 $string['shuffle'] = 'Baralhar';

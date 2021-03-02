@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'el', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,10 @@ $string['char_limitui_parenthesis_start'] = '⦗';
 $string['choice'] = 'Επιλογή';
 $string['choicegroup:addinstance'] = 'Προσθήκη νέας δραστηριότητας επιλογής ομάδας';
 $string['choicegroup:choose'] = 'Καταγραφή μιας επιλογής';
-$string['choicegroupclose'] = 'Έως';
 $string['choicegroup:deleteresponses'] = 'Διαγραφή αποκρίσεων';
 $string['choicegroup:downloadresponses'] = 'Λήψη αποκρίσεων';
+$string['choicegroup:readresponses'] = 'Ανάγνωση αποκρίσεων';
+$string['choicegroupclose'] = 'Έως';
 $string['choicegroupfull'] = 'Αυτή η επιλογή ομάδας είναι γεμάτη και δεν υπάρχουν διαθέσιμες θέσεις.';
 $string['choicegroupname'] = 'Όνομα επιλογής ομάδας';
 $string['choicegroupopen'] = 'Άνοιγμα';
@@ -59,7 +60,6 @@ $string['choicegroupoptions_help'] = 'Εδώ ορίζετε τις επιλογ�
 Οι επιλεγμένες ομάδες εμφανίζονται στη λίστα στα δεξιά.
 
 Για να καταργήσετε οποιεσδήποτε ομάδες από τις επιλεγμένες, επιλέξτε τις από τη λίστα στα δεξιά και κάντε κλικ στο «Κατάργηση».';
-$string['choicegroup:readresponses'] = 'Ανάγνωση αποκρίσεων';
 $string['choicegroupsaved'] = 'Η επιλογή σας αποθηκεύτηκε.';
 $string['choicetext'] = 'Κείμενο επιλογής';
 $string['chooseaction'] = 'Επιλέξτε μια ενέργεια ...';
@@ -74,8 +74,8 @@ $string['del_groups'] = 'Διαγραφή ομάδων';
 $string['displayhorizontal'] = 'Εμφάνιση οριζόντια';
 $string['displaymode'] = 'Τρόπος εμφάνισης';
 $string['displayvertical'] = 'Εμφάνιση κάθετα';
-$string['double_click_grouping_legend'] = 'Κάντε διπλό κλικ σε μια ομαδοποίηση για να την αναπτύξετε / συμπτύξετε ξεχωριστά.';
 $string['double_click_group_legend'] = 'Κάντε διπλό κλικ σε μια ομάδα για να την προσθέσετε.';
+$string['double_click_grouping_legend'] = 'Κάντε διπλό κλικ σε μια ομαδοποίηση για να την αναπτύξετε / συμπτύξετε ξεχωριστά.';
 $string['event:answered'] = 'Η επιλογή έγινε';
 $string['event:removed'] = 'Η επιλογή διαγράφηκε';
 $string['event:reportviewed'] = 'Η αναφορά εμφανίστηκε';

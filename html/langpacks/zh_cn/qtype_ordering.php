@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ordering', language 'zh_cn', version '3.8'.
  *
- * @package   qtype_ordering
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ordering
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,9 @@ $string['noresponsedetails'] = '对不起，没有关于这个问题的回答的
 $string['noscore'] = '没有分数';
 $string['notenoughanswers'] = '排序题目必须有多于{$a}个答案。';
 $string['pluginname'] = '排序题';
+$string['pluginname_help'] = '有几个项目以混乱的顺序显示。这些项目可以被拖到一个有意义的顺序中。';
 $string['pluginnameadding'] = '添加一个排序题';
 $string['pluginnameediting'] = '编辑一个排序题';
-$string['pluginname_help'] = '有几个项目以混乱的顺序显示。这些项目可以被拖到一个有意义的顺序中。';
 $string['pluginnamesummary'] = '把顺序混乱的项目进行有意义的排序';
 $string['relativeallpreviousandnext'] = '相对于之前的和以后的项目';
 $string['relativenextexcludelast'] = '相对于下一项(不包括最后一项)';

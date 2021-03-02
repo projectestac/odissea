@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,17 +12,25 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'antivirus', language 'sv', version '3.8'.
  *
- * @package   antivirus
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     antivirus
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['emailsubject'] = '{$a} :: Clam AV meddelande';
-$string['virusfounduser'] = 'Den fil som Du laddade upp med namnet, {$a->filename}, har skannats med ett antivirusprogram och det visade sig att den innehöll ett virus! Din fil laddades INTE upp på rätt sätt.';
+$string['actantivirushdr'] = 'Tillgängliga Antivirus-plugins';
+$string['antiviruses'] = 'Antivirus-plugins';
+$string['antivirussettings'] = 'Hantera Antivirus-plugins';
+$string['configantivirusplugins'] = 'Vänligen välj de antivirus-plugins du vill använda och arrangera dem i den ordning du vill att de ska tillämpas.';
+$string['datastream'] = 'Data';
+$string['emailsubject'] = '{$a} :: Antivirusnotis';
+$string['privacy:metadata'] = 'Antivirussystemet lagrar inga personliga data.';
+$string['virusfound'] = '{$a->item} har sökts igenom av antivirusprogrammet och har konstaterats vara infekterad!';
+$string['virusfounduser'] = 'Den fil som du laddade upp med namnet, {$a->filename}, har skannats med ett antivirusprogram och det visade sig att den innehöll ett virus! Din fil laddades INTE upp på rätt sätt.';

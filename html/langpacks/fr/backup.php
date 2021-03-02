@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'fr', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -117,6 +117,12 @@ $string['choosefilefromcoursebackup'] = 'Zone de sauvegarde de cours';
 $string['choosefilefromcoursebackup_help'] = 'Les sauvegardes de cours effectuées avec les réglages par défaut sont enregistrées ici.';
 $string['choosefilefromuserbackup'] = 'Zone de sauvegarde privée';
 $string['choosefilefromuserbackup_help'] = 'Les sauvegardes effectuées avec l\'option d\'anonymisation des utilisateurs sont enregistrées ici.';
+$string['config_keep_groups_and_groupings'] = 'Conserver par défaut les groupes et groupements actuels.';
+$string['config_keep_roles_and_enrolments'] = 'Conserver par défaut les rôles et inscriptions actuels.';
+$string['config_overwrite_conf'] = 'Permet à l\'utilisateur d\'écraser la configuration du cours actuel.';
+$string['config_overwrite_course_fullname'] = 'Par défaut, remplacer le nom complet du cours avec celui indiqué dans le fichier de sauvegarde. Ce réglage requiert l\'activation de « Écraser la configuration du cours ». L\'utilisateur doit avoir en outre la capacité de modifier le nom complet du cours (moodle/course:changefullname)';
+$string['config_overwrite_course_shortname'] = 'Par défaut, remplacer le nom abrégé du cours avec celui indiqué dans le fichier de sauvegarde. Ce réglage requiert l\'activation de « Écraser la configuration du cours ». L\'utilisateur doit avoir en outre la capacité de modifier le nom abrégé du cours (moodle/course:changeshortname)';
+$string['config_overwrite_course_startdate'] = 'Par défaut, remplacer la date de début du cours avec celle indiquée dans le fichier de sauvegarde. Ce réglage requiert l\'activation de « Écraser la configuration du cours ». L\'utilisateur doit avoir en outre la capacité de décaler les dates du cours (moodle/restore:rolldates)';
 $string['configgeneralactivities'] = 'Détermine le réglage par défaut pour l\'inclusion des activités dans les sauvegardes.';
 $string['configgeneralanonymize'] = 'Détermine le réglage par défaut pour l\'anonymisation dans les sauvegardes de toutes les données relatives aux utilisateurs';
 $string['configgeneralbadges'] = 'Si ce réglage est activé, les badges seront inclus dans les sauvegardes.';
@@ -134,13 +140,7 @@ Remarque : la désactivation de ce réglage empêchera la sauvegarde des activi
 $string['configgeneralroleassignments'] = 'Détermine le réglage par défaut pour l\'inclusion des attributions de rôles dans les sauvegardes';
 $string['configgeneralusers'] = 'Détermine le réglage par défaut pour l\'inclusion des utilisateurs dans les sauvegardes';
 $string['configgeneraluserscompletion'] = 'Détermine le réglage par défaut pour l\'inclusion des informations d\'achèvement d\'activité dans les sauvegardes';
-$string['config_keep_groups_and_groupings'] = 'Conserver par défaut les groupes et groupements actuels.';
-$string['config_keep_roles_and_enrolments'] = 'Conserver par défaut les rôles et inscriptions actuels.';
 $string['configloglifetime'] = 'Cette valeur spécifie la durée pendant laquelle vous voulez conserver les journaux des sauvegardes. Les journaux plus anciens seront supprimés automatiquement. Il est recommandé d\'indiquer une valeur faible, car les informations stockées dans ces journaux peuvent être énormes.';
-$string['config_overwrite_conf'] = 'Permet à l\'utilisateur d\'écraser la configuration du cours actuel.';
-$string['config_overwrite_course_fullname'] = 'Par défaut, remplacer le nom complet du cours avec celui indiqué dans le fichier de sauvegarde. Ce réglage requiert l\'activation de « Écraser la configuration du cours ». L\'utilisateur doit avoir en outre la capacité de modifier le nom complet du cours (moodle/course:changefullname)';
-$string['config_overwrite_course_shortname'] = 'Par défaut, remplacer le nom abrégé du cours avec celui indiqué dans le fichier de sauvegarde. Ce réglage requiert l\'activation de « Écraser la configuration du cours ». L\'utilisateur doit avoir en outre la capacité de modifier le nom abrégé du cours (moodle/course:changeshortname)';
-$string['config_overwrite_course_startdate'] = 'Par défaut, remplacer la date de début du cours avec celle indiquée dans le fichier de sauvegarde. Ce réglage requiert l\'activation de « Écraser la configuration du cours ». L\'utilisateur doit avoir en outre la capacité de décaler les dates du cours (moodle/restore:rolldates)';
 $string['configrestoreactivities'] = 'Détermine le réglage par défaut pour la restauration des activités.';
 $string['configrestorebadges'] = 'Détermine le réglage par défaut pour la restauration des badges.';
 $string['configrestoreblocks'] = 'Détermine le réglage par défaut pour la restauration des blocs.';
@@ -177,8 +177,8 @@ $string['enableasyncbackup'] = 'Activer les sauvegardes asynchrones';
 $string['enableasyncbackup_help'] = 'Si ce réglage est activé, toutes les opérations de sauvegarde et de restauration seront effectuées de manière asynchrone. Ceci n\'impacte pas les importations et exportations. Les sauvegardes et restaurations asynchrones permettent aux utilisateurs d\'effectuer d\'autres opérations pendant qu\'une sauvegarde ou une restauration est en cours.';
 $string['enterasearch'] = 'Saisir une expression à rechercher';
 $string['error_block_for_module_not_found'] = 'Instance de bloc orpheline (id : {$a->bid}) trouvée dans un module de cours (id : {$a->mid}). Ce bloc ne sera pas sauvegardé.';
-$string['errorcopyingbackupfile'] = 'Échec de copie du fichier de sauvegarde vers le dossier temporaire avant restauration.';
 $string['error_course_module_not_found'] = 'Module de cours orphelin (id : {$a}) détecté. Ce module ne sera pas sauvegardé.';
+$string['errorcopyingbackupfile'] = 'Échec de copie du fichier de sauvegarde vers le dossier temporaire avant restauration.';
 $string['errorfilenamemustbezip'] = 'Le fichier doit être un fichier au format ZIP et son nom doit avoir l\'extension .mbz';
 $string['errorfilenamerequired'] = 'Veuillez saisir un nom de fichier valide pour cette sauvegarde';
 $string['errorfilenametoolong'] = 'Le nom du fichier ne doit pas dépasser 255 caractères.';
@@ -271,14 +271,14 @@ $string['pendingasyncerror'] = 'Sauvegarde de cette ressource en attente';
 $string['preparingdata'] = 'Préparation des données';
 $string['preparingui'] = 'Préparation de l\'affichage de la page';
 $string['previousstage'] = 'Étape précédente';
+$string['privacy:metadata:backup:detailsofarchive'] = 'Cette archive contient diverses données en lien avec un cours, telles que notes, inscriptions d\'utilisateurs et données d\'activités.';
+$string['privacy:metadata:backup:externalpurpose'] = 'La finalité de cette archive est d\'enregistrer des informations en lien avec un cours, qui pourra être restauré ultérieurement.';
 $string['privacy:metadata:backup_controllers'] = 'La liste des opérations de sauvegarde';
 $string['privacy:metadata:backup_controllers:itemid'] = 'L\'identifiant du cours';
 $string['privacy:metadata:backup_controllers:operation'] = 'L\'opération qui a été effectuée, par exemple restauration.';
 $string['privacy:metadata:backup_controllers:timecreated'] = 'La date à laquelle l\'action a été créée';
 $string['privacy:metadata:backup_controllers:timemodified'] = 'L\'heure à laquelle l\'action a été modifiée';
 $string['privacy:metadata:backup_controllers:type'] = 'Le type de l\'élément sur lequel l\'opération est effectuée, par exemple l\'activité.';
-$string['privacy:metadata:backup:detailsofarchive'] = 'Cette archive contient diverses données en lien avec un cours, telles que notes, inscriptions d\'utilisateurs et données d\'activités.';
-$string['privacy:metadata:backup:externalpurpose'] = 'La finalité de cette archive est d\'enregistrer des informations en lien avec un cours, qui pourra être restauré ultérieurement.';
 $string['qcategory2coursefallback'] = 'La catégorie de questions « {$a->name} », située dans le contexte de catégorie system/course dans le fichier de sauvegarde, sera créée dans le contexte du cours durant la restauration';
 $string['qcategorycannotberestored'] = 'La catégorie de questions « {$a->name} » ne peut pas être créée durant la restauration';
 $string['question2coursefallback'] = 'La catégorie de questions « {$a->name} », située dans le contexte de catégorie system/course dans le fichier de sauvegarde, sera créée dans le contexte du cours durant la restauration';

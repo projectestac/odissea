@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'plugin', language 'it', version '3.8'.
  *
- * @package   plugin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     plugin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,7 +52,7 @@ $string['err_response_curl'] = 'Non è stato possibile ottenere i dati sugli agg
 $string['err_response_format_version'] = 'Formato del response inatteso. Per favore prova a ricontrollare la disponibilità di aggiornamenti';
 $string['err_response_http_code'] = 'Non è stato possibile ottenere i dati sugli aggiornamenti - response HTTP inatteso.';
 $string['filterall'] = 'Visualizza tutto';
-$string['filtercontribonly'] = 'Visualizza solo plugin aggiuntivi';
+$string['filtercontribonly'] = 'Visualizza solo i plugin aggiuntivi';
 $string['filterupdatesonly'] = 'Visualizza solo plugin aggiornabili';
 $string['isenabled'] = 'Abilita';
 $string['misdepinfoplugin'] = 'Informazioni plugin';
@@ -131,8 +131,8 @@ $string['type_editor_plural'] = 'Editor';
 $string['type_enrol'] = 'Metodo di iscrizione';
 $string['type_enrol_plural'] = 'Metodi di iscrizione';
 $string['type_fileconverter'] = 'Convertitori di documenti';
-$string['type_fileconvertermanage'] = 'Gestione convertitori di documenti';
 $string['type_fileconverter_plural'] = 'Convertitori di documenti';
+$string['type_fileconvertermanage'] = 'Gestione convertitori di documenti';
 $string['type_filter'] = 'Filtro';
 $string['type_filter_plural'] = 'Filtro Tex';
 $string['type_format'] = 'Formato corso';
@@ -209,10 +209,6 @@ $string['validationmsg_filesnumber'] = 'Nel pacchetto non è presente un numero 
 $string['validationmsg_filestatus'] = 'Non è possibile estrarre tutti i file';
 $string['validationmsg_filestatus_info'] = 'Il tentativo di estrarre il file {$a->file} ha generato l\'errore \'{$a->status}\'.';
 $string['validationmsg_foundlangfile'] = 'Trovato file della lingua';
-$string['validationmsglevel_debug'] = 'Debug';
-$string['validationmsglevel_error'] = 'Errore';
-$string['validationmsglevel_info'] = 'OK';
-$string['validationmsglevel_warning'] = 'Attenzione';
 $string['validationmsg_maturity'] = 'Maturity level dichiarato';
 $string['validationmsg_maturity_help'] = 'Il plugin può dichiarare il proprio maturity level. Se il maintainer ritiene il plugin stabile, il maturity level sarà MATURITY_STABLE. Tutti gli altri maturity level dichiarati (ad esempio, alpha o beta)  saranno considerati non stabili e sarà visualizzato un avviso.';
 $string['validationmsg_missingcomponent'] = 'Il plugin non dichiara il nome del componente';
@@ -240,6 +236,10 @@ $string['validationmsg_targetexists_help'] = 'La cartella dove installare il plu
 $string['validationmsg_targetnotdir'] = 'La destinazione è occupata da un file';
 $string['validationmsg_unknowntype'] = 'Tipo plugin sconosciuto';
 $string['validationmsg_versionphpsyntax'] = 'E\' stata rilevata una sintassi non supportata nel file version.php';
+$string['validationmsglevel_debug'] = 'Debug';
+$string['validationmsglevel_error'] = 'Errore';
+$string['validationmsglevel_info'] = 'OK';
+$string['validationmsglevel_warning'] = 'Attenzione';
 $string['version'] = 'Versione';
 $string['versiondb'] = 'Versione attuale';
 $string['versiondisk'] = 'Nuova versione';

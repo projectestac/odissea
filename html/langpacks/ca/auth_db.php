@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_db', language 'ca', version '3.8'.
  *
- * @package   auth_db
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_db
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,7 +34,7 @@ $string['auth_dbdeleteusererror'] = 'S\'ha produït un error en suprimir l\'usua
 $string['auth_dbdescription'] = 'Aquest mètode utilitza una taula d\'una base de dades externa per comprovar si un nom d\'usuari i una contrasenya són vàlids. Si el compte és nou, aleshores també es pot copiar a Moodle informació d\'altres camps.';
 $string['auth_dbextencoding'] = 'Codificació de la base de dades externa';
 $string['auth_dbextencodinghelp'] = 'Codificació utilitzada per la base de dades externa';
-$string['auth_dbextrafields'] = 'Aquests camps són opcionals. Podeu triar d\'emplenar alguns camps d\'usuari de Moodle amb informació dels <b>camps de la base de dades externa</b> especificats aquí. <p>Si els deixeu en blanc, s\'utilitzaran valors per defecte.<p>En tot cas, l\'usuari podrà editar tots aquests camps quan es connecti.';
+$string['auth_dbextrafields'] = 'Aquests camps són opcionals. Podeu triar d\'emplenar alguns camps d\'usuari del Moodle amb informació dels <b>camps de la base de dades externa</b> especificats aquí. <p>Si els deixeu en blanc, s\'utilitzaran els valors per defecte.</p><p>En tot cas, l\'usuari podrà editar tots aquests camps quan es connecti.</p>';
 $string['auth_dbfieldpass'] = 'Nom del camp que conté la contrasenya';
 $string['auth_dbfieldpass_key'] = 'Camp de la contrasenya';
 $string['auth_dbfielduser'] = 'Nom del camp que conté el nom d\'usuari';

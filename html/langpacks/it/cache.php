@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'it', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,18 +41,19 @@ $string['cachedef_capabilities'] = 'Elenco privilegi del sistema';
 $string['cachedef_completion'] = 'Stato di completamento attività';
 $string['cachedef_config'] = 'Impostazioni di configurazione';
 $string['cachedef_contextwithinsights'] = 'Contesti con considerazioni';
+$string['cachedef_course_user_dates'] = 'Date visualizzate agli utenti nei corsi con date relative';
 $string['cachedef_coursecat'] = 'Elenchi di categorie di corso per un utente specifico';
 $string['cachedef_coursecatrecords'] = 'Record delle categorie di corso';
 $string['cachedef_coursecattree'] = 'Alberatura delle categorie di corso';
 $string['cachedef_coursecompletion'] = 'Stati di completamento corso';
 $string['cachedef_coursecontacts'] = 'Elenco dei gestori dei corsi';
 $string['cachedef_coursemodinfo'] = 'Informazioni accumulate sui moduli e delle sezioni di ciascun corso';
-$string['cachedef_course_user_dates'] = 'Date visualizzate agli utenti nei corsi con date relative';
 $string['cachedef_databasemeta'] = 'Meta informazioni database';
 $string['cachedef_eventinvalidation'] = 'Invalidazione eventi';
 $string['cachedef_externalbadges'] = 'Badge esterni per utente specifico';
 $string['cachedef_fontawesomeiconmapping'] = 'Mappatura icone del font awesone';
-$string['cachedef_grade_categories'] = 'Query sulle categorie di valutazioni';
+$string['cachedef_grade_categories'] = 'Query delle categorie di valutazioni';
+$string['cachedef_grade_letters'] = 'Query delle valutazioni letterali';
 $string['cachedef_groupdata'] = 'Informazioni sui gruppi dei corsi';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier . contenuto ripulito';
 $string['cachedef_langmenu'] = 'Elenco delle lingue disponibili';
@@ -86,10 +87,10 @@ $string['component'] = 'Componente';
 $string['confirmlockdeletion'] = 'Conferma eliminazione lock';
 $string['confirmstoredeletion'] = 'Conferma eliminazione store';
 $string['default_application'] = 'Application store di default';
-$string['defaultmappings'] = 'Store da usare in assenza di mappatura';
-$string['defaultmappings_help'] = 'Gli store di defaulr utilizzati nel caso in cui non vengano mappati store nella definizione della cache.';
 $string['default_request'] = 'Request store di default';
 $string['default_session'] = 'Session store di default';
+$string['defaultmappings'] = 'Store da usare in assenza di mappatura';
+$string['defaultmappings_help'] = 'Gli store di defaulr utilizzati nel caso in cui non vengano mappati store nella definizione della cache.';
 $string['defaultstoreactions'] = 'Non è possibile modificare gli store di default';
 $string['definition'] = 'Definizioni';
 $string['definitionsummaries'] = 'Definizioni cache note';
@@ -157,20 +158,20 @@ $string['sharing'] = 'Condivsione';
 $string['sharing_all'] = 'Tutti.';
 $string['sharing_help'] = 'Consente di configurare la condivisione dei dati della cache, utile per un sito in cluster oppure per più siti che condividono lo stesso store. Si tratta di un\'impostazione avanzata, se non si è più che sicuri del significato dell\'impostazione, evitare di modificarla.';
 $string['sharing_input'] = 'Chiave personalizzata (da inserire sotto)';
+$string['sharing_siteid'] = 'Siti con stesso site identifier';
+$string['sharing_version'] = 'Siti con la stessa versione';
 $string['sharingrequired'] = 'Devi scegliere almeno un\'opzione di condivisione';
 $string['sharingselected_all'] = 'Tutti.';
 $string['sharingselected_input'] = 'Chiave personalizzata';
 $string['sharingselected_siteid'] = 'Identificativo del sito';
 $string['sharingselected_version'] = 'Versione';
-$string['sharing_siteid'] = 'Siti con stesso site identifier';
-$string['sharing_version'] = 'Siti con la stessa versione';
-$string['storeconfiguration'] = 'Configurazione store';
 $string['store_default_application'] = 'File store di default per application cache';
 $string['store_default_request'] = 'Static store di default per request cache';
 $string['store_default_session'] = 'Session store di default per session cache';
+$string['storeconfiguration'] = 'Configurazione store';
 $string['storename'] = 'Nome store';
-$string['storenamealreadyused'] = 'E\' necessario usare un nome univoco per gli store';
 $string['storename_help'] = 'Imposta il nome utilizzato per identificare lo store all\'interno del sistema. Il nome può contenere i caratteri a-z A-Z 0-9 -_ e spazi bianchi e deve essere univoco. Impostando un nome già esistente si verificherà un errore.';
+$string['storenamealreadyused'] = 'E\' necessario usare un nome univoco per gli store';
 $string['storenameinvalid'] = 'Il nome dello store non è valido. E\' possibile usare solamente  a-z A-Z 0-9 -_ e spazi bianchi numeri';
 $string['storenotready'] = 'Store non pronto';
 $string['storeperformance'] = 'Report delle prestazioni cache store - {$a} unique request per operazione.';

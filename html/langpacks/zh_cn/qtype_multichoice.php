@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multichoice', language 'zh_cn', version '3.8'.
  *
- * @package   qtype_multichoice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multichoice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,10 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['answerhowmany'] = '一个还是多个答案？';
 $string['answernumbering'] = '对选项编号？';
 $string['answernumbering123'] = '1., 2., 3., ...';
-$string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
-$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
+$string['answernumberingabc'] = 'a., b., c., ...';
+$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingnone'] = '不编号';
 $string['answersingleno'] = '允许多个正确答案';
 $string['answersingleyes'] = '只有一个正确答案';
@@ -59,9 +59,9 @@ $string['partiallycorrectfeedback'] = '针对部分正确答案';
 $string['pleaseselectananswer'] = '请选择一个答案。';
 $string['pleaseselectatleastoneanswer'] = '请选择至少一个答案。';
 $string['pluginname'] = '选择题';
+$string['pluginname_help'] = '从多个选项中做选择来回答问题，题目中可以包含图片。有两种选择题——单项选择和多项选择。';
 $string['pluginnameadding'] = '添加一道选择题';
 $string['pluginnameediting'] = '编辑一道选择题';
-$string['pluginname_help'] = '从多个选项中做选择来回答问题，题目中可以包含图片。有两种选择题——单项选择和多项选择。';
 $string['pluginnamesummary'] = '从预先定义的选项中选择一个或多个做为答案。';
 $string['selectmulti'] = '选择一项或多项：';
 $string['selectone'] = '选择一项：';

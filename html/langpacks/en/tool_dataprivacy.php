@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_dataprivacy', language 'en', version '3.8'.
  *
- * @package   tool_dataprivacy
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_dataprivacy
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,10 +45,10 @@ $string['cannotreset'] = 'Unable to reset this request. Only rejected requests c
 $string['categories'] = 'Categories';
 $string['categorieslist'] = 'List of data categories';
 $string['category'] = 'Category';
+$string['category_help'] = 'A category in the data registry describes a type of data. A new category may be added, or if Inherit is selected, the data category from a higher context is applied. Contexts are (from low to high): Blocks > Activity modules > Courses > Course categories > Site.';
 $string['categorycreated'] = 'Category created';
 $string['categorydefault'] = 'Default category';
 $string['categorydefault_help'] = 'The default category is the data category applied to any new instances. If Inherit is selected, the data category from a higher context is applied. Contexts are (from low to high): Blocks > Activity modules > Courses > Course categories > User > Site.';
-$string['category_help'] = 'A category in the data registry describes a type of data. A new category may be added, or if Inherit is selected, the data category from a higher context is applied. Contexts are (from low to high): Blocks > Activity modules > Courses > Course categories > Site.';
 $string['categoryupdated'] = 'Category updated';
 $string['close'] = 'Close';
 $string['compliant'] = 'Compliant';
@@ -249,10 +249,10 @@ $string['privacyrequestexpiry_desc'] = 'The time that approved data requests wil
 $string['protected'] = 'Protected';
 $string['protectedlabel'] = 'The retention of this data has a higher legal precedent over a user\'s request to be forgotten. This data will only be deleted after the retention period has expired.';
 $string['purpose'] = 'Purpose';
+$string['purpose_help'] = 'The purpose describes the reason for processing the data. A new purpose may be added, or if Inherit is selected, the purpose from a higher context is applied. Contexts are (from low to high): Blocks > Activity modules > Courses > Course categories > User > Site.';
 $string['purposecreated'] = 'Purpose created';
 $string['purposedefault'] = 'Default purpose';
 $string['purposedefault_help'] = 'The default purpose is the purpose which is applied to any new instances. If Inherit is selected, the purpose from a higher context is applied. Contexts are (from low to high): Blocks > Activity modules > Courses > Course categories > User > Site.';
-$string['purpose_help'] = 'The purpose describes the reason for processing the data. A new purpose may be added, or if Inherit is selected, the purpose from a higher context is applied. Contexts are (from low to high): Blocks > Activity modules > Courses > Course categories > User > Site.';
 $string['purposeoverview'] = 'A purpose describes the intended use and retention policy for stored data. The basis for storing and retaining that data is also described in the purpose.';
 $string['purposes'] = 'Purposes';
 $string['purposeslist'] = 'List of data purposes';
@@ -275,11 +275,11 @@ $string['requestsdenied'] = 'The requests have been denied';
 $string['requeststatus'] = 'Status';
 $string['requestsubmitted'] = 'Your request has been submitted to the privacy officer';
 $string['requesttype'] = 'Type';
+$string['requesttype_help'] = 'Select the reason for contacting the privacy officer. Be aware that deletion of all personal  data will result in you no longer being able to log in to the site.';
 $string['requesttypedelete'] = 'Delete all of my personal data';
 $string['requesttypedeleteshort'] = 'Delete';
 $string['requesttypeexport'] = 'Export all of my personal data';
 $string['requesttypeexportshort'] = 'Export';
-$string['requesttype_help'] = 'Select the reason for contacting the privacy officer. Be aware that deletion of all personal  data will result in you no longer being able to log in to the site.';
 $string['requesttypeothers'] = 'General inquiry';
 $string['requesttypeothersshort'] = 'Message';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';

@@ -204,6 +204,17 @@ function xmldb_jclic_upgrade($oldversion) {
         upgrade_mod_savepoint(true, 2018112000, 'jclic');
     }
 
+    if ($oldversion < 2020110400) {
+
+        // Set the max length of 'lang' field to 30 characters
+        // Solves #12
+        $table = new xmldb_table('jclic');
+        $field = new xmldb_field('lang', XMLDB_TYPE_CHAR, '30');
+        $dbman->change_field_precision($table, $field);
+
+        upgrade_mod_savepoint(true, 2020110400, 'jclic');        
+    }
+
     // Final return of upgrade result (true, all went good) to Moodle.
     return true;
 }

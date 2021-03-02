@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'it', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,10 @@ $string['char_limitui_parenthesis_start'] = '(';
 $string['choice'] = 'Scelta';
 $string['choicegroup:addinstance'] = 'Aggiungi attività Scelta gruppo';
 $string['choicegroup:choose'] = 'Memorizzare una scelta';
-$string['choicegroupclose'] = 'Chiusura';
 $string['choicegroup:deleteresponses'] = 'Eliminare risposte';
 $string['choicegroup:downloadresponses'] = 'Scaricare risposte';
+$string['choicegroup:readresponses'] = 'Leggi le risposte';
+$string['choicegroupclose'] = 'Chiusura';
 $string['choicegroupfull'] = 'Il gruppo scelto è completo';
 $string['choicegroupname'] = 'Nome';
 $string['choicegroupopen'] = 'Apertura';
@@ -59,7 +60,6 @@ L\'elenco a sinistra mostra tutti i gruppi e i raggruppamenti disponibili nel co
 I gruppi selezionati vengono visualizzati nell\'elenco a destra.
 
 Per rimuovere tutti i gruppi dalla selezione, selezionali dall\'elenco a destra e fai clic su "Rimuovi".';
-$string['choicegroup:readresponses'] = 'Leggi le risposte';
 $string['choicegroupsaved'] = 'La tua scelta è stata salvata';
 $string['choicetext'] = 'Testo della scelta';
 $string['chooseaction'] = 'Scegli un\'azione ...';
@@ -74,8 +74,8 @@ $string['del_groups'] = 'Rimuovi gruppi';
 $string['displayhorizontal'] = 'Visualizza orizzontalmente';
 $string['displaymode'] = 'Modalità di visualizzazione';
 $string['displayvertical'] = 'Visualizza verticalmente';
-$string['double_click_grouping_legend'] = 'Doppio click su un raggruppamento per espanderlo/minimizzarlo.';
 $string['double_click_group_legend'] = 'Doppio click su un gruppo per aggiungerlo.';
+$string['double_click_grouping_legend'] = 'Doppio click su un raggruppamento per espanderlo/minimizzarlo.';
 $string['event:answered'] = 'Effettuata scelta';
 $string['event:answered_desc'] = 'L\'utente con id \'{$a->userid}\' ha effettuato una scelta nel modulo di attività Scelta del gruppo con id \'{$a->contextinstanceid}\'.';
 $string['event:removed'] = 'Eliminata scelta';

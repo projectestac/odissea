@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_numerical', language 'pt', version '3.8'.
  *
- * @package   qtype_numerical
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_numerical
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -56,22 +56,22 @@ $string['numericalmultiplier_help'] = 'O multiplicador é o fator pelo qual a re
 
 A primeira unidade (Unidade 1) tem um multiplicador predefinido de 1. Assim, se a resposta correta for 5500 e configurar W como unidade na Unidade 1, que tem 1 como multiplicador predefinido, a resposta correta é 5500 W.
 
-Se adicionar a unidade kW com o multiplicador de 0.001, isto irá tornar igualmente correta a resposta 5.5 kW. Significa assim, que a resposta 5500 W ou 5.5 kW são ambas consideradas corretas.
+Se adicionar a unidade kW com o multiplicador de  0.001, isto irá tornar igualmente correta a resposta 5.5 kW. Significa assim, que a resposta 5500W ou 5.5kW são ambas consideradas corretas.
 
-Tenha em conta que o erro aceite é também multiplicado. Um erro aceite de 100 W equivale a um erro de 0.1 kW.';
+Tenha em conta que o erro aceite é também multiplicado, um erro aceite de 100W equivale a um erro de 0.1kW.';
 $string['oneunitshown'] = 'A Unidade 1 será exibida automaticamente junto da caixa destinada à resposta numérica.';
 $string['onlynumerical'] = 'Não se usam as unidades. Apenas é pedida e avaliada a resposta numérica.';
 $string['pleaseenterananswer'] = 'Por favor, introduza uma resposta.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Por favor, insira a sua resposta sem usar o separador dos milhares ({$a}).';
 $string['pluginname'] = 'Numérica';
-$string['pluginnameadding'] = 'A adicionar pergunta numérica';
-$string['pluginnameediting'] = 'A editar pergunta numérica';
 $string['pluginname_help'] = 'Da perspetiva do aluno a pergunta numérica é idêntica a uma pergunta de resposta curta, no entanto as numéricas permitem definir uma margem de erro. Isto permite que uma opção de resposta enquadre um conjunto de respostas possíveis. Por exemplo, se a resposta for 10 com um erro aceite de 2, os números entre 8 e 12 serão aceites como corretos.';
 $string['pluginname_link'] = 'pergunta/tipo/numérica';
+$string['pluginnameadding'] = 'A adicionar pergunta numérica';
+$string['pluginnameediting'] = 'A editar pergunta numérica';
 $string['pluginnamesummary'] = 'Aceita uma resposta numérica, eventualmente com unidades, a qual é avaliada comparando com várias respostas modelo, com eventuais margens de erro.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Numérica não armazena dados pessoais.';
 $string['relative'] = 'Relativa';
-$string['rightexample'] = 'Direita (exemplo: 1.00 km)';
+$string['rightexample'] = 'Direita (exemplo: 1.00cm)';
 $string['selectunit'] = 'Selecione uma unidade';
 $string['selectunits'] = 'Selecione unidades';
 $string['studentunitanswer'] = 'Unidade da resposta é introduzida';

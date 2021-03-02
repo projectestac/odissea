@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'zh_cn', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -242,13 +242,13 @@ $string['scaletimes5'] = '几乎从不,不常,偶尔,经常,几乎总是';
 $string['seemoredetail'] = '点击这里看更多细节';
 $string['selectedquestions'] = '从一个量表中选出的问题，所有学生';
 $string['summary'] = '概要';
-$string['surveycompleted'] = '您已经完成了该问卷。以下图表概要显示了您的结果与班级平均结果的比较。';
-$string['surveycompletednograph'] = '您已经完成了此问卷调查。';
 $string['survey:download'] = '下载响应';
-$string['surveygraph'] = '问卷调查图表';
-$string['surveyname'] = '问卷名称';
 $string['survey:participate'] = '响应问卷';
 $string['survey:readresponses'] = '查看响应';
+$string['surveycompleted'] = '您已经完成了该问卷。以下图表概要显示了您的结果与班级平均结果的比较。';
+$string['surveycompletednograph'] = '您已经完成了此问卷调查。';
+$string['surveygraph'] = '问卷调查图表';
+$string['surveyname'] = '问卷名称';
 $string['surveysaved'] = '问卷已保存';
 $string['surveytype'] = '问卷类型';
 $string['surveytype_help'] = '有 3 种调查类型：

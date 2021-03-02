@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'nl', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,6 @@ $string['configpopupwidth'] = 'Hoe breed zou een pop-upvenster standaard moeten 
 $string['contentheader'] = 'Inhoud';
 $string['displayoptions'] = 'Beschikbare opties om te tonen';
 $string['displayselect'] = 'Toon';
-$string['displayselectexplain'] = 'Kiest de manier om te tonen. Jammer genoeg zijn niet alle types geschikt voor alle bestanden.';
 $string['displayselect_help'] = 'Deze instelling, samen met het bestandstype en of de browser ingebed tonen toestaat, bepaalt hoe een bestand getoond wordt. Mogelijke opties zijn:
 
 * Automatisch - De beste optie om het bestand te tonen wordt automatisch geselecteerd
@@ -53,6 +52,7 @@ $string['displayselect_help'] = 'Deze instelling, samen met het bestandstype en 
 * In pop-up - Het bestand wordt getoond in een nieuw browservenster zonder menu\'s en zonder adresbalk
 * In frame - Het bestand wordt getoond in een frame onder de navigatiebalk en bestandsbeschrijving
 * Nieuw venster - Het bestand wordt getoond in een nieuw browservenster met menu\'s en een adresbalk';
+$string['displayselectexplain'] = 'Kiest de manier om te tonen. Jammer genoeg zijn niet alle types geschikt voor alle bestanden.';
 $string['dnduploadresource'] = 'Maak bron met een bestand';
 $string['encryptedcode'] = 'Geëncrypteerde code';
 $string['filenotfound'] = 'Bestand niet gevonden.';
@@ -62,13 +62,13 @@ $string['filtername'] = 'Bronnamen automatisch linken';
 $string['forcedownload'] = 'Download verplicht';
 $string['framesize'] = 'Frame hoogte';
 $string['indicator:cognitivedepth'] = 'Bestand cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Bestand bron.';
 $string['indicator:cognitivedepthdef'] = 'Bestand cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de bestandsresources tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Weergave)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Bestand bron.';
 $string['indicator:socialbreadth'] = 'Bestand sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Bestand bron.';
 $string['indicator:socialbreadthdef'] = 'Bestand sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de bestandsresources tijdens dit analyse-interval bereikt (niveaus = geen deelname, alleen deelnemer)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Bestand bron.';
 $string['legacyfiles'] = 'Migratie van oude cursusbestanden';
 $string['legacyfilesactive'] = 'Actief';
 $string['legacyfilesdone'] = 'Beëindigd';
@@ -99,13 +99,13 @@ $string['printintro'] = 'Toon bronbeschrijving';
 $string['printintroexplain'] = 'Toon bronbeschrijving onder de inhoud? Sommige manieren van tonen zullen de beschrijving niet laten zien, zelfs niet als het zo ingesteld is.';
 $string['privacy:metadata'] = 'De bestand bron-plugin bewaart geen persoonlijke gegevens.';
 $string['resource:addinstance'] = 'Voeg een nieuwe bron toe';
+$string['resource:exportresource'] = 'Bron exporteren';
+$string['resource:view'] = 'Bron bekijken';
 $string['resourcecontent'] = 'Bestanden en submappen';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'Bron exporteren';
-$string['resource:view'] = 'Bron bekijken';
 $string['search:activity'] = 'Bestand';
 $string['selectmainfile'] = 'Kies het hoofdbestand door op het icoontje naast de bestandsnaam te klikken.';
 $string['showdate'] = 'Toon de upload- / wijzigtijd';

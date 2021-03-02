@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'error', language 'it', version '3.8'.
  *
- * @package   error
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     error
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['TODO'] = 'TODO';
 $string['activityisscheduledfordeletion'] = 'Eliminazione dell\'attività in corso...';
 $string['agedigitalconsentmapinvalidage'] = '"{$a}" non è un valore valido per l\'età.';
 $string['agedigitalconsentmapinvalidcomma'] = '"{$a}" ha una virgola di separazione in più o in meno.';
@@ -99,7 +100,7 @@ $string['cannotfindinfo'] = 'Non è possibile trovare per: "{$a}"';
 $string['cannotfindlang'] = 'Non è possibile trovare il language pack "{$a}"';
 $string['cannotfindteacher'] = 'Non è possibile trovare docenti';
 $string['cannotfinduser'] = 'Non è possibile trovare l\'utente di nome "{$a}"';
-$string['cannotgeoplugin'] = 'Non è possibile collegarsi al server geoPlugin disponibile su http://www.geoplugin.com, per favore verifica le impostazioni del proxy oppure installa MaxMind GeoLite City';
+$string['cannotgeoplugin'] = 'Non è possibile collegarsi al server geoPlugin disponibile su https://www.geoplugin.com, per favore verificare le impostazioni del proxy oppure installare il file di dati MaxMind GeoLite City';
 $string['cannotgetblock'] = 'Non è stato possibile ottenere i blocchi dal database';
 $string['cannotgetcats'] = 'Non è possibile ottenere il record della categoria';
 $string['cannotgetdata'] = 'Non è possibile ottenere dati';
@@ -173,7 +174,7 @@ $string['cannotuseadminadminorteacher'] = 'Devi avere il ruolo di docente o di a
 $string['cannotusepage'] = 'Solo i docenti e gli amministratori possono usare questa pagina';
 $string['cannotusepage2'] = 'Spiacente, non puoi usare questa pagina';
 $string['cannotviewcategory'] = 'Non sei autorizzato a visualizzare questo elenco di corsi.';
-$string['cannotviewprofile'] = 'Non puoi vedere il profilo di questo utente.';
+$string['cannotviewprofile'] = 'Non puoi visualizzare il profilo di questo utente.';
 $string['cannotviewreport'] = 'Non puoi visualizzare questo report';
 $string['cannotwritefile'] = 'Non è possibile scrivere sul file ({$a})';
 $string['categoryerror'] = 'Errore di categoria';
@@ -194,7 +195,7 @@ $string['coursegroupunknown'] = 'Il corso corrisponde a un gruppo {$a} non speci
 $string['courseidnotfound'] = 'L\'ID del corso non esiste.';
 $string['courseidnumbertaken'] = 'Il codice identificativo è già usato da un altro corso ({$a})';
 $string['coursemisconf'] = 'Il corso è mal configurato';
-$string['courserequestdisabled'] = 'Spiacente, i corsi a richiesta sono stati disabilitati dall\'amministratore';
+$string['courserequestdisabled'] = 'Purtroppo i corsi a richiesta sono stati disabilitati dall\'amministratore';
 $string['csvcolumnduplicates'] = 'Sono state individuate colonne duplicate';
 $string['csvemptyfile'] = 'Il file CSV è vuoto';
 $string['csvfewcolumns'] = 'Non ci sono abbastanza colonne, per favore controlla i delimitatori di campo.';
@@ -240,6 +241,7 @@ $string['duplicateusername'] = 'Nome utente duplicato - record saltato';
 $string['emailfail'] = 'Invio email fallito';
 $string['enddatebeforestartdate'] = 'La data di fine corso deve essere antecedente alla data di inizio.';
 $string['error'] = 'Si è verificato un errore';
+$string['error_question_answers_missing_in_db'] = 'Non è stato possibile trovare una risposta che corrisponda a "{$a->answer}" nel tabella question_answers. Il problema si è verificato durante il ripristino della domandi con id {$a->filequestionid} presente nel file di backup. Tale domanda è stata fatta corrispondere alla domanda già presente nel database con id {$a->dbquestionid}.';
 $string['errorcleaningdirectory'] = 'Si è verificato un errore svuotando la cartella "{$a}"';
 $string['errorcopyingfiles'] = 'Si è verificato un errore copiando i file';
 $string['errorcreatingdirectory'] = 'Si è verificato un errore creando la cartella "{$a}"';
@@ -250,7 +252,6 @@ $string['erroronline'] = 'Si è verificato un errore alla linea {$a}';
 $string['erroroutput'] = 'Errore in uscita, il reindirizzamento automatico è stato disabilitato.';
 $string['errorparsingxml'] = 'Errore durante il parsing dell\'XML {$a->errorstring} alla linea {$a->errorline}, carattere {$a->errorchar}';
 $string['errorprocessingarchive'] = 'Si è verificato un errore durante l\'elaborazione del file archivio';
-$string['error_question_answers_missing_in_db'] = 'Non è stato possibile trovare una risposta che corrisponda a "{$a->answer}" nel tabella question_answers. Il problema si è verificato durante il ripristino della domandi con id {$a->filequestionid} presente nel file di backup. Tale domanda è stata fatta corrispondere alla domanda già presente nel database con id {$a->dbquestionid}.';
 $string['errorreadingfile'] = 'Si è verificato un errore leggendo il file "{$a}"';
 $string['errorsavingrequest'] = 'Si è verificato un errore durante il salvataggio della tua richiesta';
 $string['errorsettinguserpref'] = 'Si è verificato un errore durante l\'impostazione delle preferenze utente';
@@ -303,7 +304,7 @@ $string['internalauthpassworderror'] = 'L\'autenticazione interna non ha la pass
 $string['invalidaccess'] = 'Questa pagina non è stata acceduta correttamente';
 $string['invalidaccessparameter'] = 'Parametro di accesso non valido';
 $string['invalidaction'] = 'Parametro di azione non valido';
-$string['invalidactivityid'] = 'ID attività non valido';
+$string['invalidactivityid'] = 'L\'ID dell\'attività non è valido';
 $string['invalidadminsettingname'] = 'Impostazioni admin non valide ({$a})';
 $string['invalidargorconf'] = 'Non sono stati forniti argomenti validi oppure la configurazione del server è errata';
 $string['invalidarguments'] = 'Non sono stati forniti argomenti validi';
@@ -319,6 +320,7 @@ $string['invalidcommentparam'] = 'I parametri commento non sono validi';
 $string['invalidcomponent'] = 'Il nome componente non è valido';
 $string['invalidconfirmdata'] = 'Dati di conferma non validi';
 $string['invalidcontext'] = 'Contesto non valido';
+$string['invalidcountrycode'] = 'Codice nazione non valido: {$a}';
 $string['invalidcourse'] = 'Corso non valido';
 $string['invalidcourseformat'] = 'Formato di corso non valido';
 $string['invalidcourseid'] = 'Stai tentando di usare un ID di corso non valido';
@@ -334,13 +336,14 @@ $string['invalidevent'] = 'Evento non valido';
 $string['invalidfieldname'] = '"{$a}" non è nome di campo valido';
 $string['invalidfiletype'] = '"{$a}" non è un tipo di file valido';
 $string['invalidformatpara'] = 'Formato errato per la scelta di un parametro';
-$string['invalidformdata'] = 'Dati form errati';
+$string['invalidformdata'] = 'I dati del modulo sono errati';
 $string['invalidfunction'] = 'Funzione errata';
 $string['invalidgradeitemid'] = 'L\'ID dell\'elemento di valutazione non è correatto';
 $string['invalidgroupid'] = 'L\'ID del gruppo non è corretto';
 $string['invalidipformat'] = 'Il formato dell\'indirizzo IP non è valido';
 $string['invaliditemid'] = 'ID elemento errato';
 $string['invalidkey'] = 'Chiave errata';
+$string['invalidlanguagecode'] = 'Codice lingua non valido: {$a}';
 $string['invalidlegacy'] = 'Definizione errata del ruolo origine di tipo:{$a}';
 $string['invalidmd5'] = 'La variabile di controllo era errata - prova di nuovo';
 $string['invalidmode'] = 'Modo non valido ({$a})';
@@ -348,7 +351,7 @@ $string['invalidmodule'] = 'Modulo non valido';
 $string['invalidmoduleid'] = 'ID modulo non valido: {$a}';
 $string['invalidmodulename'] = 'Nome modulo non valido: {$a}';
 $string['invalidnum'] = 'Valore numerico non valido';
-$string['invalidnumkey'] = 'L\'array $condition non può contenere chiavi numeriche, per favore correggete il codice!';
+$string['invalidnumkey'] = 'L\'array $conditions non può contenere chiavi numeriche, per favore correggere il codice.';
 $string['invalidoutcome'] = 'ID obiettivo errato';
 $string['invalidpagesize'] = 'Dimensione pagina non valida';
 $string['invalidpasswordpolicy'] = 'Le regole password non sono valide';
@@ -390,12 +393,13 @@ $string['loginasnoenrol'] = 'Non si può usare "iscrivi" o "disiscrivi" se si è
 $string['loginasonecourse'] = 'Non puoi entrare in questo corso.<br/>Devi prima terminare la sessione "Login come" prima di entrare in altri corsi.';
 $string['maxareabytes'] = 'La dimensione del file eccede lo spazio rimasto disponibile in quest\'area.';
 $string['maxbytesfile'] = 'Il file {$a->file} è troppo grande. La dimensione massima che è possibile caricare è pari a {$a->size}.';
+$string['messageundeliveredbynotificationsettings'] = 'Non è stato possibile inviare il messaggi poiché i messaggi personali tra utenti sono stati disabilitati dall\'amministratore dle sito';
 $string['messagingdisable'] = 'La messaggistica è disabilitata';
 $string['mimetexisnotexist'] = 'Il sistema non è configurato per eseguire mimeTEX. E\' necessario scaricare il sorgente C da <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip</a>, compilarlo e copiare l\'eseguibile nella cartella  moodle/filter/tex/.';
 $string['mimetexnotexecutable'] = 'Il mimetex personalizzato non è eseguibile!';
+$string['missing_moodle_backup_xml_file'] = 'Al backup manca il file XML: {$a}';
 $string['missingfield'] = 'Manca il campo "{$a}"';
 $string['missingkeyinsql'] = 'ERROR: nella query manca il parametro "{$a}"';
-$string['missing_moodle_backup_xml_file'] = 'Al backup manca il file XML: {$a}';
 $string['missingparam'] = 'Un parametro obbligatorio ({$a}) è mancante';
 $string['missingparameter'] = 'Parametro mancante';
 $string['missingrequiredfield'] = 'Mancano alcuni campi richiesti';
@@ -491,9 +495,9 @@ $string['remotedownloadnotallowed'] = 'Non è permesso scaricare i componenti su
 $string['reportnotavailable'] = 'Questo tipo di report è disponibile solamente nel corso home del sito';
 $string['requirecorrectaccess'] = 'URL o porta non valido';
 $string['requireloginerror'] = 'L\'accesso al corso o attività non è consentito.';
-$string['restorechecksumfailed'] = 'Si sono verificati alcuni problemi con le informazioni di ripristino presenti nella tua sessione. Per favore controllare i limiti della memoria PHP e della dimensione del pacchetto. Il ripristino è stato interrotto.';
 $string['restore_path_element_missingmethod'] = 'Il metodo di ripristino {$a} non è presente. Deve essere definito da uno sviluppatore.';
 $string['restore_path_element_noobject'] = 'L\'oggetto del ripristino {$a} non è un oggetto.';
+$string['restorechecksumfailed'] = 'Si sono verificati alcuni problemi con le informazioni di ripristino presenti nella tua sessione. Per favore controllare i limiti della memoria PHP e della dimensione del pacchetto. Il ripristino è stato interrotto.';
 $string['restrictedcontextexception'] = 'Spiacente, l\'esecuzione di funzioni esterne viola le restrizioni del contesto.';
 $string['restricteduser'] = 'Spiacente, ma il tuoi account  "{$a}" non è autorizzato a fare questo';
 $string['reverseproxyabused'] = 'Spiacente ma il server non può essere raggiunto direttamente, è stato abilitato un reverse proxy.<br />Per favore contattate l\'amministratore del server.';
@@ -533,7 +537,6 @@ $string['tagnotfound'] = 'Il tag specificato non è stato trovato nel database';
 $string['targetdatabasenotempty'] = 'Il database destinazione non è vuoto. Per sicurezza il trasferimento è stato interrotto.';
 $string['textconditionsnotallowed'] = 'Il confronto di condizioni sulle colonne di testo non è consentito. Per favore utilizza sql_compare_text() nella query.';
 $string['themenotinstall'] = 'Questo tema non è installato!';
-$string['TODO'] = 'TODO';
 $string['tokengenerationfailed'] = 'Non è possibile generare un nuovo token.';
 $string['transactionvoid'] = 'La transazione non può essere annullata in quanto è già stata annullata';
 $string['unenrolerror'] = 'Si è verificato un errore durante la disiscrizione dei quella persona';
@@ -557,7 +560,7 @@ $string['unknownjsinrequirejs'] = 'Non è possibile trovate la libreria JS: {$a}
 $string['unknownmodulename'] = 'Per il form il nome del modulo è sconosciuto';
 $string['unknownrole'] = 'Il ruolo "{$a}" è sconosciuto';
 $string['unknownsortcolumn'] = 'La colonna {$a} per l\'ordinamento è sconosciuta';
-$string['unknownuseraction'] = 'Spiacente, non si riesce a capire questa azione dell\'utente';
+$string['unknownuseraction'] = 'Purtroppo non si riesce a comprendere l\'azione dell\'utente';
 $string['unknownuserselector'] = 'Selettore utenti sconosciuto';
 $string['unknoworder'] = 'Ordinamento sconosciuto';
 $string['unknowparamtype'] = 'Parametro di tipo sconosciuto: {$a}';
@@ -566,7 +569,7 @@ $string['unknowuploadaction'] = 'Errore: azione di caricamento sconosciuta ({$a}
 $string['unspecifycourseid'] = 'E\' necessario specificare l\'id del corso, il titolo abbreviato oppure il codice identificativo';
 $string['unsupportedevent'] = 'Tipo di evento non supportato';
 $string['unsupportedstate'] = 'Stato di completamento non supportato';
-$string['unsupportedwebserver'] = 'Spiacente, ma il software del web server ({$a}) non è supportato.';
+$string['unsupportedwebserver'] = 'Purtroppo il software del web server ({$a}) non è supportato.';
 $string['upgraderequires19'] = 'Errore: sul server è stata installata una nuova versione di Moodle, purtroppo l\'upgrade da questa versione precedente non è supportato.<br />Per eseguire l\'upgrade, si deve prima aggiornare l\'installazione alla release 1.9 più recente. Se lo si desidera è possibile ritornare alla versione di Moodle originaria semplicemente ricopiando i file della versione precedentemente in uso.';
 $string['upgraderunning'] = 'Il sito è in fase di aggiornamento, per favore provate ad accedere più tardi';
 $string['urlnotdefinerss'] = 'URL non definita per il feed RSS';
@@ -593,7 +596,7 @@ $string['usernotrenamedmissing'] = 'Utente non rinominato - non è possibile tro
 $string['usernotrenamedoff'] = 'Nome utente non rinominato- non è permesso rinominare.';
 $string['usernotupdatedadmin'] = 'Non è possibile aggiornare gli account amministratore';
 $string['usernotupdatederror'] = 'Utente non aggiornato - errore.';
-$string['usernotupdatednotexists'] = 'Utente non aggiornato - non esiste.';
+$string['usernotupdatednotexists'] = 'Utente non aggiornato o non esistente.';
 $string['userquotalimit'] = 'Hai raggiunto il limite della tua quota di file';
 $string['userselectortoomany'] = 'user_selector ha ottenuto più di un utente, anche se multiselect è false';
 $string['verifyagedigitalconsentnotpossible'] = 'Al momento la verifica dell’età del consenso digitale non è possibile.';

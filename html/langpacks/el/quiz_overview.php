@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_overview', language 'el', version '3.8'.
  *
- * @package   quiz_overview
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_overview
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -74,7 +74,7 @@ $string['regradingattemptxofy'] = 'Προσπάθεια επανα-βαθμολ�
 $string['regradingattemptxofywithdetails'] = 'Αναβαθμολόγηση προσπάθειας ({$a->done}/{$a->count}) - Προσπάθεια {$a->attemptnum} από {$a->name} (αναγνωριστικό {$a->attemptid})';
 $string['show'] = 'Εμφάνιση / λήψη';
 $string['showattempts'] = 'Μόνο εμφάνιση / λήψη προσπαθειών';
-$string['showdetailedmarks'] = 'Βαθμοί για κάθε ερώτηση';
+$string['showdetailedmarks'] = 'Εμφάνιση/λήψη βαθμολόγησης για κάθε ερώτηση';
 $string['showinggraded'] = 'Εμφανίζεται μόνο η προσπάθεια που βαθμολογήθηκε για κάθε χρήστη.';
 $string['showinggradedandungraded'] = 'Εμφανίζονται και οι προσπάθειες που βαθμολογήθηκαν και οι προσπάθειες που δεν βαθμολογήθηκαν για κάθε χρήστη. Η μία προσπάθεια που βαθμολογήθηκε για κάθε χρήστη είναι τονισμένη. Η μέθοδος βαθμολόγησης για αυτό το κουίζ είναι {$a}.';
 $string['studentingroup'] = '«{$a->coursestudent}» στην ομάδα «{$a->groupname}».';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lti', language 'en', version '3.8'.
  *
- * @package   lti
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lti
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['accept'] = 'Accept';
-$string['accepted'] = 'Accepted';
 $string['accept_grades'] = 'Accept grades from the tool';
 $string['accept_grades_admin'] = 'Accept grades from the tool';
 $string['accept_grades_admin_help'] = 'Specify whether the tool provider can add, update, read, and delete grades associated with instances of this tool.
@@ -38,6 +37,7 @@ $string['accept_grades_help'] = 'Specify whether the tool provider can add, upda
 Some tool providers support reporting grades back to Moodle based on actions taken within the tool, creating a more integrated experience.
 
 Note that this setting may be overridden in the tool configuration.';
+$string['accepted'] = 'Accepted';
 $string['action'] = 'Action';
 $string['activate'] = 'Activate';
 $string['activatetoadddescription'] = 'You will need to activate this tool before you can add a description.';
@@ -53,15 +53,15 @@ $string['autoaddtype'] = 'Add tool';
 $string['automatic'] = 'Automatic, based on tool URL';
 $string['baseurl'] = 'Base URL/tool registration name';
 $string['basiclti'] = 'LTI';
-$string['basicltiactivities'] = 'LTI activities';
 $string['basiclti_base_string'] = 'LTI OAuth base string';
 $string['basiclti_endpoint'] = 'LTI launch endpoint';
-$string['basicltifieldset'] = 'Custom example fieldset';
 $string['basiclti_in_new_window'] = 'Your activity has opened in a new window';
 $string['basiclti_in_new_window_open'] = 'Open in new window';
+$string['basiclti_parameters'] = 'LTI launch parameters';
+$string['basicltiactivities'] = 'LTI activities';
+$string['basicltifieldset'] = 'Custom example fieldset';
 $string['basicltiintro'] = 'Activity description';
 $string['basicltiname'] = 'Activity name';
-$string['basiclti_parameters'] = 'LTI launch parameters';
 $string['basicltisettings'] = 'Basic Learning Tool Interoperability (LTI) settings';
 $string['cancel'] = 'Cancel';
 $string['cancelled'] = 'Cancelled';
@@ -86,12 +86,12 @@ $string['configured'] = 'Configured';
 $string['confirmtoolactivation'] = 'Are you sure you would like to activate this tool?';
 $string['contentitem'] = 'Content-Item Message';
 $string['contentitem_help'] = 'If ticked, the option \'Select content\' will be available when adding an external tool.';
+$string['course_tool_types'] = 'Course tools';
 $string['courseactivitiesorresources'] = 'Course activities or resources';
 $string['courseid'] = 'Course ID number';
 $string['courseinformation'] = 'Course information';
 $string['courselink'] = 'Go to course';
 $string['coursemisconf'] = 'Course is misconfigured';
-$string['course_tool_types'] = 'Course tools';
 $string['createdon'] = 'Created on';
 $string['curllibrarymissing'] = 'PHP cURL extension required for the External tool.';
 $string['custom'] = 'Custom parameters';
@@ -179,13 +179,13 @@ $string['fixexistingconf'] = 'Use an existing configuration for the misconfigure
 $string['fixnew'] = 'New configuration';
 $string['fixnewconf'] = 'Define a new configuration for the misconfigured instance';
 $string['fixold'] = 'Use existing';
-$string['forced_help'] = 'This setting has been forced in a course or site level tool configuration. You may not change it from this interface.';
 $string['force_ssl'] = 'Force SSL';
 $string['force_ssl_help'] = 'Selecting this option forces all launches to this tool provider to use SSL.
 
 In addition, all web service requests from the tool provider will use SSL.
 
 If using this option, confirm that this Moodle site and the tool provider support SSL.';
+$string['forced_help'] = 'This setting has been forced in a course or site level tool configuration. You may not change it from this interface.';
 $string['generaltool'] = 'General tool';
 $string['global_tool_types'] = 'Global preconfigured tools';
 $string['grading'] = 'Grade routing';
@@ -194,22 +194,30 @@ $string['icon_url_help'] = 'The icon URL allows the icon that shows up in the co
 LTI icon, an icon which conveys the type of activity may be specified.';
 $string['id'] = 'ID';
 $string['indicator:cognitivedepth'] = 'LTI cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in an LTI activity.';
 $string['indicator:cognitivedepthdef'] = 'LTI cognitive';
 $string['indicator:cognitivedepthdef_help'] = 'The participant has reached this percentage of the cognitive engagement offered by the LTI activities during this analysis interval (Levels = No view, View, Submit, View feedback)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
-$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in an LTI activity.';
 $string['indicator:socialbreadth'] = 'LTI social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in an LTI activity.';
 $string['indicator:socialbreadthdef'] = 'LTI social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the LTI activities during this analysis interval (Levels = No participation, Participant alone, Participant with others)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in an LTI activity.';
 $string['initiatelogin'] = 'Initiate login URL';
 $string['initiatelogin_help'] = 'The tool URL to which requests for initiating a login are to be sent.  This URL is required before a message can be successfully sent to the tool.';
 $string['invalidid'] = 'LTI ID was incorrect';
 $string['jwtsecurity'] = 'LTI 1.3';
 $string['launch_in_moodle'] = 'Launch tool in Moodle';
-$string['launchinpopup'] = 'Launch container';
 $string['launch_in_popup'] = 'Launch tool in a pop-up';
+$string['launch_url'] = 'Tool URL';
+$string['launch_url_help'] = 'The tool URL indicates the web address of the External Tool, and may contain additional information, such as the resource to show.
+If you are unsure what to enter for the tool URL, please check with the tool provider for more information.
+
+You can enter a cartridge URL if you have one, and the rest of the form details will fill automatically.
+
+If you have selected a preconfigured tool, you may not need to enter a tool URL. If the tool link is used to just launch
+into the tool provider\'s system, and not go to a specific resource, this will likely be the case.';
+$string['launchinpopup'] = 'Launch container';
 $string['launchinpopup_help'] = 'The launch container affects the display of the tool when launched from the course. Some launch containers provide more screen
 real estate to the tool, and others provide a more integrated feel with the Moodle environment.
 
@@ -221,22 +229,17 @@ real estate to the tool, and others provide a more integrated feel with the Mood
         Depending on the browser, it will open in a new tab or a popup window.
         It is possible that browsers will prevent the new window from opening.';
 $string['launchoptions'] = 'Launch options';
-$string['launch_url'] = 'Tool URL';
-$string['launch_url_help'] = 'The tool URL indicates the web address of the External Tool, and may contain additional information, such as the resource to show.
-If you are unsure what to enter for the tool URL, please check with the tool provider for more information.
-
-You can enter a cartridge URL if you have one, and the rest of the form details will fill automatically.
-
-If you have selected a preconfigured tool, you may not need to enter a tool URL. If the tool link is used to just launch
-into the tool provider\'s system, and not go to a specific resource, this will likely be the case.';
 $string['leaveblank'] = 'Leave blank if you do not need them';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Add course-specific tool configurations';
 $string['lti:addinstance'] = 'Add a new external tool';
 $string['lti:admin'] = 'Be an administrator when the tool is launched';
+$string['lti:grade'] = 'View grades returned by the external tool';
+$string['lti:manage'] = 'Be an Instructor when the tool is launched';
+$string['lti:requesttooladd'] = 'Request a tool is configured site-wide';
+$string['lti:view'] = 'Launch external tool activities';
 $string['lti_administration'] = 'Edit preconfigured tool';
 $string['lti_errormsg'] = 'The tool returned the following error message: "{$a}"';
-$string['lti:grade'] = 'View grades returned by the external tool';
 $string['lti_launch_error'] = 'An error occurred when launching the external tool:';
 $string['lti_launch_error_tool_request'] = '<p>
 To submit a request for an administrator to complete the tool configuration, click <a href="{$a->admin_request_url}" target="_top">here</a>.
@@ -244,15 +247,12 @@ To submit a request for an administrator to complete the tool configuration, cli
 $string['lti_launch_error_unsigned_help'] = '<p>This error may be a result of a missing consumer key and shared secret for the tool provider.</p>
 <p>If you have a consumer key and shared secret, you may enter it when editing the external tool instance (make sure advanced options are visible).</p>
 <p>Alternatively, you may <a href="{$a->course_tool_editor}">create a course level tool provider configuration</a>.</p>';
-$string['lti:manage'] = 'Be an Instructor when the tool is launched';
-$string['lti:requesttooladd'] = 'Request a tool is configured site-wide';
-$string['ltisettings'] = 'LTI settings';
 $string['lti_tool_request_added'] = 'Tool configuration request successfully submitted. You may need to contact an administrator to complete the tool configuration.';
 $string['lti_tool_request_existing'] = 'A tool configuration for the tool domain has already been submitted.';
+$string['ltisettings'] = 'LTI settings';
 $string['ltiunknownserviceapicall'] = 'LTI unknown service API call.';
 $string['ltiversion'] = 'LTI version';
 $string['ltiversion_help'] = 'The version of LTI being used for signing messages and service requests: LTI 1.0/1.1 and LTI 2.0 use the OAuth 1.0A security profile; LTI 1.3.0 uses JWTs.';
-$string['lti:view'] = 'Launch external tool activities';
 $string['main_admin'] = 'General help';
 $string['main_admin_help'] = 'External tools allow Moodle users to interact with learning resources hosted remotely. Through a special launch protocol, the remote tool has access to general information about the launching user. For example, the institution name, course ID, user ID, and other information such as the user\'s name or email address.
 
@@ -280,25 +280,25 @@ External tool activities differ from URL resources in a few ways:
 * External tools support reading, updating, and deleting grades associated with the activity instance
 * External tool configurations create a trust relationship between your site and the tool provider, allowing secure communication between them';
 $string['modulename_link'] = 'mod/lti/view';
+$string['modulename_shortcut_link'] = 'mod/lti/view/custom';
 $string['modulenameplural'] = 'External tools';
 $string['modulenamepluralformatted'] = 'LTI Instances';
-$string['modulename_shortcut_link'] = 'mod/lti/view/custom';
 $string['name'] = 'Name';
 $string['never'] = 'Never';
 $string['new_window'] = 'New window';
-$string['noattempts'] = 'No attempts have been made on this tool instance';
 $string['no_lti_configured'] = 'There are no active external tools configured.';
 $string['no_lti_pending'] = 'There are no pending external tools.';
 $string['no_lti_rejected'] = 'There are no rejected external tools.';
-$string['noltis'] = 'There are no external tool instances';
 $string['no_lti_tools'] = 'There are no external tools configured.';
-$string['noprofileservice'] = 'Profile service not found';
-$string['noservers'] = 'No servers found';
 $string['no_tp_accepted'] = 'There are no accepted external tool registrations.';
 $string['no_tp_cancelled'] = 'There are no cancelled external tool registrations.';
 $string['no_tp_configured'] = 'There are no unregistered external tool registrations configured.';
 $string['no_tp_pending'] = 'There are no pending external tool registrations.';
 $string['no_tp_rejected'] = 'There are no rejected external tool registrations.';
+$string['noattempts'] = 'No attempts have been made on this tool instance';
+$string['noltis'] = 'There are no external tool instances';
+$string['noprofileservice'] = 'Profile service not found';
+$string['noservers'] = 'No servers found';
 $string['notypes'] = 'There are currently no LTI tools set up in Moodle. Click the Install link above to add some.';
 $string['noviewusers'] = 'No users were found with permissions to use this tool';
 $string['oauthsecurity'] = 'LTI 1.0/1.1';
@@ -377,11 +377,11 @@ $string['redirect'] = 'You will be redirected in few seconds. If you are not, pr
 $string['redirectionuris'] = 'Redirection URI(s)';
 $string['redirectionuris_help'] = 'A list of URIs (one per line) which the tool uses when making authorisation requests.  At least one must be registered before a message can be successfully sent to the tool.';
 $string['register'] = 'Register';
-$string['registertype'] = 'Configure a new external tool registration';
 $string['register_warning'] = 'The registration page seems to be taking a while to open. If it does not appear, check that you entered the correct URL in the configuration settings. If Moodle is using https, ensure the tool you are configuring supports https and you are using https in the URL.';
+$string['registertype'] = 'Configure a new external tool registration';
+$string['registration_options'] = 'Registration options';
 $string['registrationname'] = 'Tool provider name';
 $string['registrationname_help'] = 'Enter the name of the tool provider being registered.';
-$string['registration_options'] = 'Registration options';
 $string['registrationurl'] = 'Registration URL';
 $string['registrationurl_help'] = 'The registration URL should be available from the tool provider as the location to which registration requests should be sent.';
 $string['reject'] = 'Reject';
@@ -472,6 +472,7 @@ $string['successfullycreatedtooltype'] = 'Successfully created new tool!';
 $string['successfullyfetchedtoolconfigurationfromcontent'] = 'Successfully fetched tool configuration from the selected content.';
 $string['toggle_debug_data'] = 'Toggle debug data';
 $string['tool_config_not_found'] = 'Tool configuration not found for this URL.';
+$string['tool_settings'] = 'Tool settings';
 $string['tooldescription'] = 'Tool description';
 $string['tooldescription_help'] = 'The description of the tool that will be displayed to teachers in the activity list.
 
@@ -502,7 +503,6 @@ with an initial status of \'Pending\'.
 back to the \'Configured\' category so the registration process can be restarted.';
 $string['toolproxyregistration'] = 'External tool registration';
 $string['toolregistration'] = 'External tool registration';
-$string['tool_settings'] = 'Tool settings';
 $string['toolsetup'] = 'External tool configuration';
 $string['tooltypeadded'] = 'Preconfigured tool added';
 $string['tooltypedeleted'] = 'Preconfigured tool deleted';

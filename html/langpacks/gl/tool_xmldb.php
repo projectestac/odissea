@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'gl', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,16 +33,16 @@ $string['backtomainview'] = 'Volver ao principal';
 $string['cannotuseidfield'] = 'Non é posible inserir o campo "id". É unha columna de numeración automática';
 $string['change'] = 'Modificar';
 $string['charincorrectlength'] = 'Lonxitude incorrecta para un campo de caracteres';
-$string['checkbigints'] = 'Comprobar enteiros';
 $string['check_bigints'] = 'Buscar enteiros BD incorrectos';
-$string['checkdefaults'] = 'Comprobar os valores predeterminados';
 $string['check_defaults'] = 'Buscar valores predeterminados inconsistentes';
-$string['checkforeignkeys'] = 'Comprobar as chaves externas';
 $string['check_foreign_keys'] = 'Buscar vulneracións da chave externa';
-$string['checkindexes'] = 'Comprobar índices';
 $string['check_indexes'] = 'Buscar índices BD ausentes';
-$string['checkoraclesemantics'] = 'Revisar semántica';
 $string['check_oracle_semantics'] = 'Buscar semántica de lonxitude incorrecta';
+$string['checkbigints'] = 'Comprobar enteiros';
+$string['checkdefaults'] = 'Comprobar os valores predeterminados';
+$string['checkforeignkeys'] = 'Comprobar as chaves externas';
+$string['checkindexes'] = 'Comprobar índices';
+$string['checkoraclesemantics'] = 'Revisar semántica';
 $string['completelogbelow'] = '(ver abaixo o rexistro completo da busca)';
 $string['confirmcheckbigints'] = 'Esta funcionalidade buscará <a href="http://tracker.moodle.org/browse/MDL-11038">posíbeis campos enteiros errados</a> no seu servidor Moodle, xerando (pero non executando!) automaticamente as sentencias SQL necesarias para ter todos os enteiros da súa base de datos adecuadamente definidos
 
@@ -63,8 +63,12 @@ $string['confirmcheckforeignkeys'] = 'Esta funcionalidade buscará posíbeis vul
 Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos valores predeterminados inconsistentes.
 
 Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
-$string['confirmcheckindexes'] = 'Esta funcionalidade buscará potenciais índices ausentes no seu servidor Moodle, xerando (non executando) automaticamente os comandos SQL precisos para manter todo actualizado. Unha vez xerados, pode copiar os comandos e executalos con seguridade na súa interface SQL favorita.<br /><br />
-Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos índices ausentes.<br /><br />
+$string['confirmcheckindexes'] = 'Esta funcionalidade buscará potenciais índices ausentes no seu servidor Moodle, xerando (non executando) automaticamente as ordes SQL precisas para manter todo actualizado.
+
+Unha vez xerados, pode copiar as ordes e executalas con seguridade na súa interface SQL favorita (non esqueza facer copias de seguridade dos seus datos antes de facer iso).
+
+Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos índices ausentes.
+
 Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
 $string['confirmcheckoraclesemantics'] = 'Esta funcionalidade buscará <a href="http://tracker.moodle.org/browse/MDL-29322">Oracle varchar2 columnas usando semánticas BYTE </a> no seu servidor Moodle, xerando, (pero non executando!) automaticamente as instrucións SQL necesarias para que todas as columnas se convertan a semánticas CHAR no seu lugar (o que é mellor para a compatibilidade entre bases de datos e maiores contidos  max. length)
 
@@ -73,12 +77,12 @@ Unha vez xerados, pode copiar as ordes e executalas con seguridade na súa inter
 Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca de semánticas BYTE.
 
 Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
-$string['confirmdeletefield'] = 'Está realmente certo de que desexa eliminar o campo:';
-$string['confirmdeleteindex'] = 'Está realmente certo de que desexa eliminar o índice:';
-$string['confirmdeletekey'] = 'Está realmente certo de que desexa eliminar a chave:';
-$string['confirmdeletetable'] = 'Está realmente certo de que desexa eliminar a táboa:';
-$string['confirmdeletexmlfile'] = 'Está realmente certo de que desexa eliminar o ficheiro:';
-$string['confirmrevertchanges'] = 'Está realmente certo de que desexa desfacer as modificacións:';
+$string['confirmdeletefield'] = 'Confirma que quere eliminar o campo:';
+$string['confirmdeleteindex'] = 'Confirma que quere eliminar o índice:';
+$string['confirmdeletekey'] = 'Confirma que quere eliminar a chave:';
+$string['confirmdeletetable'] = 'Confirma que quere eliminar a táboa:';
+$string['confirmdeletexmlfile'] = 'Confirma que quere eliminar o ficheiro:';
+$string['confirmrevertchanges'] = 'Confirma que quere desfacer as modificacións:';
 $string['create'] = 'Crear';
 $string['createtable'] = 'Crear táboa:';
 $string['defaultincorrect'] = 'Omisión incorrecta';
@@ -148,12 +152,12 @@ $string['missingindexes'] = 'Atopáronse índices ausentes';
 $string['mustselectonefield'] = 'Para ver as accións relacionadas cun campo, seleccióneo!';
 $string['mustselectoneindex'] = 'Para ver as accións relacionadas cun índice, seleccióneo!';
 $string['mustselectonekey'] = 'Para ver as accións relacionadas cunha chave, selecciónea!';
+$string['new_table_from_mysql'] = 'Nova táboa de MySQL';
 $string['newfield'] = 'Novo campo';
 $string['newindex'] = 'Novo índice';
 $string['newkey'] = 'Nova chave';
 $string['newtable'] = 'Nova táboa';
 $string['newtablefrommysql'] = 'Nova táboa de MySQL';
-$string['new_table_from_mysql'] = 'Nova táboa de MySQL';
 $string['nofieldsspecified'] = 'Non se especificaron campos';
 $string['nomasterprimaryuniquefound'] = 'A(s) columna(s) das súas referencias de chave externa deben ser incluídas nunha chave principal ou única na táboa de referencia. Teña en conta que a columna que está nun índice único non é boa de abondo.';
 $string['nomissingindexesfound'] = 'Non se atoparon índices ausentes: a súa BD non require accións adicionais.';
@@ -195,15 +199,15 @@ $string['unknowntable'] = 'Refírese a unha táboa descoñecida';
 $string['unload'] = 'Descargar';
 $string['up'] = 'Arriba';
 $string['view'] = 'Ver';
-$string['viewedited'] = 'Ver editado';
-$string['vieworiginal'] = 'Ver orixinal';
-$string['viewphpcode'] = 'Ver código PHP';
 $string['view_reserved_words'] = 'Ver as palabras reservadas';
-$string['viewsqlcode'] = 'Ver código SQL';
 $string['view_structure_php'] = 'Ver estrutura PHP';
 $string['view_structure_sql'] = 'Ver estrutura SQL';
 $string['view_table_php'] = 'Ver táboa PHP';
 $string['view_table_sql'] = 'Ver táboa SQL';
+$string['viewedited'] = 'Ver editado';
+$string['vieworiginal'] = 'Ver orixinal';
+$string['viewphpcode'] = 'Ver código PHP';
+$string['viewsqlcode'] = 'Ver código SQL';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Chaves externas vulneradas';
 $string['violatedforeignkeysfound'] = 'Atopáronse chaves externas vulneradas';
@@ -215,7 +219,8 @@ $string['wronglengthforenum'] = 'Lonxitude incorrecta para un campo enum';
 $string['wrongnumberofreffields'] = 'Número errado de campos de referencia';
 $string['wrongoraclesemantics'] = 'Atopouse semántica de Oracle BYTE errada';
 $string['wrongreservedwords'] = 'Palabras reservadas actualmente utilizadas<br />(Os nomes das táboas non son importantes cando se emprega un $CFG->prefix)';
-$string['yesmissingindexesfound'] = 'Na súa BD atopáronse algúns índices ausentes. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para crealos.<br /><br />Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis índices ausentes.';
+$string['yesmissingindexesfound'] = '<p>Na súa BD atopáronse algúns índices ausentes. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para crealos. Lémbrese de facer antes unha copia de seguridade</p>
+<p>Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis índices ausentes.</p>';
 $string['yeswrongdefaultsfound'] = '<p>Na súa BD atopáronse algúns valores predeterminados inconsistentes. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para arranxalos. Lémbrese de facer antes unha copia de seguridade</p>
 <p>Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis valores predeterminados inconsistentes.</p>';
 $string['yeswrongintsfound'] = '<p>Na súa BD atopáronse algúns enteiros errados. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para crealos. Lémbrese de facer antes unha copia de seguridade</p>

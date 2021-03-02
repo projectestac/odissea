@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'plugin', language 'ca', version '3.8'.
  *
- * @package   plugin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     plugin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -84,7 +84,7 @@ $string['packagesvalidatingok'] = 'Validació feta amb èxit; la instal·lació 
 $string['plugincheckall'] = 'Tots els connectors';
 $string['plugincheckattention'] = 'Hi ha connectors que requereixen la vostra atenció';
 $string['pluginchecknone'] = 'No cal que presteu atenció ara a cap connector';
-$string['pluginchecknotice'] = 'Aquesta pàgina mostra els connectors que poden requerir la vostra atenció durant l\'actualització. Els elements ressaltats inclouen nous connectors que seran instal·lats ara, connectors que seran actualitzats ara i connectors que falten. Els complements es destaquen si hi ha disponibles versions més recents. Us recomanem que comproveu si hi ha versions més recents dels connectors i que actualitzeu el seu codi font abans de continuar amb aquesta actualització de Moodle.';
+$string['pluginchecknotice'] = 'Aquesta pàgina mostra els connectors que poden requerir la vostra atenció durant l\'actualització. Els elements ressaltats inclouen nous connectors que seran instal·lats ara, connectors que seran actualitzats ara i connectors que falten. Els complements es destaquen si n\'hi ha disponibles versions més recents. Us recomanem que comproveu si hi ha versions més recents dels connectors, i que n\'actualitzeu el codi font abans de continuar amb aquesta actualització de Moodle.';
 $string['plugindisable'] = 'Desactiva';
 $string['plugindisabled'] = 'Desactivat';
 $string['pluginenable'] = 'Activa';
@@ -131,8 +131,8 @@ $string['type_editor_plural'] = 'Editors';
 $string['type_enrol'] = 'Mètode d\'inscripció';
 $string['type_enrol_plural'] = 'Mètodes d\'inscripció';
 $string['type_fileconverter'] = 'Conversor de document';
-$string['type_fileconvertermanage'] = 'Gestiona els conversors de documents';
 $string['type_fileconverter_plural'] = 'Conversors de documents';
+$string['type_fileconvertermanage'] = 'Gestiona els conversors de documents';
 $string['type_filter'] = 'Filtre';
 $string['type_filter_plural'] = 'Filtres de text';
 $string['type_format'] = 'Format de curs';
@@ -206,10 +206,6 @@ $string['validationmsg_filesnumber'] = 'No s\'han trobat suficients fitxers en e
 $string['validationmsg_filestatus'] = 'No es poden extraure tots els fitxers';
 $string['validationmsg_filestatus_info'] = 'S\'estava intentant extraure el fitxer {$a->file} i ha succeït un error «{$a->status}».';
 $string['validationmsg_foundlangfile'] = 'S\'ha trobat un fitxer d\'idioma';
-$string['validationmsglevel_debug'] = 'Depuració';
-$string['validationmsglevel_error'] = 'Error';
-$string['validationmsglevel_info'] = 'D\'acord';
-$string['validationmsglevel_warning'] = 'Avís';
 $string['validationmsg_maturity'] = 'Nivell de maduresa declarat';
 $string['validationmsg_maturity_help'] = 'El complement pot declarar el seu nivell de maduresa. Si el mantenidor considera el complement estable, la nivell de maduresa serà MATURITY_STABLE. Tots els altres nivells de maduresa (alfa o beta) s\'haurien de considerar inestables i generen un avís.';
 $string['validationmsg_missingcomponent'] = 'El connector no declara el nom dels components';
@@ -236,6 +232,10 @@ $string['validationmsg_targetexists_help'] = 'El directori en el qual s\'instal�
 $string['validationmsg_targetnotdir'] = 'La ubicació de l\'objectiu està ocupada per un fitxer';
 $string['validationmsg_unknowntype'] = 'Tipus de plugin desconegut';
 $string['validationmsg_versionphpsyntax'] = 'S\'ha detectat sintaxi no admesa al fitxer version.php';
+$string['validationmsglevel_debug'] = 'Depuració';
+$string['validationmsglevel_error'] = 'Error';
+$string['validationmsglevel_info'] = 'D\'acord';
+$string['validationmsglevel_warning'] = 'Avís';
 $string['version'] = 'Versió';
 $string['versiondb'] = 'Versió actual';
 $string['versiondisk'] = 'Nova versió';

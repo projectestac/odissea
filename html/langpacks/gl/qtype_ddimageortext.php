@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'gl', version '3.8'.
  *
- * @package   qtype_ddimageortext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddimageortext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -53,15 +53,15 @@ $string['formerror_notintxleft'] = 'A coordenada x debe ser un número enteiro.'
 $string['formerror_notintytop'] = 'A coordenada y debe ser un número enteiro.';
 $string['formerror_noxleft'] = 'Debe fornecer un valor para a coordenada x para o canto superior esquerdo desta área de solta. Pode arrastrar e soltar a área de solta superior para estabelecer as coordenadas ou inserilas manualmente aquí.';
 $string['formerror_noytop'] = 'Debe fornecer un valor para a coordenada y para o canto superior esquerdo desta área de solta. Pode arrastrar e soltar a área de solta superior para estabelecer as coordenadas ou inserilas manualmente aquí.';
-$string['infinite'] = 'Ilimitado';
+$string['infinite'] = 'Sen límite';
 $string['label'] = 'Texto';
 $string['nolabel'] = 'Sen etiqueta de texto';
 $string['pleasedraganimagetoeachdropregion'] = 'A súa resposta non está completa; arrastre un elemento a cada rexión de solta.';
 $string['pluginname'] = 'Arrastrar e soltar sobre a imaxe';
-$string['pluginnameadding'] = 'Engadindo arrastrar e soltar sobre a imaxe';
-$string['pluginnameediting'] = 'Editando arrastrar e soltar sobre a imaxe';
 $string['pluginname_help'] = 'As preguntas de arrastrar e soltar sobre unha imaxe requiren que o que responde arrastre imaxes ou etiquetas de texto sobre zonas de solta definidas nunha imaxe de fondo. Os elementos arrastrábeis poden agruparse de maneira que todos os elementos dun grupo determinado teñan as mesmas cores como as zonas de solta. Os elementos dobres marcados como ilimitados poden soltarse en máis dunha zona.';
 $string['pluginname_link'] = 'question/type/ddimageortext';
+$string['pluginnameadding'] = 'Engadindo arrastrar e soltar sobre a imaxe';
+$string['pluginnameediting'] = 'Editando arrastrar e soltar sobre a imaxe';
 $string['pluginnamesummary'] = 'As imaxes ou as etiquetas de texto arrástranse e sóltanse en zonas de arrastre nunha imaxe de fondo.';
 $string['previewareaheader'] = 'Vista previa';
 $string['previewareamessage'] = 'Seleccione unha imaxe de fondo, especifique elementos arrastrábeis e defina zonas de solta na imaxe de fondo sobre a que se deben soltar.';
@@ -73,4 +73,4 @@ $string['summarisechoiceno'] = 'Elemento {$a}';
 $string['summariseplace'] = '{$a->no}. {$a->text}';
 $string['summariseplaceno'] = 'Zona de arrastre {$a}';
 $string['xleft'] = 'Esquerda';
-$string['ytop'] = 'Superior';
+$string['ytop'] = 'Arriba';

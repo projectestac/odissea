@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'pt', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -102,16 +102,16 @@ $string['prevpage'] = 'Voltar';
 $string['privacy:metadata:tag'] = 'Os detalhes de cada palavra-chave são armazenados juntamente com a sua descrição e outras informações relacionadas';
 $string['privacy:metadata:tag:description'] = 'A descrição da palavra-chave.';
 $string['privacy:metadata:tag:flag'] = 'Se uma palavra-chave foi sinalizada como inadequada.';
+$string['privacy:metadata:tag:name'] = 'O nome da palavra-chave - Isto é uma versão normalizada do nome.';
+$string['privacy:metadata:tag:rawname'] = 'O nome da palavras-chave - nome que é mostrado.';
+$string['privacy:metadata:tag:timemodified'] = 'A última vez que a palavra-chave foi modificada.';
+$string['privacy:metadata:tag:userid'] = 'O ID do utilizador que criou a palavra-chave pela primeira vez.';
 $string['privacy:metadata:taginstance'] = 'A hiperligação entre cada palavra-chave e onde é usada.';
 $string['privacy:metadata:taginstance:ordering'] = 'A ordem relativa desta palavra-chave.';
 $string['privacy:metadata:taginstance:tagid'] = 'A hiperligação para a palavra-chave.';
 $string['privacy:metadata:taginstance:timecreated'] = 'A data/hora em que esta palavra-chave foi ligada ao objetivo.';
 $string['privacy:metadata:taginstance:timemodified'] = 'A data/hora em que esta palavra-chave foi modificada para o objetivo.';
 $string['privacy:metadata:taginstance:tiuserid'] = 'Onde o conteúdo partilhado pode ser marcado individualmente pelos utilizadores, o proprietário da instância da palavras-chave é armazenado.';
-$string['privacy:metadata:tag:name'] = 'O nome da palavra-chave - Isto é uma versão normalizada do nome.';
-$string['privacy:metadata:tag:rawname'] = 'O nome da palavras-chave - nome que é mostrado.';
-$string['privacy:metadata:tag:timemodified'] = 'A última vez que a palavra-chave foi modificada.';
-$string['privacy:metadata:tag:userid'] = 'O ID do utilizador que criou a palavra-chave pela primeira vez.';
 $string['ptags'] = 'Palavras-chave definidas pelo utilizador (separadas por vírgulas)';
 $string['relatedblogs'] = 'Entradas de blogue mais recentes';
 $string['relatedtags'] = 'Palavras-chave relacionadas';
@@ -147,11 +147,11 @@ $string['tag'] = 'palavra-chave';
 $string['tagarea_blog_external'] = 'Entradas de blogue externas';
 $string['tagarea_course'] = 'Disciplinas';
 $string['tagarea_course_modules'] = 'Atividades e recursos';
+$string['tagarea_post'] = 'Entradas de blogue';
+$string['tagarea_user'] = 'Interesses do utilizador';
 $string['tagareaenabled'] = 'Ativo';
 $string['tagareaname'] = 'Nome';
-$string['tagarea_post'] = 'Entradas de blogue';
 $string['tagareas'] = 'Áreas de palavras-chave';
-$string['tagarea_user'] = 'Interesses do utilizador';
 $string['tagcollection'] = 'Coleção de palavras-chave';
 $string['tagcollection_help'] = 'Coleções de palavras-chave são conjuntos de palavras-chave para áreas diferentes. Por exemplo, pode dispor de uma coleção de palavras-chave oficiais usada para disciplinas sendo as palavras-chave para blogues e interesses do utilizador mantidas numa coleção separada. Quando um utilizador clica numa palavra-chave, a página da palavra-chave mostra apenas itens com essa palavra-chave na mesma coleção. As palavras-chave podem ser adicionadas automaticamente a uma coleção consoante a área em que são aplicadas ou podem ser adicionadas manualmente como palavras chave oficiais.';
 $string['tagcollections'] = 'Coleções de palavras-chave';

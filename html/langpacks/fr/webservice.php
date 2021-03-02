@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'webservice', language 'fr', version '3.8'.
  *
- * @package   webservice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     webservice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,7 @@ $string['apiexplorernotavalaible'] = 'L\'explorateur API n\'est pas encore dispo
 $string['arguments'] = 'Paramètres';
 $string['authmethod'] = 'Méthode d\'authentification';
 $string['callablefromajax'] = 'Appelable depuis AJAX';
-$string['cannotcreatetoken'] = 'Pas les permissions requises pour créer un jeton de service web pour le service {$a}.';
+$string['cannotcreatetoken'] = 'Pas de droit d\'accès pour créer un jeton de service web pour le service {$a}.';
 $string['cannotgetcoursecontents'] = 'Impossible d\'obtenir le contenu du cours';
 $string['checkusercapability'] = 'Vérifier la capacité utilisateur';
 $string['checkusercapabilitydescription'] = 'L\'utilisateur doit avoir les capacités correspondant aux protocoles utilisé, par exemple webservice/rest:use ou webservice/soap:use. Pour ce faire, veuillez créer un rôle « Web services » avec les capacités adéquates et l\'attribuer à l\'utilisateur web services comme rôle système.';
@@ -74,7 +74,7 @@ $string['enabled'] = 'Activé';
 $string['enabledocumentation'] = 'Activer la documentation développeur';
 $string['enabledocumentationdescription'] = 'Une documentation détaillée des services web est disponible pour les protocoles activés.';
 $string['enableprotocols'] = 'Activer des protocoles';
-$string['enableprotocolsdescription'] = 'Au moins un protocole doit être activé. Pour des raisons de sécurité, seuls les protocoles réellement utilisés devraient être activés.';
+$string['enableprotocolsdescription'] = 'Au moins un protocole doit être activé. Pour des raisons de sécurité, seuls les protocoles réellement utilisés doivent être activés.';
 $string['enablews'] = 'Activer les services web';
 $string['enablewsdescription'] = 'Les services web doivent être activés dans les Fonctions avancées.';
 $string['entertoken'] = 'Veuillez saisir une clef (un jeton) de sécurité';

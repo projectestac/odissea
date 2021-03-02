@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'url', language 'ko', version '3.8'.
  *
- * @package   url
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     url
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = '변수 선택 ...';
-$string['clicktoopen'] = 'URL을 열려면 {$a} 를 클릭';
+$string['clicktoopen'] = '자원을 열려면 {$a} 링크를 클릭';
 $string['configdisplayoptions'] = '이용할 수 있는 모든 선택사항을 선택해도, 기존 설정은 변경되지 않음. 복수의 내용을 선택하려면 CTRL키를 누른 채 선택.';
 $string['configframesize'] = '웹 페이지나 업로드된 파일이 프레임안에 보여진다면 이 값은 상단 프레임(찾아가기를 포함하는)의 높이(픽셀로 표시)입니다.';
 $string['configrolesinparams'] = '가능한 파라메터 변수 목록에서 지역화된 역할 이름을 포함시키기를 원한다면 활성화 하십시요.';
@@ -35,7 +35,6 @@ $string['contentheader'] = '내용';
 $string['createurl'] = 'URL 만들기';
 $string['displayoptions'] = '가능한 표시 옵션';
 $string['displayselect'] = '표시';
-$string['displayselectexplain'] = '가급적 모든 주소지를 표시하는 데 적합한 표시 유형을 선택';
 $string['displayselect_help'] = '이 설정은 URL 파일 형식 및 브라우저가 엠베딩을 허용하는지와 함께 URL이 어떻게 표시될지를 결정합니다.
 
 옵션은 다음과 같습니다.
@@ -48,6 +47,7 @@ $string['displayselect_help'] = '이 설정은 URL 파일 형식 및 브라우�
 * 프레임안에 - URL이 찾아가기 막대 및 URL설명 아래 프레임안에 표시됩니다.
 * 새 창 -URL이 메뉴와 주소 막대와 함께 새 브라우저 창에 표시됩니다.
 ';
+$string['displayselectexplain'] = '가급적 모든 주소지를 표시하는 데 적합한 표시 유형을 선택';
 $string['externalurl'] = '외부 URL';
 $string['framesize'] = '프레임의 높이';
 $string['invalidstoredurl'] = '이 자원을 표시할 수 없습니다. URL이 잘못되었습니다.';
@@ -55,7 +55,7 @@ $string['invalidurl'] = '입력한 URL이 잘못되었습니다.';
 $string['modulename'] = 'URL';
 $string['modulenameplural'] = 'URLs';
 $string['page-mod-url-x'] = '모든 URL 모듈 페이지';
-$string['parameterinfo'] = '배개변수=값';
+$string['parameterinfo'] = '&amp;파라메터=변수';
 $string['parametersheader'] = 'URL 변수';
 $string['parametersheader_help'] = '내부 무들 변수가 URL에 자동으로 첨부될 수 있습니다. 각 텍스트 박스에 파라메터에 대한 이름을 입력하고 필요한 대응되는 변수를 선택하세요.';
 $string['pluginadministration'] = 'URL 관리';
@@ -65,7 +65,7 @@ $string['popupheightexplain'] = '기본 팝업창의 높이 지정 ';
 $string['popupwidth'] = '팝업창 너비(픽셀)';
 $string['popupwidthexplain'] = '기본 팝업창의 너비 지정 ';
 $string['printintro'] = 'URL 설명 표시';
-$string['printintroexplain'] = '내용 하단에 URL 설명 표시. 어떤 설명은 활성화 시켰음에도 불구하고 표시되지 않는 경우도 있다.';
+$string['printintroexplain'] = '내용 하단에 URL 설명을 표시합니다. 어떤 표시 유형은 활성화 시켰음에도 불구하고 표시되지 않는 경우가 있습니다다.';
 $string['rolesinparams'] = '변수에 역할명 포함';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = '서버 URL';

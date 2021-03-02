@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth', language 'pt', version '3.8'.
  *
- * @package   auth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,17 +37,13 @@ $string['auth_changepasswordurl_expl'] = 'Especifique o URL a enviar aos utiliza
 $string['auth_changingemailaddress'] = 'Foi pedida uma alteração do e-mail  {$a->oldemail} para {$a->newemail}. Por questões de segurança, é enviada uma mensagem para o novo e-mail para garantir que este lhe pertence. A alteração de e-mail terá efeito assim que abrir o URL enviado na mensagem.';
 $string['auth_common_settings'] = 'Definições comuns';
 $string['auth_data_mapping'] = 'Mapeamento de dados';
-$string['authenticationoptions'] = 'Opções da autenticação';
 $string['auth_fieldlock'] = 'Bloquear valor';
 $string['auth_fieldlock_expl'] = '<p><b>Valor bloqueado:</b> Se ativo, irá prevenir que os utilizadores e administradores do Moodle editem um campo diretamente. Utilize esta opção se quiser manter os dados no sistema de autenticação externo. </p>';
 $string['auth_fieldlockfield'] = 'Bloquear valor ({$a})';
 $string['auth_fieldlocks'] = 'Bloquear campos de utilizador';
 $string['auth_fieldlocks_help'] = '<p>Pode bloquear campos de perfil dos utilizadores. Esta configuração é útil para sites onde os dados dos utilizadores são mantidos manualmente pelos administradores, editando os registos dos utilizadores ou fazendo o carregamento utilizando a ferramenta \'Carregar utilizadores\'. Se está a bloquear campos requeridos pelo Moodle, verifique que fornece esses dados ao criar contas de utilizadores, caso contrário, as contas não serão válidas.</p><p>Pondere a utilização do modo de bloqueio \'Desbloquear se vazio\' para evitar este problema.</p>';
 $string['auth_fieldmapping'] = 'Mapeamento de dados ({$a})';
-$string['authinstructions'] = 'Deixe este campo em branco para que as instruções de autenticação predefinidas sejam mostradas na página de autenticação. Se pretender disponibilizar instruções personalizadas, introduza-as aqui.';
 $string['auth_invalidnewemailkey'] = 'Erro: se está a tentar confirmar uma alteração de e-mail, deve ter cometido um erro ao copiar o URL enviado no e-mail de confirmação. Por favor, copie novamente o URL e tente novamente.';
-$string['authloginviaemail'] = 'Permitir autenticação por e-mail';
-$string['authloginviaemail_desc'] = 'Permitir que os utilizadores usem o nome de utilizador ou endereço de e-mail (se for único) para se autenticarem no site.';
 $string['auth_multiplehosts'] = 'Podem ser especificados vários servidores OU endereços (por exemplo, serv1.com;serv2.com;serv3.com OU xxx.xxx.xxx.xxx;yyy.yyy.yyy.yyy)';
 $string['auth_notconfigured'] = 'O método de autenticação {$a} não está configurado.';
 $string['auth_outofnewemailupdateattempts'] = 'Esgotou o número de tentativas disponíveis para atualizar o seu e-mail. O seu pedido de atualização foi cancelado.';
@@ -66,12 +62,16 @@ $string['auth_updatelocal_expl'] = '<p><b>Atualização local:</b> Se ativo, o c
 $string['auth_updatelocalfield'] = 'Atualizar campo local ({$a})';
 $string['auth_updateremote'] = 'Atualizar campo externo';
 $string['auth_updateremote_expl'] = '<p><b>Atualização externa:</b> Se ativo, a autorização externa será atualizada quando o registo do utilizador for atualizado. Os campos deverão estar desbloquados para que sejam permitidas edições.</p>';
-$string['auth_updateremotefield'] = 'Atualizar campo externo ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Nota</b>: Para atualizar dados externos do LDAP é necessário que defina o \'binddn\' e o \'bindpw\' para um \'utilizador bind\' com permissões de edição para todos os registos de utilizador. Atualmente não são preservados os atributos \'multi-valued\' e irá remover valores extra aquando da atualização.</p>';
+$string['auth_updateremotefield'] = 'Atualizar campo externo ({$a})';
 $string['auth_user_create'] = 'Permitir a criação de utilizadores';
 $string['auth_user_creation'] = 'Novos utilizadores (anónimos) podem criar contas na origem de autenticação externa e confirmá-las por e-mail. Se ativar esta opção, lembre-se de configurar as opções no módulo específico para criação de utilizadores.';
 $string['auth_usernameexists'] = 'O nome escolhido já existe. Escolha outro.';
 $string['auth_usernotexist'] = 'Não é possível atualizar o utilizador \'{$a}\' porque não existe na base de dados';
+$string['authenticationoptions'] = 'Opções da autenticação';
+$string['authinstructions'] = 'Deixe este campo em branco para que as instruções de autenticação predefinidas sejam mostradas na página de autenticação. Se pretender disponibilizar instruções personalizadas, introduza-as aqui.';
+$string['authloginviaemail'] = 'Permitir autenticação por e-mail';
+$string['authloginviaemail_desc'] = 'Permitir que os utilizadores usem o nome de utilizador ou endereço de e-mail (se for único) para se autenticarem no site.';
 $string['auto_add_remote_users'] = 'Adicionar automaticamente utilizadores remotos';
 $string['cannotmapfield'] = 'O campo "{$a->fieldname}" não pode ser mapeado porque o nome curto "{$a->shortname}" é muito longo. Para ser possível o mapeamento, encurte o campo de perfil \'Nome curto\' para {$a->charlimit} caracteres. <a href="{$a->link}">Editar campos de perfil do utilizador</a>';
 $string['changepassword'] = 'Endereço para alteração de senha';
@@ -86,7 +86,7 @@ $string['emailnowexists'] = 'O endereço de e-mail que está a tentar definir no
 $string['emailupdate'] = 'Atualização do endereço de e-mail';
 $string['emailupdatemessage'] = 'Caro(a) {$a->fullname},
 
-Foi pedida uma alteração do e-mail da sua conta de utilizador em {$a->site}.
+Foi pedida uma alteração do e-mail da sua conta de utilizador na plataforma de e-learning {$a->site}.
 Para confirmar esta alteração aceda ao seguinte endereço web:
 
 {$a->url}
@@ -106,11 +106,11 @@ $string['eventuserloggedin'] = 'Utilizador autenticou-se';
 $string['eventuserloggedinas'] = 'Utilizador entrou como outro utilizador';
 $string['eventuserloginfailed'] = 'Falhou a autenticação do utilizador';
 $string['forcechangepassword'] = 'Obrigar alteração da senha';
-$string['forcechangepasswordfirst_help'] = 'Obrigar os utilizadores a alterar a senha na sua primeira autenticação no Moodle.';
 $string['forcechangepassword_help'] = 'Obrigar os utilizadores a alterar a senha na sua próxima autenticação no Moodle.';
+$string['forcechangepasswordfirst_help'] = 'Obrigar os utilizadores a alterar a senha na sua primeira autenticação no Moodle.';
 $string['forgottenpassword'] = 'Se inserir um URL aqui, será usado neste site como página para recuperação de senha. Este campo foi criado para sites onde a totalidade das senhas é gerida externamente e não pelo Moodle. Deixe em branco se pretende usar a página de recuperação de senha predefinida do Moodle.';
 $string['forgottenpasswordurl'] = 'URL para recuperação de senha';
-$string['getrecaptchaapi'] = 'Para usar o reCAPTCHA, tem de obter uma chave da API em <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
+$string['getrecaptchaapi'] = 'Para poder usar o reCAPTCHA, tem de obter uma chave de API em <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
 $string['guestloginbutton'] = 'Botão de entrada como visitante';
 $string['incorrectpleasetryagain'] = 'Incorreto. Por favor, tente novamente.';
 $string['infilefield'] = 'Campo necessário no ficheiro';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essay', language 'pt', version '3.8'.
  *
- * @package   qtype_essay
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essay
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,10 +44,10 @@ $string['mustrequirefewer'] = 'Não pode exigir mais anexos do que aqueles que p
 $string['nlines'] = '{$a} linhas';
 $string['nonexistentfiletypes'] = 'Os seguintes tipos de ficheiros não foram reconhecidos: {$a}';
 $string['pluginname'] = 'Desenvolvimento';
-$string['pluginnameadding'] = 'A adicionar pergunta de desenvolvimento';
-$string['pluginnameediting'] = 'A editar pergunta de desenvolvimento';
 $string['pluginname_help'] = 'Ao responder a uma pergunta, o aluno pode carregar um ou mais ficheiros e/ou inserir texto online. Pode ser fornecido um modelo de resposta. As respostas devem ser avaliadas manualmente.';
 $string['pluginname_link'] = 'pergunta/tipo/desenvolvimento';
+$string['pluginnameadding'] = 'A adicionar pergunta de desenvolvimento';
+$string['pluginnameediting'] = 'A editar pergunta de desenvolvimento';
 $string['pluginnamesummary'] = 'Permitir responder com carregamento de ficheiro e/ou texto online. Este tipo de perguntas tem de ser avaliado manualmente.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Desenvolvimento não armazena quaisquer dados pessoais.';
 $string['responsefieldlines'] = 'Tamanho da caixa de resposta';
@@ -57,5 +57,5 @@ $string['responsenotrequired'] = 'A introdução de texto é opcional';
 $string['responseoptions'] = 'Opções de resposta';
 $string['responserequired'] = 'Exigir texto';
 $string['responsetemplate'] = 'Modelo de resposta';
-$string['responsetemplateheader'] = 'Modelo de resposta';
 $string['responsetemplate_help'] = 'Qualquer texto inserido aqui será exibido na caixa de resposta quando inicia uma nova tentativa de resposta à pergunta.';
+$string['responsetemplateheader'] = 'Modelo de resposta';

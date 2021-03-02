@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'fr', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -102,16 +102,16 @@ $string['prevpage'] = 'Retour';
 $string['privacy:metadata:tag'] = 'Les informations de chaque tag sont enregistrées avec leur description et d\'autres informations.';
 $string['privacy:metadata:tag:description'] = 'Description du tag.';
 $string['privacy:metadata:tag:flag'] = 'Si le tag a été signalé comme inapproprié.';
+$string['privacy:metadata:tag:name'] = 'Le nom du tag – il s\'agit de la version normalisée du nom.';
+$string['privacy:metadata:tag:rawname'] = 'Nom du tag tel qu\'affiché.';
+$string['privacy:metadata:tag:timemodified'] = 'La date et l\'heure de la dernière modification du tag.';
+$string['privacy:metadata:tag:userid'] = 'L\'identifiant de l\'utilisateur ayant créé le tag.';
 $string['privacy:metadata:taginstance'] = 'Lien entre chaque tag et où il est utilisé.';
 $string['privacy:metadata:taginstance:ordering'] = 'Ordre relatif du tag.';
 $string['privacy:metadata:taginstance:tagid'] = 'Lien vers le tag.';
 $string['privacy:metadata:taginstance:timecreated'] = 'Date et heure du lien du tag vers sa cible.';
 $string['privacy:metadata:taginstance:timemodified'] = 'Date et heure de la modification du lien du tag.';
 $string['privacy:metadata:taginstance:tiuserid'] = 'Utilisateurs propriétaire de cet instance de tag, là où du contenu partagé peut être taggé individuellement.';
-$string['privacy:metadata:tag:name'] = 'Le nom du tag – il s\'agit de la version normalisée du nom.';
-$string['privacy:metadata:tag:rawname'] = 'Nom du tag tel qu\'affiché.';
-$string['privacy:metadata:tag:timemodified'] = 'La date et l\'heure de la dernière modification du tag.';
-$string['privacy:metadata:tag:userid'] = 'L\'identifiant de l\'utilisateur ayant créé le tag.';
 $string['ptags'] = 'Tags personnels (séparés par des virgules)';
 $string['relatedblogs'] = 'Articles de blog les plus récents';
 $string['relatedtags'] = 'Tags';
@@ -147,11 +147,11 @@ $string['tag'] = 'Tag';
 $string['tagarea_blog_external'] = 'Articles de blog externes';
 $string['tagarea_course'] = 'Cours';
 $string['tagarea_course_modules'] = 'Activités et ressources';
+$string['tagarea_post'] = 'Articles de blog';
+$string['tagarea_user'] = 'Centres d\'intérêt';
 $string['tagareaenabled'] = 'Activé';
 $string['tagareaname'] = 'Nom';
-$string['tagarea_post'] = 'Articles de blog';
 $string['tagareas'] = 'Zones de tag';
-$string['tagarea_user'] = 'Centres d\'intérêt';
 $string['tagcollection'] = 'Collection de tag';
 $string['tagcollection_help'] = 'Les collections de tags sont des ensembles de tags de diverses zones. Par exemple, une collection de tags standards peut être utilisée pour taguer des cours, tout en utilisant une autre collection de tags pour les articles de blogs ou les centres d\'intérêts des participants. Lorsqu\'un utilisateur clique sur un tag, la page des tags n\'affiche que les tags de la même collection. Les tags peuvent s\'ajouter automatiquement à une collection en fonction de la zone taguée ou ils peuvent être ajouter manuellement comme tags standards.';
 $string['tagcollections'] = 'Collections de tag';

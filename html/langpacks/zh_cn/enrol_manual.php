@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'zh_cn', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,9 +58,9 @@ $string['expirymessageenrollersubject'] = '选课截止通知';
 $string['manual:config'] = '配置人工选课实例';
 $string['manual:enrol'] = '加入用户';
 $string['manual:manage'] = '管理用户选课';
-$string['manualpluginnotinstalled'] = '“人工选课”插件没有安装';
 $string['manual:unenrol'] = '撤销用户的选课';
 $string['manual:unenrolself'] = '撤销自己的选课';
+$string['manualpluginnotinstalled'] = '“人工选课”插件没有安装';
 $string['messageprovider:expiry_notification'] = '人工选课截止通知';
 $string['now'] = '现在';
 $string['pluginname'] = '人工选课';
@@ -69,9 +69,9 @@ $string['selectcohorts'] = '选择群组';
 $string['selectusers'] = '选择用户';
 $string['status'] = '启用人工选课';
 $string['status_desc'] = '允许内部选课的用户访问课程。大多数情况都应该启用这个选项。';
+$string['status_help'] = '此设置决定用户是否可以被人工选课。教师等有权限的用户可以在课程管理设置中的一个链接里人工选择用户，加入课程。';
 $string['statusdisabled'] = '已禁用';
 $string['statusenabled'] = '已启用';
-$string['status_help'] = '此设置决定用户是否可以被人工选课。教师等有权限的用户可以在课程管理设置中的一个链接里人工选择用户，加入课程。';
 $string['unenrol'] = '撤销选课';
 $string['unenrolselectedusers'] = '撤销选定用户的选课';
 $string['unenrolselfconfirm'] = '您确定要撤销您自己对“{$a}”课程的选课吗？';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_numerical', language 'eu', version '3.8'.
  *
- * @package   qtype_numerical
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_numerical
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptederror'] = 'Onartutako errorea';
-$string['addmoreanswerblanks'] = 'Zuriguneak {no} erantzun gehiagotarako';
-$string['addmoreunitblanks'] = 'Zuriguneak {no} unitate gehiagotarako';
+$string['addmoreanswerblanks'] = 'Zuriuneak {no} erantzun gehiagotarako';
+$string['addmoreunitblanks'] = 'Zuriuneak {no} unitate gehiagotarako';
 $string['answercolon'] = 'Erantzuna:';
 $string['answererror'] = 'Errorea';
 $string['answermustbenumberorstar'] = 'Erantzunak zenbakia behar du izan, adibidez -1.234 edo 3e8, eta bestela \'*\'.';
@@ -64,17 +64,17 @@ $string['onlynumerical'] = 'Unitateak ez dira ezertarako erabiltzen. Zenbakizko 
 $string['pleaseenterananswer'] = 'Mesedez, idatzi erantzun bat.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Mesedez sartu zure erantzuna milakakoen banatzailea ({$a}) erabili gabe.';
 $string['pluginname'] = 'Zenbakizkoa';
+$string['pluginname_help'] = 'Ikaslearen ikuspuntutik, zenbakizko galdera bat erantzun laburreko galdera baten modukoa da. Ezberdintasuna zenbakizko erantzunek errore onargarri bat izan dezaketela da. Honek muga batzuen barruko erantzunak erantzun bakar gisa kalifikatzeko aukera ematen du. Esaterako, erantzun zuzena 10 bada eta errore onargarria 2 bada, 8 eta 12 arteko erantzun guztiak zuzentzat hartuko dira.';
 $string['pluginnameadding'] = 'Zenbakizko galdera bat gehitzen';
 $string['pluginnameediting'] = 'Zenbakizko galdera editatzen';
-$string['pluginname_help'] = 'Ikaslearen ikuspuntutik, zenbakizko galdera bat erantzun laburreko galdera baten modukoa da. Ezberdintasuna zenbakizko erantzunek errore onargarri bat izan dezaketela da. Honek muga batzuen barruko erantzunak erantzun bakar gisa kalifikatzeko aukera ematen du. Esaterako, erantzun zuzena 10 bada eta errore onargarria 2 bada, 8 eta 12 arteko erantzun guztiak zuzentzat hartuko dira.';
 $string['pluginnamesummary'] = 'Zenbakizko erantzun bat behar du, gehienetan unitatetan, eta erantzun-tarte batekin alderatuta kalifikatzen da, malgutasun-tartearekin.';
-$string['privacy:metadata'] = 'Zenbakizkoa galdera-mota pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Zenbakizkoa galdera mota pluginak ez du datu pertsonalik biltzen.';
 $string['relative'] = 'Erlatiboa';
 $string['rightexample'] = 'eskuinean, adibidez 1.00cm edo 1.00km';
 $string['selectunit'] = 'Aukeratu unitate bat';
 $string['selectunits'] = 'Aukeratu unitateak';
 $string['studentunitanswer'] = 'Unitateak sartu behar dira erabilita';
-$string['tolerancetype'] = 'Tolerantzia-mota';
+$string['tolerancetype'] = 'Tolerantzia mota';
 $string['unit'] = 'Unitatea';
 $string['unitappliedpenalty'] = 'Kalifikazio hauek {$a}-ko penalizazioa dute unitate egokia ez jartzeagatik.';
 $string['unitchoice'] = 'aukera anitzeko aukeraketa';
@@ -82,7 +82,7 @@ $string['unitedit'] = 'Editatu unitatea';
 $string['unitgraded'] = 'Unitatea derrigorrezkoa da, eta kalifikatuko da.';
 $string['unithandling'] = 'Unitatearen erabilera';
 $string['unitincorrect'] = 'Ez duzu unitate zuzena eman.';
-$string['unitmandatory'] = 'Beharrezkoa';
+$string['unitmandatory'] = 'Derrigorrezkoa';
 $string['unitmandatory_help'] = '* Erantzuna idatzitako unitatea erabilita kalifikatuko da.
 
 * Unitatearen penalizazioa aplikatuko da unitatearen eremua hutsik utziz gero.';
@@ -108,6 +108,6 @@ $string['validnumberformats_help'] = '* zenbaki arruntak 13500.67, 13 500.67, 13
 
 * era esponentzialetarako, adibidez 1.350067 * 10<sup>4</sup>, erabili 1.350067 E4 edo 1.350067 E04';
 $string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 edo 1.350067 E04';
-$string['xmustbenumeric'] = '{$a}-(e)k zenbakia izan behar du.';
-$string['xmustnotbenumeric'] = '{$a}-(e)k ezin da zenbakia.';
+$string['xmustbenumeric'] = '{$a}(e)k zenbakia izan behar du.';
+$string['xmustnotbenumeric'] = '{$a}(e)k ezin da zenbakia.';
 $string['youmustenteramultiplierhere'] = 'Biderkatzaile bat zehaztu behar duzu';

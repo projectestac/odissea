@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'pt', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -210,13 +210,13 @@ $string['howlong'] = 'Quanto tempo demorou a completar este inquérito?';
 $string['howlongoptions'] = 'Menos de 1 min, 1 a 2 min, 2 a 3 min, 3 a 4 min, 4 a 5 min, 5 a 10 min, mais de 10';
 $string['ifoundthat'] = 'Achei isso';
 $string['indicator:cognitivedepth'] = 'Compreensão do Inquérito';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Inquérito predefinido.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Inquérito';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Inquérito durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido)';
-$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Inquérito predefinido.';
 $string['indicator:socialbreadth'] = 'Socialização do Inquérito predefinido';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Inquérito predefinido.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Inquérito';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Inquérito durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
-$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Inquérito predefinido.';
 $string['introtext'] = 'Texto introdutório';
 $string['invalidsurveyid'] = 'O ID do questionário está incorreto';
 $string['invalidtmptid'] = 'Modelo ID inválido';
@@ -263,13 +263,13 @@ $string['seemoredetail'] = 'Clique aqui para ver mais detalhes';
 $string['selectedquestions'] = 'Perguntas selecionadas numa escala, todos os alunos';
 $string['summary'] = 'Sumário';
 $string['survey:addinstance'] = 'Adicionar novo inquérito predefinido';
-$string['surveycompleted'] = 'Concluiu o inquérito. O gráfico abaixo mostra um sumário dos seus resultados comparados com as médias da turma.';
-$string['surveycompletednograph'] = 'Completou o presente inquérito.';
 $string['survey:download'] = 'Descarregar respostas';
-$string['surveygraph'] = 'Gráfico do inquérito';
-$string['surveyname'] = 'Nome do inquérito';
 $string['survey:participate'] = 'Responder ao inquérito';
 $string['survey:readresponses'] = 'Ver respostas';
+$string['surveycompleted'] = 'Concluiu o inquérito. O gráfico abaixo mostra um sumário dos seus resultados comparados com as médias da turma.';
+$string['surveycompletednograph'] = 'Completou o presente inquérito.';
+$string['surveygraph'] = 'Gráfico do inquérito';
+$string['surveyname'] = 'Nome do inquérito';
 $string['surveysaved'] = 'O inquérito foi guardado';
 $string['surveytype'] = 'Tipo de inquérito';
 $string['surveytype_help'] = 'Existem 3 tipos de inquéritos disponíveis:

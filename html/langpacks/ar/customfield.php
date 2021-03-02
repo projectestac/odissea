@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,25 +12,26 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customfield', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'customfield', language 'ar', version '3.8'.
  *
- * @package   customfield
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     customfield
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['action'] = 'الإجراء';
+$string['action'] = 'إجراء';
 $string['addingnewcustomfield'] = 'إضافة {$a} جديد';
 $string['addnewcategory'] = 'إضافة فئة جديدة';
 $string['afterfield'] = 'بعد حقل {$a}';
 $string['categorynotfound'] = 'الفئة غير موجود';
 $string['checked'] = 'تم اختباره';
-$string['commonsettings'] = 'الاعدادات العامة';
+$string['commonsettings'] = 'الإعدادات العامة';
 $string['componentsettings'] = 'إعدادات المكون';
 $string['confirmdeletecategory'] = 'هل أنت متأكد من رغبتك بحذف هذا الفئة؟ سيتم أيضًا حذف جميع الحقول الموجودة داخل الفئة وجميع البيانات المرتبطة بها. لا يمكن التراجع عن هذا الإجراء.';
 $string['confirmdeletefield'] = 'هل أنت متأكد من رغبتك بحذف هذا الحقل وجميع البيانات المرتبطة به؟
@@ -60,7 +60,7 @@ $string['fieldshortname'] = 'الاسم المختصر';
 $string['formfieldcheckshortname'] = 'الاسم المختصر موجود مسبقاً';
 $string['invalidshortnameerror'] = 'يمكن أن يحتوي الاسم المختصر فقط على أحرف لاتينية صغيرة؛ أبجدية رقمية وشرطات سفلية (_).';
 $string['isdataunique'] = 'بيانات فريدة';
-$string['isdataunique_help'] = 'هل يجب أن تكون البيانات فريدة؟';
+$string['isdataunique_help'] = 'هذا الإعداد يحدد ما إذا كان ينبغي للقيمة المدخلة أن تكون فريدة وغير مُدخلة سابقاً.';
 $string['isfieldrequired'] = 'مطلوب';
 $string['isfieldrequired_help'] = 'الحقل المطلوب هو حقل لا بد من إملائه بقيمة قبل تسليم النموذج.';
 $string['link'] = 'الرابط';
@@ -79,7 +79,7 @@ $string['privacy:metadata:customfield_data:charvalue'] = 'قيمة البيان�
 $string['privacy:metadata:customfield_data:contextid'] = 'مُعرَّف السياق حيث تم حفظ البيانات';
 $string['privacy:metadata:customfield_data:decvalue'] = 'قيمة البيانات، عندما تكون عشرية';
 $string['privacy:metadata:customfield_data:fieldid'] = 'مُعرَّف تعريف الحقل';
-$string['privacy:metadata:customfield_data:instanceid'] = 'مُعرَّف العينة المرتبطة بالبيانات';
+$string['privacy:metadata:customfield_data:instanceid'] = 'الرقم التعريفي المرتبط بالبيانات';
 $string['privacy:metadata:customfield_data:intvalue'] = 'قيمة البيانات، عندما تكون رقماً صحيحاً';
 $string['privacy:metadata:customfield_data:shortcharvalue'] = 'قيمة البيانات عندما تكون حرفية قصيرة';
 $string['privacy:metadata:customfield_data:timecreated'] = 'وقت إنشاء البيانات';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'ja', version '3.8'.
  *
- * @package   qtype_shortanswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_shortanswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,8 +38,8 @@ $string['filloutoneanswer'] = '1つ以上の考えられる答えを入力して
 $string['notenoughanswers'] = 'このタイプの問題には少なくとも {$a} 件の答えが必要です。';
 $string['pleaseenterananswer'] = '答えを入力してください。';
 $string['pluginname'] = '記述問題';
+$string['pluginname_help'] = '問題 (イメージを含む) に対して解答者が言葉またはフレーズを入力します。異なる評点を持つ数個の正解を設定することができます。「大文字小文字の区別」オプションで「はい、文字の大小は合致する必要があります」が選択された場合、あなたは「Word」と「word」に異なる評点をつけることができます。';
 $string['pluginnameadding'] = '記述問題の追加';
 $string['pluginnameediting'] = '記述問題の編集';
-$string['pluginname_help'] = '問題 (イメージを含む) に対して解答者が言葉またはフレーズを入力します。異なる評点を持つ数個の正解を設定することができます。「大文字小文字の区別」オプションで「はい、文字の大小は合致する必要があります」が選択された場合、あなたは「Word」と「word」に異なる評点をつけることができます。';
 $string['pluginnamesummary'] = '様々な答えのモデルと比較して評定される1つまたは少数の言葉を入力することができます。答えにはワイルドカードを含むことができます。';
 $string['privacy:metadata'] = '記述問題タイププラグインはいかなる個人データも保存しません。';

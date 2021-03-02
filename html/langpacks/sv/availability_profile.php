@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,28 +12,43 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability_profile', language 'sv', version '3.8'.
  *
- * @package   availability_profile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability_profile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['conditiontitle'] = 'Fält för användarprofil';
-$string['description'] = 'Styr åtkomst baserad på fält i studentenprofilen';
+$string['conditiontitle'] = 'Fält i användarprofil';
+$string['description'] = 'Styr åtkomst via fält i användarprofil.';
 $string['error_selectfield'] = 'Du måste välja ett profilfält';
 $string['error_setvalue'] = 'Du måste skriva in ett värde';
+$string['label_operator'] = 'Jämförelsemetod';
+$string['label_value'] = 'Jämförelsevärde';
+$string['missing'] = '(Saknar anpassade fält: {$a})';
 $string['op_contains'] = 'innehåller';
 $string['op_doesnotcontain'] = 'innehåller inte';
 $string['op_endswith'] = 'slutar med';
-$string['op_isempty'] = 'är tom';
+$string['op_isempty'] = 'är tomt';
 $string['op_isequalto'] = 'är lika med';
 $string['op_isnotempty'] = 'är inte tomt';
-$string['op_startswith'] = 'inleds med';
-$string['pluginname'] = 'Begränsning genom profil';
+$string['op_startswith'] = 'börjar med';
+$string['pluginname'] = 'Begränsning via profil';
+$string['privacy:metadata'] = 'Pluginmodulen Begränsning via profil lagrar ingen personlig information.';
+$string['requires_contains'] = 'Fältet <strong>{$a->field}</strong> innehåller <strong>{$a->value}</strong>';
+$string['requires_doesnotcontain'] = 'Fältet <strong>{$a->field}</strong> innehåller inte <strong>{$a->value}</strong>';
+$string['requires_endswith'] = 'Fältet <strong>{$a->field}</strong> slutar med <strong>{$a->value}</strong>';
+$string['requires_isempty'] = 'Fältet <strong>{$a->field}</strong> är tomt';
+$string['requires_isequalto'] = 'Fältet <strong>{$a->field}</strong> är <strong>{$a->value}</strong>';
+$string['requires_isnotempty'] = 'Fältet <strong>{$a->field}</strong> är inte tomt';
+$string['requires_notendswith'] = 'Fältet <strong>{$a->field}</strong> slutar inte med <strong>{$a->value}</strong>';
+$string['requires_notisequalto'] = 'Fältet <strong>{$a->field}</strong> är inte <strong>{$a->value}</strong>';
+$string['requires_notstartswith'] = 'Fältet <strong>{$a->field}</strong> börjar inte med <strong>{$a->value}</strong>';
+$string['requires_startswith'] = 'Fältet <strong>{$a->field}</strong> börjar med <strong>{$a->value}</strong>';
 $string['title'] = 'Användarprofil';

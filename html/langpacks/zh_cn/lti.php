@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,24 +12,25 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lti', language 'zh_cn', version '3.8'.
  *
- * @package   lti
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lti
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['accept'] = '接受';
-$string['accepted'] = '已接受';
 $string['accept_grades'] = '接受此工具的成绩';
 $string['accept_grades_admin'] = '接受此工具的成绩';
 $string['accept_grades_admin_help'] = '详细说明工具提供者是否可以添加、更新、读取和删除与此工具实例关联的成绩。一些工具供应商支持根据在工具内采取的动作向Moodle报告成绩，从而创建更集成的体验。';
 $string['accept_grades_help'] = '详细说明工具提供者是否可以添加、更新、读取和删除仅与此外部工具实例关联的成绩。一些工具供应商支持根据在工具内采取的行动向Moodle报告成绩，从而创建更集成的体验。注意，此设置可能在工具配置中被覆盖。';
+$string['accepted'] = '已接受';
 $string['action'] = '动作';
 $string['activate'] = '激活';
 $string['activatetoadddescription'] = '在添加描述之前，您需要激活此工具。';
@@ -46,15 +46,15 @@ $string['autoaddtype'] = '添加工具';
 $string['automatic'] = '根据工具url，自动选择';
 $string['baseurl'] = '基础网页地址 / 工具注册名称';
 $string['basiclti'] = 'LTI';
-$string['basicltiactivities'] = 'LTI 活动';
 $string['basiclti_base_string'] = 'LTI 授权基本字符串';
 $string['basiclti_endpoint'] = 'LTI启动端点';
-$string['basicltifieldset'] = '自定义示例字段';
 $string['basiclti_in_new_window'] = '您的活动已在新窗口打开';
 $string['basiclti_in_new_window_open'] = '在新窗口打开';
+$string['basiclti_parameters'] = 'LTI 启动参数';
+$string['basicltiactivities'] = 'LTI 活动';
+$string['basicltifieldset'] = '自定义示例字段';
 $string['basicltiintro'] = '活动描述';
 $string['basicltiname'] = '活动名称';
-$string['basiclti_parameters'] = 'LTI 启动参数';
 $string['basicltisettings'] = '基本学习工具互操作性(LTI)设置';
 $string['cancel'] = '取消';
 $string['cancelled'] = '已取消';
@@ -79,12 +79,12 @@ $string['configured'] = '已配置';
 $string['confirmtoolactivation'] = '您确定要激活此工具吗?';
 $string['contentitem'] = '内容项目消息‎';
 $string['contentitem_help'] = '如果勾选，在添加外部工具的时候，“选择内容”一项将有效。';
+$string['course_tool_types'] = '课程工具';
 $string['courseactivitiesorresources'] = '课程活动或资源';
 $string['courseid'] = '课程编号';
 $string['courseinformation'] = '课程信息';
 $string['courselink'] = '去课程';
 $string['coursemisconf'] = '课程配置错误';
-$string['course_tool_types'] = '课程工具';
 $string['createdon'] = '创建于';
 $string['curllibrarymissing'] = '要使用 LTI 必须安装 PHP Curl 库';
 $string['custom'] = '自定义参数';
@@ -168,9 +168,9 @@ $string['fixexistingconf'] = '对错误配置的实例使用现有配置';
 $string['fixnew'] = '新的配置';
 $string['fixnewconf'] = '为错误配置的实例定义新配置';
 $string['fixold'] = '使用现有的';
-$string['forced_help'] = '该项设置已经在一个课程或者站点级别配置中强制生效。您在本界面中不能改变它。';
 $string['force_ssl'] = '强制使用 SSL';
 $string['force_ssl_help'] = '选择此选项将强制此工具的所有启动者都使用SSL。此外，来自工具的所有web服务请求都将使用SSL。如果使用此选项，请确认此Moodle站点和工具提供者支持SSL。';
+$string['forced_help'] = '该项设置已经在一个课程或者站点级别配置中强制生效。您在本界面中不能改变它。';
 $string['generaltool'] = '普通工具';
 $string['global_tool_types'] = '全局工具类型';
 $string['grading'] = '成绩路由';
@@ -178,46 +178,46 @@ $string['icon_url'] = '图标的网址';
 $string['icon_url_help'] = 'icon URL允许修改在课程列表中显示的用于此活动的图标。可以指定一个表示活动类型的图标，而不是使用默认的LTI图标。';
 $string['id'] = 'id号';
 $string['indicator:cognitivedepth'] = 'LTI 活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 LTI活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = 'LTI 活动认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与者达到了外部工具活动所提供的认知参与百分比(级别=未查看、查看、提交、查看反馈)';
-$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 LTI活动中所达到的认知深度。';
 $string['indicator:socialbreadth'] = 'LTI活动社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在LTI活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = 'LTI活动社会宽度';
 $string['indicator:socialbreadthdef_help'] = '在这个分析间隔内，参与者已经达到了外部工具活动所提供的社会参与百分比(级别=没有参与，单独参与，和其他人一起参与)';
-$string['indicator:socialbreadth_help'] = '这个指标是基于学生在LTI活动中所达到的社会广度。';
 $string['initiatelogin'] = '初始化登录网址';
 $string['initiatelogin_help'] = '要将启动登录的请求发送到的工具URL。在将消息成功发送到工具之前，需要此URL。';
 $string['invalidid'] = 'LTI ID 不正确';
 $string['jwtsecurity'] = 'LTI 1.3';
 $string['launch_in_moodle'] = '在 moodle 中启动工具';
-$string['launchinpopup'] = '启动容器';
 $string['launch_in_popup'] = '在弹出窗口中启动工具';
-$string['launchinpopup_help'] = '启动容器将影响从课程启动时工具的显示。一些启动容器为工具提供了更多的屏幕空间，而另一些则提供了与Moodle环境更集成的感觉。** *默认** -使用工具配置指定的启动容器。** *嵌入** -该工具显示在现有的Moodle窗口中，其方式与大多数其他活动类型类似。** *嵌入，没有版块** -该工具显示在现有的Moodle窗口，只有导航控件在页面的顶部。** *新窗口** -该工具将在一个新窗口中打开，占据所有可用空间。根据浏览器的不同，它将在一个新标签页或弹出窗口中打开。浏览器可能会阻止新窗口打开。';
-$string['launchoptions'] = '启动选项';
 $string['launch_url'] = '启动 URL';
 $string['launch_url_help'] = '工具URL表示外部工具的web地址，并且可能包含其他信息，例如要显示的资源。如果您不确定为工具URL输入什么内容，请向工具提供者查询更多信息。如果您有工具盒URL，您可以输入，其余的表单细节将自动填写。如果您选择了预配置的工具，您可能不需要输入工具URL。如果工具链接只是用于启动到工具提供者的系统，而不是指向特定的资源，那么很可能就是这种情况。';
+$string['launchinpopup'] = '启动容器';
+$string['launchinpopup_help'] = '启动容器将影响从课程启动时工具的显示。一些启动容器为工具提供了更多的屏幕空间，而另一些则提供了与Moodle环境更集成的感觉。** *默认** -使用工具配置指定的启动容器。** *嵌入** -该工具显示在现有的Moodle窗口中，其方式与大多数其他活动类型类似。** *嵌入，没有版块** -该工具显示在现有的Moodle窗口，只有导航控件在页面的顶部。** *新窗口** -该工具将在一个新窗口中打开，占据所有可用空间。根据浏览器的不同，它将在一个新标签页或弹出窗口中打开。浏览器可能会阻止新窗口打开。';
+$string['launchoptions'] = '启动选项';
 $string['leaveblank'] = '如果不需要，就留空';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = '添加特定于课程的工具配置';
 $string['lti:addinstance'] = '添加一个新的外部工具';
 $string['lti:admin'] = '该工具启动时成为管理员';
+$string['lti:grade'] = '查看外部工具返回的成绩';
+$string['lti:manage'] = '当工具启动时成为指导员';
+$string['lti:requesttooladd'] = '请求工具在站点范围内配置';
+$string['lti:view'] = '启动外部工具活动';
 $string['lti_administration'] = '编辑预配置工具';
 $string['lti_errormsg'] = '该工具返回了如下的错误信息：“{$a}”';
-$string['lti:grade'] = '查看外部工具返回的成绩';
 $string['lti_launch_error'] = '启用该外部工具时发生了一个错误：';
 $string['lti_launch_error_tool_request'] = '<p>
 为了提交一个使管理员完成工具配置的请求，点击<a href="{$a->admin_request_url}" target="_top">这里</a>。
 </p>';
 $string['lti_launch_error_unsigned_help'] = '<p>此错误可能是由于缺少工具提供程序的使用者密钥和共享密钥造成的。</p> <p>如果您有一个使用者密钥和共享密钥，您可以在编辑外部工具实例时输入它(确保高级选项是可见的)。</p> <p>或者， 您可以<a href="{$a->course_tool_editor}">创建课程级工具提供程序配置</a>。</p>';
-$string['lti:manage'] = '当工具启动时成为指导员';
-$string['lti:requesttooladd'] = '请求工具在站点范围内配置';
-$string['ltisettings'] = 'LTI设置';
 $string['lti_tool_request_added'] = '工具配置请求成功提交。您可能需要联系管理员来完成工具配置。';
 $string['lti_tool_request_existing'] = '工具域名的工具配置已经提交。';
+$string['ltisettings'] = 'LTI设置';
 $string['ltiunknownserviceapicall'] = 'LTI未知服务API调用。';
 $string['ltiversion'] = 'LTI 版本';
 $string['ltiversion_help'] = '用于对消息和服务请求进行签名的LTI版本:LTI 1.0/1.1和LTI 2.0使用OAuth 1.0A安全个人档案;LTI 1.3.0使用JWTs。';
-$string['lti:view'] = '启动外部工具活动';
 $string['main_admin'] = '通用帮助';
 $string['main_admin_help'] = '外部工具允许Moodle用户与远程托管的学习资源进行交互。通过一个特殊的启动协议，远程工具可以访问关于启动用户的一般信息。例如，机构名称、课程ID、用户ID和其他信息，如用户名或电子邮件地址。本页列出的工具分为三个类别:** *活跃** -这些工具供应商已获管理员批准和配置。他们可以从任何课程在这个网站上使用。如果输入了使用者密钥和共享密钥，则在此站点和远程工具之间建立信任关系，从而提供安全的通信通道。** *挂起** -这些工具提供程序是通过包导入来的，但是还没有被管理员配置。教师仍然可以使用来自这些提供者的工具，如果他们有一个使用者密钥和共享密钥，或者不需要任何密钥。** *拒绝** -这些工具提供者被标记为管理员无意在站点上提供的工具。教师仍然可以使用来自这些提供者的工具，如果他们有一个使用者密钥和共享密钥，或者不需要任何密钥。';
 $string['manage_external_tools'] = '管理';
@@ -242,19 +242,19 @@ $string['modulenamepluralformatted'] = 'LTI 实例';
 $string['name'] = '名称';
 $string['never'] = '从不';
 $string['new_window'] = '新窗口';
-$string['noattempts'] = '对该工具实例没有做任何尝试';
 $string['no_lti_configured'] = '没有活跃的外部工具配置。';
 $string['no_lti_pending'] = '没有挂起的外部工具';
 $string['no_lti_rejected'] = '没有被拒绝的外部工具';
-$string['noltis'] = '没有 lti 实例';
 $string['no_lti_tools'] = '没有配置任何外部工具。';
-$string['noprofileservice'] = '没有找到个人档案服务';
-$string['noservers'] = '没有找到服务器';
 $string['no_tp_accepted'] = '没有已接受的外部工具注册。';
 $string['no_tp_cancelled'] = '没有已注销的外部工具注册。';
 $string['no_tp_configured'] = '没有未注册的外部工具注册配置。';
 $string['no_tp_pending'] = '没有未完成的外部工具注册。';
 $string['no_tp_rejected'] = '没有被拒绝的外部工具注册。';
+$string['noattempts'] = '对该工具实例没有做任何尝试';
+$string['noltis'] = '没有 lti 实例';
+$string['noprofileservice'] = '没有找到个人档案服务';
+$string['noservers'] = '没有找到服务器';
 $string['notypes'] = '目前在 Moodle 中没有 LTI 工具设置。点击上方的安装按钮去添加一些。';
 $string['noviewusers'] = '没有找到拥有使用该工具权限的用户';
 $string['oauthsecurity'] = 'LTI 1.0/1.1';
@@ -325,11 +325,11 @@ $string['redirect'] = '您将在几秒钟内被重定向。如果没有，就按
 $string['redirectionuris'] = '重定向的URI';
 $string['redirectionuris_help'] = '该工具在发出授权请求时使用的uri列表(每行一个)。在消息能够成功发送到工具之前，至少要注册一个。';
 $string['register'] = '注册';
-$string['registertype'] = '配置一个新的外部工具注册';
 $string['register_warning'] = '注册页面似乎需要一段时间才能打开。如果没有显示，请检查您在配置设置中输入的URL是否正确。如果Moodle正在使用https，请确保您正在配置的工具支持https，并且在URL中使用https。';
+$string['registertype'] = '配置一个新的外部工具注册';
+$string['registration_options'] = '注册选项';
 $string['registrationname'] = '工具提供商名称';
 $string['registrationname_help'] = '输入要注册的工具提供商的名称。';
-$string['registration_options'] = '注册选项';
 $string['registrationurl'] = '注册URL';
 $string['registrationurl_help'] = '注册URL应该作为发送注册请求的位置从工具提供商中可用。';
 $string['reject'] = '拒绝';
@@ -385,6 +385,7 @@ $string['successfullycreatedtooltype'] = '成功创建新工具!';
 $string['successfullyfetchedtoolconfigurationfromcontent'] = '成功从所选内容获取工具配置。';
 $string['toggle_debug_data'] = '切换调试数据';
 $string['tool_config_not_found'] = '此URL未找到工具配置。';
+$string['tool_settings'] = '工具设置';
 $string['tooldescription'] = '工具描述';
 $string['tooldescription_help'] = '将在活动列表中显示给教师的工具描述。这应该描述该工具的用途和功能，以及教师可能需要了解的任何其他信息。';
 $string['tooldetailsaccesstokenurl'] = 'URL访问令牌';
@@ -403,7 +404,6 @@ $string['toolproxy'] = '外部工具注册';
 $string['toolproxy_help'] = '外部工具注册允许Moodle站点管理员通过从支持LTI 2.0的工具提供商获得的工具代理来配置外部工具。由工具提供者提供的注册URL是启动流程所需的全部内容。在配置新注册时，将选择提供给工具提供者的功能和服务。本页列出的工具注册分为四类：** *已配置** -这些工具注册已经建立，但注册过程尚未开始。** *待定** -这些工具的注册过程已经开始，但尚未完成。打开并保存设置，将其移回“已配置”类别。** *已接受** -这些工具注册已获批准；工具代理中指定的资源将出现在预配置工具页面上，初始状态为“待定”。** *被拒绝** -这些工具注册是在注册过程中被拒绝的。打开并保存设置，将其移回“已配置”类别，以便重新启动注册过程。';
 $string['toolproxyregistration'] = '外部工具注册';
 $string['toolregistration'] = '外部工具注册';
-$string['tool_settings'] = '工具设置';
 $string['toolsetup'] = '外部工具配置';
 $string['tooltypeadded'] = '已添加预配置工具';
 $string['tooltypedeleted'] = '已删除预配置工具';

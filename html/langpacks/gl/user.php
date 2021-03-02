@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'user', language 'gl', version '3.8'.
  *
- * @package   user
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     user
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['privacy:metadata:aim'] = 'O identificador AIM do usuario';
 $string['privacy:metadata:alternatename'] = 'Un nome alternativo para o usuario.';
 $string['privacy:metadata:appid'] = 'O ID da aplicación, xeralmente como com.moodle.moodlemobile';
 $string['privacy:metadata:auth'] = 'O engadido de autenticación empregado para este rexistro de usuario.';
-$string['privacy:metadata:autosubscribe'] = 'Unha preferencia sobre se o usuario debe ser subscrito de forma automática aos foros nos que publica o usuario.';
+$string['privacy:metadata:autosubscribe'] = 'Unha preferencia sobre se o usuario debe ser subscrito de forma automática aos foros nos que o usuario publica.';
 $string['privacy:metadata:calendartype'] = 'Unha preferencia do usuario para o tipo de calendario a empregar.';
 $string['privacy:metadata:category'] = 'O identificador de categoría';
 $string['privacy:metadata:city'] = 'A cidade do usuario.';
@@ -113,12 +113,12 @@ $string['privacy:metadata:token'] = 'segredo estabelecido e enviado por correo a
 $string['privacy:metadata:trackforums'] = 'Unha preferencia para foros e os seus seguimentos.';
 $string['privacy:metadata:trustbitmask'] = 'A máscara do bit de confianza';
 $string['privacy:metadata:url'] = 'Un URL relacionado con este usuario.';
-$string['privacy:metadata:userid'] = 'O ID de usuario ligado a esta táboa.';
-$string['privacy:metadata:username'] = 'O nome de usuario para este usuario.';
 $string['privacy:metadata:user_preferences'] = 'Preferencias asociadas co usuario dado';
 $string['privacy:metadata:user_preferences:name'] = 'Nome de preferencia';
 $string['privacy:metadata:user_preferences:userid'] = 'O ID do usuario';
 $string['privacy:metadata:user_preferences:value'] = 'Valor de preferencia';
+$string['privacy:metadata:userid'] = 'O ID de usuario ligado a esta táboa.';
+$string['privacy:metadata:username'] = 'O nome de usuario para este usuario.';
 $string['privacy:metadata:usertablesummary'] = 'Esta táboa almacena os principais datos persoais sobre o usuario.';
 $string['privacy:metadata:uuid'] = 'O UUID do vendedor do dispositivo';
 $string['privacy:metadata:version'] = 'A versión do dispositivo, 6.1.2, 4.2.2 etc.';

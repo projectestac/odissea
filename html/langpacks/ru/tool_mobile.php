@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_mobile', language 'ru', version '3.8'.
  *
- * @package   tool_mobile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_mobile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,6 +70,7 @@ $string['forcelogout'] = 'Принудительный выход из сист�
 $string['forcelogout_desc'] = 'При включенном параметре опция «Изменить сайт» заменяется на «Выход». Это приводит к тому, что пользователь полностью выйдет из системы. Затем он должен повторно ввести свой пароль, когда  в следующий раз захочет получить доступ к сайту.';
 $string['getmoodleonyourmobile'] = 'Скачать мобильное приложение';
 $string['httpsrequired'] = 'Требуется HTTPS';
+$string['insecurealgorithmwarning'] = 'Похоже, HTTPS-сертификат использует небезопасный алгоритм подписи (SHA-1). Попробуйте обновить сертификат.';
 $string['invalidprivatetoken'] = 'Неверный закрытый ключ. Ключ не должен быть пустым или передаваться при помощи параметра GET.';
 $string['invaliduserquotawarning'] = 'Пользовательская квота (userquota) имеет недопустимое значение. В настройках безопасности сайта должно быть указано допустимое (целое) число.';
 $string['iosappid'] = 'Уникальный идентификатор приложения iOS';

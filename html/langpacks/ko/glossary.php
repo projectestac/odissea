@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'ko', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -118,14 +118,6 @@ $string['destination'] = '가져온 항목들의 목적지';
 $string['destination_help'] = '항목들은 현재의 용어집 혹은 새 용어집으로 가져오기 하거나 추가될 수 있습니다. 후자의 경우 XML파일의 정보를 기반으로 새로운 용어집이 만들어 질 것입니다.';
 $string['disapprove'] = '승인 취소';
 $string['displayformat'] = '출력 양식';
-$string['displayformatcontinuous'] = '저자없이 이어보기';
-$string['displayformatdefault'] = '표시 포맷으로 같은 것을 기본으로';
-$string['displayformatdictionary'] = '단순 사전 형태';
-$string['displayformatencyclopedia'] = '백과사전 형태';
-$string['displayformatentrylist'] = '입력목록만 나열';
-$string['displayformatfaq'] = '질의응답 형태';
-$string['displayformatfullwithauthor'] = '본인 것만 전부';
-$string['displayformatfullwithoutauthor'] = '남의 것만 전부';
 $string['displayformat_help'] = '7 가지 표시 형식이 있습니다.
 
 * 간단한 사전 스타일 - 저자는 표시되지 않고 첨부는 링크로 표시됩니다.
@@ -138,11 +130,19 @@ $string['displayformat_help'] = '7 가지 표시 형식이 있습니다.
 * 항목 목록 - 링크로 된 개념 목록
 
 * 빈번한 질문 - 질문과 답변이라는 단어가 개념과 정의에 각각 추가됩니다.';
+$string['displayformatcontinuous'] = '저자없이 이어보기';
+$string['displayformatdefault'] = '표시 포맷으로 같은 것을 기본으로';
+$string['displayformatdictionary'] = '단순 사전 형태';
+$string['displayformatencyclopedia'] = '백과사전 형태';
+$string['displayformatentrylist'] = '입력목록만 나열';
+$string['displayformatfaq'] = '질의응답 형태';
+$string['displayformatfullwithauthor'] = '본인 것만 전부';
+$string['displayformatfullwithoutauthor'] = '남의 것만 전부';
 $string['displayformats'] = '출력 양식';
 $string['displayformatssetup'] = '표시 형식 설정';
 $string['duplicatecategory'] = '범주 복제';
 $string['duplicateentry'] = '항목 복사';
-$string['editalways'] = '언제나 수정가능';
+$string['editalways'] = '언제나 수정 허용';
 $string['editalways_help'] = '<p>이 옵션은 학생들이 언제 교정을 하게 할 것인지를 정하는 것이다.</p>
 
 <p>다음 중에서 선택할 수 있다:</p>
@@ -202,24 +202,24 @@ $string['filtername'] = '용어집 자동 링크';
 $string['fullmatch'] = '완전히 일치하는 단어만';
 $string['fullmatch_help'] = '이 설정은 완전한 단어만 링크될지를 명시합니다. 예를 들어 용어집 항목 "construct"는 "constructivism"단어안에 링크를 만들지 않을 것입니다.';
 $string['glossary:addinstance'] = '새 용어집 추가';
-$string['glossary:approve'] = '승인받지 못했던 내용 승인';
+$string['glossary:approve'] = '승인하거나 승인 받은 입력항목 취소';
 $string['glossary:comment'] = '덧글 생성';
 $string['glossary:export'] = '입력내용 내보내기';
 $string['glossary:exportentry'] = '한 항목 내보내기';
 $string['glossary:exportownentry'] = '내 입력 내보내기';
 $string['glossary:import'] = '입력내용 가져오기';
-$string['glossaryleveldefaultsettings'] = '용어집 레벨 기본 설정';
 $string['glossary:managecategories'] = '범주 관리';
 $string['glossary:managecomments'] = '덧글 관리';
 $string['glossary:manageentries'] = '입력내용 관리';
 $string['glossary:rate'] = '입력내용 등수 매기기';
-$string['glossarytype'] = '용어집 유형';
-$string['glossarytype_help'] = '주 용어집은 보조 용어집의 항목들을 가져올 할 수 있는 용어집입니다. 강좌에 오직 한개의 주 용어집이 있을 수 있습니다. 용어집 항목 가져오기가 필요하지 않으면 강좌내의 모든 용어집은 보조 용어집입니다.';
 $string['glossary:view'] = '용어집 보기';
 $string['glossary:viewallratings'] = '원점수 보기';
 $string['glossary:viewanyrating'] = '총 득점 보기';
 $string['glossary:viewrating'] = '받은 전체 등급 보기';
 $string['glossary:write'] = '새로 입력';
+$string['glossaryleveldefaultsettings'] = '용어집 레벨 기본 설정';
+$string['glossarytype'] = '용어집 유형';
+$string['glossarytype_help'] = '주 용어집은 보조 용어집의 항목들을 가져올 할 수 있는 용어집입니다. 강좌에 오직 한개의 주 용어집이 있을 수 있습니다. 용어집 항목 가져오기가 필요하지 않으면 강좌내의 모든 용어집은 보조 용어집입니다.';
 $string['guestnoedit'] = '손님은 용어집 수정 권한이 없음';
 $string['importcategories'] = '범주 가져오기';
 $string['importedcategories'] = '가져온 범주';
@@ -245,7 +245,7 @@ $string['newglossaryentries'] = '새 용어집 입력항목들:';
 $string['nocomment'] = '덧글 없음';
 $string['nocomments'] = '(이 항목에 대한 덧글없음)';
 $string['noconceptfound'] = '정의되지 않음';
-$string['noentries'] = '이 영역에는 찾는 항목이 없음';
+$string['noentries'] = '이 섹션에는 찾는 항목이 없음';
 $string['noentry'] = '항목 없음';
 $string['nopermissiontodelcomment'] = '타인의 덧글을 삭제할 수 없음!';
 $string['nopermissiontodelinglossary'] = '본 용어집에 덧글을 쓸 수 없습니다!';
@@ -291,7 +291,7 @@ $string['showall_help'] = '<p>사용자가 용어집을 이용하는 것을 조�
 <p><b>철자순 보기</b> 철자순으로 볼 수 있게 하거나 볼 수 없게 하기</p>
 
 <p><b>모두 보기</b> 한꺼번에 모든 내용을 볼 수 있게 하거나 볼 수 없게 하기</p>';
-$string['showalphabet'] = '철자순으로 보기';
+$string['showalphabet'] = '알파벳 링크 보기';
 $string['showalphabet_help'] = '활성화되면 참여자들은 알파벳별로 용어집을 살펴 볼 수 있습니다. ';
 $string['showspecial'] = '\'특집\' 링크 보기';
 $string['showspecial_help'] = '활성화되면 참여자들은 @ 나 # 같은 특수 문자별로 용어집을 살펴 볼 수 있습니다. ';

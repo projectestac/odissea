@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'data', language 'es', version '3.8'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -109,7 +109,7 @@ $string['csvimport_help'] = '<p align="center"><strong>Importar de un archivo CS
 <p>ADVERTENCIA: es posible que no se admitan todos los tipos de campo.</p>';
 $string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">texto</acronym> CSV con el delimitador seleccionado:';
 $string['data:addinstance'] = 'Añadir una nueva base de datos';
-$string['data:approve'] = 'Aprobar entradas pendientes';
+$string['data:approve'] = 'Aprobar y deshacer entradas aceptadas';
 $string['data:comment'] = 'Escribir comentarios';
 $string['data:exportallentries'] = 'Exportar todas las entradas de la base de datos';
 $string['data:exportentry'] = 'Exportar una entrada de la base de datos';
@@ -154,7 +154,7 @@ $string['editorenable'] = 'Activar editor';
 $string['emptyadd'] = 'La plantilla Añadir está vacía, generando un formulario por defecto...';
 $string['emptyaddform'] = '¡No ha rellenado ningún campo!';
 $string['entries'] = 'Entradas';
-$string['entrieslefttoadd'] = 'Debe agregar {$a->entriesleft} entrada(s) más para poder finalizar esta actividad';
+$string['entrieslefttoadd'] = 'Debe añadir {$a->entriesleft} entrada(s) más antes de poder ver las entradas de otro participante.';
 $string['entrieslefttoaddtoview'] = 'Debe añadir {$a->entrieslefttoview} entrada(s) antes de poder ver las entradas de otros participantes.';
 $string['entry'] = 'Entrada';
 $string['entrysaved'] = 'Su entrada se ha guardado';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'folder', language 'zh_cn', version '3.8'.
  *
- * @package   folder
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     folder
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,9 +33,9 @@ $string['dnduploadmakefolder'] = '解压文件并创建文件夹';
 $string['downloadfolder'] = '下载文件夹';
 $string['eventallfilesdownloaded'] = '文件夹的ZIP压缩文件已下载';
 $string['folder:addinstance'] = '添加一个新文件夹';
-$string['foldercontent'] = '文件和子文件夹';
 $string['folder:managefiles'] = '在文件夹模块中管理文件';
 $string['folder:view'] = '查看文件夹内容';
+$string['foldercontent'] = '文件和子文件夹';
 $string['indicator:cognitivedepth'] = '文件夹资源认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在文件夹资源中所达到的认知深度。';
 $string['indicator:socialbreadth'] = '文件夹资源社会广度';

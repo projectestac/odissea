@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'de', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,7 +29,7 @@ $string['check_configrw_details'] = '<p>Nach der Installation sollten die Zugrif
 $string['check_configrw_name'] = ' config.php';
 $string['check_configrw_ok'] = 'PHP-Skripte können die config.php nicht verändern';
 $string['check_configrw_warning'] = 'PHP-Skripte könnten die Datei config.php verändern';
-$string['check_cookiesecure_details'] = '<p>Zusätzlich zur Aktivierung der Datenübertragung über https sollte auch die Funktion sichere Cookies aktiviert werden. Die permanente Umleitung von http nach https sollte eingerichtet sein. Idealerweise werden auch HSTS-Header angeboten. </p>';
+$string['check_cookiesecure_details'] = '<p> Wenn die Kommunikation über https aktiviert ist, sollte auch das Senden sicherer Cookies aktiviert sein. Sie sollten eine Weiterleitung von http zu https haben und idealerweise auch HSTS-Header bedienen.</p>';
 $string['check_cookiesecure_error'] = 'Bitte aktivieren Sie sichere Cookies';
 $string['check_cookiesecure_name'] = 'Sichere Cookies';
 $string['check_cookiesecure_ok'] = 'Sichere Cookies aktiviert';
@@ -43,7 +43,7 @@ $string['check_defaultuserrole_details'] = '<p>Jeder eingeloggte Nutzer hat zun�
 $string['check_defaultuserrole_error'] = 'Eine falsche Definition der Standardrolle wurde festgestellt! "{$a}"';
 $string['check_defaultuserrole_name'] = 'Standardrolle für alle Nutzer';
 $string['check_defaultuserrole_notset'] = 'Die Standardrolle ist nicht gesetzt';
-$string['check_defaultuserrole_ok'] = 'Die Rollendefinition für registrierte Nutzer ist OK';
+$string['check_defaultuserrole_ok'] = 'Standardrolle für alle Nutzer/innen sind richtig definiert.';
 $string['check_displayerrors_details'] = '<p>Die Aktivierung der PHP-Einstellung <code>display_errors</code> wird auf produktiven Websites nicht empfohlen, weil die Fehlermeldungen u. U. sensible Informationen zu Ihrem Server preisgeben könnten. Setzen Sie also <code>display_errors=off</code>.</p>';
 $string['check_displayerrors_error'] = 'Die PHP-Einstellung für die Anzeige von Fehlern ist aktiviert. Es wird empfohlen, dies zu deaktivieren';
 $string['check_displayerrors_name'] = 'Anzeige von PHP-Fehlern';
@@ -100,10 +100,10 @@ $string['check_riskadmin_name'] = 'Administrator/innen';
 $string['check_riskadmin_ok'] = '{$a} Serveradministrator(en) gefunden';
 $string['check_riskadmin_unassign'] = 'Rollenzuweisung überprüfen bei <a href="{$a->url}">{$a->fullname} ({$a->email})</a>';
 $string['check_riskadmin_warning'] = '{$a->admincount} Serveradministrator/inn/en und {$a->unsupcount} nicht unterstützte Zuweisung(en) zur Administrator/innenrolle gefunden.';
-$string['check_riskbackup_detailsok'] = 'Keine Rolle erlaubt das Sichern von Nutzerdaten. Beachten Sie aber, dass Admins mit der Berechtigung "doanything" (alles tun) auch weiterhin dazu befähigt sind.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Diese aktivierten Änderungen geben Nutzern/innen die Möglichkeit, auch Nutzerdaten in eine Kurssicherung einzubeziehen. Bitte prüfen Sie, ob diese Berechtigung nötig ist.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Die folgenden Systemrollen erlauben es aktuell, Nutzerdaten in eine Kurssicherung einzubeziehen. Bitte prüfen Sie, ob diese Berechtigung nötig ist.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>Mit den obigen Rollen oder lokalen Rollenänderungen haben folgende Nutzerkonten die Berechtigung, personenbezogene Daten von allen in ihren Kursen eingetragenen Nutzern/innen in Kurssicherungen einzubeziehen. Stellen Sie unbedingt sicher, dass diese Konten (a) vertrauenswürdig und (b) mit sicheren Kennwörtern gesichert sind:</p> {$a}';
+$string['check_riskbackup_detailsok'] = 'Keine Rolle erlaubt das Sichern von Nutzerdaten. Beachten Sie aber, dass Admins mit der Berechtigung "doanything" (alles tun) auch weiterhin dazu befähigt sind.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} in {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Sicherung von Nutzerdaten';
@@ -131,7 +131,7 @@ $string['configuration'] = 'Konfiguration';
 $string['description'] = 'Beschreibung';
 $string['details'] = 'Details';
 $string['issue'] = 'Ausgabe';
-$string['pluginname'] = 'Sicherheitsbericht';
+$string['pluginname'] = 'Sicherheit';
 $string['privacy:metadata'] = 'Das Sicherheits-Übersichts-Plugin speichert keine personenbezogenen Daten.';
 $string['security:view'] = 'Sicherheitsbericht ansehen';
 $string['status'] = 'Status';

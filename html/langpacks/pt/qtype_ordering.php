@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ordering', language 'pt', version '3.8'.
  *
- * @package   qtype_ordering
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ordering
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -76,17 +76,17 @@ $string['noscore'] = 'Sem pontuação';
 $string['notenoughanswers'] = 'Perguntas de Ordenação devem ter mais do que {$a} respostas.';
 $string['numberingstyle'] = 'Numerar as opções?';
 $string['numberingstyle123'] = '1., 2., 3., ...';
-$string['numberingstyleabc'] = 'a., b., c., ...';
 $string['numberingstyleABCD'] = 'A., B., C., ...';
+$string['numberingstyleIIII'] = 'I., II., III., ...';
 $string['numberingstyle_desc'] = 'O estilo de numeração predefinido';
 $string['numberingstyle_help'] = 'Escolha o estilo de numeração para os itens arrastáveis desta pergunta.';
+$string['numberingstyleabc'] = 'a., b., c., ...';
 $string['numberingstyleiii'] = 'i., ii., iii., ...';
-$string['numberingstyleIIII'] = 'I., II., III., ...';
 $string['numberingstylenone'] = 'Sem numeração';
 $string['pluginname'] = 'Ordenação';
+$string['pluginname_help'] = 'Vários itens são mostrados de forma desordenada. Os itens podem ser arrastados para uma ordem significativa.';
 $string['pluginnameadding'] = 'Adicionar uma pergunta de Ordenação';
 $string['pluginnameediting'] = 'A editar uma pergunta de Ordenação';
-$string['pluginname_help'] = 'Vários itens são mostrados de forma desordenada. Os itens podem ser arrastados para uma ordem significativa.';
 $string['pluginnamesummary'] = 'Dispor os itens desorganizados numa ordem significativa.';
 $string['positionx'] = 'Posição {$a}';
 $string['privacy:metadata'] = 'O módulo do tipo de pergunta de Ordenação não armazena qualquer dado pessoal.';

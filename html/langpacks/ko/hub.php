@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hub', language 'ko', version '3.8'.
  *
- * @package   hub
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hub
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,9 @@ $string['advertised'] = '광고됨';
 $string['advertiseon'] = '{$a} 에 이 강좌 광고';
 $string['advertisepublication_help'] = '커뮤니티 허브 서버에 강좌를 광고해서 사람들이 이 강좌를 찾아서 등록할 수 있도록 하세요.';
 $string['audience'] = '수강자';
+$string['audience_help'] = '이 강좌에 참여하고자 하는 수강자를 선택하세요.';
 $string['audienceadmins'] = '무들 관리자';
 $string['audienceeducators'] = '교육자';
-$string['audience_help'] = '이 강좌에 참여하고자 하는 수강자를 선택하세요.';
 $string['audiencestudents'] = '학생';
 $string['badgesnumber'] = '뱃지 수 ({$a})';
 $string['communityremoved'] = '이 강좌 링크는 목록에서 제거되었습니다.';

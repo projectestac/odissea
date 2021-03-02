@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_dataprivacy', language 'eu', version '3.8'.
  *
- * @package   tool_dataprivacy
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_dataprivacy
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,10 +45,10 @@ $string['cannotreset'] = 'Ezin da eskaera hau berrabiarazi. Soilik gaitzetsitako
 $string['categories'] = 'Kategoriak';
 $string['categorieslist'] = 'Datu-kategorien zerrenda';
 $string['category'] = 'Kategoria';
+$string['category_help'] = 'Datu-erregistroaren kategoria datu mota zehazten du. Kategoria berri bat gehitu daiteke edo, Heredatu aukeratzen bada, goragoko testuinguruko datuen kategoria aplikatuko da. Testuinguruak hauek dira (txikienetik handienera): Blokeak > Jarduera-moduluak > Ikastaro-kategoriak > Erabiltzailea > Gunea.';
 $string['categorycreated'] = 'Kategoria sortu da';
 $string['categorydefault'] = 'Lehenetsitako kategoria';
 $string['categorydefault_help'] = 'Lehenetsitako kategoria instantzia berrien datuei aplikatzen zaien kategoria da. Heredatu aukeratzen bada, goragoko testuinguruko datuen kategoria aplikatzen da. Testuinguruak hauek dira (txikienetik handienera): Blokeak > Jarduera-moduluak > Ikastaro-kategoriak > Erabiltzailea > Gunea.';
-$string['category_help'] = 'Datu-erregistroaren kategoria datu-mota zehazten du. Kategoria berri bat gehitu daiteke edo, Heredatu aukeratzen bada, goragoko testuinguruko datuen kategoria aplikatuko da. Testuinguruak hauek dira (txikienetik handienera): Blokeak > Jarduera-moduluak > Ikastaro-kategoriak > Erabiltzailea > Gunea.';
 $string['categoryupdated'] = 'Kategoria eguneratu da';
 $string['close'] = 'Itxi';
 $string['compliant'] = 'Onespena';
@@ -76,7 +76,7 @@ $string['createpurpose'] = 'Sortu datu-helburua';
 $string['creationauto'] = 'Automatikoki';
 $string['creationmanual'] = 'Eskuz';
 $string['datadeletion'] = 'Datu-ezabapena';
-$string['datadeletionpagehelp'] = 'Hemen atxikipen-epea iraungita duten datuak zerrendatzen dira. Mesedez berrikusi eta konfirmatu datu-ezabatzea, "Ezabatu iraungitako testuinguruak" programatutako atazean exekutatuko dena.';
+$string['datadeletionpagehelp'] = 'Hemen atxikipen-epea iraungita duten datuak zerrendatzen dira. Mesedez berrikusi eta konfirmatu datu-ezabatzea, "Ezabatu iraungitako testuinguruak" programatutako zereginean exekutatuko dena.';
 $string['dataprivacy:downloadallrequests'] = 'Jaitsi erabiltzaile guztien datu esportatuak';
 $string['dataprivacy:downloadownrequest'] = 'Jaitsi zure datu esportatuak';
 $string['dataprivacy:makedatadeletionrequestsforchildren'] = 'Eskatu adingabeen datu-ezabatzea';
@@ -86,7 +86,7 @@ $string['dataprivacy:managedatarequests'] = 'Kudeatu datu-eskaerak';
 $string['dataprivacy:requestdelete'] = 'Eskatu zure datuen ezabatzea';
 $string['dataprivacy:requestdeleteforotheruser'] = 'Eskatu datuen ezabatzea beste erabiltzaile baten izenean';
 $string['dataregistry'] = 'Datuen erregistroa';
-$string['dataregistryinfo'] = 'Datu-erregistroak kategoriak (datu-motak) eta helburuak (datua prozesatzeko arrazoia) guneko eduki guztiei aplikatzeko aukera ematen dute - erabiltzaile eta ikastaroetatik jarduera eta blokeetaraino. Helburu bakoitzarentzat atxikipen-epe bat zehaztu daiteke. Atxikipen-epe bat iraungitzen denean, datuak markatzen dira eta ezabatzeko zerrendan sartzen dira, kudeatzailearen baieztatzearen zain.';
+$string['dataregistryinfo'] = 'Datu-erregistroak kategoriak (datu motak) eta helburuak (datua prozesatzeko arrazoia) guneko eduki guztiei aplikatzeko aukera ematen dute - erabiltzaile eta ikastaroetatik jarduera eta blokeetaraino. Helburu bakoitzarentzat atxikipen-epe bat zehaztu daiteke. Atxikipen-epe bat iraungitzen denean, datuak markatzen dira eta ezabatzeko zerrendan sartzen dira, kudeatzailearen berrespenaren zain.';
 $string['datarequestcreatedforuser'] = 'Datu-eskaera sortu da {$a}-(r)entzat';
 $string['datarequestcreatedfromscheduledtask'] = 'Programatutako ataza batez automatikoki sortua (lehenengo erabiltzaile ezabatua).';
 $string['datarequestcreatedupondelete'] = 'Erabiltzailea ezabatutakoan automatikoki sortua.';
@@ -144,19 +144,19 @@ $string['errorcontexthasunexpiredchildren'] = '"{$a}" testuinguruak oraindik dit
 $string['errorinvalidrequestcomments'] = 'Iruzkinen eremuan testu-soila baino ezin da gehitu.';
 $string['errorinvalidrequestcreationmethod'] = 'Sorrera-metodoaren eskaera baliogabea!';
 $string['errorinvalidrequeststatus'] = 'Eskaeraren egoera baliogabea!';
-$string['errorinvalidrequesttype'] = 'Eskaera-mota baliogabea!';
+$string['errorinvalidrequesttype'] = 'Eskaera mota baliogabea!';
 $string['errornocapabilitytorequestforothers'] = '{$a->requestedby} erabiltzaileak ez du gaitasunik datu-eskaera bat {$a->userid} erabiltzailearen izenean eskatzeko';
 $string['errornoexpiredcontexts'] = 'Ez dago prozesatu beharreko testuingururik';
 $string['errorrequestalreadyexists'] = 'Dagoeneko baduzu aribidean dagoen eskaera bat.';
 $string['errorrequestnotfound'] = 'Ez da eskaera aurkitu';
 $string['errorrequestnotwaitingforapproval'] = 'Eskaera ez dago onartzeko zai. Oraindik ez dago prest edo dagoeneko prozesatu da.';
 $string['errorsendingmessagetodpo'] = 'Errore bat gertatu da {$a}-(r)i mezu bat bidaltzen saiatzean.';
-$string['exceptionnotificationbody'] = '<p>Salbuespena gertatu da <b>{$a->fullmethodname}</b>-(e)ra deitzean.<br>Honek esan nahi du <b>{$a->component}</b> pluginak ez duela datu-prozesatzea osatu. Salbuespenaren inguruko hurrengo informazioa pluginaren garatzaileari helarazi ahal dioz:</p><pre>{$a->message}<br>
+$string['exceptionnotificationbody'] = '<p>Salbuespena gertatu da <b>{$a->fullmethodname}</b>(e)ra deitzean.<br>Honek esan nahi du <b>{$a->component}</b> pluginak ez duela datu-prozesatzea osatu. Salbuespenaren inguruko hurrengo informazioa pluginaren garatzaileari helarazi ahal dioz:</p><pre>{$a->message}<br>
 
 {$a->backtrace}</pre>';
 $string['exceptionnotificationsubject'] = 'Salbuespena gertatu da pribatutasun-datuak prozesatzean';
 $string['expandplugin'] = 'Zabaldu eta tolestu plugina.';
-$string['expandplugintype'] = 'Zabaldu eta tolestu plugin-mota.';
+$string['expandplugintype'] = 'Zabaldu eta tolestu plugin mota.';
 $string['expiredretentionperiodtask'] = 'Atxikipen-epea iraungi da';
 $string['expiredrolewithretention'] = '{$a->retention} (Iraungitua)';
 $string['expiry'] = 'Iraungitzea';
@@ -249,10 +249,10 @@ $string['privacyrequestexpiry_desc'] = 'Onartutako datu-eskaerak iraungi aurreti
 $string['protected'] = 'Babestua';
 $string['protectedlabel'] = 'Datu honen atxikipenak erabiltzailearen ahazte-eskubidearen gainetik dagoen aurrekari-legala du. Datu hau atxikipen-epe  legal hori iraungi ondoren baino ez da ezabatuko.';
 $string['purpose'] = 'Helburua';
+$string['purpose_help'] = 'Helburuak datuak prozesatzeko arrazoia zehazten du. Helburu berri bat gehitu daiteke edo, Heredatu aukeratzen bada, goragoko testuinguruko helburua aplikatuko da. Testuinguruak hauek dira (txikienetik handienera): Blokeak > Jarduera-moduluak > Ikastaro-kategoriak > Erabiltzailea > Gunea.';
 $string['purposecreated'] = 'Helburua sortu da';
 $string['purposedefault'] = 'Lehenetsitako helburua';
 $string['purposedefault_help'] = 'Lehenetsitako helburua instantzia berriei aplikatzen zaien helburua da. Heredatu aukeratzen bada, goragoko testuinguruko helburua aplikatzen da. Testuinguruak hauek dira (txikienetik handienera): Blokeak > Jarduera-moduluak > Ikastaro-kategoriak > Erabiltzailea > Gunea.';
-$string['purpose_help'] = 'Helburuak datuak prozesatzeko arrazoia zehazten du. Helburu berri bat gehitu daiteke edo, Heredatu aukeratzen bada, goragoko testuinguruko helburua aplikatuko da. Testuinguruak hauek dira (txikienetik handienera): Blokeak > Jarduera-moduluak > Ikastaro-kategoriak > Erabiltzailea > Gunea.';
 $string['purposeoverview'] = 'Helburuak gordetako datuen erabilera-politika deskribatzen du. Helburuan ere datuak gordetzeko eta mantentzeko oinarria deskribatzen da.';
 $string['purposes'] = 'Helburuak';
 $string['purposeslist'] = 'Datu-helburuen zerrenda';
@@ -265,21 +265,21 @@ $string['requestbydetail'] = 'Eskatzailea:';
 $string['requestcomments'] = 'Iruzkinak';
 $string['requestcomments_help'] = 'Eremu honek zure datu-eskaeraren inguruko xehetasun gehiago emateko aukera ematen dizu.';
 $string['requestcreation'] = 'Sorrera';
-$string['requestdenied'] = 'Eskaera ukatu da';
+$string['requestdenied'] = 'Eskaera gaitzetsi da';
 $string['requestemailintro'] = 'Datu-eskaera bat jaso duzu:';
 $string['requestfor'] = 'Erabiltzailea';
 $string['requestmarkedcomplete'] = 'Eskaera osatutzat markatu da';
 $string['requestorigin'] = 'Gunea';
 $string['requestsapproved'] = 'Eskaerak onartu dira';
-$string['requestsdenied'] = 'Eskaerak ukatu dira';
+$string['requestsdenied'] = 'Eskaerak baztertu dira';
 $string['requeststatus'] = 'Egoera';
 $string['requestsubmitted'] = 'Zure eskaera guneko pribatutasunerako ordezkariari bidali zaio';
 $string['requesttype'] = 'Mota';
+$string['requesttype_help'] = 'Aukeratu pribatutasunerako ordezkariarekin harremanetan jartzeko duzun arrazoia. Kontuan izan zure datu pertsonalen ezabaketaren ondorioz ezingo duzula berriz gune honetan sartzeko aukerarik izango.';
 $string['requesttypedelete'] = 'Ezabatu nire datu pertsonal guztiak';
 $string['requesttypedeleteshort'] = 'Ezabatu';
 $string['requesttypeexport'] = 'Esportatu nire datu-pertsonal guztiak';
 $string['requesttypeexportshort'] = 'Esportatu';
-$string['requesttype_help'] = 'Aukeratu pribatutasunerako ordezkariarekin harremanetan jartzeko duzun arrazoia. Kontuan izan zure datu pertsonalen ezabaketaren ondorioz ezingo duzula berriz gune honetan sartzeko aukerarik izango.';
 $string['requesttypeothers'] = 'Kontsulta orokorra';
 $string['requesttypeothersshort'] = 'Mezua';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';
@@ -287,9 +287,9 @@ $string['requireallenddatesforuserdeletion'] = 'Hartu aktibotzat amaiera-datarik
 $string['requireallenddatesforuserdeletion_desc'] = 'Erabiltzaileen iraungitzea kalkulatzerakoan, hainbat faktore hartzen dira kontuan:
 
 * Erabiltzailearen azken sarrera-data erabiltzaileentzako erretentzio-epearekin erkatzen da, eta
-* erabiltzailea matrikulatuta dagoen ikastaroetan aktiboa den ala ez aztertzen da.
+* erabiltzaileak ikastaroetan dituen matrikulazioak aktibo dauden ala ez aztertzen da.
 
-Ikastaroko matrikula aktiboa aztertzean, ikastaroak amaiera-datarik ez badauka, ezarpen hori erabiltzen da ikastaroa aktiboa den ala ez jakiteko.
+Ikastaro bateko matrikula aktiboa aztertzean, ikastaroak amaiera-datarik ez badauka, ezarpen hori erabiltzen da ikastaroa aktiboa den ala ez jakiteko.
 
 Ikastaroak amaiera-datarik ez badauka eta ezarpena hori gaituta badago, erabiltzailea ezingo da ezabatu.';
 $string['requiresattention'] = 'Zure arreta behar du.';
@@ -298,9 +298,9 @@ $string['resubmitrequest'] = 'Birbidali {$a->username}(r)entzako {$a->type} eska
 $string['resubmitrequestasnew'] = 'Birbidali eskaera berri gisa';
 $string['resubmittedrequest'] = '{$a->username}(r)entzako {$a->type} eskaera deuseztatu eta birbidali egin da.';
 $string['resultdeleted'] = 'Orain dela gutxi {$a} guneko zure kontua eta datu pertsonalak ezabatzeko eskaera egin duzu. Prozesu hau dagoeneko osatu da eta aurrerantzean ezingo duzu gunean sartu.';
-$string['resultdownloadready'] = 'Orain dela gutxi eskatutako {$a} guneko zure datu pertsonalen kopia jaisteko eskuragarri dago jada. Mesedez egin klik beheko estekan deskaga-orrira joateko.';
+$string['resultdownloadready'] = 'Orain dela gutxi eskatutako {$a} guneko zure datu pertsonalen kopiaren deskarga eskuragarri dago jada. Mesedez egin klik beheko estekan deskarga-orrira joateko.';
 $string['retentionperiod'] = 'Atxikipen-epea';
-$string['retentionperiod_help'] = 'Atxikipen-epeak datua gordeta mantendu beharreko gehienezko denbora zehazten du. Atxikipen-epea iraungitzen denean, datuak markatzen dira eta ezabatzeko zerrendan sartzen dira, kudeatzailearen baieztatzearen zain.';
+$string['retentionperiod_help'] = 'Atxikipen-epeak datua gordeta mantendu beharreko gehienezko denbora zehazten du. Atxikipen-epea iraungitzen denean, datuak markatzen dira eta ezabatzeko zerrendan sartzen dira, kudeatzailearen berrespenaren zain.';
 $string['retentionperiodnotdefined'] = 'Ez da atxikipen-eperik zehaztu';
 $string['retentionperiodzero'] = 'Atxikipen-eperik ez';
 $string['reviewdata'] = 'Berrikusi datuak';

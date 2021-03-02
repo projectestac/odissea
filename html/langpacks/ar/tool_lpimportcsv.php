@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,40 +12,41 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_lpimportcsv', language 'ar', version '3.8'.
  *
- * @package   tool_lpimportcsv
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_lpimportcsv
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['competencyscale'] = 'مقياس الكفاءة: {$a}';
-$string['competencyscaledescription'] = 'مقياس الكفاءة التي أنشأها الاستيراد';
-$string['confirm'] = 'أكِّد';
+$string['competencyscaledescription'] = 'مقياس الكفاءة التي أنشأتها الاستيراد';
+$string['confirm'] = 'تؤكد';
 $string['confirmcolumnmappings'] = 'تأكيد تعيينات العمود';
-$string['csvdelimiter'] = 'فاصل CSV';
-$string['description'] = 'الوصف';
+$string['csvdelimiter'] = 'محدد CSV';
+$string['description'] = 'hgوصف';
 $string['descriptionformat'] = 'تنسيق الوصف';
-$string['encoding'] = 'الترميز';
-$string['export'] = 'التصدير';
+$string['encoding'] = 'التشفير';
+$string['export'] = 'hgتصدير';
 $string['exportid'] = 'معرف تصدير (اختياري)';
-$string['exportnavlink'] = 'تصدير إطار الكفاءة';
+$string['exportnavlink'] = 'إطار كفاءة التصدير';
 $string['idnumber'] = 'رقم المعرف';
 $string['import'] = 'استيراد';
-$string['importfile'] = 'ملف وصف إطار العمل بصيغة CSV';
+$string['importfile'] = 'ملف وصف إطار عمل CSV';
 $string['importfile_help'] = 'يمكن استيراد إطار الكفاءات عبر ملف نصي. يمكن تحديد تنسيق الملف عن طريق إنشاء إطار عمل كفاءات جديد على الموقع ثم تصديره.';
 $string['importingfile'] = 'استيراد بيانات الملف';
 $string['invalidimportfile'] = 'تنسيق الملف غير صالح.';
-$string['isframework'] = 'هو إطار عمل';
-$string['noframeworks'] = 'لم يتم إنشاء أطر عمل للكفاءة بعد';
+$string['isframework'] = 'هو الإطار';
+$string['noframeworks'] = 'لم يتم إنشاء أطر للكفاءة بعد';
 $string['parentidnumber'] = 'رقم معرف الأصل';
-$string['pluginname'] = 'استيراد إطار عمل الكفاءة';
-$string['privacy:metadata'] = 'إن ملحق استيراد إطار عمل الكفاءة لا يخزن أي بيانات شخصية.';
+$string['pluginname'] = 'استورد إطار كفاءة';
+$string['privacy:metadata'] = 'لا يخزن المكون الإضافي Import competency framework أيّ بيانات شخصية.';
 $string['processingfile'] = 'معالجة الملف';
 $string['relatedidnumbers'] = 'أرقام معرّف الكفاءة التبادلية';
 $string['ruleconfig'] = 'تهيئة القاعدة (اختياري)';

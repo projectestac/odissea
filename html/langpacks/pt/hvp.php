@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hvp', language 'pt', version '3.8'.
  *
- * @package   hvp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hvp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,8 +64,8 @@ $string['changelog'] = 'Relatório de alterações';
 $string['changeplaceholder'] = 'Foto recortada, texto modificado, etc.';
 $string['close'] = 'Fechar';
 $string['completionpass'] = 'Requerer nota de aprovação';
-$string['completionpassdesc'] = 'O aluno deve obter a nota de aprovação para concluir esta atividade';
 $string['completionpass_help'] = 'Se ativar esta opção, esta atividade é considerada concluída quando o aluno obtiver a nota de aprovação (conforme especificado na secção Avaliação das configurações de atividade do H5P) ou superior.';
+$string['completionpassdesc'] = 'O aluno deve obter a nota de aprovação para concluir esta atividade';
 $string['confirmdialogbody'] = 'Por favor, confirme que pretende prosseguir. Esta ação é irreversível.';
 $string['confirmdialogheader'] = 'Confirmar ação';
 $string['confirmlabel'] = 'Confirmar';
@@ -230,12 +230,12 @@ $string['licenseCC20'] = 'Atribuição 2.0 Genérica';
 $string['licenseCC25'] = 'Atribuição 2.5 Genérica';
 $string['licenseCC30'] = 'Atribuição 3.0 Não Adaptada';
 $string['licenseCC40'] = 'Atribuição 4.0 Internacional';
-$string['licensee'] = 'Licenciados';
-$string['licenseextras'] = 'Licença suplementar';
 $string['licenseGPL'] = 'Licença Pública Geral';
 $string['licenseV1'] = 'Versão 1';
 $string['licenseV2'] = 'Versão 2';
 $string['licenseV3'] = 'Versão 3';
+$string['licensee'] = 'Licenciados';
+$string['licenseextras'] = 'Licença suplementar';
 $string['licenseversion'] = 'Versão da licença';
 $string['loadingdata'] = 'A carregar dados...';
 $string['lookforupdates'] = 'Procurar atualizações do H5P';
@@ -325,7 +325,7 @@ $string['privacy:metadata:hvp_content_user_data:delete_on_content_change'] = 'Si
 $string['privacy:metadata:hvp_content_user_data:hvp_id'] = 'ID do conteúdo H5P ao qual os dados pertencem.';
 $string['privacy:metadata:hvp_content_user_data:id'] = 'ID da relação de dados do usuário com o conteúdo.';
 $string['privacy:metadata:hvp_content_user_data:preloaded'] = 'Sinalizador que determina se os dados devem ser pré-carregados no conteúdo.';
-$string['privacy:metadata:hvp_content_user_data:sub_content_id'] = 'Subconteúdo do H5P, 0 se não for subconteúdo.';
+$string['privacy:metadata:hvp_content_user_data:sub_content_id'] = 'Sub-conteúdo do H5P, 0 se não for sub-conteúdo.';
 $string['privacy:metadata:hvp_content_user_data:user_id'] = 'ID do utilizador ao qual os dados pertencem.';
 $string['privacy:metadata:hvp_events'] = 'Mantém o controlo do registo de eventos H5P.';
 $string['privacy:metadata:hvp_events:content_id'] = 'ID do conteúdo em que a ação foi executada. 0 se novo ou nenhum conteúdo.';

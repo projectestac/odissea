@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_webct', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qformat_webct', language 'sv', version '3.8'.
  *
- * @package   qformat_webct
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qformat_webct
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,6 +31,6 @@ $string['missingquestion'] = 'Saknad fråga etikett efter linje {$a}';
 $string['pluginname'] = 'WebCT format';
 $string['pluginname_help'] = 'WebCT formatet möjliggör import av flervalsfrågor och korttext frågor sparade i WebCT:s text-baserade format.';
 $string['questionnametoolong'] = 'Frågenamnet är för långt i rad {$a} (255 tecken. Max). Det har kortats.';
-$string['unknowntype'] = 'Okänd typ';
+$string['unknowntype'] = 'Okänd frågetyp efter rad {$a}';
 $string['warningsdetected'] = '{$a} varning (ar) upptäckta';
 $string['wronggrade'] = 'Fel betyg (efter rad {$a}):';

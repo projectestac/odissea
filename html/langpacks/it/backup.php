@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'it', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -117,6 +117,12 @@ $string['choosefilefromcoursebackup'] = 'Area backup corso';
 $string['choosefilefromcoursebackup_help'] = 'I backup dei corsi eseguiti con le impostazioni di default sono memorizzati nell\'area di backup del corso.';
 $string['choosefilefromuserbackup'] = 'Area backup personali';
 $string['choosefilefromuserbackup_help'] = 'I backup dei corsi eseguiti con l\'opzione "Rendi anonimi i dati utente" sono memorizzati nei file personali.';
+$string['config_keep_groups_and_groupings'] = 'Imposta il default per il mantenimento dei gruppi e raggruppamenti esistenti.';
+$string['config_keep_roles_and_enrolments'] = 'Imposta il default per il mantenimento dei ruoli e iscrizioni esistenti.';
+$string['config_overwrite_conf'] = 'Consente agli utenti di sovrascrivere la configurazione del corso';
+$string['config_overwrite_course_fullname'] = 'Se "Sovrascrivi la configurazione del corso" è abilitato e se l\'utente ha il privilegio moodle/course:changefullname per modificare il nome del corso, di default il nome del corso di back up verrà sovrascritto nel corso di destinazione.';
+$string['config_overwrite_course_shortname'] = 'Se "Sovrascrivi la configurazione del corso" è abilitato e se l\'utente ha il privilegiomoodle/course:changeshortname per modificare il titolo del corso, di default il titolo del corso di back up verrà sovrascritto nel corso di destinazione.';
+$string['config_overwrite_course_startdate'] = 'Se "Sovrascrivi la configurazione del corso" è abilitato e se l\'utente ha il privilegio moodle/restore:rolldates per modificare le date nel ripristino del corso, di default la data di inizio del corso di back up viene sovrascritta nel corso di destinazione.';
 $string['configgeneralactivities'] = 'Imposta il default per l\'inclusione delle attività nei backup.';
 $string['configgeneralanonymize'] = 'Imposta il default per rendere anonime le informazioni degli utenti nei backup.';
 $string['configgeneralbadges'] = 'Imposta il default per l\'inclusione dei badge nei backup.';
@@ -126,20 +132,14 @@ $string['configgeneralcomments'] = 'Imposta il default per l\'inclusione dei com
 $string['configgeneralcompetencies'] = 'Imposta il default per l\'inclusione delle competenze nei backup.';
 $string['configgeneralfiles'] = 'Il default per l\'inclusione dei file nei backup. Nota: disabilitando  l\'impostazione, i backup conterranno solo i riferimenti ai file, cosa che non è un problema se il backup verrà ripristinato nello stesso sito purché i file non siano stati eliminati in accordo all\'impostazione \'Elimina file del cestino\' (filescleanupperiod).';
 $string['configgeneralfilters'] = 'Imposta il default per l\'inclusione dei filtri nei backup.';
-$string['configgeneralgroups'] = 'Il default per l\'inclusione nei backup di gruppi e raggruppamenti.';
+$string['configgeneralgroups'] = 'Imposta il default per l\'inclusione nei backup di gruppi e raggruppamenti.';
 $string['configgeneralhistories'] = 'Imposta il default per l\'inclusione dello storico degli utenti nei backup.';
 $string['configgenerallogs'] = 'Imposta il default per l\'inclusione dei log nei backup.';
 $string['configgeneralquestionbank'] = 'Include di default il deposito delle domande nei backup. NOTA: disabilitando questa impostazione saranno disabilitati i backup delle attività che usano il deposito delle domande, come ad esempio i quiz.';
 $string['configgeneralroleassignments'] = 'Imposta il default per l\'inclusione delle assegnazioni di ruolo nei backup.';
 $string['configgeneralusers'] = 'Imposta il default per l\'inclusione degli utenti nei backup.';
 $string['configgeneraluserscompletion'] = 'Imposta il default per l\'inclusione delle informazioni di completamento nei backup.';
-$string['config_keep_groups_and_groupings'] = 'Imposta il default per il mantenimento dei gruppi e raggruppamenti esistenti.';
-$string['config_keep_roles_and_enrolments'] = 'Imposta il default per il mantenimento dei ruoli e iscrizioni esistenti.';
 $string['configloglifetime'] = 'Imposta la finestra temporale di conservazione dei log di backup. I log antecedenti la finestra temporale saranno eliminati automaticamente. Si suggerisce di impostare un valore basso, la quantità di informazioni dei logo può essere molto grande.';
-$string['config_overwrite_conf'] = 'Consente agli utenti di sovrascrivere la configurazione del corso';
-$string['config_overwrite_course_fullname'] = 'Se "Sovrascrivi la configurazione del corso" è abilitato e se l\'utente ha il privilegio moodle/course:changefullname per modificare il nome del corso, di default il nome del corso di back up verrà sovrascritto nel corso di destinazione.';
-$string['config_overwrite_course_shortname'] = 'Se "Sovrascrivi la configurazione del corso" è abilitato e se l\'utente ha il privilegiomoodle/course:changeshortname per modificare il titolo del corso, di default il titolo del corso di back up verrà sovrascritto nel corso di destinazione.';
-$string['config_overwrite_course_startdate'] = 'Se "Sovrascrivi la configurazione del corso" è abilitato e se l\'utente ha il privilegio moodle/restore:rolldates per modificare le date nel ripristino del corso, di default la data di inizio del corso di back up viene sovrascritta nel corso di destinazione.';
 $string['configrestoreactivities'] = 'Imposta il default per il ripristino delle attività.';
 $string['configrestorebadges'] = 'Imposta il default per il ripristino dei badge.';
 $string['configrestoreblocks'] = 'Imposta il default per il ripristino dei blocchi.';
@@ -175,8 +175,8 @@ $string['enableasyncbackup'] = 'Abilita backup asincroni';
 $string['enableasyncbackup_help'] = 'Le operazioni di backup e ripristino saranno asincrone, consentendo all\'utente di svolgere altre attività. L\'impostazione non ha influenza su importazioni ed esportazioni.';
 $string['enterasearch'] = 'Inserisci una ricerca';
 $string['error_block_for_module_not_found'] = 'E\' stata trovata una istanza orfana  di blocco (id: {$a->bid}) nel corso (id: {$a->mid}). Questo blocco non sarà incluso nel backup.';
-$string['errorcopyingbackupfile'] = 'Non è andata a buon fine la copia del file di backup nella cartella temporanea per il ripristino.';
 $string['error_course_module_not_found'] = 'E\' stato trovato un modulo orfano (id: {$a}) nel corso. Questo modulo non sarà incluso nel backup.';
+$string['errorcopyingbackupfile'] = 'Non è andata a buon fine la copia del file di backup nella cartella temporanea per il ripristino.';
 $string['errorfilenamemustbezip'] = 'Il nome del file inserito deve essere un file ZIP e deve avere l\'estensione .mbz.';
 $string['errorfilenamerequired'] = 'Devi inserire un nome valido per il file di backup. ';
 $string['errorfilenametoolong'] = 'Il nome del file deve essere lungo meno di 255 caratteri.';
@@ -269,14 +269,14 @@ $string['pendingasyncerror'] = 'La risorsa ha un backup in attesa';
 $string['preparingdata'] = 'Preparazione dati';
 $string['preparingui'] = 'Preparazione visualizzazione della pagina';
 $string['previousstage'] = 'Indietro';
+$string['privacy:metadata:backup:detailsofarchive'] = 'Archivio che può contenere dati degli utenti relativi a un corso, come valutazioni, iscrizioni e dati sulle attività.';
+$string['privacy:metadata:backup:externalpurpose'] = 'Scopo dell\'archivio è conservare informazioni sul corso in modo che possano essere ripristinate successivamente.';
 $string['privacy:metadata:backup_controllers'] = 'Elenco delle operazioni di backup';
 $string['privacy:metadata:backup_controllers:itemid'] = 'ID del corso';
 $string['privacy:metadata:backup_controllers:operation'] = 'Operazione effettuata, ad esempio, ripristino.';
 $string['privacy:metadata:backup_controllers:timecreated'] = 'Data di creazione dell\'azione';
 $string['privacy:metadata:backup_controllers:timemodified'] = 'Data di modifica dell\'azione';
 $string['privacy:metadata:backup_controllers:type'] = 'Tipo di elemento su cui si sta lavorando, ad esempio un\'attività.';
-$string['privacy:metadata:backup:detailsofarchive'] = 'Archivio che può contenere dati degli utenti relativi a un corso, come valutazioni, iscrizioni e dati sulle attività.';
-$string['privacy:metadata:backup:externalpurpose'] = 'Scopo dell\'archivio è conservare informazioni sul corso in modo che possano essere ripristinate successivamente.';
 $string['qcategory2coursefallback'] = 'La categoria di domande "{$a->name}", presente nel backup e proveniente contesto della categoria system/course, sarà ripristinata nel contesto del corso.';
 $string['qcategorycannotberestored'] = 'Il ripristino non può creare la categoria di domande "{$a->name}"';
 $string['question2coursefallback'] = 'La categoria di domande "{$a->name}", presente nel backup e proveniente contesto della categoria system/course, sarà ripristinata nel contesto del corso.';
@@ -292,7 +292,7 @@ $string['restorenewcoursefullname'] = 'Nuovo titolo del corso';
 $string['restorenewcourseshortname'] = 'Nuovo titolo abbreviato del corso';
 $string['restorenewcoursestartdate'] = 'Nuova data di inizio';
 $string['restorerolemappings'] = 'Ripristina mappatura ruoli';
-$string['restorerootsettings'] = 'Ripristina impostazioni';
+$string['restorerootsettings'] = 'Impostazioni ripristino';
 $string['restoresection'] = 'Ripristina sezioni';
 $string['restorestage1'] = 'Conferma';
 $string['restorestage16'] = 'Revisione';
@@ -330,7 +330,7 @@ $string['rootsettingcompetencies'] = 'Includi competenze';
 $string['rootsettingcustomfield'] = 'Includi campi personalizzati';
 $string['rootsettingenrolments'] = 'Includi metodi di iscrizione';
 $string['rootsettingenrolments_always'] = 'Si, sempre';
-$string['rootsettingenrolments_never'] = 'No, ripristina gli utenti iscrivendoli con iscrizione manuali';
+$string['rootsettingenrolments_never'] = 'No, ripristina gli utenti iscrivendoli con iscrizione manuale';
 $string['rootsettingenrolments_withusers'] = 'Sì, ma soltanto se gli utenti sono inclusi';
 $string['rootsettingfiles'] = 'Includi i file';
 $string['rootsettingfilters'] = 'Includi filtri';

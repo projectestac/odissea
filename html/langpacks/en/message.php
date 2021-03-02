@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'en', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -73,6 +73,7 @@ $string['emailtagline'] = 'This is a copy of a message sent to you at "{$a->site
 $string['enabled'] = 'Enabled';
 $string['errorcallingprocessor'] = 'Error calling defined output';
 $string['errorconversationdoesnotexist'] = 'Conversation does not exist';
+$string['errormessagetoolong'] = 'The message is longer than the maximum allowed.';
 $string['errortranslatingdefault'] = 'Error translating default setting provided by plugin, using system defaults instead.';
 $string['eventgroupmessagesent'] = 'Group message sent';
 $string['eventmessagecontactadded'] = 'Message contact added';
@@ -98,11 +99,11 @@ $string['info'] = 'User info';
 $string['isnotinyourcontacts'] = '{$a} is not in your contacts';
 $string['loadmore'] = 'Load more';
 $string['loggedin'] = 'Online';
-$string['loggedindescription'] = 'When you are logged into Moodle';
 $string['loggedin_help'] = 'Configure how you would like to receive notifications when you are logged into Moodle';
+$string['loggedindescription'] = 'When you are logged into Moodle';
 $string['loggedoff'] = 'Offline';
-$string['loggedoffdescription'] = 'When you are not logged into Moodle';
 $string['loggedoff_help'] = 'Configure how you would like to receive notifications when you are not logged into Moodle';
+$string['loggedoffdescription'] = 'When you are not logged into Moodle';
 $string['managemessageoutputs'] = 'Default notification preferences';
 $string['message'] = 'Message';
 $string['messagecontactrequestsnotification'] = '{$a} is requesting to be added as a contact.';
@@ -164,7 +165,6 @@ $string['participants'] = 'Participants';
 $string['pendingcontactrequests'] = 'There are {$a} pending contact requests';
 $string['permitted'] = 'Permitted';
 $string['privacy'] = 'Privacy';
-$string['privacy_desc'] = 'You can restrict who can message you';
 $string['privacy:export:conversationprefix'] = 'Conversation:';
 $string['privacy:metadata:core_favourites'] = 'The conversations starred by the user';
 $string['privacy:metadata:message_contact_requests'] = 'The list of contact requests';
@@ -184,6 +184,15 @@ $string['privacy:metadata:message_conversation_members'] = 'The list of users in
 $string['privacy:metadata:message_conversation_members:conversationid'] = 'The ID of the conversation';
 $string['privacy:metadata:message_conversation_members:timecreated'] = 'The time when the member was created';
 $string['privacy:metadata:message_conversation_members:userid'] = 'The ID of the user in a conversation';
+$string['privacy:metadata:message_user_actions'] = 'The list of message user actions';
+$string['privacy:metadata:message_user_actions:action'] = 'The action that was performed';
+$string['privacy:metadata:message_user_actions:messageid'] = 'The ID of the message this action belongs to';
+$string['privacy:metadata:message_user_actions:timecreated'] = 'The time when the action was created';
+$string['privacy:metadata:message_user_actions:userid'] = 'The ID of the user who performed this action';
+$string['privacy:metadata:message_users_blocked'] = 'The list of blocked users';
+$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'The ID of the user who was blocked';
+$string['privacy:metadata:message_users_blocked:timecreated'] = 'The time when the blocked action was created';
+$string['privacy:metadata:message_users_blocked:userid'] = 'The ID of the user who performed the blocked action';
 $string['privacy:metadata:messages'] = 'Messages';
 $string['privacy:metadata:messages:conversationid'] = 'The ID of the conversation';
 $string['privacy:metadata:messages:customdata'] = 'Custom data, usually containing internal IDs and a public URL of the sender image (user or group)';
@@ -194,15 +203,6 @@ $string['privacy:metadata:messages:smallmessage'] = 'A small version of the mess
 $string['privacy:metadata:messages:subject'] = 'The subject of the message';
 $string['privacy:metadata:messages:timecreated'] = 'The time when the message was created';
 $string['privacy:metadata:messages:useridfrom'] = 'The ID of the user who sent the message';
-$string['privacy:metadata:message_user_actions'] = 'The list of message user actions';
-$string['privacy:metadata:message_user_actions:action'] = 'The action that was performed';
-$string['privacy:metadata:message_user_actions:messageid'] = 'The ID of the message this action belongs to';
-$string['privacy:metadata:message_user_actions:timecreated'] = 'The time when the action was created';
-$string['privacy:metadata:message_user_actions:userid'] = 'The ID of the user who performed this action';
-$string['privacy:metadata:message_users_blocked'] = 'The list of blocked users';
-$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'The ID of the user who was blocked';
-$string['privacy:metadata:message_users_blocked:timecreated'] = 'The time when the blocked action was created';
-$string['privacy:metadata:message_users_blocked:userid'] = 'The ID of the user who performed the blocked action';
 $string['privacy:metadata:notifications'] = 'Notifications';
 $string['privacy:metadata:notifications:component'] = 'The component responsible for sending the notification';
 $string['privacy:metadata:notifications:contexturl'] = 'The URL related to this notification';
@@ -220,6 +220,7 @@ $string['privacy:metadata:notifications:useridfrom'] = 'The ID of the user who s
 $string['privacy:metadata:notifications:useridto'] = 'The ID of the user who received the notification';
 $string['privacy:metadata:preference:core_message_settings'] = 'Settings related to messaging';
 $string['privacy:request:preference:set'] = 'The value of the setting \'{$a->name}\' was \'{$a->value}\'';
+$string['privacy_desc'] = 'You can restrict who can message you';
 $string['processorsettings'] = 'Processor settings';
 $string['removecontact'] = 'Remove contact';
 $string['removecontactconfirm'] = 'Are you sure you want to remove {$a} from your contacts?';

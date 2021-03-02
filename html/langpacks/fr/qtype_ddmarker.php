@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'fr', version '3.8'.
  *
- * @package   qtype_ddmarker
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddmarker
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -63,7 +63,7 @@ $string['formerror_nosemicolons'] = 'Il n\'y a pas de point-virgule dans votre c
 $string['formerror_onlysometagsallowed'] = 'Seules les balises « {$a} » sont autorisées dans le label d\'un marqueur.';
 $string['formerror_onlyusewholepositivenumbers'] = 'Veuillez n\'utiliser que des nombres entiers positifs pour spécifier les coordonnées x,y et/ou la largeur et la hauteur des formes. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
 $string['formerror_polygonmusthaveatleastthreepoints'] = 'Vous devez spécifier au moins 3 points pour définir un polygone. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
-$string['formerror_repeatedpoint'] = 'Vous avez saisi deux fois le même point. Veuillez retirer ce doublon. Les coordonnées pour un {$a->shape} doivent être exprimée ainsi : {$a->coordsstring}.';
+$string['formerror_repeatedpoint'] = 'Les mêmes coordonnées ont été saisies deux fois. Chaque point doit être unique. Les coordonnées pour un {$a->shape} doivent être exprimées comme - {$a->coordsstring}.';
 $string['formerror_shapeoutsideboundsofbgimage'] = 'La forme que vous avez définie sort des limites de l\'image de fond.';
 $string['formerror_toomanysemicolons'] = 'Il y a trop d\'éléments séparés par des points-virgules dans les coordonnées que vous avez spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
 $string['formerror_unrecognisedwidthheightpart'] = 'Impossible d\'évaluer la hauteur et la largeur spécifiées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';
@@ -76,10 +76,10 @@ $string['nolabel'] = 'Pas d\'étiquette';
 $string['noofdrags'] = 'Nombre';
 $string['pleasedragatleastonemarker'] = 'Votre réponse est incomplète ; vous devez placer au moins un marqueur sur l\'image.';
 $string['pluginname'] = 'Marqueurs à glisser-déposer';
-$string['pluginnameadding'] = 'Ajouter des marqueurs à glisser-déposer';
-$string['pluginnameediting'] = 'Modifier des marqueurs à glisser-déposer';
 $string['pluginname_help'] = 'Sélectionner un fichier pour l\'image de fond, saisissez des labels pour les marqueurs et définissez des zones de dépôt pour ces marqueurs sur l\'image de fond.';
 $string['pluginname_link'] = 'question/type/ddmarker';
+$string['pluginnameadding'] = 'Ajouter des marqueurs à glisser-déposer';
+$string['pluginnameediting'] = 'Modifier des marqueurs à glisser-déposer';
 $string['pluginnamesummary'] = 'Des marqueurs sont glissés et déposés sur une image de fond.
 
 À noter : ce type de question n\'est pas accessible pour les personnes malvoyantes.';

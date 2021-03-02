@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'fr', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -210,13 +210,13 @@ $string['howlong'] = 'Combien de temps avez-vous mis pour répondre à cette con
 $string['howlongoptions'] = 'Moins d\'1 min,1-2 min,2-3 min,3-4 min,4-5 min,5-10 min,Plus de 10 min';
 $string['ifoundthat'] = 'J\'ai trouvé que';
 $string['indicator:cognitivedepth'] = 'Consultation : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Consultation.';
 $string['indicator:cognitivedepthdef'] = 'Consultation : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Consultation » (niveaux : pas de vue, vue, envoi).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Consultation.';
 $string['indicator:socialbreadth'] = 'Consultation : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Consultation.';
 $string['indicator:socialbreadthdef'] = 'Consultation : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Consultation » (niveaux : pas de participation, participant seul).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Consultation.';
 $string['introtext'] = 'Texte d\'introduction';
 $string['invalidsurveyid'] = 'Identifiant de consultation incorrect';
 $string['invalidtmptid'] = 'Identifiant de modèle incorrect';
@@ -264,13 +264,13 @@ $string['seemoredetail'] = 'Cliquer ici pour avoir plus de détail';
 $string['selectedquestions'] = 'Questions choisies dans un barème, tous les étudiants';
 $string['summary'] = 'Résumé';
 $string['survey:addinstance'] = 'Ajouter une consultation';
-$string['surveycompleted'] = 'Vous avez complètement répondu à cette consultation. Le graphique ci-dessous montre un résumé de vos résultats comparés aux moyennes de la classe.';
-$string['surveycompletednograph'] = 'Vous avez terminé ce sondage.';
 $string['survey:download'] = 'Télécharger les réponses';
-$string['surveygraph'] = 'Graphique de la consultation';
-$string['surveyname'] = 'Nom de la consultation';
 $string['survey:participate'] = 'Répondre aux consultations';
 $string['survey:readresponses'] = 'Voir les réponses';
+$string['surveycompleted'] = 'Vous avez complètement répondu à cette consultation. Le graphique ci-dessous montre un résumé de vos résultats comparés aux moyennes de la classe.';
+$string['surveycompletednograph'] = 'Vous avez terminé ce sondage.';
+$string['surveygraph'] = 'Graphique de la consultation';
+$string['surveyname'] = 'Nom de la consultation';
 $string['surveysaved'] = 'Consultation enregistrée';
 $string['surveytype'] = 'Type de consultation';
 $string['surveytype_help'] = 'Il y a trois types de consultations disponibles :

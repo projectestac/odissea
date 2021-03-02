@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_myoverview', language 'nl', version '3.8'.
  *
- * @package   block_myoverview
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_myoverview
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -65,7 +65,7 @@ $string['customfiltergrouping_nofields'] = 'Voor deze optie moet je een aangepas
 $string['defaulttab'] = 'Standaard-tab';
 $string['defaulttab_desc'] = 'Dit is de standaard-tab die aan een gebruiker getoond de eerste keer dat die een cursus bezoekt. Bij het terugkeren naar het cursusoverzicht wordt de actieve tab van de gebruiker onthouden.';
 $string['displaycategories'] = 'Toon categorieën';
-$string['displaycategories_help'] = 'Geef de cursuscategorie weer op dashboard-cursusitems, inclusief kaarten, lijstitems en samenvattingsitems.';
+$string['displaycategories_help'] = 'Toon de cursuscategorie bij cursusitems op Mijn startpagina inclusief items als kaart, lijst of samenvatting.';
 $string['favourites'] = 'Favoriet';
 $string['future'] = 'Toekomst';
 $string['hidden'] = 'Verborgen cursussen';

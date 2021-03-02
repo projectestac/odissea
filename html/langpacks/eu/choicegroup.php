@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'eu', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,10 @@ $string['char_limitui_parenthesis_start'] = '⦗';
 $string['choice'] = 'Aukeraketa';
 $string['choicegroup:addinstance'] = 'Gehitu talde-aukeraketa jarduera berri bat';
 $string['choicegroup:choose'] = 'Gorde aukeraketa bat';
-$string['choicegroupclose'] = 'Amaiera-data:';
 $string['choicegroup:deleteresponses'] = 'Ezabatu erantzunak';
 $string['choicegroup:downloadresponses'] = 'Jaitsi erantzunak';
+$string['choicegroup:readresponses'] = 'Irakurri erantzunak';
+$string['choicegroupclose'] = 'Amaiera-data:';
 $string['choicegroupfull'] = 'Talde-aukera hau beteta dago, ez da lekurik geratzen.';
 $string['choicegroupname'] = 'Talde-aukeraketaren izena';
 $string['choicegroupopen'] = 'Hasiera-data';
@@ -59,7 +60,6 @@ Ezkerreko zerrendan eskuragarri dauden talde eta talde-multzoak erakusten dira. 
 Aukeratutako taldeak eskuineko zerrendan erakusten dira.
 
 Talderen bat aukeratutakoen zerrendatik kentzeko eskuineko zerrendan aukeratu eta "Kendu" botoian klik egin ezazu.';
-$string['choicegroup:readresponses'] = 'Irakurri erantzunak';
 $string['choicegroupsaved'] = 'Zure aukera gorde da';
 $string['choicetext'] = 'Aukeraren testua';
 $string['chooseaction'] = 'Aukeratu ekintza bat...';
@@ -74,8 +74,8 @@ $string['del_groups'] = 'Kendu Taldeak';
 $string['displayhorizontal'] = 'Erakutsi horizontalki';
 $string['displaymode'] = 'Erakuste-modua';
 $string['displayvertical'] = 'Erakutsi bertikalki';
-$string['double_click_grouping_legend'] = 'Egin klik bikoitza talde-multzo batean banaka zabaldu edo tolesteko.';
 $string['double_click_group_legend'] = 'Egin klik bikoitza talde batean talde hori gehitzeko.';
+$string['double_click_grouping_legend'] = 'Egin klik bikoitza talde-multzo batean banaka zabaldu edo tolesteko.';
 $string['event:answered'] = 'Aukeraketa egin da';
 $string['event:answered_desc'] = '\'{$a->userid}\' IDa duen erabiltzaileak talde-aukeraketako \'{$a->contextinstanceid}\' ikastaro-moduluan taldea aukeratu du.';
 $string['event:removed'] = 'Aukera ezabatu da';

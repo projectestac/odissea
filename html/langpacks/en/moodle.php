@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'moodle', language 'en', version '3.8'.
  *
- * @package   moodle
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     moodle
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -333,8 +333,8 @@ $string['coursebackup'] = 'Course backup';
 $string['coursebulkaction'] = 'Bulk actions for selected courses';
 $string['coursecategories'] = 'Course categories';
 $string['coursecategory'] = 'Course category';
-$string['coursecategorydeleted'] = 'Deleted course category {$a}';
 $string['coursecategory_help'] = 'This setting determines the category in which the course will appear in the list of courses.';
+$string['coursecategorydeleted'] = 'Deleted course category {$a}';
 $string['coursecatmanagement'] = 'Course and category management';
 $string['coursecompletion'] = 'Course completion';
 $string['coursecompletions'] = 'Course completions';
@@ -380,8 +380,8 @@ $string['coursemessage'] = 'Message course users';
 $string['coursenotaccessible'] = 'This course does not allow public access';
 $string['courseoverview'] = 'Course overview';
 $string['courseoverviewfiles'] = 'Course image';
-$string['courseoverviewfilesext'] = 'Course image file extensions';
 $string['courseoverviewfiles_help'] = 'The course image is displayed in the course overview on the Dashboard. Additional accepted file types and more than one file may be enabled by a site administrator. If so, these files will be displayed next to the course summary on the list of courses page.';
+$string['courseoverviewfilesext'] = 'Course image file extensions';
 $string['courseoverviewfileslimit'] = 'Course image files limit';
 $string['courseoverviewgraph'] = 'Course overview graph';
 $string['coursepreferences'] = 'Course preferences';
@@ -653,7 +653,6 @@ $string['emailconfirmsent'] = '<p>An email should have been sent to your address
 $string['emailconfirmsentfailure'] = 'Confirmation email failed to send';
 $string['emailconfirmsentsuccess'] = 'Confirmation email sent successfully';
 $string['emaildigest'] = 'Email digest type';
-$string['emaildigestcomplete'] = 'Complete (daily email with full posts)';
 $string['emaildigest_help'] = 'This is the daily digest setting that forums will use by default.
 
 * No digest - you will receive one e-mail per forum post;
@@ -661,13 +660,14 @@ $string['emaildigest_help'] = 'This is the daily digest setting that forums will
 * Digest - subjects only - you will receive one digest e-mail per day containing just the subject of each forum post.
 
 You can also choose a different setting for each forum if you wish.';
+$string['emaildigestcomplete'] = 'Complete (daily email with full posts)';
 $string['emaildigestoff'] = 'No digest (single email per forum post)';
 $string['emaildigestsubjects'] = 'Subjects (daily email with subjects only)';
 $string['emaildisable'] = 'This email address is disabled';
 $string['emaildisableclick'] = 'Click here to disable all email from being sent to this address';
 $string['emaildisplay'] = 'Email display';
-$string['emaildisplaycourse'] = 'Allow only other course members to see my email address';
 $string['emaildisplay_help'] = 'Privileged users (such as teachers and managers) will always be able to see your email address.';
+$string['emaildisplaycourse'] = 'Allow only other course members to see my email address';
 $string['emaildisplayhidden'] = 'Email hidden';
 $string['emaildisplayno'] = 'Hide my email address from non-privileged users';
 $string['emaildisplayyes'] = 'Allow everyone to see my email address';
@@ -893,8 +893,8 @@ $string['force'] = 'Force';
 $string['forcelanguage'] = 'Force language';
 $string['forceno'] = 'Do not force';
 $string['forcepasswordchange'] = 'Force password change';
-$string['forcepasswordchangecheckfull'] = 'Are you absolutely sure you want to force a password change to {$a} ?';
 $string['forcepasswordchange_help'] = 'If this checkbox is ticked, the user will be prompted to change their password on their next login';
+$string['forcepasswordchangecheckfull'] = 'Are you absolutely sure you want to force a password change to {$a} ?';
 $string['forcepasswordchangenot'] = 'Could not force a password change to {$a}';
 $string['forcepasswordchangenotice'] = 'You must change your password to proceed.';
 $string['forcetheme'] = 'Force theme';
@@ -997,8 +997,8 @@ $string['hiddenassign'] = 'Hidden assignment';
 $string['hiddenfromstudents'] = 'Hidden from students';
 $string['hiddenoncoursepage'] = 'Available but not shown on course page';
 $string['hiddensections'] = 'Hidden sections';
-$string['hiddensectionscollapsed'] = 'Hidden sections are shown in collapsed form';
 $string['hiddensections_help'] = 'This setting determines whether hidden sections are displayed to students in collapsed form (perhaps for a course in weekly format to indicate holidays) or are completely hidden.';
+$string['hiddensectionscollapsed'] = 'Hidden sections are shown in collapsed form';
 $string['hiddensectionsinvisible'] = 'Hidden sections are completely invisible';
 $string['hiddenwithbrackets'] = '(hidden)';
 $string['hide'] = 'Hide';
@@ -1031,9 +1031,9 @@ $string['icon'] = 'Icon';
 $string['icqnumber'] = 'ICQ number';
 $string['idnumber'] = 'ID number';
 $string['idnumbercourse'] = 'Course ID number';
+$string['idnumbercourse_help'] = 'The ID number of a course is only used when matching the course against external systems and is not displayed anywhere on the site. If the course has an official code name it may be entered, otherwise the field can be left blank.';
 $string['idnumbercoursecategory'] = 'Category ID number';
 $string['idnumbercoursecategory_help'] = 'The ID number of a course category  is only used when matching the category against external systems and is not displayed anywhere on the site. If the category has an official code name it may be entered, otherwise the field can be left blank.';
-$string['idnumbercourse_help'] = 'The ID number of a course is only used when matching the course against external systems and is not displayed anywhere on the site. If the course has an official code name it may be entered, otherwise the field can be left blank.';
 $string['idnumbergroup'] = 'Group ID number';
 $string['idnumbergroup_help'] = 'The ID number of a group is only used when matching the group against external systems and is not displayed anywhere on the site. If the group has an official code name it may be entered, otherwise the field can be left blank.';
 $string['idnumbergrouping'] = 'Grouping ID number';
@@ -1077,9 +1077,9 @@ $string['indicator:anywrite_help'] = 'This indicator represents any write (submi
 $string['indicator:anywriteincourse'] = 'Any write action in the course';
 $string['indicator:anywriteincourse_help'] = 'This indicator represents any write (submit) action taken by the student in any course activity.';
 $string['indicator:completeduserprofile'] = 'User profile is completed';
+$string['indicator:completeduserprofile_help'] = 'This indicator represents that the student has completed their user profile.';
 $string['indicator:completeduserprofiledef'] = 'User profile is completed';
 $string['indicator:completeduserprofiledef_help'] = 'The site policies have been agreed to and the user has filled in the following fields: Institution, Department, Address, City, Country, URL.';
-$string['indicator:completeduserprofile_help'] = 'This indicator represents that the student has completed their user profile.';
 $string['indicator:completionenabled'] = 'Completion tracking enabled';
 $string['indicator:completionenabled_help'] = 'This indicator represents that completion tracking has been enabled for this course.';
 $string['indicator:nostudent'] = 'Student enrolments';
@@ -1087,15 +1087,15 @@ $string['indicator:nostudent_help'] = 'This indicator reflects the availability 
 $string['indicator:noteacher'] = 'Teacher availability';
 $string['indicator:noteacher_help'] = 'This indicator reflects the availability of teachers in the course.';
 $string['indicator:potentialcognitive'] = 'Course potential cognitive depth';
+$string['indicator:potentialcognitive_help'] = 'This indicator is based on the potential cognitive depth that could be reached by a student participating in course activities.';
 $string['indicator:potentialcognitivedef'] = 'Course potential cognitive depth';
 $string['indicator:potentialcognitivedef_help'] = 'The degree to which the course offers "deep" cognitive engagement, e.g. submission of work for feedback, the opportunity to review work by others, and the opportunity to revise and resubmit work.';
 $string['indicator:potentialcognitivedef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
-$string['indicator:potentialcognitive_help'] = 'This indicator is based on the potential cognitive depth that could be reached by a student participating in course activities.';
 $string['indicator:potentialsocial'] = 'Course potential social breadth';
+$string['indicator:potentialsocial_help'] = 'This indicator is based on the potential social breadth that could be reached by the student participating in course activities.';
 $string['indicator:potentialsocialdef'] = 'Course potential social breadth';
 $string['indicator:potentialsocialdef_help'] = 'The degree to which the course offers "broad" social engagement, interacting with other participants and with the community of practice beyond the class.';
 $string['indicator:potentialsocialdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['indicator:potentialsocial_help'] = 'This indicator is based on the potential social breadth that could be reached by the student participating in course activities.';
 $string['indicator:readactions'] = 'Read actions amount';
 $string['indicator:readactions_help'] = 'This indicator represents the number of read (view) actions taken by the student.';
 $string['indicator:userforumstracking'] = 'User is tracking forums';
@@ -1155,11 +1155,11 @@ $string['loggedinas'] = 'You are logged in as {$a}';
 $string['loggedinasguest'] = 'You are currently using guest access';
 $string['loggedinnot'] = 'You are not logged in.';
 $string['login'] = 'Log in';
+$string['login_failure_logs'] = 'Login failure logs';
 $string['loginactivity'] = 'Login activity';
 $string['loginalready'] = 'You are already logged in';
 $string['loginas'] = 'Log in as';
 $string['loginaspasswordexplain'] = '<p>You must enter the special "loginas password" to use this feature.<br />If you do not know it, ask your server administrator.</p>';
-$string['login_failure_logs'] = 'Login failure logs';
 $string['loginguest'] = 'Log in as a guest';
 $string['loginsite'] = 'Log in to the site';
 $string['loginsteps'] = 'For full access to this site, you first need to create an account.';
@@ -1354,8 +1354,8 @@ $string['newaccount'] = 'New account';
 $string['newactivityname'] = 'New name for activity {$a}';
 $string['newcourse'] = 'New course';
 $string['newpassword'] = 'New password';
-$string['newpasswordfromlost'] = '<strong>NOTICE:</strong> Your <strong>Current password</strong> will have been sent to you in the <strong>second</strong> of the two emails sent as part of the lost password recovery process. Make sure you have received your replacement password before continuing with this screen.';
 $string['newpassword_help'] = 'Enter a new password or leave blank to keep current password.';
+$string['newpasswordfromlost'] = '<strong>NOTICE:</strong> Your <strong>Current password</strong> will have been sent to you in the <strong>second</strong> of the two emails sent as part of the lost password recovery process. Make sure you have received your replacement password before continuing with this screen.';
 $string['newpasswordtext'] = 'Hi {$a->firstname},
 
 Your account password at \'{$a->sitename}\' has been reset
@@ -1639,9 +1639,9 @@ $string['privacy:metadata:upgrade_log:timemodified'] = 'The time that the upgrad
 $string['privacy:metadata:upgrade_log:type'] = 'The type of log entry.';
 $string['privacy:metadata:upgrade_log:userid'] = 'The user who ran the upgrade.';
 $string['privacy:metadata:upgrade_log:version'] = 'The old version of the plugin.';
-$string['privatefiles'] = 'Private files';
 $string['private_files_handler'] = 'Store attachments to an e-mail in the user\'s private files storage space.';
 $string['private_files_handler_name'] = 'Email to Private files';
+$string['privatefiles'] = 'Private files';
 $string['privatefilesmanage'] = 'Manage private files';
 $string['proceed'] = 'Proceed';
 $string['profile'] = 'Profile';
@@ -1795,14 +1795,14 @@ $string['scalestip2'] = 'To create custom scales, click the Grades link in the c
 $string['schedule'] = 'Schedule';
 $string['screenshot'] = 'Screenshot';
 $string['search'] = 'Search';
+$string['search_help'] = 'For basic searching of one or more words anywhere in the text, just type them separated by spaces. All words longer than two characters are used.
+
+For advanced searching, press the search button without typing anything in the search box to access the advanced search form.';
 $string['searchagain'] = 'Search again';
 $string['searchbyemail'] = 'Search by email address';
 $string['searchbyusername'] = 'Search by username';
 $string['searchcoursecategories'] = 'Search categories';
 $string['searchcourses'] = 'Search courses';
-$string['search_help'] = 'For basic searching of one or more words anywhere in the text, just type them separated by spaces. All words longer than two characters are used.
-
-For advanced searching, press the search button without typing anything in the search box to access the advanced search form.';
 $string['searchoptions'] = 'Search options';
 $string['searchresults'] = 'Search results';
 $string['sec'] = 'sec';
@@ -2043,9 +2043,9 @@ $string['thiscategorycontains'] = 'This category contains';
 $string['time'] = 'Time';
 $string['timecreatedcourse'] = 'Course time created';
 $string['timesplitting:deciles'] = 'Last tenth';
+$string['timesplitting:deciles_help'] = 'This analysis interval divides the course into tenths (10 equal parts), with each prediction being based on the data of only the most recent previous tenth.';
 $string['timesplitting:decilesaccum'] = 'All previous tenths';
 $string['timesplitting:decilesaccum_help'] = 'This analysis interval divides the course into tenths (10 equal parts), with each prediction being based on the accumulated data of all previous tenths.';
-$string['timesplitting:deciles_help'] = 'This analysis interval divides the course into tenths (10 equal parts), with each prediction being based on the data of only the most recent previous tenth.';
 $string['timesplitting:nosplitting'] = 'No time limits';
 $string['timesplitting:nosplitting_help'] = 'No analysis interval is defined for this model.';
 $string['timesplitting:onemonthafterstart'] = 'One month after start';
@@ -2059,9 +2059,9 @@ $string['timesplitting:pastmonth_help'] = 'This analysis interval generates pred
 $string['timesplitting:pastweek'] = 'Past week';
 $string['timesplitting:pastweek_help'] = 'This analysis interval generates predictions every week. The indicators calculations will be based on the past week.';
 $string['timesplitting:quarters'] = 'Last quarter';
+$string['timesplitting:quarters_help'] = 'This analysis interval divides the course into quarters (4 equal parts), with each prediction being based on the data of only the most recent previous quarter.';
 $string['timesplitting:quartersaccum'] = 'All previous quarters';
 $string['timesplitting:quartersaccum_help'] = 'This analysis interval divides the course into quarters (4 equal parts), with each prediction being based on the accumulated data of all previous quarters.';
-$string['timesplitting:quarters_help'] = 'This analysis interval divides the course into quarters (4 equal parts), with each prediction being based on the data of only the most recent previous quarter.';
 $string['timesplitting:singlerange'] = 'From start to end';
 $string['timesplitting:singlerange_help'] = 'This analysis interval considers the entire course as a single span.';
 $string['timesplitting:tenpercentafterstart'] = '10% after start';

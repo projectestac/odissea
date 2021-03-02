@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_log', language 'fr', version '3.8'.
  *
- * @package   report_log
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_log
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,9 +34,9 @@ $string['eventorigin'] = 'Origine';
 $string['eventrelatedfullnameuser'] = 'Utilisateur touché';
 $string['eventreportviewed'] = 'Journal consulté';
 $string['eventuserreportviewed'] = 'Journal d\'utilisateur consulté';
-$string['logsformat'] = 'Format des journaux';
 $string['log:view'] = 'Consulter les journaux du cours';
 $string['log:viewtoday'] = 'Consulter les journaux du jour';
+$string['logsformat'] = 'Format des journaux';
 $string['nocapability'] = 'Impossible d\'accéder au journal de l\'utilisateur';
 $string['nologreaderenabled'] = 'Aucun lecteur de journal activé';
 $string['origin'] = 'Source';

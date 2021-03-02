@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'user', language 'nl', version '3.8'.
  *
- * @package   user
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     user
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -113,12 +113,12 @@ $string['privacy:metadata:token'] = 'geheim ingesteld en via e-mail gestuurd naa
 $string['privacy:metadata:trackforums'] = 'Een voorkeur voor forums en het opvolgen ervan.';
 $string['privacy:metadata:trustbitmask'] = 'Het vertrouwd bit masker';
 $string['privacy:metadata:url'] = 'Een URL gerelateerd aan deze gebruiker.';
-$string['privacy:metadata:userid'] = 'De gebruikersID gelinkt aan deze tabel.';
-$string['privacy:metadata:username'] = 'De gebruikersnaam voor deze gebruiker.';
 $string['privacy:metadata:user_preferences'] = 'Voorkeuren geassocieerd met de opgegeven gebruiker';
 $string['privacy:metadata:user_preferences:name'] = 'Voorkeursnaam';
 $string['privacy:metadata:user_preferences:userid'] = 'De gebruikers-ID';
 $string['privacy:metadata:user_preferences:value'] = 'Voorkeurwaarde';
+$string['privacy:metadata:userid'] = 'De gebruikersID gelinkt aan deze tabel.';
+$string['privacy:metadata:username'] = 'De gebruikersnaam voor deze gebruiker.';
 $string['privacy:metadata:usertablesummary'] = 'Deze tabel bewaart de belangrijkste persoonlijke gegevens van de gebruiker.';
 $string['privacy:metadata:uuid'] = 'De UUID van de verkoper van het toestel';
 $string['privacy:metadata:version'] = 'De toestelversie, 6.1.2, 4.2.2 enz.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assign', language 'nl', version '3.8'.
  *
- * @package   assign
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assign
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,13 +28,13 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = 'Je hebt opdrachten die nagekeken moeten worden';
 $string['addattempt'] = 'Nog een poging toestaan';
 $string['addnewattempt'] = 'Een nieuwe poging toevoegen';
+$string['addnewattempt_help'] = 'Dit zal een nieuwe lege inzending voor je maken waaraan je dan kunt werken.';
 $string['addnewattemptfromprevious'] = 'Een  nieuwe poging toevoegen, gebaseerd op de vorige inzending';
 $string['addnewattemptfromprevious_help'] = 'Dit zal de inhoud van je vorige inzending kopiëren naar een nieuwe inzending waaraan je dan verder kunt werken.';
-$string['addnewattempt_help'] = 'Dit zal een nieuwe lege inzending voor je maken waaraan je dan kunt werken.';
 $string['addnewgroupoverride'] = 'Groep overschrijven toevoegen';
 $string['addnewuseroverride'] = 'Gebruiker overschrijven toevoegen';
 $string['addsubmission'] = 'Inzending toevoegen';
-$string['addsubmission_help'] = 'Je hebt nog niet ingestuurd.';
+$string['addsubmission_help'] = 'Je hebt nog geen inzending ingediend.';
 $string['allocatedmarker'] = 'Toegewezen beoordelaar';
 $string['allocatedmarker_help'] = 'Beoordelaar toegewezen aan deze inzending.';
 $string['allowsubmissions'] = 'Sta de gebruiker toe om inzendingen te blijven maken voor deze opdracht.';
@@ -49,13 +49,22 @@ $string['applytoteam'] = 'Cijfers en feedback aan de hele groep geven';
 $string['assign:addinstance'] = 'Voeg een nieuwe opdracht toe';
 $string['assign:editothersubmission'] = 'Bewerk een inzending van een andere leerling';
 $string['assign:exportownsubmission'] = 'Exporteer je opdracht';
-$string['assignfeedback'] = 'Feedback plugin';
-$string['assignfeedbackpluginname'] = 'Feedback plugin';
 $string['assign:grade'] = 'Beoordeel opdracht';
 $string['assign:grantextension'] = 'Geef extra tijd';
 $string['assign:manageallocations'] = 'Beheer toegewezen beoordelaars';
 $string['assign:managegrades'] = 'Bekijk cijfers en geef ze vrij';
 $string['assign:manageoverrides'] = 'Beheer opdrachtoverschrijvingen';
+$string['assign:receivegradernotifications'] = 'Ontvang meldingen van de beoordelaar';
+$string['assign:releasegrades'] = 'Geef cijfers vrij';
+$string['assign:revealidentities'] = 'Identiteit leerlingen tonen';
+$string['assign:reviewgrades'] = 'Bekijk cijfers';
+$string['assign:showhiddengrader'] = 'Zie de identiteit van een verborgen beoordeler';
+$string['assign:submit'] = 'Stuur opdracht in';
+$string['assign:view'] = 'Bekijk opdracht';
+$string['assign:viewblinddetails'] = 'Bekijk de identiteit van de leerling wanneer blind beoordelen is ingeschakeld';
+$string['assign:viewgrades'] = 'Bekijk cijfers';
+$string['assignfeedback'] = 'Feedback plugin';
+$string['assignfeedbackpluginname'] = 'Feedback plugin';
 $string['assignmentisdue'] = 'Opdracht moet worden ingeleverd';
 $string['assignmentmail'] = '{$a->grader} heeft feedback gepost voor je ingestuurde opdracht voor \'{$a->assignment}\'
 
@@ -68,17 +77,8 @@ Je kunt de feedback nalezen onderaan je ingestuurde opdracht';
 $string['assignmentname'] = 'Naam van de opdracht';
 $string['assignmentplugins'] = 'Opdracht plugins';
 $string['assignmentsperpage'] = 'Opdrachten per pagina';
-$string['assign:receivegradernotifications'] = 'Ontvang meldingen van de beoordelaar';
-$string['assign:releasegrades'] = 'Geef cijfers vrij';
-$string['assign:revealidentities'] = 'Identiteit leerlingen tonen';
-$string['assign:reviewgrades'] = 'Bekijk cijfers';
-$string['assign:showhiddengrader'] = 'Zie de identiteit van een verborgen beoordeler';
 $string['assignsubmission'] = 'Inzendingsplugin';
 $string['assignsubmissionpluginname'] = 'Inzendingsplugin';
-$string['assign:submit'] = 'Stuur opdracht in';
-$string['assign:view'] = 'Bekijk opdracht';
-$string['assign:viewblinddetails'] = 'Bekijk de identiteit van de leerling wanneer blind beoordelen is ingeschakeld';
-$string['assign:viewgrades'] = 'Bekijk cijfers';
 $string['attemptheading'] = 'Poging {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Vorige pogingen';
 $string['attemptnumber'] = 'Pogingnummer';
@@ -110,8 +110,8 @@ $string['batchoperationunlock'] = 'deblokkeer inzendingen';
 $string['batchsetallocatedmarker'] = 'Wijs een beoordelaar toe aan {$a} geselecteerde gebruiker(s).';
 $string['batchsetmarkingworkflowstateforusers'] = 'Stel de status van de beoordelings-workflow in voor {$a} geselecteerde gebruiker(s)';
 $string['blindmarking'] = 'Blind beoordelen';
-$string['blindmarkingenabledwarning'] = 'Voor deze activiteit is blind beoordelen ingeschakeld.';
 $string['blindmarking_help'] = 'Blind beoordelen verbergt de identiteit van leerlingen voor de beoordelaars. De blind beooordelen instellingen zullen geblokkeerd worden als er minstens één beoordeling is gebeurd voor deze opdracht.';
+$string['blindmarkingenabledwarning'] = 'Voor deze activiteit is blind beoordelen ingeschakeld.';
 $string['calendardue'] = '{$a} moet worden ingeleverd';
 $string['calendargradingdue'] = '{$a} moet worden beoordeeld';
 $string['changefilters'] = 'Wijzig filters';
@@ -140,9 +140,9 @@ $string['currentattempt'] = 'Deze poging {$a}';
 $string['currentattemptof'] = 'Dit is poging {$a->attemptnumber} ({$a->maxattempts} pogingen zijn toegestaan).';
 $string['currentgrade'] = 'Huidig cijfer in de cijferlijst';
 $string['cutoffdate'] = 'Afsluitdatum';
+$string['cutoffdate_help'] = 'Indien ingesteld zal een opdracht geen inzendingen meer ontvangen na deze datum zonder extra tijd';
 $string['cutoffdatecolon'] = 'Einde termijn: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'Afsluitdatum kan niet voor startdatum zijn.';
-$string['cutoffdate_help'] = 'Indien ingesteld zal een opdracht geen inzendingen meer ontvangen na deze datum zonder extra tijd';
 $string['cutoffdatevalidation'] = 'Afsluitdatum kan niet voor einddatum zijn.';
 $string['defaultlayout'] = 'Standaard layout herstellen';
 $string['defaultsettings'] = 'Standaard opdrachtinstellingen';
@@ -156,8 +156,8 @@ $string['downloadasfolders'] = 'Download inzendingen in mappen';
 $string['downloadasfolders_help'] = 'inzendingen kunnen gedownload worden in mappen. Elke inzending wordt in een aparte map gezet, waarbij de mappenstructuur behouden blijft voor alle onderliggende mappen en waarbij de bestanden niet hernoemd worden.';
 $string['downloadselectedsubmissions'] = 'Download geselecteerde inzendingen';
 $string['duedate'] = 'Uiterste inleverdatum';
-$string['duedatecolon'] = 'Klaar tegen: {$a}';
 $string['duedate_help'] = 'Dit is wanneer de opdracht moet afgegeven worden. Opdrachten mogen te laat afgegeven worden,  maar zullen dan als te laat gemarkeerd worden. Om te verhinderen dat opdrachten na een bepaalde datum ingestuurd worden, kun je een afsluitdatum instellen.';
+$string['duedatecolon'] = 'Klaar tegen: {$a}';
 $string['duedateno'] = 'Geen uiterste inleverdatum';
 $string['duedatereached'] = 'De datum waarop deze opdracht moest afgegeven worden is nu voorbij.';
 $string['duedatevalidation'] = 'Einddatum kan niet voor startdatum zijn.';
@@ -291,13 +291,13 @@ Merk op dat deze instelling geen invloed heeft op het veld voor opmerkingen op d
 $string['hideshow'] = 'Verberg/toon';
 $string['inactiveoverridehelp'] = '* Deze overschrijving is niet actief omdat de toegang tot de activiteit voor deze gebruiker beperkt is. Dit kan te wijten zijn aan roltoewijzingen, andere beperkingen of omdat de activiteit verborgen is.';
 $string['indicator:cognitivedepth'] = 'Opdracht cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de cognitieve diepte die door de leerling is bereikt in een opdracht-activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Cognitieve Opdracht';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de toewijzingsactiviteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken, Reageren op feedback, Opnieuw verzenden na het bekijken van feedback)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de cognitieve diepte die door de leerling is bereikt in een opdracht-activiteit.';
 $string['indicator:socialbreadth'] = 'Opdracht sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de sociale breedte die door de leerling is bereikt in een opdracht-activiteit.';
 $string['indicator:socialbreadthdef'] = 'Sociale Opdracht';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de maatschappelijke betrokkenheid van de toewijzingsactiviteiten tijdens dit analyse-interval bereikt (niveaus = geen deelname, alleen deelnemer, deelnemer met anderen)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de sociale breedte die door de leerling is bereikt in een opdracht-activiteit.';
 $string['instructionfiles'] = 'Instructiebestanden';
 $string['introattachments'] = 'Extra bestanden';
 $string['introattachments_help'] = 'Er kunnen extra bestanden voor het gebruik in de opdracht, zoals antwoordsjablonen, toegevoegd worden. Onder de beschrijving van de opdracht zullen er dan downloadlinks verschijnen.';
@@ -434,8 +434,8 @@ $string['privacy:metadata:userid'] = 'ID van de gebruiker.';
 $string['privacy:studentpath'] = 'Inzendingen van leerlingen';
 $string['privacy:submissionpath'] = 'inzending';
 $string['quickgrading'] = 'Snel beoordelen';
-$string['quickgradingchangessaved'] = 'De wijzigingen aan de cijfers zijn bewaard';
 $string['quickgrading_help'] = 'Met snel beoordelen kun je rechtstreeks cijfers geven in de tabel met ingstuurde opdrachten. Snel beoordelen is niet compatibel met geavanceerde beoordelingsmethodes en wordt niet aangeraden wanneer er meerdere beoordelaars zijn.';
+$string['quickgradingchangessaved'] = 'De wijzigingen aan de cijfers zijn bewaard';
 $string['quickgradingresult'] = 'Snel beoordelen';
 $string['recordid'] = 'Identificatie';
 $string['relativedatessubmissionduedateafter'] = '{$a->dateiffstr} na het begin van de cursus';
@@ -477,9 +477,9 @@ $string['sendlatenotifications_help'] = 'Indien ingeschakeld zullen beoordelaars
 $string['sendnotifications'] = 'Stuur een melding naar beoordelaars over ingestuurde opdrachten';
 $string['sendnotifications_help'] = 'Indien ingeschakeld zullen beoordelaars (gewoonlijk leraren) een bericht ontvangen wanneer een leerling een opdracht instuurt, te vroeg, op tijd en te laat. De manier van berichtgeving kan ingesteld worden.';
 $string['sendstudentnotifications'] = 'Stuur melding naar leerlingen';
+$string['sendstudentnotifications_help'] = 'Indien ingeschakeld zullen leerlingen een bericht krijgen wanneer hun cijfer of feedback wordt aangepast. Als beoordelings-workflow is ingeschakeld voor deze opdracht, dan zullen er geen meldingen verstuurd worden tot het cijfer vrijgegeven wordt.';
 $string['sendstudentnotificationsdefault'] = 'Standaardinstelling voor \'Stuur melding naar leerlingen\'';
 $string['sendstudentnotificationsdefault_help'] = 'Zet de standaardwaarde voor het \'Stuur melding naar leerlingen\' selectievakje op het beoordelingsformulier.';
-$string['sendstudentnotifications_help'] = 'Indien ingeschakeld zullen leerlingen een bericht krijgen wanneer hun cijfer of feedback wordt aangepast. Als beoordelings-workflow is ingeschakeld voor deze opdracht, dan zullen er geen meldingen verstuurd worden tot het cijfer vrijgegeven wordt.';
 $string['sendsubmissionreceipts'] = 'Stuur ontvangstbewijs naar leerlingen';
 $string['sendsubmissionreceipts_help'] = 'Dit schakelt ontvangstbewijzen in voor leerlingen. Leerlingen zullen een melding krijgen, telkens ze met succes een opdracht ingestuurd hebben';
 $string['setmarkerallocationforlog'] = 'Stel beoordelaarstoewijzing in: (id={$a->id}, Volledige naam ={$a->fullname}, beoordelaar={$a->marker}).';
@@ -533,23 +533,23 @@ $string['submissionslocked'] = 'Voor deze opdracht kan nu niets ingestuurd worde
 $string['submissionslockedshort'] = 'Wijzigen van je ingestuurde opdracht niet toegestaan';
 $string['submissionsnotgraded'] = 'Ingestuurde opdracht niet beoordeeld: {$a}';
 $string['submissionstatement'] = 'Voorwaarden voor insturen';
+$string['submissionstatement_help'] = 'Verklaring die de leerling moet aanvaarden voor het insturen van zijn opdracht.';
 $string['submissionstatementacceptedlog'] = 'Voorwaarden voor insturen aanvaard door gebruiker {$a}';
 $string['submissionstatementdefault'] = 'Deze opdracht is mijn eigen werk, behalve waar ik verwijs naar het werk van anderen.';
-$string['submissionstatement_help'] = 'Verklaring die de leerling moet aanvaarden voor het insturen van zijn opdracht.';
 $string['submissionstatementteamsubmission'] = 'Verklaring groepsinzending';
-$string['submissionstatementteamsubmissionallsubmit'] = 'Een verklaring voor de groep waar alle groepsleden hun opdracht indienen';
-$string['submissionstatementteamsubmissionallsubmitdefault'] = 'Deze inzending is mijn eigen werk als een groepslid, behalve wanneer ik het gebruik van de werken van andere mensen heb erkend.';
-$string['submissionstatementteamsubmissionallsubmit_help'] = 'Verklaring die de leerling moet accepteren om zijn werk als groepslid in te dienen.';
-$string['submissionstatementteamsubmissiondefault'] = 'Deze inzending is het werk van mijn groep, behalve wanneer we het gebruik van de werken van andere mensen hebben erkend.';
 $string['submissionstatementteamsubmission_help'] = 'Verklaring die elke leerling moet accepteren om het werk van zijn groep in te dienen.';
+$string['submissionstatementteamsubmissionallsubmit'] = 'Een verklaring voor de groep waar alle groepsleden hun opdracht indienen';
+$string['submissionstatementteamsubmissionallsubmit_help'] = 'Verklaring die de leerling moet accepteren om zijn werk als groepslid in te dienen.';
+$string['submissionstatementteamsubmissionallsubmitdefault'] = 'Deze inzending is mijn eigen werk als een groepslid, behalve wanneer ik het gebruik van de werken van andere mensen heb erkend.';
+$string['submissionstatementteamsubmissiondefault'] = 'Deze inzending is het werk van mijn groep, behalve wanneer we het gebruik van de werken van andere mensen hebben erkend.';
 $string['submissionstatus'] = 'Status ingestuurde opdracht';
 $string['submissionstatus_'] = 'Geen ingestuurde opdracht';
 $string['submissionstatus_draft'] = 'Kladwerk (nog niet ingestuurd)';
-$string['submissionstatusheading'] = 'Status ingestuurde opdracht';
 $string['submissionstatus_marked'] = 'Beoordeeld';
 $string['submissionstatus_new'] = 'Geen inzending';
 $string['submissionstatus_reopened'] = 'Heropend';
 $string['submissionstatus_submitted'] = 'Opdracht ingestuurd om te beoordelen';
+$string['submissionstatusheading'] = 'Status ingestuurde opdracht';
 $string['submissionsummary'] = '{$a->status}. Laatst gewijzigd op {$a->timemodified}';
 $string['submissionteam'] = 'Groep';
 $string['submissiontypes'] = 'Inzendingstypes';
@@ -568,9 +568,9 @@ $string['subplugintype_assignsubmission'] = 'Instuurplugin';
 $string['subplugintype_assignsubmission_plural'] = 'Instuurplugins';
 $string['teamname'] = 'Team: {$a}';
 $string['teamsubmission'] = 'Leerlingen sturen groepsopdracht in';
+$string['teamsubmission_help'] = 'Indien ingeschakeld zullen de leerlingen in groepen verdeeld worden, gebaseerd op de standaard set groepen of een aangepaste groepering. De ingestuurde opdracht van een groep zal gedeeld worden door de groepsleden en alle leden van de groep zullen elkaars wijzigingen aan de opdracht zien.';
 $string['teamsubmissiongroupingid'] = 'Groepering voor groepen van leerlingen';
 $string['teamsubmissiongroupingid_help'] = 'Dit is de groepering die de opdracht zal gebruiken om groepen voor leerlingen te vinden. Indien niet ingesteld zal de standaard set groepen gebruikt worden.';
-$string['teamsubmission_help'] = 'Indien ingeschakeld zullen de leerlingen in groepen verdeeld worden, gebaseerd op de standaard set groepen of een aangepaste groepering. De ingestuurde opdracht van een groep zal gedeeld worden door de groepsleden en alle leden van de groep zullen elkaars wijzigingen aan de opdracht zien.';
 $string['textinstructions'] = 'Opdracht instructies';
 $string['timemodified'] = 'Laatst gewijzigd';
 $string['timeremaining'] = 'Resterende tijd';

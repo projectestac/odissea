@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'eu', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,7 +33,7 @@ $string['annually'] = 'Urtero';
 $string['calendar'] = 'Egutegia';
 $string['calendarheading'] = '{$a} egutegia';
 $string['calendarpreferences'] = 'Egutegiaren hobespenak';
-$string['calendartypes'] = 'Egutegi-motak';
+$string['calendartypes'] = 'Egutegi motak';
 $string['calendarurl'] = 'Egutegiaren URLa: {$a}';
 $string['category'] = 'Kategoria';
 $string['categoryevent'] = 'Kategoria-mailako ekitaldia';
@@ -85,7 +85,7 @@ $string['errorinvalidbyhour'] = 'NOIZKOORDUA arauetan onartzen diren balioak 0 e
 $string['errorinvalidbyminute'] = 'NOIZKOMINUTUA arauetan onartzen diren balioak 0 eta 59 artekoak dira.';
 $string['errorinvalidbymonth'] = 'NOIZKOHILABETEA arauetan onartzen diren balioak 1 eta 12 artekoak dira.';
 $string['errorinvalidbymonthday'] = 'NOIZKOHILABETEEGUNA arauetan onartzen diren balioak 1 eta 31 zein -31 eta -1 artekoak dira.';
-$string['errorinvalidbysecond'] = 'NOIZKOSEGUNDUA arauetan onartzen diren balioak 0 eta 59 artekoak dira.';
+$string['errorinvalidbysecond'] = 'NOIZKOSEGUNDOA arauetan onartzen diren balioak 0 eta 59 artekoak dira.';
 $string['errorinvalidbysetpos'] = 'NOIZKOPOSIZIOA arauetan onartzen diren balioak 1 eta 366 zein -366 eta -1 artekoak dira.';
 $string['errorinvalidbyweekno'] = 'URTEKOASTEA arauetan onartzen diren balioak 1 eta 53 zein -53 eta -1 artekoak dira.';
 $string['errorinvalidbyyearday'] = 'URTEKOEGUNA arauetan onartzen diren balioak 1 eta 366 zein -366 eta -1 artekoak dira.';
@@ -120,9 +120,9 @@ $string['eventrepeat'] = 'Errepikatu';
 $string['events'] = 'Ekitaldiak';
 $string['eventsall'] = 'Ekitaldi guztiak';
 $string['eventsdeleted'] = 'Ekitaldiak ezabatu dira';
-$string['eventsfor'] = '{$a}-(e)ko ekitaldiak';
+$string['eventsfor'] = '{$a}(e)ko ekitaldiak';
 $string['eventsimported'] = 'Ekitaldiak inportatu dira: {$a}';
-$string['eventskey'] = 'Ekitaldi-motak';
+$string['eventskey'] = 'Ekitaldi motak';
 $string['eventsource'] = 'Ekitaldiaren jatorria';
 $string['eventspersonal'] = 'Nire ekitaldi pertsonalak';
 $string['eventsrelatedtocategories'] = 'Kategoriekin lotutako ekitaldiak';
@@ -137,7 +137,7 @@ $string['eventsubscriptioneditwarning'] = 'Ekitaldien egutegi hau harpidetza bat
 $string['eventsubscriptionupdated'] = 'Egutegi-harpidetza eguneratu da';
 $string['eventsupdated'] = 'Ekitaldiak eguneratu dira: {$a}';
 $string['eventtime'] = 'Ordua';
-$string['eventtype'] = 'Ekitaldi-mota';
+$string['eventtype'] = 'Ekitaldi mota';
 $string['eventtypecategory'] = 'kategoria';
 $string['eventtypecourse'] = 'ikastaroa';
 $string['eventtypeglobal'] = 'orokorra';
@@ -172,7 +172,7 @@ $string['importcalendarheading'] = 'inportatu egutegia...';
 $string['importfromfile'] = 'Egutegiaren fitxategia (.ics)';
 $string['importfrominstructions'] = 'Eman kanpoko egutegi baten URLa, edo igo fitxategi bat.';
 $string['importfromurl'] = 'Egutegiaren URLa';
-$string['invalideventtype'] = 'Aukeratu duzun ekitaldi-mota baliogabea da';
+$string['invalideventtype'] = 'Aukeratu duzun ekitaldi mota baliogabea da';
 $string['invalidtimedurationminutes'] = 'Minututan sartu duzun iraupena ez da egokia. Mesedez, sartu 0 baino handiagoko iraupen egoki bat minututan edo aukeratu "iraupenik ez".';
 $string['invalidtimedurationuntil'] = 'Iraupenerako aukeratu duzun data eta ordua ekitaldiaren hasiera-ordua baina aurrekoa da. Mesedez zuzendu hau aurrera egin aurretik.';
 $string['iwanttoexport'] = 'Esportatu';
@@ -196,9 +196,6 @@ $string['noupcomingevents'] = 'Ez dago ekitaldirik laster';
 $string['oneevent'] = 'Ekitaldi 1';
 $string['pollinterval'] = 'Eguneratu tartea';
 $string['pollinterval_help'] = 'Zenbatero eguneratu nahiko zenuke egutegia ekitaldi berriekin.';
-$string['preferences'] = 'Hobespenak';
-$string['preferences_available'] = 'Zure hobespenak';
-$string['preferredcalendar'] = 'Egutegi hobetsia';
 $string['pref_lookahead'] = 'Datozen ekitaldiei begira';
 $string['pref_lookahead_help'] = 'Honek ezartzen du gehienez zenbat egunen buruan hasi behar duen ekitaldi batek  datozen ekitaldietan agertzeko. Hori baino aurrerago hasten direnak ez dira agertuko datozenetan. Mesedez, ohartu <strong>honek ez duela ziurtatzen</strong> tarte horretan agertzen diren ekitaldi guztiak agertuko direnik; gehiegi badira ("Datozen ekitaldien gehienezko kopurua"n ezarritakoak baino gehiago) urrunen dauden ekitaldiak ez dira erakutsiko.';
 $string['pref_maxevents'] = 'Datozen ekitaldien gehienezko kopurua';
@@ -209,20 +206,23 @@ $string['pref_startwday'] = 'Asteko lehen eguna';
 $string['pref_startwday_help'] = 'Egutegiaren hasteak hemen aukeratzen duzun egunean hasita erakutsiko dira.';
 $string['pref_timeformat'] = 'Ordu-formatua';
 $string['pref_timeformat_help'] = 'Aukeratu egin ahal duzu denbora 12 edo 24 orduko formatuan ikustea. "Lehenetsitakoa" aukeratzen baduzu, gunean erabiltzen duzun hizkuntzaren arabera aukeratuko da automatikoki formatua.';
+$string['preferences'] = 'Hobespenak';
+$string['preferences_available'] = 'Zure hobespenak';
+$string['preferredcalendar'] = 'Egutegi hobetsia';
 $string['privacy:metadata:calendar:event'] = 'Egutegia osagaiak sistemako erabiltzaileen egutegi-ekitaldien xehetasunak gordetzen ditu.';
 $string['privacy:metadata:calendar:event:description'] = 'Egutegi-ekitaldiaren deskribapena.';
-$string['privacy:metadata:calendar:event:eventtype'] = 'Egutegi-ekitaldiaren ekitaldi-mota.';
+$string['privacy:metadata:calendar:event:eventtype'] = 'Egutegi-ekitaldiaren ekitaldi mota.';
 $string['privacy:metadata:calendar:event:name'] = 'Egutegi-ekitaldiaren izena.';
-$string['privacy:metadata:calendar:event_subscriptions'] = 'Egutegia osagaiak sistemako erabiltzaileen egutegi-harpidetzen xehetasunak gordetzen ditu.';
-$string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'Egutegi-harpidetzaren ekitaldi-mota.';
-$string['privacy:metadata:calendar:event_subscriptions:name'] = 'Egutegi-harpidetzaren izena.';
-$string['privacy:metadata:calendar:event_subscriptions:url'] = 'Egutegi-harpidetzaren URLa.';
 $string['privacy:metadata:calendar:event:timeduration'] = 'Egutegi-ekitaldiaren iraupena.';
 $string['privacy:metadata:calendar:event:timestart'] = 'Egutegi-ekitaldiaren hasiera-unea.';
+$string['privacy:metadata:calendar:event_subscriptions'] = 'Egutegia osagaiak sistemako erabiltzaileen egutegi-harpidetzen xehetasunak gordetzen ditu.';
+$string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'Egutegi-harpidetzaren ekitaldi mota.';
+$string['privacy:metadata:calendar:event_subscriptions:name'] = 'Egutegi-harpidetzaren izena.';
+$string['privacy:metadata:calendar:event_subscriptions:url'] = 'Egutegi-harpidetzaren URLa.';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'Erakusteko egutegi-ekitaldi mota erabiltzaile-hobespena.';
 $string['recentupcoming'] = 'Azkenak eta hurrengo 60 egun';
 $string['repeatedevents'] = 'Errepikatutako ekitaldiak';
-$string['repeateditall'] = 'Aplikatu aldaketak {$a} ekitaldiaren errepikapen-serieari';
+$string['repeateditall'] = 'Aplikatu aldaketak {$a} ekitaldiaren errepikapen-serieari ere';
 $string['repeateditthis'] = 'Aplikatu aldaketak soilik ekitaldi honi';
 $string['repeatevent'] = 'Errepikatu ekitaldi hau';
 $string['repeatnone'] = 'Ez errepikatu';

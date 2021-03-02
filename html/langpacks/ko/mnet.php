@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'mnet', language 'ko', version '3.8'.
  *
- * @package   mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (자동 서명)';
+$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (서명)';
+$string['RPC_HTTP_PLAINTEXT'] = 'HTTP 비암호화';
+$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (자동 서명)';
+$string['RPC_HTTP_VERIFIED'] = 'HTTP (서명)';
 $string['aboutyourhost'] = '서버 소개';
 $string['accesslevel'] = '접속 수준';
 $string['addhost'] = '호스트 추가';
@@ -45,8 +50,8 @@ $string['couldnotgetcert'] = '{$a} 에서 인증서를 찾을 수 없음.<br />�
 $string['couldnotmatchcert'] = '웹서버에 의해 공개된 현재의 인증서와 일치하지 않음.';
 $string['courses'] = '강좌들';
 $string['courseson'] = '강좌 탑재';
-$string['currentkey'] = '현재의 공개키';
 $string['current_transport'] = '현재의 운송계층';
+$string['currentkey'] = '현재의 공개키';
 $string['databaseerror'] = '데이터테이스에 자세한 사항을 기재할 수 없음.';
 $string['deleteaserver'] = '서버를 삭제';
 $string['deletedhostinfo'] = '이 호스트는 삭제되었습니다. 만일 삭제하지 않기를 원하시면 삭제된 상태를 \'아니오\'로 전환하십시요.';
@@ -83,7 +88,7 @@ $string['hidelocal'] = '로컬 사용자 감추기';
 $string['hideremote'] = '원격 사용자 감추기';
 $string['host'] = '호스트';
 $string['hostcoursenotfound'] = '호스트나 강좌를 찾을 수 없음';
-$string['hostdeleted'] = '호스트 삭제 성공';
+$string['hostdeleted'] = '호스트 삭제';
 $string['hostexists'] = '그 호스트 이름의 호스트에 대해 이미 기록이 존재합니다.(삭제되었을지 모릅니다). 기록을 편집하려면 <a href="{$a}">여기를 클릭</a>하세요.';
 $string['hostlist'] = '네트워킹된 호스트 목록';
 $string['hostname'] = '호스트명';
@@ -91,9 +96,9 @@ $string['hostnamehelp'] = 'www.example.com과 같은 원격 호스트의 완전�
 $string['hostnotconfiguredforsso'] = '이 서버는 원격 로그인을 위해 설정되어있지 않습니다.';
 $string['hostsettings'] = '호스트 설정';
 $string['http_self_signed_help'] = '원격 호스트에 있는 자체 사인된 DIYSSL 인증서를 사용하여 연결을 허용합니다.';
+$string['http_verified_help'] = '원격 호스트의 PHP에 있는 확인된 SSL 인증서를 사용하여 http연결(https 아님)을 허용합니다.';
 $string['https_self_signed_help'] = '원격 호스트는 http상에서 PHP의 자동 서명되는 DIY SSL를 이용한 연결을 허용합니다.';
 $string['https_verified_help'] = '원격 호스트에 있는 확인된 SSL 인증서를 사용하여 연결을 허용합니다.';
-$string['http_verified_help'] = '원격 호스트의 PHP에 있는 확인된 SSL 인증서를 사용하여 http연결(https 아님)을 허용합니다.';
 $string['id'] = '아이디';
 $string['idhelp'] = '이 값은 자동으로 주어지며 변경할 수 없습니다.';
 $string['importfields'] = '가져오기할 항목';
@@ -128,6 +133,7 @@ $string['methodsavailableonhostinservice'] = '{$a->host} 의 {$a->service} 에 �
 $string['methodsignature'] = '{$a} 에 대한 메쏘드 서명';
 $string['mnet'] = 'MNET';
 $string['mnet_concatenate_strings'] = '3 문자열로 축약하여 결과 전송';
+$string['mnet_session_prohibited'] = '홈 서버의 사용자는 현재 {$a} 로 방문할 수 있도록 허용되지 않았습니다.';
 $string['mnetdisabled'] = 'MNET이 <strong>비활성화</strong> 되었습니다.';
 $string['mnetidprovider'] = 'MNET ID 제공자';
 $string['mnetidproviderdesc'] = '만일 이전에 로그인하려고 했던 사용자 이름과 일치되는 올바른 이메일 주소를 제공할 수 있다면 이 기능을 사용하여 로그인할 수 있는 링크를 가져올 수 있습니다.';
@@ -135,7 +141,6 @@ $string['mnetidprovidermsg'] = '{$a} 제공자에서 로그인 할 수 있어야
 $string['mnetidprovidernotfound'] = '죄송합니다. 더 자세한 정보는 찾을 수 없습니다.';
 $string['mnetpeers'] = '무들네트웍 환경';
 $string['mnetservices'] = '서비스';
-$string['mnet_session_prohibited'] = '홈 서버의 사용자는 현재 {$a} 로 방문할 수 있도록 허용되지 않았습니다.';
 $string['mnetsettings'] = 'MNET설정';
 $string['moodle_home_help'] = '원격 호스트의 MNet 어플리케이션 홈페이지 경로, 예: /moodle/';
 $string['name'] = '이름';
@@ -157,11 +162,11 @@ $string['nosuchpublickey'] = '서명 확인을 위한 공개키를 획득할 수
 $string['nosuchservice'] = '이 호스트에는 RPC서비스가 구동되지 않습니다.';
 $string['nosuchtransport'] = '그 ID에는 전송계층이 존재하지 않습니다.';
 $string['notBASE64'] = '이 문자열은 Base64로 엔코드된 형식이 아닙니다. 유효한 키가 될 수 없습니다.';
-$string['notenoughidpinfo'] = '당신의 아이덴티티 프로바이더가 당신 계정을 만들거나 업데이트 하는데 충분한 정보를 주지 않습니다. 죄송합니다.';
+$string['notPEM'] = '이 키는 PEM형식이 아닙니다. 작동하지 않을 것입니다.';
 $string['not_in_range'] = 'IP주소  <code>{$a}</code>  는 유효한 인증 호스트가 아닙니다.';
+$string['notenoughidpinfo'] = '당신의 아이덴티티 프로바이더가 당신 계정을 만들거나 업데이트 하는데 충분한 정보를 주지 않습니다. 죄송합니다.';
 $string['notinxmlrpcserver'] = 'XMLRPC 서버가 실행되는 동안이 아닌 때 MNet 원격 클라이언트 접속 시도.';
 $string['notmoodleapplication'] = '경고: 이것은 무들 어플리케이션이 아닙니다. 검사 메쏘드가 제대로 동작하지 않을 수 있습니다.';
-$string['notPEM'] = '이 키는 PEM형식이 아닙니다. 작동하지 않을 것입니다.';
 $string['notpermittedtojump'] = '당신은 이 무들 서버로부터 원격 세션을 시작할 수 있는 권한이 없습니다.';
 $string['notpermittedtojumpas'] = '다른 사용자로 로그인 된 동안에는 원격 세션을 시작할 수 없습니다.';
 $string['notpermittedtoland'] = '당신은 원격 세션을 시작할 수 있는 자격이 없습니다.';
@@ -199,11 +204,6 @@ $string['restore'] = '복구';
 $string['returnvalue'] = '리턴 값';
 $string['reviewhostdetails'] = '호스트 상세항목 검토';
 $string['reviewhostservices'] = '호스트 서비스 검토';
-$string['RPC_HTTP_PLAINTEXT'] = 'HTTP 비암호화';
-$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (자동 서명)';
-$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (자동 서명)';
-$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (서명)';
-$string['RPC_HTTP_VERIFIED'] = 'HTTP (서명)';
 $string['selectaccesslevel'] = '목록에서 접속 수준을 선택하십시오.';
 $string['selectahost'] = '원격 호스트를 선택하십시오.';
 $string['service'] = '서비스 이름';

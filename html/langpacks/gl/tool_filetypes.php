@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'gl', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,8 +30,8 @@ $string['corestring'] = 'Cadea de idioma alternativo';
 $string['corestring_help'] = 'Este axuste pódese empregar para seleccionar unha cadea de idioma diferente dende o ficheiro de idioma do núcleo mimetypes.php. Xeralmente debería deixarse en branco. Para os tipos personalizados, use o campo de descrición.';
 $string['defaulticon'] = 'Icona predeterminada para tipo MIME';
 $string['defaulticon_help'] = 'Se hai varias extensións de ficheiro co mesmo tipo MIME, seleccione esta opción para unha das extensións para que se empregue a súa icona cando se determine unha icona do tipo MIME.';
-$string['deletea'] = 'Eliminar {$a}';
 $string['delete_confirmation'] = 'Confirma que quere retirar <strong>.{$a}</strong>?';
+$string['deletea'] = 'Eliminar {$a}';
 $string['deletefiletypes'] = 'Eliminar un tipo de ficheiro';
 $string['description'] = 'Descrición personalizada';
 $string['description_help'] = 'Descrición simple do tipo de ficheiro, por exemplo «Libro electrónico de Kindle». Se o seu sitio admite varios idiomas e usa o filtro de varios idiomas, pode introducir etiquetas en varios idiomas neste campo para fornecer unha descrición en diferentes idiomas.';

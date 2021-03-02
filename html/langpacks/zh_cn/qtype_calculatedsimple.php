@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'zh_cn', version '3.8'.
  *
- * @package   qtype_calculatedsimple
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculatedsimple
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,9 @@ $string['findwildcards'] = '在正确答案公式中寻找通配符 {x..}';
 $string['generatenewitemsset'] = '生成';
 $string['newsetwildcardvalues'] = '个新通配符数据集合';
 $string['pluginname'] = '计算题简化版';
+$string['pluginname_help'] = '在计算题简化版中，每道题都可以使用通配符（放在大括号中），而在答题时通配符会被替换。简化的计算题提供了计算题中最常用的功能，界面更简单。';
 $string['pluginnameadding'] = '添加一道简化版计算题';
 $string['pluginnameediting'] = '编辑一道简化版计算题';
-$string['pluginname_help'] = '在计算题简化版中，每道题都可以使用通配符（放在大括号中），而在答题时通配符会被替换。简化的计算题提供了计算题中最常用的功能，界面更简单。';
 $string['pluginnamesummary'] = '更简单的计算题，和数值题类似，但在答题时，题目中的数可以从一个集合中随机选择。';
 $string['setno'] = '集合{$a}';
 $string['setwildcardvalues'] = '个通配符数据集合';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_installaddon', language 'ja', version '3.8'.
  *
- * @package   tool_installaddon
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_installaddon
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,9 +33,9 @@ $string['installaddons'] = 'プラグインをインストールする';
 $string['installfromrepo'] = 'Moodleプラグインディレクトリからプラグインをインストールする';
 $string['installfromrepo_help'] = 'あなたはプラグインの検索およびインストールのためMoodleプラグインディレクトリにリダイレクトされます。インストール処理を簡単にするため同時にURLおよびメジャーバージョンも送信されます。';
 $string['installfromzip'] = 'ZIPファイルからプラグインをインストールする';
+$string['installfromzip_help'] = 'あなたはMoodleプラグインディレクトリから直接プラグインをインストールする代わりにZIPパッケージをアップロードして手動でプラグインをインストールすることができます。ZIPパッケージはMoodleプラグインディレクトリからダウンロードされるZIPパッケージと同じ構造にしてください。';
 $string['installfromzipfile'] = 'ZIPパッケージ';
 $string['installfromzipfile_help'] = 'ZIPパッケージにはプラグイン名と一致するディレクトリを1つのみ含む必要があります。ZIPはプラグインタイプに適切な場所に展開されます。Moodleプラグインディレクトリからダウンロードした場合、パッケージはこの形式になっています。';
-$string['installfromzip_help'] = 'あなたはMoodleプラグインディレクトリから直接プラグインをインストールする代わりにZIPパッケージをアップロードして手動でプラグインをインストールすることができます。ZIPパッケージはMoodleプラグインディレクトリからダウンロードされるZIPパッケージと同じ構造にしてください。';
 $string['installfromzipinvalid'] = 'ZIPパッケージにはプラグイン名と一致するディレクトリを1つのみ含む必要があります。提供されたファイルは有効なプラグインZIPパッケージではありません。';
 $string['installfromziprootdir'] = 'rootディレクトリをリネームする';
 $string['installfromziprootdir_help'] = 'GitHubから生成されたようなZIPパッケージには正しくない名称のルートディレクトリが含まれている可能性があります。その場合、ここに正しいルートディレクトリ名を入力することができます。';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_log', language 'nl', version '3.8'.
  *
- * @package   report_log
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_log
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,9 +34,9 @@ $string['eventorigin'] = 'Oorsprong';
 $string['eventrelatedfullnameuser'] = 'Over gebruiker';
 $string['eventreportviewed'] = 'Lograpport bekeken';
 $string['eventuserreportviewed'] = 'Gebruikerslograpport bekeken';
-$string['logsformat'] = 'Log-opmaak';
 $string['log:view'] = 'Bekijk cursus logs';
 $string['log:viewtoday'] = 'Bekijk logs van vandaag';
+$string['logsformat'] = 'Log-opmaak';
 $string['nocapability'] = 'Geen toegang tot log-rapport van gebruiker';
 $string['nologreaderenabled'] = 'Geen loglezer ingeschakeld';
 $string['origin'] = 'Bron';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'mnet', language 'ja', version '3.8'.
  *
- * @package   mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (自己署名)';
+$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (署名)';
+$string['RPC_HTTP_PLAINTEXT'] = 'HTTP 暗号化なし';
+$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (自己署名)';
+$string['RPC_HTTP_VERIFIED'] = 'HTTP (署名)';
 $string['aboutyourhost'] = 'あなたのサーバ情報';
 $string['accesslevel'] = 'アクセスレベル';
 $string['addhost'] = 'ホストを追加する';
@@ -45,8 +50,8 @@ $string['couldnotgetcert'] = '{$a} で証明書が見つかりませんでした
 $string['couldnotmatchcert'] = 'これはウェブサーバより現在公開されている証明書と合致しません。';
 $string['courses'] = 'コース';
 $string['courseson'] = 'コースが次のホストにあります:';
-$string['currentkey'] = '現在の公開鍵';
 $string['current_transport'] = '現在のトランスポート';
+$string['currentkey'] = '現在の公開鍵';
 $string['databaseerror'] = '詳細をデータベースに書き込めませんでした。';
 $string['deleteaserver'] = 'サーバの削除';
 $string['deletedhostinfo'] = 'このホストは削除されました。削除を取り消したい場合、削除ステータスを「No」に戻してください。';
@@ -92,9 +97,9 @@ $string['hostnamehelp'] = 'リモートホストの省略されていないド�
 $string['hostnotconfiguredforsso'] = 'このサーバにはリモートログインが設定されていません。';
 $string['hostsettings'] = 'ホスト設定';
 $string['http_self_signed_help'] = 'リモートホストにある自己署名DIY SSL証明書を使用したコネクションを許可します。';
+$string['http_verified_help'] = 'リモートホストにあるPHPの認証済みSSL証明書を使用した  (https経由ではなく) http経由のコネクションを許可します。';
 $string['https_self_signed_help'] = 'リモートホストにあるPHPの自己署名DIY SSL証明書を使用したhttp経由のコネクションを許可します。';
 $string['https_verified_help'] = 'リモートホストにある認証済みSSL証明書を使用したコネクションを許可します。';
-$string['http_verified_help'] = 'リモートホストにあるPHPの認証済みSSL証明書を使用した  (https経由ではなく) http経由のコネクションを許可します。';
 $string['id'] = 'ID';
 $string['idhelp'] = 'この値は自動的に割り当てられました。変更することはできません。';
 $string['importfields'] = 'インポートするフィールド';
@@ -129,6 +134,7 @@ $string['methodsavailableonhostinservice'] = ' {$a->host} の {$a->service} で�
 $string['methodsignature'] = '{$a} のメソッド署名';
 $string['mnet'] = 'MNet';
 $string['mnet_concatenate_strings'] = '最大3個のストリングを連結して結果を戻す';
+$string['mnet_session_prohibited'] = 'あなたのホームサーバのユーザは現在 {$a} の散策を許可されていません。';
 $string['mnetdisabled'] = 'MNetは<strong>無効</strong>にされています。';
 $string['mnetidprovider'] = 'MNet IDプロバイダ';
 $string['mnetidproviderdesc'] = '前回ログイン時に使用したユーザ名に合致する正しいメールアドレスを提供することで、あなたはこの機能を使用してログインリンクを検索することができます。';
@@ -136,7 +142,6 @@ $string['mnetidprovidermsg'] = 'あなたの {$a} プロバイダにログイン
 $string['mnetidprovidernotfound'] = '申し訳ございません、詳細情報は見つかりませんでした。';
 $string['mnetpeers'] = 'ピア';
 $string['mnetservices'] = 'サービス';
-$string['mnet_session_prohibited'] = 'あなたのホームサーバのユーザは現在 {$a} の散策を許可されていません。';
 $string['mnetsettings'] = 'MNet設定';
 $string['moodle_home_help'] = 'リモートホストのMNetアプリケーションホームページのパスです。 例 /moodle/';
 $string['name'] = '名称';
@@ -158,11 +163,11 @@ $string['nosuchpublickey'] = '署名認証のための公開鍵を取得でき�
 $string['nosuchservice'] = 'このホストではRPCサービスが動作していません。';
 $string['nosuchtransport'] = 'このIDのトランスポートはありません。';
 $string['notBASE64'] = 'このストリングはBase64エンコードフォーマットのストリングではありません。有効な公開鍵ではありません。';
-$string['notenoughidpinfo'] = 'あなたのアカウントをローカルに作成または更新するための十分な情報をアイデンティティプロバイダが提供していません。申し訳ございません!';
+$string['notPEM'] = 'この公開鍵はPEMフォーマットではありません。正常に動作しません。';
 $string['not_in_range'] = 'IPアドレス「<code>{$a}</code>」は信頼できる有効なホストではありません。';
+$string['notenoughidpinfo'] = 'あなたのアカウントをローカルに作成または更新するための十分な情報をアイデンティティプロバイダが提供していません。申し訳ございません!';
 $string['notinxmlrpcserver'] = 'XMLRPCサーバ実行中以外にMNetリモートクライアントへのアクセスを試みる';
 $string['notmoodleapplication'] = '警告: これはMoodleアプリケーションではないため、いくつかの調査メソッドは正常に動作しません。';
-$string['notPEM'] = 'この公開鍵はPEMフォーマットではありません。正常に動作しません。';
 $string['notpermittedtojump'] = 'あなたにはこのMoodleサーバからリモートセッションを開始する権限がありません。';
 $string['notpermittedtojumpas'] = '別のユーザでログインしている限り、あなたはリモートセッションを開始できません。';
 $string['notpermittedtoland'] = 'あなたにはリモートセッションを開始する権限がありません。';
@@ -202,11 +207,6 @@ $string['restore'] = 'リストア';
 $string['returnvalue'] = '戻り値';
 $string['reviewhostdetails'] = 'ホスト詳細をレビューする';
 $string['reviewhostservices'] = 'ホストサービスをレビューする';
-$string['RPC_HTTP_PLAINTEXT'] = 'HTTP 暗号化なし';
-$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (自己署名)';
-$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (自己署名)';
-$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (署名)';
-$string['RPC_HTTP_VERIFIED'] = 'HTTP (署名)';
 $string['selectaccesslevel'] = 'リストからアクセスレベルを選択してください。';
 $string['selectahost'] = 'リモートMoodleホストを選択してください。';
 $string['service'] = 'サービス名';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'wiki', language 'zh_cn', version '3.8'.
  *
- * @package   wiki
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     wiki
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -99,13 +99,13 @@ $string['firstpagetitle_help'] = '此wiki首页的标题。';
 $string['forceformat'] = '强制格式';
 $string['forceformat_help'] = '如果格式被强制（勾选复选框），那么编辑wiki页面时就不能选择格式。';
 $string['format'] = '格式';
+$string['format_help'] = '* HTML - 可以使用HTML编辑器
+* Creole - 一个常用的wiki标记语言，会提供一个小型编辑工具条
+* Nwiki - Mediawiki风格的标记语言，由Nwiki模块支持';
 $string['formatcreole'] = 'Creole格式';
 $string['formatcreole_help'] = 'Creole是一种常用的wiki标记语言。通过它的编辑工具条可以直接插入想要的标记。
 
 要建立新页面，只需输入新页面名，并在前后加上双方括号。例如[[页面2]]。';
-$string['format_help'] = '* HTML - 可以使用HTML编辑器
-* Creole - 一个常用的wiki标记语言，会提供一个小型编辑工具条
-* Nwiki - Mediawiki风格的标记语言，由Nwiki模块支持';
 $string['formathtml'] = 'HTML格式';
 $string['formathtml_help'] = '可以使用HTML编辑器对文字排版。
 
@@ -196,17 +196,17 @@ $string['orphaned'] = '孤立页面';
 $string['orphaned_help'] = '没被其它页面链接的页面列表';
 $string['overridelocks'] = '覆盖锁定';
 $string['overridinglocks'] = '正在覆盖锁定';
+$string['page-mod-wiki-comments'] = 'Wiki模块评论页';
+$string['page-mod-wiki-history'] = 'Wiki历史页';
+$string['page-mod-wiki-map'] = 'Wiki地图页';
+$string['page-mod-wiki-view'] = 'Wiki模块主页';
+$string['page-mod-wiki-x'] = '任意wiki模块页';
 $string['pageexists'] = '这个页面已经存在。';
 $string['pageindex'] = '页面索引';
 $string['pageindex_help'] = '此wiki的页面树';
 $string['pageislocked'] = '有人正在编辑此页。请过几分钟再试试。';
 $string['pagelist'] = '页面列表';
 $string['pagelist_help'] = '按字母顺序分类的页面列表';
-$string['page-mod-wiki-comments'] = 'Wiki模块评论页';
-$string['page-mod-wiki-history'] = 'Wiki历史页';
-$string['page-mod-wiki-map'] = 'Wiki地图页';
-$string['page-mod-wiki-view'] = 'Wiki模块主页';
-$string['page-mod-wiki-x'] = '任意wiki模块页';
 $string['pagename'] = '页面名';
 $string['peerreview'] = '同级评议';
 $string['pluginadministration'] = 'Wiki管理';
@@ -261,11 +261,17 @@ $string['viewperpage'] = '每页显示{$a}个版本';
 $string['viewversion'] = '查看页面版本#{$a}';
 $string['wiki'] = 'Wiki协作';
 $string['wiki:addinstance'] = '添加一个新 wiki';
-$string['wikiattachments'] = 'Wiki附件';
-$string['wikiboldtext'] = '粗体字';
 $string['wiki:createpage'] = '新建wiki页面';
 $string['wiki:editcomment'] = '向页面添加评论';
 $string['wiki:editpage'] = '保存wiki页面';
+$string['wiki:managecomment'] = '管理wiki评论';
+$string['wiki:managefiles'] = '管理wiki文件';
+$string['wiki:managewiki'] = '管理wiki设置';
+$string['wiki:overridelock'] = '覆盖wiki锁';
+$string['wiki:viewcomment'] = '查看页面评论';
+$string['wiki:viewpage'] = '查看wiki页面';
+$string['wikiattachments'] = 'Wiki附件';
+$string['wikiboldtext'] = '粗体字';
 $string['wikiexternalurl'] = '外部URL';
 $string['wikifiles'] = 'Wiki文件';
 $string['wikifiletable'] = '已上传文件列表';
@@ -276,21 +282,15 @@ $string['wikiinternalurl'] = '内部链接';
 $string['wikiintro'] = 'Wiki介绍';
 $string['wikiitalictext'] = '斜体字';
 $string['wikilockingsettings'] = '加锁并重新解析超时';
-$string['wiki:managecomment'] = '管理wiki评论';
-$string['wiki:managefiles'] = '管理wiki文件';
-$string['wiki:managewiki'] = '管理wiki设置';
 $string['wikimode'] = 'Wiki模式';
-$string['wikimodecollaborative'] = '协作wiki';
 $string['wikimode_help'] = 'Wiki模式决定是所有人都可以编辑这个wiki（协作wiki），还是每个人都有一个只能自己编辑的wiki（个人wiki）。';
+$string['wikimodecollaborative'] = '协作wiki';
 $string['wikimodeindividual'] = '个人wiki';
 $string['wikiname'] = '页面名称';
 $string['wikinowikitext'] = '没有wiki文本';
 $string['wikiorderedlist'] = '序号列表';
-$string['wiki:overridelock'] = '覆盖wiki锁';
 $string['wikipages'] = 'Wiki页面';
 $string['wikisettings'] = 'Wiki设置';
 $string['wikiunorderedlist'] = '项目列表';
-$string['wiki:viewcomment'] = '查看页面评论';
-$string['wiki:viewpage'] = '查看wiki页面';
 $string['wrongversionlock'] = '其他用户在您编辑时编辑了此页面，并且您的内容已过时。';
 $string['wrongversionsave'] = '在您正编辑时，另一个用户创建了一个新版本，而您覆盖了他的修改。请检查页面历史。';

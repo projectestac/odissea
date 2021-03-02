@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'pt', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,13 +41,13 @@ $string['cachedef_capabilities'] = 'Lista de permissões do sistema';
 $string['cachedef_completion'] = 'Estado de conclusão da atividade';
 $string['cachedef_config'] = 'Configurar definições';
 $string['cachedef_contextwithinsights'] = 'Contexto com perceções';
+$string['cachedef_course_user_dates'] = 'As datas do utilizador para as disciplinas configuradas para o modo de datas relativas';
 $string['cachedef_coursecat'] = 'Listas de categorias de disciplina para um utilizador em particular';
 $string['cachedef_coursecatrecords'] = 'Registos de categorias da disciplina';
 $string['cachedef_coursecattree'] = 'Árvore de categorias de disciplina';
 $string['cachedef_coursecompletion'] = 'Estado de conclusão da disciplina';
 $string['cachedef_coursecontacts'] = 'Lista de contactos da disciplina';
 $string['cachedef_coursemodinfo'] = 'Informação acumulada sobre módulos e secções para cada disciplina';
-$string['cachedef_course_user_dates'] = 'As datas do utilizador para as disciplinas configuradas para o modo de datas relativas';
 $string['cachedef_databasemeta'] = 'Meta-informação da base de dados';
 $string['cachedef_eventinvalidation'] = 'Invalidação de evento';
 $string['cachedef_externalbadges'] = 'Medalhas externas para um utilizador em particular';
@@ -87,10 +87,10 @@ $string['component'] = 'Componente';
 $string['confirmlockdeletion'] = 'Confirmar eliminação de bloqueio';
 $string['confirmstoredeletion'] = 'Confirmar a remoção da unidade de armazenamento';
 $string['default_application'] = 'Unidade de armazenamento predefinida da aplicação';
-$string['defaultmappings'] = 'Unidades de armazenamento usadas na ausência de mapeamento';
-$string['defaultmappings_help'] = 'Estas são as unidades de armazenamento predefinidas que serão usadas se não mapear uma ou mais unidades de armazenamento para a definição da cache.';
 $string['default_request'] = 'Unidade de armazenamento predefinida dos pedidos';
 $string['default_session'] = 'Unidade de armazenamento predefinida da sessão';
+$string['defaultmappings'] = 'Unidades de armazenamento usadas na ausência de mapeamento';
+$string['defaultmappings_help'] = 'Estas são as unidades de armazenamento predefinidas que serão usadas se não mapear uma ou mais unidades de armazenamento para a definição da cache.';
 $string['defaultstoreactions'] = 'As unidades de armazenamento predefinidas não podem ser alteradas';
 $string['definition'] = 'Definição';
 $string['definitionsummaries'] = 'Definições de cache conhecidas';
@@ -158,20 +158,20 @@ $string['sharing'] = 'Partilha';
 $string['sharing_all'] = 'Todos.';
 $string['sharing_help'] = 'Isto permite-lhe determinar como os dados da cache podem ser partilhados se tiver uma instalação em cluster, ou se tiver múltiplos sites configurados com a mesma unidade de armazenamento e quiser partilhar os dados. Esta é uma configuração avançada, por favor, assegure-se que compreende a sua finalidade antes de a alterar.';
 $string['sharing_input'] = 'Chave personalizada (inserida abaixo)';
+$string['sharing_siteid'] = 'Sites com o mesmo número de identificação de site.';
+$string['sharing_version'] = 'Sites a correr na mesma versão.';
 $string['sharingrequired'] = 'Deve selecionar pelo menos uma opção de partilha.';
 $string['sharingselected_all'] = 'Todos.';
 $string['sharingselected_input'] = 'Chave personalizada';
 $string['sharingselected_siteid'] = 'Identificador do site';
 $string['sharingselected_version'] = 'Versão';
-$string['sharing_siteid'] = 'Sites com o mesmo número de identificação de site.';
-$string['sharing_version'] = 'Sites a correr na mesma versão.';
-$string['storeconfiguration'] = 'Configuração da unidade de armazenamento';
 $string['store_default_application'] = 'Ficheiro predefinido da unidade de armazenamento para caches da aplicação';
 $string['store_default_request'] = 'Unidade de armazenamento estática predefinida para cache dos pedidos';
 $string['store_default_session'] = 'Sessão de unidade de armazenamento predefinida para cache da sessão';
+$string['storeconfiguration'] = 'Configuração da unidade de armazenamento';
 $string['storename'] = 'Nome da unidade de armazenamento';
-$string['storenamealreadyused'] = 'Tem de selecionar um nome único para esta unidade de armazenamento';
 $string['storename_help'] = 'Isto define o nome da unidade de armazenamento. Este nome é usado para identificar a unidade de armazenamento no sistema e apenas pode consistir em a-z A-Z 0-9-_ e espaços. Também deve ser único. Se tentar usar um nome que já esteja a ser usado será notificado com uma mensagem de erro.';
+$string['storenamealreadyused'] = 'Tem de selecionar um nome único para esta unidade de armazenamento';
 $string['storenameinvalid'] = 'Nome da unidade de armazenamento inválido. Só pode usar letras minúsculas (a-z), letras maiúsculas (A-Z), números (0-9), travessões (-), traços inferiores (_) e espaços.';
 $string['storenotready'] = 'A unidade de armazenamento de cache não está pronta';
 $string['storeperformance'] = 'Relatório de desempenho da unidade de armazenamento da cache - {$a} pedidos únicos por operação.';

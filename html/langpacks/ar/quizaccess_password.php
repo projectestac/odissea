@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_password', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quizaccess_password', language 'ar', version '3.8'.
  *
- * @package   quizaccess_password
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quizaccess_password
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['passworderror'] = 'كلمة السر المدخلة غير صحيحة';
-$string['pluginname'] = 'قاعدة كلمة المرور للوصول للاختبار';
-$string['privacy:metadata'] = 'إن ملحق قاعدة كلمة المرور للوصول للاختبار لا يخزن أي بيانات شخصية.';
+$string['passworderror'] = 'كلمة المرور المدخلة غير صحيحة';
+$string['pluginname'] = 'نظام الدخول بكلمة مرور للاختبار';
+$string['privacy:metadata'] = 'المكون الإضافي Password quiz access rule  لا يخزن أيّ بيانات شخصية.';
 $string['quizpassword'] = 'كلمة المرور للاختبار';
-$string['requirepasswordmessage'] = 'لمحاولة هذا الاختبار، ينبغي عليك معرفة كلمة مروره';
+$string['requirepasswordmessage'] = 'لإجراء هذا الاختبار تحتاج إلى معرفة كلمة المرور للاختبار';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'zh_cn', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -117,6 +117,12 @@ $string['choosefilefromcoursebackup'] = '课程备份区';
 $string['choosefilefromcoursebackup_help'] = '使用缺省设置备份课程的备份文件会被保存到这里';
 $string['choosefilefromuserbackup'] = '用户私人备份区';
 $string['choosefilefromuserbackup_help'] = '包含了匿名化用户信息的备份文件会保存在这里。';
+$string['config_keep_groups_and_groupings'] = '默认保留当前组和分组。';
+$string['config_keep_roles_and_enrolments'] = '默认保留当前角色和选课。';
+$string['config_overwrite_conf'] = '允许用户覆盖当前课程配置';
+$string['config_overwrite_course_fullname'] = '默认用备份文件中的全名覆盖课程全名。需要已选定 "覆盖课程配置", 同时当前用户有权限更改课程全名 (moodle/课程: 更改命名)';
+$string['config_overwrite_course_shortname'] = '默认用备份文件中的全名覆盖课程短名。需要已选定 "覆盖课程配置", 同时当前用户有权限更改课程短名 (moodle/课程: 更改短名)';
+$string['config_overwrite_course_startdate'] = '默认用备份文件中的开始日期覆盖课程开始日期。需要已选定 "覆盖课程配置", 并且当前用户有权限还原课程日期 (moodle/还原: 还原日期)';
 $string['configgeneralactivities'] = '缺省情况下，备份是否包含各种活动。';
 $string['configgeneralanonymize'] = '如果激活，会默认将与用户有关的信息匿名化。';
 $string['configgeneralbadges'] = '缺省情况下，备份包含奖章。';
@@ -134,13 +140,7 @@ $string['configgeneralquestionbank'] = '如果启用，默认备份题库。
 $string['configgeneralroleassignments'] = '如果激活，会默认备份角色分配情况。';
 $string['configgeneralusers'] = '缺省情况下，备份是否包含用户。';
 $string['configgeneraluserscompletion'] = '如果启用，会默认在备份中包含用户的课程完成信息。';
-$string['config_keep_groups_and_groupings'] = '默认保留当前组和分组。';
-$string['config_keep_roles_and_enrolments'] = '默认保留当前角色和选课。';
 $string['configloglifetime'] = '这里设置将备份的日志信息保留多久。超过此期限的日志会被自动删除。建议把此值设得小一些，因为备份的日志可能会很大。';
-$string['config_overwrite_conf'] = '允许用户覆盖当前课程配置';
-$string['config_overwrite_course_fullname'] = '默认用备份文件中的全名覆盖课程全名。需要已选定 "覆盖课程配置", 同时当前用户有权限更改课程全名 (moodle/课程: 更改命名)';
-$string['config_overwrite_course_shortname'] = '默认用备份文件中的全名覆盖课程短名。需要已选定 "覆盖课程配置", 同时当前用户有权限更改课程短名 (moodle/课程: 更改短名)';
-$string['config_overwrite_course_startdate'] = '默认用备份文件中的开始日期覆盖课程开始日期。需要已选定 "覆盖课程配置", 并且当前用户有权限还原课程日期 (moodle/还原: 还原日期)';
 $string['configrestoreactivities'] = '设置恢复活动的默认值。';
 $string['configrestorebadges'] = '设置恢复奖章的默认值。';
 $string['configrestoreblocks'] = '设置恢复版块的默认值。';
@@ -177,8 +177,8 @@ $string['enableasyncbackup'] = '启用异步备份';
 $string['enableasyncbackup_help'] = '如果启用，所有备份和还原操作都将异步完成。这并不影响进出口。异步备份和还原允许用户在备份或还原过程中执行其他操作。';
 $string['enterasearch'] = '键入并搜索';
 $string['error_block_for_module_not_found'] = '在课程模块（ID：{$a->mid}）发现无主版块实例（ID：{$a->bid}）。不会备份此版块。';
-$string['errorcopyingbackupfile'] = '在还原前无法将备份文件复制到临时文件夹。';
 $string['error_course_module_not_found'] = '发现无主课程模块（ID：{$a}）。不会备份此模块。';
+$string['errorcopyingbackupfile'] = '在还原前无法将备份文件复制到临时文件夹。';
 $string['errorfilenamemustbezip'] = '您输入的文件名必须是ZIP文件且扩展名为.mbz';
 $string['errorfilenamerequired'] = '您必须输入一个有效的文件名';
 $string['errorfilenametoolong'] = '文件名长度必须小于255个字符。';
@@ -271,14 +271,14 @@ $string['pendingasyncerror'] = '备份被挂起因为这个资源';
 $string['preparingdata'] = '数据准备中';
 $string['preparingui'] = '准备显示页面';
 $string['previousstage'] = '上一步';
+$string['privacy:metadata:backup:detailsofarchive'] = '此存档可以包含与课程相关的各种用户数据, 如成绩、用户注册和活动数据。';
+$string['privacy:metadata:backup:externalpurpose'] = '此存档的目的是存储与课程相关的信息, 将来可能会还原该课程。';
 $string['privacy:metadata:backup_controllers'] = '备份操作列表';
 $string['privacy:metadata:backup_controllers:itemid'] = '课程编号';
 $string['privacy:metadata:backup_controllers:operation'] = '已执行的操作 例如，恢复。';
 $string['privacy:metadata:backup_controllers:timecreated'] = '操作创建时间';
 $string['privacy:metadata:backup_controllers:timemodified'] = '操作修改时间';
 $string['privacy:metadata:backup_controllers:type'] = '正在操作的对象的类型, 如，活动。';
-$string['privacy:metadata:backup:detailsofarchive'] = '此存档可以包含与课程相关的各种用户数据, 如成绩、用户注册和活动数据。';
-$string['privacy:metadata:backup:externalpurpose'] = '此存档的目的是存储与课程相关的信息, 将来可能会还原该课程。';
 $string['qcategory2coursefallback'] = '备份文件中的题目类别“{$a->name}”原来是在系统/课程级类别中，恢复后将建立在课程级类别';
 $string['qcategorycannotberestored'] = '恢复过程中不能创建题目类别“{$a->name}”';
 $string['question2coursefallback'] = '备份文件中的题目类别“{$a->name}”原来是在系统/课程级类别中，恢复后将建立在课程级类别';

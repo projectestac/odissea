@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,26 +12,27 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignment', language 'de', version '3.8'.
  *
- * @package   assignment
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignment
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignment:addinstance'] = 'Neue Aufgabe hinzufügen';
-$string['assignmentdisabled'] = 'Die alte Aktivität "Aufgabe 2.2" ist deaktiviert.';
 $string['assignment:exportownsubmission'] = 'Eigene Abgabe exportieren';
 $string['assignment:exportsubmission'] = 'Abgabe exportieren';
 $string['assignment:grade'] = 'Aufgabe bewerten';
-$string['assignmentneedsupgrade'] = 'Die veraltete Aktivität "Aufgabe 2.2" wurde entfernt.';
-$string['assignment:submit'] = 'Aufgabe abgeben';
+$string['assignment:submit'] = 'Aufgabenlösung speichern';
 $string['assignment:view'] = 'Aufgabe anzeigen';
+$string['assignmentdisabled'] = 'Die alte Aktivität "Aufgabe 2.2" ist deaktiviert.';
+$string['assignmentneedsupgrade'] = 'Die alte Aktivität "Aufgabe 2.2" wurde entfernt.';
 $string['messageprovider:assignment_updates'] = 'Systemnachrichten zur Aufgabe (2.2)';
 $string['modulename'] = 'Aufgabe 2.2 (deaktiviert)';
 $string['modulename_help'] = 'Veraltete Aktivität, die inzwischen aus Moodle entfernt wurde.';
@@ -43,10 +43,6 @@ $string['page-mod-assignment-x'] = 'Jede Aufgabenseite';
 $string['pluginadministration'] = 'Aufgabe 2.2 (deaktiviert) Administration';
 $string['pluginname'] = 'Aufgabe 2.2 (deaktiviert)';
 $string['privacy:markedsubmissionspath'] = 'Markierte Lösungen';
-$string['privacy:metadata:assignmentfilter'] = 'Filtervoreinstellung für Aufgabenlösungen';
-$string['privacy:metadata:assignmentmailinfo'] = 'Voreinstellung für E-Mailinformation bei Aufgabenlösungen';
-$string['privacy:metadata:assignmentperpage'] = 'Voreinstellung für Zahl der Lösungen je Seite';
-$string['privacy:metadata:assignmentquickgrade'] = 'Voreinstellungen für die Schnellbewertung von Lösungen';
 $string['privacy:metadata:assignment_submissions'] = 'Zuordnung von Lösungen zu Aufgaben';
 $string['privacy:metadata:assignment_submissions:data1'] = 'Zuordung von Onlinetexten zu Lösungen';
 $string['privacy:metadata:assignment_submissions:data2'] = 'Der getrackte Status der Aufgabenabgabe';
@@ -59,5 +55,9 @@ $string['privacy:metadata:assignment_submissions:timecreated'] = 'Datum/Zeit der
 $string['privacy:metadata:assignment_submissions:timemarked'] = 'Datum/Zeit der Bewertung der Lösung';
 $string['privacy:metadata:assignment_submissions:timemodified'] = 'Änderungszeitpunkt der Lösung';
 $string['privacy:metadata:assignment_submissions:userid'] = 'Nutzer-ID für Lösung';
+$string['privacy:metadata:assignmentfilter'] = 'Filtervoreinstellung für Aufgabenlösungen';
+$string['privacy:metadata:assignmentmailinfo'] = 'Voreinstellung für E-Mailinformation bei Aufgabenlösungen';
+$string['privacy:metadata:assignmentperpage'] = 'Voreinstellung für Zahl der Lösungen je Seite';
+$string['privacy:metadata:assignmentquickgrade'] = 'Voreinstellungen für die Schnellbewertung von Lösungen';
 $string['privacy:submissionpath'] = 'Lösung';
 $string['upgradenotification'] = 'Diese Aktivität basiert auf einem älteren Aufgabenmodul.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'el', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,8 +30,8 @@ $string['corestring'] = 'Συμβολοσειρά εναλλακτικής γλ�
 $string['corestring_help'] = 'Αυτή η ρύθμιση μπορεί να χρησιμοποιηθεί για την επιλογή συμβολοσειράς διαφορετικής γλώσσας από το αρχείο γλώσσας πυρήνα mimetypes.php. Γενικά πρέπει να μένει κενό. Για προσαρμοσμένους τύπους χρησιμοποιήστε το πεδίο περιγραφής.';
 $string['defaulticon'] = 'Προεπιλεγμένο εικονίδιο για τύπο MIME';
 $string['defaulticon_help'] = 'Αν υπάρχουν πολλαπλές επεκτάσεις αρχείου με τον ίδιο τύπο MIME, επιλέξτε αυτή την επιλογή για μια από τις επεκτάσεις, έτσι ώστε το εικονίδιό της να χρησιμοποιηθεί όταν προσδιορίζεται/αναζητείται ένα εικονίδιο από τον τύπο MIME.';
-$string['deletea'] = 'Διαγραφή {$a}';
 $string['delete_confirmation'] = 'Είστε απολύτως σίγουροι ότι θέλετε να διαγραφεί το <strong>.{$a}</strong>;';
+$string['deletea'] = 'Διαγραφή {$a}';
 $string['deletefiletypes'] = 'Διαγραφή τύπου αρχείου';
 $string['description'] = 'Προσαρμοσμένη περιγραφή';
 $string['description_help'] = 'Απλή περιγραφή τύπου αρχείου, π.χ. «Ηλε.βιβλίο Kindle». Αν ο ιστότοπός σας υποστηρίζει πολλαπλές γλώσσες και χρησιμοποιεί το φίλτρο πολλαπλών γλωσσών, μπορείτε να εισάγετε ετικέτες πολλαπλών γλωσσών σε αυτό το πεδίο για να παρέχετε μια περιγραφή σε διαφορετικές γλώσσες.';

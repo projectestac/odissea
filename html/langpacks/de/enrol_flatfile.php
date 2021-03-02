@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_flatfile', language 'de', version '3.8'.
  *
- * @package   enrol_flatfile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_flatfile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,10 +30,10 @@ $string['expiredaction'] = 'Aktion bei Ablauf der Einschreibung';
 $string['expiredaction_help'] = 'Wählen Sie, was passieren soll, wenn die Nutzereinschreibung abläuft. Beachten Sie, dass einige Nutzerdaten und -einstellungen bei der Kursabmeldung gelöscht werden.';
 $string['filelockedmail'] = 'Die Textdatei \'{$a}\' für die Kurseinschreibung kann nicht vom Cronjob gelöscht werden. Dieses Problem tritt meistens bei falschen Zugriffsrechten auf. Bitte korrigieren Sie die Zugriffsrechte, damit die Datei gelöscht werden kann und nicht  erneut ausgeführt wird.';
 $string['filelockedmailsubject'] = 'Fehler: Datei für Kursanmeldung';
-$string['flatfileenrolments'] = 'Flat-File (CSV) Einschreibungen';
 $string['flatfile:manage'] = 'Nutzer/innen manuell in den Kurs einschreiben';
+$string['flatfile:unenrol'] = 'Nutzer/innen manuell vom Kurs abmelden';
+$string['flatfileenrolments'] = 'Flat-File (CSV) Einschreibungen';
 $string['flatfilesync'] = 'CSV-Einschreibung (Flat file)';
-$string['flatfile:unenrol'] = 'Nutzer/innen manuell aus dem Kurs abmelden';
 $string['location'] = 'Dateiverzeichnis';
 $string['location_desc'] = 'Geben Sie den vollständigen Pfad der Einschreibedatei an. Die Datei wird nach der Verarbeitung automatisch gelöscht.';
 $string['mapping'] = 'CSV-Rollenzuweisung (Flat file)';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio_mahara', language 'ar', version '3.8'.
  *
- * @package   portfolio_mahara
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_mahara
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,12 +36,12 @@ $string['err_nomnethosts'] = 'يعتمد على شبكة مودل';
 $string['err_nomnethosts_help'] = 'هذا الملحق يعتمد على نظراء شبكة مودل مع كون SSO IDP منشورة، SSO SP مشترك فيها، خدمات المحفظة منشورة <b>و</b> مشترك فيها فضلاً عن ملحق مصادقة شبكة مودل. أي عينات من هذا الملحق تبقى مخفية حتى تتم تلبية هذه الشروط. ثم ينبغي جعلها مرئية يدوياً مرة أخرى.';
 $string['failedtojump'] = 'فشل بدء الاتصال مع المخدم البعيد';
 $string['failedtoping'] = 'فشل بدء الاتصال مع المخدم البعيد: {$a}';
-$string['mnethost'] = 'مضيف شبكة مودل';
 $string['mnet_nofile'] = 'تعذر العثور على الملف في مكون النقل - خطأ غريب';
 $string['mnet_nofilecontents'] = 'تم العثور على الملف في مكون النقل، ولكن تعذر استخراج المحتويات - خطأ غريب: {$a}';
 $string['mnet_noid'] = 'تعذر العثور على سجل النقل المطابق لهذا الترميز';
 $string['mnet_notoken'] = 'تعذر العثور على الترميز المطابق لهذا النقل';
 $string['mnet_wronghost'] = 'المضيف الخارجي لم يطابق سجل النقل لهذا الترميز';
+$string['mnethost'] = 'مضيف شبكة مودل';
 $string['pf_description'] = 'يسمح للمستخدمين بوضع محتوى مودل في هذا المضيف<br />إشترك <b>و</b> انشر هذه الخدمة للسماح للمستخدمين المصادق عليهم في هذا الموقع بوضع المحتوى في {$a}<br /><ul><li><em>تبعة</em>: عليك أيضاً <strong>نشر</strong> خدمة SSO (مزود هوية) في {$a}.</li><li><em>تبعة</em>: عليك أيضاً <strong>الاشتراك</strong> في خدمة SSO (مزود خدمة) في {$a}</li><li><em>تبعة</em>: عليك أيضاً تمكين ملحق مصادقة شبكة مودل.</li></ul><br />';
 $string['pf_name'] = 'خدمات المحفظة';
 $string['pluginname'] = 'المحفظة الالكترونية من مهارا';

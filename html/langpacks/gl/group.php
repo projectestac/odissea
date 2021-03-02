@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'gl', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['addgroupstogroupings'] = 'Engadir/retirar grupos';
 $string['adduserstogroup'] = 'Engadir/retirar usuarios';
 $string['allocateby'] = 'Asignar membros';
 $string['anygrouping'] = '[Calquera agrupamento]';
-$string['autocreategroups'] = 'Crear grupos automáticamente';
+$string['autocreategroups'] = 'Crear grupos automaticamente';
 $string['backtogroupings'] = 'Volver aos agrupamentos';
 $string['backtogroups'] = 'Volver aos grupos';
 $string['badnamingscheme'] = 'Debe conter exactamente un carácter «@» ou «#»';
@@ -56,16 +56,16 @@ $string['deletegrouping'] = 'Eliminar agrupamento';
 $string['deletegroupingconfirm'] = 'Confirma que quere eliminar o agrupamento «{$a}»? (Os grupos non se eliminarán).';
 $string['deletegroupsconfirm'] = 'Confirma que quere eliminar os grupos seguintes?';
 $string['deleteselectedgroup'] = 'Eliminar grupo seleccionado';
-$string['editgroupingsettings'] = 'Editar a configuración de agrupamento';
-$string['editgroupsettings'] = 'Editar a configuración de grupo';
+$string['editgroupingsettings'] = 'Editar os axustes de agrupamento';
+$string['editgroupsettings'] = 'Editar os axustes de grupo';
 $string['editusersgroupsa'] = 'Editar grupos para «{$a}»';
 $string['enablemessaging'] = 'Mensaxería en grupo';
 $string['enablemessaging_help'] = 'Se está activado, os membros do grupo poden enviar mensaxes aos demais do seu grupo a través do caixón de mensaxería.';
 $string['enrolmentkey'] = 'Chave de matriculación';
-$string['enrolmentkeyalreadyinuse'] = 'Esta chave de matriculación xa foi empregada para outro grupo';
 $string['enrolmentkey_help'] = 'Unha chave de matriculación permite que o acceso ao curso estea limitado só a aquelas persoas que coñecen a chave. De especificarse unha chave de matriculación de grupo, entón dita chave non só permitirá aos usuarios acceder ao curso, senón que faraos membros do grupo.
 
 Nota: As chaves de matriculación de grupo deben estar activadas na configuración de automatriculación e debe especificarse tamén unha chave para o curso.';
+$string['enrolmentkeyalreadyinuse'] = 'Esta chave de matriculación xa foi empregada para outro grupo';
 $string['erroraddremoveuser'] = 'Produciuse un erro ao engadir/retirar ao usuario {$a} do grupo';
 $string['erroreditgroup'] = 'Produciuse un erro a crear ou actualizar o grupo {$a}';
 $string['erroreditgrouping'] = 'Produciuse un erro a crear ou actualizar o agrupamento {$a}';
@@ -95,9 +95,9 @@ $string['groupinfo'] = 'Información sobre o grupo seleccionado';
 $string['groupinfomembers'] = 'Información sobre os membros seleccionados';
 $string['groupinfopeople'] = 'Información sobre as persoas seleccionadas';
 $string['grouping'] = 'Agrupamento';
+$string['grouping_help'] = 'Un agrupamento é un conxunto de grupos dentro dun curso. De estar seleccionado un agrupamento, os usuarios asignados aos grupos dentro do agrupamento poderán traballar xuntos.';
 $string['groupingaddedsuccesfully'] = 'O agrupamento {$a} foi engadido satisfactoriamente';
 $string['groupingdescription'] = 'Descrición do agrupamento';
-$string['grouping_help'] = 'Un agrupamento é un conxunto de grupos dentro dun curso. De estar seleccionado un agrupamento, os usuarios asignados aos grupos dentro do agrupamento poderán traballar xuntos.';
 $string['groupingname'] = 'Nome do agrupamento';
 $string['groupingnameexists'] = 'O nome de agrupamento «{$a}» xa existe neste curso. Escolla outro.';
 $string['groupings'] = 'Agrupamentos';
@@ -110,8 +110,6 @@ $string['groupmembers'] = 'Membros do grupo';
 $string['groupmemberssee'] = 'Ver os membros do grupo';
 $string['groupmembersselected'] = 'Membros do grupo seleccionado';
 $string['groupmode'] = 'Modo de grupo';
-$string['groupmodeforce'] = 'Forzar o modo de grupo';
-$string['groupmodeforce_help'] = 'De forzarse o modo de grupo, entón aplicase a a todas as actividades no curso o modo de grupo. Nese caso ignorase a configuración do modo de grupo.';
 $string['groupmode_help'] = 'Este axuste ten 3 opcións:
 
 * Sen grupos - Non hai grupos, todos son parte dunha gran comunidade
@@ -119,6 +117,8 @@ $string['groupmode_help'] = 'Este axuste ten 3 opcións:
 * Grupos visíbeis - Cada membro do grupo traballa dentro do seu grupo, mais tamén pode ver aos outros grupo
 
 O modo de grupo definido a nivel de curso é o modo predeterminado para todas as actividades do curso. Cada actividade que admita grupos pode definir o seu propio modo de grupo, aínda que se o modo de grupo está definido a nivel de curso, o axuste do modo de grupo para cada actividade é ignorado.';
+$string['groupmodeforce'] = 'Forzar o modo de grupo';
+$string['groupmodeforce_help'] = 'De forzarse o modo de grupo, entón aplicase a todas as actividades no curso o modo de grupo. Nese caso ignorase a configuración do modo de grupo.';
 $string['groupmy'] = 'O meu grupo';
 $string['groupname'] = 'Nome do grupo';
 $string['groupnameexists'] = 'O nome de grupo «{$a}» xa existe neste curso. Escolla outro.';
@@ -141,12 +141,12 @@ $string['importgroups_help'] = 'Os grupos poden importarse mediante un ficheiro 
 * Cada liña do ficheiro conten un rexistro
 * Cada rexistro é unha serie de datos separados por comas
 * O primeiro rexistro conten unha lista de nomes de campos que definen o formato do resto do ficheiro
-* É obrigatorio o nome de campo sendo nome de grupo
-* Son opcionais os nomes de campo descrición, chave de matriculación, imaxe, imaxe agochada';
+* É obrigatorio o nome de campo groupname
+* Son opcionais os nomes de campo: groupidnumber, description, enrolmentkey, groupingname, enablemessaging';
 $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Incluír soamente as matriculacións activas';
-$string['includeonlyactiveenrol_help'] = 'Se o activa, os usuarios suspendidos no serán incluídos nos grupos.';
-$string['javascriptrequired'] = 'Esta páxina require que Javascript estea activado.';
+$string['includeonlyactiveenrol_help'] = 'Se está activado, os usuarios suspendidos no serán incluídos nos grupos.';
+$string['javascriptrequired'] = 'Esta páxina require que JavaScript estea activado.';
 $string['memberofgroup'] = 'Membro do grupo de: {$a}';
 $string['members'] = 'Membros por grupo';
 $string['membersofselectedgroup'] = 'Membros de:';

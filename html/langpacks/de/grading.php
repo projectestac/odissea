@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'de', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -71,7 +71,6 @@ $string['privacy:metadata:grading_definitions:timecreated'] = 'Zeitpunkt, zu dem
 $string['privacy:metadata:grading_definitions:timemodified'] = 'Zeitpunkt, zu dem die erweiterte Bewertungsdefinition zuletzt geändert wurde';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'ID des Nutzers der die Bewertubgsdefinition erstellt hat';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'ID des Nutzers der die Bewertubgsdefinition zuletzt verändert hat';
-$string['privacy:metadata:gradingformpluginsummary'] = 'Daten aus der Bewertungsmethode';
 $string['privacy:metadata:grading_instances'] = 'Bewertungsaufzeichnung eines einzelnen Bewerters für ein Item';
 $string['privacy:metadata:grading_instances:feedback'] = 'Vom Nutzer gegebenes Feedback';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'Textformat des Feedbacks des Nutzers';
@@ -79,6 +78,7 @@ $string['privacy:metadata:grading_instances:raterid'] = 'ID des Nutzers, der Bew
 $string['privacy:metadata:grading_instances:rawgrade'] = 'Bewertung in der Bewertungsinstanz';
 $string['privacy:metadata:grading_instances:status'] = 'Status der Bewertungsinstanz';
 $string['privacy:metadata:grading_instances:timemodified'] = 'Zeitpunkt der letzten Änderung an der Bewertungsinstanz';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Daten aus der Bewertungsmethode';
 $string['searchownforms'] = 'einschl. meine eigenen Formulare';
 $string['searchtemplate'] = 'Suche nach Bewertungsformularen';
 $string['searchtemplate_help'] = 'Sie können ein Bewertungsformular suchen und es als Vorlage zur weiteren Bearbeitung verwenden. Geben Sie Begriffe ein, die im Titel, dem Formular oder der Beschreibung vermutlich vorkommen. Sie können auch komplexe Begriffe suchen wenn Sie diese in Anführungszeichen (") setzen.

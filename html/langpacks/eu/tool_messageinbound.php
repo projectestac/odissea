@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_messageinbound', language 'eu', version '3.8'.
  *
- * @package   tool_messageinbound
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_messageinbound
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['classname'] = 'Klasearen izena';
 $string['component'] = 'Osagaia';
-$string['configmessageinboundhost'] = 'Moodlek e-mailak bilatzera joan behar deneko zerbitzariaren helbidea. Lehenetsitakoa ez den ataka bat zehazteko, [zerbitzaria]:[ataka] erabili dezakezu, posta.adibidea.eus:993 formatua adibidez. Atakarik zehazten ez baduzu, posta elektronikoko zerbitzari motaren lehenetsitako ataka erabiliko da.';
+$string['configmessageinboundhost'] = 'Moodle-k e-mailak bilatzera joan behar deneko zerbitzariaren helbidea. Lehenetsitakoa ez den ataka bat zehazteko, [zerbitzaria]:[ataka] erabili dezakezu, mail.adibidea.eus:587 formatua adibidez. Atakarik zehazten ez baduzu, posta elektronikoko zerbitzari motaren lehenetsitako ataka erabiliko da.';
 $string['defaultexpiration'] = 'Helbideen iraungitze-epe lehenetsia';
 $string['defaultexpiration_help'] = 'Kudeatzaileak helbide elektroniko bat sortzen duenean, automatikoki iraungitze-epe bat zehaztu dakioke epe hori igaro ondoren ezin erabiltzeko. Iraungitze-epea zehaztea gomendagarria da.';
 $string['description'] = 'Deskribapena';
@@ -43,19 +43,19 @@ $string['handlerdisabled'] = 'Kontaktatu nahi izan duzun posta elektronikoaren k
 $string['incomingmailconfiguration'] = 'Sarrerako posta elektronikoaren ezarpenak';
 $string['incomingmailserversettings'] = 'Sarrerako posta-zerbitzariaren ezarpenak';
 $string['incomingmailserversettings_desc'] = 'Moodle gai da modu egokian konfiguratutako IMAP zerbitzarietara konektatzeko. Hemen zure IMAP zerbitzarira konektatzeko erabili beharreko ezarpenak zehaztu ditzakezu.';
-$string['invalidrecipientdescription'] = '"{$a->subject}" mezua ezin izan da autentifikatu, zure erabiltzaile-profilekoa ez den helbide elektroniko batetik bidali delako. Mezu hori autentifikatu nahi baduzu, erantzun mezu honi.';
-$string['invalidrecipientdescriptionhtml'] = '"{$a->subject}" mezua ezin izan da autentifikatu, zure erabiltzaile-profilekoa ez den helbide elektroniko batetik bidali delako. Mezu hori autentifikatu nahi baduzu, erantzun mezu honi.';
-$string['invalidrecipientfinal'] = '"{$a->subject}" mezua ezin izan da autentifikatu. Mesedez egiaztatu zure erabiltzaile profilean zehaztutako helbide elektronikotik bidaltzen ari zarela.';
 $string['invalid_recipient_handler'] = 'Baliozkoa den mezu bat jasotzen denean baina igorlea ezin bada autentifikatu, mezua posta elektronikoko zerbitzarian gordetzen da eta erabiltzaileari erabiltzaile-profilean duen helbide elektronikora mezu bat bidaltzen zaio. Mezu horretan erabiltzaileari jatorrizko mezuaren egiazkotasuna egiaztatzeko mezuari erantzuteko aukera ematen zaio.
 
 Kudeatzaile honek erantzun horiek kudeatzen ditu.
 
 Ezin da desgaitu kudeatzaile honen igorlearen egiaztapena erabiltzaileak helbide elektroniko ezegokitik erantzun dezakeelako bere posta elektronikoaren bezeroaren konfigurazioa egokia ez bada.';
 $string['invalid_recipient_handler_name'] = 'Igorle baliogabeen kudeatzailea';
+$string['invalidrecipientdescription'] = '"{$a->subject}" mezua ezin izan da autentifikatu, zure erabiltzaile-profilekoa ez den helbide elektroniko batetik bidali delako. Mezu hori autentifikatu nahi baduzu, erantzun mezu honi.';
+$string['invalidrecipientdescriptionhtml'] = '"{$a->subject}" mezua ezin izan da autentifikatu, zure erabiltzaile-profilekoa ez den helbide elektroniko batetik bidali delako. Mezu hori autentifikatu nahi baduzu, erantzun mezu honi.';
+$string['invalidrecipientfinal'] = '"{$a->subject}" mezua ezin izan da autentifikatu. Mesedez egiaztatu zure erabiltzaile profilean zehaztutako helbide elektronikotik bidaltzen ari zarela.';
 $string['mailbox'] = 'Postontziaren izena';
 $string['mailboxconfiguration'] = 'Postontziaren ezarpenak';
 $string['mailboxdescription'] = '[postontzia]+azpihelbidea@[domeinua]';
-$string['mailsettings'] = 'Postaren ezarpenak';
+$string['mailsettings'] = 'E-postaren ezarpenak';
 $string['message_handlers'] = 'Mezu-kudeatzaileak';
 $string['messageinbound'] = 'Sarrerako mezua';
 $string['messageinboundenabled'] = 'Gaitu sarrerako posta elektronikoaren prozesatzea';
@@ -67,7 +67,7 @@ $string['messageinboundhostpass'] = 'Pasahitza';
 $string['messageinboundhostpass_desc'] = 'Hemen zure zerbitzu-hornitzaileak helbide elektronikoan sartzeko eman dizun pasahitza zehaztu behar da.';
 $string['messageinboundhostssl'] = 'Erabili SSL';
 $string['messageinboundhostssl_desc'] = 'Posta elektronikoko zerbitzari batzuk segurtasun-maila gehigarria onartzen dute zure zerbitzariaren eta Moodlen arteko komunikazioak zifratzea ahalbidetuz.  Zure zerbitzariak onartzen badu SSL zifratzea erabiltzea gomendagarria da.';
-$string['messageinboundhosttype'] = 'Zerbitzari-mota';
+$string['messageinboundhosttype'] = 'Zerbitzari mota';
 $string['messageinboundhostuser'] = 'Erabiltzaile-izena';
 $string['messageinboundhostuser_desc'] = 'Hemen zure zerbitzu-hornitzaileak helbide elektronikoan sartzeko eman dizun erabiltzaile-izena zehaztu behar da.';
 $string['messageinboundmailboxconfiguration_desc'] = 'Mezuak bidaltzen direnean, helbidea+datuak@adibidea.eus formatua izaten dute. Moodletik helbideak modu fidagarrian sortzeko, mesedez zehaztu @ zeinuaren aurretik erabili beharreko helbidea eta @ zeinuaren atzetik erabili beharreko domeinua. Esaterako, adibideko Postontziaren izena "helbidea" izango litzateke, eta posta elektronikoaren domeinua "adibidea.eus" izango litzateke. Helburu honetarako posta kontu dedikatu bat erabili beharko zenuke.';
@@ -88,7 +88,7 @@ $string['messageprocessingsuccesshtml'] = '{$a->html}
 <p>Aurrerantzean ez baduzu horrelako jakinarazpenik jaso nahi, <a href="{$a->messagepreferencesurl}">zure mezularitza hobespenak editatu ditzakezu</a>.</p>';
 $string['messageprovider:invalidrecipienthandler'] = 'Sarrera-mezu bat zuk bidali duzula konfirmatzeko mezua';
 $string['messageprovider:messageprocessingerror'] = 'Sarrera-mezu bat prozesatu ezin deneko abisua';
-$string['messageprovider:messageprocessingsuccess'] = 'Mezu bat ondo prozesatu deneko baieztatzea';
+$string['messageprovider:messageprocessingsuccess'] = 'Mezu bat ondo prozesatu deneko berrespena';
 $string['name'] = 'Izena';
 $string['noencryption'] = 'Desgaituta - Zifraketarik ez';
 $string['noexpiry'] = 'Iraungitzerik ez';
@@ -108,7 +108,7 @@ $string['replysubjectprefix'] = 'Er:';
 $string['requirevalidation'] = 'Balioztatu igorlearen helbidea';
 $string['ssl'] = 'SSL (Detektatu automatikoki SSL bertsioa)';
 $string['sslv2'] = 'SSLv2 (Behartu SSL-en 2 bertsioa)';
-$string['sslv3'] = 'SSLv3 (Behartu SSL-en 3 bertsioa)';
+$string['sslv3'] = 'SSLv3 (Behartu SSLren 3 bertsioa)';
 $string['taskcleanup'] = 'Egiaztatu gabeko sarrera e-mailen garbiketa';
 $string['taskpickup'] = 'Eskuratu sarrera e-mailak';
 $string['tls'] = 'TLS (TLS; zifratu gabeko kanal batean protokolo-mailako negoziazioaren bidez hasitakoa; konexio segurua hasteko GOMENDATUTAKO modua)';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'chat', language 'ca', version '3.8'.
  *
- * @package   chat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     chat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,11 +36,11 @@ $string['chat:chat'] = 'Accedeix a una sala de xat';
 $string['chat:deletelog'] = 'Suprimir registres de xat';
 $string['chat:exportparticipatedsession'] = 'Exporta la sessió del xat en la qual heu intervingut.';
 $string['chat:exportsession'] = 'Exporta qualsevol sessió de xat';
+$string['chat:readlog'] = 'Llegeix els registres de xat';
+$string['chat:talk'] = 'Participar en un xat';
 $string['chatintro'] = 'Descripció';
 $string['chatname'] = 'Nom d\'aquesta sala de xat';
-$string['chat:readlog'] = 'Llegeix els registres de xat';
 $string['chatreport'] = 'Sessions de xat';
-$string['chat:talk'] = 'Participar en un xat';
 $string['chattime'] = 'Proper dia i hora de xat';
 $string['compact'] = 'Compacte';
 $string['composemessage'] = 'Redacta un missatge';
@@ -99,8 +99,8 @@ Els xats són especialment útils quan el grup no es pot trobar presencialment. 
 $string['modulenameplural'] = 'Xats';
 $string['neverdeletemessages'] = 'No suprimeixis mai els missatges';
 $string['nextsession'] = 'Propera sessió programada';
-$string['nochat'] = 'No es troba el xat';
 $string['no_complete_sessions_found'] = 'No s\'han trobat sessions completades.';
+$string['nochat'] = 'No es troba el xat';
 $string['noguests'] = 'El xat no està obert a visitants';
 $string['nomessages'] = 'No hi ha missatges encara';
 $string['nopermissiontoseethechatlog'] = 'No teniu permisos per veure el registre de xats.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'error', language 'nl', version '3.8'.
  *
- * @package   error
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     error
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['TODO'] = 'TE DOEN';
 $string['activityisscheduledfordeletion'] = 'Activiteit verwijderen bezig ...';
 $string['agedigitalconsentmapinvalidage'] = '"{$a}" is geen geldige waarde voor leeftijd.';
 $string['agedigitalconsentmapinvalidcomma'] = '"{$a}" heeft meer of minder dan één komma-scheidingsteken.';
@@ -241,6 +242,7 @@ $string['duplicateusername'] = 'Gebruikersnaam bestaat al - record genegeerd';
 $string['emailfail'] = 'E-mailen mislukt';
 $string['enddatebeforestartdate'] = 'De cursuseinddatum moet later zijn de startdatum.';
 $string['error'] = 'Er is een fout opgetreden';
+$string['error_question_answers_missing_in_db'] = 'Kon geen antwoord vinden dat overeenkomt met "{$a->answer}" in de question_answers database tabel. Dit gebeurde tijdens het terugzetten van de vraag met ID  {$a->filequestionid}  in het back-upbestand, dat overeenkomt met de bestaande vraag met id {$a->dbquestionid} in de databank.';
 $string['errorcleaningdirectory'] = 'Fout bij het opkuisen van map "{$a}"';
 $string['errorcopyingfiles'] = 'Fout bij het kopiëren van bestanden';
 $string['errorcreatingdirectory'] = 'Fout bij het maken van map "{$a}"';
@@ -251,7 +253,6 @@ $string['erroronline'] = 'Fout op lijn {$a}';
 $string['erroroutput'] = 'Foute output, de automatische verwijzing wordt uitgeschakeld.';
 $string['errorparsingxml'] = 'Fout bij het verwerken van XML: {$a->errorstring} op lijn {$a->errorline}, char {$a->errorchar}';
 $string['errorprocessingarchive'] = 'Fout bij het verwerken van het archiefbestand';
-$string['error_question_answers_missing_in_db'] = 'Kon geen antwoord vinden dat overeenkomt met "{$a->answer}" in de question_answers database tabel. Dit gebeurde tijdens het terugzetten van de vraag met ID  {$a->filequestionid}  in het back-upbestand, dat overeenkomt met de bestaande vraag met id {$a->dbquestionid} in de databank.';
 $string['errorreadingfile'] = 'Fout bij het lezen van bestand "{$a}"';
 $string['errorsavingrequest'] = 'Er is een fout opgetreden bij het bewaren van je vraag';
 $string['errorsettinguserpref'] = 'Fout bij het instellen van gebruikersvoorkeuren';
@@ -344,7 +345,7 @@ $string['invalidipformat'] = 'IP-adres heeft een ongeldige vorm';
 $string['invaliditemid'] = 'Fout item-ID';
 $string['invalidkey'] = 'Foute sleutel';
 $string['invalidlanguagecode'] = 'Ongeldige taal code: {$a}';
-$string['invalidlegacy'] = 'Ongeldige standaard roldefinitie voor type :{$a}';
+$string['invalidlegacy'] = 'Ongeldige verouderde roldefinitie voor type :{$a}';
 $string['invalidmd5'] = 'De controlevariable was fout - probeer nog eens';
 $string['invalidmode'] = 'Ongeldige modus ({$a})';
 $string['invalidmodule'] = 'Ongeldige module';
@@ -397,9 +398,9 @@ $string['messageundeliveredbynotificationsettings'] = 'Het bericht kon niet word
 $string['messagingdisable'] = 'Berichten zijn uitgeschakeld op deze site';
 $string['mimetexisnotexist'] = 'Je systeem is niet geconfigureerd om mimeTeX te gebruiken. Je moet de C bronbestanden verkrijgen van  <a href="https://www.forkosh.com/mimetex.zip"> https://www.forkosh.com/mimetex.zip</a>, ze compileren en het uitvoerbaar bestand in je moodle/filter/tex/ map zetten.';
 $string['mimetexnotexecutable'] = 'Aangepast mimetex bestand is niet uitvoerbaar!';
+$string['missing_moodle_backup_xml_file'] = 'Het XML-bestand {$a} ontbreekt in de back-up';
 $string['missingfield'] = 'Veld "{$a}" ontbreekt';
 $string['missingkeyinsql'] = 'FOUT: ontbrekende param "{$a}" in query';
-$string['missing_moodle_backup_xml_file'] = 'Het XML-bestand {$a} ontbreekt in de back-up';
 $string['missingparam'] = 'Een vereiste parameter ({$a}) ontbreekt';
 $string['missingparameter'] = 'Ontbrekende parameter';
 $string['missingrequiredfield'] = 'Vereist veld ontbreekt';
@@ -494,9 +495,9 @@ $string['remotedownloadnotallowed'] = 'Het downloaden van componenten naar je se
 $string['reportnotavailable'] = 'Dit type rapport is alleen maar beschikbaar voor de site-cursus';
 $string['requirecorrectaccess'] = 'Ongeldige URL of poort';
 $string['requireloginerror'] = 'Geen toegang tot de cursus of activiteit';
-$string['restorechecksumfailed'] = 'Er zijn problemen met de informatie over het terugzetten, bewaard in jouw sessie. Controleer je PHP geheugenlimiet en je DB pakketgroottelimiet. Terugzetten gestopt.';
 $string['restore_path_element_missingmethod'] = 'De methode voor terugzetten {$a} ontbreekt. Die moet gedefinieerd worden door een ontwikkelaar.';
 $string['restore_path_element_noobject'] = 'Het terug te zetten object {$a} is geen object';
+$string['restorechecksumfailed'] = 'Er zijn problemen met de informatie over het terugzetten, bewaard in jouw sessie. Controleer je PHP geheugenlimiet en je DB pakketgroottelimiet. Terugzetten gestopt.';
 $string['restrictedcontextexception'] = 'Het uitvoeren van externe functies schendt de beperkingen van de context';
 $string['restricteduser'] = 'Sorry, maar je huidige account "{$a}" heeft onvoldoende rechten om dat te doen.';
 $string['reverseproxyabused'] = 'Reverse proxy ingeschakeld. Er is geen rechtstreekse toegang tot de server mogelijlk. Contacteer de systeembeheerder.';
@@ -526,7 +527,7 @@ $string['statsdisable'] = 'Statistieken niet ingeschakeld.';
 $string['statsnodata'] = 'Er zijn geen gegevens beschikbaar voor die combinatie van cursus en periode';
 $string['storedfilecannotcreatefile'] = 'Kan geen lokaal bestandspoolbestand aanmaken, controleer of de rechten in dataroot juist staan en of er genoeg schijfruimte op de server is.';
 $string['storedfilecannotcreatefiledirs'] = 'Kon geen locale bestandspoolmappen maken. Controleer de rechten in dataroot.';
-$string['storedfilecannotread'] = 'Kan bestand niet lezen. Ofwel bestaat het bestand niet ofwel zijn er rechtenproblemen';
+$string['storedfilecannotread'] = 'Kan bestand niet lezen. Ofwel bestaat het bestand niet ofwel zijn er rechtenproblemen.';
 $string['storedfilecannotreadfile'] = 'Kan bestand  \'{$a}\' niet lezen. Ofwel bestaat het bestand niet of er is een rechtenprobleem.';
 $string['storedfilenotcreated'] = 'Kon bestand"{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}" niet maken';
 $string['storedfileproblem'] = 'Onbekende uitzondering opgetreden in verband met lokale bestanden ({$a})';
@@ -535,7 +536,6 @@ $string['tagnotfound'] = 'Die tag kon niet in de databank gevonden worden';
 $string['targetdatabasenotempty'] = 'De doeldatabank is niet leeg. Transfer afgebroken om veiligheidsredenen.';
 $string['textconditionsnotallowed'] = 'Vergelijking van tekst kolom condities niet toegestaan. Gebruik sql_compare_text() in je query.';
 $string['themenotinstall'] = 'Dit thema is niet geïnstalleerd';
-$string['TODO'] = 'TE DOEN';
 $string['tokengenerationfailed'] = 'Kan geen nieuw token genereren.';
 $string['transactionvoid'] = 'Transactie kan niet geannuleerd worden omdat ze al geannuleerd is.';
 $string['unenrolerror'] = 'Er is een fout opgetreden bij het afmelden van die gebruiker.';

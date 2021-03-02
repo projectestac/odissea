@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,24 +12,25 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshopallocation_random', language 'eu', version '3.8'.
  *
- * @package   workshopallocation_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshopallocation_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = 'Gehitu auto-ebaluazioak';
 $string['allocationaddeddetail'] = 'Ebaluazio berria egin behar da: <strong>{$a->reviewername}</strong> <strong>{$a->authorname}</strong> (r)en ebaluatzailea da';
-$string['allocationdeallocategraded'] = 'Ezin da jada ebaluatuta dagoen bidalketaren esleipena kendu: ebaluatzailea <strong>{$a->reviewername}</strong>, bidalketaren egilea: <strong>{$a->authorname}</strong>';
-$string['allocationreuseddetail'] = 'Berrerabilitako ebaluazioa: <strong>{$a->reviewername}</strong> mantentzen da <strong>{$a->authorname}</strong>-(e)n ebaluatzaile gisa';
+$string['allocationdeallocategraded'] = 'Ezin da jada ebaluatuta dagoen bidalketaren esleipena kendu: ebaluatzailea <strong>{$a->reviewername}</strong> da, eta bidalketaren egilea <strong>{$a->authorname}</strong>';
+$string['allocationreuseddetail'] = 'Berrerabilitako ebaluazioa: <strong>{$a->reviewername}</strong> mantentzen da <strong>{$a->authorname}</strong>(e)n ebaluatzaile gisa';
 $string['allocationsettings'] = 'Esleipenaren ezarpenak';
-$string['assessmentdeleteddetail'] = 'Ebaluazioaren esleipena kendu da: <strong>{$a->reviewername}</strong> jada ez da <strong>{$a->authorname}</strong>-(e)n ebaluatzailea';
+$string['assessmentdeleteddetail'] = 'Ebaluazioaren esleipena kendu da: <strong>{$a->reviewername}</strong> jada ez da <strong>{$a->authorname}</strong>(e)n ebaluatzailea';
 $string['assesswosubmission'] = 'Partaideek ezer bidali gabe ere ebalua dezakete';
 $string['confignumofreviews'] = 'Lehenetsitako bidalketa-kopurua ausaz esleitzeko';
 $string['excludesamegroup'] = 'Galarazi talde bereko kideen arteko ebaluazioak';

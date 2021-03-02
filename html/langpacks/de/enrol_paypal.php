@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_paypal', language 'de', version '3.8'.
  *
- * @package   enrol_paypal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_paypal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,12 +39,12 @@ $string['enrolenddate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/
 $string['enrolenddaterror'] = 'Das Einschreibungsende muss nach dem Einschreibungsbeginn liegen.';
 $string['enrolperiod'] = 'Teilnahmedauer';
 $string['enrolperiod_desc'] = 'Vorgabe zur Teilnahmedauer (in Sekunden). Falls dieser Wert auf Null gesetzt ist, ist die Teilnahmedauer unbegrenzt.';
-$string['enrolperiod_help'] = 'Teilnahmedauer (in Sekunden), beginnend mit dem Einschreibezeitpunkt. Falls dieser Wert auf Null gesetzt ist, ist die Teilnahmedauer unbegrenzt.';
+$string['enrolperiod_help'] = 'Teilnahmedauer (in Sekunden), beginnend mit dem Einschreibezeitpunkt. Falls dieser Wert auf Null gesetzt ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
 $string['enrolstartdate'] = 'Einschreibungsbeginn';
 $string['enrolstartdate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen ab diesem Zeitpunkt eingeschrieben werden.';
-$string['errdisabled'] = 'Die Einschreibemethode \'PayPal\' ist deaktiviert und kann keine Zahlungsmitteilungen verarbeiten.';
+$string['errdisabled'] = 'Die Einschreibemethode \'PayPal\' ist deaktiviert und kann keine Zahlungsnachrichten verarbeiten.';
 $string['erripninvalid'] = 'Die sofortige Zahlung wurde von PayPal nicht bestätigt.';
-$string['errpaypalconnect'] = 'Eine Verbindung zu {$a->url} konnte nicht hergestellt werden, um die Mitteilung zur sofortigen Zahlung zu überprüfen: {$a->result}';
+$string['errpaypalconnect'] = 'Eine Verbindung zu {$a->url} konnte nicht hergestellt werden, um die Nachricht zur sofortigen Zahlung zu überprüfen: {$a->result}';
 $string['expiredaction'] = 'Aktion bei Ablauf der Kurseinschreibung';
 $string['expiredaction_help'] = 'Wählen Sie die Aktionen, die beim Ablauf der Kurseinschreibung ausgeführt werden sollen. Beim Austragen des Nutzers aus dem Kurs werden einige Nutzerdaten und Einstellungen entfernt.';
 $string['mailadmins'] = 'Admin benachrichtigen';
@@ -52,11 +52,11 @@ $string['mailstudents'] = 'Teilnehmer/innen benachrichtigen';
 $string['mailteachers'] = 'Trainer/innen benachrichtigen';
 $string['messageprovider:paypal_enrolment'] = 'Systemnachricht bei Einschreibung über Paypal';
 $string['nocost'] = 'Für diesen Kurs wurde keine Einschreibegebühr  festgelegt!';
-$string['paypalaccepted'] = 'PayPal-Zahlungen möglich';
 $string['paypal:config'] = 'Einschreibung \'PayPal\' konfigurieren';
 $string['paypal:manage'] = 'Eingeschriebene Nutzer/innen verwalten';
 $string['paypal:unenrol'] = 'Nutzer/innen aus dem Kurs abmelden';
 $string['paypal:unenrolself'] = 'Selbst aus dem Kurs abmelden';
+$string['paypalaccepted'] = 'PayPal-Zahlungen möglich';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'Das Plugin \'PayPal\' erlaubt es, kostenpflichtige Kurse zu entwickeln. Wenn die Kosten für einen Kurs bei Null liegen, wird keine Zahlungsaufforderung für die Kurseinschreibung gezeigt. Es gibt die Möglichkeit, Kosten für alle Kurse der Website vorzugeben und dann individuell in jeder Kurseinstellung anzupassen. Die Kurseinstellung überschreibt die globale Vorgabe.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'Information über die Paypal Transaktion für Paypal-Einschreibungen';
@@ -69,7 +69,7 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal:option_selection1_x'] = 'Vol
 $string['privacy:metadata:enrol_paypal:enrol_paypal:parent_txn_id'] = 'Im Falle einer Erstattung, Stornierung, oder einer widerrufenen Stornierung ist dies die Transaktion der Original-Transaktion.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_status'] = 'Status der Zahlung';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_type'] = 'Enthält die Information mit welchem Zahlungsverfahren die Zahlung erfolgte';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'Grund, warum die Zahlung noch nicht abgeschlossen ist (falls dies der Fall ist)';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'Grund warum die Zahlung noch nicht abgeschlossen ist (falls dies der Fall ist)';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:reason_code'] = 'Grund warum Status erstattet, Wiederrufen, Wiederruf_abgebrochen oder verweigert ist (falls dies einer der Stati ist).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'Primäre E-Mail-Adresse des Zahlungsempfängers';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = 'Eindeutige Paypal Account-ID des Zahlungsempfängers';

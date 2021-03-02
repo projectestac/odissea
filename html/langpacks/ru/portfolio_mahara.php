@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio_mahara', language 'ru', version '3.8'.
  *
- * @package   portfolio_mahara
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_mahara
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,12 +36,12 @@ $string['err_nomnethosts'] = 'Необходима настройка MNet';
 $string['err_nomnethosts_help'] = 'Этот плагин может корректно работать только на серверах сети MNet, которые опубликовали службу «Поставщик учетных данных SSO», подписались на службу «Поставщик услуг SSO» и подписались <b>и</b> опубликовали службу «Портфолио Mahara». Также необходимо, чтобы был включен плагин аутентификации «Аутентификация для пользователей сети MNet». До тех пор, пока все эти условия не будут выполнены, все экземпляры этого плагина будут скрыты. После настройки необходимых параметров будет необходимо сделать их видимыми вручную.';
 $string['failedtojump'] = 'Не удалось установить соединение с удаленным сервером';
 $string['failedtoping'] = 'Не удалось установить соединение с удаленным сервером: {$a}';
-$string['mnethost'] = 'Сайт сети MNet';
 $string['mnet_nofile'] = 'Не удается найти файл в объекте передачи - странная ошибка';
 $string['mnet_nofilecontents'] = 'Найден файл в объекте передачи, но не удалось получить содержимое - странная ошибка: {$a}';
 $string['mnet_noid'] = 'Не удалось найти соответствующую запись передачи для этого ключа';
 $string['mnet_notoken'] = 'Не удалось найти ключ, соответствующий этой передаче';
 $string['mnet_wronghost'] = 'Внешний сайт не соответствует передаче для этого ключа';
+$string['mnethost'] = 'Сайт сети MNet';
 $string['pf_description'] = 'Эта служба позволяет пользователям Вашего сайта передавать контент из Moodle на сайт «{$a}».<br />
 Подпишитесь на эту службу <b>и</b> опубликуйте ее, чтобы дать пользователям Вашего сайта возможность передавать контент на сайт «{$a}».<br />
 <ul><li> <em>Зависимость:</em> Вы также должны <strong>опубликовать</strong> службу «Поставщик учетных данных SSO» для сайта «{$a}». </li><li> <em>Зависимость:</em> Вы также должны <strong>подписаться</strong> на службу «Поставщик услуг SSO» сайта «{$a}».</li><li> <em>Зависимость:</em> Вы также должны включить плагин аутентификации «Аутентификация  для пользователей сети MNet». </li></ul><br />';

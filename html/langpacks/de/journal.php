@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'journal', language 'de', version '3.8'.
  *
- * @package   journal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     journal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,13 +45,13 @@ $string['feedbackupdated'] = 'Feedback für {$a} Einträge aktualisiert';
 $string['gradeingradebook'] = 'Aktuelle Bewertung in der Bewertungsübersicht';
 $string['journal:addentries'] = 'Journaleinträge erstellen';
 $string['journal:addinstance'] = 'Journal anlegen';
+$string['journal:manageentries'] = 'Journaleinträge verwalten';
 $string['journalmail'] = '{$a->teacher} hat ein Feedback zu Ihrem Eintrag im Journal \'{$a->journal}\' abgegeben.
 
 Sie können das Feedback als Anhang zu Ihrem Journaleintrag anzeigen:
 
     {$a->url}';
 $string['journalmailhtml'] = '{$a->teacher} hat ein Feedback zu Ihrem Eintrag im Journal \'<i>{$a->journal}</i>\' abgegeben.<br /><br />Sie können das Feedback als Anhang zu Ihrem <a href="{$a->url}">Journaleintrag</a> anzeigen.';
-$string['journal:manageentries'] = 'Journaleinträge verwalten';
 $string['journalname'] = 'Name des Journals';
 $string['journalquestion'] = 'Beschreibung';
 $string['mailsubject'] = 'Feedback zum Journal';

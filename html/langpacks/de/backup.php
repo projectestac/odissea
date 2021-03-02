@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'de', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -115,11 +115,17 @@ $string['choosefilefromautomatedbackup'] = 'Automatisierte Sicherungen';
 $string['choosefilefromautomatedbackup_help'] = 'Enthält automatisch erzeugte Sicherungsdateien';
 $string['choosefilefromcoursebackup'] = 'Sicherungsbereich des Kurses';
 $string['choosefilefromcoursebackup_help'] = 'Voreingestellt ist, dass Kurssicherungsdateien hier abgelegt werden.';
-$string['choosefilefromuserbackup'] = 'Sicherungsbereich des Nutzers';
+$string['choosefilefromuserbackup'] = 'Sicherungsbereich des Nutzers / der Nutzerin';
 $string['choosefilefromuserbackup_help'] = 'Sicherungsdateien mit der Option \'anonymisierte Nutzereinträge\' werden hier gespeichert.';
+$string['config_keep_groups_and_groupings'] = 'Die aktuellen Gruppen und Gruppierungen beibehalten';
+$string['config_keep_roles_and_enrolments'] = 'Die aktuellen Rollen und Einschreibungen beibehalten';
+$string['config_overwrite_conf'] = 'Nutzer/in erlauben, die Kurseinstellungen zu überschreiben';
+$string['config_overwrite_course_fullname'] = 'Voreingestellt ist, dass der aktuelle Kursname mit dem Kursnamen aus der Sicherungsdatei überschrieben wird. Um den Kursnamen zu ändern (moodle/course:changefullname) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
+$string['config_overwrite_course_shortname'] = 'Der aktuelle Kurskurzname wird mit dem Kurskurznamen aus der Sicherungsdatei überschrieben. Um das Recht zu haben, den Kurskurznamen zu ändern (moodle/course:changeshortname) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
+$string['config_overwrite_course_startdate'] = 'Der aktuelle Kursbeginn wird mit dem Kursbeginn aus der Sicherungsdatei überschrieben. Um das Recht zu haben, den Kursbeginn zu ändern (moodle/restore:rolldates) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
 $string['configgeneralactivities'] = 'Standard für die Einbeziehung von Aktivitäten in eine Sicherung';
 $string['configgeneralanonymize'] = 'Standard für die Anonymisierung aller nutzerbezogenen Informationen in eine Sicherung';
-$string['configgeneralbadges'] = 'Diese Option legt fest, ob Badges in eine Sicherung einbezogen werden.';
+$string['configgeneralbadges'] = 'Diese Option legt fest, ob Badges standardmäßig in eine Sicherung einbezogen werden.';
 $string['configgeneralblocks'] = 'Standard für die Einbeziehung von Blöcken in eine Sicherung';
 $string['configgeneralcalendarevents'] = 'Diese Option legt die Standardeinstellung für die Einbeziehung von Kalendereinträgen in Kurssicherungen fest.';
 $string['configgeneralcomments'] = 'Standard für die Einbeziehung von Kommentaren in eine Sicherung';
@@ -133,13 +139,7 @@ $string['configgeneralquestionbank'] = 'Falls diese Option aktiv ist, wird die F
 $string['configgeneralroleassignments'] = 'Standard für die Einbeziehung von Rollenzuweisungen in eine Sicherung';
 $string['configgeneralusers'] = 'Standard für die Einbeziehung von Nutzerkonten in eine Sicherung';
 $string['configgeneraluserscompletion'] = 'Standard für die Einbeziehung von Fortschrittsinformationen in eine Sicherung';
-$string['config_keep_groups_and_groupings'] = 'Die aktuellen Gruppen und Gruppierungen beibehalten';
-$string['config_keep_roles_and_enrolments'] = 'Die aktuellen Rollen und Einschreibungen beibehalten';
 $string['configloglifetime'] = 'Diese Zeitdauer gibt an, für welchen Zeitraum die Logdaten der Sicherungen gespeichert werden. Ältere Logdaten werden automatisch gelöscht. Dieser Wert sollte möglichst klein gehalten werden, weil die Logdaten sehr viel Platz brauchen.';
-$string['config_overwrite_conf'] = 'Nutzer/in erlauben, die Kurseinstellungen zu überschreiben';
-$string['config_overwrite_course_fullname'] = 'Voreingestellt ist, dass der aktuelle Kursname mit dem Kursnamen aus der Sicherungsdatei überschrieben wird. Um den Kursnamen zu ändern (moodle/course:changefullname) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
-$string['config_overwrite_course_shortname'] = 'Der aktuelle Kurskurzname wird mit dem Kurskurznamen aus der Sicherungsdatei überschrieben. Um das Recht zu haben, den Kurskurznamen zu ändern (moodle/course:changeshortname) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
-$string['config_overwrite_course_startdate'] = 'Der aktuelle Kursbeginn wird mit dem Kursbeginn aus der Sicherungsdatei überschrieben. Um das Recht zu haben, den Kursbeginn zu ändern (moodle/restore:rolldates) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
 $string['configrestoreactivities'] = 'Standard für die Wiederherstellung von Aktivitäten setzen';
 $string['configrestorebadges'] = 'Standard für die Wiederherstellung von Badges setzen';
 $string['configrestoreblocks'] = 'Standard für die Wiederherstellung von Blöcken setzen';
@@ -175,8 +175,8 @@ $string['enableasyncbackup'] = 'Asynchrone Sicherungen erlauben';
 $string['enableasyncbackup_help'] = 'Wenn diese Option aktiviert ist, werden alle Sicherungs- und Wiederherstellungsvorgänge asynchron durchgeführt. Importe und Exporte sind davon nicht betroffen. Asynchrone Sicherungen und Wiederherstellungen ermöglichen es, während einer Sicherung oder einer Wiederherstellung andere Operationen durchzuführen.';
 $string['enterasearch'] = 'Suche eingeben';
 $string['error_block_for_module_not_found'] = 'Verwaiste Blockinstanz (ID: {$a->bid}) zum Kursmodul (ID {$a->mid}) gefunden. Dieser Block wird nicht gesichert.';
-$string['errorcopyingbackupfile'] = 'Duplizieren der Sicherungsdatei in den temporären Ordner vor der Wiederherstellung fehlgeschlagen';
 $string['error_course_module_not_found'] = 'Verwaistes Kursmodul (ID: {$a}) gefunden. Dieses Modul wird nicht gesichert.';
+$string['errorcopyingbackupfile'] = 'Kopieren der Sicherungsdatei in den temporären Ordner vor der Wiederherstellung fehlgeschlagen';
 $string['errorfilenamemustbezip'] = 'Die Datei muss eine komprimierte Datei sein und die Dateiendung .mbz haben.';
 $string['errorfilenamerequired'] = 'Sie müssen einen gültigen Dateinamen für diese Sicherung angeben';
 $string['errorfilenametoolong'] = 'Der Dateiname muss weniger als 255 Zeichen haben.';
@@ -192,8 +192,8 @@ $string['filealiasesrestorefailuresinfo'] = 'Aliases aus der Sicherungsdatei kon
 $string['filename'] = 'Dateiname';
 $string['filereferencesincluded'] = 'In der Sicherung sind Dateiverweise zu externen Inhalten enthalten. Diese Dateiverweise werden nicht funktionieren, wenn die Sicherung in einer anderen Website wiederhergestellt wird.';
 $string['filereferencesnotsamesite'] = 'Die Sicherung stammt von einer anderen Website. Dateiverweise können nicht wiederhergestellt werden.';
-$string['filereferencessamesite'] = 'Die Sicherung stammt von der gleichen Website. Dateiverweise können wiederhergestellt werden.';
-$string['generalactivities'] = 'Aktivitäten einbeziehen';
+$string['filereferencessamesite'] = 'Die Sicherung stammt von dieser Website. Die Dateiverweise können wiederhergestellt werden.';
+$string['generalactivities'] = 'Aktivitäten und Ressourcen einbeziehen';
 $string['generalanonymize'] = 'Informationen anonymisieren';
 $string['generalbackdefaults'] = 'Einstellungen für die Sicherung';
 $string['generalbadges'] = 'Badges einbeziehen';
@@ -267,14 +267,14 @@ $string['pendingasyncerror'] = 'Für diese Ressource anstehende Sicherung';
 $string['preparingdata'] = 'Daten werden vorbereitet';
 $string['preparingui'] = 'Übersicht wird vorbereitet';
 $string['previousstage'] = 'Zurück';
+$string['privacy:metadata:backup:detailsofarchive'] = 'Das Archiv kannn verschiedene Nutzerdaten aus einem Kurs enthalten, z.B. Bewertungen, Einschreibungen und Aktivitätsdaten';
+$string['privacy:metadata:backup:externalpurpose'] = 'Der Zweck dieses Archives ist es, Informationen zu speichern, die evtl. später wiederhergestellt werden können.';
 $string['privacy:metadata:backup_controllers'] = 'Liste der Backup-Operationen';
 $string['privacy:metadata:backup_controllers:itemid'] = 'ID des Kurses';
 $string['privacy:metadata:backup_controllers:operation'] = 'Ausgeführte Operation, z.B. Wiederherstellen';
-$string['privacy:metadata:backup_controllers:timecreated'] = 'Datum der Erstellung der Aktion';
-$string['privacy:metadata:backup_controllers:timemodified'] = 'Das Datum, zu dem die Aktion bearbeitet wurde';
+$string['privacy:metadata:backup_controllers:timecreated'] = 'Zeit, zu der die Aktion erstellt wurde';
+$string['privacy:metadata:backup_controllers:timemodified'] = 'Zeit, zu der die Aktion bearbeitet wurde';
 $string['privacy:metadata:backup_controllers:type'] = 'Itemtyp der bearbeitet wurde, z.B. Aktivität';
-$string['privacy:metadata:backup:detailsofarchive'] = 'Das Archiv kannn verschiedene Nutzerdaten aus einem Kurs enthalten, z.B. Bewertungen, Einschreibungen und Aktivitätsdaten';
-$string['privacy:metadata:backup:externalpurpose'] = 'Der Zweck dieses Archives ist es, Informationen zu speichern, die evtl. später wiederhergestellt werden können.';
 $string['qcategory2coursefallback'] = 'Die Fragenkategorie "{$a->name}" in der Sicherungsdatei ist ursprünglich eine System- bzw. Kurskategorie. Bei der Wiederherstellung wird sie im Kurskontext erstellt.';
 $string['qcategorycannotberestored'] = 'Die Fragenkategorie "{$a->name}" kann bei der Wiederherstellung nicht erstellt werden';
 $string['question2coursefallback'] = 'Die Fragenkategorie "{$a->name}" in der Sicherungsdatei ist ursprünglich eine System- bzw. Kurskategorie. Bei der Wiederherstellung wird sie im Kurskontext erstellt.';
@@ -318,7 +318,7 @@ $string['restoretonewcourse'] = 'Als neuen Kurs wiederherstellen';
 $string['restoringcourse'] = 'Kurs wird wiederhergestellt';
 $string['restoringcourseshortname'] = 'Kurs wird wiederhergestellt';
 $string['rootenrolmanual'] = 'Wiederherstellen mit manueller Einschreibung';
-$string['rootsettingactivities'] = 'Aktivitäten einbeziehen';
+$string['rootsettingactivities'] = 'Aktivitäten und Ressourcen einbeziehen';
 $string['rootsettinganonymize'] = 'Nutzerinformationen anonymisieren';
 $string['rootsettingbadges'] = 'Badges einbeziehen';
 $string['rootsettingblocks'] = 'Blöcke einbeziehen';

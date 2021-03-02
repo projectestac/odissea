@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_mobile', language 'fr', version '3.8'.
  *
- * @package   tool_mobile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_mobile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['apppolicy'] = 'URL de la politique de l\'app';
 $string['apppolicy_help'] = 'L\'URL d\'une politique pour les utilisateurs de l\'app, qui est affichée sur la page À propos de l\'app. Si le champ est laissé vide, la politique de site sera utilisée.';
 $string['apprequired'] = 'Cette fonctionnalité n\'est disponible que lors de l\'accès au moyen de l\'app mobile ou de l\'app desktop.';
 $string['autologinkeygenerationlockout'] = 'La génération de clefs de connexion automatique est bloquée. Veuillez attendre 6 minutes entre les demandes.';
-$string['autologinnotallowedtoadmins'] = 'La connexion automatique n\'est pas permise pour les administrateurs du site';
+$string['autologinnotallowedtoadmins'] = 'La connexion automatique n\'est pas permise pour les administrateurs du site.';
 $string['cachedef_plugininfo'] = 'Ce cache enregistre la liste des plugins avec des fonctionnalités pour mobiles';
 $string['clickheretolaunchtheapp'] = 'Cliquez ici si l\'app ne s\'ouvre pas automatiquement.';
 $string['configmobilecssurl'] = 'Fichier CSS pour personnaliser l\'interface de votre app mobile.';
@@ -95,7 +95,7 @@ $string['mobileappenabled'] = 'L\'accès à ce site au moyen de l\'app mobile es
 $string['mobileauthentication'] = 'Authentification mobile';
 $string['mobilecssurl'] = 'CSS';
 $string['mobilefeatures'] = 'Fonctionnalités pour mobiles';
-$string['mobilenotificationsdisabledwarning'] = 'Les notifications mobiles ne sont pas activées. Elles devraient être activées dans les Réglages de notification.';
+$string['mobilenotificationsdisabledwarning'] = 'Les notifications mobiles ne sont pas activées. Elles doivent être activées dans les Réglages de notification.';
 $string['mobilesettings'] = 'Réglages pour mobiles';
 $string['moodleappsportalfeatureswarning'] = 'Certaines fonctionnalités peuvent être restreintes, selon votre abonnement à l\'app Moodle. Pour plus d\'information, visiter le <a href="{$a}" target="_blank">portail des apps Moodle</a>.';
 $string['oauth2identityproviders'] = 'Fournisseurs d\'identité OAuth 2';

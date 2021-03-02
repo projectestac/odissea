@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'course', language 'fr', version '3.8'.
  *
- * @package   course
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     course
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,11 +37,11 @@ $string['coursetoolong'] = 'Le cours est trop long';
 $string['customfield_islocked'] = 'Verrouillé';
 $string['customfield_islocked_help'] = 'Si le champ est verrouillé, seuls les gestionnaires avec la capacité « Modifier les champs verrouillés » (par défaut ceux ayant le rôle de gestionnaire) pourront le modifier dans le formulaire d\'édition du cours';
 $string['customfield_notvisible'] = 'Personne';
-$string['customfieldsettings'] = 'Réglages des champs personnalisés de cours communs';
 $string['customfield_visibility'] = 'Visible pour';
 $string['customfield_visibility_help'] = 'Ce réglage détermine qui peut voir le nom et la valeur du champ personnalisé dans la liste des cours ou dans le filtre des champs personnalisés disponibles du Tableau de bord.';
 $string['customfield_visibletoall'] = 'Tout le monde';
 $string['customfield_visibletoteachers'] = 'Enseignants';
+$string['customfieldsettings'] = 'Réglages des champs personnalisés de cours communs';
 $string['errorendbeforestart'] = 'La date de fin ({$a}) est antérieure à la date du début du cours.';
 $string['favourite'] = 'Cours marqué comme favori';
 $string['gradetopassnotset'] = 'Ce cours n\'a pas de note pour passer. Une telle note peut être indiquée dans l\'élément d\'évaluation du cours (configuration du carnet de notes).';
@@ -75,6 +75,15 @@ $string['target:coursedropout'] = 'Étudiants risquant de décrocher';
 $string['target:coursedropout_help'] = 'Cette cible décrit si un étudiant est considéré comme risquant de décrocher.';
 $string['target:coursegradetopass'] = 'Étudiants risquant de ne pas atteindre la note minimale pour passer le cours';
 $string['target:coursegradetopass_help'] = 'Cette cible décrit si un étudiant est considéré comme risquant de ne pas atteindre la note minimale pour passer le cours.';
+$string['target:noaccesssincecoursestart'] = 'Étudiants qui n\'ont pas encore accédé au cours';
+$string['target:noaccesssincecoursestart_help'] = 'Cette cible décrit les étudiant qui n\'ont pas encore accédé à un cours auxquels ils sont inscrits.';
+$string['target:noaccesssincecoursestartinfo'] = 'Les étudiants suivants sont inscrits dans un cours qui a commencé, mais ils n\'ont jamais accédé au cours.';
+$string['target:norecentaccesses'] = 'Étudiant qui n\'ont pas accédé récemment au cours';
+$string['target:norecentaccesses_help'] = 'Cette cible identifie les étudiants qui n\'ont pas accédé à un cours auxquels ils sont inscrits durant l\'intervalle fixé pour l\'analyse (par défaut, le mois passé).';
+$string['target:norecentaccessesinfo'] = 'Les étudiants suivants n\'ont pas accédé aux cours auxquels ils sont inscrits dans l\'intervalle d\'analyse fixé (par défaut le mois dernier).';
+$string['target:noteachingactivity'] = 'Cours risquant de ne pas avoir lieu';
+$string['target:noteachingactivity_help'] = 'Cette cible décrit si les cours devant commencer durant la semaine à venir ont des activités d\'enseignement.';
+$string['target:noteachingactivityinfo'] = 'Les cours suivants devant commencer les jours prochains risquent de ne pas pouvoir commencer parce qu\'ils n\'ont pas d\'enseignant ou d\'étudiant inscrits.';
 $string['targetlabelstudentcompetenciesno'] = 'Étudiant qui atteindra probablement les compétences attribuées à un cours';
 $string['targetlabelstudentcompetenciesyes'] = 'Étudiant qui n\'atteindra probablement pas les compétences attribuées à un cours';
 $string['targetlabelstudentcompletionno'] = 'Étudiant qui remplira probablement les conditions d\'achèvement du cours';
@@ -85,12 +94,3 @@ $string['targetlabelstudentgradetopassno'] = 'Étudiant qui atteindra probableme
 $string['targetlabelstudentgradetopassyes'] = 'Étudiant risquant de ne pas atteindre la note minimale pour passer le cours.';
 $string['targetlabelteachingno'] = 'Cours risquant de ne pas avoir lieu';
 $string['targetlabelteachingyes'] = 'Utilisateurs avec capacités d\'enseignement qui ont accès au cours';
-$string['target:noaccesssincecoursestart'] = 'Étudiants qui n\'ont pas encore accédé au cours';
-$string['target:noaccesssincecoursestart_help'] = 'Cette cible décrit les étudiant qui n\'ont pas encore accédé à un cours auxquels ils sont inscrits.';
-$string['target:noaccesssincecoursestartinfo'] = 'Les étudiants suivants sont inscrits dans un cours qui a commencé, mais ils n\'ont jamais accédé au cours.';
-$string['target:norecentaccesses'] = 'Étudiant qui n\'ont pas accédé récemment au cours';
-$string['target:norecentaccesses_help'] = 'Cette cible identifie les étudiants qui n\'ont pas accédé à un cours auxquels ils sont inscrits durant l\'intervalle fixé pour l\'analyse (par défaut, le mois passé).';
-$string['target:norecentaccessesinfo'] = 'Les étudiants suivants n\'ont pas accédé aux cours auxquels ils sont inscrits dans l\'intervalle d\'analyse fixé (par défaut le mois dernier).';
-$string['target:noteachingactivity'] = 'Cours risquant de ne pas avoir lieu';
-$string['target:noteachingactivity_help'] = 'Cette cible décrit si les cours devant commencer durant la semaine à venir ont des activités d\'enseignement.';
-$string['target:noteachingactivityinfo'] = 'Les cours suivants devant commencer les jours prochains risquent de ne pas pouvoir commencer parce qu\'ils n\'ont pas d\'enseignant ou d\'étudiant inscrits.';

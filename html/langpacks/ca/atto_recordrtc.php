@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_recordrtc', language 'ca', version '3.8'.
  *
- * @package   atto_recordrtc
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_recordrtc
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,7 @@ $string['attachrecording'] = 'Adjunta un enregistrament';
 $string['audioandvideo'] = 'Àudio i vídeo';
 $string['audiobitrate'] = 'Taxa de bits d\'àudio';
 $string['audiobitrate_desc'] = 'Qualitat de l\'enregistrament d\'àudio (com més alt és el número, millor qualitat)';
-$string['audiortc'] = 'Insereix un enregistrament d\'àudio';
+$string['audiortc'] = 'Enregistra àudio';
 $string['gumabort'] = 'Ha passat alguna cosa estranya que ha impedit l\'accés a la càmera o al micròfon.';
 $string['gumabort_title'] = 'Ha passat alguna cosa';
 $string['gumnotallowed'] = 'Cal que permeteu l\'accés a la càmera i/o al micròfon';
@@ -53,7 +53,7 @@ $string['insecurealert_title'] = 'Connexió no segura!';
 $string['nearingmaxsize'] = 'Heu adjuntat el nombre màxim d\'enregistraments';
 $string['nearingmaxsize_title'] = 'S\'ha aturat l\'enregistrament';
 $string['norecordingfound'] = 'Pareix que alguna cosa ha fallat, ja que no sembla que s\'hagi enregistrat res';
-$string['norecordingfound_title'] = 'No s\'ha trobat cap enregistrament';
+$string['norecordingfound_title'] = 'No s\'ha trobat l\'enregistrament';
 $string['nowebrtc'] = 'El vostre navegador és massa antic i no ofereix suport per a la tecnologia WebRTC. Utilitzeu un altre navegador (Opera, Chrome, Firefox...) o actualitzeu el vostre';
 $string['nowebrtc_title'] = 'No s\'admet la tecnologia WebRTC';
 $string['onlyaudio'] = 'Només àudio';
@@ -73,4 +73,4 @@ $string['uploadfailed404'] = 'Ha fallat la pujada: el fitxer és massa gran';
 $string['uploadprogress'] = 'completat';
 $string['videobitrate'] = 'Taxa de bits del vídeo';
 $string['videobitrate_desc'] = 'Qualitat de l\'enregistrament de vídeo (com més alt és el número, millor qualitat)';
-$string['videortc'] = 'Insereix l\'enregistrament de vídeo';
+$string['videortc'] = 'Enregistra vídeo';

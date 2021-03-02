@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'mnet', language 'de', version '3.8'.
  *
- * @package   mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (selbstsigniert)';
+$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (signiert)';
+$string['RPC_HTTP_PLAINTEXT'] = 'HTTP unverschlüsselt';
+$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (selbstsigniert)';
+$string['RPC_HTTP_VERIFIED'] = 'HTTP (signiert)';
 $string['aboutyourhost'] = 'Über Ihren Server';
 $string['accesslevel'] = 'Access-Level';
 $string['addhost'] = 'Host hinzufügen';
@@ -45,8 +50,8 @@ $string['couldnotgetcert'] = 'Kein Zertifikat gefunden bei:<br />{$a}. <br />Der
 $string['couldnotmatchcert'] = 'Das Zertifikat stimmt nicht mit dem aktuell auf dem Webserver veröffentlichter überein.';
 $string['courses'] = 'Kurse';
 $string['courseson'] = 'Kurse auf';
-$string['currentkey'] = 'Aktueller Public Key';
 $string['current_transport'] = 'Aktuelle Verbindung';
+$string['currentkey'] = 'Aktueller Public Key';
 $string['databaseerror'] = 'Die Details konnten nicht in die Datenbank eingetragen werden.';
 $string['deleteaserver'] = 'Host löschen';
 $string['deletedhostinfo'] = 'Der Host wurde gelöscht. Um den Vorgang rückgängig zu machen, setzen Sie den Löschstatus auf "Nein".';
@@ -64,9 +69,9 @@ Das Update sollte dennoch erfolgreich abgeschlossen worden sein. Klicken Sie auf
 $string['enabled_for_all'] = 'Dieser Dienst wurde für alle Hosts aktiviert.';
 $string['enterausername'] = 'Bitte geben Sie einen Anmeldenamen ein (oder eine kommagetrennte Liste von Anmeldenamen)';
 $string['error7020'] = 'Dieser Fehler tritt normalerweise auf, wenn die Remote-Server einen Dateneintrag für wwwroot falsch erzeugt hat, z.B. http://domain.de statt http://www.domain.de. Sie sollten den/die Administrator/in der Remote-Server über die richtige Einstellung für wwwroot  informieren (so wie in config.php angegeben), damit der dortige Dateneintrag für Ihren Server korrigiert werden kann.';
-$string['error7022'] = 'Die von Ihnen an den Remote-Server übermittelte Nachricht war richtig verschlüsselt, aber nicht signiert. Dies ist ziemlich seltsam! Sie sollten diesen Fehler bei seinem Auftreten unbedingt melden und dabei die beteiligten Moodle-Versionen angeben.';
+$string['error7022'] = 'Die von Ihnen an den Remote-Server gesendete Nachricht war richtig verschlüsselt, aber nicht signiert. Dies ist ziemlich seltsam! Sie sollten diesen Fehler bei seinem Auftreten unbedingt melden und dabei die beteiligten Moodle-Versionen angeben.';
 $string['error7023'] = 'Der Remote-Server ist bei dem Versuch gescheitert, Ihre Nachricht mit den für Ihre Site verfügbaren Schlüssel zu entschlüsseln. Eventuell sind Sie in der Lage, dieses Problem durch ein manuelles Eingreifen (re-keying) zu beheben. Dieses Problem ist sehr unwahrscheinlich, außer Sie hatten mehrere Monate keinen Kontakt zum Remote-Server.';
-$string['error7024'] = 'Sie haben eine unverschlüsselte Nachricht an den Remote-Server versandt, aber dieser akzeptiert keine unverschlüsselte Kommunikation von Ihrer Site. Dies ist ziemlich seltsam! Sie sollten diesen Fehler bei seinem Auftreten unbedingt melden und dabei die beteiligten Moodle-Versionen angeben.';
+$string['error7024'] = 'Sie haben eine unverschlüsselte Nachricht an den Remote-Server gesendet, aber dieser akzeptiert keine unverschlüsselte Kommunikation von Ihrer Website. Dies ist ziemlich seltsam! Sie sollten diesen Fehler bei seinem Auftreten unbedingt melden und dabei die beteiligten Moodle-Versionen angeben.';
 $string['error7026'] = 'Der Schlüssel, mit dem Ihre Nachricht signiert wurde, unterscheidet sich vom Schlüssel, den der Remote-Server für Ihre Site gespeichert hat. Zusätzlich ist der Remote-Server bei dem Versuch gescheitert, Ihren aktuellen Schlüssel automatisch zu holen. Bitte greifen Sie manuell ein (re-key) und versuchen Sie es noch einmal.';
 $string['error709'] = 'Der Remote-Server ist bei dem Versuch gescheitert, einen SSL-Schlüssel von Ihnen zu beziehen.';
 $string['eventaccesscontrolcreated'] = 'Zugangssteuerung angelegt';
@@ -76,44 +81,44 @@ $string['expires'] = 'Gültig bis';
 $string['expireyourkey'] = 'PublicKey löschen';
 $string['expireyourkeyexplain'] = 'Moodle wechselt Ihren PublicKey automatisch alle 28 Tage (Standard). Sie haben aber jederzeit die Möglichkeit, den PublicKey  <em>manuell</em> zu löschen. Dies ist nur dann sinnvoll, wenn Sie fürchten, Ihr PublicKey könnte gefälscht sein. Ein Ersatz wird dann umgehend automatisch erstellt.<br />Das Löschen des PublicKey macht es unmöglich, dass andere Moodle mit Ihrem Moodle kommunizieren können, solange bis Sie Ihren neuen PublicKey manuell an die anderen Administrator/innen übermittelt haben.';
 $string['exportfields'] = 'Felder zum Export';
-$string['failedaclwrite'] = 'Fehler beim Schreiben in die MNET-Access-Kontrollliste für Nutzer \'{$a}\'';
+$string['failedaclwrite'] = 'Fehler beim Schreiben in die MNet-Access-Kontrollliste für Nutzer/in \'{$a}\'';
 $string['findlogin'] = 'Login suchen';
 $string['forbidden-function'] = 'Diese Funktion wurde für RPC nicht freigegeben.';
 $string['forbidden-transport'] = 'Die gewählte Übertragungsmethode ist nicht erlaubt.';
 $string['forcesavechanges'] = 'Zum Speichern der Änderungen auffordern';
-$string['helpnetworksettings'] = 'Moodle-übergreifende Kommunikation konfigurieren';
+$string['helpnetworksettings'] = 'MNet-Kommunikation konfigurieren';
 $string['hidelocal'] = 'Lokale Nutzer/innen verbergen';
 $string['hideremote'] = 'Entfernte Nutzer/innen verbergen';
 $string['host'] = 'Rechner';
 $string['hostcoursenotfound'] = 'Rechner oder Kurs nicht gefunden';
 $string['hostdeleted'] = 'Rechner entfernt';
 $string['hostexists'] = 'Ein Datensatz mit dieser Server-URL ist bereits vorhanden und wurde eventuell gelöscht. <a href="{$a}">Datensatz bearbeiten</a>.';
-$string['hostlist'] = 'Liste von verbundenen Servern';
+$string['hostlist'] = 'Liste von vernetzten Servern';
 $string['hostname'] = 'Server-URL';
 $string['hostnamehelp'] = 'Vollständiger Domainname des Remote-Rechners, z.B. www.beispiel.de';
-$string['hostnotconfiguredforsso'] = 'Dieser Moodle-Remote-Knoten ist nicht für ein Remote-Login konfiguriert.';
-$string['hostsettings'] = 'Rechnereinstellungen';
-$string['http_self_signed_help'] = 'Erlauben Sie Verbindungen, die auf dem Remote-Rechner ein selbstsigniertes DIY-SSL-Zertifikat benutzen.';
+$string['hostnotconfiguredforsso'] = 'Dieser Server ist nicht für ein Remote-Login konfiguriert.';
+$string['hostsettings'] = 'Servereinstellungen';
+$string['http_self_signed_help'] = 'Erlauben Sie Verbindungen, die auf dem Remote-Server ein selbstsigniertes DIY-SSL-Zertifikat benutzen.';
+$string['http_verified_help'] = 'Erlauben Sie Verbindungen über http (nicht https), die auf dem Remote-Server ein geprüftes SSL-Zertifikat in PHP benutzen.';
 $string['https_self_signed_help'] = 'Erlauben Sie Verbindungen über http, die auf dem Remote-Rechner ein selbstsigniertes DIY-SSL-Zertifikat in PHP benutzen.';
-$string['https_verified_help'] = 'Erlauben Sie Verbindungen, die auf dem Remote-Rechner ein geprüftes SSL-Zertifikat benutzen.';
-$string['http_verified_help'] = 'Erlauben Sie Verbindungen über http (nicht https), die auf dem Remote-Rechner ein geprüftes SSL-Zertifikat in PHP benutzen.';
+$string['https_verified_help'] = 'Erlauben Sie Verbindungen, die auf dem Remote-Server ein geprüftes SSL-Zertifikat benutzen.';
 $string['id'] = 'ID';
 $string['idhelp'] = 'Dieser Wert wurde automatisch vergeben und kann nicht geändert werden.';
 $string['importfields'] = 'Felder zum Import';
 $string['inspect'] = 'Prüfen';
 $string['installnosuchfunction'] = 'Programmierfehler! Beim Versuch, die MNET-XMLRPC-Funktion \'{$a->method}\' aus der Datei \'{$a->file}\' zu installieren, wurde die Funktion nicht gefunden!';
 $string['installnosuchmethod'] = 'Programmierfehler! Beim Versuch, die MNET-XMLRPC-Methode \'{$a->method}\' in die Klasse \'{$a->class}\' zu installieren, wurde die Methode nicht gefunden!';
-$string['installreflectionclasserror'] = 'Programmierfehler! Die MNET-Selbstprüfung für die Methode \'{$a->method}\' in der Klasse \'{$a->class}\' ist fehlgeschlagen. Die Fehlermeldung lautet: \'{$a->error}\'.';
-$string['installreflectionfunctionerror'] = 'Programmierfehler! Die MNET-Selbstprüfung für die Funktion \'{$a->method}\' in der Datei \'{$a->file}\' ist fehlgeschlagen. Die Fehlermeldung lautet: \'{$a->error}\'.';
+$string['installreflectionclasserror'] = 'Programmierfehler! Die MNET-Selbstprüfung für die Methode \'{$a->method}\' in der Klasse \'{$a->class}\' ist fehlgeschlagen. Die Fehlermeldung lautet: \'{$a->error}\'';
+$string['installreflectionfunctionerror'] = 'Programmierfehler! Die MNET-Selbstprüfung für die Funktion \'{$a->method}\' in der Datei \'{$a->file}\' ist fehlgeschlagen. Die Fehlermeldung lautet: \'{$a->error}\'';
 $string['invalidaccessparam'] = 'Ungültiger Access-Parameter';
 $string['invalidactionparam'] = 'Ungültiger Ablaufparameter';
 $string['invalidhost'] = 'Sie müssen eine gültige Rechner-Kennung eingeben';
 $string['invalidpubkey'] = 'Der Schlüssel ist kein gültiger SSL-Schlüssel ({$a})';
 $string['invalidurl'] = 'Ungültiger URL-Parameter';
 $string['ipaddress'] = 'IP-Adresse';
-$string['is_in_range'] = 'Die IP-Adresse  <code>{$a}</code>  gehört zu einem vertrauenswürdigen Rechner.';
+$string['is_in_range'] = 'Die IP-Adresse <code>{$a}</code> gehört zu einem vertrauenswürdigen Server.';
 $string['ispublished'] = '{$a} stellt diesen Dienst für Sie bereit.';
-$string['issubscribed'] = 'Moodle {$a} abonniert diesen Dienst von Ihrem Server';
+$string['issubscribed'] = '{$a} abonniert diesen Dienst von Ihrem Server';
 $string['keydeleted'] = 'Ihr Schlüssel wurde erfolgreich gelöscht und neu gesetzt.';
 $string['keymismatch'] = 'Der von Ihnen für diesen Rechner vorgehaltene PublicKey unterscheidet sich vom aktuell veröffentlichten PublicKey. Der veröffentlichte Key lautet:';
 $string['last_connect_time'] = 'Letzte Verbindung';
@@ -121,7 +126,7 @@ $string['last_connect_time_help'] = 'Zeitpunkt, zu dem Sie das letzte Mal mit di
 $string['last_transport_help'] = 'Übertragungsprotokoll, das Sie für die vorherige Verbindung benutzt hatten.';
 $string['leavedefault'] = 'Grundeinstellungen benutzen';
 $string['listservices'] = 'Dienste auflisten';
-$string['loginlinkmnetuser'] = '<br/>Falls Sie ein Remote-Nutzer im  Moodle-Netzwerk sind und hier <a href="{$a}">Ihre E-Mail-Adresse bestätigen</a>, können Sie zu Ihrer Login-Seite weitergeleitet werden.<br />';
+$string['loginlinkmnetuser'] = '<br />Falls Sie ein MNet-Remote-Nutzer sind und hier <a href="{$a}">Ihre E-Mail-Adresse bestätigen</a>, können Sie zu Ihrer Login-Seite weitergeleitet werden.<br />';
 $string['logs'] = 'Logdaten';
 $string['managemnetpeers'] = 'Peers verwalten';
 $string['method'] = 'Methode';
@@ -131,6 +136,7 @@ $string['methodsavailableonhostinservice'] = 'Verfügbare Methoden für  {$a->se
 $string['methodsignature'] = 'Signatur für Methode {$a}';
 $string['mnet'] = 'MNet';
 $string['mnet_concatenate_strings'] = '(Bis zu) 3 Textteile verbinden und als Ergebnis zurückliefern';
+$string['mnet_session_prohibited'] = 'Teilnehmer/innen Ihres Moodle-Servers sind aktuell nicht für einen Wechsel auf {$a} zugelassen.';
 $string['mnetdisabled'] = 'MNet ist <strong>ausgeschaltet</strong>.';
 $string['mnetidprovider'] = 'MNet ID Provider';
 $string['mnetidproviderdesc'] = 'Falls Sie die richtige, zum eben eingegebenen Anmeldenamen passende E-Mail-Adresse übermitteln, könnten Sie umgehend einen Link zum Einloggen erhalten.';
@@ -138,9 +144,8 @@ $string['mnetidprovidermsg'] = 'Das Login bei Ihrem Provider {$a} sollte möglic
 $string['mnetidprovidernotfound'] = 'Weitere Informationen konnten nicht gefunden werden.';
 $string['mnetpeers'] = 'Peers';
 $string['mnetservices'] = 'Dienste';
-$string['mnet_session_prohibited'] = 'Teilnehmer/innen Ihres Moodle-Servers sind aktuell nicht für einen Wechsel auf {$a} zugelassen.';
 $string['mnetsettings'] = 'MNet-Einstellungen';
-$string['moodle_home_help'] = 'Der Pfad zur Moodle-Startseite aud dem Remote-Rechner, z.B. /moodle/';
+$string['moodle_home_help'] = 'Pfad zur Moodle-Startseite auf dem Remote-Rechner, z.B. /moodle/';
 $string['name'] = 'Name';
 $string['net'] = 'Netzwerk';
 $string['networksettings'] = 'Netzwerk-Einstellungen';
@@ -149,9 +154,9 @@ $string['noaclentries'] = 'Keine Einträge in der SSO-Access-Kontrollliste';
 $string['noaddressforhost'] = 'Die Server-URL konnte nicht aufgelöst werden: {$a}';
 $string['nocurl'] = 'PHP-Library cURL wurde nicht installiert';
 $string['nolocaluser'] = 'Für diesen Remote-Nutzer ist kein lokaler Datensatz vorhanden. Ein Datensatz konnte auch nicht erzeugt werden, weil dieser Rechner Nutzerkonten nicht automatisch anlegt. Bitte melden Sie sich bei Ihrer/m Administrator/in!';
-$string['nomodifyacl'] = 'Sie sind nicht berechtigt, die MNET-Access-Kontrollliste zu verändern.';
+$string['nomodifyacl'] = 'Sie sind nicht berechtigt, die MNet-Access-Kontrollliste zu verändern.';
 $string['nonmatchingcert'] = 'Der Inhalt des Zertifikats: <br /><em>{$a->subject}</em><br />Passt nicht zu dem Host von dem es stammt:<br /><em>{$a->host}</em>.';
-$string['nopubkey'] = 'Bei der Abfrage des PublicKey ist ein Problem aufgetreten. <br />Vielleicht erlaubt der Rechner kein Moodle-Netzwerk oder der PublicKey ist ungültig.';
+$string['nopubkey'] = 'Bei der Abfrage des PublicKey ist ein Problem aufgetreten. <br />Vielleicht erlaubt der Server kein MNet oder der PublicKey ist ungültig.';
 $string['nosite'] = 'Es wurde kein entsprechender Kurs gefunden';
 $string['nosuchfile'] = 'Die Funktion {$a} gibt es nicht.';
 $string['nosuchfunction'] = 'Es war nicht möglich, die Funktion zu finden. Eventuell ist die Funktion für RPC gesperrt.';
@@ -160,11 +165,11 @@ $string['nosuchpublickey'] = 'Es war nicht möglich, einen PublicKey zur Signatu
 $string['nosuchservice'] = 'Auf diesem Rechner läuft kein RPC-Dienst.';
 $string['nosuchtransport'] = 'Kein Übertragungsprotokoll mit dieser ID';
 $string['notBASE64'] = 'Diese Textpassage ist nicht im Base64-Encoded-Format. Sie kann kein gültiger Schlüssel sein.';
-$string['notenoughidpinfo'] = 'Ihr Server (identity provider) liefert nicht genügend Informationen, um Ihr Nutzerkonto lokal zu erstellen oder zu aktualisieren.';
-$string['not_in_range'] = 'Die IP-Adresse  <code>{$a}</code>  gehört nicht zu einem vertrauenswürdigen Rechner.';
-$string['notinxmlrpcserver'] = 'Der Verbindungsversuch zum MNET-Remote-Client ist während einer XMLRPC-Server-Ausführung nicht möglich';
-$string['notmoodleapplication'] = 'Achtung: Dies ist kein Moodle-Programm, weswegen einige der Prüfungen nicht ordentlich ablaufen könnten.';
 $string['notPEM'] = 'Dieser Schlüssel ist nicht im PEM-Format. Er wird nicht funktionieren.';
+$string['not_in_range'] = 'Die IP-Adresse <code>{$a}</code> gehört nicht zu einem vertrauenswürdigen Server.';
+$string['notenoughidpinfo'] = 'Ihr Server (identity provider) liefert nicht genügend Informationen, um Ihr Nutzerkonto lokal zu erstellen oder zu aktualisieren.';
+$string['notinxmlrpcserver'] = 'Der Verbindungsversuch zum MNet-Remote-Client ist während einer XMLRPC-Server-Ausführung nicht möglich';
+$string['notmoodleapplication'] = 'Achtung: Dies ist kein Moodle-Programm, weswegen einige der Prüfungen nicht ordentlich ablaufen könnten.';
 $string['notpermittedtojump'] = 'Sie haben nicht das Recht, eine Remote-Session von diesem Server aus zu beginnen.';
 $string['notpermittedtojumpas'] = 'Sie können keine Remote Session starten, solange Sie mit einem fremden Nutzerkonto angemeldet sind.';
 $string['notpermittedtoland'] = 'Sie haben nicht das Recht, eine Remote-Session zu beginnen.';
@@ -191,24 +196,19 @@ $string['receivedwarnings'] = 'Folgende Warnungen wurden empfangen';
 $string['recordnoexists'] = 'Datensatz nicht vorhanden';
 $string['reenableserver'] = 'Nein - wählen Sie diese Option, um diesen Server zu reaktivieren.';
 $string['registerallhosts'] = 'Alle Hosts registrieren (ungeordnet)';
-$string['registerallhostsexplain'] = 'Diese Funktion ermöglicht die automatische Registrierung aller Hosts, die eine Verbindung herstellen wollen. Das bedeutet, es wird ein Datensatz in der Hostliste angelegt und der PublicKey für alle anfragenden Systeme zur Verfügung gestellt. <br />Weiter unten können Sie Dienste für "Alle Hosts" konfigurieren und Dienste aktivieren, die unterschiedslos allen bereitgestellt werden.';
+$string['registerallhostsexplain'] = 'Diese Funktion ermöglicht die automatische Registrierung aller Server, die eine Verbindung herstellen wollen. Das bedeutet, es wird ein Datensatz in der Hostliste angelegt und der PublicKey für alle anfragenden Systeme zur Verfügung gestellt. <br />Weiter unten können Sie Dienste für "Alle Hosts" konfigurieren und Dienste aktivieren, die unterschiedslos allen bereitgestellt werden.';
 $string['registerhostsoff'] = 'Registrierung aller Server: <b>aus</b>';
 $string['registerhostson'] = 'Registrierung aller Server: <b>ein</b>';
 $string['remotecourses'] = 'Remote-Kurse';
-$string['remotehost'] = 'Remote-Zugang';
+$string['remotehost'] = 'Remote-Server';
 $string['remotehosts'] = 'Remote-Rechner';
 $string['remoteuser'] = 'Remote-Nutzer/in {$a->remotetype}';
 $string['remoteuserinfo'] = 'Nutzerprofil von <a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = 'Netzwerk benötigt die OpenSSL-Erweiterung';
 $string['restore'] = 'Wiederherstellen';
 $string['returnvalue'] = 'Rückgabewert';
-$string['reviewhostdetails'] = 'Rechner-Details prüfen';
-$string['reviewhostservices'] = 'Rechner-Dienste prüfen';
-$string['RPC_HTTP_PLAINTEXT'] = 'HTTP unverschlüsselt';
-$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (selbstsigniert)';
-$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (selbstsigniert)';
-$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (signiert)';
-$string['RPC_HTTP_VERIFIED'] = 'HTTP (signiert)';
+$string['reviewhostdetails'] = 'Server-Details prüfen';
+$string['reviewhostservices'] = 'Server-Dienste prüfen';
 $string['selectaccesslevel'] = 'Wählen Sie eine Zugriffsart';
 $string['selectahost'] = 'Bitte wählen Sie einen Remote-Rechner.';
 $string['service'] = 'Dienst-Name';
@@ -219,8 +219,8 @@ $string['serviceswesubscribeto'] = 'Von uns abonnierte Dienste von {$a}';
 $string['settings'] = 'Einstellungen';
 $string['showlocal'] = 'Lokale Nutzer anzeigen';
 $string['showremote'] = 'Remote-Nutzer anzeigen';
-$string['ssl_acl_allow'] = 'SSO ACL: Nutzer {$a->user} von {$a->host} zulassen';
-$string['ssl_acl_deny'] = 'SSO ACL: Nutzer {$a->user} von {$a->host} ablehnen';
+$string['ssl_acl_allow'] = 'SSO ACL: Nutzer/in {$a->user} von {$a->host} zulassen';
+$string['ssl_acl_deny'] = 'SSO ACL: Nutzer/in {$a->user} von {$a->host} zurückweisen';
 $string['sslverification'] = 'SSL-Verifizierung';
 $string['sslverification_help'] = 'Diese Option ermöglicht die Einstellung der Sicherheitsstufe für die eine Peer-Verbindung über HTTPS.
 
@@ -229,7 +229,7 @@ $string['sslverification_help'] = 'Diese Option ermöglicht die Einstellung der 
 * Host und Peer überprüfen (empfohlen): Domäne und Aussteller des SSL-Zertifikats werden überprüft';
 $string['ssoaccesscontrol'] = 'SSO-Zugangssteuerung';
 $string['ssoacldescr'] = 'Diese Seite regelt die Erlaubnis/das Verbot des Zugriffs spezifischer Nutzer von anderen Moodle-Netzwerk Hosts. Diese ist hilfreich wenn SSO Services für externe Nutzer angeboten wird. Zur Kontrolle der <em>lokalen</em> Nutzerberechtigungen für andere Moodle-Netzwerk Hosts gewähren Sie den Zugriff durch die <em>mnetlogintoremote</em> Berechtigung.';
-$string['ssoaclneeds'] = 'Damit diese Funktion arbeitet muss das Moodle-Netzwerk aktiviert, das Moodle-Netzwerk Authentifizierungs-Plugin mit automatischer Nutzeraktivierung aktiviert sein.';
+$string['ssoaclneeds'] = 'Damit diese Funktionalität arbeitet, muss das Netzwerk MNet aktiviert sein, außerdem das Plugin MNet-Authentifizierung.';
 $string['strict'] = 'Streng';
 $string['subscribe'] = 'Abonnieren';
 $string['system'] = 'System';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'currencies', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'currencies', language 'ar', version '3.8'.
  *
- * @package   currencies
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     currencies
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['ARS'] = 'ARS - البيزو الأرجنتيني';
 $string['AUD'] = 'دولار استرالي';
 $string['AWG'] = 'فلورن أريوباني';
 $string['AZN'] = 'AZN - المانات الأذربيجاني';
-$string['BAM'] = 'مارك البوسنة و الهرسك';
+$string['BAM'] = 'مارك البوسنة والهرسك';
 $string['BBD'] = 'دولار بربادوسي';
 $string['BDT'] = 'تيكا بنغلاديشيه';
 $string['BGN'] = 'ليف بلغاري';
@@ -127,7 +127,7 @@ $string['MYR'] = 'رنقت ماليزية';
 $string['MZN'] = 'MZN - المتكال الموزمبيقي';
 $string['NAD'] = 'الدولار الناميبي';
 $string['NGN'] = 'نيرة نيجيريا';
-$string['NIO'] = 'كوردوبا نيكاراغوي';
+$string['NIO'] = 'كوردوبا نيكاراغوي أورو';
 $string['NOK'] = 'كرونه نرويجية';
 $string['NPR'] = 'روبية نيابلية';
 $string['NZD'] = 'دولار نيوزلندي';
@@ -138,7 +138,7 @@ $string['PGK'] = 'كينا بابوا غينيا الجديدة';
 $string['PHP'] = 'بيزو فلبيني';
 $string['PKR'] = 'روبية باكستانية';
 $string['PLN'] = 'زلوتي بولندي';
-$string['PYG'] = 'غواراني باراغواي';
+$string['PYG'] = 'غواراني باراغواياني';
 $string['QAR'] = 'ريال قطري';
 $string['RON'] = 'ليو روماني';
 $string['RSD'] = 'الدينار الصربي';

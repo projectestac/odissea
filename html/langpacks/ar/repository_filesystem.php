@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_filesystem', language 'ar', version '3.8'.
  *
- * @package   repository_filesystem
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_filesystem
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,7 +29,7 @@ $string['blockedpath'] = 'مسار الجذر المحظور';
 $string['configplugin'] = 'تهيئة مستودع نظام الملفات';
 $string['crontask'] = 'المعالجة الخلفية لمستودع نظام الملفات';
 $string['donotusesysdir'] = 'لا تستعمل مجلد النظام بمثابة مستودع، بضمنه';
-$string['enablecourseinstances'] = 'إسمح للمشرفين بإضافة عينة مستودع نظام الملفات إلى المساق (قابل للتهيئة من قبل المشرفين حصراً)';
+$string['enablecourseinstances'] = 'إسمح للمشرفين بإضافة عينة مستودع نظام الملفات إلى المقرر الدراسي (قابل للتهيئة من قبل المشرفين حصراً)';
 $string['enableuserinstances'] = 'إسمح للمشرفين بإضافة عينة مستودع نظام الملفات للاستعمال الشخصي (قابل للتهيئة من قبل المشرفين حصراً)';
 $string['filesystem:view'] = 'معاينة مستودع نظام الملفات';
 $string['information'] = 'هذه المجلدات تقع ضمن المجلد <b>{$a}</b>.';

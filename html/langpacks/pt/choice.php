@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'pt', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,13 +34,15 @@ $string['calendarend'] = 'Fecha \'{$a}\'';
 $string['calendarstart'] = 'Abre \'{$a}\'';
 $string['cannotsubmit'] = 'Desculpe, surgiu um problema ao submeter a sua escolha. Por favor, tente novamente.';
 $string['choice'] = 'Opção de resposta';
-$string['choiceactivityname'] = 'Sondagem: {$a}';
 $string['choice:addinstance'] = 'Adicionar nova sondagem';
 $string['choice:choose'] = 'Responder';
-$string['choiceclose'] = 'Permitir respostas até';
-$string['choicecloseson'] = 'A sondagem encerra em {$a}';
 $string['choice:deleteresponses'] = 'Modificar e apagar respostas';
 $string['choice:downloadresponses'] = 'Descarregar respostas';
+$string['choice:readresponses'] = 'Ver respostas';
+$string['choice:view'] = 'Ver atividade Sondagem';
+$string['choiceactivityname'] = 'Sondagem: {$a}';
+$string['choiceclose'] = 'Permitir respostas até';
+$string['choicecloseson'] = 'A sondagem encerra em {$a}';
 $string['choicefull'] = 'Uma, ou mais, das opções selecionadas já não estão disponíveis pois atingiram o limite. A sua resposta não foi guardada. Por favor, faça outra seleção.';
 $string['choicename'] = 'Designação';
 $string['choiceopen'] = 'Permitir respostas a partir de';
@@ -48,10 +50,8 @@ $string['choiceoptions'] = 'Opções de resposta';
 $string['choiceoptions_help'] = 'Especifique as opções de resposta que os participantes podem escolher.
 
 Pode preencher o número de opções que pretender, sendo que as que deixar em branco não serão apresentadas. Se necessitar mais do que 8 opções, clique no botão "Adicionar 3 campo(s) ao formulário".';
-$string['choice:readresponses'] = 'Ver respostas';
 $string['choicesaved'] = 'A sua resposta foi guardada';
 $string['choicetext'] = 'Questão da sondagem';
-$string['choice:view'] = 'Ver atividade Sondagem';
 $string['chooseaction'] = 'Selecione uma ação...';
 $string['chooseoption'] = 'Escolha: {$a}';
 $string['closebeforeopen'] = 'Especificou uma data de fecho anterior à data de abertura.';
@@ -72,13 +72,13 @@ $string['full'] = 'Completa';
 $string['havetologin'] = 'Tem que estar autenticado antes de submeter a sua resposta';
 $string['includeinactive'] = 'Inclui respostas de utilizadores inativos e/ou suspensos';
 $string['indicator:cognitivedepth'] = 'Compreensão da Sondagem';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Sondagem.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão da Sondagem';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Sondagem durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido, Visualizado feedback)';
-$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Sondagem.';
 $string['indicator:socialbreadth'] = 'Socialização da Sondagem';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Sondagem.';
 $string['indicator:socialbreadthdef'] = 'Socialização da Sondagem';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Sondagem durante esse intervalo de análise (Níveis = Sem participação, Participante individual, Participante com outros)';
-$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Sondagem.';
 $string['limit'] = 'Limite máximo de respostas';
 $string['limitanswers'] = 'Limitar o número de respostas permitidas';
 $string['limitanswers_help'] = 'Esta opção permite limitar o número máximo de participantes que podem escolher cada opção de resposta da sondagem. Uma vez definido o limite máximo de escolhas, quando o mesmo for alcançado numa opção de escolha, mais ninguém poderá escolher essa opção.

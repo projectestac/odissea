@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,26 +12,27 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_description', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_description', language 'ru', version '3.8'.
  *
- * @package   qtype_description
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_description
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['informationtext'] = 'Информационный текст';
 $string['pluginname'] = 'Описание';
-$string['pluginnameadding'] = 'Добавление описания';
-$string['pluginnameediting'] = 'Редактирование «Описания»';
 $string['pluginname_help'] = 'Тип вопроса Описание на самом деле вопросом не является.
 Данный вопрос позволяет отображать некоторый текст, не требующий никаких ответов, подобно Пояснению на странице курса.
 
 Текст отображается и при прохождении теста, и на странице просмотра. Может использоваться общий отзыв, который  отображается только на странице просмотра. ';
+$string['pluginnameadding'] = 'Добавление описания';
+$string['pluginnameediting'] = 'Редактирование «Описания»';
 $string['pluginnamesummary'] = 'Это на самом деле не вопрос.
 Используется для добавления инструкций, рубрик или другого содержимого в тесте. Подобен ресурсу «Пояснение» на странице курса.';
 $string['privacy:metadata'] = 'Плагин «Тип вопроса Описание» не хранит никаких персональных данных.';

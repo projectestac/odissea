@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_flatfile', language 'pt', version '3.8'.
  *
- * @package   enrol_flatfile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_flatfile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,10 +30,10 @@ $string['expiredaction'] = 'Ação de expiração da inscrição';
 $string['expiredaction_help'] = 'Selecione a ação a ser executada quando a inscrição do utilizador expira. Por favor, note que alguns dados e configurações do utilizador são removidos da disciplina durante o processo de desinscrição.';
 $string['filelockedmail'] = 'O script cron não conseguiu apagar do servidor o ficheiro de texto ({$a}) que está a ser utilizado na gestão de inscrições. O problema deverá estar relacionado com as permissões desse ficheiro. Enquanto esta questão não for resolvida, o ficheiro será processado consecutivamente por não ter sido removido durante o processamento.';
 $string['filelockedmailsubject'] = 'Erro importante: Ficheiro de inscrições';
-$string['flatfileenrolments'] = 'Inscrições Ficheiro de texto (CSV)';
 $string['flatfile:manage'] = 'Gerir inscrições do utilizador manualmente';
-$string['flatfilesync'] = 'Sincronização de inscrições com ficheiro Flat';
 $string['flatfile:unenrol'] = 'Desinscrever utilizadores da disciplina manualmente.';
+$string['flatfileenrolments'] = 'Inscrições Ficheiro de texto (CSV)';
+$string['flatfilesync'] = 'Sincronização de inscrições com ficheiro Flat';
 $string['location'] = 'Localização do ficheiro';
 $string['location_desc'] = 'Especifique o caminho completo para o ficheiro de inscrição. O ficheiro é automaticamente apagado após o processamento.';
 $string['mapping'] = 'Mapeamento do ficheiro de texto do papel';

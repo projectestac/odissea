@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'ja', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['activatesuccess'] = 'バッジへのアクセスが正常に有効に�
 $string['addalignment'] = '外部スキルまたは標準を追加する';
 $string['addbackpack'] = 'バックパックを追加する';
 $string['addbadge'] = 'バッジを追加する';
-$string['addbadgecriteria'] = 'バッジクライテリアを追加する';
 $string['addbadge_help'] = 'このバッジの必要条件に追加するすべてのバッジを選択してください。複数のアイテムを選択するにはCTRLキーを押したままにしてください。';
+$string['addbadgecriteria'] = 'バッジクライテリアを追加する';
 $string['addcohort'] = 'コーホートを追加する';
 $string['addcohort_help'] = 'このバッジ必須要件に追加する必要のあるコーホートすべてを選択します。複数のアイテムを選択するにはCTRLキーを押したままにしてください。';
 $string['addcompetency'] = 'コンピテンシーを追加する';
@@ -101,9 +101,9 @@ $string['backpackbadgessettings'] = 'バックパック設定を変更する';
 $string['backpackbadgessummary'] = 'あなたには {$a->totalcollections} コレクションから表示される {$a->totalbadges} 個のバッジがあります。';
 $string['backpackcannotsendverification'] = '確認メールを送信できません。';
 $string['backpackconnection'] = 'バックパック接続';
+$string['backpackconnection_help'] = 'バックパックへの接続を有効にすることにより、このサイトのあなたのバッジを共有できます。また、このサイトのあなたのプロファイルページのバックパックからパブリックバッジコレクションを表示できます。';
 $string['backpackconnectioncancelattempt'] = '異なるメールアドレスを使って接続する';
 $string['backpackconnectionconnect'] = 'バックパックに接続する';
-$string['backpackconnection_help'] = 'バックパックへの接続を有効にすることにより、このサイトのあなたのバッジを共有できます。また、このサイトのあなたのプロファイルページのバックパックからパブリックバッジコレクションを表示できます。';
 $string['backpackconnectionnottested'] = 'オープンバッジ v2.0バックパックのみサポートされるため、このバックパックの接続をテストできません。';
 $string['backpackconnectionok'] = 'バックパック接続が正常に確立されました。';
 $string['backpackconnectionresendemail'] = '確認メールを再送する';
@@ -208,8 +208,6 @@ $string['criteria_8'] = 'コーホートメンバーシップ';
 $string['criteria_8_help'] = 'コーホートメンバーシップを基にユーザへのバッジ授与を許可します。';
 $string['criteria_9'] = 'コンピテンシー';
 $string['criteria_9_help'] = '完了したコンピテンシーを基にユーザにバッジを授与できるようにします。';
-$string['criteriacreated'] = 'バッジクライテリアが正常に作成されました。';
-$string['criteriadeleted'] = 'バッジクライテリアが正常に削除されました。';
 $string['criteria_descr'] = '次の必要条件を完了した場合、ユーザにこのバッジが授与されます:';
 $string['criteria_descr_0'] = '一覧表示された必要条件の「 {$a} 」を完了した場合、ユーザにこのバッジが授与されます。';
 $string['criteria_descr_1'] = '「 {$a} 」の次の活動が完了しました:';
@@ -247,6 +245,8 @@ $string['criteria_descr_single_short6'] = '完了:';
 $string['criteria_descr_single_short7'] = '完了:';
 $string['criteria_descr_single_short8'] = 'メンバーシップ:';
 $string['criteria_descr_single_short9'] = '完了:';
+$string['criteriacreated'] = 'バッジクライテリアが正常に作成されました。';
+$string['criteriadeleted'] = 'バッジクライテリアが正常に削除されました。';
 $string['criteriasummary'] = 'クライテリア概要';
 $string['criteriaupdated'] = 'バッジクライテリアが正常に更新されました。';
 $string['criterror'] = '現在のパラメータ問題';

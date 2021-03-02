@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'ja', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,7 +36,7 @@ $string['actions'] = 'アクション';
 $string['activitylink'] = '次の活動にリンクする';
 $string['activitylink_help'] = 'レッスンの最後にコース内の別の活動へのリンクを提供するにはドロップダウンメニューより活動を選択してください。';
 $string['activitylinkname'] = '{$a} へ移動する';
-$string['activityoverview'] = 'あなたには期限が到来しているレッスンがあります。';
+$string['activityoverview'] = 'あなたには期限が近づいているレッスンがあります';
 $string['addabranchtable'] = 'コンテンツページを追加する';
 $string['addanendofbranch'] = '終了ブランチを追加する';
 $string['addanewpage'] = '新しいページを追加する';
@@ -272,13 +272,13 @@ $string['importquestions'] = '問題をインポートする';
 $string['importquestions_help'] = 'この機能では様々なフォーマットの問題をテキストファイルでインポートすることができます。';
 $string['inactiveoverridehelp'] = '* ユーザの活動へのアクセスが制限されているため、このオーオバーライドは有効ではありません。グループ、ロール割り当て、他のアクセス制限または活動が非表示にされている可能性があります。';
 $string['indicator:cognitivedepth'] = 'レッスン認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はレッスン活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'レッスン認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がレッスン活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信, フィードバックの閲覧, フィードバックへのコメント, フィードバック閲覧後の再送信)。';
-$string['indicator:cognitivedepth_help'] = 'この指標はレッスン活動で学生が到達した認識深度に基づきます。';
 $string['indicator:socialbreadth'] = 'レッスン社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はレッスン活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'レッスン社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がレッスン活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
-$string['indicator:socialbreadth_help'] = 'この指標はレッスン活動で学生が到達した社会的広がりに基づきます。';
 $string['insertedpage'] = 'ページが追加されました';
 $string['invalidfile'] = '無効なファイル';
 $string['invalidid'] = 'コースモジュールIDまたはレッスンIDが渡されていません。';
@@ -293,16 +293,18 @@ $string['leftduringtimed'] = 'あなたは制限時間のあるレッスンを�
 $string['leftduringtimednoretake'] = 'あなたは制限時間のあるレッスンを途中で終了しました。<br />レッスンの再受験または継続は許可されていません。';
 $string['leftduringtimedsession'] = 'あなたは制限時間のあるレッスンを離れました。';
 $string['lesson:addinstance'] = '新しいレッスンを追加する';
-$string['lessonclosed'] = 'このレッスンは {$a} に終了します。';
-$string['lessoncloses'] = 'レッスン終了';
-$string['lessoncloseson'] = 'レッスン終了: {$a}';
 $string['lesson:edit'] = 'レッスン活動を編集する';
-$string['lessoneventcloses'] = '{$a} 終了';
-$string['lessoneventopens'] = '{$a} 開始';
-$string['lessonformating'] = 'レッスンフォーマット';
 $string['lesson:grade'] = 'レッスン作文問題を評定する';
 $string['lesson:manage'] = 'レッスン活動を管理する';
 $string['lesson:manageoverrides'] = 'レッスンオーバーライドを管理する';
+$string['lesson:view'] = 'レッスン活動を表示する';
+$string['lesson:viewreports'] = 'レッスンレポートを表示する';
+$string['lessonclosed'] = 'このレッスンは {$a} に終了します。';
+$string['lessoncloses'] = 'レッスン終了';
+$string['lessoncloseson'] = 'レッスン終了: {$a}';
+$string['lessoneventcloses'] = '{$a} 終了';
+$string['lessoneventopens'] = '{$a} 開始';
+$string['lessonformating'] = 'レッスンフォーマット';
 $string['lessonmenu'] = 'レッスンメニュー';
 $string['lessonname'] = 'レッスン: {$a}';
 $string['lessonnotready'] = 'このレッスンはまだ受験することができません。あなたの {$a} にご連絡ください。';
@@ -311,8 +313,6 @@ $string['lessonopen'] = 'このレッスンは {$a} に開始されます。';
 $string['lessonopens'] = 'レッスン開始';
 $string['lessonpagelinkingbroken'] = '最初のページが見つかりません。レッスンページのリンクが壊れているようです。管理者にご連絡ください。';
 $string['lessonstats'] = 'レッスン統計';
-$string['lesson:view'] = 'レッスン活動を表示する';
-$string['lesson:viewreports'] = 'レッスンレポートを表示する';
 $string['linkedmedia'] = 'リンクメディア';
 $string['loginfail'] = 'ログインに失敗しました、再度ログインしてください ...';
 $string['lowscore'] = '最低評点';
@@ -409,8 +409,8 @@ $string['numericanswer'] = '数値解答';
 $string['numericanswer_help'] = 'あなたはコロンを使用して単一の数字または数字の範囲を指定できます。例えば「2:5」は２～5の間に含まれる解答が正しいことを意味します。';
 $string['offlinedatamessage'] = 'あなたはこの受験にモバイルデバイスを使用しました。最新のデータは {$a} 前にこのサイトに保存されています。未保存の受験があるかどうか確認してください。';
 $string['ongoing'] = '進行中の評点を表示する';
-$string['ongoingcustom'] = '現在、あなたの評点は {$a->currenthigh} 点中 {$a->score} 点です。';
 $string['ongoing_help'] = 'この設定を有効にした場合、現時点で考えられる学生の合計評点がそれぞれのページに表示されます。';
+$string['ongoingcustom'] = '現在、あなたの評点は {$a->currenthigh} 点中 {$a->score} 点です。';
 $string['ongoingnormal'] = 'あなたは {$a->viewed} 問中 {$a->correct} 問を正しく答えました。';
 $string['onpostperpage'] = '1評点あたり1回のみ登録してください。';
 $string['openafterclose'] = 'あなたは終了日の後に開始日を指定しました。';
@@ -430,11 +430,11 @@ $string['overrideusereventname'] = '{$a->lesson} - オーバーライド';
 $string['overview'] = '概要';
 $string['overview_help'] = 'レッスンは多くのページおよび任意のコンテンツページにより構成されます。ページはいくつかのコンテンツを含み、通常、問題で終了します。ジャンプには「このページ」または「次のページ」のような相対ジャンプまたはレッスン内の1ページを指定する絶対ジャンプがあります。ページコンテンツには例えば目次のようにレッスン内の他のページへの一連のリンクを含みます。';
 $string['page'] = 'ページ: {$a}';
-$string['pageanswers'] = '正解ページ';
-$string['pagecontents'] = 'ページコンテンツ';
 $string['page-mod-lesson-edit'] = 'レッスンページを編集する';
 $string['page-mod-lesson-view'] = 'レッスンページを表示またはプレビューする';
 $string['page-mod-lesson-x'] = 'すべてのレッスンページ';
+$string['pageanswers'] = '正解ページ';
+$string['pagecontents'] = 'ページコンテンツ';
 $string['pageresponses'] = '解答ページ';
 $string['pages'] = 'ページ';
 $string['pagetitle'] = 'ページタイトル';
@@ -546,9 +546,9 @@ $string['showanunseenpage'] = '未閲覧のページを表示する';
 $string['singleanswer'] = '単一解答';
 $string['skip'] = 'ナビゲーションをスキップする';
 $string['slideshow'] = 'スライドショー';
+$string['slideshow_help'] = 'この設定を有効にした場合、レッスンは固定幅および高さのスライドショーとして表示されます。';
 $string['slideshowbgcolor'] = 'スライドショー背景色';
 $string['slideshowheight'] = 'スライドショー高';
-$string['slideshow_help'] = 'この設定を有効にした場合、レッスンは固定幅および高さのスライドショーとして表示されます。';
 $string['slideshowwidth'] = 'スライドショー幅';
 $string['startlesson'] = 'レッスンを開始する';
 $string['studentattemptlesson'] = '{$a->lastname} {$a->firstname} さんの受験回数:  {$a->attempt}';

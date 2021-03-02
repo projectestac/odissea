@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customfield', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'customfield', language 'pt', version '3.8'.
  *
- * @package   customfield
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     customfield
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,10 +45,10 @@ $string['description_help'] = 'A descrição é mostrada no formulário por baix
 $string['edit'] = 'Editar';
 $string['editcategoryname'] = 'Editar nome da categoria';
 $string['editingfield'] = 'A atualizar {$a}';
-$string['errorfieldtypenotfound'] = 'Tipo de campo {$a} não encontrado';
+$string['errorfieldtypenotfound'] = 'Tipo de campo \'{$a}\' não foi encontrado';
 $string['erroruniquevalues'] = 'Este valor já está a ser usado.';
-$string['eventcategorycreated'] = 'Categoria de campo personalizado criada';
-$string['eventcategorydeleted'] = 'Categoria de campo personalizado apagada';
+$string['eventcategorycreated'] = 'Criada categoria do campo personalizado';
+$string['eventcategorydeleted'] = 'Apagada a categoria do campo personalizado';
 $string['eventcategoryupdated'] = 'Categoria de campo personalizado atualizada';
 $string['eventfieldcreated'] = 'Campo personalizado criado';
 $string['eventfielddeleted'] = 'Campo personalizado apagado';
@@ -59,16 +59,16 @@ $string['fieldshortname'] = 'Nome curto';
 $string['formfieldcheckshortname'] = 'O nome curto já existe';
 $string['invalidshortnameerror'] = 'O nome curto só pode conter caracteres alfanuméricos em minúsculas e underscores (_).';
 $string['isdataunique'] = 'Dados exclusivos';
-$string['isdataunique_help'] = 'Os dados devem ser únicos?';
+$string['isdataunique_help'] = 'Esta configuração determina se o valor inserido deve ser exclusivo e não inserido anteriormente.';
 $string['isfieldrequired'] = 'Obrigatório';
-$string['isfieldrequired_help'] = 'Este campo é obrigatório?';
+$string['isfieldrequired_help'] = 'Um campo obrigatório é um campo que deve ser preenchido com um valor antes do envio do formulário.';
 $string['link'] = 'Hiperligação';
 $string['linktarget'] = 'Destino da hiperligação';
 $string['modify'] = 'Modificar';
 $string['movecategory'] = 'Mover "{$a}"';
 $string['movefield'] = 'Mover "{$a}"';
 $string['no'] = 'Não';
-$string['nocategories'] = 'Não existem campos nem categorias personalizadas.';
+$string['nocategories'] = 'Não existem categorias nem campos personalizadas.';
 $string['nopermissionconfigure'] = 'Não tem permissão para configurar campos aqui.';
 $string['notchecked'] = 'Não verificado';
 $string['otherfields'] = 'Outros campos';
@@ -81,7 +81,7 @@ $string['privacy:metadata:customfield_data:fieldid'] = 'ID da definição do cam
 $string['privacy:metadata:customfield_data:instanceid'] = 'ID da instância relacionada com os dados';
 $string['privacy:metadata:customfield_data:intvalue'] = 'Valor dos dados, quando é um inteiro';
 $string['privacy:metadata:customfield_data:shortcharvalue'] = 'Valor dos dados quando é um carácter curto';
-$string['privacy:metadata:customfield_data:timecreated'] = 'Data/Hora da criação dos dados';
+$string['privacy:metadata:customfield_data:timecreated'] = 'Data e hora da criação dos dados';
 $string['privacy:metadata:customfield_data:timemodified'] = 'Data/Hora da última modificação dos dados';
 $string['privacy:metadata:customfield_data:value'] = 'Valor dos dados quando é texto';
 $string['privacy:metadata:customfield_data:valueformat'] = 'Formato do valor quando é texto';
@@ -91,8 +91,8 @@ $string['shortname'] = 'Nome curto';
 $string['shortname_help'] = 'O nome curto deve ser exclusivo e só pode conter apenas caracteres alfanuméricos em minúsculas e underscores (_). Não é mostrado em nenhum lugar do site, mas pode ser usado para sincronização com sistemas externos ou em serviços web.';
 $string['showdate'] = 'Mostrar data';
 $string['specificsettings'] = 'Configurações específicas';
-$string['therearenofields'] = 'Não hexistem campos nesta categoria';
+$string['therearenofields'] = 'Não existem campos nesta categoria';
 $string['totopofcategory'] = 'Para o topo da categoria {$a}';
 $string['type'] = 'Tipo';
-$string['unknownhandler'] = 'Não é possível encontrar o handler para campos personalizados para a componente {$a->component} e área {$a->area}.';
+$string['unknownhandler'] = 'Não é possível encontrar o handler de campos personalizados para a componente {$a->component} e área {$a->area}.';
 $string['yes'] = 'Sim';

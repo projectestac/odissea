@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_ods', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradeexport_ods', language 'ar', version '3.8'.
  *
- * @package   gradeexport_ods
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradeexport_ods
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'تصدير العلامات بصيغة OpenDocument';
 $string['ods:publish'] = 'نشر علامات OpenDocument المصدرة';
-$string['ods:view'] = 'استعمال تصدير العلامات لـ OpenDocument';
+$string['ods:view'] = 'استخد تصدير العلامات لـOpenDocument';
 $string['pluginname'] = 'جدول OpenDocument';
 $string['privacy:metadata'] = 'إن ملحق تصدير العلامات بشكل جداول OpenDocument لا يخزن أي بيانات شخصية.';
-$string['timeexported'] = 'آخر ما تم تنزيله من هذا المساق';
+$string['timeexported'] = 'آخر ما تم تنزيله من هذا المقرر الدراسي';

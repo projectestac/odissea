@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'wiki', language 'ja', version '3.8'.
  *
- * @package   wiki
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     wiki
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -99,13 +99,13 @@ $string['firstpagetitle_help'] = 'Wikiの先頭ページのタイトルです。
 $string['forceformat'] = 'フォーマットを強制する';
 $string['forceformat_help'] = 'フォーマットが強制 (チェックボックスをチェック) された場合、Wikiページの編集時にフォーマットを選択するオプションは表示されません。';
 $string['format'] = 'フォーマット';
+$string['format_help'] = '* HTML - HTMLエディタを使用できます。
+* クレオール - 小さな編集ツールバーを持った一般的なWikiマークアップ言語を使用できます。
+* Nwiki - Nwikiモジュールで使用されるMediawikiのようなマークアップ言語です。';
 $string['formatcreole'] = 'クレオールフォーマット';
 $string['formatcreole_help'] = 'クレオールフォーマットは適切なマークアップを挿入するための編集ツールバーを持った一般的なWIkiマークアップ言語です。
 
 新しいページを作成するには例えば [[ページ2 ]] のように2重角括弧で閉じたページ名を入力してください。';
-$string['format_help'] = '* HTML - HTMLエディタを使用できます。
-* クレオール - 小さな編集ツールバーを持った一般的なWikiマークアップ言語を使用できます。
-* Nwiki - Nwikiモジュールで使用されるMediawikiのようなマークアップ言語です。';
 $string['formathtml'] = 'HTMLフォーマット';
 $string['formathtml_help'] = 'HTMLエディタはコンテンツのフォーマットに使用することができます。
 
@@ -122,13 +122,13 @@ $string['incorrectpageid'] = 'ページIDが正しくありません。';
 $string['incorrectsubwikiid'] = 'Subwiki IDが正しくありません。';
 $string['incorrectwikiid'] = 'Wiki IDが正しくありません。';
 $string['indicator:cognitivedepth'] = 'Wiki認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はWiki活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'Wiki認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がWiki活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信)。';
-$string['indicator:cognitivedepth_help'] = 'この指標はWiki活動で学生が到達した認識深度に基づきます。';
 $string['indicator:socialbreadth'] = 'Wiki社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はWiki活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'Wiki社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がWiki活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
-$string['indicator:socialbreadth_help'] = 'この指標はWiki活動で学生が到達した社会的広がりに基づきます。';
 $string['individualpagedoesnotexist'] = '個人Wikiページは存在していません。';
 $string['insertcomment'] = 'コメントを追加する';
 $string['insertimage'] = 'イメージを挿入する ...';
@@ -199,17 +199,17 @@ $string['orphaned'] = '迷子ページ';
 $string['orphaned_help'] = '他のページからリンクされていないページを一覧表示します。';
 $string['overridelocks'] = 'ロックをオーバーライドする';
 $string['overridinglocks'] = 'ロックのオーバーライド ...';
+$string['page-mod-wiki-comments'] = 'Wikiモジュールコメントページ';
+$string['page-mod-wiki-history'] = 'Wiki履歴ページ';
+$string['page-mod-wiki-map'] = 'Wikiマップページ';
+$string['page-mod-wiki-view'] = 'Wikiモジュールメインページ';
+$string['page-mod-wiki-x'] = 'すべてのWikiモジュールページ';
 $string['pageexists'] = 'このページはすでに存在します。';
 $string['pageindex'] = 'ページインデックス';
 $string['pageindex_help'] = 'このWikiのページツリー';
 $string['pageislocked'] = '現在、誰かがこのページを編集しています。数分後に編集をお試しください。';
 $string['pagelist'] = 'ページ一覧';
 $string['pagelist_help'] = 'アルファベット順のページ一覧';
-$string['page-mod-wiki-comments'] = 'Wikiモジュールコメントページ';
-$string['page-mod-wiki-history'] = 'Wiki履歴ページ';
-$string['page-mod-wiki-map'] = 'Wikiマップページ';
-$string['page-mod-wiki-view'] = 'Wikiモジュールメインページ';
-$string['page-mod-wiki-x'] = 'すべてのWikiモジュールページ';
 $string['pagename'] = 'ページ名';
 $string['peerreview'] = 'ピアレビュー';
 $string['pluginadministration'] = 'Wiki管理';
@@ -289,11 +289,17 @@ $string['viewperpage'] = '1ページあたり {$a} バージョンを表示す�
 $string['viewversion'] = 'バージョン #{$a} のページを表示中';
 $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = '新しいWikiを追加する';
-$string['wikiattachments'] = 'Wiki添付';
-$string['wikiboldtext'] = '太字テキスト';
 $string['wiki:createpage'] = '新しいWIkiページを作成する';
 $string['wiki:editcomment'] = 'コメントをページに追加する';
 $string['wiki:editpage'] = 'Wikiページを保存する';
+$string['wiki:managecomment'] = 'Wikiコメントを管理する';
+$string['wiki:managefiles'] = 'Wikiファイルを管理する';
+$string['wiki:managewiki'] = 'Wiki設定を管理する';
+$string['wiki:overridelock'] = 'Wikiロックをオーバーライドする';
+$string['wiki:viewcomment'] = 'ページコメントを表示する';
+$string['wiki:viewpage'] = 'Wikiページを表示する';
+$string['wikiattachments'] = 'Wiki添付';
+$string['wikiboldtext'] = '太字テキスト';
 $string['wikiexternalurl'] = '外部URL';
 $string['wikifiles'] = 'Wikiファイル';
 $string['wikifiletable'] = 'アップロード済みファイル一覧';
@@ -304,21 +310,15 @@ $string['wikiinternalurl'] = '内部リンク';
 $string['wikiintro'] = '説明';
 $string['wikiitalictext'] = 'イタリック文字';
 $string['wikilockingsettings'] = 'ロックおよび再解析タイムアウト';
-$string['wiki:managecomment'] = 'Wikiコメントを管理する';
-$string['wiki:managefiles'] = 'Wikiファイルを管理する';
-$string['wiki:managewiki'] = 'Wiki設定を管理する';
 $string['wikimode'] = 'Wikiモード';
-$string['wikimodecollaborative'] = '共同Wiki';
 $string['wikimode_help'] = 'WikiモードではすべてのユーザがWikiを編集できる「共同Wiki」またはユーザのみ自分のWikiを編集できる「個人Wiki」を決定します。';
+$string['wikimodecollaborative'] = '共同Wiki';
 $string['wikimodeindividual'] = '個人Wiki';
 $string['wikiname'] = 'Wiki名';
 $string['wikinowikitext'] = '非Wikiテキスト';
 $string['wikiorderedlist'] = '順序付きリスト';
-$string['wiki:overridelock'] = 'Wikiロックをオーバーライドする';
 $string['wikipages'] = 'Wikiページ';
 $string['wikisettings'] = 'Wiki設定';
 $string['wikiunorderedlist'] = '番号なしリスト';
-$string['wiki:viewcomment'] = 'ページコメントを表示する';
-$string['wiki:viewpage'] = 'Wikiページを表示する';
 $string['wrongversionlock'] = 'あなたが編集している間、別のユーザがこのページを編集しました。そのため、あなたのコンテンツは古くなりました。';
 $string['wrongversionsave'] = 'あなたが編集している間、別のユーザが新しいバージョンを作成しました。そのため、あなたはそのユーザのバージョンを上書きしたことになります。ページ履歴をご確認ください。';

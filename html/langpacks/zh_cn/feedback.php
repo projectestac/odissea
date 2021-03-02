@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'feedback', language 'zh_cn', version '3.8'.
  *
- * @package   feedback
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     feedback
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,13 +44,13 @@ $string['cannotsavetempl'] = '不允许保存模板';
 $string['captcha'] = '验证码';
 $string['captchanotset'] = '验证码未设置。';
 $string['check'] = '多选项 - 多选择';
-$string['checkbox'] = '多选项 - 允许多选（复选框）';
 $string['check_values'] = '可能的回答';
+$string['checkbox'] = '多选项 - 允许多选（复选框）';
 $string['choosefile'] = '选择一个文件';
 $string['chosen_feedback_response'] = '选择反馈答复';
+$string['complete_the_form'] = '回答问题';
 $string['completed'] = '已完成';
 $string['completed_feedbacks'] = '提交的回答';
-$string['complete_the_form'] = '回答问题';
 $string['completionsubmit'] = '提交反馈后显示为已完成';
 $string['configallowfullanonymous'] = '如果设为“是”，那么不需要登录就可以参与反馈活动。这个选项只影响首页的反馈。';
 $string['confirmdeleteentry'] = '您确定要删除此项吗？';
@@ -66,15 +66,14 @@ $string['delete_item'] = '删除此题';
 $string['delete_old_items'] = '删除旧题';
 $string['delete_template'] = '删除模板';
 $string['delete_templates'] = '删除模板...';
-$string['depending'] = '依赖的问题';
+$string['depending'] = '依赖';
 $string['depending_help'] = '依赖性使问题的显示取决于对其它问题的回答。<br />
 <strong>这里有一个使用例子：</strong>
 <br />
 <ul>
 <li>首先创建一条其它问题要依赖的题。</li>
 <li>然后添加一个分页符。</li>
-<li>接着添加一条依赖于上面那道题的题。<br />
-在创建问题表单中的“依赖于问题”列表中选择那道题，并将需要的值填入“依赖值”文本框中。</li>
+<li>接着添加一条依赖于该题的题。在“依赖的问题”列表中选择那道题，并将需要的值填入“依赖值”文本框中。</li>
 </ul>
 <strong>结构应该像下面这样：</strong>
 <ol>
@@ -91,11 +90,11 @@ $string['dependitem'] = '依赖的问题';
 $string['dependvalue'] = '依赖值';
 $string['description'] = '描述';
 $string['do_not_analyse_empty_submits'] = '不分析空提交';
+$string['drop_feedback'] = '从此课程移除';
 $string['dropdown'] = '多选项 - 单选（下拉列表）';
+$string['dropdown_values'] = '答卷';
 $string['dropdownlist'] = '多选项 - 单选（下拉列表）';
 $string['dropdownrated'] = '下拉列表（可评分）';
-$string['dropdown_values'] = '答卷';
-$string['drop_feedback'] = '从此课程移除';
 $string['edit_item'] = '编辑问题';
 $string['edit_items'] = '编辑问题';
 $string['email_notification'] = '发送email通知';
@@ -111,29 +110,29 @@ $string['entries_saved'] = '您的回答已被保存。谢谢。';
 $string['export_questions'] = '导出问题';
 $string['export_to_excel'] = '导出到Excel';
 $string['feedback:addinstance'] = '添加新反馈';
-$string['feedbackclose'] = '允许回答到';
 $string['feedback:complete'] = '填写反馈';
 $string['feedback:createprivatetemplate'] = '建立私有模板';
 $string['feedback:createpublictemplate'] = '建立公共模板';
 $string['feedback:deletesubmissions'] = '删除已填完的问卷';
 $string['feedback:deletetemplate'] = '删除模板';
 $string['feedback:edititems'] = '编辑项目';
-$string['feedback_is_not_for_anonymous'] = '此反馈不能匿名参加';
-$string['feedback_is_not_open'] = '此调查反馈未开启';
 $string['feedback:mapcourse'] = '向全局反馈映射课程';
-$string['feedbackopen'] = '允许回答从';
 $string['feedback:receivemail'] = '接收email通知';
 $string['feedback:view'] = '查看反馈活动';
 $string['feedback:viewanalysepage'] = '提交后查看分析页面';
 $string['feedback:viewreports'] = '查看报告';
+$string['feedback_is_not_for_anonymous'] = '此反馈不能匿名参加';
+$string['feedback_is_not_open'] = '此调查反馈未开启';
+$string['feedbackclose'] = '允许回答到';
+$string['feedbackopen'] = '允许回答从';
 $string['file'] = '文件';
 $string['filter_by_course'] = '按课程筛选';
 $string['handling_error'] = '反馈模块动作处理出错';
 $string['hide_no_select_option'] = '不显示“未选择”选项';
 $string['horizontal'] = '水平';
-$string['importfromthisfile'] = '从此文件导入';
 $string['import_questions'] = '导入问题';
 $string['import_successfully'] = '导入成功';
+$string['importfromthisfile'] = '从此文件导入';
 $string['indicator:cognitivedepth'] = '反馈活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在反馈活动中所达到的认知深度。';
 $string['indicator:socialbreadth'] = '反馈活动社会宽度';
@@ -164,9 +163,9 @@ $string['modulename_help'] = '反馈模块可以建立自定义的问卷调查';
 $string['modulenameplural'] = '调查反馈';
 $string['move_item'] = '移动此题';
 $string['multichoice'] = '选择题';
+$string['multichoice_values'] = '选项';
 $string['multichoicerated'] = '选择题（可评分）';
 $string['multichoicetype'] = '选择题';
-$string['multichoice_values'] = '选项';
 $string['multiplesubmit'] = '多次提交';
 $string['multiplesubmit_help'] = '如果对匿名调查也启用，那么用户就可以无限次提交反馈。';
 $string['name'] = '名称';
@@ -176,11 +175,11 @@ $string['no_handler'] = '没有动作处理器给';
 $string['no_itemlabel'] = '无标签';
 $string['no_itemname'] = '无项目名';
 $string['no_items_available_yet'] = '还没有已设置的问题';
+$string['no_templates_available_yet'] = '还没有模板';
 $string['non_anonymous'] = '用户名将被记录并与答案一起显示';
 $string['non_anonymous_entries'] = '非匿名条目 ({$a})';
 $string['non_respondents_students'] = '未反馈的学生 ({$a})';
 $string['not_completed_yet'] = '还未完成';
-$string['no_templates_available_yet'] = '还没有模板';
 $string['not_selected'] = '未选择的';
 $string['not_started'] = '未开始的';
 $string['numberoutofrange'] = '数量超出范围';
@@ -193,9 +192,9 @@ $string['oldvalueswillbedeleted'] = '已有的问题和所有用户的答复都�
 $string['only_one_captcha_allowed'] = '反馈中只可以有一个验证码';
 $string['overview'] = '概览';
 $string['page'] = '页面';
+$string['page-mod-feedback-x'] = '任意反馈模块页';
 $string['page_after_submit'] = '完成消息';
 $string['pagebreak'] = '分页符';
-$string['page-mod-feedback-x'] = '任意反馈模块页';
 $string['pluginadministration'] = '反馈管理';
 $string['pluginname'] = '调查反馈';
 $string['position'] = '位置';
@@ -235,8 +234,8 @@ $string['subject'] = '主题';
 $string['switch_item_to_not_required'] = '切换到：不必须回答';
 $string['switch_item_to_required'] = '切换到：必须回答';
 $string['template'] = '模板';
-$string['templates'] = '模板';
 $string['template_saved'] = '模板已保存';
+$string['templates'] = '模板';
 $string['textarea'] = '问答题';
 $string['textarea_height'] = '行数';
 $string['textarea_width'] = '宽度';

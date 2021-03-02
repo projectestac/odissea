@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'search', language 'ar', version '3.8'.
  *
- * @package   search
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     search
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['advancedsearch'] = 'بحث متقدم';
 $string['all'] = 'الكل';
 $string['allareas'] = 'كل المناطق';
-$string['allcourses'] = 'كل المساقات';
+$string['allcourses'] = 'كل المقررات الدراسية';
 $string['allusers'] = 'كل المستخدمين';
 $string['author'] = 'الكاتب';
 $string['authorname'] = 'اسم الكاتب';
@@ -44,8 +44,8 @@ $string['confirm_deleteall'] = 'هل أنت متأكد من رغبتك في حذ
 $string['confirm_indexall'] = 'هل أنت متأكد من رغبتك في تحديث المحتويات المفهرسة الآن؟ إن كان المحتوى المطلوبة فهرسته كبيراً، فقد يستغرق وقتاً طويلاً. بالنسبة إلى المخدمات الفعالة، ينبغي عادة ترك مهمة الفهرسة إلى المهمة المجدولة \'فهرسة البحث العمومية\'.';
 $string['confirm_reindexall'] = 'هل أنت متأكد من رغبتك في إعادة فهرسة كل محتويات الموقع الآن؟ إن كان موقعك يضم محتوى كبيراً، فقد يستغرق وقتاً طويلاً، والمستخدمون لن يحصلوا على نتائج البحث الكاملة حتى إكمالها.';
 $string['core-all'] = 'الكل';
-$string['core-course-content'] = 'محتوى المساق';
-$string['core-courses'] = 'المساقات';
+$string['core-course-content'] = 'محتوى المقرر الدراسي';
+$string['core-courses'] = 'المقررات الدراسية';
 $string['core-other'] = 'غيرها';
 $string['core-users'] = 'المستخدمون';
 $string['createanindex'] = 'إنشاء فهرس';
@@ -69,8 +69,8 @@ $string['enginenotinstalled'] = 'المحرك {$a} غير منصب.';
 $string['enginenotselected'] = 'لم تحدد أي محرك بحث.';
 $string['engineserverstatus'] = 'محرك البحث غير متاح. لطفاً، تواصل من المشرف.';
 $string['enteryoursearchquery'] = 'ادخل استفسار بحثك';
-$string['errorareanotavailable'] = 'منطقة البحث {$a} غير متاحة.';
 $string['error_indexing'] = 'وقع خطأ في أثناء الفهرسة';
+$string['errorareanotavailable'] = 'منطقة البحث {$a} غير متاحة.';
 $string['errors'] = 'الأخطاء';
 $string['everywhere'] = 'حيثما يمكنك الوصول';
 $string['filesinindexdirectory'] = 'الملفات في مجلد الفهرس';
@@ -81,7 +81,7 @@ $string['globalsearchdisabled'] = 'البحث الشامل غير مفعل';
 $string['gradualreindex'] = 'إعادة فهرسة {$a} تدريجياً';
 $string['gradualreindex_confirm'] = 'هل أنت متأكد من رغبتك في إعادة فهرسة {$a}؟ هذا قد يستغرق بعض الوقت، رغم أن البيانات الحالية ستكون متاحة خلال إعادة الفهرسة.';
 $string['gradualreindex_queued'] = 'تم طلب إعادة فهرسة {$a->name} ({$a->count} contexts). هذه الفهرسة ستكون على عاتق المهمة المجدولة "فهرسة البحث العمومية".';
-$string['incourse'] = 'في المساق {$a}';
+$string['incourse'] = 'في المقرر الدراسي {$a}';
 $string['index'] = 'فهرس';
 $string['indexwhendisabledfullnotice'] = 'الفهرسة غير مسموح بها عند تعطيل البحث. لتمكينها، لطفاً، أنظر الإعداد <a href="{$a->url}">searchindexwhendisabled</a>.';
 $string['indexwhendisabledshortnotice'] = 'الفهرسة غير متاحة.';
@@ -89,7 +89,7 @@ $string['invalidindexerror'] = 'مجلد الفهرس يحوي فهرس غير �
 $string['ittook'] = 'لقد استغرق';
 $string['matchingfile'] = 'مطابَقة من الملف <span class="filename">{$a}</span>';
 $string['matchingfiles'] = 'مطابَقة من الملفات:';
-$string['mycoursesonly'] = 'مساقاتي فقط';
+$string['mycoursesonly'] = 'مقرراتي فقط';
 $string['next'] = 'التالي';
 $string['noindexmessage'] = 'من فضلك يامدير: يبدو انه لا يوجد فهرس بحث';
 $string['noresults'] = 'لا نتائج';
@@ -114,22 +114,22 @@ $string['schemanotupdated'] = 'مخطط البحث منته الصلاحية.';
 $string['schemaversionunknown'] = 'محرك البحث لا يعرف الإصدار الحالي للمخطط.';
 $string['score'] = 'الدرجة';
 $string['search'] = 'بحث';
-$string['searcharea'] = 'منطقة البحث';
-$string['searchareacategories'] = 'تصنيفات منطقة البحث';
-$string['search:course'] = 'المساقات';
-$string['search:customfield'] = 'الحقول المخصصة للمساقات';
-$string['searching'] = 'البحث في';
+$string['search:course'] = 'المقررات الدراسية';
+$string['search:customfield'] = 'الحقول المخصصة للمقررات';
 $string['search:message_received'] = 'الرسائل - المتلقاة';
 $string['search:message_sent'] = 'الرسائل - المرسلة';
-$string['search:mycourse'] = 'مساقاتي';
-$string['searchnotpermitted'] = 'لا يسمح لك بالبحث';
-$string['search:section'] = 'مقاطع المساقات';
-$string['searchsetupdescription'] = 'الخطوات الآتية تساعدك في إعداد بحث مودل العمومي.';
+$string['search:mycourse'] = 'مقرراتي الدراسية';
+$string['search:section'] = 'مقاطع المقررات الدراسية';
 $string['search:user'] = 'المستخدمون';
+$string['searcharea'] = 'منطقة البحث';
+$string['searchareacategories'] = 'تصنيفات منطقة البحث';
+$string['searching'] = 'البحث في';
+$string['searchnotpermitted'] = 'لا يسمح لك بالبحث';
+$string['searchsetupdescription'] = 'الخطوات الآتية تساعدك في إعداد بحث مودل العمومي.';
 $string['searchwithin'] = 'البحث ضمن';
 $string['seconds'] = 'ثواني';
 $string['solutions'] = 'حلول';
-$string['statistics'] = 'إحصائيات';
+$string['statistics'] = 'الإحصائيات';
 $string['step'] = 'الخطوة';
 $string['thesewordshelpimproverank'] = 'هذه الكلمات ستساعد في تحسين المرتبة';
 $string['thesewordsmustappear'] = 'يجب أن تظهر هذه الكلمات';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dbtransfer', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'dbtransfer', language 'sv', version '3.8'.
  *
- * @package   dbtransfer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     dbtransfer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,6 +35,7 @@ $string['differenttableexception'] = 'Tabell {$a} strukturen matchar inte.';
 $string['done'] = 'Klart';
 $string['exportschemaexception'] = 'Den aktuella strukturen på databasen matchar inte alla install.xml filer. <br /> {$a}';
 $string['importschemaexception'] = 'Den aktuella strukturen på databasen matchar inte alla install.xml filer. <br /> {$a}';
-$string['importversionmismatchexception'] = 'Den aktuella versionen {$a->currentver}  matchar inte den exporterade versionen {$a->schemaver}.';
+$string['importversionmismatchexception'] = 'Den aktuella versionen {$a->currentver} matchar inte den exporterade versionen {$a->schemaver}.';
 $string['malformedxmlexception'] = 'Felaktigt utformad XML hittades, det går inte att fortsätta.';
+$string['tablex'] = 'Tabell {$a}:';
 $string['unknowntableexception'] = 'En okänd tabell {$a} hittades i exportfilen.';

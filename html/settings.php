@@ -93,10 +93,7 @@ if ($CFG->iseoi) {
 // These variable define DEFAULT block variables for new courses
 $CFG->defaultblocks_override = ':calendar_month,activity_modules';
 
-// Mail information
-$CFG->apligestenv = $agora['server']['enviroment'];
-$CFG->apligestaplic = ($CFG->iseoi) ? 'AGORAEOI' : 'AGORA';
-
+// Language parameters
 $CFG->langotherroot = dirname(__FILE__) . '/langpacks/';
 $CFG->langlocalroot = dirname(__FILE__) . '/langpacks/';
 $CFG->skiplangupgrade  = true;
@@ -142,12 +139,9 @@ if (!empty($agora['moodle2']['redis_session_servers'])) {
 }
 
 if (isset($agora['server']['root']) && !empty($agora['server']['root'])) {
-    // In FRM environment, put cache in moodledata. Otherwise, use local cache directories
-    if ($agora['server']['enviroment'] != 'FRM') {
-        $CFG->agora_muc_path = $agora['server']['root'] . $agora['moodle2']['localmuc'] . '/' . $CFG->dbuser;
-        $CFG->cachedir       = $CFG->agora_muc_path . '/cache';
-        $CFG->localcachedir  = $CFG->agora_muc_path . '/localcache';
-    }
+    $CFG->agora_muc_path = $agora['server']['root'] . $agora['moodle2']['localmuc'] . '/' . $CFG->dbuser;
+    $CFG->cachedir       = $CFG->agora_muc_path . '/cache';
+    $CFG->localcachedir  = $CFG->agora_muc_path . '/localcache';
 }
 
 // Change locking from NFS to DB

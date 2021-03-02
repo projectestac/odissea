@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_monitor', language 'nl', version '3.8'.
  *
- * @package   tool_monitor
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_monitor
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -72,11 +72,11 @@ $string['messagetemplate_help'] = 'Er is een melding gestuurd naar wie ingeschre
 * Beschrijving {description}
 * Gebeurtenis {eventname}';
 $string['moduleinstance'] = 'Instantie';
-$string['monitordisabled'] = 'Gebeurtenismonitoring is uitgeschakeld';
-$string['monitorenabled'] = 'Gebeurtenismonitoring is ingeschakeld';
 $string['monitor:managerules'] = 'Beheer regels gebeurtenismonitor';
 $string['monitor:managetool'] = 'Gebeurtenissen monitoren inschakelen en uitschakelen';
 $string['monitor:subscribe'] = 'Inschrijven op regels voor gebeurtenissen monitoren';
+$string['monitordisabled'] = 'Gebeurtenismonitoring is uitgeschakeld';
+$string['monitorenabled'] = 'Gebeurtenismonitoring is ingeschakeld';
 $string['norules'] = 'Er zijn geen regels om gebeurtenissen te monitoren';
 $string['pluginname'] = 'Gebeurtenismonitor';
 $string['privacy:createdrules'] = 'De gebeurtenismonitorregels die ik gemaakt heb';

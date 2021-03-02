@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'nl', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,14 +57,15 @@ $string['uploadpicture_cannotsave'] = 'Kan afbeelding voor gebruiker {$a} niet b
 $string['uploadpicture_cannotunzip'] = 'Kan fotobestanden niet uitpakken';
 $string['uploadpicture_invalidfilename'] = 'Afbeeldingsbestand {$a} heeft ongeldige tekens in de naam. Overgeslagen.';
 $string['uploadpicture_overwrite'] = 'Bestaande gebruikersfoto\'s overschrijven?';
-$string['uploadpictures'] = 'Upload gebruikersfoto\'s';
-$string['uploadpictures_help'] = '<p>Gebruikersfoto\'s kunnen als zip-bestand of afbeeldingsbestand geüpload worden. De bestanden moeten als naam <i>gekozen-gebruikersattribuut.extentie</i> hebben. Bijvoorbeeld, als het gekozen gebruikersattribuut voor het koppelen van de afbeeldingen de gebruikersnaam is en de gebruikersnaam is user1234, dan moet de bestandsnaam user1234.jpg zijn.</p>
-<p>Ondersteunde afbeeldingsformaten zijn gif, jpg, en png.</p>
-<p>Afbeeldingsbestandsnamen zijn niet hoofdlettergevoelig.</p>';
 $string['uploadpicture_userfield'] = 'Gebruikersattribuut waaraan foto\'s gekoppeld worden:';
 $string['uploadpicture_usernotfound'] = 'De gebruiker met \'{$a->userfield}\' met de waarde \'{$a->uservalue}\' bestaat niet. Overgeslagen.';
 $string['uploadpicture_userskipped'] = 'Gebruiker {$a} overgeslagen (heeft al een afbeelding)';
 $string['uploadpicture_userupdated'] = 'Foto geüpdatet voor gebruiker {$a}';
+$string['uploadpictures'] = 'Upload gebruikersfoto\'s';
+$string['uploadpictures_help'] = '<p>Gebruikersfoto\'s kunnen als zip-bestand of afbeeldingsbestand geüpload worden. De bestanden moeten als naam <i>gekozen-gebruikersattribuut.extentie</i> hebben. Bijvoorbeeld, als het gekozen gebruikersattribuut voor het koppelen van de afbeeldingen de gebruikersnaam is en de gebruikersnaam is user1234, dan moet de bestandsnaam user1234.jpg zijn.</p>
+<p>Ondersteunde afbeeldingsformaten zijn gif, jpg, en png.</p>
+<p>Afbeeldingsbestandsnamen zijn niet hoofdlettergevoelig.</p>';
+$string['uploaduser:uploaduserpictures'] = 'Gebruikersfoto\'s uploaden';
 $string['uploadusers'] = 'Uploaden';
 $string['uploadusers_help'] = 'Gebruikers kunnen geïmporteerd worden en optioneel aangemeld worden in een cursus vanuit een tekstbestand. Het bestand moet er als volgt uitzien:
 
@@ -74,7 +75,6 @@ $string['uploadusers_help'] = 'Gebruikers kunnen geïmporteerd worden en optione
 * Vereiste veldnamen zijn: username, firstname,  lastname, email';
 $string['uploaduserspreview'] = 'Voorbeeld uploaden gebruikers';
 $string['uploadusersresult'] = 'Resultaat uploaden gebruikers';
-$string['uploaduser:uploaduserpictures'] = 'Gebruikersfoto\'s uploaden';
 $string['useraccountupdated'] = 'Gebruiker geüpdatet';
 $string['useraccountuptodate'] = 'Gebruiker up-to-date';
 $string['userdeleted'] = 'Gebruiker verwijderd';

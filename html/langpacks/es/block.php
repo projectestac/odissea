@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block', language 'es', version '3.8'.
  *
- * @package   block
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,7 +41,7 @@ $string['createdat_help'] = 'La ubicación original donde se creo el bloque. Los
 $string['defaultregion'] = 'Región por defecto';
 $string['defaultregion_help'] = 'Los temas pueden definir una o más regiones de bloques con nombre donde se pueden mostrar los bloques. Este ajuste define en cuáles de éstas quiere que aparezca este bloque por defecto. La región puede ser anulada en páginas específicas si es necesario.';
 $string['defaultweight'] = 'Peso por defecto';
-$string['defaultweight_help'] = 'El peso por defecto permite escoger aproximádamente donde quiere que aparezca el bloque en la región escogida, bien arriba del todo o al fondo. La ubicación final se calcula a partir de todos los bloques en esa región (por ejemplo, sólo un bloque puede estar arriba del todo). Este valor puede ser anulado en páginas específicas si es necesario.';
+$string['defaultweight_help'] = 'El peso por defecto permite escoger aproximadamente dónde quiere que aparezca el bloque en la región escogida, bien arriba del todo o abajo del todo. La ubicación final se calcula a partir de todos los bloques en esa región (por ejemplo, sólo un bloque puede estar arriba del todo). Este valor puede ser anulado en páginas específicas si es necesario.';
 $string['deleteblock'] = 'Eliminar bloque {$a}';
 $string['deleteblockcheck'] = '¿Seguro que desea eliminar el bloque {$a}?';
 $string['deleteblockwarning'] = '<p> Está a punto de borrar un bloque que aparece en otra parte. </p><p> La ubicación original del bloque es: {$a->location} <br /> Mostrar el tipo de página: {$a->pagetype} </p><p> ¿Está seguro que desea continuar? </p>';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filters', language 'sv', version '3.8'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,6 +29,7 @@ $string['actfilterhdr'] = 'Aktiva filter';
 $string['addfilter'] = 'Lägg till filter';
 $string['anycategory'] = 'valfri kategori';
 $string['anycourse'] = 'valfri kurs';
+$string['anycourses'] = 'Registrerad i valfri kurs';
 $string['anyfield'] = 'valfritt fält';
 $string['anyrole'] = 'valfri roll';
 $string['anyvalue'] = 'valfritt värde';
@@ -37,24 +38,26 @@ $string['categoryrole'] = 'Roll för kategori';
 $string['contains'] = 'innehåller';
 $string['content'] = 'Innehåll';
 $string['contentandheadings'] = 'Innehåll och rubriker';
+$string['coursecategory'] = 'kurskategori';
 $string['courserole'] = 'Kursroll';
 $string['courserolelabel'] = '{$a->label} är {$a->rolename} i {$a->coursename} från {$a->categoryname}';
 $string['courserolelabelerror'] = '{$a->label} error: kursen {$a->coursename} finns inte.';
+$string['coursevalue'] = 'kursvärde';
 $string['datelabelisafter'] = '{$a->label} kommer efter {$a->after}';
 $string['datelabelisbefore'] = '{$a->label} kommer före {$a->before}';
 $string['datelabelisbetween'] = '{$a->label} kommer mellan {$a->after} och {$a->before}';
 $string['defaultx'] = 'Standard ({$a})';
-$string['disabled'] = 'Avaktiverad';
+$string['disabled'] = 'Inaktiverad';
 $string['doesnotcontain'] = 'innehåller inte';
 $string['endswith'] = 'slutar med';
-$string['filterallwarning'] = 'Om Du tillämpar filter på rubriker liksom på innehåll så kan det öka belastningen på Din server. Var snäll och använd inställningen "Tillämpa på" sparsamt. Den mest typiska användningen gäller multilang-filtret.';
+$string['filterallwarning'] = 'Om du tillämpar filter på rubriker liksom på innehåll så kan det öka belastningen på din server. Vänligen använd inställningen "Tillämpa på" sparsamt. Den mest typiska användningen gäller multilang-filtret.';
 $string['filtersettings'] = 'Inställningar för filter';
-$string['filtersettingsforin'] = 'Inställningar för filter för {$a->filter} i {$a->context}';
-$string['filtersettings_help'] = 'Den här sidan låter Dig ställa in filter som "av" eller "på" i ett specifikt område på webbplatsen.
+$string['filtersettings_help'] = 'Den här sidan låter dig ställa in filter som "av" eller "på" i ett specifikt område på webbplatsen.
 
-En del filter kan också tillåta Dig att ange lokala inställningar och isåfall kommer det att finnas en länk bredvid namnen på dessa.';
-$string['filtersettingsin'] = 'Inställningar för filter i {$a}';
-$string['firstaccess'] = 'Första åtkomst';
+En del filter kan också tillåta dig att ange lokala inställningar och isåfall kommer det att finnas en länk bredvid namnen på dessa.';
+$string['filtersettingsforin'] = 'Inställningar för filter för {$a->filter} i {$a->context}';
+$string['filtersettingsin'] = 'Filterinställningar för {$a}';
+$string['firstaccess'] = 'Första inloggning';
 $string['globalrolelabel'] = '{$a->label} är {$a->value}';
 $string['isactive'] = 'Aktiv?';
 $string['isafter'] = 'är efter {$a}';
@@ -65,19 +68,24 @@ $string['isempty'] = 'är tom';
 $string['isequalto'] = 'är lika med';
 $string['isnotdefined'] = 'är inte definierad';
 $string['isnotequalto'] = 'är inte lika med';
-$string['neveraccessed'] = 'Aldrig nådd';
+$string['limiterfor'] = '{$a} fältavgränsare';
+$string['neveraccessed'] = 'Aldrig besökt';
 $string['nevermodified'] = 'Aldrig modifierad';
 $string['newfilter'] = 'Nytt filter';
 $string['nofiltersenabled'] = 'Inga filter plugins har aktiverats på denna webbplats.';
 $string['off'] = 'Av';
 $string['offbutavailable'] = 'Av, men tillgänglig';
 $string['on'] = 'På';
+$string['privacy:reason'] = 'Filterundersystemet lagrar ingen personlig information.';
+$string['profilefilterfield'] = 'Profilfältnamn';
+$string['profilefilterlimiter'] = 'Profilfält-operator';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'Ta bort alla filter';
 $string['removeselected'] = 'Ta bort de valda';
 $string['selectlabel'] = '{$a->label} {$a->operator} {$a->value}';
-$string['startswith'] = 'inleds med';
+$string['startswith'] = 'börjar med';
 $string['tablenosave'] = 'Ändringarna i den ovanstående tabellen sparas automatiskt.';
 $string['textlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['textlabelnovalue'] = '{$a->label} {$a->operator}';
+$string['valuefor'] = '{$a} värde';

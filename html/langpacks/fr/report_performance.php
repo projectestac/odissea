@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_performance', language 'fr', version '3.8'.
  *
- * @package   report_performance
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_performance
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['check_backup'] = 'Sauvegarde automatique';
-$string['check_backup_comment_disable'] = 'La performance peut être dégradée durant le processus de sauvegarde. Si les sauvegardes automatiques sont activées, elles devraient être planifiées en dehors des heures de pointe.';
+$string['check_backup_comment_disable'] = 'La performance peut être dégradée durant le processus de sauvegarde. Si les sauvegardes automatiques sont activées, elles doivent être planifiées en dehors des heures de pointe.';
 $string['check_backup_comment_enable'] = 'La performance peut être dégradée durant le processus de sauvegarde. Elles doivent être planifiées en dehors des heures de pointe.';
 $string['check_backup_details'] = 'L\'activation des sauvegardes automatiques créera des archives de tous les cours de ce site à l\'heure que vous indiquez.<p>Durant cette opération, des ressources serveur supplémentaires seront utilisées, qui pourraient dégrader la performance.</p>';
 $string['check_cachejs_comment_disable'] = 'Si ce réglage est activé, la performance de chargement des pages est améliorée.';
@@ -47,8 +47,8 @@ $string['edit'] = 'Modifier';
 $string['enabled'] = 'Activé';
 $string['issue'] = 'Problème';
 $string['morehelp'] = 'plus d\'aide';
-$string['performancereportdesc'] = 'Ce rapport liste les problèmes pouvant dégrader la performance du site {$a}';
 $string['performance:view'] = 'Consulter le rapport de performance';
+$string['performancereportdesc'] = 'Ce rapport liste les problèmes pouvant dégrader la performance du site {$a}';
 $string['pluginname'] = 'Panorama de performance';
 $string['privacy:metadata'] = 'Le plugin Panorama de performance n\'enregistre aucune donnée personnelle.';
 $string['value'] = 'Valeur';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,26 +12,27 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignment', language 'eu', version '3.8'.
  *
- * @package   assignment
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignment
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignment:addinstance'] = 'Gehitu zeregin berria';
-$string['assignmentdisabled'] = 'Heredatutako "Zeregina 2.2" jarduera desgaituta dago.';
 $string['assignment:exportownsubmission'] = 'Esportatu norberaren bidalketa';
 $string['assignment:exportsubmission'] = 'Esportatu bidalketa';
 $string['assignment:grade'] = 'Kalifikatu zeregina';
-$string['assignmentneedsupgrade'] = 'Zaharkitutako "Zeregina 2.2" jarduera ezabatua izan da.';
 $string['assignment:submit'] = 'Bidali zeregina';
 $string['assignment:view'] = 'Ikusi zeregina';
+$string['assignmentdisabled'] = 'Heredatutako "Zeregina 2.2" jarduera desgaituta dago.';
+$string['assignmentneedsupgrade'] = 'Zaharkitutako "Zeregina 2.2" jarduera ezabatua izan da.';
 $string['messageprovider:assignment_updates'] = 'Zereginen jakinarazpenak (2.2)';
 $string['modulename'] = 'Zeregina 2.2 (Desgaituta)';
 $string['modulename_help'] = 'Heredatutako jarduera-modulu hau Moodletik ezabatu da.';
@@ -43,10 +43,6 @@ $string['page-mod-assignment-x'] = 'Zereginaren edozein orri';
 $string['pluginadministration'] = 'Zeregina  2.2 (Desgaituta) moduluaren kudeaketa';
 $string['pluginname'] = 'Zeregina 2.2 (Desgaituta)';
 $string['privacy:markedsubmissionspath'] = 'kalifikatutakobidalketak';
-$string['privacy:metadata:assignmentfilter'] = 'Zeregin-bidalketen iragazkiaren hobespena.';
-$string['privacy:metadata:assignmentmailinfo'] = 'Zeregin-bidalketen posta elektroniko bidezko informazioaren hobespena.';
-$string['privacy:metadata:assignmentperpage'] = 'Orri bakoitzean erakutsi beharreko zeregin-bidalketa kopuruaren hobespena.';
-$string['privacy:metadata:assignmentquickgrade'] = 'Zereginetako kalifikazio azkarraren hobespena.';
 $string['privacy:metadata:assignment_submissions'] = 'Zereginaren lotutako zeregin-bidalketak.';
 $string['privacy:metadata:assignment_submissions:data1'] = 'Zereginean bidalitako online testua.';
 $string['privacy:metadata:assignment_submissions:data2'] = 'Zeregin-bidalketaren jarraipenaren egoera.';
@@ -59,5 +55,9 @@ $string['privacy:metadata:assignment_submissions:timecreated'] = 'Zeregin-bidalk
 $string['privacy:metadata:assignment_submissions:timemarked'] = 'Zeregin-bidalketa kalifikatu zeneko unea.';
 $string['privacy:metadata:assignment_submissions:timemodified'] = 'Zeregin-bidalketa aldatu zeneko unea.';
 $string['privacy:metadata:assignment_submissions:userid'] = 'Zeregin-bidalketa egin duen erabiltzailearen IDa.';
+$string['privacy:metadata:assignmentfilter'] = 'Zeregin-bidalketen iragazkiaren hobespena.';
+$string['privacy:metadata:assignmentmailinfo'] = 'Zeregin-bidalketen posta elektroniko bidezko informazioaren hobespena.';
+$string['privacy:metadata:assignmentperpage'] = 'Orri bakoitzean erakutsi beharreko zeregin-bidalketa kopuruaren hobespena.';
+$string['privacy:metadata:assignmentquickgrade'] = 'Zereginetako kalifikazio azkarraren hobespena.';
 $string['privacy:submissionpath'] = 'bidalketa';
 $string['upgradenotification'] = 'Jarduera hau zeregin modulu zaharrarekin eginda dago.';

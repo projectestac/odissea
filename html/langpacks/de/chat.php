@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'chat', language 'de', version '3.8'.
  *
- * @package   chat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     chat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'Es gibt einen angekündigten Chat.';
+$string['activityoverview'] = 'Sie haben angekündigte Chatsitzungen';
 $string['ajax'] = 'Version mit Ajax';
 $string['autoscroll'] = 'Automatisch scrollen';
 $string['beep'] = 'Beep';
@@ -36,13 +36,13 @@ $string['chat:chat'] = 'Chat betreten';
 $string['chat:deletelog'] = 'Chat-Logdaten löschen';
 $string['chat:exportparticipatedsession'] = 'Chat-Sitzung mit eigener Teilnahme exportieren';
 $string['chat:exportsession'] = 'Alle Chat-Sitzungen exportieren';
+$string['chat:readlog'] = 'Chat-Logdaten anzeigen';
+$string['chat:talk'] = 'Im Chat sprechen';
+$string['chat:view'] = 'Chataktivität anzeigen';
 $string['chatintro'] = 'Beschreibung';
 $string['chatname'] = 'Name des Chats';
-$string['chat:readlog'] = 'Chat-Logdaten anzeigen';
 $string['chatreport'] = 'Chat-Protokolle';
-$string['chat:talk'] = 'Im Chat sprechen';
 $string['chattime'] = 'Nächster Chat';
-$string['chat:view'] = 'Chataktivität anzeigen';
 $string['compact'] = 'Kompakt';
 $string['composemessage'] = 'Mitteilung schreiben';
 $string['configmethod'] = 'Die Chat-Methode AJAX bietet eine AJAX-basierte Chat-Oberfläche, die den Server regelmäßig kontaktiert, um Aktualisierungen zu erhalten. Bei der Chat-Methode Normal wenden sich Clients regelmäßig an den Server, um Aktualisierungen zu erhalten. Es erfordert keine Konfiguration und funktioniert überall, kann jedoch eine große Belastung des Servers verursachen, wenn viele Nutzer/innen chatten. Die Verwendung eines Server-Daemons erfordert Shell-Zugriff auf Unix, führt jedoch zu einer schnell skalierbaren Chat-Umgebung.';
@@ -62,7 +62,7 @@ $string['deletesession'] = 'Diese Sitzung löschen';
 $string['deletesessionsure'] = 'Möchten Sie diese Sitzung wirklich löschen?';
 $string['donotusechattime'] = 'Keinen Termin anzeigen';
 $string['enterchat'] = 'Chat betreten';
-$string['entermessage'] = 'Mitteilung schreiben';
+$string['entermessage'] = 'Schreiben Sie Ihre Mitteilung';
 $string['errornousers'] = 'Niemanden gefunden!';
 $string['eventmessagesent'] = 'Mitteilung  gesendet';
 $string['eventsessionsviewed'] = 'Sitzungen angezeigt';
@@ -72,13 +72,13 @@ $string['explainmethodnormal'] = 'Diese Einstellungen wirken sich nur aus, wenn 
 $string['generalconfig'] = 'Allgemeines';
 $string['idle'] = 'Leerlauf';
 $string['indicator:cognitivedepth'] = 'Chat kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Chat-Aktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Chat kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Chat-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen, Feedback kommentieren).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Chat-Aktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Chat sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Chat-Aktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Chat sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Chat-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Chat-Aktivität erreicht hat.';
 $string['inputarea'] = 'Eingabefeld';
 $string['invalidid'] = 'Chat-Raum wurde nicht gefunden!';
 $string['list_all_sessions'] = 'Alle Sitzungen auflisten';
@@ -103,8 +103,8 @@ Ein Chat kann eine einmalige Aktivität sein, aber auch täglich oder wöchentli
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Nie löschen';
 $string['nextsession'] = 'Nächste Sitzung';
-$string['nochat'] = 'Kein Chat gefunden';
 $string['no_complete_sessions_found'] = 'Keine beendete Sitzung gefunden';
+$string['nochat'] = 'Kein Chat gefunden';
 $string['noguests'] = 'Der Chat ist für Gäste nicht zugänglich';
 $string['nomessages'] = 'Keine Mitteilungen';
 $string['nopermissiontoseethechatlog'] = 'Sie sind nicht berechtigt, die Chat-Protokolle anzusehen.';
@@ -137,7 +137,7 @@ $string['refreshuserlist'] = 'Nutzerliste aktualisieren';
 $string['removemessages'] = 'Alle Mitteilungen entfernen';
 $string['repeatdaily'] = 'Täglich zur gleichen Zeit';
 $string['repeatnone'] = 'Nur zum angegebenen Termin';
-$string['repeattimes'] = 'Wiederholungen';
+$string['repeattimes'] = 'Chat-Termine veröffentlichen';
 $string['repeatweekly'] = 'Wöchentlich zur gleichen Zeit';
 $string['saidto'] = 'sagte zu';
 $string['savemessages'] = 'Sitzungen speichern';
@@ -150,7 +150,7 @@ $string['serverip'] = 'Server-IP';
 $string['servermax'] = 'Maximale Nutzerzahl';
 $string['serverport'] = 'Server-Port';
 $string['sessions'] = 'Chat-Sitzungen';
-$string['sessionstart'] = 'Der nächste Chat beginnt {$a->date}, (also in {$a->fromnow})';
+$string['sessionstart'] = 'Nächster Chat beginnt {$a->date}, (also in {$a->fromnow})';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Chat-Protokolle sichtbar für alle';
 $string['studentseereports_help'] = 'Mit der Einstellung \'Nein\' dürfen ausschließlich Nutzer/innen mit dem Recht \'mod/chat:readlog\' die Chat-Protokolle sehen.';

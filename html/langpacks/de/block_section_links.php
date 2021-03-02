@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_section_links', language 'de', version '3.8'.
  *
- * @package   block_section_links
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_section_links
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,9 @@ $string['incby2'] = 'Schrittweite2';
 $string['incby2_help'] = 'Der Wert für den Abschnitt wird - beginnend mit \'1\' - für jeden darauf folgenden Abschnittslink um diesen Wert erhöht';
 $string['jumptocurrenttopic'] = 'Aktueller Abschnitt';
 $string['jumptocurrentweek'] = 'Aktuelle Woche';
-$string['numsections1'] = 'Untere Grenze1';
+$string['numsections1'] = 'Anzahl von Abschnitten';
 $string['numsections1_help'] = 'Wenn die Anzahl der Abschnitte im Kurs größer ist, erfolgt die Erhöhung in Schritten mit jeweils diesem Wert.';
-$string['numsections2'] = 'Untere Grenze2';
+$string['numsections2'] = 'Alternative Anzahl von Abschnitten';
 $string['numsections2_help'] = 'Wenn die Anzahl der Abschnitte im Kurs größer ist, erfolgt die Erhöhung in Schritten mit jeweils diesem alternativen Wert.';
 $string['pluginname'] = 'Kursabschnitte';
 $string['privacy:metadata'] = 'Der Block Abschnitte zeigt nur Daten an, die an anderen Orten gespeichert sind.';

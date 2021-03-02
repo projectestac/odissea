@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradereport_history', language 'ar', version '3.8'.
  *
- * @package   gradereport_history
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradereport_history
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['datetime'] = 'التاريخ والوقت';
 $string['dateto'] = 'حتى تاريخ';
 $string['deleteditemid'] = 'إحذف المفردة ذات المُعرَّف {$a}';
 $string['errajaxsearch'] = 'وقع خطأ عند البحث عن المستخدمين';
-$string['eventgradereportviewed'] = 'تمت معاينة تقرير ماضي التقييم';
+$string['eventgradereportviewed'] = 'تقرير ماضي التقييم تمت معاينته';
 $string['excluded'] = 'مستبعد من الحسابات';
 $string['exportfilename'] = 'ماضي التقييم';
 $string['feedbacktext'] = 'نص الإفادة';
@@ -42,9 +42,9 @@ $string['foundoneuser'] = 'تم العثور على مستخدم واحد';
 $string['gradenew'] = 'علامة منقحة';
 $string['gradeold'] = 'العلامة الأصلية';
 $string['grader'] = 'المقيِّم';
+$string['history:view'] = 'معاينة ماضي التقييم';
 $string['historyperpage'] = 'مدخلات الماضي في الصفحة';
 $string['historyperpage_help'] = 'هذا الإعداد يحدد عدد مدخلات الماضي المعروضة لكل صفحة في تقرير ماضي التقييم.';
-$string['history:view'] = 'معاينة ماضي التقييم';
 $string['loadmoreusers'] = 'تنزيل المزيد من المستخدمين...';
 $string['pluginname'] = 'ماضي التقييم';
 $string['preferences'] = 'تفضيلات ماضي التقييم';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'fr', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,8 +43,7 @@ $string['configpopupwidth'] = 'Largeur par défaut des fenêtres pop-up';
 $string['contentheader'] = 'Contenu';
 $string['displayoptions'] = 'Options d\'affichage disponibles';
 $string['displayselect'] = 'Affichage';
-$string['displayselectexplain'] = 'Choisir le type d\'affichage. Tous les types ne sont pas adéquats pour tous les fichiers.';
-$string['displayselect_help'] = 'Ce réglage, ainsi que le type de fichier et la capacité du navigateur à intégrer des objets (<i>embedding</i>), détermine la façon dont le fichier est affiché. Les options sont :
+$string['displayselect_help'] = 'Ce réglage, ainsi que le type de fichier et la capacité du navigateur à intégrer des objets, détermine la façon dont le fichier est affiché. Les options sont :
 
 * Automatique : la meilleure option d\'affichage pour le type de fichier concerné est automatiquement sélectionnée
 * Intégrer : le fichier est affiché dans la page au-dessous de la barre de navigation, avec la description du fichier et tous les blocs
@@ -53,6 +52,7 @@ $string['displayselect_help'] = 'Ce réglage, ainsi que le type de fichier et la
 * Fenêtre surgissante : le fichier est affiché dans une nouvelle fenêtre de navigateur sans menus ni barre d\'adresse
 * Dans un cadre : le fichier est affiché dans un cadre en dessous de la barre de navigation et de la description du fichier
 * Nouvelle fenêtre : le fichier est affiché dans une nouvelle fenêtre du navigateur, avec menus et barre d\'adresse';
+$string['displayselectexplain'] = 'Choisir le type d\'affichage. Tous les types ne sont pas adéquats pour tous les fichiers.';
 $string['dnduploadresource'] = 'Créer une ressource fichier';
 $string['encryptedcode'] = 'Code chiffré';
 $string['filenotfound'] = 'Fichier introuvable.';
@@ -62,13 +62,13 @@ $string['filtername'] = 'Liens automatiques des noms des ressources';
 $string['forcedownload'] = 'Forcer le téléchargement';
 $string['framesize'] = 'Hauteur du cadre';
 $string['indicator:cognitivedepth'] = 'Fichier : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Fichier.';
 $string['indicator:cognitivedepthdef'] = 'Fichier : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « Fichier » (niveaux : pas de vue, vue).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Fichier.';
 $string['indicator:socialbreadth'] = 'Fichier : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Fichier.';
 $string['indicator:socialbreadthdef'] = 'Fichier : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « Fichier » (niveaux : pas de participation, participant seul).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Fichier.';
 $string['legacyfiles'] = 'Migration des anciens fichiers du cours';
 $string['legacyfilesactive'] = 'Activée';
 $string['legacyfilesdone'] = 'Terminée';
@@ -99,13 +99,13 @@ $string['printintro'] = 'Afficher la description de la ressource';
 $string['printintroexplain'] = 'Indique s\'il faut afficher la description de la ressource au-dessus du contenu. Certains types d\'affichage n\'afficheront toutefois pas cette description, même lorsque l\'option est activée.';
 $string['privacy:metadata'] = 'Le plugin de ressource Fichier n\'enregistre aucune donnée personnelle.';
 $string['resource:addinstance'] = 'Ajouter une ressource';
+$string['resource:exportresource'] = 'Exporter des ressources';
+$string['resource:view'] = 'Voir les ressources';
 $string['resourcecontent'] = 'Fichiers et sous-dossiers';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'Exporter des ressources';
-$string['resource:view'] = 'Voir les ressources';
 $string['search:activity'] = 'Fichier';
 $string['selectmainfile'] = 'Veuillez choisir le fichier principal en cliquant sur son icône.';
 $string['showdate'] = 'Afficher la date de dépôt/de modification';

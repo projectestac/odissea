@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_self', language 'eu', version '3.8'.
  *
- * @package   enrol_self
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_self
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -50,7 +50,7 @@ $string['enrolenddate_help'] = 'Gaituz gero, erabiltzaileek euren burua soilik d
 $string['enrolenddaterror'] = 'Matrikulaziorako amaiera-data ezin da hasierakoa baina lehenagokoa izan';
 $string['enrolme'] = 'Matrikula nazazu';
 $string['enrolperiod'] = 'Matrikulazioaren iraupena';
-$string['enrolperiod_desc'] = 'Matrikulazioaren lehenetsitako iraupena. Zero ezarriz gero, matrikulazioa modu lehenetsian mugarik gabekoa izango da.';
+$string['enrolperiod_desc'] = 'Matrikulazioaren iraupen lehenetsia. Zero ezarriz gero, matrikulazioa modu lehenetsian mugarik gabekoa izango da.';
 $string['enrolperiod_help'] = 'Matrikulazioaren iraupena, erabiltzaileak bere burua matrikulatzen duen unetik hasita. Desgaituz gero, matrikulazioa mugarik gabekoa izango da.';
 $string['enrolstartdate'] = 'Hasiera-data';
 $string['enrolstartdate_help'] = 'Gaituz gero, erabiltzaileek soilik data honetatik aurrera izango dute matrikulatzeko aukera.';
@@ -110,7 +110,7 @@ $string['sendcoursewelcomemessage'] = 'Bidali ikastarorako harrera-mezua';
 $string['sendcoursewelcomemessage_help'] = 'Erabiltzaileek beren burua ikastaro batean matrikulatzen dutenean ongi etorri e-maila jasoko dute. Ikastaroko kontaktuak bidaltzen badu (modu lehenetsian irakasleak) eta erabiltzaile batek baino gehiagok badute rol hori, e-maila rol hori daukan lehen erabiltzailearen izenean bidaliko da.';
 $string['sendexpirynotificationstask'] = 'Matrikulazio automatikoen iraungitze-jakinarazpenen bidalketa ataza';
 $string['showhint'] = 'Erakutsi argibidea';
-$string['showhint_desc'] = 'Erakutsi bisitarien sarbide-gakoaren lehenbiziko letra';
+$string['showhint_desc'] = 'Erakutsi bisitarien sarbide-giltzaren lehenbiziko letra';
 $string['status'] = 'Baimendu existitzen diren matrikulazioak';
 $string['status_desc'] = 'Gaitu matrikulazio automatikoa ikastaro berrietan';
 $string['status_help'] = '\'Baimendu matrikula berriak\' aukerarekin batera gaituz gero, soilik aurretik auto-matrikulatutako erabiltzaileek izango dute ikastarorako sarbidea. Desgaituz gero matrikulazio automatikoki gehigarria desgaituko da, existitzen diren matrikulazioak etengo direlako eta erabiltzaile berriek ezingo dutelako bere burua matrikulatu.';

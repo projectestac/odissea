@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'ko', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['allday'] = '모든 날';
 $string['annually'] = '매년';
 $string['calendar'] = '달력';
 $string['calendarheading'] = '{$a} 달력';
-$string['calendarpreferences'] = '맞춤 달력';
-$string['calendarurl'] = '달력의 웹주소 : {$a}';
+$string['calendarpreferences'] = '달력 선택 설정';
+$string['calendarurl'] = '달력 URL : {$a}';
 $string['category'] = '범주';
 $string['clickhide'] = '감추기';
 $string['clickshow'] = '보이기';
@@ -42,6 +42,7 @@ $string['collastupdated'] = '마지막 업데이트';
 $string['colpoll'] = '업데이트';
 $string['commontasks'] = '선택사항들';
 $string['confirmeventdelete'] = '이 일정을 삭제할까요?';
+$string['confirmeventseriesdelete'] = '"{$a->name}"일정은 반복 일정의 일부입니다. 이 일정만 지우겠습니까, 아니면 모든 {$a->count} 반복 일정을 지우겠습니까?';
 $string['course'] = '강좌';
 $string['courseevent'] = '강좌행사';
 $string['courseevents'] = '강좌일정';
@@ -78,7 +79,7 @@ $string['eventduration'] = '기간';
 $string['eventendtime'] = '끝나는 시간';
 $string['eventinstanttime'] = '시간';
 $string['eventkind'] = '행사 유형';
-$string['eventname'] = '이름';
+$string['eventname'] = '이벤트 제목';
 $string['eventnone'] = '일정 없음';
 $string['eventrepeat'] = '반복';
 $string['eventsall'] = '모든 일정';
@@ -96,10 +97,10 @@ $string['expired'] = '기간이 끝남';
 $string['explain_site_timeformat'] = '사이트 전체의 시간 표시 형태를 12시간제로 표시할지 24시간제로 표시할지를 선택할 수 있습니다. "기본값"을 선택하면 자동적으로 사이트에서 사용하는 시간표시 형태로 나타납니다. 사용자들은 자신의 설정에서 이를 바꿀 수 있습니다.';
 $string['export'] = '내보내기';
 $string['exportbutton'] = '내보냄';
-$string['exportcalendar'] = '일정 내보냄';
+$string['exportcalendar'] = '달력 내보냄';
 $string['fri'] = '금';
 $string['friday'] = '금요일';
-$string['generateurlbutton'] = '일정 URL 가져옴';
+$string['generateurlbutton'] = '달력 URL 가져옴';
 $string['global'] = '전체';
 $string['globalevent'] = '전체 행사';
 $string['globalevents'] = '전체 일정';
@@ -134,8 +135,6 @@ $string['noupcomingevents'] = '계획된 일정이 없습니다.';
 $string['oneevent'] = '일정 하나';
 $string['pollinterval'] = '업데이트 간격';
 $string['pollinterval_help'] = '얼마나 자주 달력이 새 이벤트로 업데이트되기를 원하는지.';
-$string['preferences'] = '맞춤설정';
-$string['preferences_available'] = '개인적 설정';
 $string['pref_lookahead'] = '곧 있을 일정 미리보기';
 $string['pref_lookahead_help'] = '향후 행사로 표시될 행사가 예정된 날의 수를 설정합니다. 이 이후의 행사는 향후 행사에 나타나지 않습니다. 이 시간 기간동안 모든 행사가 표시될 것이라는것은 보증되지 않습니다.: 만일 (최대 향후 행사 수 보다) 너무 많은 행사가 있는 경우 나중 행사들은 표시되지 않을 것입니다.';
 $string['pref_maxevents'] = '도래할 일정의 최대수';
@@ -146,6 +145,8 @@ $string['pref_startwday'] = '한 주의 첫 요일';
 $string['pref_startwday_help'] = '여기에서 선택한 요일을 한 주를 시작하는 요일로 달력에 표시할 것이다. ';
 $string['pref_timeformat'] = '시간 표시 형식';
 $string['pref_timeformat_help'] = '시간 표시 방법을 12시 혹은 24시 형식 중에서 고를 수 있다. "기본"을 선택하면 사이트에서 사용하는 기본 언어팩에 의해 자동적으로 결정된다.';
+$string['preferences'] = '맞춤설정';
+$string['preferences_available'] = '개인적 설정';
 $string['recentupcoming'] = '현재와 추후 2달';
 $string['repeatedevents'] = '반복된 일정';
 $string['repeateditall'] = '반복된 일련의 모든 {$a} 일정 변경';

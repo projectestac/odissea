@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'analytics', language 'de', version '3.8'.
  *
- * @package   analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,9 +29,9 @@ $string['analysablenotused'] = 'Analyse-Objekt {$a->analysableid} nicht genutzt:
 $string['analysablenotvalidfortarget'] = 'Analyse-Objekt {$a->analysableid} ist für dieses Ziel nicht gültig: {$a->result}';
 $string['analysisinprogress'] = 'Wird noch von einer vorherigen Analyse bearbeitet';
 $string['analytics'] = 'Analytics';
-$string['analyticsdisabled'] = '"Analytics" ist deaktiviert. Sie können die Funktion unter " Website-Administration - Zusatzoptionen" aktivieren.';
-$string['analyticslogstore'] = 'Verwendeter Log-Speicher';
-$string['analyticslogstore_help'] = 'Der Log-Speicher, der von der Analytics-API genutzt wird, um die Nutzeraktivitäten auszuwerten.';
+$string['analyticsdisabled'] = '"Analytics" ist deaktiviert. Sie können die Funktion unter "Website-Administration > Zusatzoptionen" aktivieren.';
+$string['analyticslogstore'] = 'Verwendete Logdaten';
+$string['analyticslogstore_help'] = 'Logdaten, die von der Analytics-API genutzt werden, um die Nutzeraktivitäten auszuwerten.';
 $string['analyticssettings'] = 'Analytics-Einstellungen';
 $string['analyticssiteinfo'] = 'Website-Informationen';
 $string['defaultpredictionsprocessor'] = 'Standard-Prozessor für Vorhersagen';
@@ -63,16 +63,16 @@ $string['errornotimesplittings'] = 'Dieses Modell hat keine Zeitaufteilungsmetho
 $string['errorpredictioncontextnotavailable'] = 'Der Vorhersagenkontext ist nicht mehr verfügbar.';
 $string['errorpredictionformat'] = 'Falsches Format zur Vorhersagenberechnung';
 $string['errorpredictionnotfound'] = 'Vorhersage nicht gefunden';
-$string['errorpredictionsprocessor'] = 'Vorhersagen-Prozessorfehler: {$a}';
-$string['errorpredictwrongformat'] = 'Die Ausgabe des Vorhersagen-Prozessors kann nicht entschlüsselt werden: "{$a}"';
-$string['errorprocessornotready'] = 'Der ausgewählte Vorhersagen-Prozessor ist nicht bereit: {$a}';
+$string['errorpredictionsprocessor'] = 'Prognosen-Prozessorfehler: {$a}';
+$string['errorpredictwrongformat'] = 'Die Ausgabe des Prognosem-Prozessors kann nicht entschlüsselt werden: "{$a}"';
+$string['errorprocessornotready'] = 'Der ausgewählte Prognosen-Prozessor ist nicht bereit: {$a}';
 $string['errorsamplenotavailable'] = 'Das prognostizierte Beispiel ist nicht mehr verfügbar.';
 $string['errorunexistingmodel'] = 'Nicht vorhandenes Modell {$a}';
 $string['errorunexistingtimesplitting'] = 'Die gewählte Zeitaufteilungsmethode ist nicht verfügbar.';
 $string['errorunknownaction'] = 'Unbekannter Vorgang';
 $string['eventinsightsviewed'] = 'Betrachtete Einschätzungen';
 $string['eventpredictionactionstarted'] = 'Vorhersageprozess gestartet';
-$string['fixedack'] = 'Anerkannt';
+$string['fixedack'] = 'Annehmen';
 $string['incorrectlyflagged'] = 'Falsch markiert';
 $string['insightinfomessageaction'] = '{$a->text}: {$a->url}';
 $string['insightinfomessagehtml'] = 'Das System hat eine Einschätzung für Sie erstellt.';
@@ -95,7 +95,7 @@ $string['modeinstructionblendedhybrid'] = 'Blended oder Hybrid';
 $string['modeinstructionfacetoface'] = 'Face to Face';
 $string['modeinstructionfullyonline'] = 'Vollständig online';
 $string['modeloutputdir'] = 'Ausgabeverzeichnis';
-$string['modeloutputdirinfo'] = 'Verzeichnis, in dem die Vorhersagen-Prozessoren alle Evaluationsinformationen speichern. Dies ist hilfreich für die Fehlerbehebung und Auswertung.';
+$string['modeloutputdirinfo'] = 'Verzeichnis, in dem die Prognose-Prozessoren alle Evaluationsinformationen speichern. Dies ist hilfreich für die Fehlerbehebung und Auswertung.';
 $string['modeltimelimit'] = 'Analysezeitlimit pro Modell';
 $string['modeltimelimitinfo'] = 'Diese Option begrenzt die Zeit, die jedes Modell für die Analyse von Website-Inhalten benötigen darf.';
 $string['neutral'] = 'Neutral';
@@ -106,8 +106,8 @@ $string['noinsights'] = 'Keine Einschätzungen vorhanden';
 $string['noinsightsmodel'] = 'Dieses Modell erzeugt keine Einschätzungen.';
 $string['nonewdata'] = 'Keine neuen Daten verfügbar. Das Modell wird nach der nächsten Zeitaufteilungsmethode ausgewertet.';
 $string['nonewranges'] = 'Keine neuen Vorhersagen. Das Modell wird nach der nächsten Zeitaufteilungsmethode ausgewertet.';
-$string['nopredictionsyet'] = 'Noch keine Vorhersagen verfügbar';
-$string['noranges'] = 'Noch keine Vorhersagen';
+$string['nopredictionsyet'] = 'Noch keine Prognosen verfügbar';
+$string['noranges'] = 'Noch keine Prognosen';
 $string['notapplicable'] = 'Nicht zutreffend';
 $string['notrainingbasedassumptions'] = 'Auf Annahmen basierende Modelle benötigen kein Training.';
 $string['notuseful'] = 'Nicht hilfreich';
@@ -116,9 +116,9 @@ $string['novalidsamples'] = 'Kein gültiges Beispiel vorhanden';
 $string['onlycli'] = 'Analytics-Prozesse nur über die Befehlszeile ausführen';
 $string['onlycliinfo'] = 'Analytics-Prozesse können einige Zeit in Anspruch nehmen. Sie laufen als Cron-Tasks oder können über die Befehlszeile erzwungen werden. Wenn deaktiviert, können Analyseprozesse manuell über die Weboberfläche ausgeführt werden.';
 $string['percentonline'] = 'Prozent online';
-$string['percentonline_help'] = 'Wenn Ihre Organisation gemischte oder hybride Kurse anbietet: wie viel Zeit wird online in Moodle durchgeführt? Geben Sie eine Zahl zwischen 0 und 100 ein.';
-$string['predictionsprocessor'] = 'Vorhersagen-Prozessor';
-$string['predictionsprocessor_help'] = 'Ein Vorhersagen-Prozessor ist ein Tool (Machine-Learning-Backend), das Datensätze verarbeitet, die aus Indikatoren und Zielen von Modellen berechnet werden. Jedes Modell kann einen anderen Vorhersagen-Prozessor nutzen. Der ausgewählte Vorhersagen-Prozessor wird bereits bei der Installation eingerichtet.';
+$string['percentonline_help'] = 'Wenn Ihre Organisation gemischte oder hybride Kurse anbietet: wie viel Zeit  wird online in Moodle durchgeführt? Geben Sie eine Zahl zwischen 0 und 100 ein.';
+$string['predictionsprocessor'] = 'Prognose-Prozessor';
+$string['predictionsprocessor_help'] = 'Ein Prognose-Prozessor ist ein Tool (Machine-Learning-Backend), das Datensätze verarbeitet, die aus Indikatoren und Zielen von Modellen berechnet werden.  Jedes Modell kann einen anderen Vorhersage-Prozessor nutzen. Der ausgewählte Vorhersage-Prozessor wird standardmäßig verwendet.';
 $string['privacy:metadata:analytics:indicatorcalc'] = 'Berechnung der Indikatoren';
 $string['privacy:metadata:analytics:indicatorcalc:contextid'] = 'Der Kontext';
 $string['privacy:metadata:analytics:indicatorcalc:endtime'] = 'Endzeitpunkt für Berechnungen';
@@ -126,22 +126,22 @@ $string['privacy:metadata:analytics:indicatorcalc:indicator'] = 'Die Berechnung 
 $string['privacy:metadata:analytics:indicatorcalc:sampleid'] = 'Beispiel-ID';
 $string['privacy:metadata:analytics:indicatorcalc:sampleorigin'] = 'Die Herkunftstabelle für das Beispiel';
 $string['privacy:metadata:analytics:indicatorcalc:starttime'] = 'Startzeitpunkt für Berechnungen';
-$string['privacy:metadata:analytics:indicatorcalc:timecreated'] = 'Wann die Vorhersage erfolgt';
+$string['privacy:metadata:analytics:indicatorcalc:timecreated'] = 'Wann die Prognose erfolgt';
 $string['privacy:metadata:analytics:indicatorcalc:value'] = 'Berechneter Wert';
-$string['privacy:metadata:analytics:predictionactions'] = 'Vorhersageaktivitäten';
+$string['privacy:metadata:analytics:predictionactions'] = 'Prognoseaktivitäten';
 $string['privacy:metadata:analytics:predictionactions:actionname'] = 'Der Name der Aktion';
-$string['privacy:metadata:analytics:predictionactions:predictionid'] = 'Die Vorhersage-ID';
-$string['privacy:metadata:analytics:predictionactions:timecreated'] = 'Wann die Vorhersage ausgeführt wird';
+$string['privacy:metadata:analytics:predictionactions:predictionid'] = 'Die Prognose-ID';
+$string['privacy:metadata:analytics:predictionactions:timecreated'] = 'Wann die Prognose ausgeführt wird';
 $string['privacy:metadata:analytics:predictionactions:userid'] = 'Der Nutzer, der die Aktion ausführt';
-$string['privacy:metadata:analytics:predictions'] = 'Vorhersagen';
+$string['privacy:metadata:analytics:predictions'] = 'Prognosen';
 $string['privacy:metadata:analytics:predictions:calculations'] = 'Berechnung der Indikatoren';
 $string['privacy:metadata:analytics:predictions:contextid'] = 'Der Kontext';
 $string['privacy:metadata:analytics:predictions:modelid'] = 'Modell-ID';
-$string['privacy:metadata:analytics:predictions:prediction'] = 'Die Vorhersage';
-$string['privacy:metadata:analytics:predictions:predictionscore'] = 'Das Vorhersageergebnis';
+$string['privacy:metadata:analytics:predictions:prediction'] = 'Die Prognose';
+$string['privacy:metadata:analytics:predictions:predictionscore'] = 'Das Prognoseergebnis';
 $string['privacy:metadata:analytics:predictions:rangeindex'] = 'Der Index der Zeitaufteilungsmethode';
 $string['privacy:metadata:analytics:predictions:sampleid'] = 'Beispiel-ID';
-$string['privacy:metadata:analytics:predictions:timecreated'] = 'Wann die Vorhersage erstellt wurde';
+$string['privacy:metadata:analytics:predictions:timecreated'] = 'Wann die Prognose erstellt wurde';
 $string['privacy:metadata:analytics:predictions:timeend'] = 'Endzeitpunkt für Berechnungen';
 $string['privacy:metadata:analytics:predictions:timestart'] = 'Startzeitpunkt für Berechnungen';
 $string['processingsitecontents'] = 'Inhalte der Website werden verarbeitet.';
@@ -154,7 +154,7 @@ $string['typeinstitutionngo'] = 'Nichtregierungsorganisation (NGO)';
 $string['typeinstitutiontraining'] = 'Firmenschulung';
 $string['useful'] = 'Nützlich';
 $string['viewdetails'] = 'Details anzeigen';
-$string['viewinsight'] = 'Einschätzung anzeigen';
-$string['viewinsightdetails'] = 'Einschätzungsdetails anzeigen';
-$string['viewprediction'] = 'Details zur Vorhersage anzeigen';
+$string['viewinsight'] = 'Analyse anzeigen';
+$string['viewinsightdetails'] = 'Analysedetails anzeigen';
+$string['viewprediction'] = 'Details zur Prognose anzeigen';
 $string['washelpful'] = 'War das hilfreich?';

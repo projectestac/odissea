@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hub', language 'zh_cn', version '3.8'.
  *
- * @package   hub
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hub
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,9 @@ $string['advertised'] = '广告';
 $string['advertiseon'] = '在{$a}为此课程打广告';
 $string['advertisepublication_help'] = '在社群中心服务器上广告您的课程，让更多的人能发现它，并来这里加入。';
 $string['audience'] = '受众';
+$string['audience_help'] = '选择此课程受众目标的类型。';
 $string['audienceadmins'] = 'Moodle管理员';
 $string['audienceeducators'] = '教师';
-$string['audience_help'] = '选择此课程受众目标的类型。';
 $string['audiencestudents'] = '学生';
 $string['communityremoved'] = '课程链接已从您的列表删除';
 $string['confirmregistration'] = '确认注册';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_urltolink', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filter_urltolink', language 'ca', version '3.8'.
  *
- * @package   filter_urltolink
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filter_urltolink
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['embedimages'] = 'Incrusta imatges';
-$string['embedimages_desc'] = 'Substitueix els url de les imatges per les imatges en formats de text seleccionats.';
+$string['embedimages_desc'] = 'Substitueix els URL de les imatges per les imatges en formats de text seleccionats.';
 $string['filtername'] = 'Converteix els URL en enllaços i imatges';
 $string['settingformats'] = 'Aplica als formats';
 $string['settingformats_desc'] = 'El filtre s\'aplicarà només si el text original fou inserit en un dels formats seleccionats.';

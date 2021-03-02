@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_db', language 'ar', version '3.8'.
  *
- * @package   auth_db
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_db
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -66,8 +66,8 @@ $string['auth_dbsybasequoting'] = 'استعمل اقتباسات sybase';
 $string['auth_dbsybasequotinghelp'] = 'نمط Sybase لاستعادة علامة الاقتباس المفردة في النص المرمز - مطلوب من أجل Oracle، MS SQL وبعض قواعد البيانات الأخرى. لا تستعملها مع MySQL!';
 $string['auth_dbsyncuserstask'] = 'مزامنة مهمة المستخدمين';
 $string['auth_dbtable'] = 'اسم الجدول في قاعدة البيانات';
-$string['auth_dbtableempty'] = 'الجدول الخارجي فارغ.';
 $string['auth_dbtable_key'] = 'جدول';
+$string['auth_dbtableempty'] = 'الجدول الخارجي فارغ.';
 $string['auth_dbtype'] = 'نوع قاعدة البيانات (أنظر التوثيقات <a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - طبقة تجريد قاعدة البيانات لـ PHP</a> للمزيد من التفاصيل).';
 $string['auth_dbtype_key'] = 'قاعدة البيانات';
 $string['auth_dbupdateerror'] = 'وقع خطأ عند تحديث قاعدة البيانات الخارجية.';
@@ -77,6 +77,6 @@ $string['auth_dbupdatinguser'] = 'يجري تحديث المستخدم {$a->name
 $string['auth_dbuser'] = 'اسم المستخدم مع حق الدخول على قاعدة البيانات للقراءة فقط';
 $string['auth_dbuser_key'] = 'مستخدم قاعدة البيانات';
 $string['auth_dbuserstoadd'] = 'تم أضافة بيانات المستخدم:{$a}';
-$string['auth_dbuserstoremove'] = 'تم إزالت بيانات  المستخدم:{$a}';
+$string['auth_dbuserstoremove'] = 'تم إزالة بيانات المستخدم:{$a}';
 $string['pluginname'] = 'قاعدة البيانات الخارجية';
 $string['privacy:metadata'] = 'إن ملحق مصادقة قاعدة البيانات الخارجية لا يخزن أي بيانات شخصية.';

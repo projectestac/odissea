@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_progress', language 'fr', version '3.8'.
  *
- * @package   block_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -117,10 +117,10 @@ $string['no_blocks'] = 'Aucun bloc de barre de progression établi pour vos cour
 $string['no_courses'] = 'Vous n\'êtes inscrit à aucun cours. Seules les barres des cours auxquels vous êtes inscrit seront affichées.';
 $string['no_events_config_message'] = 'Il n\'y a aucune activité ou ressource à surveiller. Créez des activités et/ou des ressources, puis configurez ce bloc.';
 $string['no_events_message'] = 'Aucune activité ou ressource surveillée. Ajoutez des activités ou ressources à surveiller dans la configuration.';
+$string['no_visible_events_message'] = 'Aucun événement sélectionné n\'est visible en ce moment.';
 $string['notAttempted_colour'] = '#C71C22';
 $string['notattempted_colour_descr'] = 'Code de couleur HTML des éléments actuels non tentés';
 $string['notattempted_colour_title'] = 'Couleur des éléments actuels non tentés';
-$string['no_visible_events_message'] = 'Aucun événement sélectionné n\'est visible en ce moment.';
 $string['now_indicator'] = 'MAINTENANT';
 $string['ouwiki'] = 'OU Wiki';
 $string['overview'] = 'Aperçu des étudiants';
@@ -133,10 +133,10 @@ $string['pluginname'] = 'Barre de progression';
 $string['posted_to'] = 'envoyé à';
 $string['progress'] = 'Progression';
 $string['progress:addinstance'] = 'Ajouter un nouveau bloc « Barre de progression »';
-$string['progressbar'] = 'Barre de progression';
 $string['progress:myaddinstance'] = 'Ajout d\'un bloc de barre de progression à mon tableau de bord';
 $string['progress:overview'] = '';
 $string['progress:showbar'] = 'Afficher la barre dans le bloc Barre de progression';
+$string['progressbar'] = 'Barre de progression';
 $string['questionnaire'] = 'Questionnaire';
 $string['quiz'] = 'Test';
 $string['recordingsbn'] = 'Enregistrements BigBlueButton';

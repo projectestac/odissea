@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'nl', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,11 +43,11 @@ $string['analytics:listinsights'] = 'Lijst inzichten';
 $string['analytics:listowninsights'] = 'Lijst eigen inzichten';
 $string['analytics:managemodels'] = 'Beheer modellen';
 $string['archetype'] = 'Rol archetype';
+$string['archetype_help'] = 'De archetype rol bepaalt welke rechten een rol krijgt wanneer die terug op standaardinstellingen gezet wordt. Dit bepaalt ook de nieuwe rechten die een rol krijgt wanneer de site geüpgraded wordt';
 $string['archetypecoursecreator'] = 'ARCHETYPE: cursusaanmaker';
 $string['archetypeeditingteacher'] = 'ARCHETYPE: Leraar (bewerken)';
 $string['archetypefrontpage'] = 'ARCHETYPE: Geauthenticeerde gebruikers op de startpagina';
 $string['archetypeguest'] = 'ARCHETYPE: Gast';
-$string['archetype_help'] = 'De archetype rol bepaalt welke rechten een rol krijgt wanneer die terug op standaardinstellingen gezet wordt. Dit bepaalt ook de nieuwe rechten die een rol krijgt wanneer de site geüpgraded wordt';
 $string['archetypemanager'] = 'ARCHETYPE: Beheerder';
 $string['archetypestudent'] = 'ARCHETYPE: Leerling';
 $string['archetypeteacher'] = 'ARCHETYPE: Leraar (niet bewerken)';
@@ -55,7 +55,7 @@ $string['archetypeuser'] = 'ARCHETYPE: Geauthenticeerde gebruiker';
 $string['assignanotherrole'] = 'Nog een rol toewijzen';
 $string['assignedroles'] = 'Toegewezen rollen';
 $string['assignerror'] = 'Fout tijdens het toewijzen van rol {$a->role} aan gebruiker {$a->user}.';
-$string['assignglobalroles'] = 'Globale rollen toewijzen';
+$string['assignglobalroles'] = 'Systeemrollen toewijzen';
 $string['assignmentcontext'] = 'Opdrachtcontext';
 $string['assignmentoptions'] = 'Opdracht opties';
 $string['assignrole'] = 'Wijs rol toe';
@@ -113,9 +113,9 @@ $string['checkpermissionsin'] = 'Controleer rechten in {$a}';
 $string['checksystempermissionsfor'] = 'Controleer systeemrechten voor {$a->fullname}';
 $string['checkuserspermissionshere'] = 'Controleer rechten van {$a->fullname} in {$a->contextlevel}';
 $string['chooseroletoassign'] = 'Kies een toe te wijzen rol';
-$string['cohort:assign'] = 'Site groepsleden toevoegen en verwijderen';
-$string['cohort:manage'] = 'Site groepen maken, verwijderen en verplaatsen';
-$string['cohort:view'] = 'Bekijk site groepen';
+$string['cohort:assign'] = 'Site-groepsleden toevoegen en verwijderen';
+$string['cohort:manage'] = 'Site-groepen maken, verwijderen en verplaatsen';
+$string['cohort:view'] = 'Bekijk site-groepen';
 $string['comment:delete'] = 'Verwijder notities';
 $string['comment:post'] = 'Post notities';
 $string['comment:view'] = 'Bekijk notities';
@@ -153,8 +153,8 @@ $string['competency:userevidencemanageown'] = 'Beheer eigen bewijs van vroeger l
 $string['competency:userevidenceview'] = 'Bekijk bewijs van vroeger leren van een gebruiker';
 $string['confirmaddadmin'] = 'Wil je echt gebruiker <strong>{$a}</strong> als nieuwe sitebeheerder toevoegen?';
 $string['confirmdeladmin'] = 'Wil je echt gebruiker <strong>{$a}</strong> verwijderen uit de lijst van sitebeheerders?';
-$string['confirmroleprevent'] = 'Wil je echt <strong>{$a->role}</strong> verwijderen van de lijst met toegelaten rollen voor mogelijkheid {$a->cap} in context {$a->context}?';
-$string['confirmroleunprohibit'] = 'Wil je echt <strong>{$a->role}</strong> verwijderen van de lijst met verboden rollen voor mogelijkheid {$a->cap} in context {$a->context}?';
+$string['confirmroleprevent'] = 'Wil je echt <strong>"{$a->role}"</strong> verwijderen van de lijst met toegelaten rollen voor mogelijkheid "{$a->cap}" in context "{$a->context}"?';
+$string['confirmroleunprohibit'] = 'Wil je echt <strong>"{$a->role}"</strong> verwijderen van de lijst met verboden rollen voor mogelijkheid "{$a->cap}" in context "{$a->context}"?';
 $string['confirmunassign'] = 'Wil je echt deze rol van deze gebruiker verwijderen?';
 $string['confirmunassignno'] = 'Annuleer';
 $string['confirmunassigntitle'] = 'Bevestig rolwijziging';
@@ -187,7 +187,7 @@ $string['course:movesections'] = 'Verplaats secties';
 $string['course:overridecompletion'] = 'Overschrijf activiteitsvoltooiingsstatus';
 $string['course:renameroles'] = 'Rollen hernoemen';
 $string['course:request'] = 'Nieuwe cursussen aanvragen';
-$string['course:reset'] = 'Cursus naar standaardinstellingen';
+$string['course:reset'] = 'Cursus opruimen';
 $string['course:reviewotherusers'] = 'Beoordeel andere gebruikers';
 $string['course:sectionvisibility'] = 'Zichtbaarheid van secties beheren';
 $string['course:setcurrentsection'] = 'Huidige sectie instellen';
@@ -204,7 +204,7 @@ $string['course:viewhiddensections'] = 'Verborgen secties zien';
 $string['course:viewhiddenuserfields'] = 'Verborgen gebruikersvelden zien';
 $string['course:viewparticipants'] = 'Deelnemers bekijken';
 $string['course:viewscales'] = 'Schalen bekijken';
-$string['course:viewsuspendedusers'] = 'Kan geschorste gebruikers zien';
+$string['course:viewsuspendedusers'] = 'Geschorste gebruikers zien';
 $string['course:visibility'] = 'Cursussen verbergen/tonen';
 $string['createrolebycopying'] = 'Een nieuwe rol maken door {$a} te kopiëren';
 $string['createthisrole'] = 'Maak deze rol';
@@ -263,7 +263,7 @@ $string['grade:lock'] = 'Cijfers of items blokkeren';
 $string['grade:manage'] = 'Beoordelingsitems beheren';
 $string['grade:managegradingforms'] = 'Beheer geavanceerde beoordelingsmethodes';
 $string['grade:manageletters'] = 'Letterbeoordelingen beheren';
-$string['grade:manageoutcomes'] = 'Beheer beoordelingen competenties';
+$string['grade:manageoutcomes'] = 'Beheer beoordelingsresultaten';
 $string['grade:managesharedforms'] = 'Beheer sjablonen voor geavanceerde beoordelingsmethodes';
 $string['grade:override'] = 'Beoordelingen wijzigen';
 $string['grade:sharegradingforms'] = 'Deel geavanceerd beoordelingsformulier als sjabloon';
@@ -286,8 +286,8 @@ $string['legacy:editingteacher'] = 'PRE 1.7 ROL: Leraar (bewerken)';
 $string['legacy:guest'] = 'PRE 1.7 ROL: Gast';
 $string['legacy:student'] = 'PRE 1.7 ROL: Leerling';
 $string['legacy:teacher'] = 'PRE 1.7 ROL: Leraar (niet bewerken)';
-$string['legacytype'] = 'Standaard roltype';
 $string['legacy:user'] = 'PRE 1.7 ROL: Ingelogde gebruiker';
+$string['legacytype'] = 'Verouderd roltype';
 $string['listallroles'] = 'Toon alle rollen';
 $string['localroles'] = 'Lokaal toegewezen rollen';
 $string['mainadmin'] = 'Hoofdbeheerder';
@@ -317,7 +317,6 @@ $string['novisibleroles'] = 'Geen rollen';
 $string['overrideanotherrole'] = 'Nog een rol overschrijven';
 $string['overridecontext'] = 'Context overschrijven';
 $string['overridepermissions'] = 'Rechten overschrijven';
-$string['overridepermissionsforrole'] = 'Rechten overschrijven voor de rol \'{$a->role}\' in {$a->context}';
 $string['overridepermissions_help'] = '<p>
 Overschrijvingen zijn specifieke rechten, bedoeld om alleen in een bepaalde context een rol te overschrijven. Hiermee kun je de rechten van een gebruiker bijregelen waar nodig.
 </p>
@@ -341,6 +340,7 @@ See also
 <a href="help.php?file=assignroles.html">Rollen toewijzen</a> en
 <a href="help.php?file=permissions.html">Rechten</a>.
 </p>';
+$string['overridepermissionsforrole'] = 'Rechten overschrijven voor de rol \'{$a->role}\' in {$a->context}';
 $string['overridepermissionsin'] = 'Rechten overschrijven in {$a}';
 $string['overrideroles'] = 'Rollen overschrijven';
 $string['overriderolesin'] = 'Rollen overschrijven in {$a}';
@@ -411,30 +411,30 @@ $string['restore:uploadfile'] = 'Bestanden uploaden naar back-upzone\'s';
 $string['restore:userinfo'] = 'Gebruikersgegevens terugzetten';
 $string['restore:viewautomatedfilearea'] = 'Cursussen terugzetten van automatische backups';
 $string['risks'] = 'Risico\'s';
-$string['roleallowheader'] = 'Rol toestaan:';
-$string['roleallowinfo'] = 'Kies een rol om toe te voegen aan de lijst met rollen met toelating in context {$a->context}, mogelijkheid {$a->cap}:';
 $string['role:assign'] = 'Toewijzen van rollen aan gebruikers';
+$string['role:manage'] = 'Aanmaken en beheren van rollen';
+$string['role:override'] = 'Rechten voor anderen overschrijven';
+$string['role:review'] = 'Rechten voor anderen nakijken';
+$string['role:safeoverride'] = 'Overschrijf veilige rechten voor anderen';
+$string['role:switchroles'] = 'Schakel over naar andere rollen';
+$string['roleallowheader'] = 'Rol toestaan:';
+$string['roleallowinfo'] = 'Kies een rol om toe te voegen aan de lijst met rollen met toelating in context "{$a->context}", mogelijkheid "{$a->cap}":';
 $string['roleassignments'] = 'Roltoewijzingen';
 $string['roledefinitions'] = 'Roldefinities';
 $string['rolefullname'] = 'Naam';
 $string['roleincontext'] = '{$a->role} in {$a->context}';
-$string['role:manage'] = 'Aanmaken en beheren van rollen';
-$string['role:override'] = 'Rechten voor anderen overschrijven';
 $string['roleprohibitheader'] = 'Rol verbieden:';
-$string['roleprohibitinfo'] = 'Kies een rol om toe te voegen aan de lijst met verboden rollen in context {$a->context}, mogelijkheid {$a->cap}:';
+$string['roleprohibitinfo'] = 'Kies een rol om toe te voegen aan de lijst met verboden rollen in context "{$a->context}", mogelijkheid "{$a->cap}":';
 $string['rolerepreset'] = 'Gebruik voorinstellingen rol';
 $string['roleresetdefaults'] = 'Standaarden';
 $string['roleresetrole'] = 'Gebruik rol voor archetype';
-$string['role:review'] = 'Rechten voor anderen nakijken';
 $string['rolerisks'] = 'Risico\'s rol';
 $string['roles'] = 'Rollen';
-$string['role:safeoverride'] = 'Overschrijf veilige rechten voor anderen';
+$string['roles_help'] = 'Een rol is een verzameling rechten vastgelegd voor het ganse systeem, die je in een specifieke context aan specifieke gebruikers kunt toekennen.';
 $string['roleselect'] = 'Selecteer rol';
 $string['rolesforuser'] = 'Rollen voor gebruiker {$a}';
-$string['roles_help'] = 'Een rol is een verzameling rechten vastgelegd voor het ganse systeem, die je in een specifieke context aan specifieke gebruikers kunt toekennen.';
 $string['roleshortname'] = 'Korte naam';
 $string['roleshortname_help'] = 'De korte rolnaam is een identificatie van de rol op systeemniveau waarin enkel ASCII alfanumerieke tekens toegestaan zijn. Verander de korte rolnaam van standaardrollen niet.';
-$string['role:switchroles'] = 'Schakel over naar andere rollen';
 $string['roletoassign'] = 'Toe te wijzen rol';
 $string['roletooverride'] = 'Te overschrijven rol';
 $string['safeoverridenotice'] = 'Opmerking: mogelijkheden met hogere risico\'s zijn geblokkeerd omdat je alleen het recht hebt om veilige mogelijkheden te overschrijven';
@@ -445,7 +445,6 @@ $string['selectrole'] = 'Kies een rol';
 $string['showallroles'] = 'Toon alle rollen';
 $string['showthisuserspermissions'] = 'Toon de rechten van deze gebruiker';
 $string['site:accessallgroups'] = 'Toegang voor alle groepen';
-$string['siteadministrators'] = 'Sitebeheerders';
 $string['site:approvecourse'] = 'Cursus aanmaken goedkeuren';
 $string['site:backup'] = 'Cursussen back-uppen';
 $string['site:config'] = 'Site configuratie wijzigen';
@@ -472,6 +471,7 @@ $string['site:viewfullnames'] = 'Altijd volledige namen van gebruikers zien';
 $string['site:viewparticipants'] = 'Deelnemers bekijken';
 $string['site:viewreports'] = 'Rapporten bekijken';
 $string['site:viewuseridentity'] = 'Bekijk de volledige gebruikersidentiteit in lijsten';
+$string['siteadministrators'] = 'Sitebeheerders';
 $string['tag:edit'] = 'Bestaande tags bewerken';
 $string['tag:editblocks'] = 'Bewerk blokken op tag-pagina';
 $string['tag:flag'] = 'Rapporteer als ongeschikt';
@@ -496,12 +496,6 @@ $string['user:manageownfiles'] = 'Beheer bestanden op eigen private bestandszone
 $string['user:managesyspages'] = 'Configureer standaard pagina layout voor publieke gebruikersprofielen';
 $string['user:readuserblogs'] = 'Blogs van alle gebruikers bekijken';
 $string['user:readuserposts'] = 'Forumberichten van alle gebruikers bekijken';
-$string['usersfrom'] = 'Gebruikers van {$a}';
-$string['usersfrommatching'] = 'Gebruikers van  {$a->contextname} die overeenkomen met \'{$a->search}\'';
-$string['usersinthisx'] = 'Gebruikers in deze {$a}';
-$string['usersinthisxmatching'] = 'Gebruikers in dit {$a->contexttype} die overeenkomen met \'{$a->search}\'';
-$string['userswithrole'] = 'Alle gebruikers met een rol';
-$string['userswiththisrole'] = 'Gebruikers met rol';
 $string['user:update'] = 'Gebruikersprofielen updaten';
 $string['user:viewalldetails'] = 'Bekijk alle informatie van de gebruiker';
 $string['user:viewdetails'] = 'Gebruikersprofielen bekijken';
@@ -509,6 +503,12 @@ $string['user:viewhiddendetails'] = 'Verborgen details van gebruikers bekijken';
 $string['user:viewlastip'] = 'Laatste IP-adres van alle gebruikers bekijken';
 $string['user:viewuseractivitiesreport'] = 'Activiteitenrapporten van gebruikers bekijken';
 $string['user:viewusergrades'] = 'Cijfers van gebruikers bekijken';
+$string['usersfrom'] = 'Gebruikers van {$a}';
+$string['usersfrommatching'] = 'Gebruikers van  {$a->contextname} die overeenkomen met \'{$a->search}\'';
+$string['usersinthisx'] = 'Gebruikers in deze {$a}';
+$string['usersinthisxmatching'] = 'Gebruikers in dit {$a->contexttype} die overeenkomen met \'{$a->search}\'';
+$string['userswithrole'] = 'Alle gebruikers met een rol';
+$string['userswiththisrole'] = 'Gebruikers met rol';
 $string['useshowadvancedtochange'] = 'Gebruik \'Toon geavanceerd\' om te wijzigen';
 $string['viewingdefinitionofrolex'] = 'Bekijk de definities van rol \'{$a}\'';
 $string['viewrole'] = 'Roldetails bekijken';

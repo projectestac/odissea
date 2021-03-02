@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'feedback', language 'pt', version '3.8'.
  *
- * @package   feedback
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     feedback
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,15 +48,15 @@ $string['cannotsavetempl'] = 'Não é permitido guardar modelos';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'O Captcha não foi configurado';
 $string['check'] = 'Escolha múltipla - múltiplas respostas';
-$string['checkbox'] = 'Escolha múltipla - são permitidas múltiplas respostas (caixas de seleção)';
 $string['check_values'] = 'Respostas possíveis';
+$string['checkbox'] = 'Escolha múltipla - são permitidas múltiplas respostas (caixas de seleção)';
 $string['choosefile'] = 'Selecionar ficheiro';
 $string['chosen_feedback_response'] = 'Resposta escolhida do Inquérito';
 $string['closebeforeopen'] = 'Especificou uma data de fim anterior à data de início.';
+$string['complete_the_form'] = 'Responder às perguntas';
 $string['completed'] = 'Concluído';
 $string['completed_feedbacks'] = 'Respostas submetidas';
 $string['completedon'] = 'Concluído em {$a}';
-$string['complete_the_form'] = 'Responder às perguntas';
 $string['completionsubmit'] = 'Ver como concluído se o inquérito tiver sido submetido';
 $string['configallowfullanonymous'] = 'Se selecionar \'Sim\', os utilizadores poderão concluir uma atividade inquérito na página principal sem estar autenticado.';
 $string['confirmdeleteentry'] = 'Tem a certeza de que pretende apagar esta resposta?';
@@ -97,11 +97,11 @@ $string['dependvalue'] = 'Resposta requerida';
 $string['description'] = 'Descrição';
 $string['do_not_analyse_empty_submits'] = 'Não analisar respostas em branco';
 $string['downloadresponseas'] = 'Descarregar todas as respostas como:';
+$string['drop_feedback'] = 'Apagar desta disciplina';
 $string['dropdown'] = 'Escolha múltipla - resposta única (lista pendente)';
+$string['dropdown_values'] = 'Respostas';
 $string['dropdownlist'] = 'Escolha múltipla - resposta única (lista pendente)';
 $string['dropdownrated'] = 'Lista pendente (c/escala)';
-$string['dropdown_values'] = 'Respostas';
-$string['drop_feedback'] = 'Apagar desta disciplina';
 $string['edit_item'] = 'Editar questão';
 $string['edit_items'] = 'Editar questões';
 $string['email_notification'] = 'Ativar notificação de submissões';
@@ -112,45 +112,45 @@ $string['emailteachermail'] = 'O utilizador {$a->username} respondeu ao inquéri
 Pode visuazilar as suas respostas em:
 {$a->url}';
 $string['emailteachermailhtml'] = 'O utilizador {$a->username} completou o inquérito: <i>\'{$a->feedback}\'</i> disponível em <a href="{$a->url}"></a>.';
-$string['entries_saved'] = 'As suas respostas foram guardadas. Obrigado';
+$string['entries_saved'] = 'As suas respostas foram gravadas. Obrigado';
 $string['eventresponsedeleted'] = 'Resposta apagada';
 $string['eventresponsesubmitted'] = 'Resposta submetida';
 $string['export_questions'] = 'Exportar questões';
 $string['export_to_excel'] = 'Exportar para ficheiro Excel';
 $string['feedback:addinstance'] = 'Adicionar um novo pedido de opiniões';
-$string['feedbackclose'] = 'Permitir respostas até';
 $string['feedback:complete'] = 'Concluir um inquérito';
-$string['feedbackcompleted'] = '{$a->username} concluíu {$a->feedbackname}';
 $string['feedback:createprivatetemplate'] = 'Criar modelo privado';
 $string['feedback:createpublictemplate'] = 'Criar modelo público';
 $string['feedback:deletesubmissions'] = 'Apagar submissões concluídas';
 $string['feedback:deletetemplate'] = 'Apagar modelo';
 $string['feedback:edititems'] = 'Editar perguntas';
-$string['feedback_is_not_for_anonymous'] = 'O Inquérito não permite respostas anónimas';
-$string['feedback_is_not_open'] = 'O inquérito não está aberto';
 $string['feedback:mapcourse'] = 'Associar inquéritos globais a disciplinas';
-$string['feedbackopen'] = 'Permitir respostas a partir de';
 $string['feedback:receivemail'] = 'Receber notificações por e-mail';
 $string['feedback:view'] = 'Ver um inquérito';
 $string['feedback:viewanalysepage'] = 'Ver a página de análise após a submissão';
 $string['feedback:viewreports'] = 'Ver relatórios';
+$string['feedback_is_not_for_anonymous'] = 'O Inquérito não permite respostas anónimas';
+$string['feedback_is_not_open'] = 'O inquérito não está aberto';
+$string['feedbackclose'] = 'Permitir respostas até';
+$string['feedbackcompleted'] = '{$a->username} concluíu {$a->feedbackname}';
+$string['feedbackopen'] = 'Permitir respostas a partir de';
 $string['file'] = 'Ficheiro';
 $string['filter_by_course'] = 'Filtrar por disciplina';
 $string['handling_error'] = 'Ocorreu um erro no processamento do módulo de ação do inquérito';
 $string['hide_no_select_option'] = 'Ocultar opção \'Não respondido\'';
 $string['horizontal'] = 'Horizontal';
-$string['importfromthisfile'] = 'Importar deste ficheiro';
 $string['import_questions'] = 'Importar questões';
 $string['import_successfully'] = 'A importação foi concluída com sucesso';
+$string['importfromthisfile'] = 'Importar deste ficheiro';
 $string['includeuserinrecipientslist'] = 'Incluir {$a} na lista de destinatários';
 $string['indicator:cognitivedepth'] = 'Compreensão do Inquérito';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Inquérito.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Inquérito';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Inquérito durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido)';
-$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Inquérito.';
 $string['indicator:socialbreadth'] = 'Socialização do Inquérito';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Inquérito.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Inquérito';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Inquérito durante esse intervalo de análise (Níveis = Sem participação, Participante individual, Participante com outros)';
-$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Inquérito.';
 $string['info'] = 'Informação de sistema';
 $string['infotype'] = 'Tipo de informação';
 $string['insufficient_responses'] = 'respostas insuficientes';
@@ -187,25 +187,25 @@ As Atividades de inquérito podem ser usadas:
 $string['modulenameplural'] = 'Inquéritos';
 $string['move_item'] = 'Mover esta questão';
 $string['multichoice'] = 'Escolha múltipla';
+$string['multichoice_values'] = 'Opções de escolha múltipla';
 $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->name}';
 $string['multichoicerated'] = 'Escolha múltipla (c/escala)';
 $string['multichoicetype'] = 'Tipo de escolha múltipla';
-$string['multichoice_values'] = 'Opções de escolha múltipla';
 $string['multiplesubmit'] = 'Permitir múltiplas submissões';
 $string['multiplesubmit_help'] = 'Se ativar esta opção, os utilizadores poderão responder a inquéritos anónimos um número ilimitado de vezes.';
 $string['name'] = 'Designação';
-$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['name_required'] = 'O preenchimento do nome é obrigatório';
+$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['next_page'] = 'Página seguinte';
 $string['no_handler'] = 'Não existe ação designada para';
 $string['no_itemlabel'] = 'Sem identificador';
 $string['no_itemname'] = 'O item não tem nome';
 $string['no_items_available_yet'] = 'Ainda não foram configuradas questões';
+$string['no_templates_available_yet'] = 'Ainda não existem modelos disponíveis';
 $string['non_anonymous'] = 'O nome do utilizador será registado e identificado com as respostas';
 $string['non_anonymous_entries'] = 'Respostas não anónimas ({$a})';
 $string['non_respondents_students'] = 'Alunos que não responderam ({$a})';
 $string['not_completed_yet'] = 'Incompletos';
-$string['no_templates_available_yet'] = 'Ainda não existem modelos disponíveis';
 $string['not_selected'] = 'Não respondido';
 $string['not_started'] = 'Por iniciar';
 $string['numberoutofrange'] = 'Valor fora do intervalo';
@@ -219,9 +219,9 @@ $string['only_one_captcha_allowed'] = 'Apenas é permitido inserir um CAPTCHA em
 $string['openafterclose'] = 'A data de início indicada é posterior à data de fim';
 $string['overview'] = 'Visão global';
 $string['page'] = 'Página';
+$string['page-mod-feedback-x'] = 'Qualquer página da atividade Inquérito';
 $string['page_after_submit'] = 'Mensagem de conclusão';
 $string['pagebreak'] = 'Quebra de página';
-$string['page-mod-feedback-x'] = 'Qualquer página da atividade Inquérito';
 $string['pluginadministration'] = 'Administração do Inquérito';
 $string['pluginname'] = 'Inquérito';
 $string['position'] = 'Posição';
@@ -229,11 +229,11 @@ $string['previous_page'] = 'Página anterior';
 $string['privacy:metadata:completed'] = 'Registo das submissões ao Inquérito';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Se a submissão deve ser anónima.';
 $string['privacy:metadata:completed:timemodified'] = 'A hora em que a submissão foi modificado pelo última vez.';
-$string['privacy:metadata:completedtmp'] = 'O registo de submissões que estão ainda em progresso.';
 $string['privacy:metadata:completed:userid'] = 'O ID do utilizador que completou a atividade inquérito.';
+$string['privacy:metadata:completedtmp'] = 'O registo de submissões que estão ainda em progresso.';
 $string['privacy:metadata:value'] = 'O registo da resposta a uma questão.';
-$string['privacy:metadata:valuetmp'] = 'O registo da resposta à questão numa submissão em progresso.';
 $string['privacy:metadata:value:value'] = 'A resposta escolhida.';
+$string['privacy:metadata:valuetmp'] = 'O registo da resposta à questão numa submissão em progresso.';
 $string['public'] = 'Público';
 $string['question'] = 'Questão';
 $string['questionandsubmission'] = 'Configurações da questão e da submissão';
@@ -247,7 +247,7 @@ $string['resetting_data'] = 'Apagar todas as respostas do inquérito';
 $string['resetting_feedbacks'] = 'Reiniciar inquéritos';
 $string['response_nr'] = 'Número da resposta';
 $string['responses'] = 'Respostas';
-$string['responsetime'] = 'Dia/Hora de resposta';
+$string['responsetime'] = 'Dia/hora de resposta';
 $string['save_as_new_item'] = 'Guardar como nova questão';
 $string['save_as_new_template'] = 'Guardar como novo modelo';
 $string['save_entries'] = 'Submeter respostas';
@@ -274,8 +274,8 @@ $string['switch_item_to_not_required'] = 'Definir como não obrigatória';
 $string['switch_item_to_required'] = 'Definir como obrigatória';
 $string['template'] = 'Modelo';
 $string['template_deleted'] = 'Modelo eliminado';
-$string['templates'] = 'Modelos';
 $string['template_saved'] = 'O modelo foi guardado';
+$string['templates'] = 'Modelos';
 $string['textarea'] = 'Resposta de texto longo';
 $string['textarea_height'] = 'Número de linhas';
 $string['textarea_width'] = 'Largura';

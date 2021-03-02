@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_dataprivacy', language 'fr', version '3.8'.
  *
- * @package   tool_dataprivacy
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_dataprivacy
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,10 +45,10 @@ $string['cannotreset'] = 'Impossible de réinitialiser cette demande. Seules les
 $string['categories'] = 'Catégories';
 $string['categorieslist'] = 'Liste des catégories de données';
 $string['category'] = 'Catégorie';
+$string['category_help'] = 'Une catégorie du registre des données décrit un type de données Une nouvelle catégorie peut être ajoutée, ou, si Hériter est sélectionné, la catégorie d\'un contexte supérieure est attribuée. Les contextes sont (du bas vers le haut) : Blocs > Modules d\'activité > Cours > Catégories de cours > Utilisateur > Site.';
 $string['categorycreated'] = 'Catégorie créée';
 $string['categorydefault'] = 'Catégorie par défaut';
 $string['categorydefault_help'] = 'La catégorie par défaut est la catégorie de données attribuée à toute nouvelle instance. Si Hériter est sélectionné, la catégorie de données du contexte supérieur est attribuée. Les contextes sont (du bas vers le haut) : Blocs > Modules d\'activité > Cours > Catégories de cours > Utilisateur > Site.';
-$string['category_help'] = 'Une catégorie du registre des données décrit un type de données Une nouvelle catégorie peut être ajoutée, ou, si Hériter est sélectionné, la catégorie d\'un contexte supérieure est attribuée. Les contextes sont (du bas vers le haut) : Blocs > Modules d\'activité > Cours > Catégories de cours > Utilisateur > Site.';
 $string['categoryupdated'] = 'Catégorie modifiée';
 $string['close'] = 'Fermer';
 $string['compliant'] = 'Conforme';
@@ -127,7 +127,7 @@ $string['deprecatedexplanation'] = 'Ce plugin utilise une ancienne version des i
 $string['download'] = 'Télécharger';
 $string['downloadexpireduser'] = 'Le téléchargement est échu. Veuillez effectuer une nouvelle demande si vous voulez exporter vos données personnelles.';
 $string['dporolemapping'] = 'Correspondance du rôle de Délégué à la protection des données';
-$string['dporolemapping_desc'] = 'Le délégué à la protection des données peut gérer les demandes de données. La capacité tool/dataprivacy:managedatarequests doit être permise pour un rôle afin de pouvoir le mettre en correspondance avec le rôle de Délégué à la protection des données.';
+$string['dporolemapping_desc'] = 'Le délégué à la protection des données peut gérer les demandes de données. La capacité tool/dataprivacy:managedatarequests doit être autorisée pour un rôle afin de pouvoir le mettre en correspondance avec le rôle de Délégué à la protection des données.';
 $string['duplicaterole'] = 'Rôle déjà indiqué';
 $string['editcategories'] = 'Modifier les catégories';
 $string['editcategory'] = 'Modifier la catégorie';
@@ -250,10 +250,10 @@ $string['privacyrequestexpiry_desc'] = 'La durée pendant laquelle les demandes 
 $string['protected'] = 'Protégé';
 $string['protectedlabel'] = 'La conservation de ces données a une priorité légale plus importante que le droit à l\'oubli de l\'utilisateur. Ces données ne seront supprimées qu\'après l\'échéance de la durée de conservation.';
 $string['purpose'] = 'Finalité';
+$string['purpose_help'] = 'La finalité décrit la raison du traitement des données. Une nouvelle finalité peut être ajoutée, ou, si Hériter est sélectionné, la finalité d\'un contexte supérieur est attribuée. Les contextes sont (du bas vers le haut) : Blocs > Modules d\'activité > Cours > Catégories de cours > Utilisateur > Site.';
 $string['purposecreated'] = 'Finalité créée';
 $string['purposedefault'] = 'Finalité par défaut';
 $string['purposedefault_help'] = 'La finalité par défaut est la finalité qui est attribuée à toute nouvelle instance. Si Hériter est choisi, la finalité du contexte supérieur est attribuée. Les contextes sont (du bas vers le haut) : Blocs > Modules d\'activité > Cours > Catégories de cours > Utilisateur > Site.';
-$string['purpose_help'] = 'La finalité décrit la raison du traitement des données. Une nouvelle finalité peut être ajoutée, ou, si Hériter est sélectionné, la finalité d\'un contexte supérieur est attribuée. Les contextes sont (du bas vers le haut) : Blocs > Modules d\'activité > Cours > Catégories de cours > Utilisateur > Site.';
 $string['purposeoverview'] = 'Une finalité décrit les raisons de l\'utilisation et de la conservation de données enregistrées. La base légale permettant l\'enregistrement et la conservation de ces données est également décrite dans la finalité.';
 $string['purposes'] = 'Finalités';
 $string['purposeslist'] = 'Liste des finalités de données';
@@ -276,11 +276,11 @@ $string['requestsdenied'] = 'Les demandes ont été rejetées';
 $string['requeststatus'] = 'Statut';
 $string['requestsubmitted'] = 'Votre demande a été envoyée au délégué à la protection des données';
 $string['requesttype'] = 'Type';
+$string['requesttype_help'] = 'Sélectionner la raison pour laquelle vous désirez contacter le délégué à la protection des données. Veuillez noter que la suppression de toutes vos données personnelles ne vous permettra plus de vous connecter sur ce site.';
 $string['requesttypedelete'] = 'Supprimer toutes mes données personnelles';
 $string['requesttypedeleteshort'] = 'Suppression';
 $string['requesttypeexport'] = 'Exporter toutes mes données personnelles';
 $string['requesttypeexportshort'] = 'Exportation';
-$string['requesttype_help'] = 'Sélectionner la raison pour laquelle vous désirez contacter le délégué à la protection des données. Veuillez noter que la suppression de toutes vos données personnelles ne vous permettra plus de vous connecter sur ce site.';
 $string['requesttypeothers'] = 'Demande d\'ordre général';
 $string['requesttypeothersshort'] = 'Message';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';

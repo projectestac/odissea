@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,37 +12,45 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_responses', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_responses', language 'sv', version '3.8'.
  *
- * @package   quiz_responses
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_responses
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cannotloadoptions'] = 'Kunde inta ladda frågealternativ';
+$string['cannotloadoptions'] = 'Kan inte läsa in frågealternativ';
 $string['include'] = 'Inkludera';
 $string['mustselectcols'] = 'Du måste inkludera någonting.';
-$string['pagesize'] = 'Försök per sida';
+$string['pagesize'] = 'Sidstorlek';
 $string['pluginname'] = 'Svar';
-$string['questiontext'] = 'Frågetest';
-$string['reportresponses'] = 'Detaljerade responser';
+$string['privacy:preference:qtext'] = 'Om frågetext-kolumnen ska visas.';
+$string['privacy:preference:resp'] = 'Om kursdeltagarnas svarskolumn ska visas.';
+$string['privacy:preference:right'] = 'Om kolumnen med rätt svar ska visas.';
+$string['privacy:preference:which_tries'] = 'Vem som försöker visa svar från.';
+$string['privacy:preference:which_tries:all'] = 'Alla försök på en fråga vid en användares provtillfälle.';
+$string['privacy:preference:which_tries:first'] = 'Det första försöket på en fråga vid en användares provtillfälle.';
+$string['privacy:preference:which_tries:last'] = 'Det sista försöket på en fråga vid en användares provtillfälle.';
+$string['questiontext'] = 'Frågetext';
+$string['reportresponses'] = 'Svaren';
 $string['response'] = 'svar';
-$string['responses'] = 'Detaljerade responser';
+$string['responses'] = 'Svar';
 $string['responsesdownload'] = 'Ladda ner svaren';
 $string['responsesfilename'] = 'svaren';
 $string['responsesoptions'] = 'Alternativ för responser';
 $string['responsesreport'] = 'Svarsrapport';
-$string['responsestitle'] = 'Detaljerade responser';
+$string['responsestitle'] = 'Svar';
 $string['responsex'] = 'Svar {$a}';
 $string['rightanswer'] = 'rätt svar';
 $string['rightanswerx'] = 'Rätt svar {$a}';
-$string['showattempts'] = 'Visa / ladda ner enbart försök';
+$string['showattempts'] = 'Enbart visa / ladda ned försök';
 $string['showthe'] = 'Visa';
-$string['summaryofquestiontext'] = 'Sammanfattning för frågan';
-$string['summaryofresponse'] = 'Sammanfattning av avgivna svar';
+$string['summaryofquestiontext'] = 'Sammanfattning av frågan';
+$string['summaryofresponse'] = 'Sammanfattning av svar';
 $string['summaryofrightanswer'] = 'Sammanfattning av rätt svar';

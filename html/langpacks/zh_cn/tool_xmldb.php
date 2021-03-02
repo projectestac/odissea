@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'zh_cn', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,16 +32,16 @@ $string['backtomainview'] = '返回主视图';
 $string['cannotuseidfield'] = '不能插入“id”字段。它是自动编号的列';
 $string['change'] = '更改';
 $string['charincorrectlength'] = '字符字段的不正确长度';
-$string['checkbigints'] = '检查bigint类型数据';
 $string['check_bigints'] = '查询不正确 DB 整数';
-$string['checkdefaults'] = '检查默认值';
 $string['check_defaults'] = '查找不一致的默认值';
-$string['checkforeignkeys'] = '检查外键';
 $string['check_foreign_keys'] = '搜索无效的外键';
-$string['checkindexes'] = '检查索引';
 $string['check_indexes'] = '查找缺失的数据库索引';
-$string['checkoraclesemantics'] = '检查语义';
 $string['check_oracle_semantics'] = '查找长度不正确的语义';
+$string['checkbigints'] = '检查bigint类型数据';
+$string['checkdefaults'] = '检查默认值';
+$string['checkforeignkeys'] = '检查外键';
+$string['checkindexes'] = '检查索引';
+$string['checkoraclesemantics'] = '检查语义';
 $string['completelogbelow'] = '（查看下面完整的搜索日志）';
 $string['confirmcheckbigints'] = '本功能将在您的Moodle服务器搜索<a href="http://tracker.moodle.org/browse/MDL-11038">潜在的整数字段错误</a>，自动生成（而不是执行！）正确定义您数据库中的整数的SQL语句。<br /><br />
 您可以拷贝这些语句到您惯用的SQL界面中安全地执行（不要忘记在此之前备份您的数据）。<br /><br />
@@ -137,12 +137,12 @@ $string['missingindexes'] = '发现缺失的索引';
 $string['mustselectonefield'] = '您必须选择一个字段来查看与字段相关的动作！';
 $string['mustselectoneindex'] = '您必须选择一个索引来查看与索引相关的动作！';
 $string['mustselectonekey'] = '您必须选择一个键值来查看与键值相关的动作！';
+$string['new_table_from_mysql'] = '从 MySQL 建新表';
 $string['newfield'] = '新建字段';
 $string['newindex'] = '新建索引';
 $string['newkey'] = '新建键值';
 $string['newtable'] = '创建新表';
 $string['newtablefrommysql'] = '从 MySQL 建新表';
-$string['new_table_from_mysql'] = '从 MySQL 建新表';
 $string['nofieldsspecified'] = '未指定任何字段';
 $string['nomasterprimaryuniquefound'] = '您的外键对应的字段必须是对应表中的主键或唯一键。注意，字段只是UNIQUE INDEX是不够的。';
 $string['nomissingindexesfound'] = '未发现缺失的索引，您的数据库不需要做任何操作。';
@@ -179,15 +179,15 @@ $string['unknowntable'] = '针对一个未知的表格';
 $string['unload'] = '卸载';
 $string['up'] = '向上';
 $string['view'] = '查看';
-$string['viewedited'] = '查看编辑过的';
-$string['vieworiginal'] = '查看原始代码';
-$string['viewphpcode'] = '查看 PHP 代码';
 $string['view_reserved_words'] = '查看保留字';
-$string['viewsqlcode'] = '查看 SQL 代码';
 $string['view_structure_php'] = '查看结构化 PHP';
 $string['view_structure_sql'] = '查看结构化 SQL';
 $string['view_table_php'] = '查看表 PHP';
 $string['view_table_sql'] = '查看表 SQL';
+$string['viewedited'] = '查看编辑过的';
+$string['vieworiginal'] = '查看原始代码';
+$string['viewphpcode'] = '查看 PHP 代码';
+$string['viewsqlcode'] = '查看 SQL 代码';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = '无效的外键';
 $string['violatedforeignkeysfound'] = '发现无效的外键';

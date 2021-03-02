@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'jclic', language 'eu', branch 'MOODLE_37_STABLE'
+ * Strings for component 'jclic', language 'eu', version '3.8'.
  *
- * @package   jclic
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     jclic
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -47,28 +47,40 @@ $string['exiturl_help'] = 'Hau da ikasleak JClic jarduera amaitzen duenean zabal
 Berbidalketa honek funtziona dezan, "Sekuentziak" fitxako JClic proiektuko azken jarduerak, "Aurrerako gezia" atalean, lotuta izan behar du "Irten JClic-etik" ekintza.';
 $string['expired'] = 'Barkatu, jarduera hau {$a} datan itxi zen eta dagoeneko ez dago eskura';
 $string['filetype'] = 'Mota';
+$string['filetype_help'] = 'Ezarpen honek zehazten du nola txertatuko den ikastaroan JClic paketea. Bi aukera dago:
+
+* Igotako JClic fitxategia - Fitxategi-hautatzailearen bitartez ".jclic.zip" fitxategi baliagarria aukera daiteke
+* Kanpoko URLa - JClic pakete baten URLa zehazteko aukera ematen du. OHARRA: URL-ak https(s) edo www hasiera izan behar du eta ".jclic.zip" fitxategi baliagarria izan behar du barnean.';
 $string['filetypeexternal'] = 'Kanpoko URLa';
 $string['filetypelocal'] = 'Igotako JClic fitxategia';
 $string['height'] = 'Altuera';
+$string['invalidjclicfile'] = 'Balio ez duen JClic fitxategia ezarri da. Fitxategiak ".jclic.zip" luzapena izan behar du.';
+$string['invalidurl'] = 'Balio ez duen URLa ezarri da. URLak http(s) hasiera izan behar du eta ".jclic.zip" fitxategi baliagarri bat izan behar du.';
 $string['jclic'] = 'JClic';
 $string['jclic:addinstance'] = 'Gehitu JClic';
-$string['jclicfile'] = 'JClic fitxategia';
 $string['jclic:grade'] = 'JClic-en kalifikazioa';
+$string['jclic:submit'] = 'Bidali JClic';
+$string['jclic:view'] = 'Ikusi JClic';
+$string['jclicfile'] = 'JClic fitxategia';
+$string['jclicfile_help'] = 'JClic paketea duen .jclic.zip fitxategia.';
 $string['jclicjarbase'] = 'JAR fitxategien oinarrizko URLa';
 $string['jclicjarbase_help'] = 'JClic-en JAR fitxategi guztiak izateko web-helbidea';
 $string['jclicjs'] = 'jclic.js fitxategiaren URLa';
 $string['jclicjs_help'] = 'Javarekin bateragarriak ez diren erreproduzigailuek behar duten jclic.js fitxategia aurkitzeko URL helbidea.';
-$string['jclic:submit'] = 'Bidali JClic';
 $string['jclicurl'] = 'URLa';
 $string['jclicurl_help'] = 'Ezarpen honek URL bat sortzen du JClic paketea aukeratzeko, fitxategi-hautatzailearen bidez aukeratu beharrik gabe.';
-$string['jclic:view'] = 'Ikusi JClic';
 $string['lang'] = 'Hizkuntza';
 $string['lap'] = 'Itzulien arteko denbora-tartea';
-$string['lap_help'] = 'Bezeroaren eta zerbitzariaren arteko transakzioetarako uzten den denbora (segundutan)';
+$string['lap_help'] = 'Bezeroaren eta zerbitzariaren arteko transakzioetarako uzten den denbora (segundotan)';
 $string['lastaccess'] = 'Azken sarrera';
 $string['maxattempts'] = 'Gehienezko saiakera-kopurua';
 $string['maxgrade'] = 'Lortu beharreko jarduera/puntuazioa';
 $string['modulename'] = 'JClic';
+$string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> Kataluniako Generalitateko Hezkuntza Sailaren proiektua da.
+Software askeko hainbat aplikatibok osatzen dute eta hainbat hezkuntza-jarduera multimedia sortzeko aukera ematen dute: puzzleak, loturak, testu-ariketak, gurutzegramak, letra-zopak eta bestelakoak.
+Gainera, <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic-ak</a> jarduera-biltegi bat du eta bertan bere lana elkarbanatu nahi izan duten irakasle eta beste talde batzuetako hainbat lagunek sortutako 1000 proiektutik gora daude
+
+Modulu honen bitartez irakasleek JClic motako edozein jarduera gehi dezakete ikastaro batean eta baita ikasle bakoitzak lortutako emaitzak eskuratu ere (jardueran emandako denbora, saiakerak, asmatutakoak, e.a.).';
 $string['modulenameplural'] = 'JClic';
 $string['msg_noattempts'] = 'Jarduera hau ahal zen aldi guztietan egin duzu';
 $string['msg_nosessions'] = 'Jarduera honetarako gehienezko saiakera-kopurua gainditu duzu';

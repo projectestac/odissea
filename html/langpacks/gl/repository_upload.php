@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_upload', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_upload', language 'gl', version '3.8'.
  *
- * @package   repository_upload
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_upload
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,6 +29,7 @@ $string['configplugin'] = 'Configuración do engadido de envíos';
 $string['pluginname'] = 'Enviar un ficheiro';
 $string['pluginname_help'] = 'Enviar un ficheiro a Moodle';
 $string['privacy:metadata'] = 'O engadido de repositorio para enviar un ficheiro non almacena ou transmite ningún dato persoal.';
+$string['upload:view'] = 'Empregar o envío no selector de ficheiros';
 $string['upload_error_cant_write'] = 'Non foi posíbel escribir o ficheiro no disco';
 $string['upload_error_extension'] = 'Unha extensión de PHP detivo o envío de ficheiros.';
 $string['upload_error_form_size'] = 'O ficheiro enviado excede a directiva MAX_FILE_SIZE que foi especificada no formulario HTML';
@@ -37,4 +38,3 @@ $string['upload_error_invalid_file'] = 'O ficheiro «{$a}» está baleiro ou é 
 $string['upload_error_no_file'] = 'Non se enviou ningún ficheiro';
 $string['upload_error_no_tmp_dir'] = 'Non se atopa PHP no cartafol temporal';
 $string['upload_error_partial'] = 'O ficheiro enviado foino só parcialmente';
-$string['upload:view'] = 'Empregar o envío no selector de ficheiros';

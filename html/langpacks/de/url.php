@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'url', language 'de', version '3.8'.
  *
- * @package   url
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     url
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,6 @@ $string['contentheader'] = 'Inhalt';
 $string['createurl'] = 'Link/URL einbinden';
 $string['displayoptions'] = 'Mögliche Anzeigeoptionen';
 $string['displayselect'] = 'Anzeigen';
-$string['displayselectexplain'] = 'Anzeigetyp auswählen, aber leider nicht sind nicht alle Typen für alle URLs geeignet';
 $string['displayselect_help'] = 'Die Darstellung des verlinkten Inhalts hängt von verschiedenen Faktoren ab:
 * gewählte Einstellung
 * Dateityp auf den verlinkt wird
@@ -49,16 +48,17 @@ Folgende Einstelloptionen sind möglich:
 * Als Popup - Die URL wird in einem Popup-Fenster ohne Menüs und ohne Adressleiste angezeigt
 * Im Frame - Die URL wird in einem Frame unterhalb der Navigationsleiste angezeigt, zusammen mit der URL-Beschreibung
 * Neues Fenster - Die URL wird in einem neuen Browserfenster mit Menüs und mit Adressleiste angezeigt';
+$string['displayselectexplain'] = 'Anzeigetyp auswählen, aber leider nicht sind nicht alle Typen für alle URLs geeignet';
 $string['externalurl'] = 'Externe URL';
 $string['framesize'] = 'Frame-Höhe';
 $string['indicator:cognitivedepth'] = 'URL kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einer URL-Ressource erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'URL kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die URL-Ressoucen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einer URL-Ressource erreicht hat.';
 $string['indicator:socialbreadth'] = 'URL sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einer URL-Ressource erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'URL sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die URL-Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einer URL-Ressource erreicht hat.';
 $string['invalidstoredurl'] = 'Das Material kann nicht angezeigt werden, weil die URL ungültig ist';
 $string['invalidurl'] = 'Ungültige URL';
 $string['modulename'] = 'Link/URL';

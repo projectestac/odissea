@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_customlang', language 'eu', version '3.8'.
  *
- * @package   tool_customlang
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_customlang
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,7 +29,7 @@ $string['checkin'] = 'Gorde kateak hizkuntza-paketean';
 $string['checkout'] = 'Ireki hizkuntza-paketea editatzeko';
 $string['checkoutdone'] = 'Hizkuntza-paketea eguneratu da';
 $string['checkoutinprogress'] = 'Hizkuntza-paketea eguneratzen';
-$string['confirmcheckin'] = 'Aldatutako kateak zure hizkuntza-pakete lokalean gordetzekotan zara. Honela pertsonalizatutako kateak itzultzailearengandik zure guneko datuen direktoriora esportatuko dira eta zure gunea aldatutako kateak erabiltzen hasiko da. Egin klik \'Jarraitu\' botoian egiaztatzeko.';
+$string['confirmcheckin'] = 'Aldatutako kateak zure hizkuntza-pakete lokalean gordetzekotan zara. Honela pertsonalizatutako kateak itzultzailearengandik zure guneko datuen karpetara esportatuko dira eta zure gunea aldatutako kateak erabiltzen hasiko da. Egin klik \'Jarraitu\' botoian egiaztatzeko.';
 $string['customlang:edit'] = 'Editatu itzulpen lokala';
 $string['customlang:view'] = 'Ikusi itzulpen lokala';
 $string['filter'] = 'Iragazi kateak';
@@ -41,11 +41,11 @@ $string['filtershowstrings'] = 'Erakutsi kateak';
 $string['filterstringid'] = 'Kate-identifikatzailea';
 $string['filtersubstring'] = 'Ondokoa duten kateak soilik';
 $string['headingcomponent'] = 'Osagaia';
-$string['headinglocal'] = 'Lokalaren pertsonalizazioa';
+$string['headinglocal'] = 'Pertsonalizazio lokala';
 $string['headingstandard'] = 'Testu estandarra';
 $string['headingstringid'] = 'Katea';
 $string['markinguptodate'] = 'Pertsonalizazioa eguneratu gisa markatzen';
-$string['markinguptodate_help'] = 'Pertsonalizatutako itzulpena zaharkitua gera daiteke katea zure gunean pertsonalizatu zenetik jatorrizko Ingelesezko edo itzulpen ofiziala aldatu bada. Berrikusi pertsonalizatutako itzulpena. Eguneratuta irizten badiozu, markatu laukitxoa. Bestela, edita ezazu.';
+$string['markinguptodate_help'] = 'Pertsonalizatutako itzulpena zaharkitua gera daiteke katea zure gunean pertsonalizatu zenetik jatorrizko Ingelesezko edo itzulpen ofiziala aldatu bada. Berrikusi pertsonalizatutako itzulpena. Eguneratuta irizten badiozu, markatu laukitxoa. Bestela, editatu ezazu.';
 $string['markuptodate'] = 'markatu eguneratu gisa';
 $string['modifiedno'] = 'Ez dago aldatutako katerik gordetzeko.';
 $string['modifiednum'] = '{$a} aldatutako kate daude. Aldaketa horiek zure hizkuntza-paketean gorde nahi dituzu?';

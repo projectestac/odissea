@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_course_list', language 'ko', version '3.8'.
  *
- * @package   block_course_list
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_course_list
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,6 +31,6 @@ $string['configadminview'] = '강좌 목록에서 관리자는 무엇을 볼 수
 $string['confighideallcourseslink'] = '블록 하단의 "강좌" 링크 감춤. 관리자 가 보는데는 지장이 없음.';
 $string['course_list:addinstance'] = '새 강좌 블록 추가';
 $string['course_list:myaddinstance'] = '내 공부방에 강좌 블록 추가';
-$string['hideallcourseslink'] = '모든 강좌 링크 감춤';
+$string['hideallcourseslink'] = '\'모든 강좌\' 링크 감춤';
 $string['owncourses'] = '관리자는 자신의 강좌만 볼 수 있음';
-$string['pluginname'] = '강좌 목록';
+$string['pluginname'] = '강좌';

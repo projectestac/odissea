@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'iso6392', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'iso6392', language 'ar', version '3.8'.
  *
- * @package   iso6392
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     iso6392
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -114,12 +114,12 @@ $string['cmc'] = 'اللغات التشاميكية';
 $string['cop'] = 'القبطية';
 $string['cor'] = 'الكورنيش';
 $string['cos'] = 'الكورسيكية';
-$string['cpe'] = 'الكرييولى و اللغات المبسطة الأخرى للتفاهم بين الشعوب على أساس الأنجليزية';
-$string['cpf'] = 'الكرييولى و اللغات المبسطة الأخرى للتفاهم بين الشعوب على أساس الفرنسية';
-$string['cpp'] = 'الكرييولى و اللغات المبسطة الأخرى للتفاهم بين الشعوب على أساس البرتغالية';
+$string['cpe'] = 'الكريولى وما يحاكيها، إنجليزية الأصل';
+$string['cpf'] = 'الكريولى وما يحاكيها، فرنسية الأصل';
+$string['cpp'] = 'الكريولى وما يحاكيها، برتغالية الأصل';
 $string['cre'] = 'الكرى';
 $string['crh'] = 'التركية الكريمينية';
-$string['crp'] = 'الكرييولى و اللغات المبسطة الأخرى للتفاهم بين الشعوب - أخرى';
+$string['crp'] = 'الكريولى وما يحاكيها';
 $string['csb'] = 'الكاشبايان';
 $string['cus'] = 'اللغة الكشيتيكية';
 $string['cym'] = 'الولزية';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_datetime', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'profilefield_datetime', language 'gl', version '3.8'.
  *
- * @package   profilefield_datetime
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     profilefield_datetime
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,12 +30,12 @@ $string['defaultdate'] = 'Data predeterminada';
 $string['endyear'] = 'Ano de finalización';
 $string['notset'] = 'Non estabelecido';
 $string['pluginname'] = 'Data/hora';
-$string['privacy:metadata:profilefield_datetime:data'] = 'Os datos almacenados do usuario.';
-$string['privacy:metadata:profilefield_datetime:dataformat'] = 'O formato dos datos almacenados do usuario.';
-$string['privacy:metadata:profilefield_datetime:fieldid'] = 'O ID do campo do perfil.';
-$string['privacy:metadata:profilefield_datetime:tableexplanation'] = 'Aquí está almacenada a información adicional do usuario.';
-$string['privacy:metadata:profilefield_datetime:userid'] = 'O ID do usuario cuxos datos son almacenados polo engadido de data/hora.';
+$string['privacy:metadata:profilefield_datetime:data'] = 'Datos de usuario do campo de perfil de data/hora';
+$string['privacy:metadata:profilefield_datetime:dataformat'] = 'O formato dos datos de usuario do campo de perfil de data/hora';
+$string['privacy:metadata:profilefield_datetime:fieldid'] = 'O ID do campo do perfil';
+$string['privacy:metadata:profilefield_datetime:tableexplanation'] = 'Datos adicionais do usuario';
+$string['privacy:metadata:profilefield_datetime:userid'] = 'O ID do usuario cuxos datos están gardados no campo de perfil de usuario data/hora';
 $string['specifydatedefault'] = 'ou especifique unha data';
 $string['startyear'] = 'Ano de inicio';
-$string['startyearafterend'] = 'Non é posíbel que o ano de inicio ocorra despois do ano de finalización';
-$string['wanttime'] = 'Incluír hora?';
+$string['startyearafterend'] = 'Non é posíbel que o ano de inicio sexa posterior ao ano de finalización';
+$string['wanttime'] = 'Incluír a hora?';

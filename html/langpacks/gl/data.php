@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'data', language 'gl', version '3.8'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,7 +44,7 @@ $string['authorfirstname'] = 'Nome do autor';
 $string['authorlastname'] = 'Apelido do autor';
 $string['autogenallforms'] = 'Xerar todos os modelos predeterminados';
 $string['autolinkurl'] = 'Autoligado do URL';
-$string['availablefromdate'] = 'Dispoñíbel desde';
+$string['availablefromdate'] = 'Dispoñíbel dende';
 $string['availabletags'] = 'Etiquetas dispoñíbeis';
 $string['availabletags_help'] = 'As etiquetas son marcadores de posición no modelo, que se substituirán por datos ou outros ítems, tales como unha icona de edición, cando se editen ou visualicen as entradas.
 
@@ -167,19 +167,19 @@ $string['fielddeleted'] = 'Campo eliminado';
 $string['fielddelimiter'] = 'Delimitador de campo';
 $string['fielddescription'] = 'Descrición de campo';
 $string['fieldenclosure'] = 'Encerramento de campo';
-$string['fieldheight'] = 'Altura';
+$string['fieldheight'] = 'Alto';
 $string['fieldheightlistview'] = 'Altura na vista da lista';
 $string['fieldheightsingleview'] = 'Altura en vista única';
 $string['fieldids'] = 'Id de campo';
-$string['fieldmappings'] = 'Asignacións de campo';
-$string['fieldmappings_help'] = 'Este menú permítelle gardar os datos da base de datos existente. Para preservar os datos nun campo, debe asignalo nun novo campo, onde os datos aparecerán. Calquera campo pode tamén deixarse en branco, sen información copiada nel. Calquera campo antigo non asignado nun novo perderase e todos os seus datos se eliminarán.
-Soamente pode asignar campos do mesmo tipo, así cada opción despregábel terá diferentes campos nela. Tamén debe coidar de non tentar asignar un campo antigo a máis dun novo campo.';
+$string['fieldmappings'] = 'Mapeamento de campo';
+$string['fieldmappings_help'] = 'Este menú permítelle gardar os datos da base de datos existente. Para preservar os datos nun campo, debe asignalos a un novo campo onde aparecerán os datos. Tamén pode deixar en branco calquera campo, sen que se copie ningunha información nel. Perderase calquera campo antigo non asignado a un novo e eliminaranse todos os seus datos.
+Só pode campos do mesmo tipo, polo que cada menú despregábel terá diferentes campos nel. Ademais, ten que ter coidado de non tratar de asignar un campo antigo a máis dun campo novo.';
 $string['fieldname'] = 'Nome de campo';
-$string['fieldnotmatched'] = 'Os seguintes campos do seu ficheiro non son coñecido nesta base datos: {$a}';
+$string['fieldnotmatched'] = 'Os seguintes campos do seu ficheiro non son coñecidos nesta base datos: {$a}';
 $string['fieldoptions'] = 'Opcións (unha por liña)';
 $string['fields'] = 'Campos';
 $string['fieldupdated'] = 'Campo actualizado';
-$string['fieldwidth'] = 'Largura';
+$string['fieldwidth'] = 'Largo';
 $string['fieldwidthlistview'] = 'Largura na vista da lista';
 $string['fieldwidthsingleview'] = 'Largura en vista única';
 $string['file'] = 'Ficheiro';
@@ -193,7 +193,7 @@ $string['foundrecords'] = 'Atopáronse os rexistros: {$a->num}/{$a->max} (<a hre
 $string['fromfile'] = 'Importar dende un ficheiro zip';
 $string['fromfile_help'] = 'A importación dun ficheiro zip permítelle buscar e actualizar un zip predefinido de modelos e campos.';
 $string['generateerror'] = 'Non se xeraron todos os filtros!';
-$string['header'] = 'Cabeceira';
+$string['header'] = 'Cabeceira (header)';
 $string['headeraddtemplate'] = 'Definir a interface ao editar entradas';
 $string['headerasearchtemplate'] = 'Definir a interface para buscas avanzadas';
 $string['headercsstemplate'] = 'Definir os estilos CSS locais para outros modelos';
@@ -208,15 +208,15 @@ $string['includetags'] = 'Incluír as etiquetas';
 $string['includetime'] = 'Incluír o momento de engadido/modificado';
 $string['includeuserdetails'] = 'Incluír detalles do usuario';
 $string['indicator:cognitivedepth'] = 'Base de datos cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de base de datos.';
 $string['indicator:cognitivedepthdef'] = 'Base de datos cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo que ofrecen as actividades da Base de datos durante este intervalo de análise (Niveis = Sen vista, Ver)';
 $string['indicator:cognitivedepthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Profundidade_cognitiva';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de base de datos.';
 $string['indicator:socialbreadth'] = 'Base de datos social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nunha actividade de base de datos.';
 $string['indicator:socialbreadthdef'] = 'Base de datos social';
 $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen as actividades da Base de datos durante este intervalo de análise (Niveis = Sen participación, Participante en solitario)';
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
-$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nunha actividade de base de datos.';
 $string['insufficiententries'] = 'necesítanse máis entradas para ver esta base de datos';
 $string['intro'] = 'Descrición';
 $string['invalidaccess'] = 'Non se accedeu correctamente a esta páxina';
@@ -242,7 +242,7 @@ $string['manageapproved'] = 'Permitir a edición de entradas aprobadas';
 $string['manageapproved_help'] = 'Se o desactiva, as entradas aprobadas xa non serán editábeis ou eliminábeis polo usuario que as engadiu. Este axuste non ten efecto a non ser que estea activado «Aprobación requirida».';
 $string['mapexistingfield'] = 'Asignar a {$a}';
 $string['mapnewfield'] = 'Crear un novo campo';
-$string['mappingwarning'] = 'Todos os vellos campos non asignados nun novo campo perderanse e todos os datos nese campo se eliminarán.';
+$string['mappingwarning'] = 'Todos os vellos campos non mapeados nun novo campo perderanse e todos os datos nese campo se eliminarán.';
 $string['maxentries'] = 'Entradas máximas';
 $string['maxentries_help'] = 'O número máximo de entradas que se lle permite remitir a un alumno para esta actividade.';
 $string['maxsize'] = 'Tamaño máximo';
@@ -265,7 +265,7 @@ As actividades da base de datos teñen moitos usos, tales como
 * Para presentar fotos, carteis, sitios web ou poemas feitos por alumnos comentados e revisados por pares';
 $string['modulename_link'] = 'mod/chat/vista';
 $string['modulenameplural'] = 'Bases de datos';
-$string['more'] = 'Máis';
+$string['more'] = 'More';
 $string['moreurl'] = 'Máis URL';
 $string['movezipfailed'] = 'Non se pode mover o zip';
 $string['multientry'] = 'Entrada repetida';
@@ -273,7 +273,7 @@ $string['multimenu'] = 'Menú (Multiselección)';
 $string['multipletags'] = 'Atopáronse múltiples etiquetas! Modelo non gardado';
 $string['newentry'] = 'Nova entrada';
 $string['newfield'] = 'Crear un novo campo';
-$string['newfield_help'] = 'Un campo permite a introdución de datos. Cada entrada nunha actividade de base de datos pode ter múltiples campos de múltiples tipos como un campo de data, que lles permite aos participantes seleccionar un día, mes e ano dunha lista despregábel, un campo de imaxe que lles permite aos participantes subir un ficheiro de imaxe ou un campo de caixa de selección, o que lles permite aos participantes seleccionar un ou máis opcións.
+$string['newfield_help'] = 'Un campo permite a introdución de datos. Cada entrada nunha actividade de base de datos pode ter múltiples campos de múltiples tipos como un campo de data, que lles permite aos participantes seleccionar un día, mes e ano dun menú despregábel, un campo de imaxe que lles permite aos participantes enviar un ficheiro de imaxe ou un campo de caixa de selección, o que lles permite aos participantes seleccionar unha ou máis opcións.
 
 Cada campo debe ter un único nome de campo. A descrición do campo é opcional.';
 $string['noaccess'] = 'Non ten acceso a esta páxina';
@@ -291,7 +291,7 @@ $string['notopenyet'] = 'Mágoa, esta actividade non está dispoñíbel ata {$a}
 $string['number'] = 'Número';
 $string['numberrssarticles'] = 'Artigos RSS';
 $string['numnotapproved'] = 'Pendente';
-$string['numrecords'] = '{$a} entradaas';
+$string['numrecords'] = '{$a} entradas';
 $string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (LibreOffice)';
 $string['openafterclose'] = 'Especificou unha data aberta após a data de remate';
 $string['optionaldescription'] = 'Descrición curta (opcional)';
@@ -299,7 +299,7 @@ $string['optionalfilename'] = 'Nome de ficheiro (opcional)';
 $string['other'] = 'Outro';
 $string['overrwritedesc'] = 'Sobrescribir a predefinición se xa existise';
 $string['overwrite'] = 'Sobrescribir';
-$string['overwritesettings'] = 'Sobrescribir a configuración actual';
+$string['overwritesettings'] = 'Sobrescribir os axustes actuais';
 $string['page-mod-data-x'] = 'Calquera páxina do módulo de actividade de base de datos';
 $string['pagesize'] = 'Entradas por páxina';
 $string['participants'] = 'Participantes';
@@ -318,13 +318,13 @@ $string['privacy:metadata:data_content:content2'] = 'Contido adicional 2';
 $string['privacy:metadata:data_content:content3'] = 'Contido adicional 3';
 $string['privacy:metadata:data_content:content4'] = 'Contido adicional 4';
 $string['privacy:metadata:data_content:fieldid'] = 'ID de definición de campo';
-$string['privacy:metadata:datafieldnpluginsummary'] = 'Campos para o módulo de actividade da base de datos';
 $string['privacy:metadata:data_records'] = 'Representan rexistros no módulo de actividade da base de datos';
 $string['privacy:metadata:data_records:approved'] = 'Estado de aprobación';
 $string['privacy:metadata:data_records:groupid'] = 'Grupo';
 $string['privacy:metadata:data_records:timecreated'] = 'O momento no que se creou o rexistro';
-$string['privacy:metadata:data_records:timemodified'] = 'O momento no que o rexistro foi modificado por última vez';
+$string['privacy:metadata:data_records:timemodified'] = 'O momento no que se modificou o rexistro por última vez';
 $string['privacy:metadata:data_records:userid'] = 'Usuario que creou o rexistro';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Campos para o módulo de actividade da base de datos';
 $string['privacy:metadata:filepurpose'] = 'Ficheiro anexo ao rexistro da base de datos';
 $string['privacy:metadata:ratingpurpose'] = 'Puntuación nos rexistros da base de datos';
 $string['privacy:metadata:tagpurpose'] = 'Etiquetas nos rexistros da base de datos';
@@ -335,7 +335,7 @@ $string['recorddisapproved'] = 'Entrada non aprobada';
 $string['recordsnotsaved'] = 'Non se gardou ningunha entrada. Comprobe o formato do ficheiro subido.';
 $string['recordssaved'] = 'entradas gardadas';
 $string['removealldatatags'] = 'Retirar todas as etiquetas da base de datos';
-$string['requireapproval'] = 'Solicita aprobación?';
+$string['requireapproval'] = 'Aprobación requirida';
 $string['requireapproval_help'] = 'De estar activada, as entradas requiren a aprobación por un profesor antes de ser visíbeis para calquera';
 $string['required'] = 'Requirido';
 $string['requiredentries'] = 'Entradas solicitadas';
@@ -361,7 +361,7 @@ $string['saveandadd'] = 'Gardar e engadir outra';
 $string['saveandview'] = 'Gardar e ver';
 $string['saveaspreset'] = 'Gardar como predefinido';
 $string['saveaspreset_help'] = 'A funcionalidade de gardar como predefinido publica os modelos e campos como unha predefinición que outros usuarios poden usar no sitio. (Pode eliminala da lista de predefinidos en calquera momento)';
-$string['savesettings'] = 'Gardar a configuración';
+$string['savesettings'] = 'Gardar os axustes';
 $string['savesuccess'] = 'Gardouse correctamente. O seu predefinido estará agora dispoñíbel para o sitio.';
 $string['savetemplate'] = 'Gardar modelo';
 $string['search'] = 'Buscar';
@@ -387,11 +387,11 @@ $string['timeadded'] = 'Tempo engadido';
 $string['timemodified'] = 'Tempo modificado';
 $string['todatabase'] = 'a esta base de datos.';
 $string['type'] = 'Tipo de campo';
-$string['undefinedprocessactionmethod'] = 'Non existe un método definido en Data_Preset para manexa a acción "{$a}".';
+$string['undefinedprocessactionmethod'] = 'Non existe un método definido en Data_Preset para manexa a acción «{$a}».';
 $string['unsupportedexport'] = '({$a->fieldtype}) non se pode exportar.';
 $string['updatefield'] = 'Actualizar un campo existente';
 $string['uploadfile'] = 'Actualizar ficheiro';
-$string['uploadrecords'] = 'Actualizar entradas desde o ficheiro';
+$string['uploadrecords'] = 'Actualizar entradas dende o ficheiro';
 $string['uploadrecords_help'] = 'As entradas poden cargarse vía un ficheiro de texto. O formato do ficheiro debería ser como segue:
 
 * Cada liña do ficheiro contén un rexistro

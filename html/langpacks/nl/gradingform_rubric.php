@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradingform_rubric', language 'nl', version '3.8'.
  *
- * @package   gradingform_rubric
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradingform_rubric
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -63,9 +63,9 @@ $string['notset'] = 'Niet ingesteld';
 $string['pluginname'] = 'Rubric';
 $string['pointsvalue'] = '{$a} punten';
 $string['previewrubric'] = 'Voorbeeld van rubric';
-$string['privacy:metadata:criterionid'] = 'Een identificatie voor een specifiek criterium dat wordt beoordeeld.';
+$string['privacy:metadata:criterionid'] = 'Een identifier voor een specifiek criterium dat wordt beoordeeld.';
 $string['privacy:metadata:fillingssummary'] = 'Slaat informatie op over het cijfer van de gebruiker dat door de rubric is gemaakt.';
-$string['privacy:metadata:instanceid'] = 'Een identificatie die betrekking heeft op een cijfer in een activiteit.';
+$string['privacy:metadata:instanceid'] = 'Een identifier die betrekking heeft op een cijfer in een activiteit.';
 $string['privacy:metadata:levelid'] = 'Het niveau verkregen in de rubric.';
 $string['privacy:metadata:remark'] = 'Opmerkingen met betrekking tot het criterium in de rubric dat wordt beoordeeld.';
 $string['regrademessage1'] = 'Je gaat wijzigingen aanbrengen aan een rubric die al gebruikt is voor het beoordelen. Geef aan of bestaande cijfers moeten nagekeken worden. Als je dit aangeeft, dan zal de rubric verborgen blijven voor leerlingen tot hun item opnieuw beoordeeld is.';

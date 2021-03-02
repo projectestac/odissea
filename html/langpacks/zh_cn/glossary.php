@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'zh_cn', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -114,14 +114,6 @@ $string['destination'] = '词条导入目标';
 $string['destination_help'] = '词条可以导入到当前词汇表，也可以导入到新词汇表。新词汇表会按 XML 文件中的信息创建。';
 $string['disapprove'] = '取消审核';
 $string['displayformat'] = '显示格式';
-$string['displayformatcontinuous'] = '连续（不含作者）';
-$string['displayformatdefault'] = '默认显示格式相同';
-$string['displayformatdictionary'] = '简单字典风格';
-$string['displayformatencyclopedia'] = '百科全书';
-$string['displayformatentrylist'] = '词条列表';
-$string['displayformatfaq'] = '常见问题';
-$string['displayformatfullwithauthor'] = '详细（含作者）';
-$string['displayformatfullwithoutauthor'] = '详细（不含作者）';
 $string['displayformat_help'] = '有 7 种显示格式：
 
 * 简单字典风格 - 不显示作者，附件显示为链接
@@ -131,6 +123,14 @@ $string['displayformat_help'] = '有 7 种显示格式：
 * 百科全书 - 同“详细（含作者）”类似，但附件中的图片会直接内嵌显示
 * 词条列表 - 以链接的形式列出所有词名
 * 常见问题 - 在词名和定义后自动附加“问题”和“解答”字样';
+$string['displayformatcontinuous'] = '连续（不含作者）';
+$string['displayformatdefault'] = '默认显示格式相同';
+$string['displayformatdictionary'] = '简单字典风格';
+$string['displayformatencyclopedia'] = '百科全书';
+$string['displayformatentrylist'] = '词条列表';
+$string['displayformatfaq'] = '常见问题';
+$string['displayformatfullwithauthor'] = '详细（含作者）';
+$string['displayformatfullwithoutauthor'] = '详细（不含作者）';
 $string['displayformats'] = '显示格式';
 $string['displayformatssetup'] = '显示格式设置';
 $string['duplicatecategory'] = '类别重名';
@@ -193,18 +193,18 @@ $string['glossary:export'] = '导出词条';
 $string['glossary:exportentry'] = '导出单个词条';
 $string['glossary:exportownentry'] = '导出您的单个词条';
 $string['glossary:import'] = '导入词条';
-$string['glossaryleveldefaultsettings'] = '词汇表级别缺省设置';
 $string['glossary:managecategories'] = '管理类别';
 $string['glossary:managecomments'] = '管理评论';
 $string['glossary:manageentries'] = '管理词条';
 $string['glossary:rate'] = '评价词条';
-$string['glossarytype'] = '词汇表类型';
-$string['glossarytype_help'] = '副词汇表的词条可以导入到主词汇表中。一个课程只能有一个主词汇表。如果不需要词条导入功能，可以把所有词汇表都设成副词汇表。';
 $string['glossary:view'] = '查看词汇表';
 $string['glossary:viewallratings'] = '查看所有人给的原始评分';
 $string['glossary:viewanyrating'] = '查看每个人收到的总评分';
 $string['glossary:viewrating'] = '查看您收到的总评分';
 $string['glossary:write'] = '创建新词条';
+$string['glossaryleveldefaultsettings'] = '词汇表级别缺省设置';
+$string['glossarytype'] = '词汇表类型';
+$string['glossarytype_help'] = '副词汇表的词条可以导入到主词汇表中。一个课程只能有一个主词汇表。如果不需要词条导入功能，可以把所有词汇表都设成副词汇表。';
 $string['guestnoedit'] = '访客不能编辑词汇表';
 $string['importcategories'] = '导入类别';
 $string['importedcategories'] = '导入的类别';
@@ -225,7 +225,7 @@ $string['linking'] = '自动链接';
 $string['mainglossary'] = '主词汇表';
 $string['maxtimehaspassed'] = '很抱歉，已超过了修改该评论（{$a}）的最大时限！';
 $string['modulename'] = '词汇表';
-$string['modulename_help'] = '词汇模块能让使用者创建和维护像字典一样的定义列表。无论概念词句出现在课程的哪里，都可以被自动链接到对应的词汇条目。';
+$string['modulename_help'] = '词汇模块能让使用者创建和维护像字典一样的定义列表。无论词名出现在课程的哪里，都可以被自动链接到对应的词条。';
 $string['modulenameplural'] = '词汇表';
 $string['newentries'] = '新词条';
 $string['newglossary'] = '新词汇表';

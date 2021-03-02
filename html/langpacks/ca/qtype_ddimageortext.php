@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'ca', version '3.8'.
  *
- * @package   qtype_ddimageortext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddimageortext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,9 +58,9 @@ $string['label'] = 'Text';
 $string['nolabel'] = 'No hi ha text a l\'etiqueta';
 $string['pleasedraganimagetoeachdropregion'] = 'La vostra resposta no està completa; arrossegueu un element a cadascuna de les zones de destí.';
 $string['pluginname'] = 'Arrossegueu i deixeu anar sobre una imatge';
+$string['pluginname_help'] = 'Les preguntes d\'arrossegar i deixar anar sobre imatges demanen que qui respon arrossegui imatges o etiquetes de text i les deixi anar dins de zones de col·locació definides sobre una imatge de fons. Els elements arrossegables es poden agrupar de forma que tots els elements d\'un grup concret tinguin el mateix color que les zones on es deixin anar. Els elements arrossegables marcats com a il·limitats es poden deixar anar a més d\'una zona.';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'arrossegar sobre una imatge.';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'arrossegar sobre una imatge';
-$string['pluginname_help'] = 'Les preguntes d\'arrossegar i deixar anar sobre imatges demanen que qui respon arrossegui imatges o etiquetes de text i les deixi anar dins de zones de col·locació definides sobre una imatge de fons. Els elements arrossegables es poden agrupar de forma que tots els elements d\'un grup concret tinguin el mateix color que les zones on es deixin anar. Els elements arrossegables marcats com a il·limitats es poden deixar anar a més d\'una zona.';
 $string['pluginnamesummary'] = 'Permet arrossegar i deixar anar imatges o textos dins d\'una imatge.';
 $string['previewareaheader'] = 'Previsualitza';
 $string['previewareamessage'] = 'Seleccioneu una imatge de fons, i especifiqueu els elements arrossegables i les zones de la imatge on s\'han d\'ubicar.';

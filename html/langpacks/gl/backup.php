@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'gl', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,7 +41,7 @@ $string['asyncmessagebody'] = 'Mensaxe';
 $string['asyncmessagebodydefault'] = 'Ola {user_firstname}, <br/> A súa {operation} (ID: {backupid}) completouse correctamente. <br/><br/>Pode acceder a ela aquí: {link}.';
 $string['asyncmessagebodydetail'] = 'Mensaxe para enviar cando se completa unha copia de seguranza ou restauración asíncrona.';
 $string['asyncmessagesubject'] = 'Asunto';
-$string['asyncmessagesubjectdefault'] = '{operación} do Moodle completouse correctamente';
+$string['asyncmessagesubjectdefault'] = 'A {operation} do Moodle completouse correctamente';
 $string['asyncmessagesubjectdetail'] = 'Asunto da mensaxe';
 $string['asyncnowait'] = 'Non é preciso que agarde aquí, xa que o proceso continuará en segundo plano.';
 $string['asyncprocesspending'] = 'Proceso pendente';
@@ -68,7 +68,7 @@ $string['automatedmaxkept'] = 'Número máximo de copias de seguranza que conser
 $string['automatedmaxkepthelp'] = 'Isto especifica o número máximo de copias de seguranza automatizadas recentes que conservar para cada curso. As copias de seguranza que sexan máis antigas eliminaranse automaticamente.';
 $string['automatedminkept'] = 'Número mínimo de copias de seguranza a conservar';
 $string['automatedminkepthelp'] = 'Se se eliminan as copias de seguranza máis antigas que o número de días especificado, pode suceder que un curso inactivo termine sen copias de seguranza. Para evitar isto, debe especificarse un número mínimo de copias de seguranza a conservar.';
-$string['automatedsettings'] = 'Configuración da copia de seguranza automatizada';
+$string['automatedsettings'] = 'Axustes da copia de seguranza automatizada';
 $string['automatedsetup'] = 'Configuración da copia de seguranza automatizada';
 $string['automatedstorage'] = 'Almacenamento da copia de seguranza automatizada';
 $string['automatedstoragehelp'] = 'Escolla a localización onde quere almacenar as copias de seguranza creadas automaticamente.';
@@ -96,7 +96,7 @@ $string['backupmode50'] = 'Automático';
 $string['backupmode60'] = 'Convertido';
 $string['backupmode70'] = 'Asíncrono';
 $string['backupsection'] = 'Copia de seguranza da sección de curso: {$a}';
-$string['backupsettings'] = 'Configuración da copia de seguranza';
+$string['backupsettings'] = 'Axustes da copia de seguranza';
 $string['backupsitedetails'] = 'Detalles do sitio';
 $string['backupstage16action'] = 'Continuar';
 $string['backupstage1action'] = 'Seguinte';
@@ -117,29 +117,29 @@ $string['choosefilefromcoursebackup'] = 'Área da copia de seguranza de curso';
 $string['choosefilefromcoursebackup_help'] = 'Aquí almacénanse as copias de seguranza dos cursos que empregan os axustes predeterminados.';
 $string['choosefilefromuserbackup'] = 'Área da copia de seguranza privada de usuario';
 $string['choosefilefromuserbackup_help'] = 'Aquí almacénanse as copias de seguranza coa información do usuario anonimizada.';
+$string['config_keep_groups_and_groupings'] = 'De xeito predeterminado, manter os grupos e as agrupacións actuais.';
+$string['config_keep_roles_and_enrolments'] = 'De xeito predeterminado, manter os roles e matriculacións actuais.';
+$string['config_overwrite_conf'] = 'Permitirlle ao usuario anular a configuración actual do curso';
+$string['config_overwrite_course_fullname'] = 'De forma predeterminada, sobrescribe o nome completo do curso co do ficheiro de copia de seguranza. Isto necesita que estea activado «Sobrescribir a configuración do curso» e que o usuario actual teña a funcionalidade para cambiarlle o nome completo ao curso (moodle/course:changefullname)';
+$string['config_overwrite_course_shortname'] = 'De forma predeterminada, sobrescribe o nome curto do curso co do ficheiro de copia de seguranza. Isto necesita que estea activado «Sobrescribir a configuración do curso» e que o usuario actual teña a funcionalidade para cambiarlle o nome curto ao curso (moodle/course:changeshortname)';
+$string['config_overwrite_course_startdate'] = 'De forma predeterminada, sobrescribe a data de inicio do curso coa data do ficheiro de copia de seguranza. Isto necesita que estea activado «Sobrescribir a configuración do curso» e que o usuario actual teña a funcionalidade para cambiar as datas do curso ao restaurar (moodle/restore:rolldates)';
 $string['configgeneralactivities'] = 'Estabelece os valores predeterminados para incluír actividades nunha copia de seguranza.';
 $string['configgeneralanonymize'] = 'Se está activado, toda a información relativa aos usuarios será anónima de xeito predeterminado.';
-$string['configgeneralbadges'] = 'Estabelece os valores predeterminados para incluír distincións nunha copia de seguranza.';
+$string['configgeneralbadges'] = 'Estabelece os valores predeterminados para incluír insignias nunha copia de seguranza.';
 $string['configgeneralblocks'] = 'Estabelece os valores predeterminados para incluír bloques nunha copia de seguranza.';
 $string['configgeneralcalendarevents'] = 'Estabelece os valores predeterminados para incluír eventos de calendario nunha copia de seguranza.';
 $string['configgeneralcomments'] = 'Estabelece os valores predeterminados para incluír comentarios nunha copia de seguranza.';
 $string['configgeneralcompetencies'] = 'Estabelece os valores predeterminados para incluír competencias nunha copia de seguranza.';
 $string['configgeneralfiles'] = 'Estabelece o valor predeterminado para incluír ficheiros nunha copia de seguridade. Teña en conta que: se desactiva este axuste producirase unha copia de seguridade que incluirá só referencias a ficheiros. Isto non supón ningún problema se a copia de seguridade está restaurada no mesmo sitio e os ficheiros non se eliminaron segundo a configuración «Limpar os ficheiros do agrupamento do lixo» (filescleanupperiod).';
 $string['configgeneralfilters'] = 'Estabelece os valores predeterminados para incluír os filtro nunha copia de seguranza.';
-$string['configgeneralgroups'] = 'Define o comportamento por defecto para incluír grupos e agrupamentos nunha copia de seguranza.';
+$string['configgeneralgroups'] = 'Define o comportamento predeterminado para incluír grupos e agrupamentos nunha copia de seguranza.';
 $string['configgeneralhistories'] = 'Estabelece os valores predeterminados para incluír o historial do usuario nunha copia de seguranza.';
 $string['configgenerallogs'] = 'Se está activado, de xeito predeterminado incluiranse os rexistros nas copias de seguranza.';
 $string['configgeneralquestionbank'] = 'Se está activado, o banco de preguntas estará incluído de xeito predeterminado nas copias de seguranza. TOME NOTA de que ao desactivar esta configuración desactivarase a copia de seguranza de actividades que usen o banco de preguntas, como por exemplo, os exames.';
 $string['configgeneralroleassignments'] = 'Se está activado, os roles asignados de xeito predeterminado incluiranse tamén na copia de seguranza.';
 $string['configgeneralusers'] = 'Estabelece os valores predeterminados para incluír aos usuarios nas copias de seguranza.';
 $string['configgeneraluserscompletion'] = 'Se está activado, a información do grado de avance dos usuarios incluirase de xeito predeterminado nas copias de seguranza.';
-$string['config_keep_groups_and_groupings'] = 'De xeito predeterminado, manter os grupos e as agrupacións actuais.';
-$string['config_keep_roles_and_enrolments'] = 'De xeito predeterminado, manter os roles e matriculacións actuais.';
-$string['configloglifetime'] = 'Especifica o período de tempo durante o que quere manter a información dos rexistros de copia de seguranza. Os rexistros máis antigos do estabelecido eliminaranse automaticamente. Recomendase manter este valor o máis baixo posíbel, xa que o volume da información sobre as  copias de seguranza pode chegar a ser grande de máis.';
-$string['config_overwrite_conf'] = 'Permitirlle ao usuario anular a configuración actual do curso';
-$string['config_overwrite_course_fullname'] = 'De forma predeterminada, sobrescribe o nome completo do curso co do ficheiro de copia de seguranza. Isto necesita que estea activado «Sobrescribir a configuración do curso» e que o usuario actual teña a funcionalidade para cambiarlle o nome completo ao curso (moodle/course:changefullname)';
-$string['config_overwrite_course_shortname'] = 'De forma predeterminada, sobrescribe o nome curto do curso co do ficheiro de copia de seguranza. Isto necesita que estea activado «Sobrescribir a configuración do curso» e que o usuario actual teña a funcionalidade para cambiarlle o nome curto ao curso (moodle/course:changeshortname)';
-$string['config_overwrite_course_startdate'] = 'De forma predeterminada, sobrescribe a data de inicio do curso coa data do ficheiro de copia de seguranza. Isto necesita que estea activado «Sobrescribir a configuración do curso» e que o usuario actual teña a funcionalidade para cambiar as datas do curso ao restaurar (moodle/restore:rolldates)';
+$string['configloglifetime'] = 'Especifica o período de tempo durante o que quere manter a información dos rexistros de copia de seguranza. Os rexistros máis antigos do estabelecido eliminaranse automaticamente. Recomendase manter este valor o máis baixo posíbel, xa que o volume da información sobre as copias de seguranza pode chegar a ser grande de máis.';
 $string['configrestoreactivities'] = 'Estabelecer o axuste predeterminado para restaurar actividades.';
 $string['configrestorebadges'] = 'Estabelecer o axuste predeterminado para restaurar insignias.';
 $string['configrestoreblocks'] = 'Estabelecer o axuste predeterminado para restaurar bloques.';
@@ -150,10 +150,10 @@ $string['configrestoreenrolments'] = 'Estabelecer o axuste predeterminado para r
 $string['configrestorefilters'] = 'Estabelecer o axuste predeterminado para restaurar filtros.';
 $string['configrestoregroups'] = 'Estabelecer o axuste predeterminado para restaurar grupos e agrupamentos se foron incluídos na copia de seguranza.';
 $string['configrestorehistories'] = 'Estabelecer o axuste predeterminado para restaurar o historial do usuario se foi incluído na copia de seguranza.';
-$string['configrestorelogs'] = 'Se o activa, restauraranse de forma predeterminada os rexistros se foron incluídos na copia de seguranza.';
-$string['configrestoreroleassignments'] = 'Se o activa, restauraranse de forma predeterminada as asignacións de roles se foron incluídas na copia de seguranza.';
+$string['configrestorelogs'] = 'Se está activado, restauraranse de forma predeterminada os rexistros se foron incluídos na copia de seguranza.';
+$string['configrestoreroleassignments'] = 'Se está activado, restauraranse de forma predeterminada as asignacións de roles se foron incluídas na copia de seguranza.';
 $string['configrestoreusers'] = 'Estabelecer o axuste predeterminado para restaurar ou non os usuarios se foron incluídos na copia de seguranza.';
-$string['configrestoreuserscompletion'] = 'Se o activa, restaurarase a información de grado de avance do usuario se foi incluída na copia de seguranza.';
+$string['configrestoreuserscompletion'] = 'Se está activado, restaurarase a información de grado de avance do usuario se foi incluída na copia de seguranza.';
 $string['confirmcancel'] = 'Cancelar a copia de seguranza';
 $string['confirmcancelimport'] = 'Cancelar a importación';
 $string['confirmcancelno'] = 'Proseguir';
@@ -165,19 +165,19 @@ $string['confirmnewcoursecontinue'] = 'Alerta de curso novo';
 $string['confirmnewcoursecontinuequestion'] = 'No proceso de restauración de cursos, crearase un curso temporal (agochado). Para cancelar a restauración prema en Cancelar. Non peche o navegador mentres se restaura.';
 $string['coursecategory'] = 'Categoría na que se restaurará o curso';
 $string['courseid'] = 'ID orixinal';
-$string['coursesettings'] = 'Configuración do curso';
+$string['coursesettings'] = 'Axustes do curso';
 $string['coursetitle'] = 'Título';
-$string['currentstage1'] = 'Configuración inicial';
-$string['currentstage16'] = 'Completa';
-$string['currentstage2'] = 'Configuración do esquema';
+$string['currentstage1'] = 'Axustes iniciais';
+$string['currentstage16'] = 'Completo';
+$string['currentstage2'] = 'Axustes do esquema';
 $string['currentstage4'] = 'Confirmación e revisión';
 $string['currentstage8'] = 'Facer a copia de seguranza';
 $string['enableasyncbackup'] = 'Activar copias de seguranza asíncronas';
 $string['enableasyncbackup_help'] = 'Se está activado, todas as operacións de copia de seguranza e restauración faranse de xeito asíncrono. Isto non afecta ás importacións e exportacións. As copias de seguranza e as restauracións asíncronas permiten aos usuarios facer outras operacións mentres se está a realizar unha copia de seguranza ou restauración.';
 $string['enterasearch'] = 'Introduza unha busca:';
 $string['error_block_for_module_not_found'] = 'Atopouse unha instancia de bloque orfo (id: {$a->bid}) para o módulo do curso (id: {$a->mid}) Este bloque non se copiará';
-$string['errorcopyingbackupfile'] = 'Non foi posíbel copiar o ficheiro de copia de seguranza no cartafol temporal antes de restaurar.';
 $string['error_course_module_not_found'] = 'Atopouse un módulo de curso orfo (id: {$a}). Este modulo non se copiará';
+$string['errorcopyingbackupfile'] = 'Non foi posíbel copiar o ficheiro de copia de seguranza no cartafol temporal antes de restaurar.';
 $string['errorfilenamemustbezip'] = 'O nome de ficheiro que introducir debe ser un ficheiro ZIP e coa extensión «.mbz»';
 $string['errorfilenamerequired'] = 'Debe introducir un nome de ficheiro correcto para esta copia de seguranza';
 $string['errorfilenametoolong'] = 'A lonxitude do nome de ficheiro debe ser menor de 255 caracteres.';
@@ -187,24 +187,24 @@ $string['errorminbackup20version'] = 'Este ficheiro de copia de seguranza foi cr
 $string['errorrestorefrontpagebackup'] = 'Só se poden restaurar copias de seguranza da páxina principal na páxina principal';
 $string['executionsuccess'] = 'Creouse satisfactoriamente o ficheiro de copia de seguranza.';
 $string['failed'] = 'Produciuse un fallo na copia de seguranza';
-$string['filealiasesrestorefailures'] = 'Non foi posíbel restaurar os alias';
+$string['filealiasesrestorefailures'] = 'Produciuse un fallo ao restaurar os alias';
 $string['filealiasesrestorefailures_help'] = 'Os alias son ligazóns simbólicas a outros ficheiros, incluídos os almacenados en repositorios externos. Nalgúns casos, Moodle non pode restauralos; por exemplo, ao restaurar a copia de seguranza noutro lugar ou cando o ficheiro ao que se fai referencia non existe.
 
 Pode ver máis detalles e o motivo real da falla no ficheiro de rexistro da restauración.';
-$string['filealiasesrestorefailuresinfo'] = 'Non foi posíbel restaurar algún(s) dos alias incluídos no ficheiro de copia de seguranza. A seguinte lista contén a localización prevista e o ficheiro orixe ao que se refire no sitio orixinal.';
 $string['filealiasesrestorefailures_link'] = 'restore/filealiases';
+$string['filealiasesrestorefailuresinfo'] = 'Non foi posíbel restaurar algún(s) dos alias incluídos no ficheiro de copia de seguranza. A seguinte lista contén a localización prevista e o ficheiro orixe ao que se refire no sitio orixinal.';
 $string['filename'] = 'Nome de ficheiro';
 $string['filereferencesincluded'] = 'As referencias de ficheiro a contidos externos son incluídas no ficheiro de copia de seguranza. Estas non funcionarán se a copia de seguranza se restaura nun sitio diferente.';
 $string['filereferencesnotsamesite'] = 'O ficheiro coa copia de seguranza é doutro sitio, non é posíbel restaurar as referencias de ficheiro';
 $string['filereferencessamesite'] = 'O ficheiro coa copia de seguranza é deste sitio, pódense restaurar as referencias de ficheiro';
 $string['generalactivities'] = 'Incluír as actividades e recursos';
 $string['generalanonymize'] = 'Anonimizar a información';
-$string['generalbackdefaults'] = 'Configuración predeterminada da copia de seguranza';
-$string['generalbadges'] = 'Incluír as distincións';
+$string['generalbackdefaults'] = 'Valores predeterminados da copia de seguranza';
+$string['generalbadges'] = 'Incluír as insignias';
 $string['generalblocks'] = 'Incluír os bloques';
-$string['generalcalendarevents'] = 'Incluír os eventos de calendario';
+$string['generalcalendarevents'] = 'Incluír as actividades do calendario';
 $string['generalcomments'] = 'Incluír os comentarios';
-$string['generalcompetencies'] = 'Incluír as competencias';
+$string['generalcompetencies'] = 'Incluír competencias';
 $string['generalenrolments'] = 'Incluír os métodos de matriculación';
 $string['generalfiles'] = 'Incluír os ficheiros';
 $string['generalfilters'] = 'Incluír os filtros';
@@ -216,7 +216,7 @@ $string['generalquestionbank'] = 'Incluír o banco de preguntas';
 $string['generalrestoredefaults'] = 'Valores xerais predeterminados para a restauración';
 $string['generalrestoresettings'] = 'Axustes xerais para a restauración';
 $string['generalroleassignments'] = 'Incluír as asignacións de roles';
-$string['generalsettings'] = 'Configuración xeral da copia de seguranza';
+$string['generalsettings'] = 'Axustes xerais da copia de seguranza';
 $string['generalusers'] = 'Incluír os usuarios';
 $string['generaluserscompletion'] = 'Incluír a información do grado de avance do usuario';
 $string['hidetypes'] = 'Agochar as opcións de tipos';
@@ -236,7 +236,7 @@ $string['importgeneralduplicateadminallowed'] = 'Permitir a resolución de confl
 $string['importgeneralduplicateadminallowed_desc'] = 'Se o sitio ten unha conta co nome_de_usuario «admin», entón ao intentar restaurar un ficheiro de copia de seguranza que conteña un nome_de_usuario «admin» pode causar un conflito. Se activa esta configuración, o conflito resolverase ao cambiar o nome_de_usuario no ficheiro de copia de seguranza a «admin_xyz».';
 $string['importgeneralmaxresults'] = 'Número máximo de cursos listados para importar';
 $string['importgeneralmaxresults_desc'] = 'Isto controla o número de cursos que son listados durante o primeiro paso do proceso de importación';
-$string['importgeneralsettings'] = 'Configuración predeterminada da importación';
+$string['importgeneralsettings'] = 'Valores predeterminados da importación';
 $string['importrootsettings'] = 'Axustes da importación';
 $string['importsettings'] = 'Axustes xerais para a importación';
 $string['importsuccess'] = 'Importación completada. Prema en «Continuar» para volver ao curso.';
@@ -246,7 +246,7 @@ $string['includefilereferences'] = 'Referencias de ficheiro a contidos externos'
 $string['includesection'] = 'Sección {$a}';
 $string['includeuserinfo'] = 'Datos de usuario';
 $string['inprogress'] = 'Copia de seguranza en proceso';
-$string['jumptofinalstep'] = 'Saltar ao último paso';
+$string['jumptofinalstep'] = 'Ir ao último paso';
 $string['keep'] = 'Manter';
 $string['locked'] = 'Bloqueado';
 $string['lockedbyconfig'] = 'Este axuste foi bloqueado pola configuración predeterminada da copia de seguranza';
@@ -257,7 +257,7 @@ $string['managefiles'] = 'Xestionar os ficheiros de copia de seguranza';
 $string['mergerestoredefaults'] = 'Restaurar valores predeterminados ao combinar dentro doutro curso';
 $string['missingfilesinpool'] = 'Non foi posíbel gardar algúns ficheiros durante a copia de seguranza. Non será posíbel restauralos.';
 $string['module'] = 'Módulo';
-$string['moodleversion'] = 'Versión de Moodle';
+$string['moodleversion'] = 'Versión do Moodle';
 $string['morecoursesearchresults'] = 'Atopáronse máis de {$a} cursos, amósanse os primeiros {$a} resultados';
 $string['moreresults'] = 'Hai demasiados resultados, introduza unha busca máis específica.';
 $string['nomatchingcourses'] = 'Non hai cursos que presentar';
@@ -271,24 +271,24 @@ $string['pendingasyncerror'] = 'Copias de seguranza pendentes deste recurso';
 $string['preparingdata'] = 'Preparando os datos';
 $string['preparingui'] = 'Preparándose para amosar a páxina';
 $string['previousstage'] = 'Anterior';
+$string['privacy:metadata:backup:detailsofarchive'] = 'Este ficheiro pode conter varios datos de usuario relacionados cun curso, como notas, inscricións de usuarios e datos de actividade.';
+$string['privacy:metadata:backup:externalpurpose'] = 'O propósito deste ficheiro é almacenar información relacionada cun curso que pode ser restaurado no futuro.';
 $string['privacy:metadata:backup_controllers'] = 'A lista de operacións de copia de seguranza';
 $string['privacy:metadata:backup_controllers:itemid'] = 'O ID do curso';
 $string['privacy:metadata:backup_controllers:operation'] = 'A operación que se realizou, por exemplo, restaurar.';
 $string['privacy:metadata:backup_controllers:timecreated'] = 'A data na que se creou a acción';
 $string['privacy:metadata:backup_controllers:timemodified'] = 'A data na que se modificou a acción';
 $string['privacy:metadata:backup_controllers:type'] = 'O tipo do elemento que se está a traballar, por exemplo, actividade.';
-$string['privacy:metadata:backup:detailsofarchive'] = 'Este ficheiro pode conter varios datos de usuario relacionados cun curso, como notas, inscricións de usuarios e datos de actividade.';
-$string['privacy:metadata:backup:externalpurpose'] = 'O propósito deste ficheiro é almacenar información relacionada cun curso que pode ser restaurado no futuro.';
 $string['qcategory2coursefallback'] = 'A categoría de preguntas «{$a->name}», orixinalmente no contexto de categoría sistema/curso dentro do ficheiro de copia de seguranza, crearase no contexto do curso ao seren restauradas.';
-$string['qcategorycannotberestored'] = 'A categoría de preguntas «{$a-> name}» non pode crearse por restauración';
+$string['qcategorycannotberestored'] = 'A categoría de preguntas «{$a->name}» non pode crearse por restauración';
 $string['question2coursefallback'] = 'A categoría de preguntas «{$a->name}», orixinalmente no contexto de categoría sistema/curso dentro do ficheiro de copia de seguranza, crearase no contexto do curso ao seren restauradas.';
 $string['questionegorycannotberestored'] = 'As preguntas «{$a-> name}» non pode crearse por restauración';
 $string['recyclebin_desc'] = 'Teña en conta que estes axustes tamén se usarán para o cesto do lixo.';
-$string['replacerestoredefaults'] = 'Restablece os valores predeterminados ao restaurar noutro curso eliminando os contidos';
+$string['replacerestoredefaults'] = 'Restabelece os valores predeterminados ao restaurar noutro curso eliminando os contidos';
 $string['restoreactivity'] = 'Restaurar actividade';
 $string['restorecourse'] = 'Restaurar curso';
 $string['restorecoursesettings'] = 'Configuración do curso';
-$string['restoreexecutionsuccess'] = 'O curso foi restaurado satisfactoriamente . Se preme no botón «Continuar» poderá ver o curso que ven de restaurar.';
+$string['restoreexecutionsuccess'] = 'O curso foi restaurado satisfactoriamente. Se preme no botón «Continuar» poderá ver o curso que vén de restaurar.';
 $string['restorefileweremissing'] = 'Non foi posíbel restaurar algúns ficheiros xa que faltaban na copia de seguranza.';
 $string['restorenewcoursefullname'] = 'Nome do novo curso';
 $string['restorenewcourseshortname'] = 'Nome curto do novo curso';
@@ -324,7 +324,7 @@ $string['restoringcourseshortname'] = 'restaurando';
 $string['rootenrolmanual'] = 'Restaurar como matriculación manual';
 $string['rootsettingactivities'] = 'Incluír as actividades e recursos';
 $string['rootsettinganonymize'] = 'Anonimizar a información dos usuarios';
-$string['rootsettingbadges'] = 'Incluír as distincións';
+$string['rootsettingbadges'] = 'Incluír as insignias';
 $string['rootsettingblocks'] = 'Incluír os bloques';
 $string['rootsettingcalendarevents'] = 'Incluír as actividades do calendario';
 $string['rootsettingcomments'] = 'Incluír os comentarios';
@@ -365,9 +365,9 @@ $string['showtypes'] = 'Amosar as opcións de tipos';
 $string['sitecourseformatwarning'] = 'Isto é unha copia de seguranza da páxina principal, teña en conta que só se pode restaurar na páxina principal';
 $string['skiphidden'] = 'Omitir cursos agochados';
 $string['skiphiddenhelp'] = 'Escolla se se omiten ou non os cursos agochados';
-$string['skipmodifdays'] = 'Omitir os cursos sen modificar desde';
-$string['skipmodifdayshelp'] = 'Escolla omitir os cursos que non se modificaron desde un número de días';
-$string['skipmodifprev'] = 'Omitir os cursos sen modificar desde a copia de seguranza anterior';
+$string['skipmodifdays'] = 'Omitir os cursos sen modificar dende';
+$string['skipmodifdayshelp'] = 'Escolla omitir os cursos que non se modificaron dende un número de días';
+$string['skipmodifprev'] = 'Omitir os cursos sen modificar dende a copia de seguranza anterior';
 $string['skipmodifprevhelp'] = 'Escolla se omitir ou non os cursos que non se modificaron desde a copia de seguranza anterior. Isto precisa ter activado o rexistro de cambios.';
 $string['status'] = 'Estado';
 $string['storagecourseandexternal'] = 'Área de ficheiros de copia de seguranza e directorio específico';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'es', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,7 +29,7 @@ $string['acceptandaddcontact'] = 'Aceptar y añadir a los contactos';
 $string['addcontact'] = 'Añadir contacto';
 $string['addcontactconfirm'] = '¿Estás seguro de querer añadir a {$a} a tus contactos?';
 $string['addtofavourites'] = 'Marcar conversación';
-$string['addtoyourcontacts'] = 'Añadir a tus contactos';
+$string['addtoyourcontacts'] = 'Añadir a contactos';
 $string['addtoyourcontactsandmessage'] = 'Añadir a contactos y mensaje';
 $string['ago'] = 'hace {$a}';
 $string['allusers'] = 'Todos los mensajes de todos los usuarios';
@@ -37,7 +37,7 @@ $string['backto'] = 'Regresar a {$a}';
 $string['backupmessageshelp'] = 'Si se activa, los mensajes instantáneos serán incluídos en las copias automatizadas del SITIO';
 $string['blockcontact'] = 'Bloquear contacto';
 $string['blockedusers'] = 'Usuarios bloqueados';
-$string['blocknoncontacts'] = 'Bloquear mensajes de usuarios que no figuren en mi lista de contactos';
+$string['blocknoncontacts'] = 'Evitar que los que no son contactos me envíen mensajes';
 $string['blockuser'] = 'Bloquear usuario';
 $string['blockuserconfirm'] = '¿Estás seguro de querer bloquear a {$a}?';
 $string['blockuserconfirmbutton'] = 'Bloque';
@@ -98,11 +98,11 @@ $string['info'] = 'Información del usuario';
 $string['isnotinyourcontacts'] = '{$a} no está en tus contactos';
 $string['loadmore'] = 'Cargar más';
 $string['loggedin'] = 'En línea';
-$string['loggedindescription'] = 'Cuando estoy conectado';
 $string['loggedin_help'] = 'Configurar cómo desea recibir notificaciones cuando está conectado a Moodle';
+$string['loggedindescription'] = 'Cuando estoy conectado';
 $string['loggedoff'] = 'Desconectado';
-$string['loggedoffdescription'] = 'Cuando estoy fuera de línea';
 $string['loggedoff_help'] = 'Configurar cómo desea recibir notificaciones cuando no está conectado a Moodle';
+$string['loggedoffdescription'] = 'Cuando estoy fuera de línea';
 $string['managemessageoutputs'] = 'Gestionar salidas de mensaje';
 $string['message'] = 'Mensaje';
 $string['messagecontactrequestsnotification'] = '{$a} quiere que le añadas como contacto';
@@ -126,7 +126,7 @@ $string['newonlymsg'] = 'Mostrar sólo nuevos';
 $string['nocontactrequests'] = 'No hay solicitudes de contacto';
 $string['nocontacts'] = 'No hay contactos';
 $string['nocontactsgetstarted'] = 'No hay contactos';
-$string['nofavourites'] = 'No hay mensajes destacados';
+$string['nofavourites'] = 'Sin conversaciones destacadas';
 $string['noframesjs'] = 'Usar interfaz más accesible';
 $string['nogroupconversations'] = 'No hay conversaciónes de grupo';
 $string['noindividualconversations'] = 'No hay conversaciones privadas';
@@ -156,21 +156,21 @@ $string['outputnotconfigured'] = 'No configurada';
 $string['participants'] = 'Participantes';
 $string['permitted'] = 'Permitida';
 $string['privacy'] = 'Privacidad';
-$string['privacy_desc'] = 'Puedes restringir quién puede enviarte mensajes';
 $string['privacy:export:conversationprefix'] = 'Conversación:';
-$string['privacy:metadata:core_favourites'] = 'Conversaciones destacadas por el usuario';
+$string['privacy:metadata:core_favourites'] = 'Las conversaciones destacadas por el usuario';
 $string['privacy:metadata:message_contact_requests'] = 'Lista de solicitudes de contacto';
 $string['privacy:metadata:message_contacts'] = 'La lista de contactos';
+$string['privacy:metadata:message_users_blocked'] = 'Lista de usuarios bloqueados';
 $string['privacy:metadata:messages'] = 'Mensajes';
 $string['privacy:metadata:messages:smallmessage'] = 'Pequeña versión del mensaje';
 $string['privacy:metadata:messages:subject'] = 'Asunto del mensaje';
 $string['privacy:metadata:messages:timecreated'] = 'Hora en la que el mensaje fue creado';
-$string['privacy:metadata:message_users_blocked'] = 'Lista de usuarios bloqueados';
 $string['privacy:metadata:notifications'] = 'Notificaciones';
 $string['privacy:metadata:notifications:eventtype'] = 'Tipo de evento';
 $string['privacy:metadata:notifications:timecreated'] = 'La hora en que se creó la notificación';
 $string['privacy:metadata:notifications:timeread'] = 'La hora en que se leyó la notificación';
 $string['privacy:metadata:preference:core_message_settings'] = 'Ajustes relacionados con la mensajería';
+$string['privacy_desc'] = 'Puedes restringir quién puede enviarte mensajes';
 $string['processorsettings'] = 'Ajustes de procesador';
 $string['removecontact'] = 'Eliminar contacto';
 $string['removecontactconfirm'] = '¿Quieres quitar a {$a} de tus contactos?';
@@ -189,10 +189,10 @@ $string['selectnotificationtoview'] = 'Seleccione desde la lista lateral de noti
 $string['selfconversation'] = 'Espacio personal';
 $string['selfconversationdefaultmessage'] = 'Guardar borradores de mensajes, notas, etc, para acceder a ellos más tarde.';
 $string['send'] = 'Enviar';
-$string['sendbulkmessage'] = 'Enviar el mensaje a {$a} personas';
+$string['sendbulkmessage'] = 'Enviar mensaje a {$a} personas';
 $string['sendbulkmessagesent'] = 'Mensaje enviado a {$a} personas';
 $string['sendbulkmessagesentsingle'] = 'Mensaje enviado a 1 persona';
-$string['sendbulkmessagesingle'] = 'Enviar el mensaje a 1 persona';
+$string['sendbulkmessagesingle'] = 'Enviar mensaje a una persona';
 $string['sendcontactrequest'] = 'Enviar solicitud de contacto';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = 'Mandando "{$a->provider}" vía "{$a->processor}"';
@@ -215,6 +215,7 @@ $string['unblockuser'] = 'Desbloquear usuario';
 $string['unblockuserconfirm'] = '¿Estás seguro de querer desbloquear a {$a}?';
 $string['unknownuser'] = 'Usuario desconocido';
 $string['unmuteconversation'] = 'Habilitar notificaciones';
+$string['unreadmessages'] = '{$a} mensajes sin leer';
 $string['unreadnewgroupconversationmessage'] = 'Nuevo mensaje de {$a->name} desde {$a->conversationname}';
 $string['unreadnewmessage'] = 'Mensaje nuevo de ({$a})';
 $string['unreadnotification'] = 'Notificación no leída: {$a}';

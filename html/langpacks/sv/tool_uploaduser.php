@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,47 +12,63 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'sv', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowdeletes'] = 'Tillåt borttagningar';
 $string['allowrenames'] = 'Tillåt namnbyten';
+$string['allowsuspends'] = 'Tillåt avstängning och aktivering av konton';
+$string['assignedsysrole'] = 'Tilldelad systemroll {$a}';
 $string['csvdelimiter'] = 'Avskiljare för CSV';
 $string['defaultvalues'] = 'Förinställda standardvärden';
 $string['deleteerrors'] = 'Ta bort fel';
 $string['encoding'] = 'Inkodning';
+$string['errormnetadd'] = 'Kan inte lägga till externa användare';
 $string['errors'] = 'Fel';
+$string['examplecsv'] = 'Exempeltextfil';
+$string['examplecsv_help'] = 'Om du vill använda exempeltextfilen laddar du ner den och öppnar den sedan med en text- eller kalkylbladsredigerare. Lämna den första raden oförändrad. Redigera sedan efterföljande rader (poster) och lägg till dina användardata. Lägg till flera rader efter behov. Spara filen som CSV och ladda sedan upp den.
+
+Exempeltextfilen kan också användas för testning eftersom du har möjlighet att förhandsgranska användardata och kan välja att avbryta åtgärden innan användarkonton skapas.';
+$string['invalidtheme'] = '"{$a}"-temat är inte installerat och kommer att ignoreras.';
+$string['invalidupdatetype'] = 'Detta alternativ kan inte väljas för den valda uppladdningstypen.';
+$string['invaliduserdata'] = 'Ogiltig data hittades för användare {$a} och den har rensats bort.';
 $string['nochanges'] = 'Inga ändringar';
+$string['notheme'] = 'Inget tema för denna användare.';
+$string['pluginname'] = 'Användaruppladdning';
+$string['privacy:metadata'] = 'Pluginmodulen Användaruppladdning lagrar ingen personlig information.';
 $string['renameerrors'] = 'Fel vid namnbyte';
 $string['requiredtemplate'] = 'Obligatoriskt. Du kan använda syntax för mall här  (%l = lastname, %f = firstname, %u = username).Se hjälpen för detaljer och exempel.';
 $string['rowpreviewnum'] = 'Förhandsgranska rader';
-$string['uploadpicture_baduserfield'] = 'Det attribut för användare som har angivits är inte giltigt. Var snäll och försök igen.';
+$string['unassignedsysrole'] = 'Otilldelad systemroll {$a}';
+$string['uploadpicture_baduserfield'] = 'Det attribut för användare som har angivits är inte giltigt. Vänligen försök igen.';
 $string['uploadpicture_cannotmovezip'] = 'Det går inte att flytta zip-filen till en temporär katalog.';
 $string['uploadpicture_cannotprocessdir'] = 'Det går inte att behandla de icke-hoppackade filerna';
 $string['uploadpicture_cannotsave'] = 'Det går inte att spara bilden för användare {$a}. Kontrollera originalbilden.';
 $string['uploadpicture_cannotunzip'] = 'Det går inte att packa upp filen med bilder.';
 $string['uploadpicture_invalidfilename'] = 'Bildfilen {$a} s namn innehåller ogiltiga tecken. Hoppar över.';
 $string['uploadpicture_overwrite'] = 'Vill du skriva över de befintliga användarbilderna?';
-$string['uploadpictures'] = 'Ladda upp bilder för användare';
-$string['uploadpictures_help'] = '<p>Det går att ladda upp användarbilder som zippade bildfiler. Man bör ge bildfilerna ett namn <i>chosen-user-attribute.extension</i>. Om t.ex. det valda användarattribut som används för att matcha  bilder är användarnamn och detta namn är pelle1234, då bör filnamnet på bilden vara pelle1234.jpg.</p>
-<p>De bildformat som  stödjs är gif, jpg, och png.</p>
-<p>Namn på bildfiler är inte skiftlägeskänsliga.</p>';
 $string['uploadpicture_userfield'] = 'Attribut för användare som kan användas för att matcha bilder:';
 $string['uploadpicture_usernotfound'] = 'Det finns ingen användare med ett \'{$a->userfield}\' värde av \'{$a->uservalue}\'. Hoppar över.';
 $string['uploadpicture_userskipped'] = 'Hoppar över användare {$a} (det finns redan en bild).';
 $string['uploadpicture_userupdated'] = 'Bilden för användare {$a} har uppdaterats.';
+$string['uploadpictures'] = 'Ladda upp användarbilder';
+$string['uploadpictures_help'] = '<p>Det går att ladda upp användarbilder som zippade bildfiler. Man bör ge bildfilerna ett namn <i>chosen-user-attribute.extension</i>. Om t.ex. det valda användarattribut som används för att matcha  bilder är användarnamn och detta namn är pelle1234, då bör filnamnet på bilden vara pelle1234.jpg.</p>
+<p>De bildformat som  stödjs är gif, jpg, och png.</p>
+<p>Namn på bildfiler är inte skiftlägeskänsliga.</p>';
+$string['uploaduser:uploaduserpictures'] = 'Ladda upp användarbilder';
 $string['uploadusers'] = 'Ladda upp användare';
-$string['uploadusers_help'] = '<p>Lägg till att börja med märke till att <strong>det i de flesta fall inte är nödvändigt att importera användare i bulk</strong>. För att minimera ditt underhållsarbete bör du istället först och främst undersöka de olika inte-manuella alternativen för autenticering, som t.ex. att koppla till befintliga externa databaser eller att låta användarna skapa sina konton själva. För mer info se sektionen för autenticering i menyerna för administration.</p>
-<p>Om du är säker på att du vill importera ett flertal användarkonton från en textfil då behöver du formatera din textfil enligt följande:</p>
+$string['uploadusers_help'] = '<p>Lägg till att börja med märke till att <strong>det i de flesta fall inte är nödvändigt att importera användare i bulk</strong>. För att minimera ditt underhållsarbete bör du istället först och främst undersöka de olika icke-manuella alternativen för autentisering, som t.ex. att koppla till befintliga externa databaser eller att låta användarna skapa sina konton själva. För mer info se sektionen för autentisering i menyerna för administration.</p>
+<p>Om du är säker på att du vill importera ett flertal användarkonton från en textfil behöver du formatera din textfil enligt följande:</p>
 
 <ul>
   <li>Varje rad i filen innehåller en post</li>
@@ -110,8 +125,8 @@ reznort, lite_hemligt, Trent, Reznor, reznort@skaane.edu, sv, 6736733, 0, Advanc
 <li>http://www.example.com/~%u/ = http://www.example.com/~jdoe/ (om användarnamnet är jdoe eller %-1f%-l)</li>
 </ul>
 <p>Denna behandling av mallarna tillämpas bara på standardvärdena och inte på den värden som hämtas från den (kommaseparerade) CSV-filen.</p>
-<p>För att du ska kunna skapa riktiga användarnamn för Moodle så omvandlas användarnamnen alltid till minuskler (små bokstäver). Dessutom är det så att om alternativet &quot;Tillåt specialtecken i användarnamn&quot; på sidan Regler för användning är avaktiverat så kommer tecken som inte är bokstäver, siffror, bindestreck (-) och punkt (.) att tas bort. </p>
-<p>Om t.ex. förnamnet är Johan Jr. och efternamnet är Andersson då kommer användarnamnet %-f_%-l att  resultera i johan jr._andersson när  &quot;Tillåt specialtecken i användarnamn&quot; är aktiverat och  johanjr.andersson när det är avaktiverat.</p>
+<p>För att du ska kunna skapa riktiga användarnamn för Moodle så omvandlas användarnamnen alltid till minuskler (små bokstäver). Dessutom är det så att om alternativet &quot;Tillåt specialtecken i användarnamn&quot; på sidan Regler för användning är inaktiverat så kommer tecken som inte är bokstäver, siffror, bindestreck (-) och punkt (.) att tas bort. </p>
+<p>Om t.ex. förnamnet är Johan Jr. och efternamnet är Andersson då kommer användarnamnet %-f_%-l att  resultera i johan jr._andersson när  &quot;Tillåt specialtecken i användarnamn&quot; är aktiverat och  johanjr.andersson när det är inaktiverat.</p>
 <p>När &quot;Lägg till räknare&quot; i &quot;Hantering av nya användarnamn som är dubbletter&quot; är aktiverat så kommer en räknare att automatiskt lägga till ett tal till de dubbletter av användarnamn som skapas av mallen.</p><p> Om t.ex. CSV-filen innehåller användarna Johan Andersson, Janna Andersson och Johanna Andersson utan uttryckliga användarnamn så kommer det standardmässiga användarnamnet att vara %-1f%-l.</p><p> Och om dessutom &quot;Lägg till räknare&quot; i &quot;Hantering av nya användarnamn som är dubbletter&quot; är aktiverat då kommer de resulterande användarnamnen att bli jandersson, jandersson2 och jandersson3.
 </p>
 
@@ -131,9 +146,10 @@ att tas bort. I det här fallet kan alla fält undantas utom det för <code>user
 jand, Johan, Andersson, 0<br />
 kurtnilsson, , , 1
 </code></p>';
-$string['uploaduserspreview'] = 'Ladda upp förhandsgranskning av användare';
-$string['uploadusersresult'] = 'Ladda upp resultat för användare';
+$string['uploaduserspreview'] = 'Förhandsgranska uppladdning av användare';
+$string['uploadusersresult'] = 'Resultat av uppladdning av användare';
 $string['useraccountupdated'] = 'Användare har uppdaterats';
+$string['useraccountuptodate'] = 'Användare uppdaterad';
 $string['userdeleted'] = 'Användare borttagen';
 $string['userrenamed'] = 'Användare  har fått nya namn';
 $string['userscreated'] = 'Användare har skapats';
@@ -142,7 +158,8 @@ $string['usersrenamed'] = 'Användare  har fått nya namn';
 $string['usersskipped'] = 'Användare hoppades över';
 $string['usersupdated'] = 'Användare har uppdaterats';
 $string['usersweakpassword'] = 'Användare som har ett svagt lösenord';
-$string['uubulk'] = 'Markera för bearbetning i bulk';
+$string['userthemesnotallowed'] = 'Användarteman är inte aktiverade. Eventuella teman i uppladdningsfilerna kommer att ignoreras.';
+$string['uubulk'] = 'Välj för åtgärd för flera användare';
 $string['uubulkall'] = 'Alla användare';
 $string['uubulknew'] = 'Nya användare';
 $string['uubulkupdated'] = 'Uppdaterade användare';
@@ -156,9 +173,12 @@ $string['uuoptype_addinc'] = 'Lägg till alla, koppla till en räknare till anv�
 $string['uuoptype_addnew'] = 'Lägg endast till en ny, hoppa över befintliga användare';
 $string['uuoptype_addupdate'] = 'Lägg till nya och uppdatera befintliga användare';
 $string['uuoptype_update'] = 'Uppdatera endast befintliga användare';
+$string['uupasswordcron'] = 'Genererad i cron';
 $string['uupasswordnew'] = 'Nytt lösenord för användare';
 $string['uupasswordold'] = 'Befintligt lösenord för användare';
+$string['uustandardusernames'] = 'Standardisera användarnamn';
 $string['uuupdateall'] = 'Överskrid med fil och standardmässiga förval';
 $string['uuupdatefromfile'] = 'Överskrid med fil';
 $string['uuupdatemissing'] = 'Fyll i det som saknas från fil och standardmässiga förval';
 $string['uuupdatetype'] = 'Befintliga detaljer för användare';
+$string['uuusernametemplate'] = 'Användarnamnsmall';

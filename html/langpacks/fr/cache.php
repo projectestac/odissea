@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'fr', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,13 +41,13 @@ $string['cachedef_capabilities'] = 'Liste des capacités système';
 $string['cachedef_completion'] = 'État de complétude d\'activité';
 $string['cachedef_config'] = 'Réglages';
 $string['cachedef_contextwithinsights'] = 'Contexte avec indications';
+$string['cachedef_course_user_dates'] = 'Les dates utilisateurs pour les cours configurés en mode dates relatives';
 $string['cachedef_coursecat'] = 'Listes des catégories de cours pour chaque utilisateur';
 $string['cachedef_coursecatrecords'] = 'Enregistrements des catégories de cours';
 $string['cachedef_coursecattree'] = 'Arbre des catégories de cours';
 $string['cachedef_coursecompletion'] = 'État d\'achèvement de cours';
 $string['cachedef_coursecontacts'] = 'Liste des contacts de cours';
 $string['cachedef_coursemodinfo'] = 'Information accumulée sur les modules et sections de chaque cours';
-$string['cachedef_course_user_dates'] = 'Les dates utilisateurs pour les cours configurés en mode dates relatives';
 $string['cachedef_databasemeta'] = 'Méta-information de base de données';
 $string['cachedef_eventinvalidation'] = 'Invalidation de l\'événement';
 $string['cachedef_externalbadges'] = 'Badges externes pour un utilisateur déterminé';
@@ -59,7 +59,7 @@ $string['cachedef_htmlpurifier'] = 'HTML Purifier - contenu nettoyé';
 $string['cachedef_langmenu'] = 'Liste des langues disponibles';
 $string['cachedef_locking'] = 'Verrouillage';
 $string['cachedef_message_processors_enabled'] = 'État d\'activation des processeurs de message';
-$string['cachedef_message_time_last_message_between_users'] = 'Durée entre messages les plus récents entre utilisateurs';
+$string['cachedef_message_time_last_message_between_users'] = 'Durée entre messages les plus récents d\'une conversation';
 $string['cachedef_modelfirstanalyses'] = 'Première analyse par le modèle et analysable';
 $string['cachedef_navigation_expandcourse'] = 'Navigation des cours dépliables';
 $string['cachedef_observers'] = 'Observateurs d\'événements';
@@ -87,10 +87,10 @@ $string['component'] = 'Composant';
 $string['confirmlockdeletion'] = 'Confirmer la suppression du verrou';
 $string['confirmstoredeletion'] = 'Confirmer la suppression de l\'entrepôt';
 $string['default_application'] = 'Entrepôt par défaut de l\'application';
-$string['defaultmappings'] = 'Entrepôts utilisés en l\'absence de correspondance';
-$string['defaultmappings_help'] = 'Ces entrepôts par défaut seront utilisés si vous n\'appariez pas un ou plusieurs entrepôts avec la définition du cache';
 $string['default_request'] = 'Entrepôt par défaut des requêtes';
 $string['default_session'] = 'Entrepôt par défaut des sessions';
+$string['defaultmappings'] = 'Entrepôts utilisés en l\'absence de correspondance';
+$string['defaultmappings_help'] = 'Ces entrepôts par défaut seront utilisés si vous n\'appariez pas un ou plusieurs entrepôts avec la définition du cache';
 $string['defaultstoreactions'] = 'Les entrepôts par défaut ne peuvent pas être modifiés';
 $string['definition'] = 'Définition';
 $string['definitionsummaries'] = 'Définitions de cache connues';
@@ -158,20 +158,20 @@ $string['sharing'] = 'Partage';
 $string['sharing_all'] = 'Tout le monde.';
 $string['sharing_help'] = 'Ce réglage vous permet de déterminer comment les données de cache peuvent être partagées si vous avez une configuration en cluster, ou si vous avez plusieurs sites mis en place avec le même entrepôt, et souhaitez partager les données. Il s\'agit d\'un paramètre avancé, merci de vous assurer que vous comprenez son but avant de le changer.';
 $string['sharing_input'] = 'Clef personnalisée (saisir plus bas)';
+$string['sharing_siteid'] = 'Sites avec le même identifiant.';
+$string['sharing_version'] = 'Sites utilisant la même version.';
 $string['sharingrequired'] = 'Vous devez sélectionner au moins une option de partage.';
 $string['sharingselected_all'] = 'Tout le monde';
 $string['sharingselected_input'] = 'Clef personnalisée';
 $string['sharingselected_siteid'] = 'Identifiant de site';
 $string['sharingselected_version'] = 'Version';
-$string['sharing_siteid'] = 'Sites avec le même identifiant.';
-$string['sharing_version'] = 'Sites utilisant la même version.';
-$string['storeconfiguration'] = 'Configuration entrepôt';
 $string['store_default_application'] = 'Entrepôt de fichiers par défaut pour les caches d\'application';
 $string['store_default_request'] = 'Entrepôt statique par défaut pour les caches de requêtes';
 $string['store_default_session'] = 'Entrepôt de sessions par défaut pour les caches de sessions';
+$string['storeconfiguration'] = 'Configuration entrepôt';
 $string['storename'] = 'Nom de l\'entrepôt';
-$string['storenamealreadyused'] = 'Vous devez spécifier un nom unique pour cet entrepôt.';
 $string['storename_help'] = 'Définit le nom de l\'entrepôt. Ce nom est utilisé pour identifier le dépôt dans le système. Seuls les caractères a-z A-Z 0-9 - _ et des espaces sont autorisés. Le nom doit en outre être unique. Si vous essayez un nom déjà employé, une annonce d\'erreur sera affichée.';
+$string['storenamealreadyused'] = 'Vous devez spécifier un nom unique pour cet entrepôt.';
 $string['storenameinvalid'] = 'Nom d\'entrepôt non valide. Vous ne pouvez utiliser que les caractères a-z A-Z 0-9 - _ et des espaces.';
 $string['storenotready'] = 'Dépôt pas prêt';
 $string['storeperformance'] = 'Rapport de performance de l\'entrepôt de cache. {$a} requêtes uniques par opération.';

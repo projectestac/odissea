@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradingform_rubric', language 'gl', version '3.8'.
  *
- * @package   gradingform_rubric
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradingform_rubric
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -56,7 +56,7 @@ $string['leveldelete'] = 'Eliminar o nivel {$a}';
 $string['levelempty'] = 'Prema para editar o nivel';
 $string['levelsgroup'] = 'Grupo de niveles';
 $string['lockzeropoints'] = 'Calcular a cualificación baseándose na rúbrica que teña unha puntuación mínima de 0';
-$string['lockzeropoints_help'] = 'Este axuste só se aplica se a suma do número mínimo de puntos para cada criterio é maior que 0. Se está marcada, a cualificación mínima alcanzable para a rúbrica será maior que 0. Se non está marcada, asignarase a puntuación mínima posíbel para a rúbrica á cualificación mínima dispoñíbel para a actividade (que é 0 a non ser que se use unha escala).';
+$string['lockzeropoints_help'] = 'Este axuste só se aplica se a suma do número mínimo de puntos para cada criterio é maior que 0. Se está marcada, a cualificación mínima alcanzábel para a rúbrica será maior que 0. Se non está marcada, asignarase a puntuación mínima posíbel para a rúbrica á cualificación mínima dispoñíbel para a actividade (que é 0 a non ser que se use unha escala).';
 $string['name'] = 'Nome';
 $string['needregrademessage'] = 'A definición da rúbrica foi cambiada após que este alumno fose cualificado. O alumno non pode ver esta rúbrica ata que vostede comprobe a rúbrica e actualice a cualificación.';
 $string['notset'] = 'Non estabelecido';
@@ -96,5 +96,5 @@ $string['showscoreteacher'] = 'Presenta os puntos para cada nivel durante a aval
 $string['sortlevelsasc'] = 'Criterio de ordenación para os niveis:';
 $string['sortlevelsasc0'] = 'Descendente por número de puntos';
 $string['sortlevelsasc1'] = 'Ascendente por número de puntos';
-$string['zerolevelsabsent'] = 'Aviso: A puntuación mínima posible para esta rubrica non é 0; isto pode producir notas inesperadas para a actividade. Para evitar isto, cada criterio debería ter un nivel con 0 puntos.<br>
+$string['zerolevelsabsent'] = 'Aviso: A puntuación mínima posíbel para esta rubrica non é 0; isto pode producir notas inesperadas para a actividade. Para evitar isto, cada criterio debería ter un nivel con 0 puntos.<br>
 Esta advertencia pode ignorarse se se usa unha escala para a cualificación e os niveis mínimos da rúbrica corresponden ao valor mínimo da escala.';

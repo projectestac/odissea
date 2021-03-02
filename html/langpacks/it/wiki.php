@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'wiki', language 'it', version '3.8'.
  *
- * @package   wiki
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     wiki
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,7 +36,7 @@ $string['attachmentlink'] = 'Aggiungi come link';
 $string['attachments'] = 'Allegati';
 $string['backcomments'] = 'Torna ai commenti';
 $string['backhistory'] = 'Torna alla storico';
-$string['backoldversion'] = 'Torna alla vecchia versione';
+$string['backoldversion'] = 'Torna alla versione precedente';
 $string['backpage'] = 'Torna alla pagina';
 $string['backtomapmenu'] = 'Torna alla Mappa';
 $string['cannotcomparenewerversion'] = 'E\' possibile confrontare la versione della pagina solamente con versioni più vecchie.';
@@ -99,13 +99,13 @@ $string['firstpagetitle_help'] = 'Il titolo della pagina iniziale del wiki. Una 
 $string['forceformat'] = 'Forza formato';
 $string['forceformat_help'] = 'Forzando il formato non sarà possibile scegliere un formato diverso quando si modificano le pagine del wiki.';
 $string['format'] = 'Formato';
+$string['format_help'] = '* HTML - Rende disponibile l\'editor HTML
+* Creole - Un diffuso linguaggio di markup wiki con una toolbar minimale
+* Nwiki - Il linguaggio di markup utilizzato nel modulo contrib Nwiki, simile al linguaggio usato da Mediawiki';
 $string['formatcreole'] = 'Formato Creole';
 $string['formatcreole_help'] = 'Creole è un diffuso linguaggio di markup wiki che fornisce una barra di strumenti per facilitare l\'inserimento del markup.
 
 Per creare una pagina,  racchiudi il nome della pagina stessa tra doppie partentesi quadre, ad esempio [[Pagina 2]]';
-$string['format_help'] = '* HTML - Rende disponibile l\'editor HTML
-* Creole - Un diffuso linguaggio di markup wiki con una toolbar minimale
-* Nwiki - Il linguaggio di markup utilizzato nel modulo contrib Nwiki, simile al linguaggio usato da Mediawiki';
 $string['formathtml'] = 'Formato HTML';
 $string['formathtml_help'] = 'L\'editor HTML semplifica la formattazione del contenuto.
 
@@ -122,13 +122,13 @@ $string['incorrectpageid'] = 'L\'ID della pagina non è corretto.';
 $string['incorrectsubwikiid'] = 'L\'ID del subwiki non è corretto.';
 $string['incorrectwikiid'] = 'L\'ID del wiki non è corretto.';
 $string['indicator:cognitivedepth'] = 'Wiki cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Wiki.';
 $string['indicator:cognitivedepthdef'] = 'Wiki cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Wiki (Livelli: Nessuna visualizzazione, Visualizzazione, Invio)';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Wiki.';
 $string['indicator:socialbreadth'] = 'Wiki sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Wiki.';
 $string['indicator:socialbreadthdef'] = 'Wiki sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Wiki (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Wiki.';
 $string['individualpagedoesnotexist'] = 'La pagina wiki individuale non esiste';
 $string['insertcomment'] = 'Inserisci commento';
 $string['insertimage'] = 'Inserisci un\'immagine...';
@@ -199,17 +199,17 @@ $string['orphaned'] = 'Pagine orfane';
 $string['orphaned_help'] = 'Elenco delle pagine non collegate da altre pagine.';
 $string['overridelocks'] = 'Ignora blocco';
 $string['overridinglocks'] = 'Annullamento blocco pagine wiki';
+$string['page-mod-wiki-comments'] = 'Pagina commenti modulo wiki';
+$string['page-mod-wiki-history'] = 'Pagina storico wiki';
+$string['page-mod-wiki-map'] = 'Pagina mappa wiki';
+$string['page-mod-wiki-view'] = 'Pagina principale wiki';
+$string['page-mod-wiki-x'] = 'Qualsiasi pagina con modulo wiki';
 $string['pageexists'] = 'La pagina esiste già.';
 $string['pageindex'] = 'Indice pagina';
 $string['pageindex_help'] = 'L\'albero delle pagine di questo wiki';
 $string['pageislocked'] = 'In questo momento qualcuno sta modificando questa pagina. Prova a modificarla più tardi.';
 $string['pagelist'] = 'Elenco delle pagine';
 $string['pagelist_help'] = 'Elenco delle pagine categorizzate in ordine alfabetico';
-$string['page-mod-wiki-comments'] = 'Pagina commenti modulo wiki';
-$string['page-mod-wiki-history'] = 'Pagina storico wiki';
-$string['page-mod-wiki-map'] = 'Pagina mappa wiki';
-$string['page-mod-wiki-view'] = 'Pagina principale wiki';
-$string['page-mod-wiki-x'] = 'Qualsiasi pagina con modulo wiki';
 $string['pagename'] = 'Nome pagina';
 $string['peerreview'] = 'Valutazione tra pari';
 $string['pluginadministration'] = 'Gestione wiki';
@@ -230,6 +230,7 @@ $string['privacy:metadata:wiki_pages:pageviews'] = 'Numero di visualizzazioni de
 $string['privacy:metadata:wiki_pages:readonly'] = 'Scelta di rendere disponibile la pagina per la sola lettura.';
 $string['privacy:metadata:wiki_pages:timecreated'] = 'Data e ora di creazione della pagina.';
 $string['privacy:metadata:wiki_pages:timemodified'] = 'Data e ora di modifica della pagina.';
+$string['privacy:metadata:wiki_pages:timerendered'] = 'Orario dell\'ultima richiesta della pagina';
 $string['privacy:metadata:wiki_pages:title'] = 'Titolo della pagina';
 $string['privacy:metadata:wiki_pages:userid'] = 'Ultimo utente che ha modificato la pagina.';
 $string['privacy:metadata:wiki_subwikis'] = 'Informazioni sui subwiki (in caso di modalità di gruppo o individuale)';
@@ -288,11 +289,17 @@ $string['viewperpage'] = 'Visualizza {$a} versioni per pagina';
 $string['viewversion'] = 'Visualizzazione della versione #{$a} della pagina';
 $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Aggiungere wiki';
-$string['wikiattachments'] = 'Allegati wiki';
-$string['wikiboldtext'] = 'Grassetto';
 $string['wiki:createpage'] = 'Creare pagine wiki';
 $string['wiki:editcomment'] = 'Aggiungere commenti alle pagine';
 $string['wiki:editpage'] = 'Salvare pagine wiki';
+$string['wiki:managecomment'] = 'Gestire commenti wiki';
+$string['wiki:managefiles'] = 'Gestire file wiki';
+$string['wiki:managewiki'] = 'Gestire impostazioni wiki';
+$string['wiki:overridelock'] = 'Ignorare blocco pagine wiki';
+$string['wiki:viewcomment'] = 'Visualizzare commenti alle pagine';
+$string['wiki:viewpage'] = 'Visualizzare pagine wiki';
+$string['wikiattachments'] = 'Allegati wiki';
+$string['wikiboldtext'] = 'Grassetto';
 $string['wikiexternalurl'] = 'URL Esterna';
 $string['wikifiles'] = 'File wiki';
 $string['wikifiletable'] = 'Elenco file caricati';
@@ -303,21 +310,15 @@ $string['wikiinternalurl'] = 'Link interno';
 $string['wikiintro'] = 'Descrizione';
 $string['wikiitalictext'] = 'Corsivo';
 $string['wikilockingsettings'] = 'Timeout di blocco e rilettura';
-$string['wiki:managecomment'] = 'Gestire commenti wiki';
-$string['wiki:managefiles'] = 'Gestire file wiki';
-$string['wiki:managewiki'] = 'Gestire impostazioni wiki';
 $string['wikimode'] = 'Modalità wiki';
-$string['wikimodecollaborative'] = 'Wiki collaborativo';
 $string['wikimode_help'] = 'La modalità wiki definisce chi può modificare il wiki, tutti - wiki collaborativo, oppure il singolo utente - wiki individuale.';
+$string['wikimodecollaborative'] = 'Wiki collaborativo';
 $string['wikimodeindividual'] = 'Wiki individuale';
 $string['wikiname'] = 'Titolo wiki';
 $string['wikinowikitext'] = 'Nessun testo wiki';
 $string['wikiorderedlist'] = 'Elenco ordinato';
-$string['wiki:overridelock'] = 'Ignorare blocco pagine wiki';
 $string['wikipages'] = 'Pagine wiki';
 $string['wikisettings'] = 'Impostazioni Wiki';
 $string['wikiunorderedlist'] = 'Elenco non ordinato';
-$string['wiki:viewcomment'] = 'Visualizzare commenti alle pagine';
-$string['wiki:viewpage'] = 'Visualizzare pagine wiki';
 $string['wrongversionlock'] = 'Un altro utente ha modificato questa pagina mentre la stavi modificando anche tu. Le tue modifiche son ora obsolete.';
 $string['wrongversionsave'] = 'Un altro utente ha generato una versione mentre stavi modificando la pagina. Hai sovrascritto le sue modifiche, controlla lo storico della pagina.';

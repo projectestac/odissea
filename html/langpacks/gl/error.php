@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'error', language 'gl', version '3.8'.
  *
- * @package   error
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     error
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['TODO'] = 'POR FACER';
 $string['activityisscheduledfordeletion'] = 'Estase a eliminar a actividade...';
 $string['agedigitalconsentmapinvalidage'] = '«{$a}» non é un valor válido para a idade.';
 $string['agedigitalconsentmapinvalidcomma'] = '«{$a}» ten máis ou menos dunha coma separadora.';
@@ -48,85 +49,85 @@ $string['cannotaddmodule'] = 'O módulo {$a} non se puido engadir á lista do m�
 $string['cannotaddnewmodule'] = 'Non se puido engadir un novo módulo de {$a}';
 $string['cannotaddrss'] = 'Non ten permiso para engadir fontes RSS';
 $string['cannotaddthisblocktype'] = 'Non pode engadir un bloque {$a} a esta páxina.';
-$string['cannotassignrole'] = 'Non se pode asignar rol neste curso';
+$string['cannotassignrole'] = 'Non é posíbel asignar rol neste curso';
 $string['cannotassignrolehere'] = 'Non se lle permite asignar este rol (id = {$a->roleid}) neste contexto ({$a->context})';
 $string['cannotassignselfasparent'] = 'Non pode autoasignarse como pai!';
 $string['cannotcallscript'] = 'Non pode chamar a este script desa maneira';
 $string['cannotcallusgetselecteduser'] = 'Non pode chamar a user_selector::get_selected_user se o valor de multiselección está como verdadeiro.';
-$string['cannotcreatebackupdir'] = 'Non se pode crear un cartafol de copia de seguranza de datos. O administrador do sitio debe arranxar os permisos do ficheiro.';
+$string['cannotcreatebackupdir'] = 'Non é posíbel crear un cartafol de copia de seguranza de datos. O administrador do sitio debe arranxar os permisos do ficheiro.';
 $string['cannotcreatecategory'] = 'A categoría non se inseriu';
 $string['cannotcreatedboninstall'] = '<p>Non é posíbel crear a base de datos.</p>
 <p>A base de datos especificada non existe e o usuario indicado non ten permiso para crear a base de datos.</p>
 <p>O administrador do sitio debería verificar a configuración da base de datos.</p>';
 $string['cannotcreategroup'] = 'Produciuse un erro ao crear o grupo';
 $string['cannotcreatelangbase'] = 'Erro: Non se puido crear o directorio base de idioma';
-$string['cannotcreatelangdir'] = 'Non se pode crear o directorio de idioma';
+$string['cannotcreatelangdir'] = 'Non é posíbel crear o directorio de idioma';
 $string['cannotcreateorfindstructs'] = 'Produciuse un erro ao atopar ou crear as estruturas de sección deste curso';
-$string['cannotcreatepopupwin'] = 'Elemento indefinido - non se pode crear unha xanela emerxente';
-$string['cannotcreatesitedir'] = 'Non se pode crear un cartafol do sitio. O administrador do sitio debe arranxar os permisos do ficheiro.';
-$string['cannotcreatetempdir'] = 'Non se pode crear un directorio temporal';
-$string['cannotcreateuploaddir'] = 'Non se pode crear un cartafol de usuario. O administrador do sitio debe arranxar os permisos do ficheiro.';
-$string['cannotcustomisefiltersblockuser'] = 'Non pode personalizar a configuración dos filtros nos contextos de usuario ou bloque.';
-$string['cannotdeletebackupids'] = 'Non se puido eliminar os id das copias de seguranza previas';
+$string['cannotcreatepopupwin'] = 'Elemento indefinido - Non é posíbel crear unha xanela emerxente';
+$string['cannotcreatesitedir'] = 'Non é posíbel crear un cartafol do sitio. O administrador do sitio debe arranxar os permisos do ficheiro.';
+$string['cannotcreatetempdir'] = 'Non é posíbel crear un directorio temporal';
+$string['cannotcreateuploaddir'] = 'Non é posíbel crear un cartafol de usuario. O administrador do sitio debe arranxar os permisos do ficheiro.';
+$string['cannotcustomisefiltersblockuser'] = 'Vostede non pode personalizar os axustes dos filtros nos contextos de usuario ou bloque.';
+$string['cannotdeletebackupids'] = 'Non foi posíbel eliminar os id das copias de seguranza previas';
 $string['cannotdeletecategorycourse'] = 'Fallou a eliminación do curso «{$a}».';
-$string['cannotdeletecategoryquestions'] = 'Non se puideron eliminar as preguntas da categoría «{$a}»';
+$string['cannotdeletecategoryquestions'] = 'Non foi posíbel eliminar as preguntas da categoría «{$a}»';
 $string['cannotdeletecourse'] = 'Non ten permiso para eliminar este curso';
 $string['cannotdeletecustomfield'] = 'Produciuse un erro ao borrar os datos personalizados do campo';
-$string['cannotdeletedir'] = 'Non se pode eliminar ({$a})';
-$string['cannotdeletefile'] = 'Non foi posíbel eliminar este ficheiro';
+$string['cannotdeletedir'] = 'Non é posíbel eliminar ({$a})';
+$string['cannotdeletefile'] = 'Non é posíbel eliminar este ficheiro';
 $string['cannotdeleterole'] = 'Non é posíbel eliminar, porque {$a}';
 $string['cannotdeleterolewithid'] = 'Non foi posíbel eliminar o rol co ID {$a}';
-$string['cannotdeletethisrole'] = 'Non é posíbel eliminar este rol porque o usa o sistema ou porque resulta ser o último rol con capacidade de administrador.';
-$string['cannotdisableformat'] = 'Non é posíbel desactivar o formato predeterminado';
-$string['cannotdownloadcomponents'] = 'Non foi posíbel descargar compoñentes';
-$string['cannotdownloadlanguageupdatelist'] = 'Non foi posíbel descargar a lista de actualizacións de idioma desde download.moodle.org';
-$string['cannotdownloadzipfile'] = 'Non foi posíbel descargar o ficheiro ZIP';
+$string['cannotdeletethisrole'] = 'Vostede non pode eliminar este rol porque o usa o sistema ou porque resulta ser o último rol con capacidade de administrador.';
+$string['cannotdisableformat'] = 'Vostede non pode desactivar o formato predeterminado';
+$string['cannotdownloadcomponents'] = 'Non é posíbel descargar compoñentes';
+$string['cannotdownloadlanguageupdatelist'] = 'Non é posíbel descargar a lista de actualizacións de idioma dende download.moodle.org';
+$string['cannotdownloadzipfile'] = 'Non é posíbel descargar o arquivo ZIP';
 $string['cannoteditcomment'] = 'Este comentario non é seu como para editalo!';
 $string['cannoteditcommentexpired'] = 'Non é posíbel editar isto. Esgotouse o tempo!';
-$string['cannoteditpostorblog'] = 'Non foi posíbel comentar ou editar os blogs';
-$string['cannoteditsiteform'] = 'Non é posíbel editar o sitio do curso usando este formulario';
+$string['cannoteditpostorblog'] = 'Vostede non pode comentar ou editar os blogs';
+$string['cannoteditsiteform'] = 'Vostede non pode editar o sitio do curso usando este formulario';
 $string['cannotedituserpreferences'] = 'Non é posíbel editar as preferencias deste usuario';
 $string['cannotedityourprofile'] = 'Mágoa, non é posíbel editar o seu propio perfil';
 $string['cannotexecduringupgrade'] = 'Non é posíbel executalo durante a actualización';
 $string['cannotfindcategory'] = 'Non foi posíbel atopar o rexistro da categoría da base de datos por ID - {$a}';
-$string['cannotfindcomponent'] = 'Non foi posíbel atopar o compoñente';
+$string['cannotfindcomponent'] = 'Non é posíbel atopar o compoñente';
 $string['cannotfindcontext'] = 'Non foi posíbel atopar o contexto';
-$string['cannotfindcourse'] = 'Non foi posíbel atopar o curso';
+$string['cannotfindcourse'] = 'Non é posíbel atopar o curso';
 $string['cannotfinddocs'] = 'Non é posíbel atopar os ficheiros doc do idioma «{$a}»';
-$string['cannotfindgradeitem'] = 'Non foi posíbel atopar grade_item';
-$string['cannotfindgroup'] = 'Non foi posíbel atopar grupo';
-$string['cannotfindhelp'] = 'Non foi posíbel atopar os ficheiros de axuda do idioma «{$a}»';
-$string['cannotfindinfo'] = 'Non foi posíbel atopar info de: «{$a}»';
-$string['cannotfindlang'] = 'Non foi posíbel atopar o paquete do idioma «{$a}»!';
-$string['cannotfindteacher'] = 'Non foi posíbel atopar profesor';
-$string['cannotfinduser'] = 'Non foi posíbel atopar o usuario chamado «{$a}»';
-$string['cannotgeoplugin'] = 'Non foi posíbel conectar co servidor geoPlugin en http://www.geoplugin.com, comprobe a configuación do seu proxy ou mellor aínda, instale o ficheiro de datos MaxMind GeoLite City';
-$string['cannotgetblock'] = 'Non foi posíbel recuperar os bloques da base de datos';
-$string['cannotgetcats'] = 'Non foi posíbel obter o rexistro da categoría';
-$string['cannotgetdata'] = 'Non foi posíbel obter os datos';
-$string['cannotgradeuser'] = 'Non foi posíbel puntuar este usuario';
+$string['cannotfindgradeitem'] = 'Non é posíbel atopar grade_item';
+$string['cannotfindgroup'] = 'Non é posíbel atopar grupo';
+$string['cannotfindhelp'] = 'Non é posíbel atopar os ficheiros de axuda do idioma «{$a}»';
+$string['cannotfindinfo'] = 'Non é posíbel atopar información de: «{$a}»';
+$string['cannotfindlang'] = 'Non é posíbel atopar o paquete do idioma «{$a}»!';
+$string['cannotfindteacher'] = 'Non é posíbel atopar o profesor';
+$string['cannotfinduser'] = 'Non é posíbel atopar o usuario chamado «{$a}»';
+$string['cannotgeoplugin'] = 'Non é posíbel conectar co servidor geoPlugin en http://www.geoplugin.com, comprobe os axustes do seu proxy ou mellor aínda, instale o ficheiro de datos MaxMind GeoLite City';
+$string['cannotgetblock'] = 'Non é posíbel recuperar os bloques da base de datos';
+$string['cannotgetcats'] = 'Non é posíbel obter o rexistro da categoría';
+$string['cannotgetdata'] = 'Non é posíbel obter os datos';
+$string['cannotgradeuser'] = 'Non é posíbel cualificar este usuario';
 $string['cannothaveparentcate'] = 'A categoría do curso non pode ter pai!';
 $string['cannotimport'] = 'Erro de importación';
 $string['cannotimportformat'] = 'Mágoa, a importación deste formato aínda non está implementada!';
 $string['cannotimportgrade'] = 'Erro de importación da cualificación';
-$string['cannotinsertgrade'] = 'Non foi posíbel inserir o ítem de cualificación sen o id do curso!';
+$string['cannotinsertgrade'] = 'Non é posíbel inserir o ítem de cualificación sen o id do curso!';
 $string['cannotinsertrate'] = 'Non foi posíbel inserir unha nova puntuación ({$a->id} = {$a->rating})';
 $string['cannotinsertrecord'] = 'Non foi posíbel inserir un novo ID de rexistro {$a}';
 $string['cannotmailconfirm'] = 'Produciuse un erro ao enviar o correo de confirmación de cambio de contrasinal';
 $string['cannotmanualctrack'] = 'A actividade non fornece un seguimento manual completo';
-$string['cannotmapfield'] = 'Detectouse unha colisión de asignación - dúas asignacións de campos para o mesmo elemento de cualificación {$a}';
+$string['cannotmapfield'] = 'Detectouse unha colisión de asignación - dous mapas de campos para o mesmo elemento de cualificación {$a}';
 $string['cannotmarktopic'] = 'Non foi posíbel marcar ese tema para este curso';
 $string['cannotmigratedatacomments'] = 'Non é posíbel migrar os comentarios do módulo de datos';
 $string['cannotmodulename'] = 'Non é posíbel obter o nome do módulo na navegación actual';
 $string['cannotmoduletype'] = 'Non é posíbel obter o tipo de módulo na navegación actual';
 $string['cannotmovecategory'] = 'Non é posíbel mover a categoría';
-$string['cannotmovecourses'] = 'Non é posíbel mover cursos dende a categoría na que están cara outra categoría.';
+$string['cannotmovecourses'] = 'Non é posíbel mover cursos dende a categoría na que están cara a outra categoría.';
 $string['cannotmoverolewithid'] = 'Non é posíbel mover o rol co ID {$a}';
 $string['cannotopencsv'] = 'Non é posíbel abrir o ficheiro CSV';
 $string['cannotopenfile'] = 'Non é posíbel abrir o ficheiro ({$a})';
 $string['cannotopenforwrit'] = 'Non é posíbel abrir para escribir: {$a}';
 $string['cannotopentemplate'] = 'Non é posíbel abrir o ficheiro modelo ({$a})';
-$string['cannotopenzip'] = 'Non é posíbel abrir o arquivo zip, probablemente por un erro na extensión zip sobre un sistema operativo de 64 bits';
+$string['cannotopenzip'] = 'Non é posíbel abrir o arquivo zip, probabelmente por un erro na extensión zip sobre un sistema operativo de 64 bits';
 $string['cannotoverridebaserole'] = 'Non é posíbel sobrescribir as capacidades base do rol';
 $string['cannotoverriderolehere'] = 'Non se lle permite sobrescribir este rol (id = {$a->roleid}) neste contexto ({$a->context})';
 $string['cannotreadfile'] = 'Non é posíbel ler o ficheiro ({$a})';
@@ -136,7 +137,7 @@ $string['cannotremovefrommeta'] = 'Non foi posíbel retirar o curso seleccionado
 $string['cannotreprocessgrades'] = 'Non foi posíbel volver procesar as cualificacións para esta actividade {$a}';
 $string['cannotresetguestpwd'] = 'Non é posíbel restabelecer o contrasinal de convidado';
 $string['cannotresetmail'] = 'Produciuse un erro ao restabelecer o contrasinal e enviarllo por correo';
-$string['cannotresetthisrole'] = 'Non foi posíbel restabelecer este rol';
+$string['cannotresetthisrole'] = 'Non é posíbel restabelecer este rol';
 $string['cannotrestore'] = 'Produciuse un erro e non foi posíbel completar a restauración!';
 $string['cannotrestoreadminorcreator'] = 'É necesario ser creador ou usuario administrador para restaurar nun novo curso!';
 $string['cannotrestoreadminoredit'] = 'É necesario ser un profesor editor ou usuario administrador para restaurar no curso seleccionado!';
@@ -164,9 +165,9 @@ $string['cannotupdatemod'] = 'Non foi posíbel actualizar {$a}';
 $string['cannotupdatepasswordonextauth'] = 'Produciuse un erro ao actualizar o contrasinal na autenticación externa: {$a}. Ver os rexistros do servidor para máis detalles.';
 $string['cannotupdateprofile'] = 'Produciuse un erro ao actualizar o rexistro do usuario';
 $string['cannotupdaterecord'] = 'Non foi posíbel actualizar o rexistro de ID {$a}';
-$string['cannotupdaterss'] = 'Non foi posíbel actualizar o RSS';
+$string['cannotupdaterss'] = 'Non é posíbel actualizar o RSS';
 $string['cannotupdatesubcourse'] = 'Non foi posíbel actualizar un curso fillo!';
-$string['cannotupdateusermsgpref'] = 'Non foi posíbel actualizar as preferencias de mensaxe de usuario';
+$string['cannotupdateusermsgpref'] = 'Non é posíbel actualizar as preferencias de mensaxe de usuario';
 $string['cannotupdateuseronexauth'] = 'Produciuse un fallo ao actualizar os datos do usuario na autenticación externa: {$a}. Ver os rexistros do servidor para máis detalles.';
 $string['cannotuploadfile'] = 'Produciuse un erro ao enviar o ficheiro';
 $string['cannotuseadmin'] = 'É necesario que sexa un usuario administrador para usar esta páxina';
@@ -185,7 +186,7 @@ $string['commentmisconf'] = 'O ID do comentario está desconfigurado';
 $string['componentisuptodate'] = 'O compoñente está actualizado';
 $string['confirmationnotenabled'] = 'A confirmación do usuario non está activada neste sitio';
 $string['confirmsesskeybad'] = 'Mágoa, pero a súa clave de sesión non puido confirmarse para realizar esta acción. Esta funcionalidade de seguranza evita a execución accidental ou maliciosa de funcións importantes no seu nome. Asegúrese de que quere executar esta función.';
-$string['couldnotassignrole'] = 'Un erro importante pero inespecífico produciuse ao tentar asignarlle un rol a vostede';
+$string['couldnotassignrole'] = 'Un erro importante pero non específico produciuse ao tentar asignarlle un rol a vostede';
 $string['couldnotupdatenoexistinguser'] = 'Non foi posíbel actualizar o usuario - o usuario non existe';
 $string['couldnotverifyagedigitalconsent'] = 'Produciuse un erro ao tentar verificar a idade do consentimento dixital.<br />Contacte co administrador.';
 $string['countriesphpempty'] = 'Erro: O ficheiro countries.php no paquete de idioma {$a} está baleiro ou falta.';
@@ -198,10 +199,10 @@ $string['coursemisconf'] = 'O curso está mal configurado';
 $string['courserequestdisabled'] = 'Mágoa, pero os cursos que solicita foron desactivados polo administrador';
 $string['csvcolumnduplicates'] = 'Detectáronse columnas duplicadas';
 $string['csvemptyfile'] = 'O ficheiro CSV está baleiro';
-$string['csvfewcolumns'] = 'Non ten suficientes columnas, comprobe a configuración do delimitador';
+$string['csvfewcolumns'] = 'Non ten suficientes columnas, comprobe o axuste do delimitador';
 $string['csvinvalidcols'] = '<b>Ficheiro CSV incorrecto:</b> A primeira liña debe incluír «Campos de cabeceira» e o ficheiro debe ser do <br />«Campos expandidos/Separados por comas»<br />ou<br />«Campos expandidos con código de resultado CAVV/Separados por comas»';
 $string['csvinvalidcolsnum'] = 'Ficheiro CSV incorrecto - cada liña debe incluír 49 ou 70 campos';
-$string['csvloaderror'] = 'Produciuse un erro durante a carga do ficheiro CSV!';
+$string['csvloaderror'] = 'Produciuse un erro durante a carga do ficheiro CSV: {$a}';
 $string['csvweirdcolumns'] = 'Formato do ficheiro CSV incorrecto - o número de columnas non é constante!';
 $string['dbconnectionfailed'] = '<p>Erro: Fallou a conexión coa base de datos</p>
 <p>É posíbel que a base de datos estea sobrecargada ou non funcione correctamente.</p>
@@ -212,8 +213,7 @@ $string['dbsessionbroken'] = 'Detectouse un problema grave coa sesión da base d
 $string['dbsessionhandlerproblem'] = 'Produciuse un fallo ao configurar a sesión da base de datos.<br /><br />Notifíquello ao administrador do servidor.';
 $string['dbsessionmysqlpacketsize'] = 'Detectouse un problema grave na sesión. Notifíquello  ao administrador do sitio. Este problema, moi probabelmente, é provocado por un valor pequeno na opción «max_allowed_packet» da configuración de MySQL.';
 $string['dbupdatefailed'] = 'Produciuse un fallo ao actualizar a base de datos';
-$string['ddldependencyerror'] = '{$a->targettype} «{$a->targetname}» non pode ser modificado.
-Atopouse dependencia con {$a->offendingtype} «{$a->offendingname}»';
+$string['ddldependencyerror'] = '{$a->targettype} «{$a->targetname}» non pode ser modificado. Atopouse dependencia con {$a->offendingtype} «{$a->offendingname}»';
 $string['ddlexecuteerror'] = 'Produciuse un erro de execución sql DLL';
 $string['ddlfieldalreadyexists'] = 'Xa existe o campo «{$a}»';
 $string['ddlfieldnotexist'] = 'Non existe o campo «{$a->fieldname}» na táboa «{$a->tablename}»';
@@ -231,7 +231,7 @@ $string['dmlwriteexception'] = 'Produciuse un erro ao escribir na base de datos'
 $string['downgradedcore'] = 'ERRO! O código que está usando é MÁIS ANTIGO que a versión que construíu estas bases de datos.';
 $string['downloadedfilecheckfailed'] = 'A comprobación do ficheiro descargado non foi satisfactoria';
 $string['duplicatefieldname'] = 'Detectouse un nome de campo duplicado «{$a}»';
-$string['duplicatenosupport'] = 'A actividade «{$a->modname}» non puido duplicarse por mor de que o módulo  {$a->modtype} non admite copia de seguranza e restauración.';
+$string['duplicatenosupport'] = 'A actividade «{$a->modname}» non puido duplicarse por mor de que o módulo {$a->modtype} non admite copia de seguranza e restauración.';
 $string['duplicateparaminsql'] = 'ERRO: parámetro duplicado na consulta';
 $string['duplicaterolename'] = 'Xa existe un rol con este nome!';
 $string['duplicateroleshortname'] = 'Xa existe un rol con este nome curto!';
@@ -239,6 +239,7 @@ $string['duplicateusername'] = 'Nome de usuario duplicado: omitiuse o rexistro';
 $string['emailfail'] = 'Produciuse un fallo ao enviar o correo';
 $string['enddatebeforestartdate'] = 'A data de remate do curso debe ser posterior á data de inicio.';
 $string['error'] = 'Produciuse un erro';
+$string['error_question_answers_missing_in_db'] = 'Non se atopou ningunha reposta que coincidira con «{$a->answer}» na táboa da base de datos de question_answers. Isto ocorreu ao restaurar a pregunta co id {$a->filequestionid} no ficheiro da copia de seguranza, que foi emparellado coa pregunta existente co id {$a->dbquestionid} na base de datos.';
 $string['errorcleaningdirectory'] = 'Produciuse un erro ao limpar o directorio «{$a}»';
 $string['errorcopyingfiles'] = 'Produciuse un erro ao copiar os ficheiros';
 $string['errorcreatingdirectory'] = 'Produciuse un erro ao crear o directorio «{$a}»';
@@ -249,7 +250,6 @@ $string['erroronline'] = 'Erro na liña {$a}';
 $string['erroroutput'] = 'Saída de erro, polo que se desactiva o redireccionamento automático.';
 $string['errorparsingxml'] = 'Produciuse un erro ao procesar o ficheiro XML: {$a->errorstring} na liña {$a->errorline}, char {$a->errorchar}';
 $string['errorprocessingarchive'] = 'Produciuse un erro ao procesar o ficheiro do arquivo';
-$string['error_question_answers_missing_in_db'] = 'Non se atopou ningunha reposta que coincidira  con «{$a->answer}» na táboa da base de datos de  question_answers. Isto ocorreu ao restaurar a pregunta co id {$a->filequestionid} no ficheiro da copia de seguranza, que foi emparellado coa pregunta existente co id {$a->dbquestionid} na base de datos.';
 $string['errorreadingfile'] = 'Produciuse un erro ao ler o ficheiro «{$a}»';
 $string['errorsavingrequest'] = 'Produciuse un erro ao tentar gardar a súa solicitude.';
 $string['errorsettinguserpref'] = 'Produciuse un erro ao configurar as preferencias do usuario';
@@ -303,7 +303,7 @@ $string['invalidaccess'] = 'Non se accedeu correctamente a esta páxina';
 $string['invalidaccessparameter'] = 'Parámetro de acceso incorrecto';
 $string['invalidaction'] = 'Parámetro de acción incorrecto';
 $string['invalidactivityid'] = 'ID da actividade incorrecto';
-$string['invalidadminsettingname'] = 'Configuración do administrador incorrecta ({$a})';
+$string['invalidadminsettingname'] = 'Axuste do administrador incorrecta ({$a})';
 $string['invalidargorconf'] = 'Non se forneceron argumentos válidos ou a configuración do servidor non é correcta';
 $string['invalidarguments'] = 'Non se forneceron os argumentos correctos';
 $string['invalidblockinstance'] = 'Instancia do bloque incorrecta para: {$a}';
@@ -341,7 +341,7 @@ $string['invalidipformat'] = 'Formato de enderezo IP incorrecto';
 $string['invaliditemid'] = 'ID do elemento incorrecto';
 $string['invalidkey'] = 'Chave incorrecta';
 $string['invalidlegacy'] = 'Definición do rol legado incorrecta para o tipo: {$a}';
-$string['invalidmd5'] = 'md5 non válido';
+$string['invalidmd5'] = 'A variábel de verificación non é correcta, ténteo de novo';
 $string['invalidmode'] = 'Modo incorrecto ({$a})';
 $string['invalidmodule'] = 'Módulo incorrecto';
 $string['invalidmoduleid'] = 'ID do módulo incorrecto: {$a}';
@@ -355,14 +355,14 @@ $string['invalidpaymentmethod'] = 'Método de pagamento incorrecto: {$a}';
 $string['invalidqueryparam'] = 'ERRO: Número de parámetros da consulta incorrecto. Esperados: {$a->expected}; Obtidos: {$a->actual}.';
 $string['invalidratingarea'] = 'Área da puntuación incorrecta';
 $string['invalidrecord'] = 'Non é posíbel atopar o rexistro de datos na táboa da base de datos {$a}.';
-$string['invalidrecordunknown'] = 'Non é posíbel atopar o rexistro de datos na base de datos.';
+$string['invalidrecordunknown'] = 'Non é posíbel atopar o rexistro de datos na táboa da base de datos {$a}.';
 $string['invalidrequest'] = 'Solicitude incorrecta';
 $string['invalidrole'] = 'Rol incorrecto';
 $string['invalidroleid'] = 'ID do rol incorrecto';
 $string['invalidscaleid'] = 'ID da escala incorrecto';
 $string['invalidsection'] = 'O módulo de rexistro do curso contén unha sección incorrecta';
 $string['invalidsesskey'] = 'Enviouse unha sesskey incorrecta, o formulario non se aceptou!';
-$string['invalidshortname'] = 'Este é un nome curto de curso incorrecto';
+$string['invalidshortname'] = 'Nome curto do curso incorrecto';
 $string['invalidsourcefield'] = 'O campo de orixe do ficheiro da versión preliminar é incorrecto';
 $string['invalidstatedetected'] = 'Algo foi mal: {$a}. Normalmente isto nunca debería pasar.';
 $string['invalidurl'] = 'URL incorrecto';
@@ -370,31 +370,31 @@ $string['invaliduser'] = 'Usuario incorrecto';
 $string['invaliduserdata'] = 'Datos de usuario incorrectos: {$a}';
 $string['invaliduserfield'] = 'Campo do usuario incorrecto: {$a}';
 $string['invaliduserid'] = 'ID do usuario incorrecto';
-$string['invalidusername'] = 'O nome de usuario dado conten caracteres incorrectos';
+$string['invalidusername'] = 'O nome de usuario dado contén caracteres incorrectos';
 $string['invalidusernameblank'] = 'O nome de usuario non se pode deixar en branco.';
 $string['invalidxmlfile'] = '«{$a}» é un ficheiro XML incorrecto';
 $string['iplookupfailed'] = 'Non foi posíbel atopar información xeográfica sobre este enderezo IP {$a}';
-$string['iplookupprivate'] = 'Non é posíbel presentar a busca dun enderezo IP  privado';
+$string['iplookupprivate'] = 'Non é posíbel presentar a busca dun enderezo IP privado';
 $string['ipmismatch'] = 'Os enderezos IP do cliente non coinciden';
 $string['listcantmovedown'] = 'Non foi posíbel baixar o elemento, é o último dos seus pares';
-$string['listcantmoveleft'] = 'Non foi posíbel mover cara a esquerda o elemento, non ten pai';
-$string['listcantmoveright'] = 'Non foi posíbel mover cara a dereita o elemento, xa que non hai pares para ser fillo de algo. Póñao baixo outro par e logo poderá movelo cara a dereita.';
-$string['listcantmoveup'] = 'Non foi posíbel subir o elemento, é o primeiro dos seus pares';
+$string['listcantmoveleft'] = 'Non foi posíbel mover cara á esquerda o elemento, non ten pai';
+$string['listcantmoveright'] = 'Non foi posíbel mover cara á dereita o elemento, xa que non hai pares para ser fillo de algo. Póñao baixo outro par e logo poderá movelo cara á dereita.';
+$string['listcantmoveup'] = 'Non foi posíbel enviar o elemento, é o primeiro dos seus pares';
 $string['listnochildren'] = 'Non se atoparon fillos do elemento';
 $string['listnoitem'] = 'Non se atopou o elemento';
 $string['listnopeers'] = 'Non se atoparon pares do elemento';
 $string['listupdatefail'] = 'Operación da BD fallada ao editar a xerarquía de listas.';
 $string['logfilenotavailable'] = 'Rexistros non dispoñíbeis';
-$string['loginasnoenrol'] = 'Non pode empregar subscribir ou dar de baixa cando está en curso unha sesión "Entrar como"';
+$string['loginasnoenrol'] = 'Non pode empregar subscribir ou dar de baixa cando está en proceso unha sesión "Entrar como"';
 $string['loginasonecourse'] = 'Non pode entrar neste curso.<br /> Debe terminar a sesión "Entrar como" antes de entrar a calquera outro curso.';
 $string['maxareabytes'] = 'O ficheiro é maior que o espazo restante nesta área.';
 $string['maxbytesfile'] = 'O ficheiro {$a->file} é grande de máis. O tamaño máximo que pode enviar é {$a->size}.';
 $string['messagingdisable'] = 'A mensaxería está desactivada neste sitio';
 $string['mimetexisnotexist'] = 'O seu sistema non está configurado para executar mimeTeX. Necesita descargar o executábel axeitado para a súa plataforma PHP_OS de <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, ou obter o código fonte en C de <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, compilalo e poñer o executábel dentro do directorio moodle/filter/tex/.';
 $string['mimetexnotexecutable'] = 'O mimetex personalizado non é executábel!';
+$string['missing_moodle_backup_xml_file'] = 'Á copia de seguranza fáltalle o ficheiro XML: {$a}';
 $string['missingfield'] = 'Falta o campo «{$a}»';
 $string['missingkeyinsql'] = 'ERRO: Falta o parámetro «{$a}» na consulta';
-$string['missing_moodle_backup_xml_file'] = 'Á copia de seguranza fáltalle o ficheiro XML: {$a}';
 $string['missingparam'] = 'Falta un parámetro obrigatorio ({$a})';
 $string['missingparameter'] = 'Falta o parámetro';
 $string['missingrequiredfield'] = 'Falta algún campo obrigatorio';
@@ -407,11 +407,11 @@ $string['moduledisable'] = 'Este módulo ({$a}) desactivouse para este curso par
 $string['moduledoesnotexist'] = 'Non existe este módulo';
 $string['moduleinstancedoesnotexist'] = 'Non existe a instancia deste módulo';
 $string['modulemissingcode'] = 'Falta o código necesario do módulo {$a} para efectuar esta función';
-$string['movecatcontentstoroot'] = 'Non está permitido mover o contido dunha categoría para a raíz (root). Debe mover os contidos cara unha categoría existente!';
+$string['movecatcontentstoroot'] = 'Non está permitido mover o contido dunha categoría para a raíz (root). Debe mover os contidos cara a unha categoría existente!';
 $string['movecategorynotpossible'] = 'Non é posíbel mover a categoría «{$a}» dentro da categoría seleccionada.';
 $string['movecategoryownparent'] = 'Non é posíbel facer que a categoría «{$a}» sexa pai de si mesma.';
 $string['movecategoryparentconflict'] = 'Non é posíbel facer que a categoría «{$a}» sexa unha subcategoría dunha das súas propias subcategorías.';
-$string['mssqlrcsmodemissing'] = 'A base de datos non está usando o modo esperado de  READ_COMMITTED_SNAPSHOT, o que pode levar a resultados erróneos, especialmente baixo escenarios de alta concorrencia. Actíveo para un comportamento correcto. Pode atopar máis información na documentación en idioma inglés en  <a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP">Instalando MSSQL para PHP</a>.';
+$string['mssqlrcsmodemissing'] = 'A base de datos non está usando o modo esperado de READ_COMMITTED_SNAPSHOT, o que pode levar a resultados erróneos, especialmente baixo escenarios de alta concorrencia. Actíveo para un comportamento correcto. Pode atopar máis información na documentación en idioma inglés en <a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP">Instalando MSSQL para PHP</a>.';
 $string['multiplerecordsfound'] = 'Atopáronse múltiples rexistros, só se agardaba un.';
 $string['multiplerestorenotallow'] = 'Non se permiten múltiples execucións de restauración!';
 $string['mustbeloggedin'] = 'Debe ter accedido para poder facer iso';
@@ -437,7 +437,7 @@ $string['nologinas'] = 'Non está autorizado a "entrar como" ese usuario';
 $string['nonmeaningfulcontent'] = 'Ningún contido significativo';
 $string['noparticipants'] = 'Non se atoparon participantes para este curso';
 $string['noparticipatorycms'] = 'Non ten ningún módulo participativo no curso para o que poida enviar un informe.';
-$string['nopermissions'] = 'Mágoa, pero nestes momentos non ter permisos para facer isto ({$a})';
+$string['nopermissions'] = 'Mágoa, pero nestes momentos non ten permisos para facer isto ({$a})';
 $string['nopermissiontocomment'] = 'Non é posíbel engadir comentarios';
 $string['nopermissiontodelentry'] = 'Non é posíbel eliminar as entradas doutra persoa!';
 $string['nopermissiontoeditcomment'] = 'Non é posíbel editar os comentarios doutra persoa!';
@@ -457,7 +457,7 @@ $string['nositeid'] = 'Non existe ID do sitio';
 $string['nostartdatenoenddate'] = 'A data de remate do curso só se pode estabelecer se tamén se estabelece unha data de inicio.';
 $string['nostatstodisplay'] = 'Desculpe, non hai datos dispoñíbeis para amosar';
 $string['notallowedtoupdateprefremotely'] = 'Non se lle permite actualizar remotamente esta preferencia do usuario';
-$string['notavailable'] = 'Iso non está dispoñible actualmente';
+$string['notavailable'] = 'Iso non está dispoñíbel actualmente';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'Vostede non é membro deste grupo neste curso';
 $string['notownerofkey'] = 'Vostede non é o propietario desta chave';
@@ -476,8 +476,8 @@ $string['prefixcannotbeempty'] = '<p>Erro: O prefixo da táboa da base de datos 
 <p>O administrador do sitio debe arranxar este problema.</p>';
 $string['prefixtoolong'] = '<p>Erro: O prefixo da táboa da base de datos longo de máis ({$a->dbfamily})</p>
 <p>O administrador d sitio debe arranxar este problema. A lonxitude máxima para os prefixos da táboa en {$a->dbfamily} é de {$a->maxlength} caracteres. </p>';
-$string['privatefilesupload'] = 'Agora xa non está admitido o envío directamente á área de ficheiros privados do usuario. Envíe a unha área de borrador a após mova os ficheiros con «core_user::add_user_private_files»';
-$string['processingstops'] = 'O procesamento acabou aquí. Os rexistros restantes foron ignorados.';
+$string['privatefilesupload'] = 'Agora xa non está admitido o envío directamente á área de ficheiros privados do usuario. Envíe a unha área de borrador e após mova os ficheiros con «core_user::add_user_private_files»';
+$string['processingstops'] = 'O procesamento detívose aquí. Os rexistros restantes foron ignorados.';
 $string['protected_cc_not_supported'] = 'Os cartuchos protexidos non son compatíbeis.';
 $string['querystringcannotbeempty'] = 'A cadea de consulta non pode estar baleira.';
 $string['redirecterrordetected'] = 'Detectouse unha redirección no admitida, rematouse a execución do script';
@@ -486,15 +486,15 @@ $string['refoundtoorigi'] = 'Reintegrado á cantidade orixinal: {$a}';
 $string['registrationdisabled'] = 'O rexistro está desactivado neste sitio';
 $string['remotedownloaderror'] = '<p>Fallo a descarga do compoñente cara o seu servidor. Recomendase encarecidamente que verifiqoe os axustes do proxy, extensión PHP cURL.</p>
 <p>Debe descargar o ficheiro <a href="{$a->url}">{$a->url}</a> manualmente, copialo en «{$a->dest}» no seu servidor e descomprimilo alí.</p>';
-$string['remotedownloadnotallowed'] = 'O seu servidor non permite a descarga de compoñentes  (allow_url_fopen está desactivada).<br /><br />Debe descargar <a href="{$a->url}">{$a->url}</a> o ficheiro manualmente, copialo para "{$a->dest}" no seu servidor e descomprimilo.';
+$string['remotedownloadnotallowed'] = 'O seu servidor non permite a descarga de compoñentes (allow_url_fopen está desactivada).<br /><br />Debe descargar <a href="{$a->url}">{$a->url}</a> o ficheiro manualmente, copialo para "{$a->dest}" no seu servidor e descomprimilo.';
 $string['reportnotavailable'] = 'Este tipo de informe só está dispoñíbel para o curso do sitio';
 $string['requirecorrectaccess'] = 'URL ou porto incorrecto.';
 $string['requireloginerror'] = 'Curso ou actividade non accesíbel.';
-$string['restorechecksumfailed'] = 'Xurdiu algún problema coa información da restauración almacenada na súa sesión. Comprobe os límites do tamaño da memoria PHP/paquete DB. A restauración está detida.';
 $string['restore_path_element_missingmethod'] = 'Non se atopou o método de restauración {$a}. Debe ser definido por un programador.';
 $string['restore_path_element_noobject'] = 'O obxecto de restauración {$a} non é un obxecto.';
+$string['restorechecksumfailed'] = 'Xurdiu algún problema coa información da restauración almacenada na súa sesión. Comprobe os límites do tamaño da memoria PHP/paquete DB. A restauración está detida.';
 $string['restrictedcontextexception'] = 'A execución dunha función externa viola a restrición do contexto.';
-$string['restricteduser'] = 'A súa conta actual "{$a}" está restrinxida para facer iso.';
+$string['restricteduser'] = 'A súa conta actual «{$a}» está restrinxida para facer iso.';
 $string['reverseproxyabused'] = 'O proxy inverso esta activado, desculpe, mais non é posíbel acceder directamente ao servidor.<br /> Póñase en contacto co administrador do servidor.';
 $string['rpcerror'] = 'Fallou a súa comunicación con MNET. Esta é a mensaxe de erro para que lle la pase ao administrador: {$a}';
 $string['scheduledbackupsdisabled'] = 'As copias de seguranza programadas foron desactivadas polo administrador do sitio';
@@ -509,7 +509,7 @@ $string['sessionerroruser'] = 'A sesión esgotou o tempo. Identifíquese de novo
 $string['sessionerroruser2'] = 'Foi detectado un erro no servidor que afecta á súa sesión. Entre de novo ou reinicie o seu navegador.';
 $string['sessionexpired'] = 'A sesión caducou';
 $string['sessionhandlerproblem'] = 'O manipulador da sesión está mal configurado';
-$string['sessionipnomatch'] = 'Parece que o seu número IP foi modificado desde a primeira vez que entrou no sistema. Esta característica de seguranza prevén que os crackers lle rouben a súa identidade mentres estea neste sitio. Os usuarios normais poderían non estar vendo esta mensaxe. Pida axuda ao administrador do sitio.';
+$string['sessionipnomatch'] = 'Parece que o seu número IP foi modificado dende a primeira vez que entrou no sistema. Esta característica de seguridade prevén que os crackers lle rouben a súa identidade mentres estea neste sitio. Os usuarios normais poderían non estar vendo esta mensaxe. Pida axuda ao administrador do sitio.';
 $string['sessionipnomatch2'] = 'Semella que o seu número IP foi modificado desde a primeira vez que entrou no sistema. Esta característica de seguranza prevén que os crackers lle rouben a súa identidade mentres estea neste sitio. Este error adoita aparecer se utiliza redes sen fíos ou se está en itinerancia (roaming) entre redes diferentes. Pregúntelle ao administrador do sitio para obter máis axuda.</p>
 <p>Se quere continuar prema a tecla F5 para actualizar esta páxina.';
 $string['sessionwaiterr'] = 'Tempo de espera para o bloqueo de sesión.<br />Agarde a que finalice a súa solicitude actual e volva tentalo máis adiante.';
@@ -532,7 +532,6 @@ $string['tagnotfound'] = 'Non se atopou a etiqueta especificada na base de datos
 $string['targetdatabasenotempty'] = 'A base de datos destino non está baleira. A transferencia foi cancelada por razóns de seguridade.';
 $string['textconditionsnotallowed'] = 'Non se permiten as comparacións das condiciones de columna de texto. Use sql_compare_text() na consulta.';
 $string['themenotinstall'] = 'Este tema non está instalado!';
-$string['TODO'] = 'POR FACER';
 $string['tokengenerationfailed'] = 'Non foi posíbel xerar unha nova marca.';
 $string['transactionvoid'] = 'Non é posíbel anular a transacción porque xa foi anulada';
 $string['unenrolerror'] = 'Produciuse un erro ao tentar desmatricular a unha persoa';
@@ -544,7 +543,7 @@ $string['unknowformat'] = 'Formato descoñecido ({$a})';
 $string['unknownbackupexporterror'] = 'Produciuse un erro descoñecido ao preparar a información para importar';
 $string['unknownblockregion'] = 'A rexión bloqueada «{$a}» non é recoñecida nesta páxina.';
 $string['unknowncontext'] = 'Este é un contexto descoñecido.';
-$string['unknowncourse'] = 'Non se coñece ningún curso chamado "{$a}"';
+$string['unknowncourse'] = 'Non se coñece ningún curso chamado «{$a}»';
 $string['unknowncourseidnumber'] = 'ID do Curso "{$a}" descoñecido';
 $string['unknowncourserequest'] = 'Solicitude de curso descoñecida';
 $string['unknowncoursesection'] = 'Sección de curso descoñecida no curso «{$a}»';
@@ -578,7 +577,7 @@ $string['usermustbemnet'] = 'Os usuarios na lista de control de acceso MNET debe
 $string['usernamelowercase'] = 'O nome de usuario debe estar en minúsculas';
 $string['usernotaddederror'] = 'O usuario non foi engadido. Erro descoñecido';
 $string['usernotaddedregistered'] = 'O usuario non foi engadido. Xa está rexistrado';
-$string['usernotavailable'] = 'Os detalles deste usuario non están dispoñíbeis';
+$string['usernotavailable'] = 'Os detalles deste usuario non están dispoñíbeis.';
 $string['usernotdeletedadmin'] = 'O usuario non foi eliminado - non é posíbel eliminar as contas dos administradores';
 $string['usernotdeleteddeleted'] = 'Este usuario xa foi eliminado.';
 $string['usernotdeletederror'] = 'O usuario non foi eliminado - erro';
@@ -588,14 +587,14 @@ $string['usernotfullysetup'] = 'O usuario non está totalmente configurado';
 $string['usernotincourse'] = 'Este usuario non está neste curso!';
 $string['usernotrenamedadmin'] = 'Non é posíbel renomear as contas de administrador';
 $string['usernotrenamedexists'] = 'O usuario non foi renomeado. O novo nome de usuario xa está a ser usado.';
-$string['usernotrenamedmissing'] = 'O usuario non foi renomeado. Non foi encontrado o antigo nome de usuario.';
+$string['usernotrenamedmissing'] = 'O usuario non foi renomeado. Non foi atopado o antigo nome de usuario.';
 $string['usernotrenamedoff'] = 'O usuario non foi renomeado - non está permitido o renomeado';
 $string['usernotupdatedadmin'] = 'Non é posíbel actualizar as contas de administrador';
 $string['usernotupdatederror'] = 'O usuario non foi actualizado - erro';
 $string['usernotupdatednotexists'] = 'O usuario non foi actualizado - non existe';
 $string['userquotalimit'] = 'Acadou o seu límite de cota de ficheiros.';
-$string['userselectortoomany'] = 'user_selector ten máis dun usuario seleccionado, a pesares de que a opción de selección múltiple é falso.';
-$string['verifyagedigitalconsentnotpossible'] = 'A verificación de consentimento por idade dixital non é posible neste momento.';
+$string['userselectortoomany'] = '«user_selector» ten máis dun usuario seleccionado, a pesares de que a opción de escolla múltiple é falso.';
+$string['verifyagedigitalconsentnotpossible'] = 'A verificación de consentimento por idade dixital non é posíbel neste momento.';
 $string['wrongcall'] = 'O script está a ser chamado incorrectamente';
 $string['wrongcontextid'] = 'O ID de contexto é incorrecto (non é posíbel atopalo)';
 $string['wrongdestpath'] = 'Camiño de destino errado.';

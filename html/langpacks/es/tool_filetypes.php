@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'es', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,15 +41,15 @@ $string['descriptiontype_help'] = 'Existen tres formas posibles de indicar una d
 $string['descriptiontype_lang'] = 'Cadena de idioma alternativa (desde mimetypes.php)';
 $string['displaydescription'] = 'Descripción';
 $string['editfiletypes'] = 'Editar un tipo de fichero existente';
-$string['emptylist'] = 'No hay tipos de ficheros definidos';
+$string['emptylist'] = 'No hay tipos de archivo definidos.';
 $string['error_extension'] = 'La extensión del fichero <strong>{$a}</strong> ya existe o es inválida. Las extensiones de ficheros deben ser únicas y no deben contener caracteres especiales.';
 $string['error_notfound'] = 'El tipo de fichero con extensión {$a} no puede ser hallado.';
 $string['extension'] = 'Extensión';
 $string['extension_help'] = 'Nombre de la extensión del fichero sin el punto, e.g. &lsquo;mobi&rsquo;';
 $string['groups'] = 'Tipos de grupos';
-$string['icon'] = 'Archivo de icono';
+$string['icon'] = 'Icono del fichero';
 $string['mimetype'] = 'tipo MIME';
-$string['pluginname'] = 'Tipos de fichero';
+$string['pluginname'] = 'Tipos de archivo';
 $string['revert'] = 'Restaurar {$a} a los ajustes por defecto de Moodle';
 $string['revert_confirmation'] = '¿Está seguro de que quiere restaurar <strong>.{$a}</strong> a los ajustes por defecto de Moodle, descartando sus cambios?';
 $string['revertfiletype'] = 'Restaura un tipo de fichero';

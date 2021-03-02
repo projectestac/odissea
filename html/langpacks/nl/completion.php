@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'completion', language 'nl', version '3.8'.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -62,7 +62,6 @@ $string['completedwarning'] = 'Opties voor voltooien geblokkeerd';
 $string['completedwarningtext'] = 'Eén of meer gebruikers ({$a}) heeft deze activiteit al als voltooid gemarkeerd. Het wijzigen van de voltooiingsopties zal hun voltooiingsstatus wissen en zou hierdoor voor verwarring kunnen zorgen.
 De opties zijn geblokkeerd en je wordt aangeraden die geblokkeerd te laten tenzij het echt niet anders kan.';
 $string['completion'] = 'Voltooien bijhouden';
-$string['completionactivitydefault'] = 'Gebruik activiteitsstandaard';
 $string['completion-alt-auto-enabled'] = 'Het systeem markeert dit item als voltooid - het voldoet aan de voorwaarden:  {$a}';
 $string['completion-alt-auto-fail'] = 'Voltooid:  {$a}  (bereikte het cijfer voor geslaagd niet)';
 $string['completion-alt-auto-n'] = 'Niet voltooid: {$a}';
@@ -75,36 +74,39 @@ $string['completion-alt-manual-n'] = 'Niet voltooid: {$a}. Selecteer om te marke
 $string['completion-alt-manual-n-override'] = 'Niet voltooid: {$a->modname} (ingesteld door {$a->overrideuser}). Selecteer om als voltooid te markeren.';
 $string['completion-alt-manual-y'] = 'voltooid: {$a}. Selecteer om als niet voltooid te markeren.';
 $string['completion-alt-manual-y-override'] = 'Voltooid: {$a->modname} (ingesteld door {$a->overrideuser}). Selecteer om als niet voltooid te markeren.';
+$string['completion-fail'] = 'Voltooid (behaald cijfer onvoldoende)';
+$string['completion-n'] = 'Niet voltooid';
+$string['completion-n-override'] = 'Niet voltooid (ingesteld door {$a})';
+$string['completion-pass'] = 'Voltooid (voldoende cijfer behaald)';
+$string['completion-y'] = 'Voltooid';
+$string['completion-y-override'] = 'Voltooid (ingesteld door {$a})';
 $string['completion_automatic'] = 'Toon activiteit als voltooid als aan de voorwaarden voldaan is';
+$string['completion_help'] = 'Indien ingeschakeld wordt het voltooien van activiteiten opgevolgd, ofwel manueel ofwel automatisch, gebaseerd op bepaalde voorwaarden. Meerdere voorwaarden kunnen ingesteld worden indien gewenst. Indien er meerdere voorwaarden zijn, wordt de activiteit pas als voltooid beschouwd als aan alle voorwaarden voldaan is.
+
+Een vinkje naast de activiteitsnaam op de cursuspagina geeft aan of de activiteit voltooid is.';
+$string['completion_manual'] = 'Gebruikers kunnen de activiteit manueel als voltooid markeren';
+$string['completion_none'] = 'Voltooide activiteiten niet aanduiden';
+$string['completionactivitydefault'] = 'Gebruik activiteitsstandaard';
 $string['completiondefault'] = 'Standaard voltooien bijhouden';
 $string['completiondisabled'] = 'Uitgeschakeld, wordt niet getoond in de activiteitsinstellingen';
 $string['completionduration'] = 'Aanmelding';
 $string['completionenabled'] = 'Ingeschakeld, controle via de activiteitsinstellingen';
 $string['completionexpected'] = 'Voltooien verwacht op';
+$string['completionexpected_help'] = 'Deze instelling geeft de datum op wanneer de activiteit voltooid hoort te zijn.';
 $string['completionexpecteddesc'] = 'Voltooiing verwacht op {$a}';
 $string['completionexpectedfor'] = '{$a->instancename} moet nog voltooid worden';
-$string['completionexpected_help'] = 'Deze instelling geeft de datum op wanneer de activiteit voltooid hoort te zijn.';
-$string['completion-fail'] = 'Voltooid (behaald cijfer onvoldoende)';
-$string['completion_help'] = 'Indien ingeschakeld wordt het voltooien van activiteiten opgevolgd, ofwel manueel ofwel automatisch, gebaseerd op bepaalde voorwaarden. Meerdere voorwaarden kunnen ingesteld worden indien gewenst. Indien er meerdere voorwaarden zijn, wordt de activiteit pas als voltooid beschouwd als aan alle voorwaarden voldaan is.
-
-Een vinkje naast de activiteitsnaam op de cursuspagina geeft aan of de activiteit voltooid is.';
 $string['completionicons'] = 'Selectievakjes voor voltooien';
 $string['completionicons_help'] = 'Een vinkje in het selectievakje naast een activiteitsnaam kan worden gebruikt om aan te duiden dat de activiteit voltooid is.
 
 Wanneer je een selectievakje ziet waarvan de rand uit puntjes bestaat, zal dit automatisch aangevinkt worden wanneer je de activiteit hebt voltooid volgens de voorwaarden die door de leraar zijn opgesteld.
 
-Wanneer je een selectievakje ziet waarvan de rand uit volle lijnen bestaat, dan kan je er zelf in klikken om aan te vinken dat de activiteit volgens jou voltooid is. (Je kunt er achteraf nog eens in klikken om het vinkje te verwijderen wanneer je je bedenkt.) Het aanvinken is optioneel; het is enkel een manier om je vooruitgang in de cursus bij te houden.';
-$string['completion_manual'] = 'Gebruikers kunnen de activiteit manueel als voltooid markeren';
+Wanneer je een selectievakje ziet waarvan de rand uit volle lijnen bestaat, dan kan je er zelf in klikken om aan te vinken dat de activiteit volgens jou voltooid is. (Je kunt er achteraf nog eens in klikken om het vinkje te verwijderen wanneer je je bedenkt.)';
 $string['completionmenuitem'] = 'Voltooien';
-$string['completion-n'] = 'Niet voltooid';
-$string['completion_none'] = 'Voltooide activiteiten niet aanduiden';
 $string['completionnotenabled'] = 'Voltooien is niet ingeschakeld';
 $string['completionnotenabledforcourse'] = 'Voltooien is niet ingeschakeld voor deze cursus';
 $string['completionnotenabledforsite'] = 'Voltooien is niet ingeschakeld voor deze site';
-$string['completion-n-override'] = 'Niet voltooid (ingesteld door {$a})';
 $string['completionondate'] = 'Datum';
 $string['completionondatevalue'] = 'Datum wanneer de cursus als voltooid gemarkeerd zal worden';
-$string['completion-pass'] = 'Voltooid (voldoende cijfer behaald)';
 $string['completionsettingslocked'] = 'Instellingen voor voltooien geblokkeerd';
 $string['completionupdated'] = 'Voltooiing voor activiteit <b>{$a}</b> geüpdatet';
 $string['completionusegrade'] = 'Cijfer vereist';
@@ -112,8 +114,6 @@ $string['completionusegrade_desc'] = 'De leerling moet een cijfer krijgen om dez
 $string['completionusegrade_help'] = 'Indien ingeschakeld, wordt de activiteit als voltooid beschouwd zodra de leerling een cijfer gekregen heeft. Er kunnen geslaagd en mislukt icoontjes getoond worden als er een cijfer ingesteld is vanaf wanneer een leerling als geslaagd beschouwd wordt.';
 $string['completionview'] = 'Bekijken vereist';
 $string['completionview_desc'] = 'De leerling moet deze activiteit bekeken hebben om als voltooid beschouwd te worden.';
-$string['completion-y'] = 'Voltooid';
-$string['completion-y-override'] = 'Voltooid (ingesteld door {$a})';
 $string['configcompletiondefault'] = 'De standaardinstelling voor het bijhouden van voltooien wanneer nieuwe activiteiten gemaakt worden.';
 $string['configenablecompletion'] = 'Wanneer ingeschakeld, kun je voorwaarden instellen voor het voltooien van activiteiten. Het instellen van zulke voorwaarden is een goed idee, zodat er zinvolle informatie aan de gebruikers getoond wordt op hun startpagina.';
 $string['confirmselfcompletion'] = 'Bevestig zelf als voltooid';
@@ -166,7 +166,7 @@ $string['inprogress'] = 'Bezig';
 $string['manual'] = 'Handmatig';
 $string['manualcompletionby'] = 'Manueel voltooid door anderen';
 $string['manualcompletionbynote'] = 'Opmerking: de mogelijkheid moodle/course:markcomplete moet toegestaan zijn voor een rol om in de lijst te verschijnen.';
-$string['manualselfcompletion'] = 'Manueel voltooien';
+$string['manualselfcompletion'] = 'Handmatig voltooien';
 $string['manualselfcompletionnote'] = 'Opmerking: het blok zelf voltooien moet toegevoegd worden aan de cursus indien manueel zelf voltooien is ingeschakeld.';
 $string['markcomplete'] = 'Markeer als voltooid';
 $string['markedcompleteby'] = 'Als voltooid gemarkeerd door {$a}';

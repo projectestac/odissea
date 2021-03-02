@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_monitor', language 'de', version '3.8'.
  *
- * @package   tool_monitor
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_monitor
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -72,11 +72,11 @@ $string['messagetemplate_help'] = 'Eine Benachrichtigung wird dem Empfänger zug
 * Beschreibung {description}<br />
 * Event/Ereignis {eventname}';
 $string['moduleinstance'] = 'Instanz';
-$string['monitordisabled'] = 'Die Beobachtung von Events ist zur Zeit deaktiviert.';
-$string['monitorenabled'] = 'Die Beobachtung von Events ist jetzt aktiviert.';
 $string['monitor:managerules'] = 'Regeln zur Event-Beobachtung verwalten';
 $string['monitor:managetool'] = 'Event-Beobachtung  de-/aktivieren';
 $string['monitor:subscribe'] = 'Benachrichtung für Event-Ereignisse abonnieren';
+$string['monitordisabled'] = 'Die Beobachtung von Events ist zur Zeit deaktiviert.';
+$string['monitorenabled'] = 'Die Beobachtung von Events ist jetzt aktiviert.';
 $string['norules'] = 'Es gibt zur Zeit keine Event-Benachrichtungsregeln';
 $string['pluginname'] = 'Event-Beobachtung';
 $string['privacy:createdrules'] = 'Regel für Ereignisbeobachtung, die ich erstellte';

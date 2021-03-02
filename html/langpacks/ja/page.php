@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'page', language 'ja', version '3.8'.
  *
- * @package   page
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     page
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,13 +33,13 @@ $string['displayoptions'] = '利用可能な表示オプション';
 $string['displayselect'] = '表示';
 $string['displayselectexplain'] = '表示タイプを選択してください。';
 $string['indicator:cognitivedepth'] = 'ページ認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はページリソースで学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'ページ認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がページリソースから提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧)。';
-$string['indicator:cognitivedepth_help'] = 'この指標はページリソースで学生が到達した認識深度に基づきます。';
 $string['indicator:socialbreadth'] = 'ページ社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はページリソースで学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'ページ社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がページリソースから提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
-$string['indicator:socialbreadth_help'] = 'この指標はページリソースで学生が到達した社会的広がりに基づきます。';
 $string['legacyfiles'] = '古いコースファイルの移行';
 $string['legacyfilesactive'] = 'アクティブ';
 $string['legacyfilesdone'] = '終了';
@@ -56,8 +56,8 @@ $string['modulename_help'] = 'ページモジュールにおいて教師はテ�
 * 説明文と共にいくつかのビデオまたは音声ファイルを埋め込むため';
 $string['modulenameplural'] = 'ページ';
 $string['optionsheader'] = '表示オプション';
-$string['page:addinstance'] = '新しいページリソースを追加する';
 $string['page-mod-page-x'] = 'すべてのページモジュールページ';
+$string['page:addinstance'] = '新しいページリソースを追加する';
 $string['page:view'] = 'ページコンテンツを表示する';
 $string['pluginadministration'] = 'ページモジュール管理';
 $string['pluginname'] = 'ページ';

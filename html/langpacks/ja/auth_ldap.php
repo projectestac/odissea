@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_ldap', language 'ja', version '3.8'.
  *
- * @package   auth_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,14 +40,12 @@ $string['auth_ldap_contexts_key'] = 'コンテクスト';
 $string['auth_ldap_create_context'] = 'メールによるアカウント登録確認でユーザを作成する場合、ユーザが作成されるコンテクストを指定してください。セキュリティの観点から、このコンテクストはユーザごとに異なるものにしてください。このコンテクストからMoodleが自動的にユーザを探すため、このコンテクストをldap_context-vaiableに追加する必要はありません。<br /><b>注意!</b> ユーザ作成を動作させるため、auth/ldap/auth.phpファイルのuser_create() 関数を修正する必要があります。';
 $string['auth_ldap_create_context_key'] = '新しいユーザのコンテクスト';
 $string['auth_ldap_create_error'] = 'LDAPでのユーザ作成中にエラーが発生しました。';
-$string['auth_ldapdescription'] = 'この方法では外部のLDAPサーバに対して認証を提供します。ユーザ名およびパスワードが正しい場合、Moodleは新しいユーザをデータベースに作成します。このモジュールはユーザ属性をLDAPから取得して、Moodleのフィールドに入力します。認証後のログインではユーザ名およびパスワードのみ確認されます。';
 $string['auth_ldap_expiration_desc'] = 'パスワードチェックの有効期限を無効にする場合、または「 {$a->ldapserver} 」から直接パスワード有効期限を参照する場合、「 {$a->no} 」を選択してください。';
 $string['auth_ldap_expiration_key'] = '有効期限切れ';
 $string['auth_ldap_expiration_warning_desc'] = 'パスワードの有効期限切れを警告するまでの日数を入力してください。';
 $string['auth_ldap_expiration_warning_key'] = '有効期限切れ警告';
 $string['auth_ldap_expireattr_desc'] = '任意: パスワード有効期限を保持するLDAP属性をオーバーライドします。';
 $string['auth_ldap_expireattr_key'] = '有効期限切れ属性';
-$string['auth_ldapextrafields'] = 'これらのフィールドは任意です。<b>LDAPフィールド</b>より事前に入力されたMoodleユーザフィールドを選択することもできます。<p>空白の場合、LDAPよりデータは転送されず、代わりにMoodleのデフォルト値が使用されます。</p><p>どちらの場合でも、ユーザはログイン後、すべてのフィールドを編集することができます。</p>';
 $string['auth_ldap_graceattr_desc'] = '任意: 猶予ログイン属性をオーバーライドします。';
 $string['auth_ldap_gracelogin_key'] = '猶予ログイン属性';
 $string['auth_ldap_gracelogins_desc'] = 'LDAPの猶予ログインサポートを有効にします。パスワードの有効期限が切れた後、猶予ログインカウントがゼロになるまでログインすることができます。この設定を有効にした場合、パスワードの有効期限が切れた時に猶予ログインメッセージが表示されます。';
@@ -63,11 +61,10 @@ $string['auth_ldap_memberattribute'] = '任意: ユーザがグループに属�
 $string['auth_ldap_memberattribute_isdn'] = 'メンバー属性値をオーバーライドします。';
 $string['auth_ldap_memberattribute_isdn_key'] = 'ユーザDNのメンバー属性';
 $string['auth_ldap_memberattribute_key'] = 'メンバー属性';
+$string['auth_ldap_no_mbstring'] = 'Active Directoryにアカウントを作成するにはmbstring拡張モジュールが必要です。';
 $string['auth_ldap_noconnect'] = 'LDAPモジュールがサーバに接続できません: {$a}';
 $string['auth_ldap_noconnect_all'] = 'LDAPモジュールがすべてのサーバに接続できません: {$a}';
 $string['auth_ldap_noextension'] = '<em>警告: PHP LDAPモジュールがインストールされていないようです。あなたがこの認証プラグインを使用したい場合、インストールおよび有効にされているか確認してください。</em>';
-$string['auth_ldap_no_mbstring'] = 'Active Directoryにアカウントを作成するにはmbstring拡張モジュールが必要です。';
-$string['auth_ldapnotinstalled'] = 'LDAP認証を使用できません。PHP LDAPモジュールがインストールされていません。';
 $string['auth_ldap_objectclass'] = '任意: ldap_user_typeのname/searchユーザで使用されるオブジェクトクラスをオーバーライドします。通常、この設定を変更する必要はありません。';
 $string['auth_ldap_objectclass_key'] = 'オブジェクトクラス';
 $string['auth_ldap_opt_deref'] = '検索時、エイリアスをどのように扱うか次の値から選択してください: 「No」 (LDAP_DEREF_NEVER) または 「Yes」 (LDAP_DEREF_ALWAYS)';
@@ -96,6 +93,9 @@ $string['auth_ldap_usertypeundefined'] = 'config.user_typeが定義されてい�
 $string['auth_ldap_usertypeundefined2'] = 'config.user_typeが定義されていないか動作していません。ldap_unixi2expirationtimeは選択されたユーザタイプをサポートしません!';
 $string['auth_ldap_version'] = 'あなたのサーバが使用しているLDAPプロトコルのバージョンです。';
 $string['auth_ldap_version_key'] = 'バージョン';
+$string['auth_ldapdescription'] = 'この方法では外部のLDAPサーバに対して認証を提供します。ユーザ名およびパスワードが正しい場合、Moodleは新しいユーザをデータベースに作成します。このモジュールはユーザ属性をLDAPから取得して、Moodleのフィールドに入力します。認証後のログインではユーザ名およびパスワードのみ確認されます。';
+$string['auth_ldapextrafields'] = 'これらのフィールドは任意です。<b>LDAPフィールド</b>より事前に入力されたMoodleユーザフィールドを選択することもできます。<p>空白の場合、LDAPよりデータは転送されず、代わりにMoodleのデフォルト値が使用されます。</p><p>どちらの場合でも、ユーザはログイン後、すべてのフィールドを編集することができます。</p>';
+$string['auth_ldapnotinstalled'] = 'LDAP認証を使用できません。PHP LDAPモジュールがインストールされていません。';
 $string['auth_ntlmsso'] = 'NTLM SSO';
 $string['auth_ntlmsso_enabled'] = '「Yes」にした場合、NTLMドメインでシングルサインオンを試みます。<strong>注意:</strong> 動作させるにはウェブサーバに対して追加のセットアップが必要です。詳細は<a href="https://docs.moodle.org/en/NTLM_authentication">https://docs.moodle.org/en/NTLM_authentication</a>をご覧ください。';
 $string['auth_ntlmsso_enabled_key'] = '有効';
@@ -159,9 +159,9 @@ $string['updateremfail'] = 'LDAPレコードの更新中にエラーが発生し
 $string['updateremfailamb'] = 'LDAPのあいまいなフィールド {$a->key} の更新に失敗しました。古いMoodle値: {$a->ouvalue}  新しい値: {$a->nuvalue}';
 $string['updateremfailfield'] = '存在しないフィールド (「 {$a->ldapkey} 」) のLDAPの更新に失敗しました。キー ({$a->key}) - 古いMoodleの値: 「 {$a->ouvalue} 」 新しい値: 「 {$a->nuvalue} 」';
 $string['updateusernotfound'] = '外部更新中にユーザを見つけることができませんでした。詳細は次のとおりです: 検索ベース: {$a->userdn}  検索フィルタ: (objectClass=*)  検索属性: {$a->attribs}';
-$string['useracctctrlerror'] = '{$a} のuserAccountControl取得中にエラーが発生しました。';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate()は選択された次のusertypeをサポートしていません: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable()は選択された次のusertypeをサポートしていません: {$a}';
+$string['useracctctrlerror'] = '{$a} のuserAccountControl取得中にエラーが発生しました。';
 $string['userentriestoadd'] = '追加されるユーザエントリ: {$a}';
 $string['userentriestoremove'] = '削除されるユーザエントリ: {$a}';
 $string['userentriestorevive'] = '回復されるユーザエントリ: {$a}';

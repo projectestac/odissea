@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'completion', language 'pt', version '3.8'.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -61,7 +61,6 @@ $string['completedunlockedtext'] = 'Quando guardar as alterações, o estado de 
 $string['completedwarning'] = 'Opções de conclusão bloqueadas';
 $string['completedwarningtext'] = 'Um ou mais alunos ({$a}) já assinalaram esta atividade como concluída. Se alterar as opções de conclusão irá apagar o estado de conclusão destes alunos, podendo gerar alguma confusão. Por isso, as opções foram bloqueadas e não devem ser desbloqueadas, exceto se for absolutamente necessário.';
 $string['completion'] = 'Verificação da conclusão';
-$string['completionactivitydefault'] = 'Usar configuração predefinida da atividade';
 $string['completion-alt-auto-enabled'] = 'A atividade é dada como concluída pelo sistema quando se verificarem determinadas condições: {$a}';
 $string['completion-alt-auto-fail'] = 'Concluída: {$a} (não atingiu nota de aprovação)';
 $string['completion-alt-auto-n'] = 'Não concluída: {$a}';
@@ -70,41 +69,44 @@ $string['completion-alt-auto-pass'] = 'Concluída: {$a} (atingiu nota de aprova�
 $string['completion-alt-auto-y'] = 'Concluída: {$a}';
 $string['completion-alt-auto-y-override'] = 'Concluída: {$a->modname} (marcada por {$a->overrideuser})';
 $string['completion-alt-manual-enabled'] = 'Os alunos podem assinalar a atividade como concluída: {$a}';
-$string['completion-alt-manual-n'] = 'Não concluída: \'{$a}\'. Clique para assinalar como concluída';
-$string['completion-alt-manual-n-override'] = 'Não completo: {$a- modname} (definido por {$a->overrideuser}). Selecione para marcar como completo.';
-$string['completion-alt-manual-y'] = 'Concluída: \'{$a}\'. Clique para assinalar como não concluída';
-$string['completion-alt-manual-y-override'] = 'Completo: {$a- modname} (definido por {$a->overrideuser}). Selecione para marcar como não completo.';
+$string['completion-alt-manual-n'] = 'Não concluída: {$a}. Clique para assinalar como concluída';
+$string['completion-alt-manual-n-override'] = 'Não concluído: {$a- modname} (definido por {$a->overrideuser}). Selecione para marcar como concluído.';
+$string['completion-alt-manual-y'] = 'Concluída: {$a}. Clique para assinalar como não concluída';
+$string['completion-alt-manual-y-override'] = 'Concluído: {$a- modname} (definido por {$a->overrideuser}). Selecione para marcar como não concluído.';
+$string['completion-fail'] = 'Concluída (não atingiu a nota de aprovação)';
+$string['completion-n'] = 'Por concluir';
+$string['completion-n-override'] = 'Não concluída (marcada por {$a->overrideuser})';
+$string['completion-pass'] = 'Concluída (atingiu a nota de aprovação)';
+$string['completion-y'] = 'Concluída';
+$string['completion-y-override'] = 'Concluída (marcada por {$a->overrideuser})';
 $string['completion_automatic'] = 'Dar como concluída quando se verificarem as seguintes condições';
+$string['completion_help'] = 'Se ativar esta opção, a conclusão da atividade será controlada, manualmente ou automaticamente, com base em determinadas condições. Podem ser definidas várias condições, se necessário. Neste caso, a atividade apenas será dada como concluída quando TODAS as condições se verificarem.
+
+As atividades concluídas serão assinaladas na página da disciplina com um visto junto do nome da atividade .';
+$string['completion_link'] = 'atividade/conclusão';
+$string['completion_manual'] = 'Os alunos podem assinalar a atividade como concluída';
+$string['completion_none'] = 'Não verificar conclusão da atividade';
+$string['completionactivitydefault'] = 'Usar configuração predefinida da atividade';
 $string['completiondefault'] = 'Configuração predefinida da verificação da conclusão';
 $string['completiondisabled'] = 'Desativado, não mostrar nas configurações das atividades';
 $string['completionduration'] = 'Inscrição';
 $string['completionenabled'] = 'Disponível, via configurações de conclusão e das atividades';
 $string['completionexpected'] = 'Data prevista de conclusão';
-$string['completionexpecteddesc'] = 'Conclusão prevista em {$a}';
-$string['completionexpectedfor'] = '\'{$a->instancename}\' deve estar concluída';
 $string['completionexpected_help'] = 'Esta configuração especifica a data em que a atividade deve estar concluída.';
-$string['completion-fail'] = 'Concluída (não atingiu a nota de aprovação)';
-$string['completion_help'] = 'Se ativar esta opção, a conclusão da atividade será controlada, manualmente ou automaticamente, com base em determinadas condições. Podem ser definidas várias condições, se necessário. Neste caso, a atividade apenas será dada como concluída quando TODAS as condições se verificarem.
-
-As atividades concluídas serão assinaladas na página da disciplina com um visto junto do nome da atividade .';
+$string['completionexpecteddesc'] = 'Conclusão prevista em {$a}';
+$string['completionexpectedfor'] = '{$a->instancename} deve ser concluída';
 $string['completionicons'] = 'Caixas de verificação da conclusão';
 $string['completionicons_help'] = 'Um visto junto ao nome de uma atividade serve para indicar que a atividade está concluída.
 
 Se for exibida uma caixa com o limite tracejado, o visto aparecerá automaticamente quando a atividade for concluída de acordo com as condições definidas pelo professor.
 
 Se for exibida uma caixa com o limite sólido, significa que pode clicar sobre ela para colocar o visto, indicando assim que concluiu a atividade (se mudar de ideias, clique novamente para remover o visto).';
-$string['completion_link'] = 'atividade/conclusão';
-$string['completion_manual'] = 'Os alunos podem assinalar a atividade como concluída';
 $string['completionmenuitem'] = 'Conclusão';
-$string['completion-n'] = 'Por concluir';
-$string['completion_none'] = 'Não verificar conclusão da atividade';
 $string['completionnotenabled'] = 'A conclusão não está ativa';
 $string['completionnotenabledforcourse'] = 'A conclusão não está ativa para esta disciplina';
 $string['completionnotenabledforsite'] = 'A conclusão não está ativa para este site';
-$string['completion-n-override'] = 'Não concluída (marcada por {$a->overrideuser})';
 $string['completionondate'] = 'Data';
 $string['completionondatevalue'] = 'Data em que a disciplina será marcada como concluída';
-$string['completion-pass'] = 'Concluída (atingiu a nota de aprovação)';
 $string['completionsettingslocked'] = 'Configurações de conclusão bloqueadas';
 $string['completionupdated'] = 'Atualização da conclusão da atividade <b>{$a}</b>';
 $string['completionusegrade'] = 'Requer nota';
@@ -112,8 +114,6 @@ $string['completionusegrade_desc'] = 'Os alunos têm de ter uma nota para conclu
 $string['completionusegrade_help'] = 'Se ativar esta opção, a atividade é considerada concluída quando for atribuída uma nota ao aluno. Os ícones de aprovação ou reprovação podem aparecer caso tenha sido definida uma nota mínima para aprovação.';
 $string['completionview'] = 'Requer visualização';
 $string['completionview_desc'] = 'Os alunos têm de visualizar a atividade para a concluir';
-$string['completion-y'] = 'Concluída';
-$string['completion-y-override'] = 'Concluída (marcada por {$a->overrideuser})';
 $string['configcompletiondefault'] = 'A configuração predefinida para a verificação da conclusão quando são criadas novas atividades.';
 $string['configenablecompletion'] = 'Se ativar esta opção, será possível definir as condições de conclusão das disciplinas e das atividades. Recomenda-se que defina condições de conclusão da atividade para que seja mostrada informação relevante aos utilizadores no bloco Minhas disciplinas no Painel do utilizador.';
 $string['confirmselfcompletion'] = 'Confirmar autoconclusão';

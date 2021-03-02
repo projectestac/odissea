@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'de', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,13 +41,13 @@ $string['cachedef_capabilities'] = 'Liste von Systemrechten';
 $string['cachedef_completion'] = 'Abschlussstatus von Aktivitäten';
 $string['cachedef_config'] = 'Konfigurationseinstellungen';
 $string['cachedef_contextwithinsights'] = 'Kontext mit Einschätzungen';
+$string['cachedef_course_user_dates'] = 'Die Nutzerdaten für Kurse, die auf den Modus relative Daten eingestellt sind';
 $string['cachedef_coursecat'] = 'Kurskategorien für ausgewählte Nutzer/innen';
 $string['cachedef_coursecatrecords'] = 'Datensätze der Kurskategorien';
 $string['cachedef_coursecattree'] = 'Struktur der Kurskategorien';
 $string['cachedef_coursecompletion'] = 'Kursabschlussstatus';
 $string['cachedef_coursecontacts'] = 'Liste von Kurskontakten';
 $string['cachedef_coursemodinfo'] = 'Angesammelte Informationen über Module und Kursabschnitte';
-$string['cachedef_course_user_dates'] = 'Die Nutzerdaten für Kurse, die auf den Modus relative Daten eingestellt sind';
 $string['cachedef_databasemeta'] = 'Metainformationen zur Datenbank';
 $string['cachedef_eventinvalidation'] = 'Termin löschen';
 $string['cachedef_externalbadges'] = 'Externe Badges einer bestimmten Person';
@@ -87,10 +87,10 @@ $string['component'] = 'Komponente';
 $string['confirmlockdeletion'] = 'Löschen der Sperre bestätigen';
 $string['confirmstoredeletion'] = 'Speicherlöschung bestätigen';
 $string['default_application'] = 'Standard Anwendungsspeicher';
-$string['defaultmappings'] = 'Speicherort wenn keine Definition erstellt wurde';
-$string['defaultmappings_help'] = 'Dies sind die Standardspeicherorte falls keine Orte für die verschiedenen Cache-Definitionen angelegt wurden.';
 $string['default_request'] = 'Standard-Abfrage-Speicherort';
 $string['default_session'] = 'Standard Sessionspeicher';
+$string['defaultmappings'] = 'Speicherort wenn keine Definition erstellt wurde';
+$string['defaultmappings_help'] = 'Dies sind die Standardspeicherorte falls keine Orte für die verschiedenen Cache-Definitionen angelegt wurden.';
 $string['defaultstoreactions'] = 'Standardspeicher können nicht verändert werden';
 $string['definition'] = 'Definition';
 $string['definitionsummaries'] = 'Bekannte Cachedefinitionen';
@@ -158,20 +158,20 @@ $string['sharing'] = 'Sharing';
 $string['sharing_all'] = 'Jeder';
 $string['sharing_help'] = 'Sie können festlegen wie Cache-Daten verteilt werden (Cluster Setup). Z.B. wenn mehrere Sites auf dem gleichen Datenspeicher oder getrennt verwaltet werden. Dies ist eine anspruchsvolle Einstellung. Nuitzen Sie sie nur wenn Sie die Wirkungen gut einschätzen können.';
 $string['sharing_input'] = 'Eigener Schlüssel';
+$string['sharing_siteid'] = 'Websites mit der gleichen Website-ID';
+$string['sharing_version'] = 'Websites mit der gleichen Version';
 $string['sharingrequired'] = 'Sie müssen mindestens eine Sharing-Option wählen.';
 $string['sharingselected_all'] = 'Jeder';
 $string['sharingselected_input'] = 'Eigener Schlüssel';
 $string['sharingselected_siteid'] = 'Website-ID';
 $string['sharingselected_version'] = 'Version';
-$string['sharing_siteid'] = 'Websites mit der gleichen Website-ID';
-$string['sharing_version'] = 'Websites mit der gleichen Version';
-$string['storeconfiguration'] = 'Speicherkonfiguration';
 $string['store_default_application'] = 'Standard Dateispeicher für Anwendungen';
 $string['store_default_request'] = 'Standard Static-Speicher für Abfrage-Caches';
 $string['store_default_session'] = 'Standard Session-Speicher für Session-Caches';
+$string['storeconfiguration'] = 'Speicherkonfiguration';
 $string['storename'] = 'Speichername';
-$string['storenamealreadyused'] = 'Definieren Sie einen eindeutigen Namen für diesen Speicher';
 $string['storename_help'] = 'Legen Sie den Speichernamen fest. Er wird zur Identifikation des Speichers verwandt. Der Name kann aus Groß-/Kleinbuchstaben Zahlen, \'-\',  \'_\' und Leerzeichen bestehen. Ungültige Eingaben erzeugen eine Fehlernachricht.';
+$string['storenamealreadyused'] = 'Definieren Sie einen eindeutigen Namen für diesen Speicher';
 $string['storenameinvalid'] = 'Ungültiger Speichername. Verwenden Sie nur a-z, A-Z, 0-9, -_ oder Leerzeichen.';
 $string['storenotready'] = 'Speicher nicht bereitgestellt.';
 $string['storeperformance'] = 'Cache-Speicher Leistungsbericht - {$a} einzelne Anfragen je Operation.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'it', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,13 +34,15 @@ $string['calendarend'] = '{$a} chiude';
 $string['calendarstart'] = '{$a} apre';
 $string['cannotsubmit'] = 'Si è verificato un errore durante l\'invio della scelta. Per favore riprova.';
 $string['choice'] = 'Scelta';
-$string['choiceactivityname'] = 'Scelta: {$a}';
 $string['choice:addinstance'] = 'Aggiungere scelta';
 $string['choice:choose'] = 'Salvare una scelta';
-$string['choiceclose'] = 'Chiusura';
-$string['choicecloseson'] = 'La scelta si chiude il {$a}';
 $string['choice:deleteresponses'] = 'Modificare e rimuovere le scelte';
 $string['choice:downloadresponses'] = 'Scaricare le scelte';
+$string['choice:readresponses'] = 'Visualizzare le scelte';
+$string['choice:view'] = 'Visualizzare attività scelta';
+$string['choiceactivityname'] = 'Scelta: {$a}';
+$string['choiceclose'] = 'Chiusura';
+$string['choicecloseson'] = 'La scelta si chiude il {$a}';
 $string['choicefull'] = 'Una o piu scelte da te operate sono già al completo. La riposta non è stata salvata, devi effettuare una nuova selezione.';
 $string['choicename'] = 'Titolo della scelta';
 $string['choiceopen'] = 'Apertura';
@@ -48,10 +50,8 @@ $string['choiceoptions'] = 'Opzioni scelta';
 $string['choiceoptions_help'] = 'Le opzioni sono le proposte tra cui gli studenti potranno fare la loro scelta.
 
 Puoi aggiungere un qualsiasi numero di scelte. Per non visualizzare una proposta è sufficiente lasciarla vuota. Se hai bisogno di più di 8 proposte, fai click sul pulsante "Aggiungi 3 campi al form".';
-$string['choice:readresponses'] = 'Visualizzare le scelte';
 $string['choicesaved'] = 'la tua scelta è stata salvata';
 $string['choicetext'] = 'Testo della domanda';
-$string['choice:view'] = 'Visualizzare attività scelta';
 $string['chooseaction'] = 'Scegli un\'azione...';
 $string['chooseoption'] = 'Scegli: {$a}';
 $string['closebeforeopen'] = 'Hai specificato una data di chiusura successiva alla data di apertura.';
@@ -72,13 +72,13 @@ $string['full'] = '(Completo)';
 $string['havetologin'] = 'Devi autenticarti prima di poter effettuare la tua scelta';
 $string['includeinactive'] = 'Includi risposte degli utenti non attivi e sospesi';
 $string['indicator:cognitivedepth'] = 'Scelta cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Scelta.';
 $string['indicator:cognitivedepthdef'] = 'Scelta cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Scelta (Livelli: Nessuna visualizzazione, Visualizzazione, Invio, Visualizzazione feedback)';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Scelta.';
 $string['indicator:socialbreadth'] = 'Scelta sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Scelta.';
 $string['indicator:socialbreadthdef'] = 'Scelta sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Scelta (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Scelta.';
 $string['limit'] = 'Limite';
 $string['limitanswers'] = 'Limita il numero di scelte';
 $string['limitanswers_help'] = 'Limita il numero di partecipanti che possono operare la medesima scelta.
@@ -115,7 +115,7 @@ $string['pluginadministration'] = 'Gestione Scelta';
 $string['pluginname'] = 'Scelta';
 $string['previewonly'] = 'Questa è un\'anteprima delle scelte disponibili. Potrai inviare la tua scelta solo dal {$a}.';
 $string['privacy'] = 'Privacy dei risultati';
-$string['privacy:metadata:choice_answers'] = 'Informazioni sulla/e scelte effettuate dall\'utente in una data attività scelta';
+$string['privacy:metadata:choice_answers'] = 'Informazioni sulle risposte dell\'utente in un\'attività a scelta';
 $string['privacy:metadata:choice_answers:choiceid'] = 'ID dell\'attività a scelta';
 $string['privacy:metadata:choice_answers:optionid'] = 'L\'ID della scelta effettuata dall\'utente.';
 $string['privacy:metadata:choice_answers:timemodified'] = 'Data e ora di modica della scelta dell\'utente';

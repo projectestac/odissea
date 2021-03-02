@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_cohort', language 'ar', version '3.8'.
  *
- * @package   enrol_cohort
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_cohort
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,7 +33,7 @@ $string['creategroup'] = 'أنشئ مجموعة جديدة';
 $string['defaultgroupnametext'] = 'الفوج {$a->name} {$a->increment}';
 $string['enrolcohortsynctask'] = 'مهمة مزامنة الانضمام إلى الفوج';
 $string['instanceexists'] = 'الفوج سبقت مزامنته مع الدور المحدد';
-$string['pluginname'] = 'مزامنة الفوج';
-$string['pluginname_desc'] = 'يقوم ملحق الانضمام إلى الفوج بمزامنة أعضاء الفوج مع الانضمامات إلى المساقات.';
+$string['pluginname'] = 'مزامنة فوج';
+$string['pluginname_desc'] = 'يقوم ملحق الانضمام إلى الفوج بمزامنة أعضاء الفوج مع الانضمامات إلى المقررات الدراسية.';
 $string['privacy:metadata:core_group'] = 'يمكن لملحق الانضمام إلى الفوج إنشاء مجموعة جديدة أو استعمال مجموعة موجودة لإضافة كل أعضاء الفوج.';
 $string['status'] = 'فَعَّال';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cachestore_memcached', language 'de', version '3.8'.
  *
- * @package   cachestore_memcached
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_memcached
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['bufferwrites'] = 'Buffer schreiben';
 $string['bufferwrites_help'] = '(De-)Aktiviert gepufferte I/O. Das Aktivieren verursacht Speicherkommandos zum \'puffern\', statt zum senden. Jede Aktio, die Daten abfragt, löst Puffer statt Sendeprozesse zur externen Verbindung aus. Das Schließen oder Beenden der Verbindung verursacht ebenfalls ein Puffern der Daten zur Übertragung zur externen Verbindung.';
 $string['clustered'] = 'Clusterserver aktivieren';
-$string['clusteredheader'] = 'Server aufteilen';
 $string['clustered_help'] = 'Die Funktion wird genutzt, um einmal zu lesen und mehrere Funktionen auszuführen.
 
 Die Idee hinter dem Konzept liegt darin, einen verbesserten Store für Load-balanced Konfigurationen zur Verfügung zu stellen.  Der Store holt Daten von einem Server (meist localhost) setzt sie aber für mehrere (alle server im load-balanced Pool). Für Caches mit sehr hohen read-to-set ratios spart dies Last im Netzwerk deutlich.
 
 Wenn die Einstellung aktiviert wird, wird der oben aufgeführte Server zum Abholen der Daten verwandt.';
+$string['clusteredheader'] = 'Server aufteilen';
 $string['hash'] = 'Hash-Verfahren';
 $string['hash_crc'] = 'CRC';
 $string['hash_default'] = 'Standard (einzeln)';
@@ -62,7 +62,6 @@ $string['serialiser_igbinary'] = 'Serialiser igbinary';
 $string['serialiser_json'] = 'Serialiser JSON';
 $string['serialiser_php'] = 'Standard-PHP-Serialiser';
 $string['servers'] = 'Server';
-$string['serversclusterinvalid'] = 'Wenn das Clustering aktiviert wird, ist die Angabe genau eines Servers notwendig.';
 $string['servers_help'] = 'Diese Option legt die Server für den Memcached Adapter fest.
 Verwenden Sie für jeden Server eine neue Zeile. Tragen Sie die Serveradresse, den Port (optonal) und die Gewichtung (optonal) ein.  Wenn kein Port angegeben ist, wird als Standard Port 11211 verwendet.
 
@@ -74,6 +73,7 @@ servername:port:weight
 </pre>
 
 Wenn unten *Cluster-Server aktivieren* ausgewählt ist, darf nur ein Server angegeben sein. Normalerweise ist das ein Name, der sich auf die lokale Maschine bezieht, z.B. 127.0.0.1 oder localhost.';
+$string['serversclusterinvalid'] = 'Wenn das Clustering aktiviert wird, ist die Angabe genau eines Servers notwendig.';
 $string['sessionhandlerconflict'] = 'Warnung: Eine Memcached Instanz ({$a}) ist so konfiguriert, dass sie den gleichen Memcached Server wie Sessons verwendet. Das Löschen aller Caches wird gleichzeitig auch alle Sessions löschen.';
 $string['setservers'] = 'Server auswählen';
 $string['setservers_help'] = 'In der Liste sind die zu aktualisierenden Server aufgeführt, wenn Daten im Cache verändert werden, u.z. mit vollständigem Namen für jeden Server im Pool.

@@ -127,7 +127,7 @@ if (empty($user)) {
                 $row[] = '<input type="checkbox" name="attemptid[]" value="'. $rcontentuser->userid . ':' . $rcontentuser->attempt . '" />';
             }
             $usertmp = $DB->get_record('user', array('id' => $rcontentuser->userid));
-            $row[] = $OUTPUT->user_picture($usertmp, array('courseid' => $course->id));
+            $row[] = is_object($usertmp) ? $OUTPUT->user_picture($usertmp, array('courseid' => $course->id)) : '';
             $row[] = '<a href="'.$CFG->wwwroot.'/user/view.php?id='.$rcontentuser->userid.'&course='.$course->id.'">'.
                      fullname($userdata).'</a>';
 

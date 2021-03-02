@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'nl', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,7 +40,7 @@ $string['check_crawlers_info'] = 'Zoekrobots mogen binnen als gasten';
 $string['check_crawlers_name'] = 'Open voor Google';
 $string['check_crawlers_ok'] = 'Gast-toegang voor zoekrobots uitgeschakeld';
 $string['check_defaultuserrole_details'] = '<p>Alle aangemelde gebruikers krijgen de mogelijkheden van de standaard rol. Zorg er voor dat er geen gevaarlijke mogelijkheden toegelaten zijn in deze rol.</p>
-<p>De enige ondersteunde rol voor de standaard gebruiker is de rol: <em>geauthenticeerde gebruiker</em>. De bekijk cursusmogelijkheid kan beter niet ingeschakeld zijn.</p>';
+<p>De enige ondersteunde verouderde rol voor de standaard gebruiker is de rol: <em>geauthenticeerde gebruiker</em>. De bekijk cursusmogelijkheid kan beter niet ingeschakeld zijn.</p>';
 $string['check_defaultuserrole_error'] = 'Fout gedefinieerde standaard rol "{$a}" gedetecteerd!';
 $string['check_defaultuserrole_name'] = 'Standaard rol voor alle gebruikers';
 $string['check_defaultuserrole_notset'] = 'Standaardrol niet ingeschakeld';
@@ -59,13 +59,13 @@ $string['check_embed_error'] = 'Onbeperkt embedden van objecten ingeschakeld - d
 $string['check_embed_name'] = 'EMBED en OBJECT toelaten';
 $string['check_embed_ok'] = 'Onbeperkt embedden van objecten is niet toegelaten';
 $string['check_frontpagerole_details'] = '<p>Alle geregistreerde gebruikers krijgen de standaardrol voor de startpagina voor activiteiten op die pagina.</p>
-<p>Er wordt aangeraden een speciale rol hiervoor te maken en de standaard meegeleverde rollen niet te gebruiken.</p>';
+<p>Er wordt aangeraden een speciale rol hiervoor te maken en de verouderde  standaardrollen niet te gebruiken.</p>';
 $string['check_frontpagerole_error'] = 'Fout gedefinieerde starpaginarol "{$a}" gedetecteerd!';
 $string['check_frontpagerole_name'] = 'Startpaginarol';
 $string['check_frontpagerole_notset'] = 'Startpaginarol niet ingeschakeld';
 $string['check_frontpagerole_ok'] = 'Startpaginarol roldefinitie OK';
 $string['check_guestrole_details'] = '<p>De gastrol wordt gebruikt voor gasten, niet aangemelde gebruikers en tijdelijke gasttoegang voor cursussen. Zorg er voor dat geen gevaarlijke mogelijkheden toegelaten zijn voor deze rol.</p>
-<p>De enige ondersteunde rol voor dit type gebruiker is <em>Gast</em>.</p>';
+<p>De enige ondersteunde verouderde rol voor dit type gebruiker is <em>Gast</em>.</p>';
 $string['check_guestrole_error'] = 'Fout geconfigureerde gastrol "{$a}" gedetecteerd!';
 $string['check_guestrole_name'] = 'Gast rol';
 $string['check_guestrole_notset'] = 'Gast rol niet ingeschakeld';
@@ -100,10 +100,10 @@ $string['check_riskadmin_name'] = 'Beheerders';
 $string['check_riskadmin_ok'] = '{$a} serverbeheerders gevonden';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) roltoewijzing nakijken</a>';
 $string['check_riskadmin_warning'] = '{$a->admincount} beheerdersaccounts gevonden en {$a->unsupcount} niet-ondersteunde beheerdersrollen toegewezen.';
-$string['check_riskbackup_detailsok'] = 'Er is geen enkele rol die toelaat om gebruikersgegevens in back-ups te zetten. Merk op dat beheerders met de "doe alles"-mogelijkheid dit wel nog kunnen.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Dit instellen geeft gebruikers het recht om gebruikersgegevens in back-ups te zetten. Laat dit alleen toe als het echt nodig is.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Volgende systeemrollen kunnen gebruikersgegevens in de back-ups zetten. Laat dit alleen toe als het echt nodig is.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<b>Door de bovenstaande roloverschrijvingen kunnen volgende gebruikers back-ups maken met daaring privégegevens van alle gebruikers in hun cursus. Zorg ervoor dat ze te vertrouwen zijn en beschermd door sterke wachtwoorden:<p> {$a}';
+$string['check_riskbackup_detailsok'] = 'Er is geen enkele rol die toelaat om gebruikersgegevens in back-ups te zetten. Merk op dat beheerders met de "doe alles"-mogelijkheid dit wel nog kunnen.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} in {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Back-up van gebruikersgegevens';

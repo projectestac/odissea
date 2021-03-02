@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'data', language 'en', version '3.8'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -208,15 +208,15 @@ $string['includetags'] = 'Include tags';
 $string['includetime'] = 'Include time added/modified';
 $string['includeuserdetails'] = 'Include user details';
 $string['indicator:cognitivedepth'] = 'Database cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Database activity.';
 $string['indicator:cognitivedepthdef'] = 'Database cognitive';
 $string['indicator:cognitivedepthdef_help'] = 'The participant has reached this percentage of the cognitive engagement offered by the Database activities during this analysis interval (Levels = No view, View, Submit)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
-$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Database activity.';
 $string['indicator:socialbreadth'] = 'Database social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Database activity.';
 $string['indicator:socialbreadthdef'] = 'Database social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the Database activities during this analysis interval (Levels = No participation, Participant alone)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Database activity.';
 $string['insufficiententries'] = 'more entries needed to view this database';
 $string['intro'] = 'Description';
 $string['invalidaccess'] = 'This page was not accessed correctly';
@@ -318,13 +318,13 @@ $string['privacy:metadata:data_content:content2'] = 'Additional content 2';
 $string['privacy:metadata:data_content:content3'] = 'Additional content 3';
 $string['privacy:metadata:data_content:content4'] = 'Additional content 4';
 $string['privacy:metadata:data_content:fieldid'] = 'Field definition ID';
-$string['privacy:metadata:datafieldnpluginsummary'] = 'Fields for database activity module';
 $string['privacy:metadata:data_records'] = 'Represent records in database acitivity module';
 $string['privacy:metadata:data_records:approved'] = 'Approval status';
 $string['privacy:metadata:data_records:groupid'] = 'Group';
 $string['privacy:metadata:data_records:timecreated'] = 'Time when record was created';
 $string['privacy:metadata:data_records:timemodified'] = 'Time when record was last modified';
 $string['privacy:metadata:data_records:userid'] = 'User who created the record';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Fields for database activity module';
 $string['privacy:metadata:filepurpose'] = 'File attached to the database record';
 $string['privacy:metadata:ratingpurpose'] = 'Ratings on database records';
 $string['privacy:metadata:tagpurpose'] = 'Tags on database records';

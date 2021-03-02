@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'de', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,7 +40,7 @@ $string['allowcomments'] = 'Kommentare';
 $string['allowcomments_help'] = 'Wenn diese Option aktiviert ist, dürfen zu den Glossareinträgen Kommentare abgegeben werden.';
 $string['allowduplicatedentries'] = 'Mehrfacheinträge';
 $string['allowduplicatedentries_help'] = 'Wenn diese Option aktiviert ist, sind im Glossar mehrere Einträge zum selben Begriff erlaubt.';
-$string['allowprintview'] = 'Druckfunktion';
+$string['allowprintview'] = 'Druckansicht erlauben';
 $string['allowprintview_help'] = 'Wenn diese Option aktiviert ist, wird allen Personen ein Link zu einer druckfreundlichen Version des Glossars angezeigt. Trainer/innen sehen diesen Link immer.';
 $string['andmorenewentries'] = 'und {$a} weitere neue Einträge.';
 $string['answer'] = 'Antwort';
@@ -79,7 +79,7 @@ $string['cnfdefaultmode'] = 'Standardframe für Glossar wählen';
 $string['cnffullmatch'] = 'Wenn diese Option aktiviert ist, wird ein Wort automatisch verlinkt, wenn es vollständig mit einem Glossareintrag übereinstimmt.';
 $string['cnflinkentry'] = 'Wenn diese Option aktiviert ist, wird ein neuer Eintrag automatisch verlinkt.';
 $string['cnflinkglossaries'] = 'Wenn diese Option aktiviert ist, werden Glossare automatisch verlinkt.';
-$string['cnfrelatedview'] = 'Wählen Sie das Anzeigeformat für die automatische Verlinkung und die Eintragsanzeige';
+$string['cnfrelatedview'] = 'Wählen Sie das Anzeigeformat für die automatische Verlinkung und die Eintragsdarstellung.';
 $string['cnfshowgroup'] = 'Legen Sie fest, ob zwischen einzelnen Abschnitten (z.B. Buchstaben) eine visuelle Trennung erfolgen soll.';
 $string['cnfsortkey'] = 'Wählen Sie ein Sortierkriterium.';
 $string['cnfsortorder'] = 'Wählen Sie die Sortierfolge.';
@@ -126,14 +126,6 @@ $string['destination_help'] = 'Beim Import können Sie wählen, wo importierte G
 ';
 $string['disapprove'] = 'Freigegebenen Eintrag sperren';
 $string['displayformat'] = 'Anzeigeformat';
-$string['displayformatcontinuous'] = 'Wörterbuch (ohne Synonyme)';
-$string['displayformatdefault'] = 'Standard: wie das Anzeigeformat';
-$string['displayformatdictionary'] = 'Wörterbuch (mit Synonymen)';
-$string['displayformatencyclopedia'] = 'Enzyklopädie';
-$string['displayformatentrylist'] = 'Liste';
-$string['displayformatfaq'] = 'Häufig gestellte Fragen';
-$string['displayformatfullwithauthor'] = 'Vollständig mit Autor/in';
-$string['displayformatfullwithoutauthor'] = 'Vollständig ohne Autor/in';
 $string['displayformat_help'] = 'Für ein Glossar können 7 Anzeigeformate gewählt werden:
 
 * Wörterbuch (mit Synonymen) - Einträge werden in einem Absatz angezeigt. Angabe von synonymen Begriffen. Ohne Autor/in. Anhänge werden als Links angezeigt.
@@ -143,6 +135,14 @@ $string['displayformat_help'] = 'Für ein Glossar können 7 Anzeigeformate gewä
 * Enzyklopädie - Einträge werden forumsähnlich mit Autor/in dargestellt. Bilder sind in den Text eingebettet.
 * Liste - Alphabetische Liste ohne Erläuterung. Einträge werden als Links angezeigt, die zur zugehörigen Erläuterung führen.
 * FAQ (Frequently Asked Questions) - Die Worte \'Frage\' und \'Antwort\' werden automatisch eingefügt.';
+$string['displayformatcontinuous'] = 'Wörterbuch (ohne Synonyme)';
+$string['displayformatdefault'] = 'Standard: wie das Anzeigeformat';
+$string['displayformatdictionary'] = 'Wörterbuch (mit Synonymen)';
+$string['displayformatencyclopedia'] = 'Enzyklopädie';
+$string['displayformatentrylist'] = 'Liste';
+$string['displayformatfaq'] = 'Häufig gestellte Fragen';
+$string['displayformatfullwithauthor'] = 'Vollständig mit Autor/in';
+$string['displayformatfullwithoutauthor'] = 'Vollständig ohne Autor/in';
 $string['displayformats'] = 'Anzeigeformat';
 $string['displayformatssetup'] = 'Einstellungen zum Anzeigeformat';
 $string['duplicatecategory'] = 'Kategorie duplizieren';
@@ -214,18 +214,18 @@ $string['glossary:export'] = 'Einträge exportieren';
 $string['glossary:exportentry'] = 'Einzeleintrag exportieren';
 $string['glossary:exportownentry'] = 'Ihren Einzeleintrag exportieren';
 $string['glossary:import'] = 'Einträge importieren';
-$string['glossaryleveldefaultsettings'] = 'Grundeinstellungen für Glossare';
 $string['glossary:managecategories'] = 'Kategorien verwalten';
 $string['glossary:managecomments'] = 'Kommentare verwalten';
 $string['glossary:manageentries'] = 'Einträge verwalten';
 $string['glossary:rate'] = 'Einträge bewerten';
-$string['glossarytype'] = 'Glossartyp';
-$string['glossarytype_help'] = 'Ein Hauptglossar ist ein Glossar, in das Einträge aus Sekundärglossaren importiert werden können. In einem Kurs kann nur ein Hauptglossar vorhanden sein. Wenn der Import nicht genutzt wird, können alle Glossare als Sekundärglossare angelegt sein.';
 $string['glossary:view'] = 'Glossar ansehen';
 $string['glossary:viewallratings'] = 'Alle Teilwertungen sehen';
 $string['glossary:viewanyrating'] = 'Alle Gesamtwertungen sehen';
 $string['glossary:viewrating'] = 'Eigene Gesamtwertung sehen';
 $string['glossary:write'] = 'Neue Einträge erstellen';
+$string['glossaryleveldefaultsettings'] = 'Grundeinstellungen für Glossare';
+$string['glossarytype'] = 'Glossartyp';
+$string['glossarytype_help'] = 'Ein Hauptglossar ist ein Glossar, in das Einträge aus Sekundärglossaren importiert werden können. In einem Kurs kann nur ein Hauptglossar vorhanden sein. Wenn der Import nicht genutzt wird, können alle Glossare als Sekundärglossare angelegt sein.';
 $string['guestnoedit'] = 'Gäste dürfen das Glossar nicht bearbeiten.';
 $string['importcategories'] = 'Kategorien importieren';
 $string['importedcategories'] = 'Importierte Kategorien';
@@ -234,13 +234,13 @@ $string['importentries'] = 'Einträge importieren';
 $string['importentriesfromxml'] = 'Einträge aus XML-Datei importieren';
 $string['includegroupbreaks'] = 'Gruppentrennung einbeziehen';
 $string['indicator:cognitivedepth'] = 'Glossar kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Glossaraktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Glossar kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Glossaraktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Glossaraktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Glossar sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Glossaraktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Glossar sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Glossaraktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Glossaraktivität erreicht hat.';
 $string['isglobal'] = 'Kursübergreifendes Glossar 
 ';
 $string['isglobal_help'] = 'Ein kursübergreifendes Glossar enthält Einträge, die im gesamten Moodle verlinkt werden. Ist ein Glossar nicht global, werden die Einträge nur lokal im Kurs verlinkt. Ausschließlich Administrator/innen können Glossare als kursübergreifend definieren.';

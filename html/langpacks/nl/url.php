@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'url', language 'nl', version '3.8'.
  *
- * @package   url
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     url
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,6 @@ $string['contentheader'] = 'Inhoud';
 $string['createurl'] = 'Maak een URL';
 $string['displayoptions'] = 'Beschikbare schermopties';
 $string['displayselect'] = 'Toon';
-$string['displayselectexplain'] = 'Toon schermtype. Jammer genoeg zijn niet zlle types geschikt voor alle URL\'s.';
 $string['displayselect_help'] = 'Deze instelling, samen met het bestandstype van de URL en het toelaten door de browser van embedden, bepaalt hoe de URL wordt weergegeven. Mogelijke opties zijn:
 
 * Automatisch - De beste weergave van de URL wordt automatisch gekozen
@@ -44,16 +43,17 @@ $string['displayselect_help'] = 'Deze instelling, samen met het bestandstype van
 * In pop-up - De URL wordt weergegeven in een nieuw browservenster zonder menu\'s of een adressenbalk
 * In frame - De URL wordt weergegeven in een frame onder de navigatiebalk en de URL beschrijving.
 * Nieuw venster - De URL wordt weergegeven in een nieuw browservenster met menu\'s en een adresbalk';
+$string['displayselectexplain'] = 'Toon schermtype. Jammer genoeg zijn niet zlle types geschikt voor alle URL\'s.';
 $string['externalurl'] = 'Externe URL';
 $string['framesize'] = 'Frame hoogte';
 $string['indicator:cognitivedepth'] = 'URL cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een URL bron.';
 $string['indicator:cognitivedepthdef'] = 'URL cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid bereikt die door de URL-bronnen wordt aangeboden tijdens dit analyse-interval (Niveaus = Geen weergave, Weergave)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een URL bron.';
 $string['indicator:socialbreadth'] = 'URL sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een URL bron.';
 $string['indicator:socialbreadthdef'] = 'URL sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid bereikt die wordt aangeboden door de URL-bronnen tijdens dit analyse-interval (Niveaus = Geen deelname, alleen deelnemer)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een URL bron.';
 $string['invalidstoredurl'] = 'Kan deze bron niet tonen, URL is niet geldig.';
 $string['invalidurl'] = 'Externe URL is niet geldig';
 $string['modulename'] = 'URL';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'pt', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,17 +57,17 @@ $string['deletegrouping'] = 'Apagar agrupamento';
 $string['deletegroupingconfirm'] = 'Tem a certeza de que pretende apagar o agrupamento \'{$a}\'? (Os grupos contidos no agrupamento não são apagados)';
 $string['deletegroupsconfirm'] = 'Tem a certeza de que pretende excluir os seguintes grupos?';
 $string['deleteselectedgroup'] = 'Apagar grupos selecionados';
-$string['editgroupingsettings'] = 'Editar configurações do agrupamento';
-$string['editgroupsettings'] = 'Editar configurações do grupo';
+$string['editgroupingsettings'] = 'Editar definições do agrupamento';
+$string['editgroupsettings'] = 'Editar definições do grupo';
 $string['editusersgroupsa'] = 'Editar grupos de "{$a}"';
 $string['enablemessaging'] = 'Ativar mensagens de grupo';
 $string['enablemessaging_help'] = 'Se ativar esta opção, os membros do grupo podem enviar mensagens para os outros membros do grupo através da caixa de mensagens.';
 $string['encoding'] = 'A codificar';
 $string['enrolmentkey'] = 'Senha de inscrição';
-$string['enrolmentkeyalreadyinuse'] = 'Esta chave de inscrição já está a ser usada por outro grupo.';
 $string['enrolmentkey_help'] = 'Uma senha de inscrição permite que o acesso à disciplina seja limitado apenas para aqueles que conhecem a senha. Se especificar a senha de inscrição de um grupo, essa senha não permitirá apenas o acesso do utilizador à disciplina, mas também a sua inscrição automática como membro do grupo.
 
 Nota: As senhas de inscrição para grupos devem ser ativadas nas configurações de autoinscrição e também deve ser especificada uma senha de inscrição para a disciplina.';
+$string['enrolmentkeyalreadyinuse'] = 'Esta chave de inscrição já está a ser usada por outro grupo.';
 $string['erroraddremoveuser'] = 'Ocorreu um erro ao adicionar/remover o utilizador {$a} de um grupo';
 $string['erroreditgroup'] = 'Erro ao criar/atualizar grupo {$a}';
 $string['erroreditgrouping'] = 'Erro ao criar/atualizar agrupamento {$a}';
@@ -97,9 +97,9 @@ $string['groupinfo'] = 'Informação sobre o grupo selecionado';
 $string['groupinfomembers'] = 'Informação sobre os membros selecionados';
 $string['groupinfopeople'] = 'Informação sobre as pessoas selecionadas';
 $string['grouping'] = 'Agrupamento';
+$string['grouping_help'] = 'Um agrupamento é uma compilação de grupos dentro de uma disciplina. Se um grupo é selecionado, os alunos atribuídos a grupos dentro do agrupamento poderão trabalhar em conjunto.';
 $string['groupingaddedsuccesfully'] = 'O agrupamento \'{$a}\' foi adicionado com sucesso';
 $string['groupingdescription'] = 'Descrição do agrupamento';
-$string['grouping_help'] = 'Um agrupamento é uma compilação de grupos dentro de uma disciplina. Se um grupo é selecionado, os alunos atribuídos a grupos dentro do agrupamento poderão trabalhar em conjunto.';
 $string['groupingname'] = 'Nome do agrupamento';
 $string['groupingnameexists'] = 'Já existe um agrupamento com o nome \'{$a}\' nesta disciplina; escolha outro nome.';
 $string['groupings'] = 'Agrupamentos';
@@ -112,8 +112,6 @@ $string['groupmembers'] = 'Membros do grupo';
 $string['groupmemberssee'] = 'Ver membros do grupo';
 $string['groupmembersselected'] = 'Membros do grupo selecionado';
 $string['groupmode'] = 'Modo de grupo';
-$string['groupmodeforce'] = 'Forçar modo de grupo';
-$string['groupmodeforce_help'] = 'Se esta configuração tiver o valor "Sim", então o modo de grupo é forçado ao nível da disciplina e o modo de grupo definido no âmbito das atividades será ignorado.';
 $string['groupmode_help'] = 'A definição do modo de grupo pode ser uma das três seguintes:
 
 * Sem grupos
@@ -121,6 +119,8 @@ $string['groupmode_help'] = 'A definição do modo de grupo pode ser uma das tr�
 * Grupos visíveis - cada grupo trabalha apenas dentro do seu próprio grupo, mas pode ver os outros grupos.
 
 O modo de grupo definido ao nível da disciplina será o modo aplicado automaticamente a todas as atividades nessa disciplina. Contudo, cada atividade poderá também ter a sua própria definição de modo de grupo. No entanto, se o modo de grupo for forçado ao nível da disciplina, o modo de grupo definido no âmbito das atividades será ignorado.';
+$string['groupmodeforce'] = 'Forçar modo de grupo';
+$string['groupmodeforce_help'] = 'Se esta configuração tiver o valor "Sim", então o modo de grupo é forçado ao nível da disciplina e o modo de grupo definido no âmbito das atividades será ignorado.';
 $string['groupmy'] = 'Meu grupo';
 $string['groupname'] = 'Nome do grupo';
 $string['groupnameexists'] = 'O nome de grupo \'{$a}\' já existe nesta disciplina, escolha outro.';
@@ -168,8 +168,8 @@ $string['nogroupsassigned'] = 'Não foram atribuídos grupos';
 $string['nopermissionforcreation'] = 'Não é possível criar o grupo"{$a}", porque não tem as permissões necessárias';
 $string['nosmallgroups'] = 'Apagar último pequeno grupo';
 $string['notingroup'] = 'Ignorar utilizadores em grupos';
-$string['notingrouping'] = '[Não pertence a nenhum agrupamento]';
-$string['notingrouplist'] = '[Não pertence a nenhum grupo]';
+$string['notingrouping'] = 'Não pertence a nenhum agrupamento';
+$string['notingrouplist'] = 'Não pertence a nenhum grupo';
 $string['nousersinrole'] = 'Não existem utilizadores adequados no papel selecionado';
 $string['number'] = 'Número de grupos/membros por grupo';
 $string['numgroups'] = 'Número de grupos';

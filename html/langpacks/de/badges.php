@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'de', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['activatesuccess'] = 'Zugriff auf die Badges wurde erfolgreich aktiviert
 $string['addalignment'] = 'Externen Skill oder Standard hinzufügen';
 $string['addbackpack'] = 'Backpack hinzufügen';
 $string['addbadge'] = 'Badges hinzufügen';
-$string['addbadgecriteria'] = 'Kriterium hinzufügen';
 $string['addbadge_help'] = 'Wählen Sie alle Badges aus, die als Voraussetzung für dieses Badge hinzugefügt werden sollen. (Mehrfachauswahl möglich)';
+$string['addbadgecriteria'] = 'Kriterium hinzufügen';
 $string['addcohort'] = 'Globale Gruppe hinzufügen';
 $string['addcohort_help'] = 'Wählen Sie alle globalen Gruppen aus, die als Voraussetzung für dieses Badge hinzugefügt werden sollen. (Mehrfachauswahl möglich)';
 $string['addcompetency'] = 'Kompetenz hinzufügen';
@@ -102,9 +102,9 @@ $string['backpackbadgessettings'] = 'Backpack-Einstellungen ändern';
 $string['backpackbadgessummary'] = 'Sie haben {$a->totalbadges} Badge(s) aus {$a->totalcollections} Collection(s) angezeigt.';
 $string['backpackcannotsendverification'] = 'Eine Bestätigungsmitteilung konnte nicht gesendet werden.';
 $string['backpackconnection'] = 'Verbindung zum Backpack';
+$string['backpackconnection_help'] = 'Wenn Sie eine Verbindung zu einem Backpack herstellen, können Sie Ihre Badges von dieser Website freigeben. Außerdem können sie öffentliche Badge Collections aus Ihrem Backpack auf Ihrer Profilseite anzeigen.';
 $string['backpackconnectioncancelattempt'] = 'Verwenden Sie zum Verbinden eine andere E-Mail-Adresse.';
 $string['backpackconnectionconnect'] = 'Zum Backpack verbinden';
-$string['backpackconnection_help'] = 'Wenn Sie eine Verbindung zu einem Backpack herstellen, können Sie Ihre Badges von dieser Website freigeben. Außerdem können sie öffentliche Badge Collections aus Ihrem Backpack auf Ihrer Profilseite anzeigen.';
 $string['backpackconnectionnottested'] = 'Die Verbindung kann für dieses Backpack nicht getestet werden, weil nur Backpacks für Open-Badges 2.0 unterstützt wird.';
 $string['backpackconnectionok'] = 'Backpack-Verbindung erfolgreich hergestellt';
 $string['backpackconnectionresendemail'] = 'Bestätigungsmitteilung erneut senden';
@@ -208,13 +208,11 @@ $string['criteria_5_help'] = 'Dieses Kriterium ermöglicht es, dass der Badge an
 $string['criteria_6'] = 'Vervollständigung des Nutzerprofils';
 $string['criteria_6_help'] = 'Dieses Kriterium ermöglicht es, die Verleihung eines Badge daran zu knüpfen, dass bestimmte Profilfelder im Nutzerprofil vervollständigt wurden. Das können Standardprofilfelder oder selbst definierte Profilfelder sein.';
 $string['criteria_7'] = 'Verliehene Badges';
-$string['criteria_7_help'] = 'Der Badge kann nur an Personen verliehen werden, die vorher bereits andere Badges erworben haben.';
+$string['criteria_7_help'] = 'Der Badge kann nur an Personen verliehen werden, die bereits andere Badges erworben haben.';
 $string['criteria_8'] = 'Mitgliedschaft in globaler Gruppe';
 $string['criteria_8_help'] = 'Der Badge kann nur an Mitglieder in bestimmten globalen Gruppen verliehen werden.';
 $string['criteria_9'] = 'Kompetenzen';
 $string['criteria_9_help'] = 'Ermöglicht die Vergabe eines Badges an Nutzer/innen basierend auf den von ihnen abgeschlossenen Kompetenzen.';
-$string['criteriacreated'] = 'Kriterium für Badge angelegt';
-$string['criteriadeleted'] = 'Kriterium für Badge gelöscht';
 $string['criteria_descr'] = 'Nutzer/innen erhalten den Badge, wenn sie folgende Bedingung erfüllen:';
 $string['criteria_descr_0'] = 'Nutzer/innen erhalten den Badge, wenn sie <strong>{$a}</strong> folgenden Bedingungen erfüllen:';
 $string['criteria_descr_1'] = '<strong>{$a}</strong> folgenden Aktivitäten sind abgeschlossen:';
@@ -252,6 +250,8 @@ $string['criteria_descr_single_short6'] = 'Abschließen:';
 $string['criteria_descr_single_short7'] = 'Abschließen:';
 $string['criteria_descr_single_short8'] = 'Mitglied in:';
 $string['criteria_descr_single_short9'] = 'Abgeschlossen:';
+$string['criteriacreated'] = 'Kriterium für Badge angelegt';
+$string['criteriadeleted'] = 'Kriterium für Badge gelöscht';
 $string['criteriasummary'] = 'Zusammenfassung der Kriterien';
 $string['criteriaupdated'] = 'Kriterium für Badge aktualisiert';
 $string['criterror'] = 'Parameterprobleme';
@@ -266,7 +266,7 @@ $string['deactivatesuccess'] = 'Der Zugriff auf den Badge wurde erfolgreich deak
 $string['defaultissuercontact'] = 'E-Mail-Adresse des Badge-Verleihers';
 $string['defaultissuercontact_desc'] = 'Tragen Sie hier eine E-Mail-Adresse ein, die mit dem Badge-Verleiher verknüpft ist. Für ein Open-Badge-Backpack 2.0 dient diese der Authentifizierung, wenn Badges in ein Backpack veröffentlicht werden.';
 $string['defaultissuername'] = 'Name des Badge-Verleihers';
-$string['defaultissuername_desc'] = 'Tragen Sie hier einen Namen ein, der Verleiher von Badges auf der Website verwendet wird (z.B. den Namen der verleihenden Institution).';
+$string['defaultissuername_desc'] = 'Tragen Sie hier einen Namen ein, der standardmäßig als Verleiher von Badges auf der Website verwendet wird (z.B. den Namen der verleihenden Institution).';
 $string['defaultissuerpassword'] = 'Kennwort des Badge-Verleihers';
 $string['defaultissuerpassword_help'] = 'Auf der Backpack-Website ist ein Konto mit der E-Mail-Adresse erforderlich, die in der Einstellung für die E-Mail-Adresse des Badge-Verleihers unter "Website-Administration / Badges / Badge-Einstellungen angegeben ist. Das Kennwort für das Konto sollte hier eingegeben werden.';
 $string['delbadge'] = 'Möchten Sie wirklich den Badge \'{$a}\' und alle verliehenen Instanzen löschen?';

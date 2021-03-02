@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'ru', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,6 +49,9 @@ $string['graded'] = '(оценено)';
 $string['gradenextungraded'] = 'Оценить следующие {$a} неоцененых попыток';
 $string['gradeungraded'] = 'Оценить все {$a} неоцененных попыток';
 $string['grading'] = 'Оценивание вручную';
+$string['grading:componentname'] = 'Отчет по тесту «Оценивание вручную»';
+$string['grading:viewidnumber'] = 'Видеть ID-номер студента при оценивании';
+$string['grading:viewstudentnames'] = 'Видеть имя студента при оценивании';
 $string['gradingall'] = 'Все попытки для этого вопроса: {$a}.';
 $string['gradingattempt'] = 'Попытка номер {$a->attempt} студента {$a->fullname}.';
 $string['gradingattemptsxtoyofz'] = 'Оценивание попыток {$a->from} - {$a->to} из {$a->of}';
@@ -59,8 +62,6 @@ $string['gradingquestionx'] = 'Оценивание вопроса {$a->number}:
 $string['gradingreport'] = 'Отчет об оцененных вручную';
 $string['gradingungraded'] = '{$a} неоцененных попыток';
 $string['gradinguser'] = 'Попытки для {$a}';
-$string['grading:viewidnumber'] = 'Видеть ID-номер студента при оценивании';
-$string['grading:viewstudentnames'] = 'Видеть имя студента при оценивании';
 $string['hideautomaticallygraded'] = 'Скрыть вопросы, которые были оценены автоматически';
 $string['inprogress'] = 'В процессе';
 $string['invalidattemptid'] = 'Нет попытки с таким ID';

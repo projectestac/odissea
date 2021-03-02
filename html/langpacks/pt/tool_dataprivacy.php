@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_dataprivacy', language 'pt', version '3.8'.
  *
- * @package   tool_dataprivacy
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_dataprivacy
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,10 +45,10 @@ $string['cannotreset'] = 'Não é possível repor este pedido. Apenas os pedidos
 $string['categories'] = 'Categorias';
 $string['categorieslist'] = 'Lista de categorias';
 $string['category'] = 'Categoria';
+$string['category_help'] = 'A categoria no registo de dados descreve o tipo de dados. Uma nova categoria pode ser adicionada ou, se estiver selecionado herdar, é aplicada uma categoria de dados de um contexto superior. Contextos são (do nível mais baixo para o mais elevado) Blocos > Módulos de atividade > disciplinas > Categorias de disciplinas > utilizador > Site.';
 $string['categorycreated'] = 'Categoria criada';
 $string['categorydefault'] = 'Categoria predefinida';
 $string['categorydefault_help'] = 'A categoria predefinida é a categoria de dados aplicada a qualquer nova instância. Se estiver selecionado herdar, é aplicada a categoria de dados de um contexto superior. Contextos são (do nível mais baixo para o mais elevado) Blocos > Módulos de atividade > disciplinas > Categorias de disciplinas > utilizador > Site.';
-$string['category_help'] = 'A categoria no registo de dados descreve o tipo de dados. Uma nova categoria pode ser adicionada ou, se estiver selecionado herdar, é aplicada uma categoria de dados de um contexto superior. Contextos são (do nível mais baixo para o mais elevado) Blocos > Módulos de atividade > disciplinas > Categorias de disciplinas > utilizador > Site.';
 $string['categoryupdated'] = 'Categoria atualizada';
 $string['close'] = 'Fechar';
 $string['compliant'] = 'Em conformidade';
@@ -246,10 +246,10 @@ $string['privacyrequestexpiry_desc'] = 'A duração de tempo em que as solicita�
 $string['protected'] = 'Protegido';
 $string['protectedlabel'] = 'A retenção destes dados tem um precedente legal mais elevado sobre o pedido do utilizador para ser esquecido. Estes dados serão apagados após o período de retenção ter expirado.';
 $string['purpose'] = 'Finalidade';
+$string['purpose_help'] = 'A finalidade descreve a razão para processar os dados. Uma nova finalidade pode ser adicionada ou, se estiver selecionado herdar, é aplicada a finalidade de um contexto mais elevado. Contextos são (do nível mais baixo para o mais elevado) Blocos > Módulos de atividade > disciplinas > Categorias de disciplinas > utilizador > Site.';
 $string['purposecreated'] = 'Finalidade criada';
 $string['purposedefault'] = 'Finalidade predefinida';
 $string['purposedefault_help'] = 'A finalidade predefinida é a finalidade aplicada a qualquer nova instância. Se estiver selecionado herdar, é aplicada a finalidade de um contexto mais elevado. Contextos são (do nível mais baixo para o mais elevado) Blocos > Módulos de atividade > disciplinas > Categorias de disciplinas > utilizador > Site.';
-$string['purpose_help'] = 'A finalidade descreve a razão para processar os dados. Uma nova finalidade pode ser adicionada ou, se estiver selecionado herdar, é aplicada a finalidade de um contexto mais elevado. Contextos são (do nível mais baixo para o mais elevado) Blocos > Módulos de atividade > disciplinas > Categorias de disciplinas > utilizador > Site.';
 $string['purposeoverview'] = 'Uma finalidade descreve a política de uso e retenção para os dados armazenados. A base para armazenar e reter os dados também é descrita na finalidade.';
 $string['purposes'] = 'Finalidades';
 $string['purposeslist'] = 'Lista das finalidade dos dados';
@@ -260,7 +260,7 @@ $string['requestapproved'] = 'A solicitação foi aprovada';
 $string['requestby'] = 'Pedido por';
 $string['requestbydetail'] = 'Solicitado por:';
 $string['requestcomments'] = 'Comentários';
-$string['requestcomments_help'] = 'Esta caixa permite-lhe fornecer mais detalhes sobre o seu pedido de dados.';
+$string['requestcomments_help'] = 'Esta caixa permite que insira mais detalhes sobre sua solicitação de dados.';
 $string['requestcreation'] = 'Criação';
 $string['requestdenied'] = 'A solicitação foi negada';
 $string['requestemailintro'] = 'recebeu uma solicitação de dados:';
@@ -272,11 +272,11 @@ $string['requestsdenied'] = 'Os pedidos foram rejeitados';
 $string['requeststatus'] = 'Estado';
 $string['requestsubmitted'] = 'A sua solicitação foi enviada para o responsável pela privacidade do site';
 $string['requesttype'] = 'Tipo';
+$string['requesttype_help'] = 'Selecione o motivo pelo qual gostaria de entrar em contacto com o responsável pela privacidade. Esteja ciente de que a eliminação de todos os dados pessoais resultará na impossibilidade de se autenticar no site.';
 $string['requesttypedelete'] = 'Apagar todos os meus dados pessoais';
 $string['requesttypedeleteshort'] = 'Apagar';
 $string['requesttypeexport'] = 'Exportar todos os meus dados pessoais';
 $string['requesttypeexportshort'] = 'Exportar';
-$string['requesttype_help'] = 'Selecione o motivo pelo qual gostaria de entrar em contacto com o responsável pela privacidade. Esteja ciente de que a eliminação de todos os dados pessoais resultará na impossibilidade de se autenticar no site.';
 $string['requesttypeothers'] = 'Solicitação genérica';
 $string['requesttypeothersshort'] = 'Mensagem';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';

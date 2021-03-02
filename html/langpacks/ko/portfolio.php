@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio', language 'ko', version '3.8'.
  *
- * @package   portfolio
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,7 +64,7 @@ $string['exportcomplete'] = '포트폴리오 내보내기 성공!';
 $string['exportedpreviously'] = '이전에 내보낸 포트폴리오';
 $string['exportexceptionnoexporter'] = '현재 세션에 대한 portfolio_export_exception이 제시됐지만 내보낼 객체가 없음';
 $string['exportexpired'] = '포트폴리오 해지됨';
-$string['exportexpireddesc'] = '정보 내보내기를 반복하고 있거나 빈 내용을 내보내려 하고 있습니다. 제대로 하려면 원래의 위치로 돌아가 다시 시작해야만 합니다. 이 현상은 가끔 내보내기가 완료된 후에 뒤로 돌아가기 버튼을 사용할 때나, 잘못된 주소를 북마킹 함으로서 일어납니다.';
+$string['exportexpireddesc'] = '정보 내보내기를 반복하고 있거나 빈 내용을 내보내려 하고 있습니다. 제대로 하려면 원래의 위치로 돌아가 다시 시작해야만 합니다. 이 현상은 가끔 내보내기가 완료된 후에 뒤로 돌아가기 버튼을 사용할 때나, 잘못된 주소를 즐겨찾기에 추가함으로서 일어납니다.';
 $string['exporting'] = '포트폴리오 내보내기';
 $string['exportingcontentfrom'] = '{$a} 의 내용 내보내기';
 $string['exportingcontentto'] = '콘텐츠를 {$a}로 내보내기';
@@ -149,7 +149,7 @@ $string['mustsetcallbackoptions'] = 'portfolio_add_button 을 설정하거나 se
 $string['noavailableplugins'] = '내보낼 포트폴리오가 없음';
 $string['nocallbackclass'] = '({$a})를 사용할 수 있는 회신 클래스를 찾을 수 없음';
 $string['nocallbackcomponent'] = '명시한 {$a} 구성요소를 찾을 수 없습니다.';
-$string['nocallbackfile'] = '내보내려는 포트폴리오가 깨졌음 - 요청한 {$a} 파일을 찾을 수 없음';
+$string['nocallbackfile'] = '내보내려는 모듈에서 무엇인가 문제가 발생했습니다. 필요한 포트폴리오 파일을 찾을 수 없습니다.';
 $string['noclassbeforeformats'] = 'portfolio_button의 set_formats을 호출하기 전에 회신 클래스를 설정해야만 함';
 $string['nocommonformats'] = '이용가능한 플러그인과 요청한 위치 {$a->location} 사이에 공통의 포맷이 없음(호출자의 포맷은 {$a->formats}를 지원합니다)';
 $string['noinstanceyet'] = '아직 선택되지 않음';

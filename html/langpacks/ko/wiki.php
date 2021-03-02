@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'wiki', language 'ko', version '3.8'.
  *
- * @package   wiki
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     wiki
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -54,7 +54,7 @@ $string['createcomment'] = '댓글 달기';
 $string['createddate'] = '{$a->username}가 {$a->date}에 만듬';
 $string['createpage'] = '페이지 만들기';
 $string['creating'] = '위키페이지 만드는 중';
-$string['creole'] = '크리올 요리';
+$string['creole'] = '크리올';
 $string['defaultformat'] = '기본 포맷';
 $string['defaultformat_help'] = '이 설정은 위키 페이지를 편집할 때 사용되는 기본 포맷을 결정합니다.
 
@@ -86,21 +86,21 @@ $string['firstpagetitle_help'] = '위키의 처음 페이지 제목';
 $string['forceformat'] = '강제 포맷';
 $string['forceformat_help'] = '만일 포맷이 강제로 정해지면(체크박스에 체크됨) 위키페이지를 편집할 때 포맷을 선택할 옵션이 없습니다.';
 $string['format'] = '포맷';
-$string['formatcreole'] = '크리올 포맷';
-$string['formatcreole_help'] = '크리올은 적절한 파크업을 삽입하기 위한 편집 도구바가 있는 보편적인 위키 마크업 언어입니다.
-
-새로운 페이지를 만들기 위해서는 새로운 페이지 이름을 이중 대괄호안에 입력해야 합니다. 예 [[페이지 2]]';
 $string['format_help'] = '* HTML - HTML 에디터가 사용가능합니다.
 * Creole - 작은 편집 도구가 있는 위키 마크업 언어
 * Nwiki - NWiki 모듈에서 사용된 Mediawiki와 같은 마크업 언어';
+$string['formatcreole'] = '크리올 포맷';
+$string['formatcreole_help'] = 'Creole은 적절한 마크업을 삽입하기 위한 편집 도구바가 있는 보편적인 위키 마크업 언어입니다.
+
+새로운 페이지를 만들기 위해서는 새로운 페이지 이름을 이중 대괄호안에 입력하면 됩니다. 예 [[페이지 2]]';
 $string['formathtml'] = 'HTML 포맷';
 $string['formathtml_help'] = 'HTML 에디터는 콘텐츠를 포맷하는데 사용할 수 있습니다.
 
 새로운 페이지를 만들기 위해서는 새로운 페이지 이름을 이중 대괄호안에 입력해야 합니다. 예 [[페이지 2]]';
 $string['formatnwiki'] = 'NWiki 포맷';
-$string['formatnwiki_help'] = 'NWiki는 미디어위키와 유사한 마크업 언어를 사용합니다.
+$string['formatnwiki_help'] = 'Nwiki는 Nwiki 모듈에 사용되는 미디어위키와 유사한 마크업 언어입니다.
 
-새로운 페이지를 만들기 위해서는 새로운 페이지 이름을 이중 대괄호안에 입력해야 합니다. 예 [[페이지 2]]';
+새로운 페이지를 만들기 위해서는 새로운 페이지 이름을 이중 대괄호안에 입력하면 됩니다. 예 [[페이지 2]]';
 $string['history'] = '이력';
 $string['history_help'] = '페이지의 이전버전에 링크된 이력 목록';
 $string['html'] = 'HTML';
@@ -111,7 +111,7 @@ $string['insertimage'] = '이미지 삽입 ...';
 $string['insertimage_help'] = '이 드롭다운 목록은 위키 편집기에 이미지를 삽입할 것입니다. 위키에 더 많은 이미지를 추가하고자 하면 "파일"탭을 사용하십시요.';
 $string['invalidlock'] = '이 페이지는 다른 사용자에 의해 잠금되었습니다.';
 $string['invalidparameters'] = '잘못된 매개변수가 주어졌습니다.';
-$string['invalidsection'] = '잘못된 영역';
+$string['invalidsection'] = '잘못된 섹션';
 $string['invalidsesskey'] = '주어진 세션키가 틀립니다. 데이터를 다시 보내십시요.';
 $string['javascriptdisabledlocks'] = '자바스크립트가 당신의 브라우저에서 비활성화되어 잠금이 작동하지 않습니다. 고친것이 올바르게 저장되지 않을 수 있습니다.';
 $string['links'] = '링크';
@@ -131,7 +131,7 @@ $string['navigation'] = '찾아가기';
 $string['navigationfrom'] = '이 페이지가 온 곳';
 $string['navigationfrom_help'] = '이 페이지에 링크된 위키 페이지들';
 $string['navigationto'] = '이페이지가 가는 곳';
-$string['navigationto_help'] = '페이지에 포함된 링크들';
+$string['navigationto_help'] = '다른 페이지로의 링크들';
 $string['newpage'] = '신규';
 $string['newpagehdr'] = '세 페이지';
 $string['newpagetitle'] = '새 페이지 제목';
@@ -164,17 +164,17 @@ $string['orphaned'] = '혼자 있는 페이지';
 $string['orphaned_help'] = '다른 페이로부터 링크되지 않은 페이지들 목록';
 $string['overridelocks'] = '잠금 덮어쓰기';
 $string['overridinglocks'] = '잠금 덮어쓰기';
+$string['page-mod-wiki-comments'] = '위키 모듈 댓글 페이지';
+$string['page-mod-wiki-history'] = '위키 이력 페이지';
+$string['page-mod-wiki-map'] = '위키 맵 페이지';
+$string['page-mod-wiki-view'] = '위키 모듈 메인 페이지';
+$string['page-mod-wiki-x'] = '모든 위키 모듈 페이지';
 $string['pageexists'] = '이 페이지는 이미 존재합니다. 그곳으로 넘어갑니다.';
 $string['pageindex'] = '페이지 인덱스';
 $string['pageindex_help'] = '위키 페이지 트리';
 $string['pageislocked'] = '다른사람이 지금 이 페이지를 편집하고 있습니다. 몇 분 후에 편집을 해 보십시요.';
 $string['pagelist'] = '페이지 목록';
 $string['pagelist_help'] = '알파벳 순서로 분류된 페이지 목록';
-$string['page-mod-wiki-comments'] = '위키 모듈 댓글 페이지';
-$string['page-mod-wiki-history'] = '위키 이력 페이지';
-$string['page-mod-wiki-map'] = '위키 맵 페이지';
-$string['page-mod-wiki-view'] = '위키 모듈 메인 페이지';
-$string['page-mod-wiki-x'] = '모든 위키 모듈 페이지';
 $string['pagename'] = '페이지 이름';
 $string['peerreview'] = '동료 검토';
 $string['pluginadministration'] = '위키 관리';
@@ -226,11 +226,17 @@ $string['viewperpage'] = '페이지마다 {$a} 버전 표시';
 $string['viewversion'] = '페이지 버전 {$a} 보기';
 $string['wiki'] = '위키';
 $string['wiki:addinstance'] = '새 위키 추가';
-$string['wikiattachments'] = '위키 첨부파일';
-$string['wikiboldtext'] = '굵은 문장';
 $string['wiki:createpage'] = '새 위키페이지 만들기';
 $string['wiki:editcomment'] = '페이지에 덧글 추가';
 $string['wiki:editpage'] = '위키페이지 저장';
+$string['wiki:managecomment'] = '위키 평 관리';
+$string['wiki:managefiles'] = '위키 파일 관리';
+$string['wiki:managewiki'] = '위키 설정 관리';
+$string['wiki:overridelock'] = '위키 잠금 덮어쓰기';
+$string['wiki:viewcomment'] = '페이지 덧글 보기';
+$string['wiki:viewpage'] = '위키 페이지 보기';
+$string['wikiattachments'] = '위키 첨부파일';
+$string['wikiboldtext'] = '굵은 문장';
 $string['wikiexternalurl'] = '외부 URL';
 $string['wikifiles'] = '위키 파일들';
 $string['wikifiletable'] = '업로드된 파일 목록';
@@ -238,24 +244,18 @@ $string['wikiheader'] = '레벨 {$a} 헤더';
 $string['wikihr'] = '수평 규칙';
 $string['wikiimage'] = '이미지';
 $string['wikiinternalurl'] = '내부 링크';
-$string['wikiintro'] = '위키 설명';
+$string['wikiintro'] = '설명';
 $string['wikiitalictext'] = '이탤릭 문장';
 $string['wikilockingsettings'] = '잠금 및 리파싱 타임아웃';
-$string['wiki:managecomment'] = '위키 평 관리';
-$string['wiki:managefiles'] = '위키 파일 관리';
-$string['wiki:managewiki'] = '위키 설정 관리';
 $string['wikimode'] = '위키 모드';
-$string['wikimodecollaborative'] = '협력 위키';
 $string['wikimode_help'] = '위키 모드는 모든 사람들이 위키를 편집할 수 있는 공동 위키와 모든 사람들이 자신만의 위키를 가질 수 있는 개인 위키를 결정합니다.';
+$string['wikimodecollaborative'] = '협력 위키';
 $string['wikimodeindividual'] = '개인별 위키';
 $string['wikiname'] = '위키 이름';
 $string['wikinowikitext'] = '위키 문장 없음';
 $string['wikiorderedlist'] = '정렬된 목록';
-$string['wiki:overridelock'] = '위키 잠금 덮어쓰기';
 $string['wikipages'] = '위키 페이지';
 $string['wikisettings'] = '위키 설정';
 $string['wikiunorderedlist'] = '정렬안된 목록';
-$string['wiki:viewcomment'] = '페이지 덧글 보기';
-$string['wiki:viewpage'] = '위키 페이지 보기';
 $string['wrongversionlock'] = '당신이 편집하는 동안 다른 사용자가 이 페이지를 편집하였으며 당신이 편집한 내용은 쓸모없게 되었습니다.';
 $string['wrongversionsave'] = '당신이 편집하는 동안 다른 사용자가 버전을 생성하였으며, 당신이 그가 작성한 내용을 덮어쓰기 하였습니다. 페이지 이력을 체크하세요.';

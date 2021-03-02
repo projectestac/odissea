@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth', language 'zh_cn', version '3.8'.
  *
- * @package   auth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,7 +37,6 @@ $string['auth_changepasswordurl_expl'] = '设定一个当用户丢失了他们�
 $string['auth_changingemailaddress'] = '您已请求将Email地址由 {$a->oldemail} 变更为 {$a->newemail}。出于安全的考虑，服务器将自动向 {$a->newemail} 发送一封邮件，以确认它属于您。您只要访问邮件中的URL，Email地址会立刻更新。';
 $string['auth_common_settings'] = '公用设置';
 $string['auth_data_mapping'] = '数据映射';
-$string['authenticationoptions'] = '身份认证选项';
 $string['auth_fieldlock'] = '锁定值';
 $string['auth_fieldlock_expl'] = '<p><b>锁定值：</b> 如果开启，Moodle 用户和管理员将不能直接修改字段的值。如果您正在维护外部数据库的数据，请选择此项。</p>';
 $string['auth_fieldlockfield'] = '锁定值({$a})';
@@ -45,10 +44,7 @@ $string['auth_fieldlocks'] = '锁定用户字段';
 $string['auth_fieldlocks_help'] = '<p>您可以锁定指定的用户数据字段。对于用户数据由管理员人工维护，或者是通过“上传用户”上传的站点而言，这个功能是很有用的。如果您锁定了 Moodle 必需的字段，那么请您确信在创建用户帐户时已经提供了其内容，否则这个账号将无法使用。</p>
 <p>如果想要避免这个问题，可以考虑将锁定模式设定为“如果空则不锁定”。</p>';
 $string['auth_fieldmapping'] = '数据映射 ({$a})';
-$string['authinstructions'] = '此处留空，登录页面会显示缺省的登录说明。如果想自定义登录说明，就在此输入。';
 $string['auth_invalidnewemailkey'] = '错误：URL 不正确，请完整拷贝后重试。';
-$string['authloginviaemail'] = '允许使用电子邮件登录';
-$string['authloginviaemail_desc'] = '允许用户使用用户名和电子邮件地址（如果唯一）进行网站登录。';
 $string['auth_multiplehosts'] = '可以指定多个主机名或地址（如 host1.com;host2.com;host3.com 或 xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx）';
 $string['auth_notconfigured'] = '认证方法{$a}尚未配置。';
 $string['auth_outofnewemailupdateattempts'] = '更改Email地址的许可次数已到，您的请求被取消。';
@@ -67,12 +63,16 @@ $string['auth_updatelocal_expl'] = '<p><b>更新本地数据:</b> 如果开启�
 $string['auth_updatelocalfield'] = '本地更新 ({$a})';
 $string['auth_updateremote'] = '更新外部数据';
 $string['auth_updateremote_expl'] = '<p><b>更新外部数据:</b> 如果开启，则外部认证系统中的用户记录将被更新。要修改这个选项需首先解锁字段。</p>';
-$string['auth_updateremotefield'] = '更新外部({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>注意:</b> 更新外部LDAP数据需要您设定的binddn和binddw是有权限修改所有用户记录的用户。它目前不能保持多值属性的值，会在更新时删除其它的值。</p>';
+$string['auth_updateremotefield'] = '更新外部({$a})';
 $string['auth_user_create'] = '激活用户创建功能';
 $string['auth_user_creation'] = '新的(匿名的)用户可以在外部身份认证源中创建帐号，并通过 Email 确认。如果您启用了这个功能，请记住也要配置与用户创建有关的模块特定选项。';
 $string['auth_usernameexists'] = '选中的用户名已经存在。请选择一个新的。';
 $string['auth_usernotexist'] = '不能更新不存在的用户 {$a}';
+$string['authenticationoptions'] = '身份认证选项';
+$string['authinstructions'] = '此处留空，登录页面会显示缺省的登录说明。如果想自定义登录说明，就在此输入。';
+$string['authloginviaemail'] = '允许使用电子邮件登录';
+$string['authloginviaemail_desc'] = '允许用户使用用户名和电子邮件地址（如果唯一）进行网站登录。';
 $string['auto_add_remote_users'] = '自动添加远程用户';
 $string['cannotmapfield'] = '无法映射字段 "{$a->fieldname}"，因为其短名称"{$a->shortname}" 过长。为了能使其被映射，您需要将短名称缩短为{$a->charlimit}字符以内。 <a href="{$a->link}">编辑用户档案字段</a>';
 $string['changepassword'] = '更改密码 URL';
@@ -104,8 +104,8 @@ $string['eventuserloggedin'] = '用户已登录';
 $string['eventuserloggedinas'] = '使用另外一个用户名进行登录';
 $string['eventuserloginfailed'] = '登记登录失败';
 $string['forcechangepassword'] = '强制修改密码';
-$string['forcechangepasswordfirst_help'] = '强制用户在第一次登录时修改密码。';
 $string['forcechangepassword_help'] = '强制用户在下次登录时修改密码。';
+$string['forcechangepasswordfirst_help'] = '强制用户在第一次登录时修改密码。';
 $string['forgottenpassword'] = '如果您在这里键入一个URL地址，该地址将会用来丢失密码的查找页面。';
 $string['forgottenpasswordurl'] = '忘记的密码 URL';
 $string['getrecaptchaapi'] = '要使用reCAPTCHA图片验证码，您必须从以下网址获得编程接口注册码<a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';

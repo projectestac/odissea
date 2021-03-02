@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'rating', language 'eu', version '3.8'.
  *
- * @package   rating
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     rating
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['aggregatemax'] = 'Gehienezko puntuazioa';
 $string['aggregatemin'] = 'Gutxieneko puntuazioa';
 $string['aggregatenone'] = 'Puntuaziorik ez';
 $string['aggregatesum'] = 'Puntuazioen batuketa';
-$string['aggregatetype'] = 'Agregazio-mota';
-$string['aggregatetype_help'] = 'Agregazio-motak definitzen du nola batuko diren puntuazioak kalifikazio-liburuko azken kalifikazioa osatzeko.
+$string['aggregatetype'] = 'Agregazio mota';
+$string['aggregatetype_help'] = 'Agregazio motak definitzen du nola batuko diren puntuazioak kalifikazio-liburuko azken kalifikazioa osatzeko.
 
 * Puntuazioen batez bestekoa - Puntuazioen batez bestekoa
 * Puntuazio-kopurua - Puntuatutako elementu-kopurua izango da azken kalifikazioa. Kontuan izan guztirakoak ezin duela jarduerarako gehienezko kalifikazioa baino altuagoa.
@@ -45,10 +45,9 @@ $string['allowratings'] = 'Baimendu elementuak puntuatu ahal izatea?';
 $string['allratingsforitem'] = 'Bidalitako puntuazio guztiak';
 $string['capabilitychecknotavailable'] = 'Gaitasunen egiaztatzea ez dago eskuragarri jarduera gorde arte';
 $string['couldnotdeleteratings'] = 'Sentitzen dugu, ezin da ezabatu zeren norbaitek kalifikatu baitu';
-$string['grade_rating_name'] = 'Puntuazioa';
 $string['norate'] = 'Elementuak sailkatzea ez dago gaituta!';
 $string['noratings'] = 'Ez da puntuaziorik bidali';
-$string['noviewanyrate'] = 'Zeure elementuen emaitzak baino ezin ditzakezu ikusi';
+$string['noviewanyrate'] = 'Zeure elementuen emaitzak bakarrik ikus ditzakezu';
 $string['noviewrate'] = 'Ez duzu elementuen puntuazioa ikusteko gaitasunik';
 $string['privacy:metadata:rating'] = 'Erabiltzaileak emandako puntuazioa puntuatutako elementuaren loturarekin batera gordetzen da.';
 $string['privacy:metadata:rating:rating'] = 'Erabiltzaileak emandako puntuazio numerikoa.';
@@ -62,5 +61,5 @@ $string['ratinginvalid'] = 'Puntuazioak ez du balio';
 $string['ratings'] = 'Puntuazioak';
 $string['ratingtime'] = 'Mugatu puntuazioak tarte honetako elementuetara';
 $string['rolewarning'] = 'Puntuatzeko baimena duten rolak';
-$string['rolewarning_help'] = 'Kalifikazioak bidaltzeko, beharrezkoa da \'moodle/rating:rate\' gaitasuna, bai eta moduluari buruzko edozein gaitasun espezifiko ere. Ondoko rolak dituzten erabiltzaileek kalifikazioak emateko modua izan behar dute. Rol-zerrenda alda daiteke ekintza-menu edo kudeaketa blokean (azalaren arabera) dagoen gaitasunetarako estekaren bidez.';
-$string['scaleselectionrequired'] = 'Puntuazioen agregazio-motak aukeratzean eskala edo gehienezko puntuazioak ere aukeratu behar dituzu.';
+$string['rolewarning_help'] = 'Kalifikazioak bidaltzeko, beharrezkoa da \'moodle/rating:rate\' gaitasuna, bai eta moduluari buruzko edozein gaitasun espezifiko ere. Ondoko rolak dituzten erabiltzaileek kalifikazioak emateko modua izan behar dute. Rol-zerrenda alda daiteke ekintza-menu edo kudeaketa blokean (itxuraren arabera) dagoen gaitasunetarako estekaren bidez.';
+$string['scaleselectionrequired'] = 'Puntuazioen agregazio motak aukeratzean eskala edo gehienezko puntuazioak ere aukeratu behar dituzu.';

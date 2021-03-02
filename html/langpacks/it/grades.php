@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grades', language 'it', version '3.8'.
  *
- * @package   grades
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grades
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -55,16 +55,6 @@ $string['aggregatesum'] = 'Naturale';
 $string['aggregateweightedmean'] = 'Media ponderata dei voti';
 $string['aggregateweightedmean2'] = 'Media ponderata semplice dei voti';
 $string['aggregation'] = 'Aggregazione dei voti';
-$string['aggregationcoef'] = 'Coefficiente di aggregazione';
-$string['aggregationcoefextra'] = 'Credito extra';
-$string['aggregationcoefextra_help'] = 'Se l\'aggregazione è \'Naturale\' oppure \'Media pesata semplice\' e la casella credito extra è spuntata, allora il punteggio massimo dell\'elemento non sarà aggiunto al massimo punteggio della categoria. Questo comporterà la possibilità di ottenere il punteggio massimo per la categoria senza aver ottenuto il punteggio massimo in tutti gli elementi di valutazione. Se l\'amministratore del sito ha abilitato la funzionalità \'Voti privi di limiti\', potranno essere presenti punteggi superiori al punteggio massimo. Se l\'aggregazione è \'Media dei voti (con crediti extra)\' ed il credito extra ha un valore maggiore di zero, il credito extra sarà il valore per il quale sarà moltiplicato il punteggio prima di essere aggiunto al totale e dopo il calcolo della media.';
-$string['aggregationcoefextrasum'] = 'Credito extra';
-$string['aggregationcoefextrasumabbr'] = '+';
-$string['aggregationcoefextrasum_help'] = 'Selezionando "Credito extra", il punteggio massimo dell\'elemento di valutazione non sarà sommato al punteggio massimo della categoria, rendendo possibile il raggiungimento del punteggio massimo della categoria (o il voto privo di limiti se la funzione è stata abilitata dall\'amministratore) senza aver ottenuto il punteggio massimo in tutti gli elementi di valutazione.';
-$string['aggregationcoefextraweight'] = 'Peso credito extra';
-$string['aggregationcoefextraweight_help'] = 'Se il credito extra è un valore maggiore di zero, la valutazione fungerà da credito extra durante l\'aggregazione. Il numero rappresenta il fattore per il quale sarà moltiplicata la valutazione prima di essere aggiunta al totale utilizzato per il calcolo della media.';
-$string['aggregationcoefweight'] = 'Peso dell\'elemento';
-$string['aggregationcoefweight_help'] = '<p>Peso applicato ai voti durante l\'aggregazione.</p>';
 $string['aggregation_help'] = 'L\'aggregazione determina la modalità di calcolo della valutazione complessiva per una data categoria.
 
 * Media dei voti - La somma di tutti i voti divisa per il numero totale di voti.
@@ -73,6 +63,16 @@ $string['aggregation_help'] = 'L\'aggregazione determina la modalità di calcolo
 * Voto più alto
 * Moda dei voti - il voto ottenuto più frequentemente
 * Naturale . La somma di tutti i voti scalati da un peso.';
+$string['aggregationcoef'] = 'Coefficiente di aggregazione';
+$string['aggregationcoefextra'] = 'Credito extra';
+$string['aggregationcoefextra_help'] = 'Se l\'aggregazione è \'Naturale\' oppure \'Media pesata semplice\' e la casella credito extra è spuntata, allora il punteggio massimo dell\'elemento non sarà aggiunto al massimo punteggio della categoria. Questo comporterà la possibilità di ottenere il punteggio massimo per la categoria senza aver ottenuto il punteggio massimo in tutti gli elementi di valutazione. Se l\'amministratore del sito ha abilitato la funzionalità \'Voti privi di limiti\', potranno essere presenti punteggi superiori al punteggio massimo. Se l\'aggregazione è \'Media dei voti (con crediti extra)\' ed il credito extra ha un valore maggiore di zero, il credito extra sarà il valore per il quale sarà moltiplicato il punteggio prima di essere aggiunto al totale e dopo il calcolo della media.';
+$string['aggregationcoefextrasum'] = 'Credito extra';
+$string['aggregationcoefextrasum_help'] = 'Selezionando "Credito extra", il punteggio massimo dell\'elemento di valutazione non sarà sommato al punteggio massimo della categoria, rendendo possibile il raggiungimento del punteggio massimo della categoria (o il voto privo di limiti se la funzione è stata abilitata dall\'amministratore) senza aver ottenuto il punteggio massimo in tutti gli elementi di valutazione.';
+$string['aggregationcoefextrasumabbr'] = '+';
+$string['aggregationcoefextraweight'] = 'Peso credito extra';
+$string['aggregationcoefextraweight_help'] = 'Se il credito extra è un valore maggiore di zero, la valutazione fungerà da credito extra durante l\'aggregazione. Il numero rappresenta il fattore per il quale sarà moltiplicata la valutazione prima di essere aggiunta al totale utilizzato per il calcolo della media.';
+$string['aggregationcoefweight'] = 'Peso dell\'elemento';
+$string['aggregationcoefweight_help'] = '<p>Peso applicato ai voti durante l\'aggregazione.</p>';
 $string['aggregationhintdropped'] = '( Tralasciato )';
 $string['aggregationhintexcluded'] = '( Escluso )';
 $string['aggregationhintextra'] = '( Credito extra )';
@@ -100,9 +100,9 @@ $string['bonuspoints'] = 'Punti bonus';
 $string['bulkcheckboxes'] = 'Selezioni in blocco';
 $string['calculatedgrade'] = 'Voto calcolato';
 $string['calculation'] = 'Calcolo';
+$string['calculation_help'] = 'Il calcolo delle valutazioni consente l\'aggregazione dei voti in base ad una formula. La formula deve iniziare con un segno uguale (=) e può usare i normali operatori matematici come max, min e sum. E\' anche possibile inserire ulteriori elementi di valutazione referenziandoli nella formula racchiudendo il loro codice identificativo tra doppie parentesi quadre.';
 $string['calculationadd'] = 'Aggiungi calcolo';
 $string['calculationedit'] = 'Modifica calcolo';
-$string['calculation_help'] = 'Il calcolo delle valutazioni consente l\'aggregazione dei voti in base ad una formula. La formula deve iniziare con un segno uguale (=) e può usare i normali operatori matematici come max, min e sum. E\' anche possibile inserire ulteriori elementi di valutazione referenziandoli nella formula racchiudendo il loro codice identificativo tra doppie parentesi quadre.';
 $string['calculationsaved'] = 'Calcolo salvato';
 $string['calculationview'] = 'Visualizza calcolo';
 $string['cannotaccessgroup'] = 'Spiacente, non è possibile accedere ai voti del gruppo selezionato.';
@@ -117,7 +117,7 @@ $string['changedefaults'] = 'Cambia default';
 $string['changereportdefaults'] = 'Cambia default dei report';
 $string['chooseaction'] = 'Scegli un\'azione ...';
 $string['choosecategory'] = 'Scegli categoria';
-$string['combo'] = 'Tab e menù a discesa';
+$string['combo'] = 'Schede e menù a discesa';
 $string['compact'] = 'Compatto';
 $string['componentcontrolsvisibility'] = 'La visibilità di questo elemento di valutazione è regolata dalle impostazioni dell\'attività.';
 $string['contract'] = 'Minimizza categoria';
@@ -154,9 +154,9 @@ $string['displaypoints'] = 'Visualizza punteggi';
 $string['displayweighted'] = 'Visualizza valutazioni pesate';
 $string['dropdown'] = 'Menu a discesa';
 $string['droplow'] = 'Scarta voti peggiori';
+$string['droplow_help'] = 'Consente di scartare il numero specificato di voti più bassi.';
 $string['droplowestvalue'] = 'Valore per scartare voti peggiori';
 $string['droplowestvalues'] = 'Scarta {$a} voti peggiori';
-$string['droplow_help'] = 'Consente di scartare il numero specificato di voti più bassi.';
 $string['dropped'] = 'Scartati';
 $string['dropxlowest'] = 'Scarta le N più basse';
 $string['dropxlowestwarning'] = 'Nota: Se si utilizza Scarta le N più basse, la valutazione assume che tutte gli elementi della corrispondente categoria hanno lo stesso valore per i punteggi. Se tali valori differiscono i risultati saranno imprevedibili';
@@ -221,11 +221,11 @@ $string['externalurl_desc'] = 'Specificare qui l\'URL nel caso in cui si utilizz
 $string['extracreditvalue'] = 'Credito extra per {$a}';
 $string['extracreditwarning'] = 'Nota: L\'impostazione Credito Extra per tutte gli elementi di una categoria di fatto rimuove gli stessi dal calcolo della valutazione, per cui non ci sarà  il punteggio totale.';
 $string['feedback'] = 'Feedback';
+$string['feedback_help'] = 'Consente di aggiungere commenti al voto.';
 $string['feedbackadd'] = 'Aggiungi feedback';
 $string['feedbackedit'] = 'Modifica feedback';
 $string['feedbackfiles'] = 'File di feedback';
 $string['feedbackforgradeitems'] = 'Feedback per {$a}';
-$string['feedback_help'] = 'Consente di aggiungere commenti al voto.';
 $string['feedbacks'] = 'Feedback';
 $string['feedbacksaved'] = 'Feedback salvato';
 $string['feedbackview'] = 'Vedi feedback';
@@ -243,6 +243,7 @@ $string['full'] = 'Tutte le colonne';
 $string['fullmode'] = 'Cambia in vista completa';
 $string['generalsettings'] = 'Impostazioni generali';
 $string['grade'] = 'Valutazione';
+$string['grade_help'] = 'Il punteggio da dare allo studente per il suo lavoro.';
 $string['gradeadministration'] = 'Gestione valutazioni';
 $string['gradealreadyupdated'] = 'Le valutazioni di {$a} non sono state importate poiché le valutazioni contenute nel file di importazione sono più vecchie di quelle presenti nel registro valutatore. Per importare comunque le valutazioni, usare l\'impostazione "Forza importazione".';
 $string['gradeanalysis'] = 'Analisi delle valutazioni';
@@ -284,7 +285,6 @@ $string['gradeexportuserprofilefields_desc'] = 'Imposta i campi del profilo uten
 $string['gradeforstudent'] = '{$a->student}<br />{$a->item}{$a->feedback}';
 $string['gradegrademinmax'] = 'Valutazione minima e massima iniziale';
 $string['gradehelp'] = 'Help valutazioni';
-$string['grade_help'] = 'Il punteggio da dare allo studente per il suo lavoro.';
 $string['gradehistorylifetime'] = 'Durata storico delle valutazioni';
 $string['gradehistorylifetime_help'] = 'Specifica per quanto tempo si vuole conservare lo storico delle modifiche nelle tabelle relative alle valutazioni. Si raccomanda di definire un tempo più lungo possibile. Se si manifestano problemi di performance o si dispone di spazio limitato per il database, impostare un valore più basso.';
 $string['gradeimport'] = 'Importazione valutazioni';
@@ -318,8 +318,8 @@ $string['gradeoutcomeitem'] = 'Elemento raggiungimento obiettivo';
 $string['gradeoutcomes'] = 'Obiettivi';
 $string['gradeoutcomescourses'] = 'Obiettivi di corso';
 $string['gradepass'] = 'Sufficienza';
-$string['gradepassgreaterthangrade'] = 'La sufficienza non può essere maggiore del punteggio massimo {$a}';
 $string['gradepass_help'] = 'Rappresenta il voto minimo necessario per considerare l\'attività come superata. Questo voto sarà utilizzato per il completamento delle attività e dei corsi. Nel registro valutatore il voto sarà visualizzato in rosso (non superato) o verde (superato)';
+$string['gradepassgreaterthangrade'] = 'La sufficienza non può essere maggiore del punteggio massimo {$a}';
 $string['gradepointdefault'] = 'Punteggio di default';
 $string['gradepointdefault_help'] = 'Imposta il valore di default per il punteggio delle attività disponibile in un elemento di valutazione.';
 $string['gradepointdefault_validateerror'] = 'Il valore impostabile deve essere compreso tra 1 e il valore del punteggio massimo.';
@@ -342,15 +342,15 @@ $string['gradessettings'] = 'Impostazioni generali';
 $string['gradetype'] = 'Tipo valutazione';
 $string['gradetype_help'] = '<p>Specifica il tipo di valutazione da usare: Nessuno (non è possibile dare un voto), Valore (consente l\'impostazione del Voto massimo e minimo), Scala (consente l\'uso di una scala di valutazione), Testo (consente solo l\'uso dei feedback). Solamente i tipi Valore e Scala possono essere aggregati. Il tipo di valutazione per un elemento basato su un\'attività si imposta nella pagina di modifica dell\'attività.</p>';
 $string['gradevaluetoobig'] = 'Un voto è più grande del voto massimo consentito {$a}';
-$string['gradeview'] = 'Vedi valutazione';
+$string['gradeview'] = 'Visualizza valutazione';
 $string['gradewasmodifiedduringediting'] = 'La valutazione inserita per {$a->itemname} e riferita a {$a->username}, è stata ignorata poiché è stata aggiornata da altri più recentemente.';
 $string['gradeweighthelp'] = 'Help peso valutazioni';
 $string['gradingmodulename'] = 'Valutazione ({$a})';
 $string['groupavg'] = 'Media di gruppo';
 $string['hidden'] = 'Nascosto';
+$string['hidden_help'] = 'I voti saranno invisibili agli studenti. E\' anche possibile indicare una data dopo la quale gli studenti potranno visualizzare i voti.';
 $string['hiddenasdate'] = 'Visualizza la data dei voti nascosti';
 $string['hiddenasdate_help'] = 'Se l\'utente non è autorizzato a vedere i voti nascosti, tramite questa impostazione potrà comunque vedere la data in cui ha ricevuto il voto.';
-$string['hidden_help'] = 'I voti saranno invisibili agli studenti. E\' anche possibile indicare una data dopo la quale gli studenti potranno visualizzare i voti.';
 $string['hiddenuntil'] = 'Nascosto fino al';
 $string['hiddenuntildate'] = 'Nascosto fino al: {$a}';
 $string['hideadvanced'] = 'Nascondi opzioni avanzate';
@@ -424,8 +424,8 @@ $string['itemnamehelp'] = 'Il nome di questo elemento, preso dal modulo.';
 $string['items'] = 'Elementi';
 $string['itemsedit'] = 'Modifica elemento valutazione';
 $string['keephigh'] = 'Utilizza voti migliori';
-$string['keephighestvalues'] = 'Utilizza {$a} voti migliori';
 $string['keephigh_help'] = 'Saranno utilizzato gli N voti migliori, dove N è il valore scelto.';
+$string['keephighestvalues'] = 'Utilizza {$a} voti migliori';
 $string['keymanager'] = 'Gestore chiavi';
 $string['lessthanmin'] = 'La valutazione inserita per {$a->itemname} per {$a->username} è inferiore al minimo consentito';
 $string['letter'] = 'Graduatoria letterale';
@@ -472,6 +472,7 @@ $string['missingitemtypeoreid'] = 'La chiave dell\'array (itemtype oppure eid) m
 $string['missingscale'] = 'Deve essere scelta la scala';
 $string['mode'] = 'Moda';
 $string['modgrade'] = 'Voto';
+$string['modgrade_help'] = 'Il tipo di valutazione da usare per l\'attività. Scegliendo \'scala\' sarà possibile selezionare una scala dal menù a discesa \'scala\'. Scegliendo \'punteggio\', sarà possibile impostare il punteggio massimo dell\'attività.';
 $string['modgradecantchangegradetype'] = 'Non è possibile modificare il tipo poiché esistono già valutazioni per questo elemento';
 $string['modgradecantchangegradetypemsg'] = 'Non è possibile modificare il tipo di valutazione poiché alcune valutazione sono già state rilasciate. Se desideri modificare il punteggio massimo, devi prima decidere se cambiare la scala delle valutazioni esistenti.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Non è possibile modificare il tipo di valutazione e la scala poiché alcune valutazione sono già state rilasciate.';
@@ -488,7 +489,6 @@ Ad esempio, selezionando \'Sì\' e cambiando il punteggio massimo di un elemento
 $string['modgradedonotmodify'] = 'Non modificare le valutazioni esistenti';
 $string['modgradeerrorbadpoint'] = 'E\' stato inserito un voto non valido. Deve essere un intero compreso tra 1 e {$a}';
 $string['modgradeerrorbadscale'] = 'E\' stata sezionata una scala non valida. Assicurati di aver seclto una scala tra quelle disponibili sotto.';
-$string['modgrade_help'] = 'Il tipo di valutazione da usare per l\'attività. Scegliendo "scala" sarà possibile selezionare una scala dal menù a discesa "scala". Scegliendo "punteggio", sarà possibile impostare il punteggio massimo dell\'attività.';
 $string['modgrademaxgrade'] = 'Punteggio massimo';
 $string['modgraderescalegrades'] = 'Modifica la scala delle valutazioni esistenti';
 $string['modgraderescalegrades_help'] = 'Quando vengono modificati i punteggi massimi nel registro valutatore è anche necessario decidere se dovranno essere cambiate anche le valutazioni percentuali già esistenti.
@@ -549,6 +549,7 @@ $string['operations'] = 'Operazioni';
 $string['options'] = 'Opzioni';
 $string['others'] = 'Altri';
 $string['outcome'] = 'Obiettivo';
+$string['outcome_help'] = 'L\'obiettivo che questo elemento di valutazione rappresenta.';
 $string['outcomeassigntocourse'] = 'Assegna un altro obiettivo a questo corso';
 $string['outcomecategory'] = 'Crea obiettivi nella categoria';
 $string['outcomecategorynew'] = 'Nuova categoria';
@@ -556,7 +557,6 @@ $string['outcomeconfirmdelete'] = 'Sei sicuro di eliminare l\'obiettivo "{$a}"?'
 $string['outcomecreate'] = 'Aggiungi un obiettivo';
 $string['outcomedelete'] = 'Elimina obiettivo';
 $string['outcomefullname'] = 'Nome';
-$string['outcome_help'] = 'L\'obiettivo che questo elemento di valutazione rappresenta.';
 $string['outcomeitem'] = 'Elemento obiettivo';
 $string['outcomeitemsedit'] = 'Modifica elemento obiettivo';
 $string['outcomereport'] = 'Scheda obiettivi';
@@ -623,22 +623,22 @@ $string['privacy:metadata:grades:aggregationstatus'] = 'Stato dell\'aggregazione
 $string['privacy:metadata:grades:aggregationweight'] = 'Peso nell\'aggregazione.';
 $string['privacy:metadata:grades:feedback'] = 'Commento.';
 $string['privacy:metadata:grades:finalgrade'] = 'Valutazione.';
-$string['privacy:metadata:gradeshistory'] = 'Record delle valutazioni precedenti.';
 $string['privacy:metadata:grades:information'] = 'Informazioni aggiuntive sulla valutazione.';
 $string['privacy:metadata:grades:timemodified'] = 'Data e ora dell\'ultima modifica della valutazione.';
 $string['privacy:metadata:grades:userid'] = 'ID dell\'utente a cui appartiene la valutazione.';
 $string['privacy:metadata:grades:usermodified'] = 'ID dell\'utente che ha apportato l\'ultima modifica al record.';
+$string['privacy:metadata:gradeshistory'] = 'Record delle valutazioni precedenti.';
 $string['privacy:metadata:history:loggeduser'] = 'ID dell\'utente autenticato al momento del cambio di versione.';
 $string['privacy:metadata:history:timemodified'] = 'Data e ora del cambio di versione della valutazione.';
 $string['privacy:metadata:itemshistory'] = 'Record delle versioni precedenti degli elementi di valutazione.';
 $string['privacy:metadata:outcomes'] = 'Record degli obiettivi.';
-$string['privacy:metadata:outcomeshistory'] = 'Record delle versioni precedenti degli obiettivi.';
 $string['privacy:metadata:outcomes:timemodified'] = 'Data e ora dell\'ultima modifica del record.';
 $string['privacy:metadata:outcomes:usermodified'] = 'L\'utente che ha apportato l\'ultima modifica al record.';
+$string['privacy:metadata:outcomeshistory'] = 'Record delle versioni precedenti degli obiettivi.';
 $string['privacy:metadata:scale'] = 'Record delle scale.';
-$string['privacy:metadata:scalehistory'] = 'Record delle versioni precedenti delle scale.';
 $string['privacy:metadata:scale:timemodified'] = 'Data e ora dell\'ultima modifica del record.';
 $string['privacy:metadata:scale:userid'] = 'L\'utente che ha apportato l\'ultima modifica al record.';
+$string['privacy:metadata:scalehistory'] = 'Record delle versioni precedenti delle scale.';
 $string['privacy:request:historyactiondelete'] = 'Elimina';
 $string['privacy:request:historyactioninsert'] = 'Inserisci';
 $string['privacy:request:historyactionupdate'] = 'Aggiorna';
@@ -828,12 +828,12 @@ $string['verbosescales_help'] = 'Una scala letterale utilizza parole al posto de
 $string['viewbygroup'] = 'Gruppo';
 $string['viewgrades'] = 'Visualizza valutazioni';
 $string['weight'] = 'Peso';
+$string['weight_help'] = 'Il valore utilizzato per determinare il valore relativo di più elementi di valutazione in una categoria o in un corso.';
 $string['weightcourse'] = 'Usa valutazioni pesate per il corso';
 $string['weightedascending'] = 'Ordinamento crescente per % pesata';
 $string['weighteddescending'] = 'Ordinamento decrescente per % pesata';
 $string['weightedpct'] = '% pesata';
 $string['weightedpctcontribution'] = 'Contributo alla % pesata';
-$string['weight_help'] = 'Il valore utilizzato per determinare il valore relativo di più elementi di valutazione in una categoria o in un corso.';
 $string['weightofa'] = 'Peso di {$a}';
 $string['weightorextracredit'] = 'Pesi o punti extra';
 $string['weightoverride'] = 'Adeguamento del peso';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability', language 'en', version '3.8'.
  *
- * @package   availability
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,12 +38,18 @@ $string['hidden_individual'] = 'Hidden entirely if user does not meet this condi
 $string['hidden_marker'] = '(hidden otherwise)';
 $string['hide_verb'] = 'Click to hide';
 $string['invalid'] = 'Please set';
-$string['itemheading'] = '{$a->number} {$a->type} restriction';
 $string['item_unknowntype'] = 'These restrictions use a plugin which is no longer available (if it is okay to remove that restriction, delete it below)';
+$string['itemheading'] = '{$a->number} {$a->type} restriction';
 $string['label_multi'] = 'Required restrictions';
 $string['label_sign'] = 'Restriction type';
 $string['list_and'] = 'All of:';
 $string['list_and_hidden'] = 'All of (hidden otherwise):';
+$string['list_or'] = 'Any of:';
+$string['list_or_hidden'] = 'Any of (hidden otherwise):';
+$string['list_root_and'] = 'Not available unless:';
+$string['list_root_and_hidden'] = 'Not available (hidden) unless:';
+$string['list_root_or'] = 'Not available unless any of:';
+$string['list_root_or_hidden'] = 'Not available (hidden) unless any of:';
 $string['listheader_multi_after'] = 'of the following';
 $string['listheader_multi_and'] = 'all';
 $string['listheader_multi_before'] = 'match';
@@ -52,12 +58,6 @@ $string['listheader_sign_before'] = 'Student';
 $string['listheader_sign_neg'] = 'must not';
 $string['listheader_sign_pos'] = 'must';
 $string['listheader_single'] = 'match the following';
-$string['list_or'] = 'Any of:';
-$string['list_or_hidden'] = 'Any of (hidden otherwise):';
-$string['list_root_and'] = 'Not available unless:';
-$string['list_root_and_hidden'] = 'Not available (hidden) unless:';
-$string['list_root_or'] = 'Not available unless any of:';
-$string['list_root_or_hidden'] = 'Not available (hidden) unless any of:';
 $string['manageplugins'] = 'Manage restrictions';
 $string['missingplugin'] = 'Missing restriction plugin';
 $string['or'] = 'or';
@@ -65,7 +65,7 @@ $string['privacy:metadata'] = 'The Access restriction subsystem does not store a
 $string['restrictaccess'] = 'Restrict access';
 $string['restrictbygroup'] = 'Add group/grouping access restriction';
 $string['setheading'] = '{$a->number} Set of {$a->count} restriction(s)';
+$string['show_verb'] = 'Click to display greyed-out';
 $string['shown_all'] = 'Displayed greyed-out if user does not meet conditions';
 $string['shown_individual'] = 'Displayed greyed-out if user does not meet this condition';
-$string['show_verb'] = 'Click to display greyed-out';
 $string['unknowncondition'] = 'Unknown condition (deleted condition plugin)';

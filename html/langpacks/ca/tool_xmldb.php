@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'ca', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,16 +32,16 @@ $string['backtomainview'] = 'Torna a l\'inici';
 $string['cannotuseidfield'] = 'No és pot inserir el camp "id". És una columna auto numèrica automàtica.';
 $string['change'] = 'Canvia';
 $string['charincorrectlength'] = 'Longitud incorrecta per a camp de tipus caràcter';
-$string['checkbigints'] = 'Comprova enters';
 $string['check_bigints'] = 'Cerca nombres enters incorrectes en la base de dades';
-$string['checkdefaults'] = 'Comprova valors per defecte';
 $string['check_defaults'] = 'Cerca valors per defecte inconsistents';
-$string['checkforeignkeys'] = 'Comprova claus foranes';
 $string['check_foreign_keys'] = 'Cerca violacions de claus foranes';
-$string['checkindexes'] = 'Comprova índexs';
 $string['check_indexes'] = 'Cerca índexs desapareguts en la base dades';
-$string['checkoraclesemantics'] = 'Comprova la semàntica';
 $string['check_oracle_semantics'] = 'Cerca semàntiques de longitud incorrectes';
+$string['checkbigints'] = 'Comprova enters';
+$string['checkdefaults'] = 'Comprova valors per defecte';
+$string['checkforeignkeys'] = 'Comprova claus foranes';
+$string['checkindexes'] = 'Comprova índexs';
+$string['checkoraclesemantics'] = 'Comprova la semàntica';
 $string['completelogbelow'] = '(Visualitza més avall el registre complet de la cerca.)';
 $string['confirmcheckbigints'] = 'Aquesta funció cercarà <a href="http://tracker.moodle.org/browse/MDL-11038"> camps d\'enters potencialment incorrectes</a> en el vostre servidor Moodle. Generarà automàticament (però sense executar-les) les sentències SQL necessàries per a tenir correctament definits tots els enters en la vostra base de dades.<br /><br />
 Una vegada generades, podeu copiar les sentències i executar-les de forma segura amb la vostra interfície SQL favorita (no oblideu fer abans una còpia de seguretat de les dades).<br /><br />
@@ -131,18 +131,18 @@ $string['keys'] = 'Claus';
 $string['listreservedwords'] = 'Llista de paraules reservades <br />(s\'utilitza per a mantenir actualitzat <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">paraules reservades XMLDB</a>)';
 $string['load'] = 'Carrega';
 $string['main_view'] = 'Vista principal';
-$string['masterprimaryuniqueordernomatch'] = 'Els camps de la vostra clau forana s\'han de llistar en el mateix ordre en què es llisten en la CLAU ÚNICA  de la taula referenciada.';
+$string['masterprimaryuniqueordernomatch'] = 'Els camps de la vostra clau forana s\'han d\'enumerar en el mateix ordre en què s\'enumeren a la CLAU ÚNICA de la taula referenciada.';
 $string['missing'] = 'Falten';
 $string['missingindexes'] = 'Índexs desapareguts';
 $string['mustselectonefield'] = 'Heu de seleccionar un camp per a veure les accions relatives a camps';
 $string['mustselectoneindex'] = 'Heu de seleccionar un índex per a veure les accions relatives a índexs';
 $string['mustselectonekey'] = 'Heu de seleccionar una clau per a veure les accions relatives a claus';
+$string['new_table_from_mysql'] = 'Taula nova des de MySQL';
 $string['newfield'] = 'Camp nou';
 $string['newindex'] = 'Índex nou';
 $string['newkey'] = 'Afegeix una clau';
 $string['newtable'] = 'Taula nova';
 $string['newtablefrommysql'] = 'Taula nova des de MySQL';
-$string['new_table_from_mysql'] = 'Taula nova des de MySQL';
 $string['nofieldsspecified'] = 'No heu especificat camps';
 $string['nomasterprimaryuniquefound'] = 'La columna o columnes referenciades per la vostra clau forana han d\'estar incloses com a CLAU primària o única en la taula referenciada. Fixeu-vos que no és suficient que la columna estigui en un ÍNDEX ÚNIC.';
 $string['nomissingindexesfound'] = 'No s\'han detectat índexs desapareguts. La vostra base de dades no necessita cap acció.';
@@ -179,15 +179,15 @@ $string['unknowntable'] = 'Està referenciant una taula desconeguda';
 $string['unload'] = 'Descarrega';
 $string['up'] = 'Amunt';
 $string['view'] = 'Mostra';
-$string['viewedited'] = 'Mostra editat';
-$string['vieworiginal'] = 'Mostra original';
-$string['viewphpcode'] = 'Mostra codi PHP';
 $string['view_reserved_words'] = 'Mostra paraules reservades';
-$string['viewsqlcode'] = 'Mostra codi SQL';
 $string['view_structure_php'] = 'Mostra estructura PHP';
 $string['view_structure_sql'] = 'Mostra estructura SQL';
 $string['view_table_php'] = 'Mostra taula PHP';
 $string['view_table_sql'] = 'Mostra taula SQL';
+$string['viewedited'] = 'Mostra editat';
+$string['vieworiginal'] = 'Mostra original';
+$string['viewphpcode'] = 'Mostra codi PHP';
+$string['viewsqlcode'] = 'Mostra codi SQL';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Claus foranes violades';
 $string['violatedforeignkeysfound'] = 'Trobades claus alienes violades';

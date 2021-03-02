@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'it', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,15 +70,15 @@ $string['evaluate'] = 'Valuta';
 $string['evaluatemodel'] = 'Valuta modello';
 $string['evaluationinbatches'] = 'I contenuti del sito sono calcoalti e memorizzati in gruppi. Il processo di valutazione può essere fermato in qualsiasi momento e riprenderà successivamente dal punto dove è stato interrotto';
 $string['evaluationmode'] = 'Modalità di valutazione';
-$string['evaluationmodecolconfiguration'] = 'Configurazione';
-$string['evaluationmodecoltrainedmodel'] = 'Modello addestrato';
-$string['evaluationmodeconfiguration'] = 'Valuta la configurazione del modello';
 $string['evaluationmode_help'] = 'Sono disponibili due modalità di valutazione:
 
 * Modello addestrato - i dati del sito saranno utilizzati per valutare l\'accuratezza del modello addestrato.
 * Configurazione - I dati del sito saranno suddivisi in dati di addestramento e di test in modo da addestrare il modello e valutare l\'accuratezza della configurazione del modello
 
 I modelli addestrati sono disponibili solamente se è stato importato nel sito un modello addestrato che non è stato addestrato nuovamente utilizzando i dati del sito.';
+$string['evaluationmodecolconfiguration'] = 'Configurazione';
+$string['evaluationmodecoltrainedmodel'] = 'Modello addestrato';
+$string['evaluationmodeconfiguration'] = 'Valuta la configurazione del modello';
 $string['evaluationmodeinfo'] = 'Il modello è stato importato. E\' possibile valutarne le prestazioni oppure valutare le prestazioni della configurazione del modello utilizzando i dati del sito.';
 $string['evaluationmodetrainedmodel'] = 'Valuta il modello addestrato';
 $string['executescheduledanalysis'] = 'Esegui analisi schedulata';

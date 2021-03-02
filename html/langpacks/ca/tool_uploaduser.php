@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'ca', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -51,12 +51,13 @@ $string['uploadpicture_cannotsave'] = 'No s\'ha pogut desar la imatge de l\'usua
 $string['uploadpicture_cannotunzip'] = 'No es pot descomprimir el fitxer de les imatges';
 $string['uploadpicture_invalidfilename'] = 'El nom del fitxer d\'imatge {$a} té caràcters no vàlids. Aquest fitxer s\'ha omès.';
 $string['uploadpicture_overwrite'] = 'Voleu sobreescriure les imatges d\'usuari existents?';
-$string['uploadpictures'] = 'Carrega imatges d\'usuaris';
-$string['uploadpictures_help'] = 'Les imatges dels usuaris poden ser pujades en un fitxer zip d\'imatges.  Els fitxers d\'imatges es solen anomenar atribut-escollit-usuari.extensió , per exemple usuari1234.jpg per a l\'usuari amb nom d\'usuari usuari1234.';
 $string['uploadpicture_userfield'] = 'Atribut d\'usuari utilitzat per aparellar les imatges:';
 $string['uploadpicture_usernotfound'] = 'No existeix l\'usuari amb camp \'{$a->userfield}\' igual a \'{$a->uservalue}\'. Aquest usuari s\'ha omès.';
 $string['uploadpicture_userskipped'] = 'S\'ha omès l\'usuari {$a} (ja té una imatge).';
 $string['uploadpicture_userupdated'] = 'S\'ha actualitzat la imatge de l\'usuari {$a}.';
+$string['uploadpictures'] = 'Carrega imatges d\'usuaris';
+$string['uploadpictures_help'] = 'Les imatges dels usuaris poden ser pujades en un fitxer zip d\'imatges.  Els fitxers d\'imatges es solen anomenar atribut-escollit-usuari.extensió , per exemple usuari1234.jpg per a l\'usuari amb nom d\'usuari usuari1234.';
+$string['uploaduser:uploaduserpictures'] = 'Puja fotografies d\'usuari';
 $string['uploadusers'] = 'Carrega usuaris';
 $string['uploadusers_help'] = '<p>En primer lloc, fixeu-vos que <strong>generalment no és necessari importar usuaris en massa</strong>. Si voleu minorar les tasques de manteniment, abans hauríeu d\'explorar les formes d\'autenticació que no requereixen un manteniment manual; per exemple, la connexió amb bases de dades externes o la possibilitat que els usuaris creïn els seus comptes (veg. la secció d\'autenticació dels menús d\'administració).</p>
 
@@ -89,7 +90,6 @@ jonest, verysecret, Tom, Jones, jonest@someplace.edu, en, 3663737, 1, Intro101, 
 reznort, somesecret, Trent, Reznor, reznort@someplace.edu, en_us, 6736733, 0, Advanced202, Section 3</font></p>';
 $string['uploaduserspreview'] = 'Previsualització de la càrrega d\'usuaris';
 $string['uploadusersresult'] = 'Resultats de la càrrega d\'usuaris';
-$string['uploaduser:uploaduserpictures'] = 'Puja fotografies d\'usuari';
 $string['useraccountupdated'] = 'S\'ha actualitzat l\'usuari';
 $string['useraccountuptodate'] = 'Usuari actualitzat';
 $string['userdeleted'] = 'S\'ha suprimit l\'usuari';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'plugin', language 'ko', version '3.8'.
  *
- * @package   plugin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     plugin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,7 @@ $string['checkforupdates'] = '사용가능한 업데이트 확인';
 $string['checkforupdateslast'] = '{$a}에 마지막으로 확인';
 $string['displayname'] = '플러그인 이름';
 $string['filterall'] = '모두 보기';
-$string['filtercontribonly'] = '기여만 보기';
+$string['filtercontribonly'] = '추가 플러그인만 보기';
 $string['filterupdatesonly'] = '업데이트할 수 있는 것만 보기';
 $string['moodleversion'] = '무들 {$a}';
 $string['noneinstalled'] = '이 유형의 플러그인은 설치되지 않았습니다.';
@@ -50,7 +50,7 @@ $string['requires'] = '필요로 하는 것';
 $string['rootdir'] = '디렉토리';
 $string['settings'] = '설정';
 $string['source'] = '소스';
-$string['sourceext'] = '기여된 것';
+$string['sourceext'] = '추가';
 $string['sourcestd'] = '표준';
 $string['status'] = '상태';
 $string['status_delete'] = '삭제 예정인것';
@@ -99,14 +99,14 @@ $string['type_mnetservice'] = 'MNet 서비스';
 $string['type_mnetservice_plural'] = 'MNet 서비스';
 $string['type_mod'] = '활동 모듈';
 $string['type_mod_plural'] = '활동 모듈';
-$string['type_plagiarism'] = '표절 방지';
-$string['type_plagiarism_plural'] = '표절방지 플러그인';
+$string['type_plagiarism'] = '표절검사 플러그인';
+$string['type_plagiarism_plural'] = '표절검사 플러그인';
 $string['type_portfolio'] = '포트폴리오';
 $string['type_portfolio_plural'] = '포트폴리오';
 $string['type_profilefield'] = '개인정보 항목 유형';
 $string['type_profilefield_plural'] = '개인정보 항목 유형';
-$string['type_qbehaviour'] = '질문 작동';
-$string['type_qbehaviour_plural'] = '질문 작동';
+$string['type_qbehaviour'] = '질문 진행방식';
+$string['type_qbehaviour_plural'] = '질문 진행방식';
 $string['type_qformat'] = '질문 가져오기/내보내기 형식';
 $string['type_qformat_plural'] = '질문 가져오기/내보내기 형식';
 $string['type_qtype'] = '질문 유형';
@@ -133,10 +133,6 @@ $string['validationmsg_componentmismatchtype'] = '추가기능 유형 불일치'
 $string['validationmsg_filenotexists'] = '압축을 푼 파일을 찾을 수 없습니다';
 $string['validationmsg_filesnumber'] = '충분한 파일을 패키지에서 찾을 수 없습니다';
 $string['validationmsg_filestatus'] = '모든 파일을 추출 할 수 없습니다';
-$string['validationmsglevel_debug'] = '디버그';
-$string['validationmsglevel_error'] = '오류';
-$string['validationmsglevel_info'] = 'OK';
-$string['validationmsglevel_warning'] = '경고';
 $string['validationmsg_maturity'] = '선언된 성숙도 수준';
 $string['validationmsg_missingexpectedlangenfile'] = '영어 언어 파일 이름 불일치';
 $string['validationmsg_missingexpectedlangenfile_info'] = '주어진 추가 기능 유형은 있어야 하는 영어 파일 {$a}이 없습니다.';
@@ -154,6 +150,10 @@ $string['validationmsg_rootdir'] = '설치할 추가기능 이름';
 $string['validationmsg_rootdirinvalid'] = '잘못된 추가 기능 이름';
 $string['validationmsg_targetexists'] = '대상 위치가 이미 존재합니다';
 $string['validationmsg_unknowntype'] = '알수없는 플러그인 유형';
+$string['validationmsglevel_debug'] = '디버그';
+$string['validationmsglevel_error'] = '오류';
+$string['validationmsglevel_info'] = 'OK';
+$string['validationmsglevel_warning'] = '경고';
 $string['version'] = '버전';
 $string['versiondb'] = '현재 버전';
 $string['versiondisk'] = '새 버전';

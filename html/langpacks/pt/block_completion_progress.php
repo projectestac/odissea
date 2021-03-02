@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_completion_progress', language 'pt', version '3.8'.
  *
- * @package   block_completion_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_completion_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -78,11 +78,11 @@ $string['no_activities_config_message'] = 'Não existem atividades ou recursos c
 $string['no_activities_message'] = 'Não existem atividades ou recursos a serem monitorizados. Altere as configurações para ativar a monitorização.';
 $string['no_blocks'] = 'Não está configurado nenhum bloco de Barra de Progresso nas suas disciplinas.';
 $string['no_courses'] = 'Não está inscrito em nenhuma disciplina. Apenas serão exibidas as barras de disciplinas em que está inscrito.';
-$string['not_all_expected_set'] = 'Nem todas as atividades com verificação da conclusão têm definida a "{$a}".';
+$string['no_visible_activities_message'] = 'Todas as atividades monitorizadas estão ocultas.';
 $string['notCompleted_colour'] = '#C71C22';
 $string['notCompleted_colour_descr'] = 'Código HTML da cor dos atuais elementos que ainda não estão concluídos';
 $string['notCompleted_colour_title'] = 'Cor dos elementos não-concluídos';
-$string['no_visible_activities_message'] = 'Todas as atividades monitorizadas estão ocultas.';
+$string['not_all_expected_set'] = 'Nem todas as atividades com verificação da conclusão têm definida a "{$a}".';
 $string['now_indicator'] = 'AGORA';
 $string['overview'] = 'Visão global dos alunos';
 $string['pluginname'] = 'Barra de Progresso';

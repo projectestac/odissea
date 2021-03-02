@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_gapselect', language 'fr', version '3.8'.
  *
- * @package   qtype_gapselect
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_gapselect
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,10 +39,10 @@ $string['errorquestiontextblank'] = 'Veuillez saisir le texte de la question.';
 $string['group'] = 'Groupe';
 $string['pleaseputananswerineachbox'] = 'Veuillez placer une réponse dans chaque boîte';
 $string['pluginname'] = 'Sélectionner les mots manquants';
-$string['pluginnameadding'] = 'Ajout d\'une question permettant de sélectionner le mot manquant';
-$string['pluginnameediting'] = 'Modification d\'une question permettant de sélectionner le mot manquant';
 $string['pluginname_help'] = 'Les questions à mots manquants demandent au participant de choisir les réponses correctes dans des menus déroulants. Les marqueurs [[1]], [[2]], [[3]]… sont utilisés comme paramètres fictifs dans le texte de la question, avec les choix corrects correspondants 1, 2, 3… respectivement. Des réponses supplémentaires (distracteurs) peuvent être ajoutées pour rendre la question plus difficile à répondre. Les choix disponibles peuvent être groupés afin de restreindre les réponses disponibles dans chaque menu déroulant.';
 $string['pluginname_link'] = 'question/type/gapselect';
+$string['pluginnameadding'] = 'Ajout d\'une question permettant de sélectionner le mot manquant';
+$string['pluginnameediting'] = 'Modification d\'une question permettant de sélectionner le mot manquant';
 $string['pluginnamesummary'] = 'Les mots manquants dans le texte de la question sont remplis par des menus déroulants.';
 $string['privacy:metadata'] = 'Le plugin de type de question Sélectionner les mots manquants n\'enregistre aucune donnée personnelle.';
 $string['shuffle'] = 'Mélanger';

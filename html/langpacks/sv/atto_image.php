@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_image', language 'sv', version '3.8'.
  *
- * @package   atto_image
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_image
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,16 +32,19 @@ $string['alignment_middle'] = 'Mitten';
 $string['alignment_right'] = 'Höger';
 $string['alignment_top'] = 'Topp';
 $string['browserepositories'] = 'Bläddra genom arkiv...';
+$string['constrain'] = 'Ändra storlek automatiskt';
 $string['createimage'] = 'Infoga bild';
+$string['customstyle'] = 'Anpassat utseende';
 $string['enteralt'] = 'Beskriv bilden för någon som inte kan se den.';
-$string['enterurl'] = 'Ange URL';
+$string['enterurl'] = 'Infoga URL';
 $string['height'] = 'Höjd';
 $string['imageproperties'] = 'Bildegenskaper';
-$string['pluginname'] = 'Bild';
-$string['presentation'] = 'Beskrivning behövs ej';
+$string['pluginname'] = 'Infoga eller redigera bild';
+$string['presentation'] = 'Beskrivning inte obligatorisk';
 $string['presentationoraltrequired'] = 'Bilder måste ha en beskrivning förutom när det är markerat att den inte behövs.';
 $string['preview'] = 'Förhandsgranska';
-$string['saveimage'] = 'Spara bilden';
+$string['privacy:metadata'] = 'Plugin-modulen atto_image lagrar ingen personlig information.';
+$string['saveimage'] = 'Spara bild';
 $string['size'] = 'Storlek';
 $string['uploading'] = 'Uppladdning pågår, v.g. vänta.';
 $string['width'] = 'Bredd';

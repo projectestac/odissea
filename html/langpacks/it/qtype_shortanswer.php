@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'it', version '3.8'.
  *
- * @package   qtype_shortanswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_shortanswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,8 +38,8 @@ $string['filloutoneanswer'] = 'Devi fornire almeno una possibile risposta. Le ri
 $string['notenoughanswers'] = 'Questo tipo di domanda richiede almeno {$a} risposte';
 $string['pleaseenterananswer'] = 'Per favore inserisci una risposta.';
 $string['pluginname'] = 'Risposta breve';
+$string['pluginname_help'] = 'In risposta a una domanda (che può comprendere anche un\'immagine) lo studente scriverà una parola o una breve frase. Ci possono essere anche più risposte esatte, ciascuna con un voto diverso. Se è selezionata l\'opzione "case sensitive,"si può avere un punteggio differente per "Parola" e "parola".';
 $string['pluginnameadding'] = 'Creazione domanda Risposta breve';
 $string['pluginnameediting'] = 'Modifica domanda Risposta breve';
-$string['pluginname_help'] = 'In risposta a una domanda (che può comprendere anche un\'immagine) lo studente scriverà una parola o una breve frase. Ci possono essere anche più risposte esatte, ciascuna con un voto diverso. Se è selezionata l\'opzione "case sensitive,"si può avere un punteggio differente per "Parola" e "parola".';
 $string['pluginnamesummary'] = 'Consente la risposta con una o più parole. La valutazione avviene confrontando la risposta con modelli di risposta che possono anche contenere caratteri jolly.';
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Risposta breve\' non memorizza dati personali.';

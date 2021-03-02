@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'en', version '3.8'.
  *
- * @package   qtype_ddmarker
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddmarker
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -77,10 +77,10 @@ $string['nolabel'] = 'No label text';
 $string['noofdrags'] = 'Number';
 $string['pleasedragatleastonemarker'] = 'Your answer is not complete; you must place at least one marker on the image.';
 $string['pluginname'] = 'Drag and drop markers';
-$string['pluginnameadding'] = 'Adding drag and drop markers';
-$string['pluginnameediting'] = 'Editing drag and drop markers';
 $string['pluginname_help'] = 'Drag and drop markers require the respondent to drag text labels and drop them into defined drop zones on a background image.';
 $string['pluginname_link'] = 'question/type/ddmarker';
+$string['pluginnameadding'] = 'Adding drag and drop markers';
+$string['pluginnameediting'] = 'Editing drag and drop markers';
 $string['pluginnamesummary'] = 'Markers are dragged and dropped onto a background image.
 
 Note: This question type is not accessible to users who are visually impaired.';

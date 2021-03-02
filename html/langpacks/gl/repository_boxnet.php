@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_boxnet', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_boxnet', language 'gl', version '3.8'.
  *
- * @package   repository_boxnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_boxnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,7 +29,7 @@ $string['apikey'] = 'Chave da API';
 $string['boxnet:view'] = 'Ver o repositorio de box.net';
 $string['cannotcreatereference'] = 'Non é posíbel crear unha referencia, non hai permisos abondo para compartir o ficheiro en Box.';
 $string['clientid'] = 'ID do cliente';
-$string['clientsecret'] = 'Segredo do cliente';
+$string['clientsecret'] = 'Secreto do cliente';
 $string['configplugin'] = 'Configuración de Box.net';
 $string['filesourceinfo'] = 'Box ({$a->fullname}): {$a->filename}';
 $string['information'] = 'Obteña unha chave para a API da <a href="http://www.box.net/developers/services">páxina de desenvolvemento de Box.net</a> para o seu sitio Moodle.';

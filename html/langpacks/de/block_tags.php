@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_tags', language 'de', version '3.8'.
  *
- * @package   block_tags
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_tags
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,7 +34,7 @@ $string['pluginname'] = 'Tags';
 $string['privacy:metadata'] = 'Der Block \'Tags\' zeigt nur Daten an, die an anderen Orten gespeichert sind.';
 $string['recursivecontext'] = 'Abhängigkeiten einbeziehen';
 $string['recursivecontext_help'] = 'Diese Option legt fest, ob Tags nur im aktuellen Kontext angezeigt werden, aber nicht aus untergeordneten Kontexten. Es können z.B. Tags des Kurses angezeigt, aber Tags der Kursaktivitäten ausgeblendet sein.';
-$string['standardonly'] = 'Nur Standard';
+$string['standardonly'] = 'Nur standardmäßige';
 $string['tagcollection'] = 'Tag-Collection';
 $string['tagcollection_help'] = 'Wählen Sie die Collection aus, deren Tags angezeigt werden sollen. Wenn Sie \'beliebige\' auswählen, werden alle Collections außer denen angezeigt, die mit * markiert sind.';
 $string['taggeditemscontext'] = 'Tags im Kontext';

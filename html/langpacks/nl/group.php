@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'nl', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,10 +64,10 @@ $string['enablemessaging'] = 'Berichten naar groep';
 $string['enablemessaging_help'] = 'Indien ingeschakeld kunnen groepsleden berichten sturen naar andere leden in hun groep via het berichtenpaneel.';
 $string['encoding'] = 'Codering';
 $string['enrolmentkey'] = 'Cursussleutel';
-$string['enrolmentkeyalreadyinuse'] = 'Deze aanmeldingssleutel is al in gebruik voor een andere groep.';
 $string['enrolmentkey_help'] = 'Een aanmeldsleutel beperkt de toegang tot de cursus tot leerlingen die de sleutel kennen. Als een groepsaanmeldingssleutel is opgegeven, dan zal het ingeven van de sleutel de leerling niet alleen toegang geven tot de cursus, maar hem ook automatisch lid maken van deze groep.
 
 Opmerking: Groepaanmeldingssleutels moet ingeschakeld zijn in de instellingen van Zelf aanmelden en daar moet ook een aanmeldingssleutel voor de cursus opgegeven worden. Het geven van die sleutel zal resulteren in een aanmelding in de cursus zonder lid te worden van een groep.';
+$string['enrolmentkeyalreadyinuse'] = 'Deze aanmeldingssleutel is al in gebruik voor een andere groep.';
 $string['erroraddremoveuser'] = 'Fout bij toevoegen/verwijderen van gebruiker {$a} aan groep';
 $string['erroreditgroup'] = 'Fout bij het maken/updaten van groep {$a}';
 $string['erroreditgrouping'] = 'Fout bij het maken/updaten van groepering {$a}';
@@ -97,10 +97,10 @@ $string['groupinfo'] = 'Informatie over geselecteerde groep';
 $string['groupinfomembers'] = 'Informatie over geselecteerde groepsleden';
 $string['groupinfopeople'] = 'Informatie over geselecteerde gebruikers';
 $string['grouping'] = 'Groepering';
-$string['groupingaddedsuccesfully'] = 'Groepering {$a} toevoegen gelukt';
-$string['groupingdescription'] = 'Groeperingsbeschrijving';
 $string['grouping_help'] = 'Een groepering is een verzameling groepen in een cursus.
 Als een groepering geselecteerd wordt, dan zullen de gebruikers in de groepen die deel uit maken van de groepering kunnen samenwerken.';
+$string['groupingaddedsuccesfully'] = 'Groepering {$a} toevoegen gelukt';
+$string['groupingdescription'] = 'Groeperingsbeschrijving';
 $string['groupingname'] = 'Groeperingsnaam';
 $string['groupingnameexists'] = 'De groeperingsnaam \'{$a}\' bestaat al in deze cursus. Kies een andere naam.';
 $string['groupings'] = 'Groeperingen';
@@ -113,8 +113,6 @@ $string['groupmembers'] = 'Groepsleden';
 $string['groupmemberssee'] = 'Bekijk groepsleden';
 $string['groupmembersselected'] = 'Leden van de geselecteerde groep';
 $string['groupmode'] = 'Groepsmodus';
-$string['groupmodeforce'] = 'Forceer groepsmodus';
-$string['groupmodeforce_help'] = 'Als de groepsmodus geforceerd wordt, dan zal de groepsmodus van de cursus op elke activiteit toegepast worden. De instellingen van de groepsmodus in de activiteitenmodules wordt dan genegeerd.';
 $string['groupmode_help'] = 'Er zijn drie types van groepsmodus:
 
 * Geen groepen
@@ -122,6 +120,8 @@ $string['groupmode_help'] = 'Er zijn drie types van groepsmodus:
 * Zichtbare groepen - elke leerling werkt binnen zijn eigen groep, maar kan de andere groepen ook zien
 
 De groepsmodus, ingesteld op cursusniveau is de standaardmodus voor alle activiteiten in de cursus. Elke activiteit die groepen ondersteunt kan ook zijn eigen groepsmodus ingesteld hebben. Hoewel, als de groepsmodus op cursusniveau geforceerd wordt, dan wordt de instelling op niveau van de activiteit genegeerd.';
+$string['groupmodeforce'] = 'Forceer groepsmodus';
+$string['groupmodeforce_help'] = 'Als de groepsmodus geforceerd wordt, dan zal de groepsmodus van de cursus op elke activiteit toegepast worden. De instellingen van de groepsmodus in de activiteitenmodules wordt dan genegeerd.';
 $string['groupmy'] = 'Mijn groep';
 $string['groupname'] = 'Groepsnaam';
 $string['groupnameexists'] = 'De groepnaam \'{$a}\' bestaat al in deze cursus. Kies een andere.';
@@ -168,8 +168,8 @@ $string['nogroupsassigned'] = 'Geen groepen toegewezen';
 $string['nopermissionforcreation'] = 'Kan de groep "{$a}" niet maken omdat je niet over voldoende rechten beschikt om dat te doen.';
 $string['nosmallgroups'] = 'Voorkom laatste te kleine groep';
 $string['notingroup'] = 'Negeer gebruikers in groepen';
-$string['notingrouping'] = '[Niet in een groepering]';
-$string['notingrouplist'] = '[Niet in een groep]';
+$string['notingrouping'] = 'Niet in een groepering';
+$string['notingrouplist'] = 'Niet in een groep';
 $string['nousersinrole'] = 'Er zijn geen geschikte gebruikers met de geselecteerde rol';
 $string['number'] = 'Aantal groepen of aantal leden per groep';
 $string['numgroups'] = 'Aantal groepen';

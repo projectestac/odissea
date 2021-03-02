@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'question', language 'ca', version '3.8'.
  *
- * @package   question
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     question
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -109,7 +109,7 @@ $string['correctfeedback'] = 'Per a qualsevol resposta correcta';
 $string['correctfeedbackdefault'] = 'La resposta és correcta.';
 $string['created'] = 'Creació';
 $string['createdby'] = 'Creada per ';
-$string['createdmodifiedheader'] = 'Creació / darrera modificació';
+$string['createdmodifiedheader'] = 'Creat / darrera modificació';
 $string['createnewquestion'] = 'Crea una nova pregunta...';
 $string['cwrqpfs'] = 'Preguntes aleatòries que seleccionen preguntes de subcategories';
 $string['cwrqpfsinfo'] = '<p>Durant l\'actualització a Moodle 1.9 se separaran les categories de preguntes en diferents contextos. Caldrà canviar l\'estat de publicació d\'algunes preguntes i categories de preguntes del vostre lloc. Això és necessari en casos com el vostre, quan hi ha preguntes «aleatòries» en un qüestionari definides de manera que trien preguntes de subcategories i alguna d\'aquestes subcategories té un estat de publicació diferent de l\'estat de la categoria mare on està creada la pregunta aleatòria.</p>
@@ -253,12 +253,12 @@ $string['markedoutofmax'] = 'Puntuat sobre {$a}';
 $string['markoutofmax'] = 'Puntuació {$a->mark} sobre {$a->max}';
 $string['marks'] = 'Puntuacions';
 $string['matchgrades'] = 'Qualificacions coincidents';
-$string['matchgradeserror'] = 'Error si la qualificació no és a la llista';
 $string['matchgrades_help'] = 'Les qualificacions importades han de coincidir amb algun dels valors de la llista fixa de qualficacions vàlides: 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0  (els valors negatius també són permesos). Pels valors que no coincideixin exactament amb la llista anterior, hi ha dues opcions:
 
 * Error si no és a la llista - Si una pregunta conté qualificacions que no es troben a la llista, la pregunta no s\'importa i es visualitza un missatge d\'error.
 
 * Valor més proper si no és a la llista - Si es troba una qualificació que no és a la llista, se substitueix pel valor més pròxim de la llista.';
+$string['matchgradeserror'] = 'Error si la qualificació no és a la llista';
 $string['matchgradesnearest'] = 'Qualificació més propera si no és a la llista.';
 $string['missingcourseorcmid'] = 'Cal el courseid o cmid per imprimir la pregunta.';
 $string['missingcourseorcmidtolink'] = 'Cal el courseid o cmid per al get_question_edit_link.';
@@ -299,7 +299,7 @@ $string['notyetanswered'] = 'No s\'ha respost encara';
 $string['notyourpreview'] = 'Aquesta previsualització no us pertany';
 $string['novirtualquestiontype'] = 'No es disposa d\'un tipus virtual de pregunta per a la pregunta {$a}';
 $string['numqas'] = 'Nombre d\'intents de pregunta';
-$string['numquestions'] = 'Cap pregunta';
+$string['numquestions'] = 'Nombre de preguntes';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} ocultes)';
 $string['options'] = 'Opcions';
 $string['page-question-category'] = 'Pàgina de categories de preguntes';

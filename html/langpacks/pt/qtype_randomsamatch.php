@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_randomsamatch', language 'pt', version '3.8'.
  *
- * @package   qtype_randomsamatch
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_randomsamatch
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,10 +29,10 @@ $string['insufficientoptions'] = 'As opções de seleção para esta pergunta s�
 $string['nosaincategory'] = 'Não existem perguntas de resposta curta na categoria que escolheu \'{$a->catname}\'. Escolha uma categoria diferente, ou crie algumas perguntas nesta categoria.';
 $string['notenoughsaincategory'] = 'Existe(m) só {$a->nosaquestions} perguntas de resposta curta na categoria que escolheu \'{$a->catname}\'. Escolha uma categoria diferente, crie mais perguntas nesta categoria ou reduza o número de perguntas que selecionou.';
 $string['pluginname'] = 'Correspondência de respostas curtas aleatórias';
-$string['pluginnameadding'] = 'A adicionar pergunta de correspondência de respostas curtas aleatórias';
-$string['pluginnameediting'] = 'A editar pergunta de correspondência de respostas curtas aleatórias';
 $string['pluginname_help'] = 'Na perspetiva do aluno esta pergunta é similar à de correspondência. A diferença é que a lista de itens (perguntas) para correspondência é retirada aleatoriamente do conjunto de perguntas de resposta curta disponíveis numa categoria. Para tal, devem existir perguntas de resposta curta em número suficiente, caso contrário é exibida uma mensagem de erro.';
 $string['pluginname_link'] = 'question/type/randomsamatch';
+$string['pluginnameadding'] = 'A adicionar pergunta de correspondência de respostas curtas aleatórias';
+$string['pluginnameediting'] = 'A editar pergunta de correspondência de respostas curtas aleatórias';
 $string['pluginnamesummary'] = 'Esta pergunta é exibida como uma pergunta de correspondência, mas é criada aleatoriamente com base nas perguntas de resposta curta existentes numa categoria específica.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Correspondência de respostas curtas aleatórias não armazena quaisquer dados pessoais.';
 $string['randomsamatch'] = 'Correspondência aleatória de resposta curta';

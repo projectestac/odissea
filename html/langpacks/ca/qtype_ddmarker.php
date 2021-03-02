@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'ca', version '3.8'.
  *
- * @package   qtype_ddmarker
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddmarker
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -67,9 +67,9 @@ $string['nolabel'] = 'No hi ha text a l\'etiqueta';
 $string['noofdrags'] = 'Número';
 $string['pleasedragatleastonemarker'] = 'La vostra resposta és incompleta; heu de posar com a mínim un marcador a la imatge.';
 $string['pluginname'] = 'Arrossegar i deixar anar marcadors';
+$string['pluginname_help'] = 'Arrossegar i deixar anar marcadors demana que qui respon arrossegui etiquetes de text i les deixi anar dins de zones de col·locació definides sobre una imatge de fons.';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'arrossegar i deixar anar marcadors';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'arrossegar i deixar anar marcadors';
-$string['pluginname_help'] = 'Arrossegar i deixar anar marcadors demana que qui respon arrossegui etiquetes de text i les deixi anar dins de zones de col·locació definides sobre una imatge de fons.';
 $string['pluginnamesummary'] = 'Permet definir marcadors que s\'hauran d\'arrossegar i deixar anar sobre una imatge de fons.';
 $string['previewareaheader'] = 'Previsualitza';
 $string['previewareamessage'] = 'Seleccioneu una imatge de fons, afegiu text a les etiquetes per als marcadors i definiu les zones de destí sobre la imatge de fons on s\'hauran d\'arrossegar.';

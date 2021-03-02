@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshop', language 'ja', version '3.8'.
  *
- * @package   workshop
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshop
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -82,11 +82,11 @@ $string['calculatesubmissiongrades'] = '提出に対する評点を計算する'
 $string['calculatesubmissiongradesdetails'] = '期待数: {$a->expected}<br />算出数: {$a->calculated}';
 $string['chooseuser'] = 'ユーザを選択する ...';
 $string['clearaggregatedgrades'] = 'すべての評点総計をクリアする';
-$string['clearaggregatedgradesconfirm'] = '本当に計算済みの提出に対する評点および評価に対する評点をクリアしてもよろしいですか?';
 $string['clearaggregatedgrades_help'] = '提出に対する評点および評価に対する評点の総計がリセットされます。あなたは成績評価フェースでこれらの評点を最初から再計算することができます。';
+$string['clearaggregatedgradesconfirm'] = '本当に計算済みの提出に対する評点および評価に対する評点をクリアしてもよろしいですか?';
 $string['clearassessments'] = '評価をクリアする';
-$string['clearassessmentsconfirm'] = '本当にすべての評価に対する評点をクリアしてもよろしいですか? あなたは自力で情報を元に戻すことができなくなります。また、評価者は割り当てられた提出を再度評価することになります。';
 $string['clearassessments_help'] = '提出に対する計算済み評点および評価に対する計算済み評点がリセットされます。評価フォームに入力された内容は保持されますが評点を再計算するため評価者は評価フォームを再度開いて保存する必要があります。';
+$string['clearassessmentsconfirm'] = '本当にすべての評価に対する評点をクリアしてもよろしいですか? あなたは自力で情報を元に戻すことができなくなります。また、評価者は割り当てられた提出を再度評価することになります。';
 $string['conclusion'] = '結論';
 $string['conclusion_help'] = '結論は活動の最後に参加者に表示されます。';
 $string['configexamplesmode'] = 'ワークショップ評価例のデフォルトモード';
@@ -160,10 +160,11 @@ $string['formatpeergradeoverweighted'] = '<span class="grade">{$a->grade}</span>
 $string['formatpeergradeweighted'] = '	
 <span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span> @ <span class="weight">{$a->weight}</span>';
 $string['givengrades'] = '与えた評点';
+$string['grade_grading_name'] = '評価';
+$string['grade_submission_name'] = '提出';
 $string['gradecalculated'] = '提出に対する計算済み評点';
 $string['gradedecimals'] = '評点の小数位';
 $string['gradegivento'] = '&gt;';
-$string['grade_grading_name'] = '評価';
 $string['gradeinfo'] = '評点: {$a->received} / {$a->max}';
 $string['gradeitemassessment'] = '{$a->workshopname} (評定)';
 $string['gradeitemsubmission'] = '	
@@ -171,33 +172,32 @@ $string['gradeitemsubmission'] = '
 $string['gradeover'] = '提出に対する評点をオーバーライドする';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'ワークショップ評定レポート';
-$string['grade_submission_name'] = '提出';
 $string['gradetopassgrading'] = '評価合格点';
 $string['gradetopasssubmission'] = '提出合格点';
 $string['gradinggrade'] = '評価に対する評点';
-$string['gradinggradecalculated'] = '評価に対する計算済み評点';
 $string['gradinggrade_help'] = 'この設定では提出の評価に関して取得する最大評点を指定します。';
+$string['gradinggradecalculated'] = '評価に対する計算済み評点';
 $string['gradinggradeof'] = '評価に対する評点 (最大 {$a})';
 $string['gradinggradeover'] = '評価に対する評点をオーバーライドする';
 $string['gradingsettings'] = '評定設定';
 $string['groupnoallowed'] = 'あなたはこのワークショップ内のグループにアクセスすることはできません。';
 $string['iamsure'] = 'はい、実行してください';
 $string['indicator:cognitivedepth'] = 'ワークショップ認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はワークショップ活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'ワークショップ認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がワークショップ活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信, フィードバックの閲覧, フィードバックへのコメント, フィードバック閲覧後の再送信)。';
-$string['indicator:cognitivedepth_help'] = 'この指標はワークショップ活動で学生が到達した認識深度に基づきます。';
 $string['indicator:socialbreadth'] = 'ワークショップ社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はワークショップ活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'ワークショップ社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がワークショップ活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
-$string['indicator:socialbreadth_help'] = 'この指標はワークショップ活動で学生が到達した社会的広がりに基づきます。';
 $string['info'] = '情報';
 $string['instructauthors'] = '提出のインストラクション';
 $string['instructreviewers'] = '評価のインストラクション';
 $string['introduction'] = '説明';
 $string['latesubmissions'] = '提出期限後の提出';
-$string['latesubmissionsallowed'] = '提出期限後の提出は許可されています。';
 $string['latesubmissions_desc'] = '提出期限後の提出を許可します。';
 $string['latesubmissions_help'] = 'この設定を有効にした場合、作成者は提出期限後または評価フェーズ時にワークを提出することができます。提出期限後の提出は編集することができません。';
+$string['latesubmissionsallowed'] = '提出期限後の提出は許可されています。';
 $string['legacyallocationplugincron'] = 'レガシーcronワークショップ割り当て';
 $string['maxbytes'] = '最大提出添付サイズ';
 $string['modulename'] = 'ワークショップ';
@@ -312,13 +312,13 @@ $string['someuserswosubmission'] = 'ワークを提出していない作成者�
 $string['sortasc'] = '昇順ソート';
 $string['sortdesc'] = '降順ソート';
 $string['strategy'] = '評定方法';
-$string['strategyhaschanged'] = '編集のためにフォームが開かれて以降、ワークショップ評定方法が変更されました。';
 $string['strategy_help'] = '評定方法では使用される評価フォームおよび提出の評定方法を決定します。以下4つのオプションがあります:
 
 * 累積評価 - 指定された状況に関してコメントおよび評点が与えられます。
 * コメント - 指定された状況ににコメントが与えられますが評点は与えられません。
 * エラー数 - 指定された条件に関してコメントおよびyes/no評価が与えられます。
 * ルーブリック - 指定されたクライテリアに関してレベル評価が与えられます。';
+$string['strategyhaschanged'] = '編集のためにフォームが開かれて以降、ワークショップ評定方法が変更されました。';
 $string['submission'] = '提出';
 $string['submissionattachment'] = '添付';
 $string['submissionby'] = '提出 by {$a}';
@@ -396,10 +396,10 @@ $string['usepeerassessment_help'] = 'この設定を有効にした場合、ユ�
 $string['userdatecreated'] = '提出日時: <span>{$a}</span>';
 $string['userdatemodified'] = '修正日時: <span>{$a}</span>';
 $string['userplan'] = 'ワークショッププランナ';
+$string['userplan_help'] = 'ワークショッププランナでは活動のすべてのフェーズおよびタスクごとのフェーズ一覧を表示します。現在のフェーズはハイライトされ完了したタスクにはチェックが表示されます。';
 $string['userplanaccessibilityskip'] = '現在のタスクをスキップする';
 $string['userplanaccessibilitytitle'] = '{$a} フェーズのワークショップタイムライン';
 $string['userplancurrentphase'] = '現在のフェーズ';
-$string['userplan_help'] = 'ワークショッププランナでは活動のすべてのフェーズおよびタスクごとのフェーズ一覧を表示します。現在のフェーズはハイライトされ完了したタスクにはチェックが表示されます。';
 $string['useselfassessment'] = '自己評価を使用する';
 $string['useselfassessment_desc'] = '学生は自分自身のワークを評価することができます。';
 $string['useselfassessment_help'] = 'この設定を有効にした場合、ユーザには評価するために自分の提出が割り当てられます。また、自分自身の提出に対する評定に加えて評価に対する評定を受け取ります。';
@@ -413,7 +413,6 @@ $string['workshop:editdimensions'] = '評価フォームを編集する';
 $string['workshop:exportsubmissions'] = '提出をエクスポートする';
 $string['workshop:ignoredeadlines'] = '時間制限を無視する';
 $string['workshop:manageexamples'] = '提出例を管理する';
-$string['workshopname'] = 'ワークショップ名';
 $string['workshop:overridegrades'] = '計算済み評定をオーバーライドする';
 $string['workshop:peerassess'] = '相互評価';
 $string['workshop:publishsubmissions'] = '提出を公開する';
@@ -426,6 +425,7 @@ $string['workshop:viewauthornames'] = '作成者名を表示する';
 $string['workshop:viewauthorpublished'] = '公開された提出の作成者を表示する';
 $string['workshop:viewpublishedsubmissions'] = '公開済み提出を表示する';
 $string['workshop:viewreviewernames'] = '評価者名を表示する';
+$string['workshopname'] = 'ワークショップ名';
 $string['yourassessmentfor'] = 'あなたの {$a} の評価';
 $string['yourgrades'] = 'あなたの評点';
 $string['yoursubmission'] = 'あなたの提出課題';

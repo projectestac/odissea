@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,25 +12,27 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'error', language 'eu', version '3.8'.
  *
- * @package   error
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     error
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['TODO'] = 'EGITEKOAK';
 $string['activityisscheduledfordeletion'] = 'Jarduera-ezabaketa martxan da...';
 $string['agedigitalconsentmapinvalidage'] = '"{$a}" ez da balio baliagarria adinerako.';
-$string['agedigitalconsentmapinvalidcomma'] = '"{$a}"-(e)k koma banatzaile bat baino gehiago edo gutxiago dauka.';
+$string['agedigitalconsentmapinvalidcomma'] = '"{$a}"(e)k koma banatzaile bat baino gehiago edo gutxiago dauka.';
 $string['agedigitalconsentmapinvalidcountry'] = '"{$a}" ez da herrialde-kode baliozkoa.';
 $string['agedigitalconsentmapinvaliddefault'] = 'Lehenetsitako (*) balioa falta da.';
 $string['agelocationverificationdisabled'] = 'Adina eta kokapenaren egiaztapena desgaituta dago.';
-$string['alreadyloggedin'] = 'Dagoeneko {$a} gisa identifikatuta zaude, beste erabiltzaile bat bezala identifikatzeko lehenik irten egin behar duzu.';
+$string['alreadyloggedin'] = 'Dagoeneko {$a} gisa identifikatuta zaude, beste erabiltzaile bat bezala identifikatzeko aurretik irten behar zara.';
 $string['authnotexisting'] = 'Autorizazio-plugina ez da existitzen';
 $string['backupcontainexternal'] = 'Segurtasun-fitxategi honek lokalean konfiguratuta ez dauden kanpoko Moodle sarerako ostalariak ditu.';
 $string['backuptablefail'] = 'Segurtasun-kopiaren taulak EZ dira ondo sortu!';
@@ -112,13 +113,13 @@ $string['cannotimportgrade'] = 'Errorea kalifikazioak inportatzean';
 $string['cannotinsertgrade'] = 'Ezin da kalifikazio-elementurik txertatu ikastaroaren ID-rik gabe!';
 $string['cannotinsertrate'] = 'Ezin da beste kalifikazio bat txertatu ({$a->id} = {$a->rating})';
 $string['cannotinsertrecord'] = 'Ezin da {$a} ID-a duen erregistro berria txertatu';
-$string['cannotmailconfirm'] = 'Errorea pasahitza aldatzeko baieztatzeko e-maila bidaltzean';
+$string['cannotmailconfirm'] = 'Errorea pasahitza aldatzeko berresteko e-maila bidaltzean';
 $string['cannotmanualctrack'] = 'Jarduerak ez du eskuz osatutzat emateko jarraipenik';
 $string['cannotmapfield'] = 'Parekatze kolisioa aurkitu da - bi eremuk kalifikazio-elementu berarekin parekatuta daude {$a}';
 $string['cannotmarktopic'] = 'Ezin da gai hau markatu ikastaro honetan';
 $string['cannotmigratedatacomments'] = 'Ezin dira iruzkinak migratu datuen modulutik';
 $string['cannotmodulename'] = 'Ezin da modulu-izena lortu nabigazioa eraikitzean';
-$string['cannotmoduletype'] = 'Ezin da modulu-mota lortu nabigazioa eraikitzean';
+$string['cannotmoduletype'] = 'Ezin da modulu mota lortu nabigazioa eraikitzean';
 $string['cannotmovecategory'] = 'Ezin da kategoria mugitu';
 $string['cannotmovecourses'] = 'Ezin dira ikastaroak daudeneko kategoriatik beste batera mugitu.';
 $string['cannotmoverolewithid'] = 'Ezin da {$a} ID-a duen rola mugitu';
@@ -150,7 +151,7 @@ $string['cannotsavezipfile'] = 'Ezin da ZIP fitxategia gorde';
 $string['cannotservefile'] = 'Ezin da fitxategia erakutsi: zerbitzariaren konfigurazio-arazoa.';
 $string['cannotsetparentforcatoritem'] = 'Ezin da ezarri goragokorik kategoria edo ikastaro-elementurako!';
 $string['cannotsetpassword'] = 'Ezin da ezarri erabiltzaile-pasahitzik!';
-$string['cannotsetprefgrade'] = 'Ezin izan da aggregationview hobespena {$a}-(e)ra ezarri kalifikazio-kategoria honetan';
+$string['cannotsetprefgrade'] = 'Ezin izan da aggregationview hobespena {$a}(e)ra ezarri kalifikazio-kategoria honetan';
 $string['cannotsettheme'] = 'Ezin da azala ezarri!';
 $string['cannotsetupblock'] = 'Blokeen taulak EZ dira ondo sortu!';
 $string['cannotsetupcapformod'] = 'Ezin dira gaitasunak esleitu honentzat: {$a}';
@@ -183,7 +184,7 @@ $string['categorynamerequired'] = 'Kategoria-izena derrigorrezkoa da';
 $string['categorytoolong'] = 'Kategoriaren izena luzeegia';
 $string['commentmisconf'] = 'Iruzkinaren IDa gaizki konfiguratuta dago';
 $string['componentisuptodate'] = 'Osagaia eguneratu da';
-$string['confirmationnotenabled'] = 'Erabiltzaileen baieztatzea ez dago gaituta gune honetan.';
+$string['confirmationnotenabled'] = 'Erabiltzaileen berrespena ez dago gaituta gune honetan.';
 $string['confirmsesskeybad'] = 'Sentitzen dugu, baina ekintza hau egiteko zure saio-pasahitza ezin izan da baieztatu. Segurtasun-ezaugarri honek zure izenean, ustekabean edo fede txarrez, eginkizun garrantzitsuen exekutatzea saihesten du. Eginkizun hori exekutatu nahi duzula ziur izan, mesedez.';
 $string['couldnotassignrole'] = 'Zuri rol bat ezartzean zehaztu gabeko arazo larria gertatu da.';
 $string['couldnotupdatenoexistinguser'] = 'Ezin da eguneratu erabitlzailea - erabitlzailea ez dago';
@@ -196,8 +197,8 @@ $string['courseidnotfound'] = 'Ikastaroaren IDa ez da existitzen.';
 $string['courseidnumbertaken'] = 'ID zenbakia dagoeneko erabilita dago beste ikastaro batean  ({$a})';
 $string['coursemisconf'] = 'Ikastaroa gaizki konfiguratuta dago';
 $string['courserequestdisabled'] = 'Sentitzen dugu, baina ikastaro-eskariak egiteko modua kudeatzaileak desgaitu du.';
-$string['csvcolumnduplicates'] = 'Bikoiztutako zutabeak atzeman dira';
-$string['csvemptyfile'] = 'CSV fitxategia hutsik dago.';
+$string['csvcolumnduplicates'] = 'Bikoiztutako zutabeak aurkitu dira';
+$string['csvemptyfile'] = 'CSV fitxategia hutsik dago';
 $string['csvfewcolumns'] = 'Ez dago zutabe nahikorik, mesedez egiazta ezazu bereizlearen ezarpena';
 $string['csvfileerror'] = 'Arazoren bat dago CSV fitxategiaren formatuarekin. Egiaztatu ezazu mesedez zutabe-izenburu eta zutabe kopuruak bat datozela eta zutabe-bereizlea zein fitxategiaren kodifikazioa egokiak direla: {$a}';
 $string['csvinvalidcols'] = '<b>CSV fitxategi baliogabea:</b> Lehen errenkadak "Header Fields" izan behar du eta fitxategiak <br />"Expanded Fields/Comma Separated"<br />edo<br /> "Expanded Fields with CAVV Result Code/Comma Separated" motakoa izan behar du';
@@ -213,7 +214,7 @@ $string['dbdriverproblem'] = '<p>Errorea: datu-baseko kontrolatzailean arazoa an
 $string['dbsessionbroken'] = 'Datu-basean arazo larria gertatu da.<br /><br />Mesedez, jakinarazi zerbitzariaren kudeatzaileari.';
 $string['dbsessionhandlerproblem'] = 'Datu-baseko saioaren konfigurazioak huts egin du. Mesedez jakinarazi zerbitzariaren kudeatzaileari.';
 $string['dbsessionmysqlpacketsize'] = 'Saioan errore larria atzeman da. Mesedez, jakinarazi guneko kudeatzaileari; errore hau max_allowed_packet  MySQL ezarpenean balio handiegia ezarri delako gertatuko zen ziurrenik.';
-$string['dbupdatefailed'] = 'Datu-basearen eguneratzeak huts egin du';
+$string['dbupdatefailed'] = 'Datu-basearen eguneraketak huts egin du';
 $string['ddldependencyerror'] = '{$a->targettype} "{$a->targetname}" ezin da aldatu. Mendekotasuna aurkitu da honekiko: {$a->offendingtype} "{$a->offendingname}"';
 $string['ddlexecuteerror'] = 'Errorea DDL sql exekutatzean';
 $string['ddlfieldalreadyexists'] = '"{$a}" eremua badago dagoeneko';
@@ -241,6 +242,7 @@ $string['duplicateusername'] = 'Bikoiztutako erabiltzaile-izena - erregistroa al
 $string['emailfail'] = 'E-mail bidaltzeak huts egin du';
 $string['enddatebeforestartdate'] = 'Ikastaroaren amaiera-data hasiera-data baino beranduago izan behar da.';
 $string['error'] = 'Errorea gertatu da';
+$string['error_question_answers_missing_in_db'] = 'Ezin izan da "{$a->answer}"-(r)ekin bat datorren erantzunik aurkitu datu-baseko question_answers taulan. Hau  {$a->filequestionid} IDa duen galdera segurtasun-kopiatik berreskuratzean gertatu da, {$a->dbquestionid} IDa duen datu-basean existitzen den galderarekin lotu dena.';
 $string['errorcleaningdirectory'] = 'Errorea gertatu da "{$a}" direktorioa garbitzean';
 $string['errorcopyingfiles'] = 'Errorea fitxategiak kopiatzean';
 $string['errorcreatingdirectory'] = 'Errorea "{$a}" direktorioa sortzean';
@@ -251,7 +253,6 @@ $string['erroronline'] = 'Errorea {$a} lerroan';
 $string['erroroutput'] = 'Irteeran erroreak daude, eta ondorioz berbideratze automatikoa desgaituko da.';
 $string['errorparsingxml'] = 'Errorea XMLa aztertzean: {$a->errorstring} {$a->errorline} lerroan,  {$a->errorchar} karakterea';
 $string['errorprocessingarchive'] = 'Errorea artxibo-fitxategia prozesatzean';
-$string['error_question_answers_missing_in_db'] = 'Ezin izan da "{$a->answer}"-(r)ekin bat datorren erantzunik aurkitu datu-baseko question_answers taulan. Hau  {$a->filequestionid} IDa duen galdera segurtasun-kopiatik berreskuratzean gertatu da, {$a->dbquestionid} IDa duen datu-basean existitzen den galderarekin lotu dena.';
 $string['errorreadingfile'] = 'Errorea "{$a}" fitxategia irakurtzean';
 $string['errorsavingrequest'] = 'Errorea gertatu da zure eskaria gordetzean.';
 $string['errorsettinguserpref'] = 'Errorea erabiltzailearen hobespenak ezartzean';
@@ -269,7 +270,7 @@ $string['filterdoesnothavelocalconfig'] = '{$a} iragazkiak ez du lokaleko konfig
 $string['filternotactive'] = '{$a} iragazkia ez dago une honetan indarrean';
 $string['filternotenabled'] = 'Iragazkia ez dago gaituta!';
 $string['filternotinstalled'] = '{$a} iragazkia ez dago une honetan instalatuta';
-$string['forumblockingtoomanyposts'] = 'Foro honetara mezuak bidaltzeko denbora-epea gainditu duzu.';
+$string['forumblockingtoomanyposts'] = 'Foro honetara bidalitako mezu-kopuruaren atalasea gainditu duzu';
 $string['functionalityremoved'] = 'Ezabatu den funtzionalitate batera sartzen saiatzen ari zara.';
 $string['generalexceptionmessage'] = 'Salbuespena - {$a}';
 $string['gradecantregrade'] = 'Errorea gertatu da kalifikazioa kalkulatu bitartean: {$a}';
@@ -312,7 +313,7 @@ $string['invalidblockinstance'] = 'Blokearen instantzia ez da baliagarria honent
 $string['invalidbulkenrolop'] = 'Matrikulazio masiboko eragiketa baliogabea eskatu da.';
 $string['invalidcategory'] = 'Kategoria ezegokia!';
 $string['invalidcategoryid'] = 'Kategoriaren ID ezegokia!';
-$string['invalidcomment'] = 'Iruzkina ez da zuzena!';
+$string['invalidcomment'] = 'Iruzkina ez da egokia';
 $string['invalidcommentarea'] = 'Iruzkinen eremua ez da baliagarria';
 $string['invalidcommentid'] = 'Iruzkinaren ID baliogabea';
 $string['invalidcommentitemid'] = 'Iruzkinaren item ID baliogabea';
@@ -320,28 +321,30 @@ $string['invalidcommentparam'] = 'Iruzkinaren parametro baliogabeak';
 $string['invalidcomponent'] = 'Osagaiaren izen baliogabea';
 $string['invalidconfirmdata'] = 'Datuen egiaztapen baliogabea';
 $string['invalidcontext'] = 'Testuinguru baliogabea';
+$string['invalidcountrycode'] = 'Herrialde-kode baliogabea: {$a}';
 $string['invalidcourse'] = 'Ikastaro baliogabea';
 $string['invalidcourseformat'] = 'Ikastaro-formatu baliogabea';
 $string['invalidcourseid'] = 'Ikastaroaren ID baliogabea ari zara erabiltzen';
-$string['invalidcourselevel'] = 'Testuinguru-maila ez da zuzena!';
+$string['invalidcourselevel'] = 'Testuinguru-maila ez da egokia';
 $string['invalidcoursemodule'] = 'Ikastaro-moduluaren ID-a baliogabea da';
 $string['invalidcoursenameshort'] = 'Ikastaroaren izen laburra baliogabea da';
 $string['invaliddata'] = 'Bidalitako data ez da egokia';
 $string['invaliddatarootpermissions'] = 'Baimen baliogabeak antzeman dira direktorioa sortzen saiatzean. Gaitu arazketa xehetasun gehiago lortzeko.';
-$string['invaliddevicetype'] = 'Gailu-mota baliogabea';
+$string['invaliddevicetype'] = 'Gailu mota baliogabea';
 $string['invalidelementid'] = 'Elementuaren ID ezegokia!';
 $string['invalidentry'] = 'Hau ez da sarrera baliagarria!';
 $string['invalidevent'] = 'Ekitaldi baliogabea';
 $string['invalidfieldname'] = '"{$a}"  ez da izen baliagarria eremu honetarako';
 $string['invalidfiletype'] = '"{$a}" ez da fitxategi mota baliagarria';
-$string['invalidformatpara'] = 'Formatua ez da zuzena parametroa aukeratzeko';
-$string['invalidformdata'] = 'Datu-formularioa ez da zuzena';
-$string['invalidfunction'] = 'Funtzioa ez da zuzena';
+$string['invalidformatpara'] = 'Formatua ez da egokia parametroa aukeratzeko';
+$string['invalidformdata'] = 'Datu-formularioa ez da egokia';
+$string['invalidfunction'] = 'Funtzioa ez da egokia';
 $string['invalidgradeitemid'] = 'Kalifikazio-elementuaren ID ezegokia';
 $string['invalidgroupid'] = 'Taldearen ID ezegokia zehaztu da';
 $string['invalidipformat'] = 'IP helbide-formatu honek ez du balio';
 $string['invaliditemid'] = 'Elementuaren IDa ezegokia';
 $string['invalidkey'] = 'Giltza ez da zuzena';
+$string['invalidlanguagecode'] = 'Hizkuntza-kode baliogabea: {$a}';
 $string['invalidlegacy'] = 'Zaharkitutako rol definizio ezegokia mota honentzat: {$a}';
 $string['invalidmd5'] = 'Kontrolerako aldagaia gaizki zegoen - saiatu berriz ere';
 $string['invalidmode'] = 'Modu baliogabea ({$a})';
@@ -349,7 +352,7 @@ $string['invalidmodule'] = 'Modulu baliogabea';
 $string['invalidmoduleid'] = 'Moduluaren ID baliogabea: {$a}';
 $string['invalidmodulename'] = 'Moduluaren izen baliogabea: {$a}';
 $string['invalidnum'] = 'Zenbakizko balio ezegokia';
-$string['invalidnumkey'] = 'Baliteke $conditions array-ak zenbakizkoak ez diren giltzak izatea, mesedez konpon ezazu kodea!';
+$string['invalidnumkey'] = 'Baliteke $conditions array-ak zenbakizkoak ez diren giltzak izatea. Konpondu ezazu kodea mesedez!';
 $string['invalidoutcome'] = 'Ikaste-emaitzaren ID ezegokia';
 $string['invalidpagesize'] = 'Orriaren tamaina baliogabea';
 $string['invalidpasswordpolicy'] = 'Pasahitzen politika baliogabea';
@@ -375,8 +378,8 @@ $string['invaliduserid'] = 'Erabiltzailearen ID baliogabea';
 $string['invalidusername'] = 'Emandako erabiltze-izenak karaktere baliogabeak ditu';
 $string['invalidusernameblank'] = 'Erabiltzailearen izena ezin da hutsik utzi';
 $string['invalidxmlfile'] = '"{$a}" ez da XML fitxategi baliagarria.';
-$string['iplookupfailed'] = 'Ezin da {$a} IP helbideari buruzko informaziorik aurkitu';
-$string['iplookupprivate'] = 'Ezin da IP helbide pribatuaren bilaketarik erakutsi';
+$string['iplookupfailed'] = 'Ezin da {$a} IP helbidearen kokapenari buruzko informaziorik aurkitu';
+$string['iplookupprivate'] = 'Ezin da IP helbide pribatuen informaziorik aurkitu';
 $string['ipmismatch'] = 'Bezeroaren IP helbidea ez dator bat';
 $string['listcantmovedown'] = 'Elementua behera mugitzeak huts egin du, zerrendako azkena delako';
 $string['listcantmoveleft'] = 'Elementua ezkerrera mugitzeak huts egin du, ez dagoelako goragoko elementurik';
@@ -387,24 +390,25 @@ $string['listnoitem'] = 'Ez da elementua aurkitu';
 $string['listnopeers'] = 'Ez dago aurkitutako elementuaren maila berekorik';
 $string['listupdatefail'] = 'Errorea DB eragiketan zerrendaren ierarkia editatzean';
 $string['logfilenotavailable'] = 'Agerraldiak ez daude eskuragarri';
-$string['loginasnoenrol'] = 'Ezin duzu matrikulatu edo desmatrikulatu "Aukeratu beste rol bat" erabiltzen ari zarenean';
+$string['loginasnoenrol'] = 'Ezin duzu matrikulatu edo desmatrikulatu "Honela sartu" saio bat erabiltzen ari zarenean.';
 $string['loginasonecourse'] = 'Ezin zara ikastaro honetan sartu.<br />"Aukeratu beste rol bat" saioa amaitu behar duzu beste edozein ikastarotan sartzeko';
 $string['maxareabytes'] = 'Fitxategia eremu honetan geratzen den espazioa baino handiagoa da.';
 $string['maxbytesfile'] = '{$a->file} fitxategia handiegia da. Igo dezakezun gehinezko tamaina  {$a->size} da.';
+$string['messageundeliveredbynotificationsettings'] = 'Mezua ezin izan da bidali guneko kudeatzaileak pertsonen arteko mezularitza desgaitu duelako (Jakinarazpenen ezarpenetan).';
 $string['messagingdisable'] = 'Mezularitza desgaituta dago gune honetan';
 $string['mimetexisnotexist'] = 'Zure sistema ez dago mimeTeX exekutatzeko konfiguratuta. <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip</a> helbidetik C iturburua eskuratu behar duzu, berau konpilatu eta exekutagarria zure guneko /filter/tex/ direktorioan jarri beharko zenuke.';
 $string['mimetexnotexecutable'] = 'mimetex pertsonalizatua ez da exekutagarria!';
+$string['missing_moodle_backup_xml_file'] = 'Segurtasun-kopian XML fitxategia falta da: {$a}';
 $string['missingfield'] = '"{$a}" eremua falta da';
 $string['missingkeyinsql'] = 'ERROREA: kontsultan "{$a}" parametroa falta da';
-$string['missing_moodle_backup_xml_file'] = 'Segurtasun-kopian XML fitxategia falta da: {$a}';
 $string['missingparam'] = 'Behar den ({$a}) parametroa falta da';
 $string['missingparameter'] = 'Parametroa falta da';
 $string['missingrequiredfield'] = 'Beharrezko eremuren bat falta da.';
 $string['missinguseranditemid'] = 'userid eta itemid falta dira';
 $string['missingvarname'] = 'Behar den aldagai baten izena falta da!';
-$string['mixedtypesqlparam'] = 'ERROREA: SQL kontsultako parametro-motak nahastuta daude!!';
+$string['mixedtypesqlparam'] = 'ERROREA: SQL kontsultako parametro motak nahastuta daude!!';
 $string['mnetdisable'] = 'MNET desgaituta dago';
-$string['mnetlocal'] = 'Urrutiko MNET erabiltzaileek ezin dute saioa lokalean hasi';
+$string['mnetlocal'] = 'Urrutiko MNET erabiltzaileek ezin dute saioa modu lokalean hasi';
 $string['moduledisable'] = 'Modulu hau ({$a}) desgaituta dago ikastaro jakin honetarako';
 $string['moduledoesnotexist'] = 'Modulu hau ez da existitzen';
 $string['moduleinstancedoesnotexist'] = 'Modulu honen erregistroa ez da existitzen';
@@ -482,7 +486,7 @@ $string['processingstops'] = 'Prozesamendua hemen geratu da. Gainontzeko erregis
 $string['protected_cc_not_supported'] = 'Babestutako cartridge-ak ez dira onartzen.';
 $string['querystringcannotbeempty'] = 'Kontsultaren katea ezin da hutsik egon.';
 $string['redirecterrordetected'] = 'Onartzen ez den berbideraketa atzeman da, script-aren exekuzioa amaitu da';
-$string['refoundto'] = 'Ezin zaio {$a}-(e)ri dirua itzuli';
+$string['refoundto'] = 'Ezin zaio {$a}(e)ri dirua itzuli';
 $string['refoundtoorigi'] = 'Jatorrizko diru-kopurua itzuli zaio: {$a}';
 $string['registrationdisabled'] = 'Erregistroa desgaituta dago gune honetan';
 $string['remotedownloaderror'] = '<p>Errorea osagaia zure zerbitzarian jaistean, mesedez egiaztatu proxy-ezarpenak, PHP cURL hedapena erabat gomendatzen da.</p>
@@ -491,23 +495,23 @@ $string['remotedownloadnotallowed'] = 'Osagaiak ezin dira zure zerbitzarira jait
 $string['reportnotavailable'] = 'Txosten mota hau guneko ikastarorako baino ez dago eskuragarri';
 $string['requirecorrectaccess'] = 'URLa edo ataka ez dira baliagarriak.';
 $string['requireloginerror'] = 'Ez dago ikastaro edo jarduerarako sarbiderik';
-$string['restorechecksumfailed'] = 'Arazoren bat gertatu da zure saioan gordetako informazioa berreskuratzean. Mesedez egiaztatu zure PHP memoria/datu-base paketeen tamainaren mugak. Berreskuratzea geratu da.';
 $string['restore_path_element_missingmethod'] = '{$a} berreskuratze-metodoa falta da. Garatzaile batek definitu behar du.';
 $string['restore_path_element_noobject'] = '{$a} berreskuratze-objektua ez da objektu bat.';
+$string['restorechecksumfailed'] = 'Arazoren bat gertatu da zure saioan gordetako informazioa berreskuratzean. Mesedez egiaztatu zure PHP memoria/datu-base paketeen tamainaren mugak. Berreskuratzea geratu da.';
 $string['restrictedcontextexception'] = 'Sentitzen dugu, kanpo-funtzioen exekuzioak testuinguruko baldintzak urratzen ditu.';
 $string['restricteduser'] = 'Sentitzen dugu, baina zure kontuak, "{$a}", ezin du holakorik egin.';
 $string['reverseproxyabused'] = 'Alderantzizko proxy-a gaituta dago, ezin da zerbitzarirako sarbide zuzenik egon, sentitzen dugu.<br />Mesedez jarri harremanetan zerbitzariko kudeatzailearekin.';
 $string['rpcerror'] = 'Ups! Zure MNET komunikazioak huts egin du! Hau da errore-mezua zure kudeatzaileari igor diezaiozun: {$a}';
 $string['scheduledbackupsdisabled'] = 'Guneko kudeatzaileak programatutako segurtasun-kopiak desgaitu ditu';
-$string['secretalreadyused'] = 'Pasahitza aldatzeko konfirmazio-esteka erabilia izan da dagoeneko, pasahitza ez da aldatu';
+$string['secretalreadyused'] = 'Pasahitza aldatzeko berrespen-esteka erabilia izan da dagoeneko, pasahitza ez da aldatu';
 $string['sectionnotexist'] = 'Atal hau ez da existitzen';
 $string['sendmessage'] = 'Bidali mezua';
 $string['serverconnection'] = 'Errorea zerbitzariarekin konektatzean';
 $string['servicedonotexist'] = 'Zerbitzua ez da existitzen';
 $string['sessioncookiesdisable'] = 'require_key_login() funtzioaren erabilera ezegokia - saioaren cookie-ak desgaituta egon behar dira!';
 $string['sessiondiskfull'] = 'Saioen partizioa beteta dago. Une honetan ezin zara sartu. Mesedez kudeatzaileari jakinarazi.';
-$string['sessionerroruser'] = 'Saioa amaitu da. Sar zaitez berriro, mesedez.';
-$string['sessionerroruser2'] = 'Zure saioari eragiten dion zerbitzari-errorea antzeman da. Berriz sartu edo nabigatzailea berriro abiatu, mesedez.';
+$string['sessionerroruser'] = 'Saioaren denbora tartea amaitu da. Sar zaitez berriro, mesedez.';
+$string['sessionerroruser2'] = 'Zure saioari eragiten dion zerbitzari-errorea antzeman da. Berriz sartu edo nabigatzailea berrabiarazi, mesedez.';
 $string['sessionexpired'] = 'Saioa iraungi da';
 $string['sessionhandlerproblem'] = 'Saioaren kudeatzailea gaizki konfiguratuta dago';
 $string['sessionipnomatch'] = 'Sentitzen dugu, baina lehenengo sarreratik zure IPa aldatu dela dirudi. Ziurtasun neurri honen arrazoia crackerrek gune honetan zauden bitartean zure nortasuna ez lapurtzean datza. Erabiltzaile arruntek ez lukete mezu hau ikusi beharko. Beraz, gunearen kudeatzaileari laguntza eskatu.';
@@ -533,7 +537,6 @@ $string['tagnotfound'] = 'Ez da aurkitu zehaztutako etiketa datu-basean';
 $string['targetdatabasenotempty'] = 'Helburuko datu-basea ez dago hutsik. Transferentzia bertan behera utzi da segurtasun-arrazoiengatik.';
 $string['textconditionsnotallowed'] = 'Testuzko zutabeen baldintzen konparaketak ez daude baimenduta. Erabili mesedez sql_compare_text() zure kontsultetan.';
 $string['themenotinstall'] = 'Azal hau ez dago instalatuta!';
-$string['TODO'] = 'EGITEKOAK';
 $string['tokengenerationfailed'] = 'Ezin da token berria sortu.';
 $string['transactionvoid'] = 'Transakzioa ezin da deuseztatu dagoeneko deuseztatuta dagoelako';
 $string['unenrolerror'] = 'Errorea gertatu da pertsona hau desmatrikulatzean';
@@ -546,11 +549,11 @@ $string['unknownbackupexporterror'] = 'Errore ezezaguna inportatzeko informazioa
 $string['unknownblockregion'] = '\'{$a}\' bloke-eremua ez da onartzen orri honetan.';
 $string['unknowncontext'] = 'Hau testuinguru ezezaguna da.';
 $string['unknowncourse'] = 'Ez dago "{$a}" izeneko ikastarorik';
-$string['unknowncourseidnumber'] = '"{$a}" ikastaroaren ID ezezaguna';
+$string['unknowncourseidnumber'] = 'Ikastaroaren ID ezezaguna: "{$a}"';
 $string['unknowncourserequest'] = 'Ikastaro-eskari ezezaguna';
 $string['unknowncoursesection'] = 'Ikastaro-atal ezezaguna "{$a}" ikastaroan';
 $string['unknownevent'] = 'Ekitaldi ezezaguna';
-$string['unknownfiletype'] = 'Errorea: iragazki-mota ezezaguna';
+$string['unknownfiletype'] = 'Errorea: iragazki mota ezezaguna';
 $string['unknowngroup'] = '"{$a}" talde ezezaguna';
 $string['unknownhelp'] = '{$a} laguntza-gaia ezezaguna';
 $string['unknownjsinrequirejs'] = 'Ezin da JS liburutegia aurkitu: {$a}';
@@ -560,11 +563,11 @@ $string['unknownsortcolumn'] = 'Ordenatze-zutabe ezezaguna {$a}';
 $string['unknownuseraction'] = 'Sentitzen dugu, baina erabiltzailearen ekintza hau ez dugu ulertzen.';
 $string['unknownuserselector'] = 'Erabiltzaile-hautatzaile ezezaguna';
 $string['unknoworder'] = 'Ordena ezezaguna';
-$string['unknowparamtype'] = 'Parametro-mota ezezaguna: {$a}';
-$string['unknowquestiontype'] = '{$a} galdera-mota onartezina';
+$string['unknowparamtype'] = 'Parametro mota ezezaguna: {$a}';
+$string['unknowquestiontype'] = '{$a} galdera mota onartezina';
 $string['unknowuploadaction'] = 'Errorea: igoera-ekintza ezezaguna ({$a})';
 $string['unspecifycourseid'] = 'Ikastaroaren ID-a, izen laburra edo ID zenbakia zehaztu behar da.';
-$string['unsupportedevent'] = 'Onartzen ez den ekitaldi-mota';
+$string['unsupportedevent'] = 'Onartzen ez den ekitaldi mota';
 $string['unsupportedstate'] = 'Onartzen ez den osatze-egoera';
 $string['unsupportedwebserver'] = 'Web zerbitzariaren softwarea ({$a}) ez da onartzen, sentitzen dugu.';
 $string['upgraderequires19'] = 'Errorea: Moodleren bertsio berriaren kodea instalatu da zerbitzarian eta tamalez ez da onartzen aurreko bertsiotiko eguneraketa.<br />Mesedez, eguneratu lehenik 1.9.x bertsio berrienera. Aurreko bertsiora ere itzul zaitezke jatorrizko fitxategiak berriz instalatuta.';
@@ -579,11 +582,11 @@ $string['usermustbemnet'] = 'MNET sarbide-kontrolerako zerrendako erabiltzaileak
 $string['usernamelowercase'] = 'Erabiltzailearen izena letra xehez idatzi behar da';
 $string['usernotaddederror'] = 'Erabiltzailea ez da gehitu - errorea';
 $string['usernotaddedregistered'] = 'Erabiltzailea ez da gehitu - dagoeneko izena emanda dago';
-$string['usernotavailable'] = 'Erabiltzaile honen xehetasunak ezin dituzu ikusi';
+$string['usernotavailable'] = 'Ezin dituzu erabiltzaile honen xehetasunak ikusi';
 $string['usernotdeletedadmin'] = 'Erabiltzailea ez da ezabatu - ezin da kudeatzaileen konturik ezabatu';
 $string['usernotdeleteddeleted'] = 'Erabiltzaile hau ezabatua izan da dagoeneko.';
-$string['usernotdeletederror'] = 'Ez da erabiltzailea ezabatu - errorea.';
-$string['usernotdeletedmissing'] = 'Ez da erabiltzailea ezabatu - ez da erabiltzaile-izena aurkitu.';
+$string['usernotdeletederror'] = 'Ez da erabiltzailea ezabatu - errorea';
+$string['usernotdeletedmissing'] = 'Ez da erabiltzailea ezabatu - ez da erabiltzaile-izena aurkitu';
 $string['usernotdeletedoff'] = 'Ez da erabiltzailea ezabatu - ezabatzea ez dago baimenduta';
 $string['usernotfullysetup'] = 'Erabiltzailea ez dago guztiz prest';
 $string['usernotincourse'] = 'Erabiltzaile hau ez dago ikastaro honetan!';
@@ -592,13 +595,13 @@ $string['usernotrenamedexists'] = 'Ez da erabiltzailearen izena aldatu - erabilt
 $string['usernotrenamedmissing'] = 'Ez da erabiltzailearen izena aldatu - erabiltzailearen aurreko izena ez da aurkitu.';
 $string['usernotrenamedoff'] = 'Ez da erabiltzailearen izena aldatu - berrizendatzea ez dago baimenduta';
 $string['usernotupdatedadmin'] = 'Ezin dira kudeatzailearen kontuak eguneratu';
-$string['usernotupdatederror'] = 'Ez da erabiltzailea eguneratu - errorea.';
-$string['usernotupdatednotexists'] = 'Ez da erabiltzailea eguneratu - ez da existitzen.';
+$string['usernotupdatederror'] = 'Ez da erabiltzailea eguneratu - errorea';
+$string['usernotupdatednotexists'] = 'Ez da erabiltzailea eguneratu - ez da existitzen';
 $string['userquotalimit'] = 'Fitxategietarako gehienezko kuotara irsitsi zara.';
 $string['userselectortoomany'] = 'user_selector-ek aukeratutako erabiltzaile bat baino gehiago dauzka, nahiz eta multiselect false izan.';
 $string['verifyagedigitalconsentnotpossible'] = 'Sentitzen dugu, une honetan ez da posible onespen-adin digitala egiaztapena.';
 $string['wrongcall'] = 'Script hau gaizki deitu da';
-$string['wrongcontextid'] = 'Testuinguru ID-a ez da zuzena (ezin da aurkitu)';
+$string['wrongcontextid'] = 'Testuinguru ID-a ez da egokia (ezin da aurkitu)';
 $string['wrongdestpath'] = 'Helmuga-bide desegokia';
 $string['wrongroleid'] = 'Rolaren ID ezegokia!';
 $string['wrongsourcebase'] = 'URL iturriaren oinarri akastuna';

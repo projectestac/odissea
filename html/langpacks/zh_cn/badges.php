@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'zh_cn', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['activatesuccess'] = '成功启用了对勋章的访问。';
 $string['addalignment'] = '增加外部技能或标准';
 $string['addbackpack'] = '添加背包';
 $string['addbadge'] = '添加勋章';
-$string['addbadgecriteria'] = '添加勋章规则';
 $string['addbadge_help'] = '选择所有应该添加到此勋章条件的勋章。按住CTRL键选择多个项目。';
+$string['addbadgecriteria'] = '添加勋章规则';
 $string['addcohort'] = '添加群组';
 $string['addcohort_help'] = '选择所有应该添加到此勋章条件的群组。按住CTRL键选择多个项目。';
 $string['addcompetency'] = '添加能力';
@@ -88,11 +88,11 @@ $string['backpackbadgessettings'] = '更改背包设置';
 $string['backpackbadgessummary'] = '您有 {$a->totalbadges}从{$a->totalcollections}集合中显示的勋章。';
 $string['backpackcannotsendverification'] = '无法发送验证邮件';
 $string['backpackconnection'] = '背包连接';
-$string['backpackconnectioncancelattempt'] = '使用不同的电子邮件地址连接';
-$string['backpackconnectionconnect'] = '连接到背包';
 $string['backpackconnection_help'] = '本页允许你设置一个访问外部背包服务的链接。背包链接让你显示外部勋章到自己的站点，也可以推送本地获得的勋章到你的外部背包。
 
 当前，仅<a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>被支持。在你尝试在这个页面建立一个背包链接前，你需要注册一个背包服务。';
+$string['backpackconnectioncancelattempt'] = '使用不同的电子邮件地址连接';
+$string['backpackconnectionconnect'] = '连接到背包';
 $string['backpackconnectionnottested'] = '这个背包无法测试连接，因为只有Open badge v2.0背包支持它。';
 $string['backpackconnectionok'] = '背包连接成功建立';
 $string['backpackconnectionresendemail'] = '重发验证邮件';
@@ -185,8 +185,6 @@ $string['criteria_8'] = '群组成员';
 $string['criteria_8_help'] = '允许根据群组成员资格向用户授予勋章。';
 $string['criteria_9'] = '能力';
 $string['criteria_9_help'] = '允许根据用户完成的能力授予勋章。';
-$string['criteriacreated'] = '勋章规则创建成功';
-$string['criteriadeleted'] = '勋章规则删除成功';
 $string['criteria_descr'] = '符合下列条件的用户可以获得此勋章：';
 $string['criteria_descr_0'] = '符合下列 <strong>{$a}</strong> 条件的用户可以获得此勋章。';
 $string['criteria_descr_1'] = '<strong>{$a}</strong>已完成下列活动：';
@@ -224,6 +222,8 @@ $string['criteria_descr_single_short6'] = '完成：';
 $string['criteria_descr_single_short7'] = '完成：';
 $string['criteria_descr_single_short8'] = '成员在：';
 $string['criteria_descr_single_short9'] = '完成：';
+$string['criteriacreated'] = '勋章规则创建成功';
+$string['criteriadeleted'] = '勋章规则删除成功';
 $string['criteriasummary'] = '规则概要';
 $string['criteriaupdated'] = '勋章规则更新成功';
 $string['criterror'] = '‎当前参数问题‎';

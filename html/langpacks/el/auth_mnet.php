@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,26 +12,27 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_mnet', language 'el', version '3.8'.
  *
- * @package   auth_mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_mnet_auto_add_remote_users'] = 'Όταν οριστεί σε Ναι, μια εγγραφή τοπικού χρήστη δημιουργείται αυτόματα όταν ένας απομακρυσμένος χρήστης συνδέεται για πρώτη φορά.';
-$string['auth_mnetdescription'] = 'Οι χρήστες αυθεντικοποιούνται σύμφωνα με τον ιστό εμπιστοσύνης που ορίζεται στις ρυθμίσεις του δικτύου Moodle. ((MNet = Moodle Network))';
 $string['auth_mnet_roamin'] = 'Οι χρήστες αυτού του κεντρικού Η/Υ μπορούν να συνδέονται και στον ιστότοπό σας';
 $string['auth_mnet_roamout'] = 'Οι χρήστες σας μπορούν να συνδέονται και σε αυτούς τους κεντρικούς Η/Υ';
 $string['auth_mnet_rpc_negotiation_timeout'] = 'Το χρονικό όριο σε δευτερόλεπτα για αυθεντικοποίηση κατά τη μεταφορά XMLRPC.';
+$string['auth_mnetdescription'] = 'Οι χρήστες αυθεντικοποιούνται σύμφωνα με τον ιστό εμπιστοσύνης που ορίζεται στις ρυθμίσεις του δικτύου Moodle. ((MNet = Moodle Network))';
 $string['auto_add_remote_users'] = 'Αυτόματη προσθήκη απομακρυσμένων χρηστών';
 $string['crontask'] = 'Επεξεργασία παρασκηνίου για την αυθεντικοποίηση MNet';
-$string['pluginname'] = 'Αυθεντικοποίηση στο MNet';
+$string['pluginname'] = 'Αυθεντικοποίηση στο MNet (Moodle Network)';
 $string['privacy:metadata:external:mahara'] = 'Αυτό το πρόσθετο μπορεί να στείλει δεδομένα εξωτερικά σε μια συνδεδεμένη εφαρμογή Mahara.';
 $string['privacy:metadata:external:moodle'] = 'Αυτό το πρόσθετο μπορεί να στείλει δεδομένα εξωτερικά σε μια συνδεδεμένη εφαρμογή Mahara.';
 $string['privacy:metadata:mnet_external:address'] = 'Η διεύθυνση του χρήστη.';
@@ -68,7 +68,7 @@ $string['privacy:metadata:mnet_external:phone1'] = 'Αριθμός τηλεφώ�
 $string['privacy:metadata:mnet_external:phone2'] = 'Ένας επιπρόσθετος αριθμός τηλεφώνου για τον χρήστη.';
 $string['privacy:metadata:mnet_external:picture'] = 'Τα στοιχεία της εικόνας που σχετίζονται με αυτόν τον χρήστη.';
 $string['privacy:metadata:mnet_external:policyagreed'] = 'Μια σημαιοδότηση που δείχνει αν ο χρήστης έχει συμφωνήσει με την πολιτική ιστοτόπου.';
-$string['privacy:metadata:mnet_external:skype'] = 'Το αναγνωριστικό skype του χρήστη.';
+$string['privacy:metadata:mnet_external:skype'] = 'Το αναγνωριστικό Skype του χρήστη.';
 $string['privacy:metadata:mnet_external:suspended'] = 'Μια σημαιοδότηση που δείχνει αν ο χρήστης έχει προσωρινή απαγόρευση σε αυτό το σύστημα.';
 $string['privacy:metadata:mnet_external:timezone'] = 'Η ζώνη ώρας στην οποία ανήκει ο χρήστης.';
 $string['privacy:metadata:mnet_external:trackforums'] = 'Προτίμηση για φόρουμ και παρακολούθησή τους.';

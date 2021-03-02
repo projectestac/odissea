@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'en', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,16 +33,16 @@ $string['backtomainview'] = 'Back to main';
 $string['cannotuseidfield'] = 'Cannot insert the "id" field. It is an autonumeric column';
 $string['change'] = 'Change';
 $string['charincorrectlength'] = 'Incorrect length for char field';
-$string['checkbigints'] = 'Check integers';
 $string['check_bigints'] = 'Look for incorrect DB integers';
-$string['checkdefaults'] = 'Check defaults';
 $string['check_defaults'] = 'Look for inconsistent default values';
-$string['checkforeignkeys'] = 'Check foreign keys';
 $string['check_foreign_keys'] = 'Look for foreign key violations';
-$string['checkindexes'] = 'Check indexes';
 $string['check_indexes'] = 'Look for missing DB indexes';
-$string['checkoraclesemantics'] = 'Check semantics';
 $string['check_oracle_semantics'] = 'Look for incorrect length semantics';
+$string['checkbigints'] = 'Check integers';
+$string['checkdefaults'] = 'Check defaults';
+$string['checkforeignkeys'] = 'Check foreign keys';
+$string['checkindexes'] = 'Check indexes';
+$string['checkoraclesemantics'] = 'Check semantics';
 $string['completelogbelow'] = '(see the complete log of the search below)';
 $string['confirmcheckbigints'] = 'This functionality will search for <a href="https://tracker.moodle.org/browse/MDL-11038">potential wrong integer fields</a> in your Moodle server, generating (but not executing!) automatically the needed SQL statements to have all the integers in your DB properly defined.
 
@@ -152,12 +152,12 @@ $string['missingindexes'] = 'Missing indexes found';
 $string['mustselectonefield'] = 'You must select one field to see field related actions!';
 $string['mustselectoneindex'] = 'You must select one index to see index related actions!';
 $string['mustselectonekey'] = 'You must select one key to see key related actions!';
+$string['new_table_from_mysql'] = 'New table from MySQL';
 $string['newfield'] = 'New field';
 $string['newindex'] = 'New index';
 $string['newkey'] = 'New key';
 $string['newtable'] = 'New table';
 $string['newtablefrommysql'] = 'New table from MySQL';
-$string['new_table_from_mysql'] = 'New table from MySQL';
 $string['nofieldsspecified'] = 'No fields specified';
 $string['nomasterprimaryuniquefound'] = 'The column(s) that your foreign key references must be included in a primary or unique KEY in the referenced table. Note that the column being in a UNIQUE INDEX is not good enough.';
 $string['nomissingindexesfound'] = 'No missing indexes have been found, your DB doesn\'t need further actions.';
@@ -199,15 +199,15 @@ $string['unknowntable'] = 'Refers to an unknown table';
 $string['unload'] = 'Unload';
 $string['up'] = 'Up';
 $string['view'] = 'View';
-$string['viewedited'] = 'View edited';
-$string['vieworiginal'] = 'View original';
-$string['viewphpcode'] = 'View PHP code';
 $string['view_reserved_words'] = 'View reserved words';
-$string['viewsqlcode'] = 'View SQL code';
 $string['view_structure_php'] = 'View structure PHP';
 $string['view_structure_sql'] = 'View structure SQL';
 $string['view_table_php'] = 'View table PHP';
 $string['view_table_sql'] = 'View table SQL';
+$string['viewedited'] = 'View edited';
+$string['vieworiginal'] = 'View original';
+$string['viewphpcode'] = 'View PHP code';
+$string['viewsqlcode'] = 'View SQL code';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Violated foreign keys';
 $string['violatedforeignkeysfound'] = 'Violated foreign keys found';

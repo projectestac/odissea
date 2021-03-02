@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_truefalse', language 'el', version '3.8'.
  *
- * @package   qtype_truefalse
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_truefalse
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,10 +33,10 @@ $string['feedbackfalse'] = 'Ανατροφοδότηση για την απόκ�
 $string['feedbacktrue'] = 'Ανατροφοδότηση για την απόκριση «Σωστό».';
 $string['pleaseselectananswer'] = 'Παρακαλούμε επιλέξτε μία απάντηση.';
 $string['pluginname'] = 'Σωστό/Λάθος';
-$string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης τύπου Σωστό/Λάθος';
-$string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης τύπου Σωστό/Λάθος';
 $string['pluginname_help'] = 'Σε απάντηση σε μια ερώτηση (που μπορεί να περιλαμβάνει μια εικόνα) ο αποκρινόμενος επιλέγει ανάμεσα σε σωστό ή λάθος.';
 $string['pluginname_link'] = 'ερώτηση/τύπος/σωστόλάθος';
+$string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης τύπου Σωστό/Λάθος';
+$string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης τύπου Σωστό/Λάθος';
 $string['pluginnamesummary'] = 'Μια απλή μορφή ερώτησης πολλαπλής επιλογής με τις δύο μόνο επιλογές «Σωστό» και «Λάθος».';
 $string['privacy:metadata'] = 'Το πρόσθετο τύπου ερώτησης Σωστό/Λάθος δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['selectone'] = 'Επιλέξτε ένα:';

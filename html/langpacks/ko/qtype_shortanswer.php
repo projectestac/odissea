@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'ko', version '3.8'.
  *
- * @package   qtype_shortanswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_shortanswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,7 +38,7 @@ $string['filloutoneanswer'] = '적어도 하나의 답안을 제시해야 합니
 $string['notenoughanswers'] = '이 유형의 질문은 적어도  {$a} 답이 필요합니다.';
 $string['pleaseenterananswer'] = '답을 입력하세요.';
 $string['pluginname'] = '주관식 단답형';
+$string['pluginname_help'] = '질문(그림을 포함할 수 있음)에 대하여 응답자들은 단어나 간단한 구문을 입력합니다. 여러가지 가능한 정답이 있을 수 있으며 각각 점수가 다를 수 있습니다. 만일 "대소문자 구별"이 선택되면 "Word"와 "word"에 대해 다른 점수를 받게 됩니다.';
 $string['pluginnameadding'] = '단답형 질문 추가';
 $string['pluginnameediting'] = '단답형 질문 편집';
-$string['pluginname_help'] = '질문(그림을 포함할 수 있음)에 대하여 응답자들은 단어나 간단한 구문을 입력합니다. 여러가지 가능한 정답이 있을 수 있으며 각각 점수가 다를 수 있습니다. 만일 "대소문자 구별"이 선택되면 "Word"와 "word"에 대해 다른 점수를 받게 됩니다.';
 $string['pluginnamesummary'] = '몇 개의 표준답안(대체문자 포함가능)과 비교하여 채점될 수 있는, 한 단어 혹은 몇 단어의 응답을 허용합니다.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essaywiris', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essaywiris', language 'en', version '3.8'.
  *
- * @package   qtype_essaywiris
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essaywiris
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,11 +30,11 @@ $string['editingessaywiris'] = 'Editing an essay - math & science question by WI
 $string['essaywiris'] = 'Essay - science';
 $string['essaywiris_algorithm'] = 'Algorithm';
 $string['essaywiris_help'] = 'Like the standard Essay question, but you can deliver different question text by inserting random numbers, formulas or plots. The feedback can also use the random values.';
-$string['essaywirissummary'] = 'Like the standard Essay question, but you can deliver different question text by inserting random numbers, formulas or plots. The feedback can also use the random values.';
 $string['essaywiris_wiris_variables'] = 'WIRIS variables';
+$string['essaywirissummary'] = 'Like the standard Essay question, but you can deliver different question text by inserting random numbers, formulas or plots. The feedback can also use the random values.';
 $string['pluginname'] = 'Essay - science';
+$string['pluginname_help'] = 'Like the standard Essay question, but you can deliver different question text by inserting random numbers, formulas or plots. The feedback can also use the random values.';
 $string['pluginnameadding'] = 'Adding an essay - math & science question by WIRIS';
 $string['pluginnameediting'] = 'Editing an essay - math & science question by WIRIS';
-$string['pluginname_help'] = 'Like the standard Essay question, but you can deliver different question text by inserting random numbers, formulas or plots. The feedback can also use the random values.';
 $string['pluginnamesummary'] = 'Like the standard Essay question, but you can deliver different question text by inserting random numbers, formulas or plots. The feedback can also use the random values.';
 $string['privacy:null_reason'] = 'Wiris Quizzes Essay question type does not effect or store any data itself.';

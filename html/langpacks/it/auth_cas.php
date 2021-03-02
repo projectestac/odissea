@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_cas', language 'it', version '3.8'.
  *
- * @package   auth_cas
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_cas
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['CASform'] = 'Scelta autenticazione';
 $string['accesCAS'] = 'Utenti CAS';
 $string['accesNOCAS'] = 'altri utenti';
 $string['auth_cas_auth_logo'] = 'Logo del metodo di autenticazione';
@@ -38,7 +39,7 @@ $string['auth_cas_baseuri_key'] = 'Base URI';
 $string['auth_cas_broken_password'] = 'Non puoi proseguire senza modificare la tua password, ma non c\'è una pagina per cambiarla. Contatta il tuo amministratore Moodle.';
 $string['auth_cas_cantconnect'] = 'La componente LDAP del modulo CAS non riesce a connettersi al server: {$a}';
 $string['auth_cas_casversion'] = 'Versione protocollo CAS';
-$string['auth_cas_certificate_check'] = 'Impostare a \'Si\' se si desidera validare il certificato del server';
+$string['auth_cas_certificate_check'] = 'Impostare a \'Sì\' se si desidera validare il certificato del server';
 $string['auth_cas_certificate_check_key'] = 'Validazione server';
 $string['auth_cas_certificate_path'] = 'Percorso del file CA chain (formato PEM) per validare il certificato del server';
 $string['auth_cas_certificate_path_empty'] = 'Se la validazione server è attiva, è necessario impostare il percorso del certificato';
@@ -47,17 +48,14 @@ $string['auth_cas_changepasswordurl'] = 'URL per cambiare la password';
 $string['auth_cas_create_user'] = 'Attivate questa opzione se desiderate inserire utenti autenticati CAS nel database di Moodle. Se non lo fate, solo gli utenti esistenti nel database di Moodle potranno effettuare il login.';
 $string['auth_cas_create_user_key'] = 'Creare utente';
 $string['auth_cas_curl_ssl_version'] = 'La versione SSL da utilizzare (2 o 3). Di default il PHP tenterà di individuare la versione da solo, tuttavia in alcuni casi il valore deve essere impostato a mano.';
-$string['auth_cas_curl_ssl_version_default'] = 'Default';
-$string['auth_cas_curl_ssl_version_key'] = 'Versione SSL cURL';
 $string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
 $string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
 $string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
 $string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
 $string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
 $string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
-$string['auth_casdescription'] = 'Questo metodo utilizza un server CAS (Central Authentication Service) per autenticare utenti via SSO (Single Sign On environment).
-E anche possibile utilizzare una semplice autenticazione LDAP. Se CAS ritiene validi lo username e la password inseriti, Moodle creerà un nuovo utente nel proprio database, prelevando i campi dell\'utente da LDAP qualora necessario.
-Nei login successivi, verranno verificati solamente username e password.';
+$string['auth_cas_curl_ssl_version_default'] = 'Default';
+$string['auth_cas_curl_ssl_version_key'] = 'Versione SSL cURL';
 $string['auth_cas_enabled'] = 'Da attivare se si intende utilizzare l\'autenticazione CAS (Central Authentication Service).';
 $string['auth_cas_hostname'] = 'Nome host del server CAS<br/>Per esempio: host.dominio.it';
 $string['auth_cas_hostname_key'] = 'Nome host';
@@ -65,13 +63,12 @@ $string['auth_cas_invalidcaslogin'] = 'Spiacente, il login è fallito - Potreste
 $string['auth_cas_language'] = 'Lingua delle pagine di autenticazione';
 $string['auth_cas_language_key'] = 'Lingua';
 $string['auth_cas_logincas'] = 'Accesso con connessione sicura';
-$string['auth_cas_logoutcas'] = 'Imposta a \'si\' se si desidera eseguire il logout da CAS quando ci si disconnette da Moodle';
-$string['auth_cas_logoutcas_key'] = 'Opzioni logout CAS';
 $string['auth_cas_logout_return_url'] = 'L\'URL dove saranno indirizzati gli utenti CAS dopo il logout.<br />Se l\'URL non viene impostato gli utenti saranno indirizzati alla pagina usata da Moodle.';
 $string['auth_cas_logout_return_url_key'] = 'URL pagina di logout sostitutiva';
-$string['auth_cas_multiauth'] = 'Impostare a SI se si desidera una multi-autenticazione (CAS + un\'altra autenticazione)';
+$string['auth_cas_logoutcas'] = 'Impostare a \'Sì\' se si desidera eseguire il logout da CAS quando ci si disconnette da Moodle';
+$string['auth_cas_logoutcas_key'] = 'Opzioni logout CAS';
+$string['auth_cas_multiauth'] = 'Impostare a \'Sì\' se si desidera una multi-autenticazione (CAS + un\'altra autenticazione)';
 $string['auth_cas_multiauth_key'] = 'Multi-autenticazione';
-$string['auth_casnotinstalled'] = 'L\'autenticazione CAS non può essere usata. Il modulo PHP LDAP non è installato.';
 $string['auth_cas_port'] = 'Porta del server CAS';
 $string['auth_cas_port_key'] = 'Porta';
 $string['auth_cas_proxycas'] = 'Imposta a \'si\' se si utilizzi CAS in modalità proxy';
@@ -80,7 +77,10 @@ $string['auth_cas_server_settings'] = 'Configurazione del server CAS (Central Au
 $string['auth_cas_text'] = 'Connessione sicura';
 $string['auth_cas_use_cas'] = 'Usare CAS';
 $string['auth_cas_version'] = 'Versione protocollo CAS da utilizzare';
-$string['CASform'] = 'Scelta autenticazione';
+$string['auth_casdescription'] = 'Questo metodo utilizza un server CAS (Central Authentication Service) per autenticare utenti via SSO (Single Sign On environment).
+E anche possibile utilizzare una semplice autenticazione LDAP. Se CAS ritiene validi lo username e la password inseriti, Moodle creerà un nuovo utente nel proprio database, prelevando i campi dell\'utente da LDAP qualora necessario.
+Nei login successivi, verranno verificati solamente username e password.';
+$string['auth_casnotinstalled'] = 'L\'autenticazione CAS non può essere usata. Il modulo PHP LDAP non è installato.';
 $string['noldapserver'] = 'Nessun server LDAP è stato configurato per l\'autenticazione CAS. La sincronizzazione è disabilitata.';
 $string['pluginname'] = 'Server CAS (SSO)';
 $string['privacy:metadata'] = 'Il plugin di autenticazione "Server CAS (SSO)" non memorizza dati personali.';

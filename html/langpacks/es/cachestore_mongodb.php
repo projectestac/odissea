@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cachestore_mongodb', language 'es', version '3.8'.
  *
- * @package   cachestore_mongodb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_mongodb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,13 +30,14 @@ $string['database_help'] = 'El nombre de la base de datos a utilizar.';
 $string['extendedmode'] = 'Usar claves extendidas';
 $string['password'] = 'Contraseña';
 $string['password_help'] = 'La contraseña del usuario es la misma que se utiliza para la conexión.';
-$string['pleaseupgrademongo'] = 'Está usando la versión antigua de la extensión Mongo para PHP (< 1.3). Se descartará el soporte para las versiones antiguas de las extensión Mongo en el futuro. Por favor, considere actualizar.';
+$string['pleaseupgrademongo'] = 'Está usando una versión antigua de la extensión PHP Mongo (<1.3). Soporte para versiones antiguas de la extensión Mongo será descartada en el futuro. Por favor, considere actualizarla.';
 $string['pluginname'] = 'MongoDB';
 $string['replicaset'] = 'Set de réplicas';
 $string['server'] = 'Servidor';
-$string['server_help'] = 'Esta es la cadena de conexión para el servidor que desea utilizar. Se puede especificar más de un servidor en la lista separándolos por comas.';
+$string['server_help'] = 'Esta es la cadena de conexión para el servidor que desea utilizar. Se pueden especificar múltiples servidores en una lista separada por comas.';
 $string['testserver'] = 'Servidor de prueba';
-$string['testserver_desc'] = 'Esta es la cadena de caracteres para la conexión con el servidor de prueba que desea utilizar. Los servidores de prueba son totalmente opcionales, y especificando un servidor de prueba puede ejecutar pruebas PHPUnit para este entorno y ejecutar pruebas de rendimiento.';
+$string['testserver_desc'] = 'La cadena para la conexión con el servidor de prueba que desea utilizar. Si un servidor de prueba ha sido especificado, se puede comprobar el rendimiento de MongoDB usando la página de rendimiento en caché en el bloque de administración.
+Por ejemplo: mongodb://127.0.0.1:27017';
 $string['username'] = 'Nombre de usuario';
 $string['username_help'] = 'El nombre de usuario que se utilizará al realizar una conexión.';
 $string['usesafe'] = 'Uso seguro';

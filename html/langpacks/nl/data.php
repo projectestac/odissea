@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'data', language 'nl', version '3.8'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -158,7 +158,7 @@ $string['emptyaddform'] = 'Je hebt geen velden ingevuld!';
 $string['enabletemplateeditorcheck'] = 'Weet je zeker dat je de editor wil inschakelen? Dit kan als gevolg hebben dat de inhoud gewijzigd wordt wanneer het sjabloon bewaard wordt.';
 $string['entries'] = 'Items';
 $string['entrieslefttoadd'] = 'Je moet {$a->entriesleft} meer item(s) ingeven voor je de items van anderen kunt zien.';
-$string['entrieslefttoaddtoview'] = 'je moet {$a->entrieslefttoview} items meer toevoegen voor je de items van anderen kan zien.';
+$string['entrieslefttoaddtoview'] = 'je moet nog {$a->entrieslefttoview} items toevoegen voor je de items van anderen kan zien.';
 $string['entry'] = 'Item';
 $string['entrysaved'] = 'Gegevens bewaard.';
 $string['errormustbeteacher'] = 'Je moet leraar zijn om deze pagina te kunnen gebruiken';
@@ -232,13 +232,13 @@ $string['includetags'] = 'Inclusief tags';
 $string['includetime'] = 'Tijd toegevoegd/gewijzigd mee opnemen';
 $string['includeuserdetails'] = 'Gebruikersdetails mee opnemen';
 $string['indicator:cognitivedepth'] = 'Databank cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Databank activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Database cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de database-activiteiten bereikt tijdens dit analyse-interval (Niveaus = Geen weergave, Bekijken, Verzenden)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Databank activiteit.';
 $string['indicator:socialbreadth'] = 'Databank sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Databank activiteit.';
 $string['indicator:socialbreadthdef'] = 'Database sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de database-activiteiten bereikt tijdens dit analyse-interval (niveaus = geen deelname, alleen deelnemer)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Databank activiteit.';
 $string['insufficiententries'] = 'meer items nodig om deze databank te kunnen bekijken';
 $string['intro'] = 'Beschrijving';
 $string['invalidaccess'] = 'Deze pagina is niet correct opgevraagd';
@@ -339,13 +339,13 @@ $string['privacy:metadata:data_content:content2'] = 'Bijkomende inhoud 2';
 $string['privacy:metadata:data_content:content3'] = 'Bijkomende inhoud 3';
 $string['privacy:metadata:data_content:content4'] = 'Bijkomende inhoud 4';
 $string['privacy:metadata:data_content:fieldid'] = 'Velddefinitie-ID';
-$string['privacy:metadata:datafieldnpluginsummary'] = 'Velden voor de databank activiteitsmodule';
 $string['privacy:metadata:data_records'] = 'Representeert gegevens in de databank activiteitsmodule';
 $string['privacy:metadata:data_records:approved'] = 'Goedkeuringsstatus';
 $string['privacy:metadata:data_records:groupid'] = 'Groep';
 $string['privacy:metadata:data_records:timecreated'] = 'Tijdstip waarop het gegeven gemaakt is';
 $string['privacy:metadata:data_records:timemodified'] = 'Tijdstip waarop het gegeven laatst gewijzigd is';
 $string['privacy:metadata:data_records:userid'] = 'Gebruiker die het gegeven gemaakt heeft';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Velden voor de databank activiteitsmodule';
 $string['privacy:metadata:filepurpose'] = 'Bestand als bijlage bij het databankgegeven';
 $string['privacy:metadata:ratingpurpose'] = 'Beoordelingen om datbankgegevens';
 $string['privacy:metadata:tagpurpose'] = 'Tags op databankgegevens';

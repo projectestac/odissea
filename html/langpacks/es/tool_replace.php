@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_replace', language 'es', version '3.8'.
  *
- * @package   tool_replace
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_replace
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['disclaimer'] = 'Entiendo los riesgos de esta operación';
 $string['doit'] = '¡Sí, hazlo!';
-$string['invalidcharacter'] = 'Se encontraron caracteres no válidos en el texto de búsqueda o reemplazo.';
+$string['invalidcharacter'] = 'Se han encontrado carácteres inválidos en la búsqueda o en el reemplazo de texto.';
 $string['notifyfinished'] = '...finalizado';
 $string['notifyrebuilding'] = 'Reconstruyendo la caché del curso...';
 $string['notimplemented'] = 'Lo sentimos, esta característica no está implementada en el controlador de tu base de datos.';

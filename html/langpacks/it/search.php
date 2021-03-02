@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'search', language 'it', version '3.8'.
  *
- * @package   search
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     search
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -69,8 +69,8 @@ $string['enginenotinstalled'] = 'Il motore {$a} non è installato.';
 $string['enginenotselected'] = 'Non hai selezionato nessun motore di ricerca.';
 $string['engineserverstatus'] = 'Il motore di ricerca non è disponibile. Per favore contatta l\'amministratore del sito.';
 $string['enteryoursearchquery'] = 'Parole da cercare';
-$string['errorareanotavailable'] = 'L\'area di ricerca {$a} non è disponibile.';
 $string['error_indexing'] = 'Si è verificato un errore durante l\'indicizzazione';
+$string['errorareanotavailable'] = 'L\'area di ricerca {$a} non è disponibile.';
 $string['errors'] = 'Errori';
 $string['everywhere'] = 'Ovunque sia possibile accedere';
 $string['filesinindexdirectory'] = 'Files nella directory indice';
@@ -114,18 +114,18 @@ $string['schemanotupdated'] = 'Lo schema di ricerca è obsoleto.';
 $string['schemaversionunknown'] = 'Il motore di ricerca non conosce l\'attuale versione dello schema.';
 $string['score'] = 'Punteggio';
 $string['search'] = 'Ricerca';
-$string['searcharea'] = 'Area di ricerca';
-$string['searchareacategories'] = 'Area di ricerca categorie';
 $string['search:course'] = 'Corsi';
 $string['search:customfield'] = 'Campi personalizzati del corso';
-$string['searching'] = 'Ricerca in ...';
 $string['search:message_received'] = 'Messaggi - ricevuti';
 $string['search:message_sent'] = 'Messaggi - inviati';
 $string['search:mycourse'] = 'I miei corsi';
-$string['searchnotpermitted'] = 'Non sei autorizzato ad eseguire ricerche';
 $string['search:section'] = 'Sezioni del corso';
-$string['searchsetupdescription'] = 'I passi seguenti faciliteranno l\'impostazione della ricerca globale di Moodle:';
 $string['search:user'] = 'Utenti';
+$string['searcharea'] = 'Area di ricerca';
+$string['searchareacategories'] = 'Area di ricerca categorie';
+$string['searching'] = 'Ricerca in ...';
+$string['searchnotpermitted'] = 'Non sei autorizzato ad eseguire ricerche';
+$string['searchsetupdescription'] = 'I passi seguenti faciliteranno l\'impostazione della ricerca globale di Moodle:';
 $string['searchwithin'] = 'Cerca in';
 $string['seconds'] = 'secondi';
 $string['solutions'] = 'Soluzioni';

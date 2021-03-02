@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_overview', language 'gl', version '3.8'.
  *
- * @package   quiz_overview
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_overview
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allattempts'] = 'Amosar todos os intentos';
 $string['allattemptscontributetograde'] = 'Todos os intentos contribúen á cualificación final do usuario.';
 $string['allstudents'] = 'Amosar todo {$a}';
-$string['attemptsonly'] = 'Mostrar {$a} con tentativas unicamente';
+$string['attemptsonly'] = 'Amosar só {$a} con intentos';
 $string['attemptsprepage'] = 'Intentos amosados por páxina';
 $string['deleteselected'] = 'Eliminar os intentos seleccionados';
 $string['done'] = 'Feito';
@@ -36,7 +36,7 @@ $string['err_failedtodeleteregrades'] = 'Non foi posíbel eliminar as cualificac
 $string['err_failedtorecalculateattemptgrades'] = 'Non foi posíbel recalcular as cualificacións do intento';
 $string['highlightinggraded'] = 'O intento do usuario que contribúe á cualificación final está resaltado.';
 $string['needed'] = 'Necesario';
-$string['noattemptsonly'] = 'Mostrar {$a} sen tentativas unicamente';
+$string['noattemptsonly'] = 'Amosar / descargar só {$a} sen intentos';
 $string['noattemptstoregrade'] = 'Ningún intento necesita recualificación';
 $string['nogradepermission'] = 'Non ten permiso para cualificar esta proba.';
 $string['onlyoneattemptallowed'] = 'Só se permite un intento por usuario nesta proba.';

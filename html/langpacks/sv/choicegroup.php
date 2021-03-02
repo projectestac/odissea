@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'sv', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,10 @@ $string['char_limitui_parenthesis_start'] = '⦗';
 $string['choice'] = 'Val';
 $string['choicegroup:addinstance'] = 'Lägg till ny gruppvalsaktivitet';
 $string['choicegroup:choose'] = 'Spara val';
-$string['choicegroupclose'] = 'Tills';
 $string['choicegroup:deleteresponses'] = 'Radera svar';
 $string['choicegroup:downloadresponses'] = 'Ladda ner svar';
+$string['choicegroup:readresponses'] = 'Läs svaren';
+$string['choicegroupclose'] = 'Tills';
 $string['choicegroupfull'] = 'Den här gruppen är full och det finns inget tillgängligt utrymme.';
 $string['choicegroupname'] = 'Gruppvalets namn';
 $string['choicegroupopen'] = 'Öppen';
@@ -59,7 +60,6 @@ Till vänster ser du de möjliga gruperna och grupperingarna. Välj en eller fle
 De valda grupperna syns i listan till höger
 
 När du vill ta bort en grupp från listan till höger väljer du den och trycker på "Radera".';
-$string['choicegroup:readresponses'] = 'Läs svaren';
 $string['choicegroupsaved'] = 'Ditt val har sparats';
 $string['choicetext'] = 'Valtext';
 $string['chooseaction'] = 'Välj aktivitet ...';
@@ -74,8 +74,8 @@ $string['del_groups'] = 'Radera grupper';
 $string['displayhorizontal'] = 'Visa vågrätt';
 $string['displaymode'] = 'Visningsläge';
 $string['displayvertical'] = 'Visa lodrätt';
-$string['double_click_grouping_legend'] = 'Dubbelklicka på en gruppering för att expandera/stänga den individuellt.';
 $string['double_click_group_legend'] = 'Dubbelklicka på en grupp för att lägga till den i listan.';
+$string['double_click_grouping_legend'] = 'Dubbelklicka på en gruppering för att expandera/stänga den individuellt.';
 $string['event:answered'] = 'Valet är gjort';
 $string['event:answered_desc'] = 'Användare \'{$a→userid}\' har valt en grupp i gruppvalet i modulen \'{$a->contextinstanceid}\'.';
 $string['event:removed'] = 'Valet är raderat';

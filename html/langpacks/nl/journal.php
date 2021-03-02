@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'journal', language 'nl', version '3.8'.
  *
- * @package   journal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     journal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,6 +45,7 @@ $string['feedbackupdated'] = 'Feedback geüpdatet voor {$a} items';
 $string['gradeingradebook'] = 'Huidige cijfer in cijferboek';
 $string['journal:addentries'] = 'Dagboekitems toevoegen';
 $string['journal:addinstance'] = 'Exemplaren van Dagboek toevoegen';
+$string['journal:manageentries'] = 'Items van het dagboek beheren';
 $string['journalmail'] = '{$a->teacher} heeft feedback geplaatst bij jouw Dagboekitem voor \'{$a->journal}\'
 
 Je kunt de bijgevoegde feedback bij je Dagboekitem hier bekijken:
@@ -52,7 +53,6 @@ Je kunt de bijgevoegde feedback bij je Dagboekitem hier bekijken:
     {$a->url}';
 $string['journalmailhtml'] = '{$a->teacher} heeft feedback geplaatst bij jouw Dagboekitem voor \'<i>{$a->journal}</i>\'<br /><br />
 Je kunt de bijgevoegde feedback bij je <a href="{$a->url}">Dagboekitem</a> bekijken.';
-$string['journal:manageentries'] = 'Items van het dagboek beheren';
 $string['journalname'] = 'Naam van het dagboek';
 $string['journalquestion'] = 'Vraag voor het dagboek';
 $string['mailsubject'] = 'Feedback bij het Dagboek';

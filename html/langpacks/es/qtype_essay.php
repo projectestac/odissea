@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essay', language 'es', version '3.8'.
  *
- * @package   qtype_essay
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essay
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,9 +44,9 @@ $string['mustrequirefewer'] = 'No puede requerir más archivos adjuntos de los q
 $string['nlines'] = '{$a} líneas';
 $string['nonexistentfiletypes'] = 'Los siguientes tipos de archivo no fueron reconocidos: {$a}';
 $string['pluginname'] = 'Ensayo';
+$string['pluginname_help'] = 'En respuesta a una pregunta (puede incluir una imagen) el alumno escribe una respuesta de uno o dos párrafos. La pregunta de ensayo no se le asignará una calificación hasta que haya sido revisada por el profesor y calificada de forma manual.';
 $string['pluginnameadding'] = 'Agregando una pregunta de ensayo';
 $string['pluginnameediting'] = 'Editando una pregunta de ensayo';
-$string['pluginname_help'] = 'En respuesta a una pregunta (puede incluir una imagen) el alumno escribe una respuesta de uno o dos párrafos. La pregunta de ensayo no se le asignará una calificación hasta que haya sido revisada por el profesor y calificada de forma manual.';
 $string['pluginnamesummary'] = 'Permite una respuesta de unas pocas frases o párrafos. Se deberá calificar manualmente.';
 $string['responsefieldlines'] = 'Tamaño de la caja de entrada';
 $string['responseformat'] = 'Formato de la respuesta';
@@ -55,5 +55,5 @@ $string['responsenotrequired'] = 'El texto es opcional';
 $string['responseoptions'] = 'Opciones de respuesta';
 $string['responserequired'] = 'Requerir texto';
 $string['responsetemplate'] = 'Plantilla de respuesta';
-$string['responsetemplateheader'] = 'Plantilla de respuesta';
 $string['responsetemplate_help'] = 'El texto introducido aquí se mostrará en el cuadro de entrada de respuesta cuando se inicia un nuevo intento de la pregunta a modo de plantilla o guía para su cumplimentación.';
+$string['responsetemplateheader'] = 'Plantilla de respuesta';

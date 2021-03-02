@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_mobile', language 'it', version '3.8'.
  *
- * @package   tool_mobile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_mobile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -92,7 +92,7 @@ $string['mobilefeatures'] = 'Funzionalità mobile';
 $string['mobilenotificationsdisabledwarning'] = 'Le notifiche per dispositivi mobili non sono abilitate. Possono essere abilitate nelle impostazioni delle notifiche.';
 $string['mobilesettings'] = 'Impostazioni mobile';
 $string['oauth2identityproviders'] = 'Identity provider OAuth 2';
-$string['offlineuse'] = 'Uso offiline';
+$string['offlineuse'] = 'Uso offline';
 $string['pluginname'] = 'Strumenti Moodle App';
 $string['pluginnotenabledorconfigured'] = 'Il plugin non è abilitato o non è configurato';
 $string['privacy:metadata:core_userkey'] = 'Le chiavi utente utilizzate per creare la chiave d\'accesso automatico.';
@@ -103,4 +103,4 @@ $string['setuplink'] = 'Pagina di scaricamento app';
 $string['setuplink_desc'] = 'URL della pagina contenente i link per scaricare l\'app mobile dall\'App Store e Google Play.';
 $string['smartappbanners'] = 'App Banner';
 $string['typeoflogin'] = 'Tipo di autenticazione';
-$string['typeoflogin_desc'] = 'Se un sito utilizza un\'autenticazione SSO, selezionare finestra browser o browser incorporato. Un browser incorporato fornisce un\'esperienza utente migliore sebbene non funzioni con tutti i tipi di plugin SSO. Quando si utilizza un SSO, il login automatico per gli ospiti deve essere disabilitato.';
+$string['typeoflogin_desc'] = 'Se un sito utilizza un\'autenticazione SSO, selezionare finestra browser o browser incorporato. Un browser incorporato fornisce un\'esperienza utente migliore sebbene non funzioni con tutti i tipi di plugin SSO.';

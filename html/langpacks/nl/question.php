@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'question', language 'nl', version '3.8'.
  *
- * @package   question
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     question
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -202,8 +202,8 @@ $string['filestomove'] = 'Verplaats / kopieëer bestanden naar {$a}?';
 $string['fillincorrect'] = 'Vul de juiste antwoorden in';
 $string['filterbytags'] = 'Filter op tags...';
 $string['firsttry'] = 'Eerste poging';
-$string['flagged'] = 'Gemarkeerd';
-$string['flagthisquestion'] = 'Markeer deze vraag';
+$string['flagged'] = 'Aangeduid';
+$string['flagthisquestion'] = 'Deze vraag aanduiden (bijvoorbeeld om te herlezen of later te beantwoorden)';
 $string['formquestionnotinids'] = 'Formulier bevat vraag die niet bij de vraag ID\'s staat';
 $string['fractionsnomax'] = 'Eén van de vragen moet een score van 100% hebben, zodat het mogelijk is om alle punten voor deze vraag te behalen.';
 $string['generalfeedback'] = 'Algemene feedback vraag';
@@ -265,11 +265,11 @@ $string['markedoutofmax'] = 'Punten op {$a}';
 $string['markoutofmax'] = '{$a->mark} punten op {$a->max}';
 $string['marks'] = 'Cijfers';
 $string['matchgrades'] = 'Koppel cijfers';
-$string['matchgradeserror'] = 'Fout als cijfer niet getoond';
 $string['matchgrades_help'] = 'Geïmporteerde cijfers moeten overeen komen met één uit de vaste lijst met geldige cijfers - 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0 (ook negatieve cijfers). Indien dat niet het geval is, zijn er twee opties:
 
 * Fout als het cijfer niet in de lijst voorkomt - als een vraag cijfers bevat die niet in de lijst voorkomen, dan zal er een foutmelding getoond worden en de vraag wordt niet geïmporteerd
 * Dichtstbijzijnde cijfer indien niet in de lijst - als een cijfer wordt gevonden dat niet overeenkomt met een cijfer in de lijst, dan wordt het cijfer gewijzigd naar de dichtstbijzijnde waarde in de lijst';
+$string['matchgradeserror'] = 'Fout als cijfer niet getoond';
 $string['matchgradesnearest'] = 'Dichtsbijliggende cijfer indien niet getoond';
 $string['missingcourseorcmid'] = 'Moet courseid of cmid opgeven voor print_question';
 $string['missingcourseorcmidtolink'] = 'Moet cursusid of cmid geven voor get_question_edit_link';
@@ -303,7 +303,7 @@ $string['notchanged'] = 'Niet gewijzigd sinds de laatste poging';
 $string['notenoughanswers'] = 'Dit vraagtype vereist minstens {$a} antwoorden';
 $string['notenoughdatatoeditaquestion'] = 'Noch een vraad ID, een categorie ID of een vraagtype is opgegeven.';
 $string['notenoughdatatomovequestions'] = 'Je moet de vraag id\'s opgeven van de vragen die je wil verplaatsen.';
-$string['notflagged'] = 'Niet gemarkeerd';
+$string['notflagged'] = 'Niet aangeduid';
 $string['notgraded'] = 'Niet beoordeeld';
 $string['notshown'] = 'Niet getoond';
 $string['notyetanswered'] = 'Nog niet beantwoord';
@@ -341,9 +341,13 @@ $string['permissionsaveasnew'] = 'Bewaar dit als een nieuwe vraag';
 $string['permissionto'] = 'Je hebt het recht om:';
 $string['previewquestion'] = 'Voorbeeld van vraag: {$a}';
 $string['privacy:metadata:database:question'] = 'De details van een specifieke vraag.';
-$string['privacy:metadata:database:question_attempts'] = 'De informatie over een poging voor een specifieke vraag.';
-$string['privacy:metadata:database:question_attempts:flagged'] = 'Een indicatie dat de gebruiker deze vraag heeft gemarkeerd tijdens de poging.';
-$string['privacy:metadata:database:question_attempts:responsesummary'] = 'Een samenvatting van het antwoord op de vraag.';
+$string['privacy:metadata:database:question:createdby'] = 'De persoon die de vraag aanmaakte.';
+$string['privacy:metadata:database:question:generalfeedback'] = 'De algemene feedback voor deze vraag.';
+$string['privacy:metadata:database:question:modifiedby'] = 'De persoon die de vraag voor het laatst bijwerkte.';
+$string['privacy:metadata:database:question:name'] = 'De naam van de vraag.';
+$string['privacy:metadata:database:question:questiontext'] = 'De vraagtekst.';
+$string['privacy:metadata:database:question:timecreated'] = 'De datum en tijd dat deze vraag werd aangemaakt.';
+$string['privacy:metadata:database:question:timemodified'] = 'De datum en tijd dat deze vraag werd aangepast.';
 $string['privacy:metadata:database:question_attempt_step_data'] = 'Stappen in de vraagpoging kunnen aanvullende data bevatten specifiek voor die stap. Deze data wordt opgeslagen in de tabel step_data.';
 $string['privacy:metadata:database:question_attempt_step_data:name'] = 'De naam van het data-item.';
 $string['privacy:metadata:database:question_attempt_step_data:value'] = 'De waarde van het data-item.';
@@ -352,14 +356,10 @@ $string['privacy:metadata:database:question_attempt_steps:fraction'] = 'Het cijf
 $string['privacy:metadata:database:question_attempt_steps:state'] = 'De toestand van deze stap in de vraagpoging aan het einde van de stapovergang.';
 $string['privacy:metadata:database:question_attempt_steps:timecreated'] = 'De datum en tijd dat deze stapovergang begon.';
 $string['privacy:metadata:database:question_attempt_steps:userid'] = 'De gebruiker die de stapovergang uitvoerde.';
+$string['privacy:metadata:database:question_attempts'] = 'De informatie over een poging voor een specifieke vraag.';
+$string['privacy:metadata:database:question_attempts:flagged'] = 'Een indicatie dat de gebruiker deze vraag heeft gemarkeerd tijdens de poging.';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = 'Een samenvatting van het antwoord op de vraag.';
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'De tijd dat de vraagpoging werd geüpdatet.';
-$string['privacy:metadata:database:question:createdby'] = 'De persoon die de vraag aanmaakte.';
-$string['privacy:metadata:database:question:generalfeedback'] = 'De algemene feedback voor deze vraag.';
-$string['privacy:metadata:database:question:modifiedby'] = 'De persoon die de vraag voor het laatst bijwerkte.';
-$string['privacy:metadata:database:question:name'] = 'De naam van de vraag.';
-$string['privacy:metadata:database:question:questiontext'] = 'De vraagtekst.';
-$string['privacy:metadata:database:question:timecreated'] = 'De datum en tijd dat deze vraag werd aangemaakt.';
-$string['privacy:metadata:database:question:timemodified'] = 'De datum en tijd dat deze vraag werd aangepast.';
 $string['privacy:metadata:link:qbehaviour'] = 'Het vraag subsysteem maakt gebruik van het vraaggedrag plugintype';
 $string['privacy:metadata:link:qformat'] = 'Het Vraag subsysteem maakt gebruik van het plugintype Vraagformat om vragen in verschillende formats te importeren en exporteren.';
 $string['privacy:metadata:link:qtype'] = 'Het Vraag subsysteem maakt gebruik van het plugintype Vraagtype dat de verschillende types vragen bevat.';

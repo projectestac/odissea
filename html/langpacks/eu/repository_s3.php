@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,23 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_s3', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_s3', language 'eu', version '3.8'.
  *
- * @package   repository_s3
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_s3
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['access_key'] = 'Sarbide-gakoa';
 $string['configplugin'] = 'Amazon S3-ren ezarpenak';
-$string['endpoint'] = 'Amazon S3  amaiera-puntua';
+$string['endpoint'] = 'Amazon S3ko amaiera-puntua';
 $string['needaccesskey'] = 'Sarbide-gakoa lortu behar da';
 $string['pluginname'] = 'Amazon S3';
-$string['privacy:metadata'] = 'Amazon S3 biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata'] = 'Amazon S3 biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
 $string['s3:view'] = 'Ikusi Amazon S3 biltegia';
 $string['secret_key'] = 'Giltza sekretua';

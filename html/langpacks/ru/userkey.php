@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'userkey', language 'ru', version '3.8'.
  *
- * @package   userkey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     userkey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,7 +42,7 @@ $string['privacy:metadata:user_private_key:iprestriction'] = 'Диапазон I
 $string['privacy:metadata:user_private_key:script'] = 'Скрипт, который отвечает за ключ пользователя.';
 $string['privacy:metadata:user_private_key:timecreated'] = 'Дата и время создания ключа.';
 $string['privacy:metadata:user_private_key:userid'] = 'Пользователь, связанный с ключом.';
-$string['privacy:metadata:user_private_key:validuntil'] = 'Дата и время, до которой действителен закрытый ключ.';
+$string['privacy:metadata:user_private_key:validuntil'] = 'Дата, до которой действителен закрытый ключ.';
 $string['privacy:metadata:user_private_key:value'] = 'Значение ключа.';
 $string['userkey'] = 'Ключ безопасности';
 $string['userkey_help'] = 'Выберите один из сохраненных ключей, с помощью которого будет осуществляться доступ к оценкам без необходимости входить в систему Moodle. Выберите вариант «Создать новый ключ», чтобы создать новый ключ при отправке этой формы.';

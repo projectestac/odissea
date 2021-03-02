@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_random', language 'sv', version '3.8'.
  *
- * @package   qtype_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,9 +28,17 @@ defined('MOODLE_INTERNAL') || die();
 $string['configselectmanualquestions'] = 'Kan frågetyp slumpmässig fråga välja en manuellt rättad fråga när den gör sitt slumpmässiga val av en fråga från en kategori?';
 $string['includingsubcategories'] = 'Inklusive underkategorier';
 $string['pluginname'] = 'Slumpmässig';
-$string['pluginnameediting'] = 'Redigerar en slumpmässig fråga';
 $string['pluginname_help'] = 'En slumpmässigt fråga är inte en fråga typ som sådan, men är ett sätt att infoga en slumpmässigt vald fråga från en vald kategori i en aktivitet.';
+$string['pluginnameediting'] = 'Redigerar en slumpmässig fråga';
 $string['randomqname'] = 'Slumpmässig ({$a})';
+$string['randomqnamefromtoptags'] = 'Felaktig slumpmässig fråga! Vänligen ta bort denna fråga.';
+$string['randomqnametags'] = 'Slumpmässig ({$a->category}, etiketter: {$a->tags})';
 $string['randomqplusname'] = 'Slumpmässig ({$a} och underkategorier)';
+$string['randomqplusnamecoursecattags'] = 'Slumpmässig (Valfri kategori i kurskategorin {$a->category}, etiketter: {$a->tags})';
+$string['randomqplusnamecoursetags'] = 'Slumpmässig (Valfri kategori i denna kurs, etiketter: {$a->tags})';
+$string['randomqplusnamemoduletags'] = 'Slumpmässig (Valfri kategori i detta test, etiketter: {$a->tags})';
+$string['randomqplusnamesystemtags'] = 'Slumpmässig (Valfri kategori på systemnivå, etiketter: {$a->tags})';
+$string['randomqplusnametags'] = 'Slumpmässig ({$a->category} och underkategorier, etiketter: {$a->tags})';
 $string['selectedby'] = '{$a->questionname} vald av {$a->randomname}';
 $string['selectmanualquestions'] = 'Slumpmässiga frågor kan använda manuellt rättade frågor';
+$string['taskunusedrandomscleanup'] = 'Ta bort oanvända slumpmässiga frågor';

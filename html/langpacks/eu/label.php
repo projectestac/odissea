@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'label', language 'eu', version '3.8'.
  *
- * @package   label
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     label
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,16 +34,16 @@ $string['dndresizewidth'] = 'Egokitu hartu eta eraman zabaleran';
 $string['dnduploadlabel'] = 'Gehitu media ikastaroaren orrira';
 $string['dnduploadlabeltext'] = 'Gehitu etiketa ikastaroaren orrira';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa etiketetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Etiketa motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa etiketetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Etiketa baliabideak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da)';
-$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Etiketa motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala etiketetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Etiketa motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala etiketetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Etiketa baliabideak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea)';
-$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Etiketa motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['label:addinstance'] = 'Gehitu etiketa berria';
-$string['labeltext'] = 'Etiketaren testua';
 $string['label:view'] = 'Ikusi etiketa';
+$string['labeltext'] = 'Etiketaren testua';
 $string['modulename'] = 'Etiketa';
 $string['modulename_help'] = 'Etiketa baten bidez testu eta irudiak txerta daitezke ikastaroaren hasiera-orriko jarduera eta baliabideen esteken artean. Etiketek erabilera anitzak dituzte, eta era egokian erabiliz gero ikastaroaren itxura hobetzen lagun dezakete.
 

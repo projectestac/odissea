@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculated', language 'zh_cn', version '3.8'.
  *
- * @package   qtype_calculated
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculated
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -110,9 +110,9 @@ $string['oneanswertrueansweroutsidelimits'] = '至少一个正确答案在真值
 $string['param'] = '参数 {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = '给任意部分正确答案';
 $string['pluginname'] = '计算题';
+$string['pluginname_help'] = '在计算题中，每道题都可以使用通配符（放在大括号中），而在答题时通配符会被替换。例如，题目是“长为{l}宽为{w}的长方形面积是多少？”的正确答案计算公式是“{l}*{w}”（*表示乘法）。';
 $string['pluginnameadding'] = '增加一道计算题';
 $string['pluginnameediting'] = '编辑计算问题';
-$string['pluginname_help'] = '在计算题中，每道题都可以使用通配符（放在大括号中），而在答题时通配符会被替换。例如，题目是“长为{l}宽为{w}的长方形面积是多少？”的正确答案计算公式是“{l}*{w}”（*表示乘法）。';
 $string['pluginnamesummary'] = '计算题和数值题类似，但在答题时，题目中的数可以从一个集合中随机选择。';
 $string['possiblehdr'] = '仅在题干中有通配符';
 $string['questiondatasets'] = '题目数据集';

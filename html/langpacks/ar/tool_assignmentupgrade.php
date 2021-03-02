@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,31 +12,32 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'ar', branch 'MOODLE_34_STABLE'
+ * Strings for component 'tool_assignmentupgrade', language 'ar', version '3.8'.
  *
- * @package   tool_assignmentupgrade
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_assignmentupgrade
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['areyousure'] = 'هل أنت مُتأكد؟';
 $string['areyousuremessage'] = 'هل أنت متأكد أنك تريد ترقية المهمة/التكليف"{$a->name}"?';
-$string['assignmentid'] = 'معرف المهمة';
+$string['assignmentid'] = 'معرف المهمة /التكليف';
 $string['assignmentnotfound'] = 'تعذر العثورعلى التكليف/ المهمة (المُعرِّف={$a})';
-$string['assignmentsperpage'] = 'عدد المهمات لكل صفحة';
-$string['assignmenttype'] = 'نوع المهمة';
+$string['assignmentsperpage'] = 'عدد المهمات/التكاليف لكل صفحة';
+$string['assignmenttype'] = 'نوع المهمة / التكليف';
 $string['backtoindex'] = 'العودة للفهرس';
 $string['batchoperations'] = 'دفعة العمليات';
 $string['batchupgrade'] = 'ترقية تكاليف متعددة';
 $string['confirmbatchupgrade'] = 'تأكيد دفعة ترقية التكاليف/المهمات';
 $string['conversioncomplete'] = 'تم تحويل التكاليف';
 $string['conversionfailed'] = 'لم يكن  تحويل التكليف/المهمة  ناجحاً. سجل الترقية  هو :<br />{$a}';
-$string['listnotupgraded'] = 'قائمة بالمهمات التي لم يتم ترقيتها';
+$string['listnotupgraded'] = 'قائمة بالمهمات/ التكاليف التي لم يتم ترقيتها';
 $string['listnotupgraded_desc'] = 'يمكنك ترقية التكاليف/المهام الفردية من هنا';
 $string['noassignmentsselected'] = 'لا تكاليف /مهام مُختارة';
 $string['noassignmentstoupgrade'] = 'لا توجد المهام/ تكاليف التي تتطلب ترقية';

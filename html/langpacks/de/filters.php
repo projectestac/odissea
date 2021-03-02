@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filters', language 'de', version '3.8'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,8 +52,8 @@ $string['doesnotcontain'] = 'enthält nicht';
 $string['endswith'] = 'endet mit';
 $string['filterallwarning'] = 'Aktive Filter für Inhalt bzw. Titel können Ihren Server erheblich belasten. Bitte benutzen Sie deswegen die Einstellung \'Aktivieren\' sparsam.';
 $string['filtersettings'] = 'Filtereinstellungen';
-$string['filtersettingsforin'] = 'Filtereinstellungen für {$a->filter} in {$a->context}';
 $string['filtersettings_help'] = 'Diese Seite lässt Sie Filter für bestimmte Teile der Website ein- oder ausschalten. Einige Filter könnte auch lokale Einstellungen besitzen.';
+$string['filtersettingsforin'] = 'Filtereinstellungen für {$a->filter} in {$a->context}';
 $string['filtersettingsin'] = 'Filtereinstellungen in {$a}';
 $string['firstaccess'] = 'Erster Zugriff';
 $string['globalrolelabel'] = '{$a->label} ist {$a->value}';

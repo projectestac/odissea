@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hotpot', language 'de', version '3.8'.
  *
- * @package   hotpot
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hotpot
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -94,6 +94,7 @@ $string['confirmdeleteattempts'] = 'Sind Sie sicher, dass Sie diese Versuche wir
 $string['confirmstop'] = 'Sind sie sicher, dass Sie diese Seite verlassen wollen?';
 $string['correct'] = 'Richtig';
 $string['couldnotinsertsubmissionform'] = 'Das Eingabeformular konnte nicht eingefügt werden';
+$string['d_index'] = 'Discrimination Index';
 $string['delay1'] = 'Verzögerung 1';
 $string['delay1_help'] = 'Diese Einstellung legt die minimale Zeitdauer zwischen dem ersten und zweiten Versuch fest.';
 $string['delay1summary'] = 'Zeitdauer zwischen dem ersten und zweiten Versuch';
@@ -101,8 +102,6 @@ $string['delay2'] = 'Verzögerung 2';
 $string['delay2_help'] = 'Diese Einstellung legt die minimale Zeitdauer für alle weiteren Versuche nach dem zweiten Versuch fest.';
 $string['delay2summary'] = 'Zeitdauer zwischen allen weiteren Versuchen';
 $string['delay3'] = 'Verzögerung 3';
-$string['delay3afterok'] = 'Warten, bis OK angeklickt wird';
-$string['delay3disable'] = 'Nicht automatisch fortsetzen';
 $string['delay3_help'] = 'Die Einstellung legt die Zeitdauer zwischen der Beendigung des HotPot-Quiz und der Rückkehr zum Moodlekurs fest.
 
 **Angegebene Zeit**
@@ -118,13 +117,14 @@ $string['delay3_help'] = 'Die Einstellung legt die Zeitdauer zwischen der Beendi
 : Die Kontrolle wird nicht an Moodle zurückgegeben, wenn das HotPot-Quiz abgeschlossen ist. Es ist freigestellt, was danach aufgerufen wird.
 
 Beachten Sie, dass unabhängig von dieser Einstellung alle HotPot-Ergebnisse immer sofort in Moodle gespeichert werden, sobald das Quiz abgeschlossen oder abgebrochen wurde.';
+$string['delay3afterok'] = 'Warten, bis OK angeklickt wird';
+$string['delay3disable'] = 'Nicht automatisch fortsetzen';
 $string['delay3specific'] = 'Angegebene Zeit';
 $string['delay3summary'] = 'Verzögerungszeit am Ende des Quiz';
 $string['delay3template'] = 'Einstellung in der Quelldatei';
 $string['deleteallattempts'] = 'Alle Versuche löschen';
 $string['deleteattempts'] = 'Versuche löschen';
 $string['detailsrecords'] = 'Detailübersicht';
-$string['d_index'] = 'Discrimination Index';
 $string['duration'] = 'Dauer';
 $string['enablecache'] = 'HotPot-Cache';
 $string['enablecron'] = 'HotPot-Cron';
@@ -132,8 +132,10 @@ $string['enablemymoodle'] = 'HotPots auf \'Meine Startseite\' zeigen';
 $string['enableobfuscate'] = 'MediaPlayer-Code verschleiern';
 $string['enableswf'] = 'Eingebettete SWF-Dateien erlauben';
 $string['entry_attempts'] = 'Versuche';
+$string['entry_dates'] = 'Daten';
+$string['entry_grading'] = 'Bewertung';
+$string['entry_title'] = 'Kapitelname als Titel';
 $string['entrycm'] = 'Vorherige Aktivität';
-$string['entrycmcourse'] = 'Vorherige Aktivität im Kurs';
 $string['entrycm_help'] = 'Diese Einstellung legt fest, welche Aktivität mit welchem Mindestergebnis bearbeitet sein muss, bevor dieses HotPot versucht werden darf.
 
 Es kann eine bestimmte Aktivität angegeben oder eine der nachfolgenden Einstellungen ausgewählt werden:
@@ -142,12 +144,11 @@ Es kann eine bestimmte Aktivität angegeben oder eine der nachfolgenden Einstell
 * Vorherige Aktivität im Kursabschnitt
 * Vorheriges HotPot im Kurs
 * Vorheriges HotPot im Kursabschnitt';
+$string['entrycmcourse'] = 'Vorherige Aktivität im Kurs';
 $string['entrycmsection'] = 'Vorherige Aktivität im Kursabschnitt';
 $string['entrycompletionwarning'] = 'Bevor Sie diese Aktivität beginnen, müssen Sie sich {$a} anschauen.';
-$string['entry_dates'] = 'Daten';
 $string['entrygrade'] = 'Vorherige Aktivitätsbewertung';
 $string['entrygradewarning'] = 'Sie können diese Aktivität nicht beginnen, solange Ihre Wertung für \'{$a->entryactivity}\' unter {$a->entrygrade}% liegt. Aktuell haben Sie für die andere Aktivität {$a->usergrade}% erreicht.';
-$string['entry_grading'] = 'Bewertung';
 $string['entryhotpotcourse'] = 'Vorheriges HotPot im Kurs';
 $string['entryhotpotsection'] = 'Vorheriges HotPot im Kursabschnitt';
 $string['entryoptions'] = 'Optionen der Anfangsseite';
@@ -165,7 +166,6 @@ $string['entryoptions_help'] = 'Diese Optionen beeinflussen die Anzeige von Elem
 **Versuche**
 : Wenn diese Option aktiviert ist, wird eine Tabelle mit den bisherigen Nutzerversuchen des HotPots erzeugt. Für Versuche, die fortgesetzt werden können, wird in der rechten Spalte eine Taste \'Fortsetzen\' gezeigt.';
 $string['entrypage'] = 'Anfangsseite zeigen';
-$string['entrypagehdr'] = 'Anfangsseite';
 $string['entrypage_help'] = 'Soll den Teilnehmer/innen eine Anfangsseite gezeigt werden, bevor die HotPot-Aktivität beginnt?
 
 **Ja**
@@ -175,8 +175,8 @@ $string['entrypage_help'] = 'Soll den Teilnehmer/innen eine Anfangsseite gezeigt
 : Die HotPot-Aktivität beginnt, ohne dass die Teilnehmer/innen eine Anfangsseite sehen.
 
 Trainer/innen bekommen die Anfangsseite immer angezeigt, wenn sie auf die Übersicht zugreifen oder die Quizseite bearbeiten.';
+$string['entrypagehdr'] = 'Anfangsseite';
 $string['entrytext'] = 'Text der Anfangsseite';
-$string['entry_title'] = 'Kapitelname als Titel';
 $string['event_attempt_reviewed'] = 'HotPot Versuch überprüft';
 $string['event_attempt_reviewed_description'] = 'Nutzer/in mit der ID "{$a->userid}" hat einen Versuch in der HotPot-Aktivität mit der Kursmodul-ID "{$a->cmid}" überprüft';
 $string['event_attempt_reviewed_explanation'] = 'Nutzer/in hat gerade einen Versuch in einer HotPot-Aktivität überprüft';
@@ -194,19 +194,6 @@ $string['event_report_viewed_description'] = 'Nutzer/in mit der ID "{$a->userid}
 $string['event_report_viewed_explanation'] = 'Nutzer/in hat gerade einen Bericht zu Versuchen in einer HotPot-Aktivität angesehen';
 $string['exit_areyouok'] = 'Hallo, sind Sie noch da?';
 $string['exit_attemptscore'] = 'Ihre Wertung für diesen Versuch ist {$a}';
-$string['exitcm'] = 'Nächste Aktivität';
-$string['exitcmcourse'] = 'Nächste Aktivität im Kurs';
-$string['exitcm_help'] = 'Diese Einstellung legt fest, welche Aktivität bearbeitet werden soll, nachdem dieses HotPot beendet ist.
-
-Es kann eine bestimmte Aktivität angegeben oder eine der nachfolgenden Einstellungen ausgewählt werden:
-
-* Nächste Aktivität im Kurs
-* Nächste Aktivität im Kursabschnitt
-* Nächste HotPot im Kurs
-* Nächste HotPot im Kursabschnitt
-
-Falls alle anderen Optionen für das Ende des HotPot deaktiviert sind, wird sofort die nächste Aktivität aufgerufen. Andernfalls wird ein Link angezeigt, der auf die nächste Aktivität verweist.';
-$string['exitcmsection'] = 'Nächste Aktivität im Kursabschnitt';
 $string['exit_course'] = 'Kurs';
 $string['exit_course_text'] = 'Zum Kurs zurück';
 $string['exit_encouragement'] = 'Ermutigung';
@@ -232,17 +219,14 @@ $string['exit_feedback_help'] = 'Diese Optionen beeinflussen die Anzeige von Fee
 
 Zusätzlich wird eine entsprechende Mitteilung gezeigt, falls die Bewertungsmethode auf \'Bester Versuch\' eingestellt ist und der aktuelle Versuch gleich oder besser als alle vorherigen war.';
 $string['exit_goodtry'] = 'Guter Versuch';
-$string['exitgrade'] = 'Nächste Aktivitätenwertung';
 $string['exit_grades'] = 'Wertung';
 $string['exit_grades_text'] = 'Zu Ihren bisherigen Wertungen im Kurs';
-$string['exithotpotcourse'] = 'Nächstes HotPot in diesem Kurs';
 $string['exit_hotpotgrade'] = 'Ihre Wertung für diese Aktivität ist {$a}';
 $string['exit_hotpotgrade_average'] = 'Ihre Durchschnittswertung für diese Aktivität ist {$a}';
 $string['exit_hotpotgrade_highest'] = 'Ihre Höchstwertung für diese Aktivität ist {$a}';
 $string['exit_hotpotgrade_highest_equal'] = 'Sie haben Ihre bisherige Bestleistung für diese Aktivität erreicht!';
 $string['exit_hotpotgrade_highest_previous'] = 'Ihre bisherige Höchstwertung für diese Aktivität war {$a}';
 $string['exit_hotpotgrade_highest_zero'] = 'Sie wurden für die Aktivität bisher nicht höher bewertet als {$a}';
-$string['exithotpotsection'] = 'Nächstes HotPot im Kursabschnitt';
 $string['exit_index'] = 'Übersicht';
 $string['exit_index_text'] = 'Zur Übersicht aller Aktivitäten';
 $string['exit_links'] = 'Links auf der Endseite';
@@ -262,9 +246,30 @@ $string['exit_links_help'] = 'Diese Optionen beeinflussen die Anzeige von Naviga
 $string['exit_next'] = 'Weiter';
 $string['exit_next_text'] = 'Nächste Aktivität versuchen';
 $string['exit_noscore'] = 'Diese Aktivität wurde erfolgreich abgeschlossen!';
+$string['exit_retry'] = 'Erneuter Versuch';
+$string['exit_retry_text'] = 'Diese Aktivität erneut versuchen';
+$string['exit_welldone'] = 'Toll gemacht!';
+$string['exit_whatnext_0'] = 'Was möchten Sie als nächstes tun?';
+$string['exit_whatnext_1'] = 'Wählen Sie Ihr Schicksal ...';
+$string['exit_whatnext_default'] = 'Bitte wählen Sie eine der folgenden Möglichkeiten:';
+$string['exitcm'] = 'Nächste Aktivität';
+$string['exitcm_help'] = 'Diese Einstellung legt fest, welche Aktivität bearbeitet werden soll, nachdem dieses HotPot beendet ist.
+
+Es kann eine bestimmte Aktivität angegeben oder eine der nachfolgenden Einstellungen ausgewählt werden:
+
+* Nächste Aktivität im Kurs
+* Nächste Aktivität im Kursabschnitt
+* Nächste HotPot im Kurs
+* Nächste HotPot im Kursabschnitt
+
+Falls alle anderen Optionen für das Ende des HotPot deaktiviert sind, wird sofort die nächste Aktivität aufgerufen. Andernfalls wird ein Link angezeigt, der auf die nächste Aktivität verweist.';
+$string['exitcmcourse'] = 'Nächste Aktivität im Kurs';
+$string['exitcmsection'] = 'Nächste Aktivität im Kursabschnitt';
+$string['exitgrade'] = 'Nächste Aktivitätenwertung';
+$string['exithotpotcourse'] = 'Nächstes HotPot in diesem Kurs';
+$string['exithotpotsection'] = 'Nächstes HotPot im Kursabschnitt';
 $string['exitoptions'] = 'Optionen der Endseite';
 $string['exitpage'] = 'Endseite zeigen';
-$string['exitpagehdr'] = 'Endseite';
 $string['exitpage_help'] = 'Soll eine Endseite angezeigt werden, wenn das HotPot-Quiz abgeschlossen ist?
 
 **Ja**
@@ -272,13 +277,8 @@ $string['exitpage_help'] = 'Soll eine Endseite angezeigt werden, wenn das HotPot
 
 **Nein**
 : Es wird keine Endseite gezeigt, wenn das HotPot abgeschlossen ist. Stattdessen wird sofort automatisch zur nächsten Aktivität oder auf die Kursseite weitergeleitet.';
-$string['exit_retry'] = 'Erneuter Versuch';
-$string['exit_retry_text'] = 'Diese Aktivität erneut versuchen';
+$string['exitpagehdr'] = 'Endseite';
 $string['exittext'] = 'Text der Endseite';
-$string['exit_welldone'] = 'Toll gemacht!';
-$string['exit_whatnext_0'] = 'Was möchten Sie als nächstes tun?';
-$string['exit_whatnext_1'] = 'Wählen Sie Ihr Schicksal ...';
-$string['exit_whatnext_default'] = 'Bitte wählen Sie eine der folgenden Möglichkeiten:';
 $string['feedbackdiscuss'] = 'Diskutieren Sie dieses Quiz im Forum';
 $string['feedbackformmail'] = 'Feedback-Formular';
 $string['feedbackmoodleforum'] = 'Moodle-Forum';
@@ -315,11 +315,11 @@ $string['hotpot:deleteallattempts'] = 'Alle Versuche einer HotPot-Aktivität lö
 $string['hotpot:deletemyattempts'] = 'Eigene Versuche einer HotPot-Aktivität löschen';
 $string['hotpot:ignoretimelimits'] = 'Zeitbeschränkungen einer HotPot-Aktivität ignorieren';
 $string['hotpot:manage'] = 'Einstellungen einer HotPot-Aktivität ändern';
-$string['hotpotname'] = 'HotPot-Name';
 $string['hotpot:preview'] = 'Vorschau einer HotPot-Aktivität sehen';
 $string['hotpot:reviewallattempts'] = 'Alle Versuche einer HotPot-Aktivität sehen';
 $string['hotpot:reviewmyattempts'] = 'Eigene Versuche einer HotPot-Aktivität sehen';
 $string['hotpot:view'] = 'Erste Seite einer HotPot-Aktivität sehen';
+$string['hotpotname'] = 'HotPot-Name';
 $string['ignored'] = 'Ignoriert';
 $string['inprogress'] = 'In Bearbeitung';
 $string['isgreaterthan'] = 'ist mehr als';
@@ -406,8 +406,10 @@ Die verfügbaren Ausgabeformate sind abhängig vom Typ der Quelldatei. Manche Da
 
 Die Einstellung "Optimal" zeigt den Inhalt jeweils angepasst für den verwendeten Browser an.';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze (v6) html';
+$string['outputformat_hp_6_jcloze_html_dropdown'] = 'JCloze HP6 html: Rottmeier DropDown';
 $string['outputformat_hp_6_jcloze_html_findit_a'] = 'FindIt (a) aus html';
 $string['outputformat_hp_6_jcloze_html_findit_b'] = 'FindIt (b) aus html';
+$string['outputformat_hp_6_jcloze_html_jgloss'] = 'JCloze HP6 html: Rottmeier JGloss';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze HP6 xml: ANCT-Scan';
 $string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze HP6 xml: DropDown';
 $string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze HP6 xml: FindIt (a)';
@@ -511,7 +513,6 @@ $string['textsourcespecific'] = 'Angegebener Text';
 $string['timeclose'] = 'Verfügbar bis';
 $string['timedout'] = 'Zeit ist abgelaufen';
 $string['timelimit'] = 'Zeitlimit';
-$string['timelimitexpired'] = 'Die maximale Zeitdauer für diesen Versuch ist abgelaufen';
 $string['timelimit_help'] = 'Diese Einstellung legt die Maximaldauer für jeden Versuch fest.
 
 **Aus der Quelldatei**
@@ -524,6 +525,7 @@ $string['timelimit_help'] = 'Diese Einstellung legt die Maximaldauer für jeden 
 : Für die Versuche zum Quiz wird keine Maximaldauer festgelegt.
 
 Beachten Sie, dass bei der Wiederaufnahme eines Versuchs die Zeit genau an der Stelle weiterläuft, an der der Versuch vorher unterbrochen wurde.';
+$string['timelimitexpired'] = 'Die maximale Zeitdauer für diesen Versuch ist abgelaufen';
 $string['timelimitspecific'] = 'Vorgegebene Zeit';
 $string['timelimitsummary'] = 'Maximale Zeitdauer für jeden Versuch';
 $string['timelimittemplate'] = 'Aus der Quelldatei';

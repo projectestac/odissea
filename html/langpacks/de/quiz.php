@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz', language 'de', version '3.8'.
  *
- * @package   quiz
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['activityoverview'] = 'Sie haben fällige Tests.';
 $string['adaptive'] = 'Mehrfachbeantwortung';
 $string['adaptive_help'] = 'Mit dieser Funktion wird es möglich eine Frage mehrfach innerhalb eines Testversuchs zu beantworten. Ist eine Frage falsch bewertet, können Teilnehmer/innen diese direkt nochmals beantworten. Ist die Option \'Punktabzüge\' aktiviert werden diese berücksichtigt.';
 $string['add'] = 'Hinzufügen';
-$string['addaquestion'] = 'Frage hinzufügen...';
-$string['addarandomquestion'] = 'Zufallsfrage hinzufügen...';
+$string['addaquestion'] = 'Neue Frage';
+$string['addarandomquestion'] = 'Zufallsfrage';
 $string['addarandomquestion_help'] = 'Eine Zufallsfrage wird zufällig aus allen Fragen der gewählten Kategorie ausgewählt. Das führt dazu, dass verschiedene Teilnehmer/iinen eine unterschiedliche Auswahl von Fragen im Test zur Beantwortung erhalten. Falls mehrere Versuche beim Test erlaubt sind, werden bei jedem Versuch die Fragen erneut zufällig gewählt.';
 $string['addarandomselectedquestion'] = 'Zufällige Frage hinzufügen ...';
 $string['addasection'] = 'eine neue Abschnittsüberschrift';
@@ -83,7 +83,7 @@ $string['answersingleyes'] = 'Nur eine Antwort erlauben';
 $string['answertoolong'] = 'Die Antwort ist nach Zeile {$a} zu lang (Sie können bis zu 255 Zeichen eingeben).';
 $string['anytags'] = 'Jeder Tag';
 $string['aon'] = 'AON';
-$string['areyousureremoveselected'] = 'Sind Sie sicher, dass Sie alle ausgewählten Fragen entfernen möchten?';
+$string['areyousureremoveselected'] = 'Möchten Sie wirklich alle ausgewählten Fragen entfernen?';
 $string['asshownoneditscreen'] = 'Wie in Bearbeitungsansicht gezeigt';
 $string['attempt'] = 'Versuch {$a}';
 $string['attemptalreadyclosed'] = 'Dieser Versuch wurde bereits beendet.';
@@ -102,11 +102,11 @@ $string['attemptquiznow'] = 'Test jetzt durchführen';
 $string['attemptreviewtitle'] = '{$a}: Überprüfung des Testversuchs';
 $string['attemptreviewtitlepaged'] = '{$a->name}: Überprüfung des Testversuchs (Seite {$a->currentpage} von {$a->totalpages})';
 $string['attempts'] = 'Versuche';
+$string['attempts_help'] = 'Die Gesamtzahl der erlaubten Versuche (ohne Zusatzversuche)';
 $string['attemptsallowed'] = 'Erlaubte Versuche';
 $string['attemptsdeleted'] = 'Die Testversuche wurden gelöscht.';
 $string['attemptselection'] = 'Welche Versuche pro Nutzer/in analysieren:';
 $string['attemptsexist'] = 'Sie können jetzt keine Fragen mehr hinzufügen oder entfernen.';
-$string['attempts_help'] = 'Die Gesamtzahl der erlaubten Versuche (ohne Zusatzversuche)';
 $string['attemptsnum'] = 'Versuche: {$a}';
 $string['attemptsnumthisgroup'] = 'Versuche: {$a->total} ({$a->group} von dieser Gruppe)';
 $string['attemptsnumyourgroups'] = 'Versuche: {$a->total} ({$a->group} von Ihrer Gruppe)';
@@ -117,7 +117,7 @@ $string['attemptsummarytitle'] = '{$a}: Zusammenfassung des Testversuchs';
 $string['attemptsunlimited'] = 'unbegrenzt';
 $string['attempttitle'] = '{$a}';
 $string['attempttitlepaged'] = '{$a->name} (Seite {$a->currentpage} von {$a->totalpages})';
-$string['autosaveperiod'] = 'Zeitspanne zur automatischen Sicherung';
+$string['autosaveperiod'] = 'Verzögerung zur automatischen Sicherung';
 $string['autosaveperiod_desc'] = 'Teilnehmerantworten können während der Testversuche regelmäßig automatisch gesichert werden. Bei jeder Eingabe einer Änderung erfolgt eine Sicherung und nach dem hier eingegebenen Zeitwert. Dies erhöht die Serverlast, verhindert aber den Verlust von Antworten. Prüfen Sie die entstehende Serverlast und passen Sie dann den Wert auf einer akzeptables Mass an. Der Eintrag \'0\' deaktiviert die automatische Sicherung.';
 $string['back'] = 'Zurück zur vorherigen Antwort';
 $string['backtocourse'] = 'Zurück zum Kurs';
@@ -180,24 +180,24 @@ $string['comment'] = 'Kommentar';
 $string['commentorgrade'] = 'Kommentieren oder Bewertung überarbeiten';
 $string['comments'] = 'Kommentare';
 $string['completedon'] = 'Beendet am';
-$string['completionattemptsexhausted'] = 'Oder alle verfügbaren Versuche abgeschlossen sind';
-$string['completionattemptsexhausteddesc'] = 'Vollständig, wenn alle möglichen Versuche erschöpft sind';
+$string['completionattemptsexhausted'] = 'die Zahl der Versuche erreicht wurde';
 $string['completionattemptsexhausted_help'] = 'Der Test wird als abgeschlossen markiert, wenn Teilnehmer/innen die maximale Anzahl von Versuchen erreichen.';
+$string['completionattemptsexhausteddesc'] = 'Vollständig, wenn alle möglichen Versuche erschöpft sind';
 $string['completionpass'] = 'Erreichen der Bestehensgrenze notwendig';
-$string['completionpassdesc'] = 'Teilnehmer/in muss eine Bestehensgrenze erreichen, um diese Aktivität abzuschließen';
 $string['completionpass_help'] = 'Diese Option legt fest, dass diese Aktivität als abgeschlossen gilt, wenn Teilnehmer/innen eine Bestehensgrenze erreicht haben. Diese wird im Abschnitt \'Bewertung\' bei den Testeinstellungen festgelegt.';
+$string['completionpassdesc'] = 'Teilnehmer/in muss eine Bestehensgrenze erreichen, um diese Aktivität abzuschließen';
 $string['configadaptive'] = 'Wenn die Option \'Ja\' gewählt ist, besteht für die Teilnehmer/innen die Möglichkeit, während eines Testversuches mehrere Antworten auf eine Frage zu geben.';
 $string['configattemptsallowed'] = 'Beschränkung der Anzahl an Antwortversuchen  während des Tests.';
 $string['configdecimaldigits'] = 'Anzahl der Nachkommastellen, die bei der Anzeige der Testbewertung aufscheinen sollen.';
 $string['configdecimalplaces'] = 'Genauigkeit der Testbewertung (gezeigte Nachkommastellen)';
 $string['configdecimalplacesquestion'] = 'Genauigkeit der Testfragenbewertung (gezeigte Nachkommastellen)';
 $string['configdelay1'] = 'Wählen Sie eine Zeitverzögerung, wenn Sie möchten, dass Teilnehmer/innen vor einem weiteren Versuch ein Pause einhalten sollen.';
-$string['configdelay1st2nd'] = 'Wenn Sie eine Zeitverzögerung aktivieren, können Teilnehmer/innen einen zweiten Testversuch erst nach der eingegeben Zeit durchführen';
+$string['configdelay1st2nd'] = 'Wenn Sie eine Zeitverzögerung aktivieren, können Teilnehmer/innen einen zweiten Testversuch erst nach der eingegeben Zeit durchführen.';
 $string['configdelay2'] = 'Wählen Sie eine Zeitverzögerung, wenn Sie möchten, dass Teilnehmer/innen vor einem dritten oder weiteren Versuch ein Pause einhalten sollen.';
-$string['configdelaylater'] = 'Wenn Sie eine Zeitverzögerung aktivieren, können Teilnehmer/innen einen weiteren Testversuch erst nach der eingegeben Zeit durchführen';
+$string['configdelaylater'] = 'Wenn Sie eine Zeitverzögerung aktivieren, können Teilnehmer/innen einen weiteren Testversuch erst nach der eingegeben Zeit durchführen.';
 $string['configeachattemptbuildsonthelast'] = 'Wenn mehrere Versuche erlaubt sind, dann enthält jeder Versuch die Ergebnisse des vorhergegangenen Versuchs.';
 $string['configgrademethod'] = 'Welche Methode soll zur Berechnung der Teilnehmerbewertung im Test herangezogen werden, wenn mehrere Versuche erlaubt sind?';
-$string['configintro'] = 'Die Werte, welche Sie hier definieren, sind die Standardwerte, die auf der Einstellungsseite angezeigt werden, wenn Sie einen neuen Test anlegen. Sie können auch festlegen, welche Testeinstellungen als erweitert betrachtet werden.';
+$string['configintro'] = 'Die hier definierten Werte sind die Standardwerte, die auf der Einstellungsseite angezeigt werden, wenn einen neuer Test angelegt wird. Sie können auch festlegen, welche Testeinstellungen als erweitert betrachtet werden.';
 $string['configmaximumgrade'] = 'Der Standardwert für diese Testbewertung liegt außerhalb des gewählten Wertes.';
 $string['confignavmethod'] = 'In der selbstgewählten Navigation können die Aufgaben beliebig angesteuert und Fragen in beliebiger Reihenfolge beantwortet werden. In der vorgegebenen Navigation müssen Fragen in der definierten Reihenfolge beantwortet werden.';
 $string['confignewpageevery'] = 'Wenn Sie Fragen zur Testseite hinzufügen, werden in Abhängigkeit der hier gewählten Einstellung an der entsprechenden Stelle automatisch Seitenumbrüche eingefügt.';
@@ -216,7 +216,7 @@ $string['configurerandomquestion'] = 'Konfiguration der Fragen';
 $string['confirmclose'] = 'Sobald Sie diesen Versuch beenden, können Sie Ihre Antworten nicht mehr bearbeiten.';
 $string['confirmremovequestion'] = 'Möchten Sie diese Frage \'{$a}\' wirklich löschen?';
 $string['confirmremovesectionheading'] = 'Möchten Sie wirklich die Abschnittsüberschrift \'{$a}\' löschen?';
-$string['confirmserverdelete'] = 'Sind Sie sicher, dass Sie den Server <b>{$a}</b> aus der Liste löschen wollen?';
+$string['confirmserverdelete'] = 'Möchten Sie wirklich den Server <b>{$a}</b> aus der Liste löschen?';
 $string['connectionerror'] = 'Sie haben die Netzwerkverbindung verloren. Das automatische Speichern konnte daher nicht ausgeführt werden.
 
 Machen Sie sich eine Notiz über alle in den letzten Minuten  eingegebenen Antworten und versuchen Sie die Vernindung wieder herzustellen.
@@ -237,11 +237,11 @@ $string['correctanswers'] = 'Richtige Antworten';
 $string['correctanswershows'] = 'Die richtige Antwort zeigt';
 $string['corrresp'] = 'Richtige Antwort';
 $string['countdown'] = 'Countdown';
-$string['countdownfinished'] = 'Der Test wird gleich beendet, Sie sollten Ihre Antworten jetzt abschicken.';
+$string['countdownfinished'] = 'Der Test wird gleich beendet und Sie sollten jetzt Ihre Antworten abschicken.';
 $string['countdowntenminutes'] = 'Der Test endet in 10 Minuten.';
 $string['coursetestmanager'] = 'Course Test Manager';
 $string['createcategoryandaddrandomquestion'] = 'Kategorie anlegen und Zufallsfrage hinzufügen';
-$string['createfirst'] = 'Sie müssen zuerst einige Kurzantwort-Fragen anlegen.';
+$string['createfirst'] = 'Sie müssen zuerst einige Kurztextfragen anlegen.';
 $string['createmultiple'] = 'Mehrere Fragen erstellen';
 $string['createnewquestion'] = 'Eine neue Frage anlegen';
 $string['createquestionandadd'] = 'Eine neue Frage erstellen und zum Test hinzufügen.';
@@ -265,7 +265,7 @@ $string['delay1st2nd_help'] = 'Wenn diese Option aktiviert ist, können Studiere
 $string['delay2'] = 'Pause bei späteren Versuchen';
 $string['delaylater'] = 'Vorgegebene Pause zwischen weiteren Versuchen';
 $string['delaylater_help'] = 'Wenn diese Option aktiviert ist, können Studierende einen dritten und weitere Testversuche erst nach Ablauf der festgelegten Zeit durchführen.';
-$string['deleteattemptcheck'] = 'Sind Sie wirklich sicher, dass Sie diese Versuche löschen wollen?';
+$string['deleteattemptcheck'] = 'Möchten Sie wirklich diese Versuche löschen?';
 $string['deleteselected'] = 'Auswahl löschen';
 $string['deletingquestionattempts'] = 'Löschen der Testversuche';
 $string['description'] = 'Beschreibung';
@@ -276,7 +276,7 @@ $string['download'] = 'Klick zum Download der exportierten Kategorien';
 $string['downloadextra'] = '(Datei ist auch im Kursverzeichnis backupdata/quiz abgelegt.)';
 $string['dragtoafter'] = 'Nach {$a}';
 $string['dragtostart'] = 'Am Anfang';
-$string['duplicateresponse'] = 'Ihre Antwort wurde ignoriert, weil Sie früher bereits eine gleichwertige Antwort gegeben haben.';
+$string['duplicateresponse'] = 'Ihre Antwort wurde ignoriert, weil Sie bereits vorher eine gleichwertige Antwort gegeben haben.';
 $string['eachattemptbuildsonthelast'] = 'Jeder Versuch basiert auf dem vorigen';
 $string['eachattemptbuildsonthelast_help'] = 'Wenn mehrere Versuche erlaubt sind und diese Option aktiviert ist, enthält jeder neue Versuch das Ergebnis des vorherigen. Dies erlaubt die Fertigstellung eines Tests mit Hilfe mehrerer Versuche.';
 $string['editcategories'] = 'Kategorien bearbeiten';
@@ -306,7 +306,7 @@ Diese E-Mail bestätigt, dass Ihre Abgabe sicher angekommen ist.
 Sie können auf den Test zugreifen unter {$a->quizurl}.
 
 Ihr E-Learning-Team';
-$string['emailconfirmsmall'] = 'Danke für die Übermittlung Ihrer Antworten auf \'{$a->quizname}\'';
+$string['emailconfirmsmall'] = 'Danke für die Übermittlung Ihrer Antworten zu \'{$a->quizname}\'';
 $string['emailconfirmsubject'] = 'Bestätigung der Testlösungen für {$a->quizname}';
 $string['emailnotifybody'] = 'Guten Tag {$a->username},
 
@@ -325,11 +325,11 @@ Sie haben den Test \'{$a->quizname}\' im Kurs {$a->coursename} begonnen. Der Tes
 Um den Testversuch jetzt abzuschließen, gehen Sie auf {$a->attemptsumaryurl} und klicken Sie die Taste \'Abgeben\'. Wenn Sie dies nicht vor dem {$a->attemptgracend} tun, wird der Versuch nicht gewertet.
 
 Ihr E-Learning-Team';
-$string['emailoverduesmall'] = 'Sie haben den Testversuch in {$a->quizname} nicht abgeschlossen. Gehen Sie bitte vor dem {$a->attemptgraceend} zu {$a->attemptsummaryurl} wenn Sie den Versuch noch abschließen möchten.';
+$string['emailoverduesmall'] = 'Sie haben den Testversuch in {$a->quizname} nicht abgeschlossen. Gehen Sie vor dem {$a->attemptgraceend} zu {$a->attemptsummaryurl} wenn Sie den Versuch noch abschließen möchten.';
 $string['emailoverduesubject'] = 'Testversuch nun überfällig für {$a->quizname}';
 $string['empty'] = 'Leer';
 $string['enabled'] = 'Aktiviert';
-$string['endtest'] = 'Versuch beenden...';
+$string['endtest'] = 'Versuch abschließen ...';
 $string['erroraccessingreport'] = 'Sie können nicht auf den Bericht zugreifen.';
 $string['errorinquestion'] = 'Fehler in der Frage';
 $string['errormissingquestion'] = 'Fehler: Die Frage mit der ID {$a} fehlt';
@@ -431,15 +431,15 @@ $string['hidereordertool'] = 'Neuanordnung verbergen';
 $string['history'] = 'Frühere Antworten:';
 $string['howquestionsbehave_desc'] = 'Standardeinstellung für das Verhalten von Fragen in einem Test';
 $string['imagedisplay'] = 'Abbildung einfügen';
+$string['import_help'] = 'Die Funktion ermöglicht es Fragen aus einer Textdatei zu importieren.
+
+Wenn die Datei Sonderzeichen (z.B. Umlaute) enthält, muss sie UTF-8 codiert sein. Dateien, die mit Microsoft Office erstellt werden, nutzen meist andere Codierungen und führen zu fehlerhaften Zeichendarstellungen.
+Die verfügbaren Import- und Exportfunktionen hängen von den installierten Plugins auf Ihrem System ab. Zusätzliche Formate können in der Module- und Plugindatenbank verfügbar sein.';
 $string['importcategory'] = 'Kategorie-Import';
 $string['importerror'] = 'Beim Import ist ein Fehler aufgetreten';
 $string['importfilearea'] = 'Der Dateiimport in die Kursdateien erfolgt ...';
 $string['importfileupload'] = 'Dateiimport von hochgeladener Datei ...';
 $string['importfromthisfile'] = 'Import aus dieser Datei';
-$string['import_help'] = 'Die Funktion ermöglicht es Fragen aus einer Textdatei zu importieren.
-
-Wenn die Datei Sonderzeichen (z.B. Umlaute) enthält, muss sie UTF-8 codiert sein. Dateien, die mit Microsoft Office erstellt werden, nutzen meist andere Codierungen und führen zu fehlerhaften Zeichendarstellungen.
-Die verfügbaren Import- und Exportfunktionen hängen von den installierten Plugins auf Ihrem System ab. Zusätzliche Formate können in der Module- und Plugindatenbank verfügbar sein.';
 $string['importingquestions'] = 'Import von {$a} Fragen aus Datei';
 $string['importmax10error'] = 'In der Frage ist ein Fehler aufgetreten. Sie dürfen höchstens zehn Antworten formulieren.';
 $string['importmaxerror'] = 'Fehler in der Frage: zu viele Antworten.';
@@ -447,13 +447,13 @@ $string['importquestions'] = 'Frage aus einer Datei importieren';
 $string['inactiveoverridehelp'] = '* Diese Nutzeränderung ist inaktiv, weil kein Zugang zur Aktivität besteht. Das kann aufgrund der Gruppenzugehörigkeit oder Rolle sein, aufgrund anderer Zugriffsbeschränkungen oder weil die Aktivität verborgen ist.';
 $string['incorrect'] = 'Falsch';
 $string['indicator:cognitivedepth'] = 'Test kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Testaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Test kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Testaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen, Feedback kommentieren, Beiträge nach Feedback überarbeiten).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Testaktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Test sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Testaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Test sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Testaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Testaktivität erreicht hat.';
 $string['indivresp'] = 'Antworten der einzelnen Personen zu jeder Frage';
 $string['info'] = 'Info';
 $string['infoshort'] = 'i';
@@ -521,22 +521,22 @@ $string['navmethod'] = 'Navigation';
 $string['navmethod_free'] = 'Selbstgewählt';
 $string['navmethod_help'] = 'Wenn die vorgegebene Navigation aktiviert ist, müssen Teilnehmer/innen den Test in der definierten Reihenfolge abarbeiten, dürfen keine Seiten zurückgehen und keine Seiten überspringen.';
 $string['navmethod_seq'] = 'Vorgegeben';
-$string['navnojswarning'] = 'Achtung: Mit diesen Links werden Ihre Antworten nicht gesichert. Benutzen Sie den Button "Weiter" am Ende der Seite.';
+$string['navnojswarning'] = 'Achtung: Mit diesen Links werden Ihre Antworten nicht gesichert. Benutzen Sie die Taste \'Weiter\' am Ende der Seite.';
 $string['neverallononepage'] = 'Nie, alle Fragen auf einer Seite';
 $string['newattemptfail'] = 'Fehler: Ein neuer Versuch des Tests konnte nicht begonnen werden.';
 $string['newcategory'] = 'Neue Kategorie';
 $string['newpage'] = 'Neue Seite';
-$string['newpageevery'] = 'Automatisch eine neue Seite beginnen';
 $string['newpage_help'] = 'Bei längeren Tests ist es sinnvoll, die Fragen auf mehrere Seiten zu verteilen. Wenn Sie bei der Testzusammenstellung Fragen hinzufügen, werden an der entsprechenden Stelle automatisch Seitenumbrüche eingefügt. Sie können die Seitenumbrüche später manuell anpassen.';
+$string['newpageevery'] = 'Automatisch eine neue Seite beginnen';
 $string['newsectionheading'] = 'Neue Abschnittsüberschrift';
 $string['noanswers'] = 'Es wurden keine Antworten ausgewählt!';
-$string['noattempts'] = 'Diesen Test hat niemand durchgeführt.';
+$string['noattempts'] = 'Dieser Test ist noch nicht bearbeitet.';
 $string['noattemptsfound'] = 'Keine Versuche gefunden';
 $string['noattemptstoshow'] = 'Es gibt keine Versuche, die angezeigt werden können.';
 $string['nocategory'] = 'Sie haben keine oder eine falsche Kategorie ausgewählt.';
 $string['noclose'] = 'Kein Abgabedatum';
 $string['nocommentsyet'] = 'Derzeit keine Kommentare vorhanden';
-$string['noconnection'] = 'Es gibt derzeit keine Verbindung zu einem Webservice, der diese Frage beantworten kann. Nehmen Sie Kontakt mit der Administration auf.';
+$string['noconnection'] = 'Es gibt derzeit keine Verbindung zu einem Webservice, der diese Frage beantworten kann. Nehmen Sie Kontakt mit dem Administrator auf.';
 $string['nodataset'] = 'nichts - es gibt keine Wildcard';
 $string['nodatasubmitted'] = 'Keine Daten abgegeben';
 $string['noessayquestionsfound'] = 'Keine Freitext-Fragen gefunden';
@@ -552,7 +552,7 @@ $string['noquestionsfound'] = 'Keine Fragen gefunden';
 $string['noquestionsinquiz'] = 'Es gibt keine Fragen in diesem Test.';
 $string['noquestionsnotinuse'] = 'Diese Zufallsfrage wird nicht genutzt, da ihre Kategorie leer ist.';
 $string['noquestionsonpage'] = 'Leere Seite';
-$string['noresponse'] = 'Keine Rückantwort';
+$string['noresponse'] = 'Keine Antwort';
 $string['noreview'] = 'Sie dürfen diesen Test nicht überprüfen.';
 $string['noreviewattempt'] = 'Sie dürfen diesen Versuch nicht überprüfen.';
 $string['noreviewshort'] = 'Nicht erlaubt.';
@@ -596,11 +596,11 @@ $string['overallfeedback'] = 'Gesamtfeedback';
 $string['overallfeedback_help'] = 'Das Gesamtfeedback ist der Text, welcher am Ende eines Testdurchlaufs angezeigt wird. Indem zusätzliche Bewertungsgrenzen – als Prozentwert (z.B. 31.3%) oder als Zahlwert (z.B. 7) – eingetragen werden, kann der Text je nach Testergebnis unterschiedlich lauten.';
 $string['overdue'] = 'Überfällig';
 $string['overduehandling'] = 'Wenn die Zeit abgelaufen ist';
+$string['overduehandling_desc'] = 'Grundeinstellung für den Test wenn Teilnehmer/innen einen Testversuch nicht abschließen bevor der Zeitraum abgelaufen ist.';
+$string['overduehandling_help'] = 'Die Einstellung legt fest, was passiert, wenn Teilnehmer/innen den Test nicht rechtzeitig abschließen. Wenn die Teilnehmer/innen zu diesem Zeitpunkt aktiv am Test arbeiten, wird der aktuelle Bearbeitungsstand automatisch abgegeben. Sind sie nicht angemeldet, so entscheidet diese Einstellung.';
 $string['overduehandlingautoabandon'] = 'Der Testversuch muss abgegeben werden, bevor die Zeit abgelaufen ist, damit er gewertet werden kann.';
 $string['overduehandlingautosubmit'] = 'Der Testversuch wird automatisch abgegeben.';
-$string['overduehandling_desc'] = 'Grundeinstellung für den Test wenn Teilnehmer/innen einen Testversuch nicht abschließen bevor der Zeitraum abgelaufen ist.';
 $string['overduehandlinggraceperiod'] = 'Nachfrist: offene Versuche können abgeschlossen, aber Fragen nicht mehr beantwortet werden.';
-$string['overduehandling_help'] = 'Die Einstellung legt fest, was passiert wenn Teilnehmende versäumen, vor Zeitablauf den Test abzuschließen. Sind die Teilnehmenden zu diesem Zeitpunkt beim Testversuch aktiv, wird ihr aktueller Bearbeitungsstand automatisch gespeichert. Sind sie jedoch ausgeloggt, so entscheidet diese Einstellung.';
 $string['overduemustbesubmittedby'] = 'Der Versuch ist überfällig und sollte bestätigt werden. Wenn Sie möchten dass Ihr Testversuch bewertet wird, müssen Sie ihn bestätigen {$a}. Falls sie dies nicht tun, wird keine Bewertung für diesen Versuch gezählt.';
 $string['override'] = 'Überschreiben';
 $string['overridedeletegroupsure'] = 'Sind Sie sicher, dass Sie die Änderung für die Gruppe {$a} löschen möchten?';
@@ -626,7 +626,7 @@ $string['partiallycorrect'] = 'Teilweise richtig';
 $string['penalty'] = 'Abzug';
 $string['penaltyscheme'] = 'Abzüge festlegen';
 $string['penaltyscheme_help'] = 'Wenn diese Option aktiviert ist, wird ein Punktabzug für eine Frage, die nicht korrekt beantwortet wurde, angewandt. Die Höhe des Punktabzugs  wird in den Einstellungen der Frage festgelegt. Diese Einstellung zeigt nur Wirkung, wenn der Modus Mehrfachbeantwortung aktiviert ist.';
-$string['percentcorrect'] = 'Richtig in Prozent';
+$string['percentcorrect'] = 'Prozent richtig';
 $string['pleaseclose'] = 'Ihre Anfrage wurde bearbeitet. Sie können das Fenster jetzt schließen.';
 $string['pluginadministration'] = 'Test-Administration';
 $string['pluginname'] = 'Test';
@@ -641,7 +641,6 @@ $string['previewquiznow'] = 'Vorschau ansehen';
 $string['previous'] = 'Letzter Zustand';
 $string['privacy:metadata:core_question'] = 'Die Testaktivität speichert die Verwendung von Testfragen im Subsystem \'core_question\'.';
 $string['privacy:metadata:quiz'] = 'Die Testaktivität verwendet den Testbericht';
-$string['privacy:metadata:quizaccess'] = 'Die Testaktivität verwendet Testzugriffsregeln';
 $string['privacy:metadata:quiz_attempts'] = 'Details zu jedem Versuch des Tests';
 $string['privacy:metadata:quiz_attempts:attempt'] = 'Versuchsnummer';
 $string['privacy:metadata:quiz_attempts:currentpage'] = 'Seite, die Nutzer gerade bearbeitet';
@@ -658,12 +657,13 @@ $string['privacy:metadata:quiz_grades:grade'] = 'Gesamtbewertung des Tests';
 $string['privacy:metadata:quiz_grades:quiz'] = 'Test, der bewertet wurde';
 $string['privacy:metadata:quiz_grades:timemodified'] = 'Zeitpunkt an dem Bewertung geändert wurde';
 $string['privacy:metadata:quiz_grades:userid'] = 'Nutzer, der bewertet wurde';
-$string['privacy:metadata:quiz_overrides'] = 'Details zu Überschreibungen des Tests';
+$string['privacy:metadata:quiz_overrides'] = 'Details zu Überschreibungen für diesen Test';
 $string['privacy:metadata:quiz_overrides:quiz'] = 'Test mit überschriebenen Informationen';
 $string['privacy:metadata:quiz_overrides:timeclose'] = 'Neues Enddatum für Test';
 $string['privacy:metadata:quiz_overrides:timelimit'] = 'Neue Zeitbegrenzung für Test';
 $string['privacy:metadata:quiz_overrides:timeopen'] = 'Neuer Starttermin für Test';
-$string['privacy:metadata:quiz_overrides:userid'] = 'Nutzer, der überschrieben wurde';
+$string['privacy:metadata:quiz_overrides:userid'] = 'Nutzer/in, der/die überschrieben wurde';
+$string['privacy:metadata:quizaccess'] = 'Die Testaktivität verwendet Testzugriffsregeln';
 $string['publish'] = 'Veröffentlichen';
 $string['publishedit'] = 'Um Fragen in dieser Kategorie zu bearbeiten, müssen Sie über die erforderlichen Rechte verfügen.';
 $string['qbrief'] = 'F {$a}';
@@ -675,7 +675,7 @@ $string['questionbank'] = 'aus der Fragensammlung';
 $string['questionbankmanagement'] = 'Fragensammlung verwalten';
 $string['questionbehaviour'] = 'Frageverhalten';
 $string['questioncats'] = 'Fragenkategorien';
-$string['questiondeleted'] = 'Diese Frage wurde gelöscht. Fragen Sie bitte Ihre/n Trainer/in.';
+$string['questiondeleted'] = 'Diese Frage wurde gelöscht. Fragen Sie bitte Ihre Trainer/innen.';
 $string['questiondependencyadd'] = 'Keine Beschränkung für einen Versuch der Frage \'{$a->thisq}\'. Zum Wechseln klicken.';
 $string['questiondependencyfree'] = 'Keine Beschränkung für diese Frage';
 $string['questiondependencyremove'] = 'Die Frage \'{$a->thisq}\' kann erst versucht werden, wenn die vorherige Frage \'{$a->previousq}\' abgeschlossen ist. Zum Wechseln klicken.';
@@ -702,25 +702,30 @@ $string['questiontype'] = 'Fragetyp {$a}';
 $string['questiontypesetupoptions'] = 'Setup-Optionen für Fragetypen';
 $string['quiz:addinstance'] = 'Neuen Test hinzufügen';
 $string['quiz:attempt'] = 'Tests ausprobieren';
+$string['quiz:deleteattempts'] = 'Testversuche löschen';
+$string['quiz:emailconfirmsubmission'] = 'Bei Abgaben eine E-Mail-Bestätigung versenden';
+$string['quiz:emailnotifysubmission'] = 'Benachrichtigung senden, wenn ein Testversuch abgegeben wird.';
+$string['quiz:emailwarnoverdue'] = 'Benachrichtigung senden, wenn ein Testversuch fällig wird und abgegeben werden muss.';
+$string['quiz:grade'] = 'Tests manuell bewerten';
+$string['quiz:ignoretimelimits'] = 'Zeitgrenzen für Test ignorieren';
+$string['quiz:manage'] = 'Tests verwalten';
+$string['quiz:manageoverrides'] = 'Teständerungen verwalten';
+$string['quiz:preview'] = 'Test-Vorschau';
+$string['quiz:regrade'] = 'Neubewertung der Testversuche';
+$string['quiz:reviewmyattempts'] = 'Eigene Testversuche überprüfen';
+$string['quiz:view'] = 'Test-Informationen sehen';
+$string['quiz:viewreports'] = 'Test-Berichte sehen';
 $string['quizavailable'] = 'Der Test ist verfügbar bis {$a}';
 $string['quizclose'] = 'Testschließung';
 $string['quizclosed'] = 'Dieser Test schließt am {$a}';
 $string['quizcloses'] = 'Testschließung';
 $string['quizcloseson'] = 'Der Test ist verfügbar bis {$a}';
-$string['quiz:deleteattempts'] = 'Testversuche löschen';
-$string['quiz:emailconfirmsubmission'] = 'Bei Abgaben eine E-Mail-Bestätigung versenden';
-$string['quiz:emailnotifysubmission'] = 'Benachrichtigung senden, wenn ein Testversuch abgegeben wird.';
-$string['quiz:emailwarnoverdue'] = 'Benachrichtigung senden, wenn ein Testversuch fällig wird und abgegeben werden muss.';
 $string['quizeventcloses'] = '{$a} endet';
 $string['quizeventopens'] = '{$a} beginnt';
-$string['quiz:grade'] = 'Tests manuell bewerten';
-$string['quiz:ignoretimelimits'] = 'Zeitgrenzen für Tests ignorieren';
 $string['quizisclosed'] = 'Dieser Test wurde bereits beendet';
 $string['quizisclosedwillopen'] = 'Test geschlossen (Beginn {$a})';
 $string['quizisopen'] = 'Aktuell läuft dieser Test';
 $string['quizisopenwillclose'] = 'Test geöffnet (Ende {$a})';
-$string['quiz:manage'] = 'Tests verwalten';
-$string['quiz:manageoverrides'] = 'Teständerungen verwalten';
 $string['quiznavigation'] = 'Test-Navigation';
 $string['quizopen'] = 'Testöffnung';
 $string['quizopenclose'] = 'Anfangs- und Endzeiten';
@@ -731,13 +736,8 @@ $string['quizopens'] = 'Testöffnung';
 $string['quizopenwillclose'] = 'Der Test ist geöffnet und wird geschlossen am {$a} um';
 $string['quizordernotrandom'] = 'Die Reihenfolge des Tests ist nicht zufällig';
 $string['quizorderrandom'] = '* Die Reihenfolge des Tets ist zufällig';
-$string['quiz:preview'] = 'Test-Vorschau';
-$string['quiz:regrade'] = 'Neubewertung der Testversuche';
-$string['quiz:reviewmyattempts'] = 'Eigene Testversuche überprüfen';
 $string['quizsettings'] = 'Test-Einstellungen';
 $string['quiztimer'] = 'Stoppuhr';
-$string['quiz:view'] = 'Test-Informationen sehen';
-$string['quiz:viewreports'] = 'Test-Berichte sehen';
 $string['quizwillopen'] = 'Dieser Test wird geöffnet: {$a}';
 $string['random'] = 'Zufallsfrage';
 $string['randomcreate'] = 'Zufallsfragen erstellen';
@@ -760,7 +760,7 @@ $string['reattemptquiz'] = 'Test wiederholen';
 $string['recentlyaddedquestion'] = 'Kürzlich hinzugefügte Frage!';
 $string['recurse'] = 'Fragen aus Unterkategorien einbeziehen';
 $string['redoesofthisquestion'] = 'Andere Fragen wurden versucht: {$a}';
-$string['redoquestion'] = 'Versuchen Sie eine weitere Frage wie diese hier';
+$string['redoquestion'] = 'Versuchen Sie eine weitere Frage wie diese hier.';
 $string['regrade'] = 'Alle Versuche neu bewerten';
 $string['regradecomplete'] = 'Alle Versuche wurden neu bewertet.';
 $string['regradecount'] = '{$a->changed} von {$a->attempt} Noten wurden geändert.';
@@ -792,7 +792,7 @@ $string['reportdisplayoptions'] = 'Anzeigeoptionen';
 $string['reportfullstat'] = 'Ausführliche Statistik';
 $string['reportmulti_percent'] = 'Mehrere Prozentsätze';
 $string['reportmulti_q_x_student'] = 'Mehrere Teilnehmer/innen';
-$string['reportmulti_resp'] = 'Individuelle Rückantwort';
+$string['reportmulti_resp'] = 'Individuelle Antworten';
 $string['reportmustselectstate'] = 'Es muss zumindest ein Status gewählt werden';
 $string['reportnotfound'] = 'Bericht unbekannt ({$a})';
 $string['reportoverview'] = 'Übersicht';
@@ -909,7 +909,7 @@ $string['shuffledrandomly'] = 'Zufälllige Reihenfolge';
 $string['shufflequestions'] = 'Fragen mischen';
 $string['shufflequestions_help'] = 'Wenn diese Option aktiviert ist, werden die Testfragen in diesem Abschnitt bei jedem Versuch in einer anderen zufälligen Reihenfolge gemischt.
 
-Dies soll verhindern, dass Teilnehmer/innen ihre Antworten untereinander teilen, aber dies erschwert auch die Diskussion über eine bestimmte Frage mit Ihnen.';
+Dies soll verhindern, dass Teilnehmer/innen ihre Antworten untereinander teilen, erschwert aber auch die Diskussion über eine bestimmte Frage mit Trainer/innen.';
 $string['shufflewithin'] = 'Antworten innerhalb der Fragen mischen';
 $string['shufflewithin_help'] = 'Wenn diese Option aktiviert ist, werden die Elemente, aus welchen sich eine einzelne Fragen zusammensetzt, bei jedem Versuch zufällig gemischt, vorausgesetzt, diese Option ist auch in den Einstellungen der Frage aktiviert. Die Funktion hat nur Auswirkungen auf Fragen, die aus mehreren Teilen bestehen, wie Multiple-Choice- oder Zuordnungsfragen.';
 $string['singleanswer'] = 'Wählen Sie eine der Antworten.';
@@ -937,9 +937,9 @@ $string['submitallandfinish'] = 'Abgabe';
 $string['subneterror'] = 'Der Zugang zum Test wurde beschränkt. Aktuell ist der von Ihnen benutzte Computer nicht freigegeben, um damit den Test durchführen können.';
 $string['subnetnotice'] = 'Der Zugang zum Test wurde beschränkt. Aktuell ist der von Ihnen benutzte Computer nicht freigegeben, um damit den Test durchführen können. Als Trainer/in dürfen Sie aber von überall aus zugreifen.';
 $string['subplugintype_quiz'] = 'Bericht';
+$string['subplugintype_quiz_plural'] = 'Berichte';
 $string['subplugintype_quizaccess'] = 'Zugriffsregel';
 $string['subplugintype_quizaccess_plural'] = 'Zugriffsregeln';
-$string['subplugintype_quiz_plural'] = 'Berichte';
 $string['substitutedby'] = 'wird ersetzt durch';
 $string['summaryofattempt'] = 'Zusammenfassung der Versuche';
 $string['summaryofattempts'] = 'Zusammenfassung der vorherigen Versuche';
@@ -951,8 +951,8 @@ $string['timecompleted'] = 'Beendet';
 $string['timedelay'] = 'Bis zum nächsten Testversuch muss einige Zeit verstreichen.';
 $string['timeleft'] = 'Verbleibende Zeit';
 $string['timelimit'] = 'Zeitbegrenzung';
-$string['timelimitexeeded'] = 'Die Zeit für den Test ist abgelaufen!';
 $string['timelimit_help'] = 'In der Grundeinstellung haben Tests kein Zeitlimit. Mit der Aktivierung des Zeitlimits läuft für den Teilnehmer sichtbar eine Uhr rückwärts mit.';
+$string['timelimitexeeded'] = 'Die Zeit für den Test ist abgelaufen!';
 $string['timestr'] = '%H:%M:%S am %d/%m/%y';
 $string['timesup'] = 'Zeit ist abgelaufen.';
 $string['timetaken'] = 'Verbrauchte Zeit';
@@ -964,7 +964,7 @@ $string['top'] = 'Spitze';
 $string['totalmarksx'] = 'Summe der Bewertungen: {$a}';
 $string['totalquestionsinrandomqcategory'] = 'Summe der {$a} Fragen in der Kategorie.';
 $string['true'] = 'Wahr';
-$string['truefalse'] = 'Wahr-Falsch';
+$string['truefalse'] = 'Wahr/falsch';
 $string['type'] = 'Typ';
 $string['unfinished'] = 'offen';
 $string['ungraded'] = 'Unbewertet';

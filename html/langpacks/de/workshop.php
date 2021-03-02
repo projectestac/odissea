@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshop', language 'de', version '3.8'.
  *
- * @package   workshop
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshop
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -82,18 +82,18 @@ $string['calculatesubmissiongrades'] = 'Punkte für die Einreichungen berechnen'
 $string['calculatesubmissiongradesdetails'] = 'erwartet: {$a->expected}<br />berechnet: {$a->calculated}';
 $string['chooseuser'] = 'Nutzer/in auswählen';
 $string['clearaggregatedgrades'] = 'Alle errechneten Punkte löschen';
-$string['clearaggregatedgradesconfirm'] = 'Sind Sie sich sicher, dass Sie alle berechneten Punkte für die Einreichungen und die Beurteilungen löschen wollen?';
 $string['clearaggregatedgrades_help'] = 'Die errechneten Punkte für die Einreichung und die Beurteilungen werden zurückgesetzt. Sie können diese Punkte in der Bewertungsphase von Grund auf neu berechnen.';
+$string['clearaggregatedgradesconfirm'] = 'Sind Sie sich sicher, dass Sie alle berechneten Punkte für die Einreichungen und die Beurteilungen löschen wollen?';
 $string['clearassessments'] = 'Beurteilungen löschen';
-$string['clearassessmentsconfirm'] = 'Sind Sie sich sicher, dass Sie alle Punkte aus der Beurteilungen löschen wollen? Sie sind nicht in der Lage, diesen Vorgang rückgängig zu machen. Die Beurteilenden müssen die Einreichungen erneut beurteilen.';
 $string['clearassessments_help'] = 'Die berechneten Bewertungen für Einreichungen und Beurteilungen werden zurückgesetzt. Die Information in den ausgefüllten Beurteilungsbögen bleiben erhalten. Alle Bewerter müssen jedoch den Beurteilungsbogen noch einmal aufrufen und wieder speichern, damit die Bewertungen neu errechnet werden.';
+$string['clearassessmentsconfirm'] = 'Sind Sie sich sicher, dass Sie alle Punkte aus der Beurteilungen löschen wollen? Sie sind nicht in der Lage, diesen Vorgang rückgängig zu machen. Die Beurteilenden müssen die Einreichungen erneut beurteilen.';
 $string['conclusion'] = 'Abschluss';
 $string['conclusion_help'] = 'Der Abschlusstext wird Teilnehmer/innen am Ende der gegenseitigen Beurteilung angezeigt. Er kann ein Gesamt-Feedback, eine Zusammenfassung oder Anregungen für nächste Schritte (z.B. verfassen eines Blog-Beitrages zu den gesammelten Erfahrungen) enthalten.';
 $string['configexamplesmode'] = 'Standardmodus für Beispielbeurteilungen in gegenseitigen Beurteilungen';
 $string['configgrade'] = 'Standardwert max. Einreichungspunktzahl in gegenseitigen Beurteilungen';
 $string['configgradedecimals'] = 'Standardanzahl von Nachkommastellen bei der Anzeige von Punkten.';
 $string['configgradinggrade'] = 'Standardwert für max. Bewertungspunktzahl für Beurteilungen in gegenseitigen Beurteilungen';
-$string['configmaxbytes'] = 'Standardwert für die maximale Dateigröße bei Einreichungen für alle gegenseitigen Beurteilungen dieser Website (vorbehaltlich Kurseinstellungen und anderen lokale Einstellungen)';
+$string['configmaxbytes'] = 'Standardwert für die Größe von Dateianhängen an Einreichungen für alle gegenseitigen Beurteilungen dieser Website (Kurseinstellungen und andere lokale Einstellungen gelten weiter)';
 $string['configstrategy'] = 'Standardwert für Beurteilungsart für gegenseitige Beurteilungen';
 $string['createsubmission'] = 'Einreichung hinzufügen';
 $string['crontask'] = 'Hintergrundprozess für gegenseitige Beurteilung';
@@ -105,7 +105,7 @@ $string['daysyesterday'] = 'gestern';
 $string['deadlinesignored'] = 'Die Zeitvorgaben treffen auf Sie nicht zu';
 $string['deletesubmission'] = 'Einreichung löschen';
 $string['editassessmentform'] = 'Beurteilungsbogen bearbeiten';
-$string['editassessmentformstrategy'] = 'Bearbeite Beurteilungsbogen ({$a})';
+$string['editassessmentformstrategy'] = 'Beurteilungsbogen ({$a}) bearbeiten';
 $string['editingassessmentform'] = 'Beurteilungsbogen bearbeiten';
 $string['editingsubmission'] = 'Einreichung bearbeiten';
 $string['editsubmission'] = 'Abgabe bearbeiten';
@@ -159,45 +159,45 @@ $string['formatpeergradeover'] = '<span class="grade">{$a->grade}</span> <span c
 $string['formatpeergradeoverweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span> @ <span class="weight">{$a->weight}</span>';
 $string['formatpeergradeweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span> @ <span class="weight">{$a->weight}</span>';
 $string['givengrades'] = 'Vergebene Bewertungen';
+$string['grade_grading_name'] = 'Beurteilung';
+$string['grade_submission_name'] = 'Einreichung';
 $string['gradecalculated'] = 'Berechnete Bewertung für Einreichung';
 $string['gradedecimals'] = 'Dezimalstellen bei Punkten';
 $string['gradegivento'] = '&gt;';
-$string['grade_grading_name'] = 'Beurteilung';
 $string['gradeinfo'] = 'Bewertung: {$a->received} von {$a->max}';
 $string['gradeitemassessment'] = '{$a->workshopname} (Beurteilung)';
 $string['gradeitemsubmission'] = '{$a->workshopname} (Einreichung)';
 $string['gradeover'] = 'Bewertung für die Einreichung überschreiben';
 $string['gradereceivedfrom'] = '&lt;';
-$string['gradesreport'] = 'Bewertungsbericht für gegenseitige Beurteilung';
-$string['grade_submission_name'] = 'Einreichung';
+$string['gradesreport'] = 'Punktebericht für gegenseitige Beurteilung';
 $string['gradetopassgrading'] = 'Erforderliche Beurteilungsbewertung zum Bestehen';
 $string['gradetopasssubmission'] = 'Erforderliche Bewertung zum Bestehen';
 $string['gradinggrade'] = 'Bewertung für die Beurteilung';
-$string['gradinggradecalculated'] = 'Berechnete Bewertung für die Beurteilung';
 $string['gradinggrade_help'] = 'Diese Einstellung gibt an, wie viele Punkte maximal für die Einreichungsbeurteilung vergeben werden.';
+$string['gradinggradecalculated'] = 'Berechnete Bewertung für die Beurteilung';
 $string['gradinggradeof'] = 'Bewertung für die Beurteilung (von {$a})';
 $string['gradinggradeover'] = 'Bewertung für die Beurteilung überschreiben';
 $string['gradingsettings'] = 'Punkteeinstellungen';
 $string['groupnoallowed'] = 'Sie können keiner Gruppe in dieser gegenseitigen Beurteilung beitreten.';
 $string['iamsure'] = 'Ja, ich bin mir sicher';
 $string['indicator:cognitivedepth'] = 'Gegenseitige Beurteilung kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer gegenseitigen Beurteilungsaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Gegenseitige Beurteilung kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die gegenseitigen Beurteilungsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen, Feedback kommentieren, Beiträge nach Feedback überarbeiten).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer gegenseitigen Beurteilungsaktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Gegenseitige Beurteilung sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer gegenseitigen Beurteilungsaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Gegenseitige Beurteilung sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die gegenseitige Beurteilungsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer gegenseitigen Beurteilungsaktivität erreicht hat.';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Anleitungen für die Einreichung';
 $string['instructreviewers'] = 'Hinweise zur Beurteilung';
 $string['introduction'] = 'Beschreibung';
 $string['latesubmissions'] = 'Verspätete Einreichungen';
-$string['latesubmissionsallowed'] = 'Verspätete Einreichungen sind zugelassen';
 $string['latesubmissions_desc'] = 'Erlaube verspätete Einreichungen';
 $string['latesubmissions_help'] = 'Wenn diese Option aktiviert ist, können Einreichungen auch nach dem festgelegten Abgabezeitpunkt oder während der Beurteilungsphase noch abgegeben werden. Diese können danach jedoch nicht mehr bearbeitet werden.';
+$string['latesubmissionsallowed'] = 'Verspätete Einreichungen sind zugelassen';
 $string['legacyallocationplugincron'] = 'Alte Cron-Zuteilung für gegenseitige Beurteilungen';
-$string['maxbytes'] = 'Maximale Dateigröße';
+$string['maxbytes'] = 'Maximale Dateigröße zur Abgabe';
 $string['modulename'] = 'Gegenseitige Beurteilung';
 $string['modulename_help'] = 'Die gegenseitige Beurteilung (Peer Assessment, früher Workshop) ist ein besonderer mehrstufiger Aufgabentyp:
 
@@ -211,7 +211,7 @@ Die Teilnehmer/innen erhalten in einer gegenseitigen Beurteilung zwei Bewertunge
 $string['modulenameplural'] = 'Gegenseitige Beurteilungen';
 $string['myassessments'] = 'Meine Beurteilungen';
 $string['mysubmission'] = 'Meine Einreichung';
-$string['nattachments'] = 'Maximale Anzahl von Dateianhängen beim Einreichen';
+$string['nattachments'] = 'Maximalzahl von Dateianhängen';
 $string['noexamples'] = 'Es gibt in dieser gegenseitigen Beurteilung keine Beispieleinreichungen';
 $string['noexamplesformready'] = 'Sie müssen zuerst den Beurteilungsbogen erstellen, bevor Sie Beispieleinreichungen zur Verfügung stellen können';
 $string['nogradeyet'] = 'Bisher keine Bewertung';
@@ -248,12 +248,12 @@ $string['pluginname'] = 'Gegenseitige Beurteilung';
 $string['prepareexamples'] = 'Beispieleinreichungen erstellen';
 $string['previewassessmentform'] = 'Vorschau';
 $string['privacy:metadata:aggregatedgradinggrade'] = 'Zusammengefasste Bewertung aller Beurteilungen des Nutzers in der Aktivität gegenseitige Beurteilung';
-$string['privacy:metadata:assessmentgrade'] = 'Zusammengefasste Bewertung für die Einreichung dieser Beurteilung';
+$string['privacy:metadata:assessmentgrade'] = 'Zusammengefasste Bewertung für die Lösungen dieser Aufgabe';
 $string['privacy:metadata:assessmentgradinggrade'] = 'Bewertung für die Abgabe dieser Beurteilung';
-$string['privacy:metadata:assessmentgradinggradeover'] = 'Manuell überschriebener Wert für die Bewertung für die Abgabe dieser Beurteilung';
+$string['privacy:metadata:assessmentgradinggradeover'] = 'Manuell überschriebene Bewertungart für die Aufgabe';
 $string['privacy:metadata:assessmentid'] = 'ID der Beurteilung';
 $string['privacy:metadata:authorid'] = 'ID der Person, die die Einreichung abgibt';
-$string['privacy:metadata:dimensiongrade'] = 'Bewertung in der festgelegten Beurteilungsdimension';
+$string['privacy:metadata:dimensiongrade'] = 'Bewertung in der festgelegten Aufgabendimension';
 $string['privacy:metadata:dimensionid'] = 'ID der Beurteilungsdimension';
 $string['privacy:metadata:example'] = 'Ob der Datensatz zu einer Beispieleinreichung gehört';
 $string['privacy:metadata:feedbackauthor'] = 'Feedback für den Verfasser';
@@ -263,8 +263,8 @@ $string['privacy:metadata:feedbackreviewerformat'] = 'Textformat des Feedbacks a
 $string['privacy:metadata:late'] = 'Ob die Einreichunge nach dem Abgabetermin eingereicht wurde';
 $string['privacy:metadata:peercomment'] = 'Kommentar zur vergebenen Bewertung des Nutzer, der die Beurteilung abgegeben hat';
 $string['privacy:metadata:peercommentformat'] = 'Textformat des Kommentars';
-$string['privacy:metadata:preference:perpage'] = 'Anzahl der Einreichungen auf einer Seite für den Nutzer';
-$string['privacy:metadata:published'] = 'Ob die Einreichungen für alle Nutzer angezeigt werden sollen wenn die \'gegenseitige Beurteilung\' abgeschlossen wurde';
+$string['privacy:metadata:preference:perpage'] = 'Anzahl der Lösungen auf einer Seite für den Nutzer';
+$string['privacy:metadata:published'] = 'Ob die Lösungen für alle Nutzer angezeigt werden sollen, wenn die \'gegenseitige Beurteilung\' abgeschlossen wurde';
 $string['privacy:metadata:reviewerid'] = 'ID der Person, die die Beurteilung abgibt';
 $string['privacy:metadata:strategy'] = 'Name des Bewertungsstratgieplugins, das Datensätze auswertet';
 $string['privacy:metadata:submissioncontent'] = 'Inhalt der Einreichung';
@@ -273,7 +273,7 @@ $string['privacy:metadata:submissiongrade'] = 'Zusammengefasste Bewertung der Ei
 $string['privacy:metadata:submissiongradeover'] = 'Manuell angepasster Wert der zusammengefassten Bewertung';
 $string['privacy:metadata:submissionid'] = 'ID der Einreichung';
 $string['privacy:metadata:submissiontitle'] = 'Titel der Einreichung';
-$string['privacy:metadata:subsystem:corefiles'] = 'Das Modul \'gegenseitige Beurteilung\' speichert Dateien, die in den Einreichungstext eingebunden oder an diesen angehängt wurden';
+$string['privacy:metadata:subsystem:corefiles'] = 'Das Modul \'gegenseitige Beurteilung\' speichert Dateien, die in den Lösungstext eingebunden oder an diesen angehängt wurden';
 $string['privacy:metadata:subsystem:coreplagiarism'] = 'Das Modul \'gegenseitige Beurteilung\' verfügt über ein integriertes Plagiatssystem.';
 $string['privacy:metadata:timeaggregated'] = 'Wann die aggregrierte Bewertung zuletzt berechnet wurde';
 $string['privacy:metadata:timecreated'] = 'Wann der Datensatz in der Datenbank angelegt wurde';
@@ -281,7 +281,7 @@ $string['privacy:metadata:timemodified'] = 'Wann der Datensatz zuletzt veränder
 $string['privacy:metadata:userid'] = 'Identifier des Nutzers, für den aggregierte Bewertung erstellt wird';
 $string['privacy:metadata:weight'] = 'Gewichtung der Beurteilung';
 $string['privacy:metadata:workshopaggregations'] = 'Enthält aggregierte Bewertung für Beurteilungen';
-$string['privacy:metadata:workshopassessments'] = 'Enthält Informationen über zugwiesene Beurteilungen im Modul \'gegenseitige Beurteilung\'.';
+$string['privacy:metadata:workshopassessments'] = 'Enthält Informationen über zugwiesene Aufgabeneinreichungen im Modul \'gegenseitige Beurteilung\'.';
 $string['privacy:metadata:workshopgrades'] = 'Enthält Informationen wie die Beurteilungsbögen mit Bewertungen und Kommentaren befüllt wurden';
 $string['privacy:metadata:workshopid'] = 'ID der Workshop-Aktivität';
 $string['privacy:metadata:workshopsubmissions'] = 'Enthält Informationen über Einreichungen in der Aktivität \'gegenseitige Beurteilung\'.';
@@ -309,16 +309,16 @@ $string['selfassessmentdisabled'] = 'Selbstbeurteilung deaktiviert';
 $string['showingperpage'] = '{$a} Einträge pro Seite';
 $string['showingperpagechange'] = 'Ändern...';
 $string['someuserswosubmission'] = 'Mindestens eine Person hat ihre Einreichung noch nicht vorgenommen';
-$string['sortasc'] = 'Aufwärts sortieren';
+$string['sortasc'] = 'Aufsteigend sortieren';
 $string['sortdesc'] = 'Abwärts sortieren';
 $string['strategy'] = 'Punktestrategie';
-$string['strategyhaschanged'] = 'Die Punktestrategie der gegenseitigen Beurteilung wurde seit dem Beginn der Änderungen geändert.';
 $string['strategy_help'] = 'Die Bewertungsstrategie legt den verwendeten Beurteilungsbogen und die Methode für das Bewerten der Einreichungen fest. Es gibt vier Optionen:
 
 * Bewerten mit Kommentaren und Punkten: Kommentare und eine Bewertung für vordefinierte Aspekte
 * Kommentare: Es gibt nur Kommentare zu vordefinierten Aspekten, jedoch keine Bewertung
 * Aussagen zustimmen oder ablehnen: Kommentare und Ja/Nein Bewertungen zu vordefinierten Aussagen
 * Bewertungskriterien: Verschiedene Level zu vordefinierten Aspekten';
+$string['strategyhaschanged'] = 'Die Punktestrategie der gegenseitigen Beurteilung wurde seit dem Beginn der Änderungen geändert.';
 $string['submission'] = 'Einreichung';
 $string['submissionattachment'] = 'Dateianhang';
 $string['submissionby'] = 'Eingereicht von {$a}';
@@ -328,7 +328,7 @@ $string['submissiondeleteconfirmassess'] = 'Möchten Sie wirklich die folgende E
 $string['submissionend'] = 'Einreichungen bis';
 $string['submissionendbeforestart'] = 'Der Abgabetermin für Einreichungen kann nicht vor dem Beginn der Einreichungphase liegen';
 $string['submissionenddatetime'] = 'Einreichungen sind möglich bis {$a->daydatetime} ({$a->distanceday})';
-$string['submissionendevent'] = '{$a} (Abgabetermin für Einreichungen)';
+$string['submissionendevent'] = '{$a} Abgabetermin';
 $string['submissionendswitch'] = 'Nach Abgabetermin automatisch zur nächsten Phase wechseln';
 $string['submissionendswitch_help'] = 'Wenn diese Option aktiviert und ein Abgabetermin für Einreichungen festgelegt sind, wechselt die gegenseitige Beurteilung automatisch in die Beurteilungsphase.
 
@@ -343,7 +343,7 @@ $string['submissionsettings'] = 'Einstellungen Einreichungen';
 $string['submissionsreport'] = 'Einreichungsübersicht für gegenseitige Beurteilung';
 $string['submissionstart'] = 'Einreichungen ab';
 $string['submissionstartdatetime'] = 'Einreichungen sind möglich ab {$a->daydatetime} ({$a->distanceday})';
-$string['submissionstartevent'] = '{$a} (Start für Einreichungen)';
+$string['submissionstartevent'] = '{$a} Abgabebeginn';
 $string['submissiontitle'] = 'Titel';
 $string['submissiontypedisabled'] = 'Der Einreichungstyp ist für diese Gegenseitige Beurteilung deaktiviert.';
 $string['submissiontypefileavailable'] = 'Dateianhang <span class="accesshide">verfügbar</span>';
@@ -396,10 +396,11 @@ $string['usepeerassessment_help'] = 'Wenn diese Option aktiviert ist, erhalten T
 $string['userdatecreated'] = 'eingereicht am <span>{$a}</span>';
 $string['userdatemodified'] = 'geändert am <span>{$a}</span>';
 $string['userplan'] = 'Navigator für gegenseitige Beurteilung';
+$string['userplan_help'] = 'Der Navigator für die gegenseitige Beurteilung zeigt alle Phasen und einzelne Schritte in den Phasen an. Die aktuelle Phase ist farblich gekennzeichnet und erledigte Schritte sind mit einem Haken gekennzeichnet.
+Zum Wechseln der Phase klicken Sie bitte auf den Stern rechts neben der Phasen-Überschrift.';
 $string['userplanaccessibilityskip'] = 'Zum aktuellen Schritt springen';
 $string['userplanaccessibilitytitle'] = 'Zeitleiste mit {$a} Phasen';
 $string['userplancurrentphase'] = 'Aktuelle Phase';
-$string['userplan_help'] = 'Der Navigator für die gegenseitige Beurteilung zeigt alle Phasen und einzelne Schritte in den Phasen an. Die aktuelle Phase ist farblich gekennzeichnet und erledigte Schritte sind mit einem Haken gekennzeichnet.';
 $string['useselfassessment'] = 'Selbstbeurteilung';
 $string['useselfassessment_desc'] = 'Teilnehmer/innen können ihre eigene Einreichung beurteilen';
 $string['useselfassessment_help'] = 'Wenn diese Option aktiviert ist, kann einem Nutzer auch seine eigene Einreichung zur Beurteilung zugewiesen werden. Er erhält dann dafür eine Bewertung, die der Bewertung für die eigene Einreichung zugerechnet wird.';
@@ -413,7 +414,6 @@ $string['workshop:editdimensions'] = 'Beurteilungsbögen bearbeiten';
 $string['workshop:exportsubmissions'] = 'Einreichungen exportieren';
 $string['workshop:ignoredeadlines'] = 'Zeitvorgaben ignorieren';
 $string['workshop:manageexamples'] = 'Beispieleinreichungen organisieren';
-$string['workshopname'] = 'Name für gegenseitige Beurteilung';
 $string['workshop:overridegrades'] = 'Berechnete Punkte überschreiben';
 $string['workshop:peerassess'] = 'Gegenseitiges Beurteilen';
 $string['workshop:publishsubmissions'] = 'Einreichungen veröffentlichen';
@@ -426,6 +426,7 @@ $string['workshop:viewauthornames'] = 'Autorennamen betrachten';
 $string['workshop:viewauthorpublished'] = 'Autor/innen von veröffentlichten Beiträgen ansehen';
 $string['workshop:viewpublishedsubmissions'] = 'Veröffentlichte Einreichungen betrachten';
 $string['workshop:viewreviewernames'] = 'Beurteilernamen anzeigen';
+$string['workshopname'] = 'Name für gegenseitige Beurteilung';
 $string['yourassessmentfor'] = 'Ihre Beurteilung für {$a}';
 $string['yourgrades'] = 'Ihre Bewertungen';
 $string['yoursubmission'] = 'Ihre Einreichung';

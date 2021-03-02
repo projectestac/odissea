@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'ru', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -56,7 +56,7 @@ $string['cachedef_htmlpurifier'] = 'Очиститель HTML - очищенно
 $string['cachedef_langmenu'] = 'Список доступных языков';
 $string['cachedef_locking'] = 'Блокировка';
 $string['cachedef_message_processors_enabled'] = 'Статус включения процессоров сообщений';
-$string['cachedef_message_time_last_message_between_users'] = 'Время создания для самого последнего сообщения между пользователями';
+$string['cachedef_message_time_last_message_between_users'] = 'Время создания самого последнего сообщения в беседе';
 $string['cachedef_navigation_expandcourse'] = 'Навигация расширяемых курсов';
 $string['cachedef_observers'] = 'Обработчики системных событий';
 $string['cachedef_plugin_functions'] = 'Обратные вызовы, доступные плагинам';
@@ -81,10 +81,10 @@ $string['component'] = 'Компонент';
 $string['confirmlockdeletion'] = 'Подтвердите удаление блокировки';
 $string['confirmstoredeletion'] = 'Подтверждение удаления хранилища';
 $string['default_application'] = 'Хранилище уровня приложения по умолчанию';
-$string['defaultmappings'] = 'Хранилища, используемые при отсутствии сопоставления.';
-$string['defaultmappings_help'] = 'Это список хранилищ, которые будут использоваться, если Вы не настроите сопоставление между описаниями кэша и хранилищами.';
 $string['default_request'] = 'Хранилище уровня запроса по умолчанию';
 $string['default_session'] = 'Хранилище уровня сессии по умолчанию';
+$string['defaultmappings'] = 'Хранилища, используемые при отсутствии сопоставления.';
+$string['defaultmappings_help'] = 'Это список хранилищ, которые будут использоваться, если Вы не настроите сопоставление между описаниями кэша и хранилищами.';
 $string['defaultstoreactions'] = 'Нельзя изменять хранилища, используемые по умолчанию';
 $string['definition'] = 'Определение';
 $string['definitionsummaries'] = 'Известные определения кэша';
@@ -149,20 +149,20 @@ $string['sharing'] = 'Совместное использование';
 $string['sharing_all'] = 'Все.';
 $string['sharing_help'] = 'Этот параметр позволяет определить, как могут использоваться данные кэша, если есть кластер или несколько сайтов, настроенных для использования одного хранилища с общими данными. Этот параметр является необязательным; пожалуйста, перед изменением убедитесь, что Вы понимаете его назначение.';
 $string['sharing_input'] = 'Пользовательский ключ (вводится ниже)';
+$string['sharing_siteid'] = 'Сайты с одинаковым идентификатором сайта.';
+$string['sharing_version'] = 'Сайты под управлением одной и той же версии.';
 $string['sharingrequired'] = 'Вы должны выбрать хотя бы один параметр общего доступа.';
 $string['sharingselected_all'] = 'Все';
 $string['sharingselected_input'] = 'Пользовательский ключ';
 $string['sharingselected_siteid'] = 'Идентификатор сайта';
 $string['sharingselected_version'] = 'Версия';
-$string['sharing_siteid'] = 'Сайты с одинаковым идентификатором сайта.';
-$string['sharing_version'] = 'Сайты под управлением одной и той же версии.';
-$string['storeconfiguration'] = 'Настройка хранилища';
 $string['store_default_application'] = 'Хранилище по умолчанию для кэша уровня приложения (Кэш в файловой системе)';
 $string['store_default_request'] = 'Хранилище по умолчанию для кэша уровня запроса (Кэш в статической переменной)';
 $string['store_default_session'] = 'Хранилище по умолчанию для кэша уровня сессии (Кэш в сессионной переменной)';
+$string['storeconfiguration'] = 'Настройка хранилища';
 $string['storename'] = 'Название хранилища';
-$string['storenamealreadyused'] = 'Необходимо задать уникальное название хранилища';
 $string['storename_help'] = 'Параметр задает название хранилища. Оно используется для идентификации хранилища внутри системы и может состоять только из символов a-z A-Z 0-9 -_ и пробелов. Название должно быть уникальным. При попытке задать название, уже использующееся в системе, будет отображено сообщение об ошибке.';
+$string['storenamealreadyused'] = 'Необходимо задать уникальное название хранилища';
 $string['storenameinvalid'] = 'Некорректное название хранилища. Используйте только знаки a-z A-Z 0-9 -_ и пробелы.';
 $string['storenotready'] = 'Хранилище не готово';
 $string['storeperformance'] = 'Отчет о производительности хранилища кэша. Уникальных запросов за операцию: {$a}.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hotpot', language 'nl', version '3.8'.
  *
- * @package   hotpot
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hotpot
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,24 +31,24 @@ $string['activitycloses'] = 'Activiteit sluit';
 $string['activitygrade'] = 'Activiteitscijfer';
 $string['activityopens'] = 'Activiteit opent';
 $string['added'] = 'Toegevoegd';
-$string['addquizchain'] = 'Voeg een ketting testen toe';
-$string['addquizchain_help'] = 'Moeten alle activiteiten in een testenketting toegevoegd worden?
+$string['addquizchain'] = 'Voeg een reeks testen toe';
+$string['addquizchain_help'] = 'Moeten alle activiteiten in een testenreeks toegevoegd worden?
 
 **Nee**
 : slechts één test zal aan de cursus toegevoegd worden.
 
 **Ja**
-: als het bronbestand een **testbestand** is, dan wordt het behandeld als de start van een testenketting en alle testen in de ketting zullen met dezelfde instellingen toegevoegd worden aan de cursus. Elke test moet een link hebben naar het volgende bestand in de ketting.
+: als het bronbestand een **testbestand** is, dan wordt het behandeld als de start van een testenreeks en alle testen in de reeks zullen met dezelfde instellingen toegevoegd worden aan de cursus. Elke test moet een link hebben naar het volgende bestand in de reeks.
 
-Als het bronbestand een **map** is, dan zullen alle herkenbare testen in de map toegevoegd worden aan de cursus om een testenketting te vormen met identieke instellingen.
+Als het bronbestand een **map** is, dan zullen alle herkenbare testen in de map toegevoegd worden aan de cursus om een testenreeks te vormen met identieke instellingen.
 
-Als het bronbestand een **unit file** is, zoals een Hot Potatoes masher bestand of index.html, dan zullen te testen die opgelijst zijn in het unit-bestand toegevoegd worden aan de cursus als een testenketting met identieke instellingen.';
+Als het bronbestand een **unit file** is, zoals een Hot Potatoes masher bestand of index.html, dan zullen te testen die in de lijst staan in het unit-bestand toegevoegd worden aan de cursus als een testenreeks met identieke instellingen.';
 $string['allowpaste'] = 'Sta plakken toe';
 $string['allowpaste_help'] = 'Als deze instelling is geactiveerd, kunnen studenten tekst kopiëren, plakken en slepen naar tekst-input-boxen.';
-$string['allowreview'] = 'Herbekijken toestaan';
-$string['allowreview_help'] = 'Indien ingeschakeld kunnen leerlingen hun testen herbekijken nadat ze gesloten zijn.';
+$string['allowreview'] = 'Opnieuw bekijken toestaan';
+$string['allowreview_help'] = 'Indien ingeschakeld kunnen leerlingen hun testen opnieuw bekijken nadat ze gesloten zijn.';
 $string['analysisreport'] = 'Itemanalyse';
-$string['attempted'] = 'Gepoogd';
+$string['attempted'] = 'Geprobeerd';
 $string['attemptlimit'] = 'Limiet aantal pogingen';
 $string['attemptlimit_help'] = 'Het maximale aantal pogingen die een leerling mag proberen met deze HotPot-activiteit.';
 $string['attemptnumber'] = 'Pogingnummer';
@@ -65,7 +65,7 @@ $string['bodystylesmargin'] = 'Linker- en rechtermarge';
 $string['cacherecords'] = 'HotPot cache records';
 $string['canrestarthotpot'] = 'Jouw resultaten tot nu toe worden bewaard en je kunt "{$a}" later opnieuw beginnen';
 $string['canresumehotpot'] = 'Jouw resultaten tot nu toe worden bewaard en je kunt "{$a}" later verder gaan';
-$string['checks'] = 'controles';
+$string['checks'] = 'Controles';
 $string['checksomeboxes'] = 'Zet vinkjes';
 $string['clearcache'] = 'HotPot cache leegmaken';
 $string['cleardetails'] = 'HotPot-details verwijderen';
@@ -97,6 +97,7 @@ $string['confirmdeleteattempts'] = 'Wil je deze pogingen echt verwijderen?';
 $string['confirmstop'] = 'Weet je zeker dat je deze pagina wil verlaten?';
 $string['correct'] = 'juist';
 $string['couldnotinsertsubmissionform'] = 'Kon formulier niet invoegen';
+$string['d_index'] = 'Discriminatie-index';
 $string['delay1'] = 'Vertraging 1';
 $string['delay1_help'] = 'De minimale vertraging tussen de eerste en de tweede poging.';
 $string['delay1summary'] = 'Tijd tussen de eerste en de tweede poging.';
@@ -104,8 +105,6 @@ $string['delay2'] = 'Vertraging 2';
 $string['delay2_help'] = 'De minimale vertraging na de tweede poging.';
 $string['delay2summary'] = 'Tijd tussen latere pogingen';
 $string['delay3'] = 'Vertraging 3';
-$string['delay3afterok'] = 'Wacht tot de leerling op OK klikt';
-$string['delay3disable'] = 'Ga niet automatisch verder.';
 $string['delay3_help'] = 'De instelling bepaalt de vertraging tussen het beëindigen van de test en de terugkeer van de controle over het scherm naar Moodle.
 
 ** Gebruik specifieke tijd (in seconden) **:
@@ -122,13 +121,14 @@ controle zal worden teruggegeven aan Moodle na het opgegeven aantal seconden.
 : controle zal niet worden teruggestuurd naar Moodle nadat de test gedaan is. De leerling is vrij om weg te navigeren van de testpagina.
 
 Let op, de testresultaten worden altijd onmiddellijk naar Moodle gezonden als de test beëindigd is of wanneer de pagina wordt verlaten, ongeacht deze instelling.';
+$string['delay3afterok'] = 'Wacht tot de leerling op OK klikt';
+$string['delay3disable'] = 'Ga niet automatisch verder.';
 $string['delay3specific'] = 'Gebruik specifieke tijd (in seconden)';
 $string['delay3summary'] = 'Wachttijd aan het eind van de test';
 $string['delay3template'] = 'Gebruik instellingen in bron- / sjabloonbestand';
 $string['deleteallattempts'] = 'Verwijder alle pogingen';
 $string['deleteattempts'] = 'Verwijder pogingen';
 $string['detailsrecords'] = 'HotPot-detailrecords';
-$string['d_index'] = 'Discriminatie-index';
 $string['duration'] = 'Duur';
 $string['enablecache'] = 'HotPot cache inschakelen';
 $string['enablecron'] = 'HotPot cron inschakelen';
@@ -136,8 +136,10 @@ $string['enablemymoodle'] = 'Toon HotPots op Mijn Startpagina';
 $string['enableobfuscate'] = 'Verdoezelen van media-playercode inschakelen';
 $string['enableswf'] = 'Sta emedden van SWF-bestanden in HotPot-activiteiten toe.';
 $string['entry_attempts'] = 'Pogingen';
+$string['entry_dates'] = 'Data';
+$string['entry_grading'] = 'Beoordeling';
+$string['entry_title'] = 'Unit naam als titel';
 $string['entrycm'] = 'Vorige activiteit';
-$string['entrycmcourse'] = 'Vorige activiteit in deze cursus';
 $string['entrycm_help'] = 'Deze instelling geeft aan een Moodle activiteit een minimumcijfer dat voor die activiteit die moet worden bereikt voordat deze HotPot activiteit kan worden geprobeerd.
 
 De leraar kan een specifieke activiteit kiezen of een van de volgende algemene instellingen:
@@ -146,12 +148,11 @@ De leraar kan een specifieke activiteit kiezen of een van de volgende algemene i
 * Vorige activiteit in deze sectie
 * Vorige HotPot in deze cursus
 * Vorige HotPot in deze sectie';
+$string['entrycmcourse'] = 'Vorige activiteit in deze cursus';
 $string['entrycmsection'] = 'Vorige activiteit in deze cursussectie';
 $string['entrycompletionwarning'] = 'Voor je aan deze activiteit begint, moet je naar {$a} kijken.';
-$string['entry_dates'] = 'Data';
 $string['entrygrade'] = 'Vorig activiteitscijfer';
 $string['entrygradewarning'] = 'Je kunt deze activiteit niet starten voor je cijfer groter is dan {$a->entrygrade}% is voor {$a->entryactivity}. Op dit ogenblik is je cijfer voor die activiteit  {$a->usergrade}%';
-$string['entry_grading'] = 'Beoordeling';
 $string['entryhotpotcourse'] = 'Vorige HotPot in deze cursus';
 $string['entryhotpotsection'] = 'Vorige HotPot in deze cursussectie';
 $string['entryoptions'] = 'Opties startpagina';
@@ -169,10 +170,9 @@ $string['entryoptions_help'] = 'Deze selectievakjes schakelen de weergave van it
 ** Pogingen **
 : Indien aangevinkt wordt een tabel met de gegevens van eerdere pogingen van de gebruiker voor deze HotPot weergegeven op de startpagina. Pogingen die hervat kunnen worden hebben een knop hiervoor in de rechtse kolom.';
 $string['entrypage'] = 'Toon startpagina';
-$string['entrypagehdr'] = 'Startpagina';
 $string['entrypage_help'] = 'Moeten leerlingen een startpagina zien bij het begin van de HotPot-activiteit? ** Ja **: de studenten zal worden getoond een vermelding pagina voordat u begint de HotPot. De inhoud van de beginpagina worden bepaald door de toetreding van het HotPot pagina opties. ** Nee **: de studenten zal niet worden getoond een item pagina, en zal de HotPot direct aan de slag. Een vermelding pagina wordt altijd getoond aan de leerkracht, om toegang te verlenen tot de rapporten en bewerken quizzen pagina';
+$string['entrypagehdr'] = 'Startpagina';
 $string['entrytext'] = 'Tekst startpagina';
-$string['entry_title'] = 'Unit naam als titel';
 $string['event_attempt_reviewed'] = 'HotPot-poging nagekeken';
 $string['event_attempt_reviewed_description'] = 'De gebruiker met ID  "{$a->userid}" heeft een poging nagekeken in de "HotPot"-activiteit met cursus module-ID "{$a->cmid}"';
 $string['event_attempt_reviewed_explanation'] = 'Een gebruiker heeft net een poging van een HotPot-activiteit nagekeken';
@@ -190,19 +190,6 @@ $string['event_report_viewed_description'] = 'De gebruiker met ID  "{$a->userid}
 $string['event_report_viewed_explanation'] = 'Een gebruiker heeft een rapport over pogingen in een HotPot-activiteit bekeken';
 $string['exit_areyouok'] = 'Hallo, ben je daar nog?';
 $string['exit_attemptscore'] = 'Je cijfer voor die poging was {$a}';
-$string['exitcm'] = 'Volgende activiteit';
-$string['exitcmcourse'] = 'Volgende activiteit in deze cursus';
-$string['exitcm_help'] = 'Deze instelling bepaalt welke Moodle-activiteit moet gebeuren nadat deze HotPot-activiteit is voltooid. Het optionele cijfer is het minimale cijfer voor deze HotPot-activiteit, nodig voordat de volgende activiteit wordt getoond.
-
-De leraar kan een specifieke activiteit kiezen of één van volgende instellingen:
-
- * Volgende activiteit in deze cursus
-* Volgende activiteit in deze sectie
-* Volgende HotPot-activiteit in deze cursus
-* Volgende HotPot-activiteit in deze sectie
-
-Als andere verlaatpagina-opties zijn uitgeschakeld en de leerling heeft het gewenste cijfer voor deze HotPot-activiteit bereikt, dan zal de volgende activiteit onmiddellijk getoond worden. Anders krijgt de leerling een link naar de volgende activiteit.';
-$string['exitcmsection'] = 'Volgende activiteit in deze cursussectie';
 $string['exit_course'] = 'Cursus';
 $string['exit_course_text'] = 'Keer terug naar de hoofdpagina van de cursus';
 $string['exit_encouragement'] = 'Aanmoediging';
@@ -228,17 +215,14 @@ $string['exit_feedback_help'] = 'Deze opties schakelen feedbackberichten op de H
 
 Als de beoordelingsmethode voor een unit op hoogste cijfer staat, dan zal er een bericht getoond worden of de laatste poging beter of gelijk was dan de vorige poging.';
 $string['exit_goodtry'] = 'Goede poging!';
-$string['exitgrade'] = 'Volgend cijfer';
 $string['exit_grades'] = 'Cijfers';
 $string['exit_grades_text'] = 'Kijk naar je huidige cijfers voor deze cursus.';
-$string['exithotpotcourse'] = 'Volgende HotPot in deze cursus';
 $string['exit_hotpotgrade'] = 'Jouw cijfer voor deze activiteit is {$a}';
 $string['exit_hotpotgrade_average'] = 'Je gemiddelde voor deze activiteit tot nu toe is {$a}';
 $string['exit_hotpotgrade_highest'] = 'Je hoogste cijfer voor deze activiteit tot nu toe is {$a}';
 $string['exit_hotpotgrade_highest_equal'] = 'Je hebt deze activiteit even goed gedaan als de vorige keer!';
 $string['exit_hotpotgrade_highest_previous'] = 'Je vorige hoogste cijfer voor deze activiteit was {$a}';
 $string['exit_hotpotgrade_highest_zero'] = 'Je hebt voor deze activiteit nog geen hoger cijfer dan {$a}';
-$string['exithotpotsection'] = 'Volgende HotPot in deze cursussectie';
 $string['exit_index'] = 'Index';
 $string['exit_index_text'] = 'Ga naar de activiteitenindex.';
 $string['exit_links'] = 'Verlaat-links';
@@ -258,9 +242,30 @@ $string['exit_links_help'] = 'Volgende opties schakelen het tonen van bepaalde n
 $string['exit_next'] = 'Volgende';
 $string['exit_next_text'] = 'Probeer de volgende activiteit';
 $string['exit_noscore'] = 'Je hebt deze activiteit met succes voltooid!';
+$string['exit_retry'] = 'Probeer opnieuw';
+$string['exit_retry_text'] = 'Probeer deze activiteit opnieuw.';
+$string['exit_welldone'] = 'Goed gedaan!';
+$string['exit_whatnext_0'] = 'Wat zou je nu willen doen?';
+$string['exit_whatnext_1'] = 'Kies je bestemming...';
+$string['exit_whatnext_default'] = 'Kies één uit het volgende lijstje:';
+$string['exitcm'] = 'Volgende activiteit';
+$string['exitcm_help'] = 'Deze instelling bepaalt welke Moodle-activiteit moet gebeuren nadat deze HotPot-activiteit is voltooid. Het optionele cijfer is het minimale cijfer voor deze HotPot-activiteit, nodig voordat de volgende activiteit wordt getoond.
+
+De leraar kan een specifieke activiteit kiezen of één van volgende instellingen:
+
+ * Volgende activiteit in deze cursus
+* Volgende activiteit in deze sectie
+* Volgende HotPot-activiteit in deze cursus
+* Volgende HotPot-activiteit in deze sectie
+
+Als andere verlaatpagina-opties zijn uitgeschakeld en de leerling heeft het gewenste cijfer voor deze HotPot-activiteit bereikt, dan zal de volgende activiteit onmiddellijk getoond worden. Anders krijgt de leerling een link naar de volgende activiteit.';
+$string['exitcmcourse'] = 'Volgende activiteit in deze cursus';
+$string['exitcmsection'] = 'Volgende activiteit in deze cursussectie';
+$string['exitgrade'] = 'Volgend cijfer';
+$string['exithotpotcourse'] = 'Volgende HotPot in deze cursus';
+$string['exithotpotsection'] = 'Volgende HotPot in deze cursussectie';
 $string['exitoptions'] = 'Opties verlaatpagina';
 $string['exitpage'] = 'Toon verlaatpagina';
-$string['exitpagehdr'] = 'Verlaatpagina';
 $string['exitpage_help'] = 'Moet er een verlaatpagina getoond worden wanneer de HotPot-test voltooid is?
 
 **Ja**
@@ -268,13 +273,8 @@ $string['exitpage_help'] = 'Moet er een verlaatpagina getoond worden wanneer de 
 
 **Nee**
 :de leerlingen krijgen geen verlaatpagina te zien. Zij zullen onmiddellijk naar de volgende oefening gaan of terugkeren naar de Moodle cursuspagina.';
-$string['exit_retry'] = 'Probeer opnieuw';
-$string['exit_retry_text'] = 'Probeer deze activiteit opnieuw.';
+$string['exitpagehdr'] = 'Verlaatpagina';
 $string['exittext'] = 'Tekst voor de verlaatpagina';
-$string['exit_welldone'] = 'Goed gedaan!';
-$string['exit_whatnext_0'] = 'Wat zou je nu willen doen?';
-$string['exit_whatnext_1'] = 'Kies je bestemming...';
-$string['exit_whatnext_default'] = 'Kies één uit het volgende lijstje:';
 $string['feedbackdiscuss'] = 'Start een discussie over deze test in een forum.';
 $string['feedbackformmail'] = 'Feedbackformulier';
 $string['feedbackmoodleforum'] = 'Moodleforum';
@@ -298,11 +298,11 @@ $string['hotpot:deleteallattempts'] = 'Verwijder pogingen van gebruikers in een 
 $string['hotpot:deletemyattempts'] = 'Verwijder je eigen pogingen in een HotPot-activiteit.';
 $string['hotpot:ignoretimelimits'] = 'Negeer tijdslimieten in een HotPot-activiteit.';
 $string['hotpot:manage'] = 'Wijzig de instellingen van een HotPot-activiteit.';
-$string['hotpotname'] = 'HotPot activieteitsnaam';
 $string['hotpot:preview'] = 'Bekijk een HotPot-activiteit';
 $string['hotpot:reviewallattempts'] = 'Bekijk gebruikerspogingen van een HotPot-activiteit.';
 $string['hotpot:reviewmyattempts'] = 'Bekijk je eigen pogingen van een HotPot-activiteit.';
 $string['hotpot:view'] = 'Bekijk de startpagina van een HotPot-activiteit';
+$string['hotpotname'] = 'HotPot activieteitsnaam';
 $string['ignored'] = 'genegeerd';
 $string['inprogress'] = 'lopend';
 $string['isgreaterthan'] = 'is groter dan';
@@ -396,8 +396,13 @@ $string['pressoktocontinue'] = 'Klik OK om verder te gaan of Annuleer om op de h
 $string['questionshort'] = 'Vr-{$a}';
 $string['quizname_help'] = 'helptekst voor Test naam';
 $string['quizzes'] = 'Testen';
+$string['responses'] = 'Antwoorden';
 $string['responsesreport'] = 'Antwoorden';
-$string['score'] = 'cijfer';
+$string['reviewafterattempt'] = 'Sta opnieuw bekijken toe na een poging';
+$string['reviewafterclose'] = 'Sta opnieuw bekijken toe nadat HotPot gesloten is';
+$string['reviewduringattempt'] = 'Sta opnieuw bekijken toe tijdens een poging';
+$string['reviewoptions'] = 'Opties voor het opnieuw bekijken';
+$string['score'] = 'Cijfer';
 $string['scoresreport'] = 'Cijfers';
 $string['selectattempts'] = 'Selecteer pogingen';
 $string['showerrormessage'] = 'HotPot-fout: {$a}';

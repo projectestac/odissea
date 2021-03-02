@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'book', language 'fr', version '3.8'.
  *
- * @package   book
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     book
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,13 +52,13 @@ $string['eventchapterupdated'] = 'Chapitre modifié';
 $string['eventchapterviewed'] = 'Chapitre consulté';
 $string['hidechapter'] = 'Cacher le chapitre « {$a} »';
 $string['indicator:cognitivedepth'] = 'Livre : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Livre.';
 $string['indicator:cognitivedepthdef'] = 'Livre : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Livre » (niveaux : pas de vue, vue).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Livre.';
 $string['indicator:socialbreadth'] = 'Livre : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Livre.';
 $string['indicator:socialbreadthdef'] = 'Livre : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Livre » (niveaux : pas de participation, participant seul).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Livre.';
 $string['modulename'] = 'Livre';
 $string['modulename_help'] = 'Le module livre permet à l\'enseignant de créer une ressource composée de plusieurs pages, comme un livre, avec des chapitres et des sous-chapitres. Les livres peuvent contenir du texte ainsi que des fichiers médias et sont utiles pour afficher des contenus longs à couper en sections.
 
@@ -94,7 +94,7 @@ $string['numbering_help'] = '* Aucun - Les titres des chapitres et sous-chapitre
 * Puces - Les sous-chapitres sont indentés et affichés au moyen de puces
 * Indentations - les sous-chapitres sont indentés dans la table des matières';
 $string['numberingoptions'] = 'Options disponibles pour le format des titres de chapitre';
-$string['numberingoptions_desc'] = 'Sélectionnez les options de numérotation qui devraient être disponibles lors de la création d\'un nouveau livre.';
+$string['numberingoptions_desc'] = 'Options d\'affichage des chapitres et sous-chapitres dans la table des matières';
 $string['page-mod-book-x'] = 'Toute page d\'un livre';
 $string['pluginadministration'] = 'Administration du livre';
 $string['pluginname'] = 'Livre';

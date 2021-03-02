@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_upload', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_upload', language 'es', version '3.8'.
  *
- * @package   repository_upload
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_upload
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Configuración para \'plugin\' de subida';
 $string['pluginname'] = 'Subir un archivo';
 $string['pluginname_help'] = 'Subir un archivo a Moodle';
+$string['upload:view'] = 'Usar subida en selector de archivos';
 $string['upload_error_cant_write'] = 'No se pudo escribir el archivo en el disco';
 $string['upload_error_extension'] = 'Una extensión de PHP detuvo la subida del archivo';
 $string['upload_error_form_size'] = 'El archivo subido excede la directriz MAX_FILE_SIZE especificada en el formulario HTML.';
@@ -35,4 +36,3 @@ $string['upload_error_ini_size'] = 'El archivo subido excede la directriz upload
 $string['upload_error_no_file'] = 'No se ha subido ningún archivo';
 $string['upload_error_no_tmp_dir'] = 'PHP carece de un directorio temporal.';
 $string['upload_error_partial'] = 'Solo se ha subido una parte del archivo.';
-$string['upload:view'] = 'Usar subida en selector de archivos';

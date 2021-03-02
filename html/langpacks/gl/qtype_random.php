@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_random', language 'gl', version '3.8'.
  *
- * @package   qtype_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['configselectmanualquestions'] = 'Pode o tipo de pregunta ao chou seleccionar manualmente unha pregunta cando fai a súa elección ao chou dunha pregunta a partir dunha categoría?';
 $string['includingsubcategories'] = 'Incluír subcategorías';
 $string['pluginname'] = 'Ao chou';
-$string['pluginnameediting'] = 'Edición dunha pregunta ao chou';
 $string['pluginname_help'] = 'Unha pregunta aleatoria non é un tipo de pregunta senón unha maneira de introducir unha pregunta aleatoriamente escollida a partir dunha categoría especificada dentro dunha actividade.';
+$string['pluginnameediting'] = 'Edición dunha pregunta ao chou';
 $string['privacy:metadata'] = 'O engadido de pregunta ao chou non almacena ningún dato persoal.';
 $string['randomqname'] = 'Ao chou ({$a})';
 $string['randomqnamefromtop'] = 'Pregunta aleatoria defectuosa! Elimine esta pregunta.';

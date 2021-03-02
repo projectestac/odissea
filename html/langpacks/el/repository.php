@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository', language 'el', version '3.8'.
  *
- * @package   repository
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -56,24 +56,27 @@ $string['cannotdelete'] = 'Δεν είναι δυνατή η διαγραφή α
 $string['cannotdownload'] = 'Δεν είναι δυνατή η λήψη αυτού του αρχείου.';
 $string['cannotdownloaddir'] = 'Δεν είναι δυνατή η λήψη αυτού του φακέλου';
 $string['cannotinitplugin'] = 'Η κλήση plugin_init απέτυχε';
+$string['cannotunzipcontentunreadable'] = 'Δεν είναι δυνατή η αποσυμπίεση αυτού του αρχείου, επειδή δεν είναι δυνατή η ανάγνωση των περιεχομένων του.';
+$string['cannotunzipextractfileerror'] = 'Δεν είναι δυνατή η αποσυμπίεση αυτού του αρχείου, επειδή δεν είναι δυνατή η ανάγνωση ενός ή περισσοτέρων από τα αρχεία του.';
+$string['cannotunzipquotaexceeded'] = 'Δεν είναι δυνατή η αποσυμπίεση αυτού του αρχείου επειδή θα υπερβεί το μέγιστο επιτρεπόμενο μέγεθος σε αυτήν την περιοχή πρόχειρου.';
 $string['choosealink'] = 'Επιλέξτε έναν σύνδεσμο…';
 $string['chooselicense'] = 'Επιλέξτε άδεια';
 $string['cleancache'] = 'Καθαρισμός των αρχείων στη προσωρινή μνήμη';
 $string['close'] = 'Κλείσιμο';
 $string['commonrepositorysettings'] = 'Κοινές ρυθμίσεις αποθετηρίων';
 $string['configallowexternallinks'] = 'Αυτή η επιλογή δίνει την δυνατότητα σε όλους τους χρήστες να επιλέξουν ή όχι, αν εξωτερικά πολυμέσα αντιγράφονται στο Moodle ή όχι. Αν αυτό είναι απενεργοποιημένο τότε τα πολυμέσα αντιγράφονται πάντα στο Moodle (αυτό είναι συνήθως καλύτερο για τη συνολική ακεραιότητα και ασφάλεια των δεδομένων). Αν αυτό είναι ενεργοποιημένο τότε οι χρήστες μπορούν να επιλέξουν κάθε φορά που προσθέτουν πολυμέσα μέσα σε κείμενο.';
-$string['configcacheexpire'] = 'Ο χρόνος (σε δευτερόλεπτα) για τον οποίο οι λίστες αρχείων αποθηκεύονται προσωρινά τοπικά κατά την περιήγηση σε εξωτερικούς χώρους αποθήκευσης.';
+$string['configcacheexpire'] = 'Ο χρόνος (σε δευτερόλεπτα) για τον οποίο οι λίστες αρχείων αποθηκεύονται σε κρυφή μνήμη τοπικά κατά την περιήγηση σε εξωτερικούς χώρους αποθήκευσης.';
 $string['configgetfiletimeout'] = 'Λήξη χρόνου σε δευτερόλεπτα για λήψη ενός εξωτερικού αρχείου στο Moodle.';
 $string['configsaved'] = 'Οι ρυθμίσεις αποθηκεύτηκαν!';
 $string['configsyncfiletimeout'] = 'Χρονικό όριο σε δευτερόλεπτα για συγχρονισμό του μεγέθους του εξωτερικού αρχείου.';
 $string['configsyncimagetimeout'] = 'Χρονικό όριο σε δευτερόλεπτα για λήψη ενός αρχείου εικόνας από εξωτερικό αποθετήριο κατά το συγχρονισμό.';
-$string['confirmdelete'] = 'Είστε σίγουροι ότι θέλετε να διαγράψετε το αποθετήριο {$a}; Αν επιλέξετε «Συνέχεια και λήψη», θα γίνει λήψη από το Moodle αναφορών σε αρχεία για εξωτερικό περιεχόμενο . Μπορεί να χρειαστεί αρκετή ώρα για την επεξεργασία.';
+$string['confirmdelete'] = 'Είστε σίγουροι οτι θέλετε να διαγράψετε το αποθετήριο {$a}; Αν επιλέξετε «Συνέχεια και λήψη», θα γίνει λήψη από το Moodle αναφορών σε αρχεία για εξωτερικό περιεχόμενο . Μπορεί να χρειαστεί αρκετή ώρα για την επεξεργασία.';
 $string['confirmdeletefile'] = 'Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό το αρχείο;';
 $string['confirmdeletefilewithhref'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το αρχείο; Υπάρχουν {$a} ψευδώνυμα/αρχεία συντόμευσης που χρησιμοποιούν αυτό το αρχείο ως πηγή τους. Εάν προχωρήσετε τότε αυτά τα ψευδώνυμα θα μετατραπούν σε αληθινά αντίγραφα.';
-$string['confirmdeletefolder'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτόν τον φάκελο; Όλα τα αρχεία και οι υποφάκελοι θα διαγραφούν.';
+$string['confirmdeletefolder'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτόν τον φάκελο; Όλα τα αρχεία και οι υποφακέλοι θα διαγραφούν.';
 $string['confirmremove'] = 'Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό το πρόσθετο αποθετηρίου, τις επιλογές του και <strong>όλα τα στιγμιότυπά του</strong> - {$a}; Αν επιλέξετε «Συνέχεια και λήψη», θα γίνει λήψη στο Moodle των αναφορών αρχείων σε εξωτερικά περιεχόμενα. Αυτό θα μπορούσε να πάρει πολύ χρόνο για επεξεργασία.';
 $string['confirmrenamefile'] = 'Είστε βέβαιοι ότι θέλετε να μετονομάσετε/μετακινήσετε αυτό το αρχείο; Υπάρχουν {$a} ψευδώνυμα/αρχεία συντόμευσης που χρησιμοποιούν αυτό το αρχείο ως πηγή τους. Εάν προχωρήσετε τότε αυτά τα ψευδώνυμα θα μετατραπούν σε αληθινά αντίγραφα.';
-$string['confirmrenamefolder'] = 'Σίγουρα θέλετε να μετακινήσετε/μετονομάσετε αυτό το φάκελο; Οποιαδήποτε αρχεία ψευδώνυμων/συντομεύσεων που αναφέρουν αρχεία σε αυτόν τον φάκελο θα μετατραπούν σε αληθινά αντίγραφα.';
+$string['confirmrenamefolder'] = 'Είστε βέβαιοι ότι θέλετε να μετακινήσετε/μετονομάσετε αυτό το φάκελο; Οποιαδήποτε αρχεία ψευδώνυμων/συντομεύσεων που αναφέρουν αρχεία σε αυτόν τον φάκελο θα μετατραπούν σε αληθινά αντίγραφα.';
 $string['continueuninstall'] = 'Συνέχεια';
 $string['continueuninstallanddownload'] = 'Συνέχεια και λήψη';
 $string['copying'] = 'Αντιγραφή';
@@ -103,7 +106,7 @@ $string['downloadallfiles'] = 'Λήψη όλων των αρχείων';
 $string['downloadfolder'] = 'Λήψη όλων';
 $string['downloadsucc'] = 'Το αρχείο μεταφορτώθηκε με επιτυχία';
 $string['draftareanofiles'] = 'Δεν είναι δυνατή η λήψη επειδή δεν υπάρχουν συνημμένα αρχεία';
-$string['editrepositoryinstance'] = 'Επεξεργασία στιγμιότυπου αποθετηρίου';
+$string['editrepositoryinstance'] = 'Επεξεργασία στιμιότυπου αποθετηρίου';
 $string['emptylist'] = 'Κενή λίστα';
 $string['emptytype'] = 'Αποτυχία δημιουργίας τύπου αποθετηρίου: το όνομα του τύπου είναι κενό';
 $string['enablecourseinstances'] = 'Επιτρέψτε στους χρήστες να προσθέτουν ένα στιγμιότυπο αποθετηρίου στο μάθημα';
@@ -164,7 +167,7 @@ $string['makefileinternal'] = 'Δημιουργία ενός αντιγράφο�
 $string['makefilelink'] = 'Σύνδεση απευθείας στο αρχείο';
 $string['makefilereference'] = 'Δημιουργία ενός ψευδωνύμου/μιας συντόμευσης για το αρχείο';
 $string['manage'] = 'Διαχείριση αποθετηρίων';
-$string['manageinstances'] = 'Διαχείριση στιγμιότυπων';
+$string['manageinstances'] = 'Διαχείριση στιγμιοτύπων';
 $string['manageurl'] = 'Διαχείριση';
 $string['manageuserrepository'] = 'Διαχείριση μεμονωμένου αποθετηρίου χρήστη';
 $string['missingsourcekey'] = 'Το κλειδί προέλευσης λείπει. Αυτό το κλειδί πρέπει επίσης να παρέχεται για την ανάκτηση του αρχείου.';
@@ -182,7 +185,7 @@ $string['norepositoriesavailable'] = 'Λυπούμαστε, κανένα από 
 $string['norepositoriesexternalavailable'] = 'Λυπούμαστε, κανένα από τα τρέχοντα αποθετήρια δεν μπορεί να επιστρέψει εξωτερικά αρχεία.';
 $string['noresult'] = 'Χωρίς αποτέλεσμα αναζήτησης';
 $string['notyourinstances'] = 'Δεν μπορείτε να δείτε/επεξεργαστείτε στιγμιότυπα αποθετηρίου άλλου χρήστη';
-$string['off'] = 'Ενεργοποιημένο αλλά κρυφό';
+$string['off'] = 'Ενεργοποιμένο αλλά κρυφό';
 $string['on'] = 'Ενεργοποιημένο και ορατό';
 $string['openpicker'] = 'Επιλέξτε ένα αρχείο...';
 $string['operation'] = 'Λειτουργία';
@@ -199,12 +202,12 @@ $string['popupblockeddownload'] = 'Το παράθυρο λήψης είναι �
 $string['preview'] = 'Προεπισκόπηση';
 $string['privacy:metadata:repository'] = 'Το στοιχείο λογισμικού Αποθετηρίου αποθηκεύει τους τύπους αποθετηρίου στο βασικό υποσύστημα.';
 $string['privacy:metadata:repository_instances'] = 'Το στοιχείο λογισμικού των πρόσθετων Αποθετηρίου αποθηκεύει δεδομένα στιγμιότυπων αποθετηρίου χρηστών μέσα στο υποσύστημα πυρήνα.';
-$string['privacy:metadata:repository_instances:name'] = 'Το προσαρμοσμένο όνομα του στιγμιότυπου αποθετηρίου.';
+$string['privacy:metadata:repository_instances:name'] = 'Το προσαρμοσμένο όνομα του στιγμιοτύπου αποθετηρίου.';
 $string['privacy:metadata:repository_instances:password'] = 'Ο προαιρετικός κωδικός πρόσβασης έχει ρυθμιστεί για το στιγμιότυπο αποθετηρίου.';
 $string['privacy:metadata:repository_instances:timecreated'] = 'Η ημερομηνία/ώρα της δημιουργίας για το στιγμιότυπο αποθετηρίου.';
 $string['privacy:metadata:repository_instances:timemodified'] = 'Η ημερομηνία/ώρα τροποποίησης για το στιγμιότυπο αποθετηρίου.';
 $string['privacy:metadata:repository_instances:typeid'] = 'Ο τύπος αναγνωριστικού του στιγμιότυπου αποθετηρίου.';
-$string['privacy:metadata:repository_instances:userid'] = 'Το αναγνωριστικό του χρήστη που είναι ιδιοκτήτης του στιγμιότυπου αποθετηρίου.';
+$string['privacy:metadata:repository_instances:userid'] = 'Το αναγνωριστικό του χρήστη που είναι ιδιοκτήτης του στιγμιοτύπου αποθετηρίου.';
 $string['privacy:metadata:repository_instances:username'] = 'Το προαιρετικό όνομα χρήστη που έχει ρυθμιστεί για το στιγμιότυπο του αποθετηρίου.';
 $string['privatefilesof'] = '{$a} Ιδιωτικά αρχεία';
 $string['readonlyinstance'] = 'Δεν μπορείτε να τροποποιήσετε/διαγράψετε ένα στιγμιότυπο που είναι μόνο για ανάγνωση';

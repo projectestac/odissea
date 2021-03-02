@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'it', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,6 @@ $string['configpopupwidth'] = 'Larghezza di default (in pixel) delle finestre po
 $string['contentheader'] = 'Contenuto';
 $string['displayoptions'] = 'Opzioni di visualizzazione disponibili';
 $string['displayselect'] = 'Visualizzazione';
-$string['displayselectexplain'] = 'Imposta il tipo di visualizzazione di default. Tenere presente che i vari tipi di file potrebbero consentire solo alcuni tipi di visualizzazione.';
 $string['displayselect_help'] = 'L\'impostazione, assieme al tipo di file e alle possibilità di incorporare il file nel browser, determina come sarà visualizzato il file. Le modalità di visualizzazione possono essere:
 
 * Automatica - La modalità di visualizzazione migliore viene scelta automaticamente
@@ -53,22 +52,23 @@ $string['displayselect_help'] = 'L\'impostazione, assieme al tipo di file e alle
 * Popup - Il file viene visualizzato in un nuova finestra browser priva di menu e barra dell\'indirizzo
 * Frame - Il file viene visualizzato all\'interno di un frame sotto la barra di navigazione
 * Nuova finestra - Il file viene visualizzato in una nuova finestra browser completa di menu e barra dell\'indirizzo.';
+$string['displayselectexplain'] = 'Imposta il tipo di visualizzazione di default. Tenere presente che i vari tipi di file potrebbero consentire solo alcuni tipi di visualizzazione.';
 $string['dnduploadresource'] = 'Crea una risorsa file';
 $string['encryptedcode'] = 'Codice criptato';
-$string['filenotfound'] = 'Spiacente, il file non è stato trovato';
+$string['filenotfound'] = 'Spiacente, il file non è stato trovato.';
 $string['filterfiles'] = 'Applica filtri sul contenuto del file';
 $string['filterfilesexplain'] = 'Imposta il tipo di filtri da applicare sui file. Tenere presente che il filtraggio potrebbe generare problemi con alcune applet Flash e Java. Accertati anche che i file siano codificati in UTF-8.';
-$string['filtername'] = 'Auto link ai Nomi delle risorse';
+$string['filtername'] = 'Auto collegamento ai Nomi delle risorse';
 $string['forcedownload'] = 'Forza scaricamento';
 $string['framesize'] = 'Altezza frame';
 $string['indicator:cognitivedepth'] = 'File cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse File.';
 $string['indicator:cognitivedepthdef'] = 'File cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalla risorsa File (Livelli: Nessuna visualizzazione, Visualizzazione)';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse File.';
 $string['indicator:socialbreadth'] = 'File sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse File.';
 $string['indicator:socialbreadthdef'] = 'File sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dalle risorse File (Livelli: Nessuna partecipazione, Partecipazione da solo)';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse File.';
 $string['legacyfiles'] = 'Migrazione dei file di corsi precedenti';
 $string['legacyfilesactive'] = 'Attivo';
 $string['legacyfilesdone'] = 'Completato';
@@ -82,7 +82,7 @@ E\' possibile usare file per:
 
 * Condividere una presentazione svolta in classe
 * Includere nel corso piccoli siti web
-* Fornire bozze da usare con software client (ad esempio file Photoshop .psd) che gli studenti possono usare per preparare e consegnare i propri compiti';
+* Fornire bozze da usare con software client che gli studenti possono usare per preparare e consegnare i propri compiti';
 $string['modulenameplural'] = 'File';
 $string['notmigrated'] = 'Spiacente, ma questo tipo di risorsa legacy ({$a}) non è stato ancora migrata.';
 $string['optionsheader'] = 'Opzioni di visualizzazione';
@@ -99,13 +99,13 @@ $string['printintro'] = 'Visualizza la descrizione della risorsa';
 $string['printintroexplain'] = 'Consente di visualizzare la descrizione della risorsa sotto il contenuto. Tenere presente che alcuni tipi di visualizzazione potrebbero non rispettare questa impostazione.';
 $string['privacy:metadata'] = 'Il plugin risorsa "File" non memorizza dati personali.';
 $string['resource:addinstance'] = 'Aggiungere risorse';
+$string['resource:exportresource'] = 'Esporta risorsa';
+$string['resource:view'] = 'Visualizza la risorsa';
 $string['resourcecontent'] = 'File e sotto cartelle';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'Esporta risorsa';
-$string['resource:view'] = 'Visualizza la risorsa';
 $string['search:activity'] = 'File';
 $string['selectmainfile'] = 'Per favore scegli il file primario facendo click sull\'icona accanto al nome del file';
 $string['showdate'] = 'Visualizza data di caricamento/modifica';

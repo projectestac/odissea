@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_generator', language 'eu', version '3.8'.
  *
- * @package   tool_generator
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_generator
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,8 +35,8 @@ Proba hau garrantzitsua da bizitza-errealeko egoeretan (1.000 jarduerako ikastar
 Erreminta honekin sortutako ikastaroek datu-basean eta fitxategi-sisteman tamaina handia har dezakete (dozenaka gigabyte). Espazio hori berreskuratzeko ikastaroak ezabatu beharko dituzu (eta hainbat garbiketa-zeregin exekutatu arte itxaron).
 
 **Ez erabili erreminta hau lanean dagoen sistema batean**. Erabili soilik garapenerako zerbitzarietan. (Istripuzko erabilerak ekiditeko, funtzio hau desgaituta dago GARATZAILEA arazketa-maila aukeratu ezean.)';
-$string['coursesize_0'] = 'XS (~10KB; ~ segundu batean sortua)';
-$string['coursesize_1'] = 'S (~10MB; ~30 segundutan sortua)';
+$string['coursesize_0'] = 'XS (~10KB; ~ segundo batean sortua)';
+$string['coursesize_1'] = 'S (~10MB; ~30 segundotan sortua)';
 $string['coursesize_2'] = 'M (~100MB; ~2 minututan sortua)';
 $string['coursesize_3'] = 'L (~1GB; ~30 minututan sortua)';
 $string['coursesize_4'] = 'XL (~10GB; ~2 ordutan sortua)';
@@ -64,7 +64,7 @@ $string['pluginname'] = 'Ausazko ikastaro-sortzailea';
 $string['privacy:metadata'] = 'Garapenerako datu-sortzailea pluginak ez du datu pertsonalik biltzen.';
 $string['progress_checkaccounts'] = '({$a}) erabiltzaile-kontuak egiaztatzen';
 $string['progress_coursecompleted'] = 'Ikastaroa osatu da ({$a}s)';
-$string['progress_createaccounts'] = 'Erabiltzaile-kontuak sortzen ({$a->from}-(e)tik {$a->to})-(e)ra';
+$string['progress_createaccounts'] = 'Erabiltzaile-kontuak sortzen ({$a->from}(e)tik {$a->to})(e)ra';
 $string['progress_createassignments'] = '({$a}) zereginak sortzen';
 $string['progress_createbigfiles'] = '({$a}) fitxategi handiak sortzen';
 $string['progress_createcourse'] = '{$a} ikastaroa sortzen';
@@ -79,7 +79,7 @@ $string['shortsize_2'] = 'M';
 $string['shortsize_3'] = 'L';
 $string['shortsize_4'] = 'XL';
 $string['shortsize_5'] = 'XXL';
-$string['sitesize_0'] = 'XS (~10MB; 3 ikastaro, ~30 segundutan sortuak)';
+$string['sitesize_0'] = 'XS (~10MB; 3 ikastaro, ~30 segundotan sortuak)';
 $string['sitesize_1'] = 'S (~50MB; 8 ikastaro, ~2 minututan sortuak)';
 $string['sitesize_2'] = 'M (~200MB; 73 ikastaro, ~10 minututan sortuak)';
 $string['sitesize_3'] = 'L (~1\'5GB; 277 ikastaro, ~1\'5 ordutan sortuak)';

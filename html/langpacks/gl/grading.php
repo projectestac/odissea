@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'gl', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,7 +52,7 @@ $string['manageactiondeleteconfirm'] = 'Vai eliminar o formulario de cualificaci
 * Esta operación non afecta ás copias eventuais deste formulario noutras actividades.';
 $string['manageactiondeletedone'] = 'O formulario foi eliminado correctamente';
 $string['manageactionedit'] = 'Editar a definición do formulario actual';
-$string['manageactionnew'] = 'Definir un novo formulario de cualificación desde cero';
+$string['manageactionnew'] = 'Definir un novo formulario de cualificación dende cero';
 $string['manageactionshare'] = 'Publicar o formulario como un modelo novo';
 $string['manageactionshareconfirm'] = 'Vai gardar unha copia do formulario de cualificación «{$a}» como modelo público novo. Outros usuarios do seu sitio seran quen de crear novas formas de cualificación nas súas actividades a partir dese modelo.';
 $string['manageactionsharedone'] = 'O formulario foi correctamente gardado como un modelo';
@@ -71,7 +71,6 @@ $string['privacy:metadata:grading_definitions:timecreated'] = 'O momento no que 
 $string['privacy:metadata:grading_definitions:timemodified'] = 'O momento no que se modificou por última vez a definición de cualificación.';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'O ID do usuario que creou a definición de cualificación';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'O ID do usuario que modificou por última vez a definición de cualificación';
-$string['privacy:metadata:gradingformpluginsummary'] = 'Datos para o método de cualificación.';
 $string['privacy:metadata:grading_instances'] = 'Rexistro de avaliación para un elemento cualificado avaliado por un cualificador.';
 $string['privacy:metadata:grading_instances:feedback'] = 'Os comentarios feitos polo usuario.';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'O formato de texto dos comentarios feitos polo usuario.';
@@ -79,6 +78,7 @@ $string['privacy:metadata:grading_instances:raterid'] = 'O ID do usuario que ava
 $string['privacy:metadata:grading_instances:rawgrade'] = 'A cualificación para a instancia de cualificación';
 $string['privacy:metadata:grading_instances:status'] = 'O estado desta instancia de cualificación';
 $string['privacy:metadata:grading_instances:timemodified'] = 'O momento no que se modificou por última vez a instancia de cualificación.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Datos para o método de cualificación.';
 $string['searchownforms'] = 'incluír os meus propios formularios';
 $string['searchtemplate'] = 'Busca de formularios de cualificación';
 $string['searchtemplate_help'] = 'Pode buscar un formulario de cualificación e utilizalo como modelo para dispor aquí dun novo formulario de cualificación. Simplemente escriba as palabras que deben aparecer nalgún lugar do nome do formulario, a súa descrición ou o corpo do formulario en si. Para buscar una frase, envolva toda a consulta entre comiñas dobres.
@@ -90,7 +90,7 @@ $string['templatedelete'] = 'Eliminar';
 $string['templatedeleteconfirm'] = 'Vai eliminar o modelo compartido «{$a}». A eliminación dun modelo non afecta aos formatos existentes que se crearon a partir del.';
 $string['templateedit'] = 'Editar';
 $string['templatepick'] = 'Empregar este modelo';
-$string['templatepickconfirm'] = 'Quere empregar o formulario de cualificación «{$a->formname}»  como un modelo para o novo formulario de cualificación en «{$a->component} ({$a->area})»?';
+$string['templatepickconfirm'] = 'Quere empregar o formulario de cualificación «{$a->formname}» como un modelo para o novo formulario de cualificación en «{$a->component} ({$a->area})»?';
 $string['templatepickownform'] = 'Empregar este formulario como un modelo';
 $string['templatesource'] = 'Localización: {$a->component} ({$a->area})';
 $string['templatetypeown'] = 'Formulario propio';

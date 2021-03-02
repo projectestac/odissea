@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth', language 'de', version '3.8'.
  *
- * @package   auth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actauthhdr'] = 'Aktive Plugins zur Authentifizierung';
+$string['actauthhdr'] = 'Verfügbare Plugins zur Authentifizierung';
 $string['allowaccountssameemail'] = 'Nutzerkonten mit gleicher E-Mail-Adresse erlauben';
-$string['allowaccountssameemail_desc'] = 'Wenn diese Option aktiviert ist, können mehrere Nutzerkonten die gleiche E-Mail-Adresse verwenden. Dies könnte Probleme hinsichtlich Sicherheit oder Privatsphäre entstehen lassen, z.B. bei der Bestätigungsnachricht zur Kennwortänderung.';
+$string['allowaccountssameemail_desc'] = 'Wenn diese Option aktiviert ist, können mehrere Nutzerkonten die gleiche E-Mail-Adresse verwenden. Probleme hinsichtlich Sicherheit oder Datenschutz könnten entstehen, wenn z.B. eine Bestätigungsmitteilung zur Kennwortänderung versendet wird.';
 $string['alternatelogin'] = 'Bei der Eingabe einer URL wird diese als alternative Login-Seite verwandt. Die Seite sollte ein Formular enthalten, dessen Aktionsfunktion auf <strong>\'{$a}\'</strong> gesetzt ist und außerdem Eingabefelder für den <strong>Anmeldenamen</strong> und das <strong>Kennwort</strong> zurück liefert.<br />Seien Sie sehr sorgfältig bei der Eingabe der URL, denn mit einer falschen URL schließen Sie sich vom Zugriff zur Website aus.<br />Lassen Sie das Feld leer, um die Standard-Anmeldeseite zu verwenden.';
 $string['alternateloginurl'] = 'URL für alternatives Login';
 $string['auth_changepasswordhelp'] = 'Hilfe zur Kennwortänderung';
@@ -37,17 +37,13 @@ $string['auth_changepasswordurl_expl'] = 'Tragen Sie hier eine URL ein, unter de
 $string['auth_changingemailaddress'] = 'Sie möchten Ihre E-Mail-Adresse von {$a->oldemail} nach {$a->newemail} ändern. Aus Sicherheitsgründen wird eine Nachricht an Ihre neue E-Mail-Adresse gesendet. Ihre E-Mail-Adresse wird erst geändert, wenn Sie die in der Nachricht enthaltene URL aufrufen und damit die Änderung bestätigen.';
 $string['auth_common_settings'] = 'Allgemein';
 $string['auth_data_mapping'] = 'Datenzuordnung';
-$string['authenticationoptions'] = 'Authentifizierungsoptionen';
 $string['auth_fieldlock'] = 'Feld sperren';
 $string['auth_fieldlock_expl'] = '<p><b>Feld sperren:</b> Wenn diese Option aktiviert ist, verhindert Moodle die Änderung des Feldinhalts. Dies ist sinnvoll, wenn die Daten in einer externen Datenbank verwaltet werden. </p>';
 $string['auth_fieldlockfield'] = 'Feld sperren ({$a})';
 $string['auth_fieldlocks'] = 'Nutzerdatenfelder sperren';
 $string['auth_fieldlocks_help'] = '<p>Sie können Datenfelder im Nutzerprofil sperren. Dies ist sinnvoll, wenn die Nutzerdaten von Administrator/innen gepflegt werden, manuell angelegt oder im Bulkupload (Hochladen über Textdatei) hochgeladen werden. Falls Sie von Moodle benötigte Datenfelder sperren, müssen Sie sicherstellen, dass diese Datenfelder beim Anlegen der Nutzerprofile sinnvoll belegt werden.</p><p>Um Probleme zu vermeiden, achten Sie darauf, dass die Einstellung auf "Bearbeitbar (wenn leer)" gesetzt ist.</p>';
 $string['auth_fieldmapping'] = 'Daten übernehmen ({$a})';
-$string['authinstructions'] = 'Wenn dieses Textfeld leer ist, wird auf der Anmeldeseite der Standardtext angezeigt. Falls Sie eine eigene Anleitung anbieten möchten, welche Anmeldenamen und Kennwörter verwendet werden sollen, schreiben Sie hier Ihren Text.';
-$string['auth_invalidnewemailkey'] = 'Fehler: Falls Sie versuchen, die Änderung Ihrer E-Mail-Adresse zu bestätigen, haben Sie eventuell einen Fehler beim Kopieren der zugesandten URL gemacht. Bitte kopieren Sie die URL noch einmal und versuchen es erneut.';
-$string['authloginviaemail'] = 'Anmeldung mit E-Mail erlauben';
-$string['authloginviaemail_desc'] = 'Nutzer/innen erlauben, sich mit dem Anmeldenamen oder mit der E-Mail-Adresse anzumelden, falls die E-Mail-Adresse eindeutig ist.';
+$string['auth_invalidnewemailkey'] = 'Fehler: Falls Sie gerade versuchen, die Änderung Ihrer E-Mail-Adresse zu bestätigen, haben Sie eventuell einen Fehler beim Kopieren der zugesandten URL gemacht. Kopieren Sie die URL noch einmal und versuchen Sie es erneut.';
 $string['auth_multiplehosts'] = 'Mehrere Adressen können angegeben werden (z.B. host1.com;host2.de;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'Die Authentifizierung ‘{$a}\' ist nicht konfiguriert.';
 $string['auth_outofnewemailupdateattempts'] = 'Sie haben die zulässige Zahl von Versuchen überschritten, Ihre E-Mail-Adresse zu ändern. Der Änderungsvorgang wurde abgebrochen.';
@@ -57,7 +53,7 @@ $string['auth_remove_delete'] = 'Intern löschen';
 $string['auth_remove_keep'] = 'Nur intern zugänglich';
 $string['auth_remove_suspend'] = 'Intern sperren';
 $string['auth_remove_user'] = 'Legen Sie fest, was mit einem internen Nutzerprofil passieren soll, wenn bei einer Massensynchronisierung dieser Account im externen System entfernt wurde.  Nur gesperrte Nutzer werden automatisch reaktiviert, wenn sie in der externen Quelle wieder erscheinen.';
-$string['auth_remove_user_key'] = 'Entfernte externe Nutzer';
+$string['auth_remove_user_key'] = 'Entfernte externe Nutzer/innen';
 $string['auth_sync_script'] = 'Synchronisierung von Nutzerkonten';
 $string['auth_sync_suspended'] = 'Die Option legt fest, dass das Ausblendemerkmal bei der Synchronisation von lokalen Nutzerkonten verwendet wird.';
 $string['auth_sync_suspended_key'] = 'Status von lokalen Nutzerkonten synchronisieren';
@@ -66,16 +62,20 @@ $string['auth_updatelocal_expl'] = '<p><b>Lokal aktualisieren:</b> Wenn diese Op
 $string['auth_updatelocalfield'] = 'Lokal aktualisieren ({$a})';
 $string['auth_updateremote'] = 'Extern aktualisieren';
 $string['auth_updateremote_expl'] = '<p><b>Extern aktualisieren:</b> Wenn diese Option aktiviert ist, wird die externe Datenbank aktualisiert, sobald der Nutzerdatensatz aktualisiert wird. Die Felder sollten bearbeitbar bleiben, um Datenänderungen zuzulassen.</p>';
-$string['auth_updateremotefield'] = 'Extern aktualisieren ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Anmerkung:</b> Das Update externer LDAP-Daten erfordert die Einstellung \'binddn\' und \'bindpw\' für einen Bind-Nutzer mit Schreibrechten für alle Nutzerdatensätze. Aktuell werden mehrfach gesetzte Eigenschaften nicht unterstützt und die zusätzlichen Werte bei einem Update entfernt.</p>';
+$string['auth_updateremotefield'] = 'Extern aktualisieren ({$a})';
 $string['auth_user_create'] = 'Nutzererstellung aktivieren';
 $string['auth_user_creation'] = 'Neue (anonyme) Nutzer können Nutzerkonten außerhalb der Authentifizierungsquelle erstellen und per E-Mail bestätigen. Wenn Sie diese Option aktivieren, müssen Sie außerdem modulspezifische Optionen zur Erstellung neuer Nutzerkonten konfigurieren.';
-$string['auth_usernameexists'] = 'Der Anwendername existiert bereits. Bitte ändern Sie Ihre Eingabe.';
+$string['auth_usernameexists'] = 'Der Anwendername ist bereits vergeben. Wählen Sie einen anderen Namen.';
 $string['auth_usernotexist'] = 'Nicht existierender Nutzer {$a} kann nicht aktualisiert werden';
-$string['auto_add_remote_users'] = 'Automatisches Hinzufügen externer Nutzer';
+$string['authenticationoptions'] = 'Authentifizierungsoptionen';
+$string['authinstructions'] = 'Wenn dieses Textfeld leer ist, wird auf der Anmeldeseite der Standardtext angezeigt. Falls Sie eine eigene Anleitung anbieten möchten, welche Anmeldenamen und Kennwörter verwendet werden sollen, schreiben Sie hier Ihren Text.';
+$string['authloginviaemail'] = 'Anmeldung mit E-Mail erlauben';
+$string['authloginviaemail_desc'] = 'Nutzer/innen erlauben, sich mit dem Anmeldenamen oder mit der E-Mail-Adresse anzumelden, falls die E-Mail-Adresse eindeutig ist.';
+$string['auto_add_remote_users'] = 'Automatisches Hinzufügen externer Nutzer/innen';
 $string['cannotmapfield'] = 'Das Profilfeld \'{$a->fieldname}\' kann nicht zugeordnet werden, da sein Kurzname \'{$a->shortname}\' zu lang ist. Um die Zuordnung aktivieren zu können, darf der Kurzname des Profilfelds nur {$a->charlimit} Zeichen haben. <a href="{$a->link}">Profilfelder bearbeiten</a>';
 $string['changepassword'] = 'URL zur Kennwortänderung';
-$string['changepasswordhelp'] = 'Hier können Sie eine Adresse angeben, über die die Nutzer ihren Anmeldenamen erfahren und ihr Kennwort zurücksetzen können, sofern sie diese Daten vergessen haben. Diese Option wird als Schaltfläche auf der Anmeldungsseite angeboten. Wenn Sie dieses Feld leer lassen, wird die Option nicht angeboten.';
+$string['changepasswordhelp'] = 'Hier können Sie eine Adresse angeben, über die die Nutzer/innen ihren Anmeldenamen erfahren und ihr Kennwort zurücksetzen können, wenn sie ihre Daten vergessen haben. Diese Option wird auf der Anmeldungsseite angezeigt. Wenn Sie dieses Feld leer lassen, wird die Option nicht angeboten.';
 $string['chooseauthmethod'] = 'Authentifizierung';
 $string['chooseauthmethod_help'] = 'Diese Einstellung legt die Authentifizierung für das Nutzerkonto fest. Falls Sie hier eine deaktivierte Authentifizierung auswählen, kann sich diese Person nicht mehr anmelden. Um ein Nutzerkonto vorübergehend zu sperren, wählen Sie die Authentifizierung "Kein Login".';
 $string['createpassword'] = 'Kennwort erzeugen und Nutzer/in benachrichtigen';
@@ -103,12 +103,12 @@ $string['errorminpasswordnonalphanum'] = 'Kennwörter müssen mindestens {$a} So
 $string['errorminpasswordupper'] = 'Kennwörter müssen mindestens {$a} Großbuchstaben enthalten.';
 $string['errorpasswordreused'] = 'Dieses Kennwort wurde bereits benutzt und kann nicht erneut verwendet werden.';
 $string['errorpasswordupdate'] = 'Fehler: Kennwort konnte nicht geändert werden!';
-$string['eventuserloggedin'] = 'Nutzer/in ist angemeldet';
+$string['eventuserloggedin'] = 'Nutzer/in angemeldet';
 $string['eventuserloggedinas'] = 'Nutzer/in ist als andere Person angemeldet';
 $string['eventuserloginfailed'] = 'Nutzeranmeldung fehlgeschlagen';
 $string['forcechangepassword'] = 'Kennwortänderung fordern';
-$string['forcechangepasswordfirst_help'] = 'Nutzer/innen werden aufgefordert, ihr Kennwort beim ersten Anmelden zu ändern.';
 $string['forcechangepassword_help'] = 'Nutzer/innen werden aufgefordert, ihr Kennwort beim nächsten Anmelden zu ändern.';
+$string['forcechangepasswordfirst_help'] = 'Nutzer/innen werden aufgefordert, ihr Kennwort beim ersten Anmelden zu ändern.';
 $string['forgottenpassword'] = 'Wenn hier eine URL eintragen ist, wird eine Anfrage zur Kennwortrücksetzung zur angegebenen Adresse weitergeleitet, z.B. wenn die Kennwörter außerhalb von Moodle verwaltet werden. Lassen Sie das Feld leer, damit die Moodle-Standardfunktion für diesen Zweck verwendet wird.';
 $string['forgottenpasswordurl'] = 'URL für vergessene Kennwörter';
 $string['getrecaptchaapi'] = 'Um reCAPTCHA verwenden zu können, müssen Sie einen API-Schlüssel von <a href=\'https://www.google.com/recaptcha/admin\'> https://www.google.com/recaptcha/admin</a> anfordern.';
@@ -127,7 +127,7 @@ $string['internal'] = 'Intern';
 $string['limitconcurrentlogins'] = 'Gleichzeitige Anmeldungen begrenzen';
 $string['limitconcurrentlogins_desc'] = 'Wenn diese Option aktiviert ist, wird die Anzahl der Anmeldungen für jeden Benutzer eingeschränkt. Die älteste Sitzung wird beim Erreichen der Grenze beendet, alle nicht gespeicherten Daten gehen verloren. Diese Einstellung ist nicht mit einer Authentifizierung über Single-Sign-On (SSO) kompatibel.';
 $string['locked'] = 'Gesperrt';
-$string['md5'] = 'MD5-Verschlüsselung';
+$string['md5'] = 'MD5-Hash';
 $string['nopasswordchange'] = 'Kennwort kann nicht geändert werden';
 $string['nopasswordchangeforced'] = 'Ohne die Änderung des Kennworts können Sie nicht weitermachen. Falls die Seite zur Änderung des Kennworts nicht verfügbar ist, wenden Sie sich an Administrator/innen der Website.';
 $string['noprofileedit'] = 'Das Profil darf nicht bearbeitet werden';
@@ -158,7 +158,7 @@ $string['settingmigrationmismatch'] = 'Fehlende Übereinstimmungen, die bei der 
 $string['sha1'] = 'SHA-1 hash';
 $string['showguestlogin'] = 'Sie können auf der Anmeldeseite die Taste zum Gast-Login anzeigen oder verbergen. Wenn die Taste verborgen ist, ist ein Gast-Login für die Website nicht erlaubt.';
 $string['stdchangepassword'] = 'Standardseite zur Kennwortänderung nutzen';
-$string['stdchangepassword_expl'] = 'Stellen Sie \'Ja\' ein, wenn das externe Authentifizierungssystem eine Änderung des Kennwortes durch Moodle zulässt. Die Einstellungen überschreiben \'URL zur Kennwortänderung\'';
+$string['stdchangepassword_expl'] = 'Stellen Sie diese Option auf \'Ja\', wenn das externe Authentifizierungssystem eine Änderung des Kennwortes durch Moodle zulässt. Die Einstellungen überschreiben \'URL zur Kennwortänderung\'';
 $string['stdchangepassword_explldap'] = 'Warnung: LDAP sollte unbedingt SSL-verschlüsselt sein (ldaps://), wenn der LDAP-Server extern betrieben wird.';
 $string['suspended'] = 'Gesperrtes Nutzerkonto';
 $string['suspended_help'] = 'Gesperrte Nutzer/innen können sich nicht einloggen und auch keine Webservices benutzen. Alle ausgehenden Mitteilungen werden gelöscht.';

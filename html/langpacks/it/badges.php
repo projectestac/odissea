@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'it', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['activatesuccess'] = 'L\'accesso al badge è stato attivato correttament
 $string['addalignment'] = 'Aggiungi standard o abilità esterno';
 $string['addbackpack'] = 'Aggiungi backpack';
 $string['addbadge'] = 'Aggiungi badge';
-$string['addbadgecriteria'] = 'Aggiungi criterio';
 $string['addbadge_help'] = 'Seleziona i badge da aggiungere come criterio. Tenere premuto il pulsante CTRL per selezionare più badge.';
+$string['addbadgecriteria'] = 'Aggiungi criterio';
 $string['addcohort'] = 'Aggiungi gruppo globale';
 $string['addcohort_help'] = 'Seleziona i gruppi globali che consentono di conseguire questo badge. Tieni premuto il tasto CTRL per selezionare più gruppi globali.';
 $string['addcompetency'] = 'Aggiungi competenza';
@@ -102,9 +102,9 @@ $string['backpackbadgessettings'] = 'Modifica impostazioni backpack';
 $string['backpackbadgessummary'] = 'Sono visualizzati {$a->totalbadges} badge provenienti da {$a->totalcollections} raccolte.';
 $string['backpackcannotsendverification'] = 'Non è stato possibile inviare l\'email di verifica';
 $string['backpackconnection'] = 'Collegamento backpack';
+$string['backpackconnection_help'] = 'Il collegamento al backpack consente di caricare i badge conseguiti in questo sito. Potrai anche scegliere di visualizzare raccolte pubbliche di badge presenti nel tuo backpack.';
 $string['backpackconnectioncancelattempt'] = 'Collegati utilizzando un indirizzo email diverso';
 $string['backpackconnectionconnect'] = 'Collegati al backpack';
-$string['backpackconnection_help'] = 'Il collegamento al backpack consente di caricare i badge conseguiti in questo sito. Potrai anche scegliere di visualizzare raccolte pubbliche di badge presenti nel tuo backpack.';
 $string['backpackconnectionnottested'] = 'Non è possibile testare il collegamento con il backpack poiché solo i backpack Open Badges v2.0 lo supportano il test.';
 $string['backpackconnectionok'] = 'Il collegamento con il backpack è avvenuto correttamente';
 $string['backpackconnectionresendemail'] = 'Invia nuovamente l\'email di verifica';
@@ -174,7 +174,7 @@ $string['brelated'] = 'Badge correlato: ({$a})';
 $string['bydate'] = 'Da completare entro';
 $string['claim'] = 'Verifica';
 $string['claimcomment'] = 'Commento della garanzia di terzi';
-$string['claimid'] = 'URL di verifica';
+$string['claimid'] = 'URL della garanzia di terzi';
 $string['clearsettings'] = 'Elimina impostazioni';
 $string['completioninfo'] = 'Il badge è stato rilasciato a valle del completamento di:';
 $string['completionnotenabled'] = 'In questo corso il completamento non è abilitato e pertanto non è possibile utilizzare il completamento del corso come criterio di conseguimento del badge. E\' possibile abilitare il completamento nelle impostazioni del corso.';
@@ -212,8 +212,6 @@ $string['criteria_8'] = 'Appartenenza a gruppi globali';
 $string['criteria_8_help'] = 'Il badge sarà rilasciato sulla base dell\'appartenenza a gruppi globali';
 $string['criteria_9'] = 'Competenze';
 $string['criteria_9_help'] = 'Il badge sarà rilasciato sulla base del raggiungimento dei competenze.';
-$string['criteriacreated'] = 'I criteri per il badge sono stati creati correttamente';
-$string['criteriadeleted'] = 'I criteri per il badge sono stati eliminati correttamente';
 $string['criteria_descr'] = 'Gli utenti conseguono il badge al soddisfacimento dei requisti elencati:';
 $string['criteria_descr_0'] = 'Gli utenti conseguono il badge se i requisiti elencati (<strong>{$a}</strong>) sono soddisfatti';
 $string['criteria_descr_1'] = 'Le seguenti attività devono essere completate (<strong>{$a}</strong>):';
@@ -251,6 +249,8 @@ $string['criteria_descr_single_short6'] = 'Completare:';
 $string['criteria_descr_single_short7'] = 'Completare:';
 $string['criteria_descr_single_short8'] = 'Appartenenza a:';
 $string['criteria_descr_single_short9'] = 'Completare:';
+$string['criteriacreated'] = 'I criteri per il badge sono stati creati correttamente';
+$string['criteriadeleted'] = 'I criteri per il badge sono stati eliminati correttamente';
 $string['criteriasummary'] = 'Sintesi dei criteri';
 $string['criteriaupdated'] = 'I criteri per il badge sono stati aggiornati correttamente';
 $string['criterror'] = 'Problematiche sui parametri';
@@ -531,7 +531,7 @@ $string['statusmessage_0'] = 'Il badge non è disponibile agli utenti. Se deside
 $string['statusmessage_1'] = 'Il badge è disponibile agli utenti. Per modificarlo, devi disabilitarne l\'accesso.';
 $string['statusmessage_2'] = 'Il badge non è disponibile agli utenti e i criteri per conseguirlo sono bloccati. Se desideri che gli utenti possano conseguire il badge, devi abilitarne l\'accesso.';
 $string['statusmessage_3'] = 'Il badge è disponibile agli utenti e i criteri per conseguirlo sono bloccati.';
-$string['statusmessage_4'] = 'Questo badge al momento è archiviato';
+$string['statusmessage_4'] = 'Questo badge al momento è archiviato.';
 $string['subject'] = 'Oggetto del messaggio';
 $string['targetcode'] = 'Codice';
 $string['targetcode_help'] = 'Identificativo univoco dello standard o dell\'abilità definito esternamente, all\'interno del proprio quadro.';

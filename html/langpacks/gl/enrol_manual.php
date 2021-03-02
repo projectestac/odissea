@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'gl', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['advanced'] = 'Avanzado';
-$string['alterstatus'] = 'Mudar o estado';
+$string['alterstatus'] = 'Cambiar o estado';
 $string['altertimeend'] = 'Cambiar a hora de remate';
 $string['altertimestart'] = 'Mudar a hora de inicio';
 $string['assignrole'] = 'Asignar rol';
@@ -60,13 +60,13 @@ $string['expirymessageenrollersubject'] = 'Notificación de expiración da matri
 $string['manual:config'] = 'Configurar instancias de matriculación manual';
 $string['manual:enrol'] = 'Matricular usuarios';
 $string['manual:manage'] = 'Xestionar matriculacións de usuarios';
-$string['manualpluginnotinstalled'] = 'O engadido «Manual» aínda non foi instalado';
 $string['manual:unenrol'] = 'Desmatricular usuarios do curso';
 $string['manual:unenrolself'] = 'Desmatricularse do curso';
+$string['manualpluginnotinstalled'] = 'O engadido «Manual» aínda non foi instalado';
 $string['messageprovider:expiry_notification'] = 'Notificacións de expiración da matriculación';
 $string['now'] = 'Agora';
 $string['pluginname'] = 'Matriculacións manuais';
-$string['pluginname_desc'] = 'O engadido de matriculación manual permítelles aos usuarios seren manualmente matriculados por medio dunha ligazón na configuración da administración do curso, por un usuario cos permisos adecuados, como pode ser un profesor. O engadido xa debería estar activado normalmente, xa que outros engadidos de matriculación, como o de automatriculación o requiren.';
+$string['pluginname_desc'] = 'O engadido de matriculación manual permítelles aos usuarios seren matriculados manualmente por medio dunha ligazón na configuración da administración do curso, por un usuario cos permisos adecuados, como pode ser un profesor. O engadido xa debería estar activado normalmente, xa que outros engadidos de matriculación, como o de automatriculación o requiren.';
 $string['privacy:metadata'] = 'O engadido de matriculacións manuais non almacena ningún dato persoal.';
 $string['selectcohorts'] = 'Escoller círculos';
 $string['selection'] = 'Selección';
@@ -74,10 +74,10 @@ $string['selectusers'] = 'Escoller usuarios';
 $string['sendexpirynotificationstask'] = 'Tarefas de enviar notificacións de expiración da matriculación manual';
 $string['status'] = 'Activar as matriculacións manuais';
 $string['status_desc'] = 'Permitirlle acceso ao curso aos usuarios internamente matriculados. Isto debería permanecer activado na maioría dos casos.';
+$string['status_help'] = 'Este axuste determina cando os usuarios poden ser matriculados manualmente, ben mediante unha ligazón nos axustes da administración do curso, ben mediante un usuario cos permisos apropiados como pode ser un profesor.';
 $string['statusdisabled'] = 'Desactivado';
 $string['statusenabled'] = 'Activado';
-$string['status_help'] = 'Este axuste determina cando os usuarios poden ser matriculados manualmente, ben mediante unha ligazón na configuración da administración do curso, ben mediante un usuario cos permisos apropiados como pode ser un profesor.';
-$string['syncenrolmentstask'] = 'A matriculación manual sincroniza a tarefa de inscrición';
+$string['syncenrolmentstask'] = 'Sincronizar as tarefas de matriculación manual';
 $string['unenrol'] = 'Desmatricular o usuario';
 $string['unenrolselectedusers'] = 'Desmatricular os usuarios seleccionados';
 $string['unenrolselfconfirm'] = 'Confirma que quere desmatricularse a si mesmo do curso «{$a}»?';

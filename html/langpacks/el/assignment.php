@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,26 +12,27 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignment', language 'el', version '3.8'.
  *
- * @package   assignment
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignment
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignment:addinstance'] = 'Προσθήκη νέας εργασίας';
-$string['assignmentdisabled'] = 'Η δραστηριότητα παλαιότερης έκδοσης «Εργασία 2.2» είναι απενεργοποιημένη.';
 $string['assignment:exportownsubmission'] = 'Εξαγωγή της δικής σας υποβολής';
 $string['assignment:exportsubmission'] = 'Εξαγωγή υποβολής';
 $string['assignment:grade'] = 'Βαθμός εργασίας';
-$string['assignmentneedsupgrade'] = 'Η δραστηριότητα παλαιότερης έκδοσης «Εργασία 2.2» έχει διαγραφεί.';
 $string['assignment:submit'] = 'Υποβολή εργασίας';
 $string['assignment:view'] = 'Εμφάνιση εργασίας';
+$string['assignmentdisabled'] = 'Η δραστηριότητα παλαιότερης έκδοσης «Εργασία 2.2» είναι απενεργοποιημένη.';
+$string['assignmentneedsupgrade'] = 'Η δραστηριότητα παλαιότερης έκδοσης «Εργασία 2.2» έχει διαγραφεί.';
 $string['messageprovider:assignment_updates'] = 'Ειδοποιήσεις ανάθεσης (έκδοσης 2.2 & μετά)';
 $string['modulename'] = 'Εργασία 2.2 (Απενεργοποιημένη)';
 $string['modulename_help'] = 'Άρθρωμα δραστηριότητας παλαιότερης έκδοσης που έχει αφαιρεθεί από το Moodle.';
@@ -43,10 +43,6 @@ $string['page-mod-assignment-x'] = 'Οποιαδήποτε σελίδα αρθρ
 $string['pluginadministration'] = 'Διαχείριση ανάθεσης (εργασίας) 2.2 (Απενεργοποιημένο)';
 $string['pluginname'] = 'Ανάθεση (εργασίας) 2.2 (Απενεργοποιημένο)';
 $string['privacy:markedsubmissionspath'] = 'ΒαθμολογημένεςΥποβολές';
-$string['privacy:metadata:assignmentfilter'] = 'Προτίμηση φίλτρου υποβολής εργασίας.';
-$string['privacy:metadata:assignmentmailinfo'] = 'Προτιμήσεις πληροφοριών ηλε.ταχυδρομείου για υποβολές εργασίας.';
-$string['privacy:metadata:assignmentperpage'] = 'Προτίμηση αριθμού υποβολών εργασιών ανά προβολή σελίδας.';
-$string['privacy:metadata:assignmentquickgrade'] = 'Προτίμηση γρήγορης βαθμολόγησης για υποβολές εργασιών.';
 $string['privacy:metadata:assignment_submissions'] = 'Υποβολές εργασιών που σχετίζονται με μια ανάθεση (εργασίας).';
 $string['privacy:metadata:assignment_submissions:data1'] = 'Το κείμενο εντός σύνδεσης που υποβλήθηκε για την υποβολή εργασίας.';
 $string['privacy:metadata:assignment_submissions:data2'] = 'Η κατάσταση παρακολούθησης για την υποβολή εργασίας.';
@@ -59,5 +55,9 @@ $string['privacy:metadata:assignment_submissions:timecreated'] = 'Η ημερο�
 $string['privacy:metadata:assignment_submissions:timemarked'] = 'Η ημερομηνία/ώρα βαθμολόγησης της υποβολής εργασίας.';
 $string['privacy:metadata:assignment_submissions:timemodified'] = 'Η ημερομηνία/ώρα τροποποίησης της υποβολής εργασίας.';
 $string['privacy:metadata:assignment_submissions:userid'] = 'Το αναγνωριστικό χρήστη που υποβάλλει την εργασία.';
+$string['privacy:metadata:assignmentfilter'] = 'Προτίμηση φίλτρου υποβολής εργασίας.';
+$string['privacy:metadata:assignmentmailinfo'] = 'Προτιμήσεις πληροφοριών ηλε.ταχυδρομείου για υποβολές εργασίας.';
+$string['privacy:metadata:assignmentperpage'] = 'Προτίμηση αριθμού υποβολών εργασιών ανά προβολή σελίδας.';
+$string['privacy:metadata:assignmentquickgrade'] = 'Προτίμηση γρήγορης βαθμολόγησης για υποβολές εργασιών.';
 $string['privacy:submissionpath'] = 'υποβολή';
 $string['upgradenotification'] = 'Αυτή η δραστηριότητα βασίζεται σε ένα παλαιότερο άρθρωμα ανάθεσης.';

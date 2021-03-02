@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'course', language 'de', version '3.8'.
  *
- * @package   course
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     course
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,11 +37,11 @@ $string['coursetoolong'] = 'Der Kurs ist zu lang';
 $string['customfield_islocked'] = 'Gesperrt';
 $string['customfield_islocked_help'] = 'Wenn das Feld gesperrt ist, können nur Personen, die gesperrte Kursfelder ändern dürfen, dies in den Kurseinstellungen ändern. Dies sind zunächst ausschließlich Personen mit der Rolle Manager/in.';
 $string['customfield_notvisible'] = 'Niemand';
-$string['customfieldsettings'] = 'Einstellungen für Kursfelder';
 $string['customfield_visibility'] = 'Sichtbar für';
 $string['customfield_visibility_help'] = 'Diese Einstellung legt fest, wer den Namen und den Wert des benutzerdefinierten Feldes in der Kursliste oder im Feldfilter des Dashboards anzeigen kann.';
 $string['customfield_visibletoall'] = 'Alle';
 $string['customfield_visibletoteachers'] = 'Trainer/innen';
+$string['customfieldsettings'] = 'Einstellungen für Kursfelder';
 $string['errorendbeforestart'] = 'Das Enddatum  ({$a})  liegt vor dem Anfangsdatum.';
 $string['favourite'] = 'Favorisierte Kurse';
 $string['gradetopassnotset'] = 'Für diesen Kurs ist keine Bewertung festgelegt, die bestanden werden muss. Dies kann im Bewertungselement des Kurses festgelegt werden (Bewertungseinstellungen).';
@@ -71,6 +71,15 @@ $string['target:coursedropout'] = 'Teilnehmer/innen, die Gefahr laufen, aus dem 
 $string['target:coursedropout_help'] = 'Dieses Ziel beschreibt, ob eine Person Gefahr läuft, auszusteigen.';
 $string['target:coursegradetopass'] = 'Teilnehmer/innen, die Gefahr laufen, die Mindestnote für das Bestehen des Kurses nicht zu erreichen.';
 $string['target:coursegradetopass_help'] = 'Dieses Ziel beschreibt, ob eine Person Gefahr läuft, die Mindestnote für das Bestehen des Kurses nicht zu erreichen.';
+$string['target:noaccesssincecoursestart'] = 'Teilnehmer/innen, die bislang noch nicht im Kurs waren';
+$string['target:noaccesssincecoursestart_help'] = 'Dieses Ziel beschreibt Teilnehmer/innen, die noch nie auf einen Kurs zugegriffen haben, obwohl eingeschrieben sind.';
+$string['target:noaccesssincecoursestartinfo'] = 'Die folgenden Teilnehmer/innen sind in einen laufenden Kurs eingeschrieben, haben aber nie auf den Kurs zugegriffen.';
+$string['target:norecentaccesses'] = 'Teilnehmer/innen, die in letzter Zeit nicht auf den Kurs zugegriffen haben.';
+$string['target:norecentaccesses_help'] = 'Dieses Ziel beschreibt Teilnehmer/innen, die innerhalb des festgelegten Analyseintervalls noch nicht auf einen Kurs zugegriffen haben, obwohl sie eingeschrieben sind (Standard: im letzten Monat).';
+$string['target:norecentaccessesinfo'] = 'Teilnehmer/innen, die innerhalb des festgelegten Analyseintervalls noch nicht auf einen Kurs zugegriffen haben, obwohl sie eingeschrieben sind  (Standard: im letzten Monat).';
+$string['target:noteachingactivity'] = 'Kurse, bei denen die Gefahr besteht, dass sie nicht beginnen.';
+$string['target:noteachingactivity_help'] = 'Dieses Ziel beschreibt, ob  in Kursen, die in der kommenden Woche beginnen sollen, bereits Lernaktivitäten angelegt wurden.';
+$string['target:noteachingactivityinfo'] = 'Die folgenden Kurse, die in den kommenden Tagen beginnen sollen, laufen Gefahr, nicht zu beginnen, da keine Trainer/innen oder Teilnehmer/innen eingeschrieben sind.';
 $string['targetlabelstudentcompetenciesno'] = 'Teilnehmer/innen, die wahrscheinlich die einem Kurs zugeordneten Kompetenzen erreichen werden.';
 $string['targetlabelstudentcompetenciesyes'] = 'Teilnehmer/innen, die wahrscheinlich die einem Kurs zugeordneten Kompetenzen erreichen werden.';
 $string['targetlabelstudentcompletionno'] = 'Teilnehmer/innen, die wahrscheinlich die einem Kurs zugeordneten Kursabschlüsse erreichen werden.';
@@ -81,12 +90,3 @@ $string['targetlabelstudentgradetopassno'] = 'Teilnehmer/innen, die wahrscheinli
 $string['targetlabelstudentgradetopassyes'] = 'Teilnehmer/innen, die Gefahr laufen, die Mindestnote für das Bestehen des Kurses nicht zu erreichen.';
 $string['targetlabelteachingno'] = 'Kurse, bei denen die Gefahr besteht, dass sie nicht beginnen';
 $string['targetlabelteachingyes'] = 'Nutzer/innen mit Trainerrechten, die Zugang zum Kurs haben';
-$string['target:noaccesssincecoursestart'] = 'Teilnehmer/innen, die bislang noch nicht im Kurs waren';
-$string['target:noaccesssincecoursestart_help'] = 'Dieses Ziel beschreibt Teilnehmer/innen, die noch nie auf einen Kurs zugegriffen haben, obwohl eingeschrieben sind.';
-$string['target:noaccesssincecoursestartinfo'] = 'Die folgenden Teilnehmer/innen sind in einen laufenden Kurs eingeschrieben, haben aber nie auf den Kurs zugegriffen.';
-$string['target:norecentaccesses'] = 'Teilnehmer/innen, die in letzter Zeit nicht auf den Kurs zugegriffen haben.';
-$string['target:norecentaccesses_help'] = 'Dieses Ziel beschreibt Teilnehmer/innen, die innerhalb des festgelegten Analyseintervalls noch nicht auf einen Kurs zugegriffen haben, obwohl sie eingeschrieben sind (Standard: im letzten Monat).';
-$string['target:norecentaccessesinfo'] = 'Teilnehmer/innen, die innerhalb des festgelegten Analyseintervalls noch nicht auf einen Kurs zugegriffen haben, obwohl sie eingeschrieben sind  (Standard: im letzten Monat).';
-$string['target:noteachingactivity'] = 'Kurse, bei denen die Gefahr besteht, dass sie nicht beginnen.';
-$string['target:noteachingactivity_help'] = 'Dieses Ziel beschreibt, ob  in Kursen, die in der kommenden Woche beginnen sollen, bereits Lernaktivitäten angelegt wurden.';
-$string['target:noteachingactivityinfo'] = 'Die folgenden Kurse, die in den kommenden Tagen beginnen sollen, laufen Gefahr, nicht zu beginnen, da keine Trainer/innen oder Teilnehmer/innen eingeschrieben sind.';

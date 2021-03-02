@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_match', language 'es', version '3.8'.
  *
- * @package   qtype_match
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_match
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,10 +37,9 @@ $string['notenoughqsandas'] = 'Debe suministrar al menos {$a->q} preguntas y {$a
 $string['notenoughquestions'] = 'Debe suministrar al menos {$a} pares de preguntas y respuestas.';
 $string['pleaseananswerallparts'] = 'Por favor, responda a todas las partes de la pregunta.';
 $string['pluginname'] = 'Emparejamiento';
+$string['pluginname_help'] = 'Las preguntas de emparejamiento requieren para su resolución que se establezcan de forma correcta las relaciones entre una lista de nombres o enunciados (preguntas) y otra lista de nombres o enunciados (respuestas).';
 $string['pluginnameadding'] = 'Agregando una pregunta de emparejamiento';
 $string['pluginnameediting'] = 'Editando una pregunta de emparejamiento';
-$string['pluginname_help'] = 'Las preguntas de emparejamiento requieren para su resolución que se establezcan de forma correcta las relaciones entre una lista de nombres o enunciados (preguntas) y otra lista de nombres o enunciados (respuestas).';
 $string['pluginnamesummary'] = 'La respuesta a cada una de las sub-preguntas debe seleccionarse a partir de una lista de posibilidades.';
 $string['shuffle'] = 'Barajar';
-$string['shuffle_help'] = '<p>Si selecciona la opción "Sí", el orden de las sub-preguntas se elaborará al azar cada vez que el estudiante intenta contestar el cuestionario que contiene esta pregunta, suponiendo que la opcion "Ordenar al azar" en los ajustes del cuestionario sea "Sí".</p>
-';
+$string['shuffle_help'] = 'Si está habilitado, el orden de los elementos (respuestas) se elaborará al azar en cada intento, siempre que suponiendo que la opcion "Ordenar al azar" en los ajustes del cuestionario este también habilitada.';

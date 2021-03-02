@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'el', version '3.8'.
  *
- * @package   tool_uploadcourse
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploadcourse
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -119,8 +119,8 @@ $string['templatefile_help'] = 'Επιλέξτε ένα αρχείο που θα
 $string['unknownimportmode'] = 'Άγνωστη λειτουργία εισαγωγής';
 $string['updatemissing'] = 'Συμπληρώστε τα στοιχεία που λείπουν από τα δεδομένα CSV και τις προεπιλογές';
 $string['updatemode'] = 'Τρόπος ενημέρωσης';
-$string['updatemodedoessettonothing'] = 'Ο τρόπος ενημέρωσης δεν επιτρέπει καμία ενημέρωση';
 $string['updatemode_help'] = 'Εάν επιτρέπετε την ενημέρωση των μαθημάτων, πρέπει επίσης να πείτε στο εργαλείο με τι να ενημερώσει τα μαθήματα.';
+$string['updatemodedoessettonothing'] = 'Ο τρόπος ενημέρωσης δεν επιτρέπει καμία ενημέρωση';
 $string['updateonly'] = 'Ενημέρωση μόνο για υπάρχοντα μαθήματα';
 $string['updatewithdataonly'] = 'Ενημερώστε μόνο με δεδομένα CSV';
 $string['updatewithdataordefaults'] = 'Ενημέρωση με δεδομένα CSV και προεπιλογές';

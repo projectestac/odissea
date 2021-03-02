@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'journal', language 'el', version '3.8'.
  *
- * @package   journal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     journal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,10 +44,10 @@ $string['eventjournalviewed'] = 'Το χρονικό εμφανίστηκε';
 $string['feedbackupdated'] = 'Η ανατροφοδότηση για {$a} καταχωρήσεις ενημερώθηκε';
 $string['gradeingradebook'] = 'Τρέχων βαθμός στο βαθμολόγιο';
 $string['journal:addentries'] = 'Προσθήκη καταχωρήσεων χρονικού';
-$string['journal:addinstance'] = 'Προσθήκη στιγμιότυπου χρονικού';
-$string['journalmail'] = 'Ο/Η {$a->teacher} έχει αναρτήσει κάποια ανατροφοδότηση για την καταχώρηση του χρονικού σας «{$a->journal}». Μπορείτε να την δείτε προσαρτημένη στην καταχώρησή χρονικού σας: «{$a->url}»';
-$string['journalmailhtml'] = 'Ο/Η {$a->teacher} έχει αναρτήσει κάποια ανατροφοδότηση για την καταχώρηση του χρονικού σας «<i>{$a->journal}</i>». Μπορείτε να την δείτε προσαρτημένη στην <a href="{$a->url}">καταχώρησή χρονικού σας</a>.';
+$string['journal:addinstance'] = 'Προσθήκη στιγμιοτύπων χρονικού';
 $string['journal:manageentries'] = 'Διαχείριση καταχωρήσεων χρονικού';
+$string['journalmail'] = 'Ο/Η {$a->teacher} έχει αναρτήσει κάποια ανατροφοδότηση για την καταχώρηση του χρονικού σας «{$a->journal}». Μπορείτε να την δείτε προσαρτημένη στην καταχώρησή χρονικού σας: «{$a->url}»';
+$string['journalmailhtml'] = 'Ο/Η {$a->teacher} έχει αναρτήσει κάποια ανατροφοδότηση για την καταχώρηση χρονικού σας «<i>{$a->journal}</i>». Μπορείτε να την δείτε προσαρτημένη στην <a href="{$a->url}">καταχώρησή σας</a>.';
 $string['journalname'] = 'Όνομα χρονικού';
 $string['journalquestion'] = 'Ερώτηση χρονικού';
 $string['mailsubject'] = 'Ανατροφοδότηση χρονικού';

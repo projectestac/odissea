@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'eu', branch 'MOODLE_36_STABLE'
+ * Strings for component 'block_community', language 'eu', version '3.8'.
  *
- * @package   block_community
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_community
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,7 +33,7 @@ $string['addedtoblock'] = 'Ikastaro honetarako esteka komunitateak bilatzeko blo
 $string['additionalcoursedesc'] = '{$a->lang} Sortzailea: {$a->creatorname} - Editorea: {$a->publishername} - Gaia: {$a->subject} - Audientzia: {$a->audience} - Hezkuntza-maila: {$a->educationallevel} - Lizentzia: {$a->license}';
 $string['addtocommunityblock'] = 'Gorde ikastaro honetarako esteka';
 $string['audience'] = 'Honentzat diseinatuta';
-$string['audience_help'] = 'Zein ikastaro-mota ari zara bilatzen? Ikasleentzako ohiko ikastaroen antzera, hezitzaile edo Moodle kudeatzaile-komunitateen arabera bilatu behar zenuke';
+$string['audience_help'] = 'Zein ikastaro mota ari zara bilatzen? Ikasleentzako ohiko ikastaroen antzera, hezitzaile edo Moodle kudeatzaile-komunitateen arabera bilatu behar zenuke';
 $string['blocks'] = 'Blokeak';
 $string['cannotselecttopsubject'] = 'Ezin da aukeratu goragoko maila';
 $string['comments'] = 'Iruzkinak ({$a})';
@@ -79,7 +79,7 @@ $string['langdesc'] = 'Hizkuntza: {$a} -';
 $string['language'] = 'Hizkuntza';
 $string['language_help'] = 'Hizkuntza jakin batean idatzitako ikastaroak bila ditzakezu.';
 $string['licence'] = 'Lizentzia';
-$string['licence_help'] = 'Lizentzia-mota jakin bat duten ikastaroak bila ditzakezu.';
+$string['licence_help'] = 'Lizentzia mota jakin bat duten ikastaroak bila ditzakezu.';
 $string['moredetails'] = 'Xehetasun gehiago';
 $string['mycommunities'] = 'Nire komunitateak:';
 $string['next'] = 'Hurrengoa >>>';
@@ -88,8 +88,8 @@ $string['nocourse'] = 'Ez da ikastarorik aurkitu';
 $string['noratings'] = 'Puntuaziorik ez';
 $string['operation'] = 'Eragiketa';
 $string['orderby'] = 'Ordenatze-irizpidea';
-$string['orderbyeldest'] = 'Zaharrena';
 $string['orderby_help'] = 'Bilaketaren emaitzak erakusteko ordena.';
+$string['orderbyeldest'] = 'Zaharrena';
 $string['orderbyname'] = 'Izena';
 $string['orderbynewest'] = 'Berriena';
 $string['orderbypublisher'] = 'Egilea';

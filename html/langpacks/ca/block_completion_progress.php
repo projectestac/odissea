@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_completion_progress', language 'ca', version '3.8'.
  *
- * @package   block_completion_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_completion_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -74,11 +74,11 @@ $string['no_activities_config_message'] = 'No hi ha cap activitat o recurs amb c
 $string['no_activities_message'] = 'No s\'està monitorant cap activitat o recurs. Empreu la configuració per a definir el monitoratge.';
 $string['no_blocks'] = 'No hi ha cap bloc Progrés de la compleció en els cursos.';
 $string['no_courses'] = 'No esteu matriculat a cap curs. Només es mostraran les barres dels cursos en què esteu matriculat.';
-$string['not_all_expected_set'] = 'No totes les activitats amb criteris de compleció tenen definida una data «{$a}».';
+$string['no_visible_activities_message'] = 'Cap de les activitats monitorades és visible actualment.';
 $string['notCompleted_colour'] = '#C71C22';
 $string['notCompleted_colour_descr'] = 'Codi de color HTML per als elements actuals que encara no han estat completats';
 $string['notCompleted_colour_title'] = 'Color de no completat';
-$string['no_visible_activities_message'] = 'Cap de les activitats monitorades és visible actualment.';
+$string['not_all_expected_set'] = 'No totes les activitats amb criteris de compleció tenen definida una data «{$a}».';
 $string['now_indicator'] = 'ARA';
 $string['overview'] = 'Resum d\'estudiants';
 $string['pluginname'] = 'Progrés de la compleció';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_monitor', language 'ja', version '3.8'.
  *
- * @package   tool_monitor
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_monitor
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -72,11 +72,11 @@ $string['messagetemplate_help'] = '通知閾値に達した場合、購読者に
 * 説明 {description}
 * イベント {eventname}';
 $string['moduleinstance'] = 'インスタンス';
-$string['monitordisabled'] = '現在、イベントモニタリングは無効にされています。';
-$string['monitorenabled'] = '現在、イベントモニタリングは有効にされています。';
 $string['monitor:managerules'] = 'イベントモニタルールを管理する';
 $string['monitor:managetool'] = 'イベントモニタリングを有効/無効にする';
 $string['monitor:subscribe'] = 'イベントモニタルールを購読する';
+$string['monitordisabled'] = '現在、イベントモニタリングは無効にされています。';
+$string['monitorenabled'] = '現在、イベントモニタリングは有効にされています。';
 $string['norules'] = 'イベントモニタリングルールはありません。';
 $string['pluginname'] = 'イベントモニタ';
 $string['privacy:createdrules'] = '私が作成したイベントモニタ';

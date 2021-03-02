@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol', language 'es', version '3.8'.
  *
- * @package   enrol
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,6 +30,7 @@ $string['addinstance'] = 'Añadir método';
 $string['addinstanceanother'] = 'Añadir método y crear otro';
 $string['ajaxnext25'] = 'Siguientes 25...';
 $string['ajaxoneuserfound'] = '1 usuario encontrado';
+$string['ajaxxmoreusersfound'] = 'Se han encontrado más de {$a} usuarios';
 $string['ajaxxusersfound'] = '{$a} usuarios encontrados';
 $string['assignnotpermitted'] = 'No tiene permiso o no puede asignar roles en este curso';
 $string['bulkuseroperation'] = 'Operación de usuario masiva';
@@ -80,18 +81,18 @@ $string['errorwithbulkoperation'] = 'Se produjo un error mientras se procesaban 
 $string['eventenrolinstancecreated'] = 'Instancia de inscripción creada';
 $string['eventenrolinstancedeleted'] = 'Instancia de inscripción borrada';
 $string['eventenrolinstanceupdated'] = 'Instancia de inscripción actualizada';
-$string['eventuserenrolmentcreated'] = 'Usuario matriculado en curso';
-$string['eventuserenrolmentdeleted'] = 'Usuario matriculado en curso';
-$string['eventuserenrolmentupdated'] = 'Usuario matriculado en curso';
+$string['eventuserenrolmentcreated'] = 'Usuario matriculado en el curso';
+$string['eventuserenrolmentdeleted'] = 'Usuario desmatriculado del curso';
+$string['eventuserenrolmentupdated'] = 'Desmatriculación del usuario actualizada';
 $string['expirynotify'] = 'Notificar antes de que la matrícula expire';
+$string['expirynotify_help'] = 'Este parámetro determina cuándo se envían los avisos de que la matricula expira.';
 $string['expirynotifyall'] = 'Persona que matricula y usuario matriculado';
 $string['expirynotifyenroller'] = 'Persona que matricula solamente';
-$string['expirynotify_help'] = 'Este parámetro determina cuándo se envían los avisos de que la matricula expira.';
 $string['expirynotifyhour'] = 'Hora de envío de los avisos de que la matrícula expira';
 $string['expirythreshold'] = 'Umbral para la notificación';
 $string['expirythreshold_help'] = '¿Con cuánto tiempo antes de la expiración de la matrícula deben ser notificados los usuarios?';
-$string['extremovedaction'] = 'Acción de desmatriculación externa';
-$string['extremovedaction_help'] = 'Seleccione una acción para llevar a cabo cuando la matriculación de los usuarios desaparece de la fuente de matriculación externa. Tenga en cuenta que algunos datos y ajustes de los usuarios son purgados desde el curso durante la desmatriculación del curso.';
+$string['extremovedaction'] = 'Acción externa de baja de la matrícula';
+$string['extremovedaction_help'] = 'Seleccione una acción para llevar a cabo cuando la matriculación de los usuarios desaparece de la fuente de matriculación externa. Tenga en cuenta que algunos datos y ajustes de los usuarios son purgados del curso cuando se produce la baja en el curso.';
 $string['extremovedkeep'] = 'Mantener matriculado al usuario';
 $string['extremovedsuspend'] = 'Deshabilitar la matriculación en el curso';
 $string['extremovedsuspendnoroles'] = 'Deshabilitar la matriculación en el curso y eliminar los roles';
@@ -101,6 +102,7 @@ $string['foundxcohorts'] = 'Encontradas {$a} cohortes';
 $string['instanceadded'] = 'Método añadido';
 $string['instanceeditselfwarning'] = 'Advertencia:';
 $string['instanceeditselfwarningtext'] = 'Usted está inscrito en este curso a través de este método de matriculación, los cambios pueden afectar a su acceso a este curso.';
+$string['invalidenrolduration'] = 'Intervalo de matriculación inválido';
 $string['invalidenrolinstance'] = 'Ejemplo de matriculación no válido';
 $string['invalidrequest'] = 'Solicitud inválida';
 $string['invalidrole'] = 'Rol no válido';
@@ -135,6 +137,7 @@ $string['testsettings'] = 'Configuración del test';
 $string['testsettingsheading'] = 'Configuración del test de matriculación - {$a}';
 $string['totalenrolledusers'] = '{$a} usuarios matriculados';
 $string['totalotherusers'] = '{$a} otros usuarios';
+$string['totalunenrolledusers'] = '{$a} usuarios desmatriculados';
 $string['unassignnotpermitted'] = 'No tiene permiso para retirar roles en este curso';
 $string['unenrol'] = 'Dar de baja';
 $string['unenrolconfirm'] = '¿Realmente desea dar de baja al usuario "{$a->user}" del curso "{$a->course}"?';
@@ -146,3 +149,4 @@ $string['unknowajaxaction'] = 'Se ha solicitado una acción desconocida';
 $string['unlimitedduration'] = 'Sin límite';
 $string['usersearch'] = 'Buscar';
 $string['withselectedusers'] = 'Con los usuarios seleccionados';
+$string['youunenrolledfromcourse'] = 'Ha sido desmatriculado del curso "{$a}"';

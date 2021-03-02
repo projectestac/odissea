@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,30 +12,31 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'ar', version '3.8'.
  *
- * @package   assignfeedback_comments
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_comments
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['commentinline'] = 'تعليق ضمني';
+$string['commentinline_help'] = 'إذا تم تفعيل هذا الخيار فإن النص المُرسل سيتم نسخه إلى حقل التعليق خلال التقييم مما يُسهّل تضمين التعليق (ربما باستخدام ألوان مختلفة للنص) أو بتحرير النص الأساسي';
 $string['commentinlinedefault'] = 'التعليق ضمني إفتراضياً';
 $string['commentinlinedefault_help'] = 'إذا تم تفعيله فإن وظيفة التعليق الضمني ستكون مفعّلة تلقائياً لكل الواجبات الجديدة';
-$string['commentinline_help'] = 'إذا تم تفعيل هذا الخيار فإن النص المُرسل سيتم نسخه إلى حقل التعليق خلال التقييم مما يُسهّل تضمين التعليق (ربما باستخدام ألوان مختلفة للنص) أو بتحرير النص الأساسي';
 $string['default'] = 'مُفعّل تلقائياً';
-$string['default_help'] = 'إذا تم تفعيل هذا الخيار فإن طريقة الإفادة هذه ستكون مفُعّلة إفتراضياً لكل الواجبات الجديدة.';
+$string['default_help'] = 'إذا تم تفعيل هذا الخيار فإن طريقة اتغذية الراجعة هذه ستكون مفُعّلة افتراضياً لكل المهمات الجديدة.';
 $string['enabled'] = 'تعليقات الإفادة';
 $string['enabled_help'] = 'إذا تم تفعيل هذا الخيار فإن المُصحح يستطيع ترك تعليقات الإفادة لكل مهمة مرسلة';
 $string['pluginname'] = 'تعليقات الإفادة';
-$string['privacy:commentpath'] = 'تعليقات الإفادة';
+$string['privacy:commentpath'] = 'تعليقات ردود الفعل';
 $string['privacy:metadata:assignmentid'] = 'معرّف الواجب';
-$string['privacy:metadata:commentpurpose'] = 'نص التعليق';
-$string['privacy:metadata:filepurpose'] = 'ملفات الملاحظات من المعلم للطالب';
-$string['privacy:metadata:gradepurpose'] = 'معرّف الدرجة المرتبط بالتعليق';
-$string['privacy:metadata:tablesummary'] = 'هذا يخزن التعليقات التي أدلى بها طلاب الصف كملاحظات للطالب على تقديمه';
+$string['privacy:metadata:commentpurpose'] = 'نص التعليق.';
+$string['privacy:metadata:filepurpose'] = 'ملفات الملاحظات من المعلم للطالب.';
+$string['privacy:metadata:gradepurpose'] = 'معرّف الدرجة المرتبط بالتعليق.';
+$string['privacy:metadata:tablesummary'] = 'هذا يخزن التعليقات التي أدلى بها طلاب الصف كملاحظات للطالب على تقديمه.';

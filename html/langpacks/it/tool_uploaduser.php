@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'it', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -54,16 +54,17 @@ $string['uploadpicture_cannotsave'] = 'Non è stato possibile salvare l\'immagin
 $string['uploadpicture_cannotunzip'] = 'Non è possibile decomprimere il file zip contenente le immagini.';
 $string['uploadpicture_invalidfilename'] = 'Il file immagine {$a} ha caratteri non validi nel nome. Saltato.';
 $string['uploadpicture_overwrite'] = 'Sovrascrivere le immagini utente già esistenti?';
+$string['uploadpicture_userfield'] = 'Identificativo utente da utilizzare per far corrispondere le immagini';
+$string['uploadpicture_usernotfound'] = 'Utente con un valore di \'{$a->uservalue}\' per \'{$a->userfield}\' non esiste. Saltato.';
+$string['uploadpicture_userskipped'] = 'Saltato utente {$a} (ha già un\'immagine).';
+$string['uploadpicture_userupdated'] = 'Immagine per l\'utente {$a} caricata.';
 $string['uploadpictures'] = 'Importazione immagini utenti';
 $string['uploadpictures_help'] = '<p>Le foto degli tenti possono essere caricate come file zip di immagini. I file immagini devono essere chiamati <i>attributo-utente-scelto.estensione</i>. Per esempio, se l\'attributo utente scelto per la corrispondenza delle foto è lo username e lo username è user1234, allora il file si chiamerà user1234.jpg.</p>
 
 <p>I tipi immagini supportati sono gif, jpg, e png.</p>
 
 <p>Nei nomi dei file immagine è indifferente l\'uso di maiuscole o minuscole.</p>';
-$string['uploadpicture_userfield'] = 'Identificativo utente da utilizzare per far corrispondere le immagini';
-$string['uploadpicture_usernotfound'] = 'Utente con un valore di \'{$a->uservalue}\' per \'{$a->userfield}\' non esiste. Saltato.';
-$string['uploadpicture_userskipped'] = 'Saltato utente {$a} (ha già un\'immagine).';
-$string['uploadpicture_userupdated'] = 'Immagine per l\'utente {$a} caricata.';
+$string['uploaduser:uploaduserpictures'] = 'Importare immagini utenti';
 $string['uploadusers'] = 'Importazione utenti';
 $string['uploadusers_help'] = 'E\' possibile caricare utenti (ed iscriverli ai corsi) tramite file di testo. Il formato del file deve avere le seguenti caratteristiche:
 
@@ -73,7 +74,6 @@ $string['uploadusers_help'] = 'E\' possibile caricare utenti (ed iscriverli ai c
 * I campi obbligatori sono username, password, firstname,  lastname, email';
 $string['uploaduserspreview'] = 'Anteprima importazione utenti';
 $string['uploadusersresult'] = 'Risultati importazione utenti';
-$string['uploaduser:uploaduserpictures'] = 'Importare immagini utenti';
 $string['useraccountupdated'] = 'Utente aggiornato';
 $string['useraccountuptodate'] = 'Utente aggiornato';
 $string['userdeleted'] = 'Utente Eliminato';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'question', language 'en', version '3.8'.
  *
- * @package   question
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     question
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -280,11 +280,11 @@ $string['markedoutofmax'] = 'Marked out of {$a}';
 $string['markoutofmax'] = 'Mark {$a->mark} out of {$a->max}';
 $string['marks'] = 'Marks';
 $string['matchgrades'] = 'Match grades';
-$string['matchgradeserror'] = 'Error if grade not listed';
 $string['matchgrades_help'] = 'Imported grades must match one of the fixed list of valid grades - 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0 (also negative values). If not, there are two options:
 
 *  Error if grade not listed - If a question contains any grades not found in the list an error is displayed and that question will not be imported
 * Nearest grade if not listed - If a grade is found that does not match a value in the list, the grade is changed to the closest matching value in the list';
+$string['matchgradeserror'] = 'Error if grade not listed';
 $string['matchgradesnearest'] = 'Nearest grade if not listed';
 $string['missingcourseorcmid'] = 'Need to provide courseid or cmid to print_question.';
 $string['missingcourseorcmidtolink'] = 'Need to provide courseid or cmid to get_question_edit_link.';
@@ -359,9 +359,13 @@ $string['permissionsaveasnew'] = 'Save this as a new question';
 $string['permissionto'] = 'You have permission to :';
 $string['previewquestion'] = 'Preview question: {$a}';
 $string['privacy:metadata:database:question'] = 'The details about a specific question.';
-$string['privacy:metadata:database:question_attempts'] = 'The information about an attempt at a specific question.';
-$string['privacy:metadata:database:question_attempts:flagged'] = 'An indication that the user has flagged this question within the attempt.';
-$string['privacy:metadata:database:question_attempts:responsesummary'] = 'A summary of the question response.';
+$string['privacy:metadata:database:question:createdby'] = 'The person who created the question.';
+$string['privacy:metadata:database:question:generalfeedback'] = 'The general feedback for this question.';
+$string['privacy:metadata:database:question:modifiedby'] = 'The person who last updated the question.';
+$string['privacy:metadata:database:question:name'] = 'The name of the question.';
+$string['privacy:metadata:database:question:questiontext'] = 'The question text.';
+$string['privacy:metadata:database:question:timecreated'] = 'The date and time when this question was created.';
+$string['privacy:metadata:database:question:timemodified'] = 'The date and time when this question was updated.';
 $string['privacy:metadata:database:question_attempt_step_data'] = 'Question attempt steps may have additional data specific to that step. The data is stored in the step_data table.';
 $string['privacy:metadata:database:question_attempt_step_data:name'] = 'The name of the data item.';
 $string['privacy:metadata:database:question_attempt_step_data:value'] = 'The value of the data item.';
@@ -370,14 +374,10 @@ $string['privacy:metadata:database:question_attempt_steps:fraction'] = 'The grad
 $string['privacy:metadata:database:question_attempt_steps:state'] = 'The state of this question attempt step at the end of the step transition.';
 $string['privacy:metadata:database:question_attempt_steps:timecreated'] = 'The date and time that this step transition begun.';
 $string['privacy:metadata:database:question_attempt_steps:userid'] = 'The user who performed the step transition.';
+$string['privacy:metadata:database:question_attempts'] = 'The information about an attempt at a specific question.';
+$string['privacy:metadata:database:question_attempts:flagged'] = 'An indication that the user has flagged this question within the attempt.';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = 'A summary of the question response.';
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'The time that the question attempt was updated.';
-$string['privacy:metadata:database:question:createdby'] = 'The person who created the question.';
-$string['privacy:metadata:database:question:generalfeedback'] = 'The general feedback for this question.';
-$string['privacy:metadata:database:question:modifiedby'] = 'The person who last updated the question.';
-$string['privacy:metadata:database:question:name'] = 'The name of the question.';
-$string['privacy:metadata:database:question:questiontext'] = 'The question text.';
-$string['privacy:metadata:database:question:timecreated'] = 'The date and time when this question was created.';
-$string['privacy:metadata:database:question:timemodified'] = 'The date and time when this question was updated.';
 $string['privacy:metadata:link:qbehaviour'] = 'The Question subsystem makes use of the Question Behaviour plugintype.';
 $string['privacy:metadata:link:qformat'] = 'The Question subsystem makes use of the Question Format plugintype for the purpose of importing and exporting questions in different formats.';
 $string['privacy:metadata:link:qtype'] = 'The Question subsystem interacts with the Question Type plugintype which contains the different types of questions.';

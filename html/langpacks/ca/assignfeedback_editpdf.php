@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ca', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -98,11 +98,11 @@ $string['stamps'] = 'Segells';
 $string['stampsdesc'] = 'Els segells han de ser fitxers d\'imatge (mida recomanada: 40x40). Aquestes imatges es poden utilitzar amb l\'eina segell per anotar els PDF.';
 $string['test_doesnotexist'] = 'El camí al ghostscript apunta a un fitxer que no existeix.';
 $string['test_empty'] = 'El camí al ghostscript és buit. Introduïu el camí correcte';
-$string['testgs'] = 'Prova el camí al ghostscript';
 $string['test_isdir'] = 'El camí al ghostscript apunta a una carpeta; afegiu el programa ghostscript al camí especificat.';
 $string['test_notestfile'] = 'El PDF de prova s\'ha perdut';
 $string['test_notexecutable'] = 'Ghostscript apunta a un fitxer que no és executable';
 $string['test_ok'] = 'El camí al ghostscript sembla que és correcte; comproveu que podeu veure el missatge a la imatge del dessota.';
+$string['testgs'] = 'Prova el camí al ghostscript';
 $string['tool'] = 'Eina';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Mostra el PDF comentat...';

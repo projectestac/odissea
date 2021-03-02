@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_replace', language 'ru', version '3.8'.
  *
- * @package   tool_replace
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_replace
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['cannotfit'] = 'Замена длиннее оригинала и сокращение не разрешено. Продолжение невозможно.';
-$string['disclaimer'] = 'Я понимаю риски этой операции:';
+$string['disclaimer'] = 'Я понимаю риски этой операции';
 $string['doit'] = 'Да, сделать это!';
 $string['excludedtables'] = 'Некоторые таблицы не обновляются при использовании замены текста. Это таблицы конфигурации, журналов, событий и сессий.';
 $string['invalidcharacter'] = 'Некорректные символы были найдены в тексте для поиска или замены.';
@@ -36,8 +36,8 @@ $string['notimplemented'] = 'К сожалению, эта возможност�
 $string['notsupported'] = 'Этот скрипт стоит рассматривать как экспериментальный. Сделанные им изменения не могут быть отменены, поэтому перед запуском этого скрипта всегда нужно делать полную резервную копию!';
 $string['pageheader'] = 'Поиск и замена текста по всей базе данных';
 $string['pluginname'] = 'Поиск и замена в БД';
-$string['replacewith'] = 'Заменить на эту строку:';
+$string['replacewith'] = 'Заменить на эту строку';
 $string['replacewithhelp'] = 'В большинстве случаев - новый URL-адрес сервера';
-$string['searchwholedb'] = 'Поиск по всей базе данных:';
+$string['searchwholedb'] = 'Поиск по всей базе данных';
 $string['searchwholedbhelp'] = 'В большинстве случаев - прежний URL-адрес сервера';
 $string['shortenoversized'] = 'Сократить результат при необходимости';
